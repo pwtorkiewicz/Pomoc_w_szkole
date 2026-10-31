@@ -603,7 +603,7 @@ window.SUBJECTS.push({
         • <b>0 pkt w kryterium 1</b> (np. zła forma – rozprawka zamiast opowiadania) = 0 pkt za całą pracę.<br>
         • <b>Brak odwołania do lektury wskazanej w poleceniu</b> = 0 pkt za całą pracę.<br>
         • Praca <b>180 wyrazów lub krótsza</b> jest oceniana tylko w kryteriach 1–3.<br>
-        • Komiks, manga, gra komputerowa ani scenariusz filmowy nie liczą się jako utwór literacki w wypracowaniu.</div>
+        • Powieść obrazkowa, manga, scenariusz filmowy ani gra komputerowa nie liczą się jako utwór literacki w wypracowaniu (tak w informatorze CKE). Komiks „Kajko i Kokosz” jest lekturą obowiązkową.</div>
         <h3>Opowiadanie – elementy twórcze</h3>
         <p>Na 5 pkt trzeba funkcjonalnie wykorzystać <b>co najmniej 6</b> z elementów: opis, charakterystyka bohatera, czas akcji, miejsce akcji, zwrot akcji, puenta, punkt kulminacyjny, dialog, monolog, retrospekcja. Narracja musi być konsekwentna, a zdarzenia ułożone logicznie. Treść lektury wykorzystaj twórczo.</p>
         <h3>Rozprawka i przemówienie – elementy retoryczne</h3>
