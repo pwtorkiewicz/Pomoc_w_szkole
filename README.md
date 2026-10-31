@@ -4,7 +4,7 @@ Pomoc naukowa dla ucznia 8 klasy szkoły podstawowej, pomyślana jako przygotowa
 
 **Przedmioty:** język polski, matematyka, język angielski. Razem 31 działów i 322 pytania.
 
-**Podstawa:** treści sprawdzono 31.10.2026 w oryginalnych dokumentach CKE: informatorach o egzaminie ósmoklasisty od r. szk. 2024/2025 (polski, matematyka, angielski) oraz komunikatach CKE na 2027 r., a także w tekście podstawy programowej (Dz.U. 2024 poz. 996, eli.gov.pl) Według informatorów egzamin sprawdza podstawę programową z rozporządzenia z 28.06.2024 (Dz.U. 2024 poz. 996). Każda ściąga ma ramkę „Na jakiej podstawie”, a strona przedmiotu opisuje egzamin (termin, czas, punkty). Pełny wykaz źródeł i ograniczeń jest na stronie **Źródła** (`#/zrodla`, plik `js/dane/zrodla.js`).
+**Podstawa:** treści sprawdzono 31.10.2026 w oryginalnych dokumentach CKE: informatorach o egzaminie ósmoklasisty od r. szk. 2024/2025 (polski, matematyka, angielski) oraz komunikatach CKE na 2027 r., a także w tekście podstawy programowej (Dz.U. 2024 poz. 996, eli.gov.pl). Według informatorów egzamin sprawdza podstawę programową z rozporządzenia z 28.06.2024 (Dz.U. 2024 poz. 996). Każda ściąga ma ramkę „Na jakiej podstawie”, a strona przedmiotu opisuje egzamin (termin, czas, punkty). Pełny wykaz źródeł i ograniczeń jest na stronie **Źródła** (`#/zrodla`, plik `js/dane/zrodla.js`).
 
 W każdym dziale są:
 
