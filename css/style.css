@@ -162,3 +162,54 @@ small.muted, .muted { color: var(--muted); font-size: .85rem; }
 }
 
 .basis { background: var(--surface); border: 1px dashed var(--border); border-radius: 12px; padding: 10px 14px; font-size: .9rem; color: var(--muted); margin: 0 0 12px; }
+
+/* ---------- Lekcje i grafiki ---------- */
+:root {
+  --c1: #dbe4ff; --c1s: #4f5bd5;   /* niebieski */
+  --c2: #ffe3d6; --c2s: #e0603a;   /* pomarańczowy */
+  --c3: #d9f5e5; --c3s: #1f9d55;   /* zielony */
+  --c4: #fff1c2; --c4s: #b88400;   /* żółty */
+  --c5: #f3dcf7; --c5s: #9c3fb5;   /* fioletowy */
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c1: #262d5c; --c1s: #8f9aff;
+    --c2: #4a2a1f; --c2s: #ff9a76;
+    --c3: #183a29; --c3s: #4cd38a;
+    --c4: #403416; --c4s: #ffd166;
+    --c5: #3b2245; --c5s: #d58cf0;
+  }
+}
+.lesson .dots { display: flex; gap: 6px; margin: 4px 0 12px; }
+.lesson .dots span { flex: 1; height: 6px; border-radius: 99px; background: var(--border); }
+.lesson .dots span.done { background: var(--ok); }
+.lesson .dots span.on { background: var(--primary); }
+.lesson-step { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 20px 18px; box-shadow: var(--shadow); }
+.lesson-step h2 { margin: 4px 0 10px; font-size: 1.35rem; }
+.lesson-text { font-size: 1.05rem; }
+.lesson-text p { margin: .5em 0; }
+.remember { background: var(--c4); border-left: 5px solid var(--c4s); border-radius: 10px; padding: 10px 14px; margin: 12px 0; }
+.hook { background: var(--c5); border-left: 5px solid var(--c5s); border-radius: 10px; padding: 10px 14px; margin: 12px 0; }
+.check { border: 2px dashed var(--border); border-radius: 12px; padding: 10px 14px; margin-top: 14px; }
+.check-q { font-weight: 600; margin: 6px 0 10px; }
+.lesson-nav { justify-content: space-between; margin-top: 12px; }
+.btn:disabled { opacity: .45; cursor: default; }
+
+.vis { margin: 6px 0 12px; text-align: center; }
+.vis svg { width: 100%; max-width: 560px; height: auto; display: inline-block; }
+.vis .ln { stroke: var(--text); stroke-width: 2; fill: none; }
+.vis .ln-thin { stroke: var(--muted); stroke-width: 1; fill: none; }
+.vis .dash { stroke-dasharray: 6 5; }
+.vis .tx { fill: var(--text); font: 16px system-ui, sans-serif; }
+.vis .tx-s { fill: var(--muted); font: 13px system-ui, sans-serif; }
+.vis .tx-b { fill: var(--text); font: bold 18px system-ui, sans-serif; }
+.vis .bg { fill: var(--surface); }
+.vis .f1 { fill: var(--c1); } .vis .s1 { stroke: var(--c1s); } .vis .t1 { fill: var(--c1s); }
+.vis .f2 { fill: var(--c2); } .vis .s2 { stroke: var(--c2s); } .vis .t2 { fill: var(--c2s); }
+.vis .f3 { fill: var(--c3); } .vis .s3 { stroke: var(--c3s); } .vis .t3 { fill: var(--c3s); }
+.vis .f4 { fill: var(--c4); } .vis .s4 { stroke: var(--c4s); } .vis .t4 { fill: var(--c4s); }
+.vis .f5 { fill: var(--c5); } .vis .s5 { stroke: var(--c5s); } .vis .t5 { fill: var(--c5s); }
+.vis .sw { stroke-width: 3; }
+.widget .controls { display: flex; flex-wrap: wrap; gap: 10px 18px; justify-content: center; align-items: center; margin-top: 8px; font-size: .95rem; }
+.widget input[type=range] { width: 160px; accent-color: var(--primary); }
+.widget .readout { font-weight: 700; font-size: 1.1rem; margin-top: 6px; }

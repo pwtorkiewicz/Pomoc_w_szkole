@@ -18,7 +18,9 @@
   function save() {
     try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) { /* tryb prywatny itp. */ }
   }
-  const state = Object.assign({ best: {}, wrong: {}, exams: {} }, load());
+  const state = Object.assign({ best: {}, wrong: {}, exams: {}, lessons: {} }, load());
+  const LESSONS = window.LESSONS || {};
+  const lessonOf = (s, t) => LESSONS[`${s.id}/${t.id}`];
 
   // ---------- Pomocnicze ----------
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -72,7 +74,7 @@
         if (p[2] === 'egzamin') return exam(s);
         if (p[2] === 't') {
           const t = s.topics.find((x) => x.id === p[3]);
-          if (t) return topic(s, t, p[4] || 'teoria');
+          if (t) return topic(s, t, p[4] || (lessonOf(s, t) ? 'lekcja' : 'teoria'));
           return subject(s);
         }
       }
@@ -132,7 +134,7 @@
         ${s.topics.map((t) => {
           const b = state.best[topicKey(s, t)];
           return `<li><a href="#/s/${s.id}/t/${t.id}">
-            <span>${esc(t.name)}</span>
+            <span>${state.lessons[topicKey(s, t)] ? '🎓 ' : ''}${esc(t.name)}</span>
             <span class="badge ${badgeClass(b)}">${b == null ? 'nowy' : b + '%'}</span>
           </a></li>`;
         }).join('')}
@@ -143,17 +145,21 @@
     setTitle(t.name);
     const base = `#/s/${s.id}/t/${t.id}`;
     const hasCards = t.flashcards && t.flashcards.length;
+    const lesson = lessonOf(s, t);
     if (tab === 'fiszki' && !hasCards) tab = 'teoria';
+    if (tab === 'lekcja' && !lesson) tab = 'teoria';
     app.innerHTML = `
       ${crumbs([[s.name, `#/s/${s.id}`], [t.name]])}
       <h1>${esc(t.name)}</h1>
       <nav class="tabs">
+        ${lesson ? `<a href="${base}/lekcja" class="${tab === 'lekcja' ? 'on' : ''}">🎓 Lekcja</a>` : ''}
         <a href="${base}/teoria" class="${tab === 'teoria' ? 'on' : ''}">📖 Ściąga</a>
         ${hasCards ? `<a href="${base}/fiszki" class="${tab === 'fiszki' ? 'on' : ''}">🃏 Fiszki (${t.flashcards.length})</a>` : ''}
         <a href="${base}/quiz" class="${tab === 'quiz' ? 'on' : ''}">✅ Quiz (${t.questions.length})</a>
       </nav>
       <div id="pane"></div>`;
     const pane = document.getElementById('pane');
+    if (tab === 'lekcja') return lessonView(pane, lesson, s, t, base);
     if (tab === 'fiszki') return flashcards(pane, t.flashcards);
     if (tab === 'quiz') {
       return quiz(pane, shuffle(questionsOf(s, t)), {
@@ -166,6 +172,74 @@
       <article class="theory">${t.theory}</article>
       <a class="btn primary" href="${base}/quiz">Sprawdź się w quizie →</a>
       ${hasCards ? `<a class="btn" href="${base}/fiszki">Powtórz z fiszkami</a>` : ''}`;
+  }
+
+  // ---------- Lekcja (tryb nauki) ----------
+  function lessonView(pane, steps, s, t, base) {
+    let i = 0;
+    function show() {
+      const st = steps[i];
+      const last = i === steps.length - 1;
+      pane.innerHTML = `
+        <div class="lesson">
+          <div class="dots" aria-hidden="true">${steps.map((_, k) => `<span class="${k < i ? 'done' : k === i ? 'on' : ''}"></span>`).join('')}</div>
+          <div class="lesson-step">
+            <div class="muted">Krok ${i + 1} z ${steps.length}</div>
+            <h2>${st.title}</h2>
+            ${st.svg ? `<figure class="vis">${st.svg}</figure>` : ''}
+            ${st.widget ? `<figure class="vis widget" id="widget"></figure>` : ''}
+            <div class="lesson-text">${st.text || ''}</div>
+            ${st.remember ? `<div class="remember"><b>💡 Zapamiętaj</b><div>${st.remember}</div></div>` : ''}
+            ${st.hook ? `<div class="hook"><b>🧠 Trik pamięciowy</b><div>${st.hook}</div></div>` : ''}
+            ${st.check ? `<div class="check"><b>🤔 Sprawdź się</b><p class="check-q">${esc(st.check.q)}</p>
+              <div class="options">${st.check.options.map((o, k) => `<button class="opt" data-k="${k}"><span>${esc(o)}</span></button>`).join('')}</div>
+              <div class="check-fb"></div></div>` : ''}
+          </div>
+          <div class="row lesson-nav">
+            <button class="btn" id="prev" ${i === 0 ? 'disabled' : ''}>← Wstecz</button>
+            <button class="btn primary" id="nxt">${last ? 'Zakończ lekcję ✓' : 'Dalej →'}</button>
+          </div>
+        </div>`;
+      if (st.widget && window.WIDGETS && window.WIDGETS[st.widget.type]) {
+        try { window.WIDGETS[st.widget.type](pane.querySelector('#widget'), st.widget); } catch (e) { console.error(e); }
+      }
+      if (st.check) {
+        const fb = pane.querySelector('.check-fb');
+        pane.querySelectorAll('.check .opt').forEach((b) => (b.onclick = () => {
+          const k = +b.dataset.k;
+          const ok = k === st.check.answer;
+          pane.querySelectorAll('.check .opt').forEach((x) => {
+            x.disabled = true;
+            if (+x.dataset.k === st.check.answer) x.classList.add('correct');
+            else if (+x.dataset.k === k) x.classList.add('wrong');
+          });
+          fb.innerHTML = `<div class="feedback ${ok ? 'ok' : 'bad'}"><strong>${ok ? praise() : 'Jeszcze nie. Spójrz na zieloną odpowiedź.'}</strong>${st.check.explain ? `<p>${esc(st.check.explain)}</p>` : ''}</div>`;
+        }));
+      }
+      pane.querySelector('#prev').onclick = () => { if (i > 0) { i--; show(); window.scrollTo(0, 0); } };
+      pane.querySelector('#nxt').onclick = () => { if (last) finish(); else { i++; show(); window.scrollTo(0, 0); } };
+    }
+    function finish() {
+      keyHandler = null;
+      state.lessons[topicKey(s, t)] = 1;
+      save();
+      pane.innerHTML = `<div class="result"><p class="big">🎓</p><h2>Lekcja ukończona!</h2>
+        <p>Teraz utrwal wiedzę: przejrzyj fiszki albo sprawdź się w quizie.</p>
+        <a class="btn primary" href="${base}/quiz">✅ Quiz</a>
+        ${t.flashcards && t.flashcards.length ? `<a class="btn" href="${base}/fiszki">🃏 Fiszki</a>` : ''}
+        <a class="btn" href="${base}/teoria">📖 Ściąga</a>
+        <button class="btn" id="again">↺ Od początku</button></div>`;
+      pane.querySelector('#again').onclick = () => { i = 0; bindKeys(); show(); };
+    }
+    function bindKeys() {
+      keyHandler = (e) => {
+        if (e.target && /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
+        if (e.key === 'ArrowRight') pane.querySelector('#nxt')?.click();
+        else if (e.key === 'ArrowLeft') pane.querySelector('#prev')?.click();
+      };
+    }
+    bindKeys();
+    show();
   }
 
   function exam(s) {
