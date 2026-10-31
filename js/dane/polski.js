@@ -10,6 +10,7 @@ window.SUBJECTS.push({
     {
       id: 'srodki-stylistyczne',
       name: 'Środki stylistyczne',
+      basis: 'Podstawa programowa, klasy VII–VIII: kształcenie literackie (rozpoznawanie środków stylistycznych i określanie ich funkcji).',
       theory: `
         <h3>Najważniejsze środki stylistyczne</h3>
         <table>
@@ -59,35 +60,36 @@ window.SUBJECTS.push({
       ],
     },
     {
-      id: 'lektury',
-      name: 'Lektury obowiązkowe',
+      id: 'lektury-7-8',
+      name: 'Lektury klas VII–VIII (w całości)',
+      basis: 'Lista lektur obowiązkowych na egzamin ósmoklasisty (wymagania CKE). Z lektur klas VII–VIII trzeba znać treść i problematykę całego utworu.',
       theory: `
-        <p class="muted">Sprawdź z nauczycielem, które lektury obowiązują w Twoim roczniku – lista bywa zmieniana.</p>
+        <p>Na egzaminie z lektur klas VII–VIII sprawdza się znajomość <b>całego utworu</b> (treści i problematyki). W wypracowaniu trzeba odwołać się do wybranej lektury obowiązkowej.</p>
         <table>
-          <tr><th>Tytuł</th><th>Autor</th><th>Gatunek</th><th>Najważniejsze</th></tr>
-          <tr><td>Zemsta</td><td>Aleksander Fredro</td><td>komedia</td><td>Spór Cześnika Raptusiewicza z Rejentem Milczkiem o mur graniczny w zamku. Papkin – tchórzliwy samochwała. Miłość Wacława (syn Rejenta) i Klary (bratanica Cześnika) kończy spór.</td></tr>
-          <tr><td>Skąpiec</td><td>Molier</td><td>komedia</td><td>Harpagon kocha pieniądze bardziej niż dzieci. Kradzież szkatułki zakopanej w ogrodzie.</td></tr>
-          <tr><td>Opowieść wigilijna</td><td>Karol Dickens</td><td>opowiadanie</td><td>Skąpy Ebenezer Scrooge, duch wspólnika Jacoba Marleya i trzy duchy (Wigilijnej Przeszłości, Teraźniejszości i Przyszłości). Przemiana bohatera.</td></tr>
+          <tr><th>Tytuł</th><th>Autor</th><th>Rodzaj / gatunek</th><th>Najważniejsze</th></tr>
+          <tr><td>Opowieść wigilijna</td><td>Karol Dickens</td><td>epika, opowiadanie</td><td>Skąpy Ebenezer Scrooge, duch wspólnika Jacoba Marleya i trzy duchy (Wigilijnej Przeszłości, Teraźniejszości i Przyszłości). Przemiana bohatera, rodzina Cratchitów, mały Tim.</td></tr>
+          <tr><td>Zemsta</td><td>Aleksander Fredro</td><td>dramat, komedia</td><td>Spór Cześnika Raptusiewicza z Rejentem Milczkiem o mur graniczny w zamku. Papkin – tchórzliwy samochwała. Miłość Wacława (syna Rejenta) i Klary (bratanicy Cześnika) kończy spór.</td></tr>
           <tr><td>Dziady cz. II</td><td>Adam Mickiewicz</td><td>dramat (romantyczny)</td><td>Obrzęd prowadzi Guślarz. Duchy lekkie (Józio i Rózia), ciężkie (Widmo Złego Pana), pośrednie (pasterka Zosia). Każdy duch przekazuje prawdę moralną.</td></tr>
-          <tr><td>Pan Tadeusz</td><td>Adam Mickiewicz</td><td>epopeja</td><td>Spór Sopliców i Horeszków o zamek. Jacek Soplica jako ksiądz Robak. Gerwazy – klucznik Horeszków. Obraz szlachty i przyrody Litwy.</td></tr>
-          <tr><td>Latarnik</td><td>Henryk Sienkiewicz</td><td>nowela</td><td>Stary tułacz Skawiński zostaje latarnikiem w Aspinwall. Zaczytany w „Panu Tadeuszu” nie zapala latarni i traci posadę. Tęsknota za ojczyzną.</td></tr>
-          <tr><td>Kamizelka</td><td>Bolesław Prus</td><td>nowela</td><td>Chory mąż przesuwa sprzączkę kamizelki, a żona skraca paski – oboje chcą się nawzajem pocieszyć. Miłość i poświęcenie.</td></tr>
-          <tr><td>Kamienie na szaniec</td><td>Aleksander Kamiński</td><td>literatura faktu</td><td>Rudy (Jan Bytnar), Alek (Aleksy Dawidowski), Zośka (Tadeusz Zawadzki) – harcerze Szarych Szeregów. Mały sabotaż, akcja pod Arsenałem (odbicie Rudego). Przyjaźń i patriotyzm.</td></tr>
-          <tr><td>Treny</td><td>Jan Kochanowski</td><td>tren (liryka)</td><td>Cykl utworów żałobnych po śmierci córki Urszulki. Rozpacz, zwątpienie i pogodzenie się z losem.</td></tr>
+          <tr><td>Balladyna</td><td>Juliusz Słowacki</td><td>dramat (romantyczny), tragedia</td><td>Siostry Balladyna i Alina zbierają maliny – która pierwsza zbierze dzban, poślubi Kirkora. Balladyna zabija siostrę, a potem kolejne osoby, by zdobyć władzę. Świat fantastyczny: Goplana, Skierka, Chochlik. Pustelnik (dawny król Popiel III). Zostaje królową, wydaje trzy wyroki śmierci na samą siebie i ginie od pioruna. Temat: żądza władzy, wina i kara.</td></tr>
+          <tr><td>Mały Książę</td><td>Antoine de Saint-Exupéry</td><td>epika (baśń filozoficzna)</td><td>Pilot ląduje awaryjnie na Saharze i spotyka Małego Księcia z planety B-612. Róża, podróż po planetach (król, próżny, pijak, bankier, latarnik, geograf), Lis i „oswajanie”. „Dobrze widzi się tylko sercem. Najważniejsze jest niewidoczne dla oczu.”</td></tr>
+          <tr><td>Kamienie na szaniec</td><td>Aleksander Kamiński</td><td>epika, literatura faktu</td><td>Rudy (Jan Bytnar), Alek (Aleksy Dawidowski), Zośka (Tadeusz Zawadzki) – harcerze Szarych Szeregów. Mały sabotaż, akcja pod Arsenałem (odbicie Rudego). Przyjaźń, patriotyzm, poświęcenie.</td></tr>
         </table>
-        <div class="tip">💡 W rozprawce zawsze odwołuj się do <b>konkretnego</b> wydarzenia z lektury – samo podanie tytułu to za mało.</div>
+        <div class="tip">💡 W wypracowaniu zawsze odwołuj się do <b>konkretnego</b> wydarzenia z lektury – samo podanie tytułu to za mało.</div>
+        <h3>Lektury klas IV–VI</h3>
+        <p><i>Akademia Pana Kleksa</i> (Brzechwa), <i>Kajko i Kokosz. Szkoła latania</i> (Christa), <i>Opowieści z Narnii. Lew, czarownica i stara szafa</i> (Lewis), <i>Chłopcy z Placu Broni</i> (Molnár), <i>Hobbit, czyli tam i z powrotem</i> (Tolkien). Zadania z tych lektur dotyczą <b>fragmentu zacytowanego w arkuszu</b>, ale warto pamiętać ich treść.</p>
       `,
       flashcards: [
-        ['„Zemsta” – autor', 'Aleksander Fredro'],
-        ['Przedmiot sporu w „Zemście”', 'Mur graniczny w zamku'],
+        ['„Zemsta” – przedmiot sporu', 'Mur graniczny w zamku'],
         ['„Niech się dzieje wola nieba” – kto tak mówi?', 'Rejent Milczek („Zemsta”)'],
-        ['Harpagon', 'Tytułowy skąpiec z komedii Moliera'],
         ['Jacob Marley', 'Zmarły wspólnik Scrooge’a, który ukazuje mu się jako duch'],
         ['Guślarz', 'Prowadzi obrzęd w „Dziadach cz. II”'],
-        ['Skawiński', 'Tytułowy latarnik z noweli Sienkiewicza'],
+        ['Duchy w „Dziadach cz. II”', 'lekkie: Józio i Rózia · ciężkie: Zły Pan · pośrednie: Zosia'],
+        ['Balladyna – o co był zakład z Aliną?', 'Która pierwsza zbierze dzban malin, poślubi Kirkora'],
+        ['Goplana', 'Nimfa (królowa jeziora Gopło) z „Balladyny”'],
+        ['Jak ginie Balladyna?', 'Od pioruna – po wydaniu na siebie trzech wyroków śmierci'],
+        ['„Oswoić” według Lisa', 'Stworzyć więzy'],
+        ['„Dobrze widzi się tylko sercem…”', '„…Najważniejsze jest niewidoczne dla oczu.” – Lis, „Mały Książę”'],
         ['Rudy, Alek, Zośka', 'Bohaterowie „Kamieni na szaniec”'],
-        ['Urszulka', 'Córka Jana Kochanowskiego – „Treny”'],
-        ['Ksiądz Robak', 'Jacek Soplica („Pan Tadeusz”)'],
       ],
       questions: [
         { q: 'Kto jest autorem „Zemsty”?', options: ['Aleksander Fredro', 'Adam Mickiewicz', 'Henryk Sienkiewicz', 'Juliusz Słowacki'], answer: 0 },
@@ -96,17 +98,58 @@ window.SUBJECTS.push({
         { q: 'Ile duchów (oprócz Marleya) odwiedziło Scrooge’a w „Opowieści wigilijnej”?', options: ['jeden', 'dwa', 'trzy', 'cztery'], answer: 2, explain: 'Duch Wigilijnej Przeszłości, Duch Wigilijnej Teraźniejszości i Duch Wigilijnej Przyszłości.' },
         { q: 'Dlaczego Józio i Rózia z „Dziadów cz. II” nie mogli dostać się do nieba?', options: ['bo byli okrutni', 'bo nie zaznali goryczy w życiu', 'bo nikogo nie kochali', 'bo nie mieli grobu'], answer: 1, explain: '„Kto nie doznał goryczy ni razu, ten nie dozna słodyczy w niebie.” – prosili o dwa ziarnka gorczycy.' },
         { q: 'O co prosi pasterka Zosia w „Dziadach cz. II”?', options: ['o dwa ziarnka gorczycy', 'o jedzenie i picie', 'aby młodzieńcy przyciągnęli ją do ziemi', 'o modlitwę'], answer: 2, explain: '„Kto nie dotknął ziemi ni razu, ten nigdy nie może być w niebie.” – Zosia za życia nikogo nie kochała.' },
-        { q: 'Dlaczego Skawiński z „Latarnika” stracił posadę?', options: ['zasnął pijany', 'zaczytał się w „Panu Tadeuszu” i nie zapalił latarni', 'uciekł z wyspy', 'pokłócił się z konsulem'], answer: 1 },
-        { q: 'Co robiła żona z tytułową kamizelką w noweli Prusa?', options: ['sprzedała ją', 'skracała paski, by mąż myślał, że tyje', 'wyszyła na niej imię męża', 'oddała ją ubogim'], answer: 1, explain: 'Mąż z kolei przesuwał sprzączkę – oboje ukrywali przed sobą postęp choroby z miłości.' },
+        { q: 'Kto jest autorem „Balladyny”?', options: ['Adam Mickiewicz', 'Juliusz Słowacki', 'Aleksander Fredro', 'Henryk Sienkiewicz'], answer: 1 },
+        { q: 'Jaki był warunek zakładu sióstr w „Balladynie”?', options: ['która pierwsza zbierze dzban malin, poślubi Kirkora', 'która ładniej zaśpiewa, zostanie królową', 'która znajdzie koronę, odziedziczy zamek', 'która pierwsza wróci do domu, dostanie posag'], answer: 0 },
+        { q: 'Jaki jest główny problem „Balladyny”?', options: ['tęsknota za ojczyzną', 'żądza władzy i kara za zbrodnię', 'przyjaźń w czasie wojny', 'skąpstwo i jego skutki'], answer: 1 },
+        { q: 'Co według Lisa z „Małego Księcia” znaczy „oswoić”?', options: ['nakarmić', 'stworzyć więzy', 'wytresować', 'zapomnieć'], answer: 1 },
+        { q: 'Gdzie pilot spotkał Małego Księcia?', options: ['w Paryżu', 'na Saharze', 'na planecie B-612', 'na statku'], answer: 1, explain: 'Pilot wylądował awaryjnie na pustyni Sahara.' },
         { q: 'Kogo odbito w akcji pod Arsenałem („Kamienie na szaniec”)?', options: ['Zośkę', 'Alka', 'Rudego', 'Słonia'], answer: 2, explain: 'Akcja pod Arsenałem (marzec 1943) – odbicie Jana Bytnara „Rudego” z rąk gestapo.' },
-        { q: 'Po czyjej śmierci Jan Kochanowski napisał „Treny”?', options: ['żony', 'ojca', 'córki Urszulki', 'przyjaciela'], answer: 2 },
+        { q: 'Do jakiej organizacji należeli bohaterowie „Kamieni na szaniec”?', options: ['Szare Szeregi', 'Legiony Polskie', 'Armia Krajowa – kawaleria', 'Gwardia Ludowa'], answer: 0 },
+      ],
+    },
+    {
+      id: 'utwory-krotsze',
+      name: 'Utwory krótsze i fragmenty',
+      basis: 'Lista lektur obowiązkowych na egzamin ósmoklasisty – utwory poznawane w całości lub we fragmentach.',
+      theory: `
+        <p class="muted">Zestawienia lektur w różnych źródłach różnią się szczegółami (np. które treny). Ostateczną listę potwierdź z nauczycielem.</p>
+        <table>
+          <tr><th>Utwór</th><th>Autor</th><th>Najważniejsze</th></tr>
+          <tr><td>Pan Tadeusz (księgi I, II, IV, X, XI, XII)</td><td>Adam Mickiewicz</td><td>Epopeja. Spór Sopliców i Horeszków o zamek. Jacek Soplica jako ksiądz Robak, Gerwazy – klucznik Horeszków. Obraz szlachty i przyrody Litwy. Inwokacja: „Litwo! Ojczyzno moja!”. Księga XII „Kochajmy się!” – koncert Jankiela, polonez.</td></tr>
+          <tr><td>Reduta Ordona</td><td>Adam Mickiewicz</td><td>Obrona Warszawy w powstaniu listopadowym (1831). Relacja adiutanta. Wysadzenie reduty – bohaterstwo obrońców.</td></tr>
+          <tr><td>Świtezianka</td><td>Adam Mickiewicz</td><td>Ballada. Strzelec przysięga wierność tajemniczej dziewczynie, łamie przysięgę i zostaje ukarany – wciąga go toń jeziora Świteź.</td></tr>
+          <tr><td>Treny (VII, VIII)</td><td>Jan Kochanowski</td><td>Utwory żałobne po śmierci córki Urszulki. Tren VII – ubranka córki, Tren VIII – „Wielkieś mi uczyniła pustki w domu moim”.</td></tr>
+          <tr><td>Fraszki (wybór), pieśń</td><td>Jan Kochanowski</td><td>Krótkie, żartobliwe lub refleksyjne utwory z puentą.</td></tr>
+          <tr><td>Latarnik</td><td>Henryk Sienkiewicz</td><td>Nowela. Stary tułacz Skawiński zostaje latarnikiem w Aspinwall. Zaczytany w „Panu Tadeuszu” nie zapala latarni i traci posadę. Tęsknota za ojczyzną.</td></tr>
+          <tr><td>Quo vadis (fragmenty)</td><td>Henryk Sienkiewicz</td><td>Powieść historyczna. Rzym za Nerona: Winicjusz, Ligia, Ursus, Petroniusz. Pożar Rzymu i prześladowania chrześcijan.</td></tr>
+          <tr><td>Artysta</td><td>Sławomir Mrożek</td><td>Krótkie opowiadanie satyryczne.</td></tr>
+        </table>
+      `,
+      flashcards: [
+        ['Pan Tadeusz – które księgi obowiązują?', 'I, II, IV, X, XI, XII'],
+        ['Ksiądz Robak', 'Jacek Soplica („Pan Tadeusz”)'],
+        ['Gerwazy', 'Klucznik Horeszków („Pan Tadeusz”)'],
+        ['„Reduta Ordona” – jakie wydarzenie?', 'Obrona Warszawy w powstaniu listopadowym, 1831'],
+        ['„Świtezianka” – gatunek', 'Ballada'],
+        ['Skawiński', 'Tytułowy latarnik z noweli Sienkiewicza'],
+        ['Urszulka', 'Córka Jana Kochanowskiego – „Treny”'],
+        ['„Quo vadis” – cesarz', 'Neron'],
+      ],
+      questions: [
         { q: 'Kim okazał się ksiądz Robak w „Panu Tadeuszu”?', options: ['Gerwazym', 'Jackiem Soplicą', 'Hrabią', 'Sędzią'], answer: 1 },
-        { q: 'Gdzie Harpagon ze „Skąpca” ukrył szkatułkę z pieniędzmi?', options: ['w piwnicy', 'w ogrodzie', 'pod łóżkiem', 'w kościele'], answer: 1 },
+        { q: 'Jak zaczyna się Inwokacja „Pana Tadeusza”?', options: ['„Litwo! Ojczyzno moja!”', '„Kochajmy się!”', '„Polska jeszcze nie zginęła”', '„Nie rzucim ziemi”'], answer: 0 },
+        { q: 'Jakiego wydarzenia dotyczy „Reduta Ordona”?', options: ['bitwy pod Grunwaldem', 'obrony Warszawy w powstaniu listopadowym', 'powstania warszawskiego', 'obrony Częstochowy'], answer: 1 },
+        { q: 'Za co został ukarany strzelec w „Świteziance”?', options: ['za kradzież', 'za złamanie przysięgi wierności', 'za tchórzostwo', 'za kłusownictwo'], answer: 1 },
+        { q: 'Dlaczego Skawiński z „Latarnika” stracił posadę?', options: ['zasnął pijany', 'zaczytał się w „Panu Tadeuszu” i nie zapalił latarni', 'uciekł z wyspy', 'pokłócił się z konsulem'], answer: 1 },
+        { q: 'Po czyjej śmierci Jan Kochanowski napisał „Treny”?', options: ['żony', 'ojca', 'córki Urszulki', 'przyjaciela'], answer: 2 },
+        { q: 'Za panowania którego cesarza toczy się akcja „Quo vadis”?', options: ['Juliusza Cezara', 'Nerona', 'Oktawiana Augusta', 'Konstantyna'], answer: 1 },
+        { q: 'Jakim gatunkiem jest „Latarnik”?', options: ['nowela', 'ballada', 'komedia', 'epopeja'], answer: 0 },
       ],
     },
     {
       id: 'czesci-mowy',
       name: 'Części mowy i imiesłowy',
+      basis: 'Podstawa programowa, klasy VII–VIII: kształcenie językowe (gramatyka – części mowy, imiesłowy; ortografia „nie”).',
       theory: `
         <h3>Części mowy</h3>
         <table>
@@ -153,6 +196,7 @@ window.SUBJECTS.push({
     {
       id: 'skladnia',
       name: 'Składnia – zdania złożone',
+      basis: 'Podstawa programowa, klasy VII–VIII: kształcenie językowe (składnia – zdania złożone, wypowiedzenia, interpunkcja).',
       theory: `
         <h3>Wypowiedzenia</h3>
         <ul>
@@ -204,6 +248,7 @@ window.SUBJECTS.push({
     {
       id: 'slowotworstwo',
       name: 'Słowotwórstwo',
+      basis: 'Podstawa programowa, klasy VII–VIII: kształcenie językowe (słowotwórstwo – budowa wyrazu, rodzina wyrazów).',
       theory: `
         <h3>Podstawowe pojęcia</h3>
         <ul>
@@ -250,6 +295,7 @@ window.SUBJECTS.push({
     {
       id: 'rodzaje-literackie',
       name: 'Rodzaje i gatunki literackie',
+      basis: 'Podstawa programowa, klasy VII–VIII: kształcenie literackie i kulturowe (rozpoznawanie rodzajów i gatunków).',
       theory: `
         <table>
           <tr><th>Rodzaj</th><th>Cechy</th><th>Gatunki</th></tr>
@@ -257,12 +303,14 @@ window.SUBJECTS.push({
           <tr><td><b>Liryka</b></td><td>podmiot liryczny, wyrażanie uczuć i przeżyć, zwykle wiersz</td><td>fraszka, tren, hymn, pieśń, sonet</td></tr>
           <tr><td><b>Dramat</b></td><td>przeznaczony do wystawienia na scenie, dialogi (tekst główny), didaskalia (tekst poboczny), podział na akty i sceny</td><td>komedia, tragedia, dramat romantyczny</td></tr>
         </table>
-        <div class="tip">💡 <b>Ballada</b> łączy cechy liryki, epiki i dramatu (to tzw. synkretyzm rodzajowy).</div>
+        <div class="tip">💡 <b>Ballada</b> łączy cechy liryki, epiki i dramatu (to tzw. synkretyzm rodzajowy), np. „Świtezianka”.</div>
         <h3>Ważne gatunki</h3>
         <ul>
-          <li><b>Nowela</b> – krótki utwór prozatorski, jeden wątek, wyraźny punkt kulminacyjny, często puenta („Latarnik”, „Kamizelka”).</li>
+          <li><b>Nowela</b> – krótki utwór prozatorski, jeden wątek, wyraźny punkt kulminacyjny, często puenta („Latarnik”).</li>
           <li><b>Epopeja</b> – obszerny utwór pokazujący losy zbiorowości na tle przełomowych wydarzeń („Pan Tadeusz”).</li>
-          <li><b>Komedia</b> – utwór dramatyczny ze szczęśliwym zakończeniem, wyśmiewa ludzkie wady („Zemsta”, „Skąpiec”).</li>
+          <li><b>Komedia</b> – utwór dramatyczny ze szczęśliwym zakończeniem, wyśmiewa ludzkie wady („Zemsta”).</li>
+          <li><b>Tragedia</b> – utwór dramatyczny o bohaterze uwikłanym w konflikt, który kończy się jego klęską („Balladyna”).</li>
+          <li><b>Powieść historyczna</b> – akcja osadzona w przeszłości, obok postaci fikcyjnych występują historyczne („Quo vadis”).</li>
           <li><b>Fraszka</b> – krótki, żartobliwy lub refleksyjny utwór zakończony puentą.</li>
           <li><b>Tren</b> – utwór żałobny po śmierci kogoś bliskiego.</li>
         </ul>
@@ -282,51 +330,56 @@ window.SUBJECTS.push({
         { q: 'Kto „mówi” w utworze lirycznym?', options: ['narrator', 'podmiot liryczny', 'bohater zbiorowy', 'autor zawsze osobiście'], answer: 1 },
         { q: 'Który gatunek łączy cechy liryki, epiki i dramatu?', options: ['nowela', 'ballada', 'fraszka', 'komedia'], answer: 1 },
         { q: 'Do jakiego gatunku należy „Pan Tadeusz”?', options: ['nowela', 'komedia', 'epopeja', 'tren'], answer: 2 },
-        { q: 'Do jakiego gatunku należy „Latarnik”?', options: ['nowela', 'powieść', 'ballada', 'dramat'], answer: 0 },
+        { q: 'Do jakiego rodzaju literackiego należy „Balladyna”?', options: ['epika', 'liryka', 'dramat', 'żadnego'], answer: 2 },
         { q: '„Zemsta” to…', options: ['tragedia', 'komedia', 'epopeja', 'powieść'], answer: 1 },
         { q: 'Utwór żałobny po śmierci bliskiej osoby to…', options: ['hymn', 'fraszka', 'tren', 'oda'], answer: 2 },
         { q: 'Narrator pierwszoosobowy…', options: ['opowiada o sobie i uczestniczy w wydarzeniach', 'nigdy nie występuje w powieści', 'wie wszystko o wszystkich bohaterach', 'mówi tylko w dramacie'], answer: 0 },
         { q: 'Komizm sytuacyjny polega na…', options: ['zabawnym języku postaci', 'śmiesznych zdarzeniach i sytuacjach', 'śmiesznym wyglądzie postaci', 'rymach'], answer: 1 },
+        { q: '„Quo vadis” to powieść…', options: ['fantastyczna', 'historyczna', 'detektywistyczna', 'przygodowa o piratach'], answer: 1 },
       ],
     },
     {
       id: 'formy-wypowiedzi',
-      name: 'Formy wypowiedzi',
+      name: 'Wypracowanie na egzaminie',
+      basis: 'Zasady oceniania CKE (egzamin 2025): wypracowanie 0–20 pkt, co najmniej 200 wyrazów, z odwołaniem do wybranej lektury obowiązkowej. Formy: tekst argumentacyjny (rozprawka, przemówienie) lub twórczy (opowiadanie).',
       theory: `
+        <h3>Co jest na egzaminie?</h3>
+        <ul>
+          <li>Wybierasz <b>jeden z dwóch tematów</b>: tekst argumentacyjny (<b>rozprawka</b> lub <b>przemówienie</b>) albo tekst twórczy (<b>opowiadanie</b>).</li>
+          <li>Musisz odwołać się do <b>wybranej lektury obowiązkowej</b> (tak, jak wymaga polecenie).</li>
+          <li>Wypracowanie musi mieć <b>co najmniej 200 wyrazów</b>. Za pracę możesz dostać <b>do 20 punktów</b>.</li>
+          <li>Ocenia się m.in.: realizację tematu i formy, elementy retoryczne lub twórcze, kompetencje literackie, kompozycję, styl, język, ortografię i interpunkcję.</li>
+        </ul>
         <h3>Rozprawka</h3>
         <ol>
           <li><b>Wstęp</b> – teza (stanowisko, które udowadniasz) lub hipoteza (przypuszczenie, które sprawdzasz).</li>
-          <li><b>Rozwinięcie</b> – co najmniej 2–3 argumenty, każdy poparty przykładem (np. z lektury). Każdy argument w osobnym akapicie.</li>
+          <li><b>Rozwinięcie</b> – argumenty, każdy poparty przykładem (z lektury), każdy w osobnym akapicie.</li>
           <li><b>Zakończenie</b> – podsumowanie i potwierdzenie tezy.</li>
         </ol>
         <p>Przydatne zwroty: <i>Uważam, że…, Po pierwsze…, Kolejnym argumentem jest…, Przykładem może być…, Podsumowując…</i></p>
+        <h3>Przemówienie</h3>
+        <p>To też tekst argumentacyjny, ale skierowany do <b>słuchaczy</b>: zwrot do adresatów na początku („Drodzy koledzy i koleżanki!”), argumenty z przykładami, zwroty do słuchaczy w trakcie, pytania retoryczne, wezwanie lub apel na końcu, podziękowanie za uwagę.</p>
         <h3>Opowiadanie</h3>
-        <p>Wstęp, rozwinięcie z punktem kulminacyjnym, zakończenie. Możesz dodać dialog – każdą wypowiedź zapisujemy w nowej linii, zaczynając od myślnika (–).</p>
-        <h3>Charakterystyka postaci</h3>
-        <p>Przedstawienie postaci → wygląd → cechy charakteru (z przykładami zachowań) → ocena postaci i własny stosunek.</p>
-        <h3>Krótkie formy</h3>
-        <table>
-          <tr><th>Forma</th><th>Musi zawierać</th></tr>
-          <tr><td>Zaproszenie</td><td>kto zaprasza, kogo, na co, gdzie, kiedy (+ podpis)</td></tr>
-          <tr><td>Ogłoszenie</td><td>co, gdzie, kiedy, kontakt</td></tr>
-          <tr><td>List oficjalny</td><td>miejscowość i data, zwrot grzecznościowy („Szanowny Panie”), treść, zwrot pożegnalny („Z wyrazami szacunku”), podpis</td></tr>
-        </table>
+        <p>Wstęp, rozwinięcie z punktem kulminacyjnym, zakończenie. Wzbogać tekst o elementy twórcze: dialog, opis, zwrot akcji, puentę, retrospekcję. Każdą wypowiedź w dialogu zapisujemy w nowej linii, zaczynając od myślnika (–).</p>
+        <div class="tip">💡 Najpierw przeczytaj uważnie polecenie: forma (rozprawka/przemówienie/opowiadanie) i wymagana lektura muszą się zgadzać z tematem!</div>
       `,
       flashcards: [
         ['Teza', 'Stanowisko, które udowadniasz w rozprawce'],
         ['Hipoteza', 'Przypuszczenie, które sprawdzasz w rozprawce'],
         ['Argument', 'Uzasadnienie tezy – zawsze z przykładem'],
-        ['Zaproszenie – elementy', 'kto, kogo, na co, gdzie, kiedy, podpis'],
+        ['Minimalna długość wypracowania', '200 wyrazów'],
+        ['Przemówienie – początek', 'Zwrot do słuchaczy, np. „Drodzy koledzy i koleżanki!”'],
         ['Zapis dialogu', 'Każda wypowiedź od nowej linii, od myślnika'],
       ],
       questions: [
         { q: 'Czym zaczyna się rozprawka?', options: ['podsumowaniem', 'tezą lub hipotezą', 'dialogiem', 'opisem przyrody'], answer: 1 },
         { q: 'Każdy argument w rozprawce powinien być…', options: ['jak najkrótszy', 'poparty przykładem', 'zapisany w formie pytania', 'w jednym akapicie z innymi argumentami'], answer: 1 },
-        { q: 'Który element NIE jest obowiązkowy w zaproszeniu?', options: ['miejsce', 'data i godzina', 'opis pogody', 'kogo zapraszamy'], answer: 2 },
+        { q: 'Ile wyrazów musi mieć co najmniej wypracowanie na egzaminie ósmoklasisty?', options: ['100', '150', '200', '400'], answer: 2 },
+        { q: 'Który element jest typowy dla przemówienia, a nie dla rozprawki?', options: ['teza', 'argumenty', 'zwroty do słuchaczy', 'zakończenie'], answer: 2 },
         { q: 'Jak zapisujemy dialog w opowiadaniu?', options: ['w nawiasach', 'każdą wypowiedź od nowej linii, od myślnika', 'drukowanymi literami', 'bez znaków interpunkcyjnych'], answer: 1 },
-        { q: 'Jaki zwrot pasuje na koniec listu oficjalnego?', options: ['Na razie!', 'Z wyrazami szacunku', 'Buziaki', 'Pa pa'], answer: 1 },
-        { q: 'Co powinno znaleźć się w charakterystyce postaci?', options: ['tylko wygląd', 'cechy charakteru z przykładami i ocena postaci', 'streszczenie całej lektury', 'biografia autora'], answer: 1 },
         { q: 'Teza w rozprawce to…', options: ['pytanie bez odpowiedzi', 'stanowisko, które udowadniasz', 'cytat z lektury', 'zakończenie pracy'], answer: 1 },
+        { q: 'Który element NIE jest elementem twórczym opowiadania?', options: ['dialog', 'zwrot akcji', 'puenta', 'teza'], answer: 3, explain: 'Teza należy do tekstów argumentacyjnych (rozprawka, przemówienie).' },
+        { q: 'Do czego musisz się odwołać w wypracowaniu egzaminacyjnym?', options: ['do filmu, który lubisz', 'do wybranej lektury obowiązkowej', 'tylko do własnych doświadczeń', 'do artykułu z gazety'], answer: 1 },
       ],
     },
   ],

@@ -2,7 +2,9 @@
 
 Pomoc naukowa dla ucznia 8 klasy szkoły podstawowej, pomyślana jako przygotowanie do egzaminu ósmoklasisty.
 
-**Przedmioty:** język polski, matematyka, język angielski. Razem 21 działów i 200 pytań.
+**Przedmioty:** język polski, matematyka, język angielski. Razem 25 działów i 238 pytań.
+
+**Podstawa:** wymagania egzaminacyjne CKE do egzaminu ósmoklasisty oraz podstawa programowa dla szkoły podstawowej w wersji z 2024 r. Według niej uczą się klasy VIII w roku 2026/2027. Każda ściąga ma ramkę „Na jakiej podstawie”, a w aplikacji jest strona **Źródła** (`#/zrodla`, plik `js/dane/zrodla.js`). Stan sprawdzono 31.10.2026.
 
 W każdym dziale są:
 
@@ -39,6 +41,7 @@ window.SUBJECTS.push({
     {
       id: 'genetyka',
       name: 'Genetyka',
+      basis: 'Na jakim wymaganiu opiera się dział', // opcjonalne
       theory: `<h3>DNA</h3><p>…</p>`,          // HTML ściągi
       flashcards: [['Pytanie', 'Odpowiedź']],   // fiszki (opcjonalne)
       questions: [
@@ -65,4 +68,5 @@ index.html          – strona
 css/style.css       – wygląd
 js/app.js           – logika (quiz, fiszki, postęp)
 js/dane/*.js        – treści przedmiotów
+js/dane/zrodla.js   – opis podstaw i źródeł
 ```

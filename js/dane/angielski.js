@@ -8,6 +8,7 @@ window.SUBJECTS.push({
     {
       id: 'present',
       name: 'Present Simple i Present Continuous',
+      basis: 'Egzamin sprawdza wymagania podstawy programowej dla szkoły podstawowej (poziom ok. A2). Część: znajomość środków językowych (gramatyka).',
       theory: `
         <table>
           <tr><th></th><th>Present Simple</th><th>Present Continuous</th></tr>
@@ -41,6 +42,7 @@ window.SUBJECTS.push({
     {
       id: 'past',
       name: 'Czasy przeszłe i Present Perfect',
+      basis: 'Egzamin sprawdza wymagania podstawy programowej dla szkoły podstawowej (poziom ok. A2). Część: znajomość środków językowych (gramatyka).',
       theory: `
         <h3>Past Simple</h3>
         <p>Zakończona czynność w <b>określonym czasie w przeszłości</b>. Słowa-klucze: <i>yesterday, last week, ago, in 2019, when…</i></p>
@@ -81,6 +83,7 @@ window.SUBJECTS.push({
     {
       id: 'future',
       name: 'Przyszłość: will, going to',
+      basis: 'Egzamin sprawdza wymagania podstawy programowej dla szkoły podstawowej (poziom ok. A2). Część: znajomość środków językowych (gramatyka).',
       theory: `
         <table>
           <tr><th>Forma</th><th>Kiedy?</th><th>Przykład</th></tr>
@@ -111,6 +114,7 @@ window.SUBJECTS.push({
     {
       id: 'irregular',
       name: 'Czasowniki nieregularne',
+      basis: 'Egzamin sprawdza wymagania podstawy programowej dla szkoły podstawowej (poziom ok. A2). Część: znajomość środków językowych.',
       theory: `
         <p>Czasowniki nieregularne mają własne formy w Past Simple (II forma) i Present Perfect (III forma). Trzeba się ich nauczyć na pamięć – najlepiej z fiszkami!</p>
         <table>
@@ -184,6 +188,7 @@ window.SUBJECTS.push({
     {
       id: 'comparison',
       name: 'Stopniowanie przymiotników',
+      basis: 'Egzamin sprawdza wymagania podstawy programowej dla szkoły podstawowej (poziom ok. A2). Część: znajomość środków językowych (gramatyka).',
       theory: `
         <table>
           <tr><th>Przymiotnik</th><th>Stopień wyższy</th><th>Stopień najwyższy</th></tr>
@@ -224,6 +229,7 @@ window.SUBJECTS.push({
     {
       id: 'conditionals',
       name: 'Zdania warunkowe',
+      basis: 'Egzamin sprawdza wymagania podstawy programowej dla szkoły podstawowej (poziom ok. A2). Część: znajomość środków językowych (gramatyka).',
       theory: `
         <table>
           <tr><th>Typ</th><th>Budowa</th><th>Znaczenie</th><th>Przykład</th></tr>
@@ -256,6 +262,7 @@ window.SUBJECTS.push({
     {
       id: 'functions',
       name: 'Reakcje językowe',
+      basis: 'Egzamin sprawdza wymagania podstawy programowej dla szkoły podstawowej (poziom ok. A2). Część: znajomość funkcji językowych (reagowanie w typowych sytuacjach).',
       theory: `
         <p>Na egzaminie często trzeba wybrać właściwą reakcję na sytuację. Zapamiętaj najważniejsze zwroty:</p>
         <table>
@@ -290,6 +297,99 @@ window.SUBJECTS.push({
         { q: '„Would you like some tea?” – Grzeczna odpowiedź to:', options: ['Yes, please.', 'Yes, I would like tea yesterday.', 'You\'re welcome.', 'Here you are.'], answer: 0 },
         { q: 'Your friend passed a difficult exam. You say:', options: ['Bless you!', 'Congratulations!', 'Never mind.', 'Excuse me.'], answer: 1 },
         { q: 'You want to ask for permission to open the window. You say:', options: ['Open the window!', 'May I open the window?', 'You open the window.', 'Did you open the window?'], answer: 1 },
+      ],
+    },
+    {
+      id: 'slownictwo',
+      name: 'Słownictwo – tematy z podstawy',
+      basis: 'Egzamin sprawdza wymagania podstawy programowej dla szkoły podstawowej (poziom ok. A2). Podstawa programowa wymienia 14 obszarów tematycznych słownictwa.',
+      theory: `
+        <p>Podstawa programowa dzieli słownictwo na tematy. Teksty na egzaminie (słuchanie, czytanie) dotyczą tych obszarów:</p>
+        <table>
+          <tr><th>Temat</th><th>Przykładowe słówka</th></tr>
+          <tr><td>Człowiek</td><td>tall, curly hair, friendly, shy, feelings: angry, worried</td></tr>
+          <tr><td>Miejsce zamieszkania</td><td>flat, block of flats, living room, neighbourhood</td></tr>
+          <tr><td>Edukacja</td><td>timetable, subject, break, homework, test</td></tr>
+          <tr><td>Praca</td><td>job, nurse, plumber, salary, office</td></tr>
+          <tr><td>Życie prywatne</td><td>family, relatives, celebrate, birthday party</td></tr>
+          <tr><td>Żywienie</td><td>vegetables, dairy, fry, boil, menu, bill</td></tr>
+          <tr><td>Zakupy i usługi</td><td>shop assistant, receipt, refund, discount, size</td></tr>
+          <tr><td>Podróżowanie i turystyka</td><td>platform, return ticket, sightseeing, luggage</td></tr>
+          <tr><td>Kultura</td><td>exhibition, novel, director, concert</td></tr>
+          <tr><td>Sport</td><td>coach, team, win, lose, score a goal</td></tr>
+          <tr><td>Zdrowie</td><td>headache, sore throat, prescription, take medicine</td></tr>
+          <tr><td>Nauka i technika</td><td>device, download, charger, invention</td></tr>
+          <tr><td>Świat przyrody</td><td>weather, environment, pollution, recycle</td></tr>
+          <tr><td>Życie społeczne</td><td>crime, police, charity, volunteer</td></tr>
+        </table>
+        <div class="tip">💡 Ucz się słów w grupach tematycznych i całych wyrażeń (np. <i>take a photo, do homework, make a mistake</i>).</div>
+      `,
+      flashcards: [
+        ['receipt', 'paragon'],
+        ['refund', 'zwrot pieniędzy'],
+        ['luggage', 'bagaż'],
+        ['return ticket', 'bilet powrotny'],
+        ['sore throat', 'ból gardła'],
+        ['prescription', 'recepta'],
+        ['charger', 'ładowarka'],
+        ['neighbourhood', 'okolica, sąsiedztwo'],
+        ['volunteer', 'wolontariusz'],
+        ['make a mistake', 'popełnić błąd'],
+        ['do homework', 'odrabiać pracę domową'],
+        ['take a photo', 'zrobić zdjęcie'],
+      ],
+      questions: [
+        { q: 'Which word means „paragon”?', options: ['recipe', 'receipt', 'refund', 'record'], answer: 1, explain: '„Recipe” to przepis kulinarny – częsta pułapka!' },
+        { q: 'You have a ___ throat. You should drink hot tea.', options: ['sore', 'pain', 'hurt', 'ache'], answer: 0 },
+        { q: 'I\'d like a ___ ticket to Kraków, please. I\'m coming back tomorrow.', options: ['single', 'return', 'one-way', 'back'], answer: 1 },
+        { q: 'Which phrase is correct?', options: ['make homework', 'do a mistake', 'make a mistake', 'do a photo'], answer: 2 },
+        { q: 'My phone is dead. Can I borrow your ___ ?', options: ['charger', 'device', 'download', 'battery life'], answer: 0 },
+        { q: 'A person who works without payment to help others is a…', options: ['volunteer', 'customer', 'coach', 'neighbour'], answer: 0 },
+        { q: 'The doctor gave me a ___ for some medicine.', options: ['receipt', 'prescription', 'menu', 'ticket'], answer: 1 },
+        { q: 'Which word does NOT belong to the topic „Sport”?', options: ['coach', 'score', 'team', 'luggage'], answer: 3 },
+      ],
+    },
+    {
+      id: 'email',
+      name: 'Wypowiedź pisemna: e-mail',
+      basis: 'Egzamin sprawdza wymagania podstawy programowej dla szkoły podstawowej (poziom ok. A2). Część: wypowiedź pisemna (np. e-mail / wiadomość do kolegi).',
+      theory: `
+        <h3>Jak napisać e-mail na egzaminie?</h3>
+        <ol>
+          <li><b>Przeczytaj polecenie</b> i podkreśl wszystkie punkty, które musisz rozwinąć. Każdy punkt trzeba nie tylko wspomnieć, ale też <b>rozwinąć</b> (dodać szczegół, powód, przykład).</li>
+          <li><b>Początek</b>: Hi Tom, / Hello Anna, / Dear Mark,</li>
+          <li><b>Wstęp</b>: Thanks for your e-mail. / I'm writing to tell you about…</li>
+          <li><b>Treść</b>: po kolei wszystkie punkty polecenia.</li>
+          <li><b>Zakończenie</b>: Write back soon! / I can't wait to hear from you. / See you soon!</li>
+          <li><b>Podpis</b>: Love, / Best wishes, / Bye for now, + imię podane w poleceniu (zwykle XYZ).</li>
+        </ol>
+        <h3>Przydatne zwroty</h3>
+        <table>
+          <tr><th>Funkcja</th><th>Zwroty</th></tr>
+          <tr><td>Opisywanie wydarzenia</td><td>Last weekend I went to… It was amazing because…</td></tr>
+          <tr><td>Opinia</td><td>In my opinion… / I think… / I really liked…</td></tr>
+          <tr><td>Propozycja</td><td>Why don't we…? / How about…? / Let's…</td></tr>
+          <tr><td>Prośba o radę</td><td>What do you think I should do?</td></tr>
+          <tr><td>Rada</td><td>You should… / If I were you, I would…</td></tr>
+          <tr><td>Przeprosiny</td><td>I'm sorry, but I can't… because…</td></tr>
+        </table>
+        <div class="tip">💡 Sprawdź na końcu: czy odniosłeś się do <b>każdego</b> punktu? Czy użyłeś poprawnych czasów?</div>
+      `,
+      flashcards: [
+        ['Początek e-maila do kolegi', 'Hi Tom, / Hello Anna,'],
+        ['Podziękowanie za list', 'Thanks for your e-mail.'],
+        ['Zakończenie e-maila', 'Write back soon! / See you soon!'],
+        ['Podpis', 'Love, / Best wishes, + imię'],
+        ['Rada', 'You should… / If I were you, I would…'],
+        ['Propozycja', 'Why don\'t we…? / How about…?'],
+      ],
+      questions: [
+        { q: 'Which is a good way to start an e-mail to a friend?', options: ['Dear Sir or Madam,', 'Hi Kate,', 'To whom it may concern,', 'Yours faithfully,'], answer: 1 },
+        { q: 'Which sentence is a good ending for an e-mail to a friend?', options: ['Write back soon!', 'Thanks for your e-mail.', 'I\'m writing to tell you…', 'Last weekend I went…'], answer: 0 },
+        { q: 'You want to give advice. Which sentence fits?', options: ['If I were you, I would talk to her.', 'I went to the cinema.', 'Thanks for your e-mail.', 'How much is it?'], answer: 0 },
+        { q: 'Co trzeba zrobić z punktami podanymi w poleceniu?', options: ['wybrać jeden z nich', 'odnieść się do każdego i go rozwinąć', 'przepisać je po polsku', 'pominąć, jeśli tekst jest długi'], answer: 1 },
+        { q: 'You describe last weekend. Which sentence is correct?', options: ['Last weekend I go to the mountains.', 'Last weekend I have gone to the mountains.', 'Last weekend I went to the mountains.', 'Last weekend I am going to the mountains.'], answer: 2, explain: '„Last weekend” → Past Simple.' },
+        { q: 'You want to suggest meeting. Which sentence fits?', options: ['Why don\'t we meet on Saturday?', 'Why didn\'t we meet on Saturday?', 'We met on Saturday.', 'Do we meet on Saturday?'], answer: 0 },
       ],
     },
   ],

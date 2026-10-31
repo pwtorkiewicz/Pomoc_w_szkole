@@ -8,6 +8,7 @@ window.SUBJECTS.push({
     {
       id: 'liczby',
       name: 'Liczby i działania',
+      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Działy: liczby naturalne, całkowite i wymierne, działania, podzielność, liczby niewymierne, układ współrzędnych.',
       theory: `
         <h3>Kolejność działań</h3>
         <p>1) nawiasy → 2) potęgi i pierwiastki → 3) mnożenie i dzielenie → 4) dodawanie i odejmowanie. Przykład: <span class="f">2 + 3 · 4 = 14</span></p>
@@ -25,6 +26,8 @@ window.SUBJECTS.push({
         <p><b>NWD</b> – największy wspólny dzielnik, <b>NWW</b> – najmniejsza wspólna wielokrotność. NWD(12, 18) = 6, NWW(4, 6) = 12.</p>
         <h3>Liczby rzymskie</h3>
         <p>I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000. Mniejsza przed większą – odejmujemy: IV = 4, IX = 9, XL = 40, XC = 90, CD = 400, CM = 900.</p>
+        <h3>Liczby wymierne i niewymierne</h3>
+        <p><b>Wymierne</b> – dają się zapisać jako ułamek zwykły (np. 0,25 = 1/4, 0,(3) = 1/3). <b>Niewymierne</b> – nie dają się tak zapisać, np. √2, √3, π.</p>
         <h3>Układ współrzędnych</h3>
         <p>Środek odcinka AB, gdzie A = (x₁, y₁), B = (x₂, y₂): <span class="f">S = ((x₁ + x₂)/2, (y₁ + y₂)/2)</span></p>
       `,
@@ -49,12 +52,16 @@ window.SUBJECTS.push({
         { q: 'Liczba odwrotna do 2/5 to…', options: ['−2/5', '5/2', '−5/2', '0,4'], answer: 1 },
         { q: 'Środek odcinka o końcach A = (2, 4) i B = (6, −2) to punkt…', options: ['(4, 1)', '(4, 3)', '(8, 2)', '(2, 1)'], answer: 0, explain: 'x = (2 + 6)/2 = 4, y = (4 + (−2))/2 = 1.' },
         { q: 'Ułamek 1/3 w postaci dziesiętnej to…', options: ['0,3', '0,33', '0,(3)', '3,1'], answer: 2, explain: 'To ułamek okresowy: 0,333… = 0,(3).' },
+        { q: 'Prawda czy fałsz?\nLiczba √2 jest liczbą wymierną.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: '√2 nie da się zapisać jako ułamek – to liczba niewymierna.' },
+        { q: 'Prawda czy fałsz?\nKażda liczba podzielna przez 9 jest podzielna przez 3.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Skoro 9 = 3 · 3, to liczba podzielna przez 9 dzieli się też przez 3.' },
+        { q: 'Prawda czy fałsz?\nKażda liczba podzielna przez 3 jest podzielna przez 9.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Kontrprzykład: 6 dzieli się przez 3, ale nie przez 9.' },
         { q: 'Liczbę 3,476 zaokrąglono do części setnych. Wynik to…', options: ['3,47', '3,48', '3,5', '3,4'], answer: 1, explain: 'Cyfra tysięcznych to 6 (≥ 5), więc zaokrąglamy w górę.' },
       ],
     },
     {
       id: 'procenty',
       name: 'Procenty',
+      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Dział: obliczenia procentowe (w tym punkty procentowe i zastosowania praktyczne).',
       theory: `
         <h3>Najważniejsze wzory</h3>
         <ul>
@@ -91,6 +98,7 @@ window.SUBJECTS.push({
     {
       id: 'potegi-pierwiastki',
       name: 'Potęgi i pierwiastki',
+      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Działy (kl. VII–VIII): potęgi o podstawach wymiernych, pierwiastki, notacja wykładnicza.',
       theory: `
         <h3>Działania na potęgach</h3>
         <table>
@@ -140,6 +148,7 @@ window.SUBJECTS.push({
     {
       id: 'algebra',
       name: 'Wyrażenia algebraiczne i równania',
+      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Działy (kl. VII–VIII): wyrażenia algebraiczne, równania pierwszego stopnia z jedną niewiadomą, przekształcanie wzorów.',
       theory: `
         <h3>Wyrażenia algebraiczne</h3>
         <ul>
@@ -183,6 +192,7 @@ window.SUBJECTS.push({
     {
       id: 'geometria',
       name: 'Geometria płaska',
+      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Działy: własności figur płaskich, kąty, pola wielokątów, twierdzenie Pitagorasa.',
       theory: `
         <h3>Twierdzenie Pitagorasa</h3>
         <p>W trójkącie prostokątnym: <span class="f">a² + b² = c²</span> (c – przeciwprostokątna, naprzeciw kąta prostego).</p>
@@ -229,12 +239,14 @@ window.SUBJECTS.push({
         { q: 'Jeden kąt równoległoboku ma 70°. Kąt sąsiedni ma…', options: ['70°', '110°', '20°', '290°'], answer: 1, explain: 'Sąsiednie kąty równoległoboku sumują się do 180°.' },
         { q: 'Suma kątów wewnętrznych sześciokąta wynosi…', options: ['540°', '720°', '1080°', '360°'], answer: 1, explain: '(6 − 2) · 180° = 720°.' },
         { q: 'Romb ma przekątne 6 i 8. Jego pole wynosi…', options: ['48', '24', '14', '12'], answer: 1, explain: '6 · 8 / 2 = 24.' },
+        { q: 'Prawda czy fałsz?\nSuma kątów wewnętrznych każdego czworokąta wynosi 360°.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0 },
         { q: 'W trójkącie dwa kąty mają 50° i 60°. Trzeci kąt ma…', options: ['70°', '80°', '90°', '110°'], answer: 0 },
       ],
     },
     {
       id: 'bryly',
       name: 'Graniastosłupy i ostrosłupy',
+      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Dział (kl. VII–VIII): geometria przestrzenna – graniastosłupy i ostrosłupy.',
       theory: `
         <h3>Wzory</h3>
         <table>
@@ -279,6 +291,7 @@ window.SUBJECTS.push({
     {
       id: 'statystyka',
       name: 'Statystyka i prawdopodobieństwo',
+      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Działy: elementy statystyki opisowej, wprowadzenie do kombinatoryki i rachunku prawdopodobieństwa.',
       theory: `
         <h3>Statystyka</h3>
         <ul>
@@ -311,6 +324,47 @@ window.SUBJECTS.push({
         { q: 'Rzucamy dwa razy monetą. Jakie jest prawdopodobieństwo, że dwa razy wypadnie orzeł?', options: ['1/2', '1/3', '1/4', '2/3'], answer: 2, explain: 'Możliwości: OO, OR, RO, RR – sprzyja tylko OO.' },
         { q: 'Ile jest liczb dwucyfrowych o różnych cyfrach?', options: ['90', '81', '72', '100'], answer: 1, explain: 'Pierwsza cyfra: 9 możliwości (1–9), druga: 9 (0–9 bez pierwszej) → 81.' },
         { q: 'Kasia ma 3 bluzki i 4 spódnice. Ile różnych zestawów (bluzka + spódnica) może ułożyć?', options: ['7', '12', '9', '16'], answer: 1 },
+      ],
+    },
+    {
+      id: 'zadania-tekstowe',
+      name: 'Prędkość, skala, jednostki',
+      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Treści z klas IV–VI i VII–VIII: obliczenia praktyczne – prędkość, droga, czas, skala, jednostki.',
+      theory: `
+        <h3>Droga, prędkość, czas</h3>
+        <p><span class="f">v = s / t</span> &nbsp; <span class="f">s = v · t</span> &nbsp; <span class="f">t = s / v</span></p>
+        <p>Zamiana jednostek prędkości: <span class="f">1 m/s = 3,6 km/h</span>, więc 72 km/h = 72 : 3,6 = 20 m/s.</p>
+        <div class="tip">💡 Pilnuj jednostek: jeśli prędkość jest w km/h, czas musi być w godzinach (45 min = 0,75 h).</div>
+        <h3>Skala</h3>
+        <p>Skala <b>1 : 50 000</b> oznacza, że 1 cm na mapie to 50 000 cm = 500 m w terenie.</p>
+        <h3>Jednostki</h3>
+        <table>
+          <tr><th>Długość</th><td>1 km = 1000 m, 1 m = 100 cm, 1 cm = 10 mm</td></tr>
+          <tr><th>Pole</th><td>1 m² = 10 000 cm², 1 ha = 10 000 m², 1 km² = 100 ha</td></tr>
+          <tr><th>Objętość</th><td>1 dm³ = 1 l, 1 m³ = 1000 l, 1 cm³ = 1 ml</td></tr>
+          <tr><th>Masa</th><td>1 t = 1000 kg, 1 kg = 1000 g</td></tr>
+          <tr><th>Czas</th><td>1 h = 60 min, 0,5 h = 30 min, 0,25 h = 15 min</td></tr>
+        </table>
+      `,
+      flashcards: [
+        ['Wzór na prędkość', 'v = s / t'],
+        ['1 m/s = ? km/h', '3,6 km/h'],
+        ['Skala 1 : 100 000', '1 cm na mapie = 1 km w terenie'],
+        ['1 ha', '10 000 m²'],
+        ['1 km²', '100 ha'],
+        ['1 m²', '10 000 cm²'],
+        ['0,75 h', '45 minut'],
+      ],
+      questions: [
+        { q: 'Samochód przejechał 240 km w 3 godziny. Jaka była jego średnia prędkość?', options: ['60 km/h', '80 km/h', '72 km/h', '720 km/h'], answer: 1, explain: 'v = 240 : 3 = 80 km/h.' },
+        { q: 'Ile to jest 72 km/h w m/s?', options: ['20 m/s', '7,2 m/s', '259,2 m/s', '12 m/s'], answer: 0, explain: '72 : 3,6 = 20 m/s.' },
+        { q: 'Rowerzysta jedzie z prędkością 15 km/h. Jaką drogę pokona w 45 minut?', options: ['11,25 km', '10 km', '675 km', '12,5 km'], answer: 0, explain: '45 min = 0,75 h; 15 · 0,75 = 11,25 km.' },
+        { q: 'Na mapie w skali 1 : 50 000 odległość wynosi 4 cm. Ile to w terenie?', options: ['200 m', '2 km', '20 km', '12,5 km'], answer: 1, explain: '4 · 50 000 cm = 200 000 cm = 2 km.' },
+        { q: 'Pokój ma długość 5 m. Ile centymetrów będzie miał na planie w skali 1 : 200?', options: ['25 cm', '10 cm', '2,5 cm', '0,4 cm'], answer: 2, explain: '500 cm : 200 = 2,5 cm.' },
+        { q: 'Ile metrów kwadratowych ma 1 hektar?', options: ['100 m²', '1000 m²', '10 000 m²', '100 000 m²'], answer: 2 },
+        { q: 'Film zaczyna się o 18:45 i trwa 1 h 50 min. O której się kończy?', options: ['20:35', '20:25', '19:35', '20:45'], answer: 0 },
+        { q: 'Ile minut to 2,5 godziny?', options: ['125 min', '150 min', '250 min', '130 min'], answer: 1 },
+        { q: 'Prawda czy fałsz?\n1 m³ to 1000 litrów.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0 },
       ],
     },
   ],

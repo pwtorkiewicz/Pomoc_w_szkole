@@ -64,6 +64,7 @@
     window.scrollTo(0, 0);
     const p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
     if (p[0] === 'powtorka') return review();
+    if (p[0] === 'zrodla') return sources();
     if (p[0] === 's') {
       const s = findSubject(p[1]);
       if (s) {
@@ -103,6 +104,7 @@
         <span>🔁 Powtórka błędów</span><span class="badge ${wrongCount ? 'low' : ''}">${wrongCount}</span>
       </a>
       <p class="muted" style="margin-top:22px">
+        <a href="#/zrodla">📋 Na jakiej podstawie przygotowano materiał</a> ·
         <a href="#/" id="reset">Wyzeruj postęp</a>
       </p>`;
     document.getElementById('reset').onclick = (e) => {
@@ -159,7 +161,8 @@
         backLabel: `Wróć do: ${s.name}`,
       });
     }
-    pane.innerHTML = `<article class="theory">${t.theory}</article>
+    pane.innerHTML = `${t.basis ? `<p class="basis">📋 <b>Na jakiej podstawie:</b> ${esc(t.basis)} <a href="#/zrodla">Źródła</a></p>` : ''}
+      <article class="theory">${t.theory}</article>
       <a class="btn primary" href="${base}/quiz">Sprawdź się w quizie →</a>
       ${hasCards ? `<a class="btn" href="${base}/fiszki">Powtórz z fiszkami</a>` : ''}`;
   }
@@ -176,6 +179,13 @@
       backLabel: `Wróć do: ${s.name}`,
       againHref: `#/s/${s.id}/egzamin`,
     });
+  }
+
+  function sources() {
+    setTitle('Źródła');
+    const info = window.SOURCES || { html: '' };
+    app.innerHTML = `${crumbs([['Źródła']])}<h1>📋 Na jakiej podstawie?</h1><article class="theory">${info.html}</article>
+      <a class="btn" href="#/">Wróć na start</a>`;
   }
 
   function resolveKey(key) {
