@@ -436,7 +436,7 @@ window.SUBJECTS.push({
         <p>W polszczyźnie akcent pada zwykle na <b>przedostatnią</b> sylabę: <i>szko-ła, ksią-żka</i>.</p>
         <p><b>Wyjątki</b>:</p>
         <ul>
-          <li>na trzecią sylabę od końca: wyrazy pochodzenia greckiego i łacińskiego (<i>ma-te-<b>ma</b>-ty-ka, <b>fi</b>-zy-ka, <b>mu</b>-zy-ka, u-ni-<b>wer</b>-sy-tet</i>) i czasowniki w 1. i 2. os. lm czasu przeszłego (<i>by-<b>li</b>-śmy, zro-<b>bi</b>-li-ście</i>);</li>
+          <li>na trzecią sylabę od końca: wyrazy pochodzenia greckiego i łacińskiego (<i>ma-te-<b>ma</b>-ty-ka, <b>fi</b>-zy-ka, <b>mu</b>-zy-ka, u-ni-<b>wer</b>-sy-tet</i>) i czasowniki w 1. i 2. os. lm czasu przeszłego (<i><b>by</b>-li-śmy, zro-<b>bi</b>-li-ście</i>);</li>
           <li>na czwartą sylabę od końca: 1. i 2. os. lm trybu przypuszczającego (<i>zro-<b>bi</b>-li-by-śmy</i>).</li>
         </ul>
         <h3>Ortografia – wymiana głosek</h3>
