@@ -8,6 +8,7 @@ Pomoc naukowa dla ucznia 8 klasy szkoły podstawowej, pomyślana jako przygotowa
 
 W każdym dziale są:
 
+- **🎓 Lekcja** – nauka krok po kroku: każdy krok ma grafikę (schemat, rysunek albo interaktywną animację), krótkie wyjaśnienie, ramkę „Zapamiętaj”, trik pamięciowy i pytanie sprawdzające. Interaktywne animacje: twierdzenie Pitagorasa, procenty (siatka 100 kratek), rzuty kostką, koło.
 - **📖 Ściąga** – najważniejsza teoria, wzory i przykłady,
 - **🃏 Fiszki** – karty do zapamiętywania (odwracane kliknięciem),
 - **✅ Quiz** – pytania jednokrotnego wyboru z wyjaśnieniem odpowiedzi.
@@ -69,4 +70,7 @@ css/style.css       – wygląd
 js/app.js           – logika (quiz, fiszki, postęp)
 js/dane/*.js        – treści przedmiotów
 js/dane/zrodla.js   – opis podstaw i źródeł
+js/lekcje/*.js      – lekcje (tryb nauki) i interaktywne widżety
+docs/LEKCJE.md      – jak pisać lekcje
+tools/              – sprawdzanie lekcji (node tools/sprawdz-lekcje.js) i zrzuty ekranu
 ```
