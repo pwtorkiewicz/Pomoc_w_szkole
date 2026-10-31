@@ -414,9 +414,9 @@ window.SUBJECTS.push({
     {
       id: 'slownictwo',
       name: 'Słownictwo – tematy z podstawy',
-      basis: 'Podstawa programowa (II.1, wymaganie I) – obszary tematyczne słownictwa; w informatorze CKE jako tematyka tekstów I.1–I.13. Lista tematów w tej ściądze pochodzi z podstawy programowej.',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), język obcy – wariant II.1, wymaganie szczegółowe I.1–13: tematy słownictwa; informator CKE: tematyka tekstów I.1–I.13.',
       theory: `
-        <p>Podstawa programowa dzieli słownictwo na tematy. Teksty na egzaminie (słuchanie, czytanie) dotyczą tych obszarów:</p>
+        <p>Podstawa programowa (wariant II.1, wymaganie I.1–13) wymienia 13 tematów. Teksty na egzaminie dotyczą tych obszarów:</p>
         <table>
           <tr><th>Temat</th><th>Przykładowe słówka</th></tr>
           <tr><td>Człowiek</td><td>tall, curly hair, friendly, shy, feelings: angry, worried</td></tr>
@@ -432,7 +432,6 @@ window.SUBJECTS.push({
           <tr><td>Zdrowie</td><td>headache, sore throat, prescription, take medicine</td></tr>
           <tr><td>Nauka i technika</td><td>device, download, charger, invention</td></tr>
           <tr><td>Świat przyrody</td><td>weather, environment, pollution, recycle</td></tr>
-          <tr><td>Życie społeczne</td><td>crime, police, charity, volunteer</td></tr>
         </table>
         <div class="tip">💡 Ucz się słów w grupach tematycznych i całych wyrażeń (np. <i>take a photo, do homework, make a mistake</i>).</div>
       `,

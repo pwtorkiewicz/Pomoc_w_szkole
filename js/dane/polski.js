@@ -11,7 +11,7 @@ window.SUBJECTS.push({
     {
       id: 'srodki-stylistyczne',
       name: 'Środki stylistyczne',
-      basis: 'Podstawa programowa, klasy VII–VIII: kształcenie literackie (rozpoznawanie środków stylistycznych i określanie ich funkcji).',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), kształcenie literackie: rozpoznawanie środków stylistycznych i określanie ich funkcji (wymaganie przywoływane w zadaniach informatora CKE).',
       theory: `
         <h3>Najważniejsze środki stylistyczne</h3>
         <table>
@@ -196,7 +196,7 @@ window.SUBJECTS.push({
     {
       id: 'czesci-mowy',
       name: 'Części mowy i imiesłowy',
-      basis: 'Podstawa programowa, klasy VII–VIII: kształcenie językowe (gramatyka – części mowy, imiesłowy; ortografia „nie”).',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), kształcenie językowe: kl. IV–VI II.1.1–5 (części mowy, formy bezosobowe, strona czynna i bierna); kl. VII–VIII II.1.4 (imiesłowy, imiesłowowy równoważnik zdania); II.4.4 (pisownia „nie”).',
       theory: `
         <h3>Części mowy</h3>
         <table>
@@ -217,7 +217,11 @@ window.SUBJECTS.push({
           <li><b>Tryby:</b> oznajmujący (czytam), rozkazujący (czytaj!), przypuszczający (czytałbym).</li>
           <li><b>Strony:</b> czynna (Ania napisała list), bierna (List został napisany przez Anię).</li>
           <li><b>Aspekt:</b> niedokonany (pisać), dokonany (napisać).</li>
+          <li><b>Formy bezosobowe:</b> zakończone na -no, -to (<i>zrobiono, umyto</i>) i z „się” (<i>mówi się</i>).</li>
         </ul>
+        <h3>Imiesłowowy równoważnik zdania</h3>
+        <p>To część zdania z imiesłowem przysłówkowym: <i><b>Wróciwszy do domu,</b> zjadłem obiad.</i> Można go zamienić na zdanie złożone: <i>Kiedy wróciłem do domu, zjadłem obiad.</i></p>
+        <div class="tip">⚠️ Warunek poprawności: <b>ta sama osoba</b> wykonuje obie czynności. Błędnie: <s>Jadąc tramwajem, padał deszcz.</s> (deszcz nie jechał tramwajem!). Poprawnie: <i>Jadąc tramwajem, patrzyłem na deszcz.</i> Imiesłowowy równoważnik oddzielamy przecinkiem.</div>
       `,
       flashcards: [
         ['czytający', 'imiesłów przymiotnikowy czynny'],
@@ -226,6 +230,8 @@ window.SUBJECTS.push({
         ['przeczytawszy', 'imiesłów przysłówkowy uprzedni'],
         ['Części mowy nieodmienne', 'przysłówek, przyimek, spójnik, partykuła, wykrzyknik'],
         ['Tryb przypuszczający', 'zrobiłbym, poszłabyś'],
+        ['Imiesłowowy równoważnik zdania', 'Zwrot z imiesłowem przysłówkowym; obie czynności wykonuje ta sama osoba'],
+        ['Formy bezosobowe czasownika', '-no, -to (zrobiono), konstrukcje z „się”'],
       ],
       questions: [
         { q: 'Wyraz „czytając” to…', options: ['imiesłów przymiotnikowy czynny', 'imiesłów przysłówkowy współczesny', 'imiesłów przysłówkowy uprzedni', 'przysłówek'], answer: 1, explain: 'Zakończenie -ąc oznacza imiesłów przysłówkowy współczesny.' },
@@ -237,13 +243,16 @@ window.SUBJECTS.push({
         { q: 'W jakim trybie jest czasownik „poszedłbym”?', options: ['oznajmującym', 'rozkazującym', 'przypuszczającym', 'bezokoliczniku'], answer: 2 },
         { q: 'Które zdanie jest w stronie biernej?', options: ['Ania napisała list.', 'List został napisany przez Anię.', 'Ania pisze list.', 'Ania napisze list.'], answer: 1 },
         { q: 'Wyraz „trzeci” to liczebnik…', options: ['główny', 'porządkowy', 'zbiorowy', 'ułamkowy'], answer: 1 },
+        { q: 'Które zdanie z imiesłowowym równoważnikiem zdania jest POPRAWNE?', options: ['Jadąc tramwajem, padał deszcz.', 'Czytając książkę, zadzwonił telefon.', 'Wróciwszy do domu, zjadłem obiad.', 'Idąc do szkoły, spadł śnieg.'], answer: 2, explain: 'Tylko tu ta sama osoba (ja) wraca i je obiad.' },
+        { q: 'Zamień na zdanie złożone: „Skończywszy lekcje, poszedłem na boisko.”', options: ['Kiedy skończyłem lekcje, poszedłem na boisko.', 'Skończyłem lekcje i boisko.', 'Lekcje skończone, boisko.', 'Gdybym skończył lekcje, poszedłbym na boisko.'], answer: 0 },
+        { q: 'Która forma jest bezosobową formą czasownika?', options: ['zrobił', 'zrobiono', 'zrobiony', 'zrobiwszy'], answer: 1 },
         { q: 'Jaką częścią mowy jest wyraz „szybko”?', options: ['przymiotnik', 'przysłówek', 'imiesłów', 'partykuła'], answer: 1, explain: 'Przysłówek określa czasownik i odpowiada na pytanie „jak?”.' },
       ],
     },
     {
       id: 'skladnia',
       name: 'Składnia – zdania złożone',
-      basis: 'Podstawa programowa, klasy VII–VIII: kształcenie językowe (składnia – zdania złożone, wypowiedzenia, interpunkcja).',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), kształcenie językowe: kl. IV–VI II.1.8–13 (części zdania, zdania złożone, równoważniki); kl. VII–VIII II.1.5–6 (wypowiedzenia wielokrotnie złożone, mowa zależna i niezależna).',
       theory: `
         <h3>Wypowiedzenia</h3>
         <ul>
@@ -270,6 +279,14 @@ window.SUBJECTS.push({
           <tr><td>okolicznikowe</td><td>gdzie? kiedy? dlaczego? jak? w jakim celu? pod jakim warunkiem?</td><td>Kiedy wróciłem, wszyscy spali.</td></tr>
         </table>
         <div class="tip">💡 Przecinek stawiamy przed: <i>że, który, ponieważ, ale, lecz, więc, dlatego</i>. Nie stawiamy go przed pojedynczym <i>i, oraz, lub, albo</i>.</div>
+        <h3>Wypowiedzenie wielokrotnie złożone</h3>
+        <p>Ma co najmniej <b>trzy</b> zdania składowe: <i>Kiedy wróciłem do domu, mama gotowała obiad, a tata czytał gazetę.</i></p>
+        <h3>Mowa niezależna i zależna</h3>
+        <ul>
+          <li><b>Niezależna</b> – dosłowne przytoczenie w cudzysłowie: <i>Ania powiedziała: „Jestem zmęczona.”</i></li>
+          <li><b>Zależna</b> – przekazanie cudzych słów własnymi: <i>Ania powiedziała, że jest zmęczona.</i></li>
+        </ul>
+        <p>Przy zamianie zmienia się osoba czasownika i zaimki, a cudzysłów zastępujemy spójnikiem (<i>że, czy, żeby</i>).</p>
       `,
       flashcards: [
         ['Równoważnik zdania', 'Wypowiedzenie bez osobowej formy czasownika, np. „Cisza w lesie.”'],
@@ -289,13 +306,15 @@ window.SUBJECTS.push({
         { q: '„Kiedy wróciłem, wszyscy spali.” – jakie to zdanie podrzędne?', options: ['okolicznikowe czasu', 'okolicznikowe przyczyny', 'przydawkowe', 'podmiotowe'], answer: 0 },
         { q: '„Zostałem w domu, ponieważ byłem chory.” – jakie to zdanie podrzędne?', options: ['okolicznikowe celu', 'okolicznikowe przyczyny', 'okolicznikowe warunku', 'dopełnieniowe'], answer: 1, explain: 'Dlaczego zostałem? – ponieważ byłem chory.' },
         { q: '„Mój brat czyta ciekawą książkę.” – jaką częścią zdania jest wyraz „ciekawą”?', options: ['dopełnieniem', 'przydawką', 'okolicznikiem', 'orzeczeniem'], answer: 1 },
+        { q: 'Zamień na mowę zależną: Tomek powiedział: „Jutro pojadę do babci.”', options: ['Tomek powiedział, że jutro pojedzie do babci.', 'Tomek powiedział: jutro pojadę do babci.', 'Tomek powiedział, że jutro pojadę do babci.', 'Tomek powie, że pojechał do babci.'], answer: 0, explain: 'W mowie zależnej zmieniamy osobę: „pojadę” → „pojedzie”.' },
+        { q: 'Ile zdań składowych ma wypowiedzenie: „Kiedy wróciłem do domu, mama gotowała obiad, a tata czytał gazetę.”?', options: ['jedno', 'dwa', 'trzy', 'cztery'], answer: 2, explain: 'Trzy orzeczenia: wróciłem, gotowała, czytał – to wypowiedzenie wielokrotnie złożone.' },
         { q: 'W którym zdaniu przecinek postawiono poprawnie?', options: ['Kupiłem jabłka, i gruszki.', 'Myślę, że jutro będzie ładnie.', 'Pójdę do kina, lub do teatru.', 'Mój, brat jest wysoki.'], answer: 1, explain: 'Przed „że” zawsze stawiamy przecinek. Przed pojedynczym „i” oraz „lub” – nie.' },
       ],
     },
     {
       id: 'slowotworstwo',
       name: 'Słowotwórstwo',
-      basis: 'Podstawa programowa, klasy VII–VIII: kształcenie językowe (słowotwórstwo – budowa wyrazu, rodzina wyrazów).',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), kl. VII–VIII II.1.2–3: wyraz podstawowy i pochodny, temat słowotwórczy, formant i jego funkcje, rodzina wyrazów, rdzeń, wyrazy złożone.',
       theory: `
         <h3>Podstawowe pojęcia</h3>
         <ul>
@@ -342,7 +361,7 @@ window.SUBJECTS.push({
     {
       id: 'frazeologia',
       name: 'Frazeologizmy i znaczenie wyrazów',
-      basis: 'Podstawa programowa, kształcenie językowe (wymagania przywoływane w zadaniach informatora CKE): rozpoznaje związki frazeologiczne i rozumie ich znaczenie; rozróżnia synonimy, antonimy, homonimy; rozróżnia treść i zakres znaczeniowy wyrazu; rozpoznaje słownictwo neutralne i wartościujące; rozumie znaczenie dosłowne i przenośne.',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), kl. IV–VI II.2.4–8 i kl. VII–VIII II.2.4–5 (wymagania przywoływane też w zadaniach informatora CKE): rozpoznaje związki frazeologiczne i rozumie ich znaczenie; rozróżnia synonimy, antonimy, homonimy; rozróżnia treść i zakres znaczeniowy wyrazu; rozpoznaje słownictwo neutralne i wartościujące; rozumie znaczenie dosłowne i przenośne.',
       theory: `
         <h3>Związki frazeologiczne</h3>
         <p>To utrwalone połączenia wyrazów o znaczeniu przenośnym – nie można ich rozumieć dosłownie.</p>
@@ -401,9 +420,107 @@ window.SUBJECTS.push({
       ],
     },
     {
+      id: 'fonetyka-ortografia',
+      name: 'Głoski, akcent i ortografia',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996): kl. IV–VI II.3.5 (głoska, litera, sylaba, akcent); kl. VII–VIII II.1.1 (upodobnienia fonetyczne, rozbieżności między mową a pismem), II.1.7 (wyjątki od reguły akcentu), II.4.1, II.4.3–4 (wymiana głosek, pisownia, partykuła „nie”).',
+      theory: `
+        <h3>Głoska a litera</h3>
+        <p><b>Głoska</b> to dźwięk, <b>litera</b> to znak pisma. W wyrazie <i>chleb</i> jest 5 liter, ale 4 głoski: [x], [l], [e], [p] – bo „ch” to jedna głoska, a „b” na końcu brzmi jak [p].</p>
+        <h3>Upodobnienia fonetyczne</h3>
+        <ul>
+          <li><b>Pod względem dźwięczności</b>: <i>babka</i> wymawiamy [bapka] – [b] staje się bezdźwięczne pod wpływem [k].</li>
+          <li><b>Wsteczne</b> – głoska upodabnia się do następnej (<i>babka</i> [bapka]); <b>postępowe</b> – do poprzedniej (<i>kwiat</i> [kf'at]).</li>
+          <li>Na końcu wyrazu głoski dźwięczne tracą dźwięczność: <i>chleb</i> [xlep], <i>róg</i> [ruk].</li>
+        </ul>
+        <h3>Akcent</h3>
+        <p>W polszczyźnie akcent pada zwykle na <b>przedostatnią</b> sylabę: <i>szko-ła, ksią-żka</i>.</p>
+        <p><b>Wyjątki</b>:</p>
+        <ul>
+          <li>na trzecią sylabę od końca: wyrazy pochodzenia greckiego i łacińskiego (<i>ma-te-<b>ma</b>-ty-ka, <b>fi</b>-zy-ka, <b>mu</b>-zy-ka, u-ni-<b>wer</b>-sy-tet</i>) i czasowniki w 1. i 2. os. lm czasu przeszłego (<i>by-<b>li</b>-śmy, zro-<b>bi</b>-li-ście</i>);</li>
+          <li>na czwartą sylabę od końca: 1. i 2. os. lm trybu przypuszczającego (<i>zro-<b>bi</b>-li-by-śmy</i>).</li>
+        </ul>
+        <h3>Ortografia – wymiana głosek</h3>
+        <p>Pisownię sprawdzamy w wyrazach pokrewnych lub innych formach: <b>ó</b> wymienia się na o (<i>stół – stołu</i>), <b>rz</b> na r (<i>morze – morski</i>), <b>ż</b> na g, z, h (<i>może – mogę, wozić – wożę, druh – drużyna</i>), <b>ch</b> na sz (<i>mucha – musze</i>).</p>
+        <h3>Pisownia „nie”</h3>
+        <table>
+          <tr><th>Razem</th><th>Osobno</th></tr>
+          <tr><td>z rzeczownikami (<i>nieprzyjaciel</i>), przymiotnikami w stopniu równym (<i>niemiły</i>), imiesłowami przymiotnikowymi (<i>niepalący</i>), przysłówkami od przymiotników (<i>niedobrze</i>)</td><td>z czasownikami (<i>nie wiem</i>), imiesłowami przysłówkowymi (<i>nie wiedząc</i>), przymiotnikami i przysłówkami w stopniu wyższym i najwyższym (<i>nie lepszy</i>), liczebnikami (<i>nie pięć</i>)</td></tr>
+        </table>
+        <p>Wyjątki: czasowniki, które bez „nie” nie istnieją, piszemy razem: <i>nienawidzić, niepokoić, niedowidzieć</i>.</p>
+      `,
+      flashcards: [
+        ['Akcent w języku polskim', 'Zwykle na przedostatnią sylabę'],
+        ['matematyka – akcent', 'ma-te-MA-ty-ka (3. sylaba od końca)'],
+        ['zrobilibyśmy – akcent', 'zro-BI-li-by-śmy (4. sylaba od końca)'],
+        ['Głoska a litera', 'Głoska – dźwięk, litera – znak pisma'],
+        ['„nie” z czasownikami', 'osobno (nie wiem); wyjątki: nienawidzić, niepokoić'],
+        ['„nie” z przymiotnikami', 'razem (niemiły), ale w stopniu wyższym osobno (nie lepszy)'],
+      ],
+      questions: [
+        { q: 'Na którą sylabę pada akcent w wyrazie „matematyka”?', options: ['ostatnią', 'przedostatnią', 'trzecią od końca', 'pierwszą'], answer: 2, explain: 'ma-te-MA-ty-ka – wyraz pochodzenia greckiego, wyjątek od reguły.' },
+        { q: 'Który wyraz ma akcent na czwartą sylabę od końca?', options: ['zrobiliśmy', 'zrobilibyśmy', 'zrobiony', 'matematyka'], answer: 1 },
+        { q: 'W którym wyrazie akcent pada zgodnie z ogólną regułą (na przedostatnią sylabę)?', options: ['fizyka', 'byliśmy', 'książka', 'muzyka'], answer: 2 },
+        { q: 'Ile głosek jest w wyrazie „chleb”?', options: ['3', '4', '5', '6'], answer: 1, explain: '[x][l][e][p] – „ch” to jedna głoska.' },
+        { q: 'Jak wymawiamy wyraz „babka”?', options: ['[babka]', '[bapka]', '[pabka]', '[papka]'], answer: 1, explain: 'Upodobnienie wsteczne pod względem dźwięczności: [b] przed [k] traci dźwięczność.' },
+        { q: 'Który zapis jest poprawny?', options: ['niewiem', 'nie lepszy', 'nie miły', 'nie przyjaciel'], answer: 1, explain: '„Nie” z przymiotnikiem w stopniu wyższym piszemy osobno.' },
+        { q: 'Który czasownik piszemy z „nie” łącznie?', options: ['nie lubić', 'nienawidzić', 'nie chcieć', 'nie wiedzieć'], answer: 1, explain: 'Nie ma czasownika „nawidzić”, więc piszemy razem.' },
+        { q: 'Jakim wyrazem pokrewnym uzasadnisz pisownię „ó” w wyrazie „stół”?', options: ['stolik / stołu', 'stal', 'stać', 'stuł'], answer: 0, explain: '„Ó” wymienia się na „o”.' },
+        { q: 'Uzasadnieniem pisowni „rz” w wyrazie „morze” jest wyraz…', options: ['morski', 'mżawka', 'mróz', 'mazać'], answer: 0, explain: '„Rz” wymienia się na „r”.' },
+      ],
+    },
+    {
+      id: 'style-komunikacja',
+      name: 'Style, słownictwo i komunikacja',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996): kl. VII–VIII II.2.1–3 i II.2.6 (słownictwo ogólnonarodowe i o ograniczonym zasięgu, zapożyczenia, nazwy osobowe i miejscowe, style), II.3.1–3 (grzeczność, norma, błąd językowy), III.1.8 (manipulacja); kl. IV–VI II.3.1–3 (nadawca, odbiorca, sytuacja komunikacyjna).',
+      theory: `
+        <h3>Style wypowiedzi</h3>
+        <table>
+          <tr><th>Styl</th><th>Cechy</th><th>Gdzie?</th></tr>
+          <tr><td>potoczny</td><td>swobodny, kolokwializmy, emocje</td><td>rozmowy z bliskimi, SMS</td></tr>
+          <tr><td>urzędowy</td><td>oficjalny, schematyczny, stałe formuły</td><td>podanie, wniosek, regulamin</td></tr>
+          <tr><td>naukowy</td><td>precyzyjny, terminy naukowe, brak emocji</td><td>podręcznik, encyklopedia</td></tr>
+          <tr><td>publicystyczny</td><td>przekonuje, komentuje bieżące sprawy</td><td>artykuły, felietony</td></tr>
+          <tr><td>artystyczny</td><td>środki stylistyczne, obrazowość</td><td>literatura piękna</td></tr>
+        </table>
+        <h3>Słownictwo</h3>
+        <ul>
+          <li><b>Ogólnonarodowe</b> – znane wszystkim; <b>o ograniczonym zasięgu</b> – terminy naukowe, archaizmy, <b>kolokwializmy</b> (wyrazy potoczne: <i>kasa</i> = pieniądze, <i>fajny</i>).</li>
+          <li><b>Wyrazy rodzime</b> i <b>zapożyczone</b> (<i>weekend, komputer, pizza</i>).</li>
+          <li>Nazwy mieszkańców: Kraków – <i>krakowianin</i>, Warszawa – <i>warszawianin</i>, Gdańsk – <i>gdańszczanin</i>, Poznań – <i>poznaniak</i>.</li>
+        </ul>
+        <h3>Komunikacja i kultura języka</h3>
+        <ul>
+          <li><b>Nadawca</b> – kto mówi/pisze, <b>odbiorca</b> – do kogo; <b>sytuacja komunikacyjna</b> wpływa na wybór słów.</li>
+          <li><b>Grzeczność językowa</b> – formy „proszę, dziękuję, przepraszam”, zwroty „Pan/Pani”.</li>
+          <li><b>Norma wzorcowa</b> (staranna, oficjalna) i <b>użytkowa</b> (codzienna, dopuszczalna). <b>Błąd językowy</b> – naruszenie normy.</li>
+          <li><b>Manipulacja</b> – wpływanie na odbiorcę w ukryty sposób, np. przemilczenia, uogólnienia („wszyscy to mają!”), wywoływanie emocji zamiast argumentów.</li>
+        </ul>
+        <h3>Inne formy wypowiedzi z podstawy</h3>
+        <p>recenzja, podanie, CV, list motywacyjny, przemówienie, wywiad, rozprawka; streszczenie i parafraza tekstu.</p>
+      `,
+      flashcards: [
+        ['Styl urzędowy', 'Oficjalny, schematyczny – podanie, regulamin'],
+        ['Styl naukowy', 'Precyzyjny, terminy – podręcznik'],
+        ['Kolokwializm', 'Wyraz potoczny, np. „kasa” = pieniądze'],
+        ['Zapożyczenie', 'Wyraz z innego języka, np. weekend'],
+        ['Manipulacja', 'Ukryte wpływanie na odbiorcę, np. „wszyscy to mają!”'],
+        ['Mieszkaniec Gdańska', 'gdańszczanin'],
+      ],
+      questions: [
+        { q: 'W jakim stylu pisze się podanie do dyrektora szkoły?', options: ['potocznym', 'urzędowym', 'artystycznym', 'naukowym'], answer: 1 },
+        { q: 'Który wyraz jest kolokwializmem?', options: ['pieniądze', 'kasa (o pieniądzach)', 'fundusze', 'środki finansowe'], answer: 1 },
+        { q: 'Który wyraz jest zapożyczeniem?', options: ['dom', 'weekend', 'chleb', 'woda'], answer: 1 },
+        { q: 'Jak nazywa się mieszkaniec Krakowa?', options: ['krakowczyk', 'krakowianin', 'krakowiec', 'krakowski'], answer: 1 },
+        { q: 'Hasło reklamy „Wszyscy już to mają – a ty?” to przykład…', options: ['rzeczowego argumentu', 'manipulacji językowej', 'stylu naukowego', 'archaizmu'], answer: 1, explain: 'To fałszywe uogólnienie, które wywiera presję zamiast podawać argumenty.' },
+        { q: 'Który tekst jest napisany stylem naukowym?', options: ['SMS do kolegi', 'hasło w encyklopedii', 'wiersz', 'felieton'], answer: 1 },
+        { q: 'Kto jest nadawcą listu?', options: ['ten, kto go pisze', 'ten, kto go czyta', 'listonosz', 'nikt'], answer: 0 },
+        { q: 'Która forma jest przykładem grzeczności językowej w rozmowie z nauczycielem?', options: ['Ej, mogę wyjść?', 'Przepraszam, czy mogę wyjść?', 'Wychodzę.', 'Muszę iść, nara.'], answer: 1 },
+      ],
+    },
+    {
       id: 'rodzaje-literackie',
       name: 'Rodzaje i gatunki literackie',
-      basis: 'Podstawa programowa, klasy VII–VIII: kształcenie literackie i kulturowe (rozpoznawanie rodzajów i gatunków).',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), kl. VII–VIII I.1.1–6: rodzaje i gatunki (komedia, fraszka, pieśń, tren, ballada, epopeja, tragedia), elementy dramatu, neologizm, inwokacja, symbol, alegoria, komizm, ironia; I.2.5: reportaż, wywiad, artykuł.',
       theory: `
         <table>
           <tr><th>Rodzaj</th><th>Cechy</th><th>Gatunki</th></tr>
@@ -424,6 +541,16 @@ window.SUBJECTS.push({
         </ul>
         <h3>Komizm w komedii</h3>
         <p><b>sytuacyjny</b> (zabawne sytuacje), <b>słowny</b> (zabawny język), <b>postaci</b> (śmieszne zachowanie, wygląd).</p>
+        <h3>Pojęcia z podstawy (kl. VII–VIII)</h3>
+        <ul>
+          <li><b>Inwokacja</b> – uroczysty zwrot na początku epopei (np. „Litwo! Ojczyzno moja!” w „Panu Tadeuszu”).</li>
+          <li><b>Symbol</b> – znak o wielu możliwych znaczeniach, trzeba go odczytać (np. światło, droga).</li>
+          <li><b>Alegoria</b> – znak o <b>jednym</b>, umownym znaczeniu (np. lis = przebiegłość, waga = sprawiedliwość).</li>
+          <li><b>Ironia</b> – mówienie czegoś odwrotnego, niż się myśli, zwykle z kpiną („Pięknie się spisałeś!” po porażce).</li>
+          <li><b>Neologizm</b> – nowo utworzony wyraz.</li>
+        </ul>
+        <h3>Teksty nieliterackie</h3>
+        <p>Gatunki dziennikarskie: <b>reportaż</b> (relacja z wydarzeń oparta na faktach, z elementami opisu), <b>wywiad</b> (rozmowa w formie pytań i odpowiedzi), <b>artykuł</b> (tekst prasowy na dany temat). Odróżniaj literaturę piękną od tekstów naukowych, popularnonaukowych i publicystycznych.</p>
       `,
       flashcards: [
         ['Didaskalia', 'Tekst poboczny w dramacie – wskazówki dla aktorów i reżysera'],
@@ -443,6 +570,10 @@ window.SUBJECTS.push({
         { q: 'Utwór żałobny po śmierci bliskiej osoby to…', options: ['hymn', 'fraszka', 'tren', 'oda'], answer: 2 },
         { q: 'Narrator pierwszoosobowy…', options: ['opowiada o sobie i uczestniczy w wydarzeniach', 'nigdy nie występuje w powieści', 'wie wszystko o wszystkich bohaterach', 'mówi tylko w dramacie'], answer: 0 },
         { q: 'Komizm sytuacyjny polega na…', options: ['zabawnym języku postaci', 'śmiesznych zdarzeniach i sytuacjach', 'śmiesznym wyglądzie postaci', 'rymach'], answer: 1 },
+        { q: 'Uroczysty zwrot rozpoczynający epopeję to…', options: ['inwokacja', 'puenta', 'didaskalia', 'epilog'], answer: 0 },
+        { q: 'Czym alegoria różni się od symbolu?', options: ['alegoria ma jedno, umowne znaczenie, a symbol wiele', 'symbol jest zawsze zwierzęciem', 'niczym', 'alegoria występuje tylko w dramacie'], answer: 0 },
+        { q: 'Ktoś przegrał mecz 0 : 10, a kolega mówi: „No, świetnie zagraliście!”. To przykład…', options: ['ironii', 'inwokacji', 'alegorii', 'onomatopei'], answer: 0 },
+        { q: 'Tekst w formie pytań dziennikarza i odpowiedzi rozmówcy to…', options: ['reportaż', 'wywiad', 'felieton', 'nowela'], answer: 1 },
         { q: '„Quo vadis” to powieść…', options: ['fantastyczna', 'historyczna', 'detektywistyczna', 'przygodowa o piratach'], answer: 1 },
       ],
     },

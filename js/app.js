@@ -7,7 +7,7 @@
 
   const SUBJECTS = window.SUBJECTS || [];
   const app = document.getElementById('app');
-  const STORE_KEY = 'pomoc8_v1';
+  const STORE_KEY = 'pomoc8_v2';
   const EXAM_SIZE = 15;
   const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
 

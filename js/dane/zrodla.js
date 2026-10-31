@@ -1,7 +1,7 @@
 /* Opis podstaw, na których przygotowano materiał (strona „Źródła”). */
 window.SOURCES = {
   html: `
-    <p>Materiał sprawdzono w <b>oryginalnych dokumentach Centralnej Komisji Egzaminacyjnej</b>, pobranych z cke.gov.pl 31 października 2026 r. Dotyczy on uczniów, którzy piszą egzamin ósmoklasisty w <b>maju 2027 r.</b></p>
+    <p>Materiał sprawdzono w <b>oryginalnych dokumentach</b>: informatorach i komunikatach Centralnej Komisji Egzaminacyjnej (cke.gov.pl) oraz w <b>tekście podstawy programowej</b> (Dz.U. 2024 poz. 996, eli.gov.pl). Dokumenty pobrano 31 października 2026 r. Materiał dotyczy uczniów, którzy piszą egzamin ósmoklasisty w <b>maju 2027 r.</b> Ramka „Na jakiej podstawie” w każdym dziale podaje numer wymagania z podstawy albo dokument CKE.</p>
 
     <h3>Podstawa prawna</h3>
     <p>Według informatora CKE od 2025 r. zadania egzaminacyjne sprawdzają wymagania <b>podstawy programowej z rozporządzenia Ministra Edukacji z 28 czerwca 2024 r.</b> (Dz.U. 2024 poz. 996). Nowa podstawa „Kompas Jutra” od 1 września 2026 r. obejmuje tylko klasy I i IV, więc <b>nie dotyczy</b> obecnych ósmoklasistów.</p>
@@ -37,14 +37,33 @@ window.SOURCES = {
       <li>Na stronie każdego przedmiotu jest teraz opis egzaminu: termin, czas i punkty.</li>
     </ul>
 
-    <h3>Ograniczenia</h3>
+    <h3>Co poprawiono po sprawdzeniu tekstu podstawy programowej</h3>
     <ul>
-      <li>Nie dało się pobrać pełnego tekstu podstawy programowej (strony isap.sejm.gov.pl i eli.gov.pl są zablokowane w środowisku, w którym budowano aplikację). Wymagania gramatyczne z języka polskiego (imiesłowy, słowotwórstwo, składnia) oparto na podstawie programowej. Według źródeł pośrednich nie zostały one wykreślone w 2024 r.</li>
-      <li>Nie potwierdzono, czy dział „Symetrie” z klas VII–VIII jest sprawdzany na egzaminie. W aplikacji jest tylko symetria osiowa figur z klas IV–VI, którą informator wymienia wprost.</li>
-      <li>Informator to przykłady zadań, a nie pełna lista. Pytania w aplikacji to ćwiczenia, a nie oficjalne zadania CKE.</li>
+      <li><b>Matematyka.</b> W podstawie jest zapis: „Dział XV [Symetrie] dla klas VII i VIII może zostać zrealizowany po egzaminie ósmoklasisty”. Dlatego w aplikacji jest tylko symetria osiowa figur z klas IV–VI. Usunięto treści spoza podstawy:
+        <ul>
+          <li>potęgi o wykładniku 0 i ujemnym (wymagane są tylko wykładniki całkowite dodatnie, a ujemne pojawiają się wyłącznie w notacji wykładniczej);</li>
+          <li>medianę i dominantę (wymagana jest średnia arytmetyczna i odczytywanie danych);</li>
+          <li>regułę mnożenia w kombinatoryce (podstawa wymaga zliczania „w przypadkach niewymagających stosowania reguł mnożenia i dodawania”);</li>
+          <li>wzór na sumę kątów n-kąta.</li>
+        </ul>
+        Dodano: wartość bezwzględną, liczby pierwsze, dzielenie z resztą, długość odcinka w układzie współrzędnych, szacowanie pierwiastków, nierówność trójkąta, kąty przy prostych równoległych i proporcjonalność prostą.</li>
+      <li><b>Język polski.</b> Potwierdzono, że imiesłowy, słowotwórstwo i składnia są w podstawie klas VII–VIII. Dodano:
+        <ul>
+          <li>imiesłowowy równoważnik zdania, formy bezosobowe, mowę zależną i niezależną, wypowiedzenia wielokrotnie złożone;</li>
+          <li>dział o głoskach, akcencie (z wyjątkami) i ortografii;</li>
+          <li>dział o stylach, słownictwie i komunikacji, w tym o manipulacji językowej;</li>
+          <li>pojęcia: inwokacja, symbol, alegoria, ironia, reportaż, wywiad.</li>
+        </ul></li>
+      <li><b>Język angielski.</b> Lista tematów słownictwa ma teraz 13 pozycji, zgodnie z podstawą (wcześniej był tam zbędny temat „Życie społeczne”).</li>
     </ul>
 
-    <h3>Dokumenty źródłowe (cke.gov.pl)</h3>
+    <h3>Ograniczenia</h3>
+    <ul>
+      <li>Informator CKE pokazuje przykłady zadań, a nie wszystkie możliwe typy. Pytania w aplikacji to ćwiczenia przygotowane na podstawie wymagań, a nie oficjalne zadania CKE.</li>
+      <li>Streszczenia lektur są krótkie. Nie zastąpią przeczytania utworu.</li>
+    </ul>
+
+    <h3>Dokumenty źródłowe</h3>
     <ul>
       <li><a href="https://cke.gov.pl/images/_EGZAMIN_OSMOKLASISTY/Informatory/2025/standard/Informator_E8_polski_2025_P1.pdf">Informator o egzaminie ósmoklasisty z języka polskiego od r. szk. 2024/2025</a></li>
       <li><a href="https://cke.gov.pl/images/_EGZAMIN_OSMOKLASISTY/Informatory/2025/standard/Informator_E8_matematyka_2025_P1.pdf">Informator o egzaminie ósmoklasisty z matematyki od r. szk. 2024/2025</a></li>
@@ -53,6 +72,7 @@ window.SOURCES = {
       <li><a href="https://cke.gov.pl/images/_EGZAMIN_OSMOKLASISTY/2026_2027/komunikaty/20260820_E8_EM_Komunikat_o_harmonogramie_2027_fin.pdf">Komunikat o harmonogramie egzaminów w 2027 r.</a></li>
       <li><a href="https://cke.gov.pl/images/_EGZAMIN_OSMOKLASISTY/2026_2027/komunikaty/20260820_E8_EM_Komunikat_o_przyborach_2027_fin.pdf">Komunikat o materiałach i przyborach pomocniczych w 2027 r.</a></li>
       <li><a href="https://cke.gov.pl/egzamin-osmoklasisty/informatory/">Wszystkie informatory CKE</a></li>
+      <li><a href="https://eli.gov.pl/eli/DU/2024/996/ogl">Rozporządzenie Ministra Edukacji z 28.06.2024 – podstawa programowa (Dz.U. 2024 poz. 996)</a></li>
     </ul>
     <div class="tip">💡 Przed egzaminem zajrzyj na cke.gov.pl. Jeśli CKE opublikuje nowy informator albo komunikat o lekturach na 2027 r., to on będzie obowiązywał.</div>
   `,

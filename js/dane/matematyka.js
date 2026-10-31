@@ -27,10 +27,16 @@ window.SUBJECTS.push({
         <p><b>NWD</b> – największy wspólny dzielnik, <b>NWW</b> – najmniejsza wspólna wielokrotność. NWD(12, 18) = 6, NWW(4, 6) = 12.</p>
         <h3>Liczby rzymskie</h3>
         <p>I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000. Mniejsza przed większą – odejmujemy: IV = 4, IX = 9, XL = 40, XC = 90, CD = 400, CM = 900.</p>
-        <h3>Liczby wymierne i niewymierne</h3>
-        <p><b>Wymierne</b> – dają się zapisać jako ułamek zwykły (np. 0,25 = 1/4, 0,(3) = 1/3). <b>Niewymierne</b> – nie dają się tak zapisać, np. √2, √3, π.</p>
+        <h3>Liczby całkowite, liczby pierwsze, dzielenie z resztą</h3>
+        <ul>
+          <li><b>Wartość bezwzględna</b> to odległość liczby od zera na osi: |−7| = 7, |3| = 3.</li>
+          <li><b>Liczba pierwsza</b> ma dokładnie dwa dzielniki: 1 i samą siebie (2, 3, 5, 7, 11, 13, 17, 19, 23, 29…). Liczba 1 nie jest ani pierwsza, ani złożona.</li>
+          <li><b>Dzielenie z resztą</b>: a = b · q + r, gdzie 0 ≤ r &lt; b. Np. 47 = 6 · 7 + 5.</li>
+          <li><b>Oś liczbowa</b>: zbiór liczb x &gt; 1,5 zaznaczamy kółkiem niezamalowanym w 1,5 i strzałką w prawo.</li>
+        </ul>
         <h3>Układ współrzędnych</h3>
         <p>Środek odcinka AB, gdzie A = (x₁, y₁), B = (x₂, y₂): <span class="f">S = ((x₁ + x₂)/2, (y₁ + y₂)/2)</span></p>
+        <p>Długość odcinka w układzie współrzędnych liczymy z twierdzenia Pitagorasa: dla A = (1, 1) i B = (4, 5) różnice współrzędnych to 3 i 4, więc |AB| = √(3² + 4²) = 5.</p>
       `,
       flashcards: [
         ['Cecha podzielności przez 3', 'Suma cyfr podzielna przez 3'],
@@ -42,6 +48,8 @@ window.SUBJECTS.push({
         ['Liczba odwrotna do a', '1/a (iloczyn liczb odwrotnych = 1)'],
         ['Liczba przeciwna do a', '−a (suma liczb przeciwnych = 0)'],
         ['Środek odcinka', 'S = ((x₁ + x₂)/2, (y₁ + y₂)/2)'],
+        ['Liczba pierwsza', 'Ma dokładnie dwa dzielniki: 1 i samą siebie'],
+        ['|−7|', '7'],
       ],
       questions: [
         { q: 'Ile wynosi 2 + 3 · 4?', options: ['20', '14', '24', '9'], answer: 1, explain: 'Najpierw mnożenie: 3 · 4 = 12, potem 2 + 12 = 14.' },
@@ -53,7 +61,10 @@ window.SUBJECTS.push({
         { q: 'Liczba odwrotna do 2/5 to…', options: ['−2/5', '5/2', '−5/2', '0,4'], answer: 1 },
         { q: 'Środek odcinka o końcach A = (2, 4) i B = (6, −2) to punkt…', options: ['(4, 1)', '(4, 3)', '(8, 2)', '(2, 1)'], answer: 0, explain: 'x = (2 + 6)/2 = 4, y = (4 + (−2))/2 = 1.' },
         { q: 'Ułamek 1/3 w postaci dziesiętnej to…', options: ['0,3', '0,33', '0,(3)', '3,1'], answer: 2, explain: 'To ułamek okresowy: 0,333… = 0,(3).' },
-        { q: 'Prawda czy fałsz?\nLiczba √2 jest liczbą wymierną.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: '√2 nie da się zapisać jako ułamek – to liczba niewymierna.' },
+        { q: 'Ile wynosi |−7|?', options: ['−7', '7', '0', '49'], answer: 1, explain: 'Wartość bezwzględna to odległość od zera – zawsze nieujemna.' },
+        { q: 'Która z liczb jest liczbą pierwszą?', options: ['21', '27', '29', '33'], answer: 2, explain: '21 = 3 · 7, 27 = 3 · 9, 33 = 3 · 11, a 29 dzieli się tylko przez 1 i 29.' },
+        { q: 'Liczbę 47 zapisano w postaci 47 = 6 · q + r, gdzie 0 ≤ r < 6. Ile wynoszą q i r?', options: ['q = 7, r = 5', 'q = 8, r = −1', 'q = 6, r = 11', 'q = 7, r = 6'], answer: 0 },
+        { q: 'Jaka jest długość odcinka o końcach A = (1, 1) i B = (4, 5)?', options: ['5', '7', '√7', '25'], answer: 0, explain: 'Różnice współrzędnych: 3 i 4; √(9 + 16) = 5.' },
         { q: 'Prawda czy fałsz?\nKażda liczba podzielna przez 9 jest podzielna przez 3.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Skoro 9 = 3 · 3, to liczba podzielna przez 9 dzieli się też przez 3.' },
         { q: 'Prawda czy fałsz?\nKażda liczba podzielna przez 3 jest podzielna przez 9.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Kontrprzykład: 6 dzieli się przez 3, ale nie przez 9.' },
         { q: 'Liczbę 3,476 zaokrąglono do części setnych. Wynik to…', options: ['3,47', '3,48', '3,5', '3,4'], answer: 1, explain: 'Cyfra tysięcznych to 6 (≥ 5), więc zaokrąglamy w górę.' },
@@ -74,6 +85,8 @@ window.SUBJECTS.push({
           <li><b>Liczba, której p% to b</b>: <span class="f">b : (p/100)</span> &nbsp; np. 30 to 20% liczby 150</li>
         </ul>
         <div class="tip">💡 <b>Punkty procentowe</b>: gdy oprocentowanie wzrasta z 4% do 5%, to wzrost o <b>1 punkt procentowy</b>, ale aż o <b>25%</b>.</div>
+        <h3>Proporcjonalność prosta</h3>
+        <p>Gdy jedna wielkość rośnie tyle razy, ile druga (np. cena i liczba sztuk). <b>Podział proporcjonalny</b>: 60 zł w stosunku 1 : 2 → 3 części po 20 zł → 20 zł i 40 zł.</p>
         <div class="tip">💡 Podwyżka o 10% i potem obniżka o 10% <b>nie</b> daje ceny początkowej: 100 → 110 → 99.</div>
       `,
       flashcards: [
@@ -93,6 +106,8 @@ window.SUBJECTS.push({
         { q: 'Oprocentowanie wzrosło z 4% do 5%. Wzrosło ono o…', options: ['1%', '1 punkt procentowy', '20 punktów procentowych', '5%'], answer: 1, explain: 'Różnica 5% − 4% to 1 punkt procentowy (procentowo to wzrost o 25%).' },
         { q: 'Cenę 100 zł podniesiono o 10%, a potem nową cenę obniżono o 10%. Ile wynosi cena końcowa?', options: ['100 zł', '99 zł', '101 zł', '90 zł'], answer: 1, explain: '100 · 1,1 = 110; 110 · 0,9 = 99 zł.' },
         { q: '30 to 20% pewnej liczby. Jaka to liczba?', options: ['6', '60', '150', '600'], answer: 2, explain: '30 : 0,2 = 150.' },
+        { q: 'Pięć zeszytów kosztuje 12 zł. Ile kosztuje osiem takich zeszytów?', options: ['19,20 zł', '15 zł', '20 zł', '96 zł'], answer: 0, explain: 'Proporcjonalność prosta: 12 : 5 = 2,40 zł za zeszyt; 8 · 2,40 = 19,20 zł.' },
+        { q: 'Ania i Ola podzieliły 60 zł w stosunku 1 : 2. Ile dostała Ola?', options: ['20 zł', '30 zł', '40 zł', '45 zł'], answer: 2, explain: 'Razem 3 części po 20 zł; Ola ma 2 części = 40 zł.' },
         { q: 'Wpłacono 1000 zł na lokatę oprocentowaną 5% w skali roku. Ile będzie na lokacie po roku (bez podatku)?', options: ['1005 zł', '1050 zł', '1500 zł', '1100 zł'], answer: 1 },
       ],
     },
@@ -108,8 +123,8 @@ window.SUBJECTS.push({
           <tr><td>aⁿ : aᵐ = aⁿ⁻ᵐ</td><td>2⁵ : 2³ = 2² = 4</td></tr>
           <tr><td>(aⁿ)ᵐ = aⁿ·ᵐ</td><td>(3²)³ = 3⁶</td></tr>
           <tr><td>(a · b)ⁿ = aⁿ · bⁿ</td><td>(2 · 5)³ = 2³ · 5³</td></tr>
-          <tr><td>a⁰ = 1 (a ≠ 0)</td><td>7⁰ = 1</td></tr>
         </table>
+        <div class="tip">📋 Podstawa programowa wymaga potęg o wykładnikach <b>całkowitych dodatnich</b>. Wykładniki ujemne pojawiają się tylko w notacji wykładniczej.</div>
         <h3>Notacja wykładnicza</h3>
         <p><span class="f">a · 10ⁿ</span>, gdzie 1 ≤ a &lt; 10. Np. 3 400 000 = 3,4 · 10⁶; 0,00052 = 5,2 · 10⁻⁴.</p>
         <h3>Pierwiastki</h3>
@@ -118,6 +133,8 @@ window.SUBJECTS.push({
           <li>Wyłączanie czynnika: √50 = √(25 · 2) = 5√2</li>
           <li>(√a)² = a, √(a²) = a dla a ≥ 0</li>
           <li>Pierwiastek sześcienny może być z liczby ujemnej: ∛(−27) = −3</li>
+          <li>Włączanie liczby pod pierwiastek: 3√2 = √(9 · 2) = √18</li>
+          <li>Szacowanie: 11² = 121 i 12² = 144, więc 11 &lt; √137 &lt; 12</li>
         </ul>
         <div class="tip">💡 Kwadraty do zapamiętania: 11² = 121, 12² = 144, 13² = 169, 14² = 196, 15² = 225.</div>
       `,
@@ -125,8 +142,8 @@ window.SUBJECTS.push({
         ['aⁿ · aᵐ', 'aⁿ⁺ᵐ'],
         ['aⁿ : aᵐ', 'aⁿ⁻ᵐ'],
         ['(aⁿ)ᵐ', 'aⁿ·ᵐ'],
-        ['a⁰', '1 (dla a ≠ 0)'],
-        ['10⁻²', '0,01'],
+        ['aⁿ · bⁿ', '(a · b)ⁿ'],
+        ['3√2 jako jeden pierwiastek', '√18'],
         ['√50', '5√2'],
         ['∛(−8)', '−2'],
         ['13²', '169'],
@@ -135,8 +152,9 @@ window.SUBJECTS.push({
       questions: [
         { q: 'Ile wynosi 2³ · 2⁴?', options: ['2⁷', '2¹²', '4⁷', '4¹²'], answer: 0, explain: 'Przy mnożeniu potęg o tej samej podstawie dodajemy wykładniki: 3 + 4 = 7.' },
         { q: 'Ile wynosi (3²)³?', options: ['3⁵', '3⁶', '9⁵', '3⁸'], answer: 1, explain: 'Potęgę potęgujemy, mnożąc wykładniki: 2 · 3 = 6.' },
-        { q: 'Ile wynosi 5⁰?', options: ['0', '5', '1', '50'], answer: 2 },
-        { q: 'Ile wynosi 10⁻²?', options: ['−100', '0,01', '−20', '0,1'], answer: 1 },
+        { q: 'Ile wynosi 2³ · 5³?', options: ['10³', '7³', '10⁶', '7⁶'], answer: 0, explain: 'Potęgi o jednakowych wykładnikach: aⁿ · bⁿ = (a · b)ⁿ.' },
+        { q: 'Między którymi kolejnymi liczbami całkowitymi leży √137?', options: ['10 i 11', '11 i 12', '12 i 13', '13 i 14'], answer: 1, explain: '11² = 121 < 137 < 144 = 12².' },
+        { q: 'Liczbę 3√2 można zapisać jako…', options: ['√6', '√18', '√5', '√12'], answer: 1, explain: '3√2 = √9 · √2 = √18.' },
         { q: 'Liczba 3 400 000 w notacji wykładniczej to…', options: ['34 · 10⁵', '3,4 · 10⁶', '3,4 · 10⁵', '0,34 · 10⁷'], answer: 1, explain: 'Pierwszy czynnik musi być z przedziału [1, 10), a przecinek przesuwamy o 6 miejsc.' },
         { q: 'Liczba 0,00052 w notacji wykładniczej to…', options: ['5,2 · 10⁻⁴', '5,2 · 10⁻³', '52 · 10⁻⁵', '5,2 · 10⁴'], answer: 0 },
         { q: 'Ile wynosi √(16 · 9)?', options: ['25', '12', '7', '144'], answer: 1, explain: '√16 · √9 = 4 · 3 = 12.' },
@@ -227,8 +245,14 @@ window.SUBJECTS.push({
         <h3>Kąty</h3>
         <ul>
           <li>Suma kątów w trójkącie = 180°, w czworokącie = 360°.</li>
-          <li>Suma kątów w n-kącie = (n − 2) · 180°.</li>
           <li>Kąty przyległe sumują się do 180°, kąty wierzchołkowe są równe.</li>
+          <li>Gdy prosta przecina dwie proste równoległe: kąty <b>odpowiadające</b> są równe i kąty <b>naprzemianległe</b> są równe.</li>
+          <li>W trójkącie równoramiennym kąty przy podstawie są równe.</li>
+        </ul>
+        <h3>Nierówność trójkąta</h3>
+        <p>Z odcinków a, b, c da się zbudować trójkąt, gdy każdy z nich jest <b>krótszy od sumy dwóch pozostałych</b>. Np. 3, 4, 8 – nie (3 + 4 &lt; 8).</p>
+        <p><b>Wielokąt foremny</b> ma wszystkie boki równe i wszystkie kąty równe (np. kwadrat, trójkąt równoboczny).</p>
+        <ul>
           <li>W równoległoboku sąsiednie kąty sumują się do 180°.</li>
         </ul>
       `,
@@ -240,7 +264,8 @@ window.SUBJECTS.push({
         ['Pole trapezu', '(a + b) · h / 2'],
         ['Pole rombu', 'd₁ · d₂ / 2'],
         ['Pole koła / obwód okręgu', 'πr² / 2πr'],
-        ['Suma kątów n-kąta', '(n − 2) · 180°'],
+        ['Nierówność trójkąta', 'Każdy bok krótszy od sumy dwóch pozostałych'],
+        ['Proste równoległe przecięte prostą', 'Kąty odpowiadające i naprzemianległe są równe'],
         ['Osie symetrii: kwadrat / prostokąt / trójkąt równoboczny', '4 / 2 / 3'],
       ],
       questions: [
@@ -252,7 +277,8 @@ window.SUBJECTS.push({
         { q: 'Trapez ma podstawy 10 i 6 oraz wysokość 4. Jego pole wynosi…', options: ['64', '32', '40', '20'], answer: 1, explain: '(10 + 6) · 4 / 2 = 32.' },
         { q: 'Pole koła o promieniu 3 wynosi…', options: ['6π', '9π', '3π', '9'], answer: 1 },
         { q: 'Jeden kąt równoległoboku ma 70°. Kąt sąsiedni ma…', options: ['70°', '110°', '20°', '290°'], answer: 1, explain: 'Sąsiednie kąty równoległoboku sumują się do 180°.' },
-        { q: 'Suma kątów wewnętrznych sześciokąta wynosi…', options: ['540°', '720°', '1080°', '360°'], answer: 1, explain: '(6 − 2) · 180° = 720°.' },
+        { q: 'Z których odcinków NIE da się zbudować trójkąta?', options: ['3, 4, 5', '5, 5, 8', '3, 4, 8', '6, 6, 6'], answer: 2, explain: '3 + 4 = 7 < 8 – nierówność trójkąta nie jest spełniona.' },
+        { q: 'W trójkącie równoramiennym kąt między ramionami ma 40°. Ile mają kąty przy podstawie?', options: ['40°', '70°', '140°', '50°'], answer: 1, explain: '(180° − 40°) : 2 = 70°.' },
         { q: 'Romb ma przekątne 6 i 8. Jego pole wynosi…', options: ['48', '24', '14', '12'], answer: 1, explain: '6 · 8 / 2 = 24.' },
         { q: 'Prawda czy fałsz?\nSuma kątów wewnętrznych każdego czworokąta wynosi 360°.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0 },
         { q: 'Ile osi symetrii ma kwadrat?', options: ['1', '2', '4', '8'], answer: 2 },
@@ -309,39 +335,36 @@ window.SUBJECTS.push({
     {
       id: 'statystyka',
       name: 'Statystyka i prawdopodobieństwo',
-      basis: 'Informator CKE (matematyka) – kl. IV–VI: XIII. Odczytywanie danych i elementy statystyki opisowej; kl. VII–VIII: XII. Wprowadzenie do kombinatoryki i rachunku prawdopodobieństwa.',
+      basis: 'Informator CKE (matematyka) – kl. IV–VI: XIII. Elementy statystyki opisowej; kl. VII–VIII: XIII. Odczytywanie danych i elementy statystyki opisowej (średnia arytmetyczna), XII. Wprowadzenie do kombinatoryki i rachunku prawdopodobieństwa.',
       theory: `
         <h3>Statystyka</h3>
         <ul>
           <li><b>Średnia arytmetyczna</b> = suma liczb : ich ilość</li>
-          <li><b>Mediana</b> – środkowa liczba po uporządkowaniu danych rosnąco. Przy parzystej liczbie danych – średnia dwóch środkowych.</li>
-          <li><b>Dominanta</b> – wartość występująca najczęściej.</li>
+          <li>Odczytywanie danych z tabel, diagramów słupkowych i kołowych oraz wykresów (wartość największa, najmniejsza, czy wartości rosną/maleją).</li>
         </ul>
         <h3>Prawdopodobieństwo</h3>
         <p><span class="f">P = liczba zdarzeń sprzyjających / liczba wszystkich możliwych zdarzeń</span></p>
         <p>Prawdopodobieństwo zawsze jest liczbą od 0 do 1.</p>
-        <h3>Kombinatoryka – reguła mnożenia</h3>
-        <p>Jeśli pierwszy wybór można zrobić na <i>m</i> sposobów, a drugi na <i>n</i> sposobów, to razem na <i>m · n</i> sposobów.</p>
-        <p>Przykład: 3 koszulki i 4 spodnie → 12 zestawów.</p>
+        <p>Doświadczenia z podstawy: rzut monetą, rzut kostką (także wielościenną), losowanie kuli.</p>
+        <h3>Zliczanie możliwości</h3>
+        <p>W szkole podstawowej liczymy możliwości, <b>wypisując je wszystkie</b> (np. w tabeli lub na liście) – bez wzorów. Przykład: liczby dwucyfrowe o sumie cyfr 3 to 12, 21, 30 – są 3.</p>
+        <div class="tip">📋 Mediana i dominanta nie występują w podstawie programowej szkoły podstawowej – na egzaminie z statystyki potrzebna jest średnia arytmetyczna i odczytywanie danych.</div>
       `,
       flashcards: [
         ['Średnia arytmetyczna', 'Suma liczb podzielona przez ich ilość'],
-        ['Mediana', 'Środkowa wartość uporządkowanych danych'],
-        ['Dominanta', 'Wartość występująca najczęściej'],
         ['Prawdopodobieństwo', 'zdarzenia sprzyjające / wszystkie zdarzenia'],
-        ['Reguła mnożenia', 'm sposobów · n sposobów = m · n'],
+        ['Zliczanie możliwości', 'Wypisz wszystkie możliwości po kolei (lista, tabela)'],
       ],
       questions: [
         { q: 'Średnia arytmetyczna liczb 4, 5, 6, 9 wynosi…', options: ['5', '5,5', '6', '6,5'], answer: 2, explain: '(4 + 5 + 6 + 9) : 4 = 24 : 4 = 6.' },
-        { q: 'Mediana liczb 3, 7, 1, 9, 5 wynosi…', options: ['7', '5', '1', '5,5'], answer: 1, explain: 'Po uporządkowaniu: 1, 3, 5, 7, 9 – środkowa to 5.' },
-        { q: 'Mediana liczb 2, 4, 6, 8 wynosi…', options: ['4', '5', '6', '20'], answer: 1, explain: 'Dwie środkowe to 4 i 6, ich średnia to 5.' },
-        { q: 'Dominanta zestawu 2, 3, 3, 5, 3, 2 to…', options: ['2', '3', '5', '3,5'], answer: 1 },
+        { q: 'Średnia arytmetyczna czterech ocen Oli wynosi 4. Trzy z nich to 3, 4 i 5. Jaka jest czwarta ocena?', options: ['3', '4', '5', '6'], answer: 1, explain: 'Suma = 4 · 4 = 16; 16 − (3 + 4 + 5) = 4.' },
+        { q: 'W pudełku są 3 kule czerwone i 5 niebieskich. Losujemy jedną kulę. Jakie jest prawdopodobieństwo wylosowania kuli czerwonej?', options: ['3/5', '3/8', '5/8', '1/3'], answer: 1 },
         { q: 'Rzucamy kostką do gry. Jakie jest prawdopodobieństwo wyrzucenia liczby parzystej?', options: ['1/6', '1/3', '1/2', '2/3'], answer: 2, explain: 'Liczby parzyste: 2, 4, 6 – to 3 z 6 możliwości.' },
         { q: 'Rzucamy kostką. Jakie jest prawdopodobieństwo wyrzucenia liczby większej niż 4?', options: ['1/3', '1/2', '2/3', '1/6'], answer: 0, explain: 'Sprzyjające: 5 i 6 → 2/6 = 1/3.' },
         { q: 'Losujemy liczbę od 1 do 20. Jakie jest prawdopodobieństwo, że będzie podzielna przez 3?', options: ['1/3', '3/10', '7/20', '1/4'], answer: 1, explain: '3, 6, 9, 12, 15, 18 → 6/20 = 3/10.' },
         { q: 'Rzucamy dwa razy monetą. Jakie jest prawdopodobieństwo, że dwa razy wypadnie orzeł?', options: ['1/2', '1/3', '1/4', '2/3'], answer: 2, explain: 'Możliwości: OO, OR, RO, RR – sprzyja tylko OO.' },
-        { q: 'Ile jest liczb dwucyfrowych o różnych cyfrach?', options: ['90', '81', '72', '100'], answer: 1, explain: 'Pierwsza cyfra: 9 możliwości (1–9), druga: 9 (0–9 bez pierwszej) → 81.' },
-        { q: 'Kasia ma 3 bluzki i 4 spódnice. Ile różnych zestawów (bluzka + spódnica) może ułożyć?', options: ['7', '12', '9', '16'], answer: 1 },
+        { q: 'Ile jest liczb dwucyfrowych, których suma cyfr wynosi 3?', options: ['2', '3', '4', '6'], answer: 1, explain: 'Wypisujemy: 12, 21, 30.' },
+        { q: 'Kasia ma 2 bluzki (biała, czarna) i 3 spódnice (zielona, niebieska, szara). Ile różnych zestawów (bluzka + spódnica) może ułożyć?', options: ['5', '6', '8', '9'], answer: 1, explain: 'Wypisz: biała z każdą z 3 spódnic (3) i czarna z każdą (3) – razem 6.' },
       ],
     },
     {
