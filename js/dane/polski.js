@@ -6,6 +6,7 @@ window.SUBJECTS.push({
   name: 'Język polski',
   icon: '📚',
   color: '#d6604d',
+  exam: '<b>10 maja 2027</b>, 150 minut, 45 pkt. Część I: ok. 20 zadań do tekstu literackiego i nieliterackiego (25 pkt). Część II: wypracowanie – opowiadanie albo rozprawka/przemówienie, min. 200 wyrazów (20 pkt).',
   topics: [
     {
       id: 'srodki-stylistyczne',
@@ -62,7 +63,7 @@ window.SUBJECTS.push({
     {
       id: 'lektury-7-8',
       name: 'Lektury klas VII–VIII (w całości)',
-      basis: 'Lista lektur obowiązkowych na egzamin ósmoklasisty (wymagania CKE). Z lektur klas VII–VIII trzeba znać treść i problematykę całego utworu.',
+      basis: 'Informator CKE o egzaminie ósmoklasisty z języka polskiego od r. szk. 2024/2025 – lista lektur obowiązkowych, klasy VII i VIII (pozycje książkowe poznawane w całości).',
       theory: `
         <p>Na egzaminie z lektur klas VII–VIII sprawdza się znajomość <b>całego utworu</b> (treści i problematyki). W wypracowaniu trzeba odwołać się do wybranej lektury obowiązkowej.</p>
         <table>
@@ -74,9 +75,8 @@ window.SUBJECTS.push({
           <tr><td>Mały Książę</td><td>Antoine de Saint-Exupéry</td><td>epika (baśń filozoficzna)</td><td>Pilot ląduje awaryjnie na Saharze i spotyka Małego Księcia z planety B-612. Róża, podróż po planetach (król, próżny, pijak, bankier, latarnik, geograf), Lis i „oswajanie”. „Dobrze widzi się tylko sercem. Najważniejsze jest niewidoczne dla oczu.”</td></tr>
           <tr><td>Kamienie na szaniec</td><td>Aleksander Kamiński</td><td>epika, literatura faktu</td><td>Rudy (Jan Bytnar), Alek (Aleksy Dawidowski), Zośka (Tadeusz Zawadzki) – harcerze Szarych Szeregów. Mały sabotaż, akcja pod Arsenałem (odbicie Rudego). Przyjaźń, patriotyzm, poświęcenie.</td></tr>
         </table>
-        <div class="tip">💡 W wypracowaniu zawsze odwołuj się do <b>konkretnego</b> wydarzenia z lektury – samo podanie tytułu to za mało.</div>
-        <h3>Lektury klas IV–VI</h3>
-        <p><i>Akademia Pana Kleksa</i> (Brzechwa), <i>Kajko i Kokosz. Szkoła latania</i> (Christa), <i>Opowieści z Narnii. Lew, czarownica i stara szafa</i> (Lewis), <i>Chłopcy z Placu Broni</i> (Molnár), <i>Hobbit, czyli tam i z powrotem</i> (Tolkien). Zadania z tych lektur dotyczą <b>fragmentu zacytowanego w arkuszu</b>, ale warto pamiętać ich treść.</p>
+        <div class="tip">⚠️ Jeśli w wypracowaniu w ogóle nie odwołasz się do lektury wskazanej w poleceniu, cała praca dostanie <b>0 punktów</b>. Samo podanie imienia bohatera to za mało – trzeba wykorzystać treść utworu.</div>
+        <p>Lektury klas IV–VI są w osobnym dziale. Lista lektur obowiązkowych będzie wydrukowana na początku arkusza egzaminacyjnego.</p>
       `,
       flashcards: [
         ['„Zemsta” – przedmiot sporu', 'Mur graniczny w zamku'],
@@ -110,9 +110,9 @@ window.SUBJECTS.push({
     {
       id: 'utwory-krotsze',
       name: 'Utwory krótsze i fragmenty',
-      basis: 'Lista lektur obowiązkowych na egzamin ósmoklasisty – utwory poznawane w całości lub we fragmentach.',
+      basis: 'Informator CKE (język polski, od r. szk. 2024/2025) – klasy VII i VIII: krótkie utwory poznawane w całości, utwory poznawane we fragmentach i utwory poetyckie.',
       theory: `
-        <p class="muted">Zestawienia lektur w różnych źródłach różnią się szczegółami (np. które treny). Ostateczną listę potwierdź z nauczycielem.</p>
+        <p>Według informatora CKE: z <i>Pana Tadeusza</i> zadania w części I arkusza dotyczą tylko fragmentów z ksiąg I, II, IV, X, XI i XII, ale w wypracowaniu można odwołać się do całego utworu.</p>
         <table>
           <tr><th>Utwór</th><th>Autor</th><th>Najważniejsze</th></tr>
           <tr><td>Pan Tadeusz (księgi I, II, IV, X, XI, XII)</td><td>Adam Mickiewicz</td><td>Epopeja. Spór Sopliców i Horeszków o zamek. Jacek Soplica jako ksiądz Robak, Gerwazy – klucznik Horeszków. Obraz szlachty i przyrody Litwy. Inwokacja: „Litwo! Ojczyzno moja!”. Księga XII „Kochajmy się!” – koncert Jankiela, polonez.</td></tr>
@@ -122,6 +122,7 @@ window.SUBJECTS.push({
           <tr><td>Fraszki (wybór), pieśń</td><td>Jan Kochanowski</td><td>Krótkie, żartobliwe lub refleksyjne utwory z puentą.</td></tr>
           <tr><td>Latarnik</td><td>Henryk Sienkiewicz</td><td>Nowela. Stary tułacz Skawiński zostaje latarnikiem w Aspinwall. Zaczytany w „Panu Tadeuszu” nie zapala latarni i traci posadę. Tęsknota za ojczyzną.</td></tr>
           <tr><td>Quo vadis (fragmenty)</td><td>Henryk Sienkiewicz</td><td>Powieść historyczna. Rzym za Nerona: Winicjusz, Ligia, Ursus, Petroniusz. Pożar Rzymu i prześladowania chrześcijan.</td></tr>
+          <tr><td>Syzyfowe prace (fragmenty)</td><td>Stefan Żeromski</td><td>Powieść o rusyfikacji polskiej młodzieży w gimnazjum w Klerykowie (zabór rosyjski). Marcin Borowicz, Andrzej Radek. Scena, w której Bernard Zygier recytuje na lekcji „Redutę Ordona” – przebudzenie patriotyzmu uczniów.</td></tr>
           <tr><td>Artysta</td><td>Sławomir Mrożek</td><td>Krótkie opowiadanie satyryczne.</td></tr>
         </table>
       `,
@@ -134,6 +135,8 @@ window.SUBJECTS.push({
         ['Skawiński', 'Tytułowy latarnik z noweli Sienkiewicza'],
         ['Urszulka', 'Córka Jana Kochanowskiego – „Treny”'],
         ['„Quo vadis” – cesarz', 'Neron'],
+        ['„Syzyfowe prace” – temat', 'Rusyfikacja polskiej młodzieży w gimnazjum w Klerykowie'],
+        ['Bernard Zygier', 'Recytuje „Redutę Ordona” w „Syzyfowych pracach”'],
       ],
       questions: [
         { q: 'Kim okazał się ksiądz Robak w „Panu Tadeuszu”?', options: ['Gerwazym', 'Jackiem Soplicą', 'Hrabią', 'Sędzią'], answer: 1 },
@@ -144,6 +147,50 @@ window.SUBJECTS.push({
         { q: 'Po czyjej śmierci Jan Kochanowski napisał „Treny”?', options: ['żony', 'ojca', 'córki Urszulki', 'przyjaciela'], answer: 2 },
         { q: 'Za panowania którego cesarza toczy się akcja „Quo vadis”?', options: ['Juliusza Cezara', 'Nerona', 'Oktawiana Augusta', 'Konstantyna'], answer: 1 },
         { q: 'Jakim gatunkiem jest „Latarnik”?', options: ['nowela', 'ballada', 'komedia', 'epopeja'], answer: 0 },
+        { q: 'Jaki problem przedstawiają „Syzyfowe prace” Stefana Żeromskiego?', options: ['rusyfikację polskiej młodzieży w szkole', 'walkę z Krzyżakami', 'życie w Rzymie za Nerona', 'spór o zamek'], answer: 0 },
+        { q: 'Który utwór recytuje Bernard Zygier w „Syzyfowych pracach”?', options: ['„Świteziankę”', '„Redutę Ordona”', '„Pana Tadeusza”', '„Rotę”'], answer: 1 },
+        { q: 'Które treny Kochanowskiego są lekturą obowiązkową na egzaminie (wg informatora CKE)?', options: ['I i V', 'VII i VIII', 'XIX', 'wszystkie'], answer: 1, explain: 'Treny I i V zostały wykreślone z podstawy w 2024 r. – można się do nich odwoływać, ale nie są lekturą obowiązkową.' },
+      ],
+    },
+    {
+      id: 'lektury-4-6',
+      name: 'Lektury klas IV–VI',
+      basis: 'Informator CKE (język polski, od r. szk. 2024/2025) – lektury obowiązkowe klas IV–VI. Ograniczenie zadań tylko do fragmentu w arkuszu zapisano dla lat szkolnych 2024/2025 i 2025/2026.',
+      theory: `
+        <div class="tip">⚠️ W informatorze CKE zapisano, że w latach szkolnych <b>2024/2025 i 2025/2026</b> zadania z lektur klas IV–VI dotyczą tylko fragmentu wydrukowanego w arkuszu. Dla egzaminu w 2027 r. takiego zastrzeżenia nie ma, więc <b>bezpieczniej znać treść całych lektur</b>. Zapytaj nauczyciela, czy CKE wydała nowy komunikat.</div>
+        <table>
+          <tr><th>Tytuł</th><th>Autor</th><th>Najważniejsze</th></tr>
+          <tr><td>Akademia Pana Kleksa</td><td>Jan Brzechwa</td><td>Narratorem jest Adaś Niezgódka, uczeń niezwykłej akademii, do której przyjmowani są tylko chłopcy o imionach na literę A. Szpak Mateusz to zaczarowany książę. Przeciwnikiem pana Kleksa jest golibroda Filip.</td></tr>
+          <tr><td>Kajko i Kokosz. Szkoła latania</td><td>Janusz Christa</td><td>Komiks. Dzielni wojowie Kajko i Kokosz z grodu Mirmiłowo (kasztelan Mirmił) i ich przeciwnicy – Zbójcerze z Hegemonem na czele.</td></tr>
+          <tr><td>Opowieści z Narnii. Lew, czarownica i stara szafa</td><td>C.S. Lewis</td><td>Rodzeństwo Pevensie (Piotr, Zuzanna, Edmund, Łucja) przez szafę trafia do Narnii, w której Biała Czarownica sprawiła wieczną zimę. Edmund zdradza rodzeństwo. Lew Aslan oddaje za niego życie i zmartwychwstaje.</td></tr>
+          <tr><td>Chłopcy z Placu Broni</td><td>Ferenc Molnár</td><td>Chłopcy z Budapesztu bronią swojego placu zabaw przed Czerwonymi Koszulami (wódz Feri Acz). Wodzem chłopców jest Boka. Najmłodszy, szeregowiec Nemeczek, choruje po kąpielach w zimnej wodzie i umiera. Gereb zdradza kolegów.</td></tr>
+          <tr><td>Hobbit, czyli tam i z powrotem</td><td>J.R.R. Tolkien</td><td>Hobbit Bilbo Baggins wyrusza z czarodziejem Gandalfem i trzynastoma krasnoludami (wódz Thorin Dębowa Tarcza) po skarb strzeżony przez smoka Smauga w Samotnej Górze. Bilbo zdobywa pierścień od Golluma w grze w zagadki. Smoka zabija Bard.</td></tr>
+        </table>
+        <h3>Utwory, do których można się odwołać (nie są sprawdzane)</h3>
+        <p>Kl. IV–VI: <i>Mikołajek</i>, bajki Krasickiego, mity greckie (m.in. o Prometeuszu, Syzyfie, Dedalu i Ikarze), przypowieści biblijne, legendy i baśnie, <i>Rota</i>.<br>
+        Wykreślone w 2024 r., ale wolno się do nich odwoływać w latach 2025–2028, m.in.: <i>W pustyni i w puszczy</i>, <i>Katarynka</i>, treny I i V, <i>Żona modna</i>, <i>Śmierć Pułkownika</i>, pozostałe księgi <i>Pana Tadeusza</i>.</p>
+      `,
+      flashcards: [
+        ['Adaś Niezgódka', 'Narrator „Akademii Pana Kleksa”'],
+        ['Szpak Mateusz', 'Zaczarowany książę („Akademia Pana Kleksa”)'],
+        ['Aslan', 'Lew – prawowity władca Narnii, oddaje życie za Edmunda'],
+        ['Nemeczek', 'Najmłodszy z „Chłopców z Placu Broni”, umiera na końcu powieści'],
+        ['Boka', 'Wódz chłopców z Placu Broni'],
+        ['Feri Acz', 'Wódz Czerwonych Koszul'],
+        ['Smaug', 'Smok z „Hobbita”'],
+        ['Thorin Dębowa Tarcza', 'Wódz krasnoludów z „Hobbita”'],
+        ['Mirmiłowo', 'Gród Kajka i Kokosza'],
+      ],
+      questions: [
+        { q: 'Kto jest narratorem „Akademii Pana Kleksa”?', options: ['Adaś Niezgódka', 'Pan Kleks', 'Szpak Mateusz', 'Filip golibroda'], answer: 0 },
+        { q: 'Jaki warunek musieli spełnić uczniowie Akademii Pana Kleksa?', options: ['mieć imię na literę A', 'umieć latać', 'mieszkać w Paryżu', 'mieć rude włosy'], answer: 0 },
+        { q: 'Kto zdradził rodzeństwo w „Opowieściach z Narnii”?', options: ['Piotr', 'Edmund', 'Łucja', 'Zuzanna'], answer: 1 },
+        { q: 'Co Biała Czarownica zrobiła z Narnią?', options: ['zatopiła ją', 'sprawiła, że panuje wieczna zima', 'spaliła lasy', 'zamieniła w pustynię'], answer: 1 },
+        { q: 'Jak kończy się „Chłopcy z Placu Broni”?', options: ['chłopcy przegrywają bitwę', 'Nemeczek umiera, a plac ma zostać zabudowany', 'Boka wyjeżdża do Ameryki', 'Czerwone Koszule przejmują plac'], answer: 1 },
+        { q: 'Kim był Feri Acz?', options: ['wodzem Czerwonych Koszul', 'nauczycielem chłopców', 'stróżem placu', 'bratem Nemeczka'], answer: 0 },
+        { q: 'Od kogo Bilbo zdobył pierścień w „Hobbicie”?', options: ['od Gandalfa', 'od Smauga', 'od Golluma', 'od Thorina'], answer: 2, explain: 'Bilbo znalazł pierścień w jaskini i przechytrzył Golluma w grze w zagadki.' },
+        { q: 'Kto zabił smoka Smauga?', options: ['Bilbo', 'Thorin', 'Bard', 'Gandalf'], answer: 2 },
+        { q: 'Jakim tekstem kultury jest „Kajko i Kokosz. Szkoła latania”?', options: ['komiksem', 'baśnią w wierszu', 'dramatem', 'filmem'], answer: 0 },
       ],
     },
     {
@@ -293,6 +340,67 @@ window.SUBJECTS.push({
       ],
     },
     {
+      id: 'frazeologia',
+      name: 'Frazeologizmy i znaczenie wyrazów',
+      basis: 'Podstawa programowa, kształcenie językowe (wymagania przywoływane w zadaniach informatora CKE): rozpoznaje związki frazeologiczne i rozumie ich znaczenie; rozróżnia synonimy, antonimy, homonimy; rozróżnia treść i zakres znaczeniowy wyrazu; rozpoznaje słownictwo neutralne i wartościujące; rozumie znaczenie dosłowne i przenośne.',
+      theory: `
+        <h3>Związki frazeologiczne</h3>
+        <p>To utrwalone połączenia wyrazów o znaczeniu przenośnym – nie można ich rozumieć dosłownie.</p>
+        <table>
+          <tr><th>Frazeologizm</th><th>Znaczenie</th></tr>
+          <tr><td>mieć muchy w nosie</td><td>być w złym humorze, obrażonym</td></tr>
+          <tr><td>obiecywać gruszki na wierzbie</td><td>obiecywać coś niemożliwego</td></tr>
+          <tr><td>drzeć z kimś koty</td><td>kłócić się z kimś</td></tr>
+          <tr><td>wziąć nogi za pas</td><td>uciec</td></tr>
+          <tr><td>pójść po rozum do głowy</td><td>zastanowić się, zmądrzeć</td></tr>
+          <tr><td>trzymać język za zębami</td><td>nie zdradzić tajemnicy</td></tr>
+          <tr><td>syzyfowa praca</td><td>daremny, bezskuteczny trud (mit o Syzyfie)</td></tr>
+          <tr><td>pięta achillesowa</td><td>czyjś słaby punkt</td></tr>
+          <tr><td>puszka Pandory</td><td>źródło nieszczęść</td></tr>
+          <tr><td>nić Ariadny</td><td>sposób wyjścia z trudnej sytuacji</td></tr>
+        </table>
+        <h3>Relacje między wyrazami</h3>
+        <ul>
+          <li><b>Synonimy</b> – wyrazy bliskoznaczne: <i>mądry – inteligentny</i></li>
+          <li><b>Antonimy</b> – wyrazy przeciwstawne: <i>wesoły – smutny</i></li>
+          <li><b>Homonimy</b> – wyrazy o tym samym brzmieniu i różnych znaczeniach: <i>zamek</i> (budowla, w drzwiach, błyskawiczny)</li>
+        </ul>
+        <h3>Treść i zakres wyrazu</h3>
+        <p><b>Treść</b> – zbiór cech, które przypisujemy temu, co nazywa wyraz. <b>Zakres</b> – zbiór wszystkich rzeczy, które można nazwać tym wyrazem. Im <b>bogatsza treść</b>, tym <b>węższy zakres</b>: <i>pies</i> ma szerszy zakres niż <i>jamnik</i>, ale <i>jamnik</i> ma bogatszą treść.</p>
+        <h3>Inne pojęcia</h3>
+        <ul>
+          <li><b>Słownictwo neutralne i wartościujące</b>: <i>pies</i> (neutralne) – <i>piesek</i> (pozytywne) – <i>kundel</i> (negatywne).</li>
+          <li><b>Archaizmy</b> – wyrazy dawne, dziś nieużywane: <i>białogłowa</i> (kobieta), <i>azali</i> (czy).</li>
+          <li><b>Neologizmy</b> – wyrazy nowo utworzone, np. przez pisarza.</li>
+          <li><b>Zapożyczenia</b> – wyrazy przejęte z innych języków: <i>komputer, weekend</i>.</li>
+        </ul>
+      `,
+      flashcards: [
+        ['mieć muchy w nosie', 'być w złym humorze'],
+        ['obiecywać gruszki na wierzbie', 'obiecywać coś niemożliwego'],
+        ['drzeć z kimś koty', 'kłócić się'],
+        ['wziąć nogi za pas', 'uciec'],
+        ['syzyfowa praca', 'daremny trud'],
+        ['pięta achillesowa', 'słaby punkt'],
+        ['puszka Pandory', 'źródło nieszczęść'],
+        ['nić Ariadny', 'sposób wyjścia z trudnej sytuacji'],
+        ['Homonimy', 'Wyrazy o tym samym brzmieniu i różnych znaczeniach'],
+        ['Treść a zakres', 'Bogatsza treść = węższy zakres'],
+      ],
+      questions: [
+        { q: 'Co znaczy frazeologizm „drzeć z kimś koty”?', options: ['opiekować się zwierzętami', 'kłócić się z kimś', 'bawić się z kimś', 'uciekać przed kimś'], answer: 1 },
+        { q: 'Co znaczy „obiecywać gruszki na wierzbie”?', options: ['obiecywać coś niemożliwego', 'zachęcać do pracy w ogrodzie', 'dotrzymywać obietnic', 'mówić prawdę'], answer: 0 },
+        { q: 'Co znaczy „syzyfowa praca”?', options: ['praca dobrze opłacana', 'daremny, bezskuteczny trud', 'praca zespołowa', 'praca w ogrodzie'], answer: 1, explain: 'Syzyf za karę wtaczał na górę głaz, który zawsze staczał się w dół.' },
+        { q: 'Co znaczy „pięta achillesowa”?', options: ['czyjś słaby punkt', 'szybki bieg', 'odwaga', 'kontuzja nogi'], answer: 0 },
+        { q: 'Który związek frazeologiczny znaczy „uciec”?', options: ['mieć muchy w nosie', 'wziąć nogi za pas', 'pójść po rozum do głowy', 'trzymać język za zębami'], answer: 1 },
+        { q: 'Wyraz „zamek” (budowla, zamek w drzwiach, zamek błyskawiczny) to przykład…', options: ['synonimu', 'antonimu', 'homonimu', 'archaizmu'], answer: 2 },
+        { q: 'Który wyraz ma węższy zakres znaczeniowy?', options: ['zwierzę', 'pies', 'jamnik', 'ssak'], answer: 2, explain: 'Jamnik ma najbogatszą treść (najwięcej cech), więc najwęższy zakres.' },
+        { q: 'Który wyraz jest nacechowany negatywnie?', options: ['pies', 'piesek', 'kundel', 'psina'], answer: 2 },
+        { q: 'Wyraz „białogłowa” (kobieta) to…', options: ['neologizm', 'archaizm', 'zapożyczenie', 'zdrobnienie'], answer: 1 },
+        { q: 'Synonimem wyrazu „mądry” jest…', options: ['głupi', 'inteligentny', 'wysoki', 'smutny'], answer: 1 },
+      ],
+    },
+    {
       id: 'rodzaje-literackie',
       name: 'Rodzaje i gatunki literackie',
       basis: 'Podstawa programowa, klasy VII–VIII: kształcenie literackie i kulturowe (rozpoznawanie rodzajów i gatunków).',
@@ -340,46 +448,62 @@ window.SUBJECTS.push({
     },
     {
       id: 'formy-wypowiedzi',
-      name: 'Wypracowanie na egzaminie',
-      basis: 'Zasady oceniania CKE (egzamin 2025): wypracowanie 0–20 pkt, co najmniej 200 wyrazów, z odwołaniem do wybranej lektury obowiązkowej. Formy: tekst argumentacyjny (rozprawka, przemówienie) lub twórczy (opowiadanie).',
+      name: 'Egzamin i wypracowanie',
+      basis: 'Informator CKE o egzaminie ósmoklasisty z języka polskiego od r. szk. 2024/2025: opis arkusza i kryteria oceniania wypracowania.',
       theory: `
-        <h3>Co jest na egzaminie?</h3>
+        <h3>Jak wygląda arkusz (150 minut, 45 punktów)</h3>
         <ul>
-          <li>Wybierasz <b>jeden z dwóch tematów</b>: tekst argumentacyjny (<b>rozprawka</b> lub <b>przemówienie</b>) albo tekst twórczy (<b>opowiadanie</b>).</li>
-          <li>Musisz odwołać się do <b>wybranej lektury obowiązkowej</b> (tak, jak wymaga polecenie).</li>
-          <li>Wypracowanie musi mieć <b>co najmniej 200 wyrazów</b>. Za pracę możesz dostać <b>do 20 punktów</b>.</li>
-          <li>Ocenia się m.in.: realizację tematu i formy, elementy retoryczne lub twórcze, kompetencje literackie, kompozycję, styl, język, ortografię i interpunkcję.</li>
+          <li><b>Część I</b> – ok. 20 zadań do dwóch tekstów: literackiego i nieliterackiego (naukowego, popularnonaukowego albo publicystycznego), razem do 1000 wyrazów. <b>25 pkt</b>, ok. połowa za zadania otwarte.</li>
+          <li><b>Część II</b> – wypracowanie: wybierasz <b>jeden z dwóch tematów</b> – twórczy (<b>opowiadanie</b>) albo argumentacyjny (<b>rozprawka</b> lub <b>przemówienie</b>). Co najmniej <b>200 wyrazów</b>. <b>20 pkt</b>.</li>
         </ul>
-        <h3>Rozprawka</h3>
-        <ol>
-          <li><b>Wstęp</b> – teza (stanowisko, które udowadniasz) lub hipoteza (przypuszczenie, które sprawdzasz).</li>
-          <li><b>Rozwinięcie</b> – argumenty, każdy poparty przykładem (z lektury), każdy w osobnym akapicie.</li>
-          <li><b>Zakończenie</b> – podsumowanie i potwierdzenie tezy.</li>
-        </ol>
-        <p>Przydatne zwroty: <i>Uważam, że…, Po pierwsze…, Kolejnym argumentem jest…, Przykładem może być…, Podsumowując…</i></p>
-        <h3>Przemówienie</h3>
-        <p>To też tekst argumentacyjny, ale skierowany do <b>słuchaczy</b>: zwrot do adresatów na początku („Drodzy koledzy i koleżanki!”), argumenty z przykładami, zwroty do słuchaczy w trakcie, pytania retoryczne, wezwanie lub apel na końcu, podziękowanie za uwagę.</p>
-        <h3>Opowiadanie</h3>
-        <p>Wstęp, rozwinięcie z punktem kulminacyjnym, zakończenie. Wzbogać tekst o elementy twórcze: dialog, opis, zwrot akcji, puentę, retrospekcję. Każdą wypowiedź w dialogu zapisujemy w nowej linii, zaczynając od myślnika (–).</p>
-        <div class="tip">💡 Najpierw przeczytaj uważnie polecenie: forma (rozprawka/przemówienie/opowiadanie) i wymagana lektura muszą się zgadzać z tematem!</div>
+        <h3>Kryteria oceny wypracowania (20 pkt)</h3>
+        <table>
+          <tr><th>Kryterium</th><th>Pkt</th></tr>
+          <tr><td>1. Realizacja tematu (forma zgodna z poleceniem, odwołanie do wskazanej lektury, całość na temat)</td><td>0–2</td></tr>
+          <tr><td>2. Elementy twórcze (opowiadanie) / elementy retoryczne (rozprawka, przemówienie)</td><td>0–5</td></tr>
+          <tr><td>3. Kompetencje literackie i kulturowe (funkcjonalne wykorzystanie lektury)</td><td>0–2</td></tr>
+          <tr><td>4. Kompozycja</td><td>0–2</td></tr>
+          <tr><td>5. Styl</td><td>0–2</td></tr>
+          <tr><td>6. Język (zakres środków i liczba błędów)</td><td>0–4</td></tr>
+          <tr><td>7. Ortografia (maks. 1 błąd = 2 pkt)</td><td>0–2</td></tr>
+          <tr><td>8. Interpunkcja (maks. 9 błędów = 1 pkt)</td><td>0–1</td></tr>
+        </table>
+        <div class="tip">⚠️ Pułapki, za które tracisz wszystko:<br>
+        • <b>0 pkt w kryterium 1</b> (np. zła forma – rozprawka zamiast opowiadania) = 0 pkt za całą pracę.<br>
+        • <b>Brak odwołania do lektury wskazanej w poleceniu</b> = 0 pkt za całą pracę.<br>
+        • Praca <b>180 wyrazów lub krótsza</b> jest oceniana tylko w kryteriach 1–3.<br>
+        • Komiks, manga, gra komputerowa ani scenariusz filmowy nie liczą się jako utwór literacki w wypracowaniu.</div>
+        <h3>Opowiadanie – elementy twórcze</h3>
+        <p>Na 5 pkt trzeba funkcjonalnie wykorzystać <b>co najmniej 6</b> z elementów: opis, charakterystyka bohatera, czas akcji, miejsce akcji, zwrot akcji, puenta, punkt kulminacyjny, dialog, monolog, retrospekcja. Narracja musi być konsekwentna, a zdarzenia ułożone logicznie. Treść lektury wykorzystaj twórczo.</p>
+        <h3>Rozprawka i przemówienie – elementy retoryczne</h3>
+        <p>Na 5 pkt: pogłębiona argumentacja, argumenty odwołujące się np. do faktów, logiki, emocji, zilustrowane przykładami, <b>uporządkowane</b> (np. od najważniejszego albo w układzie argument – kontrargument).</p>
+        <ul>
+          <li><b>Rozprawka</b>: wstęp z tezą lub hipotezą → argumenty z przykładami (każdy w osobnym akapicie) → zakończenie z podsumowaniem.</li>
+          <li><b>Przemówienie</b>: zwrot do słuchaczy na początku („Drodzy koledzy i koleżanki!”), argumenty z przykładami, zwroty do słuchaczy w trakcie, pytania retoryczne, apel na końcu, podziękowanie za uwagę.</li>
+        </ul>
+        <p>Pamiętaj: <b>przykład to nie argument</b>. Argument uzasadnia tezę, a przykład (np. z lektury) go ilustruje.</p>
       `,
       flashcards: [
-        ['Teza', 'Stanowisko, które udowadniasz w rozprawce'],
-        ['Hipoteza', 'Przypuszczenie, które sprawdzasz w rozprawce'],
-        ['Argument', 'Uzasadnienie tezy – zawsze z przykładem'],
+        ['Czas egzaminu z polskiego', '150 minut'],
+        ['Punkty: część I / wypracowanie', '25 pkt / 20 pkt (razem 45)'],
         ['Minimalna długość wypracowania', '200 wyrazów'],
-        ['Przemówienie – początek', 'Zwrot do słuchaczy, np. „Drodzy koledzy i koleżanki!”'],
-        ['Zapis dialogu', 'Każda wypowiedź od nowej linii, od myślnika'],
+        ['Formy wypracowania', 'opowiadanie albo rozprawka / przemówienie'],
+        ['Ile elementów twórczych na 5 pkt?', 'Co najmniej 6 (np. dialog, opis, zwrot akcji, puenta…)'],
+        ['Brak odwołania do lektury', '0 pkt za całe wypracowanie'],
+        ['Teza', 'Stanowisko, które udowadniasz'],
+        ['Hipoteza', 'Przypuszczenie, które sprawdzasz'],
       ],
       questions: [
-        { q: 'Czym zaczyna się rozprawka?', options: ['podsumowaniem', 'tezą lub hipotezą', 'dialogiem', 'opisem przyrody'], answer: 1 },
-        { q: 'Każdy argument w rozprawce powinien być…', options: ['jak najkrótszy', 'poparty przykładem', 'zapisany w formie pytania', 'w jednym akapicie z innymi argumentami'], answer: 1 },
         { q: 'Ile wyrazów musi mieć co najmniej wypracowanie na egzaminie ósmoklasisty?', options: ['100', '150', '200', '400'], answer: 2 },
+        { q: 'Co się stanie, jeśli w wypracowaniu w ogóle nie odwołasz się do lektury wskazanej w poleceniu?', options: ['stracisz 1 punkt', 'praca dostanie 0 punktów', 'nic, liczy się styl', 'stracisz punkty tylko za kompozycję'], answer: 1 },
+        { q: 'Ile elementów (np. dialog, opis, zwrot akcji, puenta) trzeba funkcjonalnie wykorzystać w opowiadaniu, aby dostać 5 pkt za elementy twórcze?', options: ['co najmniej 2', 'co najmniej 4', 'co najmniej 6', 'wszystkie 10'], answer: 2 },
+        { q: 'Ile punktów można zdobyć za wypracowanie?', options: ['10', '20', '25', '45'], answer: 1 },
         { q: 'Który element jest typowy dla przemówienia, a nie dla rozprawki?', options: ['teza', 'argumenty', 'zwroty do słuchaczy', 'zakończenie'], answer: 2 },
+        { q: 'Czym różni się argument od przykładu?', options: ['niczym', 'argument uzasadnia tezę, a przykład go ilustruje', 'przykład jest zawsze dłuższy', 'argument musi być cytatem'], answer: 1 },
+        { q: 'Która praca NIE zostanie uznana za utwór literacki w wypracowaniu?', options: ['nowela', 'gra komputerowa', 'ballada', 'powieść'], answer: 1 },
+        { q: 'Praca ma 170 wyrazów. Co z tego wynika?', options: ['jest oceniana normalnie', 'jest oceniana tylko w kryteriach realizacji tematu, elementów twórczych/retorycznych i kompetencji literackich', 'dostaje dodatkowe punkty za zwięzłość', 'nie ma to znaczenia'], answer: 1 },
         { q: 'Jak zapisujemy dialog w opowiadaniu?', options: ['w nawiasach', 'każdą wypowiedź od nowej linii, od myślnika', 'drukowanymi literami', 'bez znaków interpunkcyjnych'], answer: 1 },
-        { q: 'Teza w rozprawce to…', options: ['pytanie bez odpowiedzi', 'stanowisko, które udowadniasz', 'cytat z lektury', 'zakończenie pracy'], answer: 1 },
-        { q: 'Który element NIE jest elementem twórczym opowiadania?', options: ['dialog', 'zwrot akcji', 'puenta', 'teza'], answer: 3, explain: 'Teza należy do tekstów argumentacyjnych (rozprawka, przemówienie).' },
-        { q: 'Do czego musisz się odwołać w wypracowaniu egzaminacyjnym?', options: ['do filmu, który lubisz', 'do wybranej lektury obowiązkowej', 'tylko do własnych doświadczeń', 'do artykułu z gazety'], answer: 1 },
+        { q: 'Jak może być uporządkowana argumentacja w rozprawce?', options: ['losowo', 'od najważniejszego argumentu albo w układzie argument – kontrargument', 'alfabetycznie', 'od najkrótszego'], answer: 1 },
       ],
     },
   ],

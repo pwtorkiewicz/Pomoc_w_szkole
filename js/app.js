@@ -123,6 +123,7 @@
       ${crumbs([[s.name]])}
       <h1>${s.icon} ${esc(s.name)}</h1>
       <div style="--accent:${s.color}">${bar(subjectProgress(s))}</div>
+      ${s.exam ? `<p class="basis">📅 <b>Egzamin:</b> ${s.exam} <a href="#/zrodla">Źródła</a></p>` : ''}
       <p>
         <a class="btn primary" href="#/s/${s.id}/egzamin">📝 Test próbny (${EXAM_SIZE} pytań)</a>
         ${last != null ? `<span class="muted">ostatni wynik: ${last}%</span>` : ''}

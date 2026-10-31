@@ -4,11 +4,12 @@ window.SUBJECTS.push({
   name: 'Matematyka',
   icon: '📐',
   color: '#3b82c4',
+  exam: '<b>11 maja 2027</b>, 125 minut, 30 pkt. 14–15 zadań zamkniętych (wybór wielokrotny, prawda/fałsz, dobieranie – po 1 pkt) i 5–6 otwartych (2–3 pkt, trzeba pokazać tok rozumowania). Bez kalkulatora; potrzebna linijka, rysunki długopisem.',
   topics: [
     {
       id: 'liczby',
       name: 'Liczby i działania',
-      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Działy: liczby naturalne, całkowite i wymierne, działania, podzielność, liczby niewymierne, układ współrzędnych.',
+      basis: 'Informator CKE (matematyka, od r. szk. 2024/2025) – wymagania z klas IV–VIII, m.in. kl. IV–VI: I. Liczby naturalne, II. Działania na liczbach naturalnych, IV. Ułamki zwykłe i dziesiętne; kl. VII–VIII: X. Oś liczbowa. Układ współrzędnych na płaszczyźnie.',
       theory: `
         <h3>Kolejność działań</h3>
         <p>1) nawiasy → 2) potęgi i pierwiastki → 3) mnożenie i dzielenie → 4) dodawanie i odejmowanie. Przykład: <span class="f">2 + 3 · 4 = 14</span></p>
@@ -61,7 +62,7 @@ window.SUBJECTS.push({
     {
       id: 'procenty',
       name: 'Procenty',
-      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Dział: obliczenia procentowe (w tym punkty procentowe i zastosowania praktyczne).',
+      basis: 'Informator CKE (matematyka) – wymagania: V. Obliczenia procentowe; VII. Proporcjonalność prosta.',
       theory: `
         <h3>Najważniejsze wzory</h3>
         <ul>
@@ -98,7 +99,7 @@ window.SUBJECTS.push({
     {
       id: 'potegi-pierwiastki',
       name: 'Potęgi i pierwiastki',
-      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Działy (kl. VII–VIII): potęgi o podstawach wymiernych, pierwiastki, notacja wykładnicza.',
+      basis: 'Informator CKE (matematyka) – kl. VII–VIII: I. Potęgi o podstawach wymiernych; II. Pierwiastki.',
       theory: `
         <h3>Działania na potęgach</h3>
         <table>
@@ -148,7 +149,7 @@ window.SUBJECTS.push({
     {
       id: 'algebra',
       name: 'Wyrażenia algebraiczne i równania',
-      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Działy (kl. VII–VIII): wyrażenia algebraiczne, równania pierwszego stopnia z jedną niewiadomą, przekształcanie wzorów.',
+      basis: 'Informator CKE (matematyka) – kl. VII–VIII: IV. Przekształcanie wyrażeń algebraicznych. Sumy algebraiczne i działania na nich; VI. Równania z jedną niewiadomą; XIV. Zadania tekstowe.',
       theory: `
         <h3>Wyrażenia algebraiczne</h3>
         <ul>
@@ -192,7 +193,7 @@ window.SUBJECTS.push({
     {
       id: 'geometria',
       name: 'Geometria płaska',
-      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Działy: własności figur płaskich, kąty, pola wielokątów, twierdzenie Pitagorasa.',
+      basis: 'Informator CKE (matematyka) – kl. IV–VI: IX. Wielokąty, koła i okręgi (w tym osie symetrii figur); kl. VII–VIII: XI. Obliczenia w geometrii (m.in. twierdzenie Pitagorasa).',
       theory: `
         <h3>Twierdzenie Pitagorasa</h3>
         <p>W trójkącie prostokątnym: <span class="f">a² + b² = c²</span> (c – przeciwprostokątna, naprzeciw kąta prostego).</p>
@@ -210,6 +211,19 @@ window.SUBJECTS.push({
           <tr><td>koło</td><td>πr² (obwód 2πr)</td></tr>
         </table>
         <p>Przekątna kwadratu: <span class="f">d = a√2</span></p>
+        <h3>Symetria osiowa figur</h3>
+        <p>Figura jest <b>osiowosymetryczna</b>, gdy da się ją złożyć wzdłuż prostej (osi symetrii) tak, że obie połowy się pokrywają.</p>
+        <table>
+          <tr><th>Figura</th><th>Liczba osi symetrii</th></tr>
+          <tr><td>kwadrat</td><td>4</td></tr>
+          <tr><td>prostokąt (niebędący kwadratem)</td><td>2</td></tr>
+          <tr><td>romb (niebędący kwadratem)</td><td>2</td></tr>
+          <tr><td>trójkąt równoboczny</td><td>3</td></tr>
+          <tr><td>trójkąt równoramienny (niebędący równobocznym)</td><td>1</td></tr>
+          <tr><td>trapez równoramienny</td><td>1</td></tr>
+          <tr><td>równoległobok (niebędący prostokątem ani rombem)</td><td>0</td></tr>
+          <tr><td>koło, okrąg</td><td>nieskończenie wiele</td></tr>
+        </table>
         <h3>Kąty</h3>
         <ul>
           <li>Suma kątów w trójkącie = 180°, w czworokącie = 360°.</li>
@@ -227,6 +241,7 @@ window.SUBJECTS.push({
         ['Pole rombu', 'd₁ · d₂ / 2'],
         ['Pole koła / obwód okręgu', 'πr² / 2πr'],
         ['Suma kątów n-kąta', '(n − 2) · 180°'],
+        ['Osie symetrii: kwadrat / prostokąt / trójkąt równoboczny', '4 / 2 / 3'],
       ],
       questions: [
         { q: 'Przyprostokątne trójkąta mają długości 6 i 8. Przeciwprostokątna ma długość…', options: ['10', '14', '12', '√28'], answer: 0, explain: '6² + 8² = 36 + 64 = 100, √100 = 10.' },
@@ -240,13 +255,16 @@ window.SUBJECTS.push({
         { q: 'Suma kątów wewnętrznych sześciokąta wynosi…', options: ['540°', '720°', '1080°', '360°'], answer: 1, explain: '(6 − 2) · 180° = 720°.' },
         { q: 'Romb ma przekątne 6 i 8. Jego pole wynosi…', options: ['48', '24', '14', '12'], answer: 1, explain: '6 · 8 / 2 = 24.' },
         { q: 'Prawda czy fałsz?\nSuma kątów wewnętrznych każdego czworokąta wynosi 360°.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0 },
+        { q: 'Ile osi symetrii ma kwadrat?', options: ['1', '2', '4', '8'], answer: 2 },
+        { q: 'Która figura NIE ma żadnej osi symetrii?', options: ['prostokąt', 'romb', 'równoległobok, który nie jest prostokątem ani rombem', 'trapez równoramienny'], answer: 2 },
+        { q: 'Prawda czy fałsz?\nTrójkąt równoboczny ma 3 osie symetrii.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0 },
         { q: 'W trójkącie dwa kąty mają 50° i 60°. Trzeci kąt ma…', options: ['70°', '80°', '90°', '110°'], answer: 0 },
       ],
     },
     {
       id: 'bryly',
       name: 'Graniastosłupy i ostrosłupy',
-      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Dział (kl. VII–VIII): geometria przestrzenna – graniastosłupy i ostrosłupy.',
+      basis: 'Informator CKE (matematyka) – kl. IV–VI: X. Bryły; kl. VII–VIII: XI. Obliczenia w geometrii (objętość i pole powierzchni graniastosłupów i ostrosłupów).',
       theory: `
         <h3>Wzory</h3>
         <table>
@@ -291,7 +309,7 @@ window.SUBJECTS.push({
     {
       id: 'statystyka',
       name: 'Statystyka i prawdopodobieństwo',
-      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Działy: elementy statystyki opisowej, wprowadzenie do kombinatoryki i rachunku prawdopodobieństwa.',
+      basis: 'Informator CKE (matematyka) – kl. IV–VI: XIII. Odczytywanie danych i elementy statystyki opisowej; kl. VII–VIII: XII. Wprowadzenie do kombinatoryki i rachunku prawdopodobieństwa.',
       theory: `
         <h3>Statystyka</h3>
         <ul>
@@ -329,7 +347,7 @@ window.SUBJECTS.push({
     {
       id: 'zadania-tekstowe',
       name: 'Prędkość, skala, jednostki',
-      basis: 'Wymagania egzaminacyjne z matematyki obejmują podstawę programową klas IV–VIII. Treści z klas IV–VI i VII–VIII: obliczenia praktyczne – prędkość, droga, czas, skala, jednostki.',
+      basis: 'Informator CKE (matematyka) – kl. IV–VI: XII. Obliczenia praktyczne (m.in. obliczenia zegarowe, skala, prędkość, jednostki).',
       theory: `
         <h3>Droga, prędkość, czas</h3>
         <p><span class="f">v = s / t</span> &nbsp; <span class="f">s = v · t</span> &nbsp; <span class="f">t = s / v</span></p>
