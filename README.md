@@ -105,7 +105,9 @@ Przycisk 🔊 czyta tekst głosem syntezatora mowy przeglądarki – po polsku. 
 { id, q: 'Który zegar pokazuje 3:00?', options: ['🕒', '🕘'], sayOptions: ['trzecia', 'dziewiąta'], answer: 0 } // czytane zamiast odpowiedzi
 ```
 
-W dziale: `cardLang: ['en', 'pl']` – języki przodu i tyłu fiszek (domyślnie obie strony po polsku). Pola `say`, `optLang` i `sayOptions` działają też w zadaniach zamkniętych zestawów ćwiczeń i w pytaniach `check` lekcji.
+W dziale: `cardLang: ['en', 'pl']` – języki przodu i tyłu fiszek (domyślnie obie strony po polsku). Pola `say`, `optLang` i `sayOptions` działają też w zadaniach zamkniętych zestawów ćwiczeń i w pytaniach `check` lekcji. Pole `sayExplain` (jak `say`) jest czytane zamiast `explain` – w pytaniach quizu i w `check` lekcji, gdy wyjaśnienie zawiera słowa angielskie.
+
+W tekstach HTML (ściąga `theory`, kroki lekcji: `text`, `remember`, `hook`) fragment po angielsku oznacz atrybutem `lang`: `<i lang="en">a cat</i>`, `<b lang="en">Good morning!</b>` – przeczyta go głos angielski. Nie zagnieżdżaj w nim elementu tego samego rodzaju i nie używaj `lang` wewnątrz SVG.
 
 ### Zestawy ćwiczeń (czytanie, reading, listening, środki językowe)
 

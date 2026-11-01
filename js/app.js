@@ -118,7 +118,8 @@
   // ---------- Czytanie na głos (synteza mowy przeglądarki) ----------
   // Tekst czytamy po polsku. Fragment w innym języku podajemy jako [tekst, 'en'] – wtedy czyta go głos angielski.
   // Pytanie może mieć pole say (tekst albo lista fragmentów) – czytane zamiast q, np. gdy q ma symbole lub obrazki;
-  // optLang: 'en' – odpowiedzi czytane po angielsku; sayOptions – lista tekstów czytanych zamiast odpowiedzi.
+  // optLang: 'en' – odpowiedzi czytane po angielsku; sayOptions – lista tekstów czytanych zamiast odpowiedzi;
+  // sayExplain – czytane zamiast explain (tekst albo lista fragmentów).
   const LANGS = { pl: 'pl-PL', en: 'en-GB' };
   const EMOJI = /[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}\u{1F3FB}-\u{1F3FF}\u{FE0F}\u{200D}\u{20E3}]/gu;
   const decoder = document.createElement('textarea');
@@ -152,7 +153,7 @@
       .replace(/\s+([.!?,;:])/g, '$1')
       .replace(/([.!?,;:])([.!?,;:])+/g, '$1')
       .replace(/\s+/g, ' ')
-      .replace(/^[\s.,;:]+/, '')
+      .replace(/^[\s.,;:–·]+/, '')
       .trim();
   }
   const voiceFor = (lang) => {
@@ -165,10 +166,25 @@
     document.querySelectorAll('.say.on').forEach((b) => b.classList.remove('on'));
   }
   // parts: tekst albo lista fragmentów (tekst | [tekst, 'en'])
+  // W tekście HTML (ściąga, krok lekcji) fragment w innym języku oznaczamy atrybutem lang,
+  // np. <i lang="en">cat</i> – czyta go wtedy głos tego języka.
+  const LANG_RE = /<([a-z]+)\b[^>]*\blang="([a-z]{2})"[^>]*>([\s\S]*?)<\/\1>/gi;
+  function splitLang(p) {
+    if (p.lang || typeof p.text !== 'string' || !/\blang="/.test(p.text)) return [p];
+    const out = [];
+    let last = 0;
+    for (const m of p.text.matchAll(LANG_RE)) {
+      out.push({ text: p.text.slice(last, m.index) }, { text: m[3], lang: m[2] });
+      last = m.index + m[0].length;
+    }
+    out.push({ text: p.text.slice(last) });
+    return out;
+  }
   function speak(parts, onEnd) {
     stopSpeech();
     const list = (Array.isArray(parts) ? parts : [parts])
       .map((p) => (Array.isArray(p) ? { text: p[0], lang: p[1] } : { text: p }))
+      .flatMap(splitLang)
       .map((p) => ({ text: speechText(p.text || ''), lang: LANGS[p.lang] || p.lang || LANGS.pl }))
       .filter((p) => /[\p{L}\p{N}]/u.test(p.text)); // same znaki interpunkcyjne pomijamy
     if (!list.length) { if (onEnd) onEnd(); return; }
@@ -678,7 +694,8 @@
             else if (+x.dataset.k === k) x.classList.add('wrong');
           });
           fb.innerHTML = `<div class="feedback ${ok ? 'ok' : 'bad'}"><div class="qline"><strong>${ok ? praise() : 'Jeszcze nie. Spójrz na zieloną odpowiedź.'}</strong>${sayButton('Posłuchaj wyjaśnienia')}</div>${st.check.explain ? `<p>${esc(st.check.explain)}</p>` : ''}</div>`;
-          bindSay(fb, () => [ok ? 'Dobrze!' : `Jeszcze nie. Dobra odpowiedź to: ${st.check.options[st.check.answer]}.`, st.check.explain || ''], true);
+          bindSay(fb, () => [ok ? 'Dobrze!' : 'Jeszcze nie. Dobra odpowiedź to:', st.check.optLang ? [st.check.options[st.check.answer], st.check.optLang] : st.check.options[st.check.answer],
+            ...[].concat(st.check.sayExplain != null ? st.check.sayExplain : st.check.explain || '')], true);
         }));
       }
       pane.querySelector('#prev').onclick = () => { if (i > 0) { i--; show(); window.scrollTo(0, 0); } };
@@ -808,7 +825,7 @@
         </div>
         <button class="btn primary" id="next">${last ? 'Zobacz wynik' : 'Dalej →'}</button>`;
       const right = q.sayOptions ? q.sayOptions[q.answer] : q.options[q.answer];
-      bindSay(pane.querySelector('#fb .feedback'), () => [ok ? 'Dobrze!' : wrongText, ...(ok ? [] : [q.optLang ? [right, q.optLang] : right]), q.explain || ''], true);
+      bindSay(pane.querySelector('#fb .feedback'), () => [ok ? 'Dobrze!' : wrongText, ...(ok ? [] : [q.optLang ? [right, q.optLang] : right]), ...[].concat(q.sayExplain != null ? q.sayExplain : q.explain || '')], true);
       const next = pane.querySelector('#next');
       next.onclick = () => { i++; last ? finish() : show(); };
       next.focus();

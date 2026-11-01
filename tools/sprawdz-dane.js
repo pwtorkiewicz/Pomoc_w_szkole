@@ -15,12 +15,14 @@ let ni = 0;
 const perTrack = [];
 const MODES = ['czytanie', 'reading', 'listening', 'srodki', 'dyktando'];
 // Pola do czytania na głos (tryb młodszego ucznia): say – tekst albo lista fragmentów (tekst | [tekst, 'en']),
-// optLang – język odpowiedzi, sayOptions – teksty czytane zamiast odpowiedzi (tyle, ile odpowiedzi).
+// optLang – język odpowiedzi, sayOptions – teksty czytane zamiast odpowiedzi (tyle, ile odpowiedzi),
+// sayExplain – czytane zamiast explain (jak say).
 const LANGS = ['pl', 'en'];
 const checkSpeech = (q, where) => {
-  if (q.say != null) {
-    const parts = [].concat(q.say);
-    if (!parts.length || parts.some((p) => !(typeof p === 'string' || (Array.isArray(p) && p.length === 2 && typeof p[0] === 'string' && LANGS.includes(p[1]))))) problems.push(`${where}: złe pole say`);
+  for (const f of ['say', 'sayExplain']) {
+    if (q[f] == null) continue;
+    const parts = [].concat(q[f]);
+    if (!parts.length || parts.some((p) => !(typeof p === 'string' || (Array.isArray(p) && p.length === 2 && typeof p[0] === 'string' && LANGS.includes(p[1]))))) problems.push(`${where}: złe pole ${f}`);
   }
   if (q.optLang != null && !LANGS.includes(q.optLang)) problems.push(`${where}: optLang musi być jednym z: ${LANGS.join(', ')}`);
   if (q.sayOptions != null && !(Array.isArray(q.sayOptions) && q.sayOptions.length === q.options.length && q.sayOptions.every((x) => typeof x === 'string'))) problems.push(`${where}: sayOptions – po jednym tekście na każdą odpowiedź`);
