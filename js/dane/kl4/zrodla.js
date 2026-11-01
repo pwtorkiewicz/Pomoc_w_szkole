@@ -9,9 +9,11 @@ window.SOURCES = {
 
     <h3>Co trzeba wiedzieć o tym materiale</h3>
     <ul>
-      <li>Wymagania z matematyki i przyrody są zapisane <b>łącznie dla klas 4–6</b>. Podstawa nie mówi, co dokładnie jest w klasie 4. Działy w aplikacji to <b>wybór redakcyjny</b> tematów na początek nauki. Szkoła i podręcznik mogą układać materiał w innej kolejności.</li>
+      <li>Wymagania z polskiego, matematyki i przyrody są zapisane <b>łącznie dla klas 4–6</b>. Podstawa nie mówi, co dokładnie jest w klasie 4. Działy w aplikacji to <b>wybór redakcyjny</b> tematów na początek nauki. Szkoła i podręcznik mogą układać materiał w innej kolejności.</li>
       <li>Treści napisano od nowa. Nie pochodzą ze ścieżki egzaminacyjnej, bo ósmoklasiści uczą się według innej podstawy (Dz.U. 2024 poz. 996).</li>
       <li>Przyroda w nowej podstawie to przedmiot dla klas 4–6. Łączy elementy biologii, geografii, chemii i fizyki. Wiele wymagań dotyczy obserwacji, doświadczeń i zajęć w terenie. Aplikacja tego nie zastąpi, pomaga tylko utrwalić wiedzę.</li>
+      <li><b>Język polski</b>: wymagania są zapisane dla klas 4–6 w siedmiu działach (komunikacja, odbiór tekstów kultury, świadomość języka, tworzenie wypowiedzi, autorefleksja, edukacja medialna, praktyki lekturowe). Nowa podstawa <b>nie ma kanonu dłuższych lektur</b> dla klas 4–6 – uczeń czyta co najmniej 4 dłuższe teksty w roku, wybrane razem z nauczycielem (np. z listy przykładowej). Obowiązkowo poznaje m.in. wybrane fragmenty Biblii, wybrane mity greckie, „Mazurek Dąbrowskiego” i „Rotę”. Dlatego aplikacja uczy pojęć i umiejętności (części mowy, zdanie, pisownia, słownictwo, świat przedstawiony, formy wypowiedzi), a nie treści konkretnych lektur.</li>
+      <li><b>Język angielski</b>: podstawa jest wspólna dla wszystkich języków obcych i opisuje poziomy A1, A1+, A2 i B1. Na koniec klasy 8 oczekiwany jest poziom A2. Podstawa nie mówi, który poziom przypada na klasę 4, i nie wymienia struktur gramatycznych. Aplikacja przyjmuje <b>poziom A1</b> (tematy słownictwa z wymagania 1 dla A1); wybór prostych struktur (np. <i>to be</i>, <i>have got</i>, <i>can</i>, <i>present simple</i>, <i>there is / there are</i>) to decyzja redakcyjna.</li>
       <li>Pytania i lekcje to ćwiczenia przygotowane na podstawie wymagań. Nie są to oficjalne materiały szkolne. Warto je skonsultować z nauczycielem.</li>
     </ul>
 
