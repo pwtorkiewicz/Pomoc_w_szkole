@@ -538,6 +538,330 @@ window.SUBJECTS.push({
       ],
     },
     {
+      id: 'phrasal-przyimki',
+      name: 'Phrasal verbs i przyimki po czasownikach',
+      basis: 'Informator CKE (język angielski, od r. szk. 2024/2025), lista struktur gramatycznych: CZASOWNIK 8 (czasowniki złożone – phrasal verbs, np. get up, break down, look for), PRZYIMEK 4 (przyimki po niektórych czasownikach i przymiotnikach, np. think of, interested in), SKŁADNIA 8 (konstrukcje gerundialne, np. I\'m good at swimming). Słownictwo z tematów życia codziennego (podstawa, Dz.U. 2024 poz. 996, wariant II.1, wymaganie I).',
+      theory: `
+        <h3>Co to jest phrasal verb?</h3>
+        <p>To czasownik + krótkie słówko (<i>up, down, on, off, out, back, after, for</i>), które razem mają <b>nowe znaczenie</b>. Często nie da się go zgadnąć z części: <i>look</i> – patrzeć, ale <i>look <b>for</b></i> – szukać, <i>look <b>after</b></i> – opiekować się.</p>
+        <h3>Dom i poranek</h3>
+        <table>
+          <tr><th>Phrasal verb</th><th>Znaczenie</th><th>Przykład</th></tr>
+          <tr><td>wake up</td><td>budzić się</td><td>I wake up at 6:30.</td></tr>
+          <tr><td>get up</td><td>wstawać (z łóżka)</td><td>I get up at 7.</td></tr>
+          <tr><td>put on</td><td>zakładać (ubranie)</td><td>Put on your coat – it's cold.</td></tr>
+          <tr><td>take off</td><td>zdejmować (ubranie); <b>startować</b> (samolot)</td><td>Take off your shoes. The plane took off at 6.</td></tr>
+          <tr><td>turn on / turn off</td><td>włączać / wyłączać</td><td>Turn off the light, please.</td></tr>
+          <tr><td>turn up / turn down</td><td>podgłośnić / ściszyć</td><td>Can you turn down the music?</td></tr>
+          <tr><td>sit down / stand up</td><td>usiąść / wstać (z krzesła)</td><td>Please sit down.</td></tr>
+          <tr><td>throw away</td><td>wyrzucać</td><td>Don't throw away that box.</td></tr>
+          <tr><td>hurry up</td><td>pospieszyć się</td><td>Hurry up! We're late.</td></tr>
+        </table>
+        <h3>Szukanie, opieka, informacje</h3>
+        <table>
+          <tr><th>Phrasal verb</th><th>Znaczenie</th><th>Przykład</th></tr>
+          <tr><td>look for</td><td>szukać</td><td>I'm looking for my keys.</td></tr>
+          <tr><td>look after</td><td>opiekować się</td><td>Grandma looks after my sister.</td></tr>
+          <tr><td>find out</td><td>dowiedzieć się</td><td>I want to find out the truth.</td></tr>
+          <tr><td>fill in</td><td>wypełniać (formularz)</td><td>Fill in this form, please.</td></tr>
+          <tr><td>try on</td><td>przymierzać</td><td>Can I try on these jeans?</td></tr>
+          <tr><td>call back</td><td>oddzwonić</td><td>I'll call you back later.</td></tr>
+        </table>
+        <h3>Ruch, podróż, życie</h3>
+        <table>
+          <tr><th>Phrasal verb</th><th>Znaczenie</th><th>Przykład</th></tr>
+          <tr><td>get on / get off</td><td>wsiadać / wysiadać (autobus, pociąg)</td><td>We got off the bus at the museum.</td></tr>
+          <tr><td>set off</td><td>wyruszać w drogę</td><td>We set off at 5 a.m.</td></tr>
+          <tr><td>come back</td><td>wracać</td><td>When are you coming back?</td></tr>
+          <tr><td>go out</td><td>wychodzić (np. na miasto)</td><td>Let's go out tonight.</td></tr>
+          <tr><td>pick up</td><td>podnieść; <b>odebrać kogoś</b></td><td>Mum picks me up from school.</td></tr>
+          <tr><td>break down</td><td>zepsuć się (auto, maszyna)</td><td>Our car broke down.</td></tr>
+          <tr><td>give up</td><td>rzucić (nałóg), poddać się</td><td>He gave up smoking.</td></tr>
+          <tr><td>grow up</td><td>dorastać</td><td>I grew up in Gdańsk.</td></tr>
+          <tr><td>get on (well) with</td><td>dogadywać się z kimś</td><td>I get on well with my sister.</td></tr>
+        </table>
+        <div class="tip">💡 Wiele phrasal verbs ma <b>kilka znaczeń</b> – o wyborze decyduje reszta zdania: <i>take off your shoes</i> (zdejmij) / <i>the plane took off</i> (wystartował); <i>pick up the pen</i> (podnieś) / <i>pick me up at 5</i> (odbierz mnie).</div>
+        <div class="tip">💡 Gdy dopełnieniem jest <b>it / them</b>, w czasownikach typu <i>put on, take off, turn on/off, pick up, try on, fill in, throw away</i> zaimek stoi <b>w środku</b>: <i>Put <b>it</b> on. Turn <b>it</b> off. Pick <b>them</b> up.</i> (nie: <s>Turn off it</s>). Ale: <i>look for <b>it</b>, look after <b>them</b></i> – tu zaimek idzie na koniec.</div>
+        <h3>Przyimki po czasownikach</h3>
+        <table>
+          <tr><th>Połączenie</th><th>Znaczenie</th><th>Przykład</th></tr>
+          <tr><td>listen <b>to</b></td><td>słuchać czegoś</td><td>I listen to music.</td></tr>
+          <tr><td>wait <b>for</b></td><td>czekać na</td><td>We're waiting for the bus.</td></tr>
+          <tr><td>look <b>at</b></td><td>patrzeć na</td><td>Look at this photo!</td></tr>
+          <tr><td>think <b>of / about</b></td><td>myśleć o</td><td>I'm thinking of buying a bike.</td></tr>
+          <tr><td>talk <b>to</b> sb <b>about</b> sth</td><td>rozmawiać z kimś o czymś</td><td>I talked to Ola about the trip.</td></tr>
+          <tr><td>depend <b>on</b></td><td>zależeć od</td><td>It depends on the weather.</td></tr>
+          <tr><td>belong <b>to</b></td><td>należeć do</td><td>This bag belongs to Tom.</td></tr>
+          <tr><td>agree <b>with</b></td><td>zgadzać się z</td><td>I agree with you.</td></tr>
+          <tr><td>worry <b>about</b></td><td>martwić się o</td><td>Don't worry about the test.</td></tr>
+          <tr><td>pay <b>for</b> / ask <b>for</b></td><td>płacić za / prosić o</td><td>Who paid for the pizza? Ask for help.</td></tr>
+          <tr><td>laugh <b>at</b></td><td>śmiać się z</td><td>Don't laugh at me!</td></tr>
+        </table>
+        <h3>Przyimki po przymiotnikach</h3>
+        <table>
+          <tr><th>Połączenie</th><th>Znaczenie</th><th>Przykład</th></tr>
+          <tr><td>good <b>at</b> / bad <b>at</b></td><td>dobry / słaby w czymś</td><td>She's good at maths.</td></tr>
+          <tr><td>interested <b>in</b></td><td>zainteresowany czymś</td><td>I'm interested in history.</td></tr>
+          <tr><td>afraid <b>of</b></td><td>bać się czegoś</td><td>He's afraid of spiders.</td></tr>
+          <tr><td>proud <b>of</b></td><td>dumny z</td><td>We're proud of you.</td></tr>
+          <tr><td>tired <b>of</b></td><td>zmęczony czymś, mający dość</td><td>I'm tired of waiting.</td></tr>
+          <tr><td>famous <b>for</b></td><td>słynny z</td><td>Kraków is famous for its old town.</td></tr>
+          <tr><td>different <b>from</b></td><td>różny od</td><td>My room is different from yours.</td></tr>
+          <tr><td>worried <b>about</b> / excited <b>about</b></td><td>zmartwiony / podekscytowany czymś</td><td>I'm excited about the trip.</td></tr>
+          <tr><td>late <b>for</b> / ready <b>for</b></td><td>spóźniony na / gotowy na</td><td>Don't be late for school.</td></tr>
+        </table>
+        <div class="tip">💡 Po przyimku czasownik ma formę <b>-ing</b>: <i>good at swimming, interested in drawing, tired of waiting</i>.</div>
+        <div class="tip">⚠️ Typowe błędy Polaków: <s>listen music</s> → listen <b>to</b> music · <s>wait the bus</s> → wait <b>for</b> the bus · <s>afraid from</s> → afraid <b>of</b> · <s>depend from</s> → depend <b>on</b>.</div>
+      `,
+      flashcards: [
+        ['get up / wake up', 'wstawać / budzić się'],
+        ['put on', 'zakładać (ubranie)'],
+        ['take off', 'zdejmować (ubranie); startować (samolot)'],
+        ['turn on / turn off', 'włączać / wyłączać'],
+        ['turn up / turn down', 'podgłośnić / ściszyć'],
+        ['look for', 'szukać'],
+        ['look after', 'opiekować się'],
+        ['find out', 'dowiedzieć się'],
+        ['give up', 'rzucić (np. palenie), poddać się'],
+        ['break down', 'zepsuć się (auto, maszyna)'],
+        ['pick up', 'podnieść; odebrać kogoś (np. ze szkoły)'],
+        ['try on', 'przymierzać'],
+        ['fill in', 'wypełniać (formularz)'],
+        ['set off', 'wyruszać w drogę'],
+        ['grow up', 'dorastać'],
+        ['get on / get off', 'wsiadać / wysiadać (autobus, pociąg)'],
+        ['come back / go out', 'wracać / wychodzić (np. na miasto)'],
+        ['Turn off it? Turn it off?', 'Turn it off. – zaimek it/them w środku'],
+        ['listen ___ / wait ___', 'listen to / wait for'],
+        ['depend ___ / belong ___', 'depend on / belong to'],
+        ['good ___ / interested ___', 'good at / interested in'],
+        ['afraid ___ / proud ___', 'afraid of / proud of'],
+      ],
+      questions: [
+        { id: 'r0arkk', q: 'I usually ___ at 7 o\'clock, have a shower and eat breakfast.', options: ['get up', 'get on', 'give up', 'grow up'], answer: 0, explain: 'get up – wstawać z łóżka.' },
+        { id: 'eybi0y', q: 'It\'s cold outside. ___ your jacket!', options: ['Take off', 'Put on', 'Turn on', 'Give up'], answer: 1, explain: 'put on – założyć (ubranie). Take off – zdjąć.' },
+        { id: 't2idw1', q: 'I can\'t find my keys. Can you help me ___ them?', options: ['look after', 'look for', 'give up', 'turn off'], answer: 1, explain: 'look for – szukać. Look after – opiekować się.' },
+        { id: 'ls5v3w', q: 'My grandma ___ my little brother when my parents are at work.', options: ['looks for', 'breaks down', 'looks after', 'gives up'], answer: 2, explain: 'look after – opiekować się.' },
+        { id: 'sqxj81', q: 'Our car ___ on the motorway, so we had to call for help.', options: ['broke down', 'gave up', 'set off', 'grew up'], answer: 0, explain: 'break down (broke down) – zepsuć się.' },
+        { id: 'd7q0bl', q: 'My dad ___ smoking last year. He feels much better now.', options: ['grew up', 'picked up', 'turned off', 'gave up'], answer: 3, explain: 'give up (gave up) – rzucić nałóg.' },
+        { id: 'w78q02', q: 'Please ___ this form and give it back to me.', options: ['fill in', 'find out', 'try on', 'set off'], answer: 0, explain: 'fill in – wypełnić (formularz).' },
+        { id: 'um4ffa', q: 'Please ___ the TV. I want to sleep.', options: ['turn on', 'turn up', 'turn off', 'put on'], answer: 2, explain: 'Chcesz spać → wyłącz telewizor: turn off.' },
+        { id: 'pvt2hb', q: 'I can\'t hear the music. Can you turn it ___ , please?', options: ['off', 'down', 'up', 'away'], answer: 2, explain: 'turn up – podgłośnić; turn down – ściszyć.' },
+        { id: 'n4uent', q: 'We ___ very early in the morning because we had a long journey ahead of us.', options: ['set off', 'got off', 'gave up', 'grew up'], answer: 0, explain: 'set off – wyruszyć w drogę.' },
+        { id: 'cout7o', q: 'The plane ___ at 6:15 and landed in London two hours later.', options: ['put on', 'got up', 'took off', 'broke up'], answer: 2, explain: 'take off o samolocie – wystartować (przeciwieństwo: land – wylądować).' },
+        { id: 'yatw27', q: 'I ___ in a small village, but now I live in Warsaw.', options: ['got up', 'grew up', 'gave up', 'set off'], answer: 1, explain: 'grow up (grew up) – dorastać.' },
+        { id: '1dp7gj', q: 'My train arrives at 5. Can you pick me ___ at the station?', options: ['on', 'off', 'out', 'up'], answer: 3, explain: 'pick sb up – odebrać kogoś (np. z dworca).' },
+        { id: 'gkhx55', q: 'I want to ___ more about this museum before we go there.', options: ['find out', 'fill in', 'turn off', 'give up'], answer: 0, explain: 'find out – dowiedzieć się.' },
+        { id: 'bqihtv', q: 'We\'re on the bus. This is our stop – we have to ___ now!', options: ['get on', 'get off', 'get up', 'take off'], answer: 1, explain: 'get off – wysiąść (z autobusu, pociągu). Get on – wsiąść.' },
+        { id: '94q4ds', q: 'Which sentence is correct?', options: ['Turn off it, please.', 'Turn it, off please.', 'Turn it off, please.', 'Off turn it, please.'], answer: 2, explain: 'Zaimek it stoi w środku: turn it off, put it on.' },
+        { id: 'ym53vi', q: 'I\'m listening ___ my favourite song.', options: ['at', 'to', 'for', 'on'], answer: 1, explain: 'listen to – słuchać czegoś.' },
+        { id: 'qbh5x9', q: 'We waited ___ the bus for twenty minutes.', options: ['for', 'on', 'to', 'at'], answer: 0, explain: 'wait for – czekać na.' },
+        { id: '42vmx6', q: 'My sister is very good ___ maths.', options: ['in', 'on', 'at', 'of'], answer: 2, explain: 'good at – dobry w czymś.' },
+        { id: 'uupzgq', q: 'Are you interested ___ history?', options: ['on', 'at', 'about', 'in'], answer: 3, explain: 'interested in – zainteresowany czymś.' },
+        { id: 'w1x591', q: 'My little brother is afraid ___ dogs.', options: ['of', 'from', 'before', 'at'], answer: 0, explain: 'afraid of – bać się czegoś (nie „afraid from”).' },
+        { id: 'bfq0z6', q: 'We\'re very proud ___ our team. They won the cup!', options: ['at', 'with', 'of', 'on'], answer: 2, explain: 'proud of – dumny z.' },
+        { id: 'lqjoyu', q: 'We may have a picnic tomorrow. It depends ___ the weather.', options: ['of', 'from', 'at', 'on'], answer: 3, explain: 'depend on – zależeć od (nie „depend from”).' },
+        { id: 'n23jk2', q: 'This bike belongs ___ my cousin.', options: ['to', 'for', 'of', 'with'], answer: 0, explain: 'belong to – należeć do.' },
+        { id: '7akz8g', q: 'Przekład: „Czekam na ciebie.”', options: ['I\'m waiting you.', 'I\'m waiting for you.', 'I\'m waiting to you.', 'I\'m waiting at you.'], answer: 1, explain: 'wait for somebody – czekać na kogoś.' },
+        { id: '0nzij8', q: 'Przekład: „Opiekuję się psem sąsiadów.”', options: ['I look for my neighbours\' dog.', 'I look at my neighbours\' dog.', 'I look after my neighbours\' dog.', 'I look up my neighbours\' dog.'], answer: 2, explain: 'look after – opiekować się.' },
+        { id: 'aavgqt', q: 'Don\'t laugh ___ me! It isn\'t funny.', options: ['on', 'at', 'of', 'for'], answer: 1, explain: 'laugh at – śmiać się z kogoś.' },
+        { id: '9w5p5w', q: 'Prawda czy fałsz?\nZdanie „I\'m thinking of buying a new phone.” jest poprawne.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'think of – myśleć o; po przyimku czasownik ma formę -ing (buying).' },
+      ],
+    },
+    {
+      id: 'przyslowki',
+      name: 'Przysłówki; so, such, how, what',
+      basis: 'Informator CKE (język angielski, od r. szk. 2024/2025), lista struktur gramatycznych: PRZYSŁÓWEK 1–3 (stopniowanie regularne i nieregularne, np. elegantly – more elegantly – the most elegantly, badly – worse – the worst; too i enough; miejsce przysłówka w zdaniu), PRZYMIOTNIK 2 (użycie so, such, how i what z przymiotnikami, np. She is such a nice girl. How nice!).',
+      theory: `
+        <h3>Przymiotnik czy przysłówek?</h3>
+        <ul>
+          <li><b>Przymiotnik</b> opisuje rzeczownik – <i>jaki?</i>: <i>a <b>careful</b> driver, She is <b>quick</b>.</i></li>
+          <li><b>Przysłówek</b> opisuje czynność – <i>jak?</i>: <i>He drives <b>carefully</b>. She runs <b>quickly</b>.</i></li>
+        </ul>
+        <h3>Tworzenie przysłówków</h3>
+        <table>
+          <tr><th>Reguła</th><th>Przykład</th></tr>
+          <tr><td>przymiotnik + <b>-ly</b></td><td>slow – slowly, quick – quickly, quiet – quietly, careful – carefully, bad – badly</td></tr>
+          <tr><td>spółgłoska + y → <b>-ily</b></td><td>easy – easily, happy – happily, noisy – noisily</td></tr>
+          <tr><td>-le → <b>-ly</b></td><td>terrible – terribly, simple – simply</td></tr>
+          <tr><td><b>wyjątki</b></td><td>good → <b>well</b> · fast → <b>fast</b> · hard → <b>hard</b> · late → <b>late</b> · early → <b>early</b></td></tr>
+        </table>
+        <div class="tip">⚠️ <b>hardly</b> to nie „ciężko”, tylko „prawie wcale”: <i>I can hardly hear you.</i> A <b>lately</b> znaczy „ostatnio”. Ciężko pracować to <i>work <b>hard</b></i>, a spóźnić się – <i>arrive <b>late</b></i>.</div>
+        <h3>Stopniowanie przysłówków</h3>
+        <table>
+          <tr><th>Typ</th><th>Stopień wyższy</th><th>Stopień najwyższy</th></tr>
+          <tr><td>krótkie: fast, hard, late</td><td>fast<b>er</b>, hard<b>er</b>, lat<b>er</b></td><td>the fast<b>est</b>, the hard<b>est</b>, the lat<b>est</b></td></tr>
+          <tr><td>early</td><td>earl<b>ier</b></td><td>the earl<b>iest</b></td></tr>
+          <tr><td>z końcówką -ly</td><td><b>more</b> carefully, <b>more</b> elegantly</td><td><b>the most</b> carefully, <b>the most</b> elegantly</td></tr>
+          <tr><td><b>nieregularne</b></td><td>well – <b>better</b> · badly – <b>worse</b> · far – <b>farther/further</b></td><td><b>the best</b> · <b>the worst</b> · <b>the farthest/furthest</b></td></tr>
+        </table>
+        <p>Porównania: <i>She sings <b>better than</b> me. He drives <b>more carefully than</b> his brother. I can't run <b>as fast as</b> you.</i></p>
+        <h3>Miejsce przysłówka w zdaniu</h3>
+        <ul>
+          <li><b>Częstotliwość</b> (always, usually, often, sometimes, never) – <b>przed czasownikiem głównym</b>: <i>She often goes to the cinema.</i></li>
+          <li>…ale <b>po „be”</b>: <i>They are always late.</i> i po czasowniku posiłkowym lub modalnym: <i>I have never been to London. You can always call me.</i></li>
+          <li><b>Sposób</b> (jak?) – zwykle <b>na końcu</b>, po dopełnieniu: <i>Do it quickly! She speaks English very well.</i> (nie: <s>She speaks very well English</s>).</li>
+          <li><b>Miejsce i czas</b> – na końcu, najpierw miejsce, potem czas: <i>We met in the park yesterday.</i></li>
+        </ul>
+        <h3>so, such, how, what</h3>
+        <table>
+          <tr><th>Słowo</th><th>Budowa</th><th>Przykład</th></tr>
+          <tr><td><b>so</b></td><td>so + przymiotnik / przysłówek (bez rzeczownika)</td><td>She is so nice. You speak so fast!</td></tr>
+          <tr><td><b>such</b></td><td>such <b>a/an</b> + przymiotnik + rzeczownik (l. poj.)<br>such + przymiotnik + rzeczownik (l. mn. / niepoliczalny)</td><td>She is such a nice girl.<br>They are such nice people. It was such good weather.</td></tr>
+          <tr><td><b>How …!</b></td><td>How + przymiotnik!</td><td>How nice! How interesting!</td></tr>
+          <tr><td><b>What …!</b></td><td>What <b>a/an</b> + przymiotnik + rzeczownik (l. poj.)!<br>What + przymiotnik + rzeczownik (l. mn. / niepoliczalny)!</td><td>What a nice day!<br>What lovely flowers! What awful weather!</td></tr>
+        </table>
+        <p><b>so / such … that</b> – tak…, że: <i>It was <b>so</b> cold <b>that</b> we stayed at home. It was <b>such</b> a good film <b>that</b> I watched it twice.</i></p>
+        <div class="tip">💡 Sprawdź, czy po luce jest <b>rzeczownik</b>: jest → <b>such</b> / <b>What</b>; nie ma → <b>so</b> / <b>How</b>. Słówka <i>too</i> i <i>enough</i> znajdziesz w dziale „Strona bierna, przyimki, zaimki”.</div>
+      `,
+      flashcards: [
+        ['quick → przysłówek', 'quickly'],
+        ['easy → przysłówek', 'easily (-y → -ily)'],
+        ['good → przysłówek', 'well: She sings well.'],
+        ['fast, hard, late, early → przysłówek', 'bez zmian: fast, hard, late, early'],
+        ['hard czy hardly?', 'hard – ciężko; hardly – prawie wcale'],
+        ['well', 'better – the best'],
+        ['badly', 'worse – the worst'],
+        ['carefully', 'more carefully – the most carefully'],
+        ['fast', 'faster – the fastest'],
+        ['always, often, never – gdzie w zdaniu?', 'przed czasownikiem głównym: She often goes…'],
+        ['…a przy „be”?', 'po be: They are always late.'],
+        ['przysłówek sposobu – gdzie?', 'na końcu: Do it quickly! She speaks English well.'],
+        ['so + …', 'so + przymiotnik: so nice'],
+        ['such + …', 'such a + przymiotnik + rzeczownik: such a nice girl'],
+        ['How …!', 'How + przymiotnik: How nice!'],
+        ['What …!', 'What a + przymiotnik + rzeczownik: What a nice day!'],
+        ['tak zimno, że…', 'so cold that… / such a cold day that…'],
+      ],
+      questions: [
+        { id: 'vvdqig', q: 'Przysłówek od „careful” to…', options: ['carefuly', 'carefully', 'carefull', 'carefulily'], answer: 1, explain: 'careful + -ly = carefully (dwa „l”).' },
+        { id: '29oaqq', q: 'Przysłówek od „easy” to…', options: ['easyly', 'easly', 'easily', 'easiely'], answer: 2, explain: 'Spółgłoska + y → -ily: easily.' },
+        { id: 'e0f0p7', q: 'She speaks English very ___ .', options: ['good', 'well', 'goodly', 'better'], answer: 1, explain: 'Przysłówek od good to well.' },
+        { id: 'uqlf1y', q: 'He is a ___ driver. He always drives ___ .', options: ['careful / carefully', 'carefully / careful', 'careful / careful', 'carefully / carefully'], answer: 0, explain: 'Przed rzeczownikiem (driver) – przymiotnik; po czasowniku (drives) – przysłówek.' },
+        { id: 'mp5f6m', q: 'Tom runs very ___ . He won the race.', options: ['fastly', 'fast', 'faster', 'fastest'], answer: 1, explain: 'Fast to przymiotnik i przysłówek – bez -ly.' },
+        { id: '7cnw9b', q: 'I worked very ___ yesterday and now I\'m tired.', options: ['hardly', 'harder', 'hard', 'hardest'], answer: 2, explain: 'work hard – ciężko pracować. Hardly znaczy „prawie wcale”.' },
+        { id: 'jbqfpf', q: 'I got up very ___ this morning – at 5 a.m.!', options: ['earlily', 'early', 'earliest', 'more early'], answer: 1, explain: 'Early to przymiotnik i przysłówek – bez -ly.' },
+        { id: '3u9du7', q: 'Stopień wyższy od „well” to…', options: ['weller', 'more well', 'best', 'better'], answer: 3, explain: 'well – better – the best.' },
+        { id: 'nquru2', q: 'We played ___ than last week. We lost 0:5!', options: ['badder', 'worse', 'the worst', 'worsely'], answer: 1, explain: 'badly – worse – the worst.' },
+        { id: '4jyrm1', q: 'Could you speak ___ , please? I don\'t understand.', options: ['more slowly', 'slowlier', 'most slowly', 'slowlyer'], answer: 0, explain: 'Przysłówki z -ly stopniujemy przez more: more slowly.' },
+        { id: '2cz2ew', q: 'My mum sings well, my sister sings better, but my dad sings ___ of all.', options: ['good', 'well', 'better', 'the best'], answer: 3, explain: 'Stopień najwyższy od well: the best.' },
+        { id: 'wx4va2', q: 'Which sentence is correct?', options: ['She goes often to the cinema.', 'She often goes to the cinema.', 'She go often to the cinema.', 'Often she go to the cinema.'], answer: 1, explain: 'Przysłówek częstotliwości stoi przed czasownikiem głównym.' },
+        { id: 'vpgf6u', q: 'Which sentence is correct?', options: ['They always are late.', 'They always late are.', 'They are always late.', 'Always they late are.'], answer: 2, explain: 'Przy „be” przysłówek częstotliwości stoi po nim: are always.' },
+        { id: 'zxdv1m', q: 'I ___ breakfast before school.', options: ['have usually', 'usually have', 'usually am having', 'am usually have'], answer: 1, explain: 'usually + czasownik główny: I usually have breakfast.' },
+        { id: 'ge229l', q: 'Which sentence is correct?', options: ['She speaks very well English.', 'She very well speaks English.', 'She speaks English very good.', 'She speaks English very well.'], answer: 3, explain: 'Przysłówek sposobu stoi na końcu, po dopełnieniu (English).' },
+        { id: 'maw0o6', q: 'It was ___ a beautiful day that we went to the beach.', options: ['so', 'such', 'how', 'what'], answer: 1, explain: 'Po luce jest a + przymiotnik + rzeczownik → such.' },
+        { id: 'iqapi4', q: 'The film was ___ boring that I fell asleep.', options: ['such', 'what', 'so', 'how'], answer: 2, explain: 'Po luce sam przymiotnik (boring) → so.' },
+        { id: 'ju09aj', q: '___ a nice surprise! Thank you!', options: ['How', 'So', 'Very', 'What'], answer: 3, explain: 'What a + przymiotnik + rzeczownik!' },
+        { id: 'dvgbnw', q: '___ interesting! Tell me more.', options: ['What', 'How', 'Such', 'What a'], answer: 1, explain: 'How + sam przymiotnik!' },
+        { id: '3c044o', q: 'They are ___ nice people!', options: ['such', 'so', 'such a', 'how'], answer: 0, explain: 'Liczba mnoga (people) → such bez „a”.' },
+        { id: '5244cb', q: 'What ___ weather! It\'s raining again.', options: ['an awful', 'awful', 'a awful', 'so awful'], answer: 1, explain: '„Weather” jest niepoliczalne → What awful weather! (bez a/an).' },
+        { id: '8zcd8b', q: 'Prawda czy fałsz?\n„Hardly” znaczy to samo co „hard” (ciężko).', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Hardly znaczy „prawie wcale”: I can hardly see. Ciężko pracować – work hard.' },
+      ],
+    },
+    {
+      id: 'zaimki-zdania',
+      name: 'Zaimki nieokreślone i budowa zdania',
+      basis: 'Informator CKE (język angielski, od r. szk. 2024/2025), lista struktur gramatycznych: ZAIMEK 7 (zaimki nieokreślone, np. some, any, no, (a) few, (a) little, other, another, somebody, anything), ZAIMEK 8 (zaimek bezosobowy you), SKŁADNIA 2 (zdania z podmiotem it, np. It rained heavily last night.), SKŁADNIA 4 (zdania z dwoma dopełnieniami, np. Yesterday I bought my grandma a nice present.).',
+      theory: `
+        <h3>some-, any-, no-, every-</h3>
+        <table>
+          <tr><th></th><th>osoba</th><th>rzecz</th><th>miejsce</th></tr>
+          <tr><td><b>some-</b></td><td>somebody / someone – ktoś</td><td>something – coś</td><td>somewhere – gdzieś</td></tr>
+          <tr><td><b>any-</b></td><td>anybody / anyone – ktoś? / nikt (w przeczeniu)</td><td>anything – coś? / nic</td><td>anywhere – gdzieś? / nigdzie</td></tr>
+          <tr><td><b>no-</b></td><td>nobody / no one – nikt</td><td>nothing – nic</td><td>nowhere – nigdzie</td></tr>
+          <tr><td><b>every-</b></td><td>everybody / everyone – wszyscy</td><td>everything – wszystko</td><td>everywhere – wszędzie</td></tr>
+        </table>
+        <ul>
+          <li><b>some-</b> – w zdaniach twierdzących oraz w prośbach i propozycjach: <i>There's somebody at the door. Would you like something to drink?</i></li>
+          <li><b>any-</b> – w pytaniach i przeczeniach: <i>Is there anybody here? I didn't see anything.</i></li>
+          <li><b>no-</b> – zdanie przeczące <b>bez not</b>: <i>I saw nobody.</i> = <i>I didn't see anybody.</i></li>
+          <li>Po <i>everybody, nobody, somebody</i> czasownik jest w <b>liczbie pojedynczej</b>: <i>Everybody <b>likes</b> pizza. Nobody <b>knows</b>.</i></li>
+        </ul>
+        <div class="tip">⚠️ Po angielsku w zdaniu jest <b>tylko jedno przeczenie</b>. Polskie „Nikt nic nie wie” to <i>Nobody knows anything.</i> (nie: <s>Nobody knows nothing</s>, <s>I didn't see nobody</s>).</div>
+        <h3>no = not any</h3>
+        <p><b>no</b> + rzeczownik: <i>There's <b>no</b> milk.</i> = <i>There isn't <b>any</b> milk.</i> · <i>I've got <b>no</b> time.</i></p>
+        <h3>a few / few, a little / little</h3>
+        <table>
+          <tr><th></th><th>policzalne (books, people)</th><th>niepoliczalne (time, money)</th></tr>
+          <tr><td>trochę, kilka – <b>wystarczy</b> 🙂</td><td><b>a few</b>: I have a few friends here.</td><td><b>a little</b>: We've got a little time.</td></tr>
+          <tr><td>mało, niewiele – <b>za mało</b> 🙁</td><td><b>few</b>: Very few people came.</td><td><b>little</b>: There's very little milk left.</td></tr>
+        </table>
+        <h3>another, other, the other</h3>
+        <ul>
+          <li><b>another</b> (= an + other, pisane razem) – jeszcze jeden / inny, z rzeczownikiem w <b>l. poj.</b>: <i>Can I have another biscuit? Let's meet another day.</i></li>
+          <li><b>other</b> + rzeczownik w <b>l. mn.</b>: <i>other people, other books</i>. Bez rzeczownika: <b>others</b> – <i>Some students walk to school, others go by bus.</i></li>
+          <li><b>the other</b> – ten drugi (z dwóch) / pozostały: <i>I have two brothers. One is 10, <b>the other</b> is 15.</i></li>
+        </ul>
+        <h3>Bezosobowe „you” (= „się”, ludzie w ogóle)</h3>
+        <p><i><b>You</b> can't park here.</i> (Nie wolno tu parkować.) · <i>How do <b>you</b> spell it?</i> (Jak to się pisze?) · <i><b>You</b> need a ticket to get in.</i> (Żeby wejść, potrzeba biletu.)</p>
+        <h3>Podmiot „it”</h3>
+        <p>W angielskim zdanie musi mieć podmiot. Gdy po polsku go nie ma, wstawiamy <b>it</b>:</p>
+        <ul>
+          <li>pogoda: <i>It's raining. It's cold. It rained heavily last night.</i></li>
+          <li>czas i data: <i>It's 5 o'clock. It's Monday. It's my birthday today.</i></li>
+          <li>odległość: <i>It's two kilometres to school.</i></li>
+          <li>ocena + to + bezokolicznik: <i>It's difficult to learn Chinese. It's nice to see you.</i></li>
+        </ul>
+        <div class="tip">⚠️ Nie pisz <s>Is raining.</s> ani <s>Is cold.</s> – zawsze <b>It's</b> raining, <b>It's</b> cold.</div>
+        <h3>Zdania z dwoma dopełnieniami</h3>
+        <table>
+          <tr><th>osoba + rzecz</th><th>rzecz + to / for + osoba</th></tr>
+          <tr><td>I gave <b>my brother</b> a book.</td><td>I gave a book <b>to</b> my brother.</td></tr>
+          <tr><td>She sent <b>me</b> a message.</td><td>She sent a message <b>to</b> me.</td></tr>
+          <tr><td>I bought <b>my grandma</b> a present.</td><td>I bought a present <b>for</b> my grandma.</td></tr>
+          <tr><td>Mum made <b>us</b> a cake.</td><td>Mum made a cake <b>for</b> us.</td></tr>
+        </table>
+        <p><b>to</b>: give, send, show, lend, bring, write · <b>for</b>: buy, make. Gdy rzecz to zaimek (it, them), wybierz drugą wersję: <i>Give <b>it to</b> me. I bought <b>it for</b> her.</i></p>
+        <div class="tip">💡 W pierwszej wersji (osoba + rzecz) <b>nie ma przyimka</b>: <i>give me the salt</i>, nie <s>give to me the salt</s>.</div>
+      `,
+      flashcards: [
+        ['somebody / someone', 'ktoś'],
+        ['something / somewhere', 'coś / gdzieś'],
+        ['nobody / nothing / nowhere', 'nikt / nic / nigdzie'],
+        ['everybody / everything / everywhere', 'wszyscy / wszystko / wszędzie'],
+        ['Do you need ___? (coś)', 'anything – w pytaniach any-'],
+        ['Nikt nic nie wie.', 'Nobody knows anything. (jedno przeczenie!)'],
+        ['There\'s no milk.', '= There isn\'t any milk.'],
+        ['a few / a little', 'kilka / trochę (wystarczy)'],
+        ['few / little', 'mało, niewiele (za mało)'],
+        ['another', 'jeszcze jeden, inny (l. poj.): another cake'],
+        ['other / others', 'inne (+ l. mn.): other people · bez rzeczownika: others'],
+        ['the other', 'ten drugi (z dwóch)'],
+        ['bezosobowe you', '„się”: How do you spell it? You can\'t park here.'],
+        ['Pada deszcz. / Jest zimno.', 'It\'s raining. / It\'s cold.'],
+        ['Jest piąta.', 'It\'s 5 o\'clock.'],
+        ['Trudno jest…', 'It\'s difficult to…'],
+        ['give somebody something', '= give something to somebody'],
+        ['buy somebody something', '= buy something for somebody'],
+        ['Daj mi to.', 'Give it to me.'],
+      ],
+      questions: [
+        { id: 'we6i1a', q: 'There\'s ___ at the door. Can you open it?', options: ['anybody', 'somebody', 'nobody', 'everybody'], answer: 1, explain: 'Zdanie twierdzące → some-: somebody (ktoś).' },
+        { id: 'lsw6cu', q: 'The fridge is empty. There isn\'t ___ to eat.', options: ['something', 'nothing', 'anything', 'everything'], answer: 2, explain: 'Przeczenie (isn\'t) → any-: anything. „Isn\'t nothing” to podwójne przeczenie.' },
+        { id: 'vlns71', q: 'I invited ten friends, but ___ came. I was so sad.', options: ['somebody', 'anybody', 'everybody', 'nobody'], answer: 3, explain: 'nobody – nikt; czasownik twierdzący (came), bo przeczenie jest już w nobody.' },
+        { id: 'tsgzn6', q: 'I didn\'t see ___ in the park. It was empty.', options: ['anybody', 'nobody', 'somebody', 'everybody'], answer: 0, explain: 'Po didn\'t → any-: anybody. „Didn\'t see nobody” to podwójne przeczenie.' },
+        { id: 'xxwufx', q: 'Where are my glasses? I\'ve looked ___ !', options: ['anywhere', 'everywhere', 'nowhere', 'somewhere'], answer: 1, explain: 'everywhere – wszędzie.' },
+        { id: 'pc6zio', q: 'Everybody in my class ___ the new teacher.', options: ['like', 'are liking', 'likes', 'have liked'], answer: 2, explain: 'Po everybody czasownik w liczbie pojedynczej: likes.' },
+        { id: '7vjbtt', q: 'Przekład: „Nikt nic nie wie.”', options: ['Nobody knows nothing.', 'Nobody doesn\'t know anything.', 'Anybody knows nothing.', 'Nobody knows anything.'], answer: 3, explain: 'Po angielsku tylko jedno przeczenie: nobody + anything.' },
+        { id: 'pe3thl', q: 'Sorry, I can\'t buy it. I\'ve got ___ money.', options: ['no', 'any', 'none', 'not'], answer: 0, explain: 'no + rzeczownik = not any: I\'ve got no money = I haven\'t got any money.' },
+        { id: '4ok3xw', q: 'There ___ milk in the fridge. We need to buy some.', options: ['is any', 'isn\'t no', 'are no', 'is no'], answer: 3, explain: 'There is no milk = There isn\'t any milk. „Milk” jest niepoliczalne → is.' },
+        { id: 'i5t49w', q: 'Can I have ___ piece of cake? It\'s delicious!', options: ['other', 'another', 'others', 'the others'], answer: 1, explain: 'another – jeszcze jeden (l. poj.).' },
+        { id: 'so48sc', q: 'I have two cats. One is black and ___ is white.', options: ['the other', 'another', 'other', 'others'], answer: 0, explain: 'Ten drugi z dwóch → the other.' },
+        { id: 'npvi6c', q: 'Some of my friends like football, but ___ friends prefer basketball.', options: ['another', 'others', 'other', 'the another'], answer: 2, explain: 'other + rzeczownik w l. mn. (friends).' },
+        { id: '3eq2yk', q: 'Don\'t worry, we\'ve got ___ time before the film starts – about ten minutes.', options: ['a few', 'a little', 'many', 'few'], answer: 1, explain: '„Time” jest niepoliczalne, a czasu wystarczy → a little.' },
+        { id: 'aj94fv', q: 'Very ___ people came to the concert. The hall was almost empty.', options: ['a few', 'little', 'few', 'a little'], answer: 2, explain: 'Mało, za mało + policzalne (people) → few.' },
+        { id: '21mkra', q: '„Jak to się pisze?” po angielsku to:', options: ['How does it spell?', 'How do you spell it?', 'How is spelling it?', 'How spell you it?'], answer: 1, explain: 'Bezosobowe you = „się”: How do you spell it?' },
+        { id: 'cr8wky', q: 'Prawda czy fałsz?\nW zdaniu „You can\'t take photos in this museum.” słowo „you” oznacza ludzi w ogóle (nie wolno tu robić zdjęć).', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'To bezosobowe you – zakaz dotyczy wszystkich.' },
+        { id: 'vitrop', q: '___ raining. Take an umbrella!', options: ['It\'s', 'Is', 'There\'s', 'It'], answer: 0, explain: 'Pogoda → podmiot it: It\'s raining.' },
+        { id: 'vzatz0', q: '___ difficult to learn Chinese.', options: ['Is', 'There is', 'It\'s', 'This is'], answer: 2, explain: 'It\'s + przymiotnik + to + bezokolicznik.' },
+        { id: 'yowjfm', q: '„Jest zimno.” po angielsku to:', options: ['Is cold.', 'There is cold.', 'It cold.', 'It\'s cold.'], answer: 3, explain: 'Zdanie musi mieć podmiot: It\'s cold.' },
+        { id: 'b1zvt2', q: 'Yesterday I bought ___ a nice present.', options: ['to my grandma', 'my grandma', 'for my grandma', 'my grandma for'], answer: 1, explain: 'buy somebody something – osoba bez przyimka przed rzeczą.' },
+        { id: '6y63hw', q: 'I gave the book ___ my brother.', options: ['to', 'for', 'at', 'with'], answer: 0, explain: 'give something to somebody.' },
+        { id: 'e08fdt', q: 'Which sentence is correct?', options: ['Can you give to me the salt?', 'Can you give the salt me?', 'Can you give me the salt?', 'Can you give for me the salt?'], answer: 2, explain: 'give + osoba + rzecz, bez przyimka: give me the salt.' },
+        { id: 'tiarxx', q: 'Mum made a birthday cake ___ me.', options: ['to', 'at', 'with', 'for'], answer: 3, explain: 'make something for somebody.' },
+      ],
+    },
+    {
       id: 'functions',
       name: 'Reakcje językowe',
       basis: 'Informator CKE (język angielski): część arkusza „Znajomość funkcji językowych” – reagowanie na wypowiedzi w typowych sytuacjach.',
@@ -810,6 +1134,120 @@ window.SUBJECTS.push({
         { id: 'skaib8', q: 'It\'s very ___ today – I can\'t see anything!', options: ['sunny', 'windy', 'hot', 'foggy'], answer: 3 },
         { id: 'quzz1s', q: 'We should ___ plastic bottles, not throw them away.', options: ['pollute', 'recycle', 'destroy', 'waste'], answer: 1 },
         { id: '2eh26s', q: 'Pandas are ___ animals – there are very few of them left.', options: ['dangerous', 'endangered', 'dairy', 'foggy'], answer: 1, explain: '„Dangerous” to niebezpieczny – częsta pułapka.' },
+      ],
+    },
+    {
+      id: 'kraje',
+      name: 'Kraje anglojęzyczne',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), język obcy nowożytny – wariant II.1, wymaganie IX.1–2: podstawowa wiedza o krajach, społeczeństwach i kulturach społeczności posługujących się językiem angielskim oraz o kraju ojczystym; świadomość związku między kulturą własną i obcą. Fakty sprawdzone 1.11.2026 w Britannice, CIA World Factbook, na stronach rządowych (parliament.uk, canada.ca, pmc.gov.au, gov.pl, europa.eu) i w słownikach Oxford Learner\'s, Cambridge i Britannica.',
+      theory: `
+        <h3>Wielka Brytania – the United Kingdom (the UK)</h3>
+        <p>Pełna nazwa: <i>the United Kingdom of Great Britain and Northern Ireland</i>. <b>Great Britain</b> to wyspa, na której leżą Anglia, Szkocja i Walia; razem z <b>Irlandią Północną</b> tworzą one Zjednoczone Królestwo.</p>
+        <table>
+          <tr><th>Część UK</th><th>Stolica</th></tr>
+          <tr><td>England – Anglia</td><td>London (też stolica całego UK)</td></tr>
+          <tr><td>Scotland – Szkocja</td><td>Edinburgh</td></tr>
+          <tr><td>Wales – Walia</td><td>Cardiff</td></tr>
+          <tr><td>Northern Ireland – Irlandia Północna</td><td>Belfast</td></tr>
+        </table>
+        <p>Waluta: <b>funt szterling</b> (<i>the pound</i>, £). <b>Big Ben</b> to właściwie nazwa wielkiego dzwonu w wieży zegarowej Parlamentu (od 2012 r. wieża nazywa się <i>Elizabeth Tower</i>).</p>
+        <div class="tip">⚠️ <b>Irlandia</b> (<i>Ireland</i>, stolica <b>Dublin</b>, waluta <b>euro</b>) to osobne państwo – <b>nie</b> należy do UK. Do UK należy tylko Irlandia <b>Północna</b>.</div>
+        <h3>Inne kraje anglojęzyczne</h3>
+        <table>
+          <tr><th>Kraj</th><th>Stolica</th><th>Waluta</th><th>Warto wiedzieć</th></tr>
+          <tr><td>the USA – Stany Zjednoczone</td><td>Washington, D.C.</td><td>dollar ($)</td><td>50 stanów; Statua Wolności w Nowym Jorku – dar Francji (1886)</td></tr>
+          <tr><td>Canada – Kanada</td><td>Ottawa</td><td>Canadian dollar</td><td>dwa języki urzędowe: angielski i francuski; liść klonu na fladze</td></tr>
+          <tr><td>Australia</td><td>Canberra (nie Sydney!)</td><td>Australian dollar</td><td>kangur i emu w herbie; Sydney Opera House</td></tr>
+          <tr><td>New Zealand – Nowa Zelandia</td><td>Wellington</td><td>New Zealand dollar</td><td>ptak kiwi – mieszkańców nazywa się potocznie <i>Kiwis</i></td></tr>
+          <tr><td>Ireland – Irlandia</td><td>Dublin</td><td>euro (€)</td><td>koniczyna (shamrock) – symbol św. Patryka</td></tr>
+        </table>
+        <h3>Święta i tradycje</h3>
+        <table>
+          <tr><th>Święto</th><th>Kiedy?</th><th>Gdzie?</th><th>O co chodzi?</th></tr>
+          <tr><td>Burns Night</td><td>25 stycznia</td><td>Szkocja</td><td>urodziny szkockiego poety Roberta Burnsa; kolacja z <i>haggis</i></td></tr>
+          <tr><td>Australia Day</td><td>26 stycznia</td><td>Australia</td><td>święto narodowe Australii</td></tr>
+          <tr><td>St Patrick's Day</td><td>17 marca</td><td>Irlandia i Irlandczycy na całym świecie</td><td>dzień patrona Irlandii, św. Patryka; symbol – koniczyna (shamrock)</td></tr>
+          <tr><td>Canada Day</td><td>1 lipca</td><td>Kanada</td><td>święto narodowe Kanady</td></tr>
+          <tr><td>Independence Day (the Fourth of July)</td><td>4 lipca</td><td>USA</td><td>rocznica przyjęcia Deklaracji Niepodległości (1776); parady, pikniki, fajerwerki</td></tr>
+          <tr><td>Halloween</td><td>31 października</td><td>m.in. USA, UK, Irlandia</td><td>wieczór przed Wszystkimi Świętymi; dzieci w przebraniach chodzą po domach i mówią <i>„Trick or treat!”</i></td></tr>
+          <tr><td>Bonfire Night (Guy Fawkes Night)</td><td>5 listopada</td><td>UK</td><td>pamiątka udaremnionego spisku prochowego z 1605 r. (plan wysadzenia Parlamentu z królem Jakubem I); ogniska i fajerwerki</td></tr>
+          <tr><td>Thanksgiving</td><td>czwarty czwartek listopada</td><td>USA (w Kanadzie – drugi poniedziałek października)</td><td>Święto Dziękczynienia</td></tr>
+        </table>
+        <p>Patroni: Anglii – św. Jerzy (<i>St George</i>, 23 kwietnia), Szkocji – św. Andrzej (<i>St Andrew</i>, 30 listopada), Walii – św. Dawid (<i>St David</i>, 1 marca), Irlandii – św. Patryk (17 marca).</p>
+        <h3>Brytyjski i amerykański angielski</h3>
+        <table>
+          <tr><th>British English 🇬🇧</th><th>American English 🇺🇸</th><th>po polsku</th></tr>
+          <tr><td>flat</td><td>apartment</td><td>mieszkanie</td></tr>
+          <tr><td>lift</td><td>elevator</td><td>winda</td></tr>
+          <tr><td>holiday</td><td>vacation</td><td>wakacje, urlop</td></tr>
+          <tr><td>autumn</td><td>fall</td><td>jesień</td></tr>
+          <tr><td>biscuit</td><td>cookie</td><td>herbatnik, ciastko</td></tr>
+          <tr><td>chips</td><td>French fries</td><td>frytki</td></tr>
+          <tr><td>crisps</td><td>chips</td><td>chipsy</td></tr>
+          <tr><td>the underground (w Londynie: the Tube)</td><td>the subway</td><td>metro</td></tr>
+          <tr><td>rubbish</td><td>garbage / trash</td><td>śmieci</td></tr>
+          <tr><td>queue</td><td>line</td><td>kolejka</td></tr>
+        </table>
+        <div class="tip">💡 Uwaga na <b>chips</b>: w Londynie dostaniesz frytki (<i>fish and chips</i>), w Nowym Jorku – chipsy. W tekstach i nagraniach możesz spotkać oba warianty – dobrze rozumieć jeden i drugi.</div>
+        <p><b>Zwyczaje</b> – ostrożnie, to tylko popularne stereotypy: mówi się, że Brytyjczycy chętnie zaczynają rozmowę od pogody (<i>Lovely day, isn't it?</i>) i cierpliwie stoją w kolejce (<i>queue</i>). Pamiętaj: każdy człowiek jest inny, a stereotyp to nie fakt.</p>
+        <h3>Opowiedz o Polsce po angielsku</h3>
+        <ul>
+          <li><i>Poland is in Central Europe. The capital of Poland is <b>Warsaw</b>.</i></li>
+          <li><i>We use the <b>złoty</b>. The longest river in Poland is <b>the Vistula</b>.</i></li>
+          <li><i>Our National Independence Day is on <b>11th November</b> (1918). Constitution Day is on <b>3rd May</b> (the Constitution of 1791).</i></li>
+          <li><i>Halloween is on 31st October. In Poland, on 1st November, people visit the graves of their relatives.</i> – Halloween to wieczór przed Wszystkimi Świętymi, a u nas 1 listopada to dzień zadumy.</li>
+        </ul>
+        <div class="tip">💡 Wymaganie IX.2 to <b>porównywanie kultur</b>: Amerykanie mają <i>Independence Day</i> 4 lipca, a my – Narodowe Święto Niepodległości 11 listopada. Zauważ podobieństwa i różnice, a przy nazwach świąt i miast pisz wielką literą: <i>Christmas, Easter, Warsaw</i>.</div>
+      `,
+      flashcards: [
+        ['Cztery części UK', 'England, Scotland, Wales, Northern Ireland'],
+        ['Stolica Szkocji', 'Edinburgh'],
+        ['Stolica Walii', 'Cardiff'],
+        ['Stolica Irlandii Północnej', 'Belfast'],
+        ['Irlandia (Ireland)', 'osobne państwo, nie UK; stolica Dublin, waluta euro'],
+        ['Stolica USA · liczba stanów', 'Washington, D.C. · 50 stanów'],
+        ['Stolica Kanady', 'Ottawa (języki urzędowe: angielski i francuski)'],
+        ['Stolica Australii', 'Canberra (nie Sydney!)'],
+        ['Stolica Nowej Zelandii', 'Wellington'],
+        ['Big Ben', 'wielki dzwon w wieży zegarowej Parlamentu (Elizabeth Tower)'],
+        ['Burns Night', '25 stycznia, Szkocja – urodziny poety Roberta Burnsa'],
+        ['St Patrick\'s Day', '17 marca – patron Irlandii; symbol: koniczyna (shamrock)'],
+        ['Independence Day (USA)', '4 lipca – Deklaracja Niepodległości (1776)'],
+        ['Bonfire Night', '5 listopada, UK – spisek prochowy z 1605 r.; ogniska, fajerwerki'],
+        ['Thanksgiving (USA)', 'czwarty czwartek listopada'],
+        ['Halloween', '31 października – „Trick or treat!”'],
+        ['flat / lift (BrE)', 'apartment / elevator (AmE)'],
+        ['holiday / autumn (BrE)', 'vacation / fall (AmE)'],
+        ['biscuit / chips / crisps (BrE)', 'cookie / French fries / chips (AmE)'],
+        ['underground / rubbish / queue (BrE)', 'subway / garbage, trash / line (AmE)'],
+        ['Polska po angielsku', 'Warsaw, the złoty, the Vistula; Independence Day – 11th November'],
+      ],
+      questions: [
+        { id: 'fx056k', q: 'What is the capital of Scotland?', options: ['Edinburgh', 'Glasgow', 'Cardiff', 'Dublin'], answer: 0, explain: 'Stolicą Szkocji jest Edynburg. Cardiff to stolica Walii, Dublin – Irlandii.' },
+        { id: 'nbp96h', q: 'What is the capital of Wales?', options: ['Belfast', 'Edinburgh', 'Cardiff', 'London'], answer: 2, explain: 'Cardiff – stolica Walii. Belfast to stolica Irlandii Północnej.' },
+        { id: '9qt9vg', q: 'Which of these is NOT part of the United Kingdom?', options: ['Scotland', 'Wales', 'Northern Ireland', 'the Republic of Ireland'], answer: 3, explain: 'Irlandia (Republika Irlandii, stolica Dublin) to osobne państwo. Do UK należy tylko Irlandia Północna.' },
+        { id: 'jz5zi7', q: 'What is the capital of Australia?', options: ['Sydney', 'Melbourne', 'Canberra', 'Wellington'], answer: 2, explain: 'Stolicą Australii jest Canberra, choć Sydney i Melbourne są większe. Wellington to stolica Nowej Zelandii.' },
+        { id: 'e6psks', q: 'What is the capital of Canada?', options: ['Toronto', 'Ottawa', 'Vancouver', 'Washington, D.C.'], answer: 1, explain: 'Stolicą Kanady jest Ottawa. Washington, D.C. to stolica USA.' },
+        { id: 'izr8sc', q: 'What is the capital of New Zealand?', options: ['Auckland', 'Canberra', 'Dublin', 'Wellington'], answer: 3, explain: 'Stolicą Nowej Zelandii jest Wellington.' },
+        { id: 'fwic9e', q: 'How many states are there in the USA?', options: ['13', '48', '50', '52'], answer: 2, explain: 'USA to 50 stanów. Stolica, Washington, D.C., nie leży w żadnym stanie.' },
+        { id: 'x0y148', q: 'Which currency do people use in Ireland?', options: ['the pound', 'the euro', 'the dollar', 'the złoty'], answer: 1, explain: 'Irlandia należy do strefy euro. Funt (pound) to waluta Wielkiej Brytanii.' },
+        { id: 'ybpqj8', q: 'Which sentence about Canada is true?', options: ['Canada has two official languages: English and French.', 'The capital of Canada is Toronto.', 'Canadians use the pound.', 'Canada is part of the UK.'], answer: 0, explain: 'Kanada ma dwa języki urzędowe: angielski i francuski. Stolica to Ottawa, waluta – dolar kanadyjski.' },
+        { id: 't0l7ck', q: 'Burns Night (25th January) celebrates a famous poet from…', options: ['Scotland', 'the USA', 'Australia', 'Canada'], answer: 0, explain: 'Burns Night to urodziny Roberta Burnsa, narodowego poety Szkocji.' },
+        { id: 'jhwr4f', q: 'When is St Patrick\'s Day?', options: ['4th July', '5th November', '17th March', '31st October'], answer: 2, explain: 'St Patrick\'s Day – 17 marca, dzień patrona Irlandii.' },
+        { id: 'h7yh96', q: 'Americans celebrate Independence Day on…', options: ['1st July', '4th July', '11th November', '25th December'], answer: 1, explain: '4 lipca – rocznica Deklaracji Niepodległości (1776). 1 lipca to Canada Day, a 11 listopada – polskie Święto Niepodległości.' },
+        { id: '7kaxyh', q: 'On Bonfire Night (5th November) people in the UK remember…', options: ['the first Thanksgiving', 'the Gunpowder Plot of 1605', 'the birthday of Robert Burns', 'the end of the school year'], answer: 1, explain: 'Bonfire Night (Guy Fawkes Night) upamiętnia udaremniony spisek prochowy z 1605 r. – plan wysadzenia Parlamentu.' },
+        { id: 'u5o53s', q: 'In the USA, Thanksgiving is on…', options: ['the first Monday in May', '31st October', 'the fourth Thursday in November', '17th March'], answer: 2, explain: 'W USA – czwarty czwartek listopada (w Kanadzie – drugi poniedziałek października).' },
+        { id: 'um07j8', q: 'On Halloween children go from house to house and say…', options: ['Happy birthday!', 'Cheers!', 'Good luck!', 'Trick or treat!'], answer: 3, explain: '„Trick or treat!” – „Psikus albo cukierek!”' },
+        { id: 'ghqb2n', q: 'Big Ben is the name of…', options: ['a big bell in the clock tower of the Houses of Parliament', 'a bridge in London', 'a king of England', 'a park in New York'], answer: 0, explain: 'Big Ben to właściwie wielki dzwon; wieża nazywa się Elizabeth Tower.' },
+        { id: 'vp65wp', q: 'The Statue of Liberty is in…', options: ['Washington, D.C.', 'New York', 'London', 'Sydney'], answer: 1, explain: 'Statua Wolności stoi w porcie Nowego Jorku – to dar Francji z 1886 r.' },
+        { id: 'u6uove', q: 'Which bird is a symbol of New Zealand? People from New Zealand are often called by its name.', options: ['the kangaroo', 'the eagle', 'the kiwi', 'the swan'], answer: 2, explain: 'Kiwi – mieszkańców Nowej Zelandii nazywa się potocznie „Kiwis”. Kangur to symbol Australii (i nie jest ptakiem).' },
+        { id: '8jbs7q', q: 'What is on the flag of Canada?', options: ['a maple leaf', 'a star', 'a shamrock', 'a dragon'], answer: 0, explain: 'Na fladze Kanady jest czerwony liść klonu (maple leaf). Koniczyna (shamrock) to symbol Irlandii.' },
+        { id: '4izvpd', q: 'An American says „elevator”. A British person says…', options: ['flat', 'lift', 'queue', 'tube'], answer: 1, explain: 'elevator (AmE) = lift (BrE) – winda.' },
+        { id: 'dcvobp', q: 'A British person says „flat”. An American says…', options: ['vacation', 'cookie', 'apartment', 'fall'], answer: 2, explain: 'flat (BrE) = apartment (AmE) – mieszkanie.' },
+        { id: 'fh2ndm', q: 'Which word is American English for „autumn”?', options: ['spring', 'holiday', 'subway', 'fall'], answer: 3, explain: 'autumn (BrE) = fall (AmE) – jesień.' },
+        { id: 'vs1zvw', q: 'An American goes on vacation. A British person goes on…', options: ['holiday', 'fall', 'subway', 'elevator'], answer: 0, explain: 'vacation (AmE) = holiday (BrE).' },
+        { id: '2fndhh', q: 'You are in a café in London and you want French fries. You ask for…', options: ['crisps', 'chips', 'cookies', 'biscuits'], answer: 1, explain: 'W brytyjskim angielskim frytki to chips (fish and chips). Crisps to chipsy.' },
+        { id: '5p2jan', q: 'Tell a foreigner about Poland. Which sentence is true?', options: ['The capital of Poland is Kraków.', 'In Poland we use the euro.', 'Polish Independence Day is on 4th July.', 'The longest river in Poland is the Vistula.'], answer: 3, explain: 'Najdłuższa rzeka Polski to Wisła (the Vistula). Stolica – Warszawa, waluta – złoty, Święto Niepodległości – 11 listopada.' },
       ],
     },
     {

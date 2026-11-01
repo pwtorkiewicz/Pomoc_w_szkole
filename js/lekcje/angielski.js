@@ -1550,3 +1550,580 @@ window.LESSONS['angielski/rzeczowniki-przedimki'] = [
     check: { q: 'Mark is my best friend. I play tennis with ___ every week.', options: ['he', 'his', 'him', 'her'], answer: 2, explain: 'Po przyimku „with” – forma dopełnienia: him.' },
   },
 ];
+
+/* ===================== PHRASAL VERBS I PRZYIMKI ===================== */
+window.LESSONS['angielski/phrasal-przyimki'] = [
+  {
+    title: 'Czasownik + małe słówko = nowe znaczenie',
+    svg: `<svg viewBox="0 0 420 216" role="img" aria-label="Czasownik look z trzema słówkami: look at – patrzeć na, look for – szukać, look after – opiekować się">
+      <defs><marker id="m-phr-1" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="8" y="76" width="110" height="64" rx="14" class="f4 s4 sw"/>
+      <text x="63" y="104" font-size="24" text-anchor="middle">👀</text>
+      <text x="63" y="130" class="tx-b" text-anchor="middle">look</text>
+      <path d="M120,100 L186,38" class="ln" marker-end="url(#m-phr-1)"/>
+      <path d="M120,108 L186,108" class="ln" marker-end="url(#m-phr-1)"/>
+      <path d="M120,116 L186,178" class="ln" marker-end="url(#m-phr-1)"/>
+      <rect x="192" y="8" width="220" height="56" rx="12" class="f1 s1"/>
+      <text x="302" y="32" class="tx-b" text-anchor="middle">look <tspan class="t1">at</tspan></text>
+      <text x="302" y="54" class="tx-s" text-anchor="middle">patrzeć na</text>
+      <rect x="192" y="80" width="220" height="56" rx="12" class="f3 s3"/>
+      <text x="302" y="104" class="tx-b" text-anchor="middle">look <tspan class="t3">for</tspan></text>
+      <text x="302" y="126" class="tx-s" text-anchor="middle">szukać</text>
+      <rect x="192" y="152" width="220" height="56" rx="12" class="f2 s2"/>
+      <text x="302" y="176" class="tx-b" text-anchor="middle">look <tspan class="t2">after</tspan></text>
+      <text x="302" y="198" class="tx-s" text-anchor="middle">opiekować się</text>
+    </svg>`,
+    text: `<p><b>Phrasal verb</b> to czasownik z krótkim słówkiem (<i>up, on, off, out, for, after…</i>). Razem tworzą <b>nowe znaczenie</b>, którego często nie zgadniesz z części: <i>look</i> to „patrzeć”, ale <i>look for</i> – „szukać”, a <i>look after</i> – „opiekować się”.</p>
+      <p>Phrasal verbs są na liście struktur gramatycznych w informatorze CKE, więc możesz je spotkać w tekstach, nagraniach i zadaniach z lukami. Warto znać ok. 25 najczęstszych z życia codziennego.</p>`,
+    remember: 'Ucz się phrasal verb jako <b>całości</b>, jak jednego słowa: <i>look for</i> = szukać.',
+    hook: 'To jak klocki LEGO 🧱: ten sam klocek <i>look</i>, ale z innym „doczepionym” klockiem budujesz zupełnie inną rzecz.',
+    check: { q: 'I can\'t find my phone. I\'m looking ___ it.', options: ['at', 'for', 'after'], answer: 1, explain: 'look for – szukać.' },
+  },
+  {
+    title: 'Twój poranek w phrasal verbs',
+    svg: `<svg viewBox="0 0 420 212" role="img" aria-label="Poranek: wake up, get up, put on, turn off, get on oraz pary przeciwieństw on i off">
+      <rect x="6" y="8" width="76" height="92" rx="12" class="f1 s1"/>
+      <rect x="91" y="8" width="76" height="92" rx="12" class="f1 s1"/>
+      <rect x="176" y="8" width="76" height="92" rx="12" class="f1 s1"/>
+      <rect x="261" y="8" width="76" height="92" rx="12" class="f1 s1"/>
+      <rect x="346" y="8" width="68" height="92" rx="12" class="f1 s1"/>
+      <text x="44" y="50" font-size="28" text-anchor="middle">⏰</text>
+      <text x="129" y="50" font-size="28" text-anchor="middle">🛏️</text>
+      <text x="214" y="50" font-size="28" text-anchor="middle">👕</text>
+      <text x="299" y="50" font-size="28" text-anchor="middle">💡</text>
+      <text x="380" y="50" font-size="28" text-anchor="middle">🚌</text>
+      <text x="44" y="84" class="tx" text-anchor="middle">wake up</text>
+      <text x="129" y="84" class="tx" text-anchor="middle">get up</text>
+      <text x="214" y="84" class="tx" text-anchor="middle">put on</text>
+      <text x="299" y="84" class="tx" text-anchor="middle">turn off</text>
+      <text x="380" y="84" class="tx" text-anchor="middle">get on</text>
+      <text x="210" y="134" class="tx" text-anchor="middle"><tspan class="tx-b t3">put on</tspan> ⟷ <tspan class="tx-b t2">take off</tspan>  · ubranie</text>
+      <text x="210" y="166" class="tx" text-anchor="middle"><tspan class="tx-b t3">turn on</tspan> ⟷ <tspan class="tx-b t2">turn off</tspan>  · światło, TV</text>
+      <text x="210" y="198" class="tx" text-anchor="middle"><tspan class="tx-b t3">get on</tspan> ⟷ <tspan class="tx-b t2">get off</tspan>  · autobus, pociąg</text>
+    </svg>`,
+    text: `<p>Budzisz się (<i>wake up</i>), wstajesz (<i>get up</i>), zakładasz bluzę (<i>put on</i>), gasisz światło (<i>turn off</i>) i wsiadasz do autobusu (<i>get on</i>). Po szkole wracasz (<i>come back</i>) i może wychodzisz z kolegami (<i>go out</i>).</p>
+      <p>Wiele phrasal verbs tworzy <b>pary przeciwieństw</b> z <i>on</i> i <i>off</i> – ucz się ich parami.</p>`,
+    remember: '<b>on</b> – zakładasz, włączasz, wsiadasz · <b>off</b> – zdejmujesz, wyłączasz, wysiadasz.',
+    hook: 'Pomyśl o przycisku na pilocie: <b>ON</b> – włączone, <b>OFF</b> – wyłączone. Z ubraniem i autobusem działa tak samo.',
+    check: { q: 'It\'s hot in here. ___ your jumper.', options: ['Put on', 'Take off', 'Turn on'], answer: 1, explain: 'Jest gorąco → zdejmij sweter: take off.' },
+  },
+  {
+    title: 'Jedno słowo – dwa znaczenia',
+    svg: `<svg viewBox="0 0 420 206" role="img" aria-label="Dwa znaczenia take off: zdjąć buty i start samolotu; dwa znaczenia pick up: podnieść długopis i odebrać kogoś">
+      <rect x="6" y="6" width="200" height="92" rx="12" class="f3 s3"/>
+      <rect x="214" y="6" width="200" height="92" rx="12" class="f5 s5"/>
+      <rect x="6" y="106" width="200" height="92" rx="12" class="f3 s3"/>
+      <rect x="214" y="106" width="200" height="92" rx="12" class="f5 s5"/>
+      <text x="106" y="34" class="tx-b" text-anchor="middle">👟 take off</text>
+      <text x="106" y="62" class="tx" text-anchor="middle">Take off your shoes.</text>
+      <text x="106" y="86" class="tx-s" text-anchor="middle">zdejmij buty</text>
+      <text x="314" y="34" class="tx-b" text-anchor="middle">✈️ take off</text>
+      <text x="314" y="62" class="tx" text-anchor="middle">The plane took off.</text>
+      <text x="314" y="86" class="tx-s" text-anchor="middle">samolot wystartował</text>
+      <text x="106" y="134" class="tx-b" text-anchor="middle">✏️ pick up</text>
+      <text x="106" y="162" class="tx" text-anchor="middle">Pick up the pen.</text>
+      <text x="106" y="186" class="tx-s" text-anchor="middle">podnieś długopis</text>
+      <text x="314" y="134" class="tx-b" text-anchor="middle">🚗 pick up</text>
+      <text x="314" y="162" class="tx" text-anchor="middle">Mum picks me up.</text>
+      <text x="314" y="186" class="tx-s" text-anchor="middle">mama mnie odbiera</text>
+    </svg>`,
+    text: `<p>Ten sam phrasal verb może mieć <b>kilka znaczeń</b> – rozstrzyga reszta zdania. <i>Take off</i> z ubraniem to „zdjąć”, a z samolotem – „wystartować”. <i>Pick up</i> z rzeczą to „podnieść”, a z osobą – „odebrać kogoś” (np. ze szkoły).</p>
+      <p>Podobnie <i>get on</i>: <i>get on the bus</i> – wsiąść, ale <i>get on well with somebody</i> – dobrze się z kimś dogadywać.</p>`,
+    remember: 'Czytaj <b>całe zdanie</b>: kto lub co wykonuje czynność i z czym? To podpowiada znaczenie.',
+    hook: 'Samolot nie ma butów 👟 – więc <i>the plane took off</i> może znaczyć tylko „wystartował”.',
+    check: { q: 'The plane ___ at 6:15 and landed two hours later.', options: ['took off', 'put on', 'picked up'], answer: 0, explain: 'take off o samolocie – wystartować.' },
+  },
+  {
+    title: 'Gdzie wstawić „it”?',
+    svg: `<svg viewBox="0 0 420 214" role="img" aria-label="Porównanie: źle Turn off it, dobrze Turn it off; źle Put on it, dobrze Put it on; look for it bez zmian">
+      <text x="105" y="28" class="tx-b t2" text-anchor="middle">❌ źle</text>
+      <text x="315" y="28" class="tx-b t3" text-anchor="middle">✅ dobrze</text>
+      <line x1="210" y1="10" x2="210" y2="128" class="ln-thin"/>
+      <text x="105" y="62" class="tx t2" text-anchor="middle">Turn off it.</text>
+      <text x="315" y="62" class="tx" text-anchor="middle">Turn <tspan class="tx-b t3">it</tspan> off.</text>
+      <text x="105" y="90" class="tx t2" text-anchor="middle">Put on it.</text>
+      <text x="315" y="90" class="tx" text-anchor="middle">Put <tspan class="tx-b t3">it</tspan> on.</text>
+      <text x="105" y="118" class="tx t2" text-anchor="middle">Pick up them.</text>
+      <text x="315" y="118" class="tx" text-anchor="middle">Pick <tspan class="tx-b t3">them</tspan> up.</text>
+      <rect x="10" y="140" width="400" height="66" rx="12" class="f4 s4"/>
+      <text x="210" y="166" class="tx" text-anchor="middle">ale: look for <tspan class="tx-b">it</tspan> · look after <tspan class="tx-b">them</tspan></text>
+      <text x="210" y="192" class="tx-s" text-anchor="middle">tu zaimek idzie na koniec</text>
+    </svg>`,
+    text: `<p>W phrasal verbs typu <i>turn on/off, put on, take off, pick up, try on, fill in, throw away</i> rzeczownik może stać przed słówkiem lub po nim: <i>Turn off the light. / Turn the light off.</i> Ale <b>zaimek</b> (<i>it, them, me</i>) zawsze stoi <b>w środku</b>: <i>Turn it off.</i></p>
+      <p>Wyjątek: <i>look for, look after</i> – tu zaimek idzie na koniec: <i>I'm looking for it.</i></p>`,
+    remember: '<i>Turn <b>it</b> off. Put <b>it</b> on. Pick <b>me</b> up at 5.</i> – zaimek w środku.',
+    hook: '„It” to mały klocek – wciśnij go jak kanapkę 🥪 między dwie kromki: turn | <b>it</b> | off.',
+  },
+  {
+    title: 'Przyimek przyklejony do słowa',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Kafelki: listen to, wait for, depend on, belong to oraz good at, interested in, afraid of, proud of">
+      <text x="106" y="22" class="tx-b" text-anchor="middle">czasownik +</text>
+      <text x="314" y="22" class="tx-b" text-anchor="middle">przymiotnik +</text>
+      <rect x="6" y="34" width="200" height="38" rx="10" class="f1 s1"/>
+      <rect x="6" y="80" width="200" height="38" rx="10" class="f1 s1"/>
+      <rect x="6" y="126" width="200" height="38" rx="10" class="f1 s1"/>
+      <rect x="6" y="172" width="200" height="38" rx="10" class="f1 s1"/>
+      <rect x="214" y="34" width="200" height="38" rx="10" class="f3 s3"/>
+      <rect x="214" y="80" width="200" height="38" rx="10" class="f3 s3"/>
+      <rect x="214" y="126" width="200" height="38" rx="10" class="f3 s3"/>
+      <rect x="214" y="172" width="200" height="38" rx="10" class="f3 s3"/>
+      <text x="20" y="59" class="tx">listen</text><text x="190" y="59" class="tx-b t2" text-anchor="end">to</text>
+      <text x="20" y="105" class="tx">wait</text><text x="190" y="105" class="tx-b t2" text-anchor="end">for</text>
+      <text x="20" y="151" class="tx">depend</text><text x="190" y="151" class="tx-b t2" text-anchor="end">on</text>
+      <text x="20" y="197" class="tx">belong</text><text x="190" y="197" class="tx-b t2" text-anchor="end">to</text>
+      <text x="228" y="59" class="tx">good</text><text x="398" y="59" class="tx-b t2" text-anchor="end">at</text>
+      <text x="228" y="105" class="tx">interested</text><text x="398" y="105" class="tx-b t2" text-anchor="end">in</text>
+      <text x="228" y="151" class="tx">afraid</text><text x="398" y="151" class="tx-b t2" text-anchor="end">of</text>
+      <text x="228" y="197" class="tx">proud</text><text x="398" y="197" class="tx-b t2" text-anchor="end">of</text>
+    </svg>`,
+    text: `<p>Niektóre czasowniki i przymiotniki zawsze „ciągną” za sobą konkretny przyimek: <i>listen <b>to</b> music, wait <b>for</b> the bus, It depends <b>on</b> the weather, This belongs <b>to</b> me.</i></p>
+      <p>Tak samo przymiotniki: <i>good <b>at</b> maths, interested <b>in</b> history, afraid <b>of</b> spiders, proud <b>of</b> you</i>. Po przyimku czasownik ma formę <b>-ing</b>: <i>good at swimming</i>.</p>`,
+    remember: 'listen to · wait for · depend on · belong to · good at · interested in · afraid of · proud of.',
+    hook: 'Polski tu myli: „zależy <b>od</b>” to <i>depend <b>on</b></i>, „boi się” to <i>afraid <b>of</b></i>. Mów na głos całe pary, aż zabrzmią jak jedno słowo: <i>„listento”, „waitfor”</i>.',
+    check: { q: 'It depends ___ the weather.', options: ['of', 'from', 'on'], answer: 2, explain: 'depend on – zależeć od.' },
+  },
+  {
+    title: 'Pułapki egzaminacyjne',
+    svg: `<svg viewBox="0 0 420 218" role="img" aria-label="Typowe błędy: listen music, wait the bus, afraid from dogs, good in maths i poprawne wersje">
+      <text x="105" y="28" class="tx-b t2" text-anchor="middle">❌ źle</text>
+      <text x="315" y="28" class="tx-b t3" text-anchor="middle">✅ dobrze</text>
+      <line x1="210" y1="10" x2="210" y2="160" class="ln-thin"/>
+      <text x="105" y="62" class="tx t2" text-anchor="middle">listen music</text>
+      <text x="315" y="62" class="tx" text-anchor="middle">listen <tspan class="tx-b t3">to</tspan> music</text>
+      <text x="105" y="92" class="tx t2" text-anchor="middle">wait the bus</text>
+      <text x="315" y="92" class="tx" text-anchor="middle">wait <tspan class="tx-b t3">for</tspan> the bus</text>
+      <text x="105" y="122" class="tx t2" text-anchor="middle">afraid from dogs</text>
+      <text x="315" y="122" class="tx" text-anchor="middle">afraid <tspan class="tx-b t3">of</tspan> dogs</text>
+      <text x="105" y="152" class="tx t2" text-anchor="middle">good in maths</text>
+      <text x="315" y="152" class="tx" text-anchor="middle">good <tspan class="tx-b t3">at</tspan> maths</text>
+      <rect x="10" y="170" width="400" height="40" rx="10" class="f5 s5"/>
+      <text x="210" y="196" class="tx" text-anchor="middle">po przyimku: good at <tspan class="tx-b">swimming</tspan></text>
+    </svg>`,
+    text: `<p>Najczęstsze błędy to <b>brak przyimka</b> (<s>listen music</s>, <s>wait the bus</s>) albo przyimek przetłumaczony z polskiego (<s>afraid from</s>, <s>depend from</s>).</p>
+      <p>W zadaniach z phrasal verbs przeczytaj całe zdanie i zastanów się, co się dzieje: czy ktoś czegoś <b>szuka</b> (look for), czy się kimś <b>opiekuje</b> (look after), czy coś się <b>zepsuło</b> (break down)?</p>`,
+    remember: 'Brak przyimka po <i>listen, wait</i> to błąd. Po przyimku – forma <b>-ing</b>.',
+    check: { q: 'My brother is good ___ playing chess.', options: ['in', 'at', 'on'], answer: 1, explain: 'good at + -ing.' },
+  },
+];
+
+/* ===================== PRZYSŁÓWKI; SO, SUCH, HOW, WHAT ===================== */
+window.LESSONS['angielski/przyslowki'] = [
+  {
+    title: 'Jaki? czy jak?',
+    svg: `<svg viewBox="0 0 420 196" role="img" aria-label="Przymiotnik opisuje rzeczownik: a quick runner; przysłówek opisuje czynność: he runs quickly">
+      <rect x="10" y="10" width="195" height="176" rx="14" class="f1 s1 sw"/>
+      <rect x="215" y="10" width="195" height="176" rx="14" class="f2 s2 sw"/>
+      <text x="107" y="40" class="tx-b t1" text-anchor="middle">przymiotnik</text>
+      <text x="312" y="40" class="tx-b t2" text-anchor="middle">przysłówek</text>
+      <text x="107" y="64" class="tx-s" text-anchor="middle">jaki? → rzeczownik</text>
+      <text x="312" y="64" class="tx-s" text-anchor="middle">jak? → czynność</text>
+      <text x="107" y="108" font-size="34" text-anchor="middle">🏃</text>
+      <text x="312" y="108" font-size="34" text-anchor="middle">💨</text>
+      <text x="107" y="146" class="tx" text-anchor="middle">a <tspan class="tx-b">quick</tspan> runner</text>
+      <text x="312" y="146" class="tx" text-anchor="middle">He runs <tspan class="tx-b">quickly</tspan>.</text>
+      <text x="107" y="172" class="tx" text-anchor="middle">She is <tspan class="tx-b">careful</tspan>.</text>
+      <text x="312" y="172" class="tx" text-anchor="middle">She drives <tspan class="tx-b">carefully</tspan>.</text>
+    </svg>`,
+    text: `<p><b>Przymiotnik</b> mówi, <b>jaki</b> ktoś lub coś jest: <i>a quick runner, She is careful.</i> <b>Przysłówek</b> mówi, <b>jak</b> ktoś coś robi: <i>He runs quickly. She drives carefully.</i></p>
+      <p>Po polsku to „szybki” i „szybko” – po angielsku zwykle dodajesz <b>-ly</b>.</p>`,
+    remember: 'Przy rzeczowniku i po <i>be</i> – przymiotnik. Przy czasowniku czynności – przysłówek.',
+    hook: 'Polskie „-o” (szybk<b>o</b>, cich<b>o</b>, łatw<b>o</b>) to zwykle angielskie <b>-ly</b> (quick<b>ly</b>, quiet<b>ly</b>, easi<b>ly</b>).',
+    check: { q: 'He drives very ___ . He has never had an accident.', options: ['careful', 'carefully', 'care'], answer: 1, explain: 'Jak prowadzi? → przysłówek carefully.' },
+  },
+  {
+    title: 'Jak zrobić przysłówek – i 5 wyjątków',
+    svg: `<svg viewBox="0 0 420 222" role="img" aria-label="Tworzenie przysłówków: slow slowly, easy easily, terrible terribly oraz wyjątki good well, fast, hard, late, early">
+      <rect x="6" y="6" width="132" height="64" rx="10" class="f1 s1"/>
+      <rect x="144" y="6" width="132" height="64" rx="10" class="f3 s3"/>
+      <rect x="282" y="6" width="132" height="64" rx="10" class="f4 s4"/>
+      <text x="72" y="32" class="tx" text-anchor="middle">slow</text>
+      <text x="72" y="58" class="tx" text-anchor="middle">slow<tspan class="tx-b t1">ly</tspan></text>
+      <text x="210" y="32" class="tx" text-anchor="middle">easy</text>
+      <text x="210" y="58" class="tx" text-anchor="middle">eas<tspan class="tx-b t3">ily</tspan></text>
+      <text x="348" y="32" class="tx" text-anchor="middle">terrible</text>
+      <text x="348" y="58" class="tx" text-anchor="middle">terrib<tspan class="tx-b t4">ly</tspan></text>
+      <rect x="6" y="80" width="408" height="134" rx="12" class="f2 s2"/>
+      <text x="210" y="106" class="tx-b" text-anchor="middle">wyjątki</text>
+      <text x="210" y="138" class="tx" text-anchor="middle">good → <tspan class="tx-b t2">well</tspan></text>
+      <text x="210" y="168" class="tx" text-anchor="middle">fast → fast · hard → hard</text>
+      <text x="210" y="198" class="tx" text-anchor="middle">late → late · early → early</text>
+    </svg>`,
+    text: `<p>Zwykle dodajesz <b>-ly</b>: <i>slow – slowly, quiet – quietly, careful – carefully, bad – badly</i>. Gdy przymiotnik kończy się spółgłoską + y, y zmienia się w <b>-ily</b>: <i>easy – easily, happy – happily</i>. Końcówka <i>-le</i> zamienia się w <i>-ly</i>: <i>terrible – terribly</i>.</p>
+      <p>Wyjątki: <b>good → well</b>, a <i>fast, hard, late, early</i> wyglądają tak samo jak przymiotniki: <i>He runs fast. I work hard.</i></p>`,
+    remember: '<i>She is a good singer.</i> → <i>She sings <b>well</b>.</i> (nie: <s>sings good</s>)',
+    hook: 'Uwaga na fałszywego bliźniaka: <b>hardly</b> to „prawie wcale” (<i>I can hardly hear you</i>), a nie „ciężko”. Ciężko pracujesz – <i>work <b>hard</b></i>.',
+    check: { q: 'She speaks English very ___ .', options: ['good', 'well', 'goodly'], answer: 1, explain: 'Przysłówek od good to well.' },
+  },
+  {
+    title: 'Stopniowanie: szybciej, najszybciej',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Tabela stopniowania przysłówków: fast faster the fastest, quickly more quickly the most quickly, well better the best, badly worse the worst">
+      <rect x="10" y="60" width="16" height="16" class="f3 s3"/>
+      <rect x="150" y="44" width="16" height="32" class="f3 s3"/>
+      <rect x="272" y="28" width="16" height="48" class="f3 s3"/>
+      <text x="34" y="74" class="tx-s">stopień równy</text>
+      <text x="174" y="74" class="tx-s">wyższy</text>
+      <text x="296" y="74" class="tx-s">najwyższy</text>
+      <line x1="6" y1="86" x2="414" y2="86" class="ln-thin"/>
+      <text x="10" y="114" class="tx">fast</text><text x="150" y="114" class="tx">fast<tspan class="tx-b t3">er</tspan></text><text x="272" y="114" class="tx">the fast<tspan class="tx-b t3">est</tspan></text>
+      <text x="10" y="144" class="tx">quickly</text><text x="150" y="144" class="tx"><tspan class="tx-b t1">more</tspan> quickly</text><text x="272" y="144" class="tx"><tspan class="tx-b t1">the most</tspan> quickly</text>
+      <line x1="6" y1="160" x2="414" y2="160" class="ln-thin"/>
+      <text x="10" y="186" class="tx">well</text><text x="150" y="186" class="tx-b t2">better</text><text x="272" y="186" class="tx-b t2">the best</text>
+      <text x="10" y="212" class="tx">badly</text><text x="150" y="212" class="tx-b t2">worse</text><text x="272" y="212" class="tx-b t2">the worst</text>
+    </svg>`,
+    text: `<p>Krótkie przysłówki (<i>fast, hard, late, early</i>) stopniujesz jak krótkie przymiotniki: <i>faster – the fastest, earlier – the earliest</i>. Przysłówki z <b>-ly</b> – przez <b>more / the most</b>: <i>more carefully, the most elegantly</i>.</p>
+      <p>Nieregularne: <b>well – better – the best</b>, <b>badly – worse – the worst</b>. Porównujesz z <i>than</i> lub <i>as … as</i>: <i>She sings better than me. I can't run as fast as you.</i></p>`,
+    remember: '-ly → more / the most. well – better – the best · badly – worse – the worst.',
+    hook: 'Te same formy znasz już z przymiotników: <i>good – better – the best</i>, <i>bad – worse – the worst</i>. Przysłówki „pożyczają” je od nich.',
+    check: { q: 'Could you speak ___ , please? I don\'t understand.', options: ['more slowly', 'slowlier', 'most slowly'], answer: 0, explain: 'slowly kończy się na -ly → more slowly.' },
+  },
+  {
+    title: 'Gdzie postawić przysłówek?',
+    svg: `<svg viewBox="0 0 420 202" role="img" aria-label="Trzy zdania z klockami: She often goes to the cinema; They are always late; She speaks English very well">
+      <text x="10" y="20" class="tx-s">częstotliwość → przed czasownikiem głównym</text>
+      <rect x="10" y="28" width="44" height="32" rx="8" class="f1 s1"/><text x="32" y="50" class="tx" text-anchor="middle">She</text>
+      <rect x="60" y="28" width="62" height="32" rx="8" class="f2 s2 sw"/><text x="91" y="50" class="tx-b" text-anchor="middle">often</text>
+      <rect x="128" y="28" width="54" height="32" rx="8" class="f1 s1"/><text x="155" y="50" class="tx" text-anchor="middle">goes</text>
+      <rect x="188" y="28" width="132" height="32" rx="8" class="f1 s1"/><text x="254" y="50" class="tx" text-anchor="middle">to the cinema.</text>
+      <text x="10" y="86" class="tx-s">… ale po „be”</text>
+      <rect x="10" y="94" width="52" height="32" rx="8" class="f1 s1"/><text x="36" y="116" class="tx" text-anchor="middle">They</text>
+      <rect x="68" y="94" width="44" height="32" rx="8" class="f3 s3"/><text x="90" y="116" class="tx-b" text-anchor="middle">are</text>
+      <rect x="118" y="94" width="76" height="32" rx="8" class="f2 s2 sw"/><text x="156" y="116" class="tx-b" text-anchor="middle">always</text>
+      <rect x="200" y="94" width="58" height="32" rx="8" class="f1 s1"/><text x="229" y="116" class="tx" text-anchor="middle">late.</text>
+      <text x="10" y="152" class="tx-s">sposób → na końcu, po dopełnieniu</text>
+      <rect x="10" y="160" width="44" height="32" rx="8" class="f1 s1"/><text x="32" y="182" class="tx" text-anchor="middle">She</text>
+      <rect x="60" y="160" width="70" height="32" rx="8" class="f1 s1"/><text x="95" y="182" class="tx" text-anchor="middle">speaks</text>
+      <rect x="136" y="160" width="76" height="32" rx="8" class="f1 s1"/><text x="174" y="182" class="tx" text-anchor="middle">English</text>
+      <rect x="218" y="160" width="104" height="32" rx="8" class="f2 s2 sw"/><text x="270" y="182" class="tx-b" text-anchor="middle">very well.</text>
+    </svg>`,
+    text: `<p><b>Przysłówki częstotliwości</b> (<i>always, usually, often, sometimes, never</i>) stoją <b>przed czasownikiem głównym</b>: <i>She often goes…, I usually have breakfast.</i> Wyjątek: stoją <b>po be</b> (<i>They are always late.</i>) i po czasowniku posiłkowym lub modalnym (<i>I have never been there. You can always call me.</i>).</p>
+      <p><b>Przysłówki sposobu</b> idą zwykle <b>na koniec</b>, po dopełnieniu: <i>Do it quickly! She speaks English very well</i> (nie: <s>speaks very well English</s>).</p>`,
+    remember: 'always/often/never + czasownik · <i>be</i> + always/often/never · sposób na końcu.',
+    hook: '„Be” jest szefem – przysłówek grzecznie staje <b>za</b> nim. Przed zwykłym czasownikiem przysłówek wchodzi <b>pierwszy</b>.',
+    check: { q: 'Which sentence is correct?', options: ['They always are late.', 'They are always late.', 'They are always lately.'], answer: 1, explain: 'Po „be” – are always. Late to tu przymiotnik (spóźnieni), lately znaczy „ostatnio”.' },
+  },
+  {
+    title: 'so czy such? How czy What?',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Schemat decyzji: czy po luce jest rzeczownik? Tak – such lub What a; nie – so lub How">
+      <defs><marker id="m-adv-5" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="70" y="6" width="280" height="44" rx="12" class="f4 s4 sw"/>
+      <text x="210" y="34" class="tx-b" text-anchor="middle">Po luce jest rzeczownik?</text>
+      <path d="M150,52 L105,86" class="ln" marker-end="url(#m-adv-5)"/>
+      <path d="M270,52 L315,86" class="ln" marker-end="url(#m-adv-5)"/>
+      <text x="108" y="70" class="tx-b t3" text-anchor="end">TAK</text>
+      <text x="312" y="70" class="tx-b t2">NIE</text>
+      <rect x="6" y="92" width="200" height="120" rx="12" class="f3 s3"/>
+      <rect x="214" y="92" width="200" height="120" rx="12" class="f2 s2"/>
+      <text x="106" y="120" class="tx-b" text-anchor="middle">such / What</text>
+      <text x="106" y="150" class="tx" text-anchor="middle">such a nice girl</text>
+      <text x="106" y="176" class="tx" text-anchor="middle">What a nice day!</text>
+      <text x="106" y="200" class="tx-s" text-anchor="middle">such nice people (l. mn.)</text>
+      <text x="314" y="120" class="tx-b" text-anchor="middle">so / How</text>
+      <text x="314" y="150" class="tx" text-anchor="middle">She is so nice.</text>
+      <text x="314" y="176" class="tx" text-anchor="middle">How nice!</text>
+      <text x="314" y="200" class="tx-s" text-anchor="middle">so fast (+ przysłówek)</text>
+    </svg>`,
+    text: `<p><b>so</b> i <b>How</b> stoją przed samym przymiotnikiem (lub przysłówkiem): <i>She is so nice. How interesting!</i> <b>such</b> i <b>What</b> – przed przymiotnikiem <b>z rzeczownikiem</b>: <i>such a nice girl, What a nice day!</i></p>
+      <p>Z liczbą mnogą i rzeczownikami niepoliczalnymi znika <i>a</i>: <i>such nice people, What awful weather!</i> Zdania „tak…, że”: <i>It was <b>so</b> cold <b>that</b>… / It was <b>such</b> a cold day <b>that</b>…</i></p>`,
+    remember: 'rzeczownik → <b>such (a)</b> / <b>What (a)</b> · bez rzeczownika → <b>so</b> / <b>How</b>.',
+    hook: '<b>S</b>uch i <b>W</b>hat lubią towarzystwo – zawsze przychodzą z rzeczownikiem. So i How chodzą same.',
+    check: { q: '___ a beautiful dress!', options: ['How', 'What', 'So'], answer: 1, explain: 'Jest rzeczownik (dress) → What a…!' },
+  },
+  {
+    title: 'Pułapki – sprawdź się',
+    svg: `<svg viewBox="0 0 420 196" role="img" aria-label="Typowe błędy i poprawki: sings good – sings well, works hardly – works hard, such a nice people – such nice people, What an awful weather – What awful weather">
+      <text x="105" y="28" class="tx-b t2" text-anchor="middle">❌ źle</text>
+      <text x="315" y="28" class="tx-b t3" text-anchor="middle">✅ dobrze</text>
+      <line x1="210" y1="10" x2="210" y2="186" class="ln-thin"/>
+      <text x="105" y="66" class="tx t2" text-anchor="middle">She sings good.</text>
+      <text x="315" y="66" class="tx" text-anchor="middle">She sings <tspan class="tx-b t3">well</tspan>.</text>
+      <text x="105" y="104" class="tx t2" text-anchor="middle">He works hardly.</text>
+      <text x="315" y="104" class="tx" text-anchor="middle">He works <tspan class="tx-b t3">hard</tspan>.</text>
+      <text x="105" y="142" class="tx t2" text-anchor="middle">such a nice people</text>
+      <text x="315" y="142" class="tx" text-anchor="middle"><tspan class="tx-b t3">such</tspan> nice people</text>
+      <text x="105" y="180" class="tx t2" text-anchor="middle">What an awful weather!</text>
+      <text x="315" y="180" class="tx" text-anchor="middle"><tspan class="tx-b t3">What</tspan> awful weather!</text>
+    </svg>`,
+    text: `<p>Najczęstsze błędy: <i>good</i> zamiast <i>well</i>, <i>hardly</i> zamiast <i>hard</i>, <i>a</i> przy liczbie mnogiej lub rzeczowniku niepoliczalnym (<i>people, weather, advice</i>) oraz przysłówek sposobu w środku zdania.</p>
+      <p>Słówka <i>too</i> i <i>enough</i> (<i>too big, big enough</i>) też są przysłówkami – powtórzysz je w dziale „Strona bierna, przyimki, zaimki”.</p>`,
+    remember: '<i>well</i> (nie good) · <i>hard</i> (nie hardly) · <i>such / What</i> bez <i>a</i> przy l. mn. i niepoliczalnych.',
+    check: { q: 'They are ___ nice people.', options: ['such a', 'such', 'so'], answer: 1, explain: 'Liczba mnoga (people) → such bez „a”.' },
+  },
+];
+
+/* ===================== ZAIMKI NIEOKREŚLONE I BUDOWA ZDANIA ===================== */
+window.LESSONS['angielski/zaimki-zdania'] = [
+  {
+    title: 'Ktoś, coś, gdzieś – jedna tabelka',
+    svg: `<svg viewBox="0 0 420 216" role="img" aria-label="Tabela złożeń some, any, no, every z body, thing i where">
+      <text x="130" y="28" class="tx-b" text-anchor="middle">-body</text>
+      <text x="244" y="28" class="tx-b" text-anchor="middle">-thing</text>
+      <text x="360" y="28" class="tx-b" text-anchor="middle">-where</text>
+      <text x="8" y="28" class="tx-s">początek</text>
+      <rect x="6" y="40" width="408" height="34" rx="8" class="f1"/>
+      <rect x="6" y="78" width="408" height="34" rx="8" class="f4"/>
+      <rect x="6" y="116" width="408" height="34" rx="8" class="f2"/>
+      <rect x="6" y="154" width="408" height="34" rx="8" class="f3"/>
+      <text x="14" y="63" class="tx-b t1">some</text><text x="130" y="63" class="tx" text-anchor="middle">somebody</text><text x="244" y="63" class="tx" text-anchor="middle">something</text><text x="360" y="63" class="tx" text-anchor="middle">somewhere</text>
+      <text x="14" y="101" class="tx-b t4">any</text><text x="130" y="101" class="tx" text-anchor="middle">anybody</text><text x="244" y="101" class="tx" text-anchor="middle">anything</text><text x="360" y="101" class="tx" text-anchor="middle">anywhere</text>
+      <text x="14" y="139" class="tx-b t2">no</text><text x="130" y="139" class="tx" text-anchor="middle">nobody</text><text x="244" y="139" class="tx" text-anchor="middle">nothing</text><text x="360" y="139" class="tx" text-anchor="middle">nowhere</text>
+      <text x="14" y="177" class="tx-b t3">every</text><text x="130" y="177" class="tx" text-anchor="middle">everybody</text><text x="244" y="177" class="tx" text-anchor="middle">everything</text><text x="360" y="177" class="tx" text-anchor="middle">everywhere</text>
+      <text x="210" y="208" class="tx-s" text-anchor="middle">-body = -one: somebody = someone, nobody = no one</text>
+    </svg>`,
+    text: `<p>Cztery początki i trzy końcówki dają 12 słówek. Początek mówi <b>jaki to rodzaj zdania</b>: <b>some-</b> – twierdzenia (ktoś, coś, gdzieś), <b>any-</b> – pytania i przeczenia, <b>no-</b> – nikt, nic, nigdzie, <b>every-</b> – wszyscy, wszystko, wszędzie.</p>
+      <p>Końcówka mówi <b>o czym</b>: <i>-body/-one</i> – osoba, <i>-thing</i> – rzecz, <i>-where</i> – miejsce. Po <i>everybody, nobody</i> czasownik jest w l. poj.: <i>Everybody <b>likes</b> pizza.</i></p>`,
+    remember: 'some- ✓ twierdzenia · any- ? pytania i przeczenia · no- = nikt/nic/nigdzie · every- = wszyscy/wszystko/wszędzie.',
+    hook: 'To jak tabliczka mnożenia: some × thing = something. Znasz 4 + 3 klocki – masz 12 słów.',
+    check: { q: 'I didn\'t buy ___ in the shop.', options: ['something', 'anything', 'nothing'], answer: 1, explain: 'Przeczenie (didn\'t) → any-: anything.' },
+  },
+  {
+    title: 'Jedno przeczenie wystarczy',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Po polsku Nikt nic nie wie ma trzy przeczenia, po angielsku Nobody knows anything ma jedno">
+      <defs><marker id="m-zz-2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="6" width="400" height="56" rx="12" class="f2 s2"/>
+      <text x="26" y="40" class="tx-b t2">PL</text>
+      <text x="190" y="41" class="tx-b" text-anchor="middle"><tspan class="t2">Nikt nic nie</tspan> wie.</text>
+      <text x="398" y="40" class="tx-s" text-anchor="end">3 przeczenia</text>
+      <path d="M210,64 L210,88" class="ln" marker-end="url(#m-zz-2)"/>
+      <rect x="10" y="94" width="400" height="56" rx="12" class="f3 s3"/>
+      <text x="185" y="129" class="tx-b" text-anchor="middle"><tspan class="t2">Nobody</tspan> knows anything.</text>
+      <text x="398" y="128" class="tx-s" text-anchor="end">1 przeczenie</text>
+      <text x="210" y="180" class="tx" text-anchor="middle">I didn't see <tspan class="tx-b">anybody</tspan>. / I saw <tspan class="tx-b">nobody</tspan>.</text>
+      <text x="210" y="202" class="tx-s" text-anchor="middle">❌ I didn't see nobody.</text>
+    </svg>`,
+    text: `<p>Po polsku przeczenia się „sumują”: <i>Nikt nic nie wie.</i> Po angielsku w zdaniu jest <b>tylko jedno</b> przeczenie. Jeśli jest już <i>nobody, nothing, never</i> albo <i>not</i>, reszta zaimków bierze <b>any-</b>: <i>Nobody knows anything.</i></p>
+      <p><b>no</b> + rzeczownik działa tak samo jak <i>not any</i>: <i>There's no milk.</i> = <i>There isn't any milk.</i></p>`,
+    remember: '<i>not … any-</i> albo samo <i>no-</i> – nigdy oba naraz.',
+    hook: 'Angielskie przeczenie to jak jeden czerwony długopis na całe zdanie 🖍️ – używasz go tylko raz.',
+    check: { q: 'Przekład: „Nic nie widziałem.”', options: ['I didn\'t see nothing.', 'I didn\'t see anything.', 'I saw anything.'], answer: 1, explain: 'Jedno przeczenie: didn\'t + anything (albo I saw nothing).' },
+  },
+  {
+    title: 'a few czy few? another czy the other?',
+    svg: `<svg viewBox="0 0 420 222" role="img" aria-label="a few – kilka, wystarczy; few – mało, za mało; another – jeszcze jeden; the other – ten drugi z dwóch">
+      <rect x="6" y="6" width="200" height="96" rx="12" class="f3 s3"/>
+      <rect x="214" y="6" width="200" height="96" rx="12" class="f2 s2"/>
+      <text x="106" y="34" class="tx-b" text-anchor="middle">🙂 a few / a little</text>
+      <text x="106" y="62" class="tx" text-anchor="middle">kilka, trochę</text>
+      <text x="106" y="88" class="tx-s" text-anchor="middle">wystarczy</text>
+      <text x="314" y="34" class="tx-b" text-anchor="middle">🙁 few / little</text>
+      <text x="314" y="62" class="tx" text-anchor="middle">mało, niewiele</text>
+      <text x="314" y="88" class="tx-s" text-anchor="middle">za mało</text>
+      <rect x="6" y="112" width="200" height="102" rx="12" class="f1 s1"/>
+      <rect x="214" y="112" width="200" height="102" rx="12" class="f5 s5"/>
+      <text x="106" y="142" class="tx-b" text-anchor="middle">another</text>
+      <text x="106" y="172" font-size="22" text-anchor="middle">🍪 + 🍪</text>
+      <text x="106" y="202" class="tx-s" text-anchor="middle">jeszcze jeden (l. poj.)</text>
+      <text x="314" y="142" class="tx-b" text-anchor="middle">the other</text>
+      <text x="314" y="172" font-size="22" text-anchor="middle">🐱  🐱</text>
+      <text x="314" y="202" class="tx-s" text-anchor="middle">ten drugi (z dwóch)</text>
+    </svg>`,
+    text: `<p><b>a few</b> (policzalne) i <b>a little</b> (niepoliczalne) to „kilka, trochę” – i to wystarczy: <i>We've got a little time.</i> Bez <i>a</i> – <b>few, little</b> – znaczą „mało, za mało”: <i>Very few people came.</i></p>
+      <p><b>another</b> – jeszcze jeden / inny, z l. poj.: <i>Can I have another biscuit?</i> <b>other</b> – z l. mn.: <i>other people</i>. <b>the other</b> – ten drugi z dwóch: <i>One cat is black, the other is white.</i></p>`,
+    remember: 'a few / a little 🙂 · few / little 🙁 · another + l. poj. · other + l. mn. · the other = ten drugi.',
+    hook: '<b>a</b> to mała iskierka nadziei ✨: <i>a few</i> – „jest kilka!”, <i>few</i> – „prawie nic…”',
+    check: { q: 'I have two sisters. One is 12 and ___ is 17.', options: ['another', 'the other', 'other'], answer: 1, explain: 'Dwie siostry → ta druga: the other.' },
+  },
+  {
+    title: '„Się” po angielsku: you',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Bezosobowe you: You can't take photos here – nie wolno tu robić zdjęć; How do you say it in English – jak to się mówi po angielsku">
+      <rect x="6" y="6" width="408" height="88" rx="12" class="f4 s4"/>
+      <text x="40" y="58" font-size="32" text-anchor="middle">🚫</text>
+      <text x="240" y="40" class="tx-b" text-anchor="middle"><tspan class="t2">You</tspan> can't take photos here.</text>
+      <text x="240" y="72" class="tx" text-anchor="middle">Nie wolno tu robić zdjęć.</text>
+      <rect x="6" y="104" width="408" height="88" rx="12" class="f1 s1"/>
+      <text x="40" y="156" font-size="32" text-anchor="middle">💬</text>
+      <text x="240" y="138" class="tx-b" text-anchor="middle">How do <tspan class="t2">you</tspan> say it in English?</text>
+      <text x="240" y="170" class="tx" text-anchor="middle">Jak to się mówi po angielsku?</text>
+    </svg>`,
+    text: `<p>Gdy mówisz o <b>ludziach w ogóle</b>, a po polsku używasz „się”, „można”, „nie wolno”, po angielsku często wystarczy <b>you</b>: <i>You can't park here.</i> (Nie wolno tu parkować.) <i>You need a ticket to get in.</i> (Żeby wejść, potrzeba biletu.)</p>
+      <p>To nie znaczy „ty” – chodzi o każdego. Przyda ci się w pytaniach o drogę i w e-mailu: <i>How do you get to the station?</i></p>`,
+    remember: '<i>How do you spell it?</i> = Jak to się pisze? · <i>You can\'t…</i> = Nie wolno…',
+    hook: 'Na tabliczkach i w instrukcjach „you” mówi do <b>wszystkich</b> naraz – jak znak drogowy 🚸.',
+  },
+  {
+    title: 'Podmiot „it” – nie zostawiaj pustego miejsca',
+    svg: `<svg viewBox="0 0 420 222" role="img" aria-label="Zdania z podmiotem it: It's raining, It's cold, It's 5 o'clock, It's Monday, It's difficult to learn Chinese">
+      <rect x="6" y="6" width="200" height="50" rx="10" class="f1 s1"/>
+      <rect x="214" y="6" width="200" height="50" rx="10" class="f1 s1"/>
+      <rect x="6" y="64" width="200" height="50" rx="10" class="f4 s4"/>
+      <rect x="214" y="64" width="200" height="50" rx="10" class="f4 s4"/>
+      <rect x="6" y="122" width="408" height="50" rx="10" class="f5 s5"/>
+      <text x="22" y="38" font-size="20">🌧️</text><text x="54" y="37" class="tx"><tspan class="tx-b t1">It's</tspan> raining.</text>
+      <text x="230" y="38" font-size="20">❄️</text><text x="262" y="37" class="tx"><tspan class="tx-b t1">It's</tspan> cold.</text>
+      <text x="22" y="96" font-size="20">🕔</text><text x="54" y="95" class="tx"><tspan class="tx-b t4">It's</tspan> 5 o'clock.</text>
+      <text x="230" y="96" font-size="20">📅</text><text x="262" y="95" class="tx"><tspan class="tx-b t4">It's</tspan> Monday.</text>
+      <text x="22" y="154" font-size="20">🤔</text><text x="54" y="153" class="tx"><tspan class="tx-b t5">It's</tspan> difficult to learn Chinese.</text>
+      <text x="110" y="206" class="tx t2" text-anchor="middle">❌ Is raining.</text>
+      <text x="310" y="206" class="tx" text-anchor="middle">✅ It's raining.</text>
+    </svg>`,
+    text: `<p>Po polsku mówisz „Pada”, „Jest zimno”, „Jest piąta”. W angielskim zdanie <b>musi mieć podmiot</b>, więc wstawiasz <b>it</b>: <i>It's raining. It's cold. It's 5 o'clock. It rained heavily last night.</i></p>
+      <p>Tak samo przy odległości (<i>It's two kilometres to school.</i>) i ocenach z bezokolicznikiem: <i>It's difficult to learn Chinese. It's nice to meet you.</i></p>`,
+    remember: 'Pogoda, czas, data, odległość, „trudno / miło jest…” → <b>It\'s …</b>',
+    hook: '„It” to wypełniacz miejsca – jak pionek na pustym polu ♟️. W angielskim zdaniu pole podmiotu nie może być puste.',
+    check: { q: '___ cold today. Wear a hat!', options: ['Is', 'It\'s', 'There is'], answer: 1, explain: 'Pogoda → It\'s cold.' },
+  },
+  {
+    title: 'Komu? Co? – dwa dopełnienia',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="I gave my brother a book równa się I gave a book to my brother; I bought my grandma a present równa się I bought a present for my grandma">
+      <text x="10" y="18" class="tx-s"><tspan class="t1">■ osoba</tspan>  <tspan class="t2">■ rzecz</tspan></text>
+      <text x="10" y="50" class="tx">I gave</text>
+      <rect x="66" y="30" width="104" height="30" rx="8" class="f1 s1"/><text x="118" y="50" class="tx" text-anchor="middle">my brother</text>
+      <rect x="176" y="30" width="72" height="30" rx="8" class="f2 s2"/><text x="212" y="50" class="tx" text-anchor="middle">a book.</text>
+      <text x="10" y="94" class="tx">I gave</text>
+      <rect x="66" y="74" width="66" height="30" rx="8" class="f2 s2"/><text x="99" y="94" class="tx" text-anchor="middle">a book</text>
+      <text x="152" y="94" class="tx-b t5" text-anchor="middle">to</text>
+      <rect x="172" y="74" width="108" height="30" rx="8" class="f1 s1"/><text x="226" y="94" class="tx" text-anchor="middle">my brother.</text>
+      <line x1="6" y1="116" x2="414" y2="116" class="ln-thin"/>
+      <text x="10" y="148" class="tx">I bought</text>
+      <rect x="82" y="128" width="104" height="30" rx="8" class="f1 s1"/><text x="134" y="148" class="tx" text-anchor="middle">my grandma</text>
+      <rect x="192" y="128" width="92" height="30" rx="8" class="f2 s2"/><text x="238" y="148" class="tx" text-anchor="middle">a present.</text>
+      <text x="10" y="192" class="tx">I bought</text>
+      <rect x="82" y="172" width="86" height="30" rx="8" class="f2 s2"/><text x="125" y="192" class="tx" text-anchor="middle">a present</text>
+      <text x="190" y="192" class="tx-b t5" text-anchor="middle">for</text>
+      <rect x="212" y="172" width="108" height="30" rx="8" class="f1 s1"/><text x="266" y="192" class="tx" text-anchor="middle">my grandma.</text>
+    </svg>`,
+    text: `<p>Po czasownikach <i>give, send, show, lend, bring, buy, make</i> możesz podać <b>dwie</b> rzeczy: komu i co. Są dwa szyki: <b>osoba + rzecz</b> (bez przyimka): <i>I gave my brother a book.</i> albo <b>rzecz + to/for + osoba</b>: <i>I gave a book to my brother.</i></p>
+      <p><b>to</b> – give, send, show, lend, bring · <b>for</b> – buy, make. Gdy rzecz to <i>it/them</i>, wybierz drugi szyk: <i>Give it to me.</i></p>`,
+    remember: 'osoba + rzecz (bez przyimka) albo rzecz + <b>to/for</b> + osoba. ❌ <s>give to me the salt</s>.',
+    hook: 'Przyimek pojawia się tylko wtedy, gdy osoba „ucieka” na koniec zdania – <i>to</i> albo <i>for</i> trzyma ją za rękę.',
+    check: { q: 'Can you show ___ your photos?', options: ['me', 'to me', 'for me'], answer: 0, explain: 'show + osoba + rzecz, bez przyimka: show me your photos.' },
+  },
+];
+
+/* ===================== KRAJE ANGLOJĘZYCZNE ===================== */
+window.LESSONS['angielski/kraje'] = [
+  {
+    title: 'Jeden język – wiele krajów',
+    svg: `<svg viewBox="0 0 420 198" role="img" aria-label="Kafelki krajów anglojęzycznych ze stolicami: Wielka Brytania – Londyn, Irlandia – Dublin, USA – Waszyngton, Kanada – Ottawa, Australia – Canberra, Nowa Zelandia – Wellington">
+      <rect x="6" y="6" width="132" height="90" rx="12" class="f1 s1"/>
+      <rect x="144" y="6" width="132" height="90" rx="12" class="f3 s3"/>
+      <rect x="282" y="6" width="132" height="90" rx="12" class="f2 s2"/>
+      <rect x="6" y="102" width="132" height="90" rx="12" class="f2 s2"/>
+      <rect x="144" y="102" width="132" height="90" rx="12" class="f4 s4"/>
+      <rect x="282" y="102" width="132" height="90" rx="12" class="f5 s5"/>
+      <text x="72" y="40" font-size="26" text-anchor="middle">🔔</text><text x="72" y="66" class="tx-b" text-anchor="middle">the UK</text><text x="72" y="86" class="tx-s" text-anchor="middle">London</text>
+      <text x="210" y="40" font-size="26" text-anchor="middle">☘️</text><text x="210" y="66" class="tx-b" text-anchor="middle">Ireland</text><text x="210" y="86" class="tx-s" text-anchor="middle">Dublin</text>
+      <text x="348" y="40" font-size="26" text-anchor="middle">🗽</text><text x="348" y="66" class="tx-b" text-anchor="middle">the USA</text><text x="348" y="86" class="tx-s" text-anchor="middle">Washington, D.C.</text>
+      <text x="72" y="136" font-size="26" text-anchor="middle">🍁</text><text x="72" y="162" class="tx-b" text-anchor="middle">Canada</text><text x="72" y="182" class="tx-s" text-anchor="middle">Ottawa</text>
+      <text x="210" y="136" font-size="26" text-anchor="middle">🦘</text><text x="210" y="162" class="tx-b" text-anchor="middle">Australia</text><text x="210" y="182" class="tx-s" text-anchor="middle">Canberra</text>
+      <text x="348" y="136" font-size="26" text-anchor="middle">🐦</text><text x="348" y="162" class="tx-b" text-anchor="middle">New Zealand</text><text x="348" y="182" class="tx-s" text-anchor="middle">Wellington</text>
+    </svg>`,
+    text: `<p>Po angielsku mówi się na co dzień m.in. w <b>Wielkiej Brytanii, Irlandii, USA, Kanadzie, Australii i Nowej Zelandii</b>. Podstawa programowa (wymaganie IX) wymaga podstawowej wiedzy o tych krajach i ich kulturze – oraz umiejętności opowiedzenia o Polsce.</p>
+      <p>Zapamiętaj stolice – zwłaszcza te „podchwytliwe”: stolicą Australii jest <b>Canberra</b> (nie Sydney), a Kanady – <b>Ottawa</b> (nie Toronto).</p>`,
+    remember: 'UK – London · Ireland – Dublin · USA – Washington, D.C. · Canada – Ottawa · Australia – Canberra · New Zealand – Wellington.',
+    hook: 'Pułapka: stolica to nie zawsze największe miasto! Sydney i Melbourne są większe od Canberry, a Auckland – od Wellingtonu.',
+    check: { q: 'What is the capital of Australia?', options: ['Sydney', 'Canberra', 'Melbourne'], answer: 1, explain: 'Canberra – Sydney i Melbourne są większe, ale to nie stolice.' },
+  },
+  {
+    title: 'UK = cztery kraje w jednym',
+    svg: `<svg viewBox="0 0 420 252" role="img" aria-label="Schemat Zjednoczonego Królestwa: Szkocja – Edynburg, Irlandia Północna – Belfast, Walia – Cardiff, Anglia – Londyn; obok osobne państwo Irlandia – Dublin, euro">
+      <rect x="150" y="6" width="264" height="240" rx="16" class="ln dash"/>
+      <text x="282" y="30" class="tx-b" text-anchor="middle">the UK · £ pound</text>
+      <rect x="250" y="40" width="156" height="58" rx="10" class="f3 s3"/>
+      <text x="328" y="64" class="tx-b" text-anchor="middle">Scotland</text>
+      <text x="328" y="86" class="tx-s" text-anchor="middle">Edinburgh</text>
+      <rect x="158" y="104" width="100" height="58" rx="10" class="f4 s4"/>
+      <text x="208" y="128" class="tx-b" text-anchor="middle">N. Ireland</text>
+      <text x="208" y="150" class="tx-s" text-anchor="middle">Belfast</text>
+      <rect x="158" y="170" width="100" height="68" rx="10" class="f5 s5"/>
+      <text x="208" y="198" class="tx-b" text-anchor="middle">Wales</text>
+      <text x="208" y="222" class="tx-s" text-anchor="middle">Cardiff</text>
+      <rect x="266" y="106" width="140" height="132" rx="10" class="f1 s1"/>
+      <text x="336" y="156" class="tx-b" text-anchor="middle">England</text>
+      <text x="336" y="180" class="tx-s" text-anchor="middle">London</text>
+      <text x="336" y="202" class="tx-s" text-anchor="middle">(też stolica UK)</text>
+      <rect x="6" y="104" width="136" height="96" rx="12" class="f2 s2 sw"/>
+      <text x="74" y="132" class="tx-b" text-anchor="middle">Ireland</text>
+      <text x="74" y="156" class="tx-s" text-anchor="middle">Dublin · € euro</text>
+      <text x="74" y="182" class="tx-s t2" text-anchor="middle">osobne państwo!</text>
+    </svg>`,
+    text: `<p><b>Zjednoczone Królestwo</b> (<i>the United Kingdom, the UK</i>) tworzą: <b>Anglia</b> (London), <b>Szkocja</b> (Edinburgh), <b>Walia</b> (Cardiff) i <b>Irlandia Północna</b> (Belfast). Anglia, Szkocja i Walia leżą na wyspie <b>Great Britain</b>. Waluta UK to <b>funt</b> (£).</p>
+      <p><b>Irlandia</b> (<i>Ireland</i>) to osobne państwo ze stolicą w <b>Dublinie</b> i walutą <b>euro</b> – do UK należy tylko jej północna część.</p>`,
+    remember: 'England – London · Scotland – Edinburgh · Wales – Cardiff · Northern Ireland – Belfast. Ireland ≠ UK.',
+    hook: 'Rysunek to tylko schemat z kafelków, nie mapa – ale układ pomaga: Szkocja „na górze”, Walia „z boku” Anglii, Irlandia Północna „za morzem”.',
+    check: { q: 'What is the capital of Northern Ireland?', options: ['Dublin', 'Belfast', 'Cardiff'], answer: 1, explain: 'Belfast. Dublin to stolica Irlandii (osobnego państwa), a Cardiff – Walii.' },
+  },
+  {
+    title: 'Kalendarz świąt',
+    svg: `<svg viewBox="0 0 420 222" role="img" aria-label="Oś czasu świąt: 25 stycznia Burns Night, 17 marca St Patrick's Day, 4 lipca Independence Day, 31 października Halloween, 5 listopada Bonfire Night, czwarty czwartek listopada Thanksgiving">
+      <line x1="130" y1="14" x2="130" y2="212" class="ln-thin"/>
+      <circle cx="130" cy="30" r="6" class="f3 s3 sw"/><text x="118" y="35" class="tx-s" text-anchor="end">25 stycznia</text><text x="144" y="36" class="tx-b">Burns Night</text><text x="412" y="35" class="tx-s" text-anchor="end">Szkocja</text>
+      <circle cx="130" cy="64" r="6" class="f3 s3 sw"/><text x="118" y="69" class="tx-s" text-anchor="end">17 marca</text><text x="144" y="70" class="tx-b">St Patrick's Day</text><text x="412" y="69" class="tx-s" text-anchor="end">Irlandia</text>
+      <circle cx="130" cy="98" r="6" class="f1 s1 sw"/><text x="118" y="103" class="tx-s" text-anchor="end">4 lipca</text><text x="144" y="104" class="tx-b">Independence Day</text><text x="412" y="103" class="tx-s" text-anchor="end">USA</text>
+      <circle cx="130" cy="132" r="6" class="f2 s2 sw"/><text x="118" y="137" class="tx-s" text-anchor="end">31 października</text><text x="144" y="138" class="tx-b">Halloween 🎃</text>
+      <circle cx="130" cy="166" r="6" class="f2 s2 sw"/><text x="118" y="171" class="tx-s" text-anchor="end">5 listopada</text><text x="144" y="172" class="tx-b">Bonfire Night 🎆</text><text x="412" y="171" class="tx-s" text-anchor="end">UK</text>
+      <circle cx="130" cy="200" r="6" class="f1 s1 sw"/><text x="118" y="205" class="tx-s" text-anchor="end">4. czwartek XI</text><text x="144" y="206" class="tx-b">Thanksgiving</text><text x="412" y="205" class="tx-s" text-anchor="end">USA</text>
+    </svg>`,
+    text: `<ul><li><b>Burns Night</b> – urodziny szkockiego poety Roberta Burnsa; tradycyjna kolacja z <i>haggis</i>.</li>
+      <li><b>St Patrick's Day</b> – dzień patrona Irlandii; jego symbol to koniczyna (<i>shamrock</i>).</li>
+      <li><b>Independence Day</b> – rocznica Deklaracji Niepodległości USA (1776); parady i fajerwerki.</li>
+      <li><b>Halloween</b> – wieczór przed Wszystkimi Świętymi; dzieci mówią <i>„Trick or treat!”</i>.</li>
+      <li><b>Bonfire Night</b> – pamiątka spisku prochowego z 1605 r. (plan wysadzenia Parlamentu); ogniska i fajerwerki.</li>
+      <li><b>Thanksgiving</b> – Święto Dziękczynienia w USA (w Kanadzie: drugi poniedziałek października).</li></ul>`,
+    remember: 'Pisz nazwy świąt i miesięcy wielką literą: <i>Halloween, Thanksgiving, on 5th November</i>.',
+    hook: 'Jesień w UK „wybucha”: 31.10 dynie 🎃, a kilka dni później – 5.11 fajerwerki 🎆 (Bonfire Night).',
+    check: { q: 'When is Bonfire Night?', options: ['5th November', '17th March', '4th July'], answer: 0, explain: 'Bonfire Night (Guy Fawkes Night) – 5 listopada.' },
+  },
+  {
+    title: 'Brytyjski czy amerykański?',
+    svg: `<svg viewBox="0 0 420 236" role="img" aria-label="Pary słów brytyjskich i amerykańskich: flat apartment, lift elevator, holiday vacation, autumn fall, biscuit cookie, chips French fries, underground subway">
+      <rect x="6" y="6" width="190" height="224" rx="12" class="f1 s1"/>
+      <rect x="224" y="6" width="190" height="224" rx="12" class="f2 s2"/>
+      <text x="101" y="30" class="tx-b t1" text-anchor="middle">British</text>
+      <text x="319" y="30" class="tx-b t2" text-anchor="middle">American</text>
+      <text x="101" y="60" class="tx" text-anchor="middle">flat</text><text x="210" y="60" class="tx-s" text-anchor="middle">⟷</text><text x="319" y="60" class="tx" text-anchor="middle">apartment</text>
+      <text x="101" y="86" class="tx" text-anchor="middle">lift</text><text x="210" y="86" class="tx-s" text-anchor="middle">⟷</text><text x="319" y="86" class="tx" text-anchor="middle">elevator</text>
+      <text x="101" y="112" class="tx" text-anchor="middle">holiday</text><text x="210" y="112" class="tx-s" text-anchor="middle">⟷</text><text x="319" y="112" class="tx" text-anchor="middle">vacation</text>
+      <text x="101" y="138" class="tx" text-anchor="middle">autumn</text><text x="210" y="138" class="tx-s" text-anchor="middle">⟷</text><text x="319" y="138" class="tx" text-anchor="middle">fall</text>
+      <text x="101" y="164" class="tx" text-anchor="middle">biscuit</text><text x="210" y="164" class="tx-s" text-anchor="middle">⟷</text><text x="319" y="164" class="tx" text-anchor="middle">cookie</text>
+      <text x="101" y="190" class="tx" text-anchor="middle">chips 🍟</text><text x="210" y="190" class="tx-s" text-anchor="middle">⟷</text><text x="319" y="190" class="tx" text-anchor="middle">French fries 🍟</text>
+      <text x="101" y="214" class="tx" text-anchor="middle">underground</text><text x="210" y="214" class="tx-s" text-anchor="middle">⟷</text><text x="319" y="214" class="tx" text-anchor="middle">subway</text>
+    </svg>`,
+    text: `<p>Brytyjczycy i Amerykanie świetnie się rozumieją, ale na niektóre codzienne rzeczy mają <b>inne słowa</b>. W tekstach i nagraniach możesz spotkać oba warianty.</p>
+      <p>Uwaga na <b>chips</b>: w Wielkiej Brytanii to frytki (<i>fish and chips</i>), a chipsy to <i>crisps</i>. W USA chipsy to <i>chips</i>, a frytki – <i>French fries</i>. Do tego: <i>rubbish – garbage/trash</i> (śmieci), <i>queue – line</i> (kolejka).</p>`,
+    remember: 'flat/apartment · lift/elevator · holiday/vacation · autumn/fall · biscuit/cookie · underground/subway.',
+    hook: 'Skojarzenie: jesienią liście <b>spadają</b> 🍂 – a „spadać” to po angielsku <i>fall</i>. Tak łatwo zapamiętasz amerykańską jesień.',
+    check: { q: 'An American says „apartment”. A British person says…', options: ['flat', 'lift', 'queue'], answer: 0, explain: 'apartment (AmE) = flat (BrE) – mieszkanie.' },
+  },
+  {
+    title: 'Symbole i znane miejsca',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Kafelki symboli: Big Ben – dzwon w Londynie, Statua Wolności w Nowym Jorku, liść klonu na fladze Kanady, koniczyna – Irlandia, kangur i emu w herbie Australii, Sydney Opera House">
+      <rect x="4" y="4" width="204" height="66" rx="12" class="f1 s1"/>
+      <rect x="212" y="4" width="204" height="66" rx="12" class="f2 s2"/>
+      <rect x="4" y="77" width="204" height="66" rx="12" class="f3 s3"/>
+      <rect x="212" y="77" width="204" height="66" rx="12" class="f3 s3"/>
+      <rect x="4" y="150" width="204" height="66" rx="12" class="f4 s4"/>
+      <rect x="212" y="150" width="204" height="66" rx="12" class="f4 s4"/>
+      <text x="24" y="46" font-size="24" text-anchor="middle">🔔</text><text x="44" y="32" class="tx-b">Big Ben</text><text x="44" y="56" class="tx-s">dzwon w Parlamencie</text>
+      <text x="232" y="46" font-size="24" text-anchor="middle">🗽</text><text x="252" y="32" class="tx">Statue of Liberty</text><text x="252" y="56" class="tx-s">New York · dar Francji</text>
+      <text x="24" y="119" font-size="24" text-anchor="middle">🍁</text><text x="44" y="105" class="tx-b">maple leaf</text><text x="44" y="129" class="tx-s">flaga Kanady</text>
+      <text x="232" y="119" font-size="24" text-anchor="middle">☘️</text><text x="252" y="105" class="tx-b">shamrock</text><text x="252" y="129" class="tx-s">Irlandia, św. Patryk</text>
+      <text x="24" y="192" font-size="24" text-anchor="middle">🦘</text><text x="44" y="178" class="tx-b">kangaroo, emu</text><text x="44" y="202" class="tx-s">herb Australii</text>
+      <text x="232" y="192" font-size="24" text-anchor="middle">🎭</text><text x="252" y="178" class="tx">Sydney Opera</text><text x="252" y="202" class="tx-s">House · Australia</text>
+    </svg>`,
+    text: `<p><b>Big Ben</b> to tak naprawdę nazwa wielkiego dzwonu w wieży zegarowej Parlamentu w Londynie (wieża to <i>Elizabeth Tower</i>). <b>Statua Wolności</b> stoi w Nowym Jorku – to dar Francji z 1886 r.</p>
+      <p>Czerwony <b>liść klonu</b> jest na fladze Kanady, <b>koniczyna</b> to symbol Irlandii, a <b>kangur i emu</b> trzymają tarczę w herbie Australii. Mieszkańców Nowej Zelandii nazywa się potocznie <i>Kiwis</i> – od ptaka kiwi.</p>`,
+    remember: 'Big Ben – dzwon (London) · Statue of Liberty – New York · maple leaf – Canada · shamrock – Ireland · kangaroo – Australia · kiwi – New Zealand.',
+    check: { q: 'Which animal can you see on the Australian coat of arms?', options: ['a kangaroo', 'a kiwi', 'a bear'], answer: 0, explain: 'Kangur i emu podtrzymują tarczę w herbie Australii. Kiwi to symbol Nowej Zelandii.' },
+  },
+  {
+    title: 'A teraz opowiedz o Polsce',
+    svg: `<svg viewBox="0 0 420 222" role="img" aria-label="Pocztówka o Polsce po angielsku i porównanie: Independence Day w USA 4 lipca, w Polsce 11 listopada">
+      <rect x="6" y="6" width="408" height="128" rx="14" class="f3 s3 sw"/>
+      <text x="22" y="34" class="tx-b t3">✉️ About Poland</text>
+      <text x="22" y="62" class="tx">The capital is <tspan class="tx-b">Warsaw</tspan>.</text>
+      <text x="22" y="88" class="tx">We use the <tspan class="tx-b">złoty</tspan>.</text>
+      <text x="22" y="114" class="tx">The longest river is <tspan class="tx-b">the Vistula</tspan>.</text>
+      <rect x="6" y="144" width="200" height="72" rx="12" class="f1 s1"/>
+      <rect x="214" y="144" width="200" height="72" rx="12" class="f2 s2"/>
+      <text x="106" y="170" class="tx-b" text-anchor="middle">USA</text>
+      <text x="106" y="198" class="tx" text-anchor="middle">4th July</text>
+      <text x="314" y="170" class="tx-b" text-anchor="middle">Poland</text>
+      <text x="314" y="198" class="tx" text-anchor="middle">11th November</text>
+    </svg>`,
+    text: `<p>W e-mailu do kolegi z zagranicy możesz chcieć opisać swój kraj. Proste zdania wystarczą: <i>The capital of Poland is Warsaw. We use the złoty. The longest river is the Vistula. Our National Independence Day is on 11th November. Constitution Day is on 3rd May.</i></p>
+      <p>Wymaganie IX.2 to <b>porównywanie kultur</b>: Amerykanie świętują niepodległość 4 lipca, my – 11 listopada (1918). Halloween to wieczór przed Wszystkimi Świętymi – a w Polsce 1 listopada odwiedzamy groby bliskich.</p>`,
+    remember: 'Warsaw · the złoty · the Vistula · Independence Day – 11th November · Constitution Day – 3rd May.',
+    hook: 'Ułóż o Polsce 5 zdań po angielsku i powiedz je na głos – tak jakbyś oprowadzał kolegę z Londynu. 🗺️',
+    check: { q: 'Which sentence is true?', options: ['The capital of Poland is Kraków.', 'We use the złoty in Poland.', 'Poland is part of the UK.'], answer: 1, explain: 'Waluta Polski to złoty; stolica – Warszawa.' },
+  },
+];
