@@ -1430,3 +1430,123 @@ window.LESSONS['angielski/email'] = [
     check: { q: 'Last weekend I ___ to the mountains.', options: ['go', 'have gone', 'went', 'am going'], answer: 2, explain: '„Last weekend” → Past Simple.' },
   },
 ];
+
+window.LESSONS['angielski/rzeczowniki-przedimki'] = [
+  {
+    title: 'Policzysz czy nie policzysz?',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Rzeczowniki policzalne: a book, two books; niepoliczalne: water, money, advice z miarami a bottle of water">
+      <rect x="6" y="6" width="198" height="150" rx="12" class="f3 s3 sw"/>
+      <rect x="216" y="6" width="198" height="150" rx="12" class="f1 s1 sw"/>
+      <text x="105" y="34" class="tx-b" text-anchor="middle">policzalne</text>
+      <text x="315" y="34" class="tx-b" text-anchor="middle">niepoliczalne</text>
+      <text x="105" y="66" class="tx" text-anchor="middle">📘 a book</text>
+      <text x="105" y="94" class="tx" text-anchor="middle">📘📘 two books</text>
+      <text x="105" y="122" class="tx" text-anchor="middle">🍎 an apple</text>
+      <text x="105" y="146" class="tx-s" text-anchor="middle">many, a few</text>
+      <text x="315" y="66" class="tx" text-anchor="middle">💧 water, money</text>
+      <text x="315" y="94" class="tx" text-anchor="middle">advice, information</text>
+      <text x="315" y="122" class="tx" text-anchor="middle">bread, furniture</text>
+      <text x="315" y="146" class="tx-s" text-anchor="middle">much, a little, some</text>
+      <text x="210" y="186" class="tx" text-anchor="middle">a bottle of water · a piece of advice</text>
+    </svg>`,
+    text: `<p>Rzeczowniki <b>policzalne</b> mają liczbę pojedynczą i mnogą: <i>a book – two books</i>. <b>Niepoliczalne</b> to substancje i pojęcia: <i>water, money, information, advice, furniture, homework</i> – nie stawiamy przed nimi <i>a/an</i> i nie dodajemy <i>-s</i>.</p>
+      <p>Chcesz policzyć coś niepoliczalnego? Użyj miary: <i>a bottle of water, a piece of advice, a loaf of bread</i>.</p>`,
+    remember: 'Niepoliczalne: bez a/an, bez -s, z much / a little / some. Pułapki: advice, information, furniture, homework.',
+    hook: 'Po polsku „rady”, „informacje”, „meble” liczysz – po angielsku <b>nie</b>: some advice, some information, some furniture.',
+    check: { q: 'Can you give me some ___ ? I don\'t know what to do.', options: ['advices', 'an advice', 'advice', 'a advice'], answer: 2, explain: '„Advice” jest niepoliczalne.' },
+  },
+  {
+    title: 'Liczba mnoga – reguły i wyjątki',
+    svg: `<svg viewBox="0 0 420 232" role="img" aria-label="Reguły liczby mnogiej: -s, -es, -ies, -ves i formy nieregularne">
+      <rect x="6" y="6" width="200" height="50" rx="10" class="f1 s1"/><text x="18" y="36" class="tx">book → book<tspan class="tx-b t1">s</tspan></text>
+      <rect x="214" y="6" width="200" height="50" rx="10" class="f3 s3"/><text x="226" y="36" class="tx">box → box<tspan class="tx-b t3">es</tspan></text>
+      <rect x="6" y="64" width="200" height="50" rx="10" class="f4 s4"/><text x="18" y="94" class="tx">city → cit<tspan class="tx-b t4">ies</tspan></text>
+      <rect x="214" y="64" width="200" height="50" rx="10" class="f5 s5"/><text x="226" y="94" class="tx">knife → kni<tspan class="tx-b t5">ves</tspan></text>
+      <rect x="6" y="122" width="408" height="104" rx="10" class="f2 s2"/>
+      <text x="210" y="148" class="tx-b" text-anchor="middle">nieregularne – naucz się na pamięć</text>
+      <text x="210" y="176" class="tx" text-anchor="middle">man → men · woman → women · child → children</text>
+      <text x="210" y="202" class="tx" text-anchor="middle">person → people · foot → feet · tooth → teeth</text>
+      <text x="210" y="220" class="tx-s" text-anchor="middle">mouse → mice · sheep → sheep · fish → fish</text>
+    </svg>`,
+    text: `<p>Zwykle dodajesz <b>-s</b>. Po <i>-s, -x, -ch, -sh</i> dodajesz <b>-es</b> (łatwiej wymówić: <i>buses, watches</i>). Spółgłoska + y → <b>-ies</b> (<i>city – cities</i>), ale samogłoska + y zostaje: <i>boy – boys</i>. Wiele wyrazów na -f/-fe ma <b>-ves</b>.</p>
+      <p>Najczęstsze formy nieregularne pojawiają się w tekstach egzaminacyjnych bardzo często – zwłaszcza <i>children, people, women, men</i>.</p>`,
+    remember: 'child – children, person – people, man – men, woman – women, foot – feet, tooth – teeth, mouse – mice.',
+    hook: 'Woman → wom<b>e</b>n: zmienia się tylko jedna litera, ale wymowa pierwszej sylaby też: [wɪmɪn].',
+    check: { q: 'Liczba mnoga od „tooth” to…', options: ['tooths', 'teeths', 'teeth', 'toothes'], answer: 2, explain: 'tooth – teeth (jak foot – feet).' },
+  },
+  {
+    title: 'Czyje to? \'s, s\' i of',
+    svg: `<svg viewBox="0 0 420 196" role="img" aria-label="Forma dzierżawcza: Tom's bike, my parents' car, children's toys, the end of the film">
+      <text x="10" y="34" class="tx-b">Tom<tspan class="t2">'s</tspan> bike</text><text x="410" y="34" class="tx-s" text-anchor="end">jedna osoba → 's</text>
+      <text x="10" y="80" class="tx-b">my parent<tspan class="t2">s'</tspan> car</text><text x="410" y="80" class="tx-s" text-anchor="end">l. mnoga na -s → s'</text>
+      <text x="10" y="126" class="tx-b">children<tspan class="t2">'s</tspan> toys</text><text x="410" y="126" class="tx-s" text-anchor="end">l. mnoga bez -s → 's</text>
+      <text x="10" y="172" class="tx-b">the end <tspan class="t2">of</tspan> the film</text><text x="410" y="172" class="tx-s" text-anchor="end">rzeczy, części → of</text>
+    </svg>`,
+    text: `<p>Gdy coś należy do osoby lub zwierzęcia, dodajesz <b>'s</b>: <i>my sister's room</i>. Gdy właścicieli jest wielu i wyraz kończy się na -s, wystarczy apostrof: <i>my parents' car</i>. Nieregularna liczba mnoga dostaje 's: <i>children's toys</i>.</p>
+      <p>Przy rzeczach i częściach czegoś zwykle używamy <b>of</b>: <i>the colour of her eyes, the end of the film</i>.</p>`,
+    remember: 'sister\'s (jednej siostry) · parents\' (rodziców) · children\'s (dzieci) · the end of the film.',
+  },
+  {
+    title: 'a / an, the czy nic?',
+    svg: `<svg viewBox="0 0 420 236" role="img" aria-label="Schemat: a lub an przy pierwszej wzmiance, the przy rzeczy znanej lub jedynej, brak przedimka przy posiłkach, sportach, krajach">
+      <rect x="6" y="6" width="130" height="150" rx="12" class="f1 s1 sw"/>
+      <rect x="145" y="6" width="130" height="150" rx="12" class="f3 s3 sw"/>
+      <rect x="284" y="6" width="130" height="150" rx="12" class="f4 s4 sw"/>
+      <text x="71" y="36" class="tx-b" text-anchor="middle">a / an</text>
+      <text x="210" y="36" class="tx-b" text-anchor="middle">the</text>
+      <text x="349" y="36" class="tx-b" text-anchor="middle">—</text>
+      <text x="71" y="64" class="tx-s" text-anchor="middle">pierwszy raz</text><text x="71" y="86" class="tx-s" text-anchor="middle">jeden z wielu</text><text x="71" y="108" class="tx-s" text-anchor="middle">zawód</text><text x="71" y="136" class="tx" text-anchor="middle">a dog</text>
+      <text x="210" y="64" class="tx-s" text-anchor="middle">już wiadomo który</text><text x="210" y="86" class="tx-s" text-anchor="middle">jedyny: the sun</text><text x="210" y="108" class="tx-s" text-anchor="middle">the best, the first</text><text x="210" y="136" class="tx" text-anchor="middle">the dog</text>
+      <text x="349" y="64" class="tx-s" text-anchor="middle">posiłki, sporty</text><text x="349" y="86" class="tx-s" text-anchor="middle">języki, kraje</text><text x="349" y="108" class="tx-s" text-anchor="middle">ogólnie: I like cats</text><text x="349" y="136" class="tx" text-anchor="middle">have dinner</text>
+      <text x="210" y="190" class="tx" text-anchor="middle">I saw <tspan class="tx-b t1">a</tspan> dog. <tspan class="tx-b t3">The</tspan> dog was very big.</text>
+      <text x="210" y="222" class="tx-s" text-anchor="middle">a university [ju:] · an hour (h nieme) – liczy się wymowa</text>
+    </svg>`,
+    text: `<p><b>a/an</b> – gdy mówisz o czymś pierwszy raz albo o jednym z wielu („jakiś pies”), a także przed zawodem: <i>She is a nurse.</i> <b>the</b> – gdy wiadomo, o który chodzi: wspomniany wcześniej, jedyny (<i>the sun</i>), w stopniu najwyższym (<i>the best</i>).</p>
+      <p><b>Bez przedimka</b>: posiłki (<i>have breakfast</i>), sporty (<i>play football</i>), języki, większość krajów i miast (<i>Poland, London</i>, ale <i>the USA, the UK</i>).</p>`,
+    remember: 'a/an – jakiś; the – ten konkretny; nic – posiłki, sporty, języki, większość krajów. an przed samogłoską w wymowie.',
+    hook: '<b>a</b> = „jakiś”, <b>the</b> = „ten” – jeśli po polsku pasuje „ten, o którym mówimy”, wybierz the.',
+    check: { q: 'I live in ___ Poland, but my cousin lives in ___ USA.', options: ['the / —', '— / the', 'the / the', '— / —'], answer: 1, explain: 'Poland bez przedimka, ale the USA.' },
+  },
+  {
+    title: 'Liczebniki i daty',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Tabela liczebników porządkowych: first, second, third, fourth, fifth, ninth, twelfth, twentieth, twenty-fourth">
+      <rect x="6" y="6" width="408" height="150" rx="12" class="f1 s1"/>
+      <text x="20" y="36" class="tx">1 → <tspan class="tx-b">first</tspan></text><text x="150" y="36" class="tx">2 → <tspan class="tx-b">second</tspan></text><text x="290" y="36" class="tx">3 → <tspan class="tx-b">third</tspan></text>
+      <text x="20" y="72" class="tx">4 → fourth</text><text x="150" y="72" class="tx">5 → <tspan class="tx-b t2">fifth</tspan></text><text x="290" y="72" class="tx">9 → <tspan class="tx-b t2">ninth</tspan></text>
+      <text x="20" y="108" class="tx">12 → <tspan class="tx-b t2">twelfth</tspan></text><text x="200" y="108" class="tx">20 → twentieth</text>
+      <text x="20" y="142" class="tx">24 → twenty-fourth</text><text x="240" y="142" class="tx">40 → <tspan class="tx-b t2">forty</tspan></text>
+      <text x="210" y="186" class="tx" text-anchor="middle">on 5th May → „on the fifth of May”</text>
+      <text x="210" y="210" class="tx-s" text-anchor="middle">in 2027 · at 7 o'clock · a hundred · a thousand</text>
+    </svg>`,
+    text: `<p>Liczebniki porządkowe tworzysz zwykle przez <b>-th</b> (<i>fourth, sixth, twentieth</i>). Wyjątki to <b>first, second, third</b> oraz zmiany pisowni: <b>fifth, ninth, twelfth</b>. W liczbach złożonych zmienia się tylko ostatnia część: <i>twenty-first, twenty-fourth</i>.</p>
+      <p>Daty: piszesz <i>5th May</i>, mówisz <i>the fifth of May</i>. Uwaga na <i>forty</i> – bez „u” (choć <i>four</i> i <i>fourteen</i> mają „u”).</p>`,
+    remember: 'first, second, third, fifth, ninth, twelfth – wyjątki. forty – bez „u”.',
+    hook: 'fi<b>ve</b> → fi<b>f</b>th, twel<b>ve</b> → twel<b>f</b>th: „ve” zamienia się w „f”. A nine traci „e”: ninth.',
+    check: { q: 'My birthday is on the ___ of June. (24 czerwca)', options: ['twenty-four', 'twenty-fourth', 'twentieth-four', 'twenty-fourteenth'], answer: 1, explain: 'Zmienia się tylko ostatnia część: twenty-fourth.' },
+  },
+  {
+    title: 'Me, him, them · this, those · one, ones',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Zaimki osobowe: I me, he him, she her, we us, they them; this these blisko, that those daleko; one ones">
+      <rect x="6" y="6" width="190" height="208" rx="12" class="f3 s3"/>
+      <text x="101" y="32" class="tx-b" text-anchor="middle">kto? → kogo?</text>
+      <text x="101" y="62" class="tx" text-anchor="middle">I → me</text>
+      <text x="101" y="90" class="tx" text-anchor="middle">he → him</text>
+      <text x="101" y="118" class="tx" text-anchor="middle">she → her</text>
+      <text x="101" y="146" class="tx" text-anchor="middle">we → us</text>
+      <text x="101" y="174" class="tx" text-anchor="middle">they → them</text>
+      <text x="101" y="202" class="tx-s" text-anchor="middle">Help me! with him</text>
+      <rect x="206" y="6" width="208" height="120" rx="12" class="f4 s4"/>
+      <text x="310" y="32" class="tx-b" text-anchor="middle">blisko · daleko</text>
+      <text x="310" y="62" class="tx" text-anchor="middle">this · that</text>
+      <text x="310" y="90" class="tx" text-anchor="middle">these · those</text>
+      <text x="310" y="114" class="tx-s" text-anchor="middle">1. wiersz: lp. · 2. wiersz: lm.</text>
+      <rect x="206" y="134" width="208" height="80" rx="12" class="f1 s1"/>
+      <text x="310" y="162" class="tx" text-anchor="middle">the green <tspan class="tx-b">one</tspan></text>
+      <text x="310" y="194" class="tx" text-anchor="middle">bigger <tspan class="tx-b">ones</tspan></text>
+    </svg>`,
+    text: `<p>Po czasowniku i po przyimku używasz formy <b>dopełnienia</b>: <i>Help <b>me</b>! I play with <b>him</b>. I visit <b>them</b>.</i> Błąd typu <s>with he</s> to klasyczna pułapka.</p>
+      <p><b>this/these</b> – blisko, <b>that/those</b> – daleko. A żeby nie powtarzać rzeczownika, mówisz <b>one</b> (jedna rzecz) albo <b>ones</b> (kilka): <i>I'll take the blue one. Have you got bigger ones?</i></p>`,
+    remember: 'I–me, he–him, she–her, we–us, they–them. this/these – blisko, that/those – daleko. one (lp.), ones (lm.).',
+    check: { q: 'Mark is my best friend. I play tennis with ___ every week.', options: ['he', 'his', 'him', 'her'], answer: 2, explain: 'Po przyimku „with” – forma dopełnienia: him.' },
+  },
+];

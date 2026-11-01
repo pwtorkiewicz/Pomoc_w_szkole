@@ -430,6 +430,114 @@ window.SUBJECTS.push({
       ],
     },
     {
+      id: 'rzeczowniki-przedimki',
+      name: 'Rzeczowniki, przedimki, liczebniki',
+      basis: 'Informator CKE (język angielski, od r. szk. 2024/2025), lista struktur gramatycznych: rzeczownik 1–4 (policzalne i niepoliczalne, liczba mnoga regularna i nieregularna, forma dzierżawcza, rzeczowniki złożone), przedimek 1–3 (a/an, the, przedimek zerowy), liczebnik 1–2 (główne i porządkowe), zaimek 1, 4, 9 (osobowe w formie podmiotu i dopełnienia, wskazujące, one/ones).',
+      theory: `
+        <h3>Policzalne i niepoliczalne</h3>
+        <ul>
+          <li><b>Policzalne</b> – da się je policzyć: <i>a book – two books, an apple – three apples</i>.</li>
+          <li><b>Niepoliczalne</b> – bez <i>a/an</i> i bez liczby mnogiej: <i>water, money, information, advice, rice, bread, furniture, homework</i>. Mówimy <i>some information</i>, <i>a piece of advice</i>, <i>a bottle of water</i>, <i>much money</i>.</li>
+        </ul>
+        <h3>Liczba mnoga</h3>
+        <table>
+          <tr><th>Reguła</th><th>Przykład</th></tr>
+          <tr><td>zwykle + <b>-s</b></td><td>book – books, boy – boys</td></tr>
+          <tr><td>po -s, -x, -ch, -sh (i w potato, tomato) + <b>-es</b></td><td>bus – buses, box – boxes, watch – watches, dish – dishes</td></tr>
+          <tr><td>spółgłoska + y → <b>-ies</b></td><td>city – cities, baby – babies</td></tr>
+          <tr><td>-f / -fe → <b>-ves</b> (w wielu wyrazach)</td><td>leaf – leaves, knife – knives, wife – wives</td></tr>
+          <tr><td><b>nieregularne</b></td><td>man – men, woman – women, child – children, person – people, foot – feet, tooth – teeth, mouse – mice, sheep – sheep, fish – fish</td></tr>
+        </table>
+        <h3>Czyje? – forma dzierżawcza</h3>
+        <ul>
+          <li><b>'s</b> – osoby i zwierzęta: <i>my sister's room, Tom's bike</i>.</li>
+          <li><b>s'</b> – liczba mnoga zakończona na -s: <i>my parents' car</i> (samochód rodziców). Nieregularna liczba mnoga + 's: <i>children's toys</i>.</li>
+          <li><b>of</b> – zwykle rzeczy i części czegoś: <i>the colour of her eyes, the end of the film</i>.</li>
+        </ul>
+        <p><b>Rzeczowniki złożone</b>: <i>washing machine, toothpaste, bus stop, sister-in-law</i> (szwagierka/bratowa).</p>
+        <h3>Przedimki: a/an, the, brak przedimka</h3>
+        <table>
+          <tr><th>Przedimek</th><th>Kiedy?</th><th>Przykład</th></tr>
+          <tr><td><b>a / an</b></td><td>jedna rzecz policzalna, wspomniana pierwszy raz; zawód. <b>a</b> przed spółgłoską w wymowie, <b>an</b> przed samogłoską w wymowie</td><td>I saw a dog. She is a teacher. a cup, a university, an animal, an hour</td></tr>
+          <tr><td><b>the</b></td><td>rzecz już znana lub wspomniana wcześniej; jedyna w swoim rodzaju; stopień najwyższy; liczebniki porządkowe; niektóre nazwy (the USA, the UK, rzeki, morza, oceany)</td><td>The dog was big. the sun, the best, the first, the Vistula</td></tr>
+          <tr><td><b>—</b> (brak)</td><td>posiłki, sporty, języki, większość krajów i miast, ogólne stwierdzenia o rzeczownikach w liczbie mnogiej lub niepoliczalnych, wyrażenia typu go home, go to school, by bus</td><td>have dinner, play football, speak English, Poland, I like cats.</td></tr>
+        </table>
+        <div class="tip">💡 Liczy się <b>wymowa</b>, nie litera: <i>a university</i> [ju:], <i>an hour</i> (h nieme).</div>
+        <h3>Liczebniki</h3>
+        <ul>
+          <li>Główne: <i>one, two, three… thirteen, fourteen… twenty, twenty-one… forty (bez „u”!), a hundred, a thousand</i>.</li>
+          <li>Porządkowe: <i>first, second, third, fourth, fifth, eighth, ninth, twelfth, twentieth, twenty-first, twenty-fourth</i> – zwykle z <i>the</i>.</li>
+          <li>Daty: piszemy <i>5th May</i> albo <i>May 5th</i>, mówimy <i>the fifth of May</i>; <i>on 5th May</i>, <i>in 2027</i>.</li>
+        </ul>
+        <h3>Zaimki</h3>
+        <ul>
+          <li>Osobowe – podmiot / dopełnienie: <i>I – me, you – you, he – him, she – her, it – it, we – us, they – them</i>. Po czasowniku i przyimku – forma dopełnienia: <i>Help me! I play with him.</i></li>
+          <li>Wskazujące: <i>this</i> (ten, blisko) – <i>these</i> (te, blisko); <i>that</i> (tamten, daleko) – <i>those</i> (tamte, daleko).</li>
+          <li><i>one / ones</i> – zamiast powtarzania rzeczownika: <i>I'll take the green one. These shoes are small – have you got bigger ones?</i></li>
+        </ul>
+      `,
+      flashcards: [
+        ['child', 'children (dzieci)'],
+        ['man / woman', 'men / women'],
+        ['person', 'people (ludzie)'],
+        ['foot / tooth', 'feet / teeth'],
+        ['mouse', 'mice (myszy)'],
+        ['knife / leaf', 'knives / leaves'],
+        ['city / boy', 'cities / boys'],
+        ['Niepoliczalne', 'water, money, information, advice, rice, bread, furniture, homework'],
+        ['a czy an?', 'Zależy od wymowy: a university, a cup · an hour, an animal'],
+        ['Kiedy the?', 'rzecz znana / wspomniana; jedyna (the sun); the best; the first; the USA'],
+        ['Bez przedimka', 'posiłki (have dinner), sporty (play football), języki, większość krajów'],
+        ['my sister\'s room', '\'s – czyjś (pokój siostry)'],
+        ['my parents\' car', 's\' – liczba mnoga na -s (samochód rodziców)'],
+        ['40, 9., 12.', 'forty · ninth · twelfth'],
+        ['24 maja (data)', '24th May – „the twenty-fourth of May”'],
+        ['I / he / she / we / they – dopełnienie', 'me / him / her / us / them'],
+        ['this / that – liczba mnoga', 'these / those'],
+        ['one / ones', 'I\'ll take the green one. Have you got bigger ones?'],
+      ],
+      questions: [
+        { id: 'xdhlu5', q: 'Liczba mnoga od „child” to…', options: ['childs', 'children', 'childrens', 'childes'], answer: 1 },
+        { id: 'isc35s', q: 'Liczba mnoga od „woman” to…', options: ['womans', 'womens', 'womanes', 'women'], answer: 3 },
+        { id: 'r8jpc3', q: 'Liczba mnoga od „tooth” to…', options: ['tooths', 'teeth', 'teeths', 'toothes'], answer: 1 },
+        { id: '0ty2ic', q: 'Liczba mnoga od „city” to…', options: ['cities', 'citys', 'cityes', 'citis'], answer: 0, explain: 'Spółgłoska + y → -ies (ale boy – boys).' },
+        { id: 'kf719t', q: 'Liczba mnoga od „knife” to…', options: ['knives', 'knifes', 'knifs', 'knive'], answer: 0 },
+        { id: 'izqmp2', q: 'Liczba mnoga od „box” to…', options: ['boxs', 'boxen', 'boxes', 'boxies'], answer: 2, explain: 'Po -x dodajemy -es.' },
+        { id: 'niem6h', q: 'Liczba mnoga od „mouse” to…', options: ['mice', 'mouses', 'mices', 'meese'], answer: 0 },
+        { id: '8pv5ha', q: 'Which noun is uncountable?', options: ['book', 'information', 'chair', 'apple'], answer: 1 },
+        { id: '011rwf', q: 'Can you give me some ___ ? I don\'t know what to do.', options: ['advices', 'advice', 'an advice', 'a advice'], answer: 1, explain: '„Advice” jest niepoliczalne: some advice, a piece of advice.' },
+        { id: '7yeska', q: 'We need ___ new furniture for the living room.', options: ['some', 'a', 'many', 'an'], answer: 0, explain: '„Furniture” jest niepoliczalne – bez a/an i bez many.' },
+        { id: '63jacx', q: 'This is my ___ room. She is 16.', options: ['sisters', 'sister', 'sister\'s', 'sisters\'s'], answer: 2, explain: 'Jedna siostra → \'s.' },
+        { id: 't0crb7', q: 'The car belongs to my mum and dad. It\'s my ___ car.', options: ['parent\'s', 'parents\'s', 'parents\'', 'parents'], answer: 2, explain: 'Liczba mnoga zakończona na -s → sam apostrof: parents\'.' },
+        { id: 'zy7z72', q: 'The ___ toys are all over the floor.', options: ['childrens\'', 'children', 'children\'s', 'childs\''], answer: 2, explain: 'Nieregularna liczba mnoga (children) + \'s.' },
+        { id: 'qlmg8v', q: 'Which phrase is correct?', options: ['the her eyes colour', 'her eyes\'s colour', 'the colour of her eyes', 'the colour her of eyes'], answer: 2 },
+        { id: 'dn6sy5', q: 'Where\'s the ___ ? I want to brush my teeth.', options: ['washing machine', 'bus stop', 'sister-in-law', 'toothpaste'], answer: 3 },
+        { id: 'faadmx', q: 'I saw ___ elephant at the zoo.', options: ['a', 'many', 'much', 'an'], answer: 3, explain: '„Elephant” zaczyna się samogłoską w wymowie → an.' },
+        { id: 'ebtn7n', q: 'My aunt is ___ nurse.', options: ['an', '— (bez przedimka)', 'some', 'a'], answer: 3, explain: 'Przed zawodem stawiamy a/an.' },
+        { id: 'eq0pj8', q: 'The journey takes ___ hour.', options: ['a', 'many', 'much', 'an'], answer: 3, explain: 'W „hour” h jest nieme – wymowa zaczyna się samogłoską.' },
+        { id: 'byr049', q: 'My brother studies at ___ university in Kraków.', options: ['a', 'an', 'many', 'much'], answer: 0, explain: '„University” wymawiamy [ju:…] – zaczyna się dźwiękiem spółgłoskowym, więc a.' },
+        { id: 'qkqf5l', q: '___ sun is very hot today.', options: ['The', 'A', 'An', '— (bez przedimka)'], answer: 0, explain: 'Słońce jest jedyne w swoim rodzaju → the.' },
+        { id: '9pe86e', q: 'We usually have ___ dinner at 6 p.m.', options: ['a', '— (bez przedimka)', 'an', 'the'], answer: 1, explain: 'Przed nazwami posiłków nie stawiamy przedimka.' },
+        { id: 'i4iwco', q: 'He plays ___ football every Saturday.', options: ['the', 'a', 'an', '— (bez przedimka)'], answer: 3, explain: 'Przed nazwami sportów nie stawiamy przedimka.' },
+        { id: '031g5a', q: 'I live in ___ Poland, but my cousin lives in ___ USA.', options: ['the / —', 'the / the', '— / the', '— / —'], answer: 2 },
+        { id: 'ck8b9s', q: 'This is ___ best pizza in town!', options: ['the', 'a', 'an', '— (bez przedimka)'], answer: 0, explain: 'Stopień najwyższy → the.' },
+        { id: 'oic5z7', q: 'I saw a cat in the garden. ___ cat was black.', options: ['The', 'A', 'An', '— (bez przedimka)'], answer: 0, explain: 'Kot był już wspomniany → the.' },
+        { id: 'jn9j7q', q: 'Jak zapisać słownie liczbę 40?', options: ['fourty', 'forty', 'fourteen', 'fortie'], answer: 1 },
+        { id: 'r2k2km', q: 'Liczebnik porządkowy od „nine” to…', options: ['nineth', 'nine', 'nineteenth', 'ninth'], answer: 3 },
+        { id: 'azco1x', q: 'Liczebnik porządkowy od „twelve” to…', options: ['twelfth', 'twelveth', 'twelvth', 'twelf'], answer: 0 },
+        { id: 'dwlw4v', q: 'My birthday is on the ___ of June. (24 czerwca)', options: ['twenty-four', 'twentieth-four', 'twenty-fourth', 'twenty-fourteenth'], answer: 2 },
+        { id: 'bq283q', q: 'Która liczba to „a thousand”?', options: ['100', '10 000', '1 000 000', '1000'], answer: 3 },
+        { id: 'hsc8ge', q: 'Can you help ___ ? I can\'t do it alone.', options: ['I', 'my', 'me', 'mine'], answer: 2, explain: 'Po czasowniku – forma dopełnienia: me.' },
+        { id: 'z9g4yc', q: 'I love my cousins. I often visit ___ .', options: ['they', 'them', 'their', 'theirs'], answer: 1 },
+        { id: 'pie9a1', q: 'Mark is my best friend. I play tennis with ___ every week.', options: ['him', 'he', 'his', 'her'], answer: 0, explain: 'Po przyimku „with” – forma dopełnienia: him.' },
+        { id: 'qqrlej', q: 'Look at ___ birds over there in the sky!', options: ['those', 'this', 'that', 'them'], answer: 0, explain: 'Liczba mnoga i daleko („over there”) → those.' },
+        { id: 'lvlbpn', q: 'I don\'t like the red T-shirt. I\'ll take the blue ___ .', options: ['ones', 'it', 'once', 'one'], answer: 3, explain: 'Jedna koszulka → one.' },
+        { id: '7wggnb', q: 'These jeans are too small. Have you got bigger ___ ?', options: ['one', 'it', 'once', 'ones'], answer: 3, explain: '„Jeans” są w liczbie mnogiej → ones.' },
+        { id: 'o8nish', q: 'Prawda czy fałsz?\nRzeczownik „money” jest w języku angielskim niepoliczalny.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Mówimy much money, some money – bez a/an i bez -s.' },
+        { id: '5jolua', q: 'Prawda czy fałsz?\nPrzed wyrazem „hour” używamy przedimka „a”.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'H jest nieme, więc wymowa zaczyna się samogłoską: an hour.' },
+      ],
+    },
+    {
       id: 'functions',
       name: 'Reakcje językowe',
       basis: 'Informator CKE (język angielski): część arkusza „Znajomość funkcji językowych” – reagowanie na wypowiedzi w typowych sytuacjach.',
