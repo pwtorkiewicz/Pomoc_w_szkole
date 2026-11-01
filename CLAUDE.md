@@ -15,6 +15,7 @@ index.html              – strona; kolejność <script> ma znaczenie (dane → 
 css/style.css           – wygląd; tokeny kolorów, tryb ciemny przez prefers-color-scheme
 js/app.js               – router (#/…), quiz, fiszki, lekcje, zapis postępu w localStorage
 js/dane/<przedmiot>.js  – działy: theory (HTML ściągi), flashcards, questions, basis
+js/dane/cwiczenia-*.js  – zestawy „tekst/nagranie + zadania” (window.EXERCISES): czytanie (polski), reading, listening, środki (angielski)
 js/dane/zrodla.js       – strona „Źródła”: podstawy prawne, dokumenty, ograniczenia
 js/lekcje/*.js          – lekcje „🎓 Lekcja” (window.LESSONS['<przedmiot>/<dział>'])
 js/lekcje/widgety.js    – interaktywne widżety: pitagoras, procent, kostka, kolo
@@ -43,6 +44,8 @@ Uruchomienie: otwórz `index.html` w przeglądarce. Publikacja: GitHub Pages z t
 
 - Każde pytanie ma **stałe pole `id`** (losowe, unikalne w całej aplikacji). Postęp i „Powtórka błędów” zapamiętują pytania po `id`, więc pytania można przestawiać i usuwać, ale **nigdy nie zmieniaj `id` istniejącego pytania** i nie używaj go ponownie. Nowe pytanie = nowe id z `node tools/nowe-id.js`.
 - Format pytania: `{ id, q, options, answer, explain }`; dla prawda/fałsz: `options: ['Prawda', 'Fałsz'], noShuffle: true`.
+- Pytanie z rysunkiem: pole `svg` (zasady jak w lekcjach; sprawdza `node tools/sprawdz-lekcje.js`).
+- Zestaw ćwiczeń (`window.EXERCISES`, format w README): zadania zamknięte (opcje nie są tasowane – rozkładaj poprawne odpowiedzi na różne litery), `type: 'input'` z listą `accept` (wszystkie poprawne warianty), `type: 'open'` z przykładową odpowiedzią i `scoring`. Id zestawu i zadań z tej samej puli co pytania. Fragmenty lektur tylko z domeny publicznej i w sprawdzonym brzmieniu (np. z arkusza CKE – podaj źródło w `source`); teksty nieliterackie piszemy sami. Zadania piszemy sami, nie kopiujemy zadań CKE.
 - Zadanie otwarte (pole `tasks` działu): `{ id, points, q, svg?, steps, answer, scoring }` – id z tej samej puli co pytania, `scoring` ma tyle linii, ile punktów. Wynik zadania sprawdź podstawieniem, a punktację opisz jako orientacyjną (nie są to oficjalne zasady CKE).
 - Lekcje pisz według `docs/LEKCJE.md`: 4–6 kroków, każdy z grafiką (SVG albo widżet), SVG tylko z klasami CSS (bez kolorów na sztywno – tryb ciemny), `viewBox` szerokości 300–440, `aria-label`, unikalne id markerów.
 - Bez zewnętrznych bibliotek i bez kroku budowania. Aplikacja ma działać po otwarciu pliku i na telefonie (szerokość ok. 400 px).
@@ -53,6 +56,7 @@ Uruchomienie: otwórz `index.html` w przeglądarce. Publikacja: GitHub Pages z t
 node tools/sprawdz-dane.js                  # pytania: unikalne id, poprawne indeksy odpowiedzi
 node tools/sprawdz-lekcje.js [przedmiot]     # lekcje: struktura, XML SVG, napisy poza kadrem/nachodzące, błędy JS
 node tools/zrzut.js <przedmiot/dział> <krok> <plik.png> [dark] [420]   # podgląd kroku lekcji
+node tools/przeglad.js                      # przejście wszystkich widoków i zestawów (jasny/ciemny, 420 px): błędy JS, poziome przewijanie
 ```
 
 Po zmianach w danych lub `app.js` przejdź aplikację w przeglądarce (Playwright jest zainstalowany): strona główna, dział (lekcja, ściąga, fiszki, quiz), test próbny, powtórka błędów, strona `#/zrodla` – bez błędów w konsoli, także w trybie ciemnym i na szerokości 420 px.

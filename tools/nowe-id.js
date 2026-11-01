@@ -1,8 +1,9 @@
-/* Generuje nowe, nieużywane id pytań: node tools/nowe-id.js [ile=1] */
-const path = require('path');
-global.window = { SUBJECTS: [] };
-for (const f of ['polski', 'matematyka', 'angielski']) require(path.join(__dirname, '..', 'js', 'dane', f + '.js'));
-const used = new Set(window.SUBJECTS.flatMap((s) => s.topics.flatMap((t) => [...t.questions, ...(t.tasks || [])].map((q) => q.id))));
+/* Generuje nowe, nieużywane id pytań, zadań i zestawów: node tools/nowe-id.js [ile=1] */
+const w = require('./dane')();
+const used = new Set([
+  ...w.SUBJECTS.flatMap((s) => s.topics.flatMap((t) => [...t.questions, ...(t.tasks || [])].map((q) => q.id))),
+  ...w.EXERCISES.flatMap((e) => [e.id, ...e.items.map((it) => it.id)]),
+]);
 const alpha = 'abcdefghijklmnopqrstuvwxyz0123456789';
 const count = +(process.argv[2] || 1);
 for (let k = 0; k < count; k++) {

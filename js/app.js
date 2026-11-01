@@ -18,7 +18,7 @@
   function save() {
     try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) { /* tryb prywatny itp. */ }
   }
-  const state = Object.assign({ best: {}, wrong: {}, exams: {}, lessons: {}, tasks: {} }, load());
+  const state = Object.assign({ best: {}, wrong: {}, exams: {}, lessons: {}, tasks: {}, sets: {} }, load());
 
   // Jednorazowa migracja: dawniej błędy zapisywano jako „przedmiot/dział/numer pytania”.
   // Numer zamieniamy na stałe id pytania (kolejność pytań w chwili migracji jest ta sama co wcześniej).
@@ -35,6 +35,17 @@
     try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) { /* brak dostępu */ }
   }
   const LESSONS = window.LESSONS || {};
+  const EXERCISES = window.EXERCISES || [];
+  // Tryby ćwiczeń „jak na egzaminie” – zestaw = tekst (albo nagranie) + zadania.
+  const MODES = {
+    czytanie: { icon: '📰', name: 'Czytanie ze zrozumieniem', about: 'Jak w części I arkusza: przeczytaj tekst i rozwiąż zadania. Do tekstu możesz wracać, ile chcesz. Zadania otwarte ocenisz sam według przykładowej odpowiedzi.' },
+    reading: { icon: '📖', name: 'Reading – teksty', about: 'Rozumienie tekstów pisanych, jak w arkuszu CKE: główna myśl, intencja autora, szczegóły, dobieranie. Polecenia są po polsku, teksty po angielsku.' },
+    listening: { icon: '🎧', name: 'Listening – nagrania', about: 'Rozumienie ze słuchu. Nagrania czyta głos syntezatora mowy w przeglądarce. Na egzaminie każde nagranie słyszysz dwa razy – tu też tak spróbuj. Transkrypcję zobaczysz po sprawdzeniu odpowiedzi.' },
+    srodki: { icon: '🧩', name: 'Środki językowe', about: 'Gramatyka i słownictwo w formacie CKE: luki w tekście, wybór formy, przekład fragmentów zdań, parafraza. W zadaniach otwartych liczy się pełna poprawność pisowni.' },
+  };
+  const setsOf = (s, mode) => EXERCISES.filter((e) => e.subject === s.id && (!mode || e.mode === mode));
+  const setKey = (e) => `${e.subject}/${e.mode}/${e.id}`;
+  const synth = window.speechSynthesis || null;
   const lessonOf = (s, t) => LESSONS[`${s.id}/${t.id}`];
 
   // ---------- Pomocnicze ----------
@@ -81,6 +92,7 @@
   // ---------- Router ----------
   function route() {
     keyHandler = null;
+    if (synth) synth.cancel();
     window.scrollTo(0, 0);
     const p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
     if (p[0] === 'powtorka') return review();
@@ -91,6 +103,10 @@
         if (p.length === 2) return subject(s);
         if (p[2] === 'egzamin') return exam(s);
         if (p[2] === 'zadania' && tasksOfSubject(s).length) return subjectTasks(s);
+        if (p[2] === 'cw' && MODES[p[3]] && setsOf(s, p[3]).length) {
+          const e = p[4] && setsOf(s, p[3]).find((x) => x.id === p[4]);
+          return e ? exerciseSet(s, e) : exerciseList(s, p[3]);
+        }
         if (p[2] === 't') {
           const t = s.topics.find((x) => x.id === p[3]);
           if (t) return topic(s, t, p[4] || (lessonOf(s, t) ? 'lekcja' : 'teoria'));
@@ -110,7 +126,7 @@
       <section class="hero">
         <h1>Cześć! 👋</h1>
         <p>Wybierz przedmiot. W każdym dziale znajdziesz <b>ściągę</b>, <b>fiszki</b> i <b>quiz</b>.
-        Pytania, na które odpowiesz źle, trafią do powtórki. W matematyce poćwiczysz też <b>zadania otwarte</b> z rozwiązaniem krok po kroku.</p>
+        Pytania, na które odpowiesz źle, trafią do powtórki. Są też ćwiczenia jak na egzaminie: <b>zadania otwarte</b>, <b>czytanie ze zrozumieniem</b>, a w angielskim <b>reading</b>, <b>listening</b> i <b>środki językowe</b>.</p>
       </section>
       <div class="grid">
         ${SUBJECTS.map((s) => `
@@ -131,7 +147,7 @@
     document.getElementById('reset').onclick = (e) => {
       e.preventDefault();
       if (confirm('Na pewno usunąć wszystkie wyniki i listę błędów?')) {
-        state.best = {}; state.wrong = {}; state.exams = {}; state.tasks = {};
+        state.best = {}; state.wrong = {}; state.exams = {}; state.tasks = {}; state.sets = {};
         save(); home();
       }
     };
@@ -150,8 +166,18 @@
         <a class="btn primary" href="#/s/${s.id}/egzamin">📝 Test próbny (${EXAM_SIZE} pytań)</a>
         ${last != null ? `<span class="muted">ostatni wynik: ${last}%</span>` : ''}
       </p>
-      ${allTasks.length ? `<p><a class="btn" href="#/s/${s.id}/zadania">✍️ Zadania otwarte (${allTasks.length})</a>
-        <span class="muted">${taskScore(allTasks)}</span></p>` : ''}
+      ${allTasks.length || setsOf(s).length ? `<h2 class="sec">Ćwiczenia jak na egzaminie</h2>
+      <div class="modes">
+        ${allTasks.length ? `<a class="mode" href="#/s/${s.id}/zadania"><span class="icon">✍️</span><b>Zadania otwarte</b>
+          <small class="muted">${allTasks.length} zadań · ${taskScore(allTasks)}</small></a>` : ''}
+        ${Object.keys(MODES).filter((m) => setsOf(s, m).length).map((m) => {
+          const list = setsOf(s, m);
+          const done = list.filter((e) => state.sets[setKey(e)] != null).length;
+          return `<a class="mode" href="#/s/${s.id}/cw/${m}"><span class="icon">${MODES[m].icon}</span><b>${MODES[m].name}</b>
+            <small class="muted">${list.length} zestawów${done ? ` · zrobione ${done}` : ''}</small></a>`;
+        }).join('')}
+      </div>
+      <h2 class="sec">Działy</h2>` : ''}
       <ul class="topics">
         ${s.topics.map((t) => {
           const b = state.best[topicKey(s, t)];
@@ -186,7 +212,7 @@
     const pane = document.getElementById('pane');
     if (tab === 'lekcja') return lessonView(pane, lesson, s, t, base);
     if (tab === 'fiszki') return flashcards(pane, t.flashcards);
-    if (tab === 'zadania') return openTasks(pane, tasks, { backHref: `#/s/${s.id}`, backLabel: `Wróć do: ${s.name}` });
+    if (tab === 'zadania') return openTasks(pane, tasks, { math: s.id === 'matematyka', backHref: `#/s/${s.id}`, backLabel: `Wróć do: ${s.name}` });
     if (tab === 'quiz') {
       return quiz(pane, shuffle(questionsOf(s, t)), {
         saveKey: topicKey(s, t),
@@ -214,7 +240,7 @@
     setTitle(`Zadania otwarte – ${s.name}`);
     app.innerHTML = `${crumbs([[s.name, `#/s/${s.id}`], ['Zadania otwarte']])}
       <h1>✍️ Zadania otwarte: ${esc(s.name)}</h1><div id="pane"></div>`;
-    openTasks(document.getElementById('pane'), shuffle(tasksOfSubject(s)), { showTopic: true, backHref: `#/s/${s.id}`, backLabel: `Wróć do: ${s.name}` });
+    openTasks(document.getElementById('pane'), shuffle(tasksOfSubject(s)), { showTopic: true, math: s.id === 'matematyka', backHref: `#/s/${s.id}`, backLabel: `Wróć do: ${s.name}` });
   }
 
   function openTasks(pane, list, opts) {
@@ -232,11 +258,11 @@
           ${opts.showTopic ? `<div class="qtopic">${esc(x.topicName)}</div>` : ''}
           <h2 class="question">${esc(x.q)}</h2>
           ${x.svg ? `<figure class="vis">${x.svg}</figure>` : ''}
-          <p class="muted">Rozwiąż na kartce – jak na egzaminie zapisz cały tok rozumowania. Potem porównaj z rozwiązaniem.${prev != null ? ` Ostatnio: ${prev}/${x.points} pkt.` : ''}</p>
+          <p class="muted">${opts.math ? 'Rozwiąż na kartce – jak na egzaminie zapisz cały tok rozumowania. Potem porównaj z rozwiązaniem.' : 'Napisz odpowiedź na kartce, potem porównaj ją z przykładową odpowiedzią i zasadami oceniania.'}${prev != null ? ` Ostatnio: ${prev}/${x.points} pkt.` : ''}</p>
           <ol class="steps"></ol>
           <div class="row" id="ctl">
             <button class="btn" id="hint">💡 Podpowiedź</button>
-            <button class="btn primary" id="all">Pokaż rozwiązanie</button>
+            <button class="btn primary" id="all">${opts.math ? 'Pokaż rozwiązanie' : 'Pokaż odpowiedź'}</button>
           </div>
           <div id="after"></div>
         </div>`;
@@ -248,9 +274,9 @@
       function reveal() {
         pane.querySelector('#ctl').remove();
         pane.querySelector('#after').innerHTML = `
-          <div class="feedback ok"><strong>Odpowiedź:</strong> ${esc(x.answer)}</div>
+          <div class="feedback ok"><strong>${opts.math ? 'Odpowiedź' : 'Przykładowa odpowiedź'}:</strong> ${esc(x.answer)}</div>
           <div class="scoring"><b>Jak ocenić rozwiązanie</b><ul>${x.scoring.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
-            <p class="muted">Punktacja orientacyjna, w stylu zasad oceniania CKE: liczy się poprawny tok rozumowania, nie tylko wynik.</p></div>
+            <p class="muted">${opts.math ? 'Punktacja orientacyjna, w stylu zasad oceniania CKE: liczy się poprawny tok rozumowania, nie tylko wynik.' : 'Punktacja orientacyjna, w stylu zasad oceniania CKE. Twoja odpowiedź może brzmieć inaczej – liczy się, czy zawiera te same elementy.'}</p></div>
           <p><b>Ile punktów przyznajesz sobie?</b></p>
           <div class="row" id="self">${Array.from({ length: x.points + 1 }, (_, n) => `<button class="btn" data-n="${n}">${n}</button>`).join('')}</div>`;
         pane.querySelectorAll('#self .btn').forEach((b) => (b.onclick = () => {
@@ -275,6 +301,180 @@
       pane.querySelector('#again').onclick = () => { i = 0; earned = 0; show(); };
     }
     show();
+  }
+
+  // ---------- Ćwiczenia jak na egzaminie: tekst/nagranie + zadania ----------
+  function exerciseList(s, mode) {
+    const m = MODES[mode];
+    setTitle(`${m.name} – ${s.name}`);
+    const list = setsOf(s, mode);
+    app.innerHTML = `${crumbs([[s.name, `#/s/${s.id}`], [m.name]])}
+      <h1>${m.icon} ${esc(m.name)}</h1>
+      <p class="basis">${esc(m.about)}</p>
+      ${mode === 'listening' && !synth ? '<p class="feedback bad">Ta przeglądarka nie ma syntezatora mowy. Zadania zrobisz, czytając transkrypcję.</p>' : ''}
+      <ul class="topics">
+        ${list.map((e) => {
+          const b = state.sets[setKey(e)];
+          return `<li><a href="#/s/${s.id}/cw/${mode}/${e.id}">
+            <span>${esc(e.title)}<br><small class="muted">${esc(e.kind || '')} · ${e.items.length} zadań</small></span>
+            <span class="badge ${badgeClass(b)}">${b == null ? 'nowy' : b + '%'}</span>
+          </a></li>`;
+        }).join('')}
+      </ul>`;
+  }
+
+  // Porównanie odpowiedzi wpisanej: bez wielkości liter, zbędnych spacji, końcowej kropki; apostrofy ujednolicone.
+  const normAnswer = (t) => String(t).toLowerCase().replace(/[’‘`´]/g, "'").replace(/\s+/g, ' ').trim().replace(/[.!?]+$/, '').trim();
+  // Poza środkami językowymi (tam CKE wymaga pełnej poprawności) brak polskich znaków nie odbiera punktu.
+  const PL = { ą: 'a', ć: 'c', ę: 'e', ł: 'l', ń: 'n', ó: 'o', ś: 's', ź: 'z', ż: 'z' };
+  const loose = (t) => normAnswer(t).replace(/[ąćęłńóśźż]/g, (c) => PL[c]);
+  const itemPoints = (it) => (it.type === 'open' ? it.points : 1);
+
+  function speakRecording(rec, rate, onEnd) {
+    if (!synth) return;
+    synth.cancel();
+    const voices = synth.getVoices().filter((v) => /^en([-_]|$)/i.test(v.lang));
+    const gb = voices.filter((v) => /GB/i.test(v.lang));
+    const pool = gb.length ? gb : voices;
+    const who = [...new Set(rec.lines.map((l) => l.who || ''))];
+    rec.lines.forEach((l, k) => {
+      const u = new SpeechSynthesisUtterance(l.text);
+      const n = who.indexOf(l.who || '');
+      u.lang = (pool[0] && pool[0].lang) || 'en-GB';
+      if (pool.length) u.voice = pool[n % pool.length];
+      // różne głosy rozmówców: inny głos (jeśli jest) albo inna wysokość
+      u.pitch = rec.voices && rec.voices[l.who] === 'm' ? 0.85 : rec.voices && rec.voices[l.who] === 'f' ? 1.2 : 1;
+      u.rate = rate;
+      if (k === rec.lines.length - 1) u.onend = onEnd;
+      synth.speak(u);
+    });
+  }
+
+  function exerciseSet(s, e) {
+    const m = MODES[e.mode];
+    const key = setKey(e);
+    setTitle(e.title);
+    const listening = e.mode === 'listening';
+    const transcript = listening ? e.audio.map((r, k) => `<h3>${esc(r.label || `Nagranie ${k + 1}`)}</h3>${r.lines.map((l) => `<p>${l.who ? `<b>${esc(l.who)}:</b> ` : ''}${esc(l.text)}</p>`).join('')}`).join('') : '';
+    app.innerHTML = `${crumbs([[s.name, `#/s/${s.id}`], [m.name, `#/s/${s.id}/cw/${e.mode}`], [e.title]])}
+      <h1>${m.icon} ${esc(e.title)}</h1>
+      ${e.kind ? `<div class="qtopic">${esc(e.kind)}</div>` : ''}
+      ${e.intro ? `<p>${esc(e.intro)}</p>` : ''}
+      ${listening ? `<div class="audio">
+          ${e.audio.map((r, k) => `<div class="row"><button class="btn primary play" data-k="${k}">▶ ${esc(r.label || `Nagranie ${k + 1}`)}</button><span class="muted" id="cnt${k}">jeszcze nie odsłuchane</span></div>`).join('')}
+          <div class="row"><button class="btn" id="stop">■ Zatrzymaj</button>
+            <label class="muted"><input type="checkbox" id="slow"> wolniej</label></div>
+          ${synth ? '' : '<p class="feedback bad">Ta przeglądarka nie ma syntezatora mowy. Otwórz transkrypcję poniżej.</p>'}
+          <details class="transcript" id="tr"><summary>Transkrypcja (zajrzyj po rozwiązaniu albo gdy nie słychać nagrania)</summary>${transcript}</details>
+        </div>` : `<article class="passage">${e.text}</article>`}
+      ${e.source ? `<p class="muted source">Źródło: ${esc(e.source)}</p>` : ''}
+      <div class="sheet">
+        ${e.items.map((it, n) => `
+          <div class="item" data-n="${n}">
+            <div class="qhead"><span><b>Zadanie ${n + 1}.</b></span><span>${itemPoints(it)} pkt</span></div>
+            <p class="question">${esc(it.q)}</p>
+            ${it.svg ? `<figure class="vis">${it.svg}</figure>` : ''}
+            ${it.type === 'input' ? `<input type="text" class="gap" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Odpowiedź do zadania ${n + 1}">`
+              : it.type === 'open' ? `<textarea class="gap" rows="3" placeholder="Twoja odpowiedź (możesz też pisać na kartce)" aria-label="Odpowiedź do zadania ${n + 1}"></textarea>`
+              : `<div class="options${it.options[0] === 'Prawda' ? ' tf' : ''}">${it.options.map((o, k) => `<button class="opt" data-k="${k}">${it.options[0] === 'Prawda' ? '' : `<span class="k">${LETTERS[k]}</span>`}<span>${esc(o)}</span></button>`).join('')}</div>`}
+            <div class="ifb"></div>
+          </div>`).join('')}
+      </div>
+      <button class="btn primary" id="check">Sprawdź odpowiedzi</button>
+      <div id="sum"></div>`;
+
+    if (listening) {
+      const counts = e.audio.map(() => 0);
+      app.querySelectorAll('.play').forEach((b) => (b.onclick = () => {
+        const k = +b.dataset.k;
+        if (!synth) { app.querySelector('#tr').open = true; return; }
+        const rate = app.querySelector('#slow').checked ? 0.8 : 0.95;
+        app.querySelectorAll('.play').forEach((x) => x.classList.remove('on'));
+        b.classList.add('on');
+        speakRecording(e.audio[k], rate, () => b.classList.remove('on'));
+        counts[k]++;
+        app.querySelector(`#cnt${k}`).textContent = counts[k] >= 2 ? `odsłuchane ${counts[k]}× – na egzaminie usłyszysz 2×` : `odsłuchane ${counts[k]}×`;
+      }));
+      app.querySelector('#stop').onclick = () => { if (synth) synth.cancel(); app.querySelectorAll('.play').forEach((x) => x.classList.remove('on')); };
+    }
+
+    const chosen = {};
+    app.querySelectorAll('.item').forEach((box) => {
+      const n = +box.dataset.n;
+      box.querySelectorAll('.opt').forEach((b) => (b.onclick = () => {
+        chosen[n] = +b.dataset.k;
+        box.querySelectorAll('.opt').forEach((x) => x.classList.toggle('sel', x === b));
+      }));
+    });
+
+    app.querySelector('#check').onclick = () => {
+      const empty = e.items.filter((it, n) => (it.type === 'input' ? !app.querySelector(`.item[data-n="${n}"] .gap`).value.trim() : it.type === 'open' ? false : chosen[n] == null)).length;
+      if (empty && !confirm(`Bez odpowiedzi: ${empty} ${empty === 1 ? 'zadanie' : 'zadania/zadań'}. Sprawdzić mimo to?`)) return;
+      if (synth) synth.cancel();
+      check();
+    };
+
+    function check() {
+      app.querySelector('#check').remove();
+      let auto = 0;
+      const self = {};
+      const max = e.items.reduce((sum, it) => sum + itemPoints(it), 0);
+      e.items.forEach((it, n) => {
+        const box = app.querySelector(`.item[data-n="${n}"]`);
+        const fb = box.querySelector('.ifb');
+        const expl = it.explain ? `<p>${esc(it.explain)}</p>` : '';
+        if (it.type === 'open') {
+          box.querySelector('.gap').readOnly = true;
+          fb.innerHTML = `<div class="feedback ok"><strong>Przykładowa odpowiedź:</strong> ${esc(it.answer)}</div>
+            <div class="scoring"><b>Jak ocenić</b><ul>${it.scoring.map((r) => `<li>${esc(r)}</li>`).join('')}</ul></div>
+            <p><b>Ile punktów przyznajesz sobie?</b></p>
+            <div class="row self">${Array.from({ length: it.points + 1 }, (_, k) => `<button class="btn" data-p="${k}">${k}</button>`).join('')}</div>`;
+          fb.querySelectorAll('.self .btn').forEach((b) => (b.onclick = () => {
+            self[n] = +b.dataset.p;
+            fb.querySelectorAll('.self .btn').forEach((x) => x.classList.toggle('primary', x === b));
+            summary();
+          }));
+          return;
+        }
+        let ok;
+        if (it.type === 'input') {
+          const inp = box.querySelector('.gap');
+          inp.readOnly = true;
+          const cmp = e.mode === 'srodki' ? normAnswer : loose;
+          ok = it.accept.some((a) => cmp(a) === cmp(inp.value));
+          inp.classList.add(ok ? 'right' : 'bad');
+          fb.innerHTML = `<div class="feedback ${ok ? 'ok' : 'bad'}"><strong>${ok ? praise() : 'Niestety nie.'}</strong>
+            <p>Poprawna odpowiedź: <b>${esc(it.accept[0])}</b></p>${expl}</div>`;
+        } else {
+          ok = chosen[n] === it.answer;
+          box.querySelectorAll('.opt').forEach((b) => {
+            b.disabled = true;
+            b.classList.remove('sel');
+            const k = +b.dataset.k;
+            if (k === it.answer) b.classList.add('correct');
+            else if (k === chosen[n]) b.classList.add('wrong');
+          });
+          fb.innerHTML = `<div class="feedback ${ok ? 'ok' : 'bad'}"><strong>${ok ? praise() : `Poprawna odpowiedź: ${it.options[0] === 'Prawda' ? '' : `${LETTERS[it.answer]}. `}${esc(it.options[it.answer])}`}</strong>${expl}</div>`;
+        }
+        if (ok) auto++;
+      });
+      if (listening) app.querySelector('#tr').open = true;
+      const openCount = e.items.filter((it) => it.type === 'open').length;
+      function summary() {
+        const scored = Object.keys(self).length;
+        const got = auto + Object.values(self).reduce((a, b) => a + b, 0);
+        const pct = Math.round((got / max) * 100);
+        const complete = scored === openCount;
+        if (complete) { state.sets[key] = Math.max(state.sets[key] || 0, pct); save(); }
+        app.querySelector('#sum').innerHTML = `<div class="result">
+          <p class="big">${got}/${max}</p>
+          <p>${complete ? `punktów (${pct}%)${openCount ? ' – razem z twoją samooceną zadań otwartych' : ''}` : `punktów na razie – oceń jeszcze ${openCount - scored} ${openCount - scored === 1 ? 'zadanie otwarte' : 'zadania otwarte'} (przyciski z liczbą punktów)`}</p>
+          <button class="btn" id="again">↺ Jeszcze raz</button>
+          <a class="btn primary" href="#/s/${s.id}/cw/${e.mode}">Inne zestawy</a></div>`;
+        app.querySelector('#again').onclick = () => { exerciseSet(s, e); window.scrollTo(0, 0); };
+      }
+      summary();
+    }
   }
 
   // ---------- Lekcja (tryb nauki) ----------
@@ -403,6 +603,7 @@
           ${bar(Math.round((i / qs.length) * 100), false)}
           ${opts.showTopic ? `<div class="qtopic">${esc(q.topicName)}</div>` : ''}
           <h2 class="question">${esc(q.q)}</h2>
+          ${q.svg ? `<figure class="vis">${q.svg}</figure>` : ''}
           <div class="options">
             ${order.map((k, n) => `<button class="opt" data-k="${k}"><span class="k">${LETTERS[n]}</span><span>${esc(q.options[k])}</span></button>`).join('')}
           </div>
@@ -466,7 +667,7 @@
           <a class="btn" href="${opts.backHref}">${esc(opts.backLabel)}</a>
         </div>
         ${mistakes.length ? `<div class="mistakes"><h2>Do zapamiętania</h2><ol>
-          ${mistakes.map((q) => `<li><b>${esc(q.q)}</b><br>✔ ${esc(q.options[q.answer])}${q.explain ? `<br><span class="muted">${esc(q.explain)}</span>` : ''}</li>`).join('')}
+          ${mistakes.map((q) => `<li><b>${esc(q.q)}</b>${q.svg ? `<figure class="vis small">${q.svg}</figure>` : '<br>'}✔ ${esc(q.options[q.answer])}${q.explain ? `<br><span class="muted">${esc(q.explain)}</span>` : ''}</li>`).join('')}
         </ol></div>` : ''}`;
       const fix = pane.querySelector('#fix');
       if (fix) fix.onclick = () => quiz(pane, shuffle(mistakes), { ...opts, saveKey: null, onFinish: null });

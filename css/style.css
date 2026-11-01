@@ -218,3 +218,35 @@ small.muted, .muted { color: var(--muted); font-size: .85rem; }
 .task .steps li { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px; margin: 6px 0; }
 .task .scoring { background: var(--surface); border: 1px dashed var(--border); border-radius: 12px; padding: 10px 14px; margin: 12px 0; }
 .task .scoring ul { margin: 6px 0; padding-left: 1.2em; }
+/* Ćwiczenia jak na egzaminie (czytanie, reading, listening, środki językowe) */
+.passage { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 20px 14px; margin-bottom: 6px; font-size: 1rem; line-height: 1.6; overflow-x: auto; }
+.passage h3 { margin: .8em 0 .3em; font-size: 1.1rem; }
+.passage .verse { white-space: pre-line; }
+.passage .stage { font-style: italic; color: var(--muted); }
+.passage .who { font-weight: 700; letter-spacing: .03em; }
+.passage .note { border-top: 1px solid var(--border); margin-top: 12px; padding-top: 6px; font-size: .85rem; color: var(--muted); }
+.passage .box { border: 2px solid var(--border); border-radius: 10px; padding: 8px 12px; margin: 10px 0; }
+.passage .gapno { font-weight: 700; color: var(--primary); }
+.source { margin: 0 0 14px; }
+.sheet .item { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 16px; margin: 12px 0; }
+.sheet .question { font-size: 1.05rem; font-weight: 600; margin: 6px 0 10px; }
+.opt.sel { border-color: var(--primary); background: var(--c1); }
+.gap { width: 100%; font: inherit; padding: 10px 12px; border-radius: 10px; border: 2px solid var(--border); background: var(--bg); color: var(--text); }
+.gap:focus { outline: none; border-color: var(--primary); }
+.gap.right { border-color: var(--ok); background: var(--ok-bg); }
+.gap.bad { border-color: var(--bad); background: var(--bad-bg); }
+.sheet .scoring { background: var(--bg); border: 1px dashed var(--border); border-radius: 12px; padding: 8px 14px; margin: 10px 0; }
+.sheet .scoring ul { margin: 6px 0; padding-left: 1.2em; }
+.audio { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 16px; margin-bottom: 8px; }
+.audio .play.on { outline: 3px solid var(--c4s); }
+.audio label { display: inline-flex; gap: 6px; align-items: center; }
+.transcript { margin-top: 8px; }
+.transcript summary { cursor: pointer; color: var(--muted); font-size: .9rem; }
+.transcript p { margin: .3em 0; }
+.vis.small svg { max-width: 260px; }
+.options.tf { grid-template-columns: 1fr 1fr; }
+h2.sec { font-size: 1.05rem; margin: 22px 0 8px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.modes { display: grid; grid-template-columns: repeat(auto-fill, minmax(175px, 1fr)); gap: 10px; }
+.mode { display: flex; flex-direction: column; gap: 2px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; text-decoration: none; color: var(--text); }
+.mode:hover { border-color: var(--primary); }
+.mode .icon { font-size: 1.5rem; }
