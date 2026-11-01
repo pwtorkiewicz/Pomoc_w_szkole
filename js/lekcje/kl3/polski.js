@@ -251,7 +251,7 @@ window.LESSONS['polski/ortografia'] = [
         <text x="200" y="181">🧠 h – zapamiętaj: herbata, hałas</text>
       </g>
     </svg>`,
-    text: `<p><b>Ż</b> piszesz, gdy wymienia się na <b>g, h, z, s, dz</b>: książka – księga, druh – drużyna, wozić – wożę, wysoki – wyższy, pieniądze – pieniężny.</p>
+    text: `<p><b>Ż</b> piszesz, gdy wymienia się na <b>g, h, z, s, dz</b>: książka – księga, druh – drużyna, mróz – zamrażarka, wysoki – wyższy, pieniądze – pieniężny.</p>
       <p><b>Ch</b> piszesz na końcu wyrazu (dach, brzuch; wyjątek: druh) i gdy wymienia się na <b>sz</b> (mucha – muszka).</p>
       <p>Wiele wyrazów z ż, h i ch trzeba zapamiętać: żaba, herbata, chleb.</p>`,
     remember: 'ż ↔ g, h, z, s, dz · ch ↔ sz · ch na końcu wyrazu.',

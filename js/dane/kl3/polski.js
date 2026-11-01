@@ -110,7 +110,7 @@ window.SUBJECTS.push({
           <tr><th>ż ↔</th><th>przykład</th></tr>
           <tr><td>g</td><td>książka – księga, dróżka – droga</td></tr>
           <tr><td>h</td><td>drużyna – druh</td></tr>
-          <tr><td>z</td><td>wożę – wozić</td></tr>
+          <tr><td>z</td><td>zamrażarka – mróz</td></tr>
           <tr><td>s</td><td>wyższy – wysoki</td></tr>
           <tr><td>dz</td><td>pieniężny – pieniądze</td></tr>
         </table>
@@ -131,7 +131,7 @@ window.SUBJECTS.push({
         ['Kiedy piszemy u?', 'Na początku wyrazu (ulica), na końcu (do domu) i w -uje (maluje)'],
         ['rz wymienne na r', 'morze – morski, góra – na górze'],
         ['rz po spółgłoskach', 'po b, p, d, t, g, k, ch, j, w: brzeg, drzewo, trzy, krzesło'],
-        ['ż wymienne', 'na g, h, z, s, dz: książka – księga, druh – drużyna, wozić – wożę, wysoki – wyższy'],
+        ['ż wymienne', 'na g, h, z, s, dz: książka – księga, druh – drużyna, mróz – zamrażarka, wysoki – wyższy'],
         ['ch na końcu wyrazu', 'dach, groch, brzuch (wyjątek: druh)'],
         ['ch wymienne na sz', 'mucha – muszka, ucho – uszy, groch – groszek'],
         ['Do zapamiętania', 'góra, żółw, zupa, rzeka, żaba, herbata, chleb'],
