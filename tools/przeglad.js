@@ -46,6 +46,8 @@ const dane = require('./dane');
         subjects: window.SUBJECTS.map((s) => ({ id: s.id, topics: s.topics.map((t) => t.id) })),
         sets: (window.EXERCISES || []).map((e) => ({ subject: e.subject, mode: e.mode, id: e.id })),
       }));
+      // przyciski 🔊 (ścieżki z czytaniem na głos): kliknij każdy widoczny – sprawdza, czy nie ma błędów JS
+      const clickSay = async () => { for (const b of await page.$$('.say')) if (await b.isVisible()) await b.click(); };
       const visit = async (hash, act) => {
         where.v = hash;
         await page.goto(url + hash);
@@ -59,11 +61,12 @@ const dane = require('./dane');
       await visit('#/zrodla');
       for (const s of data.subjects) {
         await visit(`#/s/${s.id}`);
-        await visit(`#/s/${s.id}/egzamin`, async () => { await page.click('.opt'); });
+        // w trybie młodszego ucznia (young) nie ma sprawdzianu z przedmiotu – adres prowadzi na stronę przedmiotu
+        await visit(`#/s/${s.id}/egzamin`, async () => { const o = await page.$('.opt'); if (o) await o.click(); });
         await visit(`#/s/${s.id}/zadania`, async () => { const b = await page.$('#all'); if (b) await b.click(); });
         for (const t of s.topics) {
-          for (const tab of ['lekcja', 'teoria', 'fiszki', 'zadania']) await visit(`#/s/${s.id}/t/${t}/${tab}`);
-          await visit(`#/s/${s.id}/t/${t}/quiz`, async () => { await page.click('.opt'); });
+          for (const tab of ['lekcja', 'teoria', 'fiszki', 'zadania']) await visit(`#/s/${s.id}/t/${t}/${tab}`, clickSay);
+          await visit(`#/s/${s.id}/t/${t}/quiz`, async () => { await clickSay(); await page.click('.opt'); await clickSay(); });
         }
         const modes = [...new Set(data.sets.filter((e) => e.subject === s.id).map((e) => e.mode))];
         for (const m of modes) await visit(`#/s/${s.id}/cw/${m}`);

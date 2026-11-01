@@ -3,6 +3,9 @@
  * Każda ścieżka ma własny zapis postępu w localStorage (storeKey), więc wyniki i powtórka błędów
  * dzieci z różnych klas na jednym urządzeniu się nie mieszają.
  * soon: true – na ekranie wyboru znaczek „w przygotowaniu”.
+ * young: true – tryb dla młodszego ucznia (większe litery, przycisk 🔊 „Posłuchaj” przy pytaniach i lekcjach,
+ *   quiz z 8 losowych pytań działu, gwiazdki zamiast procentów, bez sprawdzianu z całego przedmiotu).
+ * speak: true – same przyciski 🔊 (bez reszty trybu young).
  * UWAGA: nie zmieniaj storeKey istniejącej ścieżki – uczeń straciłby zapisany postęp. */
 window.TRACKS = [
   {
@@ -14,6 +17,8 @@ window.TRACKS = [
     storeKey: 'pomoc_kl3_v1',
     soon: true, // usuń, gdy w ścieżce pojawią się pierwsze materiały
     color: '#e0803a',
+    young: true,
+    intro: 'Wybierz, czego chcesz się dziś pouczyć. Zacznij od <b>lekcji</b>, potem zagraj w <b>quiz</b> i zbieraj gwiazdki <span class="stars"><b>★</b></span>. Przycisk 🔊 przeczyta ci pytanie.',
   },
   {
     id: 'kl4',

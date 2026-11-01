@@ -37,7 +37,14 @@ Pomijamy: XI–XII (język mniejszości, kaszubski), XIII etykę (zajęcia nieob
 
 ## Etapy
 
-- [ ] Etap 1: silnik – tryb dla młodszego ucznia (większa czcionka, 🔊 przy pytaniach, krótkie quizy, gwiazdki).
-- [ ] Etap 2: edukacja matematyczna i polonistyczna.
+- [x] Etap 1: silnik – tryb dla młodszego ucznia (`young: true` w `js/sciezki.js`, opis pól w README i `docs/SCIEZKI.md`):
+  - większe litery i przyciski (klasa `young` na `<body>`, `css/style.css`);
+  - przycisk 🔊 „Posłuchaj” przy pytaniu i wyjaśnieniu w quizie, przy kroku i pytaniu lekcji, przy ściądze, fiszce, zadaniu z zestawu i zadaniu otwartym; synteza mowy przeglądarki, głos polski, a fragmenty po angielsku – głos angielski (pola `say`, `optLang`, `sayOptions` w pytaniu, `cardLang` w dziale); proste działania czytane słowami (3 × 4 = 12 → „3 razy 4 równa się 12”), emoji pomijane;
+  - przełącznik „🔊 Czytanie na głos” na stronie głównej ścieżki (zapisywany w postępie): pytania, wyjaśnienia, kroki lekcji i fiszki czytają się same;
+  - quiz w dziale: 8 losowych pytań (przy „Jeszcze raz” – nowe losowanie), powtórka błędów też po 8;
+  - gwiazdki ★★★ zamiast procentów (7–8/8 = 3, 5–6/8 = 2, 2–4/8 = 1; liczone z zapisanego wyniku w %, więc format zapisu się nie zmienia), na stronie głównej i przedmiotu „★ N z M gwiazdek”;
+  - bez sprawdzianu z całego przedmiotu (adres `#/s/<przedmiot>/egzamin` prowadzi na stronę przedmiotu).
+  - Ścieżka zostaje oznaczona „w przygotowaniu” do etapu 2 (pierwsze treści). Silnik sprawdzono na danych próbnych (bez zapisywania ich w repozytorium).
+- [ ] Etap 2: edukacja matematyczna i polonistyczna; widżety (zegar, tabliczka mnożenia, monety i banknoty, kalendarz) i dyktando ze słuchu – razem z treściami, które z nich korzystają.
 - [ ] Etap 3: angielski i edukacja przyrodnicza.
 - [ ] Etap 4: edukacja społeczna, informatyczna; wiedza z edukacji technicznej, muzycznej, plastycznej i WF; strona „Źródła” (`js/dane/kl3/zrodla.js`).

@@ -20,6 +20,14 @@
     : { test: 'Sprawdzian z przedmiotu', practice: 'Ćwiczenia' };
   const EXAM_SIZE = 15;
   const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
+  // Tryb dla młodszego ucznia (ścieżka z young: true – klasa 3): większa czcionka, krótkie quizy
+  // (losowe pytania z działu), gwiazdki zamiast procentów, bez sprawdzianu z całego przedmiotu.
+  const YOUNG = !!TRACK.young;
+  if (YOUNG) document.body.classList.add('young');
+  const QUIZ_SIZE = YOUNG ? 8 : 0; // 0 – wszystkie pytania działu
+  const synth = window.speechSynthesis || null;
+  // Przyciski 🔊 „Posłuchaj” (synteza mowy przeglądarki) – w trybie młodszego ucznia albo gdy ścieżka ma speak: true.
+  const SPEAK = !!(synth && window.SpeechSynthesisUtterance && (YOUNG || TRACK.speak));
 
   // ---------- Zapis postępu (tylko w przeglądarce) ----------
   function load() {
@@ -55,7 +63,6 @@
   };
   const setsOf = (s, mode) => EXERCISES.filter((e) => e.subject === s.id && (!mode || e.mode === mode));
   const setKey = (e) => `${e.subject}/${e.mode}/${e.id}`;
-  const synth = window.speechSynthesis || null;
   const lessonOf = (s, t) => LESSONS[`${s.id}/${t.id}`];
 
   // ---------- Pomocnicze ----------
@@ -93,6 +100,102 @@
   const PRAISE = ['Świetnie! 🎉', 'Brawo! 👏', 'Dobrze! ✅', 'Super! ⭐', 'Tak trzymaj! 💪'];
   const praise = () => PRAISE[Math.floor(Math.random() * PRAISE.length)];
 
+  // ---------- Gwiazdki (tryb młodszego ucznia) ----------
+  // Zapis postępu się nie zmienia (najlepszy wynik w %), gwiazdki liczymy z wyniku: 7/8 = 3, 5/8 = 2, 2/8 = 1.
+  const starCount = (p) => (p == null ? 0 : p >= 85 ? 3 : p >= 60 ? 2 : p >= 25 ? 1 : 0);
+  const starsHtml = (n, max = 3) =>
+    `<span class="stars" role="img" aria-label="${n} z ${max} gwiazdek">${'<b>★</b>'.repeat(n)}${'<i>★</i>'.repeat(Math.max(0, max - n))}</span>`;
+  const scoreBadge = (p) => (p == null ? 'nowy' : YOUNG ? starsHtml(starCount(p)) : p + '%');
+  function progress(s) {
+    if (!YOUNG) return bar(subjectProgress(s));
+    const max = s.topics.length * 3;
+    const got = s.topics.reduce((n, t) => n + starCount(state.best[topicKey(s, t)]), 0);
+    return `${bar(max ? Math.round((got / max) * 100) : 0, false)}<small class="muted">★ ${got} z ${max} gwiazdek</small>`;
+  }
+
+  // ---------- Czytanie na głos (synteza mowy przeglądarki) ----------
+  // Tekst czytamy po polsku. Fragment w innym języku podajemy jako [tekst, 'en'] – wtedy czyta go głos angielski.
+  // Pytanie może mieć pole say (tekst albo lista fragmentów) – czytane zamiast q, np. gdy q ma symbole lub obrazki;
+  // optLang: 'en' – odpowiedzi czytane po angielsku; sayOptions – lista tekstów czytanych zamiast odpowiedzi.
+  const LANGS = { pl: 'pl-PL', en: 'en-GB' };
+  const EMOJI = /[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}\u{1F3FB}-\u{1F3FF}\u{FE0F}\u{200D}\u{20E3}]/gu;
+  const decoder = document.createElement('textarea');
+  function speechText(html) {
+    decoder.innerHTML = String(html)
+      .replace(/<svg[\s\S]*?<\/svg>/gi, ' ')
+      .replace(/<\/(p|li|h[1-6]|div|tr|td|th|dt|dd)>|<br\s*\/?>/gi, '. ')
+      .replace(/<[^>]+>/g, ' ');
+    return decoder.value
+      .replace(EMOJI, ' ')
+      .replace(/(\d)\s*[×·]\s*(?=\d)/g, '$1 razy ')
+      .replace(/(\d)\s*÷\s*(?=\d)/g, '$1 podzielić przez ')
+      .replace(/(\d)\s+:\s+(?=\d)/g, '$1 podzielić przez ')
+      .replace(/(\d)\s+[−–-]\s+(?=\d)/g, '$1 minus ')
+      .replace(/(\d)\s*\+\s*(?=\d)/g, '$1 plus ')
+      .replace(/=\s*\?/g, ' równa się? ')
+      .replace(/=\s*(□|_+|…|\.{3,})/g, ' równa się ile? ')
+      .replace(/([\d)])\s*=\s*/g, '$1 równa się ')
+      .replace(/\s+=\s+/g, ' to ')
+      .replace(/_{2,}|…|\.{3,}/g, ' … ')
+      .replace(/\s+([.!?,;:])/g, '$1')
+      .replace(/([.!?,;:])([.!?,;:])+/g, '$1')
+      .replace(/\s+/g, ' ')
+      .replace(/^[\s.,;:]+/, '')
+      .trim();
+  }
+  const voiceFor = (lang) => {
+    const vs = synth.getVoices();
+    const norm = (v) => v.lang.replace('_', '-').toLowerCase();
+    return vs.find((v) => norm(v) === lang.toLowerCase()) || vs.find((v) => norm(v).startsWith(lang.slice(0, 2).toLowerCase())) || null;
+  };
+  function stopSpeech() {
+    if (synth) synth.cancel();
+    document.querySelectorAll('.say.on').forEach((b) => b.classList.remove('on'));
+  }
+  // parts: tekst albo lista fragmentów (tekst | [tekst, 'en'])
+  function speak(parts, onEnd) {
+    stopSpeech();
+    const list = (Array.isArray(parts) ? parts : [parts])
+      .map((p) => (Array.isArray(p) ? { text: p[0], lang: p[1] } : { text: p }))
+      .map((p) => ({ text: speechText(p.text || ''), lang: LANGS[p.lang] || p.lang || LANGS.pl }))
+      .filter((p) => /[\p{L}\p{N}]/u.test(p.text)); // same znaki interpunkcyjne pomijamy
+    if (!list.length) { if (onEnd) onEnd(); return; }
+    list.forEach((p, k) => {
+      const u = new SpeechSynthesisUtterance(p.text);
+      u.lang = p.lang;
+      const v = voiceFor(p.lang);
+      if (v) u.voice = v;
+      u.rate = YOUNG ? 0.9 : 1;
+      if (k === list.length - 1 && onEnd) { u.onend = onEnd; u.onerror = onEnd; }
+      synth.speak(u);
+    });
+  }
+  const sayButton = (label = 'Posłuchaj') => (SPEAK ? `<button type="button" class="say" aria-label="${label}" title="${label}">🔊</button>` : '');
+  // Uruchom czytanie przy przycisku b (podświetlony, drugie kliknięcie zatrzymuje).
+  function playSay(b, parts) {
+    if (!SPEAK || !b) return;
+    if (b.classList.contains('on')) { stopSpeech(); return; }
+    speak(typeof parts === 'function' ? parts() : parts, () => b.classList.remove('on'));
+    if (synth.speaking || synth.pending) b.classList.add('on');
+  }
+  // Podłącz przycisk 🔊 w elemencie el; auto – przeczytaj od razu, jeśli włączono czytanie automatyczne.
+  function bindSay(el, parts, auto) {
+    const b = el && el.querySelector('.say');
+    if (!b) return;
+    b.onclick = (e) => { e.stopPropagation(); playSay(b, parts); };
+    if (auto && state.autoSpeak) playSay(b, parts);
+  }
+  // Pytanie z odpowiedziami do przeczytania (order – kolejność wyświetlonych odpowiedzi).
+  function questionSpeech(q, order) {
+    const parts = [].concat(q.say != null ? q.say : q.q);
+    (order || q.options.map((_, k) => k)).forEach((k, n) => {
+      const text = q.sayOptions ? q.sayOptions[k] : q.options[k];
+      if (!speechText(text)) return;
+      parts.push(q.options[0] === 'Prawda' ? '' : `${LETTERS[n]}.`, q.optLang ? [text, q.optLang] : text);
+    });
+    return parts;
+  }
+
   // Obsługa klawiatury: jedna aktywna funkcja naraz
   let keyHandler = null;
   document.addEventListener('keydown', (e) => {
@@ -102,7 +205,7 @@
   // ---------- Router ----------
   function route() {
     keyHandler = null;
-    if (synth) synth.cancel();
+    stopSpeech();
     window.scrollTo(0, 0);
     const p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
     if (p[0] === 'powtorka') return review();
@@ -111,7 +214,7 @@
       const s = findSubject(p[1]);
       if (s) {
         if (p.length === 2) return subject(s);
-        if (p[2] === 'egzamin') return exam(s);
+        if (p[2] === 'egzamin') return YOUNG ? subject(s) : exam(s);
         if (p[2] === 'zadania' && tasksOfSubject(s).length) return subjectTasks(s);
         if (p[2] === 'cw' && MODES[p[3]] && setsOf(s, p[3]).length) {
           const e = p[4] && setsOf(s, p[3]).find((x) => x.id === p[4]);
@@ -147,14 +250,16 @@
       <section class="hero">
         <h1>Cześć! 👋</h1>
         <p>${TRACK.intro || 'Wybierz przedmiot. W każdym dziale znajdziesz <b>ściągę</b>, <b>fiszki</b> i <b>quiz</b>. Pytania, na które odpowiesz źle, trafią do powtórki.'}</p>
+        ${SPEAK ? `<button class="btn" id="auto" aria-pressed="${state.autoSpeak ? 'true' : 'false'}">🔊 Czytanie na głos: <b>${state.autoSpeak ? 'włączone' : 'wyłączone'}</b></button>
+          <small class="muted">${state.autoSpeak ? 'Pytania i lekcje czytają się same.' : 'Włącz, a pytania i lekcje będą się czytać same. Przycisk 🔊 przy pytaniu działa zawsze.'}</small>` : ''}
       </section>
       <div class="grid">
         ${SUBJECTS.map((s) => `
           <a class="card" href="#/s/${s.id}" style="--accent:${s.color}">
             <span class="icon">${s.icon}</span>
             <h2>${esc(s.name)}</h2>
-            <p>${s.topics.length} działów · ${s.topics.reduce((n, t) => n + t.questions.length, 0)} pytań</p>
-            ${bar(subjectProgress(s))}
+            <p>${s.topics.length} działów${YOUNG ? '' : ` · ${s.topics.reduce((n, t) => n + t.questions.length, 0)} pytań`}</p>
+            ${progress(s)}
           </a>`).join('')}
       </div>
       <a class="card review ${wrongCount ? '' : 'disabled'}" href="#/powtorka">
@@ -165,6 +270,13 @@
         <a href="index.html">🔀 Zmień klasę</a> ·
         <a href="#/" id="reset">Wyzeruj postęp</a>
       </p>`;
+    const auto = document.getElementById('auto');
+    if (auto) auto.onclick = () => {
+      state.autoSpeak = !state.autoSpeak;
+      save();
+      home();
+      if (state.autoSpeak) speak('Czytanie na głos jest włączone.');
+    };
     document.getElementById('reset').onclick = (e) => {
       e.preventDefault();
       if (confirm(`Na pewno usunąć wszystkie wyniki i listę błędów w ścieżce „${TRACK.name}”?`)) {
@@ -181,12 +293,12 @@
     app.innerHTML = `
       ${crumbs([[s.name]])}
       <h1>${s.icon} ${esc(s.name)}</h1>
-      <div style="--accent:${s.color}">${bar(subjectProgress(s))}</div>
+      <div style="--accent:${s.color}">${progress(s)}</div>
       ${s.exam ? `<p class="basis">📅 <b>Egzamin:</b> ${s.exam} <a href="#/zrodla">Źródła</a></p>` : ''}
-      <p>
+      ${YOUNG ? '' : `<p>
         <a class="btn primary" href="#/s/${s.id}/egzamin">📝 ${WORDS.test} (${Math.min(EXAM_SIZE, s.topics.reduce((n, t) => n + t.questions.length, 0))} pytań)</a>
         ${last != null ? `<span class="muted">ostatni wynik: ${last}%</span>` : ''}
-      </p>
+      </p>`}
       ${allTasks.length || setsOf(s).length ? `<h2 class="sec">${WORDS.practice}</h2>
       <div class="modes">
         ${allTasks.length ? `<a class="mode" href="#/s/${s.id}/zadania"><span class="icon">✍️</span><b>Zadania otwarte</b>
@@ -204,7 +316,7 @@
           const b = state.best[topicKey(s, t)];
           return `<li><a href="#/s/${s.id}/t/${t.id}">
             <span>${state.lessons[topicKey(s, t)] ? '🎓 ' : ''}${esc(t.name)}</span>
-            <span class="badge ${badgeClass(b)}">${b == null ? 'nowy' : b + '%'}</span>
+            <span class="badge ${badgeClass(b)}">${scoreBadge(b)}</span>
           </a></li>`;
         }).join('')}
       </ul>`;
@@ -226,26 +338,31 @@
         ${lesson ? `<a href="${base}/lekcja" class="${tab === 'lekcja' ? 'on' : ''}">🎓 Lekcja</a>` : ''}
         <a href="${base}/teoria" class="${tab === 'teoria' ? 'on' : ''}">📖 Ściąga</a>
         ${hasCards ? `<a href="${base}/fiszki" class="${tab === 'fiszki' ? 'on' : ''}">🃏 Fiszki (${t.flashcards.length})</a>` : ''}
-        <a href="${base}/quiz" class="${tab === 'quiz' ? 'on' : ''}">✅ Quiz (${t.questions.length})</a>
+        <a href="${base}/quiz" class="${tab === 'quiz' ? 'on' : ''}">✅ Quiz (${QUIZ_SIZE ? Math.min(QUIZ_SIZE, t.questions.length) : t.questions.length})</a>
         ${tasks.length ? `<a href="${base}/zadania" class="${tab === 'zadania' ? 'on' : ''}">✍️ Zadania otwarte (${tasks.length})</a>` : ''}
       </nav>
       <div id="pane"></div>`;
     const pane = document.getElementById('pane');
     if (tab === 'lekcja') return lessonView(pane, lesson, s, t, base);
-    if (tab === 'fiszki') return flashcards(pane, t.flashcards);
+    if (tab === 'fiszki') return flashcards(pane, t.flashcards, t.cardLang);
     if (tab === 'zadania') return openTasks(pane, tasks, { math: s.id === 'matematyka', backHref: `#/s/${s.id}`, backLabel: `Wróć do: ${s.name}` });
     if (tab === 'quiz') {
-      return quiz(pane, shuffle(questionsOf(s, t)), {
+      // krótki quiz (tryb młodszego ucznia): za każdym razem inne losowe pytania z działu
+      const draw = () => { const all = shuffle(questionsOf(s, t)); return QUIZ_SIZE ? all.slice(0, QUIZ_SIZE) : all; };
+      return quiz(pane, draw(), {
+        draw,
         saveKey: topicKey(s, t),
         backHref: `#/s/${s.id}`,
         backLabel: `Wróć do: ${s.name}`,
       });
     }
     pane.innerHTML = `${t.basis ? `<p class="basis">📋 <b>Na jakiej podstawie:</b> ${esc(t.basis)} <a href="#/zrodla">Źródła</a></p>` : ''}
+      ${SPEAK ? `<p class="say-row">${sayButton('Posłuchaj ściągi')} <span class="muted">Posłuchaj ściągi</span></p>` : ''}
       <article class="theory">${t.theory}</article>
       <a class="btn primary" href="${base}/quiz">Sprawdź się w quizie →</a>
       ${hasCards ? `<a class="btn" href="${base}/fiszki">Powtórz z fiszkami</a>` : ''}
       ${tasks.length ? `<a class="btn" href="${base}/zadania">✍️ Zadania otwarte</a>` : ''}`;
+    bindSay(pane.querySelector('.say-row'), () => [t.name, t.theory]);
   }
 
   // ---------- Zadania otwarte (rozwiązanie krok po kroku + samoocena) ----------
@@ -277,7 +394,7 @@
           <div class="qhead"><span>Zadanie ${i + 1} z ${list.length}</span><span>${pts(x.points)}</span></div>
           ${bar(Math.round((i / list.length) * 100), false)}
           ${opts.showTopic ? `<div class="qtopic">${esc(x.topicName)}</div>` : ''}
-          <h2 class="question">${esc(x.q)}</h2>
+          <div class="qline"><h2 class="question">${esc(x.q)}</h2>${sayButton('Posłuchaj zadania')}</div>
           ${x.svg ? `<figure class="vis">${x.svg}</figure>` : ''}
           <p class="muted">${opts.math ? 'Rozwiąż na kartce – jak na egzaminie zapisz cały tok rozumowania. Potem porównaj z rozwiązaniem.' : 'Napisz odpowiedź na kartce, potem porównaj ją z przykładową odpowiedzią i zasadami oceniania.'}${prev != null ? ` Ostatnio: ${prev}/${x.points} pkt.` : ''}</p>
           <ol class="steps"></ol>
@@ -287,6 +404,7 @@
           </div>
           <div id="after"></div>
         </div>`;
+      bindSay(pane.querySelector('.qline'), [].concat(x.say != null ? x.say : x.q), true);
       const ol = pane.querySelector('.steps');
       const addStep = () => { if (shown < x.steps.length) ol.insertAdjacentHTML('beforeend', `<li>${esc(x.steps[shown++])}</li>`); };
       pane.querySelector('#hint').onclick = () => { addStep(); if (shown >= x.steps.length) reveal(); };
@@ -338,7 +456,7 @@
           const b = state.sets[setKey(e)];
           return `<li><a href="#/s/${s.id}/cw/${mode}/${e.id}">
             <span>${esc(e.title)}<br><small class="muted">${esc(e.kind || '')} · ${e.items.length} zadań</small></span>
-            <span class="badge ${badgeClass(b)}">${b == null ? 'nowy' : b + '%'}</span>
+            <span class="badge ${badgeClass(b)}">${scoreBadge(b)}</span>
           </a></li>`;
         }).join('')}
       </ul>`;
@@ -393,7 +511,7 @@
         ${e.items.map((it, n) => `
           <div class="item" data-n="${n}">
             <div class="qhead"><span><b>Zadanie ${n + 1}.</b></span><span>${itemPoints(it)} pkt</span></div>
-            <p class="question">${esc(it.q)}</p>
+            <div class="qline"><p class="question">${esc(it.q)}</p>${sayButton(`Posłuchaj zadania ${n + 1}`)}</div>
             ${it.svg ? `<figure class="vis">${it.svg}</figure>` : ''}
             ${it.type === 'input' ? `<input type="text" class="gap" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Odpowiedź do zadania ${n + 1}">`
               : it.type === 'open' ? `<textarea class="gap" rows="3" placeholder="Twoja odpowiedź (możesz też pisać na kartce)" aria-label="Odpowiedź do zadania ${n + 1}"></textarea>`
@@ -416,12 +534,14 @@
         counts[k]++;
         app.querySelector(`#cnt${k}`).textContent = counts[k] >= 2 ? `odsłuchane ${counts[k]}× – na egzaminie usłyszysz 2×` : `odsłuchane ${counts[k]}×`;
       }));
-      app.querySelector('#stop').onclick = () => { if (synth) synth.cancel(); app.querySelectorAll('.play').forEach((x) => x.classList.remove('on')); };
+      app.querySelector('#stop').onclick = () => { stopSpeech(); app.querySelectorAll('.play').forEach((x) => x.classList.remove('on')); };
     }
 
     const chosen = {};
     app.querySelectorAll('.item').forEach((box) => {
       const n = +box.dataset.n;
+      const it = e.items[n];
+      bindSay(box.querySelector('.qline'), () => (it.options ? questionSpeech(it) : [].concat(it.say != null ? it.say : it.q)));
       box.querySelectorAll('.opt').forEach((b) => (b.onclick = () => {
         chosen[n] = +b.dataset.k;
         box.querySelectorAll('.opt').forEach((x) => x.classList.toggle('sel', x === b));
@@ -431,7 +551,7 @@
     app.querySelector('#check').onclick = () => {
       const empty = e.items.filter((it, n) => (it.type === 'input' ? !app.querySelector(`.item[data-n="${n}"] .gap`).value.trim() : it.type === 'open' ? false : chosen[n] == null)).length;
       if (empty && !confirm(`Bez odpowiedzi: ${empty} ${empty === 1 ? 'zadanie' : 'zadania/zadań'}. Sprawdzić mimo to?`)) return;
-      if (synth) synth.cancel();
+      stopSpeech();
       check();
     };
 
@@ -488,6 +608,7 @@
         const complete = scored === openCount;
         if (complete) { state.sets[key] = Math.max(state.sets[key] || 0, pct); save(); }
         app.querySelector('#sum').innerHTML = `<div class="result">
+          ${YOUNG && complete ? `<p class="big">${starsHtml(starCount(pct))}</p>` : ''}
           <p class="big">${got}/${max}</p>
           <p>${complete ? `punktów (${pct}%)${openCount ? ' – razem z twoją samooceną zadań otwartych' : ''}` : `punktów na razie – oceń jeszcze ${openCount - scored} ${openCount - scored === 1 ? 'zadanie otwarte' : 'zadania otwarte'} (przyciski z liczbą punktów)`}</p>
           <button class="btn" id="again">↺ Jeszcze raz</button>
@@ -509,13 +630,13 @@
           <div class="dots" aria-hidden="true">${steps.map((_, k) => `<span class="${k < i ? 'done' : k === i ? 'on' : ''}"></span>`).join('')}</div>
           <div class="lesson-step">
             <div class="muted">Krok ${i + 1} z ${steps.length}</div>
-            <h2>${st.title}</h2>
+            <div class="qline step-head"><h2>${st.title}</h2>${sayButton('Posłuchaj tego kroku')}</div>
             ${st.svg ? `<figure class="vis">${st.svg}</figure>` : ''}
             ${st.widget ? `<figure class="vis widget" id="widget"></figure>` : ''}
             <div class="lesson-text">${st.text || ''}</div>
             ${st.remember ? `<div class="remember"><b>💡 Zapamiętaj</b><div>${st.remember}</div></div>` : ''}
             ${st.hook ? `<div class="hook"><b>🧠 Trik pamięciowy</b><div>${st.hook}</div></div>` : ''}
-            ${st.check ? `<div class="check"><b>🤔 Sprawdź się</b><p class="check-q">${esc(st.check.q)}</p>
+            ${st.check ? `<div class="check"><div class="qline"><b>🤔 Sprawdź się</b>${sayButton('Posłuchaj pytania')}</div><p class="check-q">${esc(st.check.q)}</p>
               <div class="options">${st.check.options.map((o, k) => `<button class="opt" data-k="${k}"><span>${esc(o)}</span></button>`).join('')}</div>
               <div class="check-fb"></div></div>` : ''}
           </div>
@@ -524,6 +645,9 @@
             <button class="btn primary" id="nxt">${last ? 'Zakończ lekcję ✓' : 'Dalej →'}</button>
           </div>
         </div>`;
+      bindSay(pane.querySelector('.step-head'), () => [st.title, st.text || '',
+        st.remember ? `Zapamiętaj: ${st.remember}` : '', st.hook ? `Trik: ${st.hook}` : ''], true);
+      bindSay(pane.querySelector('.check .qline'), () => questionSpeech(st.check));
       if (st.widget && window.WIDGETS && window.WIDGETS[st.widget.type]) {
         try { window.WIDGETS[st.widget.type](pane.querySelector('#widget'), st.widget); } catch (e) { console.error(e); }
       }
@@ -537,7 +661,8 @@
             if (+x.dataset.k === st.check.answer) x.classList.add('correct');
             else if (+x.dataset.k === k) x.classList.add('wrong');
           });
-          fb.innerHTML = `<div class="feedback ${ok ? 'ok' : 'bad'}"><strong>${ok ? praise() : 'Jeszcze nie. Spójrz na zieloną odpowiedź.'}</strong>${st.check.explain ? `<p>${esc(st.check.explain)}</p>` : ''}</div>`;
+          fb.innerHTML = `<div class="feedback ${ok ? 'ok' : 'bad'}"><div class="qline"><strong>${ok ? praise() : 'Jeszcze nie. Spójrz na zieloną odpowiedź.'}</strong>${sayButton('Posłuchaj wyjaśnienia')}</div>${st.check.explain ? `<p>${esc(st.check.explain)}</p>` : ''}</div>`;
+          bindSay(fb, () => [ok ? 'Dobrze!' : `Jeszcze nie. Dobra odpowiedź to: ${st.check.options[st.check.answer]}.`, st.check.explain || ''], true);
         }));
       }
       pane.querySelector('#prev').onclick = () => { if (i > 0) { i--; show(); window.scrollTo(0, 0); } };
@@ -606,7 +731,7 @@
       return;
     }
     pane.insertAdjacentHTML('beforebegin', `<p class="muted">Poprawna odpowiedź usuwa pytanie z listy.</p>`);
-    quiz(pane, shuffle(qs), { showTopic: true, backHref: '#/', backLabel: 'Wróć na start', againHref: '#/powtorka' });
+    quiz(pane, QUIZ_SIZE ? shuffle(qs).slice(0, QUIZ_SIZE) : shuffle(qs), { showTopic: true, backHref: '#/', backLabel: 'Wróć na start', againHref: '#/powtorka' });
   }
 
   // ---------- Quiz ----------
@@ -623,7 +748,7 @@
           <div class="qhead"><span>Pytanie ${i + 1} z ${qs.length}</span><span>Punkty: ${score}</span></div>
           ${bar(Math.round((i / qs.length) * 100), false)}
           ${opts.showTopic ? `<div class="qtopic">${esc(q.topicName)}</div>` : ''}
-          <h2 class="question">${esc(q.q)}</h2>
+          <div class="qline"><h2 class="question">${esc(q.q)}</h2>${sayButton('Posłuchaj pytania')}</div>
           ${q.svg ? `<figure class="vis">${q.svg}</figure>` : ''}
           <div class="options">
             ${order.map((k, n) => `<button class="opt" data-k="${k}"><span class="k">${LETTERS[n]}</span><span>${esc(q.options[k])}</span></button>`).join('')}
@@ -632,6 +757,7 @@
         </div>`;
       const buttons = [...pane.querySelectorAll('.opt')];
       buttons.forEach((b) => (b.onclick = () => answer(+b.dataset.k)));
+      bindSay(pane.querySelector('.qline'), () => questionSpeech(q, order), true);
       keyHandler = (e) => {
         const n = LETTERS.indexOf(e.key.toUpperCase());
         const d = parseInt(e.key, 10) - 1;
@@ -658,12 +784,15 @@
       }
       save();
       const last = i + 1 >= qs.length;
+      const wrongText = YOUNG ? 'Jeszcze nie. Dobra odpowiedź to:' : 'Niestety nie. Poprawna odpowiedź:';
       pane.querySelector('#fb').innerHTML = `
         <div class="feedback ${ok ? 'ok' : 'bad'}">
-          <strong>${ok ? praise() : `Niestety nie. Poprawna odpowiedź: ${esc(q.options[q.answer])}`}</strong>
+          <div class="qline"><strong>${ok ? praise() : `${wrongText} ${esc(q.options[q.answer])}`}</strong>${sayButton('Posłuchaj wyjaśnienia')}</div>
           ${q.explain ? `<p>${esc(q.explain)}</p>` : ''}
         </div>
         <button class="btn primary" id="next">${last ? 'Zobacz wynik' : 'Dalej →'}</button>`;
+      const right = q.sayOptions ? q.sayOptions[q.answer] : q.options[q.answer];
+      bindSay(pane.querySelector('#fb .feedback'), () => [ok ? 'Dobrze!' : wrongText, ...(ok ? [] : [q.optLang ? [right, q.optLang] : right]), q.explain || ''], true);
       const next = pane.querySelector('#next');
       next.onclick = () => { i++; last ? finish() : show(); };
       next.focus();
@@ -678,11 +807,14 @@
         save();
       }
       if (opts.onFinish) opts.onFinish(pct);
-      const msg = pct === 100 ? 'Perfekcyjnie! 🏆' : pct >= 80 ? 'Bardzo dobrze! 🎉' : pct >= 50 ? 'Nieźle, ale warto powtórzyć. 💪' : 'Przeczytaj ściągę i spróbuj jeszcze raz. 📖';
+      const stars = starCount(pct);
+      const msg = YOUNG
+        ? ['Zajrzyj do lekcji i spróbuj jeszcze raz. Dasz radę! 📖', 'Pierwsza gwiazdka! Spróbuj jeszcze raz po więcej. 💪', 'Bardzo dobrze! 🎉', 'Brawo! Wszystkie gwiazdki! 🏆'][stars]
+        : pct === 100 ? 'Perfekcyjnie! 🏆' : pct >= 80 ? 'Bardzo dobrze! 🎉' : pct >= 50 ? 'Nieźle, ale warto powtórzyć. 💪' : 'Przeczytaj ściągę i spróbuj jeszcze raz. 📖';
       pane.innerHTML = `
         <div class="result">
-          <p class="big">${pct}%</p>
-          <p>${score} z ${qs.length} poprawnych · ${msg}</p>
+          <p class="big">${YOUNG ? starsHtml(stars) : `${pct}%`}</p>
+          <p>${score} z ${qs.length} ${YOUNG ? 'dobrze' : 'poprawnych'} · ${msg}</p>
           ${mistakes.length ? '<button class="btn primary" id="fix">Popraw błędy</button>' : ''}
           <button class="btn" id="again">Jeszcze raz</button>
           <a class="btn" href="${opts.backHref}">${esc(opts.backLabel)}</a>
@@ -691,11 +823,11 @@
           ${mistakes.map((q) => `<li><b>${esc(q.q)}</b>${q.svg ? `<figure class="vis small">${q.svg}</figure>` : '<br>'}✔ ${esc(q.options[q.answer])}${q.explain ? `<br><span class="muted">${esc(q.explain)}</span>` : ''}</li>`).join('')}
         </ol></div>` : ''}`;
       const fix = pane.querySelector('#fix');
-      if (fix) fix.onclick = () => quiz(pane, shuffle(mistakes), { ...opts, saveKey: null, onFinish: null });
+      if (fix) fix.onclick = () => quiz(pane, shuffle(mistakes), { ...opts, saveKey: null, onFinish: null, draw: null });
       pane.querySelector('#again').onclick = () => {
         if (opts.againHref && location.hash !== opts.againHref) location.hash = opts.againHref;
         else if (opts.againHref) route();
-        else quiz(pane, shuffle(qs), opts);
+        else quiz(pane, opts.draw ? opts.draw() : shuffle(qs), opts);
       };
     }
 
@@ -703,7 +835,8 @@
   }
 
   // ---------- Fiszki ----------
-  function flashcards(pane, list) {
+  // lang – języki stron fiszki do czytania na głos, np. ['en', 'pl'] (domyślnie obie po polsku)
+  function flashcards(pane, list, lang) {
     let deck = list.slice();
     let i = 0;
     let flipped = false;
@@ -723,16 +856,23 @@
           <span class="muted">${i + 1} / ${deck.length}</span>
           <button class="btn primary" id="nxt">Następna →</button>
           <button class="btn" id="mix">🔀 Tasuj</button>
+          ${sayButton('Posłuchaj fiszki')}
         </div>`;
+      bindSay(pane.querySelector('.row'), sayCard, true);
       const card = pane.querySelector('.flash');
       card.onclick = flip;
       pane.querySelector('#prev').onclick = () => go(-1);
       pane.querySelector('#nxt').onclick = () => go(1);
       pane.querySelector('#mix').onclick = () => { deck = shuffle(deck); i = 0; flipped = false; show(); };
     }
+    function sayCard() {
+      const k = flipped ? 1 : 0;
+      return [lang && lang[k] ? [deck[i][k], lang[k]] : deck[i][k]];
+    }
     function flip() {
       flipped = !flipped;
       pane.querySelector('.flash').classList.toggle('flipped', flipped);
+      if (SPEAK && state.autoSpeak) { stopSpeech(); playSay(pane.querySelector('.row .say'), sayCard); }
     }
     function go(d) {
       i = (i + d + deck.length) % deck.length;

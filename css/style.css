@@ -257,3 +257,44 @@ h2.sec { font-size: 1.05rem; margin: 22px 0 8px; color: var(--muted); text-trans
 .tracks .card { border-top: 4px solid var(--accent, var(--primary)); }
 .tracks .card.last { border-color: var(--accent, var(--primary)); }
 .logo span { white-space: nowrap; }
+
+/* Czytanie na głos (przycisk 🔊) */
+.qline { display: flex; gap: 10px; align-items: flex-start; justify-content: space-between; }
+.qline > :first-child { flex: 1; min-width: 0; }
+.say {
+  flex: none; font: inherit; font-size: 1.25rem; line-height: 1; padding: 7px 10px; margin: 6px 0;
+  border-radius: 99px; border: 2px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer;
+}
+.say:hover { border-color: var(--primary); }
+.say.on { border-color: var(--c4s); background: var(--c4); }
+.feedback .qline .say, .check .qline .say { margin: 0; padding: 4px 8px; font-size: 1.05rem; }
+.say-row { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; }
+.say-row .say { margin: 0; }
+
+/* Gwiazdki zamiast procentów (tryb młodszego ucznia) */
+.stars { white-space: nowrap; letter-spacing: 1px; }
+.stars b { color: #e8a200; font-weight: inherit; }
+.stars i { color: var(--muted); opacity: .45; font-style: normal; }
+@media (prefers-color-scheme: dark) { .stars b { color: #ffcf66; } }
+.badge .stars { font-size: 1rem; }
+.result .big .stars { letter-spacing: 6px; }
+
+/* Tryb młodszego ucznia (klasa 3): większe litery i przyciski */
+body.young { font-size: 20px; }
+body.young h1 { font-size: 1.8rem; }
+body.young .question { font-size: 1.5rem; }
+body.young .opt { padding: 15px 18px; font-size: 1.15rem; min-height: 58px; align-items: center; }
+body.young .btn { padding: 13px 20px; }
+body.young .lesson-text { font-size: 1.15rem; }
+body.young .flash .face { font-size: 1.7rem; }
+body.young .flash .back { font-size: 1.45rem; }
+body.young .card .icon { font-size: 2.6rem; }
+body.young .tabs a { padding: 10px 16px; font-size: 1rem; }
+body.young .topics li a { padding: 16px 18px; }
+body.young .say { font-size: 1.5rem; padding: 8px 12px; }
+body.young .hero .btn + small { display: block; }
+@media (max-width: 480px) {
+  body.young { font-size: 18px; }
+  body.young h1 { font-size: 1.55rem; }
+  body.young .question { font-size: 1.3rem; }
+}

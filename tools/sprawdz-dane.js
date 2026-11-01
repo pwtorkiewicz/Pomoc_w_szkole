@@ -14,6 +14,17 @@ let ne = 0;
 let ni = 0;
 const perTrack = [];
 const MODES = ['czytanie', 'reading', 'listening', 'srodki'];
+// Pola do czytania na głos (tryb młodszego ucznia): say – tekst albo lista fragmentów (tekst | [tekst, 'en']),
+// optLang – język odpowiedzi, sayOptions – teksty czytane zamiast odpowiedzi (tyle, ile odpowiedzi).
+const LANGS = ['pl', 'en'];
+const checkSpeech = (q, where) => {
+  if (q.say != null) {
+    const parts = [].concat(q.say);
+    if (!parts.length || parts.some((p) => !(typeof p === 'string' || (Array.isArray(p) && p.length === 2 && typeof p[0] === 'string' && LANGS.includes(p[1]))))) problems.push(`${where}: złe pole say`);
+  }
+  if (q.optLang != null && !LANGS.includes(q.optLang)) problems.push(`${where}: optLang musi być jednym z: ${LANGS.join(', ')}`);
+  if (q.sayOptions != null && !(Array.isArray(q.sayOptions) && q.sayOptions.length === q.options.length && q.sayOptions.every((x) => typeof x === 'string'))) problems.push(`${where}: sayOptions – po jednym tekście na każdą odpowiedź`);
+};
 const useId = (id, where) => {
   if (!id || !/^[a-z0-9]{4,}$/.test(id)) problems.push(`${where}: brak poprawnego id`);
   else if (ids.has(id)) problems.push(`${where}: id ${id} już użyte w ${ids.get(id)}`);
@@ -42,8 +53,10 @@ for (const track of wczytaj.sciezki()) {
         else {
           if (!(Number.isInteger(q.answer) && q.answer >= 0 && q.answer < q.options.length)) problems.push(`${where}: zły indeks odpowiedzi`);
           if (new Set(q.options).size !== q.options.length) problems.push(`${where}: powtórzone odpowiedzi`);
+          checkSpeech(q, where);
         }
       });
+      if (t.cardLang != null && !(Array.isArray(t.cardLang) && t.cardLang.length === 2 && t.cardLang.every((l) => LANGS.includes(l)))) problems.push(`${track.id}/${s.id}/${t.id}: cardLang musi być parą języków, np. ['en', 'pl']`);
       (t.tasks || []).forEach((x, i) => {
         nt++;
         const where = `${track.id}/${s.id}/${t.id} zadanie otwarte ${i + 1} („${String(x.q).slice(0, 40)}”)`;
@@ -83,6 +96,7 @@ for (const e of window.EXERCISES) {
     else {
       if (!(Number.isInteger(it.answer) && it.answer >= 0 && it.answer < it.options.length)) problems.push(`${w}: zły indeks odpowiedzi`);
       if (new Set(it.options).size !== it.options.length) problems.push(`${w}: powtórzone odpowiedzi`);
+      checkSpeech(it, w);
     }
   });
   // zbyt przewidywalne odpowiedzi: w zestawie z min. 4 zadaniami zamkniętymi poprawna nie może być zawsze ta sama litera

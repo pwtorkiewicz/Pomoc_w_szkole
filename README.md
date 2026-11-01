@@ -4,7 +4,7 @@ Pomoc naukowa dla uczniów szkoły podstawowej. Na starcie uczeń wybiera **ści
 
 | Ścieżka | Strona | Stan |
 |---|---|---|
-| 🧸 Klasa 3 | `klasa3.html` | w przygotowaniu |
+| 🧸 Klasa 3 | `klasa3.html` | w przygotowaniu (gotowy tryb dla młodszego ucznia: duże litery, czytanie na głos, krótkie quizy, gwiazdki) |
 | 🎨 Klasa 4 – wszystkie przedmioty | `klasa4.html` | polski (7 działów), matematyka (7), angielski (6), przyroda (6), historia (4), informatyka (4), zajęcia praktyczno-techniczne – ruch drogowy (4), muzyka (3), plastyka (3), wychowanie fizyczne – wiedza (2) |
 | 🔬 Klasa 8 – wszystkie przedmioty (bieżąca nauka) | `klasa8.html` | w przygotowaniu |
 | 🎯 Egzamin ósmoklasisty | `egzamin.html` | gotowa (opis poniżej) |
@@ -90,6 +90,22 @@ window.SUBJECTS.push({
 Nowy plik trzeba dopisać w stronie ścieżki (np. `egzamin.html`, `klasa4.html`) przed `js/app.js` – narzędzia w `tools/` biorą listę plików właśnie stamtąd.
 
 Pytanie może mieć rysunek: pole `svg` (zasady jak w lekcjach – `docs/LEKCJE.md`, sprawdza je `node tools/sprawdz-lekcje.js`).
+
+### Czytanie na głos (ścieżki z `young: true` lub `speak: true` – klasa 3)
+
+Przycisk 🔊 czyta tekst głosem syntezatora mowy przeglądarki – po polsku. Emoji są pomijane, a proste działania czytane słowami (`3 × 4 = 12` → „3 razy 4 równa się 12”). Gdy tekst trzeba przeczytać inaczej, niż jest napisany, służą pola (sprawdza je `node tools/sprawdz-dane.js`):
+
+```js
+{ id, q: 'Ile jabłek? 🍎🍎🍎', say: 'Ile jest jabłek na obrazku?',      // say – czytane zamiast q
+  options: ['2', '3', '4'], answer: 1 }
+{ id, q: 'Co znaczy „blue”?', say: ['Co znaczy słowo', ['blue', 'en'], '?'], // fragment [tekst, 'en'] czyta głos angielski
+  options: ['niebieski', 'zielony'], answer: 0 }
+{ id, q: 'Jak po angielsku jest „kot”?', optLang: 'en',                 // odpowiedzi czytane po angielsku
+  options: ['cat', 'dog'], answer: 0 }
+{ id, q: 'Który zegar pokazuje 3:00?', options: ['🕒', '🕘'], sayOptions: ['trzecia', 'dziewiąta'], answer: 0 } // czytane zamiast odpowiedzi
+```
+
+W dziale: `cardLang: ['en', 'pl']` – języki przodu i tyłu fiszek (domyślnie obie strony po polsku). Pola `say`, `optLang` i `sayOptions` działają też w zadaniach zamkniętych zestawów ćwiczeń i w pytaniach `check` lekcji.
 
 ### Zestawy ćwiczeń (czytanie, reading, listening, środki językowe)
 
