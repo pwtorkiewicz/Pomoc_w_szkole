@@ -13,9 +13,8 @@ window.TRACKS = [
     page: 'klasa3.html',
     icon: '🧸',
     name: 'Klasa 3',
-    about: 'Edukacja wczesnoszkolna – nauka krok po kroku, z obrazkami i ćwiczeniami.',
+    about: 'Edukacja wczesnoszkolna: polski i matematyka – lekcje z obrazkami, quizy z gwiazdkami, dyktanda, zegar, monety i kalendarz. Pytania można odsłuchać.',
     storeKey: 'pomoc_kl3_v1',
-    soon: true, // usuń, gdy w ścieżce pojawią się pierwsze materiały
     color: '#e0803a',
     young: true,
     intro: 'Wybierz, czego chcesz się dziś pouczyć. Zacznij od <b>lekcji</b>, potem zagraj w <b>quiz</b> i zbieraj gwiazdki <span class="stars"><b>★</b></span>. Przycisk 🔊 przeczyta ci pytanie.',

@@ -4,7 +4,7 @@ Pomoc naukowa dla uczniów szkoły podstawowej. Na starcie uczeń wybiera **ści
 
 | Ścieżka | Strona | Stan |
 |---|---|---|
-| 🧸 Klasa 3 | `klasa3.html` | w przygotowaniu (gotowy tryb dla młodszego ucznia: duże litery, czytanie na głos, krótkie quizy, gwiazdki) |
+| 🧸 Klasa 3 | `klasa3.html` | edukacja polonistyczna (7 działów, 4 dyktanda ze słuchu), edukacja matematyczna (7 działów, widżety: zegar, tabliczka mnożenia, monety, kalendarz); tryb dla młodszego ucznia: duże litery, czytanie na głos, quizy z gwiazdkami |
 | 🎨 Klasa 4 – wszystkie przedmioty | `klasa4.html` | polski (7 działów), matematyka (7), angielski (6), przyroda (6), historia (4), informatyka (4), zajęcia praktyczno-techniczne – ruch drogowy (4), muzyka (3), plastyka (3), wychowanie fizyczne – wiedza (2) |
 | 🔬 Klasa 8 – wszystkie przedmioty (bieżąca nauka) | `klasa8.html` | w przygotowaniu |
 | 🎯 Egzamin ósmoklasisty | `egzamin.html` | gotowa (opis poniżej) |
@@ -114,7 +114,7 @@ Pliki `js/dane/cwiczenia-*.js` dopisują zestawy do tablicy `window.EXERCISES` (
 ```js
 window.EXERCISES.push({
   subject: 'polski',                 // id przedmiotu
-  mode: 'czytanie',                  // czytanie | reading | listening | srodki
+  mode: 'czytanie',                  // czytanie | reading | listening | srodki | dyktando (dyktando: items tylko type 'input' z polem say – tekst czyta syntezator; ścieżki young/speak)
   id: 'a1b2c3',                      // stałe id z node tools/nowe-id.js
   title: 'Tytuł zestawu', kind: 'Tekst literacki · epika',
   basis: 'Na jakim wymaganiu się opiera', source: 'Skąd pochodzi tekst',

@@ -56,6 +56,10 @@ window.LESSONS['<przedmiot>/<id działu>'] = [
 | `procent` | `p`, `of` | siatka 10×10, suwak p%, oblicza p% z `of` |
 | `kostka` | – | rzuty kostką, wykres częstości vs 1/6 |
 | `kolo` | `r` | suwak promienia, obwód 2πr i pole πr² |
+| `zegar` | `h` (0–23), `m` | zegar ze wskazówkami i elektroniczny 24 h, suwaki godzin i minut (klasa 3) |
+| `tabliczka` | `a`, `b` | a rzędów po b kropek, mnożenie i dzielenie (klasa 3) |
+| `monety` | `cel` (gr, opcjonalnie), `max` (gr), `start` | klikane monety i banknoty, suma w zł i gr; z `cel` – „odlicz kwotę” (klasa 3) |
+| `kalendarz` | `rok`, `miesiac`, `dzien` | miesiąc z dniami tygodnia, zapis daty, miesiąc cyframi rzymskimi (klasa 3) |
 
 ## Sprawdzanie
 

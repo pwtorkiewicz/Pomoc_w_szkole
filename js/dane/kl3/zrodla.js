@@ -1,0 +1,34 @@
+/* Strona „Źródła” ścieżki „Klasa 3”. */
+window.SOURCES = {
+  html: `
+    <p>Materiał dla klasy 3 przygotowano według <b>podstawy programowej obowiązującej klasę 3</b> w roku szkolnym 2026/2027. Teksty rozporządzeń sprawdzono w Dzienniku Ustaw (eli.gov.pl) 1 listopada 2026 r. Każdy dział ma ramkę „Na jakiej podstawie” z numerem obszaru i wymagań.</p>
+
+    <h3>Która podstawa obowiązuje w klasie 3</h3>
+    <p>W latach szkolnych 2026/2027 i 2027/2028 klasa 3 uczy się według <b>dotychczasowej podstawy programowej</b>: załącznik nr 2 do rozporządzenia MEN z 14 lutego 2017 r. (Dz.U. 2017 poz. 356) w brzmieniu z <b>Dz.U. 2024 poz. 996</b> (załącznik nr 1 – I etap edukacyjny, edukacja wczesnoszkolna). Późniejsze zmiany (Dz.U. 2025 poz. 378 i 2025 poz. 1052) nie zmieniły wymagań edukacji polonistycznej i matematycznej w klasach I–III. Tę podstawę stosuje się w klasie 3 na podstawie § 4 ust. 2 rozporządzenia Dz.U. 2026 poz. 378 (w brzmieniu z Dz.U. 2026 poz. 958). Od 2028/2029 klasa 3 przejdzie na nową podstawę (Dz.U. 2026 poz. 378) – wtedy materiał trzeba będzie przejrzeć.</p>
+    <p>Tekst podstawy: <a href="https://eli.gov.pl/api/acts/DU/2024/996/text/O/D20240996.pdf">Dz.U. 2024 poz. 996 (PDF, eli.gov.pl)</a>.</p>
+
+    <h3>Co jest w aplikacji</h3>
+    <ul>
+      <li><b>Edukacja polonistyczna</b> (obszar I podstawy): głoski i alfabet, ortografia (ó/u, rz/ż, ch/h), zdanie i znaki interpunkcyjne, wielka litera i skróty, rzeczownik, czasownik i przymiotnik, wyrazy przeciwne, bliskoznaczne i pokrewne, formy wypowiedzi (list, zaproszenie, życzenia, ogłoszenie, opowiadanie, opis) oraz dyktanda ze słuchu.</li>
+      <li><b>Edukacja matematyczna</b> (obszar II podstawy): liczby do 1000 i wybrane większe, dodawanie i odejmowanie, tabliczka mnożenia i dzielenie, zadania z treścią, figury, mierzenie i obwód, zegar i kalendarz (także znaki rzymskie do XII), pieniądze, waga, płyny, połowa i ćwierć, termometr.</li>
+    </ul>
+
+    <h3>Co trzeba wiedzieć o tym materiale</h3>
+    <ul>
+      <li>Podstawa opisuje <b>osiągnięcia ucznia na koniec klasy 3</b> i nie dzieli ich na klasy I, II i III. Dlatego aplikacja obejmuje cały zakres – część rzeczy dziecko mogło poznać już wcześniej, a część pozna dopiero pod koniec roku. Kolejność działów można dopasować do podręcznika.</li>
+      <li>Treści napisano od nowa dla 8–9-latka. Nie pochodzą z innych ścieżek aplikacji (klasy 4 i 8 uczą się według innych wymagań).</li>
+      <li>Podstawa zawiera <b>propozycję lektur</b> (nie obowiązkowy kanon). Aplikacja nie opisuje treści lektur – tytuły pojawiają się tylko jako przykłady zapisu tytułów książek. Przykładowe teksty, wiersze i zdania napisano samodzielnie.</li>
+      <li>Podstawa mówi ogólnie o poprawnej pisowni „wyrazów poznanych i opracowanych podczas zajęć” (I.4.4). Reguły pisowni ó/u, rz/ż, ch/h i przykładowe wyrazy to <b>wybór redakcyjny</b> – podstawowe reguły szkolne i wyrazy „do zapamiętania”. Kilka rzeczy dodano jako uzupełnienie, choć podstawa nie wymienia ich wprost: przecinek przed „ale” i „bo”, mała litera w nazwach dni, miesięcy i pór roku, zapis daty, głoska i litera (dwuznaki), wers, zwrotka i rym, liczba pojedyncza i mnoga.</li>
+      <li>Wielka i mała litera według zasad pisowni obowiązujących od 1 stycznia 2026 r. Aplikacja nie uczy zasad, które zmieniła reforma (np. nazw mieszkańców miast i nazw marek), bo w klasie 3 nie są potrzebne. W przykładowych życzeniach i liście zaimki do adresata („Ci”, „Twojego”) napisano wielką literą – to zwyczaj grzecznościowy, nie obowiązek; nie ma o tym pytań.</li>
+      <li>Nominały pieniędzy (monety 1, 2, 5, 10, 20, 50 gr oraz 1, 2, 5 zł; banknoty 10, 20, 50, 100, 200 i 500 zł) – według informacji Narodowego Banku Polskiego o pieniądzu obiegowym.</li>
+      <li>Aplikacja nie zastąpi ćwiczeń, których wymaga podstawa: pisania odręcznego, czytania na głos, mówienia, mierzenia linijką, ważenia czy liczenia na prawdziwych monetach. Pomaga utrwalić wiedzę.</li>
+    </ul>
+
+    <h3>Jak działa ścieżka dla młodszego ucznia</h3>
+    <ul>
+      <li>Przycisk 🔊 czyta pytania, lekcje i fiszki głosem syntezatora mowy wbudowanego w przeglądarkę (bez nagrań i bez wysyłania danych). Jakość i wymowa zależą od głosów zainstalowanych w urządzeniu. Na stronie głównej ścieżki można włączyć czytanie automatyczne.</li>
+      <li>Quiz w dziale ma 8 losowych pytań. Za wynik dziecko dostaje gwiazdki: 7–8 dobrych odpowiedzi – 3 gwiazdki, 5–6 – 2, 2–4 – 1.</li>
+      <li>Dyktanda czyta syntezator mowy. W przeglądarce bez syntezatora rodzic może przeczytać tekst z listy „Dla rodzica”. W dyktandach z pojedynczymi wyrazami liczy się pisownia ó/u, rz/ż, ch/h (wielkość pierwszej litery nie ma znaczenia), w dyktandzie zdań – także wielkie litery.</li>
+    </ul>
+    <p>Treści warto skonsultować z nauczycielem – zwłaszcza kolejność działów i zakres materiału w danym momencie roku.</p>`,
+};
