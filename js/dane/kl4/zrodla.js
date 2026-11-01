@@ -9,11 +9,14 @@ window.SOURCES = {
 
     <h3>Co trzeba wiedzieć o tym materiale</h3>
     <ul>
-      <li>Wymagania z polskiego, matematyki i przyrody są zapisane <b>łącznie dla klas 4–6</b>. Podstawa nie mówi, co dokładnie jest w klasie 4. Działy w aplikacji to <b>wybór redakcyjny</b> tematów na początek nauki. Szkoła i podręcznik mogą układać materiał w innej kolejności.</li>
+      <li>Wymagania z polskiego, matematyki, przyrody, historii, informatyki i zajęć praktyczno-technicznych są zapisane <b>łącznie dla klas 4–6</b>. Podstawa nie mówi, co dokładnie jest w klasie 4. Działy w aplikacji to <b>wybór redakcyjny</b> tematów na początek nauki. Szkoła i podręcznik mogą układać materiał w innej kolejności.</li>
       <li>Treści napisano od nowa. Nie pochodzą ze ścieżki egzaminacyjnej, bo ósmoklasiści uczą się według innej podstawy (Dz.U. 2024 poz. 996).</li>
       <li>Przyroda w nowej podstawie to przedmiot dla klas 4–6. Łączy elementy biologii, geografii, chemii i fizyki. Wiele wymagań dotyczy obserwacji, doświadczeń i zajęć w terenie. Aplikacja tego nie zastąpi, pomaga tylko utrwalić wiedzę.</li>
       <li><b>Język polski</b>: wymagania są zapisane dla klas 4–6 w siedmiu działach (komunikacja, odbiór tekstów kultury, świadomość języka, tworzenie wypowiedzi, autorefleksja, edukacja medialna, praktyki lekturowe). Nowa podstawa <b>nie ma kanonu dłuższych lektur</b> dla klas 4–6 – uczeń czyta co najmniej 4 dłuższe teksty w roku, wybrane razem z nauczycielem (np. z listy przykładowej). Obowiązkowo poznaje m.in. wybrane fragmenty Biblii, wybrane mity greckie, „Mazurek Dąbrowskiego” i „Rotę”. Dlatego aplikacja uczy pojęć i umiejętności (części mowy, zdanie, pisownia, słownictwo, świat przedstawiony, formy wypowiedzi), a nie treści konkretnych lektur.</li>
       <li><b>Język angielski</b>: podstawa jest wspólna dla wszystkich języków obcych i opisuje poziomy A1, A1+, A2 i B1. Na koniec klasy 8 oczekiwany jest poziom A2. Podstawa nie mówi, który poziom przypada na klasę 4, i nie wymienia struktur gramatycznych. Aplikacja przyjmuje <b>poziom A1</b> (tematy słownictwa z wymagania 1 dla A1); wybór prostych struktur (np. <i>to be</i>, <i>have got</i>, <i>can</i>, <i>present simple</i>, <i>there is / there are</i>) to decyzja redakcyjna.</li>
+      <li><b>Historia</b>: podstawa przewiduje, że w klasie 4 nauka zaczyna się od tematów wprowadzających (działy 1–4: historia jako nauka, historia rodziny i regionu, wspólnota państwowa, czas i miejsce wydarzeń). Dalej jest kurs chronologiczny od starożytności – te działy dodamy później.</li>
+      <li><b>Informatyka</b>: większość wymagań to praca przy komputerze (programowanie, edytory, arkusz). Aplikacja pomaga tylko utrwalić pojęcia i zasady bezpieczeństwa.</li>
+      <li><b>Zajęcia praktyczno-techniczne</b>: na razie dział 8 – bezpieczne uczestnictwo w ruchu drogowym (z przygotowaniem do karty rowerowej) i zasady bezpiecznej pracy. Przepisy sprawdzono 1 listopada 2026 r. w aktualnych tekstach ustaw i rozporządzeń. Uwaga – <b>nowe przepisy</b> (ustawa z 17 października 2025 r., Dz.U. 2025 poz. 1676): od 2 marca 2026 r. hulajnogą elektryczną wolno jeździć od 13 lat (wcześniej od 10), a od 2 czerwca 2026 r. rowerzysta i użytkownik hulajnogi elektrycznej poniżej 16 lat musi jeździć w kasku. Starsze podręczniki mogą tego nie uwzględniać.</li>
       <li>Pytania i lekcje to ćwiczenia przygotowane na podstawie wymagań. Nie są to oficjalne materiały szkolne. Warto je skonsultować z nauczycielem.</li>
     </ul>
 
@@ -22,5 +25,9 @@ window.SOURCES = {
       <li>Dz.U. 2026 poz. 378 – podstawa programowa: eli.gov.pl/eli/DU/2026/378/ogl</li>
       <li>Dz.U. 2026 poz. 958 – zmiana podstawy: eli.gov.pl/eli/DU/2026/958/ogl</li>
       <li>Dz.U. 2026 poz. 1028 – ramowe plany nauczania: eli.gov.pl/eli/DU/2026/1028/ogl</li>
+      <li>Prawo o ruchu drogowym – tekst jednolity Dz.U. 2024 poz. 1251, zmieniony m.in. Dz.U. 2025 poz. 1676: eli.gov.pl/eli/DU/2024/1251/ogl</li>
+      <li>Ustawa o kierujących pojazdami (karta rowerowa) – tekst jednolity Dz.U. 2025 poz. 1226: eli.gov.pl/eli/DU/2025/1226/ogl</li>
+      <li>Rozporządzenie w sprawie warunków technicznych pojazdów (wyposażenie roweru, § 53) – Dz.U. 2024 poz. 502: eli.gov.pl/eli/DU/2024/502/ogl</li>
+      <li>Rozporządzenie w sprawie znaków i sygnałów drogowych – Dz.U. 2019 poz. 2310: eli.gov.pl/eli/DU/2019/2310/ogl</li>
     </ul>`,
 };
