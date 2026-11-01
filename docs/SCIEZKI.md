@@ -29,7 +29,7 @@ Aplikacja ma kilka **ścieżek** – każda dla innej klasy albo celu. Uczeń wy
 
 ## Zasady merytoryczne ścieżek
 
-Każda ścieżka opiera się **wyłącznie na podstawie programowej obowiązującej daną klasę** w bieżącym roku szkolnym (a ścieżka egzaminacyjna – także na informatorach CKE). Klasy w r. szk. 2026/2027 uczą się według **różnych podstaw** (reforma „Kompas Jutra” wchodzi stopniowo), dlatego **nie kopiujemy treści między ścieżkami** – np. dział z ułamkami z klasy 4 nie może być kopią działu ze ścieżki egzaminacyjnej. Plany ścieżek (z analizą podstaw) powstaną w `docs/PLAN-kl3.md`, `docs/PLAN-kl4.md`, `docs/PLAN-kl8.md`; ścieżka egzaminacyjna: `docs/PLAN.md`.
+Każda ścieżka opiera się **wyłącznie na podstawie programowej obowiązującej daną klasę** w bieżącym roku szkolnym (a ścieżka egzaminacyjna – także na informatorach CKE). Klasy w r. szk. 2026/2027 uczą się według **różnych podstaw** (nowa podstawa – Dz.U. 2026 poz. 378 – wchodzi stopniowo: od 2026/2027 w klasach I i IV, potem w kolejnych), dlatego **nie kopiujemy treści między ścieżkami** – np. dział z ułamkami z klasy 4 nie może być kopią działu ze ścieżki egzaminacyjnej. Plany ścieżek z analizą podstaw: `docs/PLAN-kl3.md`, `docs/PLAN-kl4.md`, `docs/PLAN-kl8.md`; ścieżka egzaminacyjna: `docs/PLAN.md`.
 
 Ton i forma:
 

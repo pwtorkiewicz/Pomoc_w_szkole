@@ -4,7 +4,7 @@ window.SOURCES = {
     <p>Materiał sprawdzono w <b>oryginalnych dokumentach</b>: informatorach i komunikatach Centralnej Komisji Egzaminacyjnej (cke.gov.pl) oraz w <b>tekście podstawy programowej</b> (Dz.U. 2024 poz. 996, eli.gov.pl). Dokumenty pobrano 31 października 2026 r. Materiał dotyczy uczniów, którzy piszą egzamin ósmoklasisty w <b>maju 2027 r.</b> Ramka „Na jakiej podstawie” w każdym dziale podaje numer wymagania z podstawy albo dokument CKE.</p>
 
     <h3>Podstawa prawna</h3>
-    <p>Według informatora CKE od 2025 r. zadania egzaminacyjne sprawdzają wymagania <b>podstawy programowej z rozporządzenia Ministra Edukacji z 28 czerwca 2024 r.</b> (Dz.U. 2024 poz. 996). Nowa podstawa „Kompas Jutra” od 1 września 2026 r. obejmuje tylko klasy I i IV, więc <b>nie dotyczy</b> obecnych ósmoklasistów.</p>
+    <p>Według informatora CKE od 2025 r. zadania egzaminacyjne sprawdzają wymagania <b>podstawy programowej z rozporządzenia Ministra Edukacji z 28 czerwca 2024 r.</b> (Dz.U. 2024 poz. 996). Nowa podstawa programowa (rozporządzenie z 11 marca 2026 r., Dz.U. 2026 poz. 378, zmienione Dz.U. 2026 poz. 958) od 1 września 2026 r. obejmuje klasy I i IV, a w kolejnych latach następne klasy (§ 4). W klasach V–VIII w r. szk. 2026/2027 nadal obowiązuje podstawa z 2024 r., więc nowa podstawa <b>nie dotyczy</b> obecnych ósmoklasistów.</p>
 
     <h3>Terminy egzaminu w 2027 r. (komunikat CKE z 20.08.2026)</h3>
     <table>
