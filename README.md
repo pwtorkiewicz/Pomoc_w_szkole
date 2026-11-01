@@ -2,7 +2,7 @@
 
 Pomoc naukowa dla ucznia 8 klasy szkoły podstawowej, pomyślana jako przygotowanie do egzaminu ósmoklasisty.
 
-**Przedmioty:** język polski, matematyka, język angielski. Razem 35 działów, 35 lekcji, 454 fiszki, 771 pytań (27 z rysunkiem), 55 zadań otwartych (matematyka i polski) oraz 23 zestawy ćwiczeń jak na egzaminie (160 zadań).
+**Przedmioty:** język polski, matematyka, język angielski. Razem 47 działów, 47 lekcji, 669 fiszek, 1124 pytania (60 z rysunkiem), 85 zadań otwartych (matematyka i polski) oraz 23 zestawy ćwiczeń jak na egzaminie (160 zadań).
 
 **Podstawa:** treści sprawdzono 31.10.2026 w oryginalnych dokumentach CKE: informatorach o egzaminie ósmoklasisty od r. szk. 2024/2025 (polski, matematyka, angielski) oraz komunikatach CKE na 2027 r., a także w tekście podstawy programowej (Dz.U. 2024 poz. 996, eli.gov.pl). Według informatorów egzamin sprawdza podstawę programową z rozporządzenia z 28.06.2024 (Dz.U. 2024 poz. 996). Każda ściąga ma ramkę „Na jakiej podstawie”, a strona przedmiotu opisuje egzamin (termin, czas, punkty). Pełny wykaz źródeł i ograniczeń jest na stronie **Źródła** (`#/zrodla`, plik `js/dane/zrodla.js`).
 
@@ -21,7 +21,7 @@ Do tego:
 - **ćwiczenia jak na egzaminie** – zestawy „tekst + zadania” w formacie arkusza CKE:
   - 📰 **Czytanie ze zrozumieniem** (polski) – fragmenty lektur (w brzmieniu z arkuszy CKE) i teksty nieliterackie; zadania zamknięte, z luką i otwarte z przykładową odpowiedzią,
   - 📖 **Reading**, 🎧 **Listening** (nagrania czyta syntezator mowy przeglądarki – bez plików audio; transkrypcja po sprawdzeniu) i 🧩 **Środki językowe** (luki, dobieranie, przekład, parafraza) z angielskiego,
-- **pytania z rysunkiem** – w matematyce część pytań ma diagram, wykres, figurę albo siatkę bryły,
+- **pytania z rysunkiem** – w matematyce część pytań ma diagram, wykres, figurę, układ współrzędnych, termometr albo siatkę bryły,
 - **🔁 Powtórka błędów** – pytania, na które uczeń odpowiedział źle, aż do skutku,
 - **zapis postępu** – najlepszy wynik z każdego działu (zapisany w przeglądarce, bez kont i bez serwera).
 

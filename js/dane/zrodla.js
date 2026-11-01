@@ -73,7 +73,20 @@ window.SOURCES = {
       <li><b>Język angielski – reading, listening, środki językowe</b>: typy zadań z informatora CKE (wybór wielokrotny, dobieranie, luki, przekład fragmentów zdań, parafraza, reakcje). Nagrania czyta syntezator mowy w przeglądarce – brzmi inaczej niż lektor na egzaminie, ale pozwala ćwiczyć słuchanie bez plików audio.</li>
       <li><b>Matematyka</b>: pytania z rysunkiem (diagramy, wykresy, figury, siatki brył) i nowe zadania otwarte. Usunięto pytanie, które wymagało twierdzenia odwrotnego do twierdzenia Pitagorasa – podstawa (kl. VII–VIII, VIII.7) wymaga twierdzenia Pitagorasa „bez twierdzenia odwrotnego”.</li>
     </ul>
-    <p>Kolejny etap (pozostałe wymagania z klas IV–VI) jest opisany w pliku <code>docs/PLAN.md</code> w repozytorium.</p>
+
+    <h3>Rozbudowa materiału – etap 3 (listopad 2026): pozostałe wymagania</h3>
+    <p>Uzupełniono wymagania szczegółowe podstawy (Dz.U. 2024 poz. 996), których wcześniej brakowało, głównie z klas IV–VI:</p>
+    <ul>
+      <li><b>Matematyka:</b> nowe działy „Proste, kąty i trójkąty” (kl. IV–VI: VII, VIII.1–5, IX.1–5, IX.8), „Koło i okrąg” (kl. IV–VI: IX.6–7; kl. VII–VIII: XIV.1–4) i „Układ współrzędnych” (kl. VII–VIII: X.1–6). Do istniejących działów dopisano: rozpoznawanie walca, stożka i kuli (bez wzorów – nie ma ich w podstawie), siatki brył, graniastosłupy i ostrosłupy nieprawidłowe (kl. IV–VI: X; kl. VII–VIII: XI.1–3), pola wielokątów przez podział i uzupełnianie oraz jednostki pola (kl. IV–VI: XI.4–5), obliczenia kalendarzowe, temperaturę i dekagram (XII.4–7), rozkład na czynniki pierwsze, kwadraty i sześciany, szacowanie (II.8, II.10–14), diagramy słupkowe i kołowe oraz wykresy (kl. VII–VIII: XIII.1–2).</li>
+      <li><b>Język polski:</b> nowe działy „Budowa utworu” (kl. IV–VI I.1.1–2, I.1.5–13), „Teksty nieliterackie i teksty kultury” (kl. IV–VI I.2.1–10, III.1.2, III.1.6; kl. VII–VIII I.2.1, I.2.3–5, I.2.7), „Wiersze poetów XX wieku” (lista utworów kl. VII–VIII: Baczyński, Herbert, Leśmian, Miłosz, Różewicz, Szymborska, aforyzmy Leca), „Odmiana wyrazów i zdanie pojedyncze” (kl. IV–VI II.1.4–13) i „Formy wypowiedzi: od ogłoszenia do CV” (kl. IV–VI III.2.1, III.2.3–4; kl. VII–VIII III.2.1–2). Dopisano gatunki z klas IV–VI (I.1.3), zgrubienie i powtórzenie (I.1.4), wyrazy wieloznaczne, wzbogacanie słownictwa, język mówiony i pisany oraz spójność tekstu (kl. IV–VI II.2.1, II.2.4, II.2.6, II.2.9; kl. VII–VIII II.2.3).
+        <ul>
+          <li>Informator CKE zapowiada, że zadania do wierszy „nie będą sprawdzały znajomości treści konkretnego utworu poetyckiego, ale sprawdzą umiejętność analizy i interpretacji”. Dlatego dział o poezji uczy metody analizy. Wierszy chronionych prawem autorskim nie cytujemy – ćwiczenia są na przykładach napisanych do aplikacji. Fakty o poetach sprawdzono w źródłach (nobelprize.org, culture.pl, zpe.gov.pl, IPN, PAP).</li>
+          <li>Zasady oceniania zaproszenia, ogłoszenia i streszczenia opisano według przykładowych zadań z informatora CKE.</li>
+          <li>Treść krótkich utworów z klas IV–VI (mity, bajki, baśnie) nie jest sprawdzana na egzaminie (przypis w podstawie programowej), ale rozpoznawanie ich gatunku – tak.</li>
+        </ul></li>
+      <li><b>Język angielski:</b> nowe działy „Phrasal verbs i przyimki po czasownikach” (lista struktur CKE: CZASOWNIK 8, PRZYIMEK 4), „Przysłówki; so, such, how, what” (PRZYSŁÓWEK 1–3, PRZYMIOTNIK 2), „Zaimki nieokreślone i budowa zdania” (ZAIMEK 7–8, SKŁADNIA 2 i 4) oraz „Kraje anglojęzyczne” (podstawa, wymaganie IX.1–2). Fakty o krajach, świętach i różnicach między angielskim brytyjskim i amerykańskim sprawdzono w Britannice, CIA World Factbook, na stronach rządowych i w słownikach Oxford i Cambridge; niepotwierdzonych nie podajemy.</li>
+    </ul>
+    <p>Plan rozbudowy i jego stan opisuje plik <code>docs/PLAN.md</code> w repozytorium.</p>
 
     <h3>Ograniczenia</h3>
     <ul>
