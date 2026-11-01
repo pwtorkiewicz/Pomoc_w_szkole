@@ -47,6 +47,7 @@ window.SUBJECTS.push({
       flashcards: [['Pytanie', 'Odpowiedź']],   // fiszki (opcjonalne)
       questions: [
         {
+          id: 'k3x9qa',                         // stały, unikalny id (node tools/nowe-id.js)
           q: 'Treść pytania?',
           options: ['A', 'B', 'C', 'D'],
           answer: 0,                            // indeks poprawnej odpowiedzi (od 0)
@@ -60,7 +61,7 @@ window.SUBJECTS.push({
 
 Nowy plik trzeba dopisać w `index.html` (przed `js/app.js`).
 
-> ⚠️ Kolejność pytań w działach nie ma znaczenia, ale **nie zmieniaj kolejności istniejących pytań**, bo lista błędów do powtórki zapamiętuje pytania po ich numerze.
+> ⚠️ Każde pytanie ma stały identyfikator `id` – powtórka błędów zapamiętuje pytania po nim. Pytania można przestawiać i usuwać, ale **nie zmieniaj `id` istniejących pytań**. Nowe id: `node tools/nowe-id.js`, sprawdzenie: `node tools/sprawdz-dane.js`.
 
 ## Struktura
 

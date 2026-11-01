@@ -19,6 +19,21 @@
     try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) { /* tryb prywatny itp. */ }
   }
   const state = Object.assign({ best: {}, wrong: {}, exams: {}, lessons: {} }, load());
+
+  // Jednorazowa migracja: dawniej błędy zapisywano jako „przedmiot/dział/numer pytania”.
+  // Numer zamieniamy na stałe id pytania (kolejność pytań w chwili migracji jest ta sama co wcześniej).
+  if (!state.idKeys) {
+    const wrong = {};
+    for (const key of Object.keys(state.wrong)) {
+      const [sid, tid, part] = key.split('/');
+      const t = (SUBJECTS.find((x) => x.id === sid) || { topics: [] }).topics.find((x) => x.id === tid);
+      const q = t && (/^\d+$/.test(part) ? t.questions[+part] : t.questions.find((x) => x.id === part));
+      if (q && q.id) wrong[`${sid}/${tid}/${q.id}`] = 1;
+    }
+    state.wrong = wrong;
+    state.idKeys = 1;
+    try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) { /* brak dostępu */ }
+  }
   const LESSONS = window.LESSONS || {};
   const lessonOf = (s, t) => LESSONS[`${s.id}/${t.id}`];
 
@@ -34,7 +49,8 @@
   }
   const findSubject = (id) => SUBJECTS.find((s) => s.id === id);
   const topicKey = (s, t) => `${s.id}/${t.id}`;
-  const questionsOf = (s, t) => t.questions.map((q, i) => ({ ...q, key: `${s.id}/${t.id}/${i}`, topicName: t.name }));
+  // Każde pytanie ma stałe pole id – klucz nie zależy od kolejności pytań w pliku.
+  const questionsOf = (s, t) => t.questions.map((q) => ({ ...q, key: `${s.id}/${t.id}/${q.id}`, topicName: t.name }));
   const badgeClass = (p) => (p == null ? '' : p >= 80 ? 'good' : p >= 50 ? 'mid' : 'low');
   const bar = (p, label = true) =>
     `<div class="bar"><span style="width:${p}%"></span></div>${label ? `<small class="muted">${p}% opanowane</small>` : ''}`;
@@ -264,10 +280,10 @@
   }
 
   function resolveKey(key) {
-    const [sid, tid, idx] = key.split('/');
+    const [sid, tid, qid] = key.split('/');
     const s = findSubject(sid);
     const t = s && s.topics.find((x) => x.id === tid);
-    const q = t && t.questions[+idx];
+    const q = t && t.questions.find((x) => x.id === qid);
     return q ? { ...q, key, topicName: `${s.name} · ${t.name}` } : null;
   }
 

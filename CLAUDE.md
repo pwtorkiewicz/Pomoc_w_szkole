@@ -40,14 +40,15 @@ Uruchomienie: otwórz `index.html` w przeglądarce. Publikacja: GitHub Pages z t
 
 ## Zasady techniczne
 
-- **Nie zmieniaj kolejności ani nie usuwaj istniejących pytań** w `questions` bez potrzeby – postęp i „Powtórka błędów” zapamiętują pytania po indeksie (`przedmiot/dział/indeks`). Nowe pytania dopisuj na końcu. Jeśli przebudowa jest konieczna, podbij `STORE_KEY` w `js/app.js`.
-- Format pytania: `{ q, options, answer, explain }`; dla prawda/fałsz: `options: ['Prawda', 'Fałsz'], noShuffle: true`.
+- Każde pytanie ma **stałe pole `id`** (losowe, unikalne w całej aplikacji). Postęp i „Powtórka błędów” zapamiętują pytania po `id`, więc pytania można przestawiać i usuwać, ale **nigdy nie zmieniaj `id` istniejącego pytania** i nie używaj go ponownie. Nowe pytanie = nowe id z `node tools/nowe-id.js`.
+- Format pytania: `{ id, q, options, answer, explain }`; dla prawda/fałsz: `options: ['Prawda', 'Fałsz'], noShuffle: true`.
 - Lekcje pisz według `docs/LEKCJE.md`: 4–6 kroków, każdy z grafiką (SVG albo widżet), SVG tylko z klasami CSS (bez kolorów na sztywno – tryb ciemny), `viewBox` szerokości 300–440, `aria-label`, unikalne id markerów.
 - Bez zewnętrznych bibliotek i bez kroku budowania. Aplikacja ma działać po otwarciu pliku i na telefonie (szerokość ok. 400 px).
 
 ## Sprawdzanie przed commitem
 
 ```
+node tools/sprawdz-dane.js                  # pytania: unikalne id, poprawne indeksy odpowiedzi
 node tools/sprawdz-lekcje.js [przedmiot]     # lekcje: struktura, XML SVG, napisy poza kadrem/nachodzące, błędy JS
 node tools/zrzut.js <przedmiot/dział> <krok> <plik.png> [dark] [420]   # podgląd kroku lekcji
 ```
