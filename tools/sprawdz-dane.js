@@ -13,7 +13,7 @@ let nt = 0;
 let ne = 0;
 let ni = 0;
 const perTrack = [];
-const MODES = ['czytanie', 'reading', 'listening', 'srodki'];
+const MODES = ['czytanie', 'reading', 'listening', 'srodki', 'dyktando'];
 // Pola do czytania na głos (tryb młodszego ucznia): say – tekst albo lista fragmentów (tekst | [tekst, 'en']),
 // optLang – język odpowiedzi, sayOptions – teksty czytane zamiast odpowiedzi (tyle, ile odpowiedzi).
 const LANGS = ['pl', 'en'];
@@ -78,6 +78,9 @@ for (const e of window.EXERCISES) {
   if (e.mode === 'listening') {
     if (!Array.isArray(e.audio) || !e.audio.length) problems.push(`${where}: brak nagrań (audio)`);
     else e.audio.forEach((r, k) => { if (!Array.isArray(r.lines) || !r.lines.length || r.lines.some((l) => !l.text)) problems.push(`${where}: nagranie ${k + 1} bez tekstu`); });
+  } else if (e.mode === 'dyktando') {
+    if (!track.young && !track.speak) problems.push(`${where}: dyktando tylko w ścieżce z czytaniem na głos (young lub speak)`);
+    if ((e.items || []).some((it) => it.type !== 'input' || it.say == null)) problems.push(`${where}: w dyktandzie każde zadanie ma type: 'input' i pole say (co czyta lektor)`);
   } else if (!e.text) problems.push(`${where}: brak tekstu`);
   if (!Array.isArray(e.items) || e.items.length < 3) { problems.push(`${where}: za mało zadań (min. 3)`); continue; }
   e.items.forEach((it, i) => {
@@ -86,6 +89,7 @@ for (const e of window.EXERCISES) {
     useId(it.id, w);
     if (!it.q) problems.push(`${w}: brak polecenia`);
     if (it.type === 'input') {
+      if (it.say != null) checkSpeech({ say: it.say }, w);
       if (!Array.isArray(it.accept) || !it.accept.length || it.accept.some((a) => !String(a).trim())) problems.push(`${w}: brak akceptowanych odpowiedzi`);
     } else if (it.type === 'open') {
       if (!(Number.isInteger(it.points) && it.points >= 1 && it.points <= 4)) problems.push(`${w}: punkty 1–4`);

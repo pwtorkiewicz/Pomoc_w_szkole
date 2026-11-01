@@ -298,3 +298,8 @@ body.young .hero .btn + small { display: block; }
   body.young h1 { font-size: 1.55rem; }
   body.young .question { font-size: 1.3rem; }
 }
+/* Widżety klasy 3: monety i banknoty */
+.widget .coins .btn { margin: 0; padding: 8px 12px; }
+.widget .coins .btn.coin { border-radius: 99px; background: var(--c4); border-color: var(--c4s); }
+.widget .coins .btn.note { border-radius: 6px; background: var(--c3); border-color: var(--c3s); }
+.widget .controls b { min-width: 9em; text-align: center; }

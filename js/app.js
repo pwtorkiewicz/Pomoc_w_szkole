@@ -60,6 +60,8 @@
     reading: { icon: '📖', name: 'Reading – teksty', about: 'Rozumienie tekstów pisanych, jak w arkuszu CKE: główna myśl, intencja autora, szczegóły, dobieranie. Polecenia są po polsku, teksty po angielsku.' },
     listening: { icon: '🎧', name: 'Listening – nagrania', about: 'Rozumienie ze słuchu. Nagrania czyta głos syntezatora mowy w przeglądarce. Na egzaminie każde nagranie słyszysz dwa razy – tu też tak spróbuj. Transkrypcję zobaczysz po sprawdzeniu odpowiedzi.' },
     srodki: { icon: '🧩', name: 'Środki językowe', about: 'Gramatyka i słownictwo w formacie CKE: luki w tekście, wybór formy, przekład fragmentów zdań, parafraza. W zadaniach otwartych liczy się pełna poprawność pisowni.' },
+    // Dyktando (ścieżki z czytaniem na głos): zadania type 'input' z polem say – tekst czyta syntezator, uczeń wpisuje.
+    dyktando: { icon: '✏️', name: 'Dyktando ze słuchu', about: 'Kliknij 🔊 i posłuchaj. Wpisz wyraz albo zdanie, które usłyszysz. Możesz słuchać, ile razy chcesz. Uważaj na ó i u, rz i ż, ch i h oraz na wielkie litery!' },
   };
   const setsOf = (s, mode) => EXERCISES.filter((e) => e.subject === s.id && (!mode || e.mode === mode));
   const setKey = (e) => `${e.subject}/${e.mode}/${e.id}`;
@@ -120,6 +122,15 @@
   const LANGS = { pl: 'pl-PL', en: 'en-GB' };
   const EMOJI = /[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}\u{1F3FB}-\u{1F3FF}\u{FE0F}\u{200D}\u{20E3}]/gu;
   const decoder = document.createElement('textarea');
+  // Skróty jednostek po liczbie czytamy pełnym słowem w dobrej formie: 1 złoty, 2 złote, 5 złotych.
+  const UNITS = {
+    zł: ['złoty', 'złote', 'złotych'], gr: ['grosz', 'grosze', 'groszy'], mm: ['milimetr', 'milimetry', 'milimetrów'],
+    cm: ['centymetr', 'centymetry', 'centymetrów'], km: ['kilometr', 'kilometry', 'kilometrów'], m: ['metr', 'metry', 'metrów'],
+    kg: ['kilogram', 'kilogramy', 'kilogramów'], dag: ['dekagram', 'dekagramy', 'dekagramów'], g: ['gram', 'gramy', 'gramów'],
+    l: ['litr', 'litry', 'litrów'], min: ['minuta', 'minuty', 'minut'], '°C': ['stopień Celsjusza', 'stopnie Celsjusza', 'stopni Celsjusza'],
+  };
+  const plural = (n, [one, few, many]) => (n === 1 ? one : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? few : many);
+  const UNIT_RE = /(?<![\d,])(\d+)\s*(zł|gr|mm|cm|km|kg|dag|min|°C|m|g|l)(?![\p{L}\d])/gu;
   function speechText(html) {
     decoder.innerHTML = String(html)
       .replace(/<svg[\s\S]*?<\/svg>/gi, ' ')
@@ -127,6 +138,7 @@
       .replace(/<[^>]+>/g, ' ');
     return decoder.value
       .replace(EMOJI, ' ')
+      .replace(UNIT_RE, (_, n, u) => `${n} ${plural(+n, UNITS[u])}`)
       .replace(/(\d)\s*[×·]\s*(?=\d)/g, '$1 razy ')
       .replace(/(\d)\s*÷\s*(?=\d)/g, '$1 podzielić przez ')
       .replace(/(\d)\s+:\s+(?=\d)/g, '$1 podzielić przez ')
@@ -467,6 +479,7 @@
   // Poza środkami językowymi (tam CKE wymaga pełnej poprawności) brak polskich znaków nie odbiera punktu.
   const PL = { ą: 'a', ć: 'c', ę: 'e', ł: 'l', ń: 'n', ó: 'o', ś: 's', ź: 'z', ż: 'z' };
   const loose = (t) => normAnswer(t).replace(/[ąćęłńóśźż]/g, (c) => PL[c]);
+  const exact = (t) => String(t).replace(/[’‘`´]/g, "'").replace(/\s+/g, ' ').trim().replace(/[.!?]+$/, '').trim();
   const itemPoints = (it) => (it.type === 'open' ? it.points : 1);
 
   function speakRecording(rec, rate, onEnd) {
@@ -505,7 +518,9 @@
             <label class="muted"><input type="checkbox" id="slow"> wolniej</label></div>
           ${synth ? '' : '<p class="feedback bad">Ta przeglądarka nie ma syntezatora mowy. Otwórz transkrypcję poniżej.</p>'}
           <details class="transcript" id="tr"><summary>Transkrypcja (zajrzyj po rozwiązaniu albo gdy nie słychać nagrania)</summary>${transcript}</details>
-        </div>` : `<article class="passage">${e.text}</article>`}
+        </div>` : e.mode === 'dyktando' ? `${SPEAK ? '' : '<p class="feedback bad">Ta przeglądarka nie czyta na głos. Poproś kogoś, żeby przeczytał ci tekst z listy „Dla rodzica”.</p>'}
+          <details class="transcript"><summary>Dla rodzica: co czyta lektor</summary>${e.items.map((it, k) => `<p><b>${k + 1}.</b> ${esc([].concat(it.say).map((x) => (Array.isArray(x) ? x[0] : x)).join(' '))}</p>`).join('')}</details>`
+          : `<article class="passage">${e.text}</article>`}
       ${e.source ? `<p class="muted source">Źródło: ${esc(e.source)}</p>` : ''}
       <div class="sheet">
         ${e.items.map((it, n) => `
@@ -581,7 +596,8 @@
         if (it.type === 'input') {
           const inp = box.querySelector('.gap');
           inp.readOnly = true;
-          const cmp = e.mode === 'srodki' ? normAnswer : loose;
+          // środki językowe: pełna poprawność pisowni; dyktando: także wielkie litery; poza tym bez polskich znaków też dobrze
+          const cmp = e.mode === 'srodki' ? normAnswer : e.mode === 'dyktando' ? exact : loose;
           ok = it.accept.some((a) => cmp(a) === cmp(inp.value));
           inp.classList.add(ok ? 'right' : 'bad');
           fb.innerHTML = `<div class="feedback ${ok ? 'ok' : 'bad'}"><strong>${ok ? praise() : 'Niestety nie.'}</strong>
