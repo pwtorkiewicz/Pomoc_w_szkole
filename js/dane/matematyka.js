@@ -9,7 +9,7 @@ window.SUBJECTS.push({
     {
       id: 'liczby',
       name: 'Liczby i działania',
-      basis: 'Informator CKE (matematyka, od r. szk. 2024/2025) – wymagania z klas IV–VIII, m.in. kl. IV–VI: I. Liczby naturalne, II. Działania na liczbach naturalnych, IV. Ułamki zwykłe i dziesiętne; kl. VII–VIII: X. Oś liczbowa. Układ współrzędnych na płaszczyźnie.',
+      basis: 'Informator CKE (matematyka, od r. szk. 2024/2025) – wymagania z klas IV–VIII, m.in. kl. IV–VI: I. Liczby naturalne, II. Działania na liczbach naturalnych (II.6–15: podzielność, kwadraty i sześciany, szacowanie, NWD i NWW metodą rozkładu na czynniki, liczebność zbiorów liczb, rozkład na czynniki pierwsze, dzielenie z resztą), III. Liczby całkowite, IV. Ułamki zwykłe i dziesiętne; kl. VII–VIII: X. Oś liczbowa. Układ współrzędnych na płaszczyźnie.',
       theory: `
         <h3>Kolejność działań</h3>
         <p>1) nawiasy → 2) potęgi i pierwiastki → 3) mnożenie i dzielenie → 4) dodawanie i odejmowanie. Przykład: <span class="f">2 + 3 · 4 = 14</span></p>
@@ -37,6 +37,28 @@ window.SUBJECTS.push({
         <h3>Układ współrzędnych</h3>
         <p>Środek odcinka AB, gdzie A = (x₁, y₁), B = (x₂, y₂): <span class="f">S = ((x₁ + x₂)/2, (y₁ + y₂)/2)</span></p>
         <p>Długość odcinka w układzie współrzędnych liczymy z twierdzenia Pitagorasa: dla A = (1, 1) i B = (4, 5) różnice współrzędnych to 3 i 4, więc |AB| = √(3² + 4²) = 5.</p>
+        <h3>Rozkład na czynniki pierwsze</h3>
+        <p>Dziel kolejno przez najmniejsze liczby pierwsze (2, 3, 5, 7, …), aż zostanie 1:</p>
+        <p><span class="f">360 = 2 · 2 · 2 · 3 · 3 · 5 = 2³ · 3² · 5</span></p>
+        <h3>NWD i NWW z rozkładu</h3>
+        <p>84 = 2 · 2 · 3 · 7, 90 = 2 · 3 · 3 · 5.</p>
+        <ul>
+          <li><b>NWD</b> – mnożymy czynniki wspólne obu rozkładów: NWD(84, 90) = 2 · 3 = 6.</li>
+          <li><b>NWW</b> – bierzemy rozkład jednej liczby i dopisujemy brakujące czynniki drugiej: NWW(84, 90) = 2 · 2 · 3 · 7 · 3 · 5 = 1260.</li>
+        </ul>
+        <h3>Kwadraty i sześciany</h3>
+        <table>
+          <tr><th>n</th><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+          <tr><th>n²</th><td>121</td><td>144</td><td>169</td><td>196</td><td>225</td></tr>
+        </table>
+        <table>
+          <tr><th>n</th><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>10</td></tr>
+          <tr><th>n³</th><td>8</td><td>27</td><td>64</td><td>125</td><td>216</td><td>1000</td></tr>
+        </table>
+        <h3>Szacowanie</h3>
+        <p>Zaokrąglij liczby i policz w pamięci: 49 · 21 ≈ 50 · 20 = 1000; 398 + 205 ≈ 400 + 200 = 600. Szacowanie pomaga też sprawdzić, czy wynik zadania ma sens.</p>
+        <h3>Ile jest takich liczb?</h3>
+        <p>Gdy pytanie dotyczy niewielkiego zakresu, po prostu wypisz wszystkie liczby. Np. liczby dwucyfrowe, które są kwadratami: 16, 25, 36, 49, 64, 81 – jest ich 6.</p>
       `,
       flashcards: [
         ['Cecha podzielności przez 3', 'Suma cyfr podzielna przez 3'],
@@ -50,6 +72,12 @@ window.SUBJECTS.push({
         ['Środek odcinka', 'S = ((x₁ + x₂)/2, (y₁ + y₂)/2)'],
         ['Liczba pierwsza', 'Ma dokładnie dwa dzielniki: 1 i samą siebie'],
         ['|−7|', '7'],
+        ['Rozkład 60 na czynniki pierwsze', '2 · 2 · 3 · 5'],
+        ['NWD z rozkładu na czynniki', 'Iloczyn czynników wspólnych obu liczb'],
+        ['NWW z rozkładu na czynniki', 'Rozkład jednej liczby i brakujące czynniki drugiej'],
+        ['13² / 15²', '169 / 225'],
+        ['6³ / 5³', '216 / 125'],
+        ['Szacowanie: 49 · 21', '≈ 50 · 20 = 1000'],
       ],
       questions: [
         { id: 'va5avn', q: 'Ile wynosi 2 + 3 · 4?', options: ['20', '14', '24', '9'], answer: 1, explain: 'Najpierw mnożenie: 3 · 4 = 12, potem 2 + 12 = 14.' },
@@ -231,6 +259,18 @@ window.SUBJECTS.push({
           answer: 0,
           explain: 'A = (−2, −1), B = (2, 2). Różnice współrzędnych: 2 − (−2) = 4 i 2 − (−1) = 3, więc |AB| = √(4² + 3²) = √25 = 5.',
         },
+        { id: 'kdync3', q: 'Rozkład liczby 84 na czynniki pierwsze to…', options: ['4 · 3 · 7', '2 · 42', '2 · 2 · 3 · 7', '2 · 3 · 14'], answer: 2, explain: 'Wszystkie czynniki muszą być liczbami pierwszymi. 4, 42 i 14 nie są pierwsze.' },
+        { id: 'd79ydm', q: 'Która liczba ma rozkład na czynniki pierwsze 2 · 2 · 3 · 11?', options: ['132', '66', '264', '122'], answer: 0, explain: '2 · 2 · 3 = 12, 12 · 11 = 132.' },
+        { id: 'i3ci08', q: 'Ile wynosi NWD(84, 126)?', options: ['14', '42', '21', '252'], answer: 1, explain: '84 = 2 · 2 · 3 · 7, 126 = 2 · 3 · 3 · 7. Wspólne czynniki: 2 · 3 · 7 = 42. (252 to NWW tych liczb.)' },
+        { id: 'qj2w9y', q: 'Ile wynosi NWW(18, 30)?', options: ['540', '6', '90', '180'], answer: 2, explain: '18 = 2 · 3 · 3, 30 = 2 · 3 · 5. NWW = 2 · 3 · 3 · 5 = 90.' },
+        { id: 'tumvc3', q: 'Ile wynosi 14²?', options: ['28', '196', '186', '144'], answer: 1, explain: '14 · 14 = 196.' },
+        { id: 'y8g8cw', q: 'Która z liczb jest sześcianem liczby naturalnej?', options: ['100', '150', '225', '125'], answer: 3, explain: '125 = 5 · 5 · 5 = 5³. 100 i 225 to kwadraty (10² i 15²), a 150 nie jest ani kwadratem, ani sześcianem.' },
+        { id: '99tp9r', q: 'Ile wynosi 2³ + 3²?', options: ['17', '12', '13', '36'], answer: 0, explain: '2³ = 8, 3² = 9, 8 + 9 = 17.' },
+        { id: 'zre8wx', q: 'Wynik działania 398 · 51 jest najbliższy liczbie…', options: ['2 000', '20 000', '200 000', '15 000'], answer: 1, explain: '398 · 51 ≈ 400 · 50 = 20 000 (dokładnie 20 298).' },
+        { id: 'chxbgk', q: 'Kasia kupiła 3 zeszyty po 4,90 zł i długopis za 2,95 zł. Ile mniej więcej zapłaciła?', options: ['około 15 zł', 'około 18 zł', 'około 21 zł', 'około 12 zł'], answer: 1, explain: '3 · 5 zł + 3 zł = 18 zł (dokładnie 17,65 zł).' },
+        { id: 'lfenot', q: 'Ile liczb dwucyfrowych jest kwadratami liczb naturalnych?', options: ['5', '6', '7', '9'], answer: 1, explain: 'Wypisz: 16, 25, 36, 49, 64, 81 – jest ich 6.' },
+        { id: 'qwobbx', q: 'Ile jest liczb pierwszych większych od 20 i mniejszych od 40?', options: ['3', '5', '4', '6'], answer: 2, explain: 'Wypisz: 23, 29, 31, 37 – są 4. (21, 27, 33, 39 dzielą się przez 3, a 35 – przez 5.)' },
+        { id: 'pu5vhk', q: 'Prawda czy fałsz?\nLiczba 91 jest liczbą pierwszą.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: '91 = 7 · 13, więc jest liczbą złożoną.' },
       ],
       tasks: [
         {
@@ -365,6 +405,21 @@ window.SUBJECTS.push({
           scoring: [
             '1 pkt – zauważenie, że trzeba wyznaczyć NWD(48, 36), albo wypisanie wspólnych dzielników liczb 48 i 36.',
             '2 pkt – odpowiedź: 12 bukietów po 4 róże białe i 3 czerwone.',
+          ],
+        },
+        {
+          id: 'myqwf2',
+          points: 2,
+          q: 'Z jednakowych prostokątnych płytek o wymiarach 12 cm × 18 cm układamy (bez cięcia i bez szpar, wszystkie płytki ułożone tak samo) jak najmniejszy kwadrat. Jaką długość będzie miał bok tego kwadratu i ile płytek potrzeba?',
+          steps: [
+            'Bok kwadratu musi być wielokrotnością i 12, i 18. Najmniejsza taka liczba to NWW(12, 18).',
+            '12 = 2 · 2 · 3, 18 = 2 · 3 · 3, więc NWW(12, 18) = 2 · 2 · 3 · 3 = 36 cm.',
+            'Wzdłuż jednego boku zmieszczą się 36 : 12 = 3 płytki, wzdłuż drugiego 36 : 18 = 2 płytki. Płytek: 3 · 2 = 6.',
+          ],
+          answer: 'Bok kwadratu: 36 cm, potrzeba 6 płytek.',
+          scoring: [
+            '1 pkt – wyznaczenie boku kwadratu: 36 cm (NWW(12, 18)).',
+            '2 pkt – poprawna liczba płytek: 6.',
           ],
         },
       ],
@@ -1087,9 +1142,299 @@ window.SUBJECTS.push({
       ],
     },
     {
+      id: 'katy-trojkaty',
+      name: 'Proste, kąty i trójkąty',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), matematyka kl. IV–VI: VII. Proste i odcinki (VII.1–5), VIII. Kąty (VIII.1–5), IX. Wielokąty, koła i okręgi (IX.1–5, IX.8); kl. VII–VIII: VIII.2 (proste prostopadłe i równoległe), VIII.6. Egzamin sprawdza wymagania z klas IV–VIII (informator CKE).',
+      theory: `
+        <h3>Punkt, prosta, półprosta, odcinek</h3>
+        <table>
+          <tr><th>Figura</th><th>Końce</th><th>Długość</th></tr>
+          <tr><td>prosta</td><td>nie ma końców – biegnie bez końca w obie strony</td><td>nie</td></tr>
+          <tr><td>półprosta</td><td>jeden koniec (początek)</td><td>nie</td></tr>
+          <tr><td>odcinek AB</td><td>dwa końce: A i B</td><td>tak, np. |AB| = 5 cm</td></tr>
+        </table>
+        <h3>Proste prostopadłe i równoległe</h3>
+        <ul>
+          <li><b>Prostopadłe</b> (a ⊥ b) – przecinają się pod kątem prostym.</li>
+          <li><b>Równoległe</b> (a ∥ b) – nie przecinają się; wszędzie są tak samo od siebie oddalone.</li>
+          <li><b>Odległość punktu od prostej</b> to długość odcinka <b>prostopadłego</b> poprowadzonego z punktu do prostej. To najkrótszy odcinek łączący punkt z prostą.</li>
+        </ul>
+        <h3>Kąty</h3>
+        <p>Kąt ma <b>wierzchołek</b> i dwa <b>ramiona</b> (półproste wychodzące z wierzchołka).</p>
+        <table>
+          <tr><th>Kąt</th><th>Miara</th></tr>
+          <tr><td>ostry</td><td>mniej niż 90°</td></tr>
+          <tr><td>prosty</td><td>dokładnie 90°</td></tr>
+          <tr><td>rozwarty</td><td>więcej niż 90°, ale mniej niż 180°</td></tr>
+        </table>
+        <p>Kąt <b>półpełny</b> ma 180° – jego ramiona tworzą prostą.</p>
+        <div class="tip">💡 Większy kąt = szerzej rozwarte ramiona. Długość narysowanych ramion nie ma znaczenia!</div>
+        <h3>Rodzaje trójkątów</h3>
+        <table>
+          <tr><th>Ze względu na kąty</th><th>Ze względu na boki</th></tr>
+          <tr><td><b>ostrokątny</b> – wszystkie kąty ostre</td><td><b>równoramienny</b> – dwa boki (ramiona) równej długości</td></tr>
+          <tr><td><b>prostokątny</b> – jeden kąt prosty</td><td><b>równoboczny</b> – wszystkie boki równe, każdy kąt ma 60°</td></tr>
+          <tr><td><b>rozwartokątny</b> – jeden kąt rozwarty</td><td></td></tr>
+        </table>
+        <p>Suma kątów trójkąta to <span class="f">180°</span>, więc trójkąt nie może mieć dwóch kątów prostych ani dwóch rozwartych.</p>
+        <h3>Trójkąt równoramienny</h3>
+        <ul>
+          <li>Kąty przy podstawie są równe. Gdy kąt przy podstawie to α, kąt między ramionami ma <span class="f">180° − 2α</span>.</li>
+          <li>Gdy kąt między ramionami to β, każdy kąt przy podstawie ma <span class="f">(180° − β) : 2</span>.</li>
+          <li>Kąt prosty lub rozwarty może być tylko kątem między ramionami.</li>
+          <li>Obwód: <span class="f">Ob = 2 · ramię + podstawa</span>. Gdy znasz obwód i jeden bok, sprawdź, czy to ramię, czy podstawa – czasem pasują oba przypadki.</li>
+        </ul>
+        <h3>Czworokąty</h3>
+        <table>
+          <tr><th>Figura</th><th>Najważniejsze własności</th></tr>
+          <tr><td>kwadrat</td><td>wszystkie boki równe, wszystkie kąty proste; przekątne równe, prostopadłe, dzielą się na połowy</td></tr>
+          <tr><td>prostokąt</td><td>wszystkie kąty proste, przeciwległe boki równe; przekątne równe i dzielą się na połowy</td></tr>
+          <tr><td>romb</td><td>wszystkie boki równe, przeciwległe kąty równe; przekątne prostopadłe i dzielą się na połowy</td></tr>
+          <tr><td>równoległobok</td><td>dwie pary boków równoległych, przeciwległe boki i kąty równe, sąsiednie kąty dają razem 180°; przekątne dzielą się na połowy</td></tr>
+          <tr><td>trapez</td><td>co najmniej jedna para boków równoległych (podstawy)</td></tr>
+        </table>
+        <p>Kwadrat jest jednocześnie prostokątem i rombem.</p>
+      `,
+      flashcards: [
+        ['Prosta / półprosta / odcinek', 'Prosta – bez końców, półprosta – jeden koniec, odcinek – dwa końce'],
+        ['Proste prostopadłe (a ⊥ b)', 'Przecinają się pod kątem prostym'],
+        ['Proste równoległe (a ∥ b)', 'Nie przecinają się'],
+        ['Odległość punktu od prostej', 'Długość odcinka prostopadłego poprowadzonego z punktu do prostej'],
+        ['Kąt ostry / prosty / rozwarty', 'Mniej niż 90° / 90° / między 90° a 180°'],
+        ['Trójkąt rozwartokątny', 'Ma jeden kąt rozwarty'],
+        ['Kąty trójkąta równobocznego', 'Każdy ma 60°'],
+        ['Trójkąt równoramienny: kąt między ramionami β', 'Kąty przy podstawie: (180° − β) : 2'],
+        ['Przekątne rombu', 'Są prostopadłe i dzielą się na połowy'],
+        ['Przekątne prostokąta', 'Są równej długości i dzielą się na połowy'],
+      ],
+      questions: [
+        { id: 'h46ul8', q: 'Figura, która ma początek, ale nie ma końca, to…', options: ['odcinek', 'prosta', 'półprosta', 'kąt prosty'], answer: 2, explain: 'Półprosta ma jeden koniec (początek) i biegnie bez końca w jedną stronę.' },
+        {
+          id: 'pwvboh',
+          q: 'Na prostej zaznaczono cztery punkty (rysunek). Ile jest odcinków, których oba końce są zaznaczonymi punktami?',
+          svg: `<svg viewBox="0 0 360 80" role="img" aria-label="Prosta, na której zaznaczono cztery punkty: A, B, C i D">
+      <line x1="15" y1="45" x2="345" y2="45" class="ln"/>
+      <circle cx="50" cy="45" r="5" class="t1"/>
+      <text x="50" y="30" class="tx-b" text-anchor="middle">A</text>
+      <circle cx="130" cy="45" r="5" class="t1"/>
+      <text x="130" y="30" class="tx-b" text-anchor="middle">B</text>
+      <circle cx="230" cy="45" r="5" class="t1"/>
+      <text x="230" y="30" class="tx-b" text-anchor="middle">C</text>
+      <circle cx="310" cy="45" r="5" class="t1"/>
+      <text x="310" y="30" class="tx-b" text-anchor="middle">D</text>
+    </svg>`,
+          options: ['3', '4', '6', '8'],
+          answer: 2,
+          explain: 'Wypisz je po kolei: AB, AC, AD, BC, BD, CD – razem 6.',
+        },
+        {
+          id: 'yt3yau',
+          q: 'Który z kątów na rysunku jest rozwarty?',
+          svg: `<svg viewBox="0 0 400 120" role="img" aria-label="Cztery kąty: alfa ostry, beta prosty, gamma rozwarty, delta ostry">
+      <polyline points="85,100 15,100 68.6,55" class="ln sw"/>
+      <path d="M33,100 A18,18 0 0 0 28.8,88.4" class="ln s2"/>
+      <text x="48.8" y="93.7" class="tx-b t2" text-anchor="middle">α</text>
+      <polyline points="175,100 115,100 115,40" class="ln sw"/>
+      <polyline points="128,100 128,87 115,87" class="ln"/>
+      <text x="140.5" y="80.5" class="tx-b t2" text-anchor="middle">β</text>
+      <polyline points="295,100 240,100 204.6,57.9" class="ln sw"/>
+      <path d="M258,100 A18,18 0 0 0 228.4,86.2" class="ln s2"/>
+      <text x="252.7" y="78.8" class="tx-b t2" text-anchor="middle">γ</text>
+      <polyline points="380,100 315,100 331.8,37.2" class="ln sw"/>
+      <path d="M333,100 A18,18 0 0 0 319.7,82.6" class="ln s2"/>
+      <text x="343.6" y="84.1" class="tx-b t2" text-anchor="middle">δ</text>
+    </svg>`,
+          options: ['α', 'β', 'γ', 'δ'],
+          noShuffle: true,
+          answer: 2,
+          explain: 'Kąt γ jest szerzej rozwarty niż kąt prosty β, ale mniej niż kąt półpełny – to kąt rozwarty. Kąty α i δ są ostre.',
+        },
+        { id: 'lqbsbt', q: 'Kąt o mierze 105° jest kątem…', options: ['ostrym', 'prostym', 'rozwartym', 'półpełnym'], answer: 2, explain: '105° to więcej niż 90°, a mniej niż 180°.' },
+        {
+          id: 'yt0i5j',
+          q: 'Który kąt na rysunku jest większy?',
+          svg: `<svg viewBox="0 0 360 170" role="img" aria-label="Kąt alfa o długich ramionach i mniejszym rozwarciu oraz kąt beta o krótkich ramionach i większym rozwarciu">
+      <polyline points="160,150 20,150 134.7,69.7" class="ln sw"/>
+      <path d="M50,150 A30,30 0 0 0 44.6,132.8" class="ln s2"/>
+      <text x="63.9" y="142.2" class="tx-b t2" text-anchor="middle">α</text>
+      <polyline points="300,150 240,150 270,98" class="ln sw"/>
+      <path d="M262,150 A22,22 0 0 0 251,130.9" class="ln s2"/>
+      <text x="271.2" y="138" class="tx-b t2" text-anchor="middle">β</text>
+    </svg>`,
+          options: ['kąt α', 'kąt β', 'oba są równe', 'nie da się tego ocenić bez długości ramion'],
+          answer: 1,
+          explain: 'Wielkość kąta zależy od tego, jak szeroko są rozwarte ramiona, a nie od ich długości. Ramiona kąta β są rozwarte szerzej.',
+        },
+        {
+          id: 'yveoxh',
+          q: 'Na rysunku odcinek PB jest prostopadły do prostej k. Jaka jest odległość punktu P od prostej k?',
+          svg: `<svg viewBox="0 0 400 175" role="img" aria-label="Punkt P nad prostą k i trzy odcinki od P do prostej: PA o długości 5, PB o długości 4 prostopadły do prostej, PC o długości 6">
+      <line x1="20" y1="140" x2="390" y2="140" class="ln"/>
+      <line x1="200" y1="40" x2="125" y2="140" class="ln s1 sw"/>
+      <line x1="200" y1="40" x2="200" y2="140" class="ln s2 sw"/>
+      <line x1="200" y1="40" x2="311.8" y2="140" class="ln s3 sw"/>
+      <polyline points="212,140 212,128 200,128" class="ln"/>
+      <circle cx="200" cy="40" r="5" class="t2"/>
+      <text x="212" y="38" class="tx-b">P</text>
+      <circle cx="125" cy="140" r="4" class="t1"/>
+      <text x="125" y="162" class="tx-b" text-anchor="middle">A</text>
+      <circle cx="200" cy="140" r="4" class="t1"/>
+      <text x="200" y="162" class="tx-b" text-anchor="middle">B</text>
+      <circle cx="311.8" cy="140" r="4" class="t1"/>
+      <text x="311.8" y="162" class="tx-b" text-anchor="middle">C</text>
+      <text x="150" y="96" class="tx-b t1" text-anchor="end">5</text>
+      <text x="186" y="100" class="tx-b t2" text-anchor="end">4</text>
+      <text x="266" y="92" class="tx-b t3">6</text>
+      <text x="384" y="130" class="tx-b" text-anchor="end">k</text>
+    </svg>`,
+          options: ['4', '5', '6', '15'],
+          answer: 0,
+          explain: 'Odległość punktu od prostej to długość odcinka prostopadłego do prostej – najkrótszego z możliwych. Tu |PB| = 4.',
+        },
+        {
+          id: 'ecl6h8',
+          q: 'Na kratkach narysowano proste a, b, c i d (rysunek). Które zdanie jest prawdziwe?',
+          svg: `<svg viewBox="0 0 345 245" role="img" aria-label="Cztery proste na kratkach: a i b biegną 2 kratki w prawo i 1 w górę, c biegnie 1 kratkę w lewo i 2 w górę, d biegnie 1 w prawo i 1 w górę">
+      <line x1="20" y1="225" x2="20" y2="15" class="ln-thin"/>
+      <line x1="50" y1="225" x2="50" y2="15" class="ln-thin"/>
+      <line x1="80" y1="225" x2="80" y2="15" class="ln-thin"/>
+      <line x1="110" y1="225" x2="110" y2="15" class="ln-thin"/>
+      <line x1="140" y1="225" x2="140" y2="15" class="ln-thin"/>
+      <line x1="170" y1="225" x2="170" y2="15" class="ln-thin"/>
+      <line x1="200" y1="225" x2="200" y2="15" class="ln-thin"/>
+      <line x1="230" y1="225" x2="230" y2="15" class="ln-thin"/>
+      <line x1="260" y1="225" x2="260" y2="15" class="ln-thin"/>
+      <line x1="290" y1="225" x2="290" y2="15" class="ln-thin"/>
+      <line x1="320" y1="225" x2="320" y2="15" class="ln-thin"/>
+      <line x1="20" y1="225" x2="320" y2="225" class="ln-thin"/>
+      <line x1="20" y1="195" x2="320" y2="195" class="ln-thin"/>
+      <line x1="20" y1="165" x2="320" y2="165" class="ln-thin"/>
+      <line x1="20" y1="135" x2="320" y2="135" class="ln-thin"/>
+      <line x1="20" y1="105" x2="320" y2="105" class="ln-thin"/>
+      <line x1="20" y1="75" x2="320" y2="75" class="ln-thin"/>
+      <line x1="20" y1="45" x2="320" y2="45" class="ln-thin"/>
+      <line x1="20" y1="15" x2="320" y2="15" class="ln-thin"/>
+      <line x1="20" y1="195" x2="260" y2="75" class="ln s1 sw"/>
+      <text x="266" y="71" class="tx-b t1">a</text>
+      <line x1="80" y1="225" x2="320" y2="105" class="ln s2 sw"/>
+      <text x="314" y="97" class="tx-b t2" text-anchor="end">b</text>
+      <line x1="260" y1="225" x2="170" y2="45" class="ln s3 sw"/>
+      <text x="162" y="49" class="tx-b t3" text-anchor="end">c</text>
+      <line x1="20" y1="105" x2="110" y2="15" class="ln s5 sw"/>
+      <text x="118" y="29" class="tx-b t5">d</text>
+    </svg>`,
+          options: ['a ∥ c', 'b ⊥ c', 'a ⊥ d', 'c ∥ d'],
+          answer: 1,
+          explain: 'Proste a i b biegną „2 kratki w prawo, 1 w górę”, a prosta c – „1 kratka w lewo, 2 w górę”. To ten sam kierunek obrócony o kąt prosty, więc c ⊥ a i c ⊥ b. Prosta d („1 w prawo, 1 w górę”) nie jest ani równoległa do c, ani prostopadła do a.',
+        },
+        { id: 'b0ezok', q: 'Trójkąt ma kąty 40°, 40° i 100°. Jaki to trójkąt?', options: ['ostrokątny i równoramienny', 'rozwartokątny i równoramienny', 'prostokątny i równoramienny', 'rozwartokątny i równoboczny'], answer: 1, explain: 'Kąt 100° jest rozwarty. Dwa równe kąty (po 40°) oznaczają, że trójkąt jest równoramienny. Równoboczny musiałby mieć wszystkie kąty po 60°.' },
+        { id: 'yl48nn', q: 'Dwa kąty trójkąta mają 35° i 55°. Ten trójkąt jest…', options: ['ostrokątny', 'rozwartokątny', 'równoboczny', 'prostokątny'], answer: 3, explain: 'Trzeci kąt: 180° − 35° − 55° = 90°.' },
+        { id: '70iiq6', q: 'Prawda czy fałsz?\nTrójkąt może mieć dwa kąty rozwarte.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Dwa kąty rozwarte dałyby razem ponad 180°, a suma wszystkich kątów trójkąta to 180°.' },
+        { id: 'tyhzhb', q: 'Prawda czy fałsz?\nW trójkącie równobocznym każdy kąt ma 60°.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Wszystkie kąty są równe, a razem mają 180°: 180° : 3 = 60°.' },
+        { id: '0zeabl', q: 'Ile kątów ostrych ma każdy trójkąt prostokątny?', options: ['0', '1', '2', '3'], answer: 2, explain: 'Dwa pozostałe kąty mają razem 180° − 90° = 90°, więc każdy z nich jest mniejszy od 90°.' },
+        { id: 'btmnmw', q: 'W trójkącie równoramiennym kąt przy podstawie ma 50°. Ile stopni ma kąt między ramionami?', options: ['50°', '80°', '130°', '65°'], answer: 1, explain: 'Oba kąty przy podstawie mają po 50°: 180° − 2 · 50° = 80°.' },
+        { id: 'topi5g', q: 'Jeden z kątów trójkąta równoramiennego ma 100°. Ile mają pozostałe kąty?', options: ['80° i 80°', '40° i 40°', '100° i 40°', '50° i 30°'], answer: 1, explain: 'Kąt 100° musi być kątem między ramionami (dwa kąty po 100° dałyby ponad 180°). Kąty przy podstawie: (180° − 100°) : 2 = 40°.' },
+        { id: 'oy3ziz', q: 'Trójkąt równoramienny ma obwód 26 cm, a jego podstawa ma 8 cm. Jaką długość ma ramię?', options: ['9 cm', '18 cm', '13 cm', '10 cm'], answer: 0, explain: 'Na dwa ramiona zostaje 26 − 8 = 18 cm, więc jedno ramię ma 9 cm.' },
+        { id: 'ip8j7a', q: 'Ramię trójkąta równoramiennego ma 7 cm, a obwód tego trójkąta wynosi 20 cm. Jaką długość ma podstawa?', options: ['13 cm', '6,5 cm', '6 cm', '7 cm'], answer: 2, explain: 'Podstawa: 20 − 2 · 7 = 6 cm.' },
+        { id: 'xbk28s', q: 'Który czworokąt ma zawsze przekątne prostopadłe, ale nie zawsze równej długości?', options: ['prostokąt', 'kwadrat', 'równoległobok', 'romb'], answer: 3, explain: 'Przekątne rombu są prostopadłe, ale równe tylko wtedy, gdy romb jest kwadratem. Kwadrat ma przekątne zawsze równe.' },
+        { id: 'nqwtr7', q: 'Którą własność ma każdy prostokąt?', options: ['przekątne są równej długości', 'przekątne są prostopadłe', 'wszystkie boki są równe', 'ma tylko jedną parę boków równoległych'], answer: 0, explain: 'Przekątne prostokąta są równe i dzielą się na połowy. Prostopadłe są tylko w kwadracie.' },
+        { id: 'fn04p4', q: 'Prawda czy fałsz?\nKażdy kwadrat jest rombem.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Romb to czworokąt o wszystkich bokach równych, a kwadrat ma wszystkie boki równe.' },
+        { id: 'y8o8f6', q: 'Prawda czy fałsz?\nKażdy romb jest kwadratem.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Romb nie musi mieć kątów prostych – wtedy nie jest kwadratem.' },
+        {
+          id: '4o6pkv',
+          q: 'Na kratkach narysowano czworokąt (rysunek). Jaki to czworokąt?',
+          svg: `<svg viewBox="0 0 280 215" role="img" aria-label="Czworokąt na kratkach o wierzchołkach w punktach kratowych; jego przekątne są poziomą i pionową linią długości 6 i 4 kratek">
+      <line x1="20" y1="195" x2="20" y2="15" class="ln-thin"/>
+      <line x1="50" y1="195" x2="50" y2="15" class="ln-thin"/>
+      <line x1="80" y1="195" x2="80" y2="15" class="ln-thin"/>
+      <line x1="110" y1="195" x2="110" y2="15" class="ln-thin"/>
+      <line x1="140" y1="195" x2="140" y2="15" class="ln-thin"/>
+      <line x1="170" y1="195" x2="170" y2="15" class="ln-thin"/>
+      <line x1="200" y1="195" x2="200" y2="15" class="ln-thin"/>
+      <line x1="230" y1="195" x2="230" y2="15" class="ln-thin"/>
+      <line x1="260" y1="195" x2="260" y2="15" class="ln-thin"/>
+      <line x1="20" y1="195" x2="260" y2="195" class="ln-thin"/>
+      <line x1="20" y1="165" x2="260" y2="165" class="ln-thin"/>
+      <line x1="20" y1="135" x2="260" y2="135" class="ln-thin"/>
+      <line x1="20" y1="105" x2="260" y2="105" class="ln-thin"/>
+      <line x1="20" y1="75" x2="260" y2="75" class="ln-thin"/>
+      <line x1="20" y1="45" x2="260" y2="45" class="ln-thin"/>
+      <line x1="20" y1="15" x2="260" y2="15" class="ln-thin"/>
+      <polygon points="50,105 140,165 230,105 140,45" class="f1 s1 sw"/>
+    </svg>`,
+          options: ['kwadrat', 'prostokąt', 'romb', 'trapez prostokątny'],
+          answer: 2,
+          explain: 'Każdy bok to przesunięcie o 3 kratki w poziomie i 2 w pionie, więc wszystkie boki są równe. Kąty nie są proste (przekątne mają różne długości: 6 i 4), więc to romb, który nie jest kwadratem.',
+        },
+        { id: 'n9ez0k', q: 'O godzinie 4:00 wskazówki zegara tworzą (mniejszy z dwóch) kąt…', options: ['ostry', 'prosty', 'rozwarty', 'półpełny'], answer: 2, explain: 'Między sąsiednimi godzinami na tarczy jest 360° : 12 = 30°. O 4:00: 4 · 30° = 120° – kąt rozwarty.' },
+      ],
+      tasks: [
+        {
+          id: '9btr35',
+          points: 2,
+          q: 'Obwód trójkąta równoramiennego wynosi 30 cm, a jeden z jego boków ma 8 cm. Oblicz długości pozostałych boków. Rozważ wszystkie możliwości.',
+          steps: [
+            'Przypadek 1: bok 8 cm to podstawa. Na dwa ramiona zostaje 30 − 8 = 22 cm, więc ramiona mają po 11 cm. Trójkąt 11, 11, 8 istnieje (8 < 11 + 11).',
+            'Przypadek 2: bok 8 cm to ramię. Wtedy podstawa ma 30 − 2 · 8 = 14 cm. Trójkąt 8, 8, 14 istnieje (14 < 8 + 8).',
+            'Sprawdzenie obwodów: 8 + 11 + 11 = 30 i 8 + 8 + 14 = 30.',
+          ],
+          answer: 'Ramiona 11 cm i 11 cm (podstawa 8 cm) albo ramię 8 cm i podstawa 14 cm.',
+          scoring: [
+            '1 pkt – poprawne rozwiązanie jednego przypadku.',
+            '2 pkt – oba przypadki: 8, 11, 11 oraz 8, 8, 14.',
+          ],
+        },
+        {
+          id: 'nxq94a',
+          points: 2,
+          q: 'W trójkącie równoramiennym ABC, w którym AC = BC, kąt przy wierzchołku A jest o 30° większy od kąta przy wierzchołku C. Oblicz miary kątów tego trójkąta.',
+          steps: [
+            'Kąty przy podstawie AB są równe: ∠A = ∠B = x. Wtedy ∠C = x − 30°.',
+            'Suma kątów trójkąta: x + x + (x − 30°) = 180°, więc 3x = 210° i x = 70°.',
+            '∠C = 70° − 30° = 40°. Sprawdzenie: 70° + 70° + 40° = 180°.',
+          ],
+          answer: '∠A = 70°, ∠B = 70°, ∠C = 40°',
+          scoring: [
+            '1 pkt – zauważenie, że ∠A = ∠B, i zapisanie równania (albo poprawny sposób obliczenia).',
+            '2 pkt – poprawne miary wszystkich kątów: 70°, 70°, 40°.',
+          ],
+        },
+        {
+          id: '3epwi9',
+          points: 3,
+          q: 'Przekątne prostokąta ABCD przecinają się w punkcie S, a kąt ASB ma 120° (rysunek). Oblicz miary kątów trójkąta BSC i uzasadnij, że jest to trójkąt równoboczny.',
+          svg: `<svg viewBox="0 0 320 210" role="img" aria-label="Prostokąt ABCD z przekątnymi AC i BD przecinającymi się w punkcie S. Kąt ASB ma 120 stopni">
+      <polygon points="40,180 280,180 280,41.4 40,41.4" class="f1 s1 sw"/>
+      <line x1="40" y1="180" x2="280" y2="41.4" class="ln"/>
+      <line x1="280" y1="180" x2="40" y2="41.4" class="ln"/>
+      <path d="M142.7,120.7 A20,20 0 0 0 177.3,120.7" class="ln s2"/>
+      <text x="160" y="152.7" class="tx t2" text-anchor="middle">120°</text>
+      <circle cx="160" cy="110.7" r="3" class="t2"/>
+      <text x="160" y="98.7" class="tx-b" text-anchor="middle">S</text>
+      <text x="34" y="200" class="tx-b">A</text>
+      <text x="274" y="200" class="tx-b">B</text>
+      <text x="274" y="33.4" class="tx-b">C</text>
+      <text x="34" y="33.4" class="tx-b">D</text>
+    </svg>`,
+          steps: [
+            'Przekątne prostokąta są równe i dzielą się na połowy, więc SB = SC – trójkąt BSC jest równoramienny.',
+            'Kąty ASB i BSC są przyległe: ∠BSC = 180° − 120° = 60°.',
+            'Kąty przy podstawie BC: (180° − 60°) : 2 = 60°. Wszystkie kąty trójkąta BSC mają po 60°.',
+            'Trójkąt, który ma wszystkie kąty równe, ma też wszystkie boki równe – jest równoboczny.',
+          ],
+          answer: 'Każdy kąt trójkąta BSC ma 60°, więc trójkąt BSC jest równoboczny.',
+          scoring: [
+            '1 pkt – obliczenie kąta BSC = 60° (kąty przyległe).',
+            '2 pkt – uzasadnienie, że SB = SC (przekątne prostokąta są równe i dzielą się na połowy).',
+            '3 pkt – obliczenie pozostałych kątów (po 60°) i wniosek, że trójkąt jest równoboczny.',
+          ],
+        },
+      ],
+    },
+    {
       id: 'geometria',
       name: 'Geometria płaska',
-      basis: 'Informator CKE (matematyka) – kl. IV–VI: IX. Wielokąty, koła i okręgi (w tym osie symetrii figur); kl. VII–VIII: XI. Obliczenia w geometrii (m.in. twierdzenie Pitagorasa).',
+      basis: 'Informator CKE (matematyka) – kl. IV–VI: IX. Wielokąty, koła i okręgi (w tym osie symetrii figur), XI. Obliczenia w geometrii (XI.3–5: pola wielokątów, także przez podział na mniejsze wielokąty i uzupełnianie do większych; jednostki pola mm², cm², dm², m², ar, hektar, km²); kl. VII–VIII: IX. Wielokąty, VIII.7 (twierdzenie Pitagorasa).',
       theory: `
         <h3>Twierdzenie Pitagorasa</h3>
         <p>W trójkącie prostokątnym: <span class="f">a² + b² = c²</span> (c – przeciwprostokątna, naprzeciw kąta prostego).</p>
@@ -1133,6 +1478,23 @@ window.SUBJECTS.push({
         <ul>
           <li>W równoległoboku sąsiednie kąty sumują się do 180°.</li>
         </ul>
+        <h3>Pole figury na kratkach</h3>
+        <ul>
+          <li><b>Podział</b>: rozetnij figurę na prostokąty i trójkąty, policz ich pola i dodaj.</li>
+          <li><b>Uzupełnianie</b>: dorysuj figurę do prostokąta, a potem od pola prostokąta odejmij pola dorysowanych części (najczęściej trójkątów prostokątnych).</li>
+        </ul>
+        <p>Przykład: trójkąt o wierzchołkach (0, 1), (4, 0), (3, 4) mieści się w kwadracie 4 × 4. Odejmujemy trzy trójkąty prostokątne: 16 − 2 − 2 − 4,5 = 7,5 kratki.</p>
+        <h3>Jednostki pola</h3>
+        <table>
+          <tr><th>Jednostka</th><th>Ile to jest</th></tr>
+          <tr><td>1 cm²</td><td>100 mm²</td></tr>
+          <tr><td>1 dm²</td><td>100 cm²</td></tr>
+          <tr><td>1 m²</td><td>100 dm² = 10 000 cm²</td></tr>
+          <tr><td>1 a (ar)</td><td>100 m² – kwadrat 10 m × 10 m</td></tr>
+          <tr><td>1 ha (hektar)</td><td>100 a = 10 000 m² – kwadrat 100 m × 100 m</td></tr>
+          <tr><td>1 km²</td><td>100 ha</td></tr>
+        </table>
+        <div class="tip">💡 Bok kwadratu rośnie 10 razy, a pole – 100 razy. Dlatego między sąsiednimi jednostkami pola mnożysz przez 100, a nie przez 10.</div>
       `,
       flashcards: [
         ['Twierdzenie Pitagorasa', 'a² + b² = c²'],
@@ -1145,6 +1507,10 @@ window.SUBJECTS.push({
         ['Nierówność trójkąta', 'Każdy bok krótszy od sumy dwóch pozostałych'],
         ['Proste równoległe przecięte prostą', 'Kąty odpowiadające i naprzemianległe są równe'],
         ['Osie symetrii: kwadrat / prostokąt / trójkąt równoboczny', '4 / 2 / 3'],
+        ['Pole figury na kratkach', 'Podziel na prostokąty i trójkąty albo uzupełnij do prostokąta i odejmij dorysowane części'],
+        ['1 ar', '100 m² (kwadrat 10 m × 10 m)'],
+        ['1 hektar', '100 a = 10 000 m²'],
+        ['1 cm² / 1 dm² / 1 m²', '100 mm² / 100 cm² / 100 dm²'],
       ],
       questions: [
         { id: 'xstv70', q: 'Przyprostokątne trójkąta mają długości 6 i 8. Przeciwprostokątna ma długość…', options: ['10', '14', '12', '√28'], answer: 0, explain: '6² + 8² = 36 + 64 = 100, √100 = 10.' },
@@ -1237,6 +1603,118 @@ window.SUBJECTS.push({
           answer: 0,
           explain: 'Podstawa AB = 4 cm. Wysokość opuszczona z C na prostą AB (poza trójkątem) ma 3 cm. P = 4 · 3 / 2 = 6 cm².',
         },
+        {
+          id: '17w6ly',
+          q: 'Na kratkach o boku 1 cm narysowano figurę (rysunek). Jakie jest jej pole?',
+          svg: `<svg viewBox="0 0 250 199" role="img" aria-label="Figura w kształcie litery L na kratkach: prostokąt 5 na 4 kratki bez prostokąta 3 na 2 kratki w prawym górnym rogu">
+      <polygon points="50,165 200,165 200,105 110,105 110,45 50,45" class="f2"/>
+      <line x1="20" y1="165" x2="20" y2="15" class="ln-thin"/>
+      <line x1="50" y1="165" x2="50" y2="15" class="ln-thin"/>
+      <line x1="80" y1="165" x2="80" y2="15" class="ln-thin"/>
+      <line x1="110" y1="165" x2="110" y2="15" class="ln-thin"/>
+      <line x1="140" y1="165" x2="140" y2="15" class="ln-thin"/>
+      <line x1="170" y1="165" x2="170" y2="15" class="ln-thin"/>
+      <line x1="200" y1="165" x2="200" y2="15" class="ln-thin"/>
+      <line x1="230" y1="165" x2="230" y2="15" class="ln-thin"/>
+      <line x1="20" y1="165" x2="230" y2="165" class="ln-thin"/>
+      <line x1="20" y1="135" x2="230" y2="135" class="ln-thin"/>
+      <line x1="20" y1="105" x2="230" y2="105" class="ln-thin"/>
+      <line x1="20" y1="75" x2="230" y2="75" class="ln-thin"/>
+      <line x1="20" y1="45" x2="230" y2="45" class="ln-thin"/>
+      <line x1="20" y1="15" x2="230" y2="15" class="ln-thin"/>
+      <polygon points="50,165 200,165 200,105 110,105 110,45 50,45" class="ln s2 sw"/>
+      <line x1="200" y1="189" x2="230" y2="189" class="ln"/>
+      <text x="194" y="194" class="tx-s" text-anchor="end">1 cm</text>
+    </svg>`,
+          options: ['20 cm²', '14 cm²', '18 cm²', '12 cm²'],
+          answer: 1,
+          explain: 'Podział: prostokąt 2 × 4 = 8 cm² i prostokąt 3 × 2 = 6 cm² – razem 14 cm². Albo: 5 · 4 − 3 · 2 = 20 − 6 = 14 cm².',
+        },
+        {
+          id: 'wy97rj',
+          q: 'Na kratkach o boku 1 cm narysowano trójkąt (rysunek). Jakie jest jego pole?',
+          svg: `<svg viewBox="0 0 220 199" role="img" aria-label="Trójkąt na kratkach o wierzchołkach w punktach kratowych; wszystkie boki są ukośne. Mieści się w kwadracie 4 na 4 kratki">
+      <polygon points="50,135 170,165 140,45" class="f2"/>
+      <line x1="20" y1="165" x2="20" y2="15" class="ln-thin"/>
+      <line x1="50" y1="165" x2="50" y2="15" class="ln-thin"/>
+      <line x1="80" y1="165" x2="80" y2="15" class="ln-thin"/>
+      <line x1="110" y1="165" x2="110" y2="15" class="ln-thin"/>
+      <line x1="140" y1="165" x2="140" y2="15" class="ln-thin"/>
+      <line x1="170" y1="165" x2="170" y2="15" class="ln-thin"/>
+      <line x1="200" y1="165" x2="200" y2="15" class="ln-thin"/>
+      <line x1="20" y1="165" x2="200" y2="165" class="ln-thin"/>
+      <line x1="20" y1="135" x2="200" y2="135" class="ln-thin"/>
+      <line x1="20" y1="105" x2="200" y2="105" class="ln-thin"/>
+      <line x1="20" y1="75" x2="200" y2="75" class="ln-thin"/>
+      <line x1="20" y1="45" x2="200" y2="45" class="ln-thin"/>
+      <line x1="20" y1="15" x2="200" y2="15" class="ln-thin"/>
+      <polygon points="50,135 170,165 140,45" class="ln s2 sw"/>
+      <line x1="170" y1="189" x2="200" y2="189" class="ln"/>
+      <text x="164" y="194" class="tx-s" text-anchor="end">1 cm</text>
+    </svg>`,
+          options: ['8 cm²', '16 cm²', '7,5 cm²', '8,5 cm²'],
+          answer: 2,
+          explain: 'Uzupełnij do kwadratu 4 × 4 = 16 cm². Odejmij trzy trójkąty prostokątne: 4 · 1 / 2 = 2, 1 · 4 / 2 = 2 i 3 · 3 / 2 = 4,5. Pole: 16 − 8,5 = 7,5 cm².',
+        },
+        {
+          id: 'dlow1u',
+          q: 'Na kratkach o boku 1 cm narysowano pięciokąt (rysunek). Jakie jest jego pole?',
+          svg: `<svg viewBox="0 0 220 199" role="img" aria-label="Pięciokąt w kształcie domku na kratkach: prostokąt 4 na 3 kratki i trójkątny dach o podstawie 4 i wysokości 2 kratki">
+      <polygon points="50,165 170,165 170,75 110,15 50,75" class="f2"/>
+      <line x1="20" y1="165" x2="20" y2="15" class="ln-thin"/>
+      <line x1="50" y1="165" x2="50" y2="15" class="ln-thin"/>
+      <line x1="80" y1="165" x2="80" y2="15" class="ln-thin"/>
+      <line x1="110" y1="165" x2="110" y2="15" class="ln-thin"/>
+      <line x1="140" y1="165" x2="140" y2="15" class="ln-thin"/>
+      <line x1="170" y1="165" x2="170" y2="15" class="ln-thin"/>
+      <line x1="200" y1="165" x2="200" y2="15" class="ln-thin"/>
+      <line x1="20" y1="165" x2="200" y2="165" class="ln-thin"/>
+      <line x1="20" y1="135" x2="200" y2="135" class="ln-thin"/>
+      <line x1="20" y1="105" x2="200" y2="105" class="ln-thin"/>
+      <line x1="20" y1="75" x2="200" y2="75" class="ln-thin"/>
+      <line x1="20" y1="45" x2="200" y2="45" class="ln-thin"/>
+      <line x1="20" y1="15" x2="200" y2="15" class="ln-thin"/>
+      <polygon points="50,165 170,165 170,75 110,15 50,75" class="ln s2 sw"/>
+      <line x1="170" y1="189" x2="200" y2="189" class="ln"/>
+      <text x="164" y="194" class="tx-s" text-anchor="end">1 cm</text>
+    </svg>`,
+          options: ['16 cm²', '20 cm²', '14 cm²', '18 cm²'],
+          answer: 0,
+          explain: 'Prostokąt 4 × 3 = 12 cm² i trójkąt o podstawie 4 i wysokości 2: 4 · 2 / 2 = 4 cm². Razem 16 cm².',
+        },
+        {
+          id: '03yuwv',
+          q: 'Na kratkach o boku 1 cm narysowano sześciokąt (rysunek). Jakie jest jego pole?',
+          svg: `<svg viewBox="0 0 280 199" role="img" aria-label="Sześciokąt na kratkach mieszczący się w prostokącie 6 na 4 kratki; w każdym rogu prostokąta brakuje trójkąta prostokątnego o przyprostokątnych 1 i 2 kratki">
+      <polygon points="80,165 200,165 230,105 200,45 80,45 50,105" class="f2"/>
+      <line x1="20" y1="165" x2="20" y2="15" class="ln-thin"/>
+      <line x1="50" y1="165" x2="50" y2="15" class="ln-thin"/>
+      <line x1="80" y1="165" x2="80" y2="15" class="ln-thin"/>
+      <line x1="110" y1="165" x2="110" y2="15" class="ln-thin"/>
+      <line x1="140" y1="165" x2="140" y2="15" class="ln-thin"/>
+      <line x1="170" y1="165" x2="170" y2="15" class="ln-thin"/>
+      <line x1="200" y1="165" x2="200" y2="15" class="ln-thin"/>
+      <line x1="230" y1="165" x2="230" y2="15" class="ln-thin"/>
+      <line x1="260" y1="165" x2="260" y2="15" class="ln-thin"/>
+      <line x1="20" y1="165" x2="260" y2="165" class="ln-thin"/>
+      <line x1="20" y1="135" x2="260" y2="135" class="ln-thin"/>
+      <line x1="20" y1="105" x2="260" y2="105" class="ln-thin"/>
+      <line x1="20" y1="75" x2="260" y2="75" class="ln-thin"/>
+      <line x1="20" y1="45" x2="260" y2="45" class="ln-thin"/>
+      <line x1="20" y1="15" x2="260" y2="15" class="ln-thin"/>
+      <polygon points="80,165 200,165 230,105 200,45 80,45 50,105" class="ln s2 sw"/>
+      <line x1="230" y1="189" x2="260" y2="189" class="ln"/>
+      <text x="224" y="194" class="tx-s" text-anchor="end">1 cm</text>
+    </svg>`,
+          options: ['24 cm²', '22 cm²', '20 cm²', '16 cm²'],
+          answer: 2,
+          explain: 'Uzupełnij do prostokąta 6 × 4 = 24 cm². W każdym z 4 rogów brakuje trójkąta o polu 1 · 2 / 2 = 1 cm². Pole: 24 − 4 = 20 cm².',
+        },
+        { id: '02wf1m', q: 'Działka ma pole 1200 m². Ile to arów?', options: ['120 a', '12 a', '1,2 a', '0,12 a'], answer: 1, explain: '1 a = 100 m², więc 1200 m² = 12 a.' },
+        { id: 'mr8j44', q: 'Które pole jest największe?', options: ['2 ha', '150 a', '15 000 m²', '0,01 km²'], answer: 0, explain: '2 ha = 20 000 m², 150 a = 15 000 m², 0,01 km² = 1 ha = 10 000 m².' },
+        { id: 'v80t1f', q: 'W jakiej jednostce najwygodniej podać pole powierzchni Polski?', options: ['cm²', 'm²', 'a', 'km²'], answer: 3, explain: 'To bardzo duży obszar – w mniejszych jednostkach wyszłyby ogromne liczby.' },
+        { id: '5jrb36', q: 'Ile centymetrów kwadratowych ma 1 dm²?', options: ['10 cm²', '100 cm²', '1000 cm²', '10 000 cm²'], answer: 1, explain: '1 dm = 10 cm, więc 1 dm² = 10 cm · 10 cm = 100 cm².' },
+        { id: 'vvhkql', q: 'Ile milimetrów kwadratowych ma 3 cm²?', options: ['30 mm²', '300 mm²', '3000 mm²', '0,3 mm²'], answer: 1, explain: '1 cm² = 10 mm · 10 mm = 100 mm², więc 3 cm² = 300 mm².' },
       ],
       tasks: [
         {
@@ -1311,6 +1789,289 @@ window.SUBJECTS.push({
             '1 pkt – zauważenie trójkąta prostokątnego o przyprostokątnej 12 m i przeciwprostokątnej 20 m.',
             '2 pkt – obliczenie wysokości: h = 16 m.',
             '3 pkt – pole działki: 384 m².',
+          ],
+        },
+        {
+          id: 'skzd19',
+          points: 2,
+          q: 'Na kratkach o boku 1 cm narysowano czworokąt (rysunek). Oblicz jego pole.',
+          svg: `<svg viewBox="0 0 280 229" role="img" aria-label="Czworokąt na kratkach mieszczący się w prostokącie 6 na 5 kratek; jego wierzchołki leżą na bokach tego prostokąta">
+      <polygon points="50,165 200,195 230,75 80,45" class="f1"/>
+      <line x1="20" y1="195" x2="20" y2="15" class="ln-thin"/>
+      <line x1="50" y1="195" x2="50" y2="15" class="ln-thin"/>
+      <line x1="80" y1="195" x2="80" y2="15" class="ln-thin"/>
+      <line x1="110" y1="195" x2="110" y2="15" class="ln-thin"/>
+      <line x1="140" y1="195" x2="140" y2="15" class="ln-thin"/>
+      <line x1="170" y1="195" x2="170" y2="15" class="ln-thin"/>
+      <line x1="200" y1="195" x2="200" y2="15" class="ln-thin"/>
+      <line x1="230" y1="195" x2="230" y2="15" class="ln-thin"/>
+      <line x1="260" y1="195" x2="260" y2="15" class="ln-thin"/>
+      <line x1="20" y1="195" x2="260" y2="195" class="ln-thin"/>
+      <line x1="20" y1="165" x2="260" y2="165" class="ln-thin"/>
+      <line x1="20" y1="135" x2="260" y2="135" class="ln-thin"/>
+      <line x1="20" y1="105" x2="260" y2="105" class="ln-thin"/>
+      <line x1="20" y1="75" x2="260" y2="75" class="ln-thin"/>
+      <line x1="20" y1="45" x2="260" y2="45" class="ln-thin"/>
+      <line x1="20" y1="15" x2="260" y2="15" class="ln-thin"/>
+      <polygon points="50,165 200,195 230,75 80,45" class="ln s2 sw"/>
+      <line x1="230" y1="219" x2="260" y2="219" class="ln"/>
+      <text x="224" y="224" class="tx-s" text-anchor="end">1 cm</text>
+    </svg>`,
+          steps: [
+            'Uzupełnij czworokąt do prostokąta 6 × 5, w którym się mieści: pole prostokąta to 30 cm².',
+            'W rogach prostokąta zostają cztery trójkąty prostokątne: dwa o przyprostokątnych 5 i 1 (po 2,5 cm²) i dwa o przyprostokątnych 1 i 4 (po 2 cm²). Razem 2,5 + 2,5 + 2 + 2 = 9 cm².',
+            'Pole czworokąta: 30 − 9 = 21 cm².',
+          ],
+          answer: '21 cm²',
+          scoring: [
+            '1 pkt – poprawny sposób: uzupełnienie do prostokąta i obliczenie pól trójkątów (albo poprawny podział figury).',
+            '2 pkt – pole 21 cm².',
+          ],
+        },
+        {
+          id: 'yua3js',
+          points: 2,
+          q: 'Na każdy ar trawnika potrzeba 2,5 kg nasion trawy. Ile kilogramów nasion potrzeba na prostokątny trawnik o wymiarach 40 m × 25 m?',
+          steps: [
+            'Pole trawnika: 40 · 25 = 1000 m².',
+            '1 a = 100 m², więc 1000 m² = 10 a.',
+            'Nasiona: 10 · 2,5 = 25 kg.',
+          ],
+          answer: '25 kg',
+          scoring: [
+            '1 pkt – obliczenie pola trawnika i zamiana na ary: 10 a.',
+            '2 pkt – odpowiedź: 25 kg.',
+          ],
+        },
+      ],
+    },
+    {
+      id: 'kolo-okrag',
+      name: 'Koło i okrąg',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), matematyka kl. IV–VI: IX.6–7 (promień, średnica i cięciwa koła i okręgu); kl. VII–VIII: XIV. Długość okręgu i pole koła (XIV.1–4). Egzamin sprawdza wymagania z klas IV–VIII (informator CKE).',
+      theory: `
+        <h3>Okrąg a koło</h3>
+        <ul>
+          <li><b>Okrąg</b> to sam brzeg – wszystkie punkty odległe od środka o r. Okrąg ma <b>długość</b>.</li>
+          <li><b>Koło</b> to okrąg razem z wnętrzem. Koło ma <b>pole</b>.</li>
+        </ul>
+        <h3>Promień, średnica, cięciwa</h3>
+        <table>
+          <tr><th>Odcinek</th><th>Łączy…</th></tr>
+          <tr><td>promień r</td><td>środek z punktem okręgu</td></tr>
+          <tr><td>cięciwa</td><td>dwa punkty okręgu</td></tr>
+          <tr><td>średnica d</td><td>dwa punkty okręgu i przechodzi przez środek; <span class="f">d = 2r</span></td></tr>
+        </table>
+        <p>Średnica jest <b>najdłuższą cięciwą</b> okręgu.</p>
+        <h3>Wzory</h3>
+        <p>Długość okręgu: <span class="f">L = 2πr = πd</span> &nbsp; Pole koła: <span class="f">P = πr²</span></p>
+        <p>Liczba π ≈ 3,14 (dokładniej 3,14159…). Jeśli zadanie nie każe zaokrąglać, zostaw wynik z π, np. 10π cm. Gdy trzeba podać przybliżenie, przyjmij <b>π ≈ 3,14</b>.</p>
+        <h3>Od wyniku do promienia</h3>
+        <ul>
+          <li>Z długości okręgu: L = 20π → 2r = 20 → r = 10.</li>
+          <li>Z pola koła: P = 49π → r² = 49 → r = 7.</li>
+        </ul>
+        <h3>Zadania praktyczne</h3>
+        <p>Przy jednym pełnym obrocie koło roweru przejeżdża drogę równą długości swojego okręgu. <span class="f">liczba obrotów = droga : długość okręgu</span> (w tych samych jednostkach!).</p>
+        <div class="tip">💡 Pułapki: średnica zamiast promienia we wzorze na pole; πr² to nie (πr)² – do kwadratu podnosisz tylko r; długość w cm, pole w cm².</div>
+      `,
+      flashcards: [
+        ['Okrąg a koło', 'Okrąg – sam brzeg (ma długość), koło – brzeg z wnętrzem (ma pole)'],
+        ['Promień', 'Odcinek łączący środek z punktem okręgu'],
+        ['Cięciwa', 'Odcinek łączący dwa punkty okręgu'],
+        ['Średnica', 'Cięciwa przechodząca przez środek; d = 2r'],
+        ['Najdłuższa cięciwa okręgu', 'Średnica'],
+        ['Długość okręgu', 'L = 2πr = πd'],
+        ['Pole koła', 'P = πr²'],
+        ['Promień z długości okręgu L', 'r = L : 2π'],
+        ['Promień z pola koła P', 'r² = P : π'],
+        ['Przybliżenie liczby π', 'π ≈ 3,14'],
+      ],
+      questions: [
+        {
+          id: 'tplx67',
+          q: 'Który z odcinków na rysunku jest średnicą okręgu o środku O?',
+          svg: `<svg viewBox="0 0 320 220" role="img" aria-label="Okrąg o środku O. Odcinek OA łączy środek z punktem okręgu, odcinek BC łączy dwa punkty okręgu, a odcinek DE przechodzi przez środek O">
+      <circle cx="160" cy="110" r="85" class="ln sw"/>
+      <line x1="160" y1="110" x2="117.5" y2="36.4" class="ln s2 sw"/>
+      <line x1="130.9" y1="189.9" x2="233.6" y2="152.5" class="ln s3 sw"/>
+      <line x1="76.3" y1="124.8" x2="243.7" y2="95.2" class="ln s1 sw"/>
+      <circle cx="117.5" cy="36.4" r="4" class="t1"/>
+      <circle cx="130.9" cy="189.9" r="4" class="t1"/>
+      <circle cx="233.6" cy="152.5" r="4" class="t1"/>
+      <circle cx="76.3" cy="124.8" r="4" class="t1"/>
+      <circle cx="243.7" cy="95.2" r="4" class="t1"/>
+      <circle cx="160" cy="110" r="4" class="t2"/>
+      <text x="164" y="132" class="tx-b">O</text>
+      <text x="109.5" y="28.5" class="tx-b" text-anchor="middle">A</text>
+      <text x="125.5" y="210.9" class="tx-b" text-anchor="middle">B</text>
+      <text x="247.5" y="166.5" class="tx-b" text-anchor="middle">C</text>
+      <text x="60.5" y="133.5" class="tx-b" text-anchor="middle">D</text>
+      <text x="259.5" y="98.5" class="tx-b" text-anchor="middle">E</text>
+    </svg>`,
+          options: ['OA', 'BC', 'DE'],
+          answer: 2,
+          explain: 'DE łączy dwa punkty okręgu i przechodzi przez środek O. OA to promień, a BC – cięciwa, która nie przechodzi przez środek.',
+        },
+        {
+          id: 'avt2uw',
+          q: 'Który z odcinków na rysunku jest cięciwą, ale nie jest średnicą?',
+          svg: `<svg viewBox="0 0 320 220" role="img" aria-label="Okrąg o środku O. Odcinek OA łączy środek z punktem okręgu, odcinek BC łączy dwa punkty okręgu, a odcinek DE przechodzi przez środek O">
+      <circle cx="160" cy="110" r="85" class="ln sw"/>
+      <line x1="160" y1="110" x2="117.5" y2="36.4" class="ln s2 sw"/>
+      <line x1="130.9" y1="189.9" x2="233.6" y2="152.5" class="ln s3 sw"/>
+      <line x1="76.3" y1="124.8" x2="243.7" y2="95.2" class="ln s1 sw"/>
+      <circle cx="117.5" cy="36.4" r="4" class="t1"/>
+      <circle cx="130.9" cy="189.9" r="4" class="t1"/>
+      <circle cx="233.6" cy="152.5" r="4" class="t1"/>
+      <circle cx="76.3" cy="124.8" r="4" class="t1"/>
+      <circle cx="243.7" cy="95.2" r="4" class="t1"/>
+      <circle cx="160" cy="110" r="4" class="t2"/>
+      <text x="164" y="132" class="tx-b">O</text>
+      <text x="109.5" y="28.5" class="tx-b" text-anchor="middle">A</text>
+      <text x="125.5" y="210.9" class="tx-b" text-anchor="middle">B</text>
+      <text x="247.5" y="166.5" class="tx-b" text-anchor="middle">C</text>
+      <text x="60.5" y="133.5" class="tx-b" text-anchor="middle">D</text>
+      <text x="259.5" y="98.5" class="tx-b" text-anchor="middle">E</text>
+    </svg>`,
+          options: ['OA', 'BC', 'DE'],
+          answer: 1,
+          explain: 'BC łączy dwa punkty okręgu, ale nie przechodzi przez środek. OA nie jest cięciwą – jeden jego koniec to środek okręgu.',
+        },
+        { id: 'l7ixco', q: 'Punkt O jest środkiem okręgu, a A i B to dwa różne punkty tego okręgu, które nie są końcami jednej średnicy. Trójkąt AOB jest zawsze…', options: ['równoramienny', 'prostokątny', 'równoboczny', 'rozwartokątny'], answer: 0, explain: 'OA i OB to promienie, więc mają równe długości.' },
+        {
+          id: 'g0rzxg',
+          q: 'Jaka jest długość okręgu z rysunku?',
+          svg: `<svg viewBox="0 0 300 190" role="img" aria-label="Okrąg ze średnicą długości 10 cm">
+      <circle cx="150" cy="95" r="75" class="f1 s1 sw"/>
+      <line x1="75" y1="95" x2="225" y2="95" class="ln s2 sw"/>
+      <circle cx="150" cy="95" r="3" class="t2"/>
+      <text x="150" y="85" class="tx-b t2" text-anchor="middle">10 cm</text>
+    </svg>`,
+          options: ['5π cm', '10π cm', '20π cm', '25π cm'],
+          answer: 1,
+          explain: 'L = πd = π · 10 = 10π cm (albo 2πr = 2π · 5).',
+        },
+        {
+          id: '8cvrt3',
+          q: 'Jakie jest pole koła z rysunku?',
+          svg: `<svg viewBox="0 0 300 190" role="img" aria-label="Koło o promieniu 4 cm">
+      <circle cx="150" cy="95" r="75" class="f3 s3 sw"/>
+      <line x1="150" y1="95" x2="225" y2="95" class="ln s2 sw"/>
+      <circle cx="150" cy="95" r="3" class="t2"/>
+      <text x="188" y="85" class="tx-b t2" text-anchor="middle">4 cm</text>
+    </svg>`,
+          options: ['8π cm²', '64π cm²', '4π cm²', '16π cm²'],
+          answer: 3,
+          explain: 'P = πr² = π · 4² = 16π cm². (8π cm to długość okręgu.)',
+        },
+        { id: '6ozvs6', q: 'Średnica okręgu ma 14 cm. Jaką długość ma jego promień?', options: ['28 cm', '7 cm', '14π cm', '3,5 cm'], answer: 1, explain: 'r = d : 2 = 7 cm.' },
+        { id: '07izwn', q: 'Długość okręgu wynosi 18π cm. Jaka jest średnica tego okręgu?', options: ['9 cm', '36 cm', '18 cm', '3 cm'], answer: 2, explain: 'L = πd, więc πd = 18π i d = 18 cm.' },
+        { id: 'umpsg2', q: 'Pole koła wynosi 49π cm². Jaki jest promień tego koła?', options: ['7 cm', '49 cm', '24,5 cm', '14 cm'], answer: 0, explain: 'πr² = 49π, więc r² = 49 i r = 7 cm.' },
+        { id: 'pycs3h', q: 'Pole koła jest równe 25π. Ile wynosi długość okręgu, który jest brzegiem tego koła?', options: ['5π', '10π', '25π', '50π'], answer: 1, explain: 'r² = 25, więc r = 5. L = 2π · 5 = 10π.' },
+        { id: 'lzy90y', q: 'Przyjmij π ≈ 3,14. Długość okręgu o promieniu 10 cm wynosi około…', options: ['31,4 cm', '314 cm', '62,8 cm', '6,28 cm'], answer: 2, explain: 'L = 2πr ≈ 2 · 3,14 · 10 = 62,8 cm.' },
+        { id: 'cza102', q: 'Przyjmij π ≈ 3,14. Pole koła o średnicy 2 m wynosi około…', options: ['3,14 m²', '12,56 m²', '6,28 m²', '1,57 m²'], answer: 0, explain: 'Promień to 1 m: P = π · 1² ≈ 3,14 m². (12,56 m² wyjdzie, gdy ktoś wstawi średnicę zamiast promienia.)' },
+        { id: 'u6oncj', q: 'Koło roweru ma średnicę 60 cm. Jaką drogę przejedzie rower, gdy koło obróci się 100 razy? Przyjmij π ≈ 3,14.', options: ['376,8 m', '188,4 m', '94,2 m', '18,84 m'], answer: 1, explain: 'Jeden obrót: πd ≈ 3,14 · 60 = 188,4 cm. 100 obrotów: 18 840 cm = 188,4 m.' },
+        { id: 'ortv57', q: 'Okrąg koła taczki ma długość 2 m. Ile pełnych obrotów wykona to koło na drodze 1 km?', options: ['50', '200', '500', '2000'], answer: 2, explain: '1 km = 1000 m; 1000 : 2 = 500 obrotów.' },
+        { id: 'y5gjgf', q: 'Prawda czy fałsz?\nŚrednica jest najdłuższą cięciwą okręgu.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Każda cięciwa, która nie przechodzi przez środek, jest krótsza od średnicy.' },
+        { id: '5ysrco', q: 'Prawda czy fałsz?\nKażda cięciwa okręgu przechodzi przez jego środek.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Przez środek przechodzi tylko średnica. Inne cięciwy go omijają.' },
+        { id: '62iqcu', q: 'Promień koła zwiększono 2 razy. Ile razy zwiększyło się pole koła?', options: ['2 razy', '4 razy', '8 razy', 'π razy'], answer: 1, explain: 'π · (2r)² = π · 4r² = 4 · πr². Pole rośnie 4 razy, a długość okręgu – 2 razy.' },
+        { id: 'e9xnhe', q: 'Prawda czy fałsz?\nKoło o promieniu 3 cm ma pole 6π cm².', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'P = π · 3² = 9π cm². 6π cm to długość okręgu tego koła.' },
+        {
+          id: 'rs77p1',
+          q: 'Jakie jest pole półkola z rysunku?',
+          svg: `<svg viewBox="0 0 300 180" role="img" aria-label="Półkole, którego średnica ma długość 12">
+      <path d="M30,145 A120,120 0 0 1 270,145 Z" class="f2 s2 sw"/>
+      <circle cx="150" cy="145" r="3" class="t2"/>
+      <text x="150" y="168" class="tx-b" text-anchor="middle">12</text>
+    </svg>`,
+          options: ['18π', '36π', '72π', '6π'],
+          answer: 0,
+          explain: 'Promień to 12 : 2 = 6. Pole całego koła: π · 6² = 36π, a półkola – połowa: 18π.',
+        },
+        {
+          id: '8hlmnb',
+          q: 'Koło dotyka wszystkich boków kwadratu o boku 8 cm (rysunek). Jakie jest pole tego koła?',
+          svg: `<svg viewBox="0 0 260 215" role="img" aria-label="Kwadrat o boku 8 cm i koło, które dotyka wszystkich czterech boków kwadratu">
+      <rect x="50" y="15" width="160" height="160" class="ln sw"/>
+      <circle cx="130" cy="95" r="80" class="f1 s1 sw"/>
+      <text x="130" y="200" class="tx-b" text-anchor="middle">8 cm</text>
+    </svg>`,
+          options: ['64π cm²', '32π cm²', '8π cm²', '16π cm²'],
+          answer: 3,
+          explain: 'Średnica koła równa się bokowi kwadratu: d = 8 cm, więc r = 4 cm. P = π · 4² = 16π cm².',
+        },
+        {
+          id: 'nli0dn',
+          q: 'Dwa okręgi mają wspólny środek i promienie 5 i 3 (rysunek). Jakie jest pole zacieniowanego pierścienia?',
+          svg: `<svg viewBox="0 0 260 220" role="img" aria-label="Dwa okręgi o wspólnym środku i promieniach 5 i 3. Zacieniowany jest pierścień między nimi">
+      <circle cx="130" cy="110" r="100" class="f2 s2 sw"/>
+      <circle cx="130" cy="110" r="60" class="bg"/>
+      <circle cx="130" cy="110" r="60" class="ln s2 sw"/>
+      <line x1="130" y1="110" x2="206.6" y2="45.7" class="ln"/>
+      <line x1="130" y1="110" x2="70" y2="110" class="ln"/>
+      <circle cx="130" cy="110" r="3" class="t2"/>
+      <text x="181.4" y="48.7" class="tx-b" text-anchor="middle">5</text>
+      <text x="100" y="102" class="tx-b" text-anchor="middle">3</text>
+    </svg>`,
+          options: ['4π', '16π', '2π', '34π'],
+          answer: 1,
+          explain: 'Od pola dużego koła odejmij pole małego: π · 5² − π · 3² = 25π − 9π = 16π.',
+        },
+        { id: 'aaldoh', q: 'Okrąg ma długość 12,56 cm. Przyjmij π ≈ 3,14. Jaki jest promień tego okręgu?', options: ['1 cm', '4 cm', '2 cm', '6,28 cm'], answer: 2, explain: 'r = L : (2π) ≈ 12,56 : 6,28 = 2 cm.' },
+      ],
+      tasks: [
+        {
+          id: 'vtiwat',
+          points: 2,
+          q: 'Koło roweru Oli ma średnicę 70 cm. Ola przejechała 1,1 km. Ile pełnych obrotów wykonało koło jej roweru? Przyjmij π ≈ 3,14.',
+          steps: [
+            'Przy jednym obrocie rower przejeżdża drogę równą długości okręgu koła: L = πd ≈ 3,14 · 70 = 219,8 cm.',
+            'Droga w tych samych jednostkach: 1,1 km = 1100 m = 110 000 cm.',
+            '110 000 : 219,8 ≈ 500,5. Sprawdzenie: 500 · 219,8 = 109 900 cm (mniej niż 110 000 cm), a 501 · 219,8 = 110 119,8 cm (za dużo).',
+          ],
+          answer: '500 pełnych obrotów',
+          scoring: [
+            '1 pkt – obliczenie długości okręgu koła (219,8 cm) i zamiana 1,1 km na cm (albo obu wielkości na te same jednostki).',
+            '2 pkt – odpowiedź: 500 pełnych obrotów.',
+          ],
+        },
+        {
+          id: '1vyv9q',
+          points: 2,
+          q: 'Okrągły klomb ma obwód 31,4 m. Oblicz pole powierzchni klombu. Przyjmij π ≈ 3,14.',
+          steps: [
+            'L = 2πr, więc r = L : (2π) ≈ 31,4 : 6,28 = 5 m.',
+            'P = πr² ≈ 3,14 · 5² = 3,14 · 25 = 78,5 m².',
+            'Sprawdzenie: 2 · 3,14 · 5 = 31,4 m.',
+          ],
+          answer: 'około 78,5 m²',
+          scoring: [
+            '1 pkt – obliczenie promienia klombu: 5 m.',
+            '2 pkt – pole około 78,5 m².',
+          ],
+        },
+        {
+          id: 'g5pq5w',
+          points: 3,
+          q: 'Figura na rysunku składa się z prostokąta o bokach 8 cm i 4 cm oraz dwóch półkoli zbudowanych na krótszych bokach. Oblicz obwód i pole tej figury. Wynik zostaw z liczbą π.',
+          svg: `<svg viewBox="0 0 400 180" role="img" aria-label="Figura złożona z prostokąta o bokach 8 cm i 4 cm oraz dwóch półkoli zbudowanych na krótszych bokach">
+      <path d="M80,30 L320,30 A60,60 0 0 1 320,150 L80,150 A60,60 0 0 1 80,30 Z" class="f3 s3 sw"/>
+      <line x1="80" y1="30" x2="80" y2="150" class="ln dash"/>
+      <line x1="320" y1="30" x2="320" y2="150" class="ln dash"/>
+      <text x="200" y="22" class="tx-b" text-anchor="middle">8 cm</text>
+      <text x="312" y="95" class="tx-b" text-anchor="end">4 cm</text>
+    </svg>`,
+          steps: [
+            'Średnica każdego półkola to 4 cm, więc r = 2 cm. Dwa półkola tworzą razem jedno całe koło o promieniu 2 cm.',
+            'Obwód: dwa dłuższe boki prostokąta i dwa łuki półkoli (razem cały okrąg): 2 · 8 + 2π · 2 = (16 + 4π) cm. Krótsze boki prostokąta są w środku figury – nie liczymy ich.',
+            'Pole: prostokąt i całe koło: 8 · 4 + π · 2² = (32 + 4π) cm².',
+          ],
+          answer: 'Obwód: (16 + 4π) cm, pole: (32 + 4π) cm²',
+          scoring: [
+            '1 pkt – zauważenie, że dwa półkola tworzą koło o promieniu 2 cm.',
+            '2 pkt – poprawny obwód: (16 + 4π) cm.',
+            '3 pkt – poprawne pole: (32 + 4π) cm².',
           ],
         },
       ],
@@ -1565,9 +2326,559 @@ window.SUBJECTS.push({
       ],
     },
     {
+      id: 'uklad-wspolrzednych',
+      name: 'Układ współrzędnych',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), matematyka kl. VII–VIII: X. Oś liczbowa. Układ współrzędnych na płaszczyźnie (X.1–6); kl. IV–VI: III.2 i IV.7 (liczby na osi liczbowej). Egzamin sprawdza wymagania z klas IV–VIII (informator CKE).',
+      theory: `
+        <h3>Zbiory liczb na osi liczbowej</h3>
+        <table>
+          <tr><th>Warunek</th><th>Kółko w liczbie a</th><th>Linia</th></tr>
+          <tr><td>x &gt; a</td><td>niezamalowane (a nie należy)</td><td>w prawo</td></tr>
+          <tr><td>x ≥ a</td><td>zamalowane (a należy)</td><td>w prawo</td></tr>
+          <tr><td>x &lt; a</td><td>niezamalowane</td><td>w lewo</td></tr>
+          <tr><td>x ≤ a</td><td>zamalowane</td><td>w lewo</td></tr>
+        </table>
+        <p>Przykłady: x ≥ 1,5 – zamalowane kółko w 1,5 i linia w prawo; x &lt; −4/7 – puste kółko w −4/7 (między −1 a 0) i linia w lewo.</p>
+        <h3>Współrzędne punktu</h3>
+        <ul>
+          <li>Punkt zapisujemy jako <span class="f">(x, y)</span>: najpierw x (oś pozioma), potem y (oś pionowa). (2, 3) to inny punkt niż (3, 2).</li>
+          <li>Początek układu: O = (0, 0). Punkty na osi x mają y = 0, na osi y mają x = 0.</li>
+          <li>x &gt; 0 – na prawo od osi y, x &lt; 0 – na lewo; y &gt; 0 – nad osią x, y &lt; 0 – pod nią.</li>
+          <li><b>Punkt kratowy</b> ma obie współrzędne całkowite.</li>
+        </ul>
+        <h3>Środek odcinka i drugi koniec</h3>
+        <p>A = (x₁, y₁), B = (x₂, y₂): <span class="f">S = ((x₁ + x₂)/2, (y₁ + y₂)/2)</span> – średnie współrzędnych.</p>
+        <p>Gdy znasz A i środek S, a szukasz B: od S idziesz tak samo jak od A do S. Np. A = (−1, 4), S = (2, 1): z A do S jest 3 w prawo i 3 w dół, więc B = (2 + 3, 1 − 3) = (5, −2).</p>
+        <h3>Długość odcinka</h3>
+        <p>Odcinek poziomy lub pionowy – odejmij współrzędne: A = (−2, 3), B = (4, 3) → |AB| = 4 − (−2) = 6.</p>
+        <p>Odcinek ukośny – twierdzenie Pitagorasa: <span class="f">|AB| = √((x₂ − x₁)² + (y₂ − y₁)²)</span>. Np. A = (−3, −1), B = (5, 5): różnice 8 i 6, |AB| = √(64 + 36) = 10.</p>
+        <h3>Punkty kratowe na prostej AB</h3>
+        <p>Policz, o ile przesuwasz się z A do B (w prawo i w górę). Jeśli obie liczby mają wspólny dzielnik, podziel je przez niego – dostaniesz najkrótszy krok między punktami kratowymi prostej. Np. A = (0, 1), B = (6, 5): przesunięcie 6 w prawo i 4 w górę, krok 3 w prawo i 2 w górę → punkty (3, 3), (6, 5), (9, 7), a w drugą stronę (−3, −1).</p>
+      `,
+      flashcards: [
+        ['x ≥ a na osi liczbowej', 'Kółko zamalowane w a, linia w prawo'],
+        ['x < a na osi liczbowej', 'Kółko niezamalowane w a, linia w lewo'],
+        ['Kolejność współrzędnych (x, y)', 'Najpierw oś pozioma x, potem pionowa y'],
+        ['Punkt na osi y', 'Ma pierwszą współrzędną 0, np. (0, 4)'],
+        ['Punkt kratowy', 'Punkt o obu współrzędnych całkowitych'],
+        ['Środek odcinka', 'S = ((x₁ + x₂)/2, (y₁ + y₂)/2)'],
+        ['Drugi koniec odcinka B, gdy znasz A i środek S', 'B = (2xₛ − x₁, 2yₛ − y₁) – od S idziesz tak samo jak od A do S'],
+        ['Długość odcinka AB', '√((x₂ − x₁)² + (y₂ − y₁)²)'],
+      ],
+      questions: [
+        {
+          id: 'hq4zjx',
+          q: 'Na osi liczbowej zaznaczono zbiór liczb (rysunek). Który warunek opisuje ten zbiór?',
+          svg: `<svg viewBox="0 0 370 80" role="img" aria-label="Oś liczbowa od −2 do 4. Niezamalowane kółko w punkcie 2 i pogrubiona linia ze strzałką w lewo">
+      <line x1="25" y1="32" x2="340" y2="32" class="ln"/>
+      <polyline points="331,27 340,32 331,37" class="ln"/>
+      <line x1="45" y1="27" x2="45" y2="37" class="ln"/>
+      <text x="45" y="58" class="tx" text-anchor="middle">−2</text>
+      <line x1="90" y1="27" x2="90" y2="37" class="ln"/>
+      <text x="90" y="58" class="tx" text-anchor="middle">−1</text>
+      <line x1="135" y1="25" x2="135" y2="39" class="ln"/>
+      <text x="135" y="58" class="tx" text-anchor="middle">0</text>
+      <line x1="180" y1="27" x2="180" y2="37" class="ln"/>
+      <text x="180" y="58" class="tx" text-anchor="middle">1</text>
+      <line x1="225" y1="27" x2="225" y2="37" class="ln"/>
+      <text x="225" y="58" class="tx" text-anchor="middle">2</text>
+      <line x1="270" y1="27" x2="270" y2="37" class="ln"/>
+      <text x="270" y="58" class="tx" text-anchor="middle">3</text>
+      <line x1="315" y1="27" x2="315" y2="37" class="ln"/>
+      <text x="315" y="58" class="tx" text-anchor="middle">4</text>
+      <line x1="26" y1="32" x2="225" y2="32" class="ln s1 sw"/>
+      <polyline points="34,27 25,32 34,37" class="ln s1 sw"/>
+      <circle cx="225" cy="32" r="6" class="ln s1 sw bg"/>
+    </svg>`,
+          options: ['x < 2', 'x ≤ 2', 'x > 2', 'x ≥ 2'],
+          answer: 0,
+          explain: 'Kółko jest niezamalowane, więc liczba 2 nie należy do zbioru, a linia biegnie w lewo – do liczb mniejszych.',
+        },
+        { id: 'is80yu', q: 'Która z liczb spełnia warunek x ≥ 1,5?', options: ['−2', '1', '1,5', '1,49'], answer: 2, explain: 'Znak ≥ oznacza „większe lub równe”, więc 1,5 też spełnia warunek. 1,49 jest mniejsze od 1,5.' },
+        { id: 'xuz057', q: 'Jak zaznaczysz na osi liczbowej zbiór liczb spełniających warunek x < −4/7?', options: ['kółko zamalowane w −4/7 i linia w lewo', 'kółko niezamalowane w −4/7 i linia w lewo', 'kółko niezamalowane w −4/7 i linia w prawo', 'kółko zamalowane w −4/7 i linia w prawo'], answer: 1, explain: 'Znak < (ostra nierówność) – kółko puste; „mniejsze” – linia w lewo.' },
+        {
+          id: 'byq4no',
+          q: 'Który punkt na rysunku ma współrzędne (−3, 2)?',
+          svg: `<svg viewBox="0 0 284 266" role="img" aria-label="Układ współrzędnych z kratką i cztery punkty: A = (2, −3), B = (−2, 3), C = (−3, 2), D = (3, 2)">
+      <line x1="30" y1="28" x2="30" y2="252" class="ln-thin"/>
+      <line x1="58" y1="28" x2="58" y2="252" class="ln-thin"/>
+      <line x1="86" y1="28" x2="86" y2="252" class="ln-thin"/>
+      <line x1="114" y1="28" x2="114" y2="252" class="ln-thin"/>
+      <line x1="142" y1="28" x2="142" y2="252" class="ln-thin"/>
+      <line x1="170" y1="28" x2="170" y2="252" class="ln-thin"/>
+      <line x1="198" y1="28" x2="198" y2="252" class="ln-thin"/>
+      <line x1="226" y1="28" x2="226" y2="252" class="ln-thin"/>
+      <line x1="254" y1="28" x2="254" y2="252" class="ln-thin"/>
+      <line x1="30" y1="252" x2="254" y2="252" class="ln-thin"/>
+      <line x1="30" y1="224" x2="254" y2="224" class="ln-thin"/>
+      <line x1="30" y1="196" x2="254" y2="196" class="ln-thin"/>
+      <line x1="30" y1="168" x2="254" y2="168" class="ln-thin"/>
+      <line x1="30" y1="140" x2="254" y2="140" class="ln-thin"/>
+      <line x1="30" y1="112" x2="254" y2="112" class="ln-thin"/>
+      <line x1="30" y1="84" x2="254" y2="84" class="ln-thin"/>
+      <line x1="30" y1="56" x2="254" y2="56" class="ln-thin"/>
+      <line x1="30" y1="28" x2="254" y2="28" class="ln-thin"/>
+      <line x1="30" y1="140" x2="268" y2="140" class="ln"/>
+      <polyline points="259,135 268,140 259,145" class="ln"/>
+      <line x1="142" y1="252" x2="142" y2="14" class="ln"/>
+      <polyline points="137,23 142,14 147,23" class="ln"/>
+      <text x="266" y="132" class="tx-s">x</text>
+      <text x="150" y="22" class="tx-s">y</text>
+      <rect x="21" y="144" width="18" height="14" class="bg"/>
+      <text x="30" y="155" class="tx-s" text-anchor="middle">−4</text>
+      <rect x="49" y="144" width="18" height="14" class="bg"/>
+      <text x="58" y="155" class="tx-s" text-anchor="middle">−3</text>
+      <rect x="77" y="144" width="18" height="14" class="bg"/>
+      <text x="86" y="155" class="tx-s" text-anchor="middle">−2</text>
+      <rect x="105" y="144" width="18" height="14" class="bg"/>
+      <text x="114" y="155" class="tx-s" text-anchor="middle">−1</text>
+      <rect x="164.8" y="144" width="10.5" height="14" class="bg"/>
+      <text x="170" y="155" class="tx-s" text-anchor="middle">1</text>
+      <rect x="192.8" y="144" width="10.5" height="14" class="bg"/>
+      <text x="198" y="155" class="tx-s" text-anchor="middle">2</text>
+      <rect x="220.8" y="144" width="10.5" height="14" class="bg"/>
+      <text x="226" y="155" class="tx-s" text-anchor="middle">3</text>
+      <rect x="248.8" y="144" width="10.5" height="14" class="bg"/>
+      <text x="254" y="155" class="tx-s" text-anchor="middle">4</text>
+      <rect x="119.5" y="245" width="18" height="14" class="bg"/>
+      <text x="137" y="256" class="tx-s" text-anchor="end">−4</text>
+      <rect x="119.5" y="217" width="18" height="14" class="bg"/>
+      <text x="137" y="228" class="tx-s" text-anchor="end">−3</text>
+      <rect x="119.5" y="189" width="18" height="14" class="bg"/>
+      <text x="137" y="200" class="tx-s" text-anchor="end">−2</text>
+      <rect x="119.5" y="161" width="18" height="14" class="bg"/>
+      <text x="137" y="172" class="tx-s" text-anchor="end">−1</text>
+      <rect x="127" y="105" width="10.5" height="14" class="bg"/>
+      <text x="137" y="116" class="tx-s" text-anchor="end">1</text>
+      <rect x="127" y="77" width="10.5" height="14" class="bg"/>
+      <text x="137" y="88" class="tx-s" text-anchor="end">2</text>
+      <rect x="127" y="49" width="10.5" height="14" class="bg"/>
+      <text x="137" y="60" class="tx-s" text-anchor="end">3</text>
+      <rect x="127" y="21" width="10.5" height="14" class="bg"/>
+      <text x="137" y="32" class="tx-s" text-anchor="end">4</text>
+      <rect x="127" y="144" width="10.5" height="14" class="bg"/>
+      <text x="137" y="155" class="tx-s" text-anchor="end">0</text>
+      <circle cx="198" cy="224" r="5" class="t1"/>
+      <text x="206" y="242" class="tx-b">A</text>
+      <circle cx="86" cy="56" r="5" class="t1"/>
+      <text x="78" y="48" class="tx-b" text-anchor="end">B</text>
+      <circle cx="58" cy="84" r="5" class="t1"/>
+      <text x="50" y="76" class="tx-b" text-anchor="end">C</text>
+      <circle cx="226" cy="84" r="5" class="t1"/>
+      <text x="234" y="76" class="tx-b">D</text>
+    </svg>`,
+          options: ['A', 'B', 'C', 'D'],
+          noShuffle: true,
+          answer: 2,
+          explain: 'Z początku układu idziemy 3 kratki w lewo (x = −3) i 2 w górę (y = 2) – to punkt C. B = (−2, 3) ma zamienione współrzędne.',
+        },
+        {
+          id: 'iirc39',
+          q: 'Jakie współrzędne ma punkt P z rysunku?',
+          svg: `<svg viewBox="0 0 300 222" role="img" aria-label="Układ współrzędnych z kratką i punkt P = (−4, −1)">
+      <line x1="30" y1="28" x2="30" y2="208" class="ln-thin"/>
+      <line x1="60" y1="28" x2="60" y2="208" class="ln-thin"/>
+      <line x1="90" y1="28" x2="90" y2="208" class="ln-thin"/>
+      <line x1="120" y1="28" x2="120" y2="208" class="ln-thin"/>
+      <line x1="150" y1="28" x2="150" y2="208" class="ln-thin"/>
+      <line x1="180" y1="28" x2="180" y2="208" class="ln-thin"/>
+      <line x1="210" y1="28" x2="210" y2="208" class="ln-thin"/>
+      <line x1="240" y1="28" x2="240" y2="208" class="ln-thin"/>
+      <line x1="270" y1="28" x2="270" y2="208" class="ln-thin"/>
+      <line x1="30" y1="208" x2="270" y2="208" class="ln-thin"/>
+      <line x1="30" y1="178" x2="270" y2="178" class="ln-thin"/>
+      <line x1="30" y1="148" x2="270" y2="148" class="ln-thin"/>
+      <line x1="30" y1="118" x2="270" y2="118" class="ln-thin"/>
+      <line x1="30" y1="88" x2="270" y2="88" class="ln-thin"/>
+      <line x1="30" y1="58" x2="270" y2="58" class="ln-thin"/>
+      <line x1="30" y1="28" x2="270" y2="28" class="ln-thin"/>
+      <line x1="30" y1="118" x2="284" y2="118" class="ln"/>
+      <polyline points="275,113 284,118 275,123" class="ln"/>
+      <line x1="180" y1="208" x2="180" y2="14" class="ln"/>
+      <polyline points="175,23 180,14 185,23" class="ln"/>
+      <text x="282" y="110" class="tx-s">x</text>
+      <text x="188" y="22" class="tx-s">y</text>
+      <rect x="21" y="122" width="18" height="14" class="bg"/>
+      <text x="30" y="133" class="tx-s" text-anchor="middle">−5</text>
+      <rect x="51" y="122" width="18" height="14" class="bg"/>
+      <text x="60" y="133" class="tx-s" text-anchor="middle">−4</text>
+      <rect x="81" y="122" width="18" height="14" class="bg"/>
+      <text x="90" y="133" class="tx-s" text-anchor="middle">−3</text>
+      <rect x="111" y="122" width="18" height="14" class="bg"/>
+      <text x="120" y="133" class="tx-s" text-anchor="middle">−2</text>
+      <rect x="141" y="122" width="18" height="14" class="bg"/>
+      <text x="150" y="133" class="tx-s" text-anchor="middle">−1</text>
+      <rect x="204.8" y="122" width="10.5" height="14" class="bg"/>
+      <text x="210" y="133" class="tx-s" text-anchor="middle">1</text>
+      <rect x="234.8" y="122" width="10.5" height="14" class="bg"/>
+      <text x="240" y="133" class="tx-s" text-anchor="middle">2</text>
+      <rect x="264.8" y="122" width="10.5" height="14" class="bg"/>
+      <text x="270" y="133" class="tx-s" text-anchor="middle">3</text>
+      <rect x="157.5" y="201" width="18" height="14" class="bg"/>
+      <text x="175" y="212" class="tx-s" text-anchor="end">−3</text>
+      <rect x="157.5" y="171" width="18" height="14" class="bg"/>
+      <text x="175" y="182" class="tx-s" text-anchor="end">−2</text>
+      <rect x="157.5" y="141" width="18" height="14" class="bg"/>
+      <text x="175" y="152" class="tx-s" text-anchor="end">−1</text>
+      <rect x="165" y="81" width="10.5" height="14" class="bg"/>
+      <text x="175" y="92" class="tx-s" text-anchor="end">1</text>
+      <rect x="165" y="51" width="10.5" height="14" class="bg"/>
+      <text x="175" y="62" class="tx-s" text-anchor="end">2</text>
+      <rect x="165" y="21" width="10.5" height="14" class="bg"/>
+      <text x="175" y="32" class="tx-s" text-anchor="end">3</text>
+      <rect x="165" y="122" width="10.5" height="14" class="bg"/>
+      <text x="175" y="133" class="tx-s" text-anchor="end">0</text>
+      <circle cx="60" cy="148" r="5" class="t1"/>
+      <text x="52" y="168" class="tx-b" text-anchor="end">P</text>
+    </svg>`,
+          options: ['(−4, −1)', '(−1, −4)', '(4, 1)', '(−4, 1)'],
+          answer: 0,
+          explain: 'P leży 4 kratki na lewo od osi y (x = −4) i 1 kratkę pod osią x (y = −1).',
+        },
+        { id: '6ezj03', q: 'Punkt A = (3, −5) leży…', options: ['na prawo od osi y i pod osią x', 'na lewo od osi y i pod osią x', 'na prawo od osi y i nad osią x', 'na osi x'], answer: 0, explain: 'x = 3 > 0 – na prawo od osi y; y = −5 < 0 – pod osią x.' },
+        { id: 'h4vez6', q: 'Który z punktów leży na osi y?', options: ['(4, 0)', '(0, 4)', '(4, 4)', '(−4, 4)'], answer: 1, explain: 'Punkty na osi y mają pierwszą współrzędną (x) równą 0. Punkt (4, 0) leży na osi x.' },
+        { id: 'upzje5', q: 'Środek odcinka o końcach A = (−3, 5) i B = (1, −1) to punkt…', options: ['(−2, 4)', '(−1, 2)', '(2, 3)', '(−1, 3)'], answer: 1, explain: 'x = (−3 + 1)/2 = −1, y = (5 + (−1))/2 = 2.' },
+        { id: 'ea2raf', q: 'Środek odcinka o końcach A = (1, 2) i B = (4, 7) to punkt…', options: ['(3/2, 5/2)', '(5, 9)', '(5/2, 9/2)', '(3, 5)'], answer: 2, explain: 'x = (1 + 4)/2 = 5/2, y = (2 + 7)/2 = 9/2. Współrzędne środka nie muszą być całkowite.' },
+        { id: 'yqohea', q: 'Punkt S = (2, 1) jest środkiem odcinka AB, a A = (−1, 4). Jakie współrzędne ma punkt B?', options: ['(−4, 7)', '(1/2, 5/2)', '(3, −3)', '(5, −2)'], answer: 3, explain: 'Z A do S: 3 w prawo i 3 w dół. Z S do B tak samo: B = (2 + 3, 1 − 3) = (5, −2). Sprawdzenie: ((−1 + 5)/2, (4 − 2)/2) = (2, 1).' },
+        { id: 'vtlubl', q: 'Jaka jest długość odcinka o końcach A = (−2, 3) i B = (4, 3)?', options: ['6', '2', '3', '12'], answer: 0, explain: 'Odcinek jest poziomy (y się nie zmienia): 4 − (−2) = 6.' },
+        {
+          id: 'ykwyfz',
+          q: 'Punkty A i B leżą w punktach kratowych układu współrzędnych (rysunek). Jaka jest długość odcinka AB?',
+          svg: `<svg viewBox="0 0 340 266" role="img" aria-label="Układ współrzędnych z kratką. Odcinek AB, gdzie A = (−3, −1) i B = (5, 5)">
+      <line x1="30" y1="28" x2="30" y2="252" class="ln-thin"/>
+      <line x1="58" y1="28" x2="58" y2="252" class="ln-thin"/>
+      <line x1="86" y1="28" x2="86" y2="252" class="ln-thin"/>
+      <line x1="114" y1="28" x2="114" y2="252" class="ln-thin"/>
+      <line x1="142" y1="28" x2="142" y2="252" class="ln-thin"/>
+      <line x1="170" y1="28" x2="170" y2="252" class="ln-thin"/>
+      <line x1="198" y1="28" x2="198" y2="252" class="ln-thin"/>
+      <line x1="226" y1="28" x2="226" y2="252" class="ln-thin"/>
+      <line x1="254" y1="28" x2="254" y2="252" class="ln-thin"/>
+      <line x1="282" y1="28" x2="282" y2="252" class="ln-thin"/>
+      <line x1="310" y1="28" x2="310" y2="252" class="ln-thin"/>
+      <line x1="30" y1="252" x2="310" y2="252" class="ln-thin"/>
+      <line x1="30" y1="224" x2="310" y2="224" class="ln-thin"/>
+      <line x1="30" y1="196" x2="310" y2="196" class="ln-thin"/>
+      <line x1="30" y1="168" x2="310" y2="168" class="ln-thin"/>
+      <line x1="30" y1="140" x2="310" y2="140" class="ln-thin"/>
+      <line x1="30" y1="112" x2="310" y2="112" class="ln-thin"/>
+      <line x1="30" y1="84" x2="310" y2="84" class="ln-thin"/>
+      <line x1="30" y1="56" x2="310" y2="56" class="ln-thin"/>
+      <line x1="30" y1="28" x2="310" y2="28" class="ln-thin"/>
+      <line x1="30" y1="196" x2="324" y2="196" class="ln"/>
+      <polyline points="315,191 324,196 315,201" class="ln"/>
+      <line x1="142" y1="252" x2="142" y2="14" class="ln"/>
+      <polyline points="137,23 142,14 147,23" class="ln"/>
+      <text x="322" y="188" class="tx-s">x</text>
+      <text x="150" y="22" class="tx-s">y</text>
+      <line x1="58" y1="224" x2="282" y2="56" class="ln s1 sw"/>
+      <rect x="21" y="200" width="18" height="14" class="bg"/>
+      <text x="30" y="211" class="tx-s" text-anchor="middle">−4</text>
+      <rect x="49" y="200" width="18" height="14" class="bg"/>
+      <text x="58" y="211" class="tx-s" text-anchor="middle">−3</text>
+      <rect x="77" y="200" width="18" height="14" class="bg"/>
+      <text x="86" y="211" class="tx-s" text-anchor="middle">−2</text>
+      <rect x="105" y="200" width="18" height="14" class="bg"/>
+      <text x="114" y="211" class="tx-s" text-anchor="middle">−1</text>
+      <rect x="164.8" y="200" width="10.5" height="14" class="bg"/>
+      <text x="170" y="211" class="tx-s" text-anchor="middle">1</text>
+      <rect x="192.8" y="200" width="10.5" height="14" class="bg"/>
+      <text x="198" y="211" class="tx-s" text-anchor="middle">2</text>
+      <rect x="220.8" y="200" width="10.5" height="14" class="bg"/>
+      <text x="226" y="211" class="tx-s" text-anchor="middle">3</text>
+      <rect x="248.8" y="200" width="10.5" height="14" class="bg"/>
+      <text x="254" y="211" class="tx-s" text-anchor="middle">4</text>
+      <rect x="276.8" y="200" width="10.5" height="14" class="bg"/>
+      <text x="282" y="211" class="tx-s" text-anchor="middle">5</text>
+      <rect x="304.8" y="200" width="10.5" height="14" class="bg"/>
+      <text x="310" y="211" class="tx-s" text-anchor="middle">6</text>
+      <rect x="119.5" y="245" width="18" height="14" class="bg"/>
+      <text x="137" y="256" class="tx-s" text-anchor="end">−2</text>
+      <rect x="119.5" y="217" width="18" height="14" class="bg"/>
+      <text x="137" y="228" class="tx-s" text-anchor="end">−1</text>
+      <rect x="127" y="161" width="10.5" height="14" class="bg"/>
+      <text x="137" y="172" class="tx-s" text-anchor="end">1</text>
+      <rect x="127" y="133" width="10.5" height="14" class="bg"/>
+      <text x="137" y="144" class="tx-s" text-anchor="end">2</text>
+      <rect x="127" y="105" width="10.5" height="14" class="bg"/>
+      <text x="137" y="116" class="tx-s" text-anchor="end">3</text>
+      <rect x="127" y="77" width="10.5" height="14" class="bg"/>
+      <text x="137" y="88" class="tx-s" text-anchor="end">4</text>
+      <rect x="127" y="49" width="10.5" height="14" class="bg"/>
+      <text x="137" y="60" class="tx-s" text-anchor="end">5</text>
+      <rect x="127" y="21" width="10.5" height="14" class="bg"/>
+      <text x="137" y="32" class="tx-s" text-anchor="end">6</text>
+      <rect x="127" y="200" width="10.5" height="14" class="bg"/>
+      <text x="137" y="211" class="tx-s" text-anchor="end">0</text>
+      <circle cx="58" cy="224" r="5" class="t1"/>
+      <text x="50" y="228" class="tx-b" text-anchor="end">A</text>
+      <circle cx="282" cy="56" r="5" class="t1"/>
+      <text x="290" y="60" class="tx-b">B</text>
+    </svg>`,
+          options: ['14', '10', '√14', '8'],
+          answer: 1,
+          explain: 'A = (−3, −1), B = (5, 5). Różnice współrzędnych: 8 i 6. |AB| = √(8² + 6²) = √100 = 10. (14 to suma 8 + 6 – tak nie wolno liczyć.)',
+        },
+        { id: 'z8dmws', q: 'Jaka jest długość odcinka o końcach A = (−1, 1) i B = (2, 3)?', options: ['√5', '5', '13', '√13'], answer: 3, explain: 'Różnice współrzędnych: 3 i 2. |AB| = √(9 + 4) = √13.' },
+        { id: 'xedkz2', q: 'Punkty A = (0, 1) i B = (2, 4) wyznaczają prostą AB. Który z punktów też leży na tej prostej?', options: ['(3, 5)', '(4, 6)', '(1, 3)', '(4, 7)'], answer: 3, explain: 'Z A do B: 2 w prawo i 3 w górę. Kolejny taki krok od B: (2 + 2, 4 + 3) = (4, 7).' },
+        {
+          id: 'tatdey',
+          q: 'Ile punktów kratowych leży na odcinku AB z rysunku (licząc też A i B)?',
+          svg: `<svg viewBox="0 0 300 222" role="img" aria-label="Układ współrzędnych z kratką. Odcinek AB, gdzie A = (−3, −1) i B = (3, 3)">
+      <line x1="30" y1="28" x2="30" y2="208" class="ln-thin"/>
+      <line x1="60" y1="28" x2="60" y2="208" class="ln-thin"/>
+      <line x1="90" y1="28" x2="90" y2="208" class="ln-thin"/>
+      <line x1="120" y1="28" x2="120" y2="208" class="ln-thin"/>
+      <line x1="150" y1="28" x2="150" y2="208" class="ln-thin"/>
+      <line x1="180" y1="28" x2="180" y2="208" class="ln-thin"/>
+      <line x1="210" y1="28" x2="210" y2="208" class="ln-thin"/>
+      <line x1="240" y1="28" x2="240" y2="208" class="ln-thin"/>
+      <line x1="270" y1="28" x2="270" y2="208" class="ln-thin"/>
+      <line x1="30" y1="208" x2="270" y2="208" class="ln-thin"/>
+      <line x1="30" y1="178" x2="270" y2="178" class="ln-thin"/>
+      <line x1="30" y1="148" x2="270" y2="148" class="ln-thin"/>
+      <line x1="30" y1="118" x2="270" y2="118" class="ln-thin"/>
+      <line x1="30" y1="88" x2="270" y2="88" class="ln-thin"/>
+      <line x1="30" y1="58" x2="270" y2="58" class="ln-thin"/>
+      <line x1="30" y1="28" x2="270" y2="28" class="ln-thin"/>
+      <line x1="30" y1="148" x2="284" y2="148" class="ln"/>
+      <polyline points="275,143 284,148 275,153" class="ln"/>
+      <line x1="150" y1="208" x2="150" y2="14" class="ln"/>
+      <polyline points="145,23 150,14 155,23" class="ln"/>
+      <text x="282" y="140" class="tx-s">x</text>
+      <text x="158" y="22" class="tx-s">y</text>
+      <line x1="60" y1="178" x2="240" y2="58" class="ln s1 sw"/>
+      <rect x="21" y="152" width="18" height="14" class="bg"/>
+      <text x="30" y="163" class="tx-s" text-anchor="middle">−4</text>
+      <rect x="51" y="152" width="18" height="14" class="bg"/>
+      <text x="60" y="163" class="tx-s" text-anchor="middle">−3</text>
+      <rect x="81" y="152" width="18" height="14" class="bg"/>
+      <text x="90" y="163" class="tx-s" text-anchor="middle">−2</text>
+      <rect x="111" y="152" width="18" height="14" class="bg"/>
+      <text x="120" y="163" class="tx-s" text-anchor="middle">−1</text>
+      <rect x="174.8" y="152" width="10.5" height="14" class="bg"/>
+      <text x="180" y="163" class="tx-s" text-anchor="middle">1</text>
+      <rect x="204.8" y="152" width="10.5" height="14" class="bg"/>
+      <text x="210" y="163" class="tx-s" text-anchor="middle">2</text>
+      <rect x="234.8" y="152" width="10.5" height="14" class="bg"/>
+      <text x="240" y="163" class="tx-s" text-anchor="middle">3</text>
+      <rect x="264.8" y="152" width="10.5" height="14" class="bg"/>
+      <text x="270" y="163" class="tx-s" text-anchor="middle">4</text>
+      <rect x="127.5" y="201" width="18" height="14" class="bg"/>
+      <text x="145" y="212" class="tx-s" text-anchor="end">−2</text>
+      <rect x="127.5" y="171" width="18" height="14" class="bg"/>
+      <text x="145" y="182" class="tx-s" text-anchor="end">−1</text>
+      <rect x="135" y="111" width="10.5" height="14" class="bg"/>
+      <text x="145" y="122" class="tx-s" text-anchor="end">1</text>
+      <rect x="135" y="81" width="10.5" height="14" class="bg"/>
+      <text x="145" y="92" class="tx-s" text-anchor="end">2</text>
+      <rect x="135" y="51" width="10.5" height="14" class="bg"/>
+      <text x="145" y="62" class="tx-s" text-anchor="end">3</text>
+      <rect x="135" y="21" width="10.5" height="14" class="bg"/>
+      <text x="145" y="32" class="tx-s" text-anchor="end">4</text>
+      <rect x="135" y="152" width="10.5" height="14" class="bg"/>
+      <text x="145" y="163" class="tx-s" text-anchor="end">0</text>
+      <circle cx="60" cy="178" r="5" class="t1"/>
+      <text x="52" y="182" class="tx-b" text-anchor="end">A</text>
+      <circle cx="240" cy="58" r="5" class="t1"/>
+      <text x="248" y="62" class="tx-b">B</text>
+    </svg>`,
+          options: ['2', '3', '4', '7'],
+          answer: 1,
+          explain: 'Z A = (−3, −1) do B = (3, 3) jest 6 w prawo i 4 w górę; krok między punktami kratowymi to 3 w prawo i 2 w górę. Punkty: A, (0, 1) i B – razem 3.',
+        },
+        { id: 'ctmbrn', q: 'Prawda czy fałsz?\nPunkty (2, 3) i (3, 2) to ten sam punkt.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Kolejność ma znaczenie: (2, 3) leży 2 w prawo i 3 w górę, a (3, 2) – 3 w prawo i 2 w górę.' },
+        { id: 'bvc0tn', q: 'Jaka jest odległość punktu A = (−5, 2) od osi y?', options: ['5', '2', '−5', '7'], answer: 0, explain: 'Od osi y oddala nas pierwsza współrzędna: punkt leży 5 kratek na lewo od osi. Odległość nie może być ujemna.' },
+        { id: 'aiqnw9', q: 'Punkty A = (−2, −1), B = (3, −1) i C = (3, 2) są wierzchołkami prostokąta ABCD. Jakie współrzędne ma wierzchołek D?', options: ['(2, −2)', '(3, −2)', '(−1, 2)', '(−2, 2)'], answer: 3, explain: 'D leży nad A (ta sama współrzędna x = −2) i na wysokości C (y = 2).' },
+      ],
+      tasks: [
+        {
+          id: 'qd6wkw',
+          points: 2,
+          q: 'Wierzchołki trójkąta ABC mają współrzędne A = (−2, −1), B = (4, −1), C = (1, 3) (rysunek). Oblicz obwód tego trójkąta.',
+          svg: `<svg viewBox="0 0 300 222" role="img" aria-label="Układ współrzędnych z kratką i trójkąt ABC, gdzie A = (−2, −1), B = (4, −1), C = (1, 3)">
+      <line x1="30" y1="28" x2="30" y2="208" class="ln-thin"/>
+      <line x1="60" y1="28" x2="60" y2="208" class="ln-thin"/>
+      <line x1="90" y1="28" x2="90" y2="208" class="ln-thin"/>
+      <line x1="120" y1="28" x2="120" y2="208" class="ln-thin"/>
+      <line x1="150" y1="28" x2="150" y2="208" class="ln-thin"/>
+      <line x1="180" y1="28" x2="180" y2="208" class="ln-thin"/>
+      <line x1="210" y1="28" x2="210" y2="208" class="ln-thin"/>
+      <line x1="240" y1="28" x2="240" y2="208" class="ln-thin"/>
+      <line x1="270" y1="28" x2="270" y2="208" class="ln-thin"/>
+      <line x1="30" y1="208" x2="270" y2="208" class="ln-thin"/>
+      <line x1="30" y1="178" x2="270" y2="178" class="ln-thin"/>
+      <line x1="30" y1="148" x2="270" y2="148" class="ln-thin"/>
+      <line x1="30" y1="118" x2="270" y2="118" class="ln-thin"/>
+      <line x1="30" y1="88" x2="270" y2="88" class="ln-thin"/>
+      <line x1="30" y1="58" x2="270" y2="58" class="ln-thin"/>
+      <line x1="30" y1="28" x2="270" y2="28" class="ln-thin"/>
+      <line x1="30" y1="148" x2="284" y2="148" class="ln"/>
+      <polyline points="275,143 284,148 275,153" class="ln"/>
+      <line x1="120" y1="208" x2="120" y2="14" class="ln"/>
+      <polyline points="115,23 120,14 125,23" class="ln"/>
+      <text x="282" y="140" class="tx-s">x</text>
+      <text x="128" y="22" class="tx-s">y</text>
+      <polygon points="60,178 240,178 150,58" class="ln s1 sw"/>
+      <rect x="21" y="152" width="18" height="14" class="bg"/>
+      <text x="30" y="163" class="tx-s" text-anchor="middle">−3</text>
+      <rect x="51" y="152" width="18" height="14" class="bg"/>
+      <text x="60" y="163" class="tx-s" text-anchor="middle">−2</text>
+      <rect x="81" y="152" width="18" height="14" class="bg"/>
+      <text x="90" y="163" class="tx-s" text-anchor="middle">−1</text>
+      <rect x="144.8" y="152" width="10.5" height="14" class="bg"/>
+      <text x="150" y="163" class="tx-s" text-anchor="middle">1</text>
+      <rect x="174.8" y="152" width="10.5" height="14" class="bg"/>
+      <text x="180" y="163" class="tx-s" text-anchor="middle">2</text>
+      <rect x="204.8" y="152" width="10.5" height="14" class="bg"/>
+      <text x="210" y="163" class="tx-s" text-anchor="middle">3</text>
+      <rect x="234.8" y="152" width="10.5" height="14" class="bg"/>
+      <text x="240" y="163" class="tx-s" text-anchor="middle">4</text>
+      <rect x="264.8" y="152" width="10.5" height="14" class="bg"/>
+      <text x="270" y="163" class="tx-s" text-anchor="middle">5</text>
+      <rect x="97.5" y="201" width="18" height="14" class="bg"/>
+      <text x="115" y="212" class="tx-s" text-anchor="end">−2</text>
+      <rect x="97.5" y="171" width="18" height="14" class="bg"/>
+      <text x="115" y="182" class="tx-s" text-anchor="end">−1</text>
+      <rect x="105" y="111" width="10.5" height="14" class="bg"/>
+      <text x="115" y="122" class="tx-s" text-anchor="end">1</text>
+      <rect x="105" y="81" width="10.5" height="14" class="bg"/>
+      <text x="115" y="92" class="tx-s" text-anchor="end">2</text>
+      <rect x="105" y="51" width="10.5" height="14" class="bg"/>
+      <text x="115" y="62" class="tx-s" text-anchor="end">3</text>
+      <rect x="105" y="21" width="10.5" height="14" class="bg"/>
+      <text x="115" y="32" class="tx-s" text-anchor="end">4</text>
+      <rect x="105" y="152" width="10.5" height="14" class="bg"/>
+      <text x="115" y="163" class="tx-s" text-anchor="end">0</text>
+      <circle cx="60" cy="178" r="5" class="t1"/>
+      <text x="52" y="196" class="tx-b" text-anchor="end">A</text>
+      <circle cx="240" cy="178" r="5" class="t1"/>
+      <text x="248" y="196" class="tx-b">B</text>
+      <circle cx="150" cy="58" r="5" class="t1"/>
+      <text x="158" y="50" class="tx-b">C</text>
+    </svg>`,
+          steps: [
+            'Bok AB jest poziomy: |AB| = 4 − (−2) = 6.',
+            'Bok AC: różnice współrzędnych 1 − (−2) = 3 i 3 − (−1) = 4, więc |AC| = √(9 + 16) = 5. Bok BC: różnice 3 i 4, więc |BC| = 5.',
+            'Obwód: 6 + 5 + 5 = 16.',
+          ],
+          answer: '16',
+          scoring: [
+            '1 pkt – obliczenie długości co najmniej dwóch boków.',
+            '2 pkt – obwód równy 16.',
+          ],
+        },
+        {
+          id: '9o3k6g',
+          points: 2,
+          q: 'Punkty A = (−2, 1) i B = (1, 3) leżą na prostej k. Podaj współrzędne dwóch innych punktów kratowych, które leżą na prostej k.',
+          steps: [
+            'Z A do B przesuwamy się o 3 w prawo i 2 w górę. Liczby 3 i 2 nie mają wspólnego dzielnika większego od 1, więc to najkrótszy krok między punktami kratowymi tej prostej.',
+            'Krok dalej od B: (1 + 3, 3 + 2) = (4, 5).',
+            'Krok w drugą stronę od A: (−2 − 3, 1 − 2) = (−5, −1). Inne poprawne punkty to np. (7, 7) albo (−8, −3).',
+          ],
+          answer: 'Np. (4, 5) i (−5, −1)',
+          scoring: [
+            '1 pkt – podanie jednego poprawnego punktu.',
+            '2 pkt – podanie dwóch poprawnych punktów.',
+          ],
+        },
+        {
+          id: '71sbux',
+          points: 3,
+          q: 'Punkty A = (−3, −2), B = (5, −2) i C = (5, 4) są wierzchołkami prostokąta ABCD (rysunek). Wyznacz współrzędne wierzchołka D, długość przekątnej AC i współrzędne punktu przecięcia przekątnych.',
+          svg: `<svg viewBox="0 0 320 250" role="img" aria-label="Układ współrzędnych z kratką i trzy wierzchołki prostokąta: A = (−3, −2), B = (5, −2), C = (5, 4)">
+      <line x1="30" y1="28" x2="30" y2="236" class="ln-thin"/>
+      <line x1="56" y1="28" x2="56" y2="236" class="ln-thin"/>
+      <line x1="82" y1="28" x2="82" y2="236" class="ln-thin"/>
+      <line x1="108" y1="28" x2="108" y2="236" class="ln-thin"/>
+      <line x1="134" y1="28" x2="134" y2="236" class="ln-thin"/>
+      <line x1="160" y1="28" x2="160" y2="236" class="ln-thin"/>
+      <line x1="186" y1="28" x2="186" y2="236" class="ln-thin"/>
+      <line x1="212" y1="28" x2="212" y2="236" class="ln-thin"/>
+      <line x1="238" y1="28" x2="238" y2="236" class="ln-thin"/>
+      <line x1="264" y1="28" x2="264" y2="236" class="ln-thin"/>
+      <line x1="290" y1="28" x2="290" y2="236" class="ln-thin"/>
+      <line x1="30" y1="236" x2="290" y2="236" class="ln-thin"/>
+      <line x1="30" y1="210" x2="290" y2="210" class="ln-thin"/>
+      <line x1="30" y1="184" x2="290" y2="184" class="ln-thin"/>
+      <line x1="30" y1="158" x2="290" y2="158" class="ln-thin"/>
+      <line x1="30" y1="132" x2="290" y2="132" class="ln-thin"/>
+      <line x1="30" y1="106" x2="290" y2="106" class="ln-thin"/>
+      <line x1="30" y1="80" x2="290" y2="80" class="ln-thin"/>
+      <line x1="30" y1="54" x2="290" y2="54" class="ln-thin"/>
+      <line x1="30" y1="28" x2="290" y2="28" class="ln-thin"/>
+      <line x1="30" y1="158" x2="304" y2="158" class="ln"/>
+      <polyline points="295,153 304,158 295,163" class="ln"/>
+      <line x1="134" y1="236" x2="134" y2="14" class="ln"/>
+      <polyline points="129,23 134,14 139,23" class="ln"/>
+      <text x="302" y="150" class="tx-s">x</text>
+      <text x="142" y="22" class="tx-s">y</text>
+      <polyline points="56,210 264,210 264,54" class="ln s1 sw"/>
+      <rect x="21" y="162" width="18" height="14" class="bg"/>
+      <text x="30" y="173" class="tx-s" text-anchor="middle">−4</text>
+      <rect x="47" y="162" width="18" height="14" class="bg"/>
+      <text x="56" y="173" class="tx-s" text-anchor="middle">−3</text>
+      <rect x="73" y="162" width="18" height="14" class="bg"/>
+      <text x="82" y="173" class="tx-s" text-anchor="middle">−2</text>
+      <rect x="99" y="162" width="18" height="14" class="bg"/>
+      <text x="108" y="173" class="tx-s" text-anchor="middle">−1</text>
+      <rect x="154.8" y="162" width="10.5" height="14" class="bg"/>
+      <text x="160" y="173" class="tx-s" text-anchor="middle">1</text>
+      <rect x="180.8" y="162" width="10.5" height="14" class="bg"/>
+      <text x="186" y="173" class="tx-s" text-anchor="middle">2</text>
+      <rect x="206.8" y="162" width="10.5" height="14" class="bg"/>
+      <text x="212" y="173" class="tx-s" text-anchor="middle">3</text>
+      <rect x="232.8" y="162" width="10.5" height="14" class="bg"/>
+      <text x="238" y="173" class="tx-s" text-anchor="middle">4</text>
+      <rect x="258.8" y="162" width="10.5" height="14" class="bg"/>
+      <text x="264" y="173" class="tx-s" text-anchor="middle">5</text>
+      <rect x="284.8" y="162" width="10.5" height="14" class="bg"/>
+      <text x="290" y="173" class="tx-s" text-anchor="middle">6</text>
+      <rect x="111.5" y="229" width="18" height="14" class="bg"/>
+      <text x="129" y="240" class="tx-s" text-anchor="end">−3</text>
+      <rect x="111.5" y="203" width="18" height="14" class="bg"/>
+      <text x="129" y="214" class="tx-s" text-anchor="end">−2</text>
+      <rect x="111.5" y="177" width="18" height="14" class="bg"/>
+      <text x="129" y="188" class="tx-s" text-anchor="end">−1</text>
+      <rect x="119" y="125" width="10.5" height="14" class="bg"/>
+      <text x="129" y="136" class="tx-s" text-anchor="end">1</text>
+      <rect x="119" y="99" width="10.5" height="14" class="bg"/>
+      <text x="129" y="110" class="tx-s" text-anchor="end">2</text>
+      <rect x="119" y="73" width="10.5" height="14" class="bg"/>
+      <text x="129" y="84" class="tx-s" text-anchor="end">3</text>
+      <rect x="119" y="47" width="10.5" height="14" class="bg"/>
+      <text x="129" y="58" class="tx-s" text-anchor="end">4</text>
+      <rect x="119" y="21" width="10.5" height="14" class="bg"/>
+      <text x="129" y="32" class="tx-s" text-anchor="end">5</text>
+      <rect x="119" y="162" width="10.5" height="14" class="bg"/>
+      <text x="129" y="173" class="tx-s" text-anchor="end">0</text>
+      <circle cx="56" cy="210" r="5" class="t1"/>
+      <text x="48" y="228" class="tx-b" text-anchor="end">A</text>
+      <circle cx="264" cy="210" r="5" class="t1"/>
+      <text x="272" y="228" class="tx-b">B</text>
+      <circle cx="264" cy="54" r="5" class="t1"/>
+      <text x="272" y="46" class="tx-b">C</text>
+    </svg>`,
+          steps: [
+            'D leży nad A (x = −3) na wysokości C (y = 4): D = (−3, 4).',
+            'Przekątna AC: różnice współrzędnych 5 − (−3) = 8 i 4 − (−2) = 6, więc |AC| = √(64 + 36) = 10.',
+            'Przekątne prostokąta dzielą się na połowy, więc przecinają się w środku odcinka AC: ((−3 + 5)/2, (−2 + 4)/2) = (1, 1).',
+            'Sprawdzenie: środek BD to ((5 + (−3))/2, (−2 + 4)/2) = (1, 1).',
+          ],
+          answer: 'D = (−3, 4), |AC| = 10, punkt przecięcia przekątnych: (1, 1)',
+          scoring: [
+            '1 pkt – D = (−3, 4).',
+            '2 pkt – długość przekątnej AC = 10.',
+            '3 pkt – punkt przecięcia przekątnych (1, 1).',
+          ],
+        },
+      ],
+    },
+    {
       id: 'bryly',
       name: 'Graniastosłupy i ostrosłupy',
-      basis: 'Informator CKE (matematyka) – kl. IV–VI: X. Bryły; kl. VII–VIII: XI. Obliczenia w geometrii (objętość i pole powierzchni graniastosłupów i ostrosłupów).',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), matematyka kl. IV–VI: X. Bryły (X.1–5: rozpoznawanie graniastosłupów prostych, ostrosłupów, walców, stożków i kul, siatki graniastosłupów prostych i ostrosłupów), XI.6–7; kl. VII–VIII: XI. Geometria przestrzenna (XI.1–3: graniastosłupy i ostrosłupy, także nieprawidłowe – objętość i pole powierzchni). Informator CKE: egzamin sprawdza wymagania z klas IV–VIII.',
       theory: `
         <h3>Wzory</h3>
         <table>
@@ -1586,6 +2897,29 @@ window.SUBJECTS.push({
         </table>
         <p>Przekątna sześcianu: <span class="f">a√3</span>, przekątna prostopadłościanu: <span class="f">√(a² + b² + c²)</span></p>
         <div class="tip">💡 Jednostki: 1 dm³ = 1 litr, 1 m³ = 1000 litrów, 1 cm³ = 1 ml.</div>
+        <h3>Rozpoznawanie brył</h3>
+        <table>
+          <tr><th>Bryła</th><th>Jak ją poznać</th><th>Przykład</th></tr>
+          <tr><td>graniastosłup prosty</td><td>dwie jednakowe, równoległe podstawy (wielokąty), ściany boczne – prostokąty</td><td>pudełko, kostka</td></tr>
+          <tr><td>ostrosłup</td><td>jedna podstawa (wielokąt), ściany boczne – trójkąty o wspólnym wierzchołku</td><td>piramida</td></tr>
+          <tr><td>walec</td><td>dwie podstawy – koła, powierzchnia boczna zaokrąglona</td><td>puszka</td></tr>
+          <tr><td>stożek</td><td>jedna podstawa – koło, i wierzchołek</td><td>rożek do lodów</td></tr>
+          <tr><td>kula</td><td>żadnej płaskiej ściany</td><td>piłka</td></tr>
+        </table>
+        <p><b>Prostopadłościan</b> to graniastosłup, którego wszystkie ściany są prostokątami, a <b>sześcian</b> – którego wszystkie ściany są kwadratami.</p>
+        <div class="tip">📋 Walec, stożek i kulę trzeba umieć rozpoznać. Wzorów na ich objętość i pole nie ma w podstawie programowej szkoły podstawowej.</div>
+        <h3>Bryły prawidłowe i nieprawidłowe</h3>
+        <ul>
+          <li><b>Graniastosłup prawidłowy</b> – graniastosłup prosty, którego podstawa jest wielokątem foremnym (np. trójkątem równobocznym, kwadratem).</li>
+          <li><b>Ostrosłup prawidłowy</b> – podstawa jest wielokątem foremnym, a wszystkie krawędzie boczne są równe.</li>
+          <li>Na egzaminie liczy się też bryły <b>nieprawidłowe</b>, np. graniastosłup prosty o podstawie trójkąta prostokątnego lub trapezu albo ostrosłup o podstawie prostokąta. Wzory są te same: V = Pp · H, V = ⅓ · Pp · H.</li>
+        </ul>
+        <h3>Siatki</h3>
+        <ul>
+          <li>Siatka graniastosłupa prostego n-kątnego: <b>2 podstawy</b> i <b>n prostokątów</b>. Ułożone w pasek prostokąty mają razem długość równą obwodowi podstawy.</li>
+          <li>Siatka ostrosłupa n-kątnego: <b>1 podstawa</b> i <b>n trójkątów</b>.</li>
+          <li>Pułapka: jeśli dwie ściany po złożeniu trafiają w to samo miejsce, figura nie jest siatką.</li>
+        </ul>
       `,
       flashcards: [
         ['Objętość graniastosłupa', 'Pp · H'],
@@ -1595,6 +2929,12 @@ window.SUBJECTS.push({
         ['Przekątna sześcianu', 'a√3'],
         ['1 dm³', '1 litr'],
         ['1 m³', '1000 litrów'],
+        ['Walec / stożek / kula – przykłady', 'Puszka / rożek do lodów / piłka'],
+        ['Ile podstaw ma walec, a ile stożek?', 'Walec – dwie (koła), stożek – jedną (koło)'],
+        ['Siatka graniastosłupa n-kątnego', '2 podstawy + n prostokątów'],
+        ['Siatka ostrosłupa n-kątnego', '1 podstawa + n trójkątów'],
+        ['Graniastosłup prawidłowy', 'Prosty, a jego podstawa jest wielokątem foremnym'],
+        ['Ostrosłup prawidłowy', 'Podstawa – wielokąt foremny, wszystkie krawędzie boczne równe'],
       ],
       questions: [
         { id: 'l39qhk', q: 'Objętość prostopadłościanu o wymiarach 2 × 3 × 5 wynosi…', options: ['10', '30', '31', '62'], answer: 1 },
@@ -1711,6 +3051,91 @@ window.SUBJECTS.push({
           answer: 0,
           explain: 'Podstawa: 6² = 36 cm². Jedna ściana boczna: 6 · 5 / 2 = 15 cm², a są 4: 60 cm². Razem 36 + 60 = 96 cm².',
         },
+        { id: '1kdvsi', q: 'Który przedmiot ma kształt stożka?', options: ['puszka napoju', 'waflowy rożek do lodów', 'piłka', 'kostka do gry'], answer: 1, explain: 'Rożek ma jedną okrągłą podstawę i wierzchołek – to stożek. Puszka to walec, piłka – kula, kostka – sześcian.' },
+        { id: '3u6rli', q: 'Która bryła nie ma żadnej płaskiej ściany?', options: ['walec', 'stożek', 'kula', 'ostrosłup'], answer: 2, explain: 'Walec ma dwie płaskie podstawy, stożek – jedną, ostrosłup ma same płaskie ściany. Kula nie ma żadnej.' },
+        {
+          id: 'gxnhi7',
+          q: 'Która z brył na rysunku jest stożkiem?',
+          svg: `<svg viewBox="0 0 400 175" role="img" aria-label="Cztery bryły: A – walec, B – stożek, C – ostrosłup czworokątny, D – kula">
+      <path d="M20,50 L20,130 A30,9 0 0 0 80,130 L80,50 Z" class="f1 s1 sw"/>
+      <ellipse cx="50" cy="50" rx="30" ry="9" class="f1 s1 sw"/>
+      <path d="M20,130 A30,9 0 0 1 80,130" class="ln-thin dash"/>
+      <path d="M120,130 L150,30 L180,130 A30,9 0 0 1 120,130 Z" class="f2 s2 sw"/>
+      <path d="M120,130 A30,9 0 0 1 180,130" class="ln-thin dash"/>
+      <polygon points="215,135 265,135 285,112 250,30" class="f3 s3 sw"/>
+      <line x1="215" y1="135" x2="250" y2="30" class="ln"/>
+      <line x1="265" y1="135" x2="250" y2="30" class="ln"/>
+      <line x1="285" y1="112" x2="250" y2="30" class="ln"/>
+      <line x1="285" y1="112" x2="235" y2="112" class="ln-thin dash"/>
+      <line x1="235" y1="112" x2="215" y2="135" class="ln-thin dash"/>
+      <line x1="235" y1="112" x2="250" y2="30" class="ln-thin dash"/>
+      <circle cx="350" cy="85" r="40" class="f4 s4 sw"/>
+      <path d="M310,85 A40,11 0 0 0 390,85" class="ln-thin"/>
+      <path d="M310,85 A40,11 0 0 1 390,85" class="ln-thin dash"/>
+      <text x="50" y="165" class="tx-b" text-anchor="middle">A</text>
+      <text x="150" y="165" class="tx-b" text-anchor="middle">B</text>
+      <text x="250" y="165" class="tx-b" text-anchor="middle">C</text>
+      <text x="350" y="165" class="tx-b" text-anchor="middle">D</text>
+    </svg>`,
+          options: ['A', 'B', 'C', 'D'],
+          noShuffle: true,
+          answer: 1,
+          explain: 'B ma jedną podstawę w kształcie koła i wierzchołek. A to walec, C – ostrosłup czworokątny, D – kula.',
+        },
+        {
+          id: '8uwepl',
+          q: 'Która z figur A–D jest siatką ostrosłupa trójkątnego?',
+          svg: `<svg viewBox="0 0 400 300" role="img" aria-label="Cztery figury. A: kwadrat i trzy trójkąty równoboczne dołączone do trzech jego boków. B: trzy prostokąty w pasku i jeden trójkąt nad środkowym. C: duży trójkąt równoboczny podzielony na cztery mniejsze trójkąty równoboczne. D: trzy prostokąty w pasku i dwa trójkąty – nad i pod środkowym">
+      <text x="10" y="24" class="tx-b">A</text>
+      <rect x="80" y="55" width="40" height="40" class="f1 s1 sw"/>
+      <polygon points="120,55 80,55 100,20.4" class="f2 s2 sw"/>
+      <polygon points="80,55 80,95 45.4,75" class="f2 s2 sw"/>
+      <polygon points="120,95 120,55 154.6,75" class="f2 s2 sw"/>
+      <text x="210" y="24" class="tx-b">B</text>
+      <rect x="240" y="60" width="40" height="50" class="f1 s1 sw"/>
+      <rect x="280" y="60" width="40" height="50" class="f1 s1 sw"/>
+      <rect x="320" y="60" width="40" height="50" class="f1 s1 sw"/>
+      <polygon points="280,60 320,60 300,25.4" class="f2 s2 sw"/>
+      <text x="10" y="174" class="tx-b">C</text>
+      <polygon points="60,280 100,280 80,245.4" class="f2 s2 sw"/>
+      <polygon points="100,280 140,280 120,245.4" class="f2 s2 sw"/>
+      <polygon points="80,245.4 120,245.4 100,210.7" class="f2 s2 sw"/>
+      <polygon points="80,245.4 120,245.4 100,280" class="f2 s2 sw"/>
+      <text x="210" y="174" class="tx-b">D</text>
+      <rect x="240" y="200" width="40" height="50" class="f1 s1 sw"/>
+      <rect x="280" y="200" width="40" height="50" class="f1 s1 sw"/>
+      <rect x="320" y="200" width="40" height="50" class="f1 s1 sw"/>
+      <polygon points="280,200 320,200 300,165.4" class="f2 s2 sw"/>
+      <polygon points="280,250 320,250 300,284.6" class="f2 s2 sw"/>
+    </svg>`,
+          options: ['A', 'B', 'C', 'D'],
+          noShuffle: true,
+          answer: 2,
+          explain: 'Ostrosłup trójkątny ma 4 trójkątne ściany. Z C trzy zewnętrzne trójkąty składają się do góry nad środkowym. A ma kwadrat i tylko 3 trójkąty (brakuje czwartego), B ma prostokąty, a D to siatka graniastosłupa trójkątnego.',
+        },
+        {
+          id: '7293c7',
+          q: 'Na rysunku przedstawiono siatkę graniastosłupa. Ile krawędzi ma ten graniastosłup?',
+          svg: `<svg viewBox="0 0 300 230" role="img" aria-label="Siatka bryły: sześć prostokątów w pasku i dwa sześciokąty foremne – nad i pod drugim prostokątem">
+      <rect x="40" y="80" width="34" height="70" class="f1 s1 sw"/>
+      <rect x="74" y="80" width="34" height="70" class="f1 s1 sw"/>
+      <rect x="108" y="80" width="34" height="70" class="f1 s1 sw"/>
+      <rect x="142" y="80" width="34" height="70" class="f1 s1 sw"/>
+      <rect x="176" y="80" width="34" height="70" class="f1 s1 sw"/>
+      <rect x="210" y="80" width="34" height="70" class="f1 s1 sw"/>
+      <polygon points="74,80 108,80 125,50.6 108,21.1 74,21.1 57,50.6" class="f2 s2 sw"/>
+      <polygon points="74,150 108,150 125,179.4 108,208.9 74,208.9 57,179.4" class="f2 s2 sw"/>
+    </svg>`,
+          options: ['12', '18', '24', '8'],
+          answer: 1,
+          explain: 'Podstawy są sześciokątami (n = 6), a ścian bocznych jest 6. Krawędzie: 3n = 3 · 6 = 18.',
+        },
+        { id: 'tmitf5', q: 'Ściany boczne graniastosłupa prawidłowego czworokątnego rozłożono w pasek o wymiarach 24 cm × 10 cm, a dłuższy bok paska to obwód podstawy. Jaką długość ma krawędź podstawy?', options: ['6 cm', '4 cm', '2,4 cm', '12 cm'], answer: 0, explain: 'Podstawa to kwadrat o obwodzie 24 cm, więc jej bok ma 24 : 4 = 6 cm.' },
+        { id: 'm8cl3w', q: 'Który graniastosłup jest prawidłowy?', options: ['graniastosłup prosty o podstawie trójkąta równobocznego', 'graniastosłup prosty o podstawie trójkąta prostokątnego', 'graniastosłup prosty o podstawie prostokąta 2 × 3', 'graniastosłup prosty o podstawie rombu, który nie jest kwadratem'], answer: 0, explain: 'Graniastosłup prawidłowy to graniastosłup prosty, którego podstawa jest wielokątem foremnym (wszystkie boki i kąty równe). Spośród podanych podstaw tylko trójkąt równoboczny jest foremny.' },
+        { id: 'xr262f', q: 'Podstawą ostrosłupa jest prostokąt o wymiarach 6 cm × 4 cm, a wysokość ostrosłupa ma 5 cm. Jaka jest objętość tego ostrosłupa?', options: ['120 cm³', '40 cm³', '60 cm³', '20 cm³'], answer: 1, explain: 'V = ⅓ · Pp · H = ⅓ · 24 · 5 = 40 cm³. (120 cm³ – zapomniane ⅓.)' },
+        { id: 'ckvcfs', q: 'Podstawą graniastosłupa prostego jest trapez o podstawach 5 cm i 3 cm i wysokości 2 cm. Wysokość graniastosłupa ma 10 cm. Jaka jest jego objętość?', options: ['160 cm³', '40 cm³', '80 cm³', '300 cm³'], answer: 2, explain: 'Pp = (5 + 3) · 2 / 2 = 8 cm², V = 8 · 10 = 80 cm³.' },
+        { id: 'safrkd', q: 'Podstawą graniastosłupa prostego jest trójkąt prostokątny o przyprostokątnych 3 cm i 4 cm. Wysokość graniastosłupa ma 10 cm. Jakie jest jego pole powierzchni całkowitej?', options: ['120 cm²', '132 cm²', '126 cm²', '144 cm²'], answer: 1, explain: 'Trzeci bok podstawy: √(9 + 16) = 5 cm. Pp = 3 · 4 / 2 = 6 cm², pole boczne: (3 + 4 + 5) · 10 = 120 cm². Razem: 2 · 6 + 120 = 132 cm².' },
+        { id: 'qc3lwp', q: 'Prawda czy fałsz?\nWalec ma dwie podstawy, które są kołami.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0 },
       ],
       tasks: [
         {
@@ -1763,12 +3188,61 @@ window.SUBJECTS.push({
             '2 pkt – wynik 15 cm.',
           ],
         },
+        {
+          id: 'jodgdq',
+          points: 3,
+          q: 'Na rysunku przedstawiono siatkę graniastosłupa prostego, którego podstawą jest trapez prostokątny (wymiary w cm). Oblicz objętość i pole powierzchni całkowitej tego graniastosłupa.',
+          svg: `<svg viewBox="0 0 400 312" role="img" aria-label="Siatka graniastosłupa prostego: pasek czterech prostokątów o szerokościach 6, 4, 3 i 5 cm i wysokości 5 cm oraz dwa trapezy prostokątne o podstawach 6 i 3 cm i wysokości 4 cm">
+      <rect x="20" y="110" width="120" height="100" class="f1 s1 sw"/>
+      <rect x="140" y="110" width="80" height="100" class="f1 s1 sw"/>
+      <rect x="220" y="110" width="60" height="100" class="f1 s1 sw"/>
+      <rect x="280" y="110" width="100" height="100" class="f1 s1 sw"/>
+      <polygon points="20,110 140,110 140,30 80,30" class="f2 s2 sw"/>
+      <polygon points="20,210 140,210 140,290 80,290" class="f2 s2 sw"/>
+      <text x="80" y="134" class="tx-b" text-anchor="middle">6</text>
+      <text x="180" y="102" class="tx-b" text-anchor="middle">4</text>
+      <text x="250" y="102" class="tx-b" text-anchor="middle">3</text>
+      <text x="330" y="102" class="tx-b" text-anchor="middle">5</text>
+      <text x="372" y="165" class="tx-b" text-anchor="end">5</text>
+      <text x="110" y="22" class="tx-b" text-anchor="middle">3</text>
+      <text x="132" y="74" class="tx-b" text-anchor="end">4</text>
+      <text x="44" y="70" class="tx-b" text-anchor="end">5</text>
+      <text x="390" y="304" class="tx-s" text-anchor="end">wymiary w cm</text>
+    </svg>`,
+          steps: [
+            'Odczytaj z siatki: podstawa to trapez o podstawach 6 cm i 3 cm, wysokości 4 cm (ramię prostopadłe) i drugim ramieniu 5 cm. Wysokość graniastosłupa (wysokość paska) to 5 cm.',
+            'Pole podstawy: (6 + 3) · 4 / 2 = 18 cm². Objętość: V = 18 · 5 = 90 cm³.',
+            'Pole boczne: obwód podstawy razy wysokość: (6 + 4 + 3 + 5) · 5 = 18 · 5 = 90 cm².',
+            'Pole całkowite: 2 · 18 + 90 = 126 cm².',
+          ],
+          answer: 'V = 90 cm³, P = 126 cm²',
+          scoring: [
+            '1 pkt – poprawne pole podstawy: 18 cm².',
+            '2 pkt – objętość 90 cm³.',
+            '3 pkt – pole powierzchni całkowitej 126 cm².',
+          ],
+        },
+        {
+          id: 'waorjt',
+          points: 2,
+          q: 'Podstawą ostrosłupa jest prostokąt o wymiarach 8 cm × 6 cm. Objętość ostrosłupa jest równa 96 cm³. Oblicz wysokość tego ostrosłupa.',
+          steps: [
+            'Pole podstawy: 8 · 6 = 48 cm².',
+            'V = ⅓ · Pp · H, więc 96 = ⅓ · 48 · H, czyli 96 = 16 · H.',
+            'H = 96 : 16 = 6 cm. Sprawdzenie: ⅓ · 48 · 6 = 96.',
+          ],
+          answer: '6 cm',
+          scoring: [
+            '1 pkt – zapisanie równania ⅓ · 48 · H = 96 (albo równoważnego).',
+            '2 pkt – wysokość 6 cm.',
+          ],
+        },
       ],
     },
     {
       id: 'statystyka',
       name: 'Statystyka i prawdopodobieństwo',
-      basis: 'Informator CKE (matematyka) – kl. IV–VI: XIII. Elementy statystyki opisowej; kl. VII–VIII: XIII. Odczytywanie danych i elementy statystyki opisowej (średnia arytmetyczna), XII. Wprowadzenie do kombinatoryki i rachunku prawdopodobieństwa.',
+      basis: 'Informator CKE (matematyka) – kl. IV–VI: XIII. Elementy statystyki opisowej (XIII.1–2: gromadzenie danych, odczytywanie tabel, diagramów i wykresów); kl. VII–VIII: XIII. Odczytywanie danych i elementy statystyki opisowej (XIII.1–3: diagramy słupkowe i kołowe, wykresy – odczytywanie i tworzenie, średnia arytmetyczna), XII. Wprowadzenie do kombinatoryki i rachunku prawdopodobieństwa.',
       theory: `
         <h3>Statystyka</h3>
         <ul>
@@ -1782,11 +3256,27 @@ window.SUBJECTS.push({
         <h3>Zliczanie możliwości</h3>
         <p>W szkole podstawowej liczymy możliwości, <b>wypisując je wszystkie</b> (np. w tabeli lub na liście) – bez wzorów. Przykład: liczby dwucyfrowe o sumie cyfr 3 to 12, 21, 30 – są 3.</p>
         <div class="tip">📋 Mediana i dominanta nie występują w podstawie programowej szkoły podstawowej – na egzaminie z statystyki potrzebna jest średnia arytmetyczna i odczytywanie danych.</div>
+        <h3>Diagramy i wykresy</h3>
+        <ul>
+          <li><b>Diagram słupkowy</b> – wysokość słupka to wartość. Zawsze sprawdź skalę na osi pionowej.</li>
+          <li><b>Diagram kołowy</b> – całe koło to 100% = 360°. Kąt wycinka: <span class="f">p% · 360°</span>, np. 25% → 90°, 10% → 36°, 1% → 3,6°.</li>
+          <li><b>Wykres liniowy</b> – pokazuje, jak zmienia się wartość (np. w czasie): wartości rosną, maleją albo są stałe (pozioma linia).</li>
+        </ul>
+        <h3>Jak zrobić diagram kołowy</h3>
+        <p>Dane: 30 uczniów – 15 gra w piłkę nożną, 9 w koszykówkę, 6 w siatkówkę.</p>
+        <ol>
+          <li>Procenty: 15/30 = 50%, 9/30 = 30%, 6/30 = 20%.</li>
+          <li>Kąty: 50% · 360° = 180°, 30% · 360° = 108°, 20% · 360° = 72° (razem 360°).</li>
+        </ol>
       `,
       flashcards: [
         ['Średnia arytmetyczna', 'Suma liczb podzielona przez ich ilość'],
         ['Prawdopodobieństwo', 'zdarzenia sprzyjające / wszystkie zdarzenia'],
         ['Zliczanie możliwości', 'Wypisz wszystkie możliwości po kolei (lista, tabela)'],
+        ['Całe koło w diagramie kołowym', '100% = 360°'],
+        ['Kąt wycinka dla p%', 'p% · 360° (1% to 3,6°)'],
+        ['Wycinek 90°', '25% (ćwierć koła)'],
+        ['Pozioma linia na wykresie', 'Wartość się nie zmienia (jest stała)'],
       ],
       questions: [
         { id: '630mvm', q: 'Średnia arytmetyczna liczb 4, 5, 6, 9 wynosi…', options: ['5', '5,5', '6', '6,5'], answer: 2, explain: '(4 + 5 + 6 + 9) : 4 = 24 : 4 = 6.' },
@@ -1945,6 +3435,203 @@ window.SUBJECTS.push({
           answer: 0,
           explain: '(30 + 45 + 25 + 40 + 60) : 5 = 200 : 5 = 40 porcji.',
         },
+        {
+          id: 'rs8tc8',
+          q: 'Diagram kołowy przedstawia wyniki ankiety o ulubionym sporcie 40 uczniów. Ilu uczniów wybrało siatkówkę?',
+          svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Diagram kołowy: piłka nożna 40%, siatkówka 25%, koszykówka 20%, pływanie 15%">
+      <path d="M100,100 L100,15 A85,85 0 0 1 150,168.8 Z" class="f1 ln"/>
+      <path d="M100,100 L150,168.8 A85,85 0 0 1 31.2,150 Z" class="f2 ln"/>
+      <path d="M100,100 L31.2,150 A85,85 0 0 1 31.2,50 Z" class="f3 ln"/>
+      <path d="M100,100 L31.2,50 A85,85 0 0 1 100,15 Z" class="f4 ln"/>
+      <rect x="210" y="45" width="16" height="16" class="f1 ln"/>
+      <text x="234" y="58" class="tx">piłka nożna 40%</text>
+      <rect x="210" y="75" width="16" height="16" class="f2 ln"/>
+      <text x="234" y="88" class="tx">siatkówka 25%</text>
+      <rect x="210" y="105" width="16" height="16" class="f3 ln"/>
+      <text x="234" y="118" class="tx">koszykówka 20%</text>
+      <rect x="210" y="135" width="16" height="16" class="f4 ln"/>
+      <text x="234" y="148" class="tx">pływanie 15%</text>
+    </svg>`,
+          options: ['25', '10', '15', '4'],
+          answer: 1,
+          explain: '25% z 40 to 40 : 4 = 10 uczniów.',
+        },
+        { id: 'xgvlkf', q: 'Wycinek diagramu kołowego ma kąt 72°. Jaki procent całości przedstawia?', options: ['72%', '36%', '20%', '25%'], answer: 2, explain: '72° : 360° = 0,2 = 20%.' },
+        { id: 'hdsnua', q: 'Jaki kąt ma wycinek diagramu kołowego, który przedstawia 15% całości?', options: ['54°', '15°', '36°', '45°'], answer: 0, explain: '0,15 · 360° = 54°.' },
+        {
+          id: 'fydl8u',
+          q: 'Diagram kołowy przedstawia ulubione zwierzęta 72 ankietowanych osób. Ile osób wybrało kota?',
+          svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Diagram kołowy ulubionych zwierząt: wycinek pies ma kąt 150 stopni, kot 120 stopni, rybki 60 stopni, inne 30 stopni">
+      <path d="M100,100 L100,15 A85,85 0 0 1 142.5,173.6 Z" class="f1 ln"/>
+      <path d="M100,100 L142.5,173.6 A85,85 0 0 1 15,100 Z" class="f2 ln"/>
+      <path d="M100,100 L15,100 A85,85 0 0 1 57.5,26.4 Z" class="f3 ln"/>
+      <path d="M100,100 L57.5,26.4 A85,85 0 0 1 100,15 Z" class="f4 ln"/>
+      <rect x="210" y="45" width="16" height="16" class="f1 ln"/>
+      <text x="234" y="58" class="tx">pies – 150°</text>
+      <rect x="210" y="75" width="16" height="16" class="f2 ln"/>
+      <text x="234" y="88" class="tx">kot – 120°</text>
+      <rect x="210" y="105" width="16" height="16" class="f3 ln"/>
+      <text x="234" y="118" class="tx">rybki – 60°</text>
+      <rect x="210" y="135" width="16" height="16" class="f4 ln"/>
+      <text x="234" y="148" class="tx">inne – 30°</text>
+    </svg>`,
+          options: ['120', '30', '24', '12'],
+          answer: 2,
+          explain: 'Wycinek „kot” to 120° z 360°, czyli 1/3 koła. 72 : 3 = 24 osoby.',
+        },
+        {
+          id: '0m5zc6',
+          q: 'Diagram przedstawia, ile książek wypożyczono z biblioteki w kolejnych miesiącach. W którym miesiącu wypożyczono o 50% więcej książek niż w styczniu?',
+          svg: `<svg viewBox="0 0 360 240" role="img" aria-label="Diagram słupkowy liczby wypożyczonych książek: styczeń 40, luty 60, marzec 50, kwiecień 30, maj 70">
+      <line x1="44" y1="200" x2="350" y2="200" class="ln-thin"/>
+      <text x="38" y="204" class="tx-s" text-anchor="end">0</text>
+      <line x1="44" y1="180" x2="350" y2="180" class="ln-thin"/>
+      <text x="38" y="184" class="tx-s" text-anchor="end">10</text>
+      <line x1="44" y1="160" x2="350" y2="160" class="ln-thin"/>
+      <text x="38" y="164" class="tx-s" text-anchor="end">20</text>
+      <line x1="44" y1="140" x2="350" y2="140" class="ln-thin"/>
+      <text x="38" y="144" class="tx-s" text-anchor="end">30</text>
+      <line x1="44" y1="120" x2="350" y2="120" class="ln-thin"/>
+      <text x="38" y="124" class="tx-s" text-anchor="end">40</text>
+      <line x1="44" y1="100" x2="350" y2="100" class="ln-thin"/>
+      <text x="38" y="104" class="tx-s" text-anchor="end">50</text>
+      <line x1="44" y1="80" x2="350" y2="80" class="ln-thin"/>
+      <text x="38" y="84" class="tx-s" text-anchor="end">60</text>
+      <line x1="44" y1="60" x2="350" y2="60" class="ln-thin"/>
+      <text x="38" y="64" class="tx-s" text-anchor="end">70</text>
+      <line x1="44" y1="40" x2="350" y2="40" class="ln-thin"/>
+      <text x="38" y="44" class="tx-s" text-anchor="end">80</text>
+      <rect x="64" y="120" width="36" height="80" class="f3 s3"/>
+      <text x="82" y="218" class="tx" text-anchor="middle">sty</text>
+      <rect x="120" y="80" width="36" height="120" class="f3 s3"/>
+      <text x="138" y="218" class="tx" text-anchor="middle">lut</text>
+      <rect x="176" y="100" width="36" height="100" class="f3 s3"/>
+      <text x="194" y="218" class="tx" text-anchor="middle">mar</text>
+      <rect x="232" y="140" width="36" height="60" class="f3 s3"/>
+      <text x="250" y="218" class="tx" text-anchor="middle">kwi</text>
+      <rect x="288" y="60" width="36" height="140" class="f3 s3"/>
+      <text x="306" y="218" class="tx" text-anchor="middle">maj</text>
+      <line x1="44" y1="200" x2="350" y2="200" class="ln"/>
+      <line x1="44" y1="200" x2="44" y2="30" class="ln"/>
+      <text x="8" y="16" class="tx-s">liczba książek</text>
+    </svg>`,
+          options: ['w lutym', 'w marcu', 'w kwietniu', 'w maju'],
+          answer: 0,
+          explain: 'W styczniu: 40 książek. 50% więcej: 40 + 20 = 60 – tyle wypożyczono w lutym.',
+        },
+        {
+          id: 'lsd6ty',
+          q: 'Wykres przedstawia poziom wody w zbiorniku. W którym okresie poziom wody się nie zmieniał?',
+          svg: `<svg viewBox="0 0 380 245" role="img" aria-label="Wykres poziomu wody w zbiorniku: o 0 h – 2 m, o 2 h – 5 m, o 4 h – 5 m, o 6 h – 3 m, o 8 h – 1 m">
+      <line x1="60" y1="200" x2="356" y2="200" class="ln-thin"/>
+      <text x="52" y="204" class="tx-s" text-anchor="end">0</text>
+      <line x1="60" y1="174" x2="356" y2="174" class="ln-thin"/>
+      <text x="52" y="178" class="tx-s" text-anchor="end">1</text>
+      <line x1="60" y1="148" x2="356" y2="148" class="ln-thin"/>
+      <text x="52" y="152" class="tx-s" text-anchor="end">2</text>
+      <line x1="60" y1="122" x2="356" y2="122" class="ln-thin"/>
+      <text x="52" y="126" class="tx-s" text-anchor="end">3</text>
+      <line x1="60" y1="96" x2="356" y2="96" class="ln-thin"/>
+      <text x="52" y="100" class="tx-s" text-anchor="end">4</text>
+      <line x1="60" y1="70" x2="356" y2="70" class="ln-thin"/>
+      <text x="52" y="74" class="tx-s" text-anchor="end">5</text>
+      <line x1="60" y1="44" x2="356" y2="44" class="ln-thin"/>
+      <text x="52" y="48" class="tx-s" text-anchor="end">6</text>
+      <line x1="60" y1="200" x2="60" y2="44" class="ln-thin"/>
+      <line x1="97" y1="200" x2="97" y2="44" class="ln-thin"/>
+      <line x1="134" y1="200" x2="134" y2="44" class="ln-thin"/>
+      <line x1="171" y1="200" x2="171" y2="44" class="ln-thin"/>
+      <line x1="208" y1="200" x2="208" y2="44" class="ln-thin"/>
+      <line x1="245" y1="200" x2="245" y2="44" class="ln-thin"/>
+      <line x1="282" y1="200" x2="282" y2="44" class="ln-thin"/>
+      <line x1="319" y1="200" x2="319" y2="44" class="ln-thin"/>
+      <line x1="356" y1="200" x2="356" y2="44" class="ln-thin"/>
+      <text x="60" y="218" class="tx-s" text-anchor="middle">0</text>
+      <text x="134" y="218" class="tx-s" text-anchor="middle">2</text>
+      <text x="208" y="218" class="tx-s" text-anchor="middle">4</text>
+      <text x="282" y="218" class="tx-s" text-anchor="middle">6</text>
+      <text x="356" y="218" class="tx-s" text-anchor="middle">8</text>
+      <line x1="60" y1="200" x2="370" y2="200" class="ln"/>
+      <line x1="60" y1="200" x2="60" y2="30" class="ln"/>
+      <polyline points="60,148 134,70 208,70 282,122 356,174" class="ln s1 sw"/>
+      <circle cx="60" cy="148" r="4" class="t1"/>
+      <circle cx="134" cy="70" r="4" class="t1"/>
+      <circle cx="208" cy="70" r="4" class="t1"/>
+      <circle cx="282" cy="122" r="4" class="t1"/>
+      <circle cx="356" cy="174" r="4" class="t1"/>
+      <text x="8" y="16" class="tx-s">poziom wody (m)</text>
+      <text x="376" y="236" class="tx-s" text-anchor="end">czas (h)</text>
+    </svg>`,
+          options: ['od 0 h do 2 h', 'od 2 h do 4 h', 'od 4 h do 6 h', 'od 6 h do 8 h'],
+          answer: 1,
+          explain: 'Od 2 h do 4 h wykres jest poziomą linią – poziom wody był stały (5 m).',
+        },
+        {
+          id: 'qooc3t',
+          q: 'Na podstawie wykresu: o ile metrów obniżył się poziom wody w zbiorniku od 4. do 8. godziny?',
+          svg: `<svg viewBox="0 0 380 245" role="img" aria-label="Wykres poziomu wody w zbiorniku: o 0 h – 2 m, o 2 h – 5 m, o 4 h – 5 m, o 6 h – 3 m, o 8 h – 1 m">
+      <line x1="60" y1="200" x2="356" y2="200" class="ln-thin"/>
+      <text x="52" y="204" class="tx-s" text-anchor="end">0</text>
+      <line x1="60" y1="174" x2="356" y2="174" class="ln-thin"/>
+      <text x="52" y="178" class="tx-s" text-anchor="end">1</text>
+      <line x1="60" y1="148" x2="356" y2="148" class="ln-thin"/>
+      <text x="52" y="152" class="tx-s" text-anchor="end">2</text>
+      <line x1="60" y1="122" x2="356" y2="122" class="ln-thin"/>
+      <text x="52" y="126" class="tx-s" text-anchor="end">3</text>
+      <line x1="60" y1="96" x2="356" y2="96" class="ln-thin"/>
+      <text x="52" y="100" class="tx-s" text-anchor="end">4</text>
+      <line x1="60" y1="70" x2="356" y2="70" class="ln-thin"/>
+      <text x="52" y="74" class="tx-s" text-anchor="end">5</text>
+      <line x1="60" y1="44" x2="356" y2="44" class="ln-thin"/>
+      <text x="52" y="48" class="tx-s" text-anchor="end">6</text>
+      <line x1="60" y1="200" x2="60" y2="44" class="ln-thin"/>
+      <line x1="97" y1="200" x2="97" y2="44" class="ln-thin"/>
+      <line x1="134" y1="200" x2="134" y2="44" class="ln-thin"/>
+      <line x1="171" y1="200" x2="171" y2="44" class="ln-thin"/>
+      <line x1="208" y1="200" x2="208" y2="44" class="ln-thin"/>
+      <line x1="245" y1="200" x2="245" y2="44" class="ln-thin"/>
+      <line x1="282" y1="200" x2="282" y2="44" class="ln-thin"/>
+      <line x1="319" y1="200" x2="319" y2="44" class="ln-thin"/>
+      <line x1="356" y1="200" x2="356" y2="44" class="ln-thin"/>
+      <text x="60" y="218" class="tx-s" text-anchor="middle">0</text>
+      <text x="134" y="218" class="tx-s" text-anchor="middle">2</text>
+      <text x="208" y="218" class="tx-s" text-anchor="middle">4</text>
+      <text x="282" y="218" class="tx-s" text-anchor="middle">6</text>
+      <text x="356" y="218" class="tx-s" text-anchor="middle">8</text>
+      <line x1="60" y1="200" x2="370" y2="200" class="ln"/>
+      <line x1="60" y1="200" x2="60" y2="30" class="ln"/>
+      <polyline points="60,148 134,70 208,70 282,122 356,174" class="ln s1 sw"/>
+      <circle cx="60" cy="148" r="4" class="t1"/>
+      <circle cx="134" cy="70" r="4" class="t1"/>
+      <circle cx="208" cy="70" r="4" class="t1"/>
+      <circle cx="282" cy="122" r="4" class="t1"/>
+      <circle cx="356" cy="174" r="4" class="t1"/>
+      <text x="8" y="16" class="tx-s">poziom wody (m)</text>
+      <text x="376" y="236" class="tx-s" text-anchor="end">czas (h)</text>
+    </svg>`,
+          options: ['o 1 m', 'o 5 m', 'o 4 m', 'o 3 m'],
+          answer: 2,
+          explain: 'Po 4 h było 5 m, po 8 h – 1 m. Spadek: 5 − 1 = 4 m.',
+        },
+        { id: 'e803gb', q: 'W klasie jest 12 dziewcząt i 18 chłopców. Jaki kąt będzie miał wycinek „dziewczęta” na diagramie kołowym?', options: ['120°', '144°', '216°', '40°'], answer: 1, explain: 'Dziewczęta to 12 z 30 uczniów, czyli 40%. 0,4 · 360° = 144°.' },
+        {
+          id: 'wr6xrk',
+          q: 'Z 24 uczniów 12 dojeżdża do szkoły autobusem, 6 – rowerem, a 6 przychodzi pieszo. Który diagram przedstawia te dane?',
+          svg: `<svg viewBox="0 0 400 135" role="img" aria-label="Cztery diagramy kołowe z trzema wycinkami. A: trzy równe części. B: połowa i dwa wycinki 30 i 20 procent. C: połowa i dwie ćwiartki. D: 40, 40 i 20 procent">
+      <path d="M50,60 L50,20 A40,40 0 0 1 84.6,80 Z" class="f1 ln"/>,<path d="M50,60 L84.6,80 A40,40 0 0 1 15.4,80 Z" class="f2 ln"/>,<path d="M50,60 L15.4,80 A40,40 0 0 1 50,20 Z" class="f3 ln"/>
+      <text x="50" y="125" class="tx-b" text-anchor="middle">A</text>
+      <path d="M150,60 L150,20 A40,40 0 0 1 150,100 Z" class="f1 ln"/>,<path d="M150,60 L150,100 A40,40 0 0 1 112,47.6 Z" class="f2 ln"/>,<path d="M150,60 L112,47.6 A40,40 0 0 1 150,20 Z" class="f3 ln"/>
+      <text x="150" y="125" class="tx-b" text-anchor="middle">B</text>
+      <path d="M250,60 L250,20 A40,40 0 0 1 250,100 Z" class="f1 ln"/>,<path d="M250,60 L250,100 A40,40 0 0 1 210,60 Z" class="f2 ln"/>,<path d="M250,60 L210,60 A40,40 0 0 1 250,20 Z" class="f3 ln"/>
+      <text x="250" y="125" class="tx-b" text-anchor="middle">C</text>
+      <path d="M350,60 L350,20 A40,40 0 0 1 373.5,92.4 Z" class="f1 ln"/>,<path d="M350,60 L373.5,92.4 A40,40 0 0 1 312,47.6 Z" class="f2 ln"/>,<path d="M350,60 L312,47.6 A40,40 0 0 1 350,20 Z" class="f3 ln"/>
+      <text x="350" y="125" class="tx-b" text-anchor="middle">D</text>
+    </svg>`,
+          options: ['A', 'B', 'C', 'D'],
+          noShuffle: true,
+          answer: 2,
+          explain: 'Autobus: 12/24 = 50% (półkole), rower i pieszo: po 6/24 = 25% (ćwiartka koła, kąt prosty). Tak wygląda diagram C.',
+        },
       ],
       tasks: [
         {
@@ -2043,12 +3730,57 @@ window.SUBJECTS.push({
             '3 pkt – 30% uczniów przeczytało co najmniej 3 książki.',
           ],
         },
+        {
+          id: '5iwz0f',
+          points: 3,
+          q: 'W ankiecie wzięło udział 200 osób. Diagram kołowy przedstawia, jak dojeżdżają one do pracy. Jaki procent ankietowanych dojeżdża autobusem? Ile to osób? Jaki kąt ma wycinek „autobus”?',
+          svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Diagram kołowy sposobów dojazdu: samochód 40%, pociąg 35%, autobus – nieznany procent, rower 10%">
+      <path d="M100,100 L100,15 A85,85 0 0 1 150,168.8 Z" class="f1 ln"/>
+      <path d="M100,100 L150,168.8 A85,85 0 0 1 15,100 Z" class="f3 ln"/>
+      <path d="M100,100 L15,100 A85,85 0 0 1 50,31.2 Z" class="f2 ln"/>
+      <path d="M100,100 L50,31.2 A85,85 0 0 1 100,15 Z" class="f4 ln"/>
+      <rect x="210" y="45" width="16" height="16" class="f1 ln"/>
+      <text x="234" y="58" class="tx">samochód 40%</text>
+      <rect x="210" y="75" width="16" height="16" class="f3 ln"/>
+      <text x="234" y="88" class="tx">pociąg 35%</text>
+      <rect x="210" y="105" width="16" height="16" class="f2 ln"/>
+      <text x="234" y="118" class="tx">autobus ?</text>
+      <rect x="210" y="135" width="16" height="16" class="f4 ln"/>
+      <text x="234" y="148" class="tx">rower 10%</text>
+    </svg>`,
+          steps: [
+            'Całe koło to 100%: 100% − 40% − 35% − 10% = 15% – tyle osób dojeżdża autobusem.',
+            '15% z 200 osób: 0,15 · 200 = 30 osób.',
+            'Kąt wycinka: 15% · 360° = 0,15 · 360° = 54°.',
+          ],
+          answer: '15%, czyli 30 osób; wycinek ma kąt 54°.',
+          scoring: [
+            '1 pkt – obliczenie, że autobusem dojeżdża 15% ankietowanych.',
+            '2 pkt – liczba osób: 30.',
+            '3 pkt – kąt wycinka: 54°.',
+          ],
+        },
+        {
+          id: 'lf50bj',
+          points: 2,
+          q: 'W klasie jest 30 uczniów: 15 najbardziej lubi piłkę nożną, 9 – koszykówkę, a 6 – siatkówkę. Oblicz miary kątów wycinków diagramu kołowego, który przedstawia te dane.',
+          steps: [
+            'Procenty: 15/30 = 50%, 9/30 = 30%, 6/30 = 20%.',
+            'Kąty: 50% · 360° = 180°, 30% · 360° = 108°, 20% · 360° = 72°.',
+            'Sprawdzenie: 180° + 108° + 72° = 360°.',
+          ],
+          answer: 'Piłka nożna 180°, koszykówka 108°, siatkówka 72°.',
+          scoring: [
+            '1 pkt – obliczenie, jaką część (procent) klasy stanowi każda grupa, albo poprawny kąt jednego wycinka.',
+            '2 pkt – wszystkie kąty: 180°, 108°, 72°.',
+          ],
+        },
       ],
     },
     {
       id: 'zadania-tekstowe',
       name: 'Prędkość, skala, jednostki',
-      basis: 'Informator CKE (matematyka) – kl. IV–VI: XII. Obliczenia praktyczne (m.in. obliczenia zegarowe, skala, prędkość, jednostki).',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), matematyka kl. IV–VI: XII. Obliczenia praktyczne (XII.3–9: obliczenia zegarowe i kalendarzowe, temperatura dodatnia i ujemna, jednostki długości i masy – także dekagram, skala, prędkość), XI.4 i XI.7 (jednostki pola i objętości). Informator CKE: egzamin sprawdza wymagania z klas IV–VIII.',
       theory: `
         <h3>Droga, prędkość, czas</h3>
         <p><span class="f">v = s / t</span> &nbsp; <span class="f">s = v · t</span> &nbsp; <span class="f">t = s / v</span></p>
@@ -2064,6 +3796,17 @@ window.SUBJECTS.push({
           <tr><th>Masa</th><td>1 t = 1000 kg, 1 kg = 1000 g</td></tr>
           <tr><th>Czas</th><td>1 h = 60 min, 0,5 h = 30 min, 0,25 h = 15 min</td></tr>
         </table>
+        <h3>Kalendarz</h3>
+        <ul>
+          <li>1 tydzień = 7 dni. Ten sam dzień tygodnia wypada co 7 dni (po 14, 21, 28 dniach…).</li>
+          <li>31 dni: styczeń, marzec, maj, lipiec, sierpień, październik, grudzień. 30 dni: kwiecień, czerwiec, wrzesień, listopad. Luty: 28 dni, a w roku przestępnym 29.</li>
+          <li>Rok ma 365 dni, rok przestępny – 366 (np. 2024 i 2028).</li>
+        </ul>
+        <div class="tip">💡 Liczysz dni „od … do … włącznie”? Policz oba końce. Od 3 do 10 maja włącznie to 8 dni, ale od 3 maja do 10 maja mija 7 dni.</div>
+        <h3>Temperatura</h3>
+        <p>Poniżej zera temperatura jest ujemna (−5°C). Różnica temperatur = wyższa − niższa: <span class="f">3 − (−5) = 8°C</span>.</p>
+        <h3>Jednostki masy</h3>
+        <p><span class="f">1 kg = 100 dag = 1000 g</span>, <span class="f">1 dag = 10 g</span>, <span class="f">1 t = 1000 kg</span>.</p>
       `,
       flashcards: [
         ['Wzór na prędkość', 'v = s / t'],
@@ -2073,6 +3816,11 @@ window.SUBJECTS.push({
         ['1 km²', '100 ha'],
         ['1 m²', '10 000 cm²'],
         ['0,75 h', '45 minut'],
+        ['1 dag', '10 g'],
+        ['1 kg', '100 dag = 1000 g'],
+        ['Miesiące, które mają 30 dni', 'Kwiecień, czerwiec, wrzesień, listopad'],
+        ['Rok przestępny', '366 dni, luty ma 29 dni'],
+        ['Różnica temperatur 4°C i −6°C', '4 − (−6) = 10°C'],
       ],
       questions: [
         { id: 'eaqd87', q: 'Samochód przejechał 240 km w 3 godziny. Jaka była jego średnia prędkość?', options: ['60 km/h', '80 km/h', '72 km/h', '720 km/h'], answer: 1, explain: 'v = 240 : 3 = 80 km/h.' },
@@ -2226,6 +3974,149 @@ window.SUBJECTS.push({
           answer: 0,
           explain: 'Zegar pokazuje 7:45. 7:45 + 1 h = 8:45, a 8:45 + 40 min = 9:25.',
         },
+        {
+          id: 'cmi88l',
+          q: 'Jaką temperaturę pokazuje termometr?',
+          svg: `<svg viewBox="0 0 300 285" role="img" aria-label="Termometr ze skalą od −10 do 10 stopni Celsjusza; słupek sięga trzeciej kreski poniżej zera">
+      <rect x="122" y="24" width="16" height="224" rx="8" class="bg"/>
+      <rect x="126" y="164" width="8" height="94" class="t2"/>
+      <circle cx="130" cy="258" r="14" class="t2"/>
+      <rect x="122" y="24" width="16" height="224" rx="8" class="ln"/>
+      <circle cx="130" cy="258" r="14" class="ln"/>
+      <line x1="140" y1="234" x2="152" y2="234" class="ln"/>
+      <text x="160" y="239" class="tx-s">−10</text>
+      <line x1="140" y1="224" x2="146" y2="224" class="ln-thin"/>
+      <line x1="140" y1="214" x2="152" y2="214" class="ln"/>
+      <text x="160" y="219" class="tx-s">−8</text>
+      <line x1="140" y1="204" x2="146" y2="204" class="ln-thin"/>
+      <line x1="140" y1="194" x2="152" y2="194" class="ln"/>
+      <text x="160" y="199" class="tx-s">−6</text>
+      <line x1="140" y1="184" x2="146" y2="184" class="ln-thin"/>
+      <line x1="140" y1="174" x2="152" y2="174" class="ln"/>
+      <text x="160" y="179" class="tx-s">−4</text>
+      <line x1="140" y1="164" x2="146" y2="164" class="ln-thin"/>
+      <line x1="140" y1="154" x2="152" y2="154" class="ln"/>
+      <text x="160" y="159" class="tx-s">−2</text>
+      <line x1="140" y1="144" x2="146" y2="144" class="ln-thin"/>
+      <line x1="140" y1="134" x2="156" y2="134" class="ln"/>
+      <text x="160" y="139" class="tx-s">0</text>
+      <line x1="140" y1="124" x2="146" y2="124" class="ln-thin"/>
+      <line x1="140" y1="114" x2="152" y2="114" class="ln"/>
+      <text x="160" y="119" class="tx-s">2</text>
+      <line x1="140" y1="104" x2="146" y2="104" class="ln-thin"/>
+      <line x1="140" y1="94" x2="152" y2="94" class="ln"/>
+      <text x="160" y="99" class="tx-s">4</text>
+      <line x1="140" y1="84" x2="146" y2="84" class="ln-thin"/>
+      <line x1="140" y1="74" x2="152" y2="74" class="ln"/>
+      <text x="160" y="79" class="tx-s">6</text>
+      <line x1="140" y1="64" x2="146" y2="64" class="ln-thin"/>
+      <line x1="140" y1="54" x2="152" y2="54" class="ln"/>
+      <text x="160" y="59" class="tx-s">8</text>
+      <line x1="140" y1="44" x2="146" y2="44" class="ln-thin"/>
+      <line x1="140" y1="34" x2="152" y2="34" class="ln"/>
+      <text x="160" y="39" class="tx-s">10</text>
+      <text x="160" y="18" class="tx-s">°C</text>
+    </svg>`,
+          options: ['3°C', '−3°C', '−4°C', '−2°C'],
+          answer: 1,
+          explain: 'Słupek kończy się pod zerem, na trzeciej kresce od zera (między −2 a −4) – to −3°C.',
+        },
+        {
+          id: 'n5pklr',
+          q: 'Termometry pokazują temperaturę o godzinie 7:00 i o 13:00. O ile stopni wzrosła temperatura?',
+          svg: `<svg viewBox="0 0 300 310" role="img" aria-label="Dwa termometry. O godzinie 7:00 słupek sięga 5 kresek poniżej zera, o godzinie 13:00 – 3 kreski powyżej zera">
+      <rect x="82" y="24" width="16" height="224" rx="8" class="bg"/>
+      <rect x="86" y="184" width="8" height="74" class="t2"/>
+      <circle cx="90" cy="258" r="14" class="t2"/>
+      <rect x="82" y="24" width="16" height="224" rx="8" class="ln"/>
+      <circle cx="90" cy="258" r="14" class="ln"/>
+      <line x1="100" y1="234" x2="112" y2="234" class="ln"/>
+      <text x="120" y="239" class="tx-s">−10</text>
+      <line x1="100" y1="224" x2="106" y2="224" class="ln-thin"/>
+      <line x1="100" y1="214" x2="112" y2="214" class="ln"/>
+      <text x="120" y="219" class="tx-s">−8</text>
+      <line x1="100" y1="204" x2="106" y2="204" class="ln-thin"/>
+      <line x1="100" y1="194" x2="112" y2="194" class="ln"/>
+      <text x="120" y="199" class="tx-s">−6</text>
+      <line x1="100" y1="184" x2="106" y2="184" class="ln-thin"/>
+      <line x1="100" y1="174" x2="112" y2="174" class="ln"/>
+      <text x="120" y="179" class="tx-s">−4</text>
+      <line x1="100" y1="164" x2="106" y2="164" class="ln-thin"/>
+      <line x1="100" y1="154" x2="112" y2="154" class="ln"/>
+      <text x="120" y="159" class="tx-s">−2</text>
+      <line x1="100" y1="144" x2="106" y2="144" class="ln-thin"/>
+      <line x1="100" y1="134" x2="116" y2="134" class="ln"/>
+      <text x="120" y="139" class="tx-s">0</text>
+      <line x1="100" y1="124" x2="106" y2="124" class="ln-thin"/>
+      <line x1="100" y1="114" x2="112" y2="114" class="ln"/>
+      <text x="120" y="119" class="tx-s">2</text>
+      <line x1="100" y1="104" x2="106" y2="104" class="ln-thin"/>
+      <line x1="100" y1="94" x2="112" y2="94" class="ln"/>
+      <text x="120" y="99" class="tx-s">4</text>
+      <line x1="100" y1="84" x2="106" y2="84" class="ln-thin"/>
+      <line x1="100" y1="74" x2="112" y2="74" class="ln"/>
+      <text x="120" y="79" class="tx-s">6</text>
+      <line x1="100" y1="64" x2="106" y2="64" class="ln-thin"/>
+      <line x1="100" y1="54" x2="112" y2="54" class="ln"/>
+      <text x="120" y="59" class="tx-s">8</text>
+      <line x1="100" y1="44" x2="106" y2="44" class="ln-thin"/>
+      <line x1="100" y1="34" x2="112" y2="34" class="ln"/>
+      <text x="120" y="39" class="tx-s">10</text>
+      <text x="120" y="18" class="tx-s">°C</text>
+      <text x="90" y="292" class="tx" text-anchor="middle">7:00</text>
+      <rect x="212" y="24" width="16" height="224" rx="8" class="bg"/>
+      <rect x="216" y="104" width="8" height="154" class="t2"/>
+      <circle cx="220" cy="258" r="14" class="t2"/>
+      <rect x="212" y="24" width="16" height="224" rx="8" class="ln"/>
+      <circle cx="220" cy="258" r="14" class="ln"/>
+      <line x1="230" y1="234" x2="242" y2="234" class="ln"/>
+      <text x="250" y="239" class="tx-s">−10</text>
+      <line x1="230" y1="224" x2="236" y2="224" class="ln-thin"/>
+      <line x1="230" y1="214" x2="242" y2="214" class="ln"/>
+      <text x="250" y="219" class="tx-s">−8</text>
+      <line x1="230" y1="204" x2="236" y2="204" class="ln-thin"/>
+      <line x1="230" y1="194" x2="242" y2="194" class="ln"/>
+      <text x="250" y="199" class="tx-s">−6</text>
+      <line x1="230" y1="184" x2="236" y2="184" class="ln-thin"/>
+      <line x1="230" y1="174" x2="242" y2="174" class="ln"/>
+      <text x="250" y="179" class="tx-s">−4</text>
+      <line x1="230" y1="164" x2="236" y2="164" class="ln-thin"/>
+      <line x1="230" y1="154" x2="242" y2="154" class="ln"/>
+      <text x="250" y="159" class="tx-s">−2</text>
+      <line x1="230" y1="144" x2="236" y2="144" class="ln-thin"/>
+      <line x1="230" y1="134" x2="246" y2="134" class="ln"/>
+      <text x="250" y="139" class="tx-s">0</text>
+      <line x1="230" y1="124" x2="236" y2="124" class="ln-thin"/>
+      <line x1="230" y1="114" x2="242" y2="114" class="ln"/>
+      <text x="250" y="119" class="tx-s">2</text>
+      <line x1="230" y1="104" x2="236" y2="104" class="ln-thin"/>
+      <line x1="230" y1="94" x2="242" y2="94" class="ln"/>
+      <text x="250" y="99" class="tx-s">4</text>
+      <line x1="230" y1="84" x2="236" y2="84" class="ln-thin"/>
+      <line x1="230" y1="74" x2="242" y2="74" class="ln"/>
+      <text x="250" y="79" class="tx-s">6</text>
+      <line x1="230" y1="64" x2="236" y2="64" class="ln-thin"/>
+      <line x1="230" y1="54" x2="242" y2="54" class="ln"/>
+      <text x="250" y="59" class="tx-s">8</text>
+      <line x1="230" y1="44" x2="236" y2="44" class="ln-thin"/>
+      <line x1="230" y1="34" x2="242" y2="34" class="ln"/>
+      <text x="250" y="39" class="tx-s">10</text>
+      <text x="250" y="18" class="tx-s">°C</text>
+      <text x="220" y="292" class="tx" text-anchor="middle">13:00</text>
+    </svg>`,
+          options: ['o 2°C', 'o 3°C', 'o 8°C', 'o 5°C'],
+          answer: 2,
+          explain: 'O 7:00 było −5°C, o 13:00 było 3°C. Wzrost: 3 − (−5) = 8°C.',
+        },
+        { id: 'gm34qv', q: 'W nocy termometr pokazywał −7°C. W ciągu dnia temperatura wzrosła o 10°C. Ile stopni było w dzień?', options: ['−17°C', '17°C', '3°C', '−3°C'], answer: 2, explain: '−7 + 10 = 3°C.' },
+        { id: 'oagsh2', q: 'Która temperatura jest najniższa?', options: ['−2°C', '−12°C', '0°C', '−8°C'], answer: 1, explain: 'Im dalej poniżej zera, tym zimniej: −12°C < −8°C < −2°C < 0°C.' },
+        { id: 'm0hm8m', q: 'Ile gramów to 35 dag?', options: ['35 g', '3500 g', '350 g', '3,5 g'], answer: 2, explain: '1 dag = 10 g, więc 35 dag = 350 g.' },
+        { id: 'ob7f56', q: 'Ile kilogramów to 250 dag?', options: ['25 kg', '2,5 kg', '0,25 kg', '250 kg'], answer: 1, explain: '1 kg = 100 dag, więc 250 dag = 2,5 kg.' },
+        { id: 'zhssvz', q: 'Za 20 dag sera zapłacono 7 zł. Ile kosztuje 1 kg tego sera?', options: ['14 zł', '70 zł', '140 zł', '35 zł'], answer: 3, explain: '1 kg = 100 dag = 5 · 20 dag, więc 1 kg kosztuje 5 · 7 zł = 35 zł.' },
+        { id: 'anvgf7', q: '1 marca pewnego roku wypadł we wtorek. W jakim dniu tygodnia wypadł 29 marca tego roku?', options: ['w poniedziałek', 'we wtorek', 'w środę', 'w czwartek'], answer: 1, explain: 'Od 1 do 29 marca mija 28 dni, czyli dokładnie 4 tygodnie – znów wtorek.' },
+        { id: 'x14n1c', q: 'Ile dni mają łącznie lipiec i sierpień?', options: ['60', '61', '62', '59'], answer: 2, explain: 'Oba miesiące mają po 31 dni: 31 + 31 = 62.' },
+        { id: 'ih8jme', q: 'Wakacje trwały od 27 czerwca do 31 sierpnia (oba dni włącznie). Ile to dni?', options: ['65', '66', '64', '67'], answer: 1, explain: 'Czerwiec: 27, 28, 29, 30 – 4 dni. Lipiec: 31 dni. Sierpień: 31 dni. Razem 4 + 31 + 31 = 66.' },
+        { id: '9t45y2', q: 'Prawda czy fałsz?\nW roku przestępnym luty ma 29 dni.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0 },
       ],
       tasks: [
         {
@@ -2285,6 +4176,21 @@ window.SUBJECTS.push({
           scoring: [
             '1 pkt – zamiana jednostek: 25 m/s = 90 km/h.',
             '2 pkt – odpowiedź: szybciej jedzie samochód A, o 10 km/h.',
+          ],
+        },
+        {
+          id: 'qeemng',
+          points: 2,
+          q: 'Pierwszy stycznia pewnego roku, który nie jest przestępny, wypadł w poniedziałek. W jakim dniu tygodnia wypadnie ostatni dzień tego roku? Uzasadnij odpowiedź.',
+          steps: [
+            'Rok nieprzestępny ma 365 dni. 31 grudnia to 365. dzień roku, więc od 1 stycznia do 31 grudnia mija 364 dni.',
+            '364 = 7 · 52 – to pełne 52 tygodnie.',
+            'Po pełnych tygodniach dzień tygodnia się powtarza: 31 grudnia też wypadnie w poniedziałek.',
+          ],
+          answer: 'W poniedziałek (od 1 stycznia do 31 grudnia mija 364 dni, czyli 52 pełne tygodnie).',
+          scoring: [
+            '1 pkt – zapisanie, że od 1 stycznia do 31 grudnia mija 364 dni (albo że 365 dni to 52 tygodnie i 1 dzień).',
+            '2 pkt – poprawna odpowiedź (poniedziałek) z uzasadnieniem.',
           ],
         },
       ],

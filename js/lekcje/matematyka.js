@@ -1300,3 +1300,650 @@ window.LESSONS['matematyka/przystawanie-dowody'] = [
     check: { q: 'Uczeń sprawdził dwa przykłady i napisał „więc zawsze tak jest”. Czy to dowód?', options: ['tak, dwa przykłady wystarczą', 'tak, jeśli przykłady są duże', 'nie – przykłady pokazują tylko te przypadki', 'tak, jeśli doda rysunek'], answer: 2, explain: 'Dowód musi działać dla wszystkich przypadków, np. dzięki zapisowi literowemu.' },
   },
 ];
+
+window.LESSONS['matematyka/katy-trojkaty'] = [
+  {
+    title: 'Punkt, prosta, półprosta, odcinek',
+    svg: `<svg viewBox="0 0 420 160" role="img" aria-label="Odcinek z dwoma końcami, półprosta z jednym końcem i prosta bez końców">
+      <circle cx="40" cy="35" r="5" class="t1"/>
+      <circle cx="200" cy="35" r="5" class="t1"/>
+      <line x1="40" y1="35" x2="200" y2="35" class="ln s1 sw"/>
+      <text x="40" y="22" class="tx-b" text-anchor="middle">A</text>
+      <text x="200" y="22" class="tx-b" text-anchor="middle">B</text>
+      <text x="232" y="41" class="tx">odcinek – 2 końce</text>
+      <circle cx="40" cy="85" r="5" class="t2"/>
+      <line x1="40" y1="85" x2="190" y2="85" class="ln s2 sw"/>
+      <line x1="190" y1="85" x2="222" y2="85" class="ln s2 sw dash"/>
+      <text x="40" y="72" class="tx-b" text-anchor="middle">A</text>
+      <text x="232" y="91" class="tx">półprosta – 1 koniec</text>
+      <line x1="8" y1="135" x2="40" y2="135" class="ln s3 sw dash"/>
+      <line x1="40" y1="135" x2="190" y2="135" class="ln s3 sw"/>
+      <line x1="190" y1="135" x2="222" y2="135" class="ln s3 sw dash"/>
+      <text x="232" y="141" class="tx">prosta – bez końców</text>
+    </svg>`,
+    text: `<p>Te figury różnią się liczbą <b>końców</b>. Odcinek ma dwa końce, więc da się go zmierzyć linijką. Półprosta ma tylko początek, a prosta biegnie bez końca w obie strony – ich długości nie zmierzysz.</p>`,
+    remember: 'Odcinek – 2 końce (ma długość), półprosta – 1 koniec, prosta – 0 końców.',
+    hook: 'Odcinek to <b>patyk</b>, półprosta – <b>promień latarki</b> (świeci od jednego miejsca w dal), prosta – <b>tory bez końca</b> w obie strony.',
+    check: { q: 'Którą z tych figur możesz zmierzyć linijką?', options: ['prostą', 'półprostą', 'odcinek'], answer: 2, explain: 'Tylko odcinek ma dwa końce i określoną długość.' },
+  },
+  {
+    title: 'Prostopadłe, równoległe i odległość',
+    svg: `<svg viewBox="0 0 420 185" role="img" aria-label="Proste prostopadłe, proste równoległe oraz odległość punktu P od prostej k">
+      <line x1="15" y1="95" x2="125" y2="95" class="ln s1 sw"/>
+      <line x1="70" y1="30" x2="70" y2="150" class="ln s1 sw"/>
+      <polyline points="83,95 83,82 70,82" class="ln"/>
+      <text x="70" y="178" class="tx" text-anchor="middle">prostopadłe</text>
+      <line x1="155" y1="65" x2="265" y2="65" class="ln s2 sw"/>
+      <line x1="155" y1="120" x2="265" y2="120" class="ln s2 sw"/>
+      <text x="210" y="178" class="tx" text-anchor="middle">równoległe</text>
+      <line x1="285" y1="135" x2="415" y2="135" class="ln"/>
+      <circle cx="320" cy="50" r="5" class="t2"/>
+      <text x="306" y="48" class="tx-b" text-anchor="end">P</text>
+      <line x1="320" y1="50" x2="320" y2="135" class="ln s3 sw"/>
+      <line x1="320" y1="50" x2="395" y2="135" class="ln-thin dash"/>
+      <polyline points="332,135 332,123 320,123" class="ln"/>
+      <text x="311" y="100" class="tx-b t3" text-anchor="end">d</text>
+      <text x="410" y="127" class="tx-b" text-anchor="end">k</text>
+      <text x="350" y="178" class="tx" text-anchor="middle">odległość</text>
+    </svg>`,
+    text: `<p>Proste <b>prostopadłe</b> przecinają się pod kątem prostym (zaznaczamy go kwadracikiem). Proste <b>równoległe</b> nigdy się nie przecinają.</p><p><b>Odległość punktu od prostej</b> to długość odcinka prostopadłego od punktu do prostej. Każdy inny (ukośny) odcinek jest dłuższy.</p>`,
+    remember: 'a ⊥ b – prostopadłe, a ∥ b – równoległe. Odległość = najkrótsza droga = odcinek prostopadły.',
+    hook: 'Tory kolejowe są <b>równoległe</b>, a dwie ulice na zwykłym skrzyżowaniu – <b>prostopadłe</b>. Do ściany najkrócej idzie się „na wprost”, pod kątem prostym.',
+  },
+  {
+    title: 'Kąty: ostry, prosty, rozwarty',
+    svg: `<svg viewBox="0 0 420 175" role="img" aria-label="Kąt ostry, kąt prosty i kąt rozwarty">
+      <polyline points="125,120 25,120 89.3,43.4" class="ln sw"/>
+      <path d="M51,120 A26,26 0 0 0 41.7,100.1" class="ln s3"/>
+      <circle cx="25" cy="120" r="4" class="t2"/>
+      <text x="70" y="160" class="tx" text-anchor="middle">ostry &lt; 90°</text>
+      <polyline points="262,120 172,120 172,35" class="ln sw"/>
+      <polyline points="188,120 188,104 172,104" class="ln s1"/>
+      <circle cx="172" cy="120" r="4" class="t2"/>
+      <text x="210" y="160" class="tx" text-anchor="middle">prosty = 90°</text>
+      <polyline points="408,120 335,120 286.8,62.5" class="ln sw"/>
+      <path d="M357,120 A22,22 0 0 0 320.9,103.1" class="ln s2"/>
+      <circle cx="335" cy="120" r="4" class="t2"/>
+      <text x="350" y="160" class="tx" text-anchor="middle">rozwarty &gt; 90°</text>
+    </svg>`,
+    text: `<p>Kąt tworzą dwa <b>ramiona</b> wychodzące z jednego punktu – <b>wierzchołka</b> (kropka). Kąt prosty ma 90°. Mniejszy od prostego to kąt <b>ostry</b>, większy (ale mniejszy niż 180°) – <b>rozwarty</b>.</p><p>O wielkości kąta decyduje rozwarcie ramion, a nie ich długość na rysunku.</p>`,
+    remember: 'Ostry &lt; 90° · prosty = 90° · rozwarty: od 90° do 180°.',
+    hook: 'Kąt <b>ostry</b> jak czubek ołówka, <b>prosty</b> jak róg kartki, <b>rozwarty</b> jak szeroko otwarte drzwi.',
+    check: { q: 'Kąt o mierze 91° jest…', options: ['ostry', 'prosty', 'rozwarty'], answer: 2, explain: '91° to więcej niż 90°.' },
+  },
+  {
+    title: 'Trójkąty – po kątach i po bokach',
+    svg: `<svg viewBox="0 0 420 185" role="img" aria-label="Trójkąt ostrokątny, prostokątny i rozwartokątny">
+      <polygon points="20,140 120,140 80,40" class="f3 s3 sw"/>
+      <text x="70" y="172" class="tx" text-anchor="middle">ostrokątny</text>
+      <polygon points="160,140 260,140 160,50" class="f1 s1 sw"/>
+      <polyline points="173,140 173,127 160,127" class="ln"/>
+      <text x="210" y="172" class="tx" text-anchor="middle">prostokątny</text>
+      <polygon points="290,140 410,140 330,105" class="f2 s2 sw"/>
+      <path d="M319.5,114.2 A14,14 0 0 0 342.8,110.6" class="ln"/>
+      <text x="350" y="172" class="tx" text-anchor="middle">rozwartokątny</text>
+    </svg>`,
+    text: `<p>Po <b>kątach</b>: ostrokątny (wszystkie kąty ostre), prostokątny (jeden prosty), rozwartokątny (jeden rozwarty). Po <b>bokach</b>: równoramienny (dwa boki równe) i równoboczny (wszystkie boki równe, kąty po 60°).</p><p>Kąty trójkąta dają razem 180°, dlatego trójkąt ma co najwyżej jeden kąt prosty albo rozwarty.</p>`,
+    remember: 'O nazwie trójkąta „po kątach” decyduje jego największy kąt.',
+    check: { q: 'Trójkąt ma kąty 30°, 50° i 100°. Jaki to trójkąt?', options: ['ostrokątny', 'prostokątny', 'rozwartokątny', 'równoboczny'], answer: 2, explain: 'Największy kąt, 100°, jest rozwarty.' },
+  },
+  {
+    title: 'Czworokąty – rodzinne podobieństwa',
+    svg: `<svg viewBox="0 0 420 235" role="img" aria-label="Kwadrat, prostokąt i romb z przekątnymi oraz równoległobok i trapez">
+      <polygon points="35,20 105,20 105,90 35,90" class="f1 s1 sw"/>
+      <line x1="35" y1="20" x2="105" y2="90" class="ln-thin dash"/>
+      <line x1="105" y1="20" x2="35" y2="90" class="ln-thin dash"/>
+      <text x="70" y="115" class="tx" text-anchor="middle">kwadrat</text>
+      <polygon points="155,28 265,28 265,83 155,83" class="f3 s3 sw"/>
+      <line x1="155" y1="28" x2="265" y2="83" class="ln-thin dash"/>
+      <line x1="265" y1="28" x2="155" y2="83" class="ln-thin dash"/>
+      <text x="210" y="115" class="tx" text-anchor="middle">prostokąt</text>
+      <polygon points="350,15 400,55 350,95 300,55" class="f2 s2 sw"/>
+      <line x1="350" y1="15" x2="350" y2="95" class="ln-thin dash"/>
+      <line x1="300" y1="55" x2="400" y2="55" class="ln-thin dash"/>
+      <text x="350" y="115" class="tx" text-anchor="middle">romb</text>
+      <polygon points="75,195 180,195 205,140 100,140" class="f4 s4 sw"/>
+      <text x="140" y="222" class="tx" text-anchor="middle">równoległobok</text>
+      <polygon points="235,195 365,195 330,140 260,140" class="f5 s5 sw"/>
+      <text x="300" y="222" class="tx" text-anchor="middle">trapez</text>
+    </svg>`,
+    text: `<p>Patrz na boki, kąty i <b>przekątne</b>:</p><ul><li>kwadrat i prostokąt – wszystkie kąty proste, przekątne równe,</li><li>kwadrat i romb – wszystkie boki równe, przekątne prostopadłe,</li><li>równoległobok – dwie pary boków równoległych, przekątne dzielą się na połowy,</li><li>trapez – co najmniej jedna para boków równoległych.</li></ul>`,
+    remember: 'Kwadrat = prostokąt + romb: ma wszystkie ich własności.',
+    hook: 'Przekątne <b>rombu</b> krzyżują się jak w <b>latawcu</b> – pod kątem prostym. Przekątne <b>prostokąta</b> są jak dwa równe kije.',
+  },
+  {
+    title: 'Trójkąt równoramienny – licz bez kątomierza',
+    svg: `<svg viewBox="0 0 400 215" role="img" aria-label="Trójkąt równoramienny: dwa równe kąty alfa przy podstawie i kąt beta między ramionami">
+      <polygon points="80,180 320,180 200,40" class="f1 s1 sw"/>
+      <path d="M106,180 A26,26 0 0 0 96.9,160.3" class="ln s2"/>
+      <path d="M303.1,160.3 A26,26 0 0 0 294,180" class="ln s2"/>
+      <path d="M184.4,58.2 A24,24 0 0 0 215.6,58.2" class="ln s3"/>
+      <text x="120" y="167.6" class="tx-b t2" text-anchor="middle">α</text>
+      <text x="280" y="167.6" class="tx-b t2" text-anchor="middle">α</text>
+      <text x="200" y="98" class="tx-b t3" text-anchor="middle">β</text>
+      <text x="126" y="104" class="tx" text-anchor="end">ramię</text>
+      <text x="274" y="104" class="tx">ramię</text>
+      <text x="200" y="204" class="tx" text-anchor="middle">podstawa</text>
+    </svg>`,
+    text: `<p>Kąty przy podstawie są równe (α i α). Znasz jeden kąt – znasz wszystkie:</p><ul><li>dany kąt przy podstawie α → β = 180° − 2α,</li><li>dany kąt między ramionami β → α = (180° − β) : 2.</li></ul><p>Obwód: Ob = 2 · ramię + podstawa.</p>`,
+    remember: 'Kąt 90° lub większy może być tylko kątem β między ramionami.',
+    hook: 'Trójkąt równoramienny to <b>dach domu</b>: oba spadki dachu (kąty przy podstawie) są takie same.',
+    check: { q: 'Trójkąt równoramienny ma obwód 20 cm i podstawę 6 cm. Ile ma ramię?', options: ['7 cm', '14 cm', '6 cm', '8 cm'], answer: 0, explain: '(20 − 6) : 2 = 7 cm.' },
+  },
+];
+
+window.LESSONS['matematyka/kolo-okrag'] = [
+  {
+    title: 'Okrąg czy koło?',
+    svg: `<svg viewBox="0 0 400 205" role="img" aria-label="Po lewej okrąg – sama linia brzegu, po prawej koło – brzeg z zamalowanym wnętrzem">
+      <circle cx="100" cy="80" r="62" class="ln s1 sw"/>
+      <circle cx="300" cy="80" r="62" class="f1 s1 sw"/>
+      <circle cx="100" cy="80" r="3" class="t2"/>
+      <circle cx="300" cy="80" r="3" class="t2"/>
+      <text x="100" y="168" class="tx-b" text-anchor="middle">okrąg</text>
+      <text x="300" y="168" class="tx-b" text-anchor="middle">koło</text>
+      <text x="100" y="192" class="tx-s" text-anchor="middle">sam brzeg – długość</text>
+      <text x="300" y="192" class="tx-s" text-anchor="middle">brzeg + wnętrze – pole</text>
+    </svg>`,
+    text: `<p><b>Okrąg</b> to sama linia – brzeg. <b>Koło</b> to brzeg razem z całym wnętrzem. Dlatego mówimy „długość okręgu” (ile ma brzeg), ale „pole koła” (ile zajmuje powierzchni).</p>`,
+    remember: 'Okrąg – długość (cm). Koło – pole (cm²).',
+    hook: 'Okrąg to <b>obręcz</b> albo hula-hoop, koło to <b>pizza</b> – z całym środkiem.',
+    check: { q: 'Co ma pole?', options: ['okrąg', 'koło', 'cięciwa'], answer: 1 },
+  },
+  {
+    title: 'Promień, średnica, cięciwa',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Okrąg o środku O z zaznaczonym promieniem r, średnicą d i cięciwą">
+      <circle cx="140" cy="105" r="85" class="f1 s1 sw"/>
+      <line x1="140" y1="105" x2="194.6" y2="39.9" class="ln s2 sw"/>
+      <line x1="57.9" y1="83" x2="222.1" y2="127" class="ln s5 sw"/>
+      <line x1="70.4" y1="153.8" x2="182.5" y2="178.6" class="ln s3 sw"/>
+      <circle cx="140" cy="105" r="4" class="t2"/>
+      <text x="136" y="127" class="tx-b" text-anchor="end">O</text>
+      <text x="164.4" y="59.1" class="tx-b t2" text-anchor="middle">r</text>
+      <text x="88" y="105" class="tx-b t5" text-anchor="middle">d</text>
+      <text x="122.1" y="160.2" class="tx-s" text-anchor="middle">cięciwa</text>
+      <text x="250" y="60" class="tx t2">r – promień</text>
+      <text x="250" y="100" class="tx t5">d – średnica</text>
+      <text x="250" y="140" class="tx t3">cięciwa</text>
+    </svg>`,
+    text: `<p><b>Promień</b> łączy środek z punktem okręgu. <b>Cięciwa</b> łączy dwa punkty okręgu. <b>Średnica</b> to cięciwa, która przechodzi przez środek – składa się z dwóch promieni.</p>`,
+    remember: 'd = 2r. Średnica to najdłuższa cięciwa.',
+    hook: 'Cięciwa jak w <b>łuku</b> do strzelania – rozpięta między dwoma punktami łuku.',
+    check: { q: 'Promień ma 6 cm. Ile ma najdłuższa cięciwa tego okręgu?', options: ['6 cm', '12 cm', '3 cm', '36 cm'], answer: 1, explain: 'Najdłuższa cięciwa to średnica: 2 · 6 = 12 cm.' },
+  },
+  {
+    title: 'Długość okręgu: trzy średnice i trochę',
+    svg: `<svg viewBox="0 0 400 180" role="img" aria-label="Okrąg o średnicy d rozwinięty w odcinek: jego długość to trzy średnice i jeszcze trochę, czyli pi razy d">
+      <line x1="15" y1="100" x2="390" y2="100" class="ln-thin"/>
+      <circle cx="70" cy="60" r="40" class="ln s1 sw"/>
+      <line x1="30" y1="60" x2="110" y2="60" class="ln s2 sw"/>
+      <text x="70" y="52" class="tx-b t2" text-anchor="middle">d</text>
+      <line x1="70" y1="100" x2="321.3" y2="100" class="ln s1 sw"/>
+      <line x1="70" y1="92" x2="70" y2="108" class="ln"/>
+      <line x1="150" y1="92" x2="150" y2="108" class="ln"/>
+      <line x1="230" y1="92" x2="230" y2="108" class="ln"/>
+      <line x1="310" y1="92" x2="310" y2="108" class="ln"/>
+      <line x1="321.3" y1="92" x2="321.3" y2="108" class="ln"/>
+      <text x="110" y="124" class="tx-b t2" text-anchor="middle">d</text>
+      <text x="190" y="124" class="tx-b t2" text-anchor="middle">d</text>
+      <text x="270" y="124" class="tx-b t2" text-anchor="middle">d</text>
+      <text x="330" y="145" class="tx-s" text-anchor="middle">≈ 0,14 d</text>
+      <text x="200" y="170" class="tx-b" text-anchor="middle">L = π · d ≈ 3,14 · d</text>
+    </svg>`,
+    text: `<p>Wyobraź sobie, że rozcinasz okrąg i prostujesz go w odcinek. Zawsze wychodzi trochę ponad 3 średnice – dokładnie <b>π razy</b> średnica. π ≈ 3,14.</p>`,
+    remember: 'L = πd = 2πr',
+    hook: 'Obwód to „<b>trzy średnice i kawałek</b>” – tak sprawdzisz, czy wynik ma sens.',
+  },
+  {
+    title: 'Pole koła – pobaw się promieniem',
+    widget: { type: 'kolo', r: 3 },
+    text: `<p>Przesuń suwak. Gdy promień rośnie 2 razy, długość okręgu też rośnie 2 razy, ale pole – aż 4 razy, bo we wzorze jest r².</p>`,
+    remember: 'P = πr² – do kwadratu podnosisz tylko r.',
+    hook: '„<b>Pi er kwadrat</b>” – kwadrat jest przy r, nie przy π.',
+  },
+  {
+    title: 'Od wyniku do promienia',
+    svg: `<svg viewBox="0 0 400 150" role="img" aria-label="Dwa schematy: z długości okręgu 20 pi wychodzi 2r = 20 i r = 10; z pola koła 49 pi wychodzi r kwadrat = 49 i r = 7">
+      <defs><marker id="a-mat-kolo-5" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="8" y="20" width="92" height="38" rx="8" class="f1 s1"/>
+      <rect x="154" y="20" width="92" height="38" rx="8" class="f1 s1"/>
+      <rect x="300" y="20" width="92" height="38" rx="8" class="f1 s1"/>
+      <text x="54" y="45" class="tx-b" text-anchor="middle">L = 20π</text>
+      <text x="200" y="45" class="tx-b" text-anchor="middle">2r = 20</text>
+      <text x="346" y="45" class="tx-b" text-anchor="middle">r = 10</text>
+      <path d="M104,48 L149,48" class="ln" marker-end="url(#a-mat-kolo-5)"/>
+      <path d="M250,48 L295,48" class="ln" marker-end="url(#a-mat-kolo-5)"/>
+      <text x="127" y="38" class="tx" text-anchor="middle">: π</text>
+      <text x="273" y="38" class="tx" text-anchor="middle">: 2</text>
+      <rect x="8" y="92" width="92" height="38" rx="8" class="f3 s3"/>
+      <rect x="154" y="92" width="92" height="38" rx="8" class="f3 s3"/>
+      <rect x="300" y="92" width="92" height="38" rx="8" class="f3 s3"/>
+      <text x="54" y="117" class="tx-b" text-anchor="middle">P = 49π</text>
+      <text x="200" y="117" class="tx-b" text-anchor="middle">r² = 49</text>
+      <text x="346" y="117" class="tx-b" text-anchor="middle">r = 7</text>
+      <path d="M104,120 L149,120" class="ln" marker-end="url(#a-mat-kolo-5)"/>
+      <path d="M250,120 L295,120" class="ln" marker-end="url(#a-mat-kolo-5)"/>
+      <text x="127" y="110" class="tx" text-anchor="middle">: π</text>
+      <text x="273" y="110" class="tx" text-anchor="middle">√</text>
+    </svg>`,
+    text: `<p>Często znasz długość okręgu albo pole i szukasz promienia. Zapisz wzór i porównaj to, co stoi przy π.</p><ul><li>2πr = 20π → 2r = 20 → r = 10,</li><li>πr² = 49π → r² = 49 → r = 7.</li></ul>`,
+    remember: 'Z długości dzielisz przez 2π, z pola dzielisz przez π i wyciągasz pierwiastek.',
+    check: { q: 'Pole koła wynosi 81π. Ile wynosi promień?', options: ['9', '81', '40,5', '18'], answer: 0, explain: 'r² = 81, więc r = 9.' },
+  },
+  {
+    title: 'Koło roweru i pułapki',
+    svg: `<svg viewBox="0 0 400 175" role="img" aria-label="Koło o promieniu r toczy się po prostej. Po jednym pełnym obrocie przesuwa się o długość swojego okręgu">
+      <defs><marker id="a-mat-kolo-6" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <line x1="10" y1="110" x2="390" y2="110" class="ln"/>
+      <circle cx="60" cy="70" r="40" class="f1 s1 sw"/>
+      <line x1="60" y1="70" x2="60" y2="110" class="ln s2 sw"/>
+      <circle cx="60" cy="110" r="5" class="t2"/>
+      <circle cx="311.3" cy="70" r="40" class="ln-thin dash"/>
+      <line x1="311.3" y1="70" x2="311.3" y2="110" class="ln s2 sw"/>
+      <circle cx="311.3" cy="110" r="5" class="t2"/>
+      <path d="M185.7,132 L63,132" class="ln s2" marker-end="url(#a-mat-kolo-6)"/>
+      <path d="M185.7,132 L308.3,132" class="ln s2" marker-end="url(#a-mat-kolo-6)"/>
+      <text x="82" y="62" class="tx-b t2">r</text>
+      <text x="200" y="162" class="tx-b" text-anchor="middle">1 obrót = L = 2πr</text>
+    </svg>`,
+    text: `<p>Przy jednym pełnym obrocie koło przejeżdża drogę równą długości swojego okręgu. Liczba obrotów = droga : długość okręgu – obie w tych samych jednostkach.</p><p>Typowe błędy: średnica zamiast promienia we wzorze na pole, mylenie wzorów 2πr i πr², cm zamiast cm².</p>`,
+    remember: 'Liczba obrotów = droga : L',
+    hook: 'Zaznacz kredą punkt na oponie – po jednym obrocie znów dotknie ziemi dokładnie o L dalej.',
+    check: { q: 'Okrąg koła ma długość 2 m. Ile obrotów wykona koło na drodze 100 m?', options: ['50', '200', '100', '20'], answer: 0, explain: '100 : 2 = 50.' },
+  },
+];
+
+window.LESSONS['matematyka/uklad-wspolrzednych'] = [
+  {
+    title: 'Oś liczbowa: kółko puste czy pełne?',
+    svg: `<svg viewBox="0 0 380 170" role="img" aria-label="Dwie osie liczbowe. Na górnej zbiór x ≥ 1,5: zamalowane kółko w 1,5 i linia w prawo. Na dolnej zbiór x &lt; −1: puste kółko w −1 i linia w lewo">
+      <text x="10" y="22" class="tx-b t1">x ≥ 1,5</text>
+      <line x1="20" y1="50" x2="365" y2="50" class="ln"/>
+      <polyline points="356,45 365,50 356,55" class="ln"/>
+      <line x1="40" y1="45" x2="40" y2="55" class="ln"/>
+      <text x="40" y="76" class="tx" text-anchor="middle">−3</text>
+      <line x1="90" y1="45" x2="90" y2="55" class="ln"/>
+      <text x="90" y="76" class="tx" text-anchor="middle">−2</text>
+      <line x1="140" y1="45" x2="140" y2="55" class="ln"/>
+      <text x="140" y="76" class="tx" text-anchor="middle">−1</text>
+      <line x1="190" y1="43" x2="190" y2="57" class="ln"/>
+      <text x="190" y="76" class="tx" text-anchor="middle">0</text>
+      <line x1="240" y1="45" x2="240" y2="55" class="ln"/>
+      <text x="240" y="76" class="tx" text-anchor="middle">1</text>
+      <line x1="290" y1="45" x2="290" y2="55" class="ln"/>
+      <text x="290" y="76" class="tx" text-anchor="middle">2</text>
+      <line x1="340" y1="45" x2="340" y2="55" class="ln"/>
+      <text x="340" y="76" class="tx" text-anchor="middle">3</text>
+      <line x1="265" y1="50" x2="364" y2="50" class="ln s1 sw"/>
+      <polyline points="356,45 365,50 356,55" class="ln s1 sw"/>
+      <circle cx="265" cy="50" r="6" class="t1"/>
+      <text x="10" y="107" class="tx-b t2">x &lt; −1</text>
+      <line x1="20" y1="135" x2="365" y2="135" class="ln"/>
+      <polyline points="356,130 365,135 356,140" class="ln"/>
+      <line x1="40" y1="130" x2="40" y2="140" class="ln"/>
+      <text x="40" y="161" class="tx" text-anchor="middle">−3</text>
+      <line x1="90" y1="130" x2="90" y2="140" class="ln"/>
+      <text x="90" y="161" class="tx" text-anchor="middle">−2</text>
+      <line x1="140" y1="130" x2="140" y2="140" class="ln"/>
+      <text x="140" y="161" class="tx" text-anchor="middle">−1</text>
+      <line x1="190" y1="128" x2="190" y2="142" class="ln"/>
+      <text x="190" y="161" class="tx" text-anchor="middle">0</text>
+      <line x1="240" y1="130" x2="240" y2="140" class="ln"/>
+      <text x="240" y="161" class="tx" text-anchor="middle">1</text>
+      <line x1="290" y1="130" x2="290" y2="140" class="ln"/>
+      <text x="290" y="161" class="tx" text-anchor="middle">2</text>
+      <line x1="340" y1="130" x2="340" y2="140" class="ln"/>
+      <text x="340" y="161" class="tx" text-anchor="middle">3</text>
+      <line x1="21" y1="135" x2="140" y2="135" class="ln s2 sw"/>
+      <polyline points="29,130 20,135 29,140" class="ln s2 sw"/>
+      <circle cx="140" cy="135" r="6" class="ln s2 sw bg"/>
+    </svg>`,
+    text: `<p>Znaki ≥ i ≤ („lub równe”) – liczba graniczna <b>należy</b> do zbioru, więc kółko jest <b>zamalowane</b>. Znaki &gt; i &lt; – liczba graniczna nie należy, kółko jest <b>puste</b>.</p><p>„Większe” – linia w prawo, „mniejsze” – w lewo.</p>`,
+    remember: '≥, ≤ – kółko pełne · &gt;, &lt; – kółko puste.',
+    hook: 'Kreska pod znakiem ≥ to „podłoga”, na której liczba może stanąć – więc jest w zbiorze i kółko się zamalowuje.',
+    check: { q: 'Jak zaznaczysz zbiór x ≤ 3?', options: ['kółko pełne w 3, linia w lewo', 'kółko puste w 3, linia w lewo', 'kółko pełne w 3, linia w prawo'], answer: 0 },
+  },
+  {
+    title: 'Adres punktu: (x, y)',
+    svg: `<svg viewBox="0 0 298 212" role="img" aria-label="Punkt P = (3, 2): z początku układu 3 kratki w prawo wzdłuż osi x, potem 2 kratki w górę">
+      <defs><marker id="a-mat-uklad-2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <line x1="30" y1="28" x2="30" y2="198" class="ln-thin"/>
+      <line x1="64" y1="28" x2="64" y2="198" class="ln-thin"/>
+      <line x1="98" y1="28" x2="98" y2="198" class="ln-thin"/>
+      <line x1="132" y1="28" x2="132" y2="198" class="ln-thin"/>
+      <line x1="166" y1="28" x2="166" y2="198" class="ln-thin"/>
+      <line x1="200" y1="28" x2="200" y2="198" class="ln-thin"/>
+      <line x1="234" y1="28" x2="234" y2="198" class="ln-thin"/>
+      <line x1="268" y1="28" x2="268" y2="198" class="ln-thin"/>
+      <line x1="30" y1="198" x2="268" y2="198" class="ln-thin"/>
+      <line x1="30" y1="164" x2="268" y2="164" class="ln-thin"/>
+      <line x1="30" y1="130" x2="268" y2="130" class="ln-thin"/>
+      <line x1="30" y1="96" x2="268" y2="96" class="ln-thin"/>
+      <line x1="30" y1="62" x2="268" y2="62" class="ln-thin"/>
+      <line x1="30" y1="28" x2="268" y2="28" class="ln-thin"/>
+      <line x1="30" y1="164" x2="282" y2="164" class="ln"/>
+      <polyline points="273,159 282,164 273,169" class="ln"/>
+      <line x1="64" y1="198" x2="64" y2="14" class="ln"/>
+      <polyline points="59,23 64,14 69,23" class="ln"/>
+      <text x="280" y="156" class="tx-s">x</text>
+      <text x="72" y="22" class="tx-s">y</text>
+      <path d="M64,164 L162,164" class="ln s2 sw" marker-end="url(#a-mat-uklad-2)"/>
+      <path d="M166,164 L166,102" class="ln s3 sw" marker-end="url(#a-mat-uklad-2)"/>
+      <rect x="87" y="138" width="56" height="18" class="bg"/>
+      <text x="115" y="152" class="tx t2" text-anchor="middle">x = 3</text>
+      <rect x="172" y="124" width="54" height="18" class="bg"/>
+      <text x="174" y="138" class="tx t3">y = 2</text>
+      <rect x="21" y="168" width="18" height="14" class="bg"/>
+      <text x="30" y="179" class="tx-s" text-anchor="middle">−1</text>
+      <rect x="92.8" y="168" width="10.5" height="14" class="bg"/>
+      <text x="98" y="179" class="tx-s" text-anchor="middle">1</text>
+      <rect x="126.8" y="168" width="10.5" height="14" class="bg"/>
+      <text x="132" y="179" class="tx-s" text-anchor="middle">2</text>
+      <rect x="160.8" y="168" width="10.5" height="14" class="bg"/>
+      <text x="166" y="179" class="tx-s" text-anchor="middle">3</text>
+      <rect x="194.8" y="168" width="10.5" height="14" class="bg"/>
+      <text x="200" y="179" class="tx-s" text-anchor="middle">4</text>
+      <rect x="228.8" y="168" width="10.5" height="14" class="bg"/>
+      <text x="234" y="179" class="tx-s" text-anchor="middle">5</text>
+      <rect x="262.8" y="168" width="10.5" height="14" class="bg"/>
+      <text x="268" y="179" class="tx-s" text-anchor="middle">6</text>
+      <rect x="41.5" y="191" width="18" height="14" class="bg"/>
+      <text x="59" y="202" class="tx-s" text-anchor="end">−1</text>
+      <rect x="49" y="123" width="10.5" height="14" class="bg"/>
+      <text x="59" y="134" class="tx-s" text-anchor="end">1</text>
+      <rect x="49" y="89" width="10.5" height="14" class="bg"/>
+      <text x="59" y="100" class="tx-s" text-anchor="end">2</text>
+      <rect x="49" y="55" width="10.5" height="14" class="bg"/>
+      <text x="59" y="66" class="tx-s" text-anchor="end">3</text>
+      <rect x="49" y="21" width="10.5" height="14" class="bg"/>
+      <text x="59" y="32" class="tx-s" text-anchor="end">4</text>
+      <rect x="49" y="168" width="10.5" height="14" class="bg"/>
+      <text x="59" y="179" class="tx-s" text-anchor="end">0</text>
+      <circle cx="166" cy="96" r="5" class="t1"/>
+      <text x="174" y="86" class="tx-b">P = (3, 2)</text>
+    </svg>`,
+    text: `<p>Współrzędne to adres punktu. Startujesz z początku układu (0, 0). Pierwsza liczba mówi, ile kratek iść w poziomie (x), druga – ile w pionie (y).</p>`,
+    remember: '(x, y): najpierw poziomo, potem pionowo. Kolejność ma znaczenie!',
+    hook: 'Najpierw idziesz <b>korytarzem</b> (x), potem jedziesz <b>windą</b> (y).',
+  },
+  {
+    title: 'Znaki współrzędnych',
+    svg: `<svg viewBox="0 0 300 222" role="img" aria-label="Cztery punkty w różnych częściach układu i znaki ich współrzędnych: plus plus, minus plus, minus minus, plus minus">
+      <line x1="30" y1="28" x2="30" y2="208" class="ln-thin"/>
+      <line x1="60" y1="28" x2="60" y2="208" class="ln-thin"/>
+      <line x1="90" y1="28" x2="90" y2="208" class="ln-thin"/>
+      <line x1="120" y1="28" x2="120" y2="208" class="ln-thin"/>
+      <line x1="150" y1="28" x2="150" y2="208" class="ln-thin"/>
+      <line x1="180" y1="28" x2="180" y2="208" class="ln-thin"/>
+      <line x1="210" y1="28" x2="210" y2="208" class="ln-thin"/>
+      <line x1="240" y1="28" x2="240" y2="208" class="ln-thin"/>
+      <line x1="270" y1="28" x2="270" y2="208" class="ln-thin"/>
+      <line x1="30" y1="208" x2="270" y2="208" class="ln-thin"/>
+      <line x1="30" y1="178" x2="270" y2="178" class="ln-thin"/>
+      <line x1="30" y1="148" x2="270" y2="148" class="ln-thin"/>
+      <line x1="30" y1="118" x2="270" y2="118" class="ln-thin"/>
+      <line x1="30" y1="88" x2="270" y2="88" class="ln-thin"/>
+      <line x1="30" y1="58" x2="270" y2="58" class="ln-thin"/>
+      <line x1="30" y1="28" x2="270" y2="28" class="ln-thin"/>
+      <line x1="30" y1="118" x2="284" y2="118" class="ln"/>
+      <polyline points="275,113 284,118 275,123" class="ln"/>
+      <line x1="150" y1="208" x2="150" y2="14" class="ln"/>
+      <polyline points="145,23 150,14 155,23" class="ln"/>
+      <text x="282" y="110" class="tx-s">x</text>
+      <text x="158" y="22" class="tx-s">y</text>
+      <rect x="182" y="29" width="56" height="19" class="bg"/>
+      <text x="210" y="44" class="tx-b" text-anchor="middle">(+, +)</text>
+      <rect x="32" y="59" width="56" height="19" class="bg"/>
+      <text x="60" y="74" class="tx-b" text-anchor="middle">(−, +)</text>
+      <rect x="62" y="149" width="56" height="19" class="bg"/>
+      <text x="90" y="164" class="tx-b" text-anchor="middle">(−, −)</text>
+      <rect x="212" y="149" width="56" height="19" class="bg"/>
+      <text x="240" y="164" class="tx-b" text-anchor="middle">(+, −)</text>
+      <rect x="21" y="122" width="18" height="14" class="bg"/>
+      <text x="30" y="133" class="tx-s" text-anchor="middle">−4</text>
+      <rect x="51" y="122" width="18" height="14" class="bg"/>
+      <text x="60" y="133" class="tx-s" text-anchor="middle">−3</text>
+      <rect x="81" y="122" width="18" height="14" class="bg"/>
+      <text x="90" y="133" class="tx-s" text-anchor="middle">−2</text>
+      <rect x="111" y="122" width="18" height="14" class="bg"/>
+      <text x="120" y="133" class="tx-s" text-anchor="middle">−1</text>
+      <rect x="174.8" y="122" width="10.5" height="14" class="bg"/>
+      <text x="180" y="133" class="tx-s" text-anchor="middle">1</text>
+      <rect x="204.8" y="122" width="10.5" height="14" class="bg"/>
+      <text x="210" y="133" class="tx-s" text-anchor="middle">2</text>
+      <rect x="234.8" y="122" width="10.5" height="14" class="bg"/>
+      <text x="240" y="133" class="tx-s" text-anchor="middle">3</text>
+      <rect x="264.8" y="122" width="10.5" height="14" class="bg"/>
+      <text x="270" y="133" class="tx-s" text-anchor="middle">4</text>
+      <rect x="127.5" y="201" width="18" height="14" class="bg"/>
+      <text x="145" y="212" class="tx-s" text-anchor="end">−3</text>
+      <rect x="127.5" y="171" width="18" height="14" class="bg"/>
+      <text x="145" y="182" class="tx-s" text-anchor="end">−2</text>
+      <rect x="127.5" y="141" width="18" height="14" class="bg"/>
+      <text x="145" y="152" class="tx-s" text-anchor="end">−1</text>
+      <rect x="135" y="81" width="10.5" height="14" class="bg"/>
+      <text x="145" y="92" class="tx-s" text-anchor="end">1</text>
+      <rect x="135" y="51" width="10.5" height="14" class="bg"/>
+      <text x="145" y="62" class="tx-s" text-anchor="end">2</text>
+      <rect x="135" y="21" width="10.5" height="14" class="bg"/>
+      <text x="145" y="32" class="tx-s" text-anchor="end">3</text>
+      <rect x="135" y="122" width="10.5" height="14" class="bg"/>
+      <text x="145" y="133" class="tx-s" text-anchor="end">0</text>
+      <circle cx="210" cy="58" r="5" class="t1"/>
+      <circle cx="60" cy="88" r="5" class="t1"/>
+      <circle cx="90" cy="178" r="5" class="t1"/>
+      <circle cx="240" cy="178" r="5" class="t1"/>
+    </svg>`,
+    text: `<p>Na prawo od osi y – x dodatni, na lewo – ujemny. Nad osią x – y dodatni, pod nią – ujemny. Punkt na osi ma jedną współrzędną równą 0: (4, 0) leży na osi x, a (0, −3) – na osi y.</p>`,
+    hook: 'Prawo i góra to plusy, lewo i dół to minusy – jak na termometrze i na linijce.',
+    check: { q: 'Gdzie leży punkt (0, −3)?', options: ['na osi x', 'na osi y', 'nad osią x'], answer: 1, explain: 'x = 0, więc punkt leży na osi y (3 kratki pod początkiem układu).' },
+  },
+  {
+    title: 'Środek odcinka – średnia współrzędnych',
+    svg: `<svg viewBox="0 0 300 252" role="img" aria-label="Odcinek AB, gdzie A = (−2, 1), B = (4, 5), i jego środek S = (1, 3)">
+      <line x1="30" y1="28" x2="30" y2="238" class="ln-thin"/>
+      <line x1="60" y1="28" x2="60" y2="238" class="ln-thin"/>
+      <line x1="90" y1="28" x2="90" y2="238" class="ln-thin"/>
+      <line x1="120" y1="28" x2="120" y2="238" class="ln-thin"/>
+      <line x1="150" y1="28" x2="150" y2="238" class="ln-thin"/>
+      <line x1="180" y1="28" x2="180" y2="238" class="ln-thin"/>
+      <line x1="210" y1="28" x2="210" y2="238" class="ln-thin"/>
+      <line x1="240" y1="28" x2="240" y2="238" class="ln-thin"/>
+      <line x1="270" y1="28" x2="270" y2="238" class="ln-thin"/>
+      <line x1="30" y1="238" x2="270" y2="238" class="ln-thin"/>
+      <line x1="30" y1="208" x2="270" y2="208" class="ln-thin"/>
+      <line x1="30" y1="178" x2="270" y2="178" class="ln-thin"/>
+      <line x1="30" y1="148" x2="270" y2="148" class="ln-thin"/>
+      <line x1="30" y1="118" x2="270" y2="118" class="ln-thin"/>
+      <line x1="30" y1="88" x2="270" y2="88" class="ln-thin"/>
+      <line x1="30" y1="58" x2="270" y2="58" class="ln-thin"/>
+      <line x1="30" y1="28" x2="270" y2="28" class="ln-thin"/>
+      <line x1="30" y1="208" x2="284" y2="208" class="ln"/>
+      <polyline points="275,203 284,208 275,213" class="ln"/>
+      <line x1="120" y1="238" x2="120" y2="14" class="ln"/>
+      <polyline points="115,23 120,14 125,23" class="ln"/>
+      <text x="282" y="200" class="tx-s">x</text>
+      <text x="128" y="22" class="tx-s">y</text>
+      <line x1="60" y1="178" x2="240" y2="58" class="ln s1 sw"/>
+      <rect x="21" y="212" width="18" height="14" class="bg"/>
+      <text x="30" y="223" class="tx-s" text-anchor="middle">−3</text>
+      <rect x="51" y="212" width="18" height="14" class="bg"/>
+      <text x="60" y="223" class="tx-s" text-anchor="middle">−2</text>
+      <rect x="81" y="212" width="18" height="14" class="bg"/>
+      <text x="90" y="223" class="tx-s" text-anchor="middle">−1</text>
+      <rect x="144.8" y="212" width="10.5" height="14" class="bg"/>
+      <text x="150" y="223" class="tx-s" text-anchor="middle">1</text>
+      <rect x="174.8" y="212" width="10.5" height="14" class="bg"/>
+      <text x="180" y="223" class="tx-s" text-anchor="middle">2</text>
+      <rect x="204.8" y="212" width="10.5" height="14" class="bg"/>
+      <text x="210" y="223" class="tx-s" text-anchor="middle">3</text>
+      <rect x="234.8" y="212" width="10.5" height="14" class="bg"/>
+      <text x="240" y="223" class="tx-s" text-anchor="middle">4</text>
+      <rect x="264.8" y="212" width="10.5" height="14" class="bg"/>
+      <text x="270" y="223" class="tx-s" text-anchor="middle">5</text>
+      <rect x="97.5" y="231" width="18" height="14" class="bg"/>
+      <text x="115" y="242" class="tx-s" text-anchor="end">−1</text>
+      <rect x="105" y="171" width="10.5" height="14" class="bg"/>
+      <text x="115" y="182" class="tx-s" text-anchor="end">1</text>
+      <rect x="105" y="141" width="10.5" height="14" class="bg"/>
+      <text x="115" y="152" class="tx-s" text-anchor="end">2</text>
+      <rect x="105" y="111" width="10.5" height="14" class="bg"/>
+      <text x="115" y="122" class="tx-s" text-anchor="end">3</text>
+      <rect x="105" y="81" width="10.5" height="14" class="bg"/>
+      <text x="115" y="92" class="tx-s" text-anchor="end">4</text>
+      <rect x="105" y="51" width="10.5" height="14" class="bg"/>
+      <text x="115" y="62" class="tx-s" text-anchor="end">5</text>
+      <rect x="105" y="21" width="10.5" height="14" class="bg"/>
+      <text x="115" y="32" class="tx-s" text-anchor="end">6</text>
+      <rect x="105" y="212" width="10.5" height="14" class="bg"/>
+      <text x="115" y="223" class="tx-s" text-anchor="end">0</text>
+      <circle cx="60" cy="178" r="5" class="t1"/>
+      <text x="52" y="170" class="tx-b" text-anchor="end">A</text>
+      <circle cx="240" cy="58" r="5" class="t1"/>
+      <text x="248" y="52" class="tx-b">B</text>
+      <circle cx="150" cy="118" r="5" class="t2"/>
+      <text x="156" y="138" class="tx-b t2">S</text>
+    </svg>`,
+    text: `<p>Środek odcinka ma współrzędne równe <b>średnim</b> współrzędnych końców: S = ((−2 + 4)/2, (1 + 5)/2) = (1, 3).</p><p>Szukasz drugiego końca? Od S zrób taki sam krok, jak od A do S.</p>`,
+    remember: 'S = ((x₁ + x₂)/2, (y₁ + y₂)/2)',
+    hook: 'Środek to „spotkanie w pół drogi” – każda współrzędna leży dokładnie pośrodku.',
+    check: { q: 'A = (−1, 3), a środek odcinka AB to S = (1, 1). Gdzie jest B?', options: ['(3, −1)', '(0, 2)', '(2, 4)', '(−3, 5)'], answer: 0, explain: 'Z A do S: 2 w prawo i 2 w dół. Tak samo dalej: B = (3, −1).' },
+  },
+  {
+    title: 'Długość odcinka – Pitagoras na kratkach',
+    svg: `<svg viewBox="0 0 240 252" role="img" aria-label="Odcinek AB, gdzie A = (1, 1) i B = (4, 5), jako przeciwprostokątna trójkąta prostokątnego o przyprostokątnych 3 i 4">
+      <line x1="30" y1="28" x2="30" y2="238" class="ln-thin"/>
+      <line x1="60" y1="28" x2="60" y2="238" class="ln-thin"/>
+      <line x1="90" y1="28" x2="90" y2="238" class="ln-thin"/>
+      <line x1="120" y1="28" x2="120" y2="238" class="ln-thin"/>
+      <line x1="150" y1="28" x2="150" y2="238" class="ln-thin"/>
+      <line x1="180" y1="28" x2="180" y2="238" class="ln-thin"/>
+      <line x1="210" y1="28" x2="210" y2="238" class="ln-thin"/>
+      <line x1="30" y1="238" x2="210" y2="238" class="ln-thin"/>
+      <line x1="30" y1="208" x2="210" y2="208" class="ln-thin"/>
+      <line x1="30" y1="178" x2="210" y2="178" class="ln-thin"/>
+      <line x1="30" y1="148" x2="210" y2="148" class="ln-thin"/>
+      <line x1="30" y1="118" x2="210" y2="118" class="ln-thin"/>
+      <line x1="30" y1="88" x2="210" y2="88" class="ln-thin"/>
+      <line x1="30" y1="58" x2="210" y2="58" class="ln-thin"/>
+      <line x1="30" y1="28" x2="210" y2="28" class="ln-thin"/>
+      <line x1="30" y1="208" x2="224" y2="208" class="ln"/>
+      <polyline points="215,203 224,208 215,213" class="ln"/>
+      <line x1="60" y1="238" x2="60" y2="14" class="ln"/>
+      <polyline points="55,23 60,14 65,23" class="ln"/>
+      <text x="222" y="200" class="tx-s">x</text>
+      <text x="68" y="22" class="tx-s">y</text>
+      <polyline points="90,178 180,178 180,58" class="ln s2 sw dash"/>
+      <line x1="90" y1="178" x2="180" y2="58" class="ln s1 sw"/>
+      <text x="135" y="198" class="tx-b t2" text-anchor="middle">3</text>
+      <text x="188" y="124" class="tx-b t2">4</text>
+      <text x="129" y="112" class="tx-b t1" text-anchor="end">5</text>
+      <rect x="21" y="212" width="18" height="14" class="bg"/>
+      <text x="30" y="223" class="tx-s" text-anchor="middle">−1</text>
+      <rect x="84.8" y="212" width="10.5" height="14" class="bg"/>
+      <text x="90" y="223" class="tx-s" text-anchor="middle">1</text>
+      <rect x="114.8" y="212" width="10.5" height="14" class="bg"/>
+      <text x="120" y="223" class="tx-s" text-anchor="middle">2</text>
+      <rect x="144.8" y="212" width="10.5" height="14" class="bg"/>
+      <text x="150" y="223" class="tx-s" text-anchor="middle">3</text>
+      <rect x="174.8" y="212" width="10.5" height="14" class="bg"/>
+      <text x="180" y="223" class="tx-s" text-anchor="middle">4</text>
+      <rect x="204.8" y="212" width="10.5" height="14" class="bg"/>
+      <text x="210" y="223" class="tx-s" text-anchor="middle">5</text>
+      <rect x="37.5" y="231" width="18" height="14" class="bg"/>
+      <text x="55" y="242" class="tx-s" text-anchor="end">−1</text>
+      <rect x="45" y="171" width="10.5" height="14" class="bg"/>
+      <text x="55" y="182" class="tx-s" text-anchor="end">1</text>
+      <rect x="45" y="141" width="10.5" height="14" class="bg"/>
+      <text x="55" y="152" class="tx-s" text-anchor="end">2</text>
+      <rect x="45" y="111" width="10.5" height="14" class="bg"/>
+      <text x="55" y="122" class="tx-s" text-anchor="end">3</text>
+      <rect x="45" y="81" width="10.5" height="14" class="bg"/>
+      <text x="55" y="92" class="tx-s" text-anchor="end">4</text>
+      <rect x="45" y="51" width="10.5" height="14" class="bg"/>
+      <text x="55" y="62" class="tx-s" text-anchor="end">5</text>
+      <rect x="45" y="21" width="10.5" height="14" class="bg"/>
+      <text x="55" y="32" class="tx-s" text-anchor="end">6</text>
+      <rect x="45" y="212" width="10.5" height="14" class="bg"/>
+      <text x="55" y="223" class="tx-s" text-anchor="end">0</text>
+      <circle cx="90" cy="178" r="5" class="t1"/>
+      <text x="82" y="172" class="tx-b" text-anchor="end">A</text>
+      <circle cx="180" cy="58" r="5" class="t1"/>
+      <text x="188" y="52" class="tx-b">B</text>
+    </svg>`,
+    text: `<p>Ukośny odcinek na kratkach to przeciwprostokątna trójkąta prostokątnego. Przyprostokątne to różnice współrzędnych: 4 − 1 = 3 i 5 − 1 = 4. Zatem |AB| = √(3² + 4²) = 5.</p>`,
+    remember: '|AB| = √((x₂ − x₁)² + (y₂ − y₁)²)',
+    hook: 'Nie dodawaj kratek „po schodkach” (3 + 4 = 7) – po przekątnej zawsze jest bliżej.',
+  },
+  {
+    title: 'Punkty kratowe na prostej AB',
+    svg: `<svg viewBox="0 0 300 222" role="img" aria-label="Prosta przez A = (−2, −1) i B = (2, 1). Krok 2 w prawo i 1 w górę (zaznaczony przy B) prowadzi do kolejnych punktów kratowych: (−4, −2), (0, 0), (4, 2)">
+      <line x1="30" y1="28" x2="30" y2="208" class="ln-thin"/>
+      <line x1="60" y1="28" x2="60" y2="208" class="ln-thin"/>
+      <line x1="90" y1="28" x2="90" y2="208" class="ln-thin"/>
+      <line x1="120" y1="28" x2="120" y2="208" class="ln-thin"/>
+      <line x1="150" y1="28" x2="150" y2="208" class="ln-thin"/>
+      <line x1="180" y1="28" x2="180" y2="208" class="ln-thin"/>
+      <line x1="210" y1="28" x2="210" y2="208" class="ln-thin"/>
+      <line x1="240" y1="28" x2="240" y2="208" class="ln-thin"/>
+      <line x1="270" y1="28" x2="270" y2="208" class="ln-thin"/>
+      <line x1="30" y1="208" x2="270" y2="208" class="ln-thin"/>
+      <line x1="30" y1="178" x2="270" y2="178" class="ln-thin"/>
+      <line x1="30" y1="148" x2="270" y2="148" class="ln-thin"/>
+      <line x1="30" y1="118" x2="270" y2="118" class="ln-thin"/>
+      <line x1="30" y1="88" x2="270" y2="88" class="ln-thin"/>
+      <line x1="30" y1="58" x2="270" y2="58" class="ln-thin"/>
+      <line x1="30" y1="28" x2="270" y2="28" class="ln-thin"/>
+      <line x1="30" y1="118" x2="284" y2="118" class="ln"/>
+      <polyline points="275,113 284,118 275,123" class="ln"/>
+      <line x1="150" y1="208" x2="150" y2="14" class="ln"/>
+      <polyline points="145,23 150,14 155,23" class="ln"/>
+      <text x="282" y="110" class="tx-s">x</text>
+      <text x="158" y="22" class="tx-s">y</text>
+      <line x1="30" y1="178" x2="270" y2="58" class="ln s1 sw"/>
+      <polyline points="210,88 270,88 270,58" class="ln s2 sw"/>
+      <text x="240" y="108" class="tx-b t2" text-anchor="middle">2</text>
+      <text x="276" y="79" class="tx-b t2">1</text>
+      <rect x="21" y="122" width="18" height="14" class="bg"/>
+      <text x="30" y="133" class="tx-s" text-anchor="middle">−4</text>
+      <rect x="51" y="122" width="18" height="14" class="bg"/>
+      <text x="60" y="133" class="tx-s" text-anchor="middle">−3</text>
+      <rect x="81" y="122" width="18" height="14" class="bg"/>
+      <text x="90" y="133" class="tx-s" text-anchor="middle">−2</text>
+      <rect x="111" y="122" width="18" height="14" class="bg"/>
+      <text x="120" y="133" class="tx-s" text-anchor="middle">−1</text>
+      <rect x="174.8" y="122" width="10.5" height="14" class="bg"/>
+      <text x="180" y="133" class="tx-s" text-anchor="middle">1</text>
+      <rect x="204.8" y="122" width="10.5" height="14" class="bg"/>
+      <text x="210" y="133" class="tx-s" text-anchor="middle">2</text>
+      <rect x="234.8" y="122" width="10.5" height="14" class="bg"/>
+      <text x="240" y="133" class="tx-s" text-anchor="middle">3</text>
+      <rect x="264.8" y="122" width="10.5" height="14" class="bg"/>
+      <text x="270" y="133" class="tx-s" text-anchor="middle">4</text>
+      <rect x="127.5" y="201" width="18" height="14" class="bg"/>
+      <text x="145" y="212" class="tx-s" text-anchor="end">−3</text>
+      <rect x="127.5" y="171" width="18" height="14" class="bg"/>
+      <text x="145" y="182" class="tx-s" text-anchor="end">−2</text>
+      <rect x="127.5" y="141" width="18" height="14" class="bg"/>
+      <text x="145" y="152" class="tx-s" text-anchor="end">−1</text>
+      <rect x="135" y="81" width="10.5" height="14" class="bg"/>
+      <text x="145" y="92" class="tx-s" text-anchor="end">1</text>
+      <rect x="135" y="51" width="10.5" height="14" class="bg"/>
+      <text x="145" y="62" class="tx-s" text-anchor="end">2</text>
+      <rect x="135" y="21" width="10.5" height="14" class="bg"/>
+      <text x="145" y="32" class="tx-s" text-anchor="end">3</text>
+      <rect x="135" y="122" width="10.5" height="14" class="bg"/>
+      <text x="145" y="133" class="tx-s" text-anchor="end">0</text>
+      <circle cx="30" cy="178" r="5" class="t2"/>
+      <circle cx="150" cy="118" r="5" class="t2"/>
+      <circle cx="270" cy="58" r="5" class="t2"/>
+      <circle cx="90" cy="148" r="5" class="t1"/>
+      <text x="86" y="170" class="tx-b" text-anchor="end">A</text>
+      <circle cx="210" cy="88" r="5" class="t1"/>
+      <text x="206" y="78" class="tx-b" text-anchor="end">B</text>
+    </svg>`,
+    text: `<p>Z A do B idziesz 4 w prawo i 2 w górę. Obie liczby dzielą się przez 2, więc najkrótszy krok to <b>2 w prawo i 1 w górę</b>. Powtarzając go, trafiasz w kolejne punkty kratowe prostej: (0, 0), (2, 1), (4, 2), a w drugą stronę (−4, −2).</p>`,
+    remember: 'Skróć przesunięcie z A do B przez wspólny dzielnik i powtarzaj ten krok.',
+    check: { q: 'Prosta przechodzi przez (0, 0) i (4, 6). Który punkt też na niej leży?', options: ['(2, 3)', '(3, 2)', '(1, 2)', '(2, 4)'], answer: 0, explain: '4 i 6 dzielą się przez 2 – krok to 2 w prawo i 3 w górę: (2, 3).' },
+  },
+];
