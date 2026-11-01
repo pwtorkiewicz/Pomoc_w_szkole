@@ -554,6 +554,116 @@ window.SUBJECTS.push({
       ],
     },
     {
+      id: 'interpunkcja-ortografia',
+      name: 'Interpunkcja i ortografia',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), język polski: kl. IV–VI II.4.1–2 (reguły pisowni; kropka, przecinek, znak zapytania, wykrzyknik, cudzysłów, dwukropek, średnik, nawias); kl. VII–VIII II.4.1–4 (wymiana głosek, przytaczanie cudzych wypowiedzi, samogłoski nosowe, spółgłoski miękkie, pisownia wyrazów nieodmiennych i „nie”). Ortografia i interpunkcja to też kryteria 7 i 8 oceny wypracowania (informator CKE).',
+      theory: `
+        <h3>Przecinek</h3>
+        <table>
+          <tr><th>Stawiamy</th><th>Nie stawiamy</th></tr>
+          <tr><td>przed spójnikami i zaimkami, które zaczynają zdanie podrzędne lub przeciwstawne: <i>że, żeby, aby, bo, ponieważ, który, gdy, kiedy, jeśli, ale, lecz, więc, dlatego</i></td><td>przed pojedynczymi spójnikami <i>i, oraz, lub, albo, ani, czy</i>: <i>Kupiłem chleb i mleko.</i></td></tr>
+          <tr><td>przed powtórzonym spójnikiem: <i>Kupiłem i chleb, i mleko.</i></td><td>w porównaniu bez czasownika: <i>biały jak śnieg</i></td></tr>
+          <tr><td>między elementami wyliczenia: <i>jabłka, gruszki, śliwki i banany</i></td><td>między podmiotem a orzeczeniem: <s>Mój brat, jest wysoki.</s></td></tr>
+          <tr><td>z obu stron wtrącenia: <i>Mój brat, który mieszka w Gdańsku, przyjedzie jutro.</i></td><td></td></tr>
+          <tr><td>przy wołaczu i wykrzykniku: <i>Aniu, chodź tu! Ach, jak pięknie!</i></td><td></td></tr>
+          <tr><td>po imiesłowowym równoważniku zdania: <i>Wróciwszy do domu, zjadłem obiad.</i></td><td></td></tr>
+        </table>
+        <h3>Inne znaki</h3>
+        <ul>
+          <li><b>Kropka</b> – na końcu zdania oznajmującego, po skrótach (<i>np., tzn., ul.</i>). Bez kropki piszemy skróty kończące się ostatnią literą wyrazu: <i>dr</i> (doktor), <i>mgr</i> (magister).</li>
+          <li><b>Dwukropek</b> – przed zapowiedzianym wyliczeniem (<i>Miałem trzy rzeczy: kanapki, wodę i mapę.</i>), przed przytoczeniem cudzych słów i przed wyjaśnieniem.</li>
+          <li><b>Średnik</b> – oddziela dłuższe, dość samodzielne części zdania złożonego, zwłaszcza gdy są w nich już przecinki.</li>
+          <li><b>Myślnik</b> – rozpoczyna wypowiedź postaci w dialogu i oddziela słowa narratora; może też wydzielać wtrącenie.</li>
+          <li><b>Cudzysłów</b> „…” – przytoczenie dosłowne, tytuły, wyrazy użyte w nietypowym (np. ironicznym) znaczeniu.</li>
+          <li><b>Nawias</b> – wtrącenia, dodatkowe informacje i objaśnienia.</li>
+        </ul>
+        <h3>Przytaczanie cudzych słów</h3>
+        <ul>
+          <li>Mowa niezależna: <i>Ola powiedziała: „Jutro przyjdę”.</i> Gdy przytoczenie kończy się pytajnikiem lub wykrzyknikiem, nie dodajemy już kropki: <i>Ola zapytała: „Przyjdziesz jutro?”</i></li>
+          <li>Dialog: każda wypowiedź od nowej linii, od myślnika. Słowa narratora po myślniku małą literą: <i>– Przyjdę jutro – powiedziała Ola.</i></li>
+          <li>Mowa zależna – bez cudzysłowu, ze spójnikiem: <i>Ola powiedziała, że jutro przyjdzie.</i></li>
+        </ul>
+        <h3>Wielka i mała litera</h3>
+        <table>
+          <tr><th>Wielką</th><th>Małą</th></tr>
+          <tr><td>imiona, nazwiska, przydomki; nazwy państw, miast, rzek, gór, mórz (<i>Morze Bałtyckie, Tatry</i>); mieszkańcy krajów, części świata i regionów (<i>Polak, Europejczyk, Ślązak</i>); nazwy świąt (<i>Boże Narodzenie</i>); pierwszy wyraz tytułu (<i>Kamienie na szaniec</i>); zwroty grzecznościowe w listach (<i>Ty, Pan</i>)</td><td>dni tygodnia i miesiące (<i>poniedziałek, maj</i>); mieszkańcy miast (<i>warszawianin, krakowianin</i>); przymiotniki od nazw (<i>polski, warszawski</i>)</td></tr>
+        </table>
+        <h3>Ortografia – najważniejsze reguły</h3>
+        <ul>
+          <li><b>ó</b> – gdy wymienia się na o, e, a (<i>stół – stołu, siódmy – siedem</i>) i w zakończeniach <i>-ów, -ówka</i> (<i>Kraków, złotówka</i>). <b>u</b> – na początku wyrazu (<i>ucho</i>; wyjątki: <i>ósmy, ów</i>) i w zakończeniach <i>-uje, -unek, -uch, -usz, -utki</i> (<i>maluje, rysunek, kapelusz, malutki</i>).</li>
+          <li><b>rz</b> – gdy wymienia się na r (<i>morze – morski</i>), po spółgłoskach b, p, d, t, g, k, ch, j, w (<i>brzeg, trzy, krzesło, wrzesień</i>; wyjątki m.in. <i>pszenica, pszczoła, kształt</i>) i w zakończeniach <i>-arz, -erz</i> (<i>lekarz, rycerz</i>).</li>
+          <li><b>ż</b> – gdy wymienia się na g, dz, z, s, h (<i>może – mogę, wożę – wozić, wyżej – wysoki, drużyna – druh</i>) i po literach l, ł, r, n (<i>lżejszy, oranżada</i>).</li>
+          <li><b>ch</b> – gdy wymienia się na sz (<i>mucha – musze</i>) i na końcu wyrazu (<i>dach, groch</i>; wyjątek: <i>druh</i>). <b>h</b> – gdy wymienia się na g, ż, z (<i>druh – drużyna</i>).</li>
+          <li><b>ą, ę</b>: <i>tę</i> książkę (kogo? co?), z <i>tą</i> książką (z kim? z czym?); <i>ja piszę</i>, <i>oni piszą</i>.</li>
+          <li><b>Zmiękczenia</b>: przed spółgłoską i na końcu wyrazu kreska (<i>śnieg, ćma, koń</i>), przed samogłoską „i” (<i>siano, ciocia, zima, niebo, dziadek</i>).</li>
+          <li><b>Przedrostki</b>: <i>s-</i> przed p, t, k, f, ch (<i>spisać, stracić, skończyć, schować</i>), <i>ś-</i> przed ć (<i>ściąć</i>), w pozostałych przypadkach <i>z-</i> (<i>zrobić, zbić</i>); <i>roz-</i> i <i>bez-</i> zawsze przez z (<i>rozpakować, bezpieczny</i>).</li>
+        </ul>
+        <h3>Razem czy osobno?</h3>
+        <ul>
+          <li><b>Razem</b>: przyimki złożone (<i>spod, znad, sprzed, spoza, zza</i>), przysłówki (<i>naprawdę, naprzód, wewnątrz, dokoła</i>), cząstka <i>-by</i> z czasownikiem i spójnikiem (<i>zrobiłbym, gdyby, żeby</i>).</li>
+          <li><b>Osobno</b>: wyrażenia przyimkowe (<i>na pewno, w ogóle, z powrotem, na razie, po prostu, do widzenia, po polsku</i>), <i>by</i> przy innych wyrazach (<i>Kto by pomyślał?</i>).</li>
+          <li>Pisownia „nie” – w dziale „Głoski, akcent i ortografia”.</li>
+        </ul>
+        <div class="tip">💡 Na egzaminie za ortografię możesz dostać 2 pkt (najwyżej 1 błąd), a za interpunkcję 1 pkt (najwyżej 9 błędów). Zostaw sobie kilka minut na sprawdzenie wypracowania.</div>
+      `,
+      flashcards: [
+        ['Przecinek stawiamy przed…', 'że, żeby, aby, bo, ponieważ, który, gdy, jeśli, ale, lecz, więc, dlatego'],
+        ['Bez przecinka przed pojedynczym…', 'i, oraz, lub, albo, ani, czy'],
+        ['Powtórzony spójnik', 'Przecinek przed drugim: Kupiłem i chleb, i mleko.'],
+        ['Wtrącenie', 'Oddzielamy przecinkami z obu stron'],
+        ['Wołacz', 'Oddzielamy przecinkiem: Aniu, chodź tu!'],
+        ['Dwukropek', 'Przed zapowiedzianym wyliczeniem, przytoczeniem, wyjaśnieniem'],
+        ['Średnik', 'Oddziela dłuższe części zdania złożonego (zwłaszcza z przecinkami)'],
+        ['Przytoczenie zakończone pytajnikiem', 'Ola zapytała: „Przyjdziesz jutro?” – bez kropki na końcu'],
+        ['Dialog', '– Przyjdę jutro – powiedziała Ola.'],
+        ['Wielką literą', 'Polak, Ślązak, Morze Bałtyckie, Boże Narodzenie, pierwszy wyraz tytułu'],
+        ['Małą literą', 'poniedziałek, maj, warszawianin, polski'],
+        ['u, nie ó', '-uje, -unek, -uch, -usz, -utki: maluje, rysunek, kapelusz'],
+        ['ó', 'wymienia się na o, e, a; -ów, -ówka: Kraków, złotówka'],
+        ['rz po spółgłoskach', 'b, p, d, t, g, k, ch, j, w: brzeg, trzy, krzesło (wyjątki: pszenica, pszczoła, kształt)'],
+        ['ż po literach', 'l, ł, r, n: lżejszy, oranżada'],
+        ['tę czy tą?', 'tę książkę (kogo? co?), z tą książką (z kim? z czym?)'],
+        ['s- czy z-?', 's- przed p, t, k, f, ch (spisać, schować); roz-, bez- zawsze przez z'],
+        ['Razem czy osobno?', 'razem: spod, znad, naprawdę, zrobiłbym; osobno: na pewno, w ogóle, z powrotem'],
+      ],
+      questions: [
+        { id: 'yerhft', q: 'W którym zdaniu przecinek postawiono poprawnie?', options: ['Aniu podaj, mi książkę.', 'Aniu podaj mi, książkę.', 'Aniu podaj mi książkę, teraz.', 'Aniu, podaj mi książkę.'], answer: 3, explain: 'Wołacz (Aniu) oddzielamy przecinkiem.' },
+        { id: 'g2o1iy', q: 'Które zdanie ma poprawną interpunkcję?', options: ['Mój brat, który mieszka w Gdańsku przyjedzie jutro.', 'Mój brat który mieszka w Gdańsku, przyjedzie jutro.', 'Mój brat, który mieszka w Gdańsku, przyjedzie jutro.', 'Mój brat, który mieszka, w Gdańsku przyjedzie jutro.'], answer: 2, explain: 'Wtrącenie „który mieszka w Gdańsku” oddzielamy przecinkami z obu stron.' },
+        { id: 'yfybkj', q: 'W którym zdaniu przecinek jest błędny?', options: ['Kupiłem i chleb, i mleko.', 'Kupiłem chleb, i mleko.', 'Kupiłem chleb, bo był świeży.', 'Kupiłem chleb, mleko i ser.'], answer: 1, explain: 'Przed pojedynczym „i” nie stawiamy przecinka. Przed powtórzonym „i… i…” – stawiamy.' },
+        { id: 'vji8r8', q: 'Które zdanie zapisano poprawnie?', options: ['Był biały, jak śnieg.', 'Był, biały jak śnieg.', 'Był biały jak śnieg.', 'Był biały jak, śnieg.'], answer: 2, explain: 'W porównaniu bez czasownika („jak śnieg”) nie stawiamy przecinka.' },
+        { id: 'fu6buu', q: 'W którym zdaniu poprawnie użyto dwukropka?', options: ['W plecaku miałem trzy rzeczy: kanapki, wodę i mapę.', 'W plecaku: miałem trzy rzeczy, kanapki, wodę i mapę.', 'W plecaku miałem trzy rzeczy, kanapki: wodę i mapę.', 'W: plecaku miałem trzy rzeczy, kanapki, wodę i mapę.'], answer: 0, explain: 'Dwukropek stoi przed wyliczeniem zapowiedzianym słowami „trzy rzeczy”.' },
+        { id: 'ihzrbe', q: 'Który zapis cudzych słów jest poprawny?', options: ['Ola powiedziała, „Jutro przyjdę”.', 'Ola powiedziała: „Jutro przyjdę”.', 'Ola powiedziała: Jutro przyjdę.', 'Ola powiedziała „Jutro”: przyjdę.'], answer: 1, explain: 'Przed przytoczeniem stawiamy dwukropek, a słowa przytoczone ujmujemy w cudzysłów.' },
+        { id: 'boripu', q: 'Który zapis jest poprawny?', options: ['Ola zapytała: „Przyjdziesz jutro?”', 'Ola zapytała: „Przyjdziesz jutro”?', 'Ola zapytała: „Przyjdziesz jutro?”.', 'Ola zapytała, przyjdziesz jutro?'], answer: 0, explain: 'Pytajnik należy do przytoczenia, więc stoi w cudzysłowie; po nim nie dodajemy kropki.' },
+        { id: '9ztxwg', q: 'Jak poprawnie zapisać wypowiedź postaci w dialogu?', options: ['– Przyjdę jutro – Powiedziała Ola.', 'Przyjdę jutro, powiedziała Ola –', '„– Przyjdę jutro” – powiedziała Ola –', '– Przyjdę jutro – powiedziała Ola.'], answer: 3, explain: 'Wypowiedź zaczyna myślnik, a słowa narratora po myślniku piszemy małą literą.' },
+        { id: '7r3izv', q: 'Który znak oddziela dłuższe, dość samodzielne części zdania złożonego, zwłaszcza gdy są w nich już przecinki?', options: ['dwukropek', 'średnik', 'myślnik', 'nawias'], answer: 1 },
+        { id: 'pz8bo6', q: 'Do czego najczęściej służy nawias?', options: ['do zapisu dialogu', 'do zakończenia zdania pytającego', 'do wtrąceń i dodatkowych objaśnień', 'do zapowiedzi wyliczenia'], answer: 2 },
+        { id: '1q2s9n', q: 'Jak poprawnie zapisać skrót wyrazu „doktor”?', options: ['dr.', 'Dr.', 'dok', 'dr'], answer: 3, explain: 'Skróty kończące się ostatnią literą wyrazu piszemy bez kropki: dr, mgr.' },
+        { id: 'hw02qu', q: 'W którym szeregu wszystkie wyrazy zapisano poprawnie?', options: ['polak, Warszawianin, Poniedziałek', 'Polak, Warszawianin, poniedziałek', 'polak, warszawianin, Poniedziałek', 'Polak, warszawianin, poniedziałek'], answer: 3, explain: 'Mieszkańca kraju piszemy wielką literą, mieszkańca miasta i dzień tygodnia – małą.' },
+        { id: 'nsi9be', q: 'Który zapis jest poprawny?', options: ['Morze Bałtyckie', 'morze Bałtyckie', 'Morze bałtyckie', 'morze bałtyckie'], answer: 0, explain: 'W nazwach mórz oba wyrazy piszemy wielką literą.' },
+        { id: 'pvhcpk', q: 'Który tytuł zapisano poprawnie?', options: ['„Kamienie Na Szaniec”', '„kamienie na szaniec”', '„Kamienie na Szaniec”', '„Kamienie na szaniec”'], answer: 3, explain: 'W tytułach książek wielką literą piszemy pierwszy wyraz (i nazwy własne).' },
+        { id: '21mzd7', q: 'Które wyrazy piszemy małą literą?', options: ['nazwy państw', 'imiona i nazwiska', 'nazwy dni tygodnia i miesięcy', 'nazwy świąt'], answer: 2 },
+        { id: 'finq1k', q: 'W którym szeregu we wszystkie luki wpiszesz „ó”?', options: ['kr_l, mal_je, Krak_w', 'st_ł, rys_nek, kr_l', 'Krak_w, kapel_sz, st_ł', 'kr_l, st_ł, Krak_w'], answer: 3, explain: 'król (królowa), stół (stołu), Kraków (-ów). Maluje, rysunek, kapelusz piszemy przez „u”.' },
+        { id: 'steng8', q: 'Dlaczego w wyrazie „maluje” piszemy „u”?', options: ['bo „u” wymienia się na „o”', 'bo to zakończenie -uje', 'bo stoi na początku wyrazu', 'bo tak słychać w wymowie'], answer: 1 },
+        { id: 'yj0w2b', q: 'Którym wyrazem uzasadnisz pisownię „ó” w wyrazie „siódmy”?', options: ['siódemka', 'sito', 'siadać', 'siedem'], answer: 3, explain: '„Ó” wymienia się na „e”.' },
+        { id: '3po7ej', q: 'Dlaczego w wyrazie „krzesło” piszemy „rz”?', options: ['bo wymienia się na „r”', 'bo to zakończenie -arz', 'bo stoi po spółgłosce k', 'bo stoi na początku wyrazu'], answer: 2 },
+        { id: '1go6ux', q: 'Który wyraz jest wyjątkiem od reguły pisania „rz” po spółgłoskach?', options: ['przyjaciel', 'pszenica', 'trzeba', 'brzeg'], answer: 1 },
+        { id: '2c0wu1', q: 'W której parze „ż” wymienia się na „g”?', options: ['wożę – wozić', 'wyżej – wysoki', 'może – mogę', 'drużyna – druh'], answer: 2, explain: 'W pozostałych parach ż wymienia się na z, s i h.' },
+        { id: '6t8k49', q: 'W którym wyrazie piszemy „ch”, bo wymienia się na „sz”?', options: ['druh – drużyna', 'mucha – musze', 'dach – dachy', 'hak – haki'], answer: 1 },
+        { id: 'v3so3g', q: 'Które zdanie zapisano poprawnie?', options: ['Czytam tą książkę z tą okładką.', 'Czytam tę książkę z tę okładką.', 'Czytam tę książkę z tą okładką.', 'Czytam tą książkę z tę okładką.'], answer: 2, explain: 'Czytam kogo? co? – tę książkę. Z kim? z czym? – z tą okładką.' },
+        { id: '1zydnz', q: '„Ja (pisać) list, a oni (pisać) e-maile.” Które formy są poprawne?', options: ['pisze, piszą', 'piszę, piszom', 'pisze, piszom', 'piszę, piszą'], answer: 3 },
+        { id: '00scq1', q: 'W którym szeregu wszystkie wyrazy zapisano poprawnie?', options: ['sinieg, siano, koń, niebo', 'śnieg, śano, koń, niebo', 'śnieg, siano, koń, ńebo', 'śnieg, siano, koń, niebo'], answer: 3, explain: 'Przed spółgłoską i na końcu wyrazu piszemy kreskę (ś, ń), przed samogłoską – „i” (si, ni).' },
+        { id: 'n1y7wo', q: 'Który wyraz zapisano poprawnie?', options: ['spisać', 'zpisać', 'zkończyć', 'zfotografować'], answer: 0, explain: 'Przed p, t, k, f, ch piszemy przedrostek s-: spisać, skończyć, sfotografować.' },
+        { id: 'krlnvc', q: 'Który zapis jest poprawny?', options: ['rozpakować', 'rospakować', 'roz pakować', 'rośpakować'], answer: 0, explain: 'Przedrostek roz- zawsze piszemy przez z.' },
+        { id: 'o7jc2x', q: 'W którym szeregu wszystkie wyrażenia zapisano poprawnie?', options: ['napewno, wogóle, zpowrotem', 'na pewno, wogóle, z powrotem', 'napewno, w ogóle, z powrotem', 'na pewno, w ogóle, z powrotem'], answer: 3 },
+        { id: 'paogrv', q: 'Który zapis jest poprawny?', options: ['Wyszedł spod mostu.', 'Wyszedł z pod mostu.', 'Wyszedł s pod mostu.', 'Wyszedł zpod mostu.'], answer: 0, explain: 'Przyimki złożone (spod, znad, sprzed, zza) piszemy łącznie.' },
+        { id: 'p7njef', q: 'W którym zdaniu poprawnie zapisano cząstkę „by”?', options: ['Zrobił bym to, gdybym miał czas.', 'Zrobiłbym to, gdybym miał czas.', 'Zrobiłbym to, gdy bym miał czas.', 'Zrobił bym to, gdy bym miał czas.'], answer: 1, explain: '„-by” piszemy łącznie z czasownikiem w formie osobowej i ze spójnikiem (gdyby, żeby).' },
+        { id: 'yjgbq8', q: 'Który wyraz piszemy łącznie?', options: ['na pewno', 'w ogóle', 'na razie', 'naprawdę'], answer: 3 },
+        { id: 'mdy3pj', q: 'Prawda czy fałsz?\nNazwy miesięcy piszemy wielką literą.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Dni tygodnia i miesiące piszemy małą literą: maj, poniedziałek.' },
+        { id: 'qpv1b4', q: 'Prawda czy fałsz?\nWołacz (np. „Aniu”) oddzielamy w zdaniu przecinkiem.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0 },
+        { id: 'sk90tf', q: 'Prawda czy fałsz?\nPrzed pojedynczym spójnikiem „oraz” nie stawiamy przecinka.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0 },
+      ],
+    },
+    {
       id: 'style-komunikacja',
       name: 'Style, słownictwo i komunikacja',
       basis: 'Podstawa programowa (Dz.U. 2024 poz. 996): kl. VII–VIII II.2.1–3 i II.2.6 (słownictwo ogólnonarodowe i o ograniczonym zasięgu, zapożyczenia, nazwy osobowe i miejscowe, style), II.3.1–3 (grzeczność, norma, błąd językowy), III.1.8 (manipulacja); kl. IV–VI II.3.1–3 (nadawca, odbiorca, sytuacja komunikacyjna).',

@@ -993,3 +993,126 @@ window.LESSONS['polski/style-komunikacja'] = [
     check: { q: 'W jakim stylu napiszesz regulamin klasowego konkursu?', options: ['potocznym', 'urzędowym', 'artystycznym', 'publicystycznym'], answer: 1, explain: 'Regulamin to tekst oficjalny i schematyczny – styl urzędowy.' },
   },
 ];
+
+window.LESSONS['polski/interpunkcja-ortografia'] = [
+  {
+    title: 'Przecinek – kiedy tak, kiedy nie',
+    svg: `<svg viewBox="0 0 420 236" role="img" aria-label="Dwie kolumny: przecinek stawiamy przed że, bo, który, ale; nie stawiamy przed pojedynczym i, oraz, lub, albo">
+      <rect x="6" y="6" width="198" height="160" rx="12" class="f3 s3 sw"/>
+      <rect x="216" y="6" width="198" height="160" rx="12" class="f2 s2 sw"/>
+      <text x="105" y="34" class="tx-b" text-anchor="middle">✔ stawiamy</text>
+      <text x="315" y="34" class="tx-b" text-anchor="middle">✘ nie stawiamy</text>
+      <text x="105" y="66" class="tx" text-anchor="middle">że, żeby, bo</text>
+      <text x="105" y="92" class="tx" text-anchor="middle">ponieważ, który</text>
+      <text x="105" y="118" class="tx" text-anchor="middle">gdy, jeśli, ale</text>
+      <text x="105" y="144" class="tx" text-anchor="middle">lecz, więc, dlatego</text>
+      <text x="315" y="66" class="tx" text-anchor="middle">i, oraz</text>
+      <text x="315" y="92" class="tx" text-anchor="middle">lub, albo</text>
+      <text x="315" y="118" class="tx" text-anchor="middle">ani, czy</text>
+      <text x="315" y="144" class="tx-s" text-anchor="middle">(gdy są pojedyncze)</text>
+      <text x="10" y="196" class="tx">Wiem<tspan class="tx-b t3">,</tspan> że masz rację.</text>
+      <text x="220" y="196" class="tx">Kupiłem chleb i mleko.</text>
+      <text x="10" y="224" class="tx-s">Powtórzone „i”: Kupiłem i chleb, i mleko.</text>
+    </svg>`,
+    text: `<p>Przecinek najczęściej oddziela zdania składowe. Stawiamy go przed słowami, które zaczynają nowe zdanie: <b>że, żeby, bo, ponieważ, który, gdy, jeśli</b>, i przed spójnikami przeciwstawnymi: <b>ale, lecz</b> oraz wynikowymi: <b>więc, dlatego</b>.</p>
+      <p>Pojedyncze <b>i, oraz, lub, albo, ani, czy</b> same łączą – przecinek byłby zbędny. Gdy spójnik się powtarza („i… i…”), przecinek stawiamy przed drugim.</p>`,
+    remember: 'Przecinek przed: że, żeby, bo, ponieważ, który, gdy, jeśli, ale, lecz, więc. Bez przecinka przed pojedynczym: i, oraz, lub, albo, ani, czy.',
+    hook: '„I”, „lub”, „albo” to <b>kleje</b> – same łączą, więc przecinek jest im niepotrzebny. „Że”, „który”, „bo” to <b>drzwi</b> do nowego zdania – a przed drzwiami stawiamy próg.',
+    check: { q: 'W którym zdaniu przecinek jest błędny?', options: ['Kupiłem chleb, bo był świeży.', 'Kupiłem chleb, i mleko.', 'Kupiłem i chleb, i mleko.', 'Wiem, że masz rację.'], answer: 1, explain: 'Przed pojedynczym „i” nie stawiamy przecinka.' },
+  },
+  {
+    title: 'Wtrącenie, wołacz, wyliczenie',
+    svg: `<svg viewBox="0 0 420 214" role="img" aria-label="Wtrącenie który mieszka w Gdańsku oddzielone przecinkami z obu stron; wołacz Aniu; wyliczenie">
+      <rect x="76" y="14" width="246" height="30" rx="6" class="f4"/>
+      <text x="10" y="36" class="tx">Mój brat<tspan class="tx-b t2">,</tspan> który mieszka w Gdańsku<tspan class="tx-b t2">,</tspan></text>
+      <text x="10" y="62" class="tx">przyjedzie jutro.</text>
+      <text x="200" y="82" class="tx-s" text-anchor="middle">wtrącenie – przecinki z obu stron</text>
+      <text x="10" y="124" class="tx">Aniu<tspan class="tx-b t2">,</tspan> podaj mi książkę.</text>
+      <text x="410" y="124" class="tx-s" text-anchor="end">wołacz</text>
+      <text x="10" y="164" class="tx">jabłka<tspan class="tx-b t2">,</tspan> gruszki<tspan class="tx-b t2">,</tspan> śliwki i banany</text>
+      <text x="410" y="164" class="tx-s" text-anchor="end">wyliczenie</text>
+      <text x="10" y="202" class="tx">biały jak śnieg</text>
+      <text x="410" y="202" class="tx-s" text-anchor="end">porównanie – bez przecinka</text>
+    </svg>`,
+    text: `<p><b>Wtrącenie</b> to dodatkowa informacja wsunięta w zdanie. Możesz ją wyjąć, a zdanie nadal ma sens („Mój brat przyjedzie jutro”). Dlatego przecinki stawiamy <b>parami</b> – na początku i na końcu wtrącenia.</p>
+      <p>Przecinkiem oddzielamy też <b>wołacz</b> (Aniu, Panie Profesorze) i elementy <b>wyliczenia</b> (przed ostatnim „i” – już nie). W porównaniu bez czasownika („biały jak śnieg”) przecinka nie ma.</p>`,
+    remember: 'Wtrącenie – przecinek z obu stron. Wołacz – zawsze oddzielony przecinkiem.',
+    hook: 'Wtrącenie jest jak <b>kanapka</b>: przecinek to kromka chleba z każdej strony – nie zostawiaj jej otwartej.',
+  },
+  {
+    title: 'Inne znaki – do czego służą',
+    svg: `<svg viewBox="0 0 420 176" role="img" aria-label="Sześć kafelków: kropka, dwukropek, średnik, myślnik, cudzysłów, nawias i ich zastosowania">
+      <rect x="6" y="6" width="130" height="78" rx="10" class="f1 s1"/><rect x="145" y="6" width="130" height="78" rx="10" class="f3 s3"/><rect x="284" y="6" width="130" height="78" rx="10" class="f4 s4"/>
+      <rect x="6" y="92" width="130" height="78" rx="10" class="f5 s5"/><rect x="145" y="92" width="130" height="78" rx="10" class="f2 s2"/><rect x="284" y="92" width="130" height="78" rx="10" class="f1 s1"/>
+      <text x="71" y="36" class="tx-b" text-anchor="middle">.  kropka</text><text x="71" y="62" class="tx-s" text-anchor="middle">koniec zdania, np.</text>
+      <text x="210" y="36" class="tx-b" text-anchor="middle">:  dwukropek</text><text x="210" y="62" class="tx-s" text-anchor="middle">wyliczenie, cytat</text>
+      <text x="349" y="36" class="tx-b" text-anchor="middle">;  średnik</text><text x="349" y="62" class="tx-s" text-anchor="middle">długie części zdania</text>
+      <text x="71" y="122" class="tx-b" text-anchor="middle">–  myślnik</text><text x="71" y="148" class="tx-s" text-anchor="middle">dialog, wtrącenie</text>
+      <text x="210" y="122" class="tx-b" text-anchor="middle">„ ”  cudzysłów</text><text x="210" y="148" class="tx-s" text-anchor="middle">cytat, tytuł, ironia</text>
+      <text x="349" y="122" class="tx-b" text-anchor="middle">( )  nawias</text><text x="349" y="148" class="tx-s" text-anchor="middle">dopowiedzenie</text>
+    </svg>`,
+    text: `<p><b>Dwukropek</b> zapowiada: wyliczenie („Miałem trzy rzeczy: kanapki, wodę i mapę”), cudze słowa albo wyjaśnienie. <b>Średnik</b> dzieli długie zdanie złożone na wyraźne części, gdy przecinków jest już dużo.</p>
+      <p><b>Cudzysłów</b> otacza cytaty i tytuły, a czasem słowo użyte z przymrużeniem oka. <b>Nawias</b> mieści dopowiedzenie. Skróty: <i>np., tzn., ul.</i> z kropką, ale <i>dr, mgr</i> – bez (kończą się ostatnią literą wyrazu).</p>`,
+    remember: 'Dwukropek – zapowiedź (wyliczenie, cytat, wyjaśnienie). Średnik – mocniejszy przecinek. Nawias – dopowiedzenie.',
+    check: { q: 'Który znak postawisz w luce: „Na wycieczkę zabierz trzy rzeczy _ mapę, wodę i kurtkę.”?', options: ['średnik', 'dwukropek', 'nawias', 'pytajnik'], answer: 1, explain: 'Słowa „trzy rzeczy” zapowiadają wyliczenie – stawiamy dwukropek.' },
+  },
+  {
+    title: 'Cudze słowa i dialog',
+    svg: `<svg viewBox="0 0 420 206" role="img" aria-label="Przykłady zapisu: mowa niezależna, pytanie w cudzysłowie bez kropki na końcu, dialog z myślnikami">
+      <text x="10" y="22" class="tx-s">mowa niezależna – dwukropek i cudzysłów</text>
+      <text x="10" y="48" class="tx">Ola powiedziała<tspan class="tx-b t2">:</tspan> <tspan class="t2">„</tspan>Jutro przyjdę<tspan class="t2">”</tspan><tspan class="tx-b t2">.</tspan></text>
+      <text x="10" y="88" class="tx-s">pytanie należy do cytatu – bez kropki na końcu</text>
+      <text x="10" y="114" class="tx">Ola zapytała: „Przyjdziesz jutro<tspan class="tx-b t2">?</tspan>”</text>
+      <text x="10" y="154" class="tx-s">dialog – myślnik, słowa narratora małą literą</text>
+      <text x="10" y="180" class="tx"><tspan class="tx-b t2">–</tspan> Przyjdę jutro <tspan class="tx-b t2">–</tspan> <tspan class="t2">p</tspan>owiedziała Ola.</text>
+    </svg>`,
+    text: `<p>Przytaczając cudze słowa dosłownie, stawiasz <b>dwukropek</b> i otwierasz <b>cudzysłów</b> („ na dole, ” na górze). Jeśli przytoczenie kończy się pytajnikiem lub wykrzyknikiem, ten znak zostaje w cudzysłowie i już nic nie dodajesz.</p>
+      <p>W opowiadaniu dialog zapisujesz od nowej linii, od <b>myślnika</b>. Słowa narratora („powiedziała Ola”) oddzielasz myślnikiem i piszesz małą literą. To się przydaje w wypracowaniu!</p>`,
+    remember: 'Ola powiedziała: „Jutro przyjdę”. · Ola zapytała: „Przyjdziesz?” · – Przyjdę – powiedziała Ola.',
+    hook: 'Myślnik w dialogu to <b>mikrofon</b>: kto go trzyma, ten mówi. Narrator wtrąca się tylko między myślnikami.',
+    check: { q: 'Który zapis jest poprawny?', options: ['Ola zapytała: „Przyjdziesz jutro”?', 'Ola zapytała: „Przyjdziesz jutro?”', 'Ola zapytała: „Przyjdziesz jutro?”.', 'Ola zapytała, przyjdziesz jutro?'], answer: 1, explain: 'Pytajnik należy do słów Oli, więc stoi w cudzysłowie; kropki już nie dodajemy.' },
+  },
+  {
+    title: 'Wielka czy mała litera?',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Dwie kolumny: wielką literą Polak, Ślązak, Morze Bałtyckie, Boże Narodzenie; małą literą poniedziałek, maj, warszawianin, polski">
+      <rect x="6" y="6" width="198" height="196" rx="12" class="f1 s1 sw"/>
+      <rect x="216" y="6" width="198" height="196" rx="12" class="f4 s4 sw"/>
+      <text x="105" y="36" class="tx-b" text-anchor="middle">WIELKA</text>
+      <text x="315" y="36" class="tx-b" text-anchor="middle">mała</text>
+      <text x="105" y="70" class="tx" text-anchor="middle">Polak, Ślązak</text>
+      <text x="105" y="100" class="tx" text-anchor="middle">Morze Bałtyckie</text>
+      <text x="105" y="130" class="tx" text-anchor="middle">Boże Narodzenie</text>
+      <text x="105" y="160" class="tx" text-anchor="middle">„Kamienie na szaniec”</text>
+      <text x="105" y="188" class="tx-s" text-anchor="middle">Ty, Pan (w liście)</text>
+      <text x="315" y="70" class="tx" text-anchor="middle">poniedziałek, maj</text>
+      <text x="315" y="100" class="tx" text-anchor="middle">warszawianin</text>
+      <text x="315" y="130" class="tx" text-anchor="middle">krakowianin</text>
+      <text x="315" y="160" class="tx" text-anchor="middle">polski, warszawski</text>
+      <text x="315" y="188" class="tx-s" text-anchor="middle">(przymiotniki od nazw)</text>
+    </svg>`,
+    text: `<p>Wielką literą piszemy <b>nazwy własne</b>: imiona, państwa, miasta, rzeki, góry, morza (oba wyrazy: Morze Bałtyckie), święta, a także mieszkańców krajów i regionów (Polak, Europejczyk, Ślązak). W tytule książki – tylko pierwszy wyraz.</p>
+      <p>Małą: dni tygodnia, miesiące, <b>mieszkańców miast</b> (warszawianin) i przymiotniki od nazw (polski, warszawski).</p>`,
+    remember: 'Polak – wielką, warszawianin – małą. Maj, poniedziałek – małą. Tytuł: wielka tylko na początku.',
+    hook: 'Kraj i region są „wielkie”, miasto „małe” – Ślązak wielką, krakowianin małą.',
+    check: { q: 'W którym szeregu wszystko zapisano poprawnie?', options: ['polak, Warszawianin, Poniedziałek', 'Polak, warszawianin, poniedziałek', 'Polak, Warszawianin, poniedziałek', 'polak, warszawianin, Poniedziałek'], answer: 1, explain: 'Mieszkaniec kraju – wielką, mieszkaniec miasta i dzień tygodnia – małą.' },
+  },
+  {
+    title: 'Ortografia – sprawdzaj wymianą',
+    svg: `<svg viewBox="0 0 420 222" role="img" aria-label="Sześć kafelków z regułami: ó wymienia się na o, -uje, rz po spółgłosce, ż wymienia się na g, ch na sz, tę i tą">
+      <rect x="6" y="6" width="200" height="64" rx="10" class="f1 s1"/><rect x="214" y="6" width="200" height="64" rx="10" class="f3 s3"/>
+      <rect x="6" y="78" width="200" height="64" rx="10" class="f4 s4"/><rect x="214" y="78" width="200" height="64" rx="10" class="f2 s2"/>
+      <rect x="6" y="150" width="200" height="64" rx="10" class="f5 s5"/><rect x="214" y="150" width="200" height="64" rx="10" class="f1 s1"/>
+      <text x="106" y="32" class="tx-b" text-anchor="middle">ó ↔ o, e, a</text><text x="106" y="56" class="tx-s" text-anchor="middle">stół – stołu, siódmy – siedem</text>
+      <text x="314" y="32" class="tx-b" text-anchor="middle">u: -uje, -unek</text><text x="314" y="56" class="tx-s" text-anchor="middle">maluje, rysunek, kapelusz</text>
+      <text x="106" y="104" class="tx-b" text-anchor="middle">rz po b, p, k, t…</text><text x="106" y="128" class="tx-s" text-anchor="middle">brzeg, krzesło, trzy</text>
+      <text x="314" y="104" class="tx-b" text-anchor="middle">ż ↔ g, z, s, h</text><text x="314" y="128" class="tx-s" text-anchor="middle">może – mogę, wożę – wozić</text>
+      <text x="106" y="176" class="tx-b" text-anchor="middle">ch ↔ sz</text><text x="106" y="200" class="tx-s" text-anchor="middle">mucha – musze</text>
+      <text x="314" y="176" class="tx-b" text-anchor="middle">tę / tą</text><text x="314" y="200" class="tx-s" text-anchor="middle">tę książkę · z tą książką</text>
+    </svg>`,
+    text: `<p>Najpewniejsza metoda: <b>znajdź inną formę</b> lub wyraz pokrewny, w którym słychać wymianę. Słyszysz „stołu” – piszesz „stół”. Słyszysz „mogę” – piszesz „może”.</p>
+      <p>Gdy wymiany nie ma, pomagają reguły: <i>-uje, -unek, -usz</i> zawsze przez <b>u</b>; po <i>b, p, d, t, g, k, ch, j, w</i> piszemy <b>rz</b> (wyjątki: pszenica, pszczoła, kształt); po <i>l, ł, r, n</i> – <b>ż</b>. Razem: <i>spod, znad, naprawdę, zrobiłbym</i>; osobno: <i>na pewno, w ogóle, z powrotem</i>.</p>`,
+    remember: 'Najpierw szukaj wymiany (ó–o, rz–r, ż–g, ch–sz), dopiero potem reguły bez wymiany.',
+    hook: '<b>Tę</b> książkę czytam (co? – tę, jak „Ewę”), <b>z tą</b> książką idę (z czym? – z tą, jak „z mamą”).',
+    check: { q: 'Który zapis jest poprawny?', options: ['napewno, wogóle', 'na pewno, w ogóle', 'na pewno, wogóle', 'napewno, w ogóle'], answer: 1, explain: 'Wyrażenia przyimkowe „na pewno”, „w ogóle”, „z powrotem” piszemy osobno.' },
+  },
+];
