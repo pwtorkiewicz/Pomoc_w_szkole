@@ -17,6 +17,8 @@ window.SOURCES = {
       <li><b>Historia</b>: podstawa przewiduje, że w klasie 4 nauka zaczyna się od tematów wprowadzających (działy 1–4: historia jako nauka, historia rodziny i regionu, wspólnota państwowa, czas i miejsce wydarzeń). Dalej jest kurs chronologiczny od starożytności – te działy dodamy później.</li>
       <li><b>Informatyka</b>: większość wymagań to praca przy komputerze (programowanie, edytory, arkusz). Aplikacja pomaga tylko utrwalić pojęcia i zasady bezpieczeństwa.</li>
       <li><b>Zajęcia praktyczno-techniczne</b>: na razie dział 8 – bezpieczne uczestnictwo w ruchu drogowym (z przygotowaniem do karty rowerowej) i zasady bezpiecznej pracy. Przepisy sprawdzono 1 listopada 2026 r. w aktualnych tekstach ustaw i rozporządzeń. Uwaga – <b>nowe przepisy</b> (ustawa z 17 października 2025 r., Dz.U. 2025 poz. 1676): od 2 marca 2026 r. hulajnogą elektryczną wolno jeździć od 13 lat (wcześniej od 10), a od 2 czerwca 2026 r. rowerzysta i użytkownik hulajnogi elektrycznej poniżej 16 lat musi jeździć w kasku. Starsze podręczniki mogą tego nie uwzględniać.</li>
+      <li><b>Muzyka i plastyka</b>: przedmioty w klasach 4–7, a podstawa ma dla nich jeden wspólny zestaw wymagań (bez podziału na klasy). Większość wymagań to działanie – śpiew, gra, taniec, tworzenie prac, wyjścia na koncerty i wystawy. Aplikacja utrwala tylko <b>wiedzę</b>: elementy muzyki i zapis nutowy, instrumenty, formy, hymn i tańce narodowe, Chopina; barwy i środki wyrazu, techniki plastyczne, gatunki, pojęcia „oryginał – kopia – reprodukcja – falsyfikat” i prawo autorskie. Fakty o hymnie, „Rocie”, hymnie UE, Chopinie, Paderewskim i słynnych obrazach sprawdzono 1 listopada 2026 r. (Konstytucja RP art. 28, ustawa o godle, barwach i hymnie, strona UE o symbolach, Narodowy Instytut Fryderyka Chopina, dzieje.pl, zpe.gov.pl).</li>
+      <li><b>Wychowanie fizyczne</b>: podstawa ma osobny blok wymagań „Klasa IV”. W aplikacji jest tylko wiedza: zasady bezpieczeństwa (na WF, nad wodą, w górach, w terenie), zdolności motoryczne, postawa ciała, tętno, podstawy gier i lekkoatletyki, olimpizm i fair play. Oznaczenia na kąpielisku (flagi i boje) – według rozporządzenia o oznakowaniu obszarów wodnych. Numery ratunkowe: 112, nad wodą 601 100 100, w górach 601 100 300.</li>
       <li>Pytania i lekcje to ćwiczenia przygotowane na podstawie wymagań. Nie są to oficjalne materiały szkolne. Warto je skonsultować z nauczycielem.</li>
     </ul>
 
@@ -29,5 +31,8 @@ window.SOURCES = {
       <li>Ustawa o kierujących pojazdami (karta rowerowa) – tekst jednolity Dz.U. 2025 poz. 1226: eli.gov.pl/eli/DU/2025/1226/ogl</li>
       <li>Rozporządzenie w sprawie warunków technicznych pojazdów (wyposażenie roweru, § 53) – Dz.U. 2024 poz. 502: eli.gov.pl/eli/DU/2024/502/ogl</li>
       <li>Rozporządzenie w sprawie znaków i sygnałów drogowych – Dz.U. 2019 poz. 2310: eli.gov.pl/eli/DU/2019/2310/ogl</li>
+      <li>Rozporządzenie w sprawie oznakowania i zabezpieczania obszarów wodnych (flagi, boje) – tekst jednolity Dz.U. 2022 poz. 1979: eli.gov.pl/eli/DU/2022/1979/ogl</li>
+      <li>Ustawa o godle, barwach i hymnie RP – tekst jednolity Dz.U. 2025 poz. 299: eli.gov.pl/eli/DU/2025/299/ogl</li>
+      <li>Hymn Unii Europejskiej – european-union.europa.eu (Symbole UE)</li>
     </ul>`,
 };
