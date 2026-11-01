@@ -12,12 +12,16 @@ W każdym dziale są:
 - **📖 Ściąga** – najważniejsza teoria, wzory i przykłady,
 - **🃏 Fiszki** – karty do zapamiętywania (odwracane kliknięciem),
 - **✅ Quiz** – pytania jednokrotnego wyboru z wyjaśnieniem odpowiedzi,
-- **✍️ Zadania otwarte** (matematyka) – zadania jak w arkuszu (2–3 pkt): rozwiązujesz na kartce, odsłaniasz podpowiedzi krok po kroku albo całe rozwiązanie, porównujesz z zasadami punktacji i oceniasz się sam.
+- **✍️ Zadania otwarte** (matematyka i polski) – zadania jak w arkuszu (2–3 pkt): rozwiązujesz na kartce, odsłaniasz podpowiedzi krok po kroku albo całe rozwiązanie (w polskim – przykładową odpowiedź), porównujesz z zasadami punktacji i oceniasz się sam.
 
 Do tego:
 
 - **📝 Test próbny** – 15 losowych pytań ze wszystkich działów przedmiotu,
 - **✍️ Zadania otwarte z całego przedmiotu** – wszystkie zadania otwarte w losowej kolejności, z sumą punktów,
+- **ćwiczenia jak na egzaminie** – zestawy „tekst + zadania” w formacie arkusza CKE:
+  - 📰 **Czytanie ze zrozumieniem** (polski) – fragmenty lektur (w brzmieniu z arkuszy CKE) i teksty nieliterackie; zadania zamknięte, z luką i otwarte z przykładową odpowiedzią,
+  - 📖 **Reading**, 🎧 **Listening** (nagrania czyta syntezator mowy przeglądarki – bez plików audio; transkrypcja po sprawdzeniu) i 🧩 **Środki językowe** (luki, dobieranie, przekład, parafraza) z angielskiego,
+- **pytania z rysunkiem** – w matematyce część pytań ma diagram, wykres, figurę albo siatkę bryły,
 - **🔁 Powtórka błędów** – pytania, na które uczeń odpowiedział źle, aż do skutku,
 - **zapis postępu** – najlepszy wynik z każdego działu (zapisany w przeglądarce, bez kont i bez serwera).
 
@@ -74,6 +78,30 @@ window.SUBJECTS.push({
 
 Nowy plik trzeba dopisać w `index.html` (przed `js/app.js`).
 
+Pytanie może mieć rysunek: pole `svg` (zasady jak w lekcjach – `docs/LEKCJE.md`, sprawdza je `node tools/sprawdz-lekcje.js`).
+
+### Zestawy ćwiczeń (czytanie, reading, listening, środki językowe)
+
+Pliki `js/dane/cwiczenia-*.js` dopisują zestawy do tablicy `window.EXERCISES` (nowy plik trzeba dodać w `index.html`; narzędzia wczytują je same):
+
+```js
+window.EXERCISES.push({
+  subject: 'polski',                 // id przedmiotu
+  mode: 'czytanie',                  // czytanie | reading | listening | srodki
+  id: 'a1b2c3',                      // stałe id z node tools/nowe-id.js
+  title: 'Tytuł zestawu', kind: 'Tekst literacki · epika',
+  basis: 'Na jakim wymaganiu się opiera', source: 'Skąd pochodzi tekst',
+  intro: 'Polecenie jak w arkuszu (opcjonalnie)',
+  text: `<h3>…</h3><p>…</p>`,         // HTML tekstu; klasy: verse, who, stage, note, box, gapno
+  audio: [{ label: 'Nagranie 1', voices: { A: 'f', B: 'm' }, lines: [{ who: 'A', text: '…' }] }], // tylko listening, zamiast text
+  items: [
+    { id, q, options, answer, explain },                       // zamknięte (opcje NIE są tasowane)
+    { id, type: 'input', q, accept: ['…', '…'], explain },      // luka – porównanie bez wielkości liter; poza „srodki” także bez polskich znaków
+    { id, type: 'open', points: 2, q, answer, scoring: ['…', '…'] }, // otwarte – samoocena
+  ],
+});
+```
+
 > ⚠️ Każde pytanie ma stały identyfikator `id` – powtórka błędów zapamiętuje pytania po nim. Pytania można przestawiać i usuwać, ale **nie zmieniaj `id` istniejących pytań**. Nowe id: `node tools/nowe-id.js`, sprawdzenie: `node tools/sprawdz-dane.js`.
 
 ## Struktura
@@ -81,11 +109,11 @@ Nowy plik trzeba dopisać w `index.html` (przed `js/app.js`).
 ```
 index.html          – strona
 css/style.css       – wygląd
-js/app.js           – logika (lekcje, quiz, fiszki, zadania otwarte, postęp)
-js/dane/*.js        – treści przedmiotów
+js/app.js           – logika (lekcje, quiz, fiszki, zadania otwarte, zestawy ćwiczeń, postęp)
+js/dane/*.js        – treści przedmiotów; cwiczenia-*.js – zestawy ćwiczeń jak na egzaminie
 js/dane/zrodla.js   – opis podstaw i źródeł
 js/lekcje/*.js      – lekcje (tryb nauki) i interaktywne widżety
 docs/LEKCJE.md      – jak pisać lekcje
 docs/PLAN.md        – plan rozbudowy materiału zgodnie z podstawą programową
-tools/              – sprawdzanie lekcji (node tools/sprawdz-lekcje.js) i zrzuty ekranu
+tools/              – sprawdzanie danych i lekcji, zrzuty ekranu, przegląd w przeglądarce (node tools/przeglad.js)
 ```

@@ -23,12 +23,12 @@ Zasady z `CLAUDE.md` obowiązują przy każdym punkcie: tylko materiał z podsta
 
 ## Etap 2 – nowe tryby ćwiczeń
 
-- [ ] **Czytanie ze zrozumieniem (polski)**: tekst literacki (fragmenty utworów z domeny publicznej z listy lektur) i nieliteracki (własny tekst popularnonaukowy/publicystyczny) z zestawem zadań jak w części I arkusza.
-- [ ] **Reading (angielski)**: krótkie teksty (e-mail, ogłoszenie, artykuł, wpis na blogu) z zadaniami na główną myśl, intencję autora, szczegóły, dobieranie.
-- [ ] **Listening (angielski)**: nagrania czytane przez syntezę mowy przeglądarki (bez plików audio i bibliotek), zadania jak w arkuszu.
-- [ ] **Środki językowe w formacie CKE (angielski)**: luki, wybór formy, przekład fragmentów z polskiego.
-- [ ] **Pytania z rysunkiem** (pole `svg` w pytaniu): diagramy, wykresy, figury, siatki brył.
-- [ ] **Zadania otwarte** także w polskim (np. uzasadnij, przekształć, zredaguj) i więcej zadań otwartych z matematyki.
+- [x] **Czytanie ze zrozumieniem (polski)**: tekst literacki (fragmenty utworów z domeny publicznej z listy lektur) i nieliteracki (własny tekst popularnonaukowy/publicystyczny) z zestawem zadań jak w części I arkusza.
+- [x] **Reading (angielski)**: krótkie teksty (e-mail, ogłoszenie, artykuł, wpis na blogu) z zadaniami na główną myśl, intencję autora, szczegóły, dobieranie.
+- [x] **Listening (angielski)**: nagrania czytane przez syntezę mowy przeglądarki (bez plików audio i bibliotek), zadania jak w arkuszu.
+- [x] **Środki językowe w formacie CKE (angielski)**: luki, wybór formy, przekład fragmentów z polskiego.
+- [x] **Pytania z rysunkiem** (pole `svg` w pytaniu): diagramy, wykresy, figury, siatki brył.
+- [x] **Zadania otwarte** także w polskim (np. uzasadnij, przekształć, zredaguj) i więcej zadań otwartych z matematyki.
 
 ## Etap 3 – uzupełnienie pozostałych wymagań
 
