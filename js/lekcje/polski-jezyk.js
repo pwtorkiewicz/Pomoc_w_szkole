@@ -1116,3 +1116,325 @@ window.LESSONS['polski/interpunkcja-ortografia'] = [
     check: { q: 'Który zapis jest poprawny?', options: ['napewno, wogóle', 'na pewno, w ogóle', 'na pewno, wogóle', 'napewno, w ogóle'], answer: 1, explain: 'Wyrażenia przyimkowe „na pewno”, „w ogóle”, „z powrotem” piszemy osobno.' },
   },
 ];
+
+/* ===================== ODMIANA WYRAZÓW I ZDANIE POJEDYNCZE ===================== */
+window.LESSONS['polski/odmiana-zdanie'] = [
+  {
+    title: 'Siedem przypadków – siedem pytań',
+    svg: `<svg viewBox="0 0 420 236" role="img" aria-label="Tabela siedmiu przypadków z pytaniami i odmianą wyrazu kot">
+      <text x="14" y="18" class="tx-s">przypadek</text>
+      <text x="150" y="18" class="tx-s">pytania</text>
+      <text x="330" y="18" class="tx-s">kot</text>
+      <rect x="6" y="26" width="408" height="28" rx="7" class="f1"/>
+      <text x="14" y="46" class="tx-b">mianownik</text><text x="150" y="46" class="tx">kto? co?</text><text x="330" y="46" class="tx-b t1">kot</text>
+      <rect x="6" y="56" width="408" height="28" rx="7" class="f2"/>
+      <text x="14" y="76" class="tx-b">dopełniacz</text><text x="150" y="76" class="tx">kogo? czego?</text><text x="330" y="76" class="tx-b t2">kota</text>
+      <text x="14" y="106" class="tx-b">celownik</text><text x="150" y="106" class="tx">komu? czemu?</text><text x="330" y="106" class="tx-b">kotu</text>
+      <rect x="6" y="116" width="408" height="28" rx="7" class="f2"/>
+      <text x="14" y="136" class="tx-b">biernik</text><text x="150" y="136" class="tx">kogo? co?</text><text x="330" y="136" class="tx-b t2">kota</text>
+      <text x="14" y="166" class="tx-b">narzędnik</text><text x="150" y="166" class="tx">(z) kim? (z) czym?</text><text x="330" y="166" class="tx-b">kotem</text>
+      <text x="14" y="196" class="tx-b">miejscownik</text><text x="150" y="196" class="tx">(o) kim? (o) czym?</text><text x="330" y="196" class="tx-b">kocie</text>
+      <text x="14" y="226" class="tx-b">wołacz</text><text x="150" y="226" class="tx">o!</text><text x="330" y="226" class="tx-b">kocie!</text>
+    </svg>`,
+    text: `<p>Rzeczownik (a razem z nim przymiotnik, liczebnik i zaimek) zmienia końcówkę zależnie od roli w zdaniu – to odmiana przez <b>przypadki</b>. Każdy przypadek ma swoje pytanie.</p>
+      <p>Pomarańczowe wiersze to pułapka: dopełniacz i biernik mają to samo pytanie „kogo?”. Dodaj wyraz pomocniczy: <i>nie ma</i> kogo? – dopełniacz, <i>widzę</i> kogo? – biernik. Po przeczeniu biernik zamienia się w dopełniacz: <i>mam czas – nie mam czasu</i>.</p>`,
+    remember: 'Mianownik (kto? co?) to zwykle podmiot. Wołacz (Kasiu!) to zwrot do kogoś – oddzielasz go przecinkiem.',
+    hook: 'Kolejność przypadków: <b>M</b>ama <b>D</b>aje <b>C</b>ukierki, <b>B</b>abcia <b>N</b>osi <b>M</b>iętowe <b>W</b>afelki (M, D, C, B, N, Ms, W).',
+    check: { q: 'W jakim przypadku jest wyraz „babci” w zdaniu „Nie ma babci w domu.”?', options: ['w dopełniaczu', 'w celowniku', 'w miejscowniku', 'w bierniku'], answer: 0, explain: 'Forma „babci” bywa też celownikiem i miejscownikiem, ale tu pytamy: nie ma kogo? – to dopełniacz. Zawsze pytaj w kontekście zdania.' },
+  },
+  {
+    title: 'Czasownik: osoba, czas i tryb',
+    svg: `<svg viewBox="0 0 420 236" role="img" aria-label="Oś czasu: czas przeszły, teraźniejszy i przyszły oraz trzy tryby czasownika">
+      <defs><marker id="a-pl-odm-2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <text x="70" y="20" class="tx-b t1" text-anchor="middle">przeszły</text>
+      <text x="210" y="20" class="tx-b t3" text-anchor="middle">teraźniejszy</text>
+      <text x="350" y="20" class="tx-b t2" text-anchor="middle">przyszły</text>
+      <path d="M14,40 L406,40" class="ln sw" marker-end="url(#a-pl-odm-2)"/>
+      <circle cx="70" cy="40" r="6" class="f1 s1 sw"/>
+      <circle cx="210" cy="40" r="6" class="f3 s3 sw"/>
+      <circle cx="350" cy="40" r="6" class="f2 s2 sw"/>
+      <text x="70" y="66" class="tx" text-anchor="middle">czytałem</text>
+      <text x="210" y="66" class="tx" text-anchor="middle">czytam</text>
+      <text x="350" y="66" class="tx" text-anchor="middle">przeczytam</text>
+      <text x="350" y="88" class="tx" text-anchor="middle">będę czytać</text>
+      <rect x="6" y="110" width="408" height="36" rx="9" class="f1 s1"/>
+      <text x="16" y="134" class="tx-b">oznajmujący</text><text x="170" y="134" class="tx">czytam, czytałem</text>
+      <rect x="6" y="152" width="408" height="36" rx="9" class="f2 s2"/>
+      <text x="16" y="176" class="tx-b">rozkazujący</text><text x="170" y="176" class="tx">czytaj! czytajmy!</text>
+      <rect x="6" y="194" width="408" height="36" rx="9" class="f5 s5"/>
+      <text x="16" y="218" class="tx-b">przypuszczający</text><text x="190" y="218" class="tx">czytałbym, czytałaby</text>
+    </svg>`,
+    text: `<p>Czasownik odmienia się przez <b>osoby</b> (czytam, czytasz, czyta), <b>liczby</b> (czytam – czytamy), <b>czasy</b>, a w czasie przeszłym także przez <b>rodzaje</b> (czytał, czytała, czytało).</p>
+      <p>Czas przyszły bywa <b>prosty</b> (przeczytam – czasownik dokonany) albo <b>złożony</b> (będę czytać – niedokonany). <b>Tryb</b> mówi, czy informujesz (oznajmujący), polecasz lub prosisz (rozkazujący), czy marzysz, stawiasz warunek albo grzecznie prosisz (przypuszczający: „Czy mógłbyś…?”).</p>
+      <p>Uważaj na formy z błędem: <i>poszłem, wziąść, weźmij, rozumię</i>. Poprawnie: <b>poszedłem, wziąć, weź, rozumiem</b>.</p>`,
+    remember: 'Czasowniki dokonane (przeczytać, napisać) nie mają czasu teraźniejszego: przeczytałem → przeczytam.',
+    hook: 'Tryb przypuszczający poznasz po cząstce <b>-by</b> – jak w „gdyby”. Piszesz ją razem z czasownikiem: <i>zrobiłbym</i>.',
+    check: { q: 'Który czasownik jest w trybie rozkazującym?', options: ['przeczytaj', 'przeczytałby', 'przeczytam', 'przeczytał'], answer: 0, explain: '„Przeczytaj!” to polecenie. „Przeczytałby” – przypuszczający, „przeczytam”, „przeczytał” – oznajmujący.' },
+  },
+  {
+    title: 'Stopniowanie – trzy schodki',
+    svg: `<svg viewBox="0 0 420 268" role="img" aria-label="Schodki stopni równego, wyższego i najwyższego oraz przykłady stopniowania prostego, opisowego i nieregularnego">
+      <rect x="10" y="50" width="133" height="24" class="f3 s3"/>
+      <rect x="143" y="36" width="134" height="38" class="f3 s3"/>
+      <rect x="277" y="22" width="133" height="52" class="f3 s3"/>
+      <text x="76" y="68" class="tx" text-anchor="middle">równy</text>
+      <text x="210" y="68" class="tx" text-anchor="middle">wyższy</text>
+      <text x="343" y="68" class="tx" text-anchor="middle">najwyższy</text>
+      <text x="10" y="98" class="tx-s t1">PROSTE: -szy, -ejszy</text>
+      <text x="76" y="122" class="tx-b" text-anchor="middle">miły</text>
+      <text x="210" y="122" class="tx-b" text-anchor="middle">milszy</text>
+      <text x="343" y="122" class="tx-b" text-anchor="middle">najmilszy</text>
+      <line x1="10" y1="136" x2="410" y2="136" class="ln-thin"/>
+      <text x="10" y="156" class="tx-s t5">OPISOWE: bardziej, najbardziej</text>
+      <text x="210" y="176" class="tx-s" text-anchor="middle">bardziej</text>
+      <text x="343" y="176" class="tx-s" text-anchor="middle">najbardziej</text>
+      <text x="76" y="196" class="tx-b" text-anchor="middle">zmęczony</text>
+      <text x="210" y="196" class="tx-b" text-anchor="middle">zmęczony</text>
+      <text x="343" y="196" class="tx-b" text-anchor="middle">zmęczony</text>
+      <line x1="10" y1="210" x2="410" y2="210" class="ln-thin"/>
+      <text x="10" y="230" class="tx-s t2">NIEREGULARNE: zmienia się cały wyraz!</text>
+      <text x="76" y="256" class="tx-b" text-anchor="middle">dobry</text>
+      <text x="210" y="256" class="tx-b t2" text-anchor="middle">lepszy</text>
+      <text x="343" y="256" class="tx-b t2" text-anchor="middle">najlepszy</text>
+    </svg>`,
+    text: `<p>Przymiotniki i przysłówki mają trzy stopnie: <b>równy, wyższy, najwyższy</b>. Stopniujesz je na trzy sposoby:</p>
+      <ul><li><b>prosto</b> – końcówką: miły – milszy – najmilszy; szybko – szybciej – najszybciej,</li>
+      <li><b>opisowo</b> – słówkami <i>bardziej, najbardziej</i> (albo <i>mniej, najmniej</i>): bardziej zmęczony,</li>
+      <li><b>nieregularnie</b> – innym wyrazem: dobry – lepszy, zły – gorszy, duży – większy, mały – mniejszy; dobrze – lepiej, źle – gorzej.</li></ul>
+      <p>Niektórych przymiotników nie stopniujemy: <i>drewniany, szkolny, wczorajszy</i>.</p>`,
+    remember: 'Nigdy nie łącz dwóch sposobów: ✘ <i>bardziej lepszy</i>, ✘ <i>najbardziej najlepszy</i>. „Lepszy” już jest stopniem wyższym.',
+    hook: 'Cztery „buntowniki” w parach przeciwieństw: <b>dobry – zły</b>, <b>duży – mały</b>. One nie chcą końcówki -szy, tylko zmieniają kostium: lepszy, gorszy, większy, mniejszy.',
+    check: { q: 'Jaki jest stopień wyższy przymiotnika „mały”?', options: ['malszy', 'bardziej mały', 'mniejszy', 'najmniejszy'], answer: 2, explain: '„Mały” stopniuje się nieregularnie: mały – mniejszy – najmniejszy.' },
+  },
+  {
+    title: 'Związki wyrazów – kto tu rządzi?',
+    svg: `<svg viewBox="0 0 420 240" role="img" aria-label="Związki wyrazów w zdaniu: główny, zgody, rządu i przynależności">
+      <text x="210" y="20" class="tx" text-anchor="middle">Mój młodszy brat szybko czyta komiksy.</text>
+      <rect x="6" y="32" width="408" height="46" rx="10" class="f1 s1"/>
+      <text x="16" y="61" class="tx-b">brat czyta</text>
+      <text x="160" y="51" class="tx-b t1">główny</text>
+      <text x="160" y="70" class="tx-s">podmiot + orzeczenie</text>
+      <rect x="6" y="82" width="408" height="46" rx="10" class="f3 s3"/>
+      <text x="16" y="111" class="tx-b">młodszy brat</text>
+      <text x="160" y="101" class="tx-b t3">zgody</text>
+      <text x="160" y="120" class="tx-s">odmieniają się razem: młodszego brata</text>
+      <rect x="6" y="132" width="408" height="46" rx="10" class="f2 s2"/>
+      <text x="16" y="161" class="tx-b">czyta komiksy</text>
+      <text x="160" y="151" class="tx-b t2">rządu</text>
+      <text x="160" y="170" class="tx-s">czasownik narzuca przypadek (co?)</text>
+      <rect x="6" y="182" width="408" height="46" rx="10" class="f5 s5"/>
+      <text x="16" y="211" class="tx-b">czyta szybko</text>
+      <text x="160" y="201" class="tx-b t5">przynależności</text>
+      <text x="160" y="220" class="tx-s">wyraz nieodmienny tylko przylega</text>
+    </svg>`,
+    text: `<p>W każdej parze wyrazów jeden jest <b>nadrzędny</b> (określany), drugi <b>podrzędny</b> (określający). Pytanie zadajesz od nadrzędnego: <i>brat</i> (jaki?) <i>młodszy</i>, <i>czyta</i> (co?) <i>komiksy</i>, <i>czyta</i> (jak?) <i>szybko</i>.</p>
+      <ul><li><b>Zgoda</b> – podrzędny dopasowuje przypadek, liczbę i rodzaj: młodszy brat, młodszemu bratu.</li>
+      <li><b>Rząd</b> – nadrzędny narzuca przypadek, który się nie zmienia: czyta komiksy, czytał komiksy; szukam kluczy.</li>
+      <li><b>Przynależność</b> – podrzędny jest nieodmienny (przysłówek, bezokolicznik): czyta szybko, chcę czytać.</li></ul>`,
+    remember: 'Odmień wyraz nadrzędny i patrz, co się dzieje z podrzędnym: zmienia się razem – zgoda; stoi w tym samym przypadku – rząd; nie odmienia się wcale – przynależność.',
+    hook: 'Zgoda – jak bliźniaki: zmieniają się razem. Rząd – jak szef: narzuca przypadek. Przynależność – jak przyczepa: nic nie zmienia, tylko jedzie za samochodem.',
+    check: { q: 'Jaki związek tworzą wyrazy „pomagam mamie”?', options: ['zgody', 'rządu', 'przynależności', 'główny'], answer: 1, explain: '„Pomagać” wymaga celownika (komu?): pomagam mamie, pomagałem mamie – przypadek się nie zmienia.' },
+  },
+  {
+    title: 'Jakie to wypowiedzenie?',
+    svg: `<svg viewBox="0 0 420 264" role="img" aria-label="Podział wypowiedzeń ze względu na cel i ze względu na budowę">
+      <text x="10" y="18" class="tx-s">CEL WYPOWIEDZI</text>
+      <rect x="6" y="26" width="408" height="30" rx="8" class="f1"/>
+      <text x="18" y="47" class="tx-b">.</text><text x="40" y="47" class="tx-b">oznajmujące</text><text x="180" y="47" class="tx">Jutro mamy test.</text>
+      <rect x="6" y="60" width="408" height="30" rx="8" class="f3"/>
+      <text x="18" y="81" class="tx-b">?</text><text x="40" y="81" class="tx-b">pytające</text><text x="180" y="81" class="tx">Czy jutro mamy test?</text>
+      <rect x="6" y="94" width="408" height="30" rx="8" class="f2"/>
+      <text x="18" y="115" class="tx-b">!</text><text x="40" y="115" class="tx-b">rozkazujące</text><text x="180" y="115" class="tx">Naucz się na test!</text>
+      <text x="10" y="150" class="tx-s">BUDOWA – policz osobowe formy czasownika</text>
+      <rect x="6" y="158" width="408" height="30" rx="8" class="f4"/>
+      <text x="18" y="179" class="tx-b">1</text><text x="40" y="179" class="tx-b">pojedyncze</text><text x="180" y="179" class="tx">Ola czyta książkę.</text>
+      <rect x="6" y="192" width="408" height="30" rx="8" class="f5"/>
+      <text x="18" y="213" class="tx-b">2+</text><text x="46" y="213" class="tx-b">złożone</text><text x="180" y="213" class="tx">Ola czyta, a Tomek gra.</text>
+      <rect x="6" y="226" width="408" height="30" rx="8" class="f2"/>
+      <text x="18" y="247" class="tx-b">0</text><text x="40" y="247" class="tx-b">równoważnik</text><text x="180" y="247" class="tx">Cisza w klasie.</text>
+    </svg>`,
+    text: `<p>Wypowiedzenia dzielisz na dwa sposoby. Ze względu na <b>cel</b>: oznajmujące (informuje), pytające (pyta), rozkazujące (poleca, prosi – może kończyć się wykrzyknikiem albo kropką: „Proszę usiąść.”).</p>
+      <p>Ze względu na <b>budowę</b>: zdanie <b>pojedyncze</b> ma jedno orzeczenie, <b>złożone</b> – co najmniej dwa, a <b>równoważnik zdania</b> nie ma osobowej formy czasownika. „Idę do kina.” to zdanie pojedyncze – podmiot „ja” jest <b>domyślny</b>.</p>`,
+    remember: 'Cel i budowa to dwie różne sprawy: „Zamknij okno!” jest rozkazujące i jednocześnie jest zdaniem pojedynczym.',
+    hook: 'Licz czasowniki osobowe jak palce: zero – równoważnik, jeden – pojedyncze, dwa i więcej – złożone.',
+    check: { q: 'Które wypowiedzenie jest zdaniem pojedynczym?', options: ['Ola czytała, a Tomek grał.', 'Wieczorem Ola czytała książkę o kosmosie.', 'Cisza nocna.', 'Kiedy zadzwoniłem, Ola czytała.'], answer: 1, explain: 'Jedno orzeczenie: czytała. „Cisza nocna” to równoważnik, a dwa pozostałe mają po dwa orzeczenia.' },
+  },
+  {
+    title: 'Przekształcenia – ten sam sens, inna budowa',
+    svg: `<svg viewBox="0 0 420 272" role="img" aria-label="Przekształcenia: zdanie złożone na pojedyncze, zdanie na równoważnik i równoważnik na zdanie">
+      <defs><marker id="a-pl-odm-6" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <text x="10" y="16" class="tx-s">ZŁOŻONE → POJEDYNCZE</text>
+      <rect x="6" y="24" width="408" height="34" rx="9" class="f2 s2"/>
+      <text x="210" y="47" class="tx" text-anchor="middle">Kiedy zadzwonił dzwonek, wyszliśmy.</text>
+      <path d="M210,60 L210,84" class="ln" marker-end="url(#a-pl-odm-6)"/>
+      <text x="222" y="78" class="tx-s">→ okolicznik czasu</text>
+      <rect x="6" y="88" width="408" height="34" rx="9" class="f3 s3"/>
+      <text x="210" y="111" class="tx-b" text-anchor="middle">Po dzwonku wyszliśmy.</text>
+      <text x="10" y="148" class="tx-s">ZDANIE → RÓWNOWAŻNIK</text>
+      <rect x="6" y="156" width="206" height="34" rx="9" class="f2 s2"/>
+      <text x="109" y="179" class="tx" text-anchor="middle">W lesie panuje cisza.</text>
+      <path d="M214,173 L236,173" class="ln" marker-end="url(#a-pl-odm-6)"/>
+      <rect x="240" y="156" width="174" height="34" rx="9" class="f3 s3"/>
+      <text x="327" y="179" class="tx-b" text-anchor="middle">Cisza w lesie.</text>
+      <text x="10" y="216" class="tx-s">RÓWNOWAŻNIK → ZDANIE</text>
+      <rect x="6" y="224" width="150" height="34" rx="9" class="f2 s2"/>
+      <text x="81" y="247" class="tx" text-anchor="middle">Koniec lekcji.</text>
+      <path d="M158,241 L184,241" class="ln" marker-end="url(#a-pl-odm-6)"/>
+      <rect x="188" y="224" width="226" height="34" rx="9" class="f3 s3"/>
+      <text x="301" y="247" class="tx-b" text-anchor="middle">Lekcja się skończyła.</text>
+    </svg>`,
+    text: `<p>Przy zamianie zdania złożonego na <b>pojedyncze</b> zdanie podrzędne zastępujesz <b>jedną częścią zdania</b>, najczęściej rzeczownikiem utworzonym od czasownika: <i>Kiedy wróciłem…</i> → <i>Po powrocie…</i>; <i>…ponieważ padał deszcz</i> → <i>…z powodu deszczu</i>.</p>
+      <p>Zdanie → <b>równoważnik</b>: usuń osobową formę czasownika. Równoważnik → zdanie: dodaj ją. Sens ma zostać ten sam – to sprawdza egzaminator.</p>`,
+    remember: 'Najpierw ustal, ile orzeczeń ma być w wyniku (pojedyncze – jedno, równoważnik – zero), a na końcu przeczytaj oba zdania: czy znaczą to samo?',
+    hook: 'Przekształcenie to pakowanie walizki: ta sama zawartość, mniej miejsca. Rozpakowujesz – dokładasz czasownik.',
+    check: { q: 'Które zdanie pojedyncze ma ten sam sens co „Nie wyszliśmy, ponieważ padał deszcz.”?', options: ['Nie wyszliśmy z powodu deszczu.', 'Nie wyszliśmy, bo padało.', 'Deszcz. Nie wyszliśmy.', 'Wyszliśmy mimo deszczu.'], answer: 0, explain: '„Nie wyszliśmy, bo padało” to nadal zdanie złożone, a „Wyszliśmy mimo deszczu” zmienia sens.' },
+  },
+];
+
+/* ===================== FORMY WYPOWIEDZI: OD OGŁOSZENIA DO CV ===================== */
+window.LESSONS['polski/formy-uzytkowe'] = [
+  {
+    title: 'Po co ten tekst? Cel podpowiada formę',
+    svg: `<svg viewBox="0 0 420 262" role="img" aria-label="Formy wypowiedzi pogrupowane według celu: informują, zapraszają, dziękują, sprawy urzędowe, oceniają, pytają, przetwarzają tekst">
+      <rect x="6" y="6" width="408" height="30" rx="8" class="f1"/>
+      <text x="16" y="27" class="tx-b">📢 informują</text><text x="162" y="27" class="tx">ogłoszenie ★, sprawozdanie</text>
+      <rect x="6" y="42" width="408" height="30" rx="8" class="f2"/>
+      <text x="16" y="63" class="tx-b">💌 zapraszają</text><text x="162" y="63" class="tx">zaproszenie ★, życzenia</text>
+      <rect x="6" y="78" width="408" height="30" rx="8" class="f3"/>
+      <text x="16" y="99" class="tx-b">🙏 dziękują</text><text x="162" y="99" class="tx">podziękowanie, dedykacja</text>
+      <rect x="6" y="114" width="408" height="30" rx="8" class="f4"/>
+      <text x="16" y="135" class="tx-b">🏛️ urzędowe</text><text x="162" y="135" class="tx">podanie, CV, list motywacyjny</text>
+      <rect x="6" y="150" width="408" height="30" rx="8" class="f5"/>
+      <text x="16" y="171" class="tx-b">⭐ oceniają</text><text x="162" y="171" class="tx">recenzja</text>
+      <rect x="6" y="186" width="408" height="30" rx="8" class="f1"/>
+      <text x="16" y="207" class="tx-b">🎤 pytają</text><text x="162" y="207" class="tx">wywiad</text>
+      <rect x="6" y="222" width="408" height="30" rx="8" class="f3"/>
+      <text x="16" y="243" class="tx-b">✂️ przetwarzają</text><text x="172" y="243" class="tx">streszczenie ★, parafraza</text>
+    </svg>`,
+    text: `<p>Podstawa programowa wymienia wiele form wypowiedzi. Każda ma swój <b>cel</b> i swój „szkielet” – elementy, bez których tekst nie spełnia zadania.</p>
+      <p>Gwiazdką oznaczone są formy, które według informatora CKE mogą się pojawić w <b>części I</b> arkusza: <b>ogłoszenie i zaproszenie</b> (zadania krótkiej odpowiedzi) oraz zadanie na <b>streszczenie</b>. Opowiadanie, rozprawka i przemówienie to formy wypracowania – są w dziale „Egzamin i wypracowanie”.</p>`,
+    hook: 'Zanim zaczniesz pisać, zapytaj: po co ten tekst? Informuje, zaprasza, prosi, ocenia czy skraca? Cel podpowie formę.',
+    check: { q: 'Które formy użytkowe informator CKE wymienia jako zadania krótkiej odpowiedzi w arkuszu?', options: ['ogłoszenie i zaproszenie', 'CV i list motywacyjny', 'recenzja i wywiad', 'życzenia i dedykacja'], answer: 0 },
+  },
+  {
+    title: 'Zaproszenie i ogłoszenie – pięć pytań',
+    svg: `<svg viewBox="0 0 420 228" role="img" aria-label="Wzór zaproszenia z zaznaczonymi pięcioma elementami: kto, kogo, na co, kiedy, gdzie">
+      <rect x="6" y="6" width="262" height="216" rx="12" class="f4 s4 sw"/>
+      <text x="137" y="34" class="tx-b" text-anchor="middle">ZAPROSZENIE</text>
+      <text x="18" y="64" class="tx">Serdecznie zapraszamy</text>
+      <text x="18" y="90" class="tx">uczniów klas 7–8</text>
+      <text x="18" y="116" class="tx">na Wieczór Filmowy</text>
+      <text x="18" y="142" class="tx">15 marca, godz. 17.00,</text>
+      <text x="18" y="168" class="tx">w auli szkoły.</text>
+      <text x="256" y="204" class="tx-b" text-anchor="end">Samorząd Uczniowski</text>
+      <line x1="264" y1="85" x2="284" y2="85" class="dash"/>
+      <text x="290" y="90" class="tx-b t1">② kogo?</text>
+      <line x1="264" y1="111" x2="284" y2="111" class="dash"/>
+      <text x="290" y="116" class="tx-b t3">③ na co?</text>
+      <line x1="264" y1="137" x2="284" y2="137" class="dash"/>
+      <text x="290" y="142" class="tx-b t2">④ kiedy?</text>
+      <line x1="264" y1="163" x2="284" y2="163" class="dash"/>
+      <text x="290" y="168" class="tx-b t5">⑤ gdzie?</text>
+      <text x="290" y="204" class="tx-b t4">① kto?</text>
+    </svg>`,
+    text: `<p>W przykładowych zadaniach informatora CKE zaproszenie i ogłoszenie ocenia się za <b>3 pkt</b>. Za treść i formę (2 pkt) liczy się <b>pięć elementów</b>:</p>
+      <ul><li>zaproszenie: <b>kto</b> zaprasza? <b>kogo</b>? <b>na co</b>? <b>kiedy</b>? <b>gdzie</b>?</li>
+      <li>ogłoszenie: <b>kto</b> ogłasza? <b>dla kogo</b>? <b>o czym</b>? <b>kiedy</b>? <b>gdzie</b>?</li></ul>
+      <p>Jeśli polecenie każe <b>zachęcić</b>, dodaj <b>2 argumenty</b> (np. co ciekawego się wydarzy, co można zyskać). Z jednym argumentem – tylko 1 pkt za treść. Trzeci punkt jest za poprawność.</p>`,
+    remember: '5 elementów + 2 argumenty = 2 pkt. Poprawność: łącznie najwyżej 2 błędy (językowe, ortograficzne, interpunkcyjne) = 1 pkt.',
+    hook: 'Pięć palców jednej ręki = pięć pytań. Zanim oddasz kartkę, policz na palcach: kto, kogo, na co, kiedy, gdzie.',
+    check: { q: 'W zaproszeniu podałeś: kto zaprasza, kogo, na co i gdzie. Czego brakuje?', options: ['informacji, kiedy się odbywa', 'ceny biletów', 'pytania retorycznego', 'dialogu'], answer: 0 },
+  },
+  {
+    title: 'Teksty urzędowe: podanie, CV, list motywacyjny',
+    svg: `<svg viewBox="0 0 420 246" role="img" aria-label="Układ podania: nadawca w lewym górnym rogu, miejscowość i data w prawym górnym, adresat po prawej, prośba z uzasadnieniem w środku, podpis na dole po prawej">
+      <rect x="40" y="6" width="340" height="234" rx="6" class="bg ln"/>
+      <rect x="52" y="18" width="130" height="44" rx="6" class="f1 s1"/>
+      <text x="117" y="36" class="tx-s" text-anchor="middle">imię i nazwisko,</text>
+      <text x="117" y="54" class="tx-s" text-anchor="middle">klasa / adres</text>
+      <rect x="236" y="18" width="132" height="28" rx="6" class="f4 s4"/>
+      <text x="302" y="37" class="tx-s" text-anchor="middle">miejscowość, data</text>
+      <rect x="236" y="56" width="132" height="44" rx="6" class="f2 s2"/>
+      <text x="302" y="74" class="tx-s" text-anchor="middle">Pani Dyrektor</text>
+      <text x="302" y="92" class="tx-s" text-anchor="middle">nazwa szkoły</text>
+      <rect x="52" y="112" width="316" height="76" rx="6" class="f3 s3"/>
+      <text x="210" y="138" class="tx-b" text-anchor="middle">prośba</text>
+      <text x="210" y="160" class="tx-b" text-anchor="middle">+ uzasadnienie</text>
+      <text x="210" y="180" class="tx-s" text-anchor="middle">„Zwracam się z uprzejmą prośbą o…”</text>
+      <rect x="236" y="198" width="132" height="30" rx="6" class="f5 s5"/>
+      <text x="302" y="218" class="tx" text-anchor="middle">podpis</text>
+    </svg>`,
+    text: `<p><b>Podanie</b> to oficjalna prośba. Ma stały układ (jak na rysunku), styl urzędowy, zwroty grzecznościowe i – co najważniejsze – <b>uzasadnienie</b>: dlaczego prosisz. Kończy się własnoręcznym podpisem.</p>
+      <p><b>CV</b> to przedstawienie kandydata w punktach: dane i kontakt, wykształcenie, doświadczenie, umiejętności, zainteresowania – od najnowszych informacji. <b>List motywacyjny</b> dołączasz do CV: piszesz, o co się ubiegasz i dlaczego pasujesz, podając <b>przykłady</b>, a nie same ogólniki.</p>`,
+    remember: 'Podanie bez uzasadnienia i podpisu jest niepełne. List motywacyjny nie powtarza CV – pokazuje motywację na przykładach.',
+    hook: 'Podanie czytasz jak mapę: góra-lewo – kto pisze, góra-prawo – gdzie, kiedy i do kogo, środek – o co i dlaczego, dół – podpis.',
+    check: { q: 'Czego brakuje w podaniu: „Proszę o zwolnienie z lekcji w piątek. Jan Nowak”?', options: ['puenty', 'uzasadnienia prośby (a także daty, danych nadawcy i adresata)', 'dialogu', 'pytania retorycznego'], answer: 1 },
+  },
+  {
+    title: 'Recenzja i wywiad',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Porównanie recenzji z oceną w gwiazdkach i wywiadu z pytaniem i odpowiedzią">
+      <rect x="6" y="6" width="200" height="188" rx="12" class="f4 s4"/>
+      <text x="106" y="32" class="tx-b" text-anchor="middle">⭐ Recenzja</text>
+      <text x="106" y="64" class="tx-b t4" text-anchor="middle">★★★★☆</text>
+      <text x="18" y="94" class="tx-s">• tytuł i twórca</text>
+      <text x="18" y="116" class="tx-s">• krótko o treści</text>
+      <text x="18" y="138" class="tx-s">• ocena + uzasadnienie</text>
+      <text x="18" y="160" class="tx-s">• polecam / nie polecam</text>
+      <text x="18" y="182" class="tx-s t2">✘ bez zdradzania końca</text>
+      <rect x="214" y="6" width="200" height="188" rx="12" class="f1 s1"/>
+      <text x="314" y="32" class="tx-b" text-anchor="middle">🎤 Wywiad</text>
+      <rect x="226" y="46" width="176" height="28" rx="10" class="f2"/>
+      <text x="236" y="65" class="tx-s">P: Jak to się zaczęło?</text>
+      <rect x="226" y="80" width="176" height="28" rx="10" class="f3"/>
+      <text x="236" y="99" class="tx-s">O: Od pewnej książki…</text>
+      <text x="226" y="132" class="tx-s">• wstęp o rozmówcy</text>
+      <text x="226" y="154" class="tx-s">• pytania otwarte</text>
+      <text x="226" y="176" class="tx-s">• podziękowanie</text>
+    </svg>`,
+    text: `<p><b>Recenzja</b> ocenia książkę, film, spektakl albo wystawę. Podajesz tytuł i twórcę, krótko mówisz, o czym jest dzieło (bez zdradzania zakończenia), a potem oceniasz jego elementy – i każdą ocenę <b>uzasadniasz</b>.</p>
+      <p><b>Wywiad</b> to rozmowa z ciekawą osobą zapisana w formie pytań i odpowiedzi: wstęp o rozmówcy, pytania otwarte (takie, na które nie wystarczy „tak” albo „nie”), na końcu podziękowanie.</p>`,
+    remember: 'Recenzja = informacja o dziele + ocena z uzasadnieniem. Wywiad = pytania otwarte, odpowiedzi oznaczone imieniem lub inicjałami.',
+    hook: 'Recenzja bez uzasadnienia to tylko „lajk”. Recenzent zawsze mówi, <b>dlaczego</b>.',
+    check: { q: 'Które zdanie najlepiej pasuje do recenzji filmu?', options: ['Film trwa dwie godziny, a bohater na końcu ginie.', 'Polecam ten film, bo zdjęcia i muzyka budują napięcie aż do ostatniej sceny.', 'Wczoraj byłem w kinie z kolegą.', 'Jak się pan czuje po premierze?'], answer: 1, explain: 'To ocena z uzasadnieniem. Pierwsze zdanie zdradza zakończenie, trzecie to relacja, czwarte – pytanie z wywiadu.' },
+  },
+  {
+    title: 'Streszczenie a parafraza',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Długość tekstu oryginalnego, krótszego streszczenia i podobnej długości parafrazy">
+      <text x="10" y="20" class="tx-s">TEKST</text>
+      <rect x="10" y="28" width="400" height="34" rx="6" class="f4 s4"/>
+      <line x1="22" y1="40" x2="398" y2="40" class="ln-thin"/>
+      <line x1="22" y1="50" x2="360" y2="50" class="ln-thin"/>
+      <text x="10" y="90" class="tx-s">STRESZCZENIE – krócej, tylko sedno</text>
+      <rect x="10" y="98" width="130" height="34" rx="6" class="f3 s3 sw"/>
+      <line x1="22" y1="110" x2="128" y2="110" class="ln-thin"/>
+      <line x1="22" y1="120" x2="100" y2="120" class="ln-thin"/>
+      <text x="154" y="121" class="tx">temat + co o nim powiedziano</text>
+      <text x="10" y="160" class="tx-s">PARAFRAZA – tyle samo treści, innymi słowami</text>
+      <rect x="10" y="168" width="400" height="34" rx="6" class="f1 s1 sw"/>
+      <line x1="22" y1="180" x2="398" y2="180" class="ln-thin"/>
+      <line x1="22" y1="190" x2="380" y2="190" class="ln-thin"/>
+    </svg>`,
+    text: `<p><b>Streszczenie</b> skraca tekst do najważniejszych informacji. Piszesz własnymi słowami, w kolejności jak w tekście, bez szczegółów, dialogów, cytatów i własnych ocen. W przykładowym zadaniu informatora CKE trzeba było podać <b>temat</b> tekstu i <b>to, co o nim powiedziano</b>, na właściwym poziomie ogólności. Przepisane fragmenty = 0 pkt.</p>
+      <p><b>Parafraza</b> nie skraca – oddaje całą treść innymi, często prostszymi słowami, czasem z objaśnieniem. Nie dodajesz w niej własnych opinii.</p>`,
+    remember: 'Streszczenie: krócej, sedno, własnymi słowami. Parafraza: ta sama treść, inne słowa.',
+    hook: 'Streszczenie to „zip” – kompresja do sedna. Parafraza to „tłumaczenie na nasze” – tyle samo treści, prostsze słowa.',
+    check: { q: 'Streszczasz tekst na egzaminie. Co zrobisz?', options: ['Przepiszę najważniejsze zdania z tekstu.', 'Podam temat i to, co autor o nim mówi – własnymi słowami, bez szczegółów.', 'Dodam swoją ocenę i ciekawe cytaty.', 'Opowiem wszystko ze szczegółami.'], answer: 1 },
+  },
+  {
+    title: 'Sprawdź przed oddaniem',
+    svg: `<svg viewBox="0 0 420 236" role="img" aria-label="Lista kontrolna najważniejszych elementów form wypowiedzi">
+      <rect x="6" y="6" width="408" height="224" rx="12" class="f3 s3"/>
+      <text x="22" y="40" class="tx-b t3">✔</text><text x="48" y="40" class="tx">zaproszenie, ogłoszenie: 5 elementów</text>
+      <text x="22" y="74" class="tx-b t3">✔</text><text x="48" y="74" class="tx">„zachęć” = 2 argumenty</text>
+      <text x="22" y="108" class="tx-b t3">✔</text><text x="48" y="108" class="tx">podanie: uzasadnienie i podpis</text>
+      <text x="22" y="142" class="tx-b t3">✔</text><text x="48" y="142" class="tx">charakterystyka: cecha + przykład</text>
+      <text x="22" y="176" class="tx-b t3">✔</text><text x="48" y="176" class="tx">plan: same zdania albo równoważniki</text>
+      <text x="22" y="210" class="tx-b t3">✔</text><text x="48" y="210" class="tx">streszczenie: bez ocen i cytatów</text>
+    </svg>`,
+    text: `<p>Najczęstsze błędy w formach wypowiedzi to <b>brakujące elementy</b>: zaproszenie bez daty, ogłoszenie bez nadawcy, podanie bez uzasadnienia, list bez podpisu.</p>
+      <p>W <b>charakterystyce</b> każdą cechę potwierdzasz przykładem zachowania. W <b>planie</b> trzymasz jedną formę punktów: same zdania albo same równoważniki. W <b>sprawozdaniu</b> opisujesz prawdziwe wydarzenie po kolei, a w <b>opisie przeżyć</b> – uczucia, nie wydarzenia.</p>`,
+    remember: 'Najpierw szkielet (elementy obowiązkowe), potem treść (argumenty, ciekawe szczegóły), na końcu poprawność.',
+    hook: 'Każda forma ma swój „szkielet”. Tekst bez kości się przewraca – egzaminator najpierw sprawdza, czy wszystkie są na miejscu.',
+    check: { q: 'Uczeń napisał w charakterystyce: „Mój kolega Bartek jest odważny, mądry i koleżeński.” Czego brakuje?', options: ['dialogu', 'przykładów zachowań, które potwierdzają te cechy', 'daty i podpisu', 'zwrotu do adresata'], answer: 1 },
+  },
+];

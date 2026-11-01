@@ -12,7 +12,7 @@ window.SUBJECTS.push({
     {
       id: 'srodki-stylistyczne',
       name: 'Środki stylistyczne',
-      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), kształcenie literackie: rozpoznawanie środków stylistycznych i określanie ich funkcji (wymaganie przywoływane w zadaniach informatora CKE).',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), kształcenie literackie: rozpoznawanie środków stylistycznych i określanie ich funkcji (wymaganie przywoływane w zadaniach informatora CKE). Kl. IV–VI I.1.4: epitet, porównanie, przenośnia, uosobienie, ożywienie, wyrazy dźwiękonaśladowcze, zdrobnienie, zgrubienie, apostrofa, pytanie retoryczne, powtórzenie.',
       theory: `
         <h3>Najważniejsze środki stylistyczne</h3>
         <table>
@@ -30,8 +30,11 @@ window.SUBJECTS.push({
           <tr><td>Hiperbola</td><td>celowa przesada</td><td>„mówiłem ci to milion razy”</td></tr>
           <tr><td>Oksymoron</td><td>połączenie słów o przeciwnym znaczeniu</td><td>„gorący lód”, „żywy trup”</td></tr>
           <tr><td>Zdrobnienie</td><td>wyraz o znaczeniu pomniejszającym, czułym</td><td>„domek”, „słoneczko”</td></tr>
+          <tr><td>Zgrubienie</td><td>wyraz o znaczeniu powiększającym, często z niechęcią lub lekceważeniem</td><td>„psisko”, „łapsko”, „domisko”</td></tr>
+          <tr><td>Powtórzenie</td><td>ponowne użycie tego samego wyrazu lub zwrotu, żeby coś podkreślić</td><td>„Czekałem, czekałem i czekałem.”</td></tr>
         </table>
         <div class="tip">💡 Uosobienie = cechy <b>człowieka</b> (śpiewa, płacze, myśli). Ożywienie = cechy <b>istoty żywej</b> (biegnie, oddycha).</div>
+        <div class="tip">💡 Zdrobnienie zmniejsza i ociepla (<i>piesek</i>), zgrubienie powiększa i często dodaje niechęci (<i>psisko</i>). Anafora to szczególny rodzaj powtórzenia – powtarzany wyraz stoi na początku kolejnych wersów.</div>
         <h3>Jak pisać o funkcji środka?</h3>
         <p>Na egzaminie nie wystarczy nazwać środka – trzeba napisać, <b>czemu służy</b>: np. „Porównanie podkreśla piękno oczu bohaterki”, „Pytanie retoryczne skłania czytelnika do refleksji”.</p>
       `,
@@ -47,6 +50,8 @@ window.SUBJECTS.push({
         ['Anafora', 'Powtórzenie słowa na początku kolejnych wersów'],
         ['Hiperbola', 'Celowa przesada, np. „milion razy”'],
         ['Oksymoron', 'Połączenie sprzeczności, np. „gorący lód”'],
+        ['Zgrubienie', 'Wyraz o znaczeniu powiększającym, często z niechęcią, np. „psisko”, „łapsko”'],
+        ['Powtórzenie', 'Ponowne użycie tego samego wyrazu dla podkreślenia, np. „czekałem, czekałem”'],
       ],
       questions: [
         { id: 'trikdy', q: 'Jaki środek stylistyczny zastosowano w wyrażeniu „złote słońce”?', options: ['epitet', 'porównanie', 'onomatopeja', 'apostrofa'], answer: 0, explain: 'Przymiotnik „złote” określa rzeczownik „słońce” – to epitet.' },
@@ -67,6 +72,11 @@ window.SUBJECTS.push({
         { id: '7q5mul', q: '„Słońce uśmiechało się do nas.” – jaki to środek?', options: ['uosobienie', 'porównanie', 'onomatopeja', 'apostrofa'], answer: 0, explain: 'Uśmiech to cecha człowieka nadana zjawisku przyrody.' },
         { id: 'h2le21', q: 'Czym różni się uosobienie od ożywienia?', options: ['niczym – to dwie nazwy tego samego', 'uosobienie dotyczy tylko zwierząt', 'uosobienie nadaje cechy ludzkie, a ożywienie – cechy istot żywych', 'ożywienie to uroczysty zwrot do kogoś'], answer: 2 },
         { id: '8rp34u', q: 'Jaką funkcję pełnią zdrobnienia w opisie małego dziecka?', options: ['naśladują dźwięki', 'wyrażają pogardę', 'podają dokładne dane', 'wyrażają czułość i serdeczność'], answer: 3 },
+        { id: 'ybaf2v', q: 'Który wyraz jest zgrubieniem?', options: ['piesek', 'psiak', 'psisko', 'psi'], answer: 2, explain: '„Psisko” powiększa znaczenie wyrazu „pies”. „Piesek” i „psiak” to zdrobnienia, „psi” – przymiotnik.' },
+        { id: 'urtf7d', q: 'Zgrubienia, np. „łapsko”, „psisko”, najczęściej…', options: ['wyrażają czułość i serdeczność', 'podkreślają wielkość, często z niechęcią lub lekceważeniem', 'naśladują dźwięki', 'są uroczystym zwrotem do adresata'], answer: 1, explain: 'Zgrubienie to przeciwieństwo zdrobnienia: powiększa i zwykle dodaje negatywnego zabarwienia.' },
+        { id: '8jrx3v', q: '„Czekałem, czekałem i czekałem, ale autobus nie przyjechał.” – jaki środek zastosowano?', options: ['oksymoron', 'zgrubienie', 'onomatopeję', 'powtórzenie'], answer: 3, explain: 'Ten sam wyraz użyto trzy razy, żeby podkreślić, jak długo trwało czekanie.' },
+        { id: 'ank0m9', q: 'Prawda czy fałsz?\nAnafora jest odmianą powtórzenia – powtarzany wyraz stoi na początku kolejnych wersów.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0 },
+        { id: '9uv95x', q: 'Jaką funkcję pełni powtórzenie w zdaniu „Biegł, biegł, biegł, aż zabrakło mu tchu.”?', options: ['wyraża czułość wobec bohatera', 'podkreśla długość i wysiłek biegu', 'naśladuje dźwięk kroków', 'jest pytaniem do czytelnika'], answer: 1 },
       ],
       tasks: [
         {
@@ -558,7 +568,7 @@ window.SUBJECTS.push({
     {
       id: 'frazeologia',
       name: 'Frazeologizmy i znaczenie wyrazów',
-      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), kl. IV–VI II.2.4–8 i kl. VII–VIII II.2.4–5 (wymagania przywoływane też w zadaniach informatora CKE): rozpoznaje związki frazeologiczne i rozumie ich znaczenie; rozróżnia synonimy, antonimy, homonimy; rozróżnia treść i zakres znaczeniowy wyrazu; rozpoznaje słownictwo neutralne i wartościujące; rozumie znaczenie dosłowne i przenośne.',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), kl. IV–VI II.2.4–8 i kl. VII–VIII II.2.4–5 (wymagania przywoływane też w zadaniach informatora CKE): rozpoznaje związki frazeologiczne i rozumie ich znaczenie; rozróżnia synonimy, antonimy, homonimy; rozróżnia treść i zakres znaczeniowy wyrazu; rozpoznaje słownictwo neutralne i wartościujące (II.2.6) i rozumie jego funkcje; rozumie znaczenie dosłowne i przenośne, rozpoznaje wyrazy wieloznaczne i rozumie ich znaczenie w tekście (kl. IV–VI II.2.4 – na tym wymaganiu opierają się zadania o znaczeniu wyrazu w kontekście w informatorze CKE).',
       theory: `
         <h3>Związki frazeologiczne</h3>
         <p>To utrwalone połączenia wyrazów o znaczeniu przenośnym – nie można ich rozumieć dosłownie.</p>
@@ -581,11 +591,18 @@ window.SUBJECTS.push({
           <li><b>Antonimy</b> – wyrazy przeciwstawne: <i>wesoły – smutny</i></li>
           <li><b>Homonimy</b> – wyrazy o tym samym brzmieniu i różnych znaczeniach: <i>zamek</i> (budowla, w drzwiach, błyskawiczny)</li>
         </ul>
+        <h3>Znaczenie dosłowne i przenośne, wyrazy wieloznaczne</h3>
+        <p>Wiele wyrazów ma <b>kilka znaczeń</b> – to <b>wyrazy wieloznaczne</b>. Właściwe znaczenie podpowiada <b>kontekst</b>: <i>ostry nóż</i> (dobrze tnie), <i>ostry zakręt</i> (gwałtowny), <i>ostry ból</i> (silny).</p>
+        <ul>
+          <li><b>Znaczenie dosłowne</b> – podstawowe: <i>złoty pierścionek</i> (ze złota), <i>ciężki plecak</i> (dużo waży).</li>
+          <li><b>Znaczenie przenośne</b> – przeniesione na coś innego: <i>złote serce</i> (dobroć), <i>ciężki dzień</i> (trudny, męczący), <i>ten test to pestka</i> (coś łatwego).</li>
+        </ul>
+        <div class="tip">💡 Na egzaminie bywa polecenie: wyjaśnij, co znaczy wyraz <b>w tym tekście</b>. W przykładzie z informatora CKE w zdaniu z opowiadania S. Lema „Niebyt jest dla mnie fraszką” <i>fraszka</i> to nie gatunek literacki, tylko <b>drobiazg, coś łatwego</b>. Zawsze sprawdzaj znaczenie w kontekście.</div>
         <h3>Treść i zakres wyrazu</h3>
         <p><b>Treść</b> – zbiór cech, które przypisujemy temu, co nazywa wyraz. <b>Zakres</b> – zbiór wszystkich rzeczy, które można nazwać tym wyrazem. Im <b>bogatsza treść</b>, tym <b>węższy zakres</b>: <i>pies</i> ma szerszy zakres niż <i>jamnik</i>, ale <i>jamnik</i> ma bogatszą treść.</p>
         <h3>Inne pojęcia</h3>
         <ul>
-          <li><b>Słownictwo neutralne i wartościujące</b>: <i>pies</i> (neutralne) – <i>piesek</i> (pozytywne) – <i>kundel</i> (negatywne).</li>
+          <li><b>Słownictwo neutralne i wartościujące</b>: <i>pies</i> (neutralne) – <i>piesek</i> (pozytywne) – <i>kundel</i> (negatywne); <i>mieszkanie</i> – <i>mieszkanko</i> (+) – <i>nora</i> (–). Wyrazy wartościujące wyrażają <b>ocenę i emocje nadawcy</b> (np. w opinii, reklamie, charakterystyce postaci), neutralne tylko nazywają (np. w tekście informacyjnym).</li>
           <li><b>Archaizmy</b> – wyrazy dawne, dziś nieużywane: <i>białogłowa</i> (kobieta), <i>azali</i> (czy).</li>
           <li><b>Neologizmy</b> – wyrazy nowo utworzone, np. przez pisarza.</li>
           <li><b>Zapożyczenia</b> – wyrazy przejęte z innych języków: <i>komputer, weekend</i>.</li>
@@ -602,6 +619,9 @@ window.SUBJECTS.push({
         ['nić Ariadny', 'sposób wyjścia z trudnej sytuacji'],
         ['Homonimy', 'Wyrazy o tym samym brzmieniu i różnych znaczeniach'],
         ['Treść a zakres', 'Bogatsza treść = węższy zakres'],
+        ['Wyraz wieloznaczny', 'Ma kilka znaczeń; właściwe podpowiada kontekst (ostry nóż, ostry zakręt)'],
+        ['Znaczenie przenośne', 'Przeniesione na coś innego: złote serce = dobroć, ciężki dzień = trudny'],
+        ['Słownictwo wartościujące', 'Wyraża ocenę i emocje: mieszkanko (+), nora (–); neutralne: mieszkanie'],
       ],
       questions: [
         { id: '44qbme', q: 'Co znaczy frazeologizm „drzeć z kimś koty”?', options: ['opiekować się zwierzętami', 'kłócić się z kimś', 'bawić się z kimś', 'uciekać przed kimś'], answer: 1 },
@@ -622,6 +642,11 @@ window.SUBJECTS.push({
         { id: '50q2c7', q: 'Antonimem wyrazu „wesoły” jest…', options: ['radosny', 'uśmiechnięty', 'zabawny', 'smutny'], answer: 3, explain: 'Antonim to wyraz o przeciwnym znaczeniu; pozostałe to synonimy.' },
         { id: '4d36en', q: 'Który wyraz ma najszerszy zakres znaczeniowy?', options: ['pojazd', 'samochód', 'samochód osobowy', 'taksówka'], answer: 0, explain: 'Pojazdem nazwiesz najwięcej rzeczy – ten wyraz ma najuboższą treść.' },
         { id: '18x8ws', q: 'Wyraz „komputer” to…', options: ['archaizm', 'zapożyczenie', 'neologizm', 'zdrobnienie'], answer: 1, explain: 'Wyraz przejęty z innego języka.' },
+        { id: 'q7b397', q: 'W którym zdaniu wyraz „złoty” ma znaczenie przenośne?', options: ['Babcia nosi złoty pierścionek.', 'Nasza wychowawczyni ma złote serce.', 'Kupiłem mamie złoty łańcuszek.', 'Król miał złotą koronę.'], answer: 1, explain: '„Złote serce” to nie serce ze złota, tylko dobroć i życzliwość.' },
+        { id: 'ka7jgk', q: 'Co znaczy wyraz „ciężki” w zdaniu „Mam za sobą ciężki tydzień.”?', options: ['ważący dużo', 'nudny', 'trudny, męczący', 'krótki'], answer: 2, explain: 'Tydzień nie może ważyć – to znaczenie przenośne.' },
+        { id: 'ymnxus', q: 'Wyraz „ostry” jest wieloznaczny. W którym zdaniu znaczy „gwałtowny, nagle zmieniający kierunek”?', options: ['Kroję chleb ostrym nożem.', 'Ta zupa jest bardzo ostra.', 'Mam ostry ból zęba.', 'Kierowca zwolnił przed ostrym zakrętem.'], answer: 3 },
+        { id: 'p1633g', q: 'Który wyraz wartościuje pozytywnie?', options: ['mieszkanie', 'nora', 'mieszkanko', 'lokal'], answer: 2, explain: '„Mieszkanie” i „lokal” są neutralne, „nora” – negatywna, „mieszkanko” wyraża sympatię.' },
+        { id: 'rt2udw', q: 'Prawda czy fałsz?\nW zdaniu „Ten sprawdzian to dla mnie pestka.” wyraz „pestka” ma znaczenie dosłowne.', options: ['Prawda', 'Fałsz'], answer: 1, noShuffle: true, explain: '„Pestka” znaczy tu „coś bardzo łatwego” – to znaczenie przenośne.' },
       ],
       tasks: [
         {
@@ -858,7 +883,7 @@ window.SUBJECTS.push({
     {
       id: 'style-komunikacja',
       name: 'Style, słownictwo i komunikacja',
-      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996): kl. VII–VIII II.2.1–3 i II.2.6 (słownictwo ogólnonarodowe i o ograniczonym zasięgu, zapożyczenia, nazwy osobowe i miejscowe, style), II.3.1–3 (grzeczność, norma, błąd językowy), III.1.8 (manipulacja); kl. IV–VI II.3.1–3 (nadawca, odbiorca, sytuacja komunikacyjna).',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996): kl. VII–VIII II.2.1–3 i II.2.6 (słownictwo ogólnonarodowe i o ograniczonym zasięgu, zapożyczenia, nazwy osobowe i miejscowe, sposoby wzbogacania słownictwa, style), II.3.1–3 (grzeczność, norma, błąd językowy), III.1.3 (spójność między akapitami), III.1.8 (manipulacja); kl. IV–VI II.2.1 (cechy języka mówionego i pisanego), II.2.9 (spójność formalna i semantyczna tekstu – zadanie na środki spójności jest w informatorze CKE), II.3.1–3 (nadawca, odbiorca, sytuacja komunikacyjna).',
       theory: `
         <h3>Style wypowiedzi</h3>
         <table>
@@ -875,6 +900,31 @@ window.SUBJECTS.push({
           <li><b>Wyrazy rodzime</b> i <b>zapożyczone</b> (<i>weekend, komputer, pizza</i>).</li>
           <li>Nazwy mieszkańców: Kraków – <i>krakowianin</i>, Warszawa – <i>warszawianin</i>, Gdańsk – <i>gdańszczanin</i>, Poznań – <i>poznaniak</i>.</li>
         </ul>
+        <h3>Jak wzbogaca się słownictwo?</h3>
+        <table>
+          <tr><th>Sposób</th><th>Przykłady</th></tr>
+          <tr><td>tworzenie wyrazów pochodnych</td><td>drukarka (od: drukować), wyszukiwarka (od: wyszukiwać)</td></tr>
+          <tr><td>tworzenie wyrazów złożonych</td><td>długopis, gwiazdozbiór, Wielkanoc</td></tr>
+          <tr><td>zapożyczanie wyrazów z innych języków</td><td>weekend, komputer, pizza</td></tr>
+          <tr><td>nadawanie nowych znaczeń wyrazom, które już istnieją</td><td>mysz (komputerowa), komórka (telefon)</td></tr>
+          <tr><td>tworzenie związków wyrazowych</td><td>dać zielone światło (pozwolić), maszyna do szycia</td></tr>
+          <tr><td>skróty i skrótowce</td><td>skróty: np., ul., godz.; skrótowce: PKP, ONZ</td></tr>
+        </table>
+        <h3>Język mówiony a pisany</h3>
+        <table>
+          <tr><th>Mówiony</th><th>Pisany</th></tr>
+          <tr><td>powstaje na bieżąco, spontanicznie</td><td>przemyślany – można go poprawić przed wysłaniem</td></tr>
+          <tr><td>odbiorca zwykle jest obok i może od razu dopytać</td><td>odbiorca czyta później i nie może dopytać</td></tr>
+          <tr><td>pomagają intonacja, gesty, mimika</td><td>pomagają interpunkcja, akapity, układ tekstu</td></tr>
+          <tr><td>krótkie, czasem niedokończone zdania, powtórzenia, wyrazy potoczne</td><td>pełne, poprawne zdania, staranne słownictwo</td></tr>
+        </table>
+        <p>SMS-y i czaty są pisane, ale mają wiele cech języka mówionego.</p>
+        <h3>Spójność tekstu</h3>
+        <ul>
+          <li><b>Spójność semantyczna</b> (treściowa) – wszystkie zdania dotyczą tematu, myśli wynikają jedna z drugiej i są ułożone w logicznym porządku.</li>
+          <li><b>Spójność formalna</b> (językowa) – zdania łączą się środkami językowymi: wyrazy porządkujące (<i>najpierw, następnie, na koniec</i>), spójniki i wyrazy pokazujące związki myśli (<i>dlatego, jednak, zatem, otóż, ponadto</i>), zaimki zamiast powtórzeń (<i>on, ten, który</i>), synonimy, zgodne formy (ten sam czas, ta sama osoba).</li>
+        </ul>
+        <div class="tip">✘ „Kupiłem psa. Pies jest czarny. Pies lubi spacery.”<br>✔ „Kupiłem psa. Jest czarny i uwielbia spacery, dlatego codziennie z nim wychodzę.”<br>Na egzaminie może paść polecenie: wypisz z tekstu środki językowe, dzięki którym tekst jest spójny (tak jest w przykładowym zadaniu informatora CKE).</div>
         <h3>Komunikacja i kultura języka</h3>
         <ul>
           <li><b>Nadawca</b> – kto mówi/pisze, <b>odbiorca</b> – do kogo; <b>sytuacja komunikacyjna</b> wpływa na wybór słów.</li>
@@ -883,7 +933,7 @@ window.SUBJECTS.push({
           <li><b>Manipulacja</b> – wpływanie na odbiorcę w ukryty sposób, np. przemilczenia, uogólnienia („wszyscy to mają!”), wywoływanie emocji zamiast argumentów.</li>
         </ul>
         <h3>Inne formy wypowiedzi z podstawy</h3>
-        <p>recenzja, podanie, CV, list motywacyjny, przemówienie, wywiad, rozprawka; streszczenie i parafraza tekstu.</p>
+        <p>recenzja, podanie, CV, list motywacyjny, przemówienie, wywiad, rozprawka; streszczenie i parafraza tekstu. Elementy każdej formy – zob. dział <a href="#/s/polski/t/formy-uzytkowe">„Formy wypowiedzi: od ogłoszenia do CV”</a>.</p>
       `,
       flashcards: [
         ['Styl urzędowy', 'Oficjalny, schematyczny – podanie, regulamin'],
@@ -892,6 +942,11 @@ window.SUBJECTS.push({
         ['Zapożyczenie', 'Wyraz z innego języka, np. weekend'],
         ['Manipulacja', 'Ukryte wpływanie na odbiorcę, np. „wszyscy to mają!”'],
         ['Mieszkaniec Gdańska', 'gdańszczanin'],
+        ['Spójność semantyczna', 'Zdania dotyczą tematu i logicznie z siebie wynikają'],
+        ['Spójność formalna', 'Zdania łączą: najpierw, dlatego, jednak, zaimki, synonimy'],
+        ['Język mówiony', 'Spontaniczny; pomagają intonacja i gesty; krótkie zdania, powtórzenia'],
+        ['Język pisany', 'Przemyślany, staranny; pomagają interpunkcja i akapity'],
+        ['Sposoby wzbogacania słownictwa', 'Wyrazy pochodne i złożone, zapożyczenia, nowe znaczenia, związki wyrazowe, skróty i skrótowce'],
       ],
       questions: [
         { id: 'h1lftc', q: 'W jakim stylu pisze się podanie do dyrektora szkoły?', options: ['potocznym', 'urzędowym', 'artystycznym', 'naukowym'], answer: 1 },
@@ -909,6 +964,13 @@ window.SUBJECTS.push({
         { id: 'bgnu2z', q: 'Co to jest błąd językowy?', options: ['każdy wyraz potoczny', 'każdy wyraz zapożyczony', 'naruszenie normy językowej', 'pytanie retoryczne'], answer: 2 },
         { id: '63evfd', q: 'Jak najlepiej zacząć e-mail do dyrektorki szkoły?', options: ['Hej!', 'Siema, pani dyrektor!', 'Szanowna Pani Dyrektor,', 'Cześć,'], answer: 2 },
         { id: '9qbctr', q: 'Która wypowiedź jest przykładem manipulacji?', options: ['„Telefon waży 180 g.”', '„Tylko naiwniak nie kupi naszego telefonu!”', '„Sklep jest czynny od 9 do 17.”', '„Cena telefonu wynosi 900 zł.”'], answer: 1, explain: 'Wywiera presję i obraża zamiast podawać argumenty.' },
+        { id: 'ohvh48', q: 'Która cecha jest typowa dla języka mówionego?', options: ['staranne, pełne zdania', 'możliwość poprawienia tekstu przed wysłaniem', 'intonacja, gesty i mimika, które pomagają zrozumieć wypowiedź', 'akapity i interpunkcja'], answer: 2 },
+        { id: '2wleys', q: 'Prawda czy fałsz?\nW języku pisanym rolę intonacji przejmują m.in. znaki interpunkcyjne.', options: ['Prawda', 'Fałsz'], answer: 0, noShuffle: true, explain: 'Pytajnik, wykrzyknik czy przecinek pokazują to, co w mowie słychać w głosie.' },
+        { id: 'rk6i8h', q: 'Który wyraz uzupełni lukę tak, by tekst był spójny: „Najpierw przeczytaj polecenie. ___ podkreśl w nim najważniejsze słowa.”?', options: ['Wczoraj', 'Następnie', 'Natomiast', 'Ponieważ'], answer: 1, explain: '„Najpierw… następnie…” porządkuje kolejność czynności.' },
+        { id: 'wcz0m9', q: 'Jak poprawić spójność tekstu „Ola ma kota. Kot jest rudy. Kot lubi spać na parapecie.”?', options: ['dopisać więcej zdań o kocie', 'zapisać każde zdanie w osobnym akapicie', 'zmienić kota na psa', 'zastąpić powtórzenia zaimkiem i połączyć zdania, np. „Ola ma rudego kota, który lubi spać na parapecie.”'], answer: 3 },
+        { id: '9cguwt', q: 'Wypracowanie o wycieczce nagle zaczyna opisywać ulubioną grę autora, a potem wraca do wycieczki. Którą zasadę naruszono?', options: ['spójność semantyczną (treściową)', 'zasady ortografii', 'grzeczność językową', 'zasady akcentowania'], answer: 0, explain: 'Wszystkie części tekstu powinny dotyczyć tematu i logicznie się łączyć.' },
+        { id: 'ynuxx1', q: 'Wyraz „mysz” w znaczeniu ‘urządzenie do sterowania komputerem’ to przykład wzbogacania słownictwa przez…', options: ['tworzenie skrótowca', 'nadanie nowego znaczenia wyrazowi, który już istniał', 'tworzenie wyrazu złożonego', 'tworzenie zdrobnienia'], answer: 1 },
+        { id: 'uvd2xr', q: 'Który wyraz jest skrótowcem?', options: ['np.', 'ul.', 'PKP', 'itd.'], answer: 2, explain: 'Skrótowiec powstaje z pierwszych liter nazwy (Polskie Koleje Państwowe) i czyta się go jako całość. „np.”, „ul.”, „itd.” to skróty.' },
       ],
       tasks: [
         {
@@ -941,12 +1003,348 @@ window.SUBJECTS.push({
             '2 pkt – tekst ma formę ogłoszenia: zwięzły, rzeczowy, bez zbędnych informacji.',
           ],
         },
+        {
+          id: 'vu9851',
+          points: 2,
+          q: 'Popraw spójność tekstu: usuń powtórzenia i połącz zdania wyrazami łączącymi. Zachowaj wszystkie informacje. „Wczoraj byliśmy w muzeum. W muzeum była wystawa o dinozaurach. Wystawa była ciekawa. Na wystawie widzieliśmy szkielet tyranozaura. Szkielet był ogromny.”',
+          steps: [
+            'Znajdź powtórzenia: muzeum, wystawa, szkielet. Zastąp je zaimkami (który, tam, go) albo połącz zdania.',
+            'Połącz krótkie zdania spójnikami i wyrazami łączącymi (gdzie, który, a, najbardziej…).',
+            'Sprawdź, czy zostały wszystkie informacje: muzeum, wystawa o dinozaurach, ciekawa, szkielet tyranozaura, ogromny.',
+          ],
+          answer: 'Wczoraj byliśmy w muzeum na ciekawej wystawie o dinozaurach. Widzieliśmy tam szkielet tyranozaura, który był ogromny.',
+          scoring: [
+            '1 pkt – usunięte powtórzenia (zaimki, połączenie zdań), zachowane wszystkie informacje.',
+            '2 pkt – zdania logicznie połączone wyrazami łączącymi, tekst poprawny językowo.',
+          ],
+        },
+      ],
+    },
+    {
+      id: 'odmiana-zdanie',
+      name: 'Odmiana wyrazów i zdanie pojedyncze',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), kształcenie językowe, kl. IV–VI: II.1.4 (przypadek, liczba, rodzaj, osoba, czas, tryb), II.1.6 (poprawne formy wyrazów odmiennych), II.1.7 (stopniowanie przymiotników i przysłówków), II.1.8–10 (części zdania, wyrazy poza zdaniem, związki wyrazów), II.1.11 (wypowiedzenia oznajmujące, pytające, rozkazujące), II.1.12–13 (zdanie pojedyncze, złożone, równoważnik zdania; przekształcenia – takie zadanie jest też w informatorze CKE). Części zdania i zdania złożone – zob. dział „Składnia”, strona bierna i imiesłowy – „Części mowy i imiesłowy”.',
+      theory: `
+        <h3>Przypadki</h3>
+        <p>Rzeczownik, przymiotnik, liczebnik i zaimek odmieniają się przez <b>przypadki</b>. Przypadek rozpoznasz po pytaniu.</p>
+        <table>
+          <tr><th>Przypadek</th><th>Pytania</th><th>Przykład</th></tr>
+          <tr><td>mianownik (M.)</td><td>kto? co?</td><td>(to jest) kot, książka</td></tr>
+          <tr><td>dopełniacz (D.)</td><td>kogo? czego?</td><td>(nie ma) kota, książki</td></tr>
+          <tr><td>celownik (C.)</td><td>komu? czemu?</td><td>(przyglądam się) kotu, książce</td></tr>
+          <tr><td>biernik (B.)</td><td>kogo? co?</td><td>(widzę) kota, książkę</td></tr>
+          <tr><td>narzędnik (N.)</td><td>(z) kim? (z) czym?</td><td>(idę z) kotem, książką</td></tr>
+          <tr><td>miejscownik (Ms.)</td><td>(o) kim? (o) czym?</td><td>(mówię o) kocie, książce</td></tr>
+          <tr><td>wołacz (W.)</td><td>o!</td><td>kocie! Kasiu!</td></tr>
+        </table>
+        <div class="tip">💡 Mianownik to zwykle <b>podmiot</b>. „Kogo?” pasuje i do dopełniacza, i do biernika – dodaj wyraz pomocniczy: <i>nie ma</i> kogo? (D.), <i>widzę</i> kogo? (B.). Po przeczeniu biernik zmienia się w dopełniacz: <i>mam czas</i> → <i>nie mam czasu</i>.</div>
+        <h3>Liczba, rodzaj, osoba</h3>
+        <ul>
+          <li><b>Liczba</b>: pojedyncza (kot) i mnoga (koty). Niektóre rzeczowniki mają tylko liczbę mnogą: <i>drzwi, nożyczki, spodnie, okulary</i>.</li>
+          <li><b>Rodzaj</b> w liczbie pojedynczej: męski (ten stół), żeński (ta lampa), nijaki (to okno). W liczbie mnogiej: <b>męskoosobowy</b> (ci chłopcy – oni grali) i <b>niemęskoosobowy</b> (te dziewczyny, te psy – one grały).</li>
+          <li><b>Osoba</b> (czasownik, zaimek osobowy): 1. ja / my, 2. ty / wy, 3. on, ona, ono / oni, one.</li>
+        </ul>
+        <h3>Czasownik: czas i tryb</h3>
+        <table>
+          <tr><th>Czas</th><th>Przykład</th></tr>
+          <tr><td>przeszły</td><td>czytałem, przeczytałem</td></tr>
+          <tr><td>teraźniejszy</td><td>czytam – tylko czasowniki niedokonane</td></tr>
+          <tr><td>przyszły prosty</td><td>przeczytam – czasowniki dokonane</td></tr>
+          <tr><td>przyszły złożony</td><td>będę czytać / będę czytał – czasowniki niedokonane</td></tr>
+        </table>
+        <table>
+          <tr><th>Tryb</th><th>Przykład</th><th>Do czego służy?</th></tr>
+          <tr><td>oznajmujący</td><td>czytam, czytałem, będę czytać</td><td>informuje o tym, co jest, było, będzie</td></tr>
+          <tr><td>rozkazujący</td><td>czytaj! niech czyta, czytajmy, czytajcie</td><td>polecenie, prośba, rada, zachęta</td></tr>
+          <tr><td>przypuszczający</td><td>czytałbym, czytałabyś, czytalibyśmy</td><td>warunek, marzenie, grzeczna prośba („Czy mógłbyś…?”)</td></tr>
+        </table>
+        <div class="tip">💡 Cząstkę <b>-by</b> piszemy łącznie z osobową formą czasownika: <i>zrobiłbym, poszłabyś</i>.</div>
+        <h3>Poprawne formy – typowe błędy</h3>
+        <table>
+          <tr><th>✔ Poprawnie</th><th>✘ Błędnie</th></tr>
+          <tr><td>wziąć, wziąłem, wzięła</td><td>wziąść, wziełem</td></tr>
+          <tr><td>poszedłem</td><td>poszłem</td></tr>
+          <tr><td>włączać, wyłączać</td><td>włanczać, wyłanczać</td></tr>
+          <tr><td>weź, weźcie</td><td>weźmij, weźmijcie</td></tr>
+          <tr><td>rozumiem, umiem</td><td>rozumię, umię</td></tr>
+          <tr><td>mieliśmy</td><td>mięliśmy</td></tr>
+          <tr><td>(czytam) tę książkę – biernik; (z) tą książką – narzędnik</td><td>(czytam) tą książkę – błąd w starannej polszczyźnie</td></tr>
+          <tr><td>półtora roku, półtora dnia; półtorej godziny</td><td>półtorej roku, półtora godziny</td></tr>
+          <tr><td>Nie mam czasu.</td><td>Nie mam czas.</td></tr>
+        </table>
+        <h3>Stopniowanie przymiotników i przysłówków</h3>
+        <p>Trzy stopnie: <b>równy</b> – <b>wyższy</b> – <b>najwyższy</b>.</p>
+        <table>
+          <tr><th>Stopniowanie</th><th>Przymiotnik</th><th>Przysłówek</th></tr>
+          <tr><td><b>proste</b> (-szy, -ejszy; -ej)</td><td>miły – milszy – najmilszy; ładny – ładniejszy – najładniejszy</td><td>szybko – szybciej – najszybciej; ładnie – ładniej – najładniej</td></tr>
+          <tr><td><b>opisowe</b> (bardziej, najbardziej; mniej, najmniej)</td><td>zmęczony – bardziej zmęczony – najbardziej zmęczony</td><td>interesująco – bardziej interesująco – najbardziej interesująco</td></tr>
+          <tr><td><b>nieregularne</b> (inny wyraz w stopniu wyższym)</td><td>dobry – lepszy – najlepszy; zły – gorszy – najgorszy; duży – większy – największy; mały – mniejszy – najmniejszy</td><td>dobrze – lepiej – najlepiej; źle – gorzej – najgorzej; dużo – więcej – najwięcej; mało – mniej – najmniej</td></tr>
+        </table>
+        <div class="tip">⚠️ Nie łącz dwóch sposobów: <s>bardziej lepszy</s>, <s>najbardziej najlepszy</s>. Niektórych przymiotników w ogóle nie stopniujemy, np. <i>drewniany, szkolny, wczorajszy</i>.</div>
+        <h3>Związki wyrazów w zdaniu</h3>
+        <p>Wyrazy w zdaniu łączą się w pary: <b>nadrzędny</b> (określany) i <b>podrzędny</b> (określający). Pytanie zadajesz od nadrzędnego: <i>brat</i> (jaki?) <i>młodszy</i>.</p>
+        <ul>
+          <li><b>Związek główny</b> – podmiot + orzeczenie: <i>brat czyta</i>.</li>
+          <li><b>Związek zgody</b> – wyraz podrzędny dopasowuje się do nadrzędnego (przypadek, liczba, rodzaj) i odmienia się razem z nim: <i>młodszy brat – młodszego brata – młodszemu bratu</i>.</li>
+          <li><b>Związek rządu</b> – wyraz nadrzędny narzuca podrzędnemu przypadek, który się nie zmienia: <i>czytam komiksy, czytałem komiksy; szukam kluczy; pomagam mamie</i>.</li>
+          <li><b>Związek przynależności</b> – wyraz podrzędny jest nieodmienny (np. przysłówek, bezokolicznik) i tylko „przylega” do nadrzędnego: <i>czyta szybko, chcę czytać, bardzo ciekawy</i>.</li>
+        </ul>
+        <p><b>Wyrazy poza zdaniem.</b> Nie każdy wyraz jest częścią zdania: <b>wykrzykniki</b> (<i>Ach!, Hej!</i>) i <b>zwroty do kogoś w wołaczu</b> (<i>Kasiu, poczekaj!</i>) nie wchodzą w związki z innymi wyrazami – oddzielamy je przecinkiem. Przyimek i spójnik nie są samodzielnymi częściami zdania: <i>w parku</i> to jeden okolicznik.</p>
+        <h3>Rodzaje wypowiedzeń</h3>
+        <table>
+          <tr><th>Ze względu na cel</th><th>Przykład</th></tr>
+          <tr><td><b>oznajmujące</b> – informuje</td><td>Jutro mamy test.</td></tr>
+          <tr><td><b>pytające</b> – o coś pyta</td><td>Czy jutro mamy test?</td></tr>
+          <tr><td><b>rozkazujące</b> – polecenie, prośba (wykrzyknik albo kropka)</td><td>Naucz się na test! Proszę otworzyć zeszyty.</td></tr>
+        </table>
+        <table>
+          <tr><th>Ze względu na budowę</th><th>Przykład</th></tr>
+          <tr><td><b>zdanie pojedyncze</b> – jedno orzeczenie</td><td>Wieczorem Ola czytała książkę.</td></tr>
+          <tr><td><b>zdanie złożone</b> – co najmniej dwa orzeczenia</td><td>Ola czytała, a Tomek grał.</td></tr>
+          <tr><td><b>równoważnik zdania</b> – bez osobowej formy czasownika</td><td>Cisza w klasie. Zakaz wjazdu.</td></tr>
+        </table>
+        <div class="tip">💡 „Idę do kina.” to zdanie, choć nie widać podmiotu – forma czasownika mówi, że chodzi o „ja” (<b>podmiot domyślny</b>). Cel i budowa to dwie różne sprawy: „Zamknij okno!” jest rozkazujące i jest zdaniem pojedynczym.</div>
+        <h3>Przekształcenia – ten sam sens, inna budowa</h3>
+        <table>
+          <tr><th>Zamiana</th><th>Przed</th><th>Po</th></tr>
+          <tr><td>złożone → pojedyncze</td><td>Kiedy skończyły się lekcje, poszliśmy do domu.</td><td>Po lekcjach poszliśmy do domu.</td></tr>
+          <tr><td>złożone → pojedyncze</td><td>Nie wyszliśmy, ponieważ padał deszcz.</td><td>Nie wyszliśmy z powodu deszczu.</td></tr>
+          <tr><td>pojedyncze → złożone</td><td>Po powrocie do domu zjadłem obiad.</td><td>Kiedy wróciłem do domu, zjadłem obiad.</td></tr>
+          <tr><td>zdanie → równoważnik</td><td>W lesie panuje cisza.</td><td>Cisza w lesie.</td></tr>
+          <tr><td>równoważnik → zdanie</td><td>Koniec lekcji.</td><td>Lekcja się skończyła.</td></tr>
+        </table>
+        <div class="tip">💡 Zamieniając zdanie złożone na pojedyncze, zastąp zdanie podrzędne <b>jedną częścią zdania</b> – często rzeczownikiem utworzonym od czasownika: <i>wrócić → po powrocie, przyjść → przyjście</i>. Sens musi zostać ten sam. Zamiana na imiesłowowy równoważnik zdania – zob. dział „Części mowy i imiesłowy”.</div>
+      `,
+      flashcards: [
+        ['Siedem przypadków', 'mianownik, dopełniacz, celownik, biernik, narzędnik, miejscownik, wołacz'],
+        ['Celownik – pytania', 'komu? czemu?'],
+        ['Narzędnik – pytania', '(z) kim? (z) czym?'],
+        ['Rodzaje w liczbie mnogiej', 'męskoosobowy (ci chłopcy) i niemęskoosobowy (te dziewczyny, te psy)'],
+        ['Czas przyszły złożony', 'będę czytać / będę czytał – tylko czasowniki niedokonane'],
+        ['Stopniowanie nieregularne', 'dobry – lepszy, zły – gorszy, duży – większy, mały – mniejszy; dobrze – lepiej, źle – gorzej'],
+        ['Związek zgody', 'Podrzędny odmienia się razem z nadrzędnym: młodszy brat – młodszego brata'],
+        ['Związek rządu', 'Nadrzędny narzuca stały przypadek: szukam kluczy, pomagam mamie'],
+        ['Związek przynależności', 'Wyraz nieodmienny przylega do nadrzędnego: czyta szybko, chcę czytać'],
+        ['Zdanie pojedyncze', 'Ma jedno orzeczenie: „Wieczorem Ola czytała książkę.”'],
+        ['wziąć czy wziąść?', 'wziąć (wziąłem, wzięła); też: poszedłem, weź, rozumiem, włączać'],
+      ],
+      questions: [
+        { id: 'a7h51e', q: 'Na jakie pytania odpowiada celownik?', options: ['kogo? czego?', 'komu? czemu?', '(z) kim? (z) czym?', '(o) kim? (o) czym?'], answer: 1 },
+        { id: 'l7xsnh', q: 'W jakim przypadku jest wyraz „bratu” w zdaniu „Pomagam bratu w lekcjach.”?', options: ['w dopełniaczu', 'w bierniku', 'w celowniku', 'w miejscowniku'], answer: 2, explain: 'Pomagam komu? – bratu. Pytanie „komu?” to celownik.' },
+        { id: '4g7is6', q: 'W zdaniu „Nie widzę mojego plecaka.” wyraz „plecaka” jest w…', options: ['bierniku', 'mianowniku', 'narzędniku', 'dopełniaczu'], answer: 3, explain: 'Nie widzę kogo? czego? – plecaka. Po przeczeniu biernik zmienia się w dopełniacz: widzę plecak – nie widzę plecaka.' },
+        { id: '742o1b', q: 'Który rzeczownik ma tylko liczbę mnogą?', options: ['nożyczki', 'krzesła', 'książki', 'okna'], answer: 0, explain: 'Nie ma formy „jedna nożyczka”. Tak samo: drzwi, spodnie, okulary.' },
+        { id: 'gg3eqk', q: 'W którym zdaniu podmiot jest rodzaju męskoosobowego?', options: ['Psy szczekały.', 'Dziewczyny śpiewały.', 'Chłopcy grali w piłkę.', 'Okna były otwarte.'], answer: 2, explain: 'Rodzaj męskoosobowy to „oni” – mężczyźni (czasownik: grali). Pozostałe to „one” – rodzaj niemęskoosobowy (szczekały, śpiewały, były).' },
+        { id: 'mplk98', q: 'W jakim czasie jest czasownik „będę pisał”?', options: ['przeszłym', 'teraźniejszym', 'przyszłym prostym', 'przyszłym złożonym'], answer: 3 },
+        { id: 'mjm57s', q: 'Który czasownik NIE ma czasu teraźniejszego?', options: ['czytać', 'biegać', 'śpiewać', 'napisać'], answer: 3, explain: 'Czasowniki dokonane (napisać) mają tylko czas przeszły i przyszły prosty: napisałem, napiszę.' },
+        { id: 'dpnypu', q: 'W którym zdaniu tryb przypuszczający wyraża grzeczną prośbę?', options: ['Czy mógłbyś zamknąć okno?', 'Zamknij okno!', 'Zamknąłem okno.', 'Okno jest zamknięte.'], answer: 0 },
+        { id: 'tirbhl', q: 'Jaki jest stopień najwyższy przymiotnika „zły”?', options: ['najzłejszy', 'najbardziej zły', 'najgorszy', 'najgorzej'], answer: 2, explain: '„Zły” stopniuje się nieregularnie: zły – gorszy – najgorszy. „Najgorzej” to stopień najwyższy przysłówka „źle”.' },
+        { id: 'k35na8', q: 'Który przymiotnik stopniuje się w sposób prosty?', options: ['zmęczony', 'drewniany', 'zadowolony', 'ładny'], answer: 3, explain: 'ładny – ładniejszy – najładniejszy. „Zmęczony” i „zadowolony” stopniujemy opisowo (bardziej, najbardziej), a „drewniany” się nie stopniuje.' },
+        { id: 'vqdbk1', q: 'Stopień wyższy przysłówka „dobrze” to…', options: ['lepszy', 'dobrzej', 'bardziej dobrze', 'lepiej'], answer: 3, explain: '„Lepszy” to stopień wyższy przymiotnika „dobry”.' },
+        { id: 'id55m6', q: 'Które zdanie jest poprawne?', options: ['Ten rower jest bardziej lepszy.', 'Ten rower jest najbardziej lepszy.', 'Ten rower jest lepszy.', 'Ten rower jest bardziej dobrzejszy.'], answer: 2, explain: '„Lepszy” to już stopień wyższy – nie dodajemy „bardziej”.' },
+        { id: 'hnodn5', q: 'Którego przymiotnika nie stopniujemy?', options: ['wysoki', 'ciekawy', 'mądry', 'drewniany'], answer: 3, explain: 'Coś jest z drewna albo nie – nie może być „bardziej drewniane”.' },
+        { id: 'n7wkgq', q: 'W którym zdaniu forma czasownika jest poprawna?', options: ['Wczoraj poszłem do kina.', 'Weźmij parasol!', 'Nie rozumię tego zadania.', 'Wziąłem ze sobą parasol.'], answer: 3, explain: 'Poprawnie: poszedłem, weź, rozumiem, wziąłem.' },
+        { id: 'i53h9k', q: 'Która forma jest poprawna?', options: ['półtorej roku', 'półtora godziny', 'półtorej godziny', 'półtorej dnia'], answer: 2, explain: '„Półtorej” – z rzeczownikami rodzaju żeńskiego (godzina), „półtora” – z męskimi i nijakimi (rok, dzień).' },
+        { id: 'vab3pt', q: 'Które zdanie jest zgodne z normą wzorcową?', options: ['Poproszę tą bluzę.', 'Nie mam czas.', 'Poproszę tę bluzę.', 'Włanczam komputer.'], answer: 2, explain: 'Biernik: tę bluzę („tą” – narzędnik: z tą bluzą). Poprawnie też: nie mam czasu, włączam.' },
+        { id: 'br6zwu', q: 'Jaki związek tworzą wyrazy „młodszy brat”?', options: ['związek zgody', 'związek rządu', 'związek przynależności', 'związek główny'], answer: 0, explain: 'Przymiotnik odmienia się razem z rzeczownikiem: młodszego brata, młodszemu bratu.' },
+        { id: 'qw1eiu', q: 'Jaki związek tworzą wyrazy „szukam kluczy”?', options: ['zgody', 'rządu', 'przynależności', 'główny'], answer: 1, explain: '„Szukać” wymaga dopełniacza (czego?): szukam kluczy, szukałem kluczy – przypadek się nie zmienia.' },
+        { id: '60y40d', q: 'Jaki związek tworzą wyrazy „biegnie szybko”?', options: ['zgody', 'rządu', 'główny', 'przynależności'], answer: 3, explain: 'Przysłówek „szybko” jest nieodmienny – tylko przylega do czasownika.' },
+        { id: '4mizcj', q: 'Co jest związkiem głównym w zdaniu „Wczoraj nasza drużyna wygrała mecz.”?', options: ['nasza drużyna', 'wygrała mecz', 'drużyna wygrała', 'wczoraj wygrała'], answer: 2, explain: 'Związek główny to podmiot (drużyna) i orzeczenie (wygrała).' },
+        { id: 'ki61i5', q: 'Które wypowiedzenie jest rozkazujące?', options: ['Proszę zamknąć drzwi.', 'Drzwi są zamknięte.', 'Czy drzwi są zamknięte?', 'Zamknąłem drzwi.'], answer: 0, explain: 'Wyraża prośbę (polecenie). Wypowiedzenie rozkazujące może kończyć się kropką.' },
+        { id: 'wehfy0', q: 'Które wypowiedzenie jest zdaniem pojedynczym?', options: ['Ola czyta, a Tomek gra.', 'Rano Ola przeczytała list od babci.', 'Cisza w bibliotece.', 'Kiedy przyszłam, Ola czytała.'], answer: 1, explain: 'Ma jedno orzeczenie (przeczytała). „Cisza w bibliotece” to równoważnik zdania.' },
+        { id: 'optv9j', q: 'Które zdanie pojedyncze ma ten sam sens co „Kiedy skończył się koncert, wróciliśmy do domu.”?', options: ['Po koncercie wróciliśmy do domu.', 'Przed koncertem wróciliśmy do domu.', 'Koncert i dom.', 'Wróciliśmy do domu, bo był koncert.'], answer: 0 },
+        { id: 'vcxz58', q: 'Który równoważnik zdania ma ten sam sens co zdanie „Wjazd jest zabroniony.”?', options: ['Zakaz wjazdu.', 'Wjazd jest otwarty.', 'Nie wjeżdżaj!', 'Wjeżdżamy.'], answer: 0, explain: '„Zakaz wjazdu.” nie ma osobowej formy czasownika. „Nie wjeżdżaj!” to zdanie (wjeżdżaj – tryb rozkazujący).' },
+        { id: '9dfd4o', q: 'Czym jest wyraz „Kasiu” w zdaniu „Kasiu, podaj mi sól.”?', options: ['podmiotem', 'dopełnieniem', 'zwrotem w wołaczu – stoi poza związkami zdania', 'okolicznikiem'], answer: 2, explain: 'Wołacz to zwrot do kogoś – oddzielamy go przecinkiem. Podmiot jest domyślny: (ty) podaj.' },
+      ],
+      tasks: [
+        {
+          id: 'tixg3o',
+          points: 2,
+          q: 'Przekształć zdania złożone na zdania pojedyncze, zachowując ich sens: a) „Kiedy skończyły się lekcje, poszliśmy na boisko.” b) „Nie pojechaliśmy na wycieczkę, ponieważ padał ulewny deszcz.”',
+          steps: [
+            'Zdanie pojedyncze ma jedno orzeczenie – jedno z orzeczeń (skończyły się, padał) musi zniknąć.',
+            'Zdanie podrzędne zastąp jedną częścią zdania: w a) okolicznikiem czasu (kiedy?), w b) okolicznikiem przyczyny (dlaczego?).',
+            'Pomagają wyrażenia z przyimkiem i rzeczownikiem: po lekcjach, z powodu deszczu.',
+          ],
+          answer: 'a) Po lekcjach poszliśmy na boisko. b) Nie pojechaliśmy na wycieczkę z powodu ulewnego deszczu.',
+          scoring: [
+            '1 pkt – poprawnie przekształcone zdanie a) (jedno orzeczenie, ten sam sens).',
+            '2 pkt – poprawnie przekształcone zdanie b).',
+          ],
+        },
+        {
+          id: 'dcre6k',
+          points: 2,
+          q: 'a) Zamień zdanie na równoważnik zdania: „W bibliotece panuje cisza.” b) Zamień równoważnik zdania na zdanie: „Koniec wakacji.”',
+          steps: [
+            'Równoważnik zdania nie ma osobowej formy czasownika – usuń orzeczenie (panuje) i zostaw najważniejsze wyrazy.',
+            'Żeby z równoważnika zrobić zdanie, dodaj osobową formę czasownika, np. skończyły się, dobiegły.',
+            'Sprawdź, czy sens się nie zmienił.',
+          ],
+          answer: 'a) Cisza w bibliotece. b) Wakacje się skończyły. (albo: Wakacje dobiegły końca.)',
+          scoring: [
+            '1 pkt – poprawny równoważnik w a) (bez osobowej formy czasownika, ten sam sens).',
+            '2 pkt – poprawne zdanie w b) (z osobową formą czasownika, ten sam sens).',
+          ],
+        },
+        {
+          id: 'oc25st',
+          points: 3,
+          q: 'W zdaniu „Mój młodszy brat szybko czyta komiksy.” wskaż związek główny, a potem wypisz po jednym związku zgody, rządu i przynależności.',
+          steps: [
+            'Związek główny: kto czyta? – brat czyta (podmiot + orzeczenie).',
+            'Zgoda: wyraz podrzędny odmienia się razem z nadrzędnym (młodszy brat → młodszego brata). Rząd: nadrzędny narzuca przypadek (czyta co? – komiksy; czytał komiksy – przypadek ten sam).',
+            'Przynależność: wyraz nieodmienny przylega do nadrzędnego (czyta jak? – szybko).',
+          ],
+          answer: 'Związek główny: brat czyta. Zgody: młodszy brat (albo: mój brat). Rządu: czyta komiksy. Przynależności: czyta szybko.',
+          scoring: [
+            '1 pkt – poprawny związek zgody (młodszy brat / mój brat).',
+            '2 pkt – poprawny związek rządu (czyta komiksy).',
+            '3 pkt – poprawny związek przynależności (czyta szybko).',
+          ],
+        },
+      ],
+    },
+    {
+      id: 'formy-uzytkowe',
+      name: 'Formy wypowiedzi: od ogłoszenia do CV',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), tworzenie wypowiedzi: kl. IV–VI III.2.1 (m.in. opis, w tym opis przeżyć wewnętrznych, list, sprawozdanie, dedykacja, zaproszenie, podziękowanie, ogłoszenie, życzenia, charakterystyka), III.2.3–4 (plan odtwórczy i twórczy, notatki), III.2.7 (współczesne formy komunikatów); kl. VII–VIII III.2.1 (recenzja, podanie, CV, list motywacyjny, wywiad), III.2.2 (streszczenie, parafraza). Informator CKE o egzaminie ósmoklasisty od r. szk. 2024/2025: zadania krótkiej odpowiedzi sprawdzające tworzenie form użytkowych – ogłoszenia i zaproszenia – oraz przykładowe zadanie na streszczenie (opisane tu zasady oceniania pochodzą z przykładowych zadań informatora). Opowiadanie, rozprawka i przemówienie – dział „Egzamin i wypracowanie”.',
+      theory: `
+        <h3>Na egzaminie: zaproszenie i ogłoszenie</h3>
+        <p>Według informatora CKE w części I arkusza mogą być zadania sprawdzające <b>formy użytkowe – ogłoszenie i zaproszenie</b>. W przykładowych zadaniach informatora taki tekst jest za <b>3 pkt</b>: 2 pkt za treść i formę, 1 pkt za poprawność.</p>
+        <table>
+          <tr><th></th><th>Zaproszenie</th><th>Ogłoszenie</th></tr>
+          <tr><td>Cel</td><td>zaprosić adresatów na wydarzenie i zachęcić do udziału</td><td>poinformować wielu odbiorców o wydarzeniu lub sprawie</td></tr>
+          <tr><td>5 elementów</td><td>kto zaprasza? kogo? na co? kiedy? gdzie?</td><td>kto ogłasza? dla kogo? o czym? kiedy? gdzie?</td></tr>
+          <tr><td>Zachęta</td><td colspan="2">gdy polecenie każe zachęcić – podaj <b>2 argumenty</b> (np. co ciekawego się wydarzy, co uczestnik zyska)</td></tr>
+          <tr><td>Język</td><td>zwroty grzecznościowe („Serdecznie zapraszamy…”), zwroty do adresatów z grzeczności wielką literą (Was, Wam)</td><td>zwięźle i konkretnie</td></tr>
+          <tr><td>Typowy błąd</td><td>brak nadawcy (podpisu), daty albo miejsca</td><td>brak informacji, kto ogłasza; zbędne opisy zamiast konkretów</td></tr>
+        </table>
+        <div class="tip">⚠️ Tak oceniano przykładowe zadania w informatorze CKE. <b>Treść i forma (0–2 pkt):</b> treść zgodna z poleceniem i 2 argumenty oraz <b>wszystkie 5 elementów</b> = 2 pkt, 4 elementy = 1 pkt, tylko 3 elementy = 0 pkt; 5 elementów, ale tylko 1 argument = 1 pkt. <b>Poprawność (0–1 pkt):</b> łącznie najwyżej <b>2 błędy</b> językowe, ortograficzne i interpunkcyjne. Oba kryteria ocenia się osobno.</div>
+        <h3>Inne formy z klas IV–VI</h3>
+        <table>
+          <tr><th>Forma – do czego służy</th><th>Co musi zawierać · ✘ typowy błąd</th></tr>
+          <tr><td><b>Życzenia</b> – z okazji świąt, urodzin, imienin</td><td>zwrot do adresata, okazja, treść życzeń, podpis<br>✘ <i>brak okazji albo podpisu; same ogólniki</i></td></tr>
+          <tr><td><b>Podziękowanie</b> – wyrażenie wdzięczności</td><td>komu dziękujesz, za co, kto dziękuje (podpis)<br>✘ <i>nie wiadomo, za co dziękujesz</i></td></tr>
+          <tr><td><b>Dedykacja</b> – krótki wpis, np. w książce podarowanej komuś</td><td>komu (np. „Kochanej Babci”), z jakiej okazji lub dlaczego, podpis, często data<br>✘ <i>brak adresata albo podpisu</i></td></tr>
+          <tr><td><b>List</b> – wiadomość do kogoś, kto jest daleko</td><td>miejscowość i data (prawy górny róg), zwrot do adresata, treść (wstęp, rozwinięcie, zakończenie), pozdrowienia, podpis; może być dopisek (PS)<br>✘ <i>brak daty, zwrotu do adresata albo podpisu</i></td></tr>
+          <tr><td><b>E-mail</b> (współczesna forma komunikatu)</td><td>temat wiadomości, powitanie, treść, pożegnanie, podpis<br>✘ <i>brak tematu; styl potoczny w wiadomości do nauczyciela lub urzędu</i></td></tr>
+          <tr><td><b>Sprawozdanie</b> – relacja z wydarzenia, w którym brałeś udział</td><td>co, gdzie, kiedy, kto uczestniczył; przebieg w kolejności, w jakiej się działo; na końcu ocena lub wrażenia<br>✘ <i>zmyślone zdarzenia jak w opowiadaniu; pomieszana kolejność</i></td></tr>
+          <tr><td><b>Opis</b> przedmiotu, miejsca, postaci</td><td>wstęp (co opisujesz), opis uporządkowany, np. od ogółu do szczegółu, zakończenie (ocena, wrażenie)<br>✘ <i>chaotyczne skakanie po szczegółach</i></td></tr>
+          <tr><td><b>Opis przeżyć wewnętrznych</b> – przedstawia uczucia</td><td>sytuacja, która wywołała uczucia; nazwy emocji i to, jak się zmieniały; objawy (drżące ręce, ściśnięte gardło); porównania<br>✘ <i>opowiadanie wydarzeń zamiast opisu uczuć</i></td></tr>
+          <tr><td><b>Charakterystyka</b> – przedstawienie postaci</td><td>kim jest postać, wygląd (krótko), cechy charakteru <b>poparte przykładami</b> zachowań, ocena postaci<br>✘ <i>lista cech bez przykładów; sam opis wyglądu</i></td></tr>
+          <tr><td><b>Plan</b> – odtwórczy (przeczytanego tekstu) lub twórczy (własnej wypowiedzi)</td><td>punkty w kolejności, zapisane <b>konsekwentnie</b>: same zdania albo same równoważniki zdań<br>✘ <i>mieszanie zdań i równoważników</i></td></tr>
+          <tr><td><b>Notatka</b> – zapis najważniejszych informacji</td><td>tekst ciągły, plan, tabela albo schemat; tylko kluczowe informacje<br>✘ <i>przepisywanie całych zdań z tekstu</i></td></tr>
+        </table>
+        <h3>Formy z klas VII–VIII</h3>
+        <table>
+          <tr><th>Forma – do czego służy</th><th>Co musi zawierać · ✘ typowy błąd</th></tr>
+          <tr><td><b>Recenzja</b> – ocena książki, filmu, spektaklu, wystawy</td><td>tytuł i twórca (autor, reżyser), krótka informacja o treści, ocena elementów dzieła z uzasadnieniem, ocena ogólna (polecam / nie polecam)<br>✘ <i>streszczenie całej fabuły z zakończeniem zamiast oceny; ocena bez uzasadnienia</i></td></tr>
+          <tr><td><b>Podanie</b> – oficjalna prośba do szkoły, urzędu, instytucji</td><td>miejscowość i data (prawy górny róg), dane nadawcy (lewy górny róg), adresat (po prawej), prośba i jej <b>uzasadnienie</b>, zwrot grzecznościowy, własnoręczny podpis; styl urzędowy<br>✘ <i>brak uzasadnienia albo podpisu; styl potoczny</i></td></tr>
+          <tr><td><b>CV</b> (życiorys) – przedstawienie kandydata do szkoły lub pracy</td><td>dane osobowe i kontaktowe, wykształcenie, doświadczenie, umiejętności (np. języki obce), zainteresowania; w punktach, od najnowszych informacji<br>✘ <i>pisanie CV jak opowiadania; informacje nieistotne dla adresata</i></td></tr>
+          <tr><td><b>List motywacyjny</b> – dołączony do CV; przekonuje, że jesteś dobrym kandydatem</td><td>miejscowość i data, dane nadawcy i adresata, zwrot do adresata, o co się ubiegasz, twoje umiejętności i motywacja (z przykładami), zakończenie z nadzieją na pozytywną odpowiedź, podpis<br>✘ <i>przepisanie CV; ogólniki („jestem pracowity”) bez przykładów</i></td></tr>
+          <tr><td><b>Wywiad</b> – rozmowa z ciekawą osobą zapisana jako pytania i odpowiedzi</td><td>wstęp (kim jest rozmówca), pytania i odpowiedzi oznaczone imionami lub inicjałami, podziękowanie na końcu<br>✘ <i>pytania, na które wystarczy odpowiedzieć „tak” albo „nie”</i></td></tr>
+        </table>
+        <div class="tip">📝 Opowiadanie, rozprawka, przemówienie (tekst argumentacyjny) i zapis dialogu – zob. dział <a href="#/s/polski/t/formy-wypowiedzi">„Egzamin i wypracowanie”</a>. To formy wypracowania z części II arkusza.</div>
+        <h3>Streszczenie i parafraza</h3>
+        <table>
+          <tr><th></th><th>Streszczenie</th><th>Parafraza</th></tr>
+          <tr><td>Co robi?</td><td>skraca tekst – zostają tylko najważniejsze informacje</td><td>przekształca tekst – ta sama treść innymi słowami, często z objaśnieniem</td></tr>
+          <tr><td>Długość</td><td>dużo krótsze od oryginału</td><td>podobna jak oryginał albo dłuższa</td></tr>
+          <tr><td>Zasady</td><td>własne słowa, kolejność jak w tekście; bez szczegółów, dialogów, cytatów i własnych ocen</td><td>zachowany sens i wszystkie myśli, prostszy język; bez dodawania własnych opinii</td></tr>
+        </table>
+        <div class="tip">⚠️ W przykładowym zadaniu informatora CKE na streszczenie trzeba było podać <b>temat</b> tekstu i <b>to, co na ten temat powiedziano</b>, zachowując <b>właściwy poziom uogólnienia</b> (bez drobnych szczegółów). Odpowiedź złożona w całości z fragmentów przepisanych z tekstu dostaje 0 pkt.</div>
+      `,
+      flashcards: [
+        ['Zaproszenie – 5 elementów', 'kto zaprasza? kogo? na co? kiedy? gdzie?'],
+        ['Ogłoszenie – 5 elementów', 'kto ogłasza? dla kogo? o czym? kiedy? gdzie?'],
+        ['Polecenie „zachęć” w zaproszeniu / ogłoszeniu', 'Podaj 2 argumenty'],
+        ['Punkt za poprawność w zaproszeniu / ogłoszeniu', 'Łącznie najwyżej 2 błędy (językowe, ortograficzne, interpunkcyjne)'],
+        ['Podanie – najważniejsze', 'Prośba z uzasadnieniem, dane nadawcy i adresata, data, podpis, styl urzędowy'],
+        ['CV', 'Dane, wykształcenie, umiejętności, zainteresowania – w punktach, od najnowszych'],
+        ['List motywacyjny', 'Dołączony do CV; przekonuje, że jesteś dobrym kandydatem – z przykładami'],
+        ['Recenzja', 'Informacja o dziele + ocena z uzasadnieniem; nie zdradza zakończenia'],
+        ['Wywiad', 'Wstęp o rozmówcy, pytania i odpowiedzi, podziękowanie'],
+        ['Streszczenie', 'Krótko, własnymi słowami, najważniejsze treści; bez ocen i cytatów'],
+        ['Parafraza', 'Ta sama treść innymi słowami, często z objaśnieniem; długość podobna'],
+        ['Charakterystyka', 'Kim jest postać, wygląd, cechy poparte przykładami, ocena'],
+        ['Plan – zasada zapisu', 'Konsekwentnie: same zdania albo same równoważniki'],
+        ['Sprawozdanie', 'Relacja z wydarzenia: co, gdzie, kiedy; przebieg po kolei; ocena'],
+      ],
+      questions: [
+        { id: 'yw4fog', q: 'Który element NIE należy do pięciu elementów zaproszenia ocenianych w zadaniach z informatora CKE?', options: ['kto zaprasza', 'kiedy odbywa się wydarzenie', 'ile kosztował wynajem sali', 'gdzie odbywa się wydarzenie'], answer: 2, explain: 'Pięć elementów: kto zaprasza? kogo? na co? kiedy? gdzie?' },
+        { id: 'ok1fb5', q: 'Polecenie brzmi: „Zredaguj ogłoszenie i zachęć do udziału w wydarzeniu”. Ile argumentów trzeba podać według zasad z informatora CKE, żeby dostać pełną liczbę punktów za treść?', options: ['jeden', 'dwa', 'trzy', 'żadnego'], answer: 1, explain: '5 elementów i tylko 1 argument to 1 pkt zamiast 2.' },
+        { id: 'oh1o9h', q: 'Ogłoszenie ma wszystkie 5 elementów i dwa argumenty, ale łącznie 4 błędy ortograficzne i interpunkcyjne. Ile punktów (w skali 0–3 jak w informatorze CKE) dostanie?', options: ['3', '2', '1', '0'], answer: 1, explain: '2 pkt za treść i formę + 0 pkt za poprawność (punkt jest za najwyżej 2 błędy).' },
+        { id: 'rcr1ij', q: 'Czym zaproszenie różni się od ogłoszenia?', options: ['zaproszenie nie podaje miejsca wydarzenia', 'zaproszenie zwraca się do adresatów i zaprasza ich do udziału, ogłoszenie informuje szerokie grono odbiorców', 'ogłoszenie zawsze jest pisane wierszem', 'niczym się nie różnią'], answer: 1 },
+        { id: 'lp08ud', q: 'Który element jest obowiązkowy w podaniu?', options: ['uzasadnienie prośby', 'dialog', 'pytanie retoryczne', 'puenta'], answer: 0 },
+        { id: 'b4puff', q: 'Gdzie w podaniu zapisuje się miejscowość i datę?', options: ['pod podpisem', 'w lewym dolnym rogu', 'w prawym górnym rogu', 'nie zapisuje się ich'], answer: 2 },
+        { id: 'ovgznp', q: 'Czym streszczenie różni się od parafrazy?', options: ['streszczenie zawiera ocenę tekstu, a parafraza nie', 'parafraza jest zawsze dużo krótsza od streszczenia', 'niczym – to dwie nazwy tego samego', 'streszczenie skraca tekst do najważniejszych informacji, a parafraza oddaje całą treść innymi słowami'], answer: 3 },
+        { id: 'dqykmo', q: 'Czego NIE powinno być w streszczeniu?', options: ['najważniejszych wydarzeń', 'własnych ocen i dialogów', 'kolejności wydarzeń jak w tekście', 'informacji o temacie tekstu'], answer: 1 },
+        { id: 'ul5uql', q: 'Prawda czy fałsz?\nStreszczenie złożone w całości z przepisanych zdań tekstu jest dobre, bo wiernie oddaje treść.', options: ['Prawda', 'Fałsz'], answer: 1, noShuffle: true, explain: 'Streszczamy własnymi słowami. W przykładowym zadaniu CKE taka odpowiedź dostaje 0 pkt.' },
+        { id: 'vm06dj', q: 'Która wypowiedź jest parafrazą przysłowia „Kto pyta, nie błądzi”?', options: ['Pytanie to błąd.', 'Ten, kto pyta, gdy czegoś nie wie, nie popełnia błędów.', 'Błądzić jest rzeczą ludzką.', 'Kto nie pyta, ten pyta.'], answer: 1 },
+        { id: 'a4f6eo', q: 'Co jest najważniejsze w recenzji?', options: ['dokładne opowiedzenie zakończenia', 'ocena dzieła z uzasadnieniem', 'dialog bohaterów', 'życiorys aktorów'], answer: 1 },
+        { id: '1lm4mf', q: 'Jak zwykle układa się informacje w CV?', options: ['jak opowiadanie, od dzieciństwa', 'wierszem', 'w formie dialogu', 'w punktach, od najnowszych'], answer: 3 },
+        { id: '7g536l', q: 'Do czego służy list motywacyjny?', options: ['opowiada historię rodziny', 'zaprasza na urodziny', 'przekonuje adresata, że jesteś dobrym kandydatem, np. do szkoły', 'streszcza lekturę'], answer: 2 },
+        { id: 'ttps54', q: 'Które pytanie najlepiej nadaje się do wywiadu z podróżnikiem?', options: ['Czy lubi pan podróże?', 'Czy był pan kiedyś w górach?', 'Co najbardziej zaskoczyło pana podczas ostatniej wyprawy?', 'Czy ma pan plecak?'], answer: 2, explain: 'Pytanie otwarte zachęca do ciekawej odpowiedzi; na pozostałe wystarczy „tak” albo „nie”.' },
+        { id: 'nzcgsn', q: 'Co musi się znaleźć w charakterystyce postaci?', options: ['dialog', 'dokładne streszczenie utworu', 'data i podpis', 'cechy charakteru poparte przykładami zachowań'], answer: 3 },
+        { id: '5mhqkz', q: 'Który plan jest zapisany poprawnie (konsekwentnie)?', options: ['1. Wyjazd na obóz. 2. Bohater gubi się w lesie. 3. Szczęśliwy powrót.', '1. Wyjazd na obóz. 2. Zgubienie się w lesie. 3. Szczęśliwy powrót.', '1. Bohater wyjeżdża. 2. Zgubienie się. 3. Wrócił szczęśliwie.', '1. Wyjazd. 2. Gubi się. 3. Powrót.'], answer: 1, explain: 'Wszystkie punkty to równoważniki zdań. W pozostałych zdania mieszają się z równoważnikami.' },
+        { id: 'sdgejp', q: 'Czym sprawozdanie różni się od opowiadania?', options: ['sprawozdanie relacjonuje wydarzenie, w którym się uczestniczyło, w kolejności, w jakiej przebiegało', 'sprawozdanie musi mieć dialog i zwrot akcji', 'sprawozdanie pisze się wierszem', 'niczym się nie różni'], answer: 0 },
+        { id: '3f06ox', q: 'Co jest najważniejsze w opisie przeżyć wewnętrznych?', options: ['dokładny opis wyglądu pokoju', 'przedstawienie uczuć i tego, jak się zmieniały', 'podanie daty i miejsca', 'lista wydarzeń dnia'], answer: 1 },
+        { id: 'xn2v17', q: 'Co musi zawierać podziękowanie?', options: ['cenę prezentu', 'argumenty i kontrargumenty', 'informację, komu i za co dziękujemy, oraz podpis', 'datę urodzenia adresata'], answer: 2 },
+        { id: '4yecuv', q: 'Która informacja jest zbędna w ogłoszeniu o szkolnym kiermaszu ciast?', options: ['data i godzina', 'miejsce', 'kto organizuje kiermasz', 'przepis babci na sernik'], answer: 3, explain: 'Ogłoszenie ma być zwięzłe – podaje tylko potrzebne informacje.' },
+      ],
+      tasks: [
+        {
+          id: 'd9el6m',
+          points: 3,
+          q: 'Zredaguj zaproszenie na szkolny Dzień Gier Planszowych organizowany przez samorząd uczniowski. Zachęć do udziału, podając dwa argumenty. Wymyśl brakujące szczegóły. W ocenie liczy się też poprawność językowa, ortograficzna i interpunkcyjna.',
+          steps: [
+            'Sprawdź 5 elementów: kto zaprasza (samorząd), kogo (np. uczniów klas 4–8), na co (Dzień Gier Planszowych), kiedy (data i godzina), gdzie (np. biblioteka szkolna).',
+            'Dodaj dwa argumenty: co ciekawego się wydarzy i co uczestnik zyska.',
+            'Użyj zwrotów grzecznościowych („Serdecznie zapraszamy…”) i przeczytaj tekst jeszcze raz – szukaj błędów.',
+          ],
+          answer: 'Zaproszenie. Samorząd Uczniowski serdecznie zaprasza uczniów klas 4–8 na Dzień Gier Planszowych, który odbędzie się 14 marca w godzinach 15.00–18.00 w bibliotece szkolnej. Czekają na Was dziesiątki gier – od szybkich karcianek po długie strategie – a zasady wytłumaczą Wam doświadczeni gracze. To także świetna okazja, by poznać kolegów i koleżanki z innych klas. Do zobaczenia! Samorząd Uczniowski',
+          scoring: [
+            'Treść i forma: 1 pkt – treść zgodna z poleceniem, 2 argumenty, 4 z 5 elementów (albo 5 elementów i 1 argument).',
+            'Treść i forma: 2 pkt – treść zgodna z poleceniem, 2 argumenty i wszystkie 5 elementów (kto, kogo, na co, kiedy, gdzie).',
+            'Poprawność (oceniana osobno): 1 pkt – łącznie najwyżej 2 błędy językowe, ortograficzne i interpunkcyjne. Punktacja orientacyjna, wzorowana na przykładach z informatora CKE.',
+          ],
+        },
+        {
+          id: 'pypo2p',
+          points: 2,
+          q: 'Streść akapit w jednym–dwóch zdaniach (do 30 wyrazów): „Wielu uczniów zapomina treść lektury już kilka tygodni po jej przeczytaniu. Dobrym sposobem, by temu zapobiec, jest prowadzenie dziennika czytelniczego. Wystarczy po każdym rozdziale zapisać w zeszycie kilka zdań: co się wydarzyło, kto brał w tym udział i co nas zaskoczyło. Takie notatki zajmują tylko kilka minut, a przed sprawdzianem pozwalają szybko przypomnieć sobie fabułę. Co więcej, zapisując własne wrażenia, uczymy się formułować opinie, które przydają się później w wypracowaniu.”',
+          steps: [
+            'Ustal temat: o czym jest akapit? – o prowadzeniu dziennika czytelniczego.',
+            'Ustal, co autor o tym mówi: dziennik pomaga zapamiętać treść lektury i uczy formułowania opinii.',
+            'Pomiń szczegóły (kilka minut, po każdym rozdziale, w zeszycie) i pisz własnymi słowami – nie przepisuj zdań.',
+          ],
+          answer: 'Tekst dotyczy prowadzenia dziennika czytelniczego. Autor przekonuje, że regularne, krótkie notatki z lektury pomagają zapamiętać jej treść i uczą formułowania własnych opinii.',
+          scoring: [
+            '1 pkt – poprawnie podany temat (dziennik czytelniczy) i to, co autor o nim mówi (pomaga zapamiętać lekturę, uczy formułowania opinii).',
+            '2 pkt – właściwy poziom uogólnienia: bez drobnych szczegółów, własnymi słowami, nie przepisane z tekstu.',
+          ],
+        },
+        {
+          id: 'j59www',
+          points: 2,
+          q: 'Sparafrazuj zdanie z regulaminu wycieczki tak, żeby zrozumiał je młodszy uczeń: „Uczestnicy wycieczki zobowiązani są do bezwzględnego przestrzegania poleceń opiekunów oraz niezwłocznego informowania ich o wszelkich problemach zdrowotnych.”',
+          steps: [
+            'Parafraza zachowuje sens i wszystkie informacje, ale wyraża je innymi, prostszymi słowami.',
+            'Zdanie zawiera dwie informacje: trzeba słuchać opiekunów i od razu mówić im o złym samopoczuciu.',
+            'Zamień trudne wyrazy: zobowiązani są → trzeba / musisz; bezwzględnego → zawsze; niezwłocznego → od razu.',
+          ],
+          answer: 'Na wycieczce musisz zawsze słuchać opiekunów i od razu im powiedzieć, jeśli źle się poczujesz.',
+          scoring: [
+            '1 pkt – zachowane obie informacje: słuchanie poleceń opiekunów oraz natychmiastowe informowanie o problemach zdrowotnych.',
+            '2 pkt – własne, prostsze słowa (bez „zobowiązani”, „bezwzględnego”, „niezwłocznego”), zdanie poprawne, bez dodawania nowych treści.',
+          ],
+        },
       ],
     },
     {
       id: 'rodzaje-literackie',
       name: 'Rodzaje i gatunki literackie',
-      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), kl. VII–VIII I.1.1–6: rodzaje i gatunki (komedia, fraszka, pieśń, tren, ballada, epopeja, tragedia), elementy dramatu, neologizm, inwokacja, symbol, alegoria, komizm, ironia; I.2.5: reportaż, wywiad, artykuł.',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), kl. VII–VIII I.1.1–6: rodzaje i gatunki (komedia, fraszka, pieśń, tren, ballada, epopeja, tragedia), elementy dramatu, neologizm, inwokacja, symbol, alegoria, komizm, ironia; I.2.5: reportaż, wywiad, artykuł. Kl. IV–VI I.1.3: baśń, legenda, bajka, hymn, przypowieść, mit, opowiadanie, nowela, powieść oraz odmiany powieści i opowiadania (obyczajowe, przygodowe, detektywistyczne, fantastycznonaukowe, fantasy). Przypis 7 podstawy: na egzaminie nie obowiązuje znajomość treści i problematyki krótkich utworów kl. IV–VI – obowiązuje rozpoznawanie gatunków.',
       theory: `
         <table>
           <tr><th>Rodzaj</th><th>Cechy</th><th>Gatunki</th></tr>
@@ -965,6 +1363,30 @@ window.SUBJECTS.push({
           <li><b>Fraszka</b> – krótki, żartobliwy lub refleksyjny utwór zakończony puentą.</li>
           <li><b>Tren</b> – utwór żałobny po śmierci kogoś bliskiego.</li>
         </ul>
+        <h3>Gatunki z klas IV–VI</h3>
+        <p>Treści mitów, bajek czy legend z klas IV–VI na egzaminie się nie sprawdza – ale trzeba umieć <b>rozpoznać gatunek po jego cechach</b>.</p>
+        <table>
+          <tr><th>Gatunek</th><th>Najważniejsze cechy</th></tr>
+          <tr><td><b>Baśń</b></td><td>czas i miejsce <b>nieokreślone</b> („dawno, dawno temu, za siedmioma górami”), czary i fantastyczne postacie, walka dobra ze złem – dobro zwycięża, zło zostaje ukarane</td></tr>
+          <tr><td><b>Legenda</b></td><td>opowieść o dawnych wydarzeniach związana z <b>konkretnym, istniejącym miejscem</b> lub postacią z przeszłości, połączona z elementami fantastycznymi; często wyjaśnia np. pochodzenie nazwy</td></tr>
+          <tr><td><b>Mit</b></td><td>opowieść o <b>bogach i herosach</b>; wyjaśnia powstanie świata, zjawiska przyrody, sens ludzkiego losu (np. mity greckie)</td></tr>
+          <tr><td><b>Bajka</b></td><td>krótki utwór, często wierszowany, z <b>morałem</b> (pouczeniem); bohaterowie – zwykle zwierzęta – uosabiają ludzkie cechy (lis = przebiegłość)</td></tr>
+          <tr><td><b>Przypowieść</b></td><td>krótka opowieść, w której zwykłe zdarzenia mają <b>drugie, przenośne znaczenie</b>; uczy prawd moralnych lub religijnych (np. przypowieści biblijne)</td></tr>
+          <tr><td><b>Hymn</b></td><td>uroczysta, podniosła <b>pieśń pochwalna</b> (liryka), np. na cześć Boga, ojczyzny, ważnej idei</td></tr>
+          <tr><td><b>Opowiadanie</b></td><td>krótszy utwór prozą, niewielu bohaterów, prosta fabuła; budowa luźniejsza niż w noweli</td></tr>
+          <tr><td><b>Nowela</b></td><td>krótka proza o <b>zwartej</b> budowie: jeden wątek, wyraźny punkt kulminacyjny, często puenta</td></tr>
+          <tr><td><b>Powieść</b></td><td>obszerny utwór prozą, <b>wielowątkowy</b>, wielu bohaterów, rozbudowany świat przedstawiony</td></tr>
+        </table>
+        <h3>Odmiany powieści i opowiadania</h3>
+        <ul>
+          <li><b>obyczajowa</b> – codzienne życie, rodzina, szkoła, relacje między ludźmi;</li>
+          <li><b>przygodowa</b> – wartka akcja, podróże, niebezpieczeństwa;</li>
+          <li><b>detektywistyczna</b> (kryminalna) – zagadka przestępstwa, którą rozwiązuje detektyw;</li>
+          <li><b>fantastycznonaukowa</b> (science fiction) – przyszłość, wynalazki, roboty, podróże kosmiczne – fantastyka oparta na nauce i technice;</li>
+          <li><b>fantasy</b> – wymyślony świat z magią i fantastycznymi istotami (smoki, krasnoludy, czarodzieje), np. „Hobbit” albo „Opowieści z Narnii”;</li>
+          <li><b>historyczna</b> – akcja w przeszłości, obok fikcyjnych postaci występują historyczne („Quo vadis”).</li>
+        </ul>
+        <div class="tip">💡 Baśń czy legenda? Zapytaj: <b>gdzie</b> to się dzieje? „Za siedmioma górami” – baśń. W prawdziwym mieście, nad prawdziwą rzeką – legenda. Bajka czy przypowieść? Bajka ma morał i zwierzęta, przypowieść – ludzi i ukryte, przenośne znaczenie.</div>
         <h3>Komizm w komedii</h3>
         <p><b>sytuacyjny</b> (zabawne sytuacje), <b>słowny</b> (zabawny język), <b>postaci</b> (śmieszne zachowanie, wygląd).</p>
         <h3>Pojęcia z podstawy (kl. VII–VIII)</h3>
@@ -976,7 +1398,7 @@ window.SUBJECTS.push({
           <li><b>Neologizm</b> – nowo utworzony wyraz.</li>
         </ul>
         <h3>Teksty nieliterackie</h3>
-        <p>Gatunki dziennikarskie: <b>reportaż</b> (relacja z wydarzeń oparta na faktach, z elementami opisu), <b>wywiad</b> (rozmowa w formie pytań i odpowiedzi), <b>artykuł</b> (tekst prasowy na dany temat). Odróżniaj literaturę piękną od tekstów naukowych, popularnonaukowych i publicystycznych.</p>
+        <p>Gatunki dziennikarskie: <b>reportaż</b> (relacja z wydarzeń oparta na faktach, z elementami opisu), <b>wywiad</b> (rozmowa w formie pytań i odpowiedzi), <b>artykuł</b> (tekst prasowy na dany temat). Odróżniaj literaturę piękną od tekstów naukowych, popularnonaukowych i publicystycznych. Więcej – w dziale „Teksty nieliterackie i teksty kultury”.</p>
       `,
       flashcards: [
         ['Didaskalia', 'Tekst poboczny w dramacie – wskazówki dla aktorów i reżysera'],
@@ -985,6 +1407,14 @@ window.SUBJECTS.push({
         ['Synkretyzm rodzajowy', 'Łączenie cech epiki, liryki i dramatu (np. ballada)'],
         ['Nowela', 'Krótka proza, jeden wątek, punkt kulminacyjny'],
         ['Epopeja', 'Obszerny utwór o losach zbiorowości, np. „Pan Tadeusz”'],
+        ['Baśń', 'Nieokreślony czas i miejsce, czary, dobro zwycięża zło'],
+        ['Legenda', 'Opowieść związana z konkretnym miejscem lub postacią z przeszłości, z elementami fantastycznymi'],
+        ['Mit', 'Opowieść o bogach i herosach, wyjaśnia powstanie świata i zjawiska przyrody'],
+        ['Bajka', 'Krótki utwór z morałem; zwierzęta uosabiają ludzkie cechy'],
+        ['Przypowieść', 'Krótka opowieść z drugim, przenośnym znaczeniem – uczy prawd moralnych'],
+        ['Hymn', 'Uroczysta pieśń pochwalna (na cześć Boga, ojczyzny, idei)'],
+        ['Powieść a opowiadanie', 'Powieść – obszerna, wielowątkowa; opowiadanie – krótsze, prostsza fabuła'],
+        ['Odmiany powieści', 'obyczajowa, przygodowa, detektywistyczna, fantastycznonaukowa, fantasy, historyczna'],
       ],
       questions: [
         { id: 'vfzzkj', q: 'Jak nazywa się tekst poboczny w dramacie (wskazówki dla aktorów)?', options: ['didaskalia', 'monolog', 'prolog', 'puenta'], answer: 0 },
@@ -1008,6 +1438,19 @@ window.SUBJECTS.push({
         { id: 'yw5ql7', q: 'Na co zwykle dzieli się tekst dramatu?', options: ['na akty i sceny', 'na zwrotki i wersy', 'na księgi z inwokacją', 'na trzy rodzaje komizmu'], answer: 0 },
         { id: 'eu17dq', q: 'Komizm słowny polega na…', options: ['śmiesznych sytuacjach', 'zabawnym języku postaci', 'śmiesznym wyglądzie postaci', 'smutnym zakończeniu'], answer: 1 },
         { id: 'qt0n1u', q: 'Relacja z prawdziwych wydarzeń oparta na faktach, z elementami opisu, to…', options: ['wywiad', 'reportaż', 'fraszka', 'tren'], answer: 1 },
+        { id: '977cge', q: 'Krótki utwór z morałem, w którym zwierzęta mają ludzkie cechy (np. lis jest przebiegły), to…', options: ['bajka', 'hymn', 'legenda', 'powieść przygodowa'], answer: 0 },
+        { id: 'cegc0p', q: 'Opowieść o bogach i herosach, która wyjaśnia np. powstanie świata albo zjawiska przyrody, to…', options: ['bajka', 'nowela', 'mit', 'fraszka'], answer: 2 },
+        { id: 'rxt614', q: 'Czym legenda różni się od baśni?', options: ['w legendzie nie ma żadnych elementów fantastycznych', 'legenda jest związana z konkretnym, istniejącym miejscem lub postacią z przeszłości, a w baśni czas i miejsce są nieokreślone', 'baśń zawsze jest pisana wierszem', 'legenda zawsze kończy się morałem wypowiedzianym przez zwierzę'], answer: 1 },
+        { id: 'tqkrur', q: '„Dawno, dawno temu, za siedmioma górami…” – taki początek, nieokreślony czas i miejsce akcji oraz zwycięstwo dobra nad złem to cechy…', options: ['reportażu', 'hymnu', 'powieści historycznej', 'baśni'], answer: 3 },
+        { id: 'm6mdkj', q: 'Uroczysta pieśń pochwalna, np. na cześć Boga lub ojczyzny, to…', options: ['tren', 'fraszka', 'hymn', 'bajka'], answer: 2 },
+        { id: '8fneub', q: 'Krótka opowieść, w której zwykłe zdarzenia mają drugie, przenośne znaczenie i uczą prawd moralnych lub religijnych, to…', options: ['przypowieść', 'powieść detektywistyczna', 'komedia', 'powieść fantastycznonaukowa'], answer: 0 },
+        { id: '5xbi9l', q: 'Obszerny utwór prozą, wielowątkowy, z wieloma bohaterami, to…', options: ['opowiadanie', 'powieść', 'fraszka', 'bajka'], answer: 1 },
+        { id: 'upsb41', q: 'Do jakiej odmiany powieści należy „Hobbit” J.R.R. Tolkiena (czarodziej, krasnoludy, smok)?', options: ['obyczajowej', 'detektywistycznej', 'fantastycznonaukowej', 'fantasy'], answer: 3, explain: 'Wymyślony świat z magią i fantastycznymi istotami to fantasy. Science fiction opiera fantastykę na nauce i technice.' },
+        { id: 'mrvy39', q: 'Powieść, w której detektyw rozwiązuje zagadkę przestępstwa, to powieść…', options: ['obyczajowa', 'fantasy', 'detektywistyczna (kryminalna)', 'historyczna'], answer: 2 },
+        { id: 'io89zr', q: 'Akcja w przyszłości, podróże kosmiczne, roboty i wynalazki to cechy…', options: ['powieści fantastycznonaukowej (science fiction)', 'legendy', 'powieści obyczajowej', 'przypowieści'], answer: 0 },
+        { id: 'enqqi4', q: 'Powieść o codziennym życiu rodziny i szkoły, o przyjaźni i pierwszych miłościach – bez czarów i bez wyprawy po skarb – to powieść…', options: ['fantasy', 'fantastycznonaukowa', 'historyczna', 'obyczajowa'], answer: 3 },
+        { id: '12oj1x', q: 'Prawda czy fałsz?\nNa egzaminie ósmoklasisty trzeba umieć rozpoznać cechy mitu czy bajki, ale nie sprawdza się znajomości treści mitów i bajek z klas IV–VI.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Tak stanowi przypis 7 podstawy programowej; informator CKE wymienia te utwory jako takie, do których można się odwołać, ale których znajomość nie jest sprawdzana.' },
+        { id: 'oggc4x', q: 'Czym nowela różni się od opowiadania?', options: ['nowela jest zawsze pisana wierszem', 'nowela ma zwartą budowę: jeden wątek, wyraźny punkt kulminacyjny, często puentę', 'opowiadanie jest zawsze dłuższe od powieści', 'niczym – to dwie nazwy tego samego'], answer: 1 },
       ],
       tasks: [
         {
@@ -1023,6 +1466,383 @@ window.SUBJECTS.push({
           scoring: [
             '1 pkt – jedna cecha komedii poprawnie nazwana i zilustrowana przykładem z „Zemsty”.',
             '2 pkt – druga cecha komedii poprawnie nazwana i zilustrowana przykładem z „Zemsty”.',
+          ],
+        },
+      ],
+    },
+    {
+      id: 'budowa-utworu',
+      name: 'Budowa utworu: wers, narrator, wątek',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), kl. IV–VI: I.1.1–2 (świat przedstawiony, fikcja literacka, elementy realistyczne i fantastyczne), I.1.5–6 (tytuł, podtytuł, motto, puenta, punkt kulminacyjny; wers, rym, strofa, refren), I.1.8–13 (dialog i monolog, podmiot liryczny, narrator, narracja pierwszo- i trzecioosobowa, bohaterowie główni i drugoplanowi, tematyka i problematyka, wątek główny i wątki poboczne). Punkt kulminacyjny, puenta, dialog i monolog to też elementy ocenianego opowiadania (informator CKE, kryteria wypracowania).',
+      theory: `
+        <h3>Świat przedstawiony</h3>
+        <p>To wszystko, co dzieje się w utworze: <b>bohaterowie</b>, <b>wydarzenia</b> (fabuła), <b>czas</b> i <b>miejsce akcji</b>. Świat przedstawiony to <b>fikcja literacka</b> – wymyślił go autor, nawet jeśli przypomina prawdziwy. Wyjątek: literatura faktu, np. „Kamienie na szaniec”, opowiada o prawdziwych ludziach i wydarzeniach.</p>
+        <table>
+          <tr><th>Elementy realistyczne</th><th>Elementy fantastyczne</th></tr>
+          <tr><td>mogłyby się zdarzyć naprawdę</td><td>są niemożliwe w rzeczywistości</td></tr>
+          <tr><td>„Balladyna”: siostry zbierają maliny</td><td>„Balladyna”: nimfa Goplana, Skierka, Chochlik</td></tr>
+          <tr><td>„Opowieść wigilijna”: skąpy Scrooge, rodzina Cratchitów</td><td>„Opowieść wigilijna”: duch Marleya i trzy duchy</td></tr>
+        </table>
+        <h3>Kto mówi w utworze?</h3>
+        <ul>
+          <li><b>Narrator</b> (epika) – opowiada historię.
+            <ul>
+              <li><b>Narracja pierwszoosobowa</b> – narrator jest bohaterem i mówi „ja”: <i>„Wszedłem do klasy i od razu poczułem, że coś jest nie tak.”</i> Tak opowiada Adaś Niezgódka w „Akademii Pana Kleksa”. Funkcja: poznajemy z bliska myśli i uczucia bohatera, ale widzimy świat tylko jego oczami.</li>
+              <li><b>Narracja trzecioosobowa</b> – narrator stoi z boku i mówi o bohaterach „on, ona, oni”: <i>„Ania weszła do klasy i od razu poczuła, że coś jest nie tak.”</i> Funkcja: szerszy, bardziej obiektywny obraz; narrator często wie o bohaterach wszystko.</li>
+            </ul></li>
+          <li><b>Podmiot liryczny</b> (liryka) – „ja” mówiące w wierszu. Nie utożsamiaj go automatycznie z autorem!</li>
+          <li><b>Dialog</b> – rozmowa co najmniej dwóch postaci; ożywia akcję i pokazuje bohaterów przez to, jak mówią. <b>Monolog</b> – dłuższa wypowiedź jednej postaci (do siebie lub do innych); odsłania jej myśli, uczucia i zamiary.</li>
+        </ul>
+        <h3>Bohaterowie</h3>
+        <p><b>Bohater główny</b> – w centrum wydarzeń, wokół niego toczy się akcja (często jest tytułowy). <b>Bohaterowie drugoplanowi</b> – ważni dla fabuły, ale nie są w centrum. Przykład: w „Hobbicie” głównym bohaterem jest Bilbo, drugoplanowymi m.in. Gandalf i Thorin.</p>
+        <h3>Fabuła: wątki, punkt kulminacyjny, puenta</h3>
+        <ul>
+          <li><b>Wątek</b> – ciąg zdarzeń związanych z jedną sprawą lub postacią. <b>Wątek główny</b> jest najważniejszy, <b>wątki poboczne</b> mu towarzyszą. „Zemsta”: wątek główny – spór Cześnika i Rejenta o mur graniczny; wątek poboczny – miłość Wacława i Klary (to on prowadzi do zakończenia sporu).</li>
+          <li><b>Punkt kulminacyjny</b> – moment największego napięcia; potem akcja zmierza do rozwiązania. W „Latarniku” to noc, gdy Skawiński zaczytany w „Panu Tadeuszu” nie zapala latarni.</li>
+          <li><b>Puenta</b> – zaskakujące, błyskotliwe zakończenie, które podsumowuje utwór (typowe dla fraszki, anegdoty, noweli).</li>
+        </ul>
+        <h3>Tematyka i problematyka</h3>
+        <p><b>Tematyka</b> – <i>o czym</i> jest utwór (jakie sprawy i zdarzenia przedstawia). <b>Problematyka</b> – <i>nad czym</i> każe się zastanowić (jakie ważne problemy i pytania stawia). „Latarnik”: tematyka – losy starego tułacza, który zostaje latarnikiem w Aspinwall; problematyka – tęsknota za ojczyzną. „Balladyna”: problematyka – żądza władzy, wina i kara.</p>
+        <h3>Elementy konstrukcyjne</h3>
+        <table>
+          <tr><th>Element</th><th>Czym jest i po co jest</th></tr>
+          <tr><td>Tytuł</td><td>zapowiada temat, zaciekawia, może mieć sens przenośny (częste zadanie: „Jaki związek z treścią ma tytuł?”)</td></tr>
+          <tr><td>Podtytuł</td><td>dodatkowa informacja pod tytułem, np. o gatunku albo temacie</td></tr>
+          <tr><td>Motto</td><td>cytat z innego utworu umieszczony przed tekstem; podpowiada, jak odczytać całość</td></tr>
+          <tr><td>Punkt kulminacyjny</td><td>buduje napięcie, jest szczytem akcji</td></tr>
+          <tr><td>Puenta</td><td>zaskakuje, podsumowuje, skłania do refleksji</td></tr>
+        </table>
+        <h3>Wiersz: wers, strofa, rym, refren</h3>
+        <ul>
+          <li><b>Wers</b> – pojedyncza linijka wiersza.</li>
+          <li><b>Strofa</b> (zwrotka) – grupa wersów oddzielona odstępem.</li>
+          <li><b>Rym</b> – współbrzmienie zakończeń wyrazów, zwykle na końcu wersów. Rymy <b>parzyste</b> (aabb) – rymują się sąsiednie wersy; <b>przeplatane</b> (abab) – co drugi wers.</li>
+          <li><b>Refren</b> – wers lub kilka wersów powtarzanych w wierszu, np. po każdej strofie (jak w piosence).</li>
+        </ul>
+        <p>Przykład rymów parzystych – „Pan Tadeusz”, księga I (brzmienie za informatorem CKE): „Śród takich pól przed laty, nad brzegiem <b>ruczaju</b>, / Na pagórku niewielkim, we brzozowym <b>gaju</b>, / Stał dwór szlachecki, z drzewa, lecz <b>podmurowany</b>; / Świeciły się z daleka pobielane <b>ściany</b>”.</p>
+      `,
+      flashcards: [
+        ['Świat przedstawiony', 'Bohaterowie, wydarzenia, czas i miejsce akcji'],
+        ['Fikcja literacka', 'Świat wymyślony przez autora, nawet jeśli przypomina prawdziwy'],
+        ['Narracja pierwszoosobowa', 'Narrator jest bohaterem i mówi „ja”, np. Adaś Niezgódka w „Akademii Pana Kleksa”'],
+        ['Narracja trzecioosobowa', 'Narrator stoi z boku i mówi „on, ona, oni”'],
+        ['Dialog a monolog', 'Dialog – rozmowa co najmniej dwóch postaci; monolog – dłuższa wypowiedź jednej postaci'],
+        ['Bohater główny a drugoplanowy', 'Główny – w centrum akcji; drugoplanowy – ważny, ale nie w centrum'],
+        ['Wątek główny i poboczny', '„Zemsta”: spór o mur (główny), miłość Wacława i Klary (poboczny)'],
+        ['Punkt kulminacyjny', 'Moment największego napięcia w utworze'],
+        ['Puenta', 'Zaskakujące, błyskotliwe zakończenie'],
+        ['Motto', 'Cytat umieszczony przed tekstem, podpowiada sens całości'],
+        ['Tematyka a problematyka', 'O czym jest utwór a jakie problemy i pytania stawia'],
+        ['Wers, strofa', 'Wers – linijka wiersza; strofa – grupa wersów (zwrotka)'],
+        ['Refren', 'Powtarzany wers lub kilka wersów, np. po każdej strofie'],
+      ],
+      questions: [
+        { id: 'mokdba', q: 'Jak nazywa się pojedyncza linijka wiersza?', options: ['strofa', 'wers', 'refren', 'rym'], answer: 1 },
+        { id: 'zrv1jb', q: 'Grupa wersów oddzielona w wierszu odstępem to…', options: ['strofa (zwrotka)', 'refren', 'puenta', 'motto'], answer: 0 },
+        { id: 'ffjlra', q: 'Wers lub kilka wersów powtarzanych w wierszu, np. po każdej zwrotce, to…', options: ['rym', 'motto', 'refren', 'monolog'], answer: 2 },
+        { id: 'hocbmh', q: 'Które wyrazy się rymują?', options: ['pola – lasy', 'ruczaju – gaju', 'dom – most', 'ściany – ławka'], answer: 1, explain: 'Rymują się wyrazy o podobnie brzmiących zakończeniach: ruczAJU – gAJU (to rym z „Pana Tadeusza”).' },
+        { id: '8b19ao', q: 'Wersy wiersza kończą się kolejno słowami: dom – kot – tom – płot. Jaki to układ rymów?', options: ['parzysty (aabb)', 'przeplatany (abab)', 'brak rymów', 'jeden rym we wszystkich wersach'], answer: 1, explain: 'Rymują się wersy 1 i 3 (dom – tom) oraz 2 i 4 (kot – płot) – co drugi wers, czyli rym przeplatany.' },
+        { id: 'wj944f', q: '„Wszedłem do klasy i od razu poczułem, że coś jest nie tak.” – jaka to narracja?', options: ['trzecioosobowa', 'prowadzona przez podmiot liryczny', 'pierwszoosobowa', 'zapisana w didaskaliach'], answer: 2, explain: 'Formy „wszedłem”, „poczułem” – narrator mówi o sobie, jest bohaterem.' },
+        { id: 'l9l08p', q: '„Akademię Pana Kleksa” opowiada jeden z uczniów, Adaś Niezgódka. To narracja…', options: ['pierwszoosobowa', 'trzecioosobowa', 'dramatyczna', 'liryczna'], answer: 0 },
+        { id: '87zelu', q: 'Jaką funkcję najczęściej pełni narracja pierwszoosobowa?', options: ['zapewnia całkowicie obiektywny obraz wydarzeń', 'pozwala z bliska poznać myśli i uczucia narratora-bohatera', 'zastępuje wszystkie dialogi', 'dzieli utwór na akty i sceny'], answer: 1 },
+        { id: 'jpllkh', q: 'Narrator trzecioosobowy…', options: ['zawsze jest głównym bohaterem', 'występuje tylko w wierszach', 'to inaczej podmiot liryczny', 'opowiada o bohaterach z boku, używając form „on”, „ona”, „oni”'], answer: 3 },
+        { id: 'xafgho', q: 'Prawda czy fałsz?\nPodmiot liryczny to zawsze sam autor wiersza.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Podmiot liryczny to „ja” mówiące w wierszu – poeta może mówić czyimś głosem, np. dziecka, żołnierza, przedmiotu.' },
+        { id: 'i8zfsq', q: 'Czym różni się monolog od dialogu?', options: ['monolog występuje tylko w liryce', 'dialog to tekst poboczny w dramacie', 'monolog to dłuższa wypowiedź jednej postaci, a dialog – rozmowa co najmniej dwóch', 'niczym – to synonimy'], answer: 2 },
+        { id: 'xruiud', q: 'Dialog w opowiadaniu najczęściej…', options: ['ożywia akcję i pokazuje bohaterów przez to, jak mówią', 'zastępuje zakończenie', 'jest zawsze zapisany wierszem', 'służy wyłącznie do opisu przyrody'], answer: 0 },
+        { id: 'toku4k', q: 'Moment największego napięcia w utworze, po którym akcja zmierza do rozwiązania, to…', options: ['puenta', 'motto', 'refren', 'punkt kulminacyjny'], answer: 3 },
+        { id: 'qxdb7l', q: 'Zaskakujące, błyskotliwe zakończenie utworu (np. fraszki) to…', options: ['puenta', 'inwokacja', 'podtytuł', 'strofa'], answer: 0 },
+        { id: 'frxtan', q: 'Cytat z innego utworu umieszczony przed początkiem tekstu to…', options: ['refren', 'motto', 'dialog', 'puenta'], answer: 1 },
+        { id: '2y2boc', q: 'Co jest punktem kulminacyjnym „Latarnika”?', options: ['przyjazd Skawińskiego do Aspinwall', 'pierwszy dzień Skawińskiego w pracy', 'noc, w której Skawiński zaczytany w „Panu Tadeuszu” nie zapala latarni', 'zatrudnienie nowego latarnika'], answer: 2, explain: 'To moment największego napięcia – od niego zależą dalsze losy bohatera, który traci posadę.' },
+        { id: 'src5on', q: 'Który element świata przedstawionego w „Balladynie” jest fantastyczny?', options: ['siostry zbierające maliny', 'dzban na maliny', 'zakład dwóch sióstr', 'nimfa Goplana, królowa jeziora'], answer: 3 },
+        { id: 'jhoiy2', q: 'Fikcja literacka oznacza, że…', options: ['świat przedstawiony wymyślił autor, nawet jeśli przypomina prawdziwy', 'w utworze zawsze występują smoki i czarodzieje', 'utwór opisuje wyłącznie prawdziwe wydarzenia', 'tekst jest napisany wierszem'], answer: 0 },
+        { id: 'l46qrt', q: 'Który utwór opowiada o prawdziwych ludziach i wydarzeniach (to literatura faktu)?', options: ['„Balladyna”', '„Kamienie na szaniec”', '„Opowieść wigilijna”', '„Hobbit”'], answer: 1 },
+        { id: 'qdu5jg', q: 'Wątek w utworze to…', options: ['pojedyncza linijka wiersza', 'cytat przed tekstem', 'ciąg zdarzeń związanych z jedną sprawą lub postacią', 'opis miejsca akcji'], answer: 2 },
+        { id: 'cwb1zr', q: 'Co jest wątkiem głównym „Zemsty”?', options: ['spór Cześnika i Rejenta o mur graniczny', 'miłość Wacława i Klary', 'przechwałki Papkina', 'obrzęd dziadów'], answer: 0, explain: 'Wokół sporu o mur zbudowana jest cała akcja. Miłość Wacława i Klary to ważny wątek poboczny – to ona kończy spór.' },
+        { id: 'imfwp2', q: 'Kto jest bohaterem głównym „Hobbita”?', options: ['Gandalf', 'Thorin Dębowa Tarcza', 'smok Smaug', 'Bilbo Baggins'], answer: 3, explain: 'Wokół wyprawy Bilba toczy się akcja. Gandalf i Thorin to bohaterowie drugoplanowi.' },
+        { id: 'rxua7e', q: 'Czym różni się tematyka utworu od problematyki?', options: ['tematyka dotyczy tylko wierszy, a problematyka – prozy', 'to dwie nazwy tego samego', 'problematyka to streszczenie fabuły', 'tematyka – o czym opowiada utwór; problematyka – jakie ważne problemy i pytania stawia'], answer: 3 },
+      ],
+      tasks: [
+        {
+          id: 's371ua',
+          points: 2,
+          q: 'Przeczytaj fragment (przykład napisany do ćwiczenia):\n„Stałem na peronie i nerwowo patrzyłem na zegar. Pociąg miał już dziesięć minut spóźnienia, a ja wiedziałem, że babcia czeka.”\nOkreśl rodzaj narracji i uzasadnij odpowiedź. Następnie przekształć pierwsze zdanie tak, aby narracja była trzecioosobowa.',
+          steps: [
+            'Poszukaj form czasowników i zaimków: kto mówi „ja”?',
+            'Formy „stałem”, „patrzyłem”, „ja wiedziałem” to 1. osoba – narrator jest bohaterem.',
+            'Przy przekształceniu zamień 1. osobę na 3. osobę i wprowadź imię lub zaimek „on”/„ona”.',
+          ],
+          answer: 'Narracja pierwszoosobowa – narrator jest jednocześnie bohaterem i mówi o sobie: „stałem”, „patrzyłem”, „ja wiedziałem”. Przekształcenie: „Tomek stał na peronie i nerwowo patrzył na zegar.”',
+          scoring: [
+            '1 pkt – rozpoznanie narracji pierwszoosobowej z uzasadnieniem (wskazanie form 1. osoby albo tego, że narrator jest bohaterem).',
+            '2 pkt – poprawne przekształcenie zdania na narrację trzecioosobową.',
+          ],
+        },
+        {
+          id: 'buj8qu',
+          points: 2,
+          q: 'Przeczytaj wiersz (przykład napisany do ćwiczenia):\n\nJesienny wiatr po polach gna,\nw kałużach drobny deszczyk gra.\nAch, wróć już, lato, wróć!\n\nNa drzewach złote liście drżą,\na ptaki już za morzem są.\nAch, wróć już, lato, wróć!\n\nPodaj liczbę strof i liczbę wersów w każdej strofie. Wskaż refren i nazwij rodzaj rymów (podaj przykład).',
+          steps: [
+            'Strofy to grupy wersów oddzielone odstępem – policz je.',
+            'Refren to wers, który się powtarza.',
+            'Sprawdź, które wersy się rymują: sąsiednie (parzyste) czy co drugi (przeplatane).',
+          ],
+          answer: 'Wiersz ma 2 strofy, w każdej są 3 wersy. Refren: „Ach, wróć już, lato, wróć!”. Rymy parzyste – rymują się sąsiednie wersy: „gna – gra”, „drżą – są”.',
+          scoring: [
+            '1 pkt – poprawna liczba strof (2) i wersów w strofie (3).',
+            '2 pkt – wskazanie refrenu oraz rymów parzystych z przykładem.',
+          ],
+        },
+      ],
+    },
+    {
+      id: 'teksty-kultury',
+      name: 'Teksty nieliterackie i teksty kultury',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996): kl. IV–VI I.2.1–10 (tekst informacyjny, publicystyczny, reklamowy; informacje wprost i pośrednio; fakty i opinie; komiks; teatr, film, muzyka, sztuki plastyczne; elementy spektaklu i filmu; program informacyjny i rozrywkowy; adaptacja), III.1.2 i III.1.6 (argumenty odwołujące się do faktów i logiki oraz do emocji; środki perswazji); kl. VII–VIII I.2.1, I.2.3–5 i I.2.7 (teksty publicystyczne, popularnonaukowe i naukowe; interpretacja dzieł sztuki; literatura piękna a literatura naukowa, popularnonaukowa i publicystyka; reportaż, wywiad, artykuł; nawiązania w kulturze popularnej). W informatorze CKE – zadanie łączące wiersz ze zdjęciem (kl. IV–VI I.2.12).',
+      theory: `
+        <h3>Fakt czy opinia?</h3>
+        <table>
+          <tr><th>Fakt</th><th>Opinia</th></tr>
+          <tr><td>informacja, którą <b>da się sprawdzić</b> (daty, liczby, zdarzenia)</td><td>czyjś <b>sąd, ocena, pogląd</b> – można się z nią zgodzić albo nie</td></tr>
+          <tr><td>„Biblioteka jest czynna od 8.00 do 15.00.”</td><td>„To najprzytulniejsza biblioteka w mieście.”</td></tr>
+          <tr><td>„Film trwa 120 minut.”</td><td>„Moim zdaniem film jest za długi.”</td></tr>
+        </table>
+        <div class="tip">💡 Sygnały opinii: słowa wartościujące (<i>najlepszy, nudny, wspaniały, niestety, szkoda</i>) i zwroty <i>moim zdaniem, uważam, sądzę, wydaje mi się</i>.</div>
+        <h3>Rodzaje tekstów nieliterackich</h3>
+        <table>
+          <tr><th>Tekst</th><th>Cel</th><th>Cechy i przykłady</th></tr>
+          <tr><td><b>informacyjny</b></td><td>przekazać wiadomość</td><td>konkretne dane (kto? co? gdzie? kiedy?), język rzeczowy, bez ocen; np. notatka prasowa, komunikat</td></tr>
+          <tr><td><b>publicystyczny</b></td><td>skomentować bieżące sprawy, przekonać</td><td>opinie autora, argumenty, wyrazisty język; np. felieton, komentarz, artykuł publicystyczny</td></tr>
+          <tr><td><b>reklamowy</b></td><td>zachęcić do kupna lub skorzystania z oferty</td><td>hasło (slogan), obietnice, tryb rozkazujący, zwroty do odbiorcy, obraz; np. plakat, ulotka, spot</td></tr>
+          <tr><td><b>popularnonaukowy</b></td><td>przystępnie wyjaśnić wiedzę</td><td>dla szerokiego odbiorcy, przykłady, porównania, objaśnione terminy</td></tr>
+          <tr><td><b>naukowy</b></td><td>przedstawić wyniki badań</td><td>dla specjalistów, terminy naukowe, przypisy, bibliografia</td></tr>
+        </table>
+        <p><b>Literatura piękna</b> (epika, liryka, dramat) tworzy świat przedstawiony i pełni przede wszystkim funkcję <b>artystyczną</b> (estetyczną). Teksty naukowe i popularnonaukowe pełnią funkcję <b>poznawczą</b> (przekazują wiedzę), a publicystyka – komentuje rzeczywistość i <b>przekonuje</b>.</p>
+        <h3>Gatunki dziennikarskie</h3>
+        <ul>
+          <li><b>Reportaż</b> – relacja z prawdziwych wydarzeń oparta na faktach; autor zwykle był na miejscu, opisuje, co zobaczył, przytacza wypowiedzi ludzi.</li>
+          <li><b>Wywiad</b> – rozmowa dziennikarza z rozmówcą w formie pytań i odpowiedzi, zwykle ze wstępem przedstawiającym rozmówcę.</li>
+          <li><b>Artykuł</b> – tekst prasowy na określony temat (informacyjny albo publicystyczny).</li>
+        </ul>
+        <h3>Argumenty i perswazja</h3>
+        <ul>
+          <li><b>Argumenty odwołujące się do faktów i logiki</b> – dane, liczby, przykłady, wyniki badań, rozumowanie „skoro…, to…”.</li>
+          <li><b>Argumenty odwołujące się do emocji</b> – budzą uczucia: współczucie, dumę, wstyd, strach („Pomyśl, jak smutno jest temu psu w schronisku!”).</li>
+          <li><b>Perswazja</b> – jawne przekonywanie odbiorcy do poglądu lub działania. <b>Środki perswazji</b>: zwroty do odbiorcy (<i>ty, wy</i>), tryb rozkazujący (<i>Dołącz!</i>), pytania retoryczne, wykrzyknienia, powtórzenia, słownictwo wartościujące, przesada, obietnice, odwołanie do autorytetu.</li>
+        </ul>
+        <div class="tip">⚠️ Perswazja przekonuje jawnie. <b>Manipulacja</b> wpływa na odbiorcę w ukryty, nieuczciwy sposób (np. „Wszyscy już to mają!”) – więcej w dziale „Style, słownictwo i komunikacja”.</div>
+        <h3>Teatr i film</h3>
+        <table>
+          <tr><th>Element</th><th>Co to jest</th></tr>
+          <tr><td>reżyseria</td><td>reżyser decyduje o całym kształcie przedstawienia lub filmu i kieruje aktorami</td></tr>
+          <tr><td>gra aktorska</td><td>sposób, w jaki aktor tworzy postać: głos, gest, mimika, ruch</td></tr>
+          <tr><td>dekoracja (scenografia)</td><td>wygląd sceny lub planu – pokazuje miejsce i czas akcji</td></tr>
+          <tr><td>charakteryzacja</td><td>zmiana wyglądu aktora: makijaż, peruka, sztuczny zarost</td></tr>
+          <tr><td>kostiumy</td><td>stroje aktorów – mówią o epoce, zawodzie, charakterze postaci</td></tr>
+          <tr><td>rekwizyty</td><td>przedmioty, których aktorzy używają w czasie gry (list, miecz, filiżanka)</td></tr>
+          <tr><td>muzyka</td><td>buduje nastrój i napięcie</td></tr>
+        </table>
+        <p>Film dodaje to, czego nie ma w teatrze: <b>ujęcia</b> kamery (np. zbliżenie twarzy), <b>montaż</b> (łączenie ujęć), efekty specjalne. Program <b>informacyjny</b> przekazuje aktualne wiadomości, program <b>rozrywkowy</b> ma bawić.</p>
+        <p><b>Adaptacja</b> – przeniesienie utworu literackiego na inny rodzaj sztuki (film, spektakl, komiks, słuchowisko). Twórcy adaptacji mogą coś pominąć, dodać albo zmienić – porównując, sprawdź fabułę, bohaterów, zakończenie i sposób pokazania świata.</p>
+        <h3>Komiks</h3>
+        <p>Opowieść w obrazkach: <b>kadry</b> (pojedyncze obrazki) ułożone w kolejności, <b>dymki</b> (chmurki) z wypowiedziami postaci, <b>onomatopeje</b> (BUM! TRACH!), ramki z tekstem narratora (np. „Tymczasem w grodzie…”). Lektura-komiks: „Kajko i Kokosz. Szkoła latania” Janusza Christy.</p>
+        <h3>Dzieło sztuki: obraz, grafika, rzeźba, fotografia</h3>
+        <ol>
+          <li><b>Co przedstawia?</b> Temat, postacie, sytuacja; tytuł dzieła.</li>
+          <li><b>Kompozycja</b> – układ elementów: co jest na <b>pierwszym planie</b>, co w <b>tle</b>, co w centrum (to zwykle najważniejsze).</li>
+          <li><b>Kolorystyka</b> – barwy ciepłe (czerwień, pomarańcz, żółć) często dają nastrój radości i energii, zimne (błękit, szarość) – spokoju, chłodu, smutku.</li>
+          <li><b>Światło</b> – co jest oświetlone, a co w cieniu; kontrast jasne – ciemne kieruje wzrok widza.</li>
+          <li><b>Nastrój i sens</b> – jakie emocje budzi dzieło, co chciał przekazać artysta.</li>
+        </ol>
+        <p>W rzeźbie zwróć też uwagę na materiał, pozę i gest, w fotografii – na kadr (co jest w nim, a co pominięto) i moment, który uchwycono.</p>
+        <h3>Nawiązania w kulturze popularnej</h3>
+        <p>Filmy, komiksy, piosenki i gry często korzystają z <b>tradycyjnych wątków</b>: mitów, Biblii, baśni, legend. Przykład: „Percy Jackson i bogowie olimpijscy” Ricka Riordana nawiązuje do mitologii greckiej; wiele filmów opowiada na nowo historię Kopciuszka. Szukając nawiązania, zapytaj: <i>jaką znaną historię, postać albo motyw (np. walka dobra ze złem, wędrówka, przemiana bohatera) to przypomina?</i></p>
+      `,
+      flashcards: [
+        ['Fakt', 'Informacja, którą da się sprawdzić'],
+        ['Opinia', 'Czyjś sąd lub ocena; sygnały: „moim zdaniem”, słowa wartościujące'],
+        ['Tekst informacyjny', 'Rzeczowo przekazuje wiadomość: kto? co? gdzie? kiedy?'],
+        ['Tekst publicystyczny', 'Komentuje bieżące sprawy i przekonuje, np. felieton'],
+        ['Tekst reklamowy', 'Zachęca do kupna: slogan, obietnice, tryb rozkazujący'],
+        ['Argumenty rzeczowe a emocjonalne', 'Rzeczowe – fakty i logika; emocjonalne – odwołują się do uczuć'],
+        ['Perswazja a manipulacja', 'Perswazja przekonuje jawnie, manipulacja – w ukryty, nieuczciwy sposób'],
+        ['Reportaż', 'Relacja z prawdziwych wydarzeń, autor był na miejscu'],
+        ['Charakteryzacja', 'Zmiana wyglądu aktora: makijaż, peruka, zarost'],
+        ['Rekwizyt', 'Przedmiot, którego aktor używa w czasie gry'],
+        ['Adaptacja', 'Przeniesienie utworu literackiego na inny rodzaj sztuki, np. film'],
+        ['Kadr i dymek', 'Kadr – pojedynczy obrazek komiksu; dymek – miejsce na wypowiedź postaci'],
+        ['Kompozycja obrazu', 'Układ elementów: pierwszy plan, tło, centrum'],
+        ['Kolorystyka', 'Dobór barw: ciepłe (radość, energia) i zimne (spokój, chłód)'],
+      ],
+      questions: [
+        { id: 'gtj9lo', q: 'Które zdanie przedstawia fakt?', options: ['To najprzytulniejsza biblioteka w mieście.', 'Biblioteka szkolna jest czynna od 8.00 do 15.00.', 'Moim zdaniem w bibliotece jest za mało komiksów.', 'Szkoda, że biblioteka zamyka się tak wcześnie.'], answer: 1 },
+        { id: '62nkow', q: 'Które zdanie wyraża opinię?', options: ['Film trwa 120 minut.', 'Premiera filmu odbyła się w piątek.', 'Ten film jest nudny i zdecydowanie za długi.', 'W filmie zagrało dwoje debiutantów.'], answer: 2 },
+        { id: 'xidoor', q: 'Po czym najłatwiej poznać, że zdanie wyraża opinię?', options: ['po liczbach i datach', 'po słowach wartościujących i zwrotach typu „uważam”, „moim zdaniem”', 'po tym, że da się je sprawdzić w encyklopedii', 'po tym, że zawsze jest pytaniem'], answer: 1 },
+        { id: 'ivnpqj', q: 'Tekst, którego głównym celem jest rzeczowe przekazanie wiadomości (kto? co? gdzie? kiedy?) bez ocen autora, to tekst…', options: ['reklamowy', 'publicystyczny', 'informacyjny', 'literacki'], answer: 2 },
+        { id: 'vw7v89', q: 'Autor tekstu w gazecie ocenia nowy pomysł władz miasta i przekonuje czytelników, że to błąd. To tekst…', options: ['publicystyczny', 'informacyjny', 'reklamowy', 'popularnonaukowy'], answer: 0 },
+        { id: '9z7sq1', q: 'Hasło „Kup teraz, a drugą parę butów dostaniesz gratis!” pochodzi z tekstu…', options: ['informacyjnego', 'naukowego', 'publicystycznego', 'reklamowego'], answer: 3 },
+        { id: 'rdg1yu', q: 'Który argument odwołuje się do faktów i logiki? (przykłady napisane do ćwiczenia)', options: ['„Pomyślcie, jak smutno jest, gdy rower moknie na deszczu!”', '„Każdy, komu zależy na szkole, poprze ten pomysł.”', '„Z ankiety wynika, że rowerem przyjeżdża 45 uczniów, a stojak mieści tylko 20 rowerów – potrzebujemy drugiego.”', '„Wstyd, że wciąż nie mamy nowego stojaka!”'], answer: 2 },
+        { id: 'swpoo6', q: '„Spójrz w oczy temu bezdomnemu psu – czy naprawdę przejdziesz obojętnie?” To argument odwołujący się…', options: ['do faktów', 'do emocji', 'do statystyk', 'do wyników badań'], answer: 1 },
+        { id: '50whxh', q: 'Który z wymienionych elementów NIE jest środkiem perswazji?', options: ['tryb rozkazujący („Dołącz do nas!”)', 'pytanie retoryczne', 'bezpośredni zwrot do odbiorcy', 'numer strony w spisie treści'], answer: 3 },
+        { id: 'rph4zh', q: 'Czym perswazja różni się od manipulacji?', options: ['perswazja jawnie przekonuje, a manipulacja wpływa na odbiorcę w ukryty, nieuczciwy sposób', 'perswazja zawsze jest kłamstwem', 'manipulacja występuje tylko w literaturze pięknej', 'niczym – to synonimy'], answer: 0 },
+        { id: 'fzpspj', q: 'Czym literatura piękna różni się od tekstu popularnonaukowego?', options: ['literatura piękna zawsze jest pisana wierszem', 'tekst popularnonaukowy nie może mieć ilustracji', 'tekst popularnonaukowy jest pisany tylko dla naukowców', 'literatura piękna pełni przede wszystkim funkcję artystyczną, a tekst popularnonaukowy przystępnie przekazuje wiedzę'], answer: 3 },
+        { id: '9wawr6', q: 'Tekst dla specjalistów, z terminami naukowymi, przypisami i bibliografią, to tekst…', options: ['popularnonaukowy', 'naukowy', 'reklamowy', 'reportaż'], answer: 1 },
+        { id: '7zr01u', q: 'Dziennikarz pojechał na miejsce powodzi, rozmawiał z mieszkańcami i opisał, co zobaczył. Napisał…', options: ['wywiad', 'reportaż', 'fraszkę', 'tekst reklamowy'], answer: 1 },
+        { id: 'atizgd', q: 'Kto w teatrze decyduje o całym kształcie przedstawienia i kieruje pracą aktorów?', options: ['charakteryzator', 'sufler', 'reżyser', 'widz'], answer: 2 },
+        { id: '9ae908', q: 'Charakteryzacja w teatrze i filmie to…', options: ['zmiana wyglądu aktora za pomocą makijażu, peruki, sztucznego zarostu', 'przedmioty, których aktorzy używają na scenie', 'muzyka grana w czasie spektaklu', 'tekst poboczny w dramacie'], answer: 0 },
+        { id: 'xx23u2', q: 'Przedmioty, którymi posługują się aktorzy w czasie gry (np. list, miecz, filiżanka), to…', options: ['kostiumy', 'rekwizyty', 'didaskalia', 'kadry'], answer: 1 },
+        { id: '8xzddc', q: 'Adaptacja utworu literackiego to…', options: ['streszczenie lektury', 'recenzja filmu', 'tłumaczenie książki na inny język', 'przeniesienie utworu na inny rodzaj sztuki, np. film lub spektakl'], answer: 3 },
+        { id: 'qdesqb', q: 'W komiksie wypowiedzi postaci umieszcza się zwykle…', options: ['w dymkach (chmurkach)', 'w didaskaliach', 'w przypisach', 'w mottach'], answer: 0 },
+        { id: 'cg7ysz', q: 'Pojedynczy obrazek w komiksie to…', options: ['strofa', 'kadr', 'akt', 'wers'], answer: 1 },
+        { id: 'whb3dc', q: 'Analizując obraz, piszesz o jego kompozycji. Chodzi o…', options: ['cenę obrazu', 'biografię malarza', 'układ elementów: co jest na pierwszym planie, co w tle, co w centrum', 'rodzaj ramy'], answer: 2 },
+        { id: 'aochz5', q: 'Przewaga barw ciepłych (czerwieni, pomarańczu, żółci) na obrazie najczęściej…', options: ['nadaje mu radosny, pełen energii nastrój', 'sprawia, że obraz staje się grafiką', 'oznacza, że to fotografia', 'oznacza, że obraz jest niedokończony'], answer: 0 },
+        { id: '5wh8wb', q: 'Prawda czy fałsz?\nPowieść „Percy Jackson i bogowie olimpijscy” Ricka Riordana nawiązuje do mitologii greckiej.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Bogowie olimpijscy to bogowie greccy – tak kultura popularna korzysta z tradycyjnych wątków.' },
+        { id: 'lljums', q: 'Film o dobrej dziewczynie, którą krzywdzi zła macocha, a która dzięki czarom trafia na bal i zdobywa szczęście, nawiązuje do baśni o…', options: ['Syzyfie', 'Kopciuszku', 'Ikarze', 'Prometeuszu'], answer: 1, explain: 'Syzyf, Ikar i Prometeusz to bohaterowie mitów greckich, nie baśni.' },
+        { id: '1z602r', q: 'Program telewizyjny, którego celem jest przekazanie aktualnych wiadomości z kraju i ze świata, to program…', options: ['rozrywkowy', 'informacyjny', 'reklamowy', 'muzyczny'], answer: 1 },
+      ],
+      tasks: [
+        {
+          id: 'h3jagc',
+          points: 2,
+          q: 'Przeczytaj notatkę (tekst napisany do ćwiczenia):\n„W sobotę w parku miejskim odbył się festyn rodzinny. Przyszło na niego około 500 osób. Moim zdaniem był to najlepszy festyn w historii naszego miasta. Organizatorzy przygotowali 12 stanowisk z grami. Szkoda tylko, że koncert był tak nudny.”\nWypisz jedno zdanie, które przedstawia fakt, i jedno, które wyraża opinię. Każdy wybór uzasadnij.',
+          steps: [
+            'Fakt to informacja, którą da się sprawdzić (liczba, data, zdarzenie).',
+            'Opinię zdradzają słowa wartościujące („najlepszy”, „nudny”, „szkoda”) i zwroty typu „moim zdaniem”.',
+            'Uzasadnij wybór, wskazując konkretne słowa.',
+          ],
+          answer: 'Fakt: „Przyszło na niego około 500 osób.” – liczbę uczestników można sprawdzić (to samo dotyczy zdań o terminie festynu i o 12 stanowiskach). Opinia: „Moim zdaniem był to najlepszy festyn w historii naszego miasta.” – to ocena autora, świadczy o tym zwrot „moim zdaniem” i słowo wartościujące „najlepszy” (opinią jest też zdanie o nudnym koncercie).',
+          scoring: [
+            '1 pkt – poprawnie wskazany fakt z uzasadnieniem.',
+            '2 pkt – poprawnie wskazana opinia z uzasadnieniem.',
+          ],
+        },
+        {
+          id: 'z680kq',
+          points: 2,
+          q: 'Przeczytaj reklamę (tekst napisany do ćwiczenia):\n„Masz dość nudnych przerw? Sięgnij po chrupiące batoniki Zeta! Energia, którą pokochasz od pierwszego gryza. Wszyscy w twojej klasie już je mają – a ty?”\nNazwij dwa różne środki perswazji zastosowane w tym tekście i do każdego podaj przykład.',
+          steps: [
+            'Przypomnij sobie środki perswazji: pytanie retoryczne, tryb rozkazujący, zwrot do odbiorcy, słownictwo wartościujące, obietnica, odwołanie do tego, co „robią wszyscy”.',
+            'Do każdego nazwanego środka zacytuj pasujący fragment.',
+          ],
+          answer: 'Np.: 1) pytanie retoryczne – „Masz dość nudnych przerw?”; 2) tryb rozkazujący – „Sięgnij po chrupiące batoniki Zeta!”. Inne poprawne: słownictwo wartościujące („chrupiące”, „pokochasz”), zwrot bezpośredni do odbiorcy („a ty?”), odwołanie do tego, co robią wszyscy („Wszyscy w twojej klasie już je mają”) – to już chwyt manipulacyjny.',
+          scoring: [
+            '1 pkt – poprawnie nazwany pierwszy środek perswazji z trafnym przykładem.',
+            '2 pkt – poprawnie nazwany drugi, inny środek perswazji z trafnym przykładem.',
+          ],
+        },
+      ],
+    },
+    {
+      id: 'poezja',
+      name: 'Wiersze poetów XX wieku – jak je czytać',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), kl. VII–VIII: lektury – „wybrane wiersze: Krzysztofa Kamila Baczyńskiego, Zbigniewa Herberta, Bolesława Leśmiana, Czesława Miłosza, Tadeusza Różewicza, Wisławy Szymborskiej, oraz aforyzmy Stanisława Jerzego Leca”; I.1.7 (problematyka egzystencjalna), I.1.10 (konteksty: biograficzny, historyczny, kulturowy); kl. IV–VI I.1.1, I.1.4, I.1.6, I.1.9, I.1.14–15 (obrazy poetyckie, środki stylistyczne, wers, rym, strofa, podmiot liryczny, wrażenia, znaczenia dosłowne i przenośne). Informator CKE: zadania do tekstów poetyckich nie sprawdzają znajomości treści konkretnego wiersza, tylko umiejętność analizy i interpretacji. Fakty o poetach sprawdzone w nobelprize.org, culture.pl, zpe.gov.pl, IPN i PAP (dzieje.pl).',
+      theory: `
+        <div class="tip">💡 Według informatora CKE w arkuszu może być wiersz poety z listy albo zupełnie innego. Zadania <b>nie sprawdzają, czy znasz ten wiersz</b> – sprawdzają, czy umiesz go przeczytać i zinterpretować. Dlatego najważniejsza jest <b>metoda</b>.</div>
+        <h3>Plan analizy wiersza – 7 pytań</h3>
+        <ol>
+          <li><b>Kto mówi?</b> – podmiot liryczny: kim jest, co czuje, czy mówi „ja”, „my”, czy się ukrywa.</li>
+          <li><b>Do kogo?</b> – adresat: do kogo lub do czego zwraca się podmiot (ty, wy, apostrofa).</li>
+          <li><b>W jakiej sytuacji?</b> – sytuacja liryczna: gdzie, kiedy i w jakich okolicznościach mówi podmiot (wspomina, patrzy przez okno, żegna się…).</li>
+          <li><b>Co widzę?</b> – obrazy poetyckie: fragmenty, które pobudzają wyobraźnię.</li>
+          <li><b>Jakimi środkami i po co?</b> – środki stylistyczne i ich <b>funkcja</b> (epitet, metafora, porównanie, pytanie retoryczne, powtórzenie, neologizm…).</li>
+          <li><b>Jak jest zbudowany?</b> – wersy, strofy, rymy. Wiersz regularny ma stałą liczbę sylab i zwykle rymy; <b>wiersz wolny</b> nie ma stałej liczby sylab w wersach i zwykle nie ma rymów.</li>
+          <li><b>O czym i po co?</b> – temat, problematyka, nastrój, przesłanie; związek tytułu z treścią.</li>
+        </ol>
+        <h3>Przećwicz na przykładzie</h3>
+        <p><i>Przykład napisany do ćwiczenia:</i></p>
+        <p>Stoję przy oknie. Miasto zasypia,<br>latarnie gaszą swoje żółte oczy.<br>Ktoś jeszcze biegnie – dokąd? po co?<br>A ja wciąż liczę kroki,<br>których nie zrobiłem.</p>
+        <table>
+          <tr><th>Pytanie</th><th>Odpowiedź</th></tr>
+          <tr><td>Podmiot i sytuacja</td><td>„ja” stoi wieczorem przy oknie i obserwuje zasypiające miasto</td></tr>
+          <tr><td>Obraz poetycki</td><td>gasnące latarnie, pusta ulica, ktoś biegnący</td></tr>
+          <tr><td>Środki i funkcja</td><td>metafora „latarnie gaszą swoje żółte oczy” – miasto staje się żywe, zamyka oczy jak do snu; pytania retoryczne „dokąd? po co?” – skłaniają do refleksji nad sensem pośpiechu</td></tr>
+          <tr><td>Budowa</td><td>wiersz wolny – wersy różnej długości, bez rymów</td></tr>
+          <tr><td>Nastrój i problematyka</td><td>nastrój refleksyjny, melancholijny; problematyka egzystencjalna – przemijanie i niewykorzystane szanse („kroki, których nie zrobiłem”)</td></tr>
+        </table>
+        <h3>Problematyka egzystencjalna i konteksty</h3>
+        <p><b>Problematyka egzystencjalna</b> to podstawowe pytania o ludzkie życie: sens istnienia, przemijanie, śmierć, miłość, samotność, miejsce człowieka w świecie.</p>
+        <p><b>Konteksty</b> pomagają w interpretacji: <b>biograficzny</b> (wydarzenia z życia poety), <b>historyczny</b> (czas powstania utworu, np. II wojna światowa), <b>kulturowy</b> (nawiązania do mitów, Biblii, innych dzieł). Kontekst ma wspierać czytanie tekstu, a nie je zastępować.</p>
+        <h3>Poeci z podstawy programowej</h3>
+        <table>
+          <tr><th>Poeta</th><th>Warto wiedzieć</th></tr>
+          <tr><td>Krzysztof Kamil Baczyński</td><td>poeta pokolenia wojennego, żołnierz Armii Krajowej; zginął w czwartym dniu powstania warszawskiego, 4 sierpnia 1944 r.</td></tr>
+          <tr><td>Bolesław Leśmian</td><td>słynie z neologizmów – nazywa się je „leśmianizmami” (np. tworzone z przedrostkami <i>bez-</i>, <i>nie-</i>)</td></tr>
+          <tr><td>Czesław Miłosz</td><td>laureat literackiej Nagrody Nobla (1980)</td></tr>
+          <tr><td>Wisława Szymborska</td><td>laureatka literackiej Nagrody Nobla (1996)</td></tr>
+          <tr><td>Zbigniew Herbert</td><td>stworzył postać Pana Cogito – bohatera tomu wierszy „Pan Cogito” (1974)</td></tr>
+          <tr><td>Tadeusz Różewicz</td><td>od początku pisał wierszem wolnym; mówił w wierszach o doświadczeniu wojny, np. „Ocalony” z tomu „Niepokój” (1947)</td></tr>
+          <tr><td>Stanisław Jerzy Lec</td><td>autor aforyzmów, zebranych m.in. w tomie „Myśli nieuczesane”</td></tr>
+        </table>
+        <p>Wiersze tych poetów są chronione prawem autorskim – przeczytasz je w podręczniku lub tomikach. Tu ćwiczymy na przykładach napisanych specjalnie do nauki.</p>
+        <h3>Aforyzm</h3>
+        <p><b>Aforyzm</b> – krótka, zwięzła i błyskotliwa myśl (zwykle jedno zdanie) o życiu, ludziach, świecie. Często zaskakuje grą słów albo ironią i zmusza do zastanowienia. Ma <b>znanego autora</b> – tym różni się od ludowego, anonimowego przysłowia. Przykłady napisane do ćwiczenia: <i>„Najdłużej trwają chwile, na które czekamy.”</i>, <i>„Łatwo mieć zdanie, gdy nie ma się wątpliwości.”</i></p>
+      `,
+      flashcards: [
+        ['Sytuacja liryczna', 'Gdzie, kiedy i w jakich okolicznościach mówi podmiot liryczny'],
+        ['Adresat', 'Osoba lub rzecz, do której zwraca się podmiot liryczny'],
+        ['Obraz poetycki', 'Fragment wiersza, który pobudza wyobraźnię – pozwala „zobaczyć” sytuację'],
+        ['Wiersz wolny', 'Bez stałej liczby sylab w wersach, zwykle bez rymów'],
+        ['Nastrój', 'Emocje i atmosfera wiersza: radość, smutek, niepokój, refleksja…'],
+        ['Problematyka egzystencjalna', 'Pytania o sens życia, przemijanie, śmierć, miłość, samotność'],
+        ['Kontekst biograficzny / historyczny', 'Życie poety / czas i wydarzenia, w których powstał utwór'],
+        ['Aforyzm', 'Krótka, błyskotliwa myśl znanego autora, np. S.J. Lec, „Myśli nieuczesane”'],
+        ['Nagroda Nobla – poeci z listy', 'Czesław Miłosz (1980), Wisława Szymborska (1996)'],
+        ['Krzysztof Kamil Baczyński', 'Poeta pokolenia wojennego, zginął w powstaniu warszawskim (4 VIII 1944)'],
+        ['Bolesław Leśmian', 'Mistrz neologizmów – „leśmianizmów”'],
+        ['Pan Cogito', 'Bohater wierszy Zbigniewa Herberta (tom „Pan Cogito”, 1974)'],
+        ['Tadeusz Różewicz', 'Wiersz wolny, doświadczenie wojny, np. „Ocalony” (tom „Niepokój”, 1947)'],
+      ],
+      questions: [
+        { id: 'cde2f8', q: 'Kto otrzymał literacką Nagrodę Nobla w 1996 roku?', options: ['Wisława Szymborska', 'Czesław Miłosz', 'Zbigniew Herbert', 'Tadeusz Różewicz'], answer: 0, explain: 'Czesław Miłosz otrzymał tę nagrodę wcześniej – w 1980 roku.' },
+        { id: '2iiq6n', q: 'Który poeta z listy lektur otrzymał literacką Nagrodę Nobla w 1980 roku?', options: ['Bolesław Leśmian', 'Krzysztof Kamil Baczyński', 'Czesław Miłosz', 'Stanisław Jerzy Lec'], answer: 2 },
+        { id: '5bfc11', q: 'Który poeta zginął w powstaniu warszawskim w 1944 roku?', options: ['Czesław Miłosz', 'Krzysztof Kamil Baczyński', 'Wisława Szymborska', 'Zbigniew Herbert'], answer: 1 },
+        { id: '19vw90', q: 'Z czego słynie poezja Bolesława Leśmiana?', options: ['z wierszy pisanych wyłącznie po łacinie', 'z braku jakichkolwiek środków stylistycznych', 'z aforyzmów zebranych w „Myślach nieuczesanych”', 'z licznych neologizmów (tzw. leśmianizmów)'], answer: 3 },
+        { id: 'yn2oyv', q: 'Kto jest autorem aforyzmów zebranych w tomie „Myśli nieuczesane”?', options: ['Tadeusz Różewicz', 'Stanisław Jerzy Lec', 'Bolesław Leśmian', 'Czesław Miłosz'], answer: 1 },
+        { id: 'ye7xqz', q: 'Pan Cogito to postać stworzona przez…', options: ['Wisławę Szymborską', 'Krzysztofa Kamila Baczyńskiego', 'Zbigniewa Herberta', 'Bolesława Leśmiana'], answer: 2 },
+        { id: 'tokz21', q: 'Który poeta od początku twórczości pisał wierszem wolnym, a w wierszu „Ocalony” mówił o doświadczeniu wojny?', options: ['Bolesław Leśmian', 'Stanisław Jerzy Lec', 'Krzysztof Kamil Baczyński', 'Tadeusz Różewicz'], answer: 3 },
+        { id: 'p7in2e', q: 'Aforyzm to…', options: ['krótka, zwięzła i błyskotliwa myśl o życiu lub ludziach, mająca znanego autora', 'długi wiersz o bohaterach narodowych', 'ludowe, anonimowe przysłowie', 'utwór dramatyczny w jednym akcie'], answer: 0 },
+        { id: 'pdd1om', q: 'Który tekst jest aforyzmem? (przykłady napisane do ćwiczenia)', options: ['„Pociąg do Krakowa odjeżdża o 7.15 z peronu drugiego.”', '„Kup dwa, zapłać za jeden!”', '„Łatwo mieć zdanie, gdy nie ma się wątpliwości.”', '„Prosimy o zachowanie ciszy w czytelni.”'], answer: 2 },
+        { id: '9diaxa', q: 'Wiersz wolny to wiersz…', options: ['bez stałej liczby sylab w wersach i zwykle bez rymów', 'w którym wszystkie wersy rymują się parami', 'pisany zawsze jednym długim zdaniem', 'którego nie wolno interpretować'], answer: 0 },
+        { id: 'mwg139', q: 'Przeczytaj fragment (przykład napisany do ćwiczenia):\n„Stoję przy oknie. Miasto zasypia,\nlatarnie gaszą swoje żółte oczy.”\nJaka jest sytuacja liryczna?', options: ['podmiot liryczny opowiada o bitwie', 'podmiot liryczny wieczorem obserwuje z okna zasypiające miasto', 'podmiot liryczny rozmawia z przyjacielem przez telefon', 'podmiot liryczny wspomina wakacje nad morzem'], answer: 1 },
+        { id: '33v34o', q: 'W wersie „latarnie gaszą swoje żółte oczy” (przykład napisany do ćwiczenia) zastosowano przede wszystkim…', options: ['onomatopeję', 'przenośnię (metaforę)', 'pytanie retoryczne', 'apostrofę'], answer: 1 },
+        { id: '3lw5rk', q: 'Jaką funkcję pełnią pytania w wersie „Ktoś jeszcze biegnie – dokąd? po co?” (przykład napisany do ćwiczenia)?', options: ['podają dokładne informacje o celu podróży', 'naśladują dźwięk kroków', 'są pytaniami retorycznymi – skłaniają do refleksji nad sensem pośpiechu', 'są uroczystym zwrotem do Boga'], answer: 2 },
+        { id: '959h7q', q: 'Problematyka egzystencjalna dotyczy…', options: ['podstawowych pytań o ludzkie życie: sens istnienia, przemijanie, śmierć, miłość, samotność', 'wyłącznie zasad pisowni', 'budowy wiersza: liczby wersów i strof', 'tylko cen i zakupów'], answer: 0 },
+        { id: 'ject86', q: 'Odwołanie do wydarzeń z życia poety przy interpretacji wiersza to wykorzystanie kontekstu…', options: ['słowotwórczego', 'biograficznego', 'fonetycznego', 'gramatycznego'], answer: 1 },
+        { id: 'zan3wd', q: 'Interpretujesz wiersz Baczyńskiego, odwołując się do II wojny światowej i okupacji. Wykorzystujesz kontekst…', options: ['historyczny', 'słowotwórczy', 'komiczny', 'gramatyczny'], answer: 0 },
+        { id: 'lj8v0h', q: 'Prawda czy fałsz?\nZadania do wiersza na egzaminie ósmoklasisty sprawdzają, czy umiesz go przeanalizować i zinterpretować, a nie, czy znasz go wcześniej.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Tak zapisano w informatorze CKE: zadania nie sprawdzają znajomości treści konkretnego utworu poetyckiego.' },
+        { id: '6h88fw', q: 'Nastrój wiersza to…', options: ['liczba wersów w strofie', 'emocje i atmosfera, które tworzy wiersz (np. radość, smutek, niepokój)', 'imię adresata', 'układ rymów'], answer: 1 },
+        { id: 'm00rnl', q: 'Adresat w wierszu to…', options: ['autor wiersza', 'tytuł wiersza', 'ostatni wers', 'osoba lub rzecz, do której zwraca się podmiot liryczny'], answer: 3 },
+        { id: '1t81v5', q: 'Obraz poetycki to…', options: ['ilustracja wydrukowana obok wiersza', 'fragment wiersza, który pobudza wyobraźnię i pozwala „zobaczyć” opisaną sytuację', 'podpis autora pod wierszem', 'spis treści tomiku'], answer: 1 },
+      ],
+      tasks: [
+        {
+          id: '8mfe3x',
+          points: 3,
+          q: 'Przeczytaj wiersz (przykład napisany do ćwiczenia):\n\nStoję przy oknie. Miasto zasypia,\nlatarnie gaszą swoje żółte oczy.\nKtoś jeszcze biegnie – dokąd? po co?\nA ja wciąż liczę kroki,\nktórych nie zrobiłem.\n\na) Opisz sytuację liryczną.\nb) Nazwij jeden środek stylistyczny i określ jego funkcję.\nc) Określ nastrój wiersza i problem, nad którym zastanawia się podmiot liryczny.',
+          steps: [
+            'Sytuacja liryczna: kto mówi, gdzie jest, co robi, kiedy.',
+            'Szukaj środków: przenośnia o latarniach, pytania retoryczne. Nie wystarczy nazwa – napisz, czemu środek służy.',
+            'Nastrój odczytasz z obrazów (noc, gasnące światła) i ostatnich wersów. Co znaczą „kroki, których nie zrobiłem”?',
+          ],
+          answer: 'a) Podmiot liryczny stoi wieczorem przy oknie i patrzy na zasypiające miasto. b) Np. przenośnia „latarnie gaszą swoje żółte oczy” – ożywia miasto, które jak człowiek zamyka oczy do snu; albo pytania retoryczne „dokąd? po co?” – skłaniają do zastanowienia się nad sensem pośpiechu. c) Nastrój refleksyjny, melancholijny. Podmiot myśli o przemijaniu i o niewykorzystanych szansach – o tym, czego nie zrobił („kroki, których nie zrobiłem”).',
+          scoring: [
+            '1 pkt – poprawny opis sytuacji lirycznej.',
+            '2 pkt – poprawnie nazwany środek stylistyczny z trafnie określoną funkcją.',
+            '3 pkt – trafnie określony nastrój i problem (np. przemijanie, niewykorzystane szanse).',
+          ],
+        },
+        {
+          id: 'kwz7ev',
+          points: 2,
+          q: 'Przeczytaj aforyzm (przykład napisany do ćwiczenia): „Najdłużej trwają chwile, na które czekamy.”\nWyjaśnij jego sens i podaj przykład sytuacji z życia, która go potwierdza.',
+          steps: [
+            'Zastanów się, czy chwile naprawdę trwają dłużej, czy tylko nam się tak wydaje.',
+            'Aforyzm opiera się na paradoksie: czas mierzony zegarem jest taki sam, a w odczuciu – różny.',
+            'Podaj konkretny przykład z codziennego życia.',
+          ],
+          answer: 'Aforyzm mówi, że czas płynie w naszym odczuciu wolniej, gdy z niecierpliwością na coś czekamy – choć zegar odmierza go tak samo. Przykład: ostatni tydzień przed wakacjami albo ostatnie minuty lekcji przed dzwonkiem ciągną się w nieskończoność.',
+          scoring: [
+            '1 pkt – trafne wyjaśnienie sensu aforyzmu (czas wydaje się płynąć wolniej, gdy czekamy).',
+            '2 pkt – trafny przykład sytuacji, która potwierdza aforyzm.',
           ],
         },
       ],

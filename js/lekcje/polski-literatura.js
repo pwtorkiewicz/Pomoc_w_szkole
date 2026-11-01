@@ -806,7 +806,8 @@ window.LESSONS['polski/rodzaje-literackie'] = [
       <text x="348" y="128" class="tx" text-anchor="middle">romantyczny</text>
     </svg>`,
     text: `<p>Każdy gatunek należy do jednego rodzaju. Jeśli wiesz, do której „szuflady” trafia gatunek, od razu wiesz, kto w nim mówi i jak jest zbudowany.</p>
-      <p>Uważaj na epopeję: brzmi podniośle, ale to <b>epika</b> – obszerny utwór o losach zbiorowości („Pan Tadeusz”).</p>`,
+      <p>Uważaj na epopeję: brzmi podniośle, ale to <b>epika</b> – obszerny utwór o losach zbiorowości („Pan Tadeusz”).</p>
+      <p>Gatunki z klas IV–VI rozpoznasz po cechach: <b>baśń</b> – „za siedmioma górami”, czary; <b>legenda</b> – prawdziwe miejsce lub postać z przeszłości; <b>mit</b> – bogowie i herosi; <b>bajka</b> – morał i zwierzęta; <b>przypowieść</b> – drugie, przenośne znaczenie; <b>hymn</b> – uroczysta pieśń pochwalna.</p>`,
     remember: 'Tren i fraszka – liryka. Nowela i epopeja – epika. Komedia i tragedia – dramat.',
     hook: '<b>Ep</b>opeja i <b>ep</b>ika zaczynają się tak samo – epopeja to po prostu bardzo obszerna epika.',
     check: { q: 'Do jakiego rodzaju literackiego należy „Balladyna”?', options: ['epika', 'liryka', 'dramat', 'żadnego'], answer: 2, explain: '„Balladyna” to tragedia, czyli dramat – mimo że jej tytuł kojarzy się z balladą.' },
@@ -896,6 +897,518 @@ window.LESSONS['polski/rodzaje-literackie'] = [
     remember: 'Literatura piękna: epika, liryka, dramat. Teksty dziennikarskie: reportaż, wywiad, artykuł.',
     hook: '<b>W</b>ywiad = <b>w</b>ymiana pytań i odpowiedzi. <b>R</b>eportaż = <b>r</b>elacja z wydarzeń.',
     check: { q: 'Tekst w formie pytań dziennikarza i odpowiedzi rozmówcy to…', options: ['reportaż', 'wywiad', 'artykuł', 'nowela'], answer: 1 },
+  },
+];
+
+/* ===================== BUDOWA UTWORU ===================== */
+window.LESSONS['polski/budowa-utworu'] = [
+  {
+    title: 'Świat przedstawiony – z czego zbudowana jest historia',
+    svg: `<svg viewBox="0 0 420 232" role="img" aria-label="Świat przedstawiony składa się z bohaterów, wydarzeń, czasu i miejsca akcji; elementy realistyczne mogłyby się zdarzyć naprawdę, fantastyczne są niemożliwe">
+      <rect x="80" y="6" width="260" height="40" rx="20" class="f4 s4 sw"/>
+      <text x="210" y="32" class="tx-b" text-anchor="middle">świat przedstawiony</text>
+      <line x1="140" y1="46" x2="54" y2="62" class="ln-thin"/>
+      <line x1="180" y1="46" x2="158" y2="62" class="ln-thin"/>
+      <line x1="240" y1="46" x2="262" y2="62" class="ln-thin"/>
+      <line x1="280" y1="46" x2="366" y2="62" class="ln-thin"/>
+      <rect x="6" y="62" width="96" height="58" rx="10" class="bg ln-thin"/>
+      <text x="54" y="88" class="tx" text-anchor="middle">👤</text>
+      <text x="54" y="110" class="tx-s" text-anchor="middle">bohaterowie</text>
+      <rect x="110" y="62" width="96" height="58" rx="10" class="bg ln-thin"/>
+      <text x="158" y="88" class="tx" text-anchor="middle">🎬</text>
+      <text x="158" y="110" class="tx-s" text-anchor="middle">wydarzenia</text>
+      <rect x="214" y="62" width="96" height="58" rx="10" class="bg ln-thin"/>
+      <text x="262" y="88" class="tx" text-anchor="middle">⏰</text>
+      <text x="262" y="110" class="tx-s" text-anchor="middle">czas akcji</text>
+      <rect x="318" y="62" width="96" height="58" rx="10" class="bg ln-thin"/>
+      <text x="366" y="88" class="tx" text-anchor="middle">📍</text>
+      <text x="366" y="110" class="tx-s" text-anchor="middle">miejsce</text>
+      <rect x="6" y="134" width="200" height="92" rx="12" class="f3 s3 sw"/>
+      <text x="106" y="160" class="tx-b t3" text-anchor="middle">realistyczne</text>
+      <text x="106" y="182" class="tx-s" text-anchor="middle">mogłyby się zdarzyć</text>
+      <text x="106" y="208" class="tx-s" text-anchor="middle">siostry zbierają maliny</text>
+      <rect x="214" y="134" width="200" height="92" rx="12" class="f5 s5 sw"/>
+      <text x="314" y="160" class="tx-b t5" text-anchor="middle">fantastyczne</text>
+      <text x="314" y="182" class="tx-s" text-anchor="middle">niemożliwe naprawdę</text>
+      <text x="314" y="208" class="tx-s" text-anchor="middle">nimfa Goplana</text>
+    </svg>`,
+    text: `<p><b>Świat przedstawiony</b> to bohaterowie, wydarzenia (fabuła), czas i miejsce akcji. Wymyślił go autor – to <b>fikcja literacka</b>, nawet jeśli wygląda jak prawdziwy. Wyjątek: literatura faktu, np. „Kamienie na szaniec”, opowiada o prawdziwych ludziach.</p>
+      <p>W „Balladynie” siostry zbierające maliny to element <b>realistyczny</b>, a nimfa Goplana, Skierka i Chochlik – <b>fantastyczne</b>. W „Opowieści wigilijnej” fantastyczne są duchy.</p>`,
+    remember: 'Realistyczne – mogłoby się zdarzyć naprawdę. Fantastyczne – w rzeczywistości niemożliwe.',
+    hook: 'Zadaj sobie pytanie: <b>„Czy mogłoby się to zdarzyć na mojej ulicy?”</b> Tak – realistyczne. Nie – fantastyczne.',
+    check: { q: 'Który element „Opowieści wigilijnej” jest fantastyczny?', options: ['skąpstwo Scrooge’a', 'rodzina Cratchitów', 'duchy odwiedzające Scrooge’a', 'Wigilia Bożego Narodzenia'], answer: 2 },
+  },
+  {
+    title: 'Kto opowiada? Narrator pierwszo- i trzecioosobowy',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Narracja pierwszoosobowa: narrator jest bohaterem i mówi ja, np. wszedłem do klasy; narracja trzecioosobowa: narrator stoi z boku i mówi on, ona, np. Ania weszła do klasy">
+      <rect x="6" y="6" width="200" height="188" rx="14" class="f1 s1 sw"/>
+      <text x="106" y="32" class="tx-b t1" text-anchor="middle">1-osobowa</text>
+      <text x="106" y="80" class="tx" style="font-size:34px" text-anchor="middle">🙋</text>
+      <text x="106" y="112" class="tx" style="font-weight:bold" text-anchor="middle">mówi „ja”</text>
+      <text x="106" y="134" class="tx-s" text-anchor="middle">narrator = bohater</text>
+      <text x="106" y="168" class="tx-s" text-anchor="middle">„Wszedłem do klasy…”</text>
+      <rect x="214" y="6" width="200" height="188" rx="14" class="f2 s2 sw"/>
+      <text x="314" y="32" class="tx-b t2" text-anchor="middle">3-osobowa</text>
+      <text x="314" y="80" class="tx" style="font-size:34px" text-anchor="middle">👁️</text>
+      <text x="314" y="112" class="tx" style="font-weight:bold" text-anchor="middle">mówi „on, ona”</text>
+      <text x="314" y="134" class="tx-s" text-anchor="middle">narrator stoi z boku</text>
+      <text x="314" y="168" class="tx-s" text-anchor="middle">„Ania weszła do klasy…”</text>
+    </svg>`,
+    text: `<p>W epice opowiada <b>narrator</b>. Gdy jest bohaterem i mówi „ja”, to <b>narracja pierwszoosobowa</b> – tak opowiada Adaś Niezgódka w „Akademii Pana Kleksa”. Poznajemy wtedy z bliska jego myśli i uczucia, ale widzimy świat tylko jego oczami.</p>
+      <p>Gdy narrator stoi z boku i mówi o bohaterach „on, ona, oni”, to <b>narracja trzecioosobowa</b> – daje szerszy, bardziej obiektywny obraz.</p>`,
+    remember: 'Szukaj form czasowników: „wszedłem” – 1. osoba, „weszła” – 3. osoba.',
+    hook: 'Narrator pierwszoosobowy to <b>selfie</b> – widzisz świat z jego ręki. Trzecioosobowy to <b>kamera z drona</b> – widzi wszystkich z góry.',
+    check: { q: '„Kasia otworzyła list i zbladła.” – jaka to narracja?', options: ['pierwszoosobowa', 'trzecioosobowa', 'prowadzona przez podmiot liryczny', 'monolog'], answer: 1 },
+  },
+  {
+    title: 'Dialog, monolog i bohaterowie',
+    svg: `<svg viewBox="0 0 420 214" role="img" aria-label="Dialog to rozmowa co najmniej dwóch postaci, monolog to dłuższa wypowiedź jednej postaci; bohater główny Bilbo jest w centrum, drugoplanowi to Gandalf i Thorin">
+      <rect x="6" y="6" width="200" height="98" rx="12" class="f1 s1 sw"/>
+      <text x="106" y="28" class="tx-b t1" text-anchor="middle">DIALOG</text>
+      <rect x="18" y="40" width="80" height="26" rx="10" class="bg ln-thin"/>
+      <text x="58" y="58" class="tx-s" text-anchor="middle">Idziesz?</text>
+      <rect x="114" y="62" width="80" height="26" rx="10" class="bg ln-thin"/>
+      <text x="154" y="80" class="tx-s" text-anchor="middle">Jasne!</text>
+      <text x="30" y="96" class="tx" text-anchor="middle">🙂</text>
+      <text x="182" y="58" class="tx" text-anchor="middle">🙂</text>
+      <rect x="6" y="110" width="200" height="98" rx="12" class="f2 s2 sw"/>
+      <text x="106" y="132" class="tx-b t2" text-anchor="middle">MONOLOG</text>
+      <rect x="18" y="144" width="176" height="28" rx="10" class="bg ln-thin"/>
+      <text x="106" y="163" class="tx-s" text-anchor="middle">Co ja mam teraz zrobić…?</text>
+      <text x="106" y="198" class="tx" text-anchor="middle">🤔</text>
+      <rect x="214" y="6" width="200" height="202" rx="12" class="f4 s4 sw"/>
+      <text x="314" y="28" class="tx-b" text-anchor="middle">BOHATEROWIE</text>
+      <circle cx="314" cy="86" r="40" class="f2 s2 sw"/>
+      <text x="314" y="84" class="tx" style="font-weight:bold" text-anchor="middle">Bilbo</text>
+      <text x="314" y="102" class="tx-s" text-anchor="middle">główny</text>
+      <line x1="290" y1="118" x2="262" y2="146" class="ln-thin"/>
+      <line x1="338" y1="118" x2="366" y2="146" class="ln-thin"/>
+      <rect x="224" y="146" width="80" height="28" rx="10" class="bg ln-thin"/>
+      <text x="264" y="165" class="tx-s" text-anchor="middle">Gandalf</text>
+      <rect x="324" y="146" width="80" height="28" rx="10" class="bg ln-thin"/>
+      <text x="364" y="165" class="tx-s" text-anchor="middle">Thorin</text>
+      <text x="314" y="196" class="tx-s" text-anchor="middle">drugoplanowi</text>
+    </svg>`,
+    text: `<p><b>Dialog</b> – rozmowa co najmniej dwóch postaci; ożywia akcję i pokazuje bohaterów przez to, jak mówią. <b>Monolog</b> – dłuższa wypowiedź jednej postaci; odsłania jej myśli, uczucia i zamiary.</p>
+      <p><b>Bohater główny</b> jest w centrum wydarzeń (w „Hobbicie” – Bilbo). <b>Bohaterowie drugoplanowi</b> są ważni, ale nie stoją w centrum (Gandalf, Thorin).</p>`,
+    remember: 'Dialog – rozmowa co najmniej dwóch postaci. Monolog („mono” = jeden) – mówi jedna postać.',
+    hook: '<b>Mono</b> jak monocykl – jedno koło, jedna osoba mówi. Dialog to rozmowa jak mecz ping-ponga: piłka leci w obie strony.',
+  },
+  {
+    title: 'Fabuła: wątki, punkt kulminacyjny, puenta',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Wykres napięcia: wątek główny rośnie do punktu kulminacyjnego, potem opada do zakończenia z puentą; wątek poboczny dołącza do głównego">
+      <defs><marker id="a-pl-bu-4" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" class="tx"/></marker></defs>
+      <path d="M14,196 L408,196" class="ln" marker-end="url(#a-pl-bu-4)"/>
+      <path d="M14,196 L14,30" class="ln" marker-end="url(#a-pl-bu-4)"/>
+      <text x="22" y="40" class="tx-s">napięcie</text>
+      <path d="M20,180 C110,166 190,86 270,58 C312,46 344,100 396,136" class="s1 sw" style="fill:none"/>
+      <path d="M40,190 C130,188 220,160 312,82" class="s2 dash sw" style="fill:none"/>
+      <circle cx="276" cy="56" r="7" class="f2 s2 sw"/>
+      <text x="276" y="30" class="tx-s" style="font-weight:bold" text-anchor="middle">punkt kulminacyjny</text>
+      <text x="70" y="140" class="tx-s t1" style="font-weight:bold" text-anchor="middle">wątek główny</text>
+      <text x="160" y="214" class="tx-s t2" text-anchor="middle">wątek poboczny (przerywana)</text>
+      <circle cx="396" cy="136" r="6" class="f4 s4 sw"/>
+      <text x="400" y="164" class="tx-s" text-anchor="end">puenta</text>
+    </svg>`,
+    text: `<p><b>Wątek</b> to ciąg zdarzeń związanych z jedną sprawą. W „Zemście” <b>wątek główny</b> to spór Cześnika i Rejenta o mur graniczny, a <b>wątek poboczny</b> – miłość Wacława i Klary (to on kończy spór).</p>
+      <p><b>Punkt kulminacyjny</b> to moment największego napięcia – w „Latarniku” noc, gdy Skawiński zaczytany w „Panu Tadeuszu” nie zapala latarni. <b>Puenta</b> to zaskakujące, błyskotliwe zakończenie (typowe dla fraszki i noweli).</p>`,
+    remember: 'Kulminacja – szczyt napięcia. Puenta – błyskotliwa „kropka” na końcu.',
+    hook: 'Fabuła jak kolejka górska: wjazd pod górę, <b>szczyt</b> (kulminacja) i zjazd do mety. Puenta to zdjęcie robione na ostatnim zakręcie.',
+    check: { q: 'Co jest wątkiem głównym „Zemsty”?', options: ['miłość Wacława i Klary', 'spór Cześnika i Rejenta o mur graniczny', 'przechwałki Papkina', 'obrzęd dziadów'], answer: 1 },
+  },
+  {
+    title: 'Tytuł, podtytuł, motto – i o czym jest utwór',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Strona utworu: tytuł zapowiada temat, podtytuł podaje gatunek lub temat, motto to cytat przed tekstem; tematyka mówi o czym, problematyka nad czym myśleć">
+      <defs><marker id="a-pl-bu-5" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" class="tx"/></marker></defs>
+      <rect x="6" y="6" width="196" height="198" rx="8" class="bg ln"/>
+      <text x="104" y="36" class="tx-b" text-anchor="middle">TYTUŁ</text>
+      <text x="104" y="58" class="tx-s" text-anchor="middle">podtytuł</text>
+      <text x="190" y="86" class="tx-s" style="font-style:italic" text-anchor="end">„Cytat z innego dzieła”</text>
+      <text x="190" y="104" class="tx-s" text-anchor="end">– autor</text>
+      <line x1="20" y1="128" x2="188" y2="128" class="ln-thin"/>
+      <line x1="20" y1="144" x2="188" y2="144" class="ln-thin"/>
+      <line x1="20" y1="160" x2="188" y2="160" class="ln-thin"/>
+      <line x1="20" y1="176" x2="150" y2="176" class="ln-thin"/>
+      <path d="M244,32 L170,32" class="ln" marker-end="url(#a-pl-bu-5)"/>
+      <text x="250" y="30" class="tx" style="font-weight:bold">tytuł</text>
+      <text x="250" y="48" class="tx-s">zapowiada temat</text>
+      <path d="M244,64 L140,58" class="ln" marker-end="url(#a-pl-bu-5)"/>
+      <text x="250" y="72" class="tx" style="font-weight:bold">podtytuł</text>
+      <text x="250" y="90" class="tx-s">gatunek lub temat</text>
+      <path d="M244,108 L196,96" class="ln" marker-end="url(#a-pl-bu-5)"/>
+      <text x="250" y="114" class="tx" style="font-weight:bold">motto</text>
+      <text x="250" y="132" class="tx-s">klucz do sensu</text>
+      <rect x="214" y="148" width="200" height="56" rx="10" class="f3 s3 sw"/>
+      <text x="314" y="170" class="tx-s" text-anchor="middle">tematyka – o czym?</text>
+      <text x="314" y="192" class="tx-s" text-anchor="middle">problematyka – nad czym?</text>
+    </svg>`,
+    text: `<p><b>Tytuł</b> zapowiada temat i zaciekawia; bywa przenośny – na egzaminie często pada pytanie: <i>jaki związek z treścią ma tytuł?</i> <b>Podtytuł</b> dodaje informację, np. o gatunku. <b>Motto</b> to cytat z innego utworu przed tekstem – podpowiada, jak odczytać całość.</p>
+      <p><b>Tematyka</b> – o czym jest utwór. <b>Problematyka</b> – nad czym każe się zastanowić. „Latarnik”: tematyka – losy starego tułacza, który zostaje latarnikiem; problematyka – tęsknota za ojczyzną.</p>`,
+    remember: 'Tematyka odpowiada na pytanie „o czym?”, problematyka – „nad czym się zastanowić?”.',
+    hook: 'Tytuł to <b>szyld</b> sklepu, motto – <b>hasło na drzwiach</b>, a problematyka – to, po co naprawdę do niego wchodzisz.',
+  },
+  {
+    title: 'Wiersz: wers, strofa, rym i refren',
+    svg: `<svg viewBox="0 0 420 236" role="img" aria-label="Wiersz z dwiema strofami po trzy wersy; rymy parzyste gna – gra i drżą – są; refren Ach, wróć już, lato, wróć powtarza się po każdej strofie">
+      <rect x="6" y="8" width="408" height="84" rx="10" class="f1"/>
+      <text x="16" y="32" class="tx">Jesienny wiatr po polach <tspan class="t2" style="font-weight:bold">gna</tspan>,</text>
+      <text x="16" y="56" class="tx">w kałużach drobny deszczyk <tspan class="t2" style="font-weight:bold">gra</tspan>.</text>
+      <text x="16" y="80" class="tx t5" style="font-style:italic">Ach, wróć już, lato, wróć!</text>
+      <text x="320" y="32" class="tx-b t2">a</text>
+      <text x="320" y="56" class="tx-b t2">a</text>
+      <text x="320" y="80" class="tx-b t5">R</text>
+      <text x="404" y="56" class="tx-s" text-anchor="end">strofa 1</text>
+      <rect x="6" y="104" width="408" height="84" rx="10" class="f1"/>
+      <text x="16" y="128" class="tx">Na drzewach złote liście <tspan class="t2" style="font-weight:bold">drżą</tspan>,</text>
+      <text x="16" y="152" class="tx">a ptaki już za morzem <tspan class="t2" style="font-weight:bold">są</tspan>.</text>
+      <text x="16" y="176" class="tx t5" style="font-style:italic">Ach, wróć już, lato, wróć!</text>
+      <text x="320" y="128" class="tx-b t2">b</text>
+      <text x="320" y="152" class="tx-b t2">b</text>
+      <text x="320" y="176" class="tx-b t5">R</text>
+      <text x="404" y="152" class="tx-s" text-anchor="end">strofa 2</text>
+      <text x="210" y="208" class="tx-s" text-anchor="middle">wers = jedna linijka · strofa = grupa wersów</text>
+      <text x="210" y="228" class="tx-s" text-anchor="middle">aa bb – rymy parzyste · R – refren</text>
+    </svg>`,
+    text: `<p><b>Wers</b> to jedna linijka wiersza, <b>strofa</b> (zwrotka) – grupa wersów oddzielona odstępem. <b>Rym</b> to współbrzmienie zakończeń wyrazów: gdy rymują się sąsiednie wersy (aabb) – rymy <b>parzyste</b>, gdy co drugi (abab) – <b>przeplatane</b>.</p>
+      <p><b>Refren</b> to wers powtarzany np. po każdej strofie – jak w piosence. (Wiersz na rysunku napisano do ćwiczenia).</p>`,
+    remember: 'Wers – linijka, strofa – zwrotka, rym – podobne zakończenia, refren – powtórka.',
+    hook: 'Refren znasz z każdej piosenki – to fragment, który cała sala śpiewa razem. <b>Parzyste</b> rymy idą <b>parami</b>, jak buty.',
+    check: { q: 'Wersy kończą się słowami: kot – dom – płot – tom. Jakie to rymy?', options: ['parzyste (aabb)', 'przeplatane (abab)', 'brak rymów', 'refren'], answer: 1, explain: 'Rymują się wersy 1 i 3 (kot – płot) oraz 2 i 4 (dom – tom).' },
+  },
+];
+
+/* ===================== TEKSTY NIELITERACKIE I TEKSTY KULTURY ===================== */
+window.LESSONS['polski/teksty-kultury'] = [
+  {
+    title: 'Fakt czy opinia?',
+    svg: `<svg viewBox="0 0 420 222" role="img" aria-label="Fakt da się sprawdzić, np. film trwa 120 minut; opinia to czyjaś ocena, np. film jest nudny; sygnały opinii to moim zdaniem, uważam, najlepszy, szkoda">
+      <rect x="6" y="6" width="200" height="146" rx="14" class="f3 s3 sw"/>
+      <text x="106" y="34" class="tx-b t3" text-anchor="middle">✅ FAKT</text>
+      <text x="106" y="58" class="tx-s" text-anchor="middle">da się sprawdzić</text>
+      <rect x="18" y="72" width="176" height="30" rx="8" class="bg ln-thin"/>
+      <text x="106" y="92" class="tx-s" text-anchor="middle">Film trwa 120 minut.</text>
+      <rect x="18" y="110" width="176" height="30" rx="8" class="bg ln-thin"/>
+      <text x="106" y="130" class="tx-s" text-anchor="middle">Mecz zaczął się o 18.00.</text>
+      <rect x="214" y="6" width="200" height="146" rx="14" class="f2 s2 sw"/>
+      <text x="314" y="34" class="tx-b t2" text-anchor="middle">💬 OPINIA</text>
+      <text x="314" y="58" class="tx-s" text-anchor="middle">czyjaś ocena, pogląd</text>
+      <rect x="226" y="72" width="176" height="30" rx="8" class="bg ln-thin"/>
+      <text x="314" y="92" class="tx-s" text-anchor="middle">Film jest nudny.</text>
+      <rect x="226" y="110" width="176" height="30" rx="8" class="bg ln-thin"/>
+      <text x="314" y="130" class="tx-s" text-anchor="middle">To był świetny mecz!</text>
+      <rect x="6" y="162" width="408" height="54" rx="12" class="f4 s4 sw"/>
+      <text x="210" y="184" class="tx-s" style="font-weight:bold" text-anchor="middle">Sygnały opinii:</text>
+      <text x="210" y="205" class="tx-s" text-anchor="middle">moim zdaniem · uważam · najlepszy · nudny · szkoda</text>
+    </svg>`,
+    text: `<p><b>Fakt</b> to informacja, którą da się sprawdzić: liczba, data, zdarzenie. <b>Opinia</b> to czyjś sąd lub ocena – można się z nią zgodzić albo nie.</p>
+      <p>Opinię zdradzają słowa wartościujące (<i>najlepszy, nudny, wspaniały, szkoda</i>) i zwroty <i>moim zdaniem, uważam, sądzę</i>. Na egzaminie często trzeba wskazać fakt lub opinię w tekście i to uzasadnić.</p>`,
+    remember: 'Fakt – sprawdzisz. Opinię – możesz tylko przyjąć albo odrzucić.',
+    hook: 'Test linijki: czy da się to <b>zmierzyć, policzyć, sprawdzić w kalendarzu</b>? Tak – fakt. Nie – opinia.',
+    check: { q: 'Które zdanie wyraża opinię?', options: ['Koncert zaczął się o 19.00.', 'Na koncert przyszło 300 osób.', 'Koncert był wspaniały.', 'Zespół zagrał 12 piosenek.'], answer: 2 },
+  },
+  {
+    title: 'Po co powstał tekst? Informuje, przekonuje, sprzedaje',
+    svg: `<svg viewBox="0 0 420 228" role="img" aria-label="Tekst informacyjny informuje, np. notatka prasowa; publicystyczny przekonuje, np. felieton; reklamowy sprzedaje, np. plakat; literatura piękna pełni funkcję artystyczną, a tekst popularnonaukowy przekazuje wiedzę">
+      <rect x="6" y="6" width="132" height="132" rx="12" class="f1 s1 sw"/>
+      <text x="72" y="44" class="tx" style="font-size:28px" text-anchor="middle">📰</text>
+      <text x="72" y="74" class="tx" style="font-weight:bold" text-anchor="middle">informuje</text>
+      <text x="72" y="96" class="tx-s" text-anchor="middle">informacyjny</text>
+      <text x="72" y="122" class="tx-s" text-anchor="middle">notatka prasowa</text>
+      <rect x="144" y="6" width="132" height="132" rx="12" class="f2 s2 sw"/>
+      <text x="210" y="44" class="tx" style="font-size:28px" text-anchor="middle">🗣️</text>
+      <text x="210" y="74" class="tx" style="font-weight:bold" text-anchor="middle">przekonuje</text>
+      <text x="210" y="96" class="tx-s" text-anchor="middle">publicystyczny</text>
+      <text x="210" y="122" class="tx-s" text-anchor="middle">felieton</text>
+      <rect x="282" y="6" width="132" height="132" rx="12" class="f4 s4 sw"/>
+      <text x="348" y="44" class="tx" style="font-size:28px" text-anchor="middle">🛒</text>
+      <text x="348" y="74" class="tx" style="font-weight:bold" text-anchor="middle">sprzedaje</text>
+      <text x="348" y="96" class="tx-s" text-anchor="middle">reklamowy</text>
+      <text x="348" y="122" class="tx-s" text-anchor="middle">plakat, spot</text>
+      <rect x="6" y="148" width="408" height="34" rx="10" class="f5 s5 sw"/>
+      <text x="210" y="170" class="tx-s" text-anchor="middle">📚 literatura piękna → funkcja artystyczna</text>
+      <rect x="6" y="188" width="408" height="34" rx="10" class="f3 s3 sw"/>
+      <text x="210" y="210" class="tx-s" text-anchor="middle">🔬 tekst (popularno)naukowy → przekazuje wiedzę</text>
+    </svg>`,
+    text: `<p><b>Tekst informacyjny</b> rzeczowo podaje wiadomość (kto? co? gdzie? kiedy?). <b>Publicystyczny</b> komentuje bieżące sprawy i przekonuje – są w nim opinie autora. <b>Reklamowy</b> zachęca do kupna: hasło, obietnice, tryb rozkazujący.</p>
+      <p><b>Literatura piękna</b> pełni funkcję artystyczną. Tekst <b>popularnonaukowy</b> przystępnie wyjaśnia wiedzę, a <b>naukowy</b> jest pisany dla specjalistów. Gatunki dziennikarskie: <b>reportaż</b>, <b>wywiad</b>, <b>artykuł</b>.</p>`,
+    remember: 'Zawsze pytaj: jaki jest CEL tekstu? Informować, przekonać czy sprzedać?',
+    hook: 'Trzy przyciski: <b>ℹ️ info</b> – informacyjny, <b>💬 komentarz</b> – publicystyczny, <b>🛒 do koszyka</b> – reklamowy.',
+  },
+  {
+    title: 'Argumenty i środki perswazji',
+    svg: `<svg viewBox="0 0 420 214" role="img" aria-label="Waga argumentów: po jednej stronie fakty i logika, po drugiej emocje; środki perswazji to tryb rozkazujący, pytania retoryczne, zwroty do odbiorcy i słowa wartościujące">
+      <line x1="90" y1="58" x2="330" y2="58" class="ln sw"/>
+      <line x1="210" y1="58" x2="210" y2="124" class="ln sw"/>
+      <path d="M180,132 L240,132 L210,118 z" class="f4 s4 sw"/>
+      <circle cx="210" cy="58" r="6" class="f4 s4 sw"/>
+      <line x1="90" y1="58" x2="90" y2="70" class="ln-thin"/>
+      <line x1="330" y1="58" x2="330" y2="70" class="ln-thin"/>
+      <rect x="10" y="70" width="160" height="56" rx="12" class="f1 s1 sw"/>
+      <text x="90" y="94" class="tx" style="font-weight:bold" text-anchor="middle">🧠 fakty, logika</text>
+      <text x="90" y="114" class="tx-s" text-anchor="middle">dane, przykłady</text>
+      <rect x="250" y="70" width="160" height="56" rx="12" class="f2 s2 sw"/>
+      <text x="330" y="94" class="tx" style="font-weight:bold" text-anchor="middle">❤️ emocje</text>
+      <text x="330" y="114" class="tx-s" text-anchor="middle">litość, duma, wstyd</text>
+      <text x="210" y="30" class="tx-b" text-anchor="middle">ARGUMENTY</text>
+      <text x="210" y="158" class="tx-s" style="font-weight:bold" text-anchor="middle">środki perswazji</text>
+      <rect x="6" y="168" width="96" height="38" rx="10" class="bg ln-thin"/>
+      <text x="54" y="192" class="tx-s" text-anchor="middle">Dołącz!</text>
+      <rect x="110" y="168" width="96" height="38" rx="10" class="bg ln-thin"/>
+      <text x="158" y="192" class="tx-s" text-anchor="middle">Czy wiesz…?</text>
+      <rect x="214" y="168" width="96" height="38" rx="10" class="bg ln-thin"/>
+      <text x="262" y="192" class="tx-s" text-anchor="middle">ty, wy</text>
+      <rect x="318" y="168" width="96" height="38" rx="10" class="bg ln-thin"/>
+      <text x="366" y="192" class="tx-s" text-anchor="middle">najlepszy!</text>
+    </svg>`,
+    text: `<p>Argumenty mogą odwoływać się do <b>faktów i logiki</b> (dane, przykłady, rozumowanie) albo do <b>emocji</b> (współczucie, duma, wstyd, strach).</p>
+      <p><b>Perswazja</b> to jawne przekonywanie. Jej środki: tryb rozkazujący, pytania retoryczne, zwroty do odbiorcy, wykrzyknienia, powtórzenia, słowa wartościujące, obietnice. <b>Manipulacja</b> działa ukrycie i nieuczciwie (np. „Wszyscy już to mają!”).</p>`,
+    remember: 'Argument rzeczowy – głowa 🧠. Argument emocjonalny – serce ❤️.',
+    hook: 'Perswazja gra w otwarte karty, manipulacja – <b>chowa asa w rękawie</b>.',
+    check: { q: '„Pomyśl, jak bardzo ten kot tęskni za domem!” to argument odwołujący się…', options: ['do faktów', 'do logiki', 'do emocji', 'do statystyk'], answer: 2 },
+  },
+  {
+    title: 'Teatr, film i adaptacja',
+    svg: `<svg viewBox="0 0 420 216" role="img" aria-label="Elementy spektaklu i filmu: reżyseria, gra aktorska, dekoracja, kostiumy, charakteryzacja, rekwizyty, muzyka; adaptacja to przeniesienie książki na film lub scenę">
+      <rect x="4" y="6" width="100" height="64" rx="10" class="f1 s1 sw"/>
+      <text x="54" y="34" class="tx" text-anchor="middle">🎬</text>
+      <text x="54" y="58" class="tx-s" text-anchor="middle">reżyseria</text>
+      <rect x="108" y="6" width="100" height="64" rx="10" class="f1 s1 sw"/>
+      <text x="158" y="34" class="tx" text-anchor="middle">🎭</text>
+      <text x="158" y="58" class="tx-s" text-anchor="middle">gra aktorska</text>
+      <rect x="212" y="6" width="100" height="64" rx="10" class="f1 s1 sw"/>
+      <text x="262" y="34" class="tx" text-anchor="middle">🏰</text>
+      <text x="262" y="58" class="tx-s" text-anchor="middle">dekoracja</text>
+      <rect x="316" y="6" width="100" height="64" rx="10" class="f1 s1 sw"/>
+      <text x="366" y="34" class="tx" text-anchor="middle">👗</text>
+      <text x="366" y="58" class="tx-s" text-anchor="middle">kostiumy</text>
+      <rect x="4" y="76" width="134" height="64" rx="10" class="f2 s2 sw"/>
+      <text x="71" y="104" class="tx" text-anchor="middle">💄</text>
+      <text x="71" y="128" class="tx-s" text-anchor="middle">charakteryzacja</text>
+      <rect x="143" y="76" width="134" height="64" rx="10" class="f2 s2 sw"/>
+      <text x="210" y="104" class="tx" text-anchor="middle">🗡️</text>
+      <text x="210" y="128" class="tx-s" text-anchor="middle">rekwizyty</text>
+      <rect x="282" y="76" width="134" height="64" rx="10" class="f2 s2 sw"/>
+      <text x="349" y="104" class="tx" text-anchor="middle">🎵</text>
+      <text x="349" y="128" class="tx-s" text-anchor="middle">muzyka</text>
+      <rect x="4" y="152" width="412" height="58" rx="12" class="f4 s4 sw"/>
+      <text x="210" y="178" class="tx" text-anchor="middle">📖 książka  →  🎬 film / 🎭 spektakl</text>
+      <text x="210" y="200" class="tx-s" style="font-weight:bold" text-anchor="middle">= ADAPTACJA (coś pominięto, dodano, zmieniono)</text>
+    </svg>`,
+    text: `<p>Na spektakl i film składają się: <b>reżyseria</b> (reżyser decyduje o całości), <b>gra aktorska</b>, <b>dekoracja</b>, <b>kostiumy</b>, <b>charakteryzacja</b> (makijaż, peruka, zarost), <b>rekwizyty</b> (przedmioty używane przez aktorów) i <b>muzyka</b>. Film ma też ujęcia kamery i montaż.</p>
+      <p><b>Adaptacja</b> to przeniesienie utworu literackiego na inny rodzaj sztuki. Porównując ją z książką, sprawdź fabułę, bohaterów, zakończenie i sposób pokazania świata.</p>`,
+    remember: 'Charakteryzacja zmienia wygląd aktora, rekwizyt to przedmiot w jego ręku, dekoracja – to, co wokół niego.',
+    hook: 'Kostium <b>na</b> aktorze, charakteryzacja <b>na twarzy</b>, rekwizyt <b>w ręce</b>, dekoracja <b>za plecami</b>.',
+    check: { q: 'Miecz, którym aktor walczy na scenie, to…', options: ['kostium', 'rekwizyt', 'dekoracja', 'charakteryzacja'], answer: 1 },
+  },
+  {
+    title: 'Jak czytać komiks',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Komiks: kadry to pojedyncze obrazki, dymek zawiera wypowiedź postaci, onomatopeja naśladuje dźwięk, ramka narratora podaje czas lub miejsce">
+      <rect x="6" y="6" width="128" height="124" rx="4" class="bg ln"/>
+      <rect x="18" y="16" width="86" height="30" rx="14" class="f1 s1 sw"/>
+      <path d="M44,46 L36,62 L58,46 z" class="f1 s1"/>
+      <text x="61" y="36" class="tx-s" text-anchor="middle">Lecimy?</text>
+      <text x="40" y="112" class="tx" style="font-size:30px" text-anchor="middle">🧑</text>
+      <rect x="146" y="6" width="128" height="124" rx="4" class="bg ln"/>
+      <text x="210" y="62" class="tx-b t2" style="font-size:26px" text-anchor="middle">BUM!</text>
+      <text x="210" y="112" class="tx" style="font-size:30px" text-anchor="middle">💥</text>
+      <rect x="286" y="6" width="128" height="124" rx="4" class="bg ln"/>
+      <rect x="286" y="6" width="128" height="30" class="f4 s4"/>
+      <text x="350" y="26" class="tx-s" text-anchor="middle">Tymczasem…</text>
+      <text x="350" y="104" class="tx" style="font-size:30px" text-anchor="middle">🏰</text>
+      <text x="70" y="152" class="tx-s" style="font-weight:bold" text-anchor="middle">dymek</text>
+      <text x="210" y="152" class="tx-s" style="font-weight:bold" text-anchor="middle">onomatopeja</text>
+      <text x="350" y="152" class="tx-s" style="font-weight:bold" text-anchor="middle">ramka narratora</text>
+      <text x="210" y="186" class="tx-s" text-anchor="middle">każdy prostokąt to kadr · kadry czytamy po kolei</text>
+    </svg>`,
+    text: `<p><b>Komiks</b> opowiada historię w obrazkach. Pojedynczy obrazek to <b>kadr</b>, wypowiedzi postaci są w <b>dymkach</b>, dźwięki oddają <b>onomatopeje</b> (BUM! TRACH!), a <b>ramka narratora</b> podaje np. czas i miejsce („Tymczasem w grodzie…”).</p>
+      <p>Lekturą-komiksem jest „Kajko i Kokosz. Szkoła latania” Janusza Christy.</p>`,
+    remember: 'Kadr – obrazek, dymek – słowa postaci, ramka – głos narratora.',
+    hook: 'Komiks to <b>film zatrzymany w klatkach</b>: kadr = klatka, dymek = ścieżka dźwiękowa.',
+  },
+  {
+    title: 'Obraz, zdjęcie i nawiązania w kulturze',
+    svg: `<svg viewBox="0 0 420 226" role="img" aria-label="Analiza obrazu: światło, tło, pierwszy plan i kolorystyka; kultura popularna nawiązuje do mitów, Biblii, baśni i legend">
+      <defs><marker id="a-pl-tk-6" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" class="tx"/></marker></defs>
+      <rect x="6" y="6" width="214" height="154" rx="4" class="bg ln sw"/>
+      <circle cx="48" cy="40" r="18" class="f4 s4 sw"/>
+      <path d="M10,120 C60,80 120,84 216,110 L216,156 L10,156 z" class="f3 s3"/>
+      <text x="132" y="146" class="tx" style="font-size:40px" text-anchor="middle">🧍</text>
+      <path d="M244,36 L72,38" class="ln" marker-end="url(#a-pl-tk-6)"/>
+      <text x="250" y="40" class="tx" style="font-weight:bold">światło</text>
+      <path d="M244,80 L180,98" class="ln" marker-end="url(#a-pl-tk-6)"/>
+      <text x="250" y="84" class="tx" style="font-weight:bold">tło</text>
+      <path d="M244,124 L150,124" class="ln" marker-end="url(#a-pl-tk-6)"/>
+      <text x="250" y="122" class="tx" style="font-weight:bold">pierwszy plan</text>
+      <text x="250" y="142" class="tx-s">co najważniejsze?</text>
+      <text x="250" y="62" class="tx-s">co oświetlone?</text>
+      <text x="250" y="104" class="tx-s">co z daleka?</text>
+      <rect x="6" y="170" width="408" height="50" rx="12" class="f5 s5 sw"/>
+      <text x="210" y="191" class="tx-s" style="font-weight:bold" text-anchor="middle">Kultura popularna nawiązuje do:</text>
+      <text x="210" y="211" class="tx-s" text-anchor="middle">mitów · Biblii · baśni · legend</text>
+    </svg>`,
+    text: `<p>Interpretując obraz, grafikę, rzeźbę czy zdjęcie, sprawdź: co przedstawia, <b>kompozycję</b> (pierwszy plan, tło, centrum), <b>kolorystykę</b> (ciepłe barwy często dają radość i energię, zimne – spokój lub smutek), <b>światło</b> (co oświetlone, co w cieniu) i <b>nastrój</b>. W fotografii patrz też na kadr.</p>
+      <p>Filmy, komiksy i piosenki często <b>nawiązują</b> do mitów, Biblii, baśni: „Percy Jackson i bogowie olimpijscy” – do mitologii greckiej, wiele filmów – do historii Kopciuszka. <b>Pułapka:</b> pisząc o obrazie, nie opisuj samych szczegółów – powiedz, jaki nastrój i sens tworzą.</p>`,
+    remember: 'Obraz czytasz jak tekst: co? → kompozycja → kolory → światło → nastrój i sens.',
+    hook: 'Patrz na obraz jak fotograf: <b>gdzie jest bohater kadru, skąd pada światło, jakie są barwy</b>.',
+    check: { q: 'Analizując kompozycję obrazu, opisujesz…', options: ['cenę obrazu', 'układ elementów: pierwszy plan, tło, centrum', 'życiorys malarza', 'grubość ramy'], answer: 1 },
+  },
+];
+
+/* ===================== POEZJA XX WIEKU ===================== */
+window.LESSONS['polski/poezja'] = [
+  {
+    title: 'Wiersz to nie zagadka – masz plan w 7 pytaniach',
+    svg: `<svg viewBox="0 0 420 252" role="img" aria-label="Plan analizy wiersza: kto mówi, do kogo, w jakiej sytuacji, co widzę, jakie środki i po co, jak jest zbudowany, o czym i po co">
+      <circle cx="24" cy="22" r="14" class="f1 s1 sw"/><text x="24" y="28" class="tx-s" style="font-weight:bold" text-anchor="middle">1</text>
+      <text x="48" y="28" class="tx"><tspan style="font-weight:bold">Kto mówi?</tspan> → podmiot liryczny</text>
+      <circle cx="24" cy="57" r="14" class="f1 s1 sw"/><text x="24" y="63" class="tx-s" style="font-weight:bold" text-anchor="middle">2</text>
+      <text x="48" y="63" class="tx"><tspan style="font-weight:bold">Do kogo?</tspan> → adresat</text>
+      <circle cx="24" cy="92" r="14" class="f1 s1 sw"/><text x="24" y="98" class="tx-s" style="font-weight:bold" text-anchor="middle">3</text>
+      <text x="48" y="98" class="tx"><tspan style="font-weight:bold">Gdzie, kiedy?</tspan> → sytuacja liryczna</text>
+      <circle cx="24" cy="127" r="14" class="f3 s3 sw"/><text x="24" y="133" class="tx-s" style="font-weight:bold" text-anchor="middle">4</text>
+      <text x="48" y="133" class="tx"><tspan style="font-weight:bold">Co widzę?</tspan> → obrazy poetyckie</text>
+      <circle cx="24" cy="162" r="14" class="f3 s3 sw"/><text x="24" y="168" class="tx-s" style="font-weight:bold" text-anchor="middle">5</text>
+      <text x="48" y="168" class="tx"><tspan style="font-weight:bold">Jakie środki?</tspan> → i ich funkcja</text>
+      <circle cx="24" cy="197" r="14" class="f2 s2 sw"/><text x="24" y="203" class="tx-s" style="font-weight:bold" text-anchor="middle">6</text>
+      <text x="48" y="203" class="tx"><tspan style="font-weight:bold">Jak zbudowany?</tspan> → wersy, strofy, rymy</text>
+      <circle cx="24" cy="232" r="14" class="f2 s2 sw"/><text x="24" y="238" class="tx-s" style="font-weight:bold" text-anchor="middle">7</text>
+      <text x="48" y="238" class="tx"><tspan style="font-weight:bold">O czym?</tspan> → temat, nastrój, problem</text>
+    </svg>`,
+    text: `<p>Podstawa wymienia wiersze Baczyńskiego, Herberta, Leśmiana, Miłosza, Różewicza i Szymborskiej oraz aforyzmy Leca. Ale uwaga: według informatora CKE zadania do wiersza <b>nie sprawdzają, czy go znasz</b> – w arkuszu może być dowolny wiersz. Sprawdzają, czy umiesz go <b>przeanalizować i zinterpretować</b>.</p>
+      <p>Dlatego zamiast uczyć się wierszy na pamięć, opanuj plan 7 pytań – działa z każdym wierszem.</p>`,
+    remember: 'Kto? Do kogo? Gdzie? Co widzę? Jakie środki? Jak zbudowany? O czym?',
+    hook: 'Plan jak <b>śledztwo</b>: najpierw świadek (podmiot), potem miejsce zdarzenia (sytuacja), ślady (środki) i na końcu motyw (problematyka).',
+    check: { q: 'Co sprawdzają zadania do wiersza na egzaminie ósmoklasisty?', options: ['czy znasz ten wiersz na pamięć', 'czy umiesz go przeanalizować i zinterpretować', 'czy znasz datę jego powstania', 'tylko liczbę wersów'], answer: 1 },
+  },
+  {
+    title: 'Kto mówi, do kogo i w jakiej sytuacji?',
+    svg: `<svg viewBox="0 0 420 206" role="img" aria-label="Podmiot liryczny, czyli ja mówiące w wierszu, zwraca się do adresata; sytuacja liryczna to gdzie, kiedy i w jakich okolicznościach mówi podmiot">
+      <defs><marker id="a-pl-po-2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" class="tx"/></marker></defs>
+      <circle cx="80" cy="70" r="60" class="f1 s1 sw"/>
+      <text x="80" y="62" class="tx" style="font-size:28px" text-anchor="middle">🧍</text>
+      <text x="80" y="90" class="tx" style="font-weight:bold" text-anchor="middle">„ja”</text>
+      <text x="80" y="110" class="tx-s" text-anchor="middle">podmiot</text>
+      <circle cx="340" cy="70" r="60" class="f2 s2 sw"/>
+      <text x="340" y="62" class="tx" style="font-size:28px" text-anchor="middle">👤</text>
+      <text x="340" y="90" class="tx" style="font-weight:bold" text-anchor="middle">„ty”</text>
+      <text x="340" y="110" class="tx-s" text-anchor="middle">adresat</text>
+      <path d="M146,70 L272,70" class="ln sw" marker-end="url(#a-pl-po-2)"/>
+      <text x="210" y="60" class="tx-s" text-anchor="middle">mówi do…</text>
+      <rect x="6" y="144" width="408" height="56" rx="12" class="f4 s4 sw"/>
+      <text x="210" y="166" class="tx-s" style="font-weight:bold" text-anchor="middle">sytuacja liryczna</text>
+      <text x="210" y="188" class="tx-s" text-anchor="middle">gdzie? kiedy? co się dzieje? (np. wieczór, okno, miasto)</text>
+    </svg>`,
+    text: `<p><b>Podmiot liryczny</b> to „ja” mówiące w wierszu – nie utożsamiaj go automatycznie z poetą. <b>Adresat</b> to ten, do kogo podmiot się zwraca (czasem przez apostrofę). <b>Sytuacja liryczna</b> – gdzie, kiedy i w jakich okolicznościach mówi podmiot.</p>
+      <p><i>Przykład napisany do ćwiczenia:</i> „Stoję przy oknie. Miasto zasypia, / latarnie gaszą swoje żółte oczy.” – podmiot wieczorem patrzy z okna na zasypiające miasto.</p>`,
+    remember: 'Podmiot liryczny ≠ autor. Sytuacja liryczna = gdzie, kiedy, co się dzieje.',
+    hook: 'Wyobraź sobie <b>scenę z filmu</b>: kto stoi w kadrze, do kogo mówi i co jest w tle – to właśnie sytuacja liryczna.',
+    check: { q: '„Stoję przy oknie. Miasto zasypia…” (przykład do ćwiczenia). Jaka to sytuacja liryczna?', options: ['podmiot opowiada o bitwie', 'podmiot wieczorem obserwuje z okna zasypiające miasto', 'podmiot rozmawia z przyjacielem przez telefon', 'podmiot wspomina wakacje nad morzem'], answer: 1 },
+  },
+  {
+    title: 'Obrazy i środki – zawsze z funkcją',
+    svg: `<svg viewBox="0 0 420 216" role="img" aria-label="Fragment latarnie gaszą swoje żółte oczy to przenośnia, która ożywia miasto; pytania dokąd, po co to pytania retoryczne, które skłaniają do refleksji">
+      <defs><marker id="a-pl-po-3" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" class="tx"/></marker></defs>
+      <rect x="6" y="6" width="408" height="36" rx="10" class="bg ln-thin"/>
+      <text x="210" y="30" class="tx" style="font-style:italic" text-anchor="middle">„latarnie gaszą swoje żółte oczy”</text>
+      <path d="M110,44 L110,66" class="ln" marker-end="url(#a-pl-po-3)"/>
+      <path d="M310,44 L310,66" class="ln" marker-end="url(#a-pl-po-3)"/>
+      <rect x="6" y="68" width="200" height="34" rx="10" class="f1 s1 sw"/>
+      <text x="106" y="90" class="tx" style="font-weight:bold" text-anchor="middle">przenośnia</text>
+      <rect x="214" y="68" width="200" height="34" rx="10" class="f3 s3 sw"/>
+      <text x="314" y="90" class="tx-s" text-anchor="middle">miasto „zamyka oczy” do snu</text>
+      <rect x="6" y="116" width="408" height="36" rx="10" class="bg ln-thin"/>
+      <text x="210" y="140" class="tx" style="font-style:italic" text-anchor="middle">„Ktoś jeszcze biegnie – dokąd? po co?”</text>
+      <path d="M110,154 L110,176" class="ln" marker-end="url(#a-pl-po-3)"/>
+      <path d="M310,154 L310,176" class="ln" marker-end="url(#a-pl-po-3)"/>
+      <rect x="6" y="178" width="200" height="34" rx="10" class="f1 s1 sw"/>
+      <text x="106" y="200" class="tx" style="font-weight:bold" text-anchor="middle">pytania retoryczne</text>
+      <rect x="214" y="178" width="200" height="34" rx="10" class="f3 s3 sw"/>
+      <text x="314" y="200" class="tx-s" text-anchor="middle">refleksja: po co ten pośpiech?</text>
+    </svg>`,
+    text: `<p><b>Obraz poetycki</b> to fragment, który pozwala „zobaczyć” sytuację (gasnące latarnie, pusta ulica). Środki stylistyczne budują te obrazy – i na egzaminie trzeba podać nie tylko <b>nazwę</b>, ale też <b>funkcję</b>: co środek podkreśla, jakie budzi wrażenie.</p>
+      <p>W wierszach poetów XX wieku spotkasz też <b>neologizmy</b> – słynął z nich Bolesław Leśmian (tzw. leśmianizmy).</p>`,
+    remember: 'Nazwa środka + cytat + funkcja = pełna odpowiedź.',
+    hook: 'Sama nazwa środka to jak <b>samo „tak” na pytanie „dlaczego?”</b> – za mało. Dopowiedz: „…bo podkreśla…”.',
+  },
+  {
+    title: 'Budowa: wiersz z rymami i wiersz wolny',
+    svg: `<svg viewBox="0 0 420 222" role="img" aria-label="Wiersz regularny z rymami, np. Pan Tadeusz: ruczaju – gaju; wiersz wolny ma wersy różnej długości i nie ma rymów">
+      <rect x="6" y="6" width="408" height="98" rx="12" class="f1 s1 sw"/>
+      <text x="16" y="28" class="tx-s" style="font-weight:bold">wiersz z rymami („Pan Tadeusz”, ks. I)</text>
+      <text x="16" y="56" class="tx-s">Śród takich pól przed laty, nad brzegiem <tspan class="t2" style="font-weight:bold">ruczaju</tspan>,</text>
+      <text x="16" y="78" class="tx-s">Na pagórku niewielkim, we brzozowym <tspan class="t2" style="font-weight:bold">gaju</tspan>,</text>
+      <text x="16" y="96" class="tx-s">→ stała liczba sylab, rymy parzyste</text>
+      <rect x="6" y="114" width="408" height="102" rx="12" class="f3 s3 sw"/>
+      <text x="16" y="136" class="tx-s" style="font-weight:bold">wiersz wolny (przykład do ćwiczenia)</text>
+      <text x="16" y="160" class="tx-s">Ktoś jeszcze biegnie – dokąd? po co?</text>
+      <text x="16" y="180" class="tx-s">A ja wciąż liczę kroki,</text>
+      <text x="16" y="200" class="tx-s">których nie zrobiłem.</text>
+      <text x="404" y="190" class="tx-s" text-anchor="end">bez rymów,</text>
+      <text x="404" y="208" class="tx-s" text-anchor="end">różne wersy</text>
+    </svg>`,
+    text: `<p>W <b>wierszu regularnym</b> wersy mają stałą liczbę sylab i zwykle się rymują – jak w „Panu Tadeuszu” (13 sylab, rymy parzyste). <b>Wiersz wolny</b> nie ma stałej liczby sylab i zwykle nie ma rymów – wersy mają różną długość, a rytm tworzą pauzy i układ zdań.</p>
+      <p>Wierszem wolnym od początku twórczości pisał <b>Tadeusz Różewicz</b>. Pisząc o budowie, nazwij ją i powiedz, co daje (np. wiersz wolny brzmi jak zwykła, szczera mowa).</p>`,
+    remember: 'Wiersz wolny = bez stałej liczby sylab i zwykle bez rymów.',
+    hook: 'Wiersz regularny maszeruje <b>równym krokiem</b>, wiersz wolny <b>spaceruje</b> we własnym tempie.',
+    check: { q: 'Wersy różnej długości, bez rymów i bez stałej liczby sylab – to cechy…', options: ['wiersza wolnego', 'refrenu', 'rymów parzystych', 'aforyzmu'], answer: 0 },
+  },
+  {
+    title: 'Nastrój, problematyka i konteksty',
+    svg: `<svg viewBox="0 0 420 214" role="img" aria-label="Interpretację budują tekst wiersza oraz konteksty: biograficzny, czyli życie poety, historyczny, czyli czas powstania, i kulturowy, czyli mity, Biblia i inne dzieła">
+      <defs><marker id="a-pl-po-5" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" class="tx"/></marker></defs>
+      <rect x="6" y="70" width="120" height="70" rx="12" class="f4 s4 sw"/>
+      <text x="66" y="100" class="tx-b" text-anchor="middle">tekst</text>
+      <text x="66" y="122" class="tx-s" text-anchor="middle">wiersza</text>
+      <rect x="250" y="6" width="164" height="56" rx="10" class="f1 s1 sw"/>
+      <text x="332" y="28" class="tx-s" style="font-weight:bold" text-anchor="middle">biograficzny</text>
+      <text x="332" y="48" class="tx-s" text-anchor="middle">życie poety</text>
+      <rect x="250" y="78" width="164" height="56" rx="10" class="f2 s2 sw"/>
+      <text x="332" y="100" class="tx-s" style="font-weight:bold" text-anchor="middle">historyczny</text>
+      <text x="332" y="120" class="tx-s" text-anchor="middle">czas powstania</text>
+      <rect x="250" y="150" width="164" height="56" rx="10" class="f5 s5 sw"/>
+      <text x="332" y="172" class="tx-s" style="font-weight:bold" text-anchor="middle">kulturowy</text>
+      <text x="332" y="192" class="tx-s" text-anchor="middle">mity, Biblia, dzieła</text>
+      <path d="M128,105 L240,34" class="ln" marker-start="url(#a-pl-po-5)"/>
+      <path d="M128,105 L240,106" class="ln" marker-start="url(#a-pl-po-5)"/>
+      <path d="M128,105 L240,178" class="ln" marker-start="url(#a-pl-po-5)"/>
+      <text x="66" y="162" class="tx-s" text-anchor="middle">+ nastrój</text>
+      <text x="66" y="182" class="tx-s" text-anchor="middle">+ problematyka</text>
+    </svg>`,
+    text: `<p><b>Nastrój</b> to emocje, które tworzy wiersz: radość, smutek, niepokój, refleksja. <b>Problematyka egzystencjalna</b> to pytania o sens życia, przemijanie, śmierć, miłość, samotność – w przykładzie z kroków 2–4: przemijanie i niewykorzystane szanse („kroki, których nie zrobiłem”).</p>
+      <p><b>Konteksty</b>: biograficzny (życie poety), historyczny (czas powstania – np. wiersze Baczyńskiego czyta się w kontekście II wojny światowej; poeta zginął w powstaniu warszawskim w 1944 r.), kulturowy (mity, Biblia, inne dzieła). Kontekst wspiera czytanie, ale go nie zastępuje.</p>`,
+    remember: 'Najpierw tekst, potem kontekst. Kontekst ma potwierdzać to, co jest w wierszu.',
+    hook: 'Kontekst to <b>latarka</b>: oświetla wiersz z boku, ale czytać musisz sam.',
+  },
+  {
+    title: 'Poeci z listy i aforyzm',
+    svg: `<svg viewBox="0 0 420 230" role="img" aria-label="Poeci z podstawy: Baczyński – zginął w powstaniu warszawskim; Leśmian – neologizmy; Miłosz – Nobel 1980; Szymborska – Nobel 1996; Herbert – Pan Cogito; Różewicz – wiersz wolny; Lec – aforyzmy, Myśli nieuczesane">
+      <rect x="6" y="6" width="200" height="48" rx="10" class="f2 s2 sw"/>
+      <text x="106" y="26" class="tx" style="font-weight:bold" text-anchor="middle">Baczyński</text>
+      <text x="106" y="45" class="tx-s" text-anchor="middle">zginął w powstaniu, 1944</text>
+      <rect x="214" y="6" width="200" height="48" rx="10" class="f5 s5 sw"/>
+      <text x="314" y="26" class="tx" style="font-weight:bold" text-anchor="middle">Leśmian</text>
+      <text x="314" y="45" class="tx-s" text-anchor="middle">neologizmy</text>
+      <rect x="6" y="60" width="200" height="48" rx="10" class="f4 s4 sw"/>
+      <text x="106" y="80" class="tx" style="font-weight:bold" text-anchor="middle">Miłosz</text>
+      <text x="106" y="99" class="tx-s" text-anchor="middle">Nobel 1980</text>
+      <rect x="214" y="60" width="200" height="48" rx="10" class="f4 s4 sw"/>
+      <text x="314" y="80" class="tx" style="font-weight:bold" text-anchor="middle">Szymborska</text>
+      <text x="314" y="99" class="tx-s" text-anchor="middle">Nobel 1996</text>
+      <rect x="6" y="114" width="200" height="48" rx="10" class="f1 s1 sw"/>
+      <text x="106" y="134" class="tx" style="font-weight:bold" text-anchor="middle">Herbert</text>
+      <text x="106" y="153" class="tx-s" text-anchor="middle">Pan Cogito</text>
+      <rect x="214" y="114" width="200" height="48" rx="10" class="f3 s3 sw"/>
+      <text x="314" y="134" class="tx" style="font-weight:bold" text-anchor="middle">Różewicz</text>
+      <text x="314" y="153" class="tx-s" text-anchor="middle">wiersz wolny, „Ocalony”</text>
+      <rect x="6" y="168" width="408" height="56" rx="10" class="bg ln"/>
+      <text x="210" y="190" class="tx" style="font-weight:bold" text-anchor="middle">Lec – aforyzmy („Myśli nieuczesane”)</text>
+      <text x="210" y="212" class="tx-s" text-anchor="middle">aforyzm = krótka, błyskotliwa myśl znanego autora</text>
+    </svg>`,
+    text: `<p>Kilka pewnych faktów o poetach z podstawy: <b>Miłosz</b> (Nobel 1980) i <b>Szymborska</b> (Nobel 1996) to laureaci literackiej Nagrody Nobla; <b>Baczyński</b> – poeta pokolenia wojennego, zginął w powstaniu warszawskim; <b>Leśmian</b> – mistrz neologizmów; <b>Herbert</b> stworzył Pana Cogito; <b>Różewicz</b> pisał wierszem wolnym.</p>
+      <p><b>Aforyzm</b> to krótka, zwięzła, często zaskakująca myśl znanego autora – mistrzem gatunku był Stanisław Jerzy Lec. <i>Przykład napisany do ćwiczenia:</i> „Najdłużej trwają chwile, na które czekamy.” Przysłowie jest za to ludowe i anonimowe.</p>`,
+    remember: 'Nobel: Miłosz 1980, Szymborska 1996. Aforyzm – krótka myśl znanego autora.',
+    hook: 'Najpierw <b>Miłosz</b> (1980), a <b>szesnaście lat później</b> – <b>Szymborska</b> (1996).',
+    check: { q: 'Kto z poetów z listy otrzymał literacką Nagrodę Nobla w 1996 roku?', options: ['Wisława Szymborska', 'Zbigniew Herbert', 'Stanisław Jerzy Lec', 'Krzysztof Kamil Baczyński'], answer: 0 },
   },
 ];
 
