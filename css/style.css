@@ -250,3 +250,10 @@ h2.sec { font-size: 1.05rem; margin: 22px 0 8px; color: var(--muted); text-trans
 .mode { display: flex; flex-direction: column; gap: 2px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; text-decoration: none; color: var(--text); }
 .mode:hover { border-color: var(--primary); }
 .mode .icon { font-size: 1.5rem; }
+
+/* Ścieżki (ekran wyboru klasy i nagłówek ścieżki) */
+.top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.switch { font-size: .85rem; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.tracks .card { border-top: 4px solid var(--accent, var(--primary)); }
+.tracks .card.last { border-color: var(--accent, var(--primary)); }
+.logo span { white-space: nowrap; }

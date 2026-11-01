@@ -1,6 +1,17 @@
-# 🎒 Pomoc w szkole – klasa 8
+# 🎒 Pomoc w szkole
 
-Pomoc naukowa dla ucznia 8 klasy szkoły podstawowej, pomyślana jako przygotowanie do egzaminu ósmoklasisty.
+Pomoc naukowa dla uczniów szkoły podstawowej. Na starcie uczeń wybiera **ścieżkę**:
+
+| Ścieżka | Strona | Stan |
+|---|---|---|
+| 🧸 Klasa 3 | `klasa3.html` | w przygotowaniu |
+| 🎨 Klasa 4 – wszystkie przedmioty | `klasa4.html` | w przygotowaniu |
+| 🔬 Klasa 8 – wszystkie przedmioty (bieżąca nauka) | `klasa8.html` | w przygotowaniu |
+| 🎯 Egzamin ósmoklasisty | `egzamin.html` | gotowa (opis poniżej) |
+
+Każda ścieżka ma własne treści, własny plan rozbudowy i **osobny zapis postępu** – na jednym urządzeniu mogą się uczyć dzieci z różnych klas. Wszystkie ścieżki korzystają z tego samego silnika (`js/app.js`). Jak działają ścieżki i jak dodać treści: `docs/SCIEZKI.md`.
+
+## 🎯 Ścieżka „Egzamin ósmoklasisty”
 
 **Przedmioty:** język polski, matematyka, język angielski. Razem 47 działów, 47 lekcji, 669 fiszek, 1124 pytania (60 z rysunkiem), 85 zadań otwartych (matematyka i polski) oraz 23 zestawy ćwiczeń jak na egzaminie (160 zadań).
 
@@ -76,13 +87,13 @@ window.SUBJECTS.push({
 });
 ```
 
-Nowy plik trzeba dopisać w `index.html` (przed `js/app.js`).
+Nowy plik trzeba dopisać w stronie ścieżki (np. `egzamin.html`, `klasa4.html`) przed `js/app.js` – narzędzia w `tools/` biorą listę plików właśnie stamtąd.
 
 Pytanie może mieć rysunek: pole `svg` (zasady jak w lekcjach – `docs/LEKCJE.md`, sprawdza je `node tools/sprawdz-lekcje.js`).
 
 ### Zestawy ćwiczeń (czytanie, reading, listening, środki językowe)
 
-Pliki `js/dane/cwiczenia-*.js` dopisują zestawy do tablicy `window.EXERCISES` (nowy plik trzeba dodać w `index.html`; narzędzia wczytują je same):
+Pliki `js/dane/cwiczenia-*.js` dopisują zestawy do tablicy `window.EXERCISES` (nowy plik trzeba dodać w stronie ścieżki przed `js/app.js`):
 
 ```js
 window.EXERCISES.push({
@@ -107,13 +118,18 @@ window.EXERCISES.push({
 ## Struktura
 
 ```
-index.html          – strona
+index.html          – ekran wyboru ścieżki (+ przekierowanie dawnych adresów #/s/… do egzamin.html)
+egzamin.html        – ścieżka „Egzamin ósmoklasisty”
+klasa3.html, klasa4.html, klasa8.html – pozostałe ścieżki
 css/style.css       – wygląd
-js/app.js           – logika (lekcje, quiz, fiszki, zadania otwarte, zestawy ćwiczeń, postęp)
-js/dane/*.js        – treści przedmiotów; cwiczenia-*.js – zestawy ćwiczeń jak na egzaminie
+js/sciezki.js       – lista ścieżek (nazwa, strona, klucz zapisu postępu)
+js/wybor.js         – ekran wyboru ścieżki
+js/app.js           – wspólny silnik (lekcje, quiz, fiszki, zadania otwarte, zestawy ćwiczeń, postęp)
+js/dane/*.js        – treści ścieżki egzaminacyjnej (nowe ścieżki: js/dane/kl3/, kl4/, kl8/); cwiczenia-*.js – zestawy ćwiczeń jak na egzaminie
 js/dane/zrodla.js   – opis podstaw i źródeł
 js/lekcje/*.js      – lekcje (tryb nauki) i interaktywne widżety
 docs/LEKCJE.md      – jak pisać lekcje
-docs/PLAN.md        – plan rozbudowy materiału zgodnie z podstawą programową
+docs/SCIEZKI.md     – ścieżki: budowa, zasady, jak dodać treści
+docs/PLAN.md        – plan rozbudowy ścieżki egzaminacyjnej zgodnie z podstawą programową
 tools/              – sprawdzanie danych i lekcji, zrzuty ekranu, przegląd w przeglądarce (node tools/przeglad.js)
 ```

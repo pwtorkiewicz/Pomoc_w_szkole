@@ -1,13 +1,23 @@
-/* Pomoc w szkole – klasa 8
- * Prosta aplikacja bez serwera: ściągi, fiszki, quizy i powtórka błędów.
- * Treści znajdują się w plikach js/dane/*.js (tablica window.SUBJECTS).
+/* Pomoc w szkole – wspólny silnik wszystkich ścieżek (klasa 3, klasa 4, klasa 8, egzamin ósmoklasisty).
+ * Prosta aplikacja bez serwera: lekcje, ściągi, fiszki, quizy i powtórka błędów.
+ * Ścieżkę wybiera strona HTML (<body data-track="…">, lista w js/sciezki.js); strona wczytuje tylko
+ * swoje treści (tablica window.SUBJECTS, window.EXERCISES, window.LESSONS).
  */
 (() => {
   'use strict';
 
   const SUBJECTS = window.SUBJECTS || [];
   const app = document.getElementById('app');
-  const STORE_KEY = 'pomoc8_v2';
+  const TRACKS = window.TRACKS || [];
+  const TRACK = TRACKS.find((t) => t.id === document.body.dataset.track)
+    || TRACKS.find((t) => t.exam) || { id: 'egzamin8', name: 'Egzamin ósmoklasisty', storeKey: 'pomoc8_v2', exam: true };
+  // Postęp każdej ścieżki zapisujemy osobno (ścieżka egzaminacyjna zachowuje dawny klucz 'pomoc8_v2').
+  const STORE_KEY = TRACK.storeKey;
+  try { localStorage.setItem(window.TRACK_LAST_KEY || 'pomoc_sciezka', TRACK.id); } catch (e) { /* brak dostępu */ }
+  // Nazwy zależne od ścieżki: przy egzaminie „test próbny”, w zwykłej klasie „sprawdzian”.
+  const WORDS = TRACK.exam
+    ? { test: 'Test próbny', practice: 'Ćwiczenia jak na egzaminie' }
+    : { test: 'Sprawdzian z przedmiotu', practice: 'Ćwiczenia' };
   const EXAM_SIZE = 15;
   const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
 
@@ -78,7 +88,7 @@
       .join('')}</div>`;
   }
   function setTitle(t) {
-    document.title = t ? `${t} – Pomoc w szkole` : 'Pomoc w szkole – klasa 8';
+    document.title = t ? `${t} – ${TRACK.name} – Pomoc w szkole` : `${TRACK.name} – Pomoc w szkole`;
   }
   const PRAISE = ['Świetnie! 🎉', 'Brawo! 👏', 'Dobrze! ✅', 'Super! ⭐', 'Tak trzymaj! 💪'];
   const praise = () => PRAISE[Math.floor(Math.random() * PRAISE.length)];
@@ -122,11 +132,21 @@
   function home() {
     setTitle('');
     const wrongCount = Object.keys(state.wrong).filter(resolveKey).length;
+    if (!SUBJECTS.length) {
+      app.innerHTML = `
+        <section class="hero">
+          <h1>${TRACK.icon || ''} ${esc(TRACK.name)}</h1>
+          <p>${esc(TRACK.about || '')}</p>
+        </section>
+        <div class="result"><p class="big">🚧</p>
+          <p>Materiały dla tej ścieżki są w przygotowaniu. Powstają według aktualnej podstawy programowej – wkrótce pojawią się tu przedmioty i działy.</p>
+          <a class="btn primary" href="index.html">Wybierz inną ścieżkę</a></div>`;
+      return;
+    }
     app.innerHTML = `
       <section class="hero">
         <h1>Cześć! 👋</h1>
-        <p>Wybierz przedmiot. W każdym dziale znajdziesz <b>ściągę</b>, <b>fiszki</b> i <b>quiz</b>.
-        Pytania, na które odpowiesz źle, trafią do powtórki. Są też ćwiczenia jak na egzaminie: <b>zadania otwarte</b>, <b>czytanie ze zrozumieniem</b>, a w angielskim <b>reading</b>, <b>listening</b> i <b>środki językowe</b>.</p>
+        <p>${TRACK.intro || 'Wybierz przedmiot. W każdym dziale znajdziesz <b>ściągę</b>, <b>fiszki</b> i <b>quiz</b>. Pytania, na które odpowiesz źle, trafią do powtórki.'}</p>
       </section>
       <div class="grid">
         ${SUBJECTS.map((s) => `
@@ -142,11 +162,12 @@
       </a>
       <p class="muted" style="margin-top:22px">
         <a href="#/zrodla">📋 Na jakiej podstawie przygotowano materiał</a> ·
+        <a href="index.html">🔀 Zmień klasę</a> ·
         <a href="#/" id="reset">Wyzeruj postęp</a>
       </p>`;
     document.getElementById('reset').onclick = (e) => {
       e.preventDefault();
-      if (confirm('Na pewno usunąć wszystkie wyniki i listę błędów?')) {
+      if (confirm(`Na pewno usunąć wszystkie wyniki i listę błędów w ścieżce „${TRACK.name}”?`)) {
         state.best = {}; state.wrong = {}; state.exams = {}; state.tasks = {}; state.sets = {};
         save(); home();
       }
@@ -163,10 +184,10 @@
       <div style="--accent:${s.color}">${bar(subjectProgress(s))}</div>
       ${s.exam ? `<p class="basis">📅 <b>Egzamin:</b> ${s.exam} <a href="#/zrodla">Źródła</a></p>` : ''}
       <p>
-        <a class="btn primary" href="#/s/${s.id}/egzamin">📝 Test próbny (${EXAM_SIZE} pytań)</a>
+        <a class="btn primary" href="#/s/${s.id}/egzamin">📝 ${WORDS.test} (${Math.min(EXAM_SIZE, s.topics.reduce((n, t) => n + t.questions.length, 0))} pytań)</a>
         ${last != null ? `<span class="muted">ostatni wynik: ${last}%</span>` : ''}
       </p>
-      ${allTasks.length || setsOf(s).length ? `<h2 class="sec">Ćwiczenia jak na egzaminie</h2>
+      ${allTasks.length || setsOf(s).length ? `<h2 class="sec">${WORDS.practice}</h2>
       <div class="modes">
         ${allTasks.length ? `<a class="mode" href="#/s/${s.id}/zadania"><span class="icon">✍️</span><b>Zadania otwarte</b>
           <small class="muted">${allTasks.length} zadań · ${taskScore(allTasks)}</small></a>` : ''}
@@ -546,9 +567,9 @@
   }
 
   function exam(s) {
-    setTitle(`Test – ${s.name}`);
-    app.innerHTML = `${crumbs([[s.name, `#/s/${s.id}`], ['Test próbny']])}
-      <h1>📝 Test próbny: ${esc(s.name)}</h1><div id="pane"></div>`;
+    setTitle(`${WORDS.test} – ${s.name}`);
+    app.innerHTML = `${crumbs([[s.name, `#/s/${s.id}`], [WORDS.test]])}
+      <h1>📝 ${WORDS.test}: ${esc(s.name)}</h1><div id="pane"></div>`;
     const all = s.topics.flatMap((t) => questionsOf(s, t));
     quiz(document.getElementById('pane'), shuffle(all).slice(0, EXAM_SIZE), {
       showTopic: true,
@@ -561,7 +582,7 @@
 
   function sources() {
     setTitle('Źródła');
-    const info = window.SOURCES || { html: '' };
+    const info = window.SOURCES || { html: '<p>Źródła dla tej ścieżki zostaną opisane razem z pierwszymi materiałami. Każdy dział będzie miał ramkę „Na jakiej podstawie” z numerem wymagania podstawy programowej.</p>' };
     app.innerHTML = `${crumbs([['Źródła']])}<h1>📋 Na jakiej podstawie?</h1><article class="theory">${info.html}</article>
       <a class="btn" href="#/">Wróć na start</a>`;
   }

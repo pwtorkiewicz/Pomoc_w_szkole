@@ -3,34 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pomoc w szkole – klasa 8</title>
-  <meta name="description" content="Ściągi, fiszki i quizy dla ucznia 8 klasy szkoły podstawowej – przygotowanie do egzaminu ósmoklasisty.">
+  <title>Pomoc w szkole</title>
+  <meta name="description" content="Pomoc w nauce dla uczniów szkoły podstawowej: klasa 3, klasa 4, klasa 8 i przygotowanie do egzaminu ósmoklasisty. Lekcje, ściągi, fiszki i quizy.">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Dawne adresy (sprzed podziału na ścieżki) prowadziły do ścieżki egzaminacyjnej: index.html#/s/…, #/powtorka, #/zrodla.
+    (function () {
+      var old = function () {
+        if (/^#\/(s|powtorka|zrodla)(\/|$)/.test(location.hash)) location.replace('egzamin.html' + location.hash);
+      };
+      old();
+      window.addEventListener('hashchange', old);
+    })();
+  </script>
 </head>
 <body>
   <header class="top">
-    <a href="#/" class="logo">🎒 Pomoc w szkole <span>klasa 8</span></a>
+    <a href="index.html" class="logo">🎒 Pomoc w szkole</a>
   </header>
-  <main id="app" aria-live="polite"></main>
+  <main id="app" aria-live="polite">
+    <section class="hero">
+      <h1>Cześć! 👋</h1>
+      <p>Wybierz swoją klasę albo przygotowanie do egzaminu. Każda ścieżka ma własne materiały i własny zapis postępu – na jednym urządzeniu może się uczyć kilkoro dzieci z różnych klas.</p>
+    </section>
+    <div class="grid tracks" id="tracks"></div>
+    <noscript><p>Do działania aplikacji potrzebny jest włączony JavaScript.</p></noscript>
+  </main>
   <footer class="foot">
     Postęp zapisuje się tylko na tym urządzeniu. Treści warto skonsultować z nauczycielem.
   </footer>
 
-  <script>window.SUBJECTS = []; window.EXERCISES = [];</script>
-  <script src="js/dane/polski.js"></script>
-  <script src="js/dane/matematyka.js"></script>
-  <script src="js/dane/angielski.js"></script>
-  <script src="js/dane/cwiczenia-polski.js"></script>
-  <script src="js/dane/cwiczenia-angielski.js"></script>
-  <script src="js/dane/cwiczenia-angielski-sluchanie.js"></script>
-  <script src="js/dane/cwiczenia-angielski-srodki.js"></script>
-  <script src="js/dane/zrodla.js"></script>
-  <script>window.LESSONS = {};</script>
-  <script src="js/lekcje/widgety.js"></script>
-  <script src="js/lekcje/polski-literatura.js"></script>
-  <script src="js/lekcje/polski-jezyk.js"></script>
-  <script src="js/lekcje/matematyka.js"></script>
-  <script src="js/lekcje/angielski.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/sciezki.js"></script>
+  <script src="js/wybor.js"></script>
 </body>
 </html>

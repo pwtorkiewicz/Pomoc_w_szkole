@@ -1,0 +1,51 @@
+/* Ścieżki nauki (klasa / egzamin). Każda ścieżka to osobna strona HTML ze wspólnym silnikiem js/app.js:
+ * strona ustawia <body data-track="…"> i wczytuje tylko swoje pliki danych i lekcji.
+ * Każda ścieżka ma własny zapis postępu w localStorage (storeKey), więc wyniki i powtórka błędów
+ * dzieci z różnych klas na jednym urządzeniu się nie mieszają.
+ * soon: true – na ekranie wyboru znaczek „w przygotowaniu”.
+ * UWAGA: nie zmieniaj storeKey istniejącej ścieżki – uczeń straciłby zapisany postęp. */
+window.TRACKS = [
+  {
+    id: 'kl3',
+    page: 'klasa3.html',
+    icon: '🧸',
+    name: 'Klasa 3',
+    about: 'Edukacja wczesnoszkolna – nauka krok po kroku, z obrazkami i ćwiczeniami.',
+    storeKey: 'pomoc_kl3_v1',
+    soon: true, // usuń, gdy w ścieżce pojawią się pierwsze materiały
+    color: '#e0803a',
+  },
+  {
+    id: 'kl4',
+    page: 'klasa4.html',
+    icon: '🎨',
+    name: 'Klasa 4',
+    about: 'Wszystkie przedmioty klasy 4 – lekcje, ściągi, fiszki i quizy.',
+    storeKey: 'pomoc_kl4_v1',
+    soon: true, // usuń, gdy w ścieżce pojawią się pierwsze materiały
+    color: '#2e9e6b',
+  },
+  {
+    id: 'kl8',
+    page: 'klasa8.html',
+    icon: '🔬',
+    name: 'Klasa 8',
+    about: 'Pomoc w bieżącej nauce wszystkich przedmiotów klasy 8: fizyka, chemia, biologia, historia i inne.',
+    storeKey: 'pomoc_kl8_v1',
+    soon: true, // usuń, gdy w ścieżce pojawią się pierwsze materiały
+    color: '#8e5bd0',
+  },
+  {
+    id: 'egzamin8',
+    page: 'egzamin.html',
+    icon: '🎯',
+    name: 'Egzamin ósmoklasisty',
+    about: 'Przygotowanie do egzaminu: polski, matematyka, angielski. Ćwiczenia jak w arkuszu CKE, testy próbne.',
+    storeKey: 'pomoc8_v2',
+    color: '#4f5bd5',
+    exam: true,
+    intro: 'Wybierz przedmiot. W każdym dziale znajdziesz <b>ściągę</b>, <b>fiszki</b> i <b>quiz</b>. Pytania, na które odpowiesz źle, trafią do powtórki. Są też ćwiczenia jak na egzaminie: <b>zadania otwarte</b>, <b>czytanie ze zrozumieniem</b>, a w angielskim <b>reading</b>, <b>listening</b> i <b>środki językowe</b>.',
+  },
+];
+// Klucz w localStorage z ostatnio wybraną ścieżką (podświetlana na ekranie wyboru).
+window.TRACK_LAST_KEY = 'pomoc_sciezka';
