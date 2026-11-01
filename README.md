@@ -11,11 +11,13 @@ W każdym dziale są:
 - **🎓 Lekcja** – nauka krok po kroku: każdy krok ma grafikę (schemat, rysunek albo interaktywną animację), krótkie wyjaśnienie, ramkę „Zapamiętaj”, trik pamięciowy i pytanie sprawdzające. Interaktywne animacje: twierdzenie Pitagorasa, procenty (siatka 100 kratek), rzuty kostką, koło.
 - **📖 Ściąga** – najważniejsza teoria, wzory i przykłady,
 - **🃏 Fiszki** – karty do zapamiętywania (odwracane kliknięciem),
-- **✅ Quiz** – pytania jednokrotnego wyboru z wyjaśnieniem odpowiedzi.
+- **✅ Quiz** – pytania jednokrotnego wyboru z wyjaśnieniem odpowiedzi,
+- **✍️ Zadania otwarte** (matematyka) – zadania jak w arkuszu (2–3 pkt): rozwiązujesz na kartce, odsłaniasz podpowiedzi krok po kroku albo całe rozwiązanie, porównujesz z zasadami punktacji i oceniasz się sam.
 
 Do tego:
 
 - **📝 Test próbny** – 15 losowych pytań ze wszystkich działów przedmiotu,
+- **✍️ Zadania otwarte z całego przedmiotu** – wszystkie zadania otwarte w losowej kolejności, z sumą punktów,
 - **🔁 Powtórka błędów** – pytania, na które uczeń odpowiedział źle, aż do skutku,
 - **zapis postępu** – najlepszy wynik z każdego działu (zapisany w przeglądarce, bez kont i bez serwera).
 
@@ -54,6 +56,17 @@ window.SUBJECTS.push({
           explain: 'Dlaczego tak.',             // wyjaśnienie (opcjonalne)
         },
       ],
+      tasks: [                                  // zadania otwarte (opcjonalne)
+        {
+          id: 'p8d2mz',                         // stały, unikalny id – jak w pytaniach
+          points: 2,                            // 1–5 punktów
+          q: 'Treść zadania',
+          svg: `<svg …>…</svg>`,                // rysunek (opcjonalny, zasady jak w lekcjach)
+          steps: ['Krok 1…', 'Krok 2…'],        // rozwiązanie krok po kroku
+          answer: 'Wynik',
+          scoring: ['1 pkt – …', '2 pkt – …'],  // po jednej linii na każdy punkt
+        },
+      ],
     },
   ],
 });
@@ -68,10 +81,11 @@ Nowy plik trzeba dopisać w `index.html` (przed `js/app.js`).
 ```
 index.html          – strona
 css/style.css       – wygląd
-js/app.js           – logika (quiz, fiszki, postęp)
+js/app.js           – logika (lekcje, quiz, fiszki, zadania otwarte, postęp)
 js/dane/*.js        – treści przedmiotów
 js/dane/zrodla.js   – opis podstaw i źródeł
 js/lekcje/*.js      – lekcje (tryb nauki) i interaktywne widżety
 docs/LEKCJE.md      – jak pisać lekcje
+docs/PLAN.md        – plan rozbudowy materiału zgodnie z podstawą programową
 tools/              – sprawdzanie lekcji (node tools/sprawdz-lekcje.js) i zrzuty ekranu
 ```

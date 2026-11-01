@@ -213,3 +213,8 @@ small.muted, .muted { color: var(--muted); font-size: .85rem; }
 .widget .controls { display: flex; flex-wrap: wrap; gap: 10px 18px; justify-content: center; align-items: center; margin-top: 8px; font-size: .95rem; }
 .widget input[type=range] { width: 160px; accent-color: var(--primary); }
 .widget .readout { font-weight: 700; font-size: 1.1rem; margin-top: 6px; }
+/* Zadania otwarte */
+.task .steps { margin: 12px 0; padding-left: 1.4em; }
+.task .steps li { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px; margin: 6px 0; }
+.task .scoring { background: var(--surface); border: 1px dashed var(--border); border-radius: 12px; padding: 10px 14px; margin: 12px 0; }
+.task .scoring ul { margin: 6px 0; padding-left: 1.2em; }

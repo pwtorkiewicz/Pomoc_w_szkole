@@ -18,7 +18,7 @@
   function save() {
     try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) { /* tryb prywatny itp. */ }
   }
-  const state = Object.assign({ best: {}, wrong: {}, exams: {}, lessons: {} }, load());
+  const state = Object.assign({ best: {}, wrong: {}, exams: {}, lessons: {}, tasks: {} }, load());
 
   // Jednorazowa migracja: dawniej błędy zapisywano jako „przedmiot/dział/numer pytania”.
   // Numer zamieniamy na stałe id pytania (kolejność pytań w chwili migracji jest ta sama co wcześniej).
@@ -51,6 +51,8 @@
   const topicKey = (s, t) => `${s.id}/${t.id}`;
   // Każde pytanie ma stałe pole id – klucz nie zależy od kolejności pytań w pliku.
   const questionsOf = (s, t) => t.questions.map((q) => ({ ...q, key: `${s.id}/${t.id}/${q.id}`, topicName: t.name }));
+  const tasksOf = (s, t) => (t.tasks || []).map((x) => ({ ...x, key: `${s.id}/${t.id}/${x.id}`, topicName: t.name }));
+  const tasksOfSubject = (s) => s.topics.flatMap((t) => tasksOf(s, t));
   const badgeClass = (p) => (p == null ? '' : p >= 80 ? 'good' : p >= 50 ? 'mid' : 'low');
   const bar = (p, label = true) =>
     `<div class="bar"><span style="width:${p}%"></span></div>${label ? `<small class="muted">${p}% opanowane</small>` : ''}`;
@@ -88,6 +90,7 @@
       if (s) {
         if (p.length === 2) return subject(s);
         if (p[2] === 'egzamin') return exam(s);
+        if (p[2] === 'zadania' && tasksOfSubject(s).length) return subjectTasks(s);
         if (p[2] === 't') {
           const t = s.topics.find((x) => x.id === p[3]);
           if (t) return topic(s, t, p[4] || (lessonOf(s, t) ? 'lekcja' : 'teoria'));
@@ -107,7 +110,7 @@
       <section class="hero">
         <h1>Cześć! 👋</h1>
         <p>Wybierz przedmiot. W każdym dziale znajdziesz <b>ściągę</b>, <b>fiszki</b> i <b>quiz</b>.
-        Pytania, na które odpowiesz źle, trafią do powtórki.</p>
+        Pytania, na które odpowiesz źle, trafią do powtórki. W matematyce poćwiczysz też <b>zadania otwarte</b> z rozwiązaniem krok po kroku.</p>
       </section>
       <div class="grid">
         ${SUBJECTS.map((s) => `
@@ -128,7 +131,7 @@
     document.getElementById('reset').onclick = (e) => {
       e.preventDefault();
       if (confirm('Na pewno usunąć wszystkie wyniki i listę błędów?')) {
-        state.best = {}; state.wrong = {}; state.exams = {};
+        state.best = {}; state.wrong = {}; state.exams = {}; state.tasks = {};
         save(); home();
       }
     };
@@ -137,6 +140,7 @@
   function subject(s) {
     setTitle(s.name);
     const last = state.exams[s.id];
+    const allTasks = tasksOfSubject(s);
     app.innerHTML = `
       ${crumbs([[s.name]])}
       <h1>${s.icon} ${esc(s.name)}</h1>
@@ -146,6 +150,8 @@
         <a class="btn primary" href="#/s/${s.id}/egzamin">📝 Test próbny (${EXAM_SIZE} pytań)</a>
         ${last != null ? `<span class="muted">ostatni wynik: ${last}%</span>` : ''}
       </p>
+      ${allTasks.length ? `<p><a class="btn" href="#/s/${s.id}/zadania">✍️ Zadania otwarte (${allTasks.length})</a>
+        <span class="muted">${taskScore(allTasks)}</span></p>` : ''}
       <ul class="topics">
         ${s.topics.map((t) => {
           const b = state.best[topicKey(s, t)];
@@ -164,6 +170,8 @@
     const lesson = lessonOf(s, t);
     if (tab === 'fiszki' && !hasCards) tab = 'teoria';
     if (tab === 'lekcja' && !lesson) tab = 'teoria';
+    const tasks = tasksOf(s, t);
+    if (tab === 'zadania' && !tasks.length) tab = 'teoria';
     app.innerHTML = `
       ${crumbs([[s.name, `#/s/${s.id}`], [t.name]])}
       <h1>${esc(t.name)}</h1>
@@ -172,11 +180,13 @@
         <a href="${base}/teoria" class="${tab === 'teoria' ? 'on' : ''}">📖 Ściąga</a>
         ${hasCards ? `<a href="${base}/fiszki" class="${tab === 'fiszki' ? 'on' : ''}">🃏 Fiszki (${t.flashcards.length})</a>` : ''}
         <a href="${base}/quiz" class="${tab === 'quiz' ? 'on' : ''}">✅ Quiz (${t.questions.length})</a>
+        ${tasks.length ? `<a href="${base}/zadania" class="${tab === 'zadania' ? 'on' : ''}">✍️ Zadania otwarte (${tasks.length})</a>` : ''}
       </nav>
       <div id="pane"></div>`;
     const pane = document.getElementById('pane');
     if (tab === 'lekcja') return lessonView(pane, lesson, s, t, base);
     if (tab === 'fiszki') return flashcards(pane, t.flashcards);
+    if (tab === 'zadania') return openTasks(pane, tasks, { backHref: `#/s/${s.id}`, backLabel: `Wróć do: ${s.name}` });
     if (tab === 'quiz') {
       return quiz(pane, shuffle(questionsOf(s, t)), {
         saveKey: topicKey(s, t),
@@ -187,7 +197,84 @@
     pane.innerHTML = `${t.basis ? `<p class="basis">📋 <b>Na jakiej podstawie:</b> ${esc(t.basis)} <a href="#/zrodla">Źródła</a></p>` : ''}
       <article class="theory">${t.theory}</article>
       <a class="btn primary" href="${base}/quiz">Sprawdź się w quizie →</a>
-      ${hasCards ? `<a class="btn" href="${base}/fiszki">Powtórz z fiszkami</a>` : ''}`;
+      ${hasCards ? `<a class="btn" href="${base}/fiszki">Powtórz z fiszkami</a>` : ''}
+      ${tasks.length ? `<a class="btn" href="${base}/zadania">✍️ Zadania otwarte</a>` : ''}`;
+  }
+
+  // ---------- Zadania otwarte (rozwiązanie krok po kroku + samoocena) ----------
+  function taskScore(list) {
+    const done = list.filter((x) => state.tasks[x.key] != null);
+    if (!done.length) return 'jeszcze nie rozwiązane';
+    const got = done.reduce((n, x) => n + state.tasks[x.key], 0);
+    const max = done.reduce((n, x) => n + x.points, 0);
+    return `rozwiązane ${done.length} z ${list.length} · ${got}/${max} pkt`;
+  }
+
+  function subjectTasks(s) {
+    setTitle(`Zadania otwarte – ${s.name}`);
+    app.innerHTML = `${crumbs([[s.name, `#/s/${s.id}`], ['Zadania otwarte']])}
+      <h1>✍️ Zadania otwarte: ${esc(s.name)}</h1><div id="pane"></div>`;
+    openTasks(document.getElementById('pane'), shuffle(tasksOfSubject(s)), { showTopic: true, backHref: `#/s/${s.id}`, backLabel: `Wróć do: ${s.name}` });
+  }
+
+  function openTasks(pane, list, opts) {
+    let i = 0;
+    let earned = 0;
+    const pts = (n) => `${n} pkt`;
+    function show() {
+      const x = list[i];
+      let shown = 0;
+      const prev = state.tasks[x.key];
+      pane.innerHTML = `
+        <div class="quiz task">
+          <div class="qhead"><span>Zadanie ${i + 1} z ${list.length}</span><span>${pts(x.points)}</span></div>
+          ${bar(Math.round((i / list.length) * 100), false)}
+          ${opts.showTopic ? `<div class="qtopic">${esc(x.topicName)}</div>` : ''}
+          <h2 class="question">${esc(x.q)}</h2>
+          ${x.svg ? `<figure class="vis">${x.svg}</figure>` : ''}
+          <p class="muted">Rozwiąż na kartce – jak na egzaminie zapisz cały tok rozumowania. Potem porównaj z rozwiązaniem.${prev != null ? ` Ostatnio: ${prev}/${x.points} pkt.` : ''}</p>
+          <ol class="steps"></ol>
+          <div class="row" id="ctl">
+            <button class="btn" id="hint">💡 Podpowiedź</button>
+            <button class="btn primary" id="all">Pokaż rozwiązanie</button>
+          </div>
+          <div id="after"></div>
+        </div>`;
+      const ol = pane.querySelector('.steps');
+      const addStep = () => { if (shown < x.steps.length) ol.insertAdjacentHTML('beforeend', `<li>${esc(x.steps[shown++])}</li>`); };
+      pane.querySelector('#hint').onclick = () => { addStep(); if (shown >= x.steps.length) reveal(); };
+      pane.querySelector('#all').onclick = () => { while (shown < x.steps.length) addStep(); reveal(); };
+      keyHandler = null;
+      function reveal() {
+        pane.querySelector('#ctl').remove();
+        pane.querySelector('#after').innerHTML = `
+          <div class="feedback ok"><strong>Odpowiedź:</strong> ${esc(x.answer)}</div>
+          <div class="scoring"><b>Jak ocenić rozwiązanie</b><ul>${x.scoring.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
+            <p class="muted">Punktacja orientacyjna, w stylu zasad oceniania CKE: liczy się poprawny tok rozumowania, nie tylko wynik.</p></div>
+          <p><b>Ile punktów przyznajesz sobie?</b></p>
+          <div class="row" id="self">${Array.from({ length: x.points + 1 }, (_, n) => `<button class="btn" data-n="${n}">${n}</button>`).join('')}</div>`;
+        pane.querySelectorAll('#self .btn').forEach((b) => (b.onclick = () => {
+          const n = +b.dataset.n;
+          state.tasks[x.key] = n;
+          save();
+          earned += n;
+          const last = i + 1 >= list.length;
+          pane.querySelector('#self').outerHTML = `<p class="feedback ${n === x.points ? 'ok' : 'bad'}">${n === x.points ? praise() : 'Przejrzyj kroki rozwiązania jeszcze raz – następnym razem pójdzie lepiej.'}</p>
+            <button class="btn primary" id="next">${last ? 'Podsumowanie' : 'Następne zadanie →'}</button>`;
+          const next = pane.querySelector('#next');
+          next.onclick = () => { i++; last ? finish() : (show(), window.scrollTo(0, 0)); };
+          next.focus();
+        }));
+      }
+    }
+    function finish() {
+      const max = list.reduce((n, x) => n + x.points, 0);
+      pane.innerHTML = `<div class="result"><p class="big">${earned}/${max}</p><p>punktów według twojej samooceny</p>
+        <button class="btn primary" id="again">Jeszcze raz</button>
+        <a class="btn" href="${opts.backHref}">${esc(opts.backLabel)}</a></div>`;
+      pane.querySelector('#again').onclick = () => { i = 0; earned = 0; show(); };
+    }
+    show();
   }
 
   // ---------- Lekcja (tryb nauki) ----------

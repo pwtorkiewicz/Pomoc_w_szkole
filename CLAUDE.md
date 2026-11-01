@@ -19,6 +19,7 @@ js/dane/zrodla.js       – strona „Źródła”: podstawy prawne, dokumenty, 
 js/lekcje/*.js          – lekcje „🎓 Lekcja” (window.LESSONS['<przedmiot>/<dział>'])
 js/lekcje/widgety.js    – interaktywne widżety: pitagoras, procent, kostka, kolo
 docs/LEKCJE.md          – format i zasady pisania lekcji (obowiązkowa lektura przed edycją lekcji)
+docs/PLAN.md            – plan rozbudowy (co z podstawy jeszcze nie jest pokryte); odhaczaj wykonane punkty
 tools/                  – sprawdzarka lekcji i zrzuty ekranu (Playwright)
 ```
 
@@ -42,6 +43,7 @@ Uruchomienie: otwórz `index.html` w przeglądarce. Publikacja: GitHub Pages z t
 
 - Każde pytanie ma **stałe pole `id`** (losowe, unikalne w całej aplikacji). Postęp i „Powtórka błędów” zapamiętują pytania po `id`, więc pytania można przestawiać i usuwać, ale **nigdy nie zmieniaj `id` istniejącego pytania** i nie używaj go ponownie. Nowe pytanie = nowe id z `node tools/nowe-id.js`.
 - Format pytania: `{ id, q, options, answer, explain }`; dla prawda/fałsz: `options: ['Prawda', 'Fałsz'], noShuffle: true`.
+- Zadanie otwarte (pole `tasks` działu): `{ id, points, q, svg?, steps, answer, scoring }` – id z tej samej puli co pytania, `scoring` ma tyle linii, ile punktów. Wynik zadania sprawdź podstawieniem, a punktację opisz jako orientacyjną (nie są to oficjalne zasady CKE).
 - Lekcje pisz według `docs/LEKCJE.md`: 4–6 kroków, każdy z grafiką (SVG albo widżet), SVG tylko z klasami CSS (bez kolorów na sztywno – tryb ciemny), `viewBox` szerokości 300–440, `aria-label`, unikalne id markerów.
 - Bez zewnętrznych bibliotek i bez kroku budowania. Aplikacja ma działać po otwarciu pliku i na telefonie (szerokość ok. 400 px).
 

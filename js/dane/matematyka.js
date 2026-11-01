@@ -78,6 +78,38 @@ window.SUBJECTS.push({
         { id: '15a5rk', q: 'Ile wynosi 1,5 : 0,03?', options: ['5', '0,5', '50', '500'], answer: 2, explain: 'Mnożymy obie liczby przez 100: 150 : 3 = 50.' },
         { id: 'd6dutu', q: 'Prawda czy fałsz?\nLiczba 1 jest liczbą pierwszą.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Liczba pierwsza ma dokładnie dwa dzielniki, a 1 ma tylko jeden. Liczba 1 nie jest ani pierwsza, ani złożona.' },
       ],
+      tasks: [
+        {
+          id: '7i7nrt',
+          points: 2,
+          q: 'Autobus linii A odjeżdża z przystanku co 12 minut, a autobus linii B – co 18 minut. O godzinie 7:00 oba odjechały jednocześnie. O której godzinie najwcześniej znów odjadą razem?',
+          steps: [
+            'Autobusy odjadą razem po czasie, który jest wielokrotnością i liczby 12, i liczby 18 – szukamy NWW(12, 18).',
+            'Rozkład na czynniki: 12 = 2 · 2 · 3, 18 = 2 · 3 · 3, więc NWW(12, 18) = 2 · 2 · 3 · 3 = 36.',
+            'Odjadą razem po 36 minutach: 7:00 + 36 min = 7:36.',
+          ],
+          answer: 'O 7:36.',
+          scoring: [
+            '1 pkt – zauważenie, że trzeba znaleźć NWW(12, 18), albo wypisanie kolejnych godzin odjazdów obu linii.',
+            '2 pkt – poprawna odpowiedź 7:36.',
+          ],
+        },
+        {
+          id: 'kap026',
+          points: 2,
+          q: 'Uzasadnij, że liczba 10¹⁵ + 8 jest podzielna przez 9.',
+          steps: [
+            '10¹⁵ to jedynka i 15 zer. Po dodaniu 8 otrzymujemy liczbę 1000…008: jedynka, 14 zer i ósemka.',
+            'Suma cyfr tej liczby: 1 + 8 = 9.',
+            'Suma cyfr jest podzielna przez 9, więc z cechy podzielności przez 9 cała liczba jest podzielna przez 9.',
+          ],
+          answer: 'Suma cyfr liczby 10¹⁵ + 8 wynosi 9, więc liczba dzieli się przez 9.',
+          scoring: [
+            '1 pkt – zapisanie, jak wyglądają cyfry liczby 10¹⁵ + 8 (jedynka, zera, ósemka).',
+            '2 pkt – obliczenie sumy cyfr i powołanie się na cechę podzielności przez 9.',
+          ],
+        },
+      ],
     },
     {
       id: 'ulamki',
@@ -167,6 +199,39 @@ window.SUBJECTS.push({
         { id: '7mh3qm', q: 'Prawda czy fałsz?\nUłamek 5/4 jest większy od 1.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Licznik jest większy od mianownika: 5/4 = 1 1/4.' },
         { id: 'fdvtn2', q: 'Prawda czy fałsz?\nAby dodać dwa ułamki zwykłe, wystarczy dodać ich liczniki i ich mianowniki.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Np. 1/2 + 1/2 = 1, a „dodawanie mianowników” dałoby 2/4. Najpierw sprowadzamy do wspólnego mianownika.' },
       ],
+      tasks: [
+        {
+          id: 't4rfnm',
+          points: 2,
+          q: 'Oblicz wartość wyrażenia (2/3 + 0,5) · 1 1/5 − 0,4. Zapisz obliczenia.',
+          steps: [
+            'Zamień ułamek dziesiętny na zwykły: 0,5 = 1/2. W nawiasie: 2/3 + 1/2 = 4/6 + 3/6 = 7/6.',
+            'Liczba mieszana: 1 1/5 = 6/5. Iloczyn: 7/6 · 6/5 = 7/5 = 1,4.',
+            'Na koniec odejmowanie: 1,4 − 0,4 = 1.',
+          ],
+          answer: '1',
+          scoring: [
+            '1 pkt – poprawne obliczenie wartości w nawiasie (7/6) albo poprawny iloczyn przy błędzie rachunkowym w odejmowaniu.',
+            '2 pkt – poprawny wynik 1 z obliczeniami.',
+          ],
+        },
+        {
+          id: 'km1dgp',
+          points: 2,
+          q: 'Pan Adam wydał 2/5 swoich pieniędzy na zakupy, a potem 1/3 pozostałej kwoty na książkę. Zostało mu 120 zł. Ile pieniędzy miał na początku?',
+          steps: [
+            'Oznacz początkową kwotę przez x. Po zakupach zostało 3/5 x.',
+            'Na książkę wydał 1/3 z 3/5 x, czyli 1/5 x. Zostało 3/5 x − 1/5 x = 2/5 x.',
+            '2/5 x = 120, więc x = 120 : 2 · 5 = 300 zł.',
+            'Sprawdzenie: 2/5 z 300 = 120 zł (zakupy), zostaje 180 zł; 1/3 ze 180 = 60 zł (książka); zostaje 120 zł ✓.',
+          ],
+          answer: '300 zł',
+          scoring: [
+            '1 pkt – zapisanie, jaka część pieniędzy została (2/5 kwoty) albo poprawne równanie.',
+            '2 pkt – poprawna odpowiedź: 300 zł.',
+          ],
+        },
+      ],
     },
     {
       id: 'procenty',
@@ -216,6 +281,37 @@ window.SUBJECTS.push({
         { id: 'kcxxx4', q: 'Cenę podniesiono o 20%, a potem nową cenę jeszcze o 10%. O ile procent wzrosła cena w sumie?', options: ['32%', '30%', '22%', '20%'], answer: 0, explain: '1,2 · 1,1 = 1,32 – cena wzrosła o 32%, a nie o 30%.' },
         { id: '6ty3tk', q: 'Oprocentowanie lokaty spadło z 8% do 6%. O ile punktów procentowych spadło?', options: ['o 2', 'o 25', 'o 14', 'o 6'], answer: 0, explain: '8 − 6 = 2 punkty procentowe (procentowo to spadek o 25%).' },
         { id: 'b8nacq', q: 'Prawda czy fałsz?\nGdy cenę obniżymy o 50%, a potem nową cenę podniesiemy o 50%, wrócimy do ceny początkowej.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Np. 100 zł → 50 zł → 75 zł. Podwyżkę liczymy od niższej ceny.' },
+      ],
+      tasks: [
+        {
+          id: 'hsj17n',
+          points: 2,
+          q: 'Cenę roweru najpierw obniżono o 20%, a potem nową cenę podwyższono o 10%. Teraz rower kosztuje 1100 zł. Ile kosztował na początku?',
+          steps: [
+            'Oznacz cenę początkową przez x. Po obniżce o 20%: 0,8x. Po podwyżce o 10%: 0,8x · 1,1 = 0,88x.',
+            '0,88x = 1100, więc x = 1100 : 0,88 = 1250 zł.',
+            'Sprawdzenie: 1250 · 0,8 = 1000 zł; 1000 · 1,1 = 1100 zł ✓.',
+          ],
+          answer: '1250 zł',
+          scoring: [
+            '1 pkt – zapisanie zależności 0,8 · 1,1 · x = 1100 (albo równoważnej).',
+            '2 pkt – poprawna odpowiedź: 1250 zł.',
+          ],
+        },
+        {
+          id: 'taro3l',
+          points: 2,
+          q: 'W klasie jest 28 uczniów. 25% z nich uczy się niemieckiego, a pozostali – hiszpańskiego. O ile procent więcej jest uczniów uczących się hiszpańskiego niż uczących się niemieckiego?',
+          steps: [
+            'Niemieckiego uczy się 25% z 28 = 7 uczniów, hiszpańskiego 28 − 7 = 21 uczniów.',
+            'Różnica: 21 − 7 = 14 uczniów. Porównujemy ją z liczbą uczniów uczących się niemieckiego: 14/7 = 2 = 200%.',
+          ],
+          answer: 'O 200%.',
+          scoring: [
+            '1 pkt – obliczenie liczby uczniów: 7 i 21.',
+            '2 pkt – poprawna odpowiedź: o 200%.',
+          ],
+        },
       ],
     },
     {
@@ -279,6 +375,38 @@ window.SUBJECTS.push({
         { id: '5bdfli', q: 'Ile wynosi √8 + √2?', options: ['√10', '4', '3√2', '2√2'], answer: 2, explain: '√8 = √(4 · 2) = 2√2, więc 2√2 + √2 = 3√2.' },
         { id: 'asbsra', q: 'Ile wynosi (2²)³ : 2⁴?', options: ['2', '8', '16', '4'], answer: 3, explain: '(2²)³ = 2⁶, a 2⁶ : 2⁴ = 2² = 4.' },
       ],
+      tasks: [
+        {
+          id: '72ynk9',
+          points: 2,
+          q: 'Uzasadnij, że liczba 2¹⁰ + 2¹¹ + 2¹² jest podzielna przez 7.',
+          steps: [
+            'Zapisz każdy składnik przy użyciu 2¹⁰: 2¹¹ = 2¹⁰ · 2, 2¹² = 2¹⁰ · 4.',
+            'Wyłącz wspólny czynnik: 2¹⁰ + 2¹⁰ · 2 + 2¹⁰ · 4 = 2¹⁰ · (1 + 2 + 4) = 2¹⁰ · 7.',
+            'Liczba jest iloczynem liczby 7 i liczby naturalnej 2¹⁰, więc dzieli się przez 7.',
+          ],
+          answer: '2¹⁰ + 2¹¹ + 2¹² = 7 · 2¹⁰',
+          scoring: [
+            '1 pkt – zapisanie składników jako iloczynów z 2¹⁰ albo wyłączenie wspólnego czynnika.',
+            '2 pkt – zapis 7 · 2¹⁰ i wniosek o podzielności przez 7.',
+          ],
+        },
+        {
+          id: '6pg3et',
+          points: 2,
+          q: 'Oblicz (4 · 10⁵) · (3 · 10⁻²). Wynik zapisz w notacji wykładniczej.',
+          steps: [
+            'Pomnóż osobno liczby i potęgi dziesiątki: 4 · 3 = 12, 10⁵ · 10⁻² = 10³.',
+            'Wynik 12 · 10³ nie jest w notacji wykładniczej, bo 12 ≥ 10. Zapisz 12 = 1,2 · 10.',
+            '1,2 · 10 · 10³ = 1,2 · 10⁴.',
+          ],
+          answer: '1,2 · 10⁴',
+          scoring: [
+            '1 pkt – poprawny iloczyn 12 · 10³ (lub 12 000).',
+            '2 pkt – zapis w notacji wykładniczej: 1,2 · 10⁴.',
+          ],
+        },
+      ],
     },
     {
       id: 'algebra',
@@ -332,6 +460,56 @@ window.SUBJECTS.push({
         { id: 'yjjxfv', q: 'Za 3 zeszyty i 2 długopisy zapłacono 17 zł. Długopis kosztuje 4 zł. Ile kosztuje jeden zeszyt?', options: ['4 zł', '2 zł', '3 zł', '5 zł'], answer: 2, explain: '3z + 2 · 4 = 17 → 3z = 9 → z = 3 zł.' },
         { id: '5bi67x', q: 'Obwód prostokąta wynosi 30 cm, a jeden bok jest o 3 cm dłuższy od drugiego. Ile ma krótszy bok?', options: ['7,5 cm', '9 cm', '6 cm', '12 cm'], answer: 2, explain: '2(x + x + 3) = 30 → 2x + 3 = 15 → x = 6. Boki: 6 cm i 9 cm.' },
         { id: '4a43so', q: 'Prawda czy fałsz?\nLiczba 2 jest rozwiązaniem równania 3x − 1 = 2x + 1.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Podstawiamy: 3 · 2 − 1 = 5 i 2 · 2 + 1 = 5 – obie strony są równe.' },
+      ],
+      tasks: [
+        {
+          id: '2jyl97',
+          points: 2,
+          q: 'Bartek i Grześ zbierali kasztany. Bartek zebrał n kasztanów, a Grześ – 7 razy więcej. W drodze do domu Grześ zgubił 10 kasztanów, a połowę pozostałych oddał Bartkowi. Zapisz za pomocą wyrażeń algebraicznych, ile kasztanów ma teraz Bartek, a ile Grześ.',
+          steps: [
+            'Grześ zebrał 7n kasztanów, po zgubieniu 10 miał 7n − 10.',
+            'Połowę oddał: oddał (7n − 10)/2 i tyle samo mu zostało. Grześ ma (7n − 10)/2.',
+            'Bartek ma n + (7n − 10)/2 = (2n + 7n − 10)/2 = (9n − 10)/2.',
+          ],
+          answer: 'Bartek: (9n − 10)/2, Grześ: (7n − 10)/2 (np. dla n = 10: Bartek 40, Grześ 30).',
+          scoring: [
+            '1 pkt – poprawne wyrażenie dla jednego z chłopców.',
+            '2 pkt – poprawne wyrażenia dla obu.',
+          ],
+        },
+        {
+          id: 'e185ac',
+          points: 3,
+          q: 'Za 2 kg jabłek i 3 kg gruszek zapłacono 23 zł. Kilogram gruszek jest o 1,50 zł droższy od kilograma jabłek. Ile kosztuje kilogram jabłek?',
+          steps: [
+            'Oznacz cenę kilograma jabłek przez x. Kilogram gruszek kosztuje x + 1,5.',
+            'Równanie: 2x + 3(x + 1,5) = 23.',
+            '2x + 3x + 4,5 = 23 → 5x = 18,5 → x = 3,7.',
+            'Sprawdzenie: 2 · 3,70 + 3 · 5,20 = 7,40 + 15,60 = 23 zł ✓.',
+          ],
+          answer: '3,70 zł',
+          scoring: [
+            '1 pkt – oznaczenie niewiadomej i zapisanie ceny gruszek: x + 1,5.',
+            '2 pkt – poprawne równanie 2x + 3(x + 1,5) = 23.',
+            '3 pkt – rozwiązanie: 3,70 zł.',
+          ],
+        },
+        {
+          id: '4pq3ff',
+          points: 2,
+          q: 'Rozwiąż równanie (x − 2)/3 − (x + 1)/2 = 1.',
+          steps: [
+            'Pomnóż obie strony przez 6 (wspólny mianownik): 2(x − 2) − 3(x + 1) = 6.',
+            'Opuść nawiasy (uwaga na minus przed drugim nawiasem): 2x − 4 − 3x − 3 = 6.',
+            '−x − 7 = 6 → −x = 13 → x = −13.',
+            'Sprawdzenie: (−15)/3 − (−12)/2 = −5 + 6 = 1 ✓.',
+          ],
+          answer: 'x = −13',
+          scoring: [
+            '1 pkt – pozbycie się ułamków i poprawne opuszczenie nawiasów.',
+            '2 pkt – rozwiązanie x = −13.',
+          ],
+        },
       ],
     },
     {
@@ -422,6 +600,246 @@ window.SUBJECTS.push({
         { id: 'j3jkz9', q: 'Okrąg ma długość 12π. Jakie jest pole koła ograniczonego tym okręgiem?', options: ['144π', '36π', '12π', '6π'], answer: 1, explain: '2πr = 12π, więc r = 6, a P = πr² = 36π.' },
         { id: 'k7160s', q: 'Prawda czy fałsz?\nKażdy romb ma 4 osie symetrii.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Tylko romb, który jest kwadratem, ma 4 osie. Pozostałe romby mają 2 osie symetrii.' },
       ],
+      tasks: [
+        {
+          id: 'fi22ti',
+          points: 2,
+          q: 'Oblicz najkrótszą wysokość trójkąta prostokątnego o bokach długości 5 cm, 12 cm i 13 cm.',
+          steps: [
+            'Pole liczymy z przyprostokątnych: P = 5 · 12 / 2 = 30 cm².',
+            'Najkrótsza wysokość jest opuszczona na najdłuższy bok, czyli na przeciwprostokątną (13 cm).',
+            '13 · h / 2 = 30 → h = 60/13 cm = 4 8/13 cm.',
+          ],
+          answer: '60/13 cm (ok. 4,6 cm)',
+          scoring: [
+            '1 pkt – obliczenie pola (30 cm²) i zapisanie zależności 13 · h / 2 = 30.',
+            '2 pkt – wynik h = 60/13 cm.',
+          ],
+        },
+        {
+          id: 'sg57ne',
+          points: 2,
+          q: 'Drabina o długości 2,5 m jest oparta o pionową ścianę. Jej dolny koniec stoi na poziomej podłodze 0,7 m od ściany. Na jakiej wysokości górny koniec drabiny dotyka ściany?',
+          steps: [
+            'Drabina, ściana i podłoga tworzą trójkąt prostokątny. Drabina to przeciwprostokątna (2,5 m).',
+            'Z twierdzenia Pitagorasa: h² + 0,7² = 2,5², czyli h² = 6,25 − 0,49 = 5,76.',
+            'h = √5,76 = 2,4 m.',
+          ],
+          answer: '2,4 m',
+          scoring: [
+            '1 pkt – poprawne zastosowanie twierdzenia Pitagorasa: h² = 2,5² − 0,7².',
+            '2 pkt – wynik 2,4 m.',
+          ],
+        },
+        {
+          id: '4htvjy',
+          points: 3,
+          q: 'Przekątne rombu ABCD mają długości AC = 8 dm i BD = 10 dm. Przekątną BD przedłużono do punktu E w taki sposób, że odcinek BE jest dwa razy dłuższy od tej przekątnej. Oblicz pole trójkąta CDE. (Zadanie ma dwie odpowiedzi.)',
+          steps: [
+            'Przekątne rombu są prostopadłe i dzielą się na połowy. Odległość punktu C od prostej BD to połowa AC: 4 dm.',
+            'BE = 2 · 10 = 20 dm. Punkt E może leżeć za punktem D – wtedy DE = 20 − 10 = 10 dm – albo za punktem B – wtedy DE = 20 + 10 = 30 dm.',
+            'Trójkąt CDE ma podstawę DE na prostej BD i wysokość 4 dm.',
+            'P = 10 · 4 / 2 = 20 dm² albo P = 30 · 4 / 2 = 60 dm².',
+          ],
+          answer: '20 dm² lub 60 dm²',
+          scoring: [
+            '1 pkt – zauważenie, że wysokość trójkąta CDE to połowa przekątnej AC (4 dm).',
+            '2 pkt – obliczenie pola dla jednego położenia punktu E.',
+            '3 pkt – obie odpowiedzi: 20 dm² i 60 dm².',
+          ],
+        },
+      ],
+    },
+    {
+      id: 'przystawanie-dowody',
+      name: 'Przystawanie trójkątów i dowody',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), matematyka kl. VII–VIII: VIII. Własności figur geometrycznych na płaszczyźnie (VIII.1–8: kąty wierzchołkowe, proste równoległe, cechy przystawania trójkątów, nierówność trójkąta, trójkąty równoramienne, dowody geometryczne); wymagania ogólne IV. Rozumowanie i argumentacja.',
+      theory: `
+        <h3>Trójkąty przystające</h3>
+        <p>Trójkąty są <b>przystające</b>, gdy mają odpowiednio równe wszystkie boki i wszystkie kąty – jeden można dokładnie nałożyć na drugi. Zapis: <span class="f">△ABC ≡ △DEF</span> (kolejność liter pokazuje, które wierzchołki sobie odpowiadają).</p>
+        <table>
+          <tr><th>Cecha</th><th>Wystarczy, że równe są…</th></tr>
+          <tr><td><b>bbb</b> (bok–bok–bok)</td><td>trzy boki jednego trójkąta i trzy boki drugiego</td></tr>
+          <tr><td><b>bkb</b> (bok–kąt–bok)</td><td>dwa boki i <b>kąt między nimi</b></td></tr>
+          <tr><td><b>kbk</b> (kąt–bok–kąt)</td><td>bok i <b>dwa kąty przy tym boku</b></td></tr>
+        </table>
+        <div class="tip">⚠️ Równe trzy kąty (kkk) <b>nie</b> wystarczą – trójkąty mogą mieć ten sam kształt, ale różną wielkość. W cesze bkb kąt musi leżeć między równymi bokami.</div>
+        <h3>Fakty, na które powołujesz się w uzasadnieniach</h3>
+        <ul>
+          <li><b>Kąty przyległe</b> sumują się do 180°.</li>
+          <li><b>Kąty wierzchołkowe</b> są równe – każdy z nich dopełnia ten sam kąt przyległy do 180°.</li>
+          <li>Gdy prosta przecina dwie <b>proste równoległe</b>, kąty <b>odpowiadające</b> są równe i kąty <b>naprzemianległe</b> są równe.</li>
+          <li>Suma kątów w trójkącie wynosi 180°; w trójkącie prostokątnym kąty ostre sumują się do 90°.</li>
+          <li>W trójkącie <b>równoramiennym</b> kąty przy podstawie są równe.</li>
+          <li>Twierdzenie Pitagorasa (dział „Geometria płaska”).</li>
+        </ul>
+        <h3>Nierówność trójkąta</h3>
+        <p>Dla dowolnych punktów A, B, C: <span class="f">AB + BC ≥ AC</span>. <b>Równość</b> zachodzi tylko wtedy, gdy punkt B leży na odcinku AC. Z odcinków a, b, c zbudujesz trójkąt, gdy najdłuższy z nich jest krótszy od sumy dwóch pozostałych.</p>
+        <h3>Jak zapisać dowód (uzasadnienie)</h3>
+        <ol>
+          <li>Narysuj rysunek i oznacz na nim dane (równe boki, kąty).</li>
+          <li>Wypisz, co wiesz, i co masz wykazać.</li>
+          <li>Każdy krok zapisz z uzasadnieniem: „…, <b>bo</b> kąty wierzchołkowe są równe”, „…, <b>z cechy bkb</b>”.</li>
+          <li>Zakończ wnioskiem, który jest tezą zadania.</li>
+        </ol>
+        <p><b>Przykład:</b> odcinki AB i CD przecinają się w punkcie S, który jest środkiem każdego z nich. Wykaż, że AC = BD.<br>
+        AS = BS i CS = DS (S jest środkiem obu odcinków), ∠ASC = ∠BSD (kąty wierzchołkowe). Z cechy bkb △ASC ≡ △BSD, więc AC = BD.</p>
+        <h3>Dowody z liczbami</h3>
+        <p>Zapisz liczby literami: kolejne liczby naturalne to n, n + 1, n + 2; liczba dwucyfrowa o cyfrach a i b to 10a + b. Przykład: n + (n + 1) + (n + 2) = 3n + 3 = 3(n + 1) – to wielokrotność 3, więc suma trzech kolejnych liczb naturalnych zawsze dzieli się przez 3.</p>
+        <div class="tip">💡 Sprawdzenie na kilku przykładach <b>nie jest</b> dowodem – pokazuje tylko, że teza działa w tych przypadkach. Dowód musi działać dla wszystkich.</div>
+      `,
+      flashcards: [
+        ['Trójkąty przystające', 'Mają odpowiednio równe wszystkie boki i kąty – można je na siebie nałożyć'],
+        ['Cecha bbb', 'Trzy boki jednego trójkąta równe trzem bokom drugiego'],
+        ['Cecha bkb', 'Dwa boki i kąt MIĘDZY nimi'],
+        ['Cecha kbk', 'Bok i dwa kąty PRZY tym boku'],
+        ['Czy kkk jest cechą przystawania?', 'Nie – trójkąty mogą mieć ten sam kształt i różną wielkość'],
+        ['Kąty wierzchołkowe', 'Są równe (każdy dopełnia ten sam kąt do 180°)'],
+        ['Kąty odpowiadające i naprzemianległe', 'Przy prostych równoległych są równe'],
+        ['Nierówność trójkąta', 'AB + BC ≥ AC; równość, gdy B leży na odcinku AC'],
+        ['Jak zakończyć dowód?', 'Wnioskiem równym tezie zadania (np. „więc AC = BD”)'],
+        ['Przykład a dowód', 'Przykład pokazuje jeden przypadek, dowód – wszystkie'],
+        ['Trzy kolejne liczby naturalne', 'n, n + 1, n + 2 (suma 3n + 3 = 3(n + 1))'],
+        ['Liczba dwucyfrowa o cyfrach a, b', '10a + b'],
+      ],
+      questions: [
+        { id: '5pk7pf', q: 'Która z wymienionych NIE jest cechą przystawania trójkątów?', options: ['kkk – trzy pary równych kątów', 'bbb', 'bkb', 'kbk'], answer: 0, explain: 'Trójkąty o równych kątach mogą mieć różne wielkości.' },
+        { id: '7fkar9', q: 'W trójkątach ABC i DEF: AB = DE, BC = EF i AC = DF. Na mocy której cechy są przystające?', options: ['bbb', 'bkb', 'kbk', 'kkk'], answer: 0 },
+        { id: 'm1ic5v', q: 'W trójkątach ABC i DEF: AB = DE, ∠ABC = ∠DEF i BC = EF. Na mocy której cechy są przystające?', options: ['bbb', 'kbk', 'kkk', 'bkb'], answer: 3, explain: 'Kąt przy B leży między bokami AB i BC.' },
+        { id: 'fe7hsj', q: 'W trójkątach ABC i DEF: ∠A = ∠D, AB = DE i ∠B = ∠E. Na mocy której cechy są przystające?', options: ['kbk', 'bbb', 'bkb', 'kkk'], answer: 0, explain: 'Bok AB i oba kąty leżące przy nim.' },
+        { id: '1ma6ha', q: 'Dwa trójkąty mają boki długości 5 cm i 7 cm oraz równe kąty między tymi bokami. Czy są przystające?', options: ['nie, potrzebny jest jeszcze trzeci bok', 'tak, z cechy bkb', 'tak, z cechy bbb', 'nie da się tego ustalić'], answer: 1 },
+        { id: '3gofd6', q: 'Trójkąty przystające mają…', options: ['tylko równe kąty', 'równe pola, ale mogą mieć różne boki', 'odpowiednio równe boki i odpowiednio równe kąty', 'równe obwody, ale mogą mieć różne kąty'], answer: 2 },
+        { id: 'e12267', q: 'Przekątna AC dzieli prostokąt ABCD na trójkąty ABC i CDA. Na mocy której cechy są one przystające?', options: ['kkk', 'żadnej – nie są przystające', 'bbb', 'nie da się tego określić'], answer: 2, explain: 'AB = CD i BC = DA (przeciwległe boki prostokąta), a AC jest wspólnym bokiem.' },
+        { id: 'wzv7e7', q: 'Dwie proste przecinają się. Jeden z utworzonych kątów ma 35°. Ile ma kąt wierzchołkowy do niego?', options: ['145°', '55°', '35°', '325°'], answer: 2, explain: 'Kąty wierzchołkowe są równe.' },
+        { id: 'sg0yv6', q: 'Dlaczego kąty wierzchołkowe są równe?', options: ['bo każdy z nich dopełnia ten sam kąt przyległy do 180°', 'bo tak wygląda na rysunku', 'bo leżą w tym samym trójkącie', 'bo zawsze są kątami prostymi'], answer: 0 },
+        { id: 'dvt3tf', q: 'Prosta przecina dwie proste równoległe. Ile ma kąt naprzemianległy do kąta o mierze 72°?', options: ['108°', '72°', '18°', '144°'], answer: 1, explain: 'Kąty naprzemianległe przy prostych równoległych są równe.' },
+        { id: 'tm02r4', q: 'W trójkącie równoramiennym kąt przy podstawie ma 50°. Ile ma kąt między ramionami?', options: ['50°', '80°', '65°', '130°'], answer: 1, explain: 'Oba kąty przy podstawie mają po 50°: 180° − 2 · 50° = 80°.' },
+        { id: 'nd629r', q: 'Ramiona trójkąta równoramiennego mają po 7 cm, a jego obwód wynosi 20 cm. Ile ma podstawa?', options: ['13 cm', '3 cm', '7 cm', '6 cm'], answer: 3, explain: '20 − 2 · 7 = 6 cm.' },
+        { id: 'nn1weg', q: 'W trójkącie prostokątnym jeden z kątów ostrych ma 35°. Ile ma drugi kąt ostry?', options: ['35°', '145°', '55°', '65°'], answer: 2, explain: 'Kąty ostre trójkąta prostokątnego sumują się do 90°.' },
+        { id: 'zglxf8', q: 'Dla punktów A, B, C: AB = 4, BC = 6, AC = 10. Co z tego wynika?', options: ['ABC jest trójkątem prostokątnym', 'ABC jest trójkątem równoramiennym', 'taka sytuacja jest niemożliwa', 'punkt B leży na odcinku AC'], answer: 3, explain: 'AB + BC = AC – to przypadek równości w nierówności trójkąta.' },
+        { id: 'qqdzot', q: 'Trójkąt ma boki długości 3 i 8. Ile może mieć trzeci bok?', options: ['6', '5', '11', '12'], answer: 0, explain: 'Trzeci bok musi być dłuższy niż 8 − 3 = 5 i krótszy niż 8 + 3 = 11.' },
+        { id: 'sjgcln', q: 'Trójkąt ABC jest równoramienny (AC = BC), a ∠ACB = 40°. AD jest wysokością opuszczoną na bok BC. Ile wynosi ∠BAD?', options: ['40°', '70°', '50°', '20°'], answer: 3, explain: 'Kąty przy podstawie mają po 70°. W trójkącie prostokątnym ABD: ∠BAD = 90° − 70° = 20° – połowa kąta ACB.' },
+        { id: 'whd9vb', q: 'Odcinki AB i CD przecinają się w punkcie S, który jest środkiem każdego z nich. Dlaczego trójkąty ASC i BSD są przystające?', options: ['z cechy kkk, bo mają równe kąty', 'z cechy bkb: AS = BS, CS = DS, a kąty przy S są wierzchołkowe', 'z cechy bbb, bo wszystkie boki są równe', 'bo oba są równoboczne'], answer: 1 },
+        { id: 'yhac06', q: 'Czym różni się dowód od sprawdzenia na przykładzie?', options: ['dowód pokazuje, że teza jest prawdziwa zawsze, a przykład – tylko w jednym przypadku', 'niczym, to to samo', 'przykład jest mocniejszy od dowodu', 'dowód musi mieć rysunek, a przykład nie'], answer: 0 },
+        { id: 'nz8ci4', q: 'Uczeń sprawdził, że 1 + 2 + 3 = 6 i 4 + 5 + 6 = 15 dzielą się przez 3. Czy udowodnił, że suma każdych trzech kolejnych liczb naturalnych dzieli się przez 3?', options: ['tak – dwa przykłady wystarczą', 'tak, bo obie sumy są większe od 3', 'nie – sprawdził tylko dwa przykłady', 'tak, bo 6 i 15 to liczby złożone'], answer: 2 },
+        { id: 'wegydy', q: 'Suma trzech kolejnych liczb naturalnych n, n + 1, n + 2 jest równa…', options: ['3n', '3(n + 1)', '3n + 2', 'n + 3'], answer: 1, explain: 'n + n + 1 + n + 2 = 3n + 3 = 3(n + 1).' },
+        { id: 'fyz5ay', q: 'Liczbę dwucyfrową o cyfrze dziesiątek a i cyfrze jedności b zapisujemy jako…', options: ['10a + b', 'a + b', 'ab (czyli a · b)', '10b + a'], answer: 0, explain: 'Np. 37 = 10 · 3 + 7.' },
+        { id: 'wo527s', q: 'Prawda czy fałsz?\nJeśli dwa trójkąty mają równe wszystkie kąty, to są przystające.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'To za mało: np. trójkąty równoboczne o bokach 2 cm i 5 cm mają równe kąty, ale nie są przystające.' },
+        { id: 'm8tyie', q: 'Prawda czy fałsz?\nKąty odpowiadające przy dwóch prostych równoległych przeciętych trzecią prostą są równe.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0 },
+      ],
+      tasks: [
+        {
+          id: 'u5b7zz',
+          points: 2,
+          q: 'Odcinki AB i CD przecinają się w punkcie S, który jest środkiem każdego z nich. Wykaż, że AC = BD.',
+          svg: `<svg viewBox="0 0 320 200" role="img" aria-label="Odcinki AB i CD przecinające się w punkcie S, który jest środkiem każdego z nich">
+      <line x1="40" y1="40" x2="280" y2="160" class="ln"/>
+      <line x1="60" y1="170" x2="260" y2="30" class="ln"/>
+      <line x1="40" y1="40" x2="60" y2="170" class="ln s2 dash"/>
+      <line x1="280" y1="160" x2="260" y2="30" class="ln s2 dash"/>
+      <circle cx="160" cy="100" r="4" class="f2 s2"/>
+      <text x="22" y="38" class="tx-b">A</text><text x="286" y="172" class="tx-b">B</text>
+      <text x="44" y="190" class="tx-b">C</text><text x="266" y="28" class="tx-b">D</text>
+      <text x="152" y="128" class="tx-b t2">S</text>
+    </svg>`,
+          steps: [
+            'Porównaj trójkąty ASC i BSD.',
+            'AS = BS i CS = DS, bo S jest środkiem odcinków AB i CD.',
+            '∠ASC = ∠BSD, bo to kąty wierzchołkowe.',
+            'Z cechy bkb trójkąty ASC i BSD są przystające, więc ich odpowiadające boki są równe: AC = BD. To należało wykazać.',
+          ],
+          answer: 'Trójkąty ASC i BSD są przystające (bkb), więc AC = BD.',
+          scoring: [
+            '1 pkt – zapisanie równości AS = BS, CS = DS oraz równości kątów wierzchołkowych przy S.',
+            '2 pkt – powołanie się na cechę bkb i wniosek AC = BD.',
+          ],
+        },
+        {
+          id: '8a6ib6',
+          points: 3,
+          q: 'Dany jest ostrokątny trójkąt równoramienny ABC, w którym AC = BC. W tym trójkącie poprowadzono wysokość AD (D leży na boku BC). Udowodnij, że kąt ACB jest dwa razy większy od kąta BAD.',
+          svg: `<svg viewBox="0 0 320 240" role="img" aria-label="Trójkąt równoramienny ABC, AC = BC, z wysokością AD opuszczoną na bok BC">
+      <polygon points="60,210 260,210 160,40" class="f1 s1 sw"/>
+      <line x1="60" y1="210" x2="208.6" y2="122.6" class="ln s2 sw"/>
+      <polyline points="199.4,128 204.8,137.2 214,131.8" class="ln-thin"/>
+      <text x="44" y="228" class="tx-b">A</text><text x="264" y="228" class="tx-b">B</text>
+      <text x="152" y="30" class="tx-b">C</text><text x="214" y="118" class="tx-b t2">D</text>
+      <text x="160" y="196" class="tx-s" text-anchor="middle">AC = BC</text>
+      <text x="160" y="72" class="tx-s" text-anchor="middle">γ</text>
+    </svg>`,
+          steps: [
+            'Oznacz γ = ∠ACB.',
+            'Trójkąt jest równoramienny (AC = BC), więc kąty przy podstawie AB są równe: ∠CAB = ∠CBA = (180° − γ) : 2 = 90° − γ/2.',
+            'AD jest wysokością, więc ∠ADB = 90°. W trójkącie ABD suma kątów wynosi 180°, więc ∠BAD = 180° − 90° − ∠ABD = 90° − ∠ABD.',
+            '∠ABD = ∠CBA = 90° − γ/2, zatem ∠BAD = 90° − (90° − γ/2) = γ/2.',
+            'Czyli ∠ACB = γ = 2 · ∠BAD. To należało udowodnić.',
+          ],
+          answer: '∠BAD = γ/2, więc ∠ACB = 2 · ∠BAD.',
+          scoring: [
+            '1 pkt – wyznaczenie kątów przy podstawie: 90° − γ/2 (albo (180° − γ) : 2).',
+            '2 pkt – wykorzystanie trójkąta prostokątnego ABD: ∠BAD = 90° − ∠ABD.',
+            '3 pkt – pełne rozumowanie zakończone wnioskiem ∠ACB = 2 · ∠BAD.',
+          ],
+        },
+        {
+          id: 'wbjcx0',
+          points: 3,
+          q: 'Na bokach BC i CD prostokąta ABCD zbudowano, na zewnątrz prostokąta, dwa trójkąty równoboczne BCE i CDF. Udowodnij, że AE = AF.',
+          svg: `<svg viewBox="0 0 300 270" role="img" aria-label="Prostokąt ABCD z trójkątami równobocznymi BCE i CDF zbudowanymi na zewnątrz">
+      <rect x="40" y="160" width="120" height="80" class="f1 s1 sw"/>
+      <polygon points="160,240 160,160 229.3,200" class="f2 s2 sw"/>
+      <polygon points="40,160 160,160 100,56.1" class="f3 s3 sw"/>
+      <line x1="40" y1="240" x2="229.3" y2="200" class="ln dash"/>
+      <line x1="40" y1="240" x2="100" y2="56.1" class="ln dash"/>
+      <text x="22" y="258" class="tx-b">A</text><text x="160" y="262" class="tx-b">B</text>
+      <text x="166" y="154" class="tx-b">C</text><text x="20" y="156" class="tx-b">D</text>
+      <text x="236" y="206" class="tx-b">E</text><text x="94" y="46" class="tx-b">F</text>
+    </svg>`,
+          steps: [
+            'Porównaj trójkąty ABE i FDA (narysuj odcinki AE i AF).',
+            'AB = CD (przeciwległe boki prostokąta) i CD = DF (boki trójkąta równobocznego CDF), więc AB = DF.',
+            'BE = BC (boki trójkąta równobocznego BCE) i BC = AD (przeciwległe boki prostokąta), więc BE = AD.',
+            '∠ABE = ∠ABC + ∠CBE = 90° + 60° = 150° oraz ∠FDA = ∠FDC + ∠CDA = 60° + 90° = 150°.',
+            'Trójkąty ABE i FDA mają dwa boki odpowiednio równe (AB = FD, BE = DA) i równe kąty między nimi (150°), więc z cechy bkb są przystające. Stąd AE = FA. To należało udowodnić.',
+          ],
+          answer: '△ABE ≡ △FDA (bkb), więc AE = AF.',
+          scoring: [
+            '1 pkt – zapisanie dwóch par równych boków: AB = DF i BE = AD.',
+            '2 pkt – obliczenie, że kąty ABE i FDA mają po 150°.',
+            '3 pkt – powołanie się na cechę bkb i wniosek AE = AF.',
+          ],
+        },
+        {
+          id: 'vtg0in',
+          points: 2,
+          q: 'Uzasadnij, że suma trzech kolejnych liczb naturalnych jest podzielna przez 3.',
+          steps: [
+            'Oznacz najmniejszą z liczb przez n. Kolejne to n + 1 i n + 2.',
+            'Suma: n + (n + 1) + (n + 2) = 3n + 3.',
+            '3n + 3 = 3(n + 1), a n + 1 jest liczbą naturalną, więc suma jest wielokrotnością liczby 3.',
+          ],
+          answer: 'n + (n + 1) + (n + 2) = 3(n + 1) – liczba podzielna przez 3.',
+          scoring: [
+            '1 pkt – zapisanie sumy w postaci 3n + 3 (lub równoważnej).',
+            '2 pkt – zapisanie 3(n + 1) i wniosek o podzielności przez 3.',
+          ],
+        },
+        {
+          id: '1f0cva',
+          points: 2,
+          q: 'Uzasadnij, że suma dowolnej liczby dwucyfrowej i liczby zapisanej tymi samymi cyframi w odwrotnej kolejności jest podzielna przez 11 (np. 37 + 73 = 110).',
+          steps: [
+            'Liczba dwucyfrowa o cyfrze dziesiątek a i cyfrze jedności b to 10a + b. Liczba o odwróconych cyfrach to 10b + a.',
+            'Suma: (10a + b) + (10b + a) = 11a + 11b.',
+            '11a + 11b = 11(a + b), więc suma jest wielokrotnością liczby 11.',
+          ],
+          answer: '(10a + b) + (10b + a) = 11(a + b) – liczba podzielna przez 11.',
+          scoring: [
+            '1 pkt – zapisanie obu liczb w postaci 10a + b i 10b + a.',
+            '2 pkt – przekształcenie sumy do postaci 11(a + b) i wniosek.',
+          ],
+        },
+      ],
     },
     {
       id: 'bryly',
@@ -476,6 +894,58 @@ window.SUBJECTS.push({
         { id: 'iar37d', q: 'Graniastosłup prawidłowy trójkątny ma krawędź podstawy 4 i wysokość 10. Jego objętość wynosi…', options: ['160√3', '20√3', '40', '40√3'], answer: 3, explain: 'Pp = 4²√3/4 = 4√3, V = 4√3 · 10 = 40√3.' },
         { id: 'pd11rl', q: 'Prawda czy fałsz?\nOstrosłup trójkątny ma 4 ściany.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'n + 1 = 3 + 1 = 4 (podstawa i 3 ściany boczne).' },
       ],
+      tasks: [
+        {
+          id: '9mwe0o',
+          points: 3,
+          q: 'Podstawą graniastosłupa prostego jest trójkąt równoramienny, którego dwa kąty mają miarę po 45°, a najdłuższy bok ma długość 6√2 dm. Jeden z boków prostokąta, który jest w tym graniastosłupie ścianą boczną o największej powierzchni, ma długość 4 dm. Oblicz objętość i pole powierzchni całkowitej tego graniastosłupa.',
+          steps: [
+            'Trójkąt ma kąty 45°, 45° i 90° – to trójkąt prostokątny równoramienny. Najdłuższy bok (przeciwprostokątna) to 6√2 dm, więc przyprostokątne mają po 6 dm (6√2 = a√2).',
+            'Pole podstawy: 6 · 6 / 2 = 18 dm².',
+            'Największa ściana boczna leży na przeciwprostokątnej: ma boki 6√2 dm i H. Jej drugi bok ma 4 dm, więc wysokość graniastosłupa H = 4 dm.',
+            'Objętość: V = 18 · 4 = 72 dm³.',
+            'Pole boczne: (6 + 6 + 6√2) · 4 = 48 + 24√2 dm². Pole całkowite: 2 · 18 + 48 + 24√2 = (84 + 24√2) dm².',
+          ],
+          answer: 'V = 72 dm³, P = (84 + 24√2) dm²',
+          scoring: [
+            '1 pkt – wyznaczenie długości przyprostokątnych (6 dm) i wysokości graniastosłupa (4 dm).',
+            '2 pkt – poprawna objętość: 72 dm³.',
+            '3 pkt – poprawne pole powierzchni: (84 + 24√2) dm².',
+          ],
+        },
+        {
+          id: 'an6hhn',
+          points: 3,
+          q: 'Prostokąt ABCD jest podstawą ostrosłupa ABCDS, punkt M jest środkiem krawędzi AD, a odcinek MS jest wysokością ostrosłupa. AD = 10 cm, AS = 13 cm, AB = 20 cm. Oblicz objętość ostrosłupa.',
+          steps: [
+            'M jest środkiem AD, więc AM = 5 cm. MS jest wysokością, więc trójkąt AMS jest prostokątny (kąt prosty przy M).',
+            'Z twierdzenia Pitagorasa: MS² = 13² − 5² = 169 − 25 = 144, więc MS = 12 cm.',
+            'Pole podstawy: 10 · 20 = 200 cm².',
+            'V = ⅓ · 200 · 12 = 800 cm³.',
+          ],
+          answer: '800 cm³',
+          scoring: [
+            '1 pkt – zauważenie trójkąta prostokątnego AMS (AM = 5 cm).',
+            '2 pkt – obliczenie wysokości MS = 12 cm.',
+            '3 pkt – objętość 800 cm³.',
+          ],
+        },
+        {
+          id: 'wog1l6',
+          points: 2,
+          q: 'Akwarium w kształcie prostopadłościanu ma dno o wymiarach 50 cm × 40 cm. Wlano do niego 30 litrów wody. Do jakiej wysokości sięga woda?',
+          steps: [
+            '30 l = 30 dm³ = 30 000 cm³.',
+            'Pole dna: 50 · 40 = 2000 cm².',
+            'Wysokość wody: 30 000 : 2000 = 15 cm.',
+          ],
+          answer: '15 cm',
+          scoring: [
+            '1 pkt – zamiana litrów na cm³ (albo wymiarów na dm) i zapisanie V = Pp · h.',
+            '2 pkt – wynik 15 cm.',
+          ],
+        },
+      ],
     },
     {
       id: 'statystyka',
@@ -520,6 +990,53 @@ window.SUBJECTS.push({
         { id: 'e5phaa', q: 'Rzucamy dwa razy monetą. Jakie jest prawdopodobieństwo, że co najmniej raz wypadnie orzeł?', options: ['3/4', '1/2', '1/4', '2/3'], answer: 0, explain: 'Możliwości: OO, OR, RO, RR – orzeł jest w trzech z czterech.' },
         { id: 'ocztag', q: 'Ile różnych liczb trzycyfrowych można ułożyć z cyfr 1, 2, 3, jeśli każdej cyfry używamy dokładnie raz?', options: ['6', '3', '9', '27'], answer: 0, explain: 'Wypisujemy: 123, 132, 213, 231, 312, 321.' },
         { id: 'ln0ksi', q: 'Prawda czy fałsz?\nPrawdopodobieństwo zdarzenia może wynosić 1,5.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Prawdopodobieństwo jest zawsze liczbą od 0 do 1.' },
+      ],
+      tasks: [
+        {
+          id: 'sgzj5y',
+          points: 2,
+          q: 'Średnia ocen Kasi z czterech sprawdzianów wynosi 4. Jaką ocenę musi dostać z piątego sprawdzianu, aby średnia ze wszystkich pięciu wyniosła 4,2?',
+          steps: [
+            'Suma czterech ocen: 4 · 4 = 16.',
+            'Aby średnia z pięciu ocen wyniosła 4,2, suma musi być równa 5 · 4,2 = 21.',
+            'Piąta ocena: 21 − 16 = 5.',
+          ],
+          answer: '5',
+          scoring: [
+            '1 pkt – obliczenie sumy czterech ocen (16) albo potrzebnej sumy pięciu (21).',
+            '2 pkt – odpowiedź: 5.',
+          ],
+        },
+        {
+          id: '4wh21h',
+          points: 2,
+          q: 'W pudełku jest 20 kul – czerwone i niebieskie. Prawdopodobieństwo wylosowania kuli czerwonej wynosi 0,35. Ile kul czerwonych trzeba dołożyć, aby prawdopodobieństwo wylosowania kuli czerwonej wyniosło 1/2?',
+          steps: [
+            'Kul czerwonych jest 0,35 · 20 = 7, niebieskich 13.',
+            'Prawdopodobieństwo 1/2 oznacza, że czerwonych ma być tyle samo co niebieskich, czyli 13.',
+            'Trzeba dołożyć 13 − 7 = 6 kul czerwonych (wtedy 13/26 = 1/2).',
+          ],
+          answer: '6 kul',
+          scoring: [
+            '1 pkt – obliczenie liczby kul czerwonych (7) i niebieskich (13).',
+            '2 pkt – odpowiedź: 6 kul.',
+          ],
+        },
+        {
+          id: 'tbd6ls',
+          points: 2,
+          q: 'Ile jest liczb trzycyfrowych, których suma cyfr jest równa 4? Wypisz je wszystkie.',
+          steps: [
+            'Pierwsza cyfra nie może być zerem. Wypisz liczby po kolei według cyfry setek.',
+            'Setki 1: 103, 112, 121, 130. Setki 2: 202, 211, 220. Setki 3: 301, 310. Setki 4: 400.',
+            'Razem 4 + 3 + 2 + 1 = 10 liczb.',
+          ],
+          answer: '10 liczb: 103, 112, 121, 130, 202, 211, 220, 301, 310, 400',
+          scoring: [
+            '1 pkt – wypisanie co najmniej połowy liczb w uporządkowany sposób.',
+            '2 pkt – wszystkie 10 liczb i poprawna odpowiedź.',
+          ],
+        },
       ],
     },
     {
@@ -570,6 +1087,38 @@ window.SUBJECTS.push({
         { id: '6oo4mo', q: 'Samochód jedzie ze stałą prędkością 90 km/h. Jaką drogę pokona w 20 minut?', options: ['30 km', '18 km', '45 km', '1800 km'], answer: 0, explain: '20 min = 1/3 h; 90 · 1/3 = 30 km.' },
         { id: 'e9chhq', q: 'Na planie w skali 1 : 100 pokój ma wymiary 4 cm × 3 cm. Jakie jest jego rzeczywiste pole?', options: ['12 m²', '12 cm²', '1,2 m²', '120 m²'], answer: 0, explain: 'Rzeczywiste wymiary: 400 cm × 300 cm = 4 m × 3 m, pole 12 m².' },
         { id: 'zdqnds', q: 'Ile minut to 0,2 h?', options: ['20 min', '2 min', '12 min', '0,2 min'], answer: 2, explain: '0,2 · 60 min = 12 min.' },
+      ],
+      tasks: [
+        {
+          id: 'hhn56u',
+          points: 2,
+          q: 'Z miasta A do miasta B jest 180 km. Samochód jechał pierwsze 2 godziny ze średnią prędkością 60 km/h, a resztę drogi ze średnią prędkością 80 km/h. Ile trwała cała podróż?',
+          steps: [
+            'W ciągu 2 godzin samochód przejechał 2 · 60 = 120 km. Zostało 180 − 120 = 60 km.',
+            'Czas na resztę drogi: t = 60 : 80 = 0,75 h = 45 min.',
+            'Cała podróż: 2 h + 45 min = 2 h 45 min.',
+          ],
+          answer: '2 h 45 min',
+          scoring: [
+            '1 pkt – obliczenie drogi przejechanej w ciągu 2 h (120 km) i pozostałej drogi (60 km).',
+            '2 pkt – odpowiedź: 2 h 45 min.',
+          ],
+        },
+        {
+          id: 'j43z2j',
+          points: 2,
+          q: 'Na mapie w skali 1 : 20 000 prostokątna działka ma wymiary 3 cm × 2 cm. Oblicz jej rzeczywiste pole i podaj je w hektarach.',
+          steps: [
+            '1 cm na mapie to 20 000 cm = 200 m w terenie. Wymiary działki: 3 · 200 = 600 m i 2 · 200 = 400 m.',
+            'Pole: 600 · 400 = 240 000 m².',
+            '1 ha = 10 000 m², więc 240 000 m² = 24 ha.',
+          ],
+          answer: '24 ha',
+          scoring: [
+            '1 pkt – obliczenie rzeczywistych wymiarów działki (600 m i 400 m).',
+            '2 pkt – pole w hektarach: 24 ha.',
+          ],
+        },
       ],
     },
   ],

@@ -1199,3 +1199,104 @@ window.LESSONS['matematyka/ulamki'] = [
     check: { q: '2/7 pewnej liczby to 10. Jaka to liczba?', options: ['20', '35', '70', '5'], answer: 1, explain: 'Jedna siódma to 10 : 2 = 5, cała liczba to 5 · 7 = 35.' },
   },
 ];
+
+window.LESSONS['matematyka/przystawanie-dowody'] = [
+  {
+    title: 'Trójkąty przystające – bliźniaki',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Dwa przystające trójkąty ABC i DEF z bokami w tych samych kolorach">
+      <line x1="40" y1="150" x2="170" y2="150" class="ln s1 sw"/><line x1="40" y1="150" x2="80" y2="40" class="ln s2 sw"/><line x1="80" y1="40" x2="170" y2="150" class="ln s3 sw"/>
+      <line x1="240" y1="150" x2="370" y2="150" class="ln s1 sw"/><line x1="240" y1="150" x2="280" y2="40" class="ln s2 sw"/><line x1="280" y1="40" x2="370" y2="150" class="ln s3 sw"/>
+      <text x="24" y="168" class="tx-b">A</text><text x="172" y="168" class="tx-b">B</text><text x="74" y="32" class="tx-b">C</text>
+      <text x="224" y="168" class="tx-b">D</text><text x="372" y="168" class="tx-b">E</text><text x="274" y="32" class="tx-b">F</text>
+      <text x="210" y="192" class="tx-b" text-anchor="middle">△ABC ≡ △DEF</text>
+    </svg>`,
+    text: `<p>Trójkąty <b>przystające</b> mają odpowiednio równe wszystkie boki i wszystkie kąty – gdyby je wyciąć, jeden dałoby się dokładnie nałożyć na drugi (ewentualnie po obróceniu lub odwróceniu).</p>
+      <p>Po co to? Gdy udowodnisz, że dwa trójkąty są przystające, dostajesz <b>za darmo</b> równość pozostałych boków i kątów. Tak rozwiązuje się zadania „wykaż, że…”.</p>`,
+    remember: 'Zapis △ABC ≡ △DEF: A odpowiada D, B – E, C – F. Kolejność liter ma znaczenie.',
+    hook: 'Przystające = „przystają do siebie” jak dwa identyczne puzzle.',
+    check: { q: 'Trójkąty przystające mają…', options: ['tylko równe kąty', 'odpowiednio równe boki i kąty', 'równe obwody, ale mogą mieć różne kąty', 'równe pola, ale mogą mieć różne boki'], answer: 1, explain: 'Przystające trójkąty mają wszystkie odpowiadające elementy równe.' },
+  },
+  {
+    title: 'Trzy cechy przystawania',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Trzy trójkąty: cecha bok-bok-bok, bok-kąt-bok i kąt-bok-kąt z zaznaczonymi elementami">
+      <line x1="20" y1="150" x2="120" y2="150" class="ln s1 sw"/><line x1="20" y1="150" x2="50" y2="60" class="ln s1 sw"/><line x1="50" y1="60" x2="120" y2="150" class="ln s1 sw"/>
+      <line x1="160" y1="150" x2="260" y2="150" class="ln s2 sw"/><line x1="160" y1="150" x2="190" y2="60" class="ln s2 sw"/><line x1="190" y1="60" x2="260" y2="150" class="ln-thin"/>
+      <path d="M182,150 A22,22 0 0,0 167,129" class="ln s2 sw"/>
+      <line x1="300" y1="150" x2="400" y2="150" class="ln s3 sw"/><line x1="300" y1="150" x2="330" y2="60" class="ln-thin"/><line x1="330" y1="60" x2="400" y2="150" class="ln-thin"/>
+      <path d="M322,150 A22,22 0 0,0 307,129" class="ln s3 sw"/><path d="M378,150 A22,22 0 0,1 386.5,132.6" class="ln s3 sw"/>
+      <text x="70" y="182" class="tx-b t1" text-anchor="middle">bbb</text>
+      <text x="210" y="182" class="tx-b t2" text-anchor="middle">bkb</text>
+      <text x="350" y="182" class="tx-b t3" text-anchor="middle">kbk</text>
+      <text x="70" y="202" class="tx-s" text-anchor="middle">3 boki</text>
+      <text x="210" y="202" class="tx-s" text-anchor="middle">kąt między bokami</text>
+      <text x="350" y="202" class="tx-s" text-anchor="middle">2 kąty przy boku</text>
+    </svg>`,
+    text: `<p>Nie musisz porównywać wszystkich sześciu elementów. Wystarczą trzy, ułożone według jednej z cech:</p>
+      <ul><li><b>bbb</b> – trzy pary równych boków;</li><li><b>bkb</b> – dwie pary równych boków i równe kąty <b>między nimi</b>;</li><li><b>kbk</b> – para równych boków i równe kąty <b>przy tym boku</b>.</li></ul>
+      <p>Uwaga: trzy równe kąty (kkk) to za mało – trójkąt może być większy albo mniejszy.</p>`,
+    remember: 'bbb, bkb (kąt między bokami), kbk (kąty przy boku). kkk NIE jest cechą przystawania.',
+    hook: 'W bkb kąt siedzi w środku jak szynka w kanapce, a w kbk bok jest kanapką między dwoma kątami.',
+    check: { q: 'W trójkątach ABC i DEF: AB = DE, ∠ABC = ∠DEF i BC = EF. Która cecha?', options: ['bbb', 'bkb', 'kbk', 'kkk'], answer: 1, explain: 'Kąt przy B leży między bokami AB i BC.' },
+  },
+  {
+    title: 'Kąty, na które się powołujesz',
+    svg: `<svg viewBox="0 0 420 240" role="img" aria-label="Dwie proste równoległe przecięte trzecią prostą; równe kąty alfa oraz kąt przyległy 180 stopni minus alfa">
+      <line x1="20" y1="60" x2="400" y2="60" class="ln"/>
+      <line x1="20" y1="150" x2="400" y2="150" class="ln"/>
+      <line x1="120" y1="200" x2="300" y2="10" class="ln s2"/>
+      <text x="272" y="50" class="tx-b t2">α</text>
+      <text x="210" y="84" class="tx-b t2">α</text>
+      <text x="186" y="140" class="tx-b t2">α</text>
+      <text x="232" y="50" class="tx-s" text-anchor="end">180° − α</text>
+      <text x="408" y="56" class="tx-s" text-anchor="end">a</text>
+      <text x="408" y="146" class="tx-s" text-anchor="end">b</text>
+      <text x="16" y="200" class="tx-s">a ∥ b · wierzchołkowe, odpowiadające</text>
+      <text x="16" y="222" class="tx-s">i naprzemianległe są równe; przyległe: 180°</text>
+    </svg>`,
+    text: `<p>W dowodach powołujesz się na znane fakty. Najczęstsze:</p>
+      <ul><li><b>kąty wierzchołkowe</b> są równe (bo każdy dopełnia ten sam kąt do 180°),</li>
+      <li><b>kąty przyległe</b> sumują się do 180°,</li>
+      <li>przy prostych <b>równoległych</b> kąty odpowiadające i naprzemianległe są równe,</li>
+      <li>suma kątów w trójkącie to 180°, w trójkącie równoramiennym kąty przy podstawie są równe.</li></ul>`,
+    remember: 'Każdy krok dowodu ma swoje „bo…”: bo wierzchołkowe, bo naprzemianległe, bo suma kątów trójkąta.',
+    hook: 'Wierzchołkowe stykają się tylko wierzchołkami – jak klepsydra; ich „wieżyczki” są lustrzane, więc równe.',
+    check: { q: 'W trójkącie równoramiennym kąt przy podstawie ma 50°. Ile ma kąt między ramionami?', options: ['50°', '65°', '80°', '130°'], answer: 2, explain: '180° − 2 · 50° = 80°.' },
+  },
+  {
+    title: 'Nierówność trójkąta – kiedy powstaje trójkąt',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Trójkąt ABC, w którym AB plus BC jest większe od AC, oraz punkty współliniowe, gdy AB plus BC równa się AC">
+      <polygon points="30,130 110,50 190,130" class="f1 s1 sw"/>
+      <text x="14" y="148" class="tx-b">A</text><text x="104" y="40" class="tx-b">B</text><text x="192" y="148" class="tx-b">C</text>
+      <text x="110" y="176" class="tx" text-anchor="middle">AB + BC &gt; AC</text>
+      <line x1="230" y1="100" x2="410" y2="100" class="ln s2 sw"/>
+      <circle cx="230" cy="100" r="5" class="f2 s2"/><circle cx="300" cy="100" r="5" class="f2 s2"/><circle cx="410" cy="100" r="5" class="f2 s2"/>
+      <text x="224" y="86" class="tx-b">A</text><text x="294" y="86" class="tx-b">B</text><text x="402" y="86" class="tx-b">C</text>
+      <text x="320" y="140" class="tx" text-anchor="middle">AB + BC = AC</text>
+      <text x="320" y="164" class="tx-s" text-anchor="middle">gdy B leży na odcinku AC</text>
+    </svg>`,
+    text: `<p>Droga „na skróty” jest najkrótsza: idąc z A do C przez B, przejdziesz co najmniej tyle, co prosto: <b>AB + BC ≥ AC</b>. Równość jest tylko wtedy, gdy B leży na odcinku AC – wtedy trójkąt „spłaszcza się” w odcinek.</p>
+      <p>Dlatego z odcinków 3, 4, 8 nie zbudujesz trójkąta (3 + 4 &lt; 8), a dla boków 3 i 8 trzeci bok musi być dłuższy niż 5 i krótszy niż 11.</p>`,
+    remember: 'AB + BC ≥ AC; równość ⇔ B leży na odcinku AC. Trójkąt powstaje, gdy najdłuższy bok &lt; suma dwóch pozostałych.',
+    check: { q: 'AB = 4, BC = 6, AC = 10. Co z tego wynika?', options: ['ABC to trójkąt prostokątny', 'punkt B leży na odcinku AC', 'taka sytuacja jest niemożliwa', 'ABC to trójkąt równoramienny'], answer: 1, explain: '4 + 6 = 10 – zachodzi równość, więc A, B, C leżą na jednej prostej, B między A i C.' },
+  },
+  {
+    title: 'Jak napisać dowód na egzaminie',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Schemat dowodu: rysunek, dane i teza, kroki z uzasadnieniem, wniosek; przykład z punktem S">
+      <defs><marker id="a-mat-prz-5" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="6" y="10" width="92" height="48" rx="8" class="f1 s1"/><text x="52" y="40" class="tx-s" text-anchor="middle">rysunek</text>
+      <rect x="112" y="10" width="92" height="48" rx="8" class="f4 s4"/><text x="158" y="40" class="tx-s" text-anchor="middle">dane i teza</text>
+      <rect x="218" y="10" width="92" height="48" rx="8" class="f3 s3"/><text x="264" y="40" class="tx-s" text-anchor="middle">kroki + „bo”</text>
+      <rect x="324" y="10" width="92" height="48" rx="8" class="f2 s2"/><text x="370" y="40" class="tx-s" text-anchor="middle">wniosek</text>
+      <path d="M98,34 L110,34" class="ln" marker-end="url(#a-mat-prz-5)"/><path d="M204,34 L216,34" class="ln" marker-end="url(#a-mat-prz-5)"/><path d="M310,34 L322,34" class="ln" marker-end="url(#a-mat-prz-5)"/>
+      <text x="10" y="96" class="tx">AS = BS, CS = DS</text><text x="410" y="96" class="tx-s" text-anchor="end">bo S – środek</text>
+      <text x="10" y="128" class="tx">∠ASC = ∠BSD</text><text x="410" y="128" class="tx-s" text-anchor="end">bo wierzchołkowe</text>
+      <text x="10" y="160" class="tx">△ASC ≡ △BSD</text><text x="410" y="160" class="tx-s" text-anchor="end">z cechy bkb</text>
+      <text x="10" y="200" class="tx-b t2">więc AC = BD ✔</text>
+    </svg>`,
+    text: `<p>Zadanie: odcinki AB i CD przecinają się w punkcie S, który jest środkiem każdego z nich. Wykaż, że AC = BD. Dowód to łańcuch zdań, a każde ma <b>uzasadnienie</b>. Kończysz wnioskiem, który jest tezą.</p>
+      <p>W dowodach z liczbami zapisz je literami: kolejne liczby to n, n + 1, n + 2; liczba dwucyfrowa to 10a + b. Kilka sprawdzonych przykładów to <b>nie</b> dowód.</p>`,
+    remember: 'Dane → teza → kroki z „bo…” → wniosek. Przykład ≠ dowód.',
+    hook: 'Pisz tak, jakby czytał to ktoś, kto nie widzi twojego rysunku i nie wierzy ci na słowo.',
+    check: { q: 'Uczeń sprawdził dwa przykłady i napisał „więc zawsze tak jest”. Czy to dowód?', options: ['tak, dwa przykłady wystarczą', 'tak, jeśli przykłady są duże', 'nie – przykłady pokazują tylko te przypadki', 'tak, jeśli doda rysunek'], answer: 2, explain: 'Dowód musi działać dla wszystkich przypadków, np. dzięki zapisowi literowemu.' },
+  },
+];
