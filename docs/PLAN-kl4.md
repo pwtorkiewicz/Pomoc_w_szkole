@@ -16,17 +16,17 @@ Cel: pomoc w bieżącej nauce **wszystkich przedmiotów klasy 4**, zgodnie z pod
 |---|---|---|---|
 | Język polski | 5 | 1. Komunikacja · 2. Odbiór tekstów kultury · 3. Świadomość języka · 4. Tworzenie wypowiedzi · 5. Autorefleksja i tożsamość · 6. Edukacja medialna · 7. Praktyki lekturowe | A |
 | Matematyka | 4 | 1. Liczby · 2. Miary · 3. Algebra · 4. Figury · 5. Dane · 6. Myślenie matematyczne | A |
-| Język obcy nowożytny (angielski – do potwierdzenia) | 3 | poziomy A1–B1, w każdym 10 działów (środki językowe – 14 tematów, rozumienie, wypowiedzi, reagowanie, przetwarzanie, strategie, kompetencje międzykulturowe); podstawa nie przypisuje poziomu do kl. IV | A |
+| Język angielski | 3 | poziomy A1–B1, w każdym 10 działów (środki językowe – 14 tematów, rozumienie, wypowiedzi, reagowanie, przetwarzanie, strategie, kompetencje międzykulturowe); podstawa nie przypisuje poziomu do kl. IV | A |
 | Przyroda | 3 | 1. Spotkania z przyrodą · 2. W terenie i najbliższym otoczeniu · 3. Materia i jej przemiany · 4. Organizmy i ekosystemy · 5. Planeta Ziemia · 6. Człowiek w środowisku | A |
 | Historia | 1 | działy 1–30 (od refleksji nad historią i historii rodzinnej do XIX w.); podstawa: kl. IV zaczyna się od tematyki wprowadzającej | A (na początek dz. 1–4) |
 | Informatyka | 1 | 5 działów (myślenie komputacyjne, programowanie, narzędzia cyfrowe w tym AI, bezpieczeństwo, krytyczna ocena informacji) | B |
 | Zajęcia praktyczno-techniczne (zamiast „techniki”) | 2 | 8 działów, m.in. **8. Bezpieczne i odpowiedzialne uczestnictwo w ruchu drogowym** | B (głównie dz. 8 i wiedza z dz. 1–7) |
-| Edukacja zdrowotna | 1 | 9 działów: wartości, zdrowie fizyczne, aktywność, odżywianie, zdrowie psychiczne i społeczne, dojrzewanie, środowisko, internet i uzależnienia | B |
+| Edukacja zdrowotna | 1 | 9 działów: wartości, zdrowie fizyczne, aktywność, odżywianie, zdrowie psychiczne i społeczne, dojrzewanie, środowisko, internet i uzależnienia | **pomijamy** (decyzja rodzica, 1.11.2026) |
 | Muzyka | 1 | 4 działy (twórca i wykonawca, słuchacz, uczestnik kultury, relacje) | C – tylko wiedza (np. zapis nutowy, instrumenty) |
 | Plastyka | 1 | 4 działy (aktywność twórcza, techniki, sztuka jako komunikat, sztuka w życiu) | C – tylko wiedza (np. barwy, techniki) |
 | Wychowanie fizyczne | 4 | osobny blok „Klasa IV”, 8 działów | C – tylko zasady bezpieczeństwa, gier, fair play |
 
-Pomijamy: „edukacja zdrowotna – zdrowie seksualne” (1 godz. w roku, rodzic może zrezygnować – Dz.U. 2026 poz. 966; ewentualnie tylko na wyraźną decyzję rodzica), etykę i religię.
+Pomijamy (decyzja rodzica): edukację zdrowotną, także „edukację zdrowotną – zdrowie seksualne”. Pomijamy też etykę i religię.
 
 A – pełny materiał (lekcje, ściąga, fiszki, quiz, zadania). B – ściąga, fiszki, quiz. C – krótka ściąga i quiz z wiedzy, bez części praktycznej.
 
@@ -38,7 +38,8 @@ A – pełny materiał (lekcje, ściąga, fiszki, quiz, zadania). B – ściąga
 
 ## Etapy
 
-- [ ] Etap 1: matematyka i przyroda – działy na pierwsze miesiące klasy 4 (według podręcznika dziecka).
+- [x] Etap 1: matematyka i przyroda – pierwsze działy (wybór redakcyjny z bloku kl. IV–VI; kolejność można dopasować do podręcznika dziecka).
 - [ ] Etap 2: polski i angielski.
-- [ ] Etap 3: historia (dz. 1–4), informatyka, zajęcia praktyczno-techniczne (ruch drogowy), edukacja zdrowotna.
-- [ ] Etap 4: muzyka, plastyka, WF (wiedza); strona „Źródła” ścieżki (`js/dane/kl4/zrodla.js`).
+- [ ] Etap 3: historia (dz. 1–4), informatyka, zajęcia praktyczno-techniczne (ruch drogowy).
+- [ ] Etap 4: muzyka, plastyka, WF (wiedza).
+- [x] Strona „Źródła” ścieżki (`js/dane/kl4/zrodla.js`).

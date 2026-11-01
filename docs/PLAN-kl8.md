@@ -25,11 +25,11 @@ Cel: pomoc w **bieżącej nauce wszystkich przedmiotów klasy 8** (nie tylko egz
 | Wiedza o społeczeństwie | 2 | tylko kl. VIII: I–XII (natura człowieka, rodzina, szkoła, prawa człowieka, nieletni wobec prawa, społeczność lokalna i regionalna, naród i ojczyzna, społeczeństwo obywatelskie, media, demokracja w RP, sprawy międzynarodowe) | | A |
 | Edukacja dla bezpieczeństwa | 1 | tylko kl. VIII: I. Bezpieczeństwo państwa · II. Sytuacje nadzwyczajnych zagrożeń · III. Pierwsza pomoc · IV. Postawy obronne | od 2027/28 zastąpi ją kształcenie obronne | B |
 | Informatyka | 1 | blok kl. VII–VIII, I–V | | B |
-| Edukacja zdrowotna (nowa podstawa) | 1 | 9 działów (wartości, zdrowie fizyczne, aktywność, odżywianie, zdrowie psychiczne i społeczne, dojrzewanie, środowisko, internet i uzależnienia) | w kl. VIII najdłużej do końca stycznia | B |
+| Edukacja zdrowotna (nowa podstawa) | 1 | 9 działów (wartości, zdrowie fizyczne, aktywność, odżywianie, zdrowie psychiczne i społeczne, dojrzewanie, środowisko, internet i uzależnienia) | w kl. VIII najdłużej do końca stycznia | **pomijamy** (decyzja rodzica) |
 | Drugi język obcy albo łacina | 2 | wariant II.2, kl. VII–VIII | który język – do ustalenia z rodzicem | B |
 | Wychowanie fizyczne | 4 | blok kl. VII–VIII | | C – tylko wiedza |
 
-Muzyki, plastyki i techniki w klasie 8 nie ma. Pomijamy „edukację zdrowotną – zdrowie seksualne” (rodzic może zrezygnować, Dz.U. 2026 poz. 966), etykę i religię.
+Muzyki, plastyki i techniki w klasie 8 nie ma. Pomijamy (decyzja rodzica) edukację zdrowotną, także „zdrowie seksualne”; pomijamy też etykę i religię.
 
 ## Uwagi
 
@@ -41,5 +41,5 @@ Muzyki, plastyki i techniki w klasie 8 nie ma. Pomijamy „edukację zdrowotną 
 
 - [ ] Etap 1: silnik – przedmiot-odnośnik do innej ścieżki; fizyka i chemia (działy bieżące według podręcznika).
 - [ ] Etap 2: biologia, geografia, historia (działy zalecane dla kl. VIII).
-- [ ] Etap 3: WOS, EDB, informatyka, edukacja zdrowotna; matematyka XV „Symetrie”.
+- [ ] Etap 3: WOS, EDB, informatyka; matematyka XV „Symetrie”.
 - [ ] Etap 4: drugi język obcy; WF (wiedza); strona „Źródła” (`js/dane/kl8/zrodla.js`).

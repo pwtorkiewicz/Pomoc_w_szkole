@@ -25,10 +25,10 @@ window.LESSONS['<przedmiot>/<id działu>'] = [
 ## Zasady treści
 
 1. **Klucz** lekcji = `<id przedmiotu>/<id działu>` dokładnie jak w `js/dane/*.js`.
-2. **Treść tylko z zakresu działu.** Opieraj się na `theory`, `flashcards`, `questions` i `basis` danego działu w `js/dane/*.js` – te treści zostały sprawdzone z podstawą programową i informatorami CKE. Możesz tłumaczyć je prościej, dawać nowe przykłady i analogie, ale **nie dodawaj nowych faktów ani materiału spoza podstawy**. Jeśli nie masz pewności co do faktu – pomiń go.
-3. Rzeczy, których **nie wolno** uczyć (są poza egzaminem): matematyka – potęgi o wykładniku 0 i ujemnym (poza notacją wykładniczą), mediana, dominanta, reguła mnożenia w kombinatoryce, wzór na sumę kątów n-kąta, symetria środkowa / symetralna / dwusieczna; angielski – zdania warunkowe typu II („If I were…”).
-4. **Język**: polski, zwracaj się do ucznia na „ty”, krótkie zdania, przyjaźnie i nowocześnie, bez infantylizmu (to 14-latkowie). Bez lania wody.
-5. **4–6 kroków** na lekcję. Pierwszy krok: o co chodzi i po co to jest. Ostatni: podsumowanie lub typowe pułapki egzaminacyjne.
+2. **Treść tylko z zakresu działu.** Opieraj się na `theory`, `flashcards`, `questions` i `basis` danego działu w pliku danych ścieżki (`js/dane/*.js` lub `js/dane/<ścieżka>/*.js`) – te treści zostały sprawdzone z podstawą programową (a w ścieżce egzaminacyjnej – z informatorami CKE). Możesz tłumaczyć je prościej, dawać nowe przykłady i analogie, ale **nie dodawaj nowych faktów ani materiału spoza podstawy**. Jeśli nie masz pewności co do faktu – pomiń go.
+3. Ścieżka egzaminacyjna – rzeczy, których **nie wolno** uczyć (są poza egzaminem): matematyka – potęgi o wykładniku 0 i ujemnym (poza notacją wykładniczą), mediana, dominanta, reguła mnożenia w kombinatoryce, wzór na sumę kątów n-kąta, symetria środkowa / symetralna / dwusieczna; angielski – zdania warunkowe typu II („If I were…”).
+4. **Język**: polski, zwracaj się do ucznia na „ty”, krótkie zdania, bez lania wody. Klasa 8 i egzamin: przyjaźnie i nowocześnie, bez infantylizmu (to 14-latkowie). Klasa 4: proste wyjaśnienia, każdy nowy termin objaśniony, przykłady z życia 10-latka. Klasa 3: bardzo krótko, dużo obrazków.
+5. **4–6 kroków** na lekcję. Pierwszy krok: o co chodzi i po co to jest. Ostatni: podsumowanie lub typowe pułapki (w ścieżce egzaminacyjnej – egzaminacyjne).
 6. Co najmniej **2 kroki z pytaniem `check`**. Pytania jednoznaczne, poprawna odpowiedź tylko jedna, sprawdzona.
 7. W co najmniej połowie kroków dodaj **`hook`** – skojarzenie, mnemotechnikę, rymowankę, analogię z życia, które pomagają zapamiętać.
 
@@ -60,7 +60,7 @@ window.LESSONS['<przedmiot>/<id działu>'] = [
 ## Sprawdzanie
 
 ```
-node tools/sprawdz-lekcje.js <przedmiot>          # struktura, XML, napisy poza kadrem, błędy JS
-node tools/zrzut.js <przedmiot/dział> <krok> <plik.png> [dark] [420]   # zrzut ekranu kroku
+node tools/sprawdz-lekcje.js [ścieżka/]<przedmiot>          # struktura, XML, napisy poza kadrem, błędy JS (bez ścieżki – egzamin)
+node tools/zrzut.js <[ścieżka/]przedmiot/dział> <krok> <plik.png> [dark] [420]   # zrzut ekranu kroku
 ```
 Popraw wszystkie zgłoszone problemy i obejrzyj zrzuty (jasny i ciemny motyw, szerokość 420) – rysunek ma być czytelny i ładny.

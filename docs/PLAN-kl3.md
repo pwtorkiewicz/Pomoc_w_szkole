@@ -16,7 +16,7 @@ Cel: pomoc w nauce dla ucznia klasy 3 (edukacja wczesnoszkolna), zgodnie z podst
 |---|---|---|
 | I. Edukacja polonistyczna | 1. słuchanie · 2. mówienie · 3. czytanie · 4. pisanie · 5. kształcenie językowe · 6. samokształcenie | A |
 | II. Edukacja matematyczna | 1. stosunki przestrzenne i cechy wielkościowe · 2. liczby i ich własności · 3. posługiwanie się liczbami · 4. czytanie tekstów matematycznych · 5. pojęcia geometryczne · 6. matematyka w sytuacjach życiowych | A |
-| X. Edukacja językowa – język obcy nowożytny (angielski – do potwierdzenia) | wymagania 1–11 (podstawowy zasób środków językowych, rozumienie, wypowiedzi, reagowanie…) | A |
+| X. Edukacja językowa – język obcy nowożytny (angielski) | wymagania 1–11 (podstawowy zasób środków językowych, rozumienie, wypowiedzi, reagowanie…) | A |
 | IV. Edukacja przyrodnicza | 1. środowisko przyrodnicze · 2. funkcje życiowe człowieka, zdrowie, bezpieczeństwo · 3. przestrzeń geograficzna | A |
 | III. Edukacja społeczna | 1. środowisko społeczne · 2. orientacja w czasie historycznym | B |
 | VII. Edukacja informatyczna | 5 działów (problemy, programowanie, posługiwanie się komputerem, kompetencje społeczne, bezpieczeństwo) | B |
