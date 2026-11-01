@@ -68,6 +68,23 @@ window.SUBJECTS.push({
         { id: 'h2le21', q: 'Czym różni się uosobienie od ożywienia?', options: ['niczym – to dwie nazwy tego samego', 'uosobienie dotyczy tylko zwierząt', 'uosobienie nadaje cechy ludzkie, a ożywienie – cechy istot żywych', 'ożywienie to uroczysty zwrot do kogoś'], answer: 2 },
         { id: '8rp34u', q: 'Jaką funkcję pełnią zdrobnienia w opisie małego dziecka?', options: ['naśladują dźwięki', 'wyrażają pogardę', 'podają dokładne dane', 'wyrażają czułość i serdeczność'], answer: 3 },
       ],
+      tasks: [
+        {
+          id: 'o2l8s6',
+          points: 2,
+          q: 'Napisz dwuzdaniowy opis jesiennego parku. Użyj w nim uosobienia i porównania, a potem wskaż oba środki.',
+          steps: [
+            'Uosobienie: przyrodzie lub rzeczom nadajemy cechy i zachowania człowieka (np. drzewa się smucą, wiatr szepcze).',
+            'Porównanie: zestawienie dwóch rzeczy za pomocą wyrazów „jak”, „jakby”, „niby”, „niczym”.',
+            'W odpowiedzi zacytuj oba środki i nazwij je.',
+          ],
+          answer: 'Stare kasztany smutno opuszczają gałęzie i żegnają lato. Liście na alejkach leżą jak kolorowy dywan. Uosobienie: „kasztany […] żegnają lato”; porównanie: „jak kolorowy dywan”.',
+          scoring: [
+            '1 pkt – poprawnie użyte i wskazane uosobienie.',
+            '2 pkt – poprawnie użyte i wskazane porównanie.',
+          ],
+        },
+      ],
     },
     {
       id: 'lektury-7-8',
@@ -301,6 +318,38 @@ window.SUBJECTS.push({
         { id: '0urlau', q: 'Które zdanie zawiera bezosobową formę czasownika?', options: ['Mama umyła okna.', 'Umyto okna.', 'Okna są umyte.', 'Umyj okna!'], answer: 1, explain: 'Formy na -no, -to nie wskazują, kto wykonał czynność.' },
         { id: 'twppbr', q: 'W którym zdaniu poprawnie postawiono przecinek?', options: ['Wracając ze szkoły spotkałem, kolegę.', 'Wracając, ze szkoły spotkałem kolegę.', 'Wracając ze, szkoły spotkałem kolegę.', 'Wracając ze szkoły, spotkałem kolegę.'], answer: 3, explain: 'Imiesłowowy równoważnik zdania („Wracając ze szkoły”) oddzielamy przecinkiem.' },
       ],
+      tasks: [
+        {
+          id: 'omkjo6',
+          points: 2,
+          q: 'Przekształć zdania ze strony czynnej na stronę bierną: a) „Uczniowie posadzili drzewa.” b) „Burza zniszczyła most.”',
+          steps: [
+            'W stronie biernej dopełnienie ze zdania czynnego staje się podmiotem: drzewa, most.',
+            'Orzeczenie: forma czasownika „zostać” (albo „być”) + imiesłów przymiotnikowy bierny: zostały posadzone, został zniszczony.',
+            'Wykonawcę czynności podajemy z przyimkiem „przez”: przez uczniów, przez burzę.',
+          ],
+          answer: 'a) Drzewa zostały posadzone przez uczniów. b) Most został zniszczony przez burzę.',
+          scoring: [
+            '1 pkt – poprawnie przekształcone zdanie a).',
+            '2 pkt – poprawnie przekształcone zdanie b).',
+          ],
+        },
+        {
+          id: 'ngk3w4',
+          points: 2,
+          q: 'Od czasownika „czytać” utwórz imiesłów przymiotnikowy czynny i imiesłów przymiotnikowy bierny. Użyj każdego z nich w zdaniu.',
+          steps: [
+            'Imiesłów przymiotnikowy czynny ma przyrostek -ący (-ąca, -ące): czytający.',
+            'Imiesłów przymiotnikowy bierny ma przyrostek -ny, -ony albo -ty: czytany.',
+            'Imiesłowy przymiotnikowe odmieniają się jak przymiotniki i określają rzeczownik.',
+          ],
+          answer: 'czytający – „Chłopiec czytający komiks nie zauważył autobusu.”; czytany – „To najczęściej czytany artykuł w gazetce szkolnej.”',
+          scoring: [
+            '1 pkt – poprawne formy obu imiesłowów (czytający, czytany).',
+            '2 pkt – oba imiesłowy poprawnie użyte w zdaniach.',
+          ],
+        },
+      ],
     },
     {
       id: 'skladnia',
@@ -336,7 +385,7 @@ window.SUBJECTS.push({
         <p>Ma co najmniej <b>trzy</b> zdania składowe: <i>Kiedy wróciłem do domu, mama gotowała obiad, a tata czytał gazetę.</i></p>
         <h3>Mowa niezależna i zależna</h3>
         <ul>
-          <li><b>Niezależna</b> – dosłowne przytoczenie w cudzysłowie: <i>Ania powiedziała: „Jestem zmęczona.”</i></li>
+          <li><b>Niezależna</b> – dosłowne przytoczenie w cudzysłowie: <i>Ania powiedziała: „Jestem zmęczona”.</i></li>
           <li><b>Zależna</b> – przekazanie cudzych słów własnymi: <i>Ania powiedziała, że jest zmęczona.</i></li>
         </ul>
         <p>Przy zamianie zmienia się osoba czasownika i zaimki, a cudzysłów zastępujemy spójnikiem (<i>że, czy, żeby</i>).</p>
@@ -372,6 +421,53 @@ window.SUBJECTS.push({
         { id: 'f4cgy5', q: 'Zamień na mowę zależną: Ola zapytała Tomka: „Czy idziesz z nami?”', options: ['Ola zapytała Tomka, czy idzie z nimi.', 'Ola zapytała Tomka, czy idziesz z nami.', 'Ola zapytała Tomka, że idzie z nimi.', 'Ola zapytała Tomka: czy idzie z nimi.'], answer: 0, explain: 'Pytanie przekazujemy spójnikiem „czy” i zmieniamy osobę: „idziesz” → „idzie”, „z nami” → „z nimi”.' },
         { id: '7lx6mo', q: 'Przed którym spójnikiem zawsze stawiamy przecinek?', options: ['ponieważ', 'i', 'lub', 'oraz'], answer: 0, explain: 'Przed pojedynczym „i”, „lub”, „oraz” przecinka nie stawiamy.' },
         { id: 'qayr05', q: 'Które wypowiedzenie jest zdaniem, a nie równoważnikiem zdania?', options: ['Zamknij drzwi.', 'Zakaz wjazdu.', 'Cisza w lesie.', 'Piękny dzień.'], answer: 0, explain: '„Zamknij” to osobowa forma czasownika (tryb rozkazujący).' },
+      ],
+      tasks: [
+        {
+          id: 'kh305y',
+          points: 2,
+          q: 'Przekształć zdanie złożone na zdanie z imiesłowowym równoważnikiem zdania: „Kiedy Ola wróciła ze szkoły, od razu usiadła do lekcji.”',
+          steps: [
+            'Sprawdź, czy obie czynności wykonuje ta sama osoba: wróciła – Ola, usiadła – Ola. Tylko wtedy wolno użyć imiesłowowego równoważnika.',
+            'Najpierw wróciła, potem usiadła – czynność wcześniejsza, więc potrzebny jest imiesłów przysłówkowy uprzedni (-wszy, -łszy): wróciwszy.',
+            'Imiesłowowy równoważnik oddzielamy przecinkiem od reszty zdania.',
+          ],
+          answer: 'Wróciwszy ze szkoły, Ola od razu usiadła do lekcji.',
+          scoring: [
+            '1 pkt – użycie imiesłowu przysłówkowego uprzedniego „wróciwszy” (a nie współczesnego „wracając”, który zmienia sens).',
+            '2 pkt – całe zdanie poprawne, z zachowanym sensem i przecinkiem po równoważniku.',
+          ],
+        },
+        {
+          id: 'nzf44p',
+          points: 2,
+          q: 'Wyjaśnij, dlaczego zdanie „Czytając lekturę, zadzwonił telefon.” jest błędne. Zapisz je poprawnie.',
+          steps: [
+            'Imiesłowowy równoważnik zdania można stosować tylko wtedy, gdy wykonawca czynności z imiesłowu jest podmiotem zdania.',
+            'Kto czytał lekturę? Ja (albo ktoś inny). Co zadzwoniło? Telefon. Wychodzi na to, że telefon czytał lekturę – to błąd.',
+            'Trzeba zamienić równoważnik na zdanie podrzędne z własnym podmiotem albo zmienić podmiot zdania.',
+          ],
+          answer: 'Błąd polega na tym, że podmiot zdania (telefon) nie jest wykonawcą czynności z imiesłowu (czytania). Poprawnie: „Kiedy czytałem lekturę, zadzwonił telefon.” albo „Czytając lekturę, usłyszałem dzwonek telefonu.”',
+          scoring: [
+            '1 pkt – wyjaśnienie: wykonawca czynności z imiesłowu i podmiot zdania to różne osoby/rzeczy (telefon nie czyta).',
+            '2 pkt – poprawnie zapisane zdanie (np. ze zdaniem podrzędnym „Kiedy czytałem…”).',
+          ],
+        },
+        {
+          id: '9xhqfu',
+          points: 2,
+          q: 'Przekształć mowę niezależną na zależną: Mama zapytała Kubę: „Czy odrobiłeś już lekcje?”',
+          steps: [
+            'Pytanie bez zaimka pytającego w mowie zależnej wprowadzamy spójnikiem „czy”.',
+            'Znikają dwukropek, cudzysłów i znak zapytania. Przed „czy” stawiamy przecinek.',
+            'Zmieniamy osobę: Mama mówi o Kubie, więc „odrobiłeś” → „odrobił”.',
+          ],
+          answer: 'Mama zapytała Kubę, czy odrobił już lekcje.',
+          scoring: [
+            '1 pkt – zdanie złożone ze spójnikiem „czy”, bez cudzysłowu, dwukropka i pytajnika.',
+            '2 pkt – poprawna zmiana osoby czasownika („odrobił”) i przecinek przed „czy”.',
+          ],
+        },
       ],
     },
     {
@@ -425,6 +521,38 @@ window.SUBJECTS.push({
         { id: '1bguk9', q: 'Jaki formant ma wyraz „pisarz” utworzony od „pisać”?', options: ['przyrostek', 'przedrostek', 'przedrostek i przyrostek', 'wrostek'], answer: 0, explain: 'Cząstka „-arz” stoi po podstawie.' },
         { id: 'dmzqpj', q: 'Wyrazem podstawowym dla wyrazu „nocny” jest…', options: ['nocować', 'noc', 'nocleg', 'nocny'], answer: 1 },
         { id: '3sjusp', q: 'W którym szeregu są wyrazy z jednej rodziny?', options: ['woda, wada, wata', 'dom, dym, dama', 'las, lis, list', 'woda, wodny, podwodny'], answer: 3, explain: 'Wyrazy z jednej rodziny mają wspólny rdzeń i są związane znaczeniem.' },
+      ],
+      tasks: [
+        {
+          id: 'msd576',
+          points: 2,
+          q: 'W wyrazach „czytelnia” i „nieuczciwy” wskaż wyraz podstawowy i formant. Nazwij rodzaj formantu.',
+          steps: [
+            'Wyraz podstawowy to ten, od którego utworzono wyraz pochodny. Czytelnia to miejsce, gdzie się czyta – od „czytać”.',
+            'Temat słowotwórczy: czyt-, formant: -elnia – stoi po temacie, więc to przyrostek.',
+            'Nieuczciwy to „nie uczciwy” – od „uczciwy”. Formant nie- stoi przed tematem, więc to przedrostek.',
+          ],
+          answer: 'czytelnia ← czytać, formant -elnia (przyrostek); nieuczciwy ← uczciwy, formant nie- (przedrostek).',
+          scoring: [
+            '1 pkt – poprawna analiza jednego wyrazu (wyraz podstawowy, formant, rodzaj formantu).',
+            '2 pkt – poprawna analiza obu wyrazów.',
+          ],
+        },
+        {
+          id: '7c3apa',
+          points: 2,
+          q: 'Uzasadnij, że wyrazy „las”, „leśny”, „leśniczy” i „zalesić” należą do jednej rodziny wyrazów. Wskaż ich rdzeń.',
+          steps: [
+            'Rodzina wyrazów to wyrazy pokrewne – mają wspólny rdzeń i są związane znaczeniem.',
+            'Wszystkie wyrazy łączy znaczenie „las”: leśny – dotyczący lasu, leśniczy – opiekuje się lasem, zalesić – posadzić las.',
+            'Rdzeń: las- / leś- (wymiana głosek a : e i s : ś).',
+          ],
+          answer: 'Wyrazy mają wspólny rdzeń las-/leś- (z wymianą a : e, s : ś) i wspólne znaczenie związane z lasem, więc tworzą jedną rodzinę wyrazów.',
+          scoring: [
+            '1 pkt – wskazanie rdzenia las- / leś- (z obocznością).',
+            '2 pkt – uzasadnienie odwołujące się do wspólnego rdzenia i pokrewnego znaczenia.',
+          ],
+        },
       ],
     },
     {
@@ -494,6 +622,38 @@ window.SUBJECTS.push({
         { id: '50q2c7', q: 'Antonimem wyrazu „wesoły” jest…', options: ['radosny', 'uśmiechnięty', 'zabawny', 'smutny'], answer: 3, explain: 'Antonim to wyraz o przeciwnym znaczeniu; pozostałe to synonimy.' },
         { id: '4d36en', q: 'Który wyraz ma najszerszy zakres znaczeniowy?', options: ['pojazd', 'samochód', 'samochód osobowy', 'taksówka'], answer: 0, explain: 'Pojazdem nazwiesz najwięcej rzeczy – ten wyraz ma najuboższą treść.' },
         { id: '18x8ws', q: 'Wyraz „komputer” to…', options: ['archaizm', 'zapożyczenie', 'neologizm', 'zdrobnienie'], answer: 1, explain: 'Wyraz przejęty z innego języka.' },
+      ],
+      tasks: [
+        {
+          id: '3z93r9',
+          points: 2,
+          q: 'Napisz dwa zdania o życiu szkolnym: jedno z frazeologizmem „syzyfowa praca”, drugie z frazeologizmem „pięta achillesowa”. Z kontekstu ma wynikać znaczenie każdego z nich.',
+          steps: [
+            '„Syzyfowa praca” to praca ciężka i daremna, która nie przynosi efektu (od mitu o Syzyfie).',
+            '„Pięta achillesowa” to czyjś słaby punkt (od mitu o Achillesie).',
+            'Zdanie ma pokazywać sens: np. coś trzeba ciągle robić od nowa / coś jest czyjąś słabością.',
+          ],
+          answer: 'Sprzątanie szatni, w której wszyscy rzucają buty na podłogę, to syzyfowa praca – po każdej przerwie znów jest bałagan. Ortografia to moja pięta achillesowa: z każdego dyktanda tracę punkty za „ó” i „u”.',
+          scoring: [
+            '1 pkt – poprawne użycie jednego frazeologizmu, znaczenie jasne z kontekstu.',
+            '2 pkt – poprawne użycie drugiego frazeologizmu, znaczenie jasne z kontekstu.',
+          ],
+        },
+        {
+          id: 'lz70he',
+          points: 2,
+          q: 'Ułóż dwa zdania, w których wyraz „zamek” będzie miał dwa różne znaczenia. Jak nazywamy takie wyrazy?',
+          steps: [
+            'Ten sam wyraz może mieć kilka niezwiązanych ze sobą znaczeń: zamek – budowla, zamek w drzwiach, zamek błyskawiczny.',
+            'W każdym zdaniu kontekst musi jednoznacznie wskazywać znaczenie.',
+            'Wyrazy o tym samym brzmieniu i różnych znaczeniach to homonimy.',
+          ],
+          answer: 'Na wycieczce zwiedzaliśmy średniowieczny zamek. Zepsuł mi się zamek w kurtce i nie mogłem jej zapiąć. Takie wyrazy to homonimy.',
+          scoring: [
+            '1 pkt – dwa zdania z wyrazem „zamek” w różnych, jasnych z kontekstu znaczeniach.',
+            '2 pkt – poprawna nazwa: homonimy.',
+          ],
+        },
       ],
     },
     {
@@ -662,6 +822,38 @@ window.SUBJECTS.push({
         { id: 'qpv1b4', q: 'Prawda czy fałsz?\nWołacz (np. „Aniu”) oddzielamy w zdaniu przecinkiem.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0 },
         { id: 'sk90tf', q: 'Prawda czy fałsz?\nPrzed pojedynczym spójnikiem „oraz” nie stawiamy przecinka.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0 },
       ],
+      tasks: [
+        {
+          id: 'ts060h',
+          points: 2,
+          q: 'Przepisz zdanie, wstawiając przecinki, i uzasadnij jeden z nich: „Kiedy wróciłem do domu okazało się że nikt nie pamiętał o moich urodzinach.”',
+          steps: [
+            'Znajdź orzeczenia: wróciłem, okazało się, nie pamiętał – są trzy zdania składowe.',
+            'Zdania składowe w zdaniu złożonym oddzielamy przecinkami: po „do domu” i przed „że”.',
+            'Uzasadnienie: przecinek stawiamy przed spójnikiem „że”, który wprowadza zdanie podrzędne; przecinek oddziela też zdanie podrzędne „Kiedy wróciłem do domu” od nadrzędnego.',
+          ],
+          answer: 'Kiedy wróciłem do domu, okazało się, że nikt nie pamiętał o moich urodzinach. (Przecinek przed „że”, bo spójnik ten rozpoczyna zdanie podrzędne).',
+          scoring: [
+            '1 pkt – oba przecinki postawione poprawnie.',
+            '2 pkt – poprawne uzasadnienie jednego z przecinków (oddziela zdania składowe / stoi przed spójnikiem „że”).',
+          ],
+        },
+        {
+          id: '8vauku',
+          points: 2,
+          q: 'Zapisz poprawnie, z odpowiednimi znakami interpunkcyjnymi, wypowiedź w mowie niezależnej: nauczycielka powiedziała jutro piszemy sprawdzian z ortografii. Potem zapisz to samo w mowie zależnej.',
+          steps: [
+            'Mowa niezależna: po zdaniu wprowadzającym stawiamy dwukropek, a przytoczenie zaczynamy wielką literą i ujmujemy w cudzysłów.',
+            'Kropkę kończącą całe zdanie stawiamy po cudzysłowie zamykającym.',
+            'Mowa zależna: bez dwukropka i cudzysłowu, ze spójnikiem „że” (przed nim przecinek); osoba czasownika może się zmienić.',
+          ],
+          answer: 'Nauczycielka powiedziała: „Jutro piszemy sprawdzian z ortografii”. Mowa zależna: Nauczycielka powiedziała, że jutro piszemy sprawdzian z ortografii.',
+          scoring: [
+            '1 pkt – poprawny zapis mowy niezależnej (dwukropek, cudzysłów, wielka litera).',
+            '2 pkt – poprawny zapis mowy zależnej (spójnik „że” z przecinkiem, bez cudzysłowu).',
+          ],
+        },
+      ],
     },
     {
       id: 'style-komunikacja',
@@ -717,6 +909,38 @@ window.SUBJECTS.push({
         { id: 'bgnu2z', q: 'Co to jest błąd językowy?', options: ['każdy wyraz potoczny', 'każdy wyraz zapożyczony', 'naruszenie normy językowej', 'pytanie retoryczne'], answer: 2 },
         { id: '63evfd', q: 'Jak najlepiej zacząć e-mail do dyrektorki szkoły?', options: ['Hej!', 'Siema, pani dyrektor!', 'Szanowna Pani Dyrektor,', 'Cześć,'], answer: 2 },
         { id: '9qbctr', q: 'Która wypowiedź jest przykładem manipulacji?', options: ['„Telefon waży 180 g.”', '„Tylko naiwniak nie kupi naszego telefonu!”', '„Sklep jest czynny od 9 do 17.”', '„Cena telefonu wynosi 900 zł.”'], answer: 1, explain: 'Wywiera presję i obraża zamiast podawać argumenty.' },
+      ],
+      tasks: [
+        {
+          id: 'a0awx4',
+          points: 2,
+          q: 'Przeredaguj wiadomość tak, aby można ją było wysłać do dyrektora szkoły: „Siema, chcemy zrobić turniej w kosza, da się w piątek wziąć salę?”',
+          steps: [
+            'Wiadomość do dyrektora to sytuacja oficjalna – potrzebny styl urzędowy/oficjalny, bez kolokwializmów („siema”, „w kosza”, „da się”).',
+            'Dodaj zwroty grzecznościowe: powitanie („Szanowny Panie Dyrektorze”), prośbę, podziękowanie, podpis.',
+            'Podaj konkretnie: kto prosi, o co i kiedy.',
+          ],
+          answer: 'Szanowny Panie Dyrektorze, uczniowie klasy 8b chcieliby zorganizować szkolny turniej koszykówki. Uprzejmie prosimy o zgodę na korzystanie z sali gimnastycznej w piątek po lekcjach. Z góry dziękujemy. Z wyrazami szacunku – Jan Kowalski, w imieniu klasy 8b.',
+          scoring: [
+            '1 pkt – zwroty grzecznościowe odpowiednie wobec dyrektora (powitanie, prośba, pożegnanie/podpis).',
+            '2 pkt – cała wiadomość w stylu oficjalnym, bez kolokwializmów, z jasną prośbą (co, kiedy, kto).',
+          ],
+        },
+        {
+          id: 't7osa0',
+          points: 2,
+          q: 'Samorząd uczniowski organizuje zbiórkę książek dla biblioteki w szpitalu dziecięcym. Napisz ogłoszenie. Wymyśl brakujące szczegóły.',
+          steps: [
+            'Ogłoszenie musi zawierać informacje: kto ogłasza, co się wydarzy (zbiórka książek), gdzie i kiedy, ewentualnie jakie książki przynosić i do kogo się zgłosić.',
+            'Pisz krótko i konkretnie – ogłoszenie ma szybko poinformować.',
+            'Można dodać zachętę, ale bez zbędnych opisów.',
+          ],
+          answer: 'OGŁOSZENIE. Samorząd Uczniowski zbiera książki dla biblioteki w szpitalu dziecięcym. Przynoś książki dla dzieci i młodzieży w dobrym stanie od 4 do 15 marca, codziennie na długiej przerwie, do świetlicy (sala 5). Pytania: Ola Nowak, 8a. Dziękujemy!',
+          scoring: [
+            '1 pkt – wszystkie niezbędne informacje: kto ogłasza, co, gdzie, kiedy.',
+            '2 pkt – tekst ma formę ogłoszenia: zwięzły, rzeczowy, bez zbędnych informacji.',
+          ],
+        },
       ],
     },
     {
@@ -785,6 +1009,23 @@ window.SUBJECTS.push({
         { id: 'eu17dq', q: 'Komizm słowny polega na…', options: ['śmiesznych sytuacjach', 'zabawnym języku postaci', 'śmiesznym wyglądzie postaci', 'smutnym zakończeniu'], answer: 1 },
         { id: 'qt0n1u', q: 'Relacja z prawdziwych wydarzeń oparta na faktach, z elementami opisu, to…', options: ['wywiad', 'reportaż', 'fraszka', 'tren'], answer: 1 },
       ],
+      tasks: [
+        {
+          id: 'tp2ym5',
+          points: 2,
+          q: 'Uzasadnij, że „Zemsta” Aleksandra Fredry jest komedią. Podaj dwie cechy komedii i do każdej przykład z utworu.',
+          steps: [
+            'Komedia to gatunek dramatu, który ma bawić widza i zwykle kończy się szczęśliwie.',
+            'Źródłem śmiechu jest komizm: postaci (śmieszne cechy bohatera), sytuacji (zabawne wydarzenia), słowa (język bohaterów).',
+            'Dobierz przykłady: Papkin – tchórzliwy samochwała (komizm postaci); spór o mur kończy się szczęśliwie – miłością Wacława i Klary.',
+          ],
+          answer: '1) Komizm postaci – Papkin to tchórzliwy samochwała: przechwala się odwagą, a w czasie bójki się chowa. 2) Szczęśliwe zakończenie – spór Cześnika i Rejenta o mur kończy miłość Wacława i Klary. Utwór jest też dramatem: ma akty, sceny i didaskalia.',
+          scoring: [
+            '1 pkt – jedna cecha komedii poprawnie nazwana i zilustrowana przykładem z „Zemsty”.',
+            '2 pkt – druga cecha komedii poprawnie nazwana i zilustrowana przykładem z „Zemsty”.',
+          ],
+        },
+      ],
     },
     {
       id: 'formy-wypowiedzi',
@@ -851,6 +1092,24 @@ window.SUBJECTS.push({
         { id: 'y7d040', q: 'Ile najwyżej błędów ortograficznych może mieć wypracowanie, żeby dostać 2 pkt za ortografię?', options: ['3', '5', '9', '1'], answer: 3 },
         { id: '498n8q', q: 'Czym zwykle kończy się przemówienie?', options: ['apelem do słuchaczy i podziękowaniem za uwagę', 'puentą jak we fraszce', 'podpisem i datą', 'inwokacją'], answer: 0 },
         { id: 'ix1jns', q: 'Polecenie wymaga opowiadania, a ty napiszesz rozprawkę. Co się stanie?', options: ['stracisz 1 punkt', 'cała praca dostanie 0 pkt', 'nic – liczy się tylko długość', 'stracisz tylko punkty za styl'], answer: 1, explain: 'Forma niezgodna z poleceniem to 0 pkt za realizację tematu, a wtedy 0 pkt za całe wypracowanie.' },
+      ],
+      tasks: [
+        {
+          id: 'i8d716',
+          points: 3,
+          q: 'Temat rozprawki: „Czy człowiek może się zmienić?”. Sformułuj tezę i napisz jeden akapit z argumentem i przykładem z „Opowieści wigilijnej” Karola Dickensa.',
+          steps: [
+            'Teza to twoje stanowisko – zdanie twierdzące, które odpowiada na pytanie z tematu.',
+            'Argument to uzasadnienie tezy (dlaczego tak uważasz). Przykład to konkretna sytuacja, która argument potwierdza.',
+            'W „Opowieści wigilijnej” skąpy Ebenezer Scrooge po wizytach duchów przemienia się w człowieka dobrego i hojnego – to przykład do argumentu o przemianie.',
+          ],
+          answer: 'Teza: Uważam, że człowiek może się zmienić. Argument: Przeżycia, które pozwalają spojrzeć na własne życie z boku, mogą zmienić czyjąś postawę. Przykład: Ebenezer Scrooge z „Opowieści wigilijnej” był skąpy i nieczuły, ale po wizytach duchów zrozumiał swoje błędy i stał się człowiekiem dobrym i hojnym.',
+          scoring: [
+            '1 pkt – teza: jasne stanowisko w sprawie z tematu.',
+            '2 pkt – argument logicznie uzasadniający tezę (a nie sam przykład).',
+            '3 pkt – trafny przykład z „Opowieści wigilijnej” powiązany z argumentem.',
+          ],
+        },
       ],
     },
   ],
