@@ -39,6 +39,9 @@ A – pełny materiał (lekcje, ściąga, fiszki, quiz, zadania). B – ściąga
 ## Etapy
 
 - [x] Etap 1: matematyka i przyroda – pierwsze działy (wybór redakcyjny z bloku kl. IV–VI; kolejność można dopasować do podręcznika dziecka).
+  - Matematyka (7 działów, 69 fiszek, 111 pytań, 35 kroków lekcji): liczby naturalne (dz. 1 wym. 1–2); działania (dz. 1 wym. 9–15, 36–37); długość, masa, czas i pieniądze (dz. 2 wym. 1–2, 7–9, 13); proste, odcinki i kąty (dz. 4 wym. 1–3, dz. 2 wym. 3); wielokąty, prostokąt i kwadrat, koło i okrąg (dz. 4 wym. 5–6, 11, 14–15 – tylko prostokąt i kwadrat); ułamki zwykłe – pierwsze kroki (dz. 1 wym. 17–18, 20, 26, 31); tabele i diagramy (dz. 5 wym. 1–2).
+  - Przyroda (6 działów, 60 fiszek, 96 pytań, 30 kroków lekcji): jak poznajemy przyrodę (dz. 1 wym. 2–6); kierunki, kompas, plan i mapa (dz. 1 wym. 3, 7, dz. 2 wym. 13, dz. 5 wym. 4, 6, 18); przyroda ożywiona i nieożywiona, rośliny (dz. 2 wym. 1–2, 12, dz. 4 wym. 1, 5); zwierzęta i grzyby (dz. 2 wym. 3–5, dz. 4 wym. 9); woda i stany skupienia (dz. 3 wym. 2–5, dz. 5 wym. 27); pogoda (dz. 5 wym. 10–11, 13).
+  - Kolejne działy matematyki (np. podzielność, ułamki dziesiętne, liczby całkowite, procenty, pola innych figur, bryły) i przyrody (np. pozostałe wymagania dz. 3–6) – w następnych etapach.
 - [ ] Etap 2: polski i angielski.
 - [ ] Etap 3: historia (dz. 1–4), informatyka, zajęcia praktyczno-techniczne (ruch drogowy).
 - [ ] Etap 4: muzyka, plastyka, WF (wiedza).

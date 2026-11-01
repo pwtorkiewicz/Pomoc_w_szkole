@@ -20,9 +20,8 @@ window.TRACKS = [
     page: 'klasa4.html',
     icon: '🎨',
     name: 'Klasa 4',
-    about: 'Wszystkie przedmioty klasy 4 – lekcje, ściągi, fiszki i quizy.',
+    about: 'Matematyka i przyroda według nowej podstawy programowej – lekcje, ściągi, fiszki i quizy. Kolejne przedmioty wkrótce.',
     storeKey: 'pomoc_kl4_v1',
-    soon: true, // usuń, gdy w ścieżce pojawią się pierwsze materiały
     color: '#2e9e6b',
   },
   {

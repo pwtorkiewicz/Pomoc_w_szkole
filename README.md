@@ -5,7 +5,7 @@ Pomoc naukowa dla uczniów szkoły podstawowej. Na starcie uczeń wybiera **ści
 | Ścieżka | Strona | Stan |
 |---|---|---|
 | 🧸 Klasa 3 | `klasa3.html` | w przygotowaniu |
-| 🎨 Klasa 4 – wszystkie przedmioty | `klasa4.html` | w przygotowaniu |
+| 🎨 Klasa 4 – wszystkie przedmioty | `klasa4.html` | matematyka (7 działów) i przyroda (6 działów); kolejne przedmioty w przygotowaniu |
 | 🔬 Klasa 8 – wszystkie przedmioty (bieżąca nauka) | `klasa8.html` | w przygotowaniu |
 | 🎯 Egzamin ósmoklasisty | `egzamin.html` | gotowa (opis poniżej) |
 
