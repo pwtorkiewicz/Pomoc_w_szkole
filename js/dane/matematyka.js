@@ -77,6 +77,160 @@ window.SUBJECTS.push({
         { id: '5g8n5a', q: 'Ułamek 3/8 w postaci dziesiętnej to…', options: ['0,38', '0,0375', '3,8', '0,375'], answer: 3, explain: '3 : 8 = 0,375.' },
         { id: '15a5rk', q: 'Ile wynosi 1,5 : 0,03?', options: ['5', '0,5', '50', '500'], answer: 2, explain: 'Mnożymy obie liczby przez 100: 150 : 3 = 50.' },
         { id: 'd6dutu', q: 'Prawda czy fałsz?\nLiczba 1 jest liczbą pierwszą.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Liczba pierwsza ma dokładnie dwa dzielniki, a 1 ma tylko jeden. Liczba 1 nie jest ani pierwsza, ani złożona.' },
+        {
+          id: 'f30czf',
+          q: 'Na osi liczbowej zaznaczono zbiór liczb. Który warunek opisuje ten zbiór?',
+          svg: `<svg viewBox="0 0 370 90" role="img" aria-label="Oś liczbowa od −3 do 3. Zamalowane kółko w punkcie −1 i pogrubiona linia ze strzałką w prawo">
+      <line x1="20" y1="40" x2="350" y2="40" class="ln"/>
+      <polyline points="341,35 350,40 341,45" class="ln"/>
+      <line x1="45" y1="35" x2="45" y2="45" class="ln"/>
+      <text x="45" y="66" class="tx" text-anchor="middle">−3</text>
+      <line x1="90" y1="35" x2="90" y2="45" class="ln"/>
+      <text x="90" y="66" class="tx" text-anchor="middle">−2</text>
+      <line x1="135" y1="35" x2="135" y2="45" class="ln"/>
+      <text x="135" y="66" class="tx" text-anchor="middle">−1</text>
+      <line x1="180" y1="33" x2="180" y2="47" class="ln"/>
+      <text x="180" y="66" class="tx" text-anchor="middle">0</text>
+      <line x1="225" y1="35" x2="225" y2="45" class="ln"/>
+      <text x="225" y="66" class="tx" text-anchor="middle">1</text>
+      <line x1="270" y1="35" x2="270" y2="45" class="ln"/>
+      <text x="270" y="66" class="tx" text-anchor="middle">2</text>
+      <line x1="315" y1="35" x2="315" y2="45" class="ln"/>
+      <text x="315" y="66" class="tx" text-anchor="middle">3</text>
+      <line x1="135" y1="40" x2="349" y2="40" class="ln s1 sw"/>
+      <polyline points="341,35 350,40 341,45" class="ln s1 sw"/>
+      <circle cx="135" cy="40" r="6" class="t1"/>
+    </svg>`,
+          options: ['x ≥ −1', 'x > −1', 'x ≤ −1', 'x < −1'],
+          answer: 0,
+          explain: 'Kółko jest zamalowane, więc −1 należy do zbioru, a linia biegnie w prawo – do liczb większych. Zatem x ≥ −1.',
+        },
+        {
+          id: 'gr5e2w',
+          q: 'Punkty A i B leżą w punktach kratowych układu współrzędnych (rysunek). Jakie współrzędne ma środek odcinka AB?',
+          svg: `<svg viewBox="0 0 320 250" role="img" aria-label="Układ współrzędnych z kratką. Odcinek AB, gdzie A = (−2, 1) i B = (4, 5)">
+      <line x1="40" y1="26" x2="40" y2="236" class="ln-thin"/>
+      <line x1="70" y1="26" x2="70" y2="236" class="ln-thin"/>
+      <line x1="100" y1="26" x2="100" y2="236" class="ln-thin"/>
+      <line x1="130" y1="26" x2="130" y2="236" class="ln-thin"/>
+      <line x1="160" y1="26" x2="160" y2="236" class="ln-thin"/>
+      <line x1="190" y1="26" x2="190" y2="236" class="ln-thin"/>
+      <line x1="220" y1="26" x2="220" y2="236" class="ln-thin"/>
+      <line x1="250" y1="26" x2="250" y2="236" class="ln-thin"/>
+      <line x1="280" y1="26" x2="280" y2="236" class="ln-thin"/>
+      <line x1="40" y1="236" x2="280" y2="236" class="ln-thin"/>
+      <line x1="40" y1="206" x2="280" y2="206" class="ln-thin"/>
+      <line x1="40" y1="176" x2="280" y2="176" class="ln-thin"/>
+      <line x1="40" y1="146" x2="280" y2="146" class="ln-thin"/>
+      <line x1="40" y1="116" x2="280" y2="116" class="ln-thin"/>
+      <line x1="40" y1="86" x2="280" y2="86" class="ln-thin"/>
+      <line x1="40" y1="56" x2="280" y2="56" class="ln-thin"/>
+      <line x1="40" y1="26" x2="280" y2="26" class="ln-thin"/>
+      <line x1="40" y1="206" x2="294" y2="206" class="ln"/>
+      <polyline points="285,201 294,206 285,211" class="ln"/>
+      <line x1="130" y1="236" x2="130" y2="12" class="ln"/>
+      <polyline points="125,21 130,12 135,21" class="ln"/>
+      <text x="292" y="198" class="tx-s">x</text>
+      <text x="138" y="20" class="tx-s">y</text>
+      <rect x="31" y="210" width="18" height="14" class="bg"/>
+      <text x="40" y="221" class="tx-s" text-anchor="middle">−3</text>
+      <rect x="61" y="210" width="18" height="14" class="bg"/>
+      <text x="70" y="221" class="tx-s" text-anchor="middle">−2</text>
+      <rect x="91" y="210" width="18" height="14" class="bg"/>
+      <text x="100" y="221" class="tx-s" text-anchor="middle">−1</text>
+      <rect x="154.8" y="210" width="10.5" height="14" class="bg"/>
+      <text x="160" y="221" class="tx-s" text-anchor="middle">1</text>
+      <rect x="184.8" y="210" width="10.5" height="14" class="bg"/>
+      <text x="190" y="221" class="tx-s" text-anchor="middle">2</text>
+      <rect x="214.8" y="210" width="10.5" height="14" class="bg"/>
+      <text x="220" y="221" class="tx-s" text-anchor="middle">3</text>
+      <rect x="244.8" y="210" width="10.5" height="14" class="bg"/>
+      <text x="250" y="221" class="tx-s" text-anchor="middle">4</text>
+      <rect x="274.8" y="210" width="10.5" height="14" class="bg"/>
+      <text x="280" y="221" class="tx-s" text-anchor="middle">5</text>
+      <rect x="108" y="229" width="18" height="14" class="bg"/>
+      <text x="125" y="240" class="tx-s" text-anchor="end">−1</text>
+      <rect x="115.5" y="169" width="10.5" height="14" class="bg"/>
+      <text x="125" y="180" class="tx-s" text-anchor="end">1</text>
+      <rect x="115.5" y="139" width="10.5" height="14" class="bg"/>
+      <text x="125" y="150" class="tx-s" text-anchor="end">2</text>
+      <rect x="115.5" y="109" width="10.5" height="14" class="bg"/>
+      <text x="125" y="120" class="tx-s" text-anchor="end">3</text>
+      <rect x="115.5" y="79" width="10.5" height="14" class="bg"/>
+      <text x="125" y="90" class="tx-s" text-anchor="end">4</text>
+      <rect x="115.5" y="49" width="10.5" height="14" class="bg"/>
+      <text x="125" y="60" class="tx-s" text-anchor="end">5</text>
+      <rect x="115.5" y="19" width="10.5" height="14" class="bg"/>
+      <text x="125" y="30" class="tx-s" text-anchor="end">6</text>
+      <rect x="115.5" y="210" width="10.5" height="14" class="bg"/>
+      <text x="125" y="221" class="tx-s" text-anchor="end">0</text>
+      <line x1="70" y1="176" x2="250" y2="56" class="ln s1 sw"/>
+      <circle cx="70" cy="176" r="5" class="t1"/>
+      <circle cx="250" cy="56" r="5" class="t1"/>
+      <text x="60" y="168" class="tx-b" text-anchor="end">A</text>
+      <text x="258" y="50" class="tx-b">B</text>
+    </svg>`,
+          options: ['(1, 3)', '(3, 2)', '(2, 3)', '(1, 2)'],
+          answer: 0,
+          explain: 'Z rysunku A = (−2, 1), B = (4, 5). Środek: ((−2 + 4)/2, (1 + 5)/2) = (1, 3).',
+        },
+        {
+          id: '8ypgvh',
+          q: 'Punkty A i B leżą w punktach kratowych układu współrzędnych (rysunek). Jaka jest długość odcinka AB?',
+          svg: `<svg viewBox="0 0 300 230" role="img" aria-label="Układ współrzędnych z kratką. Odcinek AB, gdzie A = (−2, −1) i B = (2, 2)">
+      <line x1="50" y1="28" x2="50" y2="198" class="ln-thin"/>
+      <line x1="84" y1="28" x2="84" y2="198" class="ln-thin"/>
+      <line x1="118" y1="28" x2="118" y2="198" class="ln-thin"/>
+      <line x1="152" y1="28" x2="152" y2="198" class="ln-thin"/>
+      <line x1="186" y1="28" x2="186" y2="198" class="ln-thin"/>
+      <line x1="220" y1="28" x2="220" y2="198" class="ln-thin"/>
+      <line x1="254" y1="28" x2="254" y2="198" class="ln-thin"/>
+      <line x1="50" y1="198" x2="254" y2="198" class="ln-thin"/>
+      <line x1="50" y1="164" x2="254" y2="164" class="ln-thin"/>
+      <line x1="50" y1="130" x2="254" y2="130" class="ln-thin"/>
+      <line x1="50" y1="96" x2="254" y2="96" class="ln-thin"/>
+      <line x1="50" y1="62" x2="254" y2="62" class="ln-thin"/>
+      <line x1="50" y1="28" x2="254" y2="28" class="ln-thin"/>
+      <line x1="50" y1="130" x2="268" y2="130" class="ln"/>
+      <polyline points="259,125 268,130 259,135" class="ln"/>
+      <line x1="152" y1="198" x2="152" y2="14" class="ln"/>
+      <polyline points="147,23 152,14 157,23" class="ln"/>
+      <text x="266" y="122" class="tx-s">x</text>
+      <text x="160" y="22" class="tx-s">y</text>
+      <rect x="41" y="134" width="18" height="14" class="bg"/>
+      <text x="50" y="145" class="tx-s" text-anchor="middle">−3</text>
+      <rect x="75" y="134" width="18" height="14" class="bg"/>
+      <text x="84" y="145" class="tx-s" text-anchor="middle">−2</text>
+      <rect x="109" y="134" width="18" height="14" class="bg"/>
+      <text x="118" y="145" class="tx-s" text-anchor="middle">−1</text>
+      <rect x="180.8" y="134" width="10.5" height="14" class="bg"/>
+      <text x="186" y="145" class="tx-s" text-anchor="middle">1</text>
+      <rect x="214.8" y="134" width="10.5" height="14" class="bg"/>
+      <text x="220" y="145" class="tx-s" text-anchor="middle">2</text>
+      <rect x="248.8" y="134" width="10.5" height="14" class="bg"/>
+      <text x="254" y="145" class="tx-s" text-anchor="middle">3</text>
+      <rect x="130" y="191" width="18" height="14" class="bg"/>
+      <text x="147" y="202" class="tx-s" text-anchor="end">−2</text>
+      <rect x="130" y="157" width="18" height="14" class="bg"/>
+      <text x="147" y="168" class="tx-s" text-anchor="end">−1</text>
+      <rect x="137.5" y="89" width="10.5" height="14" class="bg"/>
+      <text x="147" y="100" class="tx-s" text-anchor="end">1</text>
+      <rect x="137.5" y="55" width="10.5" height="14" class="bg"/>
+      <text x="147" y="66" class="tx-s" text-anchor="end">2</text>
+      <rect x="137.5" y="21" width="10.5" height="14" class="bg"/>
+      <text x="147" y="32" class="tx-s" text-anchor="end">3</text>
+      <rect x="137.5" y="134" width="10.5" height="14" class="bg"/>
+      <text x="147" y="145" class="tx-s" text-anchor="end">0</text>
+      <line x1="84" y1="164" x2="220" y2="62" class="ln s1 sw"/>
+      <circle cx="84" cy="164" r="5" class="t1"/>
+      <circle cx="220" cy="62" r="5" class="t1"/>
+      <text x="76" y="184" class="tx-b" text-anchor="end">A</text>
+      <text x="228" y="56" class="tx-b">B</text>
+    </svg>`,
+          options: ['5', '7', '4', '√7'],
+          answer: 0,
+          explain: 'A = (−2, −1), B = (2, 2). Różnice współrzędnych: 2 − (−2) = 4 i 2 − (−1) = 3, więc |AB| = √(4² + 3²) = √25 = 5.',
+        },
       ],
       tasks: [
         {
@@ -107,6 +261,110 @@ window.SUBJECTS.push({
           scoring: [
             '1 pkt – zapisanie, jak wyglądają cyfry liczby 10¹⁵ + 8 (jedynka, zera, ósemka).',
             '2 pkt – obliczenie sumy cyfr i powołanie się na cechę podzielności przez 9.',
+          ],
+        },
+        {
+          id: 'xrloo7',
+          points: 3,
+          q: 'Punkt S = (1, −1) jest środkiem odcinka AB, a A = (−3, 2) (rysunek). Wyznacz współrzędne punktu B i oblicz długość odcinka AB.',
+          svg: `<svg viewBox="0 0 340 248" role="img" aria-label="Układ współrzędnych z kratką. Punkt A = (−3, 2) i punkt S = (1, −1), środek odcinka AB">
+      <line x1="30" y1="26" x2="30" y2="234" class="ln-thin"/>
+      <line x1="56" y1="26" x2="56" y2="234" class="ln-thin"/>
+      <line x1="82" y1="26" x2="82" y2="234" class="ln-thin"/>
+      <line x1="108" y1="26" x2="108" y2="234" class="ln-thin"/>
+      <line x1="134" y1="26" x2="134" y2="234" class="ln-thin"/>
+      <line x1="160" y1="26" x2="160" y2="234" class="ln-thin"/>
+      <line x1="186" y1="26" x2="186" y2="234" class="ln-thin"/>
+      <line x1="212" y1="26" x2="212" y2="234" class="ln-thin"/>
+      <line x1="238" y1="26" x2="238" y2="234" class="ln-thin"/>
+      <line x1="264" y1="26" x2="264" y2="234" class="ln-thin"/>
+      <line x1="290" y1="26" x2="290" y2="234" class="ln-thin"/>
+      <line x1="30" y1="234" x2="290" y2="234" class="ln-thin"/>
+      <line x1="30" y1="208" x2="290" y2="208" class="ln-thin"/>
+      <line x1="30" y1="182" x2="290" y2="182" class="ln-thin"/>
+      <line x1="30" y1="156" x2="290" y2="156" class="ln-thin"/>
+      <line x1="30" y1="130" x2="290" y2="130" class="ln-thin"/>
+      <line x1="30" y1="104" x2="290" y2="104" class="ln-thin"/>
+      <line x1="30" y1="78" x2="290" y2="78" class="ln-thin"/>
+      <line x1="30" y1="52" x2="290" y2="52" class="ln-thin"/>
+      <line x1="30" y1="26" x2="290" y2="26" class="ln-thin"/>
+      <line x1="30" y1="104" x2="304" y2="104" class="ln"/>
+      <polyline points="295,99 304,104 295,109" class="ln"/>
+      <line x1="134" y1="234" x2="134" y2="12" class="ln"/>
+      <polyline points="129,21 134,12 139,21" class="ln"/>
+      <text x="302" y="96" class="tx-s">x</text>
+      <text x="142" y="20" class="tx-s">y</text>
+      <rect x="21" y="108" width="18" height="14" class="bg"/>
+      <text x="30" y="119" class="tx-s" text-anchor="middle">−4</text>
+      <rect x="47" y="108" width="18" height="14" class="bg"/>
+      <text x="56" y="119" class="tx-s" text-anchor="middle">−3</text>
+      <rect x="73" y="108" width="18" height="14" class="bg"/>
+      <text x="82" y="119" class="tx-s" text-anchor="middle">−2</text>
+      <rect x="99" y="108" width="18" height="14" class="bg"/>
+      <text x="108" y="119" class="tx-s" text-anchor="middle">−1</text>
+      <rect x="154.8" y="108" width="10.5" height="14" class="bg"/>
+      <text x="160" y="119" class="tx-s" text-anchor="middle">1</text>
+      <rect x="180.8" y="108" width="10.5" height="14" class="bg"/>
+      <text x="186" y="119" class="tx-s" text-anchor="middle">2</text>
+      <rect x="206.8" y="108" width="10.5" height="14" class="bg"/>
+      <text x="212" y="119" class="tx-s" text-anchor="middle">3</text>
+      <rect x="232.8" y="108" width="10.5" height="14" class="bg"/>
+      <text x="238" y="119" class="tx-s" text-anchor="middle">4</text>
+      <rect x="258.8" y="108" width="10.5" height="14" class="bg"/>
+      <text x="264" y="119" class="tx-s" text-anchor="middle">5</text>
+      <rect x="284.8" y="108" width="10.5" height="14" class="bg"/>
+      <text x="290" y="119" class="tx-s" text-anchor="middle">6</text>
+      <rect x="112" y="227" width="18" height="14" class="bg"/>
+      <text x="129" y="238" class="tx-s" text-anchor="end">−5</text>
+      <rect x="112" y="201" width="18" height="14" class="bg"/>
+      <text x="129" y="212" class="tx-s" text-anchor="end">−4</text>
+      <rect x="112" y="175" width="18" height="14" class="bg"/>
+      <text x="129" y="186" class="tx-s" text-anchor="end">−3</text>
+      <rect x="112" y="149" width="18" height="14" class="bg"/>
+      <text x="129" y="160" class="tx-s" text-anchor="end">−2</text>
+      <rect x="112" y="123" width="18" height="14" class="bg"/>
+      <text x="129" y="134" class="tx-s" text-anchor="end">−1</text>
+      <rect x="119.5" y="71" width="10.5" height="14" class="bg"/>
+      <text x="129" y="82" class="tx-s" text-anchor="end">1</text>
+      <rect x="119.5" y="45" width="10.5" height="14" class="bg"/>
+      <text x="129" y="56" class="tx-s" text-anchor="end">2</text>
+      <rect x="119.5" y="19" width="10.5" height="14" class="bg"/>
+      <text x="129" y="30" class="tx-s" text-anchor="end">3</text>
+      <rect x="119.5" y="108" width="10.5" height="14" class="bg"/>
+      <text x="129" y="119" class="tx-s" text-anchor="end">0</text>
+      <line x1="56" y1="52" x2="160" y2="130" class="ln s1 sw"/>
+      <circle cx="56" cy="52" r="5" class="t1"/>
+      <circle cx="160" cy="130" r="5" class="t2"/>
+      <text x="54" y="43" class="tx-b" text-anchor="end">A</text>
+      <text x="168" y="150" class="tx-b t2">S</text>
+    </svg>`,
+          steps: [
+            'Współrzędne środka to średnie współrzędnych końców: (−3 + x)/2 = 1 i (2 + y)/2 = −1, gdzie B = (x, y).',
+            '−3 + x = 2, więc x = 5; 2 + y = −2, więc y = −4. Zatem B = (5, −4).',
+            'Różnice współrzędnych punktów A i B: 5 − (−3) = 8 oraz 2 − (−4) = 6.',
+            'Z twierdzenia Pitagorasa: |AB| = √(8² + 6²) = √(64 + 36) = √100 = 10.',
+            'Sprawdzenie: ((−3 + 5)/2, (2 + (−4))/2) = (1, −1) – to punkt S.',
+          ],
+          answer: 'B = (5, −4), |AB| = 10',
+          scoring: [
+            '1 pkt – poprawne zapisanie warunków na środek odcinka albo jedna poprawna współrzędna punktu B.',
+            '2 pkt – B = (5, −4).',
+            '3 pkt – długość odcinka AB = 10.',
+          ],
+        },
+        {
+          id: 'ikjxxa',
+          points: 2,
+          q: 'Kwiaciarka ma 48 róż białych i 36 róż czerwonych. Chce z nich zrobić jak najwięcej jednakowych bukietów (w każdym tyle samo róż białych i tyle samo czerwonych) i wykorzystać wszystkie kwiaty. Ile bukietów zrobi i ile róż każdego koloru będzie w jednym bukiecie?',
+          steps: [
+            'Liczba bukietów musi być dzielnikiem i liczby 48, i liczby 36. Największa taka liczba to NWD(48, 36).',
+            '48 = 2 · 2 · 2 · 2 · 3, 36 = 2 · 2 · 3 · 3, więc NWD(48, 36) = 2 · 2 · 3 = 12.',
+            'W każdym bukiecie: 48 : 12 = 4 róże białe i 36 : 12 = 3 róże czerwone. Sprawdzenie: 12 · 4 = 48, 12 · 3 = 36.',
+          ],
+          answer: '12 bukietów, w każdym 4 róże białe i 3 czerwone.',
+          scoring: [
+            '1 pkt – zauważenie, że trzeba wyznaczyć NWD(48, 36), albo wypisanie wspólnych dzielników liczb 48 i 36.',
+            '2 pkt – odpowiedź: 12 bukietów po 4 róże białe i 3 czerwone.',
           ],
         },
       ],
@@ -198,6 +456,63 @@ window.SUBJECTS.push({
         { id: 'tlww9v', q: 'Ola zjadła 1/4 pizzy, a Tomek 3/8 tej pizzy. Jaka część pizzy została?', options: ['4/12', '3/8', '5/8', '1/2'], answer: 1, explain: 'Zjedli 2/8 + 3/8 = 5/8, więc zostało 1 − 5/8 = 3/8.' },
         { id: '7mh3qm', q: 'Prawda czy fałsz?\nUłamek 5/4 jest większy od 1.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Licznik jest większy od mianownika: 5/4 = 1 1/4.' },
         { id: 'fdvtn2', q: 'Prawda czy fałsz?\nAby dodać dwa ułamki zwykłe, wystarczy dodać ich liczniki i ich mianowniki.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Np. 1/2 + 1/2 = 1, a „dodawanie mianowników” dałoby 2/4. Najpierw sprowadzamy do wspólnego mianownika.' },
+        {
+          id: 'i81ihz',
+          q: 'Jaką liczbę zaznaczono na osi liczbowej literą A?',
+          svg: `<svg viewBox="0 0 380 90" role="img" aria-label="Oś liczbowa od 0 do 2, każdy odcinek jednostkowy podzielony na 3 równe części. Punkt A leży na drugiej kresce za liczbą 1">
+      <line x1="14" y1="50" x2="368" y2="50" class="ln"/>
+      <polyline points="359,45 368,50 359,55" class="ln"/>
+      <line x1="30" y1="43" x2="30" y2="57" class="ln"/>
+      <text x="30" y="76" class="tx" text-anchor="middle">0</text>
+      <line x1="80" y1="45" x2="80" y2="55" class="ln"/>
+      <line x1="130" y1="45" x2="130" y2="55" class="ln"/>
+      <line x1="180" y1="43" x2="180" y2="57" class="ln"/>
+      <text x="180" y="76" class="tx" text-anchor="middle">1</text>
+      <line x1="230" y1="45" x2="230" y2="55" class="ln"/>
+      <line x1="280" y1="45" x2="280" y2="55" class="ln"/>
+      <line x1="330" y1="43" x2="330" y2="57" class="ln"/>
+      <text x="330" y="76" class="tx" text-anchor="middle">2</text>
+      <circle cx="280" cy="50" r="6" class="t1"/>
+      <text x="280" y="30" class="tx-b t1" text-anchor="middle">A</text>
+    </svg>`,
+          options: ['1 2/3', '1 1/3', '1,5', '5/6'],
+          answer: 0,
+          explain: 'Odcinek od 0 do 1 podzielono na 3 równe części, więc jedna część to 1/3. A leży 2 części za liczbą 1: 1 2/3.',
+        },
+        {
+          id: 'k6qk1n',
+          q: 'Prostokąt podzielono na jednakowe kwadraty i część z nich zamalowano (rysunek). Jaką część prostokąta stanowi część NIEzamalowana?',
+          svg: `<svg viewBox="0 0 300 190" role="img" aria-label="Prostokąt 6 na 4 kratki: zamalowany cały górny rząd i 4 kratki drugiego rzędu, razem 10 z 24 kratek">
+      <rect x="30" y="14" width="40" height="40" class="f1 s1"/>
+      <rect x="70" y="14" width="40" height="40" class="f1 s1"/>
+      <rect x="110" y="14" width="40" height="40" class="f1 s1"/>
+      <rect x="150" y="14" width="40" height="40" class="f1 s1"/>
+      <rect x="190" y="14" width="40" height="40" class="f1 s1"/>
+      <rect x="230" y="14" width="40" height="40" class="f1 s1"/>
+      <rect x="30" y="54" width="40" height="40" class="f1 s1"/>
+      <rect x="70" y="54" width="40" height="40" class="f1 s1"/>
+      <rect x="110" y="54" width="40" height="40" class="f1 s1"/>
+      <rect x="150" y="54" width="40" height="40" class="f1 s1"/>
+      <rect x="190" y="54" width="40" height="40" class="ln-thin"/>
+      <rect x="230" y="54" width="40" height="40" class="ln-thin"/>
+      <rect x="30" y="94" width="40" height="40" class="ln-thin"/>
+      <rect x="70" y="94" width="40" height="40" class="ln-thin"/>
+      <rect x="110" y="94" width="40" height="40" class="ln-thin"/>
+      <rect x="150" y="94" width="40" height="40" class="ln-thin"/>
+      <rect x="190" y="94" width="40" height="40" class="ln-thin"/>
+      <rect x="230" y="94" width="40" height="40" class="ln-thin"/>
+      <rect x="30" y="134" width="40" height="40" class="ln-thin"/>
+      <rect x="70" y="134" width="40" height="40" class="ln-thin"/>
+      <rect x="110" y="134" width="40" height="40" class="ln-thin"/>
+      <rect x="150" y="134" width="40" height="40" class="ln-thin"/>
+      <rect x="190" y="134" width="40" height="40" class="ln-thin"/>
+      <rect x="230" y="134" width="40" height="40" class="ln-thin"/>
+      <rect x="30" y="14" width="240" height="160" class="ln"/>
+    </svg>`,
+          options: ['7/12', '5/12', '10/14', '7/10'],
+          answer: 0,
+          explain: 'Prostokąt ma 6 · 4 = 24 kratki, zamalowano 6 + 4 = 10, więc niezamalowanych jest 14: 14/24 = 7/12.',
+        },
       ],
       tasks: [
         {
@@ -229,6 +544,37 @@ window.SUBJECTS.push({
           scoring: [
             '1 pkt – zapisanie, jaka część pieniędzy została (2/5 kwoty) albo poprawne równanie.',
             '2 pkt – poprawna odpowiedź: 300 zł.',
+          ],
+        },
+        {
+          id: 'w0egsq',
+          points: 2,
+          q: 'Na działce 1/3 powierzchni zajmują warzywa, 1/4 – kwiaty, a pozostałą część, o powierzchni 150 m², zajmuje trawnik. Jaką powierzchnię ma cała działka?',
+          steps: [
+            'Warzywa i kwiaty zajmują 1/3 + 1/4 = 4/12 + 3/12 = 7/12 działki.',
+            'Trawnik to 1 − 7/12 = 5/12 działki, czyli 5/12 działki = 150 m².',
+            '1/12 działki to 150 : 5 = 30 m², więc cała działka ma 12 · 30 = 360 m².',
+            'Sprawdzenie: 1/3 · 360 = 120 m², 1/4 · 360 = 90 m²; 120 + 90 + 150 = 360 m².',
+          ],
+          answer: '360 m²',
+          scoring: [
+            '1 pkt – ustalenie, że trawnik zajmuje 5/12 działki.',
+            '2 pkt – wynik: 360 m².',
+          ],
+        },
+        {
+          id: 'p2meah',
+          points: 2,
+          q: 'Kasia kupiła 1,5 kg jabłek po 4,20 zł za kilogram i 0,75 kg sera po 32 zł za kilogram. Zapłaciła banknotem 50 zł. Ile reszty otrzymała?',
+          steps: [
+            'Jabłka: 1,5 · 4,20 = 6,30 zł.',
+            'Ser: 0,75 · 32 = 24 zł.',
+            'Razem: 6,30 + 24 = 30,30 zł. Reszta: 50 − 30,30 = 19,70 zł.',
+          ],
+          answer: '19,70 zł',
+          scoring: [
+            '1 pkt – poprawne obliczenie kosztu jabłek (6,30 zł) i sera (24 zł).',
+            '2 pkt – reszta: 19,70 zł.',
           ],
         },
       ],
@@ -281,6 +627,81 @@ window.SUBJECTS.push({
         { id: 'kcxxx4', q: 'Cenę podniesiono o 20%, a potem nową cenę jeszcze o 10%. O ile procent wzrosła cena w sumie?', options: ['32%', '30%', '22%', '20%'], answer: 0, explain: '1,2 · 1,1 = 1,32 – cena wzrosła o 32%, a nie o 30%.' },
         { id: '6ty3tk', q: 'Oprocentowanie lokaty spadło z 8% do 6%. O ile punktów procentowych spadło?', options: ['o 2', 'o 25', 'o 14', 'o 6'], answer: 0, explain: '8 − 6 = 2 punkty procentowe (procentowo to spadek o 25%).' },
         { id: 'b8nacq', q: 'Prawda czy fałsz?\nGdy cenę obniżymy o 50%, a potem nową cenę podniesiemy o 50%, wrócimy do ceny początkowej.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Np. 100 zł → 50 zł → 75 zł. Podwyżkę liczymy od niższej ceny.' },
+        {
+          id: '3kc8h4',
+          q: 'Diagram przedstawia wyniki ankiety wśród 200 uczniów: jaki sport lubią najbardziej. Ilu uczniów wybrało siatkówkę?',
+          svg: `<svg viewBox="0 0 380 200" role="img" aria-label="Diagram kołowy: piłka nożna 40%, siatkówka 25%, koszykówka 20%, inne 15%">
+      <path d="M95,100 L95,20 A80,80 0 0 1 142,164.7 Z" class="ln f1"/>
+      <path d="M95,100 L142,164.7 A80,80 0 0 1 30.3,147 Z" class="ln f2"/>
+      <path d="M95,100 L30.3,147 A80,80 0 0 1 30.3,53 Z" class="ln f3"/>
+      <path d="M95,100 L30.3,53 A80,80 0 0 1 95,20 Z" class="ln f4"/>
+      <rect x="200" y="42" width="16" height="16" class="ln f1"/>
+      <text x="224" y="56" class="tx">piłka nożna 40%</text>
+      <rect x="200" y="72" width="16" height="16" class="ln f2"/>
+      <text x="224" y="86" class="tx">siatkówka 25%</text>
+      <rect x="200" y="102" width="16" height="16" class="ln f3"/>
+      <text x="224" y="116" class="tx">koszykówka 20%</text>
+      <rect x="200" y="132" width="16" height="16" class="ln f4"/>
+      <text x="224" y="146" class="tx">inne 15%</text>
+    </svg>`,
+          options: ['50', '25', '40', '75'],
+          answer: 0,
+          explain: 'Siatkówkę wybrało 25% uczniów: 0,25 · 200 = 50.',
+        },
+        {
+          id: 'nqll38',
+          q: 'Diagram przedstawia cenę biletu do kina w kolejnych latach. O ile procent wzrosła cena biletu w 2024 roku w porównaniu z 2023 rokiem?',
+          svg: `<svg viewBox="0 0 340 240" role="img" aria-label="Diagram słupkowy ceny biletu: 2023 – 20 zł, 2024 – 25 zł, 2025 – 30 zł">
+      <line x1="50" y1="205" x2="323" y2="205" class="ln-thin"/>
+      <text x="44" y="209" class="tx-s" text-anchor="end">0</text>
+      <line x1="50" y1="176.7" x2="323" y2="176.7" class="ln-thin"/>
+      <text x="44" y="180.7" class="tx-s" text-anchor="end">5</text>
+      <line x1="50" y1="148.3" x2="323" y2="148.3" class="ln-thin"/>
+      <text x="44" y="152.3" class="tx-s" text-anchor="end">10</text>
+      <line x1="50" y1="120" x2="323" y2="120" class="ln-thin"/>
+      <text x="44" y="124" class="tx-s" text-anchor="end">15</text>
+      <line x1="50" y1="91.7" x2="323" y2="91.7" class="ln-thin"/>
+      <text x="44" y="95.7" class="tx-s" text-anchor="end">20</text>
+      <line x1="50" y1="63.3" x2="323" y2="63.3" class="ln-thin"/>
+      <text x="44" y="67.3" class="tx-s" text-anchor="end">25</text>
+      <line x1="50" y1="35" x2="323" y2="35" class="ln-thin"/>
+      <text x="44" y="39" class="tx-s" text-anchor="end">30</text>
+      <rect x="83" y="91.7" width="54" height="113.3" class="f1 s1"/>
+      <text x="110" y="223" class="tx" text-anchor="middle">2023</text>
+      <rect x="168" y="63.3" width="54" height="141.7" class="f1 s1"/>
+      <text x="195" y="223" class="tx" text-anchor="middle">2024</text>
+      <rect x="253" y="35" width="54" height="170" class="f1 s1"/>
+      <text x="280" y="223" class="tx" text-anchor="middle">2025</text>
+      <line x1="50" y1="205" x2="323" y2="205" class="ln"/>
+      <line x1="50" y1="205" x2="50" y2="25" class="ln"/>
+      <text x="8" y="16" class="tx-s">cena (zł)</text>
+    </svg>`,
+          options: ['o 25%', 'o 20%', 'o 5%', 'o 50%'],
+          answer: 0,
+          explain: 'Cena wzrosła o 25 − 20 = 5 zł. Porównujemy z ceną z 2023 roku: 5/20 = 0,25 = 25%.',
+        },
+        {
+          id: 'i0ce5u',
+          q: 'Prawda czy fałsz?\nKuba podzielił 120 zł kieszonkowego tak, jak pokazuje diagram. Na oszczędności przeznaczył 50 zł.',
+          svg: `<svg viewBox="0 0 380 200" role="img" aria-label="Diagram kołowy: oszczędności 45%, kino 25%, książki 20%, słodycze 10%">
+      <path d="M95,100 L95,20 A80,80 0 0 1 119.7,176.1 Z" class="ln f3"/>
+      <path d="M95,100 L119.7,176.1 A80,80 0 0 1 18.9,124.7 Z" class="ln f1"/>
+      <path d="M95,100 L18.9,124.7 A80,80 0 0 1 48,35.3 Z" class="ln f5"/>
+      <path d="M95,100 L48,35.3 A80,80 0 0 1 95,20 Z" class="ln f2"/>
+      <rect x="200" y="42" width="16" height="16" class="ln f3"/>
+      <text x="224" y="56" class="tx">oszczędności 45%</text>
+      <rect x="200" y="72" width="16" height="16" class="ln f1"/>
+      <text x="224" y="86" class="tx">kino 25%</text>
+      <rect x="200" y="102" width="16" height="16" class="ln f5"/>
+      <text x="224" y="116" class="tx">książki 20%</text>
+      <rect x="200" y="132" width="16" height="16" class="ln f2"/>
+      <text x="224" y="146" class="tx">słodycze 10%</text>
+    </svg>`,
+          options: ['Prawda', 'Fałsz'],
+          noShuffle: true,
+          answer: 1,
+          explain: 'Na oszczędności poszło 45% ze 120 zł: 0,45 · 120 = 54 zł, a nie 50 zł.',
+        },
       ],
       tasks: [
         {
@@ -310,6 +731,50 @@ window.SUBJECTS.push({
           scoring: [
             '1 pkt – obliczenie liczby uczniów: 7 i 21.',
             '2 pkt – poprawna odpowiedź: o 200%.',
+          ],
+        },
+        {
+          id: 'fk2osu',
+          points: 2,
+          q: 'Diagram kołowy przedstawia, jak 600 uczniów pewnej szkoły dociera do szkoły. O ilu więcej uczniów przychodzi pieszo, niż przyjeżdża rowerem?',
+          svg: `<svg viewBox="0 0 380 200" role="img" aria-label="Diagram kołowy: pieszo 45%, autobusem 30%, rowerem – brak wartości, samochodem 10%">
+      <path d="M95,100 L95,20 A80,80 0 0 1 119.7,176.1 Z" class="ln f1"/>
+      <path d="M95,100 L119.7,176.1 A80,80 0 0 1 15,100 Z" class="ln f2"/>
+      <path d="M95,100 L15,100 A80,80 0 0 1 48,35.3 Z" class="ln f3"/>
+      <path d="M95,100 L48,35.3 A80,80 0 0 1 95,20 Z" class="ln f4"/>
+      <rect x="200" y="42" width="16" height="16" class="ln f1"/>
+      <text x="224" y="56" class="tx">pieszo 45%</text>
+      <rect x="200" y="72" width="16" height="16" class="ln f2"/>
+      <text x="224" y="86" class="tx">autobusem 30%</text>
+      <rect x="200" y="102" width="16" height="16" class="ln f3"/>
+      <text x="224" y="116" class="tx">rowerem ?</text>
+      <rect x="200" y="132" width="16" height="16" class="ln f4"/>
+      <text x="224" y="146" class="tx">samochodem 10%</text>
+    </svg>`,
+          steps: [
+            'Wszystkie części diagramu dają razem 100%, więc rowerem przyjeżdża 100% − 45% − 30% − 10% = 15% uczniów.',
+            'Pieszo przychodzi 0,45 · 600 = 270 uczniów, a rowerem przyjeżdża 0,15 · 600 = 90 uczniów.',
+            'Różnica: 270 − 90 = 180 (albo od razu: 30% z 600 = 180).',
+          ],
+          answer: 'O 180 uczniów.',
+          scoring: [
+            '1 pkt – obliczenie, że rowerem przyjeżdża 15% uczniów (albo 90 uczniów).',
+            '2 pkt – odpowiedź: o 180 uczniów.',
+          ],
+        },
+        {
+          id: 'rhjykk',
+          points: 2,
+          q: 'Bluza kosztowała 150 zł. Najpierw jej cenę obniżono o 20%, a potem nową cenę obniżono jeszcze o 30 zł. O ile procent cena końcowa jest niższa od ceny początkowej?',
+          steps: [
+            'Po pierwszej obniżce: 150 · 0,8 = 120 zł.',
+            'Po drugiej obniżce: 120 − 30 = 90 zł.',
+            'Cena spadła o 150 − 90 = 60 zł. Porównujemy z ceną początkową: 60/150 = 0,4 = 40%.',
+          ],
+          answer: 'O 40%.',
+          scoring: [
+            '1 pkt – obliczenie ceny końcowej: 90 zł.',
+            '2 pkt – odpowiedź: o 40%.',
           ],
         },
       ],
@@ -374,6 +839,57 @@ window.SUBJECTS.push({
         { id: 'n3fby6', q: 'Która liczba jest większa od 7?', options: ['√50', '√48', '√49', '√45'], answer: 0, explain: '7 = √49, więc większy od 7 jest tylko pierwiastek z liczby większej niż 49.' },
         { id: '5bdfli', q: 'Ile wynosi √8 + √2?', options: ['√10', '4', '3√2', '2√2'], answer: 2, explain: '√8 = √(4 · 2) = 2√2, więc 2√2 + √2 = 3√2.' },
         { id: 'asbsra', q: 'Ile wynosi (2²)³ : 2⁴?', options: ['2', '8', '16', '4'], answer: 3, explain: '(2²)³ = 2⁶, a 2⁶ : 2⁴ = 2² = 4.' },
+        {
+          id: 'e06sqh',
+          q: 'Kwadrat narysowano na kratkach o boku 1 cm (rysunek). Jaka jest długość boku tego kwadratu?',
+          svg: `<svg viewBox="0 0 300 215" role="img" aria-label="Kwadrat o wierzchołkach w punktach kratowych na kratce 4 na 4. Każdy bok idzie o 3 kratki w jednym kierunku i o 1 kratkę w drugim">
+      <polygon points="110,180 230,140 190,20 70,60" class="f1"/>
+      <line x1="70" y1="180" x2="70" y2="20" class="ln-thin"/>
+      <line x1="70" y1="180" x2="230" y2="180" class="ln-thin"/>
+      <line x1="110" y1="180" x2="110" y2="20" class="ln-thin"/>
+      <line x1="70" y1="140" x2="230" y2="140" class="ln-thin"/>
+      <line x1="150" y1="180" x2="150" y2="20" class="ln-thin"/>
+      <line x1="70" y1="100" x2="230" y2="100" class="ln-thin"/>
+      <line x1="190" y1="180" x2="190" y2="20" class="ln-thin"/>
+      <line x1="70" y1="60" x2="230" y2="60" class="ln-thin"/>
+      <line x1="230" y1="180" x2="230" y2="20" class="ln-thin"/>
+      <line x1="70" y1="20" x2="230" y2="20" class="ln-thin"/>
+      <polygon points="110,180 230,140 190,20 70,60" class="ln s1 sw"/>
+      <line x1="70" y1="190" x2="110" y2="190" class="ln-thin"/>
+      <text x="90" y="206" class="tx-s" text-anchor="middle">1 cm</text>
+    </svg>`,
+          options: ['√10 cm', '4 cm', '10 cm', '√8 cm'],
+          answer: 0,
+          explain: 'Każdy bok jest przeciwprostokątną trójkąta prostokątnego o przyprostokątnych 3 cm i 1 cm: √(3² + 1²) = √10 cm.',
+        },
+        {
+          id: 'dcguk3',
+          q: 'Na osi liczbowej pogrubiono odcinek. Która z liczb leży na tym odcinku?',
+          svg: `<svg viewBox="0 0 370 90" role="img" aria-label="Oś liczbowa od 0 do 6 z pogrubionym odcinkiem od 4 do 5">
+      <line x1="14" y1="40" x2="360" y2="40" class="ln"/>
+      <polyline points="351,35 360,40 351,45" class="ln"/>
+      <line x1="30" y1="35" x2="30" y2="45" class="ln"/>
+      <text x="30" y="66" class="tx" text-anchor="middle">0</text>
+      <line x1="80" y1="35" x2="80" y2="45" class="ln"/>
+      <text x="80" y="66" class="tx" text-anchor="middle">1</text>
+      <line x1="130" y1="35" x2="130" y2="45" class="ln"/>
+      <text x="130" y="66" class="tx" text-anchor="middle">2</text>
+      <line x1="180" y1="35" x2="180" y2="45" class="ln"/>
+      <text x="180" y="66" class="tx" text-anchor="middle">3</text>
+      <line x1="230" y1="35" x2="230" y2="45" class="ln"/>
+      <text x="230" y="66" class="tx" text-anchor="middle">4</text>
+      <line x1="280" y1="35" x2="280" y2="45" class="ln"/>
+      <text x="280" y="66" class="tx" text-anchor="middle">5</text>
+      <line x1="330" y1="35" x2="330" y2="45" class="ln"/>
+      <text x="330" y="66" class="tx" text-anchor="middle">6</text>
+      <line x1="230" y1="40" x2="280" y2="40" class="ln s1 sw"/>
+      <circle cx="230" cy="40" r="5" class="t1"/>
+      <circle cx="280" cy="40" r="5" class="t1"/>
+    </svg>`,
+          options: ['√20', '√15', '√26', '√30'],
+          answer: 0,
+          explain: '4 = √16 i 5 = √25, więc na odcinku leżą pierwiastki z liczb od 16 do 25. Z podanych to tylko √20.',
+        },
       ],
       tasks: [
         {
@@ -404,6 +920,36 @@ window.SUBJECTS.push({
           scoring: [
             '1 pkt – poprawny iloczyn 12 · 10³ (lub 12 000).',
             '2 pkt – zapis w notacji wykładniczej: 1,2 · 10⁴.',
+          ],
+        },
+        {
+          id: 'e9h76d',
+          points: 2,
+          q: 'Kwadrat ma pole 72 cm². Oblicz długość jego przekątnej.',
+          steps: [
+            'Bok kwadratu: a² = 72, więc a = √72 = √(36 · 2) = 6√2 cm.',
+            'Przekątna kwadratu: d = a√2 = 6√2 · √2 = 6 · 2 = 12 cm.',
+            'Sprawdzenie: pole kwadratu to też d²/2 = 144/2 = 72 cm².',
+          ],
+          answer: '12 cm',
+          scoring: [
+            '1 pkt – obliczenie boku kwadratu a = 6√2 cm (albo zapisanie równania d²/2 = 72).',
+            '2 pkt – przekątna: 12 cm.',
+          ],
+        },
+        {
+          id: '3i937y',
+          points: 2,
+          q: 'Która z liczb jest większa: 2⁴⁰ czy 3²⁴? Uzasadnij odpowiedź bez obliczania wartości tych potęg.',
+          steps: [
+            'Zapisz obie liczby jako potęgi o tym samym wykładniku. 2⁴⁰ = (2⁵)⁸ = 32⁸, bo 5 · 8 = 40.',
+            '3²⁴ = (3³)⁸ = 27⁸, bo 3 · 8 = 24.',
+            'Obie potęgi mają wykładnik 8, a 32 > 27, więc 32⁸ > 27⁸, czyli 2⁴⁰ > 3²⁴.',
+          ],
+          answer: '2⁴⁰ > 3²⁴',
+          scoring: [
+            '1 pkt – zapisanie obu liczb jako potęg o tym samym wykładniku: 32⁸ i 27⁸.',
+            '2 pkt – porównanie podstaw i wniosek 2⁴⁰ > 3²⁴.',
           ],
         },
       ],
@@ -460,6 +1006,34 @@ window.SUBJECTS.push({
         { id: 'yjjxfv', q: 'Za 3 zeszyty i 2 długopisy zapłacono 17 zł. Długopis kosztuje 4 zł. Ile kosztuje jeden zeszyt?', options: ['4 zł', '2 zł', '3 zł', '5 zł'], answer: 2, explain: '3z + 2 · 4 = 17 → 3z = 9 → z = 3 zł.' },
         { id: '5bi67x', q: 'Obwód prostokąta wynosi 30 cm, a jeden bok jest o 3 cm dłuższy od drugiego. Ile ma krótszy bok?', options: ['7,5 cm', '9 cm', '6 cm', '12 cm'], answer: 2, explain: '2(x + x + 3) = 30 → 2x + 3 = 15 → x = 6. Boki: 6 cm i 9 cm.' },
         { id: '4a43so', q: 'Prawda czy fałsz?\nLiczba 2 jest rozwiązaniem równania 3x − 1 = 2x + 1.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Podstawiamy: 3 · 2 − 1 = 5 i 2 · 2 + 1 = 5 – obie strony są równe.' },
+        {
+          id: 'tocpjk',
+          q: 'Obwód prostokąta z rysunku jest równy 26. Ile wynosi x?',
+          svg: `<svg viewBox="0 0 320 170" role="img" aria-label="Prostokąt o bokach x oraz x + 3">
+      <rect x="60" y="25" width="200" height="110" class="f1 s1 sw"/>
+      <text x="160" y="158" class="tx-b" text-anchor="middle">x + 3</text>
+      <text x="270" y="86" class="tx-b">x</text>
+    </svg>`,
+          options: ['5', '6,5', '10', '4'],
+          answer: 0,
+          explain: '2 · (x + x + 3) = 26 → 4x + 6 = 26 → 4x = 20 → x = 5. Sprawdzenie: 2 · (5 + 8) = 26.',
+        },
+        {
+          id: 'm5m1cp',
+          q: 'Na rysunku przedstawiono figurę, której wszystkie kąty są proste. Dokończ zdanie: obwód tej figury jest równy …, a jej pole jest równe …',
+          svg: `<svg viewBox="0 0 330 200" role="img" aria-label="Figura w kształcie litery L: prostokąt 3a na 2a, z którego wycięto w prawym górnym rogu kwadrat o boku a">
+      <polygon points="70,30 190,30 190,90 250,90 250,150 70,150" class="f3 s3 sw"/>
+      <text x="160" y="174" class="tx-b" text-anchor="middle">3a</text>
+      <text x="60" y="96" class="tx-b" text-anchor="end">2a</text>
+      <text x="130" y="22" class="tx-b" text-anchor="middle">2a</text>
+      <text x="180" y="66" class="tx-b" text-anchor="end">a</text>
+      <text x="220" y="80" class="tx-b" text-anchor="middle">a</text>
+      <text x="260" y="126" class="tx-b">a</text>
+    </svg>`,
+          options: ['10a i 5a²', '8a i 5a²', '10a i 6a²', '12a i 5a²'],
+          answer: 0,
+          explain: 'Obwód: 3a + 2a + 2a + a + a + a = 10a (tyle samo co obwód prostokąta 3a × 2a). Pole: 3a · 2a − a · a = 6a² − a² = 5a².',
+        },
       ],
       tasks: [
         {
@@ -596,9 +1170,73 @@ window.SUBJECTS.push({
         { id: 'gdyvka', q: 'Równoległobok ma bok 8 i wysokość opuszczoną na ten bok 5. Jego pole wynosi…', options: ['20', '26', '13', '40'], answer: 3, explain: 'P = a · h = 8 · 5 = 40.' },
         { id: 'db4gkk', q: 'Ile osi symetrii ma trójkąt równoramienny, który nie jest równoboczny?', options: ['0', '1', '2', '3'], answer: 1 },
         { id: 'cypuel', q: 'Prosta przecina dwie proste równoległe. Jeden z utworzonych kątów ma 48°. Ile ma kąt do niego odpowiadający?', options: ['132°', '48°', '42°', '96°'], answer: 1, explain: 'Kąty odpowiadające przy prostych równoległych są równe.' },
-        { id: '8lexsg', q: 'Który trójkąt o podanych bokach jest prostokątny?', options: ['4, 5, 6', '7, 24, 25', '5, 6, 8', '6, 7, 9'], answer: 1, explain: '7² + 24² = 49 + 576 = 625 = 25². W pozostałych suma kwadratów krótszych boków nie jest równa kwadratowi najdłuższego.' },
         { id: 'j3jkz9', q: 'Okrąg ma długość 12π. Jakie jest pole koła ograniczonego tym okręgiem?', options: ['144π', '36π', '12π', '6π'], answer: 1, explain: '2πr = 12π, więc r = 6, a P = πr² = 36π.' },
         { id: 'k7160s', q: 'Prawda czy fałsz?\nKażdy romb ma 4 osie symetrii.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Tylko romb, który jest kwadratem, ma 4 osie. Pozostałe romby mają 2 osie symetrii.' },
+        {
+          id: 'xhng12',
+          q: 'Trapez prostokątny ma wymiary podane na rysunku. Ile wynosi długość ramienia oznaczonego literą x?',
+          svg: `<svg viewBox="0 0 300 205" role="img" aria-label="Trapez prostokątny: dolna podstawa 10, górna podstawa 4, ramię prostopadłe do podstaw 8, ukośne ramię x">
+      <polygon points="60,175 220,175 124,47 60,47" class="f1 s1 sw"/>
+      <polyline points="60,161 74,161 74,175" class="ln-thin"/>
+      <polyline points="60,61 74,61 74,47" class="ln-thin"/>
+      <text x="140" y="197" class="tx-b" text-anchor="middle">10</text>
+      <text x="92" y="37" class="tx-b" text-anchor="middle">4</text>
+      <text x="50" y="117" class="tx-b" text-anchor="end">8</text>
+      <text x="186" y="111" class="tx-b t1">x</text>
+    </svg>`,
+          options: ['10', '8', '14', '6'],
+          answer: 0,
+          explain: 'Wysokość poprowadzona z górnego wierzchołka odcina trójkąt prostokątny o przyprostokątnych 8 i 10 − 4 = 6. x = √(6² + 8²) = √100 = 10.',
+        },
+        {
+          id: '62oz5z',
+          q: 'Bok AC trójkąta ABC przedłużono poza wierzchołek C. Miary kątów zaznaczono na rysunku. Ile stopni ma kąt ABC?',
+          svg: `<svg viewBox="0 0 340 200" role="img" aria-label="Trójkąt ABC z kątem 50 stopni przy wierzchołku A. Bok AC przedłużony poza C; kąt zewnętrzny przy C ma 120 stopni">
+      <polygon points="40,170 240,170 158.5,28.8" class="f1 s1 sw"/>
+      <line x1="240" y1="170" x2="330" y2="170" class="ln"/>
+      <path d="M70,170 A30,30 0 0 0 59.3,147" class="ln s2"/>
+      <path d="M264,170 A24,24 0 0 0 228,149.2" class="ln s2"/>
+      <text x="87.1" y="154" class="tx t2" text-anchor="middle">50°</text>
+      <text x="262" y="137.9" class="tx t2" text-anchor="middle">120°</text>
+      <text x="158.5" y="64.8" class="tx-b" text-anchor="middle">?</text>
+      <text x="34" y="192" class="tx-b" text-anchor="middle">A</text>
+      <text x="240" y="192" class="tx-b" text-anchor="middle">C</text>
+      <text x="158.5" y="20.8" class="tx-b" text-anchor="middle">B</text>
+    </svg>`,
+          options: ['70°', '60°', '50°', '80°'],
+          answer: 0,
+          explain: 'Kąt wewnętrzny przy C: 180° − 120° = 60° (kąty przyległe). ∠ABC = 180° − 50° − 60° = 70°.',
+        },
+        {
+          id: 'pfrknm',
+          q: 'Na kratkach o boku 1 cm narysowano trójkąt ABC (rysunek). Jakie jest pole tego trójkąta?',
+          svg: `<svg viewBox="0 0 340 200" role="img" aria-label="Trójkąt ABC na kratkach: bok AB poziomy o długości 4 kratek, wierzchołek C 3 kratki wyżej i 3 kratki na prawo od B">
+      <polygon points="26,164 170,164 278,56" class="f2"/>
+      <line x1="26" y1="164" x2="26" y2="20" class="ln-thin"/>
+      <line x1="62" y1="164" x2="62" y2="20" class="ln-thin"/>
+      <line x1="98" y1="164" x2="98" y2="20" class="ln-thin"/>
+      <line x1="134" y1="164" x2="134" y2="20" class="ln-thin"/>
+      <line x1="170" y1="164" x2="170" y2="20" class="ln-thin"/>
+      <line x1="206" y1="164" x2="206" y2="20" class="ln-thin"/>
+      <line x1="242" y1="164" x2="242" y2="20" class="ln-thin"/>
+      <line x1="278" y1="164" x2="278" y2="20" class="ln-thin"/>
+      <line x1="314" y1="164" x2="314" y2="20" class="ln-thin"/>
+      <line x1="26" y1="164" x2="314" y2="164" class="ln-thin"/>
+      <line x1="26" y1="128" x2="314" y2="128" class="ln-thin"/>
+      <line x1="26" y1="92" x2="314" y2="92" class="ln-thin"/>
+      <line x1="26" y1="56" x2="314" y2="56" class="ln-thin"/>
+      <line x1="26" y1="20" x2="314" y2="20" class="ln-thin"/>
+      <polygon points="26,164 170,164 278,56" class="ln s2 sw"/>
+      <text x="28" y="184" class="tx-b">A</text>
+      <text x="170" y="184" class="tx-b" text-anchor="middle">B</text>
+      <text x="286" y="50" class="tx-b">C</text>
+      <line x1="242" y1="192" x2="278" y2="192" class="ln-thin"/>
+      <text x="260" y="188" class="tx-s" text-anchor="middle">1 cm</text>
+    </svg>`,
+          options: ['6 cm²', '10,5 cm²', '12 cm²', '7,5 cm²'],
+          answer: 0,
+          explain: 'Podstawa AB = 4 cm. Wysokość opuszczona z C na prostą AB (poza trójkątem) ma 3 cm. P = 4 · 3 / 2 = 6 cm².',
+        },
       ],
       tasks: [
         {
@@ -646,6 +1284,33 @@ window.SUBJECTS.push({
             '1 pkt – zauważenie, że wysokość trójkąta CDE to połowa przekątnej AC (4 dm).',
             '2 pkt – obliczenie pola dla jednego położenia punktu E.',
             '3 pkt – obie odpowiedzi: 20 dm² i 60 dm².',
+          ],
+        },
+        {
+          id: '46bems',
+          points: 3,
+          q: 'Działka ma kształt trapezu prostokątnego o podstawach 30 m i 18 m. Dłuższe ramię tego trapezu ma 20 m (rysunek). Oblicz pole działki.',
+          svg: `<svg viewBox="0 0 320 210" role="img" aria-label="Trapez prostokątny: dolna podstawa 30 m, górna 18 m, ukośne ramię 20 m, wysokość h nieznana">
+      <polygon points="50,180 260,180 176,68 50,68" class="f3 s3 sw"/>
+      <line x1="176" y1="68" x2="176" y2="180" class="ln dash"/>
+      <polyline points="50,168 62,168 62,180" class="ln-thin"/>
+      <polyline points="50,80 62,80 62,68" class="ln-thin"/>
+      <text x="155" y="202" class="tx-b" text-anchor="middle">30 m</text>
+      <text x="113" y="58" class="tx-b" text-anchor="middle">18 m</text>
+      <text x="232" y="124" class="tx-b">20 m</text>
+      <text x="42" y="130" class="tx-b t2" text-anchor="end">h</text>
+    </svg>`,
+          steps: [
+            'Poprowadź wysokość z wierzchołka krótszej podstawy (linia przerywana). Odcina ona trójkąt prostokątny o przyprostokątnych h i 30 − 18 = 12 m oraz przeciwprostokątnej 20 m.',
+            'Z twierdzenia Pitagorasa: h² + 12² = 20², więc h² = 400 − 144 = 256 i h = 16 m.',
+            'Pole trapezu: P = (30 + 18) · 16 / 2 = 48 · 8 = 384 m².',
+            'Sprawdzenie: 12² + 16² = 144 + 256 = 400 = 20².',
+          ],
+          answer: '384 m²',
+          scoring: [
+            '1 pkt – zauważenie trójkąta prostokątnego o przyprostokątnej 12 m i przeciwprostokątnej 20 m.',
+            '2 pkt – obliczenie wysokości: h = 16 m.',
+            '3 pkt – pole działki: 384 m².',
           ],
         },
       ],
@@ -726,6 +1391,64 @@ window.SUBJECTS.push({
         { id: 'fyz5ay', q: 'Liczbę dwucyfrową o cyfrze dziesiątek a i cyfrze jedności b zapisujemy jako…', options: ['10a + b', 'a + b', 'ab (czyli a · b)', '10b + a'], answer: 0, explain: 'Np. 37 = 10 · 3 + 7.' },
         { id: 'wo527s', q: 'Prawda czy fałsz?\nJeśli dwa trójkąty mają równe wszystkie kąty, to są przystające.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'To za mało: np. trójkąty równoboczne o bokach 2 cm i 5 cm mają równe kąty, ale nie są przystające.' },
         { id: 'm8tyie', q: 'Prawda czy fałsz?\nKąty odpowiadające przy dwóch prostych równoległych przeciętych trzecią prostą są równe.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0 },
+        {
+          id: '2o9z22',
+          q: 'Na rysunku podano długości dwóch boków i miarę jednego kąta w trójkątach ABC i KLM. Na mocy której cechy te trójkąty są przystające?',
+          svg: `<svg viewBox="0 0 440 165" role="img" aria-label="Trójkąt ABC: AB = 6, BC = 4, kąt B = 50 stopni. Trójkąt KLM: KL = 6, LM = 4, kąt L = 50 stopni">
+      <polygon points="198,135 36,135 105.4,52.3" class="f1 s1 sw"/>
+      <polygon points="242,135 404,135 334.6,52.3" class="f3 s3 sw"/>
+      <path d="M58,135 A22,22 0 0 0 50.1,118.1" class="ln s2"/>
+      <path d="M389.9,118.1 A22,22 0 0 0 382,135" class="ln s2"/>
+      <text x="75.9" y="121.4" class="tx-s" text-anchor="middle">50°</text>
+      <text x="364.1" y="121.4" class="tx-s" text-anchor="middle">50°</text>
+      <text x="117" y="157" class="tx-b" text-anchor="middle">6</text>
+      <text x="323" y="157" class="tx-b" text-anchor="middle">6</text>
+      <text x="58.7" y="91.6" class="tx-b" text-anchor="end">4</text>
+      <text x="381.3" y="91.6" class="tx-b">4</text>
+      <text x="38" y="157" class="tx-b" text-anchor="end">B</text>
+      <text x="196" y="157" class="tx-b">A</text>
+      <text x="105.4" y="42.3" class="tx-b" text-anchor="middle">C</text>
+      <text x="402" y="157" class="tx-b">L</text>
+      <text x="244" y="157" class="tx-b" text-anchor="end">K</text>
+      <text x="334.6" y="42.3" class="tx-b" text-anchor="middle">M</text>
+    </svg>`,
+          options: ['bkb', 'bbb', 'kbk', 'nie muszą być przystające'],
+          answer: 0,
+          explain: 'W obu trójkątach są boki 6 i 4 oraz kąt 50° leżący MIĘDZY nimi (przy wierzchołkach B i L) – to cecha bkb.',
+        },
+        {
+          id: '13zywz',
+          q: 'Dwie proste przecinają się. Miary dwóch kątów zapisano na rysunku. Ile wynosi x?',
+          svg: `<svg viewBox="0 0 360 200" role="img" aria-label="Dwie przecinające się proste. Kąt po lewej stronie punktu przecięcia ma miarę 2x + 10 stopni, a kąt po prawej stronie ma miarę 3x − 20 stopni">
+      <line x1="45" y1="32.4" x2="335" y2="167.6" class="ln sw"/>
+      <line x1="105.1" y1="184.9" x2="274.9" y2="15.1" class="ln sw"/>
+      <path d="M166.4,89 A26,26 0 0 0 171.6,118.4" class="ln s2"/>
+      <path d="M213.6,111 A26,26 0 0 0 208.4,81.6" class="ln s2"/>
+      <text x="150" y="110" class="tx t2" text-anchor="end">2x + 10°</text>
+      <text x="230" y="104" class="tx t2">3x − 20°</text>
+    </svg>`,
+          options: ['30°', '38°', '10°', '70°'],
+          answer: 0,
+          explain: 'Zaznaczone kąty są wierzchołkowe, więc są równe: 2x + 10° = 3x − 20°, stąd x = 30°. Sprawdzenie: oba kąty mają 70°.',
+        },
+        {
+          id: '55c8o6',
+          q: 'Proste k i l są równoległe (rysunek). Ile stopni ma kąt α?',
+          svg: `<svg viewBox="0 0 360 210" role="img" aria-label="Dwie równoległe proste k i l przecięte trzecią prostą. Przy prostej k kąt 65 stopni nad prostą, po prawej stronie. Przy prostej l kąt alfa pod prostą, po prawej stronie">
+      <line x1="30" y1="60" x2="320" y2="60" class="ln sw"/>
+      <line x1="30" y1="150" x2="320" y2="150" class="ln sw"/>
+      <line x1="136.9" y1="195.3" x2="219.4" y2="18.3" class="ln"/>
+      <text x="330" y="66" class="tx-b">k</text>
+      <text x="330" y="156" class="tx-b">l</text>
+      <path d="M224,60 A24,24 0 0 0 210.1,38.2" class="ln s2"/>
+      <path d="M148.7,169.9 A22,22 0 0 0 180,150" class="ln s2"/>
+      <text x="235.6" y="43.7" class="tx t2" text-anchor="middle">65°</text>
+      <text x="178.4" y="188" class="tx-b t2" text-anchor="middle">α</text>
+    </svg>`,
+          options: ['115°', '65°', '25°', '130°'],
+          answer: 0,
+          explain: 'Kąt odpowiadający kątowi 65° przy prostej l też ma 65° (proste równoległe). Kąt α jest do niego przyległy: α = 180° − 65° = 115°.',
+        },
       ],
       tasks: [
         {
@@ -893,6 +1616,101 @@ window.SUBJECTS.push({
         { id: 'z0vuze', q: 'Sześcian ma objętość 64 cm³. Jakie jest jego pole powierzchni?', options: ['64 cm²', '96 cm²', '16 cm²', '384 cm²'], answer: 1, explain: 'a³ = 64, więc a = 4 cm; P = 6 · 4² = 96 cm².' },
         { id: 'iar37d', q: 'Graniastosłup prawidłowy trójkątny ma krawędź podstawy 4 i wysokość 10. Jego objętość wynosi…', options: ['160√3', '20√3', '40', '40√3'], answer: 3, explain: 'Pp = 4²√3/4 = 4√3, V = 4√3 · 10 = 40√3.' },
         { id: 'pd11rl', q: 'Prawda czy fałsz?\nOstrosłup trójkątny ma 4 ściany.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'n + 1 = 3 + 1 = 4 (podstawa i 3 ściany boczne).' },
+        {
+          id: 'p6duxk',
+          q: 'Która z figur A–D jest siatką sześcianu?',
+          svg: `<svg viewBox="0 0 400 240" role="img" aria-label="Cztery figury z sześciu kwadratów. A: pięć kwadratów w rzędzie i jeden nad drugim. B: prostokąt 3 na 2. C: cztery w rzędzie i dwa nad pierwszym i trzecim. D: cztery w rzędzie, jeden nad drugim i jeden pod czwartym">
+      <text x="10" y="34" class="tx-b">A</text>
+      <rect x="44" y="46" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="68" y="46" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="92" y="46" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="116" y="46" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="140" y="46" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="68" y="22" width="24" height="24" class="f1 s1 sw"/>
+      <text x="210" y="34" class="tx-b">B</text>
+      <rect x="244" y="22" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="268" y="22" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="292" y="22" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="244" y="46" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="268" y="46" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="292" y="46" width="24" height="24" class="f1 s1 sw"/>
+      <text x="10" y="154" class="tx-b">C</text>
+      <rect x="44" y="166" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="68" y="166" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="92" y="166" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="116" y="166" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="44" y="142" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="92" y="142" width="24" height="24" class="f1 s1 sw"/>
+      <text x="210" y="154" class="tx-b">D</text>
+      <rect x="244" y="166" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="268" y="166" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="292" y="166" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="316" y="166" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="268" y="142" width="24" height="24" class="f1 s1 sw"/>
+      <rect x="316" y="190" width="24" height="24" class="f1 s1 sw"/>
+    </svg>`,
+          options: ['A', 'B', 'C', 'D'],
+          noShuffle: true,
+          answer: 3,
+          explain: 'W D cztery kwadraty w rzędzie tworzą ściany boczne, a dwa pozostałe – po przeciwnych stronach paska – górną i dolną ścianę. W A piąty kwadrat w rzędzie nałoży się na pierwszy, w C oba dodatkowe kwadraty leżą po tej samej stronie paska (oba byłyby górną ścianą), a z prostokąta B nie da się złożyć sześcianu.',
+        },
+        {
+          id: '3l59u2',
+          q: 'Ile krawędzi ma graniastosłup przedstawiony na rysunku?',
+          svg: `<svg viewBox="0 0 400 240" role="img" aria-label="Graniastosłup prosty, którego podstawami są pięciokąty. Krawędzie niewidoczne narysowano linią przerywaną">
+      <polygon points="200,109 95.4,85.5 135.3,47.5 264.7,47.5 304.6,85.5" class="f1 s1 sw"/>
+      <line x1="95.4" y1="205.5" x2="135.3" y2="167.5" class="ln-thin dash"/>
+      <line x1="135.3" y1="167.5" x2="264.7" y2="167.5" class="ln-thin dash"/>
+      <line x1="264.7" y1="167.5" x2="304.6" y2="205.5" class="ln-thin dash"/>
+      <line x1="135.3" y1="167.5" x2="135.3" y2="47.5" class="ln-thin dash"/>
+      <line x1="264.7" y1="167.5" x2="264.7" y2="47.5" class="ln-thin dash"/>
+      <line x1="304.6" y1="205.5" x2="200" y2="229" class="ln s1 sw"/>
+      <line x1="200" y1="229" x2="95.4" y2="205.5" class="ln s1 sw"/>
+      <line x1="200" y1="229" x2="200" y2="109" class="ln s1 sw"/>
+      <line x1="95.4" y1="205.5" x2="95.4" y2="85.5" class="ln s1 sw"/>
+      <line x1="304.6" y1="205.5" x2="304.6" y2="85.5" class="ln s1 sw"/>
+    </svg>`,
+          options: ['15', '10', '12', '7'],
+          answer: 0,
+          explain: 'Podstawą jest pięciokąt (n = 5). Krawędzie: 5 w dolnej podstawie, 5 w górnej i 5 bocznych – razem 3 · 5 = 15.',
+        },
+        {
+          id: 'wlh46k',
+          q: 'Prostopadłościan ma wymiary podane na rysunku. Jaką długość ma zaznaczona przekątna tego prostopadłościanu?',
+          svg: `<svg viewBox="0 0 320 245" role="img" aria-label="Prostopadłościan o krawędziach 4 cm, 3 cm i 12 cm z zaznaczoną przekątną bryły">
+      <line x1="120" y1="215" x2="146" y2="189" class="ln-thin dash"/>
+      <line x1="146" y1="189" x2="206" y2="189" class="ln-thin dash"/>
+      <line x1="146" y1="189" x2="146" y2="9" class="ln-thin dash"/>
+      <polygon points="120,215 180,215 180,35 120,35" class="ln"/>
+      <polyline points="180,215 206,189 206,9 146,9 120,35" class="ln"/>
+      <line x1="180" y1="35" x2="206" y2="9" class="ln"/>
+      <line x1="120" y1="215" x2="206" y2="9" class="ln s2 sw"/>
+      <text x="150" y="237" class="tx" text-anchor="middle">4 cm</text>
+      <text x="203" y="214" class="tx">3 cm</text>
+      <text x="112" y="125" class="tx" text-anchor="end">12 cm</text>
+    </svg>`,
+          options: ['13 cm', '19 cm', '5 cm', '√153 cm'],
+          answer: 0,
+          explain: 'Przekątna podstawy: √(3² + 4²) = 5 cm. Przekątna bryły: √(5² + 12²) = √169 = 13 cm (albo od razu √(3² + 4² + 12²) = √169).',
+        },
+        {
+          id: '7bnwnp',
+          q: 'Na rysunku przedstawiono siatkę ostrosłupa prawidłowego czworokątnego (wymiary w cm). Jakie jest pole powierzchni całkowitej tego ostrosłupa?',
+          svg: `<svg viewBox="0 0 320 270" role="img" aria-label="Siatka ostrosłupa: kwadrat o boku 6 i cztery przystające trójkąty o wysokości 5 dobudowane do jego boków">
+      <polygon points="112,87 208,87 160,7" class="f2 s2 sw"/>
+      <polygon points="208,87 208,183 288,135" class="f2 s2 sw"/>
+      <polygon points="208,183 112,183 160,263" class="f2 s2 sw"/>
+      <polygon points="112,183 112,87 32,135" class="f2 s2 sw"/>
+      <rect x="112" y="87" width="96" height="96" class="f1 s1 sw"/>
+      <line x1="160" y1="87" x2="160" y2="7" class="ln dash"/>
+      <polyline points="160,77 170,77 170,87" class="ln-thin"/>
+      <text x="168" y="45" class="tx-b">5</text>
+      <text x="160" y="173" class="tx-b" text-anchor="middle">6</text>
+    </svg>`,
+          options: ['96 cm²', '156 cm²', '60 cm²', '66 cm²'],
+          answer: 0,
+          explain: 'Podstawa: 6² = 36 cm². Jedna ściana boczna: 6 · 5 / 2 = 15 cm², a są 4: 60 cm². Razem 36 + 60 = 96 cm².',
+        },
       ],
       tasks: [
         {
@@ -990,6 +1808,143 @@ window.SUBJECTS.push({
         { id: 'e5phaa', q: 'Rzucamy dwa razy monetą. Jakie jest prawdopodobieństwo, że co najmniej raz wypadnie orzeł?', options: ['3/4', '1/2', '1/4', '2/3'], answer: 0, explain: 'Możliwości: OO, OR, RO, RR – orzeł jest w trzech z czterech.' },
         { id: 'ocztag', q: 'Ile różnych liczb trzycyfrowych można ułożyć z cyfr 1, 2, 3, jeśli każdej cyfry używamy dokładnie raz?', options: ['6', '3', '9', '27'], answer: 0, explain: 'Wypisujemy: 123, 132, 213, 231, 312, 321.' },
         { id: 'ln0ksi', q: 'Prawda czy fałsz?\nPrawdopodobieństwo zdarzenia może wynosić 1,5.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Prawdopodobieństwo jest zawsze liczbą od 0 do 1.' },
+        {
+          id: 'mi5xy5',
+          q: 'Diagram przedstawia oceny z klasówki z matematyki w klasie 8b. Jaka jest średnia arytmetyczna tych ocen?',
+          svg: `<svg viewBox="0 0 360 230" role="img" aria-label="Diagram słupkowy liczby uczniów z poszczególnymi ocenami: 1 – 2 osoby, 2 – 3, 3 – 6, 4 – 5, 5 – 3, 6 – 1">
+      <line x1="44" y1="190" x2="337" y2="190" class="ln-thin"/>
+      <text x="38" y="194" class="tx-s" text-anchor="end">0</text>
+      <line x1="44" y1="165" x2="337" y2="165" class="ln-thin"/>
+      <text x="38" y="169" class="tx-s" text-anchor="end">1</text>
+      <line x1="44" y1="140" x2="337" y2="140" class="ln-thin"/>
+      <text x="38" y="144" class="tx-s" text-anchor="end">2</text>
+      <line x1="44" y1="115" x2="337" y2="115" class="ln-thin"/>
+      <text x="38" y="119" class="tx-s" text-anchor="end">3</text>
+      <line x1="44" y1="90" x2="337" y2="90" class="ln-thin"/>
+      <text x="38" y="94" class="tx-s" text-anchor="end">4</text>
+      <line x1="44" y1="65" x2="337" y2="65" class="ln-thin"/>
+      <text x="38" y="69" class="tx-s" text-anchor="end">5</text>
+      <line x1="44" y1="40" x2="337" y2="40" class="ln-thin"/>
+      <text x="38" y="44" class="tx-s" text-anchor="end">6</text>
+      <rect x="61" y="140" width="30" height="50" class="f1 s1"/>
+      <text x="76" y="208" class="tx" text-anchor="middle">1</text>
+      <rect x="107" y="115" width="30" height="75" class="f1 s1"/>
+      <text x="122" y="208" class="tx" text-anchor="middle">2</text>
+      <rect x="153" y="40" width="30" height="150" class="f1 s1"/>
+      <text x="168" y="208" class="tx" text-anchor="middle">3</text>
+      <rect x="199" y="65" width="30" height="125" class="f1 s1"/>
+      <text x="214" y="208" class="tx" text-anchor="middle">4</text>
+      <rect x="245" y="115" width="30" height="75" class="f1 s1"/>
+      <text x="260" y="208" class="tx" text-anchor="middle">5</text>
+      <rect x="291" y="165" width="30" height="25" class="f1 s1"/>
+      <text x="306" y="208" class="tx" text-anchor="middle">6</text>
+      <line x1="44" y1="190" x2="337" y2="190" class="ln"/>
+      <line x1="44" y1="190" x2="44" y2="30" class="ln"/>
+      <text x="8" y="16" class="tx-s">liczba uczniów</text>
+      <text x="356" y="226" class="tx-s" text-anchor="end">ocena</text>
+    </svg>`,
+          options: ['3,35', '3,5', '3', '4'],
+          answer: 0,
+          explain: 'Uczniów: 2 + 3 + 6 + 5 + 3 + 1 = 20. Suma ocen: 1 · 2 + 2 · 3 + 3 · 6 + 4 · 5 + 5 · 3 + 6 · 1 = 2 + 6 + 18 + 20 + 15 + 6 = 67. Średnia: 67 : 20 = 3,35.',
+        },
+        {
+          id: '10r78c',
+          q: 'Wykres przedstawia temperaturę powietrza zmierzoną w ciągu jednego dnia. O ile stopni wzrosła temperatura od godziny 6:00 do godziny 14:00?',
+          svg: `<svg viewBox="0 0 380 250" role="img" aria-label="Wykres temperatury: 6:00 – minus 2, 8:00 – 0, 10:00 – 3, 12:00 – 5, 14:00 – 6, 16:00 – 4, 18:00 – 1 stopień">
+      <line x1="60" y1="210" x2="344" y2="210" class="ln-thin"/>
+      <text x="54" y="214" class="tx-s" text-anchor="end">−3</text>
+      <line x1="60" y1="192" x2="344" y2="192" class="ln-thin"/>
+      <text x="54" y="196" class="tx-s" text-anchor="end">−2</text>
+      <line x1="60" y1="174" x2="344" y2="174" class="ln-thin"/>
+      <text x="54" y="178" class="tx-s" text-anchor="end">−1</text>
+      <line x1="60" y1="156" x2="344" y2="156" class="ln"/>
+      <text x="54" y="160" class="tx-s" text-anchor="end">0</text>
+      <line x1="60" y1="138" x2="344" y2="138" class="ln-thin"/>
+      <text x="54" y="142" class="tx-s" text-anchor="end">1</text>
+      <line x1="60" y1="120" x2="344" y2="120" class="ln-thin"/>
+      <text x="54" y="124" class="tx-s" text-anchor="end">2</text>
+      <line x1="60" y1="102" x2="344" y2="102" class="ln-thin"/>
+      <text x="54" y="106" class="tx-s" text-anchor="end">3</text>
+      <line x1="60" y1="84" x2="344" y2="84" class="ln-thin"/>
+      <text x="54" y="88" class="tx-s" text-anchor="end">4</text>
+      <line x1="60" y1="66" x2="344" y2="66" class="ln-thin"/>
+      <text x="54" y="70" class="tx-s" text-anchor="end">5</text>
+      <line x1="60" y1="48" x2="344" y2="48" class="ln-thin"/>
+      <text x="54" y="52" class="tx-s" text-anchor="end">6</text>
+      <line x1="60" y1="30" x2="344" y2="30" class="ln-thin"/>
+      <text x="54" y="34" class="tx-s" text-anchor="end">7</text>
+      <line x1="60" y1="210" x2="60" y2="30" class="ln-thin"/>
+      <text x="60" y="228" class="tx-s" text-anchor="middle">6:00</text>
+      <line x1="105" y1="210" x2="105" y2="30" class="ln-thin"/>
+      <text x="105" y="228" class="tx-s" text-anchor="middle">8:00</text>
+      <line x1="150" y1="210" x2="150" y2="30" class="ln-thin"/>
+      <text x="150" y="228" class="tx-s" text-anchor="middle">10:00</text>
+      <line x1="195" y1="210" x2="195" y2="30" class="ln-thin"/>
+      <text x="195" y="228" class="tx-s" text-anchor="middle">12:00</text>
+      <line x1="240" y1="210" x2="240" y2="30" class="ln-thin"/>
+      <text x="240" y="228" class="tx-s" text-anchor="middle">14:00</text>
+      <line x1="285" y1="210" x2="285" y2="30" class="ln-thin"/>
+      <text x="285" y="228" class="tx-s" text-anchor="middle">16:00</text>
+      <line x1="330" y1="210" x2="330" y2="30" class="ln-thin"/>
+      <text x="330" y="228" class="tx-s" text-anchor="middle">18:00</text>
+      <line x1="60" y1="210" x2="60" y2="20" class="ln"/>
+      <polyline points="60,192 105,156 150,102 195,66 240,48 285,84 330,138" class="ln s1 sw"/>
+      <circle cx="60" cy="192" r="4" class="t1"/>
+      <circle cx="105" cy="156" r="4" class="t1"/>
+      <circle cx="150" cy="102" r="4" class="t1"/>
+      <circle cx="195" cy="66" r="4" class="t1"/>
+      <circle cx="240" cy="48" r="4" class="t1"/>
+      <circle cx="285" cy="84" r="4" class="t1"/>
+      <circle cx="330" cy="138" r="4" class="t1"/>
+      <text x="8" y="16" class="tx-s">temperatura (°C)</text>
+    </svg>`,
+          options: ['o 8°C', 'o 4°C', 'o 6°C', 'o 2°C'],
+          answer: 0,
+          explain: 'O 6:00 było −2°C, a o 14:00 było 6°C. Wzrost: 6 − (−2) = 8°C.',
+        },
+        {
+          id: '5pbf9k',
+          q: 'Prawda czy fałsz?\nNa podstawie diagramu: średnia dzienna sprzedaż lodów od poniedziałku do piątku wynosiła 40 porcji.',
+          svg: `<svg viewBox="0 0 360 240" role="img" aria-label="Diagram słupkowy sprzedaży lodów: poniedziałek 30 porcji, wtorek 45, środa 25, czwartek 40, piątek 60">
+      <line x1="44" y1="205" x2="350" y2="205" class="ln-thin"/>
+      <text x="38" y="209" class="tx-s" text-anchor="end">0</text>
+      <line x1="44" y1="190.8" x2="350" y2="190.8" class="ln-thin"/>
+      <line x1="44" y1="176.7" x2="350" y2="176.7" class="ln-thin"/>
+      <text x="38" y="180.7" class="tx-s" text-anchor="end">10</text>
+      <line x1="44" y1="162.5" x2="350" y2="162.5" class="ln-thin"/>
+      <line x1="44" y1="148.3" x2="350" y2="148.3" class="ln-thin"/>
+      <text x="38" y="152.3" class="tx-s" text-anchor="end">20</text>
+      <line x1="44" y1="134.2" x2="350" y2="134.2" class="ln-thin"/>
+      <line x1="44" y1="120" x2="350" y2="120" class="ln-thin"/>
+      <text x="38" y="124" class="tx-s" text-anchor="end">30</text>
+      <line x1="44" y1="105.8" x2="350" y2="105.8" class="ln-thin"/>
+      <line x1="44" y1="91.7" x2="350" y2="91.7" class="ln-thin"/>
+      <text x="38" y="95.7" class="tx-s" text-anchor="end">40</text>
+      <line x1="44" y1="77.5" x2="350" y2="77.5" class="ln-thin"/>
+      <line x1="44" y1="63.3" x2="350" y2="63.3" class="ln-thin"/>
+      <text x="38" y="67.3" class="tx-s" text-anchor="end">50</text>
+      <line x1="44" y1="49.2" x2="350" y2="49.2" class="ln-thin"/>
+      <line x1="44" y1="35" x2="350" y2="35" class="ln-thin"/>
+      <text x="38" y="39" class="tx-s" text-anchor="end">60</text>
+      <rect x="66" y="120" width="36" height="85" class="f4 s4"/>
+      <text x="84" y="223" class="tx" text-anchor="middle">pn</text>
+      <rect x="124" y="77.5" width="36" height="127.5" class="f4 s4"/>
+      <text x="142" y="223" class="tx" text-anchor="middle">wt</text>
+      <rect x="182" y="134.2" width="36" height="70.8" class="f4 s4"/>
+      <text x="200" y="223" class="tx" text-anchor="middle">śr</text>
+      <rect x="240" y="91.7" width="36" height="113.3" class="f4 s4"/>
+      <text x="258" y="223" class="tx" text-anchor="middle">czw</text>
+      <rect x="298" y="35" width="36" height="170" class="f4 s4"/>
+      <text x="316" y="223" class="tx" text-anchor="middle">pt</text>
+      <line x1="44" y1="205" x2="350" y2="205" class="ln"/>
+      <line x1="44" y1="205" x2="44" y2="25" class="ln"/>
+      <text x="8" y="16" class="tx-s">liczba porcji</text>
+    </svg>`,
+          options: ['Prawda', 'Fałsz'],
+          noShuffle: true,
+          answer: 0,
+          explain: '(30 + 45 + 25 + 40 + 60) : 5 = 200 : 5 = 40 porcji.',
+        },
       ],
       tasks: [
         {
@@ -1035,6 +1990,57 @@ window.SUBJECTS.push({
           scoring: [
             '1 pkt – wypisanie co najmniej połowy liczb w uporządkowany sposób.',
             '2 pkt – wszystkie 10 liczb i poprawna odpowiedź.',
+          ],
+        },
+        {
+          id: 'vy3puw',
+          points: 3,
+          q: 'Diagram przedstawia, ile książek przeczytali w czasie wakacji uczniowie klasy 8a. Oblicz średnią liczbę książek przeczytanych przez jednego ucznia tej klasy. Jaki procent uczniów przeczytał co najmniej 3 książki?',
+          svg: `<svg viewBox="0 0 360 230" role="img" aria-label="Diagram słupkowy: 0 książek – 2 uczniów, 1 książka – 5 uczniów, 2 książki – 7 uczniów, 3 książki – 4 uczniów, 4 książki – 2 uczniów">
+      <line x1="44" y1="190" x2="340" y2="190" class="ln-thin"/>
+      <text x="38" y="194" class="tx-s" text-anchor="end">0</text>
+      <line x1="44" y1="170" x2="340" y2="170" class="ln-thin"/>
+      <text x="38" y="174" class="tx-s" text-anchor="end">1</text>
+      <line x1="44" y1="150" x2="340" y2="150" class="ln-thin"/>
+      <text x="38" y="154" class="tx-s" text-anchor="end">2</text>
+      <line x1="44" y1="130" x2="340" y2="130" class="ln-thin"/>
+      <text x="38" y="134" class="tx-s" text-anchor="end">3</text>
+      <line x1="44" y1="110" x2="340" y2="110" class="ln-thin"/>
+      <text x="38" y="114" class="tx-s" text-anchor="end">4</text>
+      <line x1="44" y1="90" x2="340" y2="90" class="ln-thin"/>
+      <text x="38" y="94" class="tx-s" text-anchor="end">5</text>
+      <line x1="44" y1="70" x2="340" y2="70" class="ln-thin"/>
+      <text x="38" y="74" class="tx-s" text-anchor="end">6</text>
+      <line x1="44" y1="50" x2="340" y2="50" class="ln-thin"/>
+      <text x="38" y="54" class="tx-s" text-anchor="end">7</text>
+      <line x1="44" y1="30" x2="340" y2="30" class="ln-thin"/>
+      <text x="38" y="34" class="tx-s" text-anchor="end">8</text>
+      <rect x="64" y="150" width="36" height="40" class="f5 s5"/>
+      <text x="82" y="208" class="tx" text-anchor="middle">0</text>
+      <rect x="120" y="90" width="36" height="100" class="f5 s5"/>
+      <text x="138" y="208" class="tx" text-anchor="middle">1</text>
+      <rect x="176" y="50" width="36" height="140" class="f5 s5"/>
+      <text x="194" y="208" class="tx" text-anchor="middle">2</text>
+      <rect x="232" y="110" width="36" height="80" class="f5 s5"/>
+      <text x="250" y="208" class="tx" text-anchor="middle">3</text>
+      <rect x="288" y="150" width="36" height="40" class="f5 s5"/>
+      <text x="306" y="208" class="tx" text-anchor="middle">4</text>
+      <line x1="44" y1="190" x2="340" y2="190" class="ln"/>
+      <line x1="44" y1="190" x2="44" y2="20" class="ln"/>
+      <text x="8" y="16" class="tx-s">liczba uczniów</text>
+      <text x="356" y="226" class="tx-s" text-anchor="end">książki</text>
+    </svg>`,
+          steps: [
+            'Liczba uczniów: 2 + 5 + 7 + 4 + 2 = 20.',
+            'Liczba przeczytanych książek: 0 · 2 + 1 · 5 + 2 · 7 + 3 · 4 + 4 · 2 = 0 + 5 + 14 + 12 + 8 = 39.',
+            'Średnia: 39 : 20 = 1,95 książki na ucznia.',
+            'Co najmniej 3 książki przeczytało 4 + 2 = 6 uczniów: 6/20 = 0,3 = 30%.',
+          ],
+          answer: 'Średnio 1,95 książki; co najmniej 3 książki przeczytało 30% uczniów.',
+          scoring: [
+            '1 pkt – odczytanie z diagramu liczby uczniów (20) i obliczenie liczby książek (39).',
+            '2 pkt – średnia: 1,95 książki.',
+            '3 pkt – 30% uczniów przeczytało co najmniej 3 książki.',
           ],
         },
       ],
@@ -1087,6 +2093,139 @@ window.SUBJECTS.push({
         { id: '6oo4mo', q: 'Samochód jedzie ze stałą prędkością 90 km/h. Jaką drogę pokona w 20 minut?', options: ['30 km', '18 km', '45 km', '1800 km'], answer: 0, explain: '20 min = 1/3 h; 90 · 1/3 = 30 km.' },
         { id: 'e9chhq', q: 'Na planie w skali 1 : 100 pokój ma wymiary 4 cm × 3 cm. Jakie jest jego rzeczywiste pole?', options: ['12 m²', '12 cm²', '1,2 m²', '120 m²'], answer: 0, explain: 'Rzeczywiste wymiary: 400 cm × 300 cm = 4 m × 3 m, pole 12 m².' },
         { id: 'zdqnds', q: 'Ile minut to 0,2 h?', options: ['20 min', '2 min', '12 min', '0,2 min'], answer: 2, explain: '0,2 · 60 min = 12 min.' },
+        {
+          id: 'bw3r5y',
+          q: 'Wykres pokazuje, jak zmieniała się odległość rowerzysty od domu. Z jaką średnią prędkością rowerzysta jechał po postoju?',
+          svg: `<svg viewBox="0 0 400 245" role="img" aria-label="Wykres odległości rowerzysty od domu: w ciągu pierwszej godziny od 0 do 15 km, od 1 do 1,5 godziny postój na 15 km, od 1,5 do 2,5 godziny od 15 do 35 km">
+      <line x1="60" y1="200" x2="370" y2="200" class="ln-thin"/>
+      <text x="54" y="204" class="tx-s" text-anchor="end">0</text>
+      <line x1="60" y1="180" x2="370" y2="180" class="ln-thin"/>
+      <text x="54" y="184" class="tx-s" text-anchor="end">5</text>
+      <line x1="60" y1="160" x2="370" y2="160" class="ln-thin"/>
+      <text x="54" y="164" class="tx-s" text-anchor="end">10</text>
+      <line x1="60" y1="140" x2="370" y2="140" class="ln-thin"/>
+      <text x="54" y="144" class="tx-s" text-anchor="end">15</text>
+      <line x1="60" y1="120" x2="370" y2="120" class="ln-thin"/>
+      <text x="54" y="124" class="tx-s" text-anchor="end">20</text>
+      <line x1="60" y1="100" x2="370" y2="100" class="ln-thin"/>
+      <text x="54" y="104" class="tx-s" text-anchor="end">25</text>
+      <line x1="60" y1="80" x2="370" y2="80" class="ln-thin"/>
+      <text x="54" y="84" class="tx-s" text-anchor="end">30</text>
+      <line x1="60" y1="60" x2="370" y2="60" class="ln-thin"/>
+      <text x="54" y="64" class="tx-s" text-anchor="end">35</text>
+      <line x1="60" y1="40" x2="370" y2="40" class="ln-thin"/>
+      <text x="54" y="44" class="tx-s" text-anchor="end">40</text>
+      <line x1="60" y1="200" x2="60" y2="40" class="ln-thin"/>
+      <text x="60" y="218" class="tx-s" text-anchor="middle">0</text>
+      <line x1="110" y1="200" x2="110" y2="40" class="ln-thin"/>
+      <text x="110" y="218" class="tx-s" text-anchor="middle">0,5</text>
+      <line x1="160" y1="200" x2="160" y2="40" class="ln-thin"/>
+      <text x="160" y="218" class="tx-s" text-anchor="middle">1</text>
+      <line x1="210" y1="200" x2="210" y2="40" class="ln-thin"/>
+      <text x="210" y="218" class="tx-s" text-anchor="middle">1,5</text>
+      <line x1="260" y1="200" x2="260" y2="40" class="ln-thin"/>
+      <text x="260" y="218" class="tx-s" text-anchor="middle">2</text>
+      <line x1="310" y1="200" x2="310" y2="40" class="ln-thin"/>
+      <text x="310" y="218" class="tx-s" text-anchor="middle">2,5</text>
+      <line x1="360" y1="200" x2="360" y2="40" class="ln-thin"/>
+      <text x="360" y="218" class="tx-s" text-anchor="middle">3</text>
+      <line x1="60" y1="200" x2="376" y2="200" class="ln"/>
+      <polyline points="367,195 376,200 367,205" class="ln"/>
+      <line x1="60" y1="200" x2="60" y2="26" class="ln"/>
+      <polyline points="55,35 60,26 65,35" class="ln"/>
+      <polyline points="60,200 160,140 210,140 310,60" class="ln s1 sw"/>
+      <text x="8" y="16" class="tx-s">odległość od domu (km)</text>
+      <text x="396" y="236" class="tx-s" text-anchor="end">czas (h)</text>
+    </svg>`,
+          options: ['20 km/h', '35 km/h', '14 km/h', '15 km/h'],
+          answer: 0,
+          explain: 'Po postoju (od 1,5 h do 2,5 h) rowerzysta przejechał 35 − 15 = 20 km w ciągu 1 godziny, więc v = 20 km/h.',
+        },
+        {
+          id: 'cy73e6',
+          q: 'Film zaczął się rano o godzinie pokazanej na zegarze i trwał 1 h 40 min. O której godzinie się skończył?',
+          svg: `<svg viewBox="0 0 320 220" role="img" aria-label="Zegar ze wskazówkami: duża wskazówka na 9, mała między 7 a 8 – godzina 7:45">
+      <circle cx="160" cy="110" r="92" class="ln sw"/>
+      <line x1="160" y1="28" x2="160" y2="19" class="ln"/>
+      <line x1="169.1" y1="23.5" x2="169.5" y2="19.5" class="ln-thin"/>
+      <line x1="178.1" y1="24.9" x2="178.9" y2="21" class="ln-thin"/>
+      <line x1="186.9" y1="27.3" x2="188.1" y2="23.5" class="ln-thin"/>
+      <line x1="195.4" y1="30.5" x2="197" y2="26.9" class="ln-thin"/>
+      <line x1="201" y1="39" x2="205.5" y2="31.2" class="ln"/>
+      <line x1="211.1" y1="39.6" x2="213.5" y2="36.4" class="ln-thin"/>
+      <line x1="218.2" y1="45.3" x2="220.9" y2="42.4" class="ln-thin"/>
+      <line x1="224.7" y1="51.8" x2="227.6" y2="49.1" class="ln-thin"/>
+      <line x1="230.4" y1="58.9" x2="233.6" y2="56.5" class="ln-thin"/>
+      <line x1="231" y1="69" x2="238.8" y2="64.5" class="ln"/>
+      <line x1="239.5" y1="74.6" x2="243.1" y2="73" class="ln-thin"/>
+      <line x1="242.7" y1="83.1" x2="246.5" y2="81.9" class="ln-thin"/>
+      <line x1="245.1" y1="91.9" x2="249" y2="91.1" class="ln-thin"/>
+      <line x1="246.5" y1="100.9" x2="250.5" y2="100.5" class="ln-thin"/>
+      <line x1="242" y1="110" x2="251" y2="110" class="ln"/>
+      <line x1="246.5" y1="119.1" x2="250.5" y2="119.5" class="ln-thin"/>
+      <line x1="245.1" y1="128.1" x2="249" y2="128.9" class="ln-thin"/>
+      <line x1="242.7" y1="136.9" x2="246.5" y2="138.1" class="ln-thin"/>
+      <line x1="239.5" y1="145.4" x2="243.1" y2="147" class="ln-thin"/>
+      <line x1="231" y1="151" x2="238.8" y2="155.5" class="ln"/>
+      <line x1="230.4" y1="161.1" x2="233.6" y2="163.5" class="ln-thin"/>
+      <line x1="224.7" y1="168.2" x2="227.6" y2="170.9" class="ln-thin"/>
+      <line x1="218.2" y1="174.7" x2="220.9" y2="177.6" class="ln-thin"/>
+      <line x1="211.1" y1="180.4" x2="213.5" y2="183.6" class="ln-thin"/>
+      <line x1="201" y1="181" x2="205.5" y2="188.8" class="ln"/>
+      <line x1="195.4" y1="189.5" x2="197" y2="193.1" class="ln-thin"/>
+      <line x1="186.9" y1="192.7" x2="188.1" y2="196.5" class="ln-thin"/>
+      <line x1="178.1" y1="195.1" x2="178.9" y2="199" class="ln-thin"/>
+      <line x1="169.1" y1="196.5" x2="169.5" y2="200.5" class="ln-thin"/>
+      <line x1="160" y1="192" x2="160" y2="201" class="ln"/>
+      <line x1="150.9" y1="196.5" x2="150.5" y2="200.5" class="ln-thin"/>
+      <line x1="141.9" y1="195.1" x2="141.1" y2="199" class="ln-thin"/>
+      <line x1="133.1" y1="192.7" x2="131.9" y2="196.5" class="ln-thin"/>
+      <line x1="124.6" y1="189.5" x2="123" y2="193.1" class="ln-thin"/>
+      <line x1="119" y1="181" x2="114.5" y2="188.8" class="ln"/>
+      <line x1="108.9" y1="180.4" x2="106.5" y2="183.6" class="ln-thin"/>
+      <line x1="101.8" y1="174.7" x2="99.1" y2="177.6" class="ln-thin"/>
+      <line x1="95.3" y1="168.2" x2="92.4" y2="170.9" class="ln-thin"/>
+      <line x1="89.6" y1="161.1" x2="86.4" y2="163.5" class="ln-thin"/>
+      <line x1="89" y1="151" x2="81.2" y2="155.5" class="ln"/>
+      <line x1="80.5" y1="145.4" x2="76.9" y2="147" class="ln-thin"/>
+      <line x1="77.3" y1="136.9" x2="73.5" y2="138.1" class="ln-thin"/>
+      <line x1="74.9" y1="128.1" x2="71" y2="128.9" class="ln-thin"/>
+      <line x1="73.5" y1="119.1" x2="69.5" y2="119.5" class="ln-thin"/>
+      <line x1="78" y1="110" x2="69" y2="110" class="ln"/>
+      <line x1="73.5" y1="100.9" x2="69.5" y2="100.5" class="ln-thin"/>
+      <line x1="74.9" y1="91.9" x2="71" y2="91.1" class="ln-thin"/>
+      <line x1="77.3" y1="83.1" x2="73.5" y2="81.9" class="ln-thin"/>
+      <line x1="80.5" y1="74.6" x2="76.9" y2="73" class="ln-thin"/>
+      <line x1="89" y1="69" x2="81.2" y2="64.5" class="ln"/>
+      <line x1="89.6" y1="58.9" x2="86.4" y2="56.5" class="ln-thin"/>
+      <line x1="95.3" y1="51.8" x2="92.4" y2="49.1" class="ln-thin"/>
+      <line x1="101.8" y1="45.3" x2="99.1" y2="42.4" class="ln-thin"/>
+      <line x1="108.9" y1="39.6" x2="106.5" y2="36.4" class="ln-thin"/>
+      <line x1="119" y1="39" x2="114.5" y2="31.2" class="ln"/>
+      <line x1="124.6" y1="30.5" x2="123" y2="26.9" class="ln-thin"/>
+      <line x1="133.1" y1="27.3" x2="131.9" y2="23.5" class="ln-thin"/>
+      <line x1="141.9" y1="24.9" x2="141.1" y2="21" class="ln-thin"/>
+      <line x1="150.9" y1="23.5" x2="150.5" y2="19.5" class="ln-thin"/>
+      <text x="194" y="57.1" class="tx" text-anchor="middle">1</text>
+      <text x="218.9" y="82" class="tx" text-anchor="middle">2</text>
+      <text x="228" y="116" class="tx" text-anchor="middle">3</text>
+      <text x="218.9" y="150" class="tx" text-anchor="middle">4</text>
+      <text x="194" y="174.9" class="tx" text-anchor="middle">5</text>
+      <text x="160" y="184" class="tx" text-anchor="middle">6</text>
+      <text x="126" y="174.9" class="tx" text-anchor="middle">7</text>
+      <text x="101.1" y="150" class="tx" text-anchor="middle">8</text>
+      <text x="92" y="116" class="tx" text-anchor="middle">9</text>
+      <text x="101.1" y="82" class="tx" text-anchor="middle">10</text>
+      <text x="126" y="57.1" class="tx" text-anchor="middle">11</text>
+      <text x="160" y="48" class="tx" text-anchor="middle">12</text>
+      <line x1="160" y1="110" x2="126.7" y2="135.6" class="ln s1 sw"/>
+      <line x1="160" y1="110" x2="104" y2="110" class="ln sw"/>
+      <circle cx="160" cy="110" r="4" class="t1"/>
+    </svg>`,
+          options: ['9:25', '9:15', '8:25', '9:35'],
+          answer: 0,
+          explain: 'Zegar pokazuje 7:45. 7:45 + 1 h = 8:45, a 8:45 + 40 min = 9:25.',
+        },
       ],
       tasks: [
         {
@@ -1117,6 +2256,35 @@ window.SUBJECTS.push({
           scoring: [
             '1 pkt – obliczenie rzeczywistych wymiarów działki (600 m i 400 m).',
             '2 pkt – pole w hektarach: 24 ha.',
+          ],
+        },
+        {
+          id: 'w3vrd3',
+          points: 2,
+          q: 'Ania wyszła z domu o 7:20 i szła do szkoły ze stałą prędkością 4 km/h. Droga do szkoły ma 1,2 km, a lekcje zaczynają się o 7:45. Czy Ania zdąży na lekcje? Ile minut przed dzwonkiem albo po dzwonku dojdzie do szkoły?',
+          steps: [
+            'Czas drogi: t = s : v = 1,2 : 4 = 0,3 h.',
+            '0,3 h = 0,3 · 60 min = 18 min.',
+            '7:20 + 18 min = 7:38. To 7 minut przed 7:45.',
+          ],
+          answer: 'Zdąży – dojdzie o 7:38, czyli 7 minut przed dzwonkiem.',
+          scoring: [
+            '1 pkt – obliczenie czasu drogi: 0,3 h = 18 min.',
+            '2 pkt – godzina dojścia 7:38 i odpowiedź, że Ania zdąży (7 minut przed dzwonkiem).',
+          ],
+        },
+        {
+          id: 'gko1j7',
+          points: 2,
+          q: 'Samochód A jedzie z prędkością 25 m/s, a samochód B – z prędkością 80 km/h. Który samochód jedzie szybciej i o ile kilometrów na godzinę?',
+          steps: [
+            '1 m/s = 3,6 km/h, więc 25 m/s = 25 · 3,6 km/h = 90 km/h. (Inaczej: w ciągu godziny, czyli 3600 s, samochód A przejedzie 25 · 3600 = 90 000 m = 90 km.)',
+            '90 km/h > 80 km/h, różnica: 90 − 80 = 10 km/h.',
+          ],
+          answer: 'Szybciej jedzie samochód A – o 10 km/h.',
+          scoring: [
+            '1 pkt – zamiana jednostek: 25 m/s = 90 km/h.',
+            '2 pkt – odpowiedź: szybciej jedzie samochód A, o 10 km/h.',
           ],
         },
       ],

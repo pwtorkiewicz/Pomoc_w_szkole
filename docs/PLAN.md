@@ -30,6 +30,8 @@ Zasady z `CLAUDE.md` obowiązują przy każdym punkcie: tylko materiał z podsta
 - [x] **Pytania z rysunkiem** (pole `svg` w pytaniu): diagramy, wykresy, figury, siatki brył.
 - [x] **Zadania otwarte** także w polskim (np. uzasadnij, przekształć, zredaguj) i więcej zadań otwartych z matematyki.
 
+**Stan po etapie 2:** 35 działów, 35 lekcji, 454 fiszki, 771 pytań (27 z rysunkiem), 55 zadań otwartych (39 z matematyki, 16 z polskiego), 23 zestawy ćwiczeń ze 160 zadaniami: czytanie ze zrozumieniem (6), reading (6), listening (5), środki językowe (6). Usunięto pytanie wymagające twierdzenia odwrotnego do twierdzenia Pitagorasa (podstawa kl. VII–VIII VIII.7: „bez twierdzenia odwrotnego”).
+
 ## Etap 3 – uzupełnienie pozostałych wymagań
 
 **Matematyka**

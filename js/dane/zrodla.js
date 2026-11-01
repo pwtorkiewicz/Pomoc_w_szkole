@@ -71,7 +71,7 @@ window.SOURCES = {
       <li><b>Język polski – czytanie ze zrozumieniem</b> (część I arkusza: tekst literacki i nieliteracki, zadania zamknięte, z luką i otwarte). Fragmenty <i>Quo vadis</i>, <i>Pana Tadeusza</i>, <i>Zemsty</i> i <i>Balladyny</i> pochodzą z domeny publicznej i mają brzmienie z arkuszy egzaminu ósmoklasisty CKE z lat 2020–2023 (źródło podano przy każdym tekście). Teksty nieliterackie i wszystkie zadania napisano do aplikacji – to nie są zadania CKE.</li>
       <li><b>Język polski – zadania otwarte</b>: przekształcenia (imiesłowowy równoważnik zdania, mowa zależna, strona bierna), uzasadnienia, formy użytkowe (ogłoszenie, zaproszenie, wiadomość w stylu oficjalnym) – podstawa kl. VII–VIII II.1.4, II.1.6, II.2, III.1–2.</li>
       <li><b>Język angielski – reading, listening, środki językowe</b>: typy zadań z informatora CKE (wybór wielokrotny, dobieranie, luki, przekład fragmentów zdań, parafraza, reakcje). Nagrania czyta syntezator mowy w przeglądarce – brzmi inaczej niż lektor na egzaminie, ale pozwala ćwiczyć słuchanie bez plików audio.</li>
-      <li><b>Matematyka</b>: pytania z rysunkiem (diagramy, wykresy, figury, siatki brył) i nowe zadania otwarte.</li>
+      <li><b>Matematyka</b>: pytania z rysunkiem (diagramy, wykresy, figury, siatki brył) i nowe zadania otwarte. Usunięto pytanie, które wymagało twierdzenia odwrotnego do twierdzenia Pitagorasa – podstawa (kl. VII–VIII, VIII.7) wymaga twierdzenia Pitagorasa „bez twierdzenia odwrotnego”.</li>
     </ul>
     <p>Kolejny etap (pozostałe wymagania z klas IV–VI) jest opisany w pliku <code>docs/PLAN.md</code> w repozytorium.</p>
 

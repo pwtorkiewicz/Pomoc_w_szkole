@@ -33,7 +33,7 @@ Uruchomienie: otwórz `index.html` w przeglądarce. Publikacja: GitHub Pages z t
    - **informatory CKE** o egzaminie ósmoklasisty od r. szk. 2024/2025 i komunikaty CKE (cke.gov.pl).
    Obecni ósmoklasiści (egzamin maj 2027) uczą się według podstawy z 2024 r. – reforma „Kompas Jutra” ich nie obejmuje.
 2. **Nie dodawaj materiału spoza egzaminu.** Celowo usunięte / niedozwolone:
-   - matematyka: potęgi o wykładniku 0 i ujemnym (poza notacją wykładniczą), mediana, dominanta, reguła mnożenia w kombinatoryce (zliczamy przez wypisanie), wzór na sumę kątów n-kąta, dział XV „Symetrie” z kl. VII–VIII (wolno go realizować po egzaminie; zostaje tylko symetria osiowa figur z kl. IV–VI);
+   - matematyka: potęgi o wykładniku 0 i ujemnym (poza notacją wykładniczą), twierdzenie odwrotne do twierdzenia Pitagorasa (sprawdzanie, czy trójkąt jest prostokątny), mediana, dominanta, reguła mnożenia w kombinatoryce (zliczamy przez wypisanie), wzór na sumę kątów n-kąta, dział XV „Symetrie” z kl. VII–VIII (wolno go realizować po egzaminie; zostaje tylko symetria osiowa figur z kl. IV–VI);
    - angielski: tylko struktury z listy CKE – m.in. zdania warunkowe **wyłącznie typu 0 i I** (bez „If I were…”); 13 tematów słownictwa z podstawy;
    - polski: lista lektur zgodna z informatorem CKE (bez „Skąpca” i „Kamizelki”; treny tylko VII i VIII).
 3. **Nie pisz faktów z pamięci**, zwłaszcza o lekturach (postacie, wydarzenia, cytaty), terminach i punktacji egzaminu. Sprawdzaj w dokumentach CKE / podstawie. Gdy nie da się potwierdzić – pomiń albo wyraźnie oznacz jako niepewne i powiedz o tym użytkownikowi.
