@@ -17,7 +17,9 @@ Zasady z `CLAUDE.md` obowiązują przy każdym punkcie: tylko materiał z podsta
 - [x] **Nowy tryb „✍️ Zadania otwarte”**: zadanie jak w arkuszu (2–3 pkt), rozwiązanie krok po kroku, zasady przyznawania punktów, samoocena; w matematyce zestaw zadań w działach.
 - [x] **Polski – dział „Interpunkcja i ortografia”** (kl. IV–VI II.4.1–2, kl. VII–VIII II.4.1–4, II.1.6): przecinek, kropka, dwukropek, średnik, myślnik, cudzysłów, nawias; przytaczanie cudzych słów; wielka i mała litera; ó/u, rz/ż, ch/h; samogłoski nosowe, zmiękczenia; pisownia wyrazów nieodmiennych i „nie”.
 - [x] **Angielski – dział „Rzeczowniki, przedimki, liczebniki”** (lista struktur CKE: rzeczownik 1–4, przedimek 1–3, liczebnik 1–2, zaimki 1, 4, 9): policzalne i niepoliczalne, liczba mnoga nieregularna, ’s i of, rzeczowniki złożone, a/an/the/przedimek zerowy, liczebniki główne i porządkowe, daty, zaimki osobowe w dopełnieniu, this/that/these/those, one/ones.
-- [ ] **Angielski – słownictwo 13 tematów** (podstawa, wymaganie I.1–13): fiszki i pytania do każdego tematu.
+- [x] **Angielski – słownictwo 13 tematów** (podstawa, wymaganie I.1–13): fiszki i pytania do każdego tematu.
+
+**Stan po etapie 1:** 35 działów, 35 lekcji (203 kroki), 454 fiszki, 745 pytań, 27 zadań otwartych (matematyka).
 
 ## Etap 2 – nowe tryby ćwiczeń
 

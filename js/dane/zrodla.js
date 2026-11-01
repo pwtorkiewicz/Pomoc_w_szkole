@@ -57,9 +57,19 @@ window.SOURCES = {
       <li><b>Język angielski.</b> Lista tematów słownictwa ma teraz 13 pozycji, zgodnie z podstawą (wcześniej był tam zbędny temat „Życie społeczne”).</li>
     </ul>
 
+    <h3>Rozbudowa materiału – etap 1 (listopad 2026)</h3>
+    <p>1 listopada 2026 r. porównano wszystkie działy aplikacji z wymaganiami szczegółowymi podstawy programowej (Dz.U. 2024 poz. 996) i z listą struktur gramatycznych z informatora CKE z języka angielskiego. Uzupełniono braki, które najbardziej wpływają na wynik egzaminu:</p>
+    <ul>
+      <li><b>Matematyka:</b> dział „Ułamki zwykłe i dziesiętne” (kl. IV–VI, działy IV i V), dział „Przystawanie trójkątów i dowody” (kl. VII–VIII, dział VIII, wymaganie ogólne IV) oraz tryb <b>zadań otwartych</b> z rozwiązaniami krok po kroku. Część zadań to przykłady podane wprost w podstawie programowej.</li>
+      <li><b>Język polski:</b> dział „Interpunkcja i ortografia” (kl. IV–VI II.4.1–2, kl. VII–VIII II.4.1–4).</li>
+      <li><b>Język angielski:</b> dział „Rzeczowniki, przedimki, liczebniki” (lista struktur CKE: rzeczownik, przedimek, liczebnik, zaimki) i słownictwo do każdego z 13 tematów z podstawy.</li>
+    </ul>
+    <p>Kolejne etapy (czytanie ze zrozumieniem, słuchanie, pozostałe wymagania z klas IV–VI) są opisane w pliku <code>docs/PLAN.md</code> w repozytorium.</p>
+
     <h3>Ograniczenia</h3>
     <ul>
       <li>Informator CKE pokazuje przykłady zadań, a nie wszystkie możliwe typy. Pytania w aplikacji to ćwiczenia przygotowane na podstawie wymagań, a nie oficjalne zadania CKE.</li>
+      <li>Zasady punktacji przy zadaniach otwartych są orientacyjne – przygotowane w stylu zasad oceniania CKE, ale nie są oficjalnym kluczem.</li>
       <li>Streszczenia lektur są krótkie. Nie zastąpią przeczytania utworu.</li>
     </ul>
 
