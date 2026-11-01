@@ -80,6 +80,95 @@ window.SUBJECTS.push({
       ],
     },
     {
+      id: 'ulamki',
+      name: 'Ułamki zwykłe i dziesiętne',
+      basis: 'Podstawa programowa (Dz.U. 2024 poz. 996), matematyka kl. IV–VI: IV. Ułamki zwykłe i dziesiętne (IV.1–14), V. Działania na ułamkach zwykłych i dziesiętnych (V.1–7). Egzamin sprawdza wymagania z klas IV–VIII (informator CKE).',
+      theory: `
+        <h3>Ułamek zwykły</h3>
+        <p><span class="f">3/4</span> – licznik 3 (ile części bierzemy), mianownik 4 (na ile równych części dzielimy całość). Ułamek to też iloraz: <span class="f">3/4 = 3 : 4 = 0,75</span>.</p>
+        <ul>
+          <li><b>Właściwy</b> – licznik mniejszy od mianownika (2/5), <b>niewłaściwy</b> – licznik większy lub równy mianownikowi (7/3).</li>
+          <li><b>Liczba mieszana</b> (tu zapisujemy ją jako <span class="f">2 1/3</span> – „dwie i jedna trzecia”): 7/3 = 2 1/3, bo 7 : 3 = 2 reszty 1. Odwrotnie: 2 1/3 = (2 · 3 + 1)/3 = 7/3.</li>
+        </ul>
+        <h3>Skracanie i rozszerzanie</h3>
+        <p>Licznik i mianownik dzielimy (<b>skracanie</b>) albo mnożymy (<b>rozszerzanie</b>) przez tę samą liczbę różną od zera – wartość ułamka się nie zmienia: <span class="f">12/18 = 2/3</span> (przez 6), <span class="f">3/5 = 9/15</span> (przez 3).</p>
+        <h3>Porównywanie</h3>
+        <p>Sprowadź do wspólnego mianownika: 2/3 i 3/4 → 8/12 i 9/12, więc <b>3/4 &gt; 2/3</b>. Przy równych licznikach większy jest ułamek o mniejszym mianowniku: 3/5 &gt; 3/7.</p>
+        <h3>Działania na ułamkach zwykłych</h3>
+        <table>
+          <tr><th>Działanie</th><th>Jak?</th><th>Przykład</th></tr>
+          <tr><td>dodawanie, odejmowanie</td><td>wspólny mianownik, potem dodaj/odejmij liczniki</td><td>1/4 + 2/3 = 3/12 + 8/12 = 11/12</td></tr>
+          <tr><td>mnożenie</td><td>licznik · licznik, mianownik · mianownik (najpierw skracaj)</td><td>2/3 · 9/10 = 18/30 = 3/5</td></tr>
+          <tr><td>dzielenie</td><td>pomnóż przez odwrotność dzielnika</td><td>3/4 : 3/8 = 3/4 · 8/3 = 2</td></tr>
+          <tr><td>liczby mieszane</td><td>zamień na ułamki niewłaściwe</td><td>1 1/2 · 2 2/3 = 3/2 · 8/3 = 4</td></tr>
+          <tr><td>potęga</td><td>potęgujemy licznik i mianownik</td><td>(2/3)² = 4/9</td></tr>
+        </table>
+        <h3>Ułamki dziesiętne</h3>
+        <ul>
+          <li>Zamiana: <span class="f">0,25 = 25/100 = 1/4</span>, <span class="f">3/5 = 6/10 = 0,6</span>, <span class="f">7/20 = 35/100 = 0,35</span>. Gdy mianownika nie da się rozszerzyć do 10, 100, 1000…, dzielimy licznik przez mianownik i wychodzi rozwinięcie nieskończone okresowe: 1/3 = 0,(3), 2/11 = 0,(18).</li>
+          <li>Mnożenie przez 10, 100, 1000 – przecinek w prawo o 1, 2, 3 miejsca; dzielenie – w lewo.</li>
+          <li><b>Mnożenie</b>: mnożymy jak liczby naturalne, a w wyniku jest tyle cyfr po przecinku, ile razem w obu czynnikach: <span class="f">0,3 · 0,04 = 0,012</span>.</li>
+          <li><b>Dzielenie</b>: przesuwamy przecinek w obu liczbach o tyle samo miejsc, aż dzielnik będzie liczbą naturalną: <span class="f">2,4 : 0,06 = 240 : 6 = 40</span>.</li>
+          <li>Wyrażenia dwumianowane: 3 zł 5 gr = 3,05 zł, 2 m 7 cm = 2,07 m. W praktyce zaokrąglamy do części setnych (groszy, centymetrów).</li>
+        </ul>
+        <h3>Ułamek liczby i całość z części</h3>
+        <ul>
+          <li><b>Ułamek liczby</b>: 3/4 z 20 = 20 : 4 · 3 = 15.</li>
+          <li><b>Liczba, której część znamy</b>: 2/5 liczby to 12 → 1/5 to 6 → całość 30.</li>
+          <li><b>Powiększenie o część</b>: 40 powiększone o 1/4 → 40 + 10 = 50. <b>Pomniejszenie</b>: 30 pomniejszone o 1/3 → 30 − 10 = 20.</li>
+        </ul>
+        <div class="tip">💡 W wyrażeniach z ułamkami zwykłymi i dziesiętnymi zamień wszystko na jeden rodzaj ułamków (często łatwiej na zwykłe) i pilnuj kolejności działań. Uwaga na minus: −1/2 + 3/4 = −2/4 + 3/4 = 1/4.</div>
+      `,
+      flashcards: [
+        ['Skracanie ułamka', 'Dziel licznik i mianownik przez tę samą liczbę: 12/18 = 2/3'],
+        ['Rozszerzanie ułamka', 'Mnóż licznik i mianownik przez tę samą liczbę: 3/5 = 9/15'],
+        ['Liczba mieszana → ułamek niewłaściwy', '2 1/3 = (2 · 3 + 1)/3 = 7/3'],
+        ['Ułamek niewłaściwy → liczba mieszana', '7/3 = 2 1/3 (7 : 3 = 2 reszty 1)'],
+        ['Dodawanie i odejmowanie ułamków', 'Wspólny mianownik: 1/4 + 2/3 = 3/12 + 8/12 = 11/12'],
+        ['Mnożenie ułamków', 'licznik · licznik, mianownik · mianownik'],
+        ['Dzielenie ułamków', 'Pomnóż przez odwrotność dzielnika: 3/4 : 3/8 = 3/4 · 8/3 = 2'],
+        ['0,25', '1/4'],
+        ['0,2', '1/5'],
+        ['0,75', '3/4'],
+        ['1/8', '0,125'],
+        ['Mnożenie ułamków dziesiętnych', 'Po przecinku tyle cyfr, ile razem w czynnikach: 0,3 · 0,04 = 0,012'],
+        ['Dzielenie przez ułamek dziesiętny', 'Przesuń przecinek w obu liczbach: 2,4 : 0,06 = 240 : 6 = 40'],
+        ['3/4 z 20', '20 : 4 · 3 = 15'],
+        ['2/5 liczby to 12. Jaka to liczba?', '12 : 2 · 5 = 30'],
+      ],
+      questions: [
+        { id: '4keh0c', q: 'Ułamek 18/24 po skróceniu do postaci nieskracalnej to…', options: ['9/12', '3/4', '2/3', '4/5'], answer: 1, explain: 'Dzielimy licznik i mianownik przez NWD(18, 24) = 6. Ułamek 9/12 da się jeszcze skrócić.' },
+        { id: '3a37qk', q: 'Który ułamek jest równy 3/5?', options: ['6/15', '9/12', '12/20', '5/3'], answer: 2, explain: 'Rozszerzamy przez 4: 3 · 4 = 12, 5 · 4 = 20.' },
+        { id: '9xtxic', q: 'Liczba mieszana 2 3/4 („dwie i trzy czwarte”) jako ułamek niewłaściwy to…', options: ['9/4', '6/4', '23/4', '11/4'], answer: 3, explain: '(2 · 4 + 3)/4 = 11/4.' },
+        { id: 'skxqju', q: 'Ułamek 17/5 zapisany jako liczba mieszana to…', options: ['3 2/5', '3 1/5', '5 2/3', '2 2/5'], answer: 0, explain: '17 : 5 = 3 reszty 2, więc 3 całe i 2/5.' },
+        { id: 'l6h70x', q: 'Która liczba jest największa?', options: ['2/3', '5/8', '7/12', '3/4'], answer: 3, explain: 'Wspólny mianownik 24: 18/24, 16/24, 15/24, 14/24.' },
+        { id: 'cekvio', q: 'Ile wynosi 5/6 − 1/4?', options: ['4/10', '7/12', '1/2', '13/12'], answer: 1, explain: '10/12 − 3/12 = 7/12. Nie odejmuj mianowników!' },
+        { id: 'd16jer', q: 'Ile wynosi 4/9 · 3/8?', options: ['1/6', '7/17', '32/27', '1/3'], answer: 0, explain: 'Skracamy na krzyż: 4 i 8 przez 4, 3 i 9 przez 3 → 1/3 · 1/2 = 1/6.' },
+        { id: 'ip9f3a', q: 'Ile wynosi 5/6 : 10/9?', options: ['25/27', '4/3', '3/4', '3/5'], answer: 2, explain: '5/6 · 9/10 = 45/60 = 3/4.' },
+        { id: 'xvpm73', q: 'Ile wynosi 1 1/2 + 2 2/3?', options: ['3 3/5', '4 1/6', '4 1/2', '3 1/6'], answer: 1, explain: '1 + 2 = 3 całe, 1/2 + 2/3 = 3/6 + 4/6 = 7/6 = 1 1/6; razem 4 1/6.' },
+        { id: 'eqonm3', q: 'Ile wynosi 2 1/4 · 4/3?', options: ['2 1/3', '8 1/3', '3', '12'], answer: 2, explain: '2 1/4 = 9/4; 9/4 · 4/3 = 36/12 = 3.' },
+        { id: '3yx9og', q: 'Ułamek 7/20 w postaci dziesiętnej to…', options: ['0,7', '0,35', '0,72', '3,5'], answer: 1, explain: 'Rozszerzamy przez 5: 7/20 = 35/100 = 0,35.' },
+        { id: 'ziiex1', q: 'Liczba 0,45 zapisana jako ułamek zwykły nieskracalny to…', options: ['45/10', '4/5', '9/2', '9/20'], answer: 3, explain: '0,45 = 45/100, skracamy przez 5: 9/20.' },
+        { id: '5djrjj', q: 'Ile wynosi 0,4 · 0,05?', options: ['0,2', '0,002', '2', '0,02'], answer: 3, explain: '4 · 5 = 20; w czynnikach są razem 3 cyfry po przecinku → 0,020 = 0,02.' },
+        { id: 'ek2k4r', q: 'Ile wynosi 3,6 : 0,09?', options: ['4', '0,4', '400', '40'], answer: 3, explain: 'Przesuwamy przecinek o 2 miejsca w obu liczbach: 360 : 9 = 40.' },
+        { id: 'fqifup', q: 'Ile to jest 3/4 z 36?', options: ['9', '48', '27', '33'], answer: 2, explain: '36 : 4 = 9, a 9 · 3 = 27.' },
+        { id: '180yox', q: '2/7 pewnej liczby to 10. Jaka to liczba?', options: ['20', '70', '5', '35'], answer: 3, explain: '1/7 to 10 : 2 = 5, więc cała liczba to 5 · 7 = 35.' },
+        { id: 'ulk362', q: 'Liczbę 24 powiększono o 1/3 jej wartości. Jaki jest wynik?', options: ['8', '32', '16', '27'], answer: 1, explain: '1/3 z 24 to 8; 24 + 8 = 32.' },
+        { id: 'v9kp02', q: 'Kwotę 4 zł 5 gr zapisaną w złotych to…', options: ['4,5 zł', '4,05 zł', '45 zł', '0,45 zł'], answer: 1, explain: '5 gr = 0,05 zł.' },
+        { id: 'dtt75p', q: 'Długość 2 m 3 cm zapisana w metrach to…', options: ['2,3 m', '23 m', '2,003 m', '2,03 m'], answer: 3, explain: '3 cm = 3/100 m = 0,03 m.' },
+        { id: '6at33t', q: 'Ile wynosi −1/2 + 3/4?', options: ['1/4', '−1/4', '5/4', '−5/4'], answer: 0, explain: '−2/4 + 3/4 = 1/4.' },
+        { id: 'k5j9he', q: 'Ile wynosi (2/3)²?', options: ['4/6', '2/9', '4/9', '4/3'], answer: 2, explain: 'Do kwadratu podnosimy licznik i mianownik: 2²/3² = 4/9.' },
+        { id: 'sml7al', q: 'Ile wynosi (0,3)²?', options: ['0,9', '0,09', '0,6', '0,009'], answer: 1, explain: '0,3 · 0,3 = 0,09 (dwie cyfry po przecinku).' },
+        { id: '5hb1ok', q: 'Cenę 12,345 zł zaokrąglono do pełnych groszy. Wynik to…', options: ['12,34 zł', '12,35 zł', '12,3 zł', '12,4 zł'], answer: 1, explain: 'Grosze to części setne; trzecia cyfra po przecinku to 5, więc zaokrąglamy w górę.' },
+        { id: 'jl83li', q: 'Ile wynosi 1/2 : 0,25 + 1,5?', options: ['0,5', '2', '1,25', '3,5'], answer: 3, explain: 'Najpierw dzielenie: 0,5 : 0,25 = 2; potem 2 + 1,5 = 3,5.' },
+        { id: 'eab865', q: 'Która liczba leży na osi liczbowej między 1/2 a 3/4?', options: ['1/3', '4/5', '5/8', '7/8'], answer: 2, explain: 'W ósmych: 1/2 = 4/8, 3/4 = 6/8, a między nimi jest 5/8.' },
+        { id: 'jxh5bd', q: 'Który ułamek ma rozwinięcie dziesiętne nieskończone okresowe?', options: ['3/4', '7/20', '1/8', '2/3'], answer: 3, explain: '2/3 = 0,666… = 0,(6). Pozostałe można rozszerzyć do mianownika 100 lub 1000.' },
+        { id: 'tlww9v', q: 'Ola zjadła 1/4 pizzy, a Tomek 3/8 tej pizzy. Jaka część pizzy została?', options: ['4/12', '3/8', '5/8', '1/2'], answer: 1, explain: 'Zjedli 2/8 + 3/8 = 5/8, więc zostało 1 − 5/8 = 3/8.' },
+        { id: '7mh3qm', q: 'Prawda czy fałsz?\nUłamek 5/4 jest większy od 1.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Licznik jest większy od mianownika: 5/4 = 1 1/4.' },
+        { id: 'fdvtn2', q: 'Prawda czy fałsz?\nAby dodać dwa ułamki zwykłe, wystarczy dodać ich liczniki i ich mianowniki.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Np. 1/2 + 1/2 = 1, a „dodawanie mianowników” dałoby 2/4. Najpierw sprowadzamy do wspólnego mianownika.' },
+      ],
+    },
+    {
       id: 'procenty',
       name: 'Procenty',
       basis: 'Informator CKE (matematyka) – wymagania: V. Obliczenia procentowe; VII. Proporcjonalność prosta.',

@@ -1077,3 +1077,125 @@ window.LESSONS['matematyka/zadania-tekstowe'] = [
     check: { q: 'Pociąg odjechał o 9:40 i przyjechał o 12:15. Ile trwała podróż?', options: ['2 h 35 min', '3 h 25 min', '3 h 35 min', '2 h 25 min'], answer: 0, explain: '9:40 → 11:40 to 2 h, 11:40 → 12:00 to 20 min, 12:00 → 12:15 to 15 min. Razem 2 h 35 min.' },
   },
 ];
+
+window.LESSONS['matematyka/ulamki'] = [
+  {
+    title: 'Ułamek to część całości – i dzielenie',
+    svg: `<svg viewBox="0 0 420 184" role="img" aria-label="Pasek podzielony na 4 równe części, 3 zamalowane: trzy czwarte">
+      <rect x="20" y="24" width="80" height="50" class="f1 s1 sw"/>
+      <rect x="100" y="24" width="80" height="50" class="f1 s1 sw"/>
+      <rect x="180" y="24" width="80" height="50" class="f1 s1 sw"/>
+      <rect x="260" y="24" width="80" height="50" class="bg s1 sw"/>
+      <text x="60" y="55" class="tx" text-anchor="middle">1/4</text>
+      <text x="140" y="55" class="tx" text-anchor="middle">1/4</text>
+      <text x="220" y="55" class="tx" text-anchor="middle">1/4</text>
+      <text x="300" y="55" class="tx-s" text-anchor="middle">1/4</text>
+      <text x="382" y="56" class="tx-b t1" text-anchor="middle">= 3/4</text>
+      <text x="20" y="106" class="tx-s">licznik 3 – ile części bierzemy</text>
+      <text x="20" y="130" class="tx-s">mianownik 4 – na ile równych części dzielimy całość</text>
+      <text x="210" y="168" class="tx-b" text-anchor="middle">3/4 = 3 : 4 = 0,75</text>
+    </svg>`,
+    text: `<p>Ułamek mówi, <b>jaką część całości</b> bierzesz. Kreska ułamkowa to też znak dzielenia: 3/4 = 3 : 4 = 0,75.</p>
+      <p>Gdy licznik jest większy od mianownika, masz więcej niż całość – ułamek niewłaściwy, np. 7/3. Można go zapisać jako liczbę mieszaną: 7 : 3 = 2 reszty 1, więc 7/3 = 2 1/3 („dwie i jedna trzecia”).</p>`,
+    remember: 'Liczba mieszana → ułamek: 2 1/3 = (2 · 3 + 1)/3 = 7/3. Ułamek → liczba mieszana: dziel licznik przez mianownik z resztą.',
+    hook: 'Mianownik <b>mianuje</b>, czyli nazywa kawałki (czwarte, piąte…), a licznik je <b>liczy</b>.',
+    check: { q: 'Ułamek 17/5 zapisany jako liczba mieszana to…', options: ['3 2/5', '3 1/5', '2 2/5', '5 2/3'], answer: 0, explain: '17 : 5 = 3 reszty 2 → 3 całe i 2/5.' },
+  },
+  {
+    title: 'Skracanie i rozszerzanie – ten sam kawałek, inne cięcie',
+    svg: `<svg viewBox="0 0 440 214" role="img" aria-label="Pasek dwie trzecie i pasek cztery szóste mają zamalowaną tę samą długość">
+      <text x="10" y="50" class="tx-b">2/3</text>
+      <rect x="60" y="24" width="240" height="40" class="f1 s1 sw"/>
+      <rect x="300" y="24" width="120" height="40" class="bg s1 sw"/>
+      <line x1="180" y1="24" x2="180" y2="64" class="ln-thin"/>
+      <text x="10" y="120" class="tx-b">4/6</text>
+      <rect x="60" y="94" width="240" height="40" class="f3 s3 sw"/>
+      <rect x="300" y="94" width="120" height="40" class="bg s3 sw"/>
+      <line x1="120" y1="94" x2="120" y2="134" class="ln-thin"/><line x1="180" y1="94" x2="180" y2="134" class="ln-thin"/><line x1="240" y1="94" x2="240" y2="134" class="ln-thin"/><line x1="360" y1="94" x2="360" y2="134" class="ln-thin"/>
+      <line x1="300" y1="12" x2="300" y2="146" class="ln dash"/>
+      <text x="220" y="176" class="tx" text-anchor="middle">rozszerzanie: 2/3 = (2 · 2)/(3 · 2) = 4/6</text>
+      <text x="220" y="202" class="tx" text-anchor="middle">skracanie: 4/6 = (4 : 2)/(6 : 2) = 2/3</text>
+    </svg>`,
+    text: `<p>Oba paski są zamalowane do tego samego miejsca – 2/3 i 4/6 to <b>ta sama liczba</b>. Rozszerzając, tniesz kawałki na mniejsze; skracając – sklejasz je w większe.</p>
+      <p>Skracaj najlepiej od razu przez NWD licznika i mianownika: 18/24 → NWD = 6 → 3/4. Wynik podawaj w postaci nieskracalnej.</p>`,
+    remember: 'Licznik i mianownik mnożymy albo dzielimy przez tę samą liczbę (różną od 0) – wartość ułamka się nie zmienia.',
+    hook: 'Pizza pokrojona na 6 kawałków czy na 3 – jeśli zjesz „tyle samo pizzy”, zjadłeś tyle samo.',
+    check: { q: 'Który ułamek jest równy 3/5?', options: ['6/15', '12/20', '9/12', '5/3'], answer: 1, explain: 'Rozszerzamy przez 4: 3 · 4 = 12, 5 · 4 = 20.' },
+  },
+  {
+    title: 'Dodawanie i odejmowanie – wspólny mianownik',
+    svg: `<svg viewBox="0 0 420 176" role="img" aria-label="Pasek podzielony na 12 części: 3 dwunaste to jedna czwarta, 8 dwunastych to dwie trzecie">
+      <text x="85" y="36" class="tx-s" text-anchor="middle">1/4 = 3/12</text>
+      <text x="250" y="36" class="tx" text-anchor="middle">2/3 = 8/12</text>
+      <rect x="40" y="48" width="90" height="44" class="f2"/>
+      <rect x="130" y="48" width="240" height="44" class="f1"/>
+      <line x1="70" y1="48" x2="70" y2="92" class="ln-thin"/><line x1="100" y1="48" x2="100" y2="92" class="ln-thin"/><line x1="130" y1="48" x2="130" y2="92" class="ln"/><line x1="160" y1="48" x2="160" y2="92" class="ln-thin"/><line x1="190" y1="48" x2="190" y2="92" class="ln-thin"/><line x1="220" y1="48" x2="220" y2="92" class="ln-thin"/><line x1="250" y1="48" x2="250" y2="92" class="ln-thin"/><line x1="280" y1="48" x2="280" y2="92" class="ln-thin"/><line x1="310" y1="48" x2="310" y2="92" class="ln-thin"/><line x1="340" y1="48" x2="340" y2="92" class="ln-thin"/><line x1="370" y1="48" x2="370" y2="92" class="ln"/>
+      <rect x="40" y="48" width="360" height="44" class="ln"/>
+      <text x="210" y="130" class="tx-b" text-anchor="middle">3/12 + 8/12 = 11/12</text>
+      <text x="210" y="160" class="tx-s" text-anchor="middle">wspólny mianownik: NWW(4, 3) = 12</text>
+    </svg>`,
+    text: `<p>Nie da się dodać „czwartych” do „trzecich”, tak jak nie dodasz metrów do kilogramów. Pokrój obie części na <b>takie same kawałki</b> – tu na dwunaste – i dopiero wtedy dodaj liczniki.</p>
+      <p>Mianownik zostaje taki sam! 3/12 + 8/12 = 11/12, a nie 11/24. Odejmowanie działa tak samo: 5/6 − 1/4 = 10/12 − 3/12 = 7/12.</p>`,
+    remember: 'Dodawanie i odejmowanie: sprowadź do wspólnego mianownika (najlepiej NWW mianowników), potem dodaj/odejmij tylko liczniki.',
+    hook: 'Mianownik to <b>nazwisko</b> kawałków – dodajesz tylko kawałki z tej samej rodziny.',
+    check: { q: 'Ola zjadła 1/4 pizzy, a Tomek 3/8 tej pizzy. Jaka część została?', options: ['5/8', '3/8', '4/12', '1/2'], answer: 1, explain: '1/4 = 2/8; zjedli 2/8 + 3/8 = 5/8, więc zostało 8/8 − 5/8 = 3/8.' },
+  },
+  {
+    title: 'Mnożenie i dzielenie – bez wspólnego mianownika',
+    svg: `<svg viewBox="0 0 420 206" role="img" aria-label="Trzy czwarte to sześć ósmych; trzy ósme mieszczą się w tym dwa razy">
+      <text x="180" y="22" class="tx-b t1" text-anchor="middle">3/4 = 6/8</text>
+      <rect x="60" y="34" width="240" height="44" class="f1"/>
+      <line x1="100" y1="34" x2="100" y2="78" class="ln-thin"/><line x1="140" y1="34" x2="140" y2="78" class="ln-thin"/><line x1="180" y1="34" x2="180" y2="78" class="ln"/><line x1="220" y1="34" x2="220" y2="78" class="ln-thin"/><line x1="260" y1="34" x2="260" y2="78" class="ln-thin"/><line x1="300" y1="34" x2="300" y2="78" class="ln"/><line x1="340" y1="34" x2="340" y2="78" class="ln-thin"/>
+      <rect x="60" y="34" width="320" height="44" class="ln"/>
+      <path d="M62,86 L62,96 L178,96 L178,86" class="ln s2"/>
+      <path d="M182,86 L182,96 L298,96 L298,86" class="ln s2"/>
+      <text x="120" y="118" class="tx t2" text-anchor="middle">3/8</text>
+      <text x="240" y="118" class="tx t2" text-anchor="middle">3/8</text>
+      <text x="210" y="158" class="tx" text-anchor="middle">3/4 : 3/8 = 2 („ile razy 3/8 mieści się w 3/4?”)</text>
+      <text x="210" y="190" class="tx-b" text-anchor="middle">3/4 : 3/8 = 3/4 · 8/3 = 2</text>
+    </svg>`,
+    text: `<p><b>Mnożenie</b>: licznik razy licznik, mianownik razy mianownik. Najpierw skracaj „na krzyż”, będą mniejsze liczby: 4/9 · 3/8 → 1/3 · 1/2 = 1/6.</p>
+      <p><b>Dzielenie</b> pyta, ile razy jedna liczba mieści się w drugiej. Liczymy je, mnożąc przez <b>odwrotność</b> dzielnika. Liczby mieszane zawsze najpierw zamień na ułamki niewłaściwe: 1 1/2 · 2 2/3 = 3/2 · 8/3 = 4.</p>`,
+    remember: 'a/b · c/d = (a · c)/(b · d). Dzielenie: a/b : c/d = a/b · d/c.',
+    hook: 'Przy dzieleniu „odwróć i pomnóż” – drugi ułamek robi fikołka.',
+    check: { q: 'Ile wynosi 5/6 : 10/9?', options: ['25/27', '4/3', '3/4', '3/5'], answer: 2, explain: '5/6 · 9/10 = 45/60 = 3/4.' },
+  },
+  {
+    title: 'Ułamki dziesiętne – liczymy miejsca po przecinku',
+    svg: `<svg viewBox="0 0 420 216" role="img" aria-label="Mnożenie 0,3 razy 0,04 oraz dzielenie 2,4 przez 0,06 po przesunięciu przecinka">
+      <rect x="10" y="10" width="400" height="58" rx="10" class="f4 s4"/>
+      <text x="24" y="35" class="tx-b">0,3 · 0,04 = 0,012</text>
+      <text x="24" y="58" class="tx-s">3 · 4 = 12; po przecinku 1 + 2 = 3 cyfry</text>
+      <rect x="10" y="78" width="400" height="58" rx="10" class="f3 s3"/>
+      <text x="24" y="103" class="tx-b">2,4 : 0,06 = 240 : 6 = 40</text>
+      <text x="24" y="126" class="tx-s">przecinek o 2 miejsca w prawo w obu liczbach</text>
+      <rect x="10" y="146" width="400" height="58" rx="10" class="f1 s1"/>
+      <text x="24" y="171" class="tx-b">3/5 = 6/10 = 0,6   oraz   0,45 = 9/20</text>
+      <text x="24" y="194" class="tx-s">zamiana: rozszerz do 10, 100, 1000 albo podziel</text>
+    </svg>`,
+    text: `<p>Przy <b>mnożeniu</b> nie ustawiaj przecinków pod sobą – mnóż jak liczby naturalne i na końcu odlicz tyle cyfr po przecinku, ile było razem w obu czynnikach.</p>
+      <p>Przy <b>dzieleniu</b> przesuń przecinek w obu liczbach o tyle samo miejsc, aż dzielnik będzie liczbą naturalną. Pamiętaj też: 3 zł 5 gr = 3,05 zł, a 2 m 7 cm = 2,07 m.</p>`,
+    remember: 'Mnożenie: cyfr po przecinku w wyniku = suma cyfr po przecinku w czynnikach. Dzielenie: przesuń przecinek w obu liczbach tak, by dzielnik był liczbą naturalną.',
+    hook: 'Iloczyn dwóch liczb mniejszych od 1 jest <b>mniejszy</b> od każdej z nich: 0,3 · 0,04 = 0,012 – szybki test, czy nie zgubiłeś zera.',
+    check: { q: 'Ile wynosi 0,4 · 0,05?', options: ['0,2', '0,02', '0,002', '2'], answer: 1, explain: '4 · 5 = 20, po przecinku 1 + 2 = 3 cyfry → 0,020 = 0,02.' },
+  },
+  {
+    title: 'Ułamek liczby i całość z części',
+    svg: `<svg viewBox="0 0 420 204" role="img" aria-label="Trzy czwarte z 20 to 15; dwie piąte liczby to 12, więc liczba to 30">
+      <text x="10" y="22" class="tx-b">3/4 z 20</text>
+      <rect x="20" y="32" width="75" height="40" class="f1 s1 sw"/><rect x="95" y="32" width="75" height="40" class="f1 s1 sw"/><rect x="170" y="32" width="75" height="40" class="f1 s1 sw"/><rect x="245" y="32" width="75" height="40" class="bg s1 sw"/>
+      <text x="57" y="58" class="tx" text-anchor="middle">5</text><text x="132" y="58" class="tx" text-anchor="middle">5</text><text x="207" y="58" class="tx" text-anchor="middle">5</text><text x="282" y="58" class="tx-s" text-anchor="middle">5</text>
+      <text x="370" y="58" class="tx-b t1" text-anchor="middle">= 15</text>
+      <text x="10" y="112" class="tx-b">2/5 liczby = 12</text>
+      <rect x="20" y="122" width="60" height="40" class="f2 s2 sw"/><rect x="80" y="122" width="60" height="40" class="f2 s2 sw"/><rect x="140" y="122" width="60" height="40" class="bg s2 sw"/><rect x="200" y="122" width="60" height="40" class="bg s2 sw"/><rect x="260" y="122" width="60" height="40" class="bg s2 sw"/>
+      <text x="50" y="148" class="tx" text-anchor="middle">6</text><text x="110" y="148" class="tx" text-anchor="middle">6</text><text x="170" y="148" class="tx-s" text-anchor="middle">6</text><text x="230" y="148" class="tx-s" text-anchor="middle">6</text><text x="290" y="148" class="tx-s" text-anchor="middle">6</text>
+      <text x="370" y="148" class="tx-b t2" text-anchor="middle">= 30</text>
+      <text x="210" y="192" class="tx-s" text-anchor="middle">najpierw jedna część, potem tyle części, ile trzeba</text>
+    </svg>`,
+    text: `<p><b>3/4 z 20</b>: podziel 20 na 4 części (po 5) i weź 3 – wychodzi 15. To samo co 3/4 · 20.</p>
+      <p><b>2/5 liczby to 12</b>: dwie części to 12, więc jedna to 6, a całość (5 części) to 30. Powiększenie o 1/4: 40 + 10 = 50; pomniejszenie o 1/3: 30 − 10 = 20.</p>`,
+    remember: 'Ułamek z liczby: podziel przez mianownik, pomnóż przez licznik. Całość z części: podziel część przez licznik, pomnóż przez mianownik.',
+    hook: 'Zawsze najpierw szukaj <b>jednego kawałka</b> – reszta to już tylko mnożenie.',
+    check: { q: '2/7 pewnej liczby to 10. Jaka to liczba?', options: ['20', '35', '70', '5'], answer: 1, explain: 'Jedna siódma to 10 : 2 = 5, cała liczba to 5 · 7 = 35.' },
+  },
+];
