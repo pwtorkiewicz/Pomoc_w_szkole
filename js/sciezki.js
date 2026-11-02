@@ -13,7 +13,7 @@ window.TRACKS = [
     page: 'klasa3.html',
     icon: '🧸',
     name: 'Klasa 3',
-    about: 'Edukacja wczesnoszkolna: polski, matematyka, angielski i przyroda – lekcje z obrazkami, quizy z gwiazdkami, dyktanda, zegar, monety i kalendarz. Pytania można odsłuchać.',
+    about: 'Edukacja wczesnoszkolna: polski, matematyka, angielski, przyroda, edukacja społeczna i informatyczna, a do tego plastyka, muzyka, technika i WF – lekcje z obrazkami, quizy z gwiazdkami, dyktanda, zegar, monety i kalendarz. Pytania można odsłuchać.',
     storeKey: 'pomoc_kl3_v1',
     color: '#e0803a',
     young: true,

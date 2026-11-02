@@ -4,7 +4,7 @@ Pomoc naukowa dla uczniów szkoły podstawowej. Na starcie uczeń wybiera **ści
 
 | Ścieżka | Strona | Stan |
 |---|---|---|
-| 🧸 Klasa 3 | `klasa3.html` | edukacja polonistyczna (7 działów, 4 dyktanda ze słuchu), edukacja matematyczna (7 działów, widżety: zegar, tabliczka mnożenia, monety, kalendarz); tryb dla młodszego ucznia: duże litery, czytanie na głos, quizy z gwiazdkami |
+| 🧸 Klasa 3 | `klasa3.html` | edukacja polonistyczna (7 działów, 4 dyktanda ze słuchu), matematyczna (7, widżety: zegar, tabliczka mnożenia, monety, kalendarz), angielski (7), przyrodnicza (8), społeczna (6), informatyczna (4); wiedza z edukacji technicznej, plastycznej, muzycznej i WF (po 2); tryb dla młodszego ucznia: duże litery, czytanie na głos, quizy z gwiazdkami |
 | 🎨 Klasa 4 – wszystkie przedmioty | `klasa4.html` | polski (7 działów), matematyka (7), angielski (6), przyroda (6), historia (4), informatyka (4), zajęcia praktyczno-techniczne – ruch drogowy (4), muzyka (3), plastyka (3), wychowanie fizyczne – wiedza (2) |
 | 🔬 Klasa 8 – wszystkie przedmioty (bieżąca nauka) | `klasa8.html` | w przygotowaniu |
 | 🎯 Egzamin ósmoklasisty | `egzamin.html` | gotowa (opis poniżej) |
