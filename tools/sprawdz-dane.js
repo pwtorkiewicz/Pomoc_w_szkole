@@ -42,7 +42,13 @@ for (const track of wczytaj.sciezki()) {
   for (const s of window.SUBJECTS) {
     if (subjectIds.has(s.id)) problems.push(`${track.id}: powtórzone id przedmiotu ${s.id}`);
     subjectIds.add(s.id);
-    if (!s.topics.length) problems.push(`${track.id}/${s.id}: przedmiot bez działów`);
+    if (s.link) {
+      // przedmiot-odnośnik: prowadzi do przedmiotu w innej ścieżce, sam nie ma działów
+      const target = wczytaj.sciezki().find((x) => x.id === s.link.track);
+      if (!target) problems.push(`${track.id}/${s.id}: odnośnik do nieznanej ścieżki ${s.link.track}`);
+      else if (!wczytaj(target.id).SUBJECTS.some((x) => x.id === s.link.subject && !x.link)) problems.push(`${track.id}/${s.id}: w ścieżce ${target.id} nie ma przedmiotu ${s.link.subject}`);
+      if (s.topics.length) problems.push(`${track.id}/${s.id}: przedmiot-odnośnik nie może mieć działów`);
+    } else if (!s.topics.length) problems.push(`${track.id}/${s.id}: przedmiot bez działów`);
     const topicIds = new Set();
     for (const t of s.topics) {
       if (topicIds.has(t.id)) problems.push(`${s.id}: powtórzone id działu ${t.id}`);

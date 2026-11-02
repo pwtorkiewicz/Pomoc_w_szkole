@@ -25,6 +25,7 @@ Aplikacja ma kilka **ścieżek** – każda dla innej klasy albo celu. Uczeń wy
 2. Dopisz `<script src="js/dane/<ścieżka>/<przedmiot>.js"></script>` w stronie ścieżki przed `js/app.js` (narzędzia biorą listę plików ze strony).
 3. Lekcje: `js/lekcje/<ścieżka>/<przedmiot>.js` (format: `docs/LEKCJE.md`); jeśli korzystają z widżetów, strona musi wczytać `js/lekcje/widgety.js`.
 4. Źródła: `js/dane/<ścieżka>/zrodla.js`.
+   Przedmiot o tej samej podstawie co w innej ścieżce dodaj jako **odnośnik** (`link: { track, subject }`, `topics: []` – format w README), zamiast kopiować treści. Tak klasa 8 prowadzi do polskiego, matematyki i angielskiego w ścieżce egzaminacyjnej.
 5. Gdy ścieżka ma pierwsze materiały, usuń `soon: true` w `js/sciezki.js` i zaktualizuj tabelę w README.
 6. Sprawdzenie: `node tools/sprawdz-dane.js`, `node tools/sprawdz-lekcje.js <ścieżka>`, `node tools/przeglad.js <ścieżka>`.
 

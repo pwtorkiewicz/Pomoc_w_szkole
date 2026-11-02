@@ -33,10 +33,10 @@ window.TRACKS = [
     page: 'klasa8.html',
     icon: '🔬',
     name: 'Klasa 8',
-    about: 'Pomoc w bieżącej nauce wszystkich przedmiotów klasy 8: fizyka, chemia, biologia, historia i inne.',
+    about: 'Bieżąca nauka w klasie 8: fizyka i chemia – lekcje, ściągi, fiszki, quizy i zadania z obliczeniami. Polski, matematyka i angielski prowadzą do ścieżki egzaminacyjnej. Kolejne przedmioty w przygotowaniu.',
     storeKey: 'pomoc_kl8_v1',
-    soon: true, // usuń, gdy w ścieżce pojawią się pierwsze materiały
     color: '#8e5bd0',
+    intro: 'Wybierz przedmiot. W każdym dziale masz <b>lekcję</b>, <b>ściągę</b>, <b>fiszki</b> i <b>quiz</b>, a w części działów – <b>zadania otwarte</b> z obliczeniami. Błędne odpowiedzi trafią do powtórki. Polski, matematyka i angielski otwierają się w ścieżce egzaminacyjnej (ta sama podstawa programowa).',
   },
   {
     id: 'egzamin8',

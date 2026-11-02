@@ -89,6 +89,8 @@ window.SUBJECTS.push({
 
 Nowy plik trzeba dopisać w stronie ścieżki (np. `egzamin.html`, `klasa4.html`) przed `js/app.js` – narzędzia w `tools/` biorą listę plików właśnie stamtąd.
 
+**Przedmiot-odnośnik** – gdy przedmiot ma tę samą podstawę co w innej ścieżce, nie powielamy treści: `{ id, name, icon, color, link: { track: 'egzamin8', subject: 'polski' }, linkNote: 'krótki opis na kafelku', topics: [] }`. Kafelek na stronie głównej (i adres `#/s/<id>`) prowadzi do przedmiotu w tamtej ścieżce (np. polski, matematyka i angielski w klasie 8 → `egzamin.html`). `node tools/sprawdz-dane.js` sprawdza, czy taki przedmiot istnieje.
+
 Pytanie może mieć rysunek: pole `svg` (zasady jak w lekcjach – `docs/LEKCJE.md`, sprawdza je `node tools/sprawdz-lekcje.js`).
 
 ### Czytanie na głos (ścieżki z `young: true` lub `speak: true` – klasa 3)

@@ -78,6 +78,10 @@
     return a;
   }
   const findSubject = (id) => SUBJECTS.find((s) => s.id === id);
+  // Przedmiot-odnośnik (pole link: { track, subject }) – materiał jest w innej ścieżce o tej samej podstawie
+  // (np. polski klasy 8 w ścieżce egzaminacyjnej). Kafelek prowadzi na stronę tamtej ścieżki.
+  const linkTrack = (s) => TRACKS.find((t) => t.id === s.link.track) || { page: 'index.html', name: '' };
+  const linkHref = (s) => `${linkTrack(s).page}#/s/${s.link.subject}`;
   const topicKey = (s, t) => `${s.id}/${t.id}`;
   // Każde pytanie ma stałe pole id – klucz nie zależy od kolejności pytań w pliku.
   const questionsOf = (s, t) => t.questions.map((q) => ({ ...q, key: `${s.id}/${t.id}/${q.id}`, topicName: t.name }));
@@ -240,6 +244,7 @@
     if (p[0] === 'zrodla') return sources();
     if (p[0] === 's') {
       const s = findSubject(p[1]);
+      if (s && s.link) { location.replace(linkHref(s)); return; }
       if (s) {
         if (p.length === 2) return subject(s);
         if (p[2] === 'egzamin') return YOUNG ? subject(s) : exam(s);
@@ -282,7 +287,13 @@
           <small class="muted">${state.autoSpeak ? 'Pytania i lekcje czytają się same.' : 'Włącz, a pytania i lekcje będą się czytać same. Przycisk 🔊 przy pytaniu działa zawsze.'}</small>` : ''}
       </section>
       <div class="grid">
-        ${SUBJECTS.map((s) => `
+        ${SUBJECTS.map((s) => s.link ? `
+          <a class="card" href="${linkHref(s)}" style="--accent:${s.color}">
+            <span class="icon">${s.icon}</span>
+            <h2>${esc(s.name)}</h2>
+            <p>${esc(s.linkNote || 'Ta sama podstawa programowa – materiał jest w innej ścieżce.')}</p>
+            <small class="muted">↗ ścieżka „${esc(linkTrack(s).name)}”</small>
+          </a>` : `
           <a class="card" href="#/s/${s.id}" style="--accent:${s.color}">
             <span class="icon">${s.icon}</span>
             <h2>${esc(s.name)}</h2>

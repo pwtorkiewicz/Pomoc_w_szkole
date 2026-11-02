@@ -43,7 +43,7 @@ const dane = require('./dane');
       page.on('dialog', (d) => d.accept());
       await page.goto(url);
       const data = await page.evaluate(() => ({
-        subjects: window.SUBJECTS.map((s) => ({ id: s.id, topics: s.topics.map((t) => t.id) })),
+        subjects: window.SUBJECTS.map((s) => ({ id: s.id, link: s.link, topics: s.topics.map((t) => t.id) })),
         sets: (window.EXERCISES || []).map((e) => ({ subject: e.subject, mode: e.mode, id: e.id })),
       }));
       // przyciski 🔊 (ścieżki z czytaniem na głos): kliknij każdy widoczny – sprawdza, czy nie ma błędów JS
@@ -60,6 +60,18 @@ const dane = require('./dane');
       await visit('#/');
       await visit('#/zrodla');
       for (const s of data.subjects) {
+        if (s.link) {
+          // przedmiot-odnośnik: kafelek i adres #/s/<id> prowadzą do przedmiotu w innej ścieżce
+          const target = dane.sciezka(s.link.track).page + '#/s/' + s.link.subject;
+          await page.goto(url);
+          const href = await page.$eval(`a.card[href$="${target}"]`, (a) => a.getAttribute('href')).catch(() => null);
+          if (href !== target) problems.push(`${width}px ${scheme} ${track.id}: brak kafelka ${s.id} z odnośnikiem ${target}`);
+          await page.goto(url + `#/s/${s.id}`);
+          await page.waitForURL((u) => u.href.endsWith(target), { timeout: 3000 }).catch(() => {});
+          if (!page.url().endsWith(target)) problems.push(`${width}px ${scheme} ${track.id} #/s/${s.id}: nie przekierowuje do ${target} (${page.url()})`);
+          views++;
+          continue;
+        }
         await visit(`#/s/${s.id}`);
         // w trybie młodszego ucznia (young) nie ma sprawdzianu z przedmiotu – adres prowadzi na stronę przedmiotu
         await visit(`#/s/${s.id}/egzamin`, async () => { const o = await page.$('.opt'); if (o) await o.click(); });
