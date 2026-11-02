@@ -946,5 +946,317 @@ window.SUBJECTS.push({
         { id: 'vfpw4d', q: 'Ułóż chronologicznie (od najdawniejszego): zjazd gnieźnieński, koronacja Bolesława Chrobrego, chrzest Mieszka I.', options: ['chrzest (966) → zjazd (1000) → koronacja (1025)', 'zjazd (1000) → chrzest (966) → koronacja (1025)', 'koronacja (1025) → zjazd (1000) → chrzest (966)', 'chrzest (966) → koronacja (1025) → zjazd (1000)'], answer: 0, explain: 'Mniejsza liczba to dawniej: 966 → 1000 → 1025.' },
       ],
     },
+    {
+      id: 'rozbicie-dzielnicowe',
+      name: 'Rozbicie dzielnicowe',
+      basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 11 „Ziemie polskie w okresie rozbicia dzielnicowego”, wym. 1 (przyczyny i skutki rozbicia dzielnicowego po śmierci Bolesława Krzywoustego: pryncypat, zasada senioratu), wym. 2 (przyczyny i skutki sprowadzenia Zakonu Krzyżackiego), wym. 3 (przemiany społeczno-gospodarcze i ich wpływ na losy regionu), wym. 4 (zabytki sztuki romańskiej i gotyckiej w Polsce i ich ochrona – moduł kultura). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Rozbicie dzielnicowe”, „Testament Bolesława Krzywoustego i jego skutki”, „Państwo zakonu krzyżackiego”, „Przemiany społeczno-gospodarcze na ziemiach polskich oraz społeczno-kulturowe skutki kolonizacji na prawie niemieckim”) i na dzieje.pl (Drzwi Gnieźnieńskie – XII w.; zamek w Malborku – siedziba wielkich mistrzów od 1309 r., na liście UNESCO od 1997 r.). Okres rozbicia: 1138–1320 (za ZPE). Oryginał „testamentu” Krzywoustego się nie zachował – podział znamy z kronik, dlatego dzielnice synów podano ogólnie. Sprowadzenie Krzyżaków datujemy „ok. 1226 r.” (dokument nadania ziemi chełmińskiej pochodzi z 1228 r.). Daty lokacji poszczególnych miast pominięto – podajemy tylko wiek.',
+      theory: `
+        <h3>Testament Bolesława Krzywoustego – 1138</h3>
+        <p>Książę <b>Bolesław Krzywousty</b> zmarł w <b>1138 r.</b> Przed śmiercią podzielił państwo między swoich synów – każdy dostał <b>dzielnicę</b>, czyli część kraju. Ten dokument nazywamy <b>testamentem Krzywoustego</b> (oryginał się nie zachował – wiemy o nim z kronik). Książę chciał, żeby synowie nie walczyli ze sobą o tron.</p>
+        <table>
+          <tr><th>Syn</th><th>Dzielnica (w uproszczeniu)</th></tr>
+          <tr><td>Władysław (najstarszy) – <b>senior</b></td><td>Śląsk i <b>dzielnica senioralna</b> z <b>Krakowem</b></td></tr>
+          <tr><td>Bolesław Kędzierzawy</td><td>Mazowsze z Kujawami</td></tr>
+          <tr><td>Mieszko Stary</td><td>Wielkopolska</td></tr>
+          <tr><td>Henryk</td><td>ziemia sandomierska</td></tr>
+        </table>
+        <p>Najmłodszy syn, Kazimierz, był wtedy niemowlęciem i nie dostał dzielnicy.</p>
+        <h3>Zasada senioratu i pryncypat</h3>
+        <ul>
+          <li><b>Zasada senioratu</b> – najważniejszym władcą miał być zawsze <b>najstarszy</b> z rodu Piastów, czyli <b>senior</b>. (Łacińskie <i>senior</i> = starszy.)</li>
+          <li><b>Pryncypat</b> – zwierzchnia władza seniora nad całym krajem. Senior (princeps) rządził w Krakowie, dowodził obroną granic, prowadził rozmowy z innymi państwami, bił monety i mianował biskupów.</li>
+          <li>Młodsi bracia – <b>juniorzy</b> – rządzili w swoich dzielnicach, ale mieli słuchać seniora.</li>
+        </ul>
+        <h3>Dlaczego państwo się rozpadło?</h3>
+        <p>Plan się nie udał. Pierwszy senior, Władysław, chciał rządzić całym krajem sam. Bracia pokonali go i wygnali z Polski (1146 r.) – dlatego nazywamy go <b>Władysławem Wygnańcem</b>. Potem książęta dzielili swoje ziemie między własnych synów, więc dzielnice rozpadały się na coraz mniejsze <b>księstwa</b>. W XIII w. było ich prawie 20! Książęta walczyli między sobą o Kraków. Ten okres – od <b>1138 do 1320 r.</b> – nazywamy <b>rozbiciem dzielnicowym</b>.</p>
+        <h3>Skutki rozbicia</h3>
+        <ul>
+          <li>Małe księstwa były <b>słabe</b> – trudniej było obronić się przed sąsiadami i najazdami (np. Prusów, Litwinów i Mongołów).</li>
+          <li>W <b>1241 r.</b> do Polski wtargnęli <b>Mongołowie</b> (Tatarzy). W bitwie pod <b>Legnicą</b> zginął książę <b>Henryk Pobożny</b>.</li>
+          <li>Mimo podziału przetrwało poczucie wspólnoty: ten sam ród władców (Piastowie), ten sam język, wspólny Kościół z arcybiskupem w Gnieźnie i pamięć o jednym Królestwie Polskim.</li>
+        </ul>
+        <h3>Krzyżacy – skąd się wzięli w Polsce?</h3>
+        <p>Na północ od Mazowsza żyli <b>Prusowie</b> – plemiona, które nie były chrześcijańskie. Często napadali na Mazowsze. Około <b>1226 r.</b> książę <b>Konrad Mazowiecki</b> poprosił o pomoc <b>Zakon Krzyżacki</b> – zakon rycerski, czyli wspólnotę rycerzy-zakonników (nosili białe płaszcze z czarnym krzyżem). W zamian dał im <b>ziemię chełmińską</b>.</p>
+        <ul>
+          <li><b>Przyczyny</b>: obrona Mazowsza przed Prusami, chęć nawrócenia Prusów.</li>
+          <li><b>Skutki</b>: Krzyżacy podbili Prusów (do 1283 r.) i założyli <b>własne państwo zakonne</b>. Nie chcieli słuchać polskich książąt. Wyrósł bardzo silny i groźny sąsiad. W 1308–1309 r. Krzyżacy zajęli <b>Pomorze Gdańskie</b>. Od 1309 r. ich stolicą był <b>Malbork</b>.</li>
+        </ul>
+        <h3>Nowe wsie i miasta – lokacja na prawie niemieckim</h3>
+        <p>W XIII w. książęta i inni właściciele ziemi sprowadzali <b>osadników</b> – głównie z Niemiec i Flandrii – a także zakładali nowe wsie i miasta dla miejscowej ludności. Założenie osady według nowych zasad nazywamy <b>lokacją na prawie niemieckim</b>.</p>
+        <ul>
+          <li><b>Zasadźca</b> sprowadzał osadników. Potem zostawał <b>sołtysem</b> we wsi albo <b>wójtem</b> w mieście.</li>
+          <li>Chłopi byli <b>wolni osobiście</b>, dostawali ziemię i płacili panu stałą opłatę – <b>czynsz</b>. Na początku mieli <b>wolniznę</b> – czas bez opłat (czasem nawet ponad 20 lat), żeby urządzić gospodarstwo.</li>
+          <li>Upowszechnił się <b>ciężki pług</b> z żelaznym lemieszem (zamiast drewnianego radła) i <b>trójpolówka</b> – ziemię dzielono na trzy pola: jedno obsiane zbożem ozimym, drugie jarym, a trzecie odpoczywało (ugór). Plony były większe.</li>
+          <li>Miasto miało <b>rynek</b> z <b>ratuszem</b>, ulice jak na <b>szachownicy</b> i <b>mury obronne</b>. Rządził nim <b>samorząd</b>: <b>rada miejska</b> z <b>burmistrzem</b> oraz wójt z ławnikami, którzy sądzili.</li>
+          <li>W XIII w. lokowano m.in. Wrocław, Kraków i Poznań.</li>
+        </ul>
+        <div class="tip">💡 Sprawdź, kiedy lokowano twoje miasto albo najbliższe miasto. Czy ma rynek z ratuszem i ulice jak na szachownicy?</div>
+        <h3>Zabytki romańskie i gotyckie w Polsce</h3>
+        <table>
+          <tr><th>Styl romański</th><th>Styl gotycki</th></tr>
+          <tr><td>kolegiata w <b>Tumie</b> pod Łęczycą; <b>Drzwi Gnieźnieńskie</b> – brązowe drzwi katedry w Gnieźnie z XII w. ze scenami z życia św. Wojciecha</td><td><b>zamek w Malborku</b> – siedziba wielkich mistrzów krzyżackich, największa ceglana budowla gotycka w Europie (na liście UNESCO); kościół Mariacki w Krakowie; kościół Mariacki w Gdańsku</td></tr>
+        </table>
+        <p><b>Dlaczego chronimy zabytki?</b> Są świadkami przeszłości – uczą nas historii. Zniszczonego zabytku nie da się naprawdę odtworzyć. Są ważne dla mieszkańców regionu i przyciągają turystów. Dlatego nie wolno ich niszczyć, np. malować po murach.</p>
+      `,
+      flashcards: [
+        ['Testament Krzywoustego (1138 r.)', 'Podział państwa między synów Bolesława Krzywoustego – początek rozbicia dzielnicowego'],
+        ['Rozbicie dzielnicowe', 'Okres 1138–1320, gdy Polska była podzielona na dzielnice i coraz mniejsze księstwa'],
+        ['Zasada senioratu', 'Najważniejszym władcą jest zawsze najstarszy z rodu Piastów (senior)'],
+        ['Pryncypat', 'Zwierzchnia władza seniora nad całym krajem (obrona, sprawy zagraniczne, monety)'],
+        ['Dzielnica senioralna', 'Ziemie seniora z Krakowem – miały należeć do najstarszego Piasta'],
+        ['Senior i juniorzy', 'Senior – najstarszy, najważniejszy książę; juniorzy – młodsi bracia w swoich dzielnicach'],
+        ['Władysław Wygnaniec', 'Pierwszy senior; chciał rządzić sam, bracia wygnali go z kraju (1146)'],
+        ['1241 r.', 'Najazd Mongołów; bitwa pod Legnicą – zginął Henryk Pobożny'],
+        ['Konrad Mazowiecki', 'Książę, który ok. 1226 r. sprowadził Krzyżaków do obrony Mazowsza przed Prusami'],
+        ['Zakon Krzyżacki', 'Zakon rycerski; dostał ziemię chełmińską, podbił Prusów i założył własne państwo'],
+        ['Malbork', 'Od 1309 r. stolica państwa krzyżackiego; gotycki zamek z cegły'],
+        ['Lokacja na prawie niemieckim', 'Zakładanie wsi i miast według nowych zasad: czynsz, wolność osobista, samorząd'],
+        ['Sołtys / wójt', 'Zasadźca, który sprowadził osadników: we wsi – sołtys, w mieście – wójt'],
+        ['Wolnizna', 'Okres zwolnienia osadników z opłat na początku gospodarowania'],
+        ['Czynsz', 'Stała opłata, którą chłop płacił panu za ziemię'],
+        ['Trójpolówka', 'Podział ziemi na 3 pola: zboże ozime, zboże jare, ugór (odpoczywa)'],
+        ['Drzwi Gnieźnieńskie', 'Romańskie brązowe drzwi katedry w Gnieźnie (XII w.), sceny z życia św. Wojciecha'],
+      ],
+      questions: [
+        { id: '5gikbz', q: 'W którym roku zmarł Bolesław Krzywousty i zaczęło się rozbicie dzielnicowe?', options: ['1025', '1138', '1241', '1320'], answer: 1, explain: 'Krzywousty zmarł w 1138 r., po podzieleniu państwa między synów. Rozbicie trwało do 1320 r.' },
+        { id: '05blqf', q: 'Dlaczego Bolesław Krzywousty podzielił państwo między synów?', options: ['chciał, żeby synowie nie walczyli o tron', 'chciał oddać Polskę cesarzowi', 'tak nakazali mu Krzyżacy', 'żaden z synów nie chciał rządzić'], answer: 0, explain: 'Krzywousty chciał zapobiec walce synów o władzę. Każdy dostał dzielnicę, a najstarszy miał być najważniejszy.' },
+        { id: 'z8987a', q: 'Na czym polegała zasada senioratu?', options: ['rządzi najmłodszy syn władcy', 'władcę wybierają mieszkańcy miast', 'najważniejszym władcą jest najstarszy z rodu Piastów', 'kraj ma dwóch równych królów'], answer: 2, explain: 'Senior to najstarszy Piast. Miał zwierzchnią władzę (pryncypat) i rządził w Krakowie.' },
+        { id: 'gk4dkq', q: 'Co oznacza pojęcie „pryncypat”?', options: ['zwierzchnią władzę seniora nad całym krajem', 'podział ziemi na trzy pola', 'opłatę za ziemię', 'zakon rycerski'], answer: 0, explain: 'Pryncypat to władza seniora (princepsa): obrona granic, sprawy zagraniczne, bicie monet, mianowanie biskupów.' },
+        { id: '8m91m0', q: 'Które miasto należało do dzielnicy senioralnej?', options: ['Gniezno', 'Kraków', 'Płock', 'Sandomierz'], answer: 1, explain: 'Senior rządził w Krakowie – kto miał Kraków, miał władzę zwierzchnią. Dlatego książęta tak długo walczyli o to miasto.' },
+        { id: '352ycw', q: 'Skąd wziął się przydomek Władysława Wygnańca?', options: ['wygnał Krzyżaków z Polski', 'wygnał Mongołów spod Legnicy', 'bracia wygnali go z kraju', 'wygnał wszystkich osadników'], answer: 2, explain: 'Władysław chciał rządzić sam, bez braci. Juniorzy pokonali go i wygnali z Polski (1146 r.).' },
+        { id: 'r1d4p8', q: 'Który skutek rozbicia dzielnicowego był najgroźniejszy dla Polski?', options: ['powstanie nowych miast', 'słabe, małe księstwa trudno było obronić przed najazdami', 'upowszechnienie trójpolówki', 'zbudowanie kościoła Mariackiego'], answer: 1, explain: 'Podzielony kraj był słaby. Najeżdżali go m.in. Prusowie, Litwini i Mongołowie. Nowe miasta i trójpolówka to zmiany korzystne.' },
+        { id: 'v0yvxz', q: 'Kto zginął w bitwie z Mongołami pod Legnicą w 1241 r.?', options: ['Henryk Pobożny', 'Bolesław Chrobry', 'Konrad Mazowiecki', 'Władysław Łokietek'], answer: 0, explain: 'Książę Henryk Pobożny zginął pod Legnicą, walcząc z Mongołami (Tatarami).' },
+        { id: 'dj4bup', q: 'Co mimo rozbicia łączyło ziemie polskie?', options: ['jeden król w Krakowie', 'wspólna armia', 'ten sam ród władców, język i Kościół z arcybiskupem w Gnieźnie', 'wspólna stolica w Malborku'], answer: 2, explain: 'Książęta byli Piastami, ludzie mówili tym samym językiem, a Kościół miał wspólnego arcybiskupa w Gnieźnie. Króla wtedy nie było.' },
+        { id: '1uxcj0', q: 'Kto sprowadził Krzyżaków do Polski?', options: ['Bolesław Krzywousty', 'Kazimierz Wielki', 'Henryk Pobożny', 'Konrad Mazowiecki'], answer: 3, explain: 'Konrad Mazowiecki sprowadził Krzyżaków ok. 1226 r., żeby bronili Mazowsza przed Prusami.' },
+        { id: '7zhl47', q: 'Dlaczego Konrad Mazowiecki sprowadził Krzyżaków?', options: ['do obrony Mazowsza przed napadami Prusów', 'do budowy kościołów w Krakowie', 'żeby koronowali go na króla', 'do walki z Mongołami pod Legnicą'], answer: 0, explain: 'Pogańscy Prusowie napadali na Mazowsze. Krzyżacy mieli ich pokonać i nawrócić.' },
+        { id: '9eqd5y', q: 'Jaką ziemię dostali Krzyżacy od Konrada Mazowieckiego?', options: ['Pomorze Gdańskie', 'ziemię chełmińską', 'Śląsk', 'ziemię sandomierską'], answer: 1, explain: 'Krzyżacy dostali ziemię chełmińską. Pomorze Gdańskie zajęli sami znacznie później (1308–1309).' },
+        { id: '55ghup', q: 'Jaki był skutek sprowadzenia Krzyżaków?', options: ['Prusowie podbili Mazowsze', 'Krzyżacy zostali poddanymi księcia mazowieckiego', 'Krzyżacy wyjechali po roku', 'powstało silne państwo zakonne, groźne dla Polski'], answer: 3, explain: 'Krzyżacy podbili Prusów i założyli własne państwo. Nie słuchali polskich książąt i zajęli Pomorze Gdańskie.' },
+        { id: 'j02w6w', q: 'Które miasto było od 1309 r. stolicą państwa krzyżackiego?', options: ['Malbork', 'Gniezno', 'Legnica', 'Kraków'], answer: 0, explain: 'Stolicą Krzyżaków był Malbork z ogromnym gotyckim zamkiem z cegły.' },
+        { id: 'ughn9i', q: 'Kim był sołtys we wsi lokowanej na prawie niemieckim?', options: ['księciem seniorem', 'zasadźcą, który sprowadził osadników i kierował wsią', 'rycerzem zakonnym', 'burmistrzem miasta'], answer: 1, explain: 'Zasadźca sprowadzał osadników i zostawał sołtysem we wsi (w mieście – wójtem).' },
+        { id: 'fdcpe1', q: 'Co to była wolnizna?', options: ['podatek dla księcia', 'wolny dzień w tygodniu', 'czas, w którym osadnicy nie płacili opłat', 'nazwa nowego pługa'], answer: 2, explain: 'Na początku osadnicy mieli wolniznę – lata bez opłat, żeby karczować las i urządzić gospodarstwo. Potem płacili czynsz.' },
+        { id: 'x2rpg0', q: 'Na czym polegała trójpolówka?', options: ['na sianiu jednego zboża co roku na całym polu', 'na dzieleniu ziemi na trzy pola: zboże ozime, zboże jare i ugór', 'na oraniu trzema pługami naraz', 'na zbieraniu plonów trzy razy w roku'], answer: 1, explain: 'Jedno pole obsiewano zbożem ozimym, drugie jarym, a trzecie odpoczywało. Co roku pola się zmieniały.' },
+        { id: 'l9lny5', q: 'Co było w centrum miasta lokowanego na prawie niemieckim?', options: ['rynek z ratuszem', 'zamek krzyżacki', 'wał z drewna i ziemi', 'pole uprawne'], answer: 0, explain: 'W środku był rynek z ratuszem, ulice tworzyły szachownicę, a miasto otaczały mury obronne.' },
+        { id: 'gylued', q: 'Kto rządził miastem lokowanym na prawie niemieckim?', options: ['wyłącznie książę', 'wielki mistrz', 'senior z Krakowa', 'samorząd: rada miejska z burmistrzem oraz wójt z ławnikami'], answer: 3, explain: 'Miasta miały samorząd. Rada z burmistrzem zarządzała miastem, a wójt z ławnikami sądził.' },
+        { id: 'fie0v9', q: 'Który zabytek jest przykładem sztuki romańskiej?', options: ['zamek w Malborku', 'kościół Mariacki w Krakowie', 'Drzwi Gnieźnieńskie', 'kościół Mariacki w Gdańsku'], answer: 2, explain: 'Brązowe Drzwi Gnieźnieńskie pochodzą z XII w. – to sztuka romańska. Pozostałe budowle są gotyckie.' },
+        { id: 'perr4b', q: 'Która budowla to największa ceglana budowla gotycka w Europie?', options: ['kolegiata w Tumie', 'zamek w Malborku', 'rotunda na Wawelu', 'Drzwi Gnieźnieńskie'], answer: 1, explain: 'Zamek w Malborku był siedzibą wielkich mistrzów krzyżackich. Jest na liście światowego dziedzictwa UNESCO.' },
+        { id: '0q02bm', q: 'Prawda czy fałsz?\nZasada senioratu na długo zapewniła jedność Polski.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Nie udało się. Bracia walczyli z seniorem, a dzielnice rozpadały się na coraz mniejsze księstwa.' },
+      ],
+    },
+    {
+      id: 'ostatni-piastowie',
+      name: 'Polska ostatnich Piastów',
+      basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 12 „Zjednoczone królestwo – Polska ostatnich Piastów”, wym. 1 (dokonania Władysława Łokietka i Kazimierza Wielkiego: Akademia Krakowska, koronacja, monarchia stanowa), wym. 2 (daty koronacji Władysława Łokietka i wygaśnięcia dynastii Piastów na tronie Polski oraz ich znaczenie), wym. 3 (zmiany terytorialne państwa ostatnich Piastów na mapie). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Rządy Kazimierza Wielkiego”, „Polityka zagraniczna Kazimierza Wielkiego”, „Konflikt z Krzyżakami i Czechami”, „Rozbicie dzielnicowe”, „Zastał Polskę drewnianą – sukcesy polityki wewnętrznej Kazimierza Wielkiego”): koronacja Łokietka 20.01.1320 w Krakowie, bitwa pod Płowcami 1331 (nierozstrzygnięta), koronacja Kazimierza 1333, układ w Wyszehradzie 1335, pokój kaliski 1343 (powrót Kujaw i ziemi dobrzyńskiej, Pomorze Gdańskie przy Krzyżakach), pokój w Namysłowie 1348 (Śląsk przy Czechach), przyłączanie Rusi Halickiej (1340–1366, Lwów 1349), zwierzchnictwo nad Mazowszem (1351), statut wiślicki, Akademia Krakowska 1364 (kształcenie prawników), zjazd monarchów w Krakowie 1364, śmierć Kazimierza w 1370 r. i następca – Ludwik Węgierski (Andegaweński), siostrzeniec. Powiedzenie o „Polsce drewnianej i murowanej” zapisał kronikarz Jan Długosz prawie sto lat po śmierci króla – historycy traktują je jako uproszczenie. Zasięg ziem podano schematycznie.',
+      theory: `
+        <h3>Władysław Łokietek jednoczy kraj</h3>
+        <p><b>Władysław Łokietek</b> był księciem kujawskim z rodu Piastów. Przez wiele lat walczył o zjednoczenie ziem polskich. Przydomek „Łokietek” zawdzięczał niskiemu wzrostowi (łokieć to dawna miara długości).</p>
+        <ul>
+          <li>W 1308–1309 r. Krzyżacy podstępem zajęli <b>Pomorze Gdańskie</b>. Łokietek nie zdołał go odzyskać.</li>
+          <li><b>20 stycznia 1320 r.</b> Łokietek został <b>koronowany na króla Polski</b> w katedrze w <b>Krakowie</b>. To koniec rozbicia dzielnicowego. Od tej pory przez kilkaset lat koronacje polskich królów odbywały się zwykle w Krakowie.</li>
+          <li>W <b>1331 r.</b> rycerstwo Łokietka starło się z Krzyżakami pod <b>Płowcami</b>. Bitwa była nierozstrzygnięta, ale pokazała, że z Krzyżakami można walczyć.</li>
+          <li>Łokietek zmarł w 1333 r. Zostawił królestwo złożone głównie z <b>Wielkopolski i Małopolski</b>. Śląsk, Mazowsze i Pomorze Gdańskie były poza jego granicami.</li>
+        </ul>
+        <p><b>Znaczenie koronacji z 1320 r.</b>: znów było jedno <b>Królestwo Polskie</b> z królem na czele – silniejsze i uznawane w Europie.</p>
+        <p><b>Koronacja</b> – uroczyste nałożenie korony nowemu królowi, znak, że obejmuje władzę.</p>
+        <h3>Kazimierz Wielki – dyplomata</h3>
+        <p>Syn Łokietka, <b>Kazimierz Wielki</b>, rządził w latach <b>1333–1370</b>. Wolał rozmowy i umowy (<b>dyplomację</b>) od wojen.</p>
+        <ul>
+          <li><b>1335 r.</b> – w Wyszehradzie zapłacił królowi Czech, żeby ten zrezygnował z prawa do korony polskiej.</li>
+          <li><b>1343 r.</b> – <b>pokój w Kaliszu</b> z Krzyżakami: Polska odzyskała <b>Kujawy i ziemię dobrzyńską</b>, ale <b>Pomorze Gdańskie zostało przy Krzyżakach</b>.</li>
+          <li><b>1348 r.</b> – uznał, że <b>Śląsk</b> należy do Czech.</li>
+          <li>Na wschodzie przyłączył <b>Ruś Halicką</b> ze <b>Lwowem</b>.</li>
+          <li>Książęta <b>Mazowsza</b> złożyli mu hołd – uznali go za swojego zwierzchnika.</li>
+        </ul>
+        <h3>Reformy Kazimierza Wielkiego</h3>
+        <ul>
+          <li><b>Prawo</b>: kazał spisać prawa – <b>statuty</b> (np. statut wiślicki). Sędziowie mieli sądzić według tych samych zasad.</li>
+          <li><b>Pieniądz</b>: w Krakowie działała mennica królewska, w której bito monety.</li>
+          <li><b>Budowy</b>: zakładał nowe miasta (np. Kazimierz pod Krakowem), budował zamki i mury obronne. Kronikarz Jan Długosz napisał o nim, że <b>„zastał Polskę drewnianą, a zostawił murowaną”</b>.</li>
+          <li><b>Rada królewska</b>: król rządził z pomocą najważniejszych dostojników.</li>
+          <li><b>Akademia Krakowska</b> – w <b>1364 r.</b> założył w Krakowie uczelnię – pierwszy uniwersytet w Polsce. Kształcili się tu głównie przyszli prawnicy. Dziś to Uniwersytet Jagielloński.</li>
+          <li>W 1364 r. w Krakowie spotkali się królowie i książęta z wielu krajów (zjazd monarchów) – Polska była szanowana w Europie.</li>
+        </ul>
+        <p><b>Monarchia stanowa</b> – państwo, w którym rządzi król, a społeczeństwo dzieli się na <b>stany</b> (duchowieństwo, rycerstwo, mieszczanie, chłopi) o różnych prawach i obowiązkach. Najważniejsze stany pomagają królowi rządzić. Za Kazimierza Wielkiego Polska stawała się monarchią stanową.</p>
+        <h3>Koniec dynastii Piastów na tronie – 1370</h3>
+        <p>Kazimierz Wielki zmarł w <b>1370 r.</b> Miał córki, ale nie miał syna, a kobiety nie dziedziczyły wtedy tronu. Na tym <b>skończyło się panowanie Piastów na tronie Polski</b> (książęta z tego rodu rządzili jeszcze długo m.in. na Mazowszu i Śląsku). Królem został <b>Ludwik Węgierski</b> (Andegaweński) – król Węgier, siostrzeniec Kazimierza.</p>
+        <p><b>Znaczenie</b>: na tron weszła nowa dynastia z zagranicy. Polska zaczęła się wiązać z innymi państwami przez osobę władcy.</p>
+        <table>
+          <tr><th>Data</th><th>Wydarzenie</th></tr>
+          <tr><td><b>1320</b></td><td><b>koronacja Władysława Łokietka</b> – koniec rozbicia dzielnicowego</td></tr>
+          <tr><td>1333</td><td>początek panowania Kazimierza Wielkiego</td></tr>
+          <tr><td>1343</td><td>pokój w Kaliszu – powrót Kujaw i ziemi dobrzyńskiej</td></tr>
+          <tr><td>1364</td><td>założenie Akademii Krakowskiej</td></tr>
+          <tr><td><b>1370</b></td><td><b>śmierć Kazimierza Wielkiego – koniec dynastii Piastów na tronie Polski</b></td></tr>
+        </table>
+        <h3>Jak zmieniły się granice? (1333 → 1370)</h3>
+        <table>
+          <tr><th>Zyskane</th><th>Poza granicami</th></tr>
+          <tr><td>Kujawy i ziemia dobrzyńska (1343), Ruś Halicka ze Lwowem, zwierzchnictwo nad Mazowszem</td><td>Pomorze Gdańskie (Krzyżacy), Śląsk (Czechy)</td></tr>
+        </table>
+      `,
+      flashcards: [
+        ['Władysław Łokietek', 'Książę kujawski, zjednoczył ziemie polskie; koronowany na króla w 1320 r.'],
+        ['1320 r.', 'Koronacja Władysława Łokietka w Krakowie – koniec rozbicia dzielnicowego'],
+        ['Koronacja', 'Uroczyste nałożenie korony nowemu królowi – znak objęcia władzy'],
+        ['Płowce (1331 r.)', 'Bitwa rycerstwa Łokietka z Krzyżakami – nierozstrzygnięta, ale dodała Polakom otuchy'],
+        ['Kazimierz Wielki', 'Syn Łokietka, król w latach 1333–1370; dyplomata, reformator, założyciel Akademii Krakowskiej'],
+        ['Pokój w Kaliszu (1343 r.)', 'Krzyżacy oddali Kujawy i ziemię dobrzyńską, zatrzymali Pomorze Gdańskie'],
+        ['Ruś Halicka', 'Ziemie ze Lwowem, przyłączone przez Kazimierza Wielkiego'],
+        ['Akademia Krakowska (1364 r.)', 'Pierwszy uniwersytet w Polsce, założony przez Kazimierza Wielkiego; dziś Uniwersytet Jagielloński'],
+        ['Statut', 'Spisany zbiór praw; za Kazimierza Wielkiego np. statut wiślicki'],
+        ['„Zastał Polskę drewnianą, a zostawił murowaną”', 'Słowa Jana Długosza o Kazimierzu Wielkim – budowniczym zamków, murów i miast'],
+        ['Monarchia stanowa', 'Państwo z królem, w którym społeczeństwo dzieli się na stany o różnych prawach, a najważniejsze stany pomagają rządzić'],
+        ['1370 r.', 'Śmierć Kazimierza Wielkiego – koniec dynastii Piastów na tronie Polski'],
+        ['Ludwik Węgierski', 'Król Węgier, siostrzeniec Kazimierza Wielkiego; król Polski od 1370 r.'],
+      ],
+      questions: [
+        { id: 'y35zgw', q: 'W którym roku Władysław Łokietek został koronowany na króla Polski?', options: ['1138', '1320', '1370', '1410'], answer: 1, explain: 'Koronacja Łokietka odbyła się 20 stycznia 1320 r. w Krakowie.' },
+        { id: 'osvo70', q: 'Jakie znaczenie miała koronacja Władysława Łokietka?', options: ['zakończyła rozbicie dzielnicowe – znów było jedno Królestwo Polskie', 'zaczęła rozbicie dzielnicowe', 'oznaczała chrzest Polski', 'oddała Polskę pod władzę Czech'], answer: 0, explain: 'Rok 1320 kończy rozbicie dzielnicowe. Królestwo Polskie znów miało króla.' },
+        { id: '33xaar', q: 'W którym mieście koronowano Władysława Łokietka?', options: ['w Gnieźnie', 'w Malborku', 'w Krakowie', 'w Poznaniu'], answer: 2, explain: 'Łokietek koronował się w katedrze w Krakowie. Później przez kilkaset lat koronacje odbywały się zwykle właśnie tam.' },
+        { id: '9a8y6t', q: 'Które ziemie zajęli Krzyżacy w latach 1308–1309?', options: ['Ruś Halicką', 'Pomorze Gdańskie', 'Mazowsze', 'Śląsk'], answer: 1, explain: 'Krzyżacy podstępem zajęli Pomorze Gdańskie z Gdańskiem. Łokietek nie zdołał go odzyskać.' },
+        { id: '3h960i', q: 'Z kim walczyło rycerstwo Łokietka pod Płowcami w 1331 r.?', options: ['z Mongołami', 'z Rzymianami', 'z Czechami', 'z Krzyżakami'], answer: 3, explain: 'Pod Płowcami walczono z Krzyżakami. Bitwa była nierozstrzygnięta, ale pokazała, że można ich pokonać.' },
+        { id: '6hjv71', q: 'Kim był Kazimierz Wielki dla Władysława Łokietka?', options: ['synem', 'bratem', 'wnukiem', 'teściem'], answer: 0, explain: 'Kazimierz Wielki był synem Łokietka. Panował po nim w latach 1333–1370.' },
+        { id: 'j39ytw', q: 'Co Polska odzyskała na mocy pokoju w Kaliszu (1343 r.)?', options: ['Pomorze Gdańskie', 'Śląsk', 'Kujawy i ziemię dobrzyńską', 'Prusy'], answer: 2, explain: 'Krzyżacy oddali Kujawy i ziemię dobrzyńską, ale zatrzymali Pomorze Gdańskie.' },
+        { id: 'gmm7lq', q: 'Jakie ziemie przyłączył Kazimierz Wielki na wschodzie?', options: ['Ruś Halicką ze Lwowem', 'Pomorze Gdańskie', 'Litwę', 'Łużyce'], answer: 0, explain: 'Kazimierz przyłączył Ruś Halicką ze Lwowem. Pomorze Gdańskie pozostało przy Krzyżakach.' },
+        { id: 'i8080x', q: 'Którą krainę Kazimierz Wielki uznał za część Czech?', options: ['Mazowsze', 'Śląsk', 'Kujawy', 'Wielkopolskę'], answer: 1, explain: 'W 1348 r. Kazimierz uznał, że Śląsk należy do Czech – w zamian za spokój na zachodzie.' },
+        { id: '67i7x9', q: 'W którym roku Kazimierz Wielki założył Akademię Krakowską?', options: ['1320', '1343', '1364', '1410'], answer: 2, explain: 'Akademia Krakowska powstała w 1364 r. To pierwszy uniwersytet w Polsce – dziś Uniwersytet Jagielloński.' },
+        { id: 'ovwhd8', q: 'Kogo kształciła przede wszystkim Akademia Krakowska założona przez Kazimierza Wielkiego?', options: ['rycerzy zakonnych', 'przyszłych prawników', 'kowali i cieśli', 'żeglarzy'], answer: 1, explain: 'Państwo potrzebowało ludzi znających prawo – urzędników i sędziów.' },
+        { id: '5f7kio', q: 'O kim Jan Długosz napisał, że „zastał Polskę drewnianą, a zostawił murowaną”?', options: ['o Mieszku I', 'o Bolesławie Krzywoustym', 'o Władysławie Łokietku', 'o Kazimierzu Wielkim'], answer: 3, explain: 'Tak pisano o Kazimierzu Wielkim, który budował zamki, mury obronne i zakładał miasta.' },
+        { id: 'svhqkt', q: 'Czym jest statut?', options: ['spisanym zbiorem praw', 'rodzajem monety', 'zamkiem obronnym', 'uroczystością koronacji'], answer: 0, explain: 'Statut to spisane prawo. Za Kazimierza Wielkiego spisano m.in. statut wiślicki.' },
+        { id: 'uf0ize', q: 'Co to jest monarchia stanowa?', options: ['państwo bez króla', 'państwo z królem, w którym społeczeństwo dzieli się na stany, a najważniejsze stany pomagają rządzić', 'państwo rządzone przez zakon rycerski', 'państwo podzielone na dzielnice'], answer: 1, explain: 'W monarchii stanowej rządzi król, a stany (np. duchowieństwo, rycerstwo, mieszczanie) mają różne prawa i obowiązki.' },
+        { id: 'ibizw2', q: 'Dlaczego w 1370 r. skończyło się panowanie Piastów na tronie Polski?', options: ['Kazimierz Wielki zginął pod Grunwaldem', 'Kazimierz Wielki oddał tron Krzyżakom', 'Kazimierz Wielki zmarł bez syna, a kobiety nie dziedziczyły tronu', 'Piastowie przenieśli się na Węgry'], answer: 2, explain: 'Kazimierz miał tylko córki. Tron objął jego siostrzeniec, Ludwik Węgierski.' },
+        { id: '3donjo', q: 'Kto został królem Polski po śmierci Kazimierza Wielkiego?', options: ['Ludwik Węgierski', 'Władysław Łokietek', 'Bolesław Chrobry', 'Konrad Mazowiecki'], answer: 0, explain: 'Królem został Ludwik Węgierski (Andegaweński) – król Węgier i siostrzeniec Kazimierza.' },
+        {
+          id: '7kmt8u',
+          q: 'Którą literą na osi czasu oznaczono koniec dynastii Piastów na tronie Polski?',
+          svg: `<svg viewBox="0 0 360 130" role="img" aria-label="Oś czasu z czterema punktami: A – rok 1138, B – rok 1320, C – rok 1364, D – rok 1370">
+      <line x1="15" y1="60" x2="345" y2="60" class="ln sw"/>
+      <line x1="60" y1="50" x2="60" y2="70" class="ln sw"/>
+      <line x1="135" y1="50" x2="135" y2="70" class="ln sw"/>
+      <line x1="215" y1="50" x2="215" y2="70" class="ln sw"/>
+      <line x1="295" y1="50" x2="295" y2="70" class="ln sw"/>
+      <circle cx="60" cy="27" r="14" class="f4 s4 sw"/>
+      <circle cx="135" cy="27" r="14" class="f4 s4 sw"/>
+      <circle cx="215" cy="27" r="14" class="f4 s4 sw"/>
+      <circle cx="295" cy="27" r="14" class="f4 s4 sw"/>
+      <text x="60" y="33" class="tx-b" text-anchor="middle">A</text>
+      <text x="135" y="33" class="tx-b" text-anchor="middle">B</text>
+      <text x="215" y="33" class="tx-b" text-anchor="middle">C</text>
+      <text x="295" y="33" class="tx-b" text-anchor="middle">D</text>
+      <text x="60" y="95" class="tx" text-anchor="middle">1138</text>
+      <text x="135" y="95" class="tx" text-anchor="middle">1320</text>
+      <text x="215" y="95" class="tx" text-anchor="middle">1364</text>
+      <text x="295" y="95" class="tx" text-anchor="middle">1370</text>
+      <text x="180" y="122" class="tx-s" text-anchor="middle">oś czasu (odstępy nie są w skali)</text>
+    </svg>`,
+          options: ['A', 'B', 'C', 'D'],
+          noShuffle: true,
+          answer: 3,
+          explain: 'Kazimierz Wielki zmarł w 1370 r. – litera D. 1138 (A) to początek rozbicia dzielnicowego, 1320 (B) – koronacja Łokietka, 1364 (C) – założenie Akademii Krakowskiej.',
+        },
+        { id: 'av7ji6', q: 'Prawda czy fałsz?\nKazimierz Wielki odzyskał od Krzyżaków Pomorze Gdańskie.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Pomorze Gdańskie zostało przy Krzyżakach. W 1343 r. Polska odzyskała tylko Kujawy i ziemię dobrzyńską.' },
+        { id: 'ruyiaa', q: 'Ułóż chronologicznie (od najdawniejszego): założenie Akademii Krakowskiej, koronacja Łokietka, pokój w Kaliszu.', options: ['koronacja (1320) → pokój w Kaliszu (1343) → Akademia (1364)', 'Akademia (1364) → koronacja (1320) → pokój w Kaliszu (1343)', 'pokój w Kaliszu (1343) → koronacja (1320) → Akademia (1364)', 'koronacja (1320) → Akademia (1364) → pokój w Kaliszu (1343)'], answer: 0, explain: 'Mniejsza liczba to dawniej: 1320 → 1343 → 1364.' },
+      ],
+    },
+    {
+      id: 'polska-litwa',
+      name: 'Polska i Litwa przeciw Krzyżakom',
+      basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 13 „Początki państwa polsko-litewskiego i relacje z Krzyżakami”, wym. 1 (przyczyny i skutki sporu polsko-krzyżackiego oraz unii polsko-litewskiej: chrystianizacja, unia personalna), wym. 2 (data bitwy pod Grunwaldem; chronologia: umowa w Krewie, II pokój toruński), wym. 3 (zasięg Polski i Litwy oraz zmiany granic na mocy II pokoju toruńskiego na mapie), wym. 4 (wpływ Jadwigi i Władysława Jagiełły na odnowienie Akademii Krakowskiej – moduł kultura), wym. 5 (Zawisza Czarny jako ideał rycerza średniowiecznego, aktualność etosu rycerskiego – moduł kultura). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Od unii w Krewie do II pokoju toruńskiego”, „Jadwiga i Jagiełło”, „Wielka wojna z zakonem krzyżackim”, „Jadwiga Andegaweńska na polskim tronie”, „W kręgu kultury rycerskiej”, „Wojna trzynastoletnia i jej skutki”), na dzieje.pl (testament Jadwigi i odnowienie Akademii) i w materiałach o hołdach wielkich mistrzów po 1466 r.: koronacja Jadwigi 16.10.1384, umowa w Krewie 14.08.1385, chrzest i ślub Jagiełły oraz koronacja w 1386 r., chrzest Litwy 1387, odnowienie Akademii 1400, wielka wojna 1409–1411, Grunwald 15.07.1410 (Ulryk von Jungingen poległ; dwa nagie miecze), oblężenie Malborka (ok. dwóch miesięcy, nieudane), I pokój toruński 1411 (Żmudź dla Litwy, ziemia dobrzyńska dla Polski), wojna trzynastoletnia 1454–1466, II pokój toruński 1466 (Prusy Królewskie, hołd lenny wielkich mistrzów). Zawisza Czarny – „polegać jak na Zawiszy”, męstwo pod Grunwaldem, sława turniejowa, śmierć w 1428 r. w walce z Turkami. Obraz Zawiszy jako rycerza bez skazy to w dużej mierze legenda – zaznaczamy to w tekście.',
+      theory: `
+        <h3>Jadwiga – król Polski</h3>
+        <p>Po śmierci Ludwika Węgierskiego tron objęła jego córka <b>Jadwiga</b>. W <b>1384 r.</b> została koronowana na <b>króla</b> Polski (a nie królową) – tak podkreślono, że to ona ma pełnię władzy. Polscy możni szukali dla niej męża, który pomoże w walce z Krzyżakami.</p>
+        <h3>Litwa i Krzyżacy</h3>
+        <p><b>Wielkie Księstwo Litewskie</b> było ogromnym państwem na wschód od Polski. Litwini nie byli jeszcze chrześcijanami. Władcą był wielki książę <b>Jagiełło</b>. Krzyżacy najeżdżali Litwę, tłumacząc, że chcą ją nawrócić. Polska i Litwa miały więc <b>wspólnego wroga</b>.</p>
+        <h3>Umowa w Krewie – 1385</h3>
+        <p>W <b>1385 r.</b> w <b>Krewie</b> Jagiełło obiecał, że:</p>
+        <ul>
+          <li>przyjmie <b>chrzest</b> razem z poddanymi,</li>
+          <li><b>połączy Litwę z Polską</b>,</li>
+          <li>będzie się starał <b>odzyskać utracone ziemie</b> Polski.</li>
+        </ul>
+        <p>W zamian miał poślubić Jadwigę i zostać królem Polski. W <b>1386 r.</b> Jagiełło przyjął chrzest (imię <b>Władysław</b>), poślubił Jadwigę i został koronowany. W <b>1387 r.</b> nastąpił <b>chrzest Litwy</b>.</p>
+        <ul>
+          <li><b>Unia</b> – związek dwóch państw.</li>
+          <li><b>Unia personalna</b> – dwa państwa mają <b>wspólnego władcę</b>, ale każde ma swoje prawa i urzędy. (Łacińskie <i>persona</i> = osoba – łączy je osoba władcy.)</li>
+          <li><b>Chrystianizacja</b> – szerzenie chrześcijaństwa, nawracanie ludzi na tę wiarę. Chrzest Litwy odebrał Krzyżakom powód do najazdów.</li>
+        </ul>
+        <p><b>Skutki unii</b>: Polska i Litwa razem były silniejsze od Krzyżaków. Od Jagiełły pochodzi nowa dynastia – <b>Jagiellonowie</b>.</p>
+        <h3>Jadwiga, Jagiełło i Akademia Krakowska</h3>
+        <p>Uczelnia założona przez Kazimierza Wielkiego podupadła. Królowa <b>Jadwiga</b> zapisała w testamencie swoje <b>klejnoty</b> i kosztowności na jej odnowienie. Zmarła w 1399 r., a <b>Władysław Jagiełło</b> spełnił jej wolę – w <b>1400 r.</b> <b>odnowił Akademię Krakowską</b>. Dlatego dziś nosi ona nazwę <b>Uniwersytet Jagielloński</b>.</p>
+        <h3>Wielka wojna i Grunwald – 1410</h3>
+        <p>Spór o <b>Żmudź</b> (ziemię litewską zajętą przez Krzyżaków) doprowadził do <b>wielkiej wojny</b> (1409–1411).</p>
+        <ul>
+          <li><b>15 lipca 1410 r.</b> – <b>bitwa pod Grunwaldem</b>. Wojskami polsko-litewskimi dowodzili król <b>Władysław Jagiełło</b> i wielki książę litewski <b>Witold</b>. Krzyżakami – wielki mistrz <b>Ulryk von Jungingen</b>.</li>
+          <li>Przed bitwą posłowie krzyżaccy przynieśli królowi i Witoldowi <b>dwa nagie miecze</b> – było to wyzwanie do walki.</li>
+          <li>Krzyżacy ponieśli klęskę, a wielki mistrz poległ. To jedna z największych bitew średniowiecznej Europy.</li>
+          <li>Wojska oblegały potem <b>Malbork</b> przez około dwa miesiące, ale go nie zdobyły.</li>
+          <li><b>I pokój toruński (1411)</b>: Litwa odzyskała Żmudź, Polska – ziemię dobrzyńską. Krzyżacy byli osłabieni, ale nadal silni. Upadł jednak mit, że są niezwyciężeni.</li>
+        </ul>
+        <h3>Zawisza Czarny – wzór rycerza</h3>
+        <p><b>Zawisza Czarny z Garbowa</b> walczył pod Grunwaldem i słynął ze zwycięstw w <b>turniejach</b> rycerskich. Zginął w 1428 r. w walce z Turkami. Uważano go za ideał rycerza – mówimy do dziś: <b>„polegać jak na Zawiszy”</b>, czyli na kimś, kto nigdy nie zawiedzie.</p>
+        <p><b>Etos rycerski</b> – zasady, którymi miał się kierować dobry rycerz: <b>odwaga</b>, <b>wierność</b> danemu słowu i władcy, <b>honor</b>, uczciwa walka, <b>obrona słabszych</b>. Wiele opowieści o Zawiszy to legenda – ale pokazuje, kogo wtedy podziwiano.</p>
+        <div class="tip">💡 Do dyskusji: czy cechy dobrego rycerza są ważne także dziś? Kogo dziś nazwałbyś „Zawiszą” – na kim zawsze można polegać? Uzasadnij swoje zdanie.</div>
+        <h3>Wojna trzynastoletnia i II pokój toruński – 1466</h3>
+        <p>Mieszkańcy miast i rycerze z państwa krzyżackiego mieli dość rządów zakonu. W 1454 r. poprosili króla Polski o przyłączenie do Polski. Wybuchła <b>wojna trzynastoletnia</b> (1454–1466).</p>
+        <p><b>II pokój toruński (1466)</b>:</p>
+        <ul>
+          <li>Polska odzyskała <b>Pomorze Gdańskie</b> z Gdańskiem i <b>ziemię chełmińską</b>, a także zdobyła <b>Warmię</b>, <b>Malbork</b> i <b>Elbląg</b>. Te ziemie nazwano <b>Prusami Królewskimi</b>.</li>
+          <li>Polska odzyskała <b>dostęp do morza</b> i Gdańsk.</li>
+          <li>Reszta ziem zakonu, ze stolicą w <b>Królewcu</b>, to <b>Prusy Zakonne</b>. Wielki mistrz musiał składać królowi Polski <b>hołd lenny</b> – przysięgać mu wierność.</li>
+        </ul>
+        <table>
+          <tr><th>Data</th><th>Wydarzenie</th></tr>
+          <tr><td>1384</td><td>koronacja Jadwigi</td></tr>
+          <tr><td><b>1385</b></td><td><b>umowa w Krewie</b></td></tr>
+          <tr><td>1386 / 1387</td><td>Jagiełło królem Polski / chrzest Litwy</td></tr>
+          <tr><td>1400</td><td>odnowienie Akademii Krakowskiej</td></tr>
+          <tr><td><b>1410</b></td><td><b>bitwa pod Grunwaldem</b></td></tr>
+          <tr><td><b>1466</b></td><td><b>II pokój toruński</b></td></tr>
+        </table>
+      `,
+      flashcards: [
+        ['Jadwiga', 'Córka Ludwika Węgierskiego, koronowana na króla Polski w 1384 r.; żona Jagiełły'],
+        ['Jagiełło', 'Wielki książę litewski; po chrzcie Władysław, król Polski od 1386 r.'],
+        ['Umowa w Krewie (1385 r.)', 'Jagiełło obiecał chrzest, połączenie Litwy z Polską i odzyskanie ziem – w zamian za rękę Jadwigi i koronę'],
+        ['Unia personalna', 'Dwa państwa mają wspólnego władcę, ale osobne prawa i urzędy'],
+        ['Chrystianizacja', 'Szerzenie chrześcijaństwa, nawracanie ludzi na tę wiarę'],
+        ['1387 r.', 'Chrzest Litwy'],
+        ['Jagiellonowie', 'Dynastia wywodząca się od Władysława Jagiełły'],
+        ['Odnowienie Akademii Krakowskiej (1400 r.)', 'Jadwiga zapisała na nią klejnoty, Jagiełło odnowił uczelnię – dziś Uniwersytet Jagielloński'],
+        ['Bitwa pod Grunwaldem', '15 lipca 1410 r.; wojska polsko-litewskie (Jagiełło, Witold) pokonały Krzyżaków'],
+        ['Ulryk von Jungingen', 'Wielki mistrz krzyżacki; poległ pod Grunwaldem'],
+        ['Dwa nagie miecze', 'Wyzwanie do walki – miecze przyniesione przez posłów krzyżackich przed bitwą pod Grunwaldem'],
+        ['I pokój toruński (1411 r.)', 'Litwa odzyskała Żmudź, Polska – ziemię dobrzyńską'],
+        ['Zawisza Czarny z Garbowa', 'Słynny rycerz, walczył pod Grunwaldem; „polegać jak na Zawiszy” – na kimś, kto nie zawiedzie'],
+        ['Etos rycerski', 'Zasady dobrego rycerza: odwaga, wierność, honor, uczciwa walka, obrona słabszych'],
+        ['Wojna trzynastoletnia', 'Wojna Polski z Krzyżakami w latach 1454–1466'],
+        ['II pokój toruński (1466 r.)', 'Polska odzyskała Pomorze Gdańskie i ziemię chełmińską, zdobyła Warmię, Malbork i Elbląg (Prusy Królewskie)'],
+        ['Hołd lenny', 'Przysięga wierności składana zwierzchnikowi – po 1466 r. wielki mistrz składał ją królowi Polski'],
+      ],
+      questions: [
+        { id: 'tyxzo5', q: 'Na kogo koronowano Jadwigę w 1384 r.?', options: ['na króla Polski', 'na cesarzową', 'na wielką księżną litewską', 'na królową Węgier'], answer: 0, explain: 'Jadwigę koronowano na króla Polski – podkreślano tak, że to ona ma pełnię władzy.' },
+        { id: 'na0zjv', q: 'Co łączyło Polskę i Litwę pod koniec XIV w.?', options: ['wspólna stolica', 'wspólny wróg – Krzyżacy', 'ten sam język', 'wspólna wiara od X w.'], answer: 1, explain: 'Krzyżacy zajęli polskie ziemie i najeżdżali Litwę. Wspólny wróg zbliżył oba państwa.' },
+        { id: 'sryg3q', q: 'W którym roku zawarto umowę w Krewie?', options: ['1370', '1385', '1410', '1466'], answer: 1, explain: 'Umowę w Krewie zawarto w 1385 r. Rok później Jagiełło został królem Polski.' },
+        { id: '0eohn1', q: 'Co obiecał Jagiełło w Krewie?', options: ['oddać Litwę Krzyżakom', 'zrezygnować z tronu Polski', 'przyjąć chrzest z poddanymi i połączyć Litwę z Polską', 'przenieść stolicę do Malborka'], answer: 2, explain: 'Jagiełło obiecał chrzest, połączenie Litwy z Polską i odzyskanie utraconych ziem. W zamian poślubił Jadwigę i został królem.' },
+        { id: 'o2r58u', q: 'Co oznacza unia personalna?', options: ['dwa państwa mają wspólnego władcę, ale osobne prawa i urzędy', 'jedno państwo podbija drugie', 'państwo dzieli się na dzielnice', 'król rządzi z pomocą rady'], answer: 0, explain: 'Unia personalna łączy państwa osobą władcy (łac. persona – osoba). Każde państwo zachowuje swoje prawa.' },
+        { id: 'pxdlus', q: 'Czym jest chrystianizacja?', options: ['budową zamków', 'szerzeniem chrześcijaństwa', 'zakładaniem miast', 'spisywaniem praw'], answer: 1, explain: 'Chrystianizacja to nawracanie ludzi na chrześcijaństwo. Chrzest Litwy nastąpił w 1387 r.' },
+        { id: 'gx5lba', q: 'W którym roku nastąpił chrzest Litwy?', options: ['966', '1320', '1387', '1466'], answer: 2, explain: 'Litwa przyjęła chrzest w 1387 r. – rok po koronacji Jagiełły. Polska – w 966 r.' },
+        { id: '4wkc2g', q: 'Jak chrzest Litwy wpłynął na spór z Krzyżakami?', options: ['Krzyżacy stracili powód do najazdów pod pozorem nawracania', 'Krzyżacy zostali sojusznikami Litwy', 'Litwa stała się częścią państwa zakonnego', 'Krzyżacy wyjechali z Prus'], answer: 0, explain: 'Krzyżacy mówili, że walczą z poganami. Po chrzcie Litwy to tłumaczenie straciło sens.' },
+        { id: 'iwq4tc', q: 'Kto spełnił wolę Jadwigi i w 1400 r. odnowił Akademię Krakowską?', options: ['Kazimierz Wielki', 'Władysław Łokietek', 'Zawisza Czarny', 'Władysław Jagiełło'], answer: 3, explain: 'Jadwiga zapisała na uczelnię swoje klejnoty, a Jagiełło ją odnowił. Dlatego to Uniwersytet Jagielloński.' },
+        { id: 'haq73t', q: 'Co Jadwiga zapisała w testamencie na odnowienie Akademii Krakowskiej?', options: ['zamek w Malborku', 'swoje klejnoty i kosztowności', 'ziemię chełmińską', 'koronę Bolesława Chrobrego'], answer: 1, explain: 'Królowa przeznaczyła na uczelnię swoje klejnoty i kosztowności.' },
+        { id: 'zkyptw', q: 'Kiedy rozegrała się bitwa pod Grunwaldem?', options: ['15 lipca 1410 r.', '20 stycznia 1320 r.', '14 sierpnia 1385 r.', 'w 1466 r.'], answer: 0, explain: 'Bitwa pod Grunwaldem: 15 lipca 1410 r. W 1320 r. była koronacja Łokietka, w 1385 r. – umowa w Krewie.' },
+        { id: 'lt80tg', q: 'Kto dowodził wojskami polsko-litewskimi pod Grunwaldem?', options: ['Kazimierz Wielki i Łokietek', 'Ulryk von Jungingen', 'Władysław Jagiełło i Witold', 'Konrad Mazowiecki i Henryk Pobożny'], answer: 2, explain: 'Wojskami dowodzili król Władysław Jagiełło i wielki książę litewski Witold. Ulryk von Jungingen był wielkim mistrzem krzyżackim.' },
+        { id: 'kgaqoz', q: 'Co oznaczały dwa nagie miecze przyniesione przed bitwą pod Grunwaldem?', options: ['prośbę o pokój', 'dar na koronację', 'wyzwanie do walki', 'poddanie się Krzyżaków'], answer: 2, explain: 'Posłowie krzyżaccy przynieśli miecze królowi i Witoldowi jako wyzwanie. Ci przyjęli je i odpowiedzieli, że chcą walczyć.' },
+        { id: 'xl6pxt', q: 'Co się stało z wielkim mistrzem Ulrykiem von Jungingenem?', options: ['poległ w bitwie pod Grunwaldem', 'został królem Polski', 'uciekł na Litwę', 'założył Akademię Krakowską'], answer: 0, explain: 'Wielki mistrz poległ pod Grunwaldem razem z wieloma rycerzami zakonnymi.' },
+        { id: 'ggznjr', q: 'Jaki był skutek zwycięstwa pod Grunwaldem?', options: ['państwo krzyżackie od razu przestało istnieć', 'upadł mit niezwyciężoności Krzyżaków, a ich państwo zaczęło słabnąć', 'Polska zdobyła Malbork w ciągu jednego dnia', 'Litwa przyłączyła Polskę'], answer: 1, explain: 'Krzyżacy przegrali, ale Malborka nie zdobyto. Zakon był osłabiony, lecz przetrwał jeszcze długo.' },
+        { id: '85z1bj', q: 'Co oznacza powiedzenie „polegać jak na Zawiszy”?', options: ['ufać komuś, kto nigdy nie zawiedzie', 'bać się kogoś', 'nie dotrzymać słowa', 'zwyciężyć w turnieju'], answer: 0, explain: 'Zawisza Czarny uchodził za ideał rycerza – wiernego i niezawodnego.' },
+        { id: 'l97vys', q: 'Która cecha NIE należała do ideału średniowiecznego rycerza?', options: ['odwaga', 'wierność danemu słowu', 'obrona słabszych', 'podstęp i atak na bezbronnych'], answer: 3, explain: 'Dobry rycerz miał walczyć uczciwie, dotrzymywać słowa i bronić słabszych.' },
+        { id: 'fb8y7n', q: 'W jakich latach trwała wojna trzynastoletnia?', options: ['1409–1411', '1454–1466', '1138–1320', '1333–1370'], answer: 1, explain: 'Wojna trzynastoletnia trwała od 1454 do 1466 r. i zakończyła się II pokojem toruńskim.' },
+        { id: 'lujf41', q: 'Co Polska uzyskała na mocy II pokoju toruńskiego (1466 r.)?', options: ['Żmudź', 'Ruś Halicką', 'Pomorze Gdańskie, ziemię chełmińską, Warmię, Malbork i Elbląg', 'Śląsk'], answer: 2, explain: 'Te ziemie nazwano Prusami Królewskimi. Polska odzyskała dostęp do morza.' },
+        { id: 'ehejxp', q: 'Jak nazwano ziemie przyłączone do Polski w 1466 r.?', options: ['Prusy Zakonne', 'Prusy Królewskie', 'Ruś Halicka', 'dzielnica senioralna'], answer: 1, explain: 'Prusy Królewskie należały do Polski. Prusy Zakonne ze stolicą w Królewcu zostały przy zakonie.' },
+        { id: '7vzbi2', q: 'Co musiał robić wielki mistrz krzyżacki po II pokoju toruńskim?', options: ['składać hołd lenny królowi Polski', 'płacić czynsz sołtysowi', 'mieszkać w Krakowie', 'wybierać króla Polski'], answer: 0, explain: 'Wielki mistrz przysięgał wierność królowi Polski – składał mu hołd lenny.' },
+        { id: 'todw9u', q: 'Ułóż chronologicznie (od najdawniejszego): II pokój toruński, umowa w Krewie, bitwa pod Grunwaldem.', options: ['Grunwald (1410) → Krewo (1385) → II pokój toruński (1466)', 'Krewo (1385) → II pokój toruński (1466) → Grunwald (1410)', 'II pokój toruński (1466) → Grunwald (1410) → Krewo (1385)', 'Krewo (1385) → Grunwald (1410) → II pokój toruński (1466)'], answer: 3, explain: 'Mniejsza liczba to dawniej: 1385 → 1410 → 1466.' },
+        { id: '37c5xw', q: 'Prawda czy fałsz?\nPo bitwie pod Grunwaldem wojska polsko-litewskie zdobyły Malbork.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Malbork oblegano ok. dwóch miesięcy, ale go nie zdobyto. Do Polski przeszedł dopiero w czasie wojny trzynastoletniej (potwierdził to II pokój toruński w 1466 r.).' },
+      ],
+    },
   ],
 });

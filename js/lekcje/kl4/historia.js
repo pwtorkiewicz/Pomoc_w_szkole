@@ -1383,3 +1383,482 @@ window.LESSONS['historia/narodziny-polski'] = [
     check: { q: 'Co bada dendrochronologia?', options: ['wiek drewna na podstawie słojów', 'dawne pismo', 'pochodzenie monet'], answer: 0, explain: 'Każdy rok to jeden słój drewna. Dzięki temu można ustalić, kiedy ścięto drzewo użyte do budowy.' },
   },
 ];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['historia/rozbicie-dzielnicowe'] = [
+  {
+    title: 'Ojciec dzieli państwo – 1138',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Schemat: Bolesław Krzywousty w 1138 roku dzieli państwo między synów. Władysław – senior: Śląsk i dzielnica senioralna z Krakowem; Bolesław – Mazowsze z Kujawami; Mieszko – Wielkopolska; Henryk – ziemia sandomierska">
+      <defs><marker id="a-k4hi-rd-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="90" y="8" width="220" height="50" rx="12" class="f4 s4 sw"/>
+      <text x="200" y="30" class="tx-b" text-anchor="middle">Bolesław Krzywousty</text>
+      <text x="200" y="50" class="tx-s" text-anchor="middle">zmarł w 1138 r.</text>
+      <path d="M150,60 L56,100" class="ln" marker-end="url(#a-k4hi-rd-1)"/>
+      <path d="M185,60 L152,100" class="ln" marker-end="url(#a-k4hi-rd-1)"/>
+      <path d="M215,60 L248,100" class="ln" marker-end="url(#a-k4hi-rd-1)"/>
+      <path d="M250,60 L344,100" class="ln" marker-end="url(#a-k4hi-rd-1)"/>
+      <rect x="6" y="104" width="94" height="108" rx="10" class="f5 s5 sw"/>
+      <text x="53" y="126" class="tx-s" text-anchor="middle">Władysław</text>
+      <text x="53" y="146" class="tx-b" text-anchor="middle">senior</text>
+      <text x="53" y="168" class="tx-s" text-anchor="middle">Kraków</text>
+      <text x="53" y="186" class="tx-s" text-anchor="middle">+ Śląsk</text>
+      <rect x="104" y="104" width="94" height="108" rx="10" class="f3 s3"/>
+      <text x="151" y="126" class="tx-s" text-anchor="middle">Bolesław</text>
+      <text x="151" y="158" class="tx-s" text-anchor="middle">Mazowsze</text>
+      <text x="151" y="176" class="tx-s" text-anchor="middle">z Kujawami</text>
+      <rect x="202" y="104" width="94" height="108" rx="10" class="f3 s3"/>
+      <text x="249" y="126" class="tx-s" text-anchor="middle">Mieszko</text>
+      <text x="249" y="166" class="tx-s" text-anchor="middle">Wielkopolska</text>
+      <rect x="300" y="104" width="94" height="108" rx="10" class="f3 s3"/>
+      <text x="347" y="126" class="tx-s" text-anchor="middle">Henryk</text>
+      <text x="347" y="158" class="tx-s" text-anchor="middle">ziemia</text>
+      <text x="347" y="176" class="tx-s" text-anchor="middle">sandomierska</text>
+    </svg>`,
+    text: `<p>Książę <b>Bolesław Krzywousty</b> zmarł w <b>1138 r.</b> Przed śmiercią podzielił państwo między synów – każdy dostał <b>dzielnicę</b>, czyli część kraju. Ten podział nazywamy <b>testamentem Krzywoustego</b>.</p>
+      <p>Książę chciał, żeby synowie nie walczyli ze sobą o tron. Najstarszy, Władysław, dostał Śląsk i najważniejszą <b>dzielnicę senioralną</b> z <b>Krakowem</b>.</p>`,
+    remember: '1138 – testament Krzywoustego, początek rozbicia dzielnicowego.',
+    hook: 'Jak tort na urodziny: każdy syn dostał kawałek, a najstarszy – ten z wisienką (Kraków).',
+    check: { q: 'Dlaczego Krzywousty podzielił państwo?', options: ['żeby synowie nie walczyli o tron', 'bo kazali mu Krzyżacy', 'żeby oddać kraj cesarzowi'], answer: 0, explain: 'Każdy syn dostał dzielnicę, a najstarszy miał być najważniejszy – tak książę chciał uniknąć walk.' },
+  },
+  {
+    title: 'Senior i juniorzy',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Schemat zasady senioratu: na górze senior – najstarszy z Piastów – rządzi w Krakowie i ma pryncypat, czyli władzę zwierzchnią: obrona granic, sprawy z innymi państwami, monety, biskupi. Niżej juniorzy – młodsi bracia w swoich dzielnicach – mają słuchać seniora">
+      <defs><marker id="a-k4hi-rd-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="80" y="8" width="240" height="96" rx="12" class="f5 s5 sw"/>
+      <text x="200" y="34" class="tx-b" text-anchor="middle">👑 senior – najstarszy</text>
+      <text x="200" y="56" class="tx-s" text-anchor="middle">rządzi w Krakowie, ma pryncypat:</text>
+      <text x="200" y="74" class="tx-s" text-anchor="middle">obrona granic, inne państwa,</text>
+      <text x="200" y="92" class="tx-s" text-anchor="middle">monety, biskupi</text>
+      <path d="M110,150 L130,108" class="ln" marker-end="url(#a-k4hi-rd-2)"/>
+      <path d="M200,150 L200,108" class="ln" marker-end="url(#a-k4hi-rd-2)"/>
+      <path d="M290,150 L270,108" class="ln" marker-end="url(#a-k4hi-rd-2)"/>
+      <rect x="30" y="152" width="110" height="50" rx="10" class="f3 s3"/>
+      <rect x="145" y="152" width="110" height="50" rx="10" class="f3 s3"/>
+      <rect x="260" y="152" width="110" height="50" rx="10" class="f3 s3"/>
+      <text x="85" y="174" class="tx" text-anchor="middle">junior</text>
+      <text x="200" y="174" class="tx" text-anchor="middle">junior</text>
+      <text x="315" y="174" class="tx" text-anchor="middle">junior</text>
+      <text x="85" y="193" class="tx-s" text-anchor="middle">swoja dzielnica</text>
+      <text x="200" y="193" class="tx-s" text-anchor="middle">swoja dzielnica</text>
+      <text x="315" y="193" class="tx-s" text-anchor="middle">swoja dzielnica</text>
+    </svg>`,
+    text: `<p><b>Zasada senioratu</b>: najważniejszym władcą jest zawsze <b>najstarszy</b> z rodu Piastów – <b>senior</b>. Rządził w Krakowie.</p>
+      <p>Jego zwierzchnią władzę nazywamy <b>pryncypatem</b>: senior bronił granic, prowadził sprawy z innymi państwami, bił monety i mianował biskupów. Młodsi bracia – <b>juniorzy</b> – rządzili w swoich dzielnicach, ale mieli go słuchać.</p>`,
+    remember: 'Zasada senioratu – rządzi najstarszy Piast. Pryncypat – władza zwierzchnia seniora.',
+    hook: '<b>Senior</b> po łacinie znaczy „starszy” – jak <b>senior</b> w klubie, czyli najstarszy zawodnik.',
+  },
+  {
+    title: 'Państwo się kruszy',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Schemat: w 1138 roku cztery dzielnice; potem książęta dzielą je między swoich synów – w XIII wieku prawie 20 księstw. Skutki: małe księstwa są słabe, łatwo je napaść – Prusowie, Litwini, Mongołowie; w 1241 roku pod Legnicą ginie Henryk Pobożny">
+      <defs><marker id="a-k4hi-rd-3" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <text x="70" y="20" class="tx-s" text-anchor="middle">1138: 4 dzielnice</text>
+      <rect x="20" y="30" width="48" height="40" class="f3 s3"/>
+      <rect x="72" y="30" width="48" height="40" class="f3 s3"/>
+      <rect x="20" y="74" width="48" height="40" class="f3 s3"/>
+      <rect x="72" y="74" width="48" height="40" class="f3 s3"/>
+      <path d="M135,72 L185,72" class="ln sw" marker-end="url(#a-k4hi-rd-3)"/>
+      <text x="300" y="20" class="tx-s" text-anchor="middle">XIII w.: prawie 20 księstw</text>
+      <g class="f2 s2">
+        <rect x="210" y="30" width="30" height="20"/><rect x="244" y="30" width="30" height="20"/><rect x="278" y="30" width="30" height="20"/><rect x="312" y="30" width="30" height="20"/><rect x="346" y="30" width="30" height="20"/>
+        <rect x="210" y="54" width="30" height="20"/><rect x="244" y="54" width="30" height="20"/><rect x="278" y="54" width="30" height="20"/><rect x="312" y="54" width="30" height="20"/><rect x="346" y="54" width="30" height="20"/>
+        <rect x="210" y="78" width="30" height="20"/><rect x="244" y="78" width="30" height="20"/><rect x="278" y="78" width="30" height="20"/><rect x="312" y="78" width="30" height="20"/><rect x="346" y="78" width="30" height="20"/>
+        <rect x="210" y="102" width="30" height="12"/><rect x="244" y="102" width="30" height="12"/><rect x="278" y="102" width="30" height="12"/><rect x="312" y="102" width="30" height="12"/>
+      </g>
+      <rect x="10" y="132" width="380" height="80" rx="12" class="f1 s1"/>
+      <text x="200" y="156" class="tx-b" text-anchor="middle">⚠️ słabe księstwa – łatwy łup</text>
+      <text x="200" y="180" class="tx-s" text-anchor="middle">napady Prusów, Litwinów, Mongołów</text>
+      <text x="200" y="200" class="tx-s" text-anchor="middle">1241: Legnica – ginie Henryk Pobożny</text>
+    </svg>`,
+    text: `<p>Plan Krzywoustego się nie udał. Pierwszy senior, Władysław, chciał rządzić sam – bracia wygnali go z kraju, dlatego mówimy o nim <b>Władysław Wygnaniec</b>. Potem książęta dzielili ziemie między własnych synów i księstw było coraz więcej – w XIII w. prawie 20.</p>
+      <p>Ten czas (<b>1138–1320</b>) to <b>rozbicie dzielnicowe</b>. Małe księstwa były słabe. W <b>1241 r.</b> najechali Polskę <b>Mongołowie</b> – pod Legnicą zginął książę Henryk Pobożny. Ale ziemie polskie łączyły wciąż: ród Piastów, język i Kościół z arcybiskupem w Gnieźnie.</p>`,
+    remember: 'Rozbicie dzielnicowe: 1138–1320. Skutek: słabe państwo, najazdy (np. Mongołowie 1241).',
+    hook: 'Jedną gałązkę łatwo złamać, cały pęk – trudno. Tak było z podzieloną Polską.',
+    check: { q: 'Jaki był najgroźniejszy skutek rozbicia dzielnicowego?', options: ['słabe księstwa trudno było obronić', 'powstanie Akademii Krakowskiej', 'koronacja Chrobrego'], answer: 0, explain: 'Podzielony kraj był słaby – najeżdżali go m.in. Prusowie, Litwini i Mongołowie.' },
+  },
+  {
+    title: 'Krzyżacy nad Wisłą',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Łańcuch przyczyn i skutków: Prusowie napadają na Mazowsze; około 1226 roku Konrad Mazowiecki sprowadza Zakon Krzyżacki i daje mu ziemię chełmińską; Krzyżacy podbijają Prusów i tworzą własne państwo ze stolicą w Malborku; w latach 1308–1309 zajmują Pomorze Gdańskie">
+      <defs><marker id="a-k4hi-rd-4" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="10" width="180" height="60" rx="10" class="f2 s2"/>
+      <text x="100" y="35" class="tx" text-anchor="middle">Prusowie napadają</text>
+      <text x="100" y="56" class="tx-s" text-anchor="middle">na Mazowsze</text>
+      <path d="M192,40 L206,40" class="ln" marker-end="url(#a-k4hi-rd-4)"/>
+      <rect x="210" y="10" width="180" height="60" rx="10" class="f4 s4 sw"/>
+      <text x="300" y="32" class="tx-s" text-anchor="middle">ok. 1226: Konrad</text>
+      <text x="300" y="48" class="tx-s" text-anchor="middle">Mazowiecki sprowadza</text>
+      <text x="300" y="64" class="tx-s" text-anchor="middle">Krzyżaków</text>
+      <path d="M300,72 L300,86" class="ln" marker-end="url(#a-k4hi-rd-4)"/>
+      <rect x="210" y="90" width="180" height="56" rx="10" class="f3 s3"/>
+      <text x="300" y="113" class="tx-s" text-anchor="middle">dostają</text>
+      <text x="300" y="133" class="tx" text-anchor="middle">ziemię chełmińską</text>
+      <path d="M208,118 L194,118" class="ln" marker-end="url(#a-k4hi-rd-4)"/>
+      <rect x="10" y="90" width="180" height="56" rx="10" class="f5 s5"/>
+      <text x="100" y="113" class="tx-s" text-anchor="middle">podbijają Prusów,</text>
+      <text x="100" y="133" class="tx-s" text-anchor="middle">tworzą własne państwo</text>
+      <path d="M100,148 L100,162" class="ln" marker-end="url(#a-k4hi-rd-4)"/>
+      <rect x="10" y="166" width="380" height="56" rx="10" class="f1 s1 sw"/>
+      <text x="200" y="189" class="tx" text-anchor="middle">🏰 stolica: Malbork (od 1309)</text>
+      <text x="200" y="211" class="tx-s" text-anchor="middle">1308–1309: zajmują Pomorze Gdańskie</text>
+    </svg>`,
+    text: `<p>Na północ od Mazowsza żyli <b>Prusowie</b>, którzy nie byli chrześcijanami i napadali na sąsiadów. Około <b>1226 r.</b> książę <b>Konrad Mazowiecki</b> poprosił o pomoc <b>Zakon Krzyżacki</b> – zakon rycerski, czyli wspólnotę rycerzy-zakonników. W zamian dał im <b>ziemię chełmińską</b>.</p>
+      <p><b>Skutek</b>: Krzyżacy podbili Prusów i założyli <b>własne państwo</b> – silne i groźne dla Polski. W 1308–1309 r. zajęli Pomorze Gdańskie, a ich stolicą został <b>Malbork</b>.</p>`,
+    remember: 'Ok. 1226 – Konrad Mazowiecki sprowadza Krzyżaków (ziemia chełmińska). Skutek: groźne państwo zakonne.',
+    hook: 'Zaprosić gościa do pomocy, a on zostaje na zawsze i zabiera ci pokój – tak wyszło z Krzyżakami.',
+    check: { q: 'Kto sprowadził Krzyżaków?', options: ['Bolesław Krzywousty', 'Konrad Mazowiecki', 'Henryk Pobożny'], answer: 1, explain: 'Konrad Mazowiecki sprowadził ich ok. 1226 r. do walki z Prusami.' },
+  },
+  {
+    title: 'Nowe wsie i miasta',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Po lewej plan miasta lokowanego na prawie niemieckim: mury obronne, ulice jak szachownica, w środku rynek z ratuszem. Po prawej wieś: zasadźca zostaje sołtysem, chłopi płacą czynsz, a ziemię dzielą na trzy pola – zboże ozime, zboże jare i ugór">
+      <rect x="10" y="10" width="190" height="190" rx="16" class="bg ln sw"/>
+      <line x1="10" y1="73" x2="200" y2="73" class="ln-thin"/>
+      <line x1="10" y1="137" x2="200" y2="137" class="ln-thin"/>
+      <line x1="73" y1="10" x2="73" y2="200" class="ln-thin"/>
+      <line x1="137" y1="10" x2="137" y2="200" class="ln-thin"/>
+      <rect x="75" y="75" width="60" height="60" class="f4 s4"/>
+      <rect x="95" y="92" width="20" height="26" class="f2 s2"/>
+      <text x="105" y="70" class="tx-s" text-anchor="middle">rynek</text>
+      <text x="105" y="152" class="tx-s" text-anchor="middle">ratusz</text>
+      <text x="105" y="220" class="tx-s" text-anchor="middle">mury i ulice jak szachownica</text>
+      <rect x="215" y="10" width="175" height="62" rx="10" class="f5 s5"/>
+      <text x="302" y="34" class="tx-s" text-anchor="middle">zasadźca → sołtys</text>
+      <text x="302" y="56" class="tx-s" text-anchor="middle">chłopi płacą czynsz</text>
+      <rect x="215" y="84" width="175" height="36" class="f3 s3"/>
+      <rect x="215" y="124" width="175" height="36" class="f4 s4"/>
+      <rect x="215" y="164" width="175" height="36" class="bg ln dash"/>
+      <text x="302" y="107" class="tx-s" text-anchor="middle">zboże ozime</text>
+      <text x="302" y="147" class="tx-s" text-anchor="middle">zboże jare</text>
+      <text x="302" y="187" class="tx-s" text-anchor="middle">ugór (odpoczywa)</text>
+      <text x="302" y="220" class="tx-s" text-anchor="middle">trójpolówka</text>
+    </svg>`,
+    text: `<p>W XIII w. sprowadzano <b>osadników</b>, głównie z Niemiec i Flandrii, i zakładano nowe wsie i miasta – to <b>lokacja na prawie niemieckim</b>. <b>Zasadźca</b> sprowadzał ludzi i zostawał <b>sołtysem</b> we wsi albo <b>wójtem</b> w mieście. Chłopi byli wolni i płacili stały <b>czynsz</b>; na początku mieli <b>wolniznę</b> – lata bez opłat.</p>
+      <p>Lepszy był ciężki pług z żelaznym lemieszem i <b>trójpolówka</b>. Miasta miały <b>rynek z ratuszem</b>, ulice jak szachownica i mury, a rządziła nimi <b>rada miejska z burmistrzem</b> – samorząd. Tak lokowano m.in. Wrocław, Kraków i Poznań.</p>`,
+    remember: 'Lokacja: sołtys (wieś), wójt (miasto), czynsz, wolnizna, trójpolówka, rynek z ratuszem.',
+    hook: 'Wolnizna = <b>wolne</b> od opłat. Trójpolówka = <b>trzy</b> pola, jedno zawsze śpi.',
+  },
+  {
+    title: 'Zabytki – romańskie i gotyckie',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Porównanie zabytków w Polsce. Styl romański: kolegiata w Tumie pod Łęczycą i Drzwi Gnieźnieńskie z XII wieku. Styl gotycki: zamek w Malborku z cegły, kościół Mariacki w Krakowie i kościół Mariacki w Gdańsku. Na dole: chronimy zabytki – nie da się ich odtworzyć">
+      <rect x="10" y="10" width="185" height="150" rx="12" class="f2 s2"/>
+      <rect x="205" y="10" width="185" height="150" rx="12" class="f1 s1"/>
+      <text x="102" y="36" class="tx-b" text-anchor="middle">romański</text>
+      <text x="102" y="62" class="tx-s" text-anchor="middle">grube mury, małe okna</text>
+      <text x="102" y="92" class="tx-s" text-anchor="middle">kolegiata w Tumie</text>
+      <text x="102" y="118" class="tx-s" text-anchor="middle">Drzwi Gnieźnieńskie</text>
+      <text x="102" y="136" class="tx-s" text-anchor="middle">(XII w.)</text>
+      <text x="297" y="36" class="tx-b" text-anchor="middle">gotycki</text>
+      <text x="297" y="62" class="tx-s" text-anchor="middle">strzeliste, duże okna</text>
+      <text x="297" y="92" class="tx-s" text-anchor="middle">zamek w Malborku</text>
+      <text x="297" y="116" class="tx-s" text-anchor="middle">kościół Mariacki</text>
+      <text x="297" y="134" class="tx-s" text-anchor="middle">w Krakowie i w Gdańsku</text>
+      <rect x="10" y="170" width="380" height="42" rx="10" class="f3 s3"/>
+      <text x="200" y="196" class="tx" text-anchor="middle">🛡️ chronimy – nie da się ich odtworzyć</text>
+    </svg>`,
+    text: `<p>Z tamtych czasów zachowało się wiele <b>zabytków</b>. Styl <b>romański</b>: kolegiata w Tumie pod Łęczycą i brązowe <b>Drzwi Gnieźnieńskie</b> (XII w.) ze scenami z życia św. Wojciecha. Styl <b>gotycki</b>: <b>zamek w Malborku</b> – największa ceglana budowla gotycka w Europie – i kościoły Mariackie w Krakowie i Gdańsku.</p>
+      <p>Zabytki chronimy, bo są świadkami przeszłości, są ważne dla mieszkańców regionu, a zniszczonych nie da się naprawdę odtworzyć. Poszukaj zabytku w swojej okolicy!</p>`,
+    remember: 'Romańskie: Tum, Drzwi Gnieźnieńskie. Gotyckie: Malbork, kościoły Mariackie w Krakowie i Gdańsku.',
+    check: { q: 'Który zabytek jest gotycki?', options: ['Drzwi Gnieźnieńskie', 'kolegiata w Tumie', 'zamek w Malborku'], answer: 2, explain: 'Zamek w Malborku to gotycka budowla z cegły. Drzwi Gnieźnieńskie i kolegiata w Tumie są romańskie.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['historia/ostatni-piastowie'] = [
+  {
+    title: 'Łokietek łączy kraj – 1320',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Schemat: Władysław Łokietek łączy Wielkopolskę i Małopolskę w jedno królestwo; 20 stycznia 1320 roku zostaje koronowany w Krakowie – koniec rozbicia dzielnicowego. Pomorze Gdańskie zajęli Krzyżacy, a Śląsk i Mazowsze są poza granicami">
+      <defs><marker id="a-k4hi-op-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="20" width="120" height="50" rx="10" class="f3 s3"/>
+      <text x="70" y="50" class="tx" text-anchor="middle">Wielkopolska</text>
+      <rect x="10" y="90" width="120" height="50" rx="10" class="f3 s3"/>
+      <text x="70" y="120" class="tx" text-anchor="middle">Małopolska</text>
+      <path d="M134,45 L176,72" class="ln" marker-end="url(#a-k4hi-op-1)"/>
+      <path d="M134,115 L176,90" class="ln" marker-end="url(#a-k4hi-op-1)"/>
+      <rect x="180" y="40" width="210" height="80" rx="12" class="f4 s4 sw"/>
+      <text x="285" y="66" class="tx-b" text-anchor="middle">👑 20 I 1320</text>
+      <text x="285" y="90" class="tx-s" text-anchor="middle">koronacja w Krakowie</text>
+      <text x="285" y="108" class="tx-s" text-anchor="middle">koniec rozbicia dzielnicowego</text>
+      <rect x="10" y="158" width="185" height="54" rx="10" class="f2 s2 dash"/>
+      <text x="102" y="181" class="tx-s" text-anchor="middle">Pomorze Gdańskie</text>
+      <text x="102" y="200" class="tx-s" text-anchor="middle">zajęli Krzyżacy</text>
+      <rect x="205" y="158" width="185" height="54" rx="10" class="bg ln dash"/>
+      <text x="297" y="181" class="tx-s" text-anchor="middle">poza granicami:</text>
+      <text x="297" y="200" class="tx-s" text-anchor="middle">Śląsk, Mazowsze</text>
+    </svg>`,
+    text: `<p><b>Władysław Łokietek</b>, książę kujawski, przez wiele lat walczył o zjednoczenie kraju. <b>20 stycznia 1320 r.</b> został <b>koronowany</b> na króla Polski w Krakowie. <b>Koronacja</b> to uroczyste nałożenie korony – znak objęcia władzy. Tak skończyło się rozbicie dzielnicowe: znów było jedno <b>Królestwo Polskie</b>.</p>
+      <p>Nie wszystko się udało: w 1308–1309 r. Krzyżacy zajęli Pomorze Gdańskie. W 1331 r. rycerstwo Łokietka starło się z nimi pod <b>Płowcami</b> – bitwa była nierozstrzygnięta, ale dodała Polakom otuchy.</p>`,
+    remember: '1320 – koronacja Władysława Łokietka, koniec rozbicia dzielnicowego.',
+    hook: 'Mały wzrostem (łokieć to dawna miara), wielki czynem – <b>Łokietek</b> skleił Polskę jak puzzle.',
+    check: { q: 'Co zakończyła koronacja Łokietka w 1320 r.?', options: ['rozbicie dzielnicowe', 'wojnę trzynastoletnią', 'panowanie Piastów'], answer: 0, explain: 'Rok 1320 kończy rozbicie dzielnicowe (1138–1320). Panowanie Piastów skończyło się w 1370 r.' },
+  },
+  {
+    title: 'Kazimierz Wielki – dyplomata',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Umowy Kazimierza Wielkiego: 1335 Wyszehrad – król Czech za opłatą rezygnuje z prawa do korony polskiej; 1343 Kalisz – Krzyżacy oddają Kujawy i ziemię dobrzyńską, zatrzymują Pomorze Gdańskie; 1348 – Śląsk zostaje przy Czechach">
+      <rect x="10" y="10" width="380" height="58" rx="10" class="f1 s1"/>
+      <text x="22" y="34" class="tx-b">1335</text>
+      <text x="80" y="34" class="tx-s">Wyszehrad: król Czech za opłatą</text>
+      <text x="80" y="54" class="tx-s">rezygnuje z prawa do korony polskiej</text>
+      <rect x="10" y="78" width="380" height="58" rx="10" class="f3 s3 sw"/>
+      <text x="22" y="102" class="tx-b">1343</text>
+      <text x="80" y="102" class="tx-s">pokój w Kaliszu: wracają Kujawy</text>
+      <text x="80" y="122" class="tx-s">i ziemia dobrzyńska (Pomorze – nie)</text>
+      <rect x="10" y="146" width="380" height="58" rx="10" class="f2 s2"/>
+      <text x="22" y="170" class="tx-b">1348</text>
+      <text x="80" y="170" class="tx-s">Śląsk zostaje przy Czechach –</text>
+      <text x="80" y="190" class="tx-s">w zamian spokój na zachodzie</text>
+    </svg>`,
+    text: `<p>Syn Łokietka, <b>Kazimierz Wielki</b>, rządził w latach <b>1333–1370</b>. Wolał <b>dyplomację</b> – rozmowy i umowy – od wojen.</p>
+      <p>W <b>1343 r.</b> zawarł z Krzyżakami <b>pokój w Kaliszu</b>: Polska odzyskała Kujawy i ziemię dobrzyńską, ale Pomorze Gdańskie zostało przy zakonie. Uznał też, że Śląsk należy do Czech. Za to miał spokój i mógł się zająć wschodem.</p>`,
+    remember: '1343 – pokój w Kaliszu: Kujawy i ziemia dobrzyńska wracają do Polski.',
+    hook: 'Kazimierz liczył: lepszy pewny pokój niż niepewna wojna.',
+  },
+  {
+    title: 'Jak zmieniły się granice?',
+    svg: `<svg viewBox="0 0 420 230" role="img" aria-label="Schemat ziem Kazimierza Wielkiego: w środku Wielkopolska i Małopolska – królestwo z 1333 roku; dołączają Kujawy i ziemia dobrzyńska w 1343 roku oraz Ruś Halicka ze Lwowem na wschodzie; Mazowsze uznaje zwierzchnictwo króla. Poza granicami: Pomorze Gdańskie – u Krzyżaków i Śląsk – przy Czechach">
+      <text x="412" y="14" class="tx-s" text-anchor="end">schemat</text>
+      <rect x="120" y="10" width="140" height="44" rx="10" class="f2 s2 dash"/>
+      <text x="190" y="30" class="tx-s" text-anchor="middle">Pomorze Gdańskie</text>
+      <text x="190" y="46" class="tx-s" text-anchor="middle">(Krzyżacy)</text>
+      <rect x="270" y="10" width="140" height="44" rx="10" class="f3 s3"/>
+      <text x="340" y="30" class="tx-s" text-anchor="middle">Kujawy i ziemia</text>
+      <text x="340" y="46" class="tx-s" text-anchor="middle">dobrzyńska (1343)</text>
+      <rect x="120" y="66" width="140" height="44" rx="10" class="f4 s4 sw"/>
+      <text x="190" y="93" class="tx" text-anchor="middle">Wielkopolska</text>
+      <rect x="270" y="66" width="140" height="44" rx="10" class="f5 s5"/>
+      <text x="340" y="86" class="tx-s" text-anchor="middle">Mazowsze</text>
+      <text x="340" y="102" class="tx-s" text-anchor="middle">(hołd dla króla)</text>
+      <rect x="10" y="122" width="100" height="44" rx="10" class="f2 s2 dash"/>
+      <text x="60" y="142" class="tx-s" text-anchor="middle">Śląsk</text>
+      <text x="60" y="158" class="tx-s" text-anchor="middle">(Czechy)</text>
+      <rect x="120" y="122" width="140" height="44" rx="10" class="f4 s4 sw"/>
+      <text x="190" y="149" class="tx" text-anchor="middle">Małopolska</text>
+      <rect x="270" y="122" width="140" height="44" rx="10" class="f3 s3"/>
+      <text x="340" y="142" class="tx-s" text-anchor="middle">Ruś Halicka</text>
+      <text x="340" y="158" class="tx-s" text-anchor="middle">ze Lwowem</text>
+      <rect x="10" y="186" width="14" height="12" class="f4 s4"/>
+      <text x="30" y="197" class="tx-s">królestwo w 1333 r.</text>
+      <rect x="210" y="186" width="14" height="12" class="f3 s3"/>
+      <text x="230" y="197" class="tx-s">przyłączone</text>
+      <rect x="10" y="208" width="14" height="12" class="f2 s2 dash"/>
+      <text x="30" y="219" class="tx-s">poza granicami</text>
+      <rect x="210" y="208" width="14" height="12" class="f5 s5"/>
+      <text x="230" y="219" class="tx-s">zależne od króla</text>
+    </svg>`,
+    text: `<p>Łokietek zostawił synowi głównie <b>Wielkopolskę i Małopolskę</b>. Kazimierz Wielki odzyskał <b>Kujawy i ziemię dobrzyńską</b> (1343), a na wschodzie przyłączył <b>Ruś Halicką ze Lwowem</b>. Książęta Mazowsza złożyli mu hołd – uznali go za swojego zwierzchnika.</p>
+      <p>Poza granicami zostały <b>Pomorze Gdańskie</b> (u Krzyżaków) i <b>Śląsk</b> (przy Czechach). Państwo przesunęło się więc trochę na wschód.</p>`,
+    remember: 'Zyski Kazimierza: Kujawy, ziemia dobrzyńska, Ruś Halicka. Poza Polską: Pomorze Gdańskie, Śląsk.',
+    check: { q: 'Które ziemie przyłączył Kazimierz Wielki na wschodzie?', options: ['Ruś Halicką ze Lwowem', 'Pomorze Gdańskie', 'Śląsk'], answer: 0, explain: 'Na wschodzie Kazimierz przyłączył Ruś Halicką. Pomorze Gdańskie i Śląsk zostały poza granicami.' },
+  },
+  {
+    title: 'Polska drewniana – Polska murowana',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Po lewej Polska drewniana: drewniany gród z wałem. Strzałka. Po prawej Polska murowana: zamek i mury z kamienia i cegły. Pod spodem reformy Kazimierza Wielkiego: statuty – spisane prawa, mennica – monety, nowe miasta, Akademia Krakowska w 1364 roku">
+      <defs><marker id="a-k4hi-op-4" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="20" y="40" width="130" height="50" class="f4 s4"/>
+      <line x1="40" y1="40" x2="40" y2="90" class="ln-thin"/><line x1="60" y1="40" x2="60" y2="90" class="ln-thin"/><line x1="80" y1="40" x2="80" y2="90" class="ln-thin"/><line x1="100" y1="40" x2="100" y2="90" class="ln-thin"/><line x1="120" y1="40" x2="120" y2="90" class="ln-thin"/>
+      <text x="85" y="26" class="tx-s" text-anchor="middle">drewno</text>
+      <path d="M165,65 L225,65" class="ln sw" marker-end="url(#a-k4hi-op-4)"/>
+      <rect x="240" y="40" width="140" height="50" class="f2 s2"/>
+      <rect x="250" y="22" width="22" height="18" class="f2 s2"/>
+      <rect x="299" y="22" width="22" height="18" class="f2 s2"/>
+      <rect x="348" y="22" width="22" height="18" class="f2 s2"/>
+      <line x1="240" y1="57" x2="380" y2="57" class="ln-thin"/><line x1="240" y1="74" x2="380" y2="74" class="ln-thin"/>
+      <text x="310" y="108" class="tx-s" text-anchor="middle">kamień i cegła</text>
+      <rect x="10" y="122" width="185" height="42" rx="10" class="f1 s1"/>
+      <text x="102" y="148" class="tx-s" text-anchor="middle">📜 statuty – spisane prawa</text>
+      <rect x="205" y="122" width="185" height="42" rx="10" class="f1 s1"/>
+      <text x="297" y="148" class="tx-s" text-anchor="middle">🪙 mennica – monety</text>
+      <rect x="10" y="172" width="185" height="42" rx="10" class="f1 s1"/>
+      <text x="102" y="198" class="tx-s" text-anchor="middle">🏘️ nowe miasta i zamki</text>
+      <rect x="205" y="172" width="185" height="42" rx="10" class="f5 s5 sw"/>
+      <text x="297" y="198" class="tx-s" text-anchor="middle">🎓 Akademia – 1364</text>
+    </svg>`,
+    text: `<p>Kronikarz Jan Długosz napisał o Kazimierzu, że <b>„zastał Polskę drewnianą, a zostawił murowaną”</b>. Król budował zamki i mury obronne, zakładał miasta (np. Kazimierz pod Krakowem).</p>
+      <p>Kazał spisać prawa – <b>statuty</b>, żeby sądzono według tych samych zasad. W Krakowie bito monety. W <b>1364 r.</b> założył <b>Akademię Krakowską</b> – pierwszy uniwersytet w Polsce. Kształcili się tu głównie przyszli prawnicy.</p>`,
+    remember: '1364 – Kazimierz Wielki zakłada Akademię Krakowską.',
+    hook: 'Kazimierz – <b>Wielki</b> budowniczy: z drewna zrobił mur, a z praw – książkę (statuty).',
+    check: { q: 'W którym roku powstała Akademia Krakowska?', options: ['1320', '1364', '1410'], answer: 1, explain: 'Kazimierz Wielki założył ją w 1364 r. W 1320 r. była koronacja Łokietka, w 1410 r. – Grunwald.' },
+  },
+  {
+    title: 'Monarchia stanowa i koniec Piastów – 1370',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Na górze król i rada królewska. Pod nimi stany: duchowieństwo, rycerstwo, mieszczanie, chłopi – każdy stan ma inne prawa i obowiązki. Na dole: rok 1370 – Kazimierz Wielki umiera bez syna, koniec dynastii Piastów na tronie; królem zostaje Ludwik Węgierski, siostrzeniec">
+      <rect x="110" y="8" width="180" height="40" rx="10" class="f4 s4 sw"/>
+      <text x="200" y="34" class="tx" text-anchor="middle">👑 król + rada</text>
+      <rect x="10" y="62" width="88" height="54" rx="8" class="f5 s5"/>
+      <rect x="106" y="62" width="88" height="54" rx="8" class="f1 s1"/>
+      <rect x="202" y="62" width="88" height="54" rx="8" class="f3 s3"/>
+      <rect x="298" y="62" width="92" height="54" rx="8" class="f2 s2"/>
+      <text x="54" y="94" class="tx-s" text-anchor="middle">duchowni</text>
+      <text x="150" y="94" class="tx-s" text-anchor="middle">rycerstwo</text>
+      <text x="246" y="94" class="tx-s" text-anchor="middle">mieszczanie</text>
+      <text x="344" y="94" class="tx-s" text-anchor="middle">chłopi</text>
+      <text x="200" y="136" class="tx-s" text-anchor="middle">stany – różne prawa i obowiązki</text>
+      <rect x="10" y="150" width="380" height="72" rx="12" class="f2 s2 sw"/>
+      <text x="200" y="174" class="tx-b" text-anchor="middle">1370 – koniec Piastów na tronie</text>
+      <text x="200" y="196" class="tx-s" text-anchor="middle">Kazimierz umiera bez syna</text>
+      <text x="200" y="214" class="tx-s" text-anchor="middle">królem zostaje Ludwik Węgierski</text>
+    </svg>`,
+    text: `<p>Za Kazimierza Wielkiego Polska stawała się <b>monarchią stanową</b>: rządzi król, a społeczeństwo dzieli się na <b>stany</b> – duchowieństwo, rycerstwo, mieszczan i chłopów – o różnych prawach i obowiązkach. Najważniejsi ludzie z tych stanów pomagali królowi rządzić, np. w <b>radzie królewskiej</b>.</p>
+      <p>Kazimierz zmarł w <b>1370 r.</b> Miał tylko córki, a kobiety nie dziedziczyły wtedy tronu. To <b>koniec dynastii Piastów na tronie Polski</b>. Królem został jego siostrzeniec <b>Ludwik Węgierski</b> – król Węgier.</p>`,
+    remember: '1370 – śmierć Kazimierza Wielkiego, koniec Piastów na tronie Polski. Następca: Ludwik Węgierski.',
+    hook: 'Łokietek <b>1320</b> zaczął, syn <b>1370</b> zakończył – obie daty kończą się zerem.',
+    check: { q: 'Kto został królem po Kazimierzu Wielkim?', options: ['Władysław Jagiełło', 'Ludwik Węgierski', 'Bolesław Chrobry'], answer: 1, explain: 'Królem został Ludwik Węgierski, siostrzeniec Kazimierza. Jagiełło panował później, od 1386 r.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['historia/polska-litwa'] = [
+  {
+    title: 'Jadwiga, Jagiełło i Krewo – 1385',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Po lewej Polska z królem Jadwigą, po prawej Litwa z wielkim księciem Jagiełłą. Obu zagrażają Krzyżacy. W środku umowa w Krewie 1385: Jagiełło przyjmie chrzest, połączy Litwę z Polską, odzyska ziemie – w zamian ręka Jadwigi i korona">
+      <rect x="10" y="10" width="140" height="64" rx="10" class="f4 s4 sw"/>
+      <text x="80" y="36" class="tx" text-anchor="middle">Polska</text>
+      <text x="80" y="58" class="tx-s" text-anchor="middle">król: Jadwiga</text>
+      <rect x="250" y="10" width="140" height="64" rx="10" class="f3 s3 sw"/>
+      <text x="320" y="36" class="tx" text-anchor="middle">Litwa</text>
+      <text x="320" y="58" class="tx-s" text-anchor="middle">wielki książę Jagiełło</text>
+      <rect x="160" y="10" width="80" height="64" rx="10" class="f2 s2"/>
+      <text x="200" y="38" class="tx-s" text-anchor="middle">⚔️ wróg:</text>
+      <text x="200" y="58" class="tx-s" text-anchor="middle">Krzyżacy</text>
+      <rect x="40" y="90" width="320" height="130" rx="12" class="f1 s1 sw"/>
+      <text x="200" y="114" class="tx-b" text-anchor="middle">📜 Krewo, 1385</text>
+      <text x="200" y="140" class="tx-s" text-anchor="middle">Jagiełło: chrzest z poddanymi</text>
+      <text x="200" y="160" class="tx-s" text-anchor="middle">połączenie Litwy z Polską</text>
+      <text x="200" y="180" class="tx-s" text-anchor="middle">odzyskanie utraconych ziem</text>
+      <text x="200" y="206" class="tx-s" text-anchor="middle">w zamian: ślub z Jadwigą i korona</text>
+    </svg>`,
+    text: `<p>W 1384 r. córkę Ludwika Węgierskiego, <b>Jadwigę</b>, koronowano na <b>króla</b> Polski. Obok leżało ogromne <b>Wielkie Księstwo Litewskie</b> – Litwini nie byli jeszcze chrześcijanami. Rządził nimi wielki książę <b>Jagiełło</b>. Krzyżacy najeżdżali Litwę, a od Polski odebrali Pomorze Gdańskie – był więc <b>wspólny wróg</b>.</p>
+      <p>W <b>1385 r.</b> w <b>Krewie</b> Jagiełło obiecał przyjąć chrzest z poddanymi, połączyć Litwę z Polską i odzyskać utracone ziemie. W 1386 r. ochrzcił się (imię Władysław), poślubił Jadwigę i został królem. W <b>1387 r.</b> był <b>chrzest Litwy</b>.</p>`,
+    remember: '1385 – umowa w Krewie; 1386 – Jagiełło królem Polski; 1387 – chrzest Litwy.',
+    hook: 'W <b>Krewie</b> połączyły się dwa narody jak dwie <b>krewne</b> rodziny – przez ślub.',
+    check: { q: 'Co obiecał Jagiełło w Krewie?', options: ['przyjąć chrzest i połączyć Litwę z Polską', 'oddać Litwę Krzyżakom', 'zrezygnować z korony'], answer: 0, explain: 'Jagiełło obiecał chrzest, połączenie Litwy z Polską i odzyskanie ziem. W zamian poślubił Jadwigę.' },
+  },
+  {
+    title: 'Unia personalna i chrystianizacja',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Jedna korona – jeden władca – nad dwoma osobnymi państwami: Polską i Litwą. Każde ma swoje prawa i urzędy. Obok wyjaśnienie: chrystianizacja – szerzenie chrześcijaństwa; po chrzcie Litwy Krzyżacy nie mają powodu do najazdów">
+      <defs><marker id="a-k4hi-pl2-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="110" y="8" width="180" height="44" rx="12" class="f4 s4 sw"/>
+      <text x="200" y="36" class="tx" text-anchor="middle">👑 jeden władca</text>
+      <path d="M170,54 L110,82" class="ln" marker-end="url(#a-k4hi-pl2-2)"/>
+      <path d="M230,54 L290,82" class="ln" marker-end="url(#a-k4hi-pl2-2)"/>
+      <rect x="20" y="86" width="160" height="60" rx="10" class="f1 s1"/>
+      <text x="100" y="112" class="tx" text-anchor="middle">Polska</text>
+      <text x="100" y="134" class="tx-s" text-anchor="middle">swoje prawa, urzędy</text>
+      <rect x="220" y="86" width="160" height="60" rx="10" class="f3 s3"/>
+      <text x="300" y="112" class="tx" text-anchor="middle">Litwa</text>
+      <text x="300" y="134" class="tx-s" text-anchor="middle">swoje prawa, urzędy</text>
+      <rect x="20" y="158" width="360" height="44" rx="10" class="f5 s5"/>
+      <text x="200" y="185" class="tx-s" text-anchor="middle">✝️ chrzest Litwy (1387) – Krzyżacy tracą pretekst</text>
+    </svg>`,
+    text: `<p><b>Unia</b> to związek państw. Polska i Litwa zawarły <b>unię personalną</b>: miały <b>wspólnego władcę</b>, ale każde państwo zachowało swoje prawa i urzędy. Razem były silniejsze od Krzyżaków. Od Jagiełły wywodzi się nowa dynastia – <b>Jagiellonowie</b>.</p>
+      <p><b>Chrystianizacja</b> to szerzenie chrześcijaństwa. Krzyżacy tłumaczyli swoje najazdy nawracaniem Litwinów. Po chrzcie Litwy to tłumaczenie straciło sens – a spór z zakonem się zaostrzył.</p>`,
+    remember: 'Unia personalna – wspólny władca, osobne państwa. Chrystianizacja – szerzenie chrześcijaństwa.',
+    hook: '<b>Persona</b> po łacinie to <b>osoba</b> – w unii personalnej państwa łączy osoba władcy.',
+    check: { q: 'Co łączy państwa w unii personalnej?', options: ['wspólne prawa i urzędy', 'osoba wspólnego władcy', 'wspólna stolica'], answer: 1, explain: 'W unii personalnej państwa mają wspólnego władcę, a prawa i urzędy – osobne.' },
+  },
+  {
+    title: 'Klejnoty królowej dla uczelni – 1400',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Oś czasu Akademii Krakowskiej: 1364 – założenie przez Kazimierza Wielkiego; potem uczelnia podupada; 1399 – Jadwiga zapisuje klejnoty na odnowienie; 1400 – Władysław Jagiełło odnawia Akademię; dziś Uniwersytet Jagielloński">
+      <line x1="20" y1="70" x2="400" y2="70" class="ln sw"/>
+      <circle cx="55" cy="70" r="8" class="f1 s1 sw"/>
+      <circle cx="160" cy="70" r="8" class="bg ln"/>
+      <circle cx="265" cy="70" r="8" class="f5 s5 sw"/>
+      <circle cx="365" cy="70" r="8" class="f4 s4 sw"/>
+      <text x="55" y="44" class="tx-b" text-anchor="middle">1364</text>
+      <text x="160" y="44" class="tx-s" text-anchor="middle">później</text>
+      <text x="265" y="44" class="tx-b" text-anchor="middle">1399</text>
+      <text x="365" y="44" class="tx-b" text-anchor="middle">1400</text>
+      <text x="55" y="100" class="tx-s" text-anchor="middle">założenie</text>
+      <text x="55" y="118" class="tx-s" text-anchor="middle">(Kazimierz)</text>
+      <text x="160" y="100" class="tx-s" text-anchor="middle">uczelnia</text>
+      <text x="160" y="118" class="tx-s" text-anchor="middle">podupada</text>
+      <text x="265" y="100" class="tx-s" text-anchor="middle">💎 Jadwiga:</text>
+      <text x="265" y="118" class="tx-s" text-anchor="middle">klejnoty w testamencie</text>
+      <text x="365" y="100" class="tx-s" text-anchor="middle">Jagiełło</text>
+      <text x="365" y="118" class="tx-s" text-anchor="middle">odnawia</text>
+      <rect x="60" y="145" width="300" height="44" rx="12" class="f3 s3 sw"/>
+      <text x="210" y="173" class="tx" text-anchor="middle">🎓 dziś: Uniwersytet Jagielloński</text>
+    </svg>`,
+    text: `<p>Uczelnia założona przez Kazimierza Wielkiego w 1364 r. z czasem podupadła. Królowa <b>Jadwiga</b> zapisała w testamencie swoje <b>klejnoty</b> i kosztowności na jej odnowienie. Zmarła w 1399 r.</p>
+      <p><b>Władysław Jagiełło</b> spełnił jej wolę i w <b>1400 r.</b> <b>odnowił Akademię Krakowską</b>. Dlatego dziś ta uczelnia nazywa się <b>Uniwersytet Jagielloński</b>.</p>`,
+    remember: '1364 – założenie (Kazimierz Wielki); 1400 – odnowienie (Jadwiga i Jagiełło).',
+    hook: 'Królowa oddała <b>klejnoty</b>, żeby Polska miała klejnot nauki.',
+  },
+  {
+    title: 'Grunwald – 15 lipca 1410',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Bitwa pod Grunwaldem 15 lipca 1410 roku. Po lewej wojska polsko-litewskie: król Władysław Jagiełło i wielki książę Witold. Po prawej Krzyżacy: wielki mistrz Ulryk von Jungingen. Między nimi dwa nagie miecze – wyzwanie do walki. Wynik: zwycięstwo Polski i Litwy, wielki mistrz poległ, Malborka nie zdobyto, I pokój toruński 1411">
+      <rect x="10" y="10" width="150" height="80" rx="10" class="f4 s4 sw"/>
+      <text x="85" y="36" class="tx-b" text-anchor="middle">Polska i Litwa</text>
+      <text x="85" y="58" class="tx-s" text-anchor="middle">Władysław Jagiełło</text>
+      <text x="85" y="76" class="tx-s" text-anchor="middle">wielki książę Witold</text>
+      <rect x="240" y="10" width="150" height="80" rx="10" class="f2 s2"/>
+      <text x="315" y="36" class="tx-b" text-anchor="middle">Krzyżacy</text>
+      <text x="315" y="58" class="tx-s" text-anchor="middle">wielki mistrz</text>
+      <text x="315" y="76" class="tx-s" text-anchor="middle">Ulryk von Jungingen</text>
+      <text x="200" y="48" class="tx-b" text-anchor="middle">⚔️⚔️</text>
+      <text x="200" y="72" class="tx-s" text-anchor="middle">2 miecze</text>
+      <rect x="10" y="104" width="380" height="118" rx="12" class="f3 s3"/>
+      <text x="200" y="128" class="tx-b" text-anchor="middle">wynik</text>
+      <text x="200" y="152" class="tx-s" text-anchor="middle">✅ zwycięstwo, wielki mistrz poległ</text>
+      <text x="200" y="174" class="tx-s" text-anchor="middle">🏰 Malborka nie zdobyto</text>
+      <text x="200" y="196" class="tx-s" text-anchor="middle">1411 – I pokój toruński: Żmudź dla Litwy,</text>
+      <text x="200" y="214" class="tx-s" text-anchor="middle">ziemia dobrzyńska dla Polski</text>
+    </svg>`,
+    text: `<p>Spór o Żmudź (ziemię litewską) wywołał <b>wielką wojnę</b> z zakonem (1409–1411). <b>15 lipca 1410 r.</b> rozegrała się <b>bitwa pod Grunwaldem</b>. Wojskami polsko-litewskimi dowodzili król <b>Władysław Jagiełło</b> i wielki książę <b>Witold</b>, Krzyżakami – wielki mistrz <b>Ulryk von Jungingen</b>. Przed bitwą posłowie krzyżaccy przynieśli <b>dwa nagie miecze</b> – wyzwanie do walki.</p>
+      <p>Krzyżacy przegrali, a wielki mistrz poległ. Wojska oblegały potem Malbork, ale go nie zdobyły. W <b>I pokoju toruńskim</b> (1411) Litwa odzyskała Żmudź, a Polska – ziemię dobrzyńską. Upadł mit, że Krzyżacy są niezwyciężeni.</p>`,
+    remember: '15 lipca 1410 – bitwa pod Grunwaldem.',
+    hook: 'Jak w opowieści: <b>wyzwanie</b> (dwa miecze) → <b>bitwa</b> → <b>oblężenie</b> Malborka → <b>pokój</b> w Toruniu.',
+    check: { q: 'Kto dowodził Krzyżakami pod Grunwaldem?', options: ['Witold', 'Ulryk von Jungingen', 'Konrad Mazowiecki'], answer: 1, explain: 'Wielki mistrz Ulryk von Jungingen poległ w bitwie. Witold dowodził razem z Jagiełłą wojskami polsko-litewskimi.' },
+  },
+  {
+    title: 'Zawisza Czarny – wzór rycerza',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Zawisza Czarny z Garbowa – rycerz spod Grunwaldu, słynny z turniejów. Cechy dobrego rycerza: odwaga, wierność słowu, honor, uczciwa walka, obrona słabszych. Powiedzenie: polegać jak na Zawiszy – na kimś, kto nigdy nie zawiedzie">
+      <rect x="10" y="10" width="380" height="54" rx="12" class="f4 s4 sw"/>
+      <text x="200" y="34" class="tx-b" text-anchor="middle">🛡️ Zawisza Czarny z Garbowa</text>
+      <text x="200" y="54" class="tx-s" text-anchor="middle">Grunwald, sława w turniejach</text>
+      <rect x="10" y="76" width="120" height="40" rx="8" class="f1 s1"/>
+      <rect x="140" y="76" width="120" height="40" rx="8" class="f1 s1"/>
+      <rect x="270" y="76" width="120" height="40" rx="8" class="f1 s1"/>
+      <rect x="75" y="124" width="120" height="40" rx="8" class="f1 s1"/>
+      <rect x="205" y="124" width="120" height="40" rx="8" class="f1 s1"/>
+      <text x="70" y="101" class="tx-s" text-anchor="middle">odwaga</text>
+      <text x="200" y="101" class="tx-s" text-anchor="middle">wierność słowu</text>
+      <text x="330" y="101" class="tx-s" text-anchor="middle">honor</text>
+      <text x="135" y="149" class="tx-s" text-anchor="middle">uczciwa walka</text>
+      <text x="265" y="149" class="tx-s" text-anchor="middle">obrona słabszych</text>
+      <text x="200" y="196" class="tx" text-anchor="middle">„polegać jak na Zawiszy”</text>
+    </svg>`,
+    text: `<p><b>Zawisza Czarny z Garbowa</b> walczył pod Grunwaldem i słynął ze zwycięstw w turniejach rycerskich. Zginął w 1428 r. w walce z Turkami. Uważano go za ideał rycerza – do dziś mówimy <b>„polegać jak na Zawiszy”</b>, czyli na kimś, kto nigdy nie zawiedzie.</p>
+      <p>Zasady dobrego rycerza to <b>etos rycerski</b>: odwaga, wierność danemu słowu, honor, uczciwa walka i obrona słabszych. Wiele opowieści o Zawiszy to legenda – ale pokazuje, kogo podziwiano. <b>Pomyśl:</b> czy te cechy są ważne także dziś? Uzasadnij.</p>`,
+    remember: '„Polegać jak na Zawiszy” – ufać komuś, kto nigdy nie zawiedzie.',
+    hook: '<b>ZA</b>-<b>WI</b>-sza = <b>ZA</b>wsze <b>WI</b>erny.',
+  },
+  {
+    title: 'II pokój toruński – 1466',
+    svg: `<svg viewBox="0 0 420 230" role="img" aria-label="Schemat po II pokoju toruńskim w 1466 roku: Prusy Królewskie – Pomorze Gdańskie z Gdańskiem, ziemia chełmińska, Warmia, Malbork i Elbląg – wracają do Polski, która znów ma dostęp do morza. Prusy Zakonne ze stolicą w Królewcu zostają przy zakonie, a wielki mistrz składa hołd lenny królowi Polski. Na dole oś: 1385 Krewo, 1410 Grunwald, 1466 II pokój toruński">
+      <text x="210" y="16" class="tx-s" text-anchor="middle">Bałtyk 🌊</text>
+      <rect x="10" y="26" width="220" height="100" rx="12" class="f3 s3 sw"/>
+      <text x="120" y="50" class="tx-b" text-anchor="middle">Prusy Królewskie</text>
+      <text x="120" y="72" class="tx-s" text-anchor="middle">Pomorze Gdańskie, Gdańsk,</text>
+      <text x="120" y="90" class="tx-s" text-anchor="middle">ziemia chełmińska, Warmia,</text>
+      <text x="120" y="108" class="tx-s" text-anchor="middle">Malbork, Elbląg → Polska</text>
+      <rect x="240" y="26" width="170" height="100" rx="12" class="f2 s2 dash"/>
+      <text x="325" y="50" class="tx-b" text-anchor="middle">Prusy Zakonne</text>
+      <text x="325" y="72" class="tx-s" text-anchor="middle">stolica: Królewiec</text>
+      <text x="325" y="96" class="tx-s" text-anchor="middle">wielki mistrz składa</text>
+      <text x="325" y="114" class="tx-s" text-anchor="middle">hołd królowi Polski</text>
+      <line x1="30" y1="180" x2="390" y2="180" class="ln sw"/>
+      <circle cx="70" cy="180" r="8" class="f1 s1 sw"/>
+      <circle cx="210" cy="180" r="8" class="f4 s4 sw"/>
+      <circle cx="350" cy="180" r="8" class="f3 s3 sw"/>
+      <text x="70" y="160" class="tx-b" text-anchor="middle">1385</text>
+      <text x="210" y="160" class="tx-b" text-anchor="middle">1410</text>
+      <text x="350" y="160" class="tx-b" text-anchor="middle">1466</text>
+      <text x="70" y="208" class="tx-s" text-anchor="middle">Krewo</text>
+      <text x="210" y="208" class="tx-s" text-anchor="middle">Grunwald</text>
+      <text x="350" y="208" class="tx-s" text-anchor="middle">II pokój toruński</text>
+    </svg>`,
+    text: `<p>Mieszkańcy miast i rycerze z państwa zakonnego mieli dość rządów Krzyżaków. W 1454 r. poprosili króla Polski o przyłączenie – wybuchła <b>wojna trzynastoletnia</b> (1454–1466).</p>
+      <p>Zakończył ją <b>II pokój toruński</b> w <b>1466 r.</b> Polska odzyskała <b>Pomorze Gdańskie</b> i <b>ziemię chełmińską</b>, zdobyła też Warmię, Malbork i Elbląg – te ziemie nazwano <b>Prusami Królewskimi</b>. Polska znów miała dostęp do morza. Reszta, ze stolicą w Królewcu, to <b>Prusy Zakonne</b> – wielki mistrz składał królowi Polski <b>hołd lenny</b>.</p>`,
+    remember: 'Kolejność: Krewo (1385) → Grunwald (1410) → II pokój toruński (1466).',
+    hook: 'Najpierw <b>ślub</b> (Krewo), potem <b>bitwa</b> (Grunwald), na końcu <b>zysk</b> (Toruń).',
+    check: { q: 'Co Polska odzyskała w 1466 r.?', options: ['Pomorze Gdańskie i ziemię chełmińską', 'Śląsk', 'Ruś Halicką'], answer: 0, explain: 'W II pokoju toruńskim Polska odzyskała Pomorze Gdańskie i ziemię chełmińską oraz zdobyła Warmię, Malbork i Elbląg.' },
+  },
+];
