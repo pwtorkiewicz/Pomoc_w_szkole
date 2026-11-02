@@ -61,13 +61,20 @@
     listening: { icon: '🎧', name: 'Listening – nagrania', about: 'Rozumienie ze słuchu. Nagrania czyta głos syntezatora mowy w przeglądarce. Na egzaminie każde nagranie słyszysz dwa razy – tu też tak spróbuj. Transkrypcję zobaczysz po sprawdzeniu odpowiedzi.' },
     srodki: { icon: '🧩', name: 'Środki językowe', about: 'Gramatyka i słownictwo w formacie CKE: luki w tekście, wybór formy, przekład fragmentów zdań, parafraza. W zadaniach otwartych liczy się pełna poprawność pisowni.' },
     // Dyktando (ścieżki z czytaniem na głos): zadania type 'input' z polem say – tekst czyta syntezator, uczeń wpisuje.
-    dyktando: { icon: '✏️', name: 'Dyktando ze słuchu', about: 'Kliknij 🔊 i posłuchaj. Wpisz wyraz albo zdanie, które usłyszysz. Możesz słuchać, ile razy chcesz. Uważaj na ó i u, rz i ż, ch i h oraz na wielkie litery!' },
+    dyktando: { icon: '✏️', name: 'Dyktando ze słuchu', about: 'Kliknij 🔊 i posłuchaj. Wpisz wyraz albo zdanie, które usłyszysz. Możesz słuchać, ile razy chcesz. Uważaj na ó i u, rz i ż, ch i h oraz na wielkie litery!',
+      // inna nazwa i opis w danym przedmiocie (klucz – id przedmiotu)
+      by: { angielski: { name: 'Dyktando słówek', about: 'Kliknij 🔊 i posłuchaj. Wpisz po angielsku słówko albo zdanie, które usłyszysz. Obrazek podpowie ci, co ono znaczy. Możesz słuchać, ile razy chcesz. Uważaj na każdą literę!' } } },
   };
+  const modeOf = (mode, s) => ({ ...MODES[mode], ...((MODES[mode].by || {})[s.id] || {}) });
   // W ścieżkach bez egzaminu opisy trybów nie odwołują się do arkusza CKE.
   if (!TRACK.exam) {
     MODES.czytanie.about = 'Przeczytaj tekst i rozwiąż zadania. Do tekstu możesz wracać, ile chcesz. Zadania otwarte ocenisz sam według przykładowej odpowiedzi.';
     MODES.reading.about = 'Przeczytaj krótki tekst po angielsku i rozwiąż zadania. Polecenia są po polsku. Do tekstu możesz wracać, ile chcesz.';
     MODES.listening.about = 'Posłuchaj nagrania i rozwiąż zadania. Nagrania czyta głos syntezatora mowy w przeglądarce – posłuchaj każdego dwa razy, możesz też włączyć wolniejsze tempo. Transkrypcję zobaczysz po sprawdzeniu odpowiedzi.';
+  }
+  if (YOUNG) {
+    MODES.listening.name = 'Słuchanie po angielsku';
+    MODES.listening.about = 'Kliknij ▶ i posłuchaj nagrania po angielsku. Potem wybierz dobrą odpowiedź. Możesz słuchać, ile razy chcesz. Co mówią w nagraniu, zobaczysz po sprawdzeniu.';
   }
   const setsOf = (s, mode) => EXERCISES.filter((e) => e.subject === s.id && (!mode || e.mode === mode));
   const setKey = (e) => `${e.subject}/${e.mode}/${e.id}`;
@@ -354,7 +361,7 @@
         ${Object.keys(MODES).filter((m) => setsOf(s, m).length).map((m) => {
           const list = setsOf(s, m);
           const done = list.filter((e) => state.sets[setKey(e)] != null).length;
-          return `<a class="mode" href="#/s/${s.id}/cw/${m}"><span class="icon">${MODES[m].icon}</span><b>${MODES[m].name}</b>
+          return `<a class="mode" href="#/s/${s.id}/cw/${m}"><span class="icon">${MODES[m].icon}</span><b>${modeOf(m, s).name}</b>
             <small class="muted">${list.length} ${plural(list.length, ['zestaw', 'zestawy', 'zestawów'])}${done ? ` · zrobione ${done}` : ''}</small></a>`;
         }).join('')}
       </div>
@@ -501,7 +508,7 @@
 
   // ---------- Ćwiczenia jak na egzaminie: tekst/nagranie + zadania ----------
   function exerciseList(s, mode) {
-    const m = MODES[mode];
+    const m = modeOf(mode, s);
     setTitle(`${m.name} – ${s.name}`);
     const list = setsOf(s, mode);
     app.innerHTML = `${crumbs([[s.name, `#/s/${s.id}`], [m.name]])}
@@ -548,7 +555,7 @@
   }
 
   function exerciseSet(s, e) {
-    const m = MODES[e.mode];
+    const m = modeOf(e.mode, s);
     const key = setKey(e);
     setTitle(e.title);
     const listening = e.mode === 'listening';
@@ -587,7 +594,8 @@
       app.querySelectorAll('.play').forEach((b) => (b.onclick = () => {
         const k = +b.dataset.k;
         if (!synth) { app.querySelector('#tr').open = true; return; }
-        const rate = app.querySelector('#slow').checked ? 0.8 : 0.95;
+        // młodszy uczeń: wolniej („rozumie wypowiedzi artykułowane wyraźnie i powoli”)
+        const rate = app.querySelector('#slow').checked ? (YOUNG ? 0.65 : 0.8) : (YOUNG ? 0.8 : 0.95);
         app.querySelectorAll('.play').forEach((x) => x.classList.remove('on'));
         b.classList.add('on');
         speakRecording(e.audio[k], rate, () => b.classList.remove('on'));
