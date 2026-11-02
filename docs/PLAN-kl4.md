@@ -36,6 +36,26 @@ A – pełny materiał (lekcje, ściąga, fiszki, quiz, zadania). B – ściąga
 - Podstawa ma też moduły tematyczne (bezpieczeństwo i obrona, medialny, filozoficzny, ekonomiczno-finansowy, klimatyczny, kultura) i wymagania „do wyboru” – te dodajemy na końcu.
 - Ton: proste wyjaśnienia, każdy nowy termin wyjaśniony, przykłady z życia 10-latka.
 
+## Podręczniki (r. szk. 2026/2027)
+
+Podręczniki, z których uczy się dziecko – według nich układamy kolejność działów i decydujemy, co jest materiałem klasy 4 (podstawa nie dzieli wymagań na klasy). Spisy treści sprawdzone 2.11.2026: rozkład materiału GWO (gwo.pl, „Matematyka z plusem – rozkład materiału dla klasy IV, 2026/2027”) i zestawienia rozdziałów w serwisie fiszki.odrabiamy.pl.
+
+| Przedmiot | Podręcznik | Wydawnictwo | Nr w wykazie MEN |
+|---|---|---|---|
+| Język polski | *Słowa na start! 4* (J. Kostrzewa, K. Łęk, M. Matecka, D. Pałczyńska) | Nowa Era | 338/1/2026 |
+| Matematyka | *Matematyka z plusem 4*, edycja 2026 (M. Dobrowolska, M. Karpiński, P. Zarzycki, M. Jucewicz) | GWO | 168/1/2026 |
+| Język angielski | *Stay Brainy! 4* (N. Beare, K. Kotowicz-Jasińska, M. Kondro), poziom A1, II.1 | Macmillan | 1274/1/2026 |
+| Historia | *Wczoraj i dziś 4* | Nowa Era | 877/1/2026 |
+| Przyroda | *Odkrywam przyrodę 4* | Nowa Era | 1254/1/2026 |
+
+Zakres podręczników a działy aplikacji (stan po etapie 10):
+
+- **Polski** – 7 rozdziałów tematycznych (I. Mój dom, moi najbliżsi · II. Szkolne radości, szkolne smutki · III. O sobie, o nas · IV. Opisać Polskę · V. Baśniowe krainy · VI. Co jest w życiu ważne? · VII. Urok i siła marzeń) i 4 „Spotkania z lekturą”: J. Brzechwa „Akademia pana Kleksa”, R. Goscinny, J.-J. Sempé „Mikołajek”, A. Maleszka „Magiczne drzewo. Czerwone krzesło”, A. Lindgren „Ronja, córka zbójnika”. Gramatyka, ortografia i formy wypowiedzi są w aplikacji; brakuje: dialog i monolog, nastrój utworu, wywiad, teatr, lektury (fakty do sprawdzenia w tekstach, bez cytatów – utwory chronione prawem autorskim).
+- **Matematyka** – 8 działów (135 godz.): 1. Liczby i działania · 2. Systemy zapisywania liczb · 3. Działania pisemne · 4. Figury geometryczne (do skali) · 5. Ułamki zwykłe (do dodawania i odejmowania) · 6. Ułamki dziesiętne (zapis, wyrażenia dwumianowane, porównywanie, dodawanie, odejmowanie) · 7. Pola figur (pole prostokąta, jednostki pola) · 8. Prostopadłościany i sześciany (z objętością, litrami i mililitrami). Brakuje działu **„Działania pisemne”**. Poza podręcznikiem kl. 4 (kl. 5–6): dzielniki i podzielność, trójkąty i czworokąty, symetria, równania, mnożenie i dzielenie ułamków dziesiętnych, procenty, pola trójkątów i czworokątów, kąty w trójkącie, diagramy, średnia; zamianę jednostek pola GWO przeniosło do kl. 5.
+- **Angielski** – Welcome unit i Units 1–8 (be, pytania z wh-, whose i ’s, przymiotniki dzierżawcze, this/that/these/those, have got, can i przysłówki sposobu, policzalne i niepoliczalne z some/any/a lot of, there is/are, present simple, present continuous). Brakuje: Unit 2 (kraje, pytania z wh-), Unit 3, Unit 6 (some/any/a lot of), Unit 8 (present continuous, miejsca w mieście), przysłówki sposobu.
+- **Historia** – 5 działów: Z historią na ty · Mała i duża ojczyzna · Z najdawniejszych dziejów (Egipt, pismo) · W starożytnej Grecji · Dzieje starożytnego Rzymu (z początkami chrześcijaństwa). Odpowiadają działom aplikacji 1–8. Działy 9–13 (średniowiecze, narodziny Polski, rozbicie dzielnicowe, ostatni Piastowie, Polska i Litwa) to materiał kl. 5.
+- **Przyroda** – według strony redakcyjnej 8 rozdziałów; serwis fiszek podaje 6 działów (I. Okiem badacza · II. Na lądzie · III. W wodzie · IV. Wokół Ziemi · V. Krajobrazy bliższe i dalsze · VI. Człowiek i przyroda) – pełny spis treści do sprawdzenia. Prawdopodobne braki: łańcuchy pokarmowe i sposoby odżywiania, mikroskop, elektryzowanie i burze, pomiar odległości w terenie, krajobraz miejski, budowa i rozwój człowieka, rozmnażanie roślin, zagrożenia ze strony przyrody. Do decyzji rodzica: „używki i uzależnienia” oraz „choroby i profilaktyka” (bliskie edukacji zdrowotnej). Prawdopodobnie poza podręcznikiem kl. 4: Układ Słoneczny, metale i stopy, gęstość i pływanie, siły, krainy geograficzne Polski.
+
 ## Etapy
 
 - [x] Etap 1: matematyka i przyroda – pierwsze działy (wybór redakcyjny z bloku kl. IV–VI; kolejność można dopasować do podręcznika dziecka).
