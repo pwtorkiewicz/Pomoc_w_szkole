@@ -641,3 +641,667 @@ window.LESSONS['niemiecki/einkaufen'] = [
     check: { q: 'Das Kleid kostet 30 Euro. Ich nehme ___.', options: ['ihn', 'sie', 'es'], answer: 2, explain: 'das Kleid – rodzaj nijaki, więc es.' },
   },
 ];
+
+window.LESSONS['niemiecki/wohnen'] = [
+  {
+    title: 'Dom po niemiecku',
+    svg: `<svg viewBox="0 0 420 262" role="img" aria-label="Przekrój domu (das Haus) z pomieszczeniami: das Schlafzimmer, das Badezimmer, das Wohnzimmer, der Flur i die Küche. Kolor oznacza rodzajnik: der – niebieski, die – pomarańczowy, das – zielony">
+      <polygon points="20,72 210,12 400,72" class="f4 s4 sw"/>
+      <text x="210" y="60" class="tx-b" text-anchor="middle">🏠 das Haus</text>
+      <g class="sw"><rect x="20" y="72" width="200" height="72" class="f3 s3"/><rect x="220" y="72" width="180" height="72" class="f3 s3"/>
+        <rect x="20" y="144" width="150" height="72" class="f3 s3"/><rect x="170" y="144" width="100" height="72" class="f1 s1"/><rect x="270" y="144" width="130" height="72" class="f2 s2"/></g>
+      <g class="tx" text-anchor="middle"><text x="120" y="102">🛏️</text><text x="310" y="102">🛁</text><text x="95" y="174">🛋️</text><text x="220" y="174">🚪</text><text x="335" y="174">🍳</text>
+        <text x="120" y="130">das Schlafzimmer</text><text x="310" y="130">das Badezimmer</text><text x="95" y="202">das Wohnzimmer</text><text x="220" y="202">der Flur</text><text x="335" y="202">die Küche</text></g>
+      <rect x="95" y="234" width="16" height="16" class="f1 s1 sw"/><rect x="185" y="234" width="16" height="16" class="f2 s2 sw"/><rect x="275" y="234" width="16" height="16" class="f3 s3 sw"/>
+      <g class="tx"><text x="117" y="248">der</text><text x="207" y="248">die</text><text x="297" y="248">das</text></g>
+    </svg>`,
+    text: `<p>Dom to <b>das Haus</b>, mieszkanie – <b>die Wohnung</b>, pokój – <b>das Zimmer</b>. Wiele pomieszczeń to „coś + Zimmer”: <i>das Wohnzimmer</i> (salon), <i>das Schlafzimmer</i> (sypialnia), <i>das Kinderzimmer</i> (pokój dziecięcy), <i>das Badezimmer</i> (łazienka). Do tego <i>die Küche</i> (kuchnia), <i>der Flur</i> (przedpokój), <i>der Balkon</i> i <i>der Garten</i> (ogród).</p>
+      <p>W tym dziale opiszesz swój pokój i powiesz, gdzie co stoi. Rzeczowniki ucz się zawsze z rodzajnikiem – pomogą kolory: <b>der</b> niebieski, <b>die</b> pomarańczowy, <b>das</b> zielony.</p>`,
+    remember: 'das Wohnzimmer, das Schlafzimmer, das Badezimmer – wszystkie z das, tak jak das Zimmer.',
+    hook: 'Na końcu „-zimmer”? To na początku das: das Wohnzimmer, das Kinderzimmer.',
+    check: { q: 'Co znaczy „der Flur”?', options: ['sypialnia', 'przedpokój', 'ogród'], answer: 1, explain: 'der Flur – przedpokój; sypialnia to das Schlafzimmer, ogród – der Garten.' },
+  },
+  {
+    title: 'Es gibt – co jest w pokoju',
+    svg: `<svg viewBox="0 0 420 215" role="img" aria-label="Po es gibt stoi biernik: der Schrank zmienia się w einen Schrank, das Bett zostaje ein Bett, die Lampe zostaje eine Lampe">
+      <defs><marker id="a-k8de-wohnen-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <text x="210" y="24" class="tx-b" text-anchor="middle">In meinem Zimmer gibt es …</text>
+      <g class="sw"><rect x="10" y="40" width="150" height="40" rx="8" class="f1 s1"/><rect x="230" y="40" width="180" height="40" rx="8" class="f1 s1"/>
+        <rect x="10" y="92" width="150" height="40" rx="8" class="f3 s3"/><rect x="230" y="92" width="180" height="40" rx="8" class="f3 s3"/>
+        <rect x="10" y="144" width="150" height="40" rx="8" class="f2 s2"/><rect x="230" y="144" width="180" height="40" rx="8" class="f2 s2"/></g>
+      <g class="ln"><path d="M166,66 L222,66" marker-end="url(#a-k8de-wohnen-2)"/><path d="M166,118 L222,118" marker-end="url(#a-k8de-wohnen-2)"/><path d="M166,170 L222,170" marker-end="url(#a-k8de-wohnen-2)"/></g>
+      <g class="tx-s" text-anchor="middle"><text x="195" y="56">zmiana!</text><text x="195" y="108">bez zmian</text><text x="195" y="160">bez zmian</text></g>
+      <g class="tx" text-anchor="middle"><text x="85" y="66">der Schrank</text><text x="85" y="118">das Bett</text><text x="85" y="170">die Lampe</text>
+        <text x="320" y="66">ein<tspan class="tx-b t2">en</tspan> Schrank</text><text x="320" y="118">ein Bett</text><text x="320" y="170">eine Lampe</text></g>
+      <text x="210" y="206" class="tx-s" text-anchor="middle">Mein Zimmer ist klein, aber gemütlich und hell.</text>
+    </svg>`,
+    text: `<p>Żeby powiedzieć, co jest w pokoju, użyj <b>es gibt</b> (jest, znajduje się): <i>In meinem Zimmer gibt es einen Schrank, ein Bett und eine Lampe.</i></p>
+      <p>Po <b>es gibt</b> stoi <b>biernik</b>. Zmienia się tylko rodzaj męski: <b>der → einen</b>. Przy das i die zostaje <b>ein</b> i <b>eine</b>. Dodaj, jaki jest pokój: <i>klein</i> (mały), <i>gemütlich</i> (przytulny), <i>hell</i> (jasny).</p>`,
+    remember: 'es gibt + biernik: einen (der), ein (das), eine (die).',
+    hook: 'Po es gibt przebiera się tylko „pan” (der → einen). „Pani” i „dziecko” zostają, jak były.',
+    check: { q: 'In meinem Zimmer gibt es ___ Teppich. (der Teppich)', options: ['ein', 'eine', 'einen'], answer: 2, explain: 'Po „es gibt” stoi biernik: der Teppich → einen Teppich.' },
+  },
+  {
+    title: 'Gdzie? Kot pod łóżkiem',
+    svg: `<svg viewBox="0 0 420 238" role="img" aria-label="Pokój: lampa stoi na stole (auf dem Tisch), kot leży pod łóżkiem (unter dem Bett), obraz wisi nad sofą (über dem Sofa)">
+      <line x1="10" y1="190" x2="410" y2="190" class="ln sw"/>
+      <rect x="15" y="128" width="100" height="10" rx="2" class="f1 s1 sw"/>
+      <g class="ln sw"><line x1="25" y1="138" x2="25" y2="190"/><line x1="105" y1="138" x2="105" y2="190"/><line x1="65" y1="112" x2="65" y2="128"/></g>
+      <polygon points="53,92 77,92 88,112 42,112" class="f2 s2 sw"/>
+      <rect x="140" y="105" width="12" height="53" rx="3" class="f3 s3 sw"/><rect x="140" y="130" width="140" height="28" rx="6" class="f3 s3 sw"/>
+      <rect x="156" y="118" width="32" height="12" rx="5" class="f4 s4"/>
+      <g class="ln sw"><line x1="150" y1="158" x2="150" y2="190"/><line x1="272" y1="158" x2="272" y2="190"/><line x1="310" y1="170" x2="310" y2="190"/><line x1="400" y1="170" x2="400" y2="190"/></g>
+      <text x="211" y="185" class="tx" text-anchor="middle">🐈</text>
+      <rect x="300" y="118" width="110" height="27" rx="6" class="f3 s3 sw"/><rect x="300" y="145" width="110" height="25" rx="6" class="f3 s3 sw"/>
+      <path d="M335,40 L355,24 L375,40" class="ln-thin"/>
+      <rect x="325" y="40" width="60" height="44" class="f3 s3 sw"/>
+      <polyline points="331,78 347,56 358,70 366,62 379,78" class="ln"/>
+      <g class="tx" text-anchor="middle"><text x="65" y="212">auf dem Tisch</text><text x="210" y="212">unter dem Bett</text><text x="355" y="212">über dem Sofa</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="65" y="230">die Lampe</text><text x="210" y="230">die Katze</text><text x="355" y="230">das Bild</text></g>
+    </svg>`,
+    text: `<p>Na pytanie <b>Wo?</b> (gdzie?) odpowiadasz przyimkiem miejsca: <b>in</b> (w), <b>auf</b> (na), <b>unter</b> (pod), <b>über</b> (nad), <b>neben</b> (obok), <b>vor</b> (przed), <b>hinter</b> (za), <b>zwischen</b> (między).</p>
+      <p><i>Die Lampe steht auf dem Tisch. Die Katze liegt unter dem Bett. Das Bild hängt über dem Sofa.</i></p>`,
+    remember: 'Wo? → in, auf, unter, über, neben, vor, hinter, zwischen.',
+    hook: 'Angielski podpowiada: unter ≈ under (pod), über ≈ over (nad), in ≈ in (w).',
+    check: { q: 'Der Ball liegt ___ dem Schrank. (za)', options: ['vor', 'hinter', 'neben'], answer: 1, explain: 'hinter – za; vor – przed, neben – obok.' },
+  },
+  {
+    title: 'dem czy der? Celownik',
+    svg: `<svg viewBox="0 0 420 215" role="img" aria-label="Na pytanie Wo? rodzajnik przechodzi w celownik: der Tisch – auf dem Tisch, das Bett – unter dem Bett, die Lampe – neben der Lampe; skrót in dem = im, np. im Regal">
+      <defs><marker id="a-k8de-wohnen-4" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <text x="210" y="22" class="tx-b" text-anchor="middle">Wo? → celownik (Dativ)</text>
+      <g class="sw"><rect x="10" y="36" width="130" height="40" rx="8" class="f1 s1"/><rect x="200" y="36" width="210" height="40" rx="8" class="f1 s1"/>
+        <rect x="10" y="86" width="130" height="40" rx="8" class="f3 s3"/><rect x="200" y="86" width="210" height="40" rx="8" class="f3 s3"/>
+        <rect x="10" y="136" width="130" height="40" rx="8" class="f2 s2"/><rect x="200" y="136" width="210" height="40" rx="8" class="f2 s2"/></g>
+      <g class="ln"><path d="M146,56 L192,56" marker-end="url(#a-k8de-wohnen-4)"/><path d="M146,106 L192,106" marker-end="url(#a-k8de-wohnen-4)"/><path d="M146,156 L192,156" marker-end="url(#a-k8de-wohnen-4)"/></g>
+      <g class="tx" text-anchor="middle"><text x="75" y="62">der Tisch</text><text x="75" y="112">das Bett</text><text x="75" y="162">die Lampe</text>
+        <text x="305" y="62">auf <tspan class="tx-b t1">dem</tspan> Tisch</text><text x="305" y="112">unter <tspan class="tx-b t3">dem</tspan> Bett</text><text x="305" y="162">neben <tspan class="tx-b t2">der</tspan> Lampe</text></g>
+      <text x="210" y="204" class="tx-b" text-anchor="middle">in + dem = im → im Regal</text>
+    </svg>`,
+    text: `<p>Po przyimku miejsca (pytanie <b>Wo?</b>) rodzajnik przechodzi w <b>celownik</b>: <b>der → dem</b>, <b>das → dem</b>, <b>die → der</b>.</p>
+      <p>Skróty: <b>im</b> = in dem (<i>Das Buch steht im Regal.</i>), <b>am</b> = an dem.</p>`,
+    remember: 'Wo? → der, das → dem; die → der.',
+    hook: '„der” po przyimku miejsca to zwykle przebrana „pani”: die Lampe → neben der Lampe.',
+    check: { q: 'Der Teppich liegt vor ___ Sofa. (das Sofa)', options: ['dem', 'der', 'das'], answer: 0, explain: 'das Sofa, pytanie „Wo?” – celownik: vor dem Sofa.' },
+  },
+  {
+    title: 'Pułapki: opis pokoju bez błędów',
+    svg: `<svg viewBox="0 0 420 225" role="img" aria-label="Trzy typowe błędy i poprawne wersje: Es gibt einen Schreibtisch; Die Katze sitzt neben der Lampe; Ich räume mein Zimmer auf">
+      <g class="sw"><rect x="5" y="8" width="410" height="64" rx="10" class="f4 s4"/><rect x="5" y="80" width="410" height="64" rx="10" class="f4 s4"/><rect x="5" y="152" width="410" height="64" rx="10" class="f4 s4"/></g>
+      <g class="tx t2"><text x="20" y="34">✗ Es gibt ein Schreibtisch.</text><text x="20" y="106">✗ Die Katze sitzt neben die Lampe.</text><text x="20" y="178">✗ Ich aufräume mein Zimmer.</text></g>
+      <g class="tx-b t3"><text x="20" y="60">✓ Es gibt einen Schreibtisch.</text><text x="20" y="132">✓ Die Katze sitzt neben der Lampe.</text><text x="20" y="204">✓ Ich räume mein Zimmer auf.</text></g>
+    </svg>`,
+    text: `<p>Najczęstsze błędy:</p>
+      <ul><li>po <b>es gibt</b> rodzaj męski ma <b>einen</b>,</li><li>po przyimku miejsca <b>die</b> zmienia się w <b>der</b>, a der i das – w <b>dem</b>,</li><li>w <i>aufräumen</i> (sprzątać) część <b>auf</b> idzie na koniec zdania.</li></ul>
+      <p>Inne prace domowe: <i>staubsaugen</i> (odkurzać), <i>abwaschen</i> (zmywać), <i>kochen</i> (gotować), <i>das Bett machen</i> (ścielić łóżko), <i>den Müll rausbringen</i> (wynosić śmieci).</p>`,
+    remember: 'Ich räume mein Zimmer auf. – „auf” na końcu zdania.',
+    check: { q: 'Które zdanie jest poprawne?', options: ['Die Katze schläft unter das Bett.', 'Die Katze schläft unter der Bett.', 'Die Katze schläft unter dem Bett.'], answer: 2, explain: 'das Bett, pytanie „Wo?” → unter dem Bett.' },
+  },
+];
+
+window.LESSONS['niemiecki/stadt'] = [
+  {
+    title: 'Miasto: dokąd idziesz?',
+    svg: `<svg viewBox="0 0 420 222" role="img" aria-label="Kafelki miejsc w mieście w kolorach rodzajników: der Bahnhof, die Haltestelle, die Post, die Bank, das Kino, das Museum, die Kirche, das Krankenhaus, der Park">
+      <g class="sw"><rect x="4" y="8" width="136" height="62" rx="10" class="f1 s1"/><rect x="142" y="8" width="136" height="62" rx="10" class="f2 s2"/><rect x="280" y="8" width="136" height="62" rx="10" class="f2 s2"/>
+        <rect x="4" y="80" width="136" height="62" rx="10" class="f2 s2"/><rect x="142" y="80" width="136" height="62" rx="10" class="f3 s3"/><rect x="280" y="80" width="136" height="62" rx="10" class="f3 s3"/>
+        <rect x="4" y="152" width="136" height="62" rx="10" class="f2 s2"/><rect x="142" y="152" width="136" height="62" rx="10" class="f3 s3"/><rect x="280" y="152" width="136" height="62" rx="10" class="f1 s1"/></g>
+      <g class="tx" text-anchor="middle"><text x="72" y="34">🚉</text><text x="210" y="34">🚏</text><text x="348" y="34">📮</text><text x="72" y="106">🏦</text><text x="210" y="106">🎬</text><text x="348" y="106">🏛️</text><text x="72" y="178">⛪</text><text x="210" y="178">🏥</text><text x="348" y="178">🌳</text>
+        <text x="72" y="58">der Bahnhof</text><text x="210" y="58">die Haltestelle</text><text x="348" y="58">die Post</text><text x="72" y="130">die Bank</text><text x="210" y="130">das Kino</text><text x="348" y="130">das Museum</text><text x="72" y="202">die Kirche</text><text x="210" y="202">das Krankenhaus</text><text x="348" y="202">der Park</text></g>
+    </svg>`,
+    text: `<p>W tym dziale zapytasz o drogę, powiesz, czym jedziesz, i kupisz bilet. Najpierw miejsca: <i>der Bahnhof</i> (dworzec), <i>die Haltestelle</i> (przystanek), <i>die Post</i> (poczta), <i>die Kirche</i> (kościół), <i>das Krankenhaus</i> (szpital), a także <i>die Bank, das Kino, das Museum, der Park, das Hotel</i> i <i>die Straße</i> (ulica).</p>
+      <p>Rozmowę z nieznajomym zaczynasz grzecznie: <i>Entschuldigung, wo ist der Bahnhof?</i> – Przepraszam, gdzie jest dworzec?</p>`,
+    remember: 'Entschuldigung, wo ist …? – Przepraszam, gdzie jest …?',
+    hook: 'das Krankenhaus = krank (chory) + das Haus (dom) – dom dla chorych.',
+    check: { q: 'Co znaczy „die Haltestelle”?', options: ['przystanek', 'dworzec', 'ulica'], answer: 0, explain: 'die Haltestelle – przystanek; dworzec to der Bahnhof, ulica – die Straße.' },
+  },
+  {
+    title: 'Wie komme ich zum Bahnhof?',
+    svg: `<svg viewBox="0 0 420 248" role="img" aria-label="Plan ulic: start w punkcie „hier”, strzałka prowadzi prosto (geradeaus), potem w pierwszą ulicę w prawo do dworca (der Bahnhof). Pod planem zdania: Gehen Sie geradeaus. Nehmen Sie die erste Straße rechts">
+      <defs><marker id="a-k8de-stadt-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="55" y="8" width="36" height="180" class="f4 s4"/>
+      <rect x="55" y="18" width="360" height="34" class="f4 s4"/><rect x="55" y="105" width="360" height="34" class="f4 s4"/>
+      <rect x="56" y="19" width="34" height="32" class="f4"/><rect x="56" y="106" width="34" height="32" class="f4"/>
+      <path d="M73,176 L73,122 L318,122" class="ln sw" marker-end="url(#a-k8de-stadt-2)"/>
+      <text x="73" y="190" class="tx" text-anchor="middle">📍</text>
+      <text x="48" y="186" class="tx-s" text-anchor="end">hier</text>
+      <text x="100" y="164" class="tx-s">1. geradeaus</text>
+      <text x="100" y="84" class="tx-s">2. die erste Straße rechts</text>
+      <rect x="290" y="146" width="122" height="36" rx="8" class="f1 s1 sw"/>
+      <text x="351" y="169" class="tx" text-anchor="middle">🚉 der Bahnhof</text>
+      <g class="tx"><text x="10" y="214">1. Gehen Sie geradeaus.</text><text x="10" y="238">2. Nehmen Sie die erste Straße rechts.</text></g>
+    </svg>`,
+    text: `<p>Pytasz: <i>Wie komme ich zum Bahnhof?</i> – Jak dojdę do dworca? W odpowiedzi usłyszysz <i>geradeaus</i> (prosto), <i>links</i> (w lewo), <i>rechts</i> (w prawo), np. <i>Gehen Sie geradeaus, dann links.</i> albo <i>Nehmen Sie die erste Straße rechts.</i> – Proszę skręcić w pierwszą ulicę w prawo.</p>
+      <p>Na koniec często pada: <i>Es ist nicht weit.</i> – To niedaleko.</p>`,
+    remember: 'geradeaus – prosto, links – w lewo, rechts – w prawo.',
+    hook: 'links i lewo zaczynają się na L. Zostaje rechts – w prawo.',
+    check: { q: 'Co znaczy „Nehmen Sie die erste Straße links”?', options: ['Proszę iść cały czas prosto.', 'Proszę skręcić w pierwszą ulicę w prawo.', 'Proszę skręcić w pierwszą ulicę w lewo.'], answer: 2, explain: 'links – w lewo; die erste Straße – pierwsza ulica.' },
+  },
+  {
+    title: 'zum czy zur?',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Schemat: der Bahnhof i das Kino – zu dem, czyli zum: zum Bahnhof, zum Kino. die Post i die Schule – zu der, czyli zur: zur Post, zur Schule">
+      <defs><marker id="a-k8de-stadt-3" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <g class="sw"><rect x="10" y="12" width="125" height="34" rx="8" class="f1 s1"/><rect x="10" y="54" width="125" height="34" rx="8" class="f3 s3"/>
+        <rect x="10" y="112" width="125" height="34" rx="8" class="f2 s2"/><rect x="10" y="154" width="125" height="34" rx="8" class="f2 s2"/>
+        <rect x="175" y="28" width="90" height="44" rx="8" class="f4 s4"/><rect x="175" y="128" width="90" height="44" rx="8" class="f4 s4"/></g>
+      <g class="ln"><path d="M138,29 L170,44" marker-end="url(#a-k8de-stadt-3)"/><path d="M138,71 L170,56" marker-end="url(#a-k8de-stadt-3)"/><path d="M268,50 L292,50" marker-end="url(#a-k8de-stadt-3)"/>
+        <path d="M138,129 L170,144" marker-end="url(#a-k8de-stadt-3)"/><path d="M138,171 L170,156" marker-end="url(#a-k8de-stadt-3)"/><path d="M268,150 L292,150" marker-end="url(#a-k8de-stadt-3)"/></g>
+      <g class="tx" text-anchor="middle"><text x="72" y="35">der Bahnhof</text><text x="72" y="77">das Kino</text><text x="72" y="135">die Post</text><text x="72" y="177">die Schule</text></g>
+      <g class="tx-b" text-anchor="middle"><text x="220" y="49">zum</text><text x="220" y="149">zur</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="220" y="66">zu + dem</text><text x="220" y="166">zu + der</text></g>
+      <g class="tx"><text x="300" y="36">zum Bahnhof</text><text x="300" y="76">zum Kino</text><text x="300" y="136">zur Post</text><text x="300" y="176">zur Schule</text></g>
+    </svg>`,
+    text: `<p>„Do” jakiegoś miejsca to <b>zu</b> – i prawie zawsze zlewa się z rodzajnikiem: <b>zum</b> = zu dem (przy der i das): <i>zum Bahnhof, zum Kino</i>; <b>zur</b> = zu der (przy die): <i>zur Post, zur Schule</i>.</p>
+      <p>Dlatego musisz znać rodzajnik miejsca – stąd kolory na kafelkach.</p>`,
+    remember: 'zum = zu dem (der, das), zur = zu der (die).',
+    hook: 'zuR – r jak w „der” (die po zu), zuM – m jak w „dem”.',
+    check: { q: 'Wie komme ich ___ Kino? (das Kino)', options: ['zur', 'zum', 'zu die'], answer: 1, explain: 'das Kino → zu dem → zum Kino.' },
+  },
+  {
+    title: 'Czym jedziesz? mit + celownik',
+    svg: `<svg viewBox="0 0 420 215" role="img" aria-label="Środki transportu w kolorach rodzajników: mit dem Bus, mit dem Zug, mit dem Auto, mit dem Fahrrad, mit der U-Bahn, mit der Straßenbahn; pieszo – zu Fuß, bez mit">
+      <g class="sw"><rect x="8" y="8" width="198" height="38" rx="8" class="f1 s1"/><rect x="214" y="8" width="198" height="38" rx="8" class="f1 s1"/>
+        <rect x="8" y="52" width="198" height="38" rx="8" class="f3 s3"/><rect x="214" y="52" width="198" height="38" rx="8" class="f3 s3"/>
+        <rect x="8" y="96" width="198" height="38" rx="8" class="f2 s2"/><rect x="214" y="96" width="198" height="38" rx="8" class="f2 s2"/>
+        <rect x="110" y="140" width="200" height="38" rx="8" class="f4 s4 dash"/></g>
+      <g class="tx" text-anchor="middle"><text x="107" y="33">🚌 mit dem Bus</text><text x="313" y="33">🚆 mit dem Zug</text>
+        <text x="107" y="77">🚗 mit dem Auto</text><text x="313" y="77">🚲 mit dem Fahrrad</text>
+        <text x="107" y="121">🚇 mit der U-Bahn</text><text x="313" y="121">🚋 mit der Straßenbahn</text>
+        <text x="210" y="165">🚶 zu Fuß (bez mit!)</text></g>
+      <text x="210" y="205" class="tx-s" text-anchor="middle">Ich fahre mit dem Bus zur Schule.</text>
+    </svg>`,
+    text: `<p>Czym jedziesz? <b>mit</b> + celownik: <i>mit dem Bus / Auto / Zug</i> (pociąg) <i>/ Fahrrad</i>, ale <i>mit der U-Bahn</i> (metro) i <i>mit der Straßenbahn</i> (tramwaj). Pieszo to <b>zu Fuß</b> – bez „mit”.</p>
+      <p>Na dworcu: <i>Eine Fahrkarte nach Berlin, bitte.</i> – <i>Einfach oder hin und zurück?</i> (w jedną stronę czy tam i z powrotem?). <i>Wann fährt der Zug nach Berlin?</i> – O której odjeżdża pociąg do Berlina?</p>`,
+    remember: 'mit dem (der, das), mit der (die); pieszo – zu Fuß.',
+    hook: 'der Fuß to stopa (jak angielskie foot) – zu Fuß = „na stopach”, czyli pieszo.',
+    check: { q: 'Ich fahre ___ Straßenbahn zur Schule.', options: ['mit der', 'mit dem', 'zu'], answer: 0, explain: 'die Straßenbahn → mit der Straßenbahn.' },
+  },
+  {
+    title: 'Geh! Komm! Nimm! – polecenia i pułapki',
+    svg: `<svg viewBox="0 0 420 222" role="img" aria-label="Tabela trybu rozkazującego: gehen – Geh!, Geht!, Gehen Sie!; kommen – Komm!, Kommt!, Kommen Sie!; nehmen – Nimm!, Nehmt!, Nehmen Sie!">
+      <g class="tx-b" text-anchor="middle"><text x="150" y="32">du</text><text x="245" y="32">ihr</text><text x="352" y="32">Sie</text></g>
+      <g class="sw"><rect x="105" y="46" width="90" height="36" rx="6" class="f4 s4"/><rect x="200" y="46" width="90" height="36" rx="6" class="f4 s4"/><rect x="295" y="46" width="115" height="36" rx="6" class="f5 s5"/>
+        <rect x="105" y="88" width="90" height="36" rx="6" class="f4 s4"/><rect x="200" y="88" width="90" height="36" rx="6" class="f4 s4"/><rect x="295" y="88" width="115" height="36" rx="6" class="f5 s5"/>
+        <rect x="105" y="130" width="90" height="36" rx="6" class="f4 s4"/><rect x="200" y="130" width="90" height="36" rx="6" class="f4 s4"/><rect x="295" y="130" width="115" height="36" rx="6" class="f5 s5"/></g>
+      <g class="tx-s"><text x="15" y="69">gehen</text><text x="15" y="111">kommen</text><text x="15" y="153">nehmen</text></g>
+      <g class="tx" text-anchor="middle"><text x="150" y="70">Geh!</text><text x="245" y="70">Geht!</text><text x="352" y="70">Gehen Sie!</text>
+        <text x="150" y="112">Komm!</text><text x="245" y="112">Kommt!</text><text x="352" y="112">Kommen Sie!</text>
+        <text x="150" y="154">Nimm!</text><text x="245" y="154">Nehmt!</text><text x="352" y="154">Nehmen Sie!</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="210" y="192">du kommst → Komm!   ·   du nimmst → Nimm!</text><text x="210" y="212">forma du: bez „du” i bez -st; zmiana e → i zostaje</text></g>
+    </svg>`,
+    text: `<p>Polecenia (tryb rozkazujący) usłyszysz przy wskazywaniu drogi. Do kolegi (<b>du</b>): czasownik bez „du” i bez końcówki -st: <i>du kommst → Komm!</i>, <i>du nimmst → Nimm!</i> Do kilku osób (<b>ihr</b>): <i>Geht! Kommt! Nehmt!</i> Do obcej dorosłej osoby (<b>Sie</b>): <i>Gehen Sie! Nehmen Sie!</i></p>
+      <p>Pułapki działu: <b>zum/zur</b> zależy od rodzajnika, pieszo to <b>zu Fuß</b>, a w hotelu <i>das Einzelzimmer</i> (jednoosobowy) ≠ <i>das Doppelzimmer</i> (dwuosobowy): <i>Ich möchte ein Einzelzimmer für zwei Nächte.</i></p>`,
+    remember: 'du: Geh! Komm! Nimm! · Sie: Gehen Sie! Nehmen Sie!',
+    hook: 'Doppel brzmi jak „double” – podwójny, czyli pokój dla dwóch osób.',
+    check: { q: 'Mówisz do kolegi: „Idź prosto!”. Które zdanie jest poprawne?', options: ['Gehen Sie geradeaus!', 'Gehst geradeaus!', 'Geh geradeaus!'], answer: 2, explain: 'Do jednej osoby na „ty”: du gehst → Geh! „Gehen Sie” to forma grzecznościowa.' },
+  },
+];
+
+window.LESSONS['niemiecki/gesundheit'] = [
+  {
+    title: 'Ciało – der Körper',
+    svg: `<svg viewBox="0 0 420 276" role="img" aria-label="Sylwetka człowieka z podpisanymi częściami ciała w kolorach rodzajników: der Kopf, die Nase, der Hals, der Arm, die Hand, das Knie, das Auge, das Ohr, der Bauch, das Bein, der Fuß">
+      <g class="ln-thin"><line x1="120" y1="22" x2="189" y2="30"/><line x1="120" y1="66" x2="207" y2="49"/><line x1="120" y1="100" x2="207" y2="72"/><line x1="120" y1="134" x2="168" y2="125"/><line x1="120" y1="170" x2="141" y2="168"/><line x1="120" y1="214" x2="192" y2="212"/>
+        <line x1="300" y1="22" x2="222" y2="36"/><line x1="300" y1="60" x2="239" y2="46"/><line x1="300" y1="134" x2="232" y2="135"/><line x1="300" y1="200" x2="226" y2="200"/><line x1="300" y1="256" x2="247" y2="259"/></g>
+      <g class="ln sw"><line x1="210" y1="66" x2="210" y2="78"/><line x1="184" y1="90" x2="152" y2="160"/><line x1="236" y1="90" x2="268" y2="160"/>
+        <line x1="198" y1="170" x2="192" y2="256"/><line x1="222" y1="170" x2="228" y2="256"/><line x1="192" y1="256" x2="174" y2="260"/><line x1="228" y1="256" x2="246" y2="260"/></g>
+      <ellipse cx="185" cy="44" rx="4" ry="7" class="f4 s4 sw"/><ellipse cx="235" cy="44" rx="4" ry="7" class="f4 s4 sw"/>
+      <circle cx="210" cy="42" r="24" class="f4 s4 sw"/>
+      <circle cx="201" cy="37" r="3" class="f1 s1"/><circle cx="219" cy="37" r="3" class="f1 s1"/>
+      <path d="M210,40 L207,49 L211,49" class="ln"/><path d="M202,56 Q210,61 218,56" class="ln"/>
+      <rect x="182" y="78" width="56" height="92" rx="14" class="f4 s4 sw"/>
+      <circle cx="149" cy="167" r="7" class="f4 s4 sw"/><circle cx="271" cy="167" r="7" class="f4 s4 sw"/>
+      <g class="sw"><rect x="10" y="10" width="110" height="24" rx="6" class="f1 s1"/><rect x="10" y="54" width="110" height="24" rx="6" class="f2 s2"/><rect x="10" y="88" width="110" height="24" rx="6" class="f1 s1"/>
+        <rect x="10" y="122" width="110" height="24" rx="6" class="f1 s1"/><rect x="10" y="158" width="110" height="24" rx="6" class="f2 s2"/><rect x="10" y="202" width="110" height="24" rx="6" class="f3 s3"/>
+        <rect x="300" y="10" width="110" height="24" rx="6" class="f3 s3"/><rect x="300" y="48" width="110" height="24" rx="6" class="f3 s3"/><rect x="300" y="122" width="110" height="24" rx="6" class="f1 s1"/>
+        <rect x="300" y="188" width="110" height="24" rx="6" class="f3 s3"/><rect x="300" y="244" width="110" height="24" rx="6" class="f1 s1"/></g>
+      <g class="tx" text-anchor="middle"><text x="65" y="28">der Kopf</text><text x="65" y="72">die Nase</text><text x="65" y="106">der Hals</text><text x="65" y="140">der Arm</text><text x="65" y="176">die Hand</text><text x="65" y="220">das Knie</text>
+        <text x="355" y="28">das Auge</text><text x="355" y="66">das Ohr</text><text x="355" y="140">der Bauch</text><text x="355" y="206">das Bein</text><text x="355" y="262">der Fuß</text></g>
+    </svg>`,
+    text: `<p>Zanim powiesz lekarzowi, co cię boli, potrzebujesz nazw części ciała (<i>der Körper</i> – ciało). Ucz się ich z rodzajnikiem: <b>der</b> Kopf, Hals, Bauch, Rücken (plecy), Arm, Fuß, Zahn (ząb); <b>die</b> Nase, Hand; <b>das</b> Auge, Ohr, Bein, Knie.</p>
+      <p>Przydadzą się też liczby mnogie: <i>die Augen</i> (oczy), <i>die Zähne</i> (zęby), <i>die Füße</i> (stopy).</p>`,
+    remember: 'das Bein – noga, der Fuß – stopa; der Arm – ręka, die Hand – dłoń.',
+    hook: 'Hand ≈ hand, Arm ≈ arm, Knie ≈ knee – angielski podpowie znaczenie, rodzajnik musisz dodać sam.',
+    check: { q: 'Co znaczy „das Bein”?', options: ['stopa', 'noga', 'ręka'], answer: 1, explain: 'das Bein – noga; stopa to der Fuß, ręka – der Arm.' },
+  },
+  {
+    title: 'Mir tut … weh – co cię boli?',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Budowa zdania: Mir tut der Kopf weh – boli mnie głowa (jedna rzecz, tut); Mir tun die Füße weh – bolą mnie stopy (liczba mnoga, tun)">
+      <g class="tx-s"><text x="10" y="22">jedna rzecz → tut</text><text x="10" y="122">liczba mnoga → tun</text><text x="10" y="88">Boli mnie głowa.</text><text x="10" y="188">Bolą mnie stopy.</text></g>
+      <g class="sw"><rect x="10" y="30" width="60" height="40" rx="8" class="f5 s5"/><rect x="76" y="30" width="62" height="40" rx="8" class="f4 s4"/><rect x="144" y="30" width="120" height="40" rx="8" class="f1 s1"/><rect x="270" y="30" width="62" height="40" rx="8" class="f5 s5"/>
+        <rect x="10" y="130" width="60" height="40" rx="8" class="f5 s5"/><rect x="76" y="130" width="62" height="40" rx="8" class="f4 s4"/><rect x="144" y="130" width="120" height="40" rx="8" class="f2 s2"/><rect x="270" y="130" width="62" height="40" rx="8" class="f5 s5"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="40" y="56">Mir</text><text x="107" y="56">tut</text><text x="204" y="56">der Kopf</text><text x="301" y="56">weh.</text>
+        <text x="40" y="156">Mir</text><text x="107" y="156">tun</text><text x="204" y="156">die Füße</text><text x="301" y="156">weh.</text></g>
+      <g class="tx" text-anchor="middle"><text x="376" y="56">🤕</text><text x="376" y="156">🦶</text></g>
+    </svg>`,
+    text: `<p>Lekarz pyta: <i>Was fehlt dir?</i> (Co ci dolega?) albo <i>Was tut dir weh?</i> (Co cię boli?). Odpowiadasz: <i>Mir tut … weh.</i></p>
+      <p>Czasownik zależy od tego, co boli: jedna rzecz – <b>tut</b> (<i>Mir tut der Bauch weh.</i>), liczba mnoga – <b>tun</b> (<i>Mir tun die Füße weh.</i>). Słowo <b>weh</b> stoi na końcu.</p>`,
+    remember: 'Mir tut der Kopf weh. · Mir tun die Füße weh.',
+    hook: 'Jak po polsku: „boli” → tut, „bolą” → tun.',
+    check: { q: 'Mir ___ der Bauch weh.', options: ['tut', 'tun', 'tust'], answer: 0, explain: 'der Bauch – jedna rzecz, więc tut.' },
+  },
+  {
+    title: 'Ich habe Fieber – objawy',
+    svg: `<svg viewBox="0 0 420 222" role="img" aria-label="Kafelki objawów po Ich habe: Fieber – gorączka, Schnupfen – katar, Husten – kaszel, eine Grippe – grypa. Złożenie Kopf plus Schmerzen daje Kopfschmerzen; podobnie Bauchschmerzen, Halsschmerzen, Zahnschmerzen">
+      <text x="210" y="22" class="tx-b" text-anchor="middle">Ich habe …</text>
+      <g class="sw"><rect x="8" y="34" width="96" height="76" rx="10" class="f3 s3"/><rect x="112" y="34" width="96" height="76" rx="10" class="f1 s1"/><rect x="216" y="34" width="96" height="76" rx="10" class="f1 s1"/><rect x="320" y="34" width="96" height="76" rx="10" class="f2 s2"/></g>
+      <g class="tx" text-anchor="middle"><text x="56" y="60">🤒</text><text x="160" y="60">🤧</text><text x="264" y="60">😷</text><text x="368" y="60">🛌</text>
+        <text x="56" y="84">Fieber</text><text x="160" y="84">Schnupfen</text><text x="264" y="84">Husten</text><text x="368" y="84">eine Grippe</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="56" y="102">gorączka</text><text x="160" y="102">katar</text><text x="264" y="102">kaszel</text><text x="368" y="102">grypa</text></g>
+      <text x="210" y="144" class="tx-b" text-anchor="middle">Kopf + Schmerzen = Kopfschmerzen</text>
+      <text x="210" y="168" class="tx-s" text-anchor="middle">tak samo: Bauchschmerzen · Halsschmerzen · Zahnschmerzen</text>
+      <text x="210" y="206" class="tx" text-anchor="middle">Ich bin krank. → Gute Besserung!</text>
+    </svg>`,
+    text: `<p>Objawy podajesz z <b>Ich habe</b>: <i>Ich habe Fieber / Schnupfen / Husten / eine Grippe.</i> – Mam gorączkę / katar / kaszel / grypę.</p>
+      <p>Ból czegoś to złożenie: miejsce + <b>Schmerzen</b>: <i>Ich habe Kopfschmerzen</i> (ból głowy), <i>Bauchschmerzen</i> (brzucha), <i>Halsschmerzen</i> (gardła), <i>Zahnschmerzen</i> (zęba). Gdy ktoś mówi <i>Ich bin krank</i> (jestem chory), życz mu: <i>Gute Besserung!</i></p>`,
+    remember: 'Ich habe Fieber / Husten / Kopfschmerzen. · Ich bin krank.',
+    hook: 'Najpierw gdzie, potem co: Hals + Schmerzen = Halsschmerzen (ból gardła).',
+    check: { q: 'Masz katar. Co powiesz?', options: ['Ich habe Schnupfen.', 'Ich habe Husten.', 'Ich habe Fieber.'], answer: 0, explain: 'der Schnupfen – katar; Husten – kaszel, Fieber – gorączka.' },
+  },
+  {
+    title: 'müssen i dürfen u lekarza',
+    svg: `<svg viewBox="0 0 420 238" role="img" aria-label="Szyk: Du musst im Bett bleiben – czasownik modalny na 2. miejscu, bezokolicznik na końcu. Tabela odmiany: ich muss, darf; du musst, darfst; er/sie/es muss, darf; wir müssen, dürfen; ihr müsst, dürft; sie/Sie müssen, dürfen">
+      <g class="sw"><rect x="10" y="10" width="60" height="36" rx="8" class="f5 s5"/><rect x="76" y="10" width="84" height="36" rx="8" class="f4 s4"/><rect x="166" y="10" width="100" height="36" rx="8" class="f5 s5"/><rect x="272" y="10" width="100" height="36" rx="8" class="f4 s4"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="40" y="34">Du</text><text x="118" y="34">musst</text><text x="216" y="34">im Bett</text><text x="322" y="34">bleiben.</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="118" y="64">2. miejsce</text><text x="322" y="64">bezokolicznik na końcu</text></g>
+      <rect x="10" y="110" width="400" height="20" rx="4" class="f4"/><rect x="10" y="152" width="400" height="20" rx="4" class="f4"/>
+      <g class="tx-b" text-anchor="middle"><text x="200" y="96">müssen</text><text x="330" y="96">dürfen</text></g>
+      <line x1="10" y1="104" x2="410" y2="104" class="ln-thin"/>
+      <g class="tx-s"><text x="20" y="125">ich</text><text x="20" y="146">du</text><text x="20" y="167">er / sie / es</text><text x="20" y="188">wir</text><text x="20" y="209">ihr</text><text x="20" y="230">sie / Sie</text></g>
+      <g class="tx" text-anchor="middle"><text x="200" y="125">muss</text><text x="200" y="146">musst</text><text x="200" y="167">muss</text><text x="200" y="188">müssen</text><text x="200" y="209">müsst</text><text x="200" y="230">müssen</text>
+        <text x="330" y="125">darf</text><text x="330" y="146">darfst</text><text x="330" y="167">darf</text><text x="330" y="188">dürfen</text><text x="330" y="209">dürft</text><text x="330" y="230">dürfen</text></g>
+    </svg>`,
+    text: `<p><b>müssen</b> = musieć (obowiązek), <b>dürfen</b> = móc w sensie „mieć pozwolenie”. Czasownik modalny stoi na <b>2. miejscu</b>, a drugi czasownik – w bezokoliczniku – na <b>końcu</b>: <i>Du musst im Bett bleiben.</i> – Musisz zostać w łóżku.</p>
+      <p>Przy <i>ich</i> i <i>er/sie/es</i> nie ma końcówki: <i>ich muss, er darf</i>.</p>`,
+    remember: 'Du musst im Bett bleiben. – modalny na 2. miejscu, bezokolicznik na końcu.',
+    hook: 'ich i er to bliźniaki: ich muss – er muss, ich darf – er darf.',
+    check: { q: 'Er ___ im Bett bleiben. (musi)', options: ['müssen', 'musst', 'muss'], answer: 2, explain: 'er/sie/es → muss (bez końcówki, jak przy ich).' },
+  },
+  {
+    title: 'Pułapka: nie wolno ≠ nie trzeba',
+    svg: `<svg viewBox="0 0 420 215" role="img" aria-label="Porównanie: nicht dürfen – nie wolno (Du darfst nicht in die Schule gehen); nicht müssen – nie trzeba (Du musst nicht in die Schule gehen). Pod spodem polecenia lekarza: Bleib im Bett! Trink viel Tee!">
+      <g class="sw"><rect x="8" y="8" width="198" height="140" rx="12" class="f5 s5"/><rect x="214" y="8" width="198" height="140" rx="12" class="f4 s4"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="107" y="36">nicht dürfen</text><text x="313" y="36">nicht müssen</text></g>
+      <g class="tx" text-anchor="middle"><text x="107" y="64">🚫</text><text x="313" y="64">🆗</text><text x="107" y="90">= nie wolno</text><text x="313" y="90">= nie trzeba</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="107" y="114">Du darfst nicht in</text><text x="107" y="130">die Schule gehen.</text><text x="313" y="114">Du musst nicht in</text><text x="313" y="130">die Schule gehen.</text></g>
+      <text x="210" y="176" class="tx-s" text-anchor="middle">Lekarz wydaje polecenia:</text>
+      <text x="210" y="202" class="tx-b" text-anchor="middle">Bleib im Bett! Trink viel Tee!</text>
+    </svg>`,
+    text: `<p>Największa pułapka: <b>nicht dürfen</b> to <b>zakaz</b> (nie wolno), a <b>nicht müssen</b> – <b>brak obowiązku</b> (nie trzeba). <i>Du darfst nicht in die Schule gehen.</i> – Nie wolno ci iść do szkoły. <i>Du musst nicht in die Schule gehen.</i> – Nie musisz iść do szkoły.</p>
+      <p>O pozwolenie pytasz: <i>Darf ich das Fenster öffnen?</i> – <i>Ja, natürlich. / Nein, leider nicht.</i> Lekarz mówi też w trybie rozkazującym: <i>Bleib im Bett! Trink viel Tee!</i></p>`,
+    remember: 'nicht dürfen = nie wolno; nicht müssen = nie trzeba.',
+    hook: 'müssen brzmi jak „muszę” – więc nicht müssen to „nie muszę”, a nie zakaz.',
+    check: { q: 'Co znaczy „Du musst heute nicht kommen”?', options: ['Nie wolno ci dziś przychodzić.', 'Nie musisz dziś przychodzić.', 'Musisz dziś przyjść.'], answer: 1, explain: 'nicht müssen – nie trzeba; zakaz to nicht dürfen.' },
+  },
+];
+
+window.LESSONS['niemiecki/natur'] = [
+  {
+    title: 'Wie ist das Wetter?',
+    svg: `<svg viewBox="0 0 420 225" role="img" aria-label="Pogoda: po lewej Es ist plus przymiotnik – sonnig, windig, wolkig, neblig, heiß, kalt; po prawej Es plus czasownik – Es regnet, Es schneit oraz Die Sonne scheint. Na dole: Es ist 20 Grad, Es ist minus 5 Grad">
+      <g class="sw"><rect x="8" y="8" width="200" height="186" rx="12" class="f4 s4"/><rect x="214" y="8" width="198" height="186" rx="12" class="f5 s5"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="108" y="34">Es ist …</text><text x="313" y="34">Es …</text></g>
+      <g class="tx"><text x="20" y="62">☀️ sonnig</text><text x="20" y="86">💨 windig</text><text x="20" y="110">☁️ wolkig</text><text x="20" y="134">🌫️ neblig</text><text x="20" y="158">🥵 heiß</text><text x="20" y="182">🥶 kalt</text></g>
+      <g class="tx-s"><text x="116" y="62">słonecznie</text><text x="116" y="86">wietrznie</text><text x="116" y="110">pochmurno</text><text x="116" y="134">mglisto</text><text x="116" y="158">gorąco</text><text x="116" y="182">zimno</text></g>
+      <g class="tx"><text x="226" y="64">🌧️ Es regnet.</text><text x="226" y="114">🌨️ Es schneit.</text><text x="226" y="164">Die Sonne scheint.</text></g>
+      <g class="tx-s"><text x="226" y="82">pada deszcz</text><text x="226" y="132">pada śnieg</text><text x="226" y="182">świeci słońce</text></g>
+      <text x="210" y="216" class="tx" text-anchor="middle">Es ist 20 Grad. · Es ist minus 5 Grad.</text>
+    </svg>`,
+    text: `<p>O pogodę pytasz: <i>Wie ist das Wetter?</i> Odpowiedzi są dwóch typów: <b>Es ist</b> + przymiotnik (<i>Es ist sonnig / warm / kalt / windig.</i>) albo <b>Es</b> + czasownik (<i>Es regnet. Es schneit.</i>). Słońce świeci: <i>Die Sonne scheint.</i></p>
+      <p>Temperatura: <i>Es ist 20 Grad.</i> / <i>Es ist minus 5 Grad.</i></p>`,
+    remember: 'Es ist kalt. · Es regnet. · Es schneit.',
+    hook: 'sonnig ≈ sunny, windig ≈ windy, warm ≈ warm – angielski bardzo pomaga.',
+    check: { q: 'Pada śnieg. Jak to powiesz?', options: ['Es regnet.', 'Es ist windig.', 'Es schneit.'], answer: 2, explain: 'schneien – padać (o śniegu); Es regnet – pada deszcz.' },
+  },
+  {
+    title: 'Pory roku i miesiące',
+    svg: `<svg viewBox="0 0 420 226" role="img" aria-label="Cztery pory roku, wszystkie z rodzajnikiem der: der Frühling – März, April, Mai; der Sommer – Juni, Juli, August; der Herbst – September, Oktober, November; der Winter – Dezember, Januar, Februar. Na dole: im Sommer, im Mai, im Dezember">
+      <g class="sw"><rect x="8" y="8" width="95" height="72" rx="10" class="f1 s1"/><rect x="111" y="8" width="95" height="72" rx="10" class="f1 s1"/><rect x="214" y="8" width="95" height="72" rx="10" class="f1 s1"/><rect x="317" y="8" width="95" height="72" rx="10" class="f1 s1"/>
+        <rect x="8" y="88" width="95" height="96" rx="10" class="f4 s4"/><rect x="111" y="88" width="95" height="96" rx="10" class="f4 s4"/><rect x="214" y="88" width="95" height="96" rx="10" class="f4 s4"/><rect x="317" y="88" width="95" height="96" rx="10" class="f4 s4"/></g>
+      <g class="tx" text-anchor="middle"><text x="55" y="34">🌷</text><text x="158" y="34">☀️</text><text x="261" y="34">🍂</text><text x="364" y="34">❄️</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="55" y="52">der</text><text x="158" y="52">der</text><text x="261" y="52">der</text><text x="364" y="52">der</text></g>
+      <g class="tx-b" text-anchor="middle"><text x="55" y="72">Frühling</text><text x="158" y="72">Sommer</text><text x="261" y="72">Herbst</text><text x="364" y="72">Winter</text></g>
+      <g class="tx" text-anchor="middle"><text x="55" y="112">März</text><text x="55" y="140">April</text><text x="55" y="168">Mai</text>
+        <text x="158" y="112">Juni</text><text x="158" y="140">Juli</text><text x="158" y="168">August</text>
+        <text x="261" y="112">September</text><text x="261" y="140">Oktober</text><text x="261" y="168">November</text>
+        <text x="364" y="112">Dezember</text><text x="364" y="140">Januar</text><text x="364" y="168">Februar</text></g>
+      <text x="210" y="212" class="tx-b" text-anchor="middle">im Sommer · im Mai · im Dezember</text>
+    </svg>`,
+    text: `<p>Pory roku to <b>der Frühling</b> (wiosna), <b>der Sommer</b> (lato), <b>der Herbst</b> (jesień) i <b>der Winter</b> (zima) – wszystkie z rodzajnikiem <b>der</b>. Miesiące: Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember.</p>
+      <p>Z porą roku i miesiącem używasz <b>im</b>: <i>im Sommer</i> (latem), <i>im Mai</i> (w maju). Z dniem – <b>am</b> (<i>am Montag</i>), z godziną – <b>um</b> (<i>um acht Uhr</i>).</p>`,
+    remember: 'im + pora roku albo miesiąc: im Winter, im Juli.',
+    hook: 'um i Uhr – oba na U: um acht Uhr. Dzień – am Montag. Miesiące i pory roku – im.',
+    check: { q: 'Jak powiesz „zimą”?', options: ['im Winter', 'am Winter', 'um Winter'], answer: 0, explain: 'Z porami roku – im: im Winter.' },
+  },
+  {
+    title: 'Zwierzęta z rodzajnikiem',
+    svg: `<svg viewBox="0 0 420 264" role="img" aria-label="Kafelki zwierząt w kolorach rodzajników. Domowe: der Hund, die Katze, das Pferd, die Kuh, das Schwein, das Kaninchen, der Vogel, der Fisch, die Maus. Dzikie: der Bär, der Wolf, der Fuchs">
+      <g class="tx-s"><text x="8" y="18">domowe i hodowlane</text><text x="8" y="202">dzikie</text></g>
+      <g class="sw"><rect x="8" y="26" width="132" height="48" rx="8" class="f1 s1"/><rect x="144" y="26" width="132" height="48" rx="8" class="f2 s2"/><rect x="280" y="26" width="132" height="48" rx="8" class="f3 s3"/>
+        <rect x="8" y="80" width="132" height="48" rx="8" class="f2 s2"/><rect x="144" y="80" width="132" height="48" rx="8" class="f3 s3"/><rect x="280" y="80" width="132" height="48" rx="8" class="f3 s3"/>
+        <rect x="8" y="134" width="132" height="48" rx="8" class="f1 s1"/><rect x="144" y="134" width="132" height="48" rx="8" class="f1 s1"/><rect x="280" y="134" width="132" height="48" rx="8" class="f2 s2"/>
+        <rect x="8" y="210" width="132" height="48" rx="8" class="f1 s1"/><rect x="144" y="210" width="132" height="48" rx="8" class="f1 s1"/><rect x="280" y="210" width="132" height="48" rx="8" class="f1 s1"/></g>
+      <g class="tx" text-anchor="middle"><text x="74" y="47">🐕</text><text x="210" y="47">🐈</text><text x="346" y="47">🐎</text><text x="74" y="101">🐄</text><text x="210" y="101">🐖</text><text x="346" y="101">🐇</text>
+        <text x="74" y="155">🐦</text><text x="210" y="155">🐟</text><text x="346" y="155">🐁</text><text x="74" y="231">🐻</text><text x="210" y="231">🐺</text><text x="346" y="231">🦊</text>
+        <text x="74" y="67">der Hund</text><text x="210" y="67">die Katze</text><text x="346" y="67">das Pferd</text><text x="74" y="121">die Kuh</text><text x="210" y="121">das Schwein</text><text x="346" y="121">das Kaninchen</text>
+        <text x="74" y="175">der Vogel</text><text x="210" y="175">der Fisch</text><text x="346" y="175">die Maus</text><text x="74" y="251">der Bär</text><text x="210" y="251">der Wolf</text><text x="346" y="251">der Fuchs</text></g>
+    </svg>`,
+    text: `<p>Zwierzęta domowe i hodowlane: <i>der Hund</i> (pies), <i>die Katze</i> (kot), <i>das Pferd</i> (koń), <i>die Kuh</i> (krowa), <i>das Schwein</i> (świnia), <i>das Kaninchen</i> (królik), <i>der Vogel</i> (ptak), <i>der Fisch</i>, <i>die Maus</i> (mysz). Dzikie: <i>der Bär</i> (niedźwiedź), <i>der Wolf</i>, <i>der Fuchs</i> (lis).</p>
+      <p>Rodzajnika nie zgadniesz z polskiego: kot jest po polsku męski, a <i>die Katze</i> – żeńska. Ucz się go od razu, razem z kolorem.</p>`,
+    remember: 'der Hund, die Katze, das Pferd.',
+    hook: 'Maus ≈ mouse, Fisch ≈ fish, Wolf ≈ wolf – wiele nazw zwierząt podpowie angielski.',
+    check: { q: 'Wybierz rodzajnik: ___ Katze (kot)', options: ['der', 'die', 'das'], answer: 1, explain: 'die Katze – rodzaj żeński, choć po polsku „ten kot”.' },
+  },
+  {
+    title: 'Krajobraz i pułapka z jeziorem',
+    svg: `<svg viewBox="0 0 420 240" role="img" aria-label="Kafelki krajobrazu: der Berg, der Wald, der Fluss, der Strand, die Wiese, der Baum, die Blume, das Meer. Pod spodem porównanie: der See to jezioro, a das Meer (też die See) to morze">
+      <g class="sw"><rect x="8" y="8" width="95" height="48" rx="8" class="f1 s1"/><rect x="111" y="8" width="95" height="48" rx="8" class="f1 s1"/><rect x="214" y="8" width="95" height="48" rx="8" class="f1 s1"/><rect x="317" y="8" width="95" height="48" rx="8" class="f1 s1"/>
+        <rect x="8" y="62" width="95" height="48" rx="8" class="f2 s2"/><rect x="111" y="62" width="95" height="48" rx="8" class="f1 s1"/><rect x="214" y="62" width="95" height="48" rx="8" class="f2 s2"/><rect x="317" y="62" width="95" height="48" rx="8" class="f3 s3"/></g>
+      <g class="tx" text-anchor="middle"><text x="55" y="28">⛰️</text><text x="158" y="28">🌲</text><text x="261" y="28">🏞️</text><text x="364" y="28">🏖️</text><text x="55" y="82">🌾</text><text x="158" y="82">🌳</text><text x="261" y="82">🌼</text><text x="364" y="82">🌊</text>
+        <text x="55" y="48">der Berg</text><text x="158" y="48">der Wald</text><text x="261" y="48">der Fluss</text><text x="364" y="48">der Strand</text><text x="55" y="102">die Wiese</text><text x="158" y="102">der Baum</text><text x="261" y="102">die Blume</text><text x="364" y="102">das Meer</text></g>
+      <g class="sw"><rect x="8" y="122" width="170" height="110" rx="12" class="f1 s1"/><rect x="242" y="122" width="170" height="110" rx="12" class="f3 s3"/></g>
+      <ellipse cx="93" cy="178" rx="52" ry="13" class="bg s1 sw"/>
+      <path d="M262,178 q12,-10 24,0 t24,0 t24,0 t24,0 t24,0 t24,0" class="ln"/>
+      <g class="tx-b" text-anchor="middle"><text x="93" y="150">der See</text><text x="327" y="150">das Meer</text><text x="210" y="184">≠</text></g>
+      <g class="tx" text-anchor="middle"><text x="93" y="214">= jezioro</text><text x="327" y="206">= morze</text></g>
+      <text x="327" y="224" class="tx-s" text-anchor="middle">też: die See</text>
+    </svg>`,
+    text: `<p>Krajobraz: <i>der Berg</i> (góra), <i>der Wald</i> (las), <i>der Fluss</i> (rzeka), <i>das Meer</i> (morze), <i>der Strand</i> (plaża), <i>die Wiese</i> (łąka), <i>der Baum</i> (drzewo), <i>die Blume</i> (kwiat).</p>
+      <p>Uważaj na <b>der See</b> – to <b>jezioro</b>, nie morze! Morze to <b>das Meer</b> (albo <i>die See</i>).</p>`,
+    remember: 'der See – jezioro, das Meer – morze.',
+    hook: 'Meer jak „mermaid” – syrenka mieszka w morzu, nie w jeziorze.',
+    check: { q: 'Latem jedziesz nad Bałtyk. Jak powiesz „morze”?', options: ['das Meer', 'der See', 'der Fluss'], answer: 0, explain: 'das Meer – morze; der See – jezioro, der Fluss – rzeka.' },
+  },
+  {
+    title: 'Podsumowanie: im, am, um i pułapki',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Pudełka jedno w drugim: największe – im (miesiąc, pora roku: im Mai, im Sommer), w nim am (dzień: am Montag), w środku um (godzina: um acht Uhr)">
+      <rect x="8" y="8" width="404" height="184" rx="14" class="f4 s4 sw"/>
+      <rect x="36" y="52" width="348" height="128" rx="12" class="f5 s5 sw"/>
+      <rect x="72" y="98" width="276" height="70" rx="10" class="bg s1 sw"/>
+      <g class="tx-b"><text x="24" y="36">im Mai · im Sommer</text><text x="52" y="80">am Montag</text></g>
+      <g class="tx-s" text-anchor="end"><text x="398" y="36">miesiąc, pora roku</text><text x="370" y="80">dzień</text></g>
+      <text x="210" y="130" class="tx-b" text-anchor="middle">um acht Uhr</text>
+      <text x="210" y="152" class="tx-s" text-anchor="middle">godzina</text>
+    </svg>`,
+    text: `<p>Podsumowanie i typowe pułapki:</p>
+      <ul><li><b>im</b> – miesiąc i pora roku, <b>am</b> – dzień, <b>um</b> – godzina.</li><li><b>Es regnet</b> to czasownik – nie dodawaj „ist” (źle: <i>Es ist regnet</i>).</li><li><b>der See</b> – jezioro, <b>das Meer</b> – morze.</li><li>kot to <b>die</b> Katze, koń – <b>das</b> Pferd.</li></ul>`,
+    remember: 'im Mai, am Montag, um acht Uhr.',
+    check: { q: 'Która forma jest poprawna?', options: ['Es ist regnet.', 'Es regnet.', 'Es regnen.'], answer: 1, explain: 'regnen to czasownik: Es regnet. „Es ist” łączymy z przymiotnikiem (Es ist kalt).' },
+  },
+];
+
+window.LESSONS['niemiecki/perfekt'] = [
+  {
+    title: 'Perfekt: zdanie w klamrze',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Oś czasu: letztes Wochenende, gestern, heute. Pod nią zdanie Ich habe gestern Fußball gespielt: habe na 2. miejscu, gespielt na końcu, połączone klamrą. Drugi przykład: Wir sind nach Berlin gefahren">
+      <defs><marker id="a-k8de-perfekt-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="20" y="20" width="290" height="20" rx="6" class="f4"/>
+      <path d="M20,30 L400,30" class="ln sw" marker-end="url(#a-k8de-perfekt-1)"/>
+      <g class="ln"><line x1="90" y1="23" x2="90" y2="37"/><line x1="220" y1="23" x2="220" y2="37"/><line x1="350" y1="23" x2="350" y2="37"/></g>
+      <g class="tx-s" text-anchor="middle"><text x="90" y="56">letztes Wochenende</text><text x="220" y="56">gestern</text></g>
+      <text x="350" y="56" class="tx-b" text-anchor="middle">heute</text>
+      <g class="sw"><rect x="10" y="76" width="55" height="40" rx="8" class="f5 s5"/><rect x="70" y="76" width="70" height="40" rx="8" class="f4 s4"/><rect x="145" y="76" width="150" height="40" rx="8" class="f5 s5"/><rect x="300" y="76" width="110" height="40" rx="8" class="f4 s4"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="37" y="102">Ich</text><text x="105" y="102">habe</text><text x="220" y="102">gestern Fußball</text><text x="355" y="102">gespielt.</text></g>
+      <path d="M105,118 L105,134 L355,134 L355,118" class="ln"/>
+      <g class="tx-s" text-anchor="middle"><text x="105" y="154">haben/sein – 2. miejsce</text><text x="340" y="154">Partizip II – na końcu</text></g>
+      <text x="210" y="188" class="tx" text-anchor="middle">Wir <tspan class="tx-b">sind</tspan> nach Berlin <tspan class="tx-b">gefahren</tspan>.</text>
+    </svg>`,
+    text: `<p>O tym, co robiłeś, opowiadasz w czasie <b>Perfekt</b>. Ma dwie części: <b>haben</b> albo <b>sein</b> (odmienione, na <b>2. miejscu</b>) i <b>Partizip II</b> – imiesłów na <b>końcu</b> zdania.</p>
+      <p><i>Ich habe gestern Fußball gespielt.</i> – Wczoraj grałem w piłkę. <i>Wir sind nach Berlin gefahren.</i> – Pojechaliśmy do Berlina.</p>`,
+    remember: 'Perfekt = haben/sein (2. miejsce) + Partizip II (koniec zdania).',
+    hook: 'Perfekt to kanapka: haben/sein i Partizip II to dwie kromki, a w środku cała reszta zdania.',
+    check: { q: 'Gdzie stoi Partizip II w zdaniu w czasie Perfekt?', options: ['na początku zdania', 'na 2. miejscu', 'na końcu zdania'], answer: 2, explain: 'Na 2. miejscu stoi haben/sein, a imiesłów zamyka zdanie.' },
+  },
+  {
+    title: 'Partizip II: ge…t i ge…en',
+    svg: `<svg viewBox="0 0 420 215" role="img" aria-label="Dwie kolumny. Regularne ge…t: spielen – gespielt, machen – gemacht, kaufen – gekauft, lernen – gelernt, arbeiten – gearbeitet. Nieregularne ge…en: sehen – gesehen, lesen – gelesen, essen – gegessen, trinken – getrunken, schreiben – geschrieben">
+      <g class="sw"><rect x="6" y="8" width="204" height="182" rx="12" class="f4 s4"/><rect x="214" y="8" width="200" height="182" rx="12" class="f5 s5"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="108" y="34">regularne: ge…t</text><text x="314" y="34">nieregularne: ge…en</text></g>
+      <g class="tx-s"><text x="14" y="62">spielen</text><text x="14" y="90">machen</text><text x="14" y="118">kaufen</text><text x="14" y="146">lernen</text><text x="14" y="174">arbeiten</text>
+        <text x="222" y="62">sehen</text><text x="222" y="90">lesen</text><text x="222" y="118">essen</text><text x="222" y="146">trinken</text><text x="222" y="174">schreiben</text>
+        <text x="72" y="62">→</text><text x="72" y="90">→</text><text x="72" y="118">→</text><text x="72" y="146">→</text><text x="72" y="174">→</text>
+        <text x="288" y="62">→</text><text x="288" y="90">→</text><text x="288" y="118">→</text><text x="288" y="146">→</text><text x="288" y="174">→</text></g>
+      <g class="tx"><text x="90" y="62"><tspan class="t1">ge</tspan>spiel<tspan class="t1">t</tspan></text><text x="90" y="90"><tspan class="t1">ge</tspan>mach<tspan class="t1">t</tspan></text><text x="90" y="118"><tspan class="t1">ge</tspan>kauf<tspan class="t1">t</tspan></text><text x="90" y="146"><tspan class="t1">ge</tspan>lern<tspan class="t1">t</tspan></text><text x="90" y="174"><tspan class="t1">ge</tspan>arbeit<tspan class="t1">et</tspan></text>
+        <text x="304" y="62"><tspan class="t2">ge</tspan>seh<tspan class="t2">en</tspan></text><text x="304" y="90"><tspan class="t2">ge</tspan>les<tspan class="t2">en</tspan></text><text x="304" y="118"><tspan class="t2">ge</tspan>gess<tspan class="t2">en</tspan></text><text x="304" y="146"><tspan class="t2">ge</tspan>trunk<tspan class="t2">en</tspan></text><text x="304" y="174"><tspan class="t2">ge</tspan>schrieb<tspan class="t2">en</tspan></text></g>
+      <text x="210" y="208" class="tx-s" text-anchor="middle">uwaga: trinken → getrunken, schreiben → geschrieben</text>
+    </svg>`,
+    text: `<p>Czasowniki <b>regularne</b> tworzą Partizip II wzorem <b>ge…t</b>: <i>spielen → gespielt, machen → gemacht, kaufen → gekauft, hören → gehört</i>. Zwróć uwagę na <i>arbeiten → gearbeitet</i> (z -et).</p>
+      <p>Czasowniki <b>nieregularne</b> mają wzór <b>ge…en</b>: <i>sehen → gesehen, essen → gegessen, schlafen → geschlafen</i>, a czasem zmienia się też samogłoska w środku: <i>trinken → getrunken, schreiben → geschrieben, treffen → getroffen</i>. Te formy trzeba zapamiętać.</p>`,
+    remember: 'regularne: ge…t (gespielt), nieregularne: ge…en (gesehen).',
+    hook: 'Nieregularne kończą się na -en jak bezokolicznik: sehen → gesehen, lesen → gelesen.',
+    check: { q: 'Partizip II od „hören” to…', options: ['gehören', 'gehört', 'hörte'], answer: 1, explain: 'hören jest regularne: ge + hör + t = gehört.' },
+  },
+  {
+    title: 'Gdzie chowa się ge-?',
+    svg: `<svg viewBox="0 0 420 256" role="img" aria-label="Górna część: przedrostek plus ge: einkaufen – eingekauft, fernsehen – ferngesehen, aufstehen – aufgestanden. Dolna część: bez ge: telefonieren – telefoniert, fotografieren – fotografiert, besuchen – besucht, vergessen – vergessen">
+      <g class="sw"><rect x="6" y="6" width="408" height="114" rx="12" class="f4 s4"/><rect x="6" y="128" width="408" height="122" rx="12" class="f5 s5"/></g>
+      <g class="tx-b"><text x="20" y="32">przedrostek + ge + …</text><text x="20" y="154">bez ge-: -ieren, be-, ver-</text></g>
+      <g class="tx"><text x="20" y="60">einkaufen → ein<tspan class="tx-b t1">ge</tspan>kauft</text><text x="20" y="84">fernsehen → fern<tspan class="tx-b t1">ge</tspan>sehen</text><text x="20" y="108">aufstehen → auf<tspan class="tx-b t1">ge</tspan>standen</text>
+        <text x="20" y="180">telefonieren → telefon<tspan class="tx-b t2">iert</tspan></text><text x="20" y="204">fotografieren → fotograf<tspan class="tx-b t2">iert</tspan></text><text x="20" y="228"><tspan class="tx-b t2">be</tspan>suchen → <tspan class="tx-b t2">be</tspan>sucht · <tspan class="tx-b t2">ver</tspan>gessen → <tspan class="tx-b t2">ver</tspan>gessen</text></g>
+    </svg>`,
+    text: `<p>Czasowniki z przedrostkiem, który w zdaniu się odrywa (rozdzielnie złożone), wstawiają <b>ge</b> do środka: <i>einkaufen → eingekauft, fernsehen → ferngesehen, aufstehen → aufgestanden</i>.</p>
+      <p>Bez <b>ge-</b> są czasowniki na <b>-ieren</b> (<i>telefonieren → telefoniert, fotografieren → fotografiert</i>) oraz z przedrostkiem <b>be-</b> i <b>ver-</b> (<i>besuchen → besucht, vergessen → vergessen</i>).</p>`,
+    remember: 'eingekauft – ge w środku; telefoniert, besucht – bez ge-.',
+    hook: 'be- i ver- mają już swój przedrostek – dla ge- nie ma miejsca.',
+    check: { q: 'Partizip II od „fernsehen” to…', options: ['gefernsehen', 'ferngeseht', 'ferngesehen'], answer: 2, explain: 'Przedrostek fern + ge + sehen (nieregularny, więc -en).' },
+  },
+  {
+    title: 'haben czy sein?',
+    svg: `<svg viewBox="0 0 420 240" role="img" aria-label="Po lewej haben – większość czasowników: hat gespielt, hat gesehen, hat gegessen, hat gelesen, hat gekauft. Po prawej sein – ruch z punktu A do B: ist gegangen, ist gefahren, ist gekommen, ist geflogen, ist aufgestanden, a także ist geblieben">
+      <defs><marker id="a-k8de-perfekt-4" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <g class="sw"><rect x="6" y="6" width="200" height="228" rx="12" class="f4 s4"/><rect x="214" y="6" width="200" height="228" rx="12" class="f5 s5"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="106" y="34">haben</text><text x="314" y="34">sein</text></g>
+      <text x="106" y="54" class="tx-s" text-anchor="middle">większość czasowników</text>
+      <g class="tx" text-anchor="middle"><text x="106" y="86">hat gespielt</text><text x="106" y="112">hat gesehen</text><text x="106" y="138">hat gegessen</text><text x="106" y="164">hat gelesen</text><text x="106" y="190">hat gekauft</text></g>
+      <text x="106" y="222" class="tx-s" text-anchor="middle">Ich habe einen Film gesehen.</text>
+      <circle cx="262" cy="56" r="11" class="bg s5 sw"/><circle cx="366" cy="56" r="11" class="bg s5 sw"/>
+      <path d="M276,56 L350,56" class="ln" marker-end="url(#a-k8de-perfekt-4)"/>
+      <g class="tx-s" text-anchor="middle"><text x="262" y="61">A</text><text x="366" y="61">B</text><text x="314" y="86">ruch, zmiana miejsca</text></g>
+      <g class="tx" text-anchor="middle"><text x="314" y="110">ist gegangen</text><text x="314" y="132">ist gefahren</text><text x="314" y="154">ist gekommen</text><text x="314" y="176">ist geflogen</text><text x="314" y="198">ist aufgestanden</text></g>
+      <text x="314" y="224" class="tx-b" text-anchor="middle">ist geblieben (!)</text>
+    </svg>`,
+    text: `<p>Większość czasowników tworzy Perfekt z <b>haben</b>. Z <b>sein</b> łączą się czasowniki <b>ruchu i zmiany miejsca</b>: <i>gehen – ist gegangen, fahren – ist gefahren, kommen – ist gekommen, fliegen – ist geflogen, aufstehen – ist aufgestanden</i>. Do zapamiętania: <i>bleiben – ist geblieben</i> (zostać), choć to nie ruch.</p>
+      <p><i>Ich bin ins Kino gegangen</i>, ale <i>Ich habe einen Film gesehen</i>.</p>`,
+    remember: 'Ruch z A do B → sein; reszta → haben (+ bleiben → sein).',
+    hook: 'Zapytaj: „czy ktoś przemieścił się z punktu A do B?”. Tak → sein.',
+    check: { q: 'Sie (ona) ___ nach Wien geflogen.', options: ['ist', 'hat', 'sind'], answer: 0, explain: 'fliegen – ruch, więc sein; sie (ona) → ist: Sie ist nach Wien geflogen.' },
+  },
+  {
+    title: 'war, hatte i typowe pułapki',
+    svg: `<svg viewBox="0 0 420 232" role="img" aria-label="Formy przeszłe: sein – ich war, du warst, wir waren; haben – ich hatte, du hattest, wir hatten. Typowe błędy i poprawne formy: Er ist gegangen zamiast Er hat gegangen, telefoniert zamiast getelefoniert, eingekauft zamiast geeinkauft">
+      <g class="tx"><text x="12" y="30"><tspan class="tx-b">sein</tspan> → ich war, du warst, wir waren</text><text x="12" y="58"><tspan class="tx-b">haben</tspan> → ich hatte, du hattest, wir hatten</text></g>
+      <line x1="10" y1="76" x2="410" y2="76" class="ln-thin"/>
+      <text x="12" y="102" class="tx-b">Typowe pułapki</text>
+      <g class="tx t2"><text x="12" y="132">✗ Er hat gegangen.</text><text x="12" y="162">✗ getelefoniert</text><text x="12" y="192">✗ geeinkauft</text></g>
+      <g class="tx-b t3"><text x="220" y="132">✓ Er ist gegangen.</text><text x="220" y="162">✓ telefoniert</text><text x="220" y="192">✓ eingekauft</text></g>
+      <text x="210" y="222" class="tx-s" text-anchor="middle">ich i er: war, hatte – bez końcówki</text>
+    </svg>`,
+    text: `<p>Od <b>sein</b> i <b>haben</b> w przeszłości zwykle używasz krótkich form: <i>ich war, du warst, wir waren, ihr wart</i>; <i>ich hatte, du hattest, wir hatten, ihr hattet</i>. <i>Gestern war ich im Kino. Ich hatte keine Zeit.</i></p>
+      <p>Słówka czasu: <i>gestern</i> (wczoraj), <i>letztes Wochenende</i> (w zeszły weekend), <i>letzte Woche</i> (w zeszłym tygodniu), <i>letztes Jahr</i> (w zeszłym roku), <i>in den Ferien</i> (w wakacje).</p>`,
+    remember: 'ich war, ich hatte; ruch → sein; -ieren, be-, ver- → bez ge-.',
+    hook: 'war ≈ was, hatte ≈ had – angielski znów podpowiada.',
+    check: { q: 'Gestern ___ ich keine Zeit.', options: ['war', 'hatte', 'habe'], answer: 1, explain: 'Przeszłość od haben: ich hatte (miałem).' },
+  },
+];
+
+window.LESSONS['niemiecki/feste'] = [
+  {
+    title: 'Święta i zwyczaje',
+    svg: `<svg viewBox="0 0 420 240" role="img" aria-label="Lista świąt i zwyczajów: der Adventskalender – w grudniu codziennie jedno okienko; der Nikolaus 6 grudnia – buty za drzwiami, rano słodycze; Weihnachten – Boże Narodzenie; Silvester 31 grudnia, potem Neujahr – Nowy Rok; der Osterhase – w Wielkanoc dzieci szukają ukrytych jajek">
+      <g class="sw"><rect x="5" y="5" width="410" height="42" rx="8" class="f1 s1"/><rect x="5" y="52" width="410" height="42" rx="8" class="f1 s1"/><rect x="5" y="99" width="410" height="42" rx="8" class="f4 s4"/><rect x="5" y="146" width="410" height="42" rx="8" class="f4 s4"/><rect x="5" y="193" width="410" height="42" rx="8" class="f1 s1"/></g>
+      <g class="tx" text-anchor="middle"><text x="26" y="32">🗓️</text><text x="26" y="79">👢</text><text x="26" y="126">🎄</text><text x="26" y="173">🎆</text><text x="26" y="220">🐰</text></g>
+      <g class="tx-b"><text x="50" y="23">der Adventskalender</text><text x="50" y="70">der Nikolaus · 6.12.</text><text x="50" y="117">Weihnachten</text><text x="50" y="164">Silvester · 31.12.</text><text x="50" y="211">der Osterhase · Ostern</text></g>
+      <g class="tx-s"><text x="50" y="40">grudzień: codziennie jedno okienko (das Türchen)</text><text x="50" y="87">wieczorem buty za drzwi, rano w nich słodycze</text><text x="50" y="134">Boże Narodzenie</text><text x="50" y="181">sylwester; potem Neujahr – Nowy Rok</text><text x="50" y="228">Wielkanoc: dzieci szukają ukrytych jajek (Ostereier)</text></g>
+    </svg>`,
+    text: `<p>Ten dział to urodziny, święta i życzenia – a przy okazji zwyczaje z krajów niemieckojęzycznych. W grudniu dzieci otwierają codziennie jedno okienko (<i>das Türchen</i>) w <b>kalendarzu adwentowym</b>. Wieczorem przed <b>Nikolaus</b> (6 grudnia) wystawiają buty za drzwi, a rano znajdują w nich słodycze i drobne prezenty.</p>
+      <p>W Wielkanoc (<i>Ostern</i>) szukają ukrytych słodyczy, drobnych prezentów i kolorowych jajek (<i>Ostereier</i>) – wierzą, że ukrył je <b>der Osterhase</b>, zajączek wielkanocny. <i>Weihnachten</i> to Boże Narodzenie, <i>Silvester</i> – sylwester (31 grudnia), <i>Neujahr</i> – Nowy Rok.</p>`,
+    remember: 'Weihnachten – Boże Narodzenie, Ostern – Wielkanoc, Silvester – 31 grudnia, Neujahr – Nowy Rok.',
+    hook: 'Silvester brzmi prawie jak „sylwester” – i to ten sam dzień, 31 grudnia.',
+    check: { q: 'Co dzieci w krajach niemieckojęzycznych otwierają codziennie w grudniu?', options: ['okienko kalendarza adwentowego (das Türchen)', 'jeden prezent spod choinki', 'kolorowe jajko'], answer: 0, explain: 'der Adventskalender – w grudniu codziennie jedno okienko.' },
+  },
+  {
+    title: 'Życzenia na każdą okazję',
+    svg: `<svg viewBox="0 0 420 254" role="img" aria-label="Życzenia: Alles Gute zum Geburtstag!, Herzlichen Glückwunsch! – wszystkiego najlepszego; Frohe Weihnachten!; Frohe Ostern!; Ein gutes neues Jahr! Odpowiedź: Danke, gleichfalls! – dziękuję, nawzajem">
+      <g class="sw"><rect x="5" y="5" width="410" height="38" rx="8" class="f4 s4"/><rect x="5" y="47" width="410" height="38" rx="8" class="f4 s4"/><rect x="5" y="89" width="410" height="38" rx="8" class="f4 s4"/><rect x="5" y="131" width="410" height="38" rx="8" class="f4 s4"/><rect x="5" y="173" width="410" height="38" rx="8" class="f4 s4"/></g>
+      <g class="tx" text-anchor="middle"><text x="24" y="30">🎂</text><text x="24" y="72">🎉</text><text x="24" y="114">🎄</text><text x="24" y="156">🐣</text><text x="24" y="198">🥂</text></g>
+      <g class="tx-b"><text x="46" y="24">Alles Gute zum Geburtstag!</text><text x="46" y="66">Herzlichen Glückwunsch!</text><text x="46" y="108">Frohe Weihnachten!</text><text x="46" y="150">Frohe Ostern!</text><text x="46" y="192">Ein gutes neues Jahr!</text></g>
+      <g class="tx-s"><text x="46" y="38">wszystkiego najlepszego z okazji urodzin</text><text x="46" y="80">wszystkiego najlepszego</text><text x="46" y="122">wesołych Świąt Bożego Narodzenia</text><text x="46" y="164">wesołych Świąt Wielkanocnych</text><text x="46" y="206">szczęśliwego Nowego Roku</text></g>
+      <text x="210" y="233" class="tx-b" text-anchor="middle">💬 Danke, gleichfalls!</text>
+      <text x="210" y="249" class="tx-s" text-anchor="middle">dziękuję, nawzajem</text>
+    </svg>`,
+    text: `<p>Życzenia to gotowe formułki – warto znać je na pamięć:</p>
+      <ul><li><i>Alles Gute zum Geburtstag!</i> / <i>Herzlichen Glückwunsch!</i> – Wszystkiego najlepszego!</li><li><i>Frohe Weihnachten!</i> / <i>Frohe Ostern!</i> – Wesołych Świąt!</li><li><i>Ein gutes neues Jahr!</i> – Szczęśliwego Nowego Roku!</li></ul>
+      <p>Gdy ktoś składa ci życzenia świąteczne, odpowiadasz: <i>Danke, gleichfalls!</i> – Dziękuję, nawzajem!</p>`,
+    remember: 'Frohe Weihnachten! Frohe Ostern! – Danke, gleichfalls!',
+    hook: 'Na święta: Frohe + nazwa święta. Na urodziny: Alles Gute – „wszystko, co dobre”.',
+    check: { q: 'Jak złożysz życzenia na Wielkanoc?', options: ['Frohe Weihnachten!', 'Frohe Ostern!', 'Alles Gute zum Geburtstag!'], answer: 1, explain: 'Ostern – Wielkanoc: Frohe Ostern!' },
+  },
+  {
+    title: 'Pierwszy, drugi… – liczebniki porządkowe',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Trzy kolumny. Do 19: liczba plus -te – zweite, vierte, zwölfte. Od 20: liczba plus -ste – zwanzigste, einunddreißigste. Wyjątki: erste, dritte, siebte, achte">
+      <g class="sw"><rect x="5" y="6" width="128" height="188" rx="12" class="f4 s4"/><rect x="139" y="6" width="150" height="188" rx="12" class="f4 s4"/><rect x="295" y="6" width="120" height="188" rx="12" class="f5 s5"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="69" y="32">do 19.</text><text x="214" y="32">od 20.</text><text x="355" y="32">wyjątki</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="69" y="52">liczba + te</text><text x="214" y="52">liczba + ste</text><text x="355" y="52">na pamięć</text><text x="214" y="80">20.</text><text x="214" y="136">31.</text></g>
+      <g class="tx" text-anchor="middle"><text x="69" y="88">2. zwei<tspan class="tx-b t2">te</tspan></text><text x="69" y="122">4. vier<tspan class="tx-b t2">te</tspan></text><text x="69" y="156">12. zwölf<tspan class="tx-b t2">te</tspan></text>
+        <text x="214" y="100">zwanzig<tspan class="tx-b t2">ste</tspan></text><text x="214" y="156">einunddreißig<tspan class="tx-b t2">ste</tspan></text>
+        <text x="355" y="84">1. erste</text><text x="355" y="114">3. dritte</text><text x="355" y="144">7. siebte</text><text x="355" y="174">8. achte</text></g>
+    </svg>`,
+    text: `<p>Daty mówisz liczebnikami porządkowymi („pierwszy, drugi…”). Reguła: do 19 dodajesz <b>-te</b> (<i>der zweite, der vierte, der zwölfte</i>), od 20 – <b>-ste</b> (<i>der zwanzigste, der einunddreißigste</i>).</p>
+      <p>Wyjątki: <i>der <b>erste</b></i> (1.), <i>der <b>dritte</b></i> (3.), <i>der <b>siebte</b></i> (7.), <i>der <b>achte</b></i> (8.).</p>`,
+    remember: 'do 19: -te, od 20: -ste; wyjątki: erste, dritte, siebte, achte.',
+    hook: 'Wyjątki 1., 3., 7., 8. zapamiętaj jak PIN: 1-3-7-8.',
+    check: { q: 'Jak jest „czwarty” (4.)?', options: ['der vierste', 'der vierte', 'der viertste'], answer: 1, explain: '4 to mniej niż 20, więc vier + te = vierte.' },
+  },
+  {
+    title: 'Data: der dritte, am dritten',
+    svg: `<svg viewBox="0 0 420 215" role="img" aria-label="Kartka kalendarza: 3 października. Heute ist der dritte Oktober – po der końcówka -e; am dritten Oktober – na pytanie kiedy, końcówka -en. Rozmowa: Wann hast du Geburtstag? – Am zwölften Mai">
+      <rect x="10" y="14" width="96" height="104" rx="8" class="bg s2 sw"/><rect x="10" y="14" width="96" height="28" rx="8" class="f2 s2 sw"/>
+      <text x="58" y="34" class="tx" text-anchor="middle">Oktober</text>
+      <text x="58" y="88" class="tx-b" text-anchor="middle">3.</text>
+      <g class="tx"><text x="124" y="42">Heute ist der dritt<tspan class="tx-b t2">e</tspan> Oktober.</text><text x="124" y="100">am dritt<tspan class="tx-b t2">en</tspan> Oktober</text></g>
+      <g class="tx-s"><text x="124" y="62">der … -e → jaki dziś dzień?</text><text x="124" y="120">am … -en → kiedy?</text></g>
+      <rect x="10" y="146" width="232" height="34" rx="14" class="f4 s4 sw"/><rect x="250" y="174" width="160" height="34" rx="14" class="f5 s5 sw"/>
+      <g class="tx" text-anchor="middle"><text x="126" y="168">Wann hast du Geburtstag?</text><text x="330" y="196">Am zwölft<tspan class="tx-b t2">en</tspan> Mai.</text></g>
+    </svg>`,
+    text: `<p>Jaki dziś dzień? <i>Heute ist <b>der</b> dritt<b>e</b> Oktober.</i> – po „der” końcówka <b>-e</b>.</p>
+      <p>Kiedy? <b>am</b> + końcówka <b>-en</b>: <i>am dritten Oktober</i> (3 października), <i>am zwanzigsten April</i> (20 kwietnia). Na pytanie <i>Wann hast du Geburtstag?</i> odpowiadasz np. <i>Am zwölften Mai.</i></p>`,
+    remember: 'Heute ist der dritte Oktober. · am dritten Oktober (kiedy?)',
+    hook: 'Po „am” dodaj „n” jak echo: dritte → am dritten, zwölfte → am zwölften.',
+    check: { q: 'Ich habe am ___ Juli Geburtstag. (8.)', options: ['achte', 'achtten', 'achten'], answer: 2, explain: '8. = achte (wyjątek, jedno t); po „am” końcówka -en: am achten Juli.' },
+  },
+  {
+    title: 'Zaproszenie i pułapki',
+    svg: `<svg viewBox="0 0 420 240" role="img" aria-label="Telefon z wiadomościami: zaproszenie Ich lade dich zu meiner Party ein. Die Party ist am Samstag um 18 Uhr. Kommst du? Odpowiedzi: Ja, gern! Danke für die Einladung! oraz Leider kann ich nicht, ich habe keine Zeit">
+      <rect x="50" y="4" width="320" height="232" rx="20" class="ln"/>
+      <rect x="66" y="20" width="270" height="72" rx="12" class="f4 s4 sw"/>
+      <g class="tx-s"><text x="78" y="42">Ich lade dich zu meiner Party ein.</text><text x="78" y="60">Die Party ist am Samstag um 18 Uhr.</text><text x="78" y="80">Kommst du?</text></g>
+      <rect x="150" y="104" width="206" height="50" rx="12" class="f5 s5 sw"/><rect x="150" y="166" width="206" height="56" rx="12" class="f5 s5 sw"/>
+      <g class="tx-s"><text x="162" y="124">✅ Ja, gern!</text><text x="162" y="144">Danke für die Einladung!</text><text x="162" y="188">❌ Leider kann ich nicht,</text><text x="162" y="208">ich habe keine Zeit.</text></g>
+    </svg>`,
+    text: `<p>Zaproszenie: <i>Ich lade dich zu meiner Party ein.</i> – Zapraszam cię na moją imprezę. Termin: <i>am</i> + dzień, <i>um</i> + godzina: <i>Die Party ist am Samstag um 18 Uhr. Kommst du?</i></p>
+      <p>Tak: <i>Ja, gern! Danke für die Einladung!</i> Nie: <i>Leider kann ich nicht, ich habe keine Zeit.</i></p>
+      <p>Pułapki działu: wyjątki <b>erste, dritte, siebte, achte</b>; po <b>am</b> końcówka <b>-en</b>; w <i>einladen</i> część <b>ein</b> idzie na koniec zdania.</p>`,
+    remember: 'Ich lade dich … ein. – Ja, gern! / Leider kann ich nicht.',
+    hook: 'leider = niestety – słyszysz „leider”, wiesz, że będzie odmowa.',
+    check: { q: 'Która odpowiedź przyjmuje zaproszenie?', options: ['Leider kann ich nicht.', 'Ich habe keine Zeit.', 'Ja, gern! Danke für die Einladung!'], answer: 2, explain: '„Ja, gern!” – „Tak, chętnie!”; leider (niestety) zapowiada odmowę.' },
+  },
+];
+
+window.LESSONS['niemiecki/dach'] = [
+  {
+    title: 'D-A-CH – co to za skrót?',
+    svg: `<svg viewBox="0 0 420 205" role="img" aria-label="Trzy kafelki: D – Deutschland (Niemcy), A – Österreich (Austria), CH – die Schweiz (Szwajcaria, z rodzajnikiem die). Na dole: czasem dochodzi L – Liechtenstein (DACHL)">
+      <g class="sw"><rect x="6" y="10" width="128" height="156" rx="12" class="f4 s4"/><rect x="146" y="10" width="128" height="156" rx="12" class="f4 s4"/><rect x="286" y="10" width="128" height="156" rx="12" class="f2 s2"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="70" y="40">D</text><text x="210" y="40">A</text><text x="350" y="40">CH</text>
+        <text x="70" y="104">Deutschland</text><text x="210" y="104">Österreich</text><text x="350" y="104">die Schweiz</text></g>
+      <g class="tx" text-anchor="middle"><text x="70" y="74">🇩🇪</text><text x="210" y="74">🇦🇹</text><text x="350" y="74">🇨🇭</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="70" y="128">Niemcy</text><text x="210" y="128">Austria</text><text x="350" y="128">Szwajcaria</text><text x="350" y="150">z rodzajnikiem die!</text></g>
+      <text x="210" y="192" class="tx-s" text-anchor="middle">czasem dochodzi L – Liechtenstein (DACHL)</text>
+    </svg>`,
+    text: `<p>Po niemiecku mówi się nie tylko w Niemczech. <b>D-A-CH</b> to skrót od oznaczeń trzech największych krajów niemieckojęzycznych: <b>D</b> – Deutschland (Niemcy), <b>A</b> – Österreich (Austria), <b>CH</b> – die Schweiz (Szwajcaria).</p>
+      <p>Czasem dodaje się <b>L</b> – Liechtenstein (DACHL), gdzie niemiecki też jest językiem urzędowym. W tej lekcji poznasz stolice, języki i kilka ciekawostek o tych krajach.</p>`,
+    remember: 'D – Deutschland, A – Österreich, CH – die Schweiz.',
+    hook: 'D-A-CH czytane razem to niemieckie „Dach” – dach: trzy kraje pod jednym dachem języka.',
+    check: { q: 'Co oznacza „CH” w skrócie D-A-CH?', options: ['Chorwację', 'Szwajcarię (die Schweiz)', 'Czechy'], answer: 1, explain: 'CH – die Schweiz, czyli Szwajcaria.' },
+  },
+  {
+    title: 'Stolice i podział',
+    svg: `<svg viewBox="0 0 420 234" role="img" aria-label="Porównanie: Niemcy – stolica Berlin, 16 krajów związkowych (Bundesländer); Austria – stolica Wien (Wiedeń), 9 krajów związkowych; Szwajcaria – Bern jako Bundesstadt, siedziba władz, 26 kantonów">
+      <g class="sw"><rect x="6" y="6" width="128" height="56" rx="10" class="f4 s4"/><rect x="146" y="6" width="128" height="56" rx="10" class="f4 s4"/><rect x="286" y="6" width="128" height="56" rx="10" class="f2 s2"/>
+        <rect x="6" y="68" width="128" height="82" rx="10" class="f5 s5"/><rect x="146" y="68" width="128" height="82" rx="10" class="f5 s5"/><rect x="286" y="68" width="128" height="82" rx="10" class="f5 s5"/>
+        <rect x="6" y="156" width="128" height="72" rx="10" class="f4 s4"/><rect x="146" y="156" width="128" height="72" rx="10" class="f4 s4"/><rect x="286" y="156" width="128" height="72" rx="10" class="f4 s4"/></g>
+      <g class="tx" text-anchor="middle"><text x="70" y="30">🇩🇪</text><text x="210" y="30">🇦🇹</text><text x="350" y="30">🇨🇭</text></g>
+      <g class="tx-b" text-anchor="middle"><text x="70" y="52">Deutschland</text><text x="210" y="52">Österreich</text><text x="350" y="52">die Schweiz</text>
+        <text x="70" y="112">Berlin</text><text x="210" y="112">Wien</text><text x="350" y="112">Bern</text>
+        <text x="70" y="186">16</text><text x="210" y="186">9</text><text x="350" y="186">26</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="70" y="88">stolica</text><text x="210" y="88">stolica</text><text x="350" y="88">siedziba władz</text>
+        <text x="210" y="132">(Wiedeń)</text><text x="350" y="132">Bundesstadt –</text><text x="350" y="146">nie „stolica”!</text>
+        <text x="70" y="208">Bundesländer</text><text x="210" y="208">Bundesländer</text><text x="350" y="208">Kantone</text></g>
+    </svg>`,
+    text: `<p><b>Berlin</b> to stolica Niemiec, <b>Wien</b> (Wiedeń) – stolica Austrii. Szwajcaria <b>nie ma oficjalnej stolicy</b>: <b>Bern</b> to „Bundesstadt”, czyli siedziba władz federalnych.</p>
+      <p>Niemcy dzielą się na <b>16</b> krajów związkowych (<i>Bundesländer</i>), Austria – na <b>9</b> (Wiedeń jest jednym z nich), a Szwajcaria – na <b>26</b> kantonów (<i>Kantone</i>).</p>`,
+    remember: 'Berlin, Wien, Bern (Bundesstadt); 16 – 9 – 26.',
+    hook: 'Wiedeń jest stolicą i zarazem jednym z 9 krajów związkowych – jak kapitan, który też gra w drużynie.',
+    check: { q: 'Ile kantonów ma Szwajcaria?', options: ['9', '16', '26'], answer: 2, explain: 'Szwajcaria – 26 kantonów; Niemcy – 16, Austria – 9 krajów związkowych.' },
+  },
+  {
+    title: 'Języki, flagi, sąsiedzi',
+    svg: `<svg viewBox="0 0 420 236" role="img" aria-label="Pasek języków Szwajcarii: niemiecki ponad 60 procent, pozostałe trzy – francuski, włoski, retoromański. Flagi i sąsiedzi: Niemcy – czarno-czerwono-złota, 9 sąsiadów; Austria – czerwono-biało-czerwona z XIII wieku, 8 sąsiadów; Szwajcaria – biały krzyż na czerwonym polu, 5 sąsiadów">
+      <text x="10" y="22" class="tx-b">die Schweiz: 4 języki urzędowe</text>
+      <rect x="10" y="34" width="248" height="32" rx="6" class="f4 s4 sw"/><rect x="258" y="34" width="152" height="32" rx="6" class="f5 s5 sw"/>
+      <g class="tx" text-anchor="middle"><text x="134" y="56">Deutsch – ponad 60%</text><text x="334" y="56">3 pozostałe</text></g>
+      <text x="210" y="86" class="tx-s" text-anchor="middle">Französisch · Italienisch · Rätoromanisch</text>
+      <g class="ln-thin"><line x1="10" y1="98" x2="410" y2="98"/><line x1="10" y1="143" x2="410" y2="143"/><line x1="10" y1="188" x2="410" y2="188"/></g>
+      <g class="tx" text-anchor="middle"><text x="24" y="124">🇩🇪</text><text x="24" y="169">🇦🇹</text><text x="24" y="214">🇨🇭</text></g>
+      <g class="tx-b"><text x="46" y="118">Deutschland</text><text x="46" y="163">Österreich</text><text x="46" y="208">die Schweiz</text></g>
+      <g class="tx-s"><text x="46" y="135">flaga czarno-czerwono-złota</text><text x="46" y="180">czerwono-biało-czerwona, z XIII w.</text><text x="46" y="225">biały krzyż na czerwonym polu</text></g>
+      <g class="tx-b" text-anchor="end"><text x="410" y="118">9 sąsiadów</text><text x="410" y="163">8 sąsiadów</text><text x="410" y="208">5 sąsiadów</text></g>
+    </svg>`,
+    text: `<p>W Niemczech i Austrii językiem urzędowym jest niemiecki (w Austrii regionalnie też chorwacki, słoweński i węgierski). Szwajcaria ma <b>4 języki urzędowe</b>: niemiecki (ponad 60%), francuski, włoski i retoromański.</p>
+      <p>Flagi: Niemcy – czarno-czerwono-złota, Austria – czerwono-biało-czerwona (jedna z najstarszych, z XIII w.), Szwajcaria – biały krzyż na czerwonym polu. Sąsiedzi: Niemcy – 9 państw (w tym Polska), Austria – 8, Szwajcaria – 5.</p>`,
+    remember: 'Szwajcaria: 4 języki urzędowe; Niemcy: 9 sąsiadów, w tym Polska.',
+    hook: 'Flaga Szwajcarii wygląda jak znak „plus” – biały krzyż na czerwonym polu.',
+    check: { q: 'Ile państw sąsiaduje z Niemcami?', options: ['9', '5', '8'], answer: 0, explain: 'Niemcy mają 9 sąsiadów (w tym Polskę); Austria – 8, Szwajcaria – 5.' },
+  },
+  {
+    title: 'Trzy rzeczy, które warto wiedzieć',
+    svg: `<svg viewBox="0 0 420 232" role="img" aria-label="Trzy karty: 3. Oktober 1990 – zjednoczenie Niemiec, od tej daty Berlin jest stolicą zjednoczonych Niemiec; Wien – tu żyli i komponowali Haydn, Mozart i Beethoven, stąd pochodzi walc wiedeński; Binnenstaat – Austria i Szwajcaria nie mają dostępu do morza, Szwajcaria to kraj alpejski">
+      <rect x="6" y="6" width="408" height="78" rx="12" class="f4 s4 sw"/>
+      <text x="210" y="34" class="tx-b" text-anchor="middle">📅 3. Oktober 1990</text>
+      <text x="210" y="56" class="tx" text-anchor="middle">zjednoczenie Niemiec</text>
+      <text x="210" y="74" class="tx-s" text-anchor="middle">od tego dnia Berlin jest stolicą zjednoczonych Niemiec</text>
+      <g class="sw"><rect x="6" y="92" width="200" height="134" rx="12" class="f5 s5"/><rect x="214" y="92" width="200" height="134" rx="12" class="f4 s4"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="106" y="120">🎻 Wien</text><text x="314" y="120">🏔️ Binnenstaat</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="106" y="146">tu żyli i komponowali:</text><text x="106" y="214">stąd pochodzi walc wiedeński</text>
+        <text x="314" y="146">kraj bez dostępu do morza:</text><text x="314" y="214">Szwajcaria – kraj alpejski</text></g>
+      <g class="tx" text-anchor="middle"><text x="106" y="170">Haydn, Mozart,</text><text x="106" y="192">Beethoven</text><text x="314" y="170">Austria,</text><text x="314" y="192">Szwajcaria</text></g>
+    </svg>`,
+    text: `<p><b>Berlin</b> jest stolicą zjednoczonych Niemiec od zjednoczenia <b>3 października 1990 r.</b> W <b>Wiedniu</b> żyli i komponowali Haydn, Mozart i Beethoven – stąd też pochodzi walc wiedeński.</p>
+      <p>Austria i Szwajcaria nie mają dostępu do morza – każda z nich to <i>Binnenstaat</i>. Szwajcaria to kraj alpejski.</p>`,
+    remember: '3.10.1990 – zjednoczenie Niemiec; Binnenstaat – kraj bez dostępu do morza.',
+    hook: 'Datę przeczytasz już po niemiecku: am dritten Oktober – jak w dziale o świętach.',
+    check: { q: 'Co znaczy „Binnenstaat”?', options: ['kraj związkowy', 'kraj bez dostępu do morza', 'stolica kraju'], answer: 1, explain: 'Binnenstaat – kraj bez dostępu do morza, np. Austria i Szwajcaria.' },
+  },
+  {
+    title: 'Kraj, język, mieszkaniec – i pułapka',
+    svg: `<svg viewBox="0 0 420 242" role="img" aria-label="Tabela: Polen – Polnisch – der Pole, die Polin; Deutschland – Deutsch – der Deutsche, die Deutsche; Österreich – Deutsch – der Österreicher, die Österreicherin; die Schweiz – 4 języki – der Schweizer, die Schweizerin. Pułapka: aus Polen, aus Österreich, ale aus der Schweiz, in der Schweiz">
+      <g class="tx-s"><text x="12" y="18">kraj</text><text x="140" y="18">język</text><text x="240" y="18">mieszkaniec / mieszkanka</text></g>
+      <g class="ln-thin"><line x1="10" y1="26" x2="410" y2="26"/><line x1="10" y1="66" x2="410" y2="66"/><line x1="10" y1="106" x2="410" y2="106"/><line x1="10" y1="146" x2="410" y2="146"/><line x1="10" y1="186" x2="410" y2="186"/></g>
+      <g class="tx-b"><text x="12" y="52">Polen</text><text x="12" y="92">Deutschland</text><text x="12" y="132">Österreich</text><text x="12" y="172">die Schweiz</text></g>
+      <g class="tx"><text x="140" y="52">Polnisch</text><text x="140" y="92">Deutsch</text><text x="140" y="132">Deutsch</text><text x="140" y="172">4 języki</text></g>
+      <g class="tx-s"><text x="240" y="42"><tspan class="t1">der</tspan> Pole</text><text x="240" y="59"><tspan class="t2">die</tspan> Polin</text>
+        <text x="240" y="82"><tspan class="t1">der</tspan> Deutsche</text><text x="240" y="99"><tspan class="t2">die</tspan> Deutsche</text>
+        <text x="240" y="122"><tspan class="t1">der</tspan> Österreicher</text><text x="240" y="139"><tspan class="t2">die</tspan> Österreicherin</text>
+        <text x="240" y="162"><tspan class="t1">der</tspan> Schweizer</text><text x="240" y="179"><tspan class="t2">die</tspan> Schweizerin</text></g>
+      <rect x="6" y="194" width="408" height="44" rx="10" class="f2 s2 sw"/>
+      <text x="210" y="211" class="tx-s" text-anchor="middle">bez rodzajnika: aus Polen, aus Österreich</text>
+      <text x="210" y="231" class="tx-b" text-anchor="middle">ale: aus der Schweiz, in der Schweiz</text>
+    </svg>`,
+    text: `<p>Kraj, język i mieszkaniec to trzy różne słowa: <i>Polen – Polnisch – der Pole / die Polin</i>; <i>Österreich – Deutsch – der Österreicher / die Österreicherin</i>.</p>
+      <p>Pułapka: większość krajów nie ma rodzajnika (<i>Ich komme aus Polen.</i>), ale <b>die Schweiz</b> ma: <i>Ich komme aus <b>der</b> Schweiz. Ich wohne in <b>der</b> Schweiz.</i></p>
+      <p>Dobra wiadomość: wiele słów zrozumiesz bez słownika, bo są podobne do polskich lub angielskich (internacjonalizmy): <i>das Hotel, die Musik, der Computer, das Taxi</i>.</p>`,
+    remember: 'aus Polen, aus Österreich – ale aus der Schweiz.',
+    hook: 'die Schweiz po „aus” i „in” zmienia się w der – tak jak die Lampe → neben der Lampe.',
+    check: { q: 'Ich wohne in ___ Schweiz.', options: ['die', '– (bez rodzajnika)', 'der'], answer: 2, explain: 'die Schweiz, pytanie „gdzie?” – celownik: in der Schweiz.' },
+  },
+];

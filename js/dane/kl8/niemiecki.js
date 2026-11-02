@@ -889,7 +889,7 @@ window.SUBJECTS.push({
           <tr><td>sąsiedzi</td><td>9 państw, w tym Polska</td><td>8 państw</td><td>5 państw</td></tr>
         </table>
         <ul>
-          <li><b>Berlin</b> jest stolicą zjednoczonych Niemiec od zjednoczenia 3 października 1990 r.; od 1991 r. ma siedzibę rząd i Bundestag.</li>
+          <li><b>Berlin</b> jest stolicą zjednoczonych Niemiec od zjednoczenia 3 października 1990 r.</li>
           <li>W <b>Wiedniu</b> żyli i komponowali Haydn, Mozart i Beethoven; stąd pochodzi walc wiedeński.</li>
           <li>Austria i Szwajcaria nie mają dostępu do morza (<i>Binnenstaat</i>), a Szwajcaria to kraj alpejski.</li>
         </ul>
