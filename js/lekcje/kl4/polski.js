@@ -908,3 +908,266 @@ window.LESSONS['polski/formy-wypowiedzi'] = [
     check: { q: 'Uzupełnij: „Lubię ten rower, ___ jest szybki i lekki.”', options: ['ale', 'bo', 'lub'], answer: 1, explain: '„Bo” wprowadza uzasadnienie – powód, dla którego lubisz rower.' },
   },
 ];
+
+window.LESSONS['polski/dialog-wywiad'] = [
+  {
+    title: 'Dialog czy monolog?',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Po lewej dialog: dwie osoby na zmianę mówią w dymkach – Idziesz na boisko? Jasne, zaraz! Po prawej monolog: jedna osoba w dużym dymku opowiada historię.">
+      <rect x="8" y="8" width="190" height="194" rx="12" class="f1 s1"/>
+      <rect x="206" y="8" width="186" height="194" rx="12" class="f2 s2"/>
+      <text x="103" y="32" class="tx-b" text-anchor="middle">dialog</text>
+      <text x="299" y="32" class="tx-b" text-anchor="middle">monolog</text>
+      <rect x="20" y="44" width="130" height="34" rx="12" class="bg ln"/>
+      <text x="85" y="66" class="tx-s" text-anchor="middle">Idziesz na boisko?</text>
+      <rect x="56" y="88" width="130" height="34" rx="12" class="bg ln"/>
+      <text x="121" y="110" class="tx-s" text-anchor="middle">Jasne, zaraz!</text>
+      <text x="40" y="168" class="tx-b" style="font-size:30px" text-anchor="middle">🧒</text>
+      <text x="160" y="168" class="tx-b" style="font-size:30px" text-anchor="middle">👧</text>
+      <text x="103" y="192" class="tx-s" text-anchor="middle">co najmniej dwie osoby</text>
+      <rect x="218" y="44" width="162" height="88" rx="14" class="bg ln"/>
+      <text x="299" y="66" class="tx-s" text-anchor="middle">Kiedy byłem mały,</text>
+      <text x="299" y="84" class="tx-s" text-anchor="middle">mieszkałem nad morzem.</text>
+      <text x="299" y="102" class="tx-s" text-anchor="middle">Codziennie rano</text>
+      <text x="299" y="120" class="tx-s" text-anchor="middle">biegałem na plażę…</text>
+      <text x="299" y="168" class="tx-b" style="font-size:30px" text-anchor="middle">🧑</text>
+      <text x="299" y="192" class="tx-s" text-anchor="middle">jedna osoba</text>
+    </svg>`,
+    text: `<p><b>Dialog</b> to rozmowa co najmniej dwóch osób – wypowiedzi przeplatają się: jedna pyta, druga odpowiada.</p>
+      <p><b>Monolog</b> to dłuższa wypowiedź jednej osoby, np. gdy ktoś opowiada historię albo postać w sztuce mówi sama do siebie.</p>`,
+    remember: 'Dialog – rozmowa (co najmniej dwie osoby). Monolog – mówi jedna osoba.',
+    hook: '<b>Mono</b> znaczy „jeden” – jak <b>mono</b>cykl, rower z jednym kołem. Monolog – mówi jeden.',
+    check: { q: 'Kuba opowiada klasie długą historię o wakacjach, a wszyscy słuchają. To…', options: ['monolog', 'dialog', 'wywiad'], answer: 0, explain: 'Mówi tylko Kuba – to monolog.' },
+  },
+  {
+    title: 'Jak zapisać dialog?',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Zeszyt z zapisem dialogu. Linijka 1: – Gdzie jest mój plecak? – zapytała Ola. Linijka 2: – Pod biurkiem – odpowiedział tata. Linijka 3: – Dziękuję! Strzałki: każda wypowiedź od nowej linijki i od myślnika, słowa narratora małą literą, przed nimi bez kropki.">
+      <rect x="8" y="8" width="384" height="150" rx="10" class="bg ln"/>
+      <g class="ln-thin"><line x1="20" y1="52" x2="380" y2="52"/><line x1="20" y1="94" x2="380" y2="94"/><line x1="20" y1="136" x2="380" y2="136"/></g>
+      <text x="20" y="46" class="tx"><tspan class="tx-b t2">–</tspan> Gdzie jest mój plecak? <tspan class="tx-b t2">–</tspan> <tspan class="t1">zapytała Ola.</tspan></text>
+      <text x="20" y="88" class="tx"><tspan class="tx-b t2">–</tspan> Pod biurkiem <tspan class="tx-b t2">–</tspan> <tspan class="t1">odpowiedział tata.</tspan></text>
+      <text x="20" y="130" class="tx"><tspan class="tx-b t2">–</tspan> Dziękuję!</text>
+      <rect x="8" y="168" width="124" height="46" rx="8" class="f2 s2"/>
+      <rect x="138" y="168" width="124" height="46" rx="8" class="f1 s1"/>
+      <rect x="268" y="168" width="124" height="46" rx="8" class="f4 s4"/>
+      <text x="70" y="188" class="tx-s" text-anchor="middle">nowa linijka</text><text x="70" y="206" class="tx-s" text-anchor="middle">i myślnik</text>
+      <text x="200" y="188" class="tx-s" text-anchor="middle">narrator: mała</text><text x="200" y="206" class="tx-s" text-anchor="middle">litera</text>
+      <text x="330" y="188" class="tx-s" text-anchor="middle">przed narratorem</text><text x="330" y="206" class="tx-s" text-anchor="middle">bez kropki</text>
+    </svg>`,
+    text: `<p>W opowiadaniu wypowiedź każdej postaci zaczynasz <b>od nowej linijki</b> i od <b>myślnika</b>. Dzięki temu od razu widać, że ktoś mówi i kiedy zaczyna mówić ktoś inny.</p>
+      <p>Słowa narratora (kto mówi, jak) oddzielasz myślnikiem i piszesz małą literą. Przed nimi nie stawiasz kropki – ale znak zapytania i wykrzyknik zostają: <i>– Uważaj! – krzyknął tata.</i></p>`,
+    remember: 'Nowa linijka + myślnik · narrator małą literą · przed narratorem bez kropki (? i ! zostają).',
+    hook: 'Myślnik w dialogu to jak podniesiona ręka: „Teraz ja mówię!”.',
+    check: { q: 'Który zapis jest poprawny?', options: ['– Idę już – powiedziała Zosia.', '– Idę już. – Powiedziała Zosia.', '– Idę już, – powiedziała Zosia.'], answer: 0, explain: 'Przed dopiskiem narratora z czasownikiem „powiedziała” nie ma kropki ani przecinka, a dopisek zaczyna się małą literą.' },
+  },
+  {
+    title: 'Wywiad – krok po kroku',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Pięć kroków wywiadu: 1 temat i rozmówca, 2 lista pytań, 3 umówienie się i zgoda, 4 rozmowa z notatkami lub nagraniem, 5 zapis i podziękowanie.">
+      <defs><marker id="a-k4pl-wyw-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <g class="f3 s3">
+        <rect x="8" y="10" width="120" height="86" rx="10"/><rect x="140" y="10" width="120" height="86" rx="10"/><rect x="272" y="10" width="120" height="86" rx="10"/>
+        <rect x="74" y="120" width="120" height="86" rx="10"/><rect x="206" y="120" width="120" height="86" rx="10"/>
+      </g>
+      <g class="tx-b" style="font-size:24px" text-anchor="middle">
+        <text x="68" y="42">🎯</text><text x="200" y="42">📝</text><text x="332" y="42">🤝</text><text x="134" y="152">🎙️</text><text x="266" y="152">📰</text>
+      </g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="68" y="66">1. temat</text><text x="68" y="84">i rozmówca</text>
+        <text x="200" y="66">2. lista</text><text x="200" y="84">pytań</text>
+        <text x="332" y="66">3. umów się,</text><text x="332" y="84">poproś o zgodę</text>
+        <text x="134" y="176">4. rozmowa</text><text x="134" y="194">i notatki</text>
+        <text x="266" y="176">5. zapis</text><text x="266" y="194">i podziękowanie</text>
+      </g>
+      <g class="ln s2"><line x1="130" y1="53" x2="138" y2="53" marker-end="url(#a-k4pl-wyw-1)"/><line x1="262" y1="53" x2="270" y2="53" marker-end="url(#a-k4pl-wyw-1)"/><line x1="196" y1="163" x2="204" y2="163" marker-end="url(#a-k4pl-wyw-1)"/></g>
+      <path d="M332,98 C332,112 150,104 140,118" class="ln s2" marker-end="url(#a-k4pl-wyw-1)"/>
+    </svg>`,
+    text: `<p><b>Wywiad</b> to rozmowa dziennikarza z rozmówcą, zapisana albo nagrana dla czytelników, widzów lub słuchaczy. Rozmówcą może być ktoś znany, ale też sąsiadka, trener czy babcia.</p>
+      <p>Zapis wywiadu: tytuł, krótki wstęp o rozmówcy, potem pytania i odpowiedzi – każde od nowej linijki, pytania wyróżnione (np. pogrubione). Na koniec – podziękowanie.</p>`,
+    remember: 'Temat → pytania → zgoda rozmówcy → rozmowa → zapis: tytuł, wstęp, pytania i odpowiedzi, podziękowanie.',
+    hook: 'Dobry dziennikarz jest jak detektyw: przygotowuje się wcześniej i słucha uważnie.',
+    check: { q: 'Co warto zrobić przed wywiadem?', options: ['przygotować listę pytań', 'wymyślić odpowiedzi rozmówcy', 'napisać morał'], answer: 0, explain: 'Pytania przygotowujemy wcześniej – odpowiedzi daje rozmówca.' },
+  },
+  {
+    title: 'Pytania otwarte i zamknięte',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Dwie kolumny. Pytania zamknięte – odpowiedź tak albo nie: Czy lubi Pan piłkę? Pytania otwarte – odpowiedź to opowieść: Jak wyglądał Pana pierwszy mecz?">
+      <rect x="8" y="10" width="186" height="190" rx="12" class="f2 s2"/>
+      <rect x="206" y="10" width="186" height="190" rx="12" class="f3 s3"/>
+      <text x="101" y="38" class="tx-b" text-anchor="middle">🔒 zamknięte</text>
+      <text x="299" y="38" class="tx-b" text-anchor="middle">🔓 otwarte</text>
+      <text x="101" y="74" class="tx-s" text-anchor="middle">Czy lubi Pan piłkę?</text>
+      <text x="101" y="98" class="tx-b t2" text-anchor="middle">– Tak.</text>
+      <text x="101" y="134" class="tx-s" text-anchor="middle">Czy był Pan zdenerwowany?</text>
+      <text x="101" y="158" class="tx-b t2" text-anchor="middle">– Nie.</text>
+      <text x="101" y="188" class="tx-s" text-anchor="middle">krótko: tak / nie</text>
+      <text x="299" y="74" class="tx-s" text-anchor="middle">Jak wyglądał</text>
+      <text x="299" y="92" class="tx-s" text-anchor="middle">Pana pierwszy mecz?</text>
+      <text x="299" y="122" class="tx-s" text-anchor="middle">Co poradziłby Pan</text>
+      <text x="299" y="140" class="tx-s" text-anchor="middle">młodym piłkarzom?</text>
+      <text x="299" y="166" class="tx-b t3" text-anchor="middle">– Opowieść…</text>
+      <text x="299" y="188" class="tx-s" text-anchor="middle">jak? co? dlaczego?</text>
+    </svg>`,
+    text: `<p>Na <b>pytanie zamknięte</b> wystarczy odpowiedzieć „tak” albo „nie”. Z takich odpowiedzi niewiele się dowiesz.</p>
+      <p><b>Pytanie otwarte</b> zaczyna się często od „jak”, „co”, „dlaczego”, „kiedy” – i zachęca do opowiadania. W wywiadzie zadawaj głównie pytania otwarte i słuchaj uważnie – czasem odpowiedź podsunie ci kolejne pytanie.</p>`,
+    remember: 'Pytania otwarte (jak? co? dlaczego?) dają ciekawe odpowiedzi; zamknięte – tylko „tak” lub „nie”.',
+    hook: 'Pytanie otwarte <b>otwiera drzwi</b> do opowieści 🔓, zamknięte – zamyka je jednym słowem 🔒.',
+    check: { q: 'Które pytanie jest otwarte?', options: ['Co było najtrudniejsze na pierwszym treningu?', 'Czy lubi Pan trenować?', 'Czy wygrał Pan mecz?'], answer: 0, explain: 'Na to pytanie nie odpowiesz „tak” ani „nie” – trzeba opowiedzieć.' },
+  },
+  {
+    title: 'Nastrój – co czujesz, czytając?',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Dwie karty. Radosny nastrój: słońce, ptaki, śmiech dzieci – czytaj żywo. Tajemniczy nastrój: zmrok, pusty dom, skrzypienie, wycie wiatru – czytaj wolno i ciszej.">
+      <rect x="8" y="10" width="186" height="200" rx="12" class="f4 s4"/>
+      <rect x="206" y="10" width="186" height="200" rx="12" class="f5 s5"/>
+      <text x="101" y="50" class="tx-b" style="font-size:30px" text-anchor="middle">☀️🐦</text>
+      <text x="299" y="50" class="tx-b" style="font-size:30px" text-anchor="middle">🌙🏚️</text>
+      <text x="101" y="82" class="tx-b" text-anchor="middle">radosny</text>
+      <text x="299" y="82" class="tx-b" text-anchor="middle">tajemniczy</text>
+      <g class="tx-s" text-anchor="middle">
+        <text x="101" y="110">słońce świeciło</text><text x="101" y="128">ptaki śpiewały</text><text x="101" y="146">radosny śmiech</text>
+        <text x="299" y="110">zapadał zmrok</text><text x="299" y="128">skrzypiały schody</text><text x="299" y="146">wył wiatr</text>
+      </g>
+      <line x1="24" y1="162" x2="178" y2="162" class="ln-thin"/><line x1="222" y1="162" x2="376" y2="162" class="ln-thin"/>
+      <text x="101" y="184" class="tx-s" text-anchor="middle">czytaj żywo,</text><text x="101" y="200" class="tx-s" text-anchor="middle">z uśmiechem</text>
+      <text x="299" y="184" class="tx-s" text-anchor="middle">czytaj wolniej,</text><text x="299" y="200" class="tx-s" text-anchor="middle">ciszej, z pauzami</text>
+    </svg>`,
+    text: `<p><b>Nastrój</b> to atmosfera utworu – uczucia, które w tobie budzi. Może być wesoły, smutny, tajemniczy, groźny, spokojny, uroczysty, tęskny.</p>
+      <p>Tworzą go słowa (np. epitety), opisy pory dnia i pogody, dźwięki, kolory i wydarzenia. Gdy czytasz na głos, pokaż nastrój głosem: dobierz tempo, głośność i pauzy.</p>`,
+    remember: 'Nastrój = atmosfera utworu. Szukaj go w słowach, opisach, dźwiękach i kolorach.',
+    hook: 'Zapytaj siebie: „Jaką muzykę puściłbym do tego tekstu?” Wesołą – nastrój radosny; cichą i niepokojącą – tajemniczy.',
+    check: { q: 'Jaki nastrój budzi opis: „Cicho padał śnieg, w kominku trzaskał ogień, a kot mruczał na kolanach babci.”?', options: ['spokojny, ciepły', 'groźny', 'tajemniczy, straszny'], answer: 0, explain: 'Cichy śnieg, ciepły ogień i mruczący kot – to nastrój spokojny, przytulny.' },
+  },
+];
+
+window.LESSONS['polski/teatr'] = [
+  {
+    title: 'Teatr – sztuka na żywo',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Przekrój teatru: scena z aktorami, po bokach kurtyna i kulisy, z przodu widownia z rzędami widzów.">
+      <rect x="10" y="10" width="380" height="20" class="f2 s2"/>
+      <rect x="10" y="30" width="48" height="110" class="f5 s5"/>
+      <rect x="342" y="30" width="48" height="110" class="f5 s5"/>
+      <path d="M58,30 Q80,80 66,140 L58,140 Z" class="f2 s2"/>
+      <path d="M342,30 Q320,80 334,140 L342,140 Z" class="f2 s2"/>
+      <rect x="58" y="120" width="284" height="20" class="f4 s4"/>
+      <text x="200" y="100" class="tx-b" style="font-size:34px" text-anchor="middle">🤴 👸</text>
+      <text x="200" y="135" class="tx-s" text-anchor="middle">scena</text>
+      <text x="34" y="70" class="tx-s" text-anchor="middle">kulisy</text>
+      <text x="366" y="70" class="tx-s" text-anchor="middle">kulisy</text>
+      <text x="96" y="52" class="tx-s t2">kurtyna</text>
+      <text x="200" y="180" class="tx-b" style="font-size:22px" text-anchor="middle">👤👤👤👤👤👤👤</text>
+      <text x="200" y="206" class="tx-b" style="font-size:22px" text-anchor="middle">👤👤👤👤👤👤👤👤</text>
+      <text x="200" y="226" class="tx-s" text-anchor="middle">widownia</text>
+    </svg>`,
+    text: `<p>W <b>teatrze</b> aktorzy grają <b>na żywo</b> – w tym samym miejscu i czasie co widzowie. Dlatego każde przedstawienie jest trochę inne. Tym teatr różni się od filmu, który nagrywa się wcześniej.</p>
+      <p>Aktorzy grają na <b>scenie</b>, widzowie siedzą na <b>widowni</b>. Scenę od widowni oddziela <b>kurtyna</b>, a za sceną i po jej bokach są <b>kulisy</b> – tam aktorzy czekają na swoje wejście.</p>`,
+    remember: 'scena – aktorzy · widownia – widzowie · kurtyna – zasłona · kulisy – za sceną i po bokach.',
+    hook: '„Za kulisami” mówimy też o czymś, czego zwykle nie widać: „zobacz, jak powstaje gra – za kulisami”.',
+    check: { q: 'Gdzie siedzą widzowie?', options: ['na widowni', 'w kulisach', 'na scenie'], answer: 0, explain: 'Widownia to część teatru dla publiczności.' },
+  },
+  {
+    title: 'Kto tworzy przedstawienie?',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Sześć kafelków: aktor – gra rolę, reżyser – kieruje przedstawieniem, scenograf – projektuje dekoracje, charakteryzator – makijaż i peruki, sufler – podpowiada tekst, widzowie – oglądają.">
+      <g class="f1 s1">
+        <rect x="8" y="10" width="124" height="92" rx="10"/><rect x="138" y="10" width="124" height="92" rx="10"/><rect x="268" y="10" width="124" height="92" rx="10"/>
+        <rect x="8" y="110" width="124" height="92" rx="10"/><rect x="138" y="110" width="124" height="92" rx="10"/><rect x="268" y="110" width="124" height="92" rx="10"/>
+      </g>
+      <g class="tx-b" style="font-size:24px" text-anchor="middle">
+        <text x="70" y="40">🎭</text><text x="200" y="40">🎬</text><text x="330" y="40">🎨</text>
+        <text x="70" y="140">💄</text><text x="200" y="140">🤫</text><text x="330" y="140">👏</text>
+      </g>
+      <g class="tx-b" style="font-size:15px" text-anchor="middle">
+        <text x="70" y="66">aktor</text><text x="200" y="66">reżyser</text><text x="330" y="66">scenograf</text>
+        <text x="70" y="166">charakteryzator</text><text x="200" y="166">sufler</text><text x="330" y="166">widzowie</text>
+      </g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="70" y="88">gra rolę</text><text x="200" y="88">kieruje całością</text><text x="330" y="88">dekoracje</text>
+        <text x="70" y="188">makijaż, peruki</text><text x="200" y="188">podpowiada tekst</text><text x="330" y="188">oglądają</text>
+      </g>
+    </svg>`,
+    text: `<p>Przedstawienie to praca wielu osób. <b>Reżyser</b> decyduje, jak wystawić sztukę, i prowadzi próby. <b>Aktorzy</b> grają role. <b>Scenograf</b> projektuje <b>scenografię</b> – wygląd sceny i dekoracje.</p>
+      <p><b>Charakteryzator</b> zmienia wygląd aktorów (makijaż, peruki, brody), a <b>sufler</b> podpowiada tekst, gdy aktor go zapomni. Aktorów grających w danym spektaklu nazywamy <b>obsadą</b>.</p>`,
+    remember: 'reżyser – kieruje · scenograf – dekoracje · charakteryzator – wygląd aktorów · sufler – podpowiada · obsada – aktorzy spektaklu.',
+    hook: 'Reżyser jest jak trener drużyny: sam nie gra, ale mówi wszystkim, co i jak robić.',
+    check: { q: 'Kto projektuje dekoracje?', options: ['scenograf', 'sufler', 'reżyser'], answer: 0, explain: 'Wygląd sceny projektuje scenograf.' },
+  },
+  {
+    title: 'Kostium, rekwizyt, afisz, premiera',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Sześć kafelków: kostium – strój aktora, rekwizyt – przedmiot na scenie, afisz – plakat, program – broszura o spektaklu, próba – ćwiczenie, premiera – pierwsze przedstawienie.">
+      <g class="f4 s4">
+        <rect x="8" y="10" width="124" height="92" rx="10"/><rect x="138" y="10" width="124" height="92" rx="10"/><rect x="268" y="10" width="124" height="92" rx="10"/>
+        <rect x="8" y="110" width="124" height="92" rx="10"/><rect x="138" y="110" width="124" height="92" rx="10"/><rect x="268" y="110" width="124" height="92" rx="10"/>
+      </g>
+      <g class="tx-b" style="font-size:24px" text-anchor="middle">
+        <text x="70" y="40">👑</text><text x="200" y="40">🧺</text><text x="330" y="40">📜</text>
+        <text x="70" y="140">📖</text><text x="200" y="140">🔁</text><text x="330" y="140">⭐</text>
+      </g>
+      <g class="tx-b" text-anchor="middle">
+        <text x="70" y="66">kostium</text><text x="200" y="66">rekwizyt</text><text x="330" y="66">afisz</text>
+        <text x="70" y="166">program</text><text x="200" y="166">próba</text><text x="330" y="166">premiera</text>
+      </g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="70" y="88">strój aktora</text><text x="200" y="88">rzecz na scenie</text><text x="330" y="88">plakat o spektaklu</text>
+        <text x="70" y="188">broszura</text><text x="200" y="188">ćwiczenie</text><text x="330" y="188">pierwszy spektakl</text>
+      </g>
+    </svg>`,
+    text: `<p>Aktor nosi <b>kostium</b> i używa <b>rekwizytów</b> – przedmiotów potrzebnych na scenie, np. koszyka Czerwonego Kapturka albo miecza rycerza.</p>
+      <p>O spektaklu informuje <b>afisz</b> (plakat), a w teatrze można kupić <b>program teatralny</b> z obsadą i opisem. Zanim widzowie zobaczą przedstawienie, aktorzy ćwiczą na <b>próbach</b>. Pierwsze przedstawienie dla publiczności to <b>premiera</b>.</p>`,
+    remember: 'kostium – strój · rekwizyt – przedmiot · afisz – plakat · próba – ćwiczenie · premiera – pierwsze przedstawienie.',
+    hook: 'Premiera – od francuskiego „première”, czyli „pierwsza”. To pierwszy raz przed widzami.',
+    check: { q: 'Korona na głowie aktora grającego króla to…', options: ['element kostiumu', 'afisz', 'kurtyna'], answer: 0, explain: 'Korona jest częścią stroju króla – to kostium (gdyby aktor trzymał ją w ręku i używał w scenie, byłaby rekwizytem).' },
+  },
+  {
+    title: 'Tekst główny i tekst poboczny',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Kartka ze sztuką. KUBA, w nawiasie: cicho, rozglądając się – to tekst poboczny. Czy ktoś tu jest? – tekst główny. OLA, w nawiasie: wychodzi zza szafy – tekst poboczny. Jestem! – tekst główny.">
+      <defs><marker id="a-k4pl-tea-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t5"/></marker>
+      <marker id="a-k4pl-tea-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t3"/></marker></defs>
+      <rect x="8" y="10" width="384" height="130" rx="10" class="bg ln"/>
+      <text x="22" y="42" class="tx t5" font-style="italic">KUBA (cicho, rozglądając się):</text>
+      <text x="40" y="68" class="tx-b t3">Czy ktoś tu jest?</text>
+      <text x="22" y="100" class="tx t5" font-style="italic">OLA (wychodzi zza szafy):</text>
+      <text x="40" y="126" class="tx-b t3">Jestem!</text>
+      <rect x="8" y="152" width="186" height="60" rx="10" class="f5 s5"/>
+      <rect x="206" y="152" width="186" height="60" rx="10" class="f3 s3"/>
+      <text x="101" y="176" class="tx-b" text-anchor="middle">tekst poboczny</text>
+      <text x="101" y="198" class="tx-s" text-anchor="middle">wskazówki – nie mówi się ich</text>
+      <text x="299" y="176" class="tx-b" text-anchor="middle">tekst główny</text>
+      <text x="299" y="198" class="tx-s" text-anchor="middle">słowa postaci na scenie</text>
+      <path d="M300,102 C330,110 330,140 316,150" class="ln s3" marker-end="url(#a-k4pl-tea-2)"/>
+      <path d="M150,104 C120,120 110,136 104,150" class="ln s5" marker-end="url(#a-k4pl-tea-1)"/>
+    </svg>`,
+    text: `<p>Sztukę teatralną pisze się inaczej niż opowiadanie – nie ma w niej narratora. Są dwa rodzaje tekstu:</p>
+      <ul><li><b>tekst główny</b> – to, co mówią postacie (ich kwestie);</li>
+      <li><b>tekst poboczny</b> (didaskalia) – wskazówki autora: kto mówi, gdzie dzieje się akcja, co robią postacie i jak mówią. Zwykle jest pisany kursywą albo w nawiasie, a aktorzy go nie wypowiadają.</li></ul>`,
+    remember: 'Tekst główny – aktor mówi. Tekst poboczny – aktor robi (to wskazówki).',
+    hook: 'Tekst poboczny to „instrukcja obsługi” sceny – jak przepis, który mówi, co zrobić, ale nikt go nie czyta na głos przy stole.',
+    check: { q: 'Które słowa aktorka wypowie na scenie?', options: ['Jestem!', 'wychodzi zza szafy', 'OLA'], answer: 0, explain: 'Na scenie mówi się tylko tekst główny. Imię i słowa w nawiasie to tekst poboczny.' },
+  },
+  {
+    title: 'Teatr lalek i dobre maniery',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Trzy lalki: pacynka na dłoni, kukiełka na kiju poruszana od dołu, marionetka na nitkach poruszana od góry. Pod spodem zasady: wyłącz telefon, bądź cicho, nie jedz, bij brawo na końcu.">
+      <rect x="8" y="10" width="124" height="148" rx="10" class="f1 s1"/>
+      <rect x="138" y="10" width="124" height="148" rx="10" class="f3 s3"/>
+      <rect x="268" y="10" width="124" height="148" rx="10" class="f2 s2"/>
+      <circle cx="70" cy="52" r="16" class="f4 s4"/>
+      <path d="M50,70 L90,70 L96,112 L44,112 Z" class="f5 s5"/>
+      <text x="70" y="130" class="tx-b" style="font-size:18px" text-anchor="middle">✋</text>
+      <circle cx="200" cy="44" r="16" class="f4 s4"/>
+      <path d="M182,62 L218,62 L214,92 L186,92 Z" class="f5 s5"/>
+      <line x1="200" y1="92" x2="200" y2="114" class="ln sw"/>
+      <text x="200" y="132" class="tx-s" text-anchor="middle">↑ od dołu</text>
+      <line x1="302" y1="18" x2="358" y2="18" class="ln sw"/>
+      <g class="ln-thin"><line x1="310" y1="18" x2="318" y2="80"/><line x1="350" y1="18" x2="342" y2="80"/><line x1="330" y1="18" x2="330" y2="42"/></g>
+      <circle cx="330" cy="56" r="14" class="f4 s4"/>
+      <path d="M316,72 L344,72 L346,106 L314,106 Z" class="f5 s5"/>
+      <text x="330" y="126" class="tx-s" text-anchor="middle">↓ od góry</text>
+      <text x="70" y="150" class="tx-b" text-anchor="middle">pacynka</text>
+      <text x="200" y="150" class="tx-b" text-anchor="middle">kukiełka</text>
+      <text x="330" y="150" class="tx-b" text-anchor="middle">marionetka</text>
+      <rect x="8" y="168" width="384" height="56" rx="10" class="f4 s4"/>
+      <text x="200" y="194" class="tx-s" text-anchor="middle">📵 telefon · 🤫 cisza · 🚫🍿 bez jedzenia · 👏 na koniec</text>
+      <text x="200" y="214" class="tx-s" text-anchor="middle">kurtkę zostaw w szatni, przyjdź punktualnie</text>
+    </svg>`,
+    text: `<p>W <b>teatrze lalek</b> grają lalki, a poruszają nimi aktorzy-lalkarze. <b>Pacynkę</b> zakłada się na dłoń jak rękawiczkę, <b>kukiełka</b> jest na kiju i porusza się nią od dołu, a <b>marionetka</b> wisi na nitkach – lalkarz porusza nią z góry.</p>
+      <p>W każdym teatrze obowiązują dobre maniery: przyjdź punktualnie, kurtkę zostaw w szatni, wyłącz telefon, nie rozmawiaj i nie jedz. Na koniec nagródź aktorów brawami.</p>`,
+    remember: 'pacynka – na dłoni · kukiełka – na kiju (od dołu) · marionetka – na nitkach (od góry).',
+    hook: '<b>Ma</b>rionetka <b>ma</b> nitki – oba słowa zaczynają się od „ma”.',
+    check: { q: 'Którą lalkę porusza się za pomocą nitek od góry?', options: ['marionetkę', 'pacynkę', 'kukiełkę'], answer: 0, explain: 'Marionetka wisi na nitkach przymocowanych do krzyżaka, którym porusza lalkarz.' },
+  },
+];

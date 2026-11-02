@@ -592,5 +592,154 @@ window.SUBJECTS.push({
         { id: 't1j3ru', q: 'Do czego służy nawias w zdaniu „Mój brat (ma 6 lat) chodzi do zerówki.”?', options: ['do dodatkowego wyjaśnienia', 'do zapisania tytułu', 'do zakończenia pytania', 'do wyliczenia'], answer: 0, explain: 'W nawiasie dopisujemy dodatkową informację – tutaj wiek brata.' },
       ],
     },
+    {
+      id: 'dialog-wywiad',
+      name: 'Dialog, monolog, wywiad i nastrój',
+      chapter: 'tematy z kilku rozdziałów (dialog, wywiad, nastrój utworu)',
+      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 1 „Komunikacja”, wym. 1–3 (wypowiedź zgodna z intencją, uważne słuchanie rozmówcy, dostosowanie do sytuacji); dz. 2 „Odbiór tekstów kultury”, wym. 3 (wrażenia, jakie wywołują wypowiedzi – nastrój), wym. 7 (interpretuje głosowo wybrane teksty); dz. 3 „Świadomość języka”, wym. 9 (interpunkcja – zapis dialogu); dz. 4 „Tworzenie wypowiedzi”, wym. 6 (formy dziennikarskie – wywiad), wym. 7 (układ graficzny wypowiedzi). Pojęcia dialog, monolog, wywiad i nastrój – wybór redakcyjny według podręcznika (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Dialog i monolog</h3>
+        <ul>
+          <li><b>Dialog</b> – rozmowa co najmniej dwóch osób (postaci). Wypowiedzi przeplatają się: jedna osoba pyta, druga odpowiada.</li>
+          <li><b>Monolog</b> – dłuższa wypowiedź jednej osoby, np. gdy postać mówi sama do siebie, opowiada historię albo przemawia do innych.</li>
+        </ul>
+        <h3>Jak zapisać dialog w opowiadaniu?</h3>
+        <ul>
+          <li>Wypowiedź każdej postaci zaczynasz <b>od nowej linijki</b> i od <b>myślnika</b> (–).</li>
+          <li>Słowa narratora (kto mówi i jak) oddzielasz myślnikiem i piszesz <b>małą literą</b>, gdy jest w nich czasownik mówienia (powiedział, zapytała, zawołał): <br><i>– Chodźmy do parku – zaproponował Kuba.</i></li>
+          <li>Przed takim dopiskiem narratora <b>nie stawiasz kropki</b>, ale znak zapytania i wykrzyknik zostają: <br><i>– Gdzie jest mój plecak? – zapytała Ola.</i> <br><i>– Uważaj! – krzyknął tata.</i></li>
+        </ul>
+        <div class="tip">💡 Gdy narrator nie mówi o mówieniu, tylko o czymś innym, zaczyna nowe zdanie wielką literą: <i>– Już idę. – Kuba wstał od stołu.</i></div>
+        <h3>Wywiad</h3>
+        <p><b>Wywiad</b> to rozmowa dziennikarza z rozmówcą – zapisana albo nagrana, żeby inni mogli ją przeczytać, obejrzeć lub posłuchać. Rozmówca to często ktoś ciekawy: sportowiec, pisarka, strażak, babcia, która pamięta dawne czasy.</p>
+        <ul>
+          <li><b>Przygotowanie</b>: wybierz temat, zbierz informacje o rozmówcy, napisz listę pytań, umów się na spotkanie i zapytaj o zgodę na nagranie i publikację.</li>
+          <li><b>Budowa</b>: tytuł → krótki wstęp (kim jest rozmówca) → pytania i odpowiedzi → podziękowanie.</li>
+          <li><b>Zapis</b>: każde pytanie i każdą odpowiedź od nowej linijki; pytania wyróżnione (np. pogrubione) albo oznaczone imionami lub inicjałami rozmówców.</li>
+        </ul>
+        <div class="tip">💡 Zadawaj <b>pytania otwarte</b> – takie, na które nie da się odpowiedzieć tylko „tak” albo „nie”: <i>Co lubi Pani najbardziej w swojej pracy?</i> zamiast <i>Czy lubi Pani swoją pracę?</i></div>
+        <h3>Nastrój utworu</h3>
+        <p><b>Nastrój</b> to atmosfera utworu – uczucia, które w nas budzi. Może być wesoły, radosny, smutny, tajemniczy, groźny, spokojny, uroczysty, tęskny.</p>
+        <p>Nastrój tworzą: dobór słów (np. epitety), opisy pory dnia i pogody, dźwięki i kolory, wydarzenia, a w wierszu także rytm.</p>
+        <table>
+          <tr><th>Fragment</th><th>Nastrój</th></tr>
+          <tr><td>Słońce świeciło, ptaki śpiewały, a dzieci z radosnym śmiechem biegły nad jezioro.</td><td>wesoły, radosny</td></tr>
+          <tr><td>Zapadał zmrok. W pustym domu skrzypiały schody, a za oknem wył wiatr.</td><td>tajemniczy, groźny</td></tr>
+        </table>
+        <h3>Czytanie na głos</h3>
+        <p>Czytając na głos, pokaż nastrój głosem: smutny tekst – wolniej i ciszej, wesoły – żywiej. Rób <b>pauzy</b> po kropkach, zmieniaj <b>ton</b> w pytaniach i wykrzyknieniach, a w dialogu – zmieniaj głos dla każdej postaci.</p>
+      `,
+      flashcards: [
+        ['Dialog', 'rozmowa co najmniej dwóch osób'],
+        ['Monolog', 'dłuższa wypowiedź jednej osoby (np. do siebie)'],
+        ['Zapis dialogu', 'każda wypowiedź od nowej linijki, zaczynamy myślnikiem (–)'],
+        ['– Chodźmy już – powiedział Kuba.', 'przed dopiskiem narratora bez kropki, czasownik mówienia małą literą'],
+        ['– Gdzie jesteś? – zawołała mama.', '? i ! przed dopiskiem narratora zostają'],
+        ['Wywiad', 'rozmowa dziennikarza z rozmówcą, zapisana lub nagrana dla odbiorców'],
+        ['Budowa wywiadu', 'tytuł, wstęp o rozmówcy, pytania i odpowiedzi, podziękowanie'],
+        ['Pytanie otwarte', 'nie da się na nie odpowiedzieć tylko „tak” albo „nie”'],
+        ['Nastrój utworu', 'atmosfera, uczucia, które utwór budzi'],
+        ['Co tworzy nastrój?', 'słowa (epitety), pora dnia, pogoda, dźwięki, kolory, wydarzenia, rytm'],
+        ['Czytanie na głos', 'tempo, głośność, ton i pauzy dopasowane do nastroju'],
+      ],
+      questions: [
+        { id: 'zdaai7', q: 'Rozmowa co najmniej dwóch osób to…', options: ['dialog', 'monolog', 'opis', 'notatka'], answer: 0, explain: 'Dialog to rozmowa – wypowiedzi kilku osób się przeplatają.' },
+        { id: '8xpfzq', q: 'Postać na scenie długo mówi sama do siebie, nikt jej nie odpowiada. To…', options: ['monolog', 'dialog', 'wywiad', 'list'], answer: 0, explain: 'Monolog to wypowiedź jednej osoby.' },
+        { id: 'hnpctb', q: 'Jakim znakiem zaczynasz w opowiadaniu wypowiedź postaci?', options: ['myślnikiem', 'przecinkiem', 'dwukropkiem', 'nawiasem'], answer: 0, explain: 'Każdą wypowiedź postaci zaczynamy od nowej linijki i od myślnika (–).' },
+        { id: '9vyks1', q: 'Który zapis dialogu jest poprawny?', options: ['– Chodźmy do parku – zaproponował Kuba.', '– Chodźmy do parku. – Zaproponował Kuba.', 'Chodźmy do parku, zaproponował Kuba –', '– Chodźmy do parku, – zaproponował Kuba.'], answer: 0, explain: 'Przed dopiskiem narratora z czasownikiem mówienia nie ma kropki ani przecinka, a dopisek zaczyna się małą literą.' },
+        { id: 'oqsroc', q: 'Który zapis jest poprawny?', options: ['– Gdzie jest mój plecak? – zapytała Ola.', '– Gdzie jest mój plecak – zapytała Ola?', '– Gdzie jest mój plecak. – zapytała Ola.', 'Gdzie jest mój plecak? zapytała Ola.'], answer: 0, explain: 'Znak zapytania stoi na końcu pytania, przed myślnikiem. Potem dopisek narratora małą literą i kropka.' },
+        { id: '2o0skb', q: 'Gdzie zaczynasz zapis wypowiedzi kolejnej postaci w dialogu?', options: ['w nowej linijce', 'w tej samej linijce po przecinku', 'na końcu akapitu', 'w nawiasie'], answer: 0, explain: 'Każda wypowiedź w dialogu zaczyna się od nowej linijki – łatwo wtedy zobaczyć, kto mówi.' },
+        { id: 'cne1v6', q: 'Czym jest wywiad?', options: ['rozmową dziennikarza z rozmówcą, zapisaną lub nagraną dla odbiorców', 'listem do przyjaciela', 'opisem przedmiotu', 'opowiadaniem o przygodzie'], answer: 0, explain: 'Wywiad to rozmowa przygotowana dla czytelników, widzów albo słuchaczy.' },
+        { id: '4mxran', q: 'Które pytanie do wywiadu z bibliotekarką da najciekawszą odpowiedź?', options: ['Co lubi Pani najbardziej w swojej pracy?', 'Czy lubi Pani książki?', 'Czy pracuje Pani w bibliotece?', 'Czy biblioteka ma okna?'], answer: 0, explain: 'To pytanie otwarte – nie da się na nie odpowiedzieć tylko „tak” albo „nie”, więc rozmówczyni opowie coś ciekawego.' },
+        { id: '1efsyn', q: 'Co powinno się znaleźć na początku wywiadu, zaraz pod tytułem?', options: ['krótkie przedstawienie rozmówcy', 'spis rekwizytów', 'morał', 'pozdrowienia dla rodziny'], answer: 0, explain: 'We wstępie piszemy, kim jest rozmówca i o czym będzie rozmowa.' },
+        { id: 'h34jnp', q: 'Co robisz na koniec wywiadu?', options: ['dziękujesz rozmówcy za rozmowę', 'pytasz o numer telefonu', 'wychodzisz bez słowa', 'opisujesz pogodę'], answer: 0, explain: 'Na koniec dziękujemy rozmówcy za poświęcony czas.' },
+        { id: 'nkpiis', q: 'Czym jest nastrój utworu?', options: ['atmosferą i uczuciami, które budzi utwór', 'liczbą zwrotek', 'imieniem bohatera', 'miejscem wydarzeń'], answer: 0, explain: 'Nastrój to atmosfera utworu – to, co czujemy, czytając lub słuchając.' },
+        { id: 'c3vgvo', q: 'Jaki nastrój ma fragment: „Zapadał zmrok. W pustym domu skrzypiały schody, a za oknem wył wiatr.”?', options: ['tajemniczy, groźny', 'wesoły, radosny', 'uroczysty, podniosły', 'spokojny, sielski'], answer: 0, explain: 'Zmrok, pusty dom, skrzypienie i wycie wiatru budzą niepokój – nastrój jest tajemniczy, groźny.' },
+        { id: 'o9ba5o', q: 'Jaki nastrój ma fragment: „Słońce świeciło, ptaki śpiewały, a dzieci z radosnym śmiechem biegły nad jezioro.”?', options: ['radosny', 'smutny', 'groźny', 'tajemniczy'], answer: 0, explain: 'Słońce, śpiew ptaków i śmiech dzieci tworzą wesoły, radosny nastrój.' },
+        { id: '1pgp7s', q: 'Co NIE wpływa na nastrój utworu?', options: ['numer strony, na której wydrukowano utwór', 'opis pogody i pory dnia', 'dobór słów, np. epitetów', 'dźwięki i kolory w opisie'], answer: 0, explain: 'Nastrój tworzą słowa, opisy, dźwięki, kolory i wydarzenia – a nie numer strony.' },
+        { id: 'yeejo5', q: 'Czytasz na głos smutny wiersz. Jak go przeczytasz?', options: ['wolno i cicho, z pauzami', 'bardzo szybko i głośno', 'wesoło, podśpiewując', 'jednym tchem, bez przerw'], answer: 0, explain: 'Smutny nastrój pokażesz głosem: wolniej, ciszej, z pauzami.' },
+        { id: 'lmht3u', q: 'Prawda czy fałsz?\nW wywiadzie pytania zadaje dziennikarz, a odpowiada rozmówca.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Tak – dziennikarz pyta, rozmówca odpowiada. Pytania warto przygotować wcześniej.' },
+      ],
+    },
+    {
+      id: 'teatr',
+      name: 'Teatr',
+      chapter: 'tematy z kilku rozdziałów (teatr, tekst do wystawienia)',
+      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 2 „Odbiór tekstów kultury”, wym. 1 (odczytanie tekstów różnych sztuk, w tym teatru – moduł kultura), wym. 7 (interpretuje głosowo wybrane teksty); dz. 7 „Praktyki lekturowe”, wym. 7 (zapoznaje się z tekstami kultury różnych sztuk, w tym teatru); moduł kultura (udział w spektaklu teatralnym, tworzenie w grupie krótkiej formy artystycznej, np. przedstawienia). Pojęcia teatralne (twórcy teatru, scena, tekst główny i poboczny, rodzaje lalek) – wybór redakcyjny według podręcznika.',
+      theory: `
+        <h3>Czym jest teatr?</h3>
+        <p><b>Teatr</b> to sztuka, w której aktorzy grają <b>na żywo</b>, przed widzami – w tym samym miejscu i w tym samym czasie. Każde przedstawienie (spektakl) jest trochę inne. Słowo „teatr” oznacza też budynek, w którym się gra.</p>
+        <h3>Kto tworzy przedstawienie?</h3>
+        <table>
+          <tr><td><b>aktor, aktorka</b></td><td>gra rolę – postać na scenie</td></tr>
+          <tr><td><b>reżyser</b></td><td>kieruje całym przedstawieniem: decyduje, jak wystawić sztukę, prowadzi próby z aktorami</td></tr>
+          <tr><td><b>scenograf</b></td><td>projektuje <b>scenografię</b> – wygląd sceny, dekoracje</td></tr>
+          <tr><td><b>charakteryzator</b></td><td>robi aktorom makijaż, zakłada peruki, przyprawia brody (to <b>charakteryzacja</b>)</td></tr>
+          <tr><td><b>sufler</b></td><td>podpowiada aktorom tekst, gdy go zapomną</td></tr>
+          <tr><td><b>widzowie</b> (publiczność)</td><td>oglądają spektakl</td></tr>
+        </table>
+        <p><b>Obsada</b> to aktorzy, którzy grają role w danym przedstawieniu.</p>
+        <h3>Teatr od środka</h3>
+        <ul>
+          <li><b>scena</b> – miejsce, na którym grają aktorzy; <b>widownia</b> – miejsce dla widzów;</li>
+          <li><b>kurtyna</b> – zasłona, która oddziela scenę od widowni;</li>
+          <li><b>kulisy</b> – przestrzeń za sceną i po jej bokach, której widzowie nie widzą;</li>
+          <li><b>kostium</b> – strój aktora; <b>rekwizyt</b> – przedmiot, którego aktor używa na scenie (np. miecz, koszyk, list);</li>
+          <li><b>afisz</b> – plakat zapowiadający przedstawienie; <b>program teatralny</b> – broszura o spektaklu i jego twórcach;</li>
+          <li><b>próba</b> – ćwiczenie przedstawienia; <b>premiera</b> – pierwsze przedstawienie dla publiczności.</li>
+        </ul>
+        <h3>Tekst do wystawienia na scenie</h3>
+        <p>Sztuka teatralna jest zapisana inaczej niż opowiadanie – nie ma w niej narratora.</p>
+        <ul>
+          <li><b>Tekst główny</b> – wypowiedzi postaci (kwestie), czyli to, co aktorzy mówią na scenie.</li>
+          <li><b>Tekst poboczny</b> (didaskalia) – wskazówki autora: kto mówi, gdzie i kiedy dzieje się akcja, co robią postacie i jak mówią. Zwykle jest zapisany kursywą albo w nawiasie. Aktorzy go nie wypowiadają.</li>
+        </ul>
+        <p>Przykład: <i>KUBA (cicho, rozglądając się):</i> Czy ktoś tu jest? – imię i nawias to tekst poboczny, „Czy ktoś tu jest?” – tekst główny.</p>
+        <h3>Teatr lalek</h3>
+        <ul>
+          <li><b>pacynka</b> – lalka zakładana na dłoń jak rękawiczka;</li>
+          <li><b>kukiełka</b> – lalka na kiju, poruszana od dołu;</li>
+          <li><b>marionetka</b> – lalka na nitkach, poruszana od góry.</li>
+        </ul>
+        <h3>Jak zachowywać się w teatrze?</h3>
+        <ul>
+          <li>Przyjdź punktualnie, kurtkę zostaw w szatni, ubierz się schludnie.</li>
+          <li>Wyłącz telefon. Podczas spektaklu nie rozmawiaj, nie jedz i nie szeleść.</li>
+          <li>Na zakończenie, gdy aktorzy się kłaniają, nagródź ich <b>brawami</b>.</li>
+        </ul>
+      `,
+      flashcards: [
+        ['Reżyser', 'kieruje przedstawieniem, prowadzi próby z aktorami'],
+        ['Scenograf / scenografia', 'projektuje wygląd sceny / dekoracje'],
+        ['Charakteryzator', 'makijaż, peruki, przyprawione brody'],
+        ['Sufler', 'podpowiada aktorom tekst'],
+        ['Rekwizyt', 'przedmiot, którego aktor używa na scenie'],
+        ['Kurtyna / kulisy', 'zasłona przed sceną / miejsce za sceną i po bokach'],
+        ['Afisz / program teatralny', 'plakat o przedstawieniu / broszura o spektaklu'],
+        ['Próba / premiera', 'ćwiczenie spektaklu / pierwsze przedstawienie dla publiczności'],
+        ['Obsada', 'aktorzy grający role w przedstawieniu'],
+        ['Tekst główny i poboczny', 'kwestie postaci / wskazówki autora (didaskalia)'],
+        ['Pacynka, kukiełka, marionetka', 'na dłoń / na kiju od dołu / na nitkach od góry'],
+      ],
+      questions: [
+        { id: 'xfe655', q: 'Kto kieruje przygotowaniem przedstawienia i prowadzi próby z aktorami?', options: ['reżyser', 'scenograf', 'sufler', 'charakteryzator'], answer: 0, explain: 'Reżyser decyduje, jak wystawić sztukę, i pracuje z aktorami na próbach.' },
+        { id: 'dsnb4s', q: 'Kto projektuje dekoracje, czyli wygląd sceny?', options: ['scenograf', 'reżyser', 'charakteryzator', 'sufler'], answer: 0, explain: 'Scenograf projektuje scenografię – wygląd sceny i dekoracje.' },
+        { id: 'emi0xb', q: 'Kto robi aktorom makijaż i zakłada peruki?', options: ['charakteryzator', 'scenograf', 'reżyser', 'sufler'], answer: 0, explain: 'To zadanie charakteryzatora – jego praca to charakteryzacja.' },
+        { id: '0ob1tq', q: 'Kto podpowiada aktorom tekst, gdy go zapomną?', options: ['sufler', 'reżyser', 'widz', 'scenograf'], answer: 0, explain: 'Sufler śledzi tekst sztuki i w razie potrzeby cicho podpowiada.' },
+        { id: '36jf6v', q: 'Co to jest rekwizyt?', options: ['przedmiot, którego aktor używa na scenie', 'strój aktora', 'zasłona przed sceną', 'plakat o przedstawieniu'], answer: 0, explain: 'Rekwizyt to np. miecz, koszyk albo list, którym aktor posługuje się w czasie gry. Strój to kostium.' },
+        { id: 'nv9e2n', q: 'Jak nazywa się zasłona, która oddziela scenę od widowni?', options: ['kurtyna', 'kulisy', 'afisz', 'kostium'], answer: 0, explain: 'Kurtyna podnosi się (albo rozsuwa) na początku przedstawienia.' },
+        { id: 'w3slu4', q: 'Gdzie w teatrze siedzą widzowie?', options: ['na widowni', 'w kulisach', 'na scenie', 'w suflerce'], answer: 0, explain: 'Widownia to część teatru przeznaczona dla publiczności.' },
+        { id: '0r3tes', q: 'Co to jest afisz?', options: ['plakat zapowiadający przedstawienie', 'spis kwestii aktora', 'zasłona sceny', 'pierwsze przedstawienie'], answer: 0, explain: 'Afisz informuje, co, gdzie i kiedy będzie grane.' },
+        { id: '21f428', q: 'Jak nazywa się pierwsze przedstawienie spektaklu dla publiczności?', options: ['premiera', 'próba', 'obsada', 'kurtyna'], answer: 0, explain: 'Premiera to pierwsze przedstawienie. Wcześniej aktorzy ćwiczą na próbach.' },
+        { id: 'v5iawg', q: 'Obsada to…', options: ['aktorzy, którzy grają role w przedstawieniu', 'dekoracje na scenie', 'krzesła na widowni', 'bilety do teatru'], answer: 0, explain: 'Obsadę – kto gra którą rolę – znajdziesz w programie teatralnym.' },
+        { id: 'l7a7h1', q: 'Fragment sztuki: „KUBA (cicho, rozglądając się): Czy ktoś tu jest?”. Które słowa aktor wypowiada na scenie?', options: ['Czy ktoś tu jest?', 'cicho, rozglądając się', 'KUBA', 'KUBA (cicho)'], answer: 0, explain: 'Aktor mówi tylko tekst główny: „Czy ktoś tu jest?”. Imię postaci i słowa w nawiasie to tekst poboczny – wskazówki.' },
+        { id: '3c8wau', q: 'Po co w sztuce teatralnej jest tekst poboczny (didaskalia)?', options: ['podpowiada, kto mówi, gdzie dzieje się akcja i co robią postacie', 'to słowa, które aktor mówi do widzów', 'to tytuł sztuki', 'to lista biletów do sprzedania'], answer: 0, explain: 'Tekst poboczny to wskazówki autora dla aktorów i reżysera. Na scenie się go nie wypowiada.' },
+        { id: 'oao38s', q: 'Która lalka jest poruszana od góry za pomocą nitek?', options: ['marionetka', 'pacynka', 'kukiełka', 'maskotka'], answer: 0, explain: 'Marionetka wisi na nitkach, a lalkarz porusza nią z góry.' },
+        { id: 'wejno4', q: 'Którą lalkę zakłada się na dłoń jak rękawiczkę?', options: ['pacynkę', 'marionetkę', 'kukiełkę', 'maskotkę'], answer: 0, explain: 'Pacynkę wkłada się na dłoń. Kukiełka jest na kiju, a marionetka – na nitkach.' },
+        { id: 'w0tta4', q: 'Jak zachowasz się w teatrze podczas spektaklu?', options: ['wyłączę telefon i będę oglądać w ciszy', 'będę jeść chipsy', 'będę głośno komentować grę aktorów', 'wejdę na scenę, żeby obejrzeć dekoracje'], answer: 0, explain: 'W teatrze aktorzy grają na żywo – hałas i światło telefonu przeszkadzają im i innym widzom.' },
+        { id: '4te6pp', q: 'Czym teatr różni się od filmu?', options: ['aktorzy grają na żywo, przed widzami', 'w teatrze nie ma aktorów', 'w teatrze nie ma dekoracji', 'teatr ogląda się tylko w telefonie'], answer: 0, explain: 'W teatrze aktorzy i widzowie są w tym samym miejscu i czasie. Film nagrywa się wcześniej.' },
+        { id: 'tulwi2', q: 'Prawda czy fałsz?\nKulisy to przestrzeń za sceną i po jej bokach, której widzowie nie widzą.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Za kulisami aktorzy czekają na wejście, a tam stoją też dekoracje i rekwizyty.' },
+      ],
+    },
   ],
 });
