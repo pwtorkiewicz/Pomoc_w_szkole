@@ -74,7 +74,7 @@ Uruchomienie: otwórz `index.html` w przeglądarce (albo od razu stronę ścież
 
 ```
 node tools/sprawdz-dane.js [ścieżka]                 # pytania we wszystkich ścieżkach: unikalne id, poprawne indeksy odpowiedzi
-node tools/jakosc-pytan.js [ścieżka[/przedmiot]] [-v] # podpowiedzi: poprawna odpowiedź wyraźnie najdłuższa (cel ≤ 15% w przedmiocie), pytania bez explain
+node tools/jakosc-pytan.js [ścieżka[/przedmiot]] [-v] # podpowiedzi: poprawna odpowiedź wyraźnie najdłuższa (cel: wyraźnie najdłuższa ≤ 15%, zawsze najdłuższa ≤ 40%), pytania bez explain
 node tools/sprawdz-lekcje.js [ścieżka[/przedmiot] | przedmiot]   # lekcje: struktura, XML SVG, napisy poza kadrem/nachodzące, błędy JS
 node tools/zrzut.js <[ścieżka/]przedmiot/dział> <krok> <plik.png> [dark] [420]   # podgląd kroku lekcji (bez ścieżki – egzamin)
 node tools/przeglad.js [ścieżka]                     # ekran wyboru + wszystkie widoki i zestawy ścieżek (jasny/ciemny, 420 px): błędy JS, poziome przewijanie

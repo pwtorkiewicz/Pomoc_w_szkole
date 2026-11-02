@@ -3,6 +3,8 @@
  * Raport dla każdego przedmiotu:
  *   – „najdłuższa”: pytania (≥ 3 odpowiedzi), w których poprawna odpowiedź jest wyraźnie
  *     (o ponad 30%) dłuższa od każdej błędnej – uczeń, który wybiera najdłuższą, trafia;
+ *   – „zawsze najdłuższa”: odsetek pytań (≥ 3 odpowiedzi), w których poprawna jest jedyną najdłuższą choćby
+ *     o jeden znak (przy 4 odpowiedziach losowo ok. 25–30%; powyżej 40% – wyraźna podpowiedź);
  *   – „bez wyjaśnienia”: pytania bez pola explain.
  * -v wypisuje też same pytania (id, długości, treść). Narzędzie tylko ostrzega – nie zmienia kodu wyjścia. */
 const wczytaj = require('./dane');
@@ -33,8 +35,14 @@ for (const t of tracks) {
     if (!qs.length) continue;
     const dl = qs.map((q) => [q, najdluzsza(q)]).filter(([, r]) => r);
     const bez = qs.filter((q) => !q.explain);
+    const wielo = qs.filter((q) => q.options.length >= 3);
+    const zawsze = wielo.filter((q) => {
+      const len = q.options.map((o) => tekst(o).length);
+      return len.every((l, i) => i === q.answer || l < len[q.answer]);
+    }).length;
+    const pz = Math.round((100 * zawsze) / (wielo.length || 1));
     const pct = Math.round((100 * dl.length) / qs.length);
-    console.log(`${s.id.padEnd(12)} pytań ${String(qs.length).padStart(4)} · najdłuższa: ${String(dl.length).padStart(3)} (${pct}%)${pct > 15 ? ' ⚠' : ''} · bez wyjaśnienia: ${bez.length}`);
+    console.log(`${s.id.padEnd(12)} pytań ${String(qs.length).padStart(4)} · najdłuższa: ${String(dl.length).padStart(3)} (${pct}%)${pct > 15 ? ' ⚠' : ''} · zawsze najdłuższa: ${pz}%${pz > 40 ? ' ⚠' : ''} · bez wyjaśnienia: ${bez.length}`);
     if (verbose) {
       for (const [q, r] of dl) console.log(`   [dł ×${r.toFixed(1)}] ${q.dzial} ${q.id}: ${tekst(q.q).slice(0, 70)} → ${tekst(q.options[q.answer]).slice(0, 60)}`);
       for (const q of bez) console.log(`   [bez wyj.] ${q.dzial} ${q.id}: ${tekst(q.q).slice(0, 90)}`);
