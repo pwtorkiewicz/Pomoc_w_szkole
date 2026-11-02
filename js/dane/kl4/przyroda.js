@@ -934,6 +934,95 @@ window.SUBJECTS.push({
 
     // ------------------------------------------------------------------
     {
+      id: 'chmury-upal-mroz',
+      name: 'Wiatr i chmury, upał i mróz',
+      chapter: 'rozdział IV „Obserwuję pogodę” (niebo w ruchu, upał i mróz)',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 5 „Planeta Ziemia”, wym. 10–11 (składniki pogody i ich pomiar); dz. 3 „Materia i jej przemiany w przyrodzie”, wym. 5 (wpływ temperatury na organizmy, rola pokrywy śnieżnej w ochronie gleby i organizmów przed mrozem); dz. 4 „Organizmy i ekosystemy”, wym. 8 (organizmy stałocieplne i zmiennocieplne, objawy udaru cieplnego i odwodnienia, przeciwdziałanie), wym. 9 (przetrwanie zimy – szerzej w dziale „Zwierzęta i grzyby”). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026: chmury i ich rodzaje – materiały edukacyjne IMGW-PIB („Z głową w chmurach”) i ZPE („Chmury”); wiatr – ZPE („Skąd się bierze wiatr?”, „Jak powstaje wiatr?”); zmiennocieplność i stałocieplność, zachowania zwierząt w upale i zimą – ZPE („Życie na lądzie”, „Różnorodność zwierząt”); udar cieplny i odwodnienie – Ministerstwo Zdrowia (gov.pl, „Udar słoneczny, udar cieplny, przegrzanie cieplne”) i pacjent.gov.pl (udar cieplny jest stanem zagrażającym życiu, numery 112 i 999). Bez łacińskich nazw chmur i wysokości pięter chmur.',
+      theory: `
+        <h3>Wiatr – powietrze w ruchu</h3>
+        <p><b>Wiatr</b> to poziomy ruch powietrza. Powietrze przemieszcza się z miejsc, gdzie mocniej naciska (wyższe ciśnienie), tam, gdzie naciska słabiej. Im większa ta różnica, tym silniej wieje.</p>
+        <ul>
+          <li><b>Kierunek</b> wiatru nazywamy od strony, <b>z której wieje</b> (wiatr północny wieje z północy). Pokazuje go <b>wiatrowskaz</b> albo tasiemka przywiązana do kija.</li>
+          <li><b>Siłę</b> (prędkość) wiatru mierzy <b>wiatromierz</b>. Bez przyrządu ocenisz ją po tym, jak gną się gałęzie i jak mocno odchyla się tasiemka.</li>
+        </ul>
+        <h3>Chmury</h3>
+        <p><b>Chmura</b> to ogromna ilość maleńkich <b>kropelek wody</b> lub <b>kryształków lodu</b>, które unoszą się w powietrzu. Powstaje tak: ciepłe, wilgotne powietrze unosi się do góry i tam się <b>ochładza</b>. Para wodna się <b>skrapla</b> – zamienia w kropelki. Gdy na górze jest mróz, powstają kryształki lodu.</p>
+        <table>
+          <tr><th>Chmury</th><th>Wygląd</th><th>Co zapowiadają?</th></tr>
+          <tr><td><b>kłębiaste</b></td><td>białe „bałwanki” z płaską podstawą</td><td>zwykle ładną pogodę; gdy bardzo urosną, ciemnieją i robią się wysokie – burzę i krótką ulewę</td></tr>
+          <tr><td><b>warstwowe</b></td><td>szara, niska warstwa zasłaniająca całe niebo</td><td>długotrwałe opady, mżawkę</td></tr>
+          <tr><td><b>pierzaste</b></td><td>cienkie, białe „piórka” wysoko na niebie; z kryształków lodu</td><td>zwykle nie dają opadów</td></tr>
+        </table>
+        <h3>Stałocieplne i zmiennocieplne</h3>
+        <table>
+          <tr><th></th><th>Stałocieplne</th><th>Zmiennocieplne</th></tr>
+          <tr><td>temperatura ciała</td><td>prawie stała, niezależnie od pogody</td><td>zależy od temperatury otoczenia</td></tr>
+          <tr><td>kto?</td><td><b>ptaki i ssaki</b> (także człowiek)</td><td>większość <b>owadów, ryby, płazy, gady</b></td></tr>
+          <tr><td>w chłodzie</td><td>mogą być aktywne, ale potrzebują więcej pokarmu</td><td>stają się powolne, odrętwiałe</td></tr>
+        </table>
+        <p>Jaszczurka rano wygrzewa się na kamieniu, bo musi się ogrzać, zanim zacznie polować.</p>
+        <h3>Jak organizmy radzą sobie z upałem?</h3>
+        <ul>
+          <li>chowają się w <b>cieniu</b>, w norach, w szczelinach; są aktywne rano i wieczorem,</li>
+          <li>pies wystawia język i szybko oddycha – tak się ochładza,</li>
+          <li>człowiek się <b>poci</b> – pot paruje i chłodzi skórę, dlatego w upale tracimy dużo wody.</li>
+        </ul>
+        <h3>Udar cieplny i odwodnienie</h3>
+        <p><b>Odwodnienie</b> – organizm ma za mało wody. Pierwszy sygnał to pragnienie; potem może boleć głowa i pojawia się osłabienie.</p>
+        <p><b>Udar cieplny</b> – groźne przegrzanie organizmu. Objawy: wysoka temperatura ciała, gorąca, czerwona skóra, ból i zawroty głowy, nudności, wymioty, a nawet utrata przytomności. <b>To stan zagrażający życiu.</b></p>
+        <ul>
+          <li><b>Pomoc:</b> zawołaj dorosłego, przenieście chorego w <b>chłodne, zacienione miejsce</b>, zdejmijcie nadmiar ubrania, chłodźcie go, podajcie wodę do picia (jeśli jest przytomny). Gdy nie wraca szybko do siebie – dzwońcie pod <b>112</b> lub <b>999</b>.</li>
+          <li><b>Zapobieganie:</b> pij wodę, noś nakrycie głowy i przewiewne ubranie, unikaj pełnego słońca w najgorętszych godzinach, nie zostawiaj nikogo (także zwierząt) w zamkniętym samochodzie.</li>
+        </ul>
+        <h3>Jak przetrwać mróz?</h3>
+        <ul>
+          <li><b>Śnieg</b> działa jak kołdra: <b>pokrywa śnieżna</b> chroni glebę i rośliny przed przemarznięciem.</li>
+          <li>Zwierzęta: gęstsze futro lub pióra (gronostaj zimą ma gęstą, białą sierść), sen zimowy (np. niedźwiedź, świstak), odloty do ciepłych krajów (np. bocian).</li>
+          <li>Rośliny: gruba kora drzew, gęste włoski na liściach.</li>
+          <li>Człowiek: ubiera się „na cebulkę” – kilka warstw zatrzymuje ciepło.</li>
+        </ul>
+      `,
+      flashcards: [
+        ['Wiatr', 'Poziomy ruch powietrza – z miejsc, gdzie powietrze mocniej naciska, tam, gdzie słabiej'],
+        ['Kierunek wiatru', 'Od strony, z której wieje; pokazuje go wiatrowskaz'],
+        ['Wiatromierz', 'Przyrząd do pomiaru siły (prędkości) wiatru'],
+        ['Chmura', 'Maleńkie kropelki wody lub kryształki lodu unoszące się w powietrzu'],
+        ['Jak powstaje chmura?', 'Ciepłe, wilgotne powietrze unosi się, ochładza, a para wodna się skrapla'],
+        ['Chmury kłębiaste', 'Białe „bałwanki”; zwykle ładna pogoda, wysokie i ciemne – burza'],
+        ['Chmury warstwowe', 'Szara warstwa na całym niebie; długotrwałe opady, mżawka'],
+        ['Chmury pierzaste', 'Cienkie „piórka” wysoko, z kryształków lodu; zwykle bez opadów'],
+        ['Stałocieplne', 'Prawie stała temperatura ciała: ptaki i ssaki'],
+        ['Zmiennocieplne', 'Temperatura ciała zależy od otoczenia: większość owadów, ryby, płazy, gady'],
+        ['Udar cieplny – objawy', 'Wysoka temperatura ciała, gorąca czerwona skóra, ból i zawroty głowy, nudności'],
+        ['Udar cieplny – pomoc', 'Cień, chłodzenie, picie; gdy nie mija – 112 lub 999'],
+        ['Odwodnienie', 'Za mało wody w organizmie; pierwszy sygnał – pragnienie'],
+        ['Pokrywa śnieżna', 'Chroni glebę i rośliny przed przemarznięciem – jak kołdra'],
+      ],
+      questions: [
+        { id: 'ydvng7', q: 'Czym jest wiatr?', options: ['poziomym ruchem powietrza', 'opadem z chmur', 'parowaniem wody', 'ruchem Ziemi wokół Słońca'], answer: 0, explain: 'Wiatr to powietrze w ruchu – przemieszcza się tam, gdzie słabiej naciska.' },
+        { id: 'yajc5c', q: 'Wiatr wieje z zachodu na wschód. Jak go nazywamy?', options: ['zachodni', 'wschodni', 'północny', 'południowy'], answer: 0, explain: 'Wiatr nazywamy od strony, z której wieje.' },
+        { id: 'cyt1mu', q: 'Który przyrząd mierzy siłę (prędkość) wiatru?', options: ['wiatromierz', 'deszczomierz', 'termometr', 'kompas'], answer: 0, explain: 'Wiatromierz mierzy prędkość wiatru. Kierunek pokazuje wiatrowskaz.' },
+        { id: 'o951ei', q: 'Z czego zbudowana jest chmura?', options: ['z maleńkich kropelek wody lub kryształków lodu', 'z dymu', 'z pary, której nie widać', 'z kurzu'], answer: 0, explain: 'Chmura to skupisko kropelek wody albo kryształków lodu unoszonych w powietrzu.' },
+        { id: 'jl4dme', q: 'Jak powstaje chmura?', options: ['ciepłe, wilgotne powietrze unosi się, ochładza i para wodna się skrapla', 'zimne powietrze opada i ogrzewa się', 'woda paruje z chmur', 'wiatr przywiewa kurz'], answer: 0, explain: 'Na górze jest chłodniej – para wodna zamienia się w kropelki (skrapla się).' },
+        { id: 'tvrlyx', q: 'Jakie chmury zwykle zapowiadają ładną pogodę?', options: ['białe kłębiaste „bałwanki”', 'szare warstwowe na całym niebie', 'wysokie, ciemne chmury burzowe', 'nie ma takich chmur'], answer: 0, explain: 'Małe, białe chmury kłębiaste to zwykle dobra pogoda. Gdy bardzo urosną i ściemnieją – może być burza.' },
+        { id: 'cfi453', q: 'Niebo zakrywa niska, szara warstwa chmur. Czego możesz się spodziewać?', options: ['długotrwałych opadów lub mżawki', 'upału bez chmur', 'tęczy przez cały dzień', 'zaćmienia Słońca'], answer: 0, explain: 'Chmury warstwowe przynoszą długie, spokojne opady.' },
+        { id: 'f3v1ng', q: 'Z czego zbudowane są wysokie chmury pierzaste?', options: ['z kryształków lodu', 'z kropli deszczu', 'z dymu', 'z piasku'], answer: 0, explain: 'Wysoko jest bardzo zimno, więc chmury pierzaste tworzą kryształki lodu.' },
+        { id: 'w9uzgz', q: 'Które zwierzę jest stałocieplne?', options: ['wróbel', 'jaszczurka', 'żaba', 'karp'], answer: 0, explain: 'Ptaki i ssaki są stałocieplne. Jaszczurka (gad), żaba (płaz) i karp (ryba) są zmiennocieplne.' },
+        { id: 'a3yrl4', q: 'Dlaczego jaszczurka rano wygrzewa się na kamieniu?', options: ['jest zmiennocieplna – musi się ogrzać, by być aktywna', 'szuka wody', 'chowa się przed deszczem', 'kamień daje jej pokarm'], answer: 0, explain: 'Temperatura ciała gadów zależy od otoczenia. Zimna jaszczurka jest powolna.' },
+        { id: 'bx7z6f', q: 'Jak pies ochładza się w upał?', options: ['wystawia język i szybko oddycha', 'zwija się w kłębek na słońcu', 'je więcej', 'zapuszcza dłuższą sierść'], answer: 0, explain: 'Szybki oddech z wystawionym językiem pomaga psu oddać ciepło.' },
+        { id: 'qy1itr', q: 'Dlaczego w upale trzeba dużo pić?', options: ['bo pocimy się i tracimy wodę', 'bo woda jest wtedy tańsza', 'bo w upale nie można jeść', 'bo picie ogrzewa ciało'], answer: 0, explain: 'Pot chłodzi skórę, ale organizm traci wodę. Trzeba ją uzupełniać, żeby się nie odwodnić.' },
+        { id: 't82gq4', q: 'Który zestaw objawów może oznaczać udar cieplny?', options: ['wysoka temperatura ciała, gorąca czerwona skóra, ból i zawroty głowy', 'katar i kichanie', 'swędzenie po ukąszeniu komara', 'zimne dłonie zimą'], answer: 0, explain: 'Udar cieplny to groźne przegrzanie. Może dojść nawet do utraty przytomności.' },
+        { id: 'rzgotd', q: 'Kolega w upale źle się czuje, jest czerwony i ma zawroty głowy. Co robisz najpierw?', options: ['wołam dorosłego i prowadzimy go w chłodne, zacienione miejsce', 'każę mu pobiegać', 'zostawiam go na słońcu, żeby odpoczął', 'daję mu gorącą herbatę i koc'], answer: 0, explain: 'Chłód, cień, picie i pomoc dorosłego. Gdy nie mija – dzwonimy pod 112 lub 999.' },
+        { id: '458dw8', q: 'Jak chronić się przed przegrzaniem latem?', options: ['pić wodę, nosić nakrycie głowy, unikać pełnego słońca w najgorętszych godzinach', 'nosić ciemny, gruby sweter', 'nie pić, żeby się nie pocić', 'siedzieć w zamkniętym samochodzie'], answer: 0, explain: 'Woda, czapka, cień i przewiewne ubranie chronią przed udarem cieplnym.' },
+        { id: 'vdkmpu', q: 'Jak pokrywa śnieżna pomaga roślinom zimą?', options: ['chroni glebę i rośliny przed przemarznięciem', 'zabija rośliny', 'zastępuje im światło', 'nie ma żadnego znaczenia'], answer: 0, explain: 'Śnieg działa jak kołdra – pod nim jest cieplej niż w mroźnym powietrzu.' },
+        { id: 'bqfv4w', q: 'Które przystosowanie pomaga zwierzętom przetrwać mróz?', options: ['gęstsze futro lub pióra', 'zrzucenie sierści', 'kąpiel w zimnej wodzie', 'mniej jedzenia jesienią'], answer: 0, explain: 'Gęste futro i pióra zatrzymują ciepło. Inne sposoby to sen zimowy i odloty.' },
+        { id: 'mo2o9o', q: 'Prawda czy fałsz?\nWiatr wschodni wieje ze wschodu.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Nazwa wiatru mówi, skąd wieje: wschodni – ze wschodu na zachód.' },
+        { id: '89ifu5', q: 'Prawda czy fałsz?\nUdar cieplny to drobna dolegliwość, która zawsze sama mija.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Udar cieplny zagraża życiu. Trzeba chłodzić chorego i wezwać pomoc, jeśli stan się szybko nie poprawia.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
+    {
       id: 'rosliny',
       name: 'Przyroda ożywiona i nieożywiona. Rośliny',
       chapter: 'rozdział V „Jak działają organizmy?” (rośliny w okolicy – rozdział II)',
@@ -1250,6 +1339,88 @@ window.SUBJECTS.push({
         { id: 'poa1q9', q: 'Z czego składa się ściółka?', options: ['z opadłych liści, igieł i gałązek', 'z młodych drzew i krzewów', 'z mchów i paproci', 'z koron drzew'], answer: 0, explain: 'Ściółka to opadłe liście, igły i gałązki. Rozkładają je dżdżownice, grzyby i bakterie – powstaje próchnica.' },
         { id: '3r5ass', q: 'W lesie rosną sosny i świerki, a nie ma drzew liściastych. To las…', options: ['iglasty (bór)', 'liściasty', 'mieszany'], answer: 0, explain: 'Las z drzewami iglastymi (sosna, świerk, jodła, modrzew) to las iglasty, czyli bór.' },
         { id: '7ioi8h', q: 'Który przykład to funkcja społeczna lasu?', options: ['spacer i wypoczynek w lesie', 'pozyskiwanie drewna', 'zatrzymywanie wody w mchach', 'pochłanianie dwutlenku węgla'], answer: 0, explain: 'Funkcje społeczne to wypoczynek, zdrowie i praca. Drewno to funkcja gospodarcza, a zatrzymywanie wody i pochłanianie dwutlenku węgla – ochronna.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
+    {
+      id: 'lad-woda-pole',
+      name: 'Życie na lądzie i w wodzie. Pole uprawne',
+      chapter: 'rozdziały VII „Życie na lądzie” (ląd, pole) i VIII „Życie w wodzie”',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 4 „Organizmy i ekosystemy”, wym. 2 (cechy budowy organizmów umożliwiające życie na lądzie, sposoby poruszania się zwierząt lądowych), wym. 6 (cechy środowiska wodnego), wym. 7 (przystosowanie organizmów do życia w wodzie – bez pojęcia gęstości, które jest w dziale „Gęstość, tonięcie i pływanie”), wym. 12 (ekosystemy naturalne i sztuczne); dz. 6 „Człowiek w środowisku”, wym. 10 (wykorzystanie ziemi pod uprawy i chów zwierząt, główne rośliny uprawiane w Polsce). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Życie na lądzie” – więcej tlenu na lądzie, większe wahania temperatury, ochrona przed wysychaniem, sposoby poruszania się; „Ryby”, „Życie w zbiornikach wodnych” – skrzela, płetwy, opływowy kształt, śluz; „Rozmieszczenie upraw na terenie Polski”, „Główne uprawy Polski” – zboża zajmują około dwóch trzecich powierzchni upraw, rzepak jako główna roślina oleista, burak cukrowy, ziemniaki).',
+      theory: `
+        <h3>Ląd i woda – dwa różne światy</h3>
+        <table>
+          <tr><th></th><th>Na lądzie</th><th>W wodzie</th></tr>
+          <tr><td>tlen</td><td>dużo tlenu w powietrzu</td><td>mniej tlenu – rozpuszczony w wodzie</td></tr>
+          <tr><td>ruch</td><td>powietrze stawia mały opór, ale nie podtrzymuje ciała</td><td>woda stawia duży opór, ale podtrzymuje ciało</td></tr>
+          <tr><td>temperatura</td><td>duże zmiany (dzień i noc, lato i zima)</td><td>zmienia się wolniej i mniej</td></tr>
+          <tr><td>woda</td><td>łatwo wyschnąć, wody bywa mało</td><td>woda dookoła</td></tr>
+          <tr><td>światło</td><td>dociera łatwo</td><td>im głębiej, tym ciemniej</td></tr>
+        </table>
+        <h3>Przystosowania do życia na lądzie</h3>
+        <ul>
+          <li><b>Ochrona przed wysychaniem</b>: łuski (jaszczurki, węże), pancerz (chrząszcze, żółwie), u roślin – wąskie liście lub igły (sosna).</li>
+          <li><b>Oddychanie powietrzem</b>: płuca (ssaki, ptaki, gady), dżdżownica oddycha całą powierzchnią wilgotnej skóry.</li>
+          <li><b>Podpora ciała</b>: mocny szkielet i mięśnie, kończyny; u roślin – sztywna łodyga lub pień.</li>
+          <li><b>Sposoby poruszania się</b>: chodzenie (kroczenie), bieg (sarna), skoki (zając, konik polny), pełzanie (ślimak, wąż), lot (ptaki, owady).</li>
+          <li><b>Ochrona przed zmianami temperatury</b>: futro, pióra, gruba kora.</li>
+        </ul>
+        <h3>Przystosowania do życia w wodzie</h3>
+        <ul>
+          <li><b>Skrzela</b> – pobierają tlen rozpuszczony w wodzie (ryby, kijanki).</li>
+          <li><b>Opływowy kształt</b> ciała – łatwiej pokonać opór wody.</li>
+          <li><b>Płetwy</b> u ryb, błona pławna między palcami (kaczka, żaba).</li>
+          <li><b>Śluz</b> na skórze ryb – ułatwia ślizganie się w wodzie.</li>
+          <li>Rośliny wodne mają <b>wiotkie łodygi</b> – woda je podtrzymuje.</li>
+        </ul>
+        <p><b>Płazy</b> (żaba, traszka) to zwierzęta wodno-lądowe: kijanki żyją w wodzie i oddychają skrzelami, a dorosłe oddychają płucami i skórą – mogą żyć na lądzie i w wodzie.</p>
+        <h3>Pole uprawne</h3>
+        <p><b>Pole uprawne</b> to <b>ekosystem sztuczny</b> – stworzył go człowiek. Rolnik orze, sieje, nawozi i zbiera plony. Zwykle rośnie tam jeden gatunek rośliny. Gdy człowiek przestaje dbać o pole, zarasta ono dzikimi roślinami.</p>
+        <table>
+          <tr><th>Grupa</th><th>Rośliny uprawiane w Polsce</th><th>Co z nich mamy?</th></tr>
+          <tr><td><b>zboża</b> (najwięcej pól – ok. dwóch trzecich)</td><td>pszenica, żyto, jęczmień, owies, pszenżyto, kukurydza</td><td>mąka i chleb, kasze (np. manna z pszenicy, pęczak z jęczmienia), płatki owsiane, pasza dla zwierząt</td></tr>
+          <tr><td>roślina oleista</td><td><b>rzepak</b> (żółte pola wiosną)</td><td>olej rzepakowy</td></tr>
+          <tr><td>roślina cukrodajna</td><td><b>burak cukrowy</b></td><td>cukier</td></tr>
+          <tr><td>okopowe</td><td><b>ziemniaki</b>, buraki</td><td>pożywienie, pasza</td></tr>
+          <tr><td>warzywa</td><td>kapusta, marchew, cebula, ogórki</td><td>pożywienie</td></tr>
+        </table>
+        <p><b>Pszenżyto</b> to zboże powstałe ze skrzyżowania pszenicy z żytem. Rolnicy prowadzą też <b>chów zwierząt</b> (krowy, świnie, kury) – dla mleka, mięsa i jaj; część upraw to pasza dla tych zwierząt.</p>
+      `,
+      flashcards: [
+        ['Ląd a woda – tlen', 'Na lądzie więcej tlenu; w wodzie mniej – rozpuszczony w wodzie'],
+        ['Ląd a woda – ruch', 'Powietrze – mały opór; woda – duży opór, ale podtrzymuje ciało'],
+        ['Ochrona przed wysychaniem', 'Łuski, pancerz; u roślin igły i wąskie liście'],
+        ['Sposoby poruszania się na lądzie', 'Chodzenie, bieg, skoki, pełzanie, lot'],
+        ['Skrzela', 'Narząd pobierający tlen rozpuszczony w wodzie (ryby, kijanki)'],
+        ['Opływowy kształt', 'Kształt ciała ułatwiający pokonywanie oporu wody'],
+        ['Płazy', 'Zwierzęta wodno-lądowe: kijanki w wodzie (skrzela), dorosłe oddychają płucami i skórą'],
+        ['Pole uprawne', 'Ekosystem sztuczny stworzony i utrzymywany przez człowieka'],
+        ['Zboża uprawiane w Polsce', 'Pszenica, żyto, jęczmień, owies, pszenżyto, kukurydza'],
+        ['Rzepak', 'Główna roślina oleista w Polsce – daje olej'],
+        ['Burak cukrowy', 'Roślina, z której w Polsce robi się cukier'],
+        ['Pszenżyto', 'Zboże ze skrzyżowania pszenicy z żytem'],
+      ],
+      questions: [
+        { id: 'er02um', q: 'Gdzie jest więcej tlenu dostępnego dla organizmów?', options: ['w powietrzu na lądzie', 'w wodzie', 'tyle samo', 'tlenu nie ma ani tu, ani tu'], answer: 0, explain: 'W wodzie jest mniej tlenu niż w powietrzu – zwierzęta wodne pobierają tlen rozpuszczony w wodzie.' },
+        { id: '3xbhkd', q: 'Gdzie temperatura zmienia się bardziej w ciągu doby i roku?', options: ['na lądzie', 'w głębokim jeziorze', 'w morzu', 'nigdzie się nie zmienia'], answer: 0, explain: 'Woda nagrzewa się i stygnie wolno, więc w wodzie zmiany są mniejsze.' },
+        { id: '7kzkim', q: 'Które przystosowanie chroni zwierzę lądowe przed wysychaniem?', options: ['łuski na skórze jaszczurki', 'skrzela ryby', 'płetwy', 'śluz na rybie w wodzie'], answer: 0, explain: 'Łuski i pancerze ograniczają utratę wody na lądzie. Skrzela i płetwy to przystosowania do wody.' },
+        { id: 'mopra9', q: 'Dlaczego sosna ma igły zamiast szerokich liści?', options: ['igły ograniczają utratę wody', 'igły są cięższe', 'sosna nie potrzebuje światła', 'igły przyciągają owady'], answer: 0, explain: 'Igły mają małą powierzchnię – roślina traci przez nie mniej wody.' },
+        { id: '2sukvl', q: 'Jak oddycha dżdżownica?', options: ['całą powierzchnią wilgotnej skóry', 'skrzelami', 'płucami jak człowiek', 'nie oddycha'], answer: 0, explain: 'Dżdżownica oddycha przez skórę, dlatego musi żyć w wilgotnej glebie.' },
+        { id: 'n3ibb1', q: 'Które zwierzę porusza się głównie skokami?', options: ['zając', 'ślimak', 'wąż', 'dżdżownica'], answer: 0, explain: 'Zając skacze. Ślimak, wąż i dżdżownica pełzają.' },
+        { id: 'shy1ec', q: 'Czym ryba pobiera tlen?', options: ['skrzelami', 'płucami', 'płetwami', 'łuskami'], answer: 0, explain: 'Skrzela pobierają tlen rozpuszczony w wodzie.' },
+        { id: 'twdvb7', q: 'Do czego rybie służy opływowy kształt ciała?', options: ['łatwiej pokonuje opór wody', 'lepiej widzi', 'łatwiej oddycha powietrzem', 'jest cięższa'], answer: 0, explain: 'Wąskie na końcach, „wrzecionowate” ciało łatwo przecina wodę.' },
+        { id: 'cl4fsq', q: 'Które przystosowanie pomaga kaczce pływać?', options: ['błona pławna między palcami', 'pancerz', 'igły', 'skrzela'], answer: 0, explain: 'Błona między palcami działa jak wiosło.' },
+        { id: 'slqtob', q: 'Dlaczego rośliny wodne mają wiotkie łodygi?', options: ['woda podtrzymuje ich ciało', 'nie potrzebują światła', 'żeby szybciej wysychały', 'bo rosną w piasku'], answer: 0, explain: 'Woda unosi rośliny, więc nie potrzebują sztywnej łodygi jak rośliny lądowe.' },
+        { id: 'autfoc', q: 'Które zwierzę jest wodno-lądowe (płaz)?', options: ['żaba', 'karp', 'sarna', 'bocian'], answer: 0, explain: 'Kijanki żaby żyją w wodzie i oddychają skrzelami, a dorosłe żaby mogą żyć na lądzie i w wodzie.' },
+        { id: '8tyjkg', q: 'Dlaczego pole uprawne to ekosystem sztuczny?', options: ['stworzył je człowiek i musi o nie dbać', 'nie ma na nim żadnych organizmów', 'jest zrobione z plastiku', 'powstało bez udziału człowieka'], answer: 0, explain: 'Rolnik orze, sieje i zbiera plony. Bez opieki pole zarasta dzikimi roślinami.' },
+        { id: 'fon868', q: 'Które rośliny zajmują w Polsce najwięcej pól?', options: ['zboża', 'warzywa', 'kwiaty ozdobne', 'drzewa owocowe'], answer: 0, explain: 'Zboża rosną na około dwóch trzecich powierzchni upraw w Polsce.' },
+        { id: 'mnvg38', q: 'Która roślina NIE jest zbożem?', options: ['rzepak', 'pszenica', 'żyto', 'owies'], answer: 0, explain: 'Rzepak to roślina oleista – daje olej. Pszenica, żyto i owies to zboża.' },
+        { id: '96qyhg', q: 'Z której rośliny w Polsce robi się cukier?', options: ['z buraka cukrowego', 'z rzepaku', 'z owsa', 'z ziemniaków'], answer: 0, explain: 'Burak cukrowy to u nas roślina cukrodajna.' },
+        { id: 'phw2vl', q: 'Co otrzymujemy z rzepaku?', options: ['olej', 'mąkę', 'cukier', 'kaszę'], answer: 0, explain: 'Rzepak to najważniejsza roślina oleista w Polsce. Wiosną jego pola są żółte.' },
+        { id: 'fzil8a', q: 'Z którego zboża robi się płatki owsiane?', options: ['z owsa', 'z żyta', 'z kukurydzy', 'z rzepaku'], answer: 0, explain: 'Nazwa podpowiada: płatki owsiane – z owsa.' },
+        { id: 'oic2yq', q: 'Czym jest pszenżyto?', options: ['zbożem ze skrzyżowania pszenicy z żytem', 'rodzajem chleba', 'chorobą zbóż', 'rośliną oleistą'], answer: 0, explain: 'Pszen-żyto: pszenica + żyto.' },
+        { id: 'hnimkz', q: 'Prawda czy fałsz?\nW wodzie jest więcej tlenu niż w powietrzu.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'W wodzie jest mniej tlenu. Dlatego ryby mają skrzela, które dobrze go wyłapują.' },
       ],
     },
 

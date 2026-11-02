@@ -2575,3 +2575,200 @@ window.LESSONS['przyroda/materia'] = [
     check: { q: 'Prawda czy fałsz? W ciele stałym drobiny w ogóle się nie ruszają.', options: ['Prawda', 'Fałsz'], answer: 1, explain: 'Drgają w swoich miejscach – ruszają się, ale się nie przesuwają.' },
   },
 ];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/chmury-upal-mroz'] = [
+  {
+    title: 'Wiatr – powietrze w ruchu',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Powietrze płynie z miejsca, gdzie mocniej naciska, do miejsca, gdzie naciska słabiej – to wiatr. Tasiemka na kiju odchyla się w stronę, w którą wieje wiatr; wiatr nazywamy od strony, z której wieje">
+      <defs><marker id="a-p12-wi-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="20" width="110" height="70" rx="12" class="f2 s2"/>
+      <text x="65" y="50" class="tx-s" text-anchor="middle">powietrze</text>
+      <text x="65" y="70" class="tx-s" text-anchor="middle">naciska mocniej</text>
+      <rect x="280" y="20" width="110" height="70" rx="12" class="f1 s1"/>
+      <text x="335" y="50" class="tx-s" text-anchor="middle">powietrze</text>
+      <text x="335" y="70" class="tx-s" text-anchor="middle">naciska słabiej</text>
+      <g class="ln sw"><path d="M130,40 L268,40" marker-end="url(#a-p12-wi-1)"/><path d="M130,70 L268,70" marker-end="url(#a-p12-wi-1)"/></g>
+      <text x="200" y="60" class="tx-b" text-anchor="middle">💨 wiatr</text>
+      <line x1="80" y1="190" x2="80" y2="120" class="ln sw"/>
+      <path d="M80,122 Q110,118 135,128 Q115,130 80,134 Z" class="f4 s4"/>
+      <text x="150" y="140" class="tx-s">tasiemka pokazuje, dokąd wieje</text>
+      <text x="150" y="166" class="tx-s">wiatr zachodni → wieje z zachodu</text>
+      <text x="150" y="188" class="tx-s">siłę mierzy wiatromierz</text>
+    </svg>`,
+    text: `<p><b>Wiatr</b> to poziomy ruch powietrza. Powietrze płynie z miejsc, gdzie mocniej naciska, tam, gdzie naciska słabiej. Im większa różnica, tym silniej wieje.</p>
+      <p>Wiatr nazywamy od strony, <b>z której wieje</b>. Kierunek pokaże wiatrowskaz albo tasiemka na kiju, a siłę zmierzy <b>wiatromierz</b>.</p>`,
+    remember: 'Wiatr – powietrze w ruchu. Nazwa wiatru = skąd wieje.',
+    hook: 'Wiatr jest jak tłum wychodzący z zatłoczonej sali na pusty korytarz.',
+    check: { q: 'Wiatr wieje z północy. Jak go nazwiesz?', options: ['południowy', 'północny', 'wschodni'], answer: 1, explain: 'Nazwa mówi, skąd wieje: z północy – północny.' },
+  },
+  {
+    title: 'Skąd się biorą chmury?',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Ciepłe, wilgotne powietrze unosi się znad ziemi do góry, tam się ochładza, para wodna skrapla się w kropelki i powstaje chmura. Wyżej, w mrozie, powstają kryształki lodu">
+      <defs><marker id="a-p12-wi-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="180" width="380" height="20" class="f3 s3"/>
+      <text x="80" y="172" class="tx-s" text-anchor="middle">☀️ ziemia się nagrzewa</text>
+      <g class="ln sw"><path d="M120,165 L150,95" marker-end="url(#a-p12-wi-2)"/><path d="M160,165 L175,95" marker-end="url(#a-p12-wi-2)"/></g>
+      <ellipse cx="200" cy="70" rx="80" ry="30" class="f1 s1 sw"/>
+      <ellipse cx="160" cy="58" rx="40" ry="24" class="f1 s1"/>
+      <ellipse cx="235" cy="56" rx="38" ry="22" class="f1 s1"/>
+      <g class="f1 s1"><circle cx="185" cy="78" r="3"/><circle cx="205" cy="72" r="3"/><circle cx="225" cy="80" r="3"/></g>
+      <text x="300" y="100" class="tx-s">ochładza się,</text>
+      <text x="300" y="120" class="tx-s">para wodna</text>
+      <text x="300" y="140" class="tx-s">skrapla się</text>
+      <text x="200" y="22" class="tx-s" text-anchor="middle">❄️ wysoko, w mrozie – kryształki lodu</text>
+    </svg>`,
+    text: `<p><b>Chmura</b> to ogromna ilość maleńkich <b>kropelek wody</b> lub <b>kryształków lodu</b> unoszących się w powietrzu.</p>
+      <p>Ciepłe, wilgotne powietrze unosi się do góry i tam się <b>ochładza</b>. Para wodna <b>skrapla się</b> w kropelki – i mamy chmurę. Wysoko, gdzie jest mróz, powstają kryształki lodu.</p>`,
+    remember: 'Chmura = kropelki wody lub kryształki lodu. Powstaje, gdy wilgotne powietrze unosi się i ochładza.',
+    hook: 'Chuchnij zimą na mróz – zobaczysz małą chmurkę: twoja ciepła para skrapla się w zimnym powietrzu.',
+  },
+  {
+    title: 'Trzy rodzaje chmur',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Trzy rodzaje chmur: kłębiaste – białe bałwanki, zwykle ładna pogoda; warstwowe – szara warstwa na całym niebie, długie opady; pierzaste – cienkie piórka wysoko, z kryształków lodu">
+      <rect x="10" y="10" width="120" height="190" rx="12" class="f1 s1"/>
+      <rect x="140" y="10" width="120" height="190" rx="12" class="f5 s5"/>
+      <rect x="270" y="10" width="120" height="190" rx="12" class="f4 s4"/>
+      <g class="bg ln"><ellipse cx="55" cy="70" rx="22" ry="16"/><ellipse cx="80" cy="62" rx="24" ry="20"/><ellipse cx="100" cy="72" rx="18" ry="14"/></g>
+      <line x1="35" y1="86" x2="115" y2="86" class="ln"/>
+      <rect x="150" y="55" width="100" height="26" rx="6" class="bg ln"/>
+      <g class="ln sw"><path d="M285,60 Q310,48 330,60"/><path d="M300,75 Q330,62 365,72"/><path d="M290,90 Q315,82 340,90"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="70" y="128">kłębiaste</text><text x="200" y="128">warstwowe</text><text x="330" y="128">pierzaste</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="70" y="155">zwykle ładna</text><text x="70" y="175">pogoda</text><text x="200" y="155">długie opady,</text><text x="200" y="175">mżawka</text><text x="330" y="155">wysoko, z lodu,</text><text x="330" y="175">bez opadów</text></g>
+    </svg>`,
+    text: `<p><b>Kłębiaste</b> – białe „bałwanki” z płaską podstawą, zwykle zapowiadają ładną pogodę. Gdy bardzo urosną, ściemnieją i zrobią się wysokie, może przyjść burza.</p>
+      <p><b>Warstwowe</b> – niska, szara warstwa na całym niebie: długie opady, mżawka. <b>Pierzaste</b> – cienkie „piórka” wysoko na niebie, z kryształków lodu, zwykle bez opadów.</p>`,
+    remember: 'Kłębiaste – ładnie (wysokie i ciemne – burza). Warstwowe – długo pada. Pierzaste – wysoko, z lodu.',
+    hook: 'Kłębek waty – pogoda bogata. Szara kołdra – deszcz do wieczora.',
+    check: { q: 'Niska szara warstwa chmur zakrywa niebo. Co cię czeka?', options: ['upał', 'długotrwały deszcz lub mżawka', 'burza śnieżna latem'], answer: 1, explain: 'Chmury warstwowe przynoszą długie opady.' },
+  },
+  {
+    title: 'Stałocieplne i zmiennocieplne',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Termometry: u stałocieplnych – ptaków i ssaków – temperatura ciała jest prawie stała w zimie i w lecie. U zmiennocieplnych – owadów, ryb, płazów, gadów – temperatura ciała zmienia się razem z otoczeniem">
+      <rect x="10" y="10" width="185" height="180" rx="12" class="f2 s2"/>
+      <rect x="205" y="10" width="185" height="180" rx="12" class="f1 s1"/>
+      <text x="102" y="36" class="tx-b" text-anchor="middle">stałocieplne</text>
+      <text x="102" y="60" class="tx-s" text-anchor="middle">🐦 ptaki, 🐻 ssaki</text>
+      <rect x="62" y="80" width="12" height="70" rx="6" class="bg ln"/><rect x="64" y="100" width="8" height="50" class="f2 s2"/>
+      <rect x="130" y="80" width="12" height="70" rx="6" class="bg ln"/><rect x="132" y="100" width="8" height="50" class="f2 s2"/>
+      <text x="68" y="172" class="tx-s" text-anchor="middle">❄️</text><text x="136" y="172" class="tx-s" text-anchor="middle">☀️</text>
+      <text x="297" y="36" class="tx-b" text-anchor="middle">zmiennocieplne</text>
+      <text x="297" y="60" class="tx-s" text-anchor="middle">🦎 gady, 🐸 płazy, 🐟, 🐞</text>
+      <rect x="257" y="80" width="12" height="70" rx="6" class="bg ln"/><rect x="259" y="135" width="8" height="15" class="f1 s1"/>
+      <rect x="325" y="80" width="12" height="70" rx="6" class="bg ln"/><rect x="327" y="92" width="8" height="58" class="f2 s2"/>
+      <text x="263" y="172" class="tx-s" text-anchor="middle">❄️</text><text x="331" y="172" class="tx-s" text-anchor="middle">☀️</text>
+    </svg>`,
+    text: `<p><b>Stałocieplne</b> zwierzęta – <b>ptaki i ssaki</b> (także człowiek) – mają prawie stałą temperaturę ciała, latem i zimą. Mogą być aktywne w chłodzie, ale potrzebują wtedy dużo pokarmu.</p>
+      <p><b>Zmiennocieplne</b> – większość owadów, ryby, płazy i gady – mają temperaturę ciała zależną od otoczenia. W chłodzie są powolne, dlatego jaszczurka rano wygrzewa się na kamieniu.</p>`,
+    remember: 'Stałocieplne: ptaki i ssaki. Zmiennocieplne: owady, ryby, płazy, gady.',
+    hook: 'Stałocieplny ma „kaloryfer” w środku, zmiennocieplny pożycza ciepło od słońca.',
+    check: { q: 'Które zwierzę jest zmiennocieplne?', options: ['kot', 'jaszczurka', 'sikorka'], answer: 1, explain: 'Gady są zmiennocieplne. Kot (ssak) i sikorka (ptak) są stałocieplne.' },
+  },
+  {
+    title: 'Upał i mróz – jak przetrwać?',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Upał: cień, woda, czapka; udar cieplny to wysoka temperatura ciała, gorąca czerwona skóra, ból i zawroty głowy – pomoc: cień, chłodzenie, picie, a gdy nie mija, telefon 112 lub 999. Mróz: śnieg chroni glebę i rośliny jak kołdra, zwierzęta mają gęstsze futro, śpią lub odlatują, człowiek ubiera się na cebulkę">
+      <rect x="10" y="10" width="185" height="210" rx="12" class="f2 s2"/>
+      <rect x="205" y="10" width="185" height="210" rx="12" class="f1 s1"/>
+      <text x="102" y="36" class="tx-b" text-anchor="middle">☀️ upał</text>
+      <g class="tx-s" text-anchor="middle"><text x="102" y="62">cień, woda, czapka</text><text x="102" y="92">⚠️ udar cieplny:</text><text x="102" y="112">gorąca czerwona skóra,</text><text x="102" y="132">ból i zawroty głowy</text><text x="102" y="162">pomoc: cień,</text><text x="102" y="182">chłodzenie, picie</text><text x="102" y="206">📞 112 / 999</text></g>
+      <text x="297" y="36" class="tx-b" text-anchor="middle">❄️ mróz</text>
+      <g class="tx-s" text-anchor="middle"><text x="297" y="62">śnieg = kołdra</text><text x="297" y="82">dla gleby i roślin</text><text x="297" y="112">gęste futro, pióra,</text><text x="297" y="132">sen zimowy, odlot</text><text x="297" y="162">człowiek:</text><text x="297" y="182">ubiór „na cebulkę”</text></g>
+    </svg>`,
+    text: `<p>W upale zwierzęta chowają się w cieniu i norach, a człowiek się poci i traci wodę – trzeba pić. Groźne przegrzanie to <b>udar cieplny</b>: wysoka temperatura ciała, gorąca czerwona skóra, ból i zawroty głowy, nudności. To stan zagrażający życiu. Zawołaj dorosłego, przenieście chorego w <b>cień</b>, chłodźcie go, dajcie pić. Gdy nie mija – <b>112 lub 999</b>.</p>
+      <p>Zimą <b>pokrywa śnieżna</b> działa jak kołdra – chroni glebę i rośliny przed przemarznięciem. Zwierzęta mają gęstsze futro, zapadają w sen zimowy albo odlatują.</p>`,
+    remember: 'Upał: pij, czapka, cień. Udar cieplny – chłodzenie i pomoc (112). Śnieg chroni przed mrozem.',
+    hook: 'Latem trzy „C”: cień, czapka, ciągle pij wodę.',
+    check: { q: 'Kolega w upale ma czerwoną, gorącą skórę i zawroty głowy. Co robisz?', options: ['wołam dorosłego, prowadzimy go w cień i chłodzimy', 'daję mu koc', 'każę mu biegać dalej'], answer: 0, explain: 'To może być udar cieplny – chłód, cień, picie, a gdy nie mija, 112 lub 999.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/lad-woda-pole'] = [
+  {
+    title: 'Ląd i woda – dwa światy',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Porównanie lądu i wody: na lądzie dużo tlenu, mały opór powietrza, duże zmiany temperatury, łatwo wyschnąć; w wodzie mniej tlenu, duży opór, ale woda podtrzymuje ciało, temperatura zmienia się wolniej, głębiej ciemniej">
+      <rect x="10" y="10" width="185" height="190" rx="12" class="f3 s3"/>
+      <rect x="205" y="10" width="185" height="190" rx="12" class="f1 s1"/>
+      <text x="102" y="36" class="tx-b" text-anchor="middle">🌳 ląd</text>
+      <text x="297" y="36" class="tx-b" text-anchor="middle">🌊 woda</text>
+      <g class="tx-s" text-anchor="middle">
+        <text x="102" y="66">dużo tlenu</text><text x="102" y="96">mały opór</text><text x="102" y="126">duże zmiany</text><text x="102" y="144">temperatury</text><text x="102" y="174">łatwo wyschnąć</text>
+        <text x="297" y="66">mniej tlenu</text><text x="297" y="96">duży opór, ale</text><text x="297" y="114">podtrzymuje ciało</text><text x="297" y="144">temperatura stabilna</text><text x="297" y="174">głębiej – ciemniej</text>
+      </g>
+    </svg>`,
+    text: `<p>Na <b>lądzie</b> jest dużo tlenu, powietrze stawia mały opór, ale nie podtrzymuje ciała. Temperatura bardzo się zmienia, a organizmom grozi wyschnięcie.</p>
+      <p>W <b>wodzie</b> jest mniej tlenu, a woda stawia duży opór – za to podtrzymuje ciało. Temperatura zmienia się wolniej, a im głębiej, tym ciemniej.</p>`,
+    remember: 'Ląd: tlen, wysychanie, zmiany temperatury. Woda: mniej tlenu, opór, podtrzymywanie ciała.',
+    hook: 'Spróbuj biec w basenie – od razu poczujesz, że woda stawia opór.',
+    check: { q: 'Gdzie jest mniej tlenu?', options: ['w powietrzu', 'w wodzie', 'tyle samo'], answer: 1, explain: 'W wodzie jest mniej tlenu, dlatego ryby mają skrzela, które dobrze go wyłapują.' },
+  },
+  {
+    title: 'Przystosowani do lądu',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Przystosowania do lądu: łuski i pancerz chronią przed wysychaniem, płuca do oddychania powietrzem, mocny szkielet i kończyny, ruch: chodzenie, bieg, skoki, pełzanie, lot; u roślin igły i sztywny pień">
+      <g class="f3 s3"><rect x="10" y="10" width="185" height="56" rx="10"/><rect x="205" y="10" width="185" height="56" rx="10"/><rect x="10" y="76" width="185" height="56" rx="10"/><rect x="205" y="76" width="185" height="56" rx="10"/></g>
+      <g class="tx-s" text-anchor="middle"><text x="102" y="34">🦎 łuski, 🐢 pancerz</text><text x="102" y="54">– chronią przed wyschnięciem</text>
+      <text x="297" y="34">🫁 płuca</text><text x="297" y="54">– oddychanie powietrzem</text>
+      <text x="102" y="100">🦴 szkielet, kończyny</text><text x="102" y="120">– podpora ciała</text>
+      <text x="297" y="100">🌲 igły, sztywny pień</text><text x="297" y="120">– u roślin</text></g>
+      <rect x="10" y="142" width="380" height="50" rx="10" class="f4 s4"/>
+      <text x="200" y="173" class="tx-s" text-anchor="middle">ruch: 🚶 chodzenie · 🦌 bieg · 🐇 skoki · 🐌 pełzanie · 🐦 lot</text>
+    </svg>`,
+    text: `<p>Na lądzie łatwo wyschnąć, dlatego jaszczurki mają <b>łuski</b>, a chrząszcze i żółwie – <b>pancerz</b>. Sosna ma <b>igły</b>, które tracą mało wody. Zwierzęta lądowe oddychają <b>płucami</b> (dżdżownica – wilgotną skórą).</p>
+      <p>Powietrze nie podtrzymuje ciała, więc potrzebny jest mocny <b>szkielet</b>, mięśnie i kończyny. Zwierzęta chodzą, biegają, skaczą, pełzają albo latają.</p>`,
+    remember: 'Ląd: ochrona przed wysychaniem, płuca, mocny szkielet, różne sposoby ruchu.',
+    hook: 'Łuska jaszczurki to jak kurtka przeciwdeszczowa na odwrót – trzyma wodę w środku.',
+  },
+  {
+    title: 'Przystosowani do wody',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Ryba z oznaczeniami: opływowy kształt ciała, skrzela pobierające tlen z wody, płetwy, śluz na skórze. Obok: kaczka z błoną pławną i roślina wodna z wiotką łodygą">
+      <path d="M40,95 Q110,40 190,90 L230,60 L222,95 L230,130 L190,100 Q110,150 40,95 Z" class="f1 s1 sw"/>
+      <circle cx="70" cy="88" r="5" class="bg ln"/>
+      <path d="M95,80 Q100,95 95,110" class="ln sw s2"/>
+      <path d="M120,70 L140,52 L150,72" class="f1 s1"/>
+      <g class="ln-thin"><line x1="98" y1="112" x2="98" y2="150"/><line x1="145" y1="58" x2="170" y2="25"/><line x1="40" y1="95" x2="20" y2="130"/></g>
+      <g class="tx-s"><text x="80" y="165">skrzela</text><text x="160" y="20">płetwy</text><text x="10" y="148">opływowy</text><text x="10" y="166">kształt</text></g>
+      <text x="300" y="60" class="tx-s" text-anchor="middle">🦆 błona pławna</text>
+      <text x="300" y="100" class="tx-s" text-anchor="middle">🌿 wiotka łodyga</text>
+      <text x="300" y="140" class="tx-s" text-anchor="middle">🐸 kijanka: skrzela</text>
+      <text x="300" y="175" class="tx-s" text-anchor="middle">śluz – łatwy poślizg</text>
+    </svg>`,
+    text: `<p>Ryby pobierają tlen rozpuszczony w wodzie <b>skrzelami</b>. <b>Opływowy kształt</b> ciała i <b>płetwy</b> pomagają pokonać opór wody, a <b>śluz</b> na skórze ułatwia ślizganie się. Kaczka ma <b>błonę pławną</b> między palcami. Rośliny wodne mają wiotkie łodygi – woda je podtrzymuje.</p>
+      <p><b>Płazy</b> są wodno-lądowe: kijanki żyją w wodzie i oddychają skrzelami, a dorosłe żaby oddychają płucami i skórą.</p>`,
+    remember: 'Woda: skrzela, opływowy kształt, płetwy, śluz, błona pławna.',
+    hook: 'Ryba jest zbudowana jak łódź podwodna: wąska z przodu, gładka, ze sterami.',
+    check: { q: 'Czym ryba pobiera tlen?', options: ['płucami', 'skrzelami', 'płetwami'], answer: 1, explain: 'Skrzela pobierają tlen rozpuszczony w wodzie.' },
+  },
+  {
+    title: 'Pole – ekosystem człowieka',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Pole uprawne to ekosystem sztuczny. Rolnik orze, sieje, nawozi i zbiera plony. Bez opieki pole zarasta dzikimi roślinami">
+      <defs><marker id="a-p12-pl-4" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <g class="f4 s4"><rect x="10" y="20" width="80" height="60" rx="8"/><rect x="110" y="20" width="80" height="60" rx="8"/><rect x="210" y="20" width="80" height="60" rx="8"/><rect x="310" y="20" width="80" height="60" rx="8"/></g>
+      <g class="tx-s" text-anchor="middle"><text x="50" y="45">🚜</text><text x="50" y="68">orka</text><text x="150" y="45">🌱</text><text x="150" y="68">siew</text><text x="250" y="45">💧</text><text x="250" y="68">nawożenie</text><text x="350" y="45">🌾</text><text x="350" y="68">zbiór</text></g>
+      <g class="ln"><path d="M92,50 L106,50" marker-end="url(#a-p12-pl-4)"/><path d="M192,50 L206,50" marker-end="url(#a-p12-pl-4)"/><path d="M292,50 L306,50" marker-end="url(#a-p12-pl-4)"/></g>
+      <rect x="10" y="110" width="380" height="80" rx="12" class="f3 s3"/>
+      <text x="200" y="138" class="tx-b" text-anchor="middle">ekosystem sztuczny</text>
+      <text x="200" y="162" class="tx-s" text-anchor="middle">zwykle jeden gatunek rośliny;</text>
+      <text x="200" y="180" class="tx-s" text-anchor="middle">bez opieki zarasta dzikimi roślinami</text>
+    </svg>`,
+    text: `<p><b>Pole uprawne</b> to <b>ekosystem sztuczny</b> – stworzył go człowiek. Rolnik orze ziemię, sieje, nawozi i zbiera plony. Zwykle rośnie tam jeden gatunek rośliny.</p>
+      <p>Gdy człowiek przestaje dbać o pole, zarasta ono dzikimi roślinami. Rolnicy prowadzą też chów zwierząt (krowy, świnie, kury), a część plonów to pasza dla nich.</p>`,
+    remember: 'Pole – ekosystem sztuczny; bez człowieka zarasta.',
+    hook: 'Pole jest jak ogródek – bez ogrodnika szybko zmienia się w dziką łąkę.',
+  },
+  {
+    title: 'Co rośnie na polskich polach?',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Rośliny uprawne w Polsce: zboża na około dwóch trzecich pól – pszenica, żyto, jęczmień, owies, pszenżyto, kukurydza – dają mąkę, kasze, płatki; rzepak daje olej; burak cukrowy daje cukier; ziemniaki">
+      <rect x="10" y="10" width="380" height="90" rx="12" class="f4 s4 sw"/>
+      <text x="200" y="36" class="tx-b" text-anchor="middle">🌾 zboża – ok. 2/3 pól</text>
+      <text x="200" y="62" class="tx-s" text-anchor="middle">pszenica, żyto, jęczmień, owies, pszenżyto, kukurydza</text>
+      <text x="200" y="84" class="tx-s" text-anchor="middle">→ mąka, chleb, kasze, płatki, pasza</text>
+      <g class="f3 s3"><rect x="10" y="112" width="120" height="98" rx="10"/><rect x="140" y="112" width="120" height="98" rx="10"/><rect x="270" y="112" width="120" height="98" rx="10"/></g>
+      <g class="tx-s" text-anchor="middle"><text x="70" y="140">🌼 rzepak</text><text x="70" y="166">→ olej</text><text x="200" y="140">burak cukrowy</text><text x="200" y="166">→ cukier</text><text x="330" y="140">🥔 ziemniaki</text><text x="330" y="166">→ jedzenie,</text><text x="330" y="186">pasza</text></g>
+    </svg>`,
+    text: `<p>Najwięcej pól – około dwóch trzecich – zajmują <b>zboża</b>: pszenica, żyto, jęczmień, owies, pszenżyto (skrzyżowanie pszenicy z żytem) i kukurydza. Dają mąkę, chleb, kasze, płatki i paszę dla zwierząt.</p>
+      <p><b>Rzepak</b> (żółte pola wiosną) daje olej, <b>burak cukrowy</b> – cukier, a ważne są też <b>ziemniaki</b> i warzywa.</p>`,
+    remember: 'Zboża (najwięcej pól), rzepak – olej, burak cukrowy – cukier, ziemniaki.',
+    hook: 'Śniadanie z pola: chleb (pszenica, żyto), płatki (owies), cukier (burak), olej (rzepak).',
+    check: { q: 'Z czego robi się w Polsce cukier?', options: ['z rzepaku', 'z buraka cukrowego', 'z owsa'], answer: 1, explain: 'Burak cukrowy to roślina cukrodajna. Rzepak daje olej, owies – płatki.' },
+  },
+];
