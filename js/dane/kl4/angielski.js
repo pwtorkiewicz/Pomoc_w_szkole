@@ -201,7 +201,7 @@ window.SUBJECTS.push({
       id: 'wyglad-i-cechy',
       name: 'Wygląd, charakter, uczucia, „have got” i „can”',
       chapter: 'Unit 2, Unit 4, Unit 5',
-      basis: 'Dz.U. 2026 poz. 378, język obcy nowożytny, poziom A1: wym. 1 temat 1 „człowiek” (wygląd zewnętrzny, cechy charakteru, uczucia i emocje, umiejętności); wym. 4.1 (opisuje ludzi), 4.7 (wyraża uczucia i emocje), 6.13 (wyraża uczucia i emocje w rozmowie). Konstrukcje „have got” i „can” – wybór redakcyjny (podstawa nie wymienia struktur gramatycznych dla poziomu A1).',
+      basis: 'Dz.U. 2026 poz. 378, język obcy nowożytny, poziom A1: wym. 1 temat 1 „człowiek” (wygląd zewnętrzny, cechy charakteru, uczucia i emocje, umiejętności); wym. 4.1 (opisuje ludzi), 4.7 (wyraża uczucia i emocje), 6.13 (wyraża uczucia i emocje w rozmowie). Konstrukcje „have got”, „can” i przysłówki sposobu (Unit 5) – wybór redakcyjny (podstawa nie wymienia struktur gramatycznych dla poziomu A1).',
       theory: `
         <h3>Wygląd</h3>
         <table>
@@ -248,6 +248,22 @@ window.SUBJECTS.push({
           <li>Pytanie: <b>Can</b> you dance? – Yes, I can. / No, I can't.</li>
         </ul>
         <div class="tip">💡 „Can” jest takie samo dla wszystkich osób – <b>bez -s</b>: <i>he can</i>, nie „he cans”. A czasownik po nim jest w podstawowej formie: <i>can swim</i>, nie „can swims”.</div>
+        <h3>Jak? – przysłówki sposobu</h3>
+        <p>Przysłówek mówi, <b>jak</b> ktoś coś robi: <i>She sings <b>beautifully</b>.</i> – Ona pięknie śpiewa. <i>I can swim <b>fast</b>.</i> – Umiem szybko pływać. Stawiamy go zwykle <b>za czasownikiem</b> (albo na końcu zdania).</p>
+        <table>
+          <tr><th>Przymiotnik (jaki?)</th><th>Przysłówek (jak?)</th></tr>
+          <tr><td>slow – wolny</td><td>slow<b>ly</b> – wolno</td></tr>
+          <tr><td>quick – szybki</td><td>quick<b>ly</b> – szybko</td></tr>
+          <tr><td>quiet / loud – cichy / głośny</td><td>quiet<b>ly</b> / loud<b>ly</b> – cicho / głośno</td></tr>
+          <tr><td>careful – ostrożny</td><td>careful<b>ly</b> – ostrożnie</td></tr>
+          <tr><td>beautiful – piękny</td><td>beautiful<b>ly</b> – pięknie</td></tr>
+          <tr><td>easy – łatwy</td><td>eas<b>ily</b> – łatwo (-y → -ily)</td></tr>
+          <tr><td>happy – wesoły</td><td>happ<b>ily</b> – wesoło</td></tr>
+          <tr><td><b>good</b> – dobry</td><td><b>well</b> – dobrze</td></tr>
+          <tr><td><b>fast</b> – szybki</td><td><b>fast</b> – szybko</td></tr>
+          <tr><td><b>hard</b> – ciężki, pracowity</td><td><b>hard</b> – ciężko, pilnie</td></tr>
+        </table>
+        <div class="tip">💡 Przymiotnik opisuje osobę lub rzecz: <i>Tom is a <b>good</b> swimmer.</i> Przysłówek opisuje czynność: <i>Tom swims <b>well</b>.</i> Nie ma słowa „goodly” ani „fastly”!</div>
       `,
       flashcards: [
         ['tall / short', 'wysoki / niski (short to też „krótki”)'],
@@ -262,6 +278,8 @@ window.SUBJECTS.push({
         ['Have you got…? – krótkie odpowiedzi', 'Yes, I have. / No, I haven\'t.'],
         ['can / can\'t', 'umiem / nie umiem – dla wszystkich osób tak samo, bez -s'],
         ['Can you swim? – krótkie odpowiedzi', 'Yes, I can. / No, I can\'t.'],
+        ['slow → slowly, quiet → quietly, easy → easily', 'przysłówki sposobu: jak ktoś coś robi'],
+        ['good → ? · fast → ? · hard → ?', 'well · fast · hard (wyjątki)'],
       ],
       questions: [
         { id: '6sk212', q: 'Uzupełnij: „She ___ got blue eyes.”', options: ['has', 'have', 'is', 'are'], answer: 0, explain: 'Z „he”, „she”, „it” mówimy „has got”: She has got (She\'s got) blue eyes.' },
@@ -278,7 +296,103 @@ window.SUBJECTS.push({
         { id: 'gm7in7', q: 'Które zdanie brzmi poprawnie?', options: ['She\'s got long dark hair.', 'She\'s got hair long dark.', 'She\'s got long hair dark.', 'She\'s got dark hair long.'], answer: 0, explain: 'Określenia stoją przed słowem „hair”: najpierw długość (long), potem kolor (dark).' },
         { id: 'byzhh4', q: 'Co znaczy słowo „shy”?', options: ['nieśmiały', 'odważny', 'leniwy', 'miły'], answer: 0, explain: '„Shy” to nieśmiały. Odważny to „brave”, leniwy – „lazy”, miły – „kind”.' },
         { id: 'e2af9w', q: 'Prawda czy fałsz?\nW zdaniu „He\'s got a cat.” skrót „He\'s” znaczy „He has”.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Po „He\'s” stoi „got”, więc to „He has got a cat” – On ma kota.' },
+        { id: 'xe9dbt', q: 'Uzupełnij: „Ola is a fast runner. She runs ___.”', options: ['fast', 'fastly', 'slow', 'good'], answer: 0, explain: '„Fast” jest wyjątkiem – przysłówek ma tę samą formę: She runs fast. Słowa „fastly” nie ma.' },
+        { id: 'fdz7wc', q: 'Uzupełnij: „Tom is a good singer. He sings ___.”', options: ['well', 'good', 'goodly', 'bad'], answer: 0, explain: 'Przysłówek od „good” to „well”: He sings well – śpiewa dobrze.' },
+        { id: 'p27gsa', q: 'Jak utworzyć przysłówek od „quiet” (cichy)?', options: ['quietly', 'quiety', 'quietily', 'quietlly'], answer: 0, explain: 'Do przymiotnika dodajemy -ly: quiet → quietly (cicho).' },
+        { id: 'xaoraj', q: 'Uzupełnij: „Please speak ___. The baby is sleeping.”', options: ['quietly', 'quiet', 'loudly', 'quick'], answer: 0, explain: 'Dziecko śpi, więc mówimy cicho – „quietly”. Po czasowniku „speak” potrzebny jest przysłówek.' },
+        { id: 'kmhtbv', q: 'Co znaczy zdanie „She can swim very well”?', options: ['Ona umie bardzo dobrze pływać.', 'Ona umie bardzo szybko pływać.', 'Ona bardzo lubi pływać.', 'Ona nie umie pływać.'], answer: 0, explain: '„Well” to „dobrze”, „very well” – bardzo dobrze. „Szybko” to „fast”.' },
+        { id: '9rnd9a', q: 'Jak utworzyć przysłówek od „easy” (łatwy)?', options: ['easily', 'easyly', 'easly', 'easy'], answer: 0, explain: 'Gdy przymiotnik kończy się na -y, zmieniamy je na -ily: easy → easily (łatwo).' },
         { id: 'jg0s9u', q: 'Prawda czy fałsz?\nZdanie „She cans swim.” jest poprawne.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: '„Can” nie dostaje końcówki -s. Poprawnie: „She can swim.”' },
+      ],
+    },
+    {
+      id: 'kraje-i-pytania',
+      name: 'Kraje i narodowości, pytania z „wh-”',
+      chapter: 'Unit 2',
+      basis: 'Dz.U. 2026 poz. 378, język obcy nowożytny, poziom A1: wym. 1 temat 1 „człowiek” (dane personalne – skąd pochodzę); wym. 6.1 (przedstawia siebie i inne osoby), 6.3 i 7.3 (uzyskuje i przekazuje informacje); wym. 10.1 i 10.5 (wiedza o krajach, w których mówi się po angielsku, ciekawość innych kultur). Nazwy krajów i pytania z „wh-” – wybór redakcyjny według podręcznika (podstawa nie wymienia struktur gramatycznych dla poziomu A1).',
+      theory: `
+        <h3>Skąd jesteś?</h3>
+        <ul>
+          <li><b>Where are you from?</b> – Skąd jesteś? → <i>I'm from Poland. I'm Polish.</i></li>
+          <li><b>Where is he from?</b> – Skąd on jest? → <i>He's from Spain. He's Spanish.</i></li>
+          <li><b>Where are they from?</b> → <i>They're from the USA. They're American.</i></li>
+        </ul>
+        <h3>Kraje i narodowości</h3>
+        <table>
+          <tr><th>Kraj</th><th>Narodowość</th><th>Po polsku</th></tr>
+          <tr><td>Poland</td><td>Polish</td><td>Polska – polski, Polak / Polka</td></tr>
+          <tr><td>the UK</td><td>British</td><td>Wielka Brytania – brytyjski</td></tr>
+          <tr><td>England</td><td>English</td><td>Anglia – angielski</td></tr>
+          <tr><td>Ireland</td><td>Irish</td><td>Irlandia – irlandzki</td></tr>
+          <tr><td>the USA</td><td>American</td><td>Stany Zjednoczone – amerykański</td></tr>
+          <tr><td>Canada</td><td>Canadian</td><td>Kanada – kanadyjski</td></tr>
+          <tr><td>Australia</td><td>Australian</td><td>Australia – australijski</td></tr>
+          <tr><td>Germany</td><td>German</td><td>Niemcy – niemiecki</td></tr>
+          <tr><td>France</td><td>French</td><td>Francja – francuski</td></tr>
+          <tr><td>Spain</td><td>Spanish</td><td>Hiszpania – hiszpański</td></tr>
+          <tr><td>Italy</td><td>Italian</td><td>Włochy – włoski</td></tr>
+          <tr><td>China</td><td>Chinese</td><td>Chiny – chiński</td></tr>
+          <tr><td>Japan</td><td>Japanese</td><td>Japonia – japoński</td></tr>
+        </table>
+        <div class="tip">💡 Kraje, narodowości i języki piszemy po angielsku <b>wielką literą</b>: <i>I'm <b>P</b>olish. I speak <b>P</b>olish and <b>E</b>nglish.</i> Nazwa języka często brzmi tak samo jak narodowość: English, Polish, French, Spanish, German.</div>
+        <p>Przed nazwą kraju zwykle nie ma „the”: <i>from Poland, from Spain</i>. Wyjątki to nazwy skrócone: <b>the UK</b>, <b>the USA</b>.</p>
+        <h3>Kraje, w których mówi się po angielsku</h3>
+        <p>Po angielsku mówi się m.in. w Wielkiej Brytanii, Irlandii, Stanach Zjednoczonych, Kanadzie i Australii.</p>
+        <ul>
+          <li><b>The UK</b> (Wielka Brytania) ma cztery części: <b>England</b> (Anglia), <b>Scotland</b> (Szkocja), <b>Wales</b> (Walia) i <b>Northern Ireland</b> (Irlandia Północna). Stolica: <b>London</b>.</li>
+          <li><b>Ireland</b> (Irlandia) to osobne państwo. Stolica: <b>Dublin</b>.</li>
+          <li>Stolica <b>the USA</b>: <b>Washington</b>.</li>
+        </ul>
+        <div class="tip">💡 Nie każdy Brytyjczyk to Anglik! Ktoś ze Szkocji jest <i>British</i> i <i>Scottish</i>, ale nie <i>English</i>.</div>
+        <h3>Pytania z „wh-”</h3>
+        <table>
+          <tr><th>Słowo pytające</th><th>Po polsku</th><th>Przykład</th></tr>
+          <tr><td><b>What</b></td><td>co? jaki?</td><td>What's your name?</td></tr>
+          <tr><td><b>Where</b></td><td>gdzie?</td><td>Where is my bag?</td></tr>
+          <tr><td><b>Who</b></td><td>kto?</td><td>Who is that girl?</td></tr>
+          <tr><td><b>When</b></td><td>kiedy?</td><td>When is your birthday?</td></tr>
+          <tr><td><b>Why</b></td><td>dlaczego?</td><td>Why are you sad? – <i>Because</i>… (ponieważ…)</td></tr>
+          <tr><td><b>How</b></td><td>jak?</td><td>How are you?</td></tr>
+          <tr><td><b>How old</b></td><td>ile lat?</td><td>How old is your brother?</td></tr>
+          <tr><td><b>How many</b></td><td>ile? (sztuk)</td><td>How many pets have you got?</td></tr>
+          <tr><td><b>What colour</b></td><td>jakiego koloru?</td><td>What colour is your bike?</td></tr>
+          <tr><td><b>What time</b></td><td>o której? która godzina?</td><td>What time is it?</td></tr>
+        </table>
+        <p><b>Szyk pytania</b>: słowo pytające → <b>is / are</b> → osoba: <i>Where <b>are you</b> from?</i> Z innymi czasownikami: słowo pytające → <b>do / does</b> → osoba → czasownik: <i>Where <b>do you live</b>?</i> (Gdzie mieszkasz?), <i>What <b>does she like</b>?</i></p>
+      `,
+      flashcards: [
+        ['Where are you from?', 'Skąd jesteś? → I\'m from Poland. I\'m Polish.'],
+        ['Poland – Polish', 'Polska – polski, Polak / Polka'],
+        ['the UK – British', 'Wielka Brytania – brytyjski'],
+        ['the USA – American', 'Stany Zjednoczone – amerykański'],
+        ['Germany – German · France – French', 'Niemcy – niemiecki · Francja – francuski'],
+        ['Spain – Spanish · Italy – Italian', 'Hiszpania – hiszpański · Włochy – włoski'],
+        ['China – Chinese · Japan – Japanese', 'Chiny – chiński · Japonia – japoński'],
+        ['Cztery części the UK', 'England, Scotland, Wales, Northern Ireland'],
+        ['What? Where? Who?', 'Co? Gdzie? Kto?'],
+        ['When? Why? How?', 'Kiedy? Dlaczego? Jak?'],
+        ['How old? How many?', 'Ile lat? Ile (sztuk)?'],
+        ['Why…? → odpowiedź', 'Because… (ponieważ…)'],
+      ],
+      questions: [
+        { id: '3302av', q: 'Uzupełnij: „I\'m from Spain. I\'m ___.”', options: ['Spanish', 'Spain', 'Spanian', 'English'], answer: 0, explain: 'Kraj to Spain, a narodowość – Spanish (hiszpański, Hiszpan).' },
+        { id: 'qo816l', q: 'Uzupełnij: „Tom is from the USA. He\'s ___.”', options: ['American', 'British', 'English', 'Australian'], answer: 0, explain: 'Ktoś ze Stanów Zjednoczonych (the USA) jest American.' },
+        { id: 'a14403', q: 'Jak zapytasz nowego kolegę, skąd jest?', options: ['Where are you from?', 'Where you are from?', 'What are you from?', 'Who are you from?'], answer: 0, explain: 'Słowo pytające, potem „are”, potem „you”: Where are you from?' },
+        { id: '3jnk2h', q: 'Uzupełnij: „Hans is from Germany. He speaks ___.”', options: ['German', 'Germany', 'Germanian', 'French'], answer: 0, explain: 'Germany to kraj (Niemcy), a German – język i narodowość (niemiecki).' },
+        { id: '8hn0lp', q: 'Które zdanie jest zapisane poprawnie?', options: ['I am Polish.', 'I am polish.', 'I am from polish.', 'I am Poland.'], answer: 0, explain: 'Narodowość piszemy wielką literą: Polish. „I am Poland” znaczyłoby „Jestem Polską”.' },
+        { id: '519kf1', q: 'Yumi jest z Japonii. Które zdanie jest prawdziwe?', options: ['She\'s Japanese.', 'She\'s Chinese.', 'She\'s Japan.', 'She\'s Japanish.'], answer: 0, explain: 'Japan – Japanese. Chinese to ktoś z Chin (China).' },
+        { id: 'gacre9', q: 'Który kraj NIE jest częścią Wielkiej Brytanii (the UK)?', options: ['Ireland', 'England', 'Scotland', 'Wales'], answer: 0, explain: 'The UK to England, Scotland, Wales i Northern Ireland (Irlandia Północna). Ireland (Irlandia) to osobne państwo ze stolicą w Dublinie.' },
+        { id: 'shjja6', q: 'Jaka jest stolica Wielkiej Brytanii?', options: ['London', 'Dublin', 'Washington', 'Wales'], answer: 0, explain: 'Stolicą Wielkiej Brytanii jest London (Londyn). Dublin to stolica Irlandii, Washington – Stanów Zjednoczonych, a Wales (Walia) to część Wielkiej Brytanii.' },
+        { id: '27ec8d', q: 'Uzupełnij: „___ is your birthday?” – „In May.”', options: ['When', 'Where', 'Who', 'What colour'], answer: 0, explain: 'Odpowiedź to czas (w maju), więc pytamy „When?” – kiedy?' },
+        { id: '3yfmo8', q: 'Uzupełnij: „___ is that boy?” – „He\'s my brother.”', options: ['Who', 'What', 'Where', 'When'], answer: 0, explain: 'Pytamy o osobę – „Who?” (kto?).' },
+        { id: 'tmv4uu', q: 'Uzupełnij: „___ are you sad?” – „Because my cat is ill.”', options: ['Why', 'How', 'Where', 'Who'], answer: 0, explain: 'Na „Why?” (dlaczego?) odpowiadamy „Because…” (ponieważ…).' },
+        { id: '7idx9e', q: 'Uzupełnij: „___ pets have you got?” – „Three.”', options: ['How many', 'How old', 'How', 'What'], answer: 0, explain: 'Pytamy o liczbę – „How many?” (ile?).' },
+        { id: 'd6ecob', q: 'Uzupełnij: „___ is your bike?” – „It\'s red.”', options: ['What colour', 'What time', 'How many', 'Where'], answer: 0, explain: 'Odpowiedź to kolor, więc pytamy „What colour?” (jakiego koloru?).' },
+        { id: '0f4cuz', q: 'Co znaczy pytanie „Where do you live?”', options: ['Gdzie mieszkasz?', 'Skąd jesteś?', 'Gdzie jesteś?', 'Kiedy wracasz?'], answer: 0, explain: '„Live” to mieszkać, „where” – gdzie. „Skąd jesteś?” to „Where are you from?”.' },
+        { id: 'ud68gx', q: 'Które pytanie jest poprawne?', options: ['What is your name?', 'What your name is?', 'What are your name?', 'Is what your name?'], answer: 0, explain: 'Słowo pytające, potem „is”, potem reszta: What is (What\'s) your name?' },
+        { id: 'bq2k0c', q: 'Ktoś pyta: „How old is your sister?”. Która odpowiedź pasuje?', options: ['She\'s seven.', 'She\'s fine.', 'She\'s from Poland.', 'She\'s at home.'], answer: 0, explain: '„How old?” to pytanie o wiek. „She\'s seven.” – Ona ma siedem lat.' },
+        { id: 'n7zecf', q: 'Ktoś pyta: „Where is she from?”. Która odpowiedź pasuje?', options: ['She\'s from Italy.', 'She\'s at school.', 'She\'s ten.', 'She\'s Italy.'], answer: 0, explain: '„Where… from?” – skąd? Odpowiadamy „from” + kraj. „She\'s at school” odpowiada na pytanie „Where is she?” (gdzie ona jest?).' },
+        { id: 'xqbim8', q: 'Prawda czy fałsz?\nKtoś ze Szkocji jest „British”.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Szkocja (Scotland) jest częścią Wielkiej Brytanii, więc Szkot jest British (i Scottish), ale nie English.' },
       ],
     },
     {
@@ -368,6 +482,88 @@ window.SUBJECTS.push({
         { id: 'qrhwex', q: 'Uzupełnij: „My dad ___ bananas.”', options: ['likes', 'like', 'liking', 'is like'], answer: 0, explain: '„My dad” to „he”. W present simple przy „he” dodajemy -s: likes.' },
         { id: '4qgckm', q: '„Do you like milk?” – Nie. Jak brzmi krótka odpowiedź?', options: ['No, I don\'t.', 'No, I doesn\'t.', 'No, I\'m not.', 'No, I haven\'t.'], answer: 0, explain: 'Na pytanie „Do you…?” odpowiadamy: Yes, I do. / No, I don\'t.' },
         { id: 'ktwx5k', q: 'Prawda czy fałsz?\nSłowo „orange” może znaczyć „pomarańcza” albo „pomarańczowy”.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Tak: „an orange” to pomarańcza, a „orange” jako kolor to pomarańczowy.' },
+      ],
+    },
+    {
+      id: 'czyje-to',
+      name: 'Czyje to? „whose”, ’s, „my, your…”, „this, that”',
+      chapter: 'Unit 3',
+      basis: 'Dz.U. 2026 poz. 378, język obcy nowożytny, poziom A1: wym. 1 temat 1 „człowiek” (rzeczy osobiste) i temat 5 „życie prywatne” (przedmioty codziennego użytku); wym. 4.1 i 5.1 (opisuje przedmioty), 6.3 (uzyskuje i przekazuje informacje). „Whose”, dopełniacz ’s, przymiotniki dzierżawcze i „this / that / these / those” – wybór redakcyjny według podręcznika (podstawa nie wymienia struktur gramatycznych dla poziomu A1).',
+      theory: `
+        <h3>Rzeczy osobiste</h3>
+        <table>
+          <tr><td>phone</td><td>telefon</td><td>watch</td><td>zegarek</td></tr>
+          <tr><td>keys</td><td>klucze</td><td>wallet</td><td>portfel</td></tr>
+          <tr><td>headphones</td><td>słuchawki</td><td>camera</td><td>aparat fotograficzny</td></tr>
+          <tr><td>skateboard</td><td>deskorolka</td><td>kite</td><td>latawiec</td></tr>
+          <tr><td>doll</td><td>lalka</td><td>teddy bear</td><td>pluszowy miś</td></tr>
+          <tr><td>board game</td><td>gra planszowa</td><td>umbrella</td><td>parasol</td></tr>
+        </table>
+        <h3>Mój, twój, jego… – przymiotniki dzierżawcze</h3>
+        <table>
+          <tr><th>Osoba</th><th>Czyje?</th><th>Przykład</th></tr>
+          <tr><td>I</td><td><b>my</b> – mój</td><td>my phone</td></tr>
+          <tr><td>you</td><td><b>your</b> – twój</td><td>your bag</td></tr>
+          <tr><td>he</td><td><b>his</b> – jego</td><td>his bike (rower chłopca)</td></tr>
+          <tr><td>she</td><td><b>her</b> – jej</td><td>her doll (lalka dziewczynki)</td></tr>
+          <tr><td>it</td><td><b>its</b> – jego, jej (o zwierzęciu, rzeczy)</td><td>its tail (ogon psa)</td></tr>
+          <tr><td>we</td><td><b>our</b> – nasz</td><td>our house</td></tr>
+          <tr><td>you</td><td><b>your</b> – wasz</td><td>your teacher</td></tr>
+          <tr><td>they</td><td><b>their</b> – ich</td><td>their car</td></tr>
+        </table>
+        <div class="tip">💡 Słowo zależy od <b>właściciela</b>: rzecz chłopca to zawsze <i>his</i>, a dziewczynki – <i>her</i>. Uwaga: <b>its</b> (jego) piszemy bez apostrofu – <b>it's</b> to skrót od „it is”.</div>
+        <h3>Czyje to? – „whose” i ’s</h3>
+        <ul>
+          <li><b>Whose</b> bag is this? – Czyja to torba? → <i>It's <b>Tom's</b> bag.</i> / <i>It's <b>Tom's</b>.</i> – To torba Toma.</li>
+          <li>Do imienia albo osoby dodajesz <b>’s</b>: <i>Ola's cat</i> – kot Oli, <i>my sister's room</i> – pokój mojej siostry.</li>
+          <li>Gdy właścicieli jest kilku i słowo kończy się na -s, dopisujesz sam apostrof: <i>my parents' car</i> – samochód moich rodziców.</li>
+        </ul>
+        <div class="tip">💡 Po angielsku właściciel stoi <b>przed</b> rzeczą: po polsku „rower <b>Kuby</b>”, po angielsku „<b>Kuba's</b> bike”.</div>
+        <h3>This, that, these, those</h3>
+        <table>
+          <tr><th></th><th>jedna rzecz</th><th>wiele rzeczy</th></tr>
+          <tr><td><b>blisko</b> (tu)</td><td><b>this</b> – ten, ta, to</td><td><b>these</b> – te, ci</td></tr>
+          <tr><td><b>daleko</b> (tam)</td><td><b>that</b> – tamten, tamta, tamto</td><td><b>those</b> – tamte, tamci</td></tr>
+        </table>
+        <ul>
+          <li><i>This is my phone.</i> – To jest mój telefon (trzymam go w ręce).</li>
+          <li><i>These are my keys.</i> – To są moje klucze.</li>
+          <li><i>That is a bird.</i> – Tamto to ptak (na drzewie, daleko).</li>
+          <li><i>Those are my friends.</i> – Tamci to moi koledzy.</li>
+        </ul>
+        <p>Pytania: <b>What's this?</b> – <i>It's a kite.</i> · <b>What are these?</b> – <i>They're headphones.</i></p>
+        <div class="tip">💡 Z <b>this</b> i <b>that</b> łączymy <b>is</b>, z <b>these</b> i <b>those</b> – <b>are</b>.</div>
+      `,
+      flashcards: [
+        ['keys / wallet / watch', 'klucze / portfel / zegarek'],
+        ['headphones / camera / umbrella', 'słuchawki / aparat / parasol'],
+        ['my / your', 'mój / twój (też: wasz)'],
+        ['his / her', 'jego (chłopca) / jej (dziewczynki)'],
+        ['its', 'jego, jej – o zwierzęciu albo rzeczy (bez apostrofu)'],
+        ['our / their', 'nasz / ich'],
+        ['Whose bag is this?', 'Czyja to torba? → It\'s Tom\'s.'],
+        ['Ola\'s cat', 'kot Oli (właściciel + ’s, przed rzeczą)'],
+        ['this / these', 'ten, ta, to / te – blisko'],
+        ['that / those', 'tamten, tamta / tamte – daleko'],
+        ['What are these?', 'Co to jest? (wiele rzeczy) → They\'re…'],
+      ],
+      questions: [
+        { id: 'oq2c37', q: 'Uzupełnij: „This is Kuba. ___ bike is blue.”', options: ['His', 'Her', 'Its', 'My'], answer: 0, explain: 'Rower należy do Kuby (chłopca), więc „his” – jego.' },
+        { id: 'h05ix7', q: 'Uzupełnij: „Look at Zosia! ___ dress is beautiful.”', options: ['Her', 'His', 'Their', 'Its'], answer: 0, explain: 'Sukienka należy do Zosi (dziewczynki), więc „her” – jej.' },
+        { id: '7ft22s', q: 'Uzupełnij: „We\'ve got a dog. ___ dog is very funny.”', options: ['Our', 'Their', 'Your', 'My'], answer: 0, explain: '„We” – my, więc nasz pies to „our dog”.' },
+        { id: 'iwwwpa', q: 'Uzupełnij: „Tom and Ann are in the garden. ___ house is big.”', options: ['Their', 'Our', 'His', 'Her'], answer: 0, explain: 'Tom i Ann to „they”, więc ich dom – „their house”.' },
+        { id: 'w8jjnp', q: 'Uzupełnij: „The cat is playing with ___ tail.”', options: ['its', 'it\'s', 'his', 'their'], answer: 0, explain: 'O zwierzęciu mówimy „its” (jego). „It\'s” z apostrofem to skrót od „it is”.' },
+        { id: '5ba1w3', q: 'Jak powiesz po angielsku: „rower Kuby”?', options: ['Kuba\'s bike', 'bike Kuba\'s', 'Kuba bike\'s', 'the bike of Kuba\'s'], answer: 0, explain: 'Właściciel z ’s stoi przed rzeczą: Kuba\'s bike.' },
+        { id: 'b22ow9', q: 'Ktoś pyta: „Whose phone is this?”. Która odpowiedź pasuje?', options: ['It\'s Ola\'s.', 'It\'s black.', 'It\'s on the desk.', 'It\'s a phone.'], answer: 0, explain: '„Whose?” to „czyj?”. Odpowiadamy, do kogo należy: It\'s Ola\'s (to telefon Oli).' },
+        { id: 'hidyh3', q: 'Uzupełnij: „___ umbrella is this?” – „It\'s my mum\'s.”', options: ['Whose', 'Who', 'What', 'Where'], answer: 0, explain: 'Pytamy o właściciela – „Whose?” (czyj?). „Who?” to „kto?”.' },
+        { id: 'v3spig', q: 'Trzymasz w ręce klucze. Co powiesz?', options: ['These are my keys.', 'This are my keys.', 'Those is my keys.', 'That are my keys.'], answer: 0, explain: 'Klucze są blisko i jest ich wiele – „these”, a z „these” łączymy „are”.' },
+        { id: 'cdfg2g', q: 'Pokazujesz ptaka daleko na drzewie. Co powiesz?', options: ['That is a bird.', 'This is a bird.', 'These is a bird.', 'Those are a bird.'], answer: 0, explain: 'Jedna rzecz daleko – „that”. „This” mówimy o rzeczy blisko nas.' },
+        { id: 't5m8xe', q: 'Uzupełnij: „Look at ___ kites in the sky!”', options: ['those', 'that', 'this', 'it'], answer: 0, explain: 'Latawce są daleko (na niebie) i jest ich kilka – „those”.' },
+        { id: 'r9rs59', q: 'Ktoś pyta: „What are these?”. Która odpowiedź pasuje?', options: ['They\'re headphones.', 'It\'s headphones.', 'This is headphones.', 'They\'re Tom\'s.'], answer: 0, explain: '„What are these?” – „Co to jest?” o kilku rzeczach. Odpowiadamy „They\'re…”. „They\'re Tom\'s” odpowiada na pytanie „Whose…?”.' },
+        { id: 'nf6ctu', q: 'Co znaczy „my parents\' car”?', options: ['samochód moich rodziców', 'samochody mojego rodzica', 'mój samochód i rodzice', 'rodzice w samochodzie'], answer: 0, explain: 'Parents (rodzice) kończy się na -s, więc dopisujemy sam apostrof: parents\' car – samochód rodziców.' },
+        { id: 'va5aqa', q: 'Co znaczy „wallet”?', options: ['portfel', 'zegarek', 'parasol', 'latawiec'], answer: 0, explain: 'Wallet to portfel. Zegarek – watch, parasol – umbrella, latawiec – kite.' },
+        { id: 'oufrus', q: 'Które zdanie jest poprawne?', options: ['This is my sister\'s doll.', 'This is my sister doll\'s.', 'This is doll my sister\'s.', 'This is my\'s sister doll.'], answer: 0, explain: 'Właściciel (my sister) dostaje ’s i stoi przed rzeczą: my sister\'s doll – lalka mojej siostry.' },
+        { id: 'izkz5l', q: 'Prawda czy fałsz?\nO rzeczy, która należy do dziewczynki, mówimy „his”.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Rzecz dziewczynki to „her” (jej). „His” (jego) mówimy o rzeczy chłopca lub mężczyzny.' },
       ],
     },
     {
@@ -561,6 +757,162 @@ window.SUBJECTS.push({
         { id: 'qyfu5i', q: 'Co znaczy „behind”?', options: ['za', 'przed', 'obok', 'na'], answer: 0, explain: '„Behind” to za (z tyłu). „The tree is behind the house.” – Drzewo jest za domem.' },
         { id: 'jxiief', q: 'Prawda czy fałsz?\nZdanie „There are a chair in the kitchen.” jest poprawne.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Jedno krzesło – „There is a chair in the kitchen.” „There are” mówimy o wielu rzeczach.' },
         { id: '4k2jof', q: 'Co znaczy słowo „library”?', options: ['biblioteka', 'księgarnia', 'laboratorium', 'sala gimnastyczna'], answer: 0, explain: '„Library” to biblioteka. Księgarnia to „bookshop”, sala gimnastyczna – „gym”.' },
+      ],
+    },
+    {
+      id: 'policzalne',
+      name: 'Policzalne i niepoliczalne: „some”, „any”, „a lot of”',
+      chapter: 'Unit 6',
+      basis: 'Dz.U. 2026 poz. 378, język obcy nowożytny, poziom A1: wym. 1 temat 6 „żywienie” (artykuły spożywcze, posiłki i ich przygotowywanie) i temat 7 „zakupy i usługi” (towary, kupowanie); wym. 4.1 (opisuje przedmioty), 6.3 (uzyskuje i przekazuje informacje), 6.12 (wyraża prośbę). Rzeczowniki policzalne i niepoliczalne, „some / any / a lot of”, „How many / How much” – wybór redakcyjny według podręcznika (podstawa nie wymienia struktur gramatycznych dla poziomu A1).',
+      theory: `
+        <h3>Policzalne czy niepoliczalne?</h3>
+        <ul>
+          <li><b>Policzalne</b> (countable) – rzeczy, które da się policzyć na sztuki. Mają liczbę pojedynczą i mnogą: <i>an apple – two apples, an egg – six eggs, a carrot – three carrots</i>.</li>
+          <li><b>Niepoliczalne</b> (uncountable) – rzeczy, których nie liczymy na sztuki, np. płyny, sypkie produkty: <i>milk, water, juice, bread, butter, cheese, rice, pasta, sugar, flour</i> (mąka), <i>honey</i> (miód). Nie mają liczby mnogiej i nie stawiamy przed nimi <b>a / an</b>.</li>
+        </ul>
+        <div class="tip">💡 Po polsku powiesz „dwa chleby”, ale po angielsku <b>bread</b> jest niepoliczalny – nie mówimy „a bread” ani „breads”.</div>
+        <h3>Jak policzyć niepoliczalne? Opakowania i porcje</h3>
+        <table>
+          <tr><td>a bottle of water</td><td>butelka wody</td></tr>
+          <tr><td>a glass of milk</td><td>szklanka mleka</td></tr>
+          <tr><td>a cup of tea</td><td>filiżanka herbaty</td></tr>
+          <tr><td>a carton of juice</td><td>karton soku</td></tr>
+          <tr><td>a slice of bread</td><td>kromka chleba</td></tr>
+          <tr><td>a piece of cheese</td><td>kawałek sera</td></tr>
+          <tr><td>a jar of honey</td><td>słoik miodu</td></tr>
+          <tr><td>a bag of sugar</td><td>torebka cukru</td></tr>
+        </table>
+        <p>Liczymy opakowania: <i>two bottles of water</i> – dwie butelki wody.</p>
+        <h3>„some” i „any”</h3>
+        <table>
+          <tr><th></th><th>policzalne (l. mnoga)</th><th>niepoliczalne</th></tr>
+          <tr><td>twierdzenie – <b>some</b> (trochę, kilka)</td><td>There are <b>some</b> eggs.</td><td>There is <b>some</b> milk.</td></tr>
+          <tr><td>przeczenie – <b>any</b> (żadnego, wcale)</td><td>There aren't <b>any</b> eggs.</td><td>There isn't <b>any</b> milk.</td></tr>
+          <tr><td>pytanie – <b>any</b> (jakieś, trochę)</td><td>Are there <b>any</b> eggs?</td><td>Is there <b>any</b> milk?</td></tr>
+        </table>
+        <div class="tip">💡 Gdy <b>prosisz</b> o coś albo coś <b>proponujesz</b>, używasz <b>some</b>, choć to pytanie: <i>Can I have <b>some</b> water, please? Would you like <b>some</b> juice?</i></div>
+        <h3>„a lot of” – dużo</h3>
+        <p><b>A lot of</b> pasuje do policzalnych i niepoliczalnych: <i>a lot of apples</i> (dużo jabłek), <i>a lot of milk</i> (dużo mleka). <i>I eat a lot of fruit.</i> – Jem dużo owoców.</p>
+        <h3>Ile? – „How many” i „How much”</h3>
+        <ul>
+          <li><b>How many</b> + policzalne: <i>How many eggs are there?</i> – Ile jest jajek? → <i>There are six.</i></li>
+          <li><b>How much</b> + niepoliczalne: <i>How much milk is there?</i> – Ile jest mleka? → <i>There's a lot.</i> / <i>There's a little.</i></li>
+          <li>„How much is it?” znaczy też: ile to kosztuje?</li>
+        </ul>
+      `,
+      flashcards: [
+        ['Policzalne (countable)', 'da się policzyć na sztuki: an apple – two apples'],
+        ['Niepoliczalne (uncountable)', 'bez a/an i bez liczby mnogiej: milk, water, bread, cheese, rice'],
+        ['a bottle of water / a glass of milk', 'butelka wody / szklanka mleka'],
+        ['a slice of bread / a piece of cheese', 'kromka chleba / kawałek sera'],
+        ['a jar of honey / a carton of juice', 'słoik miodu / karton soku'],
+        ['some', 'trochę, kilka – w twierdzeniach (i w prośbach)'],
+        ['any', 'w przeczeniach i pytaniach: There isn\'t any milk. Are there any eggs?'],
+        ['a lot of', 'dużo – z policzalnymi i niepoliczalnymi'],
+        ['How many…?', 'Ile? – z policzalnymi: How many eggs?'],
+        ['How much…?', 'Ile? – z niepoliczalnymi: How much milk?'],
+      ],
+      questions: [
+        { id: 'l8ay08', q: 'Który rzeczownik jest niepoliczalny?', options: ['milk', 'apple', 'egg', 'carrot'], answer: 0, explain: 'Mleka nie liczymy na sztuki – milk jest niepoliczalne. Jabłka, jajka i marchewki możemy policzyć.' },
+        { id: 'm5axth', q: 'Który rzeczownik jest policzalny?', options: ['banana', 'rice', 'water', 'sugar'], answer: 0, explain: 'Banany policzysz: a banana, two bananas. Rice, water i sugar są niepoliczalne.' },
+        { id: 'q3ntcv', q: 'Które wyrażenie jest poprawne?', options: ['some bread', 'a bread', 'two breads', 'an bread'], answer: 0, explain: 'Bread jest niepoliczalny – bez a/an i bez liczby mnogiej. Mówimy „some bread” albo „a slice of bread”.' },
+        { id: 'bkh9a4', q: 'Uzupełnij: „There are ___ apples in the bowl.”', options: ['some', 'any', 'a', 'an'], answer: 0, explain: 'To twierdzenie i liczba mnoga, więc „some” – kilka jabłek.' },
+        { id: 'nlycul', q: 'Uzupełnij: „There isn\'t ___ milk in the fridge.”', options: ['any', 'some', 'a', 'many'], answer: 0, explain: 'W przeczeniu (isn\'t) używamy „any”: nie ma (wcale) mleka.' },
+        { id: 'oe6xmt', q: 'Uzupełnij: „Are there ___ eggs?”', options: ['any', 'some', 'a', 'an'], answer: 0, explain: 'W zwykłym pytaniu używamy „any”: Czy są jakieś jajka?' },
+        { id: '7tq7c5', q: 'Jak grzecznie poprosisz o wodę?', options: ['Can I have some water, please?', 'Can I have any water, please?', 'Can I have a water any, please?', 'Can I have waters, please?'], answer: 0, explain: 'Gdy o coś prosimy, mówimy „some”, choć to pytanie.' },
+        { id: 'jjbkw8', q: 'Uzupełnij: „___ oranges are there?” – „Five.”', options: ['How many', 'How much', 'How old', 'What'], answer: 0, explain: 'Pomarańcze da się policzyć, więc „How many?”.' },
+        { id: 't3cy5j', q: 'Uzupełnij: „___ juice is there?” – „Not much.”', options: ['How much', 'How many', 'How old', 'Which'], answer: 0, explain: 'Sok jest niepoliczalny, więc „How much?”.' },
+        { id: 'pj25zu', q: 'Co znaczy „a slice of bread”?', options: ['kromka chleba', 'bochenek chleba', 'kawałek sera', 'słoik miodu'], answer: 0, explain: 'Slice to plaster, kromka. A slice of bread – kromka chleba.' },
+        { id: 'neki8l', q: 'Jak powiesz „butelka wody”?', options: ['a bottle of water', 'a glass of water', 'a water bottle of', 'a jar of water'], answer: 0, explain: 'Bottle to butelka: a bottle of water. A glass of water to szklanka wody.' },
+        { id: '5ei8vs', q: 'Uzupełnij: „I eat ___ vegetables. They\'re healthy!”', options: ['a lot of', 'any', 'an', 'much of'], answer: 0, explain: '„A lot of” – dużo. Pasuje do twierdzenia z liczbą mnogą (vegetables).' },
+        { id: 'e2e3mv', q: 'Które zdanie jest poprawne?', options: ['There is some cheese.', 'There are some cheese.', 'There is a cheeses.', 'There is any cheese.'], answer: 0, explain: 'Cheese jest niepoliczalny – łączymy go z „is”. W twierdzeniu – „some”.' },
+        { id: 'qtjlhv', q: 'Kelner pyta: „Would you like some tea?”. Co to znaczy?', options: ['Czy chcesz herbaty?', 'Czy lubisz herbatę?', 'Ile jest herbaty?', 'Czy jest herbata?'], answer: 0, explain: '„Would you like…?” to grzeczna propozycja: Czy chcesz / Czy masz ochotę na…? „Do you like…?” znaczyłoby „Czy lubisz…?”.' },
+        { id: 'gulms6', q: 'Prawda czy fałsz?\n„A lot of” możemy połączyć zarówno z „apples”, jak i z „milk”.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '„A lot of” pasuje do policzalnych (a lot of apples) i niepoliczalnych (a lot of milk).' },
+        { id: 'wyvtma', q: 'Prawda czy fałsz?\nW przeczeniach zwykle używamy „some”: „There aren\'t some eggs.”', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'W przeczeniach używamy „any”: There aren\'t any eggs.' },
+      ],
+    },
+    {
+      id: 'w-miescie',
+      name: 'W mieście, czas „present continuous”',
+      chapter: 'Unit 8',
+      basis: 'Dz.U. 2026 poz. 378, język obcy nowożytny, poziom A1: wym. 1 temat 8 „podróżowanie i turystyka” (orientacja w terenie) i temat 7 „zakupy i usługi”; wym. 4.1 (opisuje miejsca), 4.2 i 5.2 (opowiada o czynnościach z teraźniejszości), 6.3 (uzyskuje i przekazuje informacje), 6.11 (instruuje – wskazuje drogę). Czas present continuous i przyimki „between, opposite” – wybór redakcyjny według podręcznika (podstawa nie wymienia struktur gramatycznych dla poziomu A1).',
+      theory: `
+        <h3>Miejsca w mieście</h3>
+        <table>
+          <tr><td>library</td><td>biblioteka</td><td>hospital</td><td>szpital</td></tr>
+          <tr><td>post office</td><td>poczta</td><td>police station</td><td>komisariat policji</td></tr>
+          <tr><td>cinema</td><td>kino</td><td>museum</td><td>muzeum</td></tr>
+          <tr><td>café</td><td>kawiarnia</td><td>restaurant</td><td>restauracja</td></tr>
+          <tr><td>bank</td><td>bank</td><td>chemist's</td><td>apteka</td></tr>
+          <tr><td>train station</td><td>dworzec kolejowy</td><td>bus stop</td><td>przystanek autobusowy</td></tr>
+          <tr><td>swimming pool</td><td>basen</td><td>sports centre</td><td>centrum sportowe</td></tr>
+          <tr><td>shopping centre</td><td>centrum handlowe</td><td>park</td><td>park</td></tr>
+        </table>
+        <h3>Gdzie to jest?</h3>
+        <ul>
+          <li><b>next to</b> – obok: <i>The café is next to the bank.</i></li>
+          <li><b>opposite</b> – naprzeciwko: <i>The library is opposite the park.</i></li>
+          <li><b>between</b> – między: <i>The post office is between the bank and the cinema.</i></li>
+        </ul>
+        <h3>Jak dojść? – wskazywanie drogi</h3>
+        <ul>
+          <li><b>Excuse me, where's the museum?</b> – Przepraszam, gdzie jest muzeum?</li>
+          <li><b>Go straight on.</b> – Idź prosto.</li>
+          <li><b>Turn left. / Turn right.</b> – Skręć w lewo. / Skręć w prawo.</li>
+          <li><b>It's on the left. / It's on the right.</b> – Jest po lewej. / Jest po prawej.</li>
+        </ul>
+        <h3>Present continuous – co dzieje się teraz</h3>
+        <p>Tego czasu używasz, gdy mówisz o tym, co dzieje się <b>właśnie teraz</b>, w chwili mówienia. Budowa: <b>am / is / are</b> + czasownik z końcówką <b>-ing</b>.</p>
+        <table>
+          <tr><th></th><th>Przykład</th></tr>
+          <tr><td>twierdzenie</td><td>I<b>'m reading</b>. · She<b>'s running</b>. · They<b>'re playing</b>.</td></tr>
+          <tr><td>przeczenie</td><td>I<b>'m not</b> sleeping. · He <b>isn't</b> eating. · We <b>aren't</b> watching TV.</td></tr>
+          <tr><td>pytanie</td><td><b>Are</b> you listen<b>ing</b>? · <b>Is</b> she swimm<b>ing</b>?</td></tr>
+          <tr><td>krótka odpowiedź</td><td>Yes, I am. / No, I'm not. · Yes, she is. / No, she isn't.</td></tr>
+        </table>
+        <p>Pytanie o czynność: <b>What are you doing?</b> – Co robisz? → <i>I'm doing my homework.</i></p>
+        <h3>Pisownia -ing</h3>
+        <ul>
+          <li>zwykle <b>+ing</b>: read → reading, play → playing, eat → eating</li>
+          <li>nieme <b>-e</b> na końcu znika: write → writing, dance → dancing, ride → riding, make → making</li>
+          <li>krótki wyraz: jedna samogłoska + jedna spółgłoska → spółgłoskę <b>podwajamy</b>: swim → swi<b>mm</b>ing, run → ru<b>nn</b>ing, sit → si<b>tt</b>ing, shop → sho<b>pp</b>ing</li>
+        </ul>
+        <h3>Teraz czy zwykle?</h3>
+        <ul>
+          <li>Słowa-sygnały present continuous: <b>now</b> (teraz), <b>at the moment</b> (w tej chwili), <b>Look!</b> (Patrz!), <b>Listen!</b> (Posłuchaj!).</li>
+          <li>Present simple – to, co robisz <b>zwykle</b>: <i>I usually walk to school.</i> Present continuous – to, co robisz <b>teraz</b>: <i>Today I'm going by bus.</i></li>
+        </ul>
+      `,
+      flashcards: [
+        ['library / bookshop', 'biblioteka / księgarnia'],
+        ['post office / police station', 'poczta / komisariat policji'],
+        ['train station / bus stop', 'dworzec kolejowy / przystanek autobusowy'],
+        ['chemist\'s / hospital', 'apteka / szpital'],
+        ['opposite / between', 'naprzeciwko / między'],
+        ['Go straight on. Turn left.', 'Idź prosto. Skręć w lewo.'],
+        ['Present continuous – budowa', 'am / is / are + czasownik z -ing'],
+        ['What are you doing?', 'Co (teraz) robisz? → I\'m reading.'],
+        ['write, dance → ?', 'writing, dancing (nieme -e znika)'],
+        ['swim, run, sit → ?', 'swimming, running, sitting (podwójna spółgłoska)'],
+        ['now, at the moment, Look!', 'sygnały present continuous – dzieje się teraz'],
+      ],
+      questions: [
+        { id: 'vwlwn9', q: 'Gdzie wypożyczysz książki?', options: ['in the library', 'in the bank', 'at the post office', 'in the chemist\'s'], answer: 0, explain: 'Library to biblioteka – tam wypożycza się książki.' },
+        { id: 'b1z1cw', q: 'Boli cię głowa i potrzebujesz leku. Dokąd idziesz?', options: ['to the chemist\'s', 'to the cinema', 'to the museum', 'to the bus stop'], answer: 0, explain: 'Chemist\'s to apteka.' },
+        { id: 'v4uqkh', q: 'Co znaczy „The bank is opposite the park”?', options: ['Bank jest naprzeciwko parku.', 'Bank jest obok parku.', 'Bank jest w parku.', 'Bank jest za parkiem.'], answer: 0, explain: '„Opposite” to naprzeciwko. „Obok” to „next to”.' },
+        { id: 'n1m8ta', q: 'Uzupełnij: „The café is ___ the bank and the cinema.”', options: ['between', 'opposite', 'next', 'on'], answer: 0, explain: '„Between… and…” – między… a…' },
+        { id: 'vp9d43', q: 'Co znaczy „Turn right”?', options: ['Skręć w prawo.', 'Skręć w lewo.', 'Idź prosto.', 'To po prawej.'], answer: 0, explain: '„Turn” – skręć, „right” – w prawo.' },
+        { id: '8phtwv', q: 'Uzupełnij: „Look! The dog ___ in the park.”', options: ['is running', 'runs', 'are running', 'is runing'], answer: 0, explain: '„Look!” – dzieje się teraz, więc present continuous: is + running (run → running, podwójne n).' },
+        { id: 'u0xo9m', q: 'Uzupełnij: „I ___ my homework at the moment.”', options: ['am doing', 'is doing', 'are doing', 'doing'], answer: 0, explain: 'Z „I” łączymy „am”: I am (I\'m) doing.' },
+        { id: '7l94as', q: 'Uzupełnij: „My friends ___ football now.”', options: ['are playing', 'is playing', 'am playing', 'playing'], answer: 0, explain: '„My friends” to „they”, więc „are playing”.' },
+        { id: 'mhp74v', q: 'Jak zapisać „write” z końcówką -ing?', options: ['writing', 'writeing', 'writting', 'writng'], answer: 0, explain: 'Nieme -e na końcu znika: write → writing.' },
+        { id: '0c9c5g', q: 'Jak zapisać „swim” z końcówką -ing?', options: ['swimming', 'swiming', 'swimeing', 'swimmming'], answer: 0, explain: 'Krótki wyraz kończący się jedną samogłoską i jedną spółgłoską – podwajamy spółgłoskę: swimming.' },
+        { id: '6mly79', q: 'Które zdanie znaczy „Ona teraz nie śpi”?', options: ['She isn\'t sleeping now.', 'She doesn\'t sleep now.', 'She aren\'t sleeping now.', 'She not sleeping now.'], answer: 0, explain: 'Przeczenie w present continuous: is not (isn\'t) + sleeping.' },
+        { id: 'v307z1', q: 'Mama pyta: „Are you watching TV?”. Nie oglądasz. Co odpowiesz krótko?', options: ['No, I\'m not.', 'No, I don\'t.', 'No, I amn\'t.', 'No, you aren\'t.'], answer: 0, explain: 'Na pytanie z „Are you…?” odpowiadamy „Yes, I am.” albo „No, I\'m not.”.' },
+        { id: 'v85dpj', q: 'Ktoś pyta: „What are you doing?”. Która odpowiedź pasuje?', options: ['I\'m reading a book.', 'I read books.', 'I\'m fine, thanks.', 'I\'m in the park.'], answer: 0, explain: '„What are you doing?” to pytanie, co robisz teraz. Odpowiadamy w present continuous.' },
+        { id: 'oe56k7', q: 'W którym zdaniu użyto czasu present continuous poprawnie?', options: ['Listen! The baby is crying.', 'Listen! The baby cries now.', 'Listen! The baby crying.', 'Listen! The baby are crying.'], answer: 0, explain: '„Listen!” – dzieje się teraz: is + crying.' },
+        { id: 'nfpcoh', q: 'Uzupełnij: „I usually walk to school, but today I ___ by bus.”', options: ['am going', 'go', 'goes', 'going'], answer: 0, explain: '„Usually” – zwykle (present simple: walk), „today” – dziś, teraz inaczej: I\'m going (present continuous).' },
+        { id: 'vtpegv', q: 'Prawda czy fałsz?\nZdanie „She is dance now” jest poprawne.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Brakuje końcówki -ing: She is dancing now (dance → dancing, nieme -e znika).' },
       ],
     },
   ],

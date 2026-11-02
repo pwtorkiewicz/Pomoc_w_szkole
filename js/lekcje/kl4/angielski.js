@@ -282,6 +282,30 @@ window.LESSONS['angielski/wyglad-i-cechy'] = [
     hook: '„Can” jest jak kamień – nic się w nim nie zmienia, nigdy nie dostaje „s”.',
     check: { q: 'Które zdanie jest poprawne?', options: ['He can play tennis.', 'He cans play tennis.', 'He can plays tennis.'], answer: 0, explain: '„Can” i czasownik po nim nie dostają końcówki -s: He can play tennis.' },
   },
+  {
+    title: 'Jak? – przysłówki sposobu',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Dwie kolumny. Jaki? – przymiotnik: a slow turtle, a fast rabbit, a good singer. Jak? – przysłówek: it walks slowly, it runs fast, she sings well.">
+      <defs><marker id="a-k4en-wyg-9" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <text x="100" y="24" class="tx-b t1" text-anchor="middle">jaki? – przymiotnik</text>
+      <text x="300" y="24" class="tx-b t3" text-anchor="middle">jak? – przysłówek</text>
+      <g class="f1 s1"><rect x="10" y="36" width="180" height="50" rx="10"/><rect x="10" y="96" width="180" height="50" rx="10"/><rect x="10" y="156" width="180" height="50" rx="10"/></g>
+      <g class="f3 s3"><rect x="210" y="36" width="180" height="50" rx="10"/><rect x="210" y="96" width="180" height="50" rx="10"/><rect x="210" y="156" width="180" height="50" rx="10"/></g>
+      <g class="tx" text-anchor="middle">
+        <text x="100" y="67">🐢 a <tspan class="tx-b">slow</tspan> turtle</text>
+        <text x="100" y="127">🐇 a <tspan class="tx-b">fast</tspan> rabbit</text>
+        <text x="100" y="187">🎤 a <tspan class="tx-b">good</tspan> singer</text>
+        <text x="300" y="67">it walks <tspan class="tx-b t3">slowly</tspan></text>
+        <text x="300" y="127">it runs <tspan class="tx-b t3">fast</tspan></text>
+        <text x="300" y="187">she sings <tspan class="tx-b t3">well</tspan></text>
+      </g>
+      <g class="ln s2"><line x1="192" y1="61" x2="208" y2="61" marker-end="url(#a-k4en-wyg-9)"/><line x1="192" y1="121" x2="208" y2="121" marker-end="url(#a-k4en-wyg-9)"/><line x1="192" y1="181" x2="208" y2="181" marker-end="url(#a-k4en-wyg-9)"/></g>
+    </svg>`,
+    text: `<p>Przymiotnik mówi, <b>jaki</b> ktoś jest: <i>a slow turtle</i> – wolny żółw. Przysłówek mówi, <b>jak</b> ktoś coś robi: <i>It walks slowly.</i> – Idzie wolno. Stawiasz go za czasownikiem.</p>
+      <p>Przysłówek tworzysz zwykle, dodając <b>-ly</b>: slow → slowly, quiet → quietly, careful → carefully; po -y: easy → easily. Wyjątki: good → <b>well</b>, fast → <b>fast</b>, hard → <b>hard</b>. Pasują do „can”: <i>I can swim fast.</i></p>`,
+    remember: 'przymiotnik + -ly = przysłówek (slowly) · wyjątki: good → well, fast → fast, hard → hard.',
+    hook: '<b>-ly</b> to jak polskie „-o”: wolny → wolno (slow → slowly), cichy → cicho (quiet → quietly).',
+    check: { q: 'Uzupełnij: „He is a careful driver. He drives ___.”', options: ['carefully', 'careful', 'carefuly'], answer: 0, explain: 'Opisujemy, jak prowadzi – potrzebny przysłówek: careful + ly = carefully (dwa „l”).' },
+  },
 ];
 
 window.LESSONS['angielski/rodzina-i-dzien'] = [
@@ -853,5 +877,506 @@ window.LESSONS['angielski/przyroda-sport-zdrowie'] = [
     remember: 'Polecenie: czasownik na początku (<b>Open…</b>). Zakaz: <b>Don\'t</b> + czasownik.',
     hook: '<b>Don\'t</b> to jak czerwone światło 🚦 – stop, nie rób tego!',
     check: { q: 'Nauczycielka mówi: „Stand up, please.” Co robisz?', options: ['wstaję', 'siadam', 'otwieram książkę'], answer: 0, explain: '„Stand up” to wstań. Usiądź to „sit down”.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['angielski/kraje-i-pytania'] = [
+  {
+    title: 'Skąd jesteś? – Where are you from?',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Dwa dymki rozmowy. Pytanie: Where are you from? – Skąd jesteś? Odpowiedź: I'm from Poland. I'm Polish. Pod spodem: from plus kraj, I'm plus narodowość.">
+      <defs><marker id="a-k4en-kr-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="10" width="230" height="62" rx="16" class="f1 s1"/>
+      <text x="125" y="38" class="tx-b" text-anchor="middle">Where are you from?</text>
+      <text x="125" y="60" class="tx-s" text-anchor="middle">Skąd jesteś?</text>
+      <path d="M200,76 C230,90 250,92 270,96" class="ln s2" marker-end="url(#a-k4en-kr-1)"/>
+      <rect x="160" y="96" width="230" height="62" rx="16" class="f3 s3"/>
+      <text x="275" y="124" class="tx-b" text-anchor="middle">I'm from Poland.</text>
+      <text x="275" y="148" class="tx-b" text-anchor="middle">I'm Polish.</text>
+      <text x="80" y="122" class="tx-b" style="font-size:34px" text-anchor="middle">🌍</text>
+      <text x="100" y="186" class="tx" text-anchor="middle">from + <tspan class="t1">kraj</tspan></text>
+      <text x="290" y="186" class="tx" text-anchor="middle">I'm + <tspan class="t3">narodowość</tspan></text>
+      <text x="200" y="206" class="tx-s" text-anchor="middle">jedno i drugie – wielką literą</text>
+    </svg>`,
+    text: `<p>Gdy kogoś poznajesz, często pytasz: <b>Where are you from?</b> – Skąd jesteś? Odpowiadasz na dwa sposoby: krajem – <i>I'm from <b>Poland</b></i> – albo narodowością – <i>I'm <b>Polish</b></i>.</p>
+      <p>Pytasz o kogoś innego? <i>Where <b>is he</b> from?</i> – <i>He's from Spain. He's Spanish.</i></p>`,
+    remember: 'from + kraj (from Poland) · I\'m + narodowość (I\'m Polish). Oba słowa wielką literą.',
+    hook: 'Po „from” stoi zawsze <b>miejsce</b> – jak na kopercie: list <b>z</b> Polski.',
+    check: { q: 'Uzupełnij: „I\'m from France. I\'m ___.”', options: ['French', 'France', 'Frenchish'], answer: 0, explain: 'France to kraj (Francja), French – narodowość i język (francuski).' },
+  },
+  {
+    title: 'Kraj i narodowość – trzy rodziny końcówek',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Trzy kolumny końcówek narodowości. -ish: Poland Polish, Spain Spanish, England English. -an: Germany German, Italy Italian, the USA American. -ese: China Chinese, Japan Japanese. Wyjątek: France French.">
+      <rect x="8" y="10" width="124" height="180" rx="12" class="f1 s1"/>
+      <rect x="138" y="10" width="124" height="180" rx="12" class="f3 s3"/>
+      <rect x="268" y="10" width="124" height="180" rx="12" class="f5 s5"/>
+      <text x="70" y="36" class="tx-b t1" text-anchor="middle">-ish</text>
+      <text x="200" y="36" class="tx-b t3" text-anchor="middle">-an</text>
+      <text x="330" y="36" class="tx-b t5" text-anchor="middle">-ese</text>
+      <g class="tx-s" text-anchor="middle">
+        <text x="70" y="62">Poland</text><text x="70" y="110">Spain</text><text x="70" y="158">England</text>
+        <text x="200" y="62">Germany</text><text x="200" y="110">Italy</text><text x="200" y="158">the USA</text>
+        <text x="330" y="62">China</text><text x="330" y="110">Japan</text>
+      </g>
+      <g class="tx-b" text-anchor="middle">
+        <text x="70" y="84">Polish</text><text x="70" y="132">Spanish</text><text x="70" y="180">English</text>
+        <text x="200" y="84">German</text><text x="200" y="132">Italian</text><text x="200" y="180">American</text>
+        <text x="330" y="84">Chinese</text><text x="330" y="132">Japanese</text>
+      </g>
+      <text x="200" y="212" class="tx" text-anchor="middle">wyjątek: France → <tspan class="t2">French</tspan></text>
+    </svg>`,
+    text: `<p>Narodowość tworzy się od nazwy kraju, często jedną z trzech końcówek: <b>-ish</b> (Polish, Spanish, English), <b>-an</b> (German, Italian, American) albo <b>-ese</b> (Chinese, Japanese).</p>
+      <p>Niektóre trzeba po prostu zapamiętać: France → <b>French</b>. Nazwa języka często brzmi tak samo jak narodowość: <i>I'm Polish. I speak Polish and English.</i></p>`,
+    remember: 'Kraje, narodowości i języki – zawsze <b>wielką literą</b>: Poland, Polish, English.',
+    hook: 'Trzy rodziny: <b>-ish</b> (Polish, English, Spanish), <b>-an</b> (German, Italian, American), <b>-ese</b> (Chinese, Japanese).',
+    check: { q: 'China → ?', options: ['Chinese', 'Chinish', 'Chinan'], answer: 0, explain: 'Chiny to China, a chiński, Chińczyk – Chinese (jak Japanese).' },
+  },
+  {
+    title: 'Gdzie mówi się po angielsku?',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Schemat: the UK, stolica London, ma cztery części: England, Scotland, Wales, Northern Ireland. Obok osobno: Ireland, stolica Dublin, oraz the USA, stolica Washington.">
+      <rect x="8" y="10" width="236" height="210" rx="14" class="f1 s1"/>
+      <text x="126" y="36" class="tx-b" text-anchor="middle">the UK</text>
+      <text x="126" y="56" class="tx-s" text-anchor="middle">Wielka Brytania · stolica: London</text>
+      <g class="bg ln">
+        <rect x="20" y="68" width="104" height="66" rx="10"/><rect x="130" y="68" width="104" height="66" rx="10"/>
+        <rect x="20" y="142" width="104" height="66" rx="10"/><rect x="130" y="142" width="104" height="66" rx="10"/>
+      </g>
+      <text x="72" y="98" class="tx-b" text-anchor="middle">England</text><text x="72" y="120" class="tx-s" text-anchor="middle">Anglia</text>
+      <text x="182" y="98" class="tx-b" text-anchor="middle">Scotland</text><text x="182" y="120" class="tx-s" text-anchor="middle">Szkocja</text>
+      <text x="72" y="172" class="tx-b" text-anchor="middle">Wales</text><text x="72" y="194" class="tx-s" text-anchor="middle">Walia</text>
+      <text x="182" y="166" class="tx-s" text-anchor="middle">Northern</text><text x="182" y="182" class="tx-s" text-anchor="middle">Ireland</text><text x="182" y="200" class="tx-s" text-anchor="middle">Irlandia Płn.</text>
+      <rect x="256" y="10" width="136" height="100" rx="14" class="f3 s3"/>
+      <text x="324" y="44" class="tx-b" text-anchor="middle">Ireland</text>
+      <text x="324" y="66" class="tx-s" text-anchor="middle">Irlandia</text>
+      <text x="324" y="92" class="tx-s" text-anchor="middle">stolica: Dublin</text>
+      <rect x="256" y="120" width="136" height="100" rx="14" class="f2 s2"/>
+      <text x="324" y="154" class="tx-b" text-anchor="middle">the USA</text>
+      <text x="324" y="176" class="tx-s" text-anchor="middle">Stany Zjednoczone</text>
+      <text x="324" y="202" class="tx-s" text-anchor="middle">stolica: Washington</text>
+    </svg>`,
+    text: `<p>Po angielsku mówi się w wielu krajach, m.in. w Wielkiej Brytanii, Irlandii, Stanach Zjednoczonych, Kanadzie i Australii.</p>
+      <p><b>The UK</b> (Wielka Brytania) ma cztery części: Anglię, Szkocję, Walię i Irlandię Północną. Stolica to <b>London</b>. <b>Ireland</b> (Irlandia) to osobne państwo ze stolicą w Dublinie.</p>`,
+    remember: 'Ktoś z Wielkiej Brytanii jest <b>British</b>. „English” – tylko ktoś z Anglii (i język angielski).',
+    hook: 'The UK to drużyna z czterema zawodnikami: England, Scotland, Wales i Northern Ireland.',
+    check: { q: 'Ktoś ze Szkocji (Scotland) jest…', options: ['British', 'English', 'Irish'], answer: 0, explain: 'Szkocja należy do Wielkiej Brytanii, więc Szkot jest British (i Scottish), ale nie English.' },
+  },
+  {
+    title: 'Słowa pytające – „wh-”',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Osiem kafelków ze słowami pytającymi: What – co, Where – gdzie, Who – kto, When – kiedy, Why – dlaczego, How – jak, How old – ile lat, How many – ile">
+      <g class="f4 s4">
+        <rect x="8" y="10" width="90" height="90" rx="10"/><rect x="106" y="10" width="90" height="90" rx="10"/><rect x="204" y="10" width="90" height="90" rx="10"/><rect x="302" y="10" width="90" height="90" rx="10"/>
+        <rect x="8" y="110" width="90" height="90" rx="10"/><rect x="106" y="110" width="90" height="90" rx="10"/><rect x="204" y="110" width="90" height="90" rx="10"/><rect x="302" y="110" width="90" height="90" rx="10"/>
+      </g>
+      <g text-anchor="middle" style="font-size:24px" class="tx-b">
+        <text x="53" y="40">❓</text><text x="151" y="40">📍</text><text x="249" y="40">🙋</text><text x="347" y="40">📅</text>
+        <text x="53" y="140">🤔</text><text x="151" y="140">🛠️</text><text x="249" y="140">🎂</text><text x="347" y="140">🔢</text>
+      </g>
+      <g class="tx-b" text-anchor="middle">
+        <text x="53" y="68">What?</text><text x="151" y="68">Where?</text><text x="249" y="68">Who?</text><text x="347" y="68">When?</text>
+        <text x="53" y="168">Why?</text><text x="151" y="168">How?</text><text x="249" y="168" style="font-size:15px">How old?</text><text x="347" y="168" style="font-size:15px">How many?</text>
+      </g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="53" y="90">co? jaki?</text><text x="151" y="90">gdzie?</text><text x="249" y="90">kto?</text><text x="347" y="90">kiedy?</text>
+        <text x="53" y="190">dlaczego?</text><text x="151" y="190">jak?</text><text x="249" y="190">ile lat?</text><text x="347" y="190">ile?</text>
+      </g>
+    </svg>`,
+    text: `<p>Większość słów pytających zaczyna się od <b>wh-</b>: <b>What</b> (co?), <b>Where</b> (gdzie?), <b>Who</b> (kto?), <b>When</b> (kiedy?), <b>Why</b> (dlaczego?). Do tej rodziny należy też <b>How</b> (jak?).</p>
+      <p>Z „how” powstają kolejne pytania: <b>How old?</b> (ile lat?), <b>How many?</b> (ile?). Przydają się też <b>What colour?</b> (jakiego koloru?) i <b>What time?</b> (o której?). Na pytanie „Why?” odpowiadasz: <i>Because…</i> (ponieważ…).</p>`,
+    remember: 'Najpierw zobacz, o co pytasz: osoba – Who, miejsce – Where, czas – When, powód – Why.',
+    hook: '<b>Wh</b>o? – <b>W</b>ho to „<b>h</b>u” – „kto tu?”. <b>Wh</b>ere ma w środku <b>here</b> (tutaj) – pyta o miejsce.',
+    check: { q: 'Uzupełnij: „___ is your teacher?” – „Mrs Smith.”', options: ['Who', 'Where', 'When'], answer: 0, explain: 'Odpowiedź to osoba, więc pytamy „Who?” – kto?' },
+  },
+  {
+    title: 'Szyk pytania – jak klocki',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Klocki pytań. Where, are, you, from? Where, do, you, live? Pod spodem źle: Where you are from? Dobrze: Where are you from?">
+      <g class="f1 s1"><rect x="10" y="14" width="96" height="44" rx="8"/></g>
+      <rect x="218" y="74" width="96" height="44" rx="8" class="f5 s5"/>
+      <rect x="112" y="14" width="66" height="44" rx="8" class="f2 s2"/>
+      <rect x="184" y="14" width="66" height="44" rx="8" class="f3 s3"/>
+      <rect x="256" y="14" width="96" height="44" rx="8" class="f5 s5"/>
+      <g class="f1 s1"><rect x="10" y="74" width="96" height="44" rx="8"/></g>
+      <rect x="112" y="74" width="44" height="44" rx="8" class="f2 s2"/>
+      <rect x="162" y="74" width="50" height="44" rx="8" class="f3 s3"/>
+      <g class="tx-b" text-anchor="middle">
+        <text x="58" y="42">Where</text><text x="145" y="42">are</text><text x="217" y="42">you</text><text x="304" y="42">from?</text>
+        <text x="58" y="102">Where</text><text x="134" y="102">do</text><text x="187" y="102">you</text><text x="266" y="102">live?</text>
+      </g>
+      <text x="58" y="138" class="tx-s t1" text-anchor="middle">słowo pytające</text>
+      <text x="145" y="138" class="tx-s t2" text-anchor="middle">are / do</text>
+      <text x="217" y="138" class="tx-s t3" text-anchor="middle">osoba</text>
+      <line x1="10" y1="152" x2="390" y2="152" class="ln-thin"/>
+      <text x="100" y="182" class="tx t2" text-anchor="middle">✗ Where you are from?</text>
+      <text x="300" y="182" class="tx t3" text-anchor="middle">✓ Where are you from?</text>
+      <text x="200" y="210" class="tx-s" text-anchor="middle">„are” albo „do” stoi przed osobą</text>
+    </svg>`,
+    text: `<p>Pytanie budujesz jak z klocków: <b>słowo pytające</b> → <b>is / are</b> → <b>osoba</b>: <i>Where are you from? What is your name?</i></p>
+      <p>Gdy w zdaniu jest inny czasownik, pomaga <b>do / does</b>: <i>Where <b>do</b> you live?</i> (Gdzie mieszkasz?) <i>What <b>does</b> she like?</i> (Co ona lubi?) – po „does” czasownik jest bez -s.</p>`,
+    remember: 'Słowo pytające → is / are / do / does → osoba → reszta. Nie: „Where you are from?”.',
+    hook: 'W pytaniu „are” i „do” przeskakują <b>przed</b> osobę – jak kolega, który przepuszcza cię w drzwiach, tylko odwrotnie 😉.',
+    check: { q: 'Które pytanie jest poprawne?', options: ['What does she like?', 'What she likes?', 'What does she likes?'], answer: 0, explain: 'Słowo pytające, „does”, osoba i czasownik bez -s: What does she like?' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['angielski/czyje-to'] = [
+  {
+    title: 'Mój, twój, jego… – my, your, his',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Siedem par kafelków: I – my, you – your, he – his, she – her, it – its, we – our, they – their">
+      <g class="f1 s1">
+        <rect x="8" y="10" width="90" height="84" rx="10"/><rect x="106" y="10" width="90" height="84" rx="10"/><rect x="204" y="10" width="90" height="84" rx="10"/><rect x="302" y="10" width="90" height="84" rx="10"/>
+        <rect x="57" y="106" width="90" height="84" rx="10"/><rect x="155" y="106" width="90" height="84" rx="10"/><rect x="253" y="106" width="90" height="84" rx="10"/>
+      </g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="53" y="32">I</text><text x="151" y="32">you</text><text x="249" y="32">he</text><text x="347" y="32">she</text>
+        <text x="102" y="128">it</text><text x="200" y="128">we</text><text x="298" y="128">they</text>
+      </g>
+      <g class="tx-b t1" text-anchor="middle">
+        <text x="53" y="60">my</text><text x="151" y="60">your</text><text x="249" y="60">his</text><text x="347" y="60">her</text>
+        <text x="102" y="156">its</text><text x="200" y="156">our</text><text x="298" y="156">their</text>
+      </g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="53" y="82">mój</text><text x="151" y="82">twój, wasz</text><text x="249" y="82">jego</text><text x="347" y="82">jej</text>
+        <text x="102" y="178">jego, jej</text><text x="200" y="178">nasz</text><text x="298" y="178">ich</text>
+      </g>
+    </svg>`,
+    text: `<p>Gdy chcesz powiedzieć, do kogo coś należy, używasz słów: <b>my</b> (mój), <b>your</b> (twój, wasz), <b>his</b> (jego), <b>her</b> (jej), <b>its</b> (jego, jej – o zwierzęciu albo rzeczy), <b>our</b> (nasz), <b>their</b> (ich).</p>
+      <p>Stawiasz je przed rzeczą: <i>my phone, our house, their car</i>. Nie zmieniają się – <i>my</i> pasuje i do „mój”, i do „moja”, i do „moje”.</p>`,
+    remember: 'I – my · you – your · he – his · she – her · it – its · we – our · they – their.',
+    hook: 'Powtarzaj parami jak wyliczankę: I – my, you – your, he – his, she – her, it – its, we – our, they – their. Zauważ: <b>the</b>y i <b>the</b>ir zaczynają się tak samo.',
+    check: { q: 'Kasia ma kota. „___ cat is white.”', options: ['Her', 'His', 'Its'], answer: 0, explain: 'Kot należy do Kasi (dziewczynki), więc „her cat” – jej kot.' },
+  },
+  {
+    title: 'His czy her? Patrz na właściciela',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Chłopiec z rowerem: his bike – jego rower. Dziewczynka z rowerem: her bike – jej rower. Słowo zależy od właściciela.">
+      <rect x="10" y="10" width="185" height="140" rx="12" class="f1 s1"/>
+      <rect x="205" y="10" width="185" height="140" rx="12" class="f2 s2"/>
+      <text x="102" y="62" class="tx-b" style="font-size:36px" text-anchor="middle">👦🚲</text>
+      <text x="297" y="62" class="tx-b" style="font-size:36px" text-anchor="middle">👧🚲</text>
+      <text x="102" y="104" class="tx-b" text-anchor="middle"><tspan class="t1">his</tspan> bike</text>
+      <text x="297" y="104" class="tx-b" text-anchor="middle"><tspan class="t2">her</tspan> bike</text>
+      <text x="102" y="130" class="tx-s" text-anchor="middle">jego rower</text>
+      <text x="297" y="130" class="tx-s" text-anchor="middle">jej rower</text>
+      <text x="200" y="180" class="tx" text-anchor="middle">rower ten sam – inny właściciel</text>
+    </svg>`,
+    text: `<p>Po polsku mówisz „jego” albo „jej” – po angielsku tak samo: <b>his</b> – gdy właścicielem jest chłopak albo mężczyzna, <b>her</b> – gdy dziewczyna albo kobieta.</p>
+      <p>Nie patrz na rzecz, tylko na <b>właściciela</b>: <i>Tom and <b>his</b> sister</i> (Tom i jego siostra), <i>Ola and <b>her</b> brother</i> (Ola i jej brat).</p>`,
+    remember: 'his – rzecz chłopca, mężczyzny · her – rzecz dziewczynki, kobiety.',
+    hook: 'Pary: <b>he → his</b> (on → jego), <b>she → her</b> (ona → jej). Najpierw ustal, czy właściciel to „he”, czy „she”.',
+    check: { q: 'Uzupełnij: „Mr Brown is our teacher. ___ car is red.”', options: ['His', 'Her', 'Their'], answer: 0, explain: 'Mr Brown to pan, więc jego samochód – „his car”.' },
+  },
+  {
+    title: 'Czyje to? – „whose” i ’s',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Pytanie: Whose bag is this? – Czyja to torba? Odpowiedź: It's Tom's. Porównanie szyku: po polsku rower Kuby, po angielsku Kuba's bike – właściciel stoi przed rzeczą.">
+      <defs><marker id="a-k4en-cz-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="10" width="200" height="56" rx="14" class="f4 s4"/>
+      <text x="110" y="36" class="tx-b" text-anchor="middle">Whose bag is this?</text>
+      <text x="110" y="56" class="tx-s" text-anchor="middle">Czyja to torba?</text>
+      <rect x="230" y="10" width="160" height="56" rx="14" class="f3 s3"/>
+      <text x="310" y="36" class="tx-b" text-anchor="middle">It's Tom's.</text>
+      <text x="310" y="56" class="tx-s" text-anchor="middle">To (torba) Toma.</text>
+      <text x="20" y="112" class="tx-s">po polsku:</text>
+      <rect x="110" y="88" width="90" height="36" rx="8" class="f1 s1"/><rect x="210" y="88" width="90" height="36" rx="8" class="f2 s2"/>
+      <text x="155" y="112" class="tx-b" text-anchor="middle">rower</text><text x="255" y="112" class="tx-b" text-anchor="middle">Kuby</text>
+      <text x="20" y="176" class="tx-s">po angielsku:</text>
+      <rect x="110" y="152" width="90" height="36" rx="8" class="f2 s2"/><rect x="210" y="152" width="90" height="36" rx="8" class="f1 s1"/>
+      <text x="155" y="176" class="tx-b" text-anchor="middle">Kuba's</text><text x="255" y="176" class="tx-b" text-anchor="middle">bike</text>
+      <path d="M255,128 C240,140 190,140 170,150" class="ln s2" marker-end="url(#a-k4en-cz-1)"/>
+      <text x="312" y="146" class="tx-s">właściciel</text><text x="312" y="162" class="tx-s">+ ’s – przed</text><text x="312" y="178" class="tx-s">rzeczą</text>
+    </svg>`,
+    text: `<p>„Czyj? czyja? czyje?” to po angielsku <b>whose</b>: <i>Whose bag is this?</i> – Czyja to torba?</p>
+      <p>Odpowiadasz, dodając do właściciela <b>’s</b>: <i>It's <b>Tom's</b>.</i> – To torba Toma. Właściciel stoi <b>przed</b> rzeczą: <i>Kuba's bike, my sister's room</i>. Gdy właścicieli jest kilku i słowo kończy się na -s, dopisujesz sam apostrof: <i>my parents' car</i>.</p>`,
+    remember: 'Whose…? – czyj? · właściciel + ’s + rzecz: Ola\'s cat (kot Oli).',
+    hook: 'Apostrof z „s” to jak przypięta karteczka z imieniem: <b>Tom\'s</b> – „to jest Toma”.',
+    check: { q: 'Jak powiesz „pokój Oli”?', options: ['Ola\'s room', 'room Ola\'s', 'Ola room\'s'], answer: 0, explain: 'Właściciel z ’s stoi przed rzeczą: Ola\'s room.' },
+  },
+  {
+    title: 'This, that, these, those',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Tabela dwa na dwa. Blisko: this – jedna rzecz, these – wiele. Daleko: that – jedna rzecz, those – wiele. Przykłady z ołówkami blisko i gwiazdami daleko.">
+      <text x="160" y="24" class="tx-b" text-anchor="middle">jedna</text>
+      <text x="310" y="24" class="tx-b" text-anchor="middle">wiele</text>
+      <text x="44" y="84" class="tx-b" text-anchor="middle">tu 👇</text>
+      <text x="44" y="104" class="tx-s" text-anchor="middle">blisko</text>
+      <text x="44" y="164" class="tx-b" text-anchor="middle">tam 👉</text>
+      <text x="44" y="184" class="tx-s" text-anchor="middle">daleko</text>
+      <rect x="90" y="36" width="140" height="80" rx="12" class="f1 s1"/>
+      <rect x="240" y="36" width="140" height="80" rx="12" class="f1 s1"/>
+      <rect x="90" y="124" width="140" height="80" rx="12" class="f5 s5"/>
+      <rect x="240" y="124" width="140" height="80" rx="12" class="f5 s5"/>
+      <text x="160" y="68" class="tx-b" text-anchor="middle">this ✏️</text>
+      <text x="310" y="68" class="tx-b" text-anchor="middle">these ✏️✏️✏️</text>
+      <text x="160" y="156" class="tx-b" text-anchor="middle">that ⭐</text>
+      <text x="310" y="156" class="tx-b" text-anchor="middle">those ⭐⭐⭐</text>
+      <g class="tx-s" text-anchor="middle">
+        <text x="160" y="96">ten, ta, to + is</text><text x="310" y="96">te, ci + are</text>
+        <text x="160" y="184">tamten, tamto + is</text><text x="310" y="184">tamte, tamci + are</text>
+      </g>
+    </svg>`,
+    text: `<p>O rzeczach <b>blisko</b> ciebie mówisz <b>this</b> (jedna) i <b>these</b> (wiele): <i>This is my pen. These are my keys.</i></p>
+      <p>O rzeczach <b>daleko</b> – <b>that</b> (jedna) i <b>those</b> (wiele): <i>That is a bird. Those are trees.</i> Pytasz: <i>What's this?</i> – <i>It's a kite.</i> · <i>What are these?</i> – <i>They're crayons.</i></p>`,
+    remember: 'this / that + <b>is</b> (jedna rzecz) · these / those + <b>are</b> (wiele rzeczy).',
+    hook: 'Dwie pary: <b>this → these</b> (tu), <b>that → those</b> (tam). „These” i „those” są dłuższe, bo rzeczy jest więcej.',
+    check: { q: 'Wskazujesz kilka ptaków daleko na niebie: „Look at ___ birds!”', options: ['those', 'these', 'that'], answer: 0, explain: 'Ptaki są daleko i jest ich kilka – „those”.' },
+  },
+  {
+    title: 'Uwaga, pułapki!',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Porównanie źle i dobrze: it's tail – its tail; This are my keys – These are my keys; bike Kuba's – Kuba's bike; Ola and his mum – Ola and her mum.">
+      <text x="110" y="22" class="tx-b t2" text-anchor="middle">✗ źle</text>
+      <text x="300" y="22" class="tx-b t3" text-anchor="middle">✓ dobrze</text>
+      <line x1="10" y1="34" x2="390" y2="34" class="ln-thin"/>
+      <text x="110" y="66" class="tx t2" text-anchor="middle">The dog wags it's tail.</text><text x="300" y="66" class="tx t3" text-anchor="middle">… its tail.</text>
+      <text x="110" y="108" class="tx t2" text-anchor="middle">This are my keys.</text><text x="300" y="108" class="tx t3" text-anchor="middle">These are my keys.</text>
+      <text x="110" y="150" class="tx t2" text-anchor="middle">bike Kuba's</text><text x="300" y="150" class="tx t3" text-anchor="middle">Kuba's bike</text>
+      <text x="110" y="192" class="tx t2" text-anchor="middle">Ola and his mum</text><text x="300" y="192" class="tx t3" text-anchor="middle">Ola and her mum</text>
+    </svg>`,
+    text: `<ul>
+      <li><b>its</b> (jego, jej) piszesz bez apostrofu. <b>it's</b> to skrót od „it is”.</li>
+      <li>Wiele rzeczy blisko to <b>these are</b>, nie „this are”.</li>
+      <li>Właściciel z ’s stoi <b>przed</b> rzeczą: Kuba's bike.</li>
+      <li>Ola to dziewczynka, więc jej mama to <b>her</b> mum.</li>
+    </ul>`,
+    remember: 'its ≠ it\'s · this is / these are · właściciel ’s przed rzeczą · his – jego, her – jej.',
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['angielski/policzalne'] = [
+  {
+    title: 'Policzysz czy nie policzysz?',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Dwie ramki. Policzalne: jabłka i jajka – an apple, three apples. Niepoliczalne: mleko, chleb, ser – milk, bread, cheese, bez a lub an i bez liczby mnogiej.">
+      <rect x="10" y="10" width="185" height="190" rx="12" class="f3 s3"/>
+      <rect x="205" y="10" width="185" height="190" rx="12" class="f2 s2"/>
+      <text x="102" y="38" class="tx-b" text-anchor="middle">policzalne</text>
+      <text x="297" y="38" class="tx-b" text-anchor="middle">niepoliczalne</text>
+      <text x="102" y="82" class="tx-b" style="font-size:30px" text-anchor="middle">🍎🍎🍎</text>
+      <text x="297" y="82" class="tx-b" style="font-size:30px" text-anchor="middle">🥛🍞🧀</text>
+      <text x="102" y="114" class="tx" text-anchor="middle">an apple</text>
+      <text x="102" y="138" class="tx" text-anchor="middle">three apples</text>
+      <text x="102" y="162" class="tx" text-anchor="middle">an egg – six eggs</text>
+      <text x="102" y="188" class="tx-s" text-anchor="middle">a / an, liczba mnoga -s</text>
+      <text x="297" y="114" class="tx" text-anchor="middle">milk, water</text>
+      <text x="297" y="138" class="tx" text-anchor="middle">bread, cheese</text>
+      <text x="297" y="162" class="tx" text-anchor="middle">rice, sugar</text>
+      <text x="297" y="188" class="tx-s" text-anchor="middle">bez a / an, bez -s</text>
+    </svg>`,
+    text: `<p>Niektóre rzeczy liczysz na sztuki: jedno jabłko, trzy jabłka. To rzeczowniki <b>policzalne</b>: <i>an apple – three apples</i>.</p>
+      <p>Innych nie liczysz na sztuki – to płyny i produkty sypkie albo takie, które się kroi: <i>milk, water, juice, bread, cheese, rice, sugar</i>. To rzeczowniki <b>niepoliczalne</b>: nie mają liczby mnogiej i nie stawiasz przed nimi <b>a / an</b>.</p>`,
+    remember: 'Niepoliczalne: bez a / an i bez -s. Nie mówimy „a bread” ani „breads”.',
+    hook: 'Spróbuj policzyć mleko: „jedno mleko, dwa mleka”? Nie da się – mleko jest niepoliczalne. Jabłka policzysz na palcach.',
+    check: { q: 'Który rzeczownik jest niepoliczalny?', options: ['rice', 'egg', 'banana'], answer: 0, explain: 'Ryżu nie liczymy na ziarenka – rice jest niepoliczalny.' },
+  },
+  {
+    title: 'Butelka, szklanka, kromka – liczymy porcje',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Sześć kafelków: a bottle of water – butelka wody, a glass of milk – szklanka mleka, a slice of bread – kromka chleba, a piece of cheese – kawałek sera, a jar of honey – słoik miodu, a cup of tea – filiżanka herbaty">
+      <g class="f4 s4">
+        <rect x="8" y="10" width="124" height="92" rx="10"/><rect x="138" y="10" width="124" height="92" rx="10"/><rect x="268" y="10" width="124" height="92" rx="10"/>
+        <rect x="8" y="110" width="124" height="92" rx="10"/><rect x="138" y="110" width="124" height="92" rx="10"/><rect x="268" y="110" width="124" height="92" rx="10"/>
+      </g>
+      <g class="tx-b" style="font-size:26px" text-anchor="middle">
+        <text x="70" y="42">💧</text><text x="200" y="42">🥛</text><text x="330" y="42">🍞</text>
+        <text x="70" y="142">🧀</text><text x="200" y="142">🍯</text><text x="330" y="142">☕</text>
+      </g>
+      <g class="tx" text-anchor="middle">
+        <text x="70" y="70">a bottle of</text><text x="200" y="70">a glass of</text><text x="330" y="70">a slice of</text>
+        <text x="70" y="170">a piece of</text><text x="200" y="170">a jar of</text><text x="330" y="170">a cup of</text>
+      </g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="70" y="92">butelka wody</text><text x="200" y="92">szklanka mleka</text><text x="330" y="92">kromka chleba</text>
+        <text x="70" y="192">kawałek sera</text><text x="200" y="192">słoik miodu</text><text x="330" y="192">filiżanka herbaty</text>
+      </g>
+    </svg>`,
+    text: `<p>Chcesz policzyć coś niepoliczalnego? Policz <b>porcje</b> albo <b>opakowania</b>: <i>a bottle of water</i> (butelka wody), <i>a glass of milk</i> (szklanka mleka), <i>a slice of bread</i> (kromka chleba), <i>a piece of cheese</i> (kawałek sera), <i>a jar of honey</i> (słoik miodu).</p>
+      <p>Więcej porcji? Liczba mnoga jest przy opakowaniu: <i>two bottles of water, three slices of bread</i>.</p>`,
+    remember: 'a bottle / glass / cup / slice / piece / jar <b>of</b> + niepoliczalne.',
+    hook: 'Niepoliczalne „wkładasz do pudełka” – i liczysz pudełka.',
+    check: { q: 'Co znaczy „a jar of honey”?', options: ['słoik miodu', 'szklanka miodu', 'kawałek miodu'], answer: 0, explain: 'Jar to słoik. A jar of honey – słoik miodu.' },
+  },
+  {
+    title: '„some” i „any”',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Tabela: twierdzenie – some: There are some eggs. Przeczenie – any: There isn't any milk. Pytanie – any: Are there any apples? Prośba i propozycja – some: Can I have some water?">
+      <rect x="10" y="10" width="380" height="46" rx="10" class="f3 s3"/>
+      <rect x="10" y="62" width="380" height="46" rx="10" class="f2 s2"/>
+      <rect x="10" y="114" width="380" height="46" rx="10" class="f1 s1"/>
+      <rect x="10" y="166" width="380" height="46" rx="10" class="f4 s4"/>
+      <text x="30" y="40" class="tx-b">➕</text><text x="30" y="92" class="tx-b">➖</text><text x="30" y="144" class="tx-b">❓</text><text x="30" y="196" class="tx-b">🙏</text>
+      <text x="66" y="40" class="tx-b t3">some</text><text x="66" y="92" class="tx-b t2">any</text><text x="66" y="144" class="tx-b t1">any</text><text x="66" y="196" class="tx-b">some</text>
+      <g class="tx">
+        <text x="130" y="40">There are some eggs.</text>
+        <text x="130" y="92">There isn't any milk.</text>
+        <text x="130" y="144">Are there any apples?</text>
+        <text x="130" y="196">Can I have some water?</text>
+      </g>
+    </svg>`,
+    text: `<p><b>some</b> (trochę, kilka) – w zdaniach twierdzących: <i>There are some eggs. I've got some milk.</i></p>
+      <p><b>any</b> – w przeczeniach i pytaniach: <i>There isn't any milk.</i> (Nie ma mleka.) <i>Are there any apples?</i> (Czy są jakieś jabłka?) Wyjątek: gdy <b>prosisz</b> albo <b>proponujesz</b>, mówisz „some”: <i>Can I have some water? Would you like some juice?</i></p>`,
+    remember: '➕ some · ➖ any · ❓ any · 🙏 prośba i propozycja – some.',
+    hook: '<b>Any</b> lubi pytania i „nie”: <i>Are there any…? There isn\'t any…</i> <b>Some</b> lubi „tak” i grzeczne prośby.',
+    check: { q: 'Uzupełnij: „I haven\'t got ___ sweets.”', options: ['any', 'some', 'a'], answer: 0, explain: 'To przeczenie (haven\'t), więc „any”: nie mam (żadnych) cukierków.' },
+  },
+  {
+    title: '„a lot of” – dużo',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Trzy szklanki: pusta – There isn't any juice, do połowy – There is some juice, pełna – There is a lot of juice. Pod spodem: a lot of apples i a lot of milk.">
+      <g class="ln"><path d="M40,30 L56,130 L104,130 L120,30"/><path d="M160,30 L176,130 L224,130 L240,30"/><path d="M280,30 L296,130 L344,130 L360,30"/></g>
+      <path d="M168,82 L176,130 L224,130 L232,82 Z" class="f2 s2"/>
+      <path d="M284,40 L296,130 L344,130 L356,40 Z" class="f2 s2"/>
+      <text x="80" y="156" class="tx-s" text-anchor="middle">isn't any juice</text>
+      <text x="200" y="156" class="tx-s" text-anchor="middle">some juice</text>
+      <text x="320" y="156" class="tx-b t2" text-anchor="middle">a lot of juice</text>
+      <text x="200" y="190" class="tx" text-anchor="middle">a lot of <tspan class="t3">apples</tspan> · a lot of <tspan class="t1">milk</tspan></text>
+    </svg>`,
+    text: `<p><b>A lot of</b> znaczy „dużo”. To wygodne słowo, bo pasuje i do policzalnych, i do niepoliczalnych: <i>a lot of apples</i> (dużo jabłek), <i>a lot of milk</i> (dużo mleka).</p>
+      <p>Przykłady: <i>I eat a lot of fruit.</i> – Jem dużo owoców. <i>There are a lot of books in the library.</i> – W bibliotece jest dużo książek.</p>`,
+    remember: 'a lot of + policzalne lub niepoliczalne = dużo.',
+    hook: 'Nie wiesz, czy coś jest policzalne? Gdy jest tego dużo, „a lot of” pasuje zawsze.',
+    check: { q: 'Uzupełnij: „There are ___ books in the library.”', options: ['a lot of', 'any', 'an'], answer: 0, explain: 'To twierdzenie i chodzi o dużo książek – „a lot of”.' },
+  },
+  {
+    title: 'Ile? – „How many” czy „How much”?',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Dwie kolumny. How many z policzalnymi: apples, eggs, sweets. How much z niepoliczalnymi: milk, water, rice. Pod spodem: How much is it? – Ile to kosztuje?">
+      <rect x="10" y="10" width="185" height="150" rx="12" class="f3 s3"/>
+      <rect x="205" y="10" width="185" height="150" rx="12" class="f2 s2"/>
+      <text x="102" y="40" class="tx-b" text-anchor="middle">How many…?</text>
+      <text x="297" y="40" class="tx-b" text-anchor="middle">How much…?</text>
+      <text x="102" y="62" class="tx-s" text-anchor="middle">policzalne</text>
+      <text x="297" y="62" class="tx-s" text-anchor="middle">niepoliczalne</text>
+      <g class="tx" text-anchor="middle">
+        <text x="102" y="92">🍎 apples</text><text x="102" y="116">🥚 eggs</text><text x="102" y="140">🍬 sweets</text>
+        <text x="297" y="92">🥛 milk</text><text x="297" y="116">💧 water</text><text x="297" y="140">🍚 rice</text>
+      </g>
+      <rect x="10" y="168" width="380" height="34" rx="10" class="f4 s4"/>
+      <text x="200" y="191" class="tx" text-anchor="middle">How much is it? – Ile to kosztuje? 💰</text>
+    </svg>`,
+    text: `<p>Pytasz „ile?” o rzeczy <b>policzalne</b> – <b>How many</b>: <i>How many eggs are there?</i> – <i>There are six.</i></p>
+      <p>O rzeczy <b>niepoliczalne</b> – <b>How much</b>: <i>How much milk is there?</i> – <i>There's a lot.</i> A <i>How much is it?</i> znasz już ze sklepu – to pytanie o cenę.</p>`,
+    remember: 'How many + policzalne (l. mnoga) · How much + niepoliczalne.',
+    hook: '<b>Many</b> – <b>m</b>nóstwo sztuk do policzenia; <b>much</b> – „masa”, której nie policzysz.',
+    check: { q: 'Uzupełnij: „___ water do you drink every day?”', options: ['How much', 'How many', 'How old'], answer: 0, explain: 'Woda jest niepoliczalna, więc „How much?”.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['angielski/w-miescie'] = [
+  {
+    title: 'Miejsca w mieście',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Osiem kafelków z miejscami: library – biblioteka, hospital – szpital, post office – poczta, cinema – kino, museum – muzeum, café – kawiarnia, train station – dworzec, swimming pool – basen">
+      <g class="f1 s1">
+        <rect x="8" y="10" width="90" height="92" rx="10"/><rect x="106" y="10" width="90" height="92" rx="10"/><rect x="204" y="10" width="90" height="92" rx="10"/><rect x="302" y="10" width="90" height="92" rx="10"/>
+        <rect x="8" y="110" width="90" height="92" rx="10"/><rect x="106" y="110" width="90" height="92" rx="10"/><rect x="204" y="110" width="90" height="92" rx="10"/><rect x="302" y="110" width="90" height="92" rx="10"/>
+      </g>
+      <g class="tx-b" style="font-size:24px" text-anchor="middle">
+        <text x="53" y="40">📚</text><text x="151" y="40">🏥</text><text x="249" y="40">📮</text><text x="347" y="40">🎬</text>
+        <text x="53" y="140">🏛️</text><text x="151" y="140">☕</text><text x="249" y="140">🚉</text><text x="347" y="140">🏊</text>
+      </g>
+      <g class="tx-b" style="font-size:14px" text-anchor="middle">
+        <text x="53" y="68">library</text><text x="151" y="68">hospital</text><text x="249" y="68">post office</text><text x="347" y="68">cinema</text>
+        <text x="53" y="168">museum</text><text x="151" y="168">café</text><text x="249" y="168">train station</text><text x="347" y="160">swimming</text><text x="347" y="176">pool</text>
+      </g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="53" y="90">biblioteka</text><text x="151" y="90">szpital</text><text x="249" y="90">poczta</text><text x="347" y="90">kino</text>
+        <text x="53" y="190">muzeum</text><text x="151" y="190">kawiarnia</text><text x="249" y="190">dworzec</text><text x="347" y="195">basen</text>
+      </g>
+    </svg>`,
+    text: `<p>W mieście są: <b>library</b> (biblioteka), <b>hospital</b> (szpital), <b>post office</b> (poczta), <b>cinema</b> (kino), <b>museum</b> (muzeum), <b>café</b> (kawiarnia), <b>train station</b> (dworzec kolejowy), <b>swimming pool</b> (basen).</p>
+      <p>Przydadzą się też: <b>bus stop</b> (przystanek), <b>chemist's</b> (apteka), <b>police station</b> (komisariat policji), <b>shopping centre</b> (centrum handlowe).</p>`,
+    remember: 'library = biblioteka (nie księgarnia – to bookshop) · chemist\'s = apteka.',
+    hook: '<b>Library</b> – „librarian” to bibliotekarz. Księgarnię zapamiętasz łatwo: <b>book</b> + <b>shop</b> – sklep z książkami.',
+    check: { q: 'Gdzie obejrzysz film?', options: ['at the cinema', 'at the post office', 'at the library'], answer: 0, explain: 'Cinema to kino.' },
+  },
+  {
+    title: 'Gdzie to jest? next to, opposite, between',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Plan ulicy. Po jednej stronie: bank, café, cinema. Kawiarnia jest między bankiem a kinem. Po drugiej stronie, naprzeciwko kawiarni, park.">
+      <rect x="10" y="20" width="110" height="66" rx="8" class="f1 s1"/>
+      <rect x="145" y="20" width="110" height="66" rx="8" class="f2 s2"/>
+      <rect x="280" y="20" width="110" height="66" rx="8" class="f5 s5"/>
+      <text x="65" y="50" class="tx-b" text-anchor="middle">🏦 bank</text>
+      <text x="200" y="50" class="tx-b" text-anchor="middle">☕ café</text>
+      <text x="335" y="50" class="tx-b" text-anchor="middle">🎬 cinema</text>
+      <text x="200" y="74" class="tx-s" text-anchor="middle">between</text>
+      <rect x="10" y="98" width="380" height="36" class="bg ln-thin"/>
+      <line x1="20" y1="116" x2="380" y2="116" class="ln-thin dash"/>
+      <text x="340" y="112" class="tx-s" text-anchor="middle">street</text>
+      <rect x="145" y="146" width="110" height="56" rx="8" class="f3 s3"/>
+      <text x="200" y="180" class="tx-b" text-anchor="middle">🌳 park</text>
+      <line x1="200" y1="88" x2="200" y2="144" class="ln s3 dash"/>
+      <text x="212" y="130" class="tx-s t3">opposite</text>
+      <text x="10" y="170" class="tx-s">The café is</text><text x="10" y="188" class="tx-s">between the bank</text><text x="10" y="206" class="tx-s">and the cinema.</text>
+      <text x="270" y="170" class="tx-s">The park is</text><text x="270" y="188" class="tx-s">opposite</text><text x="270" y="206" class="tx-s">the café.</text>
+    </svg>`,
+    text: `<p>Znasz już <b>next to</b> (obok): <i>The bank is next to the café.</i> Teraz dwa nowe słowa:</p>
+      <ul><li><b>opposite</b> – naprzeciwko (po drugiej stronie ulicy): <i>The park is opposite the café.</i></li>
+      <li><b>between</b> – między (dwiema rzeczami): <i>The café is between the bank and the cinema.</i></li></ul>`,
+    remember: 'next to – obok · opposite – naprzeciwko · between… and… – między… a…',
+    hook: '<b>Between</b> ma w środku „<b>tw</b>” jak <b>tw</b>o – zawsze są dwie rzeczy, a ty pośrodku.',
+    check: { q: 'Spójrz na plan. Gdzie jest kino?', options: ['next to the café', 'opposite the bank', 'between the park and the bank'], answer: 0, explain: 'Kino (cinema) stoi tuż obok kawiarni (café).' },
+  },
+  {
+    title: 'Jak dojść? Wskazujemy drogę',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Skrzyżowanie i trzy strzałki: w górę – Go straight on, idź prosto; w lewo – Turn left, skręć w lewo; w prawo – Turn right, skręć w prawo.">
+      <defs><marker id="a-k4en-mi-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t3"/></marker>
+      <marker id="a-k4en-mi-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t1"/></marker>
+      <marker id="a-k4en-mi-3" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="170" y="10" width="60" height="190" class="bg ln-thin"/>
+      <rect x="60" y="80" width="280" height="56" class="bg ln-thin"/>
+      <text x="200" y="196" class="tx-b" style="font-size:22px" text-anchor="middle">🚶</text>
+      <path d="M200,170 L200,30" class="ln s3 sw" marker-end="url(#a-k4en-mi-1)"/>
+      <path d="M192,108 L80,108" class="ln s1 sw" marker-end="url(#a-k4en-mi-2)"/>
+      <path d="M208,108 L320,108" class="ln s2 sw" marker-end="url(#a-k4en-mi-3)"/>
+      <text x="240" y="34" class="tx-b t3">Go straight on.</text>
+      <text x="240" y="54" class="tx-s">Idź prosto.</text>
+      <text x="10" y="162" class="tx-b t1">Turn left.</text>
+      <text x="10" y="182" class="tx-s">Skręć w lewo.</text>
+      <text x="390" y="162" class="tx-b t2" text-anchor="end">Turn right.</text>
+      <text x="390" y="182" class="tx-s" text-anchor="end">Skręć w prawo.</text>
+    </svg>`,
+    text: `<p>Pytasz o drogę grzecznie: <b>Excuse me, where's the museum?</b> – Przepraszam, gdzie jest muzeum?</p>
+      <p>Odpowiedzi: <b>Go straight on.</b> – Idź prosto. <b>Turn left / right.</b> – Skręć w lewo / w prawo. <b>It's on the left / right.</b> – Jest po lewej / po prawej stronie.</p>`,
+    remember: 'Go straight on – prosto · Turn left / right – skręć · on the left / right – po lewej / prawej.',
+    hook: '<b>L</b>eft – <b>l</b>ewa. Pokaż lewą dłoń: kciuk i palec wskazujący tworzą literę <b>L</b>.',
+    check: { q: 'Co znaczy „It\'s on the left”?', options: ['Jest po lewej.', 'Skręć w lewo.', 'Idź prosto.'], answer: 0, explain: '„On the left” – po lewej stronie. „Skręć w lewo” to „Turn left”.' },
+  },
+  {
+    title: 'Present continuous – co dzieje się teraz',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Wzór: osoba plus am, is albo are plus czasownik z ing. I'm reading. She's swimming – podwójne m. They're dancing – nieme e znika.">
+      <rect x="10" y="10" width="380" height="40" rx="10" class="f4 s4"/>
+      <text x="200" y="37" class="tx-b" text-anchor="middle">am / is / are + czasownik-<tspan class="t2">ing</tspan></text>
+      <g class="tx-b">
+        <text x="20" y="88">I'm read<tspan class="t2">ing</tspan>.</text>
+        <text x="20" y="128">She's swim<tspan class="t2">ming</tspan>.</text>
+        <text x="20" y="168">They're danc<tspan class="t2">ing</tspan>.</text>
+      </g>
+      <g class="tx-s">
+        <text x="230" y="80">zwykle: + ing</text><text x="230" y="96">read → reading</text>
+        <text x="230" y="120">krótkie: podwój</text><text x="230" y="136">swim → swimming</text>
+        <text x="230" y="160">nieme -e znika</text><text x="230" y="176">dance → dancing</text>
+      </g>
+      <text x="200" y="208" class="tx" text-anchor="middle">⏰ now · at the moment · Look! · Listen!</text>
+    </svg>`,
+    text: `<p>Gdy mówisz o tym, co dzieje się <b>właśnie teraz</b>, używasz czasu <b>present continuous</b>: <b>am / is / are</b> + czasownik z końcówką <b>-ing</b>. <i>I'm reading.</i> – (Teraz) czytam.</p>
+      <p>Przeczenie: <i>I'm not sleeping. He isn't eating.</i> Pisownia: zwykle +ing (play → playing), nieme -e znika (write → writing), w krótkich wyrazach podwajasz ostatnią spółgłoskę (run → running, sit → sitting).</p>`,
+    remember: 'am / is / are + -ing = dzieje się TERAZ. Sygnały: now, at the moment, Look!, Listen!',
+    hook: 'Końcówka <b>-ing</b> to jak kamera „na żywo” 🎥 – pokazuje to, co dzieje się w tej chwili.',
+    check: { q: 'Uzupełnij: „We ___ lunch now.”', options: ['are having', 'is having', 'having'], answer: 0, explain: 'Z „we” łączymy „are”: We are having lunch now.' },
+  },
+  {
+    title: 'Teraz czy zwykle? Pytania i odpowiedzi',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Porównanie: zwykle – I usually walk to school, present simple. Dziś, teraz – Today I'm going by bus, present continuous. Pod spodem pytanie: Are you reading? Yes, I am. No, I'm not.">
+      <rect x="10" y="10" width="185" height="110" rx="12" class="f1 s1"/>
+      <rect x="205" y="10" width="185" height="110" rx="12" class="f2 s2"/>
+      <text x="102" y="36" class="tx-b" text-anchor="middle">🔁 zwykle</text>
+      <text x="297" y="36" class="tx-b" text-anchor="middle">⏰ teraz</text>
+      <text x="102" y="64" class="tx" text-anchor="middle">I usually walk</text>
+      <text x="102" y="86" class="tx" text-anchor="middle">to school.</text>
+      <text x="102" y="110" class="tx-s" text-anchor="middle">present simple</text>
+      <text x="297" y="64" class="tx" text-anchor="middle">Today I'm going</text>
+      <text x="297" y="86" class="tx" text-anchor="middle">by bus.</text>
+      <text x="297" y="110" class="tx-s" text-anchor="middle">present continuous</text>
+      <rect x="10" y="132" width="380" height="78" rx="12" class="f4 s4"/>
+      <text x="200" y="160" class="tx-b" text-anchor="middle">Are you reading?</text>
+      <text x="200" y="190" class="tx" text-anchor="middle">Yes, I am. / No, I'm not.</text>
+    </svg>`,
+    text: `<p>To, co robisz <b>zwykle</b>, opisuje present simple: <i>I usually walk to school.</i> To, co dzieje się <b>teraz</b> – present continuous: <i>Today I'm going by bus.</i></p>
+      <p>Pytanie: przestaw „am / is / are” na początek: <i>Are you reading? Is she swimming?</i> Krótkie odpowiedzi: <i>Yes, I am. / No, I'm not. · Yes, she is. / No, she isn't.</i> Pytanie o czynność: <b>What are you doing?</b> – <i>I'm doing my homework.</i></p>`,
+    remember: 'Zwykle → present simple · teraz → present continuous. Are you…? – Yes, I am. / No, I\'m not.',
+    hook: '„What are you doing?” zadaje mama, gdy wchodzi do pokoju – i chce wiedzieć, co robisz <b>w tej chwili</b>.',
+    check: { q: 'Mama pyta: „Is Tom sleeping?”. Tom śpi. Co odpowiesz?', options: ['Yes, he is.', 'Yes, he does.', 'Yes, he sleeping.'], answer: 0, explain: 'Pytanie zaczyna się od „Is”, więc odpowiadamy „Yes, he is.”.' },
   },
 ];
