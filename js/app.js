@@ -63,6 +63,12 @@
     // Dyktando (ścieżki z czytaniem na głos): zadania type 'input' z polem say – tekst czyta syntezator, uczeń wpisuje.
     dyktando: { icon: '✏️', name: 'Dyktando ze słuchu', about: 'Kliknij 🔊 i posłuchaj. Wpisz wyraz albo zdanie, które usłyszysz. Możesz słuchać, ile razy chcesz. Uważaj na ó i u, rz i ż, ch i h oraz na wielkie litery!' },
   };
+  // W ścieżkach bez egzaminu opisy trybów nie odwołują się do arkusza CKE.
+  if (!TRACK.exam) {
+    MODES.czytanie.about = 'Przeczytaj tekst i rozwiąż zadania. Do tekstu możesz wracać, ile chcesz. Zadania otwarte ocenisz sam według przykładowej odpowiedzi.';
+    MODES.reading.about = 'Przeczytaj krótki tekst po angielsku i rozwiąż zadania. Polecenia są po polsku. Do tekstu możesz wracać, ile chcesz.';
+    MODES.listening.about = 'Posłuchaj nagrania i rozwiąż zadania. Nagrania czyta głos syntezatora mowy w przeglądarce – posłuchaj każdego dwa razy, możesz też włączyć wolniejsze tempo. Transkrypcję zobaczysz po sprawdzeniu odpowiedzi.';
+  }
   const setsOf = (s, mode) => EXERCISES.filter((e) => e.subject === s.id && (!mode || e.mode === mode));
   const setKey = (e) => `${e.subject}/${e.mode}/${e.id}`;
   const lessonOf = (s, t) => LESSONS[`${s.id}/${t.id}`];
@@ -344,12 +350,12 @@
       ${allTasks.length || setsOf(s).length ? `<h2 class="sec">${WORDS.practice}</h2>
       <div class="modes">
         ${allTasks.length ? `<a class="mode" href="#/s/${s.id}/zadania"><span class="icon">✍️</span><b>Zadania otwarte</b>
-          <small class="muted">${allTasks.length} zadań · ${taskScore(allTasks)}</small></a>` : ''}
+          <small class="muted">${allTasks.length} ${plural(allTasks.length, ['zadanie', 'zadania', 'zadań'])} · ${taskScore(allTasks)}</small></a>` : ''}
         ${Object.keys(MODES).filter((m) => setsOf(s, m).length).map((m) => {
           const list = setsOf(s, m);
           const done = list.filter((e) => state.sets[setKey(e)] != null).length;
           return `<a class="mode" href="#/s/${s.id}/cw/${m}"><span class="icon">${MODES[m].icon}</span><b>${MODES[m].name}</b>
-            <small class="muted">${list.length} zestawów${done ? ` · zrobione ${done}` : ''}</small></a>`;
+            <small class="muted">${list.length} ${plural(list.length, ['zestaw', 'zestawy', 'zestawów'])}${done ? ` · zrobione ${done}` : ''}</small></a>`;
         }).join('')}
       </div>
       <h2 class="sec">Działy</h2>` : s.topics.some((t) => t.extra) ? '<h2 class="sec">Działy</h2>' : ''}
@@ -506,7 +512,7 @@
         ${list.map((e) => {
           const b = state.sets[setKey(e)];
           return `<li><a href="#/s/${s.id}/cw/${mode}/${e.id}">
-            <span>${esc(e.title)}<br><small class="muted">${esc(e.kind || '')} · ${e.items.length} zadań</small></span>
+            <span>${esc(e.title)}<br><small class="muted">${esc(e.kind || '')} · ${e.items.length} ${plural(e.items.length, ['zadanie', 'zadania', 'zadań'])}</small></span>
             <span class="badge ${badgeClass(b)}">${scoreBadge(b)}</span>
           </a></li>`;
         }).join('')}
@@ -586,7 +592,7 @@
         b.classList.add('on');
         speakRecording(e.audio[k], rate, () => b.classList.remove('on'));
         counts[k]++;
-        app.querySelector(`#cnt${k}`).textContent = counts[k] >= 2 ? `odsłuchane ${counts[k]}× – na egzaminie usłyszysz 2×` : `odsłuchane ${counts[k]}×`;
+        app.querySelector(`#cnt${k}`).textContent = counts[k] >= 2 && TRACK.exam ? `odsłuchane ${counts[k]}× – na egzaminie usłyszysz 2×` : `odsłuchane ${counts[k]}×`;
       }));
       app.querySelector('#stop').onclick = () => { stopSpeech(); app.querySelectorAll('.play').forEach((x) => x.classList.remove('on')); };
     }
