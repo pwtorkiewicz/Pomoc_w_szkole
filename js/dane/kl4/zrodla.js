@@ -36,6 +36,7 @@ window.SOURCES = {
       <li>Ustawa o godle, barwach i hymnie RP – tekst jednolity Dz.U. 2025 poz. 299: eli.gov.pl/eli/DU/2025/299/ogl</li>
       <li>Hymn Unii Europejskiej – european-union.europa.eu (Symbole UE)</li>
       <li>Ukształtowanie terenu, rzeki i jeziora, metale i stopy – materiały ZPE: zpe.gov.pl (m.in. „Jaki kształt może mieć powierzchnia Ziemi?”, „Nad brzegiem rzeki”, „System rzeczny”)</li>
+      <li>Krainy geograficzne Polski i lądolód skandynawski – materiały ZPE: zpe.gov.pl (lekcja o pasach rzeźby Polski: zpe.gov.pl/a/DIlK4PLj6; „Młodoglacjalny czy staroglacjalny?”: zpe.gov.pl/a/przeczytaj/DV0xUhxT2)</li>
       <li>Historia starożytna (Egipt, pismo, Grecja, Rzym) – materiały Zintegrowanej Platformy Edukacyjnej: zpe.gov.pl (m.in. „Egipt – państwo nad Nilem”, „Pismo – wielki wynalazek człowieka”, „Demokratyczne Ateny”, „Rzym – od osady do imperium”, „Osiągnięcia starożytnych Rzymian”)</li>
       <li>Chrześcijaństwo, średniowiecze i początki Polski – materiały ZPE: zpe.gov.pl (m.in. „Narodziny i rozwój chrześcijaństwa”, „Społeczeństwo stanowe w średniowieczu”, „Architektura i plastyka romańska w Polsce”, „Panowanie Mieszka I”, „Koronacja Bolesława Chrobrego – 1025 rok”, „Kronika polska Galla tzw. Anonima”); dzieje.pl; historia Uniwersytetu Jagiellońskiego (uj.edu.pl)</li>
     </ul>`,

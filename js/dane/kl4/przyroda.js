@@ -1491,5 +1491,250 @@ window.SUBJECTS.push({
         { id: 'oq4n91', q: 'Prawda czy fałsz?\nGęste futro i puch chronią zwierzęta przed utratą ciepła.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Między włosami i piórami jest powietrze, które słabo przewodzi ciepło – to naturalna izolacja.' },
       ],
     },
+
+    // ------------------------------------------------------------------
+    {
+      id: 'gestosc',
+      name: 'Gęstość, tonięcie i pływanie',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 3 „Materia i jej przemiany w przyrodzie”, wym. 10 (pojęcie gęstości na podstawie modelu, zależność gęstości od temperatury i stanu skupienia – zwłaszcza woda i jej znaczenie w przyrodzie); dz. 4 „Organizmy i ekosystemy”, wym. 7 (tonięcie i pływanie ciał a gęstość, codzienne zastosowania, przystosowania organizmów do życia w wodzie, wpływ kształtu ciała na pływanie). Bez wzoru na gęstość i bez jednostek gęstości (fizyka kl. VII). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Co to jest gęstość?</h3>
+        <p>Weź do ręki kostkę styropianu i kostkę żelaza tej samej wielkości. Żelazna jest dużo cięższa, bo w tej samej objętości mieści się więcej masy. Mówimy, że żelazo ma większą <b>gęstość</b>.</p>
+        <p><b>Gęstość</b> mówi, ile masy mieści się w określonej objętości substancji. W modelu drobinowym: im ciaśniej i im cięższe drobiny są upakowane, tym większa gęstość.</p>
+        <div class="tip">💡 Kilogram styropianu i kilogram żelaza ważą tyle samo – ale styropian zajmuje dużo więcej miejsca, bo ma mniejszą gęstość.</div>
+        <h3>Tonie czy pływa?</h3>
+        <ul>
+          <li>Ciało o gęstości <b>większej</b> niż gęstość wody – <b>tonie</b> (kamień, gwóźdź, moneta).</li>
+          <li>Ciało o gęstości <b>mniejszej</b> niż gęstość wody – <b>pływa</b> (korek, styropian, większość drewna, lód).</li>
+          <li>Tak samo ciecze: olej ma mniejszą gęstość niż woda, więc zbiera się na jej powierzchni.</li>
+        </ul>
+        <h3>Kształt ma znaczenie</h3>
+        <p>Kulka z plasteliny tonie. Ale gdy z tej samej plasteliny ulepisz <b>łódeczkę</b>, będzie pływać. W łódce jest dużo powietrza, więc cała łódka (plastelina razem z powietrzem w środku) jest „lżejsza” niż tyle samo wody. Dlatego pływają ogromne stalowe statki.</p>
+        <h3>Woda słona i słodka</h3>
+        <p>Słona woda ma większą gęstość niż słodka. Dlatego w morzu łatwiej się unosić niż w jeziorze. Jajko tonie w wodzie z kranu, ale wypływa w bardzo mocno osolonej wodzie.</p>
+        <h3>Gęstość a temperatura i stan skupienia</h3>
+        <ul>
+          <li>Ciepłe powietrze ma mniejszą gęstość niż zimne – dlatego unosi się do góry (tak lata balon na ogrzane powietrze).</li>
+          <li>Ciepła woda unosi się nad zimną – latem w jeziorze na powierzchni woda jest najcieplejsza.</li>
+          <li><b>Woda jest wyjątkowa</b>: lód ma mniejszą gęstość niż woda w stanie ciekłym, dlatego pływa. Większość substancji ma w stanie stałym większą gęstość niż w ciekłym – woda nie.</li>
+          <li>Woda ma największą gęstość w temperaturze ok. <b>4°C</b>. Zimą taka woda opada na dno jeziora, a lód tworzy się na górze. Lód działa jak przykrywka – jezioro nie zamarza do dna i ryby przeżywają zimę.</li>
+        </ul>
+        <h3>Przystosowania do życia w wodzie</h3>
+        <ul>
+          <li>Wiele ryb ma <b>pęcherz pławny</b> – worek wypełniony gazem. Napełniając go albo opróżniając, ryba unosi się albo opada bez wysiłku.</li>
+          <li>Opływowy kształt ciała (ryby, foki) ułatwia poruszanie się w wodzie.</li>
+          <li>Rośliny wodne (np. grzybienie, czyli lilie wodne) mają w liściach i łodygach dużo powietrza, więc ich liście unoszą się na wodzie.</li>
+        </ul>
+        <h3>Na co dzień</h3>
+        <p>Kamizelka ratunkowa i koło ratunkowe są wypełnione lekkim materiałem albo powietrzem – zmniejszają gęstość „człowieka z kamizelką” i utrzymują go na wodzie.</p>
+      `,
+      flashcards: [
+        ['Gęstość', 'Ile masy mieści się w określonej objętości substancji'],
+        ['Kiedy ciało tonie w wodzie?', 'Gdy ma większą gęstość niż woda'],
+        ['Kiedy ciało pływa po wodzie?', 'Gdy ma mniejszą gęstość niż woda'],
+        ['Olej i woda w jednym naczyniu', 'Olej na górze – ma mniejszą gęstość'],
+        ['Dlaczego pływa stalowy statek?', 'Dzięki kształtowi – w środku jest dużo powietrza'],
+        ['Woda słona a słodka', 'Słona ma większą gęstość – łatwiej się w niej unosić'],
+        ['Dlaczego lód pływa?', 'Ma mniejszą gęstość niż woda w stanie ciekłym'],
+        ['Największa gęstość wody', 'W temperaturze ok. 4°C – taka woda opada na dno jeziora'],
+        ['Dlaczego jeziora nie zamarzają do dna?', 'Lód tworzy się na górze i jak przykrywka chroni wodę pod spodem'],
+        ['Pęcherz pławny', 'Worek z gazem u wielu ryb – pomaga unosić się i opadać'],
+        ['Ciepłe powietrze', 'Ma mniejszą gęstość niż zimne – unosi się do góry'],
+      ],
+      questions: [
+        { id: 'fus9yk', q: 'Co to jest gęstość?', options: ['ile masy mieści się w określonej objętości substancji', 'jak wysoko coś leży', 'jak szybko coś się rozpuszcza', 'jaką coś ma temperaturę'], answer: 0, explain: 'Gęstość mówi, ile masy „upchnięto” w danej objętości. Żelazo ma dużą gęstość, styropian – małą.' },
+        { id: '7cpnyb', q: 'Masz dwie kostki tej samej wielkości: z żelaza i ze styropianu. Która ma większą gęstość?', options: ['żelazna', 'styropianowa', 'mają taką samą'], noShuffle: true, answer: 0, explain: 'W tej samej objętości żelazo ma dużo większą masę niż styropian, więc ma większą gęstość.' },
+        { id: '7f197w', q: 'Kiedy przedmiot tonie w wodzie?', options: ['gdy ma większą gęstość niż woda', 'gdy ma mniejszą gęstość niż woda', 'gdy jest duży', 'gdy jest kolorowy'], answer: 0, explain: 'Tonie to, co ma większą gęstość niż woda. Wielkość przedmiotu nie decyduje – wielki pień drzewa pływa, a mały gwóźdź tonie.' },
+        { id: '43m3fh', q: 'Który przedmiot będzie pływał po wodzie?', options: ['korek', 'gwóźdź', 'moneta', 'kamyk'], answer: 0, explain: 'Korek ma mniejszą gęstość niż woda, więc pływa. Gwóźdź, moneta i kamyk toną.' },
+        { id: 'xd9b6f', q: 'Do szklanki z wodą wlano olej. Gdzie znajdzie się olej?', options: ['na powierzchni wody', 'na dnie', 'wymiesza się z wodą na stałe', 'zniknie'], answer: 0, explain: 'Olej ma mniejszą gęstość niż woda i nie miesza się z nią, więc zbiera się na górze.' },
+        { id: 'u3a9gx', q: 'Kulka z plasteliny tonie. Co zrobić z tą samą plasteliną, żeby pływała?', options: ['ulepić z niej łódeczkę', 'zgnieść ją mocniej', 'podzielić na dwie kulki', 'pomalować ją'], answer: 0, explain: 'Łódeczka zamyka w sobie dużo powietrza. Kształt zmienia zdolność do pływania – tak pływają stalowe statki.' },
+        { id: 'ksbdlw', q: 'Dlaczego ogromny stalowy statek nie tonie?', options: ['dzięki kształtowi – w kadłubie jest dużo powietrza', 'bo stal ma mniejszą gęstość niż woda', 'bo statek ciągle płynie', 'bo woda w morzu jest zimna'], answer: 0, explain: 'Stal sama tonie. Statek pływa, bo jego kadłub jest pusty w środku – stal razem z powietrzem w kadłubie jest „lżejsza” niż tyle samo wody.' },
+        { id: 'sim7ar', q: 'W której wodzie łatwiej się unosić?', options: ['w słonej wodzie morskiej', 'w słodkiej wodzie w jeziorze', 'w obu tak samo'], noShuffle: true, answer: 0, explain: 'Słona woda ma większą gęstość niż słodka, więc mocniej utrzymuje ciało na powierzchni.' },
+        { id: '3xiz45', q: 'Jajko tonie w wodzie z kranu. Co się stanie, gdy rozpuścisz w wodzie dużo soli?', options: ['jajko wypłynie', 'jajko pęknie', 'jajko zacznie się gotować', 'nic się nie zmieni'], answer: 0, explain: 'Bardzo słona woda ma większą gęstość niż jajko, więc jajko wypływa.' },
+        { id: '3hfywp', q: 'Dlaczego lód pływa po wodzie?', options: ['ma mniejszą gęstość niż woda w stanie ciekłym', 'ma większą gęstość niż woda', 'jest bardzo zimny', 'jest twardy'], answer: 0, explain: 'Woda jest wyjątkowa: w stanie stałym (lód) ma mniejszą gęstość niż w stanie ciekłym. Dlatego lód unosi się na wodzie.' },
+        { id: 'kg8i0j', q: 'W jakiej temperaturze woda ma największą gęstość?', options: ['ok. 4°C', '0°C', '100°C', '20°C'], answer: 0, explain: 'Najgęstsza jest woda o temperaturze ok. 4°C. Zimą zbiera się ona na dnie jezior.' },
+        { id: 'erut07', q: 'Dlaczego ryby mogą przeżyć zimę w zamarzniętym jeziorze?', options: ['lód tworzy się na górze, a pod nim zostaje woda', 'ryby zamarzają i odmarzają wiosną', 'jezioro zamarza od dna', 'ryby przenoszą się do morza'], answer: 0, explain: 'Lód ma mniejszą gęstość niż woda, więc zostaje na górze i jak przykrywka chroni wodę pod spodem przed zamarznięciem.' },
+        { id: 'cdf4w3', q: 'Do czego służy rybom pęcherz pławny?', options: ['pomaga unosić się i opadać w wodzie', 'służy do trawienia', 'chroni przed drapieżnikami', 'wytwarza ikrę'], answer: 0, explain: 'Pęcherz pławny to worek z gazem. Ryba zmienia ilość gazu i dzięki temu bez wysiłku unosi się albo opada.' },
+        { id: '0ms0kk', q: 'Dlaczego liście grzybieni (lilii wodnych) unoszą się na wodzie?', options: ['mają w sobie dużo powietrza', 'są przyklejone do dna', 'są bardzo ciężkie', 'nie mają łodyg'], answer: 0, explain: 'Rośliny wodne mają w liściach i łodygach przestrzenie wypełnione powietrzem – to zmniejsza ich gęstość.' },
+        { id: 'q0pdpo', q: 'Dlaczego balon na ogrzane powietrze unosi się do góry?', options: ['ciepłe powietrze ma mniejszą gęstość niż zimne', 'ciepłe powietrze ma większą gęstość niż zimne', 'balon jest przyciągany przez Słońce', 'balon nie ma masy'], answer: 0, explain: 'Po ogrzaniu powietrze rozszerza się, a jego gęstość maleje. Lżejsze, ciepłe powietrze unosi się nad zimnym.' },
+        { id: 'kbu5uy', q: 'Jak działa kamizelka ratunkowa?', options: ['jest wypełniona lekkim materiałem albo powietrzem i utrzymuje człowieka na wodzie', 'ogrzewa wodę wokół człowieka', 'zwiększa masę człowieka', 'odpycha wodę magnesem'], answer: 0, explain: 'Lekki materiał albo powietrze w kamizelce sprawiają, że człowiek razem z kamizelką ma mniejszą gęstość niż woda.' },
+        { id: 'wjilr3', q: 'Latem w jeziorze najcieplejsza woda jest…', options: ['przy powierzchni', 'przy dnie', 'wszędzie taka sama'], noShuffle: true, answer: 0, explain: 'Ciepła woda ma mniejszą gęstość niż zimna, więc zostaje na górze.' },
+        { id: 'ht4nky', q: 'Prawda czy fałsz?\nDuże i ciężkie przedmioty zawsze toną, a małe i lekkie zawsze pływają.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Decyduje gęstość, nie wielkość. Ogromny pień drzewa pływa, a mała moneta tonie.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
+    {
+      id: 'sily',
+      name: 'Grawitacja, tarcie i opór powietrza',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 5 „Planeta Ziemia”, wym. 5 (pomiar masy obiektów, działanie siły grawitacji ziemskiej), wym. 21 (zależność siły tarcia od różnych czynników, przykłady zmniejszania i zwiększania tarcia w przyrodzie); dz. 4 „Organizmy i ekosystemy”, wym. 3 (wspólne cechy organizmów zdolnych do lotu, zależność oporu powietrza od różnych czynników, zwiększanie i zmniejszanie oporu powietrza w przyrodzie). Bez jednostek siły i siłomierza (fizyka kl. VII). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Masa i jej pomiar</h3>
+        <p><b>Masa</b> mówi, ile jest substancji w danym ciele. Mierzymy ją <b>wagą</b> (kuchenną, łazienkową, sklepową) w gramach (g), dekagramach (dag), kilogramach (kg) i tonach (t).</p>
+        <h3>Grawitacja</h3>
+        <p>Ziemia <b>przyciąga</b> wszystkie ciała – ciebie, piłkę, deszcz, Księżyc. To przyciąganie nazywamy <b>siłą grawitacji</b> (siłą ciężkości).</p>
+        <ul>
+          <li>Dzięki grawitacji upuszczony przedmiot spada <b>w dół</b>, a rzucona piłka wraca na ziemię.</li>
+          <li>Grawitacja sprawia, że woda w rzekach płynie z wyższych miejsc w niższe, a krople deszczu spadają na ziemię.</li>
+          <li>Grawitacja utrzymuje nas na powierzchni Ziemi – po każdej stronie globu „w dół” oznacza w stronę środka Ziemi.</li>
+          <li>Księżyc przyciąga słabiej niż Ziemia – ok. 6 razy. Astronauta ma na Księżycu taką samą masę, ale może skakać dużo wyżej.</li>
+        </ul>
+        <h3>Tarcie</h3>
+        <p><b>Tarcie</b> to siła, która <b>utrudnia przesuwanie</b> się jednego ciała po drugim. Działa przeciwnie do kierunku ruchu – dlatego toczona piłka w końcu się zatrzymuje.</p>
+        <p>Tarcie zależy od:</p>
+        <ul>
+          <li><b>rodzaju powierzchni</b> – po szorstkiej (dywan, asfalt) jest większe niż po gładkiej (lód, szkło),</li>
+          <li><b>nacisku</b> – im mocniej ciało naciska na podłoże (np. im cięższe pudło), tym trudniej je przesunąć.</li>
+        </ul>
+        <table>
+          <tr><th>Zwiększamy tarcie</th><th>Zmniejszamy tarcie</th></tr>
+          <tr><td>sypiemy piasek na oblodzony chodnik</td><td>smarujemy olejem łańcuch roweru i zawiasy</td></tr>
+          <tr><td>buty z bieżnikiem, opony zimowe</td><td>łyżwy i narty – gładkie płozy</td></tr>
+          <tr><td>szczecinki dżdżownicy zaczepiają się o glebę</td><td>śluz na ciele dżdżownicy i ślimaka</td></tr>
+          <tr><td></td><td>śliska skóra ryb pokryta śluzem</td></tr>
+        </table>
+        <div class="tip">💡 Tarcie bywa potrzebne: bez niego nie dałoby się chodzić – stopy ślizgałyby się jak na lodzie.</div>
+        <h3>Opór powietrza</h3>
+        <p><b>Opór powietrza</b> to siła, którą powietrze hamuje poruszające się w nim ciała. Czujesz ją, jadąc szybko na rowerze.</p>
+        <p>Opór powietrza jest większy, gdy:</p>
+        <ul>
+          <li>ciało ma <b>większą powierzchnię</b> zwróconą w kierunku ruchu (rozłożony spadochron, rozłożona kartka),</li>
+          <li>ciało porusza się <b>szybciej</b>.</li>
+        </ul>
+        <p>Opór jest mniejszy, gdy ciało ma <b>kształt opływowy</b> – wydłużony i zwężony z przodu, jak kropla, ryba czy ptak.</p>
+        <p>Doświadczenie: upuść jednocześnie płaską kartkę i taką samą kartkę zgniecioną w kulkę. Kulka spadnie szybciej – ma mniejszą powierzchnię, więc mniejszy opór.</p>
+        <h3>Latanie w przyrodzie</h3>
+        <ul>
+          <li>Organizmy latające (ptaki, owady, nietoperze) mają <b>skrzydła</b> i <b>lekkie ciało</b>.</li>
+          <li>Ptaki mają pióra, opływowy kształt ciała i lekkie kości – wiele z nich jest pustych w środku i wypełnionych powietrzem.</li>
+          <li>Lądując, ptak szeroko rozkłada skrzydła i ogon – <b>zwiększa opór</b> i zwalnia. Gdy nurkuje po zdobycz, składa skrzydła – <b>zmniejsza opór</b>.</li>
+          <li>Nasiona też „latają”: puch mniszka lekarskiego (dmuchawca) działa jak spadochron, a skrzydlaki klonu wirują jak śmigło – zwiększają opór, dzięki czemu wiatr niesie je daleko.</li>
+        </ul>
+      `,
+      flashcards: [
+        ['Masa', 'Ile jest substancji w ciele; mierzymy ją wagą (g, dag, kg, t)'],
+        ['Grawitacja', 'Przyciąganie ciał przez Ziemię – dlatego przedmioty spadają w dół'],
+        ['Grawitacja na Księżycu', 'Ok. 6 razy słabsza niż na Ziemi; masa się nie zmienia'],
+        ['Tarcie', 'Siła, która utrudnia przesuwanie się jednego ciała po drugim'],
+        ['Od czego zależy tarcie?', 'Od rodzaju powierzchni (szorstka – większe) i od nacisku'],
+        ['Jak zwiększyć tarcie?', 'Piasek na lodzie, bieżnik butów, opony zimowe'],
+        ['Jak zmniejszyć tarcie?', 'Smar, olej, gładkie płozy łyżew'],
+        ['Tarcie u dżdżownicy', 'Szczecinki zwiększają tarcie, śluz je zmniejsza'],
+        ['Opór powietrza', 'Siła, którą powietrze hamuje poruszające się ciała'],
+        ['Kiedy opór powietrza jest większy?', 'Przy większej powierzchni i większej prędkości'],
+        ['Kształt opływowy', 'Wydłużony, zwężony z przodu – zmniejsza opór'],
+        ['Wspólne cechy zwierząt latających', 'Skrzydła i lekkie ciało'],
+      ],
+      questions: [
+        { id: 'joy0w6', q: 'Czym mierzymy masę?', options: ['wagą', 'termometrem', 'linijką', 'kompasem'], answer: 0, explain: 'Masę mierzymy wagą – w gramach, dekagramach, kilogramach i tonach.' },
+        { id: '8ivwhw', q: 'Dlaczego upuszczony długopis spada na podłogę?', options: ['bo przyciąga go Ziemia – działa siła grawitacji', 'bo popycha go powietrze', 'bo działa tarcie', 'bo przyciąga go magnes w podłodze'], answer: 0, explain: 'Ziemia przyciąga wszystkie ciała. Ta siła to grawitacja (siła ciężkości).' },
+        { id: '06ywwi', q: 'Dzięki której sile woda w rzece płynie z gór w stronę morza?', options: ['grawitacji', 'tarcia', 'oporu powietrza', 'magnetyzmu'], answer: 0, explain: 'Grawitacja ciągnie wodę w dół, więc płynie ona z wyżej położonych miejsc w niżej położone.' },
+        { id: 'u8aow8', q: 'Astronauta poleciał na Księżyc. Co się zmieniło?', options: ['Księżyc przyciąga go słabiej niż Ziemia, więc skacze wyżej', 'jego masa zmalała 6 razy', 'przestała na niego działać jakakolwiek siła', 'jego masa wzrosła'], answer: 0, explain: 'Masa astronauty jest taka sama, ale Księżyc przyciąga ok. 6 razy słabiej niż Ziemia.' },
+        { id: 'n295ew', q: 'Co to jest tarcie?', options: ['siła, która utrudnia przesuwanie się jednego ciała po drugim', 'siła, z jaką Ziemia przyciąga ciała', 'przyciąganie przez magnes', 'siła, z jaką woda wypycha ciała do góry'], answer: 0, explain: 'Tarcie działa między stykającymi się powierzchniami i hamuje ruch.' },
+        { id: '8dpvjf', q: 'Po której powierzchni klocek przesunie się najłatwiej?', options: ['po gładkim lodzie', 'po szorstkim asfalcie', 'po dywanie', 'po piasku'], answer: 0, explain: 'Na gładkim lodzie tarcie jest najmniejsze. Szorstkie powierzchnie mają duże tarcie.' },
+        { id: '9rtzf1', q: 'Które pudło trudniej przesunąć po podłodze?', options: ['pudło pełne książek', 'puste pudło', 'oba tak samo'], noShuffle: true, answer: 0, explain: 'Pełne pudło mocniej naciska na podłogę, więc tarcie jest większe.' },
+        { id: 'cda4k7', q: 'Po co zimą sypie się piasek na oblodzony chodnik?', options: ['żeby zwiększyć tarcie i nie poślizgnąć się', 'żeby szybciej stopić lód', 'żeby zmniejszyć tarcie', 'żeby chodnik był ładniejszy'], answer: 0, explain: 'Piasek tworzy szorstką warstwę – tarcie rośnie, a buty się nie ślizgają.' },
+        { id: '9j57a6', q: 'Po co smaruje się olejem łańcuch roweru?', options: ['żeby zmniejszyć tarcie', 'żeby zwiększyć tarcie', 'żeby łańcuch był cięższy', 'żeby rower szybciej hamował'], answer: 0, explain: 'Smar i olej zmniejszają tarcie – części łatwiej się poruszają i mniej się zużywają.' },
+        { id: 'n8ottr', q: 'Jak dżdżownica zwiększa tarcie, gdy porusza się w glebie?', options: ['zaczepia się szczecinkami', 'wydziela śluz', 'zwija się w kłębek', 'zmienia kolor'], answer: 0, explain: 'Drobne szczecinki zaczepiają się o glebę i pomagają się przesuwać. Śluz – przeciwnie – zmniejsza tarcie.' },
+        { id: 'hubpvz', q: 'Co zmniejsza tarcie w przyrodzie?', options: ['śluz na ciele ślimaka', 'szczecinki dżdżownicy', 'bieżnik na butach', 'piasek na lodzie'], answer: 0, explain: 'Śluz sprawia, że ślimak łatwiej sunie po podłożu. Pozostałe przykłady zwiększają tarcie.' },
+        { id: '7nkhx5', q: 'Co to jest opór powietrza?', options: ['siła, którą powietrze hamuje poruszające się ciała', 'ciężar powietrza', 'ruch powietrza, czyli wiatr', 'siła przyciągania przez Ziemię'], answer: 0, explain: 'Opór powietrza hamuje ruch – czujesz go, jadąc szybko na rowerze.' },
+        { id: 'a9q81s', q: 'Upuszczasz jednocześnie płaską kartkę i taką samą kartkę zgniecioną w kulkę. Która spadnie szybciej?', options: ['zgnieciona w kulkę', 'płaska', 'spadną jednocześnie'], noShuffle: true, answer: 0, explain: 'Kulka ma mniejszą powierzchnię, więc mniejszy opór powietrza. Płaska kartka szybuje wolniej.' },
+        { id: 'w3fdxi', q: 'Dlaczego spadochron spowalnia spadanie?', options: ['ma dużą powierzchnię, więc opór powietrza jest duży', 'jest bardzo ciężki', 'zmniejsza grawitację', 'ma kształt opływowy'], answer: 0, explain: 'Rozłożony spadochron ma ogromną powierzchnię. Im większa powierzchnia, tym większy opór powietrza.' },
+        { id: 't9fept', q: 'Jaki kształt ma najmniejszy opór powietrza?', options: ['opływowy – wydłużony i zwężony z przodu', 'płaski jak talerz', 'sześcian', 'rozłożona parasolka'], answer: 0, explain: 'Kształt opływowy, jak u ryby czy ptaka, pozwala „przecinać” powietrze i wodę z małym oporem.' },
+        { id: 'p4emhl', q: 'Które cechy mają wspólne ptaki, owady i nietoperze?', options: ['skrzydła i lekkie ciało', 'pióra i dziób', 'łuski i płetwy', 'sierść i pazury'], answer: 0, explain: 'Wszystkie organizmy zdolne do lotu mają skrzydła i lekkie ciało. Pióra mają tylko ptaki.' },
+        { id: '6bynlf', q: 'Dlaczego kości wielu ptaków są puste w środku i wypełnione powietrzem?', options: ['bo są lżejsze, co ułatwia latanie', 'bo ptaki są małe', 'bo ptaki nie potrzebują szkieletu', 'bo pomagają ptakom pływać'], answer: 0, explain: 'Lekkie kości zmniejszają masę ciała ptaka – łatwiej mu wzbić się w powietrze.' },
+        { id: 'jta967', q: 'Co robi ptak, gdy chce wylądować i zwolnić?', options: ['szeroko rozkłada skrzydła i ogon', 'składa skrzydła', 'chowa nogi', 'zamyka oczy'], answer: 0, explain: 'Rozłożone skrzydła i ogon mają dużą powierzchnię – opór powietrza rośnie i ptak zwalnia.' },
+        { id: 'co4m91', q: 'Dzięki czemu nasiona mniszka lekarskiego (dmuchawca) lecą daleko z wiatrem?', options: ['puch działa jak spadochron i zwiększa opór powietrza', 'są bardzo ciężkie', 'mają kształt opływowy', 'przyciąga je Słońce'], answer: 0, explain: 'Puch ma dużą powierzchnię, więc nasionko opada powoli, a wiatr niesie je daleko.' },
+        { id: '2ex9p7', q: 'Prawda czy fałsz?\nTarcie jest zawsze szkodliwe.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Bez tarcia nie dałoby się chodzić ani hamować rowerem – stopy i opony ślizgałyby się jak na lodzie.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
+    {
+      id: 'krainy',
+      name: 'Krainy geograficzne Polski i lądolód',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 5 „Planeta Ziemia”, wym. 19 (krainy geograficzne Polski na mapie, ich położenie i krajobraz), wym. 20 (dlaczego lądolód nazywamy skandynawskim, zasięg maksymalny i zasięg ostatniego zlodowacenia, wpływ lądolodu na współczesną rzeźbę). Pasy rzeźby i przykłady krain – według ZPE (lekcja o pasach rzeźby Polski, zpe.gov.pl/a/DIlK4PLj6); lądolód – według ZPE („Młodoglacjalny czy staroglacjalny?”, zpe.gov.pl/a/przeczytaj/DV0xUhxT2: lądolód skandynawski nasuwał się z północy; w najdalszym zasięgu dosięgnął północnych stoków Karpat i Sudetów; ostatni raz osiągnął maksymalny zasięg ok. 20 tys. lat temu, a ok. 14 tys. lat temu opuścił teren Polski), sprawdzone 2.11.2026. Bez nazw zlodowaceń i dokładnego przebiegu granic (geografia kl. V–VIII). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Sześć pasów rzeźby</h3>
+        <p>Krainy geograficzne Polski układają się w <b>pasy</b> ciągnące się z zachodu na wschód. Od północy na południe:</p>
+        <table>
+          <tr><th>Pas</th><th>Przykłady krain</th><th>Krajobraz</th></tr>
+          <tr><td>1. <b>pobrzeża</b></td><td>Pobrzeże Szczecińskie, Koszalińskie, Gdańskie</td><td>wąski pas nad Bałtykiem; teren płaski lub lekko pofałdowany, plaże i wydmy</td></tr>
+          <tr><td>2. <b>pojezierza</b></td><td>Pojezierze Pomorskie, Mazurskie, Wielkopolskie</td><td>pofałdowany teren, liczne jeziora polodowcowe, wzgórza, duże lasy</td></tr>
+          <tr><td>3. <b>niziny środkowopolskie</b></td><td>Nizina Wielkopolska, Mazowiecka, Śląska, Podlaska</td><td>teren równinny, dużo pól uprawnych i łąk</td></tr>
+          <tr><td>4. <b>wyżyny</b></td><td>Wyżyna Śląska, Krakowsko-Częstochowska, Lubelska, Małopolska (z Górami Świętokrzyskimi)</td><td>teren wyżej położony, zróżnicowany: skałki i jaskinie, pola, zakłady przemysłowe</td></tr>
+          <tr><td>5. <b>kotliny podgórskie</b></td><td>Kotlina Oświęcimska, Kotlina Sandomierska</td><td>płaskie obniżenia u podnóża Karpat</td></tr>
+          <tr><td>6. <b>góry</b></td><td>Sudety (np. Karkonosze), Karpaty (np. Tatry, Pieniny, Beskidy, Bieszczady)</td><td>wysokie wzniesienia, strome stoki, głębokie doliny</td></tr>
+        </table>
+        <div class="tip">💡 Kolejność od morza w stronę gór: <b>Po</b>brzeża – <b>Po</b>jezierza – <b>Ni</b>ziny – <b>Wy</b>żyny – <b>Ko</b>tliny – <b>Gó</b>ry.</div>
+        <h3>Jak czytać mapę krain?</h3>
+        <ul>
+          <li>Na mapie hipsometrycznej niziny są zielone, wyżyny – żółte i pomarańczowe, góry – brązowe.</li>
+          <li>Nazwa krainy jest zwykle napisana dużymi literami w poprzek obszaru, który zajmuje.</li>
+          <li>Położenie krainy opisujesz kierunkami: np. Pojezierze Mazurskie leży na północnym wschodzie Polski, a Sudety – na południowym zachodzie.</li>
+        </ul>
+        <h3>Lądolód skandynawski</h3>
+        <p><b>Lądolód</b> to ogromna, bardzo gruba warstwa lodu przykrywająca ląd. Dawno temu, gdy klimat był dużo zimniejszy, lądolód kilka razy nasuwał się na teren Polski. Przychodził <b>z północy, ze Skandynawii</b> – dlatego nazywamy go <b>skandynawskim</b>.</p>
+        <ul>
+          <li><b>Zasięg maksymalny</b>: w czasie największego zasięgu lądolód przykrył prawie całą Polskę – dotarł aż do Sudetów i Karpat (do ich północnych stoków).</li>
+          <li><b>Zasięg ostatniego zlodowacenia</b>: ostatni lądolód objął tylko <b>północną część Polski</b> – pobrzeża i pojezierza. Swój największy zasięg osiągnął ok. 20 tysięcy lat temu, a ok. 14 tysięcy lat temu całkiem się wytopił z terenu Polski.</li>
+        </ul>
+        <h3>Ślady lądolodu w krajobrazie</h3>
+        <ul>
+          <li>Lądolód niósł ze sobą skały, piasek i glinę. Gdy się topił, zostawiał je na miejscu – tak powstały <b>wzgórza morenowe</b> i <b>głazy narzutowe</b>.</li>
+          <li>W zagłębieniach po lodzie powstały <b>jeziora polodowcowe</b>. Długie i wąskie <b>jeziora rynnowe</b> leżą w rynnach wyżłobionych przez wodę płynącą pod lądolodem.</li>
+          <li>Wody z topniejącego lodu usypały <b>piaszczyste równiny</b>.</li>
+        </ul>
+        <p>Na <b>północy</b> (pojezierza) te ślady są „świeże”: wzgórza są wyraźne, a jezior jest bardzo dużo. Na <b>nizinach środkowopolskich</b> lądolód był dawno – wzgórza zostały wyrównane, a jeziora zarosły. Dlatego pojezierza są tylko na północy Polski.</p>
+      `,
+      flashcards: [
+        ['Pasy rzeźby Polski od północy', 'pobrzeża, pojezierza, niziny środkowopolskie, wyżyny, kotliny podgórskie, góry'],
+        ['Pobrzeża', 'Wąski pas nad Bałtykiem: plaże, wydmy, płaski teren'],
+        ['Pojezierza', 'Pofałdowany teren i liczne jeziora polodowcowe, np. Pojezierze Mazurskie'],
+        ['Niziny środkowopolskie', 'Równinny teren, dużo pól, np. Nizina Mazowiecka'],
+        ['Wyżyny – przykłady', 'Wyżyna Krakowsko-Częstochowska, Lubelska, Śląska, Małopolska'],
+        ['Kotliny podgórskie', 'Kotlina Oświęcimska i Sandomierska – u podnóża Karpat'],
+        ['Góry w Polsce', 'Sudety i Karpaty (Tatry, Pieniny, Beskidy, Bieszczady)'],
+        ['Lądolód', 'Ogromna, gruba warstwa lodu przykrywająca ląd'],
+        ['Dlaczego lądolód jest „skandynawski”?', 'Bo nasuwał się z północy, ze Skandynawii'],
+        ['Zasięg maksymalny lądolodu', 'Prawie cała Polska – aż do Sudetów i Karpat'],
+        ['Zasięg ostatniego zlodowacenia', 'Tylko północna Polska – pobrzeża i pojezierza'],
+        ['Ślady lądolodu', 'Wzgórza morenowe, głazy narzutowe, jeziora polodowcowe'],
+      ],
+      questions: [
+        { id: 'x12mtl', q: 'Który pas rzeźby leży najdalej na północ?', options: ['pobrzeża', 'pojezierza', 'wyżyny', 'kotliny podgórskie'], answer: 0, explain: 'Pobrzeża to wąski pas nad Morzem Bałtyckim – najbardziej na północ.' },
+        { id: 'ci89yj', q: 'Który pas rzeźby leży najdalej na południe?', options: ['góry', 'niziny środkowopolskie', 'pobrzeża', 'pojezierza'], answer: 0, explain: 'Na południu Polski leżą góry: Sudety i Karpaty.' },
+        { id: 'tocrsn', q: 'Która kolejność pasów rzeźby (od północy na południe) jest poprawna?', options: ['pobrzeża, pojezierza, niziny, wyżyny, kotliny, góry', 'pojezierza, pobrzeża, wyżyny, niziny, góry, kotliny', 'góry, wyżyny, niziny, pojezierza, pobrzeża, kotliny', 'pobrzeża, niziny, pojezierza, kotliny, wyżyny, góry'], answer: 0, explain: 'Od morza: pobrzeża, pojezierza, niziny środkowopolskie, wyżyny, kotliny podgórskie, góry.' },
+        { id: '5rcpft', q: 'Do którego pasa rzeźby należy Pojezierze Mazurskie?', options: ['pojezierzy', 'pobrzeży', 'nizin środkowopolskich', 'wyżyn'], answer: 0, explain: 'Pojezierze Mazurskie (razem z Pomorskim i Wielkopolskim) należy do pasa pojezierzy.' },
+        { id: '4aqs39', q: 'Do którego pasa rzeźby należy Nizina Mazowiecka?', options: ['nizin środkowopolskich', 'pobrzeży', 'kotlin podgórskich', 'gór'], answer: 0, explain: 'Nizina Mazowiecka leży w środkowej Polsce, w pasie nizin środkowopolskich.' },
+        { id: 'cm7iob', q: 'Która kraina jest wyżyną?', options: ['Wyżyna Lubelska', 'Pobrzeże Gdańskie', 'Kotlina Sandomierska', 'Nizina Podlaska'], answer: 0, explain: 'Wyżyna Lubelska leży w pasie wyżyn. Pozostałe krainy należą do innych pasów.' },
+        { id: 'g1acwo', q: 'Gdzie w Polsce leżą kotliny podgórskie?', options: ['u podnóża Karpat, między wyżynami a górami', 'nad Morzem Bałtyckim', 'między pojezierzami a pobrzeżami', 'w środku Tatr'], answer: 0, explain: 'Kotliny Oświęcimska i Sandomierska to płaskie obniżenia między pasem wyżyn a Karpatami.' },
+        { id: 'fvv2f2', q: 'Które góry należą do Karpat?', options: ['Tatry', 'Karkonosze', 'Góry Stołowe', 'Góry Izerskie'], answer: 0, explain: 'Tatry, Pieniny, Beskidy i Bieszczady to Karpaty. Karkonosze, Góry Stołowe i Izerskie należą do Sudetów.' },
+        { id: '0kbie6', q: 'Krajobraz z plażami i wydmami nad morzem to krajobraz…', options: ['pobrzeży', 'pojezierzy', 'wyżyn', 'kotlin podgórskich'], answer: 0, explain: 'Pobrzeża to wąski pas nad Bałtykiem – są tu piaszczyste plaże i wydmy.' },
+        { id: 't5o3s2', q: 'Gdzie w Polsce jest najwięcej jezior?', options: ['na pojezierzach', 'w górach', 'na wyżynach', 'w kotlinach podgórskich'], answer: 0, explain: 'Na pojezierzach na północy Polski jest mnóstwo jezior polodowcowych.' },
+        { id: '2cdkny', q: 'Co to jest lądolód?', options: ['ogromna, gruba warstwa lodu przykrywająca ląd', 'zamarznięte jezioro', 'lód na chodniku', 'góra lodowa pływająca w morzu'], answer: 0, explain: 'Lądolód to bardzo gruba warstwa lodu, która przykrywa ogromne obszary lądu.' },
+        { id: 'vj71bw', q: 'Dlaczego lądolód, który przykrywał Polskę, nazywamy skandynawskim?', options: ['bo nasuwał się z północy, ze Skandynawii', 'bo odkryli go Skandynawowie', 'bo był tak zimny jak Skandynawia', 'bo stopił się w Skandynawii'], answer: 0, explain: 'Lądolód narastał na północy i przesuwał się ze Skandynawii na południe, aż na teren Polski.' },
+        { id: 'xgxqk0', q: 'Dokąd sięgał lądolód w czasie swojego największego zasięgu?', options: ['aż do Sudetów i Karpat – przykrył prawie całą Polskę', 'tylko do wybrzeża Bałtyku', 'tylko do pojezierzy', 'nigdy nie dotarł do Polski'], answer: 0, explain: 'W czasie największego zasięgu lądolód dosięgnął północnych stoków Sudetów i Karpat.' },
+        { id: 'qcrmwq', q: 'Które obszary przykrył ostatni lądolód?', options: ['północną część Polski – pobrzeża i pojezierza', 'całą Polskę razem z Tatrami', 'tylko góry', 'tylko wyżyny'], answer: 0, explain: 'Ostatni lądolód objął tylko północ Polski. Dlatego ślady po nim – jeziora i wzgórza – są tam najlepiej widoczne.' },
+        { id: 'm7e8rm', q: 'Jak powstały głazy narzutowe?', options: ['przyniósł je lądolód ze Skandynawii', 'wyrzuciły je wulkany', 'przyniosły je rzeki z Tatr', 'spadły z kosmosu'], answer: 0, explain: 'Lądolód niósł skały z północy. Gdy się wytopił, zostawił je na terenie Polski.' },
+        { id: 's0tdot', q: 'Jak powstały długie i wąskie jeziora rynnowe?', options: ['w rynnach wyżłobionych przez wodę płynącą pod lądolodem', 'w kraterach wulkanów', 'wykopali je ludzie', 'powstały za zaporami na rzekach'], answer: 0, explain: 'Pod lądolodem płynęła woda, która żłobiła długie rynny. Po stopieniu lodu wypełniła je woda.' },
+        { id: 'fg0hkn', q: 'Dlaczego pojezierza są na północy Polski, a w środkowej Polsce jezior polodowcowych prawie nie ma?', options: ['ostatni lądolód był tylko na północy – w środkowej Polsce lądolód był dawno i jeziora zarosły', 'w środkowej Polsce nigdy nie było lądolodu', 'jeziora w środkowej Polsce osuszyli ludzie', 'na północy pada więcej deszczu'], answer: 0, explain: 'Na północy ślady ostatniego lądolodu są „świeże”. W środkowej Polsce lód był dużo dawniej – wzgórza się wyrównały, a jeziora zarosły.' },
+        {
+          id: 's3batg',
+          q: 'Który pas rzeźby oznaczono na schemacie znakiem zapytania?',
+          svg: `<svg viewBox="0 0 320 250" role="img" aria-label="Schemat pasów rzeźby Polski od północy: 1 pobrzeża, 2 pojezierza, 3 znak zapytania, 4 wyżyny, 5 kotliny podgórskie, 6 góry">
+      <rect x="20" y="10" width="280" height="34" rx="6" class="f1 s1"/><rect x="20" y="48" width="280" height="34" rx="6" class="f3 s3"/>
+      <rect x="20" y="86" width="280" height="34" rx="6" class="f3 s3"/><rect x="20" y="124" width="280" height="34" rx="6" class="f4 s4"/>
+      <rect x="20" y="162" width="280" height="34" rx="6" class="f3 s3"/><rect x="20" y="200" width="280" height="34" rx="6" class="f2 s2"/>
+      <g class="tx" text-anchor="middle"><text x="160" y="33">1. pobrzeża</text><text x="160" y="71">2. pojezierza</text><text x="160" y="147">4. wyżyny</text><text x="160" y="185">5. kotliny podgórskie</text><text x="160" y="223">6. góry</text></g>
+      <text x="160" y="110" class="tx-b" text-anchor="middle">3. ?</text>
+    </svg>`,
+          options: ['niziny środkowopolskie', 'pojezierza', 'kotliny podgórskie', 'pobrzeża'],
+          answer: 0,
+          explain: 'Między pojezierzami a wyżynami leżą niziny środkowopolskie, np. Nizina Mazowiecka i Wielkopolska.',
+        },
+        { id: 'dlb9r6', q: 'Prawda czy fałsz?\nOstatni lądolód przykrył całą Polskę razem z górami.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Ostatni lądolód objął tylko północną Polskę. Prawie całą Polskę – aż do Sudetów i Karpat – lądolód przykrył dużo wcześniej, w czasie największego zasięgu.' },
+      ],
+    },
   ],
 });

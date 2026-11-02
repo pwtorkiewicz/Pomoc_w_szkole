@@ -1591,7 +1591,7 @@
           </ul>
           <div class="tip">💡 Najpierw policz 10% (albo 25%, albo 1%), a potem pomnóż – tak policzysz w pamięci prawie każdy procent.</div>
           <h3>Część i reszta</h3>
-          <p>Wszystkie części razem to 100%. Jeśli przeczytałeś 30% książki, zostało ci <span class="f">100% − 30% = 70%</span>.</p>
+          <p>Wszystkie części razem to 100%. Gdy przeczytasz 30% książki, zostanie ci <span class="f">100% − 30% = 70%</span>.</p>
           <h3>Promocje i rabaty</h3>
           <p><b>Rabat</b> (obniżka) to część ceny, której nie płacisz.</p>
           <ul>
@@ -1610,7 +1610,7 @@
           ['50% z 30 zł', '15 zł'],
           ['10% z 70', '7'],
           ['20% z 50', '10 (2 razy po 10%, czyli 2 · 5)'],
-          ['Przeczytałeś 30% książki. Ile zostało?', '70% (100% − 30%)'],
+          ['Przeczytano 30% książki. Ile zostało?', '70% (100% − 30%)'],
           ['Kurtka 60 zł, rabat 10%', 'Obniżka 6 zł, cena 54 zł'],
         ],
         questions: [

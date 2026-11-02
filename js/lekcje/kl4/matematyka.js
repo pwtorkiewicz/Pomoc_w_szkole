@@ -1852,7 +1852,7 @@ window.LESSONS['matematyka/procenty'] = [
       <g class="tx"><text x="322" y="40">całość</text><text x="322" y="86">1/2</text><text x="322" y="132">1/4</text><text x="322" y="178">1/10</text></g>
     </svg>`,
     text: `<p>Kilka procentów to znane ci ułamki: <b>50% to połowa</b>, <b>25% to ćwierć</b>, <b>10% to jedna dziesiąta</b>, a <b>75% to trzy czwarte</b>.</p>
-      <p>Wszystkie części razem dają 100%. Jeśli zjadłeś 25% pizzy, zostało 75%.</p>`,
+      <p>Wszystkie części razem dają 100%. Gdy zjesz 25% pizzy, zostanie 75%.</p>`,
     remember: '50% = 1/2, 25% = 1/4, 75% = 3/4, 10% = 1/10, 1% = 1/100.',
     hook: 'Ćwierć pizzy to 25% – cztery kawałki po 25% dają całą pizzę.',
     check: { q: 'Jaką częścią całości jest 10%?', options: ['1/10', '1/100', '1/2'], answer: 0, explain: '10% = 10/100 = 1/10 – jedna dziesiąta.' },

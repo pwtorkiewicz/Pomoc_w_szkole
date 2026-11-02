@@ -1921,3 +1921,326 @@ window.LESSONS['przyroda/metale'] = [
     check: { q: 'Która łyżka w gorącej zupie szybciej się nagrzeje?', options: ['metalowa', 'drewniana', 'plastikowa'], answer: 0, explain: 'Metal dobrze przewodzi ciepło. Drewno i plastik to izolatory.' },
   },
 ];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/gestosc'] = [
+  {
+    title: 'Gęstość – ile masy w tej samej objętości',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Dwie kostki tej samej wielkości. W kostce styropianu drobiny są rzadko – mała gęstość. W kostce żelaza drobiny są ciasno upakowane – duża gęstość.">
+      <rect x="40" y="20" width="130" height="130" rx="6" class="f4 s4 sw"/>
+      <rect x="230" y="20" width="130" height="130" rx="6" class="f1 s1 sw"/>
+      <g class="t2"><circle cx="70" cy="50" r="7"/><circle cx="140" cy="60" r="7"/><circle cx="95" cy="95" r="7"/><circle cx="60" cy="125" r="7"/><circle cx="145" cy="120" r="7"/></g>
+      <g class="t1">
+        <circle cx="250" cy="40" r="8"/><circle cx="272" cy="40" r="8"/><circle cx="294" cy="40" r="8"/><circle cx="316" cy="40" r="8"/><circle cx="338" cy="40" r="8"/>
+        <circle cx="250" cy="62" r="8"/><circle cx="272" cy="62" r="8"/><circle cx="294" cy="62" r="8"/><circle cx="316" cy="62" r="8"/><circle cx="338" cy="62" r="8"/>
+        <circle cx="250" cy="84" r="8"/><circle cx="272" cy="84" r="8"/><circle cx="294" cy="84" r="8"/><circle cx="316" cy="84" r="8"/><circle cx="338" cy="84" r="8"/>
+        <circle cx="250" cy="106" r="8"/><circle cx="272" cy="106" r="8"/><circle cx="294" cy="106" r="8"/><circle cx="316" cy="106" r="8"/><circle cx="338" cy="106" r="8"/>
+        <circle cx="250" cy="128" r="8"/><circle cx="272" cy="128" r="8"/><circle cx="294" cy="128" r="8"/><circle cx="316" cy="128" r="8"/><circle cx="338" cy="128" r="8"/>
+      </g>
+      <g class="tx-b" text-anchor="middle"><text x="105" y="176">styropian</text><text x="295" y="176">żelazo</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="105" y="198">mała gęstość</text><text x="295" y="198">duża gęstość</text></g>
+    </svg>`,
+    text: `<p>Dwie kostki tej samej wielkości mogą mieć zupełnie różną masę. Kostka żelaza jest dużo cięższa niż kostka styropianu – w tej samej objętości mieści się w niej więcej masy.</p>
+      <p>Mówimy, że żelazo ma większą <b>gęstość</b>. Gęstość mówi, <b>ile masy mieści się w określonej objętości</b>. W modelu drobinowym – drobiny są upakowane ciaśniej.</p>`,
+    remember: 'Gęstość – ile masy mieści się w określonej objętości.',
+    hook: 'Plecak pełen książek i plecak pełen waty: ten sam plecak, a masa zupełnie inna.',
+    check: { q: 'Kamień i styropian mają tę samą wielkość. Co ma większą gęstość?', options: ['kamień', 'styropian', 'mają taką samą'], answer: 0, explain: 'Kamień w tej samej objętości ma dużo większą masę, więc ma większą gęstość.' },
+  },
+  {
+    title: 'Tonie czy pływa? Decyduje gęstość',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Akwarium z wodą. Na powierzchni pływają korek, kawałek drewna i warstwa oleju – mają mniejszą gęstość niż woda. Na dnie leżą kamień i gwóźdź – mają większą gęstość niż woda.">
+      <rect x="40" y="60" width="320" height="130" class="f1"/>
+      <path d="M40,30 L40,190 L360,190 L360,30" class="ln sw" fill="none"/>
+      <rect x="230" y="52" width="130" height="10" class="f4 s4"/>
+      <circle cx="90" cy="60" r="12" class="f2 s2 sw"/>
+      <rect x="140" y="50" width="56" height="18" rx="4" class="f2 s2 sw"/>
+      <ellipse cx="110" cy="176" rx="26" ry="14" class="f5 s5 sw"/>
+      <line x1="190" y1="182" x2="250" y2="182" class="ln sw"/><line x1="190" y1="176" x2="190" y2="188" class="ln sw"/>
+      <g class="tx-s" text-anchor="middle"><text x="90" y="24">korek</text><text x="168" y="24">drewno</text><text x="295" y="24">olej</text>
+      <text x="110" y="210">kamień</text><text x="220" y="210">gwóźdź</text></g>
+      <g class="tx-s t2"><text x="250" y="110">pływa: gęstość</text><text x="250" y="126">mniejsza niż woda</text></g>
+      <g class="tx-s t5"><text x="250" y="150">tonie: gęstość</text><text x="250" y="166">większa niż woda</text></g>
+    </svg>`,
+    text: `<p>Ciało, które ma <b>mniejszą gęstość niż woda</b>, pływa po jej powierzchni (korek, drewno, styropian). Ciało o <b>większej gęstości</b> tonie (kamień, gwóźdź, moneta).</p>
+      <p>Tak samo z cieczami: olej ma mniejszą gęstość niż woda, więc zbiera się na jej powierzchni.</p>
+      <p>Uwaga: nie decyduje wielkość! Ogromny pień drzewa pływa, a mała moneta tonie.</p>`,
+    remember: 'Gęstość mniejsza niż woda – pływa. Większa – tonie.',
+    hook: 'Woda to „bramkarz”: przepuszcza na dno tylko to, co gęstsze od niej.',
+    check: { q: 'Który przedmiot utonie?', options: ['korek', 'moneta', 'kawałek styropianu'], answer: 1, explain: 'Moneta jest z metalu – ma większą gęstość niż woda, więc tonie.' },
+  },
+  {
+    title: 'Kształt ma znaczenie',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Dwa naczynia z wodą. W lewym kulka z plasteliny leży na dnie – tonie. W prawym łódeczka z tej samej plasteliny pływa na powierzchni.">
+      <rect x="20" y="70" width="170" height="110" class="f1"/>
+      <rect x="210" y="70" width="170" height="110" class="f1"/>
+      <path d="M20,40 L20,180 L190,180 L190,40" class="ln sw" fill="none"/>
+      <path d="M210,40 L210,180 L380,180 L380,40" class="ln sw" fill="none"/>
+      <circle cx="105" cy="164" r="15" class="f5 s5 sw"/>
+      <path d="M250,60 L340,60 L325,82 L265,82 Z" class="f5 s5 sw"/>
+      <g class="tx-s" text-anchor="middle"><text x="105" y="196">kulka – tonie</text><text x="295" y="196">łódka – pływa</text></g>
+      <text x="200" y="24" class="tx-s" text-anchor="middle">ta sama plastelina</text>
+    </svg>`,
+    text: `<p>Kulka z plasteliny tonie. Ale gdy z <b>tej samej</b> plasteliny ulepisz łódeczkę – będzie pływać!</p>
+      <p>Łódka zamyka w sobie dużo powietrza. Plastelina razem z powietrzem w środku jest „lżejsza” niż tyle samo wody. Dlatego pływają ogromne statki ze stali, choć sama stal tonie.</p>`,
+    remember: 'Zmiana kształtu może sprawić, że przedmiot zacznie pływać.',
+    hook: 'Statek to pływający „pojemnik na powietrze”.',
+    check: { q: 'Dlaczego stalowy statek nie tonie?', options: ['bo stal ma mniejszą gęstość niż woda', 'bo w kadłubie jest dużo powietrza', 'bo statek jest pomalowany'], answer: 1, explain: 'Sama stal tonie. Statek pływa dzięki kształtowi – pusty kadłub wypełnia powietrze.' },
+  },
+  {
+    title: 'Woda jest wyjątkowa – lód na górze',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Przekrój jeziora zimą. Na górze warstwa lodu, pod nim woda o temperaturze bliskiej 0 stopni, na dnie najgęstsza woda o temperaturze około 4 stopni. Ryby zimują przy dnie.">
+      <path d="M20,40 L380,40 L360,200 L40,200 Z" class="f1 s1"/>
+      <rect x="20" y="40" width="360" height="22" class="bg ln"/>
+      <text x="200" y="56" class="tx-s" text-anchor="middle">lód (0°C)</text>
+      <text x="200" y="100" class="tx-s" text-anchor="middle">woda chłodniejsza – bliżej 0°C</text>
+      <text x="200" y="176" class="tx-b" text-anchor="middle">ok. 4°C – najgęstsza</text>
+      <text x="100" y="150" class="tx">🐟</text><text x="290" y="150" class="tx">🐟</text>
+      <text x="200" y="24" class="tx-s" text-anchor="middle">❄️ mróz nad jeziorem</text>
+    </svg>`,
+    text: `<p>Większość substancji w stanie stałym ma większą gęstość niż w ciekłym. <b>Woda jest inna</b>: lód ma mniejszą gęstość niż woda, dlatego pływa.</p>
+      <p>Woda jest najgęstsza w temperaturze ok. <b>4°C</b>. Zimą taka woda opada na dno, a lód tworzy się na powierzchni. Lód działa jak przykrywka – jezioro nie zamarza do dna i ryby przeżywają zimę.</p>
+      <p>Gęstość zależy też od temperatury: ciepłe powietrze i ciepła woda unoszą się nad zimnymi (tak lata balon na ogrzane powietrze).</p>`,
+    remember: 'Lód pływa, a najgęstsza woda (ok. 4°C) jest na dnie jeziora.',
+    hook: 'Lód to pokrywka na garnku jeziora – trzyma ciepło pod spodem.',
+    check: { q: 'W jakiej temperaturze woda ma największą gęstość?', options: ['0°C', 'ok. 4°C', '100°C'], answer: 1, explain: 'Najgęstsza jest woda o temperaturze ok. 4°C – zimą zbiera się przy dnie jezior.' },
+  },
+  {
+    title: 'Jak organizmy radzą sobie w wodzie?',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Ryba z zaznaczonym pęcherzem pławnym – workiem z gazem. Liście grzybieni z powietrzem w środku pływają na wodzie. Kamizelka ratunkowa utrzymuje człowieka na wodzie.">
+      <rect x="0" y="40" width="400" height="160" class="f1"/>
+      <line x1="0" y1="40" x2="400" y2="40" class="ln"/>
+      <path d="M40,120 Q100,70 170,120 Q100,170 40,120 Z" class="f2 s2 sw"/>
+      <path d="M170,120 L200,96 L200,144 Z" class="f2 s2 sw"/>
+      <ellipse cx="105" cy="118" rx="30" ry="12" class="bg ln"/>
+      <circle cx="62" cy="112" r="4" class="t1"/>
+      <text x="105" y="174" class="tx-s" text-anchor="middle">pęcherz pławny – worek z gazem</text>
+      <ellipse cx="270" cy="40" rx="34" ry="8" class="f3 s3 sw"/><ellipse cx="350" cy="40" rx="30" ry="7" class="f3 s3 sw"/>
+      <text x="310" y="24" class="tx-s" text-anchor="middle">liście grzybieni</text>
+      <text x="310" y="110" class="tx" text-anchor="middle">🦺 kamizelka</text>
+      <text x="310" y="134" class="tx-s" text-anchor="middle">lekki materiał</text>
+    </svg>`,
+    text: `<p>Wiele ryb ma <b>pęcherz pławny</b> – worek wypełniony gazem. Zmieniając ilość gazu, ryba bez wysiłku unosi się albo opada. Opływowy kształt ciała ryb i fok ułatwia pływanie.</p>
+      <p>Rośliny wodne, np. grzybienie, mają w liściach i łodygach dużo powietrza – ich liście unoszą się na wodzie. Ludzie korzystają z tej samej zasady: kamizelka ratunkowa jest wypełniona lekkim materiałem albo powietrzem.</p>
+      <p>Pamiętaj też: w słonej wodzie łatwiej się unosić niż w słodkiej, bo słona ma większą gęstość.</p>`,
+    remember: 'Powietrze lub gaz w ciele (albo w kamizelce) pomaga utrzymać się na wodzie.',
+    check: { q: 'W której wodzie łatwiej się unosić?', options: ['w słodkiej, w jeziorze', 'w słonej, w morzu', 'w obu tak samo'], answer: 1, explain: 'Słona woda ma większą gęstość niż słodka, więc mocniej utrzymuje ciało.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/sily'] = [
+  {
+    title: 'Grawitacja – Ziemia przyciąga wszystko',
+    svg: `<svg viewBox="0 0 400 240" role="img" aria-label="Kula ziemska. Ludzie stoją na górze, na dole, z lewej i z prawej strony Ziemi. Strzałki pokazują, że dla każdego z nich „w dół” oznacza w stronę środka Ziemi.">
+      <defs><marker id="a-p9-si-1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <circle cx="200" cy="118" r="62" class="f3 s3 sw"/>
+      <circle cx="200" cy="118" r="4" class="t2"/>
+      <g class="ln s2 sw"><path d="M200,28 L200,52" marker-end="url(#a-p9-si-1)"/><path d="M200,208 L200,184" marker-end="url(#a-p9-si-1)"/><path d="M110,118 L134,118" marker-end="url(#a-p9-si-1)"/><path d="M290,118 L266,118" marker-end="url(#a-p9-si-1)"/></g>
+      <g class="tx" text-anchor="middle"><text x="200" y="22">🧍</text><text x="200" y="228">🧍</text><text x="96" y="124">🧍</text><text x="304" y="124">🧍</text></g>
+      <text x="200" y="112" class="tx-s" text-anchor="middle">Ziemia</text>
+      <text x="390" y="40" class="tx-s" text-anchor="end">„w dół” = w stronę</text>
+      <text x="390" y="56" class="tx-s" text-anchor="end">środka Ziemi</text>
+    </svg>`,
+    text: `<p>Ziemia <b>przyciąga</b> wszystkie ciała: ciebie, piłkę, krople deszczu. To przyciąganie to <b>siła grawitacji</b>. Dlatego upuszczony przedmiot spada, a woda w rzece płynie z gór w dół.</p>
+      <p>Masę ciała mierzymy <b>wagą</b>. Na Księżycu twoja masa byłaby taka sama, ale Księżyc przyciąga ok. 6 razy słabiej – można by na nim skakać dużo wyżej.</p>`,
+    remember: 'Grawitacja – przyciąganie ciał przez Ziemię. Masę mierzymy wagą.',
+    hook: 'Rzuć piłkę w górę – zawsze wróci. Ziemia ściąga do siebie wszystko, co ma masę.',
+    check: { q: 'Co zmieni się, gdy astronauta stanie na Księżycu?', options: ['jego masa zmaleje', 'Księżyc będzie go przyciągał słabiej niż Ziemia', 'nic nie będzie go przyciągać'], answer: 1, explain: 'Masa się nie zmienia, ale Księżyc przyciąga ok. 6 razy słabiej niż Ziemia.' },
+  },
+  {
+    title: 'Tarcie – hamulec między powierzchniami',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Klocek pchany po gładkim lodzie – mała strzałka tarcia. Ten sam klocek pchany po szorstkim dywanie – duża strzałka tarcia, skierowana przeciwnie do ruchu.">
+      <defs><marker id="a-p9-si-2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t3"/></marker>
+      <marker id="a-p9-si-3" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="20" y="80" width="360" height="12" class="f1 s1"/>
+      <rect x="160" y="40" width="70" height="40" rx="4" class="f4 s4 sw"/>
+      <path d="M236,60 L300,60" class="ln s3 sw" marker-end="url(#a-p9-si-2)"/>
+      <path d="M156,74 L136,74" class="ln s2 sw" marker-end="url(#a-p9-si-3)"/>
+      <text x="30" y="112" class="tx-s">gładki lód – małe tarcie</text>
+      <rect x="20" y="180" width="360" height="12" class="f2 s2"/>
+      <rect x="160" y="140" width="70" height="40" rx="4" class="f4 s4 sw"/>
+      <path d="M236,160 L300,160" class="ln s3 sw" marker-end="url(#a-p9-si-2)"/>
+      <path d="M156,174 L90,174" class="ln s2 sw" marker-end="url(#a-p9-si-3)"/>
+      <text x="30" y="208" class="tx-s">szorstki dywan – duże tarcie</text>
+      <g class="tx-s"><text x="306" y="64" class="t3">ruch</text><text x="306" y="164" class="t3">ruch</text></g>
+      <text x="200" y="22" class="tx-s" text-anchor="middle">tarcie działa przeciwnie do ruchu</text>
+    </svg>`,
+    text: `<p><b>Tarcie</b> to siła, która <b>utrudnia przesuwanie się</b> jednego ciała po drugim. Działa przeciwnie do ruchu – dlatego toczona piłka w końcu staje.</p>
+      <p>Tarcie jest większe na powierzchni <b>szorstkiej</b> niż gładkiej. Rośnie też, gdy ciało <b>mocniej naciska</b> na podłoże – pełne pudło trudniej przesunąć niż puste.</p>`,
+    remember: 'Tarcie zależy od rodzaju powierzchni i od nacisku.',
+    hook: 'Spróbuj przesunąć dłoń po stole – lekko i mocno dociskając. Czujesz różnicę? To tarcie.',
+    check: { q: 'Po której powierzchni sanki zjadą najłatwiej?', options: ['po lodzie', 'po trawie', 'po asfalcie'], answer: 0, explain: 'Lód jest gładki – tarcie jest bardzo małe.' },
+  },
+  {
+    title: 'Więcej czy mniej tarcia?',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Tabela. Więcej tarcia: bieżnik butów, piasek na lodzie, szczecinki dżdżownicy. Mniej tarcia: łyżwy, smar w rowerze, śluz ślimaka.">
+      <rect x="10" y="10" width="185" height="200" rx="12" class="f2 s2"/>
+      <rect x="205" y="10" width="185" height="200" rx="12" class="f1 s1"/>
+      <g class="tx-b" text-anchor="middle"><text x="102" y="38">więcej tarcia</text><text x="297" y="38">mniej tarcia</text></g>
+      <g class="tx"><text x="22" y="82">🥾 bieżnik</text><text x="22" y="132">🏖️ piasek na lodzie</text><text x="22" y="182">🪱 szczecinki</text>
+      <text x="217" y="82">⛸️ łyżwy</text><text x="217" y="132">🚲 smar, olej</text><text x="217" y="182">🐌 śluz</text></g>
+    </svg>`,
+    text: `<p>Czasem tarcie jest <b>potrzebne</b> – bez niego nie dałoby się chodzić ani hamować. Wtedy je zwiększamy: buty z bieżnikiem, opony zimowe, piasek na oblodzonym chodniku.</p>
+      <p>Czasem <b>przeszkadza</b> – wtedy je zmniejszamy: smarujemy łańcuch roweru, a łyżwy mają gładkie płozy.</p>
+      <p>W przyrodzie: <b>dżdżownica</b> zaczepia się o glebę szczecinkami (więcej tarcia), a śluz pomaga jej się przesuwać (mniej tarcia). Śluz pomaga też ślimakom, a ryby mają śliską skórę.</p>`,
+    remember: 'Szorstko – więcej tarcia. Gładko i ślisko – mniej tarcia.',
+    hook: 'Dżdżownica ma „kolce i smar” w jednym: szczecinki się trzymają, śluz się ślizga.',
+    check: { q: 'Który przykład zmniejsza tarcie?', options: ['piasek na lodzie', 'śluz ślimaka', 'bieżnik na butach'], answer: 1, explain: 'Śluz jest śliski – ślimak łatwiej sunie po podłożu. Piasek i bieżnik zwiększają tarcie.' },
+  },
+  {
+    title: 'Opór powietrza – kartka kontra kulka',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Płaska kartka spada powoli – duża powierzchnia, duży opór powietrza. Kartka zgnieciona w kulkę spada szybko – mały opór. Spadochron ma ogromną powierzchnię i opada powoli.">
+      <defs><marker id="a-p9-si-4" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker>
+      <marker id="a-p9-si-5" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t1"/></marker></defs>
+      <rect x="30" y="70" width="90" height="6" class="f4 s4"/>
+      <path d="M75,84 L75,110" class="ln s2 sw" marker-end="url(#a-p9-si-4)"/>
+      <path d="M75,62 L75,30" class="ln s1 sw" marker-end="url(#a-p9-si-5)"/>
+      <circle cx="200" cy="74" r="12" class="f4 s4 sw"/>
+      <path d="M200,90 L200,160" class="ln s2 sw" marker-end="url(#a-p9-si-4)"/>
+      <path d="M200,58 L200,46" class="ln s1 sw" marker-end="url(#a-p9-si-5)"/>
+      <path d="M290,70 Q330,20 370,70 Z" class="f5 s5 sw"/>
+      <line x1="290" y1="70" x2="330" y2="110" class="ln-thin"/><line x1="370" y1="70" x2="330" y2="110" class="ln-thin"/>
+      <text x="330" y="124" class="tx" text-anchor="middle">🧍</text>
+      <g class="tx-s" text-anchor="middle"><text x="75" y="190">płaska kartka</text><text x="75" y="206">spada wolno</text>
+      <text x="200" y="190">kulka</text><text x="200" y="206">spada szybko</text>
+      <text x="330" y="190">spadochron</text><text x="330" y="206">opada wolno</text></g>
+      <text x="200" y="20" class="tx-s t1" text-anchor="middle">niebieskie strzałki – opór powietrza</text>
+    </svg>`,
+    text: `<p><b>Opór powietrza</b> to siła, którą powietrze hamuje poruszające się ciała. Czujesz go, gdy szybko jedziesz na rowerze.</p>
+      <p>Opór jest tym większy, im <b>większą powierzchnię</b> ma ciało i im <b>szybciej</b> się porusza. Jest mniejszy, gdy ciało ma <b>kształt opływowy</b> – wydłużony i zwężony z przodu, jak ryba albo kropla.</p>
+      <p>Zrób próbę: upuść jednocześnie płaską kartkę i kartkę zgniecioną w kulkę.</p>`,
+    remember: 'Duża powierzchnia i duża prędkość – duży opór. Kształt opływowy – mały opór.',
+    hook: 'Kolarz pochyla się nisko nad kierownicą – ma mniejszą powierzchnię „pod wiatr”, więc mniejszy opór.',
+    check: { q: 'Dlaczego spadochron spowalnia spadanie?', options: ['jest ciężki', 'ma dużą powierzchnię, więc opór powietrza jest duży', 'zmniejsza grawitację'], answer: 1, explain: 'Duża powierzchnia oznacza duży opór powietrza – spadochroniarz opada powoli.' },
+  },
+  {
+    title: 'Jak latają zwierzęta i nasiona',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Kafelki: ptak – skrzydła, pióra, lekkie kości puste w środku; owad – skrzydła i lekkie ciało; dmuchawiec – puch działa jak spadochron; klon – skrzydlak wiruje jak śmigło">
+      <rect x="10" y="10" width="185" height="96" rx="12" class="f1 s1"/>
+      <rect x="205" y="10" width="185" height="96" rx="12" class="f3 s3"/>
+      <rect x="10" y="114" width="185" height="96" rx="12" class="f4 s4"/>
+      <rect x="205" y="114" width="185" height="96" rx="12" class="f2 s2"/>
+      <g class="tx-b"><text x="22" y="40">🐦 ptak</text><text x="217" y="40">🦋 owad</text><text x="22" y="144">🌼 dmuchawiec</text><text x="217" y="144">🍁 klon</text></g>
+      <g class="tx-s"><text x="22" y="66">skrzydła, pióra,</text><text x="22" y="84">lekkie, puste kości</text>
+      <text x="217" y="66">skrzydła,</text><text x="217" y="84">lekkie ciało</text>
+      <text x="22" y="170">puch działa</text><text x="22" y="188">jak spadochron</text>
+      <text x="217" y="170">skrzydlak wiruje</text><text x="217" y="188">jak śmigło</text></g>
+    </svg>`,
+    text: `<p>Wszystkie organizmy zdolne do lotu – ptaki, owady, nietoperze – mają <b>skrzydła</b> i <b>lekkie ciało</b>. Ptaki mają też pióra, opływowy kształt i lekkie kości, często puste w środku.</p>
+      <p>Ptak <b>zwiększa opór</b>, gdy ląduje – szeroko rozkłada skrzydła i ogon. <b>Zmniejsza opór</b>, gdy nurkuje – składa skrzydła.</p>
+      <p>Nasiona dmuchawca i klonu mają duży opór powietrza – opadają powoli, a wiatr niesie je daleko od rośliny.</p>`,
+    remember: 'Organizmy latające: skrzydła i lekkie ciało.',
+    hook: 'Dmuchawiec to mały spadochroniarz – leci tam, gdzie zawieje wiatr.',
+    check: { q: 'Jakie cechy mają wspólne ptaki, owady i nietoperze?', options: ['pióra i dziób', 'skrzydła i lekkie ciało', 'łuski i płetwy'], answer: 1, explain: 'Do lotu potrzebne są skrzydła i lekkie ciało. Pióra mają tylko ptaki.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/krainy'] = [
+  {
+    title: 'Sześć pasów – od morza do gór',
+    svg: `<svg viewBox="0 0 400 262" role="img" aria-label="Pasy rzeźby Polski od północy: pobrzeża, np. Pobrzeże Gdańskie; pojezierza, np. Pojezierze Mazurskie; niziny środkowopolskie, np. Nizina Mazowiecka; wyżyny, np. Wyżyna Lubelska; kotliny podgórskie, np. Kotlina Sandomierska; góry – Sudety i Karpaty.">
+      <text x="200" y="14" class="tx-s" text-anchor="middle">↑ północ – Morze Bałtyckie</text>
+      <rect x="10" y="20" width="380" height="38" rx="6" class="f1 s1"/>
+      <rect x="10" y="60" width="380" height="38" rx="6" class="f3 s3"/>
+      <rect x="10" y="100" width="380" height="38" rx="6" class="f3 s3"/>
+      <rect x="10" y="140" width="380" height="38" rx="6" class="f4 s4"/>
+      <rect x="10" y="180" width="380" height="38" rx="6" class="f3 s3"/>
+      <rect x="10" y="220" width="380" height="38" rx="6" class="f2 s2"/>
+      <g class="tx-b"><text x="22" y="44">1. pobrzeża</text><text x="22" y="84">2. pojezierza</text><text x="22" y="124">3. niziny</text><text x="22" y="164">4. wyżyny</text><text x="22" y="204">5. kotliny</text><text x="22" y="244">6. góry</text></g>
+      <g class="tx-s"><text x="160" y="44">Pobrzeże Gdańskie 🏖️</text><text x="160" y="84">Pojezierze Mazurskie 💧</text><text x="160" y="124">Nizina Mazowiecka 🌾</text><text x="160" y="164">Wyżyna Lubelska</text><text x="160" y="204">Kotlina Sandomierska</text><text x="160" y="244">Sudety, Karpaty ⛰️</text></g>
+    </svg>`,
+    text: `<p>Krainy geograficzne Polski układają się w <b>pasy</b> ciągnące się z zachodu na wschód. Od północy: <b>pobrzeża</b>, <b>pojezierza</b>, <b>niziny środkowopolskie</b>, <b>wyżyny</b>, <b>kotliny podgórskie</b> i <b>góry</b>.</p>
+      <p>Każdy pas ma inny krajobraz: nad morzem plaże i wydmy, na pojezierzach mnóstwo jezior, na nizinach równiny i pola, na wyżynach skałki i jaskinie, a na południu – góry.</p>`,
+    remember: 'Pobrzeża – pojezierza – niziny – wyżyny – kotliny – góry.',
+    hook: 'Zdanie na pamięć: „Pewnego Popołudnia Nina Wyjechała Koleją w Góry”.',
+    check: { q: 'Który pas leży między pojezierzami a wyżynami?', options: ['niziny środkowopolskie', 'pobrzeża', 'kotliny podgórskie'], answer: 0, explain: 'Kolejność: pobrzeża, pojezierza, niziny środkowopolskie, wyżyny, kotliny podgórskie, góry.' },
+  },
+  {
+    title: 'Krainy na mapie – gdzie co leży?',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Schemat Polski podzielony na 9 części według kierunków. Północny zachód: Pobrzeże Szczecińskie. Północ: Pobrzeże Gdańskie. Północny wschód: Pojezierze Mazurskie. Zachód: Nizina Wielkopolska. Środek: Nizina Mazowiecka. Wschód: Nizina Podlaska. Południowy zachód: Sudety. Południe: Tatry. Południowy wschód: Bieszczady.">
+      <text x="200" y="14" class="tx-s" text-anchor="middle">↑ północ</text>
+      <rect x="10" y="22" width="124" height="64" rx="8" class="f1 s1"/><rect x="138" y="22" width="124" height="64" rx="8" class="f1 s1"/><rect x="266" y="22" width="124" height="64" rx="8" class="f3 s3"/>
+      <rect x="10" y="90" width="124" height="64" rx="8" class="f3 s3"/><rect x="138" y="90" width="124" height="64" rx="8" class="f3 s3"/><rect x="266" y="90" width="124" height="64" rx="8" class="f3 s3"/>
+      <rect x="10" y="158" width="124" height="64" rx="8" class="f2 s2"/><rect x="138" y="158" width="124" height="64" rx="8" class="f2 s2"/><rect x="266" y="158" width="124" height="64" rx="8" class="f2 s2"/>
+      <g class="tx-s" text-anchor="middle">
+        <text x="72" y="50">Pobrzeże</text><text x="72" y="68">Szczecińskie</text>
+        <text x="200" y="50">Pobrzeże</text><text x="200" y="68">Gdańskie</text>
+        <text x="328" y="50">Pojezierze</text><text x="328" y="68">Mazurskie</text>
+        <text x="72" y="118">Nizina</text><text x="72" y="136">Wielkopolska</text>
+        <text x="200" y="118">Nizina</text><text x="200" y="136">Mazowiecka</text>
+        <text x="328" y="118">Nizina</text><text x="328" y="136">Podlaska</text>
+      </g>
+      <g class="tx" text-anchor="middle"><text x="72" y="195">Sudety</text><text x="200" y="195">Tatry</text><text x="328" y="195">Bieszczady</text></g>
+    </svg>`,
+    text: `<p>Na mapie krainę opisujesz <b>kierunkami</b>. Pojezierze Mazurskie leży na <b>północnym wschodzie</b> Polski, Sudety – na <b>południowym zachodzie</b>, a Nizina Mazowiecka – w środkowej Polsce.</p>
+      <p>Na mapie hipsometrycznej niziny są zielone, wyżyny – żółte i pomarańczowe, góry – brązowe. Nazwa krainy biegnie zwykle dużymi literami w poprzek jej obszaru.</p>`,
+    remember: 'Położenie krainy podajesz kierunkami: północ, południe, wschód, zachód.',
+    hook: 'Mazury – „na górze po prawej”, Sudety – „na dole po lewej” (gdy mapa leży północą do góry).',
+    check: { q: 'W której części Polski leżą Sudety?', options: ['na północnym wschodzie', 'na południowym zachodzie', 'w środku'], answer: 1, explain: 'Sudety to góry na południowym zachodzie Polski. Karpaty – na południu i południowym wschodzie.' },
+  },
+  {
+    title: 'Lądolód przyszedł ze Skandynawii',
+    svg: `<svg viewBox="0 0 400 260" role="img" aria-label="Schemat: lądolód nasuwał się ze Skandynawii przez Bałtyk na Polskę. Linia zasięgu maksymalnego biegnie tuż przy górach na południu. Linia zasięgu ostatniego zlodowacenia biegnie przez północną część Polski.">
+      <defs><marker id="a-p9-kr-1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t1"/></marker></defs>
+      <rect x="110" y="8" width="180" height="34" rx="10" class="f1 s1"/>
+      <text x="200" y="31" class="tx-b" text-anchor="middle">Skandynawia</text>
+      <g class="ln s1 sw"><path d="M160,44 L160,90" marker-end="url(#a-p9-kr-1)"/><path d="M240,44 L240,90" marker-end="url(#a-p9-kr-1)"/></g>
+      <text x="200" y="70" class="tx-s" text-anchor="middle">Bałtyk</text>
+      <rect x="40" y="96" width="320" height="150" rx="10" class="f3 s3"/>
+      <rect x="40" y="96" width="320" height="50" rx="10" class="f1"/>
+      <rect x="40" y="214" width="320" height="32" rx="10" class="f2 s2"/>
+      <line x1="40" y1="146" x2="360" y2="146" class="ln s1 sw dash"/>
+      <line x1="40" y1="210" x2="360" y2="210" class="ln s5 sw dash"/>
+      <text x="200" y="126" class="tx-s" text-anchor="middle">ostatni lądolód – tylko północ</text>
+      <text x="200" y="164" class="tx-s" text-anchor="middle">zasięg ostatniego zlodowacenia</text>
+      <text x="200" y="202" class="tx-s" text-anchor="middle">zasięg maksymalny</text>
+      <text x="200" y="236" class="tx-s" text-anchor="middle">Sudety i Karpaty</text>
+    </svg>`,
+    text: `<p><b>Lądolód</b> to ogromna, bardzo gruba warstwa lodu przykrywająca ląd. Dawno temu, gdy klimat był dużo zimniejszy, lądolód kilka razy nasuwał się na Polskę – z północy, <b>ze Skandynawii</b>. Dlatego nazywamy go <b>skandynawskim</b>.</p>
+      <ul><li><b>Zasięg maksymalny</b> – prawie cała Polska, aż do Sudetów i Karpat.</li>
+      <li><b>Zasięg ostatniego zlodowacenia</b> – tylko północna Polska (pobrzeża i pojezierza). Ten lądolód był największy ok. 20 tysięcy lat temu, a ok. 14 tysięcy lat temu całkiem się wytopił.</li></ul>`,
+    remember: 'Lądolód skandynawski – przyszedł ze Skandynawii. Największy zasięg: do Sudetów i Karpat. Ostatni: tylko północ Polski.',
+    hook: 'Ostatni gość wszedł tylko do przedpokoju (północ), a najdalszy doszedł aż pod góry.',
+    check: { q: 'Dlaczego lądolód nazywamy skandynawskim?', options: ['bo przyszedł ze Skandynawii', 'bo stopił się w Skandynawii', 'bo zbadali go Skandynawowie'], answer: 0, explain: 'Lądolód nasuwał się z północy – ze Skandynawii – na teren Polski.' },
+  },
+  {
+    title: 'Co zostawił lądolód?',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Przekrój terenu na pojezierzu: wzgórza morenowe, głaz narzutowy, długie i wąskie jezioro rynnowe oraz płaska piaszczysta równina usypana przez wody z topniejącego lodu.">
+      <path d="M10,150 Q50,90 90,150 Q120,110 150,150 L170,150 L180,186 L230,186 L240,150 L300,150 L410,150 L410,200 L10,200 Z" class="f3 s3 sw"/>
+      <path d="M180,160 L180,186 L230,186 L230,160 Z" class="f1 s1"/>
+      <ellipse cx="270" cy="140" rx="18" ry="12" class="f5 s5 sw"/>
+      <rect x="320" y="146" width="90" height="6" class="f4 s4"/>
+      <g class="tx-s" text-anchor="middle">
+        <text x="80" y="70">wzgórza morenowe</text>
+        <text x="205" y="110">jezioro</text><text x="205" y="126">rynnowe</text>
+        <text x="270" y="104">głaz</text><text x="270" y="120">narzutowy</text>
+        <text x="365" y="110">piaszczysta</text><text x="365" y="126">równina</text>
+      </g>
+    </svg>`,
+    text: `<p>Lądolód niósł ze sobą skały, piasek i glinę. Gdy się topił, zostawił je na miejscu – tak powstały <b>wzgórza morenowe</b> i <b>głazy narzutowe</b>.</p>
+      <p>W zagłębieniach po lodzie powstały <b>jeziora polodowcowe</b>. Długie i wąskie <b>jeziora rynnowe</b> leżą w rynnach wyżłobionych przez wodę płynącą pod lądolodem. Wody z topniejącego lodu usypały też <b>piaszczyste równiny</b>.</p>`,
+    remember: 'Ślady lądolodu: wzgórza morenowe, głazy narzutowe, jeziora polodowcowe.',
+    hook: 'Lądolód jak wielka spycharka: przyjechał, nagarnął kamieni i piasku, a gdy się roztopił, zostawił cały ten bałagan.',
+    check: { q: 'Skąd w Polsce wzięły się głazy narzutowe?', options: ['przyniosły je rzeki z gór', 'przyniósł je lądolód ze Skandynawii', 'wyrzuciły je wulkany'], answer: 1, explain: 'Lądolód niósł skały z północy i zostawił je, gdy się wytopił.' },
+  },
+  {
+    title: 'Dlaczego pojezierza są tylko na północy?',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Porównanie. Północ – młode ślady lądolodu: wyraźne wzgórza i dużo jezior. Środkowa Polska – stare ślady: wzgórza wyrównane, jeziora zarosły.">
+      <rect x="10" y="10" width="185" height="190" rx="12" class="f1 s1"/>
+      <rect x="205" y="10" width="185" height="190" rx="12" class="f4 s4"/>
+      <g class="tx-b" text-anchor="middle"><text x="102" y="38">północ</text><text x="297" y="38">środek Polski</text></g>
+      <path d="M20,130 Q45,80 70,130 Q90,95 110,130 Q140,85 185,130 L185,150 L20,150 Z" class="f3 s3"/>
+      <ellipse cx="70" cy="132" rx="16" ry="5" class="f1 s1"/><ellipse cx="140" cy="132" rx="20" ry="5" class="f1 s1"/>
+      <path d="M215,130 Q260,118 300,130 Q340,120 380,130 L380,150 L215,150 Z" class="f3 s3"/>
+      <g class="tx-s" text-anchor="middle"><text x="102" y="172">wyraźne wzgórza,</text><text x="102" y="190">dużo jezior</text>
+      <text x="297" y="172">wzgórza wyrównane,</text><text x="297" y="190">jeziora zarosły</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="102" y="60">ostatni lądolód</text><text x="297" y="60">lądolód dawno temu</text></g>
+    </svg>`,
+    text: `<p>Ostatni lądolód był tylko na <b>północy</b> Polski – dlatego jego ślady są tam „świeże”: wzgórza są wyraźne, a jezior jest mnóstwo. To <b>pojezierza</b>.</p>
+      <p>W środkowej Polsce lądolód był dużo dawniej. Przez ten czas wzgórza się wyrównały, a jeziora zarosły.</p>
+      <p>Uwaga na pułapkę: <b>największy</b> zasięg (aż do gór) i zasięg <b>ostatniego</b> lądolodu (tylko północ) to dwie różne linie na mapie.</p>`,
+    remember: 'Pojezierza = świeże ślady ostatniego lądolodu na północy Polski.',
+    check: { q: 'Prawda czy fałsz? Ostatni lądolód przykrył całą Polskę razem z górami.', options: ['Prawda', 'Fałsz'], answer: 1, explain: 'Ostatni lądolód objął tylko północ Polski. Aż do gór lądolód sięgał dużo wcześniej.' },
+  },
+];
