@@ -124,7 +124,7 @@
   // Pytanie może mieć pole say (tekst albo lista fragmentów) – czytane zamiast q, np. gdy q ma symbole lub obrazki;
   // optLang: 'en' – odpowiedzi czytane po angielsku; sayOptions – lista tekstów czytanych zamiast odpowiedzi;
   // sayExplain – czytane zamiast explain (tekst albo lista fragmentów).
-  const LANGS = { pl: 'pl-PL', en: 'en-GB' };
+  const LANGS = { pl: 'pl-PL', en: 'en-GB', de: 'de-DE' };
   const EMOJI = /[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}\u{1F3FB}-\u{1F3FF}\u{FE0F}\u{200D}\u{20E3}]/gu;
   const decoder = document.createElement('textarea');
   // Skróty jednostek po liczbie czytamy pełnym słowem w dobrej formie: 1 złoty, 2 złote, 5 złotych.

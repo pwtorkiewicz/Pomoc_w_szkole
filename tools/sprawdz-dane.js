@@ -17,7 +17,7 @@ const MODES = ['czytanie', 'reading', 'listening', 'srodki', 'dyktando'];
 // Pola do czytania na głos (tryb młodszego ucznia): say – tekst albo lista fragmentów (tekst | [tekst, 'en']),
 // optLang – język odpowiedzi, sayOptions – teksty czytane zamiast odpowiedzi (tyle, ile odpowiedzi),
 // sayExplain – czytane zamiast explain (jak say).
-const LANGS = ['pl', 'en'];
+const LANGS = ['pl', 'en', 'de']; // jak LANGS w js/app.js
 const checkSpeech = (q, where) => {
   for (const f of ['say', 'sayExplain']) {
     if (q[f] == null) continue;

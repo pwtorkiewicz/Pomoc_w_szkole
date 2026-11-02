@@ -33,7 +33,7 @@ window.TRACKS = [
     page: 'klasa8.html',
     icon: '🔬',
     name: 'Klasa 8',
-    about: 'Bieżąca nauka w klasie 8: fizyka, chemia, biologia, geografia, historia, WOS, EDB, informatyka i symetrie z matematyki – lekcje, ściągi, fiszki, quizy i zadania otwarte. Polski, matematyka i angielski prowadzą do ścieżki egzaminacyjnej.',
+    about: 'Bieżąca nauka w klasie 8: fizyka, chemia, biologia, geografia, historia, WOS, EDB, informatyka, niemiecki (drugi język) i symetrie z matematyki – lekcje, ściągi, fiszki, quizy i zadania otwarte. Polski, matematyka i angielski prowadzą do ścieżki egzaminacyjnej.',
     storeKey: 'pomoc_kl8_v1',
     color: '#8e5bd0',
     intro: 'Wybierz przedmiot. W każdym dziale masz <b>lekcję</b>, <b>ściągę</b>, <b>fiszki</b> i <b>quiz</b>, a w części działów – <b>zadania otwarte</b> z obliczeniami. Błędne odpowiedzi trafią do powtórki. Polski, matematyka i angielski otwierają się w ścieżce egzaminacyjnej (ta sama podstawa programowa).',
