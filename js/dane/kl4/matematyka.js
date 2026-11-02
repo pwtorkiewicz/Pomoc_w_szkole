@@ -174,6 +174,38 @@
           { id: '94l0tk', q: 'Ile wynosi w przybliżeniu 49 · 31?', options: ['około 1 500', 'około 150', 'około 15 000', 'około 800'], answer: 0, explain: '49 ≈ 50, 31 ≈ 30, a 50 · 30 = 1 500 (dokładnie 1 519).' },
           { id: 'visobv', q: 'Prawda czy fałsz?\nPrzy dzieleniu przez 5 reszta może być równa 5.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Reszta musi być mniejsza od dzielnika. Przy dzieleniu przez 5 może wynosić 0, 1, 2, 3 albo 4.' },
         ],
+        tasks: [
+          {
+            id: 'foafht',
+            points: 2,
+            q: 'Ola miała 85 zł. Kupiła 3 książki po 17 zł każda. Ile pieniędzy jej zostało? Zapisz obliczenia.',
+            steps: [
+              'Najpierw policz, ile kosztowały książki: 3 · 17 zł = 3 · 10 + 3 · 7 = 30 + 21 = 51 zł.',
+              'Odejmij koszt od pieniędzy Oli: 85 zł − 51 zł = 34 zł.',
+              'Sprawdzenie: 34 zł + 51 zł = 85 zł ✓.',
+            ],
+            answer: 'Oli zostały 34 zł.',
+            scoring: [
+              '1 pkt – poprawne obliczenie kosztu książek (51 zł).',
+              '2 pkt – poprawny wynik: 34 zł.',
+            ],
+          },
+          {
+            id: 'rou785',
+            points: 2,
+            q: 'Na wycieczkę jedzie 58 uczniów. Do jednego busa mieści się 9 uczniów. Ile najmniej busów trzeba zamówić, żeby pojechali wszyscy?',
+            steps: [
+              'Podziel liczbę uczniów przez liczbę miejsc w busie: 58 : 9 = 6 reszty 4, bo 6 · 9 = 54, a 58 − 54 = 4.',
+              '6 busów zabierze 54 uczniów. Zostaje jeszcze 4 uczniów – oni też muszą jechać, więc potrzebny jest jeszcze jeden bus.',
+              '6 + 1 = 7 busów.',
+            ],
+            answer: '7 busów.',
+            scoring: [
+              '1 pkt – poprawne dzielenie z resztą: 58 : 9 = 6 r. 4.',
+              '2 pkt – poprawny wniosek: 7 busów (reszta uczniów też musi pojechać).',
+            ],
+          },
+        ],
       },
 
       // ------------------------------------------------------------------
@@ -271,6 +303,55 @@
           { id: 'e112ql', q: 'Liczba MMXXVI to…', options: ['2026', '2016', '1026', '2024'], answer: 0, explain: 'MM = 2000, XX = 20, VI = 6 → 2026.' },
           { id: '2xodsm', q: 'Ile to jest CDXC?', options: ['490', '590', '410', '640'], answer: 0, explain: 'CD = 400 (500 − 100), XC = 90 (100 − 10), razem 490.' },
           { id: 'py4rbj', q: 'Prawda czy fałsz?\nZapis VV oznacza 10.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Znaku V nie powtarzamy. Liczbę 10 zapisujemy jako X.' },
+        ],
+        tasks: [
+          {
+            id: '356or7',
+            points: 3,
+            q: 'Z cyfr 0, 3, 5 i 8 (każdej cyfry używasz dokładnie raz) ułóż największą i najmniejszą liczbę czterocyfrową. Oblicz różnicę tych liczb.',
+            steps: [
+              'Największa liczba: cyfry od największej – 8 530.',
+              'Najmniejsza liczba: cyfry od najmniejszej, ale liczba nie może zaczynać się od 0, więc na początku stawiasz 3, potem 0: 3 058.',
+              'Różnica: 8 530 − 3 058 = 5 472.',
+              'Sprawdzenie: 5 472 + 3 058 = 8 530 ✓.',
+            ],
+            answer: 'Największa: 8 530, najmniejsza: 3 058, różnica: 5 472.',
+            scoring: [
+              '1 pkt – poprawna największa liczba: 8 530.',
+              '1 pkt – poprawna najmniejsza liczba: 3 058 (nie zaczyna się od zera).',
+              '1 pkt – poprawna różnica: 5 472.',
+            ],
+          },
+          {
+            id: 'a0ipde',
+            points: 2,
+            q: 'W sobotę do kina przyszło 1 348 osób, a w niedzielę – 2 671 osób. Zaokrąglij obie liczby do setek i oszacuj, ile osób przyszło razem.',
+            steps: [
+              '1 348: za cyfrą setek stoi 4, więc zaokrąglasz w dół – 1 348 ≈ 1 300.',
+              '2 671: za cyfrą setek stoi 7, więc zaokrąglasz w górę – 2 671 ≈ 2 700.',
+              'Szacunek: 1 300 + 2 700 = 4 000. (Dokładnie: 1 348 + 2 671 = 4 019 – szacunek jest bardzo blisko.)',
+            ],
+            answer: 'Około 4 000 osób (1 300 + 2 700).',
+            scoring: [
+              '1 pkt – poprawne zaokrąglenie obu liczb: 1 300 i 2 700.',
+              '2 pkt – poprawny szacunek: około 4 000 osób.',
+            ],
+          },
+          {
+            id: 'qcm3cb',
+            points: 2,
+            q: 'Na budynku szkoły wyryto rok budowy: MCMLXXIV. Zapisz ten rok cyframi arabskimi. Ile lat minęło od budowy szkoły do roku 2026?',
+            steps: [
+              'Rozbij zapis na części: M = 1000, CM = 900, LXX = 50 + 10 + 10 = 70, IV = 4.',
+              'Rok budowy: 1000 + 900 + 70 + 4 = 1974.',
+              'Minęło: 2026 − 1974 = 52 lata. Sprawdzenie: 1974 + 52 = 2026 ✓.',
+            ],
+            answer: 'Rok 1974; minęły 52 lata.',
+            scoring: [
+              '1 pkt – poprawny zapis roku: 1974.',
+              '2 pkt – poprawna liczba lat: 52.',
+            ],
+          },
         ],
       },
 
@@ -371,6 +452,40 @@
           { id: '4kx0xi', q: 'Dostajesz 12 zł kieszonkowego na tydzień i wszystko odkładasz. Ile tygodni musisz oszczędzać na grę za 60 zł?', options: ['5', '6', '4', '48'], answer: 0, explain: '60 : 12 = 5, bo 5 · 12 = 60.' },
           { id: 'oa3ua0', q: 'Co jest tańsze: 3 batony po 2 zł 20 gr czy paczka 3 takich batonów za 6 zł 30 gr?', options: ['paczka – o 30 gr', 'pojedyncze batony – o 30 gr', 'kosztują tyle samo', 'paczka – o 3 zł'], answer: 0, explain: '3 · 2 zł 20 gr = 6 zł 60 gr. To o 30 gr więcej niż paczka (6 zł 30 gr).' },
           { id: '57kluf', q: 'Prawda czy fałsz?\n1 m = 1000 mm', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '1 m = 100 cm, a każdy centymetr to 10 mm: 100 · 10 = 1000 mm.' },
+        ],
+        tasks: [
+          {
+            id: '066dok',
+            points: 2,
+            q: 'Film zaczął się o 17:45 i trwał 1 h 50 min. O której godzinie się skończył?',
+            steps: [
+              'Dodaj najpierw pełną godzinę: 17:45 + 1 h = 18:45.',
+              'Teraz 50 minut skokami: 18:45 + 15 min = 19:00, zostaje jeszcze 50 − 15 = 35 min.',
+              '19:00 + 35 min = 19:35.',
+            ],
+            answer: 'O 19:35.',
+            scoring: [
+              '1 pkt – poprawny sposób (np. dodanie godziny i minut skokami) z błędem rachunkowym albo poprawna godzina pośrednia 18:45.',
+              '2 pkt – poprawny wynik: 19:35.',
+            ],
+          },
+          {
+            id: 'poou3o',
+            points: 3,
+            q: 'Mama kupiła 2 kg jabłek po 4 zł 50 gr za kilogram i chleb za 5 zł 80 gr. Zapłaciła banknotem 20 zł. Ile reszty dostała?',
+            steps: [
+              'Jabłka: 2 · 4 zł 50 gr = 8 zł 100 gr = 9 zł.',
+              'Razem z chlebem: 9 zł + 5 zł 80 gr = 14 zł 80 gr.',
+              'Reszta – doliczaj jak kasjer: 14 zł 80 gr + 20 gr = 15 zł, + 5 zł = 20 zł. Reszta to 5 zł 20 gr.',
+              'Sprawdzenie: 14 zł 80 gr + 5 zł 20 gr = 20 zł ✓.',
+            ],
+            answer: '5 zł 20 gr.',
+            scoring: [
+              '1 pkt – poprawny koszt jabłek: 9 zł.',
+              '1 pkt – poprawny koszt zakupów: 14 zł 80 gr.',
+              '1 pkt – poprawna reszta: 5 zł 20 gr.',
+            ],
+          },
         ],
       },
 
@@ -496,6 +611,54 @@
           { id: 'esa1b7', q: 'Prawda czy fałsz?\nW mnożeniu pisemnym przez liczbę dwucyfrową drugi iloczyn częściowy piszemy o jedno miejsce w lewo.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Drugi iloczyn to mnożenie przez cyfrę dziesiątek – jest dziesięć razy większy, dlatego przesuwamy go o jedno miejsce w lewo.' },
           { id: 'jkizge', q: 'Prawda czy fałsz?\n618 : 6 = 13', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: '6 : 6 = 1, potem 6 nie mieści się w 1 – w wyniku trzeba napisać 0, a na końcu 18 : 6 = 3. Wynik to 103 (sprawdzenie: 103 · 6 = 618).' },
         ],
+        tasks: [
+          {
+            id: '9z1k76',
+            points: 2,
+            q: 'Szkoła kupiła 24 piłki po 38 zł. Ile zapłaciła? Oblicz pisemnie i sprawdź, czy wynik ma sens (oszacuj).',
+            steps: [
+              'Szacunek: 24 ≈ 20, 38 ≈ 40, więc wynik powinien być w okolicy 20 · 40 = 800 zł.',
+              'Mnożenie pisemne 38 · 24: najpierw 38 · 4 = 152, potem 38 · 2 dziesiątki = 76 dziesiątek, czyli 760.',
+              'Dodaj iloczyny częściowe: 152 + 760 = 912 zł. To blisko szacunku – wynik ma sens.',
+            ],
+            answer: '912 zł.',
+            scoring: [
+              '1 pkt – poprawne iloczyny częściowe (152 i 760) albo poprawny sposób z jednym błędem rachunkowym.',
+              '2 pkt – poprawny wynik: 912 zł.',
+            ],
+          },
+          {
+            id: '1gykfr',
+            points: 3,
+            q: 'W bibliotece było 3 005 książek. Wypożyczono 1 268 książek, a potem czytelnicy zwrócili 547. Ile książek jest teraz w bibliotece?',
+            steps: [
+              'Po wypożyczeniu: 3 005 − 1 268. Pisemnie – w odjemnej są zera, więc rozmieniasz z rzędu tysięcy: 3 005 − 1 268 = 1 737.',
+              'Sprawdzenie odejmowania: 1 737 + 1 268 = 3 005 ✓.',
+              'Po zwrocie: 1 737 + 547 = 2 284.',
+            ],
+            answer: '2 284 książki.',
+            scoring: [
+              '1 pkt – poprawny sposób: od liczby książek odejmujesz wypożyczone i dodajesz zwrócone.',
+              '1 pkt – poprawna różnica: 1 737.',
+              '1 pkt – poprawny wynik: 2 284 książki.',
+            ],
+          },
+          {
+            id: 'q7vz4m',
+            points: 2,
+            q: 'Rolnik zebrał 1 356 kg ziemniaków i zapakował je do worków po 6 kg. Ile worków napełnił? Sprawdź wynik mnożeniem.',
+            steps: [
+              'Dzielenie pisemne 1 356 : 6: 1 tysiąc się nie dzieli przez 6, więc bierzesz 13 setek: 13 : 6 = 2 r. 1.',
+              'Dopisujesz 5: 15 : 6 = 2 r. 3. Dopisujesz 6: 36 : 6 = 6. Wynik: 226.',
+              'Sprawdzenie: 226 · 6 = 1 356 ✓.',
+            ],
+            answer: '226 worków.',
+            scoring: [
+              '1 pkt – poprawny sposób (dzielenie 1 356 : 6) z jednym błędem rachunkowym.',
+              '2 pkt – poprawny wynik: 226 worków.',
+            ],
+          },
+        ],
       },
 
       // ------------------------------------------------------------------
@@ -576,6 +739,49 @@
           { id: 'ry1deg', q: 'Jak przyłożyć kątomierz do kąta?', options: ['środek kątomierza w wierzchołku, zero na jednym ramieniu', 'zero kątomierza w wierzchołku kąta', 'środek kątomierza na końcu ramienia'], answer: 0, explain: 'Środek kątomierza – w wierzchołek, linia zera – wzdłuż jednego ramienia.' },
           { id: 'gs9bc7', q: 'Prawda czy fałsz?\nProsta ma długość.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Prosta nie ma końców, więc nie da się zmierzyć jej długości. Długość ma odcinek.' },
           { id: 'p3r2yj', q: 'Prawda czy fałsz?\nKąt wklęsły jest większy od kąta półpełnego.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Kąt wklęsły ma więcej niż 180° (ale mniej niż 360°).' },
+        ],
+        tasks: [
+          {
+            id: 'o7463m',
+            points: 3,
+            q: 'Wskazówki zegara o 3:00 tworzą kąt prosty (90°). Jaki kąt tworzą wskazówki o 1:00, a jaki o 6:00? Nazwij rodzaj każdego z tych kątów.',
+            steps: [
+              'Tarcza zegara to kąt pełny – 360°. Liczb jest 12, więc między sąsiednimi liczbami jest 360° : 12 = 30°. (Sprawdzenie: od 12 do 3 są 3 odstępy, 3 · 30° = 90° ✓.)',
+              'O 1:00 wskazówki dzieli 1 odstęp: 30° – to kąt ostry (mniej niż 90°).',
+              'O 6:00 wskazówki są skierowane w przeciwne strony – 6 odstępów: 6 · 30° = 180°. To kąt półpełny.',
+            ],
+            answer: 'O 1:00 – 30°, kąt ostry; o 6:00 – 180°, kąt półpełny.',
+            scoring: [
+              '1 pkt – zauważenie, że między sąsiednimi liczbami na tarczy jest 30°.',
+              '1 pkt – 30° i kąt ostry (godzina 1:00).',
+              '1 pkt – 180° i kąt półpełny (godzina 6:00).',
+            ],
+          },
+          {
+            id: 'guwi5i',
+            points: 2,
+            q: 'Półprosta podzieliła kąt półpełny na dwa kąty. Jeden z nich ma 65°. Ile stopni ma drugi kąt? Jakiego rodzaju są oba kąty?',
+            svg: `<svg viewBox="0 0 400 170" role="img" aria-label="Prosta z punktem O. Z punktu O wychodzi półprosta. Kąt po prawej stronie ma 65 stopni, kąt po lewej jest oznaczony znakiem zapytania.">
+      <path d="M30,150 L370,150" class="ln"/>
+      <path d="M200,150 L263,14" class="ln"/>
+      <path d="M250,150 A50,50 0 0,0 221,105" class="ln-thin"/>
+      <path d="M140,150 A60,60 0 0,1 225,96" class="ln-thin dash"/>
+      <circle cx="200" cy="150" r="3" class="f2 s2"/>
+      <text x="196" y="168" class="tx-s">O</text>
+      <text x="258" y="140" class="tx-b t2">65°</text>
+      <text x="160" y="134" class="tx-b t1">?</text>
+    </svg>`,
+            steps: [
+              'Kąt półpełny ma 180°. Oba kąty razem dają 180°.',
+              'Drugi kąt: 180° − 65° = 115°.',
+              '65° to mniej niż 90° – kąt ostry. 115° to więcej niż 90°, ale mniej niż 180° – kąt rozwarty.',
+            ],
+            answer: 'Drugi kąt ma 115°. Kąt 65° jest ostry, a kąt 115° – rozwarty.',
+            scoring: [
+              '1 pkt – poprawna miara drugiego kąta: 115°.',
+              '1 pkt – poprawne nazwy obu kątów: ostry (65°) i rozwarty (115°).',
+            ],
+          },
         ],
       },
 
@@ -683,6 +889,61 @@
           { id: 'rpq3cd', q: 'Prawda czy fałsz?\nKażdy prostokąt jest kwadratem.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Prostokąt 5 cm × 3 cm nie ma wszystkich boków równych, więc nie jest kwadratem.' },
           { id: '7h34wb', q: 'Prawda czy fałsz?\nŚrednica jest najdłuższą cięciwą okręgu.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Średnica to cięciwa przechodząca przez środek. Żadna inna cięciwa nie jest od niej dłuższa.' },
         ],
+        tasks: [
+          {
+            id: '0pele3',
+            points: 2,
+            q: 'Ogród ma kształt prostokąta o wymiarach 12 m × 8 m. Trzeba go ogrodzić siatką, ale na furtkę szerokości 1 m siatki nie potrzeba. Ile metrów siatki trzeba kupić?',
+            steps: [
+              'Obwód ogrodu: 2 · 12 m + 2 · 8 m = 24 m + 16 m = 40 m.',
+              'Odejmij szerokość furtki: 40 m − 1 m = 39 m.',
+            ],
+            answer: '39 m siatki.',
+            scoring: [
+              '1 pkt – poprawny obwód: 40 m.',
+              '2 pkt – poprawny wynik po odjęciu furtki: 39 m.',
+            ],
+          },
+          {
+            id: '2swi9f',
+            points: 3,
+            q: 'Prostokąt ma obwód 30 cm, a jeden jego bok ma 9 cm. Oblicz długość drugiego boku i pole tego prostokąta.',
+            steps: [
+              'Obwód to dwa razy (bok + drugi bok). Połowa obwodu: 30 cm : 2 = 15 cm – tyle mają razem dwa sąsiednie boki.',
+              'Drugi bok: 15 cm − 9 cm = 6 cm. Sprawdzenie: 2 · 9 + 2 · 6 = 18 + 12 = 30 cm ✓.',
+              'Pole: 9 cm · 6 cm = 54 cm².',
+            ],
+            answer: 'Drugi bok ma 6 cm, pole – 54 cm².',
+            scoring: [
+              '1 pkt – poprawny sposób wyznaczenia drugiego boku (np. połowa obwodu minus 9 cm).',
+              '1 pkt – poprawna długość drugiego boku: 6 cm.',
+              '1 pkt – poprawne pole: 54 cm² (z jednostką).',
+            ],
+          },
+          {
+            id: 'lj5l50',
+            points: 2,
+            q: 'W prostokąt o wymiarach 12 cm × 6 cm narysowano obok siebie dwa jednakowe koła. Koła stykają się ze sobą i dotykają boków prostokąta (rysunek). Oblicz promień każdego koła.',
+            svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Prostokąt 12 cm na 6 cm, a w nim dwa jednakowe koła obok siebie, stykające się ze sobą i z bokami prostokąta.">
+      <rect x="80" y="30" width="240" height="120" class="ln"/>
+      <circle cx="140" cy="90" r="60" class="f1 s1"/>
+      <circle cx="260" cy="90" r="60" class="f3 s3"/>
+      <circle cx="140" cy="90" r="3" class="f2 s2"/>
+      <circle cx="260" cy="90" r="3" class="f2 s2"/>
+      <text x="200" y="172" class="tx" text-anchor="middle">12 cm</text>
+      <text x="334" y="96" class="tx">6 cm</text>
+    </svg>`,
+            steps: [
+              'Każde koło dotyka górnego i dolnego boku, więc jego średnica jest równa krótszemu bokowi: d = 6 cm. (Sprawdzenie: dwie średnice obok siebie to 6 cm + 6 cm = 12 cm – tyle ma dłuższy bok ✓.)',
+              'Promień to połowa średnicy: r = 6 cm : 2 = 3 cm.',
+            ],
+            answer: 'Promień każdego koła ma 3 cm.',
+            scoring: [
+              '1 pkt – zauważenie, że średnica koła ma 6 cm (albo że dwie średnice to 12 cm).',
+              '2 pkt – poprawny promień: 3 cm.',
+            ],
+          },
+        ],
       },
 
       // ------------------------------------------------------------------
@@ -749,6 +1010,37 @@
           { id: 'cxx0ht', q: 'Chrząszcz narysowano w skali 2 : 1. Na rysunku ma 6 cm długości. Ile ma naprawdę?', options: ['3 cm', '12 cm', '8 cm', '4 cm'], answer: 0, explain: 'Skala 2 : 1 to powiększenie 2 razy: 6 cm : 2 = 3 cm.' },
           { id: '9kxsl2', q: 'Prawda czy fałsz?\nW skali 1 : 100 jeden centymetr na planie to 100 m w rzeczywistości.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: '1 cm · 100 = 100 cm, a 100 cm to 1 m, nie 100 m.' },
           { id: 'tewbat', q: 'Prawda czy fałsz?\nSkala 1 : 1000 i skala „1 cm – 10 m” oznaczają to samo.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '10 m = 1000 cm, więc w obu przypadkach 1 cm na planie to 1000 cm w terenie.' },
+        ],
+        tasks: [
+          {
+            id: 'ql3710',
+            points: 2,
+            q: 'Na planie w skali 1 : 500 boisko ma wymiary 8 cm × 6 cm. Jakie wymiary ma boisko w rzeczywistości? Podaj je w metrach.',
+            steps: [
+              'Skala 1 : 500 – 1 cm na planie to 500 cm w rzeczywistości. Długości z planu mnożysz przez 500.',
+              '8 cm · 500 = 4 000 cm = 40 m; 6 cm · 500 = 3 000 cm = 30 m.',
+            ],
+            answer: '40 m × 30 m.',
+            scoring: [
+              '1 pkt – poprawne pomnożenie przez 500 (4 000 cm i 3 000 cm).',
+              '2 pkt – poprawne wymiary w metrach: 40 m × 30 m.',
+            ],
+          },
+          {
+            id: 'rvhp5g',
+            points: 2,
+            q: 'Odległość między dwiema wsiami wynosi 6 km. Ile centymetrów ma ta odległość na mapie w skali 1 : 200 000?',
+            steps: [
+              'Zamień kilometry na centymetry: 1 km = 100 000 cm, więc 6 km = 600 000 cm.',
+              'Z rzeczywistości na mapę – dzielisz przez liczbę ze skali: 600 000 cm : 200 000 = 3 cm.',
+              'Inaczej: w skali 1 : 200 000 1 cm na mapie to 2 km, a 6 km : 2 km = 3.',
+            ],
+            answer: '3 cm.',
+            scoring: [
+              '1 pkt – poprawna zamiana 6 km = 600 000 cm albo zauważenie, że 1 cm na mapie to 2 km.',
+              '2 pkt – poprawny wynik: 3 cm.',
+            ],
+          },
         ],
       },
 
@@ -839,6 +1131,39 @@
           { id: 'ra9whx', q: 'Prawda czy fałsz?\n4/4 = 1', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '4 części z 4 to cała całość: 4 : 4 = 1.' },
           { id: '2lg5k1', q: 'Prawda czy fałsz?\n1/6 pizzy to więcej niż 1/4 tej samej pizzy.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Gdy pizzę dzielimy na 6 części, kawałki są mniejsze niż przy podziale na 4. 1/6 to mniej niż 1/4.' },
         ],
+        tasks: [
+          {
+            id: 'hgnvbf',
+            points: 2,
+            q: 'W klasie jest 28 uczniów. Na wycieczkę pojechały 3/4 klasy. Ilu uczniów pojechało, a ilu nie pojechało?',
+            steps: [
+              'Najpierw 1/4 z 28: 28 : 4 = 7.',
+              '3/4 z 28: 3 · 7 = 21 uczniów pojechało.',
+              'Nie pojechało: 28 − 21 = 7 uczniów (to 1/4 klasy).',
+            ],
+            answer: 'Pojechało 21 uczniów, nie pojechało 7.',
+            scoring: [
+              '1 pkt – poprawne obliczenie 3/4 z 28 = 21.',
+              '1 pkt – poprawna liczba uczniów, którzy nie pojechali: 7.',
+            ],
+          },
+          {
+            id: 'easwl6',
+            points: 3,
+            q: 'Mama upiekła 3 jednakowe placki i każdy pokroiła na 8 równych kawałków. Goście zjedli 19 kawałków. Jaką część placka zjedli? Zapisz ją jako ułamek niewłaściwy i jako liczbę mieszaną. Ile placka zostało?',
+            steps: [
+              'Jeden kawałek to 1/8 placka, więc 19 kawałków to 19/8 placka – ułamek niewłaściwy (licznik większy od mianownika).',
+              'Zamiana na liczbę mieszaną: 19 : 8 = 2 reszty 3, więc 19/8 = 2 3/8 placka.',
+              'Wszystkich kawałków było 3 · 8 = 24. Zostało 24 − 19 = 5 kawałków, czyli 5/8 placka.',
+            ],
+            answer: 'Zjedli 19/8 = 2 3/8 placka, zostało 5/8 placka.',
+            scoring: [
+              '1 pkt – poprawny ułamek niewłaściwy: 19/8.',
+              '1 pkt – poprawna liczba mieszana: 2 3/8.',
+              '1 pkt – poprawna część, która została: 5/8 placka.',
+            ],
+          },
+        ],
       },
 
       // ------------------------------------------------------------------
@@ -926,6 +1251,38 @@
           },
           { id: 'iupzax', q: 'Kuba szedł do szkoły 3/4 godziny, a potem jechał autobusem 1/4 godziny. Ile czasu zajęła mu cała droga?', options: ['1 godzinę', '4/8 godziny', '1/2 godziny', '2 godziny'], answer: 0, explain: '3/4 + 1/4 = 4/4 = 1. Cała droga trwała 1 godzinę.' },
           { id: 'p0olgq', q: 'W butelce był 1 litr soku. Wypito 3/10 litra. Ile soku zostało?', options: ['7/10 litra', '3/10 litra', '2/10 litra', '1/10 litra'], answer: 0, explain: '1 = 10/10. 10/10 − 3/10 = 7/10 litra.' },
+        ],
+        tasks: [
+          {
+            id: '4jfb10',
+            points: 2,
+            q: 'Kasia przeczytała w poniedziałek 2/9 książki, a we wtorek 4/9 książki. Jaka część książki została jej jeszcze do przeczytania? Wynik skróć.',
+            steps: [
+              'W dwa dni przeczytała: 2/9 + 4/9 = 6/9 książki (te same mianowniki – dodajesz liczniki).',
+              'Cała książka to 9/9. Zostało: 9/9 − 6/9 = 3/9.',
+              'Skracasz przez 3: 3/9 = 1/3.',
+            ],
+            answer: 'Zostało 1/3 książki.',
+            scoring: [
+              '1 pkt – poprawna część przeczytana w dwa dni: 6/9 (albo 2/3).',
+              '2 pkt – poprawny wynik: 1/3 książki (wynik 3/9 bez skrócenia – 1 pkt).',
+            ],
+          },
+          {
+            id: '9kxisu',
+            points: 2,
+            q: 'Do ciasta potrzeba 1 1/2 szklanki mąki i 3/4 szklanki cukru. Ile to razem szklanek?',
+            steps: [
+              'Mianowniki są różne: 2 i 4. Liczba 4 jest wielokrotnością 2, więc rozszerzasz 1/2: 1/2 = 2/4. Zatem 1 1/2 = 1 2/4.',
+              'Dodaj: 1 2/4 + 3/4 = 1 5/4.',
+              '5/4 to więcej niż całość: 5/4 = 1 1/4. Razem: 1 + 1 1/4 = 2 1/4 szklanki.',
+            ],
+            answer: '2 1/4 szklanki.',
+            scoring: [
+              '1 pkt – sprowadzenie do wspólnego mianownika (1/2 = 2/4).',
+              '2 pkt – poprawny wynik: 2 1/4 szklanki (wynik 1 5/4 bez zamiany – 1 pkt).',
+            ],
+          },
         ],
       },
 
@@ -1031,6 +1388,39 @@
           { id: 'pmrkdk', q: 'Kupujesz zeszyt za 3,50 zł i długopis za 2,30 zł. Ile płacisz?', options: ['5,80 zł', '5,53 zł', '6,80 zł', '1,20 zł'], answer: 0, explain: '3,50 + 2,30: złote 3 + 2 = 5, grosze 50 + 30 = 80. Razem 5,80 zł.' },
           { id: 'ze38h0', q: 'Prawda czy fałsz?\n0,45 jest większe od 0,5, bo 45 jest większe od 5.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Trzeba porównać na tych samych miejscach: 0,5 = 0,50, a 0,50 > 0,45. Liczba cyfr po przecinku nie mówi, która liczba jest większa.' },
         ],
+        tasks: [
+          {
+            id: '4elx7n',
+            points: 2,
+            q: 'Ola kupiła zeszyt za 4,85 zł i długopis za 2,70 zł. Zapłaciła banknotem 10 zł. Ile reszty dostała?',
+            steps: [
+              'Koszt zakupów (przecinek pod przecinkiem): 4,85 + 2,70 = 7,55 zł.',
+              'Reszta: 10,00 − 7,55 = 2,45 zł.',
+              'Sprawdzenie: 7,55 + 2,45 = 10,00 ✓.',
+            ],
+            answer: '2,45 zł (2 zł 45 gr).',
+            scoring: [
+              '1 pkt – poprawny koszt zakupów: 7,55 zł.',
+              '2 pkt – poprawna reszta: 2,45 zł.',
+            ],
+          },
+          {
+            id: 'w22dm3',
+            points: 3,
+            q: 'Wyniki w skoku w dal: Ania – 2,8 m, Basia – 2,75 m, Celina – 2,09 m, Daria – 2,1 m. Ustaw dziewczynki od najdłuższego skoku do najkrótszego. O ile metrów najdłuższy skok był dłuższy od najkrótszego?',
+            steps: [
+              'Dopisz zera, żeby każda liczba miała dwie cyfry po przecinku: 2,80; 2,75; 2,09; 2,10.',
+              'Kolejność: 2,80 > 2,75 > 2,10 > 2,09, czyli Ania, Basia, Daria, Celina.',
+              'Różnica: 2,80 − 2,09 = 0,71 m (71 cm). Sprawdzenie: 2,09 + 0,71 = 2,80 ✓.',
+            ],
+            answer: 'Ania, Basia, Daria, Celina; różnica 0,71 m.',
+            scoring: [
+              '1 pkt – poprawne porównanie liczb (np. dopisanie zer: 2,80 i 2,10).',
+              '1 pkt – poprawna kolejność: Ania, Basia, Daria, Celina.',
+              '1 pkt – poprawna różnica: 0,71 m.',
+            ],
+          },
+        ],
       },
 
       // ------------------------------------------------------------------
@@ -1124,6 +1514,48 @@
           { id: 'c0eie7', q: 'Hektar to pole kwadratu o boku…', options: ['100 m', '10 m', '1000 m', '1 m'], answer: 0, explain: '100 m · 100 m = 10 000 m² = 1 ha. Kwadrat o boku 10 m ma pole 1 ara.' },
           { id: 'r2c47y', q: 'Prawda czy fałsz?\n1 km² = 100 ha', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '1 km² = 1000 m · 1000 m = 1 000 000 m². 1 ha = 10 000 m². 1 000 000 : 10 000 = 100.' },
           { id: 'hxdv6a', q: 'Ściana ma 4 m szerokości i 3 m wysokości. Jedna puszka farby wystarcza na 6 m². Ile puszek potrzeba, żeby raz pomalować ścianę?', options: ['2', '1', '3', '12'], answer: 0, explain: 'Pole ściany: 4 · 3 = 12 m². 12 : 6 = 2 puszki.' },
+        ],
+        tasks: [
+          {
+            id: '6uww71',
+            points: 2,
+            q: 'Pokój ma kształt litery L (rysunek). Oblicz pole podłogi tego pokoju.',
+            svg: `<svg viewBox="0 0 360 250" role="img" aria-label="Figura w kształcie litery L. Górny bok 4 m, prawy górny bok 3 m, półka 2 m, prawy dolny bok 2 m, dolny bok 6 m, lewy bok 5 m.">
+      <path d="M60,20 L220,20 L220,140 L300,140 L300,220 L60,220 Z" class="f4 s4 sw"/>
+      <text x="140" y="14" class="tx" text-anchor="middle">4 m</text>
+      <text x="228" y="86" class="tx">3 m</text>
+      <text x="260" y="132" class="tx" text-anchor="middle">2 m</text>
+      <text x="308" y="186" class="tx">2 m</text>
+      <text x="180" y="242" class="tx" text-anchor="middle">6 m</text>
+      <text x="52" y="126" class="tx" text-anchor="end">5 m</text>
+    </svg>`,
+            steps: [
+              'Sposób 1 – dopełnij do prostokąta: duży prostokąt 6 m × 5 m ma pole 30 m². Brakuje rogu 2 m × 3 m = 6 m². Pole: 30 − 6 = 24 m².',
+              'Sposób 2 – podziel na dwa prostokąty: dolny pas 6 m × 2 m = 12 m² i górna część 4 m × 3 m = 12 m². Razem 12 + 12 = 24 m².',
+              'Oba sposoby dają ten sam wynik ✓.',
+            ],
+            answer: '24 m².',
+            scoring: [
+              '1 pkt – poprawny podział figury na prostokąty albo dopełnienie do prostokąta 6 m × 5 m.',
+              '2 pkt – poprawne pole: 24 m².',
+            ],
+          },
+          {
+            id: 'eo1850',
+            points: 3,
+            q: 'Działka ma kształt prostokąta o wymiarach 40 m × 25 m. Ile to arów? Na działce wyłożono kostką kwadratowy podjazd 5 m × 5 m, a resztę obsiano trawą. Ile metrów kwadratowych zajmuje trawnik?',
+            steps: [
+              'Pole działki: 40 m · 25 m = 1 000 m².',
+              '1 a = 100 m², więc 1 000 m² = 10 a.',
+              'Podjazd: 5 m · 5 m = 25 m². Trawnik: 1 000 m² − 25 m² = 975 m².',
+            ],
+            answer: 'Działka ma 10 a, trawnik – 975 m².',
+            scoring: [
+              '1 pkt – poprawne pole działki: 1 000 m².',
+              '1 pkt – poprawna zamiana na ary: 10 a.',
+              '1 pkt – poprawne pole trawnika: 975 m².',
+            ],
+          },
         ],
       },
 
@@ -1245,6 +1677,37 @@
           },
           { id: 'g19slo', q: 'Prawda czy fałsz?\nKażdy prostopadłościan jest sześcianem.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Odwrotnie: każdy sześcian jest prostopadłościanem. Pudełko na buty jest prostopadłościanem, ale jego ściany nie są kwadratami.' },
         ],
+        tasks: [
+          {
+            id: '7hx6i7',
+            points: 2,
+            q: 'Z drutu robimy szkielet prostopadłościanu o krawędziach 12 cm, 8 cm i 5 cm. Czy wystarczy na to 1 m drutu? Uzasadnij obliczeniem.',
+            steps: [
+              'Prostopadłościan ma 12 krawędzi: po 4 krawędzie każdej długości.',
+              'Suma długości krawędzi: 4 · 12 + 4 · 8 + 4 · 5 = 48 + 32 + 20 = 100 cm.',
+              '100 cm = 1 m – drutu wystarczy dokładnie (bez zapasu).',
+            ],
+            answer: 'Tak – potrzeba dokładnie 100 cm = 1 m drutu.',
+            scoring: [
+              '1 pkt – poprawny sposób: 4 · 12 + 4 · 8 + 4 · 5 (albo 4 · (12 + 8 + 5)).',
+              '2 pkt – poprawny wynik 100 cm i odpowiedź „wystarczy”.',
+            ],
+          },
+          {
+            id: 'edjuhg',
+            points: 2,
+            q: 'Suma długości wszystkich krawędzi sześcianu wynosi 84 cm. Oblicz długość jednej krawędzi i pole jednej ściany tego sześcianu.',
+            steps: [
+              'Sześcian ma 12 krawędzi równej długości: 84 cm : 12 = 7 cm.',
+              'Ściana sześcianu to kwadrat o boku 7 cm: 7 cm · 7 cm = 49 cm².',
+            ],
+            answer: 'Krawędź ma 7 cm, pole ściany – 49 cm².',
+            scoring: [
+              '1 pkt – poprawna długość krawędzi: 7 cm.',
+              '1 pkt – poprawne pole ściany: 49 cm².',
+            ],
+          },
+        ],
       },
 
       // ------------------------------------------------------------------
@@ -1343,6 +1806,40 @@
           { id: 'ydxmqd', q: 'Basen ma wymiary 10 m × 5 m × 2 m. Jaka jest jego objętość?', options: ['100 m³', '17 m³', '160 m³', '50 m³'], answer: 0, explain: 'V = 10 · 5 · 2 = 100 m³, czyli 100 000 litrów. 160 to pole powierzchni (w m²), 17 – suma trzech krawędzi.' },
           { id: 'j04ce0', q: 'Jeden sześcian ma krawędź 1 cm, a drugi 2 cm. Ile razy większa jest objętość drugiego sześcianu?', options: ['8 razy', '2 razy', '4 razy', '6 razy'], answer: 0, explain: 'Objętości: 1 · 1 · 1 = 1 cm³ i 2 · 2 · 2 = 8 cm³. W drugim sześcianie zmieści się 8 małych.' },
           { id: 'lm2zq9', q: 'Prawda czy fałsz?\nObjętość podajemy w cm², a pole powierzchni w cm³.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Odwrotnie: pole – w cm² (kwadraciki), objętość – w cm³ (sześcianiki).' },
+        ],
+        tasks: [
+          {
+            id: '3pwerr',
+            points: 3,
+            q: 'Akwarium ma kształt prostopadłościanu: długość 60 cm, szerokość 30 cm, wysokość 40 cm. Nalano do niego wody do wysokości 35 cm. Ile litrów wody jest w akwarium?',
+            steps: [
+              'Woda tworzy prostopadłościan 60 cm × 30 cm × 35 cm (liczy się wysokość wody, nie akwarium).',
+              'Objętość: 60 · 30 = 1 800; 1 800 · 35 = 63 000 cm³.',
+              '1 l = 1 dm³ = 1 000 cm³, więc 63 000 cm³ = 63 l.',
+            ],
+            answer: '63 l wody.',
+            scoring: [
+              '1 pkt – użycie wysokości wody (35 cm), a nie wysokości akwarium.',
+              '1 pkt – poprawna objętość: 63 000 cm³.',
+              '1 pkt – poprawna zamiana na litry: 63 l.',
+            ],
+          },
+          {
+            id: 'mfpr58',
+            points: 3,
+            q: 'Pudełko bez wieka ma wymiary: dno 20 cm × 15 cm, wysokość 10 cm. Oklejamy je z zewnątrz papierem (dno i 4 ściany boczne). Ile cm² papieru potrzeba?',
+            steps: [
+              'Dno: 20 · 15 = 300 cm².',
+              'Ściany boczne: dwie 20 cm × 10 cm, czyli 2 · 200 = 400 cm², i dwie 15 cm × 10 cm, czyli 2 · 150 = 300 cm².',
+              'Razem (bez wieka): 300 + 400 + 300 = 1 000 cm².',
+            ],
+            answer: '1 000 cm² papieru.',
+            scoring: [
+              '1 pkt – poprawne pole dna: 300 cm².',
+              '1 pkt – poprawne pola ścian bocznych (400 cm² i 300 cm²).',
+              '1 pkt – poprawny wynik: 1 000 cm² (bez wieka).',
+            ],
+          },
         ],
       },
 

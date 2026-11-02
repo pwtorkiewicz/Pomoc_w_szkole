@@ -447,7 +447,7 @@
           ${opts.showTopic ? `<div class="qtopic">${esc(x.topicName)}</div>` : ''}
           <div class="qline"><h2 class="question">${esc(x.q)}</h2>${sayButton('Posłuchaj zadania')}</div>
           ${x.svg ? `<figure class="vis">${x.svg}</figure>` : ''}
-          <p class="muted">${opts.math ? 'Rozwiąż na kartce – jak na egzaminie zapisz cały tok rozumowania. Potem porównaj z rozwiązaniem.' : 'Napisz odpowiedź na kartce, potem porównaj ją z przykładową odpowiedzią i zasadami oceniania.'}${prev != null ? ` Ostatnio: ${prev}/${x.points} pkt.` : ''}</p>
+          <p class="muted">${opts.math ? (TRACK.exam ? 'Rozwiąż na kartce – jak na egzaminie zapisz cały tok rozumowania. Potem porównaj z rozwiązaniem.' : 'Rozwiąż na kartce i zapisz obliczenia. Potem porównaj z rozwiązaniem.') : 'Napisz odpowiedź na kartce, potem porównaj ją z przykładową odpowiedzią i zasadami oceniania.'}${prev != null ? ` Ostatnio: ${prev}/${x.points} pkt.` : ''}</p>
           <ol class="steps"></ol>
           <div class="row" id="ctl">
             <button class="btn" id="hint">💡 Podpowiedź</button>
@@ -466,7 +466,7 @@
         pane.querySelector('#after').innerHTML = `
           <div class="feedback ok"><strong>${opts.math ? 'Odpowiedź' : 'Przykładowa odpowiedź'}:</strong> ${esc(x.answer)}</div>
           <div class="scoring"><b>Jak ocenić rozwiązanie</b><ul>${x.scoring.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
-            <p class="muted">${opts.math ? 'Punktacja orientacyjna, w stylu zasad oceniania CKE: liczy się poprawny tok rozumowania, nie tylko wynik.' : 'Punktacja orientacyjna, w stylu zasad oceniania CKE. Twoja odpowiedź może brzmieć inaczej – liczy się, czy zawiera te same elementy.'}</p></div>
+            <p class="muted">${opts.math ? (TRACK.exam ? 'Punktacja orientacyjna, w stylu zasad oceniania CKE: liczy się poprawny tok rozumowania, nie tylko wynik.' : 'Punktacja orientacyjna: liczy się poprawny sposób rozwiązania, nie tylko wynik.') : 'Punktacja orientacyjna, w stylu zasad oceniania CKE. Twoja odpowiedź może brzmieć inaczej – liczy się, czy zawiera te same elementy.'}</p></div>
           <p><b>Ile punktów przyznajesz sobie?</b></p>
           <div class="row" id="self">${Array.from({ length: x.points + 1 }, (_, n) => `<button class="btn" data-n="${n}">${n}</button>`).join('')}</div>`;
         pane.querySelectorAll('#self .btn').forEach((b) => (b.onclick = () => {
