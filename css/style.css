@@ -210,6 +210,8 @@ small.muted, .muted { color: var(--muted); font-size: .85rem; }
 .vis .f4 { fill: var(--c4); } .vis .s4 { stroke: var(--c4s); } .vis .t4 { fill: var(--c4s); }
 .vis .f5 { fill: var(--c5); } .vis .s5 { stroke: var(--c5s); } .vis .t5 { fill: var(--c5s); }
 .vis .sw { stroke-width: 3; }
+/* barwy flagi Polski – w obu motywach takie same (biel ma być biała także w trybie ciemnym) */
+.vis .pl-w { fill: #ffffff; } .vis .pl-r { fill: #dc143c; }
 .widget .controls { display: flex; flex-wrap: wrap; gap: 10px 18px; justify-content: center; align-items: center; margin-top: 8px; font-size: .95rem; }
 .widget input[type=range] { width: 160px; accent-color: var(--primary); }
 .widget .readout { font-weight: 700; font-size: 1.1rem; margin-top: 6px; }

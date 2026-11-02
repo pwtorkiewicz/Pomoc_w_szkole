@@ -43,6 +43,7 @@ window.LESSONS['<przedmiot>/<id działu>'] = [
   - obrysy: `s1`…`s5` (mocne kolory) – łącz z wypełnieniem: `class="f1 s1 sw"`
   - tekst: `tx` (16px), `tx-b` (pogrubiony 18px), `tx-s` (mały, szary 13px); kolor tekstu: `t1`…`t5`
   - tło karty: `bg`
+  - barwy flagi Polski (wyjątek – nie zmieniają się w trybie ciemnym): `pl-w` biały, `pl-r` czerwony; obrysuj je klasą `ln`
 - Tekst w SVG nie mniejszy niż `tx-s`, najlepiej `tx`/`tx-b`. **Napisy nie mogą wychodzić poza viewBox ani na siebie nachodzić** – licz ok. 9 px na znak dla `tx` i 10 px dla `tx-b`.
 - SVG musi być poprawnym XML-em: zamykaj tagi, `&` pisz jako `&amp;`, `<` jako `&lt;`. Nie używaj `${` w lekcjach.
 - Dobre pomysły na grafiki: schematy z blokami i strzałkami, osie czasu, tabele-kafelki, oś liczbowa, rozkład wyrazu na kolorowe części (np. przedrostek | rdzeń | przyrostek), drzewko zdania, porównanie „źle / dobrze”, mapa postaci lektury, kafelki z ikonami z emoji (emoji w `<text>` są OK).
