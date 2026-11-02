@@ -1476,6 +1476,302 @@
         ],
       },
       {
+        id: 'dziesietne-dzialania',
+        name: 'Ułamki dziesiętne – mnożenie i dzielenie',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 28a (mnożenie ułamków dziesiętnych – tu przez 10, 100, 1000, przez liczbę naturalną i proste iloczyny dwóch ułamków, co najwyżej trzy cyfry po przecinku), 28b (dzielenie – tu tylko przez 10, 100, 1000 i przez liczbę naturalną jednocyfrową; dzielenie przez ułamek dziesiętny – później); dz. 2 Miary, wym. 2, 7 i 10 (zamiana jednostek długości i masy przez mnożenie i dzielenie przez 10, 100, 1000); dz. 2 wym. 13 (proste obliczenia pieniężne – moduł ekonomiczno-finansowy). Ciąg dalszy działu „Ułamki dziesiętne – pierwsze kroki”.' + WYBOR,
+        theory: `
+          <h3>Mnożenie przez 10, 100, 1000</h3>
+          <p>Przesuwasz przecinek <b>w prawo</b> – o tyle miejsc, ile zer ma mnożnik:</p>
+          <ul>
+            <li><span class="f">3,45 · 10 = 34,5</span> (o 1 miejsce)</li>
+            <li><span class="f">3,45 · 100 = 345</span> (o 2 miejsca)</li>
+            <li><span class="f">3,45 · 1000 = 3450</span> (o 3 miejsca – brakujące miejsce uzupełniasz zerem)</li>
+          </ul>
+          <h3>Dzielenie przez 10, 100, 1000</h3>
+          <p>Przesuwasz przecinek <b>w lewo</b> – o tyle miejsc, ile zer ma dzielnik:</p>
+          <ul>
+            <li><span class="f">45,6 : 10 = 4,56</span></li>
+            <li><span class="f">45,6 : 100 = 0,456</span></li>
+            <li><span class="f">8 : 100 = 0,08</span> (8 = 8,0 – przed ósemką dopisujesz zera)</li>
+          </ul>
+          <div class="tip">💡 Mnożenie robi liczbę większą – przecinek idzie w prawo. Dzielenie robi ją mniejszą – przecinek idzie w lewo.</div>
+          <h3>Zamiana jednostek</h3>
+          <ul>
+            <li>1 m = 100 cm: <span class="f">2,5 m = 2,5 · 100 cm = 250 cm</span></li>
+            <li>1 kg = 1000 g: <span class="f">350 g = 350 : 1000 kg = 0,35 kg</span></li>
+            <li>1 cm = 10 mm: <span class="f">4,2 cm = 42 mm</span></li>
+          </ul>
+          <h3>Mnożenie przez liczbę naturalną</h3>
+          <p>Mnożysz tak, jakby przecinka nie było, a potem w wyniku oddzielasz <b>tyle cyfr po przecinku, ile było w ułamku</b>.</p>
+          <ul>
+            <li><span class="f">0,4 · 3</span>: 4 · 3 = 12 → <span class="f">1,2</span></li>
+            <li><span class="f">1,25 · 3</span>: 125 · 3 = 375 → <span class="f">3,75</span></li>
+            <li><span class="f">2,5 · 4</span>: 25 · 4 = 100 → 10,0 = <span class="f">10</span></li>
+          </ul>
+          <h3>Mnożenie dwóch ułamków dziesiętnych</h3>
+          <p>Wynik ma tyle cyfr po przecinku, ile <b>razem</b> mają oba czynniki:</p>
+          <ul>
+            <li><span class="f">0,3 · 0,2</span>: 3 · 2 = 6, razem 2 cyfry po przecinku → <span class="f">0,06</span></li>
+            <li><span class="f">1,5 · 0,4</span>: 15 · 4 = 60, 2 cyfry → 0,60 = <span class="f">0,6</span></li>
+          </ul>
+          <h3>Dzielenie przez liczbę naturalną</h3>
+          <p>Dzielisz jak zwykle, a przecinek w wyniku stawiasz <b>w tym miejscu, w którym przekraczasz przecinek</b> w dzielnej.</p>
+          <ul>
+            <li><span class="f">4,8 : 2 = 2,4</span> (48 dziesiątych : 2 = 24 dziesiąte)</li>
+            <li><span class="f">6,3 : 7 = 0,9</span> (63 dziesiąte : 7 = 9 dziesiątych)</li>
+            <li><span class="f">1 : 4 = 0,25</span> (1 = 1,00, czyli 100 setnych : 4 = 25 setnych)</li>
+          </ul>
+          <h3>Sprawdzaj szacowaniem</h3>
+          <p>1,25 · 3 to trochę więcej niż 1 · 3 = 3 – wynik 3,75 pasuje, a 37,5 na pewno nie.</p>
+        `,
+        flashcards: [
+          ['· 10, · 100, · 1000', 'Przecinek w prawo o 1, 2, 3 miejsca'],
+          [': 10, : 100, : 1000', 'Przecinek w lewo o 1, 2, 3 miejsca'],
+          ['3,45 · 100', '345'],
+          ['45,6 : 100', '0,456'],
+          ['2,5 m w centymetrach', '250 cm (2,5 · 100)'],
+          ['350 g w kilogramach', '0,35 kg (350 : 1000)'],
+          ['0,4 · 3', '1,2 (4 · 3 = 12, jedna cyfra po przecinku)'],
+          ['0,3 · 0,2', '0,06 (razem dwie cyfry po przecinku)'],
+          ['4,8 : 2', '2,4'],
+          ['1 : 4', '0,25 (1 = 1,00)'],
+          ['Jak sprawdzić wynik 1,25 · 3?', 'Oszacuj: ok. 1 · 3 = 3, więc 3,75 pasuje'],
+        ],
+        questions: [
+          { id: 'p6j4i1', q: 'Ile wynosi 3,45 · 10?', options: ['34,5', '3,450', '345', '0,345'], answer: 0, explain: 'Mnożenie przez 10 – przecinek o jedno miejsce w prawo: 34,5.' },
+          { id: 'xqknf8', q: 'Ile wynosi 0,072 · 100?', options: ['7,2', '72', '0,72', '0,00072'], answer: 0, explain: 'Mnożenie przez 100 – przecinek o dwa miejsca w prawo: 0,072 → 7,2.' },
+          { id: 'm869jx', q: 'Ile wynosi 1,5 · 1000?', options: ['1500', '150', '15 000', '1,5000'], answer: 0, explain: 'Przecinek o trzy miejsca w prawo: 1,500 → 1500. Brakujące miejsca uzupełniasz zerami.' },
+          { id: 'pig6ap', q: 'Ile wynosi 45,6 : 10?', options: ['4,56', '456', '0,456', '45,06'], answer: 0, explain: 'Dzielenie przez 10 – przecinek o jedno miejsce w lewo: 4,56.' },
+          { id: 'xfwxq8', q: 'Ile wynosi 8 : 100?', options: ['0,08', '0,8', '0,008', '800'], answer: 0, explain: '8 = 8,0. Przecinek o dwa miejsca w lewo – dopisujesz zero przed ósemką: 0,08.' },
+          { id: 'gtlmx5', q: 'Ile to centymetrów: 2,5 m?', options: ['250 cm', '25 cm', '2500 cm', '205 cm'], answer: 0, explain: '1 m = 100 cm, więc mnożysz przez 100: 2,5 · 100 = 250 cm.' },
+          { id: 'n46yz7', q: 'Ile to kilogramów: 350 g?', options: ['0,35 kg', '3,5 kg', '0,035 kg', '35 kg'], answer: 0, explain: '1 kg = 1000 g, więc dzielisz przez 1000: 350 : 1000 = 0,35 kg.' },
+          { id: '3tt1pk', q: 'Ile wynosi 0,4 · 3?', options: ['1,2', '0,12', '12', '0,7'], answer: 0, explain: '4 · 3 = 12. W ułamku 0,4 jest jedna cyfra po przecinku, więc wynik to 1,2.' },
+          { id: 'elypvl', q: 'Ile wynosi 1,25 · 3?', options: ['3,75', '3,65', '37,5', '3,15'], answer: 0, explain: '125 · 3 = 375. W 1,25 są dwie cyfry po przecinku, więc 3,75. Szacowanie: ok. 1 · 3 = 3 – pasuje.' },
+          { id: 'wjwlw2', q: 'Ile wynosi 2,5 · 4?', options: ['10', '1', '8,2', '100'], answer: 0, explain: '25 · 4 = 100, jedna cyfra po przecinku: 10,0 = 10. Inaczej: 2 · 4 = 8 i 0,5 · 4 = 2, razem 10.' },
+          { id: '40rhvl', q: 'Ile wynosi 0,3 · 0,2?', options: ['0,06', '0,6', '6', '0,006'], answer: 0, explain: '3 · 2 = 6. Oba czynniki mają razem dwie cyfry po przecinku, więc 0,06.' },
+          { id: 'cqplzk', q: 'Ile wynosi 1,5 · 0,4?', options: ['0,6', '6', '0,06', '1,9'], answer: 0, explain: '15 · 4 = 60. Razem dwie cyfry po przecinku: 0,60 = 0,6.' },
+          { id: 'rjrf00', q: 'Ile cyfr po przecinku ma iloczyn 0,25 · 0,3, zanim skreślisz zera na końcu?', options: ['3', '2', '1', '5'], answer: 0, explain: '0,25 ma dwie cyfry po przecinku, 0,3 – jedną. Razem trzy: 25 · 3 = 75 → 0,075.' },
+          { id: 'gqhs25', q: 'Ile wynosi 4,8 : 2?', options: ['2,4', '2,04', '24', '0,24'], answer: 0, explain: '48 dziesiątych : 2 = 24 dziesiąte, czyli 2,4. Sprawdzenie: 2,4 · 2 = 4,8.' },
+          { id: 'ln48tw', q: 'Ile wynosi 6,3 : 7?', options: ['0,9', '9', '0,09', '1,1'], answer: 0, explain: '63 dziesiąte : 7 = 9 dziesiątych, czyli 0,9. Sprawdzenie: 0,9 · 7 = 6,3.' },
+          { id: '786qrx', q: 'Ile wynosi 1 : 4?', options: ['0,25', '0,4', '4', '2,5'], answer: 0, explain: '1 = 1,00, czyli 100 setnych. 100 setnych : 4 = 25 setnych = 0,25.' },
+          { id: 'e06y8w', q: 'Zeszyt kosztuje 2,40 zł. Ile zapłacisz za 3 zeszyty?', options: ['7,20 zł', '6,120 zł', '7,02 zł', '6,80 zł'], answer: 0, explain: '2,40 · 3: 2 zł · 3 = 6 zł i 40 gr · 3 = 120 gr = 1,20 zł. Razem 7,20 zł.' },
+          { id: 'isljud', q: 'Za 3 jednakowe soki zapłacono 12,60 zł. Ile kosztuje jeden sok?', options: ['4,20 zł', '4,02 zł', '4,60 zł', '37,80 zł'], answer: 0, explain: '12,60 : 3 = 4,20 zł. Sprawdzenie: 4,20 · 3 = 12,60.' },
+          { id: '8ku3ph', q: 'Kilogram jabłek kosztuje 4,50 zł. Ile zapłacisz za 2 kg?', options: ['9,00 zł', '8,10 zł', '9,50 zł', '6,50 zł'], answer: 0, explain: '4,50 · 2 = 9,00 zł (4 zł · 2 = 8 zł, 50 gr · 2 = 1 zł).' },
+          { id: '7cbirp', q: 'Prawda czy fałsz?\nMnożąc liczbę przez 100, przesuwasz przecinek o dwa miejsca w lewo.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Mnożenie przez 100 zwiększa liczbę, więc przecinek idzie w prawo: 0,35 · 100 = 35. W lewo przesuwasz go przy dzieleniu.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
+        id: 'procenty',
+        name: 'Procenty – pierwsze kroki',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 33 (100% jako całość, 50% – połowa, 25% – jedna czwarta, 10% – jedna dziesiąta, 1% – jedna setna), 34 (procent danej wielkości w kontekście praktycznym – tu tylko 1%, 10%, 25%, 50%, 75% i wielokrotności 10%), 35 (porównywanie opłacalności – tu tylko cena po prostym rabacie; moduł ekonomiczno-finansowy). Obliczanie, jakim procentem jednej liczby jest druga, i liczby z jej procentu – klasy VII–VIII.' + WYBOR,
+        theory: `
+          <h3>Co to jest procent?</h3>
+          <p><b>Procent</b> (znak <b>%</b>) to <b>jedna setna</b> całości. Słowo pochodzi od łacińskiego „na sto”.</p>
+          <p><span class="f">1% = 1/100</span> – gdy całość podzielisz na 100 równych części, 1% to jedna taka część.</p>
+          <h3>Procenty, które trzeba znać</h3>
+          <table>
+            <tr><th>Procent</th><th>Jaka część całości</th></tr>
+            <tr><td>100%</td><td>cała całość</td></tr>
+            <tr><td>50%</td><td>połowa – 1/2</td></tr>
+            <tr><td>25%</td><td>ćwierć – 1/4</td></tr>
+            <tr><td>75%</td><td>trzy czwarte – 3/4</td></tr>
+            <tr><td>10%</td><td>jedna dziesiąta – 1/10</td></tr>
+            <tr><td>1%</td><td>jedna setna – 1/100</td></tr>
+          </table>
+          <h3>Jak obliczyć procent liczby?</h3>
+          <ul>
+            <li><b>50%</b> – dziel przez 2: <span class="f">50% z 30 zł = 15 zł</span></li>
+            <li><b>25%</b> – dziel przez 4: <span class="f">25% z 40 = 10</span></li>
+            <li><b>10%</b> – dziel przez 10: <span class="f">10% z 70 = 7</span></li>
+            <li><b>1%</b> – dziel przez 100: <span class="f">1% z 300 = 3</span></li>
+            <li><b>20%</b> to 2 razy po 10%: <span class="f">20% z 50 = 2 · 5 = 10</span></li>
+            <li><b>75%</b> to 3 razy po 25%: <span class="f">75% z 80 = 3 · 20 = 60</span></li>
+          </ul>
+          <div class="tip">💡 Najpierw policz 10% (albo 25%, albo 1%), a potem pomnóż – tak policzysz w pamięci prawie każdy procent.</div>
+          <h3>Część i reszta</h3>
+          <p>Wszystkie części razem to 100%. Jeśli przeczytałeś 30% książki, zostało ci <span class="f">100% − 30% = 70%</span>.</p>
+          <h3>Promocje i rabaty</h3>
+          <p><b>Rabat</b> (obniżka) to część ceny, której nie płacisz.</p>
+          <ul>
+            <li>Kurtka za 60 zł, rabat 10%: obniżka = 10% z 60 = 6 zł, nowa cena <span class="f">60 − 6 = 54 zł</span>.</li>
+            <li>„−50%” na grę za 24 zł: płacisz połowę, czyli <span class="f">12 zł</span>.</li>
+          </ul>
+          <p>Porównując oferty, zawsze licz <b>cenę końcową</b> – wyższy rabat nie zawsze oznacza niższą cenę.</p>
+        `,
+        flashcards: [
+          ['1%', 'Jedna setna całości – 1/100'],
+          ['100%', 'Cała całość'],
+          ['50%', 'Połowa – dziel przez 2'],
+          ['25%', 'Ćwierć – dziel przez 4'],
+          ['10%', 'Jedna dziesiąta – dziel przez 10'],
+          ['75%', 'Trzy czwarte – 3 razy po 25%'],
+          ['50% z 30 zł', '15 zł'],
+          ['10% z 70', '7'],
+          ['20% z 50', '10 (2 razy po 10%, czyli 2 · 5)'],
+          ['Przeczytałeś 30% książki. Ile zostało?', '70% (100% − 30%)'],
+          ['Kurtka 60 zł, rabat 10%', 'Obniżka 6 zł, cena 54 zł'],
+        ],
+        questions: [
+          { id: 'da6z38', q: '1% to…', options: ['jedna setna całości', 'jedna dziesiąta całości', 'połowa całości', 'cała całość'], answer: 0, explain: 'Procent to setna część: 1% = 1/100.' },
+          { id: 'baxqdt', q: '50% to…', options: ['połowa', 'ćwierć', 'jedna dziesiąta', 'całość'], answer: 0, explain: '50% = 50/100 = 1/2, czyli połowa.' },
+          { id: 'pvl20p', q: 'Jaką częścią całości jest 25%?', options: ['1/4', '1/25', '1/2', '1/5'], answer: 0, explain: '25% = 25/100 = 1/4 – ćwierć. Cztery razy po 25% to 100%.' },
+          { id: 'vtsvhl', q: 'Ile to jest 50% z 30 zł?', options: ['15 zł', '50 zł', '3 zł', '60 zł'], answer: 0, explain: '50% to połowa: 30 : 2 = 15 zł.' },
+          { id: '3m3yqc', q: 'Ile to jest 10% z 70?', options: ['7', '70', '0,7', '10'], answer: 0, explain: '10% to jedna dziesiąta: 70 : 10 = 7.' },
+          { id: 'ggbwy7', q: 'Ile to jest 25% z 40?', options: ['10', '25', '20', '4'], answer: 0, explain: '25% to ćwierć: 40 : 4 = 10.' },
+          { id: '9mhqzj', q: 'Ile to jest 1% z 300?', options: ['3', '30', '1', '300'], answer: 0, explain: '1% to jedna setna: 300 : 100 = 3.' },
+          { id: 'b0bujj', q: 'Ile to jest 20% z 50?', options: ['10', '20', '5', '25'], answer: 0, explain: '10% z 50 = 5. 20% to dwa razy więcej: 2 · 5 = 10.' },
+          { id: 'x9lg7o', q: 'Ile to jest 75% z 80?', options: ['60', '75', '20', '40'], answer: 0, explain: '25% z 80 = 80 : 4 = 20. 75% to trzy razy więcej: 3 · 20 = 60.' },
+          { id: 'wmij29', q: 'Ile to jest 10% z 5 zł?', options: ['50 gr', '5 gr', '1 zł', '10 gr'], answer: 0, explain: '5 zł = 500 gr. 500 gr : 10 = 50 gr.' },
+          { id: 'wzp26n', q: 'Ile to jest 100% z 45?', options: ['45', '100', '4,5', '0,45'], answer: 0, explain: '100% to cała liczba: 45.' },
+          { id: '6d9mn1', q: 'Na siatce ze 100 kratek zamalowano 37 kratek. Jaki procent siatki zamalowano?', options: ['37%', '63%', '3,7%', '100%'], answer: 0, explain: 'Każda kratka to 1/100 siatki, czyli 1%. 37 kratek to 37%.' },
+          { id: 'fun8rl', q: 'Kasia przeczytała 30% książki. Jaka część książki została jej do przeczytania?', options: ['70%', '30%', '60%', '100%'], answer: 0, explain: 'Cała książka to 100%. 100% − 30% = 70%.' },
+          { id: 'g5ykj7', q: 'W klasie jest 20 uczniów. 50% z nich to dziewczynki. Ile jest dziewczynek?', options: ['10', '50', '5', '15'], answer: 0, explain: '50% to połowa: 20 : 2 = 10.' },
+          { id: '02vdf3', q: 'Kurtka kosztuje 60 zł. Sklep daje rabat 10%. Ile zapłacisz po obniżce?', options: ['54 zł', '50 zł', '6 zł', '66 zł'], answer: 0, explain: 'Obniżka: 10% z 60 = 6 zł. Cena: 60 − 6 = 54 zł. 6 zł to sama obniżka, nie cena.' },
+          { id: 'tsafvj', q: 'Gra kosztowała 24 zł. Teraz jest promocja „−50%”. Ile kosztuje gra?', options: ['12 zł', '48 zł', '6 zł', '23,50 zł'], answer: 0, explain: '−50% oznacza obniżkę o połowę ceny: 24 : 2 = 12 zł.' },
+          { id: '1z0scd', q: 'Sklep A: buty za 80 zł z rabatem 25%. Sklep B: te same buty za 70 zł bez rabatu. Gdzie zapłacisz mniej?', options: ['w sklepie A – 60 zł', 'w sklepie B – 70 zł', 'tyle samo w obu'], noShuffle: true, answer: 0, explain: '25% z 80 = 20 zł, więc w sklepie A buty kosztują 80 − 20 = 60 zł. To mniej niż 70 zł.' },
+          { id: '234aaq', q: 'Co jest więcej: 10% z 200 czy 50% z 30?', options: ['10% z 200', '50% z 30', 'tyle samo'], noShuffle: true, answer: 0, explain: '10% z 200 = 20, a 50% z 30 = 15. Większy procent nie zawsze daje większy wynik – liczy się też całość.' },
+          {
+            id: 'j0t4kg',
+            q: 'Jaki procent koła zajmuje część żółta?',
+            svg: `<svg viewBox="0 0 320 200" role="img" aria-label="Koło podzielone na części: lewa połowa niebieska, prawa górna ćwiartka zielona, prawa dolna ćwiartka żółta">
+      <path d="M160,100 L160,20 A80,80 0 0,0 160,180 Z" class="f1 s1 sw"/>
+      <path d="M160,100 L160,20 A80,80 0 0,1 240,100 Z" class="f3 s3 sw"/>
+      <path d="M160,100 L240,100 A80,80 0 0,1 160,180 Z" class="f4 s4 sw"/>
+      <text x="40" y="104" class="tx-s" text-anchor="middle">niebieska</text>
+      <text x="276" y="40" class="tx-s" text-anchor="middle">zielona</text>
+      <text x="276" y="176" class="tx-s" text-anchor="middle">żółta</text>
+    </svg>`,
+            options: ['25%', '50%', '75%', '20%'],
+            answer: 0,
+            explain: 'Niebieska część to połowa (50%), zielona – ćwierć (25%). Żółta też jest ćwiartką: 100% − 50% − 25% = 25%.',
+          },
+          { id: 'u23vj4', q: 'Prawda czy fałsz?\n25% to więcej niż połowa.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Połowa to 50%. 25% to ćwierć – dwa razy mniej niż połowa.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
+        id: 'pola-wielokatow',
+        name: 'Wysokości i pola trójkątów i czworokątów',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 13 (wysokości w trójkącie, równoległoboku i trapezie), 14 (pole trójkąta, rombu, równoległoboku, trapezu oraz figur, które można z nich zbudować); dz. 2 Miary, wym. 4 i 6 (jednostki pola, zamiana jednostek długości przed obliczeniem); dz. 3 Algebra, wym. 3 (korzystanie z prostych wzorów z literami). Ciąg dalszy działów „Trójkąty i czworokąty” oraz „Jednostki pola i figury złożone”.' + WYBOR,
+        theory: `
+          <h3>Wysokość</h3>
+          <p><b>Wysokość</b> to odcinek poprowadzony z wierzchołka <b>prostopadle</b> do przeciwległego boku (albo do jego przedłużenia). Bok, na który ją opuszczamy, nazywamy <b>podstawą</b>.</p>
+          <ul>
+            <li>Każdy trójkąt ma <b>3 wysokości</b> – po jednej na każdy bok.</li>
+            <li>W trójkącie prostokątnym dwie wysokości to boki tworzące kąt prosty.</li>
+            <li>W trójkącie rozwartokątnym dwie wysokości leżą na zewnątrz – opadają na przedłużenia boków.</li>
+            <li>W równoległoboku i trapezie wysokość to odległość między bokami równoległymi.</li>
+          </ul>
+          <div class="tip">💡 Wysokość zawsze tworzy z podstawą kąt prosty. Bok ukośny nie jest wysokością!</div>
+          <h3>Wzory na pole</h3>
+          <table>
+            <tr><th>Figura</th><th>Pole</th></tr>
+            <tr><td>równoległobok</td><td><span class="f">P = a · h</span></td></tr>
+            <tr><td>romb</td><td><span class="f">P = a · h</span> albo <span class="f">P = e · f : 2</span></td></tr>
+            <tr><td>trójkąt</td><td><span class="f">P = a · h : 2</span></td></tr>
+            <tr><td>trapez</td><td><span class="f">P = (a + b) · h : 2</span></td></tr>
+          </table>
+          <p>a – podstawa, h – wysokość opuszczona na tę podstawę; w rombie e i f to przekątne; w trapezie a i b to dwie podstawy (boki równoległe).</p>
+          <h3>Skąd te wzory?</h3>
+          <ul>
+            <li><b>Równoległobok</b>: odetnij trójkąt z jednej strony i doklej z drugiej – powstanie prostokąt a × h.</li>
+            <li><b>Trójkąt</b>: dwa jednakowe trójkąty tworzą równoległobok – pole trójkąta to połowa a · h.</li>
+            <li><b>Trapez</b>: dwa jednakowe trapezy (jeden odwrócony) tworzą równoległobok o podstawie a + b.</li>
+            <li><b>Romb</b> to równoległobok, ale można też liczyć z przekątnych: romb to połowa prostokąta e × f.</li>
+          </ul>
+          <h3>Przykłady</h3>
+          <ul>
+            <li>Równoległobok: a = 8 cm, h = 5 cm → <span class="f">P = 8 · 5 = 40 cm²</span></li>
+            <li>Trójkąt: a = 10 cm, h = 6 cm → <span class="f">P = 10 · 6 : 2 = 30 cm²</span></li>
+            <li>Romb: e = 6 cm, f = 10 cm → <span class="f">P = 6 · 10 : 2 = 30 cm²</span></li>
+            <li>Trapez: a = 7 cm, b = 3 cm, h = 4 cm → <span class="f">P = (7 + 3) · 4 : 2 = 20 cm²</span></li>
+          </ul>
+          <h3>Uwaga na jednostki</h3>
+          <p>Przed liczeniem zamień wszystkie długości na <b>te same jednostki</b>. Równoległobok a = 2 m, h = 50 cm: 2 m = 200 cm, P = 200 · 50 = 10 000 cm² = 1 m².</p>
+          <h3>Figury złożone</h3>
+          <p>Figurę podziel na części, których pola umiesz policzyć, i dodaj te pola. „Domek” z kwadratu i trójkąta: pole kwadratu + pole trójkąta.</p>
+        `,
+        flashcards: [
+          ['Wysokość', 'Odcinek z wierzchołka prostopadły do przeciwległego boku (lub jego przedłużenia)'],
+          ['Ile wysokości ma trójkąt?', 'Trzy – po jednej na każdy bok'],
+          ['Pole równoległoboku', 'P = a · h'],
+          ['Pole trójkąta', 'P = a · h : 2 (połowa równoległoboku)'],
+          ['Pole rombu z przekątnych', 'P = e · f : 2'],
+          ['Pole trapezu', 'P = (a + b) · h : 2'],
+          ['Równoległobok a = 8 cm, h = 5 cm', 'P = 40 cm²'],
+          ['Trójkąt a = 10 cm, h = 6 cm', 'P = 30 cm²'],
+          ['Trapez a = 7 cm, b = 3 cm, h = 4 cm', 'P = 20 cm²'],
+          ['Czy bok ukośny równoległoboku to wysokość?', 'Nie – wysokość jest prostopadła do podstawy'],
+          ['a = 2 m, h = 50 cm – co najpierw?', 'Zamień na te same jednostki: 200 cm i 50 cm'],
+        ],
+        questions: [
+          { id: '8xiij1', q: 'Wysokość trójkąta to odcinek…', options: ['poprowadzony z wierzchołka prostopadle do prostej zawierającej przeciwległy bok', 'łączący wierzchołek ze środkiem przeciwległego boku', 'równy najdłuższemu bokowi', 'łączący środki dwóch boków'], answer: 0, explain: 'Wysokość zawsze tworzy kąt prosty z podstawą (albo z jej przedłużeniem).' },
+          { id: 'fp0gqv', q: 'Ile wysokości ma każdy trójkąt?', options: ['3', '1', '2', '6'], answer: 0, explain: 'Z każdego z trzech wierzchołków można poprowadzić wysokość na przeciwległy bok.' },
+          { id: 'pxzrt4', q: 'Które boki trójkąta prostokątnego są jednocześnie jego wysokościami?', options: ['dwa boki tworzące kąt prosty', 'najdłuższy bok i jeden krótszy', 'żaden bok'], noShuffle: true, answer: 0, explain: 'Boki przy kącie prostym są do siebie prostopadłe, więc każdy z nich jest wysokością opuszczoną na drugi.' },
+          { id: 'mv1zr1', q: 'Równoległobok ma podstawę 8 cm i wysokość 5 cm. Jakie ma pole?', options: ['40 cm²', '26 cm²', '20 cm²', '13 cm²'], answer: 0, explain: 'P = a · h = 8 · 5 = 40 cm².' },
+          { id: 'jl40ej', q: 'Trójkąt ma podstawę 10 cm i wysokość 6 cm. Jakie ma pole?', options: ['30 cm²', '60 cm²', '16 cm²', '8 cm²'], answer: 0, explain: 'P = a · h : 2 = 10 · 6 : 2 = 30 cm². 60 cm² to pole równoległoboku – trójkąt to jego połowa.' },
+          { id: 'nyn646', q: 'Boki tworzące kąt prosty w trójkącie prostokątnym mają 6 cm i 8 cm. Jakie pole ma ten trójkąt?', options: ['24 cm²', '48 cm²', '14 cm²', '10 cm²'], answer: 0, explain: 'Jeden z tych boków to podstawa, drugi – wysokość: P = 6 · 8 : 2 = 24 cm².' },
+          { id: 'flz83a', q: 'Przekątne rombu mają 6 cm i 10 cm. Jakie pole ma romb?', options: ['30 cm²', '60 cm²', '16 cm²', '15 cm²'], answer: 0, explain: 'P = e · f : 2 = 6 · 10 : 2 = 30 cm².' },
+          { id: 'n9lkny', q: 'Romb ma bok 5 cm i wysokość 4 cm. Jakie ma pole?', options: ['20 cm²', '10 cm²', '25 cm²', '9 cm²'], answer: 0, explain: 'Romb to równoległobok: P = a · h = 5 · 4 = 20 cm².' },
+          { id: 'z1h80u', q: 'Trapez ma podstawy 7 cm i 3 cm oraz wysokość 4 cm. Jakie ma pole?', options: ['20 cm²', '40 cm²', '84 cm²', '14 cm²'], answer: 0, explain: 'P = (a + b) · h : 2 = (7 + 3) · 4 : 2 = 10 · 4 : 2 = 20 cm².' },
+          { id: 'qu2j5h', q: 'Trapez ma podstawy 10 dm i 6 dm oraz wysokość 5 dm. Jakie ma pole?', options: ['40 dm²', '80 dm²', '300 dm²', '21 dm²'], answer: 0, explain: 'P = (10 + 6) · 5 : 2 = 16 · 5 : 2 = 80 : 2 = 40 dm².' },
+          {
+            id: 'scnp1q',
+            q: 'Oblicz pole równoległoboku z rysunku.',
+            svg: `<svg viewBox="0 0 360 180" role="img" aria-label="Równoległobok o podstawie 9 cm i boku ukośnym 5 cm. Przerywana wysokość opuszczona na podstawę ma 4 cm.">
+      <path d="M40,140 L256,140 L328,44 L112,44 Z" class="f1 s1 sw"/>
+      <line x1="112" y1="44" x2="112" y2="140" class="ln dash"/>
+      <path d="M112,128 L124,128 L124,140" class="ln"/>
+      <text x="148" y="166" class="tx" text-anchor="middle">9 cm</text>
+      <text x="66" y="92" class="tx" text-anchor="end">5 cm</text>
+      <text x="120" y="98" class="tx">4 cm</text>
+    </svg>`,
+            options: ['36 cm²', '45 cm²', '28 cm²', '18 cm²'],
+            answer: 0,
+            explain: 'Mnożysz podstawę przez wysokość (przerywany odcinek), a nie przez bok ukośny: P = 9 · 4 = 36 cm².',
+          },
+          {
+            id: '54qc57',
+            q: 'Oblicz pole trójkąta z rysunku.',
+            svg: `<svg viewBox="0 0 340 190" role="img" aria-label="Trójkąt o podstawie 8 cm. Przerywana wysokość opuszczona na podstawę ma 5 cm.">
+      <path d="M50,160 L250,160 L170,35 Z" class="f3 s3 sw"/>
+      <line x1="170" y1="35" x2="170" y2="160" class="ln dash"/>
+      <path d="M170,148 L182,148 L182,160" class="ln"/>
+      <text x="150" y="184" class="tx" text-anchor="middle">8 cm</text>
+      <text x="178" y="112" class="tx">5 cm</text>
+    </svg>`,
+            options: ['20 cm²', '40 cm²', '13 cm²', '26 cm²'],
+            answer: 0,
+            explain: 'P = a · h : 2 = 8 · 5 : 2 = 20 cm².',
+          },
+          {
+            id: 'zdbaug',
+            q: 'Oblicz pole „domku” złożonego z prostokąta i trójkąta.',
+            svg: `<svg viewBox="0 0 340 250" role="img" aria-label="Domek: prostokąt o bokach 6 cm i 4 cm, na nim trójkąt o podstawie 6 cm i wysokości 3 cm">
+      <rect x="80" y="100" width="180" height="120" class="f4 s4 sw"/>
+      <path d="M80,100 L260,100 L170,10 Z" class="f2 s2 sw"/>
+      <line x1="170" y1="10" x2="170" y2="100" class="ln dash"/>
+      <text x="170" y="242" class="tx" text-anchor="middle">6 cm</text>
+      <text x="268" y="165" class="tx">4 cm</text>
+      <text x="178" y="64" class="tx">3 cm</text>
+    </svg>`,
+            options: ['33 cm²', '42 cm²', '27 cm²', '36 cm²'],
+            answer: 0,
+            explain: 'Prostokąt: 6 · 4 = 24 cm². Trójkąt: 6 · 3 : 2 = 9 cm². Razem 24 + 9 = 33 cm².',
+          },
+          { id: 'x6p7fe', q: 'Trójkąt ma pole 12 cm² i podstawę 6 cm. Jaką wysokość opuszczono na tę podstawę?', options: ['4 cm', '2 cm', '6 cm', '72 cm'], answer: 0, explain: '6 · h : 2 = 12, więc 6 · h = 24 i h = 4 cm. Sprawdzenie: 6 · 4 : 2 = 12.' },
+          { id: 'kz4i5g', q: 'Trójkąt i równoległobok mają taką samą podstawę i taką samą wysokość. Pole trójkąta jest…', options: ['dwa razy mniejsze', 'takie samo', 'dwa razy większe'], noShuffle: true, answer: 0, explain: 'Pole trójkąta to a · h : 2, a równoległoboku a · h – trójkąt to połowa równoległoboku.' },
+          { id: 'liihc2', q: 'Równoległobok ma podstawę 2 m i wysokość 50 cm. Jakie ma pole?', options: ['1 m²', '100 m²', '100 cm²', '10 m²'], answer: 0, explain: 'Te same jednostki: 2 m = 200 cm. P = 200 · 50 = 10 000 cm² = 1 m². Albo: 50 cm = 0,5 m, P = 2 · 0,5 = 1 m².' },
+          { id: '1wzhde', q: 'Działka ma kształt trapezu o podstawach 30 m i 20 m i wysokości 10 m. Jakie ma pole?', options: ['250 m²', '500 m²', '6000 m²', '60 m²'], answer: 0, explain: 'P = (30 + 20) · 10 : 2 = 50 · 10 : 2 = 250 m².' },
+          { id: '3052xh', q: 'Prawda czy fałsz?\nPole równoległoboku obliczasz, mnożąc długości dwóch sąsiednich boków.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Tak liczy się pole prostokąta. W równoległoboku mnożysz podstawę przez wysokość – bok ukośny jest dłuższy od wysokości.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
         id: 'dane',
         name: 'Tabele i diagramy',
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 5 Dane, wym. 1 (odczytywanie danych z tekstu, tabel i diagramów; porównywanie cen, kosztów i wydatków na paragonach i w tabelach – moduł ekonomiczno-finansowy), wym. 2 (proste badanie: zbieranie danych, uporządkowany zapis, wnioski).' + WYBOR,

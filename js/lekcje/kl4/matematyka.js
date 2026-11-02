@@ -1735,3 +1735,294 @@ window.LESSONS['matematyka/rownania'] = [
     check: { q: 'Pomyślałem liczbę, dodałem 12 i otrzymałem 30. Jaką liczbę pomyślałem?', options: ['18', '42', '12'], answer: 0, explain: 'x + 12 = 30, więc x = 30 − 12 = 18. Sprawdzenie: 18 + 12 = 30.' },
   },
 ];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['matematyka/dziesietne-dzialania'] = [
+  {
+    title: 'Mnożenie przez 10, 100, 1000 – przecinek w prawo',
+    svg: `<svg viewBox="0 0 400 170" role="img" aria-label="3,45 razy 10 to 34,5 – przecinek o 1 miejsce w prawo; razy 100 to 345 – o 2 miejsca; razy 1000 to 3450 – o 3 miejsca">
+      <rect x="10" y="10" width="380" height="44" rx="10" class="f1 s1"/>
+      <rect x="10" y="62" width="380" height="44" rx="10" class="f1 s1"/>
+      <rect x="10" y="114" width="380" height="44" rx="10" class="f1 s1"/>
+      <text x="26" y="38" class="tx">3,45 · 10</text><text x="205" y="37" class="tx-s" text-anchor="middle">→ o 1 miejsce</text><text x="374" y="38" class="tx-b" text-anchor="end">= 34,5</text>
+      <text x="26" y="90" class="tx">3,45 · 100</text><text x="205" y="89" class="tx-s" text-anchor="middle">→ o 2 miejsca</text><text x="374" y="90" class="tx-b" text-anchor="end">= 345</text>
+      <text x="26" y="142" class="tx">3,45 · 1000</text><text x="205" y="141" class="tx-s" text-anchor="middle">→ o 3 miejsca</text><text x="374" y="142" class="tx-b" text-anchor="end">= 345<tspan class="t2">0</tspan></text>
+    </svg>`,
+    text: `<p>Mnożenie przez 10 robi liczbę 10 razy większą. W ułamku dziesiętnym wystarczy <b>przesunąć przecinek w prawo</b> – o tyle miejsc, ile zer ma mnożnik.</p>
+      <p>Gdy zabraknie cyfr, dopisujesz zera: 3,45 · 1000 = 3450.</p>`,
+    remember: '· 10 – o 1 miejsce w prawo, · 100 – o 2, · 1000 – o 3.',
+    hook: 'Liczy się zera: ile zer w mnożniku, tyle skoków robi przecinek.',
+    check: { q: 'Ile wynosi 0,6 · 100?', options: ['6', '60', '0,006'], answer: 1, explain: 'Przecinek o dwa miejsca w prawo: 0,60 → 60.' },
+  },
+  {
+    title: 'Dzielenie przez 10, 100, 1000 – przecinek w lewo',
+    svg: `<svg viewBox="0 0 400 170" role="img" aria-label="45,6 podzielone przez 10 to 4,56; przez 100 to 0,456; 8 podzielone przez 100 to 0,08">
+      <rect x="10" y="10" width="380" height="44" rx="10" class="f2 s2"/>
+      <rect x="10" y="62" width="380" height="44" rx="10" class="f2 s2"/>
+      <rect x="10" y="114" width="380" height="44" rx="10" class="f2 s2"/>
+      <text x="26" y="38" class="tx">45,6 : 10</text><text x="205" y="37" class="tx-s" text-anchor="middle">← o 1 miejsce</text><text x="374" y="38" class="tx-b" text-anchor="end">= 4,56</text>
+      <text x="26" y="90" class="tx">45,6 : 100</text><text x="205" y="89" class="tx-s" text-anchor="middle">← o 2 miejsca</text><text x="374" y="90" class="tx-b" text-anchor="end">= 0,456</text>
+      <text x="26" y="142" class="tx">8 : 100</text><text x="205" y="141" class="tx-s" text-anchor="middle">← o 2 miejsca</text><text x="374" y="142" class="tx-b" text-anchor="end">= <tspan class="t2">0,0</tspan>8</text>
+    </svg>`,
+    text: `<p>Dzielenie robi liczbę mniejszą, więc przecinek idzie <b>w lewo</b> – znów o tyle miejsc, ile zer ma dzielnik.</p>
+      <p>Liczba bez przecinka ma go „ukrytego” na końcu: 8 = 8,0. Brakujące miejsca przed cyframi wypełniasz zerami: 8 : 100 = 0,08.</p>`,
+    remember: ': 10 – o 1 miejsce w lewo, : 100 – o 2, : 1000 – o 3.',
+    hook: 'Mnożenie – liczba rośnie, przecinek ucieka w prawo. Dzielenie – liczba maleje, przecinek cofa się w lewo.',
+    check: { q: 'Ile wynosi 7 : 1000?', options: ['0,07', '0,007', '7000'], answer: 1, explain: '7 = 7,0. Przecinek o trzy miejsca w lewo: 0,007.' },
+  },
+  {
+    title: 'Zamiana jednostek to też mnożenie i dzielenie',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Schodki jednostek długości: km razy 1000 to m, m razy 100 to cm, cm razy 10 to mm; w drugą stronę dzielenie. Przykłady: 2,5 m to 250 cm; 350 g to 0,35 kg.">
+      <defs><marker id="a-m9-dd-1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker>
+      <marker id="a-m9-dd-2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t1"/></marker></defs>
+      <rect x="10" y="60" width="65" height="44" rx="8" class="f3 s3"/><rect x="115" y="60" width="65" height="44" rx="8" class="f3 s3"/>
+      <rect x="220" y="60" width="65" height="44" rx="8" class="f3 s3"/><rect x="325" y="60" width="65" height="44" rx="8" class="f3 s3"/>
+      <g class="tx-b" text-anchor="middle"><text x="42" y="88">km</text><text x="147" y="88">m</text><text x="252" y="88">cm</text><text x="357" y="88">mm</text></g>
+      <g class="ln"><path d="M78,72 L112,72" marker-end="url(#a-m9-dd-1)"/><path d="M183,72 L217,72" marker-end="url(#a-m9-dd-1)"/><path d="M288,72 L322,72" marker-end="url(#a-m9-dd-1)"/>
+      <path d="M112,94 L78,94" marker-end="url(#a-m9-dd-2)"/><path d="M217,94 L183,94" marker-end="url(#a-m9-dd-2)"/><path d="M322,94 L288,94" marker-end="url(#a-m9-dd-2)"/></g>
+      <g class="tx-s t2" text-anchor="middle"><text x="95" y="48">· 1000</text><text x="200" y="48">· 100</text><text x="305" y="48">· 10</text></g>
+      <g class="tx-s t1" text-anchor="middle"><text x="95" y="126">: 1000</text><text x="200" y="126">: 100</text><text x="305" y="126">: 10</text></g>
+      <text x="200" y="160" class="tx" text-anchor="middle">2,5 m = 2,5 · 100 cm = 250 cm</text>
+      <text x="200" y="188" class="tx" text-anchor="middle">350 g = 350 : 1000 kg = 0,35 kg</text>
+    </svg>`,
+    text: `<p>Przechodzisz na <b>mniejszą</b> jednostkę – będzie jej więcej, więc <b>mnożysz</b>: 2,5 m = 250 cm.</p>
+      <p>Przechodzisz na <b>większą</b> jednostkę – będzie jej mniej, więc <b>dzielisz</b>: 350 g = 0,35 kg (bo 1 kg = 1000 g).</p>`,
+    remember: 'Na mniejszą jednostkę – mnożysz. Na większą – dzielisz.',
+    hook: 'Drobne monety: 1 zł zamieniasz na 100 groszy – mniejszych jednostek zawsze jest więcej.',
+    check: { q: 'Ile to milimetrów: 4,2 cm?', options: ['42 mm', '0,42 mm', '420 mm'], answer: 0, explain: '1 cm = 10 mm, więc mnożysz przez 10: 4,2 · 10 = 42 mm.' },
+  },
+  {
+    title: 'Mnożenie – licz cyfry po przecinku',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Dwa przykłady. 1,25 razy 3: 125 razy 3 to 375, dwie cyfry po przecinku, wynik 3,75. 0,3 razy 0,2: 3 razy 2 to 6, razem dwie cyfry po przecinku, wynik 0,06.">
+      <defs><marker id="a-m9-dd-3" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="10" width="185" height="180" rx="12" class="f1 s1"/>
+      <rect x="205" y="10" width="185" height="180" rx="12" class="f5 s5"/>
+      <g class="tx-b" text-anchor="middle"><text x="102" y="40">1,25 · 3</text><text x="297" y="40">0,3 · 0,2</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="102" y="62">2 cyfry po przecinku</text><text x="297" y="62">1 + 1 = 2 cyfry</text></g>
+      <g class="ln"><path d="M102,70 L102,94" marker-end="url(#a-m9-dd-3)"/><path d="M297,70 L297,94" marker-end="url(#a-m9-dd-3)"/>
+      <path d="M102,132 L102,156" marker-end="url(#a-m9-dd-3)"/><path d="M297,132 L297,156" marker-end="url(#a-m9-dd-3)"/></g>
+      <g class="tx" text-anchor="middle"><text x="102" y="120">125 · 3 = 375</text><text x="297" y="120">3 · 2 = 6</text></g>
+      <g class="tx-b t2" text-anchor="middle"><text x="102" y="180">3,75</text><text x="297" y="180">0,06</text></g>
+    </svg>`,
+    text: `<p>Mnożysz tak, jakby przecinków nie było. Potem w wyniku oddzielasz przecinkiem <b>tyle cyfr od końca, ile razem było po przecinku w czynnikach</b>.</p>
+      <p>1,25 · 3 → 375 → dwie cyfry → 3,75. A 0,3 · 0,2 → 6 → dwie cyfry → 0,06 (brakujące miejsce zajmuje zero).</p>`,
+    remember: 'Wynik ma tyle cyfr po przecinku, ile razem mają oba czynniki.',
+    hook: 'Sprawdź szacowaniem: 1,25 · 3 to „trochę ponad 3” – więc 3,75, a nie 37,5.',
+    check: { q: 'Ile wynosi 0,2 · 4?', options: ['8', '0,08', '0,8'], answer: 2, explain: '2 · 4 = 8, jedna cyfra po przecinku: 0,8.' },
+  },
+  {
+    title: 'Dzielenie przez liczbę naturalną – i sprawdzenie',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="12,60 zł dzielone po równo na 3 osoby: każda dostaje 4,20 zł. Sprawdzenie: 4,20 razy 3 to 12,60.">
+      <defs><marker id="a-m9-dd-4" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="130" y="10" width="140" height="44" rx="10" class="f4 s4"/>
+      <text x="200" y="39" class="tx-b" text-anchor="middle">12,60 zł</text>
+      <g class="ln"><path d="M170,56 L80,96" marker-end="url(#a-m9-dd-4)"/><path d="M200,56 L200,96" marker-end="url(#a-m9-dd-4)"/><path d="M230,56 L320,96" marker-end="url(#a-m9-dd-4)"/></g>
+      <rect x="20" y="102" width="110" height="44" rx="10" class="f3 s3"/><rect x="145" y="102" width="110" height="44" rx="10" class="f3 s3"/><rect x="270" y="102" width="110" height="44" rx="10" class="f3 s3"/>
+      <g class="tx-b" text-anchor="middle"><text x="75" y="131">4,20 zł</text><text x="200" y="131">4,20 zł</text><text x="325" y="131">4,20 zł</text></g>
+      <text x="200" y="176" class="tx" text-anchor="middle">12,60 : 3 = 4,20</text>
+      <text x="200" y="200" class="tx-s" text-anchor="middle">sprawdzenie: 4,20 · 3 = 12,60 ✓</text>
+    </svg>`,
+    text: `<p>Dzielisz jak liczby naturalne, a przecinek w wyniku stawiasz <b>w chwili, gdy „przechodzisz” przez przecinek</b> w dzielnej: 4,8 : 2 = 2,4 (48 dziesiątych : 2 = 24 dziesiąte).</p>
+      <p>Czasem trzeba dopisać zera: 1 : 4 = 1,00 : 4 = 0,25. Wynik zawsze sprawdzisz mnożeniem.</p>
+      <p>Uwaga na pułapki: przy mnożeniu przez 10, 100, 1000 przecinek idzie w <b>prawo</b>, przy dzieleniu – w <b>lewo</b>; szacuj, czy wynik ma sens.</p>`,
+    remember: 'Dzielenie sprawdzasz mnożeniem: wynik · dzielnik = dzielna.',
+    check: { q: 'Ile wynosi 6,3 : 7?', options: ['9', '0,9', '0,09'], answer: 1, explain: '63 dziesiąte : 7 = 9 dziesiątych, czyli 0,9. Sprawdzenie: 0,9 · 7 = 6,3.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['matematyka/procenty'] = [
+  {
+    title: 'Procent, czyli setna część',
+    widget: { type: 'procent', p: 25, of: 200 },
+    text: `<p>Podziel całość na <b>100 równych części</b>. Jedna taka część to <b>1 procent</b> – zapisujemy <b>1%</b>. Cała siatka to 100%.</p>
+      <p>Procenty spotkasz w sklepie („−20%”), na baterii telefonu (35%) i w wynikach sprawdzianu. Przesuń suwak i zobacz, ile kratek to 25%, a ile 50%.</p>`,
+    remember: '1% = 1/100 całości. 100% to cała całość.',
+    hook: '„Procent” znaczy „na sto” – jak cent, setna część dolara.',
+    check: { q: 'Ile kratek ze 100 zamalujesz, żeby było 40%?', options: ['4', '40', '60'], answer: 1, explain: 'Każda kratka to 1%, więc 40% to 40 kratek.' },
+  },
+  {
+    title: 'Procenty, które warto znać na pamięć',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Paski: 100% to cały pasek – całość; 50% to połowa paska – 1/2; 25% to ćwierć – 1/4; 10% to jedna dziesiąta – 1/10">
+      <g class="tx-b" text-anchor="end"><text x="60" y="41">100%</text><text x="60" y="87">50%</text><text x="60" y="133">25%</text><text x="60" y="179">10%</text></g>
+      <rect x="70" y="18" width="240" height="32" class="f2 s2"/>
+      <rect x="70" y="64" width="120" height="32" class="f2 s2"/><rect x="70" y="64" width="240" height="32" class="ln" fill="none"/>
+      <rect x="70" y="110" width="60" height="32" class="f2 s2"/><rect x="70" y="110" width="240" height="32" class="ln" fill="none"/>
+      <rect x="70" y="156" width="24" height="32" class="f2 s2"/><rect x="70" y="156" width="240" height="32" class="ln" fill="none"/>
+      <g class="tx"><text x="322" y="40">całość</text><text x="322" y="86">1/2</text><text x="322" y="132">1/4</text><text x="322" y="178">1/10</text></g>
+    </svg>`,
+    text: `<p>Kilka procentów to znane ci ułamki: <b>50% to połowa</b>, <b>25% to ćwierć</b>, <b>10% to jedna dziesiąta</b>, a <b>75% to trzy czwarte</b>.</p>
+      <p>Wszystkie części razem dają 100%. Jeśli zjadłeś 25% pizzy, zostało 75%.</p>`,
+    remember: '50% = 1/2, 25% = 1/4, 75% = 3/4, 10% = 1/10, 1% = 1/100.',
+    hook: 'Ćwierć pizzy to 25% – cztery kawałki po 25% dają całą pizzę.',
+    check: { q: 'Jaką częścią całości jest 10%?', options: ['1/10', '1/100', '1/2'], answer: 0, explain: '10% = 10/100 = 1/10 – jedna dziesiąta.' },
+  },
+  {
+    title: 'Jak policzyć procent z liczby?',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="50% z 30 zł to 30 dzielone przez 2, czyli 15 zł. 25% z 40 to 40 przez 4, czyli 10. 10% z 70 to 70 przez 10, czyli 7. 1% z 300 to 300 przez 100, czyli 3.">
+      <rect x="10" y="8" width="380" height="44" rx="10" class="f1 s1"/><rect x="10" y="60" width="380" height="44" rx="10" class="f3 s3"/>
+      <rect x="10" y="112" width="380" height="44" rx="10" class="f4 s4"/><rect x="10" y="164" width="380" height="44" rx="10" class="f5 s5"/>
+      <g class="tx"><text x="24" y="36">50% z 30 zł</text><text x="24" y="88">25% z 40</text><text x="24" y="140">10% z 70</text><text x="24" y="192">1% z 300</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="210" y="35">→ 30 : 2 →</text><text x="210" y="87">→ 40 : 4 →</text><text x="210" y="139">→ 70 : 10 →</text><text x="210" y="191">→ 300 : 100 →</text></g>
+      <g class="tx-b t2" text-anchor="end"><text x="376" y="36">15 zł</text><text x="376" y="88">10</text><text x="376" y="140">7</text><text x="376" y="192">3</text></g>
+    </svg>`,
+    text: `<p>Każdy z tych procentów to dzielenie:</p>
+      <ul><li>50% – dzielisz przez 2,</li><li>25% – przez 4,</li><li>10% – przez 10,</li><li>1% – przez 100.</li></ul>`,
+    remember: '50% → : 2, 25% → : 4, 10% → : 10, 1% → : 100.',
+    hook: '10% to „skreśl ostatnie zero”: 10% z 70 = 7, 10% z 300 = 30.',
+    check: { q: 'Ile to jest 25% z 20?', options: ['5', '25', '80'], answer: 0, explain: '25% to ćwierć: 20 : 4 = 5.' },
+  },
+  {
+    title: '20%, 30%, 75% – składaj z klocków',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Pasek 50 zł podzielony na 10 części po 5 zł; 2 części zamalowane: 20% z 50 zł to 10 zł. Pasek 80 podzielony na 4 ćwiartki po 20; 3 zamalowane: 75% z 80 to 60.">
+      <text x="200" y="22" class="tx-s" text-anchor="middle">50 zł = 10 części po 5 zł (każda to 10%)</text>
+      <g class="ln-thin"><rect x="20" y="32" width="36" height="34"/><rect x="56" y="32" width="36" height="34"/><rect x="92" y="32" width="36" height="34"/><rect x="128" y="32" width="36" height="34"/><rect x="164" y="32" width="36" height="34"/><rect x="200" y="32" width="36" height="34"/><rect x="236" y="32" width="36" height="34"/><rect x="272" y="32" width="36" height="34"/><rect x="308" y="32" width="36" height="34"/><rect x="344" y="32" width="36" height="34"/></g>
+      <g class="f2 s2"><rect x="20" y="32" width="36" height="34"/><rect x="56" y="32" width="36" height="34"/></g>
+      <rect x="20" y="32" width="360" height="34" class="ln" fill="none"/>
+      <text x="200" y="96" class="tx-b" text-anchor="middle">20% = 2 · 5 zł = 10 zł</text>
+      <text x="200" y="128" class="tx-s" text-anchor="middle">80 = 4 ćwiartki po 20 (każda to 25%)</text>
+      <g class="f3 s3"><rect x="20" y="138" width="90" height="34"/><rect x="110" y="138" width="90" height="34"/><rect x="200" y="138" width="90" height="34"/></g>
+      <rect x="290" y="138" width="90" height="34" class="ln-thin"/>
+      <rect x="20" y="138" width="360" height="34" class="ln" fill="none"/>
+      <g class="tx" text-anchor="middle"><text x="65" y="161">20</text><text x="155" y="161">20</text><text x="245" y="161">20</text><text x="335" y="161">20</text></g>
+      <text x="200" y="204" class="tx-b" text-anchor="middle">75% = 3 · 20 = 60</text>
+    </svg>`,
+    text: `<p>Trudniejszy procent złóż z łatwych „klocków”. Policz najpierw 10% albo 25%, a potem pomnóż.</p>
+      <p>20% to dwa razy po 10%, 30% – trzy razy po 10%, 75% – trzy razy po 25%.</p>`,
+    remember: 'Najpierw 10% (albo 25%), potem pomnóż przez liczbę „klocków”.',
+    hook: 'Jak z klocków LEGO: z jednego małego klocka 10% zbudujesz 20%, 30%, 40%…',
+    check: { q: 'Ile to jest 30% z 60?', options: ['18', '30', '20'], answer: 0, explain: '10% z 60 = 6. 30% to trzy razy więcej: 3 · 6 = 18.' },
+  },
+  {
+    title: 'Promocje w sklepie – i pułapki',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Metka: kurtka 60 zł, rabat minus 10%, obniżka 6 zł, nowa cena 54 zł. Pod spodem: buty 80 zł minus 25% to 60 zł, taniej niż 70 zł bez rabatu.">
+      <defs><marker id="a-m9-pr-1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="14" y="14" width="110" height="60" rx="10" class="f4 s4"/>
+      <text x="69" y="52" class="tx-b" text-anchor="middle">60 zł</text>
+      <line x1="34" y1="46" x2="104" y2="38" class="ln s2 sw"/>
+      <path d="M130,44 L168,44" class="ln" marker-end="url(#a-m9-pr-1)"/>
+      <rect x="174" y="20" width="80" height="48" rx="24" class="f2 s2"/>
+      <text x="214" y="50" class="tx-b" text-anchor="middle">−10%</text>
+      <path d="M260,44 L298,44" class="ln" marker-end="url(#a-m9-pr-1)"/>
+      <rect x="304" y="14" width="86" height="60" rx="10" class="f3 s3"/>
+      <text x="347" y="52" class="tx-b" text-anchor="middle">54 zł</text>
+      <text x="214" y="96" class="tx-s" text-anchor="middle">obniżka: 10% z 60 zł = 6 zł</text>
+      <rect x="14" y="116" width="372" height="72" rx="10" class="bg ln"/>
+      <text x="30" y="144" class="tx">A: 80 zł −25% → 60 zł</text>
+      <text x="30" y="174" class="tx">B: 70 zł bez rabatu</text>
+      <text x="370" y="144" class="tx-b t3" text-anchor="end">taniej ✓</text>
+    </svg>`,
+    text: `<p><b>Rabat</b> to obniżka ceny. Najpierw liczysz obniżkę (10% z 60 zł = 6 zł), potem <b>odejmujesz</b> ją od ceny: 60 − 6 = 54 zł.</p>
+      <p>Pułapki: obniżka to nie nowa cena! A przy porównywaniu ofert liczy się <b>cena końcowa</b> – sklep z większym rabatem nie zawsze jest tańszy.</p>`,
+    remember: 'Nowa cena = stara cena − obniżka.',
+    hook: '„−50%” to zawsze „płacisz połowę”.',
+    check: { q: 'Bluza kosztuje 80 zł. Jest rabat 25%. Ile zapłacisz?', options: ['20 zł', '60 zł', '55 zł'], answer: 1, explain: 'Obniżka: 25% z 80 = 20 zł. Cena: 80 − 20 = 60 zł.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['matematyka/pola-wielokatow'] = [
+  {
+    title: 'Wysokość – zawsze pod kątem prostym',
+    svg: `<svg viewBox="0 0 420 190" role="img" aria-label="Trzy trójkąty z zaznaczoną wysokością: w ostrokątnym wysokość jest w środku, w prostokątnym wysokością jest bok przy kącie prostym, w rozwartokątnym wysokość leży na zewnątrz i opada na przedłużenie podstawy">
+      <path d="M20,150 L130,150 L80,50 Z" class="f1 s1 sw"/>
+      <line x1="80" y1="50" x2="80" y2="150" class="ln dash"/>
+      <path d="M80,138 L92,138 L92,150" class="ln"/>
+      <path d="M160,150 L260,150 L160,50 Z" class="f3 s3 sw"/>
+      <line x1="160" y1="50" x2="160" y2="150" class="ln s2 sw"/>
+      <path d="M160,138 L172,138 L172,150" class="ln"/>
+      <path d="M300,150 L360,150 L405,60 Z" class="f5 s5 sw"/>
+      <line x1="360" y1="150" x2="405" y2="150" class="ln dash"/>
+      <line x1="405" y1="60" x2="405" y2="150" class="ln dash"/>
+      <path d="M393,150 L393,138 L405,138" class="ln"/>
+      <g class="tx-s" text-anchor="middle"><text x="75" y="178">ostrokątny</text><text x="210" y="178">prostokątny</text><text x="352" y="178">rozwartokątny</text></g>
+      <text x="88" y="104" class="tx-b t2">h</text><text x="146" y="104" class="tx-b t2">h</text><text x="390" y="110" class="tx-b t2">h</text>
+    </svg>`,
+    text: `<p><b>Wysokość</b> (oznaczamy ją literą <b>h</b>) to odcinek poprowadzony z wierzchołka <b>prostopadle</b> do przeciwległego boku. Ten bok nazywamy <b>podstawą</b>.</p>
+      <p>Każdy trójkąt ma 3 wysokości. W trójkącie prostokątnym wysokością jest bok przy kącie prostym. W rozwartokątnym wysokość może „wyjść” poza trójkąt – wtedy przedłużasz podstawę.</p>`,
+    remember: 'Wysokość tworzy z podstawą kąt prosty.',
+    hook: 'Wysokość to jak pion murarski – zawsze prosto w dół, nigdy na ukos.',
+    check: { q: 'Ile wysokości ma trójkąt?', options: ['1', '2', '3'], answer: 2, explain: 'Z każdego z trzech wierzchołków prowadzisz jedną wysokość.' },
+  },
+  {
+    title: 'Równoległobok – przestaw kawałek i masz prostokąt',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Z równoległoboku odcinamy trójkąt z lewej strony i doklejamy z prawej. Powstaje prostokąt o bokach a i h, więc pole równoległoboku to a razy h.">
+      <defs><marker id="a-m9-pw-1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <path d="M20,140 L160,140 L200,60 L60,60 Z" class="f1 s1 sw"/>
+      <path d="M20,140 L60,140 L60,60 Z" class="f2 s2"/>
+      <line x1="60" y1="60" x2="60" y2="140" class="ln dash"/>
+      <path d="M206,100 L232,100" class="ln" marker-end="url(#a-m9-pw-1)"/>
+      <rect x="240" y="60" width="140" height="80" class="f1 s1 sw"/>
+      <path d="M340,140 L380,140 L380,60 Z" class="f2 s2"/>
+      <text x="90" y="162" class="tx-b" text-anchor="middle">a</text>
+      <text x="66" y="106" class="tx-b">h</text>
+      <text x="310" y="162" class="tx-b" text-anchor="middle">a</text>
+      <text x="226" y="106" class="tx-b" text-anchor="middle">h</text>
+      <text x="200" y="192" class="tx-b" text-anchor="middle">P = a · h</text>
+    </svg>`,
+    text: `<p>Odetnij z równoległoboku trójkąt wzdłuż wysokości i doklej go z drugiej strony. Powstanie <b>prostokąt</b> o bokach <b>a</b> (podstawa) i <b>h</b> (wysokość). Pole się nie zmieniło!</p>
+      <p>Dlatego pole równoległoboku to <b>podstawa razy wysokość</b>. Romb to też równoległobok – jego pole liczysz tak samo.</p>`,
+    remember: 'Równoległobok i romb: P = a · h.',
+    hook: 'Przesuń kawałek ciasta z jednego końca blachy na drugi – ciasta nie ubyło.',
+    check: { q: 'Równoległobok ma podstawę 7 cm i wysokość 3 cm. Jakie ma pole?', options: ['21 cm²', '10 cm²', '20 cm²'], answer: 0, explain: 'P = a · h = 7 · 3 = 21 cm².' },
+  },
+  {
+    title: 'Trójkąt – połowa równoległoboku',
+    svg: `<svg viewBox="0 0 420 190" role="img" aria-label="Równoległobok przecięty przekątną na dwa jednakowe trójkąty. Pole jednego trójkąta to połowa: a razy h podzielone przez 2.">
+      <path d="M40,150 L240,150 L100,50 Z" class="f3 s3 sw"/>
+      <path d="M240,150 L300,50 L100,50 Z" class="f4 s4 sw"/>
+      <line x1="100" y1="50" x2="100" y2="150" class="ln dash"/>
+      <path d="M100,138 L112,138 L112,150" class="ln"/>
+      <text x="140" y="174" class="tx-b" text-anchor="middle">a</text>
+      <text x="84" y="108" class="tx-b">h</text>
+      <text x="365" y="90" class="tx-b" text-anchor="middle">P =</text>
+      <text x="365" y="120" class="tx-b" text-anchor="middle">a · h : 2</text>
+    </svg>`,
+    text: `<p>Dwa jednakowe trójkąty złożone razem tworzą równoległobok o polu a · h. Jeden trójkąt to <b>połowa</b> – dlatego dzielisz przez 2.</p>
+      <p>Ważne: h to wysokość opuszczona <b>na tę podstawę</b>, którą mnożysz.</p>`,
+    remember: 'Trójkąt: P = a · h : 2.',
+    hook: 'Kanapkę przekrojoną po przekątnej dzielisz na dwa trójkąty – każdy to połowa.',
+    check: { q: 'Trójkąt ma podstawę 12 cm i wysokość 5 cm. Jakie ma pole?', options: ['60 cm²', '30 cm²', '17 cm²'], answer: 1, explain: 'P = 12 · 5 : 2 = 60 : 2 = 30 cm².' },
+  },
+  {
+    title: 'Romb z przekątnych i trapez',
+    svg: `<svg viewBox="0 0 420 230" role="img" aria-label="Romb wpisany w prostokąt o bokach równych przekątnym e i f – romb zajmuje połowę, więc P = e razy f przez 2. Trapez o podstawach a i b i wysokości h – P = (a + b) razy h przez 2.">
+      <rect x="30" y="40" width="140" height="120" class="ln-thin dash" fill="none"/>
+      <path d="M100,40 L170,100 L100,160 L30,100 Z" class="f5 s5 sw"/>
+      <line x1="30" y1="100" x2="170" y2="100" class="ln dash"/>
+      <line x1="100" y1="40" x2="100" y2="160" class="ln dash"/>
+      <text x="134" y="94" class="tx-b">e</text><text x="106" y="72" class="tx-b">f</text>
+      <path d="M220,160 L400,160 L340,60 L260,60 Z" class="f2 s2 sw"/>
+      <line x1="260" y1="60" x2="260" y2="160" class="ln dash"/>
+      <path d="M260,148 L272,148 L272,160" class="ln"/>
+      <text x="310" y="182" class="tx-b" text-anchor="middle">a</text>
+      <text x="300" y="50" class="tx-b" text-anchor="middle">b</text>
+      <text x="246" y="116" class="tx-b">h</text>
+      <text x="100" y="214" class="tx" text-anchor="middle">P = e · f : 2</text>
+      <text x="310" y="214" class="tx" text-anchor="middle">P = (a + b) · h : 2</text>
+    </svg>`,
+    text: `<p><b>Romb</b>: jego przekątne e i f wyznaczają prostokąt, a romb zajmuje dokładnie jego połowę – więc P = e · f : 2.</p>
+      <p><b>Trapez</b>: dwa jednakowe trapezy (jeden obrócony) tworzą równoległobok o podstawie a + b. Jeden trapez to połowa: P = (a + b) · h : 2. Najpierw dodaj podstawy!</p>`,
+    remember: 'Trapez: najpierw dodaj obie podstawy, potem pomnóż przez h i podziel przez 2.',
+    hook: 'Trapez liczysz prawie jak trójkąt (· h : 2), tylko zamiast jednej podstawy wkładasz do nawiasu obie: (a + b).',
+    check: { q: 'Trapez ma podstawy 8 cm i 4 cm oraz wysokość 5 cm. Jakie ma pole?', options: ['30 cm²', '60 cm²', '160 cm²'], answer: 0, explain: 'P = (8 + 4) · 5 : 2 = 12 · 5 : 2 = 30 cm².' },
+  },
+  {
+    title: 'Pułapki: bok ukośny i jednostki',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Równoległobok o podstawie 9 cm, boku ukośnym 5 cm i wysokości 4 cm. Źle: 9 razy 5. Dobrze: P = 9 razy 4 = 36 cm².">
+      <path d="M30,140 L210,140 L270,60 L90,60 Z" class="f1 s1 sw"/>
+      <line x1="90" y1="60" x2="90" y2="140" class="ln dash"/>
+      <path d="M90,128 L102,128 L102,140" class="ln"/>
+      <text x="120" y="164" class="tx" text-anchor="middle">9 cm</text>
+      <text x="52" y="100" class="tx" text-anchor="end">5 cm</text>
+      <text x="98" y="106" class="tx">4 cm</text>
+      <text x="300" y="96" class="tx">❌ 9 · 5</text>
+      <text x="200" y="192" class="tx-b" text-anchor="middle">✅ P = 9 · 4 = 36 cm²</text>
+    </svg>`,
+    text: `<p><b>Pułapka 1</b>: bok ukośny to nie wysokość. Wysokość jest zawsze krótsza od boku ukośnego i tworzy kąt prosty z podstawą.</p>
+      <p><b>Pułapka 2</b>: różne jednostki. Najpierw zamień: a = 2 m i h = 50 cm → 200 cm i 50 cm.</p>
+      <p><b>Figury złożone</b>: podziel figurę na znane części i dodaj ich pola.</p>`,
+    remember: 'Mnożysz podstawę przez wysokość – nie przez bok ukośny. Wszystkie długości w tych samych jednostkach.',
+    check: { q: 'Równoległobok ma podstawę 6 cm, bok ukośny 5 cm i wysokość 4 cm. Jakie ma pole?', options: ['30 cm²', '24 cm²', '20 cm²'], answer: 1, explain: 'P = a · h = 6 · 4 = 24 cm². Bok ukośny (5 cm) nie jest potrzebny.' },
+  },
+];
