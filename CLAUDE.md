@@ -7,9 +7,11 @@ Aplikacja ma **ścieżki** (opis: `docs/SCIEZKI.md`), wybierane na ekranie start
 | Ścieżka | Strona | Odbiorca | Podstawa programowa (r. szk. 2026/2027) | Plan |
 |---|---|---|---|---|
 | `egzamin8` | `egzamin.html` | ósmoklasista przed **egzaminem** (polski, matematyka, angielski) | Dz.U. 2024 poz. 996 + informatory CKE | `docs/PLAN.md` |
-| `kl8` | `klasa8.html` | uczeń klasy 8 – wszystkie przedmioty | Dz.U. 2024 poz. 996 (stara); edukacja zdrowotna – nowa | `docs/PLAN-kl8.md` |
+| `kl8` | `klasa8.html` | uczeń klasy 8 – wszystkie przedmioty | Dz.U. 2024 poz. 996 (stara) | `docs/PLAN-kl8.md` |
 | `kl4` | `klasa4.html` | uczeń klasy 4 – wszystkie przedmioty | **nowa: Dz.U. 2026 poz. 378** (zm. 2026 poz. 958) | `docs/PLAN-kl4.md` |
 | `kl3` | `klasa3.html` | uczeń klasy 3 – edukacja wczesnoszkolna | Dz.U. 2024 poz. 996 (stara, I etap) | `docs/PLAN-kl3.md` |
+
+**Edukacji zdrowotnej (także „zdrowie seksualne”), etyki i religii nie dodajemy w żadnej ścieżce** – decyzja rodzica.
 
 Ścieżka egzaminacyjna jest dopracowana – utrzymuj ją i rozwijaj; zmiany w silniku nie mogą jej zepsuć (zawsze `node tools/przeglad.js egzamin8`).
 
