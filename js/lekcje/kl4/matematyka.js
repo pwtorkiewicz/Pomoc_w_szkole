@@ -239,6 +239,163 @@ window.LESSONS['matematyka/dzialania'] = [
 ];
 
 // ---------------------------------------------------------------------------
+window.LESSONS['matematyka/pisemne'] = [
+  {
+    title: 'Dodawanie pisemne – rząd pod rzędem',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Dodawanie pisemne 2748 plus 1586 równa się 4334. Nad rzędami dziesiątek, setek i tysięcy małe jedynki przeniesione z poprzedniego rzędu. Obok kolejne kroki od prawej.">
+      <rect x="146" y="52" width="28" height="104" rx="6" class="f4 s4"/>
+      <g class="tx t2" text-anchor="middle"><text x="70" y="40">1</text><text x="100" y="40">1</text><text x="130" y="40">1</text></g>
+      <g class="tx-b" text-anchor="middle">
+        <text x="70" y="74">2</text><text x="100" y="74">7</text><text x="130" y="74">4</text><text x="160" y="74">8</text>
+        <text x="36" y="106">+</text><text x="70" y="106">1</text><text x="100" y="106">5</text><text x="130" y="106">8</text><text x="160" y="106">6</text>
+      </g>
+      <line x1="28" y1="118" x2="178" y2="118" class="ln sw"/>
+      <g class="tx-b t3" text-anchor="middle"><text x="70" y="146">4</text><text x="100" y="146">3</text><text x="130" y="146">3</text><text x="160" y="146">4</text></g>
+      <g class="tx-s">
+        <text x="200" y="50">8 + 6 = 14 → 4, 1 dalej</text>
+        <text x="200" y="80">4 + 8 + 1 = 13 → 3, 1 dalej</text>
+        <text x="200" y="110">7 + 5 + 1 = 13 → 3, 1 dalej</text>
+        <text x="200" y="140">2 + 1 + 1 = 4</text>
+      </g>
+      <text x="200" y="188" class="tx-s" text-anchor="middle">jedności pod jednościami – zaczynasz od prawej</text>
+    </svg>`,
+    text: `<p>Gdy liczby są duże, licz <b>pisemnie</b>. Najpierw podpisz je <b>rzędami</b>: jedności pod jednościami, dziesiątki pod dziesiątkami – liczby wyrównujesz do prawej.</p>
+      <p>Dodajesz od prawej. Gdy w rzędzie wyjdzie 10 albo więcej, zapisujesz jedności, a dziesiątkę (małą jedynkę) <b>przenosisz</b> nad następny rząd i dodajesz ją razem z cyframi.</p>`,
+    remember: 'Podpisz rzędami (do prawej) · dodawaj od prawej · 10 i więcej – zapisz jedności, 1 przenieś dalej.',
+    hook: 'Dziesięć jedności to jedna dziesiątka – jak dziesięć monet po 1 zł, które wymieniasz na banknot 10 zł i odkładasz do „przegródki” obok.',
+    check: { q: 'Ile wynosi 567 + 678?', options: ['1 245', '1 135', '1 235'], answer: 0, explain: '7 + 8 = 15: 5, 1 dalej · 6 + 7 + 1 = 14: 4, 1 dalej · 5 + 6 + 1 = 12. Wynik 1 245.' },
+  },
+  {
+    title: 'Odejmowanie – gdy brakuje, rozmieniasz',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Odejmowanie pisemne 5302 minus 1847 równa się 3455. Cyfry odjemnej przekreślone, nad nimi nowe wartości po rozmienianiu: 4, 12, 9, 12. Obok kroki i sprawdzenie dodawaniem.">
+      <g class="tx t2" text-anchor="middle"><text x="80" y="40">4</text><text x="120" y="40">12</text><text x="160" y="40">9</text><text x="200" y="40">12</text></g>
+      <g class="tx-b" text-anchor="middle">
+        <text x="80" y="76">5</text><text x="120" y="76">3</text><text x="160" y="76">0</text><text x="200" y="76">2</text>
+        <text x="44" y="108">−</text><text x="80" y="108">1</text><text x="120" y="108">8</text><text x="160" y="108">4</text><text x="200" y="108">7</text>
+      </g>
+      <g class="ln s2"><line x1="72" y1="78" x2="88" y2="58"/><line x1="112" y1="78" x2="128" y2="58"/><line x1="152" y1="78" x2="168" y2="58"/><line x1="192" y1="78" x2="208" y2="58"/></g>
+      <line x1="36" y1="120" x2="218" y2="120" class="ln sw"/>
+      <g class="tx-b t3" text-anchor="middle"><text x="80" y="150">3</text><text x="120" y="150">4</text><text x="160" y="150">5</text><text x="200" y="150">5</text></g>
+      <g class="tx-s">
+        <text x="240" y="44">12 − 7 = 5</text>
+        <text x="240" y="70">9 − 4 = 5</text>
+        <text x="240" y="96">12 − 8 = 4</text>
+        <text x="240" y="122">4 − 1 = 3</text>
+        <text x="240" y="162">sprawdź: 3 455 + 1 847</text>
+        <text x="240" y="182">= 5 302 ✓</text>
+      </g>
+    </svg>`,
+    text: `<p>Większą liczbę piszesz na górze i odejmujesz od prawej. 2 − 7? Za mało! Trzeba <b>rozmienić</b> 1 z rzędu po lewej: 1 dziesiątka to 10 jedności.</p>
+      <p>Tu w dziesiątkach jest 0, więc rozmieniasz setkę: 3 setki = 2 setki i 10 dziesiątek. Jedną z tych dziesiątek oddajesz jednościom – zostaje 9 dziesiątek, a jedności jest 12. Każdą zmianę zapisuj nad cyfrą.</p>`,
+    remember: 'Górna cyfra mniejsza? Rozmień 1 z rzędu po lewej. Sprawdzenie: różnica + odjemnik = odjemna.',
+    hook: 'Jak w sklepie: chcesz wydać 7 zł, a masz tylko 2 monety złotówki? Rozmieniasz banknot 10 zł i masz 12 zł w drobnych.',
+    check: { q: 'Ile wynosi 700 − 263?', options: ['437', '563', '447'], answer: 0, explain: '700 to 6 setek, 9 dziesiątek i 10 jedności: 10 − 3 = 7, 9 − 6 = 3, 6 − 2 = 4. Wynik 437 (sprawdzenie: 437 + 263 = 700). 563 wychodzi, gdy odejmujesz mniejszą cyfrę od większej.' },
+  },
+  {
+    title: 'Mnożenie przez liczbę jednocyfrową',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Mnożenie pisemne 347 razy 6 równa się 2082, nad cyframi przeniesienia 2 i 4. Obok ramka: 34 razy 200 – mnożysz 34 razy 2 równa się 68 i dopisujesz dwa zera, wynik 6800.">
+      <g class="tx t2" text-anchor="middle"><text x="70" y="40">2</text><text x="100" y="40">4</text></g>
+      <g class="tx-b" text-anchor="middle">
+        <text x="70" y="72">3</text><text x="100" y="72">4</text><text x="130" y="72">7</text>
+        <text x="20" y="104">·</text><text x="130" y="104">6</text>
+      </g>
+      <line x1="12" y1="116" x2="148" y2="116" class="ln sw"/>
+      <g class="tx-b t3" text-anchor="middle"><text x="40" y="146">2</text><text x="70" y="146">0</text><text x="100" y="146">8</text><text x="130" y="146">2</text></g>
+      <rect x="180" y="20" width="210" height="150" rx="12" class="f4 s4"/>
+      <text x="285" y="48" class="tx-b" text-anchor="middle">Zera na końcu</text>
+      <text x="285" y="80" class="tx" text-anchor="middle">34 · 2<tspan class="t2">00</tspan></text>
+      <text x="285" y="108" class="tx" text-anchor="middle">34 · 2 = 68</text>
+      <text x="285" y="132" class="tx-s" text-anchor="middle">dopisz 2 zera</text>
+      <text x="285" y="160" class="tx-b t3" text-anchor="middle">6 8<tspan class="t2">00</tspan></text>
+      <text x="200" y="192" class="tx-s" text-anchor="middle">przeniesioną cyfrę dodajesz po pomnożeniu</text>
+    </svg>`,
+    text: `<p>Mnożysz każdą cyfrę od prawej: 7 · 6 = 42 – piszesz 2, a 4 zapisujesz nad dziesiątkami. Potem 4 · 6 = 24 i <b>dopiero teraz</b> dodajesz 4: 28 – piszesz 8, 2 dalej. Na koniec 3 · 6 = 18, 18 + 2 = 20.</p>
+      <p>Gdy liczby kończą się zerami, pomnóż je bez zer, a potem dopisz <b>wszystkie</b> zera z obu czynników: 120 · 40 → 12 · 4 = 48 → 4 800.</p>`,
+    remember: 'Najpierw mnożysz, potem dodajesz przeniesienie. Zera z końca obu liczb dopisujesz do wyniku.',
+    hook: 'Zera to bagaż: odstaw je na bok, pomnóż „gołe” liczby, a na końcu zabierz cały bagaż – wszystkie zera.',
+    check: { q: 'Ile wynosi 58 · 7?', options: ['356', '406', '416'], answer: 1, explain: '8 · 7 = 56: piszesz 6, 5 dalej · 5 · 7 = 35, 35 + 5 = 40. Wynik 406. 356 wychodzi, gdy zapomnisz o przeniesionej piątce.' },
+  },
+  {
+    title: 'Mnożenie przez liczbę dwucyfrową',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Mnożenie pisemne 236 razy 24. Pierwszy iloczyn częściowy 944 to 236 razy 4. Drugi, 472, zapisany o jedno miejsce w lewo, to 236 razy 20; puste miejsce jedności zaznaczone ramką. Suma 5664.">
+      <g class="tx-b" text-anchor="middle">
+        <text x="180" y="34">2</text><text x="210" y="34">3</text><text x="240" y="34">6</text>
+        <text x="120" y="62">·</text><text x="210" y="62">2</text><text x="240" y="62">4</text>
+      </g>
+      <line x1="110" y1="74" x2="256" y2="74" class="ln sw"/>
+      <g class="tx-b t1" text-anchor="middle"><text x="180" y="104">9</text><text x="210" y="104">4</text><text x="240" y="104">4</text></g>
+      <text x="120" y="134" class="tx-b" text-anchor="middle">+</text>
+      <g class="tx-b t2" text-anchor="middle"><text x="150" y="134">4</text><text x="180" y="134">7</text><text x="210" y="134">2</text></g>
+      <rect x="229" y="114" width="22" height="26" rx="4" class="ln-thin dash"/>
+      <line x1="110" y1="146" x2="256" y2="146" class="ln sw"/>
+      <g class="tx-b t3" text-anchor="middle"><text x="150" y="176">5</text><text x="180" y="176">6</text><text x="210" y="176">6</text><text x="240" y="176">4</text></g>
+      <text x="270" y="104" class="tx-s t1">236 · 4</text>
+      <text x="270" y="134" class="tx-s t2">236 · 20</text>
+      <text x="200" y="202" class="tx-s" text-anchor="middle">drugi wiersz – o jedno miejsce w lewo</text>
+    </svg>`,
+    text: `<p>Mnożysz dwa razy: najpierw przez cyfrę jedności (236 · 4 = 944), potem przez cyfrę dziesiątek (236 · 2 = 472). Każdy z tych wyników to <b>iloczyn częściowy</b>.</p>
+      <p>Cyfra 2 w liczbie 24 to naprawdę 2 dziesiątki, więc 472 to 472 dziesiątki, czyli 4 720. Dlatego drugi iloczyn zaczynasz pisać <b>o jedno miejsce w lewo</b>. Na koniec dodajesz oba wiersze: 944 + 4 720 = 5 664.</p>`,
+    remember: 'Najpierw · jedności, potem · dziesiątki (o miejsce w lewo), na końcu dodaj iloczyny częściowe.',
+    hook: 'Puste miejsce pod jednościami to „krzesło dla zera” – drugi wiersz jest dziesiątkami, więc jedności w nim nie ma.',
+    check: { q: 'Ile wynosi 45 · 23?', options: ['1 035', '225', '1 025'], answer: 0, explain: '45 · 3 = 135, 45 · 2 = 90 – o miejsce w lewo, czyli 900. 135 + 900 = 1 035. 225 wychodzi, gdy nie przesuniesz drugiego iloczynu.' },
+  },
+  {
+    title: 'Dzielenie pisemne – wynik nad kreską',
+    svg: `<svg viewBox="0 0 400 250" role="img" aria-label="Dzielenie pisemne 625 przez 3. Nad kreską wynik 208, zero wyróżnione. Pod spodem: 6 minus 6, spisane 02, minus 0, spisane 25, minus 24, reszta 1. Obok kroki i sprawdzenie 208 razy 3 plus 1 równa się 625.">
+      <g class="tx-b t3" text-anchor="middle"><text x="60" y="34">2</text><text x="90" y="34" class="t2">0</text><text x="120" y="34">8</text></g>
+      <line x1="44" y1="44" x2="136" y2="44" class="ln sw"/>
+      <g class="tx-b" text-anchor="middle">
+        <text x="60" y="70">6</text><text x="90" y="70">2</text><text x="120" y="70">5</text><text x="150" y="70">:</text><text x="176" y="70">3</text>
+        <text x="40" y="96">−</text><text x="60" y="96">6</text>
+        <text x="60" y="128">0</text><text x="90" y="128">2</text>
+        <text x="70" y="152">−</text><text x="90" y="152">0</text>
+        <text x="90" y="184">2</text><text x="120" y="184">5</text>
+        <text x="70" y="208">−</text><text x="90" y="208">2</text><text x="120" y="208">4</text>
+      </g>
+      <line x1="32" y1="104" x2="76" y2="104" class="ln"/>
+      <line x1="62" y1="160" x2="106" y2="160" class="ln"/>
+      <line x1="62" y1="216" x2="136" y2="216" class="ln"/>
+      <text x="120" y="240" class="tx-b t2" text-anchor="middle">1</text>
+      <text x="136" y="240" class="tx-s">reszta</text>
+      <g class="tx-s">
+        <text x="210" y="40">6 : 3 = 2</text>
+        <text x="210" y="70">2 : 3 – nie da się → 0</text>
+        <text x="210" y="100">25 : 3 = 8, zostaje 1</text>
+        <text x="210" y="180">sprawdź: 208 · 3 + 1</text>
+        <text x="210" y="200">= 625 ✓</text>
+      </g>
+      <text x="210" y="146" class="tx-b">208 r. 1</text>
+    </svg>`,
+    text: `<p>Wynik piszesz <b>nad kreską</b>. Dzielisz od lewej, cyfra po cyfrze: 6 : 3 = 2. Mnożysz 2 · 3 = 6, odejmujesz i <b>spisujesz</b> następną cyfrę: 2.</p>
+      <p>Trójka nie mieści się w dwójce – w wyniku piszesz <b>0</b> i spisujesz kolejną cyfrę: 25. 25 : 3 = 8, bo 8 · 3 = 24. Zostaje 1 – to reszta.</p>`,
+    remember: 'Dziel – pomnóż – odejmij – spisz następną cyfrę. Nie mieści się? W wyniku 0. Sprawdzenie: wynik · dzielnik + reszta = dzielna.',
+    hook: 'Cztery kroki w kółko jak taniec: dziel, mnóż, odejmij, spisz – i od nowa, aż skończą się cyfry.',
+    check: { q: 'Ile wynosi 927 : 9?', options: ['13', '103', '113'], answer: 1, explain: '9 : 9 = 1 · 9 nie mieści się w 2 – piszesz 0 · 27 : 9 = 3. Wynik 103 (sprawdzenie: 103 · 9 = 927).' },
+  },
+  {
+    title: 'Uwaga, pułapki! Szacuj i sprawdzaj',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Porównanie źle i dobrze: 4005 minus 1268 to 2737, nie 3263; 128 razy 35 to 4480, nie 1024; 836 przez 4 to 209, nie 29; 2748 plus 86 to 2834, nie 11348.">
+      <text x="240" y="22" class="tx-b t2" text-anchor="middle">✗ źle</text>
+      <text x="340" y="22" class="tx-b t3" text-anchor="middle">✓ dobrze</text>
+      <line x1="10" y1="34" x2="390" y2="34" class="ln-thin"/>
+      <text x="12" y="62" class="tx">4 005 − 1 268</text><text x="240" y="62" class="tx-b t2" text-anchor="middle">3 263</text><text x="340" y="62" class="tx-b t3" text-anchor="middle">2 737</text>
+      <text x="12" y="100" class="tx">128 · 35</text><text x="240" y="100" class="tx-b t2" text-anchor="middle">1 024</text><text x="340" y="100" class="tx-b t3" text-anchor="middle">4 480</text>
+      <text x="12" y="138" class="tx">836 : 4</text><text x="240" y="138" class="tx-b t2" text-anchor="middle">29</text><text x="340" y="138" class="tx-b t3" text-anchor="middle">209</text>
+      <text x="12" y="176" class="tx">2 748 + 86</text><text x="240" y="176" class="tx-b t2" text-anchor="middle">11 348</text><text x="340" y="176" class="tx-b t3" text-anchor="middle">2 834</text>
+      <text x="200" y="210" class="tx-s" text-anchor="middle">szacuj przed liczeniem, sprawdzaj po</text>
+    </svg>`,
+    text: `<ul>
+      <li><b>Odejmowanie</b>: nie odejmuj „mniejszej od większej” w każdym rzędzie – gdy górnej cyfry brakuje, rozmieniaj.</li>
+      <li><b>Mnożenie przez dwucyfrową</b>: drugi iloczyn przesuń o jedno miejsce w lewo.</li>
+      <li><b>Dzielenie</b>: gdy dzielnik się nie mieści, w wyniku napisz 0.</li>
+      <li><b>Zawsze</b> podpisuj liczby do prawej – 86 to 8 dziesiątek i 6 jedności, a nie 8 tysięcy i 6 setek.</li>
+      <li>Najpierw <b>oszacuj</b>: 128 · 35 ≈ 100 · 35 = 3 500, więc 1 024 to na pewno za mało. Na końcu <b>sprawdź</b> działaniem odwrotnym.</li>
+    </ul>`,
+    remember: 'Szacunek przed, sprawdzenie po: dodawanie ↔ odejmowanie, mnożenie ↔ dzielenie.',
+  },
+];
+
+// ---------------------------------------------------------------------------
 window.LESSONS['matematyka/miary'] = [
   {
     title: 'Linijka: centymetry i milimetry',

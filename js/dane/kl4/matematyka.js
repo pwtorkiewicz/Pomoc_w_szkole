@@ -79,7 +79,7 @@
         id: 'dzialania',
         name: 'Działania na liczbach naturalnych',
         chapter: 'dział 1 „Liczby i działania”',
-        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 9–14 (dodawanie, odejmowanie, mnożenie i dzielenie w pamięci lub z zapisem obliczeń pośrednich, podział i mieszczenie, wygodne strategie, dzielenie z resztą, porównywanie różnicowe i ilorazowe), wym. 15 (tylko kwadraty i sześciany), 36 (kolejność działań), 37 (szacowanie); dz. 6 Myślenie matematyczne. Bez algorytmów działań pisemnych – podstawa ich nie wymaga.' + WYBOR,
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 9–14 (dodawanie, odejmowanie, mnożenie i dzielenie w pamięci lub z zapisem obliczeń pośrednich, podział i mieszczenie, wygodne strategie, dzielenie z resztą, porównywanie różnicowe i ilorazowe), wym. 15 (tylko kwadraty i sześciany), 36 (kolejność działań), 37 (szacowanie); dz. 6 Myślenie matematyczne. Algorytmy działań pisemnych – osobny dział „Działania pisemne” (podstawa ich nie wymaga, ale są w podręczniku).' + WYBOR,
         theory: `
           <h3>Nazwy w działaniach</h3>
           <table>
@@ -371,6 +371,130 @@
           { id: '4kx0xi', q: 'Dostajesz 12 zł kieszonkowego na tydzień i wszystko odkładasz. Ile tygodni musisz oszczędzać na grę za 60 zł?', options: ['5', '6', '4', '48'], answer: 0, explain: '60 : 12 = 5, bo 5 · 12 = 60.' },
           { id: 'oa3ua0', q: 'Co jest tańsze: 3 batony po 2 zł 20 gr czy paczka 3 takich batonów za 6 zł 30 gr?', options: ['paczka – o 30 gr', 'pojedyncze batony – o 30 gr', 'kosztują tyle samo', 'paczka – o 3 zł'], answer: 0, explain: '3 · 2 zł 20 gr = 6 zł 60 gr. To o 30 gr więcej niż paczka (6 zł 30 gr).' },
           { id: '57kluf', q: 'Prawda czy fałsz?\n1 m = 1000 mm', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '1 m = 100 cm, a każdy centymetr to 10 mm: 100 · 10 = 1000 mm.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
+        id: 'pisemne',
+        name: 'Działania pisemne',
+        chapter: 'dział 3 „Działania pisemne”',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 9 (dodawanie i odejmowanie liczb naturalnych z zapisem obliczeń pośrednich), 10 (mnożenie i dzielenie przez liczbę jednocyfrową, dwucyfrową lub trzycyfrową z zapisem obliczeń pośrednich), 13 (dzielenie z resztą), 37 (szacowanie wyników); dz. 6 Myślenie matematyczne. Według komentarza do podstawy uczeń może znać tradycyjne algorytmy działań pisemnych, ale nie musi – dział jest w aplikacji, bo ma go podręcznik dziecka (MzP 4, dz. 3: dodawanie, odejmowanie, mnożenie przez liczby jednocyfrowe, z zerami na końcu i wielocyfrowe, dzielenie przez liczby jednocyfrowe, zadania tekstowe). Mnożenie tylko przez liczby jedno- i dwucyfrowe.' + WYBOR,
+        theory: `
+          <h3>Kiedy liczyć pisemnie?</h3>
+          <p>Gdy liczby są duże i w pamięci łatwo się pogubić. Zanim zaczniesz, <b>oszacuj wynik</b> (zaokrąglij liczby i policz w pamięci) – na końcu porównasz, czy wynik ma sens.</p>
+          <h3>Dodawanie pisemne</h3>
+          <ul>
+            <li>Podpisz liczby <b>rzędami</b>: jedności pod jednościami, dziesiątki pod dziesiątkami… – wyrównaj je do prawej.</li>
+            <li>Dodawaj od prawej. Gdy w rzędzie wyjdzie 10 lub więcej, zapisz jedności, a 1 (dziesiątkę) <b>przenieś</b> do następnego rzędu.</li>
+          </ul>
+          <div class="pis"><pre><span class="c">   1 1 1</span>
+   2 7 4 8
+<span class="k"> + 1 5 8 6</span>
+   4 3 3 4</pre></div>
+          <p>8 + 6 = 14: piszesz 4, 1 dalej · 4 + 8 + 1 = 13: piszesz 3, 1 dalej · 7 + 5 + 1 = 13 · 2 + 1 + 1 = 4.</p>
+          <h3>Odejmowanie pisemne</h3>
+          <ul>
+            <li>Większą liczbę (odjemną) piszesz na górze. Odejmujesz od prawej.</li>
+            <li>Gdy górna cyfra jest mniejsza od dolnej, <b>rozmieniasz</b> 1 z sąsiedniego rzędu po lewej: 1 dziesiątka = 10 jedności, 1 setka = 10 dziesiątek.</li>
+            <li>Gdy obok stoi 0, rozmieniasz z dalszego rzędu: 300 to 2 setki, 9 dziesiątek i 10 jedności.</li>
+          </ul>
+          <div class="pis"><pre><span class="c">    4 12 9 12</span>
+    5  3 0  2
+<span class="k"> -  1  8 4  7</span>
+    3  4 5  5</pre></div>
+          <p><b>Sprawdzenie</b>: różnica + odjemnik = odjemna, czyli 3 455 + 1 847 = 5 302 ✓.</p>
+          <h3>Mnożenie przez liczbę jednocyfrową</h3>
+          <p>Mnożysz każdą cyfrę od prawej. Dziesiątki z iloczynu przenosisz i <b>dodajesz</b> do następnego iloczynu.</p>
+          <div class="pis"><pre><span class="c">   2 4  </span>
+   3 4 7
+<span class="k"> ·     6</span>
+ 2 0 8 2</pre></div>
+          <p>7 · 6 = 42: piszesz 2, 4 dalej · 4 · 6 = 24, 24 + 4 = 28: piszesz 8, 2 dalej · 3 · 6 = 18, 18 + 2 = 20.</p>
+          <h3>Liczby z zerami na końcu</h3>
+          <p>Pomnóż liczby bez zer, a potem dopisz <b>wszystkie</b> zera z obu czynników: <span class="f">34 · 200</span>: 34 · 2 = 68 → <span class="f">6 800</span>; <span class="f">120 · 40</span>: 12 · 4 = 48 → <span class="f">4 800</span>.</p>
+          <h3>Mnożenie przez liczbę dwucyfrową</h3>
+          <ul>
+            <li>Mnożysz najpierw przez cyfrę jedności, potem przez cyfrę dziesiątek.</li>
+            <li>Drugi wynik (iloczyn częściowy) zaczynasz pisać <b>o jedno miejsce w lewo</b> – bo naprawdę mnożysz przez dziesiątki.</li>
+            <li>Na koniec dodajesz oba iloczyny częściowe.</li>
+          </ul>
+          <div class="pis"><pre>     2 3 6
+<span class="k">   ·   2 4</span>
+     9 4 4    ← 236 · 4
+<span class="k"> + 4 7 2   </span>   ← 236 · 20
+   5 6 6 4</pre></div>
+          <h3>Dzielenie pisemne przez liczbę jednocyfrową</h3>
+          <p>Wynik piszesz <b>nad kreską</b>. Dzielisz od lewej: bierzesz tyle cyfr, ile trzeba, dzielisz, mnożysz, odejmujesz i „spisujesz” następną cyfrę.</p>
+          <div class="pis"><pre><span class="k">  2 0 8 </span>
+  6 2 5 : 3
+<span class="k"> -6</span>
+  0 2
+<span class="k">   -0</span>
+    2 5
+<span class="k">   -2 4</span>
+      1  ← reszta</pre></div>
+          <p>6 : 3 = 2 · spisujesz 2: 3 nie mieści się w 2 – piszesz w wyniku <b>0</b> · spisujesz 5: 25 : 3 = 8, bo 8 · 3 = 24, zostaje 1.</p>
+          <p>625 : 3 = 208 reszty 1. <b>Sprawdzenie</b>: 208 · 3 + 1 = 625 ✓.</p>
+          <div class="tip">💡 Gdy dzielnik nie mieści się w spisanej liczbie, w wyniku piszesz 0. Bez tego zera wynik wyjdzie dziesięć razy za mały.</div>
+          <h3>Zadania tekstowe</h3>
+          <p>Zapisz działanie, oszacuj, policz pisemnie i sprawdź działaniem odwrotnym. Przykład: bilet kosztuje 28 zł, jedzie 24 uczniów. 28 · 24 = 672 zł (szacunek: 30 · 20 = 600 – wynik ma sens).</p>
+        `,
+        flashcards: [
+          ['Pierwsza zasada działań pisemnych', 'Podpisz liczby rzędami: jedności pod jednościami (wyrównaj do prawej)'],
+          ['Dodawanie: w rzędzie wyszło 13', 'Piszesz 3, a 1 przenosisz do następnego rzędu'],
+          ['Odejmowanie: górna cyfra mniejsza od dolnej', 'Rozmieniasz 1 z rzędu po lewej (1 dziesiątka = 10 jedności)'],
+          ['Jak sprawdzić odejmowanie?', 'różnica + odjemnik = odjemna'],
+          ['Mnożenie: 7 · 6 = 42', 'Piszesz 2, a 4 dodajesz do następnego iloczynu'],
+          ['34 · 200', '34 · 2 = 68, dopisz dwa zera → 6 800'],
+          ['Mnożenie przez liczbę dwucyfrową – drugi iloczyn', 'Piszesz o jedno miejsce w lewo (mnożysz przez dziesiątki)'],
+          ['Gdzie piszesz wynik dzielenia pisemnego?', 'Nad kreską, nad dzieloną liczbą'],
+          ['Dzielnik nie mieści się w spisanej liczbie', 'W wyniku piszesz 0 i spisujesz następną cyfrę'],
+          ['Jak sprawdzić dzielenie z resztą?', 'wynik · dzielnik + reszta = dzielna'],
+          ['Po co szacować przed liczeniem pisemnym?', 'Żeby sprawdzić, czy wynik ma sens (np. 389 · 21 ≈ 400 · 20 = 8 000)'],
+        ],
+        questions: [
+          { id: 'lj5ec4', q: 'Ile wynosi 3 456 + 2 789?', options: ['6 245', '5 135', '6 145', '6 235'], answer: 0, explain: '6 + 9 = 15: 5, 1 dalej · 5 + 8 + 1 = 14: 4, 1 dalej · 4 + 7 + 1 = 12: 2, 1 dalej · 3 + 2 + 1 = 6. Wynik 6 245.' },
+          { id: '7nqruc', q: 'Ile wynosi 1 275 + 986?', options: ['2 261', '2 161', '1 161', '2 251'], answer: 0, explain: 'Podpisz rzędami (986 pod 275): 5 + 6 = 11 · 7 + 8 + 1 = 16 · 2 + 9 + 1 = 12 · 1 + 1 = 2. Wynik 2 261.' },
+          { id: 'zrhi72', q: 'Ile wynosi 4 005 − 1 268?', options: ['2 737', '3 263', '2 837', '2 747'], answer: 0, explain: 'Rozmieniasz: 4 005 to 3 tysiące, 9 setek, 9 dziesiątek i 15 jedności. 15 − 8 = 7, 9 − 6 = 3, 9 − 2 = 7, 3 − 1 = 2. Sprawdzenie: 2 737 + 1 268 = 4 005. Wynik 3 263 wychodzi, gdy odejmujesz zawsze mniejszą cyfrę od większej – to błąd.' },
+          { id: 'xr3jyk', q: 'Ile wynosi 1 000 − 357?', options: ['643', '753', '657', '743'], answer: 0, explain: '1 000 to 9 setek, 9 dziesiątek i 10 jedności: 10 − 7 = 3, 9 − 5 = 4, 9 − 3 = 6. Sprawdzenie: 643 + 357 = 1 000.' },
+          { id: 'rau01i', q: 'Ile wynosi 609 · 7?', options: ['4 263', '4 203', '4 233', '42 063'], answer: 0, explain: '9 · 7 = 63: 3, 6 dalej · 0 · 7 = 0, 0 + 6 = 6 · 6 · 7 = 42. Wynik 4 263. Kto zapomni o przeniesionej szóstce, dostanie 4 203.' },
+          { id: 'kd3u7v', q: 'Ile wynosi 450 · 30?', options: ['13 500', '1 350', '135 000', '13 050'], answer: 0, explain: '45 · 3 = 135 i dopisujesz oba zera (jedno z 450, jedno z 30): 13 500.' },
+          { id: 'ee08qf', q: 'Ile wynosi 2 000 · 50?', options: ['100 000', '10 000', '1 000 000', '100 050'], answer: 0, explain: '2 · 5 = 10 i dopisujesz 4 zera (trzy z 2 000 i jedno z 50): 10 → 100 000.' },
+          { id: 'zihfxq', q: 'Ile wynosi 128 · 35?', options: ['4 480', '1 024', '3 840', '4 380'], answer: 0, explain: '128 · 5 = 640, 128 · 3 = 384 – piszesz o jedno miejsce w lewo (to 3 840). 640 + 3 840 = 4 480. Wynik 1 024 wychodzi, gdy zapomnisz przesunąć drugi iloczyn.' },
+          { id: '1wecqu', q: 'Ile wynosi 732 : 6?', options: ['122', '121', '132', '112'], answer: 0, explain: '7 : 6 = 1 r. 1 · spisujesz 3: 13 : 6 = 2 r. 1 · spisujesz 2: 12 : 6 = 2. Wynik 122. Sprawdzenie: 122 · 6 = 732.' },
+          { id: 'o316jf', q: 'Ile wynosi 836 : 4?', options: ['209', '29', '219', '290'], answer: 0, explain: '8 : 4 = 2 · spisujesz 3: 4 nie mieści się w 3, piszesz 0 · spisujesz 6: 36 : 4 = 9. Wynik 209. Sprawdzenie: 209 · 4 = 836.' },
+          { id: 'm8z0a3', q: 'Ile wynosi 625 : 3?', options: ['208 reszty 1', '28 reszty 1', '208 reszty 2', '207 reszty 4'], answer: 0, explain: '6 : 3 = 2 · 2 : 3 = 0 r. 2 · 25 : 3 = 8 r. 1. Sprawdzenie: 208 · 3 + 1 = 625. „207 reszty 4” jest źle, bo reszta musi być mniejsza od 3.' },
+          { id: 'zl9xbj', q: 'Jak sprawdzić, czy 5 302 − 1 847 = 3 455?', options: ['Policzyć 3 455 + 1 847', 'Policzyć 5 302 + 1 847', 'Policzyć 3 455 − 1 847', 'Policzyć 5 302 + 3 455'], answer: 0, explain: 'Różnica + odjemnik = odjemna. 3 455 + 1 847 = 5 302, więc odejmowanie jest dobre.' },
+          { id: 'c4ebo5', q: 'Ola obliczyła, że 815 : 7 = 116 reszty 3. Jakim działaniem to sprawdzi?', options: ['116 · 7 + 3', '116 · 7 − 3', '116 + 7 + 3', '815 · 7 + 3'], answer: 0, explain: 'Wynik · dzielnik + reszta = dzielna. 116 · 7 = 812, 812 + 3 = 815 – zgadza się.' },
+          { id: 'huamav', q: 'W dodawaniu pisemnym 2 748 + 1 586 w rzędzie dziesiątek liczysz 4 + 8 + 1. Skąd ta jedynka?', options: ['z rzędu jedności, bo 8 + 6 = 14', 'z rzędu setek, bo 7 + 5 = 12', 'to błąd – powinno być 4 + 8', 'z wyniku 4 + 8 = 12'], answer: 0, explain: 'W rzędzie jedności wyszło 14: piszesz 4, a dziesiątkę (1) przenosisz do rzędu dziesiątek.' },
+          { id: 'ex0qz1', q: 'Który wynik działania 389 · 21 jest możliwy? Oszacuj.', options: ['8 169', '1 167', '81 690', '816'], answer: 0, explain: '389 ≈ 400, 21 ≈ 20, a 400 · 20 = 8 000. Tylko 8 169 jest blisko. Rzeczywiście 389 · 21 = 7 780 + 389 = 8 169.' },
+          { id: '5qnoz8', q: 'Jaką cyfrę zakrywa kwadracik?\n4□7 + 285 = 762', options: ['7', '6', '8', '5'], answer: 0, explain: '762 − 285 = 477, więc brakuje cyfry 7. Sprawdzenie: 477 + 285 = 762.' },
+          {
+            id: 'at4fiy',
+            q: 'Kuba mnoży pisemnie 143 · 26. Jaka liczba powinna stać w miejscu znaków zapytania?',
+            svg: `<svg viewBox="0 0 320 200" role="img" aria-label="Mnożenie pisemne 143 razy 26. Pierwszy iloczyn częściowy 858. W drugim wierszu, przesuniętym o jedno miejsce w lewo, trzy znaki zapytania. Wynik 3718.">
+      <g class="tx-b" text-anchor="middle">
+        <text x="190" y="32">1</text><text x="214" y="32">4</text><text x="238" y="32">3</text>
+        <text x="118" y="60">·</text><text x="214" y="60">2</text><text x="238" y="60">6</text>
+        <text x="190" y="104">8</text><text x="214" y="104">5</text><text x="238" y="104">8</text>
+        <text x="118" y="132">+</text><text x="166" y="132" class="t2">?</text><text x="190" y="132" class="t2">?</text><text x="214" y="132" class="t2">?</text>
+        <text x="166" y="176">3</text><text x="190" y="176">7</text><text x="214" y="176">1</text><text x="238" y="176">8</text>
+      </g>
+      <line x1="108" y1="72" x2="252" y2="72" class="ln sw"/>
+      <line x1="108" y1="144" x2="252" y2="144" class="ln sw"/>
+      <text x="264" y="104" class="tx-s">143 · 6</text>
+      <text x="236" y="132" class="tx-s">143 · 20</text>
+    </svg>`,
+            options: ['286', '858', '2 600', '143'],
+            answer: 0,
+            explain: '143 · 2 = 286. Piszesz to o jedno miejsce w lewo, bo naprawdę mnożysz przez 20 (to 2 860). Sprawdzenie: 858 + 2 860 = 3 718.',
+          },
+          { id: '65fo9i', q: 'Bilet do kina kosztuje 28 zł. Na film idzie 24 uczniów. Ile zapłacą razem?', options: ['672 zł', '168 zł', '560 zł', '52 zł'], answer: 0, explain: '28 · 24: 28 · 4 = 112, 28 · 2 = 56 (o miejsce w lewo, czyli 560). 112 + 560 = 672 zł. Szacunek: 30 · 20 = 600 – pasuje.' },
+          { id: 'kv9scy', q: '1 248 kg ziemniaków zapakowano do worków po 8 kg. Ile było worków?', options: ['156', '146', '1 240', '9 984'], answer: 0, explain: '1 248 : 8: 12 : 8 = 1 r. 4 · 44 : 8 = 5 r. 4 · 48 : 8 = 6. Wynik 156. Sprawdzenie: 156 · 8 = 1 248.' },
+          { id: 'rjxecv', q: 'Pierwszego dnia pociąg przejechał 1 275 km, a drugiego 986 km. O ile kilometrów więcej przejechał pierwszego dnia?', options: ['o 289 km', 'o 2 261 km', 'o 389 km', 'o 1 711 km'], answer: 0, explain: '„O ile więcej” – odejmujesz: 1 275 − 986 = 289. Sprawdzenie: 289 + 986 = 1 275.' },
+          { id: 'esa1b7', q: 'Prawda czy fałsz?\nW mnożeniu pisemnym przez liczbę dwucyfrową drugi iloczyn częściowy piszemy o jedno miejsce w lewo.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Drugi iloczyn to mnożenie przez cyfrę dziesiątek – jest dziesięć razy większy, dlatego przesuwamy go o jedno miejsce w lewo.' },
+          { id: 'jkizge', q: 'Prawda czy fałsz?\n618 : 6 = 13', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: '6 : 6 = 1, potem 6 nie mieści się w 1 – w wyniku trzeba napisać 0, a na końcu 18 : 6 = 3. Wynik to 103 (sprawdzenie: 103 · 6 = 618).' },
         ],
       },
 
