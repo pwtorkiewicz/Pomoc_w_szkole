@@ -2772,3 +2772,262 @@ window.LESSONS['przyroda/lad-woda-pole'] = [
     check: { q: 'Z czego robi się w Polsce cukier?', options: ['z rzepaku', 'z buraka cukrowego', 'z owsa'], answer: 1, explain: 'Burak cukrowy to roślina cukrodajna. Rzepak daje olej, owies – płatki.' },
   },
 ];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/cialo-ruch-pokarm'] = [
+  {
+    title: 'Ciało – drużyna układów',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Pięć układów współpracujących w ciele: ruchu – kości i mięśnie, pokarmowy – rozkłada pokarm, oddechowy – tlen, krwionośny – transport krwi, nerwowy – sterowanie">
+      <rect x="140" y="80" width="120" height="50" rx="25" class="f4 s4 sw"/>
+      <text x="200" y="111" class="tx-b" text-anchor="middle">🧍 ciało</text>
+      <g class="f1 s1"><rect x="10" y="10" width="120" height="50" rx="10"/><rect x="270" y="10" width="120" height="50" rx="10"/><rect x="10" y="150" width="120" height="50" rx="10"/><rect x="270" y="150" width="120" height="50" rx="10"/><rect x="140" y="10" width="120" height="50" rx="10"/></g>
+      <g class="tx-s" text-anchor="middle"><text x="70" y="32">🦴 ruchu</text><text x="70" y="50">kości, mięśnie</text><text x="200" y="32">🧠 nerwowy</text><text x="200" y="50">steruje</text><text x="330" y="32">🫁 oddechowy</text><text x="330" y="50">tlen</text><text x="70" y="172">🍎 pokarmowy</text><text x="70" y="190">rozkłada pokarm</text><text x="330" y="172">❤️ krwionośny</text><text x="330" y="190">transport</text></g>
+      <g class="ln-thin"><line x1="130" y1="50" x2="150" y2="85"/><line x1="200" y1="60" x2="200" y2="80"/><line x1="270" y1="50" x2="250" y2="85"/><line x1="130" y1="160" x2="150" y2="125"/><line x1="270" y1="160" x2="250" y2="125"/></g>
+    </svg>`,
+    text: `<p>Ciało działa jak drużyna. Każdy <b>układ narządów</b> ma swoje zadanie: <b>ruchu</b> – podpiera i porusza, <b>pokarmowy</b> – rozkłada pokarm, <b>oddechowy</b> – dostarcza tlen, <b>krwionośny</b> – rozwozi krew, <b>nerwowy</b> – steruje wszystkim.</p>
+      <p>Układy współpracują: gdy biegniesz, mięśnie pracują, oddychasz szybciej, a serce mocniej pompuje krew.</p>`,
+    remember: 'Układy narządów współpracują jak drużyna.',
+    hook: 'Mózg to kapitan, serce – kierowca dostawczaka, płuca – wentylator, a mięśnie – zawodnicy.',
+    check: { q: 'Który układ steruje pracą całego ciała?', options: ['pokarmowy', 'nerwowy', 'ruchu'], answer: 1, explain: 'Układ nerwowy (mózg, rdzeń kręgowy, nerwy) steruje ciałem.' },
+  },
+  {
+    title: 'Szkielet, mięśnie i stawy',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Uproszczony szkielet z podpisami: czaszka chroni mózg, klatka piersiowa z żeber chroni serce i płuca, kręgosłup jest podporą ciała, staw kolanowy łączy kości ruchomo. Obok ramię z mięśniem, który kurcząc się, zgina rękę w łokciu">
+      <circle cx="90" cy="35" r="22" class="f4 s4 sw"/>
+      <line x1="90" y1="58" x2="90" y2="155" class="ln sw"/>
+      <g class="ln"><path d="M90,72 Q62,76 64,90"/><path d="M90,72 Q118,76 116,90"/><path d="M90,86 Q60,90 62,104"/><path d="M90,86 Q120,90 118,104"/><path d="M90,100 Q62,104 64,118"/><path d="M90,100 Q118,104 116,118"/></g>
+      <path d="M72,155 L108,155 L104,166 L76,166 Z" class="f4 s4"/>
+      <line x1="80" y1="166" x2="74" y2="200" class="ln sw"/><line x1="74" y1="200" x2="70" y2="225" class="ln sw"/>
+      <circle cx="74" cy="200" r="5" class="f2 s2"/>
+      <line x1="100" y1="166" x2="106" y2="225" class="ln sw"/>
+      <g class="ln-thin"><line x1="112" y1="30" x2="150" y2="30"/><line x1="118" y1="96" x2="150" y2="96"/><line x1="92" y1="140" x2="150" y2="140"/><line x1="79" y1="200" x2="150" y2="200"/></g>
+      <g class="tx-s"><text x="155" y="35">czaszka – chroni mózg</text><text x="155" y="101">żebra – chronią serce, płuca</text><text x="155" y="145">kręgosłup – podpora</text><text x="155" y="205">staw – ruchome połączenie</text></g>
+      <text x="300" y="60" class="tx-b" text-anchor="middle">206 kości</text>
+      <text x="300" y="80" class="tx-s" text-anchor="middle">(dorosły)</text>
+    </svg>`,
+    text: `<p><b>Szkielet</b> to bierna część układu ruchu – dorosły człowiek ma <b>206 kości</b>. <b>Czaszka</b> chroni mózg, <b>klatka piersiowa</b> (żebra, mostek, kręgi) – serce i płuca, a <b>kręgosłup</b> z kręgów podpiera całe ciało.</p>
+      <p><b>Mięśnie</b> to część czynna – kurczą się i ciągną kości. Kości łączą się ruchomo w <b>stawach</b> (kolano, łokieć, bark).</p>`,
+    remember: 'Kości – bierne, mięśnie – czynne, stawy – ruchome połączenia.',
+    hook: 'Kości to stelaż namiotu, mięśnie – linki, które go napinają, a stawy – zawiasy.',
+    check: { q: 'Co chroni klatka piersiowa?', options: ['mózg', 'serce i płuca', 'kolano'], answer: 1, explain: 'Żebra osłaniają serce i płuca. Mózg chroni czaszka.' },
+  },
+  {
+    title: 'Co jest w jedzeniu?',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Talerz z grupami składników: białka budują – mięso, ryby, jaja, mleko, fasola; węglowodany i tłuszcze dają energię – pieczywo, kasze, ziemniaki, masło, olej; witaminy i sole mineralne regulują – warzywa, owoce, mleko; do tego woda i błonnik">
+      <circle cx="110" cy="110" r="95" class="bg ln sw"/>
+      <path d="M110,110 L110,15 A95,95 0 0 1 192,157 Z" class="f2 s2"/>
+      <path d="M110,110 L192,157 A95,95 0 0 1 28,157 Z" class="f4 s4"/>
+      <path d="M110,110 L28,157 A95,95 0 0 1 110,15 Z" class="f3 s3"/>
+      <text x="150" y="85" class="tx-s" text-anchor="middle">białka</text>
+      <text x="110" y="170" class="tx-s" text-anchor="middle">energia</text>
+      <text x="68" y="85" class="tx-s" text-anchor="middle">witaminy</text>
+      <g class="tx-s"><text x="220" y="40">🥚 białka – budują</text><text x="220" y="80">🍞 węglowodany,</text><text x="220" y="98">🧈 tłuszcze – energia</text><text x="220" y="138">🥕 witaminy, sole</text><text x="220" y="156">– regulują</text><text x="220" y="196">💧 woda, błonnik</text></g>
+    </svg>`,
+    text: `<p><b>Białka</b> (mięso, ryby, jaja, mleko, fasola) <b>budują</b> ciało. <b>Węglowodany</b> (pieczywo, kasze, ziemniaki, owoce) i <b>tłuszcze</b> (masło, olej, orzechy) dają <b>energię</b>. <b>Witaminy i sole mineralne</b> (warzywa, owoce, mleko) <b>regulują</b> pracę organizmu – np. wapń wzmacnia kości.</p>
+      <p>Potrzebne są też <b>woda</b> i <b>błonnik</b>, który pomaga jelitom. Żaden produkt nie ma wszystkiego – jedz <b>urozmaicenie</b>.</p>`,
+    remember: 'Białka – budują, węglowodany i tłuszcze – energia, witaminy i sole – regulują.',
+    hook: 'Budowa domu: białka to cegły, węglowodany i tłuszcze – paliwo dla koparki, witaminy – kierownik budowy.',
+    check: { q: 'Które składniki budują mięśnie?', options: ['białka', 'tłuszcze', 'błonnik'], answer: 0, explain: 'Białka są budulcowe.' },
+  },
+  {
+    title: 'Czytam etykietę',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Uproszczona etykieta jogurtu: wartość odżywcza w 100 gramach – wartość energetyczna w kcal, tłuszcz, węglowodany, w tym cukry, białko, sól. Skład: składniki od tego, którego jest najwięcej">
+      <rect x="10" y="10" width="230" height="200" rx="8" class="bg ln sw"/>
+      <text x="125" y="34" class="tx-b" text-anchor="middle">w 100 g</text>
+      <line x1="10" y1="44" x2="240" y2="44" class="ln"/>
+      <g class="tx-s"><text x="20" y="66">wartość energetyczna</text><text x="20" y="90">tłuszcz</text><text x="20" y="114">węglowodany</text><text x="34" y="138">w tym cukry</text><text x="20" y="162">białko</text><text x="20" y="186">sól</text></g>
+      <g class="tx-s" text-anchor="end"><text x="230" y="66">… kcal</text><text x="230" y="90">… g</text><text x="230" y="114">… g</text><text x="230" y="138">… g</text><text x="230" y="162">… g</text><text x="230" y="186">… g</text></g>
+      <rect x="250" y="10" width="140" height="200" rx="8" class="f4 s4"/>
+      <text x="320" y="34" class="tx-b" text-anchor="middle">skład</text>
+      <text x="320" y="62" class="tx-s" text-anchor="middle">1. najwięcej</text>
+      <text x="320" y="86" class="tx-s" text-anchor="middle">2. …</text>
+      <text x="320" y="110" class="tx-s" text-anchor="middle">3. …</text>
+      <text x="320" y="134" class="tx-s" text-anchor="middle">… najmniej</text>
+      <text x="320" y="170" class="tx-s" text-anchor="middle">porównuj</text>
+      <text x="320" y="190" class="tx-s" text-anchor="middle">na 100 g!</text>
+    </svg>`,
+    text: `<p>Na etykiecie znajdziesz <b>wartość energetyczną</b> (w <b>kcal</b>) oraz zawartość tłuszczu, węglowodanów (w tym <b>cukrów</b>), białka i <b>soli</b> – zwykle w <b>100 g</b>. W <b>składzie</b> składniki są wypisane od tego, którego jest najwięcej.</p>
+      <p>Porównuj produkty na tę samą ilość: jogurt z 5 g cukrów w 100 g jest mniej słodzony niż jogurt z 12 g cukrów w 100 g.</p>`,
+    remember: 'Etykieta: kcal i składniki na 100 g; skład od największej ilości.',
+    hook: 'Etykieta to „dowód osobisty” produktu – zanim zjesz, sprawdź, kim jest.',
+    check: { q: 'Cukier jest pierwszy w składzie. Co to znaczy?', options: ['jest go najmniej', 'jest go najwięcej', 'w ogóle go nie ma'], answer: 1, explain: 'Składniki wypisuje się od tego, którego jest najwięcej.' },
+  },
+  {
+    title: 'Dbam o ruch i jedzenie',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Dobre nawyki: codzienny ruch, prosta postawa i lekki plecak, urozmaicone posiłki z warzywami i owocami, woda zamiast słodkich napojów, mniej słodyczy i soli">
+      <g class="f3 s3"><rect x="10" y="10" width="185" height="50" rx="10"/><rect x="205" y="10" width="185" height="50" rx="10"/><rect x="10" y="70" width="185" height="50" rx="10"/><rect x="205" y="70" width="185" height="50" rx="10"/><rect x="105" y="130" width="190" height="50" rx="10"/></g>
+      <g class="tx-s" text-anchor="middle"><text x="102" y="40">🏃 codzienny ruch</text><text x="297" y="40">🎒 prosto, lekki plecak</text><text x="102" y="100">🥗 warzywa i owoce</text><text x="297" y="100">💧 woda do picia</text><text x="200" y="160">🍬 mniej słodyczy i soli</text></g>
+    </svg>`,
+    text: `<p>Kości i mięśnie wzmacnia <b>codzienny ruch</b>. Dbaj o prostą postawę i nie noś za ciężkiego plecaka.</p>
+      <p>Jedz <b>urozmaicone</b> posiłki z warzywami i owocami, pij wodę zamiast słodkich napojów, a słodyczy i słonych przekąsek jedz mniej – sprawdzaj etykiety.</p>`,
+    remember: 'Ruch + urozmaicone jedzenie + woda = zdrowe ciało.',
+    hook: 'Ciało to samochód: ruch to jazda próbna, jedzenie – paliwo. Złe paliwo – słabsza jazda.',
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/oddychanie-krazenie'] = [
+  {
+    title: 'Droga powietrza',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Droga powietrza w układzie oddechowym: nos, gardło, krtań, tchawica, oskrzela, płuca. W płucach tlen przechodzi do krwi, a dwutlenek węgla z krwi do wydychanego powietrza">
+      <defs><marker id="a-p12-od-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <line x1="100" y1="20" x2="100" y2="110" class="ln sw"/>
+      <path d="M100,110 L70,135" class="ln sw"/><path d="M100,110 L130,135" class="ln sw"/>
+      <ellipse cx="60" cy="170" rx="42" ry="50" class="f2 s2 sw"/>
+      <ellipse cx="140" cy="170" rx="42" ry="50" class="f2 s2 sw"/>
+      <g class="ln-thin"><line x1="104" y1="22" x2="200" y2="22"/><line x1="104" y1="50" x2="200" y2="50"/><line x1="104" y1="78" x2="200" y2="78"/><line x1="104" y1="100" x2="200" y2="106"/><line x1="128" y1="132" x2="200" y2="134"/><line x1="180" y1="170" x2="200" y2="170"/></g>
+      <g class="tx-s"><text x="206" y="27">nos – ogrzewa, oczyszcza</text><text x="206" y="55">gardło</text><text x="206" y="83">krtań – tu powstaje głos</text><text x="206" y="111">tchawica</text><text x="206" y="139">oskrzela</text><text x="206" y="175">płuca: tlen → krew,</text><text x="206" y="195">dwutlenek węgla → wydech</text></g>
+    </svg>`,
+    text: `<p>Komórki potrzebują <b>tlenu</b>, żeby uwolnić energię z pokarmu. Powstaje przy tym <b>dwutlenek węgla</b>. Powietrze wędruje drogą: <b>nos → gardło → krtań → tchawica → oskrzela → płuca</b>.</p>
+      <p>Nos ogrzewa, nawilża i oczyszcza powietrze. W <b>płucach</b> tlen przechodzi do krwi, a dwutlenek węgla z krwi do powietrza, które wydychamy.</p>`,
+    remember: 'Nos → gardło → krtań → tchawica → oskrzela → płuca.',
+    hook: 'Tchawica to „pień”, oskrzela – „gałęzie”, a płuca – „korona drzewa” do góry nogami.',
+    check: { q: 'Gdzie tlen przechodzi do krwi?', options: ['w nosie', 'w płucach', 'w krtani'], answer: 1, explain: 'Wymiana gazów zachodzi w płucach.' },
+  },
+  {
+    title: 'Serce – pompa, krew – transport',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Serce w środku pompuje krew. Tętnicami krew płynie od serca do ciała, żyłami wraca do serca. Krew rozwozi tlen i składniki pokarmowe, zabiera dwutlenek węgla">
+      <defs><marker id="a-p12-od-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <text x="200" y="120" class="tx-b" text-anchor="middle">❤️ serce</text>
+      <path d="M240,100 Q330,60 330,110" class="ln sw s2" marker-end="url(#a-p12-od-2)"/>
+      <path d="M330,130 Q330,175 240,135" class="ln sw s1" marker-end="url(#a-p12-od-2)"/>
+      <path d="M160,100 Q70,60 70,110" class="ln sw s2" marker-end="url(#a-p12-od-2)"/>
+      <path d="M70,130 Q70,175 160,135" class="ln sw s1" marker-end="url(#a-p12-od-2)"/>
+      <text x="395" y="50" class="tx-s t2" text-anchor="end">tętnice – od serca</text>
+      <text x="395" y="190" class="tx-s t1" text-anchor="end">żyły – do serca</text>
+      <text x="20" y="40" class="tx-s">🚚 krew wiezie:</text>
+      <text x="20" y="200" class="tx-s">tlen, pokarm, ciepło</text>
+    </svg>`,
+    text: `<p><b>Serce</b> to mięsień, który działa jak <b>pompa</b>. <b>Tętnice</b> prowadzą krew <b>od</b> serca, <b>żyły</b> – <b>do</b> serca, a najcieńsze naczynia włosowate docierają do każdej komórki.</p>
+      <p><b>Krew</b> rozwozi tlen i składniki pokarmowe, zabiera dwutlenek węgla, rozprowadza ciepło i pomaga walczyć z zarazkami. Rytm serca – <b>tętno</b> – wyczujesz na nadgarstku. Po biegu przyspiesza.</p>`,
+    remember: 'Tętnice – od serca, żyły – do serca. Krew to transport ciała.',
+    hook: '<b>T</b>ętnice – „<b>T</b>am”, od serca w świat; żyły – wracają do „domu”.',
+    check: { q: 'Które naczynia prowadzą krew do serca?', options: ['tętnice', 'żyły', 'oskrzela'], answer: 1, explain: 'Do serca krew wraca żyłami.' },
+  },
+  {
+    title: 'Mózg – centrum dowodzenia',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Układ nerwowy: mózg w czaszce, rdzeń kręgowy w kręgosłupie, nerwy w całym ciele. Mózg odbiera sygnały od zmysłów, myśli, pamięta, decyduje i steruje ruchem. Pomagają mu sen, ruch, woda i przerwy">
+      <ellipse cx="90" cy="45" rx="45" ry="32" class="f5 s5 sw"/>
+      <line x1="90" y1="77" x2="90" y2="180" class="ln sw s5"/>
+      <g class="ln-thin"><path d="M90,100 L50,120"/><path d="M90,100 L130,120"/><path d="M90,140 L45,170"/><path d="M90,140 L135,170"/></g>
+      <g class="tx-s"><text x="150" y="40">🧠 mózg – w czaszce</text><text x="150" y="62">rdzeń kręgowy – w kręgosłupie</text><text x="150" y="84">nerwy – w całym ciele</text></g>
+      <rect x="150" y="104" width="240" height="86" rx="12" class="f3 s3"/>
+      <text x="270" y="128" class="tx-s" text-anchor="middle">pomagają mu:</text>
+      <text x="270" y="152" class="tx-s" text-anchor="middle">😴 sen · 🏃 ruch · 💧 woda</text>
+      <text x="270" y="174" class="tx-s" text-anchor="middle">⏸️ przerwy · 🪖 kask</text>
+    </svg>`,
+    text: `<p><b>Układ nerwowy</b> to <b>mózg</b> (w czaszce), <b>rdzeń kręgowy</b> (w kręgosłupie) i <b>nerwy</b>. Mózg odbiera sygnały od zmysłów, rozpoznaje je, zapamiętuje, myśli i decyduje, a potem przez nerwy steruje mięśniami.</p>
+      <p>Mózgowi pomagają <b>regularny sen</b> (w nocy porządkuje to, czego się nauczyłeś), ruch, woda i przerwy w nauce. Na rowerze i hulajnodze chroń głowę kaskiem.</p>`,
+    remember: 'Mózg + rdzeń kręgowy + nerwy = układ nerwowy. Sen pomaga zapamiętywać.',
+    hook: 'Nerwy to kable, a mózg – komputer, który nigdy się nie wyłącza.',
+  },
+  {
+    title: 'Dym i alkohol – wrogowie ciała',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Dym tytoniowy: tlenek węgla utrudnia krwi przenoszenie tlenu, niszczy płuca i serce, nikotyna uzależnia, bierne palenie też szkodzi. Alkohol szkodzi mózgowi i innym narządom, uzależnia. Sprzedaż osobom poniżej 18 lat zabroniona">
+      <rect x="10" y="10" width="185" height="150" rx="12" class="f2 s2"/>
+      <rect x="205" y="10" width="185" height="150" rx="12" class="f5 s5"/>
+      <text x="102" y="36" class="tx-b" text-anchor="middle">🚭 dym</text>
+      <g class="tx-s" text-anchor="middle"><text x="102" y="62">tlenek węgla –</text><text x="102" y="80">mniej tlenu we krwi</text><text x="102" y="104">nikotyna uzależnia</text><text x="102" y="128">bierne palenie</text><text x="102" y="146">też szkodzi</text></g>
+      <text x="297" y="36" class="tx-b" text-anchor="middle">🚫 alkohol</text>
+      <g class="tx-s" text-anchor="middle"><text x="297" y="62">szkodzi mózgowi</text><text x="297" y="80">i innym narządom</text><text x="297" y="104">uzależnia</text><text x="297" y="128">dla dzieci</text><text x="297" y="146">szczególnie groźny</text></g>
+      <rect x="10" y="170" width="380" height="32" rx="8" class="f4 s4"/>
+      <text x="200" y="192" class="tx-s" text-anchor="middle">w Polsce sprzedaż osobom poniżej 18 lat – zabroniona</text>
+    </svg>`,
+    text: `<p><b>Dym tytoniowy</b> zawiera wiele trujących substancji. <b>Tlenek węgla</b> z dymu utrudnia krwi przenoszenie tlenu, a <b>nikotyna</b> uzależnia. Szkodzi też <b>bierne palenie</b> – wdychanie cudzego dymu.</p>
+      <p><b>Alkohol</b> szkodzi m.in. mózgowi i uzależnia – dla dzieci i młodzieży jest szczególnie groźny. W Polsce nie wolno sprzedawać papierosów ani alkoholu osobom poniżej 18 lat.</p>`,
+    remember: 'Dym: tlenek węgla i nikotyna. Alkohol: szkodzi mózgowi. Oba uzależniają.',
+    hook: 'Papieros zabiera krwi „miejsca dla tlenu” – jak pasażer na gapę, który zajmuje fotel.',
+    check: { q: 'Co to jest bierne palenie?', options: ['palenie raz na rok', 'wdychanie cudzego dymu', 'gaszenie papierosa'], answer: 1, explain: 'Cudzy dym też szkodzi – masz prawo poprosić, by nikt przy tobie nie palił.' },
+  },
+  {
+    title: 'Dbam o płuca, serce i mózg',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Dobre nawyki: oddychaj nosem, ruszaj się na świeżym powietrzu, w dni smogowe ogranicz wysiłek na dworze, wysypiaj się, unikaj dymu, chroń głowę kaskiem">
+      <g class="f3 s3"><rect x="10" y="10" width="185" height="50" rx="10"/><rect x="205" y="10" width="185" height="50" rx="10"/><rect x="10" y="70" width="185" height="50" rx="10"/><rect x="205" y="70" width="185" height="50" rx="10"/><rect x="10" y="130" width="185" height="50" rx="10"/><rect x="205" y="130" width="185" height="50" rx="10"/></g>
+      <g class="tx-s" text-anchor="middle"><text x="102" y="40">👃 oddychaj nosem</text><text x="297" y="40">🌳 ruch na powietrzu</text><text x="102" y="100">😷 smog – mniej wysiłku</text><text x="297" y="100">😴 wysypiaj się</text><text x="102" y="160">🚭 unikaj dymu</text><text x="297" y="160">🪖 kask na rowerze</text></g>
+    </svg>`,
+    text: `<p>Oddychaj nosem, ruszaj się na świeżym powietrzu – serce i płuca stają się silniejsze. W dni <b>smogowe</b> ogranicz wysiłek na dworze.</p>
+      <p>Wysypiaj się regularnie, unikaj dymu tytoniowego, a na rowerze i hulajnodze zakładaj kask.</p>`,
+    remember: 'Ruch, sen, czyste powietrze, zero dymu.',
+    check: { q: 'Prawda czy fałsz? Żyły prowadzą krew od serca.', options: ['Prawda', 'Fałsz'], answer: 1, explain: 'Od serca – tętnice, do serca – żyły.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/choroby'] = [
+  {
+    title: 'Kto wywołuje choroby?',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Sprawcy chorób zakaźnych: bakterie – organizmy jednokomórkowe, większość pożyteczna, niektóre wywołują np. anginę; wirusy – nie są organizmami żywymi, np. grypa, ospa; niektóre grzyby – grzybica; pasożyty – owsiki, glista, kleszcz">
+      <g class="f1 s1"><rect x="10" y="10" width="185" height="90" rx="12"/><rect x="205" y="10" width="185" height="90" rx="12"/><rect x="10" y="110" width="185" height="90" rx="12"/><rect x="205" y="110" width="185" height="90" rx="12"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="102" y="36">🦠 bakterie</text><text x="297" y="36">wirusy</text><text x="102" y="136">🍄 grzyby</text><text x="297" y="136">🪱 pasożyty</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="102" y="62">większość pożyteczna,</text><text x="102" y="82">niektóre: angina</text><text x="297" y="62">nie są organizmami;</text><text x="297" y="82">grypa, ospa, odra</text><text x="102" y="162">niektóre:</text><text x="102" y="182">grzybica skóry</text><text x="297" y="162">owsiki, glista,</text><text x="297" y="182">kleszcz</text></g>
+    </svg>`,
+    text: `<p>Choroby zakaźne wywołują <b>drobnoustroje</b> – tak małe, że widać je dopiero pod mikroskopem. <b>Bakterie</b> to organizmy jednokomórkowe: większość jest pożyteczna, ale niektóre wywołują choroby, np. anginę. <b>Wirusy</b> nie są organizmami żywymi – wywołują np. grypę, ospę wietrzną, odrę.</p>
+      <p>Niektóre <b>grzyby</b> powodują grzybicę skóry. <b>Pasożyty</b> żyją kosztem innego organizmu – w jelitach (owsiki, glista ludzka) albo na skórze (kleszcz).</p>`,
+    remember: 'Bakterie, wirusy, grzyby, pasożyty. Wirusy nie są organizmami.',
+    hook: 'Nie każda bakteria to wróg – te w jogurcie są po twojej stronie.',
+    check: { q: 'Co nie jest organizmem żywym?', options: ['bakteria', 'wirus', 'kleszcz'], answer: 1, explain: 'Wirusy namnażają się tylko w komórkach innych organizmów.' },
+  },
+  {
+    title: 'Jak zarazki wędrują?',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Cztery drogi zakażenia: kropelkowa – kaszel i kichanie; pokarmowa – brudne ręce, niemyte owoce, brudna woda; kontakt – dotyk, wspólne przedmioty; przez skórę – rany i ukłucia, np. kleszcz">
+      <g class="f4 s4"><rect x="10" y="10" width="185" height="85" rx="12"/><rect x="205" y="10" width="185" height="85" rx="12"/><rect x="10" y="105" width="185" height="85" rx="12"/><rect x="205" y="105" width="185" height="85" rx="12"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="102" y="36">🤧 kropelkowa</text><text x="297" y="36">🍎 pokarmowa</text><text x="102" y="131">🤝 kontakt</text><text x="297" y="131">🩹 przez skórę</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="102" y="62">kaszel, kichanie</text><text x="102" y="80">(np. grypa)</text><text x="297" y="62">brudne ręce,</text><text x="297" y="80">niemyte owoce</text><text x="102" y="157">dotyk, wspólne</text><text x="102" y="175">przedmioty</text><text x="297" y="157">rany, ukłucia</text><text x="297" y="175">(np. kleszcz)</text></g>
+    </svg>`,
+    text: `<p>Zarazki przenoszą się <b>drogą kropelkową</b> (kaszel, kichanie), <b>pokarmową</b> (brudne ręce, niemyte owoce, brudna woda – owsiki i glista to „choroby brudnych rąk”), <b>przez kontakt</b> (dotyk, wspólne przedmioty) i <b>przez skórę</b> – przez rany i ukłucia, np. kleszcza.</p>`,
+    remember: 'Drogi zakażenia: kropelkowa, pokarmowa, kontakt, przez skórę.',
+    hook: 'Zarazki podróżują czterema „autobusami”: kropla, jedzenie, dotyk, ukłucie.',
+    check: { q: 'Którą drogą zarażamy się owsikami?', options: ['kropelkową', 'pokarmową – przez brudne ręce', 'przez ukłucie komara'], answer: 1, explain: 'Jaja pasożyta trafiają do ust z brudnych rąk – to choroba brudnych rąk.' },
+  },
+  {
+    title: 'Tarcza ochronna – higiena',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Sposoby ochrony: myj ręce mydłem przed jedzeniem i po toalecie, myj owoce i warzywa, kichaj w łokieć lub chusteczkę, wietrz pokój, używaj własnego kubka i ręcznika, gdy chorujesz – zostań w domu">
+      <g class="f3 s3"><rect x="10" y="10" width="185" height="54" rx="10"/><rect x="205" y="10" width="185" height="54" rx="10"/><rect x="10" y="72" width="185" height="54" rx="10"/><rect x="205" y="72" width="185" height="54" rx="10"/><rect x="10" y="134" width="185" height="54" rx="10"/><rect x="205" y="134" width="185" height="54" rx="10"/></g>
+      <g class="tx-s" text-anchor="middle"><text x="102" y="42">🧼 myj ręce</text><text x="297" y="42">🍏 myj owoce</text><text x="102" y="104">💪 kichaj w łokieć</text><text x="297" y="104">🪟 wietrz pokój</text><text x="102" y="166">🥤 własny kubek</text><text x="297" y="166">🛏️ chory? zostań w domu</text></g>
+    </svg>`,
+    text: `<p><b>Myj ręce</b> mydłem przed jedzeniem, po toalecie i po powrocie do domu. Myj owoce i warzywa. Kichaj i kaszl w <b>chusteczkę lub łokieć</b>. Wietrz pokój.</p>
+      <p>Używaj własnego kubka, ręcznika i szczoteczki. Gdy chorujesz – zostań w domu, żeby nie zarażać innych. Odporność wzmacniają sen, ruch i urozmaicone jedzenie.</p>`,
+    remember: 'Mycie rąk to najprostsza tarcza przed zarazkami.',
+    hook: 'Mydło to „gumka do ścierania” zarazków – myj ręce tak długo, jak śpiewasz „Sto lat” dwa razy.',
+  },
+  {
+    title: 'Uwaga, kleszcze!',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Kleszcz – pasożyt wysysający krew, może przenosić boreliozę i kleszczowe zapalenie mózgu. Po spacerze obejrzyj skórę. Kleszcza usuwa się jak najszybciej pęsetą, chwytając tuż przy skórze, bez smarowania kremem czy spirytusem, z pomocą dorosłego">
+      <ellipse cx="60" cy="80" rx="22" ry="28" class="f2 s2 sw"/>
+      <circle cx="60" cy="48" r="8" class="f2 s2"/>
+      <g class="ln"><path d="M40,70 L20,60"/><path d="M40,85 L18,85"/><path d="M40,100 L20,112"/><path d="M80,70 L100,60"/><path d="M80,85 L102,85"/><path d="M80,100 L100,112"/></g>
+      <text x="60" y="140" class="tx-s" text-anchor="middle">kleszcz</text>
+      <text x="60" y="160" class="tx-s" text-anchor="middle">(pasożyt)</text>
+      <rect x="130" y="10" width="260" height="56" rx="10" class="f4 s4"/>
+      <text x="260" y="34" class="tx-s" text-anchor="middle">może przenosić boreliozę</text>
+      <text x="260" y="54" class="tx-s" text-anchor="middle">i kleszczowe zapalenie mózgu</text>
+      <rect x="130" y="74" width="260" height="56" rx="10" class="f3 s3"/>
+      <text x="260" y="98" class="tx-s" text-anchor="middle">🔎 po spacerze obejrzyj skórę</text>
+      <text x="260" y="118" class="tx-s" text-anchor="middle">wyczesz włosy, umyj się</text>
+      <rect x="130" y="138" width="260" height="56" rx="10" class="f1 s1"/>
+      <text x="260" y="162" class="tx-s" text-anchor="middle">jak najszybciej pęsetą – z dorosłym</text>
+      <text x="260" y="182" class="tx-s" text-anchor="middle">❌ bez kremu i spirytusu</text>
+    </svg>`,
+    text: `<p><b>Kleszcz</b> to pasożyt, który wbija się w skórę i wysysa krew. Może przenosić <b>boreliozę</b> i <b>kleszczowe zapalenie mózgu</b>. Po spacerze w lesie, parku czy na łące obejrzyj skórę, wyczesz włosy i umyj się.</p>
+      <p>Kleszcza usuwa się <b>jak najszybciej</b> – poproś dorosłego. Wyjmuje się go <b>pęsetą</b>, chwytając tuż przy skórze, <b>bez</b> smarowania kremem czy spirytusem. Gdy później wokół ukłucia pojawi się rosnący czerwony rumień – do lekarza.</p>`,
+    remember: 'Kleszcz: obejrzyj skórę, usuń szybko pęsetą, niczym nie smaruj.',
+    hook: 'Kleszcz to „pasażer na gapę” – im szybciej go wysadzisz, tym bezpieczniej.',
+    check: { q: 'Jak usunąć kleszcza?', options: ['posmarować go masłem', 'jak najszybciej pęsetą, z pomocą dorosłego', 'czekać, aż sam odpadnie'], answer: 1, explain: 'Kleszcza niczym się nie smaruje – wyjmuje się go szybko pęsetą.' },
+  },
+  {
+    title: 'Szczepionki i antybiotyki',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Szczepionka: organizm ćwiczy obronę na osłabionych lub zabitych zarazkach albo ich fragmentach i potem szybciej pokonuje prawdziwy zarazek. Antybiotyk działa tylko na bakterie, nie na wirusy, i bierze się go tylko z przepisu lekarza">
+      <rect x="10" y="10" width="185" height="180" rx="12" class="f3 s3"/>
+      <rect x="205" y="10" width="185" height="180" rx="12" class="f5 s5"/>
+      <text x="102" y="38" class="tx-b" text-anchor="middle">💉 szczepionka</text>
+      <g class="tx-s" text-anchor="middle"><text x="102" y="70">organizm „ćwiczy”</text><text x="102" y="90">obronę na osłabionych</text><text x="102" y="110">zarazkach</text><text x="102" y="142">→ potem szybciej</text><text x="102" y="162">pokonuje chorobę</text></g>
+      <text x="297" y="38" class="tx-b" text-anchor="middle">💊 antybiotyk</text>
+      <g class="tx-s" text-anchor="middle"><text x="297" y="70">działa tylko</text><text x="297" y="90">na bakterie</text><text x="297" y="122">❌ nie na wirusy</text><text x="297" y="142">(np. grypa)</text><text x="297" y="172">tylko od lekarza</text></g>
+    </svg>`,
+    text: `<p><b>Szczepionka</b> zawiera osłabione lub zabite zarazki albo ich fragmenty. Organizm „ćwiczy” na nich obronę i uczy się je rozpoznawać – gdy spotka prawdziwy zarazek, szybciej go pokona. Szczepienia chronią przed wieloma groźnymi chorobami.</p>
+      <p><b>Antybiotyki</b> działają tylko na <b>bakterie</b> – grypy (wirus) nie wyleczą. Bierze się je tylko wtedy, gdy przepisze je lekarz.</p>`,
+    remember: 'Szczepionka – trening odporności. Antybiotyk – tylko na bakterie, tylko od lekarza.',
+    hook: 'Szczepionka to próbny alarm przeciwpożarowy – gdy przyjdzie prawdziwy, wszyscy wiedzą, co robić.',
+    check: { q: 'Czy antybiotyk wyleczy grypę?', options: ['tak, zawsze', 'nie – grypę wywołuje wirus', 'tylko w zimie'], answer: 1, explain: 'Antybiotyki działają tylko na bakterie.' },
+  },
+];

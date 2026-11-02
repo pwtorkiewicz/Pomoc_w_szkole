@@ -1246,6 +1246,263 @@ window.SUBJECTS.push({
 
     // ------------------------------------------------------------------
     {
+      id: 'cialo-ruch-pokarm',
+      name: 'Ciało człowieka: ruch i pokarm',
+      chapter: 'rozdział VI „Jak działa moje ciało?” (jak się poruszam, składniki pokarmowe)',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 6 „Człowiek w środowisku”, wym. 1 (organizm człowieka jako system współpracujących układów – bez faz rozwoju i dojrzewania, które pominięto decyzją rodzica), wym. 2 (składniki pokarmowe i ich rola, informacje na etykietach żywności: wartość energetyczna, cukry, tłuszcz, białko, sól; związek nawyków żywieniowych ze zdrowiem). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Jak się poruszamy?”, „Budowa i funkcje szkieletu” – 206 kości u dorosłego, czaszka, kręgosłup, klatka piersiowa z 12 parami żeber, stawy, mięśnie; „Białka, węglowodany, tłuszcze”, „Witaminy, woda i sole mineralne”, „Potrzeby pokarmowe człowieka” – składniki budulcowe, energetyczne i regulujące, błonnik). Kolejność składników na etykiecie (od największej ilości) – zgodnie z unijnymi zasadami znakowania żywności. Bez zaleceń liczbowych dotyczących diety.',
+      theory: `
+        <h3>Ciało – zespół współpracujących układów</h3>
+        <p>Twoje ciało działa jak drużyna. Każdy <b>układ narządów</b> ma swoje zadanie, ale wszystkie pracują razem:</p>
+        <table>
+          <tr><th>Układ</th><th>Co robi?</th></tr>
+          <tr><td>ruchu (kości i mięśnie)</td><td>podpiera ciało, chroni narządy, pozwala się ruszać</td></tr>
+          <tr><td>pokarmowy</td><td>rozkłada pokarm na drobne składniki</td></tr>
+          <tr><td>oddechowy</td><td>dostarcza tlen, usuwa dwutlenek węgla</td></tr>
+          <tr><td>krwionośny</td><td>rozprowadza krew po całym ciele</td></tr>
+          <tr><td>nerwowy (mózg, nerwy)</td><td>steruje pracą całego ciała</td></tr>
+        </table>
+        <h3>Jak się poruszam? Układ ruchu</h3>
+        <ul>
+          <li><b>Szkielet</b> (kości) to <b>bierna</b> część układu ruchu. Dorosły człowiek ma <b>206 kości</b>.</li>
+          <li><b>Mięśnie</b> to część <b>czynna</b> – kurczą się i ciągną kości.</li>
+          <li><b>Stawy</b> to ruchome połączenia kości, np. łokieć, kolano, bark.</li>
+        </ul>
+        <table>
+          <tr><th>Część szkieletu</th><th>Zadanie</th></tr>
+          <tr><td><b>czaszka</b></td><td>chroni mózg i narządy zmysłów</td></tr>
+          <tr><td><b>kręgosłup</b> (z kręgów)</td><td>podpora ciała, chroni rdzeń kręgowy</td></tr>
+          <tr><td><b>klatka piersiowa</b> (żebra – 12 par, mostek, kręgi)</td><td>chroni serce i płuca</td></tr>
+          <tr><td><b>kończyny</b> górne i dolne</td><td>ruch, chwytanie, chodzenie</td></tr>
+        </table>
+        <p>Kości dzieci są jeszcze bardziej elastyczne niż dorosłych. Ruch, dobra postawa, lekki plecak i składniki z pożywienia (np. wapń z mleka) pomagają je wzmacniać.</p>
+        <h3>Składniki pokarmowe</h3>
+        <table>
+          <tr><th>Składnik</th><th>Do czego?</th><th>Gdzie go znajdziesz?</th></tr>
+          <tr><td><b>białka</b></td><td><b>budulcowe</b> – budują ciało (mięśnie, skórę)</td><td>mięso, ryby, jaja, mleko, sery, fasola, groch</td></tr>
+          <tr><td><b>węglowodany</b> (cukry)</td><td><b>energetyczne</b> – dają energię</td><td>pieczywo, kasze, makaron, ziemniaki, owoce; słodycze</td></tr>
+          <tr><td><b>tłuszcze</b></td><td><b>energetyczne</b> – dużo energii, zapas</td><td>masło, olej, orzechy</td></tr>
+          <tr><td><b>witaminy</b> i <b>sole mineralne</b></td><td><b>regulujące</b> – pomagają wszystkiemu dobrze działać (np. wapń – kości)</td><td>warzywa, owoce, mleko, pełnoziarniste pieczywo</td></tr>
+          <tr><td><b>woda</b></td><td>bez niej organizm nie działa</td><td>woda, zupy, owoce</td></tr>
+          <tr><td><b>błonnik</b></td><td>nie daje energii, ale pomaga jelitom</td><td>warzywa, owoce, kasze, pieczywo razowe</td></tr>
+        </table>
+        <p>Żaden produkt nie ma wszystkiego – dlatego jedzenie powinno być <b>urozmaicone</b>.</p>
+        <h3>Czytam etykietę</h3>
+        <ul>
+          <li><b>Wartość energetyczna</b> – ile energii daje produkt; w <b>kcal</b> (kilokalorie) i kJ, zwykle w <b>100 g</b>.</li>
+          <li>Zawartość <b>tłuszczu</b>, <b>węglowodanów</b> (w tym <b>cukrów</b>), <b>białka</b> i <b>soli</b> – też zwykle w 100 g.</li>
+          <li><b>Skład</b> – składniki są wypisane od tego, którego jest <b>najwięcej</b>. Jeśli cukier jest na początku listy – produktu jest dużo słodkiego.</li>
+        </ul>
+        <p>Porównuj produkty <b>w tej samej ilości</b> (np. w 100 g): jogurt z 5 g cukrów w 100 g ma ich mniej niż jogurt z 12 g cukrów w 100 g.</p>
+      `,
+      flashcards: [
+        ['Układ narządów', 'Narządy, które razem wykonują ważne zadanie, np. układ pokarmowy'],
+        ['Szkielet', 'Bierna część układu ruchu; dorosły ma 206 kości'],
+        ['Mięśnie', 'Czynna część układu ruchu – kurczą się i ciągną kości'],
+        ['Staw', 'Ruchome połączenie kości, np. kolano, łokieć'],
+        ['Czaszka', 'Chroni mózg i narządy zmysłów'],
+        ['Klatka piersiowa', 'Żebra (12 par), mostek i kręgi; chroni serce i płuca'],
+        ['Kręgosłup', 'Zbudowany z kręgów; podpora ciała, chroni rdzeń kręgowy'],
+        ['Białka', 'Składniki budulcowe: mięso, ryby, jaja, mleko, fasola'],
+        ['Węglowodany (cukry)', 'Dają energię: pieczywo, kasze, ziemniaki, owoce'],
+        ['Tłuszcze', 'Dużo energii i zapas: masło, olej, orzechy'],
+        ['Witaminy i sole mineralne', 'Regulują pracę organizmu (np. wapń – kości): warzywa, owoce, mleko'],
+        ['Błonnik', 'Nie daje energii, ale pomaga jelitom: warzywa, kasze, pieczywo razowe'],
+        ['Wartość energetyczna', 'Ile energii daje produkt; w kcal, zwykle na 100 g'],
+        ['Skład na etykiecie', 'Składniki od tego, którego jest najwięcej'],
+      ],
+      questions: [
+        { id: 'zojcym', q: 'Ile kości ma szkielet dorosłego człowieka?', options: ['206', '50', '12', '1000'], answer: 0, explain: 'Dorosły człowiek ma 206 kości, połączonych głównie stawami.' },
+        { id: '1jzew5', q: 'Która część układu ruchu jest czynna – kurczy się i porusza kośćmi?', options: ['mięśnie', 'kości', 'stawy', 'czaszka'], answer: 0, explain: 'Mięśnie kurczą się i ciągną kości. Kości to część bierna.' },
+        { id: 'iy1oei', q: 'Co to jest staw?', options: ['ruchome połączenie kości', 'rodzaj mięśnia', 'kość czaszki', 'naczynie krwionośne'], answer: 0, explain: 'Dzięki stawom (np. kolano, łokieć) możemy zginać ręce i nogi.' },
+        { id: 'vz23o7', q: 'Którą część ciała chroni czaszka?', options: ['mózg', 'serce', 'żołądek', 'płuca'], answer: 0, explain: 'Czaszka chroni mózg i narządy zmysłów. Serce i płuca chroni klatka piersiowa.' },
+        { id: '776yba', q: 'Co chroni klatka piersiowa?', options: ['serce i płuca', 'mózg', 'nerki', 'kolano'], answer: 0, explain: 'Klatkę piersiową tworzą żebra, mostek i kręgi – osłaniają serce i płuca.' },
+        { id: '8gh3w2', q: 'Z czego zbudowany jest kręgosłup?', options: ['z kręgów', 'z żeber', 'z mięśni', 'ze stawów kolanowych'], answer: 0, explain: 'Kręgosłup to kręgi ułożone jeden na drugim. Jest podporą ciała.' },
+        { id: 'jg5ad7', q: 'Które składniki są budulcowe – budują mięśnie i skórę?', options: ['białka', 'tłuszcze', 'błonnik', 'woda gazowana'], answer: 0, explain: 'Białka są budulcowe. Dużo ich w mięsie, rybach, jajach, mleku i roślinach strączkowych.' },
+        { id: 'lxqlpk', q: 'W którym produkcie jest dużo białka?', options: ['jajko', 'jabłko', 'cukier', 'olej'], answer: 0, explain: 'Jaja, mięso, ryby, mleko i fasola to źródła białka.' },
+        { id: 'l92yec', q: 'Które składniki dają przede wszystkim energię?', options: ['węglowodany i tłuszcze', 'witaminy', 'sole mineralne', 'błonnik'], answer: 0, explain: 'Węglowodany (pieczywo, kasze, ziemniaki) i tłuszcze (masło, olej) są energetyczne.' },
+        { id: '8pzg7w', q: 'Do czego organizmowi potrzebny jest błonnik?', options: ['pomaga jelitom w pracy', 'daje bardzo dużo energii', 'buduje kości', 'zastępuje wodę'], answer: 0, explain: 'Błonnik nie daje energii, ale usprawnia pracę jelit. Jest w warzywach, owocach i kaszach.' },
+        { id: 'nq9yvy', q: 'Który składnik mineralny jest ważny dla kości?', options: ['wapń', 'cukier', 'tłuszcz', 'błonnik'], answer: 0, explain: 'Wapń (np. z mleka i serów) jest potrzebny mocnym kościom.' },
+        { id: 'ewknp3', q: 'Dlaczego jedzenie powinno być urozmaicone?', options: ['żaden produkt nie ma wszystkich potrzebnych składników', 'żeby szybciej się najeść', 'bo tak każe sklep', 'nie musi być'], answer: 0, explain: 'Różne produkty dają różne składniki – dopiero razem dają to, czego potrzebuje ciało.' },
+        { id: 'juk7f2', q: 'W jakich jednostkach podaje się na etykiecie wartość energetyczną?', options: ['w kcal (i kJ)', 'w litrach', 'w centymetrach', 'w stopniach Celsjusza'], answer: 0, explain: 'Wartość energetyczna to kilokalorie (kcal) i kilodżule (kJ), zwykle w 100 g produktu.' },
+        { id: '7gal0d', q: 'W składzie płatków na pierwszym miejscu jest cukier. Co to znaczy?', options: ['cukru jest w nich najwięcej ze wszystkich składników', 'cukru jest najmniej', 'cukru nie ma wcale', 'nic to nie znaczy'], answer: 0, explain: 'Składniki wypisuje się od tego, którego jest najwięcej.' },
+        { id: 't0xifk', q: 'Jogurt A ma 12 g cukrów w 100 g, a jogurt B – 5 g cukrów w 100 g. Który jest mniej słodki?', options: ['B', 'A', 'są jednakowe', 'nie da się porównać'], answer: 0, explain: 'Oba wyniki są podane na 100 g, więc można je porównać: 5 g to mniej niż 12 g.' },
+        {
+          id: 'b0916q',
+          q: 'Którą literą oznaczono na rysunku klatkę piersiową?',
+          svg: `<svg viewBox="0 0 300 260" role="img" aria-label="Uproszczony szkielet człowieka: A – czaszka, B – żebra tworzące klatkę piersiową, C – kręgosłup w środku pleców, D – kości nóg">
+      <circle cx="120" cy="35" r="24" class="f4 s4 sw"/>
+      <line x1="120" y1="60" x2="120" y2="170" class="ln sw"/>
+      <g class="ln"><path d="M120,78 Q90,82 92,96"/><path d="M120,78 Q150,82 148,96"/><path d="M120,92 Q88,96 90,110"/><path d="M120,92 Q152,96 150,110"/><path d="M120,106 Q90,110 92,124"/><path d="M120,106 Q150,110 148,124"/></g>
+      <line x1="90" y1="72" x2="60" y2="140" class="ln sw"/>
+      <line x1="150" y1="72" x2="180" y2="140" class="ln sw"/>
+      <path d="M100,170 L140,170 L135,182 L105,182 Z" class="f4 s4"/>
+      <line x1="108" y1="182" x2="100" y2="250" class="ln sw"/>
+      <line x1="132" y1="182" x2="140" y2="250" class="ln sw"/>
+      <g class="ln-thin"><line x1="144" y1="30" x2="220" y2="30"/><line x1="150" y1="100" x2="220" y2="100"/><line x1="122" y1="150" x2="220" y2="150"/><line x1="138" y1="225" x2="220" y2="225"/></g>
+      <g class="tx-b"><text x="228" y="36">A</text><text x="228" y="106">B</text><text x="228" y="156">C</text><text x="228" y="231">D</text></g>
+    </svg>`,
+          options: ['A', 'B', 'C', 'D'],
+          noShuffle: true,
+          answer: 1,
+          explain: 'Żebra (B) tworzą klatkę piersiową, która chroni serce i płuca. A – czaszka, C – kręgosłup, D – kości nóg.',
+        },
+        { id: 'ud1tf1', q: 'Prawda czy fałsz?\nKości to czynna część układu ruchu.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Kości są bierne – to mięśnie są czynne i poruszają kośćmi.' },
+      ],
+    },
+    // ------------------------------------------------------------------
+    {
+      id: 'oddychanie-krazenie',
+      name: 'Oddychanie, krew i mózg',
+      chapter: 'rozdział VI „Jak działa moje ciało?” (oddychanie, krążenie krwi, mózg)',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 6 „Człowiek w środowisku”, wym. 1 (organizm jako system współpracujących układów: oddechowy, krwionośny, nerwowy), wym. 9 (substancje uzależniające i ich skutki zdrowotne – tu dym tytoniowy i alkohol; dodane decyzją rodzica); dz. 2 wym. 12 (cel oddychania komórkowego); dz. 1 wym. 5 (rola mózgu w przetwarzaniu bodźców, uczeniu się i podejmowaniu decyzji); dz. 4 wym. 11 (znaczenie regularnego snu). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Jak oddychamy?” – narządy układu oddechowego; „Profilaktyka chorób układu oddechowego” – tlenek węgla z dymu papierosowego utrudnia transport tlenu) i na stronie GIS („Skutki zdrowotne palenia tytoniu”). Zakaz sprzedaży alkoholu i wyrobów tytoniowych osobom poniżej 18 lat – ustawa o wychowaniu w trzeźwości i przeciwdziałaniu alkoholizmowi oraz ustawa o ochronie zdrowia przed następstwami używania tytoniu. Bez liczb (tętno, objętość płuc, liczba substancji w dymie – źródła podają różne wartości).',
+      theory: `
+        <h3>Po co oddychamy?</h3>
+        <p>Komórki ciała potrzebują <b>tlenu</b>. Dzięki niemu uwalniają <b>energię</b> z pokarmu – to <b>oddychanie komórkowe</b>. Powstaje przy tym <b>dwutlenek węgla</b>, który trzeba usunąć.</p>
+        <h3>Układ oddechowy</h3>
+        <p>Droga powietrza: <span class="f">nos → gardło → krtań → tchawica → oskrzela → płuca</span></p>
+        <ul>
+          <li><b>Nos</b> ogrzewa, nawilża i oczyszcza powietrze – lepiej oddychać nosem niż ustami.</li>
+          <li><b>Krtań</b> – tu powstaje głos.</li>
+          <li><b>Płuca</b> – tu tlen przechodzi do krwi, a dwutlenek węgla z krwi do powietrza, które wydychamy.</li>
+        </ul>
+        <p><b>Wdech</b> – powietrze wpływa do płuc, klatka piersiowa się unosi. <b>Wydech</b> – powietrze wypływa.</p>
+        <h3>Krew i układ krwionośny</h3>
+        <ul>
+          <li><b>Serce</b> to mięsień, który działa jak <b>pompa</b> – bez przerwy tłoczy krew.</li>
+          <li><b>Naczynia krwionośne</b>: <b>tętnice</b> prowadzą krew <b>od</b> serca, <b>żyły</b> – <b>do</b> serca, a najcieńsze <b>naczynia włosowate</b> docierają do wszystkich komórek.</li>
+          <li><b>Krew</b> rozwozi tlen i składniki pokarmowe, zabiera dwutlenek węgla i zbędne substancje, rozprowadza ciepło i pomaga walczyć z zarazkami.</li>
+          <li><b>Tętno</b> – rytm pracy serca; wyczujesz go na nadgarstku lub szyi. Po biegu jest szybsze.</li>
+        </ul>
+        <h3>Mózg – centrum dowodzenia</h3>
+        <p><b>Układ nerwowy</b> to <b>mózg</b> (w czaszce), <b>rdzeń kręgowy</b> (w kręgosłupie) i <b>nerwy</b> w całym ciele. Mózg odbiera informacje od zmysłów, rozpoznaje je, zapamiętuje, myśli, podejmuje decyzje i steruje ruchem.</p>
+        <p>Mózgowi pomagają: <b>regularny sen</b> (w nocy porządkuje to, czego się nauczyłeś), ruch, woda, urozmaicone jedzenie i przerwy w nauce. Głowę chronisz kaskiem na rowerze i hulajnodze.</p>
+        <h3>Co szkodzi płucom, sercu i mózgowi?</h3>
+        <ul>
+          <li><b>Dym tytoniowy</b> zawiera wiele trujących substancji. Zawarty w nim <b>tlenek węgla</b> utrudnia krwi przenoszenie tlenu. Palenie niszczy płuca i serce, a <b>nikotyna</b> uzależnia.</li>
+          <li><b>Bierne palenie</b> – wdychanie cudzego dymu – też szkodzi. Masz prawo poprosić, by nikt nie palił przy tobie.</li>
+          <li><b>Alkohol</b> szkodzi wielu narządom, m.in. mózgowi; dla dzieci i młodzieży jest szczególnie groźny i też uzależnia.</li>
+          <li>W Polsce nie wolno sprzedawać alkoholu ani papierosów osobom poniżej 18 lat.</li>
+          <li><b>Smog</b> i zanieczyszczone powietrze szkodzą płucom – w dni smogowe lepiej ograniczyć wysiłek na dworze.</li>
+        </ul>
+      `,
+      flashcards: [
+        ['Oddychanie komórkowe', 'Komórki z pomocą tlenu uwalniają energię z pokarmu; powstaje dwutlenek węgla'],
+        ['Droga powietrza', 'Nos → gardło → krtań → tchawica → oskrzela → płuca'],
+        ['Nos', 'Ogrzewa, nawilża i oczyszcza wdychane powietrze'],
+        ['Płuca', 'Tu tlen przechodzi do krwi, a dwutlenek węgla z krwi do powietrza'],
+        ['Krtań', 'Narząd, w którym powstaje głos'],
+        ['Serce', 'Mięsień – pompa tłocząca krew'],
+        ['Tętnice i żyły', 'Tętnice – krew od serca; żyły – krew do serca'],
+        ['Naczynia włosowate', 'Najcieńsze naczynia – docierają do komórek'],
+        ['Krew', 'Rozwozi tlen i składniki pokarmowe, zabiera dwutlenek węgla, rozprowadza ciepło'],
+        ['Tętno', 'Rytm pracy serca; wyczujesz je na nadgarstku lub szyi'],
+        ['Układ nerwowy', 'Mózg, rdzeń kręgowy i nerwy'],
+        ['Mózg', 'Odbiera informacje od zmysłów, myśli, pamięta, steruje ruchem'],
+        ['Tlenek węgla w dymie', 'Utrudnia krwi przenoszenie tlenu'],
+        ['Bierne palenie', 'Wdychanie cudzego dymu tytoniowego – też szkodzi'],
+      ],
+      questions: [
+        { id: 't6j53m', q: 'Po co komórkom tlen?', options: ['do uwalniania energii z pokarmu', 'do budowy kości', 'do trawienia w żołądku', 'do widzenia'], answer: 0, explain: 'Dzięki tlenowi komórki uwalniają energię z pokarmu – to oddychanie komórkowe.' },
+        { id: 'oz08l2', q: 'Który gaz usuwamy z organizmu podczas wydechu?', options: ['dwutlenek węgla', 'tlen', 'azot z pokarmu', 'parę z płuc zamiast krwi'], answer: 0, explain: 'Dwutlenek węgla powstaje w komórkach i trafia przez krew do płuc, a potem na zewnątrz.' },
+        { id: 'p5ijaa', q: 'Jaka jest prawidłowa droga powietrza?', options: ['nos → gardło → krtań → tchawica → oskrzela → płuca', 'płuca → nos → krtań → tchawica', 'nos → żołądek → płuca', 'krtań → nos → oskrzela → serce'], answer: 0, explain: 'Powietrze wpada nosem, przechodzi przez gardło, krtań, tchawicę i oskrzela do płuc.' },
+        { id: 's8uqwt', q: 'Dlaczego lepiej oddychać nosem niż ustami?', options: ['nos ogrzewa, nawilża i oczyszcza powietrze', 'nos jest większy', 'ustami nie da się oddychać', 'nos produkuje tlen'], answer: 0, explain: 'W nosie powietrze się ogrzewa, nawilża i oczyszcza z kurzu.' },
+        { id: 'frs2kd', q: 'Gdzie tlen przechodzi z powietrza do krwi?', options: ['w płucach', 'w nosie', 'w żołądku', 'w krtani'], answer: 0, explain: 'W płucach tlen przechodzi do krwi, a dwutlenek węgla – z krwi do powietrza.' },
+        { id: 'iw0tmj', q: 'W którym narządzie powstaje głos?', options: ['w krtani', 'w tchawicy', 'w płucach', 'w sercu'], answer: 0, explain: 'W krtani są struny głosowe – dzięki nim mówimy i śpiewamy.' },
+        { id: 'mmwpnd', q: 'Jak działa serce?', options: ['jak pompa – tłoczy krew', 'jak filtr powietrza', 'jak magazyn tłuszczu', 'jak kość chroniąca płuca'], answer: 0, explain: 'Serce to mięsień, który bez przerwy pompuje krew.' },
+        { id: 'c9n4ic', q: 'Które naczynia prowadzą krew od serca?', options: ['tętnice', 'żyły', 'nerwy', 'oskrzela'], answer: 0, explain: 'Tętnice – od serca, żyły – do serca.' },
+        { id: 'hw5g72', q: 'Co robi krew?', options: ['rozwozi tlen i składniki pokarmowe, zabiera dwutlenek węgla', 'tylko ogrzewa skórę', 'trawi pokarm', 'buduje kości'], answer: 0, explain: 'Krew to „transport” organizmu. Rozprowadza też ciepło i pomaga walczyć z zarazkami.' },
+        { id: 'vdhnky', q: 'Gdzie łatwo wyczuć tętno?', options: ['na nadgarstku lub szyi', 'na łokciu', 'na kolanie', 'na paznokciu'], answer: 0, explain: 'Na nadgarstku i szyi tętnice są blisko skóry – czujesz rytm pracy serca.' },
+        { id: 'pxv6dr', q: 'Co dzieje się z tętnem po szybkim biegu?', options: ['przyspiesza', 'zatrzymuje się', 'zwalnia', 'znika'], answer: 0, explain: 'Mięśnie potrzebują więcej tlenu, więc serce bije szybciej.' },
+        { id: 'isvufp', q: 'Co należy do układu nerwowego?', options: ['mózg, rdzeń kręgowy i nerwy', 'serce i naczynia', 'płuca i tchawica', 'żołądek i jelita'], answer: 0, explain: 'Układ nerwowy steruje pracą całego ciała.' },
+        { id: 'oq1qgo', q: 'Co pomaga mózgowi zapamiętać to, czego się nauczyłeś?', options: ['regularny sen', 'granie do późna w nocy', 'opuszczanie posiłków', 'brak przerw w nauce'], answer: 0, explain: 'W czasie snu mózg porządkuje informacje z całego dnia.' },
+        { id: 'o58ye8', q: 'Dlaczego dym papierosowy utrudnia oddychanie komórkom?', options: ['zawarty w nim tlenek węgla utrudnia krwi przenoszenie tlenu', 'dodaje tlenu do krwi', 'oczyszcza płuca', 'nie ma żadnego wpływu'], answer: 0, explain: 'Tlenek węgla z dymu sprawia, że krew przenosi mniej tlenu do komórek.' },
+        { id: '6stkpy', q: 'Co to jest bierne palenie?', options: ['wdychanie cudzego dymu tytoniowego', 'palenie raz w roku', 'gaszenie papierosa', 'oglądanie reklam'], answer: 0, explain: 'Dym szkodzi też osobom, które same nie palą, a są obok palącego.' },
+        { id: 'h1nq1n', q: 'Która substancja w papierosach uzależnia?', options: ['nikotyna', 'woda', 'witamina C', 'tlen'], answer: 0, explain: 'Nikotyna uzależnia, dlatego tak trudno rzucić palenie.' },
+        { id: 'z7kzmq', q: 'Od jakiego wieku w Polsce wolno kupić papierosy i alkohol?', options: ['od 18 lat', 'od 10 lat', 'od 14 lat', 'w każdym wieku'], answer: 0, explain: 'Sprzedaż alkoholu i papierosów osobom poniżej 18 lat jest zabroniona.' },
+        { id: 'fx7660', q: 'Prawda czy fałsz?\nŻyły prowadzą krew od serca do całego ciała.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Od serca krew płynie tętnicami, a do serca wraca żyłami.' },
+      ],
+    },
+    // ------------------------------------------------------------------
+    {
+      id: 'choroby',
+      name: 'Jak chronić się przed chorobami?',
+      chapter: 'rozdział VI „Jak działa moje ciało?” (jak chronić się przed chorobami?)',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 6 „Człowiek w środowisku”, wym. 7 (drobnoustroje chorobotwórcze i pasożyty, sposoby ich rozprzestrzeniania się, profilaktyka), wym. 8 (działanie szczepionek i ich znaczenie w zapobieganiu chorobom zakaźnym); dz. 4 wym. 21 (pozytywne i negatywne znaczenie bakterii – w zakresie podstawowym). Temat z podręcznika „Odkrywam przyrodę 4” dodany decyzją rodzica (2.11.2026). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Co nam zagraża?” – bakterie, wirusy, grzyby, antybiotyki tylko na bakterie; „Zdrowie i choroba” – drogi zakażenia, borelioza przenoszona przez kleszcze; „Glista ludzka i owsiki”, „Robaki pasożytnicze” – choroba brudnych rąk, mycie rąk, owoców i warzyw) i w zaleceniach Państwowej Inspekcji Sanitarnej (gov.pl, „Kleszcze”: oglądanie skóry po spacerze, usuwanie kleszcza pęsetą jak najszybciej, borelioza i kleszczowe zapalenie mózgu, szczepienie przeciw KZM nie chroni przed boreliozą). Działanie szczepionki opisane w uproszczeniu.',
+      theory: `
+        <h3>Kto wywołuje choroby zakaźne?</h3>
+        <table>
+          <tr><th>Sprawca</th><th>Co o nim wiemy?</th><th>Przykład choroby</th></tr>
+          <tr><td><b>bakterie</b></td><td>organizmy jednokomórkowe; większość jest nieszkodliwa lub pożyteczna (np. pomaga w trawieniu, robi jogurt), ale niektóre wywołują choroby</td><td>angina</td></tr>
+          <tr><td><b>wirusy</b></td><td>nie są organizmami żywymi; namnażają się tylko w komórkach innych organizmów</td><td>grypa, ospa wietrzna, odra</td></tr>
+          <tr><td><b>grzyby</b> (niektóre)</td><td>atakują najczęściej skórę</td><td>grzybica</td></tr>
+          <tr><td><b>pasożyty</b></td><td>żyją kosztem innego organizmu</td><td>owsiki, glista ludzka (w jelitach); kleszcz (na skórze)</td></tr>
+        </table>
+        <p><b>Drobnoustroje</b> to organizmy (i wirusy) tak małe, że widać je dopiero pod mikroskopem.</p>
+        <h3>Jak zarazki się przenoszą?</h3>
+        <ul>
+          <li><b>drogą kropelkową</b> – w kropelkach przy kaszlu, kichaniu, mówieniu (np. grypa),</li>
+          <li><b>drogą pokarmową</b> – z brudnymi rękami, niemytymi owocami i warzywami, zepsutym jedzeniem, brudną wodą (glista, owsiki to „choroby brudnych rąk”),</li>
+          <li><b>przez kontakt</b> – dotyk chorej osoby lub przedmiotów, których używała,</li>
+          <li><b>przez skórę</b> – przez rany i ukłucia, np. kleszcza (borelioza, kleszczowe zapalenie mózgu).</li>
+        </ul>
+        <h3>Jak się chronić?</h3>
+        <ul>
+          <li><b>Myj ręce</b> mydłem – przed jedzeniem, po toalecie, po powrocie do domu.</li>
+          <li><b>Myj owoce i warzywa</b> przed jedzeniem.</li>
+          <li>Kichaj i kaszl w <b>chusteczkę lub łokieć</b>, nie w dłoń.</li>
+          <li><b>Wietrz</b> pomieszczenia; gdy jesteś chory, zostań w domu.</li>
+          <li>Używaj <b>własnego</b> kubka, ręcznika i szczoteczki do zębów.</li>
+          <li>Dbaj o odporność: sen, ruch, urozmaicone jedzenie.</li>
+        </ul>
+        <h3>Kleszcze</h3>
+        <p><b>Kleszcz</b> to pasożyt, który wbija się w skórę i wysysa krew. Może przenosić <b>boreliozę</b> i <b>kleszczowe zapalenie mózgu</b>.</p>
+        <ul>
+          <li>Po spacerze w lesie, parku czy na łące <b>obejrzyj dokładnie skórę</b> (także zwierząt), wyczesz włosy i umyj się.</li>
+          <li>Kleszcza trzeba usunąć <b>jak najszybciej</b> – poproś dorosłego. Wyjmuje się go <b>pęsetą</b>, chwytając tuż przy skórze, bez smarowania kremem czy spirytusem. Potem trzeba zdezynfekować miejsce i umyć ręce.</li>
+          <li>Jeśli w kolejnych tygodniach wokół ukłucia pojawi się rosnący czerwony rumień – trzeba iść do lekarza.</li>
+        </ul>
+        <h3>Szczepionki i antybiotyki</h3>
+        <ul>
+          <li><b>Szczepionka</b> zawiera osłabione lub zabite zarazki albo ich fragmenty. Organizm „ćwiczy” na nich obronę i uczy się je rozpoznawać – gdy później spotka prawdziwy zarazek, szybciej go pokona. Szczepienia chronią przed wieloma groźnymi chorobami zakaźnymi.</li>
+          <li><b>Antybiotyki</b> działają tylko na <b>bakterie</b> – nie leczą chorób wywołanych przez wirusy, np. grypy. Bierze się je tylko wtedy, gdy przepisze je lekarz.</li>
+        </ul>
+      `,
+      flashcards: [
+        ['Drobnoustroje', 'Organizmy (i wirusy) widoczne dopiero pod mikroskopem'],
+        ['Bakterie', 'Organizmy jednokomórkowe; większość nieszkodliwa lub pożyteczna, niektóre wywołują choroby (np. anginę)'],
+        ['Wirusy', 'Nie są organizmami żywymi; namnażają się w komórkach; np. grypa, ospa wietrzna'],
+        ['Pasożyt', 'Organizm żyjący kosztem innego, np. owsiki, glista ludzka, kleszcz'],
+        ['Droga kropelkowa', 'Zarażenie przez kropelki przy kaszlu i kichaniu'],
+        ['Droga pokarmowa', 'Zarażenie przez brudne ręce, niemyte owoce, brudną wodę'],
+        ['Choroba brudnych rąk', 'Np. glistnica, owsica – chroni mycie rąk i owoców'],
+        ['Kichanie', 'W chusteczkę lub łokieć, nie w dłoń'],
+        ['Kleszcz', 'Pasożyt wysysający krew; może przenosić boreliozę i kleszczowe zapalenie mózgu'],
+        ['Usuwanie kleszcza', 'Jak najszybciej, pęsetą, tuż przy skórze; bez kremu i spirytusu; z pomocą dorosłego'],
+        ['Szczepionka', 'Uczy organizm rozpoznawać zarazek, zanim zachorujemy'],
+        ['Antybiotyki', 'Działają tylko na bakterie, nie na wirusy; tylko z przepisu lekarza'],
+      ],
+      questions: [
+        { id: '1li4sw', q: 'Co NIE jest organizmem żywym?', options: ['wirus', 'bakteria', 'grzyb', 'owsik'], answer: 0, explain: 'Wirusy nie są organizmami – namnażają się tylko w komórkach innych organizmów.' },
+        { id: 'g04856', q: 'Czy wszystkie bakterie są szkodliwe?', options: ['nie – większość jest nieszkodliwa lub pożyteczna', 'tak, wszystkie wywołują choroby', 'bakterie nie istnieją', 'tak, ale tylko latem'], answer: 0, explain: 'Wiele bakterii pomaga w trawieniu albo robi z mleka jogurt. Tylko niektóre wywołują choroby.' },
+        { id: '99alui', q: 'Jak nazywamy przenoszenie zarazków przy kaszlu i kichaniu?', options: ['drogą kropelkową', 'drogą pokarmową', 'przez ukłucie', 'przez kości'], answer: 0, explain: 'Zarazki w kropelkach śliny lecą w powietrzu – tak przenosi się np. grypa.' },
+        { id: 'zxn6yy', q: 'Dlaczego owsicę i glistnicę nazywa się chorobami brudnych rąk?', options: ['zarażamy się nimi, jedząc brudnymi rękami lub niemyte owoce', 'bo atakują dłonie', 'bo przenoszą je kleszcze', 'bo leczy się je mydłem'], answer: 0, explain: 'Jaja pasożytów trafiają do ust z brudnych rąk i niemytego jedzenia.' },
+        { id: 'flxq14', q: 'Kiedy trzeba umyć ręce?', options: ['przed jedzeniem, po toalecie i po powrocie do domu', 'tylko raz w tygodniu', 'tylko po kąpieli', 'tylko gdy są widocznie brudne'], answer: 0, explain: 'Na rękach są zarazki, których nie widać. Mycie mydłem chroni przed wieloma chorobami.' },
+        { id: 'y19ct5', q: 'Jak prawidłowo kichać?', options: ['w chusteczkę lub zgięty łokieć', 'w dłoń', 'na rozmówcę', 'w powietrze nad stołem'], answer: 0, explain: 'Gdy kichasz w dłoń, zarazki trafiają potem na wszystko, czego dotkniesz.' },
+        { id: '93jlfs', q: 'Którą chorobę może przenosić kleszcz?', options: ['boreliozę', 'anginę', 'próchnicę', 'grzybicę stóp'], answer: 0, explain: 'Kleszcze mogą przenosić boreliozę i kleszczowe zapalenie mózgu.' },
+        { id: 'an3vcj', q: 'Co zrobić po powrocie ze spaceru po lesie lub łące?', options: ['dokładnie obejrzeć skórę, czy nie ma kleszczy', 'nic', 'od razu iść spać', 'posmarować skórę kremem'], answer: 0, explain: 'Szybko zauważony i usunięty kleszcz to mniejsze ryzyko choroby. Warto też wyczesać włosy i się umyć.' },
+        { id: 'hus8yj', q: 'Jak usunąć kleszcza?', options: ['jak najszybciej, pęsetą, chwytając tuż przy skórze – z pomocą dorosłego', 'posmarować go masłem i czekać', 'zalać spirytusem', 'zostawić, sam wypadnie'], answer: 0, explain: 'Nie smaruje się kleszcza niczym. Wyjmuje się go pęsetą, a miejsce dezynfekuje.' },
+        { id: 'worlxe', q: 'Jak działa szczepionka?', options: ['uczy organizm rozpoznawać zarazek, zanim zachorujemy', 'zabija wszystkie bakterie w jelitach', 'leczy złamania', 'zastępuje sen'], answer: 0, explain: 'Organizm „ćwiczy” na osłabionych lub zabitych zarazkach (albo ich fragmentach) i potem szybciej się broni.' },
+        { id: 'f4dsc6', q: 'Na co działają antybiotyki?', options: ['tylko na bakterie', 'na wirusy, np. grypy', 'na wszystkie choroby', 'na złamania'], answer: 0, explain: 'Antybiotyki nie leczą chorób wirusowych. Bierze się je tylko na zlecenie lekarza.' },
+        { id: 'd6lv7a', q: 'Która choroba jest wywołana przez wirusa?', options: ['ospa wietrzna', 'angina bakteryjna', 'grzybica', 'owsica'], answer: 0, explain: 'Ospę wietrzną wywołuje wirus. Owsica to pasożyt, grzybica – grzyb.' },
+        { id: 'fsb2eg', q: 'Dlaczego trzeba myć owoce i warzywa przed jedzeniem?', options: ['żeby usunąć zarazki i jaja pasożytów', 'żeby były słodsze', 'żeby szybciej się zepsuły', 'nie trzeba'], answer: 0, explain: 'Na skórce mogą być bakterie i jaja pasożytów z ziemi.' },
+        { id: 'i7gcy9', q: 'Dlaczego nie warto pożyczać cudzego kubka i ręcznika?', options: ['bo mogą przenosić zarazki', 'bo się zniszczą', 'bo są ciężkie', 'nie ma powodu'], answer: 0, explain: 'Przez wspólne przedmioty zarazki przechodzą z osoby na osobę (droga kontaktowa).' },
+        { id: 'udvyfk', q: 'Prawda czy fałsz?\nNa grypę najlepiej pomaga antybiotyk.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Grypę wywołuje wirus, a antybiotyki działają tylko na bakterie.' },
+        { id: 'wl8f81', q: 'Prawda czy fałsz?\nKleszcza trzeba posmarować kremem, zanim się go wyjmie.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Kleszcza niczym się nie smaruje. Usuwa się go jak najszybciej pęsetą.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
+    {
       id: 'las-laka',
       name: 'Las i łąka',
       chapter: 'rozdział VII „Życie na lądzie”',
