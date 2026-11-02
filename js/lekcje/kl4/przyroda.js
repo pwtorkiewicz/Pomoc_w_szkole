@@ -1571,3 +1571,353 @@ window.LESSONS['przyroda/las-laka'] = [
     check: { q: 'W lesie rosną razem sosny, dęby i brzozy. To las…', options: ['iglasty', 'liściasty', 'mieszany'], answer: 2, explain: 'Sosna jest drzewem iglastym, a dąb i brzoza – liściastymi. Razem tworzą las mieszany.' },
   },
 ];
+
+window.LESSONS['przyroda/teren'] = [
+  {
+    title: 'Szczyt, stok, podnóże – i dolina',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Przekrój terenu: dwa wzniesienia, między nimi dolina z rzeką. Opisano szczyt, stok i podnóże pierwszego wzniesienia.">
+      <defs><marker id="a-k4pr-ter-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <path d="M10,170 L50,168 Q90,160 120,100 Q140,60 160,60 Q180,62 200,110 Q215,150 240,158 Q260,162 280,150 Q300,130 330,90 Q350,70 370,90 Q395,130 410,168 L410,190 L10,190 Z" class="f3 s3"/>
+      <ellipse cx="248" cy="160" rx="16" ry="4" class="f1 s1"/>
+      <circle cx="160" cy="60" r="5" class="t2"/>
+      <text x="160" y="40" class="tx-b" text-anchor="middle">szczyt</text>
+      <text x="62" y="110" class="tx-b" text-anchor="middle">stok</text>
+      <line x1="82" y1="114" x2="112" y2="118" class="ln s2" marker-end="url(#a-k4pr-ter-1)"/>
+      <text x="44" y="150" class="tx" text-anchor="middle">podnóże</text>
+      <text x="248" y="134" class="tx-b" text-anchor="middle">dolina</text>
+      <text x="350" y="56" class="tx-s" text-anchor="middle">wzniesienie</text>
+    </svg>`,
+    text: `<p>Powierzchnia Ziemi ma różny kształt – to <b>ukształtowanie terenu</b>. Są formy <b>wypukłe</b> (pagórki, wzgórza, góry) i <b>wklęsłe</b> (obniżenia).</p>
+      <p>Każde wzniesienie ma <b>szczyt</b> (najwyższy punkt), <b>stoki</b> i <b>podnóże</b> – miejsce, gdzie stok przechodzi w płaski teren. <b>Dolina</b> to wydłużone obniżenie, którym zwykle płynie rzeka. <b>Kotlina</b> to obniżenie otoczone ze wszystkich stron wyższym terenem.</p>`,
+    remember: 'Wzniesienie: szczyt – stoki – podnóże. Obniżenia: dolina (wydłużona, z rzeką) i kotlina (otoczona wyższym terenem).',
+    hook: 'Góra jest jak człowiek: szczyt to czubek głowy, stoki – ramiona, a podnóże – stopy.',
+    check: { q: 'Jak nazywa się obniżenie terenu otoczone ze wszystkich stron wyższym terenem?', options: ['kotlina', 'szczyt', 'stok'], answer: 0, explain: 'Kotlina to obniżenie otoczone ze wszystkich stron wyższym terenem.' },
+  },
+  {
+    title: 'Wysokość „od morza” i „od czegoś”',
+    svg: `<svg viewBox="0 0 420 230" role="img" aria-label="Góra nad poziomem morza. Szczyt 1200 m n.p.m. – strzałka od poziomu morza. Schronisko 900 m n.p.m. Między schroniskiem a szczytem wysokość względna 300 m.">
+      <defs><marker id="a-k4pr-ter-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="196" width="400" height="24" class="f1"/>
+      <text x="320" y="214" class="tx-s">poziom morza</text>
+      <path d="M90,196 L200,40 L330,196 Z" class="f3 s3"/>
+      <circle cx="200" cy="40" r="5" class="t2"/>
+      <rect x="226" y="84" width="16" height="12" class="f2 s2"/>
+      <text x="200" y="28" class="tx-b" text-anchor="middle">1200 m n.p.m.</text>
+      <text x="250" y="114" class="tx-s">schronisko 900 m n.p.m.</text>
+      <line x1="50" y1="196" x2="50" y2="46" class="ln s2 sw" marker-end="url(#a-k4pr-ter-2)"/>
+      <text x="58" y="130" class="tx-s">bezwzględna</text>
+      <line x1="370" y1="90" x2="370" y2="44" class="ln s5 sw" marker-end="url(#a-k4pr-ter-2)"/>
+      <line x1="246" y1="90" x2="376" y2="90" class="ln-thin dash"/>
+      <line x1="205" y1="40" x2="376" y2="40" class="ln-thin dash"/>
+      <text x="330" y="70" class="tx-b t5" text-anchor="middle">300 m</text>
+    </svg>`,
+    text: `<p><b>Wysokość bezwzględna</b> to wysokość liczona od <b>poziomu morza</b>. Zapisujemy ją w <b>m n.p.m.</b> – metrach nad poziomem morza.</p>
+      <p><b>Wysokość względna</b> to wysokość liczona od <b>wybranego miejsca</b>, np. od schroniska albo od podnóża. Obliczasz ją odejmowaniem: szczyt 1200 m n.p.m., schronisko 900 m n.p.m. → 1200 − 900 = <b>300 m</b>.</p>`,
+    remember: 'Bezwzględna – od poziomu morza (m n.p.m.). Względna – od wybranego miejsca; to różnica dwóch wysokości bezwzględnych.',
+    hook: 'Bezwzględna – „bez względu” na to, gdzie stoisz, zawsze liczysz od morza. Względna – „względem” czegoś innego.',
+    check: { q: 'Szczyt ma 850 m n.p.m., a podnóże 500 m n.p.m. Ile wynosi wysokość względna szczytu nad podnóżem?', options: ['350 m', '1350 m', '850 m'], answer: 0, explain: '850 − 500 = 350 m.' },
+  },
+  {
+    title: 'Nizina, wyżyna, góry',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Przekrój: nizina do 300 m n.p.m., wyżyna powyżej 300 m n.p.m. z małymi różnicami wysokości, góry powyżej 300 m n.p.m. z dużymi różnicami wysokości i stromymi stokami.">
+      <rect x="10" y="190" width="400" height="20" class="f1"/>
+      <path d="M10,190 L10,160 Q50,154 90,160 Q120,164 140,156 L150,110 Q190,100 230,108 Q250,112 262,106 L280,96 L310,30 L335,90 L355,40 L385,110 L410,120 L410,190 Z" class="f3 s3"/>
+      <line x1="10" y1="130" x2="410" y2="130" class="ln-thin dash"/>
+      <text x="14" y="124" class="tx-s">300 m n.p.m.</text>
+      <text x="75" y="182" class="tx-b" text-anchor="middle">nizina</text>
+      <text x="205" y="150" class="tx-b" text-anchor="middle">wyżyna</text>
+      <text x="345" y="150" class="tx-b" text-anchor="middle">góry</text>
+      <text x="75" y="64" class="tx-s" text-anchor="middle">0–300 m n.p.m.</text>
+      <text x="205" y="64" class="tx-s" text-anchor="middle">wysoko, ale łagodnie</text>
+      <text x="205" y="82" class="tx-s" text-anchor="middle">(różnice do 300 m)</text>
+      <text x="345" y="20" class="tx-s" text-anchor="middle">strome stoki</text>
+    </svg>`,
+    text: `<p><b>Nizina</b> leży od 0 do 300 m n.p.m. i jest płaska albo lekko falista, np. wybrzeże Bałtyku, Nizina Mazowiecka.</p>
+      <p><b>Wyżyna</b> i <b>góry</b> leżą powyżej 300 m n.p.m. Różnica: na wyżynie różnice wysokości są <b>nie większe niż 300 m</b> (np. Wyżyna Lubelska, Wyżyna Krakowsko-Częstochowska), a w górach – <b>większe niż 300 m</b>, stoki są strome (np. Tatry, Sudety, Beskidy, Bieszczady).</p>`,
+    remember: 'Nizina: 0–300 m n.p.m. Wyżyna: ponad 300 m n.p.m., różnice do 300 m. Góry: ponad 300 m n.p.m., różnice ponad 300 m.',
+    hook: 'Liczba 300 rządzi wszystkim: nizina – poniżej 300, wyżyna – „wysoko, ale płasko”, góry – „wysoko i stromo”.',
+  },
+  {
+    title: 'Od Rysów do Żuław',
+    svg: `<svg viewBox="0 0 420 230" role="img" aria-label="Skala wysokości: Rysy w Tatrach 2499 m n.p.m. – góry wysokie; Sudety i Beskidy – góry średnie; Góry Świętokrzyskie – góry niskie; poziom morza 0 m; Żuławy Wiślane – depresja, ok. 1,8 m poniżej poziomu morza.">
+      <line x1="60" y1="20" x2="60" y2="210" class="ln sw"/>
+      <rect x="10" y="186" width="400" height="10" class="f1"/>
+      <rect x="64" y="196" width="120" height="14" class="f4 s4"/>
+      <path d="M70,186 L100,30 L130,186 Z" class="f2 s2"/>
+      <path d="M150,186 L180,110 L210,186 Z" class="f3 s3"/>
+      <path d="M230,186 L260,150 L290,186 Z" class="f3 s3"/>
+      <text x="112" y="34" class="tx-b">Rysy 2499 m n.p.m.</text>
+      <text x="140" y="60" class="tx-s">góry wysokie: Tatry</text>
+      <text x="230" y="110" class="tx-s">góry średnie:</text>
+      <text x="230" y="128" class="tx-s">Sudety, Beskidy</text>
+      <text x="296" y="160" class="tx-s">góry niskie:</text>
+      <text x="296" y="176" class="tx-s">Świętokrzyskie</text>
+      <text x="8" y="194" class="tx-s">0 m</text>
+      <text x="190" y="222" class="tx-s">depresja: Żuławy Wiślane</text>
+    </svg>`,
+    text: `<p>Góry dzielimy na <b>niskie</b> (np. Góry Świętokrzyskie – łagodne stoki, zaokrąglone szczyty), <b>średnie</b> (np. Sudety, Beskidy, Bieszczady) i <b>wysokie</b>. Jedyne góry wysokie w Polsce to <b>Tatry</b> – mają ostre szczyty i bardzo strome stoki. Tu jest najwyższy szczyt Polski – <b>Rysy (2499 m n.p.m.)</b>.</p>
+      <p>Najniżej leżą <b>Żuławy Wiślane</b> koło ujścia Wisły. Część z nich to <b>depresja</b> – ląd poniżej poziomu morza (najniższy punkt ok. 1,8 m p.p.m.).</p>`,
+    remember: 'Najwyżej: Rysy w Tatrach (2499 m n.p.m.). Najniżej: depresja na Żuławach Wiślanych.',
+    hook: 'Depresja to ląd, który „zszedł pod morze” – ale nie jest zalany, bo od morza oddziela go wyższy ląd.',
+    check: { q: 'Gdzie w Polsce są jedyne góry wysokie?', options: ['w Tatrach', 'w Sudetach', 'w Górach Świętokrzyskich'], answer: 0, explain: 'Tatry to jedyne góry wysokie w Polsce. Sudety to góry średnie, a Świętokrzyskie – niskie.' },
+  },
+  {
+    title: 'Poziomice i kolory na mapie',
+    svg: `<svg viewBox="0 0 420 230" role="img" aria-label="U góry przekrój wzgórza przecięty liniami co 100 m: lewy stok stromy, prawy łagodny. Pod spodem te same poziomice na mapie: po stronie stromej leżą gęsto, po stronie łagodnej rzadko. Obok kolory mapy: zielony nisko, żółty, pomarańczowy, brązowy wysoko.">
+      <path d="M20,110 L80,20 Q90,14 100,22 L250,110 Z" class="f3 s3"/>
+      <line x1="20" y1="80" x2="270" y2="80" class="ln-thin dash"/>
+      <line x1="20" y1="50" x2="270" y2="50" class="ln-thin dash"/>
+      <ellipse cx="135" cy="170" rx="115" ry="44" class="ln"/>
+      <ellipse cx="108" cy="170" rx="74" ry="30" class="ln"/>
+      <ellipse cx="88" cy="170" rx="34" ry="16" class="ln"/>
+      <text x="44" y="126" class="tx-s">stromo</text>
+      <text x="196" y="126" class="tx-s">łagodnie</text>
+      <rect x="300" y="30" width="30" height="34" class="f2 s2"/>
+      <rect x="300" y="64" width="30" height="34" class="f2"/>
+      <rect x="300" y="98" width="30" height="34" class="f4"/>
+      <rect x="300" y="132" width="30" height="34" class="f3"/>
+      <rect x="300" y="166" width="30" height="34" class="f1"/>
+      <text x="338" y="52" class="tx-s">najwyżej</text>
+      <text x="338" y="154" class="tx-s">niziny</text>
+      <text x="338" y="188" class="tx-s">wody</text>
+    </svg>`,
+    text: `<p><b>Poziomica</b> to linia na mapie, która łączy punkty o <b>tej samej wysokości</b> bezwzględnej. Wyobraź sobie, że kroisz górę poziomo co 100 m i patrzysz na plasterki z góry.</p>
+      <p>Gdy poziomice leżą <b>gęsto</b>, stok jest <b>stromy</b>. Gdy <b>rzadko</b> – stok jest <b>łagodny</b>.</p>
+      <p>Na <b>mapie hipsometrycznej</b> obszary między poziomicami mają kolory: zielony – nisko (niziny), żółty i pomarańczowy – wyżej, brązowy (albo czerwony) – najwyżej. Niebieski to wody. Dokładne wysokości odczytasz z <b>legendy</b>.</p>`,
+    remember: 'Poziomice gęsto – stromo; rzadko – łagodnie. Kolory mapy zawsze sprawdzaj w legendzie.',
+    hook: 'Schody: krótkie stopnie blisko siebie – wspinasz się stromo. Poziomice to takie „stopnie” na mapie.',
+    check: { q: 'Poziomice leżą bardzo blisko siebie. Jaki jest tam stok?', options: ['stromy', 'łagodny', 'płaski'], answer: 0, explain: 'Gęste poziomice oznaczają, że na krótkim odcinku teren bardzo się wznosi – stok jest stromy.' },
+  },
+];
+
+window.LESSONS['przyroda/rzeka-jezioro'] = [
+  {
+    title: 'Woda płynie albo stoi',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Dwa kafelki. Wody płynące: strumień, potok, rzeka, kanał – woda płynie z wyżej położonych miejsc w niższe. Wody stojące: jezioro, staw, zbiornik zaporowy – woda wypełnia zagłębienie terenu.">
+      <defs><marker id="a-k4pr-rz-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="8" y="8" width="198" height="184" rx="14" class="f1 s1"/>
+      <rect x="214" y="8" width="198" height="184" rx="14" class="f3 s3"/>
+      <text x="107" y="36" class="tx-b" text-anchor="middle">wody płynące</text>
+      <text x="313" y="36" class="tx-b" text-anchor="middle">wody stojące</text>
+      <path d="M30,70 C70,60 90,100 130,90 C160,84 170,100 186,104" class="ln s1 sw" marker-end="url(#a-k4pr-rz-1)"/>
+      <ellipse cx="313" cy="88" rx="70" ry="22" class="bg s1 sw"/>
+      <g class="tx" text-anchor="middle">
+        <text x="107" y="142">strumień, potok,</text><text x="107" y="164">rzeka, kanał</text>
+        <text x="313" y="142">jezioro, staw,</text><text x="313" y="164">zbiornik zaporowy</text>
+      </g>
+    </svg>`,
+    text: `<p><b>Wody płynące</b> płyną w jednym kierunku – z miejsc położonych wyżej w niższe. To strumienie, potoki, rzeki i kanały (kanał to koryto wykopane przez ludzi).</p>
+      <p><b>Wody stojące</b> wypełniają zagłębienie terenu i nie płyną z miejsca na miejsce. To jeziora, stawy i zbiorniki zaporowe.</p>`,
+    remember: 'Płynące: strumień, potok, rzeka, kanał. Stojące: jezioro, staw, zbiornik zaporowy.',
+    hook: 'Rzeka to droga – woda nią podróżuje. Jezioro to miska – woda w niej mieszka.',
+    check: { q: 'Która woda jest wodą stojącą?', options: ['jezioro', 'potok', 'kanał'], answer: 0, explain: 'Jezioro wypełnia zagłębienie terenu – to woda stojąca. Potok i kanał to wody płynące.' },
+  },
+  {
+    title: 'Rzeka jak drzewo',
+    svg: `<svg viewBox="0 0 420 230" role="img" aria-label="System rzeczny: w górach źródło rzeki głównej, do niej wpadają dopływy, rzeka główna uchodzi do morza. Całość wygląda jak drzewo.">
+      <rect x="10" y="190" width="400" height="30" class="f1"/>
+      <text x="340" y="212" class="tx-s">morze</text>
+      <path d="M210,40 C200,80 230,110 205,150 C195,170 205,180 210,190" class="ln s1 sw"/>
+      <path d="M90,60 C120,100 160,110 214,120" class="ln s1"/>
+      <path d="M330,50 C300,90 260,110 210,150" class="ln s1"/>
+      <path d="M60,130 C110,150 160,160 204,165" class="ln s1"/>
+      <circle cx="210" cy="40" r="5" class="t2"/>
+      <text x="210" y="26" class="tx-b" text-anchor="middle">źródło</text>
+      <text x="300" y="184" class="tx-b" text-anchor="middle">ujście</text>
+      <line x1="270" y1="182" x2="216" y2="188" class="ln-thin"/>
+      <text x="80" y="50" class="tx-s" text-anchor="middle">dopływ</text>
+      <text x="350" y="40" class="tx-s" text-anchor="middle">dopływ</text>
+      <text x="44" y="122" class="tx-s">dopływ</text>
+      <text x="216" y="66" class="tx-s">rzeka główna</text>
+    </svg>`,
+    text: `<p>Rzeka zaczyna się w <b>źródle</b> (najczęściej w górach albo na wyżynie), a kończy w <b>ujściu</b> – tam wpada do innej rzeki, jeziora albo morza. Wisła zaczyna się na stoku <b>Baraniej Góry</b> w Beskidzie Śląskim i uchodzi do <b>Zatoki Gdańskiej</b>.</p>
+      <p><b>Dopływ</b> to rzeka, która wpada do większej rzeki. <b>Rzeka główna</b> wpada prosto do morza i nie jest niczyim dopływem (np. Wisła, Odra). Rzeka główna ze wszystkimi dopływami to <b>system rzeczny</b>, a cały obszar, z którego woda do nich spływa – <b>dorzecze</b>.</p>`,
+    remember: 'Źródło – początek, ujście – koniec. Rzeka główna + dopływy = system rzeczny.',
+    hook: 'System rzeczny to drzewo do góry nogami: rzeka główna to pień, dopływy to gałęzie, a ujście – korzeń w morzu.',
+  },
+  {
+    title: 'Lewy czy prawy brzeg?',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Rzeka płynie z lewej strony rysunku do prawej. Ludzik stoi twarzą w kierunku płynięcia wody. Górny brzeg rysunku to jego lewa strona – lewy brzeg, dolny – prawy brzeg.">
+      <defs><marker id="a-k4pr-rz-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="80" width="400" height="44" class="f1"/>
+      <line x1="10" y1="80" x2="410" y2="80" class="ln s3 sw"/>
+      <line x1="10" y1="124" x2="410" y2="124" class="ln s3 sw"/>
+      <line x1="230" y1="102" x2="330" y2="102" class="ln s2 sw" marker-end="url(#a-k4pr-rz-2)"/>
+      <text x="80" y="108" class="tx-s" text-anchor="middle">od źródła</text>
+      <text x="370" y="108" class="tx-s" text-anchor="middle">do ujścia</text>
+      <text x="170" y="112" class="tx-b" text-anchor="middle">🧍</text>
+      <text x="210" y="40" class="tx-b t3" text-anchor="middle">lewy brzeg</text>
+      <text x="210" y="60" class="tx-s" text-anchor="middle">(po lewej ręce)</text>
+      <text x="210" y="158" class="tx-b t3" text-anchor="middle">prawy brzeg</text>
+      <text x="210" y="178" class="tx-s" text-anchor="middle">(po prawej ręce)</text>
+    </svg>`,
+    text: `<p>Stań <b>tyłem do źródła</b>, a <b>twarzą do ujścia</b> – patrz tam, dokąd płynie woda. Po lewej ręce masz <b>lewy brzeg</b>, a po prawej – <b>prawy brzeg</b>. Tak samo rozpoznajesz dopływy: lewe wpadają z lewej strony, prawe – z prawej.</p>
+      <p>Prawe dopływy Wisły to np. Dunajec, San i Narew, a lewe – Pilica i Bzura. Do Odry z prawej strony wpada Warta, a z lewej – np. Nysa Łużycka i Bóbr.</p>`,
+    remember: 'Lewy i prawy brzeg określasz, patrząc z biegiem rzeki – twarzą do ujścia.',
+    hook: 'Płyń razem z rzeką jak kajakarz: co masz po lewej ręce – to lewy brzeg.',
+    check: { q: 'Rzeka płynie na rysunku z prawej strony do lewej. Stajesz twarzą do ujścia. Który brzeg jest wtedy u góry rysunku?', options: ['prawy', 'lewy'], answer: 0, explain: 'Gdy patrzysz w lewo (tam płynie woda), twoja prawa ręka wskazuje górę rysunku. U góry jest więc prawy brzeg.' },
+  },
+  {
+    title: 'Bieg górny, środkowy i dolny',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Trzy kafelki. Bieg górny: szybki nurt, wąska i stroma dolina, wodospady. Bieg środkowy: wolniej, zakola i starorzecze. Bieg dolny: najwolniej, rzeka osadza piasek.">
+      <rect x="8" y="8" width="128" height="204" rx="12" class="f2 s2"/>
+      <rect x="146" y="8" width="128" height="204" rx="12" class="f4 s4"/>
+      <rect x="284" y="8" width="128" height="204" rx="12" class="f3 s3"/>
+      <g class="tx-b" text-anchor="middle"><text x="72" y="34">górny</text><text x="210" y="34">środkowy</text><text x="348" y="34">dolny</text></g>
+      <path d="M30,60 L60,120 L84,120 L114,60" class="ln"/>
+      <line x1="72" y1="62" x2="72" y2="118" class="ln s1 sw"/>
+      <path d="M160,70 C200,50 220,110 190,110 C160,110 200,150 250,130" class="ln s1 sw"/>
+      <ellipse cx="236" cy="78" rx="18" ry="10" class="f1 s1"/>
+      <path d="M300,96 C330,90 360,100 400,94" class="ln s1 sw"/>
+      <ellipse cx="350" cy="112" rx="30" ry="6" class="f4 s4"/>
+      <g class="tx-s" text-anchor="middle">
+        <text x="72" y="150">szybko</text><text x="72" y="168">wąska, stroma</text><text x="72" y="186">dolina</text><text x="72" y="204">wodospady</text>
+        <text x="210" y="150">wolniej</text><text x="210" y="168">zakola</text><text x="210" y="186">starorzecza</text>
+        <text x="348" y="150">najwolniej</text><text x="348" y="168">osadza piasek</text><text x="348" y="186">i muł</text>
+      </g>
+    </svg>`,
+    text: `<p>W <b>biegu górnym</b> (zwykle w górach) woda płynie szybko, żłobi wąską, stromą dolinę, tworzy wodospady. W <b>biegu środkowym</b> płynie wolniej, podmywa brzegi i poszerza dolinę – powstają <b>zakola</b> (łuki koryta). Gdy zakole zostanie odcięte od rzeki, powstaje <b>starorzecze</b> – jezioro w dolinie. W <b>biegu dolnym</b> woda płynie najwolniej i osadza piasek i muł.</p>
+      <p>Gdy w korycie jest za dużo wody, rzeka wylewa – to <b>powódź</b>. Płaskie dno doliny łatwo zalać, więc nie powinno się tam budować domów.</p>`,
+    remember: 'Górny – szybko i stromo; środkowy – zakola i starorzecza; dolny – najwolniej, osadzanie piasku.',
+    hook: 'Rzeka jak biegacz: na starcie (w górach) pędzi, w połowie trasy kluczy zakolami, a przed metą (ujściem) ledwo idzie i gubi niesiony piasek.',
+  },
+  {
+    title: 'Jeziora – skąd się wzięły?',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Trzy kafelki. Jezioro polodowcowe – w zagłębieniu po lądolodzie, najwięcej na pojezierzach; Śniardwy największe, Hańcza najgłębsze. Zbiornik zaporowy – za zaporą na rzece, np. Jezioro Solińskie. Staw – zwykle mały, płytki, zrobiony przez człowieka.">
+      <rect x="8" y="8" width="128" height="194" rx="12" class="f1 s1"/>
+      <rect x="146" y="8" width="128" height="194" rx="12" class="f5 s5"/>
+      <rect x="284" y="8" width="128" height="194" rx="12" class="f3 s3"/>
+      <g class="tx-b" text-anchor="middle"><text x="72" y="36">🧊</text><text x="210" y="36">🧱</text><text x="348" y="36">🐟</text></g>
+      <g class="tx" text-anchor="middle"><text x="72" y="66">polodowcowe</text><text x="210" y="66">zaporowe</text><text x="348" y="66">staw</text></g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="72" y="96">po lądolodzie,</text><text x="72" y="114">na pojezierzach</text><text x="72" y="140">Śniardwy –</text><text x="72" y="156">największe</text><text x="72" y="176">Hańcza –</text><text x="72" y="192">najgłębsze</text>
+        <text x="210" y="96">za zaporą</text><text x="210" y="114">na rzece</text><text x="210" y="148">np. Jezioro</text><text x="210" y="166">Solińskie (San)</text>
+        <text x="348" y="96">mały, płytki,</text><text x="348" y="114">zwykle zrobiony</text><text x="348" y="132">przez człowieka</text>
+      </g>
+    </svg>`,
+    text: `<p><b>Jezioro</b> to naturalne zagłębienie terenu wypełnione wodą stojącą. Większość jezior w Polsce to <b>jeziora polodowcowe</b>: dawno temu północ Polski przykrywał lądolód, a w zagłębieniach, które po nim zostały, zebrała się woda. Najwięcej jezior jest na <b>pojezierzach</b> na północy kraju. Największe jest <b>Śniardwy</b>, najgłębsze – <b>Hańcza</b>.</p>
+      <p><b>Zbiornik zaporowy</b> powstaje, gdy ludzie zbudują na rzece zaporę, np. Jezioro Solińskie na Sanie. <b>Staw</b> to zwykle mały, płytki zbiornik zrobiony przez człowieka, np. do hodowli ryb.</p>
+      <p>W wodzie im głębiej, tym ciemniej, a temperatura zmienia się wolniej niż w powietrzu. Ryby oddychają skrzelami tlenem rozpuszczonym w wodzie. Rzeki i jeziora dają ludziom wodę, ryby, prąd, drogi transportu i miejsca do wypoczynku.</p>`,
+    remember: 'Większość polskich jezior – polodowcowe (pojezierza). Największe: Śniardwy. Najgłębsze: Hańcza.',
+    hook: 'Hańcza – „H” jak „hen, w głąb” (najgłębsza). Śniardwy – woda „aż po horyzont” (największe).',
+    check: { q: 'Które jezioro jest najgłębsze w Polsce?', options: ['Hańcza', 'Śniardwy', 'Jezioro Solińskie'], answer: 0, explain: 'Najgłębsze jest Hańcza, a największe – Śniardwy.' },
+  },
+];
+
+window.LESSONS['przyroda/metale'] = [
+  {
+    title: 'Metal czy niemetal?',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Dwa kafelki. Metale: żelazo, miedź, glin – połysk, przewodzą prąd i ciepło, kowalne, prawie wszystkie stałe, rtęć to ciecz. Niemetale: tlen, azot, siarka, węgiel – bez połysku, nie przewodzą, stałe są kruche.">
+      <rect x="8" y="8" width="198" height="204" rx="14" class="f1 s1"/>
+      <rect x="214" y="8" width="198" height="204" rx="14" class="f4 s4"/>
+      <text x="107" y="36" class="tx-b" text-anchor="middle">metale</text>
+      <text x="313" y="36" class="tx-b" text-anchor="middle">niemetale</text>
+      <text x="107" y="60" class="tx-s" text-anchor="middle">żelazo, miedź, glin, złoto</text>
+      <text x="313" y="60" class="tx-s" text-anchor="middle">tlen, azot, siarka, węgiel</text>
+      <g class="tx" text-anchor="middle">
+        <text x="107" y="94">✨ połysk</text><text x="107" y="120">⚡ prąd – tak</text><text x="107" y="146">🔥 ciepło – tak</text><text x="107" y="172">🔨 kowalne</text>
+        <text x="313" y="94">bez połysku</text><text x="313" y="120">⚡ prąd – nie</text><text x="313" y="146">🔥 ciepło – nie</text><text x="313" y="172">kruche (stałe)</text>
+      </g>
+      <text x="107" y="200" class="tx-s" text-anchor="middle">rtęć – metal ciekły</text>
+      <text x="313" y="200" class="tx-s" text-anchor="middle">tlen, azot – gazy</text>
+    </svg>`,
+    text: `<p><b>Metale</b> (np. żelazo, miedź, glin, cynk, srebro, złoto) mają <b>metaliczny połysk</b>, dobrze <b>przewodzą prąd i ciepło</b> i są <b>kowalne</b> – można je kuć i wyginać. Prawie wszystkie są stałe – tylko <b>rtęć</b> jest cieczą.</p>
+      <p><b>Niemetale</b> (np. tlen, azot, siarka, węgiel) zwykle nie mają połysku i nie przewodzą prądu ani ciepła. Tlen i azot to gazy, a stałe niemetale, np. żółta siarka, są kruche. Wyjątek: grafit (węgiel w ołówku) przewodzi prąd.</p>`,
+    remember: 'Metale: połysk, przewodzą prąd i ciepło, kowalne. Niemetale: zwykle bez połysku, nie przewodzą, kruche.',
+    hook: 'Kabel w ścianie jest z miedzi, a garnek z metalu – bo metal „przepuszcza” prąd i ciepło.',
+    check: { q: 'Który metal jest cieczą w temperaturze pokojowej?', options: ['rtęć', 'żelazo', 'miedź'], answer: 0, explain: 'Prawie wszystkie metale są stałe. Wyjątkiem jest rtęć.' },
+  },
+  {
+    title: 'Stopy – metalowe mieszanki',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Przepisy na stopy: żelazo plus węgiel daje stal; miedź plus cyna daje brąz; miedź plus cynk daje mosiądz.">
+      <g class="tx" text-anchor="middle">
+        <rect x="8" y="16" width="110" height="46" rx="10" class="f1 s1"/><text x="63" y="45">żelazo</text>
+        <text x="136" y="45" class="tx-b">+</text>
+        <rect x="154" y="16" width="110" height="46" rx="10" class="f5 s5"/><text x="209" y="45">węgiel</text>
+        <text x="282" y="45" class="tx-b">=</text>
+        <rect x="300" y="16" width="112" height="46" rx="10" class="f3 s3"/><text x="356" y="45" class="tx-b">stal</text>
+        <rect x="8" y="86" width="110" height="46" rx="10" class="f2 s2"/><text x="63" y="115">miedź</text>
+        <text x="136" y="115" class="tx-b">+</text>
+        <rect x="154" y="86" width="110" height="46" rx="10" class="f1 s1"/><text x="209" y="115">cyna</text>
+        <text x="282" y="115" class="tx-b">=</text>
+        <rect x="300" y="86" width="112" height="46" rx="10" class="f3 s3"/><text x="356" y="115" class="tx-b">brąz</text>
+        <rect x="8" y="156" width="110" height="46" rx="10" class="f2 s2"/><text x="63" y="185">miedź</text>
+        <text x="136" y="185" class="tx-b">+</text>
+        <rect x="154" y="156" width="110" height="46" rx="10" class="f1 s1"/><text x="209" y="185">cynk</text>
+        <text x="282" y="185" class="tx-b">=</text>
+        <rect x="300" y="156" width="112" height="46" rx="10" class="f3 s3"/><text x="356" y="185" class="tx-b">mosiądz</text>
+      </g>
+    </svg>`,
+    text: `<p><b>Stop</b> powstaje, gdy metal stopi się razem z innym metalem albo z niemetalem (np. węglem), a potem całość zastygnie. Stop jest często <b>twardszy</b> i <b>odporniejszy</b> niż czysty metal.</p>
+      <ul><li><b>stal</b> (żelazo + węgiel) – mosty, szyny, narzędzia; <b>stal nierdzewna</b> (z dodatkiem chromu i niklu) – sztućce, zlewy,</li>
+      <li><b>brąz</b> (miedź + cyna) – pomniki, dzwony, medale,</li>
+      <li><b>mosiądz</b> (miedź + cynk) – klamki, krany, trąbki.</li></ul>`,
+    remember: 'Stal = żelazo + węgiel. Brąz = miedź + cyna. Mosiądz = miedź + cynk.',
+    hook: 'Ułóż alfabetycznie: Brąz przed Mosiądzem i cyNA przed cyNK. Więc Brąz – cyna, Mosiądz – cynk (oba z miedzią).',
+  },
+  {
+    title: 'Rdza: woda + tlen',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Trzy słoiki z gwoździami po tygodniu. Sucho – gwóźdź prawie bez zmian. Woda z kranu – gwóźdź zardzewiały. Woda z solą – gwóźdź najbardziej zardzewiały.">
+      <rect x="20" y="30" width="100" height="120" rx="10" class="bg ln"/>
+      <rect x="160" y="30" width="100" height="120" rx="10" class="bg ln"/>
+      <rect x="300" y="30" width="100" height="120" rx="10" class="bg ln"/>
+      <rect x="162" y="80" width="96" height="68" rx="8" class="f1"/>
+      <rect x="302" y="80" width="96" height="68" rx="8" class="f1"/>
+      <line x1="70" y1="60" x2="70" y2="140" class="ln sw"/>
+      <line x1="210" y1="60" x2="210" y2="140" class="ln s2 sw"/>
+      <line x1="350" y1="60" x2="350" y2="140" class="ln s2 sw"/>
+      <g class="t2"><circle cx="206" cy="100" r="4"/><circle cx="214" cy="120" r="4"/><circle cx="346" cy="90" r="5"/><circle cx="354" cy="104" r="5"/><circle cx="346" cy="120" r="5"/><circle cx="354" cy="134" r="5"/></g>
+      <g class="tx-s" text-anchor="middle"><text x="70" y="172">sucho</text><text x="210" y="172">woda z kranu</text><text x="350" y="172">woda z solą</text></g>
+      <g class="tx-b" text-anchor="middle"><text x="70" y="198">bez zmian</text><text x="210" y="198">rdza</text><text x="350" y="198">dużo rdzy</text></g>
+    </svg>`,
+    text: `<p><b>Korozja</b> to niszczenie metali pod wpływem otoczenia. Korozja żelaza i stali to <b>rdzewienie</b>. Żelazo rdzewieje, gdy ma dostęp do <b>wody</b> (wilgoci) i <b>tlenu</b> z powietrza.</p>
+      <p><b>Sól</b> przyspiesza rdzewienie. Dlatego zimą, na drogach posypanych solą, samochody szybciej rdzewieją.</p>`,
+    remember: 'Rdzewienie = żelazo + woda + tlen. Sól je przyspiesza.',
+    hook: 'Rdza lubi mokro i słono – jak spacer po plaży nad morzem.',
+    check: { q: 'W którym słoiku gwóźdź zardzewieje najszybciej?', options: ['w wodzie z solą', 'w wodzie z kranu', 'w suchym słoiku'], answer: 0, explain: 'Do rdzewienia potrzebne są woda i tlen, a sól przyspiesza ten proces.' },
+  },
+  {
+    title: 'Jak uratować metal przed rdzą?',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Cztery kafelki: malowanie farbą – płot, smarowanie olejem – łańcuch roweru, pokrywanie cynkiem – rynna, stal nierdzewna – sztućce.">
+      <rect x="8" y="8" width="96" height="184" rx="12" class="f2 s2"/>
+      <rect x="112" y="8" width="96" height="184" rx="12" class="f4 s4"/>
+      <rect x="216" y="8" width="96" height="184" rx="12" class="f1 s1"/>
+      <rect x="320" y="8" width="92" height="184" rx="12" class="f3 s3"/>
+      <g class="tx-b" text-anchor="middle"><text x="56" y="50">🖌️</text><text x="160" y="50">🛢️</text><text x="264" y="50">🛡️</text><text x="366" y="50">🍴</text></g>
+      <g class="tx" text-anchor="middle"><text x="56" y="96">farba</text><text x="160" y="96">olej</text><text x="264" y="96">cynk</text><text x="366" y="96">stal</text><text x="366" y="116" class="tx-s">nierdzewna</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="56" y="150">płot, most</text><text x="160" y="150">łańcuch</text><text x="160" y="168">roweru</text><text x="264" y="150">rynna,</text><text x="264" y="168">siatka</text><text x="366" y="150">sztućce,</text><text x="366" y="168">zlew</text></g>
+    </svg>`,
+    text: `<p>Żeby metal nie rdzewiał, trzeba odciąć go od wody i powietrza albo użyć stopu, który nie rdzewieje:</p>
+      <ul><li><b>malowanie</b> farbą (płoty, mosty),</li>
+      <li><b>smarowanie</b> olejem lub smarem (łańcuch roweru),</li>
+      <li><b>pokrywanie innym metalem</b>, np. cynkiem – <b>cynkowanie</b> (rynny, siatki) – albo chromem,</li>
+      <li>używanie <b>stali nierdzewnej</b> (sztućce, zlewy).</li></ul>
+      <p>Najprościej: trzymaj metalowe rzeczy w suchym miejscu i wycieraj je do sucha.</p>`,
+    remember: 'Ochrona przed rdzą: farba, olej, warstwa cynku lub chromu, stal nierdzewna, suche miejsce.',
+    hook: 'Metal trzeba „ubrać w płaszcz przeciwdeszczowy” – z farby, oleju albo cynku.',
+  },
+  {
+    title: 'Ciepło płynie od cieplejszego',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Kubek gorącej herbaty z dwiema łyżkami: metalowa – nagrzewa się, drewniana – zostaje chłodna. Strzałka: ciepło płynie od cieplejszego do chłodniejszego. Obok: izolatory ciepła – drewno, plastik, styropian, wełna, futro, śnieg.">
+      <defs><marker id="a-k4pr-met-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <path d="M40,90 L50,190 L150,190 L160,90 Z" class="f2 s2"/>
+      <line x1="70" y1="40" x2="88" y2="150" class="ln sw"/>
+      <line x1="140" y1="40" x2="118" y2="150" class="ln s4 sw"/>
+      <text x="56" y="34" class="tx-s" text-anchor="middle">metal 🔥</text>
+      <text x="150" y="30" class="tx-s" text-anchor="middle">drewno ❄️</text>
+      <text x="100" y="212" class="tx-s" text-anchor="middle">gorąca herbata</text>
+      <line x1="176" y1="60" x2="236" y2="60" class="ln s2 sw" marker-end="url(#a-k4pr-met-1)"/>
+      <text x="206" y="44" class="tx-s" text-anchor="middle">ciepło</text>
+      <rect x="250" y="20" width="162" height="190" rx="12" class="f1 s1"/>
+      <text x="331" y="46" class="tx-b" text-anchor="middle">izolatory</text>
+      <g class="tx" text-anchor="middle"><text x="331" y="78">drewno, plastik</text><text x="331" y="104">styropian, wełna</text><text x="331" y="130">futro, pióra</text><text x="331" y="156">śnieg</text></g>
+      <text x="331" y="190" class="tx-s" text-anchor="middle">słabo przewodzą ciepło</text>
+    </svg>`,
+    text: `<p>Ciepło zawsze płynie od ciała <b>cieplejszego</b> do <b>chłodniejszego</b>, aż temperatury się wyrównają. Dlatego herbata stygnie, a łyżeczka w niej się nagrzewa.</p>
+      <p><b>Metale</b> dobrze przewodzą ciepło – metalowa łyżka szybko robi się gorąca. Drewno, plastik, styropian, wełna i powietrze to <b>izolatory</b> – przewodzą ciepło słabo. Dlatego uchwyty garnków są z plastiku albo drewna, a domy ociepla się styropianem.</p>
+      <p>W przyrodzie przed zimnem chronią <b>futro</b>, <b>pióra i puch</b>, <b>tłuszcz</b> (np. u fok) i <b>pokrywa śnieżna</b>, która jak kołdra chroni glebę i rośliny przed mrozem.</p>`,
+    remember: 'Ciepło płynie od cieplejszego do chłodniejszego. Metale – przewodniki ciepła; drewno, plastik, styropian, wełna, powietrze – izolatory.',
+    hook: 'Ciepło zachowuje się jak woda: spływa „z góry” (z gorącego) „na dół” (do zimnego), aż się wyrówna.',
+    check: { q: 'Która łyżka w gorącej zupie szybciej się nagrzeje?', options: ['metalowa', 'drewniana', 'plastikowa'], answer: 0, explain: 'Metal dobrze przewodzi ciepło. Drewno i plastik to izolatory.' },
+  },
+];

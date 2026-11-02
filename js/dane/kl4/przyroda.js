@@ -1157,5 +1157,339 @@ window.SUBJECTS.push({
         { id: '7ioi8h', q: 'Który przykład to funkcja społeczna lasu?', options: ['spacer i wypoczynek w lesie', 'pozyskiwanie drewna', 'zatrzymywanie wody w mchach', 'pochłanianie dwutlenku węgla'], answer: 0, explain: 'Funkcje społeczne to wypoczynek, zdrowie i praca. Drewno to funkcja gospodarcza, a zatrzymywanie wody i pochłanianie dwutlenku węgla – ochronna.' },
       ],
     },
+    {
+      id: 'teren',
+      name: 'Niziny, wyżyny i góry',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 5 „Planeta Ziemia”, wym. 17 (główne formy ukształtowania terenu, przykłady nizin, wyżyn i gór w Polsce), wym. 18 (wysokość bezwzględna i względna na mapie; skala – w dziale „Kierunki, kompas, plan i mapa”). Progi wysokości nizin, wyżyn i gór, podział gór na niskie, średnie i wysokie, depresja (Żuławy Wiślane, ok. 1,8 m p.p.m. koło Raczek Elbląskich), Rysy 2499 m n.p.m., poziomice i mapa hipsometryczna – według ZPE („Jaki kształt może mieć powierzchnia Ziemi?”, zpe.gov.pl), sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Formy terenu</h3>
+        <p>Powierzchnia Ziemi nie jest płaska jak stół. Jej kształt to <b>ukształtowanie terenu</b> (inaczej rzeźba terenu).</p>
+        <table>
+          <tr><th>Formy wypukłe (wznoszą się)</th><th>Formy wklęsłe (obniżenia)</th></tr>
+          <tr><td>pagórek, wzgórze, góra</td><td><b>dolina</b> – wydłużone obniżenie, zwykle płynie nim rzeka<br><b>kotlina</b> – obniżenie otoczone ze wszystkich stron wyższym terenem</td></tr>
+        </table>
+        <p>Każde wzniesienie ma <b>szczyt</b> (najwyższy punkt), <b>stoki</b> (zbocza) i <b>podnóże</b> (miejsce, gdzie stok przechodzi w płaski teren).</p>
+        <h3>Wysokość bezwzględna i względna</h3>
+        <ul>
+          <li><b>Wysokość bezwzględna</b> – liczona od <b>poziomu morza</b>. Zapisujemy ją w <b>m n.p.m.</b> (metrach nad poziomem morza), np. Rysy – 2499 m n.p.m.</li>
+          <li><b>Wysokość względna</b> – liczona od <b>wybranego miejsca</b>, np. od podnóża do szczytu. Obliczasz ją, odejmując wysokości bezwzględne.</li>
+        </ul>
+        <p>Przykład: szczyt ma 1200 m n.p.m., a schronisko pod nim – 900 m n.p.m. Szczyt jest wyżej od schroniska o 1200 − 900 = <b>300 m</b>. To wysokość względna.</p>
+        <div class="tip">💡 Wysokość bezwzględna – „od morza”, ma dopisek n.p.m. Wysokość względna – „od czegoś innego”, liczysz ją odejmowaniem.</div>
+        <h3>Niziny, wyżyny, góry</h3>
+        <table>
+          <tr><th>Forma</th><th>Wysokość bezwzględna</th><th>Różnice wysokości</th><th>Przykłady w Polsce</th></tr>
+          <tr><td><b>nizina</b></td><td>od 0 do 300 m n.p.m.</td><td>małe – teren płaski albo lekko falisty</td><td>wybrzeże Bałtyku, Nizina Mazowiecka</td></tr>
+          <tr><td><b>wyżyna</b></td><td>powyżej 300 m n.p.m.</td><td>nie większe niż 300 m</td><td>Wyżyna Krakowsko-Częstochowska, Wyżyna Lubelska</td></tr>
+          <tr><td><b>góry</b></td><td>powyżej 300 m n.p.m.</td><td>większe niż 300 m</td><td>Tatry, Sudety, Beskidy, Bieszczady</td></tr>
+        </table>
+        <p>Wyżyna i góry są tak samo wysoko nad morzem. Różnią się tym, że w górach różnice między szczytami a dolinami są <b>duże</b>, a stoki <b>strome</b>.</p>
+        <ul>
+          <li><b>Góry niskie</b>, np. Góry Świętokrzyskie – łagodne stoki, zaokrąglone szczyty.</li>
+          <li><b>Góry średnie</b>, np. Sudety, Beskidy, Bieszczady – strome stoki, łagodne szczyty.</li>
+          <li><b>Góry wysokie</b> – w Polsce tylko <b>Tatry</b>: ostre szczyty, bardzo strome stoki. Tu jest najwyższy szczyt Polski – <b>Rysy (2499 m n.p.m.)</b>.</li>
+        </ul>
+        <p><b>Depresja</b> to ląd położony <b>poniżej poziomu morza</b>. W Polsce jest na <b>Żuławach Wiślanych</b>, niedaleko ujścia Wisły. Najniższy punkt Polski leży ok. 1,8 m p.p.m. (pod poziomem morza).</p>
+        <h3>Wysokości na mapie</h3>
+        <ul>
+          <li><b>Poziomica</b> – linia na mapie, która łączy punkty o <b>tej samej wysokości bezwzględnej</b>.</li>
+          <li>Poziomice <b>gęsto</b> obok siebie – stok <b>stromy</b>. Poziomice <b>rzadko</b> – stok <b>łagodny</b>.</li>
+          <li><b>Mapa hipsometryczna</b> (barwna mapa wysokości) – obszary między poziomicami są pomalowane kolorami: zielony – najniżej (niziny), żółty i pomarańczowy – wyżej, brązowy albo czerwony – najwyżej (góry). Niebieski to wody.</li>
+          <li><b>Punkt wysokościowy</b> – kropka albo trójkąt z liczbą, np. ▲ 1603 – wysokość tego miejsca w m n.p.m.</li>
+        </ul>
+        <div class="tip">💡 Zawsze patrz na <b>legendę</b> – podaje, jaką wysokość oznacza każdy kolor.</div>
+      `,
+      flashcards: [
+        ['Ukształtowanie terenu', 'Kształt powierzchni Ziemi: wzniesienia, obniżenia i równiny (inaczej rzeźba terenu)'],
+        ['Części wzniesienia', 'szczyt, stoki (zbocza), podnóże'],
+        ['Dolina', 'Wydłużone obniżenie terenu, zwykle płynie nim rzeka'],
+        ['Kotlina', 'Obniżenie otoczone ze wszystkich stron wyższym terenem'],
+        ['Wysokość bezwzględna', 'Wysokość liczona od poziomu morza, w m n.p.m.'],
+        ['Wysokość względna', 'Wysokość liczona od wybranego miejsca, np. od podnóża do szczytu; obliczasz ją odejmowaniem'],
+        ['Nizina', 'Teren od 0 do 300 m n.p.m., płaski lub lekko falisty, np. Nizina Mazowiecka'],
+        ['Wyżyna', 'Teren powyżej 300 m n.p.m., różnice wysokości nie większe niż 300 m, np. Wyżyna Lubelska'],
+        ['Góry', 'Teren powyżej 300 m n.p.m., różnice wysokości większe niż 300 m, strome stoki'],
+        ['Jedyne góry wysokie w Polsce', 'Tatry; najwyższy szczyt Polski – Rysy (2499 m n.p.m.)'],
+        ['Depresja', 'Ląd położony poniżej poziomu morza; w Polsce – Żuławy Wiślane'],
+        ['Poziomica', 'Linia na mapie łącząca punkty o tej samej wysokości bezwzględnej'],
+        ['Poziomice gęsto / rzadko', 'gęsto – stok stromy; rzadko – stok łagodny'],
+      ],
+      questions: [
+        { id: 'wrlhkk', q: 'Wysokość bezwzględna to wysokość liczona…', options: ['od poziomu morza', 'od podnóża góry', 'od najbliższego miasta', 'od dna doliny'], answer: 0, explain: 'Wysokość bezwzględną liczymy od poziomu morza i zapisujemy w m n.p.m.' },
+        { id: '2rvig1', q: 'Co oznacza skrót „m n.p.m.”?', options: ['metry nad poziomem morza', 'metry na planie mapy', 'metry na północ od morza', 'metry nad powierzchnią mapy'], answer: 0, explain: 'm n.p.m. – metry nad poziomem morza. Tak zapisujemy wysokość bezwzględną.' },
+        { id: 'yfuncw', q: 'Szczyt ma 1200 m n.p.m., a schronisko pod nim – 900 m n.p.m. O ile metrów szczyt jest wyżej niż schronisko?', options: ['300 m', '2100 m', '1200 m', '900 m'], answer: 0, explain: 'Wysokość względna to różnica: 1200 − 900 = 300 m.' },
+        {
+          id: '0op8ic',
+          q: 'Jaka jest wysokość względna wzgórza – od podnóża do szczytu?',
+          svg: `<svg viewBox="0 0 340 190" role="img" aria-label="Przekrój wzgórza. Szczyt: 650 m n.p.m. Podnóże: 400 m n.p.m.">
+      <line x1="10" y1="160" x2="330" y2="160" class="ln-thin"/>
+      <path d="M40,160 Q110,150 150,90 Q170,56 190,56 Q215,58 240,110 Q265,155 310,160 Z" class="f3 s3"/>
+      <circle cx="190" cy="56" r="5" class="t2"/>
+      <circle cx="60" cy="158" r="5" class="t2"/>
+      <text x="190" y="38" class="tx-b" text-anchor="middle">650 m n.p.m.</text>
+      <text x="60" y="184" class="tx-b" text-anchor="middle">400 m n.p.m.</text>
+      <text x="292" y="40" class="tx-s" text-anchor="middle">szczyt</text>
+      <text x="60" y="142" class="tx-s" text-anchor="middle">podnóże</text>
+    </svg>`,
+          options: ['250 m', '1050 m', '650 m', '400 m'],
+          answer: 0,
+          explain: 'Wysokość względna to różnica wysokości bezwzględnych: 650 − 400 = 250 m.',
+        },
+        { id: 'r2evu2', q: 'Na jakiej wysokości leżą niziny?', options: ['od 0 do 300 m n.p.m.', 'powyżej 300 m n.p.m.', 'powyżej 2000 m n.p.m.', 'poniżej poziomu morza'], answer: 0, explain: 'Niziny leżą od 0 do 300 m n.p.m. Teren poniżej poziomu morza to depresja.' },
+        { id: 'en9vex', q: 'Czym góry różnią się od wyżyn?', options: ['w górach różnice wysokości są większe niż 300 m, a stoki strome', 'góry leżą poniżej 300 m n.p.m.', 'na wyżynach są ostre szczyty', 'niczym – to to samo'], answer: 0, explain: 'Wyżyny i góry leżą powyżej 300 m n.p.m. W górach różnice między szczytami a dolinami są jednak większe niż 300 m.' },
+        { id: '2ya7pb', q: 'Które góry w Polsce są górami wysokimi?', options: ['Tatry', 'Sudety', 'Góry Świętokrzyskie', 'Bieszczady'], answer: 0, explain: 'Tatry to jedyne góry wysokie w Polsce: ostre szczyty i bardzo strome stoki.' },
+        { id: 'k7ywnf', q: 'Jak nazywa się najwyższy szczyt Polski?', options: ['Rysy', 'Śnieżka', 'Giewont', 'Łysica'], answer: 0, explain: 'Rysy w Tatrach mają 2499 m n.p.m. – to najwyższy szczyt Polski.' },
+        { id: 'bma9fq', q: 'Które z tych miejsc to wyżyna?', options: ['Wyżyna Krakowsko-Częstochowska', 'Tatry', 'Nizina Mazowiecka', 'Żuławy Wiślane'], answer: 0, explain: 'Wyżyna Krakowsko-Częstochowska leży powyżej 300 m n.p.m., ale nie ma dużych różnic wysokości.' },
+        { id: 'g0t4nw', q: 'Depresja to…', options: ['ląd położony poniżej poziomu morza', 'najwyższy szczyt w górach', 'teren od 0 do 300 m n.p.m.', 'dolina rzeki w górach'], answer: 0, explain: 'Depresja to ląd poniżej poziomu morza. W Polsce jest na Żuławach Wiślanych.' },
+        { id: 'cshhzh', q: 'Gdzie w Polsce znajduje się depresja?', options: ['na Żuławach Wiślanych', 'w Tatrach', 'na Wyżynie Lubelskiej', 'w Bieszczadach'], answer: 0, explain: 'Depresja jest na Żuławach Wiślanych, niedaleko ujścia Wisły. Najniższy punkt leży ok. 1,8 m pod poziomem morza.' },
+        { id: '0dj2i5', q: 'Poziomica to linia na mapie, która łączy punkty…', options: ['o tej samej wysokości bezwzględnej', 'o tej samej temperaturze', 'leżące nad tą samą rzeką', 'oddalone o 1 km'], answer: 0, explain: 'Poziomica łączy miejsca położone na tej samej wysokości nad poziomem morza.' },
+        {
+          id: 'nuz5s4',
+          q: 'Na rysunku są poziomice wzgórza. Który stok jest bardziej stromy?',
+          svg: `<svg viewBox="0 0 340 200" role="img" aria-label="Poziomice wzgórza. Po lewej stronie linie leżą bardzo blisko siebie, po prawej – daleko od siebie. Lewy stok oznaczono literą A, prawy literą B.">
+      <ellipse cx="170" cy="100" rx="130" ry="80" class="ln"/>
+      <ellipse cx="148" cy="100" rx="100" ry="62" class="ln"/>
+      <ellipse cx="126" cy="100" rx="70" ry="44" class="ln"/>
+      <ellipse cx="106" cy="100" rx="42" ry="26" class="ln"/>
+      <circle cx="90" cy="100" r="4" class="t2"/>
+      <text x="22" y="106" class="tx-b t2" text-anchor="middle">A</text>
+      <text x="322" y="106" class="tx-b t2" text-anchor="middle">B</text>
+    </svg>`,
+          options: ['stok A – poziomice są gęsto', 'stok B – poziomice są rzadko', 'oba są tak samo strome'],
+          answer: 0,
+          explain: 'Im gęściej leżą poziomice, tym na krótkim odcinku teren bardziej się wznosi – stok jest stromy. Po stronie A poziomice są blisko siebie.',
+        },
+        { id: 'i34oa1', q: 'Na mapie hipsometrycznej niziny są zwykle zaznaczone kolorem…', options: ['zielonym', 'brązowym', 'niebieskim', 'czerwonym'], answer: 0, explain: 'Niziny – zielony, wyższe tereny – żółty i pomarańczowy, góry – brązowy. Niebieski oznacza wody. Kolory zawsze sprawdzaj w legendzie.' },
+        { id: '5t1giv', q: 'Jak nazywa się obniżenie terenu otoczone ze wszystkich stron wyższym terenem?', options: ['kotlina', 'szczyt', 'stok', 'wyżyna'], answer: 0, explain: 'Kotlina to obniżenie otoczone ze wszystkich stron wyższym terenem.' },
+        { id: 'pdiqw5', q: 'Jak nazywa się wydłużone obniżenie terenu, którym zwykle płynie rzeka?', options: ['dolina', 'kotlina', 'depresja', 'podnóże'], answer: 0, explain: 'Dolina to wydłużone obniżenie terenu – zwykle płynie nim rzeka.' },
+        { id: '3q8hco', q: 'Prawda czy fałsz?\nWysokość względną obliczamy, odejmując od siebie dwie wysokości bezwzględne.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Np. szczyt 650 m n.p.m. i podnóże 400 m n.p.m.: 650 − 400 = 250 m wysokości względnej.' },
+        { id: 'b23oey', q: 'Jak nazywa się miejsce, w którym stok wzniesienia przechodzi w płaski teren?', options: ['podnóże', 'szczyt', 'dolina', 'poziomica'], answer: 0, explain: 'Wzniesienie ma szczyt, stoki i podnóże – miejsce, gdzie stok przechodzi w płaski teren.' },
+        { id: 'igyixr', q: 'Do jakich gór należą Góry Świętokrzyskie?', options: ['do gór niskich', 'do gór wysokich', 'do gór średnich', 'to nie są góry, tylko depresja'], answer: 0, explain: 'Góry Świętokrzyskie to góry niskie – mają łagodne stoki i zaokrąglone szczyty.' },
+      ],
+    },
+    {
+      id: 'rzeka-jezioro',
+      name: 'Rzeka i jezioro',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 4 „Organizmy i ekosystemy”, wym. 6 (wody płynące i stojące, cechy środowiska wodnego, elementy systemu rzecznego – rzeka główna, dopływ, źródło, ujście), wym. 17 (funkcja rzeki i jej doliny, składniki krajobrazu stworzone przez rzekę); dz. 5 „Planeta Ziemia”, wym. 23 (geneza jezior – tylko jeziora polodowcowe i zbiorniki zaporowe; rola rzek i jezior w życiu ludzi). Definicje (źródło, ujście, dopływ, dorzecze, system rzeczny, rzeka główna, brzeg lewy i prawy, bieg górny, środkowy i dolny, zakole, starorzecze), źródło Wisły na Baraniej Górze, ujście Wisły do Zatoki Gdańskiej i Odry do Zalewu Szczecińskiego, dopływy Wisły i Odry – według ZPE („Nad brzegiem rzeki”, „System rzeczny”, zpe.gov.pl), sprawdzone 2.11.2026. Jeziora: większość jezior w Polsce ma pochodzenie polodowcowe, największe Śniardwy, najgłębsze Hańcza – materiały ZPE i PIG, sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Wody płynące i stojące</h3>
+        <table>
+          <tr><th>Wody płynące</th><th>Wody stojące</th></tr>
+          <tr><td>woda płynie w jednym kierunku – z wyżej położonych miejsc w niższe</td><td>woda się nie przemieszcza z miejsca na miejsce, wypełnia zagłębienie terenu</td></tr>
+          <tr><td>strumień, potok, <b>rzeka</b>; <b>kanał</b> – koryto wykopane przez ludzi</td><td><b>jezioro</b>, <b>staw</b>, zbiornik zaporowy</td></tr>
+        </table>
+        <h3>Jak zbudowana jest rzeka?</h3>
+        <ul>
+          <li><b>Źródło</b> – miejsce, w którym rzeka bierze początek. Najwięcej źródeł jest w górach i na wyżynach. Wisła zaczyna się na stoku <b>Baraniej Góry</b> w Beskidzie Śląskim.</li>
+          <li><b>Ujście</b> – miejsce, w którym rzeka wpada do innej rzeki, jeziora albo morza. Wisła uchodzi do Zatoki Gdańskiej (Morze Bałtyckie).</li>
+          <li><b>Koryto</b> – zagłębienie, w którym płynie rzeka. <b>Nurt</b> – miejsce w korycie, gdzie woda płynie najszybciej.</li>
+          <li><b>Dopływ</b> – rzeka, która wpada do większej rzeki.</li>
+          <li><b>Rzeka główna</b> – wpada prosto do morza (albo jeziora) i nie jest niczyim dopływem, np. Wisła, Odra.</li>
+          <li><b>System rzeczny</b> – rzeka główna razem ze wszystkimi dopływami. Na mapie wygląda jak <b>drzewo</b>: rzeka główna to pień, dopływy – gałęzie.</li>
+          <li><b>Dorzecze</b> – cały obszar, z którego woda spływa do danej rzeki i jej dopływów.</li>
+        </ul>
+        <h3>Dopływ lewy czy prawy?</h3>
+        <p>Stań <b>tyłem do źródła</b>, a <b>twarzą do ujścia</b> – czyli patrz tam, dokąd płynie woda. To, co masz po lewej ręce, to <b>lewy brzeg</b> i <b>lewe dopływy</b>, a po prawej – <b>prawy brzeg</b> i <b>prawe dopływy</b>.</p>
+        <table>
+          <tr><th>Rzeka</th><th>Prawe dopływy (przykłady)</th><th>Lewe dopływy (przykłady)</th></tr>
+          <tr><td>Wisła</td><td>Dunajec, San, Narew</td><td>Pilica, Bzura</td></tr>
+          <tr><td>Odra</td><td>Warta</td><td>Nysa Łużycka, Bóbr</td></tr>
+        </table>
+        <div class="tip">💡 Na mapie lewy brzeg <b>nie zawsze</b> jest po lewej stronie kartki. Liczy się kierunek, w którym płynie woda.</div>
+        <h3>Bieg rzeki i dolina</h3>
+        <table>
+          <tr><th>Bieg</th><th>Jak płynie woda</th><th>Co tam widać</th></tr>
+          <tr><td><b>górny</b></td><td>szybko</td><td>wąska, stroma dolina, wodospady, mało roślin</td></tr>
+          <tr><td><b>środkowy</b></td><td>wolniej</td><td>rzeka podmywa brzegi i poszerza dolinę, powstają <b>zakola</b> i <b>starorzecza</b></td></tr>
+          <tr><td><b>dolny</b></td><td>najwolniej</td><td>rzeka osadza piasek i muł, tworzą się piaszczyste łachy</td></tr>
+        </table>
+        <ul>
+          <li><b>Dolina rzeczna</b> – obniżenie terenu, które wyżłobiła rzeka.</li>
+          <li><b>Zakole</b> – łuk albo pętla koryta. Na zewnętrznym brzegu woda płynie szybciej i podmywa go, na wewnętrznym – osadza piasek.</li>
+          <li><b>Starorzecze</b> – jezioro w dolinie rzeki: kawałek dawnego koryta (np. zakola), odcięty od rzeki.</li>
+          <li><b>Powódź</b> – rzeka wylewa z koryta i zalewa okoliczne tereny. Płaskie dno doliny często zalewa woda – dlatego niebezpiecznie jest budować tam domy.</li>
+        </ul>
+        <h3>Życie w wodzie i nad wodą</h3>
+        <ul>
+          <li>Im głębiej, tym <b>mniej światła</b>.</li>
+          <li>Temperatura wody zmienia się <b>wolniej</b> niż temperatura powietrza.</li>
+          <li>Organizmy wodne oddychają <b>tlenem rozpuszczonym w wodzie</b>, np. ryby – za pomocą skrzeli.</li>
+          <li>Rzeka i jej dolina to dom ryb, płazów, ptaków (np. czapli) i ssaków (np. bobra). Dolina rzeki to też „korytarz”, którym wędrują zwierzęta.</li>
+        </ul>
+        <h3>Jeziora</h3>
+        <ul>
+          <li><b>Jezioro</b> – naturalne zagłębienie terenu wypełnione wodą stojącą.</li>
+          <li>Większość jezior w Polsce to <b>jeziora polodowcowe</b> – powstały w zagłębieniach po lądolodzie, który dawno temu przykrywał północ Polski. Dlatego najwięcej jezior jest na <b>pojezierzach</b> na północy kraju.</li>
+          <li>Największe jezioro Polski – <b>Śniardwy</b>. Najgłębsze – <b>Hańcza</b>.</li>
+          <li><b>Zbiornik zaporowy</b> (sztuczne jezioro) – powstaje, gdy ludzie zbudują na rzece <b>zaporę</b>, np. Jezioro Solińskie na Sanie.</li>
+          <li><b>Staw</b> – zwykle niewielki i płytki zbiornik zrobiony przez człowieka, np. do hodowli ryb. (Uwaga: w górach stawami nazywa się też naturalne jeziora, np. Czarny Staw).</li>
+        </ul>
+        <p><b>Po co ludziom rzeki i jeziora?</b> Dają wodę (do picia, dla rolnictwa i fabryk), ryby, prąd z elektrowni wodnych, służą do transportu i wypoczynku.</p>
+      `,
+      flashcards: [
+        ['Wody płynące – przykłady', 'strumień, potok, rzeka, kanał'],
+        ['Wody stojące – przykłady', 'jezioro, staw, zbiornik zaporowy'],
+        ['Źródło rzeki', 'Miejsce, w którym rzeka bierze początek'],
+        ['Ujście rzeki', 'Miejsce, w którym rzeka wpada do innej rzeki, jeziora lub morza'],
+        ['Dopływ', 'Rzeka, która wpada do większej rzeki'],
+        ['Rzeka główna', 'Rzeka, która wpada do morza (lub jeziora) i nie jest dopływem, np. Wisła, Odra'],
+        ['System rzeczny', 'Rzeka główna razem ze wszystkimi dopływami'],
+        ['Dorzecze', 'Obszar, z którego woda spływa do danej rzeki i jej dopływów'],
+        ['Jak rozpoznać lewy i prawy brzeg?', 'Stań twarzą do ujścia (tam, dokąd płynie woda): lewa ręka – lewy brzeg'],
+        ['Źródło i ujście Wisły', 'źródło – Barania Góra w Beskidzie Śląskim; ujście – Zatoka Gdańska (Bałtyk)'],
+        ['Zakole', 'Łuk lub pętla koryta rzeki'],
+        ['Starorzecze', 'Jezioro w dolinie rzeki – odcięty kawałek dawnego koryta'],
+        ['Jeziora polodowcowe', 'Powstały w zagłębieniach po lądolodzie; najwięcej ich na pojezierzach na północy Polski'],
+        ['Największe i najgłębsze jezioro Polski', 'największe – Śniardwy; najgłębsze – Hańcza'],
+        ['Zbiornik zaporowy', 'Sztuczne jezioro powstałe po zbudowaniu zapory na rzece, np. Jezioro Solińskie'],
+      ],
+      questions: [
+        { id: 'gc9oj9', q: 'Która z tych wód jest wodą płynącą?', options: ['potok', 'jezioro', 'staw', 'zbiornik zaporowy'], answer: 0, explain: 'Potok, strumień, rzeka i kanał to wody płynące. Jezioro, staw i zbiornik zaporowy – stojące.' },
+        { id: '3mtdbh', q: 'Która z tych wód jest wodą stojącą?', options: ['jezioro', 'rzeka', 'strumień', 'kanał'], answer: 0, explain: 'Woda w jeziorze wypełnia zagłębienie terenu i nie płynie z miejsca na miejsce.' },
+        { id: 'kevhmp', q: 'Jak nazywa się miejsce, w którym rzeka bierze początek?', options: ['źródło', 'ujście', 'zakole', 'dopływ'], answer: 0, explain: 'Rzeka zaczyna się w źródle, a kończy w ujściu.' },
+        { id: '439mzs', q: 'Ujście rzeki to miejsce, w którym…', options: ['rzeka wpada do innej rzeki, jeziora albo morza', 'rzeka bierze początek', 'rzeka płynie najszybciej', 'rzeka zakręca'], answer: 0, explain: 'W ujściu rzeka kończy swój bieg – wpada do innej rzeki, jeziora albo morza.' },
+        { id: '3bkps3', q: 'Gdzie zaczyna się Wisła?', options: ['na stoku Baraniej Góry w Beskidzie Śląskim', 'w Tatrach pod Rysami', 'na Żuławach Wiślanych', 'w jeziorze Śniardwy'], answer: 0, explain: 'Wisła wypływa na stoku Baraniej Góry w Beskidzie Śląskim i uchodzi do Zatoki Gdańskiej.' },
+        { id: 'ew7xa3', q: 'Dopływ to…', options: ['rzeka, która wpada do większej rzeki', 'miejsce, w którym rzeka się zaczyna', 'sztuczne jezioro', 'najszybsze miejsce w korycie'], answer: 0, explain: 'Dopływ to rzeka wpadająca do większej rzeki, np. San jest dopływem Wisły.' },
+        { id: 'j7zrbn', q: 'Rzeka główna razem ze wszystkimi dopływami to…', options: ['system rzeczny', 'dorzecze', 'starorzecze', 'zakole'], answer: 0, explain: 'System rzeczny to rzeka główna i jej dopływy. Na mapie wygląda jak drzewo. Dorzecze to obszar, z którego woda do nich spływa.' },
+        { id: '0qyce3', q: 'Jak ustalić, który brzeg rzeki jest lewy?', options: ['stanąć twarzą do ujścia – lewy brzeg jest po lewej ręce', 'stanąć twarzą do źródła – lewy brzeg jest po lewej ręce', 'spojrzeć na mapę – lewy brzeg jest zawsze po lewej stronie kartki', 'lewy brzeg to zawsze brzeg zachodni'], answer: 0, explain: 'Patrzysz tam, dokąd płynie woda (twarzą do ujścia). Wtedy po lewej masz lewy brzeg, a po prawej – prawy.' },
+        {
+          id: '9f3mgc',
+          q: 'Rzeka płynie w stronę wskazaną strzałką. Jakim dopływem jest rzeka A?',
+          svg: `<svg viewBox="0 0 360 180" role="img" aria-label="Rzeka główna płynie od lewej do prawej, strzałka kierunku w prawo. Z góry wpada do niej rzeka A.">
+      <defs><marker id="a-k4pr-q-rz" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <path d="M10,120 C80,100 120,140 190,118 C250,100 290,130 350,112" class="ln s1 sw"/>
+      <path d="M150,20 C170,50 160,80 190,116" class="ln s1"/>
+      <text x="140" y="20" class="tx-b t1" text-anchor="middle">A</text>
+      <text x="40" y="158" class="tx-s">źródło</text>
+      <text x="300" y="158" class="tx-s">ujście</text>
+      <line x1="230" y1="72" x2="300" y2="72" class="ln s2 sw" marker-end="url(#a-k4pr-q-rz)"/>
+      <text x="265" y="62" class="tx-s" text-anchor="middle">kierunek</text>
+    </svg>`,
+          options: ['lewym', 'prawym'],
+          answer: 0,
+          explain: 'Stań twarzą do ujścia – patrzysz w prawo (w stronę strzałki). Wtedy twoja lewa ręka wskazuje górę rysunku, a stamtąd wpada rzeka A. To lewy dopływ.',
+        },
+        { id: 'up04ww', q: 'Który z tych dopływów Wisły jest dopływem prawym?', options: ['San', 'Pilica', 'Bzura'], answer: 0, explain: 'San, Dunajec i Narew to prawe dopływy Wisły. Pilica i Bzura – lewe.' },
+        { id: 'djmvy4', q: 'W którym biegu rzeka płynie najszybciej i tworzy wodospady?', options: ['w górnym', 'w środkowym', 'w dolnym'], answer: 0, explain: 'W górnym biegu, zwykle w górach, woda płynie szybko, żłobi wąską i stromą dolinę i tworzy wodospady.' },
+        { id: 'wky55k', q: 'Jak nazywa się łuk albo pętla koryta rzeki?', options: ['zakole', 'źródło', 'ujście', 'nurt'], answer: 0, explain: 'Zakole to łuk lub pętla koryta. Na zewnętrznym brzegu woda podmywa brzeg, na wewnętrznym osadza piasek.' },
+        { id: 'mk4vfg', q: 'Starorzecze to…', options: ['jezioro w dolinie rzeki – odcięty kawałek dawnego koryta', 'najstarsza rzeka w Polsce', 'źródło rzeki w górach', 'sztuczne jezioro za zaporą'], answer: 0, explain: 'Starorzecze powstaje, gdy kawałek koryta (np. zakole) zostaje odcięty od rzeki.' },
+        { id: '0wvixp', q: 'Jak powstała większość jezior w Polsce?', options: ['w zagłębieniach po lądolodzie – to jeziora polodowcowe', 'po zbudowaniu zapór na rzekach', 'w kraterach wulkanów', 'wykopali je ludzie'], answer: 0, explain: 'Dawno temu północ Polski przykrywał lądolód. W zagłębieniach, które po nim zostały, powstały jeziora – najwięcej ich na pojezierzach.' },
+        { id: 'k89h7n', q: 'Które jezioro jest największe w Polsce?', options: ['Śniardwy', 'Hańcza', 'Morskie Oko', 'Jezioro Solińskie'], answer: 0, explain: 'Największe jezioro w Polsce to Śniardwy. Najgłębsze jest Hańcza.' },
+        { id: 'fj6rz2', q: 'Jak powstaje zbiornik zaporowy?', options: ['ludzie budują na rzece zaporę i woda się za nią spiętrza', 'lądolód zostawia zagłębienie', 'rzeka odcina swoje zakole', 'morze zalewa ląd'], answer: 0, explain: 'Zbiornik zaporowy to sztuczne jezioro za zaporą, np. Jezioro Solińskie na Sanie.' },
+        { id: 'jkroml', q: 'Prawda czy fałsz?\nIm głębiej w jeziorze, tym więcej światła.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Woda pochłania światło – im głębiej, tym ciemniej. Dlatego rośliny wodne rosną głównie przy brzegu i blisko powierzchni.' },
+        { id: 'eok8kf', q: 'Czym oddychają ryby?', options: ['tlenem rozpuszczonym w wodzie, za pomocą skrzeli', 'powietrzem, które łapią nad wodą płucami', 'nie oddychają wcale', 'dwutlenkiem węgla z powietrza'], answer: 0, explain: 'Ryby oddychają skrzelami – pobierają tlen rozpuszczony w wodzie.' },
+        { id: 'qrxg9w', q: 'Dlaczego niebezpiecznie jest budować domy na płaskim dnie doliny rzeki?', options: ['bo podczas powodzi rzeka może zalać ten teren', 'bo tam jest zawsze susza', 'bo tam nie dociera światło', 'bo tam nie ma gleby'], answer: 0, explain: 'Gdy w korycie jest za dużo wody, rzeka wylewa i zalewa dno doliny – to powódź.' },
+      ],
+    },
+    {
+      id: 'metale',
+      name: 'Metale, stopy i przewodzenie ciepła',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 3 „Materia i jej przemiany w przyrodzie”, wym. 7 (właściwości metali i niemetali: stan skupienia, barwa, połysk, przewodnictwo elektryczne i cieplne), wym. 8 (metal a stop metalu, korozja stali, zabezpieczanie przed korozją), wym. 11 (przepływ ciepła, przewodniki i izolatory ciepła, izolacja cieplna w przyrodzie i życiu codziennym). Skład stopów (brąz – miedź i cyna, mosiądz – miedź i cynk, stal – żelazo z węglem), warunki rdzewienia (woda i tlen, sól przyspiesza) i sposoby ochrony przed korozją – według materiałów ZPE (zpe.gov.pl), sprawdzone 2.11.2026. Pierwiastki i układ okresowy (wym. 1) – w kolejnych klasach. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Metale i niemetale</h3>
+        <table>
+          <tr><th></th><th>Metale</th><th>Niemetale</th></tr>
+          <tr><td>przykłady</td><td>żelazo, miedź, glin (aluminium), cynk, cyna, srebro, złoto, rtęć</td><td>tlen, azot, siarka, węgiel</td></tr>
+          <tr><td>stan skupienia</td><td>prawie wszystkie <b>stałe</b>; wyjątek – <b>rtęć</b> jest cieczą</td><td>stałe (siarka, węgiel) albo <b>gazy</b> (tlen, azot); jeden – brom – jest cieczą</td></tr>
+          <tr><td>barwa i połysk</td><td>zwykle srebrzystoszare (miedź – czerwonobrązowa, złoto – żółte); mają <b>metaliczny połysk</b></td><td>różne barwy (siarka – żółta, węgiel – czarny); zwykle <b>bez połysku</b></td></tr>
+          <tr><td>prąd i ciepło</td><td><b>dobrze przewodzą</b></td><td>zwykle <b>nie przewodzą</b> (wyjątek: grafit w ołówku przewodzi prąd)</td></tr>
+          <tr><td>inne</td><td>są <b>kowalne</b> – można je kuć, wyginać, rozklepywać</td><td>stałe niemetale są zwykle <b>kruche</b> – kruszą się</td></tr>
+        </table>
+        <div class="tip">💡 Dlatego przewody elektryczne robi się z miedzi, a garnki – z metalu.</div>
+        <h3>Stopy metali</h3>
+        <p><b>Stop</b> powstaje, gdy metal stopi się (rozgrzeje do postaci cieczy) razem z innym metalem albo z niemetalem (np. węglem), a potem całość zastygnie. Stop często jest <b>twardszy</b> i <b>odporniejszy</b> niż czysty metal.</p>
+        <table>
+          <tr><th>Stop</th><th>Z czego</th><th>Zastosowanie</th></tr>
+          <tr><td><b>stal</b></td><td>żelazo + węgiel</td><td>mosty, szyny, gwoździe, narzędzia, karoserie</td></tr>
+          <tr><td><b>stal nierdzewna</b></td><td>stal z dodatkiem chromu i niklu</td><td>sztućce, zlewy, garnki</td></tr>
+          <tr><td><b>brąz</b></td><td>miedź + cyna</td><td>pomniki, dzwony, medale</td></tr>
+          <tr><td><b>mosiądz</b></td><td>miedź + cynk</td><td>klamki, krany, instrumenty dęte blaszane (np. trąbka)</td></tr>
+        </table>
+        <h3>Korozja – metal się niszczy</h3>
+        <p><b>Korozja</b> to niszczenie metali pod wpływem otoczenia. Korozja żelaza i stali to <b>rdzewienie</b>. Żelazo rdzewieje, gdy ma dostęp do <b>wody</b> (wilgoci) i <b>tlenu</b> (powietrza). <b>Sól</b> przyspiesza rdzewienie – dlatego zimą, na posypanych solą drogach, samochody szybciej rdzewieją.</p>
+        <p><b>Doświadczenie:</b> trzy stalowe gwoździe – w suchym słoiku, w wodzie z kranu i w wodzie z solą. Po kilku dniach: w suchym słoiku gwóźdź jest prawie bez zmian, w wodzie – zardzewiały, w słonej wodzie – najbardziej zardzewiały.</p>
+        <p><b>Jak chronić metal przed korozją?</b></p>
+        <ul>
+          <li><b>malowanie</b> farbą (np. płoty, mosty),</li>
+          <li><b>smarowanie</b> olejem albo smarem (np. łańcuch roweru),</li>
+          <li><b>pokrywanie innym metalem</b> – np. cynkiem (<b>cynkowanie</b> – rynny, siatki ogrodzeniowe) albo chromem,</li>
+          <li>używanie <b>stali nierdzewnej</b>,</li>
+          <li>trzymanie metalowych rzeczy w <b>suchym</b> miejscu, wycieranie do sucha.</li>
+        </ul>
+        <h3>Przepływ ciepła</h3>
+        <p>Ciepło zawsze przepływa z ciała <b>cieplejszego</b> do <b>chłodniejszego</b>, aż ich temperatury się wyrównają. Gorąca herbata stygnie, bo oddaje ciepło powietrzu. Łyżeczka w herbacie się nagrzewa, bo dostaje ciepło od herbaty.</p>
+        <table>
+          <tr><th>Dobre przewodniki ciepła</th><th>Izolatory ciepła (słabo przewodzą)</th></tr>
+          <tr><td>metale: miedź, glin, żelazo, stal</td><td>drewno, plastik, styropian, wełna, pierze, powietrze</td></tr>
+          <tr><td>garnek, kaloryfer, patelnia</td><td>uchwyt garnka, rękawica kuchenna, termos, ocieplenie domu</td></tr>
+        </table>
+        <p><b>Izolacja cieplna</b> zatrzymuje ciepło. W przyrodzie chronią przed zimnem <b>futro</b> ssaków, <b>pióra i puch</b> ptaków, gruba warstwa <b>tłuszczu</b> (np. u fok) i <b>pokrywa śnieżna</b>, która chroni glebę i rośliny przed mrozem. Ludzie ocieplają domy styropianem albo wełną mineralną i noszą zimą kilka warstw ubrań – między nimi jest powietrze, które słabo przewodzi ciepło.</p>
+        <div class="tip">⚠️ Metalowa łyżka w gorącej zupie szybko się nagrzewa – możesz się oparzyć. Drewniana zostaje chłodna.</div>
+      `,
+      flashcards: [
+        ['Metale – przykłady', 'żelazo, miedź, glin (aluminium), cynk, cyna, srebro, złoto, rtęć'],
+        ['Właściwości metali', 'metaliczny połysk, dobrze przewodzą prąd i ciepło, są kowalne; prawie wszystkie stałe'],
+        ['Jedyny metal ciekły w temperaturze pokojowej', 'rtęć'],
+        ['Niemetale – przykłady', 'tlen, azot (gazy), siarka, węgiel (ciała stałe)'],
+        ['Właściwości niemetali', 'zwykle bez połysku, nie przewodzą prądu i ciepła, stałe są kruche'],
+        ['Stop metali', 'Metal stopiony razem z innym metalem lub niemetalem i zastygły; zwykle twardszy i odporniejszy'],
+        ['Stal', 'stop żelaza z węglem'],
+        ['Brąz', 'stop miedzi z cyną'],
+        ['Mosiądz', 'stop miedzi z cynkiem'],
+        ['Korozja', 'Niszczenie metali pod wpływem otoczenia; korozja żelaza to rdzewienie'],
+        ['Co jest potrzebne, żeby żelazo rdzewiało?', 'woda (wilgoć) i tlen (powietrze); sól przyspiesza rdzewienie'],
+        ['Ochrona przed korozją', 'malowanie, smarowanie, cynkowanie lub chromowanie, stal nierdzewna, trzymanie w suchym miejscu'],
+        ['Kierunek przepływu ciepła', 'od ciała cieplejszego do chłodniejszego, aż temperatury się wyrównają'],
+        ['Izolatory ciepła – przykłady', 'drewno, plastik, styropian, wełna, pierze, powietrze'],
+        ['Izolacja cieplna w przyrodzie', 'futro, pióra i puch, tłuszcz, pokrywa śnieżna'],
+      ],
+      questions: [
+        { id: 'rgh2h0', q: 'Która substancja jest metalem?', options: ['miedź', 'siarka', 'tlen', 'węgiel'], answer: 0, explain: 'Miedź to metal – ma połysk i dobrze przewodzi prąd. Siarka, tlen i węgiel to niemetale.' },
+        { id: '05a3nz', q: 'Która substancja jest niemetalem?', options: ['siarka', 'żelazo', 'cynk', 'srebro'], answer: 0, explain: 'Siarka to żółty, kruchy niemetal bez połysku. Żelazo, cynk i srebro to metale.' },
+        { id: 'jfu12m', q: 'Który metal w temperaturze pokojowej jest cieczą?', options: ['rtęć', 'żelazo', 'miedź', 'glin'], answer: 0, explain: 'Prawie wszystkie metale są stałe. Wyjątkiem jest rtęć – jest cieczą.' },
+        { id: 'jdz9bm', q: 'Dlaczego przewody elektryczne robi się z miedzi?', options: ['bo miedź dobrze przewodzi prąd', 'bo miedź jest kruchą substancją', 'bo miedź jest gazem', 'bo miedź nie przewodzi prądu'], answer: 0, explain: 'Metale dobrze przewodzą prąd elektryczny, a miedź – bardzo dobrze.' },
+        { id: 'o3j68w', q: 'Która cecha jest typowa dla metali?', options: ['metaliczny połysk', 'kruchość', 'brak przewodzenia ciepła', 'w większości są gazami'], answer: 0, explain: 'Metale mają połysk, dobrze przewodzą prąd i ciepło i są kowalne. Kruchość jest typowa dla stałych niemetali.' },
+        { id: '842i25', q: 'Stop metali to…', options: ['metal stopiony razem z innym metalem lub niemetalem, który potem zastygł', 'zardzewiały metal', 'metal w stanie ciekłym', 'czysty metal bez domieszek'], answer: 0, explain: 'Stop powstaje po stopieniu metalu z innym metalem (lub np. z węglem) i zastygnięciu. Ma często lepsze właściwości niż czysty metal.' },
+        { id: 'y8xjes', q: 'Z czego składa się brąz?', options: ['z miedzi i cyny', 'z żelaza i węgla', 'z miedzi i cynku', 'ze złota i srebra'], answer: 0, explain: 'Brąz to stop miedzi z cyną. Mosiądz – miedzi z cynkiem, a stal – żelaza z węglem.' },
+        { id: 'p5znct', q: 'Stal to stop…', options: ['żelaza z węglem', 'miedzi z cyną', 'miedzi z cynkiem', 'glinu z tlenem'], answer: 0, explain: 'Stal to stop żelaza z węglem. Jest twardsza i wytrzymalsza niż czyste żelazo.' },
+        { id: 'nh5ngu', q: 'Z którego stopu robi się trąbki i klamki?', options: ['z mosiądzu', 'z brązu', 'ze stali', 'z rtęci'], answer: 0, explain: 'Mosiądz (miedź + cynk) to stop, z którego robi się m.in. klamki, krany i instrumenty dęte blaszane.' },
+        { id: 'z15ibw', q: 'Co jest potrzebne, żeby żelazny gwóźdź zardzewiał?', options: ['woda i tlen', 'tylko suche powietrze', 'tylko ciemność', 'wysoka temperatura i brak powietrza'], answer: 0, explain: 'Żelazo rdzewieje, gdy ma dostęp do wody (wilgoci) i tlenu z powietrza.' },
+        {
+          id: '2a4gks',
+          q: 'Trzy takie same stalowe gwoździe zostawiono na tydzień w słoikach. W którym gwóźdź zardzewieje najbardziej?',
+          svg: `<svg viewBox="0 0 360 190" role="img" aria-label="Trzy słoiki z gwoździami. A – suchy słoik bez wody. B – woda z kranu. C – woda z solą.">
+      <rect x="20" y="40" width="90" height="120" rx="10" class="bg ln"/>
+      <rect x="135" y="40" width="90" height="120" rx="10" class="bg ln"/>
+      <rect x="250" y="40" width="90" height="120" rx="10" class="bg ln"/>
+      <rect x="137" y="90" width="86" height="68" rx="8" class="f1"/>
+      <rect x="252" y="90" width="86" height="68" rx="8" class="f1"/>
+      <line x1="65" y1="70" x2="65" y2="150" class="ln sw"/>
+      <line x1="180" y1="70" x2="180" y2="150" class="ln sw"/>
+      <line x1="295" y1="70" x2="295" y2="150" class="ln sw"/>
+      <line x1="57" y1="70" x2="73" y2="70" class="ln sw"/>
+      <line x1="172" y1="70" x2="188" y2="70" class="ln sw"/>
+      <line x1="287" y1="70" x2="303" y2="70" class="ln sw"/>
+      <text x="65" y="28" class="tx-b" text-anchor="middle">A</text>
+      <text x="180" y="28" class="tx-b" text-anchor="middle">B</text>
+      <text x="295" y="28" class="tx-b" text-anchor="middle">C</text>
+      <text x="65" y="182" class="tx-s" text-anchor="middle">sucho</text>
+      <text x="180" y="182" class="tx-s" text-anchor="middle">woda z kranu</text>
+      <text x="295" y="182" class="tx-s" text-anchor="middle">woda z solą</text>
+    </svg>`,
+          options: ['C – w wodzie z solą', 'B – w wodzie z kranu', 'A – w suchym słoiku'],
+          answer: 0,
+          explain: 'Do rdzewienia potrzebne są woda i tlen, a sól je przyspiesza. W suchym słoiku gwóźdź prawie się nie zmieni.',
+        },
+        { id: 'cxz8dd', q: 'Dlaczego zimą samochody na solonych drogach szybciej rdzewieją?', options: ['bo sól przyspiesza rdzewienie', 'bo zimą jest mniej tlenu', 'bo mróz zamienia stal w rdzę', 'bo śnieg jest metalem'], answer: 0, explain: 'Woda z rozpuszczoną solą przyspiesza korozję stali.' },
+        { id: 'lic8kf', q: 'Który sposób NIE chroni metalu przed korozją?', options: ['zostawianie go mokrego na deszczu', 'malowanie farbą', 'smarowanie olejem', 'pokrycie cynkiem'], answer: 0, explain: 'Wilgoć sprzyja rdzewieniu. Farba, olej i warstwa cynku odcinają metal od wody i powietrza.' },
+        { id: 'kv7bge', q: 'Dlaczego łańcuch roweru smaruje się olejem?', options: ['olej chroni go przed wodą i rdzą', 'olej sprawia, że łańcuch przewodzi prąd', 'olej zamienia stal w mosiądz', 'olej ogrzewa łańcuch'], answer: 0, explain: 'Warstwa oleju lub smaru odcina metal od wody i powietrza, więc łańcuch nie rdzewieje (i lepiej się obraca).' },
+        { id: 'dnk6j9', q: 'W którą stronę płynie ciepło?', options: ['od ciała cieplejszego do chłodniejszego', 'od ciała chłodniejszego do cieplejszego', 'zawsze z dołu do góry', 'ciepło nie płynie'], answer: 0, explain: 'Ciepło przepływa od cieplejszego do chłodniejszego, aż temperatury się wyrównają – np. gorąca herbata stygnie.' },
+        { id: 'fbj6lr', q: 'Która łyżka szybciej nagrzeje się w gorącej zupie?', options: ['metalowa', 'drewniana', 'plastikowa'], answer: 0, explain: 'Metale dobrze przewodzą ciepło. Drewno i plastik to izolatory – nagrzewają się wolno.' },
+        { id: 'kl95qm', q: 'Który materiał jest dobrym izolatorem ciepła?', options: ['styropian', 'miedź', 'glin', 'stal'], answer: 0, explain: 'Styropian słabo przewodzi ciepło – dlatego ociepla się nim domy. Miedź, glin i stal to dobre przewodniki ciepła.' },
+        { id: '4m0pqc', q: 'Dlaczego uchwyty garnków robi się często z plastiku albo drewna?', options: ['bo słabo przewodzą ciepło i nie parzą', 'bo dobrze przewodzą prąd', 'bo nie rdzewieją w wodzie z solą', 'bo są cięższe od metalu'], answer: 0, explain: 'Plastik i drewno to izolatory ciepła – uchwyt zostaje chłodny, choć garnek jest gorący.' },
+        { id: '0txyem', q: 'Co chroni rośliny i glebę przed mrozem zimą?', options: ['pokrywa śnieżna', 'silny wiatr', 'bezchmurne niebo', 'lód na rzece'], answer: 0, explain: 'Śnieg zawiera dużo powietrza i słabo przewodzi ciepło – działa jak kołdra.' },
+        { id: 'oq4n91', q: 'Prawda czy fałsz?\nGęste futro i puch chronią zwierzęta przed utratą ciepła.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Między włosami i piórami jest powietrze, które słabo przewodzi ciepło – to naturalna izolacja.' },
+      ],
+    },
   ],
 });
