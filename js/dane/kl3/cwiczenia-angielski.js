@@ -1,7 +1,7 @@
-/* Język angielski – klasa 3: słuchanie (listening) i dyktando słówek
- * (Dz.U. 2024 poz. 996, zał. 1, I etap, X. Edukacja językowa – język obcy nowożytny, wymagania 2 i 5).
- * Nagrania i zdania czyta głos angielski syntezatora mowy. Słowa tylko z działów angielskiego klasy 3
- * (js/dane/kl3/angielski.js); nagrania i zadania napisane do aplikacji.
+/* Język angielski – klasa 3: słuchanie (listening), czytanie (reading) i dyktando słówek
+ * (Dz.U. 2024 poz. 996, zał. 1, I etap, X. Edukacja językowa – język obcy nowożytny, wymagania 2, 3 i 5).
+ * Nagrania, teksty i zdania czyta głos angielski syntezatora mowy. Słowa tylko z działów angielskiego klasy 3
+ * (js/dane/kl3/angielski.js); nagrania, teksty i zadania napisane do aplikacji.
  * Dyktando: odpowiedź sprawdzana dokładnie, z wielkością liter (kropka i wykrzyknik na końcu są pomijane);
  * pojedyncze słowa można wpisać małą albo wielką literą, rzeczowniki także z a / an. */
 (function () {
@@ -82,7 +82,7 @@
         lines: [
           { who: 'Tom', text: 'Hello! My name is Tom.' },
           { who: 'Tom', text: 'I’m nine. I’m from London.' },
-          { who: 'Tom', text: 'This is my sister. Her name is Lily. She’s six.' },
+          { who: 'Tom', text: 'This is my sister. Her name is Amy. She’s six.' },
           { who: 'Tom', text: 'I like football. I can swim, too.' },
           { who: 'Tom', text: 'This is my dog, Max. He’s small and he’s happy!' },
         ],
@@ -100,9 +100,9 @@
         explain: '„I’m from London.” – Jestem z Londynu. Londyn to stolica Wielkiej Brytanii.',
       },
       {
-        id: 'tumsnj', q: 'Kim jest Lily?',
+        id: 'tumsnj', q: 'Kim jest Amy?',
         options: ['mamą Toma', 'koleżanką Toma', 'siostrą Toma', 'babcią Toma'], answer: 2,
-        explain: '„This is my sister. Her name is Lily.” – To moja siostra. Ma na imię Lily.',
+        explain: '„This is my sister. Her name is Amy.” – To moja siostra. Ma na imię Amy.',
       },
       {
         id: '6a49z7', q: 'Co lubi Tom?',
@@ -240,6 +240,142 @@
       { id: 'pf2exh', type: 'input', q: 'Zdanie 4 🏊', say: twice('I can swim.'), accept: ['I can swim'], explain: 'I can swim. – Umiem pływać. „I” zawsze wielką literą.' },
       { id: 'gatdo2', type: 'input', q: 'Zdanie 5 👩', say: twice('This is my mum.'), accept: ['This is my mum', 'This is my mom'], explain: 'This is my mum. – To jest moja mama. (Po amerykańsku piszą „mom”).' },
       { id: 'k9wijx', type: 'input', q: 'Zdanie 6 ☀️', say: twice('It’s sunny.'), accept: ['It\'s sunny', 'It is sunny'], explain: 'It’s sunny. – Jest słonecznie. It’s to skrót od „it is”: zamiast i stawiamy apostrof ’.' },
+    ],
+  });
+
+  // ------------------------------------------------------------------ Czytanie (reading)
+  // Tekst: fragmenty po angielsku w elementach z lang="en" (bez zagnieżdżania tego samego znacznika) –
+  // przycisk 🔊 „Posłuchaj tekstu” czyta je głosem angielskim (X.3.1: tekst „wspierany obrazem lub dźwiękiem”).
+  const READ = `${PP}: 3. rozumie wyrazy oraz jedno- lub kilkuzdaniowe, bardzo proste wypowiedzi pisemne (np. historyjki obrazkowe z tekstem, opowiadania)`;
+  const WYBOR_T = WYBOR.replace('Nagrania napisane', 'Teksty napisane');
+  const frame = (n, pic, html) => `<div class="frame"><div class="pic" aria-hidden="true"><span class="gapno">${n}</span> ${pic}</div>${html}</div>`;
+
+  window.EXERCISES.push({
+    subject: 'angielski', mode: 'reading', id: 'jt6saa',
+    title: 'Historyjka: urodziny Lily',
+    kind: 'Historyjka obrazkowa · o czym jest, szczegóły',
+    basis: `${READ}: 3.1 (rozumie ogólny sens tekstu, szczególnie gdy jest wspierany obrazem lub dźwiękiem), 3.2 (znajduje w wypowiedzi określone informacje); tematy z wym. 1: 1 (ja i moi bliscy), 6 (jedzenie), 9 (święta i tradycje), 11 (moje samopoczucie).${WYBOR_T}`,
+    source: 'Historyjka napisana do aplikacji.',
+    intro: 'Przeczytaj historyjkę. Jeśli coś jest trudne, kliknij 🔊 i posłuchaj. Potem wybierz dobre odpowiedzi.',
+    text: `<div class="story">
+      ${frame(1, '🎂🎈', '<p lang="en">Today is Sunday. It’s Lily’s birthday. She is eight!</p>')}
+      ${frame(2, '🎁', '<p lang="en">Mum: Happy birthday, Lily! Here you are.<br>Lily: Oh, a bike! Thank you, Mum!</p>')}
+      ${frame(3, '👧👦', '<p lang="en">Tom is Lily’s friend. Lily and Tom like ice cream.</p>')}
+      ${frame(4, '🌙', '<p lang="en">It’s night. Lily is tired and happy. Good night, Lily!</p>')}
+    </div>`,
+    items: [
+      {
+        id: 'jg566a', q: 'O czym jest ta historyjka?',
+        options: ['o wycieczce do zoo', 'o urodzinach Lily', 'o pierwszym dniu w szkole', 'o zakupach w sklepie'], answer: 1,
+        explain: '„It’s Lily’s birthday.” – To urodziny Lily. Są tort, prezent i życzenia „Happy birthday!”.',
+      },
+      {
+        id: 'ppv973', q: 'Ile lat kończy Lily?',
+        options: ['6', '7', '8', '9'], answer: 2,
+        explain: '„She is eight!” – Ma osiem lat.',
+      },
+      {
+        id: '7bioeq', q: 'Co Lily dostała od mamy?',
+        options: ['🚲 rower', '🧸 misia', '🪁 latawiec', '📕 książkę'], answer: 0,
+        explain: '„Oh, a bike!” – O, rower! Bike to rower.',
+      },
+      {
+        id: '59q8fo', q: 'Kim jest Tom?',
+        options: ['bratem Lily', 'tatą Lily', 'kolegą Lily', 'dziadkiem Lily'], answer: 2,
+        explain: '„Tom is Lily’s friend.” – Tom jest kolegą (przyjacielem) Lily. Friend to przyjaciel, kolega.',
+      },
+      {
+        id: 'zjeadr', q: 'Prawda czy fałsz?\nWieczorem Lily jest smutna.',
+        options: ['Prawda', 'Fałsz'], answer: 1,
+        explain: '„Lily is tired and happy.” – Lily jest zmęczona i wesoła. Smutny to „sad”.',
+      },
+    ],
+  });
+
+  window.EXERCISES.push({
+    subject: 'angielski', mode: 'reading', id: 'pj6kpc',
+    title: 'Zgadnij, kim jestem',
+    kind: 'Zagadki o zwierzętach · szczegóły',
+    basis: `${READ}: 3.2 (znajduje w wypowiedzi określone informacje); tematy z wym. 1: 12 (przyroda wokół mnie); por. 7 (nazywa zwierzęta).${WYBOR_T}`,
+    source: 'Zagadki napisane do aplikacji.',
+    intro: 'Każde zwierzę mówi o sobie. Przeczytaj zagadki i zgadnij, kto to jest.',
+    text: `
+      <div class="box"><p><span class="gapno">Zagadka 1</span></p><p lang="en">I’m big. I like water.</p></div>
+      <div class="box"><p><span class="gapno">Zagadka 2</span></p><p lang="en">I’m small. I can swim. I can’t run. I live in water.</p></div>
+      <div class="box"><p><span class="gapno">Zagadka 3</span></p><p lang="en">I’m brown. I can jump. I like bananas!</p></div>
+      <div class="box"><p><span class="gapno">Zagadka 4</span></p><p lang="en">I’m small. I can run and jump. I live in a house with my family.</p></div>`,
+    items: [
+      {
+        id: '37e6c6', q: 'Zagadka 1. Kto to?',
+        options: ['🐱 kot', '🐘 słoń', '🐔 kura', '🐹 chomik'], answer: 1,
+        explain: '„I’m big.” – Jestem duży. Z tych zwierząt duży jest tylko słoń.',
+      },
+      {
+        id: '9uetid', q: 'Zagadka 2. Kto to?',
+        options: ['🐶 pies', '🐴 koń', '🐑 owca', '🐟 ryba'], answer: 3,
+        explain: '„I can swim. I can’t run. I live in water.” – Pływam, nie umiem biegać, mieszkam w wodzie. To ryba.',
+      },
+      {
+        id: '89eiht', q: 'Zagadka 3. Kto to?',
+        options: ['🐮 krowa', '🦆 kaczka', '🐒 małpa', '🐟 ryba'], answer: 2,
+        explain: '„I can jump. I like bananas!” – Skaczę i lubię banany. To małpa.',
+      },
+      {
+        id: 'hxtpgp', q: 'Zagadka 4. Kto to?',
+        options: ['🐱 kot', '🐟 ryba', '🦁 lew', '🐘 słoń'], answer: 0,
+        explain: '„I’m small. I can run and jump. I live in a house with my family.” – Jestem mały, biegam i skaczę, mieszkam w domu z rodziną. To kot.',
+      },
+      {
+        id: '0pt5hw', q: 'Prawda czy fałsz?\nZwierzę z zagadki 2 umie biegać.',
+        options: ['Prawda', 'Fałsz'], answer: 1,
+        explain: '„I can’t run.” – Nie umiem biegać. I can’t… – nie umiem…',
+      },
+    ],
+  });
+
+  window.EXERCISES.push({
+    subject: 'angielski', mode: 'reading', id: 'u2osvr',
+    title: 'Tydzień Toma',
+    kind: 'Plan tygodnia · dni i zajęcia',
+    basis: `${READ}: 3.2 (znajduje w wypowiedzi określone informacje); tematy z wym. 1: 5 (mój dzień, moje zabawy), 8 (mój czas wolny), 10 (sport); por. 6.5 (wyraża swoje upodobania).${WYBOR_T}`,
+    source: 'Tekst napisany do aplikacji.',
+    intro: 'Tom pisze, co robi w każdy dzień tygodnia. Przeczytaj i odpowiedz na pytania.',
+    text: `
+      <div class="box">
+        <p lang="en">Hi! I’m Tom. This is my week.</p>
+        <p lang="en"><b>Monday:</b> I play football.</p>
+        <p lang="en"><b>Tuesday:</b> I sing.</p>
+        <p lang="en"><b>Wednesday:</b> I swim.</p>
+        <p lang="en"><b>Thursday:</b> I ride a bike.</p>
+        <p lang="en"><b>Friday:</b> I dance.</p>
+        <p lang="en">I like Wednesday. I like water!</p>
+      </div>`,
+    items: [
+      {
+        id: 'maottz', q: 'Co Tom robi w środę?',
+        options: ['⚽ gra w piłkę', '🎤 śpiewa', '🏊 pływa', '🚲 jeździ na rowerze'], answer: 2,
+        explain: '„Wednesday: I swim.” – Wednesday to środa, swim – pływać.',
+      },
+      {
+        id: 'fmeye3', q: 'Kiedy Tom jeździ na rowerze?',
+        options: ['w czwartek', 'w poniedziałek', 'we wtorek', 'w piątek'], answer: 0,
+        explain: '„Thursday: I ride a bike.” – Thursday to czwartek.',
+      },
+      {
+        id: 'z01znw', q: 'Co Tom robi w poniedziałek?',
+        options: ['💃 tańczy', '⚽ gra w piłkę', '🎤 śpiewa', '🏊 pływa'], answer: 1,
+        explain: '„Monday: I play football.” – Monday to poniedziałek, play football – grać w piłkę nożną.',
+      },
+      {
+        id: 'khy4ip', q: 'Który dzień lubi Tom?',
+        options: ['poniedziałek', 'wtorek', 'środę', 'piątek'], answer: 2,
+        explain: '„I like Wednesday. I like water!” – Lubi środę, bo lubi wodę – w środę pływa.',
+      },
+      {
+        id: '409klp', q: 'Prawda czy fałsz?\nWe wtorek Tom śpiewa.',
+        options: ['Prawda', 'Fałsz'], answer: 0,
+        explain: '„Tuesday: I sing.” – Tuesday to wtorek, sing – śpiewać.',
+      },
     ],
   });
 })();

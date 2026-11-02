@@ -73,6 +73,8 @@
     MODES.listening.about = 'Posłuchaj nagrania i rozwiąż zadania. Nagrania czyta głos syntezatora mowy w przeglądarce – posłuchaj każdego dwa razy, możesz też włączyć wolniejsze tempo. Transkrypcję zobaczysz po sprawdzeniu odpowiedzi.';
   }
   if (YOUNG) {
+    MODES.reading.name = 'Czytanie po angielsku';
+    MODES.reading.about = 'Przeczytaj krótki tekst po angielsku i wybierz dobre odpowiedzi. Pytania są po polsku. Jeśli tekst jest trudny, kliknij 🔊 i posłuchaj go.';
     MODES.listening.name = 'Słuchanie po angielsku';
     MODES.listening.about = 'Kliknij ▶ i posłuchaj nagrania po angielsku. Potem wybierz dobrą odpowiedź. Możesz słuchać, ile razy chcesz. Co mówią w nagraniu, zobaczysz po sprawdzeniu.';
   }
@@ -572,7 +574,7 @@
           <details class="transcript" id="tr"><summary>Transkrypcja (zajrzyj po rozwiązaniu albo gdy nie słychać nagrania)</summary>${transcript}</details>
         </div>` : e.mode === 'dyktando' ? `${SPEAK ? '' : '<p class="feedback bad">Ta przeglądarka nie czyta na głos. Poproś kogoś, żeby przeczytał ci tekst z listy „Dla rodzica”.</p>'}
           <details class="transcript"><summary>Dla rodzica: co czyta lektor</summary>${e.items.map((it, k) => `<p><b>${k + 1}.</b> ${esc([].concat(it.say).map((x) => (Array.isArray(x) ? x[0] : x)).join(' '))}</p>`).join('')}</details>`
-          : `<article class="passage">${e.text}</article>`}
+          : `${SPEAK ? `<p class="say-row passage-say">${sayButton('Posłuchaj tekstu')} <span class="muted">Posłuchaj tekstu</span></p>` : ''}<article class="passage">${e.text}</article>`}
       ${e.source ? `<p class="muted source">Źródło: ${esc(e.source)}</p>` : ''}
       <div class="sheet">
         ${e.items.map((it, n) => `
@@ -604,6 +606,9 @@
       }));
       app.querySelector('#stop').onclick = () => { stopSpeech(); app.querySelectorAll('.play').forEach((x) => x.classList.remove('on')); };
     }
+
+    // tekst do przeczytania – fragmenty z lang="en" czyta głos angielski
+    if (e.text) bindSay(app.querySelector('.passage-say'), () => [e.text]);
 
     const chosen = {};
     app.querySelectorAll('.item').forEach((box) => {
