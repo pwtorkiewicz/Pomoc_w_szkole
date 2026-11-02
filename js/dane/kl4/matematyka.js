@@ -893,6 +893,97 @@
 
       // ------------------------------------------------------------------
       {
+        id: 'pole',
+        name: 'Jednostki pola i figury złożone',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 2 Miary, wym. 4 (jednostki pola: mm², cm², dm², m², km², ar, hektar), 6 (przeliczanie jednostek pola w kontekstach praktycznych); dz. 4 Figury, wym. 14 (tylko pole prostokąta i kwadratu oraz figur, które można z nich zbudować); dz. 6 Myślenie matematyczne (podział figury na części, sprawdzanie wyniku). Ciąg dalszy działu „Wielokąty, prostokąt i kwadrat, koło i okrąg”. Pola trójkątów, równoległoboków i trapezów (wym. 14) – później.' + WYBOR,
+        theory: `
+          <h3>Jednostki pola</h3>
+          <p>Pole mierzymy <b>kwadratami</b>. Każda jednostka to pole kwadratu o boku 1 jednostki długości:</p>
+          <table>
+            <tr><th>Jednostka</th><th>Kwadrat o boku</th><th>Do czego</th></tr>
+            <tr><td>1 mm² (milimetr kwadratowy)</td><td>1 mm</td><td>bardzo małe rzeczy, np. pole kratki na papierze milimetrowym</td></tr>
+            <tr><td>1 cm²</td><td>1 cm</td><td>kartka, okładka zeszytu</td></tr>
+            <tr><td>1 dm²</td><td>1 dm = 10 cm</td><td>płytka, mała tablica</td></tr>
+            <tr><td>1 m²</td><td>1 m</td><td>pokój, ściana</td></tr>
+            <tr><td>1 a (ar)</td><td>10 m</td><td>działka, ogród</td></tr>
+            <tr><td>1 ha (hektar)</td><td>100 m</td><td>pole uprawne, las, park</td></tr>
+            <tr><td>1 km²</td><td>1 km</td><td>miasto, jezioro, kraj</td></tr>
+          </table>
+          <h3>Przeliczanie</h3>
+          <p>Kwadrat 1 cm × 1 cm ma 10 rzędów po 10 kwadracików 1 mm × 1 mm. Dlatego <span class="f">1 cm² = 10 · 10 mm² = 100 mm²</span>, a nie 10 mm².</p>
+          <ul>
+            <li><span class="f">1 cm² = 100 mm²</span></li>
+            <li><span class="f">1 dm² = 100 cm²</span></li>
+            <li><span class="f">1 m² = 100 dm² = 10 000 cm²</span></li>
+            <li><span class="f">1 a = 100 m²</span> (kwadrat 10 m × 10 m)</li>
+            <li><span class="f">1 ha = 100 a = 10 000 m²</span> (kwadrat 100 m × 100 m)</li>
+            <li><span class="f">1 km² = 100 ha = 1 000 000 m²</span></li>
+          </ul>
+          <div class="tip">💡 Długość: 1 m = 100 cm. Pole: 1 m² = 100 · 100 cm² = 10 000 cm². Przy jednostkach pola mnożysz <b>dwa razy</b>, bo kwadrat ma długość i szerokość.</div>
+          <p>Przykład: działka ma 20 m × 30 m. Pole: <span class="f">20 · 30 = 600 m² = 6 a</span> (bo 100 m² = 1 a).</p>
+          <h3>Figury złożone z prostokątów</h3>
+          <p>Figurę w kształcie litery L możesz:</p>
+          <ul>
+            <li><b>podzielić</b> na dwa prostokąty i dodać ich pola,</li>
+            <li>albo <b>dorysować</b> brakujący kawałek do dużego prostokąta i odjąć jego pole.</li>
+          </ul>
+          <p>Przykład: prostokąt 8 m × 5 m, z którego wycięto róg 3 m × 2 m: <span class="f">8 · 5 − 3 · 2 = 40 − 6 = 34 m²</span>.</p>
+          <h3>Od pola do boku</h3>
+          <ul>
+            <li>Kwadrat ma pole 64 cm². Jaka liczba razy ona sama daje 64? 8 · 8 = 64, więc bok ma <b>8 cm</b>.</li>
+            <li>Prostokąt ma pole 36 cm², jeden bok 9 cm. Drugi bok: <span class="f">36 : 9 = 4 cm</span>.</li>
+          </ul>
+          <div class="tip">⚠️ Figury o tym samym polu mogą mieć różne obwody. Prostokąt 1 cm × 16 cm i kwadrat 4 cm × 4 cm mają po 16 cm² pola, ale obwody 34 cm i 16 cm.</div>
+        `,
+        flashcards: [
+          ['1 cm²', '100 mm² (kwadrat 1 cm × 1 cm to 10 · 10 kwadracików 1 mm²)'],
+          ['1 dm²', '100 cm²'],
+          ['1 m²', '100 dm² = 10 000 cm²'],
+          ['1 a (ar)', '100 m² – pole kwadratu o boku 10 m'],
+          ['1 ha (hektar)', '100 a = 10 000 m² – pole kwadratu o boku 100 m'],
+          ['1 km²', '100 ha = 1 000 000 m²'],
+          ['Dlaczego 1 m² to nie 100 cm²?', 'Kwadrat 1 m × 1 m to 100 rzędów po 100 kwadracików 1 cm²: 100 · 100 = 10 000 cm²'],
+          ['Pole figury w kształcie litery L', 'Podziel na prostokąty i dodaj pola albo od dużego prostokąta odejmij brakujący kawałek'],
+          ['Bok kwadratu o polu 64 cm²', '8 cm, bo 8 · 8 = 64'],
+          ['Bok prostokąta: pole 36 cm², drugi bok 9 cm', '36 : 9 = 4 cm'],
+        ],
+        questions: [
+          { id: 'e1tg8v', q: 'Ile milimetrów kwadratowych ma 1 cm²?', options: ['100 mm²', '10 mm²', '1000 mm²', '10 000 mm²'], answer: 0, explain: 'Kwadrat 1 cm × 1 cm to 10 rzędów po 10 kwadracików 1 mm²: 10 · 10 = 100 mm².' },
+          { id: 'bqwj1w', q: 'Ile decymetrów kwadratowych ma 1 m²?', options: ['100 dm²', '10 dm²', '1000 dm²', '10 000 dm²'], answer: 0, explain: '1 m = 10 dm, więc 1 m² = 10 · 10 dm² = 100 dm².' },
+          { id: 'na7mv9', q: 'Ile centymetrów kwadratowych ma 1 m²?', options: ['10 000 cm²', '100 cm²', '1000 cm²', '1 000 000 cm²'], answer: 0, explain: '1 m = 100 cm, więc 1 m² = 100 · 100 cm² = 10 000 cm².' },
+          { id: '64gokm', q: 'Ile metrów kwadratowych ma 1 ar?', options: ['100 m²', '10 m²', '1000 m²', '10 000 m²'], answer: 0, explain: 'Ar to pole kwadratu o boku 10 m: 10 · 10 = 100 m².' },
+          { id: '7jwsnt', q: 'Ile metrów kwadratowych ma 1 hektar?', options: ['10 000 m²', '100 m²', '1000 m²', '1 000 000 m²'], answer: 0, explain: 'Hektar to pole kwadratu o boku 100 m: 100 · 100 = 10 000 m² (czyli 100 arów).' },
+          { id: 'e9c2l1', q: 'Działka ma kształt prostokąta 20 m na 30 m. Ile to arów?', options: ['6 a', '60 a', '600 a', '50 a'], answer: 0, explain: 'Pole: 20 · 30 = 600 m². 1 a = 100 m², więc 600 m² = 6 a.' },
+          { id: '0rf17i', q: 'W jakich jednostkach najlepiej podać powierzchnię Polski?', options: ['w km²', 'w cm²', 'w dm²', 'w mm²'], answer: 0, explain: 'Duże obszary – kraje, miasta, jeziora – podajemy w kilometrach kwadratowych.' },
+          { id: 'glzl1s', q: 'W jakich jednostkach najlepiej podać pole kartki z zeszytu?', options: ['w cm²', 'w km²', 'w ha', 'w a'], answer: 0, explain: 'Kartka ma boki rzędu kilkunastu–kilkudziesięciu centymetrów, więc jej pole podajemy w cm².' },
+          { id: '6inl3w', q: 'Zamień: 3 m² = ? dm²', options: ['300 dm²', '30 dm²', '3000 dm²', '30 000 dm²'], answer: 0, explain: '1 m² = 100 dm², więc 3 m² = 300 dm².' },
+          { id: '0il2uj', q: 'Zamień: 500 mm² = ? cm²', options: ['5 cm²', '50 cm²', '5000 cm²', '0,5 cm²'], answer: 0, explain: '100 mm² = 1 cm², więc 500 mm² = 500 : 100 = 5 cm².' },
+          { id: '3b6f5o', q: 'Kwadrat ma pole 64 cm². Jaką długość ma jego bok?', options: ['8 cm', '16 cm', '32 cm', '4 cm'], answer: 0, explain: '8 · 8 = 64, więc bok ma 8 cm. (16 cm to bok kwadratu o obwodzie 64 cm.)' },
+          { id: 'a6mmbs', q: 'Prostokąt ma pole 36 cm², a jeden z jego boków ma 9 cm. Ile ma drugi bok?', options: ['4 cm', '27 cm', '9 cm', '45 cm'], answer: 0, explain: 'Pole = bok · bok, więc drugi bok = 36 : 9 = 4 cm. Sprawdzenie: 9 · 4 = 36.' },
+          {
+            id: '6f3dyx',
+            q: 'Bok kratki ma 1 cm. Jakie pole ma zamalowana figura?',
+            svg: `<svg viewBox="0 0 300 220" role="img" aria-label="Kratka. Zamalowana figura w kształcie litery L: prostokąt 6 kratek na 4 kratki bez kwadratu 2 na 2 kratki w prawym górnym rogu.">
+      <path d="M60,40 L180,40 L180,100 L240,100 L240,160 L60,160 Z" class="f2"/>
+      <g class="ln-thin">
+        <line x1="30" y1="10" x2="30" y2="190"/><line x1="60" y1="10" x2="60" y2="190"/><line x1="90" y1="10" x2="90" y2="190"/><line x1="120" y1="10" x2="120" y2="190"/><line x1="150" y1="10" x2="150" y2="190"/><line x1="180" y1="10" x2="180" y2="190"/><line x1="210" y1="10" x2="210" y2="190"/><line x1="240" y1="10" x2="240" y2="190"/><line x1="270" y1="10" x2="270" y2="190"/>
+        <line x1="10" y1="40" x2="290" y2="40"/><line x1="10" y1="70" x2="290" y2="70"/><line x1="10" y1="100" x2="290" y2="100"/><line x1="10" y1="130" x2="290" y2="130"/><line x1="10" y1="160" x2="290" y2="160"/><line x1="10" y1="190" x2="290" y2="190"/>
+      </g>
+      <path d="M60,40 L180,40 L180,100 L240,100 L240,160 L60,160 Z" class="ln s2 sw" fill="none"/>
+    </svg>`,
+            options: ['20 cm²', '24 cm²', '16 cm²', '28 cm²'],
+            answer: 0,
+            explain: 'Cały prostokąt ma 6 · 4 = 24 kratki. Brakuje rogu 2 · 2 = 4 kratki. 24 − 4 = 20 cm². (Albo: 4 · 4 + 2 · 2 = 16 + 4 = 20.)',
+          },
+          { id: 'luggvt', q: 'Z prostokątnego trawnika 8 m × 5 m wycięto prostokątny róg 3 m × 2 m na piaskownicę. Jakie pole ma trawnik po wycięciu rogu?', options: ['34 m²', '40 m²', '6 m²', '46 m²'], answer: 0, explain: 'Cały prostokąt: 8 · 5 = 40 m². Piaskownica: 3 · 2 = 6 m². Trawnik: 40 − 6 = 34 m².' },
+          { id: 'ljeys0', q: 'Prostokąt 1 cm × 16 cm, prostokąt 2 cm × 8 cm i kwadrat 4 cm × 4 cm mają po 16 cm² pola. Która figura ma największy obwód?', options: ['prostokąt 1 cm × 16 cm', 'prostokąt 2 cm × 8 cm', 'kwadrat 4 cm × 4 cm', 'wszystkie mają taki sam obwód'], answer: 0, explain: 'Obwody: 1 + 16 + 1 + 16 = 34 cm; 2 + 8 + 2 + 8 = 20 cm; 4 · 4 = 16 cm. Takie samo pole nie znaczy takiego samego obwodu.' },
+          { id: 'w1vf2g', q: 'Boisko ma 100 m długości i 60 m szerokości. Ile to arów?', options: ['60 a', '6 a', '600 a', '6000 a'], answer: 0, explain: 'Pole: 100 · 60 = 6000 m². 1 a = 100 m², więc 6000 m² = 60 a.' },
+          { id: 'c0eie7', q: 'Hektar to pole kwadratu o boku…', options: ['100 m', '10 m', '1000 m', '1 m'], answer: 0, explain: '100 m · 100 m = 10 000 m² = 1 ha. Kwadrat o boku 10 m ma pole 1 ara.' },
+          { id: 'r2c47y', q: 'Prawda czy fałsz?\n1 km² = 100 ha', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '1 km² = 1000 m · 1000 m = 1 000 000 m². 1 ha = 10 000 m². 1 000 000 : 10 000 = 100.' },
+          { id: 'hxdv6a', q: 'Ściana ma 4 m szerokości i 3 m wysokości. Jedna puszka farby wystarcza na 6 m². Ile puszek potrzeba, żeby raz pomalować ścianę?', options: ['2', '1', '3', '12'], answer: 0, explain: 'Pole ściany: 4 · 3 = 12 m². 12 : 6 = 2 puszki.' },
+        ],
+      },
+      {
         id: 'bryly',
         name: 'Prostopadłościan i sześcian',
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 18 (rozpoznawanie prostopadłościanu i sześcianu; walca, stożka i kuli), 19 (wierzchołki, krawędzie, ściany – tylko prostopadłościan i sześcian), 20 (tylko siatka prostopadłościanu i sześcianu, model z siatki); dz. 6 Myślenie matematyczne (suma długości krawędzi). Pole powierzchni i objętość (wym. 21–22), graniastosłupy i ostrosłupy – później.' + WYBOR,
@@ -1100,6 +1191,91 @@
 
       // ------------------------------------------------------------------
       {
+        id: 'ulamki-dzialania',
+        name: 'Ułamki zwykłe – skracanie, dodawanie, odejmowanie',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 19 (skracanie i rozszerzanie ułamków; sprowadzanie do wspólnego mianownika – tylko gdy jeden mianownik jest wielokrotnością drugiego), 21 (ułamki zwykłe na osi liczbowej), 27 (tylko dodawanie i odejmowanie ułamków i liczb mieszanych; mnożenie i dzielenie – później), 20 (zamiana wyniku na liczbę mieszaną). Ciąg dalszy działu „Ułamki zwykłe – pierwsze kroki”.' + WYBOR,
+        theory: `
+          <h3>Ułamki równe</h3>
+          <p>Połowa tabliczki czekolady to tyle samo co dwie czwarte albo cztery ósme: <span class="f">1/2 = 2/4 = 4/8</span>. Takie ułamki to <b>ułamki równe</b> – różnie zapisane, ale oznaczają tę samą część.</p>
+          <h3>Rozszerzanie i skracanie</h3>
+          <ul>
+            <li><b>Rozszerzanie</b> – mnożysz licznik i mianownik przez tę samą liczbę (nie zero): <span class="f">2/3 = (2 · 4)/(3 · 4) = 8/12</span>.</li>
+            <li><b>Skracanie</b> – dzielisz licznik i mianownik przez tę samą liczbę: <span class="f">6/9 = (6 : 3)/(9 : 3) = 2/3</span>.</li>
+            <li>Ułamek <b>nieskracalny</b> – licznik i mianownik nie mają wspólnego dzielnika większego niż 1, np. 3/4. Wynik działania zwykle skracamy tak, jak się da.</li>
+          </ul>
+          <div class="tip">💡 Przy rozszerzaniu i skracaniu wartość ułamka się nie zmienia – zmienia się tylko wielkość kawałków i ich liczba.</div>
+          <h3>Dodawanie i odejmowanie (te same mianowniki)</h3>
+          <p>Dodajesz albo odejmujesz <b>tylko liczniki</b>. Mianownik zostaje ten sam.</p>
+          <ul>
+            <li><span class="f">2/7 + 3/7 = 5/7</span></li>
+            <li><span class="f">7/9 − 4/9 = 3/9 = 1/3</span></li>
+            <li><span class="f">3/5 + 4/5 = 7/5 = 1 2/5</span> – wynik będący ułamkiem niewłaściwym zamieniamy na liczbę mieszaną.</li>
+          </ul>
+          <div class="tip">⚠️ Błąd: 2/7 + 3/7 = 5/14. Mianowników nie dodajemy – kawałki dalej są „siódme”.</div>
+          <h3>Dopełnianie do całości</h3>
+          <p>Całość to <span class="f">8/8</span>, <span class="f">5/5</span> itd. Dlatego <span class="f">1 − 3/8 = 8/8 − 3/8 = 5/8</span>.</p>
+          <h3>Liczby mieszane</h3>
+          <ul>
+            <li>Dodajesz osobno całości i osobno ułamki: <span class="f">2 1/5 + 1 3/5 = 3 4/5</span>.</li>
+            <li>Gdy ułamki dadzą całość lub więcej, zamień nadmiar: <span class="f">1 3/4 + 2/4 = 1 5/4 = 2 1/4</span>.</li>
+            <li>Odejmowanie od całości – „rozmień” jedną całość: <span class="f">3 − 1/4 = 2 4/4 − 1/4 = 2 3/4</span>.</li>
+            <li>Gdy ułamka jest za mało: <span class="f">2 1/4 − 3/4 = 1 5/4 − 3/4 = 1 2/4 = 1 1/2</span>.</li>
+          </ul>
+          <h3>Różne mianowniki</h3>
+          <p>Jeśli jeden mianownik jest wielokrotnością drugiego, rozszerz ułamek o mniejszym mianowniku: <span class="f">1/2 + 1/4 = 2/4 + 1/4 = 3/4</span>, <span class="f">2/3 − 1/6 = 4/6 − 1/6 = 3/6 = 1/2</span>.</p>
+          <h3>Ułamki na osi liczbowej</h3>
+          <p>Odcinek od 0 do 1 dzielisz na tyle równych części, ile wynosi mianownik. Ułamek 3/5 to trzecia kreska po zerze, gdy odcinek od 0 do 1 podzielono na 5 części.</p>
+        `,
+        flashcards: [
+          ['Ułamki równe', 'Różnie zapisane, ale oznaczają tę samą część, np. 1/2 = 2/4 = 4/8'],
+          ['Rozszerzanie ułamka', 'Mnożenie licznika i mianownika przez tę samą liczbę: 2/3 = 8/12'],
+          ['Skracanie ułamka', 'Dzielenie licznika i mianownika przez tę samą liczbę: 6/9 = 2/3'],
+          ['Ułamek nieskracalny', 'Licznik i mianownik nie mają wspólnego dzielnika większego niż 1, np. 3/4'],
+          ['Dodawanie ułamków o tych samych mianownikach', 'Dodajesz liczniki, mianownik zostaje: 2/7 + 3/7 = 5/7'],
+          ['3/5 + 4/5', '7/5 = 1 2/5'],
+          ['1 − 3/8', '8/8 − 3/8 = 5/8'],
+          ['3 − 1/4', '2 4/4 − 1/4 = 2 3/4'],
+          ['2 1/4 − 3/4', '1 5/4 − 3/4 = 1 2/4 = 1 1/2'],
+          ['1/2 + 1/4', '2/4 + 1/4 = 3/4'],
+          ['Najczęstszy błąd przy dodawaniu ułamków', 'Dodawanie mianowników: 2/7 + 3/7 to NIE 5/14'],
+        ],
+        questions: [
+          { id: 'k90obu', q: 'Uzupełnij: 1/2 = ?/8', options: ['4', '2', '6', '1'], answer: 0, explain: 'Mianownik 2 mnożymy przez 4, żeby dostać 8. Licznik też mnożymy przez 4: 1 · 4 = 4. Więc 1/2 = 4/8.' },
+          { id: '8y6p8j', q: 'Rozszerz ułamek 2/3 przez 4.', options: ['8/12', '6/7', '8/3', '2/12'], answer: 0, explain: 'Mnożymy licznik i mianownik przez 4: (2 · 4)/(3 · 4) = 8/12.' },
+          { id: '2fpn0f', q: 'Skróć ułamek 6/9.', options: ['2/3', '3/4', '1/3', '6/3'], answer: 0, explain: 'Licznik i mianownik dzielimy przez 3: (6 : 3)/(9 : 3) = 2/3.' },
+          { id: '33tcap', q: 'Skróć ułamek 12/16 tak bardzo, jak się da.', options: ['3/4', '6/8', '4/3', '2/4'], answer: 0, explain: '12 i 16 dzielą się przez 4: 12/16 = 3/4. (6/8 to też ten sam ułamek, ale da się go jeszcze skrócić przez 2.)' },
+          { id: '6krrc2', q: 'Który ułamek jest równy 1/2?', options: ['4/8', '2/3', '3/5', '5/8'], answer: 0, explain: '4/8 po skróceniu przez 4 to 1/2. Ułamek jest równy 1/2, gdy licznik jest połową mianownika: 4 to połowa 8.' },
+          { id: '18nka7', q: 'Oblicz: 2/7 + 3/7', options: ['5/7', '5/14', '6/7', '1/7'], answer: 0, explain: 'Te same mianowniki – dodajemy liczniki: 2 + 3 = 5. Mianownik zostaje 7. (5/14 to błąd – mianowników nie dodajemy.)' },
+          { id: 'g9frnq', q: 'Oblicz: 7/9 − 4/9', options: ['3/9', '3/0', '11/9', '3/18'], answer: 0, explain: 'Odejmujemy liczniki: 7 − 4 = 3, mianownik zostaje 9. Wynik 3/9 można skrócić do 1/3.' },
+          { id: 'ri5lh2', q: 'Oblicz: 3/5 + 4/5', options: ['1 2/5', '7/10', '1 1/5', '12/5'], answer: 0, explain: '3/5 + 4/5 = 7/5. To ułamek niewłaściwy: 7 : 5 = 1 reszty 2, więc 7/5 = 1 2/5.' },
+          { id: 'qoxmig', q: 'Oblicz: 1 − 3/8', options: ['5/8', '2/8', '3/8', '4/8'], answer: 0, explain: 'Całość to 8/8. 8/8 − 3/8 = 5/8.' },
+          { id: 'y55wfh', q: 'Oblicz: 2 1/5 + 1 3/5', options: ['3 4/5', '3 4/10', '2 4/5', '4 4/5'], answer: 0, explain: 'Całości: 2 + 1 = 3. Ułamki: 1/5 + 3/5 = 4/5. Razem 3 4/5.' },
+          { id: '2baock', q: 'Oblicz: 3 − 1/4', options: ['2 3/4', '3 3/4', '2 1/4', '3 1/4'], answer: 0, explain: 'Rozmieniamy jedną całość: 3 = 2 4/4. Potem 2 4/4 − 1/4 = 2 3/4.' },
+          { id: '6pt88e', q: 'Oblicz: 2 1/4 − 3/4', options: ['1 1/2', '2 1/2', '1 3/4', '1 1/4'], answer: 0, explain: '2 1/4 = 1 5/4. Potem 1 5/4 − 3/4 = 1 2/4 = 1 1/2.' },
+          { id: 'y02z91', q: 'Oblicz: 1/2 + 1/4', options: ['3/4', '2/6', '1/6', '2/4'], answer: 0, explain: 'Rozszerzamy 1/2 do czwartych: 1/2 = 2/4. Potem 2/4 + 1/4 = 3/4.' },
+          { id: 'm66l6p', q: 'Pizzę podzielono na 8 równych kawałków. Tomek zjadł 2/8 pizzy, a Ola 3/8. Jaka część pizzy została?', options: ['3/8', '5/8', '5/16', '1/8'], answer: 0, explain: 'Zjedli razem 2/8 + 3/8 = 5/8. Zostało 8/8 − 5/8 = 3/8.' },
+          { id: 'y2xj0s', q: 'Prawda czy fałsz?\nGdy dodajesz ułamki o tych samych mianownikach, dodajesz liczniki i dodajesz mianowniki.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Dodajesz tylko liczniki. Mianownik mówi, jakie są kawałki (np. siódme) – po dodaniu dalej są takie same.' },
+          { id: 'vxf6sg', q: 'Prawda czy fałsz?\nUłamki 2/3 i 4/6 są równe.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '4/6 po skróceniu przez 2 to 2/3.' },
+          {
+            id: 'scexgu',
+            q: 'Jaki ułamek zaznaczono na osi liczbowej?',
+            svg: `<svg viewBox="0 0 360 110" role="img" aria-label="Oś liczbowa od 0 do 1 podzielona na 5 równych części. Kropka na trzeciej kresce po zerze.">
+      <line x1="30" y1="60" x2="330" y2="60" class="ln sw"/>
+      <g class="ln"><line x1="40" y1="48" x2="40" y2="72"/><line x1="96" y1="52" x2="96" y2="68"/><line x1="152" y1="52" x2="152" y2="68"/><line x1="208" y1="52" x2="208" y2="68"/><line x1="264" y1="52" x2="264" y2="68"/><line x1="320" y1="48" x2="320" y2="72"/></g>
+      <circle cx="208" cy="60" r="7" class="f2 s2"/>
+      <text x="40" y="96" class="tx-b" text-anchor="middle">0</text>
+      <text x="320" y="96" class="tx-b" text-anchor="middle">1</text>
+      <text x="208" y="36" class="tx-b t2" text-anchor="middle">?</text>
+    </svg>`,
+            options: ['3/5', '3/6', '2/5', '1/3'],
+            answer: 0,
+            explain: 'Odcinek od 0 do 1 podzielono na 5 równych części, więc każda to 1/5. Kropka jest na trzeciej kresce po zerze: 3/5.',
+          },
+          { id: 'iupzax', q: 'Kuba szedł do szkoły 3/4 godziny, a potem jechał autobusem 1/4 godziny. Ile czasu zajęła mu cała droga?', options: ['1 godzinę', '4/8 godziny', '1/2 godziny', '2 godziny'], answer: 0, explain: '3/4 + 1/4 = 4/4 = 1. Cała droga trwała 1 godzinę.' },
+          { id: 'p0olgq', q: 'W butelce był 1 litr soku. Wypito 3/10 litra. Ile soku zostało?', options: ['7/10 litra', '3/10 litra', '2/10 litra', '1/10 litra'], answer: 0, explain: '1 = 10/10. 10/10 − 3/10 = 7/10 litra.' },
+        ],
+      },
+      {
         id: 'dziesietne',
         name: 'Ułamki dziesiętne – pierwsze kroki',
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 21 (tylko ułamki dziesiętne na osi liczbowej), 22 (ułamki dziesiętne jako ułamki zwykłe), 23 (tylko ułamki zwykłe o mianownikach 10, 100, 1000 jako ułamki dziesiętne), 26 (porównywanie ułamków dziesiętnych), 28a (dodawanie i odejmowanie – proste przypadki, w pamięci); dz. 2 Miary, wym. 10 (wyrażenia dwumianowane: zł i gr, m i cm, cm i mm, kg i g). Mnożenie i dzielenie ułamków dziesiętnych – później.' + WYBOR,
@@ -1202,6 +1378,103 @@
       },
 
       // ------------------------------------------------------------------
+      {
+        id: 'rownania',
+        name: 'Wyrażenia z literą i proste równania',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 3 Algebra, wym. 1 (opisywanie wielkości za pomocą wyrażeń algebraicznych w kontekście praktycznym), 2 (wartość prostego wyrażenia), 3 (proste wzory z literami), 4 (układanie równań na podstawie treści zadania), 5 (proste równania pierwszego stopnia z jedną niewiadomą występującą po jednej stronie równania – tu tylko z liczbami naturalnymi, rozwiązywane działaniem odwrotnym); dz. 6 Myślenie matematyczne (sprawdzanie rozwiązania).' + WYBOR,
+        theory: `
+          <h3>Litera zamiast liczby</h3>
+          <p>Gdy nie znamy liczby albo może ona być różna, zapisujemy ją <b>literą</b>, np. x, a, n. Taki zapis z literami i znakami działań to <b>wyrażenie algebraiczne</b>.</p>
+          <table>
+            <tr><th>Słowami</th><th>Wyrażenie</th></tr>
+            <tr><td>liczba o 5 większa od x</td><td>x + 5</td></tr>
+            <tr><td>liczba o 5 mniejsza od x</td><td>x − 5</td></tr>
+            <tr><td>liczba 3 razy większa od n</td><td>3 · n</td></tr>
+            <tr><td>liczba 2 razy mniejsza od a</td><td>a : 2</td></tr>
+            <tr><td>Ania ma x lat, brat jest o 3 lata starszy</td><td>wiek brata: x + 3</td></tr>
+            <tr><td>zeszyt kosztuje z zł, kupuję 4 zeszyty</td><td>4 · z zł</td></tr>
+          </table>
+          <h3>Wartość wyrażenia</h3>
+          <p>Podstawiasz liczbę w miejsce litery i liczysz (pamiętaj o kolejności działań). Dla a = 4: <span class="f">2 · a + 3 = 2 · 4 + 3 = 8 + 3 = 11</span>.</p>
+          <h3>Wzory</h3>
+          <p>Wzór to wyrażenie, które mówi, jak coś obliczyć. Obwód kwadratu o boku a: <span class="f">Ob = 4 · a</span>. Dla a = 6 cm: Ob = 4 · 6 = 24 cm.</p>
+          <h3>Równanie</h3>
+          <p><b>Równanie</b> to równość, w której jest <b>niewiadoma</b> (litera), np. <span class="f">x + 7 = 15</span>. <b>Rozwiązanie</b> równania to liczba, która wstawiona za x daje prawdziwą równość. Tu x = 8, bo 8 + 7 = 15.</p>
+          <p>Równanie jest jak <b>waga w równowadze</b>: po obu stronach jest tyle samo.</p>
+          <h3>Jak rozwiązać? Działanie odwrotne</h3>
+          <table>
+            <tr><th>Równanie</th><th>Myślę</th><th>Rozwiązanie</th></tr>
+            <tr><td>x + 7 = 15</td><td>15 − 7</td><td>x = 8</td></tr>
+            <tr><td>x − 6 = 9</td><td>9 + 6</td><td>x = 15</td></tr>
+            <tr><td>4 · x = 28</td><td>28 : 4</td><td>x = 7</td></tr>
+            <tr><td>x : 3 = 5</td><td>5 · 3</td><td>x = 15</td></tr>
+            <tr><td>20 − x = 12</td><td>20 − 12 (ile odjąć od 20, żeby zostało 12?)</td><td>x = 8</td></tr>
+          </table>
+          <div class="tip">💡 Zawsze <b>sprawdź</b>: wstaw wynik do równania. 4 · 7 = 28 – zgadza się!</div>
+          <h3>Zadanie tekstowe → równanie</h3>
+          <ol>
+            <li>Oznacz niewiadomą literą: „x – cena jednego długopisu”.</li>
+            <li>Ułóż równanie z treści: 3 długopisy kosztowały 12 zł → <span class="f">3 · x = 12</span>.</li>
+            <li>Rozwiąż: x = 12 : 3 = 4.</li>
+            <li>Sprawdź (3 · 4 = 12) i napisz odpowiedź: długopis kosztuje 4 zł.</li>
+          </ol>
+        `,
+        flashcards: [
+          ['Wyrażenie algebraiczne', 'Zapis z literami, liczbami i znakami działań, np. x + 5, 3 · n'],
+          ['Liczba o 5 większa od x', 'x + 5'],
+          ['Liczba 3 razy większa od n', '3 · n'],
+          ['Wartość wyrażenia 2 · a + 3 dla a = 4', '2 · 4 + 3 = 11'],
+          ['Wzór na obwód kwadratu', 'Ob = 4 · a'],
+          ['Równanie', 'Równość, w której jest niewiadoma, np. x + 7 = 15'],
+          ['Rozwiązanie równania', 'Liczba, która wstawiona za niewiadomą daje prawdziwą równość'],
+          ['x + 7 = 15', 'x = 15 − 7 = 8'],
+          ['4 · x = 28', 'x = 28 : 4 = 7'],
+          ['x : 3 = 5', 'x = 5 · 3 = 15'],
+          ['Jak sprawdzić rozwiązanie?', 'Wstawić je do równania i sprawdzić, czy obie strony są równe'],
+        ],
+        questions: [
+          { id: 'x8soq4', q: 'Jak zapisać liczbę o 5 większą od x?', options: ['x + 5', 'x − 5', '5 · x', 'x : 5'], answer: 0, explain: '„O 5 większa” – dodajemy 5: x + 5. (5 · x to liczba 5 razy większa.)' },
+          { id: 'kd0ok8', q: 'Jak zapisać liczbę 3 razy większą od n?', options: ['3 · n', 'n + 3', 'n − 3', 'n : 3'], answer: 0, explain: '„3 razy większa” – mnożymy przez 3: 3 · n.' },
+          { id: 'ui716j', q: 'Oblicz wartość wyrażenia 2 · a + 3 dla a = 4.', options: ['11', '14', '9', '24'], answer: 0, explain: '2 · 4 + 3 = 8 + 3 = 11. Najpierw mnożenie, potem dodawanie.' },
+          { id: '10900t', q: 'Ania ma x lat. Jej brat jest o 3 lata starszy. Ile lat ma brat?', options: ['x + 3', 'x − 3', '3 · x', 'x : 3'], answer: 0, explain: 'Starszy o 3 lata – dodajemy 3: x + 3.' },
+          { id: 'rmyk60', q: 'Zeszyt kosztuje z zł. Ile kosztują 4 takie zeszyty?', options: ['4 · z zł', 'z + 4 zł', 'z : 4 zł', 'z − 4 zł'], answer: 0, explain: '4 zeszyty po z zł: 4 · z zł.' },
+          { id: '9hbthv', q: 'Rozwiąż równanie: x + 7 = 15', options: ['x = 8', 'x = 22', 'x = 7', 'x = 105'], answer: 0, explain: 'Jaka liczba po dodaniu 7 daje 15? x = 15 − 7 = 8. Sprawdzenie: 8 + 7 = 15.' },
+          { id: 'l3dx21', q: 'Rozwiąż równanie: x − 6 = 9', options: ['x = 15', 'x = 3', 'x = 54', 'x = 6'], answer: 0, explain: 'Od jakiej liczby odjąć 6, żeby zostało 9? x = 9 + 6 = 15. Sprawdzenie: 15 − 6 = 9.' },
+          { id: '9xp5x2', q: 'Rozwiąż równanie: 4 · x = 28', options: ['x = 7', 'x = 24', 'x = 32', 'x = 112'], answer: 0, explain: 'Jaką liczbę pomnożyć przez 4, żeby dostać 28? x = 28 : 4 = 7. Sprawdzenie: 4 · 7 = 28.' },
+          { id: 'mz4ree', q: 'Rozwiąż równanie: x : 3 = 5', options: ['x = 15', 'x = 2', 'x = 8', 'x = 5'], answer: 0, explain: 'Jaką liczbę podzielić przez 3, żeby dostać 5? x = 5 · 3 = 15. Sprawdzenie: 15 : 3 = 5.' },
+          { id: 'ntoiwu', q: 'Rozwiąż równanie: 20 − x = 12', options: ['x = 8', 'x = 32', 'x = 12', 'x = 10'], answer: 0, explain: 'Ile trzeba odjąć od 20, żeby zostało 12? x = 20 − 12 = 8. Sprawdzenie: 20 − 8 = 12.' },
+          { id: '18akfa', q: 'Która liczba jest rozwiązaniem równania x + 9 = 20?', options: ['11', '29', '9', '20'], answer: 0, explain: '11 + 9 = 20 – równość jest prawdziwa.' },
+          { id: 'fhcyx5', q: 'Kasia rozwiązała równanie 5 · x = 35 i otrzymała x = 6. Czy dobrze?', options: ['nie – poprawne rozwiązanie to x = 7', 'tak, x = 6', 'nie – poprawne rozwiązanie to x = 30', 'nie – poprawne rozwiązanie to x = 40'], answer: 0, explain: 'Sprawdzenie: 5 · 6 = 30, a nie 35. Poprawnie: x = 35 : 5 = 7, bo 5 · 7 = 35.' },
+          { id: 'dhw95t', q: 'Pomyślałem liczbę, dodałem do niej 12 i otrzymałem 30. Które równanie to opisuje?', options: ['x + 12 = 30', 'x − 12 = 30', '12 · x = 30', 'x + 30 = 12'], answer: 0, explain: 'Liczba x, do której dodano 12, daje 30: x + 12 = 30. Rozwiązanie: x = 18.' },
+          { id: 'l4rubc', q: 'Bartek kupił 3 jednakowe długopisy i zapłacił 12 zł. Ile kosztował jeden długopis?', options: ['4 zł', '9 zł', '15 zł', '36 zł'], answer: 0, explain: 'Równanie: 3 · x = 12, więc x = 12 : 3 = 4 zł. Sprawdzenie: 3 · 4 = 12.' },
+          { id: 'i8jpto', q: 'Obwód kwadratu obliczamy ze wzoru Ob = 4 · a. Jaki obwód ma kwadrat o boku 6 cm?', options: ['24 cm', '10 cm', '36 cm', '12 cm'], answer: 0, explain: 'Ob = 4 · 6 = 24 cm. (36 cm² to pole tego kwadratu.)' },
+          { id: 'f8hvan', q: 'Prawda czy fałsz?\nRównanie to równość, w której występuje niewiadoma.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Np. x + 7 = 15 to równanie – x to niewiadoma.' },
+          {
+            id: 'g5jbnm',
+            q: 'Waga jest w równowadze. Ile kilogramów waży worek x?',
+            svg: `<svg viewBox="0 0 340 200" role="img" aria-label="Waga szalkowa w równowadze. Na lewej szalce worek oznaczony x i odważnik 3 kg. Na prawej szalce odważnik 8 kg.">
+      <path d="M150,190 L190,190 L176,90 L164,90 Z" class="f4 s4"/>
+      <line x1="40" y1="90" x2="300" y2="90" class="ln sw"/>
+      <circle cx="170" cy="90" r="6" class="t2"/>
+      <line x1="70" y1="90" x2="70" y2="150" class="ln-thin"/>
+      <line x1="270" y1="90" x2="270" y2="150" class="ln-thin"/>
+      <path d="M20,150 L120,150 L110,162 L30,162 Z" class="f1 s1"/>
+      <path d="M220,150 L320,150 L310,162 L230,162 Z" class="f1 s1"/>
+      <rect x="30" y="108" width="44" height="42" rx="12" class="f2 s2"/>
+      <text x="52" y="136" class="tx-b" text-anchor="middle">x</text>
+      <rect x="80" y="122" width="34" height="28" rx="4" class="f5 s5"/>
+      <text x="97" y="142" class="tx-s" text-anchor="middle">3 kg</text>
+      <rect x="248" y="114" width="44" height="36" rx="4" class="f5 s5"/>
+      <text x="270" y="137" class="tx" text-anchor="middle">8 kg</text>
+    </svg>`,
+            options: ['5 kg', '11 kg', '8 kg', '3 kg'],
+            answer: 0,
+            explain: 'Po obu stronach jest tyle samo: x + 3 = 8. Więc x = 8 − 3 = 5 kg.',
+          },
+          { id: 'o2suea', q: 'Oblicz wartość wyrażenia 5 · (b − 2) dla b = 6.', options: ['20', '28', '4', '30'], answer: 0, explain: 'Najpierw nawias: 6 − 2 = 4. Potem 5 · 4 = 20.' },
+          { id: 'qqehpv', q: 'Dla jakiej liczby y wyrażenie y + 4 ma wartość 10?', options: ['6', '14', '40', '4'], answer: 0, explain: 'y + 4 = 10, więc y = 10 − 4 = 6.' },
+        ],
+      },
       {
         id: 'dane',
         name: 'Tabele i diagramy',

@@ -1420,3 +1420,318 @@ window.LESSONS['matematyka/symetria'] = [
     check: { q: 'Punkt leży 2 kratki na prawo od pionowej osi. Gdzie jest jego obraz?', options: ['4 kratki na lewo od osi', '2 kratki na lewo od osi', 'na osi'], answer: 1, explain: 'Tyle samo kratek, ale po drugiej stronie osi.' },
   },
 ];
+
+window.LESSONS['matematyka/ulamki-dzialania'] = [
+  {
+    title: 'Ta sama część, inny zapis',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Trzy jednakowe paski. Pierwszy podzielony na 2 części – zamalowana 1. Drugi na 4 części – zamalowane 2. Trzeci na 8 części – zamalowane 4. Zamalowane części są tak samo długie: 1/2 = 2/4 = 4/8.">
+      <rect x="20" y="20" width="160" height="34" class="f2"/><rect x="20" y="20" width="320" height="34" class="ln"/><line x1="180" y1="20" x2="180" y2="54" class="ln"/>
+      <rect x="20" y="80" width="160" height="34" class="f2"/><rect x="20" y="80" width="320" height="34" class="ln"/>
+      <g class="ln"><line x1="100" y1="80" x2="100" y2="114"/><line x1="180" y1="80" x2="180" y2="114"/><line x1="260" y1="80" x2="260" y2="114"/></g>
+      <rect x="20" y="140" width="160" height="34" class="f2"/><rect x="20" y="140" width="320" height="34" class="ln"/>
+      <g class="ln"><line x1="60" y1="140" x2="60" y2="174"/><line x1="100" y1="140" x2="100" y2="174"/><line x1="140" y1="140" x2="140" y2="174"/><line x1="180" y1="140" x2="180" y2="174"/><line x1="220" y1="140" x2="220" y2="174"/><line x1="260" y1="140" x2="260" y2="174"/><line x1="300" y1="140" x2="300" y2="174"/></g>
+      <line x1="180" y1="10" x2="180" y2="190" class="dash s2"/>
+      <g class="tx-b" text-anchor="middle"><text x="372" y="44">1/2</text><text x="372" y="104">2/4</text><text x="372" y="164">4/8</text></g>
+    </svg>`,
+    text: `<p>Połowa paska to tyle samo, co dwie czwarte albo cztery ósme: <b>1/2 = 2/4 = 4/8</b>. To <b>ułamki równe</b> – zapis jest inny, ale część ta sama.</p>
+      <p>Im więcej kawałków (większy mianownik), tym są mniejsze – więc trzeba ich wziąć więcej (większy licznik).</p>`,
+    remember: 'Ułamki równe oznaczają tę samą część całości, np. 1/2 = 2/4 = 4/8.',
+    hook: 'Czekolada przełamana na pół albo na ćwiartki – zjesz tyle samo, jeśli weźmiesz dwie ćwiartki zamiast połowy.',
+    check: { q: 'Który ułamek jest równy 1/2?', options: ['3/6', '2/6', '1/4'], answer: 0, explain: '3 to połowa 6, więc 3/6 = 1/2.' },
+  },
+  {
+    title: 'Rozszerzanie i skracanie',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Rozszerzanie: 2/3 – licznik i mianownik razy 4 – daje 8/12. Skracanie: 6/9 – licznik i mianownik podzielone przez 3 – daje 2/3.">
+      <defs><marker id="a-k4m-uld-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <text x="200" y="22" class="tx-s" text-anchor="middle">rozszerzanie: mnożę górę i dół przez tę samą liczbę</text>
+      <g class="tx-b" text-anchor="middle"><text x="110" y="56">2</text><text x="110" y="88">3</text><text x="290" y="56">8</text><text x="290" y="88">12</text></g>
+      <line x1="96" y1="65" x2="124" y2="65" class="ln sw"/><line x1="274" y1="65" x2="306" y2="65" class="ln sw"/>
+      <line x1="140" y1="50" x2="260" y2="50" class="ln s2 sw" marker-end="url(#a-k4m-uld-1)"/>
+      <line x1="140" y1="82" x2="260" y2="82" class="ln s2 sw" marker-end="url(#a-k4m-uld-1)"/>
+      <text x="200" y="42" class="tx t2" text-anchor="middle">· 4</text><text x="200" y="104" class="tx t2" text-anchor="middle">· 4</text>
+      <text x="200" y="128" class="tx-s" text-anchor="middle">skracanie: dzielę górę i dół przez tę samą liczbę</text>
+      <g class="tx-b" text-anchor="middle"><text x="110" y="160">6</text><text x="110" y="192">9</text><text x="290" y="160">2</text><text x="290" y="192">3</text></g>
+      <line x1="96" y1="169" x2="124" y2="169" class="ln sw"/><line x1="276" y1="169" x2="304" y2="169" class="ln sw"/>
+      <line x1="140" y1="154" x2="260" y2="154" class="ln s3 sw" marker-end="url(#a-k4m-uld-1)"/>
+      <line x1="140" y1="186" x2="260" y2="186" class="ln s3 sw" marker-end="url(#a-k4m-uld-1)"/>
+      <text x="200" y="148" class="tx t3" text-anchor="middle">: 3</text><text x="200" y="178" class="tx t3" text-anchor="middle">: 3</text>
+    </svg>`,
+    text: `<p><b>Rozszerzanie</b>: mnożysz licznik i mianownik przez tę samą liczbę. 2/3 = 8/12.</p>
+      <p><b>Skracanie</b>: dzielisz licznik i mianownik przez tę samą liczbę. 6/9 = 2/3. Gdy już nic się nie da skrócić (np. 3/4), ułamek jest <b>nieskracalny</b>. Wyniki działań zwykle skracamy do końca.</p>`,
+    remember: 'Co robisz z licznikiem, zrób z mianownikiem – wtedy wartość ułamka się nie zmienia.',
+    hook: 'Ułamek jest jak huśtawka: góra i dół muszą dostać to samo, inaczej się przechyli.',
+    check: { q: 'Skróć ułamek 10/15.', options: ['2/3', '5/3', '1/5'], answer: 0, explain: '10 i 15 dzielą się przez 5: (10 : 5)/(15 : 5) = 2/3.' },
+  },
+  {
+    title: 'Dodaj liczniki – mianownik zostaje',
+    svg: `<svg viewBox="0 0 400 170" role="img" aria-label="Pasek podzielony na 7 części: 2 części zamalowane na pomarańczowo i 3 na zielono. Razem 5 części z 7: 2/7 + 3/7 = 5/7.">
+      <rect x="25" y="40" width="100" height="44" class="f2"/>
+      <rect x="125" y="40" width="150" height="44" class="f3"/>
+      <rect x="25" y="40" width="350" height="44" class="ln"/>
+      <g class="ln"><line x1="75" y1="40" x2="75" y2="84"/><line x1="125" y1="40" x2="125" y2="84"/><line x1="175" y1="40" x2="175" y2="84"/><line x1="225" y1="40" x2="225" y2="84"/><line x1="275" y1="40" x2="275" y2="84"/><line x1="325" y1="40" x2="325" y2="84"/></g>
+      <text x="75" y="28" class="tx-b t2" text-anchor="middle">2/7</text>
+      <text x="200" y="28" class="tx-b t3" text-anchor="middle">3/7</text>
+      <text x="200" y="124" class="tx-b" text-anchor="middle">2/7 + 3/7 = 5/7</text>
+      <text x="200" y="156" class="tx-s" text-anchor="middle">kawałki dalej są „siódme” – mianownik się nie zmienia</text>
+    </svg>`,
+    text: `<p>Gdy ułamki mają <b>te same mianowniki</b>, dodajesz albo odejmujesz <b>tylko liczniki</b>: 2/7 + 3/7 = 5/7, 7/9 − 4/9 = 3/9 = 1/3.</p>
+      <p>Jeśli wynik jest ułamkiem niewłaściwym, zamień go na liczbę mieszaną: 3/5 + 4/5 = 7/5 = 1 2/5. Całość to np. 8/8, więc 1 − 3/8 = 5/8.</p>`,
+    remember: 'Te same mianowniki: dodajesz (odejmujesz) liczniki, mianownik przepisujesz.',
+    hook: '2 jabłka + 3 jabłka = 5 jabłek, a nie 5 „podwójnych jabłek”. Tak samo 2 siódme + 3 siódme = 5 siódmych.',
+    check: { q: 'Oblicz: 4/9 + 2/9', options: ['6/9', '6/18', '8/9'], answer: 0, explain: 'Dodajemy liczniki: 4 + 2 = 6, mianownik zostaje 9. Wynik 6/9 można skrócić do 2/3.' },
+  },
+  {
+    title: 'Liczby mieszane – rozmień całość',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="2 i 1/4: dwa koła i ćwiartka. Jedno koło rozmieniono na 4 ćwiartki, więc mamy 1 koło i 5 ćwiartek. Zabieramy 3 ćwiartki – zostaje 1 koło i 2 ćwiartki, czyli 1 i 1/2.">
+      <circle cx="50" cy="70" r="34" class="f1 s1"/>
+      <g class="f1 s1"><path d="M130,70 L130,36 A34,34 0 0 1 164,70 Z"/><path d="M130,70 L164,70 A34,34 0 0 1 130,104 Z"/><path d="M130,70 L130,104 A34,34 0 0 1 96,70 Z"/><path d="M130,70 L96,70 A34,34 0 0 1 130,36 Z"/></g>
+      <path d="M210,70 L210,36 A34,34 0 0 1 244,70 Z" class="f1 s1"/>
+      <text x="130" y="140" class="tx-b" text-anchor="middle">2 1/4 = 1 5/4</text>
+      <g class="ln s2 sw"><line x1="102" y1="42" x2="126" y2="66"/><line x1="134" y1="42" x2="158" y2="66"/><line x1="214" y1="42" x2="238" y2="66"/></g>
+      <text x="330" y="66" class="tx-b" text-anchor="middle">− 3/4</text>
+      <text x="330" y="100" class="tx-s" text-anchor="middle">skreślone 3 ćwiartki</text>
+      <text x="210" y="184" class="tx-b t3" text-anchor="middle">zostaje 1 2/4 = 1 1/2</text>
+    </svg>`,
+    text: `<p>Liczby mieszane dodajesz osobno: całości do całości, ułamki do ułamków: 2 1/5 + 1 3/5 = 3 4/5.</p>
+      <p>Gdy przy odejmowaniu ułamka jest za mało, <b>rozmień jedną całość</b> na kawałki: 2 1/4 = 1 5/4. Teraz 1 5/4 − 3/4 = 1 2/4 = 1 1/2. Tak samo 3 − 1/4 = 2 4/4 − 1/4 = 2 3/4.</p>`,
+    remember: 'Za mało kawałków? Rozmień jedną całość: 1 = 4/4 (albo 5/5, 8/8…).',
+    hook: 'Jak przy płaceniu: nie masz drobnych, to rozmieniasz złotówkę na grosze.',
+    check: { q: 'Oblicz: 3 − 1/4', options: ['2 3/4', '3 3/4', '2 1/4'], answer: 0, explain: '3 = 2 4/4. 2 4/4 − 1/4 = 2 3/4.' },
+  },
+  {
+    title: 'Różne mianowniki i oś liczbowa',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Oś liczbowa od 0 do 1 podzielona na 4 części. Strzałka od 0 do 2/4 – to 1/2. Druga strzałka o 1/4 dalej – razem 3/4.">
+      <defs><marker id="a-k4m-uld-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <line x1="30" y1="120" x2="370" y2="120" class="ln sw"/>
+      <g class="ln"><line x1="40" y1="108" x2="40" y2="132"/><line x1="120" y1="112" x2="120" y2="128"/><line x1="200" y1="112" x2="200" y2="128"/><line x1="280" y1="112" x2="280" y2="128"/><line x1="360" y1="108" x2="360" y2="132"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="40" y="156">0</text><text x="360" y="156">1</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="120" y="152">1/4</text><text x="200" y="152">2/4</text><text x="280" y="152">3/4</text></g>
+      <path d="M40,104 Q120,40 196,102" class="ln s2 sw" marker-end="url(#a-k4m-uld-2)"/>
+      <path d="M200,104 Q240,70 276,102" class="ln s3 sw" marker-end="url(#a-k4m-uld-2)"/>
+      <text x="118" y="54" class="tx-b t2" text-anchor="middle">1/2 = 2/4</text>
+      <text x="250" y="66" class="tx-b t3" text-anchor="middle">+ 1/4</text>
+      <text x="200" y="184" class="tx" text-anchor="middle">1/2 + 1/4 = 2/4 + 1/4 = 3/4</text>
+    </svg>`,
+    text: `<p>Gdy mianowniki są różne, a jeden jest wielokrotnością drugiego, <b>rozszerz</b> ułamek o mniejszym mianowniku: 1/2 + 1/4 = 2/4 + 1/4 = 3/4.</p>
+      <p>Na <b>osi liczbowej</b> odcinek od 0 do 1 dzielisz na tyle równych części, ile wynosi mianownik. 3/4 to trzecia kreska po zerze, gdy odcinek podzielono na 4 części.</p>
+      <p>Pułapka: <b>mianowników nie dodajemy</b>. 1/2 + 1/4 to nie 2/6!</p>`,
+    remember: 'Różne mianowniki – najpierw sprowadź do tego samego (rozszerz), dopiero potem dodawaj.',
+    hook: 'Nie dodasz złotówek do groszy bez zamiany. Najpierw zamień „połówki” na „ćwiartki”.',
+    check: { q: 'Oblicz: 2/3 − 1/6', options: ['1/2', '1/3', '1/6'], answer: 0, explain: '2/3 = 4/6. 4/6 − 1/6 = 3/6 = 1/2.' },
+  },
+];
+
+window.LESSONS['matematyka/pole'] = [
+  {
+    title: 'Pole mierzymy kwadratami',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Kwadrat 1 cm na 1 cm podzielony na 10 rzędów po 10 małych kwadracików 1 mm na 1 mm. 1 cm² = 100 mm².">
+      <rect x="30" y="20" width="170" height="170" class="f4"/>
+      <g class="ln-thin">
+        <line x1="47" y1="20" x2="47" y2="190"/><line x1="64" y1="20" x2="64" y2="190"/><line x1="81" y1="20" x2="81" y2="190"/><line x1="98" y1="20" x2="98" y2="190"/><line x1="115" y1="20" x2="115" y2="190"/><line x1="132" y1="20" x2="132" y2="190"/><line x1="149" y1="20" x2="149" y2="190"/><line x1="166" y1="20" x2="166" y2="190"/><line x1="183" y1="20" x2="183" y2="190"/>
+        <line x1="30" y1="37" x2="200" y2="37"/><line x1="30" y1="54" x2="200" y2="54"/><line x1="30" y1="71" x2="200" y2="71"/><line x1="30" y1="88" x2="200" y2="88"/><line x1="30" y1="105" x2="200" y2="105"/><line x1="30" y1="122" x2="200" y2="122"/><line x1="30" y1="139" x2="200" y2="139"/><line x1="30" y1="156" x2="200" y2="156"/><line x1="30" y1="173" x2="200" y2="173"/>
+      </g>
+      <rect x="30" y="20" width="170" height="170" class="ln sw"/>
+      <rect x="30" y="20" width="17" height="17" class="f2 s2"/>
+      <text x="220" y="40" class="tx-s">1 kwadracik = 1 mm²</text>
+      <text x="220" y="90" class="tx">10 rzędów</text>
+      <text x="220" y="114" class="tx">po 10 kwadracików</text>
+      <text x="220" y="160" class="tx-b">1 cm² = 100 mm²</text>
+    </svg>`,
+    text: `<p>Pole mierzymy <b>kwadratami</b>: 1 mm², 1 cm², 1 dm², 1 m², 1 a (ar), 1 ha (hektar), 1 km². Każda jednostka to pole kwadratu o boku 1 jednostki długości (ar – 10 m, hektar – 100 m).</p>
+      <p>W kwadracie 1 cm × 1 cm mieści się 10 rzędów po 10 kwadracików 1 mm × 1 mm. Dlatego <b>1 cm² = 100 mm²</b>, a nie 10 mm².</p>`,
+    remember: '1 cm² = 100 mm². Jednostka pola to kwadrat, więc liczymy rzędy · kwadraciki w rzędzie.',
+    hook: 'Kwadrat to tabliczka czekolady 10 na 10 – ma 100 kosteczek, nie 10.',
+  },
+  {
+    title: 'Drabinka jednostek pola',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Drabinka jednostek pola: mm² razy 100 to cm², razy 100 to dm², razy 100 to m², razy 100 to ar, razy 100 to hektar, razy 100 to km².">
+      <g class="tx-b" text-anchor="middle">
+        <rect x="6" y="160" width="56" height="40" rx="8" class="f1 s1"/><text x="34" y="186">mm²</text>
+        <rect x="74" y="134" width="56" height="40" rx="8" class="f1 s1"/><text x="102" y="160">cm²</text>
+        <rect x="142" y="108" width="56" height="40" rx="8" class="f1 s1"/><text x="170" y="134">dm²</text>
+        <rect x="210" y="82" width="56" height="40" rx="8" class="f3 s3"/><text x="238" y="108">m²</text>
+        <rect x="278" y="56" width="56" height="40" rx="8" class="f3 s3"/><text x="306" y="82">a</text>
+        <rect x="346" y="30" width="66" height="40" rx="8" class="f3 s3"/><text x="379" y="56">ha</text>
+      </g>
+      <g class="tx-s t2" text-anchor="middle"><text x="68" y="128">· 100</text><text x="136" y="102">· 100</text><text x="204" y="76">· 100</text><text x="272" y="50">· 100</text><text x="340" y="24">· 100</text></g>
+      <text x="300" y="150" class="tx-s">1 m² = 10 000 cm²</text>
+      <text x="300" y="172" class="tx-s">1 ha = 10 000 m²</text>
+      <text x="300" y="194" class="tx-s">1 km² = 100 ha</text>
+    </svg>`,
+    text: `<p>Między sąsiednimi jednostkami pola mnożnik wynosi <b>100</b>: 1 cm² = 100 mm², 1 dm² = 100 cm², 1 m² = 100 dm², 1 a = 100 m², 1 ha = 100 a, 1 km² = 100 ha.</p>
+      <p>Dlaczego 100, a nie 10? Bo 1 m = 10 dm, a kwadrat ma długość <b>i</b> szerokość: 10 · 10 = 100. Z tego samego powodu 1 m² = 100 · 100 cm² = <b>10 000 cm²</b>.</p>`,
+    remember: 'Jednostki pola: każdy schodek to · 100. 1 m² = 10 000 cm², 1 ha = 10 000 m².',
+    hook: 'Długość skacze co 10, pole – co 100 (bo liczysz w dwie strony: wzdłuż i wszerz).',
+    check: { q: 'Zamień: 4 m² = ? dm²', options: ['400 dm²', '40 dm²', '4000 dm²'], answer: 0, explain: '1 m² = 100 dm², więc 4 m² = 400 dm².' },
+  },
+  {
+    title: 'Ar i hektar',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Mały kwadrat 10 m na 10 m – 1 ar = 100 m². Duży kwadrat 100 m na 100 m – 1 hektar = 10 000 m² = 100 arów; mieści 100 małych kwadratów.">
+      <rect x="20" y="70" width="40" height="40" class="f2 s2 sw"/>
+      <text x="40" y="60" class="tx-s" text-anchor="middle">10 m</text>
+      <text x="40" y="136" class="tx-b" text-anchor="middle">1 a</text>
+      <text x="40" y="158" class="tx-s" text-anchor="middle">100 m²</text>
+      <rect x="140" y="20" width="180" height="180" class="f3"/>
+      <g class="ln-thin">
+        <line x1="158" y1="20" x2="158" y2="200"/><line x1="176" y1="20" x2="176" y2="200"/><line x1="194" y1="20" x2="194" y2="200"/><line x1="212" y1="20" x2="212" y2="200"/><line x1="230" y1="20" x2="230" y2="200"/><line x1="248" y1="20" x2="248" y2="200"/><line x1="266" y1="20" x2="266" y2="200"/><line x1="284" y1="20" x2="284" y2="200"/><line x1="302" y1="20" x2="302" y2="200"/>
+        <line x1="140" y1="38" x2="320" y2="38"/><line x1="140" y1="56" x2="320" y2="56"/><line x1="140" y1="74" x2="320" y2="74"/><line x1="140" y1="92" x2="320" y2="92"/><line x1="140" y1="110" x2="320" y2="110"/><line x1="140" y1="128" x2="320" y2="128"/><line x1="140" y1="146" x2="320" y2="146"/><line x1="140" y1="164" x2="320" y2="164"/><line x1="140" y1="182" x2="320" y2="182"/>
+      </g>
+      <rect x="140" y="20" width="180" height="180" class="ln s3 sw"/>
+      <rect x="140" y="20" width="18" height="18" class="f2 s2"/>
+      <text x="230" y="214" class="tx-s" text-anchor="middle">100 m</text>
+      <text x="370" y="96" class="tx-b" text-anchor="middle">1 ha</text>
+      <text x="370" y="120" class="tx-s" text-anchor="middle">100 a</text>
+      <text x="370" y="140" class="tx-s" text-anchor="middle">10 000 m²</text>
+    </svg>`,
+    text: `<p><b>Ar</b> (a) to pole kwadratu o boku <b>10 m</b>: 10 · 10 = 100 m². W arach podaje się np. powierzchnię działki: działka 20 m × 30 m ma 600 m² = 6 a.</p>
+      <p><b>Hektar</b> (ha) to pole kwadratu o boku <b>100 m</b>: 100 · 100 = 10 000 m² = 100 a. W hektarach podaje się powierzchnię pól, lasów i parków.</p>`,
+    remember: '1 a = 100 m² (kwadrat 10 m × 10 m). 1 ha = 100 a = 10 000 m² (kwadrat 100 m × 100 m).',
+    hook: 'Hektar to „sto arów” – „hekto” znaczy sto, jak w hektolitrze (100 litrów).',
+    check: { q: 'Boisko ma 100 m na 50 m. Ile to arów?', options: ['50 a', '5 a', '500 a'], answer: 0, explain: '100 · 50 = 5000 m². 5000 : 100 = 50 a.' },
+  },
+  {
+    title: 'Figury złożone – podziel albo odejmij',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Dwa razy ta sama figura w kształcie litery L: prostokąt 8 m na 5 m bez rogu 3 m na 2 m. Sposób 1: podział na prostokąty 5 na 5 i 3 na 3. Sposób 2: duży prostokąt 8 na 5 minus róg 3 na 2.">
+      <path d="M20,40 L120,40 L120,80 L180,80 L180,140 L20,140 Z" class="f1"/>
+      <line x1="120" y1="80" x2="120" y2="140" class="dash s2 sw"/>
+      <path d="M20,40 L120,40 L120,80 L180,80 L180,140 L20,140 Z" class="ln sw" fill="none"/>
+      <text x="70" y="98" class="tx-s" text-anchor="middle">5 · 5 = 25</text>
+      <text x="151" y="108" class="tx-s" text-anchor="middle">3 · 3</text><text x="151" y="126" class="tx-s" text-anchor="middle">= 9</text>
+      <text x="100" y="168" class="tx" text-anchor="middle">25 + 9 = 34 m²</text>
+      <text x="100" y="28" class="tx-s" text-anchor="middle">podziel i dodaj</text>
+      <path d="M230,40 L330,40 L330,80 L390,80 L390,140 L230,140 Z" class="f1"/>
+      <rect x="330" y="40" width="60" height="40" class="f2 s2 dash"/>
+      <path d="M230,40 L330,40 L330,80 L390,80 L390,140 L230,140 Z" class="ln sw" fill="none"/>
+      <text x="360" y="66" class="tx-s" text-anchor="middle">3 · 2</text>
+      <text x="310" y="168" class="tx" text-anchor="middle">40 − 6 = 34 m²</text>
+      <text x="310" y="28" class="tx-s" text-anchor="middle">dorysuj i odejmij</text>
+      <text x="310" y="194" class="tx-s" text-anchor="middle">8 · 5 = 40</text>
+    </svg>`,
+    text: `<p>Figurę złożoną z prostokątów możesz <b>podzielić</b> na prostokąty i dodać ich pola. Możesz też <b>dorysować</b> brakujący kawałek do dużego prostokąta i odjąć jego pole.</p>
+      <p>Trawnik 8 m × 5 m bez rogu 3 m × 2 m: 8 · 5 − 3 · 2 = 40 − 6 = <b>34 m²</b>. Podział też daje 34: 5 · 5 + 3 · 3 = 25 + 9 = 34.</p>`,
+    remember: 'Figura złożona: podziel na prostokąty i dodaj albo dorysuj do prostokąta i odejmij.',
+    hook: 'Dwa sposoby – jeden wynik. Policz oboma, a od razu masz sprawdzenie.',
+  },
+  {
+    title: 'Od pola do boku i pułapki',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Prostokąt 16 na 1 kratkę i kwadrat 4 na 4 kratki. Oba mają pole 16, ale obwody 34 i 16.">
+      <rect x="10" y="40" width="256" height="16" class="f2 s2 sw"/>
+      <rect x="300" y="40" width="64" height="64" class="f3 s3 sw"/>
+      <text x="138" y="30" class="tx-s" text-anchor="middle">16 cm × 1 cm</text>
+      <text x="332" y="30" class="tx-s" text-anchor="middle">4 cm × 4 cm</text>
+      <text x="138" y="90" class="tx" text-anchor="middle">pole 16 cm²</text>
+      <text x="138" y="114" class="tx" text-anchor="middle">obwód 34 cm</text>
+      <text x="332" y="130" class="tx" text-anchor="middle">pole 16 cm²</text>
+      <text x="332" y="154" class="tx" text-anchor="middle">obwód 16 cm</text>
+      <text x="210" y="190" class="tx-b" text-anchor="middle">to samo pole ≠ ten sam obwód</text>
+    </svg>`,
+    text: `<p>Z pola możesz obliczyć bok. Kwadrat ma pole 64 cm² – szukasz liczby, która razy ona sama daje 64: 8 · 8 = 64, więc bok ma <b>8 cm</b>. Prostokąt ma pole 36 cm² i bok 9 cm – drugi bok: 36 : 9 = <b>4 cm</b>.</p>
+      <p>Pułapki: obwód podajesz w cm (m), a pole w cm² (m²). Figury o tym samym polu mogą mieć różne obwody.</p>`,
+    remember: 'Bok prostokąta = pole : drugi bok. Pole w jednostkach z kwadracikiem (cm², m²).',
+    hook: 'Pole to „ile dywanu”, obwód to „ile listwy dookoła” – to dwa różne zakupy.',
+    check: { q: 'Kwadrat ma pole 49 cm². Jaki ma bok?', options: ['7 cm', '12 cm', '24 cm'], answer: 0, explain: '7 · 7 = 49, więc bok ma 7 cm.' },
+  },
+];
+
+window.LESSONS['matematyka/rownania'] = [
+  {
+    title: 'Litera zamiast liczby',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Tłumaczenie słów na wyrażenia: o 5 większa od x – x + 5; 3 razy większa od n – 3 · n; brat starszy o 3 lata od Ani, która ma x lat – x + 3.">
+      <defs><marker id="a-k4m-row-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <g class="tx">
+        <rect x="8" y="14" width="250" height="46" rx="10" class="f4 s4"/><text x="20" y="43">o 5 większa od x</text>
+        <rect x="8" y="76" width="250" height="46" rx="10" class="f4 s4"/><text x="20" y="105">3 razy większa od n</text>
+        <rect x="8" y="138" width="250" height="46" rx="10" class="f4 s4"/><text x="20" y="167">brat o 3 lata starszy</text>
+      </g>
+      <g class="ln s2 sw"><line x1="264" y1="37" x2="314" y2="37" marker-end="url(#a-k4m-row-1)"/><line x1="264" y1="99" x2="314" y2="99" marker-end="url(#a-k4m-row-1)"/><line x1="264" y1="161" x2="314" y2="161" marker-end="url(#a-k4m-row-1)"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="366" y="43">x + 5</text><text x="366" y="105">3 · n</text><text x="366" y="167">x + 3</text></g>
+    </svg>`,
+    text: `<p>Gdy nie znamy liczby albo może być różna, zapisujemy ją <b>literą</b> (x, a, n…). Zapis z literami i znakami działań to <b>wyrażenie algebraiczne</b>.</p>
+      <p>„O 5 większa” to dodawanie: x + 5. „3 razy większa” to mnożenie: 3 · n. Ania ma x lat, brat jest o 3 lata starszy: x + 3. Zeszyt kosztuje z zł – 4 zeszyty kosztują 4 · z zł.</p>`,
+    remember: '„O … więcej/mniej” – dodawanie/odejmowanie. „… razy więcej/mniej” – mnożenie/dzielenie.',
+    hook: 'Litera to pudełko z liczbą w środku – jeszcze nie wiesz, co w nim jest, ale możesz z nim liczyć.',
+    check: { q: 'Jak zapisać liczbę o 4 mniejszą od a?', options: ['a − 4', 'a : 4', '4 · a'], answer: 0, explain: '„O 4 mniejsza” – odejmujemy 4: a − 4.' },
+  },
+  {
+    title: 'Podstaw i policz',
+    svg: `<svg viewBox="0 0 420 180" role="img" aria-label="Wyrażenie 2 · a + 3. Za a wstawiamy 4: 2 · 4 + 3 = 8 + 3 = 11.">
+      <defs><marker id="a-k4m-row-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <text x="210" y="40" class="tx-b" text-anchor="middle">2 · <tspan class="t2">a</tspan> + 3</text>
+      <rect x="20" y="62" width="90" height="40" rx="10" class="f2 s2"/>
+      <text x="65" y="88" class="tx-b" text-anchor="middle">a = 4</text>
+      <line x1="114" y1="82" x2="160" y2="82" class="ln s2 sw" marker-end="url(#a-k4m-row-2)"/>
+      <text x="280" y="90" class="tx-b" text-anchor="middle">2 · <tspan class="t2">4</tspan> + 3</text>
+      <text x="280" y="130" class="tx" text-anchor="middle">= 8 + 3</text>
+      <text x="280" y="166" class="tx-b t3" text-anchor="middle">= 11</text>
+    </svg>`,
+    text: `<p>Żeby obliczyć <b>wartość wyrażenia</b>, wstaw liczbę w miejsce litery i policz, pamiętając o kolejności działań. Dla a = 4: 2 · 4 + 3 = 8 + 3 = 11.</p>
+      <p><b>Wzór</b> to wyrażenie, które mówi, jak coś obliczyć. Obwód kwadratu: Ob = 4 · a. Dla a = 6 cm: Ob = 4 · 6 = 24 cm.</p>`,
+    remember: 'Wartość wyrażenia: podstaw liczbę za literę i policz (najpierw nawiasy, potem mnożenie i dzielenie, na końcu dodawanie i odejmowanie).',
+    hook: 'Wyrażenie to przepis, a liczba – składnik. Wkładasz składnik i „pieczesz” wynik.',
+    check: { q: 'Oblicz wartość wyrażenia 3 · b − 5 dla b = 4.', options: ['7', '17', '−3'], answer: 0, explain: '3 · 4 − 5 = 12 − 5 = 7.' },
+  },
+  {
+    title: 'Równanie jak waga',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Waga szalkowa w równowadze: na lewej szalce worek x i odważnik 3 kg, na prawej 8 kg. Zapis: x + 3 = 8, więc x = 5.">
+      <path d="M180,170 L220,170 L206,70 L194,70 Z" class="f4 s4"/>
+      <line x1="70" y1="70" x2="330" y2="70" class="ln sw"/>
+      <circle cx="200" cy="70" r="6" class="t2"/>
+      <line x1="100" y1="70" x2="100" y2="130" class="ln-thin"/>
+      <line x1="300" y1="70" x2="300" y2="130" class="ln-thin"/>
+      <path d="M50,130 L150,130 L140,142 L60,142 Z" class="f1 s1"/>
+      <path d="M250,130 L350,130 L340,142 L260,142 Z" class="f1 s1"/>
+      <rect x="60" y="88" width="44" height="42" rx="12" class="f2 s2"/>
+      <text x="82" y="116" class="tx-b" text-anchor="middle">x</text>
+      <rect x="110" y="102" width="34" height="28" rx="4" class="f5 s5"/>
+      <text x="127" y="122" class="tx-s" text-anchor="middle">3 kg</text>
+      <rect x="278" y="94" width="44" height="36" rx="4" class="f5 s5"/>
+      <text x="300" y="117" class="tx" text-anchor="middle">8 kg</text>
+      <text x="200" y="200" class="tx-b" text-anchor="middle">x + 3 = 8   →   x = 5</text>
+    </svg>`,
+    text: `<p><b>Równanie</b> to równość z <b>niewiadomą</b>, np. x + 3 = 8. Jest jak waga w równowadze: po obu stronach jest tyle samo.</p>
+      <p><b>Rozwiązanie</b> równania to liczba, która wstawiona za x daje prawdziwą równość. Tu x = 5, bo 5 + 3 = 8. Na wadze: zdejmij z obu stron po 3 kg – zostanie worek x i 5 kg.</p>`,
+    remember: 'Rozwiązanie równania to liczba, dla której obie strony są równe.',
+    hook: 'Waga musi zostać w równowadze – co zabierzesz z jednej szalki, zabierz z drugiej.',
+  },
+  {
+    title: 'Działanie odwrotne',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Pary działań odwrotnych: dodawanie i odejmowanie, mnożenie i dzielenie. Przykłady: x + 7 = 15, więc x = 15 − 7 = 8; x − 6 = 9, więc x = 9 + 6 = 15; 4 · x = 28, więc x = 28 : 4 = 7; x : 3 = 5, więc x = 5 · 3 = 15.">
+      <g class="tx">
+        <rect x="8" y="10" width="404" height="44" rx="10" class="f1 s1"/>
+        <text x="24" y="38">x + 7 = 15</text><text x="180" y="38" class="t2">x = 15 − 7 = 8</text>
+        <rect x="8" y="62" width="404" height="44" rx="10" class="f1 s1"/>
+        <text x="24" y="90">x − 6 = 9</text><text x="180" y="90" class="t2">x = 9 + 6 = 15</text>
+        <rect x="8" y="114" width="404" height="44" rx="10" class="f3 s3"/>
+        <text x="24" y="142">4 · x = 28</text><text x="180" y="142" class="t2">x = 28 : 4 = 7</text>
+        <rect x="8" y="166" width="404" height="44" rx="10" class="f3 s3"/>
+        <text x="24" y="194">x : 3 = 5</text><text x="180" y="194" class="t2">x = 5 · 3 = 15</text>
+      </g>
+    </svg>`,
+    text: `<p>Proste równania rozwiązujesz <b>działaniem odwrotnym</b>: dodawanie „odkręca” odejmowanie, a mnożenie – dzielenie (i odwrotnie).</p>
+      <ul><li>x + 7 = 15 → x = 15 − 7 = 8</li><li>x − 6 = 9 → x = 9 + 6 = 15</li><li>4 · x = 28 → x = 28 : 4 = 7</li><li>x : 3 = 5 → x = 5 · 3 = 15</li></ul>
+      <p>Uwaga na 20 − x = 12: pytasz „ile odjąć od 20, żeby zostało 12?” – x = 20 − 12 = 8.</p>`,
+    remember: 'Dodawanie ↔ odejmowanie, mnożenie ↔ dzielenie. Po rozwiązaniu zawsze sprawdź, wstawiając wynik.',
+    hook: 'Działanie odwrotne to cofanie filmu: ktoś dodał 7 – cofasz, odejmując 7.',
+    check: { q: 'Rozwiąż: 6 · x = 42', options: ['x = 7', 'x = 36', 'x = 48'], answer: 0, explain: 'x = 42 : 6 = 7. Sprawdzenie: 6 · 7 = 42.' },
+  },
+  {
+    title: 'Od zadania do odpowiedzi',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Cztery kroki: 1. oznacz niewiadomą – x to cena długopisu; 2. ułóż równanie – 3 · x = 12; 3. rozwiąż – x = 4; 4. sprawdź i odpowiedz – 3 · 4 = 12, długopis kosztuje 4 zł.">
+      <g class="tx-s">
+        <rect x="8" y="8" width="200" height="90" rx="12" class="f4 s4"/>
+        <text x="20" y="32" class="tx-b">1. oznacz</text><text x="20" y="58">x – cena jednego</text><text x="20" y="78">długopisu</text>
+        <rect x="216" y="8" width="196" height="90" rx="12" class="f2 s2"/>
+        <text x="228" y="32" class="tx-b">2. ułóż równanie</text><text x="228" y="58">3 długopisy – 12 zł</text><text x="228" y="80" class="tx">3 · x = 12</text>
+        <rect x="8" y="110" width="200" height="90" rx="12" class="f1 s1"/>
+        <text x="20" y="134" class="tx-b">3. rozwiąż</text><text x="20" y="160">x = 12 : 3</text><text x="20" y="182" class="tx">x = 4</text>
+        <rect x="216" y="110" width="196" height="90" rx="12" class="f3 s3"/>
+        <text x="228" y="134" class="tx-b">4. sprawdź</text><text x="228" y="160">3 · 4 = 12 ✓</text><text x="228" y="182">Odp. 4 zł</text>
+      </g>
+    </svg>`,
+    text: `<p>Zadanie: „Bartek kupił 3 jednakowe długopisy i zapłacił 12 zł. Ile kosztował jeden?”</p>
+      <ol><li>Oznacz niewiadomą: x – cena jednego długopisu.</li><li>Ułóż równanie z treści: 3 · x = 12.</li><li>Rozwiąż: x = 12 : 3 = 4.</li><li>Sprawdź (3 · 4 = 12) i napisz odpowiedź: długopis kosztuje 4 zł.</li></ol>`,
+    remember: 'Oznacz – ułóż równanie – rozwiąż – sprawdź – odpowiedz.',
+    hook: 'Jak detektyw: x to tajemniczy podejrzany, równanie to dowody, a sprawdzenie – przyznanie się do winy.',
+    check: { q: 'Pomyślałem liczbę, dodałem 12 i otrzymałem 30. Jaką liczbę pomyślałem?', options: ['18', '42', '12'], answer: 0, explain: 'x + 12 = 30, więc x = 30 − 12 = 18. Sprawdzenie: 18 + 12 = 30.' },
+  },
+];
