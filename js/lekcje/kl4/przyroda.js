@@ -2244,3 +2244,334 @@ window.LESSONS['przyroda/krainy'] = [
     check: { q: 'Prawda czy fałsz? Ostatni lądolód przykrył całą Polskę razem z górami.', options: ['Prawda', 'Fałsz'], answer: 1, explain: 'Ostatni lądolód objął tylko północ Polski. Aż do gór lądolód sięgał dużo wcześniej.' },
   },
 ];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/ekran'] = [
+  {
+    title: 'Ekran – przydatny, ale zachłanny',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Doba jako pasek z czasem na sen, szkołę, ruch, naukę, rodzinę i ekran. Jeśli kawałek ekranu rośnie, zabiera miejsce snu, ruchowi i rozmowom">
+      <text x="200" y="22" class="tx-b" text-anchor="middle">Twoja doba ma tylko 24 godziny</text>
+      <rect x="10" y="40" width="130" height="44" class="f5 s5"/>
+      <rect x="140" y="40" width="90" height="44" class="f1 s1"/>
+      <rect x="230" y="40" width="50" height="44" class="f3 s3"/>
+      <rect x="280" y="40" width="50" height="44" class="f4 s4"/>
+      <rect x="330" y="40" width="60" height="44" class="f2 s2"/>
+      <g class="tx" text-anchor="middle"><text x="75" y="68">😴</text><text x="185" y="68">🏫</text><text x="255" y="68">⚽</text><text x="305" y="68">👪</text><text x="360" y="68">📱</text></g>
+      <text x="200" y="104" class="tx-s" text-anchor="middle">😴 sen · 🏫 szkoła · ⚽ ruch · 👪 bliscy · 📱 ekran</text>
+      <rect x="10" y="124" width="90" height="44" class="f5 s5"/>
+      <rect x="100" y="124" width="90" height="44" class="f1 s1"/>
+      <rect x="190" y="124" width="20" height="44" class="f3 s3"/>
+      <rect x="210" y="124" width="180" height="44" class="f2 s2 sw"/>
+      <g class="tx" text-anchor="middle"><text x="55" y="152">😴</text><text x="145" y="152">🏫</text></g>
+      <text x="300" y="151" class="tx-s" text-anchor="middle">📱 ekran rośnie…</text>
+      <text x="200" y="196" class="tx" text-anchor="middle">…a sen, ruch i bliscy maleją</text>
+    </svg>`,
+    text: `<p>Do <b>czasu przed ekranem</b> liczymy wszystko razem: telefon, tablet, komputer, telewizor i konsolę. Ekrany pomagają się uczyć i kontaktować z bliskimi.</p>
+      <p>Kłopot w tym, że doba ma tylko 24 godziny. Gdy czas przed ekranem rośnie, zabiera miejsce na <b>sen, ruch, naukę i spotkania</b> z ludźmi.</p>`,
+    remember: 'Czas przed ekranem = telefon + tablet + komputer + telewizor + konsola, liczone razem.',
+    hook: 'Ekran jest jak kot, który zajmuje coraz więcej miejsca na kanapie – w końcu nie ma gdzie usiąść.',
+    check: { q: 'Co wliczamy do czasu przed ekranem?', options: ['tylko grę na konsoli', 'wszystkie urządzenia z ekranem razem', 'tylko telewizję'], answer: 1, explain: 'Liczy się każdy ekran: telefon, tablet, komputer, telewizor, konsola.' },
+  },
+  {
+    title: 'Co cierpi, gdy ekranu jest za dużo?',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Pięć kafelków: sen – trudniej zasnąć; oczy – zmęczone, pieką; ciało – mało ruchu, boli kark; skupienie – rozpraszają powiadomienia; relacje – mniej rozmów">
+      <rect x="10" y="10" width="185" height="58" rx="10" class="f5 s5"/>
+      <text x="102" y="34" class="tx-b" text-anchor="middle">😴 sen</text>
+      <text x="102" y="56" class="tx-s" text-anchor="middle">trudniej zasnąć</text>
+      <rect x="205" y="10" width="185" height="58" rx="10" class="f1 s1"/>
+      <text x="297" y="34" class="tx-b" text-anchor="middle">👀 oczy</text>
+      <text x="297" y="56" class="tx-s" text-anchor="middle">zmęczone, pieką</text>
+      <rect x="10" y="80" width="185" height="58" rx="10" class="f3 s3"/>
+      <text x="102" y="104" class="tx-b" text-anchor="middle">🧍 ciało</text>
+      <text x="102" y="126" class="tx-s" text-anchor="middle">mało ruchu, boli kark</text>
+      <rect x="205" y="80" width="185" height="58" rx="10" class="f4 s4"/>
+      <text x="297" y="104" class="tx-b" text-anchor="middle">🧠 skupienie</text>
+      <text x="297" y="126" class="tx-s" text-anchor="middle">rozpraszają powiadomienia</text>
+      <rect x="105" y="150" width="190" height="58" rx="10" class="f2 s2"/>
+      <text x="200" y="174" class="tx-b" text-anchor="middle">👪 relacje</text>
+      <text x="200" y="196" class="tx-s" text-anchor="middle">mniej rozmów i zabaw</text>
+    </svg>`,
+    text: `<p>Granie do późna przesuwa porę zaśnięcia, a jasne światło ekranu wieczorem utrudnia zasypianie. Długie patrzenie z bliska męczy <b>oczy</b>. Siedzenie w jednej pozycji męczy <b>kark i plecy</b>.</p>
+      <p>Powiadomienia rozpraszają. Robienie kilku rzeczy naraz – <b>wielozadaniowość</b> – sprawia, że uczysz się wolniej i gorzej.</p>`,
+    remember: 'Za dużo ekranu: gorszy sen, zmęczone oczy, mało ruchu, słabsze skupienie, mniej rozmów.',
+    hook: 'Mózg to nie żongler – gdy łapie trzy piłki naraz (lekcje, czat, filmik), którąś upuści.',
+    check: { q: 'Jak wielozadaniowość wpływa na naukę?', options: ['uczysz się szybciej', 'uczysz się wolniej i gorzej', 'nie ma wpływu'], answer: 1, explain: 'Przeskakiwanie między zadaniami rozprasza mózg.' },
+  },
+  {
+    title: 'Uzależnienie – gdy trudno przestać',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Uzależnić można się od substancji, na przykład nikotyny i alkoholu, oraz od zachowań, na przykład grania i przewijania filmików. Sygnały ostrzegawcze: złość przy odkładaniu telefonu, rezygnacja ze snu i zabawy, obietnice jeszcze chwilę">
+      <rect x="10" y="10" width="185" height="80" rx="12" class="f2 s2"/>
+      <text x="102" y="36" class="tx-b" text-anchor="middle">substancje</text>
+      <text x="102" y="60" class="tx-s" text-anchor="middle">nikotyna (papierosy),</text>
+      <text x="102" y="78" class="tx-s" text-anchor="middle">alkohol</text>
+      <rect x="205" y="10" width="185" height="80" rx="12" class="f1 s1"/>
+      <text x="297" y="36" class="tx-b" text-anchor="middle">zachowania</text>
+      <text x="297" y="60" class="tx-s" text-anchor="middle">granie, przewijanie</text>
+      <text x="297" y="78" class="tx-s" text-anchor="middle">filmików</text>
+      <rect x="10" y="104" width="380" height="88" rx="12" class="f4 s4 sw"/>
+      <text x="200" y="128" class="tx-b" text-anchor="middle">⚠️ sygnały ostrzegawcze</text>
+      <text x="200" y="152" class="tx-s" text-anchor="middle">złość, gdy trzeba odłożyć telefon</text>
+      <text x="200" y="174" class="tx-s" text-anchor="middle">rezygnacja ze snu, ruchu i zabawy</text>
+    </svg>`,
+    text: `<p><b>Uzależnienie</b> to tak silna potrzeba robienia czegoś albo używania jakiejś substancji, że trudno przestać – nawet gdy to szkodzi. Uzależniają <b>substancje</b> (np. nikotyna w papierosach, alkohol) i <b>zachowania</b> (np. granie, przewijanie filmików).</p>
+      <p>Sygnał ostrzegawczy: złościsz się, gdy musisz odłożyć telefon, a dla ekranu rezygnujesz ze snu, zabawy i nauki. Wtedy warto porozmawiać z rodzicem lub wychowawcą.</p>`,
+    remember: 'Uzależnienie: trudno przestać, choć szkodzi. Od substancji i od zachowań.',
+    hook: '„Jeszcze tylko jeden filmik” powtórzone dziesięć razy to sygnał, że ekran rządzi tobą, a nie ty nim.',
+  },
+  {
+    title: 'Mądre zasady',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Sześć zasad: plan z rodzicami, przerwy i patrzenie w dal, ekran odłożony przed snem, wyciszone powiadomienia przy nauce, bez ekranu przy posiłkach, codzienny ruch na powietrzu">
+      <g class="f3 s3">
+        <rect x="10" y="10" width="185" height="58" rx="10"/><rect x="205" y="10" width="185" height="58" rx="10"/>
+        <rect x="10" y="80" width="185" height="58" rx="10"/><rect x="205" y="80" width="185" height="58" rx="10"/>
+        <rect x="10" y="150" width="185" height="58" rx="10"/><rect x="205" y="150" width="185" height="58" rx="10"/>
+      </g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="102" y="44">📝 plan z rodzicami</text><text x="297" y="44">👀 przerwy, patrz w dal</text>
+        <text x="102" y="114">🌙 bez ekranu przed snem</text><text x="297" y="114">🔕 cisza przy nauce</text>
+        <text x="102" y="184">🍽️ bez ekranu przy stole</text><text x="297" y="184">🌳 ruch na powietrzu</text>
+      </g>
+    </svg>`,
+    text: `<p>Ustal z rodzicami <b>plan</b>: kiedy i na co używasz ekranu. Rób <b>przerwy</b> – wstań, przeciągnij się, popatrz w dal. Odłóż ekran na pewien czas <b>przed snem</b>, a telefon trzymaj z dala od łóżka.</p>
+      <p>Przy nauce <b>wycisz powiadomienia</b> i rób jedną rzecz naraz. Posiłki – bez ekranu. Codziennie znajdź czas na <b>ruch na świeżym powietrzu</b>.</p>`,
+    remember: 'Plan, przerwy, nic przed snem, cisza przy nauce, ruch na powietrzu.',
+    hook: 'Telefon też idzie spać – do „łóżeczka” poza twoim pokojem.',
+    check: { q: 'Gdzie najlepiej trzymać telefon w nocy?', options: ['pod poduszką', 'poza łóżkiem, najlepiej poza sypialnią', 'w ręce'], answer: 1, explain: 'Telefon przy łóżku kusi i budzi powiadomieniami.' },
+  },
+  {
+    title: 'Zbadaj siebie jak przyrodnik',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Tabela tygodniowego pomiaru czasu przed ekranem: dni od poniedziałku do niedzieli i kolumna z minutami. Obok: zmierz, zapisz, wyciągnij wniosek, zmień jedną rzecz">
+      <rect x="10" y="10" width="200" height="180" class="bg ln"/>
+      <line x1="10" y1="40" x2="210" y2="40" class="ln"/>
+      <line x1="90" y1="10" x2="90" y2="190" class="ln"/>
+      <text x="50" y="31" class="tx-s" text-anchor="middle">dzień</text>
+      <text x="150" y="31" class="tx-s" text-anchor="middle">minuty</text>
+      <g class="tx-s" text-anchor="middle"><text x="50" y="62">pon.</text><text x="50" y="84">wt.</text><text x="50" y="106">śr.</text><text x="50" y="128">czw.</text><text x="50" y="150">pt.</text><text x="50" y="172">sob., nd.</text></g>
+      <g class="ln-thin"><line x1="10" y1="68" x2="210" y2="68"/><line x1="10" y1="90" x2="210" y2="90"/><line x1="10" y1="112" x2="210" y2="112"/><line x1="10" y1="134" x2="210" y2="134"/><line x1="10" y1="156" x2="210" y2="156"/></g>
+      <text x="230" y="40" class="tx">1. zmierz</text>
+      <text x="230" y="80" class="tx">2. zapisz</text>
+      <text x="230" y="120" class="tx">3. wniosek</text>
+      <text x="230" y="160" class="tx">4. zmień 1 rzecz</text>
+    </svg>`,
+    text: `<p>Zrób badanie jak prawdziwy przyrodnik. Przez tydzień zapisuj, ile minut spędzasz przed ekranem (wiele telefonów ma licznik). Na koniec dodaj wyniki i sprawdź, w które dni było najwięcej.</p>
+      <p>Wyciągnij wniosek i zmień <b>jedną</b> rzecz – np. „wieczorem czytam zamiast oglądać”. Po tygodniu sprawdź, czy lepiej śpisz.</p>`,
+    remember: 'Najpierw zmierz, potem zmieniaj.',
+    hook: 'Ekran to nie wróg – to narzędzie. Ty trzymasz w ręku pilota.',
+    check: { q: 'Prawda czy fałsz? Ekrany nie mają żadnych zalet.', options: ['Prawda', 'Fałsz'], answer: 1, explain: 'Ekrany pomagają w nauce i kontakcie z bliskimi. Szkodzi ich nadmiar.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/mikroskop'] = [
+  {
+    title: 'Lupa czy mikroskop?',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Porównanie: lupa – jedna soczewka, powiększa kilka do kilkudziesięciu razy, do oglądania owada lub kwiatu. Mikroskop – wiele soczewek, powiększa nawet około tysiąca razy, do oglądania komórek i organizmów z kropli wody">
+      <rect x="10" y="10" width="185" height="180" rx="12" class="f4 s4"/>
+      <rect x="205" y="10" width="185" height="180" rx="12" class="f1 s1"/>
+      <circle cx="102" cy="62" r="28" class="bg ln sw"/>
+      <line x1="122" y1="82" x2="150" y2="110" class="ln sw"/>
+      <text x="102" y="138" class="tx-b" text-anchor="middle">lupa</text>
+      <text x="102" y="160" class="tx-s" text-anchor="middle">1 soczewka, do kilkudziesięciu ×</text>
+      <text x="102" y="180" class="tx-s" text-anchor="middle">🐞 owad, 🌼 kwiat</text>
+      <text x="297" y="78" class="tx-b" text-anchor="middle">🔬</text>
+      <text x="297" y="138" class="tx-b" text-anchor="middle">mikroskop</text>
+      <text x="297" y="160" class="tx-s" text-anchor="middle">wiele soczewek, do ok. 1000 ×</text>
+      <text x="297" y="180" class="tx-s" text-anchor="middle">komórki, kropla wody</text>
+    </svg>`,
+    text: `<p><b>Lupa</b> to jedna soczewka. Powiększa kilka–kilkadziesiąt razy – wystarczy do obejrzenia owada albo kwiatu.</p>
+      <p><b>Mikroskop optyczny</b> ma wiele soczewek i powiększa nawet około <b>tysiąca razy</b>. Dzięki niemu zobaczysz komórki i maleńkie organizmy żyjące w kropli wody. Obraz w mikroskopie jest odwrócony.</p>`,
+    remember: 'Lupa – mała rzecz widoczna gołym okiem. Mikroskop – to, czego gołym okiem nie widać.',
+    hook: '„Mikro” znaczy „mały”, „skop” – „oglądam”: mikroskop to „oglądacz małych rzeczy”.',
+    check: { q: 'Czym obejrzysz organizmy w kropli wody ze stawu?', options: ['lornetką', 'mikroskopem', 'kompasem'], answer: 1, explain: 'Są tak małe, że potrzebny jest mikroskop.' },
+  },
+  {
+    title: 'Części mikroskopu',
+    svg: `<svg viewBox="0 0 400 260" role="img" aria-label="Uproszczony mikroskop z podpisami: okular na górze tubusu, obiektywy na rewolwerze, stolik na preparat, oświetlacz pod stolikiem, śruba makrometryczna i mikrometryczna z boku statywu">
+      <rect x="60" y="235" width="150" height="16" rx="4" class="f4 s4 sw"/>
+      <path d="M150,235 L150,60 L172,60 L172,235" class="f4 s4 sw"/>
+      <rect x="95" y="25" width="26" height="30" class="f1 s1 sw"/>
+      <rect x="92" y="55" width="32" height="80" class="f1 s1 sw"/>
+      <path d="M92,135 L124,135 L132,150 L84,150 Z" class="f5 s5 sw"/>
+      <rect x="96" y="150" width="9" height="20" class="f5 s5"/>
+      <rect x="112" y="150" width="9" height="16" class="f5 s5"/>
+      <rect x="60" y="182" width="112" height="9" class="f3 s3 sw"/>
+      <rect x="102" y="205" width="14" height="12" class="f2 s2"/>
+      <circle cx="184" cy="110" r="12" class="f2 s2 sw"/>
+      <circle cx="184" cy="140" r="7" class="f2 s2 sw"/>
+      <g class="ln-thin"><line x1="122" y1="38" x2="240" y2="38"/><line x1="124" y1="95" x2="240" y2="95"/><line x1="126" y1="160" x2="240" y2="160"/><line x1="172" y1="186" x2="240" y2="186"/><line x1="116" y1="211" x2="240" y2="211"/><line x1="196" y1="110" x2="240" y2="122"/><line x1="191" y1="140" x2="240" y2="140"/></g>
+      <g class="tx-s"><text x="246" y="43">okular</text><text x="246" y="100">tubus</text><text x="246" y="126">śruba makro (duża)</text><text x="246" y="145">śruba mikro (mała)</text><text x="246" y="165">obiektywy (rewolwer)</text><text x="246" y="191">stolik</text><text x="246" y="216">oświetlacz</text></g>
+    </svg>`,
+    text: `<p>Patrzysz przez <b>okular</b>, który jest na górze <b>tubusu</b>. Nad preparatem są <b>obiektywy</b> na obrotowym <b>rewolwerze</b> – obracając go, zmieniasz powiększenie. Preparat kładziesz na <b>stoliku</b>, a <b>oświetlacz</b> świeci od dołu.</p>
+      <p>Ostrość ustawiasz śrubami: dużą <b>makrometryczną</b> – wstępnie, małą <b>mikrometryczną</b> – dokładnie. Wszystko trzyma <b>statyw</b>.</p>`,
+    remember: 'Okular – oko; obiektyw – obiekt (preparat); stolik – preparat; śruby – ostrość.',
+    hook: '<b>Ok</b>ular jest przy <b>ok</b>u, <b>obiekt</b>yw – przy <b>obiekt</b>cie.',
+    check: { q: 'Przez którą część patrzysz?', options: ['przez obiektyw', 'przez okular', 'przez stolik'], answer: 1, explain: 'Oko przykładasz do okularu.' },
+  },
+  {
+    title: 'Ile razy powiększa? Mnożymy!',
+    svg: `<svg viewBox="0 0 400 170" role="img" aria-label="Okular powiększa 10 razy, obiektyw 40 razy. 10 razy 40 równa się 400 – mikroskop powiększa 400 razy">
+      <rect x="10" y="40" width="100" height="70" rx="12" class="f1 s1 sw"/>
+      <text x="60" y="70" class="tx-s" text-anchor="middle">okular</text>
+      <text x="60" y="96" class="tx-b" text-anchor="middle">10×</text>
+      <text x="135" y="84" class="tx-b" text-anchor="middle">·</text>
+      <rect x="160" y="40" width="100" height="70" rx="12" class="f5 s5 sw"/>
+      <text x="210" y="70" class="tx-s" text-anchor="middle">obiektyw</text>
+      <text x="210" y="96" class="tx-b" text-anchor="middle">40×</text>
+      <text x="285" y="84" class="tx-b" text-anchor="middle">=</text>
+      <rect x="305" y="40" width="85" height="70" rx="12" class="f3 s3 sw"/>
+      <text x="347" y="88" class="tx-b" text-anchor="middle">400×</text>
+      <text x="200" y="150" class="tx-s" text-anchor="middle">zaczynaj od najmniejszego obiektywu</text>
+    </svg>`,
+    text: `<p><b>Powiększenie mikroskopu</b> = powiększenie okularu · powiększenie obiektywu. Okular 10× i obiektyw 40× → <b>400 razy</b>.</p>
+      <p>Obserwację zawsze zaczynasz od obiektywu o <b>najmniejszym</b> powiększeniu – łatwiej znaleźć obiekt. Śrubą makrometryczną szukasz obrazu, mikrometryczną ustawiasz ostrość. Dopiero potem zmieniasz obiektyw na większy.</p>`,
+    remember: 'Powiększenie = okular · obiektyw. Start od najmniejszego.',
+    hook: 'Dwie lupy jedna za drugą nie dodają się, tylko mnożą – jak „razy”, nie „plus”.',
+    check: { q: 'Okular 5×, obiektyw 20×. Jakie powiększenie?', options: ['25×', '100×', '15×'], answer: 1, explain: '5 · 20 = 100. Powiększenia mnożymy.' },
+  },
+  {
+    title: 'Jak zrobić preparat?',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Cztery kroki preparatu świeżego: 1 – kropla wody na szkiełku podstawowym, 2 – cienki kawałek, np. skórka cebuli, w kropli, 3 – szkiełko nakrywkowe kładzione od boku, bez pęcherzyków, 4 – nadmiar wody zebrany bibułą">
+      <g class="f1 s1"><rect x="10" y="60" width="85" height="16" rx="2"/><rect x="108" y="60" width="85" height="16" rx="2"/><rect x="206" y="60" width="85" height="16" rx="2"/><rect x="304" y="60" width="85" height="16" rx="2"/></g>
+      <ellipse cx="52" cy="58" rx="12" ry="5" class="f3 s3"/>
+      <ellipse cx="150" cy="58" rx="12" ry="5" class="f3 s3"/>
+      <rect x="140" y="54" width="20" height="3" class="f2 s2"/>
+      <line x1="225" y1="40" x2="265" y2="56" class="ln sw"/>
+      <ellipse cx="248" cy="58" rx="12" ry="4" class="f3 s3"/>
+      <rect x="326" y="55" width="40" height="4" class="ln sw"/>
+      <rect x="370" y="44" width="16" height="16" class="f4 s4"/>
+      <g class="tx-b" text-anchor="middle"><text x="52" y="28">1</text><text x="150" y="28">2</text><text x="248" y="28">3</text><text x="346" y="28">4</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="52" y="104">kropla</text><text x="52" y="122">wody</text><text x="150" y="104">cienki</text><text x="150" y="122">kawałek</text><text x="248" y="104">szkiełko</text><text x="248" y="122">nakrywkowe</text><text x="346" y="104">bibuła</text><text x="346" y="122">zbiera wodę</text></g>
+      <text x="200" y="170" class="tx-s" text-anchor="middle">pod spodem: szkiełko podstawowe</text>
+    </svg>`,
+    text: `<p><b>Preparat</b> to materiał przygotowany do oglądania pod mikroskopem. <b>Preparat świeży</b> robisz tak: na <b>szkiełko podstawowe</b> nanieś kroplę wody, połóż w niej bardzo cienki kawałek (np. skórkę cebuli) i ostrożnie, od boku, przykryj <b>szkiełkiem nakrywkowym</b>.</p>
+      <p>Uważaj na <b>pęcherzyki powietrza</b> – zasłaniają obraz. Nadmiar wody zbierz bibułą.</p>`,
+    remember: 'Szkiełko podstawowe – na dole, nakrywkowe – na górze, bez pęcherzyków.',
+    hook: 'Preparat to kanapka: dwie kromki szkła, w środku kropla wody i cieniutki „plasterek”.',
+  },
+  {
+    title: 'Od komórki do organizmu',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Pięć poziomów budowy w kolejności: komórka, tkanka, narząd – serce, układ narządów – układ krwionośny, organizm – człowiek. Strzałki od najmniejszego do największego">
+      <defs><marker id="a-p12-mk-5" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <circle cx="40" cy="80" r="16" class="f3 s3 sw"/>
+      <circle cx="40" cy="80" r="5" class="f5 s5"/>
+      <g class="f3 s3"><circle cx="112" cy="70" r="10"/><circle cx="132" cy="70" r="10"/><circle cx="112" cy="90" r="10"/><circle cx="132" cy="90" r="10"/></g>
+      <text x="205" y="92" class="tx-b" text-anchor="middle">❤️</text>
+      <text x="290" y="92" class="tx-b" text-anchor="middle">🩸</text>
+      <text x="380" y="92" class="tx-b" text-anchor="middle">🧍</text>
+      <g class="ln"><path d="M60,80 L94,80" marker-end="url(#a-p12-mk-5)"/><path d="M148,80 L182,80" marker-end="url(#a-p12-mk-5)"/><path d="M228,80 L262,80" marker-end="url(#a-p12-mk-5)"/><path d="M318,80 L352,80" marker-end="url(#a-p12-mk-5)"/></g>
+      <g class="tx-s" text-anchor="middle"><text x="40" y="130">komórka</text><text x="122" y="130">tkanka</text><text x="205" y="130">narząd</text><text x="290" y="130">układ</text><text x="380" y="130">organizm</text>
+      <text x="205" y="150">(serce)</text><text x="290" y="150">narządów</text></g>
+      <text x="210" y="185" class="tx-s" text-anchor="middle">bakteria = 1 komórka · człowiek = bardzo wiele komórek</text>
+    </svg>`,
+    text: `<p><b>Komórka</b> to najmniejsza żywa część organizmu. <b>Organizmy jednokomórkowe</b> (np. bakterie) to jedna komórka. <b>Wielokomórkowe</b> (np. człowiek, drzewo) mają ich bardzo wiele.</p>
+      <p>Podobne komórki tworzą <b>tkankę</b>, tkanki – <b>narząd</b> (np. serce), narządy – <b>układ narządów</b> (np. układ krwionośny), a układy – <b>organizm</b>.</p>`,
+    remember: 'Komórka → tkanka → narząd → układ narządów → organizm.',
+    hook: 'Jak w szkole: uczeń → klasa → rocznik → szkoła. Komórka to „uczeń” organizmu.',
+    check: { q: 'Co jest narządem?', options: ['komórka', 'serce', 'człowiek'], answer: 1, explain: 'Serce to narząd. Komórka to najmniejszy poziom, a człowiek – cały organizm.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/materia'] = [
+  {
+    title: 'Ciało i substancja',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Trzy łyżki – ciała – zrobione z różnych substancji: stali, drewna i plastiku. Obok: ze szkła – jednej substancji – robimy różne ciała: szklankę, okno, kulkę">
+      <rect x="10" y="10" width="185" height="180" rx="12" class="f1 s1"/>
+      <text x="102" y="36" class="tx-b" text-anchor="middle">1 ciało, różne</text>
+      <text x="102" y="56" class="tx-b" text-anchor="middle">substancje</text>
+      <text x="102" y="96" class="tx-b" text-anchor="middle">🥄 🥄 🥄</text>
+      <text x="102" y="130" class="tx-s" text-anchor="middle">łyżka ze stali,</text>
+      <text x="102" y="150" class="tx-s" text-anchor="middle">z drewna,</text>
+      <text x="102" y="170" class="tx-s" text-anchor="middle">z plastiku</text>
+      <rect x="205" y="10" width="185" height="180" rx="12" class="f3 s3"/>
+      <text x="297" y="36" class="tx-b" text-anchor="middle">1 substancja,</text>
+      <text x="297" y="56" class="tx-b" text-anchor="middle">różne ciała</text>
+      <text x="297" y="96" class="tx-b" text-anchor="middle">🥛 🪟 🔮</text>
+      <text x="297" y="130" class="tx-s" text-anchor="middle">ze szkła: szklanka,</text>
+      <text x="297" y="150" class="tx-s" text-anchor="middle">okno, kulka</text>
+    </svg>`,
+    text: `<p><b>Materia</b> to wszystko, co ma masę i zajmuje miejsce. <b>Ciało</b> to konkretny przedmiot (łyżka, kamyk, kropla), a <b>substancja</b> – to, z czego jest zrobione (stal, drewno, szkło, woda).</p>
+      <p>Łyżka może być ze stali, drewna albo plastiku. A ze szkła zrobisz szklankę, okno i kulkę.</p>`,
+    remember: 'Ciało – przedmiot. Substancja – materiał, z którego jest.',
+    hook: 'Pytasz „co to?” – odpowiedź to ciało (łyżka). Pytasz „z czego?” – to substancja (stal).',
+    check: { q: 'Co jest substancją?', options: ['szklanka', 'szkło', 'okno'], answer: 1, explain: 'Szkło to materiał – substancja. Szklanka i okno to ciała.' },
+  },
+  {
+    title: 'Kształt: stały, naczynia, całe naczynie',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Trzy naczynia. Ciało stałe – kostka lodu zachowuje swój kształt. Ciecz – woda przyjmuje kształt dna naczynia. Gaz – wypełnia całe naczynie">
+      <path d="M20,40 L20,150 L120,150 L120,40" class="ln sw" fill="none"/>
+      <rect x="50" y="110" width="40" height="40" class="f1 s1 sw"/>
+      <path d="M150,40 L150,150 L250,150 L250,40" class="ln sw" fill="none"/>
+      <rect x="152" y="118" width="96" height="31" class="f1 s1"/>
+      <path d="M280,40 L280,150 L380,150 L380,40 Z" class="ln sw f5"/>
+      <g class="f5 s5"><circle cx="300" cy="60" r="4"/><circle cx="350" cy="75" r="4"/><circle cx="320" cy="120" r="4"/><circle cx="365" cy="135" r="4"/><circle cx="295" cy="100" r="4"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="70" y="25">ciało stałe</text><text x="200" y="25">ciecz</text><text x="330" y="25">gaz</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="70" y="175">własny kształt</text><text x="200" y="175">kształt naczynia</text><text x="330" y="175">całe naczynie</text></g>
+    </svg>`,
+    text: `<p><b>Ciało stałe</b> (lód, kamień) ma własny kształt. <b>Ciecz</b> (woda, mleko) przyjmuje kształt naczynia i płynie. <b>Gaz</b> (powietrze, para wodna) wypełnia całe naczynie.</p>
+      <p><b>Ściśliwość</b>: zatkaj strzykawkę z powietrzem – tłok da się wcisnąć. Ze strzykawką z wodą prawie się nie da. Gazy łatwo ścisnąć, ciecze i ciała stałe – prawie wcale.</p>`,
+    remember: 'Stały – swój kształt. Ciecz – kształt naczynia. Gaz – całe naczynie, łatwo go ścisnąć.',
+    hook: 'Gaz to nieśmiały gość, który mimo to zajmuje cały pokój.',
+    check: { q: 'Którą substancję najłatwiej ścisnąć?', options: ['wodę', 'kamień', 'powietrze'], answer: 2, explain: 'Gaz jest ściśliwy, bo jego drobiny są daleko od siebie.' },
+  },
+  {
+    title: 'Model drobinowy',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Ułożenie drobin: w ciele stałym ciasno w równych rzędach, drgają; w cieczy blisko, ale nieuporządkowane, przesuwają się; w gazie daleko od siebie, szybko się poruszają">
+      <rect x="10" y="30" width="110" height="110" class="bg ln sw"/>
+      <rect x="145" y="30" width="110" height="110" class="bg ln sw"/>
+      <rect x="280" y="30" width="110" height="110" class="bg ln sw"/>
+      <g class="f1 s1">
+        <circle cx="30" cy="95" r="7"/><circle cx="47" cy="95" r="7"/><circle cx="64" cy="95" r="7"/><circle cx="81" cy="95" r="7"/><circle cx="98" cy="95" r="7"/>
+        <circle cx="30" cy="112" r="7"/><circle cx="47" cy="112" r="7"/><circle cx="64" cy="112" r="7"/><circle cx="81" cy="112" r="7"/><circle cx="98" cy="112" r="7"/>
+        <circle cx="30" cy="129" r="7"/><circle cx="47" cy="129" r="7"/><circle cx="64" cy="129" r="7"/><circle cx="81" cy="129" r="7"/><circle cx="98" cy="129" r="7"/>
+      </g>
+      <g class="f3 s3"><circle cx="163" cy="130" r="7"/><circle cx="180" cy="126" r="7"/><circle cx="197" cy="131" r="7"/><circle cx="214" cy="125" r="7"/><circle cx="234" cy="130" r="7"/><circle cx="170" cy="112" r="7"/><circle cx="188" cy="110" r="7"/><circle cx="206" cy="113" r="7"/><circle cx="224" cy="110" r="7"/></g>
+      <g class="f2 s2"><circle cx="300" cy="50" r="7"/><circle cx="360" cy="45" r="7"/><circle cx="330" cy="85" r="7"/><circle cx="295" cy="120" r="7"/><circle cx="370" cy="118" r="7"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="65" y="20">stałe</text><text x="200" y="20">ciecz</text><text x="335" y="20">gaz</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="65" y="162">ciasno, drgają</text><text x="200" y="162">blisko, przesuwają</text><text x="200" y="180">się</text><text x="335" y="162">daleko, szybko</text><text x="335" y="180">latają</text></g>
+    </svg>`,
+    text: `<p>Każda substancja składa się z ogromnej liczby maleńkich <b>drobin</b>, które cały czas się ruszają. W <b>ciele stałym</b> są bardzo blisko, w stałych miejscach – tylko drgają. W <b>cieczy</b> są blisko, ale przesuwają się – dlatego ciecz płynie.</p>
+      <p>W <b>gazie</b> drobiny są daleko od siebie i szybko poruszają się we wszystkich kierunkach – dlatego gaz wypełnia całe naczynie i łatwo go ścisnąć.</p>`,
+    remember: 'Stałe – ciasno i drgają. Ciecz – blisko, przesuwają się. Gaz – daleko, szybko.',
+    hook: 'Drobiny jak uczniowie: na apelu stoją w rzędach (stałe), na korytarzu przeciskają się (ciecz), na boisku biegają po całym placu (gaz).',
+    check: { q: 'Gdzie drobiny są najdalej od siebie?', options: ['w ciele stałym', 'w cieczy', 'w gazie'], answer: 2, explain: 'W gazie drobiny są daleko i szybko się poruszają.' },
+  },
+  {
+    title: 'Dyfuzja – dowód, że drobiny się ruszają',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Trzy szklanki: torebka herbaty wrzucona do wody, po chwili barwa rozchodzi się, na końcu cała woda jest zabarwiona. W gorącej wodzie dzieje się to szybciej niż w zimnej">
+      <defs><marker id="a-p12-ma-4" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <path d="M20,40 L30,140 L90,140 L100,40" class="ln sw f1"/>
+      <rect x="50" y="110" width="20" height="25" class="f2 s2"/>
+      <path d="M150,40 L160,140 L220,140 L230,40" class="ln sw f1"/>
+      <rect x="180" y="110" width="20" height="25" class="f2 s2"/>
+      <path d="M160,140 L175,85 L205,80 L220,140 Z" class="f4"/>
+      <path d="M280,40 L290,140 L350,140 L360,40" class="ln sw f4"/>
+      <path d="M106,90 L140,90" class="ln" marker-end="url(#a-p12-ma-4)"/>
+      <path d="M236,90 L270,90" class="ln" marker-end="url(#a-p12-ma-4)"/>
+      <g class="tx-s" text-anchor="middle"><text x="60" y="165">start</text><text x="190" y="165">po chwili</text><text x="320" y="165">cała zabarwiona</text></g>
+      <text x="200" y="186" class="tx-s" text-anchor="middle">🔥 w gorącej wodzie – szybciej</text>
+    </svg>`,
+    text: `<p>Wrzuć torebkę herbaty do wody i nie mieszaj. Barwa sama rozejdzie się po całej szklance. Perfumy psiknięte w kącie po chwili czuć w całym pokoju. To <b>dyfuzja</b> – samorzutne mieszanie się substancji dzięki ruchowi drobin.</p>
+      <p>W cieple drobiny ruszają się szybciej, więc w gorącej wodzie herbata zabarwia ją szybciej niż w zimnej.</p>`,
+    remember: 'Dyfuzja – samorzutne mieszanie się substancji. W cieple szybciej.',
+    hook: 'Dyfuzja to „plotka” drobin – sama rozchodzi się po całej klasie.',
+  },
+  {
+    title: 'Podsumowanie i pułapki',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Tabela podsumowania: kształt – stałe własny, ciecz naczynia, gaz całe naczynie; ściśliwość – stałe i ciecz prawie nie, gaz łatwo; drobiny – ciasno, blisko, daleko. Woda występuje we wszystkich trzech stanach: lód, woda, para">
+      <rect x="10" y="10" width="380" height="140" class="bg ln"/>
+      <line x1="10" y1="40" x2="390" y2="40" class="ln"/><line x1="10" y1="80" x2="390" y2="80" class="ln-thin"/><line x1="10" y1="115" x2="390" y2="115" class="ln-thin"/>
+      <line x1="110" y1="10" x2="110" y2="150" class="ln"/><line x1="203" y1="10" x2="203" y2="150" class="ln-thin"/><line x1="296" y1="10" x2="296" y2="150" class="ln-thin"/>
+      <g class="tx-s" text-anchor="middle"><text x="156" y="31">stałe</text><text x="249" y="31">ciecz</text><text x="343" y="31">gaz</text></g>
+      <g class="tx-s"><text x="18" y="65">kształt</text><text x="18" y="102">ściskanie</text><text x="18" y="138">drobiny</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="156" y="65">własny</text><text x="249" y="65">naczynia</text><text x="343" y="65">całe</text>
+      <text x="156" y="102">prawie nie</text><text x="249" y="102">prawie nie</text><text x="343" y="102">łatwo</text>
+      <text x="156" y="138">ciasno</text><text x="249" y="138">blisko</text><text x="343" y="138">daleko</text></g>
+      <text x="200" y="182" class="tx" text-anchor="middle">🧊 lód · 💧 woda · ☁️ para wodna</text>
+    </svg>`,
+    text: `<p>Woda występuje we wszystkich trzech stanach: lód, woda i para wodna. Uwaga: drobiny w ciele stałym też się <b>ruszają</b> – drgają w miejscu.</p>
+      <p>Ciecz zmienia kształt, ale nie objętość: sok przelany ze szklanki na talerz to wciąż tyle samo soku.</p>`,
+    remember: 'Ciecz zmienia kształt, nie objętość. Drobiny zawsze są w ruchu.',
+    check: { q: 'Prawda czy fałsz? W ciele stałym drobiny w ogóle się nie ruszają.', options: ['Prawda', 'Fałsz'], answer: 1, explain: 'Drgają w swoich miejscach – ruszają się, ale się nie przesuwają.' },
+  },
+];

@@ -108,6 +108,190 @@ window.SUBJECTS.push({
 
     // ------------------------------------------------------------------
     {
+      id: 'ekran',
+      name: 'Czas przed ekranem',
+      chapter: 'rozdział I „Spotkanie z przyrodą” (ile czasu spędzam przed ekranem?)',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 1 „Spotkania z przyrodą”, wym. 1 (czynniki wspierające i zakłócające naukę: sen, stres, hałas, wielozadaniowość; strategie poprawy koncentracji); dz. 6 „Człowiek w środowisku”, wym. 9 (czym jest uzależnienie, zachowania, od których można się uzależnić), wym. 5 (zasady dbania o wzrok); dz. 4 wym. 11 (znaczenie regularnego snu). Temat lekcji z podręcznika „Odkrywam przyrodę 4” (rozdział I) – dodany decyzją rodzica (2.11.2026). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Bez liczbowych limitów czasu: zalecenia WHO z limitem godzin dotyczą dzieci do 5 lat, a dla starszych dzieci organizacje podają różne wskazówki. Wpływ światła z ekranów na zasypianie – według materiałów edukacyjnych (np. Fundacja Orange, „Ile czasu przed ekranem”).',
+      theory: `
+        <h3>Co to jest czas przed ekranem?</h3>
+        <p>To cały czas, który spędzasz przy <b>telefonie, tablecie, komputerze, telewizorze i konsoli</b> – razem, nie osobno. Liczy się też oglądanie filmików w drodze do szkoły i granie u kolegi.</p>
+        <p>Ekrany są przydatne: pomagają się uczyć, szukać informacji, rozmawiać z bliskimi. Kłopot zaczyna się, gdy zabierają czas na <b>sen, ruch, naukę i spotkania z ludźmi</b>.</p>
+        <h3>Co się dzieje, gdy ekranów jest za dużo?</h3>
+        <table>
+          <tr><th>Co cierpi?</th><th>Dlaczego?</th></tr>
+          <tr><td><b>sen</b></td><td>późne granie i oglądanie przesuwają porę zaśnięcia; jasne światło ekranu wieczorem utrudnia zasypianie</td></tr>
+          <tr><td><b>oczy</b></td><td>długie patrzenie z bliska męczy oczy: pieką, łzawią, mogą boleć głowa</td></tr>
+          <tr><td><b>ciało</b></td><td>siedzisz w jednej pozycji, mniej się ruszasz; boli kark i plecy</td></tr>
+          <tr><td><b>koncentracja</b></td><td>powiadomienia rozpraszają; robienie kilku rzeczy naraz (<b>wielozadaniowość</b>) sprawia, że uczysz się wolniej i gorzej</td></tr>
+          <tr><td><b>relacje</b></td><td>mniej rozmów i zabaw z rodziną i kolegami</td></tr>
+        </table>
+        <h3>Uzależnienie</h3>
+        <p><b>Uzależnienie</b> to tak silna potrzeba robienia czegoś (albo używania jakiejś substancji), że trudno przestać – nawet gdy to szkodzi. Można się uzależnić od substancji (np. nikotyny w papierosach, alkoholu), ale też od <b>zachowań</b>, np. grania czy przewijania filmików.</p>
+        <p>Sygnały ostrzegawcze: myślisz cały czas o grze, złościsz się, gdy musisz odłożyć telefon, rezygnujesz dla ekranu z zabawy, snu lub nauki, a obiecujesz sobie „jeszcze tylko chwilę” i nie dotrzymujesz słowa.</p>
+        <h3>Jak mądrze korzystać z ekranów?</h3>
+        <ul>
+          <li>Ustal z rodzicami <b>plan</b>: kiedy i na co używasz ekranu.</li>
+          <li>Rób <b>przerwy</b>: wstań, przeciągnij się, popatrz w dal przez okno.</li>
+          <li>Trzymaj ekran w odpowiedniej odległości, siedź prosto, pracuj przy dobrym oświetleniu.</li>
+          <li><b>Odłóż ekran na pewien czas przed snem</b>; telefon nie powinien leżeć przy łóżku.</li>
+          <li>Podczas nauki <b>wycisz powiadomienia</b> i rób jedną rzecz naraz.</li>
+          <li>Bez ekranów przy posiłkach – to czas na rozmowę.</li>
+          <li>Codziennie znajdź czas na <b>ruch na świeżym powietrzu</b>.</li>
+        </ul>
+        <div class="tip">💡 Sprawdź przez tydzień, ile czasu spędzasz przed ekranem (wiele telefonów ma licznik czasu). Zapisz wyniki w tabeli i zastanów się, co możesz zmienić.</div>
+      `,
+      flashcards: [
+        ['Czas przed ekranem', 'Cały czas przy telefonie, tablecie, komputerze, telewizorze i konsoli – liczony razem'],
+        ['Ekran a sen', 'Późne korzystanie z ekranu i jego jasne światło utrudniają zasypianie'],
+        ['Ekran a oczy', 'Długie patrzenie z bliska męczy oczy – rób przerwy i patrz w dal'],
+        ['Wielozadaniowość', 'Robienie kilku rzeczy naraz – utrudnia skupienie i naukę'],
+        ['Uzależnienie', 'Tak silna potrzeba robienia czegoś lub używania substancji, że trudno przestać, choć to szkodzi'],
+        ['Od czego można się uzależnić?', 'Od substancji (np. nikotyna, alkohol) i od zachowań (np. granie, przewijanie filmików)'],
+        ['Sygnał ostrzegawczy', 'Złość przy odkładaniu telefonu, rezygnacja ze snu, ruchu i spotkań dla ekranu'],
+        ['Przed snem', 'Odłóż ekran na pewien czas przed snem, telefon poza łóżkiem'],
+        ['Podczas nauki', 'Wycisz powiadomienia, rób jedną rzecz naraz'],
+        ['Zamiast ekranu', 'Ruch na świeżym powietrzu, rozmowa, książka, zabawa z innymi'],
+      ],
+      questions: [
+        { id: 'h4ihmn', q: 'Co wliczamy do czasu przed ekranem?', options: ['czas przy telefonie, tablecie, komputerze, telewizorze i konsoli – razem', 'tylko granie na konsoli', 'tylko oglądanie telewizji', 'tylko czas w szkole'], answer: 0, explain: 'Liczy się cały czas przy wszystkich urządzeniach z ekranem.' },
+        { id: '2f1t0a', q: 'Dlaczego nie warto korzystać z telefonu tuż przed snem?', options: ['bo trudniej wtedy zasnąć', 'bo telefon się zepsuje', 'bo w nocy nie ma internetu', 'bo ekran gaśnie sam'], answer: 0, explain: 'Gra lub filmik pobudzają, a jasne światło ekranu wieczorem utrudnia zasypianie.' },
+        { id: '3ejnn2', q: 'Co pomaga oczom, gdy długo pracujesz przy komputerze?', options: ['przerwy i patrzenie w dal, np. przez okno', 'przybliżenie twarzy do ekranu', 'praca w ciemnym pokoju', 'niemruganie'], answer: 0, explain: 'Patrzenie z bliska męczy oczy. W przerwie popatrz w dal i odpocznij.' },
+        { id: 'svcv4a', q: 'Co to jest wielozadaniowość?', options: ['robienie kilku rzeczy naraz', 'posiadanie wielu zadań domowych', 'praca w grupie', 'szybkie pisanie'], answer: 0, explain: 'Np. nauka, czat i filmik jednocześnie. Mózg wtedy gorzej się skupia, a nauka idzie wolniej.' },
+        { id: 'cw5fm3', q: 'Jak wielozadaniowość wpływa na naukę?', options: ['uczysz się wolniej i gorzej', 'uczysz się dwa razy szybciej', 'nie ma żadnego wpływu', 'lepiej zapamiętujesz'], answer: 0, explain: 'Gdy przeskakujesz między zadaniami, łatwo tracisz skupienie.' },
+        { id: '5k0xrr', q: 'Czym jest uzależnienie?', options: ['tak silną potrzebą robienia czegoś, że trudno przestać, choć to szkodzi', 'ulubionym hobby', 'chorobą zakaźną', 'zmęczeniem po lekcjach'], answer: 0, explain: 'Osoba uzależniona nie umie sama przestać, mimo że widzi szkody.' },
+        { id: 've4h4l', q: 'Od czego można się uzależnić?', options: ['od substancji, np. nikotyny, i od zachowań, np. grania', 'tylko od lekarstw', 'tylko od słodyczy', 'nie można się uzależnić od niczego'], answer: 0, explain: 'Uzależniają substancje (np. nikotyna, alkohol), ale też zachowania – np. granie czy przewijanie filmików.' },
+        { id: 'x5n14r', q: 'Który objaw może być sygnałem ostrzegawczym?', options: ['złość, gdy trzeba odłożyć telefon, i rezygnacja dla niego ze snu i zabawy', 'czytanie książki wieczorem', 'gra w piłkę z kolegami', 'odrabianie lekcji przy biurku'], answer: 0, explain: 'Gdy ekran wypiera sen, ruch i spotkania, a trudno go odłożyć – warto porozmawiać z dorosłym.' },
+        { id: 'xt2z7v', q: 'Co warto zrobić z powiadomieniami podczas nauki?', options: ['wyciszyć je', 'włączyć głośniej', 'odpowiadać na każde od razu', 'ustawić wibracje co minutę'], answer: 0, explain: 'Powiadomienia rozpraszają. Wyciszony telefon pomaga się skupić.' },
+        { id: '63d7bj', q: 'Która zasada pomaga mądrze korzystać z ekranów?', options: ['ustalić z rodzicami plan, kiedy i na co używam ekranu', 'grać zawsze, gdy mam ochotę', 'jeść obiad przy telefonie', 'trzymać telefon pod poduszką'], answer: 0, explain: 'Plan pomaga zachować czas na sen, naukę, ruch i rozmowy.' },
+        { id: 'fvh5gx', q: 'Jak długie siedzenie przed ekranem wpływa na ciało?', options: ['mniej się ruszasz, może boleć kark i plecy', 'mięśnie same rosną', 'poprawia się postawa', 'nie ma żadnego wpływu'], answer: 0, explain: 'Siedzenie w jednej pozycji męczy kark i plecy. Ruch na świeżym powietrzu to dobra przeciwwaga.' },
+        { id: 'i71qrt', q: 'Gdzie najlepiej trzymać telefon w nocy?', options: ['poza łóżkiem, najlepiej poza sypialnią', 'pod poduszką', 'w ręce', 'na kołdrze z włączonym ekranem'], answer: 0, explain: 'Telefon przy łóżku kusi i budzi powiadomieniami – sen jest wtedy gorszy.' },
+        { id: 'q1vf87', q: 'Jak sprawdzić, ile czasu spędzasz przed ekranem?', options: ['zapisywać przez tydzień czas w tabeli albo użyć licznika w telefonie', 'zgadnąć', 'zapytać kolegę', 'nie da się tego sprawdzić'], answer: 0, explain: 'Pomiar to podstawa – tak jak w badaniach przyrodniczych. Potem łatwiej coś zmienić.' },
+        { id: '2roola', q: 'Prawda czy fałsz?\nEkrany zawsze szkodzą i nie mają żadnych zalet.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Ekrany pomagają się uczyć i kontaktować z bliskimi. Szkodzi ich nadmiar, gdy zabiera czas na sen, ruch i ludzi.' },
+        { id: 'lz73wg', q: 'Prawda czy fałsz?\nDo czasu przed ekranem liczymy też oglądanie filmików na telefonie w autobusie.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Liczy się każdy czas przy ekranie, bez względu na miejsce.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
+    {
+      id: 'mikroskop',
+      name: 'Mikroskop i budowa organizmów',
+      chapter: 'rozdział I (mikroskop) i rozdział V „Jak działają organizmy?” (budowa organizmów)',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 1 „Spotkania z przyrodą”, wym. 3 (narzędzia do obserwacji, w tym lupa i mikroskop); dz. 2 „W terenie i najbliższym otoczeniu”, wym. 11 (obserwacja mikroskopowa organizmów z próbek wody); dz. 4 „Organizmy i ekosystemy”, wym. 1 (cechy żywego organizmu, poziomy organizacji życia od komórki). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Mikroskop i lupa w obserwacjach biologicznych” – części mikroskopu, obliczanie powiększenia, zasady obserwacji, preparat świeży; „Hierarchiczna budowa organizmu człowieka”, „Komórki tworzą organizm” – komórka, tkanka, narząd, układ narządów, organizm). Typ mikroskopu szkolnego bywa różny (z lusterkiem albo z oświetlaczem) – opisujemy wersję z oświetlaczem.',
+      theory: `
+        <h3>Lupa i mikroskop</h3>
+        <p>Niektórych rzeczy nie zobaczysz gołym okiem. Pomagają przyrządy powiększające:</p>
+        <table>
+          <tr><th></th><th>Lupa</th><th>Mikroskop optyczny</th></tr>
+          <tr><td>budowa</td><td>jedna soczewka</td><td>wiele soczewek (w okularze i obiektywach)</td></tr>
+          <tr><td>powiększenie</td><td>kilka – kilkadziesiąt razy</td><td>nawet około tysiąca razy</td></tr>
+          <tr><td>obraz</td><td>prosty (nieodwrócony)</td><td>odwrócony</td></tr>
+          <tr><td>do czego?</td><td>małe obiekty widoczne gołym okiem, np. owad, kwiat</td><td>bardzo małe obiekty, np. komórki, organizmy w kropli wody</td></tr>
+        </table>
+        <h3>Części mikroskopu</h3>
+        <table>
+          <tr><th>Część</th><th>Do czego służy?</th></tr>
+          <tr><td><b>okular</b></td><td>soczewka, przez którą patrzysz; powiększa obraz</td></tr>
+          <tr><td><b>tubus</b></td><td>rura, w której jest okular</td></tr>
+          <tr><td><b>obiektywy</b></td><td>soczewki nad preparatem, silnie powiększają</td></tr>
+          <tr><td><b>rewolwer</b></td><td>obrotowa tarcza z obiektywami – tak zmieniasz powiększenie</td></tr>
+          <tr><td><b>stolik</b></td><td>tu kładziesz preparat</td></tr>
+          <tr><td><b>oświetlacz</b> (źródło światła)</td><td>oświetla preparat od dołu</td></tr>
+          <tr><td><b>śruba makrometryczna</b> (duża)</td><td>wstępne ustawienie ostrości</td></tr>
+          <tr><td><b>śruba mikrometryczna</b> (mała)</td><td>dokładne ustawienie ostrości</td></tr>
+          <tr><td><b>statyw</b></td><td>„szkielet” mikroskopu – trzyma wszystkie części</td></tr>
+        </table>
+        <p><b>Powiększenie</b> = powiększenie okularu · powiększenie obiektywu. Okular 10× i obiektyw 40× → <b>400 razy</b>.</p>
+        <h3>Jak obserwować?</h3>
+        <ol>
+          <li>Włącz światło, ustaw obiektyw o <b>najmniejszym</b> powiększeniu.</li>
+          <li>Połóż preparat na stoliku tak, by obiekt był pod obiektywem.</li>
+          <li>Śrubą makrometryczną znajdź obraz, mikrometryczną ustaw ostrość.</li>
+          <li>Dopiero potem zmieniaj obiektyw na większy i znów ustaw ostrość.</li>
+        </ol>
+        <p><b>Preparat</b> to materiał przygotowany do oglądania pod mikroskopem. <b>Preparat świeży</b>: na <b>szkiełko podstawowe</b> nanieś kroplę wody, połóż w niej bardzo cienki kawałek (np. skórkę cebuli) i przykryj <b>szkiełkiem nakrywkowym</b> tak, żeby nie było pęcherzyków powietrza. Nadmiar wody zbierz bibułą.</p>
+        <h3>Z czego zbudowane są organizmy?</h3>
+        <p><b>Komórka</b> to najmniejsza część organizmu, która żyje. Wszystkie organizmy są zbudowane z komórek.</p>
+        <ul>
+          <li><b>Organizmy jednokomórkowe</b> – całe ciało to jedna komórka (np. bakterie, wiele glonów i pierwotniaków żyjących w kropli wody). Zobaczysz je tylko pod mikroskopem.</li>
+          <li><b>Organizmy wielokomórkowe</b> – zbudowane z bardzo wielu komórek (np. człowiek, pies, drzewo).</li>
+        </ul>
+        <p>W organizmie wielokomórkowym komórki współpracują. Poziomy budowy:</p>
+        <p><span class="f">komórka → tkanka → narząd → układ narządów → organizm</span></p>
+        <table>
+          <tr><th>Poziom</th><th>Co to jest?</th><th>Przykład (człowiek)</th></tr>
+          <tr><td>tkanka</td><td>grupa podobnych komórek</td><td>tkanka mięśniowa</td></tr>
+          <tr><td>narząd</td><td>współpracujące tkanki, pełnią jedno zadanie</td><td>serce, płuca, żołądek</td></tr>
+          <tr><td>układ narządów</td><td>narządy, które razem pełnią ważną funkcję</td><td>układ oddechowy, układ pokarmowy</td></tr>
+          <tr><td>organizm</td><td>cała istota żywa</td><td>człowiek</td></tr>
+        </table>
+      `,
+      flashcards: [
+        ['Lupa', 'Jedna soczewka; powiększa kilka–kilkadziesiąt razy, obraz prosty'],
+        ['Mikroskop optyczny', 'Wiele soczewek; powiększa nawet około tysiąca razy, obraz odwrócony'],
+        ['Okular', 'Soczewka, przez którą patrzysz'],
+        ['Obiektyw', 'Silnie powiększające soczewki nad preparatem (na rewolwerze)'],
+        ['Rewolwer', 'Obrotowa tarcza z obiektywami – zmiana powiększenia'],
+        ['Stolik', 'Miejsce na preparat'],
+        ['Śruba makrometryczna i mikrometryczna', 'Duża – wstępne, mała – dokładne ustawienie ostrości'],
+        ['Powiększenie mikroskopu', 'Okular · obiektyw, np. 10× · 40× = 400×'],
+        ['Od jakiego powiększenia zaczynasz?', 'Od najmniejszego'],
+        ['Preparat świeży', 'Cienki kawałek w kropli wody na szkiełku podstawowym, przykryty szkiełkiem nakrywkowym'],
+        ['Komórka', 'Najmniejsza żywa część organizmu'],
+        ['Organizm jednokomórkowy', 'Całe ciało to jedna komórka, np. bakteria'],
+        ['Poziomy budowy organizmu', 'Komórka → tkanka → narząd → układ narządów → organizm'],
+        ['Narząd', 'Część ciała z kilku tkanek pełniąca jedno zadanie, np. serce'],
+      ],
+      questions: [
+        { id: 'adcbto', q: 'Którym przyrządem obejrzysz komórki skórki cebuli?', options: ['mikroskopem', 'lornetką', 'kompasem', 'termometrem'], answer: 0, explain: 'Komórki są bardzo małe – potrzebny jest mikroskop. Lornetka służy do oglądania obiektów daleko.' },
+        { id: '85sc6u', q: 'Czym różni się lupa od mikroskopu?', options: ['lupa ma jedną soczewkę i powiększa słabiej', 'lupa powiększa mocniej niż mikroskop', 'lupa daje obraz odwrócony', 'lupa nie ma soczewki'], answer: 0, explain: 'Lupa to jedna soczewka (kilka–kilkadziesiąt razy). Mikroskop ma wiele soczewek i powiększa nawet ok. tysiąca razy.' },
+        { id: 'xrcpfo', q: 'Przez którą część mikroskopu patrzysz?', options: ['przez okular', 'przez stolik', 'przez statyw', 'przez śrubę'], answer: 0, explain: 'Okular to soczewka na górze tubusu – przykładasz do niego oko.' },
+        { id: 'b8ya54', q: 'Do czego służy rewolwer w mikroskopie?', options: ['do zmiany obiektywów, czyli powiększenia', 'do oświetlania preparatu', 'do trzymania preparatu', 'do mierzenia temperatury'], answer: 0, explain: 'Rewolwer to obrotowa tarcza z obiektywami o różnych powiększeniach.' },
+        { id: 'v1544b', q: 'Gdzie kładziesz preparat?', options: ['na stoliku', 'na okularze', 'w tubusie', 'na rewolwerze'], answer: 0, explain: 'Preparat leży na stoliku, pod obiektywem.' },
+        { id: 'm5r2qz', q: 'Do czego służy śruba mikrometryczna?', options: ['do dokładnego ustawienia ostrości', 'do włączania światła', 'do zmiany okularu', 'do przesuwania stołu'], answer: 0, explain: 'Duża śruba (makrometryczna) – ustawienie wstępne, mała (mikrometryczna) – dokładne.' },
+        { id: 'f87dg0', q: 'Okular powiększa 10 razy, a obiektyw 40 razy. Jakie jest powiększenie mikroskopu?', options: ['400 razy', '50 razy', '30 razy', '4 razy'], answer: 0, explain: 'Mnożysz: 10 · 40 = 400.' },
+        { id: '2spxnp', q: 'Okular powiększa 15 razy, a obiektyw 10 razy. Jakie jest powiększenie?', options: ['150 razy', '25 razy', '5 razy', '1500 razy'], answer: 0, explain: '15 · 10 = 150. Powiększenia mnożymy, a nie dodajemy.' },
+        { id: '3qvr83', q: 'Od którego obiektywu zaczynasz obserwację?', options: ['od tego o najmniejszym powiększeniu', 'od tego o największym powiększeniu', 'obojętnie', 'bez obiektywu'], answer: 0, explain: 'Przy małym powiększeniu łatwiej znaleźć obiekt. Potem przechodzisz do większego.' },
+        { id: 'n30hel', q: 'Czym przykrywasz preparat świeży?', options: ['szkiełkiem nakrywkowym', 'szkiełkiem podstawowym', 'bibułą', 'folią aluminiową'], answer: 0, explain: 'Szkiełko podstawowe jest pod spodem, nakrywkowe – na wierzchu. Bibułą zbierasz nadmiar wody.' },
+        { id: 'q58f45', q: 'Czego trzeba unikać, przykrywając preparat?', options: ['pęcherzyków powietrza', 'kropli wody', 'cienkiego materiału', 'światła'], answer: 0, explain: 'Pęcherzyki powietrza zasłaniają obraz. Szkiełko kładziemy ostrożnie, od boku.' },
+        { id: '2tmstz', q: 'Co to jest komórka?', options: ['najmniejsza żywa część organizmu', 'część mikroskopu', 'rodzaj skały', 'narząd człowieka'], answer: 0, explain: 'Wszystkie organizmy są zbudowane z komórek.' },
+        { id: 'n143ki', q: 'Który organizm jest jednokomórkowy?', options: ['bakteria', 'pies', 'dąb', 'człowiek'], answer: 0, explain: 'Ciało bakterii to jedna komórka. Pies, dąb i człowiek są wielokomórkowe.' },
+        { id: 'gr11wt', q: 'Jaka jest prawidłowa kolejność poziomów budowy organizmu?', options: ['komórka → tkanka → narząd → układ narządów → organizm', 'narząd → komórka → tkanka → organizm', 'tkanka → komórka → narząd → układ', 'organizm → komórka → narząd → tkanka'], answer: 0, explain: 'Od najmniejszego: komórki tworzą tkanki, tkanki – narządy, narządy – układy, a układy – organizm.' },
+        { id: '5168tc', q: 'Co jest narządem?', options: ['serce', 'komórka mięśniowa', 'układ oddechowy', 'człowiek'], answer: 0, explain: 'Serce to narząd. Komórka to najmniejszy poziom, układ oddechowy – układ narządów, a człowiek – organizm.' },
+        { id: 'j4q7jq', q: 'Jak nazywamy grupę podobnych komórek, które razem pracują?', options: ['tkanka', 'organizm', 'preparat', 'okular'], answer: 0, explain: 'Np. tkanka mięśniowa to wiele komórek mięśniowych.' },
+        {
+          id: 'jdnzan',
+          q: 'Którą literą oznaczono na rysunku stolik mikroskopu?',
+          svg: `<svg viewBox="0 0 320 250" role="img" aria-label="Uproszczony rysunek mikroskopu z oznaczeniami: A – okular na górze tubusu, B – obiektywy, C – płaski stolik pod obiektywami, D – duża śruba z boku statywu">
+      <rect x="60" y="225" width="150" height="16" rx="4" class="f4 s4 sw"/>
+      <path d="M150,225 L150,60 L172,60 L172,225" class="f4 s4 sw"/>
+      <rect x="95" y="25" width="26" height="30" class="f1 s1 sw"/>
+      <rect x="92" y="55" width="32" height="80" class="f1 s1 sw"/>
+      <path d="M92,135 L124,135 L132,150 L84,150 Z" class="f5 s5 sw"/>
+      <rect x="96" y="150" width="9" height="20" class="f5 s5"/>
+      <rect x="112" y="150" width="9" height="16" class="f5 s5"/>
+      <rect x="60" y="182" width="112" height="9" class="f3 s3 sw"/>
+      <rect x="102" y="196" width="14" height="10" class="f2 s2"/>
+      <circle cx="184" cy="120" r="12" class="f2 s2 sw"/>
+      <line x1="122" y1="38" x2="250" y2="38" class="ln-thin"/>
+      <line x1="126" y1="160" x2="250" y2="160" class="ln-thin"/>
+      <line x1="60" y1="186" x2="30" y2="186" class="ln-thin"/>
+      <line x1="196" y1="120" x2="250" y2="120" class="ln-thin"/>
+      <text x="258" y="44" class="tx-b">A</text>
+      <text x="258" y="166" class="tx-b">B</text>
+      <text x="20" y="192" class="tx-b" text-anchor="end">C</text>
+      <text x="258" y="126" class="tx-b">D</text>
+    </svg>`,
+          options: ['A', 'B', 'C', 'D'],
+          noShuffle: true,
+          answer: 2,
+          explain: 'Stolik (C) to płaska półka pod obiektywami – kładziesz na niej preparat. A – okular, B – obiektywy, D – śruba.',
+        },
+        { id: 'wkro98', q: 'Prawda czy fałsz?\nPowiększenie mikroskopu obliczasz, dodając powiększenie okularu i obiektywu.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Powiększenia się mnoży: okular 10× i obiektyw 40× dają 400×.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
+    {
       id: 'orientacja',
       name: 'Kierunki, kompas, plan i mapa',
       chapter: 'rozdział I „Spotkanie z przyrodą” (posługuję się kompasem)',
@@ -422,6 +606,101 @@ window.SUBJECTS.push({
         { id: 'nzm3al', q: 'Do słoika z wodą wsypano glebę, zamieszano i odstawiono. Co będzie na dnie?', options: ['najcięższe ziarna – żwir i piasek', 'szczątki roślin', 'pęcherzyki powietrza', 'nic – wszystko się rozpuści'], answer: 0, explain: 'Najcięższe ziarna opadają najszybciej i leżą na dnie. Szczątki roślin pływają na powierzchni.' },
         { id: 'r60utl', q: 'Prawda czy fałsz?\nGleba powstaje bardzo powoli – przez setki lat.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Skały kruszą się, a szczątki organizmów rozkładają się bardzo powoli. Dlatego trzeba dbać o glebę.' },
         { id: '0zgoyw', q: 'Ciemna barwa gleby świadczy zwykle o tym, że…', options: ['jest w niej dużo próchnicy', 'jest w niej dużo piasku', 'jest zanieczyszczona', 'nie ma w niej wody'], answer: 0, explain: 'Próchnica jest ciemna – im ciemniejsza gleba, tym zwykle więcej w niej próchnicy.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
+    {
+      id: 'materia',
+      name: 'Materia i drobiny',
+      chapter: 'rozdział III „Obserwuję zjawiska przyrodnicze” (materia, drobiny)',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 3 „Materia i jej przemiany w przyrodzie”, wym. 2 (właściwości stanów skupienia – kształt i ściśliwość – i drobinowy model budowy materii), wym. 3 (stany skupienia wody). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Model drobinowy w uproszczeniu (drobiny bez podziału na atomy i cząsteczki); dyfuzja i ruch drobin – zgodnie z materiałami ZPE (zpe.gov.pl: „Świat składa się z atomów”, ćwiczenia o zachowaniu drobin w stanach skupienia). Ciąg dalszy: dział „Woda i jej stany skupienia”.',
+      theory: `
+        <h3>Materia, ciało, substancja</h3>
+        <p><b>Materia</b> to wszystko, co ma masę i zajmuje miejsce: woda, powietrze, kamień, twoja ławka – i ty.</p>
+        <ul>
+          <li><b>Ciało</b> (fizyczne) – konkretny przedmiot: łyżka, kamyk, kropla deszczu, balon.</li>
+          <li><b>Substancja</b> – to, z czego ciało jest zrobione: stal, szkło, woda, drewno, powietrze.</li>
+        </ul>
+        <p>Łyżka (ciało) może być ze stali, z drewna albo z plastiku (substancje). Z jednej substancji można zrobić wiele ciał: ze szkła – szklankę, okno i kulkę.</p>
+        <h3>Trzy stany skupienia</h3>
+        <table>
+          <tr><th></th><th>Ciało stałe</th><th>Ciecz</th><th>Gaz</th></tr>
+          <tr><td>przykład</td><td>lód, kamień, drewno</td><td>woda, mleko, olej</td><td>powietrze, para wodna</td></tr>
+          <tr><td>kształt</td><td><b>własny, stały</b></td><td>przyjmuje kształt <b>naczynia</b></td><td>wypełnia <b>całe</b> naczynie</td></tr>
+          <tr><td>czy da się ścisnąć?</td><td>prawie nie</td><td>prawie nie</td><td><b>łatwo</b></td></tr>
+          <tr><td>czy płynie?</td><td>nie</td><td>tak – można ją przelewać</td><td>tak, rozchodzi się na wszystkie strony</td></tr>
+        </table>
+        <p><b>Ściśliwość</b> to możliwość zmniejszenia objętości przez ściskanie. Zatkaj palcem wylot strzykawki z powietrzem – tłok da się wcisnąć. Ze strzykawką pełną wody prawie się nie da.</p>
+        <h3>Model drobinowy</h3>
+        <p>Każda substancja składa się z ogromnej liczby bardzo małych <b>drobin</b>. Są tak małe, że nie widać ich nawet pod mikroskopem szkolnym. Drobiny są <b>cały czas w ruchu</b>.</p>
+        <table>
+          <tr><th>Stan</th><th>Jak ułożone są drobiny?</th></tr>
+          <tr><td>ciało stałe</td><td>bardzo <b>blisko</b> siebie, w stałych miejscach, tylko drgają – dlatego ciało stałe ma własny kształt</td></tr>
+          <tr><td>ciecz</td><td><b>blisko</b> siebie, ale mogą się przesuwać względem siebie – dlatego ciecz płynie</td></tr>
+          <tr><td>gaz</td><td><b>daleko</b> od siebie, poruszają się szybko we wszystkich kierunkach – dlatego gaz wypełnia całe naczynie i łatwo go ścisnąć</td></tr>
+        </table>
+        <h3>Dowód, że drobiny się ruszają</h3>
+        <p>Wrzuć torebkę herbaty do gorącej wody – barwa sama rozchodzi się po całej szklance. Zapach perfum czuć po chwili w całym pokoju. Samorzutne mieszanie się substancji nazywamy <b>dyfuzją</b>. W cieple drobiny poruszają się szybciej, więc dyfuzja zachodzi szybciej.</p>
+        <div class="tip">💡 Woda występuje w przyrodzie we wszystkich trzech stanach: lód (ciało stałe), woda (ciecz), para wodna (gaz).</div>
+      `,
+      flashcards: [
+        ['Materia', 'Wszystko, co ma masę i zajmuje miejsce'],
+        ['Ciało (fizyczne)', 'Konkretny przedmiot, np. łyżka, kamień, kropla'],
+        ['Substancja', 'To, z czego zrobione jest ciało, np. stal, szkło, woda'],
+        ['Ciało stałe', 'Ma własny kształt, prawie nie da się go ścisnąć'],
+        ['Ciecz', 'Przyjmuje kształt naczynia, płynie, prawie nie da się jej ścisnąć'],
+        ['Gaz', 'Wypełnia całe naczynie, łatwo go ścisnąć'],
+        ['Ściśliwość', 'Możliwość zmniejszenia objętości przez ściskanie (największa u gazów)'],
+        ['Drobiny', 'Bardzo małe części, z których składa się każda substancja; stale się poruszają'],
+        ['Drobiny w ciele stałym', 'Bardzo blisko, w stałych miejscach, drgają'],
+        ['Drobiny w gazie', 'Daleko od siebie, szybko poruszają się we wszystkich kierunkach'],
+        ['Dyfuzja', 'Samorzutne mieszanie się substancji dzięki ruchowi drobin, np. herbata w wodzie'],
+      ],
+      questions: [
+        { id: '3y84bu', q: 'Co jest ciałem fizycznym, a nie substancją?', options: ['łyżka', 'stal', 'szkło', 'drewno'], answer: 0, explain: 'Łyżka to przedmiot (ciało). Stal, szkło i drewno to substancje, z których robimy przedmioty.' },
+        { id: '8pvu6e', q: 'Co jest substancją?', options: ['woda', 'szklanka', 'kamyk', 'balon'], answer: 0, explain: 'Woda to substancja. Szklanka, kamyk i balon to ciała.' },
+        { id: 'kmcexk', q: 'Który stan skupienia ma własny, stały kształt?', options: ['ciało stałe', 'ciecz', 'gaz', 'żaden'], answer: 0, explain: 'Kamień czy lód mają swój kształt. Ciecz przyjmuje kształt naczynia, a gaz wypełnia całe naczynie.' },
+        { id: 'cp8tz0', q: 'Co dzieje się z kształtem wody przelanej do butelki?', options: ['przyjmuje kształt butelki', 'zostaje kształt szklanki', 'zamienia się w kulę', 'woda nie ma objętości'], answer: 0, explain: 'Ciecz przyjmuje kształt naczynia, ale jej objętość się nie zmienia.' },
+        { id: '8pq0tx', q: 'Którą substancję najłatwiej ścisnąć?', options: ['powietrze', 'wodę', 'kamień', 'drewno'], answer: 0, explain: 'Gazy łatwo się ściskają, bo ich drobiny są daleko od siebie.' },
+        { id: '83xdpe', q: 'Masz dwie zatkane strzykawki: z powietrzem i z wodą. Co się stanie, gdy wciśniesz tłoki?', options: ['tłok w strzykawce z powietrzem da się wcisnąć, z wodą – prawie nie', 'oba tłoki wejdą do końca', 'żaden tłok nie drgnie', 'tylko tłok w strzykawce z wodą się wciśnie'], answer: 0, explain: 'Gaz jest ściśliwy, ciecz – prawie nie.' },
+        { id: '08ip7m', q: 'Jak ułożone są drobiny w ciele stałym?', options: ['bardzo blisko siebie, w stałych miejscach, drgają', 'daleko od siebie, szybko latają', 'blisko, swobodnie się przesuwają', 'w ogóle się nie ruszają i są daleko'], answer: 0, explain: 'Dlatego ciało stałe ma własny kształt.' },
+        { id: '2yccck', q: 'Dlaczego ciecz płynie?', options: ['jej drobiny mogą się przesuwać względem siebie', 'jej drobiny są w stałych miejscach', 'nie ma drobin', 'jej drobiny są bardzo daleko'], answer: 0, explain: 'Drobiny cieczy są blisko, ale przesuwają się – dlatego wodę można przelewać.' },
+        { id: '0imw9z', q: 'Dlaczego gaz wypełnia całe naczynie?', options: ['jego drobiny są daleko i poruszają się we wszystkich kierunkach', 'jego drobiny są przyklejone do ścianek', 'gaz nie ma drobin', 'drobiny gazu stoją w miejscu'], answer: 0, explain: 'Drobiny gazu rozbiegają się na wszystkie strony, aż zajmą całe dostępne miejsce.' },
+        { id: 'uw4ojc', q: 'Barwa herbaty sama rozchodzi się po szklance wody. Jak nazywamy to zjawisko?', options: ['dyfuzja', 'parowanie', 'krzepnięcie', 'ściśliwość'], answer: 0, explain: 'Dyfuzja to samorzutne mieszanie się substancji dzięki ruchowi drobin.' },
+        { id: '9w6k36', q: 'Kiedy dyfuzja zachodzi szybciej?', options: ['w wyższej temperaturze', 'w niższej temperaturze', 'temperatura nie ma znaczenia', 'tylko w ciałach stałych'], answer: 0, explain: 'W cieple drobiny poruszają się szybciej – herbata szybciej zabarwia gorącą wodę niż zimną.' },
+        { id: 'hzd71n', q: 'Co świadczy o tym, że drobiny są w ciągłym ruchu?', options: ['zapach perfum po chwili czuć w całym pokoju', 'kamień ma stały kształt', 'lód jest twardy', 'woda jest przezroczysta'], answer: 0, explain: 'Drobiny perfum same rozchodzą się po pokoju – to dyfuzja.' },
+        { id: 'c9d8vt', q: 'W którym stanie skupienia jest para wodna?', options: ['gazowym', 'ciekłym', 'stałym', 'żadnym'], answer: 0, explain: 'Woda: lód – ciało stałe, woda – ciecz, para wodna – gaz.' },
+        {
+          id: 'z7ltwq',
+          q: 'Na którym rysunku pokazano ułożenie drobin w gazie?',
+          svg: `<svg viewBox="0 0 360 150" role="img" aria-label="Trzy naczynia z drobinami. A: drobiny ciasno ułożone w równych rzędach. B: drobiny blisko siebie, ale nieuporządkowane, na dnie naczynia. C: kilka drobin daleko od siebie, rozrzuconych w całym naczyniu">
+      <rect x="10" y="20" width="100" height="100" class="bg ln sw"/>
+      <rect x="130" y="20" width="100" height="100" class="bg ln sw"/>
+      <rect x="250" y="20" width="100" height="100" class="bg ln sw"/>
+      <g class="f1 s1">
+        <circle cx="30" cy="80" r="7"/><circle cx="46" cy="80" r="7"/><circle cx="62" cy="80" r="7"/><circle cx="78" cy="80" r="7"/><circle cx="94" cy="80" r="7"/>
+        <circle cx="30" cy="96" r="7"/><circle cx="46" cy="96" r="7"/><circle cx="62" cy="96" r="7"/><circle cx="78" cy="96" r="7"/><circle cx="94" cy="96" r="7"/>
+        <circle cx="30" cy="112" r="7"/><circle cx="46" cy="112" r="7"/><circle cx="62" cy="112" r="7"/><circle cx="78" cy="112" r="7"/><circle cx="94" cy="112" r="7"/>
+      </g>
+      <g class="f3 s3">
+        <circle cx="148" cy="112" r="7"/><circle cx="163" cy="108" r="7"/><circle cx="180" cy="113" r="7"/><circle cx="196" cy="107" r="7"/><circle cx="212" cy="112" r="7"/>
+        <circle cx="155" cy="95" r="7"/><circle cx="172" cy="94" r="7"/><circle cx="188" cy="97" r="7"/><circle cx="205" cy="93" r="7"/>
+      </g>
+      <g class="f2 s2">
+        <circle cx="270" cy="40" r="7"/><circle cx="325" cy="35" r="7"/><circle cx="300" cy="70" r="7"/><circle cx="265" cy="100" r="7"/><circle cx="335" cy="105" r="7"/>
+      </g>
+      <text x="60" y="142" class="tx-b" text-anchor="middle">A</text>
+      <text x="180" y="142" class="tx-b" text-anchor="middle">B</text>
+      <text x="300" y="142" class="tx-b" text-anchor="middle">C</text>
+    </svg>`,
+          options: ['A', 'B', 'C'],
+          noShuffle: true,
+          answer: 2,
+          explain: 'W gazie (C) drobiny są daleko od siebie i rozrzucone w całym naczyniu. A to ciało stałe (równe rzędy), B – ciecz (blisko, ale nieuporządkowane).',
+        },
+        { id: 'uhjy9y', q: 'Prawda czy fałsz?\nJeśli przelejesz sok ze szklanki do talerza, zmieni się jego kształt, ale nie objętość.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Ciecz przyjmuje kształt naczynia, ale jej objętość zostaje taka sama.' },
+        { id: 'j68uju', q: 'Prawda czy fałsz?\nDrobiny w ciele stałym w ogóle się nie poruszają.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Drobiny w ciele stałym drgają w swoich miejscach – nie przesuwają się, ale się ruszają.' },
       ],
     },
 

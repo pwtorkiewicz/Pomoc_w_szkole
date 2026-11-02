@@ -11,7 +11,7 @@ Aplikacja ma **ścieżki** (opis: `docs/SCIEZKI.md`), wybierane na ekranie start
 | `kl4` | `klasa4.html` | uczeń klasy 4 – wszystkie przedmioty | **nowa: Dz.U. 2026 poz. 378** (zm. 2026 poz. 958) | `docs/PLAN-kl4.md` |
 | `kl3` | `klasa3.html` | uczeń klasy 3 – edukacja wczesnoszkolna | Dz.U. 2024 poz. 996 (stara, I etap) | `docs/PLAN-kl3.md` |
 
-**Edukacji zdrowotnej (także „zdrowie seksualne”), etyki i religii nie dodajemy w żadnej ścieżce** – decyzja rodzica.
+**Edukacji zdrowotnej (także „zdrowie seksualne”), etyki i religii nie dodajemy w żadnej ścieżce** – decyzja rodzica. Wyjątek (decyzja rodzica, 2.11.2026): w przyrodzie kl. 4 dodajemy tematy z podręcznika – czas przed ekranem, ochrona przed chorobami, szkodliwość dymu tytoniowego i alkoholu – ale **bez dojrzewania** (lekcji „Jak zmieniamy się w ciągu życia?” nie dodajemy).
 
 Ścieżka egzaminacyjna jest dopracowana – utrzymuj ją i rozwijaj; zmiany w silniku nie mogą jej zepsuć (zawsze `node tools/przeglad.js egzamin8`).
 
