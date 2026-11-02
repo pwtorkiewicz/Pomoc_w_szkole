@@ -165,7 +165,7 @@
       {
         id: 'ochrona',
         name: 'Chronimy przyrodę',
-        basis: `${PP}, 1. Rozumienie środowiska przyrodniczego, pkt 1 (gatunki objęte ochroną), pkt 7 (chroni przyrodę, wskazuje miejsca ochrony przyrody, parki narodowe, pomniki przyrody), pkt 8 (segreguje odpady, zna przyczyny i skutki). Kolory pojemników: rozporządzenie Ministra Klimatu i Środowiska z 10.05.2021, Dz.U. 2021 poz. 906, § 3. Gatunki chronione: rozporządzenia w sprawie ochrony gatunkowej zwierząt (Dz.U. 2016 poz. 2183, tekst jednolity Dz.U. 2022 poz. 2380) i roślin (Dz.U. 2014 poz. 1409) – sprawdzone 2.11.2026.${KONIEC}`,
+        basis: `${PP}, 1. Rozumienie środowiska przyrodniczego, pkt 1 (gatunki objęte ochroną), pkt 7 (chroni przyrodę, wskazuje miejsca ochrony przyrody, parki narodowe, pomniki przyrody), pkt 8 (segreguje odpady, zna przyczyny i skutki). Kolory pojemników i odpady niebezpieczne: rozporządzenie Ministra Klimatu i Środowiska z 10.05.2021, Dz.U. 2021 poz. 906, § 3, oraz serwis Edukacja Ekologiczna Ministerstwa Klimatu i Środowiska (gov.pl, „JSSO” i „Jak segregować”; sprawdzone 2.11.2026). Gatunki chronione: rozporządzenia w sprawie ochrony gatunkowej zwierząt (Dz.U. 2016 poz. 2183, tekst jednolity Dz.U. 2022 poz. 2380) i roślin (Dz.U. 2014 poz. 1409) – sprawdzone 2.11.2026.${KONIEC}`,
         theory: `
           <h3>Segregujemy odpady</h3>
           <table><tr><th>pojemnik</th><th>co wrzucamy</th></tr>
@@ -174,6 +174,7 @@
             <tr><td>🟨 żółty <b>„Metale i tworzywa sztuczne”</b></td><td>plastikowe butelki, puszki, kartony po mleku i soku</td></tr>
             <tr><td>🟫 brązowy <b>„Bio”</b></td><td>obierki z warzyw i owoców, liście</td></tr></table>
           <p>Resztę wyrzucamy do odpadów <b>zmieszanych</b>. W niektórych gminach szkło bezbarwne zbiera się osobno – do białego pojemnika.</p>
+          <p><b>Zużyte baterie, przeterminowane leki i zepsuty sprzęt elektryczny</b> (np. stara suszarka) są niebezpieczne – nie wrzucamy ich do żadnego zwykłego pojemnika. Oddajemy je w sklepie, w aptece albo w gminnym punkcie zbiórki (PSZOK).</p>
           <p class="tip">Po co? Z posegregowanych odpadów robi się nowe rzeczy (np. papier z makulatury), a na wysypiska trafia mniej śmieci.</p>
           <h3>Gatunki chronione</h3>
           <p>Niektórych zwierząt i roślin jest mało. Prawo zabrania ich łapania, zrywania i niszczenia. Chronione są np. <b>żubr</b>, <b>ryś</b>, <b>niedźwiedź brunatny</b>, <b>bocian biały</b>, <b>jeż</b>, a z roślin np. <b>sasanki</b> i <b>rosiczka</b>.</p>
@@ -191,6 +192,7 @@
           ['Pojemnik żółty', 'metale i tworzywa sztuczne (plastik, puszki)'],
           ['Pojemnik brązowy', 'bio – obierki, liście'],
           ['Po co segregować?', 'z odpadów powstają nowe rzeczy, mniej śmieci na wysypiskach'],
+          ['Zużyte baterie, stare leki', 'nie do kosza – do punktu zbiórki w sklepie, aptece albo PSZOK-u'],
           ['Gatunek chroniony', 'roślina lub zwierzę, których nie wolno zrywać, łapać ani niszczyć'],
           ['Przykłady zwierząt chronionych', 'żubr, ryś, niedźwiedź brunatny, bocian biały, jeż'],
           ['Park narodowy', 'duży obszar o wyjątkowej przyrodzie, chroniony prawem'],
@@ -203,6 +205,7 @@
           { id: 'kld7ry', q: 'Do którego pojemnika wyrzucisz plastikową butelkę po wodzie?', options: ['żółtego', 'zielonego', 'niebieskiego'], answer: 0, explain: 'Żółty pojemnik to „Metale i tworzywa sztuczne” – plastik i puszki.' },
           { id: 'gpjxvs', q: 'Gdzie wyrzucisz skórkę od banana?', options: ['do brązowego – bio', 'do żółtego', 'do niebieskiego'], answer: 0, explain: 'Obierki z owoców i warzyw to odpady bio – brązowy pojemnik.' },
           { id: 'ulyxnn', q: 'Do którego pojemnika wyrzucisz puszkę po napoju?', options: ['żółtego', 'brązowego', 'niebieskiego'], answer: 0, explain: 'Metal – do żółtego pojemnika „Metale i tworzywa sztuczne”.' },
+          { id: 'w6dyfl', q: 'Bateria w zabawce się zużyła. Co z nią zrobisz?', options: ['oddam do punktu zbiórki baterii', 'wrzucę do żółtego pojemnika', 'wrzucę do brązowego pojemnika'], answer: 0, explain: 'Baterie są niebezpieczne dla przyrody. Zbiera się je osobno – np. w sklepie albo w gminnym punkcie zbiórki.' },
           { id: 'jvkp76', q: 'Po co segregujemy odpady?', options: ['żeby zrobić z nich nowe rzeczy i mieć mniej śmieci', 'żeby pojemniki były kolorowe', 'żeby śmieciarka przyjeżdżała częściej'], answer: 0, explain: 'Z makulatury powstaje nowy papier, ze stłuczki – nowe szkło. Wysypiska rosną wolniej.' },
           { id: 'dmkf7t', q: 'Które zwierzę jest w Polsce pod ochroną?', options: ['żubr', 'mucha', 'komar'], answer: 0, explain: 'Żubr jest gatunkiem chronionym. Żyje np. w Puszczy Białowieskiej.' },
           { id: 'ybeb13', q: 'Znalazłeś w ogrodzie jeża. Co robisz?', options: ['zostawiam go w spokoju', 'zabieram go do domu', 'wkładam go do pudełka'], answer: 0, explain: 'Jeż jest pod ochroną. Dzikie zwierzę zostawiamy w jego środowisku.' },
@@ -218,7 +221,7 @@
       {
         id: 'zdrowie',
         name: 'Zdrowie, jedzenie i higiena',
-        basis: `${PP}, 2. Funkcje życiowe człowieka, ochrona zdrowia, bezpieczeństwo i odpoczynek, pkt 4 (higiena i estetyka własna i otoczenia), pkt 7 (wartości odżywcze produktów, znaczenie diety, umiar w słodyczach), pkt 8 (przygotowuje zdrowe posiłki), pkt 9 (ubiera się odpowiednio do pogody, szuka informacji o pogodzie). Proporcje na talerzu według „Talerza zdrowego żywienia” (Zintegrowana Platforma Edukacyjna, zpe.gov.pl; sprawdzone 2.11.2026).${KONIEC}`,
+        basis: `${PP}, 2. Funkcje życiowe człowieka, ochrona zdrowia, bezpieczeństwo i odpoczynek, pkt 4 (higiena i estetyka własna i otoczenia), pkt 7 (wartości odżywcze produktów, znaczenie diety, umiar w słodyczach), pkt 8 (przygotowuje zdrowe posiłki), pkt 9 (ubiera się odpowiednio do pogody, szuka informacji o pogodzie). Proporcje na talerzu według „Talerza zdrowego żywienia” Narodowego Instytutu Zdrowia Publicznego PZH (pacjent.gov.pl, „Jak zdrowo się odżywiać”, oraz zpe.gov.pl; sprawdzone 2.11.2026).${KONIEC}`,
         theory: `
           <h3>Higiena</h3>
           <ul>
@@ -275,7 +278,7 @@
       {
         id: 'bezpieczenstwo',
         name: 'Wzywamy pomocy',
-        basis: `${PP}, 2. Funkcje życiowe człowieka, ochrona zdrowia, bezpieczeństwo i odpoczynek, pkt 1 (zawody: nauczyciel, żołnierz, policjant, strażak, lekarz, pielęgniarz, leśnik; praca w służbach mundurowych i medycznych), pkt 2–3 (numery alarmowe, wezwanie o pomoc, dane osobowe w kontakcie ze służbami), pkt 5–6 (reaguje w sytuacji zagrożenia, podstawowe zasady pierwszej pomocy), pkt 11 (droga ewakuacyjna, znaki bezpieczeństwa, bezpieczna zabawa), pkt 12 (zagrożenia ze środowiska: burza, huragan, ulewa, susza, powódź, pożar, piorun). Numery alarmowe i sposób wzywania pomocy według Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl, „Pierwsza pomoc – podstawy”; sprawdzone 2.11.2026): 112 – jednolity numer alarmowy w całej UE; 997, 998, 999 nadal działają.${KONIEC}`,
+        basis: `${PP}, 2. Funkcje życiowe człowieka, ochrona zdrowia, bezpieczeństwo i odpoczynek, pkt 1 (zawody: nauczyciel, żołnierz, policjant, strażak, lekarz, pielęgniarz, leśnik; praca w służbach mundurowych i medycznych), pkt 2–3 (numery alarmowe, wezwanie o pomoc, dane osobowe w kontakcie ze służbami), pkt 5–6 (reaguje w sytuacji zagrożenia, podstawowe zasady pierwszej pomocy), pkt 11 (droga ewakuacyjna, znaki bezpieczeństwa, bezpieczna zabawa), pkt 12 (zagrożenia ze środowiska: burza, huragan, ulewa, susza, powódź, pożar, piorun). Numery alarmowe i sposób wzywania pomocy według serwisu „Numer alarmowy 112” MSWiA (gov.pl, „Inne numery alarmowe”, „Jak zgłaszać?”) i Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl, „Pierwsza pomoc – podstawy”; sprawdzone 2.11.2026): 112 – jednolity numer alarmowy w całej UE; 997, 998, 999 nadal działają.${KONIEC}`,
         theory: `
           <h3>Ludzie, którzy pomagają</h3>
           <ul>
