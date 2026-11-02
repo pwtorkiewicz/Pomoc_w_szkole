@@ -565,5 +565,386 @@ window.SUBJECTS.push({
         { id: '1tarw4', q: 'Ułóż chronologicznie (od najdawniejszego): śmierć Juliusza Cezara (44 r. p.n.e.), założenie Rzymu według legendy (753 r. p.n.e.), upadek cesarstwa zachodniego (476 r. n.e.).', options: ['753 p.n.e., 44 p.n.e., 476 n.e.', '44 p.n.e., 753 p.n.e., 476 n.e.', '476 n.e., 44 p.n.e., 753 p.n.e.', '753 p.n.e., 476 n.e., 44 p.n.e.'], answer: 0, explain: 'W latach p.n.e. większa liczba to dawniej: 753 p.n.e. → 44 p.n.e. Lata n.e. są później: 476 n.e.' },
       ],
     },
+    {
+      id: 'chrzescijanstwo',
+      name: 'Narodziny chrześcijaństwa',
+      basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 8 „Narodziny chrześcijaństwa”, wym. 1 (założenia religii chrześcijańskiej: dekalog, judaizm, Mesjasz, monoteizm – moduł kultura), wym. 2 (wiek powstania chrześcijaństwa i uznania go za religię panującą w Rzymie oraz znaczenie tych wydarzeń), wym. 3 (miejsce narodzin i kierunki rozprzestrzenienia się chrześcijaństwa w imperium rzymskim na mapie), wym. 4 (powody przyjmowania chrześcijaństwa przez różne grupy społeczne, wpływ chrześcijaństwa na współczesną Europę). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Dział opisuje chrześcijaństwo jako zjawisko historyczne – z perspektywy historyka, bez treści katechetycznych (aplikacja nie obejmuje religii ani etyki – decyzja rodzica). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Narodziny i rozwój chrześcijaństwa”, „Początki chrześcijaństwa”, „Starożytny Izrael”, słowniczek „dekalog”) i w serwisie imperiumromanum.pl („Chrześcijanie wobec cesarstwa rzymskiego”, „Edykt mediolański”, „Teodozjusz I Wielki”): Palestyna jako prowincja rzymska, Poncjusz Piłat, Paweł z Tarsu, Neron i pożar Rzymu (64 r.), sprzeciw chrześcijan wobec kultu cesarza, katakumby, edykt mediolański (313 r. – wolność wyznania), edykt Teodozjusza (380 r.; część źródeł wiąże ten krok z 381 r., dlatego pytania dotyczą wieku – IV w.), miasta z dużymi gminami chrześcijańskimi (Antiochia, Efez, Aleksandria, Kartagina, Rzym). Daty narodzin i śmierci Jezusa pominięto – źródła podają je tylko w przybliżeniu.',
+      theory: `
+        <h3>Judaizm – wiara w jednego Boga</h3>
+        <p>W starożytnej <b>Palestynie</b>, nad wschodnim brzegiem Morza Śródziemnego, mieszkali <b>Żydzi</b>. Ich religia to <b>judaizm</b>.</p>
+        <ul>
+          <li>Żydzi wierzyli w <b>jednego Boga</b>. Wiarę w jednego Boga nazywamy <b>monoteizmem</b>. Egipcjanie, Grecy i Rzymianie wierzyli w wielu bogów – to <b>politeizm</b>.</li>
+          <li>Według Biblii Mojżesz otrzymał od Boga na górze <b>Synaj</b> kamienne tablice z <b>dekalogiem</b>, czyli <b>dziesięcioma przykazaniami</b> – zasadami, jak żyć. Są wśród nich takie, które znasz też z prawa, np. „nie zabijaj” i „nie kradnij”.</li>
+          <li>Żydzi oczekiwali <b>Mesjasza</b> – wysłannika Boga. Słowo „Mesjasz” pochodzi z hebrajskiego i znaczy „namaszczony”. Po grecku to samo słowo brzmi <b>„Chrystus”</b>.</li>
+        </ul>
+        <h3>Jezus z Nazaretu i pierwsi chrześcijanie</h3>
+        <p>W <b>I wieku n.e.</b> Palestyna była prowincją (częścią) imperium rzymskiego. Działał tam <b>Jezus z Nazaretu</b> – żydowski nauczyciel. Jego uczniowie uznali, że to on jest Mesjaszem – Chrystusem. Od tego słowa wyznawców Jezusa nazwano <b>chrześcijanami</b>. Najbliższych uczniów Jezusa nazywamy <b>apostołami</b>.</p>
+        <p>Jezus został ukrzyżowany z rozkazu rzymskiego namiestnika <b>Poncjusza Piłata</b>. Jego uczniowie głosili, że zmartwychwstał. O życiu i nauce Jezusa opowiadają cztery <b>Ewangelie</b>, które są częścią Biblii chrześcijan.</p>
+        <h3>W co wierzą chrześcijanie? (najważniejsze założenia)</h3>
+        <table>
+          <tr><th>Założenie</th><th>Skąd się wzięło?</th></tr>
+          <tr><td>jeden Bóg (<b>monoteizm</b>)</td><td>z judaizmu</td></tr>
+          <tr><td>przestrzeganie <b>dekalogu</b></td><td>z judaizmu</td></tr>
+          <tr><td>Jezus jest <b>Mesjaszem</b> (Chrystusem)</td><td>to odróżnia chrześcijan od wyznawców judaizmu</td></tr>
+          <tr><td>miłość bliźniego – trzeba pomagać innym, zwłaszcza ubogim i chorym</td><td>z nauki Jezusa</td></tr>
+          <tr><td>wszyscy ludzie są <b>równi wobec Boga</b>: bogaty i biedny, wolny i niewolnik</td><td>z nauki Jezusa i apostołów</td></tr>
+          <tr><td>życie wieczne po śmierci</td><td>z nauki Jezusa</td></tr>
+        </table>
+        <div class="tip">💡 Chrześcijaństwo <b>wyrosło z judaizmu</b> – przejęło od niego wiarę w jednego Boga i dekalog.</div>
+        <h3>Jak chrześcijaństwo się rozprzestrzeniało?</h3>
+        <p>Chrześcijaństwo narodziło się w <b>Palestynie</b>. Uczniowie Jezusa wędrowali rzymskimi drogami i płynęli statkami po Morzu Śródziemnym do wielkich miast imperium. Szczególnie dużo podróżował <b>Paweł z Tarsu</b>. Wcześniej prześladował wyznawców Jezusa, a potem sam został chrześcijaninem i głosił nową wiarę także ludziom, którzy nie byli Żydami.</p>
+        <ul>
+          <li><b>Kierunki</b>: z Palestyny na północ (Syria – Antiochia), na zachód (Azja Mniejsza – Efez, Grecja, Italia – Rzym), na południe (Egipt – Aleksandria) i do północnej Afryki (Kartagina).</li>
+          <li>Najpierw i najszybciej nowa wiara docierała do <b>dużych miast</b> połączonych drogami. Na wsiach przyjmowano ją znacznie później.</li>
+        </ul>
+        <h3>Prześladowania</h3>
+        <p>Chrześcijanie nie chcieli oddawać czci rzymskim bogom ani cesarzowi. Dlatego wielu Rzymian uważało ich za wrogów państwa. Cesarz <b>Neron</b> obwinił chrześcijan o wielki <b>pożar Rzymu w 64 r.</b> – wielu z nich zginęło. Później chrześcijan prześladowano jeszcze wiele razy.</p>
+        <ul>
+          <li>Chrześcijanie spotykali się w domach, często w ukryciu.</li>
+          <li>Zmarłych chowali m.in. w <b>katakumbach</b> – podziemnych cmentarzach. Na ich ścianach zachowały się malowidła.</li>
+          <li>Jednym ze znaków chrześcijan była <b>ryba</b>. Po grecku „ryba” to <i>ichthys</i>. Te litery to początki greckich słów: Jezus Chrystus, Syn Boży, Zbawiciel.</li>
+        </ul>
+        <h3>Od zakazu do religii panującej</h3>
+        <table>
+          <tr><th>Kiedy?</th><th>Co się stało?</th></tr>
+          <tr><td><b>I w. n.e.</b></td><td>powstanie chrześcijaństwa w Palestynie</td></tr>
+          <tr><td>64 r.</td><td>Neron obwinia chrześcijan o pożar Rzymu – prześladowania</td></tr>
+          <tr><td><b>313 r.</b></td><td><b>edykt mediolański</b>: cesarz <b>Konstantyn Wielki</b> (razem z drugim cesarzem, Licyniuszem) daje <b>wolność wyznania</b> – chrześcijanie mogą otwarcie wyznawać swoją wiarę</td></tr>
+          <tr><td><b>380 r.</b> (IV w.)</td><td>cesarz <b>Teodozjusz Wielki</b> ogłasza chrześcijaństwo <b>religią panującą</b> (państwową) w cesarstwie</td></tr>
+        </table>
+        <p><b>Edykt</b> to zarządzenie władcy. Pod koniec IV wieku Teodozjusz zakazał też oddawania czci dawnym rzymskim bogom.</p>
+        <p><b>Znaczenie</b>: w ciągu niecałych 400 lat chrześcijaństwo zmieniło się z małej, prześladowanej grupy w religię całego imperium. Dzięki temu później stało się religią większości mieszkańców Europy.</p>
+        <h3>Kto przyjmował chrześcijaństwo i dlaczego?</h3>
+        <table>
+          <tr><th>Kto?</th><th>Dlaczego?</th></tr>
+          <tr><td><b>ubodzy i niewolnicy</b></td><td>nauka, że wszyscy ludzie są równi wobec Boga; nadzieja na życie wieczne; wspólnota chrześcijan pomagała biednym i chorym</td></tr>
+          <tr><td><b>mieszkańcy miast</b> (rzemieślnicy, kupcy)</td><td>nowa wiara docierała najpierw do miast; dawała poczucie wspólnoty i bezpieczeństwa</td></tr>
+          <tr><td><b>bogaci i urzędnicy</b></td><td>szczególnie po 313 r., gdy chrześcijaństwo zaczęli wspierać cesarze</td></tr>
+        </table>
+        <p>Nowa religia była dla każdego – bez względu na pochodzenie, majątek i to, czy ktoś był wolny.</p>
+        <h3>Ślady chrześcijaństwa w dzisiejszej Europie</h3>
+        <ul>
+          <li>Lata liczymy od umownej daty narodzin Jezusa – stąd <b>nasza era</b> (n.e.).</li>
+          <li><b>Boże Narodzenie</b> i <b>Wielkanoc</b> to dni wolne w wielu krajach Europy, a <b>niedziela</b> jest dniem odpoczynku.</li>
+          <li>Kościoły i katedry to często najstarsze zabytki miast.</li>
+          <li>Zasady z dekalogu (np. „nie zabijaj”, „nie kradnij”) i pomoc potrzebującym są obecne w prawie i zwyczajach.</li>
+        </ul>
+      `,
+      flashcards: [
+        ['Judaizm', 'Religia Żydów – wiara w jednego Boga; z judaizmu wyrosło chrześcijaństwo'],
+        ['Monoteizm', 'Wiara w jednego Boga (przeciwieństwo: politeizm – wiara w wielu bogów)'],
+        ['Dekalog', 'Dziesięć przykazań; według Biblii Mojżesz otrzymał je na górze Synaj'],
+        ['Mesjasz', 'Wysłannik Boga, którego oczekiwali Żydzi; po grecku: Chrystus („namaszczony”)'],
+        ['Gdzie narodziło się chrześcijaństwo?', 'W Palestynie – prowincji rzymskiej nad wschodnim brzegiem Morza Śródziemnego'],
+        ['Kiedy powstało chrześcijaństwo?', 'W I wieku n.e.'],
+        ['Apostołowie', 'Najbliżsi uczniowie Jezusa, którzy głosili jego naukę'],
+        ['Paweł z Tarsu', 'Głosił naukę Jezusa także tym, którzy nie byli Żydami; dużo podróżował po imperium'],
+        ['Prześladowania chrześcijan', 'Neron obwinił chrześcijan o pożar Rzymu (64 r.); chrześcijanie spotykali się w ukryciu'],
+        ['Katakumby', 'Podziemne cmentarze, m.in. w Rzymie – chowano w nich pierwszych chrześcijan'],
+        ['313 r. – edykt mediolański', 'Cesarz Konstantyn Wielki daje wolność wyznania – chrześcijanie mogą otwarcie wyznawać wiarę'],
+        ['380 r. – cesarz Teodozjusz Wielki', 'Chrześcijaństwo religią panującą w cesarstwie rzymskim (IV w.)'],
+        ['Dlaczego ubodzy i niewolnicy przyjmowali chrześcijaństwo?', 'Nauka o równości ludzi wobec Boga, nadzieja na życie wieczne, pomoc we wspólnocie'],
+        ['Ślady chrześcijaństwa w Europie', 'Liczenie lat (n.e.), niedziela, Boże Narodzenie i Wielkanoc, kościoły-zabytki'],
+      ],
+      questions: [
+        { id: '77a0w9', q: 'Jak nazywa się religia Żydów, z której wyrosło chrześcijaństwo?', options: ['judaizm', 'politeizm', 'mitologia', 'filozofia'], answer: 0, explain: 'Religia Żydów to judaizm. Chrześcijaństwo przejęło od niego wiarę w jednego Boga i dekalog.' },
+        { id: 'ibfuf6', q: 'Co oznacza słowo „monoteizm”?', options: ['wiarę w wielu bogów', 'wiarę w jednego Boga', 'władzę ludu', 'pismo obrazkowe'], answer: 1, explain: 'Monoteizm to wiara w jednego Boga (judaizm, chrześcijaństwo). Wiara w wielu bogów to politeizm.' },
+        { id: 'krnkfc', q: 'Czym jest dekalog?', options: ['listą rzymskich cesarzy', 'mapą Palestyny', 'dziesięcioma przykazaniami', 'greckim teatrem'], answer: 2, explain: 'Dekalog to dziesięć przykazań. Według Biblii Mojżesz otrzymał je na górze Synaj. Przyjęli je też chrześcijanie.' },
+        { id: 'zekiwo', q: 'Kim był Mesjasz, którego oczekiwali Żydzi?', options: ['rzymskim cesarzem', 'wysłannikiem Boga', 'greckim filozofem', 'egipskim faraonem'], answer: 1, explain: 'Mesjasz to oczekiwany wysłannik Boga. Uczniowie Jezusa uznali, że to on jest Mesjaszem.' },
+        { id: '6fi0ci', q: 'Co oznacza greckie słowo „Chrystus”?', options: ['to samo co Mesjasz – „namaszczony”', '„umiłowanie mądrości”', '„władza ludu”', '„rzecz publiczna”'], answer: 0, explain: '„Mesjasz” (z hebrajskiego) i „Chrystus” (z greckiego) znaczą to samo: „namaszczony”. Od słowa Chrystus pochodzi nazwa „chrześcijanie”.' },
+        { id: 'yz2vjj', q: 'W której krainie narodziło się chrześcijaństwo?', options: ['w Galii', 'w Grecji', 'w Egipcie', 'w Palestynie'], answer: 3, explain: 'Chrześcijaństwo narodziło się w Palestynie, która była wtedy prowincją imperium rzymskiego. Do Grecji i Egiptu dotarło później.' },
+        { id: 'z6bzbk', q: 'W którym wieku powstało chrześcijaństwo?', options: ['w I w. n.e.', 'w I w. p.n.e.', 'w IV w. n.e.', 'w X w.'], answer: 0, explain: 'Chrześcijaństwo powstało w I wieku naszej ery. W IV wieku stało się religią panującą w cesarstwie.' },
+        { id: 'feulth', q: 'Jak nazywamy najbliższych uczniów Jezusa?', options: ['konsulowie', 'apostołowie', 'faraonowie', 'filozofowie'], answer: 1, explain: 'Najbliżsi uczniowie Jezusa to apostołowie. Po jego śmierci głosili jego naukę.' },
+        { id: 'xslhfd', q: 'Który cesarz obwinił chrześcijan o pożar Rzymu w 64 r. i zaczął ich prześladować?', options: ['Konstantyn Wielki', 'Teodozjusz Wielki', 'Neron', 'Oktawian August'], answer: 2, explain: 'Neron obwinił chrześcijan o pożar Rzymu. Konstantyn i Teodozjusz – przeciwnie – wspierali chrześcijaństwo.' },
+        { id: 'ggjtco', q: 'Dlaczego Rzymianie prześladowali chrześcijan?', options: ['bo chrześcijanie nie chcieli oddawać czci rzymskim bogom i cesarzowi', 'bo chrześcijanie mówili po łacinie', 'bo chrześcijanie nie płacili za wodę z akweduktów', 'bo chrześcijanie wygrywali igrzyska'], answer: 0, explain: 'Odmowę oddawania czci bogom i cesarzowi wielu Rzymian uważało za wrogość wobec państwa.' },
+        { id: '1wfr6g', q: 'Czym były katakumby?', options: ['rzymskimi łaźniami', 'podziemnymi cmentarzami', 'greckimi teatrami', 'świątyniami Zeusa'], answer: 1, explain: 'Katakumby to podziemne cmentarze, m.in. w Rzymie. Chowano w nich pierwszych chrześcijan.' },
+        { id: 'ngdptu', q: 'Co dał chrześcijanom edykt mediolański z 313 r.?', options: ['obowiązek czczenia cesarza', 'zakaz budowania kościołów', 'wolność wyznawania swojej wiary', 'prawo wyboru konsulów'], answer: 2, explain: 'Edykt mediolański cesarza Konstantyna Wielkiego dał wolność wyznania – chrześcijanie mogli otwarcie wyznawać wiarę.' },
+        { id: 'x6t2rz', q: 'W którym wieku chrześcijaństwo stało się religią panującą w cesarstwie rzymskim?', options: ['w I w. n.e.', 'w I w. p.n.e.', 'w X w.', 'w IV w. n.e.'], answer: 3, explain: 'Zrobił to cesarz Teodozjusz Wielki w 380 r. 380 → 3 + 1 = 4, czyli IV wiek.' },
+        { id: 'r5224z', q: 'Który cesarz ogłosił chrześcijaństwo religią panującą w cesarstwie?', options: ['Teodozjusz Wielki', 'Neron', 'Juliusz Cezar', 'Trajan'], answer: 0, explain: 'Teodozjusz Wielki zrobił to w 380 r. Neron prześladował chrześcijan, a Cezar i Trajan żyli, zanim chrześcijaństwo stało się religią panującą.' },
+        { id: 'pyob9t', q: 'Dlaczego wielu ubogich i niewolników przyjmowało chrześcijaństwo?', options: ['bo zmuszał ich do tego Neron', 'bo chrześcijaństwo obiecywało im urząd konsula', 'bo chrześcijanie uczyli, że wszyscy ludzie są równi wobec Boga, i pomagali potrzebującym', 'bo chrześcijanie rozdawali bilety na walki gladiatorów'], answer: 2, explain: 'Nauka o równości wszystkich wobec Boga, nadzieja na życie wieczne i pomoc we wspólnocie przyciągały ubogich i niewolników.' },
+        {
+          id: 'ltw09m',
+          q: 'Na schemacie zachód jest po lewej, a wschód po prawej. Którą literą oznaczono Palestynę – miejsce narodzin chrześcijaństwa?',
+          svg: `<svg viewBox="0 0 360 200" role="img" aria-label="Schemat Morza Śródziemnego. Litera A na zachodnim krańcu, B na północnym brzegu pośrodku, C na wschodnim brzegu, D na południowym brzegu">
+      <ellipse cx="180" cy="105" rx="140" ry="55" class="f1 s1 sw"/>
+      <text x="180" y="100" class="tx" text-anchor="middle">Morze</text>
+      <text x="180" y="120" class="tx" text-anchor="middle">Śródziemne</text>
+      <circle cx="25" cy="105" r="14" class="f4 s4 sw"/>
+      <text x="25" y="111" class="tx-b" text-anchor="middle">A</text>
+      <circle cx="180" cy="32" r="14" class="f4 s4 sw"/>
+      <text x="180" y="38" class="tx-b" text-anchor="middle">B</text>
+      <circle cx="335" cy="105" r="14" class="f4 s4 sw"/>
+      <text x="335" y="111" class="tx-b" text-anchor="middle">C</text>
+      <circle cx="180" cy="178" r="14" class="f4 s4 sw"/>
+      <text x="180" y="184" class="tx-b" text-anchor="middle">D</text>
+      <text x="12" y="192" class="tx-s">← zachód</text>
+      <text x="348" y="192" class="tx-s" text-anchor="end">wschód →</text>
+    </svg>`,
+          options: ['A', 'B', 'C', 'D'],
+          noShuffle: true,
+          answer: 2,
+          explain: 'Palestyna leży na wschodnim brzegu Morza Śródziemnego – to litera C. Stamtąd chrześcijaństwo rozeszło się na zachód, aż do Rzymu.',
+        },
+        { id: '9cnorj', q: 'Który z tych zwyczajów to ślad chrześcijaństwa w dzisiejszej Europie?', options: ['igrzyska olimpijskie', 'liczenie lat od umownej daty narodzin Jezusa (n.e.)', 'pismo hieroglificzne', 'głosowanie na agorze'], answer: 1, explain: 'Naszą erę liczymy od umownej daty narodzin Jezusa. Igrzyska i agora to dziedzictwo Grecji, a hieroglify – Egiptu.' },
+        { id: 'fvzuq6', q: 'Prawda czy fałsz?\nEdykt mediolański z 313 r. zakazał wyznawania wszystkich religii oprócz chrześcijaństwa.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Edykt mediolański dał wolność wyznania. Kultu dawnych bogów zakazał dopiero cesarz Teodozjusz pod koniec IV wieku.' },
+        { id: 'fx0ujo', q: 'Prawda czy fałsz?\nChrześcijaństwo wyrosło z judaizmu – przejęło od niego m.in. wiarę w jednego Boga i dekalog.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Jezus i apostołowie byli Żydami. Chrześcijanie przejęli od judaizmu wiarę w jednego Boga i dziesięć przykazań.' },
+        { id: 'xw91t7', q: 'Ułóż chronologicznie (od najdawniejszego): edykt mediolański, chrześcijaństwo religią panującą (Teodozjusz), prześladowania za Nerona.', options: ['Neron (64) → edykt mediolański (313) → Teodozjusz (380)', 'edykt mediolański (313) → Neron (64) → Teodozjusz (380)', 'Teodozjusz (380) → edykt mediolański (313) → Neron (64)', 'Neron (64) → Teodozjusz (380) → edykt mediolański (313)'], answer: 0, explain: 'Wszystkie lata są n.e., więc mniejsza liczba to dawniej: 64 → 313 → 380.' },
+      ],
+    },
+    {
+      id: 'sredniowiecze',
+      name: 'Średniowieczna Europa',
+      basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 9 „Średniowieczna Europa”, wym. 1 (wspólnoty społeczne w średniowieczu: chrześcijaństwo, monarchia, plemię, samorząd, senior, stan, wasal), wym. 2 (zasięg chrześcijaństwa we wczesnym i późnym średniowieczu na mapach), wym. 3 (warunki życia mieszkańców wsi, miast, zamków i klasztorów), wym. 4 (osiągnięcia: sztuka gotycka, sztuka romańska, uniwersytet i ich wpływ na współczesną Europę – moduł kultura). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Społeczeństwo stanowe w średniowieczu”, ćwiczenie „Drabina feudalna”, „Kościół w średniowieczu”, „Architektura i plastyka romańska w Polsce”, „Witraż – obraz światłem malowany”, „Państwa plemienne na ziemiach polskich”), na stronach Uniwersytetu Jagiellońskiego (założenie w 1364 r. przez Kazimierza Wielkiego, odnowienie w 1400 r.) i w opracowaniach o chrzcie Rusi (988 – data tradycyjna) i Litwy (1387). Granice epoki (476–1492) są umowne. Na mapie zasięgu chrześcijaństwa podano tylko daty, co do których źródła są zgodne.',
+      theory: `
+        <h3>Średniowiecze – kiedy?</h3>
+        <p><b>Średniowiecze</b> to epoka po starożytności. Umownie zaczyna się w <b>476 r.</b> (upadek zachodniej części cesarstwa rzymskiego), a kończy w <b>1492 r.</b> (Krzysztof Kolumb dopływa do Ameryki). Trwało więc ok. 1000 lat. Pierwsze wieki to <b>wczesne średniowiecze</b>, ostatnie (XIV–XV w.) – <b>późne średniowiecze</b>.</p>
+        <h3>Wspólnoty ludzi w średniowieczu</h3>
+        <table>
+          <tr><th>Pojęcie</th><th>Co oznacza?</th></tr>
+          <tr><td><b>plemię</b></td><td>wspólnota ludzi z jednego terenu, którzy mówią tym samym językiem i mają te same zwyczaje i wierzenia; ważne sprawy omawiali wolni mężczyźni na zebraniu zwanym <b>wiecem</b></td></tr>
+          <tr><td><b>monarchia</b></td><td>państwo, którym rządzi jeden władca – <b>król</b> lub <b>książę</b>; władzę zwykle dziedziczył syn po ojcu</td></tr>
+          <tr><td><b>chrześcijaństwo</b></td><td>wspólna wiara łączyła mieszkańców wielu krajów Europy; językiem Kościoła i nauki była <b>łacina</b></td></tr>
+          <tr><td><b>stan</b></td><td>duża grupa ludzi o tych samych prawach i obowiązkach; do stanu zwykle się rodziło</td></tr>
+          <tr><td><b>samorząd</b></td><td>mieszkańcy sami decydują o części swoich spraw, np. wybierają władze miasta</td></tr>
+        </table>
+        <h3>Senior i wasal</h3>
+        <p>Król nie mógł sam rządzić ogromnym krajem i utrzymać wojska. Dlatego dawał ziemię – zwaną <b>lennem</b> – możnym ludziom. W zamian obiecywali mu <b>wierność</b> i <b>pomoc wojskową</b>. Uroczystą przysięgę wierności nazywano <b>hołdem lennym</b>.</p>
+        <ul>
+          <li><b>Senior</b> – ten, kto daje ziemię (po łacinie „senior” to „starszy”).</li>
+          <li><b>Wasal</b> – ten, kto dostaje ziemię i służy seniorowi.</li>
+          <li>Wasal mógł sam dać część ziemi rycerzom – wtedy był dla nich seniorem. Tak powstawała <b>drabina feudalna</b>: król → możni → rycerze.</li>
+          <li><b>Chłopi</b> nie byli wasalami – pracowali na ziemi swoich panów.</li>
+        </ul>
+        <h3>Stany</h3>
+        <table>
+          <tr><th>Stan</th><th>Zadanie</th></tr>
+          <tr><td><b>duchowieństwo</b> (księża, biskupi, mnisi)</td><td>modlitwa, opieka nad kościołami, nauka</td></tr>
+          <tr><td><b>rycerstwo</b></td><td>walka konno i obrona kraju; w zamian ziemia</td></tr>
+          <tr><td><b>mieszczanie</b></td><td>rzemiosło i handel w miastach</td></tr>
+          <tr><td><b>chłopi</b> – stan <b>najliczniejszy</b></td><td>uprawa ziemi; oddawali panu część plonów (daniny) lub pracowali na jego polu</td></tr>
+        </table>
+        <div class="tip">💡 W średniowieczu mówiono: jedni się <b>modlą</b> (duchowni), drudzy <b>walczą</b> (rycerze), a trzeci <b>pracują</b>, żeby wszystkich wyżywić.</div>
+        <h3>Jak żyli ludzie? Wieś, miasto, zamek, klasztor</h3>
+        <table>
+          <tr><th>Gdzie?</th><th>Jak tam żyli ludzie?</th></tr>
+          <tr><td><b>wieś</b></td><td>mieszkała tu większość ludzi – chłopi; drewniane chaty, praca na polu od świtu do zmroku, daniny dla pana</td></tr>
+          <tr><td><b>miasto</b></td><td><b>mury</b> z bramami, w środku <b>rynek</b> z <b>ratuszem</b> (siedzibą władz miasta) i kościołem; mieszczanie – rzemieślnicy i kupcy; rzemieślnicy jednego zawodu łączyli się w <b>cechy</b>; miasto miało <b>samorząd</b> – radę miejską z burmistrzem</td></tr>
+          <tr><td><b>zamek</b></td><td>siedziba władcy lub rycerza; grube <b>mury</b>, <b>baszty</b> (wieże), <b>fosa</b> z wodą i <b>most zwodzony</b> – wszystko do obrony</td></tr>
+          <tr><td><b>klasztor</b></td><td>dom <b>mnichów</b> (zakonników); <b>benedyktyni</b> żyli według zasady „<b>módl się i pracuj</b>”: modlitwa, praca w ogrodzie i na polu, ręczne przepisywanie ksiąg w <b>skryptorium</b>; przy klasztorach działały szkoły i biblioteki</td></tr>
+        </table>
+        <h3>Zasięg chrześcijaństwa</h3>
+        <ul>
+          <li><b>Wczesne średniowiecze</b>: chrześcijańskie są przede wszystkim ziemie dawnego imperium rzymskiego. <b>Misjonarze</b> – głosiciele wiary – docierają coraz dalej na północ i wschód Europy.</li>
+          <li>W X w. chrzest przyjmują m.in. <b>Polska (966)</b> i <b>Ruś (988)</b>.</li>
+          <li><b>Późne średniowiecze</b>: chrześcijańska jest prawie cała Europa. Jako ostatnia chrzest przyjęła <b>Litwa (1387)</b>.</li>
+          <li>Chrześcijaństwo podzieliło się na <b>zachodnie</b> (z papieżem w Rzymie, łacina) i <b>wschodnie</b> (z centrum w Konstantynopolu). Polska przyjęła chrześcijaństwo zachodnie, a Ruś – wschodnie.</li>
+        </ul>
+        <h3>Sztuka romańska i gotycka</h3>
+        <table>
+          <tr><th></th><th>Styl romański</th><th>Styl gotycki</th></tr>
+          <tr><td>kiedy?</td><td>X–XIII w.</td><td>od XII w. (narodził się we Francji); w Polsce od XIII w.</td></tr>
+          <tr><td>mury</td><td>grube, ciężkie – budowla przypomina twierdzę</td><td>lżejsze; ciężar dźwigają filary i <b>przypory</b> (podpory na zewnątrz)</td></tr>
+          <tr><td>okna i łuki</td><td><b>małe okna</b>, łuki <b>półkoliste</b></td><td><b>duże okna</b>, łuki <b>ostre</b> (ostrołuki), okrągłe okna – <b>rozety</b></td></tr>
+          <tr><td>wnętrze</td><td>półmrok</td><td>jasne, kolorowe światło z <b>witraży</b> – obrazów z kolorowych kawałków szkła</td></tr>
+          <tr><td>kształt</td><td>niska, prosta bryła</td><td>wysoka, <b>strzelista</b> – „pnie się do nieba”</td></tr>
+          <tr><td>przykłady w Polsce</td><td>kolegiata w Tumie pod Łęczycą, rotunda na Wawelu</td><td>kościół Mariacki w Krakowie, kościół Mariacki w Gdańsku</td></tr>
+        </table>
+        <p>Nazwa „romański” pochodzi od Rzymu – budowniczowie naśladowali budowle rzymskie.</p>
+        <h3>Uniwersytety</h3>
+        <p><b>Uniwersytet</b> to szkoła wyższa – uczą się w niej dorośli studenci, a wykładają uczeni. Pierwsze uniwersytety powstały w średniowieczu we Włoszech (m.in. w <b>Bolonii</b>) i we Francji (w <b>Paryżu</b>). Wykłady prowadzono po łacinie.</p>
+        <p>W Polsce pierwszy uniwersytet – <b>Akademię Krakowską</b> – założył król <b>Kazimierz Wielki</b> w <b>1364 r.</b> W 1400 r. odnowił ją król Władysław Jagiełło dzięki darowi zmarłej królowej Jadwigi. Dziś to <b>Uniwersytet Jagielloński</b> – najstarsza polska uczelnia.</p>
+        <h3>Co zostało nam po średniowieczu?</h3>
+        <ul>
+          <li><b>uniwersytety</b> – dziś są w każdym dużym mieście;</li>
+          <li>romańskie i gotyckie kościoły, zamki i ratusze – cenne <b>zabytki</b>;</li>
+          <li>miasta z <b>rynkiem i ratuszem</b>;</li>
+          <li><b>samorząd</b> – dziś też mieszkańcy wybierają radę miasta lub gminy.</li>
+        </ul>
+      `,
+      flashcards: [
+        ['Średniowiecze', 'Epoka od 476 r. (upadek zachodniego cesarstwa rzymskiego) do 1492 r. (Kolumb dopływa do Ameryki) – daty umowne'],
+        ['Plemię', 'Wspólnota ludzi z jednego terenu: ten sam język, zwyczaje i wierzenia; sprawy omawiano na wiecu'],
+        ['Monarchia', 'Państwo, którym rządzi jeden władca – król lub książę; władza zwykle dziedziczna'],
+        ['Senior', 'Ten, kto daje ziemię (lenno) w zamian za wierność i pomoc wojskową'],
+        ['Wasal', 'Ten, kto dostaje ziemię od seniora i przysięga mu wierność i pomoc wojskową'],
+        ['Drabina feudalna', 'Król → możni → rycerze; wasal mógł być seniorem dla kogoś niżej'],
+        ['Stan', 'Grupa ludzi o tych samych prawach i obowiązkach: duchowieństwo, rycerstwo, mieszczanie, chłopi'],
+        ['Samorząd', 'Mieszkańcy sami decydują o części swoich spraw; w mieście – rada miejska z burmistrzem'],
+        ['Klasztor', 'Dom mnichów; benedyktyni: „módl się i pracuj”; przepisywanie ksiąg w skryptorium'],
+        ['Sztuka romańska', 'Grube mury, małe okna, półkoliste łuki, półmrok (X–XIII w.); np. kolegiata w Tumie'],
+        ['Sztuka gotycka', 'Strzeliste budowle, ostrołuki, duże okna z witrażami (od XII w.); np. kościół Mariacki w Krakowie'],
+        ['Uniwersytet', 'Szkoła wyższa; pierwsze powstały we Włoszech (Bolonia) i we Francji (Paryż)'],
+        ['Akademia Krakowska', 'Założona w 1364 r. przez Kazimierza Wielkiego; dziś Uniwersytet Jagielloński'],
+        ['Zasięg chrześcijaństwa', 'Wczesne średniowiecze – głównie dawne ziemie rzymskie; późne – prawie cała Europa (Litwa jako ostatnia, 1387)'],
+      ],
+      questions: [
+        { id: 'z7rp8l', q: 'Która epoka trwała umownie od 476 do 1492 r.?', options: ['starożytność', 'średniowiecze', 'prehistoria', 'współczesność'], answer: 1, explain: 'Średniowiecze zaczęło się po upadku zachodniego cesarstwa rzymskiego (476) i trwało do dotarcia Kolumba do Ameryki (1492).' },
+        { id: 'n7om9u', q: 'Kim był wasal?', options: ['władcą, który rozdawał ziemię', 'człowiekiem, który dostał ziemię od seniora i przysiągł mu wierność', 'mnichem przepisującym księgi', 'kupcem z miasta'], answer: 1, explain: 'Wasal dostawał od seniora ziemię (lenno), a w zamian przysięgał wierność i pomoc wojskową.' },
+        { id: 'fc88cf', q: 'Co wasal obiecywał seniorowi w zamian za ziemię?', options: ['wierność i pomoc wojskową', 'że zostanie mnichem', 'że wybuduje mu katedrę', 'że będzie płacił za studia jego synów'], answer: 0, explain: 'Wasal przysięgał seniorowi wierność i pomoc wojskową – to był hołd lenny.' },
+        { id: 'kmrdiu', q: 'Prawda czy fałsz?\nWasal mógł być jednocześnie seniorem dla rycerzy, którym sam dał część ziemi.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Tak powstawała drabina feudalna: król → możni → rycerze. Ten sam człowiek był wasalem króla i seniorem swoich rycerzy.' },
+        { id: '1fb912', q: 'Prawda czy fałsz?\nChłopi składali hołd lenny i dostawali od seniora lenna.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Chłopi nie byli wasalami. Pracowali na ziemi swoich panów i oddawali im część plonów lub pracowali na ich polu.' },
+        { id: 'de6l2e', q: 'Co to był stan w średniowieczu?', options: ['miasto otoczone murami', 'duża grupa ludzi o tych samych prawach i obowiązkach', 'jedna wieś z kościołem', 'ziemia dana wasalowi'], answer: 1, explain: 'Stany to duchowieństwo, rycerstwo, mieszczanie i chłopi. Do stanu zwykle się rodziło.' },
+        { id: 'ks0d4d', q: 'Który stan był w średniowieczu najliczniejszy?', options: ['rycerstwo', 'duchowieństwo', 'mieszczanie', 'chłopi'], answer: 3, explain: 'Najwięcej było chłopów – większość ludzi mieszkała na wsi i uprawiała ziemię.' },
+        { id: 'sqr48f', q: 'Co oznacza słowo „samorząd”?', options: ['mieszkańcy sami decydują o części swoich spraw, np. wybierają radę', 'król decyduje o wszystkim sam', 'wszyscy muszą słuchać seniora', 'w mieście rządzi zakonnik'], answer: 0, explain: 'W średniowiecznych miastach samorząd to rada miejska z burmistrzem. Dziś też wybieramy radę miasta lub gminy.' },
+        { id: '1gewt5', q: 'Jak nazywamy państwo, którym rządzi jeden władca – król lub książę?', options: ['demokracja', 'republika', 'monarchia', 'plemię'], answer: 2, explain: 'Monarchia to rządy jednej osoby. W demokracji i republice o władzy decydują obywatele.' },
+        { id: '19j1eg', q: 'Co łączyło członków jednego plemienia?', options: ['wspólny uniwersytet', 'wspólny teren, język, zwyczaje i wierzenia', 'mieszkanie w jednym zamku', 'przynależność do jednego cechu'], answer: 1, explain: 'Plemię to wspólnota ludzi z jednego terenu, którzy mówią tym samym językiem i mają te same zwyczaje.' },
+        { id: 'g9jy2u', q: 'Gdzie mnisi ręcznie przepisywali księgi?', options: ['w ratuszu', 'na rynku', 'w skryptorium w klasztorze', 'w zamkowej baszcie'], answer: 2, explain: 'Skryptorium to sala w klasztorze, w której mnisi przepisywali księgi. Druku jeszcze nie znano.' },
+        { id: 'rulwp1', q: 'Jak brzmiała zasada mnichów benedyktynów?', options: ['„Wiem, że nic nie wiem”', '„Módl się i pracuj”', '„Kto pierwszy, ten lepszy”', '„Władza dla ludu”'], answer: 1, explain: 'Benedyktyni łączyli modlitwę z pracą: w ogrodzie, na polu i przy przepisywaniu ksiąg. Po łacinie: ora et labora.' },
+        { id: 'x08yac', q: 'Co chroniło średniowieczny zamek przed wrogami?', options: ['witraże w oknach', 'rynek z ratuszem', 'skryptorium', 'grube mury, baszty i fosa z wodą'], answer: 3, explain: 'Zamek był budowany do obrony: grube mury, baszty, fosa i most zwodzony.' },
+        { id: 'mwattt', q: 'Która cecha pasuje do stylu romańskiego?', options: ['grube mury i małe okna', 'duże okna z witrażami', 'strzeliste wieże i ostrołuki', 'jasne, wysokie wnętrza'], answer: 0, explain: 'Budowle romańskie mają grube mury, małe okna z półkolistymi łukami i półmrok w środku. Pozostałe cechy to gotyk.' },
+        { id: 'pqiavo', q: 'Która cecha pasuje do stylu gotyckiego?', options: ['grube mury i półmrok w środku', 'małe okna z półkolistym łukiem', 'wysokie, strzeliste budowle z ostrołukowymi oknami', 'niska bryła jak twierdza'], answer: 2, explain: 'Gotyk „pnie się do nieba”: wysokie budowle, ostrołuki, duże okna z witrażami.' },
+        {
+          id: 'mprnqk',
+          q: 'Który kościół na rysunku zbudowano w stylu gotyckim?',
+          svg: `<svg viewBox="0 0 340 210" role="img" aria-label="Dwa kościoły. A: niski i szeroki, grube mury, małe okna zakończone półkoliście. B: wysoki, z dwiema strzelistymi wieżami, dużymi oknami zakończonymi ostro i okrągłym oknem">
+      <rect x="25" y="100" width="120" height="75" class="f4 s4 sw"/>
+      <polygon points="18,100 85,62 152,100" class="f2 s2 sw"/>
+      <path d="M48,134 L48,120 A7,7 0 0 1 62,120 L62,134 Z" class="bg ln"/>
+      <path d="M78,134 L78,120 A7,7 0 0 1 92,120 L92,134 Z" class="bg ln"/>
+      <path d="M108,134 L108,120 A7,7 0 0 1 122,120 L122,134 Z" class="bg ln"/>
+      <path d="M72,175 L72,160 A13,13 0 0 1 98,160 L98,175 Z" class="bg ln"/>
+      <rect x="200" y="85" width="110" height="90" class="f1 s1 sw"/>
+      <rect x="200" y="45" width="26" height="40" class="f1 s1 sw"/>
+      <rect x="284" y="45" width="26" height="40" class="f1 s1 sw"/>
+      <polygon points="200,45 213,8 226,45" class="f5 s5 sw"/>
+      <polygon points="284,45 297,8 310,45" class="f5 s5 sw"/>
+      <circle cx="255" cy="105" r="13" class="f4 s4"/>
+      <path d="M215,165 L215,135 Q215,122 223,114 Q231,122 231,135 L231,165 Z" class="f4 s4"/>
+      <path d="M279,165 L279,135 Q279,122 287,114 Q295,122 295,135 L295,165 Z" class="f4 s4"/>
+      <path d="M243,175 L243,145 Q243,132 255,124 Q267,132 267,145 L267,175 Z" class="bg ln"/>
+      <text x="85" y="200" class="tx-b" text-anchor="middle">A</text>
+      <text x="255" y="200" class="tx-b" text-anchor="middle">B</text>
+    </svg>`,
+          options: ['A', 'B'],
+          noShuffle: true,
+          answer: 1,
+          explain: 'Kościół B jest wysoki i strzelisty, ma ostrołukowe, duże okna i rozetę – to gotyk. Kościół A (grube mury, małe półkoliste okna) to styl romański.',
+        },
+        { id: 'pwun3c', q: 'Co to jest witraż?', options: ['podziemny cmentarz', 'obraz z kolorowych kawałków szkła w oknie', 'list króla do papieża', 'wieża zamku'], answer: 1, explain: 'Witraże wypełniały duże okna kościołów gotyckich. Przez kolorowe szkło wpadało do środka barwne światło.' },
+        { id: 'k6n7mq', q: 'Kto i kiedy założył uniwersytet w Krakowie (Akademię Krakowską)?', options: ['Mieszko I w 966 r.', 'Bolesław Chrobry w 1025 r.', 'Kazimierz Wielki w 1364 r.', 'Juliusz Cezar w 44 r. p.n.e.'], answer: 2, explain: 'Akademię Krakowską założył król Kazimierz Wielki w 1364 r. Dziś to Uniwersytet Jagielloński.' },
+        { id: 'vr9o5g', q: 'Które państwo przyjęło chrześcijaństwo jako ostatnie w Europie (w 1387 r.)?', options: ['Polska', 'Ruś', 'Litwa', 'Czechy'], answer: 2, explain: 'Litwa przyjęła chrzest w 1387 r. Polska – w 966 r., a Ruś – w 988 r.' },
+        { id: 'ypxtge', q: 'Jak zmienił się zasięg chrześcijaństwa od wczesnego do późnego średniowiecza?', options: ['zmniejszył się do samego Rzymu', 'nie zmienił się wcale', 'chrześcijaństwo zniknęło z Europy', 'objął prawie całą Europę, także jej północ i wschód'], answer: 3, explain: 'Na początku średniowiecza chrześcijańskie były głównie dawne ziemie rzymskie. Pod koniec – prawie cała Europa.' },
+      ],
+    },
+    {
+      id: 'narodziny-polski',
+      name: 'Od plemienia do królestwa – narodziny Polski',
+      basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 10 „Od plemienia do królestwa – narodziny Polski”, wym. 1 (państwo Mieszka I: drużyna, gród, książę, postać Dobrawy), wym. 2 (daty chrztu Mieszka I i koronacji królewskiej Bolesława Chrobrego oraz ich znaczenie), wym. 3 (rozwój terytorialny państwa pierwszych Piastów na mapie), wym. 4 (metody poznawania przeszłości w badaniach nad okresem wczesnopiastowskim). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Panowanie Mieszka I”, „Chrzest Polski”, „Zjazd gnieźnieński i ustanowienie arcybiskupstwa”, „Koronacja Bolesława Chrobrego – 1025 rok”, „Kronika polska Galla tzw. Anonima”, „Od ekspansji do upadku władzy pierwszych Piastów”), na dzieje.pl (Dobrawa, data chrztu, Dagome iudex, biskupstwo poznańskie 968) i w opracowaniach naukowych (relacja Ibrahima ibn Jakuba o 3000 wojowników drużyny; kronika Thietmara urwana z jego śmiercią w 1018 r.; datowanie dendrochronologiczne mostu na Ostrowie Lednickim na 2. połowę X w.; badania DNA Piastów – IChB PAN i UAM). Rok 966 to data przyjęta przez historyków (część badaczy dopuszcza lata 966–968); miejsca chrztu nie podajemy – jest sporne. Zasięg państwa podano ogólnie: przyłączenie Śląska ok. 990 r. jest potwierdzone, a moment przyłączenia Małopolski – sporny (pewne jest, że w 1000 r. powstało biskupstwo w Krakowie).',
+      theory: `
+        <h3>Grody i plemiona</h3>
+        <p>We wczesnym średniowieczu na ziemiach dzisiejszej Polski żyły <b>plemiona słowiańskie</b>. Wierzyły w wielu bogów. Ludzie budowali <b>grody</b> – osady obronne otoczone <b>wałem</b> z drewna i ziemi, stawiane w miejscach trudnych do zdobycia, np. na wyspie lub wśród bagien. W grodzie mieszkał władca albo jego urzędnik z wojownikami, a w razie napadu chronili się tu okoliczni mieszkańcy.</p>
+        <p>W X w. w <b>Wielkopolsce</b> rządził ród <b>Piastów</b>. Ich najważniejsze grody to m.in. <b>Gniezno</b>, <b>Poznań</b>, <b>Ostrów Lednicki</b> i <b>Giecz</b>.</p>
+        <h3>Mieszko I – książę i jego drużyna</h3>
+        <p><b>Mieszko I</b> to pierwszy władca Polski, o którym wiemy ze źródeł pisanych. Nosił tytuł <b>księcia</b> – był władcą państwa, ale nie królem.</p>
+        <p>Siłą księcia była <b>drużyna</b> – oddział zawodowych wojowników, których książę utrzymywał. Podróżnik <b>Ibrahim ibn Jakub</b> z dalekiej Hiszpanii pisał ok. 966 r., że Mieszko ma <b>3000 zbrojnych</b> i daje im ubrania, konie i broń.</p>
+        <h3>Dobrawa i chrzest – 966</h3>
+        <ul>
+          <li>W <b>965 r.</b> Mieszko poślubił <b>Dobrawę</b> (Dąbrówkę) – <b>czeską księżniczkę</b>, córkę księcia czeskiego Bolesława I. Czechy były już krajem chrześcijańskim. Ślub umocnił sojusz Mieszka z Czechami.</li>
+          <li>Według kronikarza Galla Anonima to Dobrawa skłoniła Mieszka do przyjęcia chrztu.</li>
+          <li>W <b>966 r.</b> Mieszko I przyjął <b>chrzest</b> – razem z nim jego dwór. To wydarzenie nazywamy <b>chrztem Polski</b>.</li>
+          <li>W <b>968 r.</b> powstało pierwsze biskupstwo – w <b>Poznaniu</b>. Pierwszym biskupem był Jordan.</li>
+          <li>Synem Mieszka i Dobrawy był <b>Bolesław Chrobry</b>.</li>
+        </ul>
+        <p><b>Dlaczego chrzest był ważny?</b></p>
+        <ul>
+          <li>Polska weszła do grona <b>chrześcijańskich państw Europy</b> – Mieszko stał się dla innych władców równym partnerem.</li>
+          <li>Przybyli <b>duchowni</b>, którzy umieli czytać i pisać po łacinie – zaczęto spisywać dokumenty.</li>
+          <li>Zaczęto budować pierwsze <b>kamienne kościoły</b> i pałace.</li>
+          <li>Wspólna wiara pomagała łączyć mieszkańców państwa i wzmacniała władzę księcia.</li>
+        </ul>
+        <h3>Państwo rośnie</h3>
+        <p>Państwo Mieszka I wyrosło z Wielkopolski. Pod koniec jego panowania należały do niego m.in. Wielkopolska, Kujawy, Mazowsze, Pomorze nad Bałtykiem i <b>Śląsk</b>, przyłączony ok. <b>990 r.</b> po wojnie z Czechami.</p>
+        <p>Ok. 991 r. Mieszko i jego druga żona Oda oddali państwo pod opiekę papieża. Wiemy o tym z dokumentu zwanego <b>Dagome iudex</b> (czyt. dagome judeks). Zachował się tylko jego krótki odpis. To najstarszy opis granic państwa polskiego.</p>
+        <p>Około 1000 r. państwo Piastów obejmowało Wielkopolskę, Kujawy, Mazowsze, Śląsk, Małopolskę z Krakowem i Pomorze. <b>Bolesław Chrobry</b> po wojnach z Niemcami zdobył na pewien czas <b>Łużyce i Milsko</b> (pokój w Budziszynie, 1018 r.), a po wyprawie na Kijów – <b>Grody Czerwieńskie</b> (1018 r.).</p>
+        <h3>Zjazd gnieźnieński – 1000</h3>
+        <p>Biskup <b>Wojciech</b> wyruszył w 997 r. z Polski, żeby głosić chrześcijaństwo pogańskim <b>Prusom</b>. Prusowie go zabili. Bolesław Chrobry wykupił jego ciało i pochował je w Gnieźnie. Wkrótce Wojciech został ogłoszony świętym.</p>
+        <p>W <b>1000 r.</b> do grobu św. Wojciecha w Gnieźnie przybył z pielgrzymką cesarz <b>Otton III</b>. Spotkanie z Bolesławem Chrobrym nazywamy <b>zjazdem gnieźnieńskim</b>. Utworzono wtedy <b>arcybiskupstwo w Gnieźnie</b> i biskupstwa w <b>Krakowie</b>, <b>Wrocławiu</b> i <b>Kołobrzegu</b>. Dzięki temu Kościół w Polsce nie podlegał biskupom niemieckim.</p>
+        <h3>Koronacja – 1025</h3>
+        <p>W <b>1025 r.</b> Bolesław Chrobry został koronowany – stał się <b>pierwszym królem Polski</b>. Zmarł kilka miesięcy później.</p>
+        <p><b>Znaczenie koronacji</b>: Polska stała się <b>królestwem</b> – państwem równym innym królestwom Europy. Król nie był zależny od cesarza. Od tej koronacji zaczęła się tradycja koronowania polskich władców.</p>
+        <table>
+          <tr><th>Data</th><th>Wydarzenie</th></tr>
+          <tr><td>965</td><td>ślub Mieszka I z Dobrawą</td></tr>
+          <tr><td><b>966</b></td><td><b>chrzest Mieszka I</b> (chrzest Polski)</td></tr>
+          <tr><td>1000</td><td>zjazd gnieźnieński</td></tr>
+          <tr><td><b>1025</b></td><td><b>koronacja Bolesława Chrobrego</b> – pierwszy król Polski</td></tr>
+        </table>
+        <h3>Skąd to wiemy? Metody badania przeszłości</h3>
+        <table>
+          <tr><th>Metoda</th><th>Przykład</th></tr>
+          <tr><td><b>źródła pisane</b></td><td>relacja <b>Ibrahima ibn Jakuba</b> o państwie Mieszka; kronika <b>Thietmara</b> – niemieckiego biskupa z Merseburga, który pisał w czasach Chrobrego (nie lubił go, więc historyk musi to brać pod uwagę); <b>kronika Galla Anonima</b> – najstarsza kronika polska (ok. 1112–1116), napisana po łacinie przez cudzoziemca; dokument <b>Dagome iudex</b></td></tr>
+          <tr><td><b>archeologia</b></td><td>wykopaliska – archeolodzy odkopują wały grodów, fundamenty kościołów i pałaców, groby, broń, narzędzia; np. na <b>Ostrowie Lednickim</b> odkryto ruiny pałacu i kościoła oraz baseny do chrztu</td></tr>
+          <tr><td><b>dendrochronologia</b></td><td>określanie wieku drewna na podstawie <b>słojów</b> (każdy rok to jeden słój); tak ustalono, że most prowadzący na Ostrów Lednicki zbudowano w 2. połowie X w.</td></tr>
+          <tr><td><b>badanie monet</b></td><td>monety znalezione w grobie pomagają ustalić, kiedy kogoś pochowano</td></tr>
+          <tr><td><b>badania DNA</b></td><td>genetycy badają szczątki Piastów i ich pokrewieństwo</td></tr>
+        </table>
+        <div class="tip">💡 Pisanych źródeł z czasów Mieszka jest bardzo mało. Dlatego tak ważne są badania archeologów i innych naukowców – a każde źródło trzeba sprawdzać i porównywać z innymi.</div>
+      `,
+      flashcards: [
+        ['Gród', 'Osada obronna otoczona wałem z drewna i ziemi, w miejscu trudnym do zdobycia'],
+        ['Książę', 'Władca państwa (niższy tytuł niż król); Mieszko I był księciem'],
+        ['Drużyna', 'Oddział zawodowych wojowników utrzymywanych przez księcia'],
+        ['Mieszko I', 'Pierwszy znany ze źródeł władca Polski z rodu Piastów; chrzest w 966 r.'],
+        ['Dobrawa', 'Czeska księżniczka, żona Mieszka I (ślub 965 r.); według Galla Anonima skłoniła go do chrztu'],
+        ['966 r.', 'Chrzest Mieszka I – chrzest Polski'],
+        ['968 r.', 'Pierwsze biskupstwo – w Poznaniu (biskup Jordan)'],
+        ['Dagome iudex', 'Dokument z ok. 991 r.: Mieszko I oddaje państwo pod opiekę papieża; najstarszy opis granic'],
+        ['Zjazd gnieźnieński (1000 r.)', 'Otton III u grobu św. Wojciecha; arcybiskupstwo w Gnieźnie, biskupstwa w Krakowie, Wrocławiu, Kołobrzegu'],
+        ['1025 r.', 'Koronacja Bolesława Chrobrego – pierwszy król Polski'],
+        ['Zdobycze Bolesława Chrobrego', 'Łużyce i Milsko (pokój w Budziszynie, 1018), Grody Czerwieńskie (1018)'],
+        ['Gall Anonim', 'Autor najstarszej kroniki polskiej (ok. 1112–1116), cudzoziemiec piszący po łacinie'],
+        ['Archeologia', 'Nauka badająca przeszłość dzięki przedmiotom i budowlom odkopanym podczas wykopalisk'],
+        ['Dendrochronologia', 'Określanie wieku drewna na podstawie słojów (przyrostów rocznych)'],
+      ],
+      questions: [
+        { id: 'mem045', q: 'Czym był gród?', options: ['kamiennym kościołem', 'osadą obronną otoczoną wałem z drewna i ziemi', 'oddziałem wojowników', 'dokumentem papieża'], answer: 1, explain: 'Gród to osada obronna – otaczał ją wał z drewna i ziemi. Budowano go w miejscu trudnym do zdobycia.' },
+        { id: '3b379o', q: 'Jak nazywał się oddział zawodowych wojowników, których utrzymywał książę?', options: ['plemię', 'cech', 'drużyna', 'stan'], answer: 2, explain: 'Drużyna to wojownicy księcia. Według Ibrahima ibn Jakuba Mieszko miał ich 3000 i dawał im ubrania, konie i broń.' },
+        { id: 'qqyfsf', q: 'Jaki tytuł nosił Mieszko I?', options: ['księcia', 'króla', 'cesarza', 'faraona'], answer: 0, explain: 'Mieszko I był księciem. Pierwszym królem Polski został jego syn, Bolesław Chrobry, w 1025 r.' },
+        { id: 'ky7a6b', q: 'Kim była Dobrawa?', options: ['córką Bolesława Chrobrego', 'rzymską cesarzową', 'czeską księżniczką, żoną Mieszka I', 'królową Francji'], answer: 2, explain: 'Dobrawa była córką księcia czeskiego. Poślubiła Mieszka I w 965 r.' },
+        { id: 'j5ufg9', q: 'W którym roku Mieszko I przyjął chrzest?', options: ['966', '965', '1000', '1025'], answer: 0, explain: 'Chrzest Mieszka I odbył się w 966 r. Rok wcześniej (965) Mieszko poślubił Dobrawę.' },
+        { id: 'gdwz7j', q: 'Dlaczego chrzest Mieszka I był ważny dla Polski?', options: ['Mieszko od razu został królem', 'Polska weszła do grona chrześcijańskich państw Europy', 'Polska przyłączyła Rzym', 'wszyscy w jeden dzień nauczyli się czytać'], answer: 1, explain: 'Po chrzcie Polska była dla innych państw chrześcijańskich równym partnerem. Przybyli duchowni, którzy znali pismo.' },
+        { id: 'qsgkem', q: 'Kto według kroniki Galla Anonima skłonił Mieszka I do przyjęcia chrztu?', options: ['Otton III', 'Dobrawa', 'św. Wojciech', 'Kazimierz Wielki'], answer: 1, explain: 'Gall Anonim pisze, że to Dobrawa namówiła męża do chrztu. Św. Wojciech i Otton III działali później, za Bolesława Chrobrego.' },
+        { id: 'z0bqrx', q: 'W którym roku Bolesław Chrobry został koronowany na króla?', options: ['966', '1000', '1025', '1410'], answer: 2, explain: 'Koronacja Bolesława Chrobrego odbyła się w 1025 r. Zmarł kilka miesięcy później.' },
+        { id: 'mhbsrx', q: 'Co zmieniła koronacja Bolesława Chrobrego?', options: ['Polska stała się królestwem równym innym królestwom Europy', 'Polska przestała być chrześcijańska', 'Polska stała się częścią Czech', 'Bolesław oddał władzę cesarzowi'], answer: 0, explain: 'Król nie był zależny od cesarza. Polska stała się samodzielnym królestwem, uznawanym przez inne państwa Europy.' },
+        { id: 'lwtdvw', q: 'Co postanowiono podczas zjazdu gnieźnieńskiego w 1000 r.?', options: ['założono Akademię Krakowską', 'Mieszko I przyjął chrzest', 'utworzono arcybiskupstwo w Gnieźnie', 'Polska przyłączyła Litwę'], answer: 2, explain: 'Utworzono arcybiskupstwo w Gnieźnie i biskupstwa w Krakowie, Wrocławiu i Kołobrzegu.' },
+        { id: 'dglaw6', q: 'Do czyjego grobu w Gnieźnie przybył w 1000 r. cesarz Otton III?', options: ['Mieszka I', 'św. Wojciecha', 'Dobrawy', 'Juliusza Cezara'], answer: 1, explain: 'Otton III przybył z pielgrzymką do grobu św. Wojciecha, zabitego przez Prusów w 997 r.' },
+        { id: 'xkiai4', q: 'Czym był dokument Dagome iudex?', options: ['najstarszą kroniką polską', 'oddaniem państwa Mieszka pod opiekę papieża, z opisem granic', 'umową o koronacji Chrobrego', 'listą wojowników drużyny'], answer: 1, explain: 'Ok. 991 r. Mieszko I i Oda oddali państwo pod opiekę papieża. Dokument opisuje granice – to najstarszy taki opis.' },
+        { id: 'icm5wk', q: 'Którą krainę przyłączył Mieszko I ok. 990 r., po wojnie z Czechami?', options: ['Litwę', 'Łużyce', 'Ruś', 'Śląsk'], answer: 3, explain: 'Mieszko przyłączył Śląsk ok. 990 r. Łużyce zdobył później Bolesław Chrobry, a Litwa i Ruś nie należały do państwa Piastów.' },
+        { id: 'ffoauk', q: 'Jakie ziemie zdobył Bolesław Chrobry po wojnach z Niemcami (pokój w Budziszynie, 1018 r.)?', options: ['Łużyce i Milsko', 'Śląsk i Pomorze', 'Litwę i Ruś', 'Wielkopolskę i Kujawy'], answer: 0, explain: 'W 1018 r. Chrobry zatrzymał Łużyce i Milsko. Śląsk, Pomorze, Wielkopolska i Kujawy należały do państwa już wcześniej.' },
+        { id: 'cflc8z', q: 'Kto napisał najstarszą kronikę polską?', options: ['Thietmar', 'Gall Anonim', 'Ibrahim ibn Jakub', 'Mieszko I'], answer: 1, explain: 'Gall Anonim napisał kronikę ok. 1112–1116 r., po łacinie. Thietmar był niemieckim kronikarzem, a Ibrahim ibn Jakub – podróżnikiem.' },
+        { id: 'uu6b48', q: 'Jak nazywa się nauka, która bada przeszłość dzięki przedmiotom i budowlom odkopanym podczas wykopalisk?', options: ['astronomia', 'geografia', 'archeologia', 'filozofia'], answer: 2, explain: 'Archeolodzy odkopują wały grodów, fundamenty kościołów, groby i przedmioty – np. na Ostrowie Lednickim.' },
+        { id: 'zu1z2y', q: 'Jak dendrochronologia pomaga poznać przeszłość?', options: ['określa wiek drewna na podstawie słojów', 'odczytuje dawne pismo', 'bada pochodzenie monet', 'mierzy wysokość wałów'], answer: 0, explain: 'Każdy rok życia drzewa to jeden słój. Dzięki temu można ustalić, kiedy ścięto drewno użyte np. do budowy mostu lub wału grodu.' },
+        {
+          id: '4xpflo',
+          q: 'Którą literą na osi czasu oznaczono rok chrztu Mieszka I?',
+          svg: `<svg viewBox="0 0 360 130" role="img" aria-label="Oś czasu z czterema punktami: A – rok 965, B – rok 966, C – rok 1000, D – rok 1025">
+      <line x1="15" y1="60" x2="345" y2="60" class="ln sw"/>
+      <line x1="60" y1="50" x2="60" y2="70" class="ln sw"/>
+      <line x1="135" y1="50" x2="135" y2="70" class="ln sw"/>
+      <line x1="215" y1="50" x2="215" y2="70" class="ln sw"/>
+      <line x1="295" y1="50" x2="295" y2="70" class="ln sw"/>
+      <circle cx="60" cy="27" r="14" class="f4 s4 sw"/>
+      <circle cx="135" cy="27" r="14" class="f4 s4 sw"/>
+      <circle cx="215" cy="27" r="14" class="f4 s4 sw"/>
+      <circle cx="295" cy="27" r="14" class="f4 s4 sw"/>
+      <text x="60" y="33" class="tx-b" text-anchor="middle">A</text>
+      <text x="135" y="33" class="tx-b" text-anchor="middle">B</text>
+      <text x="215" y="33" class="tx-b" text-anchor="middle">C</text>
+      <text x="295" y="33" class="tx-b" text-anchor="middle">D</text>
+      <text x="60" y="95" class="tx" text-anchor="middle">965</text>
+      <text x="135" y="95" class="tx" text-anchor="middle">966</text>
+      <text x="215" y="95" class="tx" text-anchor="middle">1000</text>
+      <text x="295" y="95" class="tx" text-anchor="middle">1025</text>
+      <text x="180" y="122" class="tx-s" text-anchor="middle">oś czasu (odstępy nie są w skali)</text>
+    </svg>`,
+          options: ['A', 'B', 'C', 'D'],
+          noShuffle: true,
+          answer: 1,
+          explain: 'Chrzest Mieszka I to rok 966 – litera B. W 965 r. (A) był ślub z Dobrawą, w 1000 r. (C) – zjazd gnieźnieński, a w 1025 r. (D) – koronacja Chrobrego.',
+        },
+        { id: 'rd3mdj', q: 'Prawda czy fałsz?\nMieszko I był pierwszym królem Polski.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Mieszko I był księciem. Pierwszym królem był jego syn Bolesław Chrobry (koronacja w 1025 r.).' },
+        { id: 'vfpw4d', q: 'Ułóż chronologicznie (od najdawniejszego): zjazd gnieźnieński, koronacja Bolesława Chrobrego, chrzest Mieszka I.', options: ['chrzest (966) → zjazd (1000) → koronacja (1025)', 'zjazd (1000) → chrzest (966) → koronacja (1025)', 'koronacja (1025) → zjazd (1000) → chrzest (966)', 'chrzest (966) → koronacja (1025) → zjazd (1000)'], answer: 0, explain: 'Mniejsza liczba to dawniej: 966 → 1000 → 1025.' },
+      ],
+    },
   ],
 });

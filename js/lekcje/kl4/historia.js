@@ -945,3 +945,441 @@ window.LESSONS['historia/rzym'] = [
     check: { q: 'Do czego służył akwedukt?', options: ['do walk gladiatorów', 'do doprowadzania wody do miasta', 'do świętowania zwycięstw'], answer: 1, explain: 'Akwedukt to most z kanałem, którym płynęła woda. Walki gladiatorów odbywały się w amfiteatrze, a zwycięstwa upamiętniał łuk triumfalny.' },
   },
 ];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['historia/chrzescijanstwo'] = [
+  {
+    title: 'Jeden Bóg i dziesięć przykazań',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Porównanie: politeizm – wielu bogów, np. w Egipcie, Grecji i Rzymie; monoteizm – jeden Bóg, judaizm, a potem chrześcijaństwo. Pod spodem dwie kamienne tablice: dekalog, czyli dziesięć przykazań">
+      <rect x="10" y="10" width="185" height="115" rx="12" class="f5 s5 sw"/>
+      <rect x="205" y="10" width="185" height="115" rx="12" class="f1 s1 sw"/>
+      <text x="102" y="40" class="tx-b" text-anchor="middle">politeizm</text>
+      <text x="102" y="66" class="tx" text-anchor="middle">wielu bogów</text>
+      <text x="102" y="92" class="tx-s" text-anchor="middle">Egipt · Grecja · Rzym</text>
+      <text x="102" y="114" class="tx-s" text-anchor="middle">⚡ 🌊 ☀️</text>
+      <text x="297" y="40" class="tx-b" text-anchor="middle">monoteizm</text>
+      <text x="297" y="66" class="tx" text-anchor="middle">jeden Bóg</text>
+      <text x="297" y="92" class="tx-s" text-anchor="middle">judaizm, a potem</text>
+      <text x="297" y="110" class="tx-s" text-anchor="middle">chrześcijaństwo</text>
+      <path d="M30,200 L30,157 Q30,140 50,140 Q70,140 70,157 L70,200 Z" class="f4 s4 sw"/>
+      <path d="M76,200 L76,157 Q76,140 96,140 Q116,140 116,157 L116,200 Z" class="f4 s4 sw"/>
+      <text x="50" y="178" class="tx-s" text-anchor="middle">I–V</text>
+      <text x="96" y="178" class="tx-s" text-anchor="middle">VI–X</text>
+      <text x="132" y="166" class="tx-b">dekalog = 10 przykazań</text>
+      <text x="132" y="190" class="tx-s">według Biblii: Mojżesz, góra Synaj</text>
+    </svg>`,
+    text: `<p>W starożytnej <b>Palestynie</b> mieszkali Żydzi. Ich religia to <b>judaizm</b>. Żydzi wierzyli w <b>jednego Boga</b> – to <b>monoteizm</b>. Egipcjanie, Grecy i Rzymianie czcili wielu bogów – to politeizm.</p>
+      <p>Według Biblii Mojżesz otrzymał na górze Synaj <b>dekalog</b> – dziesięć przykazań, np. „nie zabijaj”, „nie kradnij”. Żydzi oczekiwali też <b>Mesjasza</b> – wysłannika Boga.</p>`,
+    remember: 'Judaizm – religia Żydów; monoteizm – wiara w jednego Boga; dekalog – dziesięć przykazań.',
+    hook: '<b>Mono</b> = jeden (monolog mówi jedna osoba), <b>poli</b> = wiele. Mono-teizm: jeden Bóg, poli-teizm: wielu bogów.',
+    check: { q: 'Co oznacza słowo „monoteizm”?', options: ['wiarę w wielu bogów', 'wiarę w jednego Boga', 'dziesięć przykazań'], answer: 1, explain: 'Monoteizm to wiara w jednego Boga. Dziesięć przykazań to dekalog.' },
+  },
+  {
+    title: 'Mesjasz, czyli Chrystus',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Schemat: Żydzi czekają na Mesjasza. W Palestynie w I wieku naszej ery działa Jezus z Nazaretu. Uczniowie uznają, że Jezus to Mesjasz. Mesjasz po grecku to Chrystus, czyli namaszczony. Od słowa Chrystus pochodzi nazwa chrześcijanie">
+      <defs><marker id="a-k4hi-chr-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="10" width="180" height="60" rx="10" class="f1 s1"/>
+      <rect x="210" y="10" width="180" height="60" rx="10" class="f4 s4"/>
+      <rect x="210" y="100" width="180" height="60" rx="10" class="f3 s3"/>
+      <rect x="10" y="100" width="180" height="60" rx="10" class="f5 s5"/>
+      <rect x="60" y="180" width="280" height="34" rx="10" class="f2 s2 sw"/>
+      <text x="100" y="35" class="tx" text-anchor="middle">Żydzi czekają</text>
+      <text x="100" y="57" class="tx" text-anchor="middle">na Mesjasza</text>
+      <text x="300" y="35" class="tx" text-anchor="middle">Jezus z Nazaretu</text>
+      <text x="300" y="57" class="tx-s" text-anchor="middle">Palestyna, I w. n.e.</text>
+      <text x="300" y="124" class="tx" text-anchor="middle">uczniowie:</text>
+      <text x="300" y="146" class="tx-s" text-anchor="middle">„Jezus to Mesjasz”</text>
+      <text x="100" y="124" class="tx" text-anchor="middle">Mesjasz = Chrystus</text>
+      <text x="100" y="146" class="tx-s" text-anchor="middle">(„namaszczony”)</text>
+      <text x="200" y="203" class="tx-b" text-anchor="middle">Chrystus → chrześcijanie</text>
+      <line x1="192" y1="40" x2="206" y2="40" class="ln" marker-end="url(#a-k4hi-chr-2)"/>
+      <line x1="300" y1="72" x2="300" y2="96" class="ln" marker-end="url(#a-k4hi-chr-2)"/>
+      <line x1="208" y1="130" x2="194" y2="130" class="ln" marker-end="url(#a-k4hi-chr-2)"/>
+      <line x1="100" y1="162" x2="100" y2="176" class="ln" marker-end="url(#a-k4hi-chr-2)"/>
+    </svg>`,
+    text: `<p>W <b>I wieku n.e.</b> Palestyna należała do imperium rzymskiego. Działał tam <b>Jezus z Nazaretu</b> – żydowski nauczyciel. Jego uczniowie uznali, że to on jest Mesjaszem. „Mesjasz” po grecku to <b>„Chrystus”</b> – stąd nazwa jego wyznawców: <b>chrześcijanie</b>. Najbliższych uczniów Jezusa nazywamy <b>apostołami</b>.</p>
+      <p>Jezus został ukrzyżowany z rozkazu rzymskiego namiestnika Poncjusza Piłata. Chrześcijanie wierzą, że zmartwychwstał. Przejęli z judaizmu wiarę w jednego Boga i dekalog, a od Jezusa – naukę o miłości bliźniego i o tym, że wszyscy ludzie są <b>równi wobec Boga</b>.</p>`,
+    remember: 'Chrześcijaństwo powstało w I w. n.e. w Palestynie i wyrosło z judaizmu.',
+    hook: '<b>Chrystus</b> → <b>chrześcijanie</b>: nazwa wyznawców kryje się w samym słowie.',
+    check: { q: 'W którym wieku powstało chrześcijaństwo?', options: ['w I w. p.n.e.', 'w I w. n.e.', 'w IV w. n.e.'], answer: 1, explain: 'Chrześcijaństwo powstało w I wieku naszej ery. W IV wieku stało się religią panującą w cesarstwie.' },
+  },
+  {
+    title: 'Rzymskimi drogami w świat',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Schemat Morza Śródziemnego: z Palestyny na wschodnim brzegu strzałki prowadzą do Antiochii, Efezu, Rzymu, Aleksandrii i Kartaginy">
+      <defs><marker id="a-k4hi-chr-3" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <ellipse cx="200" cy="125" rx="165" ry="62" class="f1 s1"/>
+      <text x="190" y="128" class="tx-s" text-anchor="middle">Morze Śródziemne</text>
+      <circle cx="368" cy="140" r="8" class="f2 s2 sw"/>
+      <text x="398" y="194" class="tx-b" text-anchor="end">Palestyna</text>
+      <circle cx="358" cy="88" r="5" class="f4 s4"/>
+      <text x="392" y="74" class="tx-s" text-anchor="end">Antiochia</text>
+      <circle cx="292" cy="62" r="5" class="f4 s4"/>
+      <text x="292" y="48" class="tx-s" text-anchor="middle">Efez</text>
+      <circle cx="180" cy="58" r="6" class="f4 s4"/>
+      <text x="180" y="42" class="tx-b" text-anchor="middle">Rzym</text>
+      <circle cx="250" cy="192" r="5" class="f4 s4"/>
+      <text x="250" y="214" class="tx-s" text-anchor="middle">Aleksandria</text>
+      <circle cx="110" cy="180" r="5" class="f4 s4"/>
+      <text x="110" y="204" class="tx-s" text-anchor="middle">Kartagina</text>
+      <line x1="364" y1="132" x2="360" y2="97" class="ln" marker-end="url(#a-k4hi-chr-3)"/>
+      <line x1="361" y1="134" x2="300" y2="67" class="ln" marker-end="url(#a-k4hi-chr-3)"/>
+      <line x1="360" y1="137" x2="190" y2="61" class="ln" marker-end="url(#a-k4hi-chr-3)"/>
+      <line x1="362" y1="147" x2="258" y2="189" class="ln" marker-end="url(#a-k4hi-chr-3)"/>
+      <line x1="360" y1="142" x2="120" y2="179" class="ln" marker-end="url(#a-k4hi-chr-3)"/>
+      <text x="10" y="20" class="tx-s">I–IV w. n.e.</text>
+      <text x="10" y="224" class="tx-s">schemat</text>
+    </svg>`,
+    text: `<p>Chrześcijaństwo narodziło się w <b>Palestynie</b>, na wschodnim brzegu Morza Śródziemnego. Uczniowie Jezusa wędrowali rzymskimi drogami i płynęli statkami do wielkich miast imperium: <b>Antiochii</b>, <b>Efezu</b>, <b>Aleksandrii</b>, <b>Kartaginy</b> i do samego <b>Rzymu</b>.</p>
+      <p>Najwięcej podróżował <b>Paweł z Tarsu</b>. Głosił nową wiarę także tym, którzy nie byli Żydami. Chrześcijaństwo najpierw zdobywało <b>miasta</b>, a wsie – dużo później.</p>`,
+    remember: 'Chrześcijaństwo narodziło się w Palestynie i rozeszło się po imperium rzymskim – najpierw do wielkich miast.',
+    hook: 'Rzymskie drogi działały jak <b>internet starożytności</b>: wiadomości szybko docierały nimi do każdego dużego miasta.',
+    check: { q: 'Gdzie narodziło się chrześcijaństwo?', options: ['w Rzymie', 'w Palestynie', 'w Grecji'], answer: 1, explain: 'Chrześcijaństwo narodziło się w Palestynie. Do Rzymu i Grecji dotarło później.' },
+  },
+  {
+    title: 'Od prześladowań do religii panującej',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Oś czasu: I wiek – powstanie w Palestynie; 64 rok – Neron, prześladowania; 313 rok – edykt mediolański, wolność wiary; 380 rok – Teodozjusz, religia panująca. Na dole ryba – znak chrześcijan">
+      <line x1="15" y1="80" x2="385" y2="80" class="ln sw"/>
+      <circle cx="50" cy="80" r="6" class="f3 s3 sw"/>
+      <circle cx="150" cy="80" r="6" class="f2 s2 sw"/>
+      <circle cx="255" cy="80" r="6" class="f1 s1 sw"/>
+      <circle cx="350" cy="80" r="6" class="f5 s5 sw"/>
+      <text x="50" y="62" class="tx-b" text-anchor="middle">I w.</text>
+      <text x="150" y="62" class="tx-b" text-anchor="middle">64</text>
+      <text x="255" y="62" class="tx-b" text-anchor="middle">313</text>
+      <text x="350" y="62" class="tx-b" text-anchor="middle">380</text>
+      <text x="50" y="106" class="tx-s" text-anchor="middle">powstanie</text>
+      <text x="50" y="124" class="tx-s" text-anchor="middle">w Palestynie</text>
+      <text x="150" y="106" class="tx-s" text-anchor="middle">Neron:</text>
+      <text x="150" y="124" class="tx-s" text-anchor="middle">prześladowania</text>
+      <text x="255" y="106" class="tx-s" text-anchor="middle">edykt:</text>
+      <text x="255" y="124" class="tx-s" text-anchor="middle">wolność wiary</text>
+      <text x="350" y="106" class="tx-s" text-anchor="middle">Teodozjusz:</text>
+      <text x="350" y="124" class="tx-s" text-anchor="middle">religia</text>
+      <text x="350" y="142" class="tx-s" text-anchor="middle">panująca</text>
+      <rect x="225" y="18" width="160" height="22" rx="6" class="f4"/>
+      <text x="305" y="34" class="tx-s" text-anchor="middle">IV wiek</text>
+      <path d="M30,180 Q65,155 100,180 Q65,205 30,180 Z" class="f1 s1 sw"/>
+      <path d="M100,180 L118,166 L118,194 Z" class="f1 s1 sw"/>
+      <text x="130" y="185" class="tx-s">ryba – znak chrześcijan</text>
+    </svg>`,
+    text: `<p>Chrześcijanie nie chcieli oddawać czci rzymskim bogom ani cesarzowi, więc wielu Rzymian uważało ich za wrogów. Cesarz <b>Neron</b> obwinił ich o pożar Rzymu w <b>64 r.</b> Chrześcijanie spotykali się w ukryciu, a zmarłych chowali m.in. w <b>katakumbach</b> – podziemnych cmentarzach.</p>
+      <p>W <b>313 r.</b> cesarz <b>Konstantyn Wielki</b> wydał <b>edykt mediolański</b> – chrześcijanie dostali <b>wolność wyznania</b>. W <b>380 r.</b> cesarz <b>Teodozjusz Wielki</b> ogłosił chrześcijaństwo <b>religią panującą</b>. Z małej, prześladowanej grupy chrześcijaństwo stało się religią całego imperium.</p>`,
+    remember: '313 – edykt mediolański (wolność wyznania); 380 – chrześcijaństwo religią panującą. Oba w IV wieku.',
+    hook: '<b>IV wiek</b> to wiek zwycięstwa chrześcijan: na początku (313) – <b>wolność</b>, pod koniec (380) – <b>religia panująca</b>.',
+    check: { q: 'Co dał chrześcijanom edykt mediolański z 313 r.?', options: ['wolność wyznania', 'zakaz spotkań', 'nakaz czczenia cesarza'], answer: 0, explain: 'Edykt mediolański cesarza Konstantyna Wielkiego dał wolność wyznania – skończyły się prześladowania.' },
+  },
+  {
+    title: 'Kto przyjmował nową wiarę? Ślady do dziś',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Po lewej: kto przyjmował chrześcijaństwo i dlaczego – ubodzy i niewolnicy, bo nauka o równości wobec Boga i pomoc we wspólnocie; mieszkańcy miast – wspólnota; bogaci i urzędnicy – po 313 roku, gdy wspierali je cesarze. Po prawej ślady dziś: lata naszej ery, Boże Narodzenie i Wielkanoc, niedziela, kościoły-zabytki, zasady dekalogu">
+      <rect x="10" y="10" width="185" height="212" rx="12" class="f3 s3 sw"/>
+      <rect x="205" y="10" width="185" height="212" rx="12" class="f1 s1 sw"/>
+      <text x="102" y="36" class="tx-b" text-anchor="middle">Kto i dlaczego?</text>
+      <text x="102" y="64" class="tx-s" text-anchor="middle">ubodzy, niewolnicy:</text>
+      <text x="102" y="82" class="tx-s" text-anchor="middle">równość wobec Boga,</text>
+      <text x="102" y="100" class="tx-s" text-anchor="middle">pomoc we wspólnocie</text>
+      <text x="102" y="130" class="tx-s" text-anchor="middle">mieszkańcy miast:</text>
+      <text x="102" y="148" class="tx-s" text-anchor="middle">wspólnota</text>
+      <text x="102" y="178" class="tx-s" text-anchor="middle">bogaci, urzędnicy:</text>
+      <text x="102" y="196" class="tx-s" text-anchor="middle">po 313 r., gdy</text>
+      <text x="102" y="214" class="tx-s" text-anchor="middle">wspierali je cesarze</text>
+      <text x="297" y="36" class="tx-b" text-anchor="middle">Ślady dziś</text>
+      <text x="297" y="70" class="tx-s" text-anchor="middle">📅 lata naszej ery (n.e.)</text>
+      <text x="297" y="100" class="tx-s" text-anchor="middle">🎄 Boże Narodzenie</text>
+      <text x="297" y="118" class="tx-s" text-anchor="middle">i Wielkanoc</text>
+      <text x="297" y="148" class="tx-s" text-anchor="middle">😴 niedziela – odpoczynek</text>
+      <text x="297" y="178" class="tx-s" text-anchor="middle">⛪ kościoły – zabytki</text>
+      <text x="297" y="208" class="tx-s" text-anchor="middle">📜 zasady dekalogu</text>
+    </svg>`,
+    text: `<p>Chrześcijaństwo było dla każdego. <b>Ubogich i niewolników</b> przyciągała nauka, że wszyscy są równi wobec Boga, nadzieja na życie wieczne i pomoc, jaką dawała wspólnota. <b>Mieszkańcy miast</b> znajdowali w niej oparcie. Po 313 r., gdy chrześcijaństwo wspierali cesarze, przyjmowało je coraz więcej <b>bogatych i urzędników</b>.</p>
+      <p>Ślady chrześcijaństwa widać w Europie do dziś: liczymy lata od umownej daty narodzin Jezusa (n.e.), Boże Narodzenie i Wielkanoc są dniami wolnymi, niedziela – dniem odpoczynku, a kościoły to często najstarsze zabytki miast.</p>`,
+    remember: 'Ubodzy i niewolnicy – równość wobec Boga i pomoc; bogaci i urzędnicy – zwłaszcza po 313 r.',
+    hook: 'Gdy piszesz datę „2026 r.”, korzystasz z kalendarza, który liczy lata od umownej daty narodzin Jezusa.',
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['historia/sredniowiecze'] = [
+  {
+    title: 'Senior i wasal',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Drabina feudalna: król, pod nim możni, pod nimi rycerze. Strzałka w dół: senior daje ziemię, czyli lenno. Strzałka w górę: wasal daje wierność i służbę. Na dole chłopi – nie są wasalami">
+      <defs><marker id="a-k4hi-sr-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="150" y="10" width="100" height="36" rx="8" class="f4 s4 sw"/>
+      <rect x="135" y="70" width="130" height="36" rx="8" class="f5 s5"/>
+      <rect x="135" y="130" width="130" height="36" rx="8" class="f1 s1"/>
+      <rect x="105" y="190" width="190" height="34" rx="8" class="f3 s3"/>
+      <text x="200" y="34" class="tx-b" text-anchor="middle">👑 król</text>
+      <text x="200" y="94" class="tx" text-anchor="middle">możni</text>
+      <text x="200" y="154" class="tx" text-anchor="middle">rycerze</text>
+      <text x="200" y="212" class="tx-s" text-anchor="middle">chłopi – nie są wasalami</text>
+      <line x1="118" y1="30" x2="118" y2="160" class="ln sw" marker-end="url(#a-k4hi-sr-1)"/>
+      <line x1="282" y1="160" x2="282" y2="30" class="ln sw" marker-end="url(#a-k4hi-sr-1)"/>
+      <text x="10" y="70" class="tx-b">senior</text>
+      <text x="10" y="92" class="tx-s">daje ziemię</text>
+      <text x="10" y="110" class="tx-s">(lenno)</text>
+      <text x="292" y="70" class="tx-b">wasal</text>
+      <text x="292" y="92" class="tx-s">wierność</text>
+      <text x="292" y="110" class="tx-s">i służba</text>
+    </svg>`,
+    text: `<p><b>Średniowiecze</b> to epoka po starożytności – umownie od 476 r. do 1492 r. Na początku ludzie żyli w <b>plemionach</b> (wspólnotach z jednego terenu, z tym samym językiem i zwyczajami). Potem powstawały <b>monarchie</b> – państwa, którymi rządził jeden władca: król lub książę.</p>
+      <p>Król dawał ziemię – <b>lenno</b> – możnym. Ten, kto daje ziemię, to <b>senior</b>. Ten, kto ją dostaje i przysięga wierność i pomoc wojskową, to <b>wasal</b>. Wasal mógł dać część ziemi rycerzom i stać się ich seniorem.</p>`,
+    remember: 'Senior daje ziemię (lenno), wasal przysięga wierność i pomoc wojskową.',
+    hook: '<b>Senior</b> to po łacinie „starszy” – stoi wyżej i daje ziemię. <b>Wasal</b> stoi niżej i służy.',
+    check: { q: 'Kim był wasal?', options: ['tym, kto daje ziemię', 'tym, kto dostaje ziemię i przysięga wierność', 'mnichem z klasztoru'], answer: 1, explain: 'Wasal dostawał ziemię od seniora i w zamian przysięgał mu wierność i pomoc wojskową.' },
+  },
+  {
+    title: 'Cztery stany',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Cztery stany: duchowieństwo – modlą się; rycerstwo – walczą; mieszczanie – handel i rzemiosło; chłopi – uprawiają ziemię, są najliczniejsi">
+      <rect x="10" y="10" width="185" height="95" rx="12" class="f5 s5 sw"/>
+      <rect x="205" y="10" width="185" height="95" rx="12" class="f1 s1 sw"/>
+      <rect x="10" y="115" width="185" height="95" rx="12" class="f2 s2 sw"/>
+      <rect x="205" y="115" width="185" height="95" rx="12" class="f3 s3 sw"/>
+      <text x="102" y="45" class="tx-b" text-anchor="middle">🙏 duchowieństwo</text>
+      <text x="102" y="75" class="tx" text-anchor="middle">modlą się</text>
+      <text x="297" y="45" class="tx-b" text-anchor="middle">⚔️ rycerstwo</text>
+      <text x="297" y="75" class="tx" text-anchor="middle">walczą</text>
+      <text x="102" y="150" class="tx-b" text-anchor="middle">🏘️ mieszczanie</text>
+      <text x="102" y="180" class="tx-s" text-anchor="middle">handel, rzemiosło</text>
+      <text x="297" y="150" class="tx-b" text-anchor="middle">🌾 chłopi</text>
+      <text x="297" y="175" class="tx-s" text-anchor="middle">uprawiają ziemię</text>
+      <text x="297" y="195" class="tx-s" text-anchor="middle">najliczniejsi!</text>
+    </svg>`,
+    text: `<p><b>Stan</b> to duża grupa ludzi o tych samych prawach i obowiązkach. Do stanu zwykle się rodziło. <b>Duchowieństwo</b> modliło się i dbało o kościoły, <b>rycerstwo</b> walczyło konno, <b>mieszczanie</b> zajmowali się handlem i rzemiosłem, a <b>chłopi</b> – najliczniejszy stan – uprawiali ziemię.</p>
+      <p>Miasta miały <b>samorząd</b>: mieszkańcy sami decydowali o części swoich spraw. Rządziła rada miejska z burmistrzem.</p>`,
+    remember: 'Stany: duchowieństwo, rycerstwo, mieszczanie, chłopi (najliczniejsi).',
+    hook: 'Jedni się <b>modlą</b>, drudzy <b>walczą</b>, trzeci <b>pracują</b> – tak w średniowieczu opisywano społeczeństwo.',
+    check: { q: 'Który stan był najliczniejszy?', options: ['rycerstwo', 'chłopi', 'duchowieństwo'], answer: 1, explain: 'Większość ludzi mieszkała na wsi – najliczniejszym stanem byli chłopi.' },
+  },
+  {
+    title: 'Wieś, miasto, zamek, klasztor',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Cztery miejsca: wieś – chłopi, chaty, praca na polu; miasto – mury, rynek, ratusz, rada miejska; zamek – mury, baszty, fosa, rycerze; klasztor – zasada módl się i pracuj, skryptorium i księgi">
+      <rect x="10" y="10" width="185" height="100" rx="12" class="f3 s3"/>
+      <rect x="205" y="10" width="185" height="100" rx="12" class="f2 s2"/>
+      <rect x="10" y="120" width="185" height="100" rx="12" class="f4 s4"/>
+      <rect x="205" y="120" width="185" height="100" rx="12" class="f5 s5"/>
+      <text x="102" y="40" class="tx-b" text-anchor="middle">🌾 wieś</text>
+      <text x="102" y="66" class="tx-s" text-anchor="middle">chłopi, chaty,</text>
+      <text x="102" y="86" class="tx-s" text-anchor="middle">praca na polu</text>
+      <text x="297" y="40" class="tx-b" text-anchor="middle">🏙️ miasto</text>
+      <text x="297" y="66" class="tx-s" text-anchor="middle">mury, rynek, ratusz</text>
+      <text x="297" y="86" class="tx-s" text-anchor="middle">rada miejska</text>
+      <text x="102" y="150" class="tx-b" text-anchor="middle">🏰 zamek</text>
+      <text x="102" y="176" class="tx-s" text-anchor="middle">mury, baszty, fosa</text>
+      <text x="102" y="196" class="tx-s" text-anchor="middle">rycerze</text>
+      <text x="297" y="150" class="tx-b" text-anchor="middle">⛪ klasztor</text>
+      <text x="297" y="176" class="tx-s" text-anchor="middle">„módl się i pracuj”</text>
+      <text x="297" y="196" class="tx-s" text-anchor="middle">skryptorium – księgi</text>
+    </svg>`,
+    text: `<p>Większość ludzi mieszkała na <b>wsi</b>: chłopi pracowali na polu od świtu do zmroku i oddawali panu część plonów. <b>Miasto</b> otaczały mury; w środku był rynek z ratuszem, a mieszkali tu rzemieślnicy i kupcy. <b>Zamek</b> był siedzibą władcy lub rycerza – grube mury, baszty i fosa chroniły go przed wrogami.</p>
+      <p>W <b>klasztorach</b> mieszkali mnisi. Benedyktyni żyli według zasady „módl się i pracuj”. W <b>skryptorium</b> ręcznie przepisywali księgi, a przy klasztorach działały szkoły i biblioteki.</p>`,
+    remember: 'Wieś – chłopi; miasto – mieszczanie; zamek – rycerze; klasztor – mnisi.',
+    hook: 'Mnich benedyktyn miał dwa zadania jak dwa słowa po łacinie: <b>ora</b> (módl się) <b>et labora</b> (i pracuj).',
+    check: { q: 'Gdzie mnisi przepisywali księgi?', options: ['w ratuszu', 'w skryptorium w klasztorze', 'w zamkowej fosie'], answer: 1, explain: 'Skryptorium to sala w klasztorze, w której ręcznie przepisywano księgi.' },
+  },
+  {
+    title: 'Romański czy gotycki?',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Porównanie dwóch kościołów. Romański: niski i szeroki, grube mury, małe okna z półkolistym łukiem. Gotycki: wysoki, z dwiema strzelistymi wieżami, dużymi oknami zakończonymi ostrym łukiem i okrągłą rozetą">
+      <rect x="35" y="110" width="130" height="80" class="f4 s4 sw"/>
+      <polygon points="28,110 100,70 172,110" class="f2 s2 sw"/>
+      <path d="M58,152 L58,134 A7,7 0 0 1 72,134 L72,152 Z" class="bg ln"/>
+      <path d="M93,152 L93,134 A7,7 0 0 1 107,134 L107,152 Z" class="bg ln"/>
+      <path d="M128,152 L128,134 A7,7 0 0 1 142,134 L142,152 Z" class="bg ln"/>
+      <path d="M86,190 L86,176 A14,14 0 0 1 114,176 L114,190 Z" class="bg ln"/>
+      <rect x="245" y="95" width="110" height="95" class="f1 s1 sw"/>
+      <rect x="245" y="50" width="26" height="45" class="f1 s1 sw"/>
+      <rect x="329" y="50" width="26" height="45" class="f1 s1 sw"/>
+      <polygon points="245,50 258,10 271,50" class="f5 s5 sw"/>
+      <polygon points="329,50 342,10 355,50" class="f5 s5 sw"/>
+      <circle cx="300" cy="115" r="13" class="f4 s4"/>
+      <path d="M258,178 L258,148 Q258,134 266,126 Q274,134 274,148 L274,178 Z" class="f4 s4"/>
+      <path d="M326,178 L326,148 Q326,134 334,126 Q342,134 342,148 L342,178 Z" class="f4 s4"/>
+      <path d="M288,190 L288,160 Q288,146 300,138 Q312,146 312,160 L312,190 Z" class="bg ln"/>
+      <text x="100" y="216" class="tx-b" text-anchor="middle">romański</text>
+      <text x="300" y="216" class="tx-b" text-anchor="middle">gotycki</text>
+    </svg>`,
+    text: `<p><b>Styl romański</b> (X–XIII w.): grube, ciężkie mury, <b>małe okna</b> z <b>półkolistymi</b> łukami, w środku półmrok. Kościół przypomina twierdzę. Przykłady w Polsce: kolegiata w Tumie pod Łęczycą, rotunda na Wawelu.</p>
+      <p><b>Styl gotycki</b> narodził się we Francji w XII w., do Polski dotarł w XIII w. Budowle są wysokie i <b>strzeliste</b>, mają <b>ostrołuki</b>, okrągłe okna – rozety – i <b>duże okna z witrażami</b>, czyli obrazami z kolorowego szkła. Przykład: kościół Mariacki w Krakowie.</p>`,
+    remember: 'Romański – grube mury, małe okna, łuk półkolisty. Gotycki – strzelisty, ostrołuki, duże okna z witrażami.',
+    hook: 'Gotyk jak <b>rakieta</b> – strzela w górę. Romański jak <b>forteca</b> – gruby i przysadzisty.',
+    check: { q: 'Który styl ma ostrołukowe okna z witrażami?', options: ['romański', 'gotycki'], answer: 1, explain: 'Ostrołuki, duże okna i witraże to cechy gotyku. Romański ma małe okna z półkolistym łukiem.' },
+  },
+  {
+    title: 'Chrześcijańska Europa i pierwsze uniwersytety',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Zasięg chrześcijaństwa: we wczesnym średniowieczu głównie dawne ziemie Rzymu; w X wieku Polska 966 i Ruś 988; w 1387 roku Litwa jako ostatnia. Na dole: uniwersytety – najstarsze w Bolonii i Paryżu, w Krakowie od 1364 roku, założony przez Kazimierza Wielkiego">
+      <defs><marker id="a-k4hi-sr-5" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="10" width="115" height="80" rx="10" class="f1 s1"/>
+      <rect x="142" y="10" width="115" height="80" rx="10" class="f3 s3"/>
+      <rect x="274" y="10" width="116" height="80" rx="10" class="f5 s5"/>
+      <text x="67" y="38" class="tx-b" text-anchor="middle">do X w.</text>
+      <text x="67" y="60" class="tx-s" text-anchor="middle">dawne ziemie</text>
+      <text x="67" y="78" class="tx-s" text-anchor="middle">Rzymu</text>
+      <text x="200" y="38" class="tx-b" text-anchor="middle">X w.</text>
+      <text x="200" y="60" class="tx-s" text-anchor="middle">Polska 966</text>
+      <text x="200" y="78" class="tx-s" text-anchor="middle">Ruś 988</text>
+      <text x="332" y="38" class="tx-b" text-anchor="middle">1387</text>
+      <text x="332" y="60" class="tx-s" text-anchor="middle">Litwa –</text>
+      <text x="332" y="78" class="tx-s" text-anchor="middle">ostatnia</text>
+      <line x1="127" y1="50" x2="139" y2="50" class="ln" marker-end="url(#a-k4hi-sr-5)"/>
+      <line x1="259" y1="50" x2="271" y2="50" class="ln" marker-end="url(#a-k4hi-sr-5)"/>
+      <text x="200" y="112" class="tx-s" text-anchor="middle">chrześcijaństwo obejmuje coraz więcej Europy</text>
+      <rect x="60" y="130" width="280" height="90" rx="12" class="f4 s4 sw"/>
+      <text x="200" y="158" class="tx-b" text-anchor="middle">🎓 uniwersytety</text>
+      <text x="200" y="182" class="tx-s" text-anchor="middle">najstarsze: Bolonia, Paryż</text>
+      <text x="200" y="204" class="tx-s" text-anchor="middle">Kraków 1364 – Kazimierz Wielki</text>
+    </svg>`,
+    text: `<p>We wczesnym średniowieczu chrześcijańskie były głównie dawne ziemie imperium rzymskiego. Misjonarze docierali coraz dalej na północ i wschód: w X w. chrzest przyjęły m.in. <b>Polska (966)</b> i <b>Ruś (988)</b>. W późnym średniowieczu chrześcijańska była prawie cała Europa – jako ostatnia chrzest przyjęła <b>Litwa (1387)</b>.</p>
+      <p>W średniowieczu powstały <b>uniwersytety</b> – szkoły wyższe. Najstarsze były we Włoszech (Bolonia) i we Francji (Paryż). W Polsce <b>Akademię Krakowską</b> założył w <b>1364 r.</b> król <b>Kazimierz Wielki</b> – dziś to Uniwersytet Jagielloński. Uniwersytety, gotyckie katedry i miasta z rynkiem i ratuszem mamy do dziś.</p>`,
+    remember: 'Litwa (1387) – ostatnia. Akademia Krakowska – 1364 r., Kazimierz Wielki.',
+    hook: 'Uniwersytet w Krakowie jest starszy od odkrycia Ameryki o ponad 100 lat (1364 → 1492)!',
+    check: { q: 'Kto założył uniwersytet w Krakowie w 1364 r.?', options: ['Mieszko I', 'Kazimierz Wielki', 'Bolesław Chrobry'], answer: 1, explain: 'Akademię Krakowską założył król Kazimierz Wielki. Dziś to Uniwersytet Jagielloński.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['historia/narodziny-polski'] = [
+  {
+    title: 'Gród, książę i drużyna',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Schemat grodu: osada na wyspie w jeziorze, otoczona wałem z drewna i ziemi, z mostem na brzeg. Obok: w grodzie rządzi książę, a jego siłą jest drużyna – według Ibrahima ibn Jakuba 3000 zbrojnych">
+      <ellipse cx="110" cy="118" rx="100" ry="95" class="f1"/>
+      <circle cx="110" cy="118" r="62" class="f4 s4 sw"/>
+      <circle cx="110" cy="118" r="45" class="bg ln"/>
+      <rect x="82" y="102" width="18" height="14" class="f2 s2"/>
+      <rect x="112" y="96" width="18" height="14" class="f2 s2"/>
+      <rect x="98" y="128" width="22" height="16" class="f5 s5"/>
+      <rect x="170" y="114" width="46" height="8" class="f2 s2"/>
+      <text x="110" y="70" class="tx-s" text-anchor="middle">wał</text>
+      <text x="110" y="205" class="tx-s" text-anchor="middle">jezioro</text>
+      <text x="228" y="40" class="tx-b">🏰 gród</text>
+      <text x="228" y="64" class="tx-s">wał z drewna i ziemi</text>
+      <text x="228" y="84" class="tx-s">woda lub bagna wokół</text>
+      <rect x="222" y="110" width="168" height="100" rx="12" class="f5 s5 sw"/>
+      <text x="306" y="140" class="tx-b" text-anchor="middle">👑 książę</text>
+      <text x="306" y="170" class="tx-b" text-anchor="middle">⚔️ drużyna</text>
+      <text x="306" y="195" class="tx-s" text-anchor="middle">3000 zbrojnych</text>
+    </svg>`,
+    text: `<p>Na ziemiach dzisiejszej Polski żyły plemiona słowiańskie. Budowały <b>grody</b> – osady obronne otoczone wałem z drewna i ziemi, w miejscach trudnych do zdobycia, np. na wyspie. W X w. w Wielkopolsce rządził ród <b>Piastów</b>; ważne grody to m.in. Gniezno, Poznań i Ostrów Lednicki.</p>
+      <p><b>Mieszko I</b> to pierwszy władca Polski znany ze źródeł pisanych. Był <b>księciem</b>. Jego siłą była <b>drużyna</b> – zawodowi wojownicy na utrzymaniu księcia. Podróżnik Ibrahim ibn Jakub pisał, że Mieszko ma 3000 zbrojnych i daje im ubrania, konie i broń.</p>`,
+    remember: 'Gród – osada obronna z wałem; książę – władca; drużyna – wojownicy księcia.',
+    hook: '<b>Gród</b> jest <b>ogrodzony</b> – wałem z drewna i ziemi.',
+    check: { q: 'Czym była drużyna?', options: ['osadą obronną z wałem', 'oddziałem wojowników księcia', 'dokumentem papieża'], answer: 1, explain: 'Drużyna to zawodowi wojownicy, których utrzymywał książę. Osada obronna to gród.' },
+  },
+  {
+    title: 'Dobrawa i chrzest – 966',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Oś zdarzeń: 965 – ślub Mieszka z Dobrawą; 966 – chrzest Mieszka; 968 – biskupstwo w Poznaniu. Pod spodem: dlaczego to ważne – Polska wśród chrześcijańskich państw Europy, duchowni znający pismo i łacinę, kamienne kościoły i pałace">
+      <defs><marker id="a-k4hi-pl-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="10" width="115" height="70" rx="10" class="f5 s5"/>
+      <rect x="142" y="10" width="116" height="70" rx="10" class="f4 s4 sw"/>
+      <rect x="275" y="10" width="115" height="70" rx="10" class="f1 s1"/>
+      <text x="67" y="38" class="tx-b" text-anchor="middle">965</text>
+      <text x="67" y="62" class="tx-s" text-anchor="middle">ślub z Dobrawą</text>
+      <text x="200" y="38" class="tx-b" text-anchor="middle">966</text>
+      <text x="200" y="62" class="tx-s" text-anchor="middle">chrzest Mieszka</text>
+      <text x="332" y="38" class="tx-b" text-anchor="middle">968</text>
+      <text x="332" y="56" class="tx-s" text-anchor="middle">biskupstwo</text>
+      <text x="332" y="72" class="tx-s" text-anchor="middle">w Poznaniu</text>
+      <line x1="127" y1="45" x2="139" y2="45" class="ln" marker-end="url(#a-k4hi-pl-2)"/>
+      <line x1="260" y1="45" x2="272" y2="45" class="ln" marker-end="url(#a-k4hi-pl-2)"/>
+      <rect x="10" y="100" width="380" height="110" rx="12" class="f3 s3"/>
+      <text x="200" y="126" class="tx-b" text-anchor="middle">Dlaczego to ważne?</text>
+      <text x="200" y="150" class="tx-s" text-anchor="middle">Polska wśród chrześcijańskich państw Europy</text>
+      <text x="200" y="172" class="tx-s" text-anchor="middle">duchowni: pismo, łacina, dokumenty</text>
+      <text x="200" y="194" class="tx-s" text-anchor="middle">kamienne kościoły i pałace</text>
+    </svg>`,
+    text: `<p>W <b>965 r.</b> Mieszko poślubił <b>Dobrawę</b> – czeską księżniczkę, córkę księcia czeskiego. Czechy były już chrześcijańskie. Według kronikarza Galla Anonima to Dobrawa skłoniła męża do chrztu. W <b>966 r.</b> Mieszko I i jego dwór przyjęli <b>chrzest</b>. W 968 r. powstało pierwsze biskupstwo – w Poznaniu.</p>
+      <p>Dzięki chrztowi Polska weszła do grona <b>chrześcijańskich państw Europy</b>. Przybyli duchowni, którzy znali pismo i łacinę, a w grodach stanęły pierwsze kamienne kościoły i pałace.</p>`,
+    remember: '966 – chrzest Mieszka I (chrzest Polski). Żona Mieszka: Dobrawa, czeska księżniczka.',
+    hook: 'Najpierw ślub (<b>965</b>), rok później chrzest (<b>966</b>) – Dobrawa „przywiozła” chrześcijaństwo z Czech.',
+    check: { q: 'W którym roku Mieszko I przyjął chrzest?', options: ['965', '966', '1025'], answer: 1, explain: 'Chrzest był w 966 r. W 965 r. był ślub z Dobrawą, a w 1025 r. – koronacja Chrobrego.' },
+  },
+  {
+    title: 'Państwo rośnie',
+    svg: `<svg viewBox="0 0 420 240" role="img" aria-label="Schemat ziem państwa pierwszych Piastów: w środku Wielkopolska z Gnieznem i Poznaniem; na północy Pomorze nad Bałtykiem; na wschodzie Kujawy i Mazowsze; na południu Śląsk i Małopolska. Linią przerywaną zdobycze Chrobrego z 1018 roku: Łużyce i Milsko na zachodzie, Grody Czerwieńskie na wschodzie">
+      <text x="200" y="14" class="tx-s" text-anchor="middle">Bałtyk 🌊</text>
+      <text x="412" y="14" class="tx-s" text-anchor="end">schemat</text>
+      <rect x="140" y="22" width="120" height="40" rx="10" class="f3 s3"/>
+      <text x="200" y="48" class="tx" text-anchor="middle">Pomorze</text>
+      <rect x="140" y="95" width="120" height="50" rx="10" class="f3 s3 sw"/>
+      <text x="200" y="116" class="tx-s" text-anchor="middle">Wielkopolska</text>
+      <text x="200" y="134" class="tx-s" text-anchor="middle">Gniezno, Poznań</text>
+      <rect x="272" y="62" width="95" height="36" rx="10" class="f3 s3"/>
+      <text x="319" y="85" class="tx" text-anchor="middle">Kujawy</text>
+      <rect x="285" y="110" width="110" height="36" rx="10" class="f3 s3"/>
+      <text x="340" y="133" class="tx" text-anchor="middle">Mazowsze</text>
+      <rect x="85" y="165" width="105" height="36" rx="10" class="f3 s3"/>
+      <text x="137" y="188" class="tx" text-anchor="middle">Śląsk</text>
+      <rect x="200" y="165" width="110" height="36" rx="10" class="f3 s3"/>
+      <text x="255" y="188" class="tx" text-anchor="middle">Małopolska</text>
+      <rect x="10" y="95" width="120" height="50" rx="10" class="f2 s2 dash"/>
+      <text x="70" y="116" class="tx-s" text-anchor="middle">Łużyce</text>
+      <text x="70" y="134" class="tx-s" text-anchor="middle">i Milsko</text>
+      <rect x="320" y="160" width="95" height="50" rx="10" class="f2 s2 dash"/>
+      <text x="367" y="181" class="tx-s" text-anchor="middle">Grody</text>
+      <text x="367" y="199" class="tx-s" text-anchor="middle">Czerwieńskie</text>
+      <rect x="10" y="220" width="14" height="12" class="f3 s3"/>
+      <text x="30" y="231" class="tx-s">państwo ok. 1000 r.</text>
+      <rect x="230" y="220" width="14" height="12" class="f2 s2 dash"/>
+      <text x="250" y="231" class="tx-s">zdobyte w 1018 r.</text>
+    </svg>`,
+    text: `<p>Państwo Piastów wyrosło z <b>Wielkopolski</b>. Pod koniec panowania Mieszka I należały do niego m.in. Kujawy, Mazowsze, Pomorze i <b>Śląsk</b> – przyłączony ok. 990 r. po wojnie z Czechami. Ok. 991 r. Mieszko oddał państwo pod opiekę papieża – mówi o tym dokument <b>Dagome iudex</b>, najstarszy opis granic Polski.</p>
+      <p>Ok. 1000 r. w państwie była też <b>Małopolska z Krakowem</b>. Bolesław Chrobry zdobył na pewien czas <b>Łużyce i Milsko</b> na zachodzie (pokój w Budziszynie, 1018 r.) i <b>Grody Czerwieńskie</b> na wschodzie (1018 r.).</p>`,
+    remember: 'Serce państwa – Wielkopolska (Gniezno, Poznań). Mieszko: m.in. Śląsk ok. 990 r. Chrobry: Łużyce i Milsko (1018).',
+    hook: 'Państwo rosło jak <b>kręgi na wodzie</b> – od Wielkopolski na wszystkie strony.',
+  },
+  {
+    title: 'Rok 1000 i rok 1025',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Dwa wydarzenia. Rok 1000 – zjazd gnieźnieński: Otton III u grobu świętego Wojciecha, arcybiskupstwo w Gnieźnie oraz biskupstwa w Krakowie, Wrocławiu i Kołobrzegu. Rok 1025 – koronacja Bolesława Chrobrego, pierwszego króla Polski: królestwo równe innym w Europie">
+      <rect x="10" y="10" width="185" height="200" rx="12" class="f5 s5 sw"/>
+      <rect x="205" y="10" width="185" height="200" rx="12" class="f4 s4 sw"/>
+      <text x="102" y="40" class="tx-b" text-anchor="middle">1000</text>
+      <text x="102" y="66" class="tx" text-anchor="middle">zjazd gnieźnieński</text>
+      <text x="102" y="94" class="tx-s" text-anchor="middle">Otton III u grobu</text>
+      <text x="102" y="112" class="tx-s" text-anchor="middle">św. Wojciecha</text>
+      <text x="102" y="140" class="tx-s" text-anchor="middle">arcybiskupstwo</text>
+      <text x="102" y="158" class="tx-s" text-anchor="middle">w Gnieźnie</text>
+      <text x="102" y="182" class="tx-s" text-anchor="middle">+ Kraków, Wrocław,</text>
+      <text x="102" y="200" class="tx-s" text-anchor="middle">Kołobrzeg</text>
+      <text x="297" y="40" class="tx-b" text-anchor="middle">1025</text>
+      <text x="297" y="66" class="tx" text-anchor="middle">👑 koronacja</text>
+      <text x="297" y="94" class="tx-s" text-anchor="middle">Bolesław Chrobry –</text>
+      <text x="297" y="112" class="tx-s" text-anchor="middle">pierwszy król Polski</text>
+      <text x="297" y="140" class="tx-s" text-anchor="middle">królestwo równe</text>
+      <text x="297" y="158" class="tx-s" text-anchor="middle">innym w Europie</text>
+    </svg>`,
+    text: `<p>Biskup <b>Wojciech</b> zginął w 997 r., gdy głosił chrześcijaństwo Prusom. Bolesław Chrobry wykupił jego ciało i pochował w Gnieźnie. W <b>1000 r.</b> do grobu św. Wojciecha przybył cesarz <b>Otton III</b> – to <b>zjazd gnieźnieński</b>. Powstało <b>arcybiskupstwo w Gnieźnie</b> i biskupstwa w Krakowie, Wrocławiu i Kołobrzegu – Kościół w Polsce nie podlegał już biskupom niemieckim.</p>
+      <p>W <b>1025 r.</b> Bolesław Chrobry został koronowany – był <b>pierwszym królem Polski</b>. Polska stała się królestwem równym innym królestwom Europy, a król nie zależał od cesarza.</p>`,
+    remember: '1000 – zjazd gnieźnieński; 1025 – koronacja Bolesława Chrobrego, pierwszego króla Polski.',
+    hook: 'Ojciec – <b>książę</b> (Mieszko, chrzest 966), syn – <b>król</b> (Bolesław, korona 1025).',
+    check: { q: 'Kto był pierwszym królem Polski?', options: ['Mieszko I', 'Bolesław Chrobry', 'Otton III'], answer: 1, explain: 'Bolesław Chrobry koronował się w 1025 r. Mieszko I był księciem, a Otton III – cesarzem.' },
+  },
+  {
+    title: 'Skąd to wiemy?',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Metody badania czasów pierwszych Piastów: źródła pisane – kroniki Galla Anonima i Thietmara, dokument Dagome iudex; archeologia – wykopaliska grodów, kościołów i grobów; dendrochronologia – słoje drewna; monety w grobach; badania DNA szczątków">
+      <rect x="10" y="10" width="185" height="95" rx="12" class="f1 s1"/>
+      <rect x="205" y="10" width="185" height="95" rx="12" class="f4 s4"/>
+      <rect x="10" y="115" width="120" height="108" rx="12" class="f3 s3"/>
+      <rect x="140" y="115" width="120" height="108" rx="12" class="f2 s2"/>
+      <rect x="270" y="115" width="120" height="108" rx="12" class="f5 s5"/>
+      <text x="102" y="40" class="tx-b" text-anchor="middle">📜 źródła pisane</text>
+      <text x="102" y="64" class="tx-s" text-anchor="middle">kroniki Galla Anonima</text>
+      <text x="102" y="82" class="tx-s" text-anchor="middle">i Thietmara, Dagome iudex</text>
+      <text x="297" y="40" class="tx-b" text-anchor="middle">⛏️ archeologia</text>
+      <text x="297" y="64" class="tx-s" text-anchor="middle">wykopaliska: grody,</text>
+      <text x="297" y="82" class="tx-s" text-anchor="middle">kościoły, groby</text>
+      <circle cx="70" cy="150" r="24" class="bg ln"/>
+      <circle cx="70" cy="150" r="16" class="ln-thin"/>
+      <circle cx="70" cy="150" r="8" class="ln-thin"/>
+      <text x="70" y="194" class="tx-s" text-anchor="middle">dendro-</text>
+      <text x="70" y="212" class="tx-s" text-anchor="middle">chronologia</text>
+      <text x="200" y="158" class="tx-b" text-anchor="middle">🪙</text>
+      <text x="200" y="192" class="tx" text-anchor="middle">monety</text>
+      <text x="200" y="212" class="tx-s" text-anchor="middle">w grobach</text>
+      <text x="330" y="158" class="tx-b" text-anchor="middle">🧬</text>
+      <text x="330" y="192" class="tx" text-anchor="middle">DNA</text>
+      <text x="330" y="212" class="tx-s" text-anchor="middle">szczątków</text>
+    </svg>`,
+    text: `<p>O czasach pierwszych Piastów mówią <b>źródła pisane</b>: relacja podróżnika Ibrahima ibn Jakuba, kronika niemieckiego biskupa <b>Thietmara</b> (pisał w czasach Chrobrego i nie lubił go – historyk musi o tym pamiętać), dokument Dagome iudex i najstarsza kronika polska – <b>Galla Anonima</b> (ok. 1112–1116).</p>
+      <p>Pisanych źródeł jest mało, dlatego ważni są inni badacze. <b>Archeolodzy</b> odkopują grody, kościoły i groby, np. na Ostrowie Lednickim. <b>Dendrochronologia</b> określa wiek drewna po <b>słojach</b> – tak ustalono, że most prowadzący na Ostrów Lednicki zbudowano w 2. połowie X w. Pomagają też <b>monety</b> znalezione w grobach i <b>badania DNA</b> szczątków.</p>`,
+    remember: 'Metody: źródła pisane (kroniki), archeologia, dendrochronologia (słoje drewna), monety, DNA.',
+    hook: 'Drzewo prowadzi <b>pamiętnik</b>: co roku dopisuje jeden słój. Kto umie go odczytać, wie, kiedy ścięto drewno.',
+    check: { q: 'Co bada dendrochronologia?', options: ['wiek drewna na podstawie słojów', 'dawne pismo', 'pochodzenie monet'], answer: 0, explain: 'Każdy rok to jeden słój drewna. Dzięki temu można ustalić, kiedy ścięto drzewo użyte do budowy.' },
+  },
+];
