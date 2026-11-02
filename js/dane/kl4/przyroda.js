@@ -4,11 +4,13 @@ window.SUBJECTS.push({
   name: 'Przyroda',
   icon: '🌿',
   color: '#2e9e6b',
+  book: 'Odkrywam przyrodę 4 (Nowa Era)',
   topics: [
     // ------------------------------------------------------------------
     {
       id: 'poznajemy',
       name: 'Jak poznajemy przyrodę',
+      chapter: 'rozdział I „Spotkanie z przyrodą”',
       basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 1 „Spotkania z przyrodą”, wym. 2–6 (skuteczne uczenie się, przyrządy, dociekanie naukowe, zmysły i rola mózgu, bezpieczeństwo pracy badawczej). Dział 1 realizuje się przez trzy lata; wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Zmysły i mózg</h3>
@@ -108,6 +110,7 @@ window.SUBJECTS.push({
     {
       id: 'orientacja',
       name: 'Kierunki, kompas, plan i mapa',
+      chapter: 'rozdział I „Spotkanie z przyrodą” (posługuję się kompasem)',
       basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 1 wym. 3 i 7 (kompas, mapy i plany, położenie w terenie); dz. 2 wym. 13 (elementy okolicy odczytane z planu lub mapy); dz. 5 wym. 4 (materiały magnetyczne, zasada działania kompasu, ziemski magnetyzm), wym. 6 (tylko kierunki geograficzne), wym. 18 (tylko skala). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Kierunki geograficzne</h3>
@@ -227,108 +230,114 @@ window.SUBJECTS.push({
 
     // ------------------------------------------------------------------
     {
-      id: 'rosliny',
-      name: 'Przyroda ożywiona i nieożywiona. Rośliny',
-      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 1 (składniki przyrody ożywionej i nieożywionej, elementy antropogeniczne), wym. 2 (rośliny zarodnikowe i nasienne), wym. 12 (tylko: do czego rośliny wykorzystują światło – fotosynteza, w uproszczeniu); dz. 4 wym. 1 (tylko cechy organizmu żywego, organizmy samożywne i cudzożywne), wym. 5 (budowa zewnętrzna rośliny). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      id: 'teren',
+      name: 'Niziny, wyżyny i góry',
+      chapter: 'rozdział II „Moja okolica” (kształt terenu)',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 5 „Planeta Ziemia”, wym. 17 (główne formy ukształtowania terenu, przykłady nizin, wyżyn i gór w Polsce), wym. 18 (wysokość bezwzględna i względna na mapie; skala – w dziale „Kierunki, kompas, plan i mapa”). Progi wysokości nizin, wyżyn i gór, podział gór na niskie, średnie i wysokie, depresja (Żuławy Wiślane, ok. 1,8 m p.p.m. koło Raczek Elbląskich), Rysy 2499 m n.p.m., poziomice i mapa hipsometryczna – według ZPE („Jaki kształt może mieć powierzchnia Ziemi?”, zpe.gov.pl), sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
-        <h3>Co nas otacza?</h3>
+        <h3>Formy terenu</h3>
+        <p>Powierzchnia Ziemi nie jest płaska jak stół. Jej kształt to <b>ukształtowanie terenu</b> (inaczej rzeźba terenu).</p>
         <table>
-          <tr><th>Składniki nieożywione</th><th>Składniki ożywione</th><th>Elementy stworzone przez człowieka</th></tr>
-          <tr><td>woda, powietrze, skały, gleba, światło słoneczne</td><td>rośliny, zwierzęta, grzyby, ludzie</td><td>domy, drogi, mosty, ławki, latarnie</td></tr>
+          <tr><th>Formy wypukłe (wznoszą się)</th><th>Formy wklęsłe (obniżenia)</th></tr>
+          <tr><td>pagórek, wzgórze, góra</td><td><b>dolina</b> – wydłużone obniżenie, zwykle płynie nim rzeka<br><b>kotlina</b> – obniżenie otoczone ze wszystkich stron wyższym terenem</td></tr>
         </table>
-        <p>Elementy stworzone przez człowieka nazywamy <b>antropogenicznymi</b> (od greckiego „anthropos” – człowiek).</p>
-        <p>Wszystkie składniki są ze sobą powiązane. Roślina potrzebuje światła, wody, powietrza i gleby. Zwierzęta potrzebują powietrza, wody i pokarmu, np. roślin.</p>
-        <h3>Cechy organizmów żywych</h3>
-        <p>Każdy organizm żywy (roślina, zwierzę, grzyb, człowiek):</p>
+        <p>Każde wzniesienie ma <b>szczyt</b> (najwyższy punkt), <b>stoki</b> (zbocza) i <b>podnóże</b> (miejsce, gdzie stok przechodzi w płaski teren).</p>
+        <h3>Wysokość bezwzględna i względna</h3>
         <ul>
-          <li><b>oddycha</b> – także rośliny,</li>
-          <li><b>odżywia się</b>,</li>
-          <li><b>rośnie i rozwija się</b>,</li>
-          <li><b>rozmnaża się</b> – wydaje potomstwo,</li>
-          <li><b>reaguje</b> na to, co się dzieje wokół (np. roślina na parapecie wygina się w stronę okna),</li>
-          <li><b>wydala</b> – pozbywa się zbędnych substancji,</li>
-          <li><b>porusza się</b> – rośliny też, ale powoli (np. kwiaty otwierają się i zamykają).</li>
+          <li><b>Wysokość bezwzględna</b> – liczona od <b>poziomu morza</b>. Zapisujemy ją w <b>m n.p.m.</b> (metrach nad poziomem morza), np. Rysy – 2499 m n.p.m.</li>
+          <li><b>Wysokość względna</b> – liczona od <b>wybranego miejsca</b>, np. od podnóża do szczytu. Obliczasz ją, odejmując wysokości bezwzględne.</li>
         </ul>
-        <h3>Samożywne i cudzożywne</h3>
-        <ul>
-          <li><b>Organizmy samożywne</b> same wytwarzają pokarm. To rośliny.</li>
-          <li><b>Organizmy cudzożywne</b> zjadają inne organizmy albo ich szczątki. To zwierzęta, grzyby i człowiek.</li>
-        </ul>
-        <p><b>Fotosynteza</b> – tak roślina wytwarza pokarm. W zielonych liściach, z <b>wody</b> i <b>dwutlenku węgla</b> (gazu z powietrza), z pomocą <b>światła</b> powstaje pokarm (cukier). Przy okazji roślina wydziela <b>tlen</b>, którym oddychamy.</p>
-        <div class="tip">💡 Bez światła roślina nie wytworzy pokarmu. Dzięki fotosyntezie jest pokarm i tlen dla zwierząt i ludzi.</div>
-        <h3>Budowa rośliny</h3>
+        <p>Przykład: szczyt ma 1200 m n.p.m., a schronisko pod nim – 900 m n.p.m. Szczyt jest wyżej od schroniska o 1200 − 900 = <b>300 m</b>. To wysokość względna.</p>
+        <div class="tip">💡 Wysokość bezwzględna – „od morza”, ma dopisek n.p.m. Wysokość względna – „od czegoś innego”, liczysz ją odejmowaniem.</div>
+        <h3>Niziny, wyżyny, góry</h3>
         <table>
-          <tr><th>Część</th><th>Funkcja</th></tr>
-          <tr><td>korzeń</td><td>utrzymuje roślinę w ziemi, pobiera wodę i sole mineralne</td></tr>
-          <tr><td>łodyga</td><td>podtrzymuje liście i kwiaty, przewodzi wodę i pokarm</td></tr>
-          <tr><td>liście</td><td>wytwarzają pokarm (fotosynteza)</td></tr>
-          <tr><td>kwiat</td><td>służy do rozmnażania</td></tr>
-          <tr><td>owoc</td><td>chroni nasiona i pomaga je rozsiewać</td></tr>
-          <tr><td>nasiono</td><td>wyrasta z niego nowa roślina</td></tr>
+          <tr><th>Forma</th><th>Wysokość bezwzględna</th><th>Różnice wysokości</th><th>Przykłady w Polsce</th></tr>
+          <tr><td><b>nizina</b></td><td>od 0 do 300 m n.p.m.</td><td>małe – teren płaski albo lekko falisty</td><td>wybrzeże Bałtyku, Nizina Mazowiecka</td></tr>
+          <tr><td><b>wyżyna</b></td><td>powyżej 300 m n.p.m.</td><td>nie większe niż 300 m</td><td>Wyżyna Krakowsko-Częstochowska, Wyżyna Lubelska</td></tr>
+          <tr><td><b>góry</b></td><td>powyżej 300 m n.p.m.</td><td>większe niż 300 m</td><td>Tatry, Sudety, Beskidy, Bieszczady</td></tr>
         </table>
-        <p><b>Części kwiatu:</b></p>
+        <p>Wyżyna i góry są tak samo wysoko nad morzem. Różnią się tym, że w górach różnice między szczytami a dolinami są <b>duże</b>, a stoki <b>strome</b>.</p>
         <ul>
-          <li><b>okwiat</b> – płatki i działki; kolorowe płatki wabią owady,</li>
-          <li><b>pręciki</b> – wytwarzają pyłek,</li>
-          <li><b>słupek</b> – w nim powstają nasiona; z jego dolnej części powstaje owoc.</li>
+          <li><b>Góry niskie</b>, np. Góry Świętokrzyskie – łagodne stoki, zaokrąglone szczyty.</li>
+          <li><b>Góry średnie</b>, np. Sudety, Beskidy, Bieszczady – strome stoki, łagodne szczyty.</li>
+          <li><b>Góry wysokie</b> – w Polsce tylko <b>Tatry</b>: ostre szczyty, bardzo strome stoki. Tu jest najwyższy szczyt Polski – <b>Rysy (2499 m n.p.m.)</b>.</li>
         </ul>
-        <h3>Rośliny zarodnikowe i nasienne</h3>
+        <p><b>Depresja</b> to ląd położony <b>poniżej poziomu morza</b>. W Polsce jest na <b>Żuławach Wiślanych</b>, niedaleko ujścia Wisły. Najniższy punkt Polski leży ok. 1,8 m p.p.m. (pod poziomem morza).</p>
+        <h3>Wysokości na mapie</h3>
         <ul>
-          <li><b>Zarodnikowe</b> – rozmnażają się przez <b>zarodniki</b> (bardzo drobne, jak pył). Nie mają kwiatów ani nasion. Przykłady: <b>mchy, paprocie</b>.</li>
-          <li><b>Nasienne</b> – wytwarzają <b>nasiona</b>. Przykłady: dąb, sosna, mniszek, fasola.</li>
+          <li><b>Poziomica</b> – linia na mapie, która łączy punkty o <b>tej samej wysokości bezwzględnej</b>.</li>
+          <li>Poziomice <b>gęsto</b> obok siebie – stok <b>stromy</b>. Poziomice <b>rzadko</b> – stok <b>łagodny</b>.</li>
+          <li><b>Mapa hipsometryczna</b> (barwna mapa wysokości) – obszary między poziomicami są pomalowane kolorami: zielony – najniżej (niziny), żółty i pomarańczowy – wyżej, brązowy albo czerwony – najwyżej (góry). Niebieski to wody.</li>
+          <li><b>Punkt wysokościowy</b> – kropka albo trójkąt z liczbą, np. ▲ 1603 – wysokość tego miejsca w m n.p.m.</li>
         </ul>
-        <div class="tip">💡 Paproć ma zarodniki w brązowych kropkach na spodniej stronie liści.</div>
+        <div class="tip">💡 Zawsze patrz na <b>legendę</b> – podaje, jaką wysokość oznacza każdy kolor.</div>
       `,
       flashcards: [
-        ['Składniki nieożywione przyrody', 'woda, powietrze, skały, gleba, światło słoneczne'],
-        ['Element antropogeniczny', 'Stworzony przez człowieka, np. droga, most, dom'],
-        ['Cechy organizmu żywego', 'oddycha, odżywia się, rośnie, rozmnaża się, reaguje, wydala, porusza się'],
-        ['Organizm samożywny', 'Sam wytwarza pokarm, np. roślina'],
-        ['Organizm cudzożywny', 'Zjada inne organizmy lub ich szczątki, np. zwierzę, grzyb'],
-        ['Fotosynteza', 'Wytwarzanie pokarmu przez roślinę z wody i dwutlenku węgla przy użyciu światła; powstaje też tlen'],
-        ['Korzeń', 'Utrzymuje roślinę w ziemi i pobiera wodę'],
-        ['Pręciki', 'Wytwarzają pyłek'],
-        ['Słupek', 'Powstają w nim nasiona; z jego dolnej części powstaje owoc'],
-        ['Rośliny zarodnikowe', 'Rozmnażają się przez zarodniki, np. mchy i paprocie'],
+        ['Ukształtowanie terenu', 'Kształt powierzchni Ziemi: wzniesienia, obniżenia i równiny (inaczej rzeźba terenu)'],
+        ['Części wzniesienia', 'szczyt, stoki (zbocza), podnóże'],
+        ['Dolina', 'Wydłużone obniżenie terenu, zwykle płynie nim rzeka'],
+        ['Kotlina', 'Obniżenie otoczone ze wszystkich stron wyższym terenem'],
+        ['Wysokość bezwzględna', 'Wysokość liczona od poziomu morza, w m n.p.m.'],
+        ['Wysokość względna', 'Wysokość liczona od wybranego miejsca, np. od podnóża do szczytu; obliczasz ją odejmowaniem'],
+        ['Nizina', 'Teren od 0 do 300 m n.p.m., płaski lub lekko falisty, np. Nizina Mazowiecka'],
+        ['Wyżyna', 'Teren powyżej 300 m n.p.m., różnice wysokości nie większe niż 300 m, np. Wyżyna Lubelska'],
+        ['Góry', 'Teren powyżej 300 m n.p.m., różnice wysokości większe niż 300 m, strome stoki'],
+        ['Jedyne góry wysokie w Polsce', 'Tatry; najwyższy szczyt Polski – Rysy (2499 m n.p.m.)'],
+        ['Depresja', 'Ląd położony poniżej poziomu morza; w Polsce – Żuławy Wiślane'],
+        ['Poziomica', 'Linia na mapie łącząca punkty o tej samej wysokości bezwzględnej'],
+        ['Poziomice gęsto / rzadko', 'gęsto – stok stromy; rzadko – stok łagodny'],
       ],
       questions: [
-        { id: 'r1q7wm', q: 'Który składnik przyrody jest nieożywiony?', options: ['dąb', 'jeż', 'skała', 'mech'], answer: 2, explain: 'Skała nie oddycha, nie rośnie i nie rozmnaża się – to składnik nieożywiony.' },
-        { id: 'gm4im8', q: 'Który element krajobrazu został stworzony przez człowieka?', options: ['rzeka', 'most', 'chmura', 'paproć'], answer: 1, explain: 'Most zbudowali ludzie – to element antropogeniczny.' },
-        { id: '377q50', q: 'Prawda czy fałsz?\nRośliny nie oddychają – oddychają tylko zwierzęta i ludzie.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Oddychanie to cecha każdego organizmu żywego, także rośliny.' },
-        { id: 'w4sqnf', q: 'Które organizmy są samożywne?', options: ['zwierzęta', 'grzyby', 'rośliny', 'ludzie'], answer: 2, explain: 'Rośliny same wytwarzają pokarm (fotosynteza). Zwierzęta, grzyby i ludzie są cudzożywni.' },
-        { id: 'gs0lno', q: 'Kot jest organizmem cudzożywnym, ponieważ…', options: ['zjada inne organizmy', 'sam wytwarza pokarm dzięki światłu', 'nie oddycha', 'rośnie'], answer: 0, explain: 'Organizm cudzożywny zdobywa pokarm, zjadając inne organizmy (albo ich szczątki).' },
-        { id: '4hs0dp', q: 'Bez czego roślina nie wytworzy pokarmu w procesie fotosyntezy?', options: ['bez kwiatów', 'bez światła', 'bez owoców', 'bez wiatru'], answer: 1, explain: 'Do fotosyntezy potrzebne jest światło (oraz woda i dwutlenek węgla).' },
-        { id: '14xi07', q: 'Dlaczego fotosynteza jest ważna także dla zwierząt i ludzi?', options: ['bo powstaje pokarm i tlen', 'bo powstają chmury', 'bo rośliny przestają oddychać', 'bo ogrzewa powietrze'], answer: 0, explain: 'Rośliny są pokarmem dla zwierząt, a tlen wydzielany podczas fotosyntezy jest potrzebny do oddychania.' },
-        { id: 'o16ut9', q: 'Która część rośliny pobiera wodę z gleby?', options: ['liść', 'kwiat', 'korzeń', 'owoc'], answer: 2, explain: 'Korzeń utrzymuje roślinę w ziemi i pobiera z niej wodę.' },
-        { id: 'aqdmna', q: 'W której części rośliny zachodzi przede wszystkim fotosynteza?', options: ['w korzeniach', 'w zielonych liściach', 'w nasionach'], answer: 1, explain: 'Fotosynteza zachodzi w zielonych częściach rośliny, przede wszystkim w liściach.' },
-        { id: 'a3cdf8', q: 'Która część rośliny podtrzymuje liście i kwiaty?', options: ['łodyga', 'korzeń', 'pręcik', 'nasiono'], answer: 0, explain: 'Łodyga podtrzymuje liście i kwiaty oraz przewodzi wodę.' },
+        { id: 'wrlhkk', q: 'Wysokość bezwzględna to wysokość liczona…', options: ['od poziomu morza', 'od podnóża góry', 'od najbliższego miasta', 'od dna doliny'], answer: 0, explain: 'Wysokość bezwzględną liczymy od poziomu morza i zapisujemy w m n.p.m.' },
+        { id: '2rvig1', q: 'Co oznacza skrót „m n.p.m.”?', options: ['metry nad poziomem morza', 'metry na planie mapy', 'metry na północ od morza', 'metry nad powierzchnią mapy'], answer: 0, explain: 'm n.p.m. – metry nad poziomem morza. Tak zapisujemy wysokość bezwzględną.' },
+        { id: 'yfuncw', q: 'Szczyt ma 1200 m n.p.m., a schronisko pod nim – 900 m n.p.m. O ile metrów szczyt jest wyżej niż schronisko?', options: ['300 m', '2100 m', '1200 m', '900 m'], answer: 0, explain: 'Wysokość względna to różnica: 1200 − 900 = 300 m.' },
         {
-          id: 'yo1bb9',
-          q: 'Jak nazywa się część kwiatu oznaczona znakiem zapytania?',
-          svg: `<svg viewBox="0 0 300 240" role="img" aria-label="Przekrój kwiatu. Znak zapytania wskazuje część pośrodku kwiatu, z grubszą dolną częścią i długą szyjką">
-      <line x1="150" y1="150" x2="150" y2="232" class="s3" stroke-width="6"/>
-      <ellipse cx="90" cy="112" rx="58" ry="20" transform="rotate(-28 90 112)" class="f2 s2 sw"/>
-      <ellipse cx="210" cy="112" rx="58" ry="20" transform="rotate(28 210 112)" class="f2 s2 sw"/>
-      <ellipse cx="150" cy="146" rx="34" ry="10" class="f3 s3 sw"/>
-      <line x1="134" y1="140" x2="114" y2="78" class="ln"/>
-      <line x1="166" y1="140" x2="186" y2="78" class="ln"/>
-      <ellipse cx="113" cy="72" rx="7" ry="10" class="f4 s4 sw"/>
-      <ellipse cx="187" cy="72" rx="7" ry="10" class="f4 s4 sw"/>
-      <ellipse cx="150" cy="122" rx="14" ry="18" class="f5 s5 sw"/>
-      <line x1="150" y1="104" x2="150" y2="56" class="s5" stroke-width="5"/>
-      <ellipse cx="150" cy="52" rx="11" ry="6" class="f5 s5 sw"/>
-      <line x1="236" y1="36" x2="164" y2="60" class="ln"/>
-      <text x="250" y="42" class="tx-b t2" text-anchor="middle">?</text>
+          id: '0op8ic',
+          q: 'Jaka jest wysokość względna wzgórza – od podnóża do szczytu?',
+          svg: `<svg viewBox="0 0 340 190" role="img" aria-label="Przekrój wzgórza. Szczyt: 650 m n.p.m. Podnóże: 400 m n.p.m.">
+      <line x1="10" y1="160" x2="330" y2="160" class="ln-thin"/>
+      <path d="M40,160 Q110,150 150,90 Q170,56 190,56 Q215,58 240,110 Q265,155 310,160 Z" class="f3 s3"/>
+      <circle cx="190" cy="56" r="5" class="t2"/>
+      <circle cx="60" cy="158" r="5" class="t2"/>
+      <text x="190" y="38" class="tx-b" text-anchor="middle">650 m n.p.m.</text>
+      <text x="60" y="184" class="tx-b" text-anchor="middle">400 m n.p.m.</text>
+      <text x="292" y="40" class="tx-s" text-anchor="middle">szczyt</text>
+      <text x="60" y="142" class="tx-s" text-anchor="middle">podnóże</text>
     </svg>`,
-          options: ['pręcik', 'słupek', 'płatek', 'łodyga'],
-          answer: 1,
-          explain: 'Pośrodku kwiatu jest słupek: na dole grubsza część, w której powstają nasiona, wyżej długa szyjka. Pręciki to cienkie nitki z woreczkami pyłku na końcu.',
+          options: ['250 m', '1050 m', '650 m', '400 m'],
+          answer: 0,
+          explain: 'Wysokość względna to różnica wysokości bezwzględnych: 650 − 400 = 250 m.',
         },
-        { id: 'niqetj', q: 'Co wytwarzają pręciki?', options: ['nasiona', 'pyłek', 'zarodniki', 'korzenie'], answer: 1, explain: 'Pręciki wytwarzają pyłek. Nasiona powstają w słupku.' },
-        { id: 'dq83dh', q: 'Co powstaje z dolnej części słupka i chroni nasiona?', options: ['owoc', 'liść', 'korzeń', 'płatek'], answer: 0, explain: 'Owoc powstaje z dolnej części słupka. Chroni nasiona i pomaga je rozsiewać.' },
-        { id: 'jwwvqx', q: 'Do czego służą kolorowe płatki kwiatu?', options: ['wabią owady', 'pobierają wodę z gleby', 'wytwarzają pyłek', 'utrzymują roślinę w ziemi'], answer: 0, explain: 'Kolorowe płatki (część okwiatu) przyciągają owady do kwiatu.' },
-        { id: '0sz8wb', q: 'Która roślina jest zarodnikowa?', options: ['dąb', 'sosna', 'paproć', 'mniszek'], answer: 2, explain: 'Paprocie (i mchy) rozmnażają się przez zarodniki. Dąb, sosna i mniszek wytwarzają nasiona.' },
-        { id: 'f6epfn', q: 'Prawda czy fałsz?\nMchy wytwarzają nasiona.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Mchy są roślinami zarodnikowymi – rozmnażają się przez zarodniki, nie mają nasion.' },
+        { id: 'r2evu2', q: 'Na jakiej wysokości leżą niziny?', options: ['od 0 do 300 m n.p.m.', 'powyżej 300 m n.p.m.', 'powyżej 2000 m n.p.m.', 'poniżej poziomu morza'], answer: 0, explain: 'Niziny leżą od 0 do 300 m n.p.m. Teren poniżej poziomu morza to depresja.' },
+        { id: 'en9vex', q: 'Czym góry różnią się od wyżyn?', options: ['w górach różnice wysokości są większe niż 300 m, a stoki strome', 'góry leżą poniżej 300 m n.p.m.', 'na wyżynach są ostre szczyty', 'niczym – to to samo'], answer: 0, explain: 'Wyżyny i góry leżą powyżej 300 m n.p.m. W górach różnice między szczytami a dolinami są jednak większe niż 300 m.' },
+        { id: '2ya7pb', q: 'Które góry w Polsce są górami wysokimi?', options: ['Tatry', 'Sudety', 'Góry Świętokrzyskie', 'Bieszczady'], answer: 0, explain: 'Tatry to jedyne góry wysokie w Polsce: ostre szczyty i bardzo strome stoki.' },
+        { id: 'k7ywnf', q: 'Jak nazywa się najwyższy szczyt Polski?', options: ['Rysy', 'Śnieżka', 'Giewont', 'Łysica'], answer: 0, explain: 'Rysy w Tatrach mają 2499 m n.p.m. – to najwyższy szczyt Polski.' },
+        { id: 'bma9fq', q: 'Które z tych miejsc to wyżyna?', options: ['Wyżyna Krakowsko-Częstochowska', 'Tatry', 'Nizina Mazowiecka', 'Żuławy Wiślane'], answer: 0, explain: 'Wyżyna Krakowsko-Częstochowska leży powyżej 300 m n.p.m., ale nie ma dużych różnic wysokości.' },
+        { id: 'g0t4nw', q: 'Depresja to…', options: ['ląd położony poniżej poziomu morza', 'najwyższy szczyt w górach', 'teren od 0 do 300 m n.p.m.', 'dolina rzeki w górach'], answer: 0, explain: 'Depresja to ląd poniżej poziomu morza. W Polsce jest na Żuławach Wiślanych.' },
+        { id: 'cshhzh', q: 'Gdzie w Polsce znajduje się depresja?', options: ['na Żuławach Wiślanych', 'w Tatrach', 'na Wyżynie Lubelskiej', 'w Bieszczadach'], answer: 0, explain: 'Depresja jest na Żuławach Wiślanych, niedaleko ujścia Wisły. Najniższy punkt leży ok. 1,8 m pod poziomem morza.' },
+        { id: '0dj2i5', q: 'Poziomica to linia na mapie, która łączy punkty…', options: ['o tej samej wysokości bezwzględnej', 'o tej samej temperaturze', 'leżące nad tą samą rzeką', 'oddalone o 1 km'], answer: 0, explain: 'Poziomica łączy miejsca położone na tej samej wysokości nad poziomem morza.' },
+        {
+          id: 'nuz5s4',
+          q: 'Na rysunku są poziomice wzgórza. Który stok jest bardziej stromy?',
+          svg: `<svg viewBox="0 0 340 200" role="img" aria-label="Poziomice wzgórza. Po lewej stronie linie leżą bardzo blisko siebie, po prawej – daleko od siebie. Lewy stok oznaczono literą A, prawy literą B.">
+      <ellipse cx="170" cy="100" rx="130" ry="80" class="ln"/>
+      <ellipse cx="148" cy="100" rx="100" ry="62" class="ln"/>
+      <ellipse cx="126" cy="100" rx="70" ry="44" class="ln"/>
+      <ellipse cx="106" cy="100" rx="42" ry="26" class="ln"/>
+      <circle cx="90" cy="100" r="4" class="t2"/>
+      <text x="22" y="106" class="tx-b t2" text-anchor="middle">A</text>
+      <text x="322" y="106" class="tx-b t2" text-anchor="middle">B</text>
+    </svg>`,
+          options: ['stok A – poziomice są gęsto', 'stok B – poziomice są rzadko', 'oba są tak samo strome'],
+          answer: 0,
+          explain: 'Im gęściej leżą poziomice, tym na krótkim odcinku teren bardziej się wznosi – stok jest stromy. Po stronie A poziomice są blisko siebie.',
+        },
+        { id: 'i34oa1', q: 'Na mapie hipsometrycznej niziny są zwykle zaznaczone kolorem…', options: ['zielonym', 'brązowym', 'niebieskim', 'czerwonym'], answer: 0, explain: 'Niziny – zielony, wyższe tereny – żółty i pomarańczowy, góry – brązowy. Niebieski oznacza wody. Kolory zawsze sprawdzaj w legendzie.' },
+        { id: '5t1giv', q: 'Jak nazywa się obniżenie terenu otoczone ze wszystkich stron wyższym terenem?', options: ['kotlina', 'szczyt', 'stok', 'wyżyna'], answer: 0, explain: 'Kotlina to obniżenie otoczone ze wszystkich stron wyższym terenem.' },
+        { id: 'pdiqw5', q: 'Jak nazywa się wydłużone obniżenie terenu, którym zwykle płynie rzeka?', options: ['dolina', 'kotlina', 'depresja', 'podnóże'], answer: 0, explain: 'Dolina to wydłużone obniżenie terenu – zwykle płynie nim rzeka.' },
+        { id: '3q8hco', q: 'Prawda czy fałsz?\nWysokość względną obliczamy, odejmując od siebie dwie wysokości bezwzględne.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Np. szczyt 650 m n.p.m. i podnóże 400 m n.p.m.: 650 − 400 = 250 m wysokości względnej.' },
+        { id: 'b23oey', q: 'Jak nazywa się miejsce, w którym stok wzniesienia przechodzi w płaski teren?', options: ['podnóże', 'szczyt', 'dolina', 'poziomica'], answer: 0, explain: 'Wzniesienie ma szczyt, stoki i podnóże – miejsce, gdzie stok przechodzi w płaski teren.' },
+        { id: 'igyixr', q: 'Do jakich gór należą Góry Świętokrzyskie?', options: ['do gór niskich', 'do gór wysokich', 'do gór średnich', 'to nie są góry, tylko depresja'], answer: 0, explain: 'Góry Świętokrzyskie to góry niskie – mają łagodne stoki i zaokrąglone szczyty.' },
       ],
     },
 
@@ -336,6 +345,7 @@ window.SUBJECTS.push({
     {
       id: 'skaly-gleba',
       name: 'Skały i gleba',
+      chapter: 'rozdział II „Moja okolica” (skały, gleba)',
       basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 6 (skały najbliższej okolicy – barwa, spójność, twardość, odporność na działanie wody; porównanie z innymi skałami Polski), wym. 7 (gleba okolicy, porównanie z ziemią ogrodową, przydatność do uprawy roślin); doświadczenia edukacyjne – zajęcia terenowe, pkt 4 (próbka gleby: barwa, próchnica, uziarnienie, organizmy). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Skały wokół nas</h3>
@@ -417,122 +427,9 @@ window.SUBJECTS.push({
 
     // ------------------------------------------------------------------
     {
-      id: 'zwierzeta',
-      name: 'Zwierzęta i grzyby w naszej okolicy',
-      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 3 (zwierzęta lądowe okolicy, ślady bytowania, kręgowce i bezkręgowce), wym. 4 (grzyby kapeluszowe, zbieranie grzybów, grzybnia, znaczenie grzybów), wym. 5 (trujące rośliny i grzyby, jadowite zwierzęta w Polsce); dz. 4 wym. 9 (zimowanie zwierząt, odpowiedzialne dokarmianie). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
-      theory: `
-        <h3>Kręgowce i bezkręgowce</h3>
-        <table>
-          <tr><th>Kręgowce</th><th>Bezkręgowce</th></tr>
-          <tr><td>mają <b>kręgosłup</b> (i szkielet z kości w środku ciała)</td><td><b>nie mają</b> kręgosłupa</td></tr>
-          <tr><td>jeż, sarna, kot, wróbel, sikora, żaba, jaszczurka, ryby</td><td>biedronka, mrówka, pszczoła, pająk, ślimak, dżdżownica</td></tr>
-        </table>
-        <h3>Ślady zwierząt</h3>
-        <p>Wiele zwierząt trudno zobaczyć, ale łatwo znaleźć ich <b>ślady bytowania</b>:</p>
-        <ul>
-          <li><b>tropy</b> – odciski łap na śniegu albo w błocie,</li>
-          <li><b>nory</b> i <b>kretowiska</b> (kopczyki ziemi wypchniętej przez kreta),</li>
-          <li><b>gniazda</b> ptaków, os, mrówek (mrowisko),</li>
-          <li><b>zgryzy</b> – ślady jedzenia, np. obgryzione szyszki, nadgryzione orzechy,</li>
-          <li><b>pióra</b>, sierść, odchody.</li>
-        </ul>
-        <h3>Grzyby kapeluszowe</h3>
-        <ul>
-          <li>To, co zbieramy w lesie, to <b>owocnik</b>: <b>kapelusz</b> i <b>trzon</b>.</li>
-          <li>Pod kapeluszem są <b>blaszki</b> (np. u muchomora) albo <b>rurki</b> (np. u prawdziwka). Tam powstają zarodniki.</li>
-          <li>W ziemi rośnie <b>grzybnia</b> – plątanina cienkich nitek. To najważniejsza część grzyba. Z niej co roku wyrastają nowe owocniki.</li>
-        </ul>
-        <p>Inne grzyby nie mają kapeluszy, np. <b>pleśń</b> na zepsutym chlebie albo <b>drożdże</b> używane do pieczenia ciasta.</p>
-        <p><b>Znaczenie grzybów:</b> są cudzożywne. Rozkładają opadłe liście, martwe drewno i inne szczątki – dzięki nim powstaje żyzna gleba. Wiele grzybów współpracuje z korzeniami drzew.</p>
-        <h3>Jak zbierać grzyby</h3>
-        <ul>
-          <li>Zbieraj <b>tylko grzyby, które na pewno znasz</b> – najlepiej z dorosłym, który dobrze zna grzyby.</li>
-          <li>Grzyb ostrożnie wykręć albo wytnij nożykiem przy ziemi – nie niszcz grzybni.</li>
-          <li>Nie kop i nie niszcz grzybów, których nie zbierasz – są ważne dla lasu.</li>
-          <li>Zbieraj do koszyka, a nie do foliowej torby.</li>
-        </ul>
-        <h3>Uwaga – trujące i jadowite!</h3>
-        <ul>
-          <li><b>Muchomor sromotnikowy</b> – grzyb <b>śmiertelnie trujący</b>. Nawet jeden grzyb może zabić człowieka. Trujący jest też <b>muchomor czerwony</b> (czerwony kapelusz z białymi kropkami).</li>
-          <li><b>Konwalia</b> – roślina trująca (także jej owoce).</li>
-          <li><b>Barszcz Sosnowskiego</b> – bardzo duża roślina; jej sok na skórze w słońcu powoduje groźne oparzenia. Nie dotykaj go!</li>
-          <li><b>Żmija zygzakowata</b> – jedyny jadowity wąż w Polsce. Zwykle ma ciemny zygzak na grzbiecie. Gdy ją zobaczysz – spokojnie się oddal.</li>
-          <li><b>Osy, pszczoły i szerszenie</b> żądlą. Użądlenie jest szczególnie groźne dla osób uczulonych.</li>
-        </ul>
-        <div class="tip">💡 Trującego grzyba nie rozpoznasz po zapachu ani smaku. Nie zrywaj i nie jedz nieznanych grzybów, roślin ani owoców. Jeśli ktoś zjadł nieznanego grzyba lub roślinę – od razu powiedz dorosłemu; trzeba wezwać pomoc (112).</div>
-        <h3>Zwierzęta zimą</h3>
-        <table>
-          <tr><th>Sposób</th><th>Przykład</th></tr>
-          <tr><td><b>sen zimowy (hibernacja)</b> – zwierzę zasypia w kryjówce, jego organizm prawie się „wyłącza”</td><td>jeż, nietoperze</td></tr>
-          <tr><td><b>odlot</b> do ciepłych krajów</td><td>bocian, jaskółka</td></tr>
-          <tr><td><b>gromadzenie zapasów</b></td><td>wiewiórka (orzechy, żołędzie)</td></tr>
-        </table>
-        <p>Wiele ptaków zostaje na zimę, np. wróbel i sikora.</p>
-        <h3>Dokarmianie ptaków</h3>
-        <ul>
-          <li>Dokarmiaj zimą, gdy jest mróz albo śnieg. Jeśli zaczniesz – rób to regularnie.</li>
-          <li><b>Dobre:</b> nasiona słonecznika, ziarna zbóż, niesolona słonina, kawałki jabłek.</li>
-          <li><b>Złe:</b> chleb, jedzenie solone (np. słone orzeszki, solona słonina), przyprawione, zepsute lub spleśniałe.</li>
-          <li>Dbaj o czystość karmnika.</li>
-        </ul>
-      `,
-      flashcards: [
-        ['Kręgowce', 'Mają kręgosłup, np. jeż, wróbel, żaba'],
-        ['Bezkręgowce', 'Nie mają kręgosłupa, np. biedronka, ślimak, dżdżownica'],
-        ['Ślady bytowania zwierząt', 'tropy, nory, gniazda, zgryzy, pióra'],
-        ['Grzybnia', 'Plątanina nitek grzyba w ziemi – jego najważniejsza część'],
-        ['Owocnik grzyba kapeluszowego', 'kapelusz i trzon'],
-        ['Znaczenie grzybów w lesie', 'Rozkładają szczątki (liście, drewno) – powstaje żyzna gleba'],
-        ['Muchomor sromotnikowy', 'Grzyb śmiertelnie trujący'],
-        ['Żmija zygzakowata', 'Jedyny jadowity wąż w Polsce'],
-        ['Sen zimowy (hibernacja)', 'Zimowanie w głębokim śnie w kryjówce, np. jeż'],
-        ['Czego nie dawać ptakom zimą', 'chleba i jedzenia solonego, przyprawionego, zepsutego'],
-      ],
-      questions: [
-        { id: 'uf95r2', q: 'Które zwierzę jest kręgowcem?', options: ['biedronka', 'dżdżownica', 'jeż', 'ślimak'], answer: 2, explain: 'Jeż ma kręgosłup, więc jest kręgowcem. Biedronka, dżdżownica i ślimak to bezkręgowce.' },
-        { id: 'kj4hop', q: 'Które zwierzę jest bezkręgowcem?', options: ['wróbel', 'żaba', 'sarna', 'mrówka'], answer: 3, explain: 'Mrówka nie ma kręgosłupa – jest bezkręgowcem (owadem).' },
-        { id: 'kdbgy5', q: 'Kopczyki ziemi na trawniku (kretowiska) to przykład…', options: ['śladów bytowania zwierzęcia', 'grzybni', 'gniazd ptaków', 'skał'], answer: 0, explain: 'Kretowiska usypuje kret, kopiąc korytarze pod ziemią. To ślad jego bytowania.' },
-        { id: 'y0p6iw', q: 'Znalazłeś w lesie obgryzioną szyszkę. Jaki to ślad?', options: ['trop', 'zgryz (ślad jedzenia)', 'gniazdo', 'nora'], answer: 1, explain: 'Zgryzy to ślady jedzenia zostawione przez zwierzęta, np. obgryzione szyszki i nadgryzione orzechy.' },
-        { id: 'ves3op', q: 'Jak nazywa się część grzyba ukryta w ziemi, złożona z cienkich nitek?', options: ['kapelusz', 'trzon', 'blaszki', 'grzybnia'], answer: 3, explain: 'Grzybnia to plątanina nitek w ziemi. Z niej wyrastają owocniki (kapelusz i trzon).' },
-        {
-          id: 'cfry19',
-          q: 'Jak nazywa się część grzyba oznaczona znakiem zapytania?',
-          svg: `<svg viewBox="0 0 300 220" role="img" aria-label="Grzyb kapeluszowy nad ziemią i nitki pod ziemią. Znak zapytania wskazuje część łączącą kapelusz z ziemią">
-      <line x1="20" y1="160" x2="280" y2="160" class="ln"/>
-      <path d="M60,90 Q60,20 140,20 Q220,20 220,90 Z" class="f2 s2 sw"/>
-      <path d="M62,90 L218,90 L186,106 L94,106 Z" class="f5 s5"/>
-      <g class="ln-thin">
-        <line x1="80" y1="90" x2="100" y2="106"/><line x1="100" y1="90" x2="114" y2="106"/><line x1="120" y1="90" x2="128" y2="106"/>
-        <line x1="160" y1="90" x2="152" y2="106"/><line x1="180" y1="90" x2="166" y2="106"/><line x1="200" y1="90" x2="180" y2="106"/>
-      </g>
-      <rect x="124" y="104" width="32" height="56" rx="8" class="f4 s4 sw"/>
-      <g class="ln-thin">
-        <path d="M130,162 Q100,180 60,176"/><path d="M140,162 Q130,195 90,205"/><path d="M150,162 Q170,195 210,205"/><path d="M152,162 Q190,178 240,172"/>
-      </g>
-      <line x1="240" y1="126" x2="162" y2="132" class="ln"/>
-      <text x="252" y="132" class="tx-b t2" text-anchor="middle">?</text>
-    </svg>`,
-          options: ['trzon', 'kapelusz', 'grzybnia', 'blaszki'],
-          answer: 0,
-          explain: 'Trzon to „nóżka” grzyba – łączy kapelusz z ziemią. Kapelusz jest na górze, grzybnia w ziemi.',
-        },
-        { id: 'l9jwze', q: 'Jaką ważną rolę pełnią grzyby w lesie?', options: ['rozkładają opadłe liście i martwe drewno', 'wytwarzają pokarm dzięki światłu', 'zapylają kwiaty', 'odstraszają żmije'], answer: 0, explain: 'Grzyby rozkładają szczątki roślin i zwierząt – dzięki temu powstaje żyzna gleba.' },
-        { id: 'y0drp0', q: 'Jak prawidłowo zbierać grzyby?', options: ['zbierać tylko grzyby, które na pewno znamy', 'zbierać wszystkie, a w domu sprawdzić, które są jadalne', 'wyrywać je razem z grzybnią', 'rozkopywać ziemię w poszukiwaniu młodych grzybów'], answer: 0, explain: 'Zbieramy tylko grzyby, które na pewno znamy. Ostrożnie wykręcamy je albo wycinamy, nie niszcząc grzybni.' },
-        { id: 'ffgox1', q: 'Prawda czy fałsz?\nGrzyb trujący zawsze można rozpoznać po brzydkim zapachu albo gorzkim smaku.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Trujący grzyb może mieć przyjemny zapach i smak. Dlatego nigdy nie zbieramy i nie jemy nieznanych grzybów.' },
-        { id: 'llu62o', q: 'Który grzyb jest śmiertelnie trujący?', options: ['pieczarka', 'muchomor sromotnikowy', 'prawdziwek'], answer: 1, explain: 'Muchomor sromotnikowy jest śmiertelnie trujący – nawet jeden grzyb może zabić człowieka.' },
-        { id: 'lpivcf', q: 'Jedyny jadowity wąż żyjący w Polsce to…', options: ['zaskroniec', 'żmija zygzakowata', 'padalec'], answer: 1, explain: 'Żmija zygzakowata to jedyny jadowity wąż w Polsce. Zaskroniec nie jest jadowity, a padalec to beznoga jaszczurka.' },
-        { id: 'qbf13i', q: 'Dlaczego nie wolno dotykać barszczu Sosnowskiego?', options: ['jego sok na skórze w słońcu powoduje oparzenia', 'ma bardzo ostre kolce', 'gryzie', 'jest bardzo gorący'], answer: 0, explain: 'Sok barszczu Sosnowskiego na skórze wystawionej na słońce powoduje groźne oparzenia.' },
-        { id: 'w5dhn8', q: 'Prawda czy fałsz?\nKonwalia jest rośliną trującą.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Konwalia jest trująca, także jej czerwone owoce. Nie zrywaj i nie jedz nieznanych roślin.' },
-        { id: 'dxguf7', q: 'Jak jeż spędza zimę?', options: ['odlatuje do ciepłych krajów', 'zapada w sen zimowy', 'gromadzi zapasy w dziupli', 'zmienia kolor na biały'], answer: 1, explain: 'Jeż zimuje w kryjówce, np. w stercie liści, i zapada w sen zimowy (hibernację).' },
-        { id: 'as6gii', q: 'Które zwierzę gromadzi zapasy na zimę?', options: ['bocian', 'jeż', 'wiewiórka'], answer: 2, explain: 'Wiewiórka chowa na zimę orzechy i żołędzie. Bocian odlatuje, a jeż zapada w sen zimowy.' },
-        { id: 'il7g7b', q: 'Co NIE nadaje się do karmnika dla ptaków?', options: ['nasiona słonecznika', 'chleb', 'niesolona słonina', 'ziarna zbóż'], answer: 1, explain: 'Chleb szkodzi ptakom. Nie dajemy też jedzenia solonego, przyprawionego ani zepsutego.' },
-      ],
-    },
-
-    // ------------------------------------------------------------------
-    {
       id: 'woda',
       name: 'Woda i jej stany skupienia',
+      chapter: 'rozdział III „Obserwuję zjawiska przyrodnicze”',
       basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 3 wym. 2 (stany skupienia – kształt i ściśliwość, model drobinowy), wym. 3 (stany skupienia wody i przemiany), wym. 4 (opady i osady atmosferyczne), wym. 5 (zmiany temperatury i stanu skupienia wody a organizmy i skały, pokrywa śnieżna); dz. 5 wym. 27 (schemat obiegu wody – w uproszczeniu). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Trzy stany skupienia</h3>
@@ -637,203 +534,9 @@ window.SUBJECTS.push({
 
     // ------------------------------------------------------------------
     {
-      id: 'rzeka-jezioro',
-      name: 'Rzeka i jezioro',
-      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 4 „Organizmy i ekosystemy”, wym. 6 (wody płynące i stojące, cechy środowiska wodnego, elementy systemu rzecznego – rzeka główna, dopływ, źródło, ujście), wym. 17 (funkcja rzeki i jej doliny, składniki krajobrazu stworzone przez rzekę); dz. 5 „Planeta Ziemia”, wym. 23 (geneza jezior – tylko jeziora polodowcowe i zbiorniki zaporowe; rola rzek i jezior w życiu ludzi). Definicje (źródło, ujście, dopływ, dorzecze, system rzeczny, rzeka główna, brzeg lewy i prawy, bieg górny, środkowy i dolny, zakole, starorzecze), źródło Wisły na Baraniej Górze, ujście Wisły do Zatoki Gdańskiej i Odry do Zalewu Szczecińskiego, dopływy Wisły i Odry – według ZPE („Nad brzegiem rzeki”, „System rzeczny”, zpe.gov.pl), sprawdzone 2.11.2026. Jeziora: większość jezior w Polsce ma pochodzenie polodowcowe, największe Śniardwy, najgłębsze Hańcza – materiały ZPE i PIG, sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
-      theory: `
-        <h3>Wody płynące i stojące</h3>
-        <table>
-          <tr><th>Wody płynące</th><th>Wody stojące</th></tr>
-          <tr><td>woda płynie w jednym kierunku – z wyżej położonych miejsc w niższe</td><td>woda się nie przemieszcza z miejsca na miejsce, wypełnia zagłębienie terenu</td></tr>
-          <tr><td>strumień, potok, <b>rzeka</b>; <b>kanał</b> – koryto wykopane przez ludzi</td><td><b>jezioro</b>, <b>staw</b>, zbiornik zaporowy</td></tr>
-        </table>
-        <h3>Jak zbudowana jest rzeka?</h3>
-        <ul>
-          <li><b>Źródło</b> – miejsce, w którym rzeka bierze początek. Najwięcej źródeł jest w górach i na wyżynach. Wisła zaczyna się na stoku <b>Baraniej Góry</b> w Beskidzie Śląskim.</li>
-          <li><b>Ujście</b> – miejsce, w którym rzeka wpada do innej rzeki, jeziora albo morza. Wisła uchodzi do Zatoki Gdańskiej (Morze Bałtyckie).</li>
-          <li><b>Koryto</b> – zagłębienie, w którym płynie rzeka. <b>Nurt</b> – miejsce w korycie, gdzie woda płynie najszybciej.</li>
-          <li><b>Dopływ</b> – rzeka, która wpada do większej rzeki.</li>
-          <li><b>Rzeka główna</b> – wpada prosto do morza (albo jeziora) i nie jest niczyim dopływem, np. Wisła, Odra.</li>
-          <li><b>System rzeczny</b> – rzeka główna razem ze wszystkimi dopływami. Na mapie wygląda jak <b>drzewo</b>: rzeka główna to pień, dopływy – gałęzie.</li>
-          <li><b>Dorzecze</b> – cały obszar, z którego woda spływa do danej rzeki i jej dopływów.</li>
-        </ul>
-        <h3>Dopływ lewy czy prawy?</h3>
-        <p>Stań <b>tyłem do źródła</b>, a <b>twarzą do ujścia</b> – czyli patrz tam, dokąd płynie woda. To, co masz po lewej ręce, to <b>lewy brzeg</b> i <b>lewe dopływy</b>, a po prawej – <b>prawy brzeg</b> i <b>prawe dopływy</b>.</p>
-        <table>
-          <tr><th>Rzeka</th><th>Prawe dopływy (przykłady)</th><th>Lewe dopływy (przykłady)</th></tr>
-          <tr><td>Wisła</td><td>Dunajec, San, Narew</td><td>Pilica, Bzura</td></tr>
-          <tr><td>Odra</td><td>Warta</td><td>Nysa Łużycka, Bóbr</td></tr>
-        </table>
-        <div class="tip">💡 Na mapie lewy brzeg <b>nie zawsze</b> jest po lewej stronie kartki. Liczy się kierunek, w którym płynie woda.</div>
-        <h3>Bieg rzeki i dolina</h3>
-        <table>
-          <tr><th>Bieg</th><th>Jak płynie woda</th><th>Co tam widać</th></tr>
-          <tr><td><b>górny</b></td><td>szybko</td><td>wąska, stroma dolina, wodospady, mało roślin</td></tr>
-          <tr><td><b>środkowy</b></td><td>wolniej</td><td>rzeka podmywa brzegi i poszerza dolinę, powstają <b>zakola</b> i <b>starorzecza</b></td></tr>
-          <tr><td><b>dolny</b></td><td>najwolniej</td><td>rzeka osadza piasek i muł, tworzą się piaszczyste łachy</td></tr>
-        </table>
-        <ul>
-          <li><b>Dolina rzeczna</b> – obniżenie terenu, które wyżłobiła rzeka.</li>
-          <li><b>Zakole</b> – łuk albo pętla koryta. Na zewnętrznym brzegu woda płynie szybciej i podmywa go, na wewnętrznym – osadza piasek.</li>
-          <li><b>Starorzecze</b> – jezioro w dolinie rzeki: kawałek dawnego koryta (np. zakola), odcięty od rzeki.</li>
-          <li><b>Powódź</b> – rzeka wylewa z koryta i zalewa okoliczne tereny. Płaskie dno doliny często zalewa woda – dlatego niebezpiecznie jest budować tam domy.</li>
-        </ul>
-        <h3>Życie w wodzie i nad wodą</h3>
-        <ul>
-          <li>Im głębiej, tym <b>mniej światła</b>.</li>
-          <li>Temperatura wody zmienia się <b>wolniej</b> niż temperatura powietrza.</li>
-          <li>Organizmy wodne oddychają <b>tlenem rozpuszczonym w wodzie</b>, np. ryby – za pomocą skrzeli.</li>
-          <li>Rzeka i jej dolina to dom ryb, płazów, ptaków (np. czapli) i ssaków (np. bobra). Dolina rzeki to też „korytarz”, którym wędrują zwierzęta.</li>
-        </ul>
-        <h3>Jeziora</h3>
-        <ul>
-          <li><b>Jezioro</b> – naturalne zagłębienie terenu wypełnione wodą stojącą.</li>
-          <li>Większość jezior w Polsce to <b>jeziora polodowcowe</b> – powstały w zagłębieniach po lądolodzie, który dawno temu przykrywał północ Polski. Dlatego najwięcej jezior jest na <b>pojezierzach</b> na północy kraju.</li>
-          <li>Największe jezioro Polski – <b>Śniardwy</b>. Najgłębsze – <b>Hańcza</b>.</li>
-          <li><b>Zbiornik zaporowy</b> (sztuczne jezioro) – powstaje, gdy ludzie zbudują na rzece <b>zaporę</b>, np. Jezioro Solińskie na Sanie.</li>
-          <li><b>Staw</b> – zwykle niewielki i płytki zbiornik zrobiony przez człowieka, np. do hodowli ryb. (Uwaga: w górach stawami nazywa się też naturalne jeziora, np. Czarny Staw).</li>
-        </ul>
-        <p><b>Po co ludziom rzeki i jeziora?</b> Dają wodę (do picia, dla rolnictwa i fabryk), ryby, prąd z elektrowni wodnych, służą do transportu i wypoczynku.</p>
-      `,
-      flashcards: [
-        ['Wody płynące – przykłady', 'strumień, potok, rzeka, kanał'],
-        ['Wody stojące – przykłady', 'jezioro, staw, zbiornik zaporowy'],
-        ['Źródło rzeki', 'Miejsce, w którym rzeka bierze początek'],
-        ['Ujście rzeki', 'Miejsce, w którym rzeka wpada do innej rzeki, jeziora lub morza'],
-        ['Dopływ', 'Rzeka, która wpada do większej rzeki'],
-        ['Rzeka główna', 'Rzeka, która wpada do morza (lub jeziora) i nie jest dopływem, np. Wisła, Odra'],
-        ['System rzeczny', 'Rzeka główna razem ze wszystkimi dopływami'],
-        ['Dorzecze', 'Obszar, z którego woda spływa do danej rzeki i jej dopływów'],
-        ['Jak rozpoznać lewy i prawy brzeg?', 'Stań twarzą do ujścia (tam, dokąd płynie woda): lewa ręka – lewy brzeg'],
-        ['Źródło i ujście Wisły', 'źródło – Barania Góra w Beskidzie Śląskim; ujście – Zatoka Gdańska (Bałtyk)'],
-        ['Zakole', 'Łuk lub pętla koryta rzeki'],
-        ['Starorzecze', 'Jezioro w dolinie rzeki – odcięty kawałek dawnego koryta'],
-        ['Jeziora polodowcowe', 'Powstały w zagłębieniach po lądolodzie; najwięcej ich na pojezierzach na północy Polski'],
-        ['Największe i najgłębsze jezioro Polski', 'największe – Śniardwy; najgłębsze – Hańcza'],
-        ['Zbiornik zaporowy', 'Sztuczne jezioro powstałe po zbudowaniu zapory na rzece, np. Jezioro Solińskie'],
-      ],
-      questions: [
-        { id: 'gc9oj9', q: 'Która z tych wód jest wodą płynącą?', options: ['potok', 'jezioro', 'staw', 'zbiornik zaporowy'], answer: 0, explain: 'Potok, strumień, rzeka i kanał to wody płynące. Jezioro, staw i zbiornik zaporowy – stojące.' },
-        { id: '3mtdbh', q: 'Która z tych wód jest wodą stojącą?', options: ['jezioro', 'rzeka', 'strumień', 'kanał'], answer: 0, explain: 'Woda w jeziorze wypełnia zagłębienie terenu i nie płynie z miejsca na miejsce.' },
-        { id: 'kevhmp', q: 'Jak nazywa się miejsce, w którym rzeka bierze początek?', options: ['źródło', 'ujście', 'zakole', 'dopływ'], answer: 0, explain: 'Rzeka zaczyna się w źródle, a kończy w ujściu.' },
-        { id: '439mzs', q: 'Ujście rzeki to miejsce, w którym…', options: ['rzeka wpada do innej rzeki, jeziora albo morza', 'rzeka bierze początek', 'rzeka płynie najszybciej', 'rzeka zakręca'], answer: 0, explain: 'W ujściu rzeka kończy swój bieg – wpada do innej rzeki, jeziora albo morza.' },
-        { id: '3bkps3', q: 'Gdzie zaczyna się Wisła?', options: ['na stoku Baraniej Góry w Beskidzie Śląskim', 'w Tatrach pod Rysami', 'na Żuławach Wiślanych', 'w jeziorze Śniardwy'], answer: 0, explain: 'Wisła wypływa na stoku Baraniej Góry w Beskidzie Śląskim i uchodzi do Zatoki Gdańskiej.' },
-        { id: 'ew7xa3', q: 'Dopływ to…', options: ['rzeka, która wpada do większej rzeki', 'miejsce, w którym rzeka się zaczyna', 'sztuczne jezioro', 'najszybsze miejsce w korycie'], answer: 0, explain: 'Dopływ to rzeka wpadająca do większej rzeki, np. San jest dopływem Wisły.' },
-        { id: 'j7zrbn', q: 'Rzeka główna razem ze wszystkimi dopływami to…', options: ['system rzeczny', 'dorzecze', 'starorzecze', 'zakole'], answer: 0, explain: 'System rzeczny to rzeka główna i jej dopływy. Na mapie wygląda jak drzewo. Dorzecze to obszar, z którego woda do nich spływa.' },
-        { id: '0qyce3', q: 'Jak ustalić, który brzeg rzeki jest lewy?', options: ['stanąć twarzą do ujścia – lewy brzeg jest po lewej ręce', 'stanąć twarzą do źródła – lewy brzeg jest po lewej ręce', 'spojrzeć na mapę – lewy brzeg jest zawsze po lewej stronie kartki', 'lewy brzeg to zawsze brzeg zachodni'], answer: 0, explain: 'Patrzysz tam, dokąd płynie woda (twarzą do ujścia). Wtedy po lewej masz lewy brzeg, a po prawej – prawy.' },
-        {
-          id: '9f3mgc',
-          q: 'Rzeka płynie w stronę wskazaną strzałką. Jakim dopływem jest rzeka A?',
-          svg: `<svg viewBox="0 0 360 180" role="img" aria-label="Rzeka główna płynie od lewej do prawej, strzałka kierunku w prawo. Z góry wpada do niej rzeka A.">
-      <defs><marker id="a-k4pr-q-rz" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
-      <path d="M10,120 C80,100 120,140 190,118 C250,100 290,130 350,112" class="ln s1 sw"/>
-      <path d="M150,20 C170,50 160,80 190,116" class="ln s1"/>
-      <text x="140" y="20" class="tx-b t1" text-anchor="middle">A</text>
-      <text x="40" y="158" class="tx-s">źródło</text>
-      <text x="300" y="158" class="tx-s">ujście</text>
-      <line x1="230" y1="72" x2="300" y2="72" class="ln s2 sw" marker-end="url(#a-k4pr-q-rz)"/>
-      <text x="265" y="62" class="tx-s" text-anchor="middle">kierunek</text>
-    </svg>`,
-          options: ['lewym', 'prawym'],
-          answer: 0,
-          explain: 'Stań twarzą do ujścia – patrzysz w prawo (w stronę strzałki). Wtedy twoja lewa ręka wskazuje górę rysunku, a stamtąd wpada rzeka A. To lewy dopływ.',
-        },
-        { id: 'up04ww', q: 'Który z tych dopływów Wisły jest dopływem prawym?', options: ['San', 'Pilica', 'Bzura'], answer: 0, explain: 'San, Dunajec i Narew to prawe dopływy Wisły. Pilica i Bzura – lewe.' },
-        { id: 'djmvy4', q: 'W którym biegu rzeka płynie najszybciej i tworzy wodospady?', options: ['w górnym', 'w środkowym', 'w dolnym'], answer: 0, explain: 'W górnym biegu, zwykle w górach, woda płynie szybko, żłobi wąską i stromą dolinę i tworzy wodospady.' },
-        { id: 'wky55k', q: 'Jak nazywa się łuk albo pętla koryta rzeki?', options: ['zakole', 'źródło', 'ujście', 'nurt'], answer: 0, explain: 'Zakole to łuk lub pętla koryta. Na zewnętrznym brzegu woda podmywa brzeg, na wewnętrznym osadza piasek.' },
-        { id: 'mk4vfg', q: 'Starorzecze to…', options: ['jezioro w dolinie rzeki – odcięty kawałek dawnego koryta', 'najstarsza rzeka w Polsce', 'źródło rzeki w górach', 'sztuczne jezioro za zaporą'], answer: 0, explain: 'Starorzecze powstaje, gdy kawałek koryta (np. zakole) zostaje odcięty od rzeki.' },
-        { id: '0wvixp', q: 'Jak powstała większość jezior w Polsce?', options: ['w zagłębieniach po lądolodzie – to jeziora polodowcowe', 'po zbudowaniu zapór na rzekach', 'w kraterach wulkanów', 'wykopali je ludzie'], answer: 0, explain: 'Dawno temu północ Polski przykrywał lądolód. W zagłębieniach, które po nim zostały, powstały jeziora – najwięcej ich na pojezierzach.' },
-        { id: 'k89h7n', q: 'Które jezioro jest największe w Polsce?', options: ['Śniardwy', 'Hańcza', 'Morskie Oko', 'Jezioro Solińskie'], answer: 0, explain: 'Największe jezioro w Polsce to Śniardwy. Najgłębsze jest Hańcza.' },
-        { id: 'fj6rz2', q: 'Jak powstaje zbiornik zaporowy?', options: ['ludzie budują na rzece zaporę i woda się za nią spiętrza', 'lądolód zostawia zagłębienie', 'rzeka odcina swoje zakole', 'morze zalewa ląd'], answer: 0, explain: 'Zbiornik zaporowy to sztuczne jezioro za zaporą, np. Jezioro Solińskie na Sanie.' },
-        { id: 'jkroml', q: 'Prawda czy fałsz?\nIm głębiej w jeziorze, tym więcej światła.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Woda pochłania światło – im głębiej, tym ciemniej. Dlatego rośliny wodne rosną głównie przy brzegu i blisko powierzchni.' },
-        { id: 'eok8kf', q: 'Czym oddychają ryby?', options: ['tlenem rozpuszczonym w wodzie, za pomocą skrzeli', 'powietrzem, które łapią nad wodą płucami', 'nie oddychają wcale', 'dwutlenkiem węgla z powietrza'], answer: 0, explain: 'Ryby oddychają skrzelami – pobierają tlen rozpuszczony w wodzie.' },
-        { id: 'qrxg9w', q: 'Dlaczego niebezpiecznie jest budować domy na płaskim dnie doliny rzeki?', options: ['bo podczas powodzi rzeka może zalać ten teren', 'bo tam jest zawsze susza', 'bo tam nie dociera światło', 'bo tam nie ma gleby'], answer: 0, explain: 'Gdy w korycie jest za dużo wody, rzeka wylewa i zalewa dno doliny – to powódź.' },
-      ],
-    },
-
-    // ------------------------------------------------------------------
-    {
-      id: 'powietrze',
-      name: 'Powietrze i jego składniki',
-      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 9 (właściwości powietrza, tlenu i dwutlenku węgla: stan skupienia, barwa, rozpuszczalność w wodzie, zapach, palność; skład powietrza), wym. 10 (jakość powietrza, wpływ na zdrowie, zanieczyszczenie powietrza a zmiana klimatu – moduł klimatyczny); dz. 5 wym. 14 (przyczyny smogu, działania ograniczające – moduł klimatyczny). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
-      theory: `
-        <h3>Powietrze – niewidzialne, ale jest</h3>
-        <p>Powietrza nie widać, ale czujesz je, gdy wieje wiatr. Powietrze <b>zajmuje miejsce</b> (pusta butelka jest pełna powietrza) i ma <b>masę</b> (napompowana piłka jest ciut cięższa niż pusta). Powietrze to <b>mieszanina gazów</b>.</p>
-        <h3>Z czego składa się powietrze?</h3>
-        <table>
-          <tr><th>Gaz</th><th>Ile go jest (w przybliżeniu)</th></tr>
-          <tr><td>azot</td><td>78 części na 100</td></tr>
-          <tr><td>tlen</td><td>21 części na 100</td></tr>
-          <tr><td>inne gazy: argon, dwutlenek węgla i inne</td><td>około 1 części na 100 (dwutlenku węgla – tylko ok. 4 części na 10 000)</td></tr>
-        </table>
-        <p>W powietrzu jest też <b>para wodna</b> – raz więcej, raz mniej – oraz <b>pyły</b>.</p>
-        <div class="tip">💡 Najwięcej w powietrzu jest azotu, a nie tlenu.</div>
-        <h3>Tlen i dwutlenek węgla</h3>
-        <table>
-          <tr><th></th><th>Tlen</th><th>Dwutlenek węgla</th></tr>
-          <tr><td>stan skupienia, barwa, zapach</td><td>gaz, bezbarwny, bez zapachu</td><td>gaz, bezbarwny, bez zapachu</td></tr>
-          <tr><td>palenie</td><td><b>podtrzymuje palenie</b> – tląca się drewniana drzazga w tlenie zapala się płomieniem</td><td><b>nie podtrzymuje palenia</b> – płomień w nim gaśnie; używa się go w niektórych gaśnicach</td></tr>
-          <tr><td>w wodzie</td><td>rozpuszcza się słabo, ale wystarcza dla ryb</td><td>rozpuszcza się – są w nim „bąbelki” w wodzie gazowanej</td></tr>
-          <tr><td>dla organizmów</td><td>potrzebny do <b>oddychania</b></td><td>wydychamy go; rośliny pobierają go do <b>fotosyntezy</b></td></tr>
-        </table>
-        <p>Dwutlenek węgla jest <b>cięższy od powietrza</b> – zbiera się przy ziemi. Wykrywamy go <b>wodą wapienną</b>: gdy przez słomkę wdmuchujesz do niej wydychane powietrze, woda wapienna mętnieje.</p>
-        <p>Azot nie podtrzymuje palenia i nie ma barwy ani zapachu.</p>
-        <h3>Zanieczyszczenia i smog</h3>
-        <p>Powietrze zanieczyszczają przede wszystkim <b>dymy i spaliny</b>: z pieców opalanych węglem lub drewnem (zwłaszcza gdy ktoś pali w nich śmieci), z samochodów, z fabryk i elektrowni. W powietrzu unoszą się wtedy drobne <b>pyły</b> i szkodliwe gazy.</p>
-        <p><b>Smog</b> (od angielskich słów „smoke” – dym i „fog” – mgła) to zanieczyszczone powietrze zalegające nad miastem lub wsią. Tworzy się najczęściej, gdy:</p>
-        <ul>
-          <li>do powietrza trafia dużo dymu i spalin (np. zimą, w sezonie grzewczym),</li>
-          <li>nie ma wiatru, który rozwiałby zanieczyszczenia,</li>
-          <li>miejscowość leży w dolinie lub kotlinie.</li>
-        </ul>
-        <p><b>Skutki dla zdrowia:</b> kaszel, ból głowy, łzawienie oczu, trudności z oddychaniem; po latach – choroby płuc i serca. Jakość powietrza możesz sprawdzić w aplikacji lub na stronie z pomiarami. Gdy jest zła, lepiej ograniczyć wysiłek na dworze.</p>
-        <h3>Powietrze a klimat</h3>
-        <p>Spalanie węgla, ropy i gazu (w piecach, elektrowniach, samochodach) dodaje do powietrza <b>dwutlenek węgla</b>. Im więcej go w powietrzu, tym mocniej Ziemia się ogrzewa – to jedna z przyczyn <b>zmiany klimatu</b>.</p>
-        <h3>Co możemy zrobić?</h3>
-        <ul>
-          <li>nigdy nie palić śmieci,</li>
-          <li>chodzić pieszo, jeździć rowerem lub komunikacją miejską zamiast samochodem,</li>
-          <li>oszczędzać prąd i ciepło (gasić światło, nie przegrzewać mieszkań),</li>
-          <li>sadzić drzewa i dbać o zieleń – rośliny zatrzymują pyły i pobierają dwutlenek węgla.</li>
-        </ul>
-      `,
-      flashcards: [
-        ['Powietrze to…', 'mieszanina gazów (głównie azotu i tlenu)'],
-        ['Najwięcej w powietrzu jest…', 'azotu – ok. 78 części na 100'],
-        ['Ile tlenu jest w powietrzu?', 'ok. 21 części na 100'],
-        ['Tlen a palenie', 'Podtrzymuje palenie – tląca się drzazga się zapala'],
-        ['Dwutlenek węgla a palenie', 'Nie podtrzymuje palenia – płomień gaśnie'],
-        ['Jak wykryć dwutlenek węgla?', 'Woda wapienna mętnieje'],
-        ['Bąbelki w wodzie gazowanej', 'dwutlenek węgla rozpuszczony w wodzie'],
-        ['Smog', 'Zanieczyszczone powietrze (dym + mgła) zalegające nad miejscowością'],
-        ['Kiedy łatwo o smog?', 'Dużo dymu i spalin, brak wiatru, zwykle zimą'],
-        ['Jak ograniczyć zanieczyszczenie powietrza?', 'Nie palić śmieci, wybierać rower i komunikację miejską, oszczędzać energię, sadzić drzewa'],
-      ],
-      questions: [
-        { id: 'dauwli', q: 'Którego gazu jest w powietrzu najwięcej?', options: ['azotu', 'tlenu', 'dwutlenku węgla', 'pary wodnej'], answer: 0, explain: 'Azot to ok. 78 części na 100 części powietrza, tlen – ok. 21.' },
-        { id: '20pzz6', q: 'Ile mniej więcej tlenu jest w powietrzu?', options: ['ok. 21 części na 100', 'ok. 78 części na 100', 'ok. 50 części na 100', 'ok. 1 części na 100'], answer: 0, explain: 'Tlen stanowi ok. 21 części na 100 części powietrza. 78 części to azot.' },
-        { id: 'jvjvjq', q: 'Do słoika z tlenem włożono tlącą się drzazgę. Co się stanie?', options: ['drzazga zapali się płomieniem', 'drzazga zgaśnie', 'nic się nie zmieni', 'słoik napełni się wodą'], answer: 0, explain: 'Tlen podtrzymuje palenie – tląca się drzazga w czystym tlenie rozbłyska płomieniem.' },
-        { id: 'x97ugp', q: 'Który gaz gasi płomień i jest używany w niektórych gaśnicach?', options: ['dwutlenek węgla', 'tlen', 'para wodna'], answer: 0, explain: 'Dwutlenek węgla nie podtrzymuje palenia – płomień w nim gaśnie.' },
-        { id: 'moq9fk', q: 'Jak można wykryć dwutlenek węgla?', options: ['woda wapienna mętnieje', 'gaz ma zapach zgniłych jaj', 'gaz ma niebieski kolor', 'gaz świeci w ciemności'], answer: 0, explain: 'Dwutlenek węgla jest bezbarwny i bez zapachu. Rozpoznajemy go po tym, że woda wapienna mętnieje.' },
-        { id: '6lp5vc', q: 'Co to są bąbelki w wodzie gazowanej?', options: ['dwutlenek węgla', 'tlen', 'azot', 'para wodna'], answer: 0, explain: 'Do wody gazowanej dodaje się dwutlenek węgla – rozpuszcza się w wodzie, a po otwarciu butelki uwalnia się w postaci bąbelków.' },
-        { id: 'dnohax', q: 'Jaki gaz pobierają rośliny z powietrza do fotosyntezy?', options: ['dwutlenek węgla', 'tlen', 'azot', 'argon'], answer: 0, explain: 'Rośliny pobierają dwutlenek węgla, a podczas fotosyntezy wydzielają tlen.' },
-        { id: 's377jb', q: 'Prawda czy fałsz?\nTlen ma niebieską barwę i ostry zapach.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Tlen jest bezbarwny i nie ma zapachu – tak jak całe czyste powietrze.' },
-        { id: 'lpe9q0', q: 'Prawda czy fałsz?\nPowietrze zajmuje miejsce i ma masę.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '„Pusta” butelka jest pełna powietrza, a napompowana piłka waży trochę więcej niż pusta.' },
-        { id: '1vzoop', q: 'Dlaczego dwutlenek węgla zbiera się przy ziemi, np. na dnie piwnicy?', options: ['bo jest cięższy od powietrza', 'bo jest lżejszy od powietrza', 'bo jest ciekły', 'bo przyciąga go glina'], answer: 0, explain: 'Dwutlenek węgla jest cięższy od powietrza, więc opada w dół.' },
-        { id: 'u1k2gb', q: 'Słowo „smog” powstało z połączenia angielskich słów oznaczających…', options: ['dym i mgłę', 'deszcz i śnieg', 'wiatr i burzę', 'słońce i chmury'], answer: 0, explain: 'Smoke – dym, fog – mgła. Smog to zanieczyszczone powietrze zalegające nad miejscowością.' },
-        { id: 'o22awm', q: 'Kiedy najłatwiej o smog?', options: ['zimą, przy bezwietrznej pogodzie, gdy pracuje dużo pieców', 'latem, podczas silnego wiatru', 'podczas ulewnego deszczu', 'gdy wieje silny wiatr od morza'], answer: 0, explain: 'Zimą do powietrza trafia dużo dymu z pieców, a gdy nie ma wiatru, zanieczyszczenia nie są rozwiewane.' },
-        { id: '9yfj16', q: 'Co NIE powoduje zanieczyszczenia powietrza?', options: ['jazda na rowerze', 'palenie śmieci w piecu', 'spaliny z samochodów', 'dym z kominów fabryk'], answer: 0, explain: 'Rower nie wytwarza spalin. Palenie śmieci, spaliny i dymy zanieczyszczają powietrze.' },
-        { id: 'rx7tko', q: 'Jakie mogą być skutki oddychania zanieczyszczonym powietrzem?', options: ['kaszel i trudności z oddychaniem', 'lepszy wzrok', 'szybszy wzrost włosów', 'nie ma żadnych skutków'], answer: 0, explain: 'Pyły i szkodliwe gazy podrażniają drogi oddechowe. Po latach mogą prowadzić do chorób płuc i serca.' },
-        { id: '4zameo', q: 'W aplikacji sprawdziłeś, że jakość powietrza jest dziś bardzo zła. Co warto zrobić?', options: ['ograniczyć wysiłek na dworze', 'pobiegać dłużej niż zwykle', 'otworzyć okna na cały dzień', 'rozpalić ognisko'], answer: 0, explain: 'Podczas wysiłku oddychamy szybciej i wciągamy więcej zanieczyszczeń. Lepiej przenieść ruch do domu lub sali.' },
-        { id: 'urkwez', q: 'Jak spalanie węgla, ropy i gazu wpływa na klimat?', options: ['dodaje do powietrza dwutlenek węgla, przez co Ziemia mocniej się ogrzewa', 'zwiększa ilość tlenu w powietrzu', 'ochładza Ziemię', 'nie ma żadnego wpływu'], answer: 0, explain: 'Przy spalaniu powstaje dwutlenek węgla. Im więcej go w powietrzu, tym mocniej ogrzewa się Ziemia – to jedna z przyczyn zmiany klimatu.' },
-        { id: 'i0i6ed', q: 'Które działanie pomaga dbać o czyste powietrze?', options: ['sadzenie drzew', 'palenie liści i śmieci w ogródku', 'jeżdżenie samochodem na krótkie odległości', 'zostawianie włączonego światła'], answer: 0, explain: 'Rośliny zatrzymują pyły i pobierają dwutlenek węgla. Pozostałe działania zanieczyszczają powietrze albo marnują energię.' },
-      ],
-    },
-
-    // ------------------------------------------------------------------
-    {
       id: 'pogoda',
       name: 'Pogoda i jej składniki',
+      chapter: 'rozdział IV „Obserwuję pogodę”',
       basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 5 wym. 10 (pomiar składników pogody, przyrządy i jednostki), wym. 11 (odczytywanie danych z mapy pogody), wym. 13 (przewidywanie burzy, zasady bezpieczeństwa). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Co to jest pogoda?</h3>
@@ -952,8 +655,232 @@ window.SUBJECTS.push({
 
     // ------------------------------------------------------------------
     {
+      id: 'rosliny',
+      name: 'Przyroda ożywiona i nieożywiona. Rośliny',
+      chapter: 'rozdział V „Jak działają organizmy?” (rośliny w okolicy – rozdział II)',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 1 (składniki przyrody ożywionej i nieożywionej, elementy antropogeniczne), wym. 2 (rośliny zarodnikowe i nasienne), wym. 12 (tylko: do czego rośliny wykorzystują światło – fotosynteza, w uproszczeniu); dz. 4 wym. 1 (tylko cechy organizmu żywego, organizmy samożywne i cudzożywne), wym. 5 (budowa zewnętrzna rośliny). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Co nas otacza?</h3>
+        <table>
+          <tr><th>Składniki nieożywione</th><th>Składniki ożywione</th><th>Elementy stworzone przez człowieka</th></tr>
+          <tr><td>woda, powietrze, skały, gleba, światło słoneczne</td><td>rośliny, zwierzęta, grzyby, ludzie</td><td>domy, drogi, mosty, ławki, latarnie</td></tr>
+        </table>
+        <p>Elementy stworzone przez człowieka nazywamy <b>antropogenicznymi</b> (od greckiego „anthropos” – człowiek).</p>
+        <p>Wszystkie składniki są ze sobą powiązane. Roślina potrzebuje światła, wody, powietrza i gleby. Zwierzęta potrzebują powietrza, wody i pokarmu, np. roślin.</p>
+        <h3>Cechy organizmów żywych</h3>
+        <p>Każdy organizm żywy (roślina, zwierzę, grzyb, człowiek):</p>
+        <ul>
+          <li><b>oddycha</b> – także rośliny,</li>
+          <li><b>odżywia się</b>,</li>
+          <li><b>rośnie i rozwija się</b>,</li>
+          <li><b>rozmnaża się</b> – wydaje potomstwo,</li>
+          <li><b>reaguje</b> na to, co się dzieje wokół (np. roślina na parapecie wygina się w stronę okna),</li>
+          <li><b>wydala</b> – pozbywa się zbędnych substancji,</li>
+          <li><b>porusza się</b> – rośliny też, ale powoli (np. kwiaty otwierają się i zamykają).</li>
+        </ul>
+        <h3>Samożywne i cudzożywne</h3>
+        <ul>
+          <li><b>Organizmy samożywne</b> same wytwarzają pokarm. To rośliny.</li>
+          <li><b>Organizmy cudzożywne</b> zjadają inne organizmy albo ich szczątki. To zwierzęta, grzyby i człowiek.</li>
+        </ul>
+        <p><b>Fotosynteza</b> – tak roślina wytwarza pokarm. W zielonych liściach, z <b>wody</b> i <b>dwutlenku węgla</b> (gazu z powietrza), z pomocą <b>światła</b> powstaje pokarm (cukier). Przy okazji roślina wydziela <b>tlen</b>, którym oddychamy.</p>
+        <div class="tip">💡 Bez światła roślina nie wytworzy pokarmu. Dzięki fotosyntezie jest pokarm i tlen dla zwierząt i ludzi.</div>
+        <h3>Budowa rośliny</h3>
+        <table>
+          <tr><th>Część</th><th>Funkcja</th></tr>
+          <tr><td>korzeń</td><td>utrzymuje roślinę w ziemi, pobiera wodę i sole mineralne</td></tr>
+          <tr><td>łodyga</td><td>podtrzymuje liście i kwiaty, przewodzi wodę i pokarm</td></tr>
+          <tr><td>liście</td><td>wytwarzają pokarm (fotosynteza)</td></tr>
+          <tr><td>kwiat</td><td>służy do rozmnażania</td></tr>
+          <tr><td>owoc</td><td>chroni nasiona i pomaga je rozsiewać</td></tr>
+          <tr><td>nasiono</td><td>wyrasta z niego nowa roślina</td></tr>
+        </table>
+        <p><b>Części kwiatu:</b></p>
+        <ul>
+          <li><b>okwiat</b> – płatki i działki; kolorowe płatki wabią owady,</li>
+          <li><b>pręciki</b> – wytwarzają pyłek,</li>
+          <li><b>słupek</b> – w nim powstają nasiona; z jego dolnej części powstaje owoc.</li>
+        </ul>
+        <h3>Rośliny zarodnikowe i nasienne</h3>
+        <ul>
+          <li><b>Zarodnikowe</b> – rozmnażają się przez <b>zarodniki</b> (bardzo drobne, jak pył). Nie mają kwiatów ani nasion. Przykłady: <b>mchy, paprocie</b>.</li>
+          <li><b>Nasienne</b> – wytwarzają <b>nasiona</b>. Przykłady: dąb, sosna, mniszek, fasola.</li>
+        </ul>
+        <div class="tip">💡 Paproć ma zarodniki w brązowych kropkach na spodniej stronie liści.</div>
+      `,
+      flashcards: [
+        ['Składniki nieożywione przyrody', 'woda, powietrze, skały, gleba, światło słoneczne'],
+        ['Element antropogeniczny', 'Stworzony przez człowieka, np. droga, most, dom'],
+        ['Cechy organizmu żywego', 'oddycha, odżywia się, rośnie, rozmnaża się, reaguje, wydala, porusza się'],
+        ['Organizm samożywny', 'Sam wytwarza pokarm, np. roślina'],
+        ['Organizm cudzożywny', 'Zjada inne organizmy lub ich szczątki, np. zwierzę, grzyb'],
+        ['Fotosynteza', 'Wytwarzanie pokarmu przez roślinę z wody i dwutlenku węgla przy użyciu światła; powstaje też tlen'],
+        ['Korzeń', 'Utrzymuje roślinę w ziemi i pobiera wodę'],
+        ['Pręciki', 'Wytwarzają pyłek'],
+        ['Słupek', 'Powstają w nim nasiona; z jego dolnej części powstaje owoc'],
+        ['Rośliny zarodnikowe', 'Rozmnażają się przez zarodniki, np. mchy i paprocie'],
+      ],
+      questions: [
+        { id: 'r1q7wm', q: 'Który składnik przyrody jest nieożywiony?', options: ['dąb', 'jeż', 'skała', 'mech'], answer: 2, explain: 'Skała nie oddycha, nie rośnie i nie rozmnaża się – to składnik nieożywiony.' },
+        { id: 'gm4im8', q: 'Który element krajobrazu został stworzony przez człowieka?', options: ['rzeka', 'most', 'chmura', 'paproć'], answer: 1, explain: 'Most zbudowali ludzie – to element antropogeniczny.' },
+        { id: '377q50', q: 'Prawda czy fałsz?\nRośliny nie oddychają – oddychają tylko zwierzęta i ludzie.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Oddychanie to cecha każdego organizmu żywego, także rośliny.' },
+        { id: 'w4sqnf', q: 'Które organizmy są samożywne?', options: ['zwierzęta', 'grzyby', 'rośliny', 'ludzie'], answer: 2, explain: 'Rośliny same wytwarzają pokarm (fotosynteza). Zwierzęta, grzyby i ludzie są cudzożywni.' },
+        { id: 'gs0lno', q: 'Kot jest organizmem cudzożywnym, ponieważ…', options: ['zjada inne organizmy', 'sam wytwarza pokarm dzięki światłu', 'nie oddycha', 'rośnie'], answer: 0, explain: 'Organizm cudzożywny zdobywa pokarm, zjadając inne organizmy (albo ich szczątki).' },
+        { id: '4hs0dp', q: 'Bez czego roślina nie wytworzy pokarmu w procesie fotosyntezy?', options: ['bez kwiatów', 'bez światła', 'bez owoców', 'bez wiatru'], answer: 1, explain: 'Do fotosyntezy potrzebne jest światło (oraz woda i dwutlenek węgla).' },
+        { id: '14xi07', q: 'Dlaczego fotosynteza jest ważna także dla zwierząt i ludzi?', options: ['bo powstaje pokarm i tlen', 'bo powstają chmury', 'bo rośliny przestają oddychać', 'bo ogrzewa powietrze'], answer: 0, explain: 'Rośliny są pokarmem dla zwierząt, a tlen wydzielany podczas fotosyntezy jest potrzebny do oddychania.' },
+        { id: 'o16ut9', q: 'Która część rośliny pobiera wodę z gleby?', options: ['liść', 'kwiat', 'korzeń', 'owoc'], answer: 2, explain: 'Korzeń utrzymuje roślinę w ziemi i pobiera z niej wodę.' },
+        { id: 'aqdmna', q: 'W której części rośliny zachodzi przede wszystkim fotosynteza?', options: ['w korzeniach', 'w zielonych liściach', 'w nasionach'], answer: 1, explain: 'Fotosynteza zachodzi w zielonych częściach rośliny, przede wszystkim w liściach.' },
+        { id: 'a3cdf8', q: 'Która część rośliny podtrzymuje liście i kwiaty?', options: ['łodyga', 'korzeń', 'pręcik', 'nasiono'], answer: 0, explain: 'Łodyga podtrzymuje liście i kwiaty oraz przewodzi wodę.' },
+        {
+          id: 'yo1bb9',
+          q: 'Jak nazywa się część kwiatu oznaczona znakiem zapytania?',
+          svg: `<svg viewBox="0 0 300 240" role="img" aria-label="Przekrój kwiatu. Znak zapytania wskazuje część pośrodku kwiatu, z grubszą dolną częścią i długą szyjką">
+      <line x1="150" y1="150" x2="150" y2="232" class="s3" stroke-width="6"/>
+      <ellipse cx="90" cy="112" rx="58" ry="20" transform="rotate(-28 90 112)" class="f2 s2 sw"/>
+      <ellipse cx="210" cy="112" rx="58" ry="20" transform="rotate(28 210 112)" class="f2 s2 sw"/>
+      <ellipse cx="150" cy="146" rx="34" ry="10" class="f3 s3 sw"/>
+      <line x1="134" y1="140" x2="114" y2="78" class="ln"/>
+      <line x1="166" y1="140" x2="186" y2="78" class="ln"/>
+      <ellipse cx="113" cy="72" rx="7" ry="10" class="f4 s4 sw"/>
+      <ellipse cx="187" cy="72" rx="7" ry="10" class="f4 s4 sw"/>
+      <ellipse cx="150" cy="122" rx="14" ry="18" class="f5 s5 sw"/>
+      <line x1="150" y1="104" x2="150" y2="56" class="s5" stroke-width="5"/>
+      <ellipse cx="150" cy="52" rx="11" ry="6" class="f5 s5 sw"/>
+      <line x1="236" y1="36" x2="164" y2="60" class="ln"/>
+      <text x="250" y="42" class="tx-b t2" text-anchor="middle">?</text>
+    </svg>`,
+          options: ['pręcik', 'słupek', 'płatek', 'łodyga'],
+          answer: 1,
+          explain: 'Pośrodku kwiatu jest słupek: na dole grubsza część, w której powstają nasiona, wyżej długa szyjka. Pręciki to cienkie nitki z woreczkami pyłku na końcu.',
+        },
+        { id: 'niqetj', q: 'Co wytwarzają pręciki?', options: ['nasiona', 'pyłek', 'zarodniki', 'korzenie'], answer: 1, explain: 'Pręciki wytwarzają pyłek. Nasiona powstają w słupku.' },
+        { id: 'dq83dh', q: 'Co powstaje z dolnej części słupka i chroni nasiona?', options: ['owoc', 'liść', 'korzeń', 'płatek'], answer: 0, explain: 'Owoc powstaje z dolnej części słupka. Chroni nasiona i pomaga je rozsiewać.' },
+        { id: 'jwwvqx', q: 'Do czego służą kolorowe płatki kwiatu?', options: ['wabią owady', 'pobierają wodę z gleby', 'wytwarzają pyłek', 'utrzymują roślinę w ziemi'], answer: 0, explain: 'Kolorowe płatki (część okwiatu) przyciągają owady do kwiatu.' },
+        { id: '0sz8wb', q: 'Która roślina jest zarodnikowa?', options: ['dąb', 'sosna', 'paproć', 'mniszek'], answer: 2, explain: 'Paprocie (i mchy) rozmnażają się przez zarodniki. Dąb, sosna i mniszek wytwarzają nasiona.' },
+        { id: 'f6epfn', q: 'Prawda czy fałsz?\nMchy wytwarzają nasiona.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Mchy są roślinami zarodnikowymi – rozmnażają się przez zarodniki, nie mają nasion.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
+    {
+      id: 'zwierzeta',
+      name: 'Zwierzęta i grzyby w naszej okolicy',
+      chapter: 'rozdział V „Jak działają organizmy?” (zwierzęta w okolicy – rozdział II)',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 3 (zwierzęta lądowe okolicy, ślady bytowania, kręgowce i bezkręgowce), wym. 4 (grzyby kapeluszowe, zbieranie grzybów, grzybnia, znaczenie grzybów), wym. 5 (trujące rośliny i grzyby, jadowite zwierzęta w Polsce); dz. 4 wym. 9 (zimowanie zwierząt, odpowiedzialne dokarmianie). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Kręgowce i bezkręgowce</h3>
+        <table>
+          <tr><th>Kręgowce</th><th>Bezkręgowce</th></tr>
+          <tr><td>mają <b>kręgosłup</b> (i szkielet z kości w środku ciała)</td><td><b>nie mają</b> kręgosłupa</td></tr>
+          <tr><td>jeż, sarna, kot, wróbel, sikora, żaba, jaszczurka, ryby</td><td>biedronka, mrówka, pszczoła, pająk, ślimak, dżdżownica</td></tr>
+        </table>
+        <h3>Ślady zwierząt</h3>
+        <p>Wiele zwierząt trudno zobaczyć, ale łatwo znaleźć ich <b>ślady bytowania</b>:</p>
+        <ul>
+          <li><b>tropy</b> – odciski łap na śniegu albo w błocie,</li>
+          <li><b>nory</b> i <b>kretowiska</b> (kopczyki ziemi wypchniętej przez kreta),</li>
+          <li><b>gniazda</b> ptaków, os, mrówek (mrowisko),</li>
+          <li><b>zgryzy</b> – ślady jedzenia, np. obgryzione szyszki, nadgryzione orzechy,</li>
+          <li><b>pióra</b>, sierść, odchody.</li>
+        </ul>
+        <h3>Grzyby kapeluszowe</h3>
+        <ul>
+          <li>To, co zbieramy w lesie, to <b>owocnik</b>: <b>kapelusz</b> i <b>trzon</b>.</li>
+          <li>Pod kapeluszem są <b>blaszki</b> (np. u muchomora) albo <b>rurki</b> (np. u prawdziwka). Tam powstają zarodniki.</li>
+          <li>W ziemi rośnie <b>grzybnia</b> – plątanina cienkich nitek. To najważniejsza część grzyba. Z niej co roku wyrastają nowe owocniki.</li>
+        </ul>
+        <p>Inne grzyby nie mają kapeluszy, np. <b>pleśń</b> na zepsutym chlebie albo <b>drożdże</b> używane do pieczenia ciasta.</p>
+        <p><b>Znaczenie grzybów:</b> są cudzożywne. Rozkładają opadłe liście, martwe drewno i inne szczątki – dzięki nim powstaje żyzna gleba. Wiele grzybów współpracuje z korzeniami drzew.</p>
+        <h3>Jak zbierać grzyby</h3>
+        <ul>
+          <li>Zbieraj <b>tylko grzyby, które na pewno znasz</b> – najlepiej z dorosłym, który dobrze zna grzyby.</li>
+          <li>Grzyb ostrożnie wykręć albo wytnij nożykiem przy ziemi – nie niszcz grzybni.</li>
+          <li>Nie kop i nie niszcz grzybów, których nie zbierasz – są ważne dla lasu.</li>
+          <li>Zbieraj do koszyka, a nie do foliowej torby.</li>
+        </ul>
+        <h3>Uwaga – trujące i jadowite!</h3>
+        <ul>
+          <li><b>Muchomor sromotnikowy</b> – grzyb <b>śmiertelnie trujący</b>. Nawet jeden grzyb może zabić człowieka. Trujący jest też <b>muchomor czerwony</b> (czerwony kapelusz z białymi kropkami).</li>
+          <li><b>Konwalia</b> – roślina trująca (także jej owoce).</li>
+          <li><b>Barszcz Sosnowskiego</b> – bardzo duża roślina; jej sok na skórze w słońcu powoduje groźne oparzenia. Nie dotykaj go!</li>
+          <li><b>Żmija zygzakowata</b> – jedyny jadowity wąż w Polsce. Zwykle ma ciemny zygzak na grzbiecie. Gdy ją zobaczysz – spokojnie się oddal.</li>
+          <li><b>Osy, pszczoły i szerszenie</b> żądlą. Użądlenie jest szczególnie groźne dla osób uczulonych.</li>
+        </ul>
+        <div class="tip">💡 Trującego grzyba nie rozpoznasz po zapachu ani smaku. Nie zrywaj i nie jedz nieznanych grzybów, roślin ani owoców. Jeśli ktoś zjadł nieznanego grzyba lub roślinę – od razu powiedz dorosłemu; trzeba wezwać pomoc (112).</div>
+        <h3>Zwierzęta zimą</h3>
+        <table>
+          <tr><th>Sposób</th><th>Przykład</th></tr>
+          <tr><td><b>sen zimowy (hibernacja)</b> – zwierzę zasypia w kryjówce, jego organizm prawie się „wyłącza”</td><td>jeż, nietoperze</td></tr>
+          <tr><td><b>odlot</b> do ciepłych krajów</td><td>bocian, jaskółka</td></tr>
+          <tr><td><b>gromadzenie zapasów</b></td><td>wiewiórka (orzechy, żołędzie)</td></tr>
+        </table>
+        <p>Wiele ptaków zostaje na zimę, np. wróbel i sikora.</p>
+        <h3>Dokarmianie ptaków</h3>
+        <ul>
+          <li>Dokarmiaj zimą, gdy jest mróz albo śnieg. Jeśli zaczniesz – rób to regularnie.</li>
+          <li><b>Dobre:</b> nasiona słonecznika, ziarna zbóż, niesolona słonina, kawałki jabłek.</li>
+          <li><b>Złe:</b> chleb, jedzenie solone (np. słone orzeszki, solona słonina), przyprawione, zepsute lub spleśniałe.</li>
+          <li>Dbaj o czystość karmnika.</li>
+        </ul>
+      `,
+      flashcards: [
+        ['Kręgowce', 'Mają kręgosłup, np. jeż, wróbel, żaba'],
+        ['Bezkręgowce', 'Nie mają kręgosłupa, np. biedronka, ślimak, dżdżownica'],
+        ['Ślady bytowania zwierząt', 'tropy, nory, gniazda, zgryzy, pióra'],
+        ['Grzybnia', 'Plątanina nitek grzyba w ziemi – jego najważniejsza część'],
+        ['Owocnik grzyba kapeluszowego', 'kapelusz i trzon'],
+        ['Znaczenie grzybów w lesie', 'Rozkładają szczątki (liście, drewno) – powstaje żyzna gleba'],
+        ['Muchomor sromotnikowy', 'Grzyb śmiertelnie trujący'],
+        ['Żmija zygzakowata', 'Jedyny jadowity wąż w Polsce'],
+        ['Sen zimowy (hibernacja)', 'Zimowanie w głębokim śnie w kryjówce, np. jeż'],
+        ['Czego nie dawać ptakom zimą', 'chleba i jedzenia solonego, przyprawionego, zepsutego'],
+      ],
+      questions: [
+        { id: 'uf95r2', q: 'Które zwierzę jest kręgowcem?', options: ['biedronka', 'dżdżownica', 'jeż', 'ślimak'], answer: 2, explain: 'Jeż ma kręgosłup, więc jest kręgowcem. Biedronka, dżdżownica i ślimak to bezkręgowce.' },
+        { id: 'kj4hop', q: 'Które zwierzę jest bezkręgowcem?', options: ['wróbel', 'żaba', 'sarna', 'mrówka'], answer: 3, explain: 'Mrówka nie ma kręgosłupa – jest bezkręgowcem (owadem).' },
+        { id: 'kdbgy5', q: 'Kopczyki ziemi na trawniku (kretowiska) to przykład…', options: ['śladów bytowania zwierzęcia', 'grzybni', 'gniazd ptaków', 'skał'], answer: 0, explain: 'Kretowiska usypuje kret, kopiąc korytarze pod ziemią. To ślad jego bytowania.' },
+        { id: 'y0p6iw', q: 'Znalazłeś w lesie obgryzioną szyszkę. Jaki to ślad?', options: ['trop', 'zgryz (ślad jedzenia)', 'gniazdo', 'nora'], answer: 1, explain: 'Zgryzy to ślady jedzenia zostawione przez zwierzęta, np. obgryzione szyszki i nadgryzione orzechy.' },
+        { id: 'ves3op', q: 'Jak nazywa się część grzyba ukryta w ziemi, złożona z cienkich nitek?', options: ['kapelusz', 'trzon', 'blaszki', 'grzybnia'], answer: 3, explain: 'Grzybnia to plątanina nitek w ziemi. Z niej wyrastają owocniki (kapelusz i trzon).' },
+        {
+          id: 'cfry19',
+          q: 'Jak nazywa się część grzyba oznaczona znakiem zapytania?',
+          svg: `<svg viewBox="0 0 300 220" role="img" aria-label="Grzyb kapeluszowy nad ziemią i nitki pod ziemią. Znak zapytania wskazuje część łączącą kapelusz z ziemią">
+      <line x1="20" y1="160" x2="280" y2="160" class="ln"/>
+      <path d="M60,90 Q60,20 140,20 Q220,20 220,90 Z" class="f2 s2 sw"/>
+      <path d="M62,90 L218,90 L186,106 L94,106 Z" class="f5 s5"/>
+      <g class="ln-thin">
+        <line x1="80" y1="90" x2="100" y2="106"/><line x1="100" y1="90" x2="114" y2="106"/><line x1="120" y1="90" x2="128" y2="106"/>
+        <line x1="160" y1="90" x2="152" y2="106"/><line x1="180" y1="90" x2="166" y2="106"/><line x1="200" y1="90" x2="180" y2="106"/>
+      </g>
+      <rect x="124" y="104" width="32" height="56" rx="8" class="f4 s4 sw"/>
+      <g class="ln-thin">
+        <path d="M130,162 Q100,180 60,176"/><path d="M140,162 Q130,195 90,205"/><path d="M150,162 Q170,195 210,205"/><path d="M152,162 Q190,178 240,172"/>
+      </g>
+      <line x1="240" y1="126" x2="162" y2="132" class="ln"/>
+      <text x="252" y="132" class="tx-b t2" text-anchor="middle">?</text>
+    </svg>`,
+          options: ['trzon', 'kapelusz', 'grzybnia', 'blaszki'],
+          answer: 0,
+          explain: 'Trzon to „nóżka” grzyba – łączy kapelusz z ziemią. Kapelusz jest na górze, grzybnia w ziemi.',
+        },
+        { id: 'l9jwze', q: 'Jaką ważną rolę pełnią grzyby w lesie?', options: ['rozkładają opadłe liście i martwe drewno', 'wytwarzają pokarm dzięki światłu', 'zapylają kwiaty', 'odstraszają żmije'], answer: 0, explain: 'Grzyby rozkładają szczątki roślin i zwierząt – dzięki temu powstaje żyzna gleba.' },
+        { id: 'y0drp0', q: 'Jak prawidłowo zbierać grzyby?', options: ['zbierać tylko grzyby, które na pewno znamy', 'zbierać wszystkie, a w domu sprawdzić, które są jadalne', 'wyrywać je razem z grzybnią', 'rozkopywać ziemię w poszukiwaniu młodych grzybów'], answer: 0, explain: 'Zbieramy tylko grzyby, które na pewno znamy. Ostrożnie wykręcamy je albo wycinamy, nie niszcząc grzybni.' },
+        { id: 'ffgox1', q: 'Prawda czy fałsz?\nGrzyb trujący zawsze można rozpoznać po brzydkim zapachu albo gorzkim smaku.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Trujący grzyb może mieć przyjemny zapach i smak. Dlatego nigdy nie zbieramy i nie jemy nieznanych grzybów.' },
+        { id: 'llu62o', q: 'Który grzyb jest śmiertelnie trujący?', options: ['pieczarka', 'muchomor sromotnikowy', 'prawdziwek'], answer: 1, explain: 'Muchomor sromotnikowy jest śmiertelnie trujący – nawet jeden grzyb może zabić człowieka.' },
+        { id: 'lpivcf', q: 'Jedyny jadowity wąż żyjący w Polsce to…', options: ['zaskroniec', 'żmija zygzakowata', 'padalec'], answer: 1, explain: 'Żmija zygzakowata to jedyny jadowity wąż w Polsce. Zaskroniec nie jest jadowity, a padalec to beznoga jaszczurka.' },
+        { id: 'qbf13i', q: 'Dlaczego nie wolno dotykać barszczu Sosnowskiego?', options: ['jego sok na skórze w słońcu powoduje oparzenia', 'ma bardzo ostre kolce', 'gryzie', 'jest bardzo gorący'], answer: 0, explain: 'Sok barszczu Sosnowskiego na skórze wystawionej na słońce powoduje groźne oparzenia.' },
+        { id: 'w5dhn8', q: 'Prawda czy fałsz?\nKonwalia jest rośliną trującą.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Konwalia jest trująca, także jej czerwone owoce. Nie zrywaj i nie jedz nieznanych roślin.' },
+        { id: 'dxguf7', q: 'Jak jeż spędza zimę?', options: ['odlatuje do ciepłych krajów', 'zapada w sen zimowy', 'gromadzi zapasy w dziupli', 'zmienia kolor na biały'], answer: 1, explain: 'Jeż zimuje w kryjówce, np. w stercie liści, i zapada w sen zimowy (hibernację).' },
+        { id: 'as6gii', q: 'Które zwierzę gromadzi zapasy na zimę?', options: ['bocian', 'jeż', 'wiewiórka'], answer: 2, explain: 'Wiewiórka chowa na zimę orzechy i żołędzie. Bocian odlatuje, a jeż zapada w sen zimowy.' },
+        { id: 'il7g7b', q: 'Co NIE nadaje się do karmnika dla ptaków?', options: ['nasiona słonecznika', 'chleb', 'niesolona słonina', 'ziarna zbóż'], answer: 1, explain: 'Chleb szkodzi ptakom. Nie dajemy też jedzenia solonego, przyprawionego ani zepsutego.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
+    {
       id: 'las-laka',
       name: 'Las i łąka',
+      chapter: 'rozdział VII „Życie na lądzie”',
       basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 4 „Organizmy i ekosystemy”, wym. 12 (ekosystemy w otoczeniu – naturalne i sztuczne, miejsce człowieka w ekosystemie, organizmy inwazyjne), wym. 13 (ekosystem łąki – gatunki, znaczenie łąk, wpływ człowieka, kwiaty traw a kwiaty z okwiatem – moduł klimatyczny), wym. 14 (las – gatunki, typ lasu, funkcje lasu, wpływ człowieka – moduł klimatyczny). Fakty sprawdzone 2.11.2026: warstwy lasu, typy lasu, gatunki łąki i lasu – zpe.gov.pl („Jakie bogactwa kryją lasy?”, „W lesie”, „Na łące i polu uprawnym”); funkcje lasu – Lasy Państwowe („Lasy Państwowe w liczbach”); gatunki inwazyjne (barszcz Sosnowskiego, szop pracz – na liście inwazyjnych gatunków obcych stwarzających zagrożenie dla Unii) – GDOŚ i RDOŚ (gov.pl); zakaz wypalania łąk – ustawa o ochronie przyrody, art. 124 (tekst jednolity Dz.U. 2026 poz. 1315). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Ekosystem</h3>
@@ -1049,113 +976,198 @@ window.SUBJECTS.push({
 
     // ------------------------------------------------------------------
     {
-      id: 'teren',
-      name: 'Niziny, wyżyny i góry',
-      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 5 „Planeta Ziemia”, wym. 17 (główne formy ukształtowania terenu, przykłady nizin, wyżyn i gór w Polsce), wym. 18 (wysokość bezwzględna i względna na mapie; skala – w dziale „Kierunki, kompas, plan i mapa”). Progi wysokości nizin, wyżyn i gór, podział gór na niskie, średnie i wysokie, depresja (Żuławy Wiślane, ok. 1,8 m p.p.m. koło Raczek Elbląskich), Rysy 2499 m n.p.m., poziomice i mapa hipsometryczna – według ZPE („Jaki kształt może mieć powierzchnia Ziemi?”, zpe.gov.pl), sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      id: 'rzeka-jezioro',
+      name: 'Rzeka i jezioro',
+      chapter: 'rozdział VIII „Życie w wodzie”',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 4 „Organizmy i ekosystemy”, wym. 6 (wody płynące i stojące, cechy środowiska wodnego, elementy systemu rzecznego – rzeka główna, dopływ, źródło, ujście), wym. 17 (funkcja rzeki i jej doliny, składniki krajobrazu stworzone przez rzekę); dz. 5 „Planeta Ziemia”, wym. 23 (geneza jezior – tylko jeziora polodowcowe i zbiorniki zaporowe; rola rzek i jezior w życiu ludzi). Definicje (źródło, ujście, dopływ, dorzecze, system rzeczny, rzeka główna, brzeg lewy i prawy, bieg górny, środkowy i dolny, zakole, starorzecze), źródło Wisły na Baraniej Górze, ujście Wisły do Zatoki Gdańskiej i Odry do Zalewu Szczecińskiego, dopływy Wisły i Odry – według ZPE („Nad brzegiem rzeki”, „System rzeczny”, zpe.gov.pl), sprawdzone 2.11.2026. Jeziora: większość jezior w Polsce ma pochodzenie polodowcowe, największe Śniardwy, najgłębsze Hańcza – materiały ZPE i PIG, sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
-        <h3>Formy terenu</h3>
-        <p>Powierzchnia Ziemi nie jest płaska jak stół. Jej kształt to <b>ukształtowanie terenu</b> (inaczej rzeźba terenu).</p>
+        <h3>Wody płynące i stojące</h3>
         <table>
-          <tr><th>Formy wypukłe (wznoszą się)</th><th>Formy wklęsłe (obniżenia)</th></tr>
-          <tr><td>pagórek, wzgórze, góra</td><td><b>dolina</b> – wydłużone obniżenie, zwykle płynie nim rzeka<br><b>kotlina</b> – obniżenie otoczone ze wszystkich stron wyższym terenem</td></tr>
+          <tr><th>Wody płynące</th><th>Wody stojące</th></tr>
+          <tr><td>woda płynie w jednym kierunku – z wyżej położonych miejsc w niższe</td><td>woda się nie przemieszcza z miejsca na miejsce, wypełnia zagłębienie terenu</td></tr>
+          <tr><td>strumień, potok, <b>rzeka</b>; <b>kanał</b> – koryto wykopane przez ludzi</td><td><b>jezioro</b>, <b>staw</b>, zbiornik zaporowy</td></tr>
         </table>
-        <p>Każde wzniesienie ma <b>szczyt</b> (najwyższy punkt), <b>stoki</b> (zbocza) i <b>podnóże</b> (miejsce, gdzie stok przechodzi w płaski teren).</p>
-        <h3>Wysokość bezwzględna i względna</h3>
+        <h3>Jak zbudowana jest rzeka?</h3>
         <ul>
-          <li><b>Wysokość bezwzględna</b> – liczona od <b>poziomu morza</b>. Zapisujemy ją w <b>m n.p.m.</b> (metrach nad poziomem morza), np. Rysy – 2499 m n.p.m.</li>
-          <li><b>Wysokość względna</b> – liczona od <b>wybranego miejsca</b>, np. od podnóża do szczytu. Obliczasz ją, odejmując wysokości bezwzględne.</li>
+          <li><b>Źródło</b> – miejsce, w którym rzeka bierze początek. Najwięcej źródeł jest w górach i na wyżynach. Wisła zaczyna się na stoku <b>Baraniej Góry</b> w Beskidzie Śląskim.</li>
+          <li><b>Ujście</b> – miejsce, w którym rzeka wpada do innej rzeki, jeziora albo morza. Wisła uchodzi do Zatoki Gdańskiej (Morze Bałtyckie).</li>
+          <li><b>Koryto</b> – zagłębienie, w którym płynie rzeka. <b>Nurt</b> – miejsce w korycie, gdzie woda płynie najszybciej.</li>
+          <li><b>Dopływ</b> – rzeka, która wpada do większej rzeki.</li>
+          <li><b>Rzeka główna</b> – wpada prosto do morza (albo jeziora) i nie jest niczyim dopływem, np. Wisła, Odra.</li>
+          <li><b>System rzeczny</b> – rzeka główna razem ze wszystkimi dopływami. Na mapie wygląda jak <b>drzewo</b>: rzeka główna to pień, dopływy – gałęzie.</li>
+          <li><b>Dorzecze</b> – cały obszar, z którego woda spływa do danej rzeki i jej dopływów.</li>
         </ul>
-        <p>Przykład: szczyt ma 1200 m n.p.m., a schronisko pod nim – 900 m n.p.m. Szczyt jest wyżej od schroniska o 1200 − 900 = <b>300 m</b>. To wysokość względna.</p>
-        <div class="tip">💡 Wysokość bezwzględna – „od morza”, ma dopisek n.p.m. Wysokość względna – „od czegoś innego”, liczysz ją odejmowaniem.</div>
-        <h3>Niziny, wyżyny, góry</h3>
+        <h3>Dopływ lewy czy prawy?</h3>
+        <p>Stań <b>tyłem do źródła</b>, a <b>twarzą do ujścia</b> – czyli patrz tam, dokąd płynie woda. To, co masz po lewej ręce, to <b>lewy brzeg</b> i <b>lewe dopływy</b>, a po prawej – <b>prawy brzeg</b> i <b>prawe dopływy</b>.</p>
         <table>
-          <tr><th>Forma</th><th>Wysokość bezwzględna</th><th>Różnice wysokości</th><th>Przykłady w Polsce</th></tr>
-          <tr><td><b>nizina</b></td><td>od 0 do 300 m n.p.m.</td><td>małe – teren płaski albo lekko falisty</td><td>wybrzeże Bałtyku, Nizina Mazowiecka</td></tr>
-          <tr><td><b>wyżyna</b></td><td>powyżej 300 m n.p.m.</td><td>nie większe niż 300 m</td><td>Wyżyna Krakowsko-Częstochowska, Wyżyna Lubelska</td></tr>
-          <tr><td><b>góry</b></td><td>powyżej 300 m n.p.m.</td><td>większe niż 300 m</td><td>Tatry, Sudety, Beskidy, Bieszczady</td></tr>
+          <tr><th>Rzeka</th><th>Prawe dopływy (przykłady)</th><th>Lewe dopływy (przykłady)</th></tr>
+          <tr><td>Wisła</td><td>Dunajec, San, Narew</td><td>Pilica, Bzura</td></tr>
+          <tr><td>Odra</td><td>Warta</td><td>Nysa Łużycka, Bóbr</td></tr>
         </table>
-        <p>Wyżyna i góry są tak samo wysoko nad morzem. Różnią się tym, że w górach różnice między szczytami a dolinami są <b>duże</b>, a stoki <b>strome</b>.</p>
+        <div class="tip">💡 Na mapie lewy brzeg <b>nie zawsze</b> jest po lewej stronie kartki. Liczy się kierunek, w którym płynie woda.</div>
+        <h3>Bieg rzeki i dolina</h3>
+        <table>
+          <tr><th>Bieg</th><th>Jak płynie woda</th><th>Co tam widać</th></tr>
+          <tr><td><b>górny</b></td><td>szybko</td><td>wąska, stroma dolina, wodospady, mało roślin</td></tr>
+          <tr><td><b>środkowy</b></td><td>wolniej</td><td>rzeka podmywa brzegi i poszerza dolinę, powstają <b>zakola</b> i <b>starorzecza</b></td></tr>
+          <tr><td><b>dolny</b></td><td>najwolniej</td><td>rzeka osadza piasek i muł, tworzą się piaszczyste łachy</td></tr>
+        </table>
         <ul>
-          <li><b>Góry niskie</b>, np. Góry Świętokrzyskie – łagodne stoki, zaokrąglone szczyty.</li>
-          <li><b>Góry średnie</b>, np. Sudety, Beskidy, Bieszczady – strome stoki, łagodne szczyty.</li>
-          <li><b>Góry wysokie</b> – w Polsce tylko <b>Tatry</b>: ostre szczyty, bardzo strome stoki. Tu jest najwyższy szczyt Polski – <b>Rysy (2499 m n.p.m.)</b>.</li>
+          <li><b>Dolina rzeczna</b> – obniżenie terenu, które wyżłobiła rzeka.</li>
+          <li><b>Zakole</b> – łuk albo pętla koryta. Na zewnętrznym brzegu woda płynie szybciej i podmywa go, na wewnętrznym – osadza piasek.</li>
+          <li><b>Starorzecze</b> – jezioro w dolinie rzeki: kawałek dawnego koryta (np. zakola), odcięty od rzeki.</li>
+          <li><b>Powódź</b> – rzeka wylewa z koryta i zalewa okoliczne tereny. Płaskie dno doliny często zalewa woda – dlatego niebezpiecznie jest budować tam domy.</li>
         </ul>
-        <p><b>Depresja</b> to ląd położony <b>poniżej poziomu morza</b>. W Polsce jest na <b>Żuławach Wiślanych</b>, niedaleko ujścia Wisły. Najniższy punkt Polski leży ok. 1,8 m p.p.m. (pod poziomem morza).</p>
-        <h3>Wysokości na mapie</h3>
+        <h3>Życie w wodzie i nad wodą</h3>
         <ul>
-          <li><b>Poziomica</b> – linia na mapie, która łączy punkty o <b>tej samej wysokości bezwzględnej</b>.</li>
-          <li>Poziomice <b>gęsto</b> obok siebie – stok <b>stromy</b>. Poziomice <b>rzadko</b> – stok <b>łagodny</b>.</li>
-          <li><b>Mapa hipsometryczna</b> (barwna mapa wysokości) – obszary między poziomicami są pomalowane kolorami: zielony – najniżej (niziny), żółty i pomarańczowy – wyżej, brązowy albo czerwony – najwyżej (góry). Niebieski to wody.</li>
-          <li><b>Punkt wysokościowy</b> – kropka albo trójkąt z liczbą, np. ▲ 1603 – wysokość tego miejsca w m n.p.m.</li>
+          <li>Im głębiej, tym <b>mniej światła</b>.</li>
+          <li>Temperatura wody zmienia się <b>wolniej</b> niż temperatura powietrza.</li>
+          <li>Organizmy wodne oddychają <b>tlenem rozpuszczonym w wodzie</b>, np. ryby – za pomocą skrzeli.</li>
+          <li>Rzeka i jej dolina to dom ryb, płazów, ptaków (np. czapli) i ssaków (np. bobra). Dolina rzeki to też „korytarz”, którym wędrują zwierzęta.</li>
         </ul>
-        <div class="tip">💡 Zawsze patrz na <b>legendę</b> – podaje, jaką wysokość oznacza każdy kolor.</div>
+        <h3>Jeziora</h3>
+        <ul>
+          <li><b>Jezioro</b> – naturalne zagłębienie terenu wypełnione wodą stojącą.</li>
+          <li>Większość jezior w Polsce to <b>jeziora polodowcowe</b> – powstały w zagłębieniach po lądolodzie, który dawno temu przykrywał północ Polski. Dlatego najwięcej jezior jest na <b>pojezierzach</b> na północy kraju.</li>
+          <li>Największe jezioro Polski – <b>Śniardwy</b>. Najgłębsze – <b>Hańcza</b>.</li>
+          <li><b>Zbiornik zaporowy</b> (sztuczne jezioro) – powstaje, gdy ludzie zbudują na rzece <b>zaporę</b>, np. Jezioro Solińskie na Sanie.</li>
+          <li><b>Staw</b> – zwykle niewielki i płytki zbiornik zrobiony przez człowieka, np. do hodowli ryb. (Uwaga: w górach stawami nazywa się też naturalne jeziora, np. Czarny Staw).</li>
+        </ul>
+        <p><b>Po co ludziom rzeki i jeziora?</b> Dają wodę (do picia, dla rolnictwa i fabryk), ryby, prąd z elektrowni wodnych, służą do transportu i wypoczynku.</p>
       `,
       flashcards: [
-        ['Ukształtowanie terenu', 'Kształt powierzchni Ziemi: wzniesienia, obniżenia i równiny (inaczej rzeźba terenu)'],
-        ['Części wzniesienia', 'szczyt, stoki (zbocza), podnóże'],
-        ['Dolina', 'Wydłużone obniżenie terenu, zwykle płynie nim rzeka'],
-        ['Kotlina', 'Obniżenie otoczone ze wszystkich stron wyższym terenem'],
-        ['Wysokość bezwzględna', 'Wysokość liczona od poziomu morza, w m n.p.m.'],
-        ['Wysokość względna', 'Wysokość liczona od wybranego miejsca, np. od podnóża do szczytu; obliczasz ją odejmowaniem'],
-        ['Nizina', 'Teren od 0 do 300 m n.p.m., płaski lub lekko falisty, np. Nizina Mazowiecka'],
-        ['Wyżyna', 'Teren powyżej 300 m n.p.m., różnice wysokości nie większe niż 300 m, np. Wyżyna Lubelska'],
-        ['Góry', 'Teren powyżej 300 m n.p.m., różnice wysokości większe niż 300 m, strome stoki'],
-        ['Jedyne góry wysokie w Polsce', 'Tatry; najwyższy szczyt Polski – Rysy (2499 m n.p.m.)'],
-        ['Depresja', 'Ląd położony poniżej poziomu morza; w Polsce – Żuławy Wiślane'],
-        ['Poziomica', 'Linia na mapie łącząca punkty o tej samej wysokości bezwzględnej'],
-        ['Poziomice gęsto / rzadko', 'gęsto – stok stromy; rzadko – stok łagodny'],
+        ['Wody płynące – przykłady', 'strumień, potok, rzeka, kanał'],
+        ['Wody stojące – przykłady', 'jezioro, staw, zbiornik zaporowy'],
+        ['Źródło rzeki', 'Miejsce, w którym rzeka bierze początek'],
+        ['Ujście rzeki', 'Miejsce, w którym rzeka wpada do innej rzeki, jeziora lub morza'],
+        ['Dopływ', 'Rzeka, która wpada do większej rzeki'],
+        ['Rzeka główna', 'Rzeka, która wpada do morza (lub jeziora) i nie jest dopływem, np. Wisła, Odra'],
+        ['System rzeczny', 'Rzeka główna razem ze wszystkimi dopływami'],
+        ['Dorzecze', 'Obszar, z którego woda spływa do danej rzeki i jej dopływów'],
+        ['Jak rozpoznać lewy i prawy brzeg?', 'Stań twarzą do ujścia (tam, dokąd płynie woda): lewa ręka – lewy brzeg'],
+        ['Źródło i ujście Wisły', 'źródło – Barania Góra w Beskidzie Śląskim; ujście – Zatoka Gdańska (Bałtyk)'],
+        ['Zakole', 'Łuk lub pętla koryta rzeki'],
+        ['Starorzecze', 'Jezioro w dolinie rzeki – odcięty kawałek dawnego koryta'],
+        ['Jeziora polodowcowe', 'Powstały w zagłębieniach po lądolodzie; najwięcej ich na pojezierzach na północy Polski'],
+        ['Największe i najgłębsze jezioro Polski', 'największe – Śniardwy; najgłębsze – Hańcza'],
+        ['Zbiornik zaporowy', 'Sztuczne jezioro powstałe po zbudowaniu zapory na rzece, np. Jezioro Solińskie'],
       ],
       questions: [
-        { id: 'wrlhkk', q: 'Wysokość bezwzględna to wysokość liczona…', options: ['od poziomu morza', 'od podnóża góry', 'od najbliższego miasta', 'od dna doliny'], answer: 0, explain: 'Wysokość bezwzględną liczymy od poziomu morza i zapisujemy w m n.p.m.' },
-        { id: '2rvig1', q: 'Co oznacza skrót „m n.p.m.”?', options: ['metry nad poziomem morza', 'metry na planie mapy', 'metry na północ od morza', 'metry nad powierzchnią mapy'], answer: 0, explain: 'm n.p.m. – metry nad poziomem morza. Tak zapisujemy wysokość bezwzględną.' },
-        { id: 'yfuncw', q: 'Szczyt ma 1200 m n.p.m., a schronisko pod nim – 900 m n.p.m. O ile metrów szczyt jest wyżej niż schronisko?', options: ['300 m', '2100 m', '1200 m', '900 m'], answer: 0, explain: 'Wysokość względna to różnica: 1200 − 900 = 300 m.' },
+        { id: 'gc9oj9', q: 'Która z tych wód jest wodą płynącą?', options: ['potok', 'jezioro', 'staw', 'zbiornik zaporowy'], answer: 0, explain: 'Potok, strumień, rzeka i kanał to wody płynące. Jezioro, staw i zbiornik zaporowy – stojące.' },
+        { id: '3mtdbh', q: 'Która z tych wód jest wodą stojącą?', options: ['jezioro', 'rzeka', 'strumień', 'kanał'], answer: 0, explain: 'Woda w jeziorze wypełnia zagłębienie terenu i nie płynie z miejsca na miejsce.' },
+        { id: 'kevhmp', q: 'Jak nazywa się miejsce, w którym rzeka bierze początek?', options: ['źródło', 'ujście', 'zakole', 'dopływ'], answer: 0, explain: 'Rzeka zaczyna się w źródle, a kończy w ujściu.' },
+        { id: '439mzs', q: 'Ujście rzeki to miejsce, w którym…', options: ['rzeka wpada do innej rzeki, jeziora albo morza', 'rzeka bierze początek', 'rzeka płynie najszybciej', 'rzeka zakręca'], answer: 0, explain: 'W ujściu rzeka kończy swój bieg – wpada do innej rzeki, jeziora albo morza.' },
+        { id: '3bkps3', q: 'Gdzie zaczyna się Wisła?', options: ['na stoku Baraniej Góry w Beskidzie Śląskim', 'w Tatrach pod Rysami', 'na Żuławach Wiślanych', 'w jeziorze Śniardwy'], answer: 0, explain: 'Wisła wypływa na stoku Baraniej Góry w Beskidzie Śląskim i uchodzi do Zatoki Gdańskiej.' },
+        { id: 'ew7xa3', q: 'Dopływ to…', options: ['rzeka, która wpada do większej rzeki', 'miejsce, w którym rzeka się zaczyna', 'sztuczne jezioro', 'najszybsze miejsce w korycie'], answer: 0, explain: 'Dopływ to rzeka wpadająca do większej rzeki, np. San jest dopływem Wisły.' },
+        { id: 'j7zrbn', q: 'Rzeka główna razem ze wszystkimi dopływami to…', options: ['system rzeczny', 'dorzecze', 'starorzecze', 'zakole'], answer: 0, explain: 'System rzeczny to rzeka główna i jej dopływy. Na mapie wygląda jak drzewo. Dorzecze to obszar, z którego woda do nich spływa.' },
+        { id: '0qyce3', q: 'Jak ustalić, który brzeg rzeki jest lewy?', options: ['stanąć twarzą do ujścia – lewy brzeg jest po lewej ręce', 'stanąć twarzą do źródła – lewy brzeg jest po lewej ręce', 'spojrzeć na mapę – lewy brzeg jest zawsze po lewej stronie kartki', 'lewy brzeg to zawsze brzeg zachodni'], answer: 0, explain: 'Patrzysz tam, dokąd płynie woda (twarzą do ujścia). Wtedy po lewej masz lewy brzeg, a po prawej – prawy.' },
         {
-          id: '0op8ic',
-          q: 'Jaka jest wysokość względna wzgórza – od podnóża do szczytu?',
-          svg: `<svg viewBox="0 0 340 190" role="img" aria-label="Przekrój wzgórza. Szczyt: 650 m n.p.m. Podnóże: 400 m n.p.m.">
-      <line x1="10" y1="160" x2="330" y2="160" class="ln-thin"/>
-      <path d="M40,160 Q110,150 150,90 Q170,56 190,56 Q215,58 240,110 Q265,155 310,160 Z" class="f3 s3"/>
-      <circle cx="190" cy="56" r="5" class="t2"/>
-      <circle cx="60" cy="158" r="5" class="t2"/>
-      <text x="190" y="38" class="tx-b" text-anchor="middle">650 m n.p.m.</text>
-      <text x="60" y="184" class="tx-b" text-anchor="middle">400 m n.p.m.</text>
-      <text x="292" y="40" class="tx-s" text-anchor="middle">szczyt</text>
-      <text x="60" y="142" class="tx-s" text-anchor="middle">podnóże</text>
+          id: '9f3mgc',
+          q: 'Rzeka płynie w stronę wskazaną strzałką. Jakim dopływem jest rzeka A?',
+          svg: `<svg viewBox="0 0 360 180" role="img" aria-label="Rzeka główna płynie od lewej do prawej, strzałka kierunku w prawo. Z góry wpada do niej rzeka A.">
+      <defs><marker id="a-k4pr-q-rz" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <path d="M10,120 C80,100 120,140 190,118 C250,100 290,130 350,112" class="ln s1 sw"/>
+      <path d="M150,20 C170,50 160,80 190,116" class="ln s1"/>
+      <text x="140" y="20" class="tx-b t1" text-anchor="middle">A</text>
+      <text x="40" y="158" class="tx-s">źródło</text>
+      <text x="300" y="158" class="tx-s">ujście</text>
+      <line x1="230" y1="72" x2="300" y2="72" class="ln s2 sw" marker-end="url(#a-k4pr-q-rz)"/>
+      <text x="265" y="62" class="tx-s" text-anchor="middle">kierunek</text>
     </svg>`,
-          options: ['250 m', '1050 m', '650 m', '400 m'],
+          options: ['lewym', 'prawym'],
           answer: 0,
-          explain: 'Wysokość względna to różnica wysokości bezwzględnych: 650 − 400 = 250 m.',
+          explain: 'Stań twarzą do ujścia – patrzysz w prawo (w stronę strzałki). Wtedy twoja lewa ręka wskazuje górę rysunku, a stamtąd wpada rzeka A. To lewy dopływ.',
         },
-        { id: 'r2evu2', q: 'Na jakiej wysokości leżą niziny?', options: ['od 0 do 300 m n.p.m.', 'powyżej 300 m n.p.m.', 'powyżej 2000 m n.p.m.', 'poniżej poziomu morza'], answer: 0, explain: 'Niziny leżą od 0 do 300 m n.p.m. Teren poniżej poziomu morza to depresja.' },
-        { id: 'en9vex', q: 'Czym góry różnią się od wyżyn?', options: ['w górach różnice wysokości są większe niż 300 m, a stoki strome', 'góry leżą poniżej 300 m n.p.m.', 'na wyżynach są ostre szczyty', 'niczym – to to samo'], answer: 0, explain: 'Wyżyny i góry leżą powyżej 300 m n.p.m. W górach różnice między szczytami a dolinami są jednak większe niż 300 m.' },
-        { id: '2ya7pb', q: 'Które góry w Polsce są górami wysokimi?', options: ['Tatry', 'Sudety', 'Góry Świętokrzyskie', 'Bieszczady'], answer: 0, explain: 'Tatry to jedyne góry wysokie w Polsce: ostre szczyty i bardzo strome stoki.' },
-        { id: 'k7ywnf', q: 'Jak nazywa się najwyższy szczyt Polski?', options: ['Rysy', 'Śnieżka', 'Giewont', 'Łysica'], answer: 0, explain: 'Rysy w Tatrach mają 2499 m n.p.m. – to najwyższy szczyt Polski.' },
-        { id: 'bma9fq', q: 'Które z tych miejsc to wyżyna?', options: ['Wyżyna Krakowsko-Częstochowska', 'Tatry', 'Nizina Mazowiecka', 'Żuławy Wiślane'], answer: 0, explain: 'Wyżyna Krakowsko-Częstochowska leży powyżej 300 m n.p.m., ale nie ma dużych różnic wysokości.' },
-        { id: 'g0t4nw', q: 'Depresja to…', options: ['ląd położony poniżej poziomu morza', 'najwyższy szczyt w górach', 'teren od 0 do 300 m n.p.m.', 'dolina rzeki w górach'], answer: 0, explain: 'Depresja to ląd poniżej poziomu morza. W Polsce jest na Żuławach Wiślanych.' },
-        { id: 'cshhzh', q: 'Gdzie w Polsce znajduje się depresja?', options: ['na Żuławach Wiślanych', 'w Tatrach', 'na Wyżynie Lubelskiej', 'w Bieszczadach'], answer: 0, explain: 'Depresja jest na Żuławach Wiślanych, niedaleko ujścia Wisły. Najniższy punkt leży ok. 1,8 m pod poziomem morza.' },
-        { id: '0dj2i5', q: 'Poziomica to linia na mapie, która łączy punkty…', options: ['o tej samej wysokości bezwzględnej', 'o tej samej temperaturze', 'leżące nad tą samą rzeką', 'oddalone o 1 km'], answer: 0, explain: 'Poziomica łączy miejsca położone na tej samej wysokości nad poziomem morza.' },
-        {
-          id: 'nuz5s4',
-          q: 'Na rysunku są poziomice wzgórza. Który stok jest bardziej stromy?',
-          svg: `<svg viewBox="0 0 340 200" role="img" aria-label="Poziomice wzgórza. Po lewej stronie linie leżą bardzo blisko siebie, po prawej – daleko od siebie. Lewy stok oznaczono literą A, prawy literą B.">
-      <ellipse cx="170" cy="100" rx="130" ry="80" class="ln"/>
-      <ellipse cx="148" cy="100" rx="100" ry="62" class="ln"/>
-      <ellipse cx="126" cy="100" rx="70" ry="44" class="ln"/>
-      <ellipse cx="106" cy="100" rx="42" ry="26" class="ln"/>
-      <circle cx="90" cy="100" r="4" class="t2"/>
-      <text x="22" y="106" class="tx-b t2" text-anchor="middle">A</text>
-      <text x="322" y="106" class="tx-b t2" text-anchor="middle">B</text>
-    </svg>`,
-          options: ['stok A – poziomice są gęsto', 'stok B – poziomice są rzadko', 'oba są tak samo strome'],
-          answer: 0,
-          explain: 'Im gęściej leżą poziomice, tym na krótkim odcinku teren bardziej się wznosi – stok jest stromy. Po stronie A poziomice są blisko siebie.',
-        },
-        { id: 'i34oa1', q: 'Na mapie hipsometrycznej niziny są zwykle zaznaczone kolorem…', options: ['zielonym', 'brązowym', 'niebieskim', 'czerwonym'], answer: 0, explain: 'Niziny – zielony, wyższe tereny – żółty i pomarańczowy, góry – brązowy. Niebieski oznacza wody. Kolory zawsze sprawdzaj w legendzie.' },
-        { id: '5t1giv', q: 'Jak nazywa się obniżenie terenu otoczone ze wszystkich stron wyższym terenem?', options: ['kotlina', 'szczyt', 'stok', 'wyżyna'], answer: 0, explain: 'Kotlina to obniżenie otoczone ze wszystkich stron wyższym terenem.' },
-        { id: 'pdiqw5', q: 'Jak nazywa się wydłużone obniżenie terenu, którym zwykle płynie rzeka?', options: ['dolina', 'kotlina', 'depresja', 'podnóże'], answer: 0, explain: 'Dolina to wydłużone obniżenie terenu – zwykle płynie nim rzeka.' },
-        { id: '3q8hco', q: 'Prawda czy fałsz?\nWysokość względną obliczamy, odejmując od siebie dwie wysokości bezwzględne.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Np. szczyt 650 m n.p.m. i podnóże 400 m n.p.m.: 650 − 400 = 250 m wysokości względnej.' },
-        { id: 'b23oey', q: 'Jak nazywa się miejsce, w którym stok wzniesienia przechodzi w płaski teren?', options: ['podnóże', 'szczyt', 'dolina', 'poziomica'], answer: 0, explain: 'Wzniesienie ma szczyt, stoki i podnóże – miejsce, gdzie stok przechodzi w płaski teren.' },
-        { id: 'igyixr', q: 'Do jakich gór należą Góry Świętokrzyskie?', options: ['do gór niskich', 'do gór wysokich', 'do gór średnich', 'to nie są góry, tylko depresja'], answer: 0, explain: 'Góry Świętokrzyskie to góry niskie – mają łagodne stoki i zaokrąglone szczyty.' },
+        { id: 'up04ww', q: 'Który z tych dopływów Wisły jest dopływem prawym?', options: ['San', 'Pilica', 'Bzura'], answer: 0, explain: 'San, Dunajec i Narew to prawe dopływy Wisły. Pilica i Bzura – lewe.' },
+        { id: 'djmvy4', q: 'W którym biegu rzeka płynie najszybciej i tworzy wodospady?', options: ['w górnym', 'w środkowym', 'w dolnym'], answer: 0, explain: 'W górnym biegu, zwykle w górach, woda płynie szybko, żłobi wąską i stromą dolinę i tworzy wodospady.' },
+        { id: 'wky55k', q: 'Jak nazywa się łuk albo pętla koryta rzeki?', options: ['zakole', 'źródło', 'ujście', 'nurt'], answer: 0, explain: 'Zakole to łuk lub pętla koryta. Na zewnętrznym brzegu woda podmywa brzeg, na wewnętrznym osadza piasek.' },
+        { id: 'mk4vfg', q: 'Starorzecze to…', options: ['jezioro w dolinie rzeki – odcięty kawałek dawnego koryta', 'najstarsza rzeka w Polsce', 'źródło rzeki w górach', 'sztuczne jezioro za zaporą'], answer: 0, explain: 'Starorzecze powstaje, gdy kawałek koryta (np. zakole) zostaje odcięty od rzeki.' },
+        { id: '0wvixp', q: 'Jak powstała większość jezior w Polsce?', options: ['w zagłębieniach po lądolodzie – to jeziora polodowcowe', 'po zbudowaniu zapór na rzekach', 'w kraterach wulkanów', 'wykopali je ludzie'], answer: 0, explain: 'Dawno temu północ Polski przykrywał lądolód. W zagłębieniach, które po nim zostały, powstały jeziora – najwięcej ich na pojezierzach.' },
+        { id: 'k89h7n', q: 'Które jezioro jest największe w Polsce?', options: ['Śniardwy', 'Hańcza', 'Morskie Oko', 'Jezioro Solińskie'], answer: 0, explain: 'Największe jezioro w Polsce to Śniardwy. Najgłębsze jest Hańcza.' },
+        { id: 'fj6rz2', q: 'Jak powstaje zbiornik zaporowy?', options: ['ludzie budują na rzece zaporę i woda się za nią spiętrza', 'lądolód zostawia zagłębienie', 'rzeka odcina swoje zakole', 'morze zalewa ląd'], answer: 0, explain: 'Zbiornik zaporowy to sztuczne jezioro za zaporą, np. Jezioro Solińskie na Sanie.' },
+        { id: 'jkroml', q: 'Prawda czy fałsz?\nIm głębiej w jeziorze, tym więcej światła.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Woda pochłania światło – im głębiej, tym ciemniej. Dlatego rośliny wodne rosną głównie przy brzegu i blisko powierzchni.' },
+        { id: 'eok8kf', q: 'Czym oddychają ryby?', options: ['tlenem rozpuszczonym w wodzie, za pomocą skrzeli', 'powietrzem, które łapią nad wodą płucami', 'nie oddychają wcale', 'dwutlenkiem węgla z powietrza'], answer: 0, explain: 'Ryby oddychają skrzelami – pobierają tlen rozpuszczony w wodzie.' },
+        { id: 'qrxg9w', q: 'Dlaczego niebezpiecznie jest budować domy na płaskim dnie doliny rzeki?', options: ['bo podczas powodzi rzeka może zalać ten teren', 'bo tam jest zawsze susza', 'bo tam nie dociera światło', 'bo tam nie ma gleby'], answer: 0, explain: 'Gdy w korycie jest za dużo wody, rzeka wylewa i zalewa dno doliny – to powódź.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
+    {
+      id: 'powietrze',
+      name: 'Powietrze i jego składniki',
+      extra: true,
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 9 (właściwości powietrza, tlenu i dwutlenku węgla: stan skupienia, barwa, rozpuszczalność w wodzie, zapach, palność; skład powietrza), wym. 10 (jakość powietrza, wpływ na zdrowie, zanieczyszczenie powietrza a zmiana klimatu – moduł klimatyczny); dz. 5 wym. 14 (przyczyny smogu, działania ograniczające – moduł klimatyczny). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Powietrze – niewidzialne, ale jest</h3>
+        <p>Powietrza nie widać, ale czujesz je, gdy wieje wiatr. Powietrze <b>zajmuje miejsce</b> (pusta butelka jest pełna powietrza) i ma <b>masę</b> (napompowana piłka jest ciut cięższa niż pusta). Powietrze to <b>mieszanina gazów</b>.</p>
+        <h3>Z czego składa się powietrze?</h3>
+        <table>
+          <tr><th>Gaz</th><th>Ile go jest (w przybliżeniu)</th></tr>
+          <tr><td>azot</td><td>78 części na 100</td></tr>
+          <tr><td>tlen</td><td>21 części na 100</td></tr>
+          <tr><td>inne gazy: argon, dwutlenek węgla i inne</td><td>około 1 części na 100 (dwutlenku węgla – tylko ok. 4 części na 10 000)</td></tr>
+        </table>
+        <p>W powietrzu jest też <b>para wodna</b> – raz więcej, raz mniej – oraz <b>pyły</b>.</p>
+        <div class="tip">💡 Najwięcej w powietrzu jest azotu, a nie tlenu.</div>
+        <h3>Tlen i dwutlenek węgla</h3>
+        <table>
+          <tr><th></th><th>Tlen</th><th>Dwutlenek węgla</th></tr>
+          <tr><td>stan skupienia, barwa, zapach</td><td>gaz, bezbarwny, bez zapachu</td><td>gaz, bezbarwny, bez zapachu</td></tr>
+          <tr><td>palenie</td><td><b>podtrzymuje palenie</b> – tląca się drewniana drzazga w tlenie zapala się płomieniem</td><td><b>nie podtrzymuje palenia</b> – płomień w nim gaśnie; używa się go w niektórych gaśnicach</td></tr>
+          <tr><td>w wodzie</td><td>rozpuszcza się słabo, ale wystarcza dla ryb</td><td>rozpuszcza się – są w nim „bąbelki” w wodzie gazowanej</td></tr>
+          <tr><td>dla organizmów</td><td>potrzebny do <b>oddychania</b></td><td>wydychamy go; rośliny pobierają go do <b>fotosyntezy</b></td></tr>
+        </table>
+        <p>Dwutlenek węgla jest <b>cięższy od powietrza</b> – zbiera się przy ziemi. Wykrywamy go <b>wodą wapienną</b>: gdy przez słomkę wdmuchujesz do niej wydychane powietrze, woda wapienna mętnieje.</p>
+        <p>Azot nie podtrzymuje palenia i nie ma barwy ani zapachu.</p>
+        <h3>Zanieczyszczenia i smog</h3>
+        <p>Powietrze zanieczyszczają przede wszystkim <b>dymy i spaliny</b>: z pieców opalanych węglem lub drewnem (zwłaszcza gdy ktoś pali w nich śmieci), z samochodów, z fabryk i elektrowni. W powietrzu unoszą się wtedy drobne <b>pyły</b> i szkodliwe gazy.</p>
+        <p><b>Smog</b> (od angielskich słów „smoke” – dym i „fog” – mgła) to zanieczyszczone powietrze zalegające nad miastem lub wsią. Tworzy się najczęściej, gdy:</p>
+        <ul>
+          <li>do powietrza trafia dużo dymu i spalin (np. zimą, w sezonie grzewczym),</li>
+          <li>nie ma wiatru, który rozwiałby zanieczyszczenia,</li>
+          <li>miejscowość leży w dolinie lub kotlinie.</li>
+        </ul>
+        <p><b>Skutki dla zdrowia:</b> kaszel, ból głowy, łzawienie oczu, trudności z oddychaniem; po latach – choroby płuc i serca. Jakość powietrza możesz sprawdzić w aplikacji lub na stronie z pomiarami. Gdy jest zła, lepiej ograniczyć wysiłek na dworze.</p>
+        <h3>Powietrze a klimat</h3>
+        <p>Spalanie węgla, ropy i gazu (w piecach, elektrowniach, samochodach) dodaje do powietrza <b>dwutlenek węgla</b>. Im więcej go w powietrzu, tym mocniej Ziemia się ogrzewa – to jedna z przyczyn <b>zmiany klimatu</b>.</p>
+        <h3>Co możemy zrobić?</h3>
+        <ul>
+          <li>nigdy nie palić śmieci,</li>
+          <li>chodzić pieszo, jeździć rowerem lub komunikacją miejską zamiast samochodem,</li>
+          <li>oszczędzać prąd i ciepło (gasić światło, nie przegrzewać mieszkań),</li>
+          <li>sadzić drzewa i dbać o zieleń – rośliny zatrzymują pyły i pobierają dwutlenek węgla.</li>
+        </ul>
+      `,
+      flashcards: [
+        ['Powietrze to…', 'mieszanina gazów (głównie azotu i tlenu)'],
+        ['Najwięcej w powietrzu jest…', 'azotu – ok. 78 części na 100'],
+        ['Ile tlenu jest w powietrzu?', 'ok. 21 części na 100'],
+        ['Tlen a palenie', 'Podtrzymuje palenie – tląca się drzazga się zapala'],
+        ['Dwutlenek węgla a palenie', 'Nie podtrzymuje palenia – płomień gaśnie'],
+        ['Jak wykryć dwutlenek węgla?', 'Woda wapienna mętnieje'],
+        ['Bąbelki w wodzie gazowanej', 'dwutlenek węgla rozpuszczony w wodzie'],
+        ['Smog', 'Zanieczyszczone powietrze (dym + mgła) zalegające nad miejscowością'],
+        ['Kiedy łatwo o smog?', 'Dużo dymu i spalin, brak wiatru, zwykle zimą'],
+        ['Jak ograniczyć zanieczyszczenie powietrza?', 'Nie palić śmieci, wybierać rower i komunikację miejską, oszczędzać energię, sadzić drzewa'],
+      ],
+      questions: [
+        { id: 'dauwli', q: 'Którego gazu jest w powietrzu najwięcej?', options: ['azotu', 'tlenu', 'dwutlenku węgla', 'pary wodnej'], answer: 0, explain: 'Azot to ok. 78 części na 100 części powietrza, tlen – ok. 21.' },
+        { id: '20pzz6', q: 'Ile mniej więcej tlenu jest w powietrzu?', options: ['ok. 21 części na 100', 'ok. 78 części na 100', 'ok. 50 części na 100', 'ok. 1 części na 100'], answer: 0, explain: 'Tlen stanowi ok. 21 części na 100 części powietrza. 78 części to azot.' },
+        { id: 'jvjvjq', q: 'Do słoika z tlenem włożono tlącą się drzazgę. Co się stanie?', options: ['drzazga zapali się płomieniem', 'drzazga zgaśnie', 'nic się nie zmieni', 'słoik napełni się wodą'], answer: 0, explain: 'Tlen podtrzymuje palenie – tląca się drzazga w czystym tlenie rozbłyska płomieniem.' },
+        { id: 'x97ugp', q: 'Który gaz gasi płomień i jest używany w niektórych gaśnicach?', options: ['dwutlenek węgla', 'tlen', 'para wodna'], answer: 0, explain: 'Dwutlenek węgla nie podtrzymuje palenia – płomień w nim gaśnie.' },
+        { id: 'moq9fk', q: 'Jak można wykryć dwutlenek węgla?', options: ['woda wapienna mętnieje', 'gaz ma zapach zgniłych jaj', 'gaz ma niebieski kolor', 'gaz świeci w ciemności'], answer: 0, explain: 'Dwutlenek węgla jest bezbarwny i bez zapachu. Rozpoznajemy go po tym, że woda wapienna mętnieje.' },
+        { id: '6lp5vc', q: 'Co to są bąbelki w wodzie gazowanej?', options: ['dwutlenek węgla', 'tlen', 'azot', 'para wodna'], answer: 0, explain: 'Do wody gazowanej dodaje się dwutlenek węgla – rozpuszcza się w wodzie, a po otwarciu butelki uwalnia się w postaci bąbelków.' },
+        { id: 'dnohax', q: 'Jaki gaz pobierają rośliny z powietrza do fotosyntezy?', options: ['dwutlenek węgla', 'tlen', 'azot', 'argon'], answer: 0, explain: 'Rośliny pobierają dwutlenek węgla, a podczas fotosyntezy wydzielają tlen.' },
+        { id: 's377jb', q: 'Prawda czy fałsz?\nTlen ma niebieską barwę i ostry zapach.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Tlen jest bezbarwny i nie ma zapachu – tak jak całe czyste powietrze.' },
+        { id: 'lpe9q0', q: 'Prawda czy fałsz?\nPowietrze zajmuje miejsce i ma masę.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '„Pusta” butelka jest pełna powietrza, a napompowana piłka waży trochę więcej niż pusta.' },
+        { id: '1vzoop', q: 'Dlaczego dwutlenek węgla zbiera się przy ziemi, np. na dnie piwnicy?', options: ['bo jest cięższy od powietrza', 'bo jest lżejszy od powietrza', 'bo jest ciekły', 'bo przyciąga go glina'], answer: 0, explain: 'Dwutlenek węgla jest cięższy od powietrza, więc opada w dół.' },
+        { id: 'u1k2gb', q: 'Słowo „smog” powstało z połączenia angielskich słów oznaczających…', options: ['dym i mgłę', 'deszcz i śnieg', 'wiatr i burzę', 'słońce i chmury'], answer: 0, explain: 'Smoke – dym, fog – mgła. Smog to zanieczyszczone powietrze zalegające nad miejscowością.' },
+        { id: 'o22awm', q: 'Kiedy najłatwiej o smog?', options: ['zimą, przy bezwietrznej pogodzie, gdy pracuje dużo pieców', 'latem, podczas silnego wiatru', 'podczas ulewnego deszczu', 'gdy wieje silny wiatr od morza'], answer: 0, explain: 'Zimą do powietrza trafia dużo dymu z pieców, a gdy nie ma wiatru, zanieczyszczenia nie są rozwiewane.' },
+        { id: '9yfj16', q: 'Co NIE powoduje zanieczyszczenia powietrza?', options: ['jazda na rowerze', 'palenie śmieci w piecu', 'spaliny z samochodów', 'dym z kominów fabryk'], answer: 0, explain: 'Rower nie wytwarza spalin. Palenie śmieci, spaliny i dymy zanieczyszczają powietrze.' },
+        { id: 'rx7tko', q: 'Jakie mogą być skutki oddychania zanieczyszczonym powietrzem?', options: ['kaszel i trudności z oddychaniem', 'lepszy wzrok', 'szybszy wzrost włosów', 'nie ma żadnych skutków'], answer: 0, explain: 'Pyły i szkodliwe gazy podrażniają drogi oddechowe. Po latach mogą prowadzić do chorób płuc i serca.' },
+        { id: '4zameo', q: 'W aplikacji sprawdziłeś, że jakość powietrza jest dziś bardzo zła. Co warto zrobić?', options: ['ograniczyć wysiłek na dworze', 'pobiegać dłużej niż zwykle', 'otworzyć okna na cały dzień', 'rozpalić ognisko'], answer: 0, explain: 'Podczas wysiłku oddychamy szybciej i wciągamy więcej zanieczyszczeń. Lepiej przenieść ruch do domu lub sali.' },
+        { id: 'urkwez', q: 'Jak spalanie węgla, ropy i gazu wpływa na klimat?', options: ['dodaje do powietrza dwutlenek węgla, przez co Ziemia mocniej się ogrzewa', 'zwiększa ilość tlenu w powietrzu', 'ochładza Ziemię', 'nie ma żadnego wpływu'], answer: 0, explain: 'Przy spalaniu powstaje dwutlenek węgla. Im więcej go w powietrzu, tym mocniej ogrzewa się Ziemia – to jedna z przyczyn zmiany klimatu.' },
+        { id: 'i0i6ed', q: 'Które działanie pomaga dbać o czyste powietrze?', options: ['sadzenie drzew', 'palenie liści i śmieci w ogródku', 'jeżdżenie samochodem na krótkie odległości', 'zostawianie włączonego światła'], answer: 0, explain: 'Rośliny zatrzymują pyły i pobierają dwutlenek węgla. Pozostałe działania zanieczyszczają powietrze albo marnują energię.' },
       ],
     },
 
@@ -1163,6 +1175,7 @@ window.SUBJECTS.push({
     {
       id: 'ochrona',
       name: 'Ochrona przyrody',
+      extra: true,
       basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 8 (formy ochrony przyrody w otoczeniu, walory przyrodnicze podlegające ochronie). Formy ochrony przyrody, opisy parku narodowego, rezerwatu, parku krajobrazowego, pomnika przyrody, zakazy w parku narodowym i liczba parków narodowych – według ustawy o ochronie przyrody (tekst jednolity Dz.U. 2026 poz. 1315: art. 6, 8, 13, 15, 16, 40 i załącznik), sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Po co chronimy przyrodę?</h3>
@@ -1240,6 +1253,7 @@ window.SUBJECTS.push({
     {
       id: 'mieszaniny',
       name: 'Rozpuszczanie i mieszaniny',
+      extra: true,
       basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 3 „Materia i jej przemiany w przyrodzie”, wym. 6 (rozpuszczanie się w wodzie substancji i produktów stosowanych na co dzień, substancje rozpuszczalne i nierozpuszczalne, czynniki wpływające na szybkość rozpuszczania), wym. 9 (mieszaniny jednorodne i niejednorodne, rozdzielanie mieszanin); doświadczenia edukacyjne – eksperymenty, pkt 2 (wpływ mieszania, rozdrobnienia i temperatury na szybkość rozpuszczania) i pkt 3 (rozdzielanie mieszanin przez sączenie, odparowanie, krystalizację, dekantację, sedymentację i sposoby mechaniczne). Opisy metod rozdzielania i podziału mieszanin – według słowniczków Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl), sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Rozpuszczanie</h3>
@@ -1317,6 +1331,7 @@ window.SUBJECTS.push({
     {
       id: 'gestosc',
       name: 'Gęstość, tonięcie i pływanie',
+      extra: true,
       basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 3 „Materia i jej przemiany w przyrodzie”, wym. 10 (pojęcie gęstości na podstawie modelu, zależność gęstości od temperatury i stanu skupienia – zwłaszcza woda i jej znaczenie w przyrodzie); dz. 4 „Organizmy i ekosystemy”, wym. 7 (tonięcie i pływanie ciał a gęstość, codzienne zastosowania, przystosowania organizmów do życia w wodzie, wpływ kształtu ciała na pływanie). Bez wzoru na gęstość i bez jednostek gęstości (fizyka kl. VII). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Co to jest gęstość?</h3>
@@ -1388,6 +1403,7 @@ window.SUBJECTS.push({
     {
       id: 'uklad-sloneczny',
       name: 'Ziemia w Układzie Słonecznym',
+      extra: true,
       basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 5 „Planeta Ziemia”, wym. 1 (planety i inne ciała niebieskie Układu Słonecznego, budowa Układu Słonecznego na podstawie modelu), wym. 2 (fazy Księżyca, zaćmienie Słońca i zaćmienie Księżyca), wym. 3 (ruch obrotowy i obiegowy Ziemi i ich konsekwencje – dzień i noc, doba, rok, pory roku; w uproszczeniu). Kolejność i podział planet, planety karłowate, czas obrotu i obiegu Ziemi, nachylenie osi, fazy Księżyca i warunki zaćmień – według materiałów Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Czy Ziemia stoi w miejscu?”, „Z czego zbudowany jest Jowisz?”, „Co to jest zaćmienie Księżyca?”, „Zaćmienia Słońca i Księżyca”), sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Układ Słoneczny</h3>
@@ -1484,6 +1500,7 @@ window.SUBJECTS.push({
     {
       id: 'metale',
       name: 'Metale, stopy i przewodzenie ciepła',
+      extra: true,
       basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 3 „Materia i jej przemiany w przyrodzie”, wym. 7 (właściwości metali i niemetali: stan skupienia, barwa, połysk, przewodnictwo elektryczne i cieplne), wym. 8 (metal a stop metalu, korozja stali, zabezpieczanie przed korozją), wym. 11 (przepływ ciepła, przewodniki i izolatory ciepła, izolacja cieplna w przyrodzie i życiu codziennym). Skład stopów (brąz – miedź i cyna, mosiądz – miedź i cynk, stal – żelazo z węglem), warunki rdzewienia (woda i tlen, sól przyspiesza) i sposoby ochrony przed korozją – według materiałów ZPE (zpe.gov.pl), sprawdzone 2.11.2026. Pierwiastki i układ okresowy (wym. 1) – w kolejnych klasach. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Metale i niemetale</h3>
@@ -1596,6 +1613,7 @@ window.SUBJECTS.push({
     {
       id: 'sily',
       name: 'Grawitacja, tarcie i opór powietrza',
+      extra: true,
       basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 5 „Planeta Ziemia”, wym. 5 (pomiar masy obiektów, działanie siły grawitacji ziemskiej), wym. 21 (zależność siły tarcia od różnych czynników, przykłady zmniejszania i zwiększania tarcia w przyrodzie); dz. 4 „Organizmy i ekosystemy”, wym. 3 (wspólne cechy organizmów zdolnych do lotu, zależność oporu powietrza od różnych czynników, zwiększanie i zmniejszanie oporu powietrza w przyrodzie). Bez jednostek siły i siłomierza (fizyka kl. VII). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Masa i jej pomiar</h3>
@@ -1682,6 +1700,7 @@ window.SUBJECTS.push({
     {
       id: 'krainy',
       name: 'Krainy geograficzne Polski i lądolód',
+      extra: true,
       basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 5 „Planeta Ziemia”, wym. 19 (krainy geograficzne Polski na mapie, ich położenie i krajobraz), wym. 20 (dlaczego lądolód nazywamy skandynawskim, zasięg maksymalny i zasięg ostatniego zlodowacenia, wpływ lądolodu na współczesną rzeźbę). Pasy rzeźby i przykłady krain – według ZPE (lekcja o pasach rzeźby Polski, zpe.gov.pl/a/DIlK4PLj6); lądolód – według ZPE („Młodoglacjalny czy staroglacjalny?”, zpe.gov.pl/a/przeczytaj/DV0xUhxT2: lądolód skandynawski nasuwał się z północy; w najdalszym zasięgu dosięgnął północnych stoków Karpat i Sudetów; ostatni raz osiągnął maksymalny zasięg ok. 20 tys. lat temu, a ok. 14 tys. lat temu opuścił teren Polski), sprawdzone 2.11.2026. Bez nazw zlodowaceń i dokładnego przebiegu granic (geografia kl. V–VIII). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Sześć pasów rzeźby</h3>
