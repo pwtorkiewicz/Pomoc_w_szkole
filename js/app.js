@@ -336,8 +336,8 @@
     };
     document.getElementById('reset').onclick = (e) => {
       e.preventDefault();
-      if (confirm(`Na pewno usunąć wszystkie wyniki i listę błędów w ścieżce „${TRACK.name}”?`)) {
-        state.best = {}; state.wrong = {}; state.exams = {}; state.tasks = {}; state.sets = {};
+      if (confirm(`Na pewno usunąć wszystkie wyniki, listę błędów i znaczki 🎓 przerobionych lekcji w ścieżce „${TRACK.name}”?`)) {
+        state.best = {}; state.wrong = {}; state.exams = {}; state.tasks = {}; state.sets = {}; state.lessons = {};
         save(); home();
       }
     };
