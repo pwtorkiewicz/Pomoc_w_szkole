@@ -784,3 +784,322 @@ window.LESSONS['matematyka/dane'] = [
     check: { q: 'Płacisz za te zakupy 30 zł. Ile dostaniesz reszty?', options: ['17 zł', '23 zł', '7 zł'], answer: 2, explain: '30 zł − 23 zł = 7 zł.' },
   },
 ];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['matematyka/dzielniki'] = [
+  {
+    title: 'Dzielnik – liczba, która „mieści się” bez reszty',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Dwanaście kropek ułożonych na trzy sposoby: 1 rząd po 12, 2 rzędy po 6 i 3 rzędy po 4. Dzielniki 12 to 1, 2, 3, 4, 6, 12.">
+      <g class="f1 s1">
+        <circle cx="20" cy="26" r="7"/><circle cx="40" cy="26" r="7"/><circle cx="60" cy="26" r="7"/><circle cx="80" cy="26" r="7"/><circle cx="100" cy="26" r="7"/><circle cx="120" cy="26" r="7"/><circle cx="140" cy="26" r="7"/><circle cx="160" cy="26" r="7"/><circle cx="180" cy="26" r="7"/><circle cx="200" cy="26" r="7"/><circle cx="220" cy="26" r="7"/><circle cx="240" cy="26" r="7"/>
+      </g>
+      <g class="f2 s2">
+        <circle cx="20" cy="66" r="7"/><circle cx="40" cy="66" r="7"/><circle cx="60" cy="66" r="7"/><circle cx="80" cy="66" r="7"/><circle cx="100" cy="66" r="7"/><circle cx="120" cy="66" r="7"/>
+        <circle cx="20" cy="86" r="7"/><circle cx="40" cy="86" r="7"/><circle cx="60" cy="86" r="7"/><circle cx="80" cy="86" r="7"/><circle cx="100" cy="86" r="7"/><circle cx="120" cy="86" r="7"/>
+      </g>
+      <g class="f3 s3">
+        <circle cx="20" cy="122" r="7"/><circle cx="40" cy="122" r="7"/><circle cx="60" cy="122" r="7"/><circle cx="80" cy="122" r="7"/>
+        <circle cx="20" cy="142" r="7"/><circle cx="40" cy="142" r="7"/><circle cx="60" cy="142" r="7"/><circle cx="80" cy="142" r="7"/>
+        <circle cx="20" cy="162" r="7"/><circle cx="40" cy="162" r="7"/><circle cx="60" cy="162" r="7"/><circle cx="80" cy="162" r="7"/>
+      </g>
+      <text x="280" y="32" class="tx-b t1">1 · 12</text>
+      <text x="280" y="82" class="tx-b t2">2 · 6</text>
+      <text x="280" y="148" class="tx-b t3">3 · 4</text>
+      <text x="200" y="206" class="tx-b" text-anchor="middle">dzielniki 12: 1, 2, 3, 4, 6, 12</text>
+    </svg>`,
+    text: `<p>12 kropek da się ułożyć w równe rzędy na kilka sposobów: 1 rząd po 12, 2 rzędy po 6, 3 rzędy po 4. Liczby 1, 2, 3, 4, 6, 12 to <b>dzielniki</b> liczby 12 – dzieli się przez nie bez reszty.</p>
+      <p>A 5? 12 kropek w rzędach po 5 nie wyjdzie – zostaną 2. Więc 5 nie jest dzielnikiem 12.</p>`,
+    remember: 'Dzielniki szukaj parami: 1 · 12, 2 · 6, 3 · 4. Każda liczba dzieli się przez 1 i przez samą siebie.',
+    hook: 'Dzielnik to „równy podział bez okruszków” – nic nie zostaje.',
+    check: { q: 'Która liczba jest dzielnikiem 20?', options: ['3', '4', '6'], answer: 1, explain: '20 : 4 = 5 bez reszty. Przy dzieleniu 20 przez 3 i przez 6 zostaje reszta 2.' },
+  },
+  {
+    title: 'Wielokrotności – skaczesz po osi',
+    svg: `<svg viewBox="0 0 400 150" role="img" aria-label="Oś liczbowa od 0 do 30. Skoki co 6: 6, 12, 18, 24, 30 – to wielokrotności liczby 6.">
+      <defs><marker id="a-k4m-dzl-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <line x1="14" y1="90" x2="392" y2="90" class="ln"/>
+      <g class="ln"><line x1="20" y1="82" x2="20" y2="98"/><line x1="92" y1="82" x2="92" y2="98"/><line x1="164" y1="82" x2="164" y2="98"/><line x1="236" y1="82" x2="236" y2="98"/><line x1="308" y1="82" x2="308" y2="98"/><line x1="380" y1="82" x2="380" y2="98"/></g>
+      <g class="ln s2">
+        <path d="M22,84 C40,46 72,46 90,84" marker-end="url(#a-k4m-dzl-1)"/><path d="M94,84 C112,46 144,46 162,84" marker-end="url(#a-k4m-dzl-1)"/><path d="M166,84 C184,46 216,46 234,84" marker-end="url(#a-k4m-dzl-1)"/><path d="M238,84 C256,46 288,46 306,84" marker-end="url(#a-k4m-dzl-1)"/><path d="M310,84 C328,46 360,46 378,84" marker-end="url(#a-k4m-dzl-1)"/>
+      </g>
+      <g class="tx-s t2" text-anchor="middle"><text x="56" y="40">+6</text><text x="128" y="40">+6</text><text x="200" y="40">+6</text><text x="272" y="40">+6</text><text x="344" y="40">+6</text></g>
+      <g class="tx-b" text-anchor="middle"><text x="20" y="120">0</text><text x="92" y="120">6</text><text x="164" y="120">12</text><text x="236" y="120">18</text><text x="308" y="120">24</text><text x="380" y="120">30</text></g>
+      <text x="200" y="144" class="tx-s" text-anchor="middle">wielokrotności 6: 6, 12, 18, 24, 30, …</text>
+    </svg>`,
+    text: `<p><b>Wielokrotności</b> liczby 6 to wyniki mnożenia: 6 · 1, 6 · 2, 6 · 3… Na osi to kolejne skoki o 6.</p>
+      <p>Wielokrotności nigdy się nie kończą – zawsze możesz skoczyć dalej. 12 jest wielokrotnością 6, a 6 jest dzielnikiem 12 – to dwie strony tego samego.</p>`,
+    remember: 'Dzielników jest zawsze kilka, a wielokrotności – nieskończenie wiele.',
+    hook: 'Wielokrotność = „wiele razy” ta sama liczba: 6, 6 + 6, 6 + 6 + 6…',
+    check: { q: 'Która liczba jest wielokrotnością 8?', options: ['28', '32', '36'], answer: 1, explain: '8 · 4 = 32. 28 i 36 przy dzieleniu przez 8 dają resztę 4.' },
+  },
+  {
+    title: 'Cechy podzielności – sprawdzasz bez dzielenia',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Dwie karty. Patrz na koniec: przez 2 – ostatnia cyfra 0, 2, 4, 6, 8; przez 5 – 0 lub 5; przez 10 – 0; przez 4 – dwie ostatnie cyfry. Dodaj cyfry: przez 3 i 9 – suma cyfr; 4 518: 4+5+1+8 = 18, dzieli się przez 9 i przez 3.">
+      <rect x="8" y="8" width="188" height="204" rx="12" class="f1 s1"/>
+      <rect x="204" y="8" width="188" height="204" rx="12" class="f3 s3"/>
+      <text x="102" y="34" class="tx-b" text-anchor="middle">patrz na koniec</text>
+      <text x="22" y="70" class="tx">2 → 0, 2, 4, 6, 8</text>
+      <text x="22" y="100" class="tx">5 → 0 lub 5</text>
+      <text x="22" y="130" class="tx">10 → 0</text>
+      <text x="22" y="160" class="tx">4 → dwie ostatnie</text>
+      <text x="22" y="192" class="tx-s">13<tspan class="t2">16</tspan>: 16 : 4 = 4 ✓</text>
+      <text x="298" y="34" class="tx-b" text-anchor="middle">dodaj cyfry</text>
+      <text x="298" y="70" class="tx" text-anchor="middle">3 i 9 → suma cyfr</text>
+      <text x="298" y="112" class="tx-b" text-anchor="middle">4 518</text>
+      <text x="298" y="146" class="tx" text-anchor="middle">4 + 5 + 1 + 8 = 18</text>
+      <text x="298" y="180" class="tx t3" text-anchor="middle">18 : 9 ✓  18 : 3 ✓</text>
+    </svg>`,
+    text: `<p>Przy 2, 5 i 10 wystarczy spojrzeć na <b>ostatnią cyfrę</b>. Przy 4 – na liczbę z <b>dwóch ostatnich</b> cyfr.</p>
+      <p>Przy 3 i 9 <b>dodajesz wszystkie cyfry</b>. Jeśli suma dzieli się przez 3 – cała liczba też. Jeśli suma dzieli się przez 9 – cała liczba też.</p>`,
+    remember: '2, 5, 10 – ostatnia cyfra · 4 – dwie ostatnie cyfry · 3 i 9 – suma cyfr.',
+    hook: 'Dwójka, piątka i dziesiątka patrzą tylko na ogon liczby. Trójka i dziewiątka są dokładne – liczą wszystkie cyfry.',
+    check: { q: 'Czy 2 034 dzieli się przez 3?', options: ['tak, bo suma cyfr to 9', 'nie, bo kończy się cyfrą 4', 'nie, bo jest parzysta'], answer: 0, explain: '2 + 0 + 3 + 4 = 9, a 9 dzieli się przez 3. Ostatnia cyfra nie ma tu znaczenia.' },
+  },
+  {
+    title: 'Liczby pierwsze – tylko dwa dzielniki',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Liczby od 1 do 30 w trzech rzędach. Na zielono liczby pierwsze: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29. Liczba 1 jest szara – ani pierwsza, ani złożona.">
+      <g class="ln-thin">
+        <rect x="21" y="10" width="34" height="34" rx="5"/><rect x="129" y="10" width="34" height="34" rx="5"/><rect x="201" y="10" width="34" height="34" rx="5"/><rect x="273" y="10" width="34" height="34" rx="5"/><rect x="309" y="10" width="34" height="34" rx="5"/><rect x="345" y="10" width="34" height="34" rx="5"/>
+        <rect x="57" y="50" width="34" height="34" rx="5"/><rect x="129" y="50" width="34" height="34" rx="5"/><rect x="165" y="50" width="34" height="34" rx="5"/><rect x="201" y="50" width="34" height="34" rx="5"/><rect x="273" y="50" width="34" height="34" rx="5"/><rect x="345" y="50" width="34" height="34" rx="5"/>
+        <rect x="21" y="90" width="34" height="34" rx="5"/><rect x="57" y="90" width="34" height="34" rx="5"/><rect x="129" y="90" width="34" height="34" rx="5"/><rect x="165" y="90" width="34" height="34" rx="5"/><rect x="201" y="90" width="34" height="34" rx="5"/><rect x="237" y="90" width="34" height="34" rx="5"/><rect x="273" y="90" width="34" height="34" rx="5"/><rect x="345" y="90" width="34" height="34" rx="5"/>
+      </g>
+      <g class="f3 s3">
+        <rect x="57" y="10" width="34" height="34" rx="5"/><rect x="93" y="10" width="34" height="34" rx="5"/><rect x="165" y="10" width="34" height="34" rx="5"/><rect x="237" y="10" width="34" height="34" rx="5"/>
+        <rect x="21" y="50" width="34" height="34" rx="5"/><rect x="93" y="50" width="34" height="34" rx="5"/><rect x="237" y="50" width="34" height="34" rx="5"/><rect x="309" y="50" width="34" height="34" rx="5"/>
+        <rect x="93" y="90" width="34" height="34" rx="5"/><rect x="309" y="90" width="34" height="34" rx="5"/>
+      </g>
+      <g class="tx" text-anchor="middle">
+        <text x="38" y="33" class="tx-s">1</text><text x="74" y="33">2</text><text x="110" y="33">3</text><text x="146" y="33">4</text><text x="182" y="33">5</text><text x="218" y="33">6</text><text x="254" y="33">7</text><text x="290" y="33">8</text><text x="326" y="33">9</text><text x="362" y="33">10</text>
+        <text x="38" y="73">11</text><text x="74" y="73">12</text><text x="110" y="73">13</text><text x="146" y="73">14</text><text x="182" y="73">15</text><text x="218" y="73">16</text><text x="254" y="73">17</text><text x="290" y="73">18</text><text x="326" y="73">19</text><text x="362" y="73">20</text>
+        <text x="38" y="113">21</text><text x="74" y="113">22</text><text x="110" y="113">23</text><text x="146" y="113">24</text><text x="182" y="113">25</text><text x="218" y="113">26</text><text x="254" y="113">27</text><text x="290" y="113">28</text><text x="326" y="113">29</text><text x="362" y="113">30</text>
+      </g>
+      <rect x="21" y="142" width="18" height="18" rx="4" class="f3 s3"/>
+      <text x="46" y="156" class="tx-s">pierwsze – dokładnie 2 dzielniki (1 i ona sama)</text>
+      <text x="21" y="182" class="tx-s">1 – ani pierwsza, ani złożona · reszta – złożone</text>
+    </svg>`,
+    text: `<p><b>Liczba pierwsza</b> ma dokładnie dwa dzielniki: 1 i samą siebie, np. 7 (1 i 7). <b>Liczba złożona</b> ma więcej dzielników, np. 15 (1, 3, 5, 15).</p>
+      <p>2 to jedyna parzysta liczba pierwsza – każda inna liczba parzysta dzieli się przez 2, więc jest złożona. Cechy podzielności pomagają: 51 ma sumę cyfr 6, więc dzieli się przez 3 – jest złożona.</p>`,
+    remember: 'Liczby pierwsze mniejsze od 30: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29.',
+    hook: 'Liczba pierwsza jest „nie do rozłożenia” – kropek nie ułożysz w prostokąt z więcej niż jednym rzędem.',
+    check: { q: 'Która liczba jest pierwsza?', options: ['21', '23', '25'], answer: 1, explain: '23 dzieli się tylko przez 1 i 23. 21 = 3 · 7, 25 = 5 · 5.' },
+  },
+  {
+    title: 'NWD i NWW – kiedy się przydają?',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Oś od 0 do 24. Nad osią skoki co 4, pod osią skoki co 6. Spotykają się w 12 i 24. Najmniejsza wspólna wielokrotność 4 i 6 to 12.">
+      <line x1="14" y1="100" x2="392" y2="100" class="ln"/>
+      <g class="ln s1">
+        <path d="M20,96 C30,64 70,64 80,96"/><path d="M80,96 C90,64 130,64 140,96"/><path d="M140,96 C150,64 190,64 200,96"/><path d="M200,96 C210,64 250,64 260,96"/><path d="M260,96 C270,64 310,64 320,96"/><path d="M320,96 C330,64 370,64 380,96"/>
+      </g>
+      <g class="ln s2">
+        <path d="M20,104 C35,146 95,146 110,104"/><path d="M110,104 C125,146 185,146 200,104"/><path d="M200,104 C215,146 275,146 290,104"/><path d="M290,104 C305,146 365,146 380,104"/>
+      </g>
+      <text x="20" y="40" class="tx-b t1">skoki co 4</text>
+      <text x="20" y="180" class="tx-b t2">skoki co 6</text>
+      <circle cx="200" cy="100" r="9" class="f3 s3 sw"/><circle cx="380" cy="100" r="9" class="f3 s3 sw"/>
+      <text x="200" y="56" class="tx-b t3" text-anchor="middle">12</text><text x="380" y="56" class="tx-b t3" text-anchor="middle">24</text>
+      <text x="20" y="124" class="tx-s" text-anchor="middle">0</text>
+      <text x="290" y="190" class="tx-s" text-anchor="middle">NWW(4, 6) = 12</text>
+    </svg>`,
+    text: `<p><b>NWW</b> (najmniejsza wspólna wielokrotność) – pierwsze miejsce, w którym spotykają się skoki obu liczb. Autobus A jeździ co 4 minuty, B co 6 minut. Odjechały razem – znów odjadą razem za 12 minut.</p>
+      <p><b>NWD</b> (największy wspólny dzielnik) – gdy dzielisz na jak najwięcej jednakowych paczek. Masz 24 jabłka i 36 gruszek: NWD(24, 36) = 12, więc zrobisz 12 paczek po 2 jabłka i 3 gruszki.</p>`,
+    remember: 'NWD – dzielimy na jak najwięcej równych części. NWW – szukamy, kiedy coś znów wypadnie razem.',
+    hook: 'Wielo-krotność – „wiele razy” w przód, aż się spotkają. Dzielnik – „dzielimy” na paczki.',
+    check: { q: 'Ania ma trening co 2 dni, a Ola co 3 dni. Dziś były razem. Za ile dni znów spotkają się na treningu?', options: ['za 5 dni', 'za 6 dni', 'za 3 dni'], answer: 1, explain: 'NWW(2, 3) = 6. Ania: 2, 4, 6… Ola: 3, 6… – spotkają się za 6 dni.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['matematyka/dziesietne'] = [
+  {
+    title: 'Całość na 10 części – dziesiąte',
+    svg: `<svg viewBox="0 0 400 170" role="img" aria-label="Pasek podzielony na 10 równych części, 3 części zamalowane. 3/10 = 0,3 – trzy dziesiąte.">
+      <g class="ln-thin"><rect x="20" y="30" width="36" height="50"/><rect x="56" y="30" width="36" height="50"/><rect x="92" y="30" width="36" height="50"/><rect x="128" y="30" width="36" height="50"/><rect x="164" y="30" width="36" height="50"/><rect x="200" y="30" width="36" height="50"/><rect x="236" y="30" width="36" height="50"/><rect x="272" y="30" width="36" height="50"/><rect x="308" y="30" width="36" height="50"/><rect x="344" y="30" width="36" height="50"/></g>
+      <g class="f2 s2"><rect x="20" y="30" width="36" height="50"/><rect x="56" y="30" width="36" height="50"/><rect x="92" y="30" width="36" height="50"/></g>
+      <rect x="20" y="30" width="360" height="50" class="ln"/>
+      <text x="200" y="20" class="tx-s" text-anchor="middle">1 całość = 10 dziesiątych</text>
+      <text x="200" y="120" class="tx-b" text-anchor="middle"><tspan class="t2">3/10</tspan> = <tspan class="t2">0,3</tspan></text>
+      <text x="200" y="150" class="tx" text-anchor="middle">„trzy dziesiąte” albo „zero przecinek trzy”</text>
+    </svg>`,
+    text: `<p>Ułamki o mianownikach 10, 100, 1000 można zapisać inaczej – <b>z przecinkiem</b>. To <b>ułamki dziesiętne</b>. Spotykasz je codziennie: na metkach (3,49 zł), na wadze (1,5 kg), na termometrze (36,6°C).</p>
+      <p>Przed przecinkiem są całości. Pierwsza cyfra po przecinku to <b>części dziesiąte</b>: 0,3 = 3/10.</p>`,
+    remember: '0,1 = 1/10 – jedna dziesiąta. Przecinek oddziela całości od części.',
+    hook: 'Przecinek to płot: z lewej całe ciastka, z prawej – okruszki.',
+    check: { q: 'Jak zapisać 9/10 w postaci dziesiętnej?', options: ['0,09', '0,9', '9,10'], answer: 1, explain: 'Mianownik 10 – jedna cyfra po przecinku: 0,9.' },
+  },
+  {
+    title: 'Dziesiąte, setne, tysięczne',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Tabela miejsc: całości 4, przecinek, części dziesiąte 3, setne 6, tysięczne puste. 4,36 = 4 i 36/100. Przykład: 23/100 = 0,23, 3/100 = 0,03.">
+      <rect x="20" y="14" width="80" height="96" rx="8" class="f1 s1"/>
+      <rect x="120" y="14" width="80" height="96" rx="8" class="f2 s2"/>
+      <rect x="208" y="14" width="80" height="96" rx="8" class="f3 s3"/>
+      <rect x="296" y="14" width="80" height="96" rx="8" class="f5 s5"/>
+      <g class="tx-s" text-anchor="middle"><text x="60" y="36">całości</text><text x="160" y="36">dziesiąte</text><text x="248" y="36">setne</text><text x="336" y="36">tysięczne</text></g>
+      <g class="tx-b" text-anchor="middle"><text x="60" y="84">4</text><text x="110" y="84">,</text><text x="160" y="84">3</text><text x="248" y="84">6</text></g>
+      <text x="200" y="140" class="tx" text-anchor="middle">4,36 = 4 i 36/100</text>
+      <text x="110" y="168" class="tx" text-anchor="middle">23/100 = 0,23</text><text x="290" y="168" class="tx" text-anchor="middle">3/100 = 0,<tspan class="t2">0</tspan>3</text>
+      <text x="200" y="192" class="tx-s" text-anchor="middle">ile zer w mianowniku – tyle cyfr po przecinku</text>
+    </svg>`,
+    text: `<p>Za przecinkiem są kolejno: <b>dziesiąte</b>, <b>setne</b>, <b>tysięczne</b>. 4,36 to 4 całe, 3 dziesiąte i 6 setnych, czyli 4 i 36/100.</p>
+      <p>Mianownik 100 to dwie cyfry po przecinku. Gdy licznik jest jednocyfrowy, puste miejsce zajmuje zero: 3/100 = 0,03.</p>`,
+    remember: 'Mianownik 10 – 1 cyfra po przecinku, 100 – 2 cyfry, 1000 – 3 cyfry.',
+    hook: 'Licz zera w mianowniku jak schodki – tyle kroków robisz za przecinkiem.',
+    check: { q: 'Ile to jest 23/100?', options: ['2,3', '0,23', '0,023'], answer: 1, explain: 'Mianownik 100 – dwie cyfry po przecinku: 0,23.' },
+  },
+  {
+    title: 'Złote i grosze, metry i centymetry',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Przykłady: 3 zł 45 gr = 3,45 zł; 2 zł 5 gr = 2,05 zł, a nie 2,5 zł; 1 m 20 cm = 1,2 m; 2 kg 500 g = 2,5 kg.">
+      <rect x="10" y="10" width="380" height="44" rx="10" class="f4 s4"/>
+      <rect x="10" y="60" width="380" height="44" rx="10" class="f4 s4"/>
+      <rect x="10" y="110" width="380" height="44" rx="10" class="f1 s1"/>
+      <rect x="10" y="160" width="380" height="44" rx="10" class="f3 s3"/>
+      <text x="26" y="38" class="tx">🪙 3 zł 45 gr</text><text x="374" y="38" class="tx-b" text-anchor="end">3,45 zł</text>
+      <text x="26" y="88" class="tx">🪙 2 zł 5 gr</text><text x="374" y="88" class="tx-b" text-anchor="end">2,<tspan class="t2">0</tspan>5 zł</text>
+      <text x="26" y="138" class="tx">📏 1 m 20 cm</text><text x="374" y="138" class="tx-b" text-anchor="end">1,20 m = 1,2 m</text>
+      <text x="26" y="188" class="tx">⚖️ 2 kg 500 g</text><text x="374" y="188" class="tx-b" text-anchor="end">2,5 kg</text>
+    </svg>`,
+    text: `<p>1 zł = 100 gr, więc grosz to <b>setna</b> część złotego. Grosze zajmują dwa miejsca po przecinku: 45 gr = 0,45 zł, a 5 gr = 0,05 zł.</p>
+      <p>Tak samo z metrami (1 m = 100 cm) i kilogramami (1 kg = 1000 g – trzy miejsca: 500 g = 0,500 kg = 0,5 kg).</p>`,
+    remember: 'Grosze i centymetry – dwie cyfry po przecinku. 2 zł 5 gr = 2,05 zł, a 2,5 zł to 2 zł 50 gr.',
+    hook: 'Cena 2,05 zł „ma dziurę” na miejscu dziesiątych – tę dziurę zatyka zero.',
+    check: { q: '4 zł 8 gr to…', options: ['4,8 zł', '4,08 zł', '4,80 zł'], answer: 1, explain: '8 gr to 8 setnych złotego: 0,08 zł. Razem 4,08 zł. 4,8 zł to 4 zł 80 gr.' },
+  },
+  {
+    title: 'Która większa? Wyrównaj liczbę cyfr',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Porównanie 0,5 i 0,45: po dopisaniu zera 0,50 i 0,45, więc 0,5 jest większe. Na osi od 0 do 1 punkt 0,5 leży na prawo od 0,45.">
+      <text x="110" y="34" class="tx-b" text-anchor="middle">0,5 ? 0,45</text>
+      <text x="290" y="34" class="tx-b" text-anchor="middle">0,5<tspan class="t2">0</tspan> &gt; 0,45</text>
+      <text x="200" y="34" class="tx-b" text-anchor="middle">→</text>
+      <line x1="20" y1="110" x2="380" y2="110" class="ln"/>
+      <g class="ln"><line x1="20" y1="102" x2="20" y2="118"/><line x1="56" y1="105" x2="56" y2="115"/><line x1="92" y1="105" x2="92" y2="115"/><line x1="128" y1="105" x2="128" y2="115"/><line x1="164" y1="105" x2="164" y2="115"/><line x1="200" y1="102" x2="200" y2="118"/><line x1="236" y1="105" x2="236" y2="115"/><line x1="272" y1="105" x2="272" y2="115"/><line x1="308" y1="105" x2="308" y2="115"/><line x1="344" y1="105" x2="344" y2="115"/><line x1="380" y1="102" x2="380" y2="118"/></g>
+      <circle cx="182" cy="110" r="7" class="f1 s1 sw"/><circle cx="200" cy="110" r="7" class="f2 s2 sw"/>
+      <text x="168" y="84" class="tx t1" text-anchor="end">0,45</text>
+      <text x="214" y="84" class="tx t2">0,5</text>
+      <text x="20" y="140" class="tx-s" text-anchor="middle">0</text><text x="380" y="140" class="tx-s" text-anchor="middle">1</text>
+      <text x="200" y="176" class="tx" text-anchor="middle">2,09 &lt; 2,10 · 3,2 &gt; 3,15</text>
+    </svg>`,
+    text: `<p>Porównujesz od lewej: najpierw całości, potem dziesiąte, potem setne. Najprościej <b>dopisać zera</b> na końcu, żeby obie liczby miały tyle samo cyfr po przecinku – zera na końcu nic nie zmieniają (0,5 = 0,50).</p>
+      <p>Uwaga: 0,45 nie jest większe od 0,5! 4 dziesiąte to mniej niż 5 dziesiątych.</p>`,
+    remember: 'Dopisz zera, aż liczby będą miały tyle samo cyfr po przecinku – i porównuj jak zwykłe liczby.',
+    hook: 'Więcej cyfr po przecinku nie znaczy „więcej” – 0,999 to wciąż mniej niż 1.',
+    check: { q: 'Co jest większe: 3,2 czy 3,15?', options: ['3,2', '3,15', 'są równe'], answer: 0, explain: '3,2 = 3,20, a 3,20 > 3,15 (2 dziesiąte to więcej niż 1 dziesiąta).' },
+  },
+  {
+    title: 'Dodawanie i odejmowanie – przecinek pod przecinkiem',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Dodawanie pisemne: 4,25 plus 1,50 równa się 5,75, przecinki jeden pod drugim. Obok: 0,7 + 0,6 = 1,3, bo 13 dziesiątych to 1 całość i 3 dziesiąte.">
+      <line x1="97" y1="14" x2="97" y2="150" class="ln s2 dash"/>
+      <g class="tx-b" text-anchor="end"><text x="92" y="50">4</text><text x="60" y="86">+</text><text x="92" y="86">1</text><text x="92" y="132">5</text></g>
+      <g class="tx-b"><text x="93" y="50">,</text><text x="103" y="50">25</text><text x="93" y="86">,</text><text x="103" y="86">5<tspan class="t2">0</tspan></text><text x="93" y="132">,</text><text x="103" y="132">75</text></g>
+      <line x1="40" y1="100" x2="150" y2="100" class="ln"/>
+      <text x="96" y="176" class="tx-s" text-anchor="middle">przecinek pod przecinkiem</text>
+      <rect x="200" y="24" width="190" height="130" rx="12" class="f4 s4"/>
+      <text x="295" y="58" class="tx-b" text-anchor="middle">0,7 + 0,6 = 1,3</text>
+      <text x="295" y="90" class="tx-s" text-anchor="middle">7 dziesiątych + 6 dziesiątych</text>
+      <text x="295" y="112" class="tx-s" text-anchor="middle">= 13 dziesiątych</text>
+      <text x="295" y="136" class="tx-s" text-anchor="middle">= 1 całość i 3 dziesiąte</text>
+    </svg>`,
+    text: `<p>Dodajesz całości do całości, dziesiąte do dziesiątych, setne do setnych. Pisemnie ustaw liczby tak, żeby <b>przecinek był pod przecinkiem</b>, a brakujące miejsca uzupełnij zerami: 1,5 = 1,50.</p>
+      <p>Z odejmowaniem tak samo: 5 − 0,3 = 4,7 (5 całych to 4 całe i 10 dziesiątych).</p>`,
+    remember: 'Przecinek pod przecinkiem · brakujące miejsca – zera · 10 dziesiątych = 1 całość.',
+    hook: 'Pieniądze pomagają: 0,70 zł + 0,60 zł = 1,30 zł – 70 gr i 60 gr to złotówka i 30 groszy.',
+    check: { q: 'Ile wynosi 2,6 + 0,5?', options: ['2,11', '3,1', '2,65'], answer: 1, explain: '6 dziesiątych + 5 dziesiątych = 11 dziesiątych = 1 całość i 1 dziesiąta. 2 + 1,1 = 3,1.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['matematyka/bryly'] = [
+  {
+    title: 'Bryły dookoła ciebie',
+    svg: `<svg viewBox="0 0 400 250" role="img" aria-label="Pięć brył z przykładami: prostopadłościan – pudełko, sześcian – kostka do gry, walec – puszka, stożek – wafel do lodów, kula – piłka.">
+      <path d="M30,50 L110,50 L110,100 L30,100 Z" class="f1 s1 sw"/><path d="M30,50 L50,34 L130,34 L110,50 Z M110,50 L130,34 L130,84 L110,100 Z" class="f1 s1 sw"/>
+      <path d="M170,46 L224,46 L224,100 L170,100 Z" class="f2 s2 sw"/><path d="M170,46 L188,32 L242,32 L224,46 Z M224,46 L242,32 L242,86 L224,100 Z" class="f2 s2 sw"/>
+      <path d="M300,40 L300,96 A30,10 0 0 0 360,96 L360,40" class="f3 s3 sw"/><ellipse cx="330" cy="40" rx="30" ry="10" class="f3 s3 sw"/>
+      <path d="M130,150 L100,206 A30,10 0 0 0 160,206 Z" class="f4 s4 sw"/>
+      <circle cx="270" cy="180" r="30" class="f5 s5 sw"/><ellipse cx="270" cy="180" rx="30" ry="9" class="ln-thin dash"/>
+      <g class="tx" text-anchor="middle"><text x="80" y="126">prostopadłościan</text><text x="206" y="126">sześcian</text><text x="330" y="126">walec</text><text x="130" y="236">stożek</text><text x="270" y="236">kula</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="80" y="144">pudełko</text><text x="206" y="144">kostka do gry</text><text x="330" y="144">puszka</text></g>
+    </svg>`,
+    text: `<p><b>Bryła</b> to figura przestrzenna – ma długość, szerokość i wysokość, można ją wziąć do ręki. Pudełko na buty i cegła to <b>prostopadłościany</b>, kostka do gry to <b>sześcian</b>, puszka – <b>walec</b>, wafel do lodów – <b>stożek</b>, piłka – <b>kula</b>.</p>`,
+    remember: 'Prostopadłościan i sześcian mają płaskie ściany. Walec, stożek i kula mają powierzchnie zaokrąglone.',
+    hook: 'Rozejrzyj się po kuchni: karton mleka – prostopadłościan, kostka cukru – prawie sześcian, puszka – walec.',
+    check: { q: 'Jaki kształt ma globus?', options: ['walca', 'kuli', 'stożka'], answer: 1, explain: 'Globus to model Ziemi – ma kształt kuli.' },
+  },
+  {
+    title: 'Ściany, krawędzie, wierzchołki',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Prostopadłościan. Przednia ściana jest zamalowana, jedna krawędź pogrubiona, jeden wierzchołek zaznaczony kropką. Prostopadłościan ma 6 ścian, 12 krawędzi i 8 wierzchołków.">
+      <rect x="30" y="80" width="140" height="90" class="f1"/>
+      <path d="M30,170 L80,130 L220,130 M80,40 L80,130" class="ln dash"/>
+      <path d="M30,80 L170,80 L170,170 L30,170 Z M30,80 L80,40 L220,40 L170,80 M220,40 L220,130 L170,170" class="ln"/>
+      <line x1="220" y1="40" x2="220" y2="130" class="ln s2" stroke-width="6"/>
+      <circle cx="170" cy="170" r="8" class="t3"/>
+      <text x="250" y="70" class="tx-b t1">6 ścian</text>
+      <text x="250" y="110" class="tx-b t2">12 krawędzi</text>
+      <text x="250" y="150" class="tx-b t3">8 wierzchołków</text>
+      <text x="200" y="194" class="tx-s" text-anchor="middle">linią przerywaną – krawędzie niewidoczne</text>
+    </svg>`,
+    text: `<ul>
+      <li><b>Ściany</b> – 6 prostokątów. Ściany naprzeciw siebie są takie same. Ściana, na której bryła stoi, to <b>podstawa</b>.</li>
+      <li><b>Krawędzie</b> – 12 odcinków, w których stykają się ściany: 4 na górze, 4 na dole, 4 pionowe.</li>
+      <li><b>Wierzchołki</b> – 8 „rogów”. Z każdego wychodzą 3 krawędzie.</li>
+    </ul>`,
+    remember: 'Prostopadłościan: 6 ścian, 12 krawędzi, 8 wierzchołków.',
+    hook: '6 – 12 – 8: ścian tyle, ile oczek na kostce do gry (najwięcej), krawędzi – ile miesięcy w roku, wierzchołków – ile nóg ma pająk.',
+    check: { q: 'Ile krawędzi ma prostopadłościan?', options: ['8', '12', '6'], answer: 1, explain: '4 krawędzie na górze, 4 na dole i 4 pionowe – razem 12.' },
+  },
+  {
+    title: 'Sześcian – prostopadłościan z kwadratów',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Duża ramka „prostopadłościany” z rysunkiem pudełka. W środku mniejsza ramka „sześciany” z rysunkiem sześcianu. Każdy sześcian jest prostopadłościanem.">
+      <rect x="8" y="8" width="384" height="194" rx="16" class="f1 s1"/>
+      <rect x="206" y="40" width="176" height="150" rx="14" class="f2 s2"/>
+      <text x="22" y="32" class="tx-b t1">prostopadłościany</text>
+      <text x="294" y="64" class="tx-b t2" text-anchor="middle">sześciany</text>
+      <path d="M30,100 L150,100 L150,160 L30,160 Z M30,100 L60,76 L180,76 L150,100 M180,76 L180,136 L150,160" class="ln"/>
+      <path d="M254,104 L314,104 L314,164 L254,164 Z M254,104 L278,84 L338,84 L314,104 M338,84 L338,144 L314,164" class="ln"/>
+      <text x="100" y="186" class="tx-s" text-anchor="middle">ściany – prostokąty</text>
+      <text x="294" y="182" class="tx-s" text-anchor="middle">ściany – kwadraty</text>
+    </svg>`,
+    text: `<p><b>Sześcian</b> to prostopadłościan, którego wszystkie 6 ścian to <b>jednakowe kwadraty</b>. Wszystkie jego 12 krawędzi ma tę samą długość.</p>
+      <p>Dlatego każdy sześcian jest prostopadłościanem – ale nie odwrotnie. Pudełko na buty nie jest sześcianem.</p>`,
+    remember: 'Każdy sześcian jest prostopadłościanem. Nie każdy prostopadłościan jest sześcianem.',
+    hook: 'Tak jak każdy kwadrat jest prostokątem – każdy sześcian jest prostopadłościanem.',
+    check: { q: 'Prawda czy fałsz? Każdy prostopadłościan jest sześcianem.', options: ['Prawda', 'Fałsz'], answer: 1, explain: 'Odwrotnie: każdy sześcian jest prostopadłościanem. Prostopadłościan może mieć ściany, które nie są kwadratami.' },
+  },
+  {
+    title: 'Suma krawędzi – szkielet z drutu',
+    svg: `<svg viewBox="0 0 400 240" role="img" aria-label="Prostopadłościan o krawędziach 5 cm, 3 cm i 2 cm. Suma długości krawędzi: 4 · 5 + 4 · 3 + 4 · 2 = 40 cm.">
+      <path d="M60,180 L105,135 L305,135 M105,55 L105,135" class="ln dash"/>
+      <path d="M60,100 L260,100 L260,180 L60,180 Z M60,100 L105,55 L305,55 L260,100 M305,55 L305,135 L260,180" class="ln"/>
+      <g class="ln s1 sw"><line x1="60" y1="100" x2="260" y2="100"/><line x1="60" y1="180" x2="260" y2="180"/><line x1="105" y1="55" x2="305" y2="55"/></g>
+      <text x="160" y="200" class="tx-b t1" text-anchor="middle">5 cm</text>
+      <text x="52" y="146" class="tx-b t3" text-anchor="end">2 cm</text>
+      <text x="292" y="176" class="tx-b t2">3 cm</text>
+      <text x="200" y="230" class="tx" text-anchor="middle">4 · 5 + 4 · 3 + 4 · 2 = 40 cm</text>
+    </svg>`,
+    text: `<p>Krawędzie prostopadłościanu tworzą 3 grupy po 4 krawędzie równej długości. Żeby policzyć, ile drutu potrzeba na szkielet, mnożysz każdą długość przez 4 i dodajesz.</p>
+      <p>W sześcianie wszystkie 12 krawędzi są równe: krawędź 4 cm → 12 · 4 = 48 cm.</p>`,
+    remember: 'Prostopadłościan: 4 · a + 4 · b + 4 · c. Sześcian: 12 · a.',
+    check: { q: 'Sześcian ma krawędź 3 cm. Ile wynosi suma długości wszystkich jego krawędzi?', options: ['18 cm', '36 cm', '27 cm'], answer: 1, explain: '12 krawędzi po 3 cm: 12 · 3 = 36 cm.' },
+  },
+  {
+    title: 'Siatka – pudełko rozłożone na płasko',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Po lewej siatka sześcianu w kształcie krzyża z podpisami: tył, dno, przód, góra, lewa i prawa ściana. Po prawej sześć kwadratów w prostokącie 2 na 3, przekreślone – z tego nie złożysz sześcianu.">
+      <g class="f4 s4 sw">
+        <rect x="80" y="10" width="44" height="44"/><rect x="80" y="54" width="44" height="44"/><rect x="80" y="98" width="44" height="44"/><rect x="80" y="142" width="44" height="44"/>
+        <rect x="36" y="54" width="44" height="44"/><rect x="124" y="54" width="44" height="44"/>
+      </g>
+      <g class="tx-s" text-anchor="middle"><text x="102" y="37">tył</text><text x="102" y="81">dno</text><text x="102" y="125">przód</text><text x="102" y="169">góra</text><text x="58" y="81">lewa</text><text x="146" y="81">prawa</text></g>
+      <text x="102" y="214" class="tx-b t3" text-anchor="middle">✓ siatka sześcianu</text>
+      <g class="f4 s4 sw">
+        <rect x="240" y="54" width="44" height="44"/><rect x="284" y="54" width="44" height="44"/><rect x="328" y="54" width="44" height="44"/>
+        <rect x="240" y="98" width="44" height="44"/><rect x="284" y="98" width="44" height="44"/><rect x="328" y="98" width="44" height="44"/>
+      </g>
+      <path d="M244,58 L368,138 M368,58 L244,138" class="ln s2" stroke-width="4"/>
+      <text x="306" y="184" class="tx-b t2" text-anchor="middle">✗ to nie siatka</text>
+      <text x="306" y="210" class="tx-s" text-anchor="middle">kwadrat 2 × 2 – nie złożysz</text>
+    </svg>`,
+    text: `<p><b>Siatka</b> bryły to jej ściany rozłożone na płasko – jak rozcięte pudełko. Z siatki można skleić model bryły.</p>
+      <p>Siatka sześcianu to 6 jednakowych kwadratów, ale nie każdy układ 6 kwadratów się nadaje. Sześcian ma 11 różnych siatek. Siatka prostopadłościanu to 6 prostokątów – po dwa takie same.</p>`,
+    remember: 'Siatka sześcianu: 6 kwadratów. Jeśli 4 kwadraty tworzą większy kwadrat 2 × 2 – to nie jest siatka sześcianu.',
+    hook: 'Sprawdź w wyobraźni: wybierz dno i „zaginaj” ściany do góry. Jeśli dwie ściany trafiają w to samo miejsce – to nie siatka.',
+    check: { q: 'Z ilu kwadratów składa się siatka sześcianu?', options: ['4', '6', '8'], answer: 1, explain: 'Sześcian ma 6 ścian, więc jego siatka ma 6 kwadratów.' },
+  },
+];

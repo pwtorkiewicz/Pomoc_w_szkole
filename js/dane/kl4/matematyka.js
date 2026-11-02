@@ -266,6 +266,81 @@
 
       // ------------------------------------------------------------------
       {
+        id: 'dzielniki',
+        name: 'Dzielniki, wielokrotności i cechy podzielności',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 3 (podzielność przez 2, 3, 4, 5, 9, 10), 4 (liczby pierwsze i złożone – jedno- i dwucyfrowe), 6 (wspólne dzielniki i wielokrotności dwóch liczb, NWD i NWW – bez rozkładu na czynniki pierwsze), 7 (dzielniki i wielokrotności w obliczeniach i rozumowaniach), 8 (liczebność zbioru liczb z niewielkiego zakresu). Rozkład na czynniki pierwsze (wym. 5) – później.' + WYBOR,
+        theory: `
+          <h3>Dzielnik i wielokrotność</h3>
+          <p>Liczba 3 jest <b>dzielnikiem</b> liczby 12, bo 12 : 3 = 4 bez reszty. Mówimy też: 12 <b>dzieli się przez</b> 3 i 12 jest <b>wielokrotnością</b> liczby 3.</p>
+          <ul>
+            <li>Dzielniki liczby 12: <span class="f">1, 2, 3, 4, 6, 12</span>. Szukaj ich parami: 1 · 12, 2 · 6, 3 · 4.</li>
+            <li>Wielokrotności liczby 6: <span class="f">6, 12, 18, 24, 30, …</span> – to wyniki mnożenia 6 · 1, 6 · 2, 6 · 3… Jest ich nieskończenie wiele.</li>
+          </ul>
+          <div class="tip">💡 Każda liczba dzieli się przez 1 i przez samą siebie.</div>
+          <h3>Cechy podzielności – sprawdzasz bez dzielenia</h3>
+          <table>
+            <tr><th>Przez</th><th>Liczba dzieli się, gdy…</th><th>Przykład</th></tr>
+            <tr><td>2</td><td>ostatnia cyfra to 0, 2, 4, 6 lub 8 (liczba parzysta)</td><td>3 578</td></tr>
+            <tr><td>5</td><td>ostatnia cyfra to 0 lub 5</td><td>345, 340</td></tr>
+            <tr><td>10</td><td>ostatnia cyfra to 0</td><td>2 030</td></tr>
+            <tr><td>4</td><td>liczba z dwóch ostatnich cyfr dzieli się przez 4</td><td>1 316 (16 : 4 = 4)</td></tr>
+            <tr><td>3</td><td>suma cyfr dzieli się przez 3</td><td>5 271 (5 + 2 + 7 + 1 = 15)</td></tr>
+            <tr><td>9</td><td>suma cyfr dzieli się przez 9</td><td>4 518 (4 + 5 + 1 + 8 = 18)</td></tr>
+          </table>
+          <div class="tip">💡 Liczba podzielna przez 9 dzieli się też przez 3. Odwrotnie nie zawsze: 12 dzieli się przez 3, ale nie przez 9.</div>
+          <h3>Liczby pierwsze i złożone</h3>
+          <ul>
+            <li><b>Liczba pierwsza</b> ma dokładnie dwa dzielniki: 1 i samą siebie. Liczby pierwsze mniejsze od 30: <span class="f">2, 3, 5, 7, 11, 13, 17, 19, 23, 29</span>.</li>
+            <li><b>Liczba złożona</b> ma więcej niż dwa dzielniki, np. 15 (1, 3, 5, 15).</li>
+            <li>Liczby <b>0 i 1</b> nie są ani pierwsze, ani złożone.</li>
+          </ul>
+          <p>Cechy podzielności pomagają wykryć liczbę złożoną: 51 ma sumę cyfr 6, więc dzieli się przez 3 (51 = 3 · 17) – jest złożona.</p>
+          <h3>Wspólne dzielniki i wspólne wielokrotności</h3>
+          <ul>
+            <li>Dzielniki 12: 1, 2, 3, 4, 6, 12. Dzielniki 18: 1, 2, 3, 6, 9, 18. Wspólne: 1, 2, 3, 6. Największy wspólny dzielnik: <b>NWD(12, 18) = 6</b>.</li>
+            <li>Wielokrotności 4: 4, 8, <b>12</b>, 16, 20, <b>24</b>… Wielokrotności 6: 6, <b>12</b>, 18, <b>24</b>… Najmniejsza wspólna wielokrotność: <b>NWW(4, 6) = 12</b>.</li>
+          </ul>
+          <p><b>Kiedy NWD?</b> Gdy coś dzielimy na jak najwięcej jednakowych paczek bez resztek. <b>Kiedy NWW?</b> Gdy szukamy, kiedy dwa powtarzające się zdarzenia znów wypadną razem (np. odjazdy dwóch autobusów).</p>
+        `,
+        flashcards: [
+          ['Dzielnik liczby', 'Liczba, przez którą dana liczba dzieli się bez reszty, np. 4 jest dzielnikiem 12'],
+          ['Wielokrotność liczby 7', '7, 14, 21, 28, … – wyniki mnożenia 7 przez 1, 2, 3, 4, …'],
+          ['Podzielność przez 2', 'Ostatnia cyfra: 0, 2, 4, 6 lub 8'],
+          ['Podzielność przez 5', 'Ostatnia cyfra: 0 lub 5'],
+          ['Podzielność przez 10', 'Ostatnia cyfra: 0'],
+          ['Podzielność przez 4', 'Liczba z dwóch ostatnich cyfr dzieli się przez 4'],
+          ['Podzielność przez 3 i przez 9', 'Suma cyfr dzieli się przez 3 (przez 9)'],
+          ['Liczba pierwsza', 'Ma dokładnie dwa dzielniki: 1 i samą siebie, np. 2, 3, 5, 7, 11'],
+          ['Liczba złożona', 'Ma więcej niż dwa dzielniki, np. 4, 9, 15'],
+          ['NWD(12, 18)', '6 – największy wspólny dzielnik'],
+          ['NWW(4, 6)', '12 – najmniejsza wspólna wielokrotność'],
+        ],
+        questions: [
+          { id: 'znn2d2', q: 'Która liczba NIE jest dzielnikiem liczby 12?', options: ['5', '4', '6', '1'], answer: 0, explain: 'Dzielniki 12 to 1, 2, 3, 4, 6, 12. Przy dzieleniu 12 przez 5 zostaje reszta 2.' },
+          { id: 'sbiy9j', q: 'Ile dzielników ma liczba 18?', options: ['6', '4', '5', '3'], answer: 0, explain: 'Szukaj parami: 1 · 18, 2 · 9, 3 · 6. Dzielniki: 1, 2, 3, 6, 9, 18 – jest ich 6.' },
+          { id: '5wsrdh', q: 'Która liczba jest wielokrotnością liczby 7?', options: ['63', '27', '47', '71'], answer: 0, explain: '63 = 7 · 9. Pozostałe liczby przy dzieleniu przez 7 dają resztę.' },
+          { id: 'pncd31', q: 'Które liczby to kolejne wielokrotności liczby 6?', options: ['6, 12, 18, 24', '1, 2, 3, 6', '6, 16, 26, 36', '6, 11, 16, 21'], answer: 0, explain: '6 · 1 = 6, 6 · 2 = 12, 6 · 3 = 18, 6 · 4 = 24. Liczby 1, 2, 3, 6 to dzielniki 6, a nie wielokrotności.' },
+          { id: '8dowge', q: 'Która liczba jest podzielna przez 2?', options: ['3 578', '4 251', '7 003', '1 119'], answer: 0, explain: 'Liczba dzieli się przez 2, gdy jej ostatnia cyfra jest parzysta. 3 578 kończy się cyfrą 8.' },
+          { id: '5u2uyq', q: 'Która liczba dzieli się przez 5, ale NIE dzieli się przez 10?', options: ['345', '340', '342', '1 000'], answer: 0, explain: '345 kończy się cyfrą 5 – dzieli się przez 5, ale przez 10 nie (nie kończy się zerem). 342 nie dzieli się ani przez 5, ani przez 10.' },
+          { id: 'qbq35u', q: 'Która liczba jest podzielna przez 3?', options: ['5 271', '4 102', '2 501', '1 000'], answer: 0, explain: 'Suma cyfr 5 271: 5 + 2 + 7 + 1 = 15, a 15 dzieli się przez 3. Pozostałe sumy: 7, 8, 1.' },
+          { id: 'uksdsh', q: 'Która liczba jest podzielna przez 9?', options: ['4 518', '4 528', '3 333', '1 990'], answer: 0, explain: 'Suma cyfr 4 518 to 18 – dzieli się przez 9. 3 333 ma sumę 12: dzieli się przez 3, ale nie przez 9.' },
+          { id: 'ztteib', q: 'Która liczba jest podzielna przez 4?', options: ['1 316', '1 318', '2 410', '3 334'], answer: 0, explain: 'Patrzymy na dwie ostatnie cyfry: 16 dzieli się przez 4, a 18, 10 i 34 – nie.' },
+          { id: 'llplyn', q: 'Prawda czy fałsz?\nKażda liczba podzielna przez 9 jest podzielna przez 3.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '9 = 3 · 3. Jeśli liczba mieści w sobie całe dziewiątki, to mieści też całe trójki.' },
+          { id: 'hrxslx', q: 'Prawda czy fałsz?\nKażda liczba podzielna przez 3 jest podzielna przez 9.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Kontrprzykład: 12 dzieli się przez 3, ale nie dzieli się przez 9.' },
+          { id: 'bor7us', q: 'Która liczba jest liczbą pierwszą?', options: ['13', '15', '21', '27'], answer: 0, explain: '13 ma tylko dwa dzielniki: 1 i 13. 15 = 3 · 5, 21 = 3 · 7, 27 = 3 · 9 – to liczby złożone.' },
+          { id: '17697s', q: 'Która liczba jest liczbą złożoną?', options: ['51', '53', '47', '31'], answer: 0, explain: 'Suma cyfr 51 to 6, więc 51 dzieli się przez 3: 51 = 3 · 17. Liczby 53, 47 i 31 są pierwsze.' },
+          { id: 'wna5zh', q: 'Liczba 1 jest…', options: ['ani pierwsza, ani złożona', 'pierwsza', 'złożona'], answer: 0, explain: 'Liczba 1 ma tylko jeden dzielnik (samą siebie). Liczba pierwsza musi mieć dokładnie dwa dzielniki.' },
+          { id: 'd2nqkw', q: 'Ile wynosi największy wspólny dzielnik liczb 12 i 18?', options: ['6', '3', '2', '36'], answer: 0, explain: 'Wspólne dzielniki 12 i 18 to 1, 2, 3, 6. Największy z nich to 6.' },
+          { id: '3atsba', q: 'Ile wynosi najmniejsza wspólna wielokrotność liczb 4 i 6?', options: ['12', '24', '2', '10'], answer: 0, explain: 'Wielokrotności 4: 4, 8, 12… Wielokrotności 6: 6, 12… Pierwsza wspólna to 12. Liczba 24 też jest wspólną wielokrotnością, ale nie najmniejszą.' },
+          { id: 'lg29ul', q: 'Autobus linii A odjeżdża z przystanku co 15 minut, a linii B – co 20 minut. Oba odjechały razem o 8:00. O której znów odjadą razem?', options: ['o 9:00', 'o 8:35', 'o 8:20', 'o 8:15'], answer: 0, explain: 'Szukamy NWW(15, 20). Wielokrotności 15: 15, 30, 45, 60… Wielokrotności 20: 20, 40, 60… Pierwsza wspólna to 60 minut, czyli godzina: 9:00.' },
+          { id: 'affmiz', q: 'Masz 24 jabłka i 36 gruszek. Chcesz zrobić jak najwięcej jednakowych paczek (w każdej tyle samo jabłek i tyle samo gruszek), tak żeby nic nie zostało. Ile będzie paczek?', options: ['12', '6', '4', '72'], answer: 0, explain: 'Liczba paczek musi dzielić 24 i 36. Największy wspólny dzielnik to 12: w każdej paczce będą 2 jabłka i 3 gruszki.' },
+          { id: '6a5elj', q: 'Ile jest liczb dwucyfrowych podzielnych przez 10?', options: ['9', '10', '8', '90'], answer: 0, explain: 'To 10, 20, 30, 40, 50, 60, 70, 80, 90 – dziewięć liczb. 100 jest już trzycyfrowa.' },
+          { id: 'x933hs', q: 'Jaką cyfrę można wpisać w miejsce kratki, aby liczba 4■ była podzielna przez 3 i przez 5?', options: ['5', '0', '2', '8'], answer: 0, explain: 'Przez 5: ostatnia cyfra 0 lub 5. 40 ma sumę cyfr 4 – nie dzieli się przez 3. 45 ma sumę 9 – dzieli się przez 3. Pasuje 5.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
         id: 'miary',
         name: 'Długość, masa, czas i pieniądze',
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 2 Miary, wym. 1 (mierzenie odcinków), 2 (mm, cm, dm, m, km), 7 (g, dag, kg, t), 8 (obliczenia kalendarzowe), 9 (obliczenia zegarowe), 13 (moduł ekonomiczno-finansowy – proste obliczenia pieniężne: zakupy, reszta, kieszonkowe, porównywanie cen).' + WYBOR,
@@ -550,6 +625,125 @@
 
       // ------------------------------------------------------------------
       {
+        id: 'bryly',
+        name: 'Prostopadłościan i sześcian',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 18 (rozpoznawanie prostopadłościanu i sześcianu; walca, stożka i kuli), 19 (wierzchołki, krawędzie, ściany – tylko prostopadłościan i sześcian), 20 (tylko siatka prostopadłościanu i sześcianu, model z siatki); dz. 6 Myślenie matematyczne (suma długości krawędzi). Pole powierzchni i objętość (wym. 21–22), graniastosłupy i ostrosłupy – później.' + WYBOR,
+        theory: `
+          <h3>Bryły wokół nas</h3>
+          <p><b>Bryła</b> to figura przestrzenna – można ją wziąć do ręki, ma długość, szerokość i wysokość.</p>
+          <table>
+            <tr><th>Bryła</th><th>Przykład</th></tr>
+            <tr><td>prostopadłościan</td><td>pudełko na buty, cegła, karton mleka</td></tr>
+            <tr><td>sześcian</td><td>kostka do gry, kostka Rubika</td></tr>
+            <tr><td>walec</td><td>puszka, świeca</td></tr>
+            <tr><td>stożek</td><td>wafel do lodów, pachołek drogowy</td></tr>
+            <tr><td>kula</td><td>piłka, globus</td></tr>
+          </table>
+          <h3>Budowa prostopadłościanu</h3>
+          <ul>
+            <li><b>Ściany</b> – 6 prostokątów. Ściany naprzeciw siebie są takie same. Ścianę, na której bryła stoi, nazywamy <b>podstawą</b>.</li>
+            <li><b>Krawędzie</b> – 12 odcinków, w których stykają się ściany. Są 3 grupy po 4 krawędzie równej długości: długość, szerokość i wysokość.</li>
+            <li><b>Wierzchołki</b> – 8 punktów, w których stykają się krawędzie. Z każdego wierzchołka wychodzą 3 krawędzie.</li>
+          </ul>
+          <p><span class="f">6 ścian · 12 krawędzi · 8 wierzchołków</span></p>
+          <p>Na rysunku krawędzie, których nie widać (są z tyłu), rysujemy <b>linią przerywaną</b>.</p>
+          <h3>Sześcian</h3>
+          <p>Sześcian to prostopadłościan, którego wszystkie ściany są <b>jednakowymi kwadratami</b>. Wszystkie jego 12 krawędzi ma tę samą długość.</p>
+          <div class="tip">💡 Każdy sześcian jest prostopadłościanem, ale nie każdy prostopadłościan jest sześcianem.</div>
+          <h3>Suma długości krawędzi</h3>
+          <ul>
+            <li>Prostopadłościan o krawędziach 5 cm, 3 cm, 2 cm: <span class="f">4 · 5 + 4 · 3 + 4 · 2 = 20 + 12 + 8 = 40 cm</span>.</li>
+            <li>Sześcian o krawędzi 4 cm: <span class="f">12 · 4 = 48 cm</span>.</li>
+          </ul>
+          <p>Przyda się, gdy robisz szkielet bryły z drutu albo oklejasz krawędzie pudełka taśmą.</p>
+          <h3>Siatka</h3>
+          <p><b>Siatka</b> bryły to jej ściany rozłożone na płasko – tak jak rozcięte i rozłożone pudełko. Z siatki można złożyć model bryły.</p>
+          <ul>
+            <li>Siatka prostopadłościanu – 6 prostokątów, po dwa takie same.</li>
+            <li>Siatka sześcianu – 6 jednakowych kwadratów. Sześcian ma aż 11 różnych siatek, np. „krzyż”.</li>
+          </ul>
+          <div class="tip">💡 6 kwadratów to nie zawsze siatka sześcianu. Jeśli w układzie są 4 kwadraty tworzące większy kwadrat 2 × 2, sześcianu nie złożysz.</div>
+        `,
+        flashcards: [
+          ['Prostopadłościan – ile ścian, krawędzi, wierzchołków?', '6 ścian, 12 krawędzi, 8 wierzchołków'],
+          ['Ściany prostopadłościanu', '6 prostokątów; ściany naprzeciw siebie są takie same'],
+          ['Sześcian', 'Prostopadłościan, którego ściany są jednakowymi kwadratami'],
+          ['Ile krawędzi wychodzi z wierzchołka prostopadłościanu?', '3'],
+          ['Podstawa', 'Ściana, na której stoi bryła'],
+          ['Krawędzie niewidoczne na rysunku', 'Rysujemy linią przerywaną'],
+          ['Suma krawędzi sześcianu o krawędzi a', '12 · a'],
+          ['Siatka bryły', 'Ściany bryły rozłożone na płasko'],
+          ['Puszka, wafel do lodów, piłka', 'walec, stożek, kula'],
+          ['Ile różnych siatek ma sześcian?', '11'],
+        ],
+        questions: [
+          { id: 'ybwcm8', q: 'Ile krawędzi ma prostopadłościan?', options: ['12', '8', '6', '4'], answer: 0, explain: 'Prostopadłościan ma 12 krawędzi: 4 na górze, 4 na dole i 4 pionowe.' },
+          { id: 'gzict7', q: 'Ile wierzchołków ma sześcian?', options: ['8', '6', '12', '4'], answer: 0, explain: '4 wierzchołki na górze i 4 na dole – razem 8.' },
+          { id: 'd84fmc', q: 'Ile ścian ma prostopadłościan?', options: ['6', '4', '8', '12'], answer: 0, explain: 'Góra, dół, przód, tył, lewa i prawa ściana – razem 6.' },
+          { id: 'i616y6', q: 'Jakimi figurami są ściany sześcianu?', options: ['jednakowymi kwadratami', 'prostokątami różnej wielkości', 'trójkątami', 'kołami'], answer: 0, explain: 'Wszystkie 6 ścian sześcianu to takie same kwadraty.' },
+          { id: 'ojbs2k', q: 'Który przedmiot ma kształt walca?', options: ['puszka', 'kostka do gry', 'piłka', 'pudełko na buty'], answer: 0, explain: 'Puszka to walec. Kostka do gry to sześcian, piłka – kula, pudełko na buty – prostopadłościan.' },
+          { id: '9lmva9', q: 'Który przedmiot ma kształt sześcianu?', options: ['kostka do gry', 'zeszyt', 'puszka', 'piłka'], answer: 0, explain: 'Kostka do gry ma 6 jednakowych kwadratowych ścian. Zamknięty zeszyt to prostopadłościan, ale nie sześcian.' },
+          { id: 'bdrga0', q: 'Która bryła nie ma ani wierzchołków, ani krawędzi?', options: ['kula', 'sześcian', 'prostopadłościan'], answer: 0, explain: 'Kula jest cała zaokrąglona – nie ma ścian, krawędzi ani wierzchołków.' },
+          {
+            id: 'ltouse',
+            q: 'Co zaznaczono kropką na rysunku prostopadłościanu?',
+            svg: `<svg viewBox="0 0 340 190" role="img" aria-label="Rysunek prostopadłościanu. Krawędzie niewidoczne są przerywane. Kropka jest w prawym górnym tylnym rogu bryły, w miejscu, gdzie spotykają się trzy krawędzie.">
+      <rect x="60" y="70" width="160" height="90" class="f1"/>
+      <path d="M60,70 L120,30 L280,30 L220,70 Z" class="f1"/>
+      <path d="M220,70 L280,30 L280,120 L220,160 Z" class="f1"/>
+      <path d="M60,160 L120,120 L280,120 M120,30 L120,120" class="ln dash"/>
+      <path d="M60,70 L220,70 L220,160 L60,160 Z M60,70 L120,30 L280,30 L220,70 M280,30 L280,120 L220,160" class="ln"/>
+      <circle cx="280" cy="30" r="8" class="t2"/>
+    </svg>`,
+            options: ['wierzchołek', 'krawędź', 'ścianę', 'podstawę'],
+            answer: 0,
+            explain: 'Kropka jest w punkcie, w którym stykają się 3 krawędzie. Taki punkt to wierzchołek.',
+          },
+          { id: 'by0fd7', q: 'Ile krawędzi wychodzi z jednego wierzchołka prostopadłościanu?', options: ['3', '4', '2', '6'], answer: 0, explain: 'Z każdego wierzchołka wychodzą 3 krawędzie: jedna w bok, jedna w głąb i jedna w górę albo w dół.' },
+          { id: '5r3h9k', q: 'Z iloma innymi ścianami prostopadłościanu ma wspólną krawędź jego podstawa?', options: ['z 4', 'z 5', 'z 2', 'z 1'], answer: 0, explain: 'Podstawa styka się krawędziami z 4 ścianami bocznymi. Nie styka się tylko z górną ścianą, która leży naprzeciw niej.' },
+          { id: '2jyj5k', q: 'Prostopadłościan ma krawędzie długości 5 cm, 3 cm i 2 cm. Ile krawędzi ma długość 5 cm?', options: ['4', '2', '1', '3'], answer: 0, explain: 'Krawędzie są w 3 grupach po 4 równe. Krawędzi o długości 5 cm są 4.' },
+          { id: 'sc0rxu', q: 'Prostopadłościan ma krawędzie długości 5 cm, 3 cm i 2 cm. Ile wynosi suma długości wszystkich jego krawędzi?', options: ['40 cm', '10 cm', '30 cm', '20 cm'], answer: 0, explain: '4 · 5 + 4 · 3 + 4 · 2 = 20 + 12 + 8 = 40 cm.' },
+          { id: 'r7id6a', q: 'Sześcian ma krawędź długości 4 cm. Ile wynosi suma długości wszystkich jego krawędzi?', options: ['48 cm', '16 cm', '24 cm', '64 cm'], answer: 0, explain: 'Sześcian ma 12 równych krawędzi: 12 · 4 = 48 cm.' },
+          { id: 'wp8a0q', q: 'Z kawałka drutu o długości 60 cm zrobiono szkielet sześcianu i zużyto cały drut. Jaką długość ma krawędź sześcianu?', options: ['5 cm', '10 cm', '6 cm', '15 cm'], answer: 0, explain: 'Sześcian ma 12 równych krawędzi: 60 : 12 = 5 cm.' },
+          { id: 'dch7ev', q: 'Prostopadłościan ma wymiary 4 cm, 3 cm i 2 cm. Ile jego ścian to prostokąty o bokach 4 cm i 3 cm?', options: ['2', '4', '1', '6'], answer: 0, explain: 'Ściany występują parami – naprzeciw siebie są takie same. Prostokąty 4 cm × 3 cm to góra i dół.' },
+          {
+            id: 'lkhy3c',
+            q: 'Prawda czy fałsz?\nRysunek przedstawia siatkę sześcianu.',
+            svg: `<svg viewBox="0 0 320 180" role="img" aria-label="Sześć jednakowych kwadratów: cztery ułożone jeden pod drugim, a przy drugim kwadracie z góry po jednym kwadracie z lewej i z prawej – kształt krzyża">
+      <rect x="140" y="10" width="40" height="40" class="f4 s4 sw"/>
+      <rect x="140" y="50" width="40" height="40" class="f4 s4 sw"/>
+      <rect x="140" y="90" width="40" height="40" class="f4 s4 sw"/>
+      <rect x="140" y="130" width="40" height="40" class="f4 s4 sw"/>
+      <rect x="100" y="50" width="40" height="40" class="f4 s4 sw"/>
+      <rect x="180" y="50" width="40" height="40" class="f4 s4 sw"/>
+    </svg>`,
+            options: ['Prawda', 'Fałsz'],
+            noShuffle: true,
+            answer: 0,
+            explain: 'To siatka w kształcie krzyża. Drugi kwadrat od góry będzie dnem, cztery kwadraty wokół niego – ścianami bocznymi, a ostatni na dole – pokrywą. Powstaje sześcian.',
+          },
+          {
+            id: 'rjzv9f',
+            q: 'Prawda czy fałsz?\nRysunek przedstawia siatkę sześcianu.',
+            svg: `<svg viewBox="0 0 320 120" role="img" aria-label="Sześć jednakowych kwadratów ułożonych w prostokąt: dwa rzędy po trzy kwadraty">
+      <rect x="100" y="20" width="40" height="40" class="f4 s4 sw"/>
+      <rect x="140" y="20" width="40" height="40" class="f4 s4 sw"/>
+      <rect x="180" y="20" width="40" height="40" class="f4 s4 sw"/>
+      <rect x="100" y="60" width="40" height="40" class="f4 s4 sw"/>
+      <rect x="140" y="60" width="40" height="40" class="f4 s4 sw"/>
+      <rect x="180" y="60" width="40" height="40" class="f4 s4 sw"/>
+    </svg>`,
+            options: ['Prawda', 'Fałsz'],
+            noShuffle: true,
+            answer: 1,
+            explain: 'Cztery kwadraty tworzą tu większy kwadrat 2 × 2. Takiego układu nie da się złożyć w sześcian – ściany nachodziłyby na siebie.',
+          },
+          { id: 'g19slo', q: 'Prawda czy fałsz?\nKażdy prostopadłościan jest sześcianem.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Odwrotnie: każdy sześcian jest prostopadłościanem. Pudełko na buty jest prostopadłościanem, ale jego ściany nie są kwadratami.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
         id: 'ulamki',
         name: 'Ułamki zwykłe – pierwsze kroki',
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 17 (ułamek jako część całości), 18 (ułamek jako iloraz), 20 (liczby mieszane i ułamki niewłaściwe), 26 (porównywanie – tylko ułamki o tych samych mianownikach lub tych samych licznikach), 31 (ułamek danej wielkości – proste przykłady).' + WYBOR,
@@ -633,6 +827,109 @@
           { id: '7uchlv', q: 'Ile to jest 3/4 z 12?', options: ['9', '3', '16', '4'], answer: 0, explain: '1/4 z 12 = 12 : 4 = 3, a 3/4 to trzy razy więcej: 3 · 3 = 9.' },
           { id: 'ra9whx', q: 'Prawda czy fałsz?\n4/4 = 1', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '4 części z 4 to cała całość: 4 : 4 = 1.' },
           { id: '2lg5k1', q: 'Prawda czy fałsz?\n1/6 pizzy to więcej niż 1/4 tej samej pizzy.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Gdy pizzę dzielimy na 6 części, kawałki są mniejsze niż przy podziale na 4. 1/6 to mniej niż 1/4.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
+        id: 'dziesietne',
+        name: 'Ułamki dziesiętne – pierwsze kroki',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 21 (tylko ułamki dziesiętne na osi liczbowej), 22 (ułamki dziesiętne jako ułamki zwykłe), 23 (tylko ułamki zwykłe o mianownikach 10, 100, 1000 jako ułamki dziesiętne), 26 (porównywanie ułamków dziesiętnych), 28a (dodawanie i odejmowanie – proste przypadki, w pamięci); dz. 2 Miary, wym. 10 (wyrażenia dwumianowane: zł i gr, m i cm, cm i mm, kg i g). Mnożenie i dzielenie ułamków dziesiętnych – później.' + WYBOR,
+        theory: `
+          <h3>Dziesiąte, setne, tysięczne</h3>
+          <p>Całość dzielimy na 10, 100 albo 1000 równych części i zapisujemy je z <b>przecinkiem</b>:</p>
+          <table>
+            <tr><th>Ułamek zwykły</th><th>Ułamek dziesiętny</th><th>Czytamy</th></tr>
+            <tr><td>1/10</td><td>0,1</td><td>jedna dziesiąta</td></tr>
+            <tr><td>1/100</td><td>0,01</td><td>jedna setna</td></tr>
+            <tr><td>1/1000</td><td>0,001</td><td>jedna tysięczna</td></tr>
+          </table>
+          <p>Przed przecinkiem są <b>całości</b>, za przecinkiem kolejno: <b>części dziesiąte</b>, <b>setne</b>, <b>tysięczne</b>.</p>
+          <table>
+            <tr><th>całości</th><th>,</th><th>dziesiąte</th><th>setne</th><th>tysięczne</th></tr>
+            <tr><td>4</td><td>,</td><td>3</td><td>6</td><td></td></tr>
+          </table>
+          <p>4,36 – cztery całe i trzydzieści sześć setnych (albo „cztery przecinek trzydzieści sześć”).</p>
+          <h3>Zamiana ułamków</h3>
+          <ul>
+            <li>Mianownik 10 – <b>jedna</b> cyfra po przecinku: <span class="f">7/10 = 0,7</span>.</li>
+            <li>Mianownik 100 – <b>dwie</b> cyfry po przecinku: <span class="f">23/100 = 0,23</span>, <span class="f">3/100 = 0,03</span>.</li>
+            <li>Mianownik 1000 – <b>trzy</b> cyfry po przecinku: <span class="f">125/1000 = 0,125</span>.</li>
+            <li>Z liczby mieszanej: <span class="f">3 7/10 = 3,7</span>. W drugą stronę: <span class="f">0,25 = 25/100</span>.</li>
+          </ul>
+          <div class="tip">💡 Ile zer w mianowniku, tyle cyfr po przecinku. Brakujące miejsca uzupełniasz zerami: 3/100 = 0,03.</div>
+          <h3>Zera na końcu</h3>
+          <p>Zera dopisane na końcu, za przecinkiem, nic nie zmieniają: <span class="f">0,5 = 0,50 = 0,500</span> (5 dziesiątych to 50 setnych). Ale zero tuż za przecinkiem jest ważne: 0,05 to co innego niż 0,5.</p>
+          <h3>Porównywanie</h3>
+          <p>Porównuj najpierw całości, potem dziesiąte, potem setne… Najłatwiej <b>dopisać zera</b>, żeby obie liczby miały tyle samo cyfr po przecinku:</p>
+          <ul>
+            <li>0,5 i 0,45 → 0,50 i 0,45 → <span class="f">0,5 &gt; 0,45</span>,</li>
+            <li>2,09 i 2,1 → 2,09 i 2,10 → <span class="f">2,09 &lt; 2,1</span>.</li>
+          </ul>
+          <h3>Złote i grosze, metry i centymetry</h3>
+          <ul>
+            <li>1 gr = 0,01 zł: <span class="f">3 zł 45 gr = 3,45 zł</span>, <span class="f">2 zł 5 gr = 2,05 zł</span>.</li>
+            <li>1 cm = 0,01 m: <span class="f">1 m 20 cm = 1,20 m = 1,2 m</span>.</li>
+            <li>1 mm = 0,1 cm: <span class="f">4 cm 7 mm = 4,7 cm</span>.</li>
+            <li>1 g = 0,001 kg: <span class="f">2 kg 500 g = 2,500 kg = 2,5 kg</span>.</li>
+          </ul>
+          <h3>Dodawanie i odejmowanie</h3>
+          <p>Dodajesz całości do całości, dziesiąte do dziesiątych, setne do setnych. Pisemnie – <b>przecinek pod przecinkiem</b>.</p>
+          <ul>
+            <li><span class="f">2,5 + 1,3 = 3,8</span></li>
+            <li><span class="f">0,7 + 0,6 = 1,3</span> (13 dziesiątych to 1 całość i 3 dziesiąte)</li>
+            <li><span class="f">4,25 + 1,5 = 5,75</span> (1,5 = 1,50)</li>
+            <li><span class="f">5 − 0,3 = 4,7</span> (5 = 4 całe i 10 dziesiątych)</li>
+          </ul>
+        `,
+        flashcards: [
+          ['0,1', '1/10 – jedna dziesiąta'],
+          ['0,01', '1/100 – jedna setna'],
+          ['0,001', '1/1000 – jedna tysięczna'],
+          ['3/100 jako ułamek dziesiętny', '0,03 (dwie cyfry po przecinku)'],
+          ['0,25 jako ułamek zwykły', '25/100'],
+          ['0,5 = 0,50?', 'Tak – zera na końcu po przecinku nic nie zmieniają'],
+          ['Co większe: 0,5 czy 0,45?', '0,5 (bo 0,50 > 0,45)'],
+          ['3 zł 5 gr', '3,05 zł'],
+          ['1 m 20 cm', '1,2 m'],
+          ['2 kg 500 g', '2,5 kg'],
+          ['0,7 + 0,6', '1,3'],
+        ],
+        questions: [
+          { id: 'rajkk6', q: 'Jak zapisać ułamek 7/10 w postaci dziesiętnej?', options: ['0,7', '0,07', '7,10', '7,0'], answer: 0, explain: 'Mianownik 10 – jedna cyfra po przecinku: 7/10 = 0,7.' },
+          { id: 'whq3kx', q: 'Jak zapisać ułamek 3/100 w postaci dziesiętnej?', options: ['0,03', '0,3', '3,100', '0,003'], answer: 0, explain: 'Mianownik 100 – dwie cyfry po przecinku. Trójkę stawiamy na miejscu setnych, a puste miejsce dziesiątych uzupełniamy zerem: 0,03.' },
+          { id: 'a8d9bf', q: 'Liczba 0,25 zapisana jako ułamek zwykły to…', options: ['25/100', '25/10', '2/5', '25/1000'], answer: 0, explain: 'Dwie cyfry po przecinku to setne: 0,25 = 25/100.' },
+          { id: '53ssh8', q: 'W liczbie 4,36 cyfra 3 oznacza…', options: ['3 części dziesiąte', '3 części setne', '3 jedności', '3 dziesiątki'], answer: 0, explain: 'Pierwsza cyfra za przecinkiem to części dziesiąte, druga – setne.' },
+          { id: '88wxpo', q: 'Która liczba jest największa?', options: ['0,6', '0,56', '0,506', '0,059'], answer: 0, explain: 'Dopisz zera: 0,600; 0,560; 0,506; 0,059. Najwięcej dziesiątych ma 0,6.' },
+          { id: 'p2s3k5', q: 'Który znak trzeba wstawić?\n0,4 … 0,40', options: ['=', '<', '>'], answer: 0, explain: 'Zero dopisane na końcu nic nie zmienia: 4 dziesiąte to 40 setnych.' },
+          { id: '75i72a', q: 'Który znak trzeba wstawić?\n2,09 … 2,1', options: ['<', '>', '='], answer: 0, explain: 'Dopisz zero: 2,1 = 2,10. Teraz 2,09 < 2,10, bo 0 dziesiątych to mniej niż 1 dziesiąta.' },
+          { id: 'h3pl3h', q: '3 zł 45 gr to…', options: ['3,45 zł', '3,045 zł', '34,5 zł', '0,345 zł'], answer: 0, explain: '1 zł = 100 gr, więc grosze to setne części złotego: 45 gr = 0,45 zł.' },
+          { id: '68rrx1', q: '2 zł 5 gr to…', options: ['2,05 zł', '2,5 zł', '2,50 zł', '25 zł'], answer: 0, explain: '5 gr = 0,05 zł (5 setnych). 2,5 zł to 2 zł 50 gr.' },
+          { id: 'n8es93', q: '1,2 m to…', options: ['1 m 20 cm', '1 m 2 cm', '12 cm', '1 m 200 cm'], answer: 0, explain: '1,2 m = 1,20 m. 0,20 m to 20 setnych metra, czyli 20 cm.' },
+          { id: '5pwmcj', q: 'Ile to kilogramów: 2 kg 500 g?', options: ['2,5 kg', '2,05 kg', '2,005 kg', '25 kg'], answer: 0, explain: '1 kg = 1000 g, więc 500 g = 0,500 kg = 0,5 kg. Razem 2,5 kg.' },
+          { id: 'ysuopo', q: 'Ile to centymetrów: 4 cm 7 mm?', options: ['4,7 cm', '4,07 cm', '47 cm', '0,47 cm'], answer: 0, explain: '1 cm = 10 mm, więc 1 mm to dziesiąta część centymetra: 7 mm = 0,7 cm.' },
+          { id: 'flkfbk', q: 'Ile wynosi 0,7 + 0,6?', options: ['1,3', '0,13', '1,13', '0,76'], answer: 0, explain: '7 dziesiątych + 6 dziesiątych = 13 dziesiątych, czyli 1 całość i 3 dziesiąte: 1,3.' },
+          { id: 'dqkvg5', q: 'Ile wynosi 4,25 + 1,5?', options: ['5,75', '4,40', '5,30', '4,275'], answer: 0, explain: 'Przecinek pod przecinkiem: 4,25 + 1,50 = 5,75.' },
+          { id: '9n7n7x', q: 'Ile wynosi 5 − 0,3?', options: ['4,7', '4,3', '5,3', '0,2'], answer: 0, explain: '5 = 4 całe i 10 dziesiątych. 10 dziesiątych − 3 dziesiąte = 7 dziesiątych. Wynik 4,7.' },
+          {
+            id: 'u0x6xb',
+            q: 'Jaką liczbę zaznaczono na osi literą A?',
+            svg: `<svg viewBox="0 0 400 100" role="img" aria-label="Oś liczbowa od 2 do 3 z kreskami co jedną dziesiątą. Punkt A leży na czwartej kresce za liczbą 2.">
+      <line x1="16" y1="50" x2="392" y2="50" class="ln"/>
+      <path d="M384,45 L393,50 L384,55" class="ln"/>
+      <g class="ln"><line x1="30" y1="42" x2="30" y2="58"/><line x1="64" y1="45" x2="64" y2="55"/><line x1="98" y1="45" x2="98" y2="55"/><line x1="132" y1="45" x2="132" y2="55"/><line x1="166" y1="45" x2="166" y2="55"/><line x1="200" y1="42" x2="200" y2="58"/><line x1="234" y1="45" x2="234" y2="55"/><line x1="268" y1="45" x2="268" y2="55"/><line x1="302" y1="45" x2="302" y2="55"/><line x1="336" y1="45" x2="336" y2="55"/><line x1="370" y1="42" x2="370" y2="58"/></g>
+      <text x="30" y="80" class="tx" text-anchor="middle">2</text>
+      <text x="200" y="80" class="tx" text-anchor="middle">2,5</text>
+      <text x="370" y="80" class="tx" text-anchor="middle">3</text>
+      <circle cx="166" cy="50" r="7" class="t2"/>
+      <text x="166" y="30" class="tx-b t2" text-anchor="middle">A</text>
+    </svg>`,
+            options: ['2,4', '2,04', '2,8', '0,4'],
+            answer: 0,
+            explain: 'Od 2 do 3 jest 10 odstępów, więc każdy to 0,1. A leży 4 kreski za liczbą 2: 2 + 0,4 = 2,4.',
+          },
+          { id: 'pmrkdk', q: 'Kupujesz zeszyt za 3,50 zł i długopis za 2,30 zł. Ile płacisz?', options: ['5,80 zł', '5,53 zł', '6,80 zł', '1,20 zł'], answer: 0, explain: '3,50 + 2,30: złote 3 + 2 = 5, grosze 50 + 30 = 80. Razem 5,80 zł.' },
+          { id: 'ze38h0', q: 'Prawda czy fałsz?\n0,45 jest większe od 0,5, bo 45 jest większe od 5.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Trzeba porównać na tych samych miejscach: 0,5 = 0,50, a 0,50 > 0,45. Liczba cyfr po przecinku nie mówi, która liczba jest większa.' },
         ],
       },
 

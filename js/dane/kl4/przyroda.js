@@ -660,5 +660,238 @@ window.SUBJECTS.push({
         { id: 'mdt1h2', q: 'Co oznacza słowo „zachmurzenie”?', options: ['jaka część nieba jest zakryta chmurami', 'jak szybko wieje wiatr', 'ile spadło deszczu', 'jak wysoko są chmury'], answer: 0, explain: 'Zachmurzenie mówi, jaka część nieba jest zakryta chmurami – od bezchmurnego nieba do całkowitego zachmurzenia.' },
       ],
     },
+    {
+      id: 'skaly-gleba',
+      name: 'Skały i gleba',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 6 (skały najbliższej okolicy – barwa, spójność, twardość, odporność na działanie wody; porównanie z innymi skałami Polski), wym. 7 (gleba okolicy, porównanie z ziemią ogrodową, przydatność do uprawy roślin); doświadczenia edukacyjne – zajęcia terenowe, pkt 4 (próbka gleby: barwa, próchnica, uziarnienie, organizmy). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Skały wokół nas</h3>
+        <p><b>Skały</b> to naturalne składniki przyrody nieożywionej, z których zbudowana jest skorupa Ziemi. Spotkasz je w górach i kamieniołomach, ale też na plaży, na polu i w budynkach (schody, parapety, kostka brukowa).</p>
+        <p>Ze względu na <b>spójność</b> (czy ziarna trzymają się razem) dzielimy skały na:</p>
+        <table>
+          <tr><th>Skały lite</th><th>Skały zwięzłe</th><th>Skały luźne</th></tr>
+          <tr><td>twarde, ziarna mocno ze sobą połączone</td><td>ziarna połączone słabiej; mokre dają się formować</td><td>ziarna niepołączone, rozsypują się</td></tr>
+          <tr><td>granit, piaskowiec, wapień</td><td>glina</td><td>piasek, żwir</td></tr>
+        </table>
+        <h3>Jak badamy skały?</h3>
+        <ul>
+          <li><b>Barwa</b> – oglądamy skałę, najlepiej przez lupę. Granit ma widoczne różnokolorowe ziarna, wapień jest zwykle jasny.</li>
+          <li><b>Twardość</b> – próbujemy zarysować skałę gwoździem. Granitu gwoździem nie zarysujesz, wapień – tak.</li>
+          <li><b>Odporność na wodę</b> – kładziemy próbkę do wody. Glina nasiąka i staje się plastyczna (można z niej lepić). Piasek przepuszcza wodę.</li>
+          <li><b>Wapień</b> rozpoznasz po tym, że po polaniu octem pojawiają się pęcherzyki gazu (skała „musuje”).</li>
+        </ul>
+        <div class="tip">💡 Przy badaniu skał pracuj w okularach ochronnych i pod opieką dorosłego. Nie bierz skał do ust.</div>
+        <h3>Skały w Polsce – przykłady</h3>
+        <ul>
+          <li><b>granit</b> – m.in. w Karkonoszach i w Tatrach; używa się go na schody, pomniki, nagrobki,</li>
+          <li><b>piaskowiec</b> – np. w Górach Stołowych; to sklejone ziarna piasku,</li>
+          <li><b>wapień</b> – np. na Wyżynie Krakowsko-Częstochowskiej; z wapienia robi się m.in. wapno i cement,</li>
+          <li><b>glina</b> – surowiec do wyrobu cegieł i naczyń,</li>
+          <li><b>piasek i żwir</b> – na plażach, w korytach rzek, w żwirowniach; używa się ich na budowach,</li>
+          <li><b>głazy narzutowe</b> – duże kamienie przyniesione na teren Polski przez lądolód ze Skandynawii.</li>
+        </ul>
+        <h3>Gleba</h3>
+        <p><b>Gleba</b> to wierzchnia warstwa ziemi, w której rosną rośliny. Powstaje bardzo powoli – przez setki lat – z rozdrobnionych skał i szczątków organizmów.</p>
+        <p><b>Składniki gleby:</b></p>
+        <ul>
+          <li>okruchy skał (np. piasek, glina),</li>
+          <li><b>próchnica</b> – ciemna substancja z rozłożonych szczątków roślin i zwierząt; daje roślinom składniki odżywcze,</li>
+          <li>woda i powietrze (w szczelinach między grudkami),</li>
+          <li>organizmy – m.in. dżdżownice, owady, bakterie i grzyby. Dżdżownice drążą korytarze i mieszają glebę, a bakterie i grzyby rozkładają szczątki na próchnicę.</li>
+        </ul>
+        <h3>Jaka gleba jest najlepsza dla roślin?</h3>
+        <table>
+          <tr><th>Gleba piaszczysta</th><th>Gleba gliniasta</th><th>Ziemia ogrodowa</th></tr>
+          <tr><td>jasna, sypka; woda szybko przez nią przecieka, więc szybko wysycha; mało próchnicy</td><td>zbita, ciężka; zatrzymuje wodę, po deszczu robi się błoto; mało powietrza</td><td>ciemna, pulchna; dużo próchnicy (np. z kompostu); dobrze trzyma wodę i ma powietrze</td></tr>
+        </table>
+        <p>Im <b>ciemniejsza</b> gleba, tym zwykle więcej w niej próchnicy i tym lepiej rosną w niej rośliny.</p>
+        <h3>Doświadczenie: gleba w słoiku</h3>
+        <p>Wsyp trochę gleby do słoika z wodą, zamieszaj i odstaw. Po pewnym czasie zobaczysz <b>warstwy</b>: na dnie najcięższe ziarna (żwir, piasek), wyżej drobne cząstki (muł, glina), a na powierzchni pływają szczątki roślin. Pęcherzyki powietrza pokazują, że w glebie było powietrze.</p>
+      `,
+      flashcards: [
+        ['Skały lite – przykłady', 'granit, piaskowiec, wapień'],
+        ['Skała zwięzła – przykład', 'glina (mokra daje się formować)'],
+        ['Skały luźne – przykłady', 'piasek, żwir'],
+        ['Jak rozpoznać wapień?', 'Po polaniu octem musuje – powstają pęcherzyki gazu'],
+        ['Jak zbadać twardość skały?', 'Próbujemy zarysować ją gwoździem'],
+        ['Głazy narzutowe', 'Duże kamienie przyniesione przez lądolód ze Skandynawii'],
+        ['Gleba', 'Wierzchnia warstwa ziemi, w której rosną rośliny'],
+        ['Próchnica', 'Ciemna substancja z rozłożonych szczątków roślin i zwierząt; użyźnia glebę'],
+        ['Składniki gleby', 'okruchy skał, próchnica, woda, powietrze, organizmy'],
+        ['Rola dżdżownic w glebie', 'Drążą korytarze i mieszają glebę'],
+        ['Gleba piaszczysta', 'Przepuszcza wodę i szybko wysycha, ma mało próchnicy'],
+      ],
+      questions: [
+        { id: '12b888', q: 'Która skała jest skałą luźną?', options: ['piasek', 'granit', 'wapień', 'piaskowiec'], answer: 0, explain: 'Ziarna piasku nie są ze sobą połączone – piasek się rozsypuje. Granit, wapień i piaskowiec to skały lite.' },
+        { id: 'lxa3wt', q: 'Która skała po zwilżeniu daje się formować jak plastelina?', options: ['glina', 'żwir', 'granit', 'piasek'], answer: 0, explain: 'Mokra glina jest plastyczna – lepi się z niej naczynia i robi cegły.' },
+        { id: 'qk0h17', q: 'Którą skałę rozpoznasz po tym, że po polaniu octem pojawiają się pęcherzyki gazu?', options: ['wapień', 'granit', 'glinę', 'piasek'], answer: 0, explain: 'Wapień pod wpływem octu „musuje” – wydziela się gaz.' },
+        { id: '1gxlzg', q: 'Jak sprawdzisz twardość skały?', options: ['próbując zarysować ją gwoździem', 'wąchając ją', 'mierząc ją linijką', 'ważąc ją'], answer: 0, explain: 'Twardą skałę (np. granit) trudno zarysować gwoździem, a miękką (np. wapień) – łatwo.' },
+        { id: '3n5tog', q: 'Prawda czy fałsz?\nGranit to skała luźna.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Granit to twarda skała lita – jego ziarna są mocno ze sobą połączone.' },
+        { id: 'l4nh68', q: 'Skąd na terenie Polski wzięły się głazy narzutowe?', options: ['przyniósł je lądolód ze Skandynawii', 'przyniosły je rzeki z Tatr', 'wyrzuciły je wulkany', 'ułożyli je ludzie'], answer: 0, explain: 'Głazy narzutowe przyniósł lądolód, który dawno temu nasunął się na teren Polski ze Skandynawii.' },
+        { id: '7tg1x4', q: 'Piaskowiec to skała zbudowana z…', options: ['sklejonych ziaren piasku', 'zastygłej lawy', 'muszli i lodu', 'mokrej gliny'], answer: 0, explain: 'Sama nazwa podpowiada: piaskowiec to ziarna piasku mocno ze sobą sklejone.' },
+        { id: 'nlgsff', q: 'Do czego używa się gliny?', options: ['do wyrobu cegieł i naczyń', 'do produkcji szkła okiennego', 'jako paliwa', 'do budowy kompasów'], answer: 0, explain: 'Z gliny wypala się cegły, dachówki i naczynia.' },
+        { id: 'nle2kz', q: 'Co to jest próchnica w glebie?', options: ['ciemna substancja z rozłożonych szczątków roślin i zwierząt', 'choroba zębów roślin', 'rodzaj skały litej', 'woda w glebie'], answer: 0, explain: 'Próchnica powstaje z rozłożonych szczątków organizmów. Dostarcza roślinom składników odżywczych.' },
+        { id: '3t5jiu', q: 'Który składnik NIE wchodzi w skład gleby?', options: ['plastik', 'próchnica', 'woda', 'okruchy skał'], answer: 0, explain: 'Gleba składa się z okruchów skał, próchnicy, wody, powietrza i organizmów. Plastik to śmieć, który do gleby nie należy.' },
+        { id: '0bb1i0', q: 'Jaką rolę w glebie pełnią dżdżownice?', options: ['drążą korytarze i mieszają glebę', 'wytwarzają skały', 'zjadają korzenie zdrowych roślin', 'wysuszają glebę'], answer: 0, explain: 'Dżdżownice spulchniają i mieszają glebę – dzięki temu dostaje się do niej powietrze i woda.' },
+        { id: 'okzbb5', q: 'Która gleba szybko przepuszcza wodę i szybko wysycha?', options: ['piaszczysta', 'gliniasta', 'ziemia ogrodowa z kompostem'], answer: 0, explain: 'Ziarna piasku są duże i luźne – woda łatwo między nimi przecieka.' },
+        { id: 'p6qn4c', q: 'Po deszczu na tej glebie długo stoją kałuże i robi się błoto. To najpewniej gleba…', options: ['gliniasta', 'piaszczysta', 'żwirowa'], answer: 0, explain: 'Glina zatrzymuje wodę i słabo ją przepuszcza.' },
+        { id: 'v6etg7', q: 'W której glebie rośliny będą rosły najlepiej?', options: ['w ciemnej ziemi ogrodowej z dużą ilością próchnicy', 'w czystym piasku', 'w ubitej glinie', 'w żwirze'], answer: 0, explain: 'Ziemia ogrodowa ma dużo próchnicy (składników odżywczych), dobrze trzyma wodę i ma powietrze.' },
+        { id: 'nzm3al', q: 'Do słoika z wodą wsypano glebę, zamieszano i odstawiono. Co będzie na dnie?', options: ['najcięższe ziarna – żwir i piasek', 'szczątki roślin', 'pęcherzyki powietrza', 'nic – wszystko się rozpuści'], answer: 0, explain: 'Najcięższe ziarna opadają najszybciej i leżą na dnie. Szczątki roślin pływają na powierzchni.' },
+        { id: 'r60utl', q: 'Prawda czy fałsz?\nGleba powstaje bardzo powoli – przez setki lat.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Skały kruszą się, a szczątki organizmów rozkładają się bardzo powoli. Dlatego trzeba dbać o glebę.' },
+        { id: '0zgoyw', q: 'Ciemna barwa gleby świadczy zwykle o tym, że…', options: ['jest w niej dużo próchnicy', 'jest w niej dużo piasku', 'jest zanieczyszczona', 'nie ma w niej wody'], answer: 0, explain: 'Próchnica jest ciemna – im ciemniejsza gleba, tym zwykle więcej w niej próchnicy.' },
+      ],
+    },
+    {
+      id: 'powietrze',
+      name: 'Powietrze i jego składniki',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 9 (właściwości powietrza, tlenu i dwutlenku węgla: stan skupienia, barwa, rozpuszczalność w wodzie, zapach, palność; skład powietrza), wym. 10 (jakość powietrza, wpływ na zdrowie, zanieczyszczenie powietrza a zmiana klimatu – moduł klimatyczny); dz. 5 wym. 14 (przyczyny smogu, działania ograniczające – moduł klimatyczny). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Powietrze – niewidzialne, ale jest</h3>
+        <p>Powietrza nie widać, ale czujesz je, gdy wieje wiatr. Powietrze <b>zajmuje miejsce</b> (pusta butelka jest pełna powietrza) i ma <b>masę</b> (napompowana piłka jest ciut cięższa niż pusta). Powietrze to <b>mieszanina gazów</b>.</p>
+        <h3>Z czego składa się powietrze?</h3>
+        <table>
+          <tr><th>Gaz</th><th>Ile go jest (w przybliżeniu)</th></tr>
+          <tr><td>azot</td><td>78 części na 100</td></tr>
+          <tr><td>tlen</td><td>21 części na 100</td></tr>
+          <tr><td>inne gazy: argon, dwutlenek węgla i inne</td><td>około 1 części na 100 (dwutlenku węgla – tylko ok. 4 części na 10 000)</td></tr>
+        </table>
+        <p>W powietrzu jest też <b>para wodna</b> – raz więcej, raz mniej – oraz <b>pyły</b>.</p>
+        <div class="tip">💡 Najwięcej w powietrzu jest azotu, a nie tlenu.</div>
+        <h3>Tlen i dwutlenek węgla</h3>
+        <table>
+          <tr><th></th><th>Tlen</th><th>Dwutlenek węgla</th></tr>
+          <tr><td>stan skupienia, barwa, zapach</td><td>gaz, bezbarwny, bez zapachu</td><td>gaz, bezbarwny, bez zapachu</td></tr>
+          <tr><td>palenie</td><td><b>podtrzymuje palenie</b> – tląca się drewniana drzazga w tlenie zapala się płomieniem</td><td><b>nie podtrzymuje palenia</b> – płomień w nim gaśnie; używa się go w niektórych gaśnicach</td></tr>
+          <tr><td>w wodzie</td><td>rozpuszcza się słabo, ale wystarcza dla ryb</td><td>rozpuszcza się – są w nim „bąbelki” w wodzie gazowanej</td></tr>
+          <tr><td>dla organizmów</td><td>potrzebny do <b>oddychania</b></td><td>wydychamy go; rośliny pobierają go do <b>fotosyntezy</b></td></tr>
+        </table>
+        <p>Dwutlenek węgla jest <b>cięższy od powietrza</b> – zbiera się przy ziemi. Wykrywamy go <b>wodą wapienną</b>: gdy przez słomkę wdmuchujesz do niej wydychane powietrze, woda wapienna mętnieje.</p>
+        <p>Azot nie podtrzymuje palenia i nie ma barwy ani zapachu.</p>
+        <h3>Zanieczyszczenia i smog</h3>
+        <p>Powietrze zanieczyszczają przede wszystkim <b>dymy i spaliny</b>: z pieców opalanych węglem lub drewnem (zwłaszcza gdy ktoś pali w nich śmieci), z samochodów, z fabryk i elektrowni. W powietrzu unoszą się wtedy drobne <b>pyły</b> i szkodliwe gazy.</p>
+        <p><b>Smog</b> (od angielskich słów „smoke” – dym i „fog” – mgła) to zanieczyszczone powietrze zalegające nad miastem lub wsią. Tworzy się najczęściej, gdy:</p>
+        <ul>
+          <li>do powietrza trafia dużo dymu i spalin (np. zimą, w sezonie grzewczym),</li>
+          <li>nie ma wiatru, który rozwiałby zanieczyszczenia,</li>
+          <li>miejscowość leży w dolinie lub kotlinie.</li>
+        </ul>
+        <p><b>Skutki dla zdrowia:</b> kaszel, ból głowy, łzawienie oczu, trudności z oddychaniem; po latach – choroby płuc i serca. Jakość powietrza możesz sprawdzić w aplikacji lub na stronie z pomiarami. Gdy jest zła, lepiej ograniczyć wysiłek na dworze.</p>
+        <h3>Powietrze a klimat</h3>
+        <p>Spalanie węgla, ropy i gazu (w piecach, elektrowniach, samochodach) dodaje do powietrza <b>dwutlenek węgla</b>. Im więcej go w powietrzu, tym mocniej Ziemia się ogrzewa – to jedna z przyczyn <b>zmiany klimatu</b>.</p>
+        <h3>Co możemy zrobić?</h3>
+        <ul>
+          <li>nigdy nie palić śmieci,</li>
+          <li>chodzić pieszo, jeździć rowerem lub komunikacją miejską zamiast samochodem,</li>
+          <li>oszczędzać prąd i ciepło (gasić światło, nie przegrzewać mieszkań),</li>
+          <li>sadzić drzewa i dbać o zieleń – rośliny zatrzymują pyły i pobierają dwutlenek węgla.</li>
+        </ul>
+      `,
+      flashcards: [
+        ['Powietrze to…', 'mieszanina gazów (głównie azotu i tlenu)'],
+        ['Najwięcej w powietrzu jest…', 'azotu – ok. 78 części na 100'],
+        ['Ile tlenu jest w powietrzu?', 'ok. 21 części na 100'],
+        ['Tlen a palenie', 'Podtrzymuje palenie – tląca się drzazga się zapala'],
+        ['Dwutlenek węgla a palenie', 'Nie podtrzymuje palenia – płomień gaśnie'],
+        ['Jak wykryć dwutlenek węgla?', 'Woda wapienna mętnieje'],
+        ['Bąbelki w wodzie gazowanej', 'dwutlenek węgla rozpuszczony w wodzie'],
+        ['Smog', 'Zanieczyszczone powietrze (dym + mgła) zalegające nad miejscowością'],
+        ['Kiedy łatwo o smog?', 'Dużo dymu i spalin, brak wiatru, zwykle zimą'],
+        ['Jak ograniczyć zanieczyszczenie powietrza?', 'Nie palić śmieci, wybierać rower i komunikację miejską, oszczędzać energię, sadzić drzewa'],
+      ],
+      questions: [
+        { id: 'dauwli', q: 'Którego gazu jest w powietrzu najwięcej?', options: ['azotu', 'tlenu', 'dwutlenku węgla', 'pary wodnej'], answer: 0, explain: 'Azot to ok. 78 części na 100 części powietrza, tlen – ok. 21.' },
+        { id: '20pzz6', q: 'Ile mniej więcej tlenu jest w powietrzu?', options: ['ok. 21 części na 100', 'ok. 78 części na 100', 'ok. 50 części na 100', 'ok. 1 części na 100'], answer: 0, explain: 'Tlen stanowi ok. 21 części na 100 części powietrza. 78 części to azot.' },
+        { id: 'jvjvjq', q: 'Do słoika z tlenem włożono tlącą się drzazgę. Co się stanie?', options: ['drzazga zapali się płomieniem', 'drzazga zgaśnie', 'nic się nie zmieni', 'słoik napełni się wodą'], answer: 0, explain: 'Tlen podtrzymuje palenie – tląca się drzazga w czystym tlenie rozbłyska płomieniem.' },
+        { id: 'x97ugp', q: 'Który gaz gasi płomień i jest używany w niektórych gaśnicach?', options: ['dwutlenek węgla', 'tlen', 'para wodna'], answer: 0, explain: 'Dwutlenek węgla nie podtrzymuje palenia – płomień w nim gaśnie.' },
+        { id: 'moq9fk', q: 'Jak można wykryć dwutlenek węgla?', options: ['woda wapienna mętnieje', 'gaz ma zapach zgniłych jaj', 'gaz ma niebieski kolor', 'gaz świeci w ciemności'], answer: 0, explain: 'Dwutlenek węgla jest bezbarwny i bez zapachu. Rozpoznajemy go po tym, że woda wapienna mętnieje.' },
+        { id: '6lp5vc', q: 'Co to są bąbelki w wodzie gazowanej?', options: ['dwutlenek węgla', 'tlen', 'azot', 'para wodna'], answer: 0, explain: 'Do wody gazowanej dodaje się dwutlenek węgla – rozpuszcza się w wodzie, a po otwarciu butelki uwalnia się w postaci bąbelków.' },
+        { id: 'dnohax', q: 'Jaki gaz pobierają rośliny z powietrza do fotosyntezy?', options: ['dwutlenek węgla', 'tlen', 'azot', 'argon'], answer: 0, explain: 'Rośliny pobierają dwutlenek węgla, a podczas fotosyntezy wydzielają tlen.' },
+        { id: 's377jb', q: 'Prawda czy fałsz?\nTlen ma niebieską barwę i ostry zapach.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Tlen jest bezbarwny i nie ma zapachu – tak jak całe czyste powietrze.' },
+        { id: 'lpe9q0', q: 'Prawda czy fałsz?\nPowietrze zajmuje miejsce i ma masę.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '„Pusta” butelka jest pełna powietrza, a napompowana piłka waży trochę więcej niż pusta.' },
+        { id: '1vzoop', q: 'Dlaczego dwutlenek węgla zbiera się przy ziemi, np. na dnie piwnicy?', options: ['bo jest cięższy od powietrza', 'bo jest lżejszy od powietrza', 'bo jest ciekły', 'bo przyciąga go glina'], answer: 0, explain: 'Dwutlenek węgla jest cięższy od powietrza, więc opada w dół.' },
+        { id: 'u1k2gb', q: 'Słowo „smog” powstało z połączenia angielskich słów oznaczających…', options: ['dym i mgłę', 'deszcz i śnieg', 'wiatr i burzę', 'słońce i chmury'], answer: 0, explain: 'Smoke – dym, fog – mgła. Smog to zanieczyszczone powietrze zalegające nad miejscowością.' },
+        { id: 'o22awm', q: 'Kiedy najłatwiej o smog?', options: ['zimą, przy bezwietrznej pogodzie, gdy pracuje dużo pieców', 'latem, podczas silnego wiatru', 'podczas ulewnego deszczu', 'gdy wieje silny wiatr od morza'], answer: 0, explain: 'Zimą do powietrza trafia dużo dymu z pieców, a gdy nie ma wiatru, zanieczyszczenia nie są rozwiewane.' },
+        { id: '9yfj16', q: 'Co NIE powoduje zanieczyszczenia powietrza?', options: ['jazda na rowerze', 'palenie śmieci w piecu', 'spaliny z samochodów', 'dym z kominów fabryk'], answer: 0, explain: 'Rower nie wytwarza spalin. Palenie śmieci, spaliny i dymy zanieczyszczają powietrze.' },
+        { id: 'rx7tko', q: 'Jakie mogą być skutki oddychania zanieczyszczonym powietrzem?', options: ['kaszel i trudności z oddychaniem', 'lepszy wzrok', 'szybszy wzrost włosów', 'nie ma żadnych skutków'], answer: 0, explain: 'Pyły i szkodliwe gazy podrażniają drogi oddechowe. Po latach mogą prowadzić do chorób płuc i serca.' },
+        { id: '4zameo', q: 'W aplikacji sprawdziłeś, że jakość powietrza jest dziś bardzo zła. Co warto zrobić?', options: ['ograniczyć wysiłek na dworze', 'pobiegać dłużej niż zwykle', 'otworzyć okna na cały dzień', 'rozpalić ognisko'], answer: 0, explain: 'Podczas wysiłku oddychamy szybciej i wciągamy więcej zanieczyszczeń. Lepiej przenieść ruch do domu lub sali.' },
+        { id: 'urkwez', q: 'Jak spalanie węgla, ropy i gazu wpływa na klimat?', options: ['dodaje do powietrza dwutlenek węgla, przez co Ziemia mocniej się ogrzewa', 'zwiększa ilość tlenu w powietrzu', 'ochładza Ziemię', 'nie ma żadnego wpływu'], answer: 0, explain: 'Przy spalaniu powstaje dwutlenek węgla. Im więcej go w powietrzu, tym mocniej ogrzewa się Ziemia – to jedna z przyczyn zmiany klimatu.' },
+        { id: 'i0i6ed', q: 'Które działanie pomaga dbać o czyste powietrze?', options: ['sadzenie drzew', 'palenie liści i śmieci w ogródku', 'jeżdżenie samochodem na krótkie odległości', 'zostawianie włączonego światła'], answer: 0, explain: 'Rośliny zatrzymują pyły i pobierają dwutlenek węgla. Pozostałe działania zanieczyszczają powietrze albo marnują energię.' },
+      ],
+    },
+    {
+      id: 'ochrona',
+      name: 'Ochrona przyrody',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 8 (formy ochrony przyrody w otoczeniu, walory przyrodnicze podlegające ochronie). Formy ochrony przyrody, opisy parku narodowego, rezerwatu, parku krajobrazowego, pomnika przyrody, zakazy w parku narodowym i liczba parków narodowych – według ustawy o ochronie przyrody (tekst jednolity Dz.U. 2026 poz. 1315: art. 6, 8, 13, 15, 16, 40 i załącznik), sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Po co chronimy przyrodę?</h3>
+        <p>Ludzie budują drogi i domy, wycinają lasy, osuszają bagna, zanieczyszczają wodę i powietrze. Przez to niektóre rośliny, zwierzęta i grzyby tracą miejsca do życia i stają się rzadkie. Dlatego najcenniejsze miejsca i gatunki chroni <b>prawo</b> – ustawa o ochronie przyrody.</p>
+        <h3>Formy ochrony przyrody</h3>
+        <p>Ustawa wymienia 10 form ochrony przyrody. Najważniejsze dla ciebie:</p>
+        <table>
+          <tr><th>Forma</th><th>Co chroni?</th></tr>
+          <tr><td><b>park narodowy</b></td><td>duży obszar (co najmniej 1000 ha) o szczególnych wartościach; chroniona jest <b>cała przyroda</b> i krajobraz</td></tr>
+          <tr><td><b>rezerwat przyrody</b></td><td>mniejszy obszar zachowany w stanie naturalnym lub mało zmienionym, np. fragment lasu, torfowisko, miejsce życia rzadkich roślin</td></tr>
+          <tr><td><b>park krajobrazowy</b></td><td>obszar cenny ze względu na przyrodę, historię, kulturę i krajobraz; mogą tam mieszkać ludzie, działają gospodarstwa</td></tr>
+          <tr><td><b>pomnik przyrody</b></td><td>pojedynczy twór przyrody lub ich skupisko, np. okazałe stare drzewo, źródło, wodospad, skałka, jaskinia, <b>głaz narzutowy</b></td></tr>
+          <tr><td><b>ochrona gatunkowa</b></td><td>wybrane gatunki roślin, zwierząt i grzybów – chronione wszędzie, gdzie występują</td></tr>
+        </table>
+        <p>Pozostałe formy to: obszary chronionego krajobrazu, obszary Natura 2000, stanowiska dokumentacyjne, użytki ekologiczne i zespoły przyrodniczo-krajobrazowe.</p>
+        <h3>Parki narodowe w Polsce</h3>
+        <p>Według ustawy w Polsce są <b>23 parki narodowe</b> (stan z 2026 r.). Przykłady:</p>
+        <ul>
+          <li><b>Białowieski</b> – stary las (Puszcza Białowieska), żyją tam żubry,</li>
+          <li><b>Tatrzański</b> – najwyższe polskie góry,</li>
+          <li><b>Słowiński</b> – nad morzem, ruchome wydmy,</li>
+          <li><b>Kampinoski</b> – Puszcza Kampinoska tuż obok Warszawy,</li>
+          <li><b>Ojcowski</b> – wapienne skały i jaskinie na Wyżynie Krakowsko-Częstochowskiej.</li>
+        </ul>
+        <h3>Jak się zachować w parku narodowym i rezerwacie?</h3>
+        <p>Ustawa zakazuje tam m.in.:</p>
+        <ul>
+          <li>chodzenia i jeżdżenia rowerem <b>poza wyznaczonymi szlakami</b>,</li>
+          <li>zrywania roślin i zbierania grzybów (poza miejscami wyznaczonymi),</li>
+          <li>płoszenia, chwytania i zabijania dzikich zwierząt, niszczenia gniazd i nor,</li>
+          <li>palenia ognisk (poza miejscami wyznaczonymi),</li>
+          <li><b>zakłócania ciszy</b>,</li>
+          <li>zabierania skał, skamieniałości i minerałów.</li>
+        </ul>
+        <div class="tip">💡 Zasada turysty: idź szlakiem, nie hałasuj, niczego nie zrywaj i nie zostawiaj śmieci – zabierz je ze sobą.</div>
+        <h3>Ochrona gatunkowa</h3>
+        <p>Gatunków chronionych nie wolno m.in. zrywać, wykopywać, zabijać, płoszyć ani niszczyć ich gniazd. Przykładem jest <b>żubr</b> – największy ssak lądowy Europy. Na początku XX wieku żubry żyjące na wolności wyginęły. Odtworzono je z kilku zwierząt z ogrodów zoologicznych i dzięki ochronie znów żyją w polskich lasach.</p>
+        <h3>Ochrona przyrody w twojej okolicy</h3>
+        <p>Rozejrzyj się: w wielu miejscowościach są pomniki przyrody – stare drzewa albo duże głazy z tabliczką. W okolicy może być też rezerwat albo park krajobrazowy. Informacje znajdziesz na tablicach w terenie i na stronach gminy.</p>
+      `,
+      flashcards: [
+        ['Ile jest form ochrony przyrody w ustawie?', '10'],
+        ['Park narodowy', 'Duży obszar (min. 1000 ha), w którym chroni się całą przyrodę i krajobraz'],
+        ['Rezerwat przyrody', 'Obszar zachowany w stanie naturalnym lub mało zmienionym, chroniony ze względu na szczególne wartości'],
+        ['Park krajobrazowy', 'Obszar chroniony ze względu na przyrodę, historię, kulturę i krajobraz; mogą w nim mieszkać ludzie'],
+        ['Pomnik przyrody – przykłady', 'Okazałe stare drzewo, źródło, wodospad, skałka, jaskinia, głaz narzutowy'],
+        ['Ochrona gatunkowa', 'Ochrona wybranych gatunków roślin, zwierząt i grzybów wszędzie, gdzie występują'],
+        ['Ile jest parków narodowych w Polsce?', '23 (według ustawy, stan z 2026 r.)'],
+        ['Białowieski Park Narodowy', 'Puszcza Białowieska; żyją tam żubry'],
+        ['W parku narodowym chodzimy…', 'tylko wyznaczonymi szlakami'],
+        ['Żubr', 'Największy ssak lądowy Europy; uratowany dzięki ochronie'],
+      ],
+      questions: [
+        { id: '4b9d7i', q: 'Która forma ochrony przyrody obejmuje duży obszar, na którym chroni się całą przyrodę i krajobraz?', options: ['park narodowy', 'pomnik przyrody', 'ochrona gatunkowa', 'użytek ekologiczny'], answer: 0, explain: 'W parku narodowym (o powierzchni co najmniej 1000 ha) ochronie podlega cała przyroda i walory krajobrazowe.' },
+        { id: 'dub58h', q: 'Stary, ogromny dąb w środku wsi może zostać…', options: ['pomnikiem przyrody', 'parkiem narodowym', 'parkiem krajobrazowym', 'obszarem Natura 2000'], answer: 0, explain: 'Pomnikiem przyrody może być pojedynczy twór przyrody, np. okazałe drzewo, źródło, skałka albo głaz narzutowy.' },
+        { id: 'y7kj0u', q: 'Która forma ochrony obejmuje wybrane gatunki roślin, zwierząt i grzybów wszędzie, gdzie występują?', options: ['ochrona gatunkowa', 'rezerwat przyrody', 'park narodowy', 'pomnik przyrody'], answer: 0, explain: 'Gatunek chroniony jest chroniony nie tylko w parku – także w twoim ogrodzie czy przy drodze.' },
+        { id: 'b17xr0', q: 'Która forma ochrony obejmuje obszar cenny ze względu na przyrodę, historię, kulturę i krajobraz, na którym zwykle mieszkają ludzie i działają gospodarstwa?', options: ['park krajobrazowy', 'pomnik przyrody', 'ochrona gatunkowa'], answer: 0, explain: 'Park krajobrazowy chroni przyrodę, historię, kulturę i krajobraz, ale mieszkańcy żyją tam i pracują.' },
+        { id: 'uor3oa', q: 'Ile parków narodowych jest w Polsce według ustawy o ochronie przyrody (stan z 2026 r.)?', options: ['23', '10', '16', '50'], answer: 0, explain: 'Wykaz w załączniku do ustawy obejmuje 23 parki narodowe. 16 to liczba województw, a 10 – liczba form ochrony przyrody.' },
+        { id: 'kc8k7b', q: 'W którym parku narodowym żyją żubry w starej puszczy?', options: ['w Białowieskim', 'w Słowińskim', 'w Tatrzańskim', 'w Ojcowskim'], answer: 0, explain: 'Białowieski Park Narodowy chroni fragment Puszczy Białowieskiej – żyją tam żubry.' },
+        { id: 'opm4iq', q: 'Który park narodowy leży nad morzem i słynie z ruchomych wydm?', options: ['Słowiński', 'Tatrzański', 'Kampinoski', 'Białowieski'], answer: 0, explain: 'Słowiński Park Narodowy leży nad Bałtykiem. Wiatr przesuwa tam wydmy.' },
+        { id: '348ydz', q: 'Który park narodowy chroni najwyższe polskie góry?', options: ['Tatrzański', 'Słowiński', 'Kampinoski', 'Wielkopolski'], answer: 0, explain: 'Tatry to najwyższe góry w Polsce – chroni je Tatrzański Park Narodowy.' },
+        { id: 'yyibn4', q: 'Jak należy się poruszać w parku narodowym?', options: ['tylko wyznaczonymi szlakami', 'gdzie się chce, byle cicho', 'na skróty przez łąki', 'rowerem po lesie, poza drogami'], answer: 0, explain: 'Ustawa zakazuje ruchu pieszego i rowerowego poza wyznaczonymi szlakami.' },
+        { id: 'qr0a5j', q: 'Co wolno robić w parku narodowym?', options: ['podziwiać przyrodę, idąc szlakiem', 'zerwać kwiaty na bukiet', 'zabrać ładny kamień na pamiątkę', 'rozpalić ognisko w lesie, gdzie się chce'], answer: 0, explain: 'W parku narodowym nie wolno zrywać roślin, zabierać skał ani palić ognisk poza miejscami wyznaczonymi.' },
+        { id: 'sgo6d6', q: 'Prawda czy fałsz?\nW parku narodowym i rezerwacie przyrody nie wolno zakłócać ciszy.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Zakaz zakłócania ciszy jest w ustawie o ochronie przyrody. Hałas płoszy zwierzęta.' },
+        { id: 'm57oox', q: 'Prawda czy fałsz?\nGatunki chronione są chronione tylko na terenie parków narodowych.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Ochrona gatunkowa obowiązuje wszędzie, gdzie dany gatunek występuje.' },
+        { id: '5qgp4y', q: 'Który z tych obiektów może być pomnikiem przyrody?', options: ['głaz narzutowy', 'stary most', 'zabytkowy kościół', 'pomnik bohatera'], answer: 0, explain: 'Pomnik przyrody to twór przyrody, np. głaz narzutowy. Most, kościół i pomnik bohatera stworzyli ludzie – to nie są twory przyrody.' },
+        { id: 'xgdis3', q: 'Obszar zachowany w stanie naturalnym lub mało zmienionym, np. torfowisko z rzadkimi roślinami, mniejszy niż park narodowy, to najczęściej…', options: ['rezerwat przyrody', 'pomnik przyrody', 'park miejski', 'ogród botaniczny'], answer: 0, explain: 'Rezerwat przyrody chroni obszary zachowane w stanie naturalnym lub mało zmienionym, wyróżniające się szczególnymi wartościami.' },
+        { id: 'yxxezi', q: 'Dlaczego trzeba chronić przyrodę?', options: ['bo przez działalność ludzi wiele gatunków traci miejsca do życia', 'bo rośliny przeszkadzają w budowie dróg', 'bo zwierzęta są groźne', 'bo tak każą turyści'], answer: 0, explain: 'Wycinanie lasów, osuszanie bagien i zanieczyszczenia sprawiają, że gatunki stają się rzadkie. Ochrona daje im szansę przetrwać.' },
+        { id: 'qhizry', q: 'Żubr to…', options: ['największy ssak lądowy Europy, uratowany dzięki ochronie', 'gatunek ptaka żyjący w Tatrach', 'roślina chroniona', 'zwierzę domowe'], answer: 0, explain: 'Na wolności żubry wyginęły na początku XX wieku. Odtworzono je z kilku zwierząt z ogrodów zoologicznych i dziś znów żyją w polskich lasach, m.in. w Puszczy Białowieskiej.' },
+        { id: '08li5b', q: 'Idziesz szlakiem w parku narodowym i masz pusty papierek po batonie. Co robisz?', options: ['chowam go do plecaka i wyrzucam do kosza poza parkiem lub w domu', 'zakopuję go pod drzewem', 'wrzucam go w krzaki', 'zostawiam na ławce'], answer: 0, explain: 'Śmieci zabieramy ze sobą – zasada każdego turysty.' },
+      ],
+    },
   ],
 });

@@ -853,3 +853,335 @@ window.LESSONS['przyroda/pogoda'] = [
     check: { q: 'Burza zaskoczyła cię na boisku. Co robisz?', options: ['idę szybko do najbliższego budynku', 'chowam się pod samotnym drzewem', 'zostaję na środku boiska', 'wchodzę na wzgórze, żeby lepiej widzieć'], answer: 0, explain: 'Najbezpieczniejszy jest budynek. Samotne drzewo, otwarta przestrzeń i wzgórza są w czasie burzy niebezpieczne.' },
   },
 ];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/skaly-gleba'] = [
+  {
+    title: 'Skały: lite, zwięzłe i luźne',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Trzy rodzaje skał. Lite – twardy blok, np. granit, piaskowiec, wapień. Zwięzłe – plastyczna bryłka, np. glina. Luźne – rozsypane ziarenka, np. piasek i żwir.">
+      <rect x="8" y="8" width="122" height="184" rx="12" class="f5 s5"/>
+      <rect x="139" y="8" width="122" height="184" rx="12" class="f2 s2"/>
+      <rect x="270" y="8" width="122" height="184" rx="12" class="f4 s4"/>
+      <path d="M30,96 L38,44 L76,30 L110,48 L108,96 Z" class="bg ln"/>
+      <path d="M52,40 L60,66 L54,94 M86,36 L82,70" class="ln-thin"/>
+      <path d="M160,92 C152,70 170,48 196,50 C222,44 244,62 238,84 C236,100 176,104 160,92 Z" class="bg ln"/>
+      <path d="M186,70 C194,64 206,64 212,72" class="ln-thin"/>
+      <g class="bg ln">
+        <circle cx="300" cy="92" r="6"/><circle cx="314" cy="92" r="6"/><circle cx="328" cy="92" r="6"/><circle cx="342" cy="92" r="6"/><circle cx="356" cy="92" r="6"/><circle cx="370" cy="92" r="5"/>
+        <circle cx="307" cy="80" r="6"/><circle cx="321" cy="80" r="6"/><circle cx="335" cy="80" r="6"/><circle cx="349" cy="80" r="6"/><circle cx="362" cy="80" r="5"/>
+        <circle cx="314" cy="68" r="6"/><circle cx="328" cy="68" r="6"/><circle cx="342" cy="68" r="6"/><circle cx="355" cy="68" r="5"/>
+        <circle cx="328" cy="56" r="6"/><circle cx="341" cy="56" r="5"/>
+      </g>
+      <text x="69" y="130" class="tx-b t5" text-anchor="middle">lite</text>
+      <text x="200" y="130" class="tx-b t2" text-anchor="middle">zwięzłe</text>
+      <text x="331" y="130" class="tx-b t4" text-anchor="middle">luźne</text>
+      <g class="tx-s" text-anchor="middle">
+        <text x="69" y="156">granit,</text><text x="69" y="174">piaskowiec, wapień</text>
+        <text x="200" y="156">glina</text><text x="200" y="174">(mokra – lepi się)</text>
+        <text x="331" y="156">piasek,</text><text x="331" y="174">żwir</text>
+      </g>
+    </svg>`,
+    text: `<p><b>Skały</b> to składniki przyrody nieożywionej, z których zbudowana jest skorupa Ziemi. Znajdziesz je w górach, na plaży, na polu – i w budynkach.</p>
+      <p>Dzielimy je według tego, jak mocno trzymają się ich ziarna (<b>spójność</b>): <b>lite</b> – ziarna mocno połączone, twarde; <b>zwięzłe</b> – połączone słabiej, mokre dają się formować; <b>luźne</b> – ziarna niepołączone, sypią się.</p>`,
+    remember: 'Lite: granit, piaskowiec, wapień · zwięzłe: glina · luźne: piasek, żwir.',
+    hook: 'Lite – „jak z litego kamienia”, zwięzłe – „zwięzłe jak plastelina”, luźne – „luźno jak w piaskownicy”.',
+    check: { q: 'Do której grupy należy piasek?', options: ['skały lite', 'skały luźne', 'skały zwięzłe'], answer: 1, explain: 'Ziarna piasku nie są połączone – piasek się rozsypuje. To skała luźna.' },
+  },
+  {
+    title: 'Badasz skały jak detektyw',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Cztery badania skał: barwa – oglądam przez lupę; twardość – próbuję zarysować gwoździem; woda – czy skała nasiąka; ocet – wapień musuje.">
+      <rect x="8" y="8" width="188" height="92" rx="12" class="f1 s1"/>
+      <rect x="204" y="8" width="188" height="92" rx="12" class="f2 s2"/>
+      <rect x="8" y="110" width="188" height="92" rx="12" class="f3 s3"/>
+      <rect x="204" y="110" width="188" height="92" rx="12" class="f4 s4"/>
+      <g class="tx-b" text-anchor="middle"><text x="102" y="40">🔍 barwa</text><text x="298" y="40">📌 twardość</text><text x="102" y="142">💧 woda</text><text x="298" y="142">🧪 ocet</text></g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="102" y="66">oglądam przez lupę</text><text x="102" y="84">granit – kolorowe ziarna</text>
+        <text x="298" y="66">rysuję gwoździem</text><text x="298" y="84">granitu nie zarysujesz</text>
+        <text x="102" y="168">glina nasiąka i lepi się</text><text x="102" y="186">piasek przepuszcza wodę</text>
+        <text x="298" y="168">wapień musuje –</text><text x="298" y="186">pojawiają się pęcherzyki</text>
+      </g>
+    </svg>`,
+    text: `<p>Skały badasz zmysłami i prostymi przyrządami: oglądasz <b>barwę</b> (najlepiej przez lupę), sprawdzasz <b>twardość</b> (czy da się zarysować gwoździem) i <b>odporność na wodę</b> (czy skała nasiąka albo się rozmywa).</p>
+      <p><b>Wapień</b> ma swój znak rozpoznawczy: po polaniu octem musuje – wydziela się gaz. Pracuj w okularach ochronnych i pod opieką dorosłego.</p>`,
+    remember: 'Barwa – lupa · twardość – gwóźdź · woda – czy nasiąka · ocet – wapień musuje.',
+    hook: 'Wapień polany octem „syczy” jak napój gazowany.',
+    check: { q: 'Skałę łatwo zarysować gwoździem, a po polaniu octem musuje. To…', options: ['granit', 'wapień', 'piasek'], answer: 1, explain: 'Wapień jest dość miękki i musuje pod wpływem octu. Granitu gwoździem nie zarysujesz.' },
+  },
+  {
+    title: 'Skały w Polsce',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Przykłady skał w Polsce: granit – Karkonosze i Tatry, schody i pomniki; piaskowiec – Góry Stołowe; wapień – Wyżyna Krakowsko-Częstochowska, wapno i cement; głaz narzutowy – przyniósł go lądolód ze Skandynawii.">
+      <rect x="8" y="6" width="384" height="46" rx="10" class="f5 s5"/>
+      <rect x="8" y="58" width="384" height="46" rx="10" class="f2 s2"/>
+      <rect x="8" y="110" width="384" height="46" rx="10" class="f1 s1"/>
+      <rect x="8" y="162" width="384" height="46" rx="10" class="f3 s3"/>
+      <text x="22" y="27" class="tx-b">granit</text><text x="378" y="27" class="tx-s" text-anchor="end">schody, pomniki</text><text x="22" y="45" class="tx-s">Karkonosze, Tatry</text>
+      <text x="22" y="79" class="tx-b">piaskowiec</text><text x="378" y="79" class="tx-s" text-anchor="end">sklejone ziarna piasku</text><text x="22" y="97" class="tx-s">Góry Stołowe</text>
+      <text x="22" y="131" class="tx-b">wapień</text><text x="378" y="131" class="tx-s" text-anchor="end">wapno, cement</text><text x="22" y="149" class="tx-s">Wyżyna Krakowsko-Częstochowska</text>
+      <text x="22" y="183" class="tx-b">głaz narzutowy</text><text x="22" y="201" class="tx-s">przyniósł go lądolód ze Skandynawii</text>
+    </svg>`,
+    text: `<p>W polskich górach i na wyżynach skały wychodzą na powierzchnię. <b>Granit</b> spotkasz m.in. w Karkonoszach i Tatrach, <b>piaskowiec</b> – w Górach Stołowych, <b>wapień</b> – na Wyżynie Krakowsko-Częstochowskiej.</p>
+      <p>Na nizinach często leżą <b>głazy narzutowe</b> – duże kamienie, które dawno temu przyniósł lądolód ze Skandynawii. Z <b>gliny</b> wypala się cegły, a <b>piasek i żwir</b> są potrzebne na budowach.</p>`,
+    remember: 'Granit – Karkonosze, Tatry · piaskowiec – Góry Stołowe · wapień – Wyżyna Krakowsko-Częstochowska.',
+    hook: 'Piaskowiec – sama nazwa mówi, że to „sklejony piasek”.',
+  },
+  {
+    title: 'Z czego jest gleba?',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Przekrój gleby. Na górze trawa. Pod nią ciemna warstwa z próchnicą i dżdżownicą, niżej jaśniejsza warstwa z okruchami skał. Między grudkami jest woda i powietrze.">
+      <rect x="10" y="40" width="220" height="80" class="f2 s2"/>
+      <rect x="10" y="120" width="220" height="90" class="f4 s4"/>
+      <g class="ln s3 sw"><path d="M20,40 L24,22 M40,40 L36,18 M60,40 L66,24 M90,40 L86,20 M120,40 L126,22 M150,40 L146,18 M180,40 L186,24 M210,40 L206,20"/></g>
+      <path d="M60,80 C80,60 100,100 120,80 C130,70 140,74 146,82" class="ln s5" stroke-width="7" stroke-linecap="round"/>
+      <g class="bg ln"><circle cx="40" cy="150" r="10"/><circle cx="100" cy="176" r="13"/><circle cx="170" cy="150" r="9"/><circle cx="200" cy="190" r="11"/><circle cx="60" cy="192" r="7"/></g>
+      <g class="ln-thin"><circle cx="180" cy="70" r="5"/><circle cx="196" cy="94" r="4"/><circle cx="140" cy="160" r="4"/></g>
+      <text x="36" y="104" class="tx">💧</text><text x="120" y="146" class="tx">💧</text>
+      <g class="tx">
+        <text x="244" y="62" class="t2">próchnica</text>
+        <text x="244" y="90" class="tx-s">organizmy, np.</text><text x="244" y="106" class="tx-s">dżdżownice</text>
+        <text x="244" y="150" class="t4">okruchy skał</text>
+        <text x="244" y="180" class="tx-s">woda i powietrze</text><text x="244" y="196" class="tx-s">między grudkami</text>
+      </g>
+    </svg>`,
+    text: `<p><b>Gleba</b> to wierzchnia warstwa ziemi, w której rosną rośliny. Składa się z <b>okruchów skał</b>, <b>próchnicy</b>, <b>wody</b>, <b>powietrza</b> i <b>organizmów</b>.</p>
+      <p><b>Próchnica</b> to ciemna substancja z rozłożonych szczątków roślin i zwierząt – rozkładają je bakterie i grzyby. Daje roślinom składniki odżywcze. Dżdżownice drążą korytarze i mieszają glebę, więc dociera do niej powietrze i woda. Gleba powstaje bardzo powoli – przez setki lat.</p>`,
+    remember: 'Gleba = okruchy skał + próchnica + woda + powietrze + organizmy.',
+    hook: 'Dżdżownica to mały rolnik – cały czas „orze” glebę pod ziemią.',
+    check: { q: 'Co to jest próchnica?', options: ['ciemna substancja z rozłożonych szczątków organizmów', 'rodzaj skały litej', 'woda w glebie'], answer: 0, explain: 'Próchnica powstaje z rozłożonych szczątków roślin i zwierząt. Użyźnia glebę.' },
+  },
+  {
+    title: 'Gleba w słoiku i gleba dla roślin',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Słoik z wodą i glebą po odstaniu. Na dnie żwir i piasek, wyżej drobne cząstki – muł i glina, potem woda, a na powierzchni pływają szczątki roślin.">
+      <rect x="60" y="20" width="120" height="16" rx="4" class="f5 s5"/>
+      <path d="M50,40 L190,40 L190,206 C190,214 184,220 176,220 L64,220 C56,220 50,214 50,206 Z" class="f1"/>
+      <rect x="51" y="176" width="138" height="43" class="f4"/>
+      <rect x="51" y="146" width="138" height="30" class="f2"/>
+      <g class="bg ln"><circle cx="70" cy="200" r="7"/><circle cx="96" cy="206" r="6"/><circle cx="124" cy="196" r="8"/><circle cx="154" cy="204" r="6"/><circle cx="176" cy="196" r="5"/></g>
+      <g class="ln s3 sw"><path d="M64,60 L80,56 M100,62 L112,58 M140,58 L160,62"/></g>
+      <path d="M50,40 L190,40 L190,206 C190,214 184,220 176,220 L64,220 C56,220 50,214 50,206 Z" class="ln"/>
+      <g class="ln-thin"><line x1="194" y1="60" x2="226" y2="60"/><line x1="194" y1="110" x2="226" y2="110"/><line x1="194" y1="160" x2="226" y2="160"/><line x1="194" y1="198" x2="226" y2="198"/></g>
+      <text x="232" y="65" class="tx t3">szczątki roślin</text>
+      <text x="232" y="115" class="tx t1">woda</text>
+      <text x="232" y="165" class="tx t2">muł, glina</text>
+      <text x="232" y="203" class="tx t4">żwir, piasek</text>
+    </svg>`,
+    text: `<p>Wsyp glebę do słoika z wodą, zamieszaj i odstaw. Najcięższe ziarna (żwir, piasek) opadną na dno, drobniejsze (muł, glina) ułożą się wyżej, a szczątki roślin wypłyną na wierzch.</p>
+      <ul>
+        <li><b>Gleba piaszczysta</b> – jasna i sypka; woda szybko przez nią przecieka, mało próchnicy.</li>
+        <li><b>Gleba gliniasta</b> – zbita; zatrzymuje wodę, po deszczu robi się błoto.</li>
+        <li><b>Ziemia ogrodowa</b> – ciemna i pulchna, dużo próchnicy (np. z kompostu). Rośliny rosną w niej najlepiej.</li>
+      </ul>`,
+    remember: 'Ciemna gleba – zwykle dużo próchnicy – dobra dla roślin.',
+    hook: 'Słoik działa jak sito w zwolnionym tempie: ciężkie na dół, lekkie do góry.',
+    check: { q: 'W której glebie rośliny będą rosły najlepiej?', options: ['w czystym piasku', 'w ziemi ogrodowej z dużą ilością próchnicy', 'w zbitej glinie'], answer: 1, explain: 'Ziemia ogrodowa ma dużo próchnicy (składników odżywczych), trzyma wodę i ma powietrze.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/powietrze'] = [
+  {
+    title: 'Co jest w powietrzu?',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Siatka 100 kratek: 78 niebieskich – azot, 21 pomarańczowych – tlen, 1 zielona – inne gazy, m.in. argon i dwutlenek węgla.">
+      <g class="f1 s1"><rect x="20" y="20" width="14" height="14" rx="2"/><rect x="36" y="20" width="14" height="14" rx="2"/><rect x="52" y="20" width="14" height="14" rx="2"/><rect x="68" y="20" width="14" height="14" rx="2"/><rect x="84" y="20" width="14" height="14" rx="2"/><rect x="100" y="20" width="14" height="14" rx="2"/><rect x="116" y="20" width="14" height="14" rx="2"/><rect x="132" y="20" width="14" height="14" rx="2"/><rect x="148" y="20" width="14" height="14" rx="2"/><rect x="164" y="20" width="14" height="14" rx="2"/><rect x="20" y="36" width="14" height="14" rx="2"/><rect x="36" y="36" width="14" height="14" rx="2"/><rect x="52" y="36" width="14" height="14" rx="2"/><rect x="68" y="36" width="14" height="14" rx="2"/><rect x="84" y="36" width="14" height="14" rx="2"/><rect x="100" y="36" width="14" height="14" rx="2"/><rect x="116" y="36" width="14" height="14" rx="2"/><rect x="132" y="36" width="14" height="14" rx="2"/><rect x="148" y="36" width="14" height="14" rx="2"/><rect x="164" y="36" width="14" height="14" rx="2"/><rect x="20" y="52" width="14" height="14" rx="2"/><rect x="36" y="52" width="14" height="14" rx="2"/><rect x="52" y="52" width="14" height="14" rx="2"/><rect x="68" y="52" width="14" height="14" rx="2"/><rect x="84" y="52" width="14" height="14" rx="2"/><rect x="100" y="52" width="14" height="14" rx="2"/><rect x="116" y="52" width="14" height="14" rx="2"/><rect x="132" y="52" width="14" height="14" rx="2"/><rect x="148" y="52" width="14" height="14" rx="2"/><rect x="164" y="52" width="14" height="14" rx="2"/><rect x="20" y="68" width="14" height="14" rx="2"/><rect x="36" y="68" width="14" height="14" rx="2"/><rect x="52" y="68" width="14" height="14" rx="2"/><rect x="68" y="68" width="14" height="14" rx="2"/><rect x="84" y="68" width="14" height="14" rx="2"/><rect x="100" y="68" width="14" height="14" rx="2"/><rect x="116" y="68" width="14" height="14" rx="2"/><rect x="132" y="68" width="14" height="14" rx="2"/><rect x="148" y="68" width="14" height="14" rx="2"/><rect x="164" y="68" width="14" height="14" rx="2"/><rect x="20" y="84" width="14" height="14" rx="2"/><rect x="36" y="84" width="14" height="14" rx="2"/><rect x="52" y="84" width="14" height="14" rx="2"/><rect x="68" y="84" width="14" height="14" rx="2"/><rect x="84" y="84" width="14" height="14" rx="2"/><rect x="100" y="84" width="14" height="14" rx="2"/><rect x="116" y="84" width="14" height="14" rx="2"/><rect x="132" y="84" width="14" height="14" rx="2"/><rect x="148" y="84" width="14" height="14" rx="2"/><rect x="164" y="84" width="14" height="14" rx="2"/><rect x="20" y="100" width="14" height="14" rx="2"/><rect x="36" y="100" width="14" height="14" rx="2"/><rect x="52" y="100" width="14" height="14" rx="2"/><rect x="68" y="100" width="14" height="14" rx="2"/><rect x="84" y="100" width="14" height="14" rx="2"/><rect x="100" y="100" width="14" height="14" rx="2"/><rect x="116" y="100" width="14" height="14" rx="2"/><rect x="132" y="100" width="14" height="14" rx="2"/><rect x="148" y="100" width="14" height="14" rx="2"/><rect x="164" y="100" width="14" height="14" rx="2"/><rect x="20" y="116" width="14" height="14" rx="2"/><rect x="36" y="116" width="14" height="14" rx="2"/><rect x="52" y="116" width="14" height="14" rx="2"/><rect x="68" y="116" width="14" height="14" rx="2"/><rect x="84" y="116" width="14" height="14" rx="2"/><rect x="100" y="116" width="14" height="14" rx="2"/><rect x="116" y="116" width="14" height="14" rx="2"/><rect x="132" y="116" width="14" height="14" rx="2"/><rect x="148" y="116" width="14" height="14" rx="2"/><rect x="164" y="116" width="14" height="14" rx="2"/><rect x="20" y="132" width="14" height="14" rx="2"/><rect x="36" y="132" width="14" height="14" rx="2"/><rect x="52" y="132" width="14" height="14" rx="2"/><rect x="68" y="132" width="14" height="14" rx="2"/><rect x="84" y="132" width="14" height="14" rx="2"/><rect x="100" y="132" width="14" height="14" rx="2"/><rect x="116" y="132" width="14" height="14" rx="2"/><rect x="132" y="132" width="14" height="14" rx="2"/></g>
+      <g class="f2 s2"><rect x="148" y="132" width="14" height="14" rx="2"/><rect x="164" y="132" width="14" height="14" rx="2"/><rect x="20" y="148" width="14" height="14" rx="2"/><rect x="36" y="148" width="14" height="14" rx="2"/><rect x="52" y="148" width="14" height="14" rx="2"/><rect x="68" y="148" width="14" height="14" rx="2"/><rect x="84" y="148" width="14" height="14" rx="2"/><rect x="100" y="148" width="14" height="14" rx="2"/><rect x="116" y="148" width="14" height="14" rx="2"/><rect x="132" y="148" width="14" height="14" rx="2"/><rect x="148" y="148" width="14" height="14" rx="2"/><rect x="164" y="148" width="14" height="14" rx="2"/><rect x="20" y="164" width="14" height="14" rx="2"/><rect x="36" y="164" width="14" height="14" rx="2"/><rect x="52" y="164" width="14" height="14" rx="2"/><rect x="68" y="164" width="14" height="14" rx="2"/><rect x="84" y="164" width="14" height="14" rx="2"/><rect x="100" y="164" width="14" height="14" rx="2"/><rect x="116" y="164" width="14" height="14" rx="2"/><rect x="132" y="164" width="14" height="14" rx="2"/><rect x="148" y="164" width="14" height="14" rx="2"/></g>
+      <g class="f3 s3"><rect x="164" y="164" width="14" height="14" rx="2"/></g>
+      <rect x="200" y="30" width="20" height="20" rx="3" class="f1 s1"/><text x="230" y="46" class="tx-b t1">azot – 78</text>
+      <rect x="200" y="74" width="20" height="20" rx="3" class="f2 s2"/><text x="230" y="90" class="tx-b t2">tlen – 21</text>
+      <rect x="200" y="118" width="20" height="20" rx="3" class="f3 s3"/><text x="230" y="134" class="tx-b t3">inne – 1</text>
+      <text x="230" y="154" class="tx-s">argon, dwutlenek węgla…</text>
+      <text x="200" y="186" class="tx-s">na każde 100 części powietrza</text>
+    </svg>`,
+    text: `<p>Powietrza nie widać, ale ono jest: <b>zajmuje miejsce</b> („pusta” butelka jest pełna powietrza) i <b>ma masę</b> (napompowana piłka waży trochę więcej niż pusta).</p>
+      <p>Powietrze to <b>mieszanina gazów</b>. Najwięcej jest <b>azotu</b> (ok. 78 części na 100), potem <b>tlenu</b> (ok. 21). Reszta to m.in. argon i dwutlenek węgla. Do tego para wodna i pyły.</p>`,
+    remember: 'Azot ok. 78 · tlen ok. 21 · inne gazy ok. 1 (na 100 części powietrza).',
+    hook: 'Najwięcej jest azotu, nie tlenu – „A” jak azot jest na początku alfabetu i na początku listy.',
+    check: { q: 'Którego gazu jest w powietrzu najwięcej?', options: ['tlenu', 'azotu', 'dwutlenku węgla'], answer: 1, explain: 'Azot to ok. 78 części na 100 części powietrza.' },
+  },
+  {
+    title: 'Tlen podtrzymuje palenie, dwutlenek węgla – gasi',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Dwa słoiki. W słoiku z tlenem tląca się drzazga zapala się płomieniem. W słoiku z dwutlenkiem węgla płomień świeczki gaśnie, unosi się dymek.">
+      <path d="M40,60 L40,180 C40,190 48,196 58,196 L162,196 C172,196 180,190 180,180 L180,60" class="ln"/>
+      <path d="M220,60 L220,180 C220,190 228,196 238,196 L342,196 C352,196 360,190 360,180 L360,60" class="ln"/>
+      <line x1="110" y1="190" x2="110" y2="120" class="ln s2" stroke-width="5" stroke-linecap="round"/>
+      <text x="110" y="116" class="tx-b" text-anchor="middle">🔥</text>
+      <rect x="276" y="140" width="28" height="54" rx="4" class="f4 s4 sw"/><line x1="290" y1="140" x2="290" y2="128" class="ln"/>
+      <path d="M290,124 C282,114 298,106 290,96 C284,88 294,80 290,72" class="ln-thin"/>
+      <text x="110" y="30" class="tx-b t2" text-anchor="middle">tlen</text>
+      <text x="110" y="50" class="tx-s" text-anchor="middle">drzazga zapala się</text>
+      <text x="290" y="30" class="tx-b t1" text-anchor="middle">dwutlenek węgla</text>
+      <text x="290" y="50" class="tx-s" text-anchor="middle">płomień gaśnie</text>
+    </svg>`,
+    text: `<p><b>Tlen</b> i <b>dwutlenek węgla</b> to gazy bezbarwne i bez zapachu – na oko ich nie odróżnisz. Różnią się tym, co robią z ogniem.</p>
+      <ul>
+        <li>Tlen <b>podtrzymuje palenie</b>: tląca się drzazga w czystym tlenie rozbłyska płomieniem. Tlenu potrzebujemy też do <b>oddychania</b>.</li>
+        <li>Dwutlenek węgla <b>nie podtrzymuje palenia</b>: płomień w nim gaśnie – dlatego jest w niektórych gaśnicach. Wydychamy go, a rośliny pobierają go do fotosyntezy.</li>
+      </ul>`,
+    remember: 'Tlen – podtrzymuje palenie i oddychanie. Dwutlenek węgla – gasi płomień.',
+    hook: 'Tlen to „paliwo dla ognia”, dwutlenek węgla to „gaśnica w powietrzu”.',
+    check: { q: 'Który gaz podtrzymuje palenie?', options: ['tlen', 'dwutlenek węgla', 'azot'], answer: 0, explain: 'W tlenie tląca się drzazga zapala się płomieniem. Dwutlenek węgla i azot nie podtrzymują palenia.' },
+  },
+  {
+    title: 'Jak rozpoznać dwutlenek węgla?',
+    svg: `<svg viewBox="0 0 400 232" role="img" aria-label="Dwie szklanki z wodą wapienną. Pierwsza przejrzysta – przed doświadczeniem. Do drugiej wdmuchano przez słomkę wydychane powietrze – woda zmętniała. Obok butelka wody gazowanej z bąbelkami dwutlenku węgla.">
+      <path d="M30,80 L40,190 L110,190 L120,80" class="f1"/>
+      <path d="M150,80 L160,190 L230,190 L240,80" class="f4"/>
+      <path d="M30,60 L40,190 L110,190 L120,60 M150,60 L160,190 L230,190 L240,60" class="ln"/>
+      <line x1="196" y1="30" x2="196" y2="176" class="ln s2 sw"/>
+      <g class="ln-thin"><circle cx="188" cy="160" r="4"/><circle cx="204" cy="146" r="4"/><circle cx="194" cy="128" r="3"/></g>
+      <text x="75" y="44" class="tx-s" text-anchor="middle">woda wapienna</text>
+      <text x="75" y="206" class="tx-s" text-anchor="middle">przejrzysta</text>
+      <text x="195" y="206" class="tx-s" text-anchor="middle">mętnieje</text>
+      <text x="196" y="20" class="tx-s" text-anchor="middle">wydychane powietrze</text>
+      <path d="M300,70 L300,190 C300,196 304,200 310,200 L350,200 C356,200 360,196 360,190 L360,70 L346,54 L346,36 L314,36 L314,54 Z" class="f1 s1 sw"/>
+      <g class="bg ln"><circle cx="318" cy="170" r="4"/><circle cx="336" cy="150" r="5"/><circle cx="322" cy="124" r="4"/><circle cx="342" cy="104" r="4"/><circle cx="326" cy="88" r="3"/></g>
+      <text x="330" y="226" class="tx-s" text-anchor="middle">bąbelki</text>
+    </svg>`,
+    text: `<p>Dwutlenek węgla wykrywamy <b>wodą wapienną</b>. Gdy przez słomkę wdmuchujesz do niej wydychane powietrze, woda wapienna <b>mętnieje</b> – to znak, że jest w nim dwutlenek węgla.</p>
+      <p>Dwutlenek węgla <b>rozpuszcza się w wodzie</b> – to on tworzy bąbelki w wodzie gazowanej. Jest też <b>cięższy od powietrza</b>, więc gromadzi się przy ziemi, np. w piwnicach.</p>`,
+    remember: 'Woda wapienna mętnieje → jest dwutlenek węgla.',
+    hook: '„Mętna woda wapienna – dwutlenek węgla wydany”.',
+    check: { q: 'Co tworzy bąbelki w wodzie gazowanej?', options: ['tlen', 'dwutlenek węgla', 'azot'], answer: 1, explain: 'Do wody gazowanej dodaje się dwutlenek węgla, który rozpuszcza się w wodzie.' },
+  },
+  {
+    title: 'Smog – skąd się bierze?',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Miejscowość w dolinie między wzgórzami. Z kominów domów i z samochodu wydobywa się dym. Nad doliną zalega szara warstwa smogu, bo nie ma wiatru.">
+      <path d="M0,200 L0,70 C40,90 80,150 130,170 L270,170 C320,150 360,90 400,70 L400,200 Z" class="f3 s3"/>
+      <ellipse cx="200" cy="112" rx="170" ry="28" class="ln-thin dash"/>
+      <text x="200" y="118" class="tx-b" text-anchor="middle">SMOG</text>
+      <text x="120" y="168" class="tx-b">🏠</text><text x="180" y="168" class="tx-b">🏠</text><text x="240" y="168" class="tx-b">🏭</text><text x="290" y="196" class="tx-b">🚗</text>
+      <g class="ln-thin"><path d="M132,146 C126,138 138,132 132,124"/><path d="M192,146 C186,138 198,132 192,124"/><path d="M254,146 C248,138 260,132 254,124"/></g>
+      <text x="20" y="28" class="tx-s">❄️ zima – dużo pieców</text>
+      <text x="380" y="28" class="tx-s" text-anchor="end">🍃 brak wiatru</text>
+      <text x="200" y="216" class="tx-s" text-anchor="middle">dym + mgła = smog</text>
+    </svg>`,
+    text: `<p>Powietrze zanieczyszczają <b>dymy i spaliny</b> – z pieców (zwłaszcza gdy ktoś pali w nich śmieci), z samochodów, fabryk i elektrowni. Unoszą się w nich drobne <b>pyły</b> i szkodliwe gazy.</p>
+      <p><b>Smog</b> (ang. <i>smoke</i> – dym + <i>fog</i> – mgła) tworzy się, gdy dymu jest dużo, a <b>nie ma wiatru</b>, który by go rozwiał – najczęściej zimą, zwłaszcza w dolinach. Smog powoduje kaszel, łzawienie oczu, trudności z oddychaniem, a po latach – choroby płuc i serca.</p>`,
+    remember: 'Smog = dużo dymu i spalin + brak wiatru (często zimą, w dolinach).',
+    hook: 'Smog to „dymna mgła”: smoke + fog.',
+    check: { q: 'Kiedy najłatwiej o smog?', options: ['zimą, gdy nie ma wiatru', 'latem, podczas silnego wiatru', 'w czasie ulewy'], answer: 0, explain: 'Zimą pracuje dużo pieców, a bez wiatru zanieczyszczenia zalegają nad miejscowością.' },
+  },
+  {
+    title: 'Co możesz zrobić dla czystego powietrza?',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Dobre nawyki: chodzę pieszo i jeżdżę rowerem, wybieram autobus lub tramwaj, sadzę drzewa, gaszę zbędne światło. Zły nawyk: palenie śmieci.">
+      <rect x="8" y="8" width="384" height="40" rx="10" class="f3 s3"/>
+      <rect x="8" y="54" width="384" height="40" rx="10" class="f3 s3"/>
+      <rect x="8" y="100" width="384" height="40" rx="10" class="f3 s3"/>
+      <rect x="8" y="146" width="384" height="40" rx="10" class="f3 s3"/>
+      <rect x="8" y="192" width="384" height="24" rx="8" class="f2 s2"/>
+      <g class="tx"><text x="22" y="34">✅ 🚲 pieszo i rowerem</text><text x="22" y="80">✅ 🚌 autobus, tramwaj</text><text x="22" y="126">✅ 🌳 sadzę drzewa, dbam o zieleń</text><text x="22" y="172">✅ 💡 gaszę zbędne światło</text></g>
+      <text x="22" y="209" class="tx-s">❌ nigdy nie pal śmieci – trujący dym</text>
+    </svg>`,
+    text: `<p>Spalanie węgla, ropy i gazu dodaje do powietrza <b>dwutlenek węgla</b>. Im więcej go w powietrzu, tym mocniej ogrzewa się Ziemia – to jedna z przyczyn <b>zmiany klimatu</b>.</p>
+      <p>Mniej spalin to czystsze powietrze i mniej dwutlenku węgla. Rośliny zatrzymują pyły i pobierają dwutlenek węgla. Gdy aplikacja z pomiarami pokazuje złą jakość powietrza, ogranicz wysiłek na dworze.</p>`,
+    remember: 'Nie pal śmieci · wybieraj rower i komunikację · oszczędzaj energię · sadź drzewa.',
+    check: { q: 'Które działanie pomaga dbać o czyste powietrze?', options: ['palenie liści w ogródku', 'jazda rowerem zamiast samochodem', 'zostawianie włączonego światła'], answer: 1, explain: 'Rower nie wytwarza spalin. Palenie liści zanieczyszcza powietrze, a marnowanie prądu zwiększa spalanie w elektrowniach.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/ochrona'] = [
+  {
+    title: 'Po co chronimy przyrodę?',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Schemat: ludzie wycinają lasy, budują drogi i zanieczyszczają środowisko, więc rośliny i zwierzęta tracą miejsca do życia. Dlatego prawo – ustawa o ochronie przyrody – chroni najcenniejsze miejsca i gatunki.">
+      <defs><marker id="a-k4p-ochr-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="20" y="8" width="360" height="50" rx="12" class="f2 s2"/>
+      <rect x="20" y="80" width="360" height="50" rx="12" class="f4 s4"/>
+      <rect x="20" y="152" width="360" height="50" rx="12" class="f3 s3"/>
+      <text x="200" y="39" class="tx" text-anchor="middle">🪓 🏗️ 🏭 wycinka, budowy, zanieczyszczenia</text>
+      <text x="200" y="111" class="tx" text-anchor="middle">🐾 gatunki tracą miejsca do życia</text>
+      <text x="200" y="183" class="tx" text-anchor="middle">📜 prawo chroni cenne miejsca i gatunki</text>
+      <line x1="200" y1="60" x2="200" y2="76" class="ln s2 sw" marker-end="url(#a-k4p-ochr-1)"/>
+      <line x1="200" y1="132" x2="200" y2="148" class="ln s2 sw" marker-end="url(#a-k4p-ochr-1)"/>
+    </svg>`,
+    text: `<p>Ludzie wycinają lasy, osuszają bagna, budują drogi i domy, zanieczyszczają wodę i powietrze. Przez to wiele roślin, zwierząt i grzybów traci miejsca do życia i staje się rzadkich.</p>
+      <p>Dlatego najcenniejsze miejsca i gatunki chroni <b>prawo</b> – ustawa o ochronie przyrody. Wymienia ona 10 <b>form ochrony przyrody</b>.</p>`,
+    remember: 'Ochrona przyrody = dbanie o to, by rzadkie gatunki i cenne miejsca przetrwały. Zasady określa ustawa o ochronie przyrody.',
+    hook: 'Przyroda to dom zwierząt i roślin – ochrona przyrody to „zakaz burzenia cudzego domu”.',
+  },
+  {
+    title: 'Formy ochrony – od dużej do małej',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Trzy prostokąty od największego: park narodowy – cała przyroda, co najmniej 1000 ha; rezerwat przyrody – mniejszy obszar w stanie naturalnym; pomnik przyrody – pojedyncze drzewo, głaz, źródło. Obok: ochrona gatunkowa – wybrane gatunki chronione wszędzie.">
+      <rect x="8" y="8" width="250" height="214" rx="14" class="f3 s3"/>
+      <rect x="24" y="78" width="200" height="130" rx="12" class="f1 s1"/>
+      <rect x="40" y="146" width="120" height="50" rx="10" class="f4 s4"/>
+      <text x="20" y="32" class="tx-b t3">park narodowy</text>
+      <text x="20" y="54" class="tx-s">cała przyroda, min. 1000 ha</text>
+      <text x="36" y="102" class="tx-b t1">rezerwat przyrody</text>
+      <text x="36" y="124" class="tx-s">mniejszy, stan naturalny</text>
+      <text x="100" y="168" class="tx-s" text-anchor="middle">pomnik przyrody</text>
+      <text x="100" y="188" class="tx-s" text-anchor="middle">🌳 drzewo, głaz</text>
+      <rect x="268" y="8" width="124" height="214" rx="14" class="f5 s5"/>
+      <text x="330" y="36" class="tx-b t5" text-anchor="middle">ochrona</text>
+      <text x="330" y="58" class="tx-b t5" text-anchor="middle">gatunkowa</text>
+      <text x="330" y="110" class="tx-b" text-anchor="middle">🌸 🐾 🍄</text>
+      <text x="330" y="160" class="tx-s" text-anchor="middle">chronione</text>
+      <text x="330" y="178" class="tx-s" text-anchor="middle">wszędzie, gdzie</text>
+      <text x="330" y="196" class="tx-s" text-anchor="middle">występują</text>
+    </svg>`,
+    text: `<ul>
+      <li><b>Park narodowy</b> – duży obszar (co najmniej 1000 ha), w którym chroni się <b>całą przyrodę</b> i krajobraz.</li>
+      <li><b>Rezerwat przyrody</b> – mniejszy obszar zachowany w stanie naturalnym lub mało zmienionym, np. fragment starego lasu, torfowisko.</li>
+      <li><b>Park krajobrazowy</b> – chroni przyrodę, historię, kulturę i krajobraz; mieszkają tam ludzie.</li>
+      <li><b>Pomnik przyrody</b> – pojedynczy twór przyrody: okazałe drzewo, źródło, wodospad, skałka, jaskinia, głaz narzutowy.</li>
+      <li><b>Ochrona gatunkowa</b> – wybrane gatunki roślin, zwierząt i grzybów są chronione wszędzie.</li>
+    </ul>`,
+    remember: 'Park narodowy (największa ochrona) · rezerwat · park krajobrazowy · pomnik przyrody · ochrona gatunkowa.',
+    hook: 'Pomnik przyrody to „pomnik”, którego nie zbudował człowiek – postawiła go sama przyroda.',
+    check: { q: 'Okazały stary dąb w twojej miejscowości może być…', options: ['parkiem narodowym', 'pomnikiem przyrody', 'rezerwatem przyrody'], answer: 1, explain: 'Pojedyncze drzewo, źródło czy głaz to pomnik przyrody. Park narodowy i rezerwat to obszary.' },
+  },
+  {
+    title: '23 parki narodowe',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="W Polsce są 23 parki narodowe. Przykłady: Białowieski – stara puszcza i żubry; Tatrzański – najwyższe góry; Słowiński – ruchome wydmy nad morzem; Kampinoski – puszcza obok Warszawy; Ojcowski – wapienne skały i jaskinie.">
+      <rect x="8" y="8" width="110" height="214" rx="14" class="f3 s3"/>
+      <text x="63" y="110" class="tx-b t3" text-anchor="middle" style="font-size:44px">23</text>
+      <text x="63" y="140" class="tx-s" text-anchor="middle">parki</text><text x="63" y="158" class="tx-s" text-anchor="middle">narodowe</text>
+      <g class="tx">
+        <text x="130" y="34">🌲 Białowieski</text><text x="130" y="76">⛰️ Tatrzański</text><text x="130" y="118">🏖️ Słowiński</text><text x="130" y="160">🌳 Kampinoski</text><text x="130" y="202">🏞️ Ojcowski</text>
+      </g>
+      <g class="tx-s">
+        <text x="150" y="52">puszcza, żubry</text><text x="150" y="94">najwyższe polskie góry</text><text x="150" y="136">ruchome wydmy nad morzem</text><text x="150" y="178">puszcza obok Warszawy</text><text x="150" y="220">wapienne skały, jaskinie</text>
+      </g>
+    </svg>`,
+    text: `<p>Według ustawy o ochronie przyrody w Polsce są <b>23 parki narodowe</b> (stan z 2026 r.). Każdy chroni inny krajobraz: puszcze, góry, wybrzeże, bagna, jeziora.</p>
+      <p>W <b>Białowieskim</b> rośnie stara puszcza, w której żyją żubry. <b>Tatrzański</b> chroni najwyższe polskie góry, <b>Słowiński</b> – ruchome wydmy nad Bałtykiem.</p>`,
+    remember: 'W Polsce są 23 parki narodowe. Białowieski – żubry · Tatrzański – Tatry · Słowiński – wydmy.',
+    hook: 'Sprawdź, który park narodowy jest najbliżej twojego domu – i zaplanuj wycieczkę!',
+    check: { q: 'Który park narodowy słynie z ruchomych wydm?', options: ['Tatrzański', 'Słowiński', 'Białowieski'], answer: 1, explain: 'Słowiński Park Narodowy leży nad morzem – wiatr przesuwa tam wydmy.' },
+  },
+  {
+    title: 'Jak się zachować w parku narodowym?',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Zasady w parku narodowym: idę wyznaczonym szlakiem, zachowuję ciszę, zabieram śmieci. Nie zrywam roślin i nie zbieram grzybów, nie płoszę zwierząt, nie palę ognisk.">
+      <rect x="8" y="8" width="188" height="204" rx="12" class="f3 s3"/>
+      <rect x="204" y="8" width="188" height="204" rx="12" class="f2 s2"/>
+      <text x="102" y="36" class="tx-b t3" text-anchor="middle">✅ tak</text>
+      <text x="298" y="36" class="tx-b t2" text-anchor="middle">❌ nie</text>
+      <g class="tx">
+        <text x="20" y="80">🥾 idę szlakiem</text><text x="20" y="126">🤫 zachowuję ciszę</text><text x="20" y="172">🎒 zabieram śmieci</text>
+        <text x="216" y="80">🌷 nie zrywam</text><text x="216" y="126">🦌 nie płoszę</text><text x="216" y="172">🔥 nie palę ognia</text>
+      </g>
+    </svg>`,
+    text: `<p>W parku narodowym i w rezerwacie ustawa zakazuje m.in.: chodzenia i jazdy rowerem <b>poza szlakami</b>, zrywania roślin i zbierania grzybów, płoszenia i chwytania zwierząt, niszczenia gniazd i nor, palenia ognisk i <b>zakłócania ciszy</b> (poza miejscami wyznaczonymi). Nie wolno też zabierać skał i skamieniałości.</p>`,
+    remember: 'Idź szlakiem, nie hałasuj, niczego nie zrywaj i nie zabieraj, śmieci zabierz ze sobą.',
+    hook: 'Zostaw po sobie tylko ślady butów – i to tylko na szlaku.',
+    check: { q: 'Co wolno robić w parku narodowym?', options: ['zerwać kwiaty na bukiet', 'podziwiać przyrodę, idąc szlakiem', 'zabrać ładny kamień na pamiątkę'], answer: 1, explain: 'W parku narodowym nie wolno zrywać roślin ani zabierać skał. Wolno spacerować wyznaczonym szlakiem i podziwiać przyrodę.' },
+  },
+  {
+    title: 'Ochrona przyrody tuż obok ciebie',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Stare, okazałe drzewo z tabliczką „pomnik przyrody” i duży głaz narzutowy. Obok napis: gatunki chronione – chronione wszędzie, także w twojej okolicy.">
+      <rect x="66" y="110" width="24" height="80" class="f2 s2 sw"/>
+      <circle cx="78" cy="78" r="56" class="f3 s3 sw"/>
+      <line x1="152" y1="176" x2="152" y2="190" class="ln"/>
+      <rect x="96" y="146" width="112" height="30" rx="4" class="f4 s4"/>
+      <text x="152" y="166" class="tx-s" text-anchor="middle">pomnik przyrody</text>
+      <path d="M210,190 C206,160 226,140 256,142 C286,138 304,160 300,190 Z" class="f5 s5 sw"/>
+      <text x="255" y="206" class="tx-s" text-anchor="middle">głaz narzutowy</text>
+      <line x1="10" y1="190" x2="390" y2="190" class="ln-thin"/>
+      <text x="390" y="40" class="tx-b" text-anchor="end">gatunki chronione</text>
+      <text x="390" y="64" class="tx-s" text-anchor="end">są chronione wszędzie –</text>
+      <text x="390" y="82" class="tx-s" text-anchor="end">także w twojej okolicy</text>
+    </svg>`,
+    text: `<p>Ochrona przyrody to nie tylko daleki park narodowy. W wielu miejscowościach są <b>pomniki przyrody</b> – stare drzewa albo duże głazy z tabliczką. W okolicy może być rezerwat albo park krajobrazowy.</p>
+      <p>Gatunków chronionych nie wolno zrywać, zabijać, płoszyć ani niszczyć ich gniazd – <b>wszędzie</b>, nie tylko w parku. Przykład skutecznej ochrony to <b>żubr</b>: na wolności wyginął na początku XX wieku, a dzięki ochronie znów żyje w polskich lasach.</p>`,
+    remember: 'Ochrona gatunkowa obowiązuje wszędzie, nie tylko w parkach i rezerwatach.',
+    check: { q: 'Prawda czy fałsz? Gatunki chronione są chronione tylko w parkach narodowych.', options: ['Prawda', 'Fałsz'], answer: 1, explain: 'Ochrona gatunkowa obowiązuje wszędzie, gdzie dany gatunek występuje.' },
+  },
+];
