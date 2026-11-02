@@ -105,7 +105,7 @@
       {
         id: 'ekosystemy',
         name: 'Las, łąka, woda i pole',
-        basis: `${PP}, 1. Rozumienie środowiska przyrodniczego, pkt 2 (cechy ekosystemów: łąka, jezioro, rzeka, morze, pole, staw, las, las gospodarczy; składowe i funkcje ekosystemu na przykładzie lasu – warstwy lasu, polany, torfowiska, martwe drzewo). Warstwy lasu według Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl): korony drzew, podszyt, runo, ściółka.${KONIEC}`,
+        basis: `${PP}, 1. Rozumienie środowiska przyrodniczego, pkt 2 (cechy ekosystemów: łąka, jezioro, rzeka, morze, pole, staw, las, las gospodarczy; składowe i funkcje ekosystemu na przykładzie lasu – warstwy lasu, polany, torfowiska, martwe drzewo). Warstwy lasu i rola martwego drewna według Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl, sprawdzone 2.11.2026): korony drzew, podszyt, runo, ściółka.${KONIEC}`,
         theory: `
           <h3>Warstwy lasu (od góry)</h3>
           <ol>
@@ -165,7 +165,7 @@
       {
         id: 'ochrona',
         name: 'Chronimy przyrodę',
-        basis: `${PP}, 1. Rozumienie środowiska przyrodniczego, pkt 1 (gatunki objęte ochroną), pkt 7 (chroni przyrodę, wskazuje miejsca ochrony przyrody, parki narodowe, pomniki przyrody), pkt 8 (segreguje odpady, zna przyczyny i skutki). Kolory pojemników: rozporządzenie Ministra Klimatu i Środowiska z 10.05.2021, Dz.U. 2021 poz. 906, § 3. Gatunki chronione: rozporządzenia w sprawie ochrony gatunkowej zwierząt (Dz.U. 2016 poz. 2183 ze zm.) i roślin (Dz.U. 2014 poz. 1409 ze zm.) – sprawdzone 1.11.2026.${KONIEC}`,
+        basis: `${PP}, 1. Rozumienie środowiska przyrodniczego, pkt 1 (gatunki objęte ochroną), pkt 7 (chroni przyrodę, wskazuje miejsca ochrony przyrody, parki narodowe, pomniki przyrody), pkt 8 (segreguje odpady, zna przyczyny i skutki). Kolory pojemników: rozporządzenie Ministra Klimatu i Środowiska z 10.05.2021, Dz.U. 2021 poz. 906, § 3. Gatunki chronione: rozporządzenia w sprawie ochrony gatunkowej zwierząt (Dz.U. 2016 poz. 2183, tekst jednolity Dz.U. 2022 poz. 2380) i roślin (Dz.U. 2014 poz. 1409) – sprawdzone 2.11.2026.${KONIEC}`,
         theory: `
           <h3>Segregujemy odpady</h3>
           <table><tr><th>pojemnik</th><th>co wrzucamy</th></tr>
@@ -218,7 +218,7 @@
       {
         id: 'zdrowie',
         name: 'Zdrowie, jedzenie i higiena',
-        basis: `${PP}, 2. Funkcje życiowe człowieka, ochrona zdrowia, bezpieczeństwo i odpoczynek, pkt 4 (higiena i estetyka własna i otoczenia), pkt 7 (wartości odżywcze produktów, znaczenie diety, umiar w słodyczach), pkt 8 (przygotowuje zdrowe posiłki), pkt 9 (ubiera się odpowiednio do pogody, szuka informacji o pogodzie). Proporcje na talerzu według „Talerza Zdrowego Żywienia” Narodowego Centrum Edukacji Żywieniowej (materiały NFZ i pacjent.gov.pl, sprawdzone 1.11.2026).${KONIEC}`,
+        basis: `${PP}, 2. Funkcje życiowe człowieka, ochrona zdrowia, bezpieczeństwo i odpoczynek, pkt 4 (higiena i estetyka własna i otoczenia), pkt 7 (wartości odżywcze produktów, znaczenie diety, umiar w słodyczach), pkt 8 (przygotowuje zdrowe posiłki), pkt 9 (ubiera się odpowiednio do pogody, szuka informacji o pogodzie). Proporcje na talerzu według „Talerza zdrowego żywienia” (Zintegrowana Platforma Edukacyjna, zpe.gov.pl; sprawdzone 2.11.2026).${KONIEC}`,
         theory: `
           <h3>Higiena</h3>
           <ul>
@@ -275,7 +275,7 @@
       {
         id: 'bezpieczenstwo',
         name: 'Wzywamy pomocy',
-        basis: `${PP}, 2. Funkcje życiowe człowieka, ochrona zdrowia, bezpieczeństwo i odpoczynek, pkt 1 (zawody: nauczyciel, żołnierz, policjant, strażak, lekarz, pielęgniarz, leśnik; praca w służbach mundurowych i medycznych), pkt 2–3 (numery alarmowe, wezwanie o pomoc, dane osobowe w kontakcie ze służbami), pkt 5–6 (reaguje w sytuacji zagrożenia, podstawowe zasady pierwszej pomocy), pkt 11 (droga ewakuacyjna, znaki bezpieczeństwa, bezpieczna zabawa), pkt 12 (zagrożenia ze środowiska: burza, huragan, ulewa, susza, powódź, pożar, piorun). Numery alarmowe według informacji urzędów na gov.pl (sprawdzone 1.11.2026): 112 – wspólny numer w całej UE; 997, 998, 999 nadal działają.${KONIEC}`,
+        basis: `${PP}, 2. Funkcje życiowe człowieka, ochrona zdrowia, bezpieczeństwo i odpoczynek, pkt 1 (zawody: nauczyciel, żołnierz, policjant, strażak, lekarz, pielęgniarz, leśnik; praca w służbach mundurowych i medycznych), pkt 2–3 (numery alarmowe, wezwanie o pomoc, dane osobowe w kontakcie ze służbami), pkt 5–6 (reaguje w sytuacji zagrożenia, podstawowe zasady pierwszej pomocy), pkt 11 (droga ewakuacyjna, znaki bezpieczeństwa, bezpieczna zabawa), pkt 12 (zagrożenia ze środowiska: burza, huragan, ulewa, susza, powódź, pożar, piorun). Numery alarmowe i sposób wzywania pomocy według Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl, „Pierwsza pomoc – podstawy”; sprawdzone 2.11.2026): 112 – jednolity numer alarmowy w całej UE; 997, 998, 999 nadal działają.${KONIEC}`,
         theory: `
           <h3>Ludzie, którzy pomagają</h3>
           <ul>
@@ -393,7 +393,7 @@
       {
         id: 'polska',
         name: 'Polska na mapie',
-        basis: `${PP}, 3. Rozumienie przestrzeni geograficznej, pkt 1 (miejscowość i okolica), pkt 2 (granice Polski, główne miasta, rzeki, krainy na mapie), pkt 3 (proste plany, kierunki główne na mapie, znaki kartograficzne), pkt 4 (stolica Polski – obiekty i znaczenie), pkt 5 (z czego Polska słynie). Sąsiedzi Polski i bieg Wisły według zpe.gov.pl (sprawdzone 1.11.2026). Wybór miast, obiektów i postaci – decyzja redakcyjna.${KONIEC}`,
+        basis: `${PP}, 3. Rozumienie przestrzeni geograficznej, pkt 1 (miejscowość i okolica), pkt 2 (granice Polski, główne miasta, rzeki, krainy na mapie), pkt 3 (proste plany, kierunki główne na mapie, znaki kartograficzne), pkt 4 (stolica Polski – obiekty i znaczenie), pkt 5 (z czego Polska słynie). Sąsiedzi Polski i bieg Wisły według zpe.gov.pl (sprawdzone 2.11.2026). Wybór miast, obiektów i postaci – decyzja redakcyjna.${KONIEC}`,
         theory: `
           <h3>Mapa</h3>
           <p>Mapa to rysunek terenu z góry, bardzo pomniejszony. Na mapie <b>północ jest u góry</b>. Kolory mapy fizycznej: <b>zielony</b> – niziny, <b>żółty i brązowy</b> – wyżyny i góry (im ciemniej, tym wyżej), <b>niebieski</b> – woda.</p>
