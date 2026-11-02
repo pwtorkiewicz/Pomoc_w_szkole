@@ -1185,3 +1185,389 @@ window.LESSONS['przyroda/ochrona'] = [
     check: { q: 'Prawda czy fałsz? Gatunki chronione są chronione tylko w parkach narodowych.', options: ['Prawda', 'Fałsz'], answer: 1, explain: 'Ochrona gatunkowa obowiązuje wszędzie, gdzie dany gatunek występuje.' },
   },
 ];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/uklad-sloneczny'] = [
+  {
+    title: 'Słońce i osiem planet',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Model Układu Słonecznego: po lewej Słońce, dalej planety skaliste Merkury, Wenus, Ziemia i Mars, przerywana linia – pas planetoid, potem gazowe olbrzymy Jowisz, Saturn z pierścieniem, Uran i Neptun">
+      <path d="M0,40 A50,50 0 0 1 0,140 Z" class="f4 s4 sw"/>
+      <text x="8" y="172" class="tx-s">Słońce</text>
+      <circle cx="70" cy="90" r="4" class="f2 s2"/>
+      <circle cx="92" cy="90" r="7" class="f4 s4"/>
+      <circle cx="116" cy="90" r="7" class="f1 s1"/>
+      <circle cx="138" cy="90" r="5" class="f2 s2"/>
+      <line x1="162" y1="60" x2="162" y2="120" class="ln-thin dash"/>
+      <text x="162" y="44" class="tx-s" text-anchor="middle">pas planetoid</text>
+      <circle cx="200" cy="90" r="22" class="f2 s2 sw"/>
+      <circle cx="262" cy="90" r="16" class="f4 s4"/>
+      <ellipse cx="262" cy="90" rx="28" ry="6" class="ln"/>
+      <circle cx="318" cy="90" r="12" class="f1 s1"/>
+      <circle cx="368" cy="90" r="12" class="f5 s5"/>
+      <g class="tx-s" text-anchor="middle">
+        <text x="70" y="132">M</text><text x="92" y="132">W</text><text x="116" y="132">Z</text><text x="138" y="132">M</text>
+        <text x="200" y="132">J</text><text x="262" y="132">S</text><text x="318" y="132">U</text><text x="368" y="132">N</text>
+      </g>
+      <line x1="64" y1="146" x2="144" y2="146" class="ln"/>
+      <line x1="178" y1="146" x2="382" y2="146" class="ln"/>
+      <text x="104" y="166" class="tx-s" text-anchor="middle">skaliste</text>
+      <text x="280" y="166" class="tx-s" text-anchor="middle">gazowe olbrzymy</text>
+      <text x="200" y="192" class="tx-s" text-anchor="middle">J – Jowisz, największa planeta</text>
+    </svg>`,
+    text: `<p>W środku <b>Układu Słonecznego</b> jest <b>Słońce</b> – gwiazda, która świeci własnym światłem. Wokół niego krąży <b>8 planet</b>. Planety same nie świecą – odbijają światło Słońca.</p>
+      <p>Bliżej Słońca są cztery małe planety <b>skaliste</b>: Merkury, Wenus, Ziemia i Mars. Dalej – cztery <b>gazowe olbrzymy</b>: Jowisz (największa planeta), Saturn, Uran i Neptun. Między Marsem a Jowiszem krąży mnóstwo małych skalistych ciał – to <b>pas planetoid</b>. Pluton, dawniej dziewiąta planeta, jest dziś <b>planetą karłowatą</b>.</p>`,
+    remember: 'Kolejność planet: Merkury, Wenus, Ziemia, Mars, Jowisz, Saturn, Uran, Neptun.',
+    hook: '<b>M</b>ama <b>W</b>iesia <b>Z</b>jada <b>M</b>archewkę, <b>J</b>aś <b>S</b>zybko <b>U</b>nosi <b>N</b>ogi.',
+    check: { q: 'Która planeta jest największa?', options: ['Ziemia', 'Jowisz', 'Merkury'], answer: 1, explain: 'Jowisz to największa planeta Układu Słonecznego – gazowy olbrzym.' },
+  },
+  {
+    title: 'Ruch obrotowy: dzień i noc',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Słońce po lewej oświetla Ziemię. Połowa Ziemi zwrócona do Słońca ma dzień, druga połowa ma noc. Strzałka pokazuje obrót Ziemi z zachodu na wschód.">
+      <defs><marker id="a-k4pr-uklad-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <circle cx="40" cy="100" r="30" class="f4 s4 sw"/>
+      <text x="40" y="152" class="tx-s" text-anchor="middle">Słońce</text>
+      <line x1="80" y1="78" x2="190" y2="78" class="ln-thin dash"/>
+      <line x1="80" y1="100" x2="190" y2="100" class="ln-thin dash"/>
+      <line x1="80" y1="122" x2="190" y2="122" class="ln-thin dash"/>
+      <path d="M260,40 A60,60 0 0 0 260,160 Z" class="f4"/>
+      <path d="M260,40 A60,60 0 0 1 260,160 Z" class="f5"/>
+      <circle cx="260" cy="100" r="60" class="ln"/>
+      <line x1="260" y1="26" x2="260" y2="174" class="ln dash"/>
+      <text x="230" y="106" class="tx-b" text-anchor="middle">dzień</text>
+      <text x="292" y="106" class="tx-b" text-anchor="middle">noc</text>
+      <path d="M215,172 Q260,188 305,172" class="ln s2 sw" marker-end="url(#a-k4pr-uklad-1)"/>
+      <text x="260" y="204" class="tx-s" text-anchor="middle">obrót z zachodu na wschód</text>
+      <text x="340" y="36" class="tx-s" text-anchor="middle">oś Ziemi</text>
+    </svg>`,
+    text: `<p>Ziemia kręci się wokół własnej <b>osi</b> – wyobrażonej linii, która przechodzi przez biegun północny i południowy. Obraca się <b>z zachodu na wschód</b>. To <b>ruch obrotowy</b>.</p>
+      <p>Słońce oświetla zawsze tylko połowę Ziemi: tam jest <b>dzień</b>, a na drugiej połowie – <b>noc</b>. Jeden pełny obrót trwa prawie <b>24 godziny</b>, czyli <b>dobę</b>.</p>`,
+    remember: 'Ruch obrotowy → dzień i noc. Jeden obrót ≈ 24 godziny = doba.',
+    hook: 'Kręcisz się na krześle obrotowym przed lampą: raz lampa świeci ci w twarz (dzień), a raz w plecy (noc).',
+    check: { q: 'Co jest skutkiem ruchu obrotowego Ziemi?', options: ['pory roku', 'dzień i noc', 'fazy Księżyca'], answer: 1, explain: 'Ziemia obraca się, więc raz jesteśmy po stronie oświetlonej (dzień), a raz po ciemnej (noc).' },
+  },
+  {
+    title: 'Ruch obiegowy: rok i pory roku',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Ziemia krąży wokół Słońca po orbicie. Oś Ziemi jest nachylona. Po lewej północna półkula jest zwrócona do Słońca – u nas lato. Po prawej jest odwrócona od Słońca – u nas zima.">
+      <defs><marker id="a-k4pr-uklad-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <text x="210" y="22" class="tx-s" text-anchor="middle">oś Ziemi jest nachylona</text>
+      <ellipse cx="210" cy="105" rx="150" ry="55" class="ln-thin dash"/>
+      <path d="M250,51 Q210,47 170,51" class="ln s2 sw" marker-end="url(#a-k4pr-uklad-2)"/>
+      <circle cx="210" cy="105" r="28" class="f4 s4 sw"/>
+      <circle cx="60" cy="105" r="18" class="f1 s1"/>
+      <line x1="51" y1="131" x2="69" y2="79" class="ln"/>
+      <text x="72" y="72" class="tx-s">N</text>
+      <circle cx="360" cy="105" r="18" class="f1 s1"/>
+      <line x1="351" y1="131" x2="369" y2="79" class="ln"/>
+      <text x="372" y="72" class="tx-s">N</text>
+      <text x="60" y="156" class="tx" text-anchor="middle">lato u nas</text>
+      <text x="360" y="156" class="tx" text-anchor="middle">zima u nas</text>
+      <text x="210" y="196" class="tx-s" text-anchor="middle">1 okrążenie ≈ 365 dni i ćwierć doby = rok</text>
+    </svg>`,
+    text: `<p>Ziemia krąży też wokół Słońca – to <b>ruch obiegowy</b>. Jedno okrążenie trwa około <b>365 dni i ćwierć doby</b>, czyli <b>rok</b>. Z czterech „ćwiartek” co cztery lata robi się dodatkowy dzień – <b>rok przestępny</b> ma 366 dni (29 lutego).</p>
+      <p>Oś Ziemi jest <b>nachylona</b>. Gdy północna połowa Ziemi (z Polską) jest zwrócona do Słońca, Słońce świeci u nas wysoko, dni są długie – jest <b>lato</b>. Pół roku później północna połowa jest odwrócona od Słońca – jest <b>zima</b>.</p>`,
+    remember: 'Ruch obiegowy + nachylona oś → pory roku. Jedno okrążenie Słońca ≈ 365 dni = rok.',
+    hook: 'Pory roku robi <b>przechylona</b> Ziemia, a nie to, że raz jest bliżej, a raz dalej od Słońca.',
+    check: { q: 'Ile mniej więcej trwa jedno okrążenie Ziemi wokół Słońca?', options: ['około 24 godzin', 'około 29,5 dnia', 'około 365 dni'], answer: 2, explain: 'Jedno okrążenie Słońca trwa około 365 dni i ćwierć doby – to rok.' },
+  },
+  {
+    title: 'Fazy Księżyca',
+    svg: `<svg viewBox="0 0 420 175" role="img" aria-label="Cztery fazy Księżyca: nów – Księżyca nie widać; pierwsza kwadra – jasna prawa połowa, Księżyca przybywa; pełnia – cała tarcza jasna; ostatnia kwadra – jasna lewa połowa, Księżyca ubywa">
+      <circle cx="60" cy="60" r="36" class="bg ln dash"/>
+      <circle cx="160" cy="60" r="36" class="bg"/>
+      <path d="M160,24 A36,36 0 0 1 160,96 Z" class="f4"/>
+      <circle cx="160" cy="60" r="36" class="ln"/>
+      <circle cx="260" cy="60" r="36" class="f4 ln"/>
+      <circle cx="360" cy="60" r="36" class="bg"/>
+      <path d="M360,24 A36,36 0 0 0 360,96 Z" class="f4"/>
+      <circle cx="360" cy="60" r="36" class="ln"/>
+      <g class="tx-s" text-anchor="middle">
+        <text x="60" y="120">nów</text><text x="160" y="120">pierwsza kwadra</text><text x="260" y="120">pełnia</text><text x="360" y="120">ostatnia kwadra</text>
+        <text x="60" y="142">nie widać</text><text x="160" y="142" class="t3">P – przybywa</text><text x="260" y="142">cała tarcza</text><text x="360" y="142" class="t2">C – cofa się</text>
+      </g>
+      <text x="210" y="168" class="tx-s" text-anchor="middle">od nowiu do nowiu ≈ 29,5 dnia</text>
+    </svg>`,
+    text: `<p><b>Księżyc</b> krąży wokół Ziemi i nie świeci sam – odbija światło Słońca. Słońce zawsze oświetla połowę Księżyca, ale z Ziemi widzimy raz większy, raz mniejszy kawałek tej jasnej połowy. Te zmiany to <b>fazy Księżyca</b>.</p>
+      <p>W <b>nowiu</b> Księżyca nie widać. Potem go przybywa: <b>pierwsza kwadra</b> (jasna prawa połowa), <b>pełnia</b> (cała tarcza), a potem ubywa: <b>ostatnia kwadra</b> (jasna lewa połowa). Cały cykl trwa około <b>29,5 dnia</b>.</p>`,
+    remember: 'nów → pierwsza kwadra → pełnia → ostatnia kwadra → nów (ok. 29,5 dnia).',
+    hook: 'Dorysuj kreskę: wychodzi <b>P</b> – Księżyca <b>przybywa</b>. Wygląda jak <b>C</b> – <b>cofa się</b>, czyli ubywa.',
+  },
+  {
+    title: 'Zaćmienie Słońca i Księżyca',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Zaćmienie Słońca: w jednej linii Słońce, Księżyc, Ziemia – cień Księżyca pada na Ziemię, w czasie nowiu. Zaćmienie Księżyca: Słońce, Ziemia, Księżyc – Księżyc wchodzi w cień Ziemi, w czasie pełni.">
+      <text x="10" y="20" class="tx-b">zaćmienie Słońca – nów</text>
+      <polygon points="210,48 210,68 318,62 318,54" class="f5"/>
+      <circle cx="40" cy="58" r="26" class="f4 s4 sw"/>
+      <circle cx="210" cy="58" r="10" class="bg ln"/>
+      <circle cx="340" cy="58" r="22" class="f1 s1"/>
+      <g class="tx-s" text-anchor="middle"><text x="40" y="102">Słońce</text><text x="210" y="102">Księżyc</text><text x="340" y="102">Ziemia</text></g>
+      <text x="10" y="128" class="tx-b">zaćmienie Księżyca – pełnia</text>
+      <polygon points="210,143 210,187 352,174 352,156" class="f5"/>
+      <circle cx="40" cy="165" r="26" class="f4 s4 sw"/>
+      <circle cx="210" cy="165" r="22" class="f1 s1"/>
+      <circle cx="340" cy="165" r="10" class="f2 s2"/>
+      <g class="tx-s" text-anchor="middle"><text x="40" y="210">Słońce</text><text x="210" y="210">Ziemia</text><text x="340" y="210">Księżyc</text></g>
+    </svg>`,
+    text: `<p>Czasem Słońce, Księżyc i Ziemia ustawiają się w jednej linii. Gdy <b>Księżyc</b> jest pośrodku, zasłania nam Słońce – to <b>zaćmienie Słońca</b>. Może się zdarzyć tylko w czasie <b>nowiu</b>.</p>
+      <p>Gdy pośrodku jest <b>Ziemia</b>, Księżyc wchodzi w jej cień, ciemnieje i często robi się czerwonawy – to <b>zaćmienie Księżyca</b>. Może się zdarzyć tylko w czasie <b>pełni</b>. Nie przy każdym nowiu i nie przy każdej pełni jest zaćmienie.</p>
+      <p>⚠️ Na Słońce nigdy nie patrz gołym okiem ani przez lornetkę – nawet w czasie zaćmienia. Tylko przez specjalne okulary do obserwacji Słońca.</p>`,
+    remember: 'Zaćmienie Słońca: Słońce – Księżyc – Ziemia (nów). Zaćmienie Księżyca: Słońce – Ziemia – Księżyc (pełnia).',
+    hook: 'Kto stoi <b>pośrodku</b>, ten robi cień: Księżyc pośrodku – „gaśnie” Słońce; Ziemia pośrodku – „gaśnie” Księżyc.',
+    check: { q: 'Co znajduje się pośrodku podczas zaćmienia Księżyca?', options: ['Księżyc', 'Słońce', 'Ziemia'], answer: 2, explain: 'Przy zaćmieniu Księżyca Ziemia jest między Słońcem a Księżycem, a Księżyc wchodzi w jej cień.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/mieszaniny'] = [
+  {
+    title: 'Gdzie znika cukier?',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Szklanka wody z kostkami cukru na dnie. Strzałka: mieszamy. Druga szklanka – cukier rozpuścił się, drobinki rozeszły się w wodzie, powstał roztwór.">
+      <defs><marker id="a-k4pr-miesz-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <text x="200" y="28" class="tx" text-anchor="middle">cukier się rozpuszcza</text>
+      <path d="M34,80 L45,170 L125,170 L136,80 Z" class="f1"/>
+      <path d="M30,50 L45,170 L125,170 L140,50" class="ln"/>
+      <rect x="66" y="152" width="16" height="16" class="bg ln"/>
+      <rect x="88" y="152" width="16" height="16" class="bg ln"/>
+      <line x1="152" y1="112" x2="238" y2="112" class="ln s2 sw" marker-end="url(#a-k4pr-miesz-1)"/>
+      <text x="195" y="100" class="tx-s" text-anchor="middle">mieszamy</text>
+      <path d="M254,80 L265,170 L345,170 L356,80 Z" class="f1"/>
+      <path d="M250,50 L265,170 L345,170 L360,50" class="ln"/>
+      <g class="t1"><circle cx="275" cy="95" r="2"/><circle cx="300" cy="110" r="2"/><circle cx="330" cy="98" r="2"/><circle cx="285" cy="135" r="2"/><circle cx="318" cy="128" r="2"/><circle cx="296" cy="158" r="2"/><circle cx="336" cy="152" r="2"/><circle cx="310" cy="88" r="2"/></g>
+      <text x="85" y="192" class="tx-s" text-anchor="middle">woda + cukier</text>
+      <text x="305" y="194" class="tx-b" text-anchor="middle">roztwór</text>
+    </svg>`,
+    text: `<p>Wsyp cukier do wody i zamieszaj. Cukier „znika”, ale woda jest słodka. Cukier nie zniknął – rozpadł się na drobinki tak małe, że ich nie widać, i rozszedł się w wodzie. Mówimy, że się <b>rozpuścił</b>, a powstała ciecz to <b>roztwór</b>.</p>
+      <p>W wodzie rozpuszczają się np. cukier, sól kuchenna i kawa rozpuszczalna. <b>Nie rozpuszczają się</b> piasek, kreda, żwir i olej.</p>`,
+    remember: 'Substancja rozpuszczona nie znika – jest w wodzie w postaci niewidocznych drobinek.',
+    hook: 'Cukier w herbacie jest jak dzieci, które rozbiegły się po wielkim boisku – nie widzisz ich z daleka, ale wciąż tam są.',
+    check: { q: 'Która substancja NIE rozpuszcza się w wodzie?', options: ['sól kuchenna', 'piasek', 'cukier'], answer: 1, explain: 'Piasek się nie rozpuszcza – opada na dno. Sól i cukier się rozpuszczają.' },
+  },
+  {
+    title: 'Co przyspiesza rozpuszczanie?',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Trzy kafelki: mieszanie łyżeczką, rozdrobnienie – cukier puder zamiast kostki, wyższa temperatura – ciepła woda zamiast zimnej">
+      <rect x="8" y="10" width="128" height="150" rx="12" class="f1 s1"/>
+      <rect x="146" y="10" width="128" height="150" rx="12" class="f4 s4"/>
+      <rect x="284" y="10" width="128" height="150" rx="12" class="f2 s2"/>
+      <g class="tx-b" text-anchor="middle"><text x="72" y="60">🥄</text><text x="210" y="60">🧂</text><text x="348" y="60">🔥</text></g>
+      <g class="tx" text-anchor="middle"><text x="72" y="100">mieszanie</text><text x="210" y="100">rozdrobnienie</text><text x="348" y="100">temperatura</text></g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="72" y="126">łyżeczka</text><text x="72" y="144">w ruch</text>
+        <text x="210" y="126">puder zamiast</text><text x="210" y="144">kostki</text>
+        <text x="348" y="126">ciepła woda</text><text x="348" y="144">zamiast zimnej</text>
+      </g>
+      <text x="210" y="188" class="tx-s" text-anchor="middle">w doświadczeniu zmieniaj tylko jedną rzecz naraz</text>
+    </svg>`,
+    text: `<p>Rozpuszczanie przyspieszają trzy rzeczy: <b>mieszanie</b>, <b>rozdrobnienie</b> (cukier puder rozpuści się szybciej niż kostka) i <b>wyższa temperatura</b> (w ciepłej herbacie szybciej niż w zimnej).</p>
+      <p>Chcesz to sprawdzić doświadczeniem? Zmieniaj tylko <b>jedną rzecz</b>, a resztę zostaw tak samo: tyle samo wody, tyle samo cukru, takie same szklanki. Tylko wtedy wiesz, co zadziałało.</p>`,
+    remember: 'Mieszanie, rozdrobnienie i wyższa temperatura przyspieszają rozpuszczanie.',
+    hook: 'Trzy słowa na herbatę: <b>zamieszaj, rozkrusz, podgrzej</b>.',
+    check: { q: 'W której szklance kostka cukru rozpuści się najszybciej?', options: ['w zimnej wodzie, bez mieszania', 'w ciepłej wodzie, gdy mieszasz', 'w zimnej wodzie, gdy mieszasz'], answer: 1, explain: 'Tu działają naraz dwa czynniki: wyższa temperatura i mieszanie.' },
+  },
+  {
+    title: 'Jednorodna czy niejednorodna?',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Trzy szklanki: woda z solą wygląda jednolicie – mieszanina jednorodna; woda z piaskiem – piasek na dnie, mieszanina niejednorodna; woda z olejem – warstwa oleju na górze, mieszanina niejednorodna">
+      <text x="210" y="24" class="tx-b" text-anchor="middle">Czy widać składniki?</text>
+      <rect x="20" y="40" width="110" height="120" rx="8" class="f1"/>
+      <rect x="155" y="40" width="110" height="120" rx="8" class="f1"/>
+      <rect x="155" y="134" width="110" height="26" class="f2"/>
+      <g class="t2"><circle cx="170" cy="146" r="2"/><circle cx="188" cy="152" r="2"/><circle cx="204" cy="143" r="2"/><circle cx="222" cy="153" r="2"/><circle cx="238" cy="145" r="2"/><circle cx="252" cy="152" r="2"/></g>
+      <rect x="290" y="40" width="110" height="120" rx="8" class="f1"/>
+      <rect x="290" y="40" width="110" height="28" class="f4"/>
+      <rect x="20" y="40" width="110" height="120" rx="8" class="ln"/>
+      <rect x="155" y="40" width="110" height="120" rx="8" class="ln"/>
+      <rect x="290" y="40" width="110" height="120" rx="8" class="ln"/>
+      <g class="tx-s" text-anchor="middle"><text x="75" y="180">woda z solą</text><text x="210" y="180">woda z piaskiem</text><text x="345" y="180">woda z olejem</text></g>
+      <g class="tx" text-anchor="middle"><text x="75" y="202" class="t3">jednorodna</text><text x="210" y="202" class="t2">niejednorodna</text><text x="345" y="202" class="t2">niejednorodna</text></g>
+    </svg>`,
+    text: `<p><b>Mieszanina</b> to co najmniej dwie substancje zmieszane razem. Każda z nich zachowuje swoje właściwości – dlatego da się je potem rozdzielić.</p>
+      <p>W mieszaninie <b>jednorodnej</b> nie rozróżnisz składników ani gołym okiem, ani przez lupę (woda z solą, woda z cukrem). W mieszaninie <b>niejednorodnej</b> składniki widać (woda z piaskiem, woda z olejem, groch z kaszą).</p>`,
+    remember: 'Jednorodna – składników nie widać. Niejednorodna – składniki widać gołym okiem lub przez lupę.',
+    hook: 'Jednorodna = „jedno” – wygląda jak jedna substancja. Niejednorodna = „nie jedno” – widać, że jest kilka.',
+    check: { q: 'Która mieszanina jest jednorodna?', options: ['woda z olejem', 'woda z cukrem', 'groch z kaszą'], answer: 1, explain: 'Rozpuszczonego cukru nie widać ani gołym okiem, ani przez lupę.' },
+  },
+  {
+    title: 'Magnes, sito, odstawienie i zlanie',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Trzy sposoby rozdzielania: magnes wyciąga opiłki żelaza z piasku; na sicie zostaje groch, a kasza spada; w szklance piasek opada na dno (sedymentacja), a potem zlewamy wodę znad osadu (dekantacja)">
+      <rect x="8" y="10" width="128" height="160" rx="12" class="f5 s5"/>
+      <rect x="146" y="10" width="128" height="160" rx="12" class="f3 s3"/>
+      <rect x="284" y="10" width="128" height="160" rx="12" class="f1 s1"/>
+      <text x="72" y="62" class="tx-b" text-anchor="middle">🧲</text>
+      <line x1="178" y1="60" x2="242" y2="60" class="ln sw"/>
+      <circle cx="192" cy="50" r="7" class="f3 s3"/><circle cx="210" cy="50" r="7" class="f3 s3"/><circle cx="228" cy="50" r="7" class="f3 s3"/>
+      <g class="t4"><circle cx="196" cy="72" r="2"/><circle cx="214" cy="78" r="2"/><circle cx="226" cy="70" r="2"/><circle cx="204" cy="84" r="2"/></g>
+      <rect x="323" y="32" width="50" height="54" rx="4" class="bg"/>
+      <rect x="323" y="44" width="50" height="42" class="f1"/>
+      <rect x="323" y="76" width="50" height="10" class="f2"/>
+      <rect x="323" y="32" width="50" height="54" rx="4" class="ln"/>
+      <g class="tx" text-anchor="middle"><text x="72" y="104">magnes</text><text x="210" y="104">sito</text><text x="348" y="104">odstaw i zlej</text></g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="72" y="130">opiłki żelaza</text><text x="72" y="148">z piasku</text>
+        <text x="210" y="130">groch zostaje,</text><text x="210" y="148">kasza spada</text>
+        <text x="348" y="130">sedymentacja,</text><text x="348" y="148">dekantacja</text>
+      </g>
+      <text x="210" y="196" class="tx-s" text-anchor="middle">piasek opada na dno → zlewamy wodę znad osadu</text>
+    </svg>`,
+    text: `<p>Mieszaniny niejednorodne często rozdzielisz <b>sposobami mechanicznymi</b>: wybierzesz składniki ręką, przesiejesz przez <b>sito</b> (groch zostaje, drobna kasza przelatuje) albo przyciągniesz <b>magnesem</b> (opiłki żelaza z piasku).</p>
+      <p>Wodę z piaskiem wystarczy odstawić – piasek opada na dno. To <b>sedymentacja</b>. Potem ostrożnie zlewamy wodę znad osadu – to <b>dekantacja</b>.</p>`,
+    remember: 'Sedymentacja – opadanie cząstek na dno. Dekantacja – zlewanie cieczy znad osadu.',
+    hook: '<b>S</b>edymentacja – <b>S</b>iadanie na dnie. <b>D</b>ekantacja – <b>D</b>elikatne zlewanie.',
+  },
+  {
+    title: 'Sól z piaskiem: rozpuść, przesącz, odparuj',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Trzy kroki rozdzielania soli i piasku: 1. rozpuść w wodzie – sól się rozpuszcza, piasek nie; 2. przesącz przez lejek z sączkiem – piasek zostaje na sączku; 3. odparuj wodę na ogniu – zostaje sól">
+      <defs><marker id="a-k4pr-miesz-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="8" y="10" width="118" height="170" rx="12" class="f4 s4"/>
+      <rect x="149" y="10" width="118" height="170" rx="12" class="f3 s3"/>
+      <rect x="290" y="10" width="118" height="170" rx="12" class="f2 s2"/>
+      <path d="M39,60 L45,120 L89,120 L95,60 Z" class="f1"/>
+      <rect x="47" y="110" width="40" height="9" class="f2"/>
+      <path d="M37,40 L45,120 L89,120 L97,40" class="ln"/>
+      <path d="M192,50 L224,50 L212,68 L204,68 Z" class="f2"/>
+      <path d="M178,35 L238,35 L212,72 L212,90 L204,90 L204,72 Z" class="ln"/>
+      <path d="M189,112 L190,130 L226,130 L227,112 Z" class="f1"/>
+      <path d="M188,98 L190,130 L226,130 L228,98" class="ln"/>
+      <path d="M309,70 Q349,98 389,70 Z" class="f1 s1"/>
+      <path d="M338,62 q6,-9 0,-18 M352,62 q6,-9 0,-18" class="ln-thin"/>
+      <line x1="315" y1="98" x2="383" y2="98" class="ln"/>
+      <text x="349" y="128" class="tx-b" text-anchor="middle">🔥</text>
+      <line x1="128" y1="70" x2="146" y2="70" class="ln s2 sw" marker-end="url(#a-k4pr-miesz-2)"/>
+      <line x1="269" y1="70" x2="287" y2="70" class="ln s2 sw" marker-end="url(#a-k4pr-miesz-2)"/>
+      <g class="tx-b" text-anchor="middle"><text x="67" y="150">1. rozpuść</text><text x="208" y="150">2. przesącz</text><text x="349" y="150">3. odparuj</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="67" y="170">sól się rozpuści</text><text x="208" y="170">piasek na sączku</text><text x="349" y="170">zostaje sól</text></g>
+      <text x="210" y="202" class="tx-s" text-anchor="middle">sączek nie zatrzyma rozpuszczonej soli!</text>
+    </svg>`,
+    text: `<p><b>Sączenie</b> (filtrowanie): przelewasz mieszaninę przez <b>sączek</b> – bibułę albo filtr do kawy. Ciało stałe, np. piasek, zostaje na sączku, a woda przecieka. Ale rozpuszczona sól przecieka razem z wodą!</p>
+      <p>Żeby odzyskać sól, trzeba wodę <b>odparować</b> – ogrzewać roztwór, aż woda zamieni się w parę. Gdy woda paruje powoli, z roztworu wydzielają się kryształki soli – to <b>krystalizacja</b>.</p>
+      <p>⚠️ Ogrzewanie – tylko z dorosłym. W pracowni nie próbuj niczego na smak.</p>`,
+    remember: 'Sól z piaskiem: rozpuść w wodzie → przesącz (piasek zostaje) → odparuj wodę (zostaje sól).',
+    hook: 'Sączek to sitko dla bardzo drobnych ziarenek – ale rozpuszczona sól jest tak drobna, że przejdzie przez każde sitko.',
+    check: { q: 'Jak odzyskać sól rozpuszczoną w wodzie?', options: ['przesączyć przez bibułę', 'odparować wodę', 'użyć magnesu'], answer: 1, explain: 'Rozpuszczona sól przecieka przez sączek i nie reaguje na magnes. Po odparowaniu wody sól zostaje.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['przyroda/las-laka'] = [
+  {
+    title: 'Ekosystem – naturalny czy sztuczny?',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Dwa kafelki. Ekosystemy naturalne – powstały bez udziału człowieka: las naturalny, jezioro, rzeka, torfowisko. Ekosystemy sztuczne – stworzył je człowiek: pole, sad, park, ogród.">
+      <rect x="8" y="8" width="198" height="184" rx="14" class="f3 s3"/>
+      <rect x="214" y="8" width="198" height="184" rx="14" class="f4 s4"/>
+      <text x="107" y="36" class="tx-b t3" text-anchor="middle">naturalne</text>
+      <text x="313" y="36" class="tx-b t4" text-anchor="middle">sztuczne</text>
+      <text x="107" y="60" class="tx-s" text-anchor="middle">bez udziału człowieka</text>
+      <text x="313" y="60" class="tx-s" text-anchor="middle">stworzył je człowiek</text>
+      <text x="107" y="108" class="tx-b" text-anchor="middle">🌲 🏞️</text>
+      <text x="313" y="108" class="tx-b" text-anchor="middle">🌾 🍎 🌷</text>
+      <g class="tx" text-anchor="middle">
+        <text x="107" y="145">las naturalny,</text><text x="107" y="167">jezioro, rzeka</text>
+        <text x="313" y="145">pole, sad,</text><text x="313" y="167">park, ogród</text>
+      </g>
+    </svg>`,
+    text: `<p><b>Ekosystem</b> to miejsce w przyrodzie razem ze wszystkim, co w nim żyje – roślinami, zwierzętami, grzybami, bakteriami – i z warunkami, jakie tam panują: światłem, wodą, glebą, powietrzem. Wszystko jest ze sobą powiązane.</p>
+      <p>Ekosystemy <b>naturalne</b> powstały bez człowieka, np. jezioro, rzeka, torfowisko, naturalny las jak Puszcza Białowieska. Ekosystemy <b>sztuczne</b> stworzył człowiek i musi o nie dbać: pole, sad, park, ogród. Człowiek korzysta z ekosystemów, zmienia je, ale może też je chronić.</p>`,
+    remember: 'Ekosystem = organizmy + miejsce + warunki życia. Naturalny – bez człowieka; sztuczny – stworzony przez człowieka.',
+    hook: 'Zapytaj: „Kto to założył?”. Przyroda – naturalny. Człowiek – sztuczny.',
+    check: { q: 'Który ekosystem jest sztuczny?', options: ['jezioro', 'sad', 'torfowisko'], answer: 1, explain: 'Sad założył człowiek i o niego dba – to ekosystem sztuczny.' },
+  },
+  {
+    title: 'Nieproszeni goście – gatunki inwazyjne',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Strzałki do Polski: z Kaukazu – barszcz Sosnowskiego, z Ameryki Północnej – szop pracz. W Polsce szkodzą gatunkom rodzimym.">
+      <defs><marker id="a-k4pr-las-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="20" width="160" height="62" rx="12" class="f4 s4"/>
+      <rect x="10" y="118" width="160" height="62" rx="12" class="f2 s2"/>
+      <rect x="268" y="56" width="142" height="88" rx="12" class="f3 s3"/>
+      <text x="90" y="46" class="tx-b" text-anchor="middle">Kaukaz</text>
+      <text x="90" y="68" class="tx-s" text-anchor="middle">barszcz Sosnowskiego</text>
+      <text x="90" y="144" class="tx-b" text-anchor="middle">Ameryka Płn.</text>
+      <text x="90" y="166" class="tx-s" text-anchor="middle">szop pracz</text>
+      <text x="339" y="88" class="tx-b" text-anchor="middle">Polska</text>
+      <text x="339" y="112" class="tx-s" text-anchor="middle">szkodzą gatunkom</text>
+      <text x="339" y="130" class="tx-s" text-anchor="middle">rodzimym</text>
+      <line x1="172" y1="54" x2="264" y2="84" class="ln s2 sw" marker-end="url(#a-k4pr-las-1)"/>
+      <line x1="172" y1="146" x2="264" y2="116" class="ln s2 sw" marker-end="url(#a-k4pr-las-1)"/>
+    </svg>`,
+    text: `<p><b>Gatunek obcy</b> to roślina albo zwierzę przywiezione przez człowieka z innej części świata. Jeśli szybko się rozprzestrzenia i szkodzi gatunkom <b>rodzimym</b> (tym, które żyją u nas od dawna), nazywamy go <b>inwazyjnym</b>.</p>
+      <p><b>Barszcz Sosnowskiego</b> pochodzi z Kaukazu – zarasta duże obszary i wypiera nasze rośliny, a jego sok na słońcu parzy skórę. <b>Szop pracz</b> pochodzi z Ameryki Północnej – może niszczyć gniazda ptaków wodnych i zagraża rzadkiemu żółwiowi błotnemu.</p>`,
+    remember: 'Gatunek inwazyjny = obcy przybysz, który szybko się rozprzestrzenia i szkodzi gatunkom rodzimym.',
+    hook: 'Nigdy nie wypuszczaj zwierzaka z domu „na wolność” – w obcym miejscu może zginąć albo stać się nieproszonym gościem, który szkodzi innym.',
+  },
+  {
+    title: 'Łąka: kwiaty dla owadów i dla wiatru',
+    svg: `<svg viewBox="0 0 420 210" role="img" aria-label="Po lewej kwiat z barwnymi płatkami i pszczoła – barwny okwiat wabi owady. Po prawej źdźbło trawy z drobnymi kwiatami i linie wiatru – pyłek traw niesie wiatr.">
+      <line x1="100" y1="96" x2="100" y2="165" class="ln s3 sw"/>
+      <circle cx="100" cy="58" r="15" class="f2 s2"/><circle cx="125" cy="76" r="15" class="f2 s2"/><circle cx="116" cy="104" r="15" class="f2 s2"/><circle cx="84" cy="104" r="15" class="f2 s2"/><circle cx="75" cy="76" r="15" class="f2 s2"/>
+      <circle cx="100" cy="82" r="11" class="f4 s4"/>
+      <text x="160" y="52" class="tx-b">🐝</text>
+      <line x1="210" y1="20" x2="210" y2="170" class="ln-thin dash"/>
+      <line x1="320" y1="50" x2="320" y2="165" class="ln s3 sw"/>
+      <ellipse cx="313" cy="58" rx="4" ry="9" class="f3 s3"/><ellipse cx="327" cy="70" rx="4" ry="9" class="f3 s3"/><ellipse cx="313" cy="82" rx="4" ry="9" class="f3 s3"/><ellipse cx="327" cy="94" rx="4" ry="9" class="f3 s3"/><ellipse cx="313" cy="106" rx="4" ry="9" class="f3 s3"/>
+      <path d="M232,70 q18,-10 36,0 t36,0 M232,95 q18,-10 36,0 t36,0 M240,120 q18,-10 36,0" class="ln-thin"/>
+      <text x="380" y="80" class="tx-b" text-anchor="middle">💨</text>
+      <g class="tx-s" text-anchor="middle">
+        <text x="105" y="186">barwny okwiat –</text><text x="105" y="204">wabi owady</text>
+        <text x="315" y="186">drobne kwiaty traw –</text><text x="315" y="204">pyłek niesie wiatr</text>
+      </g>
+    </svg>`,
+    text: `<p><b>Łąka</b> to teren porośnięty głównie trawami i innymi roślinami zielnymi, bez drzew. Rosną tu np. koniczyna, mniszek, jaskier i szczaw, żyją pasikoniki, świerszcze, trzmiele, motyle, krety i zające. Łąki dają pokarm owadom zapylającym, a ludziom – siano dla zwierząt.</p>
+      <p>Kwiaty z <b>barwnym okwiatem</b> (kolorowymi płatkami) wabią owady, które przenoszą pyłek. Kwiaty <b>traw</b> są drobne i zielonkawe – ich pyłek niesie <b>wiatr</b>, więc nie muszą nikogo wabić.</p>
+      <p>Dzięki <b>koszeniu</b> i <b>wypasowi</b> łąka nie zarasta lasem. <b>Wypalanie łąk jest zabronione</b> – giną w ogniu zwierzęta, a pożar łatwo się rozprzestrzenia.</p>`,
+    remember: 'Barwne płatki = reklama dla owadów. Trawy zapyla wiatr, więc nie mają barwnych płatków.',
+    hook: 'Kolorowy kwiat to szyld „Zapraszam, mam nektar!”. Trawa nie potrzebuje szyldu – jej listonoszem jest wiatr.',
+    check: { q: 'Dlaczego kwiaty traw nie mają kolorowych płatków?', options: ['bo rosną w cieniu', 'bo ich pyłek przenosi wiatr', 'bo kwitną zimą'], answer: 1, explain: 'Barwne płatki wabią owady. Trawy zapyla wiatr, więc nie muszą wabić owadów.' },
+  },
+  {
+    title: 'Cztery piętra lasu',
+    svg: `<svg viewBox="0 0 420 230" role="img" aria-label="Przekrój lasu: od góry korony drzew (najwięcej światła), podszyt – krzewy i młode drzewa, runo leśne – mchy, paprocie, grzyby, ściółka – opadłe liście (ciemno i wilgotno)">
+      <defs><marker id="a-k4pr-las-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="40" y="40" width="10" height="150" class="f2 s2"/>
+      <rect x="160" y="40" width="10" height="150" class="f2 s2"/>
+      <circle cx="45" cy="42" r="34" class="f3 s3"/>
+      <circle cx="165" cy="42" r="34" class="f3 s3"/>
+      <circle cx="105" cy="128" r="22" class="f3 s3"/>
+      <circle cx="205" cy="134" r="18" class="f3 s3"/>
+      <path d="M70,186 q4,-22 8,0 M84,186 q4,-18 8,0 M190,186 q4,-20 8,0" class="ln s3"/>
+      <text x="138" y="184" class="tx" text-anchor="middle">🍄</text>
+      <rect x="10" y="188" width="220" height="14" class="f2"/>
+      <line x1="10" y1="80" x2="236" y2="80" class="ln-thin dash"/>
+      <line x1="10" y1="152" x2="236" y2="152" class="ln-thin dash"/>
+      <line x1="10" y1="186" x2="236" y2="186" class="ln-thin dash"/>
+      <g class="tx-b"><text x="246" y="44">korony drzew</text><text x="246" y="122">podszyt</text><text x="246" y="174">runo leśne</text><text x="246" y="204">ściółka</text></g>
+      <text x="246" y="64" class="tx-s">najwięcej światła</text>
+      <text x="246" y="224" class="tx-s">ciemno i wilgotno</text>
+      <line x1="404" y1="70" x2="404" y2="196" class="ln s2 sw" marker-end="url(#a-k4pr-las-2)"/>
+    </svg>`,
+    text: `<p>W lesie najważniejsze są drzewa. Las ma <b>cztery piętra</b> (warstwy), od góry:</p>
+      <ul><li><b>korony drzew</b> – sosny, świerki, dęby, buki, brzozy; żyją tu np. wiewiórki,</li>
+      <li><b>podszyt</b> – krzewy i młode drzewa, np. leszczyna, jarzębina, kalina,</li>
+      <li><b>runo leśne</b> – mchy, paprocie, borówki, wrzos i grzyby,</li>
+      <li><b>ściółka</b> – opadłe liście, igły i gałązki; dżdżownice, grzyby i bakterie zamieniają je w próchnicę.</li></ul>
+      <p>Im niżej, tym mniej światła, więcej wilgoci i słabszy wiatr.</p>`,
+    remember: 'Piętra lasu od góry: korony drzew → podszyt → runo leśne → ściółka.',
+    hook: 'Las jak blok: na dachu (korony) najwięcej słońca, w piwnicy (ściółka) ciemno i wilgotno.',
+    check: { q: 'W którym piętrze lasu rosną mchy i paprocie?', options: ['w koronach drzew', 'w podszycie', 'w runie leśnym'], answer: 2, explain: 'Runo leśne to najniższa warstwa roślin: mchy, paprocie, krzewinki i grzyby.' },
+  },
+  {
+    title: 'Jaki to las i po co nam las?',
+    svg: `<svg viewBox="0 0 420 220" role="img" aria-label="Typy lasu: iglasty (bór) – sosna, świerk; liściasty – dąb, buk, brzoza; mieszany – drzewa iglaste i liściaste. Funkcje lasu: ochronne – tlen, woda, dom zwierząt; gospodarcze – drewno, grzyby, jagody; społeczne – wypoczynek, zdrowie, praca.">
+      <rect x="8" y="8" width="128" height="96" rx="12" class="f3 s3"/>
+      <rect x="146" y="8" width="128" height="96" rx="12" class="f3 s3"/>
+      <rect x="284" y="8" width="128" height="96" rx="12" class="f3 s3"/>
+      <g class="tx-b" text-anchor="middle"><text x="72" y="40">🌲🌲</text><text x="210" y="40">🌳🌳</text><text x="348" y="40">🌲🌳</text></g>
+      <g class="tx" text-anchor="middle"><text x="72" y="70">iglasty</text><text x="210" y="70">liściasty</text><text x="348" y="70">mieszany</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="72" y="92">sosna, świerk</text><text x="210" y="92">dąb, buk, brzoza</text><text x="348" y="92">oba rodzaje</text></g>
+      <rect x="8" y="114" width="128" height="98" rx="12" class="f1 s1"/>
+      <rect x="146" y="114" width="128" height="98" rx="12" class="f4 s4"/>
+      <rect x="284" y="114" width="128" height="98" rx="12" class="f5 s5"/>
+      <g class="tx" text-anchor="middle"><text x="72" y="144">ochronne</text><text x="210" y="144">gospodarcze</text><text x="348" y="144">społeczne</text></g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="72" y="168">tlen, woda,</text><text x="72" y="188">dom zwierząt</text>
+        <text x="210" y="168">drewno,</text><text x="210" y="188">grzyby, jagody</text>
+        <text x="348" y="168">wypoczynek,</text><text x="348" y="188">zdrowie, praca</text>
+      </g>
+    </svg>`,
+    text: `<p>Typ lasu poznasz po drzewach w koronach: <b>las iglasty</b> (bór) – sosny, świerki, jodły, modrzewie; <b>las liściasty</b> – dęby, buki, graby, lipy, brzozy; <b>las mieszany</b> – drzewa iglaste i liściaste razem. Najczęstszym drzewem w polskich lasach jest <b>sosna</b>.</p>
+      <p>Las jest domem roślin, zwierząt i grzybów, wytwarza tlen i pochłania dwutlenek węgla, zatrzymuje wodę i chroni przed powodzią (funkcje <b>ochronne</b>). Daje drewno, grzyby i jagody (<b>gospodarcze</b>) oraz miejsce do wypoczynku i pracy (<b>społeczne</b>).</p>
+      <p>Lasom szkodzą wycinanie, pożary, śmieci i hałas. Lasy z jednego gatunku drzew łatwiej niszczą szkodniki, np. korniki.</p>`,
+    remember: 'Typy lasu: iglasty, liściasty, mieszany. Funkcje lasu: ochronne, gospodarcze, społeczne.',
+    check: { q: 'W lesie rosną razem sosny, dęby i brzozy. To las…', options: ['iglasty', 'liściasty', 'mieszany'], answer: 2, explain: 'Sosna jest drzewem iglastym, a dąb i brzoza – liściastymi. Razem tworzą las mieszany.' },
+  },
+];

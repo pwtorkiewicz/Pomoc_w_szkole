@@ -310,5 +310,260 @@ window.SUBJECTS.push({
         { id: 'w0cv5r', q: 'Która mapa pokaże, jak wyglądały granice Polski dawno temu?', options: ['mapa historyczna', 'plan twojego osiedla', 'mapa pogody na jutro', 'rozkład jazdy autobusów'], answer: 0, explain: 'Mapa historyczna przedstawia świat lub kraj w przeszłości.' },
       ],
     },
+    {
+      id: 'poczatki-cywilizacji',
+      name: 'Od jaskiń do miast: Egipt i pismo',
+      basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 5 „Od jaskiń do miast – początki cywilizacji”, wym. 1 (rewolucja neolityczna: koczowniczy i osiadły tryb życia, wpływ warunków naturalnych), wym. 2 (życie w starożytnym Egipcie: faraon, hieroglify, piramidy, politeizm, życie pozagrobowe), wym. 3 (osiągnięcia Egiptu: astronomia, matematyka, medycyna i ich wpływ na Europę – moduł kultura), wym. 4 (rola pisma w rozwoju cywilizacji i dziś – moduł kultura). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl, lekcje „Pismo – wielki wynalazek człowieka”, „Mezopotamia – kraina między Eufratem a Tygrysem”, „Egipt – państwo nad Nilem”, „Starożytny Egipt”, „Jak doszło do powstania pierwszych cywilizacji?”). Daty bardzo dawnych wydarzeń (początki rolnictwa, wynalezienie pisma) źródła podają różnie – dlatego tylko w przybliżeniu („ponad 10 tysięcy lat temu”, „ponad 5000 lat temu”).',
+      theory: `
+        <h3>Koczownicy – życie w drodze</h3>
+        <p>Najdawniejsi ludzie byli <b>koczownikami</b>. <b>Koczowniczy tryb życia</b> oznacza, że ludzie nie mieli stałego domu: żyli w małych grupach i wędrowali z miejsca na miejsce. Polowali, łowili ryby i zbierali dzikie owoce i rośliny. Schronienie dawały im szałasy i jaskinie.</p>
+        <p>Na ścianach jaskiń malowali zwierzęta i sceny polowań. Malowidła z jaskini Lascaux we Francji mają prawdopodobnie ponad 17 tysięcy lat.</p>
+        <h3>Rewolucja neolityczna</h3>
+        <p>Ponad 10 tysięcy lat temu (naukowcy podają różne daty) ludzie na <b>Bliskim Wschodzie</b> zaczęli <b>uprawiać rośliny</b> (pszenicę, jęczmień) i <b>hodować zwierzęta</b> (kozy, owce, krowy). Nie musieli już wędrować za jedzeniem – zamieszkali na stałe w jednym miejscu. To <b>osiadły tryb życia</b>.</p>
+        <p>Tę wielką zmianę nazywamy <b>rewolucją neolityczną</b> (neolit to młodsza epoka kamienia). Rewolucja to tu nie walka, tylko ogromna, ważna zmiana w życiu ludzi.</p>
+        <table>
+          <tr><th>Koczowniczy tryb życia</th><th>Osiadły tryb życia</th></tr>
+          <tr><td>wędrówki z miejsca na miejsce</td><td>stały dom w osadzie</td></tr>
+          <tr><td>polowanie, łowienie ryb, zbieranie roślin</td><td>uprawa roli i hodowla zwierząt</td></tr>
+          <tr><td>szałasy, jaskinie</td><td>trwałe domy, potem miasta</td></tr>
+        </table>
+        <h3>Dlaczego nad rzekami?</h3>
+        <p>Rolnicy potrzebują wody i żyznej ziemi. Dlatego pierwsze osady powstawały w <b>dolinach wielkich rzek</b> o ciepłym klimacie. Rzeka dawała wodę do picia i do nawadniania pól, a <b>muł</b> (błoto naniesione przez wodę) użyźniał glebę.</p>
+        <p>Gdy jedzenia było więcej, rodziło się więcej ludzi. Nie wszyscy musieli pracować na roli – część została <b>rzemieślnikami</b> (np. garncarzami, tkaczami). Z osad wyrosły miasta i pierwsze państwa. Tak powstały pierwsze <b>cywilizacje</b>, m.in. w Mezopotamii (nad Eufratem i Tygrysem) i w Egipcie (nad Nilem). <b>Cywilizacja</b> to poziom rozwoju społeczeństwa – jego wynalazki, budowle, wiedza, sztuka.</p>
+        <h3>Egipt – dar Nilu</h3>
+        <p>Egipt leży w północno-wschodniej Afryce. Wokół są pustynie, a przez środek płynie rzeka <b>Nil</b>. Co roku Nil wylewał, a gdy woda opadała, na polach zostawał <b>żyzny muł</b>. Dzięki temu rolnicy mieli bogate plony. Dlatego Egipt nazywano <b>darem Nilu</b>.</p>
+        <h3>Faraon i społeczeństwo</h3>
+        <p><b>Faraon</b> był władcą Egiptu. Egipcjanie wierzyli, że jest bogiem – synem boga słońca. Jego władza była nieograniczona, a cały kraj należał do niego.</p>
+        <p>Społeczeństwo przypominało <b>piramidę</b>: na szczycie faraon, niżej <b>kapłani</b> (służyli bogom, znali matematykę, medycynę i astronomię), potem <b>urzędnicy</b> (zbierali podatki, umieli czytać, pisać i liczyć), a na dole najliczniejsza grupa: <b>chłopi</b>, <b>rzemieślnicy</b> i <b>kupcy</b>.</p>
+        <h3>Bogowie i życie pozagrobowe</h3>
+        <p>Egipcjanie wierzyli w <b>wielu bogów</b>. Taką religię nazywamy <b>politeizmem</b>. Bogów wyobrażali sobie jako zwierzęta albo ludzi z głowami zwierząt. Ważnymi bogami byli m.in. bóg Słońca Re (zwany też Ra) i Ozyrys – bóg świata podziemnego.</p>
+        <p>Wierzyli też w <b>życie pozagrobowe</b> – drugie, nowe życie po śmierci. Żeby ciało przetrwało, robiono <b>mumifikację</b>: usuwano wnętrzności, nacierano ciało olejkami i owijano bandażami. Powstawała <b>mumia</b>, którą składano do <b>sarkofagu</b> (trumny w kształcie człowieka). Do grobu wkładano przedmioty potrzebne w nowym życiu.</p>
+        <h3>Piramidy</h3>
+        <p><b>Piramidy</b> to ogromne kamienne grobowce faraonów. Najsłynniejsze stoją w <b>Gizie</b> – zbudowano je ok. 4500 lat temu dla faraonów Cheopsa, Chefrena i Mykerinosa. Największa jest piramida <b>Cheopsa</b> – ma 139 m wysokości i powstała z ponad 2 milionów kamiennych bloków. Obok stoi <b>Sfinks</b> – ogromny posąg lwa z głową człowieka.</p>
+        <p>W 1922 r. Howard Carter odnalazł w Dolinie Królów nietknięty grób faraona <b>Tutanchamona</b> pełen skarbów.</p>
+        <h3>Co zawdzięczamy Egipcjanom?</h3>
+        <table>
+          <tr><th>Dziedzina</th><th>Osiągnięcia</th></tr>
+          <tr><td><b>astronomia</b> (nauka o gwiazdach i niebie)</td><td>obserwowali niebo, przewidywali wylewy Nilu; stworzyli <b>kalendarz słoneczny – 365 dni</b>. Nasz kalendarz jest wzorowany na egipskim.</td></tr>
+          <tr><td><b>matematyka</b></td><td>skomplikowane obliczenia przy budowie piramid; liczyli w systemie dziesiątkowym, jak my, znali ułamki</td></tr>
+          <tr><td><b>medycyna</b> (leczenie ludzi)</td><td>dzięki mumifikacji poznali budowę ciała; spisali pierwsze podręczniki dla lekarzy na papirusie</td></tr>
+        </table>
+        <h3>Pismo – wielki wynalazek</h3>
+        <p>Pismo powstało ponad 5000 lat temu. Najstarsze pisma to <b>pismo klinowe</b> Sumerów w Mezopotamii (znaki jak małe kliny, odciskane w glinianych tabliczkach) i <b>hieroglify</b> w Egipcie.</p>
+        <ul>
+          <li><b>Hieroglify</b> („święte znaki”) to pismo obrazkowe – było w nim ponad 700 znaków. Umieli je tylko nieliczni, głównie kapłani i urzędnicy (pisarze).</li>
+          <li>Egipcjanie pisali na <b>papirusie</b> – materiale z łodyg rośliny rosnącej nad Nilem. Od słowa „papirus” pochodzi słowo <b>„papier”</b>.</li>
+          <li>Hieroglify odczytał w 1822 r. Francuz <b>Jean-François Champollion</b> dzięki <b>Kamieniowi z Rosetty</b> – był na nim ten sam tekst zapisany trzema pismami, w tym po grecku.</li>
+        </ul>
+        <p><b>Wynalezienie pisma</b> historycy uważają za <b>koniec prehistorii</b> i początek historii – pierwszą epoką jest <b>starożytność</b>. Dzięki pismu ludzie mogli zapisywać plony, umowy, prawa, wiedzę i wydarzenia i przekazywać je innym – nawet daleko i po wielu latach. Dziś też pismo jest wszędzie: w zeszycie, książce, SMS-ie i w internecie.</p>
+        <div class="tip">💡 Nasze litery to <b>alfabet łaciński</b>: alfabet wymyślili Fenicjanie, przejęli go Grecy, a od nich Rzymianie. Jedna litera = jedna głoska – dużo łatwiej niż 700 hieroglifów!</div>
+      `,
+      flashcards: [
+        ['Koczowniczy tryb życia', 'Wędrowanie z miejsca na miejsce; polowanie, łowienie ryb, zbieranie roślin'],
+        ['Osiadły tryb życia', 'Mieszkanie na stałe w jednym miejscu; uprawa roli i hodowla zwierząt'],
+        ['Rewolucja neolityczna', 'Przejście od koczowniczego do osiadłego trybu życia – początek rolnictwa i hodowli (ponad 10 tys. lat temu, Bliski Wschód)'],
+        ['Dlaczego pierwsze cywilizacje powstały nad rzekami?', 'Rzeka dawała wodę do picia i nawadniania, a muł użyźniał glebę'],
+        ['Egipt – „dar Nilu”', 'Wylewy Nilu zostawiały na polach żyzny muł – dzięki temu były plony'],
+        ['Faraon', 'Władca Egiptu uważany za boga; miał nieograniczoną władzę'],
+        ['Politeizm', 'Wiara w wielu bogów'],
+        ['Mumifikacja', 'Zabezpieczanie ciała zmarłego przed rozkładem – Egipcjanie wierzyli w życie pozagrobowe'],
+        ['Piramidy', 'Kamienne grobowce faraonów; największa – Cheopsa w Gizie (139 m)'],
+        ['Hieroglify', 'Egipskie pismo obrazkowe („święte znaki”); odczytał je Champollion w 1822 r.'],
+        ['Papirus', 'Materiał do pisania z łodyg rośliny znad Nilu; od niego pochodzi słowo „papier”'],
+        ['Osiągnięcia Egipcjan', 'Kalendarz słoneczny (365 dni), matematyka, medycyna'],
+        ['Znaczenie pisma', 'Kończy prehistorię i zaczyna historię; pozwala zapisać i przekazać wiedzę'],
+      ],
+      questions: [
+        { id: 'f9rghu', q: 'Jak żyli koczownicy?', options: ['wędrowali z miejsca na miejsce, polowali i zbierali rośliny', 'mieszkali w murowanych miastach', 'uprawiali pola przy swoich domach', 'pracowali dla faraona przy budowie piramid'], answer: 0, explain: 'Koczownicy nie mieli stałego domu – szli tam, gdzie było jedzenie.' },
+        { id: 'qz213o', q: 'Co zmieniła rewolucja neolityczna?', options: ['ludzie zaczęli uprawiać rośliny, hodować zwierzęta i mieszkać na stałe w jednym miejscu', 'ludzie wynaleźli komputer', 'ludzie przestali budować domy i zaczęli wędrować', 'ludzie zaczęli walczyć z królem'], answer: 0, explain: 'Rewolucja neolityczna to przejście od koczowniczego do osiadłego trybu życia – narodziło się rolnictwo.' },
+        { id: 't0pq4a', q: 'Dlaczego pierwsze osady rolników powstawały nad wielkimi rzekami?', options: ['rzeka dawała wodę, a naniesiony muł użyźniał glebę', 'nad rzekami nie było zwierząt', 'rzeki chroniły przed deszczem', 'nad rzekami zawsze było chłodno'], answer: 0, explain: 'Rolnik potrzebuje wody i żyznej ziemi – w dolinach rzek miał jedno i drugie.' },
+        { id: 'vctxib', q: 'Dlaczego Egipt nazywano „darem Nilu”?', options: ['bo wylewy Nilu zostawiały na polach żyzny muł i dzięki temu były plony', 'bo faraon dostał Nil w prezencie', 'bo Nil był pełen złota', 'bo nad Nilem nie trzeba było pracować'], answer: 0, explain: 'Wokół Egiptu są pustynie. Uprawiać można było tylko ziemię użyźnioną przez Nil.' },
+        { id: 'ncnyj7', q: 'Kim był faraon?', options: ['władcą Egiptu, którego uważano za boga', 'najbiedniejszym chłopem', 'kapłanem greckiego boga Zeusa', 'budowniczym rzymskich akweduktów'], answer: 0, explain: 'Faraon miał nieograniczoną władzę, a Egipcjanie wierzyli, że jest synem boga słońca.' },
+        { id: 'duq5an', q: 'Która grupa w Egipcie była najliczniejsza?', options: ['chłopi', 'kapłani', 'urzędnicy', 'faraonowie'], answer: 0, explain: 'Na dole „piramidy społeczeństwa” byli chłopi, rzemieślnicy i kupcy – najwięcej było chłopów.' },
+        { id: 'szgmk8', q: 'Co oznacza słowo „politeizm”?', options: ['wiarę w wielu bogów', 'wiarę w jednego boga', 'rządy ludu', 'pismo obrazkowe'], answer: 0, explain: 'Egipcjanie czcili wielu bogów, np. boga Słońca Re i boga świata podziemnego Ozyrysa – to politeizm.' },
+        { id: '5foe61', q: 'Po co Egipcjanie mumifikowali zmarłych?', options: ['bo wierzyli w życie pozagrobowe i chcieli, żeby ciało przetrwało', 'bo chcieli straszyć wrogów', 'bo tak leczono choroby', 'bo mumie sprzedawano kupcom'], answer: 0, explain: 'Egipcjanie wierzyli w drugie, nowe życie po śmierci. Mumifikacja chroniła ciało przed rozkładem.' },
+        { id: '64snn3', q: 'Czym były piramidy?', options: ['grobowcami faraonów', 'pałacami, w których mieszkali chłopi', 'świątyniami Zeusa', 'magazynami na zboże'], answer: 0, explain: 'Piramidy to ogromne kamienne grobowce faraonów.' },
+        { id: '6fg824', q: 'Największa piramida w Gizie została zbudowana dla faraona…', options: ['Cheopsa', 'Tutanchamona', 'Peryklesa', 'Juliusza Cezara'], answer: 0, explain: 'Piramida Cheopsa ma 139 m wysokości. Tutanchamon został pochowany w Dolinie Królów, a Perykles i Cezar nie byli władcami Egiptu.' },
+        { id: 'kl3lfj', q: 'Czym były hieroglify?', options: ['egipskim pismem obrazkowym', 'grobowcami faraonów', 'egipskimi bogami', 'łodziami na Nilu'], answer: 0, explain: 'Hieroglify („święte znaki”) to pismo obrazkowe Egipcjan – miało ponad 700 znaków.' },
+        { id: 'hzm4u3', q: 'Kto odczytał hieroglify dzięki Kamieniowi z Rosetty?', options: ['Jean-François Champollion', 'Howard Carter', 'faraon Cheops', 'Sokrates'], answer: 0, explain: 'Champollion odczytał hieroglify w 1822 r. Howard Carter odnalazł grób Tutanchamona.' },
+        { id: 'z2xs95', q: 'Od nazwy którego materiału do pisania pochodzi słowo „papier”?', options: ['papirusu', 'pergaminu', 'glinianej tabliczki', 'kamienia'], answer: 0, explain: 'Papirus robiono z łodyg rośliny rosnącej nad Nilem. Od niego wzięła się nazwa papieru.' },
+        { id: 'us32i0', q: 'Ile dni miał kalendarz słoneczny Egipcjan?', options: ['365', '100', '12', '1000'], answer: 0, explain: 'Egipscy kapłani obserwowali niebo i stworzyli kalendarz słoneczny o 365 dniach. Nasz kalendarz jest na nim wzorowany.' },
+        { id: 's96mmi', q: 'Jak mumifikacja pomogła w rozwoju medycyny w Egipcie?', options: ['dzięki niej Egipcjanie poznali budowę ludzkiego ciała', 'mumie leczyły choroby', 'dzięki niej wynaleziono kalendarz', 'nie miała żadnego związku z medycyną'], answer: 0, explain: 'Przygotowując mumie, Egipcjanie poznawali budowę ciała. Spisali też pierwsze podręczniki dla lekarzy.' },
+        { id: 'jde92p', q: 'Co historycy uważają za koniec prehistorii i początek historii?', options: ['wynalezienie pisma', 'budowę piramid', 'pierwsze igrzyska olimpijskie', 'rewolucję neolityczną'], answer: 0, explain: 'Od kiedy ludzie zaczęli pisać, mamy pisane źródła – zaczyna się historia, a pierwszą epoką jest starożytność.' },
+        { id: 'ic6anx', q: 'Jak nazywa się pismo Sumerów z Mezopotamii, odciskane w glinianych tabliczkach?', options: ['pismo klinowe', 'hieroglify', 'alfabet łaciński', 'pismo greckie'], answer: 0, explain: 'Znaki tego pisma wyglądały jak małe kliny – stąd nazwa.' },
+        { id: 'a32bkv', q: 'Prawda czy fałsz?\nW starożytnym Egipcie czytać i pisać umieli prawie wszyscy chłopi.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Hieroglifów było ponad 700, a nauka trwała latami. Pisać umieli nieliczni – głównie kapłani i urzędnicy.' },
+        { id: '73h72j', q: 'Prawda czy fałsz?\nDzięki pismu ludzie mogą przekazywać wiedzę osobom, które żyją daleko albo urodzą się wiele lat później.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'To właśnie największa siła pisma: zapis przetrwa dłużej niż ludzka pamięć.' },
+      ],
+    },
+    {
+      id: 'grecja',
+      name: 'Dziedzictwo starożytnej Grecji',
+      basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 6 „Dziedzictwo starożytnej Grecji”, wym. 1 (społeczeństwo ateńskiej polis w czasach Peryklesa: agora, Akropol, demokracja, miasto-państwo, obywatele), wym. 2 (wpływ warunków naturalnych Grecji, zasięg cywilizacji greckiej na mapie współczesnego świata), wym. 3 (osiągnięcia: demokracja, filozofia, igrzyska olimpijskie, mitologia, teatr i ich wpływ na Europę – moduł filozoficzny, moduł kultura). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl, lekcje „Demokratyczne Ateny”, „Przeszłość mityczna – świat bogów i herosów”, „O greckim teatrze, igrzyskach olimpijskich i filozofii”, „Kolonizacja grecka i fenicka w basenie Morza Śródziemnego i Czarnego”): obywatelstwo Aten, Perykles (V w. p.n.e.), pierwsze igrzyska w 776 r. p.n.e. Mitologię (np. mity o Dedalu i Ikarze, Syzyfie) omawia też język polski.',
+      theory: `
+        <h3>Kraj gór i morza</h3>
+        <p>Starożytna Grecja leżała na południu <b>Półwyspu Bałkańskiego</b> i na wielu wyspach. Grecy nazywali swój kraj <b>Helladą</b>, a siebie <b>Hellenami</b>. Mówili jednym językiem i wierzyli w tych samych bogów.</p>
+        <ul>
+          <li>Prawie cały kraj pokrywają <b>góry</b>. Dzieliły one Grecję na małe krainy, między którymi trudno było podróżować. Dlatego Grecy nie stworzyli jednego państwa, tylko wiele <b>miast-państw</b>.</li>
+          <li>Było mało żyznej ziemi, ale wszędzie było blisko <b>morza</b>. Grecy zostali świetnymi <b>żeglarzami</b> i kupcami. Zakładali też nowe miasta – <b>kolonie</b> – na wybrzeżach Morza Śródziemnego i Morza Czarnego, np. na Sycylii i w południowej Italii (dziś to Włochy).</li>
+        </ul>
+        <p>Na dzisiejszej mapie dawne greckie miasta znajdziemy m.in. w Grecji, na zachodnim wybrzeżu Turcji, w południowych Włoszech i nad Morzem Czarnym.</p>
+        <h3>Polis – miasto-państwo</h3>
+        <p><b>Polis</b> to <b>miasto-państwo</b>: miasto razem z okolicznymi wsiami, które miało własne prawa, władze i wojsko. Do największych należały <b>Ateny</b> i <b>Sparta</b>. Od słowa „polis” pochodzą słowa <b>polityka</b> i <b>polityk</b>.</p>
+        <table>
+          <tr><th>Miejsce w Atenach</th><th>Co to było?</th></tr>
+          <tr><td><b>Akropol</b></td><td>wzgórze – najwyżej położona część miasta ze świątyniami z marmuru; najsłynniejsza z nich to <b>Partenon</b>, świątynia bogini Ateny, opiekunki miasta</td></tr>
+          <tr><td><b>agora</b></td><td>główny plac miasta: targ, sądy, spotkania, rozmowy o polityce</td></tr>
+        </table>
+        <h3>Demokracja w Atenach</h3>
+        <p>Na przełomie VI i V wieku p.n.e. w Atenach narodziła się <b>demokracja</b>. To greckie słowo oznacza <b>„władzę ludu”</b>: o sprawach państwa decydują obywatele.</p>
+        <ul>
+          <li><b>Obywatelami</b> Aten byli <b>wolni mężczyźni urodzeni w Atenach</b>. <b>Kobiety, niewolnicy i cudzoziemcy</b> nie mieli prawa głosu.</li>
+          <li>Obywatele spotykali się na <b>Zgromadzeniu Ludowym</b>. Każdy mógł zabrać głos, a decyzje zapadały w głosowaniu. Głos biednego i bogatego był tak samo ważny.</li>
+          <li>Większość urzędników <b>losowano</b>, żeby każdy obywatel miał szansę pełnić urząd.</li>
+        </ul>
+        <h3>Ateny w czasach Peryklesa</h3>
+        <p><b>Perykles</b> żył w <b>V wieku p.n.e.</b> Był świetnym mówcą i wiele razy wybierano go na <b>stratega</b> (dowódcę wojskowego). Za jego czasów Ateny przeżywały okres największego rozkwitu – „złoty wiek”:</p>
+        <ul>
+          <li>wprowadził <b>diety</b> – zapłatę za udział w zgromadzeniu, żeby nawet biedni mogli w nim uczestniczyć,</li>
+          <li>zatrudniał architektów i rzeźbiarzy – na Akropolu powstały wspaniałe świątynie, m.in. Partenon,</li>
+          <li>rozbudował flotę i mury obronne.</li>
+        </ul>
+        <h3>Mitologia</h3>
+        <p><b>Mity</b> to opowieści o bogach i <b>herosach</b> (bohaterach o nadludzkiej sile, np. Heraklesie). Zbiór mitów to <b>mitologia</b>. Grecy wierzyli, że bogowie mieszkają na górze <b>Olimp</b>, wyglądają jak ludzie i mają ludzkie uczucia.</p>
+        <table>
+          <tr><th>Bóg lub bogini</th><th>Czym się opiekował(a)?</th></tr>
+          <tr><td><b>Zeus</b></td><td>władca bogów, niebo, pioruny</td></tr>
+          <tr><td><b>Hera</b></td><td>żona Zeusa, małżeństwo i rodzina</td></tr>
+          <tr><td><b>Posejdon</b></td><td>morza (trójząb)</td></tr>
+          <tr><td><b>Hades</b></td><td>podziemna kraina umarłych</td></tr>
+          <tr><td><b>Atena</b></td><td>mądrość (sowa), opiekunka Aten</td></tr>
+          <tr><td><b>Afrodyta</b></td><td>miłość i piękno</td></tr>
+          <tr><td><b>Apollo</b></td><td>muzyka i poezja</td></tr>
+        </table>
+        <h3>Igrzyska olimpijskie</h3>
+        <p>W <b>Olimpii</b> co <b>cztery lata</b> odbywały się <b>igrzyska ku czci Zeusa</b>. Pierwsze igrzyska olimpijskie rozegrano w <b>776 r. p.n.e.</b> Startowali tylko mężczyźni (biegi, zapasy, wyścigi rydwanów i inne). Na czas igrzysk przerywano wojny, żeby sportowcy i widzowie mogli bezpiecznie dotrzeć do Olimpii. Zwycięzcy zdobywali wieniec i sławę.</p>
+        <p>Igrzyska wskrzeszono pod koniec XIX wieku. Do dziś ogień olimpijski zapala się w greckiej Olimpii.</p>
+        <h3>Teatr</h3>
+        <p>Teatr narodził się w Atenach podczas świąt ku czci <b>Dionizosa</b>, boga wina. Przedstawienia grano <b>pod gołym niebem</b>, a widzowie siedzieli na kamiennych ławach na zboczu wzgórza. Grali tylko mężczyźni, w <b>maskach</b>, razem z <b>chórem</b>. Wystawiano <b>tragedie</b> (poważne, smutne) i <b>komedie</b> (zabawne).</p>
+        <h3>Filozofia</h3>
+        <p><b>Filozofia</b> po grecku znaczy <b>„umiłowanie mądrości”</b>. Filozofowie zamiast tłumaczyć świat tylko mitami, szukali prawdy, zadając pytania i rozumując. Najsłynniejsi to <b>Sokrates</b> (mawiał: „Wiem, że nic nie wiem”), jego uczeń <b>Platon</b> i uczeń Platona – <b>Arystoteles</b>.</p>
+        <div class="tip">💡 Grecy zostawili nam demokrację, igrzyska olimpijskie, teatr, filozofię i mity – i wiele słów: <i>demokracja</i>, <i>polityka</i>, <i>teatr</i>, <i>filozofia</i>. Nawet słowo <i>alfabet</i> pochodzi od dwóch pierwszych liter greckich: <b>alfa</b> i <b>beta</b>.</div>
+      `,
+      flashcards: [
+        ['Hellada, Hellenowie', 'Tak starożytni Grecy nazywali swój kraj i siebie'],
+        ['Jak góry wpłynęły na Grecję?', 'Podzieliły kraj na małe krainy – powstało wiele miast-państw zamiast jednego państwa'],
+        ['Jak morze wpłynęło na Greków?', 'Zostali żeglarzami i kupcami, zakładali kolonie nad Morzem Śródziemnym i Czarnym'],
+        ['Polis', 'Miasto-państwo: miasto z okolicznymi wsiami, z własnymi prawami, władzami i wojskiem'],
+        ['Akropol', 'Wzgórze w Atenach ze świątyniami, m.in. Partenonem'],
+        ['Agora', 'Główny plac greckiego miasta: targ, sądy, spotkania'],
+        ['Demokracja', '„Władza ludu” – o sprawach państwa decydują obywatele'],
+        ['Kto był obywatelem Aten?', 'Wolni mężczyźni urodzeni w Atenach (bez kobiet, niewolników i cudzoziemców)'],
+        ['Perykles', 'Ateński strateg i mówca z V w. p.n.e.; „złoty wiek” Aten'],
+        ['Igrzyska olimpijskie', 'W Olimpii, ku czci Zeusa, co 4 lata; pierwsze w 776 r. p.n.e.'],
+        ['Teatr grecki', 'Pod gołym niebem, aktorzy w maskach, tragedie i komedie'],
+        ['Filozofia', '„Umiłowanie mądrości”; Sokrates, Platon, Arystoteles'],
+        ['Mitologia', 'Zbiór mitów – opowieści o bogach i herosach; bogowie mieszkali na Olimpie'],
+      ],
+      questions: [
+        { id: '89cme2', q: 'Dlaczego starożytni Grecy nie stworzyli jednego państwa, tylko wiele miast-państw?', options: ['bo góry dzieliły kraj na małe krainy', 'bo mówili wieloma różnymi językami', 'bo zakazał tego faraon', 'bo nie umieli budować miast'], answer: 0, explain: 'Wysokie góry utrudniały podróże, więc każda kraina żyła osobno – powstały polis.' },
+        { id: 'jwj9wg', q: 'Dlaczego Grecy byli świetnymi żeglarzami?', options: ['bo prawie wszędzie w Grecji było blisko morza', 'bo w Grecji nie było gór', 'bo mieszkali na pustyni', 'bo Rzymianie zabraniali im chodzić pieszo'], answer: 0, explain: 'Grecja ma długie wybrzeże i wiele wysp. Morzem łatwiej było podróżować niż przez góry.' },
+        { id: 'pqygkk', q: 'Co to była polis?', options: ['miasto-państwo z własnymi prawami, władzami i wojskiem', 'grecka świątynia', 'grecki bóg morza', 'rzymski urzędnik'], answer: 0, explain: 'Polis to miasto razem z okolicznymi wsiami, które rządziło się samo. Do największych należały Ateny i Sparta.' },
+        { id: '6a624d', q: 'Jak nazywał się główny plac greckiego miasta, na którym handlowano, sądzono i rozmawiano o polityce?', options: ['agora', 'Akropol', 'Olimp', 'amfiteatr'], answer: 0, explain: 'Agora była sercem miasta. Akropol to wzgórze ze świątyniami, Olimp – góra bogów.' },
+        { id: '83nt24', q: 'Akropol w Atenach to…', options: ['wzgórze ze świątyniami, m.in. Partenonem', 'targ na środku miasta', 'port nad morzem', 'stadion w Olimpii'], answer: 0, explain: 'Akropol to najwyżej położona część Aten. Stał tam Partenon – świątynia Ateny.' },
+        { id: '4aaj74', q: 'Co oznacza słowo „demokracja”?', options: ['władzę ludu', 'władzę jednego króla', 'umiłowanie mądrości', 'miasto-państwo'], answer: 0, explain: 'Demokracja to „władza ludu” – o państwie decydują obywatele. „Umiłowanie mądrości” to filozofia.' },
+        { id: '54ysro', q: 'Kto w Atenach za czasów Peryklesa mógł głosować na Zgromadzeniu Ludowym?', options: ['wolni mężczyźni urodzeni w Atenach', 'wszyscy mieszkańcy, także niewolnicy', 'tylko kobiety', 'tylko cudzoziemcy'], answer: 0, explain: 'Obywatelami byli wolni mężczyźni urodzeni w Atenach. Kobiety, niewolnicy i cudzoziemcy nie mieli prawa głosu.' },
+        { id: 'cqyyyb', q: 'W którym wieku żył Perykles?', options: ['w V w. p.n.e.', 'w V w. n.e.', 'w XV w.', 'w I w. n.e.'], answer: 0, explain: 'Perykles kierował Atenami w V wieku przed naszą erą – to „złoty wiek” Aten.' },
+        { id: 'tl0sst', q: 'Po co Perykles wprowadził diety – zapłatę za udział w zgromadzeniu?', options: ['żeby nawet biedni obywatele mogli brać udział w obradach', 'żeby zgromadzenie było krótsze', 'żeby kobiety mogły głosować', 'żeby zebrać pieniądze na wojsko'], answer: 0, explain: 'Rzemieślnik czy rolnik tracił zarobek, gdy szedł na obrady. Dieta mu to wynagradzała.' },
+        { id: '5i6ywc', q: 'Ku czci którego boga odbywały się igrzyska w Olimpii?', options: ['Zeusa', 'Posejdona', 'Dionizosa', 'Hadesa'], answer: 0, explain: 'Igrzyska olimpijskie urządzano ku czci Zeusa, władcy bogów. Ku czci Dionizosa wystawiano przedstawienia teatralne.' },
+        { id: 'kjsj0v', q: 'Kiedy według źródeł rozegrano pierwsze igrzyska olimpijskie?', options: ['w 776 r. p.n.e.', 'w 776 r. n.e.', 'w 1410 r.', 'w 44 r. p.n.e.'], answer: 0, explain: 'Pierwsze igrzyska olimpijskie odbyły się w 776 r. p.n.e. To VIII wiek p.n.e.' },
+        { id: 'kzye3x', q: 'Co ile lat odbywały się igrzyska w Olimpii?', options: ['co 4 lata', 'co roku', 'co 10 lat', 'co 100 lat'], answer: 0, explain: 'Igrzyska odbywały się co cztery lata – tak jak dzisiejsze igrzyska olimpijskie.' },
+        { id: '1kxu2w', q: 'Który z tych opisów pasuje do teatru w starożytnej Grecji?', options: ['przedstawienia pod gołym niebem, aktorzy w maskach', 'kino z ekranem i fotelami', 'aktorki grały wszystkie role kobiet', 'przedstawienia tylko w zimie, w krytych salach'], answer: 0, explain: 'Grano pod gołym niebem, a wszystkie role grali mężczyźni w maskach.' },
+        { id: '11pf5e', q: 'Poważna, smutna sztuka teatralna to…', options: ['tragedia', 'komedia', 'agora', 'mit'], answer: 0, explain: 'Grecy wystawiali tragedie (poważne) i komedie (zabawne).' },
+        { id: '7clvzc', q: 'Co oznacza słowo „filozofia”?', options: ['umiłowanie mądrości', 'władzę ludu', 'opowieść o bogach', 'miasto-państwo'], answer: 0, explain: 'Filozofowie szukali mądrości i prawdy, zadając pytania i rozumując.' },
+        { id: 'ep9qcp', q: 'Który filozof mawiał: „Wiem, że nic nie wiem”?', options: ['Sokrates', 'Perykles', 'Zeus', 'Juliusz Cezar'], answer: 0, explain: 'Sokrates rozmawiał z ludźmi na ulicach Aten. Jego uczniem był Platon, a uczniem Platona – Arystoteles.' },
+        { id: '9dk53i', q: 'Gdzie według Greków mieszkali bogowie?', options: ['na górze Olimp', 'na Akropolu', 'w Olimpii', 'nad Nilem'], answer: 0, explain: 'Bogowie mieszkali na Olimpie. Olimpia to inne miejsce – tam odbywały się igrzyska. Nie pomyl ich!' },
+        { id: 'iu2wxt', q: 'Który grecki bóg panował nad morzami?', options: ['Posejdon', 'Hades', 'Apollo', 'Zeus'], answer: 0, explain: 'Posejdon władał morzami i trójzębem wzburzał fale. Hades rządził krainą umarłych.' },
+        { id: 'k65v7l', q: 'Prawda czy fałsz?\nW Atenach kobiety mogły głosować na Zgromadzeniu Ludowym.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Kobiety, niewolnicy i cudzoziemcy nie mieli w Atenach prawa głosu.' },
+        { id: 'y2n3kb', q: 'Prawda czy fałsz?\nSłowo „alfabet” pochodzi od nazw dwóch pierwszych liter greckich: alfa i beta.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Alfa + beta = alfabet. To jedno z wielu słów, które zawdzięczamy Grekom.' },
+      ],
+    },
+    {
+      id: 'rzym',
+      name: 'Dziedzictwo starożytnego Rzymu',
+      basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 7 „Dziedzictwo starożytnego Rzymu”, wym. 1 (społeczeństwo Rzymu w czasach Juliusza Cezara: cesarstwo, niewolnicy, obywatele), wym. 2 (położenie Rzymu, największy zasięg cesarstwa, zasięg cywilizacji rzymskiej na mapie współczesnego świata), wym. 3 (osiągnięcia: akwedukt, amfiteatr, cesarstwo, łacina, łuk triumfalny, prawo rzymskie, republika i ich wpływ na Europę – moduł kultura). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl, lekcje „Rzym – od osady do imperium”, „Osiągnięcia starożytnych Rzymian”, „Społeczeństwo Rzymu”) i w serwisie imperiumromanum.pl (Oktawian jako spadkobierca Cezara, tytuł August w 27 r. p.n.e., pochodzenie słowa „cesarz”, największy zasięg państwa za Trajana). Daty 753 i 509 r. p.n.e. to daty tradycyjne (według rzymskich przekazów).',
+      theory: `
+        <h3>Miasto nad Tybrem</h3>
+        <p>Rzym leży na <b>Półwyspie Apenińskim</b> (w starożytności nazywanym <b>Italią</b> – dziś to Włochy), nad rzeką <b>Tyber</b>. Powstał z osad na siedmiu wzgórzach.</p>
+        <p>Według <b>legendy</b> Rzym założyli bliźniacy <b>Romulus i Remus</b>, których jako niemowlęta wykarmiła <b>wilczyca</b>. Tradycja podaje datę <b>753 r. p.n.e.</b> Od imienia Romulusa pochodzi nazwa miasta – <i>Roma</i>. Wilczyca stała się symbolem Rzymu.</p>
+        <h3>Królestwo, republika, cesarstwo</h3>
+        <table>
+          <tr><th>Okres</th><th>Kto rządził?</th></tr>
+          <tr><td><b>królestwo</b> (do ok. 509 r. p.n.e.)</td><td>królowie; ostatniego mieszkańcy wypędzili</td></tr>
+          <tr><td><b>republika</b> (509–27 r. p.n.e.)</td><td>urzędnicy wybierani na rok przez obywateli; najważniejsi byli dwaj <b>konsulowie</b></td></tr>
+          <tr><td><b>cesarstwo</b> (od 27 r. p.n.e.)</td><td><b>cesarz</b> – jeden władca z ogromną władzą</td></tr>
+        </table>
+        <p><b>Republika</b> to łacińskie słowo: „rzecz publiczna”, czyli sprawa wszystkich obywateli. Dziś Polska też jest republiką – Rzecząpospolitą.</p>
+        <h3>Juliusz Cezar</h3>
+        <p><b>Juliusz Cezar</b> żył w <b>I wieku p.n.e.</b> Był zdolnym wodzem i politykiem. Został konsulem i podbił dla Rzymu <b>Galię</b> (m.in. dzisiejszą Francję). Z pomocą wojska stał się najważniejszą osobą w państwie – <b>dyktatorem</b>, czyli człowiekiem z pełnią władzy. W <b>44 r. p.n.e.</b> zamordowali go przeciwnicy polityczni.</p>
+        <p>Po wojnie domowej władzę zdobył <b>Oktawian</b> – krewny Cezara, którego Cezar w testamencie uczynił swoim następcą. W 27 r. p.n.e. dostał tytuł <b>August</b> i został <b>pierwszym cesarzem</b>. Od przydomka Cezar pochodzi polskie słowo <b>„cesarz”</b>.</p>
+        <h3>Obywatele i niewolnicy</h3>
+        <ul>
+          <li><b>Obywatele rzymscy</b> mieli prawa: mężczyźni mogli głosować i zostawać urzędnikami. Kobiety też były obywatelkami, ale nie mogły głosować ani pełnić urzędów.</li>
+          <li><b>Niewolnicy</b> nie mieli żadnych praw – według prawa byli własnością pana, jak rzecz. Najczęściej byli to <b>jeńcy wojenni</b>. Pracowali na polach, w domach, w warsztatach. Niektórzy zostawali wyzwoleni (stawali się <b>wyzwoleńcami</b>).</li>
+        </ul>
+        <p>W I wieku n.e. Rzym był jednym z największych miast świata – mieszkało w nim ok. miliona ludzi. Życie toczyło się na <b>forum</b> – głównym placu miasta.</p>
+        <h3>Imperium wokół morza</h3>
+        <p>Rzymianie podbili najpierw Italię, a potem prawie wszystkie krainy wokół <b>Morza Śródziemnego</b> – nazywali je „naszym morzem”. Ich państwo to <b>imperium rzymskie</b>. Najwięcej ziem miało za cesarza <b>Trajana</b>, na początku II wieku n.e.</p>
+        <p>Na dzisiejszej mapie dawne ziemie rzymskie to m.in. Włochy, Hiszpania, Portugalia, Francja, Grecja, Turcja, Egipt i część Wielkiej Brytanii. Zachodnia część cesarstwa upadła w 476 r. n.e.</p>
+        <h3>Co zostawili nam Rzymianie?</h3>
+        <table>
+          <tr><th>Osiągnięcie</th><th>Co to jest?</th></tr>
+          <tr><td><b>akwedukt</b></td><td>most z kanałem, którym płynęła woda ze źródeł w górach do miasta; niektóre stoją do dziś</td></tr>
+          <tr><td><b>amfiteatr</b></td><td>owalna budowla z areną i trybunami dookoła; odbywały się tam walki <b>gladiatorów</b> (wyszkolonych wojowników). Najsłynniejszy – <b>Koloseum</b> w Rzymie</td></tr>
+          <tr><td><b>łuk triumfalny</b></td><td>wielka ozdobna brama zbudowana na pamiątkę zwycięstwa; naśladowano ją później, np. Łuk Triumfalny w Paryżu</td></tr>
+          <tr><td><b>beton</b></td><td>wynalazek Rzymian – dzięki niemu budowali łuki, kopuły i ogromne gmachy</td></tr>
+          <tr><td><b>łacina</b></td><td>język Rzymian; wywodzą się z niej m.in. języki włoski, francuski, hiszpański, portugalski i rumuński; litery łacińskie to nasz alfabet</td></tr>
+          <tr><td><b>prawo rzymskie</b></td><td>spisane zasady prawa (już w V w. p.n.e. – Prawo XII Tablic na forum); wiele dzisiejszych zasad prawa pochodzi z prawa rzymskiego, np. że trzeba wysłuchać obu stron sporu</td></tr>
+        </table>
+        <div class="tip">💡 Rzymianie czcili wielu bogów podobnych do greckich, ale pod innymi imionami: Zeus = <b>Jowisz</b>, Posejdon = <b>Neptun</b>, Afrodyta = <b>Wenus</b>. Imiona rzymskich bogów noszą dziś niektóre planety: Jowisz, Neptun, Wenus.</div>
+      `,
+      flashcards: [
+        ['Położenie Rzymu', 'Półwysep Apeniński (Italia), nad rzeką Tyber'],
+        ['Legenda o założeniu Rzymu', 'Romulus i Remus, wykarmieni przez wilczycę; tradycyjna data: 753 r. p.n.e.'],
+        ['Republika', '„Rzecz publiczna”; urzędnicy wybierani na rok, na czele dwaj konsulowie'],
+        ['Cesarstwo', 'Państwo rządzone przez cesarza (w Rzymie od 27 r. p.n.e.)'],
+        ['Juliusz Cezar', 'Wódz i polityk z I w. p.n.e.; podbił Galię, został dyktatorem, zamordowany w 44 r. p.n.e.'],
+        ['Pierwszy cesarz rzymski', 'Oktawian August (od 27 r. p.n.e.)'],
+        ['Obywatel rzymski', 'Osoba z prawami obywatelskimi; mężczyźni mogli głosować i pełnić urzędy'],
+        ['Niewolnik w Rzymie', 'Człowiek bez praw, własność pana; najczęściej jeniec wojenny'],
+        ['Akwedukt', 'Most z kanałem doprowadzający wodę do miasta'],
+        ['Amfiteatr', 'Budowla z areną i trybunami dookoła, np. Koloseum; walki gladiatorów'],
+        ['Łuk triumfalny', 'Ozdobna brama na pamiątkę zwycięstwa'],
+        ['Łacina', 'Język Rzymian; z niej m.in. włoski, francuski, hiszpański; nasz alfabet jest łaciński'],
+        ['Prawo rzymskie', 'Podstawa wielu zasad dzisiejszego prawa w Europie'],
+      ],
+      questions: [
+        { id: '15h1ut', q: 'Nad jaką rzeką leży Rzym?', options: ['nad Tybrem', 'nad Nilem', 'nad Wisłą', 'nad Eufratem'], answer: 0, explain: 'Rzym leży nad Tybrem na Półwyspie Apenińskim. Nad Nilem leży Egipt, a nad Eufratem – Mezopotamia.' },
+        { id: 'n7obxe', q: 'Na jakim półwyspie leży Rzym?', options: ['na Apenińskim', 'na Bałkańskim', 'na Helskim', 'na Skandynawskim'], answer: 0, explain: 'Rzymianie nazywali Półwysep Apeniński Italią. Na Półwyspie Bałkańskim leży Grecja.' },
+        { id: 'f9zqua', q: 'Kto według legendy założył Rzym?', options: ['Romulus i Remus', 'Perykles i Sokrates', 'Cheops i Chefren', 'Zeus i Hera'], answer: 0, explain: 'Bliźniaków Romulusa i Remusa wykarmiła wilczyca. Tradycja podaje rok 753 p.n.e.' },
+        { id: '5p8smf', q: 'Co oznacza słowo „republika”?', options: ['rzecz publiczną – sprawę wszystkich obywateli', 'władzę jednego cesarza', 'umiłowanie mądrości', 'most z kanałem na wodę'], answer: 0, explain: 'W republice rządzili urzędnicy wybierani przez obywateli na rok.' },
+        { id: '9up4b9', q: 'Kto był najwyższym urzędnikiem w republice rzymskiej?', options: ['konsul (wybierano dwóch na rok)', 'faraon', 'strateg', 'cesarz'], answer: 0, explain: 'W republice wybierano co roku dwóch konsulów. Cesarze rządzili dopiero w okresie cesarstwa.' },
+        { id: 'yl8jpo', q: 'Jaką krainę podbił dla Rzymu Juliusz Cezar?', options: ['Galię', 'Chiny', 'Skandynawię', 'Amerykę'], answer: 0, explain: 'Cezar podbił Galię – tereny m.in. dzisiejszej Francji.' },
+        { id: 'n8h7p0', q: 'W którym roku zamordowano Juliusza Cezara?', options: ['44 r. p.n.e.', '44 r. n.e.', '753 r. p.n.e.', '476 r. n.e.'], answer: 0, explain: 'Cezar zginął w 44 r. p.n.e. z rąk przeciwników politycznych.' },
+        { id: '8ww8r2', q: 'Kto został pierwszym cesarzem rzymskim?', options: ['Oktawian August', 'Juliusz Cezar', 'Romulus', 'Trajan'], answer: 0, explain: 'Juliusz Cezar był dyktatorem, ale nie cesarzem. Pierwszym cesarzem został jego następca Oktawian, który w 27 r. p.n.e. dostał tytuł August.' },
+        { id: 'yea8cl', q: 'Od czyjego przydomka pochodzi polskie słowo „cesarz”?', options: ['Juliusza Cezara', 'Peryklesa', 'Romulusa', 'Cheopsa'], answer: 0, explain: 'Przydomek Cezar przyjmowali kolejni władcy Rzymu – stąd słowo „cesarz”.' },
+        { id: 'etl4bl', q: 'Kim najczęściej byli niewolnicy w starożytnym Rzymie?', options: ['jeńcami wojennymi', 'konsulami', 'senatorami', 'obywatelami, którzy wygrali wybory'], answer: 0, explain: 'Rzymianie zabierali do niewoli pokonanych wrogów. Niewolnicy nie mieli żadnych praw.' },
+        { id: 'cn79sq', q: 'Jak prawo rzymskie traktowało niewolnika?', options: ['jak własność pana, bez żadnych praw', 'jak obywatela z prawem głosu', 'jak urzędnika państwowego', 'jak cesarza'], answer: 0, explain: 'Niewolnik był własnością – mógł go kupić i sprzedać pan. Niektórzy zostawali wyzwoleni.' },
+        { id: '59kpuh', q: 'Wokół jakiego morza leżały ziemie imperium rzymskiego?', options: ['Morza Śródziemnego', 'Morza Bałtyckiego', 'Morza Północnego', 'Morza Karaibskiego'], answer: 0, explain: 'Rzymianie podbili prawie wszystkie krainy wokół Morza Śródziemnego i nazywali je „naszym morzem”.' },
+        { id: 'idau33', q: 'Do czego służył akwedukt?', options: ['do doprowadzania wody do miasta', 'do walk gladiatorów', 'do świętowania zwycięstw', 'do chowania cesarzy'], answer: 0, explain: 'Akwedukt to most z kanałem – woda płynęła nim ze źródeł w górach do miasta.' },
+        { id: 'dvqk5z', q: 'Jak nazywa się budowla z areną i trybunami dookoła, np. Koloseum?', options: ['amfiteatr', 'akwedukt', 'łuk triumfalny', 'piramida'], answer: 0, explain: 'W amfiteatrach odbywały się walki gladiatorów. Najsłynniejszy to Koloseum w Rzymie.' },
+        { id: 'ockk5w', q: 'Na pamiątkę czego budowano łuki triumfalne?', options: ['zwycięstwa', 'pożaru miasta', 'narodzin niewolnika', 'wylewu rzeki'], answer: 0, explain: 'Łuk triumfalny to ozdobna brama upamiętniająca zwycięstwo. Rzymian naśladowano później, np. w Paryżu.' },
+        { id: 'q6f3q1', q: 'Który język NIE wywodzi się z łaciny?', options: ['polski', 'włoski', 'francuski', 'hiszpański'], answer: 0, explain: 'Włoski, francuski, hiszpański, portugalski i rumuński wywodzą się z łaciny. Polski nie – ale piszemy alfabetem łacińskim.' },
+        { id: '8nek9a', q: 'Która zasada dzisiejszego prawa pochodzi z prawa rzymskiego?', options: ['trzeba wysłuchać obu stron sporu', 'kto silniejszy, ten ma rację', 'wyrok wydaje się bez słuchania stron', 'sędzią zostaje ten, kto wygra wyścig rydwanów'], answer: 0, explain: 'Wiele zasad prawa w Europie opiera się na prawie rzymskim, np. ta, że trzeba wysłuchać obu stron.' },
+        { id: '78znal', q: 'Prawda czy fałsz?\nPolskie litery to alfabet łaciński – zawdzięczamy go starożytnym Rzymianom.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Kształt naszych liter zawdzięczamy Rzymianom. Od ich języka, łaciny, alfabet nazywa się łacińskim.' },
+        { id: 'rngm4l', q: 'Prawda czy fałsz?\nJuliusz Cezar był pierwszym cesarzem rzymskim.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Cezar był konsulem i dyktatorem. Pierwszym cesarzem został Oktawian August.' },
+        { id: '1tarw4', q: 'Ułóż chronologicznie (od najdawniejszego): śmierć Juliusza Cezara (44 r. p.n.e.), założenie Rzymu według legendy (753 r. p.n.e.), upadek cesarstwa zachodniego (476 r. n.e.).', options: ['753 p.n.e., 44 p.n.e., 476 n.e.', '44 p.n.e., 753 p.n.e., 476 n.e.', '476 n.e., 44 p.n.e., 753 p.n.e.', '753 p.n.e., 476 n.e., 44 p.n.e.'], answer: 0, explain: 'W latach p.n.e. większa liczba to dawniej: 753 p.n.e. → 44 p.n.e. Lata n.e. są później: 476 n.e.' },
+      ],
+    },
   ],
 });

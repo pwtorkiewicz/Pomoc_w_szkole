@@ -514,3 +514,434 @@ window.LESSONS['historia/czas-mapa'] = [
     check: { q: 'Co to jest legenda mapy?', options: ['opowieść o smoku', 'objaśnienie znaków i kolorów na mapie', 'tytuł mapy'], answer: 1, explain: 'Legenda mapy wyjaśnia, co oznaczają znaki i kolory. To inne znaczenie słowa „legenda” niż opowieść.' },
   },
 ];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['historia/poczatki-cywilizacji'] = [
+  {
+    title: 'Od koczownika do rolnika',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Porównanie: koczownik wędruje, poluje i zbiera rośliny; rolnik mieszka w osadzie, uprawia rośliny i hoduje zwierzęta. Ta zmiana to rewolucja neolityczna">
+      <defs><marker id="a-k4hi-cyw-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="10" width="170" height="155" rx="12" class="f4 s4 sw"/>
+      <rect x="220" y="10" width="170" height="155" rx="12" class="f3 s3 sw"/>
+      <text x="95" y="48" class="tx-b" text-anchor="middle">🏹 ⛺</text>
+      <text x="305" y="48" class="tx-b" text-anchor="middle">🌾 🏠 🐐</text>
+      <text x="95" y="80" class="tx-b" text-anchor="middle">koczownik</text>
+      <text x="305" y="80" class="tx-b" text-anchor="middle">rolnik</text>
+      <text x="95" y="106" class="tx-s" text-anchor="middle">wędruje</text>
+      <text x="95" y="126" class="tx-s" text-anchor="middle">poluje, łowi ryby</text>
+      <text x="95" y="146" class="tx-s" text-anchor="middle">zbiera rośliny</text>
+      <text x="305" y="106" class="tx-s" text-anchor="middle">mieszka w osadzie</text>
+      <text x="305" y="126" class="tx-s" text-anchor="middle">uprawia rośliny</text>
+      <text x="305" y="146" class="tx-s" text-anchor="middle">hoduje zwierzęta</text>
+      <line x1="183" y1="88" x2="216" y2="88" class="ln sw" marker-end="url(#a-k4hi-cyw-1)"/>
+      <text x="200" y="192" class="tx" text-anchor="middle">rewolucja neolityczna</text>
+    </svg>`,
+    text: `<p>Najdawniejsi ludzie byli <b>koczownikami</b>: nie mieli stałego domu, tylko wędrowali za jedzeniem – polowali, łowili ryby i zbierali dzikie rośliny. To <b>koczowniczy tryb życia</b>.</p>
+      <p>Ponad 10 tysięcy lat temu ludzie na Bliskim Wschodzie nauczyli się <b>uprawiać rośliny</b> i <b>hodować zwierzęta</b>. Mogli zamieszkać na stałe w jednym miejscu – to <b>osiadły tryb życia</b>. Tę wielką zmianę nazywamy <b>rewolucją neolityczną</b>.</p>`,
+    remember: 'Rewolucja neolityczna = przejście od koczowniczego do osiadłego trybu życia (rolnictwo i hodowla).',
+    hook: 'Koczownik idzie <b>za jedzeniem</b>, rolnik sprawia, że jedzenie <b>rośnie obok domu</b>.',
+    check: { q: 'Kto prowadził osiadły tryb życia?', options: ['myśliwy, który co kilka dni zmienia obóz', 'rolnik, który mieszka przy swoim polu', 'zbieracz wędrujący za owocami'], answer: 1, explain: 'Osiadły tryb życia oznacza stały dom w jednym miejscu – tak żył rolnik.' },
+  },
+  {
+    title: 'Dlaczego nad rzeką?',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Przekrój doliny Nilu: pustynia, pola z żyznym mułem, rzeka Nil, pola, pustynia. Pod spodem łańcuch: plony, więcej ludzi, miasta i państwa">
+      <defs><marker id="a-k4hi-cyw-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="10" width="380" height="28" class="f4"/>
+      <rect x="10" y="38" width="380" height="30" class="f3"/>
+      <rect x="10" y="68" width="380" height="30" class="f1 s1"/>
+      <rect x="10" y="98" width="380" height="30" class="f3"/>
+      <rect x="10" y="128" width="380" height="28" class="f4"/>
+      <text x="200" y="29" class="tx-s" text-anchor="middle">pustynia 🏜️</text>
+      <text x="200" y="58" class="tx-s" text-anchor="middle">pola – żyzny muł 🌾</text>
+      <text x="200" y="89" class="tx-b" text-anchor="middle">Nil – woda 💧</text>
+      <text x="200" y="118" class="tx-s" text-anchor="middle">pola – żyzny muł 🌾</text>
+      <text x="200" y="147" class="tx-s" text-anchor="middle">pustynia 🏜️</text>
+      <rect x="10" y="175" width="100" height="40" rx="10" class="f3 s3"/>
+      <rect x="140" y="175" width="120" height="40" rx="10" class="f2 s2"/>
+      <rect x="290" y="175" width="100" height="40" rx="10" class="f5 s5"/>
+      <text x="60" y="200" class="tx" text-anchor="middle">plony</text>
+      <text x="200" y="200" class="tx" text-anchor="middle">więcej ludzi</text>
+      <text x="340" y="200" class="tx" text-anchor="middle">miasta</text>
+      <line x1="112" y1="195" x2="136" y2="195" class="ln" marker-end="url(#a-k4hi-cyw-2)"/>
+      <line x1="262" y1="195" x2="286" y2="195" class="ln" marker-end="url(#a-k4hi-cyw-2)"/>
+    </svg>`,
+    text: `<p>Rolnik potrzebuje <b>wody</b> i <b>żyznej ziemi</b>. Dlatego pierwsze osady powstawały w dolinach wielkich rzek, np. nad <b>Nilem</b> w Egipcie albo nad Eufratem i Tygrysem w Mezopotamii.</p>
+      <p>Co roku Nil wylewał. Gdy woda opadała, na polach zostawał <b>muł</b> – żyzne błoto. Dookoła była pustynia, więc Egipt nazywano <b>darem Nilu</b>. Więcej plonów → więcej ludzi → miasta i pierwsze państwa, czyli <b>cywilizacje</b>.</p>`,
+    remember: 'Pierwsze cywilizacje powstały nad wielkimi rzekami: woda + żyzny muł = plony.',
+    hook: 'Nil był dla Egipcjan jak <b>kran i nawóz w jednym</b>.',
+  },
+  {
+    title: 'Faraon na szczycie piramidy',
+    svg: `<svg viewBox="0 0 400 215" role="img" aria-label="Piramida społeczeństwa egipskiego: na szczycie faraon, niżej kapłani, potem urzędnicy, na dole chłopi, rzemieślnicy i kupcy">
+      <polygon points="200,15 238.9,60 161.1,60" class="f4 s4 sw"/>
+      <polygon points="161.1,60 238.9,60 277.8,105 122.2,105" class="f5 s5 sw"/>
+      <polygon points="122.2,105 277.8,105 316.8,150 83.2,150" class="f1 s1 sw"/>
+      <polygon points="83.2,150 316.8,150 360,200 40,200" class="f3 s3 sw"/>
+      <text x="200" y="54" class="tx-s" text-anchor="middle">faraon</text>
+      <text x="200" y="89" class="tx" text-anchor="middle">kapłani</text>
+      <text x="200" y="134" class="tx" text-anchor="middle">urzędnicy</text>
+      <text x="200" y="181" class="tx" text-anchor="middle">chłopi, rzemieślnicy, kupcy</text>
+    </svg>`,
+    text: `<p><b>Faraon</b> był władcą Egiptu. Egipcjanie wierzyli, że jest bogiem – synem boga słońca. Miał nieograniczoną władzę, a cały kraj należał do niego.</p>
+      <p>Pod nim byli <b>kapłani</b> (służyli bogom i znali się na matematyce, medycynie, astronomii) i <b>urzędnicy</b> (zbierali podatki, umieli pisać i liczyć). Na dole – najliczniejsi <b>chłopi</b>, a także rzemieślnicy i kupcy.</p>`,
+    remember: 'Faraon – władca Egiptu uważany za boga. Najliczniejsi byli chłopi.',
+    hook: 'Egipcjanie budowali piramidy z kamienia, a ich społeczeństwo też wyglądało jak <b>piramida</b>: im wyżej, tym mniej osób i więcej władzy.',
+    check: { q: 'Kto był na samym szczycie społeczeństwa egipskiego?', options: ['kapłani', 'faraon', 'chłopi'], answer: 1, explain: 'Na szczycie był faraon – władca uważany za boga.' },
+  },
+  {
+    title: 'Bogowie, mumie i piramidy',
+    svg: `<svg viewBox="0 0 400 225" role="img" aria-label="Wiara w wielu bogów, czyli politeizm, i wiara w życie pozagrobowe prowadziły do mumifikacji i budowy grobowców – piramid. Piramida Cheopsa ma 139 metrów">
+      <defs><marker id="a-k4hi-cyw-4" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="10" width="220" height="54" rx="10" class="f5 s5"/>
+      <rect x="10" y="85" width="220" height="54" rx="10" class="f1 s1"/>
+      <rect x="10" y="160" width="220" height="54" rx="10" class="f2 s2"/>
+      <text x="120" y="33" class="tx-b" text-anchor="middle">politeizm</text>
+      <text x="120" y="54" class="tx-s" text-anchor="middle">wiara w wielu bogów</text>
+      <text x="120" y="108" class="tx-b" text-anchor="middle">życie pozagrobowe</text>
+      <text x="120" y="129" class="tx-s" text-anchor="middle">nowe życie po śmierci</text>
+      <text x="120" y="183" class="tx-b" text-anchor="middle">mumifikacja</text>
+      <text x="120" y="204" class="tx-s" text-anchor="middle">ciało ma przetrwać</text>
+      <line x1="120" y1="64" x2="120" y2="81" class="ln" marker-end="url(#a-k4hi-cyw-4)"/>
+      <line x1="120" y1="139" x2="120" y2="156" class="ln" marker-end="url(#a-k4hi-cyw-4)"/>
+      <line x1="232" y1="187" x2="262" y2="187" class="ln" marker-end="url(#a-k4hi-cyw-4)"/>
+      <polygon points="268,190 390,190 329,75" class="f4 s4 sw"/>
+      <line x1="329" y1="78" x2="329" y2="150" class="ln-thin dash"/>
+      <text x="329" y="175" class="tx-s" text-anchor="middle">139 m</text>
+      <text x="329" y="55" class="tx-b" text-anchor="middle">piramida</text>
+      <text x="329" y="210" class="tx-s" text-anchor="middle">grobowiec faraona</text>
+    </svg>`,
+    text: `<p>Egipcjanie czcili <b>wielu bogów</b> – to <b>politeizm</b>. Bogów wyobrażali sobie jako zwierzęta albo ludzi z głowami zwierząt.</p>
+      <p>Wierzyli w <b>życie pozagrobowe</b>, czyli nowe życie po śmierci. Żeby ciało przetrwało, robili <b>mumifikację</b>: mumię owiniętą bandażami składali do sarkofagu. Faraonów chowano w ogromnych grobowcach – <b>piramidach</b>. Największa, piramida <b>Cheopsa</b> w Gizie, ma 139 m wysokości.</p>`,
+    remember: 'Politeizm – wiara w wielu bogów. Piramida – grobowiec faraona.',
+    hook: '<b>Poli</b> znaczy „wiele” – jak w słowie <b>poli</b>glota (ktoś, kto zna wiele języków). Poli-teizm – wielu bogów.',
+  },
+  {
+    title: 'Mądrość kapłanów',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Trzy osiągnięcia Egipcjan: astronomia – kalendarz 365 dni, matematyka – obliczenia przy piramidach, medycyna – znajomość budowy ciała">
+      <rect x="10" y="10" width="120" height="140" rx="12" class="f4 s4 sw"/>
+      <rect x="140" y="10" width="120" height="140" rx="12" class="f1 s1 sw"/>
+      <rect x="270" y="10" width="120" height="140" rx="12" class="f3 s3 sw"/>
+      <text x="70" y="52" class="tx-b" text-anchor="middle">☀️</text>
+      <text x="200" y="52" class="tx-b" text-anchor="middle">📐</text>
+      <text x="330" y="52" class="tx-b" text-anchor="middle">💊</text>
+      <text x="70" y="86" class="tx" text-anchor="middle">astronomia</text>
+      <text x="200" y="86" class="tx" text-anchor="middle">matematyka</text>
+      <text x="330" y="86" class="tx" text-anchor="middle">medycyna</text>
+      <text x="70" y="112" class="tx-s" text-anchor="middle">kalendarz</text>
+      <text x="70" y="130" class="tx-s" text-anchor="middle">365 dni</text>
+      <text x="200" y="112" class="tx-s" text-anchor="middle">obliczenia</text>
+      <text x="200" y="130" class="tx-s" text-anchor="middle">przy piramidach</text>
+      <text x="330" y="112" class="tx-s" text-anchor="middle">budowa ciała,</text>
+      <text x="330" y="130" class="tx-s" text-anchor="middle">podręczniki</text>
+      <text x="200" y="182" class="tx-s" text-anchor="middle">nasz kalendarz jest wzorowany na egipskim</text>
+    </svg>`,
+    text: `<p>Egipscy kapłani obserwowali niebo – to <b>astronomia</b>. Przewidywali wylewy Nilu i stworzyli <b>kalendarz słoneczny o 365 dniach</b>. Nasz kalendarz jest na nim wzorowany.</p>
+      <p>Budowa piramid wymagała <b>matematyki</b> – skomplikowanych obliczeń. Dzięki mumifikacji Egipcjanie poznali budowę ludzkiego ciała i rozwinęli <b>medycynę</b>: spisali pierwsze podręczniki dla lekarzy.</p>`,
+    remember: 'Egipcjanie: astronomia (kalendarz 365 dni), matematyka, medycyna.',
+    hook: 'Twój kalendarz na ścianie ma „egipskiego dziadka” sprzed tysięcy lat.',
+    check: { q: 'Które osiągnięcie Egipcjan wiąże się z astronomią?', options: ['kalendarz słoneczny o 365 dniach', 'mumifikacja zmarłych', 'budowa kanałów na polach'], answer: 0, explain: 'Astronomia to nauka o niebie i gwiazdach. Obserwując niebo, Egipcjanie stworzyli kalendarz.' },
+  },
+  {
+    title: 'Pismo – koniec prehistorii',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Oś czasu: prehistoria, potem wynalezienie pisma ponad 5000 lat temu, potem historia. Pod spodem trzy rodzaje pisma: klinowe Sumerów, hieroglify Egipcjan i alfabet">
+      <rect x="10" y="20" width="170" height="40" rx="8" class="f4 s4"/>
+      <rect x="220" y="20" width="170" height="40" rx="8" class="f1 s1"/>
+      <text x="95" y="46" class="tx-b" text-anchor="middle">prehistoria</text>
+      <text x="305" y="46" class="tx-b" text-anchor="middle">historia</text>
+      <text x="200" y="47" class="tx-b" text-anchor="middle">✍️</text>
+      <text x="200" y="84" class="tx-s" text-anchor="middle">wynalezienie pisma – ponad 5000 lat temu</text>
+      <rect x="10" y="105" width="120" height="110" rx="10" class="f2 s2"/>
+      <rect x="140" y="105" width="120" height="110" rx="10" class="f3 s3"/>
+      <rect x="270" y="105" width="120" height="110" rx="10" class="f5 s5"/>
+      <path d="M40,130 L52,136 L40,142 Z M60,130 L72,136 L60,142 Z M80,130 L92,136 L80,142 Z M50,150 L62,156 L50,162 Z M70,150 L82,156 L70,162 Z" class="ln"/>
+      <text x="200" y="152" class="tx-b" text-anchor="middle">👁️ 🐦 〰️</text>
+      <text x="330" y="152" class="tx-b" text-anchor="middle">A B C</text>
+      <text x="70" y="188" class="tx" text-anchor="middle">klinowe</text>
+      <text x="70" y="206" class="tx-s" text-anchor="middle">Sumerowie</text>
+      <text x="200" y="188" class="tx" text-anchor="middle">hieroglify</text>
+      <text x="200" y="206" class="tx-s" text-anchor="middle">Egipcjanie</text>
+      <text x="330" y="188" class="tx" text-anchor="middle">alfabet</text>
+      <text x="330" y="206" class="tx-s" text-anchor="middle">1 litera = 1 głoska</text>
+    </svg>`,
+    text: `<p>Pismo powstało ponad 5000 lat temu. Sumerowie w Mezopotamii odciskali w glinie <b>pismo klinowe</b>, a Egipcjanie rysowali <b>hieroglify</b> – ponad 700 obrazkowych znaków – na <b>papirusie</b> (od niego pochodzi słowo „papier”). Hieroglify odczytał dopiero w 1822 r. Jean-François Champollion.</p>
+      <p>Wynalezienie pisma to <b>koniec prehistorii</b> i początek historii. Dzięki pismu ludzie mogli zapisać plony, umowy, prawa i wiedzę – i przekazać je innym, nawet po wielu latach. Dziś piszemy <b>alfabetem</b>, w którym jedna litera to jedna głoska.</p>`,
+    remember: 'Wynalezienie pisma kończy prehistorię i zaczyna historię.',
+    hook: '<b>Pre</b>historia = <b>przed</b> pismem. Historia zaczyna się, gdy ktoś coś <b>zapisał</b>.',
+    check: { q: 'Od czego historycy liczą początek historii (koniec prehistorii)?', options: ['od budowy piramid', 'od wynalezienia pisma', 'od pierwszych igrzysk olimpijskich'], answer: 1, explain: 'Kiedy ludzie zaczęli pisać, powstały źródła pisane – tak zaczyna się historia.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['historia/grecja'] = [
+  {
+    title: 'Kraj gór i morza',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Schemat Grecji: półwysep i wyspy wśród morza, góry dzielą ląd. Skutki: góry – wiele osobnych miast-państw; morze – żeglarze, kupcy i kolonie">
+      <rect x="10" y="10" width="190" height="190" rx="12" class="f1"/>
+      <path d="M40,15 L170,15 L160,60 L130,80 L140,120 L110,150 L95,185 L75,140 L60,100 L45,60 Z" class="f3 s3"/>
+      <circle cx="170" cy="120" r="12" class="f3 s3"/>
+      <circle cx="160" cy="170" r="9" class="f3 s3"/>
+      <circle cx="40" cy="175" r="8" class="f3 s3"/>
+      <polygon points="70,60 85,35 100,60" class="f4 s4"/>
+      <polygon points="100,70 115,45 130,70" class="f4 s4"/>
+      <polygon points="80,110 95,85 110,110" class="f4 s4"/>
+      <text x="35" y="130" class="tx-s">⛵</text>
+      <text x="150" y="95" class="tx-s">⛵</text>
+      <rect x="215" y="20" width="175" height="80" rx="10" class="f4 s4"/>
+      <rect x="215" y="115" width="175" height="80" rx="10" class="f1 s1"/>
+      <text x="302" y="46" class="tx-b" text-anchor="middle">⛰️ góry</text>
+      <text x="302" y="70" class="tx-s" text-anchor="middle">dzielą kraj na krainy</text>
+      <text x="302" y="88" class="tx-s" text-anchor="middle">→ wiele polis</text>
+      <text x="302" y="141" class="tx-b" text-anchor="middle">🌊 morze</text>
+      <text x="302" y="165" class="tx-s" text-anchor="middle">żeglarze i kupcy</text>
+      <text x="302" y="183" class="tx-s" text-anchor="middle">→ kolonie</text>
+    </svg>`,
+    text: `<p>Starożytna Grecja leżała na południu Półwyspu Bałkańskiego i na wielu wyspach. Prawie cały kraj pokrywają <b>góry</b> – dzieliły go na małe krainy, więc Grecy nie stworzyli jednego państwa, tylko wiele <b>miast-państw</b>.</p>
+      <p>Wszędzie było blisko <b>morza</b>, a żyznej ziemi było mało. Grecy zostali świetnymi żeglarzami i kupcami i zakładali nowe miasta – <b>kolonie</b> – nad Morzem Śródziemnym i Czarnym. Dziś ślady greckich miast są m.in. w Grecji, w Turcji i w południowych Włoszech.</p>`,
+    remember: 'Góry podzieliły Grecję na wiele polis, a morze zrobiło z Greków żeglarzy i kupców.',
+    hook: 'Przez góry trudno przejść, a przez morze łatwo przepłynąć – dlatego Grecy byli <b>sąsiadami przez wodę</b>.',
+  },
+  {
+    title: 'Polis: Akropol i agora',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Schemat polis Ateny: na wzgórzu Akropol ze świątynią Partenon, w dole agora – główny plac, dookoła domy, a za miastem okoliczne wsie">
+      <path d="M20,120 Q120,40 220,120 Z" class="f3 s3"/>
+      <rect x="85" y="62" width="70" height="8" class="f4 s4"/>
+      <rect x="90" y="70" width="6" height="22" class="f4 s4"/>
+      <rect x="103" y="70" width="6" height="22" class="f4 s4"/>
+      <rect x="116" y="70" width="6" height="22" class="f4 s4"/>
+      <rect x="129" y="70" width="6" height="22" class="f4 s4"/>
+      <rect x="142" y="70" width="6" height="22" class="f4 s4"/>
+      <polygon points="85,62 120,48 155,62" class="f4 s4"/>
+      <text x="120" y="112" class="tx-b" text-anchor="middle">Akropol</text>
+      <rect x="40" y="140" width="160" height="60" rx="8" class="f2 s2"/>
+      <text x="120" y="167" class="tx-b" text-anchor="middle">agora</text>
+      <text x="120" y="188" class="tx-s" text-anchor="middle">targ · sądy · spotkania</text>
+      <rect x="240" y="20" width="150" height="80" rx="10" class="f4 s4"/>
+      <text x="315" y="46" class="tx" text-anchor="middle">Partenon</text>
+      <text x="315" y="66" class="tx-s" text-anchor="middle">świątynia Ateny,</text>
+      <text x="315" y="84" class="tx-s" text-anchor="middle">opiekunki miasta</text>
+      <rect x="240" y="120" width="150" height="80" rx="10" class="f5 s5"/>
+      <text x="315" y="146" class="tx" text-anchor="middle">polis =</text>
+      <text x="315" y="166" class="tx-s" text-anchor="middle">miasto + okoliczne</text>
+      <text x="315" y="184" class="tx-s" text-anchor="middle">wsie, własne prawa</text>
+    </svg>`,
+    text: `<p><b>Polis</b> to <b>miasto-państwo</b>: miasto z okolicznymi wsiami, z własnymi prawami, władzami i wojskiem. Do największych należały <b>Ateny</b> i <b>Sparta</b>. Od słowa „polis” pochodzi słowo <b>polityka</b>.</p>
+      <p>W Atenach nad miastem wznosił się <b>Akropol</b> – wzgórze ze świątyniami z marmuru. Najsłynniejsza to <b>Partenon</b>, świątynia bogini Ateny. Sercem miasta była <b>agora</b> – główny plac, gdzie handlowano, sądzono i rozmawiano o polityce.</p>`,
+    remember: 'Akropol – wzgórze ze świątyniami. Agora – główny plac miasta.',
+    hook: '<b>Akropol</b> – wysoko na wzgórzu, dla bogów. <b>Agora</b> – na dole, dla ludzi, jak rynek w twoim mieście.',
+    check: { q: 'Gdzie w Atenach robiło się zakupy i rozmawiało o polityce?', options: ['na Akropolu', 'na agorze', 'w Partenonie'], answer: 1, explain: 'Agora to główny plac – targ i miejsce spotkań. Akropol to wzgórze ze świątyniami.' },
+  },
+  {
+    title: 'Demokracja – władza ludu',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Kto głosował w Atenach: tak – wolni mężczyźni urodzeni w Atenach; nie – kobiety, niewolnicy i cudzoziemcy">
+      <text x="200" y="28" class="tx-b" text-anchor="middle">Zgromadzenie Ludowe 🗳️</text>
+      <rect x="10" y="45" width="185" height="150" rx="12" class="f3 s3 sw"/>
+      <rect x="205" y="45" width="185" height="150" rx="12" class="f2 s2 sw"/>
+      <text x="102" y="78" class="tx-b" text-anchor="middle">✔ głosują</text>
+      <text x="102" y="110" class="tx" text-anchor="middle">wolni mężczyźni</text>
+      <text x="102" y="132" class="tx" text-anchor="middle">urodzeni</text>
+      <text x="102" y="154" class="tx" text-anchor="middle">w Atenach</text>
+      <text x="297" y="78" class="tx-b" text-anchor="middle">✘ nie głosują</text>
+      <text x="297" y="110" class="tx" text-anchor="middle">kobiety</text>
+      <text x="297" y="132" class="tx" text-anchor="middle">niewolnicy</text>
+      <text x="297" y="154" class="tx" text-anchor="middle">cudzoziemcy</text>
+    </svg>`,
+    text: `<p><b>Demokracja</b> to greckie słowo: <b>„władza ludu”</b>. W Atenach o sprawach państwa decydowali <b>obywatele</b> na <b>Zgromadzeniu Ludowym</b>: każdy mógł zabrać głos, a decyzje zapadały w głosowaniu. Głos biednego i bogatego był tak samo ważny.</p>
+      <p>Obywatelami byli jednak tylko <b>wolni mężczyźni urodzeni w Atenach</b>. W <b>V wieku p.n.e.</b> Atenami kierował <b>Perykles</b> – mówca i strateg. Wprowadził zapłatę za udział w zgromadzeniu, żeby mogli w nim brać udział także biedni.</p>`,
+    remember: 'Demokracja = władza ludu. W Atenach głosowali wolni mężczyźni urodzeni w Atenach.',
+    hook: '<b>Demos</b> – lud, <b>kratos</b> – władza. Demo-kracja: lud ma władzę.',
+    check: { q: 'Kto NIE mógł głosować w Atenach?', options: ['wolny mężczyzna urodzony w Atenach', 'niewolnik', 'biedny rzemieślnik, obywatel Aten'], answer: 1, explain: 'Niewolnicy, kobiety i cudzoziemcy nie mieli prawa głosu. Biedny obywatel – tak, i jego głos ważył tyle samo co bogatego.' },
+  },
+  {
+    title: 'Igrzyska, teatr i mity',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Trzy greckie wynalazki: igrzyska olimpijskie w Olimpii ku czci Zeusa co 4 lata od 776 roku p.n.e.; teatr – maski, tragedia i komedia; mitologia – bogowie na Olimpie">
+      <rect x="10" y="10" width="120" height="190" rx="12" class="f4 s4 sw"/>
+      <rect x="140" y="10" width="120" height="190" rx="12" class="f5 s5 sw"/>
+      <rect x="270" y="10" width="120" height="190" rx="12" class="f1 s1 sw"/>
+      <text x="70" y="50" class="tx-b" text-anchor="middle">🏃</text>
+      <text x="200" y="50" class="tx-b" text-anchor="middle">🎭</text>
+      <text x="330" y="50" class="tx-b" text-anchor="middle">⚡</text>
+      <text x="70" y="82" class="tx" text-anchor="middle">igrzyska</text>
+      <text x="200" y="82" class="tx" text-anchor="middle">teatr</text>
+      <text x="330" y="82" class="tx" text-anchor="middle">mitologia</text>
+      <text x="70" y="110" class="tx-s" text-anchor="middle">w Olimpii</text>
+      <text x="70" y="130" class="tx-s" text-anchor="middle">ku czci Zeusa</text>
+      <text x="70" y="150" class="tx-s" text-anchor="middle">co 4 lata</text>
+      <text x="70" y="178" class="tx-b" text-anchor="middle">776 p.n.e.</text>
+      <text x="200" y="110" class="tx-s" text-anchor="middle">pod gołym</text>
+      <text x="200" y="128" class="tx-s" text-anchor="middle">niebem</text>
+      <text x="200" y="150" class="tx-s" text-anchor="middle">maski 🎭</text>
+      <text x="200" y="172" class="tx-s" text-anchor="middle">tragedia</text>
+      <text x="200" y="190" class="tx-s" text-anchor="middle">i komedia</text>
+      <text x="330" y="110" class="tx-s" text-anchor="middle">opowieści</text>
+      <text x="330" y="130" class="tx-s" text-anchor="middle">o bogach</text>
+      <text x="330" y="150" class="tx-s" text-anchor="middle">i herosach</text>
+      <text x="330" y="178" class="tx-s" text-anchor="middle">bogowie: Olimp</text>
+    </svg>`,
+    text: `<p><b>Igrzyska olimpijskie</b> odbywały się w <b>Olimpii</b> co cztery lata ku czci <b>Zeusa</b>. Pierwsze rozegrano w <b>776 r. p.n.e.</b> Na czas igrzysk przerywano wojny. Dziś też ogień olimpijski zapala się w Olimpii.</p>
+      <p><b>Teatr</b> narodził się w Atenach podczas świąt boga Dionizosa. Grano pod gołym niebem, aktorzy – sami mężczyźni – nosili <b>maski</b>. Wystawiano <b>tragedie</b> (poważne) i <b>komedie</b> (zabawne). <b>Mity</b> opowiadały o bogach z góry <b>Olimp</b> – Zeusie, Herze, Posejdonie, Atenie – i o herosach, np. Heraklesie.</p>`,
+    remember: 'Igrzyska – Olimpia, Zeus, co 4 lata, od 776 r. p.n.e. Bogowie mieszkali na Olimpie.',
+    hook: 'Na <b>Olimp</b> się wspina – to góra bogów. W <b>Olimpii</b> się biega – tam były igrzyska.',
+    check: { q: 'Gdzie odbywały się starożytne igrzyska olimpijskie?', options: ['na górze Olimp', 'w Olimpii', 'na Akropolu w Atenach'], answer: 1, explain: 'Igrzyska rozgrywano w Olimpii. Na Olimpie według mitów mieszkali bogowie.' },
+  },
+  {
+    title: 'Co mamy po Grekach?',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Słowa i pomysły po starożytnych Grekach: demokracja, polityka od polis, teatr, filozofia czyli umiłowanie mądrości, igrzyska olimpijskie i alfabet od alfa i beta">
+      <ellipse cx="200" cy="110" rx="70" ry="30" class="f4 s4 sw"/>
+      <text x="200" y="117" class="tx-b" text-anchor="middle">Grecy</text>
+      <line x1="150" y1="92" x2="110" y2="58" class="ln-thin"/>
+      <line x1="250" y1="92" x2="290" y2="58" class="ln-thin"/>
+      <line x1="130" y1="110" x2="110" y2="110" class="ln-thin"/>
+      <line x1="270" y1="110" x2="290" y2="110" class="ln-thin"/>
+      <line x1="150" y1="128" x2="110" y2="162" class="ln-thin"/>
+      <line x1="250" y1="128" x2="290" y2="162" class="ln-thin"/>
+      <rect x="10" y="35" width="120" height="36" rx="8" class="f1 s1"/>
+      <rect x="270" y="35" width="120" height="36" rx="8" class="f3 s3"/>
+      <rect x="10" y="92" width="100" height="36" rx="8" class="f5 s5"/>
+      <rect x="290" y="92" width="100" height="36" rx="8" class="f2 s2"/>
+      <rect x="10" y="150" width="120" height="36" rx="8" class="f3 s3"/>
+      <rect x="270" y="150" width="120" height="36" rx="8" class="f1 s1"/>
+      <text x="70" y="58" class="tx" text-anchor="middle">demokracja</text>
+      <text x="330" y="58" class="tx" text-anchor="middle">polityka</text>
+      <text x="60" y="115" class="tx" text-anchor="middle">teatr</text>
+      <text x="340" y="115" class="tx" text-anchor="middle">filozofia</text>
+      <text x="70" y="173" class="tx" text-anchor="middle">olimpiada</text>
+      <text x="330" y="173" class="tx" text-anchor="middle">alfabet</text>
+      <text x="200" y="210" class="tx-s" text-anchor="middle">alfa + beta = alfabet · filozofia = umiłowanie mądrości</text>
+    </svg>`,
+    text: `<p><b>Filozofia</b> to po grecku <b>„umiłowanie mądrości”</b>. Filozofowie szukali prawdy, zadając pytania i rozumując. Najsłynniejsi to <b>Sokrates</b> („Wiem, że nic nie wiem”), jego uczeń <b>Platon</b> i uczeń Platona – <b>Arystoteles</b>.</p>
+      <p>Grecy zostawili Europie demokrację, filozofię, teatr, igrzyska i mity – i wiele słów, których używasz na co dzień. Nawet <b>alfabet</b> to dwie pierwsze litery greckie: <b>alfa</b> i <b>beta</b>.</p>`,
+    remember: 'Dziedzictwo Grecji: demokracja, filozofia, teatr, igrzyska olimpijskie, mitologia.',
+    hook: 'Kiedy mówisz „teatr”, „polityka” czy „alfabet” – <b>mówisz po grecku</b>!',
+    check: { q: 'Co znaczy słowo „filozofia”?', options: ['władza ludu', 'umiłowanie mądrości', 'miasto-państwo'], answer: 1, explain: 'Filozofia to umiłowanie mądrości. Władza ludu to demokracja, a miasto-państwo – polis.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['historia/rzym'] = [
+  {
+    title: 'Od wilczycy do imperium',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Oś czasu Rzymu: 753 przed naszą erą legendarne założenie – królestwo; 509 przed naszą erą republika; 27 przed naszą erą cesarstwo; 476 naszej ery upadek zachodniej części cesarstwa">
+      <rect x="10" y="70" width="80" height="34" class="f4 s4"/>
+      <rect x="90" y="70" width="150" height="34" class="f1 s1"/>
+      <rect x="240" y="70" width="150" height="34" class="f5 s5"/>
+      <text x="50" y="92" class="tx-s" text-anchor="middle">królestwo</text>
+      <text x="165" y="93" class="tx" text-anchor="middle">republika</text>
+      <text x="315" y="93" class="tx" text-anchor="middle">cesarstwo</text>
+      <line x1="10" y1="62" x2="10" y2="112" class="ln"/>
+      <line x1="90" y1="62" x2="90" y2="112" class="ln"/>
+      <line x1="240" y1="62" x2="240" y2="112" class="ln"/>
+      <line x1="390" y1="62" x2="390" y2="112" class="ln"/>
+      <text x="12" y="135" class="tx-s">753</text>
+      <text x="90" y="135" class="tx-s" text-anchor="middle">509</text>
+      <text x="240" y="135" class="tx-s" text-anchor="middle">27 p.n.e.</text>
+      <text x="388" y="135" class="tx-s" text-anchor="end">476 n.e.</text>
+      <text x="12" y="153" class="tx-s">p.n.e.</text>
+      <text x="90" y="153" class="tx-s" text-anchor="middle">p.n.e.</text>
+      <text x="20" y="40" class="tx">🐺 Romulus i Remus (legenda)</text>
+      <text x="200" y="185" class="tx-s" text-anchor="middle">Rzym – nad Tybrem, na Półwyspie Apenińskim (Italia)</text>
+    </svg>`,
+    text: `<p>Rzym leży na <b>Półwyspie Apenińskim</b> (Italii) nad rzeką <b>Tyber</b>. Według legendy założyli go bliźniacy <b>Romulus i Remus</b>, których wykarmiła wilczyca – tradycja podaje rok <b>753 p.n.e.</b></p>
+      <p>Najpierw Rzymem rządzili królowie. Ok. 509 r. p.n.e. Rzym stał się <b>republiką</b> – po łacinie „rzecz publiczna”: rządzili urzędnicy wybierani na rok przez obywateli, na czele z dwoma <b>konsulami</b>. Od 27 r. p.n.e. było <b>cesarstwo</b> – rządził cesarz.</p>`,
+    remember: 'Rzym: królestwo → republika (509 p.n.e.) → cesarstwo (27 p.n.e.).',
+    hook: 'Re-<b>publika</b> – sprawa <b>publiczna</b>, czyli wszystkich. Polska to też republika – Rzeczpospolita!',
+    check: { q: 'Jak nazywał się okres, w którym Rzymem rządzili urzędnicy wybierani na rok, z dwoma konsulami na czele?', options: ['cesarstwo', 'republika', 'królestwo'], answer: 1, explain: 'To republika (509–27 p.n.e.). W cesarstwie rządził cesarz, a w królestwie – król.' },
+  },
+  {
+    title: 'Juliusz Cezar',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Droga Juliusza Cezara: konsul, podbój Galii, dyktator, zamordowany w 44 roku p.n.e. Potem Oktawian August – pierwszy cesarz">
+      <defs><marker id="a-k4hi-rz-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="15" width="115" height="50" rx="10" class="f1 s1"/>
+      <rect x="143" y="15" width="115" height="50" rx="10" class="f3 s3"/>
+      <rect x="276" y="15" width="115" height="50" rx="10" class="f4 s4"/>
+      <text x="67" y="46" class="tx" text-anchor="middle">konsul</text>
+      <text x="200" y="38" class="tx" text-anchor="middle">podbój</text>
+      <text x="200" y="57" class="tx" text-anchor="middle">Galii</text>
+      <text x="333" y="46" class="tx" text-anchor="middle">dyktator</text>
+      <line x1="127" y1="40" x2="140" y2="40" class="ln" marker-end="url(#a-k4hi-rz-2)"/>
+      <line x1="260" y1="40" x2="273" y2="40" class="ln" marker-end="url(#a-k4hi-rz-2)"/>
+      <line x1="333" y1="67" x2="333" y2="88" class="ln" marker-end="url(#a-k4hi-rz-2)"/>
+      <rect x="200" y="92" width="190" height="50" rx="10" class="f2 s2"/>
+      <text x="295" y="115" class="tx" text-anchor="middle">zamordowany</text>
+      <text x="295" y="134" class="tx-b" text-anchor="middle">44 p.n.e.</text>
+      <line x1="295" y1="144" x2="295" y2="160" class="ln" marker-end="url(#a-k4hi-rz-2)"/>
+      <rect x="40" y="164" width="350" height="54" rx="10" class="f5 s5 sw"/>
+      <text x="215" y="188" class="tx-b" text-anchor="middle">Oktawian August</text>
+      <text x="215" y="208" class="tx-s" text-anchor="middle">pierwszy cesarz (od 27 r. p.n.e.)</text>
+      <text x="100" y="125" class="tx-b" text-anchor="middle">🏛️ I w. p.n.e.</text>
+    </svg>`,
+    text: `<p><b>Juliusz Cezar</b> żył w I wieku p.n.e. Był zdolnym wodzem: był konsulem, a potem podbił dla Rzymu <b>Galię</b> (m.in. dzisiejszą Francję). Z pomocą wojska zdobył pełnię władzy jako <b>dyktator</b>. W <b>44 r. p.n.e.</b> zamordowali go przeciwnicy polityczni.</p>
+      <p>Władzę przejął jego krewny i następca <b>Oktawian</b>. W 27 r. p.n.e. dostał tytuł <b>August</b> i został <b>pierwszym cesarzem</b>. Od przydomka Cezar pochodzi słowo <b>„cesarz”</b>.</p>`,
+    remember: 'Cezar nie był cesarzem! Pierwszy cesarz to Oktawian August.',
+    hook: 'Cezar → cesarz: <b>imię</b> zostało po Cezarze, ale cesarzem był dopiero Oktawian.',
+    check: { q: 'Kto był pierwszym cesarzem rzymskim?', options: ['Juliusz Cezar', 'Oktawian August', 'Romulus'], answer: 1, explain: 'Cezar był dyktatorem republiki. Pierwszym cesarzem został Oktawian August.' },
+  },
+  {
+    title: 'Obywatele i niewolnicy',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Porównanie: obywatel rzymski ma prawa – mężczyźni głosują i mogą być urzędnikami; niewolnik nie ma praw, jest własnością pana, najczęściej to jeniec wojenny">
+      <rect x="10" y="10" width="185" height="180" rx="12" class="f3 s3 sw"/>
+      <rect x="205" y="10" width="185" height="180" rx="12" class="f2 s2 sw"/>
+      <text x="102" y="46" class="tx-b" text-anchor="middle">🧑‍⚖️ obywatel</text>
+      <text x="297" y="46" class="tx-b" text-anchor="middle">⛓️ niewolnik</text>
+      <text x="102" y="84" class="tx" text-anchor="middle">ma prawa</text>
+      <text x="102" y="112" class="tx-s" text-anchor="middle">mężczyźni głosują</text>
+      <text x="102" y="132" class="tx-s" text-anchor="middle">i mogą być</text>
+      <text x="102" y="152" class="tx-s" text-anchor="middle">urzędnikami</text>
+      <text x="297" y="84" class="tx" text-anchor="middle">nie ma praw</text>
+      <text x="297" y="112" class="tx-s" text-anchor="middle">własność pana</text>
+      <text x="297" y="132" class="tx-s" text-anchor="middle">najczęściej</text>
+      <text x="297" y="152" class="tx-s" text-anchor="middle">jeniec wojenny</text>
+    </svg>`,
+    text: `<p><b>Obywatele rzymscy</b> mieli prawa: mężczyźni mogli głosować i zostawać urzędnikami. Kobiety też były obywatelkami, ale nie mogły głosować ani pełnić urzędów.</p>
+      <p><b>Niewolnicy</b> nie mieli żadnych praw – według prawa byli <b>własnością</b> pana, jak rzecz. Najczęściej byli to <b>jeńcy wojenni</b>. Pracowali na polach, w domach i warsztatach. Niektórych wyzwalano.</p>`,
+    remember: 'Obywatel ma prawa, niewolnik – żadnych (był własnością pana).',
+    hook: 'Im więcej Rzym wygrywał wojen, tym więcej miał jeńców – czyli <b>niewolników</b>.',
+    check: { q: 'Skąd najczęściej brali się niewolnicy w Rzymie?', options: ['byli to jeńcy wojenni', 'byli to konsulowie, którzy przegrali wybory', 'byli to obywatele, którzy chcieli odpocząć'], answer: 0, explain: 'Rzymianie zabierali do niewoli pokonanych wrogów.' },
+  },
+  {
+    title: 'Imperium wokół „naszego morza”',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Schemat imperium rzymskiego: w środku Morze Śródziemne, dookoła ziemie rzymskie – Italia z Rzymem, Hiszpania, Galia, Grecja, Azja Mniejsza, Egipt i Afryka Północna">
+      <rect x="10" y="10" width="380" height="200" rx="40" class="f3 s3"/>
+      <ellipse cx="200" cy="115" rx="108" ry="55" class="f1 s1 sw"/>
+      <text x="200" y="112" class="tx-b" text-anchor="middle">Morze Śródziemne</text>
+      <text x="200" y="134" class="tx-s" text-anchor="middle">„nasze morze”</text>
+      <text x="200" y="45" class="tx-b" text-anchor="middle">⭐ Rzym (Italia)</text>
+      <text x="100" y="45" class="tx-s" text-anchor="middle">Galia</text>
+      <text x="20" y="120" class="tx-s">Hiszpania</text>
+      <text x="300" y="45" class="tx-s" text-anchor="middle">Grecja</text>
+      <text x="382" y="120" class="tx-s" text-anchor="end">Azja Mn.</text>
+      <text x="320" y="195" class="tx-s" text-anchor="middle">Egipt</text>
+      <text x="130" y="195" class="tx-s" text-anchor="middle">Afryka Północna</text>
+    </svg>`,
+    text: `<p>Rzymianie podbili najpierw Italię, a potem prawie wszystkie krainy wokół <b>Morza Śródziemnego</b> – nazywali je „naszym morzem”. Tak powstało <b>imperium rzymskie</b>. Najwięcej ziem miało za cesarza <b>Trajana</b>, na początku II wieku n.e.</p>
+      <p>Na dzisiejszej mapie to m.in. Włochy, Hiszpania, Portugalia, Francja, Grecja, Turcja, Egipt i część Wielkiej Brytanii. W I wieku n.e. sam Rzym był jednym z największych miast świata – miał ok. miliona mieszkańców. Zachodnia część cesarstwa upadła w 476 r. n.e.</p>`,
+    remember: 'Imperium rzymskie otaczało Morze Śródziemne; największe było za Trajana (II w. n.e.).',
+    hook: 'Imperium jak <b>obwarzanek</b>: w środku „dziura” – morze, a dookoła ziemie Rzymian.',
+  },
+  {
+    title: 'Co zostawili nam Rzymianie?',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Pięć osiągnięć Rzymian: akwedukt – most z wodą, amfiteatr – arena z trybunami, łuk triumfalny – brama zwycięstwa, łacina – nasz alfabet, prawo rzymskie">
+      <rect x="10" y="10" width="120" height="100" rx="10" class="f1 s1"/>
+      <rect x="140" y="10" width="120" height="100" rx="10" class="f4 s4"/>
+      <rect x="270" y="10" width="120" height="100" rx="10" class="f3 s3"/>
+      <rect x="75" y="120" width="120" height="100" rx="10" class="f5 s5"/>
+      <rect x="205" y="120" width="120" height="100" rx="10" class="f2 s2"/>
+      <path d="M25,30 L115,30 L115,72 L103,72 Q97,52 91,72 L79,72 Q73,52 67,72 L55,72 Q49,52 43,72 L25,72 Z" class="bg ln"/>
+      <rect x="25" y="26" width="90" height="4" class="f1 s1"/>
+      <ellipse cx="200" cy="50" rx="45" ry="24" class="bg ln"/>
+      <ellipse cx="200" cy="50" rx="24" ry="11" class="f4 ln"/>
+      <path d="M300,75 L300,30 L360,30 L360,75 L345,75 L345,55 Q330,38 315,55 L315,75 Z" class="bg ln"/>
+      <text x="70" y="96" class="tx" text-anchor="middle">akwedukt</text>
+      <text x="200" y="96" class="tx" text-anchor="middle">amfiteatr</text>
+      <text x="330" y="96" class="tx" text-anchor="middle">łuk triumfalny</text>
+      <text x="135" y="168" class="tx-b" text-anchor="middle">A B C</text>
+      <text x="135" y="204" class="tx" text-anchor="middle">łacina</text>
+      <text x="265" y="168" class="tx-b" text-anchor="middle">⚖️</text>
+      <text x="265" y="204" class="tx" text-anchor="middle">prawo</text>
+    </svg>`,
+    text: `<p>Rzymianie byli świetnymi budowniczymi. <b>Akweduktem</b> – mostem z kanałem – płynęła woda ze źródeł w górach do miasta. W <b>amfiteatrze</b>, np. w Koloseum, na arenie walczyli <b>gladiatorzy</b>. <b>Łuk triumfalny</b> to ozdobna brama na pamiątkę zwycięstwa.</p>
+      <p><b>Łacina</b> – język Rzymian – dała początek m.in. językom włoskiemu, francuskiemu i hiszpańskiemu, a litery łacińskie to nasz alfabet. <b>Prawo rzymskie</b> jest podstawą wielu dzisiejszych zasad, np. że trzeba wysłuchać obu stron sporu.</p>`,
+    remember: 'Akwedukt – woda, amfiteatr – arena, łuk triumfalny – zwycięstwo; łacina i prawo rzymskie.',
+    hook: '<b>Aqua</b> to po łacinie woda – <b>akw</b>edukt prowadzi wodę, a <b>akw</b>arium ją trzyma.',
+    check: { q: 'Do czego służył akwedukt?', options: ['do walk gladiatorów', 'do doprowadzania wody do miasta', 'do świętowania zwycięstw'], answer: 1, explain: 'Akwedukt to most z kanałem, którym płynęła woda. Walki gladiatorów odbywały się w amfiteatrze, a zwycięstwa upamiętniał łuk triumfalny.' },
+  },
+];

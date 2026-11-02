@@ -893,5 +893,269 @@ window.SUBJECTS.push({
         { id: '08li5b', q: 'Idziesz szlakiem w parku narodowym i masz pusty papierek po batonie. Co robisz?', options: ['chowam go do plecaka i wyrzucam do kosza poza parkiem lub w domu', 'zakopuję go pod drzewem', 'wrzucam go w krzaki', 'zostawiam na ławce'], answer: 0, explain: 'Śmieci zabieramy ze sobą – zasada każdego turysty.' },
       ],
     },
+    {
+      id: 'uklad-sloneczny',
+      name: 'Ziemia w Układzie Słonecznym',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 5 „Planeta Ziemia”, wym. 1 (planety i inne ciała niebieskie Układu Słonecznego, budowa Układu Słonecznego na podstawie modelu), wym. 2 (fazy Księżyca, zaćmienie Słońca i zaćmienie Księżyca), wym. 3 (ruch obrotowy i obiegowy Ziemi i ich konsekwencje – dzień i noc, doba, rok, pory roku; w uproszczeniu). Kolejność i podział planet, planety karłowate, czas obrotu i obiegu Ziemi, nachylenie osi, fazy Księżyca i warunki zaćmień – według materiałów Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Czy Ziemia stoi w miejscu?”, „Z czego zbudowany jest Jowisz?”, „Co to jest zaćmienie Księżyca?”, „Zaćmienia Słońca i Księżyca”), sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Układ Słoneczny</h3>
+        <p>W środku <b>Układu Słonecznego</b> jest <b>Słońce</b> – <b>gwiazda</b>, czyli ogromna, gorąca kula gazów, która <b>świeci własnym światłem</b>. Wokół Słońca krąży <b>8 planet</b>. Planety nie świecą same – <b>odbijają światło Słońca</b>.</p>
+        <p>Planety po kolei, od najbliższej Słońcu:</p>
+        <table>
+          <tr><th>Planety skaliste (bliżej Słońca, mniejsze)</th><th>Gazowe olbrzymy (dalej od Słońca, ogromne)</th></tr>
+          <tr><td>1. Merkury · 2. Wenus · 3. <b>Ziemia</b> · 4. Mars</td><td>5. <b>Jowisz</b> – największa planeta · 6. Saturn · 7. Uran · 8. Neptun</td></tr>
+        </table>
+        <div class="tip">💡 Kolejność planet zapamiętasz zdaniem: <b>M</b>ama <b>W</b>iesia <b>Z</b>jada <b>M</b>archewkę, <b>J</b>aś <b>S</b>zybko <b>U</b>nosi <b>N</b>ogi (Merkury, Wenus, Ziemia, Mars, Jowisz, Saturn, Uran, Neptun).</div>
+        <h3>Inne ciała niebieskie</h3>
+        <ul>
+          <li><b>Księżyce</b> – krążą wokół planet. Ziemia ma jeden – <b>Księżyc</b>.</li>
+          <li><b>Planetoidy</b> – małe skaliste ciała. Najwięcej jest ich w <b>pasie planetoid</b> między Marsem a Jowiszem.</li>
+          <li><b>Planety karłowate</b> – np. <b>Pluton</b>. Do 2006 r. Pluton był uznawany za dziewiątą planetę; dziś jest <b>planetą karłowatą</b>. Krąży daleko, za Neptunem.</li>
+        </ul>
+        <h3>Ruch obrotowy Ziemi – dzień i noc</h3>
+        <p>Ziemia obraca się wokół własnej <b>osi</b> – wyobrażonej linii przechodzącej przez biegun północny i południowy. Obraca się <b>z zachodu na wschód</b>. Jeden pełny obrót trwa prawie <b>24 godziny</b> – to <b>doba</b>.</p>
+        <p>Słońce oświetla zawsze tylko połowę Ziemi. Na oświetlonej połowie jest <b>dzień</b>, na drugiej – <b>noc</b>. Dlatego, że Ziemia się obraca, nam się wydaje, że to Słońce wędruje po niebie ze wschodu na zachód.</p>
+        <h3>Ruch obiegowy Ziemi – rok i pory roku</h3>
+        <p>Ziemia krąży też wokół Słońca. Jedno okrążenie trwa około <b>365 dni i ćwierć doby</b> – to <b>rok</b>. Z tych „ćwiartek” co cztery lata zbiera się dodatkowy dzień: rok <b>przestępny</b> ma 366 dni (29 lutego).</p>
+        <p>Oś Ziemi jest <b>nachylona</b>. Dlatego przez część roku silniej oświetlona jest północna połowa Ziemi (tam leży Polska), a przez część roku – południowa. Gdy u nas jest <b>lato</b>, Słońce jest wysoko, dzień jest długi i jest ciepło. Zimą Słońce jest nisko, dzień jest krótki i jest zimno. Tak powstają <b>pory roku</b>.</p>
+        <h3>Fazy Księżyca</h3>
+        <p>Księżyc krąży wokół Ziemi. Nie świeci sam – odbija światło Słońca. Słońce zawsze oświetla połowę Księżyca, ale z Ziemi widzimy raz większą, raz mniejszą część tej oświetlonej połowy. Te zmiany wyglądu to <b>fazy Księżyca</b>:</p>
+        <table>
+          <tr><th>Faza</th><th>Co widać (z Polski)</th></tr>
+          <tr><td><b>nów</b></td><td>Księżyca nie widać – jest między Ziemią a Słońcem</td></tr>
+          <tr><td><b>pierwsza kwadra</b></td><td>oświetlona <b>prawa</b> połowa tarczy; Księżyca przybywa</td></tr>
+          <tr><td><b>pełnia</b></td><td>oświetlona cała tarcza</td></tr>
+          <tr><td><b>ostatnia kwadra</b></td><td>oświetlona <b>lewa</b> połowa tarczy; Księżyca ubywa</td></tr>
+        </table>
+        <p>Od nowiu do następnego nowiu mija około <b>29,5 dnia</b>, czyli prawie miesiąc.</p>
+        <div class="tip">💡 Trik: gdy do Księżyca da się dorysować kreskę i wyjdzie litera <b>P</b> – Księżyca <b>przybywa</b>. Gdy wygląda jak litera <b>C</b> – <b>cofa się</b> (ubywa).</div>
+        <h3>Zaćmienia</h3>
+        <table>
+          <tr><th></th><th>Zaćmienie Słońca</th><th>Zaćmienie Księżyca</th></tr>
+          <tr><td>ustawienie w jednej linii</td><td>Słońce – <b>Księżyc</b> – Ziemia</td><td>Słońce – <b>Ziemia</b> – Księżyc</td></tr>
+          <tr><td>co się dzieje</td><td>Księżyc zasłania Słońce</td><td>Księżyc wchodzi w cień Ziemi, ciemnieje i często robi się czerwonawy</td></tr>
+          <tr><td>kiedy może być</td><td>tylko w czasie <b>nowiu</b> (ale nie przy każdym)</td><td>tylko w czasie <b>pełni</b> (ale nie przy każdej)</td></tr>
+        </table>
+        <div class="tip">⚠️ Nigdy nie patrz na Słońce gołym okiem ani przez lornetkę – także podczas zaćmienia. Możesz trwale uszkodzić wzrok. Zaćmienie Słońca ogląda się tylko przez specjalne okulary do obserwacji Słońca.</div>
+      `,
+      flashcards: [
+        ['Słońce', 'Gwiazda w środku Układu Słonecznego; świeci własnym światłem'],
+        ['Ile planet krąży wokół Słońca?', '8'],
+        ['Kolejność planet od Słońca', 'Merkury, Wenus, Ziemia, Mars, Jowisz, Saturn, Uran, Neptun'],
+        ['Największa planeta Układu Słonecznego', 'Jowisz'],
+        ['Planety skaliste', 'Merkury, Wenus, Ziemia, Mars'],
+        ['Gazowe olbrzymy', 'Jowisz, Saturn, Uran, Neptun'],
+        ['Pluton', 'Planeta karłowata (do 2006 r. uznawany za planetę)'],
+        ['Ruch obrotowy Ziemi', 'Obrót wokół własnej osi z zachodu na wschód; trwa prawie 24 h (doba); skutek: dzień i noc'],
+        ['Ruch obiegowy Ziemi', 'Okrążanie Słońca; trwa ok. 365 dni i ćwierć doby (rok); z nachyleniem osi daje pory roku'],
+        ['Rok przestępny', '366 dni – ma 29 lutego; zdarza się co cztery lata'],
+        ['Fazy Księżyca', 'nów → pierwsza kwadra → pełnia → ostatnia kwadra; cykl ok. 29,5 dnia'],
+        ['Zaćmienie Słońca', 'Księżyc między Słońcem a Ziemią zasłania Słońce; tylko w czasie nowiu'],
+        ['Zaćmienie Księżyca', 'Ziemia między Słońcem a Księżycem; Księżyc w cieniu Ziemi; tylko w czasie pełni'],
+      ],
+      questions: [
+        { id: 'biwkmc', q: 'Co znajduje się w środku Układu Słonecznego?', options: ['Słońce', 'Ziemia', 'Księżyc', 'Jowisz'], answer: 0, explain: 'W środku jest Słońce – gwiazda. Wokół niego krążą planety, w tym Ziemia.' },
+        { id: 'vcm3ap', q: 'Ile planet krąży wokół Słońca?', options: ['8', '9', '7', '12'], answer: 0, explain: 'Planet jest 8: Merkury, Wenus, Ziemia, Mars, Jowisz, Saturn, Uran, Neptun. Pluton jest dziś planetą karłowatą.' },
+        { id: 'ex5orw', q: 'Która planeta jest najbliżej Słońca?', options: ['Merkury', 'Wenus', 'Ziemia', 'Neptun'], answer: 0, explain: 'Kolejność od Słońca: Merkury, Wenus, Ziemia, Mars… Najbliżej jest Merkury.' },
+        { id: 'g3af86', q: 'Która planeta jest największa w Układzie Słonecznym?', options: ['Jowisz', 'Ziemia', 'Saturn', 'Mars'], answer: 0, explain: 'Największa jest Jowisz – gazowy olbrzym, piąta planeta od Słońca.' },
+        { id: 'zabwoo', q: 'Którą planetą od Słońca jest Ziemia?', options: ['trzecią', 'pierwszą', 'czwartą', 'piątą'], answer: 0, explain: 'Merkury (1), Wenus (2), Ziemia (3).' },
+        { id: 'lchzjn', q: 'Która planeta NIE jest planetą skalistą?', options: ['Saturn', 'Merkury', 'Wenus', 'Mars'], answer: 0, explain: 'Planety skaliste to Merkury, Wenus, Ziemia i Mars. Saturn to gazowy olbrzym.' },
+        { id: 'q54wkg', q: 'Czym jest dziś Pluton?', options: ['planetą karłowatą', 'dziewiątą planetą', 'gwiazdą', 'księżycem Ziemi'], answer: 0, explain: 'Do 2006 r. Pluton był uznawany za planetę. Dziś zalicza się go do planet karłowatych.' },
+        { id: 'hvuqth', q: 'Prawda czy fałsz?\nPlanety świecą własnym światłem, tak jak Słońce.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Własnym światłem świeci Słońce (gwiazda). Planety i Księżyc odbijają światło Słońca.' },
+        { id: 'dbuyv0', q: 'Co jest skutkiem ruchu obrotowego Ziemi?', options: ['dzień i noc', 'pory roku', 'fazy Księżyca', 'zaćmienie Słońca'], answer: 0, explain: 'Ziemia obraca się wokół osi, więc raz jesteśmy po stronie oświetlonej (dzień), a raz po ciemnej (noc).' },
+        { id: '2rwua2', q: 'Ile trwa jeden pełny obrót Ziemi wokół własnej osi?', options: ['prawie 24 godziny', 'około tygodnia', 'około miesiąca', 'około roku'], answer: 0, explain: 'Jeden obrót trwa prawie 24 godziny – to doba.' },
+        { id: 'm3426j', q: 'W którą stronę obraca się Ziemia?', options: ['z zachodu na wschód', 'ze wschodu na zachód', 'z północy na południe', 'z południa na północ'], answer: 0, explain: 'Ziemia obraca się z zachodu na wschód. Dlatego wydaje nam się, że Słońce wędruje po niebie ze wschodu na zachód.' },
+        { id: 'whd3z8', q: 'Ile mniej więcej trwa jedno okrążenie Ziemi wokół Słońca?', options: ['około 365 dni', 'około 24 godzin', 'około 29,5 dnia', 'około 7 dni'], answer: 0, explain: 'Okrążenie Słońca trwa około 365 dni i ćwierć doby – to rok.' },
+        { id: 'smjujh', q: 'Dlaczego na Ziemi są pory roku?', options: ['bo Ziemia krąży wokół Słońca, a jej oś jest nachylona', 'bo Ziemia obraca się wokół osi', 'bo Księżyc zasłania Słońce', 'bo Słońce raz świeci mocniej, a raz słabiej'], answer: 0, explain: 'Przez nachylenie osi w czasie ruchu obiegowego raz silniej oświetlona jest półkula północna, a raz południowa.' },
+        { id: 'vqt33i', q: 'Ile dni ma rok przestępny?', options: ['366', '365', '364', '360'], answer: 0, explain: 'Rok przestępny ma dodatkowy dzień – 29 lutego – więc ma 366 dni.' },
+        { id: '4r53bj', q: 'W której fazie Księżyca w ogóle go nie widać?', options: ['w nowiu', 'w pełni', 'w pierwszej kwadrze', 'w ostatniej kwadrze'], answer: 0, explain: 'W czasie nowiu Księżyc jest między Ziemią a Słońcem i zwraca do nas swoją nieoświetloną stronę.' },
+        {
+          id: '8pmjj8',
+          q: 'Patrzysz na Księżyc z Polski. Oświetlona jest jego prawa połowa. Jaka to faza?',
+          svg: `<svg viewBox="0 0 300 140" role="img" aria-label="Tarcza Księżyca: prawa połowa jasna, lewa ciemna">
+      <circle cx="150" cy="70" r="55" class="bg ln"/>
+      <path d="M150,15 A55,55 0 0 1 150,125 Z" class="f4 s4"/>
+      <circle cx="150" cy="70" r="55" class="ln"/>
+    </svg>`,
+          options: ['pierwsza kwadra', 'ostatnia kwadra', 'pełnia', 'nów'],
+          answer: 0,
+          explain: 'Gdy oświetlona jest prawa połowa, do Księżyca da się dorysować kreskę i wychodzi „P” – przybywa. To pierwsza kwadra.',
+        },
+        { id: 'nu16jl', q: 'Ile mniej więcej dni mija od jednego nowiu do następnego?', options: ['około 29,5 dnia', 'około 7 dni', 'około 365 dni', 'około 24 godzin'], answer: 0, explain: 'Pełny cykl faz Księżyca trwa około 29,5 dnia – prawie miesiąc.' },
+        { id: 'oktkky', q: 'Kiedy dochodzi do zaćmienia Słońca?', options: ['gdy Księżyc znajdzie się między Słońcem a Ziemią i zasłoni Słońce', 'gdy Ziemia znajdzie się między Słońcem a Księżycem', 'gdy Słońce schowa się za chmurami', 'gdy na Ziemi jest noc'], answer: 0, explain: 'Przy zaćmieniu Słońca ustawienie jest takie: Słońce – Księżyc – Ziemia. Może się to zdarzyć tylko w czasie nowiu.' },
+        { id: 'bkz2n9', q: 'Podczas zaćmienia Księżyca…', options: ['Księżyc wchodzi w cień Ziemi', 'Księżyc zasłania Słońce', 'Słońce zasłania Księżyc', 'Ziemia chowa się w cieniu Księżyca'], answer: 0, explain: 'Przy zaćmieniu Księżyca Ziemia jest między Słońcem a Księżycem, a Księżyc wchodzi w jej cień. Może się to zdarzyć tylko w czasie pełni.' },
+        { id: 'g4yzip', q: 'Jak bezpiecznie oglądać zaćmienie Słońca?', options: ['tylko przez specjalne okulary do obserwacji Słońca', 'gołym okiem, bo Słońce jest zasłonięte', 'przez lornetkę', 'przez zwykłe okulary przeciwsłoneczne'], answer: 0, explain: 'Patrzenie na Słońce gołym okiem, przez lornetkę czy zwykłe okulary przeciwsłoneczne może trwale uszkodzić wzrok.' },
+      ],
+    },
+    {
+      id: 'mieszaniny',
+      name: 'Rozpuszczanie i mieszaniny',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 3 „Materia i jej przemiany w przyrodzie”, wym. 6 (rozpuszczanie się w wodzie substancji i produktów stosowanych na co dzień, substancje rozpuszczalne i nierozpuszczalne, czynniki wpływające na szybkość rozpuszczania), wym. 9 (mieszaniny jednorodne i niejednorodne, rozdzielanie mieszanin); doświadczenia edukacyjne – eksperymenty, pkt 2 (wpływ mieszania, rozdrobnienia i temperatury na szybkość rozpuszczania) i pkt 3 (rozdzielanie mieszanin przez sączenie, odparowanie, krystalizację, dekantację, sedymentację i sposoby mechaniczne). Opisy metod rozdzielania i podziału mieszanin – według słowniczków Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl), sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Rozpuszczanie</h3>
+        <p>Wsyp łyżeczkę cukru do wody i zamieszaj. Cukier „znika”, ale woda jest słodka. Cukier nie zniknął – rozpadł się na drobinki tak małe, że ich nie widać, i rozszedł się w wodzie. Mówimy, że cukier <b>rozpuścił się</b>. Tak powstaje <b>roztwór</b>.</p>
+        <table>
+          <tr><th>Rozpuszczają się w wodzie</th><th>Nie rozpuszczają się w wodzie</th></tr>
+          <tr><td>cukier, sól kuchenna, kawa rozpuszczalna</td><td>piasek, kreda, olej, żwir</td></tr>
+        </table>
+        <h3>Co przyspiesza rozpuszczanie?</h3>
+        <ul>
+          <li><b>mieszanie</b> – cukier w herbacie rozpuści się szybciej, gdy zamieszasz łyżeczką,</li>
+          <li><b>rozdrobnienie</b> – cukier puder rozpuści się szybciej niż kostka cukru,</li>
+          <li><b>wyższa temperatura</b> – w ciepłej wodzie cukier rozpuści się szybciej niż w zimnej.</li>
+        </ul>
+        <div class="tip">💡 Gdy badasz, co przyspiesza rozpuszczanie, zmieniaj tylko <b>jedną rzecz</b>, a resztę zostaw tak samo (tyle samo wody i cukru, takie same szklanki). Tylko wtedy wiesz, co zadziałało.</div>
+        <h3>Mieszaniny</h3>
+        <p><b>Mieszanina</b> to co najmniej dwie substancje zmieszane ze sobą. Każda z nich zachowuje swoje właściwości, dlatego mieszaninę można rozdzielić na składniki.</p>
+        <table>
+          <tr><th>Mieszanina jednorodna</th><th>Mieszanina niejednorodna</th></tr>
+          <tr><td>składników <b>nie rozróżnisz</b> gołym okiem ani przez lupę</td><td>składniki <b>widać</b> gołym okiem albo przez lupę</td></tr>
+          <tr><td>woda z cukrem, woda z solą</td><td>woda z piaskiem, woda z olejem, piasek z żwirem, groch z kaszą</td></tr>
+        </table>
+        <h3>Jak rozdzielić mieszaninę?</h3>
+        <table>
+          <tr><th>Sposób</th><th>Na czym polega</th><th>Przykład</th></tr>
+          <tr><td><b>sposoby mechaniczne</b></td><td>wybieranie ręką, przesiewanie przez <b>sito</b>, przyciąganie <b>magnesem</b></td><td>groch z kaszą (sito), opiłki żelaza z piaskiem (magnes)</td></tr>
+          <tr><td><b>sedymentacja</b></td><td>odstawiamy mieszaninę, a cięższe cząstki <b>opadają na dno</b></td><td>piasek opada na dno szklanki z wodą</td></tr>
+          <tr><td><b>dekantacja</b></td><td>ostrożne <b>zlewanie cieczy znad osadu</b></td><td>zlewamy wodę znad piasku</td></tr>
+          <tr><td><b>sączenie</b> (filtrowanie)</td><td>przelewamy mieszaninę przez <b>sączek</b> (np. bibułę, filtr do kawy); ciało stałe zostaje na sączku, ciecz przecieka</td><td>woda z piaskiem albo kredą</td></tr>
+          <tr><td><b>odparowanie</b></td><td>ogrzewamy roztwór – woda odparowuje, a substancja rozpuszczona zostaje</td><td>z wody z solą zostaje sól</td></tr>
+          <tr><td><b>krystalizacja</b></td><td>z roztworu powoli wydzielają się <b>kryształy</b> substancji, np. gdy woda wolno paruje</td><td>kryształki soli na dnie talerzyka z solanką</td></tr>
+        </table>
+        <p><b>Sączenie nie rozdzieli</b> wody i soli – sól jest rozpuszczona i przecieka razem z wodą przez sączek. Tu trzeba odparować wodę.</p>
+        <h3>Zadanie z życia: sól z piaskiem</h3>
+        <p>1) Wsyp mieszaninę do wody i zamieszaj – sól się rozpuści, piasek nie. 2) Przesącz – piasek zostanie na sączku. 3) Odparuj wodę z przesączu – zostanie sól.</p>
+        <div class="tip">⚠️ Doświadczenia z ogrzewaniem rób tylko z dorosłym. W pracowni nie próbuj niczego na smak.</div>
+      `,
+      flashcards: [
+        ['Roztwór', 'Mieszanina jednorodna, która powstaje np. po rozpuszczeniu cukru lub soli w wodzie'],
+        ['Substancje rozpuszczalne w wodzie – przykłady', 'cukier, sól kuchenna, kawa rozpuszczalna'],
+        ['Substancje nierozpuszczalne w wodzie – przykłady', 'piasek, kreda, olej, żwir'],
+        ['Co przyspiesza rozpuszczanie?', 'mieszanie, rozdrobnienie, wyższa temperatura'],
+        ['Mieszanina', 'Co najmniej dwie substancje zmieszane ze sobą; każda zachowuje swoje właściwości'],
+        ['Mieszanina jednorodna', 'Składników nie rozróżnisz gołym okiem ani przez lupę, np. woda z solą'],
+        ['Mieszanina niejednorodna', 'Składniki widać gołym okiem lub przez lupę, np. woda z piaskiem'],
+        ['Sedymentacja', 'Opadanie cięższych cząstek na dno naczynia'],
+        ['Dekantacja', 'Zlewanie cieczy znad osadu'],
+        ['Sączenie', 'Przelewanie mieszaniny przez sączek; ciało stałe zostaje na sączku'],
+        ['Odparowanie', 'Ogrzewanie roztworu, aż woda odparuje, a substancja rozpuszczona zostanie'],
+        ['Krystalizacja', 'Wydzielanie się kryształów substancji z roztworu'],
+      ],
+      questions: [
+        { id: '83ysyq', q: 'Która substancja rozpuszcza się w wodzie?', options: ['cukier', 'piasek', 'kreda', 'żwir'], answer: 0, explain: 'Cukier rozpuszcza się w wodzie. Piasek, kreda i żwir się nie rozpuszczają.' },
+        { id: 'ldmvc9', q: 'Która substancja NIE rozpuszcza się w wodzie?', options: ['olej', 'sól kuchenna', 'cukier', 'kawa rozpuszczalna'], answer: 0, explain: 'Olej się nie rozpuszcza – zbiera się w warstwę na powierzchni wody.' },
+        { id: 'pzew5h', q: 'Cukier wsypany do wody „zniknął”, ale woda jest słodka. Co się stało?', options: ['cukier rozpuścił się – rozpadł się na niewidoczne drobinki w wodzie', 'cukier wyparował', 'cukier zamienił się w wodę', 'cukier opadł na dno i jest niewidoczny'], answer: 0, explain: 'Cukier się rozpuścił: rozpadł się na drobinki tak małe, że ich nie widać. Dlatego woda jest słodka.' },
+        { id: 'yfng2l', q: 'W którym przypadku kostka cukru rozpuści się najszybciej?', options: ['w ciepłej wodzie, gdy mieszasz', 'w zimnej wodzie, bez mieszania', 'w zimnej wodzie, gdy mieszasz', 'w ciepłej wodzie, bez mieszania'], answer: 0, explain: 'Rozpuszczanie przyspiesza zarówno mieszanie, jak i wyższa temperatura. Tu działają oba czynniki naraz.' },
+        { id: 'dvxv0b', q: 'Co rozpuści się szybciej w takiej samej szklance wody?', options: ['łyżeczka cukru pudru', 'kostka cukru o takiej samej masie', 'oba tak samo szybko'], answer: 0, explain: 'Rozdrobnienie przyspiesza rozpuszczanie. Cukier puder to bardzo drobno zmielony cukier.' },
+        { id: 'bjokle', q: 'Ola chce sprawdzić, czy temperatura wody wpływa na szybkość rozpuszczania. Co powinna zrobić?', options: ['wsypać tyle samo cukru do dwóch szklanek z taką samą ilością wody – ciepłej i zimnej – i nie mieszać żadnej', 'do ciepłej wody wsypać cukier puder, a do zimnej kostkę', 'ciepłą wodę mieszać, a zimnej nie', 'do ciepłej wody wsypać więcej cukru niż do zimnej'], answer: 0, explain: 'W doświadczeniu zmieniamy tylko jedną rzecz (tu temperaturę), a reszta musi być taka sama.' },
+        { id: 'lbgclw', q: 'Która mieszanina jest jednorodna?', options: ['woda z solą', 'woda z piaskiem', 'woda z olejem', 'groch z kaszą'], answer: 0, explain: 'W wodzie z solą nie rozróżnisz składników ani gołym okiem, ani przez lupę – to mieszanina jednorodna.' },
+        { id: 'qzjchx', q: 'Która mieszanina jest niejednorodna?', options: ['woda z piaskiem', 'woda z cukrem', 'woda z solą'], answer: 0, explain: 'Piasek widać w wodzie i opada na dno – to mieszanina niejednorodna.' },
+        { id: 'sdmr8q', q: 'Jak najprościej oddzielić opiłki żelaza od piasku?', options: ['magnesem', 'przez odparowanie', 'przez rozpuszczenie w wodzie', 'przez krystalizację'], answer: 0, explain: 'Magnes przyciąga żelazo, a piasku nie – to sposób mechaniczny.' },
+        { id: '7n9ohi', q: 'Odstawiasz szklankę wody z piaskiem i po chwili piasek leży na dnie. Jak nazywa się opadanie cząstek na dno?', options: ['sedymentacja', 'dekantacja', 'krystalizacja', 'odparowanie'], answer: 0, explain: 'Sedymentacja to opadanie cięższych cząstek na dno naczynia.' },
+        { id: 'gig4a7', q: 'Ostrożne zlewanie wody znad piasku, który opadł na dno, to…', options: ['dekantacja', 'sedymentacja', 'sączenie', 'odparowanie'], answer: 0, explain: 'Dekantacja to zlewanie cieczy znad osadu.' },
+        { id: 'wt19x2', q: 'Przelewasz wodę z kredą przez filtr do kawy. Kreda zostaje na filtrze. Ten sposób to…', options: ['sączenie', 'odparowanie', 'krystalizacja', 'rozpuszczanie'], answer: 0, explain: 'Sączenie (filtrowanie): ciało stałe zostaje na sączku, a ciecz przecieka.' },
+        { id: '9mkc5w', q: 'Jak odzyskać sól z wody z solą?', options: ['odparować wodę', 'przesączyć przez bibułę', 'użyć magnesu', 'przesiać przez sito'], answer: 0, explain: 'Sól jest rozpuszczona, więc przecieka przez sączek. Gdy odparujemy wodę, sól zostanie.' },
+        { id: '0qd7w3', q: 'Prawda czy fałsz?\nWodę z rozpuszczoną solą można rozdzielić, przelewając ją przez sączek.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Rozpuszczona sól przecieka przez sączek razem z wodą. Sączenie oddziela tylko to, co się nie rozpuściło, np. piasek.' },
+        { id: 'uphlmw', q: 'Masz mieszaninę soli i piasku. W jakiej kolejności je rozdzielisz?', options: ['dodam wody i zamieszam → przesączę → odparuję wodę', 'odparuję → dodam wody → przesączę', 'przesączę suchą mieszaninę → dodam wody', 'użyję magnesu → odparuję'], answer: 0, explain: 'Sól rozpuści się w wodzie, piasek zostanie na sączku, a po odparowaniu wody z przesączu zostanie sól.' },
+        { id: '16bzop', q: 'Na talerzyku z solanką po kilku dniach na dnie pojawiły się małe kryształki soli. Jak nazywa się to zjawisko?', options: ['krystalizacja', 'sedymentacja', 'dekantacja', 'sączenie'], answer: 0, explain: 'Krystalizacja to wydzielanie się kryształów substancji z roztworu, np. gdy woda powoli paruje.' },
+        { id: 't5y958', q: 'Jak rozdzielić groch i kaszę jaglaną?', options: ['przesiać przez sito', 'odparować', 'przesączyć przez bibułę', 'rozpuścić w wodzie'], answer: 0, explain: 'Drobna kasza przejdzie przez oczka sita, a większy groch zostanie. To sposób mechaniczny.' },
+        { id: 'qiw12c', q: 'Prawda czy fałsz?\nW mieszaninie każda substancja zachowuje swoje właściwości.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Dlatego mieszaninę można rozdzielić – np. magnes nadal przyciąga opiłki żelaza wymieszane z piaskiem.' },
+      ],
+    },
+    {
+      id: 'las-laka',
+      name: 'Las i łąka',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 4 „Organizmy i ekosystemy”, wym. 12 (ekosystemy w otoczeniu – naturalne i sztuczne, miejsce człowieka w ekosystemie, organizmy inwazyjne), wym. 13 (ekosystem łąki – gatunki, znaczenie łąk, wpływ człowieka, kwiaty traw a kwiaty z okwiatem – moduł klimatyczny), wym. 14 (las – gatunki, typ lasu, funkcje lasu, wpływ człowieka – moduł klimatyczny). Fakty sprawdzone 2.11.2026: warstwy lasu, typy lasu, gatunki łąki i lasu – zpe.gov.pl („Jakie bogactwa kryją lasy?”, „W lesie”, „Na łące i polu uprawnym”); funkcje lasu – Lasy Państwowe („Lasy Państwowe w liczbach”); gatunki inwazyjne (barszcz Sosnowskiego, szop pracz – na liście inwazyjnych gatunków obcych stwarzających zagrożenie dla Unii) – GDOŚ i RDOŚ (gov.pl); zakaz wypalania łąk – ustawa o ochronie przyrody, art. 124 (tekst jednolity Dz.U. 2026 poz. 1315). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Ekosystem</h3>
+        <p><b>Ekosystem</b> to miejsce w przyrodzie razem ze wszystkim, co w nim żyje (rośliny, zwierzęta, grzyby, bakterie), i z warunkami, jakie tam panują (światło, woda, gleba, powietrze). Wszystko jest ze sobą powiązane – np. kto kogo zjada.</p>
+        <table>
+          <tr><th>Ekosystemy naturalne</th><th>Ekosystemy sztuczne</th></tr>
+          <tr><td>powstały bez udziału człowieka</td><td>stworzył je człowiek i musi o nie dbać</td></tr>
+          <tr><td>las naturalny (np. Puszcza Białowieska), jezioro, rzeka, torfowisko</td><td>pole uprawne, sad, park, ogród</td></tr>
+        </table>
+        <p><b>Człowiek</b> też jest częścią ekosystemów. Korzysta z nich (drewno, pożywienie, wypoczynek), ale też je zmienia: wycina lasy, osusza bagna, zakłada pola, zanieczyszcza wodę i powietrze. Może też przyrodę chronić.</p>
+        <h3>Gatunki inwazyjne</h3>
+        <p><b>Gatunek obcy</b> to roślina lub zwierzę przywiezione przez człowieka z innej części świata. Gdy taki gatunek szybko się rozprzestrzenia i szkodzi gatunkom <b>rodzimym</b> (żyjącym u nas od dawna), nazywamy go <b>inwazyjnym</b>. Przykłady:</p>
+        <ul>
+          <li><b>barszcz Sosnowskiego</b> – roślina z Kaukazu; zarasta duże obszary i wypiera rodzime rośliny; jego sok na słońcu parzy skórę,</li>
+          <li><b>szop pracz</b> – ssak z Ameryki Północnej; może niszczyć gniazda ptaków wodnych i zagraża rzadkiemu żółwiowi błotnemu.</li>
+        </ul>
+        <div class="tip">💡 Nigdy nie wypuszczaj na wolność zwierząt domowych ani egzotycznych (np. żółwia z akwarium). Mogą zaszkodzić rodzimej przyrodzie.</div>
+        <h3>Łąka</h3>
+        <p><b>Łąka</b> to teren porośnięty głównie <b>trawami</b> i innymi roślinami zielnymi, bez drzew. Jest tam dużo światła i wieje wiatr. Łąkę się <b>nie orze</b> i przez wiele lat rosną na niej te same, bardzo różne rośliny. Na <b>polu</b> uprawnym rośnie zwykle jeden gatunek, a pole orze się co roku.</p>
+        <table>
+          <tr><th>Rośliny łąki</th><th>Zwierzęta łąki</th></tr>
+          <tr><td>trawy, koniczyna, mniszek, jaskier, szczaw</td><td>pasikonik, świerszcz, motyle, trzmiele, mrówki, żaba trawna, kuropatwa, myszołów (szuka tu pokarmu), mysz, kret, zając</td></tr>
+        </table>
+        <p><b>Znaczenie łąk:</b> są domem wielu gatunków, dają pokarm (nektar i pyłek) owadom zapylającym, a ludziom – <b>siano</b> i paszę dla zwierząt hodowlanych.</p>
+        <p><b>Człowiek a łąka:</b> dzięki <b>koszeniu</b> i <b>wypasowi</b> zwierząt łąka nie zarasta krzewami i lasem. Szkodzi jej osuszanie i zamiana w pole. <b>Wypalanie łąk jest zabronione</b> przez ustawę o ochronie przyrody – w ogniu giną zwierzęta, a pożar łatwo wymyka się spod kontroli.</p>
+        <h3>Kwiaty traw a kwiaty z okwiatem</h3>
+        <table>
+          <tr><th>Kwiat z barwnym okwiatem (np. jaskier, mak, koniczyna)</th><th>Kwiaty traw</th></tr>
+          <tr><td>duże, kolorowe płatki, zapach, nektar</td><td>drobne, niepozorne, zielonkawe, zebrane w kłosy lub wiechy</td></tr>
+          <tr><td><b>wabią owady</b>, które przenoszą pyłek</td><td>pyłek przenosi <b>wiatr</b> – kwiaty nie muszą wabić owadów, więc nie mają barwnych płatków</td></tr>
+        </table>
+        <h3>Las i jego warstwy</h3>
+        <p><b>Las</b> to ekosystem, w którym najważniejsze są <b>drzewa</b>. Las ma <b>cztery warstwy</b> (piętra), od góry:</p>
+        <table>
+          <tr><th>Warstwa</th><th>Co tam rośnie i żyje</th></tr>
+          <tr><td><b>korony drzew</b></td><td>sosna, świerk, dąb, buk, brzoza; wiewiórka, kuna, gniazda ptaków drapieżnych (np. myszołowa)</td></tr>
+          <tr><td><b>podszyt</b></td><td>młode drzewa i krzewy: leszczyna, jarzębina, kalina, jałowiec, bez czarny; ptaki, np. rudzik, kos</td></tr>
+          <tr><td><b>runo leśne</b></td><td>mchy, paprocie, krzewinki (borówka czarna, wrzos), grzyby; pokarmu szukają tu dziki, sarny, lisy</td></tr>
+          <tr><td><b>ściółka</b></td><td>opadłe liście, igły, gałązki; dżdżownice, grzyby i bakterie rozkładają je na <b>próchnicę</b></td></tr>
+        </table>
+        <p>Im niższa warstwa, tym <b>mniej światła</b>, <b>większa wilgotność</b> i <b>słabszy wiatr</b>.</p>
+        <h3>Typy lasu</h3>
+        <ul>
+          <li><b>las iglasty</b> (bór) – rosną w nim drzewa iglaste: sosna, świerk, jodła, modrzew (modrzew zrzuca igły na zimę),</li>
+          <li><b>las liściasty</b> – drzewa liściaste: dąb, buk, grab, lipa, klon, brzoza,</li>
+          <li><b>las mieszany</b> – rosną razem drzewa iglaste i liściaste.</li>
+        </ul>
+        <p>Typ lasu poznasz po drzewach, które tworzą korony. Najczęstszym drzewem w polskich lasach jest <b>sosna</b>.</p>
+        <h3>Po co nam las?</h3>
+        <table>
+          <tr><th>Funkcje lasu</th><th>Przykłady</th></tr>
+          <tr><td><b>ochronne</b> (przyrodnicze)</td><td>dom dla roślin, zwierząt i grzybów; wytwarza tlen i pochłania dwutlenek węgla – gaz, przez który Ziemia mocniej się ogrzewa (zmiana klimatu); zatrzymuje wodę (np. w mchach) i chroni przed powodzią; chroni glebę</td></tr>
+          <tr><td><b>gospodarcze</b> (produkcyjne)</td><td>drewno, grzyby, jagody</td></tr>
+          <tr><td><b>społeczne</b></td><td>wypoczynek, zdrowie, miejsca pracy</td></tr>
+        </table>
+        <p><b>Człowiek a las:</b> ludzie wycinają lasy i sadzą nowe. Często sadzono lasy z jednego gatunku drzew (np. samej sosny) – takie lasy łatwiej niszczą szkodniki, np. korniki. Lasowi szkodzą też śmieci, hałas i pożary. W lesie nie hałasuj, nie rozpalaj ogniska poza wyznaczonym miejscem i zabieraj śmieci ze sobą.</p>
+      `,
+      flashcards: [
+        ['Ekosystem', 'Miejsce w przyrodzie razem z organizmami, które w nim żyją, i warunkami, jakie tam panują'],
+        ['Ekosystemy naturalne – przykłady', 'las naturalny (np. Puszcza Białowieska), jezioro, rzeka, torfowisko'],
+        ['Ekosystemy sztuczne – przykłady', 'pole uprawne, sad, park, ogród'],
+        ['Gatunek inwazyjny', 'Gatunek obcy przywieziony przez człowieka, który szybko się rozprzestrzenia i szkodzi gatunkom rodzimym'],
+        ['Barszcz Sosnowskiego', 'Inwazyjna roślina z Kaukazu; wypiera rodzime rośliny, jej sok na słońcu parzy skórę'],
+        ['Szop pracz', 'Inwazyjny ssak z Ameryki Północnej; niszczy gniazda ptaków wodnych, zagraża żółwiowi błotnemu'],
+        ['Rośliny łąki – przykłady', 'trawy, koniczyna, mniszek, jaskier, szczaw'],
+        ['Zwierzęta łąki – przykłady', 'pasikonik, świerszcz, trzmiel, motyle, kuropatwa, kret, zając'],
+        ['Kwiaty traw', 'Drobne, niepozorne, bez barwnych płatków; pyłek przenosi wiatr, więc nie muszą wabić owadów'],
+        ['Warstwy lasu (od góry)', 'korony drzew, podszyt, runo leśne, ściółka'],
+        ['Typy lasu', 'iglasty (bór), liściasty, mieszany'],
+        ['Funkcje lasu', 'ochronne (przyrodnicze), gospodarcze (produkcyjne), społeczne'],
+      ],
+      questions: [
+        { id: 'jocjms', q: 'Ekosystem to…', options: ['miejsce w przyrodzie razem z organizmami, które w nim żyją, i warunkami, jakie tam panują', 'tylko rośliny rosnące w jednym miejscu', 'tylko zwierzęta żyjące w lesie', 'mapa okolicy'], answer: 0, explain: 'Ekosystem to organizmy (rośliny, zwierzęta, grzyby, bakterie) razem z miejscem i warunkami życia – światłem, wodą, glebą, powietrzem.' },
+        { id: '1l77ua', q: 'Który ekosystem jest sztuczny?', options: ['pole uprawne', 'jezioro', 'Puszcza Białowieska', 'torfowisko'], answer: 0, explain: 'Pole założył człowiek i co roku je uprawia – to ekosystem sztuczny.' },
+        { id: 'dycljp', q: 'Który ekosystem jest naturalny?', options: ['jezioro', 'sad', 'park miejski', 'ogród'], answer: 0, explain: 'Jezioro powstało bez udziału człowieka. Sad, park i ogród stworzyli ludzie.' },
+        { id: 'fa66x9', q: 'Gatunek inwazyjny to…', options: ['gatunek obcy, który szybko się rozprzestrzenia i szkodzi gatunkom rodzimym', 'każdy gatunek chroniony', 'gatunek, który żyje u nas od zawsze', 'gatunek, który wyginął'], answer: 0, explain: 'Gatunek inwazyjny przywiózł człowiek z innej części świata. Rozprzestrzenia się i szkodzi gatunkom rodzimym.' },
+        { id: 'f3a4ox', q: 'Który z tych gatunków jest w Polsce gatunkiem inwazyjnym?', options: ['szop pracz', 'żubr', 'sarna', 'jeż'], answer: 0, explain: 'Szop pracz pochodzi z Ameryki Północnej. Może niszczyć gniazda ptaków wodnych i zagraża żółwiowi błotnemu.' },
+        { id: 'uohtpa', q: 'Skąd pochodzi barszcz Sosnowskiego?', options: ['z Kaukazu', 'z Tatr', 'z Puszczy Białowieskiej', 'z Australii'], answer: 0, explain: 'Barszcz Sosnowskiego to roślina z Kaukazu. W Polsce jest gatunkiem inwazyjnym.' },
+        { id: '43qm01', q: 'Masz w domu żółwia, który już ci się znudził. Co zrobisz?', options: ['poszukam mu nowego opiekuna, np. przez sklep zoologiczny lub schronisko – nie wypuszczę go na wolność', 'wypuszczę go do stawu', 'zaniosę go do lasu', 'wypuszczę go nad rzeką'], answer: 0, explain: 'Zwierzę wypuszczone na wolność może zginąć albo zaszkodzić rodzimym gatunkom.' },
+        { id: '7lspk1', q: 'Czym różni się łąka od pola uprawnego?', options: ['na łące rośnie wiele różnych gatunków roślin i łąki się nie orze', 'na łące rosną drzewa', 'na łące uprawia się jeden gatunek zboża', 'łąkę orze się co roku'], answer: 0, explain: 'Na łące przez lata rosną te same, bardzo różne rośliny. Na polu zwykle uprawia się jeden gatunek, a pole orze się co roku.' },
+        { id: 'zpn8vc', q: 'Która roślina jest typowa dla łąki?', options: ['koniczyna', 'paproć', 'świerk', 'wrzos'], answer: 0, explain: 'Na łące rosną trawy, koniczyna, mniszek, jaskier, szczaw. Paproć i wrzos to rośliny runa leśnego, świerk – drzewo.' },
+        { id: 'xzi07p', q: 'Które zwierzę często spotkasz na łące?', options: ['pasikonika', 'wiewiórkę', 'dzięcioła', 'kunę'], answer: 0, explain: 'Pasikoniki i świerszcze to typowe owady łąk. Wiewiórka, dzięcioł i kuna żyją w lesie.' },
+        { id: '2f8ce8', q: 'Dlaczego kwiaty traw nie mają kolorowych płatków?', options: ['bo ich pyłek przenosi wiatr, więc nie muszą wabić owadów', 'bo rosną w cieniu drzew', 'bo kwitną tylko w nocy', 'bo owady nie lubią łąk'], answer: 0, explain: 'Barwny okwiat, zapach i nektar służą do wabienia owadów. Trawy zapyla wiatr, więc ich kwiaty są drobne i niepozorne.' },
+        { id: 'wowoz9', q: 'Prawda czy fałsz?\nWypalanie łąk jest w Polsce zabronione.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Zakazuje tego ustawa o ochronie przyrody (art. 124). W ogniu giną zwierzęta, a pożar łatwo wymyka się spod kontroli.' },
+        { id: 'cn25ur', q: 'Co sprawia, że łąka nie zarasta krzewami i lasem?', options: ['koszenie i wypas zwierząt', 'orka co roku', 'wypalanie traw', 'sadzenie drzew'], answer: 0, explain: 'Łąki są koszone na siano albo wypasa się na nich zwierzęta – dlatego nie zarastają.' },
+        { id: '32d2we', q: 'Jaka jest kolejność warstw lasu od góry?', options: ['korony drzew, podszyt, runo leśne, ściółka', 'podszyt, korony drzew, ściółka, runo leśne', 'runo leśne, podszyt, korony drzew, ściółka', 'ściółka, runo leśne, podszyt, korony drzew'], answer: 0, explain: 'Najwyżej są korony drzew, niżej podszyt (krzewy i młode drzewa), przy ziemi runo leśne, a na samej ziemi – ściółka.' },
+        { id: 'cdcyt5', q: 'W której warstwie lasu rosną mchy, paprocie i borówki?', options: ['w runie leśnym', 'w koronach drzew', 'w podszycie', 'w ściółce'], answer: 0, explain: 'Runo leśne to najniższa warstwa roślin: mchy, paprocie, krzewinki (borówka czarna, wrzos), a także grzyby.' },
+        { id: 'poa1q9', q: 'Z czego składa się ściółka?', options: ['z opadłych liści, igieł i gałązek', 'z młodych drzew i krzewów', 'z mchów i paproci', 'z koron drzew'], answer: 0, explain: 'Ściółka to opadłe liście, igły i gałązki. Rozkładają je dżdżownice, grzyby i bakterie – powstaje próchnica.' },
+        { id: '3r5ass', q: 'W lesie rosną sosny i świerki, a nie ma drzew liściastych. To las…', options: ['iglasty (bór)', 'liściasty', 'mieszany'], answer: 0, explain: 'Las z drzewami iglastymi (sosna, świerk, jodła, modrzew) to las iglasty, czyli bór.' },
+        { id: '7ioi8h', q: 'Który przykład to funkcja społeczna lasu?', options: ['spacer i wypoczynek w lesie', 'pozyskiwanie drewna', 'zatrzymywanie wody w mchach', 'pochłanianie dwutlenku węgla'], answer: 0, explain: 'Funkcje społeczne to wypoczynek, zdrowie i praca. Drewno to funkcja gospodarcza, a zatrzymywanie wody i pochłanianie dwutlenku węgla – ochronna.' },
+      ],
+    },
   ],
 });
