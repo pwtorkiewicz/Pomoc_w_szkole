@@ -224,6 +224,7 @@ small.muted, .muted { color: var(--muted); font-size: .85rem; }
 .task .steps { margin: 12px 0; padding-left: 1.4em; }
 .task .steps li { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px; margin: 6px 0; }
 .task .scoring { background: var(--surface); border: 1px dashed var(--border); border-radius: 12px; padding: 10px 14px; margin: 12px 0; }
+.task .answer { white-space: pre-line; }
 .task .scoring ul { margin: 6px 0; padding-left: 1.2em; }
 /* Ćwiczenia jak na egzaminie (czytanie, reading, listening, środki językowe) */
 .passage { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 20px 14px; margin-bottom: 6px; font-size: 1rem; line-height: 1.6; overflow-x: auto; }

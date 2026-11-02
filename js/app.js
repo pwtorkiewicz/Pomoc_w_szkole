@@ -464,9 +464,9 @@
       function reveal() {
         pane.querySelector('#ctl').remove();
         pane.querySelector('#after').innerHTML = `
-          <div class="feedback ok"><strong>${opts.math ? 'Odpowiedź' : 'Przykładowa odpowiedź'}:</strong> ${esc(x.answer)}</div>
+          <div class="feedback ok"><strong>${opts.math ? 'Odpowiedź' : 'Przykładowa odpowiedź'}:</strong>${x.answer.includes('\n') ? '<br>' : ' '}<span class="answer">${esc(x.answer)}</span></div>
           <div class="scoring"><b>Jak ocenić rozwiązanie</b><ul>${x.scoring.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
-            <p class="muted">${opts.math ? (TRACK.exam ? 'Punktacja orientacyjna, w stylu zasad oceniania CKE: liczy się poprawny tok rozumowania, nie tylko wynik.' : 'Punktacja orientacyjna: liczy się poprawny sposób rozwiązania, nie tylko wynik.') : 'Punktacja orientacyjna, w stylu zasad oceniania CKE. Twoja odpowiedź może brzmieć inaczej – liczy się, czy zawiera te same elementy.'}</p></div>
+            <p class="muted">${opts.math ? (TRACK.exam ? 'Punktacja orientacyjna, w stylu zasad oceniania CKE: liczy się poprawny tok rozumowania, nie tylko wynik.' : 'Punktacja orientacyjna: liczy się poprawny sposób rozwiązania, nie tylko wynik.') : (TRACK.exam ? 'Punktacja orientacyjna, w stylu zasad oceniania CKE. Twoja odpowiedź może brzmieć inaczej – liczy się, czy zawiera te same elementy.' : 'Punktacja orientacyjna. Twoja odpowiedź może brzmieć inaczej – liczy się, czy zawiera te same elementy.')}</p></div>
           <p><b>Ile punktów przyznajesz sobie?</b></p>
           <div class="row" id="self">${Array.from({ length: x.points + 1 }, (_, n) => `<button class="btn" data-n="${n}">${n}</button>`).join('')}</div>`;
         pane.querySelectorAll('#self .btn').forEach((b) => (b.onclick = () => {

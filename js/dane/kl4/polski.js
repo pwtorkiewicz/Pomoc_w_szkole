@@ -98,6 +98,55 @@ window.SUBJECTS.push({
         { id: 'e4h0qx', q: 'Które zdanie zapisano poprawnie?', options: ['W maju pojedziemy do Gdańska.', 'W Maju pojedziemy do Gdańska.', 'W maju pojedziemy do gdańska.', 'w maju pojedziemy do Gdańska.'], answer: 0, explain: 'Zdanie zaczynamy wielką literą, nazwę miasta – też. Nazwy miesięcy piszemy małą literą.' },
         { id: 'czh7k8', q: 'Który zapis jest poprawny?', options: ['Nie wiem, ale to niemiłe.', 'Niewiem, ale to nie miłe.', 'Nie wiem, ale to nie miłe.', 'Niewiem, ale to niemiłe.'], answer: 0, explain: '„Nie” z czasownikiem piszemy osobno (nie wiem), a z przymiotnikiem w stopniu równym łącznie (niemiłe).' },
       ],
+      tasks: [
+        {
+          id: 'bw5lmn',
+          points: 3,
+          q: 'Uzasadnij pisownię wyrazów: wózek, morze, odważny. Przy każdym podaj wyraz, który pomaga sprawdzić pisownię.',
+          steps: [
+            'Odmień wyraz albo znajdź wyraz pokrewny – posłuchaj, na jaką głoskę wymienia się trudna litera.',
+            'ó piszemy, gdy wymienia się na o, e lub a.',
+            'rz piszemy, gdy wymienia się na r; ż – gdy wymienia się na g, h, z, s lub dz.',
+          ],
+          answer: 'wózek – wozy (ó wymienia się na o); morze – morski (rz wymienia się na r); odważny – odwaga (ż wymienia się na g).',
+          scoring: [
+            '1 pkt – „wózek”: wyraz sprawdzający z o (np. wozy, wozić).',
+            '1 pkt – „morze”: wyraz sprawdzający z r (np. morski).',
+            '1 pkt – „odważny”: wyraz sprawdzający z g (np. odwaga).',
+          ],
+        },
+        {
+          id: '1samb8',
+          points: 2,
+          q: 'Ile liter i ile głosek ma wyraz „chata”? Wyjaśnij, skąd bierze się różnica.',
+          steps: [
+            'Policz litery: c, h, a, t, a.',
+            'Teraz powiedz wyraz powoli i policz dźwięki. Pamiętaj, że niektóre głoski zapisujemy dwiema literami.',
+          ],
+          answer: '„Chata” ma 5 liter i 4 głoski (ch – a – t – a). Różnica bierze się stąd, że dwie litery „ch” oznaczają jedną głoskę.',
+          scoring: [
+            '1 pkt – poprawne liczby: 5 liter, 4 głoski.',
+            '1 pkt – wyjaśnienie: „ch” to dwie litery, ale jedna głoska.',
+          ],
+        },
+        {
+          id: 'gtpchl',
+          points: 4,
+          q: 'Przepisz tekst i popraw w nim 4 błędy:\nw sierpniu byliśmy w zakopanem. Niewiem, czy tam wrócimy, bo pogoda była nie przyjemna.',
+          steps: [
+            'Sprawdź początek zdania – jaką literą zaczynamy zdanie?',
+            'Nazwy miast piszemy wielką literą. Nazwy miesięcy – małą.',
+            '„Nie” z czasownikiem piszemy osobno, a z przymiotnikiem w stopniu równym – łącznie.',
+          ],
+          answer: 'W sierpniu byliśmy w Zakopanem. Nie wiem, czy tam wrócimy, bo pogoda była nieprzyjemna.',
+          scoring: [
+            '1 pkt – „W” wielką literą na początku zdania.',
+            '1 pkt – „Zakopanem” wielką literą (nazwa miasta).',
+            '1 pkt – „nie wiem” osobno (nie z czasownikiem).',
+            '1 pkt – „nieprzyjemna” łącznie (nie z przymiotnikiem).',
+          ],
+        },
+      ],
     },
     {
       id: 'teksty-kultury',
@@ -184,6 +233,53 @@ window.SUBJECTS.push({
         { id: 'qu3b4t', q: 'Jaki środek zastosowano: „Na łące rosną maki, chabry, rumianki i stokrotki.”?', options: ['wyliczenie', 'porównanie', 'rym', 'wyraz dźwiękonaśladowczy'], answer: 0, explain: 'Wymieniono po kolei kilka kwiatów – to wyliczenie.' },
         { id: 'w5m98q', q: 'Które wyrazy się rymują?', options: ['kotek – płotek', 'kotek – piesek', 'płotek – brama', 'dom – ogród'], answer: 0, explain: 'Końcówki „-otek” brzmią tak samo – to rym.' },
         { id: 'sk8ch5', q: 'Jaki środek zastosowano: „Jesień rozłożyła na trawnikach dywan z liści.”?', options: ['przenośnię', 'porównanie', 'wyliczenie', 'wyraz dźwiękonaśladowczy'], answer: 0, explain: 'Nie ma tu prawdziwego dywanu – liście tylko przypominają dywan. To przenośnia (metafora). Brak słowa „jak”, więc to nie porównanie.' },
+      ],
+      tasks: [
+        {
+          id: '1boh9c',
+          points: 3,
+          q: 'Napisz trzy zdania o jesieni. W pierwszym użyj epitetu, w drugim porównania, a w trzecim wyrazu dźwiękonaśladowczego. Wypisz te środki.',
+          steps: [
+            'Epitet to wyraz, który określa rzeczownik, np. „ciemna noc”.',
+            'Porównanie zestawia dwie rzeczy za pomocą słowa „jak”, „jakby”, „niczym”.',
+            'Wyraz dźwiękonaśladowczy naśladuje dźwięk, np. „bum”, „kap”, „szur”.',
+          ],
+          answer: 'Złote liście spadają z drzew. Wiatr pędzi ulicą jak szalony. Krople deszczu stukają w szybę: kap, kap, kap. Epitet: „złote liście”, porównanie: „jak szalony”, wyraz dźwiękonaśladowczy: „kap”.',
+          scoring: [
+            '1 pkt – zdanie z epitetem i wskazany epitet.',
+            '1 pkt – zdanie z porównaniem (ze słowem „jak”, „jakby” lub „niczym”) i wskazane porównanie.',
+            '1 pkt – zdanie z wyrazem dźwiękonaśladowczym i wskazany ten wyraz.',
+          ],
+        },
+        {
+          id: '8r3wrx',
+          points: 3,
+          q: 'Podaj dwie cechy baśni i jedną cechę legendy.',
+          steps: [
+            'Pomyśl o znanej baśni: kto w niej występuje? Kto wygrywa? Kiedy i gdzie dzieje się akcja?',
+            'Pomyśl o znanej legendzie: o czym często opowiada? Czy wszystko w niej jest zmyślone?',
+          ],
+          answer: 'Baśń: występują w niej czary i istoty fantastyczne; dobro zwycięża zło; czas i miejsce są nieokreślone („dawno, dawno temu…”). Legenda: łączy prawdę i fikcję – często wyjaśnia, skąd wzięła się nazwa miejsca.',
+          scoring: [
+            '1 pkt – pierwsza poprawna cecha baśni.',
+            '1 pkt – druga poprawna cecha baśni.',
+            '1 pkt – poprawna cecha legendy.',
+          ],
+        },
+        {
+          id: '3pr9ke',
+          points: 2,
+          q: 'Wyjaśnij, czym różni się autor od narratora. Podaj przykład z „Akademii pana Kleksa”.',
+          steps: [
+            'Autor to prawdziwy człowiek. Kim jest narrator?',
+            'Kto opowiada historię w „Akademii pana Kleksa”? Mówi „ja” i bierze udział w wydarzeniach.',
+          ],
+          answer: 'Autor to prawdziwa osoba, która napisała utwór – „Akademię pana Kleksa” napisał Jan Brzechwa. Narrator to ten, kto opowiada o wydarzeniach w utworze – tutaj Adaś Niezgódka, uczeń Akademii.',
+          scoring: [
+            '1 pkt – poprawne wyjaśnienie różnicy (autor napisał utwór, narrator opowiada w utworze).',
+            '1 pkt – przykład: autor – Jan Brzechwa, narrator – Adaś Niezgódka.',
+          ],
+        },
       ],
     },
     {
@@ -280,6 +376,55 @@ window.SUBJECTS.push({
         { id: 'c85mk1', q: 'Jaka jest osoba i liczba czasownika „czytamy”?', options: ['1. osoba, liczba mnoga', '1. osoba, liczba pojedyncza', '2. osoba, liczba mnoga', '3. osoba, liczba mnoga'], answer: 0, explain: '„My czytamy” – zaimek „my” to 1. osoba liczby mnogiej.' },
         { id: '2sfnp3', q: 'Jaki jest stopień najwyższy przymiotnika „dobry”?', options: ['najlepszy', 'najdobrzejszy', 'lepszy', 'bardziej dobry'], answer: 0, explain: '„Dobry” stopniuje się nieregularnie: dobry – lepszy – najlepszy.' },
       ],
+      tasks: [
+        {
+          id: 'wcq1f8',
+          points: 4,
+          q: 'Ze zdania „Mała Zosia szybko zjadła trzy pyszne lody.” wypisz: rzeczowniki, czasownik, przymiotniki i przysłówek.',
+          steps: [
+            'Zadawaj pytania: kto? co? – rzeczownik; co robi? – czasownik.',
+            'jaki? jaka? jakie? – przymiotnik; jak? – przysłówek.',
+            'Uwaga: „trzy” odpowiada na pytanie „ile?” – to liczebnik, nie wypisuj go.',
+          ],
+          answer: 'Rzeczowniki: Zosia, lody. Czasownik: zjadła. Przymiotniki: mała, pyszne. Przysłówek: szybko.',
+          scoring: [
+            '1 pkt – rzeczowniki: Zosia, lody.',
+            '1 pkt – czasownik: zjadła.',
+            '1 pkt – przymiotniki: mała, pyszne.',
+            '1 pkt – przysłówek: szybko.',
+          ],
+        },
+        {
+          id: 'jyooji',
+          points: 2,
+          q: 'Odmień czasownik „pisać” w czasie teraźniejszym przez osoby w liczbie pojedynczej i mnogiej.',
+          steps: [
+            'Liczba pojedyncza: ja, ty, on (ona, ono).',
+            'Liczba mnoga: my, wy, oni (one).',
+          ],
+          answer: 'Liczba pojedyncza: (ja) piszę, (ty) piszesz, (on, ona, ono) pisze. Liczba mnoga: (my) piszemy, (wy) piszecie, (oni, one) piszą.',
+          scoring: [
+            '1 pkt – poprawne formy liczby pojedynczej: piszę, piszesz, pisze.',
+            '1 pkt – poprawne formy liczby mnogiej: piszemy, piszecie, piszą.',
+          ],
+        },
+        {
+          id: 'p6fl5x',
+          points: 3,
+          q: 'Stopniuj wyrazy: wysoki, mały, cicho.',
+          steps: [
+            'Podaj trzy stopnie: równy, wyższy i najwyższy.',
+            'Uwaga: niektóre wyrazy stopniują się nieregularnie – zmienia się cały wyraz albo jego środek.',
+            '„Cicho” to przysłówek – jego stopnie też kończą się inaczej niż przymiotnika.',
+          ],
+          answer: 'wysoki – wyższy – najwyższy; mały – mniejszy – najmniejszy; cicho – ciszej – najciszej.',
+          scoring: [
+            '1 pkt – wysoki – wyższy – najwyższy.',
+            '1 pkt – mały – mniejszy – najmniejszy.',
+            '1 pkt – cicho – ciszej – najciszej.',
+          ],
+        },
+      ],
     },
     {
       id: 'formy-wypowiedzi',
@@ -362,6 +507,79 @@ window.SUBJECTS.push({
         { id: 'fr7rek', q: 'Które zdanie to opinia z uzasadnieniem?', options: ['Moim zdaniem ta książka jest ciekawa, bo ma zaskakujące zakończenie.', 'Ta książka ma 120 stron.', 'Książka jest ciekawa.', 'Przeczytałem tę książkę w tydzień.'], answer: 0, explain: 'Jest tu opinia („moim zdaniem… ciekawa”) i uzasadnienie („bo ma zaskakujące zakończenie”).' },
         { id: '8ddoax', q: 'Które słowo wprowadza uzasadnienie opinii?', options: ['ponieważ', 'najpierw', 'nagle', 'wczoraj'], answer: 0, explain: '„Ponieważ”, „bo”, „dlatego że” – po nich podajesz powód swojej opinii.' },
       ],
+      tasks: [
+        {
+          id: 'nkolyc',
+          points: 2,
+          q: 'Przeczytaj tekst i ułóż do niego plan wydarzeń w 3 punktach. Wszystkie punkty zapisz jako równoważniki zdań (bez czasowników).\nKuba zgubił klucz w drodze ze szkoły. Długo szukał go w parku i pytał przechodniów. W końcu klucz przyniósł mu pies sąsiadki.',
+          steps: [
+            'Znajdź trzy najważniejsze wydarzenia i ułóż je w tej samej kolejności co w tekście.',
+            'Równoważnik nie ma czasownika: zamiast „Kuba gubi klucz” napisz „Zgubienie klucza”.',
+          ],
+          answer: '1. Zgubienie klucza w drodze ze szkoły.\n2. Poszukiwania w parku.\n3. Odnalezienie klucza przez psa sąsiadki.',
+          scoring: [
+            '1 pkt – trzy punkty z najważniejszymi wydarzeniami, w kolejności z tekstu.',
+            '1 pkt – plan jednolity: wszystkie punkty są równoważnikami zdań.',
+          ],
+        },
+        {
+          id: '9rmre0',
+          points: 4,
+          q: 'Opisz swój ulubiony przedmiot (np. plecak, kubek, maskotkę). Napisz 5–7 zdań.',
+          steps: [
+            'Zacznij od nazwy przedmiotu i ogólnego wyglądu: kształt, wielkość, kolor.',
+            'Potem opisz szczegóły: części, materiał, zdobienia. Użyj przymiotników.',
+            'Napisz, do czego przedmiot służy.',
+            'Zakończ opinią: co o nim myślisz i dlaczego jest dla ciebie ważny.',
+          ],
+          answer: 'Moim ulubionym przedmiotem jest plecak. Jest średniej wielkości, prostokątny i granatowy. Ma dwie duże komory zapinane na srebrne zamki i małą kieszeń z przodu. Z boku są siatkowe kieszonki na butelkę z wodą. Szelki są miękkie i wygodne, a na klapie jest naszywka z rakietą. Noszę w nim książki i zeszyty do szkoły. Bardzo go lubię, bo dostałem go od dziadka i towarzyszy mi każdego dnia.',
+          scoring: [
+            '1 pkt – nazwa przedmiotu i ogólny wygląd (kształt, wielkość lub kolor).',
+            '1 pkt – co najmniej dwa szczegóły opisane przymiotnikami.',
+            '1 pkt – do czego przedmiot służy.',
+            '1 pkt – opinia z uzasadnieniem („bo…”, „ponieważ…”).',
+          ],
+        },
+        {
+          id: '7ut4g4',
+          points: 5,
+          q: 'Napisz list do babci albo dziadka. Opowiedz w nim o ciekawym wydarzeniu w szkole.',
+          steps: [
+            'W prawym górnym rogu napisz miejscowość i datę.',
+            'Zacznij od zwrotu do adresata, np. „Droga Babciu,”.',
+            'Treść: wstęp (np. podziękowanie, pytanie o zdrowie), rozwinięcie (wydarzenie), zakończenie.',
+            'Zwroty do adresata pisz wielką literą: Ty, Ciebie, Ci, Twój.',
+            'Na końcu pozdrowienia i podpis.',
+          ],
+          answer: 'Gdańsk, 12 listopada 2026 r.\nDroga Babciu,\nbardzo dziękuję Ci za paczkę z jabłkami. Mam nadzieję, że jesteś zdrowa.\nW piątek byliśmy z klasą w teatrze lalek. Aktorzy poruszali marionetkami na nitkach, a ja siedziałem w pierwszym rzędzie. Po spektaklu mogliśmy zajrzeć za kulisy!\nNapisz mi, proszę, co słychać u Ciebie. Już nie mogę się doczekać ferii u Ciebie.\nŚciskam Cię mocno\nJaś',
+          scoring: [
+            '1 pkt – miejscowość i data w prawym górnym rogu.',
+            '1 pkt – zwrot do adresata na początku.',
+            '1 pkt – treść na temat: wstęp, opis wydarzenia, zakończenie.',
+            '1 pkt – zwroty do adresata wielką literą (Ty, Ciebie, Ci).',
+            '1 pkt – pozdrowienia i podpis.',
+          ],
+        },
+        {
+          id: '3izv21',
+          points: 5,
+          q: 'Napisz opowiadanie pod tytułem „Niespodziewany gość”. Napisz 8–12 zdań.',
+          steps: [
+            'Wstęp: kto? gdzie? kiedy? Przedstaw bohaterów, miejsce i czas.',
+            'Rozwinięcie: wydarzenia po kolei, także to najciekawsze – pojawienie się gościa.',
+            'Zakończenie: jak się skończyło, co czuli bohaterowie.',
+            'Każdą część zacznij od nowej linii (akapit). Użyj słów: najpierw, potem, nagle, w końcu.',
+          ],
+          answer: 'W sobotnie popołudnie siedziałem z siostrą Zosią w ogrodzie babci. Czytaliśmy książki pod starą jabłonią.\nNagle w krzakach coś zaszeleściło. Najpierw pomyśleliśmy, że to wiatr. Potem zobaczyliśmy dwa błyszczące oczka i kolczasty grzbiet. To był jeż! Zosia pobiegła po miseczkę z wodą, a ja zawołałem babcię. Jeż powoli podszedł do miski i zaczął pić.\nW końcu nasz gość schował się pod stosem liści. Babcia powiedziała, że pewnie szuka miejsca na zimę. Od tej pory codziennie sprawdzamy, czy jeż jest bezpieczny.',
+          scoring: [
+            '1 pkt – wstęp: bohaterowie, miejsce i czas.',
+            '1 pkt – rozwinięcie: wydarzenia po kolei, zgodne z tytułem (pojawia się gość).',
+            '1 pkt – zakończenie: jak skończyła się historia.',
+            '1 pkt – trzy części oddzielone akapitami.',
+            '1 pkt – słowa porządkujące kolejność wydarzeń (np. najpierw, potem, nagle, w końcu).',
+          ],
+        },
+      ],
     },
     {
       id: 'slownictwo',
@@ -436,6 +654,52 @@ window.SUBJECTS.push({
         { id: 'txhh2i', q: 'Gdzie sprawdzisz, jak poprawnie zapisać wyraz?', options: ['w słowniku ortograficznym', 'w słowniku frazeologicznym', 'w atlasie', 'w słowniku wyrazów bliskoznacznych'], answer: 0, explain: 'Słownik ortograficzny pokazuje poprawną pisownię wyrazów.' },
         { id: '3cs9rj', q: 'Szukasz innego słowa zamiast „ładny”, żeby się nie powtarzać. Którego słownika użyjesz?', options: ['wyrazów bliskoznacznych', 'ortograficznego', 'frazeologicznego', 'żadnego – to niemożliwe'], answer: 0, explain: 'Słownik wyrazów bliskoznacznych (synonimów) podpowie np. „śliczny”, „piękny”.' },
         { id: 'no0ogf', q: 'Prawda czy fałsz?\n„Spać jak suseł” znaczy „spać mocno, twardo”.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'To związek frazeologiczny o kimś, kto śpi bardzo mocno.' },
+      ],
+      tasks: [
+        {
+          id: 'az4zzg',
+          points: 3,
+          q: 'Do każdego wyrazu dopisz synonim i antonim: wesoły, szybki, duży.',
+          steps: [
+            'Synonim znaczy to samo lub prawie to samo.',
+            'Antonim znaczy coś przeciwnego.',
+          ],
+          answer: 'wesoły – synonim: radosny, antonim: smutny; szybki – synonim: prędki, antonim: wolny; duży – synonim: wielki, antonim: mały.',
+          scoring: [
+            '1 pkt – „wesoły”: poprawny synonim i antonim.',
+            '1 pkt – „szybki”: poprawny synonim i antonim.',
+            '1 pkt – „duży”: poprawny synonim i antonim.',
+          ],
+        },
+        {
+          id: 'qowufe',
+          points: 3,
+          q: 'Wyjaśnij znaczenie związków frazeologicznych i z każdym ułóż zdanie: trzymać język za zębami, bujać w obłokach, spać jak suseł.',
+          steps: [
+            'Związek frazeologiczny ma znaczenie przenośne – nie tłumacz go słowo po słowie.',
+            'W zdaniu użyj związku w znaczeniu przenośnym.',
+          ],
+          answer: 'Trzymać język za zębami – nie zdradzić tajemnicy: Obiecałem, że będę trzymać język za zębami i nikomu nie powiem o prezencie dla mamy. Bujać w obłokach – marzyć, nie skupiać się: Na lekcji bujałam w obłokach i nie usłyszałam pytania. Spać jak suseł – spać mocno: Po wycieczce w góry spałem jak suseł.',
+          scoring: [
+            '1 pkt – „trzymać język za zębami”: znaczenie i poprawne zdanie.',
+            '1 pkt – „bujać w obłokach”: znaczenie i poprawne zdanie.',
+            '1 pkt – „spać jak suseł”: znaczenie i poprawne zdanie.',
+          ],
+        },
+        {
+          id: 'vnxhnr',
+          points: 2,
+          q: 'Utwórz zdrobnienie i zgrubienie od wyrazów „kot” i „dom”. Potem napisz zdanie z jednym zdrobnieniem albo zgrubieniem tak, żeby było widać, co czujesz.',
+          steps: [
+            'Zdrobnienie pokazuje, że coś jest małe albo miłe (np. piesek).',
+            'Zgrubienie pokazuje, że coś jest duże albo niemiłe (np. psisko).',
+          ],
+          answer: 'kot – kotek, kocisko; dom – domek, domisko. Zdanie: Mój kotek mruczy, kiedy go głaszczę. (albo: Ogromne kocisko sąsiadów znowu przewróciło nam doniczkę.)',
+          scoring: [
+            '1 pkt – poprawne zdrobnienia i zgrubienia obu wyrazów.',
+            '1 pkt – zdanie, w którym zdrobnienie wyraża sympatię albo zgrubienie – niechęć lub wielkość.',
+          ],
+        },
       ],
     },
     {
@@ -516,6 +780,54 @@ window.SUBJECTS.push({
         { id: 'e908h0', q: 'Które zachowanie to dobra higiena cyfrowa?', options: ['odkładam telefon na długo przed snem', 'gram do późnej nocy', 'jem obiad, patrząc w ekran', 'nie robię przerw od komputera'], answer: 0, explain: 'Ekran przed snem utrudnia zasypianie. Odłożony telefon to zdrowy nawyk.' },
         { id: '85i219', q: 'Prawda czy fałsz?\nCodzienne, wielogodzinne granie bez przerw może prowadzić do uzależnienia od gier.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Uzależnienie to sytuacja, gdy trudno przestać grać. Pomagają przerwy, ruch i spotkania z ludźmi.' },
       ],
+      tasks: [
+        {
+          id: '5n5lef',
+          points: 3,
+          q: 'Pani bibliotekarka powiedziała do Oli: „Proszę oddać książkę do piątku”. Wskaż nadawcę, odbiorcę, komunikat i intencję tej wypowiedzi.',
+          steps: [
+            'Nadawca mówi albo pisze, odbiorca słucha albo czyta.',
+            'Komunikat to to, co zostało przekazane.',
+            'Intencja to cel wypowiedzi: po co ktoś mówi?',
+          ],
+          answer: 'Nadawca – pani bibliotekarka; odbiorca – Ola; komunikat – „Proszę oddać książkę do piątku”; intencja – prośba (polecenie), żeby Ola oddała książkę na czas.',
+          scoring: [
+            '1 pkt – nadawca i odbiorca.',
+            '1 pkt – komunikat.',
+            '1 pkt – intencja: prośba lub polecenie.',
+          ],
+        },
+        {
+          id: 'nwjq54',
+          points: 2,
+          q: 'Napisz o swojej szkole dwa zdania: jedno, które jest faktem, i jedno, które jest opinią. Opinię uzasadnij.',
+          steps: [
+            'Fakt to informacja, którą można sprawdzić.',
+            'Opinia to twoje zdanie. Zacznij np. od „Moim zdaniem…” i dodaj „bo…”.',
+          ],
+          answer: 'Fakt: Moja szkoła ma dwa piętra i salę gimnastyczną. Opinia: Moim zdaniem nasza szkoła jest najlepsza w okolicy, bo ma wspaniałą bibliotekę.',
+          scoring: [
+            '1 pkt – zdanie, które jest faktem (da się je sprawdzić).',
+            '1 pkt – opinia z uzasadnieniem.',
+          ],
+        },
+        {
+          id: 'o0e4la',
+          points: 3,
+          q: 'Przeredaguj wypowiedź tak, żeby była grzeczna i oficjalna – skierowana do pani dyrektor:\n„Cześć! Pożyczysz mi klucz do sali gimnastycznej? Dzięki, pa!”',
+          steps: [
+            'Do dorosłych zwracamy się oficjalnie: „Dzień dobry”, „Pani”.',
+            'Prośbę wyraź grzecznie, np. „Czy mogłaby Pani…”, „proszę”.',
+            'Podziękuj i pożegnaj się oficjalnie.',
+          ],
+          answer: 'Dzień dobry! Czy mogłaby Pani pożyczyć mi klucz do sali gimnastycznej? Dziękuję bardzo. Do widzenia.',
+          scoring: [
+            '1 pkt – oficjalne powitanie (Dzień dobry).',
+            '1 pkt – grzeczna prośba z formą „Pani” (np. Czy mogłaby Pani…, Proszę…).',
+            '1 pkt – oficjalne podziękowanie i pożegnanie (Dziękuję bardzo, Do widzenia).',
+          ],
+        },
+      ],
     },
     {
       id: 'zdanie',
@@ -591,6 +903,56 @@ window.SUBJECTS.push({
         { id: 'gb2q8y', q: 'Jak zapiszesz tytuł wiersza w zdaniu?', options: ['w cudzysłowie: „Rota”', 'w nawiasie: (Rota)', 'po dwukropku: :Rota', 'z wykrzyknikiem: Rota!'], answer: 0, explain: 'Tytuły utworów w zdaniu zapisujemy w cudzysłowie.' },
         { id: 't1j3ru', q: 'Do czego służy nawias w zdaniu „Mój brat (ma 6 lat) chodzi do zerówki.”?', options: ['do dodatkowego wyjaśnienia', 'do zapisania tytułu', 'do zakończenia pytania', 'do wyliczenia'], answer: 0, explain: 'W nawiasie dopisujemy dodatkową informację – tutaj wiek brata.' },
       ],
+      tasks: [
+        {
+          id: '54gpam',
+          points: 3,
+          q: 'W zdaniu „Mały kotek cicho mruczy na kanapie.” wskaż podmiot, orzeczenie i dwa określenia.',
+          steps: [
+            'Najpierw znajdź orzeczenie – co robi?',
+            'Potem zapytaj: kto to robi? – to podmiot.',
+            'Określenia odpowiadają na pytania: jaki? jak? gdzie?',
+          ],
+          answer: 'Podmiot: kotek. Orzeczenie: mruczy. Określenia: mały (jaki kotek?), cicho (jak mruczy?); także „na kanapie” (gdzie mruczy?).',
+          scoring: [
+            '1 pkt – podmiot: kotek.',
+            '1 pkt – orzeczenie: mruczy.',
+            '1 pkt – dwa poprawne określenia (np. mały, cicho).',
+          ],
+        },
+        {
+          id: 'br2wh2',
+          points: 3,
+          q: 'Przepisz tekst i wstaw 3 brakujące przecinki:\nMamo czy wiesz że jutro jedziemy na wycieczkę? Zabierzemy kanapki wodę i czapki.',
+          steps: [
+            'Przecinek stawiamy przy zwrocie do kogoś.',
+            'Przecinek stawiamy przed: a, ale, lecz, że, bo, który.',
+            'Przy wyliczaniu oddzielamy wyrazy przecinkami, ale przed „i” przecinka nie ma.',
+          ],
+          answer: 'Mamo, czy wiesz, że jutro jedziemy na wycieczkę? Zabierzemy kanapki, wodę i czapki.',
+          scoring: [
+            '1 pkt – przecinek po zwrocie „Mamo”.',
+            '1 pkt – przecinek przed „że”.',
+            '1 pkt – przecinek po „kanapki” (i brak przecinka przed „i”).',
+          ],
+        },
+        {
+          id: '3g9rpz',
+          points: 3,
+          q: 'Napisz o swoich urodzinach trzy wypowiedzenia: oznajmujące, pytające i wykrzyknikowe. Pamiętaj o znakach na końcu.',
+          steps: [
+            'Oznajmujące informuje i kończy się kropką.',
+            'Pytające o coś pyta i kończy się znakiem zapytania.',
+            'Wykrzyknikowe wyraża silne uczucia i kończy się wykrzyknikiem.',
+          ],
+          answer: 'Jutro mam urodziny. Czy przyjdziesz na moje przyjęcie? Hurra, dostałem wymarzony rower!',
+          scoring: [
+            '1 pkt – wypowiedzenie oznajmujące zakończone kropką.',
+            '1 pkt – wypowiedzenie pytające zakończone znakiem zapytania.',
+            '1 pkt – wypowiedzenie wykrzyknikowe zakończone wykrzyknikiem.',
+          ],
+        },
+      ],
     },
     {
       id: 'dialog-wywiad',
@@ -659,6 +1021,55 @@ window.SUBJECTS.push({
         { id: '1pgp7s', q: 'Co NIE wpływa na nastrój utworu?', options: ['numer strony, na której wydrukowano utwór', 'opis pogody i pory dnia', 'dobór słów, np. epitetów', 'dźwięki i kolory w opisie'], answer: 0, explain: 'Nastrój tworzą słowa, opisy, dźwięki, kolory i wydarzenia – a nie numer strony.' },
         { id: 'yeejo5', q: 'Czytasz na głos smutny wiersz. Jak go przeczytasz?', options: ['wolno i cicho, z pauzami', 'bardzo szybko i głośno', 'wesoło, podśpiewując', 'jednym tchem, bez przerw'], answer: 0, explain: 'Smutny nastrój pokażesz głosem: wolniej, ciszej, z pauzami.' },
         { id: 'lmht3u', q: 'Prawda czy fałsz?\nW wywiadzie pytania zadaje dziennikarz, a odpowiada rozmówca.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Tak – dziennikarz pyta, rozmówca odpowiada. Pytania warto przygotować wcześniej.' },
+      ],
+      tasks: [
+        {
+          id: 'dnbpur',
+          points: 3,
+          q: 'Zapisz tę rozmowę jako dialog – tak jak w opowiadaniu:\nOla zapytała: „Gdzie jest mój plecak?”. Kuba odpowiedział: „Pod ławką”. Ola zawołała: „Dziękuję!”.',
+          steps: [
+            'Każdą wypowiedź zacznij od nowej linijki i od myślnika (–).',
+            'Słowa narratora (zapytała, odpowiedział, zawołała) oddziel myślnikiem i zacznij małą literą.',
+            'Przed dopiskiem narratora nie stawiaj kropki, ale znak zapytania i wykrzyknik zostają.',
+          ],
+          answer: '– Gdzie jest mój plecak? – zapytała Ola.\n– Pod ławką – odpowiedział Kuba.\n– Dziękuję! – zawołała Ola.',
+          scoring: [
+            '1 pkt – każda wypowiedź w nowej linijce, zaczęta myślnikiem.',
+            '1 pkt – dopiski narratora oddzielone myślnikiem i zaczęte małą literą.',
+            '1 pkt – poprawne znaki: ? i ! zostają, przed „– odpowiedział” nie ma kropki.',
+          ],
+        },
+        {
+          id: 'oimn2x',
+          points: 4,
+          q: 'Przygotuj cztery pytania do wywiadu z panią bibliotekarką z twojej szkoły.',
+          steps: [
+            'Pomyśl, czego chcesz się dowiedzieć: o pracy, o ulubionych książkach, o bibliotece.',
+            'Zadawaj pytania otwarte – takie, na które nie da się odpowiedzieć tylko „tak” albo „nie”.',
+            'Zwracaj się grzecznie: „Pani”.',
+          ],
+          answer: '1. Od jak dawna pracuje Pani w naszej bibliotece?\n2. Co lubi Pani najbardziej w swojej pracy?\n3. Jaką książkę poleciłaby Pani czwartoklasistom i dlaczego?\n4. Jak wygląda zwykły dzień w bibliotece?',
+          scoring: [
+            '1 pkt – cztery pytania na temat (o pracy lub zainteresowaniach rozmówczyni).',
+            '1 pkt – wszystkie pytania są otwarte.',
+            '1 pkt – grzeczna forma zwracania się (Pani).',
+            '1 pkt – każde pytanie zapisane poprawnie i zakończone znakiem zapytania.',
+          ],
+        },
+        {
+          id: 'uxwd1o',
+          points: 2,
+          q: 'Napisz 2–3 zdania o starym, pustym domu tak, żeby miały nastrój tajemniczy. Wypisz dwa wyrazy lub wyrażenia, które budują ten nastrój.',
+          steps: [
+            'Nastrój tworzą: pora dnia i pogoda, dźwięki, kolory i dobór słów (np. epitety).',
+            'Pomyśl, co może niepokoić: ciemność, skrzypienie, cisza.',
+          ],
+          answer: 'Księżyc schował się za chmurami. W ciemnym korytarzu coś cicho skrzypnęło, a stare drzwi same się uchyliły. Nastrój budują: „ciemnym korytarzu”, „coś cicho skrzypnęło”, „drzwi same się uchyliły”.',
+          scoring: [
+            '1 pkt – zdania o tajemniczym nastroju (np. opis ciemności, dźwięków, czegoś niewyjaśnionego).',
+            '1 pkt – dwa wskazane wyrazy lub wyrażenia, które naprawdę budują nastrój.',
+          ],
+        },
       ],
     },
     {
@@ -739,6 +1150,40 @@ window.SUBJECTS.push({
         { id: 'w0tta4', q: 'Jak zachowasz się w teatrze podczas spektaklu?', options: ['wyłączę telefon i będę oglądać w ciszy', 'będę jeść chipsy', 'będę głośno komentować grę aktorów', 'wejdę na scenę, żeby obejrzeć dekoracje'], answer: 0, explain: 'W teatrze aktorzy grają na żywo – hałas i światło telefonu przeszkadzają im i innym widzom.' },
         { id: '4te6pp', q: 'Czym teatr różni się od filmu?', options: ['aktorzy grają na żywo, przed widzami', 'w teatrze nie ma aktorów', 'w teatrze nie ma dekoracji', 'teatr ogląda się tylko w telefonie'], answer: 0, explain: 'W teatrze aktorzy i widzowie są w tym samym miejscu i czasie. Film nagrywa się wcześniej.' },
         { id: 'tulwi2', q: 'Prawda czy fałsz?\nKulisy to przestrzeń za sceną i po jej bokach, której widzowie nie widzą.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Za kulisami aktorzy czekają na wejście, a tam stoją też dekoracje i rekwizyty.' },
+      ],
+      tasks: [
+        {
+          id: 'prp10p',
+          points: 3,
+          q: 'Napisz krótką scenę do wystawienia w teatrze: dwie postacie, co najmniej cztery kwestie. Dodaj tekst poboczny.',
+          steps: [
+            'Przed każdą kwestią napisz imię postaci.',
+            'Tekst poboczny (w nawiasie) mówi, gdzie dzieje się akcja, co robią postacie i jak mówią.',
+            'W sztuce nie ma narratora – wszystko wynika z kwestii i tekstu pobocznego.',
+          ],
+          answer: '(Pokój Zosi. Wieczór. Na biurku leży otwarty plecak.)\nZOSIA (szuka czegoś pod łóżkiem): Gdzie jest mój zeszyt?\nMAMA (wchodzi z zeszytem w ręce): Czy tego szukasz?\nZOSIA (radośnie): Tak! Dziękuję, mamo!\nMAMA (z uśmiechem): Następnym razem pakuj plecak wieczorem.',
+          scoring: [
+            '1 pkt – co najmniej cztery kwestie dwóch postaci, z imieniem przed każdą kwestią.',
+            '1 pkt – co najmniej dwie wskazówki w tekście pobocznym (gdzie, co robią lub jak mówią postacie).',
+            '1 pkt – brak narratora, scena przedstawia zrozumiałą sytuację.',
+          ],
+        },
+        {
+          id: 'lv4cna',
+          points: 3,
+          q: 'Wyjaśnij, czym w teatrze zajmują się: reżyser, scenograf i sufler.',
+          steps: [
+            'Kto kieruje całym przedstawieniem i prowadzi próby?',
+            'Kto projektuje wygląd sceny?',
+            'Kto pomaga aktorom, gdy zapomną tekstu?',
+          ],
+          answer: 'Reżyser kieruje całym przedstawieniem: decyduje, jak wystawić sztukę, i prowadzi próby z aktorami. Scenograf projektuje scenografię – wygląd sceny i dekoracje. Sufler podpowiada aktorom tekst, gdy go zapomną.',
+          scoring: [
+            '1 pkt – reżyser: kieruje przedstawieniem, prowadzi próby.',
+            '1 pkt – scenograf: projektuje wygląd sceny, dekoracje.',
+            '1 pkt – sufler: podpowiada aktorom tekst.',
+          ],
+        },
       ],
     },
     {
@@ -822,6 +1267,39 @@ window.SUBJECTS.push({
         { id: 'a0jklb', q: 'Co wyjawił Mateusz, gdy znów stał się człowiekiem?', options: ['że jest autorem bajki o Akademii', 'że jest synem pana Kleksa', 'że jest golibrodą', 'że jest królem wilków'], answer: 0, explain: 'Mateusz powiedział Adasiowi, że wymyślił tę bajkę. Akademia zniknęła, a bajka się skończyła.' },
         { id: '7o1n10', q: 'Prawda czy fałsz?\n„Akademia pana Kleksa” to utwór realistyczny – wszystko mogłoby zdarzyć się naprawdę.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Fałsz. To powieść fantastyczna: są w niej czary, mówiący szpak, senne lusterka i drzwi do baśni.' },
         { id: 'kxyo5m', q: 'Co pan Kleks trzymał w tabakierce?', options: ['zapasowe piegi', 'klucze do drzwi baśni', 'guzik Mateusza', 'senne lusterka'], answer: 0, explain: 'Pan Kleks miał kolorowe piegi, a zapasowe nosił w tabakierce. Piegi dostarczał mu golibroda Filip.' },
+      ],
+      tasks: [
+        {
+          id: 'mnb1q5',
+          points: 3,
+          q: 'Opisz pana Kleksa: podaj dwa szczegóły jego wyglądu i dwie niezwykłe umiejętności.',
+          steps: [
+            'Przypomnij sobie jego włosy, brodę i strój.',
+            'Co potrafił pan Kleks, czego nie umie zwykły nauczyciel? Pomyśl o jedzeniu i o lataniu.',
+            'Pisz pełnymi zdaniami.',
+          ],
+          answer: 'Pan Kleks ma wielobarwną czuprynę i czarną brodę, nosi surdut z mnóstwem kieszeni. Ma kolorowe piegi, a zapasowe trzyma w tabakierce. Umie unosić się w powietrzu, a jedzenie powiększa pompką.',
+          scoring: [
+            '1 pkt – dwa szczegóły wyglądu (np. wielobarwna czupryna, czarna broda, surdut z kieszeniami, kolorowe piegi).',
+            '1 pkt – dwie niezwykłe umiejętności (np. unosi się w powietrzu, powiększa jedzenie pompką, gotuje z kolorowych szkiełek).',
+            '1 pkt – wypowiedź napisana pełnymi, poprawnymi zdaniami.',
+          ],
+        },
+        {
+          id: 'xsmq9r',
+          points: 3,
+          q: 'Wyjaśnij, dlaczego Alojzy Bąbel jest przykładem na to, że pozory mylą. Odwołaj się do wydarzeń z książki.',
+          steps: [
+            'Kim naprawdę jest Alojzy? Jak wygląda?',
+            'Co Alojzy robi w Akademii pod koniec książki? Jakie są tego skutki dla pana Kleksa?',
+          ],
+          answer: 'Alojzy wygląda jak zwykły chłopiec, ale naprawdę jest mechaniczną lalką, którą skonstruował golibroda Filip. Wszystko psuje i niszczy. Niszczy porcelanowe tabliczki z sekretami pana Kleksa – przez to pan Kleks traci moc. Wygląd Alojzego zmylił innych, a był on bezduszną maszyną.',
+          scoring: [
+            '1 pkt – Alojzy wygląda jak chłopiec, ale jest mechaniczną lalką.',
+            '1 pkt – wydarzenie: niszczy tabliczki z sekretami pana Kleksa (albo: wszystko psuje).',
+            '1 pkt – wniosek: wygląd nie mówi prawdy o tym, kim ktoś jest.',
+          ],
+        },
       ],
     },
     {
@@ -909,6 +1387,40 @@ window.SUBJECTS.push({
         { id: 'tzmi15', q: 'Co okazuje się w historii o psie, którego Mikołajek przyprowadził do domu?', options: ['pies ma właściciela', 'pies umie mówić', 'pies należy do pani nauczycielki', 'mama bardzo chciała mieć psa'], answer: 0, explain: 'Mama nie chciała psa w domu, a w końcu okazało się, że pies ma swojego właściciela.' },
         { id: 'zt9go1', q: 'Prawda czy fałsz?\n„Mikołajek” to utwór realistyczny – opisane wydarzenia mogłyby się zdarzyć naprawdę.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Prawda. W „Mikołajku” nie ma czarów – to zwykłe przygody w szkole, w domu i na podwórku.' },
       ],
+      tasks: [
+        {
+          id: 'm4lfdf',
+          points: 3,
+          q: 'Skąd bierze się humor w „Mikołajku”? Podaj dwa powody i jeden przykład z książki.',
+          steps: [
+            'Kto opowiada historie i jakim językiem?',
+            'Czy narrator zawsze rozumie, co się dzieje? A czytelnik?',
+            'Przypomnij sobie zabawną historię, np. zabawę w kowbojów albo zdjęcie klasowe.',
+          ],
+          answer: 'Opowiada dziecko – prostym, potocznym językiem. Mikołajek nie zawsze rozumie dorosłych i powagę sytuacji, a czytelnik widzi więcej niż on. Przykład: tata chce pogodzić chłopców bawiących się w kowbojów i sam zostaje „jeńcem” przywiązanym do drzewa.',
+          scoring: [
+            '1 pkt – pierwszy powód (np. opowiada dziecko prostym językiem).',
+            '1 pkt – drugi powód (np. Mikołajek nie rozumie dorosłych, czytelnik wie więcej; koledzy mają stałe, powracające cechy).',
+            '1 pkt – trafny przykład z książki.',
+          ],
+        },
+        {
+          id: 'ruemxb',
+          points: 3,
+          q: 'Przedstaw dwóch kolegów Mikołajka – każdego w jednym, dwóch zdaniach. Napisz, z którym z nich chciałbyś (chciałabyś) się przyjaźnić i dlaczego.',
+          steps: [
+            'Wybierz dwóch kolegów, np. Alcesta, Ananiasza, Euzebiusza, Kleofasa, Rufusa albo Gotfryda.',
+            'Napisz, czym każdy z nich się wyróżnia.',
+            'Swoją opinię uzasadnij: „bo…”, „ponieważ…”.',
+          ],
+          answer: 'Alcest to najlepszy przyjaciel Mikołajka. Jest gruby i ciągle coś je. Rufus jest synem policjanta i ma gwizdek. Chciałbym przyjaźnić się z Alcestem, bo jest najlepszym przyjacielem Mikołajka, a z nim na pewno nie byłoby nudno.',
+          scoring: [
+            '1 pkt – trafna charakterystyka pierwszego kolegi.',
+            '1 pkt – trafna charakterystyka drugiego kolegi.',
+            '1 pkt – opinia z uzasadnieniem.',
+          ],
+        },
+      ],
     },
     {
       id: 'lektura-magiczne-drzewo',
@@ -988,6 +1500,40 @@ window.SUBJECTS.push({
         { id: 'hwza5f', q: 'Co dzieje się na końcu książki?', options: ['mama przypadkiem wypowiada życzenie na krześle i dom odlatuje', 'krzesło zostaje spalone', 'Max Rozmus zostaje królem', 'dzieci zamieniają się w drzewa'], answer: 0, explain: 'Dom odrywa się od ziemi, a krzesło wypada przez okno – to zapowiedź kolejnych przygód.' },
         { id: 'boazq4', q: 'Prawda czy fałsz?\n„Magiczne drzewo. Czerwone krzesło” to powieść fantastyczna, bo dzieją się w niej rzeczy niemożliwe.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Prawda. Krzesło spełniające życzenia i ciotka zamieniona w dziewczynkę to elementy fantastyczne.' },
         { id: 'du4un8', q: 'Którą naukę najłatwiej wyciągnąć z historii czerwonego krzesła?', options: ['trzeba myśleć, zanim się czegoś zażyczy', 'pieniądze są najważniejsze', 'nie warto mieć rodzeństwa', 'lepiej nikomu nie pomagać'], answer: 0, explain: 'Krzesło spełnia życzenia dosłownie – nieprzemyślane słowa sprowadzają kłopoty.' },
+      ],
+      tasks: [
+        {
+          id: 'tndwgs',
+          points: 3,
+          q: 'Wyjaśnij, jak działa czerwone krzesło i dlaczego trzeba przy nim uważać na słowa. Wymyśl życzenie, które krzesło mogłoby spełnić inaczej, niż chcesz.',
+          steps: [
+            'Czyje życzenia spełnia krzesło?',
+            'Jak krzesło rozumie słowa – dosłownie czy w przenośni?',
+            'Pomyśl o zdaniu, które mówimy w przenośni, np. „chciałbym, żeby…”.',
+          ],
+          answer: 'Krzesło spełnia życzenie osoby, która na nim siedzi – także życzenie wypowiedziane przypadkiem. Rozumie słowa dosłownie, dlatego trzeba uważać, co się mówi. Gdybym powiedział na krześle: „Chciałbym, żeby ten dzień nigdy się nie skończył”, ten dzień mógłby naprawdę trwać bez końca.',
+          scoring: [
+            '1 pkt – krzesło spełnia życzenia osoby, która na nim siedzi.',
+            '1 pkt – krzesło rozumie słowa dosłownie (spełnia też życzenia wypowiedziane przypadkiem).',
+            '1 pkt – własny przykład życzenia, które mogłoby się spełnić nie tak, jak trzeba, z wyjaśnieniem.',
+          ],
+        },
+        {
+          id: 'juw4m9',
+          points: 3,
+          q: 'Czy rodzina jest ważniejsza niż pieniądze? Napisz swoją opinię i uzasadnij ją, odwołując się do „Magicznego drzewa. Czerwonego krzesła”.',
+          steps: [
+            'Zacznij od opinii: „Moim zdaniem…”, „Uważam, że…”.',
+            'Przypomnij sobie, dlaczego dzieci wyruszyły do Kopenhagi.',
+            'Zakończ krótkim wnioskiem.',
+          ],
+          answer: 'Moim zdaniem rodzina jest ważniejsza niż pieniądze. Dzieci miały magiczne krzesło, które spełniało życzenia, a mimo to wyruszyły aż do Kopenhagi, żeby odnaleźć rodziców na statku. To pokazuje, że najbardziej zależało im na tym, żeby rodzina znów była razem.',
+          scoring: [
+            '1 pkt – wyraźna opinia.',
+            '1 pkt – uzasadnienie z odwołaniem do wydarzeń z książki.',
+            '1 pkt – poprawna forma: opinia, uzasadnienie („bo…”, „ponieważ…”, „to pokazuje…”), wniosek.',
+          ],
+        },
       ],
     },
     {
@@ -1070,6 +1616,40 @@ window.SUBJECTS.push({
         { id: '7jyexk', q: 'Kim był Łysy Per?', options: ['najstarszym zbójcą z bandy Mattisa', 'ojcem Birka', 'leśnym stworem', 'królem Wietrzydeł'], answer: 0, explain: 'Łysy Per był najstarszym zbójcą. Przed śmiercią zdradził Ronji tajemnicę srebrnej góry.' },
         { id: 'xfidex', q: 'Co postanawiają Ronja i Birk na końcu książki?', options: ['że nie zostaną zbójnikami', 'że zostaną hersztami obu band', 'że opuszczą las na zawsze', 'że zamieszkają z Wietrzydłami'], answer: 0, explain: 'Ronja i Birk nie chcą krzywdzić ludzi ani ich okradać.' },
         { id: '2x3jqh', q: 'Kto przyszedł do Niedźwiedziej Groty, przeprosił Ronję i zabrał ją do domu?', options: ['Mattis', 'Borka', 'Łysy Per', 'Birk'], answer: 0, explain: 'Mattis tęsknił za córką. Przyszedł do groty i przeprosił – Ronja wróciła na zamek.' },
+      ],
+      tasks: [
+        {
+          id: 'r9l3ke',
+          points: 3,
+          q: 'Opisz, jak Ronja i Birk zostali przyjaciółmi. Podaj dwa wydarzenia z książki.',
+          steps: [
+            'Jak dzieci rywalizowały na początku znajomości?',
+            'Kto kogo uratował – i kiedy?',
+            'Jak zmieniła się ich relacja?',
+          ],
+          answer: 'Na początku Ronja i Birk rywalizowali – skakali przez Diabelską Czeluść. Gdy Birk wpadł w tarapaty, Ronja go uratowała, a zimą Birk uratował życie Ronji. Od tej pory byli jak rodzeństwo i spotykali się w tajemnicy przed ojcami.',
+          scoring: [
+            '1 pkt – pierwsze wydarzenie (np. rywalizacja – skoki przez Diabelską Czeluść).',
+            '1 pkt – drugie wydarzenie (np. Ronja ratuje Birka, zimą Birk ratuje Ronję).',
+            '1 pkt – wniosek: zostali przyjaciółmi jak rodzeństwo, mimo wrogości ojców.',
+          ],
+        },
+        {
+          id: 'mog02k',
+          points: 3,
+          q: 'Ronja i Birk postanawiają, że nie zostaną zbójnikami. Oceń ich decyzję i podaj dwa argumenty.',
+          steps: [
+            'Zacznij od opinii: „Moim zdaniem to dobra (zła) decyzja…”.',
+            'Pomyśl, czym zajmują się zbójnicy i kogo krzywdzą.',
+            'Drugi argument może dotyczyć przyjaźni i wrogości rodów.',
+          ],
+          answer: 'Moim zdaniem to dobra decyzja. Po pierwsze, zbójnicy krzywdzą ludzi, a Ronja i Birk tego nie chcą. Po drugie, ich przyjaźń pokazała, że można żyć bez wrogości i walki – dzięki dzieciom dorośli z dwóch wrogich band zaczęli się godzić.',
+          scoring: [
+            '1 pkt – wyraźna ocena decyzji.',
+            '1 pkt – pierwszy argument.',
+            '1 pkt – drugi argument (co najmniej jeden związany z treścią książki).',
+          ],
+        },
       ],
     },
   ],
