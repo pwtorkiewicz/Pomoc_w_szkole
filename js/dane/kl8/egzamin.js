@@ -18,7 +18,7 @@ window.SUBJECTS.push(
     icon: '📐',
     color: '#3b82c4',
     link: { track: 'egzamin8', subject: 'matematyka' },
-    linkNote: 'Działy egzaminacyjne – ta sama podstawa co w klasie 8 (bez działu „Symetrie”, który jest poza egzaminem).',
+    linkNote: 'Działy egzaminacyjne – ta sama podstawa co w klasie 8. Dział „Symetrie” (poza egzaminem) jest na osobnym kafelku.',
     topics: [],
   },
   {
