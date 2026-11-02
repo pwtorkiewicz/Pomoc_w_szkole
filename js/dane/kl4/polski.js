@@ -741,5 +741,336 @@ window.SUBJECTS.push({
         { id: 'tulwi2', q: 'Prawda czy fałsz?\nKulisy to przestrzeń za sceną i po jej bokach, której widzowie nie widzą.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Za kulisami aktorzy czekają na wejście, a tam stoją też dekoracje i rekwizyty.' },
       ],
     },
+    {
+      id: 'lektura-kleks',
+      name: 'Lektura: „Akademia pana Kleksa”',
+      chapter: 'Spotkanie z lekturą: Jan Brzechwa, „Akademia pana Kleksa”',
+      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 7 „Praktyki lekturowe”, wym. 3 (dzieli się pierwszymi wrażeniami z przeczytanego tekstu), wym. 4 (czyta w każdym roku co najmniej 4 dłuższe teksty literackie, wybrane z listy przykładowych tekstów lub spoza niej, m.in. o przyjaźni, emocjach, relacjach rówieśniczych); dz. 2 „Odbiór tekstów kultury”, wym. 4 (świat przedstawiony, utwór fantastyczny), wym. 5 (ocena postępowania bohaterów), wym. 8 (pojęcia: powieść, narrator, bohater, fabuła). Książki nie ma na liście przykładowej – wybór podręcznika „Słowa na start! 4” („Spotkanie z lekturą”). Fakty sprawdzone 2.11.2026 w ZPE („Osobliwy nauczyciel i niezwyczajna Akademia”) i w kilku zgodnych opracowaniach; bez cytatów (utwór chroniony prawem autorskim); pominięto szczegóły, które źródła podają różnie, i treści z filmów.',
+      theory: `
+        <h3>Metryczka</h3>
+        <table>
+          <tr><td><b>autor</b></td><td>Jan Brzechwa</td></tr>
+          <tr><td><b>pierwsze wydanie</b></td><td>1946</td></tr>
+          <tr><td><b>gatunek</b></td><td><b>powieść fantastyczna</b> dla dzieci (z elementami baśni)</td></tr>
+          <tr><td><b>narrator</b></td><td><b>Adaś Niezgódka</b>, uczeń Akademii – opowiada w 1. osobie („ja”), bierze udział w wydarzeniach. W jednym rozdziale swoją historię opowiada szpak Mateusz.</td></tr>
+          <tr><td><b>miejsce</b></td><td>Akademia pana Kleksa przy <b>ulicy Czekoladowej</b>, w parku otoczonym murem</td></tr>
+        </table>
+        <p>Dalsze przygody: „Podróże pana Kleksa” i „Tryumf pana Kleksa”.</p>
+        <h3>Bohaterowie</h3>
+        <ul>
+          <li><b>Ambroży Kleks</b> – założyciel i nauczyciel Akademii. Ma wielobarwną czuprynę i czarną brodę, nosi surdut z mnóstwem kieszeni. Ma kolorowe piegi (zapasowe trzyma w tabakierce), umie unosić się w powietrzu, a jedzenie powiększa <b>pompką</b>.</li>
+          <li><b>Adaś Niezgódka</b> – narrator, nieśmiały chłopiec, który trafia do Akademii po wielu niepowodzeniach.</li>
+          <li><b>szpak Mateusz</b> – mieszka u pana Kleksa i budzi uczniów. Mówi <b>tylko końcówkami wyrazów</b>. Opowiada, że jest zaczarowanym królewiczem.</li>
+          <li><b>Filip</b> – golibroda (fryzjer). Strzyże uczniów, dostarcza panu Kleksowi piegi i konstruuje lalkę Alojzego.</li>
+          <li><b>Alojzy Bąbel</b> – <b>mechaniczna lalka</b>, która wygląda jak chłopiec. Wszystko psuje i niszczy.</li>
+          <li><b>Anatol</b> – zwykły chłopiec, który przychodzi do Akademii razem z Alojzym.</li>
+          <li><b>doktor Paj-Chi-Wo</b> – chiński uczony; jego nauki to „sekrety” pana Kleksa.</li>
+        </ul>
+        <h3>Niezwykła szkoła</h3>
+        <ul>
+          <li>Pan Kleks przyjmuje tylko chłopców, których <b>imiona zaczynają się na literę A</b> – uczniów jest 24.</li>
+          <li><b>Senne lusterka</b> zapisują sny uczniów. Pan Kleks wybiera dobre sny, robi z nich kolorowe pastylki, a najpiękniejsze zapisuje w senniku.</li>
+          <li>Pan Kleks gotuje z kolorowych szkiełek i farb, a potrawy powiększa pompką.</li>
+          <li>Niezwykłe lekcje, np. <b>kleksografia</b> i przędzenie liter. Uczniowie zwiedzają też <b>Fabrykę Dziur</b>.</li>
+          <li>Drzwi w murze parku prowadzą do <b>różnych baśni</b>. Zamykają je srebrne kłódki, a klucze ma pan Kleks.</li>
+        </ul>
+        <h3>Historia szpaka Mateusza</h3>
+        <p>Jako królewicz zabił wilka, który okazał się <b>królem wilków</b>. Wyleczył go doktor Paj-Chi-Wo i dał mu <b>czapkę</b>, dzięki której można zmienić postać. Gdy wilki napadły na pałac, Mateusz zamienił się w szpaka. Zgubił jednak <b>guzik od czapki</b> – i nie może wrócić do ludzkiej postaci.</p>
+        <h3>Zakończenie</h3>
+        <ul>
+          <li>Golibroda Filip przyprowadza Alojzego. Lalka niszczy <b>porcelanowe tabliczki z sekretami</b> pana Kleksa – a pan Kleks traci moc.</li>
+          <li>Pan Kleks maleje i <b>zamienia się w guzik</b>. Dzięki niemu Mateusz odzyskuje ludzką postać.</li>
+          <li>Mateusz wyjawia Adasiowi, że jest <b>autorem bajki o Akademii</b>. Akademia znika, a bajka się kończy.</li>
+        </ul>
+        <h3>O czym warto porozmawiać</h3>
+        <ul>
+          <li>wyobraźnia – szkoła, w której nauka jest przygodą;</li>
+          <li>przyjaźń Adasia i Mateusza;</li>
+          <li>pozory mylą – Alojzy wygląda jak chłopiec, ale jest bezduszną maszyną;</li>
+          <li>granica między bajką a rzeczywistością.</li>
+        </ul>
+        <div class="tip">💡 Filmy o panu Kleksie różnią się od książki (np. imiona postaci). Na lekcji i w quizie liczy się książka.</div>
+      `,
+      flashcards: [
+        ['„Akademia pana Kleksa” – autor', 'Jan Brzechwa (1946)'],
+        ['Gatunek', 'powieść fantastyczna dla dzieci, z elementami baśni'],
+        ['Narrator', 'Adaś Niezgódka, uczeń Akademii – mówi „ja”'],
+        ['Kogo przyjmuje pan Kleks?', 'chłopców o imionach na literę A (24 uczniów)'],
+        ['Gdzie jest Akademia?', 'przy ulicy Czekoladowej, w parku otoczonym murem'],
+        ['Szpak Mateusz', 'mówi tylko końcówkami wyrazów; zaczarowany królewicz'],
+        ['Dlaczego Mateusz jest szpakiem?', 'zgubił guzik od czapki, która zmienia postać'],
+        ['Golibroda Filip', 'strzyże uczniów, dostarcza piegi, zrobił lalkę Alojzego'],
+        ['Alojzy Bąbel', 'mechaniczna lalka, która wszystko psuje'],
+        ['Senne lusterka', 'zapisują sny uczniów'],
+        ['Drzwi w murze parku', 'prowadzą do różnych baśni'],
+        ['Zakończenie', 'pan Kleks zamienia się w guzik, Mateusz odzyskuje postać, Akademia znika'],
+      ],
+      questions: [
+        { id: 'x489eg', q: 'Kto napisał „Akademię pana Kleksa”?', options: ['Jan Brzechwa', 'Julian Tuwim', 'Kornel Makuszyński', 'Astrid Lindgren'], answer: 0, explain: 'Powieść napisał Jan Brzechwa. Wydano ją w 1946 roku.' },
+        { id: 'cl0a2k', q: 'Kto opowiada historię w „Akademii pana Kleksa”?', options: ['Adaś Niezgódka, uczeń Akademii', 'pan Kleks', 'golibroda Filip', 'lalka Alojzy'], answer: 0, explain: 'Narratorem jest Adaś. Mówi „ja”, bo sam bierze udział w wydarzeniach. Tylko w jednym rozdziale swoją historię opowiada szpak Mateusz.' },
+        { id: 'jmm2xo', q: 'Jakich chłopców przyjmował do Akademii pan Kleks?', options: ['tych, których imiona zaczynają się na literę A', 'tylko najlepszych z matematyki', 'tylko tych, którzy mieli piegi', 'tylko tych, którzy umieli latać'], answer: 0, explain: 'Wszyscy uczniowie mają imiona na A: Adaś, Anastazy, Artur, Antoni…' },
+        { id: 'skjyzl', q: 'Przy jakiej ulicy znajdowała się Akademia pana Kleksa?', options: ['przy Czekoladowej', 'przy Cukierkowej', 'przy Kolorowej', 'przy Bajkowej'], answer: 0, explain: 'Akademia stała przy ulicy Czekoladowej, w parku otoczonym murem.' },
+        { id: '59llf7', q: 'Co było niezwykłego w mowie szpaka Mateusza?', options: ['mówił tylko końcówkami wyrazów', 'mówił wyłącznie wierszem', 'mówił tylko po chińsku', 'w ogóle nie mówił'], answer: 0, explain: 'Mateusz wymawiał tylko końcówki wyrazów – trzeba było się domyślić reszty.' },
+        { id: 'ppiwx8', q: 'Kim, według swojej opowieści, był naprawdę szpak Mateusz?', options: ['zaczarowanym królewiczem', 'zaczarowanym wilkiem', 'lalką zrobioną przez Filipa', 'bratem Adasia'], answer: 0, explain: 'Mateusz był królewiczem, który zamienił się w szpaka dzięki czapce od doktora Paj-Chi-Wo.' },
+        { id: '5e2d0b', q: 'Dlaczego Mateusz nie mógł wrócić do ludzkiej postaci?', options: ['zgubił guzik od czapki, która zmieniała postać', 'pan Kleks zabronił mu się zmieniać', 'wilki zabrały mu skrzydła', 'nie chciał już być człowiekiem'], answer: 0, explain: 'Bez guzika czapka nie działała – Mateusz musiał zostać szpakiem.' },
+        { id: 'bptxw3', q: 'Kim był Alojzy Bąbel?', options: ['mechaniczną lalką zrobioną przez golibrodę Filipa', 'synem pana Kleksa', 'królem wilków', 'chińskim uczonym'], answer: 0, explain: 'Alojzy wyglądał jak chłopiec, ale był lalką – maszyną, która wszystko psuła.' },
+        { id: 'qnk5ds', q: 'Do czego służyły senne lusterka?', options: ['zapisywały sny uczniów', 'otwierały drzwi do baśni', 'powiększały jedzenie', 'pozwalały latać'], answer: 0, explain: 'Pan Kleks oglądał sny w lusterkach, wybierał dobre sny i robił z nich kolorowe pastylki.' },
+        { id: 'iljk95', q: 'Czym pan Kleks powiększał potrawy?', options: ['pompką', 'lupą', 'sennym lusterkiem', 'czapką'], answer: 0, explain: 'Pan Kleks gotował z kolorowych szkiełek, a potrawy powiększał pompką.' },
+        { id: 'ckrq44', q: 'Dokąd prowadziły drzwi w murze parku Akademii?', options: ['do różnych baśni', 'do pałacu króla wilków', 'do szkoły Adasia', 'do Chin'], answer: 0, explain: 'Każde drzwi prowadziły do innej baśni. Klucze do srebrnych kłódek miał pan Kleks.' },
+        { id: 'mggy18', q: 'Co zniszczył Alojzy, przez co pan Kleks stracił moc?', options: ['porcelanowe tabliczki z sekretami', 'senne lusterka', 'pompkę do powiększania', 'czapkę Mateusza'], answer: 0, explain: 'Na tabliczkach były zapisane sekrety (nauki doktora Paj-Chi-Wo). Gdy Alojzy je zniszczył, pan Kleks stracił moc.' },
+        { id: 'cvsrc3', q: 'Co stało się z panem Kleksem na końcu książki?', options: ['zmalał i zamienił się w guzik', 'został królem baśni', 'zamienił się w szpaka', 'zasnął na sto lat'], answer: 0, explain: 'Pan Kleks zamienił się w guzik – dzięki temu Mateusz odzyskał ludzką postać.' },
+        { id: 'a0jklb', q: 'Co wyjawił Mateusz, gdy znów stał się człowiekiem?', options: ['że jest autorem bajki o Akademii', 'że jest synem pana Kleksa', 'że jest golibrodą', 'że jest królem wilków'], answer: 0, explain: 'Mateusz powiedział Adasiowi, że wymyślił tę bajkę. Akademia zniknęła, a bajka się skończyła.' },
+        { id: '7o1n10', q: 'Prawda czy fałsz?\n„Akademia pana Kleksa” to utwór realistyczny – wszystko mogłoby zdarzyć się naprawdę.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Fałsz. To powieść fantastyczna: są w niej czary, mówiący szpak, senne lusterka i drzwi do baśni.' },
+        { id: 'kxyo5m', q: 'Co pan Kleks trzymał w tabakierce?', options: ['zapasowe piegi', 'klucze do drzwi baśni', 'guzik Mateusza', 'senne lusterka'], answer: 0, explain: 'Pan Kleks miał kolorowe piegi, a zapasowe nosił w tabakierce. Piegi dostarczał mu golibroda Filip.' },
+      ],
+    },
+    {
+      id: 'lektura-mikolajek',
+      name: 'Lektura: „Mikołajek”',
+      chapter: 'Spotkanie z lekturą: R. Goscinny, J.-J. Sempé, „Mikołajek”',
+      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 7 „Praktyki lekturowe”, wym. 3 (dzieli się pierwszymi wrażeniami z przeczytanego tekstu), wym. 4 (czyta w każdym roku co najmniej 4 dłuższe teksty literackie, wybrane z listy przykładowych tekstów lub spoza niej, m.in. o domu, rodzinie, relacjach rówieśniczych, przyjaźni); dz. 2 „Odbiór tekstów kultury”, wym. 4 (świat przedstawiony, utwór realistyczny), wym. 5 (ocena postępowania bohaterów), wym. 8 (pojęcia: opowiadanie, narrator, bohater). Książki nie ma na liście przykładowej – wybór podręcznika „Słowa na start! 4” („Spotkanie z lekturą”). Fakty sprawdzone 2.11.2026 w kilku zgodnych opracowaniach i opisach wydawców (Znak, Institut Goscinny); bez cytatów (utwór chroniony). Tytułów opowiadań nie podajemy – różnią się w polskich przekładach; pominięto szczegóły, które źródła opisują różnie.',
+      theory: `
+        <h3>Metryczka</h3>
+        <table>
+          <tr><td><b>autorzy</b></td><td><b>René Goscinny</b> napisał tekst, <b>Jean-Jacques Sempé</b> narysował ilustracje (Francuzi)</td></tr>
+          <tr><td><b>pierwsze wydanie</b></td><td>1960, we Francji („Le Petit Nicolas”)</td></tr>
+          <tr><td><b>forma</b></td><td><b>zbiór opowiadań</b> – każde to osobna, krótka historia z tymi samymi bohaterami</td></tr>
+          <tr><td><b>narrator</b></td><td><b>Mikołajek</b> – opowiada w 1. osobie („ja”, „my”), uczestniczy w wydarzeniach</td></tr>
+          <tr><td><b>miejsce i czas</b></td><td>Francja, połowa XX wieku: szkoła, dom Mikołajka, podwórko, pusty plac</td></tr>
+        </table>
+        <p>Polskie wydania mają różnych tłumaczy, dlatego tytuły opowiadań mogą się różnić w twojej książce.</p>
+        <h3>Koledzy Mikołajka</h3>
+        <table>
+          <tr><td><b>Alcest</b></td><td>najlepszy przyjaciel; gruby, ciągle coś je</td></tr>
+          <tr><td><b>Ananiasz</b></td><td>prymus i pupilek pani; nosi okulary, często płacze</td></tr>
+          <tr><td><b>Euzebiusz</b></td><td>najsilniejszy w klasie, lubi dawać kolegom „w nos”</td></tr>
+          <tr><td><b>Kleofas</b></td><td>najgorszy uczeń – na lekcjach często śpi albo stoi w kącie</td></tr>
+          <tr><td><b>Rufus</b></td><td>syn policjanta, ma gwizdek</td></tr>
+          <tr><td><b>Gotfryd</b></td><td>ma bogatego tatę, który kupuje mu drogie rzeczy</td></tr>
+        </table>
+        <p>W klasie są też m.in. Maksencjusz i Joachim.</p>
+        <h3>Dorośli</h3>
+        <ul>
+          <li><b>rodzice Mikołajka</b> – mama i tata, którzy nie zawsze rozumieją syna (a on – ich);</li>
+          <li><b>pani</b> – nauczycielka w klasie Mikołajka;</li>
+          <li><b>Rosół</b> – szkolny opiekun. Przezwisko wzięło się stąd, że ciągle mówi „Spójrzcie mi w oczy”, a na rosole pływają „oka” – to <b>gra słów</b>.</li>
+        </ul>
+        <h3>Przykładowe historie</h3>
+        <ul>
+          <li>Fotograf ma zrobić wspólne zdjęcie klasy, ale przez zamieszanie wcale nie jest łatwo.</li>
+          <li>Koledzy bawią się u Mikołajka w kowbojów. Tata chce ich pogodzić – i zostaje „jeńcem” przywiązanym do drzewa.</li>
+          <li>Mikołajek przyprowadza do domu psa, którego mama nie chce. Okazuje się, że pies ma właściciela.</li>
+          <li>Do klasy przychodzi nowy kolega z Anglii, który uczy się francuskiego.</li>
+        </ul>
+        <h3>Skąd się bierze humor?</h3>
+        <ul>
+          <li>Opowiada <b>dziecko</b> – prostym, potocznym językiem, tak jak mówią dzieci.</li>
+          <li>Mikołajek <b>nie zawsze rozumie</b> dorosłych i powagi sytuacji. Czytelnik widzi więcej niż narrator – i to jest zabawne.</li>
+          <li>Koledzy mają stałe cechy (Alcest je, Ananiasz płacze), które powracają w każdej historii.</li>
+        </ul>
+        <h3>O czym warto porozmawiać</h3>
+        <ul>
+          <li>przyjaźń, kłótnie i godzenie się w grupie kolegów;</li>
+          <li>szkoła: prymus i reszta klasy, kara dla wszystkich;</li>
+          <li>rodzina: dorośli i dzieci, którzy patrzą na świat inaczej;</li>
+          <li>chęć zaimponowania dorosłym i psoty, które kończą się kłopotami.</li>
+        </ul>
+        <div class="tip">💡 „Mikołajek” to utwór <b>realistyczny</b> – nie ma w nim czarów, a wszystko mogłoby się zdarzyć naprawdę.</div>
+      `,
+      flashcards: [
+        ['„Mikołajek” – autorzy', 'René Goscinny (tekst) i Jean-Jacques Sempé (rysunki)'],
+        ['Forma utworu', 'zbiór krótkich opowiadań z tymi samymi bohaterami'],
+        ['Narrator', 'Mikołajek – mówi „ja” i „my”'],
+        ['Gdzie toczy się akcja?', 'we Francji: szkoła, dom, podwórko, pusty plac'],
+        ['Alcest', 'najlepszy przyjaciel Mikołajka, ciągle je'],
+        ['Ananiasz', 'prymus i pupilek pani, nosi okulary'],
+        ['Euzebiusz', 'najsilniejszy, daje kolegom „w nos”'],
+        ['Kleofas', 'najgorszy uczeń, często stoi w kącie'],
+        ['Rufus', 'syn policjanta, ma gwizdek'],
+        ['Gotfryd', 'ma bogatego tatę'],
+        ['Rosół', 'szkolny opiekun; mówi „Spójrzcie mi w oczy” – a w rosole są „oka”'],
+        ['Skąd humor?', 'dziecko opowiada po swojemu i nie rozumie dorosłych'],
+      ],
+      questions: [
+        { id: 'wk6adj', q: 'Kto napisał tekst „Mikołajka”?', options: ['René Goscinny', 'Jean-Jacques Sempé', 'Jan Brzechwa', 'Astrid Lindgren'], answer: 0, explain: 'Tekst napisał René Goscinny, a ilustracje narysował Jean-Jacques Sempé.' },
+        { id: '1gt7uo', q: 'Co zrobił Jean-Jacques Sempé?', options: ['narysował ilustracje', 'przetłumaczył książkę na polski', 'napisał tekst opowiadań', 'nakręcił film o Mikołajku'], answer: 0, explain: 'Sempé jest autorem rysunków, a Goscinny – tekstu.' },
+        { id: '8dpsp5', q: 'Kto opowiada historie w „Mikołajku”?', options: ['Mikołajek', 'mama Mikołajka', 'pani nauczycielka', 'Rosół'], answer: 0, explain: 'Narratorem jest Mikołajek. Mówi „ja”, a gdy bawi się z kolegami – „my”.' },
+        { id: 'f6o322', q: 'Czym jest „Mikołajek”?', options: ['zbiorem krótkich opowiadań z tymi samymi bohaterami', 'jedną długą powieścią o podróży', 'zbiorem wierszy', 'sztuką teatralną'], answer: 0, explain: 'Każde opowiadanie to osobna historia, ale bohaterowie są wciąż ci sami.' },
+        { id: 'scqa83', q: 'W jakim kraju toczy się akcja „Mikołajka”?', options: ['we Francji', 'w Polsce', 'w Anglii', 'w Szwecji'], answer: 0, explain: 'Autorzy byli Francuzami, a Mikołajek mieszka i chodzi do szkoły we Francji.' },
+        { id: 'x2oppk', q: 'Który kolega Mikołajka ciągle coś je?', options: ['Alcest', 'Ananiasz', 'Rufus', 'Kleofas'], answer: 0, explain: 'Alcest, najlepszy przyjaciel Mikołajka, prawie zawsze coś je.' },
+        { id: 'cqlh4h', q: 'Kto jest prymusem i pupilkiem pani, nosi okulary i często płacze?', options: ['Ananiasz', 'Euzebiusz', 'Kleofas', 'Gotfryd'], answer: 0, explain: 'Ananiasz to najlepszy uczeń. Koledzy go nie biją, bo nosi okulary.' },
+        { id: 'czukbd', q: 'Który kolega jest najsilniejszy i lubi dawać innym „w nos”?', options: ['Euzebiusz', 'Ananiasz', 'Alcest', 'Rufus'], answer: 0, explain: 'Euzebiusz to siłacz klasy.' },
+        { id: '236gs5', q: 'Kim jest tata Rufusa?', options: ['policjantem', 'nauczycielem', 'fotografem', 'lekarzem'], answer: 0, explain: 'Rufus jest synem policjanta i ma gwizdek.' },
+        { id: 'gny0rs', q: 'Co wiemy o Gotfrydzie?', options: ['ma bogatego tatę, który kupuje mu drogie rzeczy', 'jest najgorszym uczniem w klasie', 'jest synem policjanta', 'ciągle coś je'], answer: 0, explain: 'Gotfryd ma bogatego tatę. Najgorszy uczeń to Kleofas, syn policjanta – Rufus, a jedzenie kocha Alcest.' },
+        { id: 'z3vdug', q: 'Który z chłopców jest najgorszym uczniem i na lekcjach często stoi w kącie?', options: ['Kleofas', 'Ananiasz', 'Gotfryd', 'Rufus'], answer: 0, explain: 'Kleofas słabo się uczy, ale jest dobrym kolegą Mikołajka.' },
+        { id: 'cqubff', q: 'Skąd się wzięło przezwisko szkolnego opiekuna – Rosół?', options: ['ciągle mówi „Spójrzcie mi w oczy”, a na rosole pływają „oka”', 'bo codziennie je rosół w szkole', 'bo naprawdę nazywa się Rosół', 'bo gotuje uczniom zupę'], answer: 0, explain: 'To gra słów: „oczy” i „oka” tłuszczu na zupie.' },
+        { id: 'susjin', q: 'Skąd bierze się humor w „Mikołajku”?', options: ['Mikołajek opowiada po swojemu i nie zawsze rozumie dorosłych – czytelnik widzi więcej niż on', 'z trudnych słów naukowych', 'z rymów na końcu każdego zdania', 'z dowcipów, które opowiada pani'], answer: 0, explain: 'Narrator-dziecko opisuje wszystko szczerze i naiwnie, a my rozumiemy, co naprawdę się stało.' },
+        { id: 'f91fhf', q: 'Kto podczas zabawy w kowbojów zostaje „jeńcem” przywiązanym do drzewa?', options: ['tata Mikołajka', 'Rosół', 'Alcest', 'pani nauczycielka'], answer: 0, explain: 'Tata chciał pogodzić kłócących się chłopców – i sam został ich „jeńcem”.' },
+        { id: 'tzmi15', q: 'Co okazuje się w historii o psie, którego Mikołajek przyprowadził do domu?', options: ['pies ma właściciela', 'pies umie mówić', 'pies należy do pani nauczycielki', 'mama bardzo chciała mieć psa'], answer: 0, explain: 'Mama nie chciała psa w domu, a w końcu okazało się, że pies ma swojego właściciela.' },
+        { id: 'zt9go1', q: 'Prawda czy fałsz?\n„Mikołajek” to utwór realistyczny – opisane wydarzenia mogłyby się zdarzyć naprawdę.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Prawda. W „Mikołajku” nie ma czarów – to zwykłe przygody w szkole, w domu i na podwórku.' },
+      ],
+    },
+    {
+      id: 'lektura-magiczne-drzewo',
+      name: 'Lektura: „Magiczne drzewo. Czerwone krzesło”',
+      chapter: 'Spotkanie z lekturą: Andrzej Maleszka, „Magiczne drzewo. Czerwone krzesło”',
+      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 7 „Praktyki lekturowe”, wym. 3 (dzieli się pierwszymi wrażeniami z przeczytanego tekstu), wym. 4 (czyta w każdym roku co najmniej 4 dłuższe teksty literackie z listy przykładowych tekstów lub spoza niej, m.in. o domu, rodzinie, przyjaźni) – lista przykładowa, poz. 41: „Andrzej Maleszka, wybrana powieść z cyklu Magiczne drzewo”; dz. 2 „Odbiór tekstów kultury”, wym. 4 (świat przedstawiony, utwór fantastyczny), wym. 5 (ocena postępowania bohaterów), wym. 8 (pojęcia: powieść, bohater, fabuła). Tom wybrany przez podręcznik „Słowa na start! 4”. Fakty sprawdzone 2.11.2026 w ZPE („Wypowiedz życzenie, czyli historia pewnego krzesła”) i w kilku zgodnych opracowaniach; bez cytatów (utwór chroniony). Pominięto rodzaj narratora, miejsce burzy i szczegóły różnie podawane w źródłach.',
+      theory: `
+        <h3>Metryczka</h3>
+        <table>
+          <tr><td><b>autor</b></td><td><b>Andrzej Maleszka</b> – pisarz, scenarzysta i reżyser; nakręcił też film i serial „Magiczne drzewo”</td></tr>
+          <tr><td><b>pierwsze wydanie</b></td><td>2009 – pierwszy tom cyklu „Magiczne drzewo”</td></tr>
+          <tr><td><b>gatunek</b></td><td><b>powieść fantastyczna</b></td></tr>
+          <tr><td><b>czas akcji</b></td><td>współczesność</td></tr>
+        </table>
+        <h3>Skąd się wzięło czerwone krzesło?</h3>
+        <ol>
+          <li>W czasie burzy piorun łamie wielki stary dąb – to było <b>Magiczne Drzewo</b>.</li>
+          <li>Z jego drewna powstają setki przedmiotów. Każdy ma w sobie cząstkę magii. Jednym z nich jest <b>czerwone krzesło</b>.</li>
+          <li>Krzesło trafia do rzeki, a <b>Kuki</b> je wyławia.</li>
+        </ol>
+        <h3>Jak działa krzesło?</h3>
+        <p>Spełnia życzenie osoby, która na nim <b>siedzi</b> – także życzenie wypowiedziane przypadkiem. Rozumie słowa <b>dosłownie</b>. Dlatego trzeba uważać, co się mówi!</p>
+        <h3>Bohaterowie</h3>
+        <ul>
+          <li><b>Kuki</b> (10 lat) – najmłodszy z rodzeństwa, znalazca krzesła;</li>
+          <li><b>Tosia</b> (11 lat) – siostra;</li>
+          <li><b>Filip</b> (12 lat) – najstarszy brat, świetnie pływa;</li>
+          <li><b>rodzice</b> – muzycy. Tracą pracę, gdy ich orkiestra zostaje rozwiązana, i wyjeżdżają na rok do pracy na statku wycieczkowym;</li>
+          <li><b>ciotka Maryla</b> – bogata i skąpa; opiekuje się dziećmi pod nieobecność rodziców. Dzieci zamieniają ją w siedmioletnią dziewczynkę – <b>Wiki</b>;</li>
+          <li><b>Max Rozmus</b> – oszust, który poznaje moc krzesła i chce je zdobyć.</li>
+        </ul>
+        <h3>Najważniejsze wydarzenia</h3>
+        <ol>
+          <li>Kuki wyławia krzesło z rzeki; dzieci odkrywają, że spełnia życzenia.</li>
+          <li>Rodzice wyjeżdżają na statek, a dzieci zostają z ciotką Marylą.</li>
+          <li>Ciotka zostaje zamieniona w małą Wiki.</li>
+          <li>Max Rozmus ściga dzieci, żeby zdobyć krzesło.</li>
+          <li>Dzieci wyruszają do <b>Kopenhagi</b>, żeby odnaleźć rodziców na statku.</li>
+          <li>Rodzina znów jest razem. Na koniec mama przypadkiem siada na krześle i wypowiada życzenie – dom odrywa się od ziemi i leci, a krzesło wypada przez okno. To <b>otwarte zakończenie</b> – zapowiedź dalszych tomów.</li>
+        </ol>
+        <h3>O czym warto porozmawiać</h3>
+        <ul>
+          <li>rodzina jest ważniejsza niż pieniądze; tęsknota za rodzicami;</li>
+          <li>odpowiedzialność za słowa – pomyśl, zanim czegoś zażyczysz;</li>
+          <li>współpraca rodzeństwa;</li>
+          <li>chciwość (Max) i uczciwość.</li>
+        </ul>
+        <div class="tip">💡 Film i serial „Magiczne drzewo” różnią się od książki. W quizie liczy się książka.</div>
+      `,
+      flashcards: [
+        ['„Magiczne drzewo. Czerwone krzesło” – autor', 'Andrzej Maleszka (2009)'],
+        ['Gatunek', 'powieść fantastyczna'],
+        ['Skąd czerwone krzesło?', 'z drewna magicznego dębu złamanego przez piorun'],
+        ['Kto znalazł krzesło?', 'Kuki – wyłowił je z rzeki'],
+        ['Jak działa krzesło?', 'spełnia życzenia osoby siedzącej – dosłownie, nawet przypadkowe'],
+        ['Rodzeństwo', 'Kuki (10 lat), Tosia (11), Filip (12)'],
+        ['Rodzice dzieci', 'muzycy; wyjeżdżają na rok do pracy na statku'],
+        ['Ciotka Maryla', 'bogata, skąpa opiekunka; zamieniona w małą Wiki'],
+        ['Max Rozmus', 'oszust, który chce zdobyć krzesło'],
+        ['Dokąd jadą dzieci?', 'do Kopenhagi – po rodziców'],
+        ['Zakończenie', 'dom odlatuje, krzesło wypada przez okno – otwarte zakończenie'],
+      ],
+      questions: [
+        { id: 'v5dmjb', q: 'Kto napisał „Magiczne drzewo. Czerwone krzesło”?', options: ['Andrzej Maleszka', 'Jan Brzechwa', 'René Goscinny', 'Astrid Lindgren'], answer: 0, explain: 'Andrzej Maleszka jest pisarzem i reżyserem – nakręcił też film i serial „Magiczne drzewo”.' },
+        { id: 'p8bqnp', q: 'Z czego zrobiono czerwone krzesło?', options: ['z drewna magicznego dębu złamanego przez piorun', 'z drewna starej sosny z ogrodu ciotki', 'z plastiku', 'ze statku rodziców'], answer: 0, explain: 'Piorun złamał Magiczne Drzewo, a z jego drewna zrobiono setki przedmiotów – każdy z cząstką magii.' },
+        { id: 'xc9q3a', q: 'Kto znalazł czerwone krzesło i gdzie?', options: ['Kuki – wyłowił je z rzeki', 'Filip – na strychu', 'Tosia – w sklepie meblowym', 'ciotka Maryla – w banku'], answer: 0, explain: 'Krzesło wpadło do rzeki, a Kuki je wyłowił.' },
+        { id: 'lq5ao2', q: 'Jak działa czerwone krzesło?', options: ['spełnia życzenie osoby, która na nim siedzi', 'spełnia życzenia tylko w nocy', 'zamienia każdego w zwierzę', 'pokazuje przyszłość'], answer: 0, explain: 'Wystarczy usiąść i wypowiedzieć życzenie – nawet przypadkiem.' },
+        { id: '2147wh', q: 'Dlaczego z krzesłem trzeba bardzo uważać?', options: ['rozumie życzenia dosłownie, także te wypowiedziane przypadkiem', 'po każdym życzeniu znika na rok', 'spełnia tylko złe życzenia', 'działa tylko raz'], answer: 0, explain: 'Krzesło bierze słowa dosłownie – nieprzemyślane życzenie może narobić kłopotów.' },
+        { id: '2bq69j', q: 'Kto jest najmłodszy z rodzeństwa?', options: ['Kuki', 'Tosia', 'Filip', 'Max'], answer: 0, explain: 'Kuki ma 10 lat, Tosia – 11, a Filip – 12. Max Rozmus nie należy do rodziny.' },
+        { id: '63myra', q: 'Kto jest najstarszy z rodzeństwa?', options: ['Filip', 'Tosia', 'Kuki', 'Wiki'], answer: 0, explain: 'Filip ma 12 lat. Wiki to ciotka Maryla zamieniona w małą dziewczynkę.' },
+        { id: '46hgrl', q: 'Kim z zawodu są rodzice Kukiego, Tosi i Filipa?', options: ['muzykami', 'lekarzami', 'marynarzami', 'nauczycielami'], answer: 0, explain: 'Rodzice grali w orkiestrze. Gdy ją rozwiązano, dostali pracę na statku.' },
+        { id: 'evet6m', q: 'Dlaczego rodzice wyjeżdżają na rok?', options: ['tracą pracę w orkiestrze i dostają pracę na statku wycieczkowym', 'jadą na wakacje dookoła świata', 'muszą się leczyć w szpitalu', 'uciekają przed Maxem Rozmusem'], answer: 0, explain: 'Orkiestra została rozwiązana, a nowa praca była na statku – daleko od domu.' },
+        { id: 'a8m0t4', q: 'Kim jest ciotka Maryla?', options: ['bogatą, skąpą ciotką, która opiekuje się dziećmi', 'dyrektorką szkoły Kukiego', 'kapitanem statku', 'wróżką z Magicznego Drzewa'], answer: 0, explain: 'Gdy rodzice wyjeżdżają, dziećmi opiekuje się ciotka Maryla.' },
+        { id: 'nu18bo', q: 'W kogo dzieci zamieniają ciotkę Marylę?', options: ['w siedmioletnią dziewczynkę Wiki', 'w kota', 'w czerwone krzesło', 'w ptaka'], answer: 0, explain: 'Ciotka staje się małą dziewczynką – Wiki.' },
+        { id: 'alvkqa', q: 'Kim jest Max Rozmus?', options: ['oszustem, który chce zdobyć krzesło', 'wujkiem dzieci', 'kapitanem statku', 'nauczycielem Kukiego'], answer: 0, explain: 'Max poznał moc krzesła i ściga dzieci, żeby je zdobyć.' },
+        { id: 's4gwzo', q: 'Do jakiego miasta wyruszają dzieci, żeby odnaleźć rodziców?', options: ['do Kopenhagi', 'do Paryża', 'do Londynu', 'do Rzymu'], answer: 0, explain: 'Rodzice pracowali na statku, a dzieci szukały ich w Kopenhadze.' },
+        { id: 'hwza5f', q: 'Co dzieje się na końcu książki?', options: ['mama przypadkiem wypowiada życzenie na krześle i dom odlatuje', 'krzesło zostaje spalone', 'Max Rozmus zostaje królem', 'dzieci zamieniają się w drzewa'], answer: 0, explain: 'Dom odrywa się od ziemi, a krzesło wypada przez okno – to zapowiedź kolejnych przygód.' },
+        { id: 'boazq4', q: 'Prawda czy fałsz?\n„Magiczne drzewo. Czerwone krzesło” to powieść fantastyczna, bo dzieją się w niej rzeczy niemożliwe.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Prawda. Krzesło spełniające życzenia i ciotka zamieniona w dziewczynkę to elementy fantastyczne.' },
+        { id: 'du4un8', q: 'Którą naukę najłatwiej wyciągnąć z historii czerwonego krzesła?', options: ['trzeba myśleć, zanim się czegoś zażyczy', 'pieniądze są najważniejsze', 'nie warto mieć rodzeństwa', 'lepiej nikomu nie pomagać'], answer: 0, explain: 'Krzesło spełnia życzenia dosłownie – nieprzemyślane słowa sprowadzają kłopoty.' },
+      ],
+    },
+    {
+      id: 'lektura-ronja',
+      name: 'Lektura: „Ronja, córka zbójnika”',
+      chapter: 'Spotkanie z lekturą: Astrid Lindgren, „Ronja, córka zbójnika”',
+      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 7 „Praktyki lekturowe”, wym. 3 (dzieli się pierwszymi wrażeniami z przeczytanego tekstu), wym. 4 (czyta w każdym roku co najmniej 4 dłuższe teksty literackie z listy przykładowych tekstów lub spoza niej, m.in. o rodzinie, przyjaźni, emocjach, relacjach człowieka i natury) – lista przykładowa, poz. 39: „Astrid Lindgren, Bracia Lwie Serce, Ronja, córka zbójnika”; dz. 2 „Odbiór tekstów kultury”, wym. 4 (świat przedstawiony), wym. 5 (ocena postępowania bohaterów), wym. 8 (pojęcia: powieść, bohater, fabuła). Fakty sprawdzone 2.11.2026 w ZPE, katalogu bibliotecznym (przekład Anny Węgleńskiej) i w kilku zgodnych opracowaniach; nazwy według przekładu A. Węgleńskiej; bez cytatów (utwór chroniony). Pominięto rodzaj narratora, wiek bohaterów i szczegóły zakończenia, które źródła podają różnie.',
+      theory: `
+        <h3>Metryczka</h3>
+        <table>
+          <tr><td><b>autorka</b></td><td><b>Astrid Lindgren</b> – szwedzka pisarka</td></tr>
+          <tr><td><b>pierwsze wydanie</b></td><td>1981 w Szwecji; po polsku od 1985 r. w przekładzie Anny Węgleńskiej</td></tr>
+          <tr><td><b>gatunek</b></td><td><b>powieść</b> przygodowa z elementami fantastycznymi (leśne stwory)</td></tr>
+          <tr><td><b>miejsce</b></td><td>zamek Mattisa, otaczający go las, Niedźwiedzia Grota; czas akcji nieokreślony</td></tr>
+        </table>
+        <h3>Dwa wrogie rody</h3>
+        <table>
+          <tr><th>banda Mattisa</th><th>banda Borki</th></tr>
+          <tr><td><b>Mattis</b> – herszt zbójców, ojciec Ronji</td><td><b>Borka</b> – herszt wrogiej bandy, ojciec Birka</td></tr>
+          <tr><td><b>Lovis</b> – mądra, rozsądna mama Ronji</td><td><b>Undis</b> – mama Birka</td></tr>
+          <tr><td><b>Ronja</b> – jedyna córka, odważna „dziewczyna lasu”</td><td><b>Birk</b> – syn Borki, rówieśnik Ronji</td></tr>
+        </table>
+        <p><b>Łysy Per</b> to najstarszy zbójca z bandy Mattisa. Przed śmiercią zdradza Ronji tajemnicę <b>srebrnej góry</b>.</p>
+        <h3>Noc narodzin Ronji</h3>
+        <p>W burzową noc, gdy rodzi się Ronja, piorun rozłupuje zamek Mattisa na dwie części. Między nimi powstaje przepaść – <b>Diabelska Czeluść</b>. Tej samej nocy rodzi się Birk. W drugiej połowie zamku osiedla się banda Borki.</p>
+        <h3>Stwory z lasu</h3>
+        <ul>
+          <li><b>Wietrzydła</b> – drapieżne, latające istoty podobne do ptaków; najgroźniejsze w lesie;</li>
+          <li><b>Szaruchy</b> – małe, szare i napastliwe; boją się ognia;</li>
+          <li><b>Pupiszonki</b> – małe, zabawne i niegroźne; mieszkają pod ziemią;</li>
+          <li><b>Mgłowce</b> – we mgle śpiewem zwodzą ludzi ze ścieżki.</li>
+        </ul>
+        <h3>Najważniejsze wydarzenia</h3>
+        <ol>
+          <li>Ronja poznaje las i uczy się unikać jego niebezpieczeństw.</li>
+          <li>Spotyka Birka. Dzieci rywalizują, skacząc przez Diabelską Czeluść. Gdy Birk wpada w tarapaty, Ronja go ratuje. Zimą Birk ratuje życie Ronji.</li>
+          <li>Rodzi się przyjaźń – Ronja i Birk zostają jak rodzeństwo i spotykają się w tajemnicy przed ojcami.</li>
+          <li>Mattis chwyta Birka, żeby zmusić Borkę do opuszczenia zamku. Ronja oddaje się w ręce Borki, żeby uwolnić Birka. Rozgniewany Mattis mówi, że nie ma już córki.</li>
+          <li>Ronja i Birk uciekają do <b>Niedźwiedziej Groty</b> i żyją w lesie.</li>
+          <li>Mattis przychodzi do groty, przeprasza córkę i zabiera ją do domu.</li>
+          <li>Ronja i Birk postanawiają, że <b>nie zostaną zbójnikami</b> – nie chcą krzywdzić ludzi.</li>
+        </ol>
+        <h3>O czym warto porozmawiać</h3>
+        <ul>
+          <li>przyjaźń silniejsza niż wrogość rodzin – dzieci godzą dorosłych;</li>
+          <li>dorastanie, samodzielność i prawo do własnego zdania;</li>
+          <li>miłość, duma i przebaczenie między ojcem a córką;</li>
+          <li>przyroda – las jest piękny, ale też groźny;</li>
+          <li>uczciwość zamiast rozboju.</li>
+        </ul>
+      `,
+      flashcards: [
+        ['„Ronja, córka zbójnika” – autorka', 'Astrid Lindgren, Szwecja (1981)'],
+        ['Rodzice Ronji', 'Mattis (herszt zbójców) i Lovis'],
+        ['Birk', 'syn Borki, herszta wrogiej bandy; urodził się tej samej nocy co Ronja'],
+        ['Noc narodzin Ronji', 'piorun rozłupuje zamek na dwie części'],
+        ['Diabelska Czeluść', 'przepaść między dwiema częściami zamku'],
+        ['Wietrzydła', 'drapieżne, latające stwory – najgroźniejsze w lesie'],
+        ['Szaruchy', 'małe, szare, napastliwe; boją się ognia'],
+        ['Pupiszonki', 'małe, niegroźne; mieszkają pod ziemią'],
+        ['Mgłowce', 'śpiewem we mgle zwodzą ludzi ze ścieżki'],
+        ['Niedźwiedzia Grota', 'tu Ronja i Birk mieszkają po ucieczce'],
+        ['Łysy Per', 'najstarszy zbójca; zdradza Ronji tajemnicę srebrnej góry'],
+        ['Zakończenie', 'Ronja i Birk nie chcą zostać zbójnikami'],
+      ],
+      questions: [
+        { id: 'qunubf', q: 'Kto napisał „Ronję, córkę zbójnika”?', options: ['Astrid Lindgren', 'Jan Brzechwa', 'René Goscinny', 'Andrzej Maleszka'], answer: 0, explain: 'Autorką jest Astrid Lindgren, która napisała też m.in. „Braci Lwie Serce”.' },
+        { id: '9ruonl', q: 'Z jakiego kraju pochodziła Astrid Lindgren?', options: ['ze Szwecji', 'z Francji', 'z Anglii', 'z Polski'], answer: 0, explain: 'Astrid Lindgren była szwedzką pisarką.' },
+        { id: 'nc8ipi', q: 'Jak nazywają się rodzice Ronji?', options: ['Mattis i Lovis', 'Borka i Undis', 'Birk i Lovis', 'Mattis i Undis'], answer: 0, explain: 'Mattis i Lovis to rodzice Ronji. Borka i Undis – rodzice Birka.' },
+        { id: 'as8ilz', q: 'Kim był Mattis?', options: ['hersztem bandy zbójców', 'królem tej krainy', 'leśniczym', 'kupcem'], answer: 0, explain: 'Mattis był hersztem, czyli przywódcą zbójców.' },
+        { id: 'qga1hq', q: 'Co stało się w noc narodzin Ronji?', options: ['piorun rozłupał zamek na dwie części', 'zamek spłonął', 'Wietrzydła porwały Lovis', 'Mattis wygnał Borkę z lasu'], answer: 0, explain: 'W burzową noc zamek pękł na pół, a między połówkami powstała przepaść.' },
+        { id: 'q96b0t', q: 'Jak nazywa się przepaść, która podzieliła zamek?', options: ['Diabelska Czeluść', 'Niedźwiedzia Grota', 'Srebrna Góra', 'Mglista Dolina'], answer: 0, explain: 'Diabelska Czeluść oddzielała część zamku Mattisa od części, w której zamieszkał Borka.' },
+        { id: 'm6ft0q', q: 'Kim jest Birk?', options: ['synem Borki, herszta wrogiej bandy', 'bratem Ronji', 'najstarszym zbójcą Mattisa', 'leśnym stworem'], answer: 0, explain: 'Birk to syn wroga Mattisa. Mimo to on i Ronja zostają przyjaciółmi.' },
+        { id: 'g6o3gz', q: 'Kiedy urodził się Birk?', options: ['tej samej burzowej nocy co Ronja', 'rok po Ronji', 'w dniu, w którym Ronja uciekła z domu', 'kilka lat przed Ronją'], answer: 0, explain: 'Ronja i Birk urodzili się tej samej nocy, gdy piorun rozłupał zamek.' },
+        { id: 'pv8pbn', q: 'Jak nazywają się drapieżne, latające stwory – najgroźniejsze w lesie?', options: ['Wietrzydła', 'Pupiszonki', 'Szaruchy', 'Mgłowce'], answer: 0, explain: 'Wietrzydła atakują z powietrza. Pupiszonki są niegroźne, Szaruchy – małe i szare, a Mgłowce zwodzą we mgle.' },
+        { id: '6omvp3', q: 'Które stwory są małe, niegroźne i mieszkają pod ziemią?', options: ['Pupiszonki', 'Wietrzydła', 'Szaruchy', 'Mgłowce'], answer: 0, explain: 'Pupiszonki to zabawne, nieszkodliwe stworki spod ziemi.' },
+        { id: 'ja91v7', q: 'Co robią Mgłowce?', options: ['we mgle śpiewem zwodzą ludzi ze ścieżki', 'atakują z powietrza jak drapieżne ptaki', 'kopią podziemne korytarze', 'pilnują srebrnej góry'], answer: 0, explain: 'Mgłowce zwabiają ludzi śpiewem – kto pójdzie za nimi, zgubi drogę.' },
+        { id: 'kb6vj8', q: 'Co zrobiła Ronja, gdy Mattis uwięził Birka?', options: ['oddała się w ręce Borki, żeby uwolnić Birka', 'uciekła do Szwecji', 'zamknęła ojca w lochu', 'poprosiła Wietrzydła o pomoc'], answer: 0, explain: 'Ronja przeszła na stronę Borki – Mattis musiał oddać Birka, żeby odzyskać córkę.' },
+        { id: 'wy5d5z', q: 'Gdzie zamieszkali Ronja i Birk po ucieczce z zamku?', options: ['w Niedźwiedziej Grocie', 'w Diabelskiej Czeluści', 'w domu Undis', 'w mieście'], answer: 0, explain: 'Ronja i Birk żyli w lesie, w Niedźwiedziej Grocie.' },
+        { id: '7jyexk', q: 'Kim był Łysy Per?', options: ['najstarszym zbójcą z bandy Mattisa', 'ojcem Birka', 'leśnym stworem', 'królem Wietrzydeł'], answer: 0, explain: 'Łysy Per był najstarszym zbójcą. Przed śmiercią zdradził Ronji tajemnicę srebrnej góry.' },
+        { id: 'xfidex', q: 'Co postanawiają Ronja i Birk na końcu książki?', options: ['że nie zostaną zbójnikami', 'że zostaną hersztami obu band', 'że opuszczą las na zawsze', 'że zamieszkają z Wietrzydłami'], answer: 0, explain: 'Ronja i Birk nie chcą krzywdzić ludzi ani ich okradać.' },
+        { id: '2x3jqh', q: 'Kto przyszedł do Niedźwiedziej Groty, przeprosił Ronję i zabrał ją do domu?', options: ['Mattis', 'Borka', 'Łysy Per', 'Birk'], answer: 0, explain: 'Mattis tęsknił za córką. Przyszedł do groty i przeprosił – Ronja wróciła na zamek.' },
+      ],
+    },
   ],
 });

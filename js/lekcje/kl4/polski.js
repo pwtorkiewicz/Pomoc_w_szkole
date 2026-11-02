@@ -1171,3 +1171,374 @@ window.LESSONS['polski/teatr'] = [
     check: { q: 'Którą lalkę porusza się za pomocą nitek od góry?', options: ['marionetkę', 'pacynkę', 'kukiełkę'], answer: 0, explain: 'Marionetka wisi na nitkach przymocowanych do krzyżaka, którym porusza lalkarz.' },
   },
 ];
+
+window.LESSONS['polski/lektura-kleks'] = [
+  {
+    title: 'Akademia pana Kleksa – metryczka',
+    svg: `<svg viewBox="0 0 400 204" role="img" aria-label="Cztery kafelki: autor – Jan Brzechwa; pierwsze wydanie – 1946; gatunek – powieść fantastyczna; narrator – Adaś Niezgódka, mówi ja.">
+      <g class="f1 s1"><rect x="8" y="8" width="188" height="90" rx="10"/><rect x="204" y="8" width="188" height="90" rx="10"/><rect x="8" y="106" width="188" height="90" rx="10"/><rect x="204" y="106" width="188" height="90" rx="10"/></g>
+      <g class="tx-b" style="font-size:24px" text-anchor="middle"><text x="28" y="44">✍️</text><text x="224" y="44">📅</text><text x="28" y="142">📚</text><text x="224" y="142">🗣️</text></g>
+      <g class="tx-s"><text x="46" y="32">autor</text><text x="242" y="32">pierwsze wydanie</text><text x="46" y="130">gatunek</text><text x="242" y="130">narrator – mówi „ja”</text></g>
+      <g class="tx-b"><text x="46" y="62">Jan Brzechwa</text><text x="242" y="62">1946</text><text x="46" y="160">powieść</text><text x="46" y="182">fantastyczna</text><text x="242" y="160">Adaś</text><text x="242" y="182">Niezgódka</text></g>
+    </svg>`,
+    text: `<p>„Akademię pana Kleksa” napisał <b>Jan Brzechwa</b>. To <b>powieść fantastyczna</b> – długi utwór, w którym dzieją się rzeczy niemożliwe: mówiący szpak, sny w lusterkach, drzwi do baśni.</p>
+      <p>Historię opowiada <b>Adaś Niezgódka</b>, uczeń Akademii. Jest <b>narratorem</b> i sam bierze udział w wydarzeniach, dlatego mówi „ja”.</p>`,
+    remember: 'Autor: Jan Brzechwa · powieść fantastyczna · narrator: Adaś Niezgódka (mówi „ja”).',
+    hook: 'Akademia na A: wszyscy uczniowie mają imiona na A – tak jak Adaś, Akademia i Ambroży Kleks!',
+    check: { q: 'Kto opowiada historię w „Akademii pana Kleksa”?', options: ['Adaś Niezgódka', 'pan Kleks', 'szpak Mateusz'], answer: 0, explain: 'Narratorem jest Adaś. Mateusz opowiada tylko swoją historię w jednym rozdziale.' },
+  },
+  {
+    title: 'Kim jest pan Kleks?',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Rysunek pana Kleksa z podpisami: wielobarwna czupryna, kolorowe piegi, czarna broda, surdut z kieszeniami, w kieszeni szpak Mateusz, pompka powiększa jedzenie.">
+      <circle cx="194" cy="40" r="11" class="f1 s1"/><circle cx="210" cy="32" r="11" class="f2 s2"/><circle cx="226" cy="40" r="11" class="f3 s3"/><circle cx="188" cy="56" r="8" class="f4 s4"/><circle cx="232" cy="56" r="8" class="f5 s5"/>
+      <circle cx="210" cy="62" r="20" class="bg ln"/>
+      <circle cx="203" cy="57" r="5" class="ln"/><circle cx="217" cy="57" r="5" class="ln"/><path d="M208,57 L212,57" class="ln"/>
+      <circle cx="200" cy="68" r="2.5" class="f2 s2"/><circle cx="220" cy="68" r="2.5" class="f3 s3"/>
+      <path d="M192,72 Q210,112 228,72" class="ln sw"/>
+      <path d="M186,104 L234,104 L250,190 L170,190 Z" class="f1 s1 sw"/>
+      <rect x="182" y="140" width="18" height="14" class="f4 s4"/><rect x="220" y="140" width="18" height="14" class="f4 s4"/><rect x="186" y="166" width="18" height="14" class="f4 s4"/><rect x="216" y="166" width="18" height="14" class="f4 s4"/>
+      <g class="ln-thin"><path d="M162,36 L184,40"/><path d="M162,68 L196,68"/><path d="M162,98 L200,90"/><path d="M258,124 L238,124"/><path d="M258,150 L238,147"/><path d="M258,176 L245,176"/></g>
+      <g class="tx-s" text-anchor="end"><text x="158" y="40">wielobarwna czupryna</text><text x="158" y="72">kolorowe piegi</text><text x="158" y="102">czarna broda</text></g>
+      <g class="tx-s"><text x="262" y="128">surdut z kieszeniami</text><text x="262" y="154">w kieszeni – szpak</text><text x="262" y="180">pompka – powiększa</text></g>
+    </svg>`,
+    text: `<p><b>Ambroży Kleks</b> założył Akademię i sam w niej uczy. Wygląda niezwykle: ma wielobarwną czuprynę, czarną brodę i kolorowe piegi – zapasowe trzyma w <b>tabakierce</b>. Nosi surdut z mnóstwem kieszeni.</p>
+      <p>Umie unosić się w powietrzu, a jedzenie powiększa <b>pompką</b>. Piegi dostarcza mu golibroda <b>Filip</b>.</p>`,
+    remember: 'Pan Kleks: wielobarwna czupryna, czarna broda, piegi (zapasowe w tabakierce), surdut z kieszeniami, pompka do powiększania.',
+    hook: '„Kleks” to plama atramentu. Pan Kleks jest jak kolorowy kleks – barwne są jego włosy, piegi, a nawet jedzenie!',
+  },
+  {
+    title: 'Niezwykła szkoła',
+    svg: `<svg viewBox="0 0 400 214" role="img" aria-label="Cztery kafelki: tylko imiona na A, 24 uczniów; senne lusterka zapisują sny; obiad z kolorowych szkiełek; drzwi w murze prowadzą do baśni. Na dole: ulica Czekoladowa.">
+      <g class="f4 s4"><rect x="8" y="8" width="188" height="78" rx="10"/><rect x="204" y="8" width="188" height="78" rx="10"/><rect x="8" y="94" width="188" height="78" rx="10"/><rect x="204" y="94" width="188" height="78" rx="10"/></g>
+      <g class="tx-b" style="font-size:24px" text-anchor="middle"><text x="30" y="44">🔤</text><text x="226" y="44">🪞</text><text x="30" y="130">🍳</text><text x="226" y="130">🚪</text></g>
+      <g class="tx-b" style="font-size:15px"><text x="50" y="38">tylko imiona na A</text><text x="246" y="38">senne lusterka</text><text x="50" y="124">obiad ze szkiełek</text><text x="246" y="124">drzwi w murze</text></g>
+      <g class="tx-s"><text x="50" y="62">24 uczniów</text><text x="246" y="62">zapisują sny</text><text x="50" y="148">i powiększanie pompką</text><text x="246" y="148">prowadzą do baśni</text></g>
+      <rect x="8" y="180" width="384" height="28" rx="8" class="f2 s2"/>
+      <text x="200" y="199" class="tx" text-anchor="middle">🍫 ulica Czekoladowa</text>
+    </svg>`,
+    text: `<p>Akademia stoi przy <b>ulicy Czekoladowej</b>, w parku otoczonym murem. Pan Kleks przyjmuje tylko chłopców, których <b>imiona zaczynają się na A</b> – jest ich 24.</p>
+      <p>Uczniowie oddają rano <b>senne lusterka</b>, w których zapisują się ich sny. Pan Kleks robi z dobrych snów kolorowe pastylki. Są tu niezwykłe lekcje (np. <b>kleksografia</b>), wycieczka do <b>Fabryki Dziur</b>, a drzwi w murze prowadzą do <b>różnych baśni</b>.</p>`,
+    remember: 'Imiona na A · ulica Czekoladowa · senne lusterka · drzwi do baśni · Fabryka Dziur.',
+    hook: 'Senne lusterko działa jak aparat do snów – „robi zdjęcie” temu, co ci się przyśniło.',
+    check: { q: 'Do czego służą senne lusterka?', options: ['zapisują sny uczniów', 'otwierają drzwi do baśni', 'powiększają jedzenie'], answer: 0, explain: 'W lusterkach zapisują się sny. Drzwi otwierają klucze pana Kleksa, a jedzenie powiększa pompka.' },
+  },
+  {
+    title: 'Tajemnica szpaka Mateusza',
+    svg: `<svg viewBox="0 0 400 192" role="img" aria-label="Historia Mateusza w pięciu krokach: królewicz Mateusz, zabija króla wilków, dostaje czapkę od doktora Paj-Chi-Wo, zmienia się w szpaka, gubi guzik i zostaje szpakiem.">
+      <defs><marker id="a-kl4-kleks-1" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <g class="f5 s5"><rect x="8" y="8" width="112" height="76" rx="10"/><rect x="144" y="8" width="112" height="76" rx="10"/><rect x="280" y="8" width="112" height="76" rx="10"/><rect x="280" y="108" width="112" height="76" rx="10"/><rect x="144" y="108" width="112" height="76" rx="10"/></g>
+      <g class="tx-b" style="font-size:22px" text-anchor="middle"><text x="64" y="36">👑</text><text x="200" y="36">🐺</text><text x="336" y="36">🧢</text><text x="336" y="136">🐦</text><text x="200" y="136">🔘</text></g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="64" y="58">królewicz</text><text x="64" y="74">Mateusz</text>
+        <text x="200" y="58">zabija</text><text x="200" y="74">króla wilków</text>
+        <text x="336" y="58">czapka od dr.</text><text x="336" y="74">Paj-Chi-Wo</text>
+        <text x="336" y="158">zmienia się</text><text x="336" y="174">w szpaka</text>
+        <text x="200" y="158">gubi guzik –</text><text x="200" y="174">zostaje szpakiem</text>
+      </g>
+      <g class="ln"><path d="M122,46 L140,46" marker-end="url(#a-kl4-kleks-1)"/><path d="M258,46 L276,46" marker-end="url(#a-kl4-kleks-1)"/><path d="M336,86 L336,104" marker-end="url(#a-kl4-kleks-1)"/><path d="M278,146 L260,146" marker-end="url(#a-kl4-kleks-1)"/></g>
+    </svg>`,
+    text: `<p>Szpak <b>Mateusz</b> mieszka u pana Kleksa, budzi uczniów i mówi <b>tylko końcówkami wyrazów</b>. W jednym rozdziale opowiada swoją historię.</p>
+      <p>Był <b>królewiczem</b>. Zabił wilka, który okazał się królem wilków. Doktor Paj-Chi-Wo dał mu <b>czapkę</b>, dzięki której można zmienić postać. Gdy wilki napadły na pałac, Mateusz zamienił się w szpaka – ale zgubił <b>guzik od czapki</b> i nie może wrócić do ludzkiej postaci.</p>`,
+    remember: 'Mateusz – zaczarowany królewicz; bez guzika od czapki nie może znów stać się człowiekiem.',
+    hook: 'Guzik to klucz do tej historii: Mateusz go zgubił, a na końcu… pan Kleks sam stanie się guzikiem!',
+    check: { q: 'Dlaczego Mateusz nie może wrócić do ludzkiej postaci?', options: ['zgubił guzik od czapki', 'pan Kleks mu nie pozwala', 'zapomniał zaklęcia'], answer: 0, explain: 'Czapka bez guzika nie działała – Mateusz musiał zostać szpakiem.' },
+  },
+  {
+    title: 'Zakończenie – koniec bajki',
+    svg: `<svg viewBox="0 0 400 254" role="img" aria-label="Zakończenie po kolei: Alojzy niszczy tabliczki z sekretami; pan Kleks traci moc i maleje; pan Kleks zamienia się w guzik; Mateusz odzyskuje ludzką postać; Mateusz jest autorem bajki, Akademia znika.">
+      <defs><marker id="a-kl4-kleks-2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <g class="f3 s3"><rect x="6" y="6" width="388" height="38" rx="9"/><rect x="6" y="56" width="388" height="38" rx="9"/><rect x="6" y="106" width="388" height="38" rx="9"/><rect x="6" y="156" width="388" height="38" rx="9"/><rect x="6" y="206" width="388" height="38" rx="9"/></g>
+      <g class="tx-b" style="font-size:20px" text-anchor="middle"><text x="26" y="32">🤖</text><text x="26" y="82">😟</text><text x="26" y="132">🔘</text><text x="26" y="182">🧑</text><text x="26" y="232">📖</text></g>
+      <g class="tx"><text x="46" y="30">Alojzy niszczy tabliczki z sekretami</text><text x="46" y="80">pan Kleks traci moc i maleje</text><text x="46" y="130">pan Kleks zamienia się w guzik</text><text x="46" y="180">Mateusz odzyskuje ludzką postać</text><text x="46" y="230">Mateusz – autor bajki; Akademia znika</text></g>
+      <g class="ln"><path d="M370,44 L370,55" marker-end="url(#a-kl4-kleks-2)"/><path d="M370,94 L370,105" marker-end="url(#a-kl4-kleks-2)"/><path d="M370,144 L370,155" marker-end="url(#a-kl4-kleks-2)"/><path d="M370,194 L370,205" marker-end="url(#a-kl4-kleks-2)"/></g>
+    </svg>`,
+    text: `<p>Golibroda <b>Filip</b> zbudował <b>Alojzego</b> – mechaniczną lalkę, która wygląda jak chłopiec, ale wszystko psuje. Alojzy niszczy porcelanowe tabliczki z sekretami pana Kleksa i pan Kleks traci moc.</p>
+      <p>Pan Kleks maleje i zamienia się w <b>guzik</b> – a dzięki niemu Mateusz znów staje się człowiekiem. Wyjawia Adasiowi, że jest <b>autorem bajki o Akademii</b>. Akademia znika, bajka się kończy.</p>`,
+    remember: 'Alojzy niszczy sekrety → pan Kleks traci moc → guzik → Mateusz znów człowiekiem i autorem bajki → Akademia znika.',
+    hook: 'Pozory mylą: Alojzy wygląda jak chłopiec, a jest maszyną; Mateusz wygląda jak ptak, a jest… autorem całej bajki.',
+    check: { q: 'Kim okazuje się Mateusz na końcu?', options: ['autorem bajki o Akademii', 'synem pana Kleksa', 'królem wilków'], answer: 0, explain: 'Mateusz wyjawia, że wymyślił bajkę o Akademii.' },
+  },
+];
+
+window.LESSONS['polski/lektura-mikolajek'] = [
+  {
+    title: '„Mikołajek” – metryczka',
+    svg: `<svg viewBox="0 0 400 204" role="img" aria-label="Cztery kafelki: tekst – René Goscinny; rysunki – Jean-Jacques Sempé; forma – zbiór opowiadań; narrator – Mikołajek, mówi ja.">
+      <g class="f2 s2"><rect x="8" y="8" width="188" height="90" rx="10"/><rect x="204" y="8" width="188" height="90" rx="10"/><rect x="8" y="106" width="188" height="90" rx="10"/><rect x="204" y="106" width="188" height="90" rx="10"/></g>
+      <g class="tx-b" style="font-size:24px" text-anchor="middle"><text x="28" y="44">✍️</text><text x="224" y="44">🎨</text><text x="28" y="142">📚</text><text x="224" y="142">🗣️</text></g>
+      <g class="tx-s"><text x="46" y="32">tekst</text><text x="242" y="32">rysunki</text><text x="46" y="130">forma</text><text x="242" y="130">narrator – mówi „ja”</text></g>
+      <g class="tx-b"><text x="46" y="62">René Goscinny</text><text x="242" y="62">J.-J. Sempé</text><text x="46" y="160">zbiór</text><text x="46" y="182">opowiadań</text><text x="242" y="160">Mikołajek</text></g>
+    </svg>`,
+    text: `<p>„Mikołajka” stworzyło dwóch Francuzów: <b>René Goscinny</b> napisał tekst, a <b>Jean-Jacques Sempé</b> narysował ilustracje. Pierwszy tom wydano we Francji w 1960 roku.</p>
+      <p>To <b>zbiór opowiadań</b>: każde jest osobną, krótką historią, ale bohaterowie są wciąż ci sami. Opowiada <b>Mikołajek</b> – mówi „ja”, a gdy bawi się z kolegami, „my”.</p>`,
+    remember: 'Goscinny – tekst, Sempé – rysunki · zbiór opowiadań · narrator: Mikołajek.',
+    hook: 'G jak Goscinny – gada (pisze), S jak Sempé – szkicuje (rysuje).',
+    check: { q: 'Kto narysował ilustracje do „Mikołajka”?', options: ['Jean-Jacques Sempé', 'René Goscinny', 'Mikołajek'], answer: 0, explain: 'Sempé rysował, a Goscinny pisał tekst.' },
+  },
+  {
+    title: 'Koledzy z klasy',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Sześć kafelków z kolegami Mikołajka: Alcest – ciągle je; Ananiasz – prymus w okularach; Euzebiusz – daje w nos; Kleofas – najgorszy uczeń; Rufus – syn policjanta; Gotfryd – bogaty tata.">
+      <g class="f1 s1">
+        <rect x="8" y="10" width="124" height="92" rx="10"/><rect x="138" y="10" width="124" height="92" rx="10"/><rect x="268" y="10" width="124" height="92" rx="10"/>
+        <rect x="8" y="110" width="124" height="92" rx="10"/><rect x="138" y="110" width="124" height="92" rx="10"/><rect x="268" y="110" width="124" height="92" rx="10"/>
+      </g>
+      <g class="tx-b" style="font-size:24px" text-anchor="middle">
+        <text x="70" y="40">🥐</text><text x="200" y="40">👓</text><text x="330" y="40">💪</text>
+        <text x="70" y="140">😴</text><text x="200" y="140">👮</text><text x="330" y="140">💰</text>
+      </g>
+      <g class="tx-b" style="font-size:15px" text-anchor="middle">
+        <text x="70" y="66">Alcest</text><text x="200" y="66">Ananiasz</text><text x="330" y="66">Euzebiusz</text>
+        <text x="70" y="166">Kleofas</text><text x="200" y="166">Rufus</text><text x="330" y="166">Gotfryd</text>
+      </g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="70" y="88">ciągle je</text><text x="200" y="88">prymus, pupilek</text><text x="330" y="88">daje „w nos”</text>
+        <text x="70" y="188">najgorszy uczeń</text><text x="200" y="188">syn policjanta</text><text x="330" y="188">bogaty tata</text>
+      </g>
+    </svg>`,
+    text: `<p>Każdy kolega Mikołajka ma swoją stałą cechę, która powraca w kolejnych historiach. <b>Alcest</b>, najlepszy przyjaciel, ciągle je. <b>Ananiasz</b> to prymus i pupilek pani – nosi okulary, więc koledzy go nie biją.</p>
+      <p><b>Euzebiusz</b> jest najsilniejszy, <b>Kleofas</b> – najgorszy w nauce, <b>Rufus</b> to syn policjanta z gwizdkiem, a <b>Gotfryd</b> ma bogatego tatę.</p>`,
+    remember: 'Alcest – je · Ananiasz – prymus · Euzebiusz – siłacz · Kleofas – najsłabszy uczeń · Rufus – syn policjanta · Gotfryd – bogaty tata.',
+    hook: 'Alcest – Apetyt (oba na A); Kleofas – Kąt (oba na K): Kleofas często stoi w kącie.',
+    check: { q: 'Który kolega jest prymusem i nosi okulary?', options: ['Ananiasz', 'Alcest', 'Kleofas'], answer: 0, explain: 'Ananiasz jest najlepszym uczniem i pupilkiem pani.' },
+  },
+  {
+    title: 'Dlaczego „Rosół”?',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Gra słów: opiekun mówi – spójrzcie mi w oczy; na rosole pływają oka tłuszczu; dlatego przezwisko brzmi Rosół.">
+      <defs><marker id="a-kl4-miko-1" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="8" y="8" width="168" height="110" rx="12" class="f1 s1"/>
+      <rect x="224" y="8" width="168" height="110" rx="12" class="f4 s4"/>
+      <text x="92" y="46" class="tx-b" style="font-size:28px" text-anchor="middle">🧑‍🏫</text>
+      <text x="92" y="78" class="tx" text-anchor="middle">„Spójrzcie</text>
+      <text x="92" y="100" class="tx" text-anchor="middle">mi w oczy!”</text>
+      <text x="308" y="46" class="tx-b" style="font-size:28px" text-anchor="middle">🍲</text>
+      <text x="308" y="78" class="tx" text-anchor="middle">na rosole</text>
+      <text x="308" y="100" class="tx" text-anchor="middle">pływają „oka”</text>
+      <path d="M178,63 L220,63" class="ln" marker-end="url(#a-kl4-miko-1)"/>
+      <rect x="100" y="132" width="200" height="44" rx="12" class="f2 s2"/>
+      <text x="200" y="160" class="tx-b" text-anchor="middle">przezwisko: Rosół</text>
+    </svg>`,
+    text: `<p>W szkole Mikołajka jest opiekun, którego uczniowie nazywają <b>Rosół</b>. Skąd to przezwisko? Ciągle powtarza: „Spójrzcie mi w oczy”. A na rosole pływają kółeczka tłuszczu, które nazywamy „okami”.</p>
+      <p>To <b>gra słów</b> – żart, który wykorzystuje podobieństwo wyrazów (oczy – oka). W „Mikołajku” jest dużo takiego humoru.</p>`,
+    remember: 'Rosół – przezwisko opiekuna: „Spójrzcie mi w oczy” + „oka” na rosole = gra słów.',
+    check: { q: 'Skąd się wzięło przezwisko Rosół?', options: ['opiekun mówi „Spójrzcie mi w oczy”, a na rosole są „oka”', 'opiekun codziennie je rosół', 'opiekun naprawdę nazywa się Rosół'], answer: 0, explain: 'To gra słów: oczy – „oka” tłuszczu na zupie.' },
+  },
+  {
+    title: 'Opowiada dziecko – i to jest zabawne',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Porównanie. Mikołajek mówi: tata powiedział, że to był najfajniejszy dzień jego życia, i poszedł się położyć z mokrym ręcznikiem na głowie. Czytelnik rozumie: tata jest zmęczony i wcale nie był zachwycony. Przykład wymyślony, nie z książki.">
+      <defs><marker id="a-kl4-miko-2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="8" y="8" width="384" height="84" rx="12" class="f1 s1"/>
+      <text x="20" y="30" class="tx-b" style="font-size:15px">🧒 Mikołajek mówi:</text>
+      <g class="tx-s"><text x="20" y="52">Tata powiedział, że to był najfajniejszy dzień jego</text><text x="20" y="70">życia, i poszedł się położyć z mokrym ręcznikiem</text><text x="20" y="86">na głowie.</text></g>
+      <path d="M200,94 L200,114" class="ln" marker-end="url(#a-kl4-miko-2)"/>
+      <rect x="8" y="118" width="384" height="70" rx="12" class="f3 s3"/>
+      <text x="20" y="140" class="tx-b" style="font-size:15px">📖 Czytelnik rozumie:</text>
+      <g class="tx-s"><text x="20" y="162">tata jest zmęczony i wcale nie był zachwycony –</text><text x="20" y="180">a Mikołajek tego nie zauważył!</text></g>
+      <text x="200" y="210" class="tx-s" text-anchor="middle">(przykład wymyślony, nie z książki)</text>
+    </svg>`,
+    text: `<p>Mikołajek opowiada <b>prostym, dziecięcym językiem</b> – tak jak mówią dzieci. Opisuje wszystko szczerze, ale <b>nie zawsze rozumie</b> dorosłych i powagę sytuacji.</p>
+      <p>Czytelnik widzi więcej niż narrator – i właśnie dlatego się śmieje. To humor, który bierze się z <b>naiwnego spojrzenia dziecka</b>.</p>`,
+    remember: 'Narrator-dziecko + czytelnik, który rozumie więcej = humor „Mikołajka”.',
+    hook: 'Mikołajek mówi to, co widzi, a ty czytasz „między wierszami” – jak detektyw, który rozumie więcej niż świadek.',
+    check: { q: 'Skąd bierze się humor w „Mikołajku”?', options: ['narrator-dziecko nie zawsze rozumie dorosłych', 'z rymów na końcu zdań', 'z czarów i zaklęć'], answer: 0, explain: 'Mikołajek opisuje sytuacje po swojemu, a my rozumiemy, co naprawdę się stało.' },
+  },
+  {
+    title: 'Przykładowe historie',
+    svg: `<svg viewBox="0 0 400 204" role="img" aria-label="Cztery kafelki z przykładowymi historiami: zdjęcie klasy – nic nie idzie gładko; zabawa w kowbojów – tata zostaje jeńcem; pies w domu – ma właściciela; kolega z Anglii – uczy się francuskiego.">
+      <g class="f5 s5"><rect x="8" y="8" width="188" height="90" rx="10"/><rect x="204" y="8" width="188" height="90" rx="10"/><rect x="8" y="106" width="188" height="90" rx="10"/><rect x="204" y="106" width="188" height="90" rx="10"/></g>
+      <g class="tx-b" style="font-size:24px" text-anchor="middle"><text x="102" y="38">📷</text><text x="298" y="38">🤠</text><text x="102" y="136">🐕</text><text x="298" y="136">✈️</text></g>
+      <g class="tx-b" style="font-size:15px" text-anchor="middle"><text x="102" y="62">zdjęcie klasy</text><text x="298" y="62">zabawa w kowbojów</text><text x="102" y="160">pies w domu</text><text x="298" y="160">kolega z Anglii</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="102" y="84">zamieszanie u fotografa</text><text x="298" y="84">tata zostaje „jeńcem”</text><text x="102" y="182">okazuje się, że ma pana</text><text x="298" y="182">uczy się francuskiego</text></g>
+    </svg>`,
+    text: `<p>Kilka historii ze zbioru: fotograf ma zrobić wspólne zdjęcie klasy, ale przez zamieszanie nic nie idzie gładko. Podczas zabawy w kowbojów tata chce pogodzić chłopców – i zostaje „jeńcem” przywiązanym do drzewa. Mikołajek przyprowadza psa, którego mama nie chce w domu – a pies ma właściciela.</p>
+      <p>Wszystko mogłoby się zdarzyć naprawdę, więc „Mikołajek” to utwór <b>realistyczny</b>. Uwaga: w różnych polskich wydaniach tytuły opowiadań mogą się różnić.</p>`,
+    remember: 'Zbiór opowiadań: każda historia osobna, bohaterowie ci sami · utwór realistyczny.',
+    check: { q: 'Kto podczas zabawy w kowbojów zostaje „jeńcem” przywiązanym do drzewa?', options: ['tata Mikołajka', 'Rosół', 'Alcest'], answer: 0, explain: 'Tata chciał pogodzić chłopców – i sam został „jeńcem”.' },
+  },
+];
+
+window.LESSONS['polski/lektura-magiczne-drzewo'] = [
+  {
+    title: 'Skąd się wzięło czerwone krzesło?',
+    svg: `<svg viewBox="0 0 400 194" role="img" aria-label="Cztery kroki: burza i piorun; piorun łamie Magiczne Drzewo, czyli dąb; z drewna powstaje czerwone krzesło; Kuki wyławia krzesło z rzeki.">
+      <defs><marker id="a-kl4-drzewo-1" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <g class="f3 s3"><rect x="10" y="8" width="170" height="76" rx="10"/><rect x="220" y="8" width="170" height="76" rx="10"/><rect x="220" y="110" width="170" height="76" rx="10"/><rect x="10" y="110" width="170" height="76" rx="10"/></g>
+      <g class="tx-b" style="font-size:24px" text-anchor="middle"><text x="95" y="38">⛈️</text><text x="305" y="38">🌳</text><text x="305" y="140">🪑</text><text x="95" y="140">🌊</text></g>
+      <g class="tx-s" text-anchor="middle">
+        <text x="95" y="62">burza i piorun</text>
+        <text x="305" y="60">łamie Magiczne</text><text x="305" y="76">Drzewo (dąb)</text>
+        <text x="305" y="162">z drewna powstaje</text><text x="305" y="178">czerwone krzesło</text>
+        <text x="95" y="162">Kuki wyławia</text><text x="95" y="178">krzesło z rzeki</text>
+      </g>
+      <g class="ln"><path d="M182,46 L216,46" marker-end="url(#a-kl4-drzewo-1)"/><path d="M305,86 L305,106" marker-end="url(#a-kl4-drzewo-1)"/><path d="M218,148 L184,148" marker-end="url(#a-kl4-drzewo-1)"/></g>
+    </svg>`,
+    text: `<p>„Magiczne drzewo. Czerwone krzesło” to <b>powieść fantastyczna</b> <b>Andrzeja Maleszki</b> z 2009 roku – pierwszy tom cyklu. Autor jest też reżyserem: nakręcił film i serial o tym samym tytule.</p>
+      <p>W czasie burzy piorun łamie stary dąb – <b>Magiczne Drzewo</b>. Z jego drewna powstają setki przedmiotów, a każdy ma w sobie cząstkę magii. Jednym z nich jest <b>czerwone krzesło</b>. Krzesło trafia do rzeki, a wyławia je <b>Kuki</b>.</p>`,
+    remember: 'Autor: Andrzej Maleszka · piorun łamie Magiczne Drzewo · z drewna – czerwone krzesło · znalazca: Kuki.',
+    hook: 'Magiczne Drzewo rozpadło się na setki rzeczy – w każdej została cząstka magii, jak okruszki z czarodziejskiego tortu.',
+    check: { q: 'Kto znalazł czerwone krzesło?', options: ['Kuki', 'Filip', 'Tosia'], answer: 0, explain: 'Kuki wyłowił krzesło z rzeki.' },
+  },
+  {
+    title: 'Uwaga, krzesło słucha!',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Działanie krzesła: siadasz na krześle i mówisz życzenie – życzenie się spełnia. Przykład wymyślony: chcę mieć oczy dookoła głowy – krzesło rozumie to dosłownie.">
+      <rect x="8" y="8" width="384" height="70" rx="12" class="f1 s1"/>
+      <text x="200" y="40" class="tx-b" style="font-size:24px" text-anchor="middle">🪑 + 🗣️ = ✨</text>
+      <text x="200" y="66" class="tx-s" text-anchor="middle">siadasz + mówisz życzenie = życzenie się spełnia</text>
+      <rect x="8" y="88" width="384" height="96" rx="12" class="f2 s2"/>
+      <text x="20" y="112" class="tx">„Chcę mieć oczy dookoła głowy!”</text>
+      <text x="20" y="140" class="tx-b" style="font-size:22px">👀👀👀</text>
+      <text x="110" y="138" class="tx-s">krzesło bierze to dosłownie –</text>
+      <text x="110" y="156" class="tx-s">i naprawdę dodaje oczu!</text>
+      <text x="20" y="176" class="tx-s">nawet życzenie powiedziane przypadkiem się spełnia</text>
+      <text x="200" y="202" class="tx-s" text-anchor="middle">(przykład wymyślony, nie z książki)</text>
+    </svg>`,
+    text: `<p>Czerwone krzesło spełnia życzenie osoby, która na nim <b>siedzi</b> – także takie, które ktoś powie przypadkiem. Rozumie słowa <b>dosłownie</b>, czyli dokładnie tak, jak brzmią.</p>
+      <p>Dlatego nieprzemyślane życzenie może narobić dużo kłopotów. Bohaterowie przekonują się o tym wiele razy.</p>`,
+    remember: 'Krzesło spełnia życzenia osoby siedzącej – dosłownie, nawet przypadkowe. Pomyśl, zanim coś powiesz!',
+    hook: 'Krzesło jest jak bardzo posłuszny, ale niemądry dżin: robi dokładnie to, co powiesz, a nie to, co masz na myśli.',
+    check: { q: 'Czyje życzenie spełnia czerwone krzesło?', options: ['osoby, która na nim siedzi', 'każdego, kto jest w pokoju', 'tylko Kukiego'], answer: 0, explain: 'Trzeba usiąść na krześle – wtedy życzenie się spełnia, nawet przypadkowe.' },
+  },
+  {
+    title: 'Bohaterowie',
+    svg: `<svg viewBox="0 0 400 252" role="img" aria-label="Bohaterowie: rodzice – muzycy, praca na statku; ciotka Maryla – zamieniona w siedmioletnią Wiki; rodzeństwo: Filip 12 lat, Tosia 11 lat, Kuki 10 lat; Max Rozmus – oszust, który chce zdobyć krzesło.">
+      <g class="f4 s4"><rect x="8" y="8" width="188" height="70" rx="10"/><rect x="204" y="8" width="188" height="70" rx="10"/></g>
+      <text x="22" y="36" class="tx-b" style="font-size:15px">🎻 rodzice – muzycy</text>
+      <text x="22" y="62" class="tx-s">🚢 rok pracy na statku</text>
+      <text x="218" y="36" class="tx-b" style="font-size:15px">💰 ciotka Maryla</text>
+      <text x="218" y="62" class="tx-s">→ mała Wiki (7 lat)</text>
+      <g class="f3 s3"><rect x="8" y="88" width="122" height="78" rx="10"/><rect x="139" y="88" width="122" height="78" rx="10"/><rect x="270" y="88" width="122" height="78" rx="10"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="69" y="120">Filip</text><text x="200" y="120">Tosia</text><text x="331" y="120">Kuki</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="69" y="144">12 lat</text><text x="200" y="144">11 lat</text><text x="331" y="144">10 lat</text><text x="69" y="160">najstarszy</text><text x="331" y="160">najmłodszy</text></g>
+      <rect x="8" y="176" width="384" height="68" rx="10" class="f5 s5"/>
+      <text x="22" y="204" class="tx-b" style="font-size:15px">🦹 Max Rozmus – przeciwnik</text>
+      <text x="22" y="230" class="tx-s">oszust, który chce zdobyć krzesło i ściga dzieci</text>
+    </svg>`,
+    text: `<p>Rodzeństwo to <b>Filip</b> (12 lat), <b>Tosia</b> (11) i <b>Kuki</b> (10). Ich rodzice są <b>muzykami</b>. Gdy tracą pracę w orkiestrze, wyjeżdżają na rok do pracy na <b>statku wycieczkowym</b>.</p>
+      <p>Dziećmi opiekuje się bogata i skąpa <b>ciotka Maryla</b> – dopóki dzieci nie zamienią jej w siedmioletnią dziewczynkę <b>Wiki</b>. Przeciwnikiem jest <b>Max Rozmus</b>, oszust, który chce zdobyć krzesło.</p>`,
+    remember: 'Filip 12, Tosia 11, Kuki 10 · rodzice – muzycy na statku · ciotka Maryla → Wiki · Max Rozmus – oszust.',
+    hook: 'Od najstarszego: F-T-K, 12-11-10 – jak odliczanie przed startem!',
+    check: { q: 'W kogo dzieci zamieniają ciotkę Marylę?', options: ['w siedmioletnią Wiki', 'w kota', 'w czerwone krzesło'], answer: 0, explain: 'Ciotka staje się małą dziewczynką – Wiki.' },
+  },
+  {
+    title: 'Co się dzieje po kolei?',
+    svg: `<svg viewBox="0 0 400 254" role="img" aria-label="Wydarzenia po kolei: Kuki znajduje krzesło; rodzice wyjeżdżają na statek; ciotka staje się małą Wiki; Max Rozmus ściga dzieci; wyprawa do Kopenhagi po rodziców.">
+      <defs><marker id="a-kl4-drzewo-2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <g class="f1 s1"><rect x="6" y="6" width="388" height="38" rx="9"/><rect x="6" y="56" width="388" height="38" rx="9"/><rect x="6" y="106" width="388" height="38" rx="9"/><rect x="6" y="156" width="388" height="38" rx="9"/><rect x="6" y="206" width="388" height="38" rx="9"/></g>
+      <g class="tx-b" style="font-size:20px" text-anchor="middle"><text x="26" y="32">🪑</text><text x="26" y="82">🚢</text><text x="26" y="132">👧</text><text x="26" y="182">🦹</text><text x="26" y="232">🗺️</text></g>
+      <g class="tx"><text x="46" y="30">Kuki znajduje czerwone krzesło</text><text x="46" y="80">rodzice wyjeżdżają na statek</text><text x="46" y="130">ciotka Maryla staje się małą Wiki</text><text x="46" y="180">Max Rozmus ściga dzieci</text><text x="46" y="230">wyprawa do Kopenhagi po rodziców</text></g>
+      <g class="ln"><path d="M370,44 L370,55" marker-end="url(#a-kl4-drzewo-2)"/><path d="M370,94 L370,105" marker-end="url(#a-kl4-drzewo-2)"/><path d="M370,144 L370,155" marker-end="url(#a-kl4-drzewo-2)"/><path d="M370,194 L370,205" marker-end="url(#a-kl4-drzewo-2)"/></g>
+    </svg>`,
+    text: `<p>Dzieci odkrywają moc krzesła, a rodzice wyjeżdżają do pracy na statku. Ciotka Maryla zamienia się w małą Wiki. <b>Max Rozmus</b> poznaje tajemnicę krzesła i ściga dzieci, żeby je zdobyć.</p>
+      <p>Dzieci wyruszają do <b>Kopenhagi</b>, żeby odnaleźć rodziców. Na końcu mama przypadkiem siada na krześle i wypowiada życzenie – dom odrywa się od ziemi i leci, a krzesło wypada przez okno.</p>`,
+    remember: 'Kopenhaga – tam dzieci szukają rodziców. Zakończenie: dom odlatuje, krzesło wypada przez okno.',
+    check: { q: 'Do jakiego miasta wyruszają dzieci, żeby odnaleźć rodziców?', options: ['do Kopenhagi', 'do Paryża', 'do Londynu'], answer: 0, explain: 'Rodzice pracowali na statku, a dzieci szukały ich w Kopenhadze.' },
+  },
+  {
+    title: 'Otwarte zakończenie i czego uczy ta książka',
+    svg: `<svg viewBox="0 0 400 214" role="img" aria-label="Cztery kafelki: rodzina ważniejsza niż pieniądze; pomyśl, zanim czegoś zażyczysz; rodzeństwo trzyma się razem; chciwość nie popłaca. Na dole: otwarte zakończenie – ciąg dalszy w kolejnych tomach.">
+      <g class="f4 s4"><rect x="8" y="8" width="188" height="70" rx="10"/><rect x="204" y="8" width="188" height="70" rx="10"/><rect x="8" y="86" width="188" height="70" rx="10"/><rect x="204" y="86" width="188" height="70" rx="10"/></g>
+      <g class="tx-b" style="font-size:22px" text-anchor="middle"><text x="30" y="50">👪</text><text x="226" y="50">🤔</text><text x="30" y="128">🤝</text><text x="226" y="128">💸</text></g>
+      <g class="tx-s"><text x="50" y="38">rodzina ważniejsza</text><text x="50" y="56">niż pieniądze</text><text x="246" y="38">pomyśl, zanim</text><text x="246" y="56">czegoś zażyczysz</text><text x="50" y="116">rodzeństwo trzyma</text><text x="50" y="134">się razem</text><text x="246" y="116">chciwość</text><text x="246" y="134">nie popłaca</text></g>
+      <rect x="8" y="166" width="384" height="40" rx="10" class="f2 s2"/>
+      <text x="200" y="192" class="tx" text-anchor="middle">🏠🎈 otwarte zakończenie – ciąg dalszy!</text>
+    </svg>`,
+    text: `<p>Historia nie zamyka się do końca: dom odlatuje, a krzesło wypada przez okno. To <b>otwarte zakończenie</b> – zapowiedź kolejnych tomów cyklu.</p>
+      <p>Książka pokazuje, że <b>rodzina</b> jest ważniejsza niż pieniądze, że trzeba <b>myśleć, zanim się czegoś zażyczy</b>, i że rodzeństwo daje radę, gdy współpracuje. Pamiętaj: film i serial różnią się od książki.</p>`,
+    remember: 'Otwarte zakończenie = historia się nie domyka, czeka ciąg dalszy.',
+    hook: 'Otwarte zakończenie jest jak drzwi uchylone do następnego pokoju – wiesz, że coś tam jest, ale jeszcze nie wiesz co.',
+    check: { q: 'Dlaczego zakończenie książki nazywamy otwartym?', options: ['historia się nie domyka i zapowiada dalsze przygody', 'wszyscy bohaterowie wracają do domu i nic się już nie dzieje', 'ostatnie zdanie kończy się znakiem zapytania'], answer: 0, explain: 'Dom odlatuje, krzesło wypada przez okno – nie wiemy, co będzie dalej. Ciąg dalszy jest w kolejnych tomach.' },
+  },
+];
+
+window.LESSONS['polski/lektura-ronja'] = [
+  {
+    title: 'Burzowa noc i rozłupany zamek',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Zamek rozłupany piorunem na dwie części. Po lewej część Mattisa, po prawej część Borki, pośrodku przepaść – Diabelska Czeluść.">
+      <path d="M20,190 L20,80 L40,80 L40,60 L60,60 L60,80 L90,80 L90,60 L110,60 L110,80 L150,80 L170,190 Z" class="f1 s1 sw"/>
+      <path d="M380,190 L380,80 L360,80 L360,60 L340,60 L340,80 L310,80 L310,60 L290,60 L290,80 L250,80 L230,190 Z" class="f2 s2 sw"/>
+      <path d="M200,10 L188,40 L204,40 L192,70" class="ln sw"/>
+      <text x="200" y="128" class="tx-s" text-anchor="middle">Diabelska</text>
+      <text x="200" y="144" class="tx-s" text-anchor="middle">Czeluść</text>
+      <text x="82" y="140" class="tx-b" text-anchor="middle">Mattis</text>
+      <text x="318" y="140" class="tx-b" text-anchor="middle">Borka</text>
+      <text x="82" y="204" class="tx-s" text-anchor="middle">część Mattisa</text>
+      <text x="318" y="204" class="tx-s" text-anchor="middle">część Borki</text>
+    </svg>`,
+    text: `<p>„Ronję, córkę zbójnika” napisała szwedzka pisarka <b>Astrid Lindgren</b> (1981). To <b>powieść</b> przygodowa z elementami fantastycznymi – w lesie żyją dziwne stwory.</p>
+      <p>W burzową noc, gdy rodzi się <b>Ronja</b>, piorun rozłupuje zamek jej ojca na dwie części. Powstaje przepaść – <b>Diabelska Czeluść</b>. W drugiej części zamku osiedla się wroga banda Borki.</p>`,
+    remember: 'Astrid Lindgren (Szwecja) · noc narodzin Ronji: piorun dzieli zamek · przepaść: Diabelska Czeluść.',
+    hook: 'Zamek pękł na pół jak herbatnik – a między połówkami została Diabelska Czeluść.',
+    check: { q: 'Co stało się w noc narodzin Ronji?', options: ['piorun rozłupał zamek na dwie części', 'zamek spłonął', 'Mattis wygnał Borkę z lasu'], answer: 0, explain: 'W burzową noc zamek pękł na pół – powstała Diabelska Czeluść.' },
+  },
+  {
+    title: 'Dwa wrogie rody',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Dwie rodziny. Mattis i Lovis – ich córka Ronja. Borka i Undis – ich syn Birk. Między Ronją a Birkiem – przyjaźń.">
+      <g class="f1 s1"><rect x="8" y="8" width="180" height="96" rx="10"/></g>
+      <g class="f2 s2"><rect x="212" y="8" width="180" height="96" rx="10"/></g>
+      <text x="98" y="32" class="tx-s" text-anchor="middle">banda Mattisa</text>
+      <text x="302" y="32" class="tx-s" text-anchor="middle">banda Borki</text>
+      <text x="98" y="60" class="tx-b" text-anchor="middle">Mattis – herszt</text>
+      <text x="98" y="88" class="tx" text-anchor="middle">Lovis – mama</text>
+      <text x="302" y="60" class="tx-b" text-anchor="middle">Borka – herszt</text>
+      <text x="302" y="88" class="tx" text-anchor="middle">Undis – mama</text>
+      <path d="M98,106 L98,128" class="ln"/><path d="M302,106 L302,128" class="ln"/>
+      <rect x="38" y="130" width="120" height="46" rx="12" class="f3 s3"/>
+      <rect x="242" y="130" width="120" height="46" rx="12" class="f3 s3"/>
+      <text x="98" y="160" class="tx-b" text-anchor="middle">Ronja</text>
+      <text x="302" y="160" class="tx-b" text-anchor="middle">Birk</text>
+      <path d="M160,153 L240,153" class="ln dash"/>
+      <text x="200" y="146" class="tx-b" style="font-size:20px" text-anchor="middle">🤝</text>
+      <text x="200" y="204" class="tx-s" text-anchor="middle">urodzeni tej samej burzowej nocy</text>
+    </svg>`,
+    text: `<p><b>Mattis</b> jest hersztem bandy zbójców, a <b>Lovis</b> – mądrą, rozsądną mamą Ronji. Wrogiem Mattisa jest <b>Borka</b>, herszt drugiej bandy. Jego żona to <b>Undis</b>, a syn – <b>Birk</b>.</p>
+      <p>Birk urodził się tej samej burzowej nocy co Ronja. Choć ich ojcowie są wrogami, dzieci zostają przyjaciółmi – są dla siebie jak rodzeństwo. Najstarszym zbójcą Mattisa jest <b>Łysy Per</b>.</p>`,
+    remember: 'Mattis + Lovis → Ronja · Borka + Undis → Birk · ojcowie wrogami, dzieci przyjaciółmi.',
+    hook: 'Ronja i Birk urodzili się tej samej nocy – jak bliźnięta z dwóch wrogich rodzin.',
+    check: { q: 'Kim jest Birk?', options: ['synem Borki, herszta wrogiej bandy', 'bratem Ronji', 'najstarszym zbójcą Mattisa'], answer: 0, explain: 'Birk to syn Borki. Najstarszym zbójcą jest Łysy Per.' },
+  },
+  {
+    title: 'Stwory z lasu',
+    svg: `<svg viewBox="0 0 400 204" role="img" aria-label="Cztery kafelki ze stworami: Wietrzydła – drapieżne, latają; Szaruchy – małe, szare, boją się ognia; Pupiszonki – niegroźne, pod ziemią; Mgłowce – śpiewem zwodzą we mgle.">
+      <g class="f5 s5"><rect x="8" y="8" width="188" height="90" rx="10"/><rect x="204" y="8" width="188" height="90" rx="10"/><rect x="8" y="106" width="188" height="90" rx="10"/><rect x="204" y="106" width="188" height="90" rx="10"/></g>
+      <g class="tx-b" style="font-size:24px" text-anchor="middle"><text x="30" y="44">🦅</text><text x="226" y="44">👾</text><text x="30" y="142">🍄</text><text x="226" y="142">🌫️</text></g>
+      <g class="tx-b" style="font-size:16px"><text x="52" y="38">Wietrzydła</text><text x="248" y="38">Szaruchy</text><text x="52" y="136">Pupiszonki</text><text x="248" y="136">Mgłowce</text></g>
+      <g class="tx-s"><text x="52" y="62">drapieżne, latają</text><text x="52" y="80">najgroźniejsze</text><text x="248" y="62">małe, szare</text><text x="248" y="80">boją się ognia</text><text x="52" y="160">niegroźne</text><text x="52" y="178">mieszkają pod ziemią</text><text x="248" y="160">śpiewem zwodzą</text><text x="248" y="178">ze ścieżki we mgle</text></g>
+    </svg>`,
+    text: `<p>Las wokół zamku jest piękny, ale groźny. Najniebezpieczniejsze są <b>Wietrzydła</b> – drapieżne, latające istoty. <b>Szaruchy</b> są małe, szare i napastliwe, ale boją się ognia.</p>
+      <p><b>Pupiszonki</b> to zabawne, niegroźne stworki spod ziemi, a <b>Mgłowce</b> we mgle śpiewem zwodzą ludzi ze ścieżki. Ronja uczy się, jak unikać niebezpieczeństw lasu.</p>`,
+    remember: 'Wietrzydła – z powietrza, najgroźniejsze · Szaruchy – boją się ognia · Pupiszonki – niegroźne, pod ziemią · Mgłowce – zwodzą we mgle.',
+    hook: 'Nazwy podpowiadają: Wietrzydła – jak wiatr, z góry; Mgłowce – we mgle; Szaruchy – szare.',
+    check: { q: 'Które stwory są małe, niegroźne i mieszkają pod ziemią?', options: ['Pupiszonki', 'Wietrzydła', 'Mgłowce'], answer: 0, explain: 'Pupiszonki nie robią krzywdy. Wietrzydła atakują z powietrza, a Mgłowce zwodzą we mgle.' },
+  },
+  {
+    title: 'Przyjaźń wbrew ojcom',
+    svg: `<svg viewBox="0 0 400 254" role="img" aria-label="Wydarzenia po kolei: Ronja i Birk zostają przyjaciółmi; Mattis więzi Birka, a Ronja oddaje się w ręce Borki; Mattis mówi, że nie ma już córki; ucieczka do Niedźwiedziej Groty; Mattis przeprasza i Ronja wraca.">
+      <defs><marker id="a-kl4-ronja-1" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <g class="f3 s3"><rect x="6" y="6" width="388" height="38" rx="9"/><rect x="6" y="56" width="388" height="38" rx="9"/><rect x="6" y="106" width="388" height="38" rx="9"/><rect x="6" y="156" width="388" height="38" rx="9"/><rect x="6" y="206" width="388" height="38" rx="9"/></g>
+      <g class="tx-b" style="font-size:20px" text-anchor="middle"><text x="26" y="32">🤝</text><text x="26" y="82">⛓️</text><text x="26" y="132">😠</text><text x="26" y="182">🌲</text><text x="26" y="232">❤️</text></g>
+      <g class="tx"><text x="46" y="30">Ronja i Birk zostają przyjaciółmi</text><text x="46" y="80">Mattis więzi Birka, Ronja idzie do Borki</text><text x="46" y="130">Mattis mówi, że nie ma już córki</text><text x="46" y="180">ucieczka do Niedźwiedziej Groty</text><text x="46" y="230">Mattis przeprasza – Ronja wraca</text></g>
+      <g class="ln"><path d="M380,44 L380,55" marker-end="url(#a-kl4-ronja-1)"/><path d="M380,94 L380,105" marker-end="url(#a-kl4-ronja-1)"/><path d="M380,144 L380,155" marker-end="url(#a-kl4-ronja-1)"/><path d="M380,194 L380,205" marker-end="url(#a-kl4-ronja-1)"/></g>
+    </svg>`,
+    text: `<p>Ronja i Birk ratują sobie nawzajem życie i zostają przyjaciółmi. Spotykają się w tajemnicy przed ojcami. Gdy <b>Mattis</b> więzi Birka, żeby zmusić Borkę do opuszczenia zamku, Ronja oddaje się w ręce Borki – żeby uwolnić przyjaciela. Rozgniewany Mattis mówi, że nie ma już córki.</p>
+      <p>Ronja i Birk uciekają do <b>Niedźwiedziej Groty</b> i żyją w lesie. W końcu Mattis przychodzi do groty, przeprasza córkę i zabiera ją do domu.</p>`,
+    remember: 'Ronja wybiera przyjaźń i sprawiedliwość – nawet wbrew ojcu. Niedźwiedzia Grota – dom Ronji i Birka po ucieczce.',
+    check: { q: 'Gdzie zamieszkali Ronja i Birk po ucieczce z zamku?', options: ['w Niedźwiedziej Grocie', 'w Diabelskiej Czeluści', 'w mieście'], answer: 0, explain: 'Ronja i Birk żyli w lesie, w Niedźwiedziej Grocie.' },
+  },
+  {
+    title: 'Zakończenie i ważne tematy',
+    svg: `<svg viewBox="0 0 400 214" role="img" aria-label="Zakończenie: Ronja i Birk nie zostaną zbójnikami; Łysy Per zdradza Ronji tajemnicę srebrnej góry. Tematy: przyjaźń silniejsza niż wrogość, ojciec i córka – przebaczenie, las – piękny i groźny.">
+      <rect x="8" y="8" width="384" height="64" rx="12" class="f2 s2"/>
+      <text x="200" y="36" class="tx-b" text-anchor="middle">🚫🗡️ Ronja i Birk</text>
+      <text x="200" y="60" class="tx" text-anchor="middle">nie zostaną zbójnikami</text>
+      <rect x="8" y="80" width="384" height="40" rx="10" class="f4 s4"/>
+      <text x="200" y="106" class="tx-s" text-anchor="middle">⛰️ Łysy Per zdradza Ronji tajemnicę srebrnej góry</text>
+      <g class="f1 s1"><rect x="8" y="130" width="122" height="76" rx="10"/><rect x="139" y="130" width="122" height="76" rx="10"/><rect x="270" y="130" width="122" height="76" rx="10"/></g>
+      <g class="tx-b" style="font-size:20px" text-anchor="middle"><text x="69" y="156">🤝</text><text x="200" y="156">💞</text><text x="331" y="156">🌲</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="69" y="178">przyjaźń silniejsza</text><text x="69" y="196">niż wrogość</text><text x="200" y="178">ojciec i córka:</text><text x="200" y="196">przebaczenie</text><text x="331" y="178">las – piękny</text><text x="331" y="196">i groźny</text></g>
+    </svg>`,
+    text: `<p>Na końcu <b>Ronja i Birk</b> postanawiają, że <b>nie zostaną zbójnikami</b> – nie chcą krzywdzić ani okradać ludzi. Wcześniej najstarszy zbójca, <b>Łysy Per</b>, zdradza Ronji tajemnicę srebrnej góry.</p>
+      <p>Ważne tematy książki: przyjaźń silniejsza niż wrogość rodzin, dorastanie i prawo do własnego zdania, miłość i przebaczenie między ojcem a córką, przyroda – piękna, ale groźna.</p>`,
+    remember: 'Zakończenie: Ronja i Birk wybierają uczciwe życie – nie zostaną zbójnikami.',
+    hook: 'Córka zbójnika, która nie chce być zbójnikiem – tytuł mówi, skąd Ronja pochodzi, a zakończenie – kim chce być.',
+    check: { q: 'Co postanawiają Ronja i Birk na końcu książki?', options: ['że nie zostaną zbójnikami', 'że zostaną hersztami obu band', 'że opuszczą las na zawsze'], answer: 0, explain: 'Ronja i Birk nie chcą krzywdzić ludzi.' },
+  },
+];
