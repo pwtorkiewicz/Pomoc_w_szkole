@@ -4,10 +4,12 @@ window.SUBJECTS.push({
   name: 'Historia',
   icon: '🏛️',
   color: '#8c6d3f',
+  book: 'Wczoraj i dziś 4 (Nowa Era)',
   topics: [
     {
       id: 'historia-nauka',
       name: 'Czym jest historia',
+      chapter: 'dział I „Z historią na ty”',
       basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 1 „Refleksja nad historią jako nauką”, wym. 1–6 (znaczenia słowa historia, przydatność historii, historia a fikcja literacka i dzieje legendarne, praca historyka, źródło historyczne i jego wiarygodność, przykłady źródeł). Podstawa przewiduje, że nauka historii w klasie IV zaczyna się od tematyki wprowadzającej; wybór działów 1–4 na klasę 4 i ich kolejność – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Trzy znaczenia słowa „historia”</h3>
@@ -89,6 +91,7 @@ window.SUBJECTS.push({
     {
       id: 'rodzina-region',
       name: 'Moja rodzina i mój region',
+      chapter: 'działy I i II (historia rodziny, mała ojczyzna)',
       basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 2 „Elementy historii rodzinnej, lokalnej i regionalnej”, wym. 1–5 (informacje i pamiątki rodzinne, regiony Polski i własny region, historia okolicy i formy upamiętniania zasłużonych postaci, zabytki i ich ochrona, legendy związane z okolicą – elementy historyczne i fikcyjne). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Regiony podano ogólnie, bez granic – granice regionów historycznych bywają różnie wyznaczane.',
       theory: `
         <h3>Historia rodziny</h3>
@@ -164,75 +167,9 @@ window.SUBJECTS.push({
       ],
     },
     {
-      id: 'wspolnota-panstwowa',
-      name: 'Symbole i święta Polski',
-      basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 3 „Wspólnota państwowa”, wym. 1–4 (symbole państwowe: barwy, godło, hymn; święta państwowe; obrzędy, tradycje i zwyczaje regionalne; symbole Unii Europejskiej: flaga i hymn). Autor słów „Mazurka Dąbrowskiego” – Józef Wybicki – za podstawą programową z języka polskiego (dz. 7 wym. 6). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
-      theory: `
-        <h3>Symbole państwowe Polski</h3>
-        <p><b>Symbol</b> to znak, który coś oznacza. Symbole państwowe oznaczają Polskę i łączą wszystkich jej obywateli.</p>
-        <table>
-          <tr><th>Symbol</th><th>Jak wygląda / co to jest</th></tr>
-          <tr><td><b>barwy</b></td><td>biała i czerwona – dwa poziome pasy: <b>biały na górze, czerwony na dole</b>; to barwy flagi Polski</td></tr>
-          <tr><td><b>godło</b></td><td><b>biały orzeł</b> w złotej koronie, na <b>czerwonym</b> tle tarczy</td></tr>
-          <tr><td><b>hymn</b></td><td>„<b>Mazurek Dąbrowskiego</b>”, słowa napisał <b>Józef Wybicki</b></td></tr>
-        </table>
-        <div class="tip">💡 Zapamiętaj: <b>biel na górze</b>, czerwień na dole. Flaga odwrócona do góry nogami (czerwień na górze) to błąd.</div>
-        <h3>Jak okazujemy szacunek symbolom</h3>
-        <ul>
-          <li>Podczas hymnu <b>stoimy spokojnie i w ciszy</b> – tak okazujemy szacunek. Chłopcy i mężczyźni zdejmują czapki. Nie jemy, nie rozmawiamy.</li>
-          <li>Flagi nie rzucamy na ziemię i nie niszczymy jej. W święta wywieszamy ją na budynkach.</li>
-        </ul>
-        <h3>Święta państwowe</h3>
-        <table>
-          <tr><th>Data</th><th>Święto</th></tr>
-          <tr><td><b>2 maja</b></td><td>Dzień Flagi Rzeczypospolitej Polskiej</td></tr>
-          <tr><td><b>3 maja</b></td><td>Święto Narodowe Trzeciego Maja – rocznica uchwalenia Konstytucji 3 Maja (1791 r.)</td></tr>
-          <tr><td><b>11 listopada</b></td><td>Narodowe Święto Niepodległości – Polska odzyskała niepodległość w 1918 r.</td></tr>
-        </table>
-        <p>Święta państwowe przypominają ważne chwile z dziejów Polski. Ludzie obchodzą je razem: biorą udział w uroczystościach, wywieszają flagi, śpiewają hymn. Dzięki temu czują, że tworzą jedną <b>wspólnotę</b>.</p>
-        <h3>Tradycje regionalne</h3>
-        <p>Różne regiony Polski mają swoje <b>obrzędy, zwyczaje i tradycje</b>: stroje ludowe, tańce, pieśni, potrawy, gwarę (sposób mówienia mieszkańców regionu). Dzięki nim mieszkańcy regionu czują się sobie bliscy, a Polska jest różnorodna.</p>
-        <h3>Symbole Unii Europejskiej</h3>
-        <p>Polska należy do <b>Unii Europejskiej</b> – wspólnoty wielu państw Europy.</p>
-        <table>
-          <tr><td><b>flaga UE</b></td><td><b>12 złotych gwiazd</b> ułożonych w krąg na <b>niebieskim</b> tle</td></tr>
-          <tr><td><b>hymn UE</b></td><td>„<b>Oda do radości</b>” – muzyka Ludwiga van Beethovena</td></tr>
-        </table>
-        <div class="tip">💡 Gwiazd jest zawsze 12 – ta liczba nie zależy od tego, ile państw należy do Unii.</div>
-      `,
-      flashcards: [
-        ['Symbole państwowe Polski', 'barwy (biało-czerwone) · godło (biały orzeł) · hymn („Mazurek Dąbrowskiego”)'],
-        ['Barwy Polski', 'Biały pas na górze, czerwony na dole'],
-        ['Godło Polski', 'Biały orzeł w złotej koronie na czerwonym tle'],
-        ['Hymn Polski', '„Mazurek Dąbrowskiego”, słowa: Józef Wybicki'],
-        ['Zachowanie podczas hymnu', 'Stoimy spokojnie i w ciszy; chłopcy i mężczyźni zdejmują czapki'],
-        ['2 maja', 'Dzień Flagi Rzeczypospolitej Polskiej'],
-        ['3 maja', 'Święto Narodowe Trzeciego Maja – rocznica Konstytucji 3 Maja (1791 r.)'],
-        ['11 listopada', 'Narodowe Święto Niepodległości – odzyskanie niepodległości w 1918 r.'],
-        ['Flaga Unii Europejskiej', '12 złotych gwiazd w kręgu na niebieskim tle'],
-        ['Hymn Unii Europejskiej', '„Oda do radości” – muzyka Ludwiga van Beethovena'],
-      ],
-      questions: [
-        { id: 'auowy2', q: 'Jak nazywa się hymn Polski?', options: ['„Mazurek Dąbrowskiego”', '„Oda do radości”', '„Rota”', '„Sto lat”'], answer: 0, explain: 'Hymn państwowy Polski to „Mazurek Dąbrowskiego”. „Oda do radości” to hymn Unii Europejskiej.' },
-        { id: 'v0f2a9', q: 'Kto napisał słowa „Mazurka Dąbrowskiego”?', options: ['Józef Wybicki', 'Ludwig van Beethoven', 'Maria Konopnicka', 'Adam Mickiewicz'], answer: 0, explain: 'Słowa hymnu Polski napisał Józef Wybicki.' },
-        { id: 'ce871w', q: 'Jak wygląda godło Polski?', options: ['biały orzeł w złotej koronie na czerwonym tle', 'czerwony orzeł na białym tle', 'złote gwiazdy na niebieskim tle', 'biały lew na zielonym tle'], answer: 0, explain: 'Godło Polski to biały orzeł w złotej koronie na czerwonej tarczy.' },
-        { id: 'n3e37w', q: 'Która flaga jest flagą Polski?', options: ['biały pas na górze, czerwony na dole', 'czerwony pas na górze, biały na dole', 'biały i czerwony pas obok siebie, pionowo', 'czerwona z białym krzyżem'], answer: 0, explain: 'Na fladze Polski biel jest na górze, a czerwień na dole. Odwrócona flaga to błąd.' },
-        { id: 'ga90qr', q: 'Jak zachowasz się, gdy podczas szkolnej uroczystości grają hymn Polski?', options: ['stoję prosto i w ciszy', 'siedzę i rozmawiam z kolegą', 'jem kanapkę', 'przeglądam telefon'], answer: 0, explain: 'Podczas hymnu okazujemy szacunek: stoimy prosto i w ciszy, zdejmujemy czapkę.' },
-        { id: 'cg4wwe', q: 'Kiedy obchodzimy Narodowe Święto Niepodległości?', options: ['11 listopada', '3 maja', '2 maja', '1 stycznia'], answer: 0, explain: '11 listopada przypominamy odzyskanie przez Polskę niepodległości w 1918 r.' },
-        { id: 'g0p35r', q: 'Którego dnia obchodzimy Dzień Flagi Rzeczypospolitej Polskiej?', options: ['2 maja', '3 maja', '11 listopada', '1 czerwca'], answer: 0, explain: 'Dzień Flagi przypada 2 maja – dzień przed Świętem Narodowym Trzeciego Maja.' },
-        { id: '961tvs', q: 'Rocznicę czego obchodzimy 3 maja?', options: ['uchwalenia Konstytucji 3 Maja', 'odzyskania niepodległości', 'wstąpienia do Unii Europejskiej', 'początku roku szkolnego'], answer: 0, explain: 'Święto Narodowe Trzeciego Maja to rocznica uchwalenia Konstytucji 3 Maja w 1791 r.' },
-        { id: 't9m0jj', q: 'W którym roku Polska odzyskała niepodległość (pamiętamy o tym 11 listopada)?', options: ['1918', '1791', '966', '1410'], answer: 0, explain: 'Polska odzyskała niepodległość w 1918 r.' },
-        { id: 'aqzui9', q: 'Jak wygląda flaga Unii Europejskiej?', options: ['12 złotych gwiazd w kręgu na niebieskim tle', 'biały orzeł na czerwonym tle', '12 białych gwiazd na czerwonym tle', 'złota korona na zielonym tle'], answer: 0, explain: 'Flaga UE ma 12 złotych gwiazd ułożonych w krąg na niebieskim tle.' },
-        { id: '6d4sb0', q: 'Który utwór jest hymnem Unii Europejskiej?', options: ['„Oda do radości”', '„Mazurek Dąbrowskiego”', '„Rota”', '„Wlazł kotek na płotek”'], answer: 0, explain: 'Hymnem UE jest „Oda do radości” z muzyką Ludwiga van Beethovena.' },
-        { id: '7885ol', q: 'Prawda czy fałsz?\nNa fladze Unii Europejskiej jest tyle gwiazd, ile państw należy do Unii.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Gwiazd jest zawsze 12. Ta liczba nie zależy od liczby państw w Unii.' },
-        { id: 'x38323', q: 'Które z wymienionych są symbolami państwowymi Polski?', options: ['barwy, godło i hymn', 'herb miasta, pomnik i park', 'stolica, rzeka i góry', 'gwiazdy, hymn UE i euro'], answer: 0, explain: 'Symbole państwowe Polski to barwy (biało-czerwone), godło (biały orzeł) i hymn („Mazurek Dąbrowskiego”).' },
-        { id: '63g37q', q: 'Po co ludzie wspólnie obchodzą święta państwowe?', options: ['żeby pamiętać o ważnych wydarzeniach i czuć się wspólnotą', 'żeby nie chodzić do szkoły', 'żeby kupić nowe ubrania', 'nie ma żadnego powodu'], answer: 0, explain: 'Święta państwowe przypominają ważne chwile z dziejów Polski i łączą obywateli we wspólnotę.' },
-        { id: '5zh21u', q: 'Prawda czy fałsz?\nRegiony Polski różnią się strojami ludowymi, tańcami i potrawami.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Każdy region ma swoje tradycje, obrzędy i zwyczaje – to bogactwo Polski.' },
-      ],
-    },
-    {
       id: 'czas-mapa',
       name: 'Czas w historii: wiek, oś czasu, mapa',
+      chapter: 'działy I i II (czas w historii, mapa historyczna)',
       basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 4 „Czas i miejsce wydarzeń historycznych”, wym. 1–4 (pojęcia: data, epoka, nasza era, przed naszą erą, rok, stulecie, tysiąclecie, wiek; określanie wieku wydarzeń p.n.e. i n.e.; upływ czasu między wydarzeniami; oś czasu; mapa historyczna, plan, legenda). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Daty historyczne w przykładach: 966, 1410, 1791, 1918.',
       theory: `
         <h3>Jednostki czasu w historii</h3>
@@ -311,8 +248,77 @@ window.SUBJECTS.push({
       ],
     },
     {
+      id: 'wspolnota-panstwowa',
+      name: 'Symbole i święta Polski',
+      chapter: 'dział II „Mała i duża ojczyzna”',
+      basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 3 „Wspólnota państwowa”, wym. 1–4 (symbole państwowe: barwy, godło, hymn; święta państwowe; obrzędy, tradycje i zwyczaje regionalne; symbole Unii Europejskiej: flaga i hymn). Autor słów „Mazurka Dąbrowskiego” – Józef Wybicki – za podstawą programową z języka polskiego (dz. 7 wym. 6). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Symbole państwowe Polski</h3>
+        <p><b>Symbol</b> to znak, który coś oznacza. Symbole państwowe oznaczają Polskę i łączą wszystkich jej obywateli.</p>
+        <table>
+          <tr><th>Symbol</th><th>Jak wygląda / co to jest</th></tr>
+          <tr><td><b>barwy</b></td><td>biała i czerwona – dwa poziome pasy: <b>biały na górze, czerwony na dole</b>; to barwy flagi Polski</td></tr>
+          <tr><td><b>godło</b></td><td><b>biały orzeł</b> w złotej koronie, na <b>czerwonym</b> tle tarczy</td></tr>
+          <tr><td><b>hymn</b></td><td>„<b>Mazurek Dąbrowskiego</b>”, słowa napisał <b>Józef Wybicki</b></td></tr>
+        </table>
+        <div class="tip">💡 Zapamiętaj: <b>biel na górze</b>, czerwień na dole. Flaga odwrócona do góry nogami (czerwień na górze) to błąd.</div>
+        <h3>Jak okazujemy szacunek symbolom</h3>
+        <ul>
+          <li>Podczas hymnu <b>stoimy spokojnie i w ciszy</b> – tak okazujemy szacunek. Chłopcy i mężczyźni zdejmują czapki. Nie jemy, nie rozmawiamy.</li>
+          <li>Flagi nie rzucamy na ziemię i nie niszczymy jej. W święta wywieszamy ją na budynkach.</li>
+        </ul>
+        <h3>Święta państwowe</h3>
+        <table>
+          <tr><th>Data</th><th>Święto</th></tr>
+          <tr><td><b>2 maja</b></td><td>Dzień Flagi Rzeczypospolitej Polskiej</td></tr>
+          <tr><td><b>3 maja</b></td><td>Święto Narodowe Trzeciego Maja – rocznica uchwalenia Konstytucji 3 Maja (1791 r.)</td></tr>
+          <tr><td><b>11 listopada</b></td><td>Narodowe Święto Niepodległości – Polska odzyskała niepodległość w 1918 r.</td></tr>
+        </table>
+        <p>Święta państwowe przypominają ważne chwile z dziejów Polski. Ludzie obchodzą je razem: biorą udział w uroczystościach, wywieszają flagi, śpiewają hymn. Dzięki temu czują, że tworzą jedną <b>wspólnotę</b>.</p>
+        <h3>Tradycje regionalne</h3>
+        <p>Różne regiony Polski mają swoje <b>obrzędy, zwyczaje i tradycje</b>: stroje ludowe, tańce, pieśni, potrawy, gwarę (sposób mówienia mieszkańców regionu). Dzięki nim mieszkańcy regionu czują się sobie bliscy, a Polska jest różnorodna.</p>
+        <h3>Symbole Unii Europejskiej</h3>
+        <p>Polska należy do <b>Unii Europejskiej</b> – wspólnoty wielu państw Europy.</p>
+        <table>
+          <tr><td><b>flaga UE</b></td><td><b>12 złotych gwiazd</b> ułożonych w krąg na <b>niebieskim</b> tle</td></tr>
+          <tr><td><b>hymn UE</b></td><td>„<b>Oda do radości</b>” – muzyka Ludwiga van Beethovena</td></tr>
+        </table>
+        <div class="tip">💡 Gwiazd jest zawsze 12 – ta liczba nie zależy od tego, ile państw należy do Unii.</div>
+      `,
+      flashcards: [
+        ['Symbole państwowe Polski', 'barwy (biało-czerwone) · godło (biały orzeł) · hymn („Mazurek Dąbrowskiego”)'],
+        ['Barwy Polski', 'Biały pas na górze, czerwony na dole'],
+        ['Godło Polski', 'Biały orzeł w złotej koronie na czerwonym tle'],
+        ['Hymn Polski', '„Mazurek Dąbrowskiego”, słowa: Józef Wybicki'],
+        ['Zachowanie podczas hymnu', 'Stoimy spokojnie i w ciszy; chłopcy i mężczyźni zdejmują czapki'],
+        ['2 maja', 'Dzień Flagi Rzeczypospolitej Polskiej'],
+        ['3 maja', 'Święto Narodowe Trzeciego Maja – rocznica Konstytucji 3 Maja (1791 r.)'],
+        ['11 listopada', 'Narodowe Święto Niepodległości – odzyskanie niepodległości w 1918 r.'],
+        ['Flaga Unii Europejskiej', '12 złotych gwiazd w kręgu na niebieskim tle'],
+        ['Hymn Unii Europejskiej', '„Oda do radości” – muzyka Ludwiga van Beethovena'],
+      ],
+      questions: [
+        { id: 'auowy2', q: 'Jak nazywa się hymn Polski?', options: ['„Mazurek Dąbrowskiego”', '„Oda do radości”', '„Rota”', '„Sto lat”'], answer: 0, explain: 'Hymn państwowy Polski to „Mazurek Dąbrowskiego”. „Oda do radości” to hymn Unii Europejskiej.' },
+        { id: 'v0f2a9', q: 'Kto napisał słowa „Mazurka Dąbrowskiego”?', options: ['Józef Wybicki', 'Ludwig van Beethoven', 'Maria Konopnicka', 'Adam Mickiewicz'], answer: 0, explain: 'Słowa hymnu Polski napisał Józef Wybicki.' },
+        { id: 'ce871w', q: 'Jak wygląda godło Polski?', options: ['biały orzeł w złotej koronie na czerwonym tle', 'czerwony orzeł na białym tle', 'złote gwiazdy na niebieskim tle', 'biały lew na zielonym tle'], answer: 0, explain: 'Godło Polski to biały orzeł w złotej koronie na czerwonej tarczy.' },
+        { id: 'n3e37w', q: 'Która flaga jest flagą Polski?', options: ['biały pas na górze, czerwony na dole', 'czerwony pas na górze, biały na dole', 'biały i czerwony pas obok siebie, pionowo', 'czerwona z białym krzyżem'], answer: 0, explain: 'Na fladze Polski biel jest na górze, a czerwień na dole. Odwrócona flaga to błąd.' },
+        { id: 'ga90qr', q: 'Jak zachowasz się, gdy podczas szkolnej uroczystości grają hymn Polski?', options: ['stoję prosto i w ciszy', 'siedzę i rozmawiam z kolegą', 'jem kanapkę', 'przeglądam telefon'], answer: 0, explain: 'Podczas hymnu okazujemy szacunek: stoimy prosto i w ciszy, zdejmujemy czapkę.' },
+        { id: 'cg4wwe', q: 'Kiedy obchodzimy Narodowe Święto Niepodległości?', options: ['11 listopada', '3 maja', '2 maja', '1 stycznia'], answer: 0, explain: '11 listopada przypominamy odzyskanie przez Polskę niepodległości w 1918 r.' },
+        { id: 'g0p35r', q: 'Którego dnia obchodzimy Dzień Flagi Rzeczypospolitej Polskiej?', options: ['2 maja', '3 maja', '11 listopada', '1 czerwca'], answer: 0, explain: 'Dzień Flagi przypada 2 maja – dzień przed Świętem Narodowym Trzeciego Maja.' },
+        { id: '961tvs', q: 'Rocznicę czego obchodzimy 3 maja?', options: ['uchwalenia Konstytucji 3 Maja', 'odzyskania niepodległości', 'wstąpienia do Unii Europejskiej', 'początku roku szkolnego'], answer: 0, explain: 'Święto Narodowe Trzeciego Maja to rocznica uchwalenia Konstytucji 3 Maja w 1791 r.' },
+        { id: 't9m0jj', q: 'W którym roku Polska odzyskała niepodległość (pamiętamy o tym 11 listopada)?', options: ['1918', '1791', '966', '1410'], answer: 0, explain: 'Polska odzyskała niepodległość w 1918 r.' },
+        { id: 'aqzui9', q: 'Jak wygląda flaga Unii Europejskiej?', options: ['12 złotych gwiazd w kręgu na niebieskim tle', 'biały orzeł na czerwonym tle', '12 białych gwiazd na czerwonym tle', 'złota korona na zielonym tle'], answer: 0, explain: 'Flaga UE ma 12 złotych gwiazd ułożonych w krąg na niebieskim tle.' },
+        { id: '6d4sb0', q: 'Który utwór jest hymnem Unii Europejskiej?', options: ['„Oda do radości”', '„Mazurek Dąbrowskiego”', '„Rota”', '„Wlazł kotek na płotek”'], answer: 0, explain: 'Hymnem UE jest „Oda do radości” z muzyką Ludwiga van Beethovena.' },
+        { id: '7885ol', q: 'Prawda czy fałsz?\nNa fladze Unii Europejskiej jest tyle gwiazd, ile państw należy do Unii.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Gwiazd jest zawsze 12. Ta liczba nie zależy od liczby państw w Unii.' },
+        { id: 'x38323', q: 'Które z wymienionych są symbolami państwowymi Polski?', options: ['barwy, godło i hymn', 'herb miasta, pomnik i park', 'stolica, rzeka i góry', 'gwiazdy, hymn UE i euro'], answer: 0, explain: 'Symbole państwowe Polski to barwy (biało-czerwone), godło (biały orzeł) i hymn („Mazurek Dąbrowskiego”).' },
+        { id: '63g37q', q: 'Po co ludzie wspólnie obchodzą święta państwowe?', options: ['żeby pamiętać o ważnych wydarzeniach i czuć się wspólnotą', 'żeby nie chodzić do szkoły', 'żeby kupić nowe ubrania', 'nie ma żadnego powodu'], answer: 0, explain: 'Święta państwowe przypominają ważne chwile z dziejów Polski i łączą obywateli we wspólnotę.' },
+        { id: '5zh21u', q: 'Prawda czy fałsz?\nRegiony Polski różnią się strojami ludowymi, tańcami i potrawami.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Każdy region ma swoje tradycje, obrzędy i zwyczaje – to bogactwo Polski.' },
+      ],
+    },
+    {
       id: 'poczatki-cywilizacji',
       name: 'Od jaskiń do miast: Egipt i pismo',
+      chapter: 'dział III „Z najdawniejszych dziejów”',
       basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 5 „Od jaskiń do miast – początki cywilizacji”, wym. 1 (rewolucja neolityczna: koczowniczy i osiadły tryb życia, wpływ warunków naturalnych), wym. 2 (życie w starożytnym Egipcie: faraon, hieroglify, piramidy, politeizm, życie pozagrobowe), wym. 3 (osiągnięcia Egiptu: astronomia, matematyka, medycyna i ich wpływ na Europę – moduł kultura), wym. 4 (rola pisma w rozwoju cywilizacji i dziś – moduł kultura). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl, lekcje „Pismo – wielki wynalazek człowieka”, „Mezopotamia – kraina między Eufratem a Tygrysem”, „Egipt – państwo nad Nilem”, „Starożytny Egipt”, „Jak doszło do powstania pierwszych cywilizacji?”). Daty bardzo dawnych wydarzeń (początki rolnictwa, wynalezienie pisma) źródła podają różnie – dlatego tylko w przybliżeniu („ponad 10 tysięcy lat temu”, „ponad 5000 lat temu”).',
       theory: `
         <h3>Koczownicy – życie w drodze</h3>
@@ -398,6 +404,7 @@ window.SUBJECTS.push({
     {
       id: 'grecja',
       name: 'Dziedzictwo starożytnej Grecji',
+      chapter: 'dział IV „W starożytnej Grecji”',
       basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 6 „Dziedzictwo starożytnej Grecji”, wym. 1 (społeczeństwo ateńskiej polis w czasach Peryklesa: agora, Akropol, demokracja, miasto-państwo, obywatele), wym. 2 (wpływ warunków naturalnych Grecji, zasięg cywilizacji greckiej na mapie współczesnego świata), wym. 3 (osiągnięcia: demokracja, filozofia, igrzyska olimpijskie, mitologia, teatr i ich wpływ na Europę – moduł filozoficzny, moduł kultura). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl, lekcje „Demokratyczne Ateny”, „Przeszłość mityczna – świat bogów i herosów”, „O greckim teatrze, igrzyskach olimpijskich i filozofii”, „Kolonizacja grecka i fenicka w basenie Morza Śródziemnego i Czarnego”): obywatelstwo Aten, Perykles (V w. p.n.e.), pierwsze igrzyska w 776 r. p.n.e. Mitologię (np. mity o Dedalu i Ikarze, Syzyfie) omawia też język polski.',
       theory: `
         <h3>Kraj gór i morza</h3>
@@ -490,6 +497,7 @@ window.SUBJECTS.push({
     {
       id: 'rzym',
       name: 'Dziedzictwo starożytnego Rzymu',
+      chapter: 'dział V „Dzieje starożytnego Rzymu”',
       basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 7 „Dziedzictwo starożytnego Rzymu”, wym. 1 (społeczeństwo Rzymu w czasach Juliusza Cezara: cesarstwo, niewolnicy, obywatele), wym. 2 (położenie Rzymu, największy zasięg cesarstwa, zasięg cywilizacji rzymskiej na mapie współczesnego świata), wym. 3 (osiągnięcia: akwedukt, amfiteatr, cesarstwo, łacina, łuk triumfalny, prawo rzymskie, republika i ich wpływ na Europę – moduł kultura). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl, lekcje „Rzym – od osady do imperium”, „Osiągnięcia starożytnych Rzymian”, „Społeczeństwo Rzymu”) i w serwisie imperiumromanum.pl (Oktawian jako spadkobierca Cezara, tytuł August w 27 r. p.n.e., pochodzenie słowa „cesarz”, największy zasięg państwa za Trajana). Daty 753 i 509 r. p.n.e. to daty tradycyjne (według rzymskich przekazów).',
       theory: `
         <h3>Miasto nad Tybrem</h3>
@@ -568,6 +576,7 @@ window.SUBJECTS.push({
     {
       id: 'chrzescijanstwo',
       name: 'Narodziny chrześcijaństwa',
+      chapter: 'dział V „Dzieje starożytnego Rzymu”',
       basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 8 „Narodziny chrześcijaństwa”, wym. 1 (założenia religii chrześcijańskiej: dekalog, judaizm, Mesjasz, monoteizm – moduł kultura), wym. 2 (wiek powstania chrześcijaństwa i uznania go za religię panującą w Rzymie oraz znaczenie tych wydarzeń), wym. 3 (miejsce narodzin i kierunki rozprzestrzenienia się chrześcijaństwa w imperium rzymskim na mapie), wym. 4 (powody przyjmowania chrześcijaństwa przez różne grupy społeczne, wpływ chrześcijaństwa na współczesną Europę). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Dział opisuje chrześcijaństwo jako zjawisko historyczne – z perspektywy historyka, bez treści katechetycznych (aplikacja nie obejmuje religii ani etyki – decyzja rodzica). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Narodziny i rozwój chrześcijaństwa”, „Początki chrześcijaństwa”, „Starożytny Izrael”, słowniczek „dekalog”) i w serwisie imperiumromanum.pl („Chrześcijanie wobec cesarstwa rzymskiego”, „Edykt mediolański”, „Teodozjusz I Wielki”): Palestyna jako prowincja rzymska, Poncjusz Piłat, Paweł z Tarsu, Neron i pożar Rzymu (64 r.), sprzeciw chrześcijan wobec kultu cesarza, katakumby, edykt mediolański (313 r. – wolność wyznania), edykt Teodozjusza (380 r.; część źródeł wiąże ten krok z 381 r., dlatego pytania dotyczą wieku – IV w.), miasta z dużymi gminami chrześcijańskimi (Antiochia, Efez, Aleksandria, Kartagina, Rzym). Daty narodzin i śmierci Jezusa pominięto – źródła podają je tylko w przybliżeniu.',
       theory: `
         <h3>Judaizm – wiara w jednego Boga</h3>
@@ -694,6 +703,7 @@ window.SUBJECTS.push({
     {
       id: 'sredniowiecze',
       name: 'Średniowieczna Europa',
+      extra: true,
       basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 9 „Średniowieczna Europa”, wym. 1 (wspólnoty społeczne w średniowieczu: chrześcijaństwo, monarchia, plemię, samorząd, senior, stan, wasal), wym. 2 (zasięg chrześcijaństwa we wczesnym i późnym średniowieczu na mapach), wym. 3 (warunki życia mieszkańców wsi, miast, zamków i klasztorów), wym. 4 (osiągnięcia: sztuka gotycka, sztuka romańska, uniwersytet i ich wpływ na współczesną Europę – moduł kultura). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Społeczeństwo stanowe w średniowieczu”, ćwiczenie „Drabina feudalna”, „Kościół w średniowieczu”, „Architektura i plastyka romańska w Polsce”, „Witraż – obraz światłem malowany”, „Państwa plemienne na ziemiach polskich”), na stronach Uniwersytetu Jagiellońskiego (założenie w 1364 r. przez Kazimierza Wielkiego, odnowienie w 1400 r.) i w opracowaniach o chrzcie Rusi (988 – data tradycyjna) i Litwy (1387). Granice epoki (476–1492) są umowne. Na mapie zasięgu chrześcijaństwa podano tylko daty, co do których źródła są zgodne.',
       theory: `
         <h3>Średniowiecze – kiedy?</h3>
@@ -829,6 +839,7 @@ window.SUBJECTS.push({
     {
       id: 'narodziny-polski',
       name: 'Od plemienia do królestwa – narodziny Polski',
+      extra: true,
       basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 10 „Od plemienia do królestwa – narodziny Polski”, wym. 1 (państwo Mieszka I: drużyna, gród, książę, postać Dobrawy), wym. 2 (daty chrztu Mieszka I i koronacji królewskiej Bolesława Chrobrego oraz ich znaczenie), wym. 3 (rozwój terytorialny państwa pierwszych Piastów na mapie), wym. 4 (metody poznawania przeszłości w badaniach nad okresem wczesnopiastowskim). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Panowanie Mieszka I”, „Chrzest Polski”, „Zjazd gnieźnieński i ustanowienie arcybiskupstwa”, „Koronacja Bolesława Chrobrego – 1025 rok”, „Kronika polska Galla tzw. Anonima”, „Od ekspansji do upadku władzy pierwszych Piastów”), na dzieje.pl (Dobrawa, data chrztu, Dagome iudex, biskupstwo poznańskie 968) i w opracowaniach naukowych (relacja Ibrahima ibn Jakuba o 3000 wojowników drużyny; kronika Thietmara urwana z jego śmiercią w 1018 r.; datowanie dendrochronologiczne mostu na Ostrowie Lednickim na 2. połowę X w.; badania DNA Piastów – IChB PAN i UAM). Rok 966 to data przyjęta przez historyków (część badaczy dopuszcza lata 966–968); miejsca chrztu nie podajemy – jest sporne. Zasięg państwa podano ogólnie: przyłączenie Śląska ok. 990 r. jest potwierdzone, a moment przyłączenia Małopolski – sporny (pewne jest, że w 1000 r. powstało biskupstwo w Krakowie).',
       theory: `
         <h3>Grody i plemiona</h3>
@@ -949,6 +960,7 @@ window.SUBJECTS.push({
     {
       id: 'rozbicie-dzielnicowe',
       name: 'Rozbicie dzielnicowe',
+      extra: true,
       basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 11 „Ziemie polskie w okresie rozbicia dzielnicowego”, wym. 1 (przyczyny i skutki rozbicia dzielnicowego po śmierci Bolesława Krzywoustego: pryncypat, zasada senioratu), wym. 2 (przyczyny i skutki sprowadzenia Zakonu Krzyżackiego), wym. 3 (przemiany społeczno-gospodarcze i ich wpływ na losy regionu), wym. 4 (zabytki sztuki romańskiej i gotyckiej w Polsce i ich ochrona – moduł kultura). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Rozbicie dzielnicowe”, „Testament Bolesława Krzywoustego i jego skutki”, „Państwo zakonu krzyżackiego”, „Przemiany społeczno-gospodarcze na ziemiach polskich oraz społeczno-kulturowe skutki kolonizacji na prawie niemieckim”) i na dzieje.pl (Drzwi Gnieźnieńskie – XII w.; zamek w Malborku – siedziba wielkich mistrzów od 1309 r., na liście UNESCO od 1997 r.). Okres rozbicia: 1138–1320 (za ZPE). Oryginał „testamentu” Krzywoustego się nie zachował – podział znamy z kronik, dlatego dzielnice synów podano ogólnie. Sprowadzenie Krzyżaków datujemy „ok. 1226 r.” (dokument nadania ziemi chełmińskiej pochodzi z 1228 r.). Daty lokacji poszczególnych miast pominięto – podajemy tylko wiek.',
       theory: `
         <h3>Testament Bolesława Krzywoustego – 1138</h3>
@@ -1045,6 +1057,7 @@ window.SUBJECTS.push({
     {
       id: 'ostatni-piastowie',
       name: 'Polska ostatnich Piastów',
+      extra: true,
       basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 12 „Zjednoczone królestwo – Polska ostatnich Piastów”, wym. 1 (dokonania Władysława Łokietka i Kazimierza Wielkiego: Akademia Krakowska, koronacja, monarchia stanowa), wym. 2 (daty koronacji Władysława Łokietka i wygaśnięcia dynastii Piastów na tronie Polski oraz ich znaczenie), wym. 3 (zmiany terytorialne państwa ostatnich Piastów na mapie). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Rządy Kazimierza Wielkiego”, „Polityka zagraniczna Kazimierza Wielkiego”, „Konflikt z Krzyżakami i Czechami”, „Rozbicie dzielnicowe”, „Zastał Polskę drewnianą – sukcesy polityki wewnętrznej Kazimierza Wielkiego”): koronacja Łokietka 20.01.1320 w Krakowie, bitwa pod Płowcami 1331 (nierozstrzygnięta), koronacja Kazimierza 1333, układ w Wyszehradzie 1335, pokój kaliski 1343 (powrót Kujaw i ziemi dobrzyńskiej, Pomorze Gdańskie przy Krzyżakach), pokój w Namysłowie 1348 (Śląsk przy Czechach), przyłączanie Rusi Halickiej (1340–1366, Lwów 1349), zwierzchnictwo nad Mazowszem (1351), statut wiślicki, Akademia Krakowska 1364 (kształcenie prawników), zjazd monarchów w Krakowie 1364, śmierć Kazimierza w 1370 r. i następca – Ludwik Węgierski (Andegaweński), siostrzeniec. Powiedzenie o „Polsce drewnianej i murowanej” zapisał kronikarz Jan Długosz prawie sto lat po śmierci króla – historycy traktują je jako uproszczenie. Zasięg ziem podano schematycznie.',
       theory: `
         <h3>Władysław Łokietek jednoczy kraj</h3>
@@ -1160,6 +1173,7 @@ window.SUBJECTS.push({
     {
       id: 'polska-litwa',
       name: 'Polska i Litwa przeciw Krzyżakom',
+      extra: true,
       basis: 'Dz.U. 2026 poz. 378, historia kl. IV–VI: dz. 13 „Początki państwa polsko-litewskiego i relacje z Krzyżakami”, wym. 1 (przyczyny i skutki sporu polsko-krzyżackiego oraz unii polsko-litewskiej: chrystianizacja, unia personalna), wym. 2 (data bitwy pod Grunwaldem; chronologia: umowa w Krewie, II pokój toruński), wym. 3 (zasięg Polski i Litwy oraz zmiany granic na mocy II pokoju toruńskiego na mapie), wym. 4 (wpływ Jadwigi i Władysława Jagiełły na odnowienie Akademii Krakowskiej – moduł kultura), wym. 5 (Zawisza Czarny jako ideał rycerza średniowiecznego, aktualność etosu rycerskiego – moduł kultura). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy). Fakty sprawdzone 2.11.2026 w materiałach Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Od unii w Krewie do II pokoju toruńskiego”, „Jadwiga i Jagiełło”, „Wielka wojna z zakonem krzyżackim”, „Jadwiga Andegaweńska na polskim tronie”, „W kręgu kultury rycerskiej”, „Wojna trzynastoletnia i jej skutki”), na dzieje.pl (testament Jadwigi i odnowienie Akademii) i w materiałach o hołdach wielkich mistrzów po 1466 r.: koronacja Jadwigi 16.10.1384, umowa w Krewie 14.08.1385, chrzest i ślub Jagiełły oraz koronacja w 1386 r., chrzest Litwy 1387, odnowienie Akademii 1400, wielka wojna 1409–1411, Grunwald 15.07.1410 (Ulryk von Jungingen poległ; dwa nagie miecze), oblężenie Malborka (ok. dwóch miesięcy, nieudane), I pokój toruński 1411 (Żmudź dla Litwy, ziemia dobrzyńska dla Polski), wojna trzynastoletnia 1454–1466, II pokój toruński 1466 (Prusy Królewskie, hołd lenny wielkich mistrzów). Zawisza Czarny – „polegać jak na Zawiszy”, męstwo pod Grunwaldem, sława turniejowa, śmierć w 1428 r. w walce z Turkami. Obraz Zawiszy jako rycerza bez skazy to w dużej mierze legenda – zaznaczamy to w tekście.',
       theory: `
         <h3>Jadwiga – król Polski</h3>

@@ -4,88 +4,192 @@ window.SUBJECTS.push({
   name: 'Język polski',
   icon: '📖',
   color: '#d6604d',
+  book: 'Słowa na start! 4 (Nowa Era)',
   topics: [
     {
-      id: 'komunikacja',
-      name: 'Komunikacja i media',
-      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 1 „Komunikacja”, wym. 1–9 (nadawca, odbiorca, intencja wypowiedzi, komunikat niewerbalny, grzeczność językowa, uważne słuchanie); dz. 6 „Elementy edukacji medialnej”, wym. 1–2, 4–5 (wyszukiwanie informacji, fakt a opinia, wpływ reklamy, higiena cyfrowa). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      id: 'glosk-pisownia',
+      name: 'Głoski, litery i pisownia',
+      chapter: 'rozdziały I–VI (głoski, sylaby, pisownia)',
+      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 3 „Świadomość języka”, wym. 8 (zasady pisowni z wykorzystaniem wiedzy o odmianie i wymowie wyrazów), wym. 10 (pojęcia: głoska dźwięczna i bezdźwięczna, głoska ustna i nosowa, samogłoska, spółgłoska, sylaba). Wybrano podstawowe reguły pisowni ó, rz, ż, ch, wielkiej litery i „nie” z czasownikami oraz przymiotnikami w stopniu równym. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
-        <h3>Kto mówi i do kogo?</h3>
-        <p><b>Komunikacja</b> to przekazywanie informacji, myśli i uczuć innym ludziom. Biorą w niej udział:</p>
+        <h3>Głoska i litera</h3>
+        <ul>
+          <li><b>Głoska</b> – dźwięk, który wymawiasz i słyszysz.</li>
+          <li><b>Litera</b> – znak, którym zapisujesz głoskę.</li>
+        </ul>
+        <p>Niektóre głoski zapisujemy <b>dwiema literami</b>: <b>ch, cz, dz, dź, dż, rz, sz</b>. Wyraz <i>szafa</i> ma 5 liter, ale 4 głoski: <b>sz – a – f – a</b>.</p>
+        <p>Litera <b>i</b> przed samogłoską często tylko zmiękcza głoskę: <i>ciocia</i> to 6 liter i 4 głoski (ć – o – ć – a).</p>
+        <h3>Samogłoski, spółgłoski, sylaby</h3>
+        <ul>
+          <li><b>Samogłoski</b>: a, ą, e, ę, i, o, ó, u, y. Pozostałe głoski to <b>spółgłoski</b>.</li>
+          <li><b>Sylaba</b> – część wyrazu z jedną samogłoską: <i>ma-ka-ron</i> (3 sylaby), <i>hu-laj-no-ga</i> (4 sylaby).</li>
+          <li>Wyraz przenosisz do następnej linii, dzieląc go na sylaby: <i>ma-karon, maka-ron</i>. Nie zostawiaj i nie przenoś pojedynczej litery.</li>
+        </ul>
+        <h3>Głoski dźwięczne i bezdźwięczne, ustne i nosowe</h3>
+        <p>Połóż dłoń na gardle. Gdy wymawiasz głoskę <b>dźwięczną</b>, gardło drży. Przy <b>bezdźwięcznej</b> – nie drży.</p>
         <table>
-          <tr><th>Pojęcie</th><th>Co to znaczy</th><th>Przykład</th></tr>
-          <tr><td><b>nadawca</b></td><td>ten, kto przekazuje wiadomość</td><td>mama, która pisze SMS</td></tr>
-          <tr><td><b>odbiorca</b></td><td>ten, kto wiadomość odbiera</td><td>Kuba, który czyta SMS</td></tr>
-          <tr><td><b>komunikat</b></td><td>to, co zostaje przekazane</td><td>„Wróć na obiad o 14.”</td></tr>
-          <tr><td><b>intencja</b></td><td>cel, po co ktoś mówi lub pisze</td><td>prośba, pytanie, podziękowanie</td></tr>
+          <tr><th>dźwięczna</th><td>b</td><td>d</td><td>g</td><td>w</td><td>z</td><td>ż (rz)</td></tr>
+          <tr><th>bezdźwięczna</th><td>p</td><td>t</td><td>k</td><td>f</td><td>s</td><td>sz</td></tr>
         </table>
-        <p>Najczęstsze <b>intencje</b>: poinformować, zapytać, poprosić, podziękować, przeprosić, ostrzec, pochwalić, przekonać.</p>
-        <h3>Słowa i mowa ciała</h3>
-        <p>Komunikat może być <b>słowny</b> (mówiony lub pisany) albo <b>niewerbalny</b> – bez słów. Komunikaty niewerbalne to np. <b>mimika</b> (wyraz twarzy), <b>gesty</b>, <b>postawa ciała</b>, spojrzenie.</p>
+        <p>Na końcu wyrazu głoskę dźwięczną często wymawiamy jak bezdźwięczną: mówimy [chlep], a piszemy <b>chleb</b>, bo <i>chleba</i>. Odmień wyraz – usłyszysz, co napisać.</p>
+        <p>Przy głoskach <b>nosowych</b> powietrze przechodzi przez nos. Samogłoski nosowe to <b>ą</b> i <b>ę</b>. Pozostałe samogłoski są <b>ustne</b>.</p>
+        <h3>Ó czy u?</h3>
         <ul>
-          <li>👍 kciuk w górę – „super”, „zgoda”,</li>
-          <li>🙂 uśmiech – życzliwość, radość,</li>
-          <li>👋 machanie ręką – powitanie lub pożegnanie,</li>
-          <li>kiwanie głową – „tak”.</li>
+          <li><b>ó</b> piszemy, gdy w innej formie wyrazu lub w wyrazie pokrewnym jest <b>o, e</b> lub <b>a</b>: wózek – wozy, stół – stoły, pióro – pierze, wrócić – wracać.</li>
+          <li><b>ó</b> w zakończeniach <b>-ów, -ówka, -ówna</b>: Kraków, domów, pocztówka, kreskówka (wyjątki: zasuwka, skuwka, wsuwka).</li>
+          <li><b>u</b> piszemy na początku wyrazu: ucho, ulica (wyjątki: ósmy, ósemka, ów) i na końcu wyrazu: domu, kotu, kakadu.</li>
+          <li><b>u</b> w zakończeniach <b>-unek, -uje, -uszek, -utki</b>: rysunek, maluje, fartuszek, malutki.</li>
         </ul>
-        <h3>Grzeczność językowa</h3>
-        <p><b>Grzeczność językowa</b> to zwroty, które okazują szacunek: <b>proszę, dziękuję, przepraszam</b>. Słowa dobieramy do sytuacji i odbiorcy.</p>
-        <table>
-          <tr><th>Do kolegi (nieoficjalnie)</th><th>Do dorosłego (oficjalnie)</th></tr>
-          <tr><td>Cześć!</td><td>Dzień dobry!</td></tr>
-          <tr><td>Dzięki!</td><td>Dziękuję bardzo.</td></tr>
-          <tr><td>Pa!</td><td>Do widzenia.</td></tr>
-          <tr><td>Pożyczysz mi gumkę?</td><td>Czy mogłaby Pani mi pomóc?</td></tr>
-        </table>
-        <div class="tip">💡 <b>Uważne słuchanie</b>: patrz na rozmówcę, nie przerywaj, dopytaj, jeśli czegoś nie rozumiesz.</div>
-        <h3>Fakt czy opinia?</h3>
+        <h3>Rz czy ż?</h3>
         <ul>
-          <li><b>Fakt</b> – informacja, którą można sprawdzić: „Mecz zaczyna się o 17.00”.</li>
-          <li><b>Opinia</b> – czyjeś zdanie, ocena: „To najlepsza drużyna na świecie”. Opinie często zaczynają się od słów: <i>moim zdaniem, uważam, że, myślę, że</i>.</li>
+          <li><b>rz</b>, gdy wymienia się na <b>r</b>: morze – morski, dobrze – dobry, górze – góra.</li>
+          <li><b>rz</b> po spółgłoskach <b>b, p, d, t, g, k, ch, j, w</b>: brzeg, przed, drzewo, trzy, grzyb, krzesło, chrzan, ujrzeć, wrzesień (wyjątki pisane przez <b>sz</b>: pszczoła, pszenica, kształt).</li>
+          <li><b>rz</b> w zakończeniach <b>-arz, -erz</b> w nazwach osób: lekarz, kucharz, malarz, żołnierz.</li>
+          <li><b>ż</b>, gdy wymienia się na <b>g, h, z, s, dz</b>: odważny – odwaga, drużyna – druh, każe – kazać, wyżej – wysoko, pieniążek – pieniądz.</li>
+          <li><b>ż</b> po <b>l, ł, r, n</b>: lżejszy, rżenie, oranżada.</li>
         </ul>
-        <h3>Reklama i ekrany</h3>
-        <p><b>Reklama</b> ma cię zachęcić, żebyś coś kupił albo z czegoś skorzystał. Pokazuje tylko zalety produktu. Zanim poprosisz o coś z reklamy, zastanów się, czy naprawdę tego potrzebujesz.</p>
-        <p><b>Higiena cyfrowa</b> to zdrowe korzystanie z telefonu, komputera i internetu:</p>
+        <h3>Ch czy h?</h3>
         <ul>
-          <li>rób przerwy od ekranu, ruszaj się, spotykaj się z ludźmi,</li>
-          <li>odłóż telefon przed snem,</li>
-          <li>długie, codzienne granie bez przerw może prowadzić do <b>uzależnienia</b> – wtedy trudno przestać,</li>
-          <li>informacje z internetu sprawdzaj w kilku źródłach.</li>
+          <li><b>ch</b>, gdy wymienia się na <b>sz</b>: mucha – musze, ucho – uszy, duch – dusza.</li>
+          <li><b>ch</b> po literze <b>s</b>: schody, schab, schować.</li>
+          <li><b>ch</b> na końcu wyrazu: dach, mech, groch (wyjątek np. druh).</li>
+          <li><b>h</b> wymienia się czasem na <b>ż</b>: druh – drużyna. Wiele wyrazów z <b>h</b> trzeba po prostu zapamiętać: herbata, hałas, hamulec.</li>
         </ul>
+        <h3>Wielka litera</h3>
+        <ul>
+          <li>Wielką literą: początek zdania, imiona i nazwiska, nazwy miast, państw, rzek i gór (Gdańsk, Polska, Wisła, Tatry), nazwy ulic (ulica <b>K</b>wiatowa), świąt (Boże Narodzenie), mieszkańców państw (Polak, Niemka).</li>
+          <li>Małą literą: dni tygodnia i miesiące (poniedziałek, maj), przymiotniki od nazw (polski, gdański).</li>
+        </ul>
+        <h3>„Nie” z czasownikami i przymiotnikami</h3>
+        <ul>
+          <li>Z <b>czasownikami</b> piszemy <b>osobno</b>: nie wiem, nie lubię, nie biegaj (wyjątki: nienawidzić, niepokoić się).</li>
+          <li>Z <b>przymiotnikami</b> w stopniu równym piszemy <b>łącznie</b>: niemiły, niewysoki, nieciekawy.</li>
+        </ul>
+        <div class="tip">💡 Najlepszy sposób na ortografię: <b>odmień wyraz lub znajdź wyraz pokrewny</b>. Gdy to nie pomaga – sprawdź w słowniku ortograficznym.</div>
       `,
       flashcards: [
-        ['Komunikacja', 'Przekazywanie informacji, myśli i uczuć innym ludziom'],
-        ['Nadawca', 'Ten, kto przekazuje wiadomość (mówi lub pisze)'],
-        ['Odbiorca', 'Ten, kto odbiera wiadomość (słucha lub czyta)'],
-        ['Komunikat', 'To, co nadawca przekazuje odbiorcy'],
-        ['Intencja wypowiedzi', 'Cel, w jakim ktoś mówi lub pisze, np. prośba, pytanie, podziękowanie'],
-        ['Komunikat niewerbalny', 'Przekaz bez słów: mimika, gesty, postawa ciała, spojrzenie'],
-        ['Grzeczność językowa', 'Zwroty okazujące szacunek: proszę, dziękuję, przepraszam, dzień dobry'],
-        ['Fakt', 'Informacja, którą można sprawdzić'],
-        ['Opinia', 'Czyjeś zdanie, ocena; np. „moim zdaniem…”'],
-        ['Higiena cyfrowa', 'Zdrowe korzystanie z ekranów: przerwy, ruch, telefon odłożony przed snem'],
+        ['Głoska a litera', 'Głoskę słyszymy i wymawiamy, literę piszemy'],
+        ['Samogłoski', 'a, ą, e, ę, i, o, ó, u, y'],
+        ['Sylaba', 'Część wyrazu z jedną samogłoską: ma-ka-ron'],
+        ['Pary dźwięczna – bezdźwięczna', 'b–p, d–t, g–k, w–f, z–s, ż–sz'],
+        ['Samogłoski nosowe', 'ą i ę'],
+        ['Ó wymienne', 'ó wymienia się na o, e, a: stół – stoły, pióro – pierze, wrócić – wracać'],
+        ['Rz wymienne', 'rz wymienia się na r: morze – morski'],
+        ['Ż wymienne', 'ż wymienia się na g, h, z, s, dz: odważny – odwaga'],
+        ['Ch wymienne', 'ch wymienia się na sz: mucha – musze'],
+        ['„Nie” z czasownikiem', 'osobno: nie wiem (wyjątki: nienawidzić, niepokoić się)'],
+        ['„Nie” z przymiotnikiem', 'w stopniu równym łącznie: niemiły'],
       ],
       questions: [
-        { id: 'qquw8w', q: 'Mama pisze do Kuby SMS: „Wróć na obiad o 14”. Kto jest nadawcą?', options: ['mama', 'Kuba', 'telefon', 'obiad'], answer: 0, explain: 'Nadawca to ten, kto przekazuje wiadomość. Wiadomość napisała mama.' },
-        { id: 'suic55', q: 'Pani mówi do klasy: „Jutro przynieście kredki”. Kto jest odbiorcą?', options: ['pani', 'uczniowie', 'kredki', 'dyrektor'], answer: 1, explain: 'Odbiorca to ten, kto odbiera wiadomość – tutaj uczniowie, którzy słuchają pani.' },
-        { id: 'c79uz5', q: 'Jaka jest intencja zdania: „Czy możesz pożyczyć mi linijkę?”', options: ['prośba', 'podziękowanie', 'przeprosiny', 'ostrzeżenie'], answer: 0, explain: 'Mówiący chce, żeby ktoś pożyczył mu linijkę – to prośba.' },
-        { id: '9ok2ly', q: 'Jaka jest intencja napisu: „Uwaga! Śliska podłoga!”', options: ['podziękowanie', 'ostrzeżenie', 'zaproszenie', 'pochwała'], answer: 1, explain: 'Napis ma uchronić przed upadkiem – ostrzega.' },
-        { id: 'qt38oz', q: 'Który komunikat jest niewerbalny (bez słów)?', options: ['kiwnięcie głową na „tak”', 'SMS „tak”', 'okrzyk „tak!”', 'list z odpowiedzią „tak”'], answer: 0, explain: 'Kiwnięcie głową to gest – przekazuje informację bez słów.' },
-        { id: '4gx2s2', q: 'Uśmiech, gesty i postawa ciała to przykłady…', options: ['komunikatów niewerbalnych', 'opinii', 'faktów', 'reklam'], answer: 0, explain: 'To mowa ciała, czyli komunikaty niewerbalne.' },
-        { id: 'q299pq', q: 'Jak grzecznie przywitasz panią dyrektor na korytarzu?', options: ['Dzień dobry!', 'Cześć!', 'Siema!', 'Hej, co tam?'], answer: 0, explain: 'Do dorosłych, zwłaszcza w szkole, mówimy oficjalnie: „Dzień dobry”.' },
-        { id: 'u8512c', q: 'Która prośba jest grzeczna?', options: ['Podaj mi, proszę, sól.', 'Dawaj sól!', 'Sól, szybko!', 'No, podaj tę sól.'], answer: 0, explain: 'Słowo „proszę” i spokojny ton to zasady grzeczności językowej.' },
-        { id: '4rbi80', q: 'Które zachowanie pokazuje, że uważnie słuchasz?', options: ['patrzysz na rozmówcę i nie przerywasz', 'przeglądasz telefon', 'mówisz w tym samym czasie', 'odwracasz się plecami'], answer: 0, explain: 'Uważny słuchacz patrzy na rozmówcę, nie przerywa i dopytuje, gdy czegoś nie rozumie.' },
-        { id: 'rm1cgl', q: 'Fakt czy opinia?\n„Ten film jest najnudniejszy na świecie.”', options: ['opinia', 'fakt'], noShuffle: true, answer: 0, explain: 'To czyjaś ocena. Inna osoba może uważać, że film jest ciekawy – to opinia.' },
-        { id: '1rbsqj', q: 'Które zdanie to fakt?', options: ['Mecz zaczyna się o 17.00.', 'To będzie wspaniały mecz.', 'Moim zdaniem nasi grają najlepiej.', 'Ten stadion jest brzydki.'], answer: 0, explain: 'Godzinę meczu można sprawdzić – to fakt. Pozostałe zdania to oceny, czyli opinie.' },
-        { id: '8jv6xc', q: 'Po co jest reklama?', options: ['żeby zachęcić do kupienia lub skorzystania z czegoś', 'żeby pokazać wszystkie wady produktu', 'żeby uczyć ortografii', 'żeby podać prognozę pogody'], answer: 0, explain: 'Reklama ma przekonać, że warto coś kupić. Dlatego pokazuje tylko zalety.' },
-        { id: 'z66xs3', q: 'Prawda czy fałsz?\nReklama zawsze mówi całą prawdę o produkcie, także o jego wadach.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Reklama pokazuje zalety, a o wadach zwykle milczy. Warto myśleć krytycznie.' },
-        { id: 'e908h0', q: 'Które zachowanie to dobra higiena cyfrowa?', options: ['odkładam telefon na długo przed snem', 'gram do późnej nocy', 'jem obiad, patrząc w ekran', 'nie robię przerw od komputera'], answer: 0, explain: 'Ekran przed snem utrudnia zasypianie. Odłożony telefon to zdrowy nawyk.' },
-        { id: '85i219', q: 'Prawda czy fałsz?\nCodzienne, wielogodzinne granie bez przerw może prowadzić do uzależnienia od gier.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Uzależnienie to sytuacja, gdy trudno przestać grać. Pomagają przerwy, ruch i spotkania z ludźmi.' },
+        { id: '65fhsb', q: 'Ile głosek ma wyraz „szafa”?', options: ['4', '5', '3', '6'], answer: 0, explain: 'Szafa to 5 liter, ale 4 głoski: sz – a – f – a. Dwuznak „sz” to jedna głoska.' },
+        { id: 'i745b7', q: 'W którym wyrazie jest więcej liter niż głosek?', options: ['chata', 'mama', 'lato', 'kot'], answer: 0, explain: 'W wyrazie „chata” dwie litery „ch” oznaczają jedną głoskę: 5 liter, 4 głoski.' },
+        { id: '81boim', q: 'Ile sylab ma wyraz „hulajnoga”?', options: ['4', '3', '5', '9'], answer: 0, explain: 'hu-laj-no-ga – cztery sylaby, w każdej jedna samogłoska.' },
+        { id: 'ukkyx8', q: 'Które przeniesienie wyrazu do nowej linii jest poprawne?', options: ['ma-karon', 'mak-aron', 'm-akaron', 'makaro-n'], answer: 0, explain: 'Dzielimy według sylab (ma-ka-ron) i nie zostawiamy pojedynczej litery.' },
+        { id: 'd478lf', q: 'Która para to głoska dźwięczna i jej bezdźwięczna para?', options: ['b – p', 'b – d', 'm – n', 'a – o'], answer: 0, explain: 'Przy „b” gardło drży, przy „p” – nie. To para dźwięczna – bezdźwięczna.' },
+        { id: 'i8nvk3', q: 'Która samogłoska jest nosowa?', options: ['ą', 'a', 'o', 'u'], answer: 0, explain: 'Samogłoski nosowe to ą i ę. Przy ich wymowie powietrze przechodzi też przez nos.' },
+        { id: '67cnbv', q: 'Dlaczego „chleb” piszemy przez „b”, choć na końcu słychać [p]?', options: ['bo mówimy „chleba”', 'bo to wyjątek', 'bo po „e” zawsze jest „b”', 'bo „p” nie może być na końcu wyrazu'], answer: 0, explain: 'W formie „chleba” wyraźnie słychać „b”. Odmiana pomaga sprawdzić pisownię.' },
+        { id: '7x55jp', q: 'Jaką literę wpiszesz w wyraz „st_ł”?', options: ['ó', 'u'], noShuffle: true, answer: 0, explain: 'Stół – stoły: ó wymienia się na o.' },
+        { id: 'v56dm8', q: 'Dlaczego „pióro” piszemy przez „ó”?', options: ['bo „pierze” – ó wymienia się na e', 'bo „ó” jest na początku wyrazu', 'bo to zakończenie -ów', 'bo po „p” zawsze jest „ó”'], answer: 0, explain: 'Pióro – pierze: ó wymienia się na e.' },
+        { id: 'qzs8qv', q: 'Który wyraz to wyjątek – piszemy go przez „ó” na początku?', options: ['_smy (jak liczba 8)', '_cho', '_lica', '_śmiech'], answer: 0, explain: 'Na początku wyrazu piszemy „u”, ale wyjątki to m.in. ósmy, ósemka, ów.' },
+        { id: 'aqe7w9', q: 'Dlaczego „morze” piszemy przez „rz”?', options: ['bo „morski” – rz wymienia się na r', 'bo po „o” zawsze jest „rz”', 'bo to zakończenie -arz', 'bo „ż” nie występuje w środku wyrazu'], answer: 0, explain: 'Morze – morski: rz wymienia się na r.' },
+        { id: 'p0vnaq', q: 'Który wyraz napisano poprawnie?', options: ['krzesło', 'kżesło', 'kszesło'], answer: 0, explain: 'Po „k” piszemy „rz”: krzesło.' },
+        { id: 'zsuo93', q: 'Dlaczego „odważny” piszemy przez „ż”?', options: ['bo „odwaga” – ż wymienia się na g', 'bo „odwarzyć” – ż wymienia się na r', 'bo po „a” zawsze jest „ż”', 'bo to wyjątek bez reguły'], answer: 0, explain: 'Odważny – odwaga: ż wymienia się na g.' },
+        { id: 't04otg', q: 'Który wyraz napisano poprawnie?', options: ['schody', 'shody', 'zchody'], answer: 0, explain: 'Po literze „s” piszemy „ch”: schody.' },
+        { id: 'e4h0qx', q: 'Które zdanie zapisano poprawnie?', options: ['W maju pojedziemy do Gdańska.', 'W Maju pojedziemy do Gdańska.', 'W maju pojedziemy do gdańska.', 'w maju pojedziemy do Gdańska.'], answer: 0, explain: 'Zdanie zaczynamy wielką literą, nazwę miasta – też. Nazwy miesięcy piszemy małą literą.' },
+        { id: 'czh7k8', q: 'Który zapis jest poprawny?', options: ['Nie wiem, ale to niemiłe.', 'Niewiem, ale to nie miłe.', 'Nie wiem, ale to nie miłe.', 'Niewiem, ale to niemiłe.'], answer: 0, explain: '„Nie” z czasownikiem piszemy osobno (nie wiem), a z przymiotnikiem w stopniu równym łącznie (niemiłe).' },
+      ],
+    },
+    {
+      id: 'teksty-kultury',
+      name: 'Jak czytać utwory',
+      chapter: 'rozdziały I–V (wers, narrator, epitet, rym, legenda, baśń)',
+      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 2 „Odbiór tekstów kultury”, wym. 4 (świat przedstawiony, utwory realistyczne i fantastyczne), wym. 5 (ocena postępowania bohaterów), wym. 6 (środki językowe i ich oddziaływanie), wym. 8 (pojęcia: tekst kultury, fikcja, utwór realistyczny i fantastyczny, mit, baśń, legenda, przypowieść, powieść, opowiadanie, świat przedstawiony, narrator, bohater, fabuła, podmiot mówiący, epitet, porównanie, wyliczenie, powtórzenie, przenośnia, wyraz dźwiękonaśladowczy, rymy); dz. 7 wym. 4–6 (praktyki lekturowe, teksty obowiązkowe w kl. IV–VI – tylko wymienione). Przykłady napisano samodzielnie. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Tekst kultury i fikcja</h3>
+        <p><b>Tekst kultury</b> to każde dzieło stworzone przez człowieka: książka, wiersz, film, obraz, komiks, piosenka, spektakl w teatrze.</p>
+        <p><b>Fikcja</b> – świat wymyślony przez autora. Nawet jeśli przypomina prawdziwy, wydarzenia w utworze są zmyślone.</p>
+        <h3>Świat przedstawiony</h3>
+        <p>To wszystko, co dzieje się w utworze:</p>
+        <ul>
+          <li><b>czas</b> – kiedy toczy się akcja,</li>
+          <li><b>miejsce</b> – gdzie,</li>
+          <li><b>bohaterowie</b> – postacie, o których jest mowa (najważniejsza to <b>bohater główny</b>),</li>
+          <li><b>wydarzenia</b> – co się dzieje.</li>
+        </ul>
+        <p><b>Fabuła</b> to ciąg wydarzeń w utworze, ułożonych po kolei.</p>
+        <h3>Kto opowiada?</h3>
+        <table>
+          <tr><th>Pojęcie</th><th>Kto to jest</th></tr>
+          <tr><td><b>autor</b></td><td>prawdziwa osoba, która napisała utwór</td></tr>
+          <tr><td><b>narrator</b></td><td>ten, kto opowiada o wydarzeniach w opowiadaniu, baśni czy powieści</td></tr>
+          <tr><td><b>podmiot mówiący</b></td><td>„ja”, które mówi w wierszu</td></tr>
+        </table>
+        <div class="tip">💡 Narrator to nie autor! Autor wymyśla narratora tak samo jak bohaterów.</div>
+        <h3>Realistyczny czy fantastyczny?</h3>
+        <ul>
+          <li><b>Utwór realistyczny</b> – wydarzenia mogłyby się zdarzyć naprawdę (np. kłótnia i zgoda przyjaciół, wycieczka klasowa).</li>
+          <li><b>Utwór fantastyczny</b> – są w nim rzeczy niemożliwe: czary, smoki, mówiące zwierzęta, latające dywany.</li>
+        </ul>
+        <h3>Gatunki</h3>
+        <table>
+          <tr><th>Gatunek</th><th>Cechy</th></tr>
+          <tr><td><b>baśń</b></td><td>czary i istoty fantastyczne, dobro zwycięża zło; czas i miejsce nieokreślone („dawno, dawno temu, za siedmioma górami”)</td></tr>
+          <tr><td><b>legenda</b></td><td>łączy prawdę i fikcję; często wyjaśnia, skąd wzięła się nazwa miejsca, albo opowiada o dawnej postaci lub wydarzeniu</td></tr>
+          <tr><td><b>mit</b></td><td>opowieść starożytnych, np. Greków, o bogach i bohaterach; wyjaśnia, jak powstał świat i zjawiska przyrody</td></tr>
+          <tr><td><b>przypowieść</b></td><td>krótka opowieść z ukrytą nauką (pouczeniem), której trzeba się domyślić; znane przypowieści są w Biblii</td></tr>
+          <tr><td><b>opowiadanie</b></td><td>krótszy utwór pisany prozą; niewielu bohaterów, jeden główny ciąg wydarzeń</td></tr>
+          <tr><td><b>powieść</b></td><td>długi utwór pisany prozą; wielu bohaterów, wiele wątków, zwykle podzielony na rozdziały</td></tr>
+        </table>
+        <p>W klasach 4–6 poznasz m.in. wybrane fragmenty Biblii (opis stworzenia świata, przypowieści o miłosiernym Samarytaninie i o synu marnotrawnym), wybrane mity greckie (m.in. o stworzeniu świata, o Syzyfie, o Dedalu i Ikarze, o Demeter i Korze), baśnie i legendy, a także „Mazurka Dąbrowskiego” Józefa Wybickiego i „Rotę” Marii Konopnickiej. Co roku przeczytasz też co najmniej 4 dłuższe książki.</p>
+        <h3>Środki artystyczne</h3>
+        <table>
+          <tr><th>Środek</th><th>Co to jest</th><th>Przykład</th></tr>
+          <tr><td><b>epitet</b></td><td>wyraz określający rzeczownik (zwykle przymiotnik)</td><td>ciemna noc, złociste słońce</td></tr>
+          <tr><td><b>porównanie</b></td><td>zestawienie dwóch rzeczy za pomocą słów: jak, niby, niczym, jakby</td><td>szybki jak wiatr</td></tr>
+          <tr><td><b>przenośnia (metafora)</b></td><td>wyrazy znaczą coś innego niż zwykle</td><td>dywan z liści, morze łez</td></tr>
+          <tr><td><b>wyliczenie</b></td><td>wymienienie po kolei wielu rzeczy</td><td>maki, chabry, rumianki i stokrotki</td></tr>
+          <tr><td><b>powtórzenie</b></td><td>ten sam wyraz lub zwrot kilka razy</td><td>czekam, czekam i czekam</td></tr>
+          <tr><td><b>wyraz dźwiękonaśladowczy</b></td><td>naśladuje dźwięk</td><td>hau, miau, bęc, kap-kap</td></tr>
+          <tr><td><b>rym</b></td><td>podobne brzmienie końcówek wyrazów w wersach</td><td>kotek – płotek</td></tr>
+        </table>
+        <p>W wierszu linijka to <b>wers</b>, a kilka wersów razem to <b>zwrotka</b> (strofa).</p>
+      `,
+      flashcards: [
+        ['Świat przedstawiony', 'Czas, miejsce, bohaterowie i wydarzenia w utworze'],
+        ['Fabuła', 'Ciąg wydarzeń w utworze, ułożonych po kolei'],
+        ['Narrator', 'Ten, kto opowiada o wydarzeniach w utworze (to nie autor)'],
+        ['Podmiot mówiący', '„Ja”, które mówi w wierszu'],
+        ['Utwór fantastyczny', 'Są w nim rzeczy niemożliwe: czary, smoki, mówiące zwierzęta'],
+        ['Baśń', 'Czary, dobro zwycięża zło, „dawno, dawno temu”'],
+        ['Legenda', 'Łączy prawdę i fikcję; często wyjaśnia pochodzenie nazwy miejsca'],
+        ['Mit', 'Opowieść starożytnych o bogach i bohaterach, o powstaniu świata'],
+        ['Przypowieść', 'Krótka opowieść z ukrytą nauką'],
+        ['Epitet', 'Wyraz określający rzeczownik: ciemna noc'],
+        ['Porównanie', 'Zestawienie za pomocą „jak”, „niby”, „niczym”: szybki jak wiatr'],
+      ],
+      questions: [
+        { id: 'x162h4', q: 'Co tworzy świat przedstawiony utworu?', options: ['czas, miejsce, bohaterowie i wydarzenia', 'autor, tytuł i okładka', 'ilustracje i numer strony', 'cena i wydawnictwo'], answer: 0, explain: 'Świat przedstawiony to wszystko, co dzieje się w utworze: kiedy, gdzie, kto i co.' },
+        { id: 'c4jpj6', q: 'Fabuła to…', options: ['ciąg wydarzeń w utworze, ułożonych po kolei', 'opis wyglądu bohatera', 'tytuł książki', 'rymy w wierszu'], answer: 0, explain: 'Fabuła to wydarzenia jedno po drugim – od początku do końca historii.' },
+        { id: 'k8wfsr', q: 'Kim jest narrator?', options: ['tym, kto opowiada o wydarzeniach w utworze', 'zawsze autorem książki', 'tym, kto rysuje ilustracje', 'czytelnikiem'], answer: 0, explain: 'Narrator opowiada historię. Wymyślił go autor – to nie to samo co autor.' },
+        { id: 'n0qpuy', q: 'Jak nazywamy „ja”, które mówi w wierszu?', options: ['podmiot mówiący', 'narrator', 'bohater drugoplanowy', 'czytelnik'], answer: 0, explain: 'W wierszu mówi podmiot mówiący. W opowiadaniu historię opowiada narrator.' },
+        { id: '5fjdn4', q: 'W utworze dzieci znajdują czarodziejską różdżkę, a smok mówi ludzkim głosem. To utwór…', options: ['fantastyczny', 'realistyczny'], noShuffle: true, answer: 0, explain: 'Czary i mówiący smok nie zdarzają się naprawdę – to elementy fantastyczne.' },
+        { id: 'k13t06', q: 'Jaki to gatunek? Są czary i wróżki, dobro zwycięża zło, a historia zaczyna się od słów „Dawno, dawno temu…”.', options: ['baśń', 'legenda', 'powieść', 'przypowieść'], answer: 0, explain: 'Czary, zwycięstwo dobra i nieokreślony czas to cechy baśni.' },
+        { id: '3mub7a', q: 'Opowieść łączy prawdę i fikcję i wyjaśnia, skąd wzięła się nazwa miasta. To…', options: ['legenda', 'baśń', 'mit', 'powieść'], answer: 0, explain: 'Legendy często wyjaśniają pochodzenie nazw miejsc i łączą prawdę z fikcją.' },
+        { id: 'b1549k', q: 'Opowieść starożytnych Greków o bogach i o tym, jak powstał świat, to…', options: ['mit', 'baśń', 'legenda', 'opowiadanie'], answer: 0, explain: 'Mity to opowieści starożytnych o bogach i bohaterach, wyjaśniające powstanie świata i zjawisk przyrody.' },
+        { id: '13ctuu', q: 'Krótka opowieść z ukrytą nauką, której trzeba się domyślić, to…', options: ['przypowieść', 'powieść', 'legenda', 'mit'], answer: 0, explain: 'Przypowieść ma ukryte pouczenie. Znane przypowieści znajdziesz w Biblii.' },
+        { id: 'ybef7z', q: 'Długi utwór prozą, z wieloma bohaterami i wątkami, podzielony na rozdziały, to…', options: ['powieść', 'opowiadanie', 'przypowieść', 'wiersz'], answer: 0, explain: 'Powieść jest długa i ma wiele wątków. Opowiadanie jest krótsze, ma jeden główny ciąg wydarzeń.' },
+        { id: 'ockolf', q: 'Jaki środek zastosowano w wyrażeniu „ciemna noc”?', options: ['epitet', 'porównanie', 'wyliczenie', 'rym'], answer: 0, explain: 'Przymiotnik „ciemna” określa rzeczownik „noc” – to epitet.' },
+        { id: 'othxa1', q: 'Jaki środek zastosowano w zdaniu „Pędził jak strzała.”?', options: ['porównanie', 'epitet', 'wyliczenie', 'wyraz dźwiękonaśladowczy'], answer: 0, explain: 'Słowo „jak” zestawia biegnącego ze strzałą – to porównanie.' },
+        { id: 'm8kbtb', q: 'Jaki środek zastosowano: „Bum! Trach! Coś spadło ze stołu.”?', options: ['wyrazy dźwiękonaśladowcze', 'porównanie', 'epitet', 'przenośnia'], answer: 0, explain: '„Bum” i „trach” naśladują dźwięki – to wyrazy dźwiękonaśladowcze.' },
+        { id: 'qu3b4t', q: 'Jaki środek zastosowano: „Na łące rosną maki, chabry, rumianki i stokrotki.”?', options: ['wyliczenie', 'porównanie', 'rym', 'wyraz dźwiękonaśladowczy'], answer: 0, explain: 'Wymieniono po kolei kilka kwiatów – to wyliczenie.' },
+        { id: 'w5m98q', q: 'Które wyrazy się rymują?', options: ['kotek – płotek', 'kotek – piesek', 'płotek – brama', 'dom – ogród'], answer: 0, explain: 'Końcówki „-otek” brzmią tak samo – to rym.' },
+        { id: 'sk8ch5', q: 'Jaki środek zastosowano: „Jesień rozłożyła na trawnikach dywan z liści.”?', options: ['przenośnię', 'porównanie', 'wyliczenie', 'wyraz dźwiękonaśladowczy'], answer: 0, explain: 'Nie ma tu prawdziwego dywanu – liście tylko przypominają dywan. To przenośnia (metafora). Brak słowa „jak”, więc to nie porównanie.' },
       ],
     },
     {
       id: 'czesci-mowy',
       name: 'Części mowy',
+      chapter: 'rozdziały II–V (rzeczownik, przymiotnik, czasownik, przysłówek)',
       basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 3 „Świadomość języka”, wym. 1 (odmienne i nieodmienne części mowy, kategorie gramatyczne), wym. 3 (części mowy a części zdania – tylko rozpoznawanie), wym. 10 (pojęcia: rzeczownik, czasownik, przymiotnik, przysłówek, liczebnik, zaimek, spójnik, przyimek, liczba, osoba, rodzaj, przypadek, czas, tryb, stopniowanie). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Części mowy odmienne</h3>
@@ -178,334 +282,9 @@ window.SUBJECTS.push({
       ],
     },
     {
-      id: 'zdanie',
-      name: 'Wypowiedzenie, zdanie i znaki',
-      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 3 „Świadomość języka”, wym. 4 (zdania poprawne logicznie i gramatycznie, główne części zdania i ich określenia), wym. 9 (znaki interpunkcyjne), wym. 10 (pojęcia: wypowiedzenie oznajmujące, pytające, rozkazujące, wykrzyknikowe, równoważnik zdania, zdanie pojedyncze i złożone, podmiot, orzeczenie, kropka, przecinek, znak zapytania, wykrzyknik, cudzysłów, nawias, dwukropek). Z zasad użycia przecinka wybrano tylko podstawowe. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
-      theory: `
-        <h3>Wypowiedzenie</h3>
-        <p><b>Wypowiedzenie</b> to wyraz lub kilka wyrazów, które przekazują myśl. Zaczyna się wielką literą, a kończy kropką, znakiem zapytania lub wykrzyknikiem.</p>
-        <table>
-          <tr><th>Rodzaj</th><th>Do czego służy</th><th>Przykład</th></tr>
-          <tr><td><b>oznajmujące</b></td><td>informuje o czymś; kropka</td><td>Jutro jedziemy nad morze.</td></tr>
-          <tr><td><b>pytające</b></td><td>o coś pyta; znak zapytania</td><td>Czy odrobiłeś lekcje?</td></tr>
-          <tr><td><b>rozkazujące</b></td><td>wyraża polecenie lub prośbę; kropka lub wykrzyknik</td><td>Zamknij, proszę, okno.</td></tr>
-          <tr><td><b>wykrzyknikowe</b></td><td>wyraża silne uczucia: radość, zdziwienie, złość; wykrzyknik</td><td>Hurra, wygraliśmy!</td></tr>
-        </table>
-        <h3>Zdanie czy równoważnik zdania?</h3>
-        <ul>
-          <li><b>Zdanie</b> ma <b>orzeczenie</b>, czyli czasownik, który mówi, co ktoś robi: <i>Na sali <b>panuje</b> cisza.</i></li>
-          <li><b>Równoważnik zdania</b> nie ma takiego czasownika, a też przekazuje myśl: <i>Cisza na sali. Pożar! Dzień dobry!</i></li>
-        </ul>
-        <h3>Podmiot i orzeczenie</h3>
-        <table>
-          <tr><th>Część zdania</th><th>Pytania</th><th>„Mały pies głośno szczeka.”</th></tr>
-          <tr><td><b>podmiot</b> – kto lub co wykonuje czynność</td><td>kto? co?</td><td>pies</td></tr>
-          <tr><td><b>orzeczenie</b> – co robi podmiot</td><td>co robi? co się z nim dzieje?</td><td>szczeka</td></tr>
-          <tr><td><b>określenia</b> – dokładniej opisują podmiot lub orzeczenie</td><td>jaki? jak?</td><td>mały, głośno</td></tr>
-        </table>
-        <div class="tip">💡 Szukaj najpierw orzeczenia (czasownika), a potem zapytaj: <i>kto to robi?</i> – tak znajdziesz podmiot.</div>
-        <h3>Zdanie pojedyncze i złożone</h3>
-        <ul>
-          <li><b>Pojedyncze</b> – ma jedno orzeczenie: <i>Kasia <b>czyta</b>.</i></li>
-          <li><b>Złożone</b> – ma co najmniej dwa orzeczenia: <i>Kasia <b>czyta</b>, a Tomek <b>rysuje</b>.</i></li>
-        </ul>
-        <h3>Znaki interpunkcyjne</h3>
-        <table>
-          <tr><th>Znak</th><th>Kiedy</th><th>Przykład</th></tr>
-          <tr><td><b>przecinek</b></td><td>przed: <i>a, ale, lecz, że, bo, który</i></td><td>Wiem, że masz rację.</td></tr>
-          <tr><td></td><td>przy wyliczaniu (bez przecinka przed <i>i</i>)</td><td>Kupiłam jabłka, gruszki i śliwki.</td></tr>
-          <tr><td></td><td>przy zwrocie do kogoś</td><td>Mamo, pomożesz mi?</td></tr>
-          <tr><td><b>dwukropek</b></td><td>przed wyliczeniem lub przed cudzymi słowami</td><td>Zabierz trzy rzeczy: kanapki, wodę i czapkę.</td></tr>
-          <tr><td><b>cudzysłów</b></td><td>tytuły, cudze słowa</td><td>Czytam „Rotę”. Tata powiedział: „Wracamy”.</td></tr>
-          <tr><td><b>nawias</b></td><td>dodatkowe wyjaśnienie</td><td>Mój brat (ma 6 lat) chodzi do zerówki.</td></tr>
-        </table>
-      `,
-      flashcards: [
-        ['Wypowiedzenie oznajmujące', 'Informuje o czymś; kończy się kropką'],
-        ['Wypowiedzenie pytające', 'Pyta o coś; kończy się znakiem zapytania'],
-        ['Wypowiedzenie rozkazujące', 'Wyraża polecenie lub prośbę: Zamknij, proszę, okno.'],
-        ['Wypowiedzenie wykrzyknikowe', 'Wyraża silne uczucia; kończy się wykrzyknikiem'],
-        ['Równoważnik zdania', 'Wypowiedzenie bez orzeczenia (czasownika): Cisza na sali.'],
-        ['Podmiot', 'Kto lub co wykonuje czynność; pytania: kto? co?'],
-        ['Orzeczenie', 'Co robi podmiot; pytania: co robi? co się z nim dzieje?'],
-        ['Zdanie złożone', 'Zdanie z co najmniej dwoma orzeczeniami'],
-        ['Przecinek przed…', 'a, ale, lecz, że, bo, który'],
-        ['Dwukropek', 'Przed wyliczeniem lub przed przytoczeniem cudzych słów'],
-      ],
-      questions: [
-        { id: 'ygsz20', q: 'Jakie to wypowiedzenie: „Jutro jedziemy nad morze.”?', options: ['oznajmujące', 'pytające', 'rozkazujące', 'wykrzyknikowe'], answer: 0, explain: 'Wypowiedzenie informuje o czymś i kończy się kropką – jest oznajmujące.' },
-        { id: 'cuvyzu', q: 'Jakie to wypowiedzenie: „Czy odrobiłeś lekcje?”', options: ['pytające', 'oznajmujące', 'rozkazujące', 'wykrzyknikowe'], answer: 0, explain: 'Pyta o coś i kończy się znakiem zapytania – jest pytające.' },
-        { id: 'k3vzd6', q: 'Jakie to wypowiedzenie: „Zamknij, proszę, okno.”?', options: ['rozkazujące', 'oznajmujące', 'pytające', 'wykrzyknikowe'], answer: 0, explain: 'To prośba, żeby ktoś coś zrobił – wypowiedzenie rozkazujące.' },
-        { id: '8sicvm', q: 'Które wypowiedzenie jest wykrzyknikowe, czyli wyraża silne uczucia?', options: ['Hurra, wygraliśmy!', 'Wygraliśmy mecz.', 'Czy wygraliśmy?', 'Graj dalej.'], answer: 0, explain: 'Okrzyk „Hurra” wyraża radość, a na końcu jest wykrzyknik.' },
-        { id: 'xd6x1f', q: 'Które wypowiedzenie jest równoważnikiem zdania?', options: ['Cisza na sali.', 'Na sali panuje cisza.', 'Uczniowie siedzą cicho.', 'Pani prosi o ciszę.'], answer: 0, explain: '„Cisza na sali” nie ma czasownika (orzeczenia), więc to równoważnik zdania.' },
-        { id: 'gu7zlm', q: 'Co jest orzeczeniem w zdaniu „Mały pies głośno szczeka.”?', options: ['szczeka', 'pies', 'mały', 'głośno'], answer: 0, explain: 'Pytamy: co robi pies? – szczeka. To orzeczenie.' },
-        { id: 'qxt84h', q: 'Co jest podmiotem w zdaniu „Mały pies głośno szczeka.”?', options: ['pies', 'szczeka', 'mały', 'głośno'], answer: 0, explain: 'Pytamy: kto szczeka? – pies. To podmiot.' },
-        { id: 'cjrros', q: 'Na jakie pytania odpowiada podmiot?', options: ['kto? co?', 'co robi?', 'jaki? jaka?', 'gdzie? kiedy?'], answer: 0, explain: 'Podmiot odpowiada na pytania kto? co? Orzeczenie – na pytanie co robi?' },
-        { id: '8specw', q: 'Jakie jest zdanie „Kasia czyta, a Tomek rysuje.”?', options: ['złożone', 'pojedyncze', 'to równoważnik zdania'], answer: 0, explain: 'Ma dwa orzeczenia: „czyta” i „rysuje”, więc jest zdaniem złożonym.' },
-        { id: '8rudim', q: 'Po czym poznasz zdanie złożone?', options: ['ma co najmniej dwa orzeczenia', 'jest bardzo długie', 'kończy się wykrzyknikiem', 'nie ma podmiotu'], answer: 0, explain: 'Liczy się liczba orzeczeń, a nie długość zdania. Zdanie złożone ma co najmniej dwa orzeczenia.' },
-        { id: 'm0sv5b', q: 'Które zdanie zapisano poprawnie?', options: ['Wiem, że masz rację.', 'Wiem że, masz rację.', 'Wiem że masz, rację.', 'Wiem, że, masz rację.'], answer: 0, explain: 'Przecinek stawiamy przed „że”.' },
-        { id: 'jd9syk', q: 'Które zdanie zapisano poprawnie?', options: ['Mamo, pomożesz mi?', 'Mamo pomożesz mi?', 'Mamo pomożesz, mi?', 'Mamo pomożesz mi.'], answer: 0, explain: 'Zwrot do osoby („Mamo”) oddzielamy przecinkiem, a pytanie kończymy znakiem zapytania.' },
-        { id: '1chai8', q: 'Które zdanie zapisano poprawnie?', options: ['W ogrodzie rosną róże, tulipany i bratki.', 'W ogrodzie rosną róże tulipany i bratki.', 'W ogrodzie rosną róże, tulipany, i bratki.', 'W ogrodzie, rosną róże, tulipany i bratki.'], answer: 0, explain: 'Wyliczane wyrazy oddzielamy przecinkami, ale przed „i” przecinka nie stawiamy.' },
-        { id: '2brkur', q: 'Jaki znak wstawisz w miejsce kreski?\n„Zabierz na wycieczkę trzy rzeczy _ kanapki, wodę i czapkę.”', options: ['dwukropek', 'znak zapytania', 'nawias', 'wykrzyknik'], answer: 0, explain: 'Przed wyliczeniem, które zapowiadamy słowami „trzy rzeczy”, stawiamy dwukropek.' },
-        { id: 'gb2q8y', q: 'Jak zapiszesz tytuł wiersza w zdaniu?', options: ['w cudzysłowie: „Rota”', 'w nawiasie: (Rota)', 'po dwukropku: :Rota', 'z wykrzyknikiem: Rota!'], answer: 0, explain: 'Tytuły utworów w zdaniu zapisujemy w cudzysłowie.' },
-        { id: 't1j3ru', q: 'Do czego służy nawias w zdaniu „Mój brat (ma 6 lat) chodzi do zerówki.”?', options: ['do dodatkowego wyjaśnienia', 'do zapisania tytułu', 'do zakończenia pytania', 'do wyliczenia'], answer: 0, explain: 'W nawiasie dopisujemy dodatkową informację – tutaj wiek brata.' },
-      ],
-    },
-    {
-      id: 'glosk-pisownia',
-      name: 'Głoski, litery i pisownia',
-      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 3 „Świadomość języka”, wym. 8 (zasady pisowni z wykorzystaniem wiedzy o odmianie i wymowie wyrazów), wym. 10 (pojęcia: głoska dźwięczna i bezdźwięczna, głoska ustna i nosowa, samogłoska, spółgłoska, sylaba). Wybrano podstawowe reguły pisowni ó, rz, ż, ch, wielkiej litery i „nie” z czasownikami oraz przymiotnikami w stopniu równym. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
-      theory: `
-        <h3>Głoska i litera</h3>
-        <ul>
-          <li><b>Głoska</b> – dźwięk, który wymawiasz i słyszysz.</li>
-          <li><b>Litera</b> – znak, którym zapisujesz głoskę.</li>
-        </ul>
-        <p>Niektóre głoski zapisujemy <b>dwiema literami</b>: <b>ch, cz, dz, dź, dż, rz, sz</b>. Wyraz <i>szafa</i> ma 5 liter, ale 4 głoski: <b>sz – a – f – a</b>.</p>
-        <p>Litera <b>i</b> przed samogłoską często tylko zmiękcza głoskę: <i>ciocia</i> to 6 liter i 4 głoski (ć – o – ć – a).</p>
-        <h3>Samogłoski, spółgłoski, sylaby</h3>
-        <ul>
-          <li><b>Samogłoski</b>: a, ą, e, ę, i, o, ó, u, y. Pozostałe głoski to <b>spółgłoski</b>.</li>
-          <li><b>Sylaba</b> – część wyrazu z jedną samogłoską: <i>ma-ka-ron</i> (3 sylaby), <i>hu-laj-no-ga</i> (4 sylaby).</li>
-          <li>Wyraz przenosisz do następnej linii, dzieląc go na sylaby: <i>ma-karon, maka-ron</i>. Nie zostawiaj i nie przenoś pojedynczej litery.</li>
-        </ul>
-        <h3>Głoski dźwięczne i bezdźwięczne, ustne i nosowe</h3>
-        <p>Połóż dłoń na gardle. Gdy wymawiasz głoskę <b>dźwięczną</b>, gardło drży. Przy <b>bezdźwięcznej</b> – nie drży.</p>
-        <table>
-          <tr><th>dźwięczna</th><td>b</td><td>d</td><td>g</td><td>w</td><td>z</td><td>ż (rz)</td></tr>
-          <tr><th>bezdźwięczna</th><td>p</td><td>t</td><td>k</td><td>f</td><td>s</td><td>sz</td></tr>
-        </table>
-        <p>Na końcu wyrazu głoskę dźwięczną często wymawiamy jak bezdźwięczną: mówimy [chlep], a piszemy <b>chleb</b>, bo <i>chleba</i>. Odmień wyraz – usłyszysz, co napisać.</p>
-        <p>Przy głoskach <b>nosowych</b> powietrze przechodzi przez nos. Samogłoski nosowe to <b>ą</b> i <b>ę</b>. Pozostałe samogłoski są <b>ustne</b>.</p>
-        <h3>Ó czy u?</h3>
-        <ul>
-          <li><b>ó</b> piszemy, gdy w innej formie wyrazu lub w wyrazie pokrewnym jest <b>o, e</b> lub <b>a</b>: wózek – wozy, stół – stoły, pióro – pierze, wrócić – wracać.</li>
-          <li><b>ó</b> w zakończeniach <b>-ów, -ówka, -ówna</b>: Kraków, domów, pocztówka, kreskówka (wyjątki: zasuwka, skuwka, wsuwka).</li>
-          <li><b>u</b> piszemy na początku wyrazu: ucho, ulica (wyjątki: ósmy, ósemka, ów) i na końcu wyrazu: domu, kotu, kakadu.</li>
-          <li><b>u</b> w zakończeniach <b>-unek, -uje, -uszek, -utki</b>: rysunek, maluje, fartuszek, malutki.</li>
-        </ul>
-        <h3>Rz czy ż?</h3>
-        <ul>
-          <li><b>rz</b>, gdy wymienia się na <b>r</b>: morze – morski, dobrze – dobry, górze – góra.</li>
-          <li><b>rz</b> po spółgłoskach <b>b, p, d, t, g, k, ch, j, w</b>: brzeg, przed, drzewo, trzy, grzyb, krzesło, chrzan, ujrzeć, wrzesień (wyjątki pisane przez <b>sz</b>: pszczoła, pszenica, kształt).</li>
-          <li><b>rz</b> w zakończeniach <b>-arz, -erz</b> w nazwach osób: lekarz, kucharz, malarz, żołnierz.</li>
-          <li><b>ż</b>, gdy wymienia się na <b>g, h, z, s, dz</b>: odważny – odwaga, drużyna – druh, każe – kazać, wyżej – wysoko, pieniążek – pieniądz.</li>
-          <li><b>ż</b> po <b>l, ł, r, n</b>: lżejszy, rżenie, oranżada.</li>
-        </ul>
-        <h3>Ch czy h?</h3>
-        <ul>
-          <li><b>ch</b>, gdy wymienia się na <b>sz</b>: mucha – musze, ucho – uszy, duch – dusza.</li>
-          <li><b>ch</b> po literze <b>s</b>: schody, schab, schować.</li>
-          <li><b>ch</b> na końcu wyrazu: dach, mech, groch (wyjątek np. druh).</li>
-          <li><b>h</b> wymienia się czasem na <b>ż</b>: druh – drużyna. Wiele wyrazów z <b>h</b> trzeba po prostu zapamiętać: herbata, hałas, hamulec.</li>
-        </ul>
-        <h3>Wielka litera</h3>
-        <ul>
-          <li>Wielką literą: początek zdania, imiona i nazwiska, nazwy miast, państw, rzek i gór (Gdańsk, Polska, Wisła, Tatry), nazwy ulic (ulica <b>K</b>wiatowa), świąt (Boże Narodzenie), mieszkańców państw (Polak, Niemka).</li>
-          <li>Małą literą: dni tygodnia i miesiące (poniedziałek, maj), przymiotniki od nazw (polski, gdański).</li>
-        </ul>
-        <h3>„Nie” z czasownikami i przymiotnikami</h3>
-        <ul>
-          <li>Z <b>czasownikami</b> piszemy <b>osobno</b>: nie wiem, nie lubię, nie biegaj (wyjątki: nienawidzić, niepokoić się).</li>
-          <li>Z <b>przymiotnikami</b> w stopniu równym piszemy <b>łącznie</b>: niemiły, niewysoki, nieciekawy.</li>
-        </ul>
-        <div class="tip">💡 Najlepszy sposób na ortografię: <b>odmień wyraz lub znajdź wyraz pokrewny</b>. Gdy to nie pomaga – sprawdź w słowniku ortograficznym.</div>
-      `,
-      flashcards: [
-        ['Głoska a litera', 'Głoskę słyszymy i wymawiamy, literę piszemy'],
-        ['Samogłoski', 'a, ą, e, ę, i, o, ó, u, y'],
-        ['Sylaba', 'Część wyrazu z jedną samogłoską: ma-ka-ron'],
-        ['Pary dźwięczna – bezdźwięczna', 'b–p, d–t, g–k, w–f, z–s, ż–sz'],
-        ['Samogłoski nosowe', 'ą i ę'],
-        ['Ó wymienne', 'ó wymienia się na o, e, a: stół – stoły, pióro – pierze, wrócić – wracać'],
-        ['Rz wymienne', 'rz wymienia się na r: morze – morski'],
-        ['Ż wymienne', 'ż wymienia się na g, h, z, s, dz: odważny – odwaga'],
-        ['Ch wymienne', 'ch wymienia się na sz: mucha – musze'],
-        ['„Nie” z czasownikiem', 'osobno: nie wiem (wyjątki: nienawidzić, niepokoić się)'],
-        ['„Nie” z przymiotnikiem', 'w stopniu równym łącznie: niemiły'],
-      ],
-      questions: [
-        { id: '65fhsb', q: 'Ile głosek ma wyraz „szafa”?', options: ['4', '5', '3', '6'], answer: 0, explain: 'Szafa to 5 liter, ale 4 głoski: sz – a – f – a. Dwuznak „sz” to jedna głoska.' },
-        { id: 'i745b7', q: 'W którym wyrazie jest więcej liter niż głosek?', options: ['chata', 'mama', 'lato', 'kot'], answer: 0, explain: 'W wyrazie „chata” dwie litery „ch” oznaczają jedną głoskę: 5 liter, 4 głoski.' },
-        { id: '81boim', q: 'Ile sylab ma wyraz „hulajnoga”?', options: ['4', '3', '5', '9'], answer: 0, explain: 'hu-laj-no-ga – cztery sylaby, w każdej jedna samogłoska.' },
-        { id: 'ukkyx8', q: 'Które przeniesienie wyrazu do nowej linii jest poprawne?', options: ['ma-karon', 'mak-aron', 'm-akaron', 'makaro-n'], answer: 0, explain: 'Dzielimy według sylab (ma-ka-ron) i nie zostawiamy pojedynczej litery.' },
-        { id: 'd478lf', q: 'Która para to głoska dźwięczna i jej bezdźwięczna para?', options: ['b – p', 'b – d', 'm – n', 'a – o'], answer: 0, explain: 'Przy „b” gardło drży, przy „p” – nie. To para dźwięczna – bezdźwięczna.' },
-        { id: 'i8nvk3', q: 'Która samogłoska jest nosowa?', options: ['ą', 'a', 'o', 'u'], answer: 0, explain: 'Samogłoski nosowe to ą i ę. Przy ich wymowie powietrze przechodzi też przez nos.' },
-        { id: '67cnbv', q: 'Dlaczego „chleb” piszemy przez „b”, choć na końcu słychać [p]?', options: ['bo mówimy „chleba”', 'bo to wyjątek', 'bo po „e” zawsze jest „b”', 'bo „p” nie może być na końcu wyrazu'], answer: 0, explain: 'W formie „chleba” wyraźnie słychać „b”. Odmiana pomaga sprawdzić pisownię.' },
-        { id: '7x55jp', q: 'Jaką literę wpiszesz w wyraz „st_ł”?', options: ['ó', 'u'], noShuffle: true, answer: 0, explain: 'Stół – stoły: ó wymienia się na o.' },
-        { id: 'v56dm8', q: 'Dlaczego „pióro” piszemy przez „ó”?', options: ['bo „pierze” – ó wymienia się na e', 'bo „ó” jest na początku wyrazu', 'bo to zakończenie -ów', 'bo po „p” zawsze jest „ó”'], answer: 0, explain: 'Pióro – pierze: ó wymienia się na e.' },
-        { id: 'qzs8qv', q: 'Który wyraz to wyjątek – piszemy go przez „ó” na początku?', options: ['_smy (jak liczba 8)', '_cho', '_lica', '_śmiech'], answer: 0, explain: 'Na początku wyrazu piszemy „u”, ale wyjątki to m.in. ósmy, ósemka, ów.' },
-        { id: 'aqe7w9', q: 'Dlaczego „morze” piszemy przez „rz”?', options: ['bo „morski” – rz wymienia się na r', 'bo po „o” zawsze jest „rz”', 'bo to zakończenie -arz', 'bo „ż” nie występuje w środku wyrazu'], answer: 0, explain: 'Morze – morski: rz wymienia się na r.' },
-        { id: 'p0vnaq', q: 'Który wyraz napisano poprawnie?', options: ['krzesło', 'kżesło', 'kszesło'], answer: 0, explain: 'Po „k” piszemy „rz”: krzesło.' },
-        { id: 'zsuo93', q: 'Dlaczego „odważny” piszemy przez „ż”?', options: ['bo „odwaga” – ż wymienia się na g', 'bo „odwarzyć” – ż wymienia się na r', 'bo po „a” zawsze jest „ż”', 'bo to wyjątek bez reguły'], answer: 0, explain: 'Odważny – odwaga: ż wymienia się na g.' },
-        { id: 't04otg', q: 'Który wyraz napisano poprawnie?', options: ['schody', 'shody', 'zchody'], answer: 0, explain: 'Po literze „s” piszemy „ch”: schody.' },
-        { id: 'e4h0qx', q: 'Które zdanie zapisano poprawnie?', options: ['W maju pojedziemy do Gdańska.', 'W Maju pojedziemy do Gdańska.', 'W maju pojedziemy do gdańska.', 'w maju pojedziemy do Gdańska.'], answer: 0, explain: 'Zdanie zaczynamy wielką literą, nazwę miasta – też. Nazwy miesięcy piszemy małą literą.' },
-        { id: 'czh7k8', q: 'Który zapis jest poprawny?', options: ['Nie wiem, ale to niemiłe.', 'Niewiem, ale to nie miłe.', 'Nie wiem, ale to nie miłe.', 'Niewiem, ale to niemiłe.'], answer: 0, explain: '„Nie” z czasownikiem piszemy osobno (nie wiem), a z przymiotnikiem w stopniu równym łącznie (niemiłe).' },
-      ],
-    },
-    {
-      id: 'slownictwo',
-      name: 'Słownictwo i słowniki',
-      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 3 „Świadomość języka”, wym. 2 (nacechowanie emocjonalne wyrazów), wym. 5 (znaczenie wyrazów w kontekście, słowniki), wym. 6 (wyrazy neutralne i wartościujące, bliskoznaczne i przeciwstawne, związki frazeologiczne), wym. 7 (znaczenie dosłowne i przenośne), wym. 10 (pojęcia: synonim, antonim, związek frazeologiczny). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
-      theory: `
-        <h3>Synonimy i antonimy</h3>
-        <ul>
-          <li><b>Synonimy</b> (wyrazy bliskoznaczne) znaczą to samo lub prawie to samo: <i>duży – wielki, wesoły – radosny, szybki – prędki</i>. Dzięki nim nie powtarzasz ciągle tego samego słowa.</li>
-          <li><b>Antonimy</b> (wyrazy przeciwstawne) znaczą coś przeciwnego: <i>wysoki – niski, ciepły – zimny, dzień – noc</i>.</li>
-        </ul>
-        <h3>Związki frazeologiczne</h3>
-        <p><b>Związek frazeologiczny</b> to utarte połączenie wyrazów, które ma znaczenie <b>przenośne</b>. Nie da się go zrozumieć, tłumacząc słowo po słowie.</p>
-        <table>
-          <tr><th>Związek</th><th>Znaczenie</th></tr>
-          <tr><td>mieć muchy w nosie</td><td>być obrażonym, w złym humorze</td></tr>
-          <tr><td>trzymać język za zębami</td><td>nie zdradzić tajemnicy</td></tr>
-          <tr><td>bujać w obłokach</td><td>marzyć, nie skupiać się na tym, co się dzieje</td></tr>
-          <tr><td>mieć dwie lewe ręce</td><td>być niezgrabnym w pracach ręcznych</td></tr>
-          <tr><td>spać jak suseł</td><td>spać mocno, twardo</td></tr>
-          <tr><td>kamień spadł mi z serca</td><td>poczułem ulgę</td></tr>
-          <tr><td>jak grom z jasnego nieba</td><td>nagle, niespodziewanie</td></tr>
-        </table>
-        <h3>Dosłownie czy w przenośni?</h3>
-        <ul>
-          <li><b>Znaczenie dosłowne</b> – zwykłe, podstawowe: <i>złoty pierścionek</i> (zrobiony ze złota).</li>
-          <li><b>Znaczenie przenośne</b> – wyraz znaczy coś innego niż zwykle: <i>złote serce</i> (ktoś jest bardzo dobry).</li>
-        </ul>
-        <h3>Wyrazy neutralne i wartościujące</h3>
-        <ul>
-          <li><b>Neutralne</b> – tylko nazywają: <i>pies, dom, ręka</i>.</li>
-          <li><b>Zdrobnienia</b> – pokazują, że coś jest małe albo miłe: <i>piesek, domek, rączka</i>.</li>
-          <li><b>Zgrubienia</b> – pokazują, że coś jest duże albo niemiłe: <i>psisko, domisko, łapsko</i>.</li>
-        </ul>
-        <div class="tip">💡 Ten sam pies może być „pieskiem” albo „psiskiem” – wybór słowa zdradza, co czujesz.</div>
-        <h3>Słowniki</h3>
-        <table>
-          <tr><th>Słownik</th><th>Co w nim znajdziesz</th></tr>
-          <tr><td>języka polskiego</td><td>znaczenie wyrazów</td></tr>
-          <tr><td>ortograficzny</td><td>jak poprawnie zapisać wyraz</td></tr>
-          <tr><td>wyrazów bliskoznacznych (synonimów)</td><td>wyrazy o podobnym znaczeniu</td></tr>
-          <tr><td>frazeologiczny</td><td>związki frazeologiczne i ich znaczenie</td></tr>
-        </table>
-        <p>Wyrazy w słowniku są ułożone <b>alfabetycznie</b>. Wiele słowników jest dostępnych także w internecie.</p>
-      `,
-      flashcards: [
-        ['Synonim', 'Wyraz bliskoznaczny: duży – wielki'],
-        ['Antonim', 'Wyraz przeciwstawny: wysoki – niski'],
-        ['Związek frazeologiczny', 'Utarte połączenie wyrazów o znaczeniu przenośnym'],
-        ['Mieć muchy w nosie', 'Być obrażonym, w złym humorze'],
-        ['Trzymać język za zębami', 'Nie zdradzić tajemnicy'],
-        ['Bujać w obłokach', 'Marzyć, nie skupiać się na tym, co się dzieje'],
-        ['Znaczenie przenośne', 'Wyraz znaczy coś innego niż zwykle: złote serce'],
-        ['Zdrobnienie', 'Wyraz pokazujący coś małego lub miłego: piesek'],
-        ['Zgrubienie', 'Wyraz pokazujący coś dużego lub niemiłego: psisko'],
-        ['Słownik ortograficzny', 'Pokazuje, jak poprawnie zapisać wyraz'],
-      ],
-      questions: [
-        { id: 'gztj1o', q: 'Który wyraz jest synonimem słowa „wesoły”?', options: ['radosny', 'smutny', 'zmęczony', 'cichy'], answer: 0, explain: 'Wesoły i radosny znaczą prawie to samo – to synonimy.' },
-        { id: 'eb0ig7', q: 'Który wyraz jest antonimem słowa „głośny”?', options: ['cichy', 'hałaśliwy', 'donośny', 'gromki'], answer: 0, explain: 'Cichy to przeciwieństwo głośnego. Pozostałe wyrazy znaczą podobnie jak „głośny”.' },
-        { id: '42mi14', q: 'Która para wyrazów to antonimy?', options: ['stary – młody', 'mały – niewielki', 'mądry – bystry', 'piękny – śliczny'], answer: 0, explain: 'Stary i młody mają przeciwne znaczenia. Pozostałe pary to synonimy.' },
-        { id: 'igpphi', q: 'Która para wyrazów to synonimy?', options: ['mały – niewielki', 'mały – duży', 'zimny – gorący', 'dzień – noc'], answer: 0, explain: 'Mały i niewielki znaczą prawie to samo.' },
-        { id: '5jjkd5', q: 'Co znaczy „mieć muchy w nosie”?', options: ['być obrażonym, w złym humorze', 'mieć katar', 'bać się owadów', 'być bardzo wesołym'], answer: 0, explain: 'To związek frazeologiczny – jego znaczenie jest przenośne: ktoś jest obrażony.' },
-        { id: 'mjju00', q: 'Co znaczy „mieć dwie lewe ręce”?', options: ['być niezgrabnym w pracach ręcznych', 'być leworęcznym', 'umieć pisać obiema rękami', 'mieć dużo pracy'], answer: 0, explain: 'Tak mówimy o kimś, komu nie wychodzą prace ręczne, np. majsterkowanie.' },
-        { id: '677q9f', q: 'Co znaczy „trzymać język za zębami”?', options: ['nie zdradzić tajemnicy', 'mieć chory ząb', 'mówić bardzo głośno', 'jeść powoli'], answer: 0, explain: 'Kto trzyma język za zębami, nie mówi za dużo i dochowuje tajemnicy.' },
-        { id: 'oonndl', q: 'Pani mówi: „Tomek, nie bujaj w obłokach!”. Co robi Tomek?', options: ['marzy i nie słucha lekcji', 'huśta się na huśtawce', 'leci samolotem', 'rysuje chmury'], answer: 0, explain: '„Bujać w obłokach” to marzyć i nie skupiać się na tym, co się dzieje.' },
-        { id: '6dkls1', q: 'W którym zdaniu wyraz „złote” ma znaczenie przenośne?', options: ['Babcia ma złote serce.', 'Mama ma złote kolczyki.', 'Na wystawie leżą złote monety.', 'Król miał złotą koronę.'], answer: 0, explain: '„Złote serce” znaczy, że babcia jest bardzo dobra. W pozostałych zdaniach rzeczy są naprawdę ze złota.' },
-        { id: '8ccube', q: 'W którym zdaniu wyraz „ostry” ma znaczenie dosłowne?', options: ['Uważaj, ten nóż jest ostry.', 'Trener był dziś ostry dla drużyny.', 'Kasia ma ostry język.'], answer: 0, explain: 'Nóż naprawdę jest ostry – może skaleczyć. W pozostałych zdaniach „ostry” znaczy „surowy” lub „złośliwy”.' },
-        { id: 'czawls', q: 'Które słowo jest zdrobnieniem od „kot”?', options: ['kotek', 'kocisko', 'kocur', 'koty'], answer: 0, explain: 'Kotek – zdrobnienie, pokazuje coś małego lub miłego. Kocisko to zgrubienie.' },
-        { id: 'aaqnrk', q: 'Który wyraz jest zgrubieniem?', options: ['psisko', 'piesek', 'pies', 'szczeniak'], answer: 0, explain: 'Psisko to zgrubienie – pokazuje dużego psa albo niechęć do niego.' },
-        { id: 'txhh2i', q: 'Gdzie sprawdzisz, jak poprawnie zapisać wyraz?', options: ['w słowniku ortograficznym', 'w słowniku frazeologicznym', 'w atlasie', 'w słowniku wyrazów bliskoznacznych'], answer: 0, explain: 'Słownik ortograficzny pokazuje poprawną pisownię wyrazów.' },
-        { id: '3cs9rj', q: 'Szukasz innego słowa zamiast „ładny”, żeby się nie powtarzać. Którego słownika użyjesz?', options: ['wyrazów bliskoznacznych', 'ortograficznego', 'frazeologicznego', 'żadnego – to niemożliwe'], answer: 0, explain: 'Słownik wyrazów bliskoznacznych (synonimów) podpowie np. „śliczny”, „piękny”.' },
-        { id: 'no0ogf', q: 'Prawda czy fałsz?\n„Spać jak suseł” znaczy „spać mocno, twardo”.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'To związek frazeologiczny o kimś, kto śpi bardzo mocno.' },
-      ],
-    },
-    {
-      id: 'teksty-kultury',
-      name: 'Jak czytać utwory',
-      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 2 „Odbiór tekstów kultury”, wym. 4 (świat przedstawiony, utwory realistyczne i fantastyczne), wym. 5 (ocena postępowania bohaterów), wym. 6 (środki językowe i ich oddziaływanie), wym. 8 (pojęcia: tekst kultury, fikcja, utwór realistyczny i fantastyczny, mit, baśń, legenda, przypowieść, powieść, opowiadanie, świat przedstawiony, narrator, bohater, fabuła, podmiot mówiący, epitet, porównanie, wyliczenie, powtórzenie, przenośnia, wyraz dźwiękonaśladowczy, rymy); dz. 7 wym. 4–6 (praktyki lekturowe, teksty obowiązkowe w kl. IV–VI – tylko wymienione). Przykłady napisano samodzielnie. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
-      theory: `
-        <h3>Tekst kultury i fikcja</h3>
-        <p><b>Tekst kultury</b> to każde dzieło stworzone przez człowieka: książka, wiersz, film, obraz, komiks, piosenka, spektakl w teatrze.</p>
-        <p><b>Fikcja</b> – świat wymyślony przez autora. Nawet jeśli przypomina prawdziwy, wydarzenia w utworze są zmyślone.</p>
-        <h3>Świat przedstawiony</h3>
-        <p>To wszystko, co dzieje się w utworze:</p>
-        <ul>
-          <li><b>czas</b> – kiedy toczy się akcja,</li>
-          <li><b>miejsce</b> – gdzie,</li>
-          <li><b>bohaterowie</b> – postacie, o których jest mowa (najważniejsza to <b>bohater główny</b>),</li>
-          <li><b>wydarzenia</b> – co się dzieje.</li>
-        </ul>
-        <p><b>Fabuła</b> to ciąg wydarzeń w utworze, ułożonych po kolei.</p>
-        <h3>Kto opowiada?</h3>
-        <table>
-          <tr><th>Pojęcie</th><th>Kto to jest</th></tr>
-          <tr><td><b>autor</b></td><td>prawdziwa osoba, która napisała utwór</td></tr>
-          <tr><td><b>narrator</b></td><td>ten, kto opowiada o wydarzeniach w opowiadaniu, baśni czy powieści</td></tr>
-          <tr><td><b>podmiot mówiący</b></td><td>„ja”, które mówi w wierszu</td></tr>
-        </table>
-        <div class="tip">💡 Narrator to nie autor! Autor wymyśla narratora tak samo jak bohaterów.</div>
-        <h3>Realistyczny czy fantastyczny?</h3>
-        <ul>
-          <li><b>Utwór realistyczny</b> – wydarzenia mogłyby się zdarzyć naprawdę (np. kłótnia i zgoda przyjaciół, wycieczka klasowa).</li>
-          <li><b>Utwór fantastyczny</b> – są w nim rzeczy niemożliwe: czary, smoki, mówiące zwierzęta, latające dywany.</li>
-        </ul>
-        <h3>Gatunki</h3>
-        <table>
-          <tr><th>Gatunek</th><th>Cechy</th></tr>
-          <tr><td><b>baśń</b></td><td>czary i istoty fantastyczne, dobro zwycięża zło; czas i miejsce nieokreślone („dawno, dawno temu, za siedmioma górami”)</td></tr>
-          <tr><td><b>legenda</b></td><td>łączy prawdę i fikcję; często wyjaśnia, skąd wzięła się nazwa miejsca, albo opowiada o dawnej postaci lub wydarzeniu</td></tr>
-          <tr><td><b>mit</b></td><td>opowieść starożytnych, np. Greków, o bogach i bohaterach; wyjaśnia, jak powstał świat i zjawiska przyrody</td></tr>
-          <tr><td><b>przypowieść</b></td><td>krótka opowieść z ukrytą nauką (pouczeniem), której trzeba się domyślić; znane przypowieści są w Biblii</td></tr>
-          <tr><td><b>opowiadanie</b></td><td>krótszy utwór pisany prozą; niewielu bohaterów, jeden główny ciąg wydarzeń</td></tr>
-          <tr><td><b>powieść</b></td><td>długi utwór pisany prozą; wielu bohaterów, wiele wątków, zwykle podzielony na rozdziały</td></tr>
-        </table>
-        <p>W klasach 4–6 poznasz m.in. wybrane fragmenty Biblii (opis stworzenia świata, przypowieści o miłosiernym Samarytaninie i o synu marnotrawnym), wybrane mity greckie (m.in. o stworzeniu świata, o Syzyfie, o Dedalu i Ikarze, o Demeter i Korze), baśnie i legendy, a także „Mazurka Dąbrowskiego” Józefa Wybickiego i „Rotę” Marii Konopnickiej. Co roku przeczytasz też co najmniej 4 dłuższe książki.</p>
-        <h3>Środki artystyczne</h3>
-        <table>
-          <tr><th>Środek</th><th>Co to jest</th><th>Przykład</th></tr>
-          <tr><td><b>epitet</b></td><td>wyraz określający rzeczownik (zwykle przymiotnik)</td><td>ciemna noc, złociste słońce</td></tr>
-          <tr><td><b>porównanie</b></td><td>zestawienie dwóch rzeczy za pomocą słów: jak, niby, niczym, jakby</td><td>szybki jak wiatr</td></tr>
-          <tr><td><b>przenośnia (metafora)</b></td><td>wyrazy znaczą coś innego niż zwykle</td><td>dywan z liści, morze łez</td></tr>
-          <tr><td><b>wyliczenie</b></td><td>wymienienie po kolei wielu rzeczy</td><td>maki, chabry, rumianki i stokrotki</td></tr>
-          <tr><td><b>powtórzenie</b></td><td>ten sam wyraz lub zwrot kilka razy</td><td>czekam, czekam i czekam</td></tr>
-          <tr><td><b>wyraz dźwiękonaśladowczy</b></td><td>naśladuje dźwięk</td><td>hau, miau, bęc, kap-kap</td></tr>
-          <tr><td><b>rym</b></td><td>podobne brzmienie końcówek wyrazów w wersach</td><td>kotek – płotek</td></tr>
-        </table>
-        <p>W wierszu linijka to <b>wers</b>, a kilka wersów razem to <b>zwrotka</b> (strofa).</p>
-      `,
-      flashcards: [
-        ['Świat przedstawiony', 'Czas, miejsce, bohaterowie i wydarzenia w utworze'],
-        ['Fabuła', 'Ciąg wydarzeń w utworze, ułożonych po kolei'],
-        ['Narrator', 'Ten, kto opowiada o wydarzeniach w utworze (to nie autor)'],
-        ['Podmiot mówiący', '„Ja”, które mówi w wierszu'],
-        ['Utwór fantastyczny', 'Są w nim rzeczy niemożliwe: czary, smoki, mówiące zwierzęta'],
-        ['Baśń', 'Czary, dobro zwycięża zło, „dawno, dawno temu”'],
-        ['Legenda', 'Łączy prawdę i fikcję; często wyjaśnia pochodzenie nazwy miejsca'],
-        ['Mit', 'Opowieść starożytnych o bogach i bohaterach, o powstaniu świata'],
-        ['Przypowieść', 'Krótka opowieść z ukrytą nauką'],
-        ['Epitet', 'Wyraz określający rzeczownik: ciemna noc'],
-        ['Porównanie', 'Zestawienie za pomocą „jak”, „niby”, „niczym”: szybki jak wiatr'],
-      ],
-      questions: [
-        { id: 'x162h4', q: 'Co tworzy świat przedstawiony utworu?', options: ['czas, miejsce, bohaterowie i wydarzenia', 'autor, tytuł i okładka', 'ilustracje i numer strony', 'cena i wydawnictwo'], answer: 0, explain: 'Świat przedstawiony to wszystko, co dzieje się w utworze: kiedy, gdzie, kto i co.' },
-        { id: 'c4jpj6', q: 'Fabuła to…', options: ['ciąg wydarzeń w utworze, ułożonych po kolei', 'opis wyglądu bohatera', 'tytuł książki', 'rymy w wierszu'], answer: 0, explain: 'Fabuła to wydarzenia jedno po drugim – od początku do końca historii.' },
-        { id: 'k8wfsr', q: 'Kim jest narrator?', options: ['tym, kto opowiada o wydarzeniach w utworze', 'zawsze autorem książki', 'tym, kto rysuje ilustracje', 'czytelnikiem'], answer: 0, explain: 'Narrator opowiada historię. Wymyślił go autor – to nie to samo co autor.' },
-        { id: 'n0qpuy', q: 'Jak nazywamy „ja”, które mówi w wierszu?', options: ['podmiot mówiący', 'narrator', 'bohater drugoplanowy', 'czytelnik'], answer: 0, explain: 'W wierszu mówi podmiot mówiący. W opowiadaniu historię opowiada narrator.' },
-        { id: '5fjdn4', q: 'W utworze dzieci znajdują czarodziejską różdżkę, a smok mówi ludzkim głosem. To utwór…', options: ['fantastyczny', 'realistyczny'], noShuffle: true, answer: 0, explain: 'Czary i mówiący smok nie zdarzają się naprawdę – to elementy fantastyczne.' },
-        { id: 'k13t06', q: 'Jaki to gatunek? Są czary i wróżki, dobro zwycięża zło, a historia zaczyna się od słów „Dawno, dawno temu…”.', options: ['baśń', 'legenda', 'powieść', 'przypowieść'], answer: 0, explain: 'Czary, zwycięstwo dobra i nieokreślony czas to cechy baśni.' },
-        { id: '3mub7a', q: 'Opowieść łączy prawdę i fikcję i wyjaśnia, skąd wzięła się nazwa miasta. To…', options: ['legenda', 'baśń', 'mit', 'powieść'], answer: 0, explain: 'Legendy często wyjaśniają pochodzenie nazw miejsc i łączą prawdę z fikcją.' },
-        { id: 'b1549k', q: 'Opowieść starożytnych Greków o bogach i o tym, jak powstał świat, to…', options: ['mit', 'baśń', 'legenda', 'opowiadanie'], answer: 0, explain: 'Mity to opowieści starożytnych o bogach i bohaterach, wyjaśniające powstanie świata i zjawisk przyrody.' },
-        { id: '13ctuu', q: 'Krótka opowieść z ukrytą nauką, której trzeba się domyślić, to…', options: ['przypowieść', 'powieść', 'legenda', 'mit'], answer: 0, explain: 'Przypowieść ma ukryte pouczenie. Znane przypowieści znajdziesz w Biblii.' },
-        { id: 'ybef7z', q: 'Długi utwór prozą, z wieloma bohaterami i wątkami, podzielony na rozdziały, to…', options: ['powieść', 'opowiadanie', 'przypowieść', 'wiersz'], answer: 0, explain: 'Powieść jest długa i ma wiele wątków. Opowiadanie jest krótsze, ma jeden główny ciąg wydarzeń.' },
-        { id: 'ockolf', q: 'Jaki środek zastosowano w wyrażeniu „ciemna noc”?', options: ['epitet', 'porównanie', 'wyliczenie', 'rym'], answer: 0, explain: 'Przymiotnik „ciemna” określa rzeczownik „noc” – to epitet.' },
-        { id: 'othxa1', q: 'Jaki środek zastosowano w zdaniu „Pędził jak strzała.”?', options: ['porównanie', 'epitet', 'wyliczenie', 'wyraz dźwiękonaśladowczy'], answer: 0, explain: 'Słowo „jak” zestawia biegnącego ze strzałą – to porównanie.' },
-        { id: 'm8kbtb', q: 'Jaki środek zastosowano: „Bum! Trach! Coś spadło ze stołu.”?', options: ['wyrazy dźwiękonaśladowcze', 'porównanie', 'epitet', 'przenośnia'], answer: 0, explain: '„Bum” i „trach” naśladują dźwięki – to wyrazy dźwiękonaśladowcze.' },
-        { id: 'qu3b4t', q: 'Jaki środek zastosowano: „Na łące rosną maki, chabry, rumianki i stokrotki.”?', options: ['wyliczenie', 'porównanie', 'rym', 'wyraz dźwiękonaśladowczy'], answer: 0, explain: 'Wymieniono po kolei kilka kwiatów – to wyliczenie.' },
-        { id: 'w5m98q', q: 'Które wyrazy się rymują?', options: ['kotek – płotek', 'kotek – piesek', 'płotek – brama', 'dom – ogród'], answer: 0, explain: 'Końcówki „-otek” brzmią tak samo – to rym.' },
-        { id: 'sk8ch5', q: 'Jaki środek zastosowano: „Jesień rozłożyła na trawnikach dywan z liści.”?', options: ['przenośnię', 'porównanie', 'wyliczenie', 'wyraz dźwiękonaśladowczy'], answer: 0, explain: 'Nie ma tu prawdziwego dywanu – liście tylko przypominają dywan. To przenośnia (metafora). Brak słowa „jak”, więc to nie porównanie.' },
-      ],
-    },
-    {
       id: 'formy-wypowiedzi',
       name: 'Notatka, plan, opowiadanie, opis, list',
+      chapter: 'rozdziały II–VII (notatka, opis, plan, opowiadanie)',
       basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 4 „Tworzenie wypowiedzi”, wym. 1 (notatki w różnych formach), wym. 2 (pytania do tekstu, plan odtwórczy), wym. 3 (korespondencja tradycyjna i elektroniczna), wym. 4 (opinia i jej uzasadnienie), wym. 5 (opis przedmiotu), wym. 6–7 (opowiadanie, kompozycja i układ graficzny), wym. 8 (pojęcia: opinia, opis, opowiadanie, list tradycyjny i elektroniczny, akapit, wstęp, rozwinięcie, zakończenie). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
         <h3>Notatka</h3>
@@ -582,6 +361,235 @@ window.SUBJECTS.push({
         { id: 'ba8f7i', q: 'Od czego zaczniesz opis przedmiotu?', options: ['od nazwy przedmiotu i jego ogólnego wyglądu', 'od najmniejszego szczegółu', 'od podpisu', 'od tego, ile kosztował'], answer: 0, explain: 'Opis prowadzimy od ogółu do szczegółu: najpierw nazwa i ogólny wygląd, potem szczegóły.' },
         { id: 'fr7rek', q: 'Które zdanie to opinia z uzasadnieniem?', options: ['Moim zdaniem ta książka jest ciekawa, bo ma zaskakujące zakończenie.', 'Ta książka ma 120 stron.', 'Książka jest ciekawa.', 'Przeczytałem tę książkę w tydzień.'], answer: 0, explain: 'Jest tu opinia („moim zdaniem… ciekawa”) i uzasadnienie („bo ma zaskakujące zakończenie”).' },
         { id: '8ddoax', q: 'Które słowo wprowadza uzasadnienie opinii?', options: ['ponieważ', 'najpierw', 'nagle', 'wczoraj'], answer: 0, explain: '„Ponieważ”, „bo”, „dlatego że” – po nich podajesz powód swojej opinii.' },
+      ],
+    },
+    {
+      id: 'slownictwo',
+      name: 'Słownictwo i słowniki',
+      chapter: 'rozdziały III i VI (synonimy, antonimy)',
+      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 3 „Świadomość języka”, wym. 2 (nacechowanie emocjonalne wyrazów), wym. 5 (znaczenie wyrazów w kontekście, słowniki), wym. 6 (wyrazy neutralne i wartościujące, bliskoznaczne i przeciwstawne, związki frazeologiczne), wym. 7 (znaczenie dosłowne i przenośne), wym. 10 (pojęcia: synonim, antonim, związek frazeologiczny). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Synonimy i antonimy</h3>
+        <ul>
+          <li><b>Synonimy</b> (wyrazy bliskoznaczne) znaczą to samo lub prawie to samo: <i>duży – wielki, wesoły – radosny, szybki – prędki</i>. Dzięki nim nie powtarzasz ciągle tego samego słowa.</li>
+          <li><b>Antonimy</b> (wyrazy przeciwstawne) znaczą coś przeciwnego: <i>wysoki – niski, ciepły – zimny, dzień – noc</i>.</li>
+        </ul>
+        <h3>Związki frazeologiczne</h3>
+        <p><b>Związek frazeologiczny</b> to utarte połączenie wyrazów, które ma znaczenie <b>przenośne</b>. Nie da się go zrozumieć, tłumacząc słowo po słowie.</p>
+        <table>
+          <tr><th>Związek</th><th>Znaczenie</th></tr>
+          <tr><td>mieć muchy w nosie</td><td>być obrażonym, w złym humorze</td></tr>
+          <tr><td>trzymać język za zębami</td><td>nie zdradzić tajemnicy</td></tr>
+          <tr><td>bujać w obłokach</td><td>marzyć, nie skupiać się na tym, co się dzieje</td></tr>
+          <tr><td>mieć dwie lewe ręce</td><td>być niezgrabnym w pracach ręcznych</td></tr>
+          <tr><td>spać jak suseł</td><td>spać mocno, twardo</td></tr>
+          <tr><td>kamień spadł mi z serca</td><td>poczułem ulgę</td></tr>
+          <tr><td>jak grom z jasnego nieba</td><td>nagle, niespodziewanie</td></tr>
+        </table>
+        <h3>Dosłownie czy w przenośni?</h3>
+        <ul>
+          <li><b>Znaczenie dosłowne</b> – zwykłe, podstawowe: <i>złoty pierścionek</i> (zrobiony ze złota).</li>
+          <li><b>Znaczenie przenośne</b> – wyraz znaczy coś innego niż zwykle: <i>złote serce</i> (ktoś jest bardzo dobry).</li>
+        </ul>
+        <h3>Wyrazy neutralne i wartościujące</h3>
+        <ul>
+          <li><b>Neutralne</b> – tylko nazywają: <i>pies, dom, ręka</i>.</li>
+          <li><b>Zdrobnienia</b> – pokazują, że coś jest małe albo miłe: <i>piesek, domek, rączka</i>.</li>
+          <li><b>Zgrubienia</b> – pokazują, że coś jest duże albo niemiłe: <i>psisko, domisko, łapsko</i>.</li>
+        </ul>
+        <div class="tip">💡 Ten sam pies może być „pieskiem” albo „psiskiem” – wybór słowa zdradza, co czujesz.</div>
+        <h3>Słowniki</h3>
+        <table>
+          <tr><th>Słownik</th><th>Co w nim znajdziesz</th></tr>
+          <tr><td>języka polskiego</td><td>znaczenie wyrazów</td></tr>
+          <tr><td>ortograficzny</td><td>jak poprawnie zapisać wyraz</td></tr>
+          <tr><td>wyrazów bliskoznacznych (synonimów)</td><td>wyrazy o podobnym znaczeniu</td></tr>
+          <tr><td>frazeologiczny</td><td>związki frazeologiczne i ich znaczenie</td></tr>
+        </table>
+        <p>Wyrazy w słowniku są ułożone <b>alfabetycznie</b>. Wiele słowników jest dostępnych także w internecie.</p>
+      `,
+      flashcards: [
+        ['Synonim', 'Wyraz bliskoznaczny: duży – wielki'],
+        ['Antonim', 'Wyraz przeciwstawny: wysoki – niski'],
+        ['Związek frazeologiczny', 'Utarte połączenie wyrazów o znaczeniu przenośnym'],
+        ['Mieć muchy w nosie', 'Być obrażonym, w złym humorze'],
+        ['Trzymać język za zębami', 'Nie zdradzić tajemnicy'],
+        ['Bujać w obłokach', 'Marzyć, nie skupiać się na tym, co się dzieje'],
+        ['Znaczenie przenośne', 'Wyraz znaczy coś innego niż zwykle: złote serce'],
+        ['Zdrobnienie', 'Wyraz pokazujący coś małego lub miłego: piesek'],
+        ['Zgrubienie', 'Wyraz pokazujący coś dużego lub niemiłego: psisko'],
+        ['Słownik ortograficzny', 'Pokazuje, jak poprawnie zapisać wyraz'],
+      ],
+      questions: [
+        { id: 'gztj1o', q: 'Który wyraz jest synonimem słowa „wesoły”?', options: ['radosny', 'smutny', 'zmęczony', 'cichy'], answer: 0, explain: 'Wesoły i radosny znaczą prawie to samo – to synonimy.' },
+        { id: 'eb0ig7', q: 'Który wyraz jest antonimem słowa „głośny”?', options: ['cichy', 'hałaśliwy', 'donośny', 'gromki'], answer: 0, explain: 'Cichy to przeciwieństwo głośnego. Pozostałe wyrazy znaczą podobnie jak „głośny”.' },
+        { id: '42mi14', q: 'Która para wyrazów to antonimy?', options: ['stary – młody', 'mały – niewielki', 'mądry – bystry', 'piękny – śliczny'], answer: 0, explain: 'Stary i młody mają przeciwne znaczenia. Pozostałe pary to synonimy.' },
+        { id: 'igpphi', q: 'Która para wyrazów to synonimy?', options: ['mały – niewielki', 'mały – duży', 'zimny – gorący', 'dzień – noc'], answer: 0, explain: 'Mały i niewielki znaczą prawie to samo.' },
+        { id: '5jjkd5', q: 'Co znaczy „mieć muchy w nosie”?', options: ['być obrażonym, w złym humorze', 'mieć katar', 'bać się owadów', 'być bardzo wesołym'], answer: 0, explain: 'To związek frazeologiczny – jego znaczenie jest przenośne: ktoś jest obrażony.' },
+        { id: 'mjju00', q: 'Co znaczy „mieć dwie lewe ręce”?', options: ['być niezgrabnym w pracach ręcznych', 'być leworęcznym', 'umieć pisać obiema rękami', 'mieć dużo pracy'], answer: 0, explain: 'Tak mówimy o kimś, komu nie wychodzą prace ręczne, np. majsterkowanie.' },
+        { id: '677q9f', q: 'Co znaczy „trzymać język za zębami”?', options: ['nie zdradzić tajemnicy', 'mieć chory ząb', 'mówić bardzo głośno', 'jeść powoli'], answer: 0, explain: 'Kto trzyma język za zębami, nie mówi za dużo i dochowuje tajemnicy.' },
+        { id: 'oonndl', q: 'Pani mówi: „Tomek, nie bujaj w obłokach!”. Co robi Tomek?', options: ['marzy i nie słucha lekcji', 'huśta się na huśtawce', 'leci samolotem', 'rysuje chmury'], answer: 0, explain: '„Bujać w obłokach” to marzyć i nie skupiać się na tym, co się dzieje.' },
+        { id: '6dkls1', q: 'W którym zdaniu wyraz „złote” ma znaczenie przenośne?', options: ['Babcia ma złote serce.', 'Mama ma złote kolczyki.', 'Na wystawie leżą złote monety.', 'Król miał złotą koronę.'], answer: 0, explain: '„Złote serce” znaczy, że babcia jest bardzo dobra. W pozostałych zdaniach rzeczy są naprawdę ze złota.' },
+        { id: '8ccube', q: 'W którym zdaniu wyraz „ostry” ma znaczenie dosłowne?', options: ['Uważaj, ten nóż jest ostry.', 'Trener był dziś ostry dla drużyny.', 'Kasia ma ostry język.'], answer: 0, explain: 'Nóż naprawdę jest ostry – może skaleczyć. W pozostałych zdaniach „ostry” znaczy „surowy” lub „złośliwy”.' },
+        { id: 'czawls', q: 'Które słowo jest zdrobnieniem od „kot”?', options: ['kotek', 'kocisko', 'kocur', 'koty'], answer: 0, explain: 'Kotek – zdrobnienie, pokazuje coś małego lub miłego. Kocisko to zgrubienie.' },
+        { id: 'aaqnrk', q: 'Który wyraz jest zgrubieniem?', options: ['psisko', 'piesek', 'pies', 'szczeniak'], answer: 0, explain: 'Psisko to zgrubienie – pokazuje dużego psa albo niechęć do niego.' },
+        { id: 'txhh2i', q: 'Gdzie sprawdzisz, jak poprawnie zapisać wyraz?', options: ['w słowniku ortograficznym', 'w słowniku frazeologicznym', 'w atlasie', 'w słowniku wyrazów bliskoznacznych'], answer: 0, explain: 'Słownik ortograficzny pokazuje poprawną pisownię wyrazów.' },
+        { id: '3cs9rj', q: 'Szukasz innego słowa zamiast „ładny”, żeby się nie powtarzać. Którego słownika użyjesz?', options: ['wyrazów bliskoznacznych', 'ortograficznego', 'frazeologicznego', 'żadnego – to niemożliwe'], answer: 0, explain: 'Słownik wyrazów bliskoznacznych (synonimów) podpowie np. „śliczny”, „piękny”.' },
+        { id: 'no0ogf', q: 'Prawda czy fałsz?\n„Spać jak suseł” znaczy „spać mocno, twardo”.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'To związek frazeologiczny o kimś, kto śpi bardzo mocno.' },
+      ],
+    },
+    {
+      id: 'komunikacja',
+      name: 'Komunikacja i media',
+      chapter: 'rozdziały III i VI (komunikacja)',
+      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 1 „Komunikacja”, wym. 1–9 (nadawca, odbiorca, intencja wypowiedzi, komunikat niewerbalny, grzeczność językowa, uważne słuchanie); dz. 6 „Elementy edukacji medialnej”, wym. 1–2, 4–5 (wyszukiwanie informacji, fakt a opinia, wpływ reklamy, higiena cyfrowa). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Kto mówi i do kogo?</h3>
+        <p><b>Komunikacja</b> to przekazywanie informacji, myśli i uczuć innym ludziom. Biorą w niej udział:</p>
+        <table>
+          <tr><th>Pojęcie</th><th>Co to znaczy</th><th>Przykład</th></tr>
+          <tr><td><b>nadawca</b></td><td>ten, kto przekazuje wiadomość</td><td>mama, która pisze SMS</td></tr>
+          <tr><td><b>odbiorca</b></td><td>ten, kto wiadomość odbiera</td><td>Kuba, który czyta SMS</td></tr>
+          <tr><td><b>komunikat</b></td><td>to, co zostaje przekazane</td><td>„Wróć na obiad o 14.”</td></tr>
+          <tr><td><b>intencja</b></td><td>cel, po co ktoś mówi lub pisze</td><td>prośba, pytanie, podziękowanie</td></tr>
+        </table>
+        <p>Najczęstsze <b>intencje</b>: poinformować, zapytać, poprosić, podziękować, przeprosić, ostrzec, pochwalić, przekonać.</p>
+        <h3>Słowa i mowa ciała</h3>
+        <p>Komunikat może być <b>słowny</b> (mówiony lub pisany) albo <b>niewerbalny</b> – bez słów. Komunikaty niewerbalne to np. <b>mimika</b> (wyraz twarzy), <b>gesty</b>, <b>postawa ciała</b>, spojrzenie.</p>
+        <ul>
+          <li>👍 kciuk w górę – „super”, „zgoda”,</li>
+          <li>🙂 uśmiech – życzliwość, radość,</li>
+          <li>👋 machanie ręką – powitanie lub pożegnanie,</li>
+          <li>kiwanie głową – „tak”.</li>
+        </ul>
+        <h3>Grzeczność językowa</h3>
+        <p><b>Grzeczność językowa</b> to zwroty, które okazują szacunek: <b>proszę, dziękuję, przepraszam</b>. Słowa dobieramy do sytuacji i odbiorcy.</p>
+        <table>
+          <tr><th>Do kolegi (nieoficjalnie)</th><th>Do dorosłego (oficjalnie)</th></tr>
+          <tr><td>Cześć!</td><td>Dzień dobry!</td></tr>
+          <tr><td>Dzięki!</td><td>Dziękuję bardzo.</td></tr>
+          <tr><td>Pa!</td><td>Do widzenia.</td></tr>
+          <tr><td>Pożyczysz mi gumkę?</td><td>Czy mogłaby Pani mi pomóc?</td></tr>
+        </table>
+        <div class="tip">💡 <b>Uważne słuchanie</b>: patrz na rozmówcę, nie przerywaj, dopytaj, jeśli czegoś nie rozumiesz.</div>
+        <h3>Fakt czy opinia?</h3>
+        <ul>
+          <li><b>Fakt</b> – informacja, którą można sprawdzić: „Mecz zaczyna się o 17.00”.</li>
+          <li><b>Opinia</b> – czyjeś zdanie, ocena: „To najlepsza drużyna na świecie”. Opinie często zaczynają się od słów: <i>moim zdaniem, uważam, że, myślę, że</i>.</li>
+        </ul>
+        <h3>Reklama i ekrany</h3>
+        <p><b>Reklama</b> ma cię zachęcić, żebyś coś kupił albo z czegoś skorzystał. Pokazuje tylko zalety produktu. Zanim poprosisz o coś z reklamy, zastanów się, czy naprawdę tego potrzebujesz.</p>
+        <p><b>Higiena cyfrowa</b> to zdrowe korzystanie z telefonu, komputera i internetu:</p>
+        <ul>
+          <li>rób przerwy od ekranu, ruszaj się, spotykaj się z ludźmi,</li>
+          <li>odłóż telefon przed snem,</li>
+          <li>długie, codzienne granie bez przerw może prowadzić do <b>uzależnienia</b> – wtedy trudno przestać,</li>
+          <li>informacje z internetu sprawdzaj w kilku źródłach.</li>
+        </ul>
+      `,
+      flashcards: [
+        ['Komunikacja', 'Przekazywanie informacji, myśli i uczuć innym ludziom'],
+        ['Nadawca', 'Ten, kto przekazuje wiadomość (mówi lub pisze)'],
+        ['Odbiorca', 'Ten, kto odbiera wiadomość (słucha lub czyta)'],
+        ['Komunikat', 'To, co nadawca przekazuje odbiorcy'],
+        ['Intencja wypowiedzi', 'Cel, w jakim ktoś mówi lub pisze, np. prośba, pytanie, podziękowanie'],
+        ['Komunikat niewerbalny', 'Przekaz bez słów: mimika, gesty, postawa ciała, spojrzenie'],
+        ['Grzeczność językowa', 'Zwroty okazujące szacunek: proszę, dziękuję, przepraszam, dzień dobry'],
+        ['Fakt', 'Informacja, którą można sprawdzić'],
+        ['Opinia', 'Czyjeś zdanie, ocena; np. „moim zdaniem…”'],
+        ['Higiena cyfrowa', 'Zdrowe korzystanie z ekranów: przerwy, ruch, telefon odłożony przed snem'],
+      ],
+      questions: [
+        { id: 'qquw8w', q: 'Mama pisze do Kuby SMS: „Wróć na obiad o 14”. Kto jest nadawcą?', options: ['mama', 'Kuba', 'telefon', 'obiad'], answer: 0, explain: 'Nadawca to ten, kto przekazuje wiadomość. Wiadomość napisała mama.' },
+        { id: 'suic55', q: 'Pani mówi do klasy: „Jutro przynieście kredki”. Kto jest odbiorcą?', options: ['pani', 'uczniowie', 'kredki', 'dyrektor'], answer: 1, explain: 'Odbiorca to ten, kto odbiera wiadomość – tutaj uczniowie, którzy słuchają pani.' },
+        { id: 'c79uz5', q: 'Jaka jest intencja zdania: „Czy możesz pożyczyć mi linijkę?”', options: ['prośba', 'podziękowanie', 'przeprosiny', 'ostrzeżenie'], answer: 0, explain: 'Mówiący chce, żeby ktoś pożyczył mu linijkę – to prośba.' },
+        { id: '9ok2ly', q: 'Jaka jest intencja napisu: „Uwaga! Śliska podłoga!”', options: ['podziękowanie', 'ostrzeżenie', 'zaproszenie', 'pochwała'], answer: 1, explain: 'Napis ma uchronić przed upadkiem – ostrzega.' },
+        { id: 'qt38oz', q: 'Który komunikat jest niewerbalny (bez słów)?', options: ['kiwnięcie głową na „tak”', 'SMS „tak”', 'okrzyk „tak!”', 'list z odpowiedzią „tak”'], answer: 0, explain: 'Kiwnięcie głową to gest – przekazuje informację bez słów.' },
+        { id: '4gx2s2', q: 'Uśmiech, gesty i postawa ciała to przykłady…', options: ['komunikatów niewerbalnych', 'opinii', 'faktów', 'reklam'], answer: 0, explain: 'To mowa ciała, czyli komunikaty niewerbalne.' },
+        { id: 'q299pq', q: 'Jak grzecznie przywitasz panią dyrektor na korytarzu?', options: ['Dzień dobry!', 'Cześć!', 'Siema!', 'Hej, co tam?'], answer: 0, explain: 'Do dorosłych, zwłaszcza w szkole, mówimy oficjalnie: „Dzień dobry”.' },
+        { id: 'u8512c', q: 'Która prośba jest grzeczna?', options: ['Podaj mi, proszę, sól.', 'Dawaj sól!', 'Sól, szybko!', 'No, podaj tę sól.'], answer: 0, explain: 'Słowo „proszę” i spokojny ton to zasady grzeczności językowej.' },
+        { id: '4rbi80', q: 'Które zachowanie pokazuje, że uważnie słuchasz?', options: ['patrzysz na rozmówcę i nie przerywasz', 'przeglądasz telefon', 'mówisz w tym samym czasie', 'odwracasz się plecami'], answer: 0, explain: 'Uważny słuchacz patrzy na rozmówcę, nie przerywa i dopytuje, gdy czegoś nie rozumie.' },
+        { id: 'rm1cgl', q: 'Fakt czy opinia?\n„Ten film jest najnudniejszy na świecie.”', options: ['opinia', 'fakt'], noShuffle: true, answer: 0, explain: 'To czyjaś ocena. Inna osoba może uważać, że film jest ciekawy – to opinia.' },
+        { id: '1rbsqj', q: 'Które zdanie to fakt?', options: ['Mecz zaczyna się o 17.00.', 'To będzie wspaniały mecz.', 'Moim zdaniem nasi grają najlepiej.', 'Ten stadion jest brzydki.'], answer: 0, explain: 'Godzinę meczu można sprawdzić – to fakt. Pozostałe zdania to oceny, czyli opinie.' },
+        { id: '8jv6xc', q: 'Po co jest reklama?', options: ['żeby zachęcić do kupienia lub skorzystania z czegoś', 'żeby pokazać wszystkie wady produktu', 'żeby uczyć ortografii', 'żeby podać prognozę pogody'], answer: 0, explain: 'Reklama ma przekonać, że warto coś kupić. Dlatego pokazuje tylko zalety.' },
+        { id: 'z66xs3', q: 'Prawda czy fałsz?\nReklama zawsze mówi całą prawdę o produkcie, także o jego wadach.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Reklama pokazuje zalety, a o wadach zwykle milczy. Warto myśleć krytycznie.' },
+        { id: 'e908h0', q: 'Które zachowanie to dobra higiena cyfrowa?', options: ['odkładam telefon na długo przed snem', 'gram do późnej nocy', 'jem obiad, patrząc w ekran', 'nie robię przerw od komputera'], answer: 0, explain: 'Ekran przed snem utrudnia zasypianie. Odłożony telefon to zdrowy nawyk.' },
+        { id: '85i219', q: 'Prawda czy fałsz?\nCodzienne, wielogodzinne granie bez przerw może prowadzić do uzależnienia od gier.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Uzależnienie to sytuacja, gdy trudno przestać grać. Pomagają przerwy, ruch i spotkania z ludźmi.' },
+      ],
+    },
+    {
+      id: 'zdanie',
+      name: 'Wypowiedzenie, zdanie i znaki',
+      chapter: 'rozdziały VI i VII (typy zdań, znaki, podmiot i orzeczenie)',
+      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 3 „Świadomość języka”, wym. 4 (zdania poprawne logicznie i gramatycznie, główne części zdania i ich określenia), wym. 9 (znaki interpunkcyjne), wym. 10 (pojęcia: wypowiedzenie oznajmujące, pytające, rozkazujące, wykrzyknikowe, równoważnik zdania, zdanie pojedyncze i złożone, podmiot, orzeczenie, kropka, przecinek, znak zapytania, wykrzyknik, cudzysłów, nawias, dwukropek). Z zasad użycia przecinka wybrano tylko podstawowe. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Wypowiedzenie</h3>
+        <p><b>Wypowiedzenie</b> to wyraz lub kilka wyrazów, które przekazują myśl. Zaczyna się wielką literą, a kończy kropką, znakiem zapytania lub wykrzyknikiem.</p>
+        <table>
+          <tr><th>Rodzaj</th><th>Do czego służy</th><th>Przykład</th></tr>
+          <tr><td><b>oznajmujące</b></td><td>informuje o czymś; kropka</td><td>Jutro jedziemy nad morze.</td></tr>
+          <tr><td><b>pytające</b></td><td>o coś pyta; znak zapytania</td><td>Czy odrobiłeś lekcje?</td></tr>
+          <tr><td><b>rozkazujące</b></td><td>wyraża polecenie lub prośbę; kropka lub wykrzyknik</td><td>Zamknij, proszę, okno.</td></tr>
+          <tr><td><b>wykrzyknikowe</b></td><td>wyraża silne uczucia: radość, zdziwienie, złość; wykrzyknik</td><td>Hurra, wygraliśmy!</td></tr>
+        </table>
+        <h3>Zdanie czy równoważnik zdania?</h3>
+        <ul>
+          <li><b>Zdanie</b> ma <b>orzeczenie</b>, czyli czasownik, który mówi, co ktoś robi: <i>Na sali <b>panuje</b> cisza.</i></li>
+          <li><b>Równoważnik zdania</b> nie ma takiego czasownika, a też przekazuje myśl: <i>Cisza na sali. Pożar! Dzień dobry!</i></li>
+        </ul>
+        <h3>Podmiot i orzeczenie</h3>
+        <table>
+          <tr><th>Część zdania</th><th>Pytania</th><th>„Mały pies głośno szczeka.”</th></tr>
+          <tr><td><b>podmiot</b> – kto lub co wykonuje czynność</td><td>kto? co?</td><td>pies</td></tr>
+          <tr><td><b>orzeczenie</b> – co robi podmiot</td><td>co robi? co się z nim dzieje?</td><td>szczeka</td></tr>
+          <tr><td><b>określenia</b> – dokładniej opisują podmiot lub orzeczenie</td><td>jaki? jak?</td><td>mały, głośno</td></tr>
+        </table>
+        <div class="tip">💡 Szukaj najpierw orzeczenia (czasownika), a potem zapytaj: <i>kto to robi?</i> – tak znajdziesz podmiot.</div>
+        <h3>Zdanie pojedyncze i złożone</h3>
+        <ul>
+          <li><b>Pojedyncze</b> – ma jedno orzeczenie: <i>Kasia <b>czyta</b>.</i></li>
+          <li><b>Złożone</b> – ma co najmniej dwa orzeczenia: <i>Kasia <b>czyta</b>, a Tomek <b>rysuje</b>.</i></li>
+        </ul>
+        <h3>Znaki interpunkcyjne</h3>
+        <table>
+          <tr><th>Znak</th><th>Kiedy</th><th>Przykład</th></tr>
+          <tr><td><b>przecinek</b></td><td>przed: <i>a, ale, lecz, że, bo, który</i></td><td>Wiem, że masz rację.</td></tr>
+          <tr><td></td><td>przy wyliczaniu (bez przecinka przed <i>i</i>)</td><td>Kupiłam jabłka, gruszki i śliwki.</td></tr>
+          <tr><td></td><td>przy zwrocie do kogoś</td><td>Mamo, pomożesz mi?</td></tr>
+          <tr><td><b>dwukropek</b></td><td>przed wyliczeniem lub przed cudzymi słowami</td><td>Zabierz trzy rzeczy: kanapki, wodę i czapkę.</td></tr>
+          <tr><td><b>cudzysłów</b></td><td>tytuły, cudze słowa</td><td>Czytam „Rotę”. Tata powiedział: „Wracamy”.</td></tr>
+          <tr><td><b>nawias</b></td><td>dodatkowe wyjaśnienie</td><td>Mój brat (ma 6 lat) chodzi do zerówki.</td></tr>
+        </table>
+      `,
+      flashcards: [
+        ['Wypowiedzenie oznajmujące', 'Informuje o czymś; kończy się kropką'],
+        ['Wypowiedzenie pytające', 'Pyta o coś; kończy się znakiem zapytania'],
+        ['Wypowiedzenie rozkazujące', 'Wyraża polecenie lub prośbę: Zamknij, proszę, okno.'],
+        ['Wypowiedzenie wykrzyknikowe', 'Wyraża silne uczucia; kończy się wykrzyknikiem'],
+        ['Równoważnik zdania', 'Wypowiedzenie bez orzeczenia (czasownika): Cisza na sali.'],
+        ['Podmiot', 'Kto lub co wykonuje czynność; pytania: kto? co?'],
+        ['Orzeczenie', 'Co robi podmiot; pytania: co robi? co się z nim dzieje?'],
+        ['Zdanie złożone', 'Zdanie z co najmniej dwoma orzeczeniami'],
+        ['Przecinek przed…', 'a, ale, lecz, że, bo, który'],
+        ['Dwukropek', 'Przed wyliczeniem lub przed przytoczeniem cudzych słów'],
+      ],
+      questions: [
+        { id: 'ygsz20', q: 'Jakie to wypowiedzenie: „Jutro jedziemy nad morze.”?', options: ['oznajmujące', 'pytające', 'rozkazujące', 'wykrzyknikowe'], answer: 0, explain: 'Wypowiedzenie informuje o czymś i kończy się kropką – jest oznajmujące.' },
+        { id: 'cuvyzu', q: 'Jakie to wypowiedzenie: „Czy odrobiłeś lekcje?”', options: ['pytające', 'oznajmujące', 'rozkazujące', 'wykrzyknikowe'], answer: 0, explain: 'Pyta o coś i kończy się znakiem zapytania – jest pytające.' },
+        { id: 'k3vzd6', q: 'Jakie to wypowiedzenie: „Zamknij, proszę, okno.”?', options: ['rozkazujące', 'oznajmujące', 'pytające', 'wykrzyknikowe'], answer: 0, explain: 'To prośba, żeby ktoś coś zrobił – wypowiedzenie rozkazujące.' },
+        { id: '8sicvm', q: 'Które wypowiedzenie jest wykrzyknikowe, czyli wyraża silne uczucia?', options: ['Hurra, wygraliśmy!', 'Wygraliśmy mecz.', 'Czy wygraliśmy?', 'Graj dalej.'], answer: 0, explain: 'Okrzyk „Hurra” wyraża radość, a na końcu jest wykrzyknik.' },
+        { id: 'xd6x1f', q: 'Które wypowiedzenie jest równoważnikiem zdania?', options: ['Cisza na sali.', 'Na sali panuje cisza.', 'Uczniowie siedzą cicho.', 'Pani prosi o ciszę.'], answer: 0, explain: '„Cisza na sali” nie ma czasownika (orzeczenia), więc to równoważnik zdania.' },
+        { id: 'gu7zlm', q: 'Co jest orzeczeniem w zdaniu „Mały pies głośno szczeka.”?', options: ['szczeka', 'pies', 'mały', 'głośno'], answer: 0, explain: 'Pytamy: co robi pies? – szczeka. To orzeczenie.' },
+        { id: 'qxt84h', q: 'Co jest podmiotem w zdaniu „Mały pies głośno szczeka.”?', options: ['pies', 'szczeka', 'mały', 'głośno'], answer: 0, explain: 'Pytamy: kto szczeka? – pies. To podmiot.' },
+        { id: 'cjrros', q: 'Na jakie pytania odpowiada podmiot?', options: ['kto? co?', 'co robi?', 'jaki? jaka?', 'gdzie? kiedy?'], answer: 0, explain: 'Podmiot odpowiada na pytania kto? co? Orzeczenie – na pytanie co robi?' },
+        { id: '8specw', q: 'Jakie jest zdanie „Kasia czyta, a Tomek rysuje.”?', options: ['złożone', 'pojedyncze', 'to równoważnik zdania'], answer: 0, explain: 'Ma dwa orzeczenia: „czyta” i „rysuje”, więc jest zdaniem złożonym.' },
+        { id: '8rudim', q: 'Po czym poznasz zdanie złożone?', options: ['ma co najmniej dwa orzeczenia', 'jest bardzo długie', 'kończy się wykrzyknikiem', 'nie ma podmiotu'], answer: 0, explain: 'Liczy się liczba orzeczeń, a nie długość zdania. Zdanie złożone ma co najmniej dwa orzeczenia.' },
+        { id: 'm0sv5b', q: 'Które zdanie zapisano poprawnie?', options: ['Wiem, że masz rację.', 'Wiem że, masz rację.', 'Wiem że masz, rację.', 'Wiem, że, masz rację.'], answer: 0, explain: 'Przecinek stawiamy przed „że”.' },
+        { id: 'jd9syk', q: 'Które zdanie zapisano poprawnie?', options: ['Mamo, pomożesz mi?', 'Mamo pomożesz mi?', 'Mamo pomożesz, mi?', 'Mamo pomożesz mi.'], answer: 0, explain: 'Zwrot do osoby („Mamo”) oddzielamy przecinkiem, a pytanie kończymy znakiem zapytania.' },
+        { id: '1chai8', q: 'Które zdanie zapisano poprawnie?', options: ['W ogrodzie rosną róże, tulipany i bratki.', 'W ogrodzie rosną róże tulipany i bratki.', 'W ogrodzie rosną róże, tulipany, i bratki.', 'W ogrodzie, rosną róże, tulipany i bratki.'], answer: 0, explain: 'Wyliczane wyrazy oddzielamy przecinkami, ale przed „i” przecinka nie stawiamy.' },
+        { id: '2brkur', q: 'Jaki znak wstawisz w miejsce kreski?\n„Zabierz na wycieczkę trzy rzeczy _ kanapki, wodę i czapkę.”', options: ['dwukropek', 'znak zapytania', 'nawias', 'wykrzyknik'], answer: 0, explain: 'Przed wyliczeniem, które zapowiadamy słowami „trzy rzeczy”, stawiamy dwukropek.' },
+        { id: 'gb2q8y', q: 'Jak zapiszesz tytuł wiersza w zdaniu?', options: ['w cudzysłowie: „Rota”', 'w nawiasie: (Rota)', 'po dwukropku: :Rota', 'z wykrzyknikiem: Rota!'], answer: 0, explain: 'Tytuły utworów w zdaniu zapisujemy w cudzysłowie.' },
+        { id: 't1j3ru', q: 'Do czego służy nawias w zdaniu „Mój brat (ma 6 lat) chodzi do zerówki.”?', options: ['do dodatkowego wyjaśnienia', 'do zapisania tytułu', 'do zakończenia pytania', 'do wyliczenia'], answer: 0, explain: 'W nawiasie dopisujemy dodatkową informację – tutaj wiek brata.' },
       ],
     },
   ],

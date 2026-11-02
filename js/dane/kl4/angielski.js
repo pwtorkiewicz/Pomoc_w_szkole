@@ -4,10 +4,12 @@ window.SUBJECTS.push({
   name: 'Język angielski',
   icon: '🇬🇧',
   color: '#2f9e6e',
+  book: 'Stay Brainy! 4 (Macmillan)',
   topics: [
     {
       id: 'ja-i-inni',
       name: 'Ja i inni: powitania, liczby, „to be”',
+      chapter: 'Welcome unit, Unit 1',
       basis: 'Dz.U. 2026 poz. 378, język obcy nowożytny, poziom A1: wym. 1 temat 1 „człowiek” (dane personalne); wym. 6.1 (przedstawia siebie i inne osoby), 6.2 (nawiązuje kontakt, rozpoczyna i kończy rozmowę), 6.14 (zwroty i formy grzecznościowe), 7.1 (przedstawia siebie na piśmie). Podstawa jest wspólna dla wszystkich języków, nie przypisuje poziomu do klasy 4 i nie wymienia struktur gramatycznych (A1: „minimalny zasób środków gramatycznych”). Wybór poziomu A1, słownictwa i czasownika „to be” – decyzja redakcyjna.',
       theory: `
         <h3>Powitania i pożegnania</h3>
@@ -103,8 +105,102 @@ window.SUBJECTS.push({
       ],
     },
     {
+      id: 'przyroda-sport-zdrowie',
+      name: 'Zwierzęta, pogoda, sport i zdrowie',
+      chapter: 'Welcome unit, Unit 5, Unit 7',
+      basis: 'Dz.U. 2026 poz. 378, język obcy nowożytny, poziom A1: wym. 1 temat 9 „sport” (dyscypliny, uprawianie sportu), temat 10 „zdrowie” (części ciała, samopoczucie, choroby i objawy), temat 11 „świat przyrody” (pogoda, pory roku, zwierzęta); wym. 2.1 (reaguje na polecenia), 6.9 (prosi o radę i udziela rady), 6.11 (ostrzega, nakazuje, zakazuje, instruuje). Połączenia „play / go” ze sportami i tryb rozkazujący – wybór redakcyjny (podstawa nie wymienia struktur gramatycznych dla poziomu A1).',
+      theory: `
+        <h3>Zwierzęta</h3>
+        <table>
+          <tr><td>dog / cat</td><td>pies / kot</td><td>horse</td><td>koń</td></tr>
+          <tr><td>cow</td><td>krowa</td><td>pig</td><td>świnia</td></tr>
+          <tr><td>sheep</td><td>owca</td><td>hen</td><td>kura</td></tr>
+          <tr><td>rabbit</td><td>królik</td><td>mouse</td><td>mysz</td></tr>
+          <tr><td>frog</td><td>żaba</td><td>bird</td><td>ptak</td></tr>
+          <tr><td>elephant</td><td>słoń</td><td>monkey</td><td>małpa</td></tr>
+        </table>
+        <div class="tip">💡 <b>Sheep</b> w liczbie mnogiej się nie zmienia: <i>one sheep – three sheep</i>. A <b>mouse</b> → <b>mice</b>.</div>
+        <h3>Pogoda i pory roku</h3>
+        <p><b>What's the weather like?</b> – Jaka jest pogoda?</p>
+        <table>
+          <tr><td>☀️ It's sunny.</td><td>Jest słonecznie.</td></tr>
+          <tr><td>☁️ It's cloudy.</td><td>Jest pochmurno.</td></tr>
+          <tr><td>🌧️ It's rainy.</td><td>Jest deszczowo.</td></tr>
+          <tr><td>💨 It's windy.</td><td>Jest wietrznie.</td></tr>
+          <tr><td>❄️ It's snowy.</td><td>Pada śnieg, jest śnieżnie.</td></tr>
+          <tr><td>🥵 It's hot. / 🥶 It's cold.</td><td>Jest gorąco. / Jest zimno.</td></tr>
+        </table>
+        <p>Pory roku (<b>seasons</b>): <b>spring</b> (wiosna), <b>summer</b> (lato), <b>autumn</b> (jesień), <b>winter</b> (zima).</p>
+        <h3>Sport – play czy go?</h3>
+        <ul>
+          <li><b>play</b> + gra z piłką lub rakietą: <i>play football, play basketball, play volleyball, play tennis</i></li>
+          <li><b>go</b> + sport z końcówką <b>-ing</b>: <i>go swimming</i> (pływać), <i>go cycling</i> (jeździć na rowerze), <i>go skiing</i> (jeździć na nartach)</li>
+        </ul>
+        <h3>Ciało</h3>
+        <table>
+          <tr><td>head</td><td>głowa</td><td>arm</td><td>ręka (ramię)</td></tr>
+          <tr><td>eye / ear</td><td>oko / ucho</td><td>hand</td><td>dłoń</td></tr>
+          <tr><td>nose / mouth</td><td>nos / usta</td><td>leg</td><td>noga</td></tr>
+          <tr><td>tooth (teeth)</td><td>ząb (zęby)</td><td>foot (feet)</td><td>stopa (stopy)</td></tr>
+        </table>
+        <h3>Jak się czujesz?</h3>
+        <p><b>What's the matter?</b> / <b>What's wrong?</b> – Co się stało? Co ci jest?</p>
+        <ul>
+          <li><i>I've got a <b>headache</b>.</i> – Boli mnie głowa.</li>
+          <li><i>I've got a <b>toothache</b>.</i> – Boli mnie ząb.</li>
+          <li><i>I've got a <b>stomachache</b>.</i> – Boli mnie brzuch.</li>
+          <li><i>I've got a <b>cold</b>.</i> – Jestem przeziębiony.</li>
+        </ul>
+        <p>Rady: <i>Go to the doctor.</i> (Idź do lekarza.) <i>Go to the dentist.</i> (Idź do dentysty.) <i>Go to bed.</i> (Połóż się do łóżka.)</p>
+        <div class="tip">💡 Ból to często końcówka <b>-ache</b>: head<b>ache</b>, tooth<b>ache</b>, stomach<b>ache</b>.</div>
+        <h3>Polecenia i zakazy</h3>
+        <p>Polecenie zaczynasz od czasownika: <i><b>Open</b> your books.</i> (Otwórzcie książki.) <i><b>Sit</b> down.</i> (Usiądź.) <i><b>Stand</b> up.</i> (Wstań.) <i><b>Listen</b>.</i> (Słuchaj.)</p>
+        <p>Zakaz: <b>Don't</b> + czasownik: <i><b>Don't</b> run!</i> (Nie biegaj!) <i><b>Don't</b> touch!</i> (Nie dotykaj!)</p>
+        <p>Ostrzeżenie: <i><b>Be careful!</b></i> – Uważaj!</p>
+      `,
+      flashcards: [
+        ['cow / pig / sheep', 'krowa / świnia / owca'],
+        ['horse / hen / rabbit', 'koń / kura / królik'],
+        ['sunny / cloudy / rainy', 'słonecznie / pochmurno / deszczowo'],
+        ['windy / snowy', 'wietrznie / śnieżnie'],
+        ['spring / summer / autumn / winter', 'wiosna / lato / jesień / zima'],
+        ['play + …', 'gry z piłką lub rakietą: play football, play tennis'],
+        ['go + …', 'sport z -ing: go swimming, go cycling'],
+        ['head / arm / leg', 'głowa / ręka / noga'],
+        ['I\'ve got a headache.', 'Boli mnie głowa.'],
+        ['What\'s the matter?', 'Co się stało? Co ci jest?'],
+        ['Don\'t…!', 'zakaz: Don\'t run! – Nie biegaj!'],
+        ['Be careful!', 'Uważaj!'],
+      ],
+      questions: [
+        {
+          id: 'f02pm2', q: 'Jaka jest pogoda na obrazku?',
+          svg: `<svg viewBox="0 0 300 120" role="img" aria-label="Duże słońce na bezchmurnym niebie">
+            <rect x="10" y="10" width="280" height="100" rx="12" class="f1"/>
+            <text x="150" y="72" class="tx-b" text-anchor="middle" style="font-size:40px">☀️</text>
+          </svg>`,
+          options: ['It\'s sunny.', 'It\'s rainy.', 'It\'s snowy.', 'It\'s cloudy.'], answer: 0, explain: 'Świeci słońce – „It\'s sunny.” (Jest słonecznie.)',
+        },
+        { id: 'a71tc7', q: 'Co znaczy słowo „autumn”?', options: ['jesień', 'wiosna', 'lato', 'zima'], answer: 0, explain: '„Autumn” to jesień. Wiosna – „spring”, lato – „summer”, zima – „winter”.' },
+        { id: 'aqao4f', q: 'Jest zimno i wszędzie leży śnieg. Jaka to pora roku?', options: ['winter', 'summer', 'spring', 'autumn'], answer: 0, explain: 'Zima to „winter”.' },
+        { id: 'pxwoyw', q: 'Uzupełnij: „I ___ football on Saturdays.”', options: ['play', 'go', 'ride'], answer: 0, explain: 'Z grami z piłką łączymy „play”: play football.' },
+        { id: 'kt77jd', q: 'Uzupełnij: „We ___ swimming in the summer.”', options: ['go', 'play', 'ride'], answer: 0, explain: 'Ze sportami z końcówką -ing łączymy „go”: go swimming.' },
+        { id: 'tmhz7g', q: 'Co znaczy „I\'ve got a headache”?', options: ['Boli mnie głowa.', 'Boli mnie ząb.', 'Boli mnie brzuch.', 'Mam gorączkę.'], answer: 0, explain: '„Head” to głowa, „ache” to ból. Headache – ból głowy.' },
+        { id: 'fgc0nh', q: 'Kolega mówi: „I\'ve got a toothache.” Jaką dasz mu radę?', options: ['Go to the dentist.', 'Go swimming.', 'Eat some sweets.', 'Play football.'], answer: 0, explain: '„Toothache” to ból zęba. Najlepsza rada: „Go to the dentist.” – Idź do dentysty.' },
+        { id: 'yoszdl', q: 'Co znaczy pytanie „What\'s the matter?”', options: ['Co się stało?', 'Ile to kosztuje?', 'Która godzina?', 'Jak masz na imię?'], answer: 0, explain: '„What\'s the matter?” to „Co się stało? Co ci jest?”. Pytamy tak, gdy ktoś źle się czuje.' },
+        { id: 'mwkh2r', q: 'Jaka jest liczba mnoga słowa „foot” (stopa)?', options: ['feet', 'foots', 'feets', 'footes'], answer: 0, explain: 'To wyjątek: one foot – two feet.' },
+        { id: 'binpvk', q: 'Jaka jest liczba mnoga słowa „sheep” (owca)?', options: ['sheep', 'sheeps', 'sheepes', 'shoop'], answer: 0, explain: '„Sheep” w liczbie mnogiej się nie zmienia: one sheep – five sheep.' },
+        { id: 'xyvz47', q: 'Nauczycielka mówi: „Open your books, please.” Co robisz?', options: ['otwieram książkę', 'zamykam książkę', 'wstaję', 'siadam'], answer: 0, explain: '„Open” to otwórz. „Close” – zamknij, „stand up” – wstań, „sit down” – usiądź.' },
+        { id: '6nyhh5', q: 'Jak powiesz po angielsku „Nie biegaj!”?', options: ['Don\'t run!', 'Not run!', 'Doesn\'t run!', 'You not run!'], answer: 0, explain: 'Zakaz to „Don\'t” + czasownik: Don\'t run!' },
+        { id: 'znm0kx', q: 'Co znaczy słowo „cow”?', options: ['krowa', 'koń', 'świnia', 'owca'], answer: 0, explain: '„Cow” to krowa. Koń – „horse”, świnia – „pig”, owca – „sheep”.' },
+        { id: '75c3f8', q: 'Co znaczy słowo „ear”?', options: ['ucho', 'oko', 'nos', 'ramię'], answer: 0, explain: '„Ear” to ucho. Oko – „eye”, nos – „nose”, ramię – „arm”.' },
+        { id: '0auoj2', q: 'Prawda czy fałsz?\nPo angielsku mówimy „go football”.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Z piłką nożną łączymy „play”: play football. „Go” łączymy ze sportami na -ing, np. go swimming.' },
+      ],
+    },
+    {
       id: 'wyglad-i-cechy',
       name: 'Wygląd, charakter, uczucia, „have got” i „can”',
+      chapter: 'Unit 2, Unit 4, Unit 5',
       basis: 'Dz.U. 2026 poz. 378, język obcy nowożytny, poziom A1: wym. 1 temat 1 „człowiek” (wygląd zewnętrzny, cechy charakteru, uczucia i emocje, umiejętności); wym. 4.1 (opisuje ludzi), 4.7 (wyraża uczucia i emocje), 6.13 (wyraża uczucia i emocje w rozmowie). Konstrukcje „have got” i „can” – wybór redakcyjny (podstawa nie wymienia struktur gramatycznych dla poziomu A1).',
       theory: `
         <h3>Wygląd</h3>
@@ -186,8 +282,98 @@ window.SUBJECTS.push({
       ],
     },
     {
+      id: 'jedzenie-i-zakupy',
+      name: 'Jedzenie, ubrania i zakupy',
+      chapter: 'Unit 1, Unit 3, Unit 6',
+      basis: 'Dz.U. 2026 poz. 378, język obcy nowożytny, poziom A1: wym. 1 temat 6 „żywienie” (artykuły spożywcze, posiłki) i temat 7 „zakupy i usługi” (rodzaje sklepów, towary, odzież, kupowanie); wym. 4.5 (opisuje upodobania), 6.5 (wyraża upodobania i pyta o nie), 6.12 (wyraża prośbę), 6.14 (zwroty grzecznościowe). Przedimki a/an, liczba mnoga, „like” i „would like” – wybór redakcyjny (podstawa nie wymienia struktur gramatycznych dla poziomu A1).',
+      theory: `
+        <h3>Jedzenie i picie</h3>
+        <table>
+          <tr><td>bread</td><td>chleb</td><td>apple</td><td>jabłko</td></tr>
+          <tr><td>butter</td><td>masło</td><td>banana</td><td>banan</td></tr>
+          <tr><td>cheese</td><td>ser</td><td>orange</td><td>pomarańcza</td></tr>
+          <tr><td>egg</td><td>jajko</td><td>potato</td><td>ziemniak</td></tr>
+          <tr><td>milk</td><td>mleko</td><td>tomato</td><td>pomidor</td></tr>
+          <tr><td>water</td><td>woda</td><td>carrot</td><td>marchewka</td></tr>
+          <tr><td>juice</td><td>sok</td><td>chicken</td><td>kurczak</td></tr>
+          <tr><td>tea</td><td>herbata</td><td>soup</td><td>zupa</td></tr>
+        </table>
+        <p>Posiłki: <b>breakfast</b> (śniadanie), <b>lunch</b> (posiłek w środku dnia), <b>dinner</b> (główny, ciepły posiłek dnia).</p>
+        <h3>Ubrania i kolory</h3>
+        <table>
+          <tr><td>T-shirt</td><td>koszulka</td><td>shoes</td><td>buty</td></tr>
+          <tr><td>jumper</td><td>sweter</td><td>socks</td><td>skarpetki</td></tr>
+          <tr><td>trousers</td><td>spodnie</td><td>jacket</td><td>kurtka</td></tr>
+          <tr><td>skirt</td><td>spódnica</td><td>dress</td><td>sukienka</td></tr>
+        </table>
+        <p>Kolory (<b>colours</b>): red, blue, green, yellow, black, white, orange, pink, purple (fioletowy), brown (brązowy), grey (szary).</p>
+        <div class="tip">💡 <b>Trousers</b> i <b>jeans</b> to po angielsku zawsze liczba mnoga: <i>My jeans <b>are</b> blue.</i> A <b>orange</b> to i pomarańcza, i kolor pomarańczowy.</div>
+        <h3>W sklepie</h3>
+        <ul>
+          <li><b>Can I help you?</b> – W czym mogę pomóc?</li>
+          <li><b>I'd like</b> an apple, please. – Poproszę jabłko. (dosłownie: chciał(a)bym)</li>
+          <li><b>Can I have</b> a sandwich, please? – Czy mogę prosić kanapkę?</li>
+          <li><b>How much is it?</b> – Ile to kosztuje? <b>How much are they?</b> – Ile one kosztują?</li>
+          <li><b>Here you are.</b> – Proszę. (gdy coś komuś podajesz) → <i>Thank you.</i></li>
+        </ul>
+        <p>Sklepy: <b>supermarket</b>, <b>baker's</b> (piekarnia), <b>bookshop</b> (księgarnia), <b>toy shop</b> (sklep z zabawkami), <b>clothes shop</b> (sklep z ubraniami).</p>
+        <div class="tip">💡 <b>I'd like</b> (= I would like) brzmi grzecznie. „I want” (chcę) w sklepie może zabrzmieć niegrzecznie.</div>
+        <h3>„a” czy „an”?</h3>
+        <ul>
+          <li><b>an</b> – przed wyrazem, który zaczyna się od samogłoski w wymowie: <i>an apple, an egg, an orange</i>.</li>
+          <li><b>a</b> – przed pozostałymi: <i>a banana, a T-shirt, a sandwich</i>.</li>
+        </ul>
+        <h3>Liczba mnoga</h3>
+        <ul>
+          <li>zwykle <b>+s</b>: apple → apples, sock → socks</li>
+          <li><b>+es</b> po -s, -x, -ch, -sh i w niektórych wyrazach na -o: dress → dresses, box → boxes, tomato → tomatoes, potato → potatoes</li>
+          <li>spółgłoska + y → <b>-ies</b>: strawberry → strawberries</li>
+          <li>wyjątki: child → <b>children</b>, man → <b>men</b>, woman → <b>women</b>, foot → <b>feet</b>, tooth → <b>teeth</b>, mouse → <b>mice</b></li>
+        </ul>
+        <h3>Lubię – nie lubię</h3>
+        <ul>
+          <li><i>I <b>like</b> apples.</i> – Lubię jabłka. <i>I <b>don't like</b> fish.</i> – Nie lubię ryb.</li>
+          <li><i>She <b>likes</b> pizza.</i> <i>He <b>doesn't like</b> milk.</i></li>
+          <li><b>Do you like</b> bananas? – Yes, I do. / No, I don't.</li>
+        </ul>
+      `,
+      flashcards: [
+        ['bread / butter / cheese', 'chleb / masło / ser'],
+        ['juice / milk / water', 'sok / mleko / woda'],
+        ['jumper / trousers / skirt', 'sweter / spodnie / spódnica'],
+        ['grey / purple / brown', 'szary / fioletowy / brązowy'],
+        ['I\'d like…, please.', 'Poproszę… (grzecznie)'],
+        ['How much is it?', 'Ile to kosztuje?'],
+        ['Here you are.', 'Proszę (gdy coś podajesz).'],
+        ['baker\'s', 'piekarnia'],
+        ['an apple, an egg', '„an” przed samogłoską w wymowie'],
+        ['child / man / woman → l. mn.', 'children / men / women'],
+        ['foot / tooth / mouse → l. mn.', 'feet / teeth / mice'],
+        ['I like / I don\'t like', 'lubię / nie lubię'],
+      ],
+      questions: [
+        { id: 't5ne1s', q: 'Uzupełnij: „I\'ve got ___ apple and ___ banana.”', options: ['an, a', 'a, an', 'a, a', 'an, an'], answer: 0, explain: '„Apple” zaczyna się od samogłoski – „an apple”. „Banana” od spółgłoski – „a banana”.' },
+        { id: 'edpp9u', q: 'Przed którym słowem postawisz „an”?', options: ['egg', 'banana', 'sandwich', 'tomato'], answer: 0, explain: '„Egg” zaczyna się od samogłoski, więc „an egg”. Pozostałe: a banana, a sandwich, a tomato.' },
+        { id: 's96xl3', q: 'Jaka jest liczba mnoga słowa „child”?', options: ['children', 'childs', 'childrens', 'childes'], answer: 0, explain: 'To wyjątek: one child – two children.' },
+        { id: 'ls7ii2', q: 'Jaka jest liczba mnoga słowa „tooth” (ząb)?', options: ['teeth', 'tooths', 'toothes', 'teeths'], answer: 0, explain: 'To wyjątek: one tooth – two teeth. Podobnie foot – feet.' },
+        { id: 'yjpraj', q: 'Jak napiszesz „pomidory”?', options: ['tomatoes', 'tomatos', 'tomatoies', 'tomato'], answer: 0, explain: 'Do „tomato” dodajemy -es: tomatoes. Tak samo potato – potatoes.' },
+        { id: '0vk3nb', q: 'W sklepie chcesz zapytać o cenę bluzy. Co powiesz?', options: ['How much is it?', 'How old is it?', 'What time is it?', 'Where is it?'], answer: 0, explain: '„How much is it?” to „Ile to kosztuje?”. „What time is it?” to pytanie o godzinę.' },
+        { id: 'p4r4ds', q: 'Jak grzecznie poprosisz w sklepiku o kanapkę?', options: ['I\'d like a sandwich, please.', 'Give me sandwich!', 'I like sandwich.', 'Sandwich now!'], answer: 0, explain: '„I\'d like…, please” to grzeczna prośba: „Poproszę kanapkę”. „I like” znaczy „lubię”.' },
+        { id: 'qe8tz5', q: 'Co znaczy „I\'d like”?', options: ['chciał(a)bym', 'lubię', 'mam', 'muszę'], answer: 0, explain: '„I\'d like” to skrót od „I would like” – chciał(a)bym. Lubię to „I like”.' },
+        { id: '5s1onv', q: 'Pani w sklepie podaje ci zakupy i mówi: „Here you are.” Co odpowiesz?', options: ['Thank you.', 'You\'re welcome.', 'Sorry.', 'How are you?'], answer: 0, explain: '„Here you are” to „Proszę” przy podawaniu czegoś. Odpowiadasz: „Thank you.”' },
+        { id: 'n0ha0o', q: 'Gdzie kupisz chleb i bułki?', options: ['baker\'s', 'bookshop', 'toy shop', 'clothes shop'], answer: 0, explain: '„Baker\'s” to piekarnia. „Bookshop” – księgarnia, „toy shop” – sklep z zabawkami.' },
+        { id: 'ng465q', q: 'Co znaczy słowo „jumper”?', options: ['sweter', 'kurtka', 'spódnica', 'koszula'], answer: 0, explain: '„Jumper” to sweter. Kurtka to „jacket”, spódnica – „skirt”.' },
+        { id: 'llps5h', q: 'Uzupełnij: „My new jeans ___ blue.”', options: ['are', 'is', 'am'], answer: 0, explain: '„Jeans” po angielsku to zawsze liczba mnoga, więc „are”.' },
+        { id: '23h6wr', q: 'Jak powiesz po angielsku „szary”?', options: ['grey', 'green', 'brown', 'purple'], answer: 0, explain: '„Grey” to szary. „Green” – zielony, „brown” – brązowy, „purple” – fioletowy.' },
+        { id: 'qrhwex', q: 'Uzupełnij: „My dad ___ bananas.”', options: ['likes', 'like', 'liking', 'is like'], answer: 0, explain: '„My dad” to „he”. W present simple przy „he” dodajemy -s: likes.' },
+        { id: '4qgckm', q: '„Do you like milk?” – Nie. Jak brzmi krótka odpowiedź?', options: ['No, I don\'t.', 'No, I doesn\'t.', 'No, I\'m not.', 'No, I haven\'t.'], answer: 0, explain: 'Na pytanie „Do you…?” odpowiadamy: Yes, I do. / No, I don\'t.' },
+        { id: 'ktwx5k', q: 'Prawda czy fałsz?\nSłowo „orange” może znaczyć „pomarańcza” albo „pomarańczowy”.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Tak: „an orange” to pomarańcza, a „orange” jako kolor to pomarańczowy.' },
+      ],
+    },
+    {
       id: 'rodzina-i-dzien',
       name: 'Rodzina, mój dzień i godziny',
+      chapter: 'Unit 4, Unit 7',
       basis: 'Dz.U. 2026 poz. 378, język obcy nowożytny, poziom A1: wym. 1 temat 5 „życie prywatne” (rodzina, czynności życia codziennego, określanie czasu); wym. 4.2 i 5.2 (opowiada o czynnościach z teraźniejszości), 6.3 (uzyskuje i przekazuje informacje). Czas present simple i przysłówki częstotliwości – wybór redakcyjny (podstawa nie wymienia struktur gramatycznych dla poziomu A1).',
       theory: `
         <h3>Rodzina</h3>
@@ -273,6 +459,7 @@ window.SUBJECTS.push({
     {
       id: 'dom-i-szkola',
       name: 'Dom i szkoła, „there is / there are”',
+      chapter: 'Unit 1, Unit 6',
       basis: 'Dz.U. 2026 poz. 378, język obcy nowożytny, poziom A1: wym. 1 temat 2 „miejsce zamieszkania” (dom, pomieszczenia i wyposażenie, obowiązki domowe) i temat 3 „edukacja” (szkoła i jej pomieszczenia, przedmioty nauczania, przybory szkolne); wym. 4.1 i 5.1 (opisuje przedmioty i miejsca). Konstrukcja „there is / there are” i przyimki miejsca – wybór redakcyjny (podstawa nie wymienia struktur gramatycznych dla poziomu A1).',
       theory: `
         <h3>Dom</h3>
@@ -374,186 +561,6 @@ window.SUBJECTS.push({
         { id: 'qyfu5i', q: 'Co znaczy „behind”?', options: ['za', 'przed', 'obok', 'na'], answer: 0, explain: '„Behind” to za (z tyłu). „The tree is behind the house.” – Drzewo jest za domem.' },
         { id: 'jxiief', q: 'Prawda czy fałsz?\nZdanie „There are a chair in the kitchen.” jest poprawne.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Jedno krzesło – „There is a chair in the kitchen.” „There are” mówimy o wielu rzeczach.' },
         { id: '4k2jof', q: 'Co znaczy słowo „library”?', options: ['biblioteka', 'księgarnia', 'laboratorium', 'sala gimnastyczna'], answer: 0, explain: '„Library” to biblioteka. Księgarnia to „bookshop”, sala gimnastyczna – „gym”.' },
-      ],
-    },
-    {
-      id: 'jedzenie-i-zakupy',
-      name: 'Jedzenie, ubrania i zakupy',
-      basis: 'Dz.U. 2026 poz. 378, język obcy nowożytny, poziom A1: wym. 1 temat 6 „żywienie” (artykuły spożywcze, posiłki) i temat 7 „zakupy i usługi” (rodzaje sklepów, towary, odzież, kupowanie); wym. 4.5 (opisuje upodobania), 6.5 (wyraża upodobania i pyta o nie), 6.12 (wyraża prośbę), 6.14 (zwroty grzecznościowe). Przedimki a/an, liczba mnoga, „like” i „would like” – wybór redakcyjny (podstawa nie wymienia struktur gramatycznych dla poziomu A1).',
-      theory: `
-        <h3>Jedzenie i picie</h3>
-        <table>
-          <tr><td>bread</td><td>chleb</td><td>apple</td><td>jabłko</td></tr>
-          <tr><td>butter</td><td>masło</td><td>banana</td><td>banan</td></tr>
-          <tr><td>cheese</td><td>ser</td><td>orange</td><td>pomarańcza</td></tr>
-          <tr><td>egg</td><td>jajko</td><td>potato</td><td>ziemniak</td></tr>
-          <tr><td>milk</td><td>mleko</td><td>tomato</td><td>pomidor</td></tr>
-          <tr><td>water</td><td>woda</td><td>carrot</td><td>marchewka</td></tr>
-          <tr><td>juice</td><td>sok</td><td>chicken</td><td>kurczak</td></tr>
-          <tr><td>tea</td><td>herbata</td><td>soup</td><td>zupa</td></tr>
-        </table>
-        <p>Posiłki: <b>breakfast</b> (śniadanie), <b>lunch</b> (posiłek w środku dnia), <b>dinner</b> (główny, ciepły posiłek dnia).</p>
-        <h3>Ubrania i kolory</h3>
-        <table>
-          <tr><td>T-shirt</td><td>koszulka</td><td>shoes</td><td>buty</td></tr>
-          <tr><td>jumper</td><td>sweter</td><td>socks</td><td>skarpetki</td></tr>
-          <tr><td>trousers</td><td>spodnie</td><td>jacket</td><td>kurtka</td></tr>
-          <tr><td>skirt</td><td>spódnica</td><td>dress</td><td>sukienka</td></tr>
-        </table>
-        <p>Kolory (<b>colours</b>): red, blue, green, yellow, black, white, orange, pink, purple (fioletowy), brown (brązowy), grey (szary).</p>
-        <div class="tip">💡 <b>Trousers</b> i <b>jeans</b> to po angielsku zawsze liczba mnoga: <i>My jeans <b>are</b> blue.</i> A <b>orange</b> to i pomarańcza, i kolor pomarańczowy.</div>
-        <h3>W sklepie</h3>
-        <ul>
-          <li><b>Can I help you?</b> – W czym mogę pomóc?</li>
-          <li><b>I'd like</b> an apple, please. – Poproszę jabłko. (dosłownie: chciał(a)bym)</li>
-          <li><b>Can I have</b> a sandwich, please? – Czy mogę prosić kanapkę?</li>
-          <li><b>How much is it?</b> – Ile to kosztuje? <b>How much are they?</b> – Ile one kosztują?</li>
-          <li><b>Here you are.</b> – Proszę. (gdy coś komuś podajesz) → <i>Thank you.</i></li>
-        </ul>
-        <p>Sklepy: <b>supermarket</b>, <b>baker's</b> (piekarnia), <b>bookshop</b> (księgarnia), <b>toy shop</b> (sklep z zabawkami), <b>clothes shop</b> (sklep z ubraniami).</p>
-        <div class="tip">💡 <b>I'd like</b> (= I would like) brzmi grzecznie. „I want” (chcę) w sklepie może zabrzmieć niegrzecznie.</div>
-        <h3>„a” czy „an”?</h3>
-        <ul>
-          <li><b>an</b> – przed wyrazem, który zaczyna się od samogłoski w wymowie: <i>an apple, an egg, an orange</i>.</li>
-          <li><b>a</b> – przed pozostałymi: <i>a banana, a T-shirt, a sandwich</i>.</li>
-        </ul>
-        <h3>Liczba mnoga</h3>
-        <ul>
-          <li>zwykle <b>+s</b>: apple → apples, sock → socks</li>
-          <li><b>+es</b> po -s, -x, -ch, -sh i w niektórych wyrazach na -o: dress → dresses, box → boxes, tomato → tomatoes, potato → potatoes</li>
-          <li>spółgłoska + y → <b>-ies</b>: strawberry → strawberries</li>
-          <li>wyjątki: child → <b>children</b>, man → <b>men</b>, woman → <b>women</b>, foot → <b>feet</b>, tooth → <b>teeth</b>, mouse → <b>mice</b></li>
-        </ul>
-        <h3>Lubię – nie lubię</h3>
-        <ul>
-          <li><i>I <b>like</b> apples.</i> – Lubię jabłka. <i>I <b>don't like</b> fish.</i> – Nie lubię ryb.</li>
-          <li><i>She <b>likes</b> pizza.</i> <i>He <b>doesn't like</b> milk.</i></li>
-          <li><b>Do you like</b> bananas? – Yes, I do. / No, I don't.</li>
-        </ul>
-      `,
-      flashcards: [
-        ['bread / butter / cheese', 'chleb / masło / ser'],
-        ['juice / milk / water', 'sok / mleko / woda'],
-        ['jumper / trousers / skirt', 'sweter / spodnie / spódnica'],
-        ['grey / purple / brown', 'szary / fioletowy / brązowy'],
-        ['I\'d like…, please.', 'Poproszę… (grzecznie)'],
-        ['How much is it?', 'Ile to kosztuje?'],
-        ['Here you are.', 'Proszę (gdy coś podajesz).'],
-        ['baker\'s', 'piekarnia'],
-        ['an apple, an egg', '„an” przed samogłoską w wymowie'],
-        ['child / man / woman → l. mn.', 'children / men / women'],
-        ['foot / tooth / mouse → l. mn.', 'feet / teeth / mice'],
-        ['I like / I don\'t like', 'lubię / nie lubię'],
-      ],
-      questions: [
-        { id: 't5ne1s', q: 'Uzupełnij: „I\'ve got ___ apple and ___ banana.”', options: ['an, a', 'a, an', 'a, a', 'an, an'], answer: 0, explain: '„Apple” zaczyna się od samogłoski – „an apple”. „Banana” od spółgłoski – „a banana”.' },
-        { id: 'edpp9u', q: 'Przed którym słowem postawisz „an”?', options: ['egg', 'banana', 'sandwich', 'tomato'], answer: 0, explain: '„Egg” zaczyna się od samogłoski, więc „an egg”. Pozostałe: a banana, a sandwich, a tomato.' },
-        { id: 's96xl3', q: 'Jaka jest liczba mnoga słowa „child”?', options: ['children', 'childs', 'childrens', 'childes'], answer: 0, explain: 'To wyjątek: one child – two children.' },
-        { id: 'ls7ii2', q: 'Jaka jest liczba mnoga słowa „tooth” (ząb)?', options: ['teeth', 'tooths', 'toothes', 'teeths'], answer: 0, explain: 'To wyjątek: one tooth – two teeth. Podobnie foot – feet.' },
-        { id: 'yjpraj', q: 'Jak napiszesz „pomidory”?', options: ['tomatoes', 'tomatos', 'tomatoies', 'tomato'], answer: 0, explain: 'Do „tomato” dodajemy -es: tomatoes. Tak samo potato – potatoes.' },
-        { id: '0vk3nb', q: 'W sklepie chcesz zapytać o cenę bluzy. Co powiesz?', options: ['How much is it?', 'How old is it?', 'What time is it?', 'Where is it?'], answer: 0, explain: '„How much is it?” to „Ile to kosztuje?”. „What time is it?” to pytanie o godzinę.' },
-        { id: 'p4r4ds', q: 'Jak grzecznie poprosisz w sklepiku o kanapkę?', options: ['I\'d like a sandwich, please.', 'Give me sandwich!', 'I like sandwich.', 'Sandwich now!'], answer: 0, explain: '„I\'d like…, please” to grzeczna prośba: „Poproszę kanapkę”. „I like” znaczy „lubię”.' },
-        { id: 'qe8tz5', q: 'Co znaczy „I\'d like”?', options: ['chciał(a)bym', 'lubię', 'mam', 'muszę'], answer: 0, explain: '„I\'d like” to skrót od „I would like” – chciał(a)bym. Lubię to „I like”.' },
-        { id: '5s1onv', q: 'Pani w sklepie podaje ci zakupy i mówi: „Here you are.” Co odpowiesz?', options: ['Thank you.', 'You\'re welcome.', 'Sorry.', 'How are you?'], answer: 0, explain: '„Here you are” to „Proszę” przy podawaniu czegoś. Odpowiadasz: „Thank you.”' },
-        { id: 'n0ha0o', q: 'Gdzie kupisz chleb i bułki?', options: ['baker\'s', 'bookshop', 'toy shop', 'clothes shop'], answer: 0, explain: '„Baker\'s” to piekarnia. „Bookshop” – księgarnia, „toy shop” – sklep z zabawkami.' },
-        { id: 'ng465q', q: 'Co znaczy słowo „jumper”?', options: ['sweter', 'kurtka', 'spódnica', 'koszula'], answer: 0, explain: '„Jumper” to sweter. Kurtka to „jacket”, spódnica – „skirt”.' },
-        { id: 'llps5h', q: 'Uzupełnij: „My new jeans ___ blue.”', options: ['are', 'is', 'am'], answer: 0, explain: '„Jeans” po angielsku to zawsze liczba mnoga, więc „are”.' },
-        { id: '23h6wr', q: 'Jak powiesz po angielsku „szary”?', options: ['grey', 'green', 'brown', 'purple'], answer: 0, explain: '„Grey” to szary. „Green” – zielony, „brown” – brązowy, „purple” – fioletowy.' },
-        { id: 'qrhwex', q: 'Uzupełnij: „My dad ___ bananas.”', options: ['likes', 'like', 'liking', 'is like'], answer: 0, explain: '„My dad” to „he”. W present simple przy „he” dodajemy -s: likes.' },
-        { id: '4qgckm', q: '„Do you like milk?” – Nie. Jak brzmi krótka odpowiedź?', options: ['No, I don\'t.', 'No, I doesn\'t.', 'No, I\'m not.', 'No, I haven\'t.'], answer: 0, explain: 'Na pytanie „Do you…?” odpowiadamy: Yes, I do. / No, I don\'t.' },
-        { id: 'ktwx5k', q: 'Prawda czy fałsz?\nSłowo „orange” może znaczyć „pomarańcza” albo „pomarańczowy”.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Tak: „an orange” to pomarańcza, a „orange” jako kolor to pomarańczowy.' },
-      ],
-    },
-    {
-      id: 'przyroda-sport-zdrowie',
-      name: 'Zwierzęta, pogoda, sport i zdrowie',
-      basis: 'Dz.U. 2026 poz. 378, język obcy nowożytny, poziom A1: wym. 1 temat 9 „sport” (dyscypliny, uprawianie sportu), temat 10 „zdrowie” (części ciała, samopoczucie, choroby i objawy), temat 11 „świat przyrody” (pogoda, pory roku, zwierzęta); wym. 2.1 (reaguje na polecenia), 6.9 (prosi o radę i udziela rady), 6.11 (ostrzega, nakazuje, zakazuje, instruuje). Połączenia „play / go” ze sportami i tryb rozkazujący – wybór redakcyjny (podstawa nie wymienia struktur gramatycznych dla poziomu A1).',
-      theory: `
-        <h3>Zwierzęta</h3>
-        <table>
-          <tr><td>dog / cat</td><td>pies / kot</td><td>horse</td><td>koń</td></tr>
-          <tr><td>cow</td><td>krowa</td><td>pig</td><td>świnia</td></tr>
-          <tr><td>sheep</td><td>owca</td><td>hen</td><td>kura</td></tr>
-          <tr><td>rabbit</td><td>królik</td><td>mouse</td><td>mysz</td></tr>
-          <tr><td>frog</td><td>żaba</td><td>bird</td><td>ptak</td></tr>
-          <tr><td>elephant</td><td>słoń</td><td>monkey</td><td>małpa</td></tr>
-        </table>
-        <div class="tip">💡 <b>Sheep</b> w liczbie mnogiej się nie zmienia: <i>one sheep – three sheep</i>. A <b>mouse</b> → <b>mice</b>.</div>
-        <h3>Pogoda i pory roku</h3>
-        <p><b>What's the weather like?</b> – Jaka jest pogoda?</p>
-        <table>
-          <tr><td>☀️ It's sunny.</td><td>Jest słonecznie.</td></tr>
-          <tr><td>☁️ It's cloudy.</td><td>Jest pochmurno.</td></tr>
-          <tr><td>🌧️ It's rainy.</td><td>Jest deszczowo.</td></tr>
-          <tr><td>💨 It's windy.</td><td>Jest wietrznie.</td></tr>
-          <tr><td>❄️ It's snowy.</td><td>Pada śnieg, jest śnieżnie.</td></tr>
-          <tr><td>🥵 It's hot. / 🥶 It's cold.</td><td>Jest gorąco. / Jest zimno.</td></tr>
-        </table>
-        <p>Pory roku (<b>seasons</b>): <b>spring</b> (wiosna), <b>summer</b> (lato), <b>autumn</b> (jesień), <b>winter</b> (zima).</p>
-        <h3>Sport – play czy go?</h3>
-        <ul>
-          <li><b>play</b> + gra z piłką lub rakietą: <i>play football, play basketball, play volleyball, play tennis</i></li>
-          <li><b>go</b> + sport z końcówką <b>-ing</b>: <i>go swimming</i> (pływać), <i>go cycling</i> (jeździć na rowerze), <i>go skiing</i> (jeździć na nartach)</li>
-        </ul>
-        <h3>Ciało</h3>
-        <table>
-          <tr><td>head</td><td>głowa</td><td>arm</td><td>ręka (ramię)</td></tr>
-          <tr><td>eye / ear</td><td>oko / ucho</td><td>hand</td><td>dłoń</td></tr>
-          <tr><td>nose / mouth</td><td>nos / usta</td><td>leg</td><td>noga</td></tr>
-          <tr><td>tooth (teeth)</td><td>ząb (zęby)</td><td>foot (feet)</td><td>stopa (stopy)</td></tr>
-        </table>
-        <h3>Jak się czujesz?</h3>
-        <p><b>What's the matter?</b> / <b>What's wrong?</b> – Co się stało? Co ci jest?</p>
-        <ul>
-          <li><i>I've got a <b>headache</b>.</i> – Boli mnie głowa.</li>
-          <li><i>I've got a <b>toothache</b>.</i> – Boli mnie ząb.</li>
-          <li><i>I've got a <b>stomachache</b>.</i> – Boli mnie brzuch.</li>
-          <li><i>I've got a <b>cold</b>.</i> – Jestem przeziębiony.</li>
-        </ul>
-        <p>Rady: <i>Go to the doctor.</i> (Idź do lekarza.) <i>Go to the dentist.</i> (Idź do dentysty.) <i>Go to bed.</i> (Połóż się do łóżka.)</p>
-        <div class="tip">💡 Ból to często końcówka <b>-ache</b>: head<b>ache</b>, tooth<b>ache</b>, stomach<b>ache</b>.</div>
-        <h3>Polecenia i zakazy</h3>
-        <p>Polecenie zaczynasz od czasownika: <i><b>Open</b> your books.</i> (Otwórzcie książki.) <i><b>Sit</b> down.</i> (Usiądź.) <i><b>Stand</b> up.</i> (Wstań.) <i><b>Listen</b>.</i> (Słuchaj.)</p>
-        <p>Zakaz: <b>Don't</b> + czasownik: <i><b>Don't</b> run!</i> (Nie biegaj!) <i><b>Don't</b> touch!</i> (Nie dotykaj!)</p>
-        <p>Ostrzeżenie: <i><b>Be careful!</b></i> – Uważaj!</p>
-      `,
-      flashcards: [
-        ['cow / pig / sheep', 'krowa / świnia / owca'],
-        ['horse / hen / rabbit', 'koń / kura / królik'],
-        ['sunny / cloudy / rainy', 'słonecznie / pochmurno / deszczowo'],
-        ['windy / snowy', 'wietrznie / śnieżnie'],
-        ['spring / summer / autumn / winter', 'wiosna / lato / jesień / zima'],
-        ['play + …', 'gry z piłką lub rakietą: play football, play tennis'],
-        ['go + …', 'sport z -ing: go swimming, go cycling'],
-        ['head / arm / leg', 'głowa / ręka / noga'],
-        ['I\'ve got a headache.', 'Boli mnie głowa.'],
-        ['What\'s the matter?', 'Co się stało? Co ci jest?'],
-        ['Don\'t…!', 'zakaz: Don\'t run! – Nie biegaj!'],
-        ['Be careful!', 'Uważaj!'],
-      ],
-      questions: [
-        {
-          id: 'f02pm2', q: 'Jaka jest pogoda na obrazku?',
-          svg: `<svg viewBox="0 0 300 120" role="img" aria-label="Duże słońce na bezchmurnym niebie">
-            <rect x="10" y="10" width="280" height="100" rx="12" class="f1"/>
-            <text x="150" y="72" class="tx-b" text-anchor="middle" style="font-size:40px">☀️</text>
-          </svg>`,
-          options: ['It\'s sunny.', 'It\'s rainy.', 'It\'s snowy.', 'It\'s cloudy.'], answer: 0, explain: 'Świeci słońce – „It\'s sunny.” (Jest słonecznie.)',
-        },
-        { id: 'a71tc7', q: 'Co znaczy słowo „autumn”?', options: ['jesień', 'wiosna', 'lato', 'zima'], answer: 0, explain: '„Autumn” to jesień. Wiosna – „spring”, lato – „summer”, zima – „winter”.' },
-        { id: 'aqao4f', q: 'Jest zimno i wszędzie leży śnieg. Jaka to pora roku?', options: ['winter', 'summer', 'spring', 'autumn'], answer: 0, explain: 'Zima to „winter”.' },
-        { id: 'pxwoyw', q: 'Uzupełnij: „I ___ football on Saturdays.”', options: ['play', 'go', 'ride'], answer: 0, explain: 'Z grami z piłką łączymy „play”: play football.' },
-        { id: 'kt77jd', q: 'Uzupełnij: „We ___ swimming in the summer.”', options: ['go', 'play', 'ride'], answer: 0, explain: 'Ze sportami z końcówką -ing łączymy „go”: go swimming.' },
-        { id: 'tmhz7g', q: 'Co znaczy „I\'ve got a headache”?', options: ['Boli mnie głowa.', 'Boli mnie ząb.', 'Boli mnie brzuch.', 'Mam gorączkę.'], answer: 0, explain: '„Head” to głowa, „ache” to ból. Headache – ból głowy.' },
-        { id: 'fgc0nh', q: 'Kolega mówi: „I\'ve got a toothache.” Jaką dasz mu radę?', options: ['Go to the dentist.', 'Go swimming.', 'Eat some sweets.', 'Play football.'], answer: 0, explain: '„Toothache” to ból zęba. Najlepsza rada: „Go to the dentist.” – Idź do dentysty.' },
-        { id: 'yoszdl', q: 'Co znaczy pytanie „What\'s the matter?”', options: ['Co się stało?', 'Ile to kosztuje?', 'Która godzina?', 'Jak masz na imię?'], answer: 0, explain: '„What\'s the matter?” to „Co się stało? Co ci jest?”. Pytamy tak, gdy ktoś źle się czuje.' },
-        { id: 'mwkh2r', q: 'Jaka jest liczba mnoga słowa „foot” (stopa)?', options: ['feet', 'foots', 'feets', 'footes'], answer: 0, explain: 'To wyjątek: one foot – two feet.' },
-        { id: 'binpvk', q: 'Jaka jest liczba mnoga słowa „sheep” (owca)?', options: ['sheep', 'sheeps', 'sheepes', 'shoop'], answer: 0, explain: '„Sheep” w liczbie mnogiej się nie zmienia: one sheep – five sheep.' },
-        { id: 'xyvz47', q: 'Nauczycielka mówi: „Open your books, please.” Co robisz?', options: ['otwieram książkę', 'zamykam książkę', 'wstaję', 'siadam'], answer: 0, explain: '„Open” to otwórz. „Close” – zamknij, „stand up” – wstań, „sit down” – usiądź.' },
-        { id: '6nyhh5', q: 'Jak powiesz po angielsku „Nie biegaj!”?', options: ['Don\'t run!', 'Not run!', 'Doesn\'t run!', 'You not run!'], answer: 0, explain: 'Zakaz to „Don\'t” + czasownik: Don\'t run!' },
-        { id: 'znm0kx', q: 'Co znaczy słowo „cow”?', options: ['krowa', 'koń', 'świnia', 'owca'], answer: 0, explain: '„Cow” to krowa. Koń – „horse”, świnia – „pig”, owca – „sheep”.' },
-        { id: '75c3f8', q: 'Co znaczy słowo „ear”?', options: ['ucho', 'oko', 'nos', 'ramię'], answer: 0, explain: '„Ear” to ucho. Oko – „eye”, nos – „nose”, ramię – „arm”.' },
-        { id: '0auoj2', q: 'Prawda czy fałsz?\nPo angielsku mówimy „go football”.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Z piłką nożną łączymy „play”: play football. „Go” łączymy ze sportami na -ing, np. go swimming.' },
       ],
     },
   ],

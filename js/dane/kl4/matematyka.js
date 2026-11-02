@@ -72,108 +72,13 @@
     name: 'Matematyka',
     icon: '📐',
     color: '#3b82c4',
+    book: 'Matematyka z plusem 4 (GWO)',
     topics: [
-      // ------------------------------------------------------------------
-      {
-        id: 'liczby',
-        name: 'Liczby naturalne',
-        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 1–2 (dziesiątkowy system zapisu liczb naturalnych, porównywanie i zaokrąglanie, oś liczbowa; system rzymski w zakresie 1–3000).' + WYBOR,
-        theory: `
-          <h3>Cyfry i rzędy</h3>
-          <p>Mamy 10 cyfr: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Z nich zapisujemy każdą liczbę. Ta sama cyfra znaczy co innego w zależności od miejsca, na którym stoi. To miejsce to <b>rząd</b>.</p>
-          <table>
-            <tr><th>miliony</th><th>setki tysięcy</th><th>dziesiątki tysięcy</th><th>tysiące</th><th>setki</th><th>dziesiątki</th><th>jedności</th></tr>
-            <tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>0</td><td>7</td></tr>
-          </table>
-          <p>Liczba 2 345 607: cyfra 5 oznacza 5 tysięcy, a cyfra 6 – 6 setek. Zero mówi, że dziesiątek nie ma.</p>
-          <p><span class="f">10 jedności = 1 dziesiątka</span> · <span class="f">10 dziesiątek = 1 setka</span> · <span class="f">10 setek = 1 tysiąc</span> · <span class="f">1000 tysięcy = 1 milion</span></p>
-          <h3>Zapis słowny</h3>
-          <p>Duże liczby dzielimy od prawej na grupy po trzy cyfry. Najpierw czytamy tysiące, potem resztę:</p>
-          <ul>
-            <li>40 506 – czterdzieści tysięcy pięćset sześć,</li>
-            <li>2 060 – dwa tysiące sześćdziesiąt,</li>
-            <li>1 000 000 – milion (sześć zer).</li>
-          </ul>
-          <div class="tip">💡 Zera w środku liczby nie czytasz, ale musisz je zapisać: „siedem tysięcy dwadzieścia” to 7 020, a nie 720.</div>
-          <h3>Porównywanie</h3>
-          <ul>
-            <li>Więcej cyfr – większa liczba: 10 001 &gt; 9 999.</li>
-            <li>Tyle samo cyfr – porównuj od lewej pierwszą cyfrę, która się różni: 4 589 &lt; 4 612 (5 setek to mniej niż 6 setek).</li>
-            <li>Znak <b>&lt;</b> czytamy „jest mniejsze od”, znak <b>&gt;</b> – „jest większe od”. Otwarta strona znaku jest zawsze od strony większej liczby.</li>
-          </ul>
-          <h3>Oś liczbowa</h3>
-          <p>Na osi liczby rosną w prawo, a kreski są w równych odstępach. Im dalej w prawo, tym większa liczba. Zanim odczytasz punkt, sprawdź, co ile są kreski (co 1, co 10, co 100…).</p>
-          <h3>Zaokrąglanie</h3>
-          <p>Zaokrąglić – znaczy zastąpić liczbę najbliższą „okrągłą” liczbą. Piszemy znak <b>≈</b> („w przybliżeniu”). Patrzysz na cyfrę tuż za miejscem, do którego zaokrąglasz: <b>0, 1, 2, 3, 4</b> – w dół, <b>5, 6, 7, 8, 9</b> – w górę.</p>
-          <table>
-            <tr><th>Liczba</th><th>do dziesiątek</th><th>do setek</th><th>do tysięcy</th></tr>
-            <tr><td>2 649</td><td>2 650</td><td>2 600</td><td>3 000</td></tr>
-            <tr><td>7 518</td><td>7 520</td><td>7 500</td><td>8 000</td></tr>
-          </table>
-          <h3>Liczby rzymskie</h3>
-          <table>
-            <tr><th>I</th><th>V</th><th>X</th><th>L</th><th>C</th><th>D</th><th>M</th></tr>
-            <tr><td>1</td><td>5</td><td>10</td><td>50</td><td>100</td><td>500</td><td>1000</td></tr>
-          </table>
-          <ul>
-            <li>Znaki zapisujemy od największego i <b>dodajemy</b>: XVI = 10 + 5 + 1 = 16, MMXXVI = 2026.</li>
-            <li>Mniejszy znak przed większym <b>odejmujemy</b> – tylko w parach: IV = 4, IX = 9, XL = 40, XC = 90, CD = 400, CM = 900.</li>
-            <li>Ten sam znak piszemy najwyżej 3 razy z rzędu (III, XXX, MMM). Znaków V, L, D nie powtarzamy.</li>
-          </ul>
-          <p>Liczby rzymskie spotkasz na tarczach zegarów, w numerach rozdziałów i w nazwach wieków (XXI wiek).</p>
-        `,
-        flashcards: [
-          ['Ile jest cyfr?', 'Dziesięć: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9'],
-          ['10 dziesiątek to…', '1 setka (100)'],
-          ['10 setek to…', '1 tysiąc (1000)'],
-          ['1000 tysięcy to…', '1 milion (1 000 000)'],
-          ['Zaokrąglanie – kiedy w górę?', 'Gdy decydująca cyfra to 5, 6, 7, 8 albo 9'],
-          ['Znak ≈', '„w przybliżeniu równa się” – używamy go przy zaokrąglaniu'],
-          ['L, C, D, M', '50, 100, 500, 1000'],
-          ['IV i IX', '4 i 9'],
-          ['XL i XC', '40 i 90'],
-          ['CD i CM', '400 i 900'],
-        ],
-        questions: [
-          { id: 'fxcce2', q: 'W liczbie 4 728 cyfra 7 oznacza…', options: ['7 setek', '7 dziesiątek', '7 tysięcy', '7 jedności'], answer: 0, explain: 'Licząc od prawej: 8 – jedności, 2 – dziesiątki, 7 – setki, 4 – tysiące.' },
-          { id: 'ez2y4o', q: 'Która liczba to „trzydzieści tysięcy czterysta pięć”?', options: ['30 405', '34 005', '30 450', '300 405'], answer: 0, explain: 'Trzydzieści tysięcy to 30 000, czterysta pięć to 405 – razem 30 405.' },
-          { id: '15a20y', q: 'Jak słownie zapisać liczbę 2 060?', options: ['dwa tysiące sześćdziesiąt', 'dwa tysiące sześćset', 'dwieście sześćdziesiąt', 'dwa tysiące szesnaście'], answer: 0, explain: '2 tysiące, 0 setek, 6 dziesiątek, 0 jedności.' },
-          { id: '0uizuj', q: 'Jaka to liczba: 3 tysiące, 0 setek, 5 dziesiątek i 2 jedności?', options: ['3 052', '3 520', '352', '30 052'], answer: 0, explain: 'Zero setek musisz zapisać: 3 tysiące, 0 setek, 5 dziesiątek, 2 jedności → 3 052.' },
-          { id: 'ulwqyw', q: 'Który znak trzeba wstawić?\n9 999 … 10 001', options: ['<', '>', '='], answer: 0, explain: '10 001 ma pięć cyfr, a 9 999 – cztery. Więcej cyfr, więc 10 001 jest większa: 9 999 < 10 001.' },
-          { id: 'j1rcn5', q: 'Która liczba jest największa?', options: ['78 990', '78 909', '78 099', '70 899'], answer: 0, explain: 'Wszystkie mają po 5 cyfr. Porównujemy od lewej: 78 990 ma najwięcej setek (9), a potem dziesiątek (9).' },
-          { id: 'tg16yv', q: 'Zaokrąglij 3 486 do setek.', options: ['3 500', '3 400', '3 490', '4 000'], answer: 0, explain: 'Patrzymy na cyfrę dziesiątek: 8, więc zaokrąglamy w górę – do 3 500.' },
-          { id: 'n24yqc', q: 'Zaokrąglij 2 451 do tysięcy.', options: ['2 000', '3 000', '2 500', '2 450'], answer: 0, explain: 'Patrzymy na cyfrę setek: 4, więc zaokrąglamy w dół – do 2 000.' },
-          { id: '9u37dp', q: 'Zaokrąglij 1 995 do dziesiątek.', options: ['2 000', '1 990', '1 900', '1 995'], answer: 0, explain: 'Cyfra jedności to 5, więc w górę: po 1 990 następna pełna dziesiątka to 2 000.' },
-          { id: '02gifm', q: 'Która liczba po zaokrągleniu do dziesiątek daje 80?', options: ['84', '86', '89', '74'], answer: 0, explain: '84 ≈ 80 (cyfra jedności 4 – w dół). 86 i 89 dają 90, a 74 daje 70.' },
-          {
-            id: 't1ymwe',
-            q: 'Jaką liczbę zaznaczono na osi literą A?',
-            svg: `<svg viewBox="0 0 400 100" role="img" aria-label="Oś liczbowa od 200 do 300 z kreskami co 10. Punkt A leży na szóstej kresce za liczbą 200.">
-      <line x1="16" y1="50" x2="392" y2="50" class="ln"/>
-      <path d="M384,45 L393,50 L384,55" class="ln"/>
-      <g class="ln"><line x1="30" y1="44" x2="30" y2="56"/><line x1="64" y1="44" x2="64" y2="56"/><line x1="98" y1="44" x2="98" y2="56"/><line x1="132" y1="44" x2="132" y2="56"/><line x1="166" y1="44" x2="166" y2="56"/><line x1="200" y1="44" x2="200" y2="56"/><line x1="234" y1="44" x2="234" y2="56"/><line x1="268" y1="44" x2="268" y2="56"/><line x1="302" y1="44" x2="302" y2="56"/><line x1="336" y1="44" x2="336" y2="56"/><line x1="370" y1="44" x2="370" y2="56"/></g>
-      <text x="30" y="80" class="tx" text-anchor="middle">200</text>
-      <text x="200" y="80" class="tx" text-anchor="middle">250</text>
-      <text x="370" y="80" class="tx" text-anchor="middle">300</text>
-      <circle cx="234" cy="50" r="7" class="t2"/>
-      <text x="234" y="30" class="tx-b t2" text-anchor="middle">A</text>
-    </svg>`,
-            options: ['260', '206', '26', '270'],
-            answer: 0,
-            explain: 'Od 200 do 300 jest 10 odstępów, więc każdy odstęp to 10. A leży 6 kresek za 200: 200 + 60 = 260.',
-          },
-          { id: 'tk2qgu', q: 'Ile to jest XIV?', options: ['14', '16', '9', '11'], answer: 0, explain: 'X = 10, IV = 4, razem 14.' },
-          { id: 'cfgh39', q: 'Jak zapisać 49 znakami rzymskimi?', options: ['XLIX', 'IL', 'XXXXIX', 'LIX'], answer: 0, explain: '40 = XL, 9 = IX, więc 49 = XLIX. Zapis IL jest niepoprawny, a X nie piszemy cztery razy z rzędu.' },
-          { id: 'e112ql', q: 'Liczba MMXXVI to…', options: ['2026', '2016', '1026', '2024'], answer: 0, explain: 'MM = 2000, XX = 20, VI = 6 → 2026.' },
-          { id: '2xodsm', q: 'Ile to jest CDXC?', options: ['490', '590', '410', '640'], answer: 0, explain: 'CD = 400 (500 − 100), XC = 90 (100 − 10), razem 490.' },
-          { id: 'py4rbj', q: 'Prawda czy fałsz?\nZapis VV oznacza 10.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Znaku V nie powtarzamy. Liczbę 10 zapisujemy jako X.' },
-        ],
-      },
-
       // ------------------------------------------------------------------
       {
         id: 'dzialania',
         name: 'Działania na liczbach naturalnych',
+        chapter: 'dział 1 „Liczby i działania”',
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 9–14 (dodawanie, odejmowanie, mnożenie i dzielenie w pamięci lub z zapisem obliczeń pośrednich, podział i mieszczenie, wygodne strategie, dzielenie z resztą, porównywanie różnicowe i ilorazowe), wym. 15 (tylko kwadraty i sześciany), 36 (kolejność działań), 37 (szacowanie); dz. 6 Myślenie matematyczne. Bez algorytmów działań pisemnych – podstawa ich nie wymaga.' + WYBOR,
         theory: `
           <h3>Nazwy w działaniach</h3>
@@ -273,76 +178,99 @@
 
       // ------------------------------------------------------------------
       {
-        id: 'dzielniki',
-        name: 'Dzielniki, wielokrotności i cechy podzielności',
-        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 3 (podzielność przez 2, 3, 4, 5, 9, 10), 4 (liczby pierwsze i złożone – jedno- i dwucyfrowe), 6 (wspólne dzielniki i wielokrotności dwóch liczb, NWD i NWW – bez rozkładu na czynniki pierwsze), 7 (dzielniki i wielokrotności w obliczeniach i rozumowaniach), 8 (liczebność zbioru liczb z niewielkiego zakresu). Rozkład na czynniki pierwsze (wym. 5) – później.' + WYBOR,
+        id: 'liczby',
+        name: 'Liczby naturalne',
+        chapter: 'działy 1 i 2 (oś liczbowa, system dziesiątkowy i rzymski)',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 1–2 (dziesiątkowy system zapisu liczb naturalnych, porównywanie i zaokrąglanie, oś liczbowa; system rzymski w zakresie 1–3000).' + WYBOR,
         theory: `
-          <h3>Dzielnik i wielokrotność</h3>
-          <p>Liczba 3 jest <b>dzielnikiem</b> liczby 12, bo 12 : 3 = 4 bez reszty. Mówimy też: 12 <b>dzieli się przez</b> 3 i 12 jest <b>wielokrotnością</b> liczby 3.</p>
-          <ul>
-            <li>Dzielniki liczby 12: <span class="f">1, 2, 3, 4, 6, 12</span>. Szukaj ich parami: 1 · 12, 2 · 6, 3 · 4.</li>
-            <li>Wielokrotności liczby 6: <span class="f">6, 12, 18, 24, 30, …</span> – to wyniki mnożenia 6 · 1, 6 · 2, 6 · 3… Jest ich nieskończenie wiele.</li>
-          </ul>
-          <div class="tip">💡 Każda liczba dzieli się przez 1 i przez samą siebie.</div>
-          <h3>Cechy podzielności – sprawdzasz bez dzielenia</h3>
+          <h3>Cyfry i rzędy</h3>
+          <p>Mamy 10 cyfr: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Z nich zapisujemy każdą liczbę. Ta sama cyfra znaczy co innego w zależności od miejsca, na którym stoi. To miejsce to <b>rząd</b>.</p>
           <table>
-            <tr><th>Przez</th><th>Liczba dzieli się, gdy…</th><th>Przykład</th></tr>
-            <tr><td>2</td><td>ostatnia cyfra to 0, 2, 4, 6 lub 8 (liczba parzysta)</td><td>3 578</td></tr>
-            <tr><td>5</td><td>ostatnia cyfra to 0 lub 5</td><td>345, 340</td></tr>
-            <tr><td>10</td><td>ostatnia cyfra to 0</td><td>2 030</td></tr>
-            <tr><td>4</td><td>liczba z dwóch ostatnich cyfr dzieli się przez 4</td><td>1 316 (16 : 4 = 4)</td></tr>
-            <tr><td>3</td><td>suma cyfr dzieli się przez 3</td><td>5 271 (5 + 2 + 7 + 1 = 15)</td></tr>
-            <tr><td>9</td><td>suma cyfr dzieli się przez 9</td><td>4 518 (4 + 5 + 1 + 8 = 18)</td></tr>
+            <tr><th>miliony</th><th>setki tysięcy</th><th>dziesiątki tysięcy</th><th>tysiące</th><th>setki</th><th>dziesiątki</th><th>jedności</th></tr>
+            <tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>0</td><td>7</td></tr>
           </table>
-          <div class="tip">💡 Liczba podzielna przez 9 dzieli się też przez 3. Odwrotnie nie zawsze: 12 dzieli się przez 3, ale nie przez 9.</div>
-          <h3>Liczby pierwsze i złożone</h3>
+          <p>Liczba 2 345 607: cyfra 5 oznacza 5 tysięcy, a cyfra 6 – 6 setek. Zero mówi, że dziesiątek nie ma.</p>
+          <p><span class="f">10 jedności = 1 dziesiątka</span> · <span class="f">10 dziesiątek = 1 setka</span> · <span class="f">10 setek = 1 tysiąc</span> · <span class="f">1000 tysięcy = 1 milion</span></p>
+          <h3>Zapis słowny</h3>
+          <p>Duże liczby dzielimy od prawej na grupy po trzy cyfry. Najpierw czytamy tysiące, potem resztę:</p>
           <ul>
-            <li><b>Liczba pierwsza</b> ma dokładnie dwa dzielniki: 1 i samą siebie. Liczby pierwsze mniejsze od 30: <span class="f">2, 3, 5, 7, 11, 13, 17, 19, 23, 29</span>.</li>
-            <li><b>Liczba złożona</b> ma więcej niż dwa dzielniki, np. 15 (1, 3, 5, 15).</li>
-            <li>Liczby <b>0 i 1</b> nie są ani pierwsze, ani złożone.</li>
+            <li>40 506 – czterdzieści tysięcy pięćset sześć,</li>
+            <li>2 060 – dwa tysiące sześćdziesiąt,</li>
+            <li>1 000 000 – milion (sześć zer).</li>
           </ul>
-          <p>Cechy podzielności pomagają wykryć liczbę złożoną: 51 ma sumę cyfr 6, więc dzieli się przez 3 (51 = 3 · 17) – jest złożona.</p>
-          <h3>Wspólne dzielniki i wspólne wielokrotności</h3>
+          <div class="tip">💡 Zera w środku liczby nie czytasz, ale musisz je zapisać: „siedem tysięcy dwadzieścia” to 7 020, a nie 720.</div>
+          <h3>Porównywanie</h3>
           <ul>
-            <li>Dzielniki 12: 1, 2, 3, 4, 6, 12. Dzielniki 18: 1, 2, 3, 6, 9, 18. Wspólne: 1, 2, 3, 6. Największy wspólny dzielnik: <b>NWD(12, 18) = 6</b>.</li>
-            <li>Wielokrotności 4: 4, 8, <b>12</b>, 16, 20, <b>24</b>… Wielokrotności 6: 6, <b>12</b>, 18, <b>24</b>… Najmniejsza wspólna wielokrotność: <b>NWW(4, 6) = 12</b>.</li>
+            <li>Więcej cyfr – większa liczba: 10 001 &gt; 9 999.</li>
+            <li>Tyle samo cyfr – porównuj od lewej pierwszą cyfrę, która się różni: 4 589 &lt; 4 612 (5 setek to mniej niż 6 setek).</li>
+            <li>Znak <b>&lt;</b> czytamy „jest mniejsze od”, znak <b>&gt;</b> – „jest większe od”. Otwarta strona znaku jest zawsze od strony większej liczby.</li>
           </ul>
-          <p><b>Kiedy NWD?</b> Gdy coś dzielimy na jak najwięcej jednakowych paczek bez resztek. <b>Kiedy NWW?</b> Gdy szukamy, kiedy dwa powtarzające się zdarzenia znów wypadną razem (np. odjazdy dwóch autobusów).</p>
+          <h3>Oś liczbowa</h3>
+          <p>Na osi liczby rosną w prawo, a kreski są w równych odstępach. Im dalej w prawo, tym większa liczba. Zanim odczytasz punkt, sprawdź, co ile są kreski (co 1, co 10, co 100…).</p>
+          <h3>Zaokrąglanie</h3>
+          <p>Zaokrąglić – znaczy zastąpić liczbę najbliższą „okrągłą” liczbą. Piszemy znak <b>≈</b> („w przybliżeniu”). Patrzysz na cyfrę tuż za miejscem, do którego zaokrąglasz: <b>0, 1, 2, 3, 4</b> – w dół, <b>5, 6, 7, 8, 9</b> – w górę.</p>
+          <table>
+            <tr><th>Liczba</th><th>do dziesiątek</th><th>do setek</th><th>do tysięcy</th></tr>
+            <tr><td>2 649</td><td>2 650</td><td>2 600</td><td>3 000</td></tr>
+            <tr><td>7 518</td><td>7 520</td><td>7 500</td><td>8 000</td></tr>
+          </table>
+          <h3>Liczby rzymskie</h3>
+          <table>
+            <tr><th>I</th><th>V</th><th>X</th><th>L</th><th>C</th><th>D</th><th>M</th></tr>
+            <tr><td>1</td><td>5</td><td>10</td><td>50</td><td>100</td><td>500</td><td>1000</td></tr>
+          </table>
+          <ul>
+            <li>Znaki zapisujemy od największego i <b>dodajemy</b>: XVI = 10 + 5 + 1 = 16, MMXXVI = 2026.</li>
+            <li>Mniejszy znak przed większym <b>odejmujemy</b> – tylko w parach: IV = 4, IX = 9, XL = 40, XC = 90, CD = 400, CM = 900.</li>
+            <li>Ten sam znak piszemy najwyżej 3 razy z rzędu (III, XXX, MMM). Znaków V, L, D nie powtarzamy.</li>
+          </ul>
+          <p>Liczby rzymskie spotkasz na tarczach zegarów, w numerach rozdziałów i w nazwach wieków (XXI wiek).</p>
         `,
         flashcards: [
-          ['Dzielnik liczby', 'Liczba, przez którą dana liczba dzieli się bez reszty, np. 4 jest dzielnikiem 12'],
-          ['Wielokrotność liczby 7', '7, 14, 21, 28, … – wyniki mnożenia 7 przez 1, 2, 3, 4, …'],
-          ['Podzielność przez 2', 'Ostatnia cyfra: 0, 2, 4, 6 lub 8'],
-          ['Podzielność przez 5', 'Ostatnia cyfra: 0 lub 5'],
-          ['Podzielność przez 10', 'Ostatnia cyfra: 0'],
-          ['Podzielność przez 4', 'Liczba z dwóch ostatnich cyfr dzieli się przez 4'],
-          ['Podzielność przez 3 i przez 9', 'Suma cyfr dzieli się przez 3 (przez 9)'],
-          ['Liczba pierwsza', 'Ma dokładnie dwa dzielniki: 1 i samą siebie, np. 2, 3, 5, 7, 11'],
-          ['Liczba złożona', 'Ma więcej niż dwa dzielniki, np. 4, 9, 15'],
-          ['NWD(12, 18)', '6 – największy wspólny dzielnik'],
-          ['NWW(4, 6)', '12 – najmniejsza wspólna wielokrotność'],
+          ['Ile jest cyfr?', 'Dziesięć: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9'],
+          ['10 dziesiątek to…', '1 setka (100)'],
+          ['10 setek to…', '1 tysiąc (1000)'],
+          ['1000 tysięcy to…', '1 milion (1 000 000)'],
+          ['Zaokrąglanie – kiedy w górę?', 'Gdy decydująca cyfra to 5, 6, 7, 8 albo 9'],
+          ['Znak ≈', '„w przybliżeniu równa się” – używamy go przy zaokrąglaniu'],
+          ['L, C, D, M', '50, 100, 500, 1000'],
+          ['IV i IX', '4 i 9'],
+          ['XL i XC', '40 i 90'],
+          ['CD i CM', '400 i 900'],
         ],
         questions: [
-          { id: 'znn2d2', q: 'Która liczba NIE jest dzielnikiem liczby 12?', options: ['5', '4', '6', '1'], answer: 0, explain: 'Dzielniki 12 to 1, 2, 3, 4, 6, 12. Przy dzieleniu 12 przez 5 zostaje reszta 2.' },
-          { id: 'sbiy9j', q: 'Ile dzielników ma liczba 18?', options: ['6', '4', '5', '3'], answer: 0, explain: 'Szukaj parami: 1 · 18, 2 · 9, 3 · 6. Dzielniki: 1, 2, 3, 6, 9, 18 – jest ich 6.' },
-          { id: '5wsrdh', q: 'Która liczba jest wielokrotnością liczby 7?', options: ['63', '27', '47', '71'], answer: 0, explain: '63 = 7 · 9. Pozostałe liczby przy dzieleniu przez 7 dają resztę.' },
-          { id: 'pncd31', q: 'Które liczby to kolejne wielokrotności liczby 6?', options: ['6, 12, 18, 24', '1, 2, 3, 6', '6, 16, 26, 36', '6, 11, 16, 21'], answer: 0, explain: '6 · 1 = 6, 6 · 2 = 12, 6 · 3 = 18, 6 · 4 = 24. Liczby 1, 2, 3, 6 to dzielniki 6, a nie wielokrotności.' },
-          { id: '8dowge', q: 'Która liczba jest podzielna przez 2?', options: ['3 578', '4 251', '7 003', '1 119'], answer: 0, explain: 'Liczba dzieli się przez 2, gdy jej ostatnia cyfra jest parzysta. 3 578 kończy się cyfrą 8.' },
-          { id: '5u2uyq', q: 'Która liczba dzieli się przez 5, ale NIE dzieli się przez 10?', options: ['345', '340', '342', '1 000'], answer: 0, explain: '345 kończy się cyfrą 5 – dzieli się przez 5, ale przez 10 nie (nie kończy się zerem). 342 nie dzieli się ani przez 5, ani przez 10.' },
-          { id: 'qbq35u', q: 'Która liczba jest podzielna przez 3?', options: ['5 271', '4 102', '2 501', '1 000'], answer: 0, explain: 'Suma cyfr 5 271: 5 + 2 + 7 + 1 = 15, a 15 dzieli się przez 3. Pozostałe sumy: 7, 8, 1.' },
-          { id: 'uksdsh', q: 'Która liczba jest podzielna przez 9?', options: ['4 518', '4 528', '3 333', '1 990'], answer: 0, explain: 'Suma cyfr 4 518 to 18 – dzieli się przez 9. 3 333 ma sumę 12: dzieli się przez 3, ale nie przez 9.' },
-          { id: 'ztteib', q: 'Która liczba jest podzielna przez 4?', options: ['1 316', '1 318', '2 410', '3 334'], answer: 0, explain: 'Patrzymy na dwie ostatnie cyfry: 16 dzieli się przez 4, a 18, 10 i 34 – nie.' },
-          { id: 'llplyn', q: 'Prawda czy fałsz?\nKażda liczba podzielna przez 9 jest podzielna przez 3.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '9 = 3 · 3. Jeśli liczba mieści w sobie całe dziewiątki, to mieści też całe trójki.' },
-          { id: 'hrxslx', q: 'Prawda czy fałsz?\nKażda liczba podzielna przez 3 jest podzielna przez 9.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Kontrprzykład: 12 dzieli się przez 3, ale nie dzieli się przez 9.' },
-          { id: 'bor7us', q: 'Która liczba jest liczbą pierwszą?', options: ['13', '15', '21', '27'], answer: 0, explain: '13 ma tylko dwa dzielniki: 1 i 13. 15 = 3 · 5, 21 = 3 · 7, 27 = 3 · 9 – to liczby złożone.' },
-          { id: '17697s', q: 'Która liczba jest liczbą złożoną?', options: ['51', '53', '47', '31'], answer: 0, explain: 'Suma cyfr 51 to 6, więc 51 dzieli się przez 3: 51 = 3 · 17. Liczby 53, 47 i 31 są pierwsze.' },
-          { id: 'wna5zh', q: 'Liczba 1 jest…', options: ['ani pierwsza, ani złożona', 'pierwsza', 'złożona'], answer: 0, explain: 'Liczba 1 ma tylko jeden dzielnik (samą siebie). Liczba pierwsza musi mieć dokładnie dwa dzielniki.' },
-          { id: 'd2nqkw', q: 'Ile wynosi największy wspólny dzielnik liczb 12 i 18?', options: ['6', '3', '2', '36'], answer: 0, explain: 'Wspólne dzielniki 12 i 18 to 1, 2, 3, 6. Największy z nich to 6.' },
-          { id: '3atsba', q: 'Ile wynosi najmniejsza wspólna wielokrotność liczb 4 i 6?', options: ['12', '24', '2', '10'], answer: 0, explain: 'Wielokrotności 4: 4, 8, 12… Wielokrotności 6: 6, 12… Pierwsza wspólna to 12. Liczba 24 też jest wspólną wielokrotnością, ale nie najmniejszą.' },
-          { id: 'lg29ul', q: 'Autobus linii A odjeżdża z przystanku co 15 minut, a linii B – co 20 minut. Oba odjechały razem o 8:00. O której znów odjadą razem?', options: ['o 9:00', 'o 8:35', 'o 8:20', 'o 8:15'], answer: 0, explain: 'Szukamy NWW(15, 20). Wielokrotności 15: 15, 30, 45, 60… Wielokrotności 20: 20, 40, 60… Pierwsza wspólna to 60 minut, czyli godzina: 9:00.' },
-          { id: 'affmiz', q: 'Masz 24 jabłka i 36 gruszek. Chcesz zrobić jak najwięcej jednakowych paczek (w każdej tyle samo jabłek i tyle samo gruszek), tak żeby nic nie zostało. Ile będzie paczek?', options: ['12', '6', '4', '72'], answer: 0, explain: 'Liczba paczek musi dzielić 24 i 36. Największy wspólny dzielnik to 12: w każdej paczce będą 2 jabłka i 3 gruszki.' },
-          { id: '6a5elj', q: 'Ile jest liczb dwucyfrowych podzielnych przez 10?', options: ['9', '10', '8', '90'], answer: 0, explain: 'To 10, 20, 30, 40, 50, 60, 70, 80, 90 – dziewięć liczb. 100 jest już trzycyfrowa.' },
-          { id: 'x933hs', q: 'Jaką cyfrę można wpisać w miejsce kratki, aby liczba 4■ była podzielna przez 3 i przez 5?', options: ['5', '0', '2', '8'], answer: 0, explain: 'Przez 5: ostatnia cyfra 0 lub 5. 40 ma sumę cyfr 4 – nie dzieli się przez 3. 45 ma sumę 9 – dzieli się przez 3. Pasuje 5.' },
+          { id: 'fxcce2', q: 'W liczbie 4 728 cyfra 7 oznacza…', options: ['7 setek', '7 dziesiątek', '7 tysięcy', '7 jedności'], answer: 0, explain: 'Licząc od prawej: 8 – jedności, 2 – dziesiątki, 7 – setki, 4 – tysiące.' },
+          { id: 'ez2y4o', q: 'Która liczba to „trzydzieści tysięcy czterysta pięć”?', options: ['30 405', '34 005', '30 450', '300 405'], answer: 0, explain: 'Trzydzieści tysięcy to 30 000, czterysta pięć to 405 – razem 30 405.' },
+          { id: '15a20y', q: 'Jak słownie zapisać liczbę 2 060?', options: ['dwa tysiące sześćdziesiąt', 'dwa tysiące sześćset', 'dwieście sześćdziesiąt', 'dwa tysiące szesnaście'], answer: 0, explain: '2 tysiące, 0 setek, 6 dziesiątek, 0 jedności.' },
+          { id: '0uizuj', q: 'Jaka to liczba: 3 tysiące, 0 setek, 5 dziesiątek i 2 jedności?', options: ['3 052', '3 520', '352', '30 052'], answer: 0, explain: 'Zero setek musisz zapisać: 3 tysiące, 0 setek, 5 dziesiątek, 2 jedności → 3 052.' },
+          { id: 'ulwqyw', q: 'Który znak trzeba wstawić?\n9 999 … 10 001', options: ['<', '>', '='], answer: 0, explain: '10 001 ma pięć cyfr, a 9 999 – cztery. Więcej cyfr, więc 10 001 jest większa: 9 999 < 10 001.' },
+          { id: 'j1rcn5', q: 'Która liczba jest największa?', options: ['78 990', '78 909', '78 099', '70 899'], answer: 0, explain: 'Wszystkie mają po 5 cyfr. Porównujemy od lewej: 78 990 ma najwięcej setek (9), a potem dziesiątek (9).' },
+          { id: 'tg16yv', q: 'Zaokrąglij 3 486 do setek.', options: ['3 500', '3 400', '3 490', '4 000'], answer: 0, explain: 'Patrzymy na cyfrę dziesiątek: 8, więc zaokrąglamy w górę – do 3 500.' },
+          { id: 'n24yqc', q: 'Zaokrąglij 2 451 do tysięcy.', options: ['2 000', '3 000', '2 500', '2 450'], answer: 0, explain: 'Patrzymy na cyfrę setek: 4, więc zaokrąglamy w dół – do 2 000.' },
+          { id: '9u37dp', q: 'Zaokrąglij 1 995 do dziesiątek.', options: ['2 000', '1 990', '1 900', '1 995'], answer: 0, explain: 'Cyfra jedności to 5, więc w górę: po 1 990 następna pełna dziesiątka to 2 000.' },
+          { id: '02gifm', q: 'Która liczba po zaokrągleniu do dziesiątek daje 80?', options: ['84', '86', '89', '74'], answer: 0, explain: '84 ≈ 80 (cyfra jedności 4 – w dół). 86 i 89 dają 90, a 74 daje 70.' },
+          {
+            id: 't1ymwe',
+            q: 'Jaką liczbę zaznaczono na osi literą A?',
+            svg: `<svg viewBox="0 0 400 100" role="img" aria-label="Oś liczbowa od 200 do 300 z kreskami co 10. Punkt A leży na szóstej kresce za liczbą 200.">
+      <line x1="16" y1="50" x2="392" y2="50" class="ln"/>
+      <path d="M384,45 L393,50 L384,55" class="ln"/>
+      <g class="ln"><line x1="30" y1="44" x2="30" y2="56"/><line x1="64" y1="44" x2="64" y2="56"/><line x1="98" y1="44" x2="98" y2="56"/><line x1="132" y1="44" x2="132" y2="56"/><line x1="166" y1="44" x2="166" y2="56"/><line x1="200" y1="44" x2="200" y2="56"/><line x1="234" y1="44" x2="234" y2="56"/><line x1="268" y1="44" x2="268" y2="56"/><line x1="302" y1="44" x2="302" y2="56"/><line x1="336" y1="44" x2="336" y2="56"/><line x1="370" y1="44" x2="370" y2="56"/></g>
+      <text x="30" y="80" class="tx" text-anchor="middle">200</text>
+      <text x="200" y="80" class="tx" text-anchor="middle">250</text>
+      <text x="370" y="80" class="tx" text-anchor="middle">300</text>
+      <circle cx="234" cy="50" r="7" class="t2"/>
+      <text x="234" y="30" class="tx-b t2" text-anchor="middle">A</text>
+    </svg>`,
+            options: ['260', '206', '26', '270'],
+            answer: 0,
+            explain: 'Od 200 do 300 jest 10 odstępów, więc każdy odstęp to 10. A leży 6 kresek za 200: 200 + 60 = 260.',
+          },
+          { id: 'tk2qgu', q: 'Ile to jest XIV?', options: ['14', '16', '9', '11'], answer: 0, explain: 'X = 10, IV = 4, razem 14.' },
+          { id: 'cfgh39', q: 'Jak zapisać 49 znakami rzymskimi?', options: ['XLIX', 'IL', 'XXXXIX', 'LIX'], answer: 0, explain: '40 = XL, 9 = IX, więc 49 = XLIX. Zapis IL jest niepoprawny, a X nie piszemy cztery razy z rzędu.' },
+          { id: 'e112ql', q: 'Liczba MMXXVI to…', options: ['2026', '2016', '1026', '2024'], answer: 0, explain: 'MM = 2000, XX = 20, VI = 6 → 2026.' },
+          { id: '2xodsm', q: 'Ile to jest CDXC?', options: ['490', '590', '410', '640'], answer: 0, explain: 'CD = 400 (500 − 100), XC = 90 (100 − 10), razem 490.' },
+          { id: 'py4rbj', q: 'Prawda czy fałsz?\nZapis VV oznacza 10.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Znaku V nie powtarzamy. Liczbę 10 zapisujemy jako X.' },
         ],
       },
 
@@ -350,6 +278,7 @@
       {
         id: 'miary',
         name: 'Długość, masa, czas i pieniądze',
+        chapter: 'dział 2 „Systemy zapisywania liczb”',
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 2 Miary, wym. 1 (mierzenie odcinków), 2 (mm, cm, dm, m, km), 7 (g, dag, kg, t), 8 (obliczenia kalendarzowe), 9 (obliczenia zegarowe), 13 (moduł ekonomiczno-finansowy – proste obliczenia pieniężne: zakupy, reszta, kieszonkowe, porównywanie cen).' + WYBOR,
         theory: `
           <h3>Długość</h3>
@@ -447,74 +376,9 @@
 
       // ------------------------------------------------------------------
       {
-        id: 'skala',
-        name: 'Skala i plan – obliczenia',
-        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 2 Miary, wym. 11 (rzeczywista długość odcinka, gdy dana jest jego długość w skali, i długość w skali, gdy dana jest rzeczywista długość), wym. 2 (przeliczanie mm, cm, m, km w sytuacjach praktycznych); dz. 6 Myślenie matematyczne, wym. 3d (rozumowanie proporcjonalne). Czym jest skala i jak czytać plan – także w przyrodzie (dział „Kierunki, kompas, plan i mapa”); tu ćwiczymy obliczenia w obie strony.' + WYBOR,
-        theory: `
-          <h3>Co to jest skala</h3>
-          <p>Plan pokoju, boiska czy miasta jest dużo mniejszy niż rzeczywistość. <b>Skala</b> mówi, ile razy go zmniejszono.</p>
-          <ul>
-            <li><b>1 : 100</b> – wszystko zmniejszono 100 razy. 1 cm na planie to 100 cm, czyli <b>1 m</b> w rzeczywistości.</li>
-            <li><b>1 : 1000</b> – 1 cm na planie to 1000 cm, czyli <b>10 m</b>.</li>
-            <li><b>1 : 100 000</b> – 1 cm na mapie to 100 000 cm, czyli <b>1 km</b>.</li>
-          </ul>
-          <h3>Z planu do rzeczywistości – mnożymy</h3>
-          <p>Długość na planie mnożysz przez liczbę ze skali, a potem zamieniasz jednostki.</p>
-          <p>Skala 1 : 1000, ścieżka na planie ma 7 cm: <span class="f">7 cm · 1000 = 7000 cm = 70 m</span>.</p>
-          <h3>Z rzeczywistości na plan – dzielimy</h3>
-          <p>Rzeczywistą długość zamieniasz na centymetry i dzielisz przez liczbę ze skali.</p>
-          <p>Boisko ma 40 m, plan w skali 1 : 1000: <span class="f">40 m = 4000 cm, 4000 cm : 1000 = 4 cm</span>.</p>
-          <h3>Trzy sposoby zapisu skali</h3>
-          <table>
-            <tr><th>Skala</th><th>Przykład</th></tr>
-            <tr><td>liczbowa</td><td>1 : 10 000</td></tr>
-            <tr><td>mianowana (z jednostkami)</td><td>1 cm – 100 m</td></tr>
-            <tr><td>liniowa (podziałka)</td><td>odcinek podzielony na działki z podpisami 0, 100, 200 m…</td></tr>
-          </table>
-          <p>Wszystkie trzy przykłady mówią to samo, bo 100 m = 10 000 cm.</p>
-          <h3>Powiększenie</h3>
-          <p>Rysunek mrówki czy biedronki bywa <b>większy</b> niż ona sama. Skala <b>2 : 1</b> znaczy: 2 cm na rysunku to 1 cm naprawdę – rysunek powiększono 2 razy.</p>
-          <div class="tip">💡 Przed liczeniem zamień wszystko na centymetry. Przyda się: 1 m = 100 cm, 1 km = 1000 m = 100 000 cm.</div>
-        `,
-        flashcards: [
-          ['Skala', 'Mówi, ile razy zmniejszono (albo powiększono) rzeczywistość na planie, mapie lub rysunku'],
-          ['Skala 1 : 100', '1 cm na planie = 100 cm = 1 m w rzeczywistości'],
-          ['Skala 1 : 1000', '1 cm na planie = 1000 cm = 10 m'],
-          ['Skala 1 : 100 000', '1 cm na mapie = 100 000 cm = 1 km'],
-          ['Z planu do rzeczywistości', 'Mnożymy długość na planie przez liczbę ze skali'],
-          ['Z rzeczywistości na plan', 'Zamieniamy na cm i dzielimy przez liczbę ze skali'],
-          ['Skala mianowana', 'Skala zapisana z jednostkami, np. 1 cm – 100 m'],
-          ['Skala liniowa (podziałka)', 'Odcinek z działkami podpisanymi odległościami w terenie'],
-          ['Skala 2 : 1', 'Powiększenie 2 razy: 2 cm na rysunku = 1 cm naprawdę'],
-          ['Ile centymetrów ma 1 km?', '100 000 cm'],
-        ],
-        questions: [
-          { id: 'kvdihq', q: 'Plan ma skalę 1 : 100. Stół ma na nim 2 cm długości. Ile ma naprawdę?', options: ['2 m', '20 m', '200 m', '20 cm'], answer: 0, explain: '2 cm · 100 = 200 cm = 2 m.' },
-          { id: 'ihwn08', q: 'Plan ma skalę 1 : 50. Szafa ma na nim 4 cm szerokości. Ile ma naprawdę?', options: ['2 m', '20 m', '54 cm', '20 cm'], answer: 0, explain: '4 cm · 50 = 200 cm = 2 m.' },
-          { id: 'cpv3r3', q: 'Plan ma skalę 1 : 1000. Ścieżka ma na nim 7 cm. Jaka jest jej długość w terenie?', options: ['70 m', '7 m', '700 m', '7 km'], answer: 0, explain: '7 cm · 1000 = 7000 cm = 70 m.' },
-          { id: 'kqgz6p', q: 'Mapa ma skalę 1 : 100 000. Dwie wsie dzieli na niej 3 cm. Jaka jest odległość w terenie?', options: ['3 km', '30 km', '300 m', '30 m'], answer: 0, explain: '3 cm · 100 000 = 300 000 cm = 3000 m = 3 km.' },
-          { id: 'ty0zaw', q: 'Mapa turystyczna ma skalę 1 : 50 000. Szlak ma na niej 10 cm. Ile kilometrów trzeba przejść?', options: ['5 km', '50 km', '500 m', '50 m'], answer: 0, explain: '10 cm · 50 000 = 500 000 cm = 5000 m = 5 km.' },
-          { id: '96odjp', q: 'Plan ma skalę 1 : 500. Odcinek ma na nim 8 cm. Ile to w rzeczywistości?', options: ['40 m', '4 m', '400 m', '508 cm'], answer: 0, explain: '8 cm · 500 = 4000 cm = 40 m.' },
-          { id: '8vrw8m', q: 'Pokój ma 5 m długości. Jaką długość będzie miał na planie w skali 1 : 100?', options: ['5 cm', '50 cm', '5 mm', '500 cm'], answer: 0, explain: '5 m = 500 cm, 500 cm : 100 = 5 cm.' },
-          { id: 'dbx0rt', q: 'Boisko ma 40 m długości. Jaką długość będzie miało na planie w skali 1 : 1000?', options: ['4 cm', '40 cm', '4 mm', '400 cm'], answer: 0, explain: '40 m = 4000 cm, 4000 cm : 1000 = 4 cm.' },
-          { id: 'davjvt', q: 'Droga między miastami ma 6 km. Ile centymetrów będzie miała na mapie w skali 1 : 200 000?', options: ['3 cm', '12 cm', '30 cm', '6 cm'], answer: 0, explain: '6 km = 600 000 cm, 600 000 cm : 200 000 = 3 cm.' },
-          { id: '1o19y1', q: 'Stół ma 2 m długości. Jaką długość będzie miał na planie w skali 1 : 200?', options: ['1 cm', '4 cm', '2 cm', '10 cm'], answer: 0, explain: '2 m = 200 cm, 200 cm : 200 = 1 cm.' },
-          { id: 'of6ncb', q: 'Skala mianowana „1 cm – 10 m” to w zapisie liczbowym…', options: ['1 : 1000', '1 : 10', '1 : 100', '1 : 10 000'], answer: 0, explain: '10 m = 1000 cm, więc 1 cm na planie to 1000 cm w rzeczywistości: 1 : 1000.' },
-          { id: '6wvstr', q: 'Skala 1 : 10 000 zapisana jako skala mianowana to…', options: ['1 cm – 100 m', '1 cm – 10 m', '1 cm – 1 km', '1 cm – 10 km'], answer: 0, explain: '10 000 cm = 100 m.' },
-          { id: 'icepf4', q: 'Ile metrów w terenie to 1 cm na planie z tą podziałką?', svg: SVG_PODZIALKA, options: ['100 m', '1 m', '400 m', '10 m'], answer: 0, explain: 'Każda działka ma 1 cm, a kolejne podpisy rosną o 100 m.' },
-          { id: '3cjbzj', q: 'Szkołę i park dzielą na tym planie 3 cm. Jaka jest odległość w terenie?', svg: SVG_PODZIALKA, options: ['300 m', '3 m', '30 m', '3 km'], answer: 0, explain: '1 cm to 100 m, więc 3 cm to 3 · 100 m = 300 m.' },
-          { id: 'f8cwu3', q: 'Jaką skalę liczbową ma plan z tą podziałką?', svg: SVG_PODZIALKA, options: ['1 : 10 000', '1 : 100', '1 : 1000', '1 : 100 000'], answer: 0, explain: '1 cm na planie to 100 m = 10 000 cm. Skala: 1 : 10 000.' },
-          { id: 'igf56r', q: 'Ten sam pokój narysowano na dwóch planach: w skali 1 : 100 i w skali 1 : 200. Na którym planie pokój jest większy?', options: ['w skali 1 : 100', 'w skali 1 : 200', 'na obu jest taki sam'], answer: 0, explain: 'W skali 1 : 100 pokój zmniejszono 100 razy, a w 1 : 200 – aż 200 razy. Mniej zmniejszony jest na planie 1 : 100.' },
-          { id: 'cxx0ht', q: 'Chrząszcz narysowano w skali 2 : 1. Na rysunku ma 6 cm długości. Ile ma naprawdę?', options: ['3 cm', '12 cm', '8 cm', '4 cm'], answer: 0, explain: 'Skala 2 : 1 to powiększenie 2 razy: 6 cm : 2 = 3 cm.' },
-          { id: '9kxsl2', q: 'Prawda czy fałsz?\nW skali 1 : 100 jeden centymetr na planie to 100 m w rzeczywistości.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: '1 cm · 100 = 100 cm, a 100 cm to 1 m, nie 100 m.' },
-          { id: 'tewbat', q: 'Prawda czy fałsz?\nSkala 1 : 1000 i skala „1 cm – 10 m” oznaczają to samo.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '10 m = 1000 cm, więc w obu przypadkach 1 cm na planie to 1000 cm w terenie.' },
-        ],
-      },
-
-      // ------------------------------------------------------------------
-      {
         id: 'proste-katy',
         name: 'Proste, odcinki i kąty',
+        chapter: 'dział 4 „Figury geometryczne”',
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 1 (punkt, prosta, półprosta, odcinek), 2 (rodzaje kątów, wierzchołek i ramiona), 3 (proste i odcinki prostopadłe i równoległe, także na kartce w kratkę); dz. 2 Miary, wym. 3 (mierzenie kątów).' + WYBOR,
         theory: `
           <h3>Figury podstawowe</h3>
@@ -595,6 +459,7 @@
       {
         id: 'wielokaty',
         name: 'Wielokąty, prostokąt i kwadrat, koło i okrąg',
+        chapter: 'dział 4 „Figury geometryczne” (pole prostokąta – dział 7)',
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 5 (wielokąty: wierzchołki, kąty, boki, przekątne), 6 (koło i okrąg: środek, promień, średnica, cięciwa), 11 (tylko prostokąt i kwadrat), 14 (tylko pole prostokąta i kwadratu), 15 (obwód wielokąta); dz. 2 Miary, wym. 4 (tylko cm² i m²).' + WYBOR,
         theory: `
           <h3>Wielokąty</h3>
@@ -698,196 +563,349 @@
 
       // ------------------------------------------------------------------
       {
-        id: 'trojkaty-czworokaty',
-        name: 'Trójkąty i czworokąty',
-        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 7 (trójkąty ostrokątne, prostokątne, rozwartokątne; różnoboczne, równoramienne, równoboczne), 9 (tylko ramiona i podstawa trójkąta równoramiennego, równość ramion), 11 (kwadrat, prostokąt, romb, równoległobok, trapez, w tym równoramienny i prostokątny – rozpoznawanie i własności boków), 15 (obwód wielokąta). Suma kątów i konstrukcja trójkąta (wym. 8, 10) – dział „Kąty w trójkącie i czworokącie, budowanie trójkąta”; wysokości i pola (wym. 13–14) – dział „Wysokości i pola trójkątów i czworokątów”.' + WYBOR,
+        id: 'skala',
+        name: 'Skala i plan – obliczenia',
+        chapter: 'dział 4 „Figury geometryczne”',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 2 Miary, wym. 11 (rzeczywista długość odcinka, gdy dana jest jego długość w skali, i długość w skali, gdy dana jest rzeczywista długość), wym. 2 (przeliczanie mm, cm, m, km w sytuacjach praktycznych); dz. 6 Myślenie matematyczne, wym. 3d (rozumowanie proporcjonalne). Czym jest skala i jak czytać plan – także w przyrodzie (dział „Kierunki, kompas, plan i mapa”); tu ćwiczymy obliczenia w obie strony.' + WYBOR,
         theory: `
-          <h3>Trójkąty – ze względu na kąty</h3>
+          <h3>Co to jest skala</h3>
+          <p>Plan pokoju, boiska czy miasta jest dużo mniejszy niż rzeczywistość. <b>Skala</b> mówi, ile razy go zmniejszono.</p>
+          <ul>
+            <li><b>1 : 100</b> – wszystko zmniejszono 100 razy. 1 cm na planie to 100 cm, czyli <b>1 m</b> w rzeczywistości.</li>
+            <li><b>1 : 1000</b> – 1 cm na planie to 1000 cm, czyli <b>10 m</b>.</li>
+            <li><b>1 : 100 000</b> – 1 cm na mapie to 100 000 cm, czyli <b>1 km</b>.</li>
+          </ul>
+          <h3>Z planu do rzeczywistości – mnożymy</h3>
+          <p>Długość na planie mnożysz przez liczbę ze skali, a potem zamieniasz jednostki.</p>
+          <p>Skala 1 : 1000, ścieżka na planie ma 7 cm: <span class="f">7 cm · 1000 = 7000 cm = 70 m</span>.</p>
+          <h3>Z rzeczywistości na plan – dzielimy</h3>
+          <p>Rzeczywistą długość zamieniasz na centymetry i dzielisz przez liczbę ze skali.</p>
+          <p>Boisko ma 40 m, plan w skali 1 : 1000: <span class="f">40 m = 4000 cm, 4000 cm : 1000 = 4 cm</span>.</p>
+          <h3>Trzy sposoby zapisu skali</h3>
           <table>
-            <tr><th>Trójkąt</th><th>Kąty</th></tr>
-            <tr><td>ostrokątny</td><td>wszystkie 3 kąty ostre</td></tr>
-            <tr><td>prostokątny</td><td>1 kąt prosty</td></tr>
-            <tr><td>rozwartokątny</td><td>1 kąt rozwarty</td></tr>
+            <tr><th>Skala</th><th>Przykład</th></tr>
+            <tr><td>liczbowa</td><td>1 : 10 000</td></tr>
+            <tr><td>mianowana (z jednostkami)</td><td>1 cm – 100 m</td></tr>
+            <tr><td>liniowa (podziałka)</td><td>odcinek podzielony na działki z podpisami 0, 100, 200 m…</td></tr>
           </table>
-          <p>Trójkąt nie może mieć dwóch kątów prostych ani dwóch rozwartych – jego boki nie spotkałyby się w trzecim wierzchołku.</p>
-          <h3>Trójkąty – ze względu na boki</h3>
-          <ul>
-            <li><b>Różnoboczny</b> – każdy bok ma inną długość.</li>
-            <li><b>Równoramienny</b> – ma dwa boki równej długości. To <b>ramiona</b>, a trzeci bok to <b>podstawa</b>.</li>
-            <li><b>Równoboczny</b> – wszystkie 3 boki są równe. To szczególny trójkąt równoramienny.</li>
-          </ul>
-          <p>Na rysunkach równe boki zaznacza się takimi samymi kreskami.</p>
-          <h3>Czworokąty</h3>
-          <table>
-            <tr><th>Czworokąt</th><th>Co go wyróżnia</th></tr>
-            <tr><td>kwadrat</td><td>4 równe boki i 4 kąty proste</td></tr>
-            <tr><td>prostokąt</td><td>4 kąty proste, przeciwległe boki równe</td></tr>
-            <tr><td>romb</td><td>4 równe boki (kąty nie muszą być proste)</td></tr>
-            <tr><td>równoległobok</td><td>dwie pary boków równoległych; przeciwległe boki są równe</td></tr>
-            <tr><td>trapez</td><td>co najmniej jedna para boków równoległych</td></tr>
-          </table>
-          <ul>
-            <li>W trapezie boki równoległe to <b>podstawy</b>, a dwa pozostałe – <b>ramiona</b>.</li>
-            <li><b>Trapez równoramienny</b> ma ramiona równej długości.</li>
-            <li><b>Trapez prostokątny</b> ma ramię prostopadłe do podstaw – są w nim kąty proste.</li>
-          </ul>
-          <div class="tip">💡 Kwadrat jest jednocześnie prostokątem i rombem. Prostokąt i romb są równoległobokami.</div>
-          <h3>Obwód</h3>
-          <ul>
-            <li>Trójkąt równoramienny o ramionach 7 cm i podstawie 4 cm: <span class="f">7 + 7 + 4 = 18 cm</span>.</li>
-            <li>Trójkąt równoboczny o boku 6 cm: <span class="f">3 · 6 = 18 cm</span>.</li>
-            <li>Romb o boku 5 cm: <span class="f">4 · 5 = 20 cm</span>.</li>
-            <li>Równoległobok o bokach 8 cm i 5 cm: <span class="f">2 · 8 + 2 · 5 = 26 cm</span>.</li>
-          </ul>
+          <p>Wszystkie trzy przykłady mówią to samo, bo 100 m = 10 000 cm.</p>
+          <h3>Powiększenie</h3>
+          <p>Rysunek mrówki czy biedronki bywa <b>większy</b> niż ona sama. Skala <b>2 : 1</b> znaczy: 2 cm na rysunku to 1 cm naprawdę – rysunek powiększono 2 razy.</p>
+          <div class="tip">💡 Przed liczeniem zamień wszystko na centymetry. Przyda się: 1 m = 100 cm, 1 km = 1000 m = 100 000 cm.</div>
         `,
         flashcards: [
-          ['Trójkąt ostrokątny', 'Wszystkie 3 kąty ostre'],
-          ['Trójkąt prostokątny', 'Jeden kąt prosty'],
-          ['Trójkąt rozwartokątny', 'Jeden kąt rozwarty'],
-          ['Trójkąt różnoboczny', 'Każdy bok innej długości'],
-          ['Trójkąt równoramienny', 'Dwa równe boki (ramiona), trzeci bok to podstawa'],
-          ['Trójkąt równoboczny', 'Wszystkie 3 boki równe'],
-          ['Romb', '4 boki równej długości'],
-          ['Równoległobok', 'Dwie pary boków równoległych; przeciwległe boki równe'],
-          ['Trapez', 'Co najmniej jedna para boków równoległych'],
-          ['Podstawy i ramiona trapezu', 'Podstawy – boki równoległe; ramiona – dwa pozostałe boki'],
-          ['Trapez równoramienny', 'Ramiona równej długości'],
-          ['Trapez prostokątny', 'Ramię prostopadłe do podstaw – ma kąty proste'],
-          ['Kwadrat a romb i prostokąt', 'Kwadrat jest jednocześnie rombem i prostokątem'],
+          ['Skala', 'Mówi, ile razy zmniejszono (albo powiększono) rzeczywistość na planie, mapie lub rysunku'],
+          ['Skala 1 : 100', '1 cm na planie = 100 cm = 1 m w rzeczywistości'],
+          ['Skala 1 : 1000', '1 cm na planie = 1000 cm = 10 m'],
+          ['Skala 1 : 100 000', '1 cm na mapie = 100 000 cm = 1 km'],
+          ['Z planu do rzeczywistości', 'Mnożymy długość na planie przez liczbę ze skali'],
+          ['Z rzeczywistości na plan', 'Zamieniamy na cm i dzielimy przez liczbę ze skali'],
+          ['Skala mianowana', 'Skala zapisana z jednostkami, np. 1 cm – 100 m'],
+          ['Skala liniowa (podziałka)', 'Odcinek z działkami podpisanymi odległościami w terenie'],
+          ['Skala 2 : 1', 'Powiększenie 2 razy: 2 cm na rysunku = 1 cm naprawdę'],
+          ['Ile centymetrów ma 1 km?', '100 000 cm'],
         ],
         questions: [
-          { id: '2j9757', q: 'Trójkąt ma jeden kąt prosty. Jaki to trójkąt?', options: ['prostokątny', 'ostrokątny', 'rozwartokątny', 'równoboczny'], answer: 0, explain: 'Trójkąt z kątem prostym to trójkąt prostokątny.' },
-          { id: 'ah280g', q: 'Wszystkie kąty trójkąta są ostre. Jaki to trójkąt?', options: ['ostrokątny', 'prostokątny', 'rozwartokątny'], answer: 0, explain: 'Trzy kąty ostre – trójkąt ostrokątny.' },
-          { id: '3fpiv8', q: 'Kąty trójkąta mają 100°, 50° i 30°. Jaki to trójkąt?', options: ['rozwartokątny', 'ostrokątny', 'prostokątny'], answer: 0, explain: 'Kąt 100° jest większy od kąta prostego (90°), czyli rozwarty. Trójkąt jest rozwartokątny.' },
-          { id: '37xjoe', q: 'Trójkąt ma boki 5 cm, 5 cm i 3 cm. Jaki to trójkąt?', options: ['równoramienny', 'równoboczny', 'różnoboczny'], answer: 0, explain: 'Dwa boki są równe (5 cm) – to ramiona. Trzeci bok jest inny, więc trójkąt nie jest równoboczny.' },
-          { id: 'msadcc', q: 'Trójkąt ma boki 4 cm, 5 cm i 6 cm. Jaki to trójkąt?', options: ['różnoboczny', 'równoramienny', 'równoboczny'], answer: 0, explain: 'Każdy bok ma inną długość – trójkąt różnoboczny.' },
-          { id: 'oapx9n', q: 'Trójkąt równoramienny ma ramiona po 7 cm i podstawę 4 cm. Jaki ma obwód?', options: ['18 cm', '11 cm', '15 cm', '21 cm'], answer: 0, explain: 'Dwa ramiona i podstawa: 7 + 7 + 4 = 18 cm.' },
-          { id: 'rlwv0w', q: 'Jaki obwód ma trójkąt równoboczny o boku 6 cm?', options: ['18 cm', '12 cm', '36 cm', '6 cm'], answer: 0, explain: 'Trzy równe boki: 3 · 6 = 18 cm.' },
-          { id: 'sn2w08', q: 'Trójkąt równoboczny ma obwód 27 cm. Jaką długość ma jego bok?', options: ['9 cm', '7 cm', '13 cm', '24 cm'], answer: 0, explain: 'Trzy równe boki: 27 : 3 = 9 cm.' },
-          { id: 'sisc8b', q: 'Trójkąt równoramienny ma obwód 20 cm, a jego podstawa ma 6 cm. Jaką długość ma ramię?', options: ['7 cm', '14 cm', '6 cm', '8 cm'], answer: 0, explain: 'Na dwa ramiona zostaje 20 − 6 = 14 cm, czyli na jedno 14 : 2 = 7 cm.' },
-          {
-            id: 'sedc8d',
-            q: 'Który trójkąt jest rozwartokątny?',
-            svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Trzy trójkąty. A – wszystkie kąty ostre. B – kąt prosty w lewym dolnym wierzchołku. C – kąt rozwarty w lewym dolnym wierzchołku.">
-      <path d="M20,150 L110,150 L70,40 Z" class="f1 s1 sw"/>
-      <path d="M150,150 L240,150 L150,50 Z" class="f3 s3 sw"/>
-      <path d="M150,136 L164,136 L164,150" class="ln"/>
-      <path d="M270,150 L390,150 L250,95 Z" class="f2 s2 sw"/>
-      <text x="65" y="180" class="tx-b" text-anchor="middle">A</text>
-      <text x="195" y="180" class="tx-b" text-anchor="middle">B</text>
-      <text x="320" y="180" class="tx-b" text-anchor="middle">C</text>
-    </svg>`,
-            options: ['C', 'A', 'B'],
-            answer: 0,
-            explain: 'W trójkącie C kąt przy lewym dolnym wierzchołku jest większy od prostego – rozwarty. A jest ostrokątny, B – prostokątny (zaznaczony kąt prosty).',
-          },
-          { id: '32z540', q: 'Ile par boków równoległych ma równoległobok?', options: ['2', '1', '0', '4'], answer: 0, explain: 'Równoległobok ma dwie pary boków równoległych – stąd jego nazwa.' },
-          { id: '346ezw', q: 'Czworokąt ma 4 boki równej długości, ale nie ma kątów prostych. Jak się nazywa?', options: ['romb', 'kwadrat', 'prostokąt'], answer: 0, explain: 'Cztery równe boki ma romb i kwadrat, ale kwadrat ma kąty proste. Bez kątów prostych – romb.' },
-          { id: '4l0xup', q: 'Jak nazywamy równoległe boki trapezu?', options: ['podstawami', 'ramionami', 'przekątnymi'], answer: 0, explain: 'Boki równoległe to podstawy trapezu, a dwa pozostałe boki – ramiona.' },
-          { id: '303y86', q: 'Równoległobok ma boki 8 cm i 5 cm. Jaki ma obwód?', options: ['26 cm', '13 cm', '40 cm', '21 cm'], answer: 0, explain: 'Przeciwległe boki są równe: 8 + 5 + 8 + 5 = 26 cm.' },
-          { id: 'jj1xco', q: 'Jaki obwód ma romb o boku 7 cm?', options: ['28 cm', '14 cm', '49 cm', '21 cm'], answer: 0, explain: 'Romb ma 4 równe boki: 4 · 7 = 28 cm.' },
-          { id: 'lsbgfa', q: 'Trapez równoramienny ma podstawy 10 cm i 6 cm, a ramię 4 cm. Jaki ma obwód?', options: ['24 cm', '20 cm', '28 cm', '16 cm'], answer: 0, explain: 'Ramiona są równe: 10 + 6 + 4 + 4 = 24 cm.' },
-          {
-            id: 'dsikrb',
-            q: 'Jak nazywa się czworokąt na rysunku?',
-            svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Czworokąt na kratce: górny i dolny bok poziome i równoległe, górny krótszy. Lewy bok pionowy, z kątami prostymi przy obu podstawach. Prawy bok ukośny.">
-      <g class="ln-thin"><line x1="20" y1="10" x2="20" y2="190"/><line x1="50" y1="10" x2="50" y2="190"/><line x1="80" y1="10" x2="80" y2="190"/><line x1="110" y1="10" x2="110" y2="190"/><line x1="140" y1="10" x2="140" y2="190"/><line x1="170" y1="10" x2="170" y2="190"/><line x1="200" y1="10" x2="200" y2="190"/><line x1="230" y1="10" x2="230" y2="190"/><line x1="260" y1="10" x2="260" y2="190"/><line x1="290" y1="10" x2="290" y2="190"/><line x1="320" y1="10" x2="320" y2="190"/><line x1="350" y1="10" x2="350" y2="190"/><line x1="380" y1="10" x2="380" y2="190"/><line x1="20" y1="10" x2="380" y2="10"/><line x1="20" y1="40" x2="380" y2="40"/><line x1="20" y1="70" x2="380" y2="70"/><line x1="20" y1="100" x2="380" y2="100"/><line x1="20" y1="130" x2="380" y2="130"/><line x1="20" y1="160" x2="380" y2="160"/><line x1="20" y1="190" x2="380" y2="190"/></g>
-      <path d="M80,40 L200,40 L320,160 L80,160 Z" class="f5 s5 sw"/>
-      <path d="M80,54 L94,54 L94,40 M80,146 L94,146 L94,160" class="ln"/>
-    </svg>`,
-            options: ['trapez prostokątny', 'równoległobok', 'romb', 'prostokąt'],
-            answer: 0,
-            explain: 'Tylko górny i dolny bok są równoległe – to trapez. Lewe ramię jest prostopadłe do podstaw (kąty proste), więc to trapez prostokątny.',
-          },
-          { id: 'vcbmtk', q: 'Prawda czy fałsz?\nKażdy kwadrat jest rombem.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Kwadrat ma 4 równe boki – spełnia warunek rombu.' },
-          { id: 'bf13aw', q: 'Prawda czy fałsz?\nKażdy romb jest kwadratem.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Romb nie musi mieć kątów prostych – wtedy nie jest kwadratem.' },
-          { id: 'f42pva', q: 'Prawda czy fałsz?\nTrójkąt może mieć dwa kąty proste.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Gdyby przy podstawie były dwa kąty proste, oba boki biegłyby prostopadle w górę, równolegle do siebie – nigdy by się nie spotkały.' },
+          { id: 'kvdihq', q: 'Plan ma skalę 1 : 100. Stół ma na nim 2 cm długości. Ile ma naprawdę?', options: ['2 m', '20 m', '200 m', '20 cm'], answer: 0, explain: '2 cm · 100 = 200 cm = 2 m.' },
+          { id: 'ihwn08', q: 'Plan ma skalę 1 : 50. Szafa ma na nim 4 cm szerokości. Ile ma naprawdę?', options: ['2 m', '20 m', '54 cm', '20 cm'], answer: 0, explain: '4 cm · 50 = 200 cm = 2 m.' },
+          { id: 'cpv3r3', q: 'Plan ma skalę 1 : 1000. Ścieżka ma na nim 7 cm. Jaka jest jej długość w terenie?', options: ['70 m', '7 m', '700 m', '7 km'], answer: 0, explain: '7 cm · 1000 = 7000 cm = 70 m.' },
+          { id: 'kqgz6p', q: 'Mapa ma skalę 1 : 100 000. Dwie wsie dzieli na niej 3 cm. Jaka jest odległość w terenie?', options: ['3 km', '30 km', '300 m', '30 m'], answer: 0, explain: '3 cm · 100 000 = 300 000 cm = 3000 m = 3 km.' },
+          { id: 'ty0zaw', q: 'Mapa turystyczna ma skalę 1 : 50 000. Szlak ma na niej 10 cm. Ile kilometrów trzeba przejść?', options: ['5 km', '50 km', '500 m', '50 m'], answer: 0, explain: '10 cm · 50 000 = 500 000 cm = 5000 m = 5 km.' },
+          { id: '96odjp', q: 'Plan ma skalę 1 : 500. Odcinek ma na nim 8 cm. Ile to w rzeczywistości?', options: ['40 m', '4 m', '400 m', '508 cm'], answer: 0, explain: '8 cm · 500 = 4000 cm = 40 m.' },
+          { id: '8vrw8m', q: 'Pokój ma 5 m długości. Jaką długość będzie miał na planie w skali 1 : 100?', options: ['5 cm', '50 cm', '5 mm', '500 cm'], answer: 0, explain: '5 m = 500 cm, 500 cm : 100 = 5 cm.' },
+          { id: 'dbx0rt', q: 'Boisko ma 40 m długości. Jaką długość będzie miało na planie w skali 1 : 1000?', options: ['4 cm', '40 cm', '4 mm', '400 cm'], answer: 0, explain: '40 m = 4000 cm, 4000 cm : 1000 = 4 cm.' },
+          { id: 'davjvt', q: 'Droga między miastami ma 6 km. Ile centymetrów będzie miała na mapie w skali 1 : 200 000?', options: ['3 cm', '12 cm', '30 cm', '6 cm'], answer: 0, explain: '6 km = 600 000 cm, 600 000 cm : 200 000 = 3 cm.' },
+          { id: '1o19y1', q: 'Stół ma 2 m długości. Jaką długość będzie miał na planie w skali 1 : 200?', options: ['1 cm', '4 cm', '2 cm', '10 cm'], answer: 0, explain: '2 m = 200 cm, 200 cm : 200 = 1 cm.' },
+          { id: 'of6ncb', q: 'Skala mianowana „1 cm – 10 m” to w zapisie liczbowym…', options: ['1 : 1000', '1 : 10', '1 : 100', '1 : 10 000'], answer: 0, explain: '10 m = 1000 cm, więc 1 cm na planie to 1000 cm w rzeczywistości: 1 : 1000.' },
+          { id: '6wvstr', q: 'Skala 1 : 10 000 zapisana jako skala mianowana to…', options: ['1 cm – 100 m', '1 cm – 10 m', '1 cm – 1 km', '1 cm – 10 km'], answer: 0, explain: '10 000 cm = 100 m.' },
+          { id: 'icepf4', q: 'Ile metrów w terenie to 1 cm na planie z tą podziałką?', svg: SVG_PODZIALKA, options: ['100 m', '1 m', '400 m', '10 m'], answer: 0, explain: 'Każda działka ma 1 cm, a kolejne podpisy rosną o 100 m.' },
+          { id: '3cjbzj', q: 'Szkołę i park dzielą na tym planie 3 cm. Jaka jest odległość w terenie?', svg: SVG_PODZIALKA, options: ['300 m', '3 m', '30 m', '3 km'], answer: 0, explain: '1 cm to 100 m, więc 3 cm to 3 · 100 m = 300 m.' },
+          { id: 'f8cwu3', q: 'Jaką skalę liczbową ma plan z tą podziałką?', svg: SVG_PODZIALKA, options: ['1 : 10 000', '1 : 100', '1 : 1000', '1 : 100 000'], answer: 0, explain: '1 cm na planie to 100 m = 10 000 cm. Skala: 1 : 10 000.' },
+          { id: 'igf56r', q: 'Ten sam pokój narysowano na dwóch planach: w skali 1 : 100 i w skali 1 : 200. Na którym planie pokój jest większy?', options: ['w skali 1 : 100', 'w skali 1 : 200', 'na obu jest taki sam'], answer: 0, explain: 'W skali 1 : 100 pokój zmniejszono 100 razy, a w 1 : 200 – aż 200 razy. Mniej zmniejszony jest na planie 1 : 100.' },
+          { id: 'cxx0ht', q: 'Chrząszcz narysowano w skali 2 : 1. Na rysunku ma 6 cm długości. Ile ma naprawdę?', options: ['3 cm', '12 cm', '8 cm', '4 cm'], answer: 0, explain: 'Skala 2 : 1 to powiększenie 2 razy: 6 cm : 2 = 3 cm.' },
+          { id: '9kxsl2', q: 'Prawda czy fałsz?\nW skali 1 : 100 jeden centymetr na planie to 100 m w rzeczywistości.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: '1 cm · 100 = 100 cm, a 100 cm to 1 m, nie 100 m.' },
+          { id: 'tewbat', q: 'Prawda czy fałsz?\nSkala 1 : 1000 i skala „1 cm – 10 m” oznaczają to samo.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '10 m = 1000 cm, więc w obu przypadkach 1 cm na planie to 1000 cm w terenie.' },
         ],
       },
 
       // ------------------------------------------------------------------
       {
-        id: 'symetria',
-        name: 'Symetria osiowa',
-        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 12 (figury osiowosymetryczne, wskazywanie i rysowanie osi symetrii; dorysowywanie figury symetrycznej na kratce).' + WYBOR,
+        id: 'ulamki',
+        name: 'Ułamki zwykłe – pierwsze kroki',
+        chapter: 'dział 5 „Ułamki zwykłe”',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 17 (ułamek jako część całości), 18 (ułamek jako iloraz), 20 (liczby mieszane i ułamki niewłaściwe), 26 (porównywanie – tylko ułamki o tych samych mianownikach lub tych samych licznikach), 31 (ułamek danej wielkości – proste przykłady).' + WYBOR,
         theory: `
-          <h3>Figura osiowosymetryczna</h3>
-          <p>Figurę można złożyć wzdłuż prostej tak, że obie połowy dokładnie się pokryją? Taka figura jest <b>osiowosymetryczna</b>, a ta prosta to jej <b>oś symetrii</b>.</p>
-          <p>Przykłady z życia: motyl, liść, serce, twarz (prawie), litera A.</p>
-          <h3>Ile osi symetrii?</h3>
-          <table>
-            <tr><th>Figura</th><th>Osie symetrii</th></tr>
-            <tr><td>kwadrat</td><td>4</td></tr>
-            <tr><td>prostokąt (niebędący kwadratem)</td><td>2</td></tr>
-            <tr><td>romb (niebędący kwadratem)</td><td>2 – wzdłuż przekątnych</td></tr>
-            <tr><td>trójkąt równoboczny</td><td>3</td></tr>
-            <tr><td>trójkąt równoramienny (niebędący równobocznym)</td><td>1</td></tr>
-            <tr><td>trapez równoramienny</td><td>1</td></tr>
-            <tr><td>koło i okrąg</td><td>nieskończenie wiele – każda prosta przez środek</td></tr>
-            <tr><td>trójkąt różnoboczny</td><td>0</td></tr>
-          </table>
-          <div class="tip">💡 Pułapka: przekątna prostokąta, który nie jest kwadratem, <b>nie jest</b> jego osią symetrii. Złóż kartkę po przekątnej – rogi nie spotkają się.</div>
-          <h3>Litery</h3>
-          <p>W zwykłym druku litera A ma pionową oś symetrii, litera H – dwie osie (pionową i poziomą), a litery N, S i Z nie mają żadnej.</p>
-          <h3>Dorysowywanie na kratce</h3>
+          <h3>Ułamek to część całości</h3>
+          <p>Pizzę podzielono na 8 <b>równych</b> kawałków. Zjadłeś 3 – to <span class="f">3/8</span> pizzy (trzy ósme).</p>
           <ul>
-            <li>Każdy punkt figury przenosisz na drugą stronę osi – <b>prostopadle do osi</b>, na <b>tę samą odległość</b> (tyle samo kratek).</li>
-            <li>Punkt 3 kratki na lewo od pionowej osi → jego obraz 3 kratki na prawo, na tej samej wysokości.</li>
-            <li>Punkt leżący na osi zostaje na miejscu.</li>
+            <li><b>Mianownik</b> (pod kreską) – na ile równych części podzielono całość.</li>
+            <li><b>Licznik</b> (nad kreską) – ile takich części bierzemy.</li>
+            <li><b>Kreska ułamkowa</b> – oddziela licznik od mianownika.</li>
+          </ul>
+          <p>Nazwy: 1/2 – jedna druga (połowa), 1/4 – jedna czwarta (ćwierć), 3/4 – trzy czwarte, 2/5 – dwie piąte.</p>
+          <div class="tip">💡 Części muszą być równe. Jeśli kawałki są różne, nie można powiedzieć, że jeden z nich to 1/4.</div>
+          <h3>Ułamek to dzielenie</h3>
+          <p>Kreska ułamkowa zastępuje znak dzielenia: <span class="f">3/4 = 3 : 4</span>. Trzy pizze dzielone po równo na 4 osoby – każda dostaje 3/4 pizzy.</p>
+          <p>Czasem wychodzi liczba naturalna: <span class="f">8/4 = 8 : 4 = 2</span>, <span class="f">4/4 = 1</span>.</p>
+          <h3>Ułamki właściwe i niewłaściwe, liczby mieszane</h3>
+          <ul>
+            <li><b>Ułamek właściwy</b> – licznik mniejszy od mianownika (np. 3/5). To mniej niż całość.</li>
+            <li><b>Ułamek niewłaściwy</b> – licznik równy mianownikowi lub większy (np. 7/4, 5/5). To całość albo więcej.</li>
+            <li><b>Liczba mieszana</b> – liczba naturalna i ułamek właściwy, np. <span class="f">1 3/4</span> („jeden i trzy czwarte”).</li>
+          </ul>
+          <table>
+            <tr><th>Zamiana</th><th>Jak?</th><th>Przykład</th></tr>
+            <tr><td>ułamek niewłaściwy → liczba mieszana</td><td>podziel licznik przez mianownik; reszta idzie do licznika</td><td>7/4: 7 : 4 = 1 reszty 3, więc 7/4 = 1 3/4</td></tr>
+            <tr><td>liczba mieszana → ułamek niewłaściwy</td><td>całości · mianownik + licznik</td><td>2 1/3: 2 · 3 + 1 = 7, więc 2 1/3 = 7/3</td></tr>
+          </table>
+          <h3>Porównywanie ułamków</h3>
+          <ul>
+            <li><b>Te same mianowniki</b> – większy jest ułamek z większym licznikiem: <span class="f">5/8 &gt; 3/8</span>.</li>
+            <li><b>Te same liczniki</b> – większy jest ułamek z <b>mniejszym</b> mianownikiem: <span class="f">1/3 &gt; 1/5</span> (pizza dla 3 osób daje większe kawałki niż dla 5).</li>
+          </ul>
+          <h3>Ułamek liczby</h3>
+          <ul>
+            <li><span class="f">1/2 z 14 = 14 : 2 = 7</span></li>
+            <li><span class="f">1/4 z 20 = 20 : 4 = 5</span></li>
+            <li><span class="f">3/4 z 12</span>: najpierw 1/4 z 12 = 3, potem 3 · 3 = 9.</li>
           </ul>
         `,
         flashcards: [
-          ['Oś symetrii', 'Prosta, wzdłuż której można złożyć figurę tak, że obie połowy się pokrywają'],
-          ['Ile osi symetrii ma kwadrat?', '4'],
-          ['Ile osi symetrii ma prostokąt (niebędący kwadratem)?', '2'],
-          ['Ile osi symetrii ma trójkąt równoboczny?', '3'],
-          ['Ile osi symetrii ma trójkąt równoramienny (niebędący równobocznym)?', '1'],
-          ['Ile osi symetrii ma koło?', 'Nieskończenie wiele – każda prosta przez środek'],
-          ['Osie symetrii rombu (niebędącego kwadratem)', '2 – wzdłuż przekątnych'],
-          ['Czy przekątna prostokąta jest jego osią symetrii?', 'Nie (chyba że prostokąt jest kwadratem)'],
-          ['Figura bez osi symetrii', 'Np. trójkąt różnoboczny, litera N'],
-          ['Dorysowywanie na kratce', 'Prostopadle do osi, tyle samo kratek po drugiej stronie'],
+          ['Mianownik', 'Liczba pod kreską: na ile równych części podzielono całość'],
+          ['Licznik', 'Liczba nad kreską: ile części bierzemy'],
+          ['Kreska ułamkowa', 'Zastępuje znak dzielenia: 3/4 = 3 : 4'],
+          ['Ułamek właściwy', 'Licznik mniejszy od mianownika, np. 2/5'],
+          ['Ułamek niewłaściwy', 'Licznik równy mianownikowi lub większy, np. 7/4'],
+          ['7/4 jako liczba mieszana', '1 3/4 (7 : 4 = 1 reszty 3)'],
+          ['2 1/3 jako ułamek niewłaściwy', '7/3 (2 · 3 + 1 = 7)'],
+          ['Co większe: 1/3 czy 1/5?', '1/3 – przy tym samym liczniku większy jest ułamek o mniejszym mianowniku'],
+          ['1/4 z 20', '20 : 4 = 5'],
         ],
         questions: [
-          { id: '8kf72a', q: 'Ile osi symetrii ma kwadrat?', options: ['4', '2', '1', '8'], answer: 0, explain: 'Pionowa, pozioma i dwie wzdłuż przekątnych – razem 4.' },
-          { id: 'kctcv5', q: 'Ile osi symetrii ma prostokąt, który nie jest kwadratem?', options: ['2', '4', '1', '0'], answer: 0, explain: 'Pionowa i pozioma przez środek. Przekątne nie są osiami symetrii.' },
-          { id: 'gebxc9', q: 'Ile osi symetrii ma trójkąt równoboczny?', options: ['3', '1', '0', '6'], answer: 0, explain: 'Każda oś biegnie od wierzchołka do środka przeciwległego boku – są 3.' },
-          { id: 'a7sojm', q: 'Ile osi symetrii ma trójkąt równoramienny, który nie jest równoboczny?', options: ['1', '2', '3', '0'], answer: 0, explain: 'Jedna oś – od wierzchołka między ramionami do środka podstawy.' },
-          { id: 'g5i8va', q: 'Ile osi symetrii ma koło?', options: ['nieskończenie wiele', '1', '2', '4'], answer: 0, explain: 'Każda prosta przechodząca przez środek koła dzieli je na dwie jednakowe połowy.' },
-          { id: '0d2ztl', q: 'Ile osi symetrii ma romb, który nie jest kwadratem?', options: ['2', '4', '1', '0'], answer: 0, explain: 'Osiami symetrii rombu są proste, na których leżą jego przekątne.' },
-          { id: 'a1nf9r', q: 'Ile osi symetrii ma trapez równoramienny?', options: ['1', '2', '0', '4'], answer: 0, explain: 'Jedna pionowa oś przez środki obu podstaw.' },
-          { id: 'g6ykw1', q: 'Która figura nie ma osi symetrii?', options: ['trójkąt różnoboczny', 'kwadrat', 'koło', 'trójkąt równoramienny'], answer: 0, explain: 'Trójkąt różnoboczny ma każdy bok inny – nie da się go złożyć na dwie jednakowe połowy.' },
-          { id: 'hk2rdg', q: 'Która wielka litera (w zwykłym druku) ma pionową oś symetrii?', options: ['A', 'N', 'S', 'Z'], answer: 0, explain: 'Litera A jest taka sama po lewej i po prawej stronie pionowej osi. N, S i Z nie mają osi symetrii.' },
-          { id: 'dxroqo', q: 'Ile osi symetrii ma wielka litera H (w zwykłym druku)?', options: ['2', '1', '0', '4'], answer: 0, explain: 'Pionowa i pozioma – H wygląda tak samo po złożeniu wzdłuż każdej z nich.' },
-          { id: '497wqn', q: 'Pionowa oś symetrii przechodzi przez kratkę. Punkt A leży 3 kratki na lewo od niej. Gdzie leży punkt do niego symetryczny?', options: ['3 kratki na prawo od osi, na tej samej wysokości', '6 kratek na prawo od osi', 'na osi', '3 kratki nad punktem A'], answer: 0, explain: 'Obraz punktu leży po drugiej stronie osi, w tej samej odległości: 3 kratki na prawo.' },
+          { id: 'fz8c7x', q: 'W ułamku 3/8 mianownik to…', options: ['8', '3', '11', '5'], answer: 0, explain: 'Mianownik jest pod kreską ułamkową: 8.' },
+          { id: '7iydvi', q: 'Pizzę podzielono na 8 równych kawałków. Zjadłeś 3. Jaką część pizzy zjadłeś?', options: ['3/8', '8/3', '3/5', '5/8'], answer: 0, explain: 'Całość ma 8 części (mianownik), zjadłeś 3 (licznik): 3/8.' },
           {
-            id: '1a0m3f',
-            q: 'Ile kratek będzie zamalowanych, gdy dorysujesz figurę symetryczną do zamalowanej względem osi?',
-            svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Kratka z pionową osią przerywaną pośrodku. Po lewej stronie osi zamalowano 5 kratek: 3 kratki w rzędzie przy osi i 2 kratki nad nimi, też przy osi.">
-      <g class="ln-thin"><line x1="20" y1="10" x2="20" y2="190"/><line x1="50" y1="10" x2="50" y2="190"/><line x1="80" y1="10" x2="80" y2="190"/><line x1="110" y1="10" x2="110" y2="190"/><line x1="140" y1="10" x2="140" y2="190"/><line x1="170" y1="10" x2="170" y2="190"/><line x1="200" y1="10" x2="200" y2="190"/><line x1="230" y1="10" x2="230" y2="190"/><line x1="260" y1="10" x2="260" y2="190"/><line x1="290" y1="10" x2="290" y2="190"/><line x1="320" y1="10" x2="320" y2="190"/><line x1="350" y1="10" x2="350" y2="190"/><line x1="380" y1="10" x2="380" y2="190"/><line x1="20" y1="10" x2="380" y2="10"/><line x1="20" y1="40" x2="380" y2="40"/><line x1="20" y1="70" x2="380" y2="70"/><line x1="20" y1="100" x2="380" y2="100"/><line x1="20" y1="130" x2="380" y2="130"/><line x1="20" y1="160" x2="380" y2="160"/><line x1="20" y1="190" x2="380" y2="190"/></g>
-      <rect x="110" y="100" width="90" height="30" class="f1 s1"/>
-      <rect x="140" y="70" width="60" height="30" class="f1 s1"/>
-      <line x1="200" y1="0" x2="200" y2="200" class="ln s2 sw dash"/>
+            id: '3c14c2',
+            q: 'Jaka część prostokąta jest zamalowana?',
+            svg: `<svg viewBox="0 0 380 110" role="img" aria-label="Prostokąt podzielony na 6 równych części. Zamalowane są 4 części.">
+      <rect x="40" y="15" width="50" height="80" class="f2 s2"/>
+      <rect x="90" y="15" width="50" height="80" class="f2 s2"/>
+      <rect x="140" y="15" width="50" height="80" class="bg"/>
+      <rect x="190" y="15" width="50" height="80" class="f2 s2"/>
+      <rect x="240" y="15" width="50" height="80" class="bg"/>
+      <rect x="290" y="15" width="50" height="80" class="f2 s2"/>
+      <g class="ln"><line x1="90" y1="15" x2="90" y2="95"/><line x1="140" y1="15" x2="140" y2="95"/><line x1="190" y1="15" x2="190" y2="95"/><line x1="240" y1="15" x2="240" y2="95"/><line x1="290" y1="15" x2="290" y2="95"/></g>
+      <rect x="40" y="15" width="300" height="80" class="ln sw"/>
     </svg>`,
-            options: ['10', '5', '8', '12'],
+            options: ['4/6', '2/6', '6/4', '4/10'],
             answer: 0,
-            explain: 'Zamalowanych jest 5 kratek. Po drugiej stronie osi pojawi się tyle samo: 5 + 5 = 10.',
+            explain: 'Prostokąt ma 6 równych części (mianownik), zamalowano 4 (licznik): 4/6.',
           },
+          { id: 'ddgok7', q: 'Jak zapisać dzielenie 5 : 7 w postaci ułamka?', options: ['5/7', '7/5', '5/12', '1/7'], answer: 0, explain: 'Dzielna idzie nad kreskę, dzielnik – pod kreskę: 5 : 7 = 5/7.' },
+          { id: 'ugpqti', q: 'Trzy jednakowe czekolady podzielono po równo między 4 dzieci. Ile czekolady dostało każde dziecko?', options: ['3/4 czekolady', '4/3 czekolady', '1/4 czekolady', '1/3 czekolady'], answer: 0, explain: '3 : 4 = 3/4. Każde dziecko dostaje po 1/4 z każdej z 3 czekolad, czyli 3/4.' },
+          { id: 'hdip7e', q: 'Ile to jest 12/4?', options: ['3', '4', '8', '16'], answer: 0, explain: '12/4 = 12 : 4 = 3.' },
+          { id: 's2wj8f', q: 'Który ułamek jest niewłaściwy?', options: ['7/5', '5/7', '1/2', '3/4'], answer: 0, explain: 'W ułamku 7/5 licznik jest większy od mianownika – to więcej niż całość.' },
+          { id: 'hnkwds', q: 'Ułamek 9/4 zapisany jako liczba mieszana to…', options: ['2 1/4', '2 1/9', '4 1/2', '1 4/9'], answer: 0, explain: '9 : 4 = 2 reszty 1, więc 9/4 = 2 1/4 (dwa i jedna czwarta).' },
+          { id: 'tnlpk3', q: 'Liczba mieszana 3 1/2 („trzy i jedna druga”) jako ułamek niewłaściwy to…', options: ['7/2', '4/2', '31/2', '5/2'], answer: 0, explain: '3 · 2 + 1 = 7, więc 3 1/2 = 7/2.' },
+          { id: '1fe4zs', q: 'Który ułamek jest większy: 3/7 czy 5/7?', options: ['5/7', '3/7', 'są równe'], answer: 0, explain: 'Mianowniki są takie same, więc większy jest ułamek z większym licznikiem.' },
+          { id: '2e0h64', q: 'Który ułamek jest największy?', options: ['1/3', '1/5', '1/8', '1/10'], answer: 0, explain: 'Liczniki są takie same. Im mniej części, tym są większe – największy jest 1/3.' },
+          { id: 'rhoyqx', q: 'Ile to jest 1/2 z 14 zł?', options: ['7 zł', '28 zł', '12 zł', '2 zł'], answer: 0, explain: 'Połowa z 14 zł: 14 : 2 = 7 zł.' },
+          { id: 'blne5w', q: 'Ile minut to 1/4 z 20 minut?', options: ['5 minut', '4 minuty', '80 minut', '16 minut'], answer: 0, explain: '20 : 4 = 5 minut.' },
+          { id: '7uchlv', q: 'Ile to jest 3/4 z 12?', options: ['9', '3', '16', '4'], answer: 0, explain: '1/4 z 12 = 12 : 4 = 3, a 3/4 to trzy razy więcej: 3 · 3 = 9.' },
+          { id: 'ra9whx', q: 'Prawda czy fałsz?\n4/4 = 1', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '4 części z 4 to cała całość: 4 : 4 = 1.' },
+          { id: '2lg5k1', q: 'Prawda czy fałsz?\n1/6 pizzy to więcej niż 1/4 tej samej pizzy.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Gdy pizzę dzielimy na 6 części, kawałki są mniejsze niż przy podziale na 4. 1/6 to mniej niż 1/4.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
+        id: 'ulamki-dzialania',
+        name: 'Ułamki zwykłe – skracanie, dodawanie, odejmowanie',
+        chapter: 'dział 5 „Ułamki zwykłe”',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 19 (skracanie i rozszerzanie ułamków; sprowadzanie do wspólnego mianownika – tylko gdy jeden mianownik jest wielokrotnością drugiego), 21 (ułamki zwykłe na osi liczbowej), 27 (tylko dodawanie i odejmowanie ułamków i liczb mieszanych; mnożenie i dzielenie – później), 20 (zamiana wyniku na liczbę mieszaną). Ciąg dalszy działu „Ułamki zwykłe – pierwsze kroki”.' + WYBOR,
+        theory: `
+          <h3>Ułamki równe</h3>
+          <p>Połowa tabliczki czekolady to tyle samo co dwie czwarte albo cztery ósme: <span class="f">1/2 = 2/4 = 4/8</span>. Takie ułamki to <b>ułamki równe</b> – różnie zapisane, ale oznaczają tę samą część.</p>
+          <h3>Rozszerzanie i skracanie</h3>
+          <ul>
+            <li><b>Rozszerzanie</b> – mnożysz licznik i mianownik przez tę samą liczbę (nie zero): <span class="f">2/3 = (2 · 4)/(3 · 4) = 8/12</span>.</li>
+            <li><b>Skracanie</b> – dzielisz licznik i mianownik przez tę samą liczbę: <span class="f">6/9 = (6 : 3)/(9 : 3) = 2/3</span>.</li>
+            <li>Ułamek <b>nieskracalny</b> – licznik i mianownik nie mają wspólnego dzielnika większego niż 1, np. 3/4. Wynik działania zwykle skracamy tak, jak się da.</li>
+          </ul>
+          <div class="tip">💡 Przy rozszerzaniu i skracaniu wartość ułamka się nie zmienia – zmienia się tylko wielkość kawałków i ich liczba.</div>
+          <h3>Dodawanie i odejmowanie (te same mianowniki)</h3>
+          <p>Dodajesz albo odejmujesz <b>tylko liczniki</b>. Mianownik zostaje ten sam.</p>
+          <ul>
+            <li><span class="f">2/7 + 3/7 = 5/7</span></li>
+            <li><span class="f">7/9 − 4/9 = 3/9 = 1/3</span></li>
+            <li><span class="f">3/5 + 4/5 = 7/5 = 1 2/5</span> – wynik będący ułamkiem niewłaściwym zamieniamy na liczbę mieszaną.</li>
+          </ul>
+          <div class="tip">⚠️ Błąd: 2/7 + 3/7 = 5/14. Mianowników nie dodajemy – kawałki dalej są „siódme”.</div>
+          <h3>Dopełnianie do całości</h3>
+          <p>Całość to <span class="f">8/8</span>, <span class="f">5/5</span> itd. Dlatego <span class="f">1 − 3/8 = 8/8 − 3/8 = 5/8</span>.</p>
+          <h3>Liczby mieszane</h3>
+          <ul>
+            <li>Dodajesz osobno całości i osobno ułamki: <span class="f">2 1/5 + 1 3/5 = 3 4/5</span>.</li>
+            <li>Gdy ułamki dadzą całość lub więcej, zamień nadmiar: <span class="f">1 3/4 + 2/4 = 1 5/4 = 2 1/4</span>.</li>
+            <li>Odejmowanie od całości – „rozmień” jedną całość: <span class="f">3 − 1/4 = 2 4/4 − 1/4 = 2 3/4</span>.</li>
+            <li>Gdy ułamka jest za mało: <span class="f">2 1/4 − 3/4 = 1 5/4 − 3/4 = 1 2/4 = 1 1/2</span>.</li>
+          </ul>
+          <h3>Różne mianowniki</h3>
+          <p>Jeśli jeden mianownik jest wielokrotnością drugiego, rozszerz ułamek o mniejszym mianowniku: <span class="f">1/2 + 1/4 = 2/4 + 1/4 = 3/4</span>, <span class="f">2/3 − 1/6 = 4/6 − 1/6 = 3/6 = 1/2</span>.</p>
+          <h3>Ułamki na osi liczbowej</h3>
+          <p>Odcinek od 0 do 1 dzielisz na tyle równych części, ile wynosi mianownik. Ułamek 3/5 to trzecia kreska po zerze, gdy odcinek od 0 do 1 podzielono na 5 części.</p>
+        `,
+        flashcards: [
+          ['Ułamki równe', 'Różnie zapisane, ale oznaczają tę samą część, np. 1/2 = 2/4 = 4/8'],
+          ['Rozszerzanie ułamka', 'Mnożenie licznika i mianownika przez tę samą liczbę: 2/3 = 8/12'],
+          ['Skracanie ułamka', 'Dzielenie licznika i mianownika przez tę samą liczbę: 6/9 = 2/3'],
+          ['Ułamek nieskracalny', 'Licznik i mianownik nie mają wspólnego dzielnika większego niż 1, np. 3/4'],
+          ['Dodawanie ułamków o tych samych mianownikach', 'Dodajesz liczniki, mianownik zostaje: 2/7 + 3/7 = 5/7'],
+          ['3/5 + 4/5', '7/5 = 1 2/5'],
+          ['1 − 3/8', '8/8 − 3/8 = 5/8'],
+          ['3 − 1/4', '2 4/4 − 1/4 = 2 3/4'],
+          ['2 1/4 − 3/4', '1 5/4 − 3/4 = 1 2/4 = 1 1/2'],
+          ['1/2 + 1/4', '2/4 + 1/4 = 3/4'],
+          ['Najczęstszy błąd przy dodawaniu ułamków', 'Dodawanie mianowników: 2/7 + 3/7 to NIE 5/14'],
+        ],
+        questions: [
+          { id: 'k90obu', q: 'Uzupełnij: 1/2 = ?/8', options: ['4', '2', '6', '1'], answer: 0, explain: 'Mianownik 2 mnożymy przez 4, żeby dostać 8. Licznik też mnożymy przez 4: 1 · 4 = 4. Więc 1/2 = 4/8.' },
+          { id: '8y6p8j', q: 'Rozszerz ułamek 2/3 przez 4.', options: ['8/12', '6/7', '8/3', '2/12'], answer: 0, explain: 'Mnożymy licznik i mianownik przez 4: (2 · 4)/(3 · 4) = 8/12.' },
+          { id: '2fpn0f', q: 'Skróć ułamek 6/9.', options: ['2/3', '3/4', '1/3', '6/3'], answer: 0, explain: 'Licznik i mianownik dzielimy przez 3: (6 : 3)/(9 : 3) = 2/3.' },
+          { id: '33tcap', q: 'Skróć ułamek 12/16 tak bardzo, jak się da.', options: ['3/4', '6/8', '4/3', '2/4'], answer: 0, explain: '12 i 16 dzielą się przez 4: 12/16 = 3/4. (6/8 to też ten sam ułamek, ale da się go jeszcze skrócić przez 2.)' },
+          { id: '6krrc2', q: 'Który ułamek jest równy 1/2?', options: ['4/8', '2/3', '3/5', '5/8'], answer: 0, explain: '4/8 po skróceniu przez 4 to 1/2. Ułamek jest równy 1/2, gdy licznik jest połową mianownika: 4 to połowa 8.' },
+          { id: '18nka7', q: 'Oblicz: 2/7 + 3/7', options: ['5/7', '5/14', '6/7', '1/7'], answer: 0, explain: 'Te same mianowniki – dodajemy liczniki: 2 + 3 = 5. Mianownik zostaje 7. (5/14 to błąd – mianowników nie dodajemy.)' },
+          { id: 'g9frnq', q: 'Oblicz: 7/9 − 4/9', options: ['3/9', '3/0', '11/9', '3/18'], answer: 0, explain: 'Odejmujemy liczniki: 7 − 4 = 3, mianownik zostaje 9. Wynik 3/9 można skrócić do 1/3.' },
+          { id: 'ri5lh2', q: 'Oblicz: 3/5 + 4/5', options: ['1 2/5', '7/10', '1 1/5', '12/5'], answer: 0, explain: '3/5 + 4/5 = 7/5. To ułamek niewłaściwy: 7 : 5 = 1 reszty 2, więc 7/5 = 1 2/5.' },
+          { id: 'qoxmig', q: 'Oblicz: 1 − 3/8', options: ['5/8', '2/8', '3/8', '4/8'], answer: 0, explain: 'Całość to 8/8. 8/8 − 3/8 = 5/8.' },
+          { id: 'y55wfh', q: 'Oblicz: 2 1/5 + 1 3/5', options: ['3 4/5', '3 4/10', '2 4/5', '4 4/5'], answer: 0, explain: 'Całości: 2 + 1 = 3. Ułamki: 1/5 + 3/5 = 4/5. Razem 3 4/5.' },
+          { id: '2baock', q: 'Oblicz: 3 − 1/4', options: ['2 3/4', '3 3/4', '2 1/4', '3 1/4'], answer: 0, explain: 'Rozmieniamy jedną całość: 3 = 2 4/4. Potem 2 4/4 − 1/4 = 2 3/4.' },
+          { id: '6pt88e', q: 'Oblicz: 2 1/4 − 3/4', options: ['1 1/2', '2 1/2', '1 3/4', '1 1/4'], answer: 0, explain: '2 1/4 = 1 5/4. Potem 1 5/4 − 3/4 = 1 2/4 = 1 1/2.' },
+          { id: 'y02z91', q: 'Oblicz: 1/2 + 1/4', options: ['3/4', '2/6', '1/6', '2/4'], answer: 0, explain: 'Rozszerzamy 1/2 do czwartych: 1/2 = 2/4. Potem 2/4 + 1/4 = 3/4.' },
+          { id: 'm66l6p', q: 'Pizzę podzielono na 8 równych kawałków. Tomek zjadł 2/8 pizzy, a Ola 3/8. Jaka część pizzy została?', options: ['3/8', '5/8', '5/16', '1/8'], answer: 0, explain: 'Zjedli razem 2/8 + 3/8 = 5/8. Zostało 8/8 − 5/8 = 3/8.' },
+          { id: 'y2xj0s', q: 'Prawda czy fałsz?\nGdy dodajesz ułamki o tych samych mianownikach, dodajesz liczniki i dodajesz mianowniki.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Dodajesz tylko liczniki. Mianownik mówi, jakie są kawałki (np. siódme) – po dodaniu dalej są takie same.' },
+          { id: 'vxf6sg', q: 'Prawda czy fałsz?\nUłamki 2/3 i 4/6 są równe.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '4/6 po skróceniu przez 2 to 2/3.' },
           {
-            id: '562a8e',
-            q: 'Prawda czy fałsz?\nPrzerywana linia na rysunku jest osią symetrii prostokąta.',
-            svg: `<svg viewBox="0 0 340 170" role="img" aria-label="Prostokąt dłuższy niż wyższy. Przerywana linia biegnie po przekątnej, z lewego dolnego do prawego górnego rogu.">
-      <rect x="60" y="30" width="220" height="110" class="f4 s4 sw"/>
-      <line x1="60" y1="140" x2="280" y2="30" class="ln s2 sw dash"/>
+            id: 'scexgu',
+            q: 'Jaki ułamek zaznaczono na osi liczbowej?',
+            svg: `<svg viewBox="0 0 360 110" role="img" aria-label="Oś liczbowa od 0 do 1 podzielona na 5 równych części. Kropka na trzeciej kresce po zerze.">
+      <line x1="30" y1="60" x2="330" y2="60" class="ln sw"/>
+      <g class="ln"><line x1="40" y1="48" x2="40" y2="72"/><line x1="96" y1="52" x2="96" y2="68"/><line x1="152" y1="52" x2="152" y2="68"/><line x1="208" y1="52" x2="208" y2="68"/><line x1="264" y1="52" x2="264" y2="68"/><line x1="320" y1="48" x2="320" y2="72"/></g>
+      <circle cx="208" cy="60" r="7" class="f2 s2"/>
+      <text x="40" y="96" class="tx-b" text-anchor="middle">0</text>
+      <text x="320" y="96" class="tx-b" text-anchor="middle">1</text>
+      <text x="208" y="36" class="tx-b t2" text-anchor="middle">?</text>
     </svg>`,
-            options: ['Prawda', 'Fałsz'],
-            noShuffle: true,
-            answer: 1,
-            explain: 'To przekątna. Jeśli złożysz prostokąt (niebędący kwadratem) po przekątnej, rogi nie spotkają się – połowy się nie pokryją.',
+            options: ['3/5', '3/6', '2/5', '1/3'],
+            answer: 0,
+            explain: 'Odcinek od 0 do 1 podzielono na 5 równych części, więc każda to 1/5. Kropka jest na trzeciej kresce po zerze: 3/5.',
           },
-          { id: 'rib7zz', q: 'Prawda czy fałsz?\nKażda prosta przechodząca przez środek koła jest jego osią symetrii.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Koło złożone wzdłuż dowolnej średnicy daje dwie jednakowe połówki.' },
-          { id: 'meqncu', q: 'Prawda czy fałsz?\nPunkt leżący na osi symetrii po odbiciu zostaje w tym samym miejscu.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Jego odległość od osi to 0 kratek, więc obraz to ten sam punkt.' },
-          { id: 'iec2j4', q: 'Prawda czy fałsz?\nRównoległobok, który nie jest ani prostokątem, ani rombem, ma oś symetrii.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Taki „przekrzywiony” równoległobok nie ma żadnej osi symetrii – żadne złożenie nie da dwóch pokrywających się połówek.' },
+          { id: 'iupzax', q: 'Kuba szedł do szkoły 3/4 godziny, a potem jechał autobusem 1/4 godziny. Ile czasu zajęła mu cała droga?', options: ['1 godzinę', '4/8 godziny', '1/2 godziny', '2 godziny'], answer: 0, explain: '3/4 + 1/4 = 4/4 = 1. Cała droga trwała 1 godzinę.' },
+          { id: 'p0olgq', q: 'W butelce był 1 litr soku. Wypito 3/10 litra. Ile soku zostało?', options: ['7/10 litra', '3/10 litra', '2/10 litra', '1/10 litra'], answer: 0, explain: '1 = 10/10. 10/10 − 3/10 = 7/10 litra.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
+        id: 'dziesietne',
+        name: 'Ułamki dziesiętne – pierwsze kroki',
+        chapter: 'dział 6 „Ułamki dziesiętne”',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 21 (tylko ułamki dziesiętne na osi liczbowej), 22 (ułamki dziesiętne jako ułamki zwykłe), 23 (tylko ułamki zwykłe o mianownikach 10, 100, 1000 jako ułamki dziesiętne), 26 (porównywanie ułamków dziesiętnych), 28a (dodawanie i odejmowanie – proste przypadki, w pamięci); dz. 2 Miary, wym. 10 (wyrażenia dwumianowane: zł i gr, m i cm, cm i mm, kg i g). Mnożenie i dzielenie ułamków dziesiętnych – później.' + WYBOR,
+        theory: `
+          <h3>Dziesiąte, setne, tysięczne</h3>
+          <p>Całość dzielimy na 10, 100 albo 1000 równych części i zapisujemy je z <b>przecinkiem</b>:</p>
+          <table>
+            <tr><th>Ułamek zwykły</th><th>Ułamek dziesiętny</th><th>Czytamy</th></tr>
+            <tr><td>1/10</td><td>0,1</td><td>jedna dziesiąta</td></tr>
+            <tr><td>1/100</td><td>0,01</td><td>jedna setna</td></tr>
+            <tr><td>1/1000</td><td>0,001</td><td>jedna tysięczna</td></tr>
+          </table>
+          <p>Przed przecinkiem są <b>całości</b>, za przecinkiem kolejno: <b>części dziesiąte</b>, <b>setne</b>, <b>tysięczne</b>.</p>
+          <table>
+            <tr><th>całości</th><th>,</th><th>dziesiąte</th><th>setne</th><th>tysięczne</th></tr>
+            <tr><td>4</td><td>,</td><td>3</td><td>6</td><td></td></tr>
+          </table>
+          <p>4,36 – cztery całe i trzydzieści sześć setnych (albo „cztery przecinek trzydzieści sześć”).</p>
+          <h3>Zamiana ułamków</h3>
+          <ul>
+            <li>Mianownik 10 – <b>jedna</b> cyfra po przecinku: <span class="f">7/10 = 0,7</span>.</li>
+            <li>Mianownik 100 – <b>dwie</b> cyfry po przecinku: <span class="f">23/100 = 0,23</span>, <span class="f">3/100 = 0,03</span>.</li>
+            <li>Mianownik 1000 – <b>trzy</b> cyfry po przecinku: <span class="f">125/1000 = 0,125</span>.</li>
+            <li>Z liczby mieszanej: <span class="f">3 7/10 = 3,7</span>. W drugą stronę: <span class="f">0,25 = 25/100</span>.</li>
+          </ul>
+          <div class="tip">💡 Ile zer w mianowniku, tyle cyfr po przecinku. Brakujące miejsca uzupełniasz zerami: 3/100 = 0,03.</div>
+          <h3>Zera na końcu</h3>
+          <p>Zera dopisane na końcu, za przecinkiem, nic nie zmieniają: <span class="f">0,5 = 0,50 = 0,500</span> (5 dziesiątych to 50 setnych). Ale zero tuż za przecinkiem jest ważne: 0,05 to co innego niż 0,5.</p>
+          <h3>Porównywanie</h3>
+          <p>Porównuj najpierw całości, potem dziesiąte, potem setne… Najłatwiej <b>dopisać zera</b>, żeby obie liczby miały tyle samo cyfr po przecinku:</p>
+          <ul>
+            <li>0,5 i 0,45 → 0,50 i 0,45 → <span class="f">0,5 &gt; 0,45</span>,</li>
+            <li>2,09 i 2,1 → 2,09 i 2,10 → <span class="f">2,09 &lt; 2,1</span>.</li>
+          </ul>
+          <h3>Złote i grosze, metry i centymetry</h3>
+          <ul>
+            <li>1 gr = 0,01 zł: <span class="f">3 zł 45 gr = 3,45 zł</span>, <span class="f">2 zł 5 gr = 2,05 zł</span>.</li>
+            <li>1 cm = 0,01 m: <span class="f">1 m 20 cm = 1,20 m = 1,2 m</span>.</li>
+            <li>1 mm = 0,1 cm: <span class="f">4 cm 7 mm = 4,7 cm</span>.</li>
+            <li>1 g = 0,001 kg: <span class="f">2 kg 500 g = 2,500 kg = 2,5 kg</span>.</li>
+          </ul>
+          <h3>Dodawanie i odejmowanie</h3>
+          <p>Dodajesz całości do całości, dziesiąte do dziesiątych, setne do setnych. Pisemnie – <b>przecinek pod przecinkiem</b>.</p>
+          <ul>
+            <li><span class="f">2,5 + 1,3 = 3,8</span></li>
+            <li><span class="f">0,7 + 0,6 = 1,3</span> (13 dziesiątych to 1 całość i 3 dziesiąte)</li>
+            <li><span class="f">4,25 + 1,5 = 5,75</span> (1,5 = 1,50)</li>
+            <li><span class="f">5 − 0,3 = 4,7</span> (5 = 4 całe i 10 dziesiątych)</li>
+          </ul>
+        `,
+        flashcards: [
+          ['0,1', '1/10 – jedna dziesiąta'],
+          ['0,01', '1/100 – jedna setna'],
+          ['0,001', '1/1000 – jedna tysięczna'],
+          ['3/100 jako ułamek dziesiętny', '0,03 (dwie cyfry po przecinku)'],
+          ['0,25 jako ułamek zwykły', '25/100'],
+          ['0,5 = 0,50?', 'Tak – zera na końcu po przecinku nic nie zmieniają'],
+          ['Co większe: 0,5 czy 0,45?', '0,5 (bo 0,50 > 0,45)'],
+          ['3 zł 5 gr', '3,05 zł'],
+          ['1 m 20 cm', '1,2 m'],
+          ['2 kg 500 g', '2,5 kg'],
+          ['0,7 + 0,6', '1,3'],
+        ],
+        questions: [
+          { id: 'rajkk6', q: 'Jak zapisać ułamek 7/10 w postaci dziesiętnej?', options: ['0,7', '0,07', '7,10', '7,0'], answer: 0, explain: 'Mianownik 10 – jedna cyfra po przecinku: 7/10 = 0,7.' },
+          { id: 'whq3kx', q: 'Jak zapisać ułamek 3/100 w postaci dziesiętnej?', options: ['0,03', '0,3', '3,100', '0,003'], answer: 0, explain: 'Mianownik 100 – dwie cyfry po przecinku. Trójkę stawiamy na miejscu setnych, a puste miejsce dziesiątych uzupełniamy zerem: 0,03.' },
+          { id: 'a8d9bf', q: 'Liczba 0,25 zapisana jako ułamek zwykły to…', options: ['25/100', '25/10', '2/5', '25/1000'], answer: 0, explain: 'Dwie cyfry po przecinku to setne: 0,25 = 25/100.' },
+          { id: '53ssh8', q: 'W liczbie 4,36 cyfra 3 oznacza…', options: ['3 części dziesiąte', '3 części setne', '3 jedności', '3 dziesiątki'], answer: 0, explain: 'Pierwsza cyfra za przecinkiem to części dziesiąte, druga – setne.' },
+          { id: '88wxpo', q: 'Która liczba jest największa?', options: ['0,6', '0,56', '0,506', '0,059'], answer: 0, explain: 'Dopisz zera: 0,600; 0,560; 0,506; 0,059. Najwięcej dziesiątych ma 0,6.' },
+          { id: 'p2s3k5', q: 'Który znak trzeba wstawić?\n0,4 … 0,40', options: ['=', '<', '>'], answer: 0, explain: 'Zero dopisane na końcu nic nie zmienia: 4 dziesiąte to 40 setnych.' },
+          { id: '75i72a', q: 'Który znak trzeba wstawić?\n2,09 … 2,1', options: ['<', '>', '='], answer: 0, explain: 'Dopisz zero: 2,1 = 2,10. Teraz 2,09 < 2,10, bo 0 dziesiątych to mniej niż 1 dziesiąta.' },
+          { id: 'h3pl3h', q: '3 zł 45 gr to…', options: ['3,45 zł', '3,045 zł', '34,5 zł', '0,345 zł'], answer: 0, explain: '1 zł = 100 gr, więc grosze to setne części złotego: 45 gr = 0,45 zł.' },
+          { id: '68rrx1', q: '2 zł 5 gr to…', options: ['2,05 zł', '2,5 zł', '2,50 zł', '25 zł'], answer: 0, explain: '5 gr = 0,05 zł (5 setnych). 2,5 zł to 2 zł 50 gr.' },
+          { id: 'n8es93', q: '1,2 m to…', options: ['1 m 20 cm', '1 m 2 cm', '12 cm', '1 m 200 cm'], answer: 0, explain: '1,2 m = 1,20 m. 0,20 m to 20 setnych metra, czyli 20 cm.' },
+          { id: '5pwmcj', q: 'Ile to kilogramów: 2 kg 500 g?', options: ['2,5 kg', '2,05 kg', '2,005 kg', '25 kg'], answer: 0, explain: '1 kg = 1000 g, więc 500 g = 0,500 kg = 0,5 kg. Razem 2,5 kg.' },
+          { id: 'ysuopo', q: 'Ile to centymetrów: 4 cm 7 mm?', options: ['4,7 cm', '4,07 cm', '47 cm', '0,47 cm'], answer: 0, explain: '1 cm = 10 mm, więc 1 mm to dziesiąta część centymetra: 7 mm = 0,7 cm.' },
+          { id: 'flkfbk', q: 'Ile wynosi 0,7 + 0,6?', options: ['1,3', '0,13', '1,13', '0,76'], answer: 0, explain: '7 dziesiątych + 6 dziesiątych = 13 dziesiątych, czyli 1 całość i 3 dziesiąte: 1,3.' },
+          { id: 'dqkvg5', q: 'Ile wynosi 4,25 + 1,5?', options: ['5,75', '4,40', '5,30', '4,275'], answer: 0, explain: 'Przecinek pod przecinkiem: 4,25 + 1,50 = 5,75.' },
+          { id: '9n7n7x', q: 'Ile wynosi 5 − 0,3?', options: ['4,7', '4,3', '5,3', '0,2'], answer: 0, explain: '5 = 4 całe i 10 dziesiątych. 10 dziesiątych − 3 dziesiąte = 7 dziesiątych. Wynik 4,7.' },
+          {
+            id: 'u0x6xb',
+            q: 'Jaką liczbę zaznaczono na osi literą A?',
+            svg: `<svg viewBox="0 0 400 100" role="img" aria-label="Oś liczbowa od 2 do 3 z kreskami co jedną dziesiątą. Punkt A leży na czwartej kresce za liczbą 2.">
+      <line x1="16" y1="50" x2="392" y2="50" class="ln"/>
+      <path d="M384,45 L393,50 L384,55" class="ln"/>
+      <g class="ln"><line x1="30" y1="42" x2="30" y2="58"/><line x1="64" y1="45" x2="64" y2="55"/><line x1="98" y1="45" x2="98" y2="55"/><line x1="132" y1="45" x2="132" y2="55"/><line x1="166" y1="45" x2="166" y2="55"/><line x1="200" y1="42" x2="200" y2="58"/><line x1="234" y1="45" x2="234" y2="55"/><line x1="268" y1="45" x2="268" y2="55"/><line x1="302" y1="45" x2="302" y2="55"/><line x1="336" y1="45" x2="336" y2="55"/><line x1="370" y1="42" x2="370" y2="58"/></g>
+      <text x="30" y="80" class="tx" text-anchor="middle">2</text>
+      <text x="200" y="80" class="tx" text-anchor="middle">2,5</text>
+      <text x="370" y="80" class="tx" text-anchor="middle">3</text>
+      <circle cx="166" cy="50" r="7" class="t2"/>
+      <text x="166" y="30" class="tx-b t2" text-anchor="middle">A</text>
+    </svg>`,
+            options: ['2,4', '2,04', '2,8', '0,4'],
+            answer: 0,
+            explain: 'Od 2 do 3 jest 10 odstępów, więc każdy to 0,1. A leży 4 kreski za liczbą 2: 2 + 0,4 = 2,4.',
+          },
+          { id: 'pmrkdk', q: 'Kupujesz zeszyt za 3,50 zł i długopis za 2,30 zł. Ile płacisz?', options: ['5,80 zł', '5,53 zł', '6,80 zł', '1,20 zł'], answer: 0, explain: '3,50 + 2,30: złote 3 + 2 = 5, grosze 50 + 30 = 80. Razem 5,80 zł.' },
+          { id: 'ze38h0', q: 'Prawda czy fałsz?\n0,45 jest większe od 0,5, bo 45 jest większe od 5.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Trzeba porównać na tych samych miejscach: 0,5 = 0,50, a 0,50 > 0,45. Liczba cyfr po przecinku nie mówi, która liczba jest większa.' },
         ],
       },
 
@@ -895,6 +913,7 @@
       {
         id: 'pole',
         name: 'Jednostki pola i figury złożone',
+        chapter: 'dział 7 „Pola figur”',
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 2 Miary, wym. 4 (jednostki pola: mm², cm², dm², m², km², ar, hektar), 6 (przeliczanie jednostek pola w kontekstach praktycznych); dz. 4 Figury, wym. 14 (tylko pole prostokąta i kwadratu oraz figur, które można z nich zbudować); dz. 6 Myślenie matematyczne (podział figury na części, sprawdzanie wyniku). Ciąg dalszy działu „Wielokąty, prostokąt i kwadrat, koło i okrąg”. Pola trójkątów, równoległoboków i trapezów (wym. 14) – później.' + WYBOR,
         theory: `
           <h3>Jednostki pola</h3>
@@ -983,9 +1002,12 @@
           { id: 'hxdv6a', q: 'Ściana ma 4 m szerokości i 3 m wysokości. Jedna puszka farby wystarcza na 6 m². Ile puszek potrzeba, żeby raz pomalować ścianę?', options: ['2', '1', '3', '12'], answer: 0, explain: 'Pole ściany: 4 · 3 = 12 m². 12 : 6 = 2 puszki.' },
         ],
       },
+
+      // ------------------------------------------------------------------
       {
         id: 'bryly',
         name: 'Prostopadłościan i sześcian',
+        chapter: 'dział 8 „Prostopadłościany i sześciany”',
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 18 (rozpoznawanie prostopadłościanu i sześcianu; walca, stożka i kuli), 19 (wierzchołki, krawędzie, ściany – tylko prostopadłościan i sześcian), 20 (tylko siatka prostopadłościanu i sześcianu, model z siatki); dz. 6 Myślenie matematyczne (suma długości krawędzi). Pole powierzchni i objętość (wym. 21–22) – dział „Pole powierzchni i objętość prostopadłościanu”; graniastosłupy i ostrosłupy – później.' + WYBOR,
         theory: `
           <h3>Bryły wokół nas</h3>
@@ -1103,381 +1125,184 @@
 
       // ------------------------------------------------------------------
       {
-        id: 'ulamki',
-        name: 'Ułamki zwykłe – pierwsze kroki',
-        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 17 (ułamek jako część całości), 18 (ułamek jako iloraz), 20 (liczby mieszane i ułamki niewłaściwe), 26 (porównywanie – tylko ułamki o tych samych mianownikach lub tych samych licznikach), 31 (ułamek danej wielkości – proste przykłady).' + WYBOR,
+        id: 'objetosc',
+        name: 'Pole powierzchni i objętość prostopadłościanu',
+        chapter: 'dział 8 „Prostopadłościany i sześciany”',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 21 (pole powierzchni prostopadłościanu), 22 (objętość prostopadłościanu o podanych krawędziach i bryły zbudowanej z kilku prostopadłościanów); dz. 2 Miary, wym. 5 (jednostki objętości i pojemności: cm³, dm³, m³, mililitr, litr), 6 (przeliczanie jednostek objętości w kontekstach praktycznych). Ciąg dalszy działu „Prostopadłościan i sześcian”.' + WYBOR,
         theory: `
-          <h3>Ułamek to część całości</h3>
-          <p>Pizzę podzielono na 8 <b>równych</b> kawałków. Zjadłeś 3 – to <span class="f">3/8</span> pizzy (trzy ósme).</p>
+          <h3>Pole powierzchni</h3>
+          <p><b>Pole powierzchni</b> prostopadłościanu to suma pól jego <b>sześciu ścian</b> – tyle papieru potrzeba, żeby okleić pudełko. Ściany tworzą <b>trzy pary</b> jednakowych prostokątów.</p>
+          <p>Krawędzie: a, b, c. Pary ścian mają pola a · b, b · c i a · c, więc:</p>
+          <p><span class="f">P = 2 · a · b + 2 · b · c + 2 · a · c</span></p>
+          <p>Przykład: 5 cm × 3 cm × 2 cm → <span class="f">P = 2 · 15 + 2 · 6 + 2 · 10 = 30 + 12 + 20 = 62 cm²</span></p>
+          <p><b>Sześcian</b> ma 6 jednakowych kwadratów: <span class="f">P = 6 · a · a</span>. Krawędź 4 cm → P = 6 · 16 = 96 cm².</p>
+          <div class="tip">💡 Pudełko <b>bez wieka</b> ma tylko 5 ścian – jedną odejmij. Pudełko 10 cm × 10 cm × 5 cm bez wieka: 100 + 4 · 50 = 300 cm².</div>
+          <h3>Objętość</h3>
+          <p><b>Objętość</b> mówi, ile miejsca zajmuje bryła. Mierzymy ją w <b>sześcianach jednostkowych</b>: 1 cm³ to sześcian o krawędzi 1 cm.</p>
+          <p>Pudełko 4 cm × 3 cm × 2 cm: na dnie zmieści się 4 · 3 = 12 kostek, a takich warstw są 2 → 24 kostki, czyli 24 cm³.</p>
+          <p><span class="f">V = a · b · c</span> &nbsp;&nbsp; sześcian: <span class="f">V = a · a · a</span></p>
           <ul>
-            <li><b>Mianownik</b> (pod kreską) – na ile równych części podzielono całość.</li>
-            <li><b>Licznik</b> (nad kreską) – ile takich części bierzemy.</li>
-            <li><b>Kreska ułamkowa</b> – oddziela licznik od mianownika.</li>
+            <li>5 cm × 3 cm × 2 cm → V = 30 cm³</li>
+            <li>sześcian o krawędzi 4 cm → V = 4 · 4 · 4 = 64 cm³</li>
           </ul>
-          <p>Nazwy: 1/2 – jedna druga (połowa), 1/4 – jedna czwarta (ćwierć), 3/4 – trzy czwarte, 2/5 – dwie piąte.</p>
-          <div class="tip">💡 Części muszą być równe. Jeśli kawałki są różne, nie można powiedzieć, że jeden z nich to 1/4.</div>
-          <h3>Ułamek to dzielenie</h3>
-          <p>Kreska ułamkowa zastępuje znak dzielenia: <span class="f">3/4 = 3 : 4</span>. Trzy pizze dzielone po równo na 4 osoby – każda dostaje 3/4 pizzy.</p>
-          <p>Czasem wychodzi liczba naturalna: <span class="f">8/4 = 8 : 4 = 2</span>, <span class="f">4/4 = 1</span>.</p>
-          <h3>Ułamki właściwe i niewłaściwe, liczby mieszane</h3>
-          <ul>
-            <li><b>Ułamek właściwy</b> – licznik mniejszy od mianownika (np. 3/5). To mniej niż całość.</li>
-            <li><b>Ułamek niewłaściwy</b> – licznik równy mianownikowi lub większy (np. 7/4, 5/5). To całość albo więcej.</li>
-            <li><b>Liczba mieszana</b> – liczba naturalna i ułamek właściwy, np. <span class="f">1 3/4</span> („jeden i trzy czwarte”).</li>
-          </ul>
+          <h3>Jednostki objętości i pojemności</h3>
           <table>
-            <tr><th>Zamiana</th><th>Jak?</th><th>Przykład</th></tr>
-            <tr><td>ułamek niewłaściwy → liczba mieszana</td><td>podziel licznik przez mianownik; reszta idzie do licznika</td><td>7/4: 7 : 4 = 1 reszty 3, więc 7/4 = 1 3/4</td></tr>
-            <tr><td>liczba mieszana → ułamek niewłaściwy</td><td>całości · mianownik + licznik</td><td>2 1/3: 2 · 3 + 1 = 7, więc 2 1/3 = 7/3</td></tr>
+            <tr><th>Jednostka</th><th>Ile to?</th></tr>
+            <tr><td>1 cm³</td><td>= <b>1 ml</b> (mililitr)</td></tr>
+            <tr><td>1 dm³</td><td>= 10 · 10 · 10 cm³ = <b>1000 cm³</b> = <b>1 l</b> (litr)</td></tr>
+            <tr><td>1 m³</td><td>= 1000 dm³ = <b>1000 l</b></td></tr>
           </table>
-          <h3>Porównywanie ułamków</h3>
-          <ul>
-            <li><b>Te same mianowniki</b> – większy jest ułamek z większym licznikiem: <span class="f">5/8 &gt; 3/8</span>.</li>
-            <li><b>Te same liczniki</b> – większy jest ułamek z <b>mniejszym</b> mianownikiem: <span class="f">1/3 &gt; 1/5</span> (pizza dla 3 osób daje większe kawałki niż dla 5).</li>
-          </ul>
-          <h3>Ułamek liczby</h3>
-          <ul>
-            <li><span class="f">1/2 z 14 = 14 : 2 = 7</span></li>
-            <li><span class="f">1/4 z 20 = 20 : 4 = 5</span></li>
-            <li><span class="f">3/4 z 12</span>: najpierw 1/4 z 12 = 3, potem 3 · 3 = 9.</li>
-          </ul>
+          <p>Akwarium 50 cm × 30 cm × 40 cm: V = 60 000 cm³ = 60 dm³ = <b>60 l</b>.</p>
+          <h3>Bryła z kilku prostopadłościanów</h3>
+          <p>Podziel bryłę na prostopadłościany, oblicz objętość każdego i dodaj. Np. 4 cm × 3 cm × 2 cm i 2 cm × 3 cm × 2 cm: 24 + 12 = 36 cm³.</p>
+          <div class="tip">💡 Pole – w jednostkach „do kwadratu” (cm²), objętość – „do sześcianu” (cm³). Przed liczeniem zamień wszystkie krawędzie na te same jednostki.</div>
         `,
         flashcards: [
-          ['Mianownik', 'Liczba pod kreską: na ile równych części podzielono całość'],
-          ['Licznik', 'Liczba nad kreską: ile części bierzemy'],
-          ['Kreska ułamkowa', 'Zastępuje znak dzielenia: 3/4 = 3 : 4'],
-          ['Ułamek właściwy', 'Licznik mniejszy od mianownika, np. 2/5'],
-          ['Ułamek niewłaściwy', 'Licznik równy mianownikowi lub większy, np. 7/4'],
-          ['7/4 jako liczba mieszana', '1 3/4 (7 : 4 = 1 reszty 3)'],
-          ['2 1/3 jako ułamek niewłaściwy', '7/3 (2 · 3 + 1 = 7)'],
-          ['Co większe: 1/3 czy 1/5?', '1/3 – przy tym samym liczniku większy jest ułamek o mniejszym mianowniku'],
-          ['1/4 z 20', '20 : 4 = 5'],
+          ['Pole powierzchni prostopadłościanu', 'Suma pól 6 ścian: P = 2·a·b + 2·b·c + 2·a·c'],
+          ['Pole powierzchni sześcianu', 'P = 6 · a · a'],
+          ['Objętość prostopadłościanu', 'V = a · b · c'],
+          ['Objętość sześcianu', 'V = a · a · a'],
+          ['1 cm³', 'Sześcian o krawędzi 1 cm; to 1 ml'],
+          ['1 dm³', '1000 cm³ = 1 litr'],
+          ['1 m³', '1000 dm³ = 1000 litrów'],
+          ['5 cm × 3 cm × 2 cm', 'P = 62 cm², V = 30 cm³'],
+          ['Sześcian o krawędzi 4 cm', 'P = 96 cm², V = 64 cm³'],
+          ['Pudełko bez wieka', 'Ma 5 ścian – licz pole bez jednej ściany'],
+          ['Objętość bryły złożonej', 'Suma objętości prostopadłościanów, z których się składa'],
+          ['cm² czy cm³?', 'Pole – cm², objętość – cm³'],
         ],
         questions: [
-          { id: 'fz8c7x', q: 'W ułamku 3/8 mianownik to…', options: ['8', '3', '11', '5'], answer: 0, explain: 'Mianownik jest pod kreską ułamkową: 8.' },
-          { id: '7iydvi', q: 'Pizzę podzielono na 8 równych kawałków. Zjadłeś 3. Jaką część pizzy zjadłeś?', options: ['3/8', '8/3', '3/5', '5/8'], answer: 0, explain: 'Całość ma 8 części (mianownik), zjadłeś 3 (licznik): 3/8.' },
+          { id: 'uewmza', q: 'Czym jest pole powierzchni prostopadłościanu?', options: ['sumą pól wszystkich sześciu ścian', 'iloczynem długości trzech krawędzi', 'sumą długości wszystkich krawędzi', 'polem jednej podstawy'], answer: 0, explain: 'Pole powierzchni to tyle, ile papieru potrzeba na oklejenie wszystkich 6 ścian.' },
+          { id: 'o0xl9e', q: 'Prostopadłościan ma krawędzie 5 cm, 3 cm i 2 cm. Jakie ma pole powierzchni?', options: ['62 cm²', '30 cm²', '31 cm²', '40 cm²'], answer: 0, explain: 'P = 2 · 5 · 3 + 2 · 3 · 2 + 2 · 5 · 2 = 30 + 12 + 20 = 62 cm². 30 to objętość (w cm³), 31 – suma pól tylko trzech ścian.' },
+          { id: 'nv964t', q: 'Sześcian ma krawędź 3 cm. Jakie ma pole powierzchni?', options: ['54 cm²', '27 cm²', '9 cm²', '36 cm²'], answer: 0, explain: 'Jedna ściana: 3 · 3 = 9 cm². Ścian jest 6: 6 · 9 = 54 cm².' },
+          { id: 'guvcra', q: 'Prostopadłościan ma krawędzie 5 cm, 3 cm i 2 cm. Jaka jest jego objętość?', options: ['30 cm³', '62 cm³', '10 cm³', '60 cm³'], answer: 0, explain: 'V = 5 · 3 · 2 = 30 cm³.' },
+          { id: '3em0a0', q: 'Sześcian ma krawędź 4 cm. Jaka jest jego objętość?', options: ['64 cm³', '16 cm³', '48 cm³', '96 cm³'], answer: 0, explain: 'V = 4 · 4 · 4 = 64 cm³. 96 to pole powierzchni (w cm²), a 16 – pole jednej ściany.' },
+          { id: 'kqi5hk', q: 'Ile sześcianików o krawędzi 1 cm zmieści się w pudełku 4 cm × 3 cm × 2 cm?', options: ['24', '9', '26', '12'], answer: 0, explain: 'Na dnie: 4 · 3 = 12 sześcianików. Dwie warstwy: 12 · 2 = 24.' },
           {
-            id: '3c14c2',
-            q: 'Jaka część prostokąta jest zamalowana?',
-            svg: `<svg viewBox="0 0 380 110" role="img" aria-label="Prostokąt podzielony na 6 równych części. Zamalowane są 4 części.">
-      <rect x="40" y="15" width="50" height="80" class="f2 s2"/>
-      <rect x="90" y="15" width="50" height="80" class="f2 s2"/>
-      <rect x="140" y="15" width="50" height="80" class="bg"/>
-      <rect x="190" y="15" width="50" height="80" class="f2 s2"/>
-      <rect x="240" y="15" width="50" height="80" class="bg"/>
-      <rect x="290" y="15" width="50" height="80" class="f2 s2"/>
-      <g class="ln"><line x1="90" y1="15" x2="90" y2="95"/><line x1="140" y1="15" x2="140" y2="95"/><line x1="190" y1="15" x2="190" y2="95"/><line x1="240" y1="15" x2="240" y2="95"/><line x1="290" y1="15" x2="290" y2="95"/></g>
-      <rect x="40" y="15" width="300" height="80" class="ln sw"/>
+            id: '31e4da',
+            q: 'Oblicz objętość prostopadłościanu z rysunku.',
+            svg: `<svg viewBox="0 0 320 200" role="img" aria-label="Prostopadłościan o krawędziach: długość 6 cm, szerokość 4 cm, wysokość 3 cm">
+      <path d="M40,80 L220,80 L220,170 L40,170 Z" class="f1 s1 sw"/>
+      <path d="M40,80 L100,30 L280,30 L220,80 Z" class="f4 s4 sw"/>
+      <path d="M220,80 L280,30 L280,120 L220,170 Z" class="f3 s3 sw"/>
+      <text x="130" y="192" class="tx" text-anchor="middle">6 cm</text>
+      <text x="254" y="160" class="tx">4 cm</text>
+      <text x="48" y="130" class="tx">3 cm</text>
     </svg>`,
-            options: ['4/6', '2/6', '6/4', '4/10'],
+            options: ['72 cm³', '13 cm³', '108 cm³', '36 cm³'],
             answer: 0,
-            explain: 'Prostokąt ma 6 równych części (mianownik), zamalowano 4 (licznik): 4/6.',
+            explain: 'V = 6 · 4 · 3 = 72 cm³. 108 to pole powierzchni tego prostopadłościanu (w cm²).',
           },
-          { id: 'ddgok7', q: 'Jak zapisać dzielenie 5 : 7 w postaci ułamka?', options: ['5/7', '7/5', '5/12', '1/7'], answer: 0, explain: 'Dzielna idzie nad kreskę, dzielnik – pod kreskę: 5 : 7 = 5/7.' },
-          { id: 'ugpqti', q: 'Trzy jednakowe czekolady podzielono po równo między 4 dzieci. Ile czekolady dostało każde dziecko?', options: ['3/4 czekolady', '4/3 czekolady', '1/4 czekolady', '1/3 czekolady'], answer: 0, explain: '3 : 4 = 3/4. Każde dziecko dostaje po 1/4 z każdej z 3 czekolad, czyli 3/4.' },
-          { id: 'hdip7e', q: 'Ile to jest 12/4?', options: ['3', '4', '8', '16'], answer: 0, explain: '12/4 = 12 : 4 = 3.' },
-          { id: 's2wj8f', q: 'Który ułamek jest niewłaściwy?', options: ['7/5', '5/7', '1/2', '3/4'], answer: 0, explain: 'W ułamku 7/5 licznik jest większy od mianownika – to więcej niż całość.' },
-          { id: 'hnkwds', q: 'Ułamek 9/4 zapisany jako liczba mieszana to…', options: ['2 1/4', '2 1/9', '4 1/2', '1 4/9'], answer: 0, explain: '9 : 4 = 2 reszty 1, więc 9/4 = 2 1/4 (dwa i jedna czwarta).' },
-          { id: 'tnlpk3', q: 'Liczba mieszana 3 1/2 („trzy i jedna druga”) jako ułamek niewłaściwy to…', options: ['7/2', '4/2', '31/2', '5/2'], answer: 0, explain: '3 · 2 + 1 = 7, więc 3 1/2 = 7/2.' },
-          { id: '1fe4zs', q: 'Który ułamek jest większy: 3/7 czy 5/7?', options: ['5/7', '3/7', 'są równe'], answer: 0, explain: 'Mianowniki są takie same, więc większy jest ułamek z większym licznikiem.' },
-          { id: '2e0h64', q: 'Który ułamek jest największy?', options: ['1/3', '1/5', '1/8', '1/10'], answer: 0, explain: 'Liczniki są takie same. Im mniej części, tym są większe – największy jest 1/3.' },
-          { id: 'rhoyqx', q: 'Ile to jest 1/2 z 14 zł?', options: ['7 zł', '28 zł', '12 zł', '2 zł'], answer: 0, explain: 'Połowa z 14 zł: 14 : 2 = 7 zł.' },
-          { id: 'blne5w', q: 'Ile minut to 1/4 z 20 minut?', options: ['5 minut', '4 minuty', '80 minut', '16 minut'], answer: 0, explain: '20 : 4 = 5 minut.' },
-          { id: '7uchlv', q: 'Ile to jest 3/4 z 12?', options: ['9', '3', '16', '4'], answer: 0, explain: '1/4 z 12 = 12 : 4 = 3, a 3/4 to trzy razy więcej: 3 · 3 = 9.' },
-          { id: 'ra9whx', q: 'Prawda czy fałsz?\n4/4 = 1', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '4 części z 4 to cała całość: 4 : 4 = 1.' },
-          { id: '2lg5k1', q: 'Prawda czy fałsz?\n1/6 pizzy to więcej niż 1/4 tej samej pizzy.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Gdy pizzę dzielimy na 6 części, kawałki są mniejsze niż przy podziale na 4. 1/6 to mniej niż 1/4.' },
+          {
+            id: 'm7tbt5',
+            q: 'Oblicz pole powierzchni prostopadłościanu z rysunku.',
+            svg: `<svg viewBox="0 0 320 200" role="img" aria-label="Prostopadłościan o krawędziach: długość 6 cm, szerokość 4 cm, wysokość 3 cm">
+      <path d="M40,80 L220,80 L220,170 L40,170 Z" class="f1 s1 sw"/>
+      <path d="M40,80 L100,30 L280,30 L220,80 Z" class="f4 s4 sw"/>
+      <path d="M220,80 L280,30 L280,120 L220,170 Z" class="f3 s3 sw"/>
+      <text x="130" y="192" class="tx" text-anchor="middle">6 cm</text>
+      <text x="254" y="160" class="tx">4 cm</text>
+      <text x="48" y="130" class="tx">3 cm</text>
+    </svg>`,
+            options: ['108 cm²', '72 cm²', '54 cm²', '52 cm²'],
+            answer: 0,
+            explain: 'P = 2 · 6 · 4 + 2 · 4 · 3 + 2 · 6 · 3 = 48 + 24 + 36 = 108 cm². 54 to tylko trzy ściany, a 52 cm – suma długości krawędzi.',
+          },
+          { id: 'eabmkb', q: 'Ile centymetrów sześciennych ma 1 dm³?', options: ['1000 cm³', '100 cm³', '10 cm³', '10 000 cm³'], answer: 0, explain: '1 dm = 10 cm, więc 1 dm³ = 10 · 10 · 10 = 1000 cm³.' },
+          { id: '7l9nom', q: 'Ile to jest 1 litr?', options: ['1 dm³', '1 cm³', '1 m³', '10 dm³'], answer: 0, explain: '1 l = 1 dm³ = 1000 cm³.' },
+          { id: 'bg74k7', q: 'Ile to jest 1 ml?', options: ['1 cm³', '1 dm³', '10 cm³', '100 cm³'], answer: 0, explain: '1 ml to tysięczna część litra: 1000 ml = 1 l = 1000 cm³, więc 1 ml = 1 cm³.' },
+          { id: '3fn5u3', q: 'Ile litrów to 1 m³?', options: ['1000 l', '100 l', '10 l', '1 000 000 l'], answer: 0, explain: '1 m = 10 dm, więc 1 m³ = 10 · 10 · 10 = 1000 dm³ = 1000 l.' },
+          { id: '27ent5', q: 'Akwarium ma wymiary 50 cm × 30 cm × 40 cm. Ile litrów wody się w nim zmieści?', options: ['60 l', '600 l', '6 l', '6000 l'], answer: 0, explain: 'V = 50 · 30 · 40 = 60 000 cm³. 1000 cm³ = 1 l, więc 60 000 cm³ = 60 l.' },
+          { id: 'c9ty9f', q: 'Karton o podstawie 10 cm × 5 cm mieści dokładnie 1 litr. Jaką ma wysokość?', options: ['20 cm', '10 cm', '15 cm', '50 cm'], answer: 0, explain: '1 l = 1000 cm³. Pole podstawy: 10 · 5 = 50 cm². Wysokość: 1000 : 50 = 20 cm. Sprawdzenie: 10 · 5 · 20 = 1000.' },
+          { id: 'x6wq5n', q: 'Ile kartonu potrzeba na pudełko bez wieka o wymiarach 10 cm × 10 cm × 5 cm?', options: ['300 cm²', '400 cm²', '500 cm²', '250 cm²'], answer: 0, explain: 'Dno: 10 · 10 = 100 cm². Cztery boki: 4 · (10 · 5) = 200 cm². Razem 300 cm². 400 cm² to pudełko z wiekiem.' },
+          { id: 'gyugfv', q: 'Bryła składa się z dwóch prostopadłościanów: 4 cm × 3 cm × 2 cm i 2 cm × 3 cm × 2 cm. Jaka jest jej objętość?', options: ['36 cm³', '24 cm³', '12 cm³', '288 cm³'], answer: 0, explain: '4 · 3 · 2 = 24 cm³ i 2 · 3 · 2 = 12 cm³. Razem 24 + 12 = 36 cm³.' },
+          { id: 'ydxmqd', q: 'Basen ma wymiary 10 m × 5 m × 2 m. Jaka jest jego objętość?', options: ['100 m³', '17 m³', '160 m³', '50 m³'], answer: 0, explain: 'V = 10 · 5 · 2 = 100 m³, czyli 100 000 litrów. 160 to pole powierzchni (w m²), 17 – suma trzech krawędzi.' },
+          { id: 'j04ce0', q: 'Jeden sześcian ma krawędź 1 cm, a drugi 2 cm. Ile razy większa jest objętość drugiego sześcianu?', options: ['8 razy', '2 razy', '4 razy', '6 razy'], answer: 0, explain: 'Objętości: 1 · 1 · 1 = 1 cm³ i 2 · 2 · 2 = 8 cm³. W drugim sześcianie zmieści się 8 małych.' },
+          { id: 'lm2zq9', q: 'Prawda czy fałsz?\nObjętość podajemy w cm², a pole powierzchni w cm³.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Odwrotnie: pole – w cm² (kwadraciki), objętość – w cm³ (sześcianiki).' },
         ],
       },
 
       // ------------------------------------------------------------------
       {
-        id: 'ulamki-dzialania',
-        name: 'Ułamki zwykłe – skracanie, dodawanie, odejmowanie',
-        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 19 (skracanie i rozszerzanie ułamków; sprowadzanie do wspólnego mianownika – tylko gdy jeden mianownik jest wielokrotnością drugiego), 21 (ułamki zwykłe na osi liczbowej), 27 (tylko dodawanie i odejmowanie ułamków i liczb mieszanych; mnożenie i dzielenie – później), 20 (zamiana wyniku na liczbę mieszaną). Ciąg dalszy działu „Ułamki zwykłe – pierwsze kroki”.' + WYBOR,
+        id: 'dzielniki',
+        name: 'Dzielniki, wielokrotności i cechy podzielności',
+        extra: true,
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 3 (podzielność przez 2, 3, 4, 5, 9, 10), 4 (liczby pierwsze i złożone – jedno- i dwucyfrowe), 6 (wspólne dzielniki i wielokrotności dwóch liczb, NWD i NWW – bez rozkładu na czynniki pierwsze), 7 (dzielniki i wielokrotności w obliczeniach i rozumowaniach), 8 (liczebność zbioru liczb z niewielkiego zakresu). Rozkład na czynniki pierwsze (wym. 5) – później.' + WYBOR,
         theory: `
-          <h3>Ułamki równe</h3>
-          <p>Połowa tabliczki czekolady to tyle samo co dwie czwarte albo cztery ósme: <span class="f">1/2 = 2/4 = 4/8</span>. Takie ułamki to <b>ułamki równe</b> – różnie zapisane, ale oznaczają tę samą część.</p>
-          <h3>Rozszerzanie i skracanie</h3>
+          <h3>Dzielnik i wielokrotność</h3>
+          <p>Liczba 3 jest <b>dzielnikiem</b> liczby 12, bo 12 : 3 = 4 bez reszty. Mówimy też: 12 <b>dzieli się przez</b> 3 i 12 jest <b>wielokrotnością</b> liczby 3.</p>
           <ul>
-            <li><b>Rozszerzanie</b> – mnożysz licznik i mianownik przez tę samą liczbę (nie zero): <span class="f">2/3 = (2 · 4)/(3 · 4) = 8/12</span>.</li>
-            <li><b>Skracanie</b> – dzielisz licznik i mianownik przez tę samą liczbę: <span class="f">6/9 = (6 : 3)/(9 : 3) = 2/3</span>.</li>
-            <li>Ułamek <b>nieskracalny</b> – licznik i mianownik nie mają wspólnego dzielnika większego niż 1, np. 3/4. Wynik działania zwykle skracamy tak, jak się da.</li>
+            <li>Dzielniki liczby 12: <span class="f">1, 2, 3, 4, 6, 12</span>. Szukaj ich parami: 1 · 12, 2 · 6, 3 · 4.</li>
+            <li>Wielokrotności liczby 6: <span class="f">6, 12, 18, 24, 30, …</span> – to wyniki mnożenia 6 · 1, 6 · 2, 6 · 3… Jest ich nieskończenie wiele.</li>
           </ul>
-          <div class="tip">💡 Przy rozszerzaniu i skracaniu wartość ułamka się nie zmienia – zmienia się tylko wielkość kawałków i ich liczba.</div>
-          <h3>Dodawanie i odejmowanie (te same mianowniki)</h3>
-          <p>Dodajesz albo odejmujesz <b>tylko liczniki</b>. Mianownik zostaje ten sam.</p>
+          <div class="tip">💡 Każda liczba dzieli się przez 1 i przez samą siebie.</div>
+          <h3>Cechy podzielności – sprawdzasz bez dzielenia</h3>
+          <table>
+            <tr><th>Przez</th><th>Liczba dzieli się, gdy…</th><th>Przykład</th></tr>
+            <tr><td>2</td><td>ostatnia cyfra to 0, 2, 4, 6 lub 8 (liczba parzysta)</td><td>3 578</td></tr>
+            <tr><td>5</td><td>ostatnia cyfra to 0 lub 5</td><td>345, 340</td></tr>
+            <tr><td>10</td><td>ostatnia cyfra to 0</td><td>2 030</td></tr>
+            <tr><td>4</td><td>liczba z dwóch ostatnich cyfr dzieli się przez 4</td><td>1 316 (16 : 4 = 4)</td></tr>
+            <tr><td>3</td><td>suma cyfr dzieli się przez 3</td><td>5 271 (5 + 2 + 7 + 1 = 15)</td></tr>
+            <tr><td>9</td><td>suma cyfr dzieli się przez 9</td><td>4 518 (4 + 5 + 1 + 8 = 18)</td></tr>
+          </table>
+          <div class="tip">💡 Liczba podzielna przez 9 dzieli się też przez 3. Odwrotnie nie zawsze: 12 dzieli się przez 3, ale nie przez 9.</div>
+          <h3>Liczby pierwsze i złożone</h3>
           <ul>
-            <li><span class="f">2/7 + 3/7 = 5/7</span></li>
-            <li><span class="f">7/9 − 4/9 = 3/9 = 1/3</span></li>
-            <li><span class="f">3/5 + 4/5 = 7/5 = 1 2/5</span> – wynik będący ułamkiem niewłaściwym zamieniamy na liczbę mieszaną.</li>
+            <li><b>Liczba pierwsza</b> ma dokładnie dwa dzielniki: 1 i samą siebie. Liczby pierwsze mniejsze od 30: <span class="f">2, 3, 5, 7, 11, 13, 17, 19, 23, 29</span>.</li>
+            <li><b>Liczba złożona</b> ma więcej niż dwa dzielniki, np. 15 (1, 3, 5, 15).</li>
+            <li>Liczby <b>0 i 1</b> nie są ani pierwsze, ani złożone.</li>
           </ul>
-          <div class="tip">⚠️ Błąd: 2/7 + 3/7 = 5/14. Mianowników nie dodajemy – kawałki dalej są „siódme”.</div>
-          <h3>Dopełnianie do całości</h3>
-          <p>Całość to <span class="f">8/8</span>, <span class="f">5/5</span> itd. Dlatego <span class="f">1 − 3/8 = 8/8 − 3/8 = 5/8</span>.</p>
-          <h3>Liczby mieszane</h3>
+          <p>Cechy podzielności pomagają wykryć liczbę złożoną: 51 ma sumę cyfr 6, więc dzieli się przez 3 (51 = 3 · 17) – jest złożona.</p>
+          <h3>Wspólne dzielniki i wspólne wielokrotności</h3>
           <ul>
-            <li>Dodajesz osobno całości i osobno ułamki: <span class="f">2 1/5 + 1 3/5 = 3 4/5</span>.</li>
-            <li>Gdy ułamki dadzą całość lub więcej, zamień nadmiar: <span class="f">1 3/4 + 2/4 = 1 5/4 = 2 1/4</span>.</li>
-            <li>Odejmowanie od całości – „rozmień” jedną całość: <span class="f">3 − 1/4 = 2 4/4 − 1/4 = 2 3/4</span>.</li>
-            <li>Gdy ułamka jest za mało: <span class="f">2 1/4 − 3/4 = 1 5/4 − 3/4 = 1 2/4 = 1 1/2</span>.</li>
+            <li>Dzielniki 12: 1, 2, 3, 4, 6, 12. Dzielniki 18: 1, 2, 3, 6, 9, 18. Wspólne: 1, 2, 3, 6. Największy wspólny dzielnik: <b>NWD(12, 18) = 6</b>.</li>
+            <li>Wielokrotności 4: 4, 8, <b>12</b>, 16, 20, <b>24</b>… Wielokrotności 6: 6, <b>12</b>, 18, <b>24</b>… Najmniejsza wspólna wielokrotność: <b>NWW(4, 6) = 12</b>.</li>
           </ul>
-          <h3>Różne mianowniki</h3>
-          <p>Jeśli jeden mianownik jest wielokrotnością drugiego, rozszerz ułamek o mniejszym mianowniku: <span class="f">1/2 + 1/4 = 2/4 + 1/4 = 3/4</span>, <span class="f">2/3 − 1/6 = 4/6 − 1/6 = 3/6 = 1/2</span>.</p>
-          <h3>Ułamki na osi liczbowej</h3>
-          <p>Odcinek od 0 do 1 dzielisz na tyle równych części, ile wynosi mianownik. Ułamek 3/5 to trzecia kreska po zerze, gdy odcinek od 0 do 1 podzielono na 5 części.</p>
+          <p><b>Kiedy NWD?</b> Gdy coś dzielimy na jak najwięcej jednakowych paczek bez resztek. <b>Kiedy NWW?</b> Gdy szukamy, kiedy dwa powtarzające się zdarzenia znów wypadną razem (np. odjazdy dwóch autobusów).</p>
         `,
         flashcards: [
-          ['Ułamki równe', 'Różnie zapisane, ale oznaczają tę samą część, np. 1/2 = 2/4 = 4/8'],
-          ['Rozszerzanie ułamka', 'Mnożenie licznika i mianownika przez tę samą liczbę: 2/3 = 8/12'],
-          ['Skracanie ułamka', 'Dzielenie licznika i mianownika przez tę samą liczbę: 6/9 = 2/3'],
-          ['Ułamek nieskracalny', 'Licznik i mianownik nie mają wspólnego dzielnika większego niż 1, np. 3/4'],
-          ['Dodawanie ułamków o tych samych mianownikach', 'Dodajesz liczniki, mianownik zostaje: 2/7 + 3/7 = 5/7'],
-          ['3/5 + 4/5', '7/5 = 1 2/5'],
-          ['1 − 3/8', '8/8 − 3/8 = 5/8'],
-          ['3 − 1/4', '2 4/4 − 1/4 = 2 3/4'],
-          ['2 1/4 − 3/4', '1 5/4 − 3/4 = 1 2/4 = 1 1/2'],
-          ['1/2 + 1/4', '2/4 + 1/4 = 3/4'],
-          ['Najczęstszy błąd przy dodawaniu ułamków', 'Dodawanie mianowników: 2/7 + 3/7 to NIE 5/14'],
+          ['Dzielnik liczby', 'Liczba, przez którą dana liczba dzieli się bez reszty, np. 4 jest dzielnikiem 12'],
+          ['Wielokrotność liczby 7', '7, 14, 21, 28, … – wyniki mnożenia 7 przez 1, 2, 3, 4, …'],
+          ['Podzielność przez 2', 'Ostatnia cyfra: 0, 2, 4, 6 lub 8'],
+          ['Podzielność przez 5', 'Ostatnia cyfra: 0 lub 5'],
+          ['Podzielność przez 10', 'Ostatnia cyfra: 0'],
+          ['Podzielność przez 4', 'Liczba z dwóch ostatnich cyfr dzieli się przez 4'],
+          ['Podzielność przez 3 i przez 9', 'Suma cyfr dzieli się przez 3 (przez 9)'],
+          ['Liczba pierwsza', 'Ma dokładnie dwa dzielniki: 1 i samą siebie, np. 2, 3, 5, 7, 11'],
+          ['Liczba złożona', 'Ma więcej niż dwa dzielniki, np. 4, 9, 15'],
+          ['NWD(12, 18)', '6 – największy wspólny dzielnik'],
+          ['NWW(4, 6)', '12 – najmniejsza wspólna wielokrotność'],
         ],
         questions: [
-          { id: 'k90obu', q: 'Uzupełnij: 1/2 = ?/8', options: ['4', '2', '6', '1'], answer: 0, explain: 'Mianownik 2 mnożymy przez 4, żeby dostać 8. Licznik też mnożymy przez 4: 1 · 4 = 4. Więc 1/2 = 4/8.' },
-          { id: '8y6p8j', q: 'Rozszerz ułamek 2/3 przez 4.', options: ['8/12', '6/7', '8/3', '2/12'], answer: 0, explain: 'Mnożymy licznik i mianownik przez 4: (2 · 4)/(3 · 4) = 8/12.' },
-          { id: '2fpn0f', q: 'Skróć ułamek 6/9.', options: ['2/3', '3/4', '1/3', '6/3'], answer: 0, explain: 'Licznik i mianownik dzielimy przez 3: (6 : 3)/(9 : 3) = 2/3.' },
-          { id: '33tcap', q: 'Skróć ułamek 12/16 tak bardzo, jak się da.', options: ['3/4', '6/8', '4/3', '2/4'], answer: 0, explain: '12 i 16 dzielą się przez 4: 12/16 = 3/4. (6/8 to też ten sam ułamek, ale da się go jeszcze skrócić przez 2.)' },
-          { id: '6krrc2', q: 'Który ułamek jest równy 1/2?', options: ['4/8', '2/3', '3/5', '5/8'], answer: 0, explain: '4/8 po skróceniu przez 4 to 1/2. Ułamek jest równy 1/2, gdy licznik jest połową mianownika: 4 to połowa 8.' },
-          { id: '18nka7', q: 'Oblicz: 2/7 + 3/7', options: ['5/7', '5/14', '6/7', '1/7'], answer: 0, explain: 'Te same mianowniki – dodajemy liczniki: 2 + 3 = 5. Mianownik zostaje 7. (5/14 to błąd – mianowników nie dodajemy.)' },
-          { id: 'g9frnq', q: 'Oblicz: 7/9 − 4/9', options: ['3/9', '3/0', '11/9', '3/18'], answer: 0, explain: 'Odejmujemy liczniki: 7 − 4 = 3, mianownik zostaje 9. Wynik 3/9 można skrócić do 1/3.' },
-          { id: 'ri5lh2', q: 'Oblicz: 3/5 + 4/5', options: ['1 2/5', '7/10', '1 1/5', '12/5'], answer: 0, explain: '3/5 + 4/5 = 7/5. To ułamek niewłaściwy: 7 : 5 = 1 reszty 2, więc 7/5 = 1 2/5.' },
-          { id: 'qoxmig', q: 'Oblicz: 1 − 3/8', options: ['5/8', '2/8', '3/8', '4/8'], answer: 0, explain: 'Całość to 8/8. 8/8 − 3/8 = 5/8.' },
-          { id: 'y55wfh', q: 'Oblicz: 2 1/5 + 1 3/5', options: ['3 4/5', '3 4/10', '2 4/5', '4 4/5'], answer: 0, explain: 'Całości: 2 + 1 = 3. Ułamki: 1/5 + 3/5 = 4/5. Razem 3 4/5.' },
-          { id: '2baock', q: 'Oblicz: 3 − 1/4', options: ['2 3/4', '3 3/4', '2 1/4', '3 1/4'], answer: 0, explain: 'Rozmieniamy jedną całość: 3 = 2 4/4. Potem 2 4/4 − 1/4 = 2 3/4.' },
-          { id: '6pt88e', q: 'Oblicz: 2 1/4 − 3/4', options: ['1 1/2', '2 1/2', '1 3/4', '1 1/4'], answer: 0, explain: '2 1/4 = 1 5/4. Potem 1 5/4 − 3/4 = 1 2/4 = 1 1/2.' },
-          { id: 'y02z91', q: 'Oblicz: 1/2 + 1/4', options: ['3/4', '2/6', '1/6', '2/4'], answer: 0, explain: 'Rozszerzamy 1/2 do czwartych: 1/2 = 2/4. Potem 2/4 + 1/4 = 3/4.' },
-          { id: 'm66l6p', q: 'Pizzę podzielono na 8 równych kawałków. Tomek zjadł 2/8 pizzy, a Ola 3/8. Jaka część pizzy została?', options: ['3/8', '5/8', '5/16', '1/8'], answer: 0, explain: 'Zjedli razem 2/8 + 3/8 = 5/8. Zostało 8/8 − 5/8 = 3/8.' },
-          { id: 'y2xj0s', q: 'Prawda czy fałsz?\nGdy dodajesz ułamki o tych samych mianownikach, dodajesz liczniki i dodajesz mianowniki.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Dodajesz tylko liczniki. Mianownik mówi, jakie są kawałki (np. siódme) – po dodaniu dalej są takie same.' },
-          { id: 'vxf6sg', q: 'Prawda czy fałsz?\nUłamki 2/3 i 4/6 są równe.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '4/6 po skróceniu przez 2 to 2/3.' },
-          {
-            id: 'scexgu',
-            q: 'Jaki ułamek zaznaczono na osi liczbowej?',
-            svg: `<svg viewBox="0 0 360 110" role="img" aria-label="Oś liczbowa od 0 do 1 podzielona na 5 równych części. Kropka na trzeciej kresce po zerze.">
-      <line x1="30" y1="60" x2="330" y2="60" class="ln sw"/>
-      <g class="ln"><line x1="40" y1="48" x2="40" y2="72"/><line x1="96" y1="52" x2="96" y2="68"/><line x1="152" y1="52" x2="152" y2="68"/><line x1="208" y1="52" x2="208" y2="68"/><line x1="264" y1="52" x2="264" y2="68"/><line x1="320" y1="48" x2="320" y2="72"/></g>
-      <circle cx="208" cy="60" r="7" class="f2 s2"/>
-      <text x="40" y="96" class="tx-b" text-anchor="middle">0</text>
-      <text x="320" y="96" class="tx-b" text-anchor="middle">1</text>
-      <text x="208" y="36" class="tx-b t2" text-anchor="middle">?</text>
-    </svg>`,
-            options: ['3/5', '3/6', '2/5', '1/3'],
-            answer: 0,
-            explain: 'Odcinek od 0 do 1 podzielono na 5 równych części, więc każda to 1/5. Kropka jest na trzeciej kresce po zerze: 3/5.',
-          },
-          { id: 'iupzax', q: 'Kuba szedł do szkoły 3/4 godziny, a potem jechał autobusem 1/4 godziny. Ile czasu zajęła mu cała droga?', options: ['1 godzinę', '4/8 godziny', '1/2 godziny', '2 godziny'], answer: 0, explain: '3/4 + 1/4 = 4/4 = 1. Cała droga trwała 1 godzinę.' },
-          { id: 'p0olgq', q: 'W butelce był 1 litr soku. Wypito 3/10 litra. Ile soku zostało?', options: ['7/10 litra', '3/10 litra', '2/10 litra', '1/10 litra'], answer: 0, explain: '1 = 10/10. 10/10 − 3/10 = 7/10 litra.' },
-        ],
-      },
-      {
-        id: 'dziesietne',
-        name: 'Ułamki dziesiętne – pierwsze kroki',
-        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 21 (tylko ułamki dziesiętne na osi liczbowej), 22 (ułamki dziesiętne jako ułamki zwykłe), 23 (tylko ułamki zwykłe o mianownikach 10, 100, 1000 jako ułamki dziesiętne), 26 (porównywanie ułamków dziesiętnych), 28a (dodawanie i odejmowanie – proste przypadki, w pamięci); dz. 2 Miary, wym. 10 (wyrażenia dwumianowane: zł i gr, m i cm, cm i mm, kg i g). Mnożenie i dzielenie ułamków dziesiętnych – później.' + WYBOR,
-        theory: `
-          <h3>Dziesiąte, setne, tysięczne</h3>
-          <p>Całość dzielimy na 10, 100 albo 1000 równych części i zapisujemy je z <b>przecinkiem</b>:</p>
-          <table>
-            <tr><th>Ułamek zwykły</th><th>Ułamek dziesiętny</th><th>Czytamy</th></tr>
-            <tr><td>1/10</td><td>0,1</td><td>jedna dziesiąta</td></tr>
-            <tr><td>1/100</td><td>0,01</td><td>jedna setna</td></tr>
-            <tr><td>1/1000</td><td>0,001</td><td>jedna tysięczna</td></tr>
-          </table>
-          <p>Przed przecinkiem są <b>całości</b>, za przecinkiem kolejno: <b>części dziesiąte</b>, <b>setne</b>, <b>tysięczne</b>.</p>
-          <table>
-            <tr><th>całości</th><th>,</th><th>dziesiąte</th><th>setne</th><th>tysięczne</th></tr>
-            <tr><td>4</td><td>,</td><td>3</td><td>6</td><td></td></tr>
-          </table>
-          <p>4,36 – cztery całe i trzydzieści sześć setnych (albo „cztery przecinek trzydzieści sześć”).</p>
-          <h3>Zamiana ułamków</h3>
-          <ul>
-            <li>Mianownik 10 – <b>jedna</b> cyfra po przecinku: <span class="f">7/10 = 0,7</span>.</li>
-            <li>Mianownik 100 – <b>dwie</b> cyfry po przecinku: <span class="f">23/100 = 0,23</span>, <span class="f">3/100 = 0,03</span>.</li>
-            <li>Mianownik 1000 – <b>trzy</b> cyfry po przecinku: <span class="f">125/1000 = 0,125</span>.</li>
-            <li>Z liczby mieszanej: <span class="f">3 7/10 = 3,7</span>. W drugą stronę: <span class="f">0,25 = 25/100</span>.</li>
-          </ul>
-          <div class="tip">💡 Ile zer w mianowniku, tyle cyfr po przecinku. Brakujące miejsca uzupełniasz zerami: 3/100 = 0,03.</div>
-          <h3>Zera na końcu</h3>
-          <p>Zera dopisane na końcu, za przecinkiem, nic nie zmieniają: <span class="f">0,5 = 0,50 = 0,500</span> (5 dziesiątych to 50 setnych). Ale zero tuż za przecinkiem jest ważne: 0,05 to co innego niż 0,5.</p>
-          <h3>Porównywanie</h3>
-          <p>Porównuj najpierw całości, potem dziesiąte, potem setne… Najłatwiej <b>dopisać zera</b>, żeby obie liczby miały tyle samo cyfr po przecinku:</p>
-          <ul>
-            <li>0,5 i 0,45 → 0,50 i 0,45 → <span class="f">0,5 &gt; 0,45</span>,</li>
-            <li>2,09 i 2,1 → 2,09 i 2,10 → <span class="f">2,09 &lt; 2,1</span>.</li>
-          </ul>
-          <h3>Złote i grosze, metry i centymetry</h3>
-          <ul>
-            <li>1 gr = 0,01 zł: <span class="f">3 zł 45 gr = 3,45 zł</span>, <span class="f">2 zł 5 gr = 2,05 zł</span>.</li>
-            <li>1 cm = 0,01 m: <span class="f">1 m 20 cm = 1,20 m = 1,2 m</span>.</li>
-            <li>1 mm = 0,1 cm: <span class="f">4 cm 7 mm = 4,7 cm</span>.</li>
-            <li>1 g = 0,001 kg: <span class="f">2 kg 500 g = 2,500 kg = 2,5 kg</span>.</li>
-          </ul>
-          <h3>Dodawanie i odejmowanie</h3>
-          <p>Dodajesz całości do całości, dziesiąte do dziesiątych, setne do setnych. Pisemnie – <b>przecinek pod przecinkiem</b>.</p>
-          <ul>
-            <li><span class="f">2,5 + 1,3 = 3,8</span></li>
-            <li><span class="f">0,7 + 0,6 = 1,3</span> (13 dziesiątych to 1 całość i 3 dziesiąte)</li>
-            <li><span class="f">4,25 + 1,5 = 5,75</span> (1,5 = 1,50)</li>
-            <li><span class="f">5 − 0,3 = 4,7</span> (5 = 4 całe i 10 dziesiątych)</li>
-          </ul>
-        `,
-        flashcards: [
-          ['0,1', '1/10 – jedna dziesiąta'],
-          ['0,01', '1/100 – jedna setna'],
-          ['0,001', '1/1000 – jedna tysięczna'],
-          ['3/100 jako ułamek dziesiętny', '0,03 (dwie cyfry po przecinku)'],
-          ['0,25 jako ułamek zwykły', '25/100'],
-          ['0,5 = 0,50?', 'Tak – zera na końcu po przecinku nic nie zmieniają'],
-          ['Co większe: 0,5 czy 0,45?', '0,5 (bo 0,50 > 0,45)'],
-          ['3 zł 5 gr', '3,05 zł'],
-          ['1 m 20 cm', '1,2 m'],
-          ['2 kg 500 g', '2,5 kg'],
-          ['0,7 + 0,6', '1,3'],
-        ],
-        questions: [
-          { id: 'rajkk6', q: 'Jak zapisać ułamek 7/10 w postaci dziesiętnej?', options: ['0,7', '0,07', '7,10', '7,0'], answer: 0, explain: 'Mianownik 10 – jedna cyfra po przecinku: 7/10 = 0,7.' },
-          { id: 'whq3kx', q: 'Jak zapisać ułamek 3/100 w postaci dziesiętnej?', options: ['0,03', '0,3', '3,100', '0,003'], answer: 0, explain: 'Mianownik 100 – dwie cyfry po przecinku. Trójkę stawiamy na miejscu setnych, a puste miejsce dziesiątych uzupełniamy zerem: 0,03.' },
-          { id: 'a8d9bf', q: 'Liczba 0,25 zapisana jako ułamek zwykły to…', options: ['25/100', '25/10', '2/5', '25/1000'], answer: 0, explain: 'Dwie cyfry po przecinku to setne: 0,25 = 25/100.' },
-          { id: '53ssh8', q: 'W liczbie 4,36 cyfra 3 oznacza…', options: ['3 części dziesiąte', '3 części setne', '3 jedności', '3 dziesiątki'], answer: 0, explain: 'Pierwsza cyfra za przecinkiem to części dziesiąte, druga – setne.' },
-          { id: '88wxpo', q: 'Która liczba jest największa?', options: ['0,6', '0,56', '0,506', '0,059'], answer: 0, explain: 'Dopisz zera: 0,600; 0,560; 0,506; 0,059. Najwięcej dziesiątych ma 0,6.' },
-          { id: 'p2s3k5', q: 'Który znak trzeba wstawić?\n0,4 … 0,40', options: ['=', '<', '>'], answer: 0, explain: 'Zero dopisane na końcu nic nie zmienia: 4 dziesiąte to 40 setnych.' },
-          { id: '75i72a', q: 'Który znak trzeba wstawić?\n2,09 … 2,1', options: ['<', '>', '='], answer: 0, explain: 'Dopisz zero: 2,1 = 2,10. Teraz 2,09 < 2,10, bo 0 dziesiątych to mniej niż 1 dziesiąta.' },
-          { id: 'h3pl3h', q: '3 zł 45 gr to…', options: ['3,45 zł', '3,045 zł', '34,5 zł', '0,345 zł'], answer: 0, explain: '1 zł = 100 gr, więc grosze to setne części złotego: 45 gr = 0,45 zł.' },
-          { id: '68rrx1', q: '2 zł 5 gr to…', options: ['2,05 zł', '2,5 zł', '2,50 zł', '25 zł'], answer: 0, explain: '5 gr = 0,05 zł (5 setnych). 2,5 zł to 2 zł 50 gr.' },
-          { id: 'n8es93', q: '1,2 m to…', options: ['1 m 20 cm', '1 m 2 cm', '12 cm', '1 m 200 cm'], answer: 0, explain: '1,2 m = 1,20 m. 0,20 m to 20 setnych metra, czyli 20 cm.' },
-          { id: '5pwmcj', q: 'Ile to kilogramów: 2 kg 500 g?', options: ['2,5 kg', '2,05 kg', '2,005 kg', '25 kg'], answer: 0, explain: '1 kg = 1000 g, więc 500 g = 0,500 kg = 0,5 kg. Razem 2,5 kg.' },
-          { id: 'ysuopo', q: 'Ile to centymetrów: 4 cm 7 mm?', options: ['4,7 cm', '4,07 cm', '47 cm', '0,47 cm'], answer: 0, explain: '1 cm = 10 mm, więc 1 mm to dziesiąta część centymetra: 7 mm = 0,7 cm.' },
-          { id: 'flkfbk', q: 'Ile wynosi 0,7 + 0,6?', options: ['1,3', '0,13', '1,13', '0,76'], answer: 0, explain: '7 dziesiątych + 6 dziesiątych = 13 dziesiątych, czyli 1 całość i 3 dziesiąte: 1,3.' },
-          { id: 'dqkvg5', q: 'Ile wynosi 4,25 + 1,5?', options: ['5,75', '4,40', '5,30', '4,275'], answer: 0, explain: 'Przecinek pod przecinkiem: 4,25 + 1,50 = 5,75.' },
-          { id: '9n7n7x', q: 'Ile wynosi 5 − 0,3?', options: ['4,7', '4,3', '5,3', '0,2'], answer: 0, explain: '5 = 4 całe i 10 dziesiątych. 10 dziesiątych − 3 dziesiąte = 7 dziesiątych. Wynik 4,7.' },
-          {
-            id: 'u0x6xb',
-            q: 'Jaką liczbę zaznaczono na osi literą A?',
-            svg: `<svg viewBox="0 0 400 100" role="img" aria-label="Oś liczbowa od 2 do 3 z kreskami co jedną dziesiątą. Punkt A leży na czwartej kresce za liczbą 2.">
-      <line x1="16" y1="50" x2="392" y2="50" class="ln"/>
-      <path d="M384,45 L393,50 L384,55" class="ln"/>
-      <g class="ln"><line x1="30" y1="42" x2="30" y2="58"/><line x1="64" y1="45" x2="64" y2="55"/><line x1="98" y1="45" x2="98" y2="55"/><line x1="132" y1="45" x2="132" y2="55"/><line x1="166" y1="45" x2="166" y2="55"/><line x1="200" y1="42" x2="200" y2="58"/><line x1="234" y1="45" x2="234" y2="55"/><line x1="268" y1="45" x2="268" y2="55"/><line x1="302" y1="45" x2="302" y2="55"/><line x1="336" y1="45" x2="336" y2="55"/><line x1="370" y1="42" x2="370" y2="58"/></g>
-      <text x="30" y="80" class="tx" text-anchor="middle">2</text>
-      <text x="200" y="80" class="tx" text-anchor="middle">2,5</text>
-      <text x="370" y="80" class="tx" text-anchor="middle">3</text>
-      <circle cx="166" cy="50" r="7" class="t2"/>
-      <text x="166" y="30" class="tx-b t2" text-anchor="middle">A</text>
-    </svg>`,
-            options: ['2,4', '2,04', '2,8', '0,4'],
-            answer: 0,
-            explain: 'Od 2 do 3 jest 10 odstępów, więc każdy to 0,1. A leży 4 kreski za liczbą 2: 2 + 0,4 = 2,4.',
-          },
-          { id: 'pmrkdk', q: 'Kupujesz zeszyt za 3,50 zł i długopis za 2,30 zł. Ile płacisz?', options: ['5,80 zł', '5,53 zł', '6,80 zł', '1,20 zł'], answer: 0, explain: '3,50 + 2,30: złote 3 + 2 = 5, grosze 50 + 30 = 80. Razem 5,80 zł.' },
-          { id: 'ze38h0', q: 'Prawda czy fałsz?\n0,45 jest większe od 0,5, bo 45 jest większe od 5.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Trzeba porównać na tych samych miejscach: 0,5 = 0,50, a 0,50 > 0,45. Liczba cyfr po przecinku nie mówi, która liczba jest większa.' },
+          { id: 'znn2d2', q: 'Która liczba NIE jest dzielnikiem liczby 12?', options: ['5', '4', '6', '1'], answer: 0, explain: 'Dzielniki 12 to 1, 2, 3, 4, 6, 12. Przy dzieleniu 12 przez 5 zostaje reszta 2.' },
+          { id: 'sbiy9j', q: 'Ile dzielników ma liczba 18?', options: ['6', '4', '5', '3'], answer: 0, explain: 'Szukaj parami: 1 · 18, 2 · 9, 3 · 6. Dzielniki: 1, 2, 3, 6, 9, 18 – jest ich 6.' },
+          { id: '5wsrdh', q: 'Która liczba jest wielokrotnością liczby 7?', options: ['63', '27', '47', '71'], answer: 0, explain: '63 = 7 · 9. Pozostałe liczby przy dzieleniu przez 7 dają resztę.' },
+          { id: 'pncd31', q: 'Które liczby to kolejne wielokrotności liczby 6?', options: ['6, 12, 18, 24', '1, 2, 3, 6', '6, 16, 26, 36', '6, 11, 16, 21'], answer: 0, explain: '6 · 1 = 6, 6 · 2 = 12, 6 · 3 = 18, 6 · 4 = 24. Liczby 1, 2, 3, 6 to dzielniki 6, a nie wielokrotności.' },
+          { id: '8dowge', q: 'Która liczba jest podzielna przez 2?', options: ['3 578', '4 251', '7 003', '1 119'], answer: 0, explain: 'Liczba dzieli się przez 2, gdy jej ostatnia cyfra jest parzysta. 3 578 kończy się cyfrą 8.' },
+          { id: '5u2uyq', q: 'Która liczba dzieli się przez 5, ale NIE dzieli się przez 10?', options: ['345', '340', '342', '1 000'], answer: 0, explain: '345 kończy się cyfrą 5 – dzieli się przez 5, ale przez 10 nie (nie kończy się zerem). 342 nie dzieli się ani przez 5, ani przez 10.' },
+          { id: 'qbq35u', q: 'Która liczba jest podzielna przez 3?', options: ['5 271', '4 102', '2 501', '1 000'], answer: 0, explain: 'Suma cyfr 5 271: 5 + 2 + 7 + 1 = 15, a 15 dzieli się przez 3. Pozostałe sumy: 7, 8, 1.' },
+          { id: 'uksdsh', q: 'Która liczba jest podzielna przez 9?', options: ['4 518', '4 528', '3 333', '1 990'], answer: 0, explain: 'Suma cyfr 4 518 to 18 – dzieli się przez 9. 3 333 ma sumę 12: dzieli się przez 3, ale nie przez 9.' },
+          { id: 'ztteib', q: 'Która liczba jest podzielna przez 4?', options: ['1 316', '1 318', '2 410', '3 334'], answer: 0, explain: 'Patrzymy na dwie ostatnie cyfry: 16 dzieli się przez 4, a 18, 10 i 34 – nie.' },
+          { id: 'llplyn', q: 'Prawda czy fałsz?\nKażda liczba podzielna przez 9 jest podzielna przez 3.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '9 = 3 · 3. Jeśli liczba mieści w sobie całe dziewiątki, to mieści też całe trójki.' },
+          { id: 'hrxslx', q: 'Prawda czy fałsz?\nKażda liczba podzielna przez 3 jest podzielna przez 9.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Kontrprzykład: 12 dzieli się przez 3, ale nie dzieli się przez 9.' },
+          { id: 'bor7us', q: 'Która liczba jest liczbą pierwszą?', options: ['13', '15', '21', '27'], answer: 0, explain: '13 ma tylko dwa dzielniki: 1 i 13. 15 = 3 · 5, 21 = 3 · 7, 27 = 3 · 9 – to liczby złożone.' },
+          { id: '17697s', q: 'Która liczba jest liczbą złożoną?', options: ['51', '53', '47', '31'], answer: 0, explain: 'Suma cyfr 51 to 6, więc 51 dzieli się przez 3: 51 = 3 · 17. Liczby 53, 47 i 31 są pierwsze.' },
+          { id: 'wna5zh', q: 'Liczba 1 jest…', options: ['ani pierwsza, ani złożona', 'pierwsza', 'złożona'], answer: 0, explain: 'Liczba 1 ma tylko jeden dzielnik (samą siebie). Liczba pierwsza musi mieć dokładnie dwa dzielniki.' },
+          { id: 'd2nqkw', q: 'Ile wynosi największy wspólny dzielnik liczb 12 i 18?', options: ['6', '3', '2', '36'], answer: 0, explain: 'Wspólne dzielniki 12 i 18 to 1, 2, 3, 6. Największy z nich to 6.' },
+          { id: '3atsba', q: 'Ile wynosi najmniejsza wspólna wielokrotność liczb 4 i 6?', options: ['12', '24', '2', '10'], answer: 0, explain: 'Wielokrotności 4: 4, 8, 12… Wielokrotności 6: 6, 12… Pierwsza wspólna to 12. Liczba 24 też jest wspólną wielokrotnością, ale nie najmniejszą.' },
+          { id: 'lg29ul', q: 'Autobus linii A odjeżdża z przystanku co 15 minut, a linii B – co 20 minut. Oba odjechały razem o 8:00. O której znów odjadą razem?', options: ['o 9:00', 'o 8:35', 'o 8:20', 'o 8:15'], answer: 0, explain: 'Szukamy NWW(15, 20). Wielokrotności 15: 15, 30, 45, 60… Wielokrotności 20: 20, 40, 60… Pierwsza wspólna to 60 minut, czyli godzina: 9:00.' },
+          { id: 'affmiz', q: 'Masz 24 jabłka i 36 gruszek. Chcesz zrobić jak najwięcej jednakowych paczek (w każdej tyle samo jabłek i tyle samo gruszek), tak żeby nic nie zostało. Ile będzie paczek?', options: ['12', '6', '4', '72'], answer: 0, explain: 'Liczba paczek musi dzielić 24 i 36. Największy wspólny dzielnik to 12: w każdej paczce będą 2 jabłka i 3 gruszki.' },
+          { id: '6a5elj', q: 'Ile jest liczb dwucyfrowych podzielnych przez 10?', options: ['9', '10', '8', '90'], answer: 0, explain: 'To 10, 20, 30, 40, 50, 60, 70, 80, 90 – dziewięć liczb. 100 jest już trzycyfrowa.' },
+          { id: 'x933hs', q: 'Jaką cyfrę można wpisać w miejsce kratki, aby liczba 4■ była podzielna przez 3 i przez 5?', options: ['5', '0', '2', '8'], answer: 0, explain: 'Przez 5: ostatnia cyfra 0 lub 5. 40 ma sumę cyfr 4 – nie dzieli się przez 3. 45 ma sumę 9 – dzieli się przez 3. Pasuje 5.' },
         ],
       },
 
       // ------------------------------------------------------------------
-      {
-        id: 'rownania',
-        name: 'Wyrażenia z literą i proste równania',
-        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 3 Algebra, wym. 1 (opisywanie wielkości za pomocą wyrażeń algebraicznych w kontekście praktycznym), 2 (wartość prostego wyrażenia), 3 (proste wzory z literami), 4 (układanie równań na podstawie treści zadania), 5 (proste równania pierwszego stopnia z jedną niewiadomą występującą po jednej stronie równania – tu tylko z liczbami naturalnymi, rozwiązywane działaniem odwrotnym); dz. 6 Myślenie matematyczne (sprawdzanie rozwiązania).' + WYBOR,
-        theory: `
-          <h3>Litera zamiast liczby</h3>
-          <p>Gdy nie znamy liczby albo może ona być różna, zapisujemy ją <b>literą</b>, np. x, a, n. Taki zapis z literami i znakami działań to <b>wyrażenie algebraiczne</b>.</p>
-          <table>
-            <tr><th>Słowami</th><th>Wyrażenie</th></tr>
-            <tr><td>liczba o 5 większa od x</td><td>x + 5</td></tr>
-            <tr><td>liczba o 5 mniejsza od x</td><td>x − 5</td></tr>
-            <tr><td>liczba 3 razy większa od n</td><td>3 · n</td></tr>
-            <tr><td>liczba 2 razy mniejsza od a</td><td>a : 2</td></tr>
-            <tr><td>Ania ma x lat, brat jest o 3 lata starszy</td><td>wiek brata: x + 3</td></tr>
-            <tr><td>zeszyt kosztuje z zł, kupuję 4 zeszyty</td><td>4 · z zł</td></tr>
-          </table>
-          <h3>Wartość wyrażenia</h3>
-          <p>Podstawiasz liczbę w miejsce litery i liczysz (pamiętaj o kolejności działań). Dla a = 4: <span class="f">2 · a + 3 = 2 · 4 + 3 = 8 + 3 = 11</span>.</p>
-          <h3>Wzory</h3>
-          <p>Wzór to wyrażenie, które mówi, jak coś obliczyć. Obwód kwadratu o boku a: <span class="f">Ob = 4 · a</span>. Dla a = 6 cm: Ob = 4 · 6 = 24 cm.</p>
-          <h3>Równanie</h3>
-          <p><b>Równanie</b> to równość, w której jest <b>niewiadoma</b> (litera), np. <span class="f">x + 7 = 15</span>. <b>Rozwiązanie</b> równania to liczba, która wstawiona za x daje prawdziwą równość. Tu x = 8, bo 8 + 7 = 15.</p>
-          <p>Równanie jest jak <b>waga w równowadze</b>: po obu stronach jest tyle samo.</p>
-          <h3>Jak rozwiązać? Działanie odwrotne</h3>
-          <table>
-            <tr><th>Równanie</th><th>Myślę</th><th>Rozwiązanie</th></tr>
-            <tr><td>x + 7 = 15</td><td>15 − 7</td><td>x = 8</td></tr>
-            <tr><td>x − 6 = 9</td><td>9 + 6</td><td>x = 15</td></tr>
-            <tr><td>4 · x = 28</td><td>28 : 4</td><td>x = 7</td></tr>
-            <tr><td>x : 3 = 5</td><td>5 · 3</td><td>x = 15</td></tr>
-            <tr><td>20 − x = 12</td><td>20 − 12 (ile odjąć od 20, żeby zostało 12?)</td><td>x = 8</td></tr>
-          </table>
-          <div class="tip">💡 Zawsze <b>sprawdź</b>: wstaw wynik do równania. 4 · 7 = 28 – zgadza się!</div>
-          <h3>Zadanie tekstowe → równanie</h3>
-          <ol>
-            <li>Oznacz niewiadomą literą: „x – cena jednego długopisu”.</li>
-            <li>Ułóż równanie z treści: 3 długopisy kosztowały 12 zł → <span class="f">3 · x = 12</span>.</li>
-            <li>Rozwiąż: x = 12 : 3 = 4.</li>
-            <li>Sprawdź (3 · 4 = 12) i napisz odpowiedź: długopis kosztuje 4 zł.</li>
-          </ol>
-        `,
-        flashcards: [
-          ['Wyrażenie algebraiczne', 'Zapis z literami, liczbami i znakami działań, np. x + 5, 3 · n'],
-          ['Liczba o 5 większa od x', 'x + 5'],
-          ['Liczba 3 razy większa od n', '3 · n'],
-          ['Wartość wyrażenia 2 · a + 3 dla a = 4', '2 · 4 + 3 = 11'],
-          ['Wzór na obwód kwadratu', 'Ob = 4 · a'],
-          ['Równanie', 'Równość, w której jest niewiadoma, np. x + 7 = 15'],
-          ['Rozwiązanie równania', 'Liczba, która wstawiona za niewiadomą daje prawdziwą równość'],
-          ['x + 7 = 15', 'x = 15 − 7 = 8'],
-          ['4 · x = 28', 'x = 28 : 4 = 7'],
-          ['x : 3 = 5', 'x = 5 · 3 = 15'],
-          ['Jak sprawdzić rozwiązanie?', 'Wstawić je do równania i sprawdzić, czy obie strony są równe'],
-        ],
-        questions: [
-          { id: 'x8soq4', q: 'Jak zapisać liczbę o 5 większą od x?', options: ['x + 5', 'x − 5', '5 · x', 'x : 5'], answer: 0, explain: '„O 5 większa” – dodajemy 5: x + 5. (5 · x to liczba 5 razy większa.)' },
-          { id: 'kd0ok8', q: 'Jak zapisać liczbę 3 razy większą od n?', options: ['3 · n', 'n + 3', 'n − 3', 'n : 3'], answer: 0, explain: '„3 razy większa” – mnożymy przez 3: 3 · n.' },
-          { id: 'ui716j', q: 'Oblicz wartość wyrażenia 2 · a + 3 dla a = 4.', options: ['11', '14', '9', '24'], answer: 0, explain: '2 · 4 + 3 = 8 + 3 = 11. Najpierw mnożenie, potem dodawanie.' },
-          { id: '10900t', q: 'Ania ma x lat. Jej brat jest o 3 lata starszy. Ile lat ma brat?', options: ['x + 3', 'x − 3', '3 · x', 'x : 3'], answer: 0, explain: 'Starszy o 3 lata – dodajemy 3: x + 3.' },
-          { id: 'rmyk60', q: 'Zeszyt kosztuje z zł. Ile kosztują 4 takie zeszyty?', options: ['4 · z zł', 'z + 4 zł', 'z : 4 zł', 'z − 4 zł'], answer: 0, explain: '4 zeszyty po z zł: 4 · z zł.' },
-          { id: '9hbthv', q: 'Rozwiąż równanie: x + 7 = 15', options: ['x = 8', 'x = 22', 'x = 7', 'x = 105'], answer: 0, explain: 'Jaka liczba po dodaniu 7 daje 15? x = 15 − 7 = 8. Sprawdzenie: 8 + 7 = 15.' },
-          { id: 'l3dx21', q: 'Rozwiąż równanie: x − 6 = 9', options: ['x = 15', 'x = 3', 'x = 54', 'x = 6'], answer: 0, explain: 'Od jakiej liczby odjąć 6, żeby zostało 9? x = 9 + 6 = 15. Sprawdzenie: 15 − 6 = 9.' },
-          { id: '9xp5x2', q: 'Rozwiąż równanie: 4 · x = 28', options: ['x = 7', 'x = 24', 'x = 32', 'x = 112'], answer: 0, explain: 'Jaką liczbę pomnożyć przez 4, żeby dostać 28? x = 28 : 4 = 7. Sprawdzenie: 4 · 7 = 28.' },
-          { id: 'mz4ree', q: 'Rozwiąż równanie: x : 3 = 5', options: ['x = 15', 'x = 2', 'x = 8', 'x = 5'], answer: 0, explain: 'Jaką liczbę podzielić przez 3, żeby dostać 5? x = 5 · 3 = 15. Sprawdzenie: 15 : 3 = 5.' },
-          { id: 'ntoiwu', q: 'Rozwiąż równanie: 20 − x = 12', options: ['x = 8', 'x = 32', 'x = 12', 'x = 10'], answer: 0, explain: 'Ile trzeba odjąć od 20, żeby zostało 12? x = 20 − 12 = 8. Sprawdzenie: 20 − 8 = 12.' },
-          { id: '18akfa', q: 'Która liczba jest rozwiązaniem równania x + 9 = 20?', options: ['11', '29', '9', '20'], answer: 0, explain: '11 + 9 = 20 – równość jest prawdziwa.' },
-          { id: 'fhcyx5', q: 'Kasia rozwiązała równanie 5 · x = 35 i otrzymała x = 6. Czy dobrze?', options: ['nie – poprawne rozwiązanie to x = 7', 'tak, x = 6', 'nie – poprawne rozwiązanie to x = 30', 'nie – poprawne rozwiązanie to x = 40'], answer: 0, explain: 'Sprawdzenie: 5 · 6 = 30, a nie 35. Poprawnie: x = 35 : 5 = 7, bo 5 · 7 = 35.' },
-          { id: 'dhw95t', q: 'Pomyślałem liczbę, dodałem do niej 12 i otrzymałem 30. Które równanie to opisuje?', options: ['x + 12 = 30', 'x − 12 = 30', '12 · x = 30', 'x + 30 = 12'], answer: 0, explain: 'Liczba x, do której dodano 12, daje 30: x + 12 = 30. Rozwiązanie: x = 18.' },
-          { id: 'l4rubc', q: 'Bartek kupił 3 jednakowe długopisy i zapłacił 12 zł. Ile kosztował jeden długopis?', options: ['4 zł', '9 zł', '15 zł', '36 zł'], answer: 0, explain: 'Równanie: 3 · x = 12, więc x = 12 : 3 = 4 zł. Sprawdzenie: 3 · 4 = 12.' },
-          { id: 'i8jpto', q: 'Obwód kwadratu obliczamy ze wzoru Ob = 4 · a. Jaki obwód ma kwadrat o boku 6 cm?', options: ['24 cm', '10 cm', '36 cm', '12 cm'], answer: 0, explain: 'Ob = 4 · 6 = 24 cm. (36 cm² to pole tego kwadratu.)' },
-          { id: 'f8hvan', q: 'Prawda czy fałsz?\nRównanie to równość, w której występuje niewiadoma.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Np. x + 7 = 15 to równanie – x to niewiadoma.' },
-          {
-            id: 'g5jbnm',
-            q: 'Waga jest w równowadze. Ile kilogramów waży worek x?',
-            svg: `<svg viewBox="0 0 340 200" role="img" aria-label="Waga szalkowa w równowadze. Na lewej szalce worek oznaczony x i odważnik 3 kg. Na prawej szalce odważnik 8 kg.">
-      <path d="M150,190 L190,190 L176,90 L164,90 Z" class="f4 s4"/>
-      <line x1="40" y1="90" x2="300" y2="90" class="ln sw"/>
-      <circle cx="170" cy="90" r="6" class="t2"/>
-      <line x1="70" y1="90" x2="70" y2="150" class="ln-thin"/>
-      <line x1="270" y1="90" x2="270" y2="150" class="ln-thin"/>
-      <path d="M20,150 L120,150 L110,162 L30,162 Z" class="f1 s1"/>
-      <path d="M220,150 L320,150 L310,162 L230,162 Z" class="f1 s1"/>
-      <rect x="30" y="108" width="44" height="42" rx="12" class="f2 s2"/>
-      <text x="52" y="136" class="tx-b" text-anchor="middle">x</text>
-      <rect x="80" y="122" width="34" height="28" rx="4" class="f5 s5"/>
-      <text x="97" y="142" class="tx-s" text-anchor="middle">3 kg</text>
-      <rect x="248" y="114" width="44" height="36" rx="4" class="f5 s5"/>
-      <text x="270" y="137" class="tx" text-anchor="middle">8 kg</text>
-    </svg>`,
-            options: ['5 kg', '11 kg', '8 kg', '3 kg'],
-            answer: 0,
-            explain: 'Po obu stronach jest tyle samo: x + 3 = 8. Więc x = 8 − 3 = 5 kg.',
-          },
-          { id: 'o2suea', q: 'Oblicz wartość wyrażenia 5 · (b − 2) dla b = 6.', options: ['20', '28', '4', '30'], answer: 0, explain: 'Najpierw nawias: 6 − 2 = 4. Potem 5 · 4 = 20.' },
-          { id: 'qqehpv', q: 'Dla jakiej liczby y wyrażenie y + 4 ma wartość 10?', options: ['6', '14', '40', '4'], answer: 0, explain: 'y + 4 = 10, więc y = 10 − 4 = 6.' },
-        ],
-      },
       {
         id: 'dziesietne-dzialania',
         name: 'Ułamki dziesiętne – mnożenie i dzielenie',
+        extra: true,
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 28a (mnożenie ułamków dziesiętnych – tu przez 10, 100, 1000, przez liczbę naturalną i proste iloczyny dwóch ułamków, co najwyżej trzy cyfry po przecinku), 28b (dzielenie – tu tylko przez 10, 100, 1000 i przez liczbę naturalną jednocyfrową; dzielenie przez ułamek dziesiętny – później); dz. 2 Miary, wym. 2, 7 i 10 (zamiana jednostek długości i masy przez mnożenie i dzielenie przez 10, 100, 1000); dz. 2 wym. 13 (proste obliczenia pieniężne – moduł ekonomiczno-finansowy). Ciąg dalszy działu „Ułamki dziesiętne – pierwsze kroki”.' + WYBOR,
         theory: `
           <h3>Mnożenie przez 10, 100, 1000</h3>
@@ -1563,91 +1388,229 @@
 
       // ------------------------------------------------------------------
       {
-        id: 'procenty',
-        name: 'Procenty – pierwsze kroki',
-        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 33 (100% jako całość, 50% – połowa, 25% – jedna czwarta, 10% – jedna dziesiąta, 1% – jedna setna), 34 (procent danej wielkości w kontekście praktycznym – tu tylko 1%, 10%, 25%, 50%, 75% i wielokrotności 10%), 35 (porównywanie opłacalności – tu tylko cena po prostym rabacie; moduł ekonomiczno-finansowy). Obliczanie, jakim procentem jednej liczby jest druga, i liczby z jej procentu – klasy VII–VIII.' + WYBOR,
+        id: 'trojkaty-czworokaty',
+        name: 'Trójkąty i czworokąty',
+        extra: true,
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 7 (trójkąty ostrokątne, prostokątne, rozwartokątne; różnoboczne, równoramienne, równoboczne), 9 (tylko ramiona i podstawa trójkąta równoramiennego, równość ramion), 11 (kwadrat, prostokąt, romb, równoległobok, trapez, w tym równoramienny i prostokątny – rozpoznawanie i własności boków), 15 (obwód wielokąta). Suma kątów i konstrukcja trójkąta (wym. 8, 10) – dział „Kąty w trójkącie i czworokącie, budowanie trójkąta”; wysokości i pola (wym. 13–14) – dział „Wysokości i pola trójkątów i czworokątów”.' + WYBOR,
         theory: `
-          <h3>Co to jest procent?</h3>
-          <p><b>Procent</b> (znak <b>%</b>) to <b>jedna setna</b> całości. Słowo pochodzi od łacińskiego „na sto”.</p>
-          <p><span class="f">1% = 1/100</span> – gdy całość podzielisz na 100 równych części, 1% to jedna taka część.</p>
-          <h3>Procenty, które trzeba znać</h3>
+          <h3>Trójkąty – ze względu na kąty</h3>
           <table>
-            <tr><th>Procent</th><th>Jaka część całości</th></tr>
-            <tr><td>100%</td><td>cała całość</td></tr>
-            <tr><td>50%</td><td>połowa – 1/2</td></tr>
-            <tr><td>25%</td><td>ćwierć – 1/4</td></tr>
-            <tr><td>75%</td><td>trzy czwarte – 3/4</td></tr>
-            <tr><td>10%</td><td>jedna dziesiąta – 1/10</td></tr>
-            <tr><td>1%</td><td>jedna setna – 1/100</td></tr>
+            <tr><th>Trójkąt</th><th>Kąty</th></tr>
+            <tr><td>ostrokątny</td><td>wszystkie 3 kąty ostre</td></tr>
+            <tr><td>prostokątny</td><td>1 kąt prosty</td></tr>
+            <tr><td>rozwartokątny</td><td>1 kąt rozwarty</td></tr>
           </table>
-          <h3>Jak obliczyć procent liczby?</h3>
+          <p>Trójkąt nie może mieć dwóch kątów prostych ani dwóch rozwartych – jego boki nie spotkałyby się w trzecim wierzchołku.</p>
+          <h3>Trójkąty – ze względu na boki</h3>
           <ul>
-            <li><b>50%</b> – dziel przez 2: <span class="f">50% z 30 zł = 15 zł</span></li>
-            <li><b>25%</b> – dziel przez 4: <span class="f">25% z 40 = 10</span></li>
-            <li><b>10%</b> – dziel przez 10: <span class="f">10% z 70 = 7</span></li>
-            <li><b>1%</b> – dziel przez 100: <span class="f">1% z 300 = 3</span></li>
-            <li><b>20%</b> to 2 razy po 10%: <span class="f">20% z 50 = 2 · 5 = 10</span></li>
-            <li><b>75%</b> to 3 razy po 25%: <span class="f">75% z 80 = 3 · 20 = 60</span></li>
+            <li><b>Różnoboczny</b> – każdy bok ma inną długość.</li>
+            <li><b>Równoramienny</b> – ma dwa boki równej długości. To <b>ramiona</b>, a trzeci bok to <b>podstawa</b>.</li>
+            <li><b>Równoboczny</b> – wszystkie 3 boki są równe. To szczególny trójkąt równoramienny.</li>
           </ul>
-          <div class="tip">💡 Najpierw policz 10% (albo 25%, albo 1%), a potem pomnóż – tak policzysz w pamięci prawie każdy procent.</div>
-          <h3>Część i reszta</h3>
-          <p>Wszystkie części razem to 100%. Gdy przeczytasz 30% książki, zostanie ci <span class="f">100% − 30% = 70%</span>.</p>
-          <h3>Promocje i rabaty</h3>
-          <p><b>Rabat</b> (obniżka) to część ceny, której nie płacisz.</p>
+          <p>Na rysunkach równe boki zaznacza się takimi samymi kreskami.</p>
+          <h3>Czworokąty</h3>
+          <table>
+            <tr><th>Czworokąt</th><th>Co go wyróżnia</th></tr>
+            <tr><td>kwadrat</td><td>4 równe boki i 4 kąty proste</td></tr>
+            <tr><td>prostokąt</td><td>4 kąty proste, przeciwległe boki równe</td></tr>
+            <tr><td>romb</td><td>4 równe boki (kąty nie muszą być proste)</td></tr>
+            <tr><td>równoległobok</td><td>dwie pary boków równoległych; przeciwległe boki są równe</td></tr>
+            <tr><td>trapez</td><td>co najmniej jedna para boków równoległych</td></tr>
+          </table>
           <ul>
-            <li>Kurtka za 60 zł, rabat 10%: obniżka = 10% z 60 = 6 zł, nowa cena <span class="f">60 − 6 = 54 zł</span>.</li>
-            <li>„−50%” na grę za 24 zł: płacisz połowę, czyli <span class="f">12 zł</span>.</li>
+            <li>W trapezie boki równoległe to <b>podstawy</b>, a dwa pozostałe – <b>ramiona</b>.</li>
+            <li><b>Trapez równoramienny</b> ma ramiona równej długości.</li>
+            <li><b>Trapez prostokątny</b> ma ramię prostopadłe do podstaw – są w nim kąty proste.</li>
           </ul>
-          <p>Porównując oferty, zawsze licz <b>cenę końcową</b> – wyższy rabat nie zawsze oznacza niższą cenę.</p>
+          <div class="tip">💡 Kwadrat jest jednocześnie prostokątem i rombem. Prostokąt i romb są równoległobokami.</div>
+          <h3>Obwód</h3>
+          <ul>
+            <li>Trójkąt równoramienny o ramionach 7 cm i podstawie 4 cm: <span class="f">7 + 7 + 4 = 18 cm</span>.</li>
+            <li>Trójkąt równoboczny o boku 6 cm: <span class="f">3 · 6 = 18 cm</span>.</li>
+            <li>Romb o boku 5 cm: <span class="f">4 · 5 = 20 cm</span>.</li>
+            <li>Równoległobok o bokach 8 cm i 5 cm: <span class="f">2 · 8 + 2 · 5 = 26 cm</span>.</li>
+          </ul>
         `,
         flashcards: [
-          ['1%', 'Jedna setna całości – 1/100'],
-          ['100%', 'Cała całość'],
-          ['50%', 'Połowa – dziel przez 2'],
-          ['25%', 'Ćwierć – dziel przez 4'],
-          ['10%', 'Jedna dziesiąta – dziel przez 10'],
-          ['75%', 'Trzy czwarte – 3 razy po 25%'],
-          ['50% z 30 zł', '15 zł'],
-          ['10% z 70', '7'],
-          ['20% z 50', '10 (2 razy po 10%, czyli 2 · 5)'],
-          ['Przeczytano 30% książki. Ile zostało?', '70% (100% − 30%)'],
-          ['Kurtka 60 zł, rabat 10%', 'Obniżka 6 zł, cena 54 zł'],
+          ['Trójkąt ostrokątny', 'Wszystkie 3 kąty ostre'],
+          ['Trójkąt prostokątny', 'Jeden kąt prosty'],
+          ['Trójkąt rozwartokątny', 'Jeden kąt rozwarty'],
+          ['Trójkąt różnoboczny', 'Każdy bok innej długości'],
+          ['Trójkąt równoramienny', 'Dwa równe boki (ramiona), trzeci bok to podstawa'],
+          ['Trójkąt równoboczny', 'Wszystkie 3 boki równe'],
+          ['Romb', '4 boki równej długości'],
+          ['Równoległobok', 'Dwie pary boków równoległych; przeciwległe boki równe'],
+          ['Trapez', 'Co najmniej jedna para boków równoległych'],
+          ['Podstawy i ramiona trapezu', 'Podstawy – boki równoległe; ramiona – dwa pozostałe boki'],
+          ['Trapez równoramienny', 'Ramiona równej długości'],
+          ['Trapez prostokątny', 'Ramię prostopadłe do podstaw – ma kąty proste'],
+          ['Kwadrat a romb i prostokąt', 'Kwadrat jest jednocześnie rombem i prostokątem'],
         ],
         questions: [
-          { id: 'da6z38', q: '1% to…', options: ['jedna setna całości', 'jedna dziesiąta całości', 'połowa całości', 'cała całość'], answer: 0, explain: 'Procent to setna część: 1% = 1/100.' },
-          { id: 'baxqdt', q: '50% to…', options: ['połowa', 'ćwierć', 'jedna dziesiąta', 'całość'], answer: 0, explain: '50% = 50/100 = 1/2, czyli połowa.' },
-          { id: 'pvl20p', q: 'Jaką częścią całości jest 25%?', options: ['1/4', '1/25', '1/2', '1/5'], answer: 0, explain: '25% = 25/100 = 1/4 – ćwierć. Cztery razy po 25% to 100%.' },
-          { id: 'vtsvhl', q: 'Ile to jest 50% z 30 zł?', options: ['15 zł', '50 zł', '3 zł', '60 zł'], answer: 0, explain: '50% to połowa: 30 : 2 = 15 zł.' },
-          { id: '3m3yqc', q: 'Ile to jest 10% z 70?', options: ['7', '70', '0,7', '10'], answer: 0, explain: '10% to jedna dziesiąta: 70 : 10 = 7.' },
-          { id: 'ggbwy7', q: 'Ile to jest 25% z 40?', options: ['10', '25', '20', '4'], answer: 0, explain: '25% to ćwierć: 40 : 4 = 10.' },
-          { id: '9mhqzj', q: 'Ile to jest 1% z 300?', options: ['3', '30', '1', '300'], answer: 0, explain: '1% to jedna setna: 300 : 100 = 3.' },
-          { id: 'b0bujj', q: 'Ile to jest 20% z 50?', options: ['10', '20', '5', '25'], answer: 0, explain: '10% z 50 = 5. 20% to dwa razy więcej: 2 · 5 = 10.' },
-          { id: 'x9lg7o', q: 'Ile to jest 75% z 80?', options: ['60', '75', '20', '40'], answer: 0, explain: '25% z 80 = 80 : 4 = 20. 75% to trzy razy więcej: 3 · 20 = 60.' },
-          { id: 'wmij29', q: 'Ile to jest 10% z 5 zł?', options: ['50 gr', '5 gr', '1 zł', '10 gr'], answer: 0, explain: '5 zł = 500 gr. 500 gr : 10 = 50 gr.' },
-          { id: 'wzp26n', q: 'Ile to jest 100% z 45?', options: ['45', '100', '4,5', '0,45'], answer: 0, explain: '100% to cała liczba: 45.' },
-          { id: '6d9mn1', q: 'Na siatce ze 100 kratek zamalowano 37 kratek. Jaki procent siatki zamalowano?', options: ['37%', '63%', '3,7%', '100%'], answer: 0, explain: 'Każda kratka to 1/100 siatki, czyli 1%. 37 kratek to 37%.' },
-          { id: 'fun8rl', q: 'Kasia przeczytała 30% książki. Jaka część książki została jej do przeczytania?', options: ['70%', '30%', '60%', '100%'], answer: 0, explain: 'Cała książka to 100%. 100% − 30% = 70%.' },
-          { id: 'g5ykj7', q: 'W klasie jest 20 uczniów. 50% z nich to dziewczynki. Ile jest dziewczynek?', options: ['10', '50', '5', '15'], answer: 0, explain: '50% to połowa: 20 : 2 = 10.' },
-          { id: '02vdf3', q: 'Kurtka kosztuje 60 zł. Sklep daje rabat 10%. Ile zapłacisz po obniżce?', options: ['54 zł', '50 zł', '6 zł', '66 zł'], answer: 0, explain: 'Obniżka: 10% z 60 = 6 zł. Cena: 60 − 6 = 54 zł. 6 zł to sama obniżka, nie cena.' },
-          { id: 'tsafvj', q: 'Gra kosztowała 24 zł. Teraz jest promocja „−50%”. Ile kosztuje gra?', options: ['12 zł', '48 zł', '6 zł', '23,50 zł'], answer: 0, explain: '−50% oznacza obniżkę o połowę ceny: 24 : 2 = 12 zł.' },
-          { id: '1z0scd', q: 'Sklep A: buty za 80 zł z rabatem 25%. Sklep B: te same buty za 70 zł bez rabatu. Gdzie zapłacisz mniej?', options: ['w sklepie A – 60 zł', 'w sklepie B – 70 zł', 'tyle samo w obu'], noShuffle: true, answer: 0, explain: '25% z 80 = 20 zł, więc w sklepie A buty kosztują 80 − 20 = 60 zł. To mniej niż 70 zł.' },
-          { id: '234aaq', q: 'Co jest więcej: 10% z 200 czy 50% z 30?', options: ['10% z 200', '50% z 30', 'tyle samo'], noShuffle: true, answer: 0, explain: '10% z 200 = 20, a 50% z 30 = 15. Większy procent nie zawsze daje większy wynik – liczy się też całość.' },
+          { id: '2j9757', q: 'Trójkąt ma jeden kąt prosty. Jaki to trójkąt?', options: ['prostokątny', 'ostrokątny', 'rozwartokątny', 'równoboczny'], answer: 0, explain: 'Trójkąt z kątem prostym to trójkąt prostokątny.' },
+          { id: 'ah280g', q: 'Wszystkie kąty trójkąta są ostre. Jaki to trójkąt?', options: ['ostrokątny', 'prostokątny', 'rozwartokątny'], answer: 0, explain: 'Trzy kąty ostre – trójkąt ostrokątny.' },
+          { id: '3fpiv8', q: 'Kąty trójkąta mają 100°, 50° i 30°. Jaki to trójkąt?', options: ['rozwartokątny', 'ostrokątny', 'prostokątny'], answer: 0, explain: 'Kąt 100° jest większy od kąta prostego (90°), czyli rozwarty. Trójkąt jest rozwartokątny.' },
+          { id: '37xjoe', q: 'Trójkąt ma boki 5 cm, 5 cm i 3 cm. Jaki to trójkąt?', options: ['równoramienny', 'równoboczny', 'różnoboczny'], answer: 0, explain: 'Dwa boki są równe (5 cm) – to ramiona. Trzeci bok jest inny, więc trójkąt nie jest równoboczny.' },
+          { id: 'msadcc', q: 'Trójkąt ma boki 4 cm, 5 cm i 6 cm. Jaki to trójkąt?', options: ['różnoboczny', 'równoramienny', 'równoboczny'], answer: 0, explain: 'Każdy bok ma inną długość – trójkąt różnoboczny.' },
+          { id: 'oapx9n', q: 'Trójkąt równoramienny ma ramiona po 7 cm i podstawę 4 cm. Jaki ma obwód?', options: ['18 cm', '11 cm', '15 cm', '21 cm'], answer: 0, explain: 'Dwa ramiona i podstawa: 7 + 7 + 4 = 18 cm.' },
+          { id: 'rlwv0w', q: 'Jaki obwód ma trójkąt równoboczny o boku 6 cm?', options: ['18 cm', '12 cm', '36 cm', '6 cm'], answer: 0, explain: 'Trzy równe boki: 3 · 6 = 18 cm.' },
+          { id: 'sn2w08', q: 'Trójkąt równoboczny ma obwód 27 cm. Jaką długość ma jego bok?', options: ['9 cm', '7 cm', '13 cm', '24 cm'], answer: 0, explain: 'Trzy równe boki: 27 : 3 = 9 cm.' },
+          { id: 'sisc8b', q: 'Trójkąt równoramienny ma obwód 20 cm, a jego podstawa ma 6 cm. Jaką długość ma ramię?', options: ['7 cm', '14 cm', '6 cm', '8 cm'], answer: 0, explain: 'Na dwa ramiona zostaje 20 − 6 = 14 cm, czyli na jedno 14 : 2 = 7 cm.' },
           {
-            id: 'j0t4kg',
-            q: 'Jaki procent koła zajmuje część żółta?',
-            svg: `<svg viewBox="0 0 320 200" role="img" aria-label="Koło podzielone na części: lewa połowa niebieska, prawa górna ćwiartka zielona, prawa dolna ćwiartka żółta">
-      <path d="M160,100 L160,20 A80,80 0 0,0 160,180 Z" class="f1 s1 sw"/>
-      <path d="M160,100 L160,20 A80,80 0 0,1 240,100 Z" class="f3 s3 sw"/>
-      <path d="M160,100 L240,100 A80,80 0 0,1 160,180 Z" class="f4 s4 sw"/>
-      <text x="40" y="104" class="tx-s" text-anchor="middle">niebieska</text>
-      <text x="276" y="40" class="tx-s" text-anchor="middle">zielona</text>
-      <text x="276" y="176" class="tx-s" text-anchor="middle">żółta</text>
+            id: 'sedc8d',
+            q: 'Który trójkąt jest rozwartokątny?',
+            svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Trzy trójkąty. A – wszystkie kąty ostre. B – kąt prosty w lewym dolnym wierzchołku. C – kąt rozwarty w lewym dolnym wierzchołku.">
+      <path d="M20,150 L110,150 L70,40 Z" class="f1 s1 sw"/>
+      <path d="M150,150 L240,150 L150,50 Z" class="f3 s3 sw"/>
+      <path d="M150,136 L164,136 L164,150" class="ln"/>
+      <path d="M270,150 L390,150 L250,95 Z" class="f2 s2 sw"/>
+      <text x="65" y="180" class="tx-b" text-anchor="middle">A</text>
+      <text x="195" y="180" class="tx-b" text-anchor="middle">B</text>
+      <text x="320" y="180" class="tx-b" text-anchor="middle">C</text>
     </svg>`,
-            options: ['25%', '50%', '75%', '20%'],
+            options: ['C', 'A', 'B'],
             answer: 0,
-            explain: 'Niebieska część to połowa (50%), zielona – ćwierć (25%). Żółta też jest ćwiartką: 100% − 50% − 25% = 25%.',
+            explain: 'W trójkącie C kąt przy lewym dolnym wierzchołku jest większy od prostego – rozwarty. A jest ostrokątny, B – prostokątny (zaznaczony kąt prosty).',
           },
-          { id: 'u23vj4', q: 'Prawda czy fałsz?\n25% to więcej niż połowa.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Połowa to 50%. 25% to ćwierć – dwa razy mniej niż połowa.' },
+          { id: '32z540', q: 'Ile par boków równoległych ma równoległobok?', options: ['2', '1', '0', '4'], answer: 0, explain: 'Równoległobok ma dwie pary boków równoległych – stąd jego nazwa.' },
+          { id: '346ezw', q: 'Czworokąt ma 4 boki równej długości, ale nie ma kątów prostych. Jak się nazywa?', options: ['romb', 'kwadrat', 'prostokąt'], answer: 0, explain: 'Cztery równe boki ma romb i kwadrat, ale kwadrat ma kąty proste. Bez kątów prostych – romb.' },
+          { id: '4l0xup', q: 'Jak nazywamy równoległe boki trapezu?', options: ['podstawami', 'ramionami', 'przekątnymi'], answer: 0, explain: 'Boki równoległe to podstawy trapezu, a dwa pozostałe boki – ramiona.' },
+          { id: '303y86', q: 'Równoległobok ma boki 8 cm i 5 cm. Jaki ma obwód?', options: ['26 cm', '13 cm', '40 cm', '21 cm'], answer: 0, explain: 'Przeciwległe boki są równe: 8 + 5 + 8 + 5 = 26 cm.' },
+          { id: 'jj1xco', q: 'Jaki obwód ma romb o boku 7 cm?', options: ['28 cm', '14 cm', '49 cm', '21 cm'], answer: 0, explain: 'Romb ma 4 równe boki: 4 · 7 = 28 cm.' },
+          { id: 'lsbgfa', q: 'Trapez równoramienny ma podstawy 10 cm i 6 cm, a ramię 4 cm. Jaki ma obwód?', options: ['24 cm', '20 cm', '28 cm', '16 cm'], answer: 0, explain: 'Ramiona są równe: 10 + 6 + 4 + 4 = 24 cm.' },
+          {
+            id: 'dsikrb',
+            q: 'Jak nazywa się czworokąt na rysunku?',
+            svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Czworokąt na kratce: górny i dolny bok poziome i równoległe, górny krótszy. Lewy bok pionowy, z kątami prostymi przy obu podstawach. Prawy bok ukośny.">
+      <g class="ln-thin"><line x1="20" y1="10" x2="20" y2="190"/><line x1="50" y1="10" x2="50" y2="190"/><line x1="80" y1="10" x2="80" y2="190"/><line x1="110" y1="10" x2="110" y2="190"/><line x1="140" y1="10" x2="140" y2="190"/><line x1="170" y1="10" x2="170" y2="190"/><line x1="200" y1="10" x2="200" y2="190"/><line x1="230" y1="10" x2="230" y2="190"/><line x1="260" y1="10" x2="260" y2="190"/><line x1="290" y1="10" x2="290" y2="190"/><line x1="320" y1="10" x2="320" y2="190"/><line x1="350" y1="10" x2="350" y2="190"/><line x1="380" y1="10" x2="380" y2="190"/><line x1="20" y1="10" x2="380" y2="10"/><line x1="20" y1="40" x2="380" y2="40"/><line x1="20" y1="70" x2="380" y2="70"/><line x1="20" y1="100" x2="380" y2="100"/><line x1="20" y1="130" x2="380" y2="130"/><line x1="20" y1="160" x2="380" y2="160"/><line x1="20" y1="190" x2="380" y2="190"/></g>
+      <path d="M80,40 L200,40 L320,160 L80,160 Z" class="f5 s5 sw"/>
+      <path d="M80,54 L94,54 L94,40 M80,146 L94,146 L94,160" class="ln"/>
+    </svg>`,
+            options: ['trapez prostokątny', 'równoległobok', 'romb', 'prostokąt'],
+            answer: 0,
+            explain: 'Tylko górny i dolny bok są równoległe – to trapez. Lewe ramię jest prostopadłe do podstaw (kąty proste), więc to trapez prostokątny.',
+          },
+          { id: 'vcbmtk', q: 'Prawda czy fałsz?\nKażdy kwadrat jest rombem.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Kwadrat ma 4 równe boki – spełnia warunek rombu.' },
+          { id: 'bf13aw', q: 'Prawda czy fałsz?\nKażdy romb jest kwadratem.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Romb nie musi mieć kątów prostych – wtedy nie jest kwadratem.' },
+          { id: 'f42pva', q: 'Prawda czy fałsz?\nTrójkąt może mieć dwa kąty proste.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Gdyby przy podstawie były dwa kąty proste, oba boki biegłyby prostopadle w górę, równolegle do siebie – nigdy by się nie spotkały.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
+        id: 'katy-trojkata',
+        name: 'Kąty w trójkącie i czworokącie, budowanie trójkąta',
+        extra: true,
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 8 (suma miar kątów w trójkącie i w czworokącie), 9 (równość kątów przy podstawie trójkąta równoramiennego), 10 (konstrukcja trójkąta o podanych bokach, możliwość zbudowania trójkąta z odcinków o danych długościach), 11 (własności czworokątów – tu kąty prostokąta, równoległoboku i trapezu prostokątnego); dz. 2 Miary, wym. 3 (mierzenie kątów); dz. 6 Myślenie matematyczne (sprawdzanie wszystkich warunków, uzasadnianie). Ciąg dalszy działów „Proste, odcinki i kąty” oraz „Trójkąty i czworokąty”.' + WYBOR,
+        theory: `
+          <h3>Suma kątów w trójkącie</h3>
+          <p>W <b>każdym</b> trójkącie kąty mają razem <b>180°</b>. Sprawdź: wytnij trójkąt z papieru, oderwij jego trzy rogi i przyłóż je do siebie – złożą się w kąt półpełny (180°).</p>
+          <p><b>Brakujący kąt</b>: od 180° odejmij sumę dwóch znanych kątów.</p>
+          <ul>
+            <li>kąty 50° i 60° → trzeci: <span class="f">180° − (50° + 60°) = 180° − 110° = 70°</span></li>
+            <li>kąty 35° i 45° → trzeci: <span class="f">180° − 80° = 100°</span></li>
+          </ul>
+          <h3>Trójkąty szczególne</h3>
+          <table>
+            <tr><th>Trójkąt</th><th>Co wiemy o kątach?</th></tr>
+            <tr><td>prostokątny</td><td>jeden kąt ma 90°, więc dwa pozostałe mają razem <b>90°</b> (np. 30° i 60°)</td></tr>
+            <tr><td>równoboczny</td><td>wszystkie kąty równe: <b>60°</b> każdy (180° : 3)</td></tr>
+            <tr><td>równoramienny</td><td><b>kąty przy podstawie są równe</b></td></tr>
+          </table>
+          <p>Trójkąt równoramienny – przykłady:</p>
+          <ul>
+            <li>kąt między ramionami 40° → kąty przy podstawie: <span class="f">(180° − 40°) : 2 = 140° : 2 = 70°</span></li>
+            <li>kąt przy podstawie 50° → kąt między ramionami: <span class="f">180° − 50° − 50° = 80°</span></li>
+          </ul>
+          <div class="tip">💡 W trójkącie może być najwyżej <b>jeden</b> kąt prosty albo rozwarty. Dwa takie kąty miałyby już razem co najmniej 180° – na trzeci nic by nie zostało.</div>
+          <h3>Suma kątów w czworokącie</h3>
+          <p>Przekątna dzieli czworokąt na <b>dwa trójkąty</b>. Dlatego kąty czworokąta mają razem <span class="f">2 · 180° = 360°</span>.</p>
+          <ul>
+            <li>kąty 80°, 100° i 70° → czwarty: <span class="f">360° − 250° = 110°</span></li>
+            <li>prostokąt i kwadrat: 4 · 90° = 360°</li>
+            <li><b>równoległobok</b>: kąty naprzeciwko siebie są równe, a dwa kąty przy tym samym boku mają razem 180° (np. 70° i 110°)</li>
+            <li><b>trapez prostokątny</b>: dwa kąty proste; dwa pozostałe mają razem 180° (np. 60° i 120°)</li>
+          </ul>
+          <h3>Czy z tych odcinków zbudujesz trójkąt?</h3>
+          <p>Trójkąt da się zbudować tylko wtedy, gdy <b>najdłuższy odcinek jest krótszy od sumy dwóch pozostałych</b>.</p>
+          <ul>
+            <li>3 cm, 4 cm, 5 cm: 3 + 4 = 7 &gt; 5 → <b>tak</b></li>
+            <li>2 cm, 3 cm, 6 cm: 2 + 3 = 5 &lt; 6 → <b>nie</b> (krótkie boki się nie spotkają)</li>
+            <li>2 cm, 3 cm, 5 cm: 2 + 3 = 5 – tyle samo co najdłuższy → <b>nie</b> (boki położą się płasko na najdłuższym)</li>
+          </ul>
+          <h3>Konstrukcja trójkąta o danych bokach (cyrkiel i linijka)</h3>
+          <ol>
+            <li>Narysuj linijką odcinek AB – jeden z boków.</li>
+            <li>Rozstaw cyrkiel na długość drugiego boku, wbij nóżkę w A i narysuj łuk.</li>
+            <li>Rozstaw cyrkiel na długość trzeciego boku, wbij nóżkę w B i narysuj łuk.</li>
+            <li>Punkt przecięcia łuków to wierzchołek C. Połącz go z A i B.</li>
+          </ol>
+          <p>Jeśli łuki się nie przecinają – z tych odcinków nie da się zbudować trójkąta.</p>
+        `,
+        flashcards: [
+          ['Suma kątów w trójkącie', '180°'],
+          ['Suma kątów w czworokącie', '360° (dwa trójkąty)'],
+          ['Brakujący kąt trójkąta', '180° minus suma dwóch znanych kątów'],
+          ['Kąty 50° i 60° – trzeci kąt?', '70°'],
+          ['Kąty ostre w trójkącie prostokątnym', 'Mają razem 90°'],
+          ['Kąty trójkąta równobocznego', 'Każdy ma 60°'],
+          ['Trójkąt równoramienny – kąty', 'Kąty przy podstawie są równe'],
+          ['Ile kątów rozwartych może mieć trójkąt?', 'Najwyżej jeden'],
+          ['Równoległobok – kąty', 'Przeciwległe równe; dwa przy tym samym boku mają razem 180°'],
+          ['Kiedy z trzech odcinków zbudujesz trójkąt?', 'Gdy najdłuższy jest krótszy od sumy dwóch pozostałych'],
+          ['2 cm, 3 cm, 6 cm – trójkąt?', 'Nie, bo 2 + 3 = 5, a 5 < 6'],
+          ['Czym odkładasz długości boków w konstrukcji?', 'Cyrklem – łuki z obu końców odcinka przecinają się w trzecim wierzchołku'],
+        ],
+        questions: [
+          { id: 'p88ocq', q: 'Ile stopni mają razem wszystkie kąty dowolnego trójkąta?', options: ['180°', '360°', '90°', '270°'], answer: 0, explain: 'Suma kątów w każdym trójkącie to 180° – oderwane rogi trójkąta składają się w kąt półpełny.' },
+          { id: '8euvvm', q: 'Dwa kąty trójkąta mają 50° i 60°. Ile stopni ma trzeci kąt?', options: ['70°', '80°', '110°', '60°'], answer: 0, explain: '180° − (50° + 60°) = 180° − 110° = 70°. Sprawdzenie: 50° + 60° + 70° = 180°.' },
+          { id: 'a97mc6', q: 'Dwa kąty trójkąta mają 35° i 45°. Ile stopni ma trzeci kąt?', options: ['100°', '80°', '90°', '110°'], answer: 0, explain: '35° + 45° = 80°, a 180° − 80° = 100°. Ten trójkąt jest rozwartokątny.' },
+          { id: 'vnvwqs', q: 'W trójkącie prostokątnym jeden z kątów ostrych ma 30°. Ile ma drugi kąt ostry?', options: ['60°', '30°', '150°', '70°'], answer: 0, explain: 'Kąty ostre trójkąta prostokątnego mają razem 90°: 90° − 30° = 60°.' },
+          { id: '92cxow', q: 'Ile stopni ma każdy kąt trójkąta równobocznego?', options: ['60°', '90°', '45°', '180°'], answer: 0, explain: 'Wszystkie kąty są równe: 180° : 3 = 60°.' },
+          { id: 'yvhqvv', q: 'W trójkącie równoramiennym kąt między ramionami ma 40°. Ile stopni ma każdy kąt przy podstawie?', options: ['70°', '140°', '40°', '50°'], answer: 0, explain: 'Kąty przy podstawie są równe: (180° − 40°) : 2 = 140° : 2 = 70°. Sprawdzenie: 40° + 70° + 70° = 180°.' },
+          { id: '0cyfhq', q: 'W trójkącie równoramiennym kąt przy podstawie ma 50°. Ile stopni ma kąt między ramionami?', options: ['80°', '50°', '130°', '100°'], answer: 0, explain: 'Oba kąty przy podstawie mają po 50°: 180° − 50° − 50° = 80°.' },
+          { id: 'l6mkiy', q: 'Które trzy kąty mogą być kątami jednego trójkąta?', options: ['50°, 60°, 70°', '60°, 60°, 70°', '90°, 90°, 10°', '30°, 40°, 50°'], answer: 0, explain: 'Tylko 50° + 60° + 70° = 180°. Pozostałe sumy: 190°, 190° i 120°.' },
+          { id: '3kbngx', q: 'W trójkącie jeden kąt jest prosty. Ile stopni mają razem dwa pozostałe kąty?', options: ['90°', '180°', '45°', '270°'], answer: 0, explain: '180° − 90° = 90°.' },
+          {
+            id: 'l36emm',
+            q: 'Ile stopni ma kąt x w trójkącie z rysunku?',
+            svg: `<svg viewBox="0 0 320 200" role="img" aria-label="Trójkąt: kąt przy lewym dolnym wierzchołku 45 stopni, przy prawym dolnym 75 stopni, kąt przy górnym wierzchołku oznaczony literą x">
+      <path d="M60,175 L260,175 L218,17 Z" class="f1 s1 sw"/>
+      <path d="M95,175 A35,35 0 0 0 85,150" class="ln"/>
+      <path d="M232,175 A28,28 0 0 1 253,148" class="ln"/>
+      <text x="100" y="166" class="tx">45°</text>
+      <text x="226" y="166" class="tx" text-anchor="end">75°</text>
+      <text x="216" y="58" class="tx-b" text-anchor="middle">x</text>
+    </svg>`,
+            options: ['60°', '120°', '75°', '30°'],
+            answer: 0,
+            explain: '45° + 75° = 120°, więc x = 180° − 120° = 60°.',
+          },
+          { id: 'ojwe3a', q: 'Ile stopni mają razem wszystkie kąty czworokąta?', options: ['360°', '180°', '400°', '90°'], answer: 0, explain: 'Przekątna dzieli czworokąt na dwa trójkąty: 2 · 180° = 360°.' },
+          { id: 'k7p9e8', q: 'Trzy kąty czworokąta mają 80°, 100° i 70°. Ile stopni ma czwarty kąt?', options: ['110°', '100°', '70°', '290°'], answer: 0, explain: '80° + 100° + 70° = 250°, a 360° − 250° = 110°.' },
+          { id: 'qr69f7', q: 'Jeden kąt równoległoboku ma 70°. Ile stopni ma kąt leżący przy tym samym boku?', options: ['110°', '70°', '20°', '290°'], answer: 0, explain: 'Dwa kąty przy tym samym boku równoległoboku mają razem 180°: 180° − 70° = 110°.' },
+          {
+            id: 'vq8zyz',
+            q: 'Trapez prostokątny ma kąty jak na rysunku. Ile stopni ma kąt x?',
+            svg: `<svg viewBox="0 0 340 200" role="img" aria-label="Trapez prostokątny: dwa kąty proste po lewej stronie, kąt przy prawym górnym wierzchołku ma 120 stopni, kąt przy prawym dolnym wierzchołku oznaczony literą x">
+      <path d="M60,170 L300,170 L225,40 L60,40 Z" class="f3 s3 sw"/>
+      <path d="M60,154 L76,154 L76,170" class="ln"/>
+      <path d="M60,56 L76,56 L76,40" class="ln"/>
+      <path d="M205,40 A20,20 0 0 0 235,57" class="ln"/>
+      <path d="M270,170 A30,30 0 0 1 285,144" class="ln"/>
+      <text x="200" y="82" class="tx">120°</text>
+      <text x="262" y="160" class="tx-b" text-anchor="end">x</text>
+    </svg>`,
+            options: ['60°', '120°', '90°', '30°'],
+            answer: 0,
+            explain: 'Kąty czworokąta mają razem 360°: 360° − 90° − 90° − 120° = 60°.',
+          },
+          { id: 'lidy2i', q: 'Z których odcinków można zbudować trójkąt?', options: ['3 cm, 4 cm, 5 cm', '2 cm, 3 cm, 6 cm', '1 cm, 2 cm, 3 cm', '4 cm, 4 cm, 9 cm'], answer: 0, explain: '3 + 4 = 7, a 7 > 5. W pozostałych: 2 + 3 = 5 < 6; 1 + 2 = 3 (tyle samo co najdłuższy); 4 + 4 = 8 < 9.' },
+          { id: 'r7jcg6', q: 'Z których odcinków NIE da się zbudować trójkąta?', options: ['2 cm, 4 cm, 7 cm', '5 cm, 5 cm, 5 cm', '3 cm, 5 cm, 7 cm', '4 cm, 6 cm, 9 cm'], answer: 0, explain: '2 + 4 = 6, a najdłuższy odcinek ma 7 cm – krótsze boki się nie spotkają. W pozostałych suma krótszych jest większa od najdłuższego.' },
+          { id: 'znq6cc', q: 'Jak najszybciej sprawdzić, czy z trzech odcinków da się zbudować trójkąt?', options: ['najdłuższy odcinek musi być krótszy od sumy dwóch pozostałych', 'wszystkie odcinki muszą być równe', 'suma odcinków musi wynosić 180', 'najkrótszy odcinek musi być dłuższy od sumy dwóch pozostałych'], answer: 0, explain: 'Wystarczy porównać najdłuższy odcinek z sumą dwóch krótszych.' },
+          { id: 'j33lez', q: 'Konstruujesz trójkąt o danych bokach. Którym przyrządem odkładasz długości dwóch pozostałych boków od końców narysowanego odcinka?', options: ['cyrklem', 'kątomierzem', 'kalkulatorem', 'gumką'], answer: 0, explain: 'Cyrklem rysujesz łuki o promieniach równych długościom boków. Ich punkt przecięcia to trzeci wierzchołek.' },
+          { id: 'qovnx1', q: 'Prawda czy fałsz?\nTrójkąt może mieć dwa kąty rozwarte.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Dwa kąty rozwarte miałyby razem ponad 180° – a wszystkie trzy kąty trójkąta mają razem dokładnie 180°.' },
+          { id: 'ta7yrx', q: 'Prawda czy fałsz?\nW każdym trójkącie równoramiennym kąty przy podstawie są równe.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'To własność trójkąta równoramiennego: równe ramiona i równe kąty przy podstawie.' },
         ],
       },
 
@@ -1655,6 +1618,7 @@
       {
         id: 'pola-wielokatow',
         name: 'Wysokości i pola trójkątów i czworokątów',
+        extra: true,
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 13 (wysokości w trójkącie, równoległoboku i trapezie), 14 (pole trójkąta, rombu, równoległoboku, trapezu oraz figur, które można z nich zbudować); dz. 2 Miary, wym. 4 i 6 (jednostki pola, zamiana jednostek długości przed obliczeniem); dz. 3 Algebra, wym. 3 (korzystanie z prostych wzorów z literami). Ciąg dalszy działów „Trójkąty i czworokąty” oraz „Jednostki pola i figury złożone”.' + WYBOR,
         theory: `
           <h3>Wysokość</h3>
@@ -1772,216 +1736,279 @@
 
       // ------------------------------------------------------------------
       {
-        id: 'katy-trojkata',
-        name: 'Kąty w trójkącie i czworokącie, budowanie trójkąta',
-        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 8 (suma miar kątów w trójkącie i w czworokącie), 9 (równość kątów przy podstawie trójkąta równoramiennego), 10 (konstrukcja trójkąta o podanych bokach, możliwość zbudowania trójkąta z odcinków o danych długościach), 11 (własności czworokątów – tu kąty prostokąta, równoległoboku i trapezu prostokątnego); dz. 2 Miary, wym. 3 (mierzenie kątów); dz. 6 Myślenie matematyczne (sprawdzanie wszystkich warunków, uzasadnianie). Ciąg dalszy działów „Proste, odcinki i kąty” oraz „Trójkąty i czworokąty”.' + WYBOR,
+        id: 'symetria',
+        name: 'Symetria osiowa',
+        extra: true,
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 12 (figury osiowosymetryczne, wskazywanie i rysowanie osi symetrii; dorysowywanie figury symetrycznej na kratce).' + WYBOR,
         theory: `
-          <h3>Suma kątów w trójkącie</h3>
-          <p>W <b>każdym</b> trójkącie kąty mają razem <b>180°</b>. Sprawdź: wytnij trójkąt z papieru, oderwij jego trzy rogi i przyłóż je do siebie – złożą się w kąt półpełny (180°).</p>
-          <p><b>Brakujący kąt</b>: od 180° odejmij sumę dwóch znanych kątów.</p>
-          <ul>
-            <li>kąty 50° i 60° → trzeci: <span class="f">180° − (50° + 60°) = 180° − 110° = 70°</span></li>
-            <li>kąty 35° i 45° → trzeci: <span class="f">180° − 80° = 100°</span></li>
-          </ul>
-          <h3>Trójkąty szczególne</h3>
+          <h3>Figura osiowosymetryczna</h3>
+          <p>Figurę można złożyć wzdłuż prostej tak, że obie połowy dokładnie się pokryją? Taka figura jest <b>osiowosymetryczna</b>, a ta prosta to jej <b>oś symetrii</b>.</p>
+          <p>Przykłady z życia: motyl, liść, serce, twarz (prawie), litera A.</p>
+          <h3>Ile osi symetrii?</h3>
           <table>
-            <tr><th>Trójkąt</th><th>Co wiemy o kątach?</th></tr>
-            <tr><td>prostokątny</td><td>jeden kąt ma 90°, więc dwa pozostałe mają razem <b>90°</b> (np. 30° i 60°)</td></tr>
-            <tr><td>równoboczny</td><td>wszystkie kąty równe: <b>60°</b> każdy (180° : 3)</td></tr>
-            <tr><td>równoramienny</td><td><b>kąty przy podstawie są równe</b></td></tr>
+            <tr><th>Figura</th><th>Osie symetrii</th></tr>
+            <tr><td>kwadrat</td><td>4</td></tr>
+            <tr><td>prostokąt (niebędący kwadratem)</td><td>2</td></tr>
+            <tr><td>romb (niebędący kwadratem)</td><td>2 – wzdłuż przekątnych</td></tr>
+            <tr><td>trójkąt równoboczny</td><td>3</td></tr>
+            <tr><td>trójkąt równoramienny (niebędący równobocznym)</td><td>1</td></tr>
+            <tr><td>trapez równoramienny</td><td>1</td></tr>
+            <tr><td>koło i okrąg</td><td>nieskończenie wiele – każda prosta przez środek</td></tr>
+            <tr><td>trójkąt różnoboczny</td><td>0</td></tr>
           </table>
-          <p>Trójkąt równoramienny – przykłady:</p>
+          <div class="tip">💡 Pułapka: przekątna prostokąta, który nie jest kwadratem, <b>nie jest</b> jego osią symetrii. Złóż kartkę po przekątnej – rogi nie spotkają się.</div>
+          <h3>Litery</h3>
+          <p>W zwykłym druku litera A ma pionową oś symetrii, litera H – dwie osie (pionową i poziomą), a litery N, S i Z nie mają żadnej.</p>
+          <h3>Dorysowywanie na kratce</h3>
           <ul>
-            <li>kąt między ramionami 40° → kąty przy podstawie: <span class="f">(180° − 40°) : 2 = 140° : 2 = 70°</span></li>
-            <li>kąt przy podstawie 50° → kąt między ramionami: <span class="f">180° − 50° − 50° = 80°</span></li>
+            <li>Każdy punkt figury przenosisz na drugą stronę osi – <b>prostopadle do osi</b>, na <b>tę samą odległość</b> (tyle samo kratek).</li>
+            <li>Punkt 3 kratki na lewo od pionowej osi → jego obraz 3 kratki na prawo, na tej samej wysokości.</li>
+            <li>Punkt leżący na osi zostaje na miejscu.</li>
           </ul>
-          <div class="tip">💡 W trójkącie może być najwyżej <b>jeden</b> kąt prosty albo rozwarty. Dwa takie kąty miałyby już razem co najmniej 180° – na trzeci nic by nie zostało.</div>
-          <h3>Suma kątów w czworokącie</h3>
-          <p>Przekątna dzieli czworokąt na <b>dwa trójkąty</b>. Dlatego kąty czworokąta mają razem <span class="f">2 · 180° = 360°</span>.</p>
-          <ul>
-            <li>kąty 80°, 100° i 70° → czwarty: <span class="f">360° − 250° = 110°</span></li>
-            <li>prostokąt i kwadrat: 4 · 90° = 360°</li>
-            <li><b>równoległobok</b>: kąty naprzeciwko siebie są równe, a dwa kąty przy tym samym boku mają razem 180° (np. 70° i 110°)</li>
-            <li><b>trapez prostokątny</b>: dwa kąty proste; dwa pozostałe mają razem 180° (np. 60° i 120°)</li>
-          </ul>
-          <h3>Czy z tych odcinków zbudujesz trójkąt?</h3>
-          <p>Trójkąt da się zbudować tylko wtedy, gdy <b>najdłuższy odcinek jest krótszy od sumy dwóch pozostałych</b>.</p>
-          <ul>
-            <li>3 cm, 4 cm, 5 cm: 3 + 4 = 7 &gt; 5 → <b>tak</b></li>
-            <li>2 cm, 3 cm, 6 cm: 2 + 3 = 5 &lt; 6 → <b>nie</b> (krótkie boki się nie spotkają)</li>
-            <li>2 cm, 3 cm, 5 cm: 2 + 3 = 5 – tyle samo co najdłuższy → <b>nie</b> (boki położą się płasko na najdłuższym)</li>
-          </ul>
-          <h3>Konstrukcja trójkąta o danych bokach (cyrkiel i linijka)</h3>
-          <ol>
-            <li>Narysuj linijką odcinek AB – jeden z boków.</li>
-            <li>Rozstaw cyrkiel na długość drugiego boku, wbij nóżkę w A i narysuj łuk.</li>
-            <li>Rozstaw cyrkiel na długość trzeciego boku, wbij nóżkę w B i narysuj łuk.</li>
-            <li>Punkt przecięcia łuków to wierzchołek C. Połącz go z A i B.</li>
-          </ol>
-          <p>Jeśli łuki się nie przecinają – z tych odcinków nie da się zbudować trójkąta.</p>
         `,
         flashcards: [
-          ['Suma kątów w trójkącie', '180°'],
-          ['Suma kątów w czworokącie', '360° (dwa trójkąty)'],
-          ['Brakujący kąt trójkąta', '180° minus suma dwóch znanych kątów'],
-          ['Kąty 50° i 60° – trzeci kąt?', '70°'],
-          ['Kąty ostre w trójkącie prostokątnym', 'Mają razem 90°'],
-          ['Kąty trójkąta równobocznego', 'Każdy ma 60°'],
-          ['Trójkąt równoramienny – kąty', 'Kąty przy podstawie są równe'],
-          ['Ile kątów rozwartych może mieć trójkąt?', 'Najwyżej jeden'],
-          ['Równoległobok – kąty', 'Przeciwległe równe; dwa przy tym samym boku mają razem 180°'],
-          ['Kiedy z trzech odcinków zbudujesz trójkąt?', 'Gdy najdłuższy jest krótszy od sumy dwóch pozostałych'],
-          ['2 cm, 3 cm, 6 cm – trójkąt?', 'Nie, bo 2 + 3 = 5, a 5 < 6'],
-          ['Czym odkładasz długości boków w konstrukcji?', 'Cyrklem – łuki z obu końców odcinka przecinają się w trzecim wierzchołku'],
+          ['Oś symetrii', 'Prosta, wzdłuż której można złożyć figurę tak, że obie połowy się pokrywają'],
+          ['Ile osi symetrii ma kwadrat?', '4'],
+          ['Ile osi symetrii ma prostokąt (niebędący kwadratem)?', '2'],
+          ['Ile osi symetrii ma trójkąt równoboczny?', '3'],
+          ['Ile osi symetrii ma trójkąt równoramienny (niebędący równobocznym)?', '1'],
+          ['Ile osi symetrii ma koło?', 'Nieskończenie wiele – każda prosta przez środek'],
+          ['Osie symetrii rombu (niebędącego kwadratem)', '2 – wzdłuż przekątnych'],
+          ['Czy przekątna prostokąta jest jego osią symetrii?', 'Nie (chyba że prostokąt jest kwadratem)'],
+          ['Figura bez osi symetrii', 'Np. trójkąt różnoboczny, litera N'],
+          ['Dorysowywanie na kratce', 'Prostopadle do osi, tyle samo kratek po drugiej stronie'],
         ],
         questions: [
-          { id: 'p88ocq', q: 'Ile stopni mają razem wszystkie kąty dowolnego trójkąta?', options: ['180°', '360°', '90°', '270°'], answer: 0, explain: 'Suma kątów w każdym trójkącie to 180° – oderwane rogi trójkąta składają się w kąt półpełny.' },
-          { id: '8euvvm', q: 'Dwa kąty trójkąta mają 50° i 60°. Ile stopni ma trzeci kąt?', options: ['70°', '80°', '110°', '60°'], answer: 0, explain: '180° − (50° + 60°) = 180° − 110° = 70°. Sprawdzenie: 50° + 60° + 70° = 180°.' },
-          { id: 'a97mc6', q: 'Dwa kąty trójkąta mają 35° i 45°. Ile stopni ma trzeci kąt?', options: ['100°', '80°', '90°', '110°'], answer: 0, explain: '35° + 45° = 80°, a 180° − 80° = 100°. Ten trójkąt jest rozwartokątny.' },
-          { id: 'vnvwqs', q: 'W trójkącie prostokątnym jeden z kątów ostrych ma 30°. Ile ma drugi kąt ostry?', options: ['60°', '30°', '150°', '70°'], answer: 0, explain: 'Kąty ostre trójkąta prostokątnego mają razem 90°: 90° − 30° = 60°.' },
-          { id: '92cxow', q: 'Ile stopni ma każdy kąt trójkąta równobocznego?', options: ['60°', '90°', '45°', '180°'], answer: 0, explain: 'Wszystkie kąty są równe: 180° : 3 = 60°.' },
-          { id: 'yvhqvv', q: 'W trójkącie równoramiennym kąt między ramionami ma 40°. Ile stopni ma każdy kąt przy podstawie?', options: ['70°', '140°', '40°', '50°'], answer: 0, explain: 'Kąty przy podstawie są równe: (180° − 40°) : 2 = 140° : 2 = 70°. Sprawdzenie: 40° + 70° + 70° = 180°.' },
-          { id: '0cyfhq', q: 'W trójkącie równoramiennym kąt przy podstawie ma 50°. Ile stopni ma kąt między ramionami?', options: ['80°', '50°', '130°', '100°'], answer: 0, explain: 'Oba kąty przy podstawie mają po 50°: 180° − 50° − 50° = 80°.' },
-          { id: 'l6mkiy', q: 'Które trzy kąty mogą być kątami jednego trójkąta?', options: ['50°, 60°, 70°', '60°, 60°, 70°', '90°, 90°, 10°', '30°, 40°, 50°'], answer: 0, explain: 'Tylko 50° + 60° + 70° = 180°. Pozostałe sumy: 190°, 190° i 120°.' },
-          { id: '3kbngx', q: 'W trójkącie jeden kąt jest prosty. Ile stopni mają razem dwa pozostałe kąty?', options: ['90°', '180°', '45°', '270°'], answer: 0, explain: '180° − 90° = 90°.' },
+          { id: '8kf72a', q: 'Ile osi symetrii ma kwadrat?', options: ['4', '2', '1', '8'], answer: 0, explain: 'Pionowa, pozioma i dwie wzdłuż przekątnych – razem 4.' },
+          { id: 'kctcv5', q: 'Ile osi symetrii ma prostokąt, który nie jest kwadratem?', options: ['2', '4', '1', '0'], answer: 0, explain: 'Pionowa i pozioma przez środek. Przekątne nie są osiami symetrii.' },
+          { id: 'gebxc9', q: 'Ile osi symetrii ma trójkąt równoboczny?', options: ['3', '1', '0', '6'], answer: 0, explain: 'Każda oś biegnie od wierzchołka do środka przeciwległego boku – są 3.' },
+          { id: 'a7sojm', q: 'Ile osi symetrii ma trójkąt równoramienny, który nie jest równoboczny?', options: ['1', '2', '3', '0'], answer: 0, explain: 'Jedna oś – od wierzchołka między ramionami do środka podstawy.' },
+          { id: 'g5i8va', q: 'Ile osi symetrii ma koło?', options: ['nieskończenie wiele', '1', '2', '4'], answer: 0, explain: 'Każda prosta przechodząca przez środek koła dzieli je na dwie jednakowe połowy.' },
+          { id: '0d2ztl', q: 'Ile osi symetrii ma romb, który nie jest kwadratem?', options: ['2', '4', '1', '0'], answer: 0, explain: 'Osiami symetrii rombu są proste, na których leżą jego przekątne.' },
+          { id: 'a1nf9r', q: 'Ile osi symetrii ma trapez równoramienny?', options: ['1', '2', '0', '4'], answer: 0, explain: 'Jedna pionowa oś przez środki obu podstaw.' },
+          { id: 'g6ykw1', q: 'Która figura nie ma osi symetrii?', options: ['trójkąt różnoboczny', 'kwadrat', 'koło', 'trójkąt równoramienny'], answer: 0, explain: 'Trójkąt różnoboczny ma każdy bok inny – nie da się go złożyć na dwie jednakowe połowy.' },
+          { id: 'hk2rdg', q: 'Która wielka litera (w zwykłym druku) ma pionową oś symetrii?', options: ['A', 'N', 'S', 'Z'], answer: 0, explain: 'Litera A jest taka sama po lewej i po prawej stronie pionowej osi. N, S i Z nie mają osi symetrii.' },
+          { id: 'dxroqo', q: 'Ile osi symetrii ma wielka litera H (w zwykłym druku)?', options: ['2', '1', '0', '4'], answer: 0, explain: 'Pionowa i pozioma – H wygląda tak samo po złożeniu wzdłuż każdej z nich.' },
+          { id: '497wqn', q: 'Pionowa oś symetrii przechodzi przez kratkę. Punkt A leży 3 kratki na lewo od niej. Gdzie leży punkt do niego symetryczny?', options: ['3 kratki na prawo od osi, na tej samej wysokości', '6 kratek na prawo od osi', 'na osi', '3 kratki nad punktem A'], answer: 0, explain: 'Obraz punktu leży po drugiej stronie osi, w tej samej odległości: 3 kratki na prawo.' },
           {
-            id: 'l36emm',
-            q: 'Ile stopni ma kąt x w trójkącie z rysunku?',
-            svg: `<svg viewBox="0 0 320 200" role="img" aria-label="Trójkąt: kąt przy lewym dolnym wierzchołku 45 stopni, przy prawym dolnym 75 stopni, kąt przy górnym wierzchołku oznaczony literą x">
-      <path d="M60,175 L260,175 L218,17 Z" class="f1 s1 sw"/>
-      <path d="M95,175 A35,35 0 0 0 85,150" class="ln"/>
-      <path d="M232,175 A28,28 0 0 1 253,148" class="ln"/>
-      <text x="100" y="166" class="tx">45°</text>
-      <text x="226" y="166" class="tx" text-anchor="end">75°</text>
-      <text x="216" y="58" class="tx-b" text-anchor="middle">x</text>
+            id: '1a0m3f',
+            q: 'Ile kratek będzie zamalowanych, gdy dorysujesz figurę symetryczną do zamalowanej względem osi?',
+            svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Kratka z pionową osią przerywaną pośrodku. Po lewej stronie osi zamalowano 5 kratek: 3 kratki w rzędzie przy osi i 2 kratki nad nimi, też przy osi.">
+      <g class="ln-thin"><line x1="20" y1="10" x2="20" y2="190"/><line x1="50" y1="10" x2="50" y2="190"/><line x1="80" y1="10" x2="80" y2="190"/><line x1="110" y1="10" x2="110" y2="190"/><line x1="140" y1="10" x2="140" y2="190"/><line x1="170" y1="10" x2="170" y2="190"/><line x1="200" y1="10" x2="200" y2="190"/><line x1="230" y1="10" x2="230" y2="190"/><line x1="260" y1="10" x2="260" y2="190"/><line x1="290" y1="10" x2="290" y2="190"/><line x1="320" y1="10" x2="320" y2="190"/><line x1="350" y1="10" x2="350" y2="190"/><line x1="380" y1="10" x2="380" y2="190"/><line x1="20" y1="10" x2="380" y2="10"/><line x1="20" y1="40" x2="380" y2="40"/><line x1="20" y1="70" x2="380" y2="70"/><line x1="20" y1="100" x2="380" y2="100"/><line x1="20" y1="130" x2="380" y2="130"/><line x1="20" y1="160" x2="380" y2="160"/><line x1="20" y1="190" x2="380" y2="190"/></g>
+      <rect x="110" y="100" width="90" height="30" class="f1 s1"/>
+      <rect x="140" y="70" width="60" height="30" class="f1 s1"/>
+      <line x1="200" y1="0" x2="200" y2="200" class="ln s2 sw dash"/>
     </svg>`,
-            options: ['60°', '120°', '75°', '30°'],
+            options: ['10', '5', '8', '12'],
             answer: 0,
-            explain: '45° + 75° = 120°, więc x = 180° − 120° = 60°.',
+            explain: 'Zamalowanych jest 5 kratek. Po drugiej stronie osi pojawi się tyle samo: 5 + 5 = 10.',
           },
-          { id: 'ojwe3a', q: 'Ile stopni mają razem wszystkie kąty czworokąta?', options: ['360°', '180°', '400°', '90°'], answer: 0, explain: 'Przekątna dzieli czworokąt na dwa trójkąty: 2 · 180° = 360°.' },
-          { id: 'k7p9e8', q: 'Trzy kąty czworokąta mają 80°, 100° i 70°. Ile stopni ma czwarty kąt?', options: ['110°', '100°', '70°', '290°'], answer: 0, explain: '80° + 100° + 70° = 250°, a 360° − 250° = 110°.' },
-          { id: 'qr69f7', q: 'Jeden kąt równoległoboku ma 70°. Ile stopni ma kąt leżący przy tym samym boku?', options: ['110°', '70°', '20°', '290°'], answer: 0, explain: 'Dwa kąty przy tym samym boku równoległoboku mają razem 180°: 180° − 70° = 110°.' },
           {
-            id: 'vq8zyz',
-            q: 'Trapez prostokątny ma kąty jak na rysunku. Ile stopni ma kąt x?',
-            svg: `<svg viewBox="0 0 340 200" role="img" aria-label="Trapez prostokątny: dwa kąty proste po lewej stronie, kąt przy prawym górnym wierzchołku ma 120 stopni, kąt przy prawym dolnym wierzchołku oznaczony literą x">
-      <path d="M60,170 L300,170 L225,40 L60,40 Z" class="f3 s3 sw"/>
-      <path d="M60,154 L76,154 L76,170" class="ln"/>
-      <path d="M60,56 L76,56 L76,40" class="ln"/>
-      <path d="M205,40 A20,20 0 0 0 235,57" class="ln"/>
-      <path d="M270,170 A30,30 0 0 1 285,144" class="ln"/>
-      <text x="200" y="82" class="tx">120°</text>
-      <text x="262" y="160" class="tx-b" text-anchor="end">x</text>
+            id: '562a8e',
+            q: 'Prawda czy fałsz?\nPrzerywana linia na rysunku jest osią symetrii prostokąta.',
+            svg: `<svg viewBox="0 0 340 170" role="img" aria-label="Prostokąt dłuższy niż wyższy. Przerywana linia biegnie po przekątnej, z lewego dolnego do prawego górnego rogu.">
+      <rect x="60" y="30" width="220" height="110" class="f4 s4 sw"/>
+      <line x1="60" y1="140" x2="280" y2="30" class="ln s2 sw dash"/>
     </svg>`,
-            options: ['60°', '120°', '90°', '30°'],
-            answer: 0,
-            explain: 'Kąty czworokąta mają razem 360°: 360° − 90° − 90° − 120° = 60°.',
+            options: ['Prawda', 'Fałsz'],
+            noShuffle: true,
+            answer: 1,
+            explain: 'To przekątna. Jeśli złożysz prostokąt (niebędący kwadratem) po przekątnej, rogi nie spotkają się – połowy się nie pokryją.',
           },
-          { id: 'lidy2i', q: 'Z których odcinków można zbudować trójkąt?', options: ['3 cm, 4 cm, 5 cm', '2 cm, 3 cm, 6 cm', '1 cm, 2 cm, 3 cm', '4 cm, 4 cm, 9 cm'], answer: 0, explain: '3 + 4 = 7, a 7 > 5. W pozostałych: 2 + 3 = 5 < 6; 1 + 2 = 3 (tyle samo co najdłuższy); 4 + 4 = 8 < 9.' },
-          { id: 'r7jcg6', q: 'Z których odcinków NIE da się zbudować trójkąta?', options: ['2 cm, 4 cm, 7 cm', '5 cm, 5 cm, 5 cm', '3 cm, 5 cm, 7 cm', '4 cm, 6 cm, 9 cm'], answer: 0, explain: '2 + 4 = 6, a najdłuższy odcinek ma 7 cm – krótsze boki się nie spotkają. W pozostałych suma krótszych jest większa od najdłuższego.' },
-          { id: 'znq6cc', q: 'Jak najszybciej sprawdzić, czy z trzech odcinków da się zbudować trójkąt?', options: ['najdłuższy odcinek musi być krótszy od sumy dwóch pozostałych', 'wszystkie odcinki muszą być równe', 'suma odcinków musi wynosić 180', 'najkrótszy odcinek musi być dłuższy od sumy dwóch pozostałych'], answer: 0, explain: 'Wystarczy porównać najdłuższy odcinek z sumą dwóch krótszych.' },
-          { id: 'j33lez', q: 'Konstruujesz trójkąt o danych bokach. Którym przyrządem odkładasz długości dwóch pozostałych boków od końców narysowanego odcinka?', options: ['cyrklem', 'kątomierzem', 'kalkulatorem', 'gumką'], answer: 0, explain: 'Cyrklem rysujesz łuki o promieniach równych długościom boków. Ich punkt przecięcia to trzeci wierzchołek.' },
-          { id: 'qovnx1', q: 'Prawda czy fałsz?\nTrójkąt może mieć dwa kąty rozwarte.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Dwa kąty rozwarte miałyby razem ponad 180° – a wszystkie trzy kąty trójkąta mają razem dokładnie 180°.' },
-          { id: 'ta7yrx', q: 'Prawda czy fałsz?\nW każdym trójkącie równoramiennym kąty przy podstawie są równe.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'To własność trójkąta równoramiennego: równe ramiona i równe kąty przy podstawie.' },
+          { id: 'rib7zz', q: 'Prawda czy fałsz?\nKażda prosta przechodząca przez środek koła jest jego osią symetrii.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Koło złożone wzdłuż dowolnej średnicy daje dwie jednakowe połówki.' },
+          { id: 'meqncu', q: 'Prawda czy fałsz?\nPunkt leżący na osi symetrii po odbiciu zostaje w tym samym miejscu.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Jego odległość od osi to 0 kratek, więc obraz to ten sam punkt.' },
+          { id: 'iec2j4', q: 'Prawda czy fałsz?\nRównoległobok, który nie jest ani prostokątem, ani rombem, ma oś symetrii.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Taki „przekrzywiony” równoległobok nie ma żadnej osi symetrii – żadne złożenie nie da dwóch pokrywających się połówek.' },
         ],
       },
 
       // ------------------------------------------------------------------
       {
-        id: 'objetosc',
-        name: 'Pole powierzchni i objętość prostopadłościanu',
-        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 21 (pole powierzchni prostopadłościanu), 22 (objętość prostopadłościanu o podanych krawędziach i bryły zbudowanej z kilku prostopadłościanów); dz. 2 Miary, wym. 5 (jednostki objętości i pojemności: cm³, dm³, m³, mililitr, litr), 6 (przeliczanie jednostek objętości w kontekstach praktycznych). Ciąg dalszy działu „Prostopadłościan i sześcian”.' + WYBOR,
+        id: 'rownania',
+        name: 'Wyrażenia z literą i proste równania',
+        extra: true,
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 3 Algebra, wym. 1 (opisywanie wielkości za pomocą wyrażeń algebraicznych w kontekście praktycznym), 2 (wartość prostego wyrażenia), 3 (proste wzory z literami), 4 (układanie równań na podstawie treści zadania), 5 (proste równania pierwszego stopnia z jedną niewiadomą występującą po jednej stronie równania – tu tylko z liczbami naturalnymi, rozwiązywane działaniem odwrotnym); dz. 6 Myślenie matematyczne (sprawdzanie rozwiązania).' + WYBOR,
         theory: `
-          <h3>Pole powierzchni</h3>
-          <p><b>Pole powierzchni</b> prostopadłościanu to suma pól jego <b>sześciu ścian</b> – tyle papieru potrzeba, żeby okleić pudełko. Ściany tworzą <b>trzy pary</b> jednakowych prostokątów.</p>
-          <p>Krawędzie: a, b, c. Pary ścian mają pola a · b, b · c i a · c, więc:</p>
-          <p><span class="f">P = 2 · a · b + 2 · b · c + 2 · a · c</span></p>
-          <p>Przykład: 5 cm × 3 cm × 2 cm → <span class="f">P = 2 · 15 + 2 · 6 + 2 · 10 = 30 + 12 + 20 = 62 cm²</span></p>
-          <p><b>Sześcian</b> ma 6 jednakowych kwadratów: <span class="f">P = 6 · a · a</span>. Krawędź 4 cm → P = 6 · 16 = 96 cm².</p>
-          <div class="tip">💡 Pudełko <b>bez wieka</b> ma tylko 5 ścian – jedną odejmij. Pudełko 10 cm × 10 cm × 5 cm bez wieka: 100 + 4 · 50 = 300 cm².</div>
-          <h3>Objętość</h3>
-          <p><b>Objętość</b> mówi, ile miejsca zajmuje bryła. Mierzymy ją w <b>sześcianach jednostkowych</b>: 1 cm³ to sześcian o krawędzi 1 cm.</p>
-          <p>Pudełko 4 cm × 3 cm × 2 cm: na dnie zmieści się 4 · 3 = 12 kostek, a takich warstw są 2 → 24 kostki, czyli 24 cm³.</p>
-          <p><span class="f">V = a · b · c</span> &nbsp;&nbsp; sześcian: <span class="f">V = a · a · a</span></p>
-          <ul>
-            <li>5 cm × 3 cm × 2 cm → V = 30 cm³</li>
-            <li>sześcian o krawędzi 4 cm → V = 4 · 4 · 4 = 64 cm³</li>
-          </ul>
-          <h3>Jednostki objętości i pojemności</h3>
+          <h3>Litera zamiast liczby</h3>
+          <p>Gdy nie znamy liczby albo może ona być różna, zapisujemy ją <b>literą</b>, np. x, a, n. Taki zapis z literami i znakami działań to <b>wyrażenie algebraiczne</b>.</p>
           <table>
-            <tr><th>Jednostka</th><th>Ile to?</th></tr>
-            <tr><td>1 cm³</td><td>= <b>1 ml</b> (mililitr)</td></tr>
-            <tr><td>1 dm³</td><td>= 10 · 10 · 10 cm³ = <b>1000 cm³</b> = <b>1 l</b> (litr)</td></tr>
-            <tr><td>1 m³</td><td>= 1000 dm³ = <b>1000 l</b></td></tr>
+            <tr><th>Słowami</th><th>Wyrażenie</th></tr>
+            <tr><td>liczba o 5 większa od x</td><td>x + 5</td></tr>
+            <tr><td>liczba o 5 mniejsza od x</td><td>x − 5</td></tr>
+            <tr><td>liczba 3 razy większa od n</td><td>3 · n</td></tr>
+            <tr><td>liczba 2 razy mniejsza od a</td><td>a : 2</td></tr>
+            <tr><td>Ania ma x lat, brat jest o 3 lata starszy</td><td>wiek brata: x + 3</td></tr>
+            <tr><td>zeszyt kosztuje z zł, kupuję 4 zeszyty</td><td>4 · z zł</td></tr>
           </table>
-          <p>Akwarium 50 cm × 30 cm × 40 cm: V = 60 000 cm³ = 60 dm³ = <b>60 l</b>.</p>
-          <h3>Bryła z kilku prostopadłościanów</h3>
-          <p>Podziel bryłę na prostopadłościany, oblicz objętość każdego i dodaj. Np. 4 cm × 3 cm × 2 cm i 2 cm × 3 cm × 2 cm: 24 + 12 = 36 cm³.</p>
-          <div class="tip">💡 Pole – w jednostkach „do kwadratu” (cm²), objętość – „do sześcianu” (cm³). Przed liczeniem zamień wszystkie krawędzie na te same jednostki.</div>
+          <h3>Wartość wyrażenia</h3>
+          <p>Podstawiasz liczbę w miejsce litery i liczysz (pamiętaj o kolejności działań). Dla a = 4: <span class="f">2 · a + 3 = 2 · 4 + 3 = 8 + 3 = 11</span>.</p>
+          <h3>Wzory</h3>
+          <p>Wzór to wyrażenie, które mówi, jak coś obliczyć. Obwód kwadratu o boku a: <span class="f">Ob = 4 · a</span>. Dla a = 6 cm: Ob = 4 · 6 = 24 cm.</p>
+          <h3>Równanie</h3>
+          <p><b>Równanie</b> to równość, w której jest <b>niewiadoma</b> (litera), np. <span class="f">x + 7 = 15</span>. <b>Rozwiązanie</b> równania to liczba, która wstawiona za x daje prawdziwą równość. Tu x = 8, bo 8 + 7 = 15.</p>
+          <p>Równanie jest jak <b>waga w równowadze</b>: po obu stronach jest tyle samo.</p>
+          <h3>Jak rozwiązać? Działanie odwrotne</h3>
+          <table>
+            <tr><th>Równanie</th><th>Myślę</th><th>Rozwiązanie</th></tr>
+            <tr><td>x + 7 = 15</td><td>15 − 7</td><td>x = 8</td></tr>
+            <tr><td>x − 6 = 9</td><td>9 + 6</td><td>x = 15</td></tr>
+            <tr><td>4 · x = 28</td><td>28 : 4</td><td>x = 7</td></tr>
+            <tr><td>x : 3 = 5</td><td>5 · 3</td><td>x = 15</td></tr>
+            <tr><td>20 − x = 12</td><td>20 − 12 (ile odjąć od 20, żeby zostało 12?)</td><td>x = 8</td></tr>
+          </table>
+          <div class="tip">💡 Zawsze <b>sprawdź</b>: wstaw wynik do równania. 4 · 7 = 28 – zgadza się!</div>
+          <h3>Zadanie tekstowe → równanie</h3>
+          <ol>
+            <li>Oznacz niewiadomą literą: „x – cena jednego długopisu”.</li>
+            <li>Ułóż równanie z treści: 3 długopisy kosztowały 12 zł → <span class="f">3 · x = 12</span>.</li>
+            <li>Rozwiąż: x = 12 : 3 = 4.</li>
+            <li>Sprawdź (3 · 4 = 12) i napisz odpowiedź: długopis kosztuje 4 zł.</li>
+          </ol>
         `,
         flashcards: [
-          ['Pole powierzchni prostopadłościanu', 'Suma pól 6 ścian: P = 2·a·b + 2·b·c + 2·a·c'],
-          ['Pole powierzchni sześcianu', 'P = 6 · a · a'],
-          ['Objętość prostopadłościanu', 'V = a · b · c'],
-          ['Objętość sześcianu', 'V = a · a · a'],
-          ['1 cm³', 'Sześcian o krawędzi 1 cm; to 1 ml'],
-          ['1 dm³', '1000 cm³ = 1 litr'],
-          ['1 m³', '1000 dm³ = 1000 litrów'],
-          ['5 cm × 3 cm × 2 cm', 'P = 62 cm², V = 30 cm³'],
-          ['Sześcian o krawędzi 4 cm', 'P = 96 cm², V = 64 cm³'],
-          ['Pudełko bez wieka', 'Ma 5 ścian – licz pole bez jednej ściany'],
-          ['Objętość bryły złożonej', 'Suma objętości prostopadłościanów, z których się składa'],
-          ['cm² czy cm³?', 'Pole – cm², objętość – cm³'],
+          ['Wyrażenie algebraiczne', 'Zapis z literami, liczbami i znakami działań, np. x + 5, 3 · n'],
+          ['Liczba o 5 większa od x', 'x + 5'],
+          ['Liczba 3 razy większa od n', '3 · n'],
+          ['Wartość wyrażenia 2 · a + 3 dla a = 4', '2 · 4 + 3 = 11'],
+          ['Wzór na obwód kwadratu', 'Ob = 4 · a'],
+          ['Równanie', 'Równość, w której jest niewiadoma, np. x + 7 = 15'],
+          ['Rozwiązanie równania', 'Liczba, która wstawiona za niewiadomą daje prawdziwą równość'],
+          ['x + 7 = 15', 'x = 15 − 7 = 8'],
+          ['4 · x = 28', 'x = 28 : 4 = 7'],
+          ['x : 3 = 5', 'x = 5 · 3 = 15'],
+          ['Jak sprawdzić rozwiązanie?', 'Wstawić je do równania i sprawdzić, czy obie strony są równe'],
         ],
         questions: [
-          { id: 'uewmza', q: 'Czym jest pole powierzchni prostopadłościanu?', options: ['sumą pól wszystkich sześciu ścian', 'iloczynem długości trzech krawędzi', 'sumą długości wszystkich krawędzi', 'polem jednej podstawy'], answer: 0, explain: 'Pole powierzchni to tyle, ile papieru potrzeba na oklejenie wszystkich 6 ścian.' },
-          { id: 'o0xl9e', q: 'Prostopadłościan ma krawędzie 5 cm, 3 cm i 2 cm. Jakie ma pole powierzchni?', options: ['62 cm²', '30 cm²', '31 cm²', '40 cm²'], answer: 0, explain: 'P = 2 · 5 · 3 + 2 · 3 · 2 + 2 · 5 · 2 = 30 + 12 + 20 = 62 cm². 30 to objętość (w cm³), 31 – suma pól tylko trzech ścian.' },
-          { id: 'nv964t', q: 'Sześcian ma krawędź 3 cm. Jakie ma pole powierzchni?', options: ['54 cm²', '27 cm²', '9 cm²', '36 cm²'], answer: 0, explain: 'Jedna ściana: 3 · 3 = 9 cm². Ścian jest 6: 6 · 9 = 54 cm².' },
-          { id: 'guvcra', q: 'Prostopadłościan ma krawędzie 5 cm, 3 cm i 2 cm. Jaka jest jego objętość?', options: ['30 cm³', '62 cm³', '10 cm³', '60 cm³'], answer: 0, explain: 'V = 5 · 3 · 2 = 30 cm³.' },
-          { id: '3em0a0', q: 'Sześcian ma krawędź 4 cm. Jaka jest jego objętość?', options: ['64 cm³', '16 cm³', '48 cm³', '96 cm³'], answer: 0, explain: 'V = 4 · 4 · 4 = 64 cm³. 96 to pole powierzchni (w cm²), a 16 – pole jednej ściany.' },
-          { id: 'kqi5hk', q: 'Ile sześcianików o krawędzi 1 cm zmieści się w pudełku 4 cm × 3 cm × 2 cm?', options: ['24', '9', '26', '12'], answer: 0, explain: 'Na dnie: 4 · 3 = 12 sześcianików. Dwie warstwy: 12 · 2 = 24.' },
+          { id: 'x8soq4', q: 'Jak zapisać liczbę o 5 większą od x?', options: ['x + 5', 'x − 5', '5 · x', 'x : 5'], answer: 0, explain: '„O 5 większa” – dodajemy 5: x + 5. (5 · x to liczba 5 razy większa.)' },
+          { id: 'kd0ok8', q: 'Jak zapisać liczbę 3 razy większą od n?', options: ['3 · n', 'n + 3', 'n − 3', 'n : 3'], answer: 0, explain: '„3 razy większa” – mnożymy przez 3: 3 · n.' },
+          { id: 'ui716j', q: 'Oblicz wartość wyrażenia 2 · a + 3 dla a = 4.', options: ['11', '14', '9', '24'], answer: 0, explain: '2 · 4 + 3 = 8 + 3 = 11. Najpierw mnożenie, potem dodawanie.' },
+          { id: '10900t', q: 'Ania ma x lat. Jej brat jest o 3 lata starszy. Ile lat ma brat?', options: ['x + 3', 'x − 3', '3 · x', 'x : 3'], answer: 0, explain: 'Starszy o 3 lata – dodajemy 3: x + 3.' },
+          { id: 'rmyk60', q: 'Zeszyt kosztuje z zł. Ile kosztują 4 takie zeszyty?', options: ['4 · z zł', 'z + 4 zł', 'z : 4 zł', 'z − 4 zł'], answer: 0, explain: '4 zeszyty po z zł: 4 · z zł.' },
+          { id: '9hbthv', q: 'Rozwiąż równanie: x + 7 = 15', options: ['x = 8', 'x = 22', 'x = 7', 'x = 105'], answer: 0, explain: 'Jaka liczba po dodaniu 7 daje 15? x = 15 − 7 = 8. Sprawdzenie: 8 + 7 = 15.' },
+          { id: 'l3dx21', q: 'Rozwiąż równanie: x − 6 = 9', options: ['x = 15', 'x = 3', 'x = 54', 'x = 6'], answer: 0, explain: 'Od jakiej liczby odjąć 6, żeby zostało 9? x = 9 + 6 = 15. Sprawdzenie: 15 − 6 = 9.' },
+          { id: '9xp5x2', q: 'Rozwiąż równanie: 4 · x = 28', options: ['x = 7', 'x = 24', 'x = 32', 'x = 112'], answer: 0, explain: 'Jaką liczbę pomnożyć przez 4, żeby dostać 28? x = 28 : 4 = 7. Sprawdzenie: 4 · 7 = 28.' },
+          { id: 'mz4ree', q: 'Rozwiąż równanie: x : 3 = 5', options: ['x = 15', 'x = 2', 'x = 8', 'x = 5'], answer: 0, explain: 'Jaką liczbę podzielić przez 3, żeby dostać 5? x = 5 · 3 = 15. Sprawdzenie: 15 : 3 = 5.' },
+          { id: 'ntoiwu', q: 'Rozwiąż równanie: 20 − x = 12', options: ['x = 8', 'x = 32', 'x = 12', 'x = 10'], answer: 0, explain: 'Ile trzeba odjąć od 20, żeby zostało 12? x = 20 − 12 = 8. Sprawdzenie: 20 − 8 = 12.' },
+          { id: '18akfa', q: 'Która liczba jest rozwiązaniem równania x + 9 = 20?', options: ['11', '29', '9', '20'], answer: 0, explain: '11 + 9 = 20 – równość jest prawdziwa.' },
+          { id: 'fhcyx5', q: 'Kasia rozwiązała równanie 5 · x = 35 i otrzymała x = 6. Czy dobrze?', options: ['nie – poprawne rozwiązanie to x = 7', 'tak, x = 6', 'nie – poprawne rozwiązanie to x = 30', 'nie – poprawne rozwiązanie to x = 40'], answer: 0, explain: 'Sprawdzenie: 5 · 6 = 30, a nie 35. Poprawnie: x = 35 : 5 = 7, bo 5 · 7 = 35.' },
+          { id: 'dhw95t', q: 'Pomyślałem liczbę, dodałem do niej 12 i otrzymałem 30. Które równanie to opisuje?', options: ['x + 12 = 30', 'x − 12 = 30', '12 · x = 30', 'x + 30 = 12'], answer: 0, explain: 'Liczba x, do której dodano 12, daje 30: x + 12 = 30. Rozwiązanie: x = 18.' },
+          { id: 'l4rubc', q: 'Bartek kupił 3 jednakowe długopisy i zapłacił 12 zł. Ile kosztował jeden długopis?', options: ['4 zł', '9 zł', '15 zł', '36 zł'], answer: 0, explain: 'Równanie: 3 · x = 12, więc x = 12 : 3 = 4 zł. Sprawdzenie: 3 · 4 = 12.' },
+          { id: 'i8jpto', q: 'Obwód kwadratu obliczamy ze wzoru Ob = 4 · a. Jaki obwód ma kwadrat o boku 6 cm?', options: ['24 cm', '10 cm', '36 cm', '12 cm'], answer: 0, explain: 'Ob = 4 · 6 = 24 cm. (36 cm² to pole tego kwadratu.)' },
+          { id: 'f8hvan', q: 'Prawda czy fałsz?\nRównanie to równość, w której występuje niewiadoma.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Np. x + 7 = 15 to równanie – x to niewiadoma.' },
           {
-            id: '31e4da',
-            q: 'Oblicz objętość prostopadłościanu z rysunku.',
-            svg: `<svg viewBox="0 0 320 200" role="img" aria-label="Prostopadłościan o krawędziach: długość 6 cm, szerokość 4 cm, wysokość 3 cm">
-      <path d="M40,80 L220,80 L220,170 L40,170 Z" class="f1 s1 sw"/>
-      <path d="M40,80 L100,30 L280,30 L220,80 Z" class="f4 s4 sw"/>
-      <path d="M220,80 L280,30 L280,120 L220,170 Z" class="f3 s3 sw"/>
-      <text x="130" y="192" class="tx" text-anchor="middle">6 cm</text>
-      <text x="254" y="160" class="tx">4 cm</text>
-      <text x="48" y="130" class="tx">3 cm</text>
+            id: 'g5jbnm',
+            q: 'Waga jest w równowadze. Ile kilogramów waży worek x?',
+            svg: `<svg viewBox="0 0 340 200" role="img" aria-label="Waga szalkowa w równowadze. Na lewej szalce worek oznaczony x i odważnik 3 kg. Na prawej szalce odważnik 8 kg.">
+      <path d="M150,190 L190,190 L176,90 L164,90 Z" class="f4 s4"/>
+      <line x1="40" y1="90" x2="300" y2="90" class="ln sw"/>
+      <circle cx="170" cy="90" r="6" class="t2"/>
+      <line x1="70" y1="90" x2="70" y2="150" class="ln-thin"/>
+      <line x1="270" y1="90" x2="270" y2="150" class="ln-thin"/>
+      <path d="M20,150 L120,150 L110,162 L30,162 Z" class="f1 s1"/>
+      <path d="M220,150 L320,150 L310,162 L230,162 Z" class="f1 s1"/>
+      <rect x="30" y="108" width="44" height="42" rx="12" class="f2 s2"/>
+      <text x="52" y="136" class="tx-b" text-anchor="middle">x</text>
+      <rect x="80" y="122" width="34" height="28" rx="4" class="f5 s5"/>
+      <text x="97" y="142" class="tx-s" text-anchor="middle">3 kg</text>
+      <rect x="248" y="114" width="44" height="36" rx="4" class="f5 s5"/>
+      <text x="270" y="137" class="tx" text-anchor="middle">8 kg</text>
     </svg>`,
-            options: ['72 cm³', '13 cm³', '108 cm³', '36 cm³'],
+            options: ['5 kg', '11 kg', '8 kg', '3 kg'],
             answer: 0,
-            explain: 'V = 6 · 4 · 3 = 72 cm³. 108 to pole powierzchni tego prostopadłościanu (w cm²).',
+            explain: 'Po obu stronach jest tyle samo: x + 3 = 8. Więc x = 8 − 3 = 5 kg.',
           },
+          { id: 'o2suea', q: 'Oblicz wartość wyrażenia 5 · (b − 2) dla b = 6.', options: ['20', '28', '4', '30'], answer: 0, explain: 'Najpierw nawias: 6 − 2 = 4. Potem 5 · 4 = 20.' },
+          { id: 'qqehpv', q: 'Dla jakiej liczby y wyrażenie y + 4 ma wartość 10?', options: ['6', '14', '40', '4'], answer: 0, explain: 'y + 4 = 10, więc y = 10 − 4 = 6.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
+        id: 'procenty',
+        name: 'Procenty – pierwsze kroki',
+        extra: true,
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 1 Liczby, wym. 33 (100% jako całość, 50% – połowa, 25% – jedna czwarta, 10% – jedna dziesiąta, 1% – jedna setna), 34 (procent danej wielkości w kontekście praktycznym – tu tylko 1%, 10%, 25%, 50%, 75% i wielokrotności 10%), 35 (porównywanie opłacalności – tu tylko cena po prostym rabacie; moduł ekonomiczno-finansowy). Obliczanie, jakim procentem jednej liczby jest druga, i liczby z jej procentu – klasy VII–VIII.' + WYBOR,
+        theory: `
+          <h3>Co to jest procent?</h3>
+          <p><b>Procent</b> (znak <b>%</b>) to <b>jedna setna</b> całości. Słowo pochodzi od łacińskiego „na sto”.</p>
+          <p><span class="f">1% = 1/100</span> – gdy całość podzielisz na 100 równych części, 1% to jedna taka część.</p>
+          <h3>Procenty, które trzeba znać</h3>
+          <table>
+            <tr><th>Procent</th><th>Jaka część całości</th></tr>
+            <tr><td>100%</td><td>cała całość</td></tr>
+            <tr><td>50%</td><td>połowa – 1/2</td></tr>
+            <tr><td>25%</td><td>ćwierć – 1/4</td></tr>
+            <tr><td>75%</td><td>trzy czwarte – 3/4</td></tr>
+            <tr><td>10%</td><td>jedna dziesiąta – 1/10</td></tr>
+            <tr><td>1%</td><td>jedna setna – 1/100</td></tr>
+          </table>
+          <h3>Jak obliczyć procent liczby?</h3>
+          <ul>
+            <li><b>50%</b> – dziel przez 2: <span class="f">50% z 30 zł = 15 zł</span></li>
+            <li><b>25%</b> – dziel przez 4: <span class="f">25% z 40 = 10</span></li>
+            <li><b>10%</b> – dziel przez 10: <span class="f">10% z 70 = 7</span></li>
+            <li><b>1%</b> – dziel przez 100: <span class="f">1% z 300 = 3</span></li>
+            <li><b>20%</b> to 2 razy po 10%: <span class="f">20% z 50 = 2 · 5 = 10</span></li>
+            <li><b>75%</b> to 3 razy po 25%: <span class="f">75% z 80 = 3 · 20 = 60</span></li>
+          </ul>
+          <div class="tip">💡 Najpierw policz 10% (albo 25%, albo 1%), a potem pomnóż – tak policzysz w pamięci prawie każdy procent.</div>
+          <h3>Część i reszta</h3>
+          <p>Wszystkie części razem to 100%. Gdy przeczytasz 30% książki, zostanie ci <span class="f">100% − 30% = 70%</span>.</p>
+          <h3>Promocje i rabaty</h3>
+          <p><b>Rabat</b> (obniżka) to część ceny, której nie płacisz.</p>
+          <ul>
+            <li>Kurtka za 60 zł, rabat 10%: obniżka = 10% z 60 = 6 zł, nowa cena <span class="f">60 − 6 = 54 zł</span>.</li>
+            <li>„−50%” na grę za 24 zł: płacisz połowę, czyli <span class="f">12 zł</span>.</li>
+          </ul>
+          <p>Porównując oferty, zawsze licz <b>cenę końcową</b> – wyższy rabat nie zawsze oznacza niższą cenę.</p>
+        `,
+        flashcards: [
+          ['1%', 'Jedna setna całości – 1/100'],
+          ['100%', 'Cała całość'],
+          ['50%', 'Połowa – dziel przez 2'],
+          ['25%', 'Ćwierć – dziel przez 4'],
+          ['10%', 'Jedna dziesiąta – dziel przez 10'],
+          ['75%', 'Trzy czwarte – 3 razy po 25%'],
+          ['50% z 30 zł', '15 zł'],
+          ['10% z 70', '7'],
+          ['20% z 50', '10 (2 razy po 10%, czyli 2 · 5)'],
+          ['Przeczytano 30% książki. Ile zostało?', '70% (100% − 30%)'],
+          ['Kurtka 60 zł, rabat 10%', 'Obniżka 6 zł, cena 54 zł'],
+        ],
+        questions: [
+          { id: 'da6z38', q: '1% to…', options: ['jedna setna całości', 'jedna dziesiąta całości', 'połowa całości', 'cała całość'], answer: 0, explain: 'Procent to setna część: 1% = 1/100.' },
+          { id: 'baxqdt', q: '50% to…', options: ['połowa', 'ćwierć', 'jedna dziesiąta', 'całość'], answer: 0, explain: '50% = 50/100 = 1/2, czyli połowa.' },
+          { id: 'pvl20p', q: 'Jaką częścią całości jest 25%?', options: ['1/4', '1/25', '1/2', '1/5'], answer: 0, explain: '25% = 25/100 = 1/4 – ćwierć. Cztery razy po 25% to 100%.' },
+          { id: 'vtsvhl', q: 'Ile to jest 50% z 30 zł?', options: ['15 zł', '50 zł', '3 zł', '60 zł'], answer: 0, explain: '50% to połowa: 30 : 2 = 15 zł.' },
+          { id: '3m3yqc', q: 'Ile to jest 10% z 70?', options: ['7', '70', '0,7', '10'], answer: 0, explain: '10% to jedna dziesiąta: 70 : 10 = 7.' },
+          { id: 'ggbwy7', q: 'Ile to jest 25% z 40?', options: ['10', '25', '20', '4'], answer: 0, explain: '25% to ćwierć: 40 : 4 = 10.' },
+          { id: '9mhqzj', q: 'Ile to jest 1% z 300?', options: ['3', '30', '1', '300'], answer: 0, explain: '1% to jedna setna: 300 : 100 = 3.' },
+          { id: 'b0bujj', q: 'Ile to jest 20% z 50?', options: ['10', '20', '5', '25'], answer: 0, explain: '10% z 50 = 5. 20% to dwa razy więcej: 2 · 5 = 10.' },
+          { id: 'x9lg7o', q: 'Ile to jest 75% z 80?', options: ['60', '75', '20', '40'], answer: 0, explain: '25% z 80 = 80 : 4 = 20. 75% to trzy razy więcej: 3 · 20 = 60.' },
+          { id: 'wmij29', q: 'Ile to jest 10% z 5 zł?', options: ['50 gr', '5 gr', '1 zł', '10 gr'], answer: 0, explain: '5 zł = 500 gr. 500 gr : 10 = 50 gr.' },
+          { id: 'wzp26n', q: 'Ile to jest 100% z 45?', options: ['45', '100', '4,5', '0,45'], answer: 0, explain: '100% to cała liczba: 45.' },
+          { id: '6d9mn1', q: 'Na siatce ze 100 kratek zamalowano 37 kratek. Jaki procent siatki zamalowano?', options: ['37%', '63%', '3,7%', '100%'], answer: 0, explain: 'Każda kratka to 1/100 siatki, czyli 1%. 37 kratek to 37%.' },
+          { id: 'fun8rl', q: 'Kasia przeczytała 30% książki. Jaka część książki została jej do przeczytania?', options: ['70%', '30%', '60%', '100%'], answer: 0, explain: 'Cała książka to 100%. 100% − 30% = 70%.' },
+          { id: 'g5ykj7', q: 'W klasie jest 20 uczniów. 50% z nich to dziewczynki. Ile jest dziewczynek?', options: ['10', '50', '5', '15'], answer: 0, explain: '50% to połowa: 20 : 2 = 10.' },
+          { id: '02vdf3', q: 'Kurtka kosztuje 60 zł. Sklep daje rabat 10%. Ile zapłacisz po obniżce?', options: ['54 zł', '50 zł', '6 zł', '66 zł'], answer: 0, explain: 'Obniżka: 10% z 60 = 6 zł. Cena: 60 − 6 = 54 zł. 6 zł to sama obniżka, nie cena.' },
+          { id: 'tsafvj', q: 'Gra kosztowała 24 zł. Teraz jest promocja „−50%”. Ile kosztuje gra?', options: ['12 zł', '48 zł', '6 zł', '23,50 zł'], answer: 0, explain: '−50% oznacza obniżkę o połowę ceny: 24 : 2 = 12 zł.' },
+          { id: '1z0scd', q: 'Sklep A: buty za 80 zł z rabatem 25%. Sklep B: te same buty za 70 zł bez rabatu. Gdzie zapłacisz mniej?', options: ['w sklepie A – 60 zł', 'w sklepie B – 70 zł', 'tyle samo w obu'], noShuffle: true, answer: 0, explain: '25% z 80 = 20 zł, więc w sklepie A buty kosztują 80 − 20 = 60 zł. To mniej niż 70 zł.' },
+          { id: '234aaq', q: 'Co jest więcej: 10% z 200 czy 50% z 30?', options: ['10% z 200', '50% z 30', 'tyle samo'], noShuffle: true, answer: 0, explain: '10% z 200 = 20, a 50% z 30 = 15. Większy procent nie zawsze daje większy wynik – liczy się też całość.' },
           {
-            id: 'm7tbt5',
-            q: 'Oblicz pole powierzchni prostopadłościanu z rysunku.',
-            svg: `<svg viewBox="0 0 320 200" role="img" aria-label="Prostopadłościan o krawędziach: długość 6 cm, szerokość 4 cm, wysokość 3 cm">
-      <path d="M40,80 L220,80 L220,170 L40,170 Z" class="f1 s1 sw"/>
-      <path d="M40,80 L100,30 L280,30 L220,80 Z" class="f4 s4 sw"/>
-      <path d="M220,80 L280,30 L280,120 L220,170 Z" class="f3 s3 sw"/>
-      <text x="130" y="192" class="tx" text-anchor="middle">6 cm</text>
-      <text x="254" y="160" class="tx">4 cm</text>
-      <text x="48" y="130" class="tx">3 cm</text>
+            id: 'j0t4kg',
+            q: 'Jaki procent koła zajmuje część żółta?',
+            svg: `<svg viewBox="0 0 320 200" role="img" aria-label="Koło podzielone na części: lewa połowa niebieska, prawa górna ćwiartka zielona, prawa dolna ćwiartka żółta">
+      <path d="M160,100 L160,20 A80,80 0 0,0 160,180 Z" class="f1 s1 sw"/>
+      <path d="M160,100 L160,20 A80,80 0 0,1 240,100 Z" class="f3 s3 sw"/>
+      <path d="M160,100 L240,100 A80,80 0 0,1 160,180 Z" class="f4 s4 sw"/>
+      <text x="40" y="104" class="tx-s" text-anchor="middle">niebieska</text>
+      <text x="276" y="40" class="tx-s" text-anchor="middle">zielona</text>
+      <text x="276" y="176" class="tx-s" text-anchor="middle">żółta</text>
     </svg>`,
-            options: ['108 cm²', '72 cm²', '54 cm²', '52 cm²'],
+            options: ['25%', '50%', '75%', '20%'],
             answer: 0,
-            explain: 'P = 2 · 6 · 4 + 2 · 4 · 3 + 2 · 6 · 3 = 48 + 24 + 36 = 108 cm². 54 to tylko trzy ściany, a 52 cm – suma długości krawędzi.',
+            explain: 'Niebieska część to połowa (50%), zielona – ćwierć (25%). Żółta też jest ćwiartką: 100% − 50% − 25% = 25%.',
           },
-          { id: 'eabmkb', q: 'Ile centymetrów sześciennych ma 1 dm³?', options: ['1000 cm³', '100 cm³', '10 cm³', '10 000 cm³'], answer: 0, explain: '1 dm = 10 cm, więc 1 dm³ = 10 · 10 · 10 = 1000 cm³.' },
-          { id: '7l9nom', q: 'Ile to jest 1 litr?', options: ['1 dm³', '1 cm³', '1 m³', '10 dm³'], answer: 0, explain: '1 l = 1 dm³ = 1000 cm³.' },
-          { id: 'bg74k7', q: 'Ile to jest 1 ml?', options: ['1 cm³', '1 dm³', '10 cm³', '100 cm³'], answer: 0, explain: '1 ml to tysięczna część litra: 1000 ml = 1 l = 1000 cm³, więc 1 ml = 1 cm³.' },
-          { id: '3fn5u3', q: 'Ile litrów to 1 m³?', options: ['1000 l', '100 l', '10 l', '1 000 000 l'], answer: 0, explain: '1 m = 10 dm, więc 1 m³ = 10 · 10 · 10 = 1000 dm³ = 1000 l.' },
-          { id: '27ent5', q: 'Akwarium ma wymiary 50 cm × 30 cm × 40 cm. Ile litrów wody się w nim zmieści?', options: ['60 l', '600 l', '6 l', '6000 l'], answer: 0, explain: 'V = 50 · 30 · 40 = 60 000 cm³. 1000 cm³ = 1 l, więc 60 000 cm³ = 60 l.' },
-          { id: 'c9ty9f', q: 'Karton o podstawie 10 cm × 5 cm mieści dokładnie 1 litr. Jaką ma wysokość?', options: ['20 cm', '10 cm', '15 cm', '50 cm'], answer: 0, explain: '1 l = 1000 cm³. Pole podstawy: 10 · 5 = 50 cm². Wysokość: 1000 : 50 = 20 cm. Sprawdzenie: 10 · 5 · 20 = 1000.' },
-          { id: 'x6wq5n', q: 'Ile kartonu potrzeba na pudełko bez wieka o wymiarach 10 cm × 10 cm × 5 cm?', options: ['300 cm²', '400 cm²', '500 cm²', '250 cm²'], answer: 0, explain: 'Dno: 10 · 10 = 100 cm². Cztery boki: 4 · (10 · 5) = 200 cm². Razem 300 cm². 400 cm² to pudełko z wiekiem.' },
-          { id: 'gyugfv', q: 'Bryła składa się z dwóch prostopadłościanów: 4 cm × 3 cm × 2 cm i 2 cm × 3 cm × 2 cm. Jaka jest jej objętość?', options: ['36 cm³', '24 cm³', '12 cm³', '288 cm³'], answer: 0, explain: '4 · 3 · 2 = 24 cm³ i 2 · 3 · 2 = 12 cm³. Razem 24 + 12 = 36 cm³.' },
-          { id: 'ydxmqd', q: 'Basen ma wymiary 10 m × 5 m × 2 m. Jaka jest jego objętość?', options: ['100 m³', '17 m³', '160 m³', '50 m³'], answer: 0, explain: 'V = 10 · 5 · 2 = 100 m³, czyli 100 000 litrów. 160 to pole powierzchni (w m²), 17 – suma trzech krawędzi.' },
-          { id: 'j04ce0', q: 'Jeden sześcian ma krawędź 1 cm, a drugi 2 cm. Ile razy większa jest objętość drugiego sześcianu?', options: ['8 razy', '2 razy', '4 razy', '6 razy'], answer: 0, explain: 'Objętości: 1 · 1 · 1 = 1 cm³ i 2 · 2 · 2 = 8 cm³. W drugim sześcianie zmieści się 8 małych.' },
-          { id: 'lm2zq9', q: 'Prawda czy fałsz?\nObjętość podajemy w cm², a pole powierzchni w cm³.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Odwrotnie: pole – w cm² (kwadraciki), objętość – w cm³ (sześcianiki).' },
+          { id: 'u23vj4', q: 'Prawda czy fałsz?\n25% to więcej niż połowa.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Połowa to 50%. 25% to ćwierć – dwa razy mniej niż połowa.' },
         ],
       },
 
@@ -1989,6 +2016,7 @@
       {
         id: 'dane',
         name: 'Tabele i diagramy',
+        extra: true,
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 5 Dane, wym. 1 (odczytywanie danych z tekstu, tabel i diagramów; porównywanie cen, kosztów i wydatków na paragonach i w tabelach – moduł ekonomiczno-finansowy), wym. 2 (proste badanie: zbieranie danych, uporządkowany zapis, wnioski).' + WYBOR,
         theory: `
           <h3>Tabela</h3>
@@ -2066,6 +2094,7 @@
       {
         id: 'srednia',
         name: 'Średnia arytmetyczna',
+        extra: true,
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 5 Dane, wym. 3 (średnia arytmetyczna przy opisie zjawisk z życia codziennego), wym. 4 (dane o wydatkach, ich średnia wartość, wnioski o opłacalności różnych rozwiązań – moduł ekonomiczno-finansowy), wym. 1 (odczytywanie danych z diagramu); dz. 6 Myślenie matematyczne (ocena sensowności wyniku, krytyczna interpretacja danych). W obliczeniach tylko liczby naturalne i proste ułamki dziesiętne (dzielenie przez liczbę naturalną). Ciąg dalszy działu „Tabele i diagramy”.' + WYBOR,
         theory: `
           <h3>Co to jest średnia?</h3>

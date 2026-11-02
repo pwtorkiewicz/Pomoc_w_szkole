@@ -38,3 +38,7 @@ Ton i forma:
 - **Klasa 3** – bardzo krótkie zdania, dużo obrazków (SVG), mało tekstu na ekranie, krótkie quizy; polecenia można odsłuchać (synteza mowy przeglądarki – jak w listeningu). Ciepło i zachęcająco.
 - **Klasa 4** – proste wyjaśnienia, przykłady z życia, każdy nowy termin wyjaśniony.
 - **Klasa 8** i **egzamin** – „na ty”, krótko, przyjaźnie i nowocześnie, bez infantylizmu.
+
+## Kolejność działów a podręczniki
+
+Działy wyświetlają się w kolejności z pliku danych. W ścieżce `kl4` kolejność odpowiada podręcznikom dziecka (lista w `docs/PLAN-kl4.md`): przedmiot ma pole `book`, a dział – `chapter` (rozdział podręcznika). Działy z podstawy, których nie ma w podręczniku tej klasy, mają `extra: true` – pokazują się w sekcji „📦 Na zapas” i nie liczą się do postępu ani testu próbnego. Przestawianie działów i zmiana tych pól nie wpływa na zapisany postęp (klucze to id przedmiotu, działu i pytania).

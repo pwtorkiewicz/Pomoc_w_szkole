@@ -87,12 +87,15 @@
   const questionsOf = (s, t) => t.questions.map((q) => ({ ...q, key: `${s.id}/${t.id}/${q.id}`, topicName: t.name }));
   const tasksOf = (s, t) => (t.tasks || []).map((x) => ({ ...x, key: `${s.id}/${t.id}/${x.id}`, topicName: t.name }));
   const tasksOfSubject = (s) => s.topics.flatMap((t) => tasksOf(s, t));
+  // Działy „na zapas” (extra: true) – spoza podręcznika klasy; nie liczą się do postępu przedmiotu ani testu próbnego.
+  const coreTopics = (s) => s.topics.filter((t) => !t.extra);
+  const EXTRA_NOTE = 'Tych działów nie ma w podręczniku tej klasy – to materiał z dalszych klas, na zapas. Nie liczą się do postępu ani do testu próbnego.';
   const badgeClass = (p) => (p == null ? '' : p >= 80 ? 'good' : p >= 50 ? 'mid' : 'low');
   const bar = (p, label = true) =>
     `<div class="bar"><span style="width:${p}%"></span></div>${label ? `<small class="muted">${p}% opanowane</small>` : ''}`;
 
   function subjectProgress(s) {
-    const vals = s.topics.map((t) => state.best[topicKey(s, t)] || 0);
+    const vals = coreTopics(s).map((t) => state.best[topicKey(s, t)] || 0);
     return vals.length ? Math.round(vals.reduce((a, b) => a + b, 0) / vals.length) : 0;
   }
   function crumbs(items) {
@@ -114,8 +117,8 @@
   const scoreBadge = (p) => (p == null ? 'nowy' : YOUNG ? starsHtml(starCount(p)) : p + '%');
   function progress(s) {
     if (!YOUNG) return bar(subjectProgress(s));
-    const max = s.topics.length * 3;
-    const got = s.topics.reduce((n, t) => n + starCount(state.best[topicKey(s, t)]), 0);
+    const max = coreTopics(s).length * 3;
+    const got = coreTopics(s).reduce((n, t) => n + starCount(state.best[topicKey(s, t)]), 0);
     return `${bar(max ? Math.round((got / max) * 100) : 0, false)}<small class="muted">★ ${got} z ${max} gwiazdek</small>`;
   }
 
@@ -335,7 +338,7 @@
       <div style="--accent:${s.color}">${progress(s)}</div>
       ${s.exam ? `<p class="basis">📅 <b>Egzamin:</b> ${s.exam} <a href="#/zrodla">Źródła</a></p>` : ''}
       ${YOUNG ? '' : `<p>
-        <a class="btn primary" href="#/s/${s.id}/egzamin">📝 ${WORDS.test} (${Math.min(EXAM_SIZE, s.topics.reduce((n, t) => n + t.questions.length, 0))} pytań)</a>
+        <a class="btn primary" href="#/s/${s.id}/egzamin">📝 ${WORDS.test} (${Math.min(EXAM_SIZE, coreTopics(s).reduce((n, t) => n + t.questions.length, 0))} pytań)</a>
         ${last != null ? `<span class="muted">ostatni wynik: ${last}%</span>` : ''}
       </p>`}
       ${allTasks.length || setsOf(s).length ? `<h2 class="sec">${WORDS.practice}</h2>
@@ -349,12 +352,19 @@
             <small class="muted">${list.length} zestawów${done ? ` · zrobione ${done}` : ''}</small></a>`;
         }).join('')}
       </div>
-      <h2 class="sec">Działy</h2>` : ''}
-      <ul class="topics">
-        ${s.topics.map((t) => {
+      <h2 class="sec">Działy</h2>` : s.topics.some((t) => t.extra) ? '<h2 class="sec">Działy</h2>' : ''}
+      ${topicList(s, coreTopics(s))}
+      ${s.topics.some((t) => t.extra) ? `<h2 class="sec">📦 Na zapas</h2>
+      <p class="muted">${esc(s.extraNote || EXTRA_NOTE)}</p>
+      ${topicList(s, s.topics.filter((t) => t.extra))}` : ''}`;
+  }
+
+  function topicList(s, list) {
+    return `<ul class="topics">
+        ${list.map((t) => {
           const b = state.best[topicKey(s, t)];
           return `<li><a href="#/s/${s.id}/t/${t.id}">
-            <span>${state.lessons[topicKey(s, t)] ? '🎓 ' : ''}${esc(t.name)}</span>
+            <span>${state.lessons[topicKey(s, t)] ? '🎓 ' : ''}${esc(t.name)}${t.chapter ? `<br><small class="muted">📘 ${esc(t.chapter)}</small>` : ''}</span>
             <span class="badge ${badgeClass(b)}">${scoreBadge(b)}</span>
           </a></li>`;
         }).join('')}
@@ -373,6 +383,8 @@
     app.innerHTML = `
       ${crumbs([[s.name, `#/s/${s.id}`], [t.name]])}
       <h1>${esc(t.name)}</h1>
+      ${t.chapter ? `<p class="muted">📘 ${s.book ? `${esc(s.book)}: ` : ''}${esc(t.chapter)}</p>` : ''}
+      ${t.extra ? `<p class="muted">📦 Na zapas – tego działu nie ma w podręczniku tej klasy.</p>` : ''}
       <nav class="tabs">
         ${lesson ? `<a href="${base}/lekcja" class="${tab === 'lekcja' ? 'on' : ''}">🎓 Lekcja</a>` : ''}
         <a href="${base}/teoria" class="${tab === 'teoria' ? 'on' : ''}">📖 Ściąga</a>
@@ -739,7 +751,7 @@
     setTitle(`${WORDS.test} – ${s.name}`);
     app.innerHTML = `${crumbs([[s.name, `#/s/${s.id}`], [WORDS.test]])}
       <h1>📝 ${WORDS.test}: ${esc(s.name)}</h1><div id="pane"></div>`;
-    const all = s.topics.flatMap((t) => questionsOf(s, t));
+    const all = coreTopics(s).flatMap((t) => questionsOf(s, t));
     quiz(document.getElementById('pane'), shuffle(all).slice(0, EXAM_SIZE), {
       showTopic: true,
       onFinish: (pct) => { state.exams[s.id] = pct; save(); },

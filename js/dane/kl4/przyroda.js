@@ -5,6 +5,7 @@ window.SUBJECTS.push({
   icon: '🌿',
   color: '#2e9e6b',
   topics: [
+    // ------------------------------------------------------------------
     {
       id: 'poznajemy',
       name: 'Jak poznajemy przyrodę',
@@ -102,6 +103,8 @@ window.SUBJECTS.push({
         { id: 'b3lm9s', q: 'Prawda czy fałsz?\nPodczas snu mózg utrwala to, czego się nauczyłeś.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Sen jest ważny dla pamięci. Niewyspany uczeń gorzej się skupia i mniej zapamiętuje.' },
       ],
     },
+
+    // ------------------------------------------------------------------
     {
       id: 'orientacja',
       name: 'Kierunki, kompas, plan i mapa',
@@ -221,6 +224,8 @@ window.SUBJECTS.push({
         },
       ],
     },
+
+    // ------------------------------------------------------------------
     {
       id: 'rosliny',
       name: 'Przyroda ożywiona i nieożywiona. Rośliny',
@@ -326,6 +331,91 @@ window.SUBJECTS.push({
         { id: 'f6epfn', q: 'Prawda czy fałsz?\nMchy wytwarzają nasiona.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Mchy są roślinami zarodnikowymi – rozmnażają się przez zarodniki, nie mają nasion.' },
       ],
     },
+
+    // ------------------------------------------------------------------
+    {
+      id: 'skaly-gleba',
+      name: 'Skały i gleba',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 6 (skały najbliższej okolicy – barwa, spójność, twardość, odporność na działanie wody; porównanie z innymi skałami Polski), wym. 7 (gleba okolicy, porównanie z ziemią ogrodową, przydatność do uprawy roślin); doświadczenia edukacyjne – zajęcia terenowe, pkt 4 (próbka gleby: barwa, próchnica, uziarnienie, organizmy). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Skały wokół nas</h3>
+        <p><b>Skały</b> to naturalne składniki przyrody nieożywionej, z których zbudowana jest skorupa Ziemi. Spotkasz je w górach i kamieniołomach, ale też na plaży, na polu i w budynkach (schody, parapety, kostka brukowa).</p>
+        <p>Ze względu na <b>spójność</b> (czy ziarna trzymają się razem) dzielimy skały na:</p>
+        <table>
+          <tr><th>Skały lite</th><th>Skały zwięzłe</th><th>Skały luźne</th></tr>
+          <tr><td>twarde, ziarna mocno ze sobą połączone</td><td>ziarna połączone słabiej; mokre dają się formować</td><td>ziarna niepołączone, rozsypują się</td></tr>
+          <tr><td>granit, piaskowiec, wapień</td><td>glina</td><td>piasek, żwir</td></tr>
+        </table>
+        <h3>Jak badamy skały?</h3>
+        <ul>
+          <li><b>Barwa</b> – oglądamy skałę, najlepiej przez lupę. Granit ma widoczne różnokolorowe ziarna, wapień jest zwykle jasny.</li>
+          <li><b>Twardość</b> – próbujemy zarysować skałę gwoździem. Granitu gwoździem nie zarysujesz, wapień – tak.</li>
+          <li><b>Odporność na wodę</b> – kładziemy próbkę do wody. Glina nasiąka i staje się plastyczna (można z niej lepić). Piasek przepuszcza wodę.</li>
+          <li><b>Wapień</b> rozpoznasz po tym, że po polaniu octem pojawiają się pęcherzyki gazu (skała „musuje”).</li>
+        </ul>
+        <div class="tip">💡 Przy badaniu skał pracuj w okularach ochronnych i pod opieką dorosłego. Nie bierz skał do ust.</div>
+        <h3>Skały w Polsce – przykłady</h3>
+        <ul>
+          <li><b>granit</b> – m.in. w Karkonoszach i w Tatrach; używa się go na schody, pomniki, nagrobki,</li>
+          <li><b>piaskowiec</b> – np. w Górach Stołowych; to sklejone ziarna piasku,</li>
+          <li><b>wapień</b> – np. na Wyżynie Krakowsko-Częstochowskiej; z wapienia robi się m.in. wapno i cement,</li>
+          <li><b>glina</b> – surowiec do wyrobu cegieł i naczyń,</li>
+          <li><b>piasek i żwir</b> – na plażach, w korytach rzek, w żwirowniach; używa się ich na budowach,</li>
+          <li><b>głazy narzutowe</b> – duże kamienie przyniesione na teren Polski przez lądolód ze Skandynawii.</li>
+        </ul>
+        <h3>Gleba</h3>
+        <p><b>Gleba</b> to wierzchnia warstwa ziemi, w której rosną rośliny. Powstaje bardzo powoli – przez setki lat – z rozdrobnionych skał i szczątków organizmów.</p>
+        <p><b>Składniki gleby:</b></p>
+        <ul>
+          <li>okruchy skał (np. piasek, glina),</li>
+          <li><b>próchnica</b> – ciemna substancja z rozłożonych szczątków roślin i zwierząt; daje roślinom składniki odżywcze,</li>
+          <li>woda i powietrze (w szczelinach między grudkami),</li>
+          <li>organizmy – m.in. dżdżownice, owady, bakterie i grzyby. Dżdżownice drążą korytarze i mieszają glebę, a bakterie i grzyby rozkładają szczątki na próchnicę.</li>
+        </ul>
+        <h3>Jaka gleba jest najlepsza dla roślin?</h3>
+        <table>
+          <tr><th>Gleba piaszczysta</th><th>Gleba gliniasta</th><th>Ziemia ogrodowa</th></tr>
+          <tr><td>jasna, sypka; woda szybko przez nią przecieka, więc szybko wysycha; mało próchnicy</td><td>zbita, ciężka; zatrzymuje wodę, po deszczu robi się błoto; mało powietrza</td><td>ciemna, pulchna; dużo próchnicy (np. z kompostu); dobrze trzyma wodę i ma powietrze</td></tr>
+        </table>
+        <p>Im <b>ciemniejsza</b> gleba, tym zwykle więcej w niej próchnicy i tym lepiej rosną w niej rośliny.</p>
+        <h3>Doświadczenie: gleba w słoiku</h3>
+        <p>Wsyp trochę gleby do słoika z wodą, zamieszaj i odstaw. Po pewnym czasie zobaczysz <b>warstwy</b>: na dnie najcięższe ziarna (żwir, piasek), wyżej drobne cząstki (muł, glina), a na powierzchni pływają szczątki roślin. Pęcherzyki powietrza pokazują, że w glebie było powietrze.</p>
+      `,
+      flashcards: [
+        ['Skały lite – przykłady', 'granit, piaskowiec, wapień'],
+        ['Skała zwięzła – przykład', 'glina (mokra daje się formować)'],
+        ['Skały luźne – przykłady', 'piasek, żwir'],
+        ['Jak rozpoznać wapień?', 'Po polaniu octem musuje – powstają pęcherzyki gazu'],
+        ['Jak zbadać twardość skały?', 'Próbujemy zarysować ją gwoździem'],
+        ['Głazy narzutowe', 'Duże kamienie przyniesione przez lądolód ze Skandynawii'],
+        ['Gleba', 'Wierzchnia warstwa ziemi, w której rosną rośliny'],
+        ['Próchnica', 'Ciemna substancja z rozłożonych szczątków roślin i zwierząt; użyźnia glebę'],
+        ['Składniki gleby', 'okruchy skał, próchnica, woda, powietrze, organizmy'],
+        ['Rola dżdżownic w glebie', 'Drążą korytarze i mieszają glebę'],
+        ['Gleba piaszczysta', 'Przepuszcza wodę i szybko wysycha, ma mało próchnicy'],
+      ],
+      questions: [
+        { id: '12b888', q: 'Która skała jest skałą luźną?', options: ['piasek', 'granit', 'wapień', 'piaskowiec'], answer: 0, explain: 'Ziarna piasku nie są ze sobą połączone – piasek się rozsypuje. Granit, wapień i piaskowiec to skały lite.' },
+        { id: 'lxa3wt', q: 'Która skała po zwilżeniu daje się formować jak plastelina?', options: ['glina', 'żwir', 'granit', 'piasek'], answer: 0, explain: 'Mokra glina jest plastyczna – lepi się z niej naczynia i robi cegły.' },
+        { id: 'qk0h17', q: 'Którą skałę rozpoznasz po tym, że po polaniu octem pojawiają się pęcherzyki gazu?', options: ['wapień', 'granit', 'glinę', 'piasek'], answer: 0, explain: 'Wapień pod wpływem octu „musuje” – wydziela się gaz.' },
+        { id: '1gxlzg', q: 'Jak sprawdzisz twardość skały?', options: ['próbując zarysować ją gwoździem', 'wąchając ją', 'mierząc ją linijką', 'ważąc ją'], answer: 0, explain: 'Twardą skałę (np. granit) trudno zarysować gwoździem, a miękką (np. wapień) – łatwo.' },
+        { id: '3n5tog', q: 'Prawda czy fałsz?\nGranit to skała luźna.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Granit to twarda skała lita – jego ziarna są mocno ze sobą połączone.' },
+        { id: 'l4nh68', q: 'Skąd na terenie Polski wzięły się głazy narzutowe?', options: ['przyniósł je lądolód ze Skandynawii', 'przyniosły je rzeki z Tatr', 'wyrzuciły je wulkany', 'ułożyli je ludzie'], answer: 0, explain: 'Głazy narzutowe przyniósł lądolód, który dawno temu nasunął się na teren Polski ze Skandynawii.' },
+        { id: '7tg1x4', q: 'Piaskowiec to skała zbudowana z…', options: ['sklejonych ziaren piasku', 'zastygłej lawy', 'muszli i lodu', 'mokrej gliny'], answer: 0, explain: 'Sama nazwa podpowiada: piaskowiec to ziarna piasku mocno ze sobą sklejone.' },
+        { id: 'nlgsff', q: 'Do czego używa się gliny?', options: ['do wyrobu cegieł i naczyń', 'do produkcji szkła okiennego', 'jako paliwa', 'do budowy kompasów'], answer: 0, explain: 'Z gliny wypala się cegły, dachówki i naczynia.' },
+        { id: 'nle2kz', q: 'Co to jest próchnica w glebie?', options: ['ciemna substancja z rozłożonych szczątków roślin i zwierząt', 'choroba zębów roślin', 'rodzaj skały litej', 'woda w glebie'], answer: 0, explain: 'Próchnica powstaje z rozłożonych szczątków organizmów. Dostarcza roślinom składników odżywczych.' },
+        { id: '3t5jiu', q: 'Który składnik NIE wchodzi w skład gleby?', options: ['plastik', 'próchnica', 'woda', 'okruchy skał'], answer: 0, explain: 'Gleba składa się z okruchów skał, próchnicy, wody, powietrza i organizmów. Plastik to śmieć, który do gleby nie należy.' },
+        { id: '0bb1i0', q: 'Jaką rolę w glebie pełnią dżdżownice?', options: ['drążą korytarze i mieszają glebę', 'wytwarzają skały', 'zjadają korzenie zdrowych roślin', 'wysuszają glebę'], answer: 0, explain: 'Dżdżownice spulchniają i mieszają glebę – dzięki temu dostaje się do niej powietrze i woda.' },
+        { id: 'okzbb5', q: 'Która gleba szybko przepuszcza wodę i szybko wysycha?', options: ['piaszczysta', 'gliniasta', 'ziemia ogrodowa z kompostem'], answer: 0, explain: 'Ziarna piasku są duże i luźne – woda łatwo między nimi przecieka.' },
+        { id: 'p6qn4c', q: 'Po deszczu na tej glebie długo stoją kałuże i robi się błoto. To najpewniej gleba…', options: ['gliniasta', 'piaszczysta', 'żwirowa'], answer: 0, explain: 'Glina zatrzymuje wodę i słabo ją przepuszcza.' },
+        { id: 'v6etg7', q: 'W której glebie rośliny będą rosły najlepiej?', options: ['w ciemnej ziemi ogrodowej z dużą ilością próchnicy', 'w czystym piasku', 'w ubitej glinie', 'w żwirze'], answer: 0, explain: 'Ziemia ogrodowa ma dużo próchnicy (składników odżywczych), dobrze trzyma wodę i ma powietrze.' },
+        { id: 'nzm3al', q: 'Do słoika z wodą wsypano glebę, zamieszano i odstawiono. Co będzie na dnie?', options: ['najcięższe ziarna – żwir i piasek', 'szczątki roślin', 'pęcherzyki powietrza', 'nic – wszystko się rozpuści'], answer: 0, explain: 'Najcięższe ziarna opadają najszybciej i leżą na dnie. Szczątki roślin pływają na powierzchni.' },
+        { id: 'r60utl', q: 'Prawda czy fałsz?\nGleba powstaje bardzo powoli – przez setki lat.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Skały kruszą się, a szczątki organizmów rozkładają się bardzo powoli. Dlatego trzeba dbać o glebę.' },
+        { id: '0zgoyw', q: 'Ciemna barwa gleby świadczy zwykle o tym, że…', options: ['jest w niej dużo próchnicy', 'jest w niej dużo piasku', 'jest zanieczyszczona', 'nie ma w niej wody'], answer: 0, explain: 'Próchnica jest ciemna – im ciemniejsza gleba, tym zwykle więcej w niej próchnicy.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
     {
       id: 'zwierzeta',
       name: 'Zwierzęta i grzyby w naszej okolicy',
@@ -438,6 +528,8 @@ window.SUBJECTS.push({
         { id: 'il7g7b', q: 'Co NIE nadaje się do karmnika dla ptaków?', options: ['nasiona słonecznika', 'chleb', 'niesolona słonina', 'ziarna zbóż'], answer: 1, explain: 'Chleb szkodzi ptakom. Nie dajemy też jedzenia solonego, przyprawionego ani zepsutego.' },
       ],
     },
+
+    // ------------------------------------------------------------------
     {
       id: 'woda',
       name: 'Woda i jej stany skupienia',
@@ -542,6 +634,203 @@ window.SUBJECTS.push({
         },
       ],
     },
+
+    // ------------------------------------------------------------------
+    {
+      id: 'rzeka-jezioro',
+      name: 'Rzeka i jezioro',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 4 „Organizmy i ekosystemy”, wym. 6 (wody płynące i stojące, cechy środowiska wodnego, elementy systemu rzecznego – rzeka główna, dopływ, źródło, ujście), wym. 17 (funkcja rzeki i jej doliny, składniki krajobrazu stworzone przez rzekę); dz. 5 „Planeta Ziemia”, wym. 23 (geneza jezior – tylko jeziora polodowcowe i zbiorniki zaporowe; rola rzek i jezior w życiu ludzi). Definicje (źródło, ujście, dopływ, dorzecze, system rzeczny, rzeka główna, brzeg lewy i prawy, bieg górny, środkowy i dolny, zakole, starorzecze), źródło Wisły na Baraniej Górze, ujście Wisły do Zatoki Gdańskiej i Odry do Zalewu Szczecińskiego, dopływy Wisły i Odry – według ZPE („Nad brzegiem rzeki”, „System rzeczny”, zpe.gov.pl), sprawdzone 2.11.2026. Jeziora: większość jezior w Polsce ma pochodzenie polodowcowe, największe Śniardwy, najgłębsze Hańcza – materiały ZPE i PIG, sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Wody płynące i stojące</h3>
+        <table>
+          <tr><th>Wody płynące</th><th>Wody stojące</th></tr>
+          <tr><td>woda płynie w jednym kierunku – z wyżej położonych miejsc w niższe</td><td>woda się nie przemieszcza z miejsca na miejsce, wypełnia zagłębienie terenu</td></tr>
+          <tr><td>strumień, potok, <b>rzeka</b>; <b>kanał</b> – koryto wykopane przez ludzi</td><td><b>jezioro</b>, <b>staw</b>, zbiornik zaporowy</td></tr>
+        </table>
+        <h3>Jak zbudowana jest rzeka?</h3>
+        <ul>
+          <li><b>Źródło</b> – miejsce, w którym rzeka bierze początek. Najwięcej źródeł jest w górach i na wyżynach. Wisła zaczyna się na stoku <b>Baraniej Góry</b> w Beskidzie Śląskim.</li>
+          <li><b>Ujście</b> – miejsce, w którym rzeka wpada do innej rzeki, jeziora albo morza. Wisła uchodzi do Zatoki Gdańskiej (Morze Bałtyckie).</li>
+          <li><b>Koryto</b> – zagłębienie, w którym płynie rzeka. <b>Nurt</b> – miejsce w korycie, gdzie woda płynie najszybciej.</li>
+          <li><b>Dopływ</b> – rzeka, która wpada do większej rzeki.</li>
+          <li><b>Rzeka główna</b> – wpada prosto do morza (albo jeziora) i nie jest niczyim dopływem, np. Wisła, Odra.</li>
+          <li><b>System rzeczny</b> – rzeka główna razem ze wszystkimi dopływami. Na mapie wygląda jak <b>drzewo</b>: rzeka główna to pień, dopływy – gałęzie.</li>
+          <li><b>Dorzecze</b> – cały obszar, z którego woda spływa do danej rzeki i jej dopływów.</li>
+        </ul>
+        <h3>Dopływ lewy czy prawy?</h3>
+        <p>Stań <b>tyłem do źródła</b>, a <b>twarzą do ujścia</b> – czyli patrz tam, dokąd płynie woda. To, co masz po lewej ręce, to <b>lewy brzeg</b> i <b>lewe dopływy</b>, a po prawej – <b>prawy brzeg</b> i <b>prawe dopływy</b>.</p>
+        <table>
+          <tr><th>Rzeka</th><th>Prawe dopływy (przykłady)</th><th>Lewe dopływy (przykłady)</th></tr>
+          <tr><td>Wisła</td><td>Dunajec, San, Narew</td><td>Pilica, Bzura</td></tr>
+          <tr><td>Odra</td><td>Warta</td><td>Nysa Łużycka, Bóbr</td></tr>
+        </table>
+        <div class="tip">💡 Na mapie lewy brzeg <b>nie zawsze</b> jest po lewej stronie kartki. Liczy się kierunek, w którym płynie woda.</div>
+        <h3>Bieg rzeki i dolina</h3>
+        <table>
+          <tr><th>Bieg</th><th>Jak płynie woda</th><th>Co tam widać</th></tr>
+          <tr><td><b>górny</b></td><td>szybko</td><td>wąska, stroma dolina, wodospady, mało roślin</td></tr>
+          <tr><td><b>środkowy</b></td><td>wolniej</td><td>rzeka podmywa brzegi i poszerza dolinę, powstają <b>zakola</b> i <b>starorzecza</b></td></tr>
+          <tr><td><b>dolny</b></td><td>najwolniej</td><td>rzeka osadza piasek i muł, tworzą się piaszczyste łachy</td></tr>
+        </table>
+        <ul>
+          <li><b>Dolina rzeczna</b> – obniżenie terenu, które wyżłobiła rzeka.</li>
+          <li><b>Zakole</b> – łuk albo pętla koryta. Na zewnętrznym brzegu woda płynie szybciej i podmywa go, na wewnętrznym – osadza piasek.</li>
+          <li><b>Starorzecze</b> – jezioro w dolinie rzeki: kawałek dawnego koryta (np. zakola), odcięty od rzeki.</li>
+          <li><b>Powódź</b> – rzeka wylewa z koryta i zalewa okoliczne tereny. Płaskie dno doliny często zalewa woda – dlatego niebezpiecznie jest budować tam domy.</li>
+        </ul>
+        <h3>Życie w wodzie i nad wodą</h3>
+        <ul>
+          <li>Im głębiej, tym <b>mniej światła</b>.</li>
+          <li>Temperatura wody zmienia się <b>wolniej</b> niż temperatura powietrza.</li>
+          <li>Organizmy wodne oddychają <b>tlenem rozpuszczonym w wodzie</b>, np. ryby – za pomocą skrzeli.</li>
+          <li>Rzeka i jej dolina to dom ryb, płazów, ptaków (np. czapli) i ssaków (np. bobra). Dolina rzeki to też „korytarz”, którym wędrują zwierzęta.</li>
+        </ul>
+        <h3>Jeziora</h3>
+        <ul>
+          <li><b>Jezioro</b> – naturalne zagłębienie terenu wypełnione wodą stojącą.</li>
+          <li>Większość jezior w Polsce to <b>jeziora polodowcowe</b> – powstały w zagłębieniach po lądolodzie, który dawno temu przykrywał północ Polski. Dlatego najwięcej jezior jest na <b>pojezierzach</b> na północy kraju.</li>
+          <li>Największe jezioro Polski – <b>Śniardwy</b>. Najgłębsze – <b>Hańcza</b>.</li>
+          <li><b>Zbiornik zaporowy</b> (sztuczne jezioro) – powstaje, gdy ludzie zbudują na rzece <b>zaporę</b>, np. Jezioro Solińskie na Sanie.</li>
+          <li><b>Staw</b> – zwykle niewielki i płytki zbiornik zrobiony przez człowieka, np. do hodowli ryb. (Uwaga: w górach stawami nazywa się też naturalne jeziora, np. Czarny Staw).</li>
+        </ul>
+        <p><b>Po co ludziom rzeki i jeziora?</b> Dają wodę (do picia, dla rolnictwa i fabryk), ryby, prąd z elektrowni wodnych, służą do transportu i wypoczynku.</p>
+      `,
+      flashcards: [
+        ['Wody płynące – przykłady', 'strumień, potok, rzeka, kanał'],
+        ['Wody stojące – przykłady', 'jezioro, staw, zbiornik zaporowy'],
+        ['Źródło rzeki', 'Miejsce, w którym rzeka bierze początek'],
+        ['Ujście rzeki', 'Miejsce, w którym rzeka wpada do innej rzeki, jeziora lub morza'],
+        ['Dopływ', 'Rzeka, która wpada do większej rzeki'],
+        ['Rzeka główna', 'Rzeka, która wpada do morza (lub jeziora) i nie jest dopływem, np. Wisła, Odra'],
+        ['System rzeczny', 'Rzeka główna razem ze wszystkimi dopływami'],
+        ['Dorzecze', 'Obszar, z którego woda spływa do danej rzeki i jej dopływów'],
+        ['Jak rozpoznać lewy i prawy brzeg?', 'Stań twarzą do ujścia (tam, dokąd płynie woda): lewa ręka – lewy brzeg'],
+        ['Źródło i ujście Wisły', 'źródło – Barania Góra w Beskidzie Śląskim; ujście – Zatoka Gdańska (Bałtyk)'],
+        ['Zakole', 'Łuk lub pętla koryta rzeki'],
+        ['Starorzecze', 'Jezioro w dolinie rzeki – odcięty kawałek dawnego koryta'],
+        ['Jeziora polodowcowe', 'Powstały w zagłębieniach po lądolodzie; najwięcej ich na pojezierzach na północy Polski'],
+        ['Największe i najgłębsze jezioro Polski', 'największe – Śniardwy; najgłębsze – Hańcza'],
+        ['Zbiornik zaporowy', 'Sztuczne jezioro powstałe po zbudowaniu zapory na rzece, np. Jezioro Solińskie'],
+      ],
+      questions: [
+        { id: 'gc9oj9', q: 'Która z tych wód jest wodą płynącą?', options: ['potok', 'jezioro', 'staw', 'zbiornik zaporowy'], answer: 0, explain: 'Potok, strumień, rzeka i kanał to wody płynące. Jezioro, staw i zbiornik zaporowy – stojące.' },
+        { id: '3mtdbh', q: 'Która z tych wód jest wodą stojącą?', options: ['jezioro', 'rzeka', 'strumień', 'kanał'], answer: 0, explain: 'Woda w jeziorze wypełnia zagłębienie terenu i nie płynie z miejsca na miejsce.' },
+        { id: 'kevhmp', q: 'Jak nazywa się miejsce, w którym rzeka bierze początek?', options: ['źródło', 'ujście', 'zakole', 'dopływ'], answer: 0, explain: 'Rzeka zaczyna się w źródle, a kończy w ujściu.' },
+        { id: '439mzs', q: 'Ujście rzeki to miejsce, w którym…', options: ['rzeka wpada do innej rzeki, jeziora albo morza', 'rzeka bierze początek', 'rzeka płynie najszybciej', 'rzeka zakręca'], answer: 0, explain: 'W ujściu rzeka kończy swój bieg – wpada do innej rzeki, jeziora albo morza.' },
+        { id: '3bkps3', q: 'Gdzie zaczyna się Wisła?', options: ['na stoku Baraniej Góry w Beskidzie Śląskim', 'w Tatrach pod Rysami', 'na Żuławach Wiślanych', 'w jeziorze Śniardwy'], answer: 0, explain: 'Wisła wypływa na stoku Baraniej Góry w Beskidzie Śląskim i uchodzi do Zatoki Gdańskiej.' },
+        { id: 'ew7xa3', q: 'Dopływ to…', options: ['rzeka, która wpada do większej rzeki', 'miejsce, w którym rzeka się zaczyna', 'sztuczne jezioro', 'najszybsze miejsce w korycie'], answer: 0, explain: 'Dopływ to rzeka wpadająca do większej rzeki, np. San jest dopływem Wisły.' },
+        { id: 'j7zrbn', q: 'Rzeka główna razem ze wszystkimi dopływami to…', options: ['system rzeczny', 'dorzecze', 'starorzecze', 'zakole'], answer: 0, explain: 'System rzeczny to rzeka główna i jej dopływy. Na mapie wygląda jak drzewo. Dorzecze to obszar, z którego woda do nich spływa.' },
+        { id: '0qyce3', q: 'Jak ustalić, który brzeg rzeki jest lewy?', options: ['stanąć twarzą do ujścia – lewy brzeg jest po lewej ręce', 'stanąć twarzą do źródła – lewy brzeg jest po lewej ręce', 'spojrzeć na mapę – lewy brzeg jest zawsze po lewej stronie kartki', 'lewy brzeg to zawsze brzeg zachodni'], answer: 0, explain: 'Patrzysz tam, dokąd płynie woda (twarzą do ujścia). Wtedy po lewej masz lewy brzeg, a po prawej – prawy.' },
+        {
+          id: '9f3mgc',
+          q: 'Rzeka płynie w stronę wskazaną strzałką. Jakim dopływem jest rzeka A?',
+          svg: `<svg viewBox="0 0 360 180" role="img" aria-label="Rzeka główna płynie od lewej do prawej, strzałka kierunku w prawo. Z góry wpada do niej rzeka A.">
+      <defs><marker id="a-k4pr-q-rz" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <path d="M10,120 C80,100 120,140 190,118 C250,100 290,130 350,112" class="ln s1 sw"/>
+      <path d="M150,20 C170,50 160,80 190,116" class="ln s1"/>
+      <text x="140" y="20" class="tx-b t1" text-anchor="middle">A</text>
+      <text x="40" y="158" class="tx-s">źródło</text>
+      <text x="300" y="158" class="tx-s">ujście</text>
+      <line x1="230" y1="72" x2="300" y2="72" class="ln s2 sw" marker-end="url(#a-k4pr-q-rz)"/>
+      <text x="265" y="62" class="tx-s" text-anchor="middle">kierunek</text>
+    </svg>`,
+          options: ['lewym', 'prawym'],
+          answer: 0,
+          explain: 'Stań twarzą do ujścia – patrzysz w prawo (w stronę strzałki). Wtedy twoja lewa ręka wskazuje górę rysunku, a stamtąd wpada rzeka A. To lewy dopływ.',
+        },
+        { id: 'up04ww', q: 'Który z tych dopływów Wisły jest dopływem prawym?', options: ['San', 'Pilica', 'Bzura'], answer: 0, explain: 'San, Dunajec i Narew to prawe dopływy Wisły. Pilica i Bzura – lewe.' },
+        { id: 'djmvy4', q: 'W którym biegu rzeka płynie najszybciej i tworzy wodospady?', options: ['w górnym', 'w środkowym', 'w dolnym'], answer: 0, explain: 'W górnym biegu, zwykle w górach, woda płynie szybko, żłobi wąską i stromą dolinę i tworzy wodospady.' },
+        { id: 'wky55k', q: 'Jak nazywa się łuk albo pętla koryta rzeki?', options: ['zakole', 'źródło', 'ujście', 'nurt'], answer: 0, explain: 'Zakole to łuk lub pętla koryta. Na zewnętrznym brzegu woda podmywa brzeg, na wewnętrznym osadza piasek.' },
+        { id: 'mk4vfg', q: 'Starorzecze to…', options: ['jezioro w dolinie rzeki – odcięty kawałek dawnego koryta', 'najstarsza rzeka w Polsce', 'źródło rzeki w górach', 'sztuczne jezioro za zaporą'], answer: 0, explain: 'Starorzecze powstaje, gdy kawałek koryta (np. zakole) zostaje odcięty od rzeki.' },
+        { id: '0wvixp', q: 'Jak powstała większość jezior w Polsce?', options: ['w zagłębieniach po lądolodzie – to jeziora polodowcowe', 'po zbudowaniu zapór na rzekach', 'w kraterach wulkanów', 'wykopali je ludzie'], answer: 0, explain: 'Dawno temu północ Polski przykrywał lądolód. W zagłębieniach, które po nim zostały, powstały jeziora – najwięcej ich na pojezierzach.' },
+        { id: 'k89h7n', q: 'Które jezioro jest największe w Polsce?', options: ['Śniardwy', 'Hańcza', 'Morskie Oko', 'Jezioro Solińskie'], answer: 0, explain: 'Największe jezioro w Polsce to Śniardwy. Najgłębsze jest Hańcza.' },
+        { id: 'fj6rz2', q: 'Jak powstaje zbiornik zaporowy?', options: ['ludzie budują na rzece zaporę i woda się za nią spiętrza', 'lądolód zostawia zagłębienie', 'rzeka odcina swoje zakole', 'morze zalewa ląd'], answer: 0, explain: 'Zbiornik zaporowy to sztuczne jezioro za zaporą, np. Jezioro Solińskie na Sanie.' },
+        { id: 'jkroml', q: 'Prawda czy fałsz?\nIm głębiej w jeziorze, tym więcej światła.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Woda pochłania światło – im głębiej, tym ciemniej. Dlatego rośliny wodne rosną głównie przy brzegu i blisko powierzchni.' },
+        { id: 'eok8kf', q: 'Czym oddychają ryby?', options: ['tlenem rozpuszczonym w wodzie, za pomocą skrzeli', 'powietrzem, które łapią nad wodą płucami', 'nie oddychają wcale', 'dwutlenkiem węgla z powietrza'], answer: 0, explain: 'Ryby oddychają skrzelami – pobierają tlen rozpuszczony w wodzie.' },
+        { id: 'qrxg9w', q: 'Dlaczego niebezpiecznie jest budować domy na płaskim dnie doliny rzeki?', options: ['bo podczas powodzi rzeka może zalać ten teren', 'bo tam jest zawsze susza', 'bo tam nie dociera światło', 'bo tam nie ma gleby'], answer: 0, explain: 'Gdy w korycie jest za dużo wody, rzeka wylewa i zalewa dno doliny – to powódź.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
+    {
+      id: 'powietrze',
+      name: 'Powietrze i jego składniki',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 9 (właściwości powietrza, tlenu i dwutlenku węgla: stan skupienia, barwa, rozpuszczalność w wodzie, zapach, palność; skład powietrza), wym. 10 (jakość powietrza, wpływ na zdrowie, zanieczyszczenie powietrza a zmiana klimatu – moduł klimatyczny); dz. 5 wym. 14 (przyczyny smogu, działania ograniczające – moduł klimatyczny). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Powietrze – niewidzialne, ale jest</h3>
+        <p>Powietrza nie widać, ale czujesz je, gdy wieje wiatr. Powietrze <b>zajmuje miejsce</b> (pusta butelka jest pełna powietrza) i ma <b>masę</b> (napompowana piłka jest ciut cięższa niż pusta). Powietrze to <b>mieszanina gazów</b>.</p>
+        <h3>Z czego składa się powietrze?</h3>
+        <table>
+          <tr><th>Gaz</th><th>Ile go jest (w przybliżeniu)</th></tr>
+          <tr><td>azot</td><td>78 części na 100</td></tr>
+          <tr><td>tlen</td><td>21 części na 100</td></tr>
+          <tr><td>inne gazy: argon, dwutlenek węgla i inne</td><td>około 1 części na 100 (dwutlenku węgla – tylko ok. 4 części na 10 000)</td></tr>
+        </table>
+        <p>W powietrzu jest też <b>para wodna</b> – raz więcej, raz mniej – oraz <b>pyły</b>.</p>
+        <div class="tip">💡 Najwięcej w powietrzu jest azotu, a nie tlenu.</div>
+        <h3>Tlen i dwutlenek węgla</h3>
+        <table>
+          <tr><th></th><th>Tlen</th><th>Dwutlenek węgla</th></tr>
+          <tr><td>stan skupienia, barwa, zapach</td><td>gaz, bezbarwny, bez zapachu</td><td>gaz, bezbarwny, bez zapachu</td></tr>
+          <tr><td>palenie</td><td><b>podtrzymuje palenie</b> – tląca się drewniana drzazga w tlenie zapala się płomieniem</td><td><b>nie podtrzymuje palenia</b> – płomień w nim gaśnie; używa się go w niektórych gaśnicach</td></tr>
+          <tr><td>w wodzie</td><td>rozpuszcza się słabo, ale wystarcza dla ryb</td><td>rozpuszcza się – są w nim „bąbelki” w wodzie gazowanej</td></tr>
+          <tr><td>dla organizmów</td><td>potrzebny do <b>oddychania</b></td><td>wydychamy go; rośliny pobierają go do <b>fotosyntezy</b></td></tr>
+        </table>
+        <p>Dwutlenek węgla jest <b>cięższy od powietrza</b> – zbiera się przy ziemi. Wykrywamy go <b>wodą wapienną</b>: gdy przez słomkę wdmuchujesz do niej wydychane powietrze, woda wapienna mętnieje.</p>
+        <p>Azot nie podtrzymuje palenia i nie ma barwy ani zapachu.</p>
+        <h3>Zanieczyszczenia i smog</h3>
+        <p>Powietrze zanieczyszczają przede wszystkim <b>dymy i spaliny</b>: z pieców opalanych węglem lub drewnem (zwłaszcza gdy ktoś pali w nich śmieci), z samochodów, z fabryk i elektrowni. W powietrzu unoszą się wtedy drobne <b>pyły</b> i szkodliwe gazy.</p>
+        <p><b>Smog</b> (od angielskich słów „smoke” – dym i „fog” – mgła) to zanieczyszczone powietrze zalegające nad miastem lub wsią. Tworzy się najczęściej, gdy:</p>
+        <ul>
+          <li>do powietrza trafia dużo dymu i spalin (np. zimą, w sezonie grzewczym),</li>
+          <li>nie ma wiatru, który rozwiałby zanieczyszczenia,</li>
+          <li>miejscowość leży w dolinie lub kotlinie.</li>
+        </ul>
+        <p><b>Skutki dla zdrowia:</b> kaszel, ból głowy, łzawienie oczu, trudności z oddychaniem; po latach – choroby płuc i serca. Jakość powietrza możesz sprawdzić w aplikacji lub na stronie z pomiarami. Gdy jest zła, lepiej ograniczyć wysiłek na dworze.</p>
+        <h3>Powietrze a klimat</h3>
+        <p>Spalanie węgla, ropy i gazu (w piecach, elektrowniach, samochodach) dodaje do powietrza <b>dwutlenek węgla</b>. Im więcej go w powietrzu, tym mocniej Ziemia się ogrzewa – to jedna z przyczyn <b>zmiany klimatu</b>.</p>
+        <h3>Co możemy zrobić?</h3>
+        <ul>
+          <li>nigdy nie palić śmieci,</li>
+          <li>chodzić pieszo, jeździć rowerem lub komunikacją miejską zamiast samochodem,</li>
+          <li>oszczędzać prąd i ciepło (gasić światło, nie przegrzewać mieszkań),</li>
+          <li>sadzić drzewa i dbać o zieleń – rośliny zatrzymują pyły i pobierają dwutlenek węgla.</li>
+        </ul>
+      `,
+      flashcards: [
+        ['Powietrze to…', 'mieszanina gazów (głównie azotu i tlenu)'],
+        ['Najwięcej w powietrzu jest…', 'azotu – ok. 78 części na 100'],
+        ['Ile tlenu jest w powietrzu?', 'ok. 21 części na 100'],
+        ['Tlen a palenie', 'Podtrzymuje palenie – tląca się drzazga się zapala'],
+        ['Dwutlenek węgla a palenie', 'Nie podtrzymuje palenia – płomień gaśnie'],
+        ['Jak wykryć dwutlenek węgla?', 'Woda wapienna mętnieje'],
+        ['Bąbelki w wodzie gazowanej', 'dwutlenek węgla rozpuszczony w wodzie'],
+        ['Smog', 'Zanieczyszczone powietrze (dym + mgła) zalegające nad miejscowością'],
+        ['Kiedy łatwo o smog?', 'Dużo dymu i spalin, brak wiatru, zwykle zimą'],
+        ['Jak ograniczyć zanieczyszczenie powietrza?', 'Nie palić śmieci, wybierać rower i komunikację miejską, oszczędzać energię, sadzić drzewa'],
+      ],
+      questions: [
+        { id: 'dauwli', q: 'Którego gazu jest w powietrzu najwięcej?', options: ['azotu', 'tlenu', 'dwutlenku węgla', 'pary wodnej'], answer: 0, explain: 'Azot to ok. 78 części na 100 części powietrza, tlen – ok. 21.' },
+        { id: '20pzz6', q: 'Ile mniej więcej tlenu jest w powietrzu?', options: ['ok. 21 części na 100', 'ok. 78 części na 100', 'ok. 50 części na 100', 'ok. 1 części na 100'], answer: 0, explain: 'Tlen stanowi ok. 21 części na 100 części powietrza. 78 części to azot.' },
+        { id: 'jvjvjq', q: 'Do słoika z tlenem włożono tlącą się drzazgę. Co się stanie?', options: ['drzazga zapali się płomieniem', 'drzazga zgaśnie', 'nic się nie zmieni', 'słoik napełni się wodą'], answer: 0, explain: 'Tlen podtrzymuje palenie – tląca się drzazga w czystym tlenie rozbłyska płomieniem.' },
+        { id: 'x97ugp', q: 'Który gaz gasi płomień i jest używany w niektórych gaśnicach?', options: ['dwutlenek węgla', 'tlen', 'para wodna'], answer: 0, explain: 'Dwutlenek węgla nie podtrzymuje palenia – płomień w nim gaśnie.' },
+        { id: 'moq9fk', q: 'Jak można wykryć dwutlenek węgla?', options: ['woda wapienna mętnieje', 'gaz ma zapach zgniłych jaj', 'gaz ma niebieski kolor', 'gaz świeci w ciemności'], answer: 0, explain: 'Dwutlenek węgla jest bezbarwny i bez zapachu. Rozpoznajemy go po tym, że woda wapienna mętnieje.' },
+        { id: '6lp5vc', q: 'Co to są bąbelki w wodzie gazowanej?', options: ['dwutlenek węgla', 'tlen', 'azot', 'para wodna'], answer: 0, explain: 'Do wody gazowanej dodaje się dwutlenek węgla – rozpuszcza się w wodzie, a po otwarciu butelki uwalnia się w postaci bąbelków.' },
+        { id: 'dnohax', q: 'Jaki gaz pobierają rośliny z powietrza do fotosyntezy?', options: ['dwutlenek węgla', 'tlen', 'azot', 'argon'], answer: 0, explain: 'Rośliny pobierają dwutlenek węgla, a podczas fotosyntezy wydzielają tlen.' },
+        { id: 's377jb', q: 'Prawda czy fałsz?\nTlen ma niebieską barwę i ostry zapach.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Tlen jest bezbarwny i nie ma zapachu – tak jak całe czyste powietrze.' },
+        { id: 'lpe9q0', q: 'Prawda czy fałsz?\nPowietrze zajmuje miejsce i ma masę.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '„Pusta” butelka jest pełna powietrza, a napompowana piłka waży trochę więcej niż pusta.' },
+        { id: '1vzoop', q: 'Dlaczego dwutlenek węgla zbiera się przy ziemi, np. na dnie piwnicy?', options: ['bo jest cięższy od powietrza', 'bo jest lżejszy od powietrza', 'bo jest ciekły', 'bo przyciąga go glina'], answer: 0, explain: 'Dwutlenek węgla jest cięższy od powietrza, więc opada w dół.' },
+        { id: 'u1k2gb', q: 'Słowo „smog” powstało z połączenia angielskich słów oznaczających…', options: ['dym i mgłę', 'deszcz i śnieg', 'wiatr i burzę', 'słońce i chmury'], answer: 0, explain: 'Smoke – dym, fog – mgła. Smog to zanieczyszczone powietrze zalegające nad miejscowością.' },
+        { id: 'o22awm', q: 'Kiedy najłatwiej o smog?', options: ['zimą, przy bezwietrznej pogodzie, gdy pracuje dużo pieców', 'latem, podczas silnego wiatru', 'podczas ulewnego deszczu', 'gdy wieje silny wiatr od morza'], answer: 0, explain: 'Zimą do powietrza trafia dużo dymu z pieców, a gdy nie ma wiatru, zanieczyszczenia nie są rozwiewane.' },
+        { id: '9yfj16', q: 'Co NIE powoduje zanieczyszczenia powietrza?', options: ['jazda na rowerze', 'palenie śmieci w piecu', 'spaliny z samochodów', 'dym z kominów fabryk'], answer: 0, explain: 'Rower nie wytwarza spalin. Palenie śmieci, spaliny i dymy zanieczyszczają powietrze.' },
+        { id: 'rx7tko', q: 'Jakie mogą być skutki oddychania zanieczyszczonym powietrzem?', options: ['kaszel i trudności z oddychaniem', 'lepszy wzrok', 'szybszy wzrost włosów', 'nie ma żadnych skutków'], answer: 0, explain: 'Pyły i szkodliwe gazy podrażniają drogi oddechowe. Po latach mogą prowadzić do chorób płuc i serca.' },
+        { id: '4zameo', q: 'W aplikacji sprawdziłeś, że jakość powietrza jest dziś bardzo zła. Co warto zrobić?', options: ['ograniczyć wysiłek na dworze', 'pobiegać dłużej niż zwykle', 'otworzyć okna na cały dzień', 'rozpalić ognisko'], answer: 0, explain: 'Podczas wysiłku oddychamy szybciej i wciągamy więcej zanieczyszczeń. Lepiej przenieść ruch do domu lub sali.' },
+        { id: 'urkwez', q: 'Jak spalanie węgla, ropy i gazu wpływa na klimat?', options: ['dodaje do powietrza dwutlenek węgla, przez co Ziemia mocniej się ogrzewa', 'zwiększa ilość tlenu w powietrzu', 'ochładza Ziemię', 'nie ma żadnego wpływu'], answer: 0, explain: 'Przy spalaniu powstaje dwutlenek węgla. Im więcej go w powietrzu, tym mocniej ogrzewa się Ziemia – to jedna z przyczyn zmiany klimatu.' },
+        { id: 'i0i6ed', q: 'Które działanie pomaga dbać o czyste powietrze?', options: ['sadzenie drzew', 'palenie liści i śmieci w ogródku', 'jeżdżenie samochodem na krótkie odległości', 'zostawianie włączonego światła'], answer: 0, explain: 'Rośliny zatrzymują pyły i pobierają dwutlenek węgla. Pozostałe działania zanieczyszczają powietrze albo marnują energię.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
     {
       id: 'pogoda',
       name: 'Pogoda i jej składniki',
@@ -660,408 +949,8 @@ window.SUBJECTS.push({
         { id: 'mdt1h2', q: 'Co oznacza słowo „zachmurzenie”?', options: ['jaka część nieba jest zakryta chmurami', 'jak szybko wieje wiatr', 'ile spadło deszczu', 'jak wysoko są chmury'], answer: 0, explain: 'Zachmurzenie mówi, jaka część nieba jest zakryta chmurami – od bezchmurnego nieba do całkowitego zachmurzenia.' },
       ],
     },
-    {
-      id: 'skaly-gleba',
-      name: 'Skały i gleba',
-      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 6 (skały najbliższej okolicy – barwa, spójność, twardość, odporność na działanie wody; porównanie z innymi skałami Polski), wym. 7 (gleba okolicy, porównanie z ziemią ogrodową, przydatność do uprawy roślin); doświadczenia edukacyjne – zajęcia terenowe, pkt 4 (próbka gleby: barwa, próchnica, uziarnienie, organizmy). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
-      theory: `
-        <h3>Skały wokół nas</h3>
-        <p><b>Skały</b> to naturalne składniki przyrody nieożywionej, z których zbudowana jest skorupa Ziemi. Spotkasz je w górach i kamieniołomach, ale też na plaży, na polu i w budynkach (schody, parapety, kostka brukowa).</p>
-        <p>Ze względu na <b>spójność</b> (czy ziarna trzymają się razem) dzielimy skały na:</p>
-        <table>
-          <tr><th>Skały lite</th><th>Skały zwięzłe</th><th>Skały luźne</th></tr>
-          <tr><td>twarde, ziarna mocno ze sobą połączone</td><td>ziarna połączone słabiej; mokre dają się formować</td><td>ziarna niepołączone, rozsypują się</td></tr>
-          <tr><td>granit, piaskowiec, wapień</td><td>glina</td><td>piasek, żwir</td></tr>
-        </table>
-        <h3>Jak badamy skały?</h3>
-        <ul>
-          <li><b>Barwa</b> – oglądamy skałę, najlepiej przez lupę. Granit ma widoczne różnokolorowe ziarna, wapień jest zwykle jasny.</li>
-          <li><b>Twardość</b> – próbujemy zarysować skałę gwoździem. Granitu gwoździem nie zarysujesz, wapień – tak.</li>
-          <li><b>Odporność na wodę</b> – kładziemy próbkę do wody. Glina nasiąka i staje się plastyczna (można z niej lepić). Piasek przepuszcza wodę.</li>
-          <li><b>Wapień</b> rozpoznasz po tym, że po polaniu octem pojawiają się pęcherzyki gazu (skała „musuje”).</li>
-        </ul>
-        <div class="tip">💡 Przy badaniu skał pracuj w okularach ochronnych i pod opieką dorosłego. Nie bierz skał do ust.</div>
-        <h3>Skały w Polsce – przykłady</h3>
-        <ul>
-          <li><b>granit</b> – m.in. w Karkonoszach i w Tatrach; używa się go na schody, pomniki, nagrobki,</li>
-          <li><b>piaskowiec</b> – np. w Górach Stołowych; to sklejone ziarna piasku,</li>
-          <li><b>wapień</b> – np. na Wyżynie Krakowsko-Częstochowskiej; z wapienia robi się m.in. wapno i cement,</li>
-          <li><b>glina</b> – surowiec do wyrobu cegieł i naczyń,</li>
-          <li><b>piasek i żwir</b> – na plażach, w korytach rzek, w żwirowniach; używa się ich na budowach,</li>
-          <li><b>głazy narzutowe</b> – duże kamienie przyniesione na teren Polski przez lądolód ze Skandynawii.</li>
-        </ul>
-        <h3>Gleba</h3>
-        <p><b>Gleba</b> to wierzchnia warstwa ziemi, w której rosną rośliny. Powstaje bardzo powoli – przez setki lat – z rozdrobnionych skał i szczątków organizmów.</p>
-        <p><b>Składniki gleby:</b></p>
-        <ul>
-          <li>okruchy skał (np. piasek, glina),</li>
-          <li><b>próchnica</b> – ciemna substancja z rozłożonych szczątków roślin i zwierząt; daje roślinom składniki odżywcze,</li>
-          <li>woda i powietrze (w szczelinach między grudkami),</li>
-          <li>organizmy – m.in. dżdżownice, owady, bakterie i grzyby. Dżdżownice drążą korytarze i mieszają glebę, a bakterie i grzyby rozkładają szczątki na próchnicę.</li>
-        </ul>
-        <h3>Jaka gleba jest najlepsza dla roślin?</h3>
-        <table>
-          <tr><th>Gleba piaszczysta</th><th>Gleba gliniasta</th><th>Ziemia ogrodowa</th></tr>
-          <tr><td>jasna, sypka; woda szybko przez nią przecieka, więc szybko wysycha; mało próchnicy</td><td>zbita, ciężka; zatrzymuje wodę, po deszczu robi się błoto; mało powietrza</td><td>ciemna, pulchna; dużo próchnicy (np. z kompostu); dobrze trzyma wodę i ma powietrze</td></tr>
-        </table>
-        <p>Im <b>ciemniejsza</b> gleba, tym zwykle więcej w niej próchnicy i tym lepiej rosną w niej rośliny.</p>
-        <h3>Doświadczenie: gleba w słoiku</h3>
-        <p>Wsyp trochę gleby do słoika z wodą, zamieszaj i odstaw. Po pewnym czasie zobaczysz <b>warstwy</b>: na dnie najcięższe ziarna (żwir, piasek), wyżej drobne cząstki (muł, glina), a na powierzchni pływają szczątki roślin. Pęcherzyki powietrza pokazują, że w glebie było powietrze.</p>
-      `,
-      flashcards: [
-        ['Skały lite – przykłady', 'granit, piaskowiec, wapień'],
-        ['Skała zwięzła – przykład', 'glina (mokra daje się formować)'],
-        ['Skały luźne – przykłady', 'piasek, żwir'],
-        ['Jak rozpoznać wapień?', 'Po polaniu octem musuje – powstają pęcherzyki gazu'],
-        ['Jak zbadać twardość skały?', 'Próbujemy zarysować ją gwoździem'],
-        ['Głazy narzutowe', 'Duże kamienie przyniesione przez lądolód ze Skandynawii'],
-        ['Gleba', 'Wierzchnia warstwa ziemi, w której rosną rośliny'],
-        ['Próchnica', 'Ciemna substancja z rozłożonych szczątków roślin i zwierząt; użyźnia glebę'],
-        ['Składniki gleby', 'okruchy skał, próchnica, woda, powietrze, organizmy'],
-        ['Rola dżdżownic w glebie', 'Drążą korytarze i mieszają glebę'],
-        ['Gleba piaszczysta', 'Przepuszcza wodę i szybko wysycha, ma mało próchnicy'],
-      ],
-      questions: [
-        { id: '12b888', q: 'Która skała jest skałą luźną?', options: ['piasek', 'granit', 'wapień', 'piaskowiec'], answer: 0, explain: 'Ziarna piasku nie są ze sobą połączone – piasek się rozsypuje. Granit, wapień i piaskowiec to skały lite.' },
-        { id: 'lxa3wt', q: 'Która skała po zwilżeniu daje się formować jak plastelina?', options: ['glina', 'żwir', 'granit', 'piasek'], answer: 0, explain: 'Mokra glina jest plastyczna – lepi się z niej naczynia i robi cegły.' },
-        { id: 'qk0h17', q: 'Którą skałę rozpoznasz po tym, że po polaniu octem pojawiają się pęcherzyki gazu?', options: ['wapień', 'granit', 'glinę', 'piasek'], answer: 0, explain: 'Wapień pod wpływem octu „musuje” – wydziela się gaz.' },
-        { id: '1gxlzg', q: 'Jak sprawdzisz twardość skały?', options: ['próbując zarysować ją gwoździem', 'wąchając ją', 'mierząc ją linijką', 'ważąc ją'], answer: 0, explain: 'Twardą skałę (np. granit) trudno zarysować gwoździem, a miękką (np. wapień) – łatwo.' },
-        { id: '3n5tog', q: 'Prawda czy fałsz?\nGranit to skała luźna.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Granit to twarda skała lita – jego ziarna są mocno ze sobą połączone.' },
-        { id: 'l4nh68', q: 'Skąd na terenie Polski wzięły się głazy narzutowe?', options: ['przyniósł je lądolód ze Skandynawii', 'przyniosły je rzeki z Tatr', 'wyrzuciły je wulkany', 'ułożyli je ludzie'], answer: 0, explain: 'Głazy narzutowe przyniósł lądolód, który dawno temu nasunął się na teren Polski ze Skandynawii.' },
-        { id: '7tg1x4', q: 'Piaskowiec to skała zbudowana z…', options: ['sklejonych ziaren piasku', 'zastygłej lawy', 'muszli i lodu', 'mokrej gliny'], answer: 0, explain: 'Sama nazwa podpowiada: piaskowiec to ziarna piasku mocno ze sobą sklejone.' },
-        { id: 'nlgsff', q: 'Do czego używa się gliny?', options: ['do wyrobu cegieł i naczyń', 'do produkcji szkła okiennego', 'jako paliwa', 'do budowy kompasów'], answer: 0, explain: 'Z gliny wypala się cegły, dachówki i naczynia.' },
-        { id: 'nle2kz', q: 'Co to jest próchnica w glebie?', options: ['ciemna substancja z rozłożonych szczątków roślin i zwierząt', 'choroba zębów roślin', 'rodzaj skały litej', 'woda w glebie'], answer: 0, explain: 'Próchnica powstaje z rozłożonych szczątków organizmów. Dostarcza roślinom składników odżywczych.' },
-        { id: '3t5jiu', q: 'Który składnik NIE wchodzi w skład gleby?', options: ['plastik', 'próchnica', 'woda', 'okruchy skał'], answer: 0, explain: 'Gleba składa się z okruchów skał, próchnicy, wody, powietrza i organizmów. Plastik to śmieć, który do gleby nie należy.' },
-        { id: '0bb1i0', q: 'Jaką rolę w glebie pełnią dżdżownice?', options: ['drążą korytarze i mieszają glebę', 'wytwarzają skały', 'zjadają korzenie zdrowych roślin', 'wysuszają glebę'], answer: 0, explain: 'Dżdżownice spulchniają i mieszają glebę – dzięki temu dostaje się do niej powietrze i woda.' },
-        { id: 'okzbb5', q: 'Która gleba szybko przepuszcza wodę i szybko wysycha?', options: ['piaszczysta', 'gliniasta', 'ziemia ogrodowa z kompostem'], answer: 0, explain: 'Ziarna piasku są duże i luźne – woda łatwo między nimi przecieka.' },
-        { id: 'p6qn4c', q: 'Po deszczu na tej glebie długo stoją kałuże i robi się błoto. To najpewniej gleba…', options: ['gliniasta', 'piaszczysta', 'żwirowa'], answer: 0, explain: 'Glina zatrzymuje wodę i słabo ją przepuszcza.' },
-        { id: 'v6etg7', q: 'W której glebie rośliny będą rosły najlepiej?', options: ['w ciemnej ziemi ogrodowej z dużą ilością próchnicy', 'w czystym piasku', 'w ubitej glinie', 'w żwirze'], answer: 0, explain: 'Ziemia ogrodowa ma dużo próchnicy (składników odżywczych), dobrze trzyma wodę i ma powietrze.' },
-        { id: 'nzm3al', q: 'Do słoika z wodą wsypano glebę, zamieszano i odstawiono. Co będzie na dnie?', options: ['najcięższe ziarna – żwir i piasek', 'szczątki roślin', 'pęcherzyki powietrza', 'nic – wszystko się rozpuści'], answer: 0, explain: 'Najcięższe ziarna opadają najszybciej i leżą na dnie. Szczątki roślin pływają na powierzchni.' },
-        { id: 'r60utl', q: 'Prawda czy fałsz?\nGleba powstaje bardzo powoli – przez setki lat.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Skały kruszą się, a szczątki organizmów rozkładają się bardzo powoli. Dlatego trzeba dbać o glebę.' },
-        { id: '0zgoyw', q: 'Ciemna barwa gleby świadczy zwykle o tym, że…', options: ['jest w niej dużo próchnicy', 'jest w niej dużo piasku', 'jest zanieczyszczona', 'nie ma w niej wody'], answer: 0, explain: 'Próchnica jest ciemna – im ciemniejsza gleba, tym zwykle więcej w niej próchnicy.' },
-      ],
-    },
-    {
-      id: 'powietrze',
-      name: 'Powietrze i jego składniki',
-      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 9 (właściwości powietrza, tlenu i dwutlenku węgla: stan skupienia, barwa, rozpuszczalność w wodzie, zapach, palność; skład powietrza), wym. 10 (jakość powietrza, wpływ na zdrowie, zanieczyszczenie powietrza a zmiana klimatu – moduł klimatyczny); dz. 5 wym. 14 (przyczyny smogu, działania ograniczające – moduł klimatyczny). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
-      theory: `
-        <h3>Powietrze – niewidzialne, ale jest</h3>
-        <p>Powietrza nie widać, ale czujesz je, gdy wieje wiatr. Powietrze <b>zajmuje miejsce</b> (pusta butelka jest pełna powietrza) i ma <b>masę</b> (napompowana piłka jest ciut cięższa niż pusta). Powietrze to <b>mieszanina gazów</b>.</p>
-        <h3>Z czego składa się powietrze?</h3>
-        <table>
-          <tr><th>Gaz</th><th>Ile go jest (w przybliżeniu)</th></tr>
-          <tr><td>azot</td><td>78 części na 100</td></tr>
-          <tr><td>tlen</td><td>21 części na 100</td></tr>
-          <tr><td>inne gazy: argon, dwutlenek węgla i inne</td><td>około 1 części na 100 (dwutlenku węgla – tylko ok. 4 części na 10 000)</td></tr>
-        </table>
-        <p>W powietrzu jest też <b>para wodna</b> – raz więcej, raz mniej – oraz <b>pyły</b>.</p>
-        <div class="tip">💡 Najwięcej w powietrzu jest azotu, a nie tlenu.</div>
-        <h3>Tlen i dwutlenek węgla</h3>
-        <table>
-          <tr><th></th><th>Tlen</th><th>Dwutlenek węgla</th></tr>
-          <tr><td>stan skupienia, barwa, zapach</td><td>gaz, bezbarwny, bez zapachu</td><td>gaz, bezbarwny, bez zapachu</td></tr>
-          <tr><td>palenie</td><td><b>podtrzymuje palenie</b> – tląca się drewniana drzazga w tlenie zapala się płomieniem</td><td><b>nie podtrzymuje palenia</b> – płomień w nim gaśnie; używa się go w niektórych gaśnicach</td></tr>
-          <tr><td>w wodzie</td><td>rozpuszcza się słabo, ale wystarcza dla ryb</td><td>rozpuszcza się – są w nim „bąbelki” w wodzie gazowanej</td></tr>
-          <tr><td>dla organizmów</td><td>potrzebny do <b>oddychania</b></td><td>wydychamy go; rośliny pobierają go do <b>fotosyntezy</b></td></tr>
-        </table>
-        <p>Dwutlenek węgla jest <b>cięższy od powietrza</b> – zbiera się przy ziemi. Wykrywamy go <b>wodą wapienną</b>: gdy przez słomkę wdmuchujesz do niej wydychane powietrze, woda wapienna mętnieje.</p>
-        <p>Azot nie podtrzymuje palenia i nie ma barwy ani zapachu.</p>
-        <h3>Zanieczyszczenia i smog</h3>
-        <p>Powietrze zanieczyszczają przede wszystkim <b>dymy i spaliny</b>: z pieców opalanych węglem lub drewnem (zwłaszcza gdy ktoś pali w nich śmieci), z samochodów, z fabryk i elektrowni. W powietrzu unoszą się wtedy drobne <b>pyły</b> i szkodliwe gazy.</p>
-        <p><b>Smog</b> (od angielskich słów „smoke” – dym i „fog” – mgła) to zanieczyszczone powietrze zalegające nad miastem lub wsią. Tworzy się najczęściej, gdy:</p>
-        <ul>
-          <li>do powietrza trafia dużo dymu i spalin (np. zimą, w sezonie grzewczym),</li>
-          <li>nie ma wiatru, który rozwiałby zanieczyszczenia,</li>
-          <li>miejscowość leży w dolinie lub kotlinie.</li>
-        </ul>
-        <p><b>Skutki dla zdrowia:</b> kaszel, ból głowy, łzawienie oczu, trudności z oddychaniem; po latach – choroby płuc i serca. Jakość powietrza możesz sprawdzić w aplikacji lub na stronie z pomiarami. Gdy jest zła, lepiej ograniczyć wysiłek na dworze.</p>
-        <h3>Powietrze a klimat</h3>
-        <p>Spalanie węgla, ropy i gazu (w piecach, elektrowniach, samochodach) dodaje do powietrza <b>dwutlenek węgla</b>. Im więcej go w powietrzu, tym mocniej Ziemia się ogrzewa – to jedna z przyczyn <b>zmiany klimatu</b>.</p>
-        <h3>Co możemy zrobić?</h3>
-        <ul>
-          <li>nigdy nie palić śmieci,</li>
-          <li>chodzić pieszo, jeździć rowerem lub komunikacją miejską zamiast samochodem,</li>
-          <li>oszczędzać prąd i ciepło (gasić światło, nie przegrzewać mieszkań),</li>
-          <li>sadzić drzewa i dbać o zieleń – rośliny zatrzymują pyły i pobierają dwutlenek węgla.</li>
-        </ul>
-      `,
-      flashcards: [
-        ['Powietrze to…', 'mieszanina gazów (głównie azotu i tlenu)'],
-        ['Najwięcej w powietrzu jest…', 'azotu – ok. 78 części na 100'],
-        ['Ile tlenu jest w powietrzu?', 'ok. 21 części na 100'],
-        ['Tlen a palenie', 'Podtrzymuje palenie – tląca się drzazga się zapala'],
-        ['Dwutlenek węgla a palenie', 'Nie podtrzymuje palenia – płomień gaśnie'],
-        ['Jak wykryć dwutlenek węgla?', 'Woda wapienna mętnieje'],
-        ['Bąbelki w wodzie gazowanej', 'dwutlenek węgla rozpuszczony w wodzie'],
-        ['Smog', 'Zanieczyszczone powietrze (dym + mgła) zalegające nad miejscowością'],
-        ['Kiedy łatwo o smog?', 'Dużo dymu i spalin, brak wiatru, zwykle zimą'],
-        ['Jak ograniczyć zanieczyszczenie powietrza?', 'Nie palić śmieci, wybierać rower i komunikację miejską, oszczędzać energię, sadzić drzewa'],
-      ],
-      questions: [
-        { id: 'dauwli', q: 'Którego gazu jest w powietrzu najwięcej?', options: ['azotu', 'tlenu', 'dwutlenku węgla', 'pary wodnej'], answer: 0, explain: 'Azot to ok. 78 części na 100 części powietrza, tlen – ok. 21.' },
-        { id: '20pzz6', q: 'Ile mniej więcej tlenu jest w powietrzu?', options: ['ok. 21 części na 100', 'ok. 78 części na 100', 'ok. 50 części na 100', 'ok. 1 części na 100'], answer: 0, explain: 'Tlen stanowi ok. 21 części na 100 części powietrza. 78 części to azot.' },
-        { id: 'jvjvjq', q: 'Do słoika z tlenem włożono tlącą się drzazgę. Co się stanie?', options: ['drzazga zapali się płomieniem', 'drzazga zgaśnie', 'nic się nie zmieni', 'słoik napełni się wodą'], answer: 0, explain: 'Tlen podtrzymuje palenie – tląca się drzazga w czystym tlenie rozbłyska płomieniem.' },
-        { id: 'x97ugp', q: 'Który gaz gasi płomień i jest używany w niektórych gaśnicach?', options: ['dwutlenek węgla', 'tlen', 'para wodna'], answer: 0, explain: 'Dwutlenek węgla nie podtrzymuje palenia – płomień w nim gaśnie.' },
-        { id: 'moq9fk', q: 'Jak można wykryć dwutlenek węgla?', options: ['woda wapienna mętnieje', 'gaz ma zapach zgniłych jaj', 'gaz ma niebieski kolor', 'gaz świeci w ciemności'], answer: 0, explain: 'Dwutlenek węgla jest bezbarwny i bez zapachu. Rozpoznajemy go po tym, że woda wapienna mętnieje.' },
-        { id: '6lp5vc', q: 'Co to są bąbelki w wodzie gazowanej?', options: ['dwutlenek węgla', 'tlen', 'azot', 'para wodna'], answer: 0, explain: 'Do wody gazowanej dodaje się dwutlenek węgla – rozpuszcza się w wodzie, a po otwarciu butelki uwalnia się w postaci bąbelków.' },
-        { id: 'dnohax', q: 'Jaki gaz pobierają rośliny z powietrza do fotosyntezy?', options: ['dwutlenek węgla', 'tlen', 'azot', 'argon'], answer: 0, explain: 'Rośliny pobierają dwutlenek węgla, a podczas fotosyntezy wydzielają tlen.' },
-        { id: 's377jb', q: 'Prawda czy fałsz?\nTlen ma niebieską barwę i ostry zapach.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Tlen jest bezbarwny i nie ma zapachu – tak jak całe czyste powietrze.' },
-        { id: 'lpe9q0', q: 'Prawda czy fałsz?\nPowietrze zajmuje miejsce i ma masę.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '„Pusta” butelka jest pełna powietrza, a napompowana piłka waży trochę więcej niż pusta.' },
-        { id: '1vzoop', q: 'Dlaczego dwutlenek węgla zbiera się przy ziemi, np. na dnie piwnicy?', options: ['bo jest cięższy od powietrza', 'bo jest lżejszy od powietrza', 'bo jest ciekły', 'bo przyciąga go glina'], answer: 0, explain: 'Dwutlenek węgla jest cięższy od powietrza, więc opada w dół.' },
-        { id: 'u1k2gb', q: 'Słowo „smog” powstało z połączenia angielskich słów oznaczających…', options: ['dym i mgłę', 'deszcz i śnieg', 'wiatr i burzę', 'słońce i chmury'], answer: 0, explain: 'Smoke – dym, fog – mgła. Smog to zanieczyszczone powietrze zalegające nad miejscowością.' },
-        { id: 'o22awm', q: 'Kiedy najłatwiej o smog?', options: ['zimą, przy bezwietrznej pogodzie, gdy pracuje dużo pieców', 'latem, podczas silnego wiatru', 'podczas ulewnego deszczu', 'gdy wieje silny wiatr od morza'], answer: 0, explain: 'Zimą do powietrza trafia dużo dymu z pieców, a gdy nie ma wiatru, zanieczyszczenia nie są rozwiewane.' },
-        { id: '9yfj16', q: 'Co NIE powoduje zanieczyszczenia powietrza?', options: ['jazda na rowerze', 'palenie śmieci w piecu', 'spaliny z samochodów', 'dym z kominów fabryk'], answer: 0, explain: 'Rower nie wytwarza spalin. Palenie śmieci, spaliny i dymy zanieczyszczają powietrze.' },
-        { id: 'rx7tko', q: 'Jakie mogą być skutki oddychania zanieczyszczonym powietrzem?', options: ['kaszel i trudności z oddychaniem', 'lepszy wzrok', 'szybszy wzrost włosów', 'nie ma żadnych skutków'], answer: 0, explain: 'Pyły i szkodliwe gazy podrażniają drogi oddechowe. Po latach mogą prowadzić do chorób płuc i serca.' },
-        { id: '4zameo', q: 'W aplikacji sprawdziłeś, że jakość powietrza jest dziś bardzo zła. Co warto zrobić?', options: ['ograniczyć wysiłek na dworze', 'pobiegać dłużej niż zwykle', 'otworzyć okna na cały dzień', 'rozpalić ognisko'], answer: 0, explain: 'Podczas wysiłku oddychamy szybciej i wciągamy więcej zanieczyszczeń. Lepiej przenieść ruch do domu lub sali.' },
-        { id: 'urkwez', q: 'Jak spalanie węgla, ropy i gazu wpływa na klimat?', options: ['dodaje do powietrza dwutlenek węgla, przez co Ziemia mocniej się ogrzewa', 'zwiększa ilość tlenu w powietrzu', 'ochładza Ziemię', 'nie ma żadnego wpływu'], answer: 0, explain: 'Przy spalaniu powstaje dwutlenek węgla. Im więcej go w powietrzu, tym mocniej ogrzewa się Ziemia – to jedna z przyczyn zmiany klimatu.' },
-        { id: 'i0i6ed', q: 'Które działanie pomaga dbać o czyste powietrze?', options: ['sadzenie drzew', 'palenie liści i śmieci w ogródku', 'jeżdżenie samochodem na krótkie odległości', 'zostawianie włączonego światła'], answer: 0, explain: 'Rośliny zatrzymują pyły i pobierają dwutlenek węgla. Pozostałe działania zanieczyszczają powietrze albo marnują energię.' },
-      ],
-    },
-    {
-      id: 'ochrona',
-      name: 'Ochrona przyrody',
-      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 8 (formy ochrony przyrody w otoczeniu, walory przyrodnicze podlegające ochronie). Formy ochrony przyrody, opisy parku narodowego, rezerwatu, parku krajobrazowego, pomnika przyrody, zakazy w parku narodowym i liczba parków narodowych – według ustawy o ochronie przyrody (tekst jednolity Dz.U. 2026 poz. 1315: art. 6, 8, 13, 15, 16, 40 i załącznik), sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
-      theory: `
-        <h3>Po co chronimy przyrodę?</h3>
-        <p>Ludzie budują drogi i domy, wycinają lasy, osuszają bagna, zanieczyszczają wodę i powietrze. Przez to niektóre rośliny, zwierzęta i grzyby tracą miejsca do życia i stają się rzadkie. Dlatego najcenniejsze miejsca i gatunki chroni <b>prawo</b> – ustawa o ochronie przyrody.</p>
-        <h3>Formy ochrony przyrody</h3>
-        <p>Ustawa wymienia 10 form ochrony przyrody. Najważniejsze dla ciebie:</p>
-        <table>
-          <tr><th>Forma</th><th>Co chroni?</th></tr>
-          <tr><td><b>park narodowy</b></td><td>duży obszar (co najmniej 1000 ha) o szczególnych wartościach; chroniona jest <b>cała przyroda</b> i krajobraz</td></tr>
-          <tr><td><b>rezerwat przyrody</b></td><td>mniejszy obszar zachowany w stanie naturalnym lub mało zmienionym, np. fragment lasu, torfowisko, miejsce życia rzadkich roślin</td></tr>
-          <tr><td><b>park krajobrazowy</b></td><td>obszar cenny ze względu na przyrodę, historię, kulturę i krajobraz; mogą tam mieszkać ludzie, działają gospodarstwa</td></tr>
-          <tr><td><b>pomnik przyrody</b></td><td>pojedynczy twór przyrody lub ich skupisko, np. okazałe stare drzewo, źródło, wodospad, skałka, jaskinia, <b>głaz narzutowy</b></td></tr>
-          <tr><td><b>ochrona gatunkowa</b></td><td>wybrane gatunki roślin, zwierząt i grzybów – chronione wszędzie, gdzie występują</td></tr>
-        </table>
-        <p>Pozostałe formy to: obszary chronionego krajobrazu, obszary Natura 2000, stanowiska dokumentacyjne, użytki ekologiczne i zespoły przyrodniczo-krajobrazowe.</p>
-        <h3>Parki narodowe w Polsce</h3>
-        <p>Według ustawy w Polsce są <b>23 parki narodowe</b> (stan z 2026 r.). Przykłady:</p>
-        <ul>
-          <li><b>Białowieski</b> – stary las (Puszcza Białowieska), żyją tam żubry,</li>
-          <li><b>Tatrzański</b> – najwyższe polskie góry,</li>
-          <li><b>Słowiński</b> – nad morzem, ruchome wydmy,</li>
-          <li><b>Kampinoski</b> – Puszcza Kampinoska tuż obok Warszawy,</li>
-          <li><b>Ojcowski</b> – wapienne skały i jaskinie na Wyżynie Krakowsko-Częstochowskiej.</li>
-        </ul>
-        <h3>Jak się zachować w parku narodowym i rezerwacie?</h3>
-        <p>Ustawa zakazuje tam m.in.:</p>
-        <ul>
-          <li>chodzenia i jeżdżenia rowerem <b>poza wyznaczonymi szlakami</b>,</li>
-          <li>zrywania roślin i zbierania grzybów (poza miejscami wyznaczonymi),</li>
-          <li>płoszenia, chwytania i zabijania dzikich zwierząt, niszczenia gniazd i nor,</li>
-          <li>palenia ognisk (poza miejscami wyznaczonymi),</li>
-          <li><b>zakłócania ciszy</b>,</li>
-          <li>zabierania skał, skamieniałości i minerałów.</li>
-        </ul>
-        <div class="tip">💡 Zasada turysty: idź szlakiem, nie hałasuj, niczego nie zrywaj i nie zostawiaj śmieci – zabierz je ze sobą.</div>
-        <h3>Ochrona gatunkowa</h3>
-        <p>Gatunków chronionych nie wolno m.in. zrywać, wykopywać, zabijać, płoszyć ani niszczyć ich gniazd. Przykładem jest <b>żubr</b> – największy ssak lądowy Europy. Na początku XX wieku żubry żyjące na wolności wyginęły. Odtworzono je z kilku zwierząt z ogrodów zoologicznych i dzięki ochronie znów żyją w polskich lasach.</p>
-        <h3>Ochrona przyrody w twojej okolicy</h3>
-        <p>Rozejrzyj się: w wielu miejscowościach są pomniki przyrody – stare drzewa albo duże głazy z tabliczką. W okolicy może być też rezerwat albo park krajobrazowy. Informacje znajdziesz na tablicach w terenie i na stronach gminy.</p>
-      `,
-      flashcards: [
-        ['Ile jest form ochrony przyrody w ustawie?', '10'],
-        ['Park narodowy', 'Duży obszar (min. 1000 ha), w którym chroni się całą przyrodę i krajobraz'],
-        ['Rezerwat przyrody', 'Obszar zachowany w stanie naturalnym lub mało zmienionym, chroniony ze względu na szczególne wartości'],
-        ['Park krajobrazowy', 'Obszar chroniony ze względu na przyrodę, historię, kulturę i krajobraz; mogą w nim mieszkać ludzie'],
-        ['Pomnik przyrody – przykłady', 'Okazałe stare drzewo, źródło, wodospad, skałka, jaskinia, głaz narzutowy'],
-        ['Ochrona gatunkowa', 'Ochrona wybranych gatunków roślin, zwierząt i grzybów wszędzie, gdzie występują'],
-        ['Ile jest parków narodowych w Polsce?', '23 (według ustawy, stan z 2026 r.)'],
-        ['Białowieski Park Narodowy', 'Puszcza Białowieska; żyją tam żubry'],
-        ['W parku narodowym chodzimy…', 'tylko wyznaczonymi szlakami'],
-        ['Żubr', 'Największy ssak lądowy Europy; uratowany dzięki ochronie'],
-      ],
-      questions: [
-        { id: '4b9d7i', q: 'Która forma ochrony przyrody obejmuje duży obszar, na którym chroni się całą przyrodę i krajobraz?', options: ['park narodowy', 'pomnik przyrody', 'ochrona gatunkowa', 'użytek ekologiczny'], answer: 0, explain: 'W parku narodowym (o powierzchni co najmniej 1000 ha) ochronie podlega cała przyroda i walory krajobrazowe.' },
-        { id: 'dub58h', q: 'Stary, ogromny dąb w środku wsi może zostać…', options: ['pomnikiem przyrody', 'parkiem narodowym', 'parkiem krajobrazowym', 'obszarem Natura 2000'], answer: 0, explain: 'Pomnikiem przyrody może być pojedynczy twór przyrody, np. okazałe drzewo, źródło, skałka albo głaz narzutowy.' },
-        { id: 'y7kj0u', q: 'Która forma ochrony obejmuje wybrane gatunki roślin, zwierząt i grzybów wszędzie, gdzie występują?', options: ['ochrona gatunkowa', 'rezerwat przyrody', 'park narodowy', 'pomnik przyrody'], answer: 0, explain: 'Gatunek chroniony jest chroniony nie tylko w parku – także w twoim ogrodzie czy przy drodze.' },
-        { id: 'b17xr0', q: 'Która forma ochrony obejmuje obszar cenny ze względu na przyrodę, historię, kulturę i krajobraz, na którym zwykle mieszkają ludzie i działają gospodarstwa?', options: ['park krajobrazowy', 'pomnik przyrody', 'ochrona gatunkowa'], answer: 0, explain: 'Park krajobrazowy chroni przyrodę, historię, kulturę i krajobraz, ale mieszkańcy żyją tam i pracują.' },
-        { id: 'uor3oa', q: 'Ile parków narodowych jest w Polsce według ustawy o ochronie przyrody (stan z 2026 r.)?', options: ['23', '10', '16', '50'], answer: 0, explain: 'Wykaz w załączniku do ustawy obejmuje 23 parki narodowe. 16 to liczba województw, a 10 – liczba form ochrony przyrody.' },
-        { id: 'kc8k7b', q: 'W którym parku narodowym żyją żubry w starej puszczy?', options: ['w Białowieskim', 'w Słowińskim', 'w Tatrzańskim', 'w Ojcowskim'], answer: 0, explain: 'Białowieski Park Narodowy chroni fragment Puszczy Białowieskiej – żyją tam żubry.' },
-        { id: 'opm4iq', q: 'Który park narodowy leży nad morzem i słynie z ruchomych wydm?', options: ['Słowiński', 'Tatrzański', 'Kampinoski', 'Białowieski'], answer: 0, explain: 'Słowiński Park Narodowy leży nad Bałtykiem. Wiatr przesuwa tam wydmy.' },
-        { id: '348ydz', q: 'Który park narodowy chroni najwyższe polskie góry?', options: ['Tatrzański', 'Słowiński', 'Kampinoski', 'Wielkopolski'], answer: 0, explain: 'Tatry to najwyższe góry w Polsce – chroni je Tatrzański Park Narodowy.' },
-        { id: 'yyibn4', q: 'Jak należy się poruszać w parku narodowym?', options: ['tylko wyznaczonymi szlakami', 'gdzie się chce, byle cicho', 'na skróty przez łąki', 'rowerem po lesie, poza drogami'], answer: 0, explain: 'Ustawa zakazuje ruchu pieszego i rowerowego poza wyznaczonymi szlakami.' },
-        { id: 'qr0a5j', q: 'Co wolno robić w parku narodowym?', options: ['podziwiać przyrodę, idąc szlakiem', 'zerwać kwiaty na bukiet', 'zabrać ładny kamień na pamiątkę', 'rozpalić ognisko w lesie, gdzie się chce'], answer: 0, explain: 'W parku narodowym nie wolno zrywać roślin, zabierać skał ani palić ognisk poza miejscami wyznaczonymi.' },
-        { id: 'sgo6d6', q: 'Prawda czy fałsz?\nW parku narodowym i rezerwacie przyrody nie wolno zakłócać ciszy.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Zakaz zakłócania ciszy jest w ustawie o ochronie przyrody. Hałas płoszy zwierzęta.' },
-        { id: 'm57oox', q: 'Prawda czy fałsz?\nGatunki chronione są chronione tylko na terenie parków narodowych.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Ochrona gatunkowa obowiązuje wszędzie, gdzie dany gatunek występuje.' },
-        { id: '5qgp4y', q: 'Który z tych obiektów może być pomnikiem przyrody?', options: ['głaz narzutowy', 'stary most', 'zabytkowy kościół', 'pomnik bohatera'], answer: 0, explain: 'Pomnik przyrody to twór przyrody, np. głaz narzutowy. Most, kościół i pomnik bohatera stworzyli ludzie – to nie są twory przyrody.' },
-        { id: 'xgdis3', q: 'Obszar zachowany w stanie naturalnym lub mało zmienionym, np. torfowisko z rzadkimi roślinami, mniejszy niż park narodowy, to najczęściej…', options: ['rezerwat przyrody', 'pomnik przyrody', 'park miejski', 'ogród botaniczny'], answer: 0, explain: 'Rezerwat przyrody chroni obszary zachowane w stanie naturalnym lub mało zmienionym, wyróżniające się szczególnymi wartościami.' },
-        { id: 'yxxezi', q: 'Dlaczego trzeba chronić przyrodę?', options: ['bo przez działalność ludzi wiele gatunków traci miejsca do życia', 'bo rośliny przeszkadzają w budowie dróg', 'bo zwierzęta są groźne', 'bo tak każą turyści'], answer: 0, explain: 'Wycinanie lasów, osuszanie bagien i zanieczyszczenia sprawiają, że gatunki stają się rzadkie. Ochrona daje im szansę przetrwać.' },
-        { id: 'qhizry', q: 'Żubr to…', options: ['największy ssak lądowy Europy, uratowany dzięki ochronie', 'gatunek ptaka żyjący w Tatrach', 'roślina chroniona', 'zwierzę domowe'], answer: 0, explain: 'Na wolności żubry wyginęły na początku XX wieku. Odtworzono je z kilku zwierząt z ogrodów zoologicznych i dziś znów żyją w polskich lasach, m.in. w Puszczy Białowieskiej.' },
-        { id: '08li5b', q: 'Idziesz szlakiem w parku narodowym i masz pusty papierek po batonie. Co robisz?', options: ['chowam go do plecaka i wyrzucam do kosza poza parkiem lub w domu', 'zakopuję go pod drzewem', 'wrzucam go w krzaki', 'zostawiam na ławce'], answer: 0, explain: 'Śmieci zabieramy ze sobą – zasada każdego turysty.' },
-      ],
-    },
-    {
-      id: 'uklad-sloneczny',
-      name: 'Ziemia w Układzie Słonecznym',
-      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 5 „Planeta Ziemia”, wym. 1 (planety i inne ciała niebieskie Układu Słonecznego, budowa Układu Słonecznego na podstawie modelu), wym. 2 (fazy Księżyca, zaćmienie Słońca i zaćmienie Księżyca), wym. 3 (ruch obrotowy i obiegowy Ziemi i ich konsekwencje – dzień i noc, doba, rok, pory roku; w uproszczeniu). Kolejność i podział planet, planety karłowate, czas obrotu i obiegu Ziemi, nachylenie osi, fazy Księżyca i warunki zaćmień – według materiałów Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Czy Ziemia stoi w miejscu?”, „Z czego zbudowany jest Jowisz?”, „Co to jest zaćmienie Księżyca?”, „Zaćmienia Słońca i Księżyca”), sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
-      theory: `
-        <h3>Układ Słoneczny</h3>
-        <p>W środku <b>Układu Słonecznego</b> jest <b>Słońce</b> – <b>gwiazda</b>, czyli ogromna, gorąca kula gazów, która <b>świeci własnym światłem</b>. Wokół Słońca krąży <b>8 planet</b>. Planety nie świecą same – <b>odbijają światło Słońca</b>.</p>
-        <p>Planety po kolei, od najbliższej Słońcu:</p>
-        <table>
-          <tr><th>Planety skaliste (bliżej Słońca, mniejsze)</th><th>Gazowe olbrzymy (dalej od Słońca, ogromne)</th></tr>
-          <tr><td>1. Merkury · 2. Wenus · 3. <b>Ziemia</b> · 4. Mars</td><td>5. <b>Jowisz</b> – największa planeta · 6. Saturn · 7. Uran · 8. Neptun</td></tr>
-        </table>
-        <div class="tip">💡 Kolejność planet zapamiętasz zdaniem: <b>M</b>ama <b>W</b>iesia <b>Z</b>jada <b>M</b>archewkę, <b>J</b>aś <b>S</b>zybko <b>U</b>nosi <b>N</b>ogi (Merkury, Wenus, Ziemia, Mars, Jowisz, Saturn, Uran, Neptun).</div>
-        <h3>Inne ciała niebieskie</h3>
-        <ul>
-          <li><b>Księżyce</b> – krążą wokół planet. Ziemia ma jeden – <b>Księżyc</b>.</li>
-          <li><b>Planetoidy</b> – małe skaliste ciała. Najwięcej jest ich w <b>pasie planetoid</b> między Marsem a Jowiszem.</li>
-          <li><b>Planety karłowate</b> – np. <b>Pluton</b>. Do 2006 r. Pluton był uznawany za dziewiątą planetę; dziś jest <b>planetą karłowatą</b>. Krąży daleko, za Neptunem.</li>
-        </ul>
-        <h3>Ruch obrotowy Ziemi – dzień i noc</h3>
-        <p>Ziemia obraca się wokół własnej <b>osi</b> – wyobrażonej linii przechodzącej przez biegun północny i południowy. Obraca się <b>z zachodu na wschód</b>. Jeden pełny obrót trwa prawie <b>24 godziny</b> – to <b>doba</b>.</p>
-        <p>Słońce oświetla zawsze tylko połowę Ziemi. Na oświetlonej połowie jest <b>dzień</b>, na drugiej – <b>noc</b>. Dlatego, że Ziemia się obraca, nam się wydaje, że to Słońce wędruje po niebie ze wschodu na zachód.</p>
-        <h3>Ruch obiegowy Ziemi – rok i pory roku</h3>
-        <p>Ziemia krąży też wokół Słońca. Jedno okrążenie trwa około <b>365 dni i ćwierć doby</b> – to <b>rok</b>. Z tych „ćwiartek” co cztery lata zbiera się dodatkowy dzień: rok <b>przestępny</b> ma 366 dni (29 lutego).</p>
-        <p>Oś Ziemi jest <b>nachylona</b>. Dlatego przez część roku silniej oświetlona jest północna połowa Ziemi (tam leży Polska), a przez część roku – południowa. Gdy u nas jest <b>lato</b>, Słońce jest wysoko, dzień jest długi i jest ciepło. Zimą Słońce jest nisko, dzień jest krótki i jest zimno. Tak powstają <b>pory roku</b>.</p>
-        <h3>Fazy Księżyca</h3>
-        <p>Księżyc krąży wokół Ziemi. Nie świeci sam – odbija światło Słońca. Słońce zawsze oświetla połowę Księżyca, ale z Ziemi widzimy raz większą, raz mniejszą część tej oświetlonej połowy. Te zmiany wyglądu to <b>fazy Księżyca</b>:</p>
-        <table>
-          <tr><th>Faza</th><th>Co widać (z Polski)</th></tr>
-          <tr><td><b>nów</b></td><td>Księżyca nie widać – jest między Ziemią a Słońcem</td></tr>
-          <tr><td><b>pierwsza kwadra</b></td><td>oświetlona <b>prawa</b> połowa tarczy; Księżyca przybywa</td></tr>
-          <tr><td><b>pełnia</b></td><td>oświetlona cała tarcza</td></tr>
-          <tr><td><b>ostatnia kwadra</b></td><td>oświetlona <b>lewa</b> połowa tarczy; Księżyca ubywa</td></tr>
-        </table>
-        <p>Od nowiu do następnego nowiu mija około <b>29,5 dnia</b>, czyli prawie miesiąc.</p>
-        <div class="tip">💡 Trik: gdy do Księżyca da się dorysować kreskę i wyjdzie litera <b>P</b> – Księżyca <b>przybywa</b>. Gdy wygląda jak litera <b>C</b> – <b>cofa się</b> (ubywa).</div>
-        <h3>Zaćmienia</h3>
-        <table>
-          <tr><th></th><th>Zaćmienie Słońca</th><th>Zaćmienie Księżyca</th></tr>
-          <tr><td>ustawienie w jednej linii</td><td>Słońce – <b>Księżyc</b> – Ziemia</td><td>Słońce – <b>Ziemia</b> – Księżyc</td></tr>
-          <tr><td>co się dzieje</td><td>Księżyc zasłania Słońce</td><td>Księżyc wchodzi w cień Ziemi, ciemnieje i często robi się czerwonawy</td></tr>
-          <tr><td>kiedy może być</td><td>tylko w czasie <b>nowiu</b> (ale nie przy każdym)</td><td>tylko w czasie <b>pełni</b> (ale nie przy każdej)</td></tr>
-        </table>
-        <div class="tip">⚠️ Nigdy nie patrz na Słońce gołym okiem ani przez lornetkę – także podczas zaćmienia. Możesz trwale uszkodzić wzrok. Zaćmienie Słońca ogląda się tylko przez specjalne okulary do obserwacji Słońca.</div>
-      `,
-      flashcards: [
-        ['Słońce', 'Gwiazda w środku Układu Słonecznego; świeci własnym światłem'],
-        ['Ile planet krąży wokół Słońca?', '8'],
-        ['Kolejność planet od Słońca', 'Merkury, Wenus, Ziemia, Mars, Jowisz, Saturn, Uran, Neptun'],
-        ['Największa planeta Układu Słonecznego', 'Jowisz'],
-        ['Planety skaliste', 'Merkury, Wenus, Ziemia, Mars'],
-        ['Gazowe olbrzymy', 'Jowisz, Saturn, Uran, Neptun'],
-        ['Pluton', 'Planeta karłowata (do 2006 r. uznawany za planetę)'],
-        ['Ruch obrotowy Ziemi', 'Obrót wokół własnej osi z zachodu na wschód; trwa prawie 24 h (doba); skutek: dzień i noc'],
-        ['Ruch obiegowy Ziemi', 'Okrążanie Słońca; trwa ok. 365 dni i ćwierć doby (rok); z nachyleniem osi daje pory roku'],
-        ['Rok przestępny', '366 dni – ma 29 lutego; zdarza się co cztery lata'],
-        ['Fazy Księżyca', 'nów → pierwsza kwadra → pełnia → ostatnia kwadra; cykl ok. 29,5 dnia'],
-        ['Zaćmienie Słońca', 'Księżyc między Słońcem a Ziemią zasłania Słońce; tylko w czasie nowiu'],
-        ['Zaćmienie Księżyca', 'Ziemia między Słońcem a Księżycem; Księżyc w cieniu Ziemi; tylko w czasie pełni'],
-      ],
-      questions: [
-        { id: 'biwkmc', q: 'Co znajduje się w środku Układu Słonecznego?', options: ['Słońce', 'Ziemia', 'Księżyc', 'Jowisz'], answer: 0, explain: 'W środku jest Słońce – gwiazda. Wokół niego krążą planety, w tym Ziemia.' },
-        { id: 'vcm3ap', q: 'Ile planet krąży wokół Słońca?', options: ['8', '9', '7', '12'], answer: 0, explain: 'Planet jest 8: Merkury, Wenus, Ziemia, Mars, Jowisz, Saturn, Uran, Neptun. Pluton jest dziś planetą karłowatą.' },
-        { id: 'ex5orw', q: 'Która planeta jest najbliżej Słońca?', options: ['Merkury', 'Wenus', 'Ziemia', 'Neptun'], answer: 0, explain: 'Kolejność od Słońca: Merkury, Wenus, Ziemia, Mars… Najbliżej jest Merkury.' },
-        { id: 'g3af86', q: 'Która planeta jest największa w Układzie Słonecznym?', options: ['Jowisz', 'Ziemia', 'Saturn', 'Mars'], answer: 0, explain: 'Największa jest Jowisz – gazowy olbrzym, piąta planeta od Słońca.' },
-        { id: 'zabwoo', q: 'Którą planetą od Słońca jest Ziemia?', options: ['trzecią', 'pierwszą', 'czwartą', 'piątą'], answer: 0, explain: 'Merkury (1), Wenus (2), Ziemia (3).' },
-        { id: 'lchzjn', q: 'Która planeta NIE jest planetą skalistą?', options: ['Saturn', 'Merkury', 'Wenus', 'Mars'], answer: 0, explain: 'Planety skaliste to Merkury, Wenus, Ziemia i Mars. Saturn to gazowy olbrzym.' },
-        { id: 'q54wkg', q: 'Czym jest dziś Pluton?', options: ['planetą karłowatą', 'dziewiątą planetą', 'gwiazdą', 'księżycem Ziemi'], answer: 0, explain: 'Do 2006 r. Pluton był uznawany za planetę. Dziś zalicza się go do planet karłowatych.' },
-        { id: 'hvuqth', q: 'Prawda czy fałsz?\nPlanety świecą własnym światłem, tak jak Słońce.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Własnym światłem świeci Słońce (gwiazda). Planety i Księżyc odbijają światło Słońca.' },
-        { id: 'dbuyv0', q: 'Co jest skutkiem ruchu obrotowego Ziemi?', options: ['dzień i noc', 'pory roku', 'fazy Księżyca', 'zaćmienie Słońca'], answer: 0, explain: 'Ziemia obraca się wokół osi, więc raz jesteśmy po stronie oświetlonej (dzień), a raz po ciemnej (noc).' },
-        { id: '2rwua2', q: 'Ile trwa jeden pełny obrót Ziemi wokół własnej osi?', options: ['prawie 24 godziny', 'około tygodnia', 'około miesiąca', 'około roku'], answer: 0, explain: 'Jeden obrót trwa prawie 24 godziny – to doba.' },
-        { id: 'm3426j', q: 'W którą stronę obraca się Ziemia?', options: ['z zachodu na wschód', 'ze wschodu na zachód', 'z północy na południe', 'z południa na północ'], answer: 0, explain: 'Ziemia obraca się z zachodu na wschód. Dlatego wydaje nam się, że Słońce wędruje po niebie ze wschodu na zachód.' },
-        { id: 'whd3z8', q: 'Ile mniej więcej trwa jedno okrążenie Ziemi wokół Słońca?', options: ['około 365 dni', 'około 24 godzin', 'około 29,5 dnia', 'około 7 dni'], answer: 0, explain: 'Okrążenie Słońca trwa około 365 dni i ćwierć doby – to rok.' },
-        { id: 'smjujh', q: 'Dlaczego na Ziemi są pory roku?', options: ['bo Ziemia krąży wokół Słońca, a jej oś jest nachylona', 'bo Ziemia obraca się wokół osi', 'bo Księżyc zasłania Słońce', 'bo Słońce raz świeci mocniej, a raz słabiej'], answer: 0, explain: 'Przez nachylenie osi w czasie ruchu obiegowego raz silniej oświetlona jest półkula północna, a raz południowa.' },
-        { id: 'vqt33i', q: 'Ile dni ma rok przestępny?', options: ['366', '365', '364', '360'], answer: 0, explain: 'Rok przestępny ma dodatkowy dzień – 29 lutego – więc ma 366 dni.' },
-        { id: '4r53bj', q: 'W której fazie Księżyca w ogóle go nie widać?', options: ['w nowiu', 'w pełni', 'w pierwszej kwadrze', 'w ostatniej kwadrze'], answer: 0, explain: 'W czasie nowiu Księżyc jest między Ziemią a Słońcem i zwraca do nas swoją nieoświetloną stronę.' },
-        {
-          id: '8pmjj8',
-          q: 'Patrzysz na Księżyc z Polski. Oświetlona jest jego prawa połowa. Jaka to faza?',
-          svg: `<svg viewBox="0 0 300 140" role="img" aria-label="Tarcza Księżyca: prawa połowa jasna, lewa ciemna">
-      <circle cx="150" cy="70" r="55" class="bg ln"/>
-      <path d="M150,15 A55,55 0 0 1 150,125 Z" class="f4 s4"/>
-      <circle cx="150" cy="70" r="55" class="ln"/>
-    </svg>`,
-          options: ['pierwsza kwadra', 'ostatnia kwadra', 'pełnia', 'nów'],
-          answer: 0,
-          explain: 'Gdy oświetlona jest prawa połowa, do Księżyca da się dorysować kreskę i wychodzi „P” – przybywa. To pierwsza kwadra.',
-        },
-        { id: 'nu16jl', q: 'Ile mniej więcej dni mija od jednego nowiu do następnego?', options: ['około 29,5 dnia', 'około 7 dni', 'około 365 dni', 'około 24 godzin'], answer: 0, explain: 'Pełny cykl faz Księżyca trwa około 29,5 dnia – prawie miesiąc.' },
-        { id: 'oktkky', q: 'Kiedy dochodzi do zaćmienia Słońca?', options: ['gdy Księżyc znajdzie się między Słońcem a Ziemią i zasłoni Słońce', 'gdy Ziemia znajdzie się między Słońcem a Księżycem', 'gdy Słońce schowa się za chmurami', 'gdy na Ziemi jest noc'], answer: 0, explain: 'Przy zaćmieniu Słońca ustawienie jest takie: Słońce – Księżyc – Ziemia. Może się to zdarzyć tylko w czasie nowiu.' },
-        { id: 'bkz2n9', q: 'Podczas zaćmienia Księżyca…', options: ['Księżyc wchodzi w cień Ziemi', 'Księżyc zasłania Słońce', 'Słońce zasłania Księżyc', 'Ziemia chowa się w cieniu Księżyca'], answer: 0, explain: 'Przy zaćmieniu Księżyca Ziemia jest między Słońcem a Księżycem, a Księżyc wchodzi w jej cień. Może się to zdarzyć tylko w czasie pełni.' },
-        { id: 'g4yzip', q: 'Jak bezpiecznie oglądać zaćmienie Słońca?', options: ['tylko przez specjalne okulary do obserwacji Słońca', 'gołym okiem, bo Słońce jest zasłonięte', 'przez lornetkę', 'przez zwykłe okulary przeciwsłoneczne'], answer: 0, explain: 'Patrzenie na Słońce gołym okiem, przez lornetkę czy zwykłe okulary przeciwsłoneczne może trwale uszkodzić wzrok.' },
-      ],
-    },
-    {
-      id: 'mieszaniny',
-      name: 'Rozpuszczanie i mieszaniny',
-      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 3 „Materia i jej przemiany w przyrodzie”, wym. 6 (rozpuszczanie się w wodzie substancji i produktów stosowanych na co dzień, substancje rozpuszczalne i nierozpuszczalne, czynniki wpływające na szybkość rozpuszczania), wym. 9 (mieszaniny jednorodne i niejednorodne, rozdzielanie mieszanin); doświadczenia edukacyjne – eksperymenty, pkt 2 (wpływ mieszania, rozdrobnienia i temperatury na szybkość rozpuszczania) i pkt 3 (rozdzielanie mieszanin przez sączenie, odparowanie, krystalizację, dekantację, sedymentację i sposoby mechaniczne). Opisy metod rozdzielania i podziału mieszanin – według słowniczków Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl), sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
-      theory: `
-        <h3>Rozpuszczanie</h3>
-        <p>Wsyp łyżeczkę cukru do wody i zamieszaj. Cukier „znika”, ale woda jest słodka. Cukier nie zniknął – rozpadł się na drobinki tak małe, że ich nie widać, i rozszedł się w wodzie. Mówimy, że cukier <b>rozpuścił się</b>. Tak powstaje <b>roztwór</b>.</p>
-        <table>
-          <tr><th>Rozpuszczają się w wodzie</th><th>Nie rozpuszczają się w wodzie</th></tr>
-          <tr><td>cukier, sól kuchenna, kawa rozpuszczalna</td><td>piasek, kreda, olej, żwir</td></tr>
-        </table>
-        <h3>Co przyspiesza rozpuszczanie?</h3>
-        <ul>
-          <li><b>mieszanie</b> – cukier w herbacie rozpuści się szybciej, gdy zamieszasz łyżeczką,</li>
-          <li><b>rozdrobnienie</b> – cukier puder rozpuści się szybciej niż kostka cukru,</li>
-          <li><b>wyższa temperatura</b> – w ciepłej wodzie cukier rozpuści się szybciej niż w zimnej.</li>
-        </ul>
-        <div class="tip">💡 Gdy badasz, co przyspiesza rozpuszczanie, zmieniaj tylko <b>jedną rzecz</b>, a resztę zostaw tak samo (tyle samo wody i cukru, takie same szklanki). Tylko wtedy wiesz, co zadziałało.</div>
-        <h3>Mieszaniny</h3>
-        <p><b>Mieszanina</b> to co najmniej dwie substancje zmieszane ze sobą. Każda z nich zachowuje swoje właściwości, dlatego mieszaninę można rozdzielić na składniki.</p>
-        <table>
-          <tr><th>Mieszanina jednorodna</th><th>Mieszanina niejednorodna</th></tr>
-          <tr><td>składników <b>nie rozróżnisz</b> gołym okiem ani przez lupę</td><td>składniki <b>widać</b> gołym okiem albo przez lupę</td></tr>
-          <tr><td>woda z cukrem, woda z solą</td><td>woda z piaskiem, woda z olejem, piasek z żwirem, groch z kaszą</td></tr>
-        </table>
-        <h3>Jak rozdzielić mieszaninę?</h3>
-        <table>
-          <tr><th>Sposób</th><th>Na czym polega</th><th>Przykład</th></tr>
-          <tr><td><b>sposoby mechaniczne</b></td><td>wybieranie ręką, przesiewanie przez <b>sito</b>, przyciąganie <b>magnesem</b></td><td>groch z kaszą (sito), opiłki żelaza z piaskiem (magnes)</td></tr>
-          <tr><td><b>sedymentacja</b></td><td>odstawiamy mieszaninę, a cięższe cząstki <b>opadają na dno</b></td><td>piasek opada na dno szklanki z wodą</td></tr>
-          <tr><td><b>dekantacja</b></td><td>ostrożne <b>zlewanie cieczy znad osadu</b></td><td>zlewamy wodę znad piasku</td></tr>
-          <tr><td><b>sączenie</b> (filtrowanie)</td><td>przelewamy mieszaninę przez <b>sączek</b> (np. bibułę, filtr do kawy); ciało stałe zostaje na sączku, ciecz przecieka</td><td>woda z piaskiem albo kredą</td></tr>
-          <tr><td><b>odparowanie</b></td><td>ogrzewamy roztwór – woda odparowuje, a substancja rozpuszczona zostaje</td><td>z wody z solą zostaje sól</td></tr>
-          <tr><td><b>krystalizacja</b></td><td>z roztworu powoli wydzielają się <b>kryształy</b> substancji, np. gdy woda wolno paruje</td><td>kryształki soli na dnie talerzyka z solanką</td></tr>
-        </table>
-        <p><b>Sączenie nie rozdzieli</b> wody i soli – sól jest rozpuszczona i przecieka razem z wodą przez sączek. Tu trzeba odparować wodę.</p>
-        <h3>Zadanie z życia: sól z piaskiem</h3>
-        <p>1) Wsyp mieszaninę do wody i zamieszaj – sól się rozpuści, piasek nie. 2) Przesącz – piasek zostanie na sączku. 3) Odparuj wodę z przesączu – zostanie sól.</p>
-        <div class="tip">⚠️ Doświadczenia z ogrzewaniem rób tylko z dorosłym. W pracowni nie próbuj niczego na smak.</div>
-      `,
-      flashcards: [
-        ['Roztwór', 'Mieszanina jednorodna, która powstaje np. po rozpuszczeniu cukru lub soli w wodzie'],
-        ['Substancje rozpuszczalne w wodzie – przykłady', 'cukier, sól kuchenna, kawa rozpuszczalna'],
-        ['Substancje nierozpuszczalne w wodzie – przykłady', 'piasek, kreda, olej, żwir'],
-        ['Co przyspiesza rozpuszczanie?', 'mieszanie, rozdrobnienie, wyższa temperatura'],
-        ['Mieszanina', 'Co najmniej dwie substancje zmieszane ze sobą; każda zachowuje swoje właściwości'],
-        ['Mieszanina jednorodna', 'Składników nie rozróżnisz gołym okiem ani przez lupę, np. woda z solą'],
-        ['Mieszanina niejednorodna', 'Składniki widać gołym okiem lub przez lupę, np. woda z piaskiem'],
-        ['Sedymentacja', 'Opadanie cięższych cząstek na dno naczynia'],
-        ['Dekantacja', 'Zlewanie cieczy znad osadu'],
-        ['Sączenie', 'Przelewanie mieszaniny przez sączek; ciało stałe zostaje na sączku'],
-        ['Odparowanie', 'Ogrzewanie roztworu, aż woda odparuje, a substancja rozpuszczona zostanie'],
-        ['Krystalizacja', 'Wydzielanie się kryształów substancji z roztworu'],
-      ],
-      questions: [
-        { id: '83ysyq', q: 'Która substancja rozpuszcza się w wodzie?', options: ['cukier', 'piasek', 'kreda', 'żwir'], answer: 0, explain: 'Cukier rozpuszcza się w wodzie. Piasek, kreda i żwir się nie rozpuszczają.' },
-        { id: 'ldmvc9', q: 'Która substancja NIE rozpuszcza się w wodzie?', options: ['olej', 'sól kuchenna', 'cukier', 'kawa rozpuszczalna'], answer: 0, explain: 'Olej się nie rozpuszcza – zbiera się w warstwę na powierzchni wody.' },
-        { id: 'pzew5h', q: 'Cukier wsypany do wody „zniknął”, ale woda jest słodka. Co się stało?', options: ['cukier rozpuścił się – rozpadł się na niewidoczne drobinki w wodzie', 'cukier wyparował', 'cukier zamienił się w wodę', 'cukier opadł na dno i jest niewidoczny'], answer: 0, explain: 'Cukier się rozpuścił: rozpadł się na drobinki tak małe, że ich nie widać. Dlatego woda jest słodka.' },
-        { id: 'yfng2l', q: 'W którym przypadku kostka cukru rozpuści się najszybciej?', options: ['w ciepłej wodzie, gdy mieszasz', 'w zimnej wodzie, bez mieszania', 'w zimnej wodzie, gdy mieszasz', 'w ciepłej wodzie, bez mieszania'], answer: 0, explain: 'Rozpuszczanie przyspiesza zarówno mieszanie, jak i wyższa temperatura. Tu działają oba czynniki naraz.' },
-        { id: 'dvxv0b', q: 'Co rozpuści się szybciej w takiej samej szklance wody?', options: ['łyżeczka cukru pudru', 'kostka cukru o takiej samej masie', 'oba tak samo szybko'], answer: 0, explain: 'Rozdrobnienie przyspiesza rozpuszczanie. Cukier puder to bardzo drobno zmielony cukier.' },
-        { id: 'bjokle', q: 'Ola chce sprawdzić, czy temperatura wody wpływa na szybkość rozpuszczania. Co powinna zrobić?', options: ['wsypać tyle samo cukru do dwóch szklanek z taką samą ilością wody – ciepłej i zimnej – i nie mieszać żadnej', 'do ciepłej wody wsypać cukier puder, a do zimnej kostkę', 'ciepłą wodę mieszać, a zimnej nie', 'do ciepłej wody wsypać więcej cukru niż do zimnej'], answer: 0, explain: 'W doświadczeniu zmieniamy tylko jedną rzecz (tu temperaturę), a reszta musi być taka sama.' },
-        { id: 'lbgclw', q: 'Która mieszanina jest jednorodna?', options: ['woda z solą', 'woda z piaskiem', 'woda z olejem', 'groch z kaszą'], answer: 0, explain: 'W wodzie z solą nie rozróżnisz składników ani gołym okiem, ani przez lupę – to mieszanina jednorodna.' },
-        { id: 'qzjchx', q: 'Która mieszanina jest niejednorodna?', options: ['woda z piaskiem', 'woda z cukrem', 'woda z solą'], answer: 0, explain: 'Piasek widać w wodzie i opada na dno – to mieszanina niejednorodna.' },
-        { id: 'sdmr8q', q: 'Jak najprościej oddzielić opiłki żelaza od piasku?', options: ['magnesem', 'przez odparowanie', 'przez rozpuszczenie w wodzie', 'przez krystalizację'], answer: 0, explain: 'Magnes przyciąga żelazo, a piasku nie – to sposób mechaniczny.' },
-        { id: '7n9ohi', q: 'Odstawiasz szklankę wody z piaskiem i po chwili piasek leży na dnie. Jak nazywa się opadanie cząstek na dno?', options: ['sedymentacja', 'dekantacja', 'krystalizacja', 'odparowanie'], answer: 0, explain: 'Sedymentacja to opadanie cięższych cząstek na dno naczynia.' },
-        { id: 'gig4a7', q: 'Ostrożne zlewanie wody znad piasku, który opadł na dno, to…', options: ['dekantacja', 'sedymentacja', 'sączenie', 'odparowanie'], answer: 0, explain: 'Dekantacja to zlewanie cieczy znad osadu.' },
-        { id: 'wt19x2', q: 'Przelewasz wodę z kredą przez filtr do kawy. Kreda zostaje na filtrze. Ten sposób to…', options: ['sączenie', 'odparowanie', 'krystalizacja', 'rozpuszczanie'], answer: 0, explain: 'Sączenie (filtrowanie): ciało stałe zostaje na sączku, a ciecz przecieka.' },
-        { id: '9mkc5w', q: 'Jak odzyskać sól z wody z solą?', options: ['odparować wodę', 'przesączyć przez bibułę', 'użyć magnesu', 'przesiać przez sito'], answer: 0, explain: 'Sól jest rozpuszczona, więc przecieka przez sączek. Gdy odparujemy wodę, sól zostanie.' },
-        { id: '0qd7w3', q: 'Prawda czy fałsz?\nWodę z rozpuszczoną solą można rozdzielić, przelewając ją przez sączek.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Rozpuszczona sól przecieka przez sączek razem z wodą. Sączenie oddziela tylko to, co się nie rozpuściło, np. piasek.' },
-        { id: 'uphlmw', q: 'Masz mieszaninę soli i piasku. W jakiej kolejności je rozdzielisz?', options: ['dodam wody i zamieszam → przesączę → odparuję wodę', 'odparuję → dodam wody → przesączę', 'przesączę suchą mieszaninę → dodam wody', 'użyję magnesu → odparuję'], answer: 0, explain: 'Sól rozpuści się w wodzie, piasek zostanie na sączku, a po odparowaniu wody z przesączu zostanie sól.' },
-        { id: '16bzop', q: 'Na talerzyku z solanką po kilku dniach na dnie pojawiły się małe kryształki soli. Jak nazywa się to zjawisko?', options: ['krystalizacja', 'sedymentacja', 'dekantacja', 'sączenie'], answer: 0, explain: 'Krystalizacja to wydzielanie się kryształów substancji z roztworu, np. gdy woda powoli paruje.' },
-        { id: 't5y958', q: 'Jak rozdzielić groch i kaszę jaglaną?', options: ['przesiać przez sito', 'odparować', 'przesączyć przez bibułę', 'rozpuścić w wodzie'], answer: 0, explain: 'Drobna kasza przejdzie przez oczka sita, a większy groch zostanie. To sposób mechaniczny.' },
-        { id: 'qiw12c', q: 'Prawda czy fałsz?\nW mieszaninie każda substancja zachowuje swoje właściwości.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Dlatego mieszaninę można rozdzielić – np. magnes nadal przyciąga opiłki żelaza wymieszane z piaskiem.' },
-      ],
-    },
+
+    // ------------------------------------------------------------------
     {
       id: 'las-laka',
       name: 'Las i łąka',
@@ -1157,6 +1046,8 @@ window.SUBJECTS.push({
         { id: '7ioi8h', q: 'Który przykład to funkcja społeczna lasu?', options: ['spacer i wypoczynek w lesie', 'pozyskiwanie drewna', 'zatrzymywanie wody w mchach', 'pochłanianie dwutlenku węgla'], answer: 0, explain: 'Funkcje społeczne to wypoczynek, zdrowie i praca. Drewno to funkcja gospodarcza, a zatrzymywanie wody i pochłanianie dwutlenku węgla – ochronna.' },
       ],
     },
+
+    // ------------------------------------------------------------------
     {
       id: 'teren',
       name: 'Niziny, wyżyny i góry',
@@ -1267,120 +1158,329 @@ window.SUBJECTS.push({
         { id: 'igyixr', q: 'Do jakich gór należą Góry Świętokrzyskie?', options: ['do gór niskich', 'do gór wysokich', 'do gór średnich', 'to nie są góry, tylko depresja'], answer: 0, explain: 'Góry Świętokrzyskie to góry niskie – mają łagodne stoki i zaokrąglone szczyty.' },
       ],
     },
+
+    // ------------------------------------------------------------------
     {
-      id: 'rzeka-jezioro',
-      name: 'Rzeka i jezioro',
-      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 4 „Organizmy i ekosystemy”, wym. 6 (wody płynące i stojące, cechy środowiska wodnego, elementy systemu rzecznego – rzeka główna, dopływ, źródło, ujście), wym. 17 (funkcja rzeki i jej doliny, składniki krajobrazu stworzone przez rzekę); dz. 5 „Planeta Ziemia”, wym. 23 (geneza jezior – tylko jeziora polodowcowe i zbiorniki zaporowe; rola rzek i jezior w życiu ludzi). Definicje (źródło, ujście, dopływ, dorzecze, system rzeczny, rzeka główna, brzeg lewy i prawy, bieg górny, środkowy i dolny, zakole, starorzecze), źródło Wisły na Baraniej Górze, ujście Wisły do Zatoki Gdańskiej i Odry do Zalewu Szczecińskiego, dopływy Wisły i Odry – według ZPE („Nad brzegiem rzeki”, „System rzeczny”, zpe.gov.pl), sprawdzone 2.11.2026. Jeziora: większość jezior w Polsce ma pochodzenie polodowcowe, największe Śniardwy, najgłębsze Hańcza – materiały ZPE i PIG, sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      id: 'ochrona',
+      name: 'Ochrona przyrody',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 2 wym. 8 (formy ochrony przyrody w otoczeniu, walory przyrodnicze podlegające ochronie). Formy ochrony przyrody, opisy parku narodowego, rezerwatu, parku krajobrazowego, pomnika przyrody, zakazy w parku narodowym i liczba parków narodowych – według ustawy o ochronie przyrody (tekst jednolity Dz.U. 2026 poz. 1315: art. 6, 8, 13, 15, 16, 40 i załącznik), sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
       theory: `
-        <h3>Wody płynące i stojące</h3>
+        <h3>Po co chronimy przyrodę?</h3>
+        <p>Ludzie budują drogi i domy, wycinają lasy, osuszają bagna, zanieczyszczają wodę i powietrze. Przez to niektóre rośliny, zwierzęta i grzyby tracą miejsca do życia i stają się rzadkie. Dlatego najcenniejsze miejsca i gatunki chroni <b>prawo</b> – ustawa o ochronie przyrody.</p>
+        <h3>Formy ochrony przyrody</h3>
+        <p>Ustawa wymienia 10 form ochrony przyrody. Najważniejsze dla ciebie:</p>
         <table>
-          <tr><th>Wody płynące</th><th>Wody stojące</th></tr>
-          <tr><td>woda płynie w jednym kierunku – z wyżej położonych miejsc w niższe</td><td>woda się nie przemieszcza z miejsca na miejsce, wypełnia zagłębienie terenu</td></tr>
-          <tr><td>strumień, potok, <b>rzeka</b>; <b>kanał</b> – koryto wykopane przez ludzi</td><td><b>jezioro</b>, <b>staw</b>, zbiornik zaporowy</td></tr>
+          <tr><th>Forma</th><th>Co chroni?</th></tr>
+          <tr><td><b>park narodowy</b></td><td>duży obszar (co najmniej 1000 ha) o szczególnych wartościach; chroniona jest <b>cała przyroda</b> i krajobraz</td></tr>
+          <tr><td><b>rezerwat przyrody</b></td><td>mniejszy obszar zachowany w stanie naturalnym lub mało zmienionym, np. fragment lasu, torfowisko, miejsce życia rzadkich roślin</td></tr>
+          <tr><td><b>park krajobrazowy</b></td><td>obszar cenny ze względu na przyrodę, historię, kulturę i krajobraz; mogą tam mieszkać ludzie, działają gospodarstwa</td></tr>
+          <tr><td><b>pomnik przyrody</b></td><td>pojedynczy twór przyrody lub ich skupisko, np. okazałe stare drzewo, źródło, wodospad, skałka, jaskinia, <b>głaz narzutowy</b></td></tr>
+          <tr><td><b>ochrona gatunkowa</b></td><td>wybrane gatunki roślin, zwierząt i grzybów – chronione wszędzie, gdzie występują</td></tr>
         </table>
-        <h3>Jak zbudowana jest rzeka?</h3>
+        <p>Pozostałe formy to: obszary chronionego krajobrazu, obszary Natura 2000, stanowiska dokumentacyjne, użytki ekologiczne i zespoły przyrodniczo-krajobrazowe.</p>
+        <h3>Parki narodowe w Polsce</h3>
+        <p>Według ustawy w Polsce są <b>23 parki narodowe</b> (stan z 2026 r.). Przykłady:</p>
         <ul>
-          <li><b>Źródło</b> – miejsce, w którym rzeka bierze początek. Najwięcej źródeł jest w górach i na wyżynach. Wisła zaczyna się na stoku <b>Baraniej Góry</b> w Beskidzie Śląskim.</li>
-          <li><b>Ujście</b> – miejsce, w którym rzeka wpada do innej rzeki, jeziora albo morza. Wisła uchodzi do Zatoki Gdańskiej (Morze Bałtyckie).</li>
-          <li><b>Koryto</b> – zagłębienie, w którym płynie rzeka. <b>Nurt</b> – miejsce w korycie, gdzie woda płynie najszybciej.</li>
-          <li><b>Dopływ</b> – rzeka, która wpada do większej rzeki.</li>
-          <li><b>Rzeka główna</b> – wpada prosto do morza (albo jeziora) i nie jest niczyim dopływem, np. Wisła, Odra.</li>
-          <li><b>System rzeczny</b> – rzeka główna razem ze wszystkimi dopływami. Na mapie wygląda jak <b>drzewo</b>: rzeka główna to pień, dopływy – gałęzie.</li>
-          <li><b>Dorzecze</b> – cały obszar, z którego woda spływa do danej rzeki i jej dopływów.</li>
+          <li><b>Białowieski</b> – stary las (Puszcza Białowieska), żyją tam żubry,</li>
+          <li><b>Tatrzański</b> – najwyższe polskie góry,</li>
+          <li><b>Słowiński</b> – nad morzem, ruchome wydmy,</li>
+          <li><b>Kampinoski</b> – Puszcza Kampinoska tuż obok Warszawy,</li>
+          <li><b>Ojcowski</b> – wapienne skały i jaskinie na Wyżynie Krakowsko-Częstochowskiej.</li>
         </ul>
-        <h3>Dopływ lewy czy prawy?</h3>
-        <p>Stań <b>tyłem do źródła</b>, a <b>twarzą do ujścia</b> – czyli patrz tam, dokąd płynie woda. To, co masz po lewej ręce, to <b>lewy brzeg</b> i <b>lewe dopływy</b>, a po prawej – <b>prawy brzeg</b> i <b>prawe dopływy</b>.</p>
-        <table>
-          <tr><th>Rzeka</th><th>Prawe dopływy (przykłady)</th><th>Lewe dopływy (przykłady)</th></tr>
-          <tr><td>Wisła</td><td>Dunajec, San, Narew</td><td>Pilica, Bzura</td></tr>
-          <tr><td>Odra</td><td>Warta</td><td>Nysa Łużycka, Bóbr</td></tr>
-        </table>
-        <div class="tip">💡 Na mapie lewy brzeg <b>nie zawsze</b> jest po lewej stronie kartki. Liczy się kierunek, w którym płynie woda.</div>
-        <h3>Bieg rzeki i dolina</h3>
-        <table>
-          <tr><th>Bieg</th><th>Jak płynie woda</th><th>Co tam widać</th></tr>
-          <tr><td><b>górny</b></td><td>szybko</td><td>wąska, stroma dolina, wodospady, mało roślin</td></tr>
-          <tr><td><b>środkowy</b></td><td>wolniej</td><td>rzeka podmywa brzegi i poszerza dolinę, powstają <b>zakola</b> i <b>starorzecza</b></td></tr>
-          <tr><td><b>dolny</b></td><td>najwolniej</td><td>rzeka osadza piasek i muł, tworzą się piaszczyste łachy</td></tr>
-        </table>
+        <h3>Jak się zachować w parku narodowym i rezerwacie?</h3>
+        <p>Ustawa zakazuje tam m.in.:</p>
         <ul>
-          <li><b>Dolina rzeczna</b> – obniżenie terenu, które wyżłobiła rzeka.</li>
-          <li><b>Zakole</b> – łuk albo pętla koryta. Na zewnętrznym brzegu woda płynie szybciej i podmywa go, na wewnętrznym – osadza piasek.</li>
-          <li><b>Starorzecze</b> – jezioro w dolinie rzeki: kawałek dawnego koryta (np. zakola), odcięty od rzeki.</li>
-          <li><b>Powódź</b> – rzeka wylewa z koryta i zalewa okoliczne tereny. Płaskie dno doliny często zalewa woda – dlatego niebezpiecznie jest budować tam domy.</li>
+          <li>chodzenia i jeżdżenia rowerem <b>poza wyznaczonymi szlakami</b>,</li>
+          <li>zrywania roślin i zbierania grzybów (poza miejscami wyznaczonymi),</li>
+          <li>płoszenia, chwytania i zabijania dzikich zwierząt, niszczenia gniazd i nor,</li>
+          <li>palenia ognisk (poza miejscami wyznaczonymi),</li>
+          <li><b>zakłócania ciszy</b>,</li>
+          <li>zabierania skał, skamieniałości i minerałów.</li>
         </ul>
-        <h3>Życie w wodzie i nad wodą</h3>
-        <ul>
-          <li>Im głębiej, tym <b>mniej światła</b>.</li>
-          <li>Temperatura wody zmienia się <b>wolniej</b> niż temperatura powietrza.</li>
-          <li>Organizmy wodne oddychają <b>tlenem rozpuszczonym w wodzie</b>, np. ryby – za pomocą skrzeli.</li>
-          <li>Rzeka i jej dolina to dom ryb, płazów, ptaków (np. czapli) i ssaków (np. bobra). Dolina rzeki to też „korytarz”, którym wędrują zwierzęta.</li>
-        </ul>
-        <h3>Jeziora</h3>
-        <ul>
-          <li><b>Jezioro</b> – naturalne zagłębienie terenu wypełnione wodą stojącą.</li>
-          <li>Większość jezior w Polsce to <b>jeziora polodowcowe</b> – powstały w zagłębieniach po lądolodzie, który dawno temu przykrywał północ Polski. Dlatego najwięcej jezior jest na <b>pojezierzach</b> na północy kraju.</li>
-          <li>Największe jezioro Polski – <b>Śniardwy</b>. Najgłębsze – <b>Hańcza</b>.</li>
-          <li><b>Zbiornik zaporowy</b> (sztuczne jezioro) – powstaje, gdy ludzie zbudują na rzece <b>zaporę</b>, np. Jezioro Solińskie na Sanie.</li>
-          <li><b>Staw</b> – zwykle niewielki i płytki zbiornik zrobiony przez człowieka, np. do hodowli ryb. (Uwaga: w górach stawami nazywa się też naturalne jeziora, np. Czarny Staw).</li>
-        </ul>
-        <p><b>Po co ludziom rzeki i jeziora?</b> Dają wodę (do picia, dla rolnictwa i fabryk), ryby, prąd z elektrowni wodnych, służą do transportu i wypoczynku.</p>
+        <div class="tip">💡 Zasada turysty: idź szlakiem, nie hałasuj, niczego nie zrywaj i nie zostawiaj śmieci – zabierz je ze sobą.</div>
+        <h3>Ochrona gatunkowa</h3>
+        <p>Gatunków chronionych nie wolno m.in. zrywać, wykopywać, zabijać, płoszyć ani niszczyć ich gniazd. Przykładem jest <b>żubr</b> – największy ssak lądowy Europy. Na początku XX wieku żubry żyjące na wolności wyginęły. Odtworzono je z kilku zwierząt z ogrodów zoologicznych i dzięki ochronie znów żyją w polskich lasach.</p>
+        <h3>Ochrona przyrody w twojej okolicy</h3>
+        <p>Rozejrzyj się: w wielu miejscowościach są pomniki przyrody – stare drzewa albo duże głazy z tabliczką. W okolicy może być też rezerwat albo park krajobrazowy. Informacje znajdziesz na tablicach w terenie i na stronach gminy.</p>
       `,
       flashcards: [
-        ['Wody płynące – przykłady', 'strumień, potok, rzeka, kanał'],
-        ['Wody stojące – przykłady', 'jezioro, staw, zbiornik zaporowy'],
-        ['Źródło rzeki', 'Miejsce, w którym rzeka bierze początek'],
-        ['Ujście rzeki', 'Miejsce, w którym rzeka wpada do innej rzeki, jeziora lub morza'],
-        ['Dopływ', 'Rzeka, która wpada do większej rzeki'],
-        ['Rzeka główna', 'Rzeka, która wpada do morza (lub jeziora) i nie jest dopływem, np. Wisła, Odra'],
-        ['System rzeczny', 'Rzeka główna razem ze wszystkimi dopływami'],
-        ['Dorzecze', 'Obszar, z którego woda spływa do danej rzeki i jej dopływów'],
-        ['Jak rozpoznać lewy i prawy brzeg?', 'Stań twarzą do ujścia (tam, dokąd płynie woda): lewa ręka – lewy brzeg'],
-        ['Źródło i ujście Wisły', 'źródło – Barania Góra w Beskidzie Śląskim; ujście – Zatoka Gdańska (Bałtyk)'],
-        ['Zakole', 'Łuk lub pętla koryta rzeki'],
-        ['Starorzecze', 'Jezioro w dolinie rzeki – odcięty kawałek dawnego koryta'],
-        ['Jeziora polodowcowe', 'Powstały w zagłębieniach po lądolodzie; najwięcej ich na pojezierzach na północy Polski'],
-        ['Największe i najgłębsze jezioro Polski', 'największe – Śniardwy; najgłębsze – Hańcza'],
-        ['Zbiornik zaporowy', 'Sztuczne jezioro powstałe po zbudowaniu zapory na rzece, np. Jezioro Solińskie'],
+        ['Ile jest form ochrony przyrody w ustawie?', '10'],
+        ['Park narodowy', 'Duży obszar (min. 1000 ha), w którym chroni się całą przyrodę i krajobraz'],
+        ['Rezerwat przyrody', 'Obszar zachowany w stanie naturalnym lub mało zmienionym, chroniony ze względu na szczególne wartości'],
+        ['Park krajobrazowy', 'Obszar chroniony ze względu na przyrodę, historię, kulturę i krajobraz; mogą w nim mieszkać ludzie'],
+        ['Pomnik przyrody – przykłady', 'Okazałe stare drzewo, źródło, wodospad, skałka, jaskinia, głaz narzutowy'],
+        ['Ochrona gatunkowa', 'Ochrona wybranych gatunków roślin, zwierząt i grzybów wszędzie, gdzie występują'],
+        ['Ile jest parków narodowych w Polsce?', '23 (według ustawy, stan z 2026 r.)'],
+        ['Białowieski Park Narodowy', 'Puszcza Białowieska; żyją tam żubry'],
+        ['W parku narodowym chodzimy…', 'tylko wyznaczonymi szlakami'],
+        ['Żubr', 'Największy ssak lądowy Europy; uratowany dzięki ochronie'],
       ],
       questions: [
-        { id: 'gc9oj9', q: 'Która z tych wód jest wodą płynącą?', options: ['potok', 'jezioro', 'staw', 'zbiornik zaporowy'], answer: 0, explain: 'Potok, strumień, rzeka i kanał to wody płynące. Jezioro, staw i zbiornik zaporowy – stojące.' },
-        { id: '3mtdbh', q: 'Która z tych wód jest wodą stojącą?', options: ['jezioro', 'rzeka', 'strumień', 'kanał'], answer: 0, explain: 'Woda w jeziorze wypełnia zagłębienie terenu i nie płynie z miejsca na miejsce.' },
-        { id: 'kevhmp', q: 'Jak nazywa się miejsce, w którym rzeka bierze początek?', options: ['źródło', 'ujście', 'zakole', 'dopływ'], answer: 0, explain: 'Rzeka zaczyna się w źródle, a kończy w ujściu.' },
-        { id: '439mzs', q: 'Ujście rzeki to miejsce, w którym…', options: ['rzeka wpada do innej rzeki, jeziora albo morza', 'rzeka bierze początek', 'rzeka płynie najszybciej', 'rzeka zakręca'], answer: 0, explain: 'W ujściu rzeka kończy swój bieg – wpada do innej rzeki, jeziora albo morza.' },
-        { id: '3bkps3', q: 'Gdzie zaczyna się Wisła?', options: ['na stoku Baraniej Góry w Beskidzie Śląskim', 'w Tatrach pod Rysami', 'na Żuławach Wiślanych', 'w jeziorze Śniardwy'], answer: 0, explain: 'Wisła wypływa na stoku Baraniej Góry w Beskidzie Śląskim i uchodzi do Zatoki Gdańskiej.' },
-        { id: 'ew7xa3', q: 'Dopływ to…', options: ['rzeka, która wpada do większej rzeki', 'miejsce, w którym rzeka się zaczyna', 'sztuczne jezioro', 'najszybsze miejsce w korycie'], answer: 0, explain: 'Dopływ to rzeka wpadająca do większej rzeki, np. San jest dopływem Wisły.' },
-        { id: 'j7zrbn', q: 'Rzeka główna razem ze wszystkimi dopływami to…', options: ['system rzeczny', 'dorzecze', 'starorzecze', 'zakole'], answer: 0, explain: 'System rzeczny to rzeka główna i jej dopływy. Na mapie wygląda jak drzewo. Dorzecze to obszar, z którego woda do nich spływa.' },
-        { id: '0qyce3', q: 'Jak ustalić, który brzeg rzeki jest lewy?', options: ['stanąć twarzą do ujścia – lewy brzeg jest po lewej ręce', 'stanąć twarzą do źródła – lewy brzeg jest po lewej ręce', 'spojrzeć na mapę – lewy brzeg jest zawsze po lewej stronie kartki', 'lewy brzeg to zawsze brzeg zachodni'], answer: 0, explain: 'Patrzysz tam, dokąd płynie woda (twarzą do ujścia). Wtedy po lewej masz lewy brzeg, a po prawej – prawy.' },
-        {
-          id: '9f3mgc',
-          q: 'Rzeka płynie w stronę wskazaną strzałką. Jakim dopływem jest rzeka A?',
-          svg: `<svg viewBox="0 0 360 180" role="img" aria-label="Rzeka główna płynie od lewej do prawej, strzałka kierunku w prawo. Z góry wpada do niej rzeka A.">
-      <defs><marker id="a-k4pr-q-rz" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
-      <path d="M10,120 C80,100 120,140 190,118 C250,100 290,130 350,112" class="ln s1 sw"/>
-      <path d="M150,20 C170,50 160,80 190,116" class="ln s1"/>
-      <text x="140" y="20" class="tx-b t1" text-anchor="middle">A</text>
-      <text x="40" y="158" class="tx-s">źródło</text>
-      <text x="300" y="158" class="tx-s">ujście</text>
-      <line x1="230" y1="72" x2="300" y2="72" class="ln s2 sw" marker-end="url(#a-k4pr-q-rz)"/>
-      <text x="265" y="62" class="tx-s" text-anchor="middle">kierunek</text>
-    </svg>`,
-          options: ['lewym', 'prawym'],
-          answer: 0,
-          explain: 'Stań twarzą do ujścia – patrzysz w prawo (w stronę strzałki). Wtedy twoja lewa ręka wskazuje górę rysunku, a stamtąd wpada rzeka A. To lewy dopływ.',
-        },
-        { id: 'up04ww', q: 'Który z tych dopływów Wisły jest dopływem prawym?', options: ['San', 'Pilica', 'Bzura'], answer: 0, explain: 'San, Dunajec i Narew to prawe dopływy Wisły. Pilica i Bzura – lewe.' },
-        { id: 'djmvy4', q: 'W którym biegu rzeka płynie najszybciej i tworzy wodospady?', options: ['w górnym', 'w środkowym', 'w dolnym'], answer: 0, explain: 'W górnym biegu, zwykle w górach, woda płynie szybko, żłobi wąską i stromą dolinę i tworzy wodospady.' },
-        { id: 'wky55k', q: 'Jak nazywa się łuk albo pętla koryta rzeki?', options: ['zakole', 'źródło', 'ujście', 'nurt'], answer: 0, explain: 'Zakole to łuk lub pętla koryta. Na zewnętrznym brzegu woda podmywa brzeg, na wewnętrznym osadza piasek.' },
-        { id: 'mk4vfg', q: 'Starorzecze to…', options: ['jezioro w dolinie rzeki – odcięty kawałek dawnego koryta', 'najstarsza rzeka w Polsce', 'źródło rzeki w górach', 'sztuczne jezioro za zaporą'], answer: 0, explain: 'Starorzecze powstaje, gdy kawałek koryta (np. zakole) zostaje odcięty od rzeki.' },
-        { id: '0wvixp', q: 'Jak powstała większość jezior w Polsce?', options: ['w zagłębieniach po lądolodzie – to jeziora polodowcowe', 'po zbudowaniu zapór na rzekach', 'w kraterach wulkanów', 'wykopali je ludzie'], answer: 0, explain: 'Dawno temu północ Polski przykrywał lądolód. W zagłębieniach, które po nim zostały, powstały jeziora – najwięcej ich na pojezierzach.' },
-        { id: 'k89h7n', q: 'Które jezioro jest największe w Polsce?', options: ['Śniardwy', 'Hańcza', 'Morskie Oko', 'Jezioro Solińskie'], answer: 0, explain: 'Największe jezioro w Polsce to Śniardwy. Najgłębsze jest Hańcza.' },
-        { id: 'fj6rz2', q: 'Jak powstaje zbiornik zaporowy?', options: ['ludzie budują na rzece zaporę i woda się za nią spiętrza', 'lądolód zostawia zagłębienie', 'rzeka odcina swoje zakole', 'morze zalewa ląd'], answer: 0, explain: 'Zbiornik zaporowy to sztuczne jezioro za zaporą, np. Jezioro Solińskie na Sanie.' },
-        { id: 'jkroml', q: 'Prawda czy fałsz?\nIm głębiej w jeziorze, tym więcej światła.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Woda pochłania światło – im głębiej, tym ciemniej. Dlatego rośliny wodne rosną głównie przy brzegu i blisko powierzchni.' },
-        { id: 'eok8kf', q: 'Czym oddychają ryby?', options: ['tlenem rozpuszczonym w wodzie, za pomocą skrzeli', 'powietrzem, które łapią nad wodą płucami', 'nie oddychają wcale', 'dwutlenkiem węgla z powietrza'], answer: 0, explain: 'Ryby oddychają skrzelami – pobierają tlen rozpuszczony w wodzie.' },
-        { id: 'qrxg9w', q: 'Dlaczego niebezpiecznie jest budować domy na płaskim dnie doliny rzeki?', options: ['bo podczas powodzi rzeka może zalać ten teren', 'bo tam jest zawsze susza', 'bo tam nie dociera światło', 'bo tam nie ma gleby'], answer: 0, explain: 'Gdy w korycie jest za dużo wody, rzeka wylewa i zalewa dno doliny – to powódź.' },
+        { id: '4b9d7i', q: 'Która forma ochrony przyrody obejmuje duży obszar, na którym chroni się całą przyrodę i krajobraz?', options: ['park narodowy', 'pomnik przyrody', 'ochrona gatunkowa', 'użytek ekologiczny'], answer: 0, explain: 'W parku narodowym (o powierzchni co najmniej 1000 ha) ochronie podlega cała przyroda i walory krajobrazowe.' },
+        { id: 'dub58h', q: 'Stary, ogromny dąb w środku wsi może zostać…', options: ['pomnikiem przyrody', 'parkiem narodowym', 'parkiem krajobrazowym', 'obszarem Natura 2000'], answer: 0, explain: 'Pomnikiem przyrody może być pojedynczy twór przyrody, np. okazałe drzewo, źródło, skałka albo głaz narzutowy.' },
+        { id: 'y7kj0u', q: 'Która forma ochrony obejmuje wybrane gatunki roślin, zwierząt i grzybów wszędzie, gdzie występują?', options: ['ochrona gatunkowa', 'rezerwat przyrody', 'park narodowy', 'pomnik przyrody'], answer: 0, explain: 'Gatunek chroniony jest chroniony nie tylko w parku – także w twoim ogrodzie czy przy drodze.' },
+        { id: 'b17xr0', q: 'Która forma ochrony obejmuje obszar cenny ze względu na przyrodę, historię, kulturę i krajobraz, na którym zwykle mieszkają ludzie i działają gospodarstwa?', options: ['park krajobrazowy', 'pomnik przyrody', 'ochrona gatunkowa'], answer: 0, explain: 'Park krajobrazowy chroni przyrodę, historię, kulturę i krajobraz, ale mieszkańcy żyją tam i pracują.' },
+        { id: 'uor3oa', q: 'Ile parków narodowych jest w Polsce według ustawy o ochronie przyrody (stan z 2026 r.)?', options: ['23', '10', '16', '50'], answer: 0, explain: 'Wykaz w załączniku do ustawy obejmuje 23 parki narodowe. 16 to liczba województw, a 10 – liczba form ochrony przyrody.' },
+        { id: 'kc8k7b', q: 'W którym parku narodowym żyją żubry w starej puszczy?', options: ['w Białowieskim', 'w Słowińskim', 'w Tatrzańskim', 'w Ojcowskim'], answer: 0, explain: 'Białowieski Park Narodowy chroni fragment Puszczy Białowieskiej – żyją tam żubry.' },
+        { id: 'opm4iq', q: 'Który park narodowy leży nad morzem i słynie z ruchomych wydm?', options: ['Słowiński', 'Tatrzański', 'Kampinoski', 'Białowieski'], answer: 0, explain: 'Słowiński Park Narodowy leży nad Bałtykiem. Wiatr przesuwa tam wydmy.' },
+        { id: '348ydz', q: 'Który park narodowy chroni najwyższe polskie góry?', options: ['Tatrzański', 'Słowiński', 'Kampinoski', 'Wielkopolski'], answer: 0, explain: 'Tatry to najwyższe góry w Polsce – chroni je Tatrzański Park Narodowy.' },
+        { id: 'yyibn4', q: 'Jak należy się poruszać w parku narodowym?', options: ['tylko wyznaczonymi szlakami', 'gdzie się chce, byle cicho', 'na skróty przez łąki', 'rowerem po lesie, poza drogami'], answer: 0, explain: 'Ustawa zakazuje ruchu pieszego i rowerowego poza wyznaczonymi szlakami.' },
+        { id: 'qr0a5j', q: 'Co wolno robić w parku narodowym?', options: ['podziwiać przyrodę, idąc szlakiem', 'zerwać kwiaty na bukiet', 'zabrać ładny kamień na pamiątkę', 'rozpalić ognisko w lesie, gdzie się chce'], answer: 0, explain: 'W parku narodowym nie wolno zrywać roślin, zabierać skał ani palić ognisk poza miejscami wyznaczonymi.' },
+        { id: 'sgo6d6', q: 'Prawda czy fałsz?\nW parku narodowym i rezerwacie przyrody nie wolno zakłócać ciszy.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Zakaz zakłócania ciszy jest w ustawie o ochronie przyrody. Hałas płoszy zwierzęta.' },
+        { id: 'm57oox', q: 'Prawda czy fałsz?\nGatunki chronione są chronione tylko na terenie parków narodowych.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Ochrona gatunkowa obowiązuje wszędzie, gdzie dany gatunek występuje.' },
+        { id: '5qgp4y', q: 'Który z tych obiektów może być pomnikiem przyrody?', options: ['głaz narzutowy', 'stary most', 'zabytkowy kościół', 'pomnik bohatera'], answer: 0, explain: 'Pomnik przyrody to twór przyrody, np. głaz narzutowy. Most, kościół i pomnik bohatera stworzyli ludzie – to nie są twory przyrody.' },
+        { id: 'xgdis3', q: 'Obszar zachowany w stanie naturalnym lub mało zmienionym, np. torfowisko z rzadkimi roślinami, mniejszy niż park narodowy, to najczęściej…', options: ['rezerwat przyrody', 'pomnik przyrody', 'park miejski', 'ogród botaniczny'], answer: 0, explain: 'Rezerwat przyrody chroni obszary zachowane w stanie naturalnym lub mało zmienionym, wyróżniające się szczególnymi wartościami.' },
+        { id: 'yxxezi', q: 'Dlaczego trzeba chronić przyrodę?', options: ['bo przez działalność ludzi wiele gatunków traci miejsca do życia', 'bo rośliny przeszkadzają w budowie dróg', 'bo zwierzęta są groźne', 'bo tak każą turyści'], answer: 0, explain: 'Wycinanie lasów, osuszanie bagien i zanieczyszczenia sprawiają, że gatunki stają się rzadkie. Ochrona daje im szansę przetrwać.' },
+        { id: 'qhizry', q: 'Żubr to…', options: ['największy ssak lądowy Europy, uratowany dzięki ochronie', 'gatunek ptaka żyjący w Tatrach', 'roślina chroniona', 'zwierzę domowe'], answer: 0, explain: 'Na wolności żubry wyginęły na początku XX wieku. Odtworzono je z kilku zwierząt z ogrodów zoologicznych i dziś znów żyją w polskich lasach, m.in. w Puszczy Białowieskiej.' },
+        { id: '08li5b', q: 'Idziesz szlakiem w parku narodowym i masz pusty papierek po batonie. Co robisz?', options: ['chowam go do plecaka i wyrzucam do kosza poza parkiem lub w domu', 'zakopuję go pod drzewem', 'wrzucam go w krzaki', 'zostawiam na ławce'], answer: 0, explain: 'Śmieci zabieramy ze sobą – zasada każdego turysty.' },
       ],
     },
+
+    // ------------------------------------------------------------------
+    {
+      id: 'mieszaniny',
+      name: 'Rozpuszczanie i mieszaniny',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 3 „Materia i jej przemiany w przyrodzie”, wym. 6 (rozpuszczanie się w wodzie substancji i produktów stosowanych na co dzień, substancje rozpuszczalne i nierozpuszczalne, czynniki wpływające na szybkość rozpuszczania), wym. 9 (mieszaniny jednorodne i niejednorodne, rozdzielanie mieszanin); doświadczenia edukacyjne – eksperymenty, pkt 2 (wpływ mieszania, rozdrobnienia i temperatury na szybkość rozpuszczania) i pkt 3 (rozdzielanie mieszanin przez sączenie, odparowanie, krystalizację, dekantację, sedymentację i sposoby mechaniczne). Opisy metod rozdzielania i podziału mieszanin – według słowniczków Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl), sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Rozpuszczanie</h3>
+        <p>Wsyp łyżeczkę cukru do wody i zamieszaj. Cukier „znika”, ale woda jest słodka. Cukier nie zniknął – rozpadł się na drobinki tak małe, że ich nie widać, i rozszedł się w wodzie. Mówimy, że cukier <b>rozpuścił się</b>. Tak powstaje <b>roztwór</b>.</p>
+        <table>
+          <tr><th>Rozpuszczają się w wodzie</th><th>Nie rozpuszczają się w wodzie</th></tr>
+          <tr><td>cukier, sól kuchenna, kawa rozpuszczalna</td><td>piasek, kreda, olej, żwir</td></tr>
+        </table>
+        <h3>Co przyspiesza rozpuszczanie?</h3>
+        <ul>
+          <li><b>mieszanie</b> – cukier w herbacie rozpuści się szybciej, gdy zamieszasz łyżeczką,</li>
+          <li><b>rozdrobnienie</b> – cukier puder rozpuści się szybciej niż kostka cukru,</li>
+          <li><b>wyższa temperatura</b> – w ciepłej wodzie cukier rozpuści się szybciej niż w zimnej.</li>
+        </ul>
+        <div class="tip">💡 Gdy badasz, co przyspiesza rozpuszczanie, zmieniaj tylko <b>jedną rzecz</b>, a resztę zostaw tak samo (tyle samo wody i cukru, takie same szklanki). Tylko wtedy wiesz, co zadziałało.</div>
+        <h3>Mieszaniny</h3>
+        <p><b>Mieszanina</b> to co najmniej dwie substancje zmieszane ze sobą. Każda z nich zachowuje swoje właściwości, dlatego mieszaninę można rozdzielić na składniki.</p>
+        <table>
+          <tr><th>Mieszanina jednorodna</th><th>Mieszanina niejednorodna</th></tr>
+          <tr><td>składników <b>nie rozróżnisz</b> gołym okiem ani przez lupę</td><td>składniki <b>widać</b> gołym okiem albo przez lupę</td></tr>
+          <tr><td>woda z cukrem, woda z solą</td><td>woda z piaskiem, woda z olejem, piasek z żwirem, groch z kaszą</td></tr>
+        </table>
+        <h3>Jak rozdzielić mieszaninę?</h3>
+        <table>
+          <tr><th>Sposób</th><th>Na czym polega</th><th>Przykład</th></tr>
+          <tr><td><b>sposoby mechaniczne</b></td><td>wybieranie ręką, przesiewanie przez <b>sito</b>, przyciąganie <b>magnesem</b></td><td>groch z kaszą (sito), opiłki żelaza z piaskiem (magnes)</td></tr>
+          <tr><td><b>sedymentacja</b></td><td>odstawiamy mieszaninę, a cięższe cząstki <b>opadają na dno</b></td><td>piasek opada na dno szklanki z wodą</td></tr>
+          <tr><td><b>dekantacja</b></td><td>ostrożne <b>zlewanie cieczy znad osadu</b></td><td>zlewamy wodę znad piasku</td></tr>
+          <tr><td><b>sączenie</b> (filtrowanie)</td><td>przelewamy mieszaninę przez <b>sączek</b> (np. bibułę, filtr do kawy); ciało stałe zostaje na sączku, ciecz przecieka</td><td>woda z piaskiem albo kredą</td></tr>
+          <tr><td><b>odparowanie</b></td><td>ogrzewamy roztwór – woda odparowuje, a substancja rozpuszczona zostaje</td><td>z wody z solą zostaje sól</td></tr>
+          <tr><td><b>krystalizacja</b></td><td>z roztworu powoli wydzielają się <b>kryształy</b> substancji, np. gdy woda wolno paruje</td><td>kryształki soli na dnie talerzyka z solanką</td></tr>
+        </table>
+        <p><b>Sączenie nie rozdzieli</b> wody i soli – sól jest rozpuszczona i przecieka razem z wodą przez sączek. Tu trzeba odparować wodę.</p>
+        <h3>Zadanie z życia: sól z piaskiem</h3>
+        <p>1) Wsyp mieszaninę do wody i zamieszaj – sól się rozpuści, piasek nie. 2) Przesącz – piasek zostanie na sączku. 3) Odparuj wodę z przesączu – zostanie sól.</p>
+        <div class="tip">⚠️ Doświadczenia z ogrzewaniem rób tylko z dorosłym. W pracowni nie próbuj niczego na smak.</div>
+      `,
+      flashcards: [
+        ['Roztwór', 'Mieszanina jednorodna, która powstaje np. po rozpuszczeniu cukru lub soli w wodzie'],
+        ['Substancje rozpuszczalne w wodzie – przykłady', 'cukier, sól kuchenna, kawa rozpuszczalna'],
+        ['Substancje nierozpuszczalne w wodzie – przykłady', 'piasek, kreda, olej, żwir'],
+        ['Co przyspiesza rozpuszczanie?', 'mieszanie, rozdrobnienie, wyższa temperatura'],
+        ['Mieszanina', 'Co najmniej dwie substancje zmieszane ze sobą; każda zachowuje swoje właściwości'],
+        ['Mieszanina jednorodna', 'Składników nie rozróżnisz gołym okiem ani przez lupę, np. woda z solą'],
+        ['Mieszanina niejednorodna', 'Składniki widać gołym okiem lub przez lupę, np. woda z piaskiem'],
+        ['Sedymentacja', 'Opadanie cięższych cząstek na dno naczynia'],
+        ['Dekantacja', 'Zlewanie cieczy znad osadu'],
+        ['Sączenie', 'Przelewanie mieszaniny przez sączek; ciało stałe zostaje na sączku'],
+        ['Odparowanie', 'Ogrzewanie roztworu, aż woda odparuje, a substancja rozpuszczona zostanie'],
+        ['Krystalizacja', 'Wydzielanie się kryształów substancji z roztworu'],
+      ],
+      questions: [
+        { id: '83ysyq', q: 'Która substancja rozpuszcza się w wodzie?', options: ['cukier', 'piasek', 'kreda', 'żwir'], answer: 0, explain: 'Cukier rozpuszcza się w wodzie. Piasek, kreda i żwir się nie rozpuszczają.' },
+        { id: 'ldmvc9', q: 'Która substancja NIE rozpuszcza się w wodzie?', options: ['olej', 'sól kuchenna', 'cukier', 'kawa rozpuszczalna'], answer: 0, explain: 'Olej się nie rozpuszcza – zbiera się w warstwę na powierzchni wody.' },
+        { id: 'pzew5h', q: 'Cukier wsypany do wody „zniknął”, ale woda jest słodka. Co się stało?', options: ['cukier rozpuścił się – rozpadł się na niewidoczne drobinki w wodzie', 'cukier wyparował', 'cukier zamienił się w wodę', 'cukier opadł na dno i jest niewidoczny'], answer: 0, explain: 'Cukier się rozpuścił: rozpadł się na drobinki tak małe, że ich nie widać. Dlatego woda jest słodka.' },
+        { id: 'yfng2l', q: 'W którym przypadku kostka cukru rozpuści się najszybciej?', options: ['w ciepłej wodzie, gdy mieszasz', 'w zimnej wodzie, bez mieszania', 'w zimnej wodzie, gdy mieszasz', 'w ciepłej wodzie, bez mieszania'], answer: 0, explain: 'Rozpuszczanie przyspiesza zarówno mieszanie, jak i wyższa temperatura. Tu działają oba czynniki naraz.' },
+        { id: 'dvxv0b', q: 'Co rozpuści się szybciej w takiej samej szklance wody?', options: ['łyżeczka cukru pudru', 'kostka cukru o takiej samej masie', 'oba tak samo szybko'], answer: 0, explain: 'Rozdrobnienie przyspiesza rozpuszczanie. Cukier puder to bardzo drobno zmielony cukier.' },
+        { id: 'bjokle', q: 'Ola chce sprawdzić, czy temperatura wody wpływa na szybkość rozpuszczania. Co powinna zrobić?', options: ['wsypać tyle samo cukru do dwóch szklanek z taką samą ilością wody – ciepłej i zimnej – i nie mieszać żadnej', 'do ciepłej wody wsypać cukier puder, a do zimnej kostkę', 'ciepłą wodę mieszać, a zimnej nie', 'do ciepłej wody wsypać więcej cukru niż do zimnej'], answer: 0, explain: 'W doświadczeniu zmieniamy tylko jedną rzecz (tu temperaturę), a reszta musi być taka sama.' },
+        { id: 'lbgclw', q: 'Która mieszanina jest jednorodna?', options: ['woda z solą', 'woda z piaskiem', 'woda z olejem', 'groch z kaszą'], answer: 0, explain: 'W wodzie z solą nie rozróżnisz składników ani gołym okiem, ani przez lupę – to mieszanina jednorodna.' },
+        { id: 'qzjchx', q: 'Która mieszanina jest niejednorodna?', options: ['woda z piaskiem', 'woda z cukrem', 'woda z solą'], answer: 0, explain: 'Piasek widać w wodzie i opada na dno – to mieszanina niejednorodna.' },
+        { id: 'sdmr8q', q: 'Jak najprościej oddzielić opiłki żelaza od piasku?', options: ['magnesem', 'przez odparowanie', 'przez rozpuszczenie w wodzie', 'przez krystalizację'], answer: 0, explain: 'Magnes przyciąga żelazo, a piasku nie – to sposób mechaniczny.' },
+        { id: '7n9ohi', q: 'Odstawiasz szklankę wody z piaskiem i po chwili piasek leży na dnie. Jak nazywa się opadanie cząstek na dno?', options: ['sedymentacja', 'dekantacja', 'krystalizacja', 'odparowanie'], answer: 0, explain: 'Sedymentacja to opadanie cięższych cząstek na dno naczynia.' },
+        { id: 'gig4a7', q: 'Ostrożne zlewanie wody znad piasku, który opadł na dno, to…', options: ['dekantacja', 'sedymentacja', 'sączenie', 'odparowanie'], answer: 0, explain: 'Dekantacja to zlewanie cieczy znad osadu.' },
+        { id: 'wt19x2', q: 'Przelewasz wodę z kredą przez filtr do kawy. Kreda zostaje na filtrze. Ten sposób to…', options: ['sączenie', 'odparowanie', 'krystalizacja', 'rozpuszczanie'], answer: 0, explain: 'Sączenie (filtrowanie): ciało stałe zostaje na sączku, a ciecz przecieka.' },
+        { id: '9mkc5w', q: 'Jak odzyskać sól z wody z solą?', options: ['odparować wodę', 'przesączyć przez bibułę', 'użyć magnesu', 'przesiać przez sito'], answer: 0, explain: 'Sól jest rozpuszczona, więc przecieka przez sączek. Gdy odparujemy wodę, sól zostanie.' },
+        { id: '0qd7w3', q: 'Prawda czy fałsz?\nWodę z rozpuszczoną solą można rozdzielić, przelewając ją przez sączek.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Rozpuszczona sól przecieka przez sączek razem z wodą. Sączenie oddziela tylko to, co się nie rozpuściło, np. piasek.' },
+        { id: 'uphlmw', q: 'Masz mieszaninę soli i piasku. W jakiej kolejności je rozdzielisz?', options: ['dodam wody i zamieszam → przesączę → odparuję wodę', 'odparuję → dodam wody → przesączę', 'przesączę suchą mieszaninę → dodam wody', 'użyję magnesu → odparuję'], answer: 0, explain: 'Sól rozpuści się w wodzie, piasek zostanie na sączku, a po odparowaniu wody z przesączu zostanie sól.' },
+        { id: '16bzop', q: 'Na talerzyku z solanką po kilku dniach na dnie pojawiły się małe kryształki soli. Jak nazywa się to zjawisko?', options: ['krystalizacja', 'sedymentacja', 'dekantacja', 'sączenie'], answer: 0, explain: 'Krystalizacja to wydzielanie się kryształów substancji z roztworu, np. gdy woda powoli paruje.' },
+        { id: 't5y958', q: 'Jak rozdzielić groch i kaszę jaglaną?', options: ['przesiać przez sito', 'odparować', 'przesączyć przez bibułę', 'rozpuścić w wodzie'], answer: 0, explain: 'Drobna kasza przejdzie przez oczka sita, a większy groch zostanie. To sposób mechaniczny.' },
+        { id: 'qiw12c', q: 'Prawda czy fałsz?\nW mieszaninie każda substancja zachowuje swoje właściwości.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Dlatego mieszaninę można rozdzielić – np. magnes nadal przyciąga opiłki żelaza wymieszane z piaskiem.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
+    {
+      id: 'gestosc',
+      name: 'Gęstość, tonięcie i pływanie',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 3 „Materia i jej przemiany w przyrodzie”, wym. 10 (pojęcie gęstości na podstawie modelu, zależność gęstości od temperatury i stanu skupienia – zwłaszcza woda i jej znaczenie w przyrodzie); dz. 4 „Organizmy i ekosystemy”, wym. 7 (tonięcie i pływanie ciał a gęstość, codzienne zastosowania, przystosowania organizmów do życia w wodzie, wpływ kształtu ciała na pływanie). Bez wzoru na gęstość i bez jednostek gęstości (fizyka kl. VII). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Co to jest gęstość?</h3>
+        <p>Weź do ręki kostkę styropianu i kostkę żelaza tej samej wielkości. Żelazna jest dużo cięższa, bo w tej samej objętości mieści się więcej masy. Mówimy, że żelazo ma większą <b>gęstość</b>.</p>
+        <p><b>Gęstość</b> mówi, ile masy mieści się w określonej objętości substancji. W modelu drobinowym: im ciaśniej i im cięższe drobiny są upakowane, tym większa gęstość.</p>
+        <div class="tip">💡 Kilogram styropianu i kilogram żelaza ważą tyle samo – ale styropian zajmuje dużo więcej miejsca, bo ma mniejszą gęstość.</div>
+        <h3>Tonie czy pływa?</h3>
+        <ul>
+          <li>Ciało o gęstości <b>większej</b> niż gęstość wody – <b>tonie</b> (kamień, gwóźdź, moneta).</li>
+          <li>Ciało o gęstości <b>mniejszej</b> niż gęstość wody – <b>pływa</b> (korek, styropian, większość drewna, lód).</li>
+          <li>Tak samo ciecze: olej ma mniejszą gęstość niż woda, więc zbiera się na jej powierzchni.</li>
+        </ul>
+        <h3>Kształt ma znaczenie</h3>
+        <p>Kulka z plasteliny tonie. Ale gdy z tej samej plasteliny ulepisz <b>łódeczkę</b>, będzie pływać. W łódce jest dużo powietrza, więc cała łódka (plastelina razem z powietrzem w środku) jest „lżejsza” niż tyle samo wody. Dlatego pływają ogromne stalowe statki.</p>
+        <h3>Woda słona i słodka</h3>
+        <p>Słona woda ma większą gęstość niż słodka. Dlatego w morzu łatwiej się unosić niż w jeziorze. Jajko tonie w wodzie z kranu, ale wypływa w bardzo mocno osolonej wodzie.</p>
+        <h3>Gęstość a temperatura i stan skupienia</h3>
+        <ul>
+          <li>Ciepłe powietrze ma mniejszą gęstość niż zimne – dlatego unosi się do góry (tak lata balon na ogrzane powietrze).</li>
+          <li>Ciepła woda unosi się nad zimną – latem w jeziorze na powierzchni woda jest najcieplejsza.</li>
+          <li><b>Woda jest wyjątkowa</b>: lód ma mniejszą gęstość niż woda w stanie ciekłym, dlatego pływa. Większość substancji ma w stanie stałym większą gęstość niż w ciekłym – woda nie.</li>
+          <li>Woda ma największą gęstość w temperaturze ok. <b>4°C</b>. Zimą taka woda opada na dno jeziora, a lód tworzy się na górze. Lód działa jak przykrywka – jezioro nie zamarza do dna i ryby przeżywają zimę.</li>
+        </ul>
+        <h3>Przystosowania do życia w wodzie</h3>
+        <ul>
+          <li>Wiele ryb ma <b>pęcherz pławny</b> – worek wypełniony gazem. Napełniając go albo opróżniając, ryba unosi się albo opada bez wysiłku.</li>
+          <li>Opływowy kształt ciała (ryby, foki) ułatwia poruszanie się w wodzie.</li>
+          <li>Rośliny wodne (np. grzybienie, czyli lilie wodne) mają w liściach i łodygach dużo powietrza, więc ich liście unoszą się na wodzie.</li>
+        </ul>
+        <h3>Na co dzień</h3>
+        <p>Kamizelka ratunkowa i koło ratunkowe są wypełnione lekkim materiałem albo powietrzem – zmniejszają gęstość „człowieka z kamizelką” i utrzymują go na wodzie.</p>
+      `,
+      flashcards: [
+        ['Gęstość', 'Ile masy mieści się w określonej objętości substancji'],
+        ['Kiedy ciało tonie w wodzie?', 'Gdy ma większą gęstość niż woda'],
+        ['Kiedy ciało pływa po wodzie?', 'Gdy ma mniejszą gęstość niż woda'],
+        ['Olej i woda w jednym naczyniu', 'Olej na górze – ma mniejszą gęstość'],
+        ['Dlaczego pływa stalowy statek?', 'Dzięki kształtowi – w środku jest dużo powietrza'],
+        ['Woda słona a słodka', 'Słona ma większą gęstość – łatwiej się w niej unosić'],
+        ['Dlaczego lód pływa?', 'Ma mniejszą gęstość niż woda w stanie ciekłym'],
+        ['Największa gęstość wody', 'W temperaturze ok. 4°C – taka woda opada na dno jeziora'],
+        ['Dlaczego jeziora nie zamarzają do dna?', 'Lód tworzy się na górze i jak przykrywka chroni wodę pod spodem'],
+        ['Pęcherz pławny', 'Worek z gazem u wielu ryb – pomaga unosić się i opadać'],
+        ['Ciepłe powietrze', 'Ma mniejszą gęstość niż zimne – unosi się do góry'],
+      ],
+      questions: [
+        { id: 'fus9yk', q: 'Co to jest gęstość?', options: ['ile masy mieści się w określonej objętości substancji', 'jak wysoko coś leży', 'jak szybko coś się rozpuszcza', 'jaką coś ma temperaturę'], answer: 0, explain: 'Gęstość mówi, ile masy „upchnięto” w danej objętości. Żelazo ma dużą gęstość, styropian – małą.' },
+        { id: '7cpnyb', q: 'Masz dwie kostki tej samej wielkości: z żelaza i ze styropianu. Która ma większą gęstość?', options: ['żelazna', 'styropianowa', 'mają taką samą'], noShuffle: true, answer: 0, explain: 'W tej samej objętości żelazo ma dużo większą masę niż styropian, więc ma większą gęstość.' },
+        { id: '7f197w', q: 'Kiedy przedmiot tonie w wodzie?', options: ['gdy ma większą gęstość niż woda', 'gdy ma mniejszą gęstość niż woda', 'gdy jest duży', 'gdy jest kolorowy'], answer: 0, explain: 'Tonie to, co ma większą gęstość niż woda. Wielkość przedmiotu nie decyduje – wielki pień drzewa pływa, a mały gwóźdź tonie.' },
+        { id: '43m3fh', q: 'Który przedmiot będzie pływał po wodzie?', options: ['korek', 'gwóźdź', 'moneta', 'kamyk'], answer: 0, explain: 'Korek ma mniejszą gęstość niż woda, więc pływa. Gwóźdź, moneta i kamyk toną.' },
+        { id: 'xd9b6f', q: 'Do szklanki z wodą wlano olej. Gdzie znajdzie się olej?', options: ['na powierzchni wody', 'na dnie', 'wymiesza się z wodą na stałe', 'zniknie'], answer: 0, explain: 'Olej ma mniejszą gęstość niż woda i nie miesza się z nią, więc zbiera się na górze.' },
+        { id: 'u3a9gx', q: 'Kulka z plasteliny tonie. Co zrobić z tą samą plasteliną, żeby pływała?', options: ['ulepić z niej łódeczkę', 'zgnieść ją mocniej', 'podzielić na dwie kulki', 'pomalować ją'], answer: 0, explain: 'Łódeczka zamyka w sobie dużo powietrza. Kształt zmienia zdolność do pływania – tak pływają stalowe statki.' },
+        { id: 'ksbdlw', q: 'Dlaczego ogromny stalowy statek nie tonie?', options: ['dzięki kształtowi – w kadłubie jest dużo powietrza', 'bo stal ma mniejszą gęstość niż woda', 'bo statek ciągle płynie', 'bo woda w morzu jest zimna'], answer: 0, explain: 'Stal sama tonie. Statek pływa, bo jego kadłub jest pusty w środku – stal razem z powietrzem w kadłubie jest „lżejsza” niż tyle samo wody.' },
+        { id: 'sim7ar', q: 'W której wodzie łatwiej się unosić?', options: ['w słonej wodzie morskiej', 'w słodkiej wodzie w jeziorze', 'w obu tak samo'], noShuffle: true, answer: 0, explain: 'Słona woda ma większą gęstość niż słodka, więc mocniej utrzymuje ciało na powierzchni.' },
+        { id: '3xiz45', q: 'Jajko tonie w wodzie z kranu. Co się stanie, gdy rozpuścisz w wodzie dużo soli?', options: ['jajko wypłynie', 'jajko pęknie', 'jajko zacznie się gotować', 'nic się nie zmieni'], answer: 0, explain: 'Bardzo słona woda ma większą gęstość niż jajko, więc jajko wypływa.' },
+        { id: '3hfywp', q: 'Dlaczego lód pływa po wodzie?', options: ['ma mniejszą gęstość niż woda w stanie ciekłym', 'ma większą gęstość niż woda', 'jest bardzo zimny', 'jest twardy'], answer: 0, explain: 'Woda jest wyjątkowa: w stanie stałym (lód) ma mniejszą gęstość niż w stanie ciekłym. Dlatego lód unosi się na wodzie.' },
+        { id: 'kg8i0j', q: 'W jakiej temperaturze woda ma największą gęstość?', options: ['ok. 4°C', '0°C', '100°C', '20°C'], answer: 0, explain: 'Najgęstsza jest woda o temperaturze ok. 4°C. Zimą zbiera się ona na dnie jezior.' },
+        { id: 'erut07', q: 'Dlaczego ryby mogą przeżyć zimę w zamarzniętym jeziorze?', options: ['lód tworzy się na górze, a pod nim zostaje woda', 'ryby zamarzają i odmarzają wiosną', 'jezioro zamarza od dna', 'ryby przenoszą się do morza'], answer: 0, explain: 'Lód ma mniejszą gęstość niż woda, więc zostaje na górze i jak przykrywka chroni wodę pod spodem przed zamarznięciem.' },
+        { id: 'cdf4w3', q: 'Do czego służy rybom pęcherz pławny?', options: ['pomaga unosić się i opadać w wodzie', 'służy do trawienia', 'chroni przed drapieżnikami', 'wytwarza ikrę'], answer: 0, explain: 'Pęcherz pławny to worek z gazem. Ryba zmienia ilość gazu i dzięki temu bez wysiłku unosi się albo opada.' },
+        { id: '0ms0kk', q: 'Dlaczego liście grzybieni (lilii wodnych) unoszą się na wodzie?', options: ['mają w sobie dużo powietrza', 'są przyklejone do dna', 'są bardzo ciężkie', 'nie mają łodyg'], answer: 0, explain: 'Rośliny wodne mają w liściach i łodygach przestrzenie wypełnione powietrzem – to zmniejsza ich gęstość.' },
+        { id: 'q0pdpo', q: 'Dlaczego balon na ogrzane powietrze unosi się do góry?', options: ['ciepłe powietrze ma mniejszą gęstość niż zimne', 'ciepłe powietrze ma większą gęstość niż zimne', 'balon jest przyciągany przez Słońce', 'balon nie ma masy'], answer: 0, explain: 'Po ogrzaniu powietrze rozszerza się, a jego gęstość maleje. Lżejsze, ciepłe powietrze unosi się nad zimnym.' },
+        { id: 'kbu5uy', q: 'Jak działa kamizelka ratunkowa?', options: ['jest wypełniona lekkim materiałem albo powietrzem i utrzymuje człowieka na wodzie', 'ogrzewa wodę wokół człowieka', 'zwiększa masę człowieka', 'odpycha wodę magnesem'], answer: 0, explain: 'Lekki materiał albo powietrze w kamizelce sprawiają, że człowiek razem z kamizelką ma mniejszą gęstość niż woda.' },
+        { id: 'wjilr3', q: 'Latem w jeziorze najcieplejsza woda jest…', options: ['przy powierzchni', 'przy dnie', 'wszędzie taka sama'], noShuffle: true, answer: 0, explain: 'Ciepła woda ma mniejszą gęstość niż zimna, więc zostaje na górze.' },
+        { id: 'ht4nky', q: 'Prawda czy fałsz?\nDuże i ciężkie przedmioty zawsze toną, a małe i lekkie zawsze pływają.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Decyduje gęstość, nie wielkość. Ogromny pień drzewa pływa, a mała moneta tonie.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
+    {
+      id: 'uklad-sloneczny',
+      name: 'Ziemia w Układzie Słonecznym',
+      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 5 „Planeta Ziemia”, wym. 1 (planety i inne ciała niebieskie Układu Słonecznego, budowa Układu Słonecznego na podstawie modelu), wym. 2 (fazy Księżyca, zaćmienie Słońca i zaćmienie Księżyca), wym. 3 (ruch obrotowy i obiegowy Ziemi i ich konsekwencje – dzień i noc, doba, rok, pory roku; w uproszczeniu). Kolejność i podział planet, planety karłowate, czas obrotu i obiegu Ziemi, nachylenie osi, fazy Księżyca i warunki zaćmień – według materiałów Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl: „Czy Ziemia stoi w miejscu?”, „Z czego zbudowany jest Jowisz?”, „Co to jest zaćmienie Księżyca?”, „Zaćmienia Słońca i Księżyca”), sprawdzone 2.11.2026. Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
+      theory: `
+        <h3>Układ Słoneczny</h3>
+        <p>W środku <b>Układu Słonecznego</b> jest <b>Słońce</b> – <b>gwiazda</b>, czyli ogromna, gorąca kula gazów, która <b>świeci własnym światłem</b>. Wokół Słońca krąży <b>8 planet</b>. Planety nie świecą same – <b>odbijają światło Słońca</b>.</p>
+        <p>Planety po kolei, od najbliższej Słońcu:</p>
+        <table>
+          <tr><th>Planety skaliste (bliżej Słońca, mniejsze)</th><th>Gazowe olbrzymy (dalej od Słońca, ogromne)</th></tr>
+          <tr><td>1. Merkury · 2. Wenus · 3. <b>Ziemia</b> · 4. Mars</td><td>5. <b>Jowisz</b> – największa planeta · 6. Saturn · 7. Uran · 8. Neptun</td></tr>
+        </table>
+        <div class="tip">💡 Kolejność planet zapamiętasz zdaniem: <b>M</b>ama <b>W</b>iesia <b>Z</b>jada <b>M</b>archewkę, <b>J</b>aś <b>S</b>zybko <b>U</b>nosi <b>N</b>ogi (Merkury, Wenus, Ziemia, Mars, Jowisz, Saturn, Uran, Neptun).</div>
+        <h3>Inne ciała niebieskie</h3>
+        <ul>
+          <li><b>Księżyce</b> – krążą wokół planet. Ziemia ma jeden – <b>Księżyc</b>.</li>
+          <li><b>Planetoidy</b> – małe skaliste ciała. Najwięcej jest ich w <b>pasie planetoid</b> między Marsem a Jowiszem.</li>
+          <li><b>Planety karłowate</b> – np. <b>Pluton</b>. Do 2006 r. Pluton był uznawany za dziewiątą planetę; dziś jest <b>planetą karłowatą</b>. Krąży daleko, za Neptunem.</li>
+        </ul>
+        <h3>Ruch obrotowy Ziemi – dzień i noc</h3>
+        <p>Ziemia obraca się wokół własnej <b>osi</b> – wyobrażonej linii przechodzącej przez biegun północny i południowy. Obraca się <b>z zachodu na wschód</b>. Jeden pełny obrót trwa prawie <b>24 godziny</b> – to <b>doba</b>.</p>
+        <p>Słońce oświetla zawsze tylko połowę Ziemi. Na oświetlonej połowie jest <b>dzień</b>, na drugiej – <b>noc</b>. Dlatego, że Ziemia się obraca, nam się wydaje, że to Słońce wędruje po niebie ze wschodu na zachód.</p>
+        <h3>Ruch obiegowy Ziemi – rok i pory roku</h3>
+        <p>Ziemia krąży też wokół Słońca. Jedno okrążenie trwa około <b>365 dni i ćwierć doby</b> – to <b>rok</b>. Z tych „ćwiartek” co cztery lata zbiera się dodatkowy dzień: rok <b>przestępny</b> ma 366 dni (29 lutego).</p>
+        <p>Oś Ziemi jest <b>nachylona</b>. Dlatego przez część roku silniej oświetlona jest północna połowa Ziemi (tam leży Polska), a przez część roku – południowa. Gdy u nas jest <b>lato</b>, Słońce jest wysoko, dzień jest długi i jest ciepło. Zimą Słońce jest nisko, dzień jest krótki i jest zimno. Tak powstają <b>pory roku</b>.</p>
+        <h3>Fazy Księżyca</h3>
+        <p>Księżyc krąży wokół Ziemi. Nie świeci sam – odbija światło Słońca. Słońce zawsze oświetla połowę Księżyca, ale z Ziemi widzimy raz większą, raz mniejszą część tej oświetlonej połowy. Te zmiany wyglądu to <b>fazy Księżyca</b>:</p>
+        <table>
+          <tr><th>Faza</th><th>Co widać (z Polski)</th></tr>
+          <tr><td><b>nów</b></td><td>Księżyca nie widać – jest między Ziemią a Słońcem</td></tr>
+          <tr><td><b>pierwsza kwadra</b></td><td>oświetlona <b>prawa</b> połowa tarczy; Księżyca przybywa</td></tr>
+          <tr><td><b>pełnia</b></td><td>oświetlona cała tarcza</td></tr>
+          <tr><td><b>ostatnia kwadra</b></td><td>oświetlona <b>lewa</b> połowa tarczy; Księżyca ubywa</td></tr>
+        </table>
+        <p>Od nowiu do następnego nowiu mija około <b>29,5 dnia</b>, czyli prawie miesiąc.</p>
+        <div class="tip">💡 Trik: gdy do Księżyca da się dorysować kreskę i wyjdzie litera <b>P</b> – Księżyca <b>przybywa</b>. Gdy wygląda jak litera <b>C</b> – <b>cofa się</b> (ubywa).</div>
+        <h3>Zaćmienia</h3>
+        <table>
+          <tr><th></th><th>Zaćmienie Słońca</th><th>Zaćmienie Księżyca</th></tr>
+          <tr><td>ustawienie w jednej linii</td><td>Słońce – <b>Księżyc</b> – Ziemia</td><td>Słońce – <b>Ziemia</b> – Księżyc</td></tr>
+          <tr><td>co się dzieje</td><td>Księżyc zasłania Słońce</td><td>Księżyc wchodzi w cień Ziemi, ciemnieje i często robi się czerwonawy</td></tr>
+          <tr><td>kiedy może być</td><td>tylko w czasie <b>nowiu</b> (ale nie przy każdym)</td><td>tylko w czasie <b>pełni</b> (ale nie przy każdej)</td></tr>
+        </table>
+        <div class="tip">⚠️ Nigdy nie patrz na Słońce gołym okiem ani przez lornetkę – także podczas zaćmienia. Możesz trwale uszkodzić wzrok. Zaćmienie Słońca ogląda się tylko przez specjalne okulary do obserwacji Słońca.</div>
+      `,
+      flashcards: [
+        ['Słońce', 'Gwiazda w środku Układu Słonecznego; świeci własnym światłem'],
+        ['Ile planet krąży wokół Słońca?', '8'],
+        ['Kolejność planet od Słońca', 'Merkury, Wenus, Ziemia, Mars, Jowisz, Saturn, Uran, Neptun'],
+        ['Największa planeta Układu Słonecznego', 'Jowisz'],
+        ['Planety skaliste', 'Merkury, Wenus, Ziemia, Mars'],
+        ['Gazowe olbrzymy', 'Jowisz, Saturn, Uran, Neptun'],
+        ['Pluton', 'Planeta karłowata (do 2006 r. uznawany za planetę)'],
+        ['Ruch obrotowy Ziemi', 'Obrót wokół własnej osi z zachodu na wschód; trwa prawie 24 h (doba); skutek: dzień i noc'],
+        ['Ruch obiegowy Ziemi', 'Okrążanie Słońca; trwa ok. 365 dni i ćwierć doby (rok); z nachyleniem osi daje pory roku'],
+        ['Rok przestępny', '366 dni – ma 29 lutego; zdarza się co cztery lata'],
+        ['Fazy Księżyca', 'nów → pierwsza kwadra → pełnia → ostatnia kwadra; cykl ok. 29,5 dnia'],
+        ['Zaćmienie Słońca', 'Księżyc między Słońcem a Ziemią zasłania Słońce; tylko w czasie nowiu'],
+        ['Zaćmienie Księżyca', 'Ziemia między Słońcem a Księżycem; Księżyc w cieniu Ziemi; tylko w czasie pełni'],
+      ],
+      questions: [
+        { id: 'biwkmc', q: 'Co znajduje się w środku Układu Słonecznego?', options: ['Słońce', 'Ziemia', 'Księżyc', 'Jowisz'], answer: 0, explain: 'W środku jest Słońce – gwiazda. Wokół niego krążą planety, w tym Ziemia.' },
+        { id: 'vcm3ap', q: 'Ile planet krąży wokół Słońca?', options: ['8', '9', '7', '12'], answer: 0, explain: 'Planet jest 8: Merkury, Wenus, Ziemia, Mars, Jowisz, Saturn, Uran, Neptun. Pluton jest dziś planetą karłowatą.' },
+        { id: 'ex5orw', q: 'Która planeta jest najbliżej Słońca?', options: ['Merkury', 'Wenus', 'Ziemia', 'Neptun'], answer: 0, explain: 'Kolejność od Słońca: Merkury, Wenus, Ziemia, Mars… Najbliżej jest Merkury.' },
+        { id: 'g3af86', q: 'Która planeta jest największa w Układzie Słonecznym?', options: ['Jowisz', 'Ziemia', 'Saturn', 'Mars'], answer: 0, explain: 'Największa jest Jowisz – gazowy olbrzym, piąta planeta od Słońca.' },
+        { id: 'zabwoo', q: 'Którą planetą od Słońca jest Ziemia?', options: ['trzecią', 'pierwszą', 'czwartą', 'piątą'], answer: 0, explain: 'Merkury (1), Wenus (2), Ziemia (3).' },
+        { id: 'lchzjn', q: 'Która planeta NIE jest planetą skalistą?', options: ['Saturn', 'Merkury', 'Wenus', 'Mars'], answer: 0, explain: 'Planety skaliste to Merkury, Wenus, Ziemia i Mars. Saturn to gazowy olbrzym.' },
+        { id: 'q54wkg', q: 'Czym jest dziś Pluton?', options: ['planetą karłowatą', 'dziewiątą planetą', 'gwiazdą', 'księżycem Ziemi'], answer: 0, explain: 'Do 2006 r. Pluton był uznawany za planetę. Dziś zalicza się go do planet karłowatych.' },
+        { id: 'hvuqth', q: 'Prawda czy fałsz?\nPlanety świecą własnym światłem, tak jak Słońce.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Własnym światłem świeci Słońce (gwiazda). Planety i Księżyc odbijają światło Słońca.' },
+        { id: 'dbuyv0', q: 'Co jest skutkiem ruchu obrotowego Ziemi?', options: ['dzień i noc', 'pory roku', 'fazy Księżyca', 'zaćmienie Słońca'], answer: 0, explain: 'Ziemia obraca się wokół osi, więc raz jesteśmy po stronie oświetlonej (dzień), a raz po ciemnej (noc).' },
+        { id: '2rwua2', q: 'Ile trwa jeden pełny obrót Ziemi wokół własnej osi?', options: ['prawie 24 godziny', 'około tygodnia', 'około miesiąca', 'około roku'], answer: 0, explain: 'Jeden obrót trwa prawie 24 godziny – to doba.' },
+        { id: 'm3426j', q: 'W którą stronę obraca się Ziemia?', options: ['z zachodu na wschód', 'ze wschodu na zachód', 'z północy na południe', 'z południa na północ'], answer: 0, explain: 'Ziemia obraca się z zachodu na wschód. Dlatego wydaje nam się, że Słońce wędruje po niebie ze wschodu na zachód.' },
+        { id: 'whd3z8', q: 'Ile mniej więcej trwa jedno okrążenie Ziemi wokół Słońca?', options: ['około 365 dni', 'około 24 godzin', 'około 29,5 dnia', 'około 7 dni'], answer: 0, explain: 'Okrążenie Słońca trwa około 365 dni i ćwierć doby – to rok.' },
+        { id: 'smjujh', q: 'Dlaczego na Ziemi są pory roku?', options: ['bo Ziemia krąży wokół Słońca, a jej oś jest nachylona', 'bo Ziemia obraca się wokół osi', 'bo Księżyc zasłania Słońce', 'bo Słońce raz świeci mocniej, a raz słabiej'], answer: 0, explain: 'Przez nachylenie osi w czasie ruchu obiegowego raz silniej oświetlona jest półkula północna, a raz południowa.' },
+        { id: 'vqt33i', q: 'Ile dni ma rok przestępny?', options: ['366', '365', '364', '360'], answer: 0, explain: 'Rok przestępny ma dodatkowy dzień – 29 lutego – więc ma 366 dni.' },
+        { id: '4r53bj', q: 'W której fazie Księżyca w ogóle go nie widać?', options: ['w nowiu', 'w pełni', 'w pierwszej kwadrze', 'w ostatniej kwadrze'], answer: 0, explain: 'W czasie nowiu Księżyc jest między Ziemią a Słońcem i zwraca do nas swoją nieoświetloną stronę.' },
+        {
+          id: '8pmjj8',
+          q: 'Patrzysz na Księżyc z Polski. Oświetlona jest jego prawa połowa. Jaka to faza?',
+          svg: `<svg viewBox="0 0 300 140" role="img" aria-label="Tarcza Księżyca: prawa połowa jasna, lewa ciemna">
+      <circle cx="150" cy="70" r="55" class="bg ln"/>
+      <path d="M150,15 A55,55 0 0 1 150,125 Z" class="f4 s4"/>
+      <circle cx="150" cy="70" r="55" class="ln"/>
+    </svg>`,
+          options: ['pierwsza kwadra', 'ostatnia kwadra', 'pełnia', 'nów'],
+          answer: 0,
+          explain: 'Gdy oświetlona jest prawa połowa, do Księżyca da się dorysować kreskę i wychodzi „P” – przybywa. To pierwsza kwadra.',
+        },
+        { id: 'nu16jl', q: 'Ile mniej więcej dni mija od jednego nowiu do następnego?', options: ['około 29,5 dnia', 'około 7 dni', 'około 365 dni', 'około 24 godzin'], answer: 0, explain: 'Pełny cykl faz Księżyca trwa około 29,5 dnia – prawie miesiąc.' },
+        { id: 'oktkky', q: 'Kiedy dochodzi do zaćmienia Słońca?', options: ['gdy Księżyc znajdzie się między Słońcem a Ziemią i zasłoni Słońce', 'gdy Ziemia znajdzie się między Słońcem a Księżycem', 'gdy Słońce schowa się za chmurami', 'gdy na Ziemi jest noc'], answer: 0, explain: 'Przy zaćmieniu Słońca ustawienie jest takie: Słońce – Księżyc – Ziemia. Może się to zdarzyć tylko w czasie nowiu.' },
+        { id: 'bkz2n9', q: 'Podczas zaćmienia Księżyca…', options: ['Księżyc wchodzi w cień Ziemi', 'Księżyc zasłania Słońce', 'Słońce zasłania Księżyc', 'Ziemia chowa się w cieniu Księżyca'], answer: 0, explain: 'Przy zaćmieniu Księżyca Ziemia jest między Słońcem a Księżycem, a Księżyc wchodzi w jej cień. Może się to zdarzyć tylko w czasie pełni.' },
+        { id: 'g4yzip', q: 'Jak bezpiecznie oglądać zaćmienie Słońca?', options: ['tylko przez specjalne okulary do obserwacji Słońca', 'gołym okiem, bo Słońce jest zasłonięte', 'przez lornetkę', 'przez zwykłe okulary przeciwsłoneczne'], answer: 0, explain: 'Patrzenie na Słońce gołym okiem, przez lornetkę czy zwykłe okulary przeciwsłoneczne może trwale uszkodzić wzrok.' },
+      ],
+    },
+
+    // ------------------------------------------------------------------
     {
       id: 'metale',
       name: 'Metale, stopy i przewodzenie ciepła',
@@ -1489,77 +1589,6 @@ window.SUBJECTS.push({
         { id: '4m0pqc', q: 'Dlaczego uchwyty garnków robi się często z plastiku albo drewna?', options: ['bo słabo przewodzą ciepło i nie parzą', 'bo dobrze przewodzą prąd', 'bo nie rdzewieją w wodzie z solą', 'bo są cięższe od metalu'], answer: 0, explain: 'Plastik i drewno to izolatory ciepła – uchwyt zostaje chłodny, choć garnek jest gorący.' },
         { id: '0txyem', q: 'Co chroni rośliny i glebę przed mrozem zimą?', options: ['pokrywa śnieżna', 'silny wiatr', 'bezchmurne niebo', 'lód na rzece'], answer: 0, explain: 'Śnieg zawiera dużo powietrza i słabo przewodzi ciepło – działa jak kołdra.' },
         { id: 'oq4n91', q: 'Prawda czy fałsz?\nGęste futro i puch chronią zwierzęta przed utratą ciepła.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Między włosami i piórami jest powietrze, które słabo przewodzi ciepło – to naturalna izolacja.' },
-      ],
-    },
-
-    // ------------------------------------------------------------------
-    {
-      id: 'gestosc',
-      name: 'Gęstość, tonięcie i pływanie',
-      basis: 'Dz.U. 2026 poz. 378, przyroda kl. IV–VI: dz. 3 „Materia i jej przemiany w przyrodzie”, wym. 10 (pojęcie gęstości na podstawie modelu, zależność gęstości od temperatury i stanu skupienia – zwłaszcza woda i jej znaczenie w przyrodzie); dz. 4 „Organizmy i ekosystemy”, wym. 7 (tonięcie i pływanie ciał a gęstość, codzienne zastosowania, przystosowania organizmów do życia w wodzie, wpływ kształtu ciała na pływanie). Bez wzoru na gęstość i bez jednostek gęstości (fizyka kl. VII). Wybór tych treści na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści na klasy).',
-      theory: `
-        <h3>Co to jest gęstość?</h3>
-        <p>Weź do ręki kostkę styropianu i kostkę żelaza tej samej wielkości. Żelazna jest dużo cięższa, bo w tej samej objętości mieści się więcej masy. Mówimy, że żelazo ma większą <b>gęstość</b>.</p>
-        <p><b>Gęstość</b> mówi, ile masy mieści się w określonej objętości substancji. W modelu drobinowym: im ciaśniej i im cięższe drobiny są upakowane, tym większa gęstość.</p>
-        <div class="tip">💡 Kilogram styropianu i kilogram żelaza ważą tyle samo – ale styropian zajmuje dużo więcej miejsca, bo ma mniejszą gęstość.</div>
-        <h3>Tonie czy pływa?</h3>
-        <ul>
-          <li>Ciało o gęstości <b>większej</b> niż gęstość wody – <b>tonie</b> (kamień, gwóźdź, moneta).</li>
-          <li>Ciało o gęstości <b>mniejszej</b> niż gęstość wody – <b>pływa</b> (korek, styropian, większość drewna, lód).</li>
-          <li>Tak samo ciecze: olej ma mniejszą gęstość niż woda, więc zbiera się na jej powierzchni.</li>
-        </ul>
-        <h3>Kształt ma znaczenie</h3>
-        <p>Kulka z plasteliny tonie. Ale gdy z tej samej plasteliny ulepisz <b>łódeczkę</b>, będzie pływać. W łódce jest dużo powietrza, więc cała łódka (plastelina razem z powietrzem w środku) jest „lżejsza” niż tyle samo wody. Dlatego pływają ogromne stalowe statki.</p>
-        <h3>Woda słona i słodka</h3>
-        <p>Słona woda ma większą gęstość niż słodka. Dlatego w morzu łatwiej się unosić niż w jeziorze. Jajko tonie w wodzie z kranu, ale wypływa w bardzo mocno osolonej wodzie.</p>
-        <h3>Gęstość a temperatura i stan skupienia</h3>
-        <ul>
-          <li>Ciepłe powietrze ma mniejszą gęstość niż zimne – dlatego unosi się do góry (tak lata balon na ogrzane powietrze).</li>
-          <li>Ciepła woda unosi się nad zimną – latem w jeziorze na powierzchni woda jest najcieplejsza.</li>
-          <li><b>Woda jest wyjątkowa</b>: lód ma mniejszą gęstość niż woda w stanie ciekłym, dlatego pływa. Większość substancji ma w stanie stałym większą gęstość niż w ciekłym – woda nie.</li>
-          <li>Woda ma największą gęstość w temperaturze ok. <b>4°C</b>. Zimą taka woda opada na dno jeziora, a lód tworzy się na górze. Lód działa jak przykrywka – jezioro nie zamarza do dna i ryby przeżywają zimę.</li>
-        </ul>
-        <h3>Przystosowania do życia w wodzie</h3>
-        <ul>
-          <li>Wiele ryb ma <b>pęcherz pławny</b> – worek wypełniony gazem. Napełniając go albo opróżniając, ryba unosi się albo opada bez wysiłku.</li>
-          <li>Opływowy kształt ciała (ryby, foki) ułatwia poruszanie się w wodzie.</li>
-          <li>Rośliny wodne (np. grzybienie, czyli lilie wodne) mają w liściach i łodygach dużo powietrza, więc ich liście unoszą się na wodzie.</li>
-        </ul>
-        <h3>Na co dzień</h3>
-        <p>Kamizelka ratunkowa i koło ratunkowe są wypełnione lekkim materiałem albo powietrzem – zmniejszają gęstość „człowieka z kamizelką” i utrzymują go na wodzie.</p>
-      `,
-      flashcards: [
-        ['Gęstość', 'Ile masy mieści się w określonej objętości substancji'],
-        ['Kiedy ciało tonie w wodzie?', 'Gdy ma większą gęstość niż woda'],
-        ['Kiedy ciało pływa po wodzie?', 'Gdy ma mniejszą gęstość niż woda'],
-        ['Olej i woda w jednym naczyniu', 'Olej na górze – ma mniejszą gęstość'],
-        ['Dlaczego pływa stalowy statek?', 'Dzięki kształtowi – w środku jest dużo powietrza'],
-        ['Woda słona a słodka', 'Słona ma większą gęstość – łatwiej się w niej unosić'],
-        ['Dlaczego lód pływa?', 'Ma mniejszą gęstość niż woda w stanie ciekłym'],
-        ['Największa gęstość wody', 'W temperaturze ok. 4°C – taka woda opada na dno jeziora'],
-        ['Dlaczego jeziora nie zamarzają do dna?', 'Lód tworzy się na górze i jak przykrywka chroni wodę pod spodem'],
-        ['Pęcherz pławny', 'Worek z gazem u wielu ryb – pomaga unosić się i opadać'],
-        ['Ciepłe powietrze', 'Ma mniejszą gęstość niż zimne – unosi się do góry'],
-      ],
-      questions: [
-        { id: 'fus9yk', q: 'Co to jest gęstość?', options: ['ile masy mieści się w określonej objętości substancji', 'jak wysoko coś leży', 'jak szybko coś się rozpuszcza', 'jaką coś ma temperaturę'], answer: 0, explain: 'Gęstość mówi, ile masy „upchnięto” w danej objętości. Żelazo ma dużą gęstość, styropian – małą.' },
-        { id: '7cpnyb', q: 'Masz dwie kostki tej samej wielkości: z żelaza i ze styropianu. Która ma większą gęstość?', options: ['żelazna', 'styropianowa', 'mają taką samą'], noShuffle: true, answer: 0, explain: 'W tej samej objętości żelazo ma dużo większą masę niż styropian, więc ma większą gęstość.' },
-        { id: '7f197w', q: 'Kiedy przedmiot tonie w wodzie?', options: ['gdy ma większą gęstość niż woda', 'gdy ma mniejszą gęstość niż woda', 'gdy jest duży', 'gdy jest kolorowy'], answer: 0, explain: 'Tonie to, co ma większą gęstość niż woda. Wielkość przedmiotu nie decyduje – wielki pień drzewa pływa, a mały gwóźdź tonie.' },
-        { id: '43m3fh', q: 'Który przedmiot będzie pływał po wodzie?', options: ['korek', 'gwóźdź', 'moneta', 'kamyk'], answer: 0, explain: 'Korek ma mniejszą gęstość niż woda, więc pływa. Gwóźdź, moneta i kamyk toną.' },
-        { id: 'xd9b6f', q: 'Do szklanki z wodą wlano olej. Gdzie znajdzie się olej?', options: ['na powierzchni wody', 'na dnie', 'wymiesza się z wodą na stałe', 'zniknie'], answer: 0, explain: 'Olej ma mniejszą gęstość niż woda i nie miesza się z nią, więc zbiera się na górze.' },
-        { id: 'u3a9gx', q: 'Kulka z plasteliny tonie. Co zrobić z tą samą plasteliną, żeby pływała?', options: ['ulepić z niej łódeczkę', 'zgnieść ją mocniej', 'podzielić na dwie kulki', 'pomalować ją'], answer: 0, explain: 'Łódeczka zamyka w sobie dużo powietrza. Kształt zmienia zdolność do pływania – tak pływają stalowe statki.' },
-        { id: 'ksbdlw', q: 'Dlaczego ogromny stalowy statek nie tonie?', options: ['dzięki kształtowi – w kadłubie jest dużo powietrza', 'bo stal ma mniejszą gęstość niż woda', 'bo statek ciągle płynie', 'bo woda w morzu jest zimna'], answer: 0, explain: 'Stal sama tonie. Statek pływa, bo jego kadłub jest pusty w środku – stal razem z powietrzem w kadłubie jest „lżejsza” niż tyle samo wody.' },
-        { id: 'sim7ar', q: 'W której wodzie łatwiej się unosić?', options: ['w słonej wodzie morskiej', 'w słodkiej wodzie w jeziorze', 'w obu tak samo'], noShuffle: true, answer: 0, explain: 'Słona woda ma większą gęstość niż słodka, więc mocniej utrzymuje ciało na powierzchni.' },
-        { id: '3xiz45', q: 'Jajko tonie w wodzie z kranu. Co się stanie, gdy rozpuścisz w wodzie dużo soli?', options: ['jajko wypłynie', 'jajko pęknie', 'jajko zacznie się gotować', 'nic się nie zmieni'], answer: 0, explain: 'Bardzo słona woda ma większą gęstość niż jajko, więc jajko wypływa.' },
-        { id: '3hfywp', q: 'Dlaczego lód pływa po wodzie?', options: ['ma mniejszą gęstość niż woda w stanie ciekłym', 'ma większą gęstość niż woda', 'jest bardzo zimny', 'jest twardy'], answer: 0, explain: 'Woda jest wyjątkowa: w stanie stałym (lód) ma mniejszą gęstość niż w stanie ciekłym. Dlatego lód unosi się na wodzie.' },
-        { id: 'kg8i0j', q: 'W jakiej temperaturze woda ma największą gęstość?', options: ['ok. 4°C', '0°C', '100°C', '20°C'], answer: 0, explain: 'Najgęstsza jest woda o temperaturze ok. 4°C. Zimą zbiera się ona na dnie jezior.' },
-        { id: 'erut07', q: 'Dlaczego ryby mogą przeżyć zimę w zamarzniętym jeziorze?', options: ['lód tworzy się na górze, a pod nim zostaje woda', 'ryby zamarzają i odmarzają wiosną', 'jezioro zamarza od dna', 'ryby przenoszą się do morza'], answer: 0, explain: 'Lód ma mniejszą gęstość niż woda, więc zostaje na górze i jak przykrywka chroni wodę pod spodem przed zamarznięciem.' },
-        { id: 'cdf4w3', q: 'Do czego służy rybom pęcherz pławny?', options: ['pomaga unosić się i opadać w wodzie', 'służy do trawienia', 'chroni przed drapieżnikami', 'wytwarza ikrę'], answer: 0, explain: 'Pęcherz pławny to worek z gazem. Ryba zmienia ilość gazu i dzięki temu bez wysiłku unosi się albo opada.' },
-        { id: '0ms0kk', q: 'Dlaczego liście grzybieni (lilii wodnych) unoszą się na wodzie?', options: ['mają w sobie dużo powietrza', 'są przyklejone do dna', 'są bardzo ciężkie', 'nie mają łodyg'], answer: 0, explain: 'Rośliny wodne mają w liściach i łodygach przestrzenie wypełnione powietrzem – to zmniejsza ich gęstość.' },
-        { id: 'q0pdpo', q: 'Dlaczego balon na ogrzane powietrze unosi się do góry?', options: ['ciepłe powietrze ma mniejszą gęstość niż zimne', 'ciepłe powietrze ma większą gęstość niż zimne', 'balon jest przyciągany przez Słońce', 'balon nie ma masy'], answer: 0, explain: 'Po ogrzaniu powietrze rozszerza się, a jego gęstość maleje. Lżejsze, ciepłe powietrze unosi się nad zimnym.' },
-        { id: 'kbu5uy', q: 'Jak działa kamizelka ratunkowa?', options: ['jest wypełniona lekkim materiałem albo powietrzem i utrzymuje człowieka na wodzie', 'ogrzewa wodę wokół człowieka', 'zwiększa masę człowieka', 'odpycha wodę magnesem'], answer: 0, explain: 'Lekki materiał albo powietrze w kamizelce sprawiają, że człowiek razem z kamizelką ma mniejszą gęstość niż woda.' },
-        { id: 'wjilr3', q: 'Latem w jeziorze najcieplejsza woda jest…', options: ['przy powierzchni', 'przy dnie', 'wszędzie taka sama'], noShuffle: true, answer: 0, explain: 'Ciepła woda ma mniejszą gęstość niż zimna, więc zostaje na górze.' },
-        { id: 'ht4nky', q: 'Prawda czy fałsz?\nDuże i ciężkie przedmioty zawsze toną, a małe i lekkie zawsze pływają.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Decyduje gęstość, nie wielkość. Ogromny pień drzewa pływa, a mała moneta tonie.' },
       ],
     },
 

@@ -55,10 +55,14 @@ Treści znajdują się w `js/dane/`. Każdy plik dodaje jeden przedmiot:
 ```js
 window.SUBJECTS.push({
   id: 'biologia', name: 'Biologia', icon: '🧬', color: '#8e44ad',
+  book: 'Tytuł podręcznika (wydawnictwo)',     // opcjonalne – podręcznik, z którym zgrany jest układ działów
   topics: [
     {
       id: 'genetyka',
       name: 'Genetyka',
+      chapter: 'dział 3 „Genetyka”',           // opcjonalne – rozdział podręcznika (📘 na liście działów)
+      extra: true,                              // opcjonalne – „na zapas”: spoza podręcznika tej klasy; osobna sekcja,
+                                                // nie liczy się do postępu przedmiotu ani do testu próbnego
       basis: 'Na jakim wymaganiu opiera się dział', // opcjonalne
       theory: `<h3>DNA</h3><p>…</p>`,          // HTML ściągi
       flashcards: [['Pytanie', 'Odpowiedź']],   // fiszki (opcjonalne)
