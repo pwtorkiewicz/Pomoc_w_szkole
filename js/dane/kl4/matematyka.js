@@ -60,6 +60,13 @@
       <text x="100" y="178" class="tx" text-anchor="middle">4.</text><text x="220" y="178" class="tx" text-anchor="middle">10 zł</text>
     </svg>`;
 
+  const SVG_PODZIALKA = `<svg viewBox="0 0 360 110" role="img" aria-label="Podziałka liniowa planu: cztery działki po 1 cm, opisane 0, 100, 200, 300, 400 m">
+      <rect x="40" y="50" width="60" height="14" class="f1 s1"/><rect x="100" y="50" width="60" height="14" class="bg ln"/>
+      <rect x="160" y="50" width="60" height="14" class="f1 s1"/><rect x="220" y="50" width="60" height="14" class="bg ln"/>
+      <g class="tx-s" text-anchor="middle"><text x="40" y="40">0</text><text x="100" y="40">100</text><text x="160" y="40">200</text><text x="220" y="40">300</text><text x="280" y="40">400 m</text></g>
+      <text x="180" y="95" class="tx-s" text-anchor="middle">1 działka = 1 cm na planie</text>
+    </svg>`;
+
   window.SUBJECTS.push({
     id: 'matematyka',
     name: 'Matematyka',
@@ -440,6 +447,72 @@
 
       // ------------------------------------------------------------------
       {
+        id: 'skala',
+        name: 'Skala i plan – obliczenia',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 2 Miary, wym. 11 (rzeczywista długość odcinka, gdy dana jest jego długość w skali, i długość w skali, gdy dana jest rzeczywista długość), wym. 2 (przeliczanie mm, cm, m, km w sytuacjach praktycznych); dz. 6 Myślenie matematyczne, wym. 3d (rozumowanie proporcjonalne). Czym jest skala i jak czytać plan – także w przyrodzie (dział „Kierunki, kompas, plan i mapa”); tu ćwiczymy obliczenia w obie strony.' + WYBOR,
+        theory: `
+          <h3>Co to jest skala</h3>
+          <p>Plan pokoju, boiska czy miasta jest dużo mniejszy niż rzeczywistość. <b>Skala</b> mówi, ile razy go zmniejszono.</p>
+          <ul>
+            <li><b>1 : 100</b> – wszystko zmniejszono 100 razy. 1 cm na planie to 100 cm, czyli <b>1 m</b> w rzeczywistości.</li>
+            <li><b>1 : 1000</b> – 1 cm na planie to 1000 cm, czyli <b>10 m</b>.</li>
+            <li><b>1 : 100 000</b> – 1 cm na mapie to 100 000 cm, czyli <b>1 km</b>.</li>
+          </ul>
+          <h3>Z planu do rzeczywistości – mnożymy</h3>
+          <p>Długość na planie mnożysz przez liczbę ze skali, a potem zamieniasz jednostki.</p>
+          <p>Skala 1 : 1000, ścieżka na planie ma 7 cm: <span class="f">7 cm · 1000 = 7000 cm = 70 m</span>.</p>
+          <h3>Z rzeczywistości na plan – dzielimy</h3>
+          <p>Rzeczywistą długość zamieniasz na centymetry i dzielisz przez liczbę ze skali.</p>
+          <p>Boisko ma 40 m, plan w skali 1 : 1000: <span class="f">40 m = 4000 cm, 4000 cm : 1000 = 4 cm</span>.</p>
+          <h3>Trzy sposoby zapisu skali</h3>
+          <table>
+            <tr><th>Skala</th><th>Przykład</th></tr>
+            <tr><td>liczbowa</td><td>1 : 10 000</td></tr>
+            <tr><td>mianowana (z jednostkami)</td><td>1 cm – 100 m</td></tr>
+            <tr><td>liniowa (podziałka)</td><td>odcinek podzielony na działki z podpisami 0, 100, 200 m…</td></tr>
+          </table>
+          <p>Wszystkie trzy przykłady mówią to samo, bo 100 m = 10 000 cm.</p>
+          <h3>Powiększenie</h3>
+          <p>Rysunek mrówki czy biedronki bywa <b>większy</b> niż ona sama. Skala <b>2 : 1</b> znaczy: 2 cm na rysunku to 1 cm naprawdę – rysunek powiększono 2 razy.</p>
+          <div class="tip">💡 Przed liczeniem zamień wszystko na centymetry. Przyda się: 1 m = 100 cm, 1 km = 1000 m = 100 000 cm.</div>
+        `,
+        flashcards: [
+          ['Skala', 'Mówi, ile razy zmniejszono (albo powiększono) rzeczywistość na planie, mapie lub rysunku'],
+          ['Skala 1 : 100', '1 cm na planie = 100 cm = 1 m w rzeczywistości'],
+          ['Skala 1 : 1000', '1 cm na planie = 1000 cm = 10 m'],
+          ['Skala 1 : 100 000', '1 cm na mapie = 100 000 cm = 1 km'],
+          ['Z planu do rzeczywistości', 'Mnożymy długość na planie przez liczbę ze skali'],
+          ['Z rzeczywistości na plan', 'Zamieniamy na cm i dzielimy przez liczbę ze skali'],
+          ['Skala mianowana', 'Skala zapisana z jednostkami, np. 1 cm – 100 m'],
+          ['Skala liniowa (podziałka)', 'Odcinek z działkami podpisanymi odległościami w terenie'],
+          ['Skala 2 : 1', 'Powiększenie 2 razy: 2 cm na rysunku = 1 cm naprawdę'],
+          ['Ile centymetrów ma 1 km?', '100 000 cm'],
+        ],
+        questions: [
+          { id: 'kvdihq', q: 'Plan ma skalę 1 : 100. Stół ma na nim 2 cm długości. Ile ma naprawdę?', options: ['2 m', '20 m', '200 m', '20 cm'], answer: 0, explain: '2 cm · 100 = 200 cm = 2 m.' },
+          { id: 'ihwn08', q: 'Plan ma skalę 1 : 50. Szafa ma na nim 4 cm szerokości. Ile ma naprawdę?', options: ['2 m', '20 m', '54 cm', '20 cm'], answer: 0, explain: '4 cm · 50 = 200 cm = 2 m.' },
+          { id: 'cpv3r3', q: 'Plan ma skalę 1 : 1000. Ścieżka ma na nim 7 cm. Jaka jest jej długość w terenie?', options: ['70 m', '7 m', '700 m', '7 km'], answer: 0, explain: '7 cm · 1000 = 7000 cm = 70 m.' },
+          { id: 'kqgz6p', q: 'Mapa ma skalę 1 : 100 000. Dwie wsie dzieli na niej 3 cm. Jaka jest odległość w terenie?', options: ['3 km', '30 km', '300 m', '30 m'], answer: 0, explain: '3 cm · 100 000 = 300 000 cm = 3000 m = 3 km.' },
+          { id: 'ty0zaw', q: 'Mapa turystyczna ma skalę 1 : 50 000. Szlak ma na niej 10 cm. Ile kilometrów trzeba przejść?', options: ['5 km', '50 km', '500 m', '50 m'], answer: 0, explain: '10 cm · 50 000 = 500 000 cm = 5000 m = 5 km.' },
+          { id: '96odjp', q: 'Plan ma skalę 1 : 500. Odcinek ma na nim 8 cm. Ile to w rzeczywistości?', options: ['40 m', '4 m', '400 m', '508 cm'], answer: 0, explain: '8 cm · 500 = 4000 cm = 40 m.' },
+          { id: '8vrw8m', q: 'Pokój ma 5 m długości. Jaką długość będzie miał na planie w skali 1 : 100?', options: ['5 cm', '50 cm', '5 mm', '500 cm'], answer: 0, explain: '5 m = 500 cm, 500 cm : 100 = 5 cm.' },
+          { id: 'dbx0rt', q: 'Boisko ma 40 m długości. Jaką długość będzie miało na planie w skali 1 : 1000?', options: ['4 cm', '40 cm', '4 mm', '400 cm'], answer: 0, explain: '40 m = 4000 cm, 4000 cm : 1000 = 4 cm.' },
+          { id: 'davjvt', q: 'Droga między miastami ma 6 km. Ile centymetrów będzie miała na mapie w skali 1 : 200 000?', options: ['3 cm', '12 cm', '30 cm', '6 cm'], answer: 0, explain: '6 km = 600 000 cm, 600 000 cm : 200 000 = 3 cm.' },
+          { id: '1o19y1', q: 'Stół ma 2 m długości. Jaką długość będzie miał na planie w skali 1 : 200?', options: ['1 cm', '4 cm', '2 cm', '10 cm'], answer: 0, explain: '2 m = 200 cm, 200 cm : 200 = 1 cm.' },
+          { id: 'of6ncb', q: 'Skala mianowana „1 cm – 10 m” to w zapisie liczbowym…', options: ['1 : 1000', '1 : 10', '1 : 100', '1 : 10 000'], answer: 0, explain: '10 m = 1000 cm, więc 1 cm na planie to 1000 cm w rzeczywistości: 1 : 1000.' },
+          { id: '6wvstr', q: 'Skala 1 : 10 000 zapisana jako skala mianowana to…', options: ['1 cm – 100 m', '1 cm – 10 m', '1 cm – 1 km', '1 cm – 10 km'], answer: 0, explain: '10 000 cm = 100 m.' },
+          { id: 'icepf4', q: 'Ile metrów w terenie to 1 cm na planie z tą podziałką?', svg: SVG_PODZIALKA, options: ['100 m', '1 m', '400 m', '10 m'], answer: 0, explain: 'Każda działka ma 1 cm, a kolejne podpisy rosną o 100 m.' },
+          { id: '3cjbzj', q: 'Szkołę i park dzielą na tym planie 3 cm. Jaka jest odległość w terenie?', svg: SVG_PODZIALKA, options: ['300 m', '3 m', '30 m', '3 km'], answer: 0, explain: '1 cm to 100 m, więc 3 cm to 3 · 100 m = 300 m.' },
+          { id: 'f8cwu3', q: 'Jaką skalę liczbową ma plan z tą podziałką?', svg: SVG_PODZIALKA, options: ['1 : 10 000', '1 : 100', '1 : 1000', '1 : 100 000'], answer: 0, explain: '1 cm na planie to 100 m = 10 000 cm. Skala: 1 : 10 000.' },
+          { id: 'igf56r', q: 'Ten sam pokój narysowano na dwóch planach: w skali 1 : 100 i w skali 1 : 200. Na którym planie pokój jest większy?', options: ['w skali 1 : 100', 'w skali 1 : 200', 'na obu jest taki sam'], answer: 0, explain: 'W skali 1 : 100 pokój zmniejszono 100 razy, a w 1 : 200 – aż 200 razy. Mniej zmniejszony jest na planie 1 : 100.' },
+          { id: 'cxx0ht', q: 'Chrząszcz narysowano w skali 2 : 1. Na rysunku ma 6 cm długości. Ile ma naprawdę?', options: ['3 cm', '12 cm', '8 cm', '4 cm'], answer: 0, explain: 'Skala 2 : 1 to powiększenie 2 razy: 6 cm : 2 = 3 cm.' },
+          { id: '9kxsl2', q: 'Prawda czy fałsz?\nW skali 1 : 100 jeden centymetr na planie to 100 m w rzeczywistości.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: '1 cm · 100 = 100 cm, a 100 cm to 1 m, nie 100 m.' },
+          { id: 'tewbat', q: 'Prawda czy fałsz?\nSkala 1 : 1000 i skala „1 cm – 10 m” oznaczają to samo.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '10 m = 1000 cm, więc w obu przypadkach 1 cm na planie to 1000 cm w terenie.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
         id: 'proste-katy',
         name: 'Proste, odcinki i kąty',
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 1 (punkt, prosta, półprosta, odcinek), 2 (rodzaje kątów, wierzchołek i ramiona), 3 (proste i odcinki prostopadłe i równoległe, także na kartce w kratkę); dz. 2 Miary, wym. 3 (mierzenie kątów).' + WYBOR,
@@ -620,6 +693,201 @@
           { id: '7mtx13', q: 'Prawda czy fałsz?\nKażdy kwadrat jest prostokątem.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Kwadrat ma 4 kąty proste i równe przeciwległe boki – spełnia wszystkie warunki prostokąta.' },
           { id: 'rpq3cd', q: 'Prawda czy fałsz?\nKażdy prostokąt jest kwadratem.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Prostokąt 5 cm × 3 cm nie ma wszystkich boków równych, więc nie jest kwadratem.' },
           { id: '7h34wb', q: 'Prawda czy fałsz?\nŚrednica jest najdłuższą cięciwą okręgu.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Średnica to cięciwa przechodząca przez środek. Żadna inna cięciwa nie jest od niej dłuższa.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
+        id: 'trojkaty-czworokaty',
+        name: 'Trójkąty i czworokąty',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 7 (trójkąty ostrokątne, prostokątne, rozwartokątne; różnoboczne, równoramienne, równoboczne), 9 (tylko ramiona i podstawa trójkąta równoramiennego, równość ramion), 11 (kwadrat, prostokąt, romb, równoległobok, trapez, w tym równoramienny i prostokątny – rozpoznawanie i własności boków), 15 (obwód wielokąta). Suma kątów (wym. 8), konstrukcja trójkąta (wym. 10), wysokości i pola tych figur (wym. 13–14) – później.' + WYBOR,
+        theory: `
+          <h3>Trójkąty – ze względu na kąty</h3>
+          <table>
+            <tr><th>Trójkąt</th><th>Kąty</th></tr>
+            <tr><td>ostrokątny</td><td>wszystkie 3 kąty ostre</td></tr>
+            <tr><td>prostokątny</td><td>1 kąt prosty</td></tr>
+            <tr><td>rozwartokątny</td><td>1 kąt rozwarty</td></tr>
+          </table>
+          <p>Trójkąt nie może mieć dwóch kątów prostych ani dwóch rozwartych – jego boki nie spotkałyby się w trzecim wierzchołku.</p>
+          <h3>Trójkąty – ze względu na boki</h3>
+          <ul>
+            <li><b>Różnoboczny</b> – każdy bok ma inną długość.</li>
+            <li><b>Równoramienny</b> – ma dwa boki równej długości. To <b>ramiona</b>, a trzeci bok to <b>podstawa</b>.</li>
+            <li><b>Równoboczny</b> – wszystkie 3 boki są równe. To szczególny trójkąt równoramienny.</li>
+          </ul>
+          <p>Na rysunkach równe boki zaznacza się takimi samymi kreskami.</p>
+          <h3>Czworokąty</h3>
+          <table>
+            <tr><th>Czworokąt</th><th>Co go wyróżnia</th></tr>
+            <tr><td>kwadrat</td><td>4 równe boki i 4 kąty proste</td></tr>
+            <tr><td>prostokąt</td><td>4 kąty proste, przeciwległe boki równe</td></tr>
+            <tr><td>romb</td><td>4 równe boki (kąty nie muszą być proste)</td></tr>
+            <tr><td>równoległobok</td><td>dwie pary boków równoległych; przeciwległe boki są równe</td></tr>
+            <tr><td>trapez</td><td>co najmniej jedna para boków równoległych</td></tr>
+          </table>
+          <ul>
+            <li>W trapezie boki równoległe to <b>podstawy</b>, a dwa pozostałe – <b>ramiona</b>.</li>
+            <li><b>Trapez równoramienny</b> ma ramiona równej długości.</li>
+            <li><b>Trapez prostokątny</b> ma ramię prostopadłe do podstaw – są w nim kąty proste.</li>
+          </ul>
+          <div class="tip">💡 Kwadrat jest jednocześnie prostokątem i rombem. Prostokąt i romb są równoległobokami.</div>
+          <h3>Obwód</h3>
+          <ul>
+            <li>Trójkąt równoramienny o ramionach 7 cm i podstawie 4 cm: <span class="f">7 + 7 + 4 = 18 cm</span>.</li>
+            <li>Trójkąt równoboczny o boku 6 cm: <span class="f">3 · 6 = 18 cm</span>.</li>
+            <li>Romb o boku 5 cm: <span class="f">4 · 5 = 20 cm</span>.</li>
+            <li>Równoległobok o bokach 8 cm i 5 cm: <span class="f">2 · 8 + 2 · 5 = 26 cm</span>.</li>
+          </ul>
+        `,
+        flashcards: [
+          ['Trójkąt ostrokątny', 'Wszystkie 3 kąty ostre'],
+          ['Trójkąt prostokątny', 'Jeden kąt prosty'],
+          ['Trójkąt rozwartokątny', 'Jeden kąt rozwarty'],
+          ['Trójkąt różnoboczny', 'Każdy bok innej długości'],
+          ['Trójkąt równoramienny', 'Dwa równe boki (ramiona), trzeci bok to podstawa'],
+          ['Trójkąt równoboczny', 'Wszystkie 3 boki równe'],
+          ['Romb', '4 boki równej długości'],
+          ['Równoległobok', 'Dwie pary boków równoległych; przeciwległe boki równe'],
+          ['Trapez', 'Co najmniej jedna para boków równoległych'],
+          ['Podstawy i ramiona trapezu', 'Podstawy – boki równoległe; ramiona – dwa pozostałe boki'],
+          ['Trapez równoramienny', 'Ramiona równej długości'],
+          ['Trapez prostokątny', 'Ramię prostopadłe do podstaw – ma kąty proste'],
+          ['Kwadrat a romb i prostokąt', 'Kwadrat jest jednocześnie rombem i prostokątem'],
+        ],
+        questions: [
+          { id: '2j9757', q: 'Trójkąt ma jeden kąt prosty. Jaki to trójkąt?', options: ['prostokątny', 'ostrokątny', 'rozwartokątny', 'równoboczny'], answer: 0, explain: 'Trójkąt z kątem prostym to trójkąt prostokątny.' },
+          { id: 'ah280g', q: 'Wszystkie kąty trójkąta są ostre. Jaki to trójkąt?', options: ['ostrokątny', 'prostokątny', 'rozwartokątny'], answer: 0, explain: 'Trzy kąty ostre – trójkąt ostrokątny.' },
+          { id: '3fpiv8', q: 'Kąty trójkąta mają 100°, 50° i 30°. Jaki to trójkąt?', options: ['rozwartokątny', 'ostrokątny', 'prostokątny'], answer: 0, explain: 'Kąt 100° jest większy od kąta prostego (90°), czyli rozwarty. Trójkąt jest rozwartokątny.' },
+          { id: '37xjoe', q: 'Trójkąt ma boki 5 cm, 5 cm i 3 cm. Jaki to trójkąt?', options: ['równoramienny', 'równoboczny', 'różnoboczny'], answer: 0, explain: 'Dwa boki są równe (5 cm) – to ramiona. Trzeci bok jest inny, więc trójkąt nie jest równoboczny.' },
+          { id: 'msadcc', q: 'Trójkąt ma boki 4 cm, 5 cm i 6 cm. Jaki to trójkąt?', options: ['różnoboczny', 'równoramienny', 'równoboczny'], answer: 0, explain: 'Każdy bok ma inną długość – trójkąt różnoboczny.' },
+          { id: 'oapx9n', q: 'Trójkąt równoramienny ma ramiona po 7 cm i podstawę 4 cm. Jaki ma obwód?', options: ['18 cm', '11 cm', '15 cm', '21 cm'], answer: 0, explain: 'Dwa ramiona i podstawa: 7 + 7 + 4 = 18 cm.' },
+          { id: 'rlwv0w', q: 'Jaki obwód ma trójkąt równoboczny o boku 6 cm?', options: ['18 cm', '12 cm', '36 cm', '6 cm'], answer: 0, explain: 'Trzy równe boki: 3 · 6 = 18 cm.' },
+          { id: 'sn2w08', q: 'Trójkąt równoboczny ma obwód 27 cm. Jaką długość ma jego bok?', options: ['9 cm', '7 cm', '13 cm', '24 cm'], answer: 0, explain: 'Trzy równe boki: 27 : 3 = 9 cm.' },
+          { id: 'sisc8b', q: 'Trójkąt równoramienny ma obwód 20 cm, a jego podstawa ma 6 cm. Jaką długość ma ramię?', options: ['7 cm', '14 cm', '6 cm', '8 cm'], answer: 0, explain: 'Na dwa ramiona zostaje 20 − 6 = 14 cm, czyli na jedno 14 : 2 = 7 cm.' },
+          {
+            id: 'sedc8d',
+            q: 'Który trójkąt jest rozwartokątny?',
+            svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Trzy trójkąty. A – wszystkie kąty ostre. B – kąt prosty w lewym dolnym wierzchołku. C – kąt rozwarty w lewym dolnym wierzchołku.">
+      <path d="M20,150 L110,150 L70,40 Z" class="f1 s1 sw"/>
+      <path d="M150,150 L240,150 L150,50 Z" class="f3 s3 sw"/>
+      <path d="M150,136 L164,136 L164,150" class="ln"/>
+      <path d="M270,150 L390,150 L250,95 Z" class="f2 s2 sw"/>
+      <text x="65" y="180" class="tx-b" text-anchor="middle">A</text>
+      <text x="195" y="180" class="tx-b" text-anchor="middle">B</text>
+      <text x="320" y="180" class="tx-b" text-anchor="middle">C</text>
+    </svg>`,
+            options: ['C', 'A', 'B'],
+            answer: 0,
+            explain: 'W trójkącie C kąt przy lewym dolnym wierzchołku jest większy od prostego – rozwarty. A jest ostrokątny, B – prostokątny (zaznaczony kąt prosty).',
+          },
+          { id: '32z540', q: 'Ile par boków równoległych ma równoległobok?', options: ['2', '1', '0', '4'], answer: 0, explain: 'Równoległobok ma dwie pary boków równoległych – stąd jego nazwa.' },
+          { id: '346ezw', q: 'Czworokąt ma 4 boki równej długości, ale nie ma kątów prostych. Jak się nazywa?', options: ['romb', 'kwadrat', 'prostokąt'], answer: 0, explain: 'Cztery równe boki ma romb i kwadrat, ale kwadrat ma kąty proste. Bez kątów prostych – romb.' },
+          { id: '4l0xup', q: 'Jak nazywamy równoległe boki trapezu?', options: ['podstawami', 'ramionami', 'przekątnymi'], answer: 0, explain: 'Boki równoległe to podstawy trapezu, a dwa pozostałe boki – ramiona.' },
+          { id: '303y86', q: 'Równoległobok ma boki 8 cm i 5 cm. Jaki ma obwód?', options: ['26 cm', '13 cm', '40 cm', '21 cm'], answer: 0, explain: 'Przeciwległe boki są równe: 8 + 5 + 8 + 5 = 26 cm.' },
+          { id: 'jj1xco', q: 'Jaki obwód ma romb o boku 7 cm?', options: ['28 cm', '14 cm', '49 cm', '21 cm'], answer: 0, explain: 'Romb ma 4 równe boki: 4 · 7 = 28 cm.' },
+          { id: 'lsbgfa', q: 'Trapez równoramienny ma podstawy 10 cm i 6 cm, a ramię 4 cm. Jaki ma obwód?', options: ['24 cm', '20 cm', '28 cm', '16 cm'], answer: 0, explain: 'Ramiona są równe: 10 + 6 + 4 + 4 = 24 cm.' },
+          {
+            id: 'dsikrb',
+            q: 'Jak nazywa się czworokąt na rysunku?',
+            svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Czworokąt na kratce: górny i dolny bok poziome i równoległe, górny krótszy. Lewy bok pionowy, z kątami prostymi przy obu podstawach. Prawy bok ukośny.">
+      <g class="ln-thin"><line x1="20" y1="10" x2="20" y2="190"/><line x1="50" y1="10" x2="50" y2="190"/><line x1="80" y1="10" x2="80" y2="190"/><line x1="110" y1="10" x2="110" y2="190"/><line x1="140" y1="10" x2="140" y2="190"/><line x1="170" y1="10" x2="170" y2="190"/><line x1="200" y1="10" x2="200" y2="190"/><line x1="230" y1="10" x2="230" y2="190"/><line x1="260" y1="10" x2="260" y2="190"/><line x1="290" y1="10" x2="290" y2="190"/><line x1="320" y1="10" x2="320" y2="190"/><line x1="350" y1="10" x2="350" y2="190"/><line x1="380" y1="10" x2="380" y2="190"/><line x1="20" y1="10" x2="380" y2="10"/><line x1="20" y1="40" x2="380" y2="40"/><line x1="20" y1="70" x2="380" y2="70"/><line x1="20" y1="100" x2="380" y2="100"/><line x1="20" y1="130" x2="380" y2="130"/><line x1="20" y1="160" x2="380" y2="160"/><line x1="20" y1="190" x2="380" y2="190"/></g>
+      <path d="M80,40 L200,40 L320,160 L80,160 Z" class="f5 s5 sw"/>
+      <path d="M80,54 L94,54 L94,40 M80,146 L94,146 L94,160" class="ln"/>
+    </svg>`,
+            options: ['trapez prostokątny', 'równoległobok', 'romb', 'prostokąt'],
+            answer: 0,
+            explain: 'Tylko górny i dolny bok są równoległe – to trapez. Lewe ramię jest prostopadłe do podstaw (kąty proste), więc to trapez prostokątny.',
+          },
+          { id: 'vcbmtk', q: 'Prawda czy fałsz?\nKażdy kwadrat jest rombem.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Kwadrat ma 4 równe boki – spełnia warunek rombu.' },
+          { id: 'bf13aw', q: 'Prawda czy fałsz?\nKażdy romb jest kwadratem.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Romb nie musi mieć kątów prostych – wtedy nie jest kwadratem.' },
+          { id: 'f42pva', q: 'Prawda czy fałsz?\nTrójkąt może mieć dwa kąty proste.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Gdyby przy podstawie były dwa kąty proste, oba boki biegłyby prostopadle w górę, równolegle do siebie – nigdy by się nie spotkały.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
+        id: 'symetria',
+        name: 'Symetria osiowa',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 12 (figury osiowosymetryczne, wskazywanie i rysowanie osi symetrii; dorysowywanie figury symetrycznej na kratce).' + WYBOR,
+        theory: `
+          <h3>Figura osiowosymetryczna</h3>
+          <p>Figurę można złożyć wzdłuż prostej tak, że obie połowy dokładnie się pokryją? Taka figura jest <b>osiowosymetryczna</b>, a ta prosta to jej <b>oś symetrii</b>.</p>
+          <p>Przykłady z życia: motyl, liść, serce, twarz (prawie), litera A.</p>
+          <h3>Ile osi symetrii?</h3>
+          <table>
+            <tr><th>Figura</th><th>Osie symetrii</th></tr>
+            <tr><td>kwadrat</td><td>4</td></tr>
+            <tr><td>prostokąt (niebędący kwadratem)</td><td>2</td></tr>
+            <tr><td>romb (niebędący kwadratem)</td><td>2 – wzdłuż przekątnych</td></tr>
+            <tr><td>trójkąt równoboczny</td><td>3</td></tr>
+            <tr><td>trójkąt równoramienny (niebędący równobocznym)</td><td>1</td></tr>
+            <tr><td>trapez równoramienny</td><td>1</td></tr>
+            <tr><td>koło i okrąg</td><td>nieskończenie wiele – każda prosta przez środek</td></tr>
+            <tr><td>trójkąt różnoboczny</td><td>0</td></tr>
+          </table>
+          <div class="tip">💡 Pułapka: przekątna prostokąta, który nie jest kwadratem, <b>nie jest</b> jego osią symetrii. Złóż kartkę po przekątnej – rogi nie spotkają się.</div>
+          <h3>Litery</h3>
+          <p>W zwykłym druku litera A ma pionową oś symetrii, litera H – dwie osie (pionową i poziomą), a litery N, S i Z nie mają żadnej.</p>
+          <h3>Dorysowywanie na kratce</h3>
+          <ul>
+            <li>Każdy punkt figury przenosisz na drugą stronę osi – <b>prostopadle do osi</b>, na <b>tę samą odległość</b> (tyle samo kratek).</li>
+            <li>Punkt 3 kratki na lewo od pionowej osi → jego obraz 3 kratki na prawo, na tej samej wysokości.</li>
+            <li>Punkt leżący na osi zostaje na miejscu.</li>
+          </ul>
+        `,
+        flashcards: [
+          ['Oś symetrii', 'Prosta, wzdłuż której można złożyć figurę tak, że obie połowy się pokrywają'],
+          ['Ile osi symetrii ma kwadrat?', '4'],
+          ['Ile osi symetrii ma prostokąt (niebędący kwadratem)?', '2'],
+          ['Ile osi symetrii ma trójkąt równoboczny?', '3'],
+          ['Ile osi symetrii ma trójkąt równoramienny (niebędący równobocznym)?', '1'],
+          ['Ile osi symetrii ma koło?', 'Nieskończenie wiele – każda prosta przez środek'],
+          ['Osie symetrii rombu (niebędącego kwadratem)', '2 – wzdłuż przekątnych'],
+          ['Czy przekątna prostokąta jest jego osią symetrii?', 'Nie (chyba że prostokąt jest kwadratem)'],
+          ['Figura bez osi symetrii', 'Np. trójkąt różnoboczny, litera N'],
+          ['Dorysowywanie na kratce', 'Prostopadle do osi, tyle samo kratek po drugiej stronie'],
+        ],
+        questions: [
+          { id: '8kf72a', q: 'Ile osi symetrii ma kwadrat?', options: ['4', '2', '1', '8'], answer: 0, explain: 'Pionowa, pozioma i dwie wzdłuż przekątnych – razem 4.' },
+          { id: 'kctcv5', q: 'Ile osi symetrii ma prostokąt, który nie jest kwadratem?', options: ['2', '4', '1', '0'], answer: 0, explain: 'Pionowa i pozioma przez środek. Przekątne nie są osiami symetrii.' },
+          { id: 'gebxc9', q: 'Ile osi symetrii ma trójkąt równoboczny?', options: ['3', '1', '0', '6'], answer: 0, explain: 'Każda oś biegnie od wierzchołka do środka przeciwległego boku – są 3.' },
+          { id: 'a7sojm', q: 'Ile osi symetrii ma trójkąt równoramienny, który nie jest równoboczny?', options: ['1', '2', '3', '0'], answer: 0, explain: 'Jedna oś – od wierzchołka między ramionami do środka podstawy.' },
+          { id: 'g5i8va', q: 'Ile osi symetrii ma koło?', options: ['nieskończenie wiele', '1', '2', '4'], answer: 0, explain: 'Każda prosta przechodząca przez środek koła dzieli je na dwie jednakowe połowy.' },
+          { id: '0d2ztl', q: 'Ile osi symetrii ma romb, który nie jest kwadratem?', options: ['2', '4', '1', '0'], answer: 0, explain: 'Osiami symetrii rombu są proste, na których leżą jego przekątne.' },
+          { id: 'a1nf9r', q: 'Ile osi symetrii ma trapez równoramienny?', options: ['1', '2', '0', '4'], answer: 0, explain: 'Jedna pionowa oś przez środki obu podstaw.' },
+          { id: 'g6ykw1', q: 'Która figura nie ma osi symetrii?', options: ['trójkąt różnoboczny', 'kwadrat', 'koło', 'trójkąt równoramienny'], answer: 0, explain: 'Trójkąt różnoboczny ma każdy bok inny – nie da się go złożyć na dwie jednakowe połowy.' },
+          { id: 'hk2rdg', q: 'Która wielka litera (w zwykłym druku) ma pionową oś symetrii?', options: ['A', 'N', 'S', 'Z'], answer: 0, explain: 'Litera A jest taka sama po lewej i po prawej stronie pionowej osi. N, S i Z nie mają osi symetrii.' },
+          { id: 'dxroqo', q: 'Ile osi symetrii ma wielka litera H (w zwykłym druku)?', options: ['2', '1', '0', '4'], answer: 0, explain: 'Pionowa i pozioma – H wygląda tak samo po złożeniu wzdłuż każdej z nich.' },
+          { id: '497wqn', q: 'Pionowa oś symetrii przechodzi przez kratkę. Punkt A leży 3 kratki na lewo od niej. Gdzie leży punkt do niego symetryczny?', options: ['3 kratki na prawo od osi, na tej samej wysokości', '6 kratek na prawo od osi', 'na osi', '3 kratki nad punktem A'], answer: 0, explain: 'Obraz punktu leży po drugiej stronie osi, w tej samej odległości: 3 kratki na prawo.' },
+          {
+            id: '1a0m3f',
+            q: 'Ile kratek będzie zamalowanych, gdy dorysujesz figurę symetryczną do zamalowanej względem osi?',
+            svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Kratka z pionową osią przerywaną pośrodku. Po lewej stronie osi zamalowano 5 kratek: 3 kratki w rzędzie przy osi i 2 kratki nad nimi, też przy osi.">
+      <g class="ln-thin"><line x1="20" y1="10" x2="20" y2="190"/><line x1="50" y1="10" x2="50" y2="190"/><line x1="80" y1="10" x2="80" y2="190"/><line x1="110" y1="10" x2="110" y2="190"/><line x1="140" y1="10" x2="140" y2="190"/><line x1="170" y1="10" x2="170" y2="190"/><line x1="200" y1="10" x2="200" y2="190"/><line x1="230" y1="10" x2="230" y2="190"/><line x1="260" y1="10" x2="260" y2="190"/><line x1="290" y1="10" x2="290" y2="190"/><line x1="320" y1="10" x2="320" y2="190"/><line x1="350" y1="10" x2="350" y2="190"/><line x1="380" y1="10" x2="380" y2="190"/><line x1="20" y1="10" x2="380" y2="10"/><line x1="20" y1="40" x2="380" y2="40"/><line x1="20" y1="70" x2="380" y2="70"/><line x1="20" y1="100" x2="380" y2="100"/><line x1="20" y1="130" x2="380" y2="130"/><line x1="20" y1="160" x2="380" y2="160"/><line x1="20" y1="190" x2="380" y2="190"/></g>
+      <rect x="110" y="100" width="90" height="30" class="f1 s1"/>
+      <rect x="140" y="70" width="60" height="30" class="f1 s1"/>
+      <line x1="200" y1="0" x2="200" y2="200" class="ln s2 sw dash"/>
+    </svg>`,
+            options: ['10', '5', '8', '12'],
+            answer: 0,
+            explain: 'Zamalowanych jest 5 kratek. Po drugiej stronie osi pojawi się tyle samo: 5 + 5 = 10.',
+          },
+          {
+            id: '562a8e',
+            q: 'Prawda czy fałsz?\nPrzerywana linia na rysunku jest osią symetrii prostokąta.',
+            svg: `<svg viewBox="0 0 340 170" role="img" aria-label="Prostokąt dłuższy niż wyższy. Przerywana linia biegnie po przekątnej, z lewego dolnego do prawego górnego rogu.">
+      <rect x="60" y="30" width="220" height="110" class="f4 s4 sw"/>
+      <line x1="60" y1="140" x2="280" y2="30" class="ln s2 sw dash"/>
+    </svg>`,
+            options: ['Prawda', 'Fałsz'],
+            noShuffle: true,
+            answer: 1,
+            explain: 'To przekątna. Jeśli złożysz prostokąt (niebędący kwadratem) po przekątnej, rogi nie spotkają się – połowy się nie pokryją.',
+          },
+          { id: 'rib7zz', q: 'Prawda czy fałsz?\nKażda prosta przechodząca przez środek koła jest jego osią symetrii.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Koło złożone wzdłuż dowolnej średnicy daje dwie jednakowe połówki.' },
+          { id: 'meqncu', q: 'Prawda czy fałsz?\nPunkt leżący na osi symetrii po odbiciu zostaje w tym samym miejscu.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Jego odległość od osi to 0 kratek, więc obraz to ten sam punkt.' },
+          { id: 'iec2j4', q: 'Prawda czy fałsz?\nRównoległobok, który nie jest ani prostokątem, ani rombem, ma oś symetrii.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Taki „przekrzywiony” równoległobok nie ma żadnej osi symetrii – żadne złożenie nie da dwóch pokrywających się połówek.' },
         ],
       },
 

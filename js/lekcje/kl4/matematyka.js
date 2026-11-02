@@ -1103,3 +1103,320 @@ window.LESSONS['matematyka/bryly'] = [
     check: { q: 'Z ilu kwadratów składa się siatka sześcianu?', options: ['4', '6', '8'], answer: 1, explain: 'Sześcian ma 6 ścian, więc jego siatka ma 6 kwadratów.' },
   },
 ];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['matematyka/skala'] = [
+  {
+    title: 'Po co jest skala?',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Plan pokoju: prostokąt 5 cm na 3 cm. Strzałka razy 100 prowadzi do napisu: pokój naprawdę 5 m na 3 m. Skala 1 : 100.">
+      <defs><marker id="a-mat-skala-1" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <text x="105" y="38" class="tx-b" text-anchor="middle">plan</text>
+      <rect x="30" y="50" width="150" height="90" class="f1 s1 sw"/>
+      <text x="105" y="162" class="tx" text-anchor="middle">5 cm</text>
+      <text x="105" y="100" class="tx" text-anchor="middle">3 cm × 5 cm</text>
+      <path d="M195,95 L245,95" class="ln" marker-end="url(#a-mat-skala-1)"/>
+      <text x="220" y="84" class="tx-b t2" text-anchor="middle">· 100</text>
+      <text x="320" y="82" class="tx-s" text-anchor="middle">pokój naprawdę:</text>
+      <text x="320" y="107" class="tx-b" text-anchor="middle">5 m × 3 m</text>
+      <text x="200" y="190" class="tx-b t1" text-anchor="middle">skala 1 : 100</text>
+    </svg>`,
+    text: `<p>Pokój, boisko czy całe miasto nie zmieszczą się na kartce. Dlatego rysujemy je <b>pomniejszone</b>. <b>Skala</b> mówi, ile razy.</p>
+      <p>Skala <b>1 : 100</b> znaczy: wszystko jest 100 razy mniejsze. 1 cm na planie to 100 cm, czyli <b>1 m</b> naprawdę.</p>`,
+    remember: '1 : 100 → 1 cm na planie = 1 m naprawdę. 1 : 1000 → 1 cm = 10 m. 1 : 100 000 → 1 cm = 1 km.',
+    hook: 'Pierwsza liczba to plan, druga – rzeczywistość: „1 : 100” = „1 na planie, 100 naprawdę”.',
+  },
+  {
+    title: 'Z planu do rzeczywistości – mnożysz',
+    svg: `<svg viewBox="0 0 400 160" role="img" aria-label="Skala 1 : 1000. 4 cm na planie razy 1000 to 4000 cm, a 4000 cm podzielone przez 100 to 40 m w terenie.">
+      <defs><marker id="a-mat-skala-2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <text x="200" y="24" class="tx-b t1" text-anchor="middle">skala 1 : 1000</text>
+      <rect x="10" y="68" width="80" height="50" rx="8" class="f1 s1"/>
+      <rect x="140" y="68" width="110" height="50" rx="8" class="f4 s4"/>
+      <rect x="300" y="68" width="90" height="50" rx="8" class="f3 s3"/>
+      <text x="50" y="99" class="tx-b" text-anchor="middle">4 cm</text>
+      <text x="195" y="99" class="tx-b" text-anchor="middle">4000 cm</text>
+      <text x="345" y="99" class="tx-b" text-anchor="middle">40 m</text>
+      <path d="M94,93 L136,93" class="ln" marker-end="url(#a-mat-skala-2)"/>
+      <path d="M254,93 L296,93" class="ln" marker-end="url(#a-mat-skala-2)"/>
+      <text x="115" y="58" class="tx t2" text-anchor="middle">· 1000</text>
+      <text x="275" y="58" class="tx t2" text-anchor="middle">: 100</text>
+      <g class="tx-s" text-anchor="middle"><text x="50" y="140">na planie</text><text x="195" y="140">w rzeczywistości</text><text x="345" y="140">w metrach</text></g>
+    </svg>`,
+    text: `<p>Znasz długość na planie i chcesz wiedzieć, ile to naprawdę? <b>Pomnóż</b> ją przez liczbę ze skali. Wynik wyjdzie w tych samych jednostkach (cm), więc na koniec zamień je na metry albo kilometry.</p>
+      <p>Skala 1 : 1000, ścieżka na planie 4 cm: 4 cm · 1000 = 4000 cm = <b>40 m</b>.</p>`,
+    remember: 'Plan → rzeczywistość: długość na planie · liczba ze skali, potem zamiana jednostek.',
+    check: { q: 'Plan ma skalę 1 : 100. Stół ma na nim 3 cm. Ile ma naprawdę?', options: ['30 cm', '3 m', '30 m'], answer: 1, explain: '3 cm · 100 = 300 cm = 3 m.' },
+  },
+  {
+    title: 'Z rzeczywistości na plan – dzielisz',
+    svg: `<svg viewBox="0 0 400 160" role="img" aria-label="Skala 1 : 1000. Boisko 40 m to 4000 cm. 4000 cm podzielone przez 1000 to 4 cm na planie.">
+      <defs><marker id="a-mat-skala-3" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <text x="200" y="24" class="tx-b t1" text-anchor="middle">skala 1 : 1000</text>
+      <rect x="10" y="68" width="80" height="50" rx="8" class="f3 s3"/>
+      <rect x="140" y="68" width="110" height="50" rx="8" class="f4 s4"/>
+      <rect x="300" y="68" width="90" height="50" rx="8" class="f1 s1"/>
+      <text x="50" y="99" class="tx-b" text-anchor="middle">40 m</text>
+      <text x="195" y="99" class="tx-b" text-anchor="middle">4000 cm</text>
+      <text x="345" y="99" class="tx-b" text-anchor="middle">4 cm</text>
+      <path d="M94,93 L136,93" class="ln" marker-end="url(#a-mat-skala-3)"/>
+      <path d="M254,93 L296,93" class="ln" marker-end="url(#a-mat-skala-3)"/>
+      <text x="115" y="58" class="tx t2" text-anchor="middle">· 100</text>
+      <text x="275" y="58" class="tx t2" text-anchor="middle">: 1000</text>
+      <g class="tx-s" text-anchor="middle"><text x="50" y="140">naprawdę</text><text x="195" y="140">w centymetrach</text><text x="345" y="140">na planie</text></g>
+    </svg>`,
+    text: `<p>Teraz odwrotnie: znasz prawdziwą długość i chcesz ją narysować. Najpierw zamień ją na <b>centymetry</b>, potem <b>podziel</b> przez liczbę ze skali.</p>
+      <p>Boisko ma 40 m, plan 1 : 1000: 40 m = 4000 cm, 4000 cm : 1000 = <b>4 cm</b>.</p>`,
+    remember: 'Rzeczywistość → plan: zamień na cm i podziel przez liczbę ze skali.',
+    hook: 'Na plan wszystko się „kurczy” – więc dzielisz. Z planu wszystko „rośnie” – więc mnożysz.',
+    check: { q: 'Pokój ma 6 m długości. Ile będzie miał na planie w skali 1 : 100?', options: ['6 cm', '60 cm', '6 mm'], answer: 0, explain: '6 m = 600 cm, 600 cm : 100 = 6 cm.' },
+  },
+  {
+    title: 'Trzy zapisy tej samej skali',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Trzy zapisy tej samej skali: liczbowa 1 : 10 000, mianowana 1 cm – 100 m, liniowa – podziałka z działkami 0, 100, 200, 300, 400 m.">
+      <g class="tx-s"><text x="15" y="45">liczbowa</text><text x="15" y="95">mianowana</text><text x="15" y="150">liniowa</text></g>
+      <text x="140" y="45" class="tx-b">1 : 10 000</text>
+      <text x="140" y="95" class="tx-b">1 cm – 100 m</text>
+      <rect x="140" y="140" width="60" height="14" class="f1 s1"/><rect x="200" y="140" width="60" height="14" class="bg ln"/>
+      <rect x="260" y="140" width="60" height="14" class="f1 s1"/><rect x="320" y="140" width="60" height="14" class="bg ln"/>
+      <g class="tx-s" text-anchor="middle"><text x="140" y="132">0</text><text x="200" y="132">100</text><text x="260" y="132">200</text><text x="320" y="132">300</text><text x="380" y="132">400 m</text></g>
+      <text x="260" y="178" class="tx-s" text-anchor="middle">1 działka = 1 cm</text>
+      <line x1="10" y1="65" x2="390" y2="65" class="ln-thin"/><line x1="10" y1="115" x2="390" y2="115" class="ln-thin"/>
+    </svg>`,
+    text: `<ul>
+      <li><b>Liczbowa</b>: 1 : 10 000.</li>
+      <li><b>Mianowana</b> – z jednostkami: 1 cm – 100 m. Od razu widać, ile to metrów.</li>
+      <li><b>Liniowa</b> (podziałka): odcinek z działkami. Mierzysz odległość linijką albo paskiem papieru i przykładasz do podziałki.</li>
+    </ul>
+    <p>To ta sama skala, bo 100 m = 10 000 cm.</p>`,
+    remember: 'Żeby zamienić skalę liczbową na mianowaną, zamień drugą liczbę (w cm) na m albo km.',
+    hook: 'Mianowana = „z mianem”, czyli z jednostką, tak jak w wyrażeniach dwumianowanych (2 m 30 cm).',
+    check: { q: 'Skala 1 : 1000 jako skala mianowana to…', options: ['1 cm – 1 m', '1 cm – 10 m', '1 cm – 1 km'], answer: 1, explain: '1000 cm = 10 m.' },
+  },
+  {
+    title: 'Pułapki i powiększenie',
+    svg: `<svg viewBox="0 0 400 185" role="img" aria-label="Po lewej skala 1 : 100: duży prostokąt naprawdę i mały na planie – zmniejszenie. Po prawej skala 2 : 1: mała biedronka naprawdę i dwa razy większa na rysunku – powiększenie.">
+      <line x1="200" y1="10" x2="200" y2="175" class="ln-thin"/>
+      <text x="100" y="30" class="tx-b t1" text-anchor="middle">1 : 100</text>
+      <rect x="20" y="50" width="110" height="70" class="f3 s3 sw"/>
+      <rect x="150" y="95" width="30" height="20" class="f3 s3 sw"/>
+      <g class="tx-s" text-anchor="middle"><text x="75" y="140">naprawdę</text><text x="165" y="140">plan</text></g>
+      <text x="100" y="170" class="tx" text-anchor="middle">zmniejszenie</text>
+      <text x="300" y="30" class="tx-b t2" text-anchor="middle">2 : 1</text>
+      <circle cx="240" cy="100" r="15" class="f2 s2 sw"/><line x1="240" y1="85" x2="240" y2="115" class="ln"/>
+      <circle cx="330" cy="90" r="30" class="f2 s2 sw"/><line x1="330" y1="60" x2="330" y2="120" class="ln"/>
+      <g class="tx-s" text-anchor="middle"><text x="240" y="140">naprawdę</text><text x="330" y="140">rysunek</text></g>
+      <text x="300" y="170" class="tx" text-anchor="middle">powiększenie</text>
+    </svg>`,
+    text: `<ul>
+      <li><b>Pułapka 1:</b> zapomniana zamiana jednostek. W skali 1 : 100 jeden centymetr to 100 cm = 1 m, a nie 100 m.</li>
+      <li><b>Pułapka 2:</b> pomylone działanie. Z planu do rzeczywistości – mnożysz, z rzeczywistości na plan – dzielisz.</li>
+      <li><b>Powiększenie:</b> skala 2 : 1 znaczy, że rysunek jest 2 razy większy niż rzecz. Tak rysuje się małe owady albo części maszyn.</li>
+    </ul>`,
+    remember: 'Mniejsza liczba po prawej (2 : 1) – powiększenie. Większa liczba po prawej (1 : 100) – zmniejszenie.',
+    check: { q: 'Biedronkę narysowano w skali 2 : 1. Na rysunku ma 2 cm. Ile ma naprawdę?', options: ['4 cm', '1 cm', '2 cm'], answer: 1, explain: 'Rysunek jest 2 razy większy: 2 cm : 2 = 1 cm.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['matematyka/trojkaty-czworokaty'] = [
+  {
+    title: 'Trójkąty – patrzymy na kąty',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Trzy trójkąty: ostrokątny ze wszystkimi kątami ostrymi, prostokątny z zaznaczonym kątem prostym, rozwartokątny z jednym kątem rozwartym.">
+      <path d="M25,150 L115,150 L75,40 Z" class="f1 s1 sw"/>
+      <path d="M155,150 L245,150 L155,50 Z" class="f3 s3 sw"/>
+      <path d="M155,136 L169,136 L169,150" class="ln"/>
+      <path d="M290,150 L390,150 L270,95 Z" class="f2 s2 sw"/>
+      <g class="tx" text-anchor="middle"><text x="70" y="182">ostrokątny</text><text x="200" y="182">prostokątny</text><text x="330" y="182">rozwartokątny</text></g>
+    </svg>`,
+    text: `<p>Trójkąty dzielimy według ich <b>kątów</b>:</p>
+      <ul>
+        <li><b>ostrokątny</b> – wszystkie 3 kąty ostre (mniejsze od prostego),</li>
+        <li><b>prostokątny</b> – jeden kąt prosty,</li>
+        <li><b>rozwartokątny</b> – jeden kąt rozwarty (większy od prostego).</li>
+      </ul>
+      <p>Dwóch kątów prostych trójkąt mieć nie może – jego boki nie spotkałyby się w trzecim wierzchołku.</p>`,
+    remember: 'Nazwa mówi, jaki jest „najważniejszy” kąt: prosty → prostokątny, rozwarty → rozwartokątny, same ostre → ostrokątny.',
+    hook: 'Sprawdzaj kąty rogiem kartki – to kąt prosty. Kąt mieści się pod rogiem? Ostry. Wystaje? Rozwarty.',
+    check: { q: 'Trójkąt ma kąt 120°. Jaki to trójkąt?', options: ['ostrokątny', 'prostokątny', 'rozwartokątny'], answer: 2, explain: '120° to więcej niż 90°, więc kąt jest rozwarty.' },
+  },
+  {
+    title: 'Trójkąty – patrzymy na boki',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Trzy trójkąty: różnoboczny – boki różnej długości; równoramienny – dwa boki zaznaczone kreską, podpisana podstawa; równoboczny – wszystkie trzy boki zaznaczone kreską.">
+      <path d="M20,150 L120,150 L45,70 Z" class="f5 s5 sw"/>
+      <path d="M150,150 L250,150 L200,50 Z" class="f4 s4 sw"/>
+      <path d="M168.7,96.9 L181.3,103.1 M218.7,103.1 L231.3,96.9" class="ln"/>
+      <path d="M280,150 L380,150 L330,63.4 Z" class="f1 s1 sw"/>
+      <path d="M330,143 L330,157 M298.9,103.2 L311.1,110.2 M348.9,110.2 L361.1,103.2" class="ln"/>
+      <text x="200" y="168" class="tx-s" text-anchor="middle">podstawa</text>
+      <g class="tx" text-anchor="middle"><text x="70" y="192">różnoboczny</text><text x="200" y="192">równoramienny</text><text x="330" y="192">równoboczny</text></g>
+    </svg>`,
+    text: `<p>Według <b>boków</b>:</p>
+      <ul>
+        <li><b>różnoboczny</b> – każdy bok inny,</li>
+        <li><b>równoramienny</b> – dwa boki równe; to <b>ramiona</b>, a trzeci bok to <b>podstawa</b>,</li>
+        <li><b>równoboczny</b> – wszystkie 3 boki równe.</li>
+      </ul>
+      <p>Równe boki zaznaczamy na rysunku takimi samymi kreseczkami.</p>`,
+    remember: 'Równoboczny = 3 równe boki. Równoramienny = 2 równe ramiona + podstawa.',
+    hook: 'Trójkąt równoramienny jest jak dach domu: dwa jednakowe skosy (ramiona) i belka na dole (podstawa).',
+  },
+  {
+    title: 'Rodzina czworokątów',
+    svg: `<svg viewBox="0 0 400 240" role="img" aria-label="Pięć czworokątów: kwadrat, prostokąt, romb, równoległobok i trapez.">
+      <rect x="20" y="20" width="70" height="70" class="f1 s1 sw"/>
+      <rect x="130" y="30" width="110" height="60" class="f3 s3 sw"/>
+      <path d="M330,10 L360,55 L330,100 L300,55 Z" class="f2 s2 sw"/>
+      <path d="M30,210 L150,210 L180,150 L60,150 Z" class="f5 s5 sw"/>
+      <path d="M230,210 L370,210 L330,150 L260,150 Z" class="f4 s4 sw"/>
+      <g class="tx" text-anchor="middle"><text x="55" y="114">kwadrat</text><text x="185" y="114">prostokąt</text><text x="330" y="122">romb</text><text x="105" y="232">równoległobok</text><text x="300" y="232">trapez</text></g>
+    </svg>`,
+    text: `<ul>
+      <li><b>Kwadrat</b> – 4 równe boki i 4 kąty proste.</li>
+      <li><b>Prostokąt</b> – 4 kąty proste, przeciwległe boki równe.</li>
+      <li><b>Romb</b> – 4 równe boki, ale kąty nie muszą być proste (jak „przekrzywiony kwadrat”).</li>
+      <li><b>Równoległobok</b> – dwie pary boków równoległych (jak „przekrzywiony prostokąt”).</li>
+      <li><b>Trapez</b> – co najmniej jedna para boków równoległych.</li>
+    </ul>`,
+    remember: 'Kwadrat jest i prostokątem, i rombem. Prostokąt i romb są równoległobokami.',
+    hook: 'Wciśnij z boku pudełko po pizzy (kwadrat) – wyjdzie romb. Wciśnij pudełko po butach (prostokąt) – wyjdzie równoległobok.',
+    check: { q: 'Czworokąt ma 4 kąty proste, ale nie wszystkie boki równe. To…', options: ['kwadrat', 'prostokąt', 'romb'], answer: 1, explain: 'Kąty proste ma prostokąt i kwadrat, ale kwadrat ma wszystkie boki równe.' },
+  },
+  {
+    title: 'Trapez: podstawy i ramiona',
+    svg: `<svg viewBox="0 0 400 215" role="img" aria-label="Trapez równoramienny z podpisanymi podstawami (górny i dolny bok) i ramionami (boki ukośne) oraz trapez prostokątny z dwoma kątami prostymi przy lewym boku.">
+      <path d="M20,160 L200,160 L160,70 L60,70 Z" class="f4 s4 sw"/>
+      <text x="110" y="60" class="tx-s" text-anchor="middle">podstawa</text>
+      <text x="110" y="180" class="tx-s" text-anchor="middle">podstawa</text>
+      <text x="56" y="124" class="tx-s">ramię</text>
+      <text x="164" y="124" class="tx-s" text-anchor="end">ramię</text>
+      <path d="M240,160 L390,160 L330,70 L240,70 Z" class="f3 s3 sw"/>
+      <path d="M240,84 L254,84 L254,70 M240,146 L254,146 L254,160" class="ln"/>
+      <g class="tx" text-anchor="middle"><text x="110" y="205">trapez równoramienny</text><text x="315" y="205">trapez prostokątny</text></g>
+    </svg>`,
+    text: `<p>W trapezie boki <b>równoległe</b> to <b>podstawy</b>, a dwa pozostałe boki to <b>ramiona</b>.</p>
+      <ul>
+        <li><b>Trapez równoramienny</b> – ramiona mają równą długość (jak wiadro z boku).</li>
+        <li><b>Trapez prostokątny</b> – jedno ramię jest prostopadłe do podstaw, więc są w nim kąty proste.</li>
+      </ul>`,
+    remember: 'Podstawy trapezu są równoległe. Ramiona – to dwa pozostałe boki.',
+    hook: 'Podstawy „podpierają” trapez z góry i z dołu – jak blat i podłoga. Ramiona są po bokach – jak twoje ręce.',
+    check: { q: 'Trapez ma ramiona po 5 cm. Jaki to trapez?', options: ['prostokątny', 'równoramienny', 'równoboczny'], answer: 1, explain: 'Równe ramiona – trapez równoramienny.' },
+  },
+  {
+    title: 'Obwód – dodaj wszystkie boki',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Trójkąt równoramienny o ramionach 7 cm i podstawie 4 cm: obwód 7 + 7 + 4 = 18 cm. Romb o boku 5 cm: obwód 4 · 5 = 20 cm.">
+      <path d="M30,160 L130,160 L80,40 Z" class="f4 s4 sw"/>
+      <text x="80" y="178" class="tx" text-anchor="middle">4 cm</text>
+      <text x="48" y="96" class="tx" text-anchor="end">7 cm</text>
+      <text x="112" y="96" class="tx">7 cm</text>
+      <text x="80" y="202" class="tx-b" text-anchor="middle">7 + 7 + 4 = 18 cm</text>
+      <path d="M280,40 L330,100 L280,160 L230,100 Z" class="f2 s2 sw"/>
+      <text x="312" y="62" class="tx">5 cm</text>
+      <text x="280" y="202" class="tx-b" text-anchor="middle">4 · 5 = 20 cm</text>
+    </svg>`,
+    text: `<p><b>Obwód</b> to suma długości wszystkich boków. Równe boki możesz policzyć mnożeniem:</p>
+      <ul>
+        <li>trójkąt równoboczny o boku a: <b>3 · a</b>,</li>
+        <li>romb i kwadrat o boku a: <b>4 · a</b>,</li>
+        <li>równoległobok i prostokąt o bokach a i b: <b>2 · a + 2 · b</b>.</li>
+      </ul>`,
+    remember: 'Obwód podajesz w jednostkach długości (cm, m), nie w cm².',
+    check: { q: 'Równoległobok ma boki 6 cm i 4 cm. Jaki ma obwód?', options: ['10 cm', '20 cm', '24 cm'], answer: 1, explain: '2 · 6 + 2 · 4 = 12 + 8 = 20 cm.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['matematyka/symetria'] = [
+  {
+    title: 'Złóż na pół – symetria',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Motyl z przerywaną pionową osią symetrii przez środek. Lewe skrzydła są odbiciem prawych.">
+      <path d="M200,100 C150,30 90,40 110,100 C90,150 150,170 200,110 Z" class="f2 s2 sw"/>
+      <path d="M200,100 C250,30 310,40 290,100 C310,150 250,170 200,110 Z" class="f2 s2 sw"/>
+      <circle cx="140" cy="85" r="10" class="f5 s5"/><circle cx="260" cy="85" r="10" class="f5 s5"/>
+      <ellipse cx="200" cy="105" rx="6" ry="40" class="f4 s4"/>
+      <line x1="200" y1="10" x2="200" y2="190" class="ln s1 sw dash"/>
+      <text x="210" y="186" class="tx-s">oś symetrii</text>
+    </svg>`,
+    text: `<p>Złóż motyla wzdłuż przerywanej linii – lewe skrzydła dokładnie przykryją prawe. Taka figura jest <b>osiowosymetryczna</b>, a linia złożenia to <b>oś symetrii</b>.</p>
+      <p>Symetrię widać w liściach, płatkach kwiatów, w literze A, a nawet w twojej twarzy (prawie).</p>`,
+    remember: 'Oś symetrii to prosta, wzdłuż której złożona figura daje dwie pokrywające się połowy.',
+    hook: 'Oś symetrii działa jak lustro: to, co po jednej stronie, odbija się po drugiej.',
+  },
+  {
+    title: 'Ile osi ma figura?',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Kwadrat z czterema osiami symetrii, prostokąt z dwiema osiami, trójkąt równoboczny z trzema osiami.">
+      <rect x="20" y="50" width="100" height="100" class="f1 s1 sw"/>
+      <g class="ln s2 dash"><line x1="70" y1="40" x2="70" y2="160"/><line x1="10" y1="100" x2="130" y2="100"/><line x1="15" y1="45" x2="125" y2="155"/><line x1="125" y1="45" x2="15" y2="155"/></g>
+      <rect x="150" y="65" width="120" height="70" class="f3 s3 sw"/>
+      <g class="ln s2 dash"><line x1="210" y1="50" x2="210" y2="150"/><line x1="140" y1="100" x2="280" y2="100"/></g>
+      <path d="M290,150 L390,150 L340,63.4 Z" class="f4 s4 sw"/>
+      <g class="ln s2 dash"><line x1="340" y1="55" x2="340" y2="160"/><line x1="282.5" y1="154.3" x2="372.5" y2="102.4"/><line x1="397.5" y1="154.3" x2="307.5" y2="102.4"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="70" y="188">4 osie</text><text x="210" y="188">2 osie</text><text x="340" y="188">3 osie</text></g>
+    </svg>`,
+    text: `<ul>
+      <li><b>Kwadrat</b> – 4 osie: pionowa, pozioma i dwie po przekątnych.</li>
+      <li><b>Prostokąt</b> (niebędący kwadratem) – 2 osie: pionowa i pozioma.</li>
+      <li><b>Trójkąt równoboczny</b> – 3 osie, każda od wierzchołka do środka przeciwległego boku.</li>
+      <li><b>Koło</b> – nieskończenie wiele: każda prosta przez środek.</li>
+      <li><b>Trójkąt różnoboczny</b> – żadnej.</li>
+    </ul>`,
+    remember: 'Kwadrat 4, trójkąt równoboczny 3, prostokąt 2, trójkąt równoramienny 1, koło – nieskończenie wiele.',
+    check: { q: 'Ile osi symetrii ma trójkąt równoboczny?', options: ['1', '3', '6'], answer: 1, explain: 'Trzy – po jednej przez każdy wierzchołek.' },
+  },
+  {
+    title: 'Pułapka: przekątna prostokąta',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Po lewej prostokąt z przekątną i zaznaczonym miejscem, gdzie trafi róg po złożeniu – wystaje poza prostokąt, więc przekątna nie jest osią. Po prawej prostokąt z pionową osią – połowy się pokrywają.">
+      <text x="110" y="30" class="tx-s" text-anchor="middle">✗ przekątna – nie oś</text>
+      <rect x="40" y="60" width="140" height="80" class="f4 s4 sw"/>
+      <line x1="40" y1="140" x2="180" y2="60" class="ln s2 sw dash"/>
+      <path d="M40,140 L108.9,180.6 L180,60" class="ln dash"/>
+      <circle cx="108.9" cy="180.6" r="5" class="t2"/>
+      <text x="310" y="30" class="tx-s" text-anchor="middle">✓ oś symetrii</text>
+      <rect x="240" y="60" width="140" height="80" class="f3 s3 sw"/>
+      <line x1="310" y1="45" x2="310" y2="155" class="ln s2 sw dash"/>
+    </svg>`,
+    text: `<p>Wydaje się, że przekątna dzieli prostokąt na dwie równe części – i to prawda, ale to jeszcze nie symetria! Złóż prostokątną kartkę po przekątnej: róg wystaje poza kartkę, połowy się <b>nie pokrywają</b>.</p>
+      <p>Prostokąt (niebędący kwadratem) ma tylko 2 osie: pionową i poziomą. Przekątne są osiami symetrii tylko w kwadracie.</p>`,
+    remember: 'Dwie równe części to nie zawsze symetria – połowy muszą się pokryć po złożeniu.',
+    hook: 'Sprawdź na kartce z zeszytu: złóż ją po przekątnej i zobacz, jak róg „ucieka”.',
+    check: { q: 'Czy przekątna prostokąta 6 cm × 3 cm jest jego osią symetrii?', options: ['tak', 'nie'], answer: 1, explain: 'Ten prostokąt nie jest kwadratem, więc jego przekątne nie są osiami symetrii.' },
+  },
+  {
+    title: 'Symetryczne litery',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Litera A z pionową osią symetrii, litera H z dwiema osiami – pionową i poziomą, litera N bez osi symetrii.">
+      <path d="M40,160 L80,40 L120,160 M55,115 L105,115" class="ln sw"/>
+      <line x1="80" y1="28" x2="80" y2="172" class="ln s2 dash"/>
+      <path d="M170,40 L170,160 M250,40 L250,160 M170,100 L250,100" class="ln sw"/>
+      <g class="ln s2 dash"><line x1="210" y1="28" x2="210" y2="172"/><line x1="155" y1="100" x2="265" y2="100"/></g>
+      <path d="M300,160 L300,40 L370,160 L370,40" class="ln sw"/>
+      <g class="tx-b" text-anchor="middle"><text x="80" y="194">1 oś</text><text x="210" y="194">2 osie</text><text x="335" y="194">brak osi</text></g>
+    </svg>`,
+    text: `<p>Litery też mogą być symetryczne (patrzymy na zwykłe, drukowane wielkie litery):</p>
+      <ul>
+        <li><b>A</b>, <b>T</b>, <b>M</b> – pionowa oś,</li>
+        <li><b>H</b> – dwie osie: pionowa i pozioma,</li>
+        <li><b>N</b>, <b>S</b>, <b>Z</b> – żadnej osi.</li>
+      </ul>`,
+    hook: 'Postaw literę przed lusterkiem ustawionym na jej środku. Jeśli z odbiciem wygląda tak samo – lusterko stoi na osi symetrii.',
+    check: { q: 'Która litera nie ma osi symetrii?', options: ['T', 'N', 'H'], answer: 1, explain: 'N nie da się złożyć na dwie pokrywające się połowy. T ma pionową oś, H – dwie osie.' },
+  },
+  {
+    title: 'Dorysuj drugą połowę',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Kratka z pionową osią. Po lewej trójkąt ABC, po prawej jego odbicie A′B′C′. Wierzchołek A jest 4 kratki na lewo od osi, A′ – 4 kratki na prawo.">
+      <g class="ln-thin"><line x1="20" y1="20" x2="20" y2="170"/><line x1="50" y1="20" x2="50" y2="170"/><line x1="80" y1="20" x2="80" y2="170"/><line x1="110" y1="20" x2="110" y2="170"/><line x1="140" y1="20" x2="140" y2="170"/><line x1="170" y1="20" x2="170" y2="170"/><line x1="200" y1="20" x2="200" y2="170"/><line x1="230" y1="20" x2="230" y2="170"/><line x1="260" y1="20" x2="260" y2="170"/><line x1="290" y1="20" x2="290" y2="170"/><line x1="320" y1="20" x2="320" y2="170"/><line x1="350" y1="20" x2="350" y2="170"/><line x1="380" y1="20" x2="380" y2="170"/><line x1="20" y1="20" x2="380" y2="20"/><line x1="20" y1="50" x2="380" y2="50"/><line x1="20" y1="80" x2="380" y2="80"/><line x1="20" y1="110" x2="380" y2="110"/><line x1="20" y1="140" x2="380" y2="140"/><line x1="20" y1="170" x2="380" y2="170"/></g>
+      <path d="M80,140 L170,140 L170,80 Z" class="f1 s1 sw"/>
+      <path d="M320,140 L230,140 L230,80 Z" class="f3 s3 sw"/>
+      <line x1="200" y1="10" x2="200" y2="180" class="ln s2 sw dash"/>
+      <g class="tx-b"><text x="64" y="134" text-anchor="end">A</text><text x="336" y="134">A′</text><text x="176" y="74">C</text><text x="224" y="74" text-anchor="end">C′</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="140" y="190">4 kratki</text><text x="260" y="190">4 kratki</text></g>
+    </svg>`,
+    text: `<p>Jak dorysować figurę symetryczną na kratce?</p>
+      <ul>
+        <li>Weź jeden wierzchołek i policz, ile kratek dzieli go od osi.</li>
+        <li>Odlicz tyle samo kratek <b>po drugiej stronie</b> osi, w tej samej linii (prostopadle do osi). Tam jest obraz wierzchołka.</li>
+        <li>Zrób tak z każdym wierzchołkiem i połącz punkty.</li>
+      </ul>`,
+    remember: 'Obraz punktu: po drugiej stronie osi, w tej samej odległości, na tej samej linii prostopadłej do osi.',
+    check: { q: 'Punkt leży 2 kratki na prawo od pionowej osi. Gdzie jest jego obraz?', options: ['4 kratki na lewo od osi', '2 kratki na lewo od osi', 'na osi'], answer: 1, explain: 'Tyle samo kratek, ale po drugiej stronie osi.' },
+  },
+];
