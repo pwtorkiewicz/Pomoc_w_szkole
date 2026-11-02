@@ -1380,3 +1380,178 @@ window.LESSONS['angielski/w-miescie'] = [
     check: { q: 'Mama pyta: „Is Tom sleeping?”. Tom śpi. Co odpowiesz?', options: ['Yes, he is.', 'Yes, he does.', 'Yes, he sleeping.'], answer: 0, explain: 'Pytanie zaczyna się od „Is”, więc odpowiadamy „Yes, he is.”.' },
   },
 ];
+
+window.LESSONS['angielski/kultura'] = [
+  {
+    title: 'Gdzie mówi się po angielsku? Cztery flagi',
+    svg: `<svg viewBox="0 0 400 236" role="img" aria-label="Uproszczone flagi: Wielka Brytania – granatowa z białymi i czerwonymi krzyżami; USA – czerwono-białe pasy i granatowe pole z gwiazdami; Irlandia – pasy zielony, biały, pomarańczowy; Kanada – czerwony liść klonu na białym polu między czerwonymi pasami">
+      <defs><clipPath id="kl-kult-uk"><rect width="120" height="60"/></clipPath></defs>
+      <g transform="translate(40,14)">
+        <g clip-path="url(#kl-kult-uk)">
+          <rect width="120" height="60" class="fl-b"/>
+          <path d="M0,0 L120,60 M120,0 L0,60" class="fl-ws" stroke-width="12"/>
+          <path d="M0,0 L120,60 M120,0 L0,60" class="fl-rs" stroke-width="4"/>
+          <path d="M60,0 V60 M0,30 H120" class="fl-ws" stroke-width="20"/>
+          <path d="M60,0 V60 M0,30 H120" class="fl-rs" stroke-width="12"/>
+        </g>
+        <rect width="120" height="60" class="ln"/>
+      </g>
+      <g transform="translate(240,14)">
+        <rect width="120" height="60" class="fl-w"/>
+        <g class="fl-r"><rect y="0" width="120" height="4.6"/><rect y="9.23" width="120" height="4.6"/><rect y="18.46" width="120" height="4.6"/><rect y="27.69" width="120" height="4.6"/><rect y="36.92" width="120" height="4.6"/><rect y="46.15" width="120" height="4.6"/><rect y="55.38" width="120" height="4.62"/></g>
+        <rect width="50" height="32.3" class="fl-b"/>
+        <g class="fl-w"><circle cx="6" cy="5" r="1.8"/><circle cx="16" cy="5" r="1.8"/><circle cx="26" cy="5" r="1.8"/><circle cx="36" cy="5" r="1.8"/><circle cx="46" cy="5" r="1.8"/><circle cx="6" cy="12.5" r="1.8"/><circle cx="16" cy="12.5" r="1.8"/><circle cx="26" cy="12.5" r="1.8"/><circle cx="36" cy="12.5" r="1.8"/><circle cx="46" cy="12.5" r="1.8"/><circle cx="6" cy="20" r="1.8"/><circle cx="16" cy="20" r="1.8"/><circle cx="26" cy="20" r="1.8"/><circle cx="36" cy="20" r="1.8"/><circle cx="46" cy="20" r="1.8"/><circle cx="6" cy="27.5" r="1.8"/><circle cx="16" cy="27.5" r="1.8"/><circle cx="26" cy="27.5" r="1.8"/><circle cx="36" cy="27.5" r="1.8"/><circle cx="46" cy="27.5" r="1.8"/></g>
+        <rect width="120" height="60" class="ln"/>
+      </g>
+      <g transform="translate(40,126)">
+        <rect width="40" height="60" class="fl-g"/><rect x="40" width="40" height="60" class="fl-w"/><rect x="80" width="40" height="60" class="fl-o"/>
+        <rect width="120" height="60" class="ln"/>
+      </g>
+      <g transform="translate(240,126)">
+        <rect width="30" height="60" class="fl-r"/><rect x="30" width="60" height="60" class="fl-w"/><rect x="90" width="30" height="60" class="fl-r"/>
+        <path d="M60,14 L64,22 L70,19 L68,30 L76,27 L72,34 L74,38 L62,36 L62,46 L58,46 L58,36 L46,38 L48,34 L44,27 L52,30 L50,19 L56,22 Z" class="fl-r"/>
+        <rect width="120" height="60" class="ln"/>
+      </g>
+      <text x="100" y="96" class="tx-b" text-anchor="middle">the UK</text>
+      <text x="100" y="113" class="tx-s" text-anchor="middle">Wielka Brytania</text>
+      <text x="300" y="96" class="tx-b" text-anchor="middle">the USA</text>
+      <text x="300" y="113" class="tx-s" text-anchor="middle">Stany Zjednoczone</text>
+      <text x="100" y="208" class="tx-b" text-anchor="middle">Ireland</text>
+      <text x="100" y="225" class="tx-s" text-anchor="middle">Irlandia</text>
+      <text x="300" y="208" class="tx-b" text-anchor="middle">Canada</text>
+      <text x="300" y="225" class="tx-s" text-anchor="middle">Kanada</text>
+    </svg>`,
+    text: `<p>Po angielsku mówi się m.in. w Wielkiej Brytanii, Irlandii, Stanach Zjednoczonych, Kanadzie i Australii. Poznasz ich święta, symbole i zwyczaje – i porównasz je z polskimi.</p>
+      <p>Flaga Wielkiej Brytanii (<b lang="en">Union Jack</b>) łączy trzy krzyże: Anglii, Szkocji i Irlandii. Flaga USA (<b lang="en">Stars and Stripes</b>) ma <b>50 gwiazd</b> – po jednej na każdy stan – i <b>13 pasów</b>: tyle było dawnych kolonii, które ogłosiły niepodległość. Kanadę rozpoznasz po czerwonym <b>liściu klonu</b>.</p>`,
+    remember: 'Flaga USA: 50 gwiazd = 50 stanów, 13 pasów = 13 dawnych kolonii. Irlandia: zielony, biały, pomarańczowy.',
+    hook: 'Irlandia to „zielona wyspa”: zielony pas na fladze, zielone stroje 17 marca i zielona koniczyna.',
+    check: { q: 'Na której fladze jest liść klonu?', options: ['Kanady', 'Irlandii', 'USA'], answer: 0, explain: 'Czerwony liść klonu to symbol Kanady.' },
+  },
+  {
+    title: 'Kalendarz świąt',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Sześć kafelków: 31 października Halloween, 5 listopada Bonfire Night, w listopadzie Thanksgiving, 25 grudnia Christmas Day, 17 marca St Patrick's Day, 4 lipca Independence Day">
+      <rect x="6" y="8" width="124" height="88" rx="10" class="f2 s2"/>
+      <rect x="138" y="8" width="124" height="88" rx="10" class="f5 s5"/>
+      <rect x="270" y="8" width="124" height="88" rx="10" class="f4 s4"/>
+      <rect x="6" y="104" width="124" height="88" rx="10" class="f3 s3"/>
+      <rect x="138" y="104" width="124" height="88" rx="10" class="f3 s3"/>
+      <rect x="270" y="104" width="124" height="88" rx="10" class="f1 s1"/>
+      <text x="68" y="38" class="tx" style="font-size:24px" text-anchor="middle">🎃</text>
+      <text x="200" y="38" class="tx" style="font-size:24px" text-anchor="middle">🎆</text>
+      <text x="332" y="38" class="tx" style="font-size:24px" text-anchor="middle">🦃</text>
+      <text x="68" y="134" class="tx" style="font-size:24px" text-anchor="middle">🎄</text>
+      <text x="200" y="134" class="tx" style="font-size:24px" text-anchor="middle">☘️</text>
+      <text x="332" y="134" class="tx" style="font-size:24px" text-anchor="middle">🎉</text>
+      <text x="68" y="64" class="tx-b" text-anchor="middle">31.10</text>
+      <text x="200" y="64" class="tx-b" text-anchor="middle">5.11</text>
+      <text x="332" y="64" class="tx-b" text-anchor="middle">listopad</text>
+      <text x="68" y="160" class="tx-b" text-anchor="middle">25.12</text>
+      <text x="200" y="160" class="tx-b" text-anchor="middle">17.03</text>
+      <text x="332" y="160" class="tx-b" text-anchor="middle">4.07</text>
+      <text x="68" y="84" class="tx-s" text-anchor="middle">Halloween</text>
+      <text x="200" y="84" class="tx-s" text-anchor="middle">Bonfire Night</text>
+      <text x="332" y="84" class="tx-s" text-anchor="middle">Thanksgiving</text>
+      <text x="68" y="180" class="tx-s" text-anchor="middle">Christmas Day</text>
+      <text x="200" y="180" class="tx-s" text-anchor="middle">St Patrick's Day</text>
+      <text x="332" y="180" class="tx-s" text-anchor="middle">Independence Day</text>
+    </svg>`,
+    text: `<ul>
+        <li><b lang="en">Halloween</b> (31 października) – przebrane dzieci wołają <i lang="en">Trick or treat!</i> i dostają słodycze. Świecą wydrążone dynie ze świeczką w środku.</li>
+        <li><b lang="en">Bonfire Night</b> (5 listopada, Wielka Brytania) – ogniska i fajerwerki.</li>
+        <li><b lang="en">Thanksgiving</b> (USA, czwarty czwartek listopada) – Święto Dziękczynienia, rodzinny obiad z indykiem.</li>
+        <li><b lang="en">St Patrick's Day</b> (17 marca, Irlandia) – wszyscy na zielono.</li>
+        <li><b lang="en">Independence Day</b> (4 lipca, USA) – Dzień Niepodległości, fajerwerki i parady.</li>
+      </ul>`,
+    remember: '<b lang="en">pumpkin</b> – dynia, <b lang="en">fireworks</b> – fajerwerki, <b lang="en">turkey</b> – indyk.',
+    hook: 'Jesień jest „ognista”: najpierw świecące dynie (31.10), potem ogniska i fajerwerki (5.11).',
+    check: { q: 'Które święto obchodzi się w USA w listopadzie, jedząc indyka?', options: ['Thanksgiving', 'Bonfire Night', 'St Patrick\'s Day'], answer: 0, explain: 'Thanksgiving – Święto Dziękczynienia – w czwarty czwartek listopada. Turkey to indyk.' },
+  },
+  {
+    title: 'Boże Narodzenie: tu i tam',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Porównanie: w Polsce 24 grudnia Wigilia, uroczysta kolacja i prezenty wieczorem, 26 grudnia drugi dzień świąt. W Wielkiej Brytanii 24 grudnia skarpety na prezenty, 25 grudnia Christmas Day – rano prezenty, indyk, pudding i crackery, 26 grudnia Boxing Day">
+      <rect x="6" y="8" width="190" height="204" rx="12" class="bg ln"/>
+      <rect x="204" y="8" width="190" height="204" rx="12" class="bg ln"/>
+      <rect x="86" y="16" width="30" height="9" class="pl-w"/><rect x="86" y="25" width="30" height="9" class="pl-r"/><rect x="86" y="16" width="30" height="18" class="ln"/>
+      <defs><clipPath id="kl-kult-uk2"><rect width="30" height="18"/></clipPath></defs>
+      <g transform="translate(284,16)">
+        <g clip-path="url(#kl-kult-uk2)">
+          <rect width="30" height="18" class="fl-b"/>
+          <path d="M0,0 L30,18 M30,0 L0,18" class="fl-ws" stroke-width="4"/>
+          <path d="M15,0 V18 M0,9 H30" class="fl-ws" stroke-width="6"/>
+          <path d="M15,0 V18 M0,9 H30" class="fl-rs" stroke-width="3"/>
+        </g>
+        <rect width="30" height="18" class="ln"/>
+      </g>
+      <text x="101" y="52" class="tx-b" text-anchor="middle">Polska</text>
+      <text x="299" y="52" class="tx-b" text-anchor="middle">Wielka Brytania</text>
+      <text x="18" y="78" class="tx-s t2">24.12 – Wigilia</text>
+      <text x="18" y="96" class="tx-s">uroczysta kolacja</text>
+      <text x="18" y="114" class="tx-s">prezenty wieczorem 🎁</text>
+      <text x="18" y="196" class="tx-s t2">26.12 – drugi dzień świąt</text>
+      <text x="216" y="78" class="tx-s t2">24.12 – Christmas Eve</text>
+      <text x="216" y="96" class="tx-s">skarpety (stockings) 🧦</text>
+      <text x="216" y="120" class="tx-s t2">25.12 – Christmas Day</text>
+      <text x="216" y="138" class="tx-s">rano prezenty 🎁</text>
+      <text x="216" y="156" class="tx-s">indyk, pudding, crackers</text>
+      <text x="216" y="196" class="tx-s t2">26.12 – Boxing Day</text>
+    </svg>`,
+    text: `<p>W Polsce najważniejsza jest <b>Wigilia</b> – uroczysta kolacja 24 grudnia, a prezenty są zwykle wieczorem. Brytyjskie dzieci 24 grudnia wieszają <b lang="en">stockings</b> (skarpety), a <b lang="en">Father Christmas</b> zostawia w nich prezenty. Najważniejszy jest <b lang="en">Christmas Day</b> – 25 grudnia: rano prezenty, potem obiad z pieczonym indykiem i <i lang="en">Christmas pudding</i>.</p>
+      <p>Na stole są <b lang="en">Christmas crackers</b> – papierowe tuby, które dwie osoby rozrywają z trzaskiem. W środku: papierowa korona, żart i mała zabawka. 26 grudnia to <b lang="en">Boxing Day</b>.</p>`,
+    remember: 'Polska: najważniejsza Wigilia, 24.12. Wielka Brytania: najważniejszy Christmas Day, 25.12.',
+    hook: 'Skarpeta (stocking) czeka całą noc – dlatego prezenty są dopiero rano!',
+    check: { q: 'Kiedy brytyjskie dzieci rozpakowują prezenty od Father Christmas?', options: ['rano 25 grudnia', 'wieczorem 24 grudnia', '26 grudnia'], answer: 0, explain: 'Prezenty czekają w skarpetach rano 25 grudnia – w Christmas Day.' },
+  },
+  {
+    title: 'Znane miejsca i życie codzienne',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Cztery kafelki: Big Ben – dzwon w Londynie; Statue of Liberty – Nowy Jork; Sydney Opera House – Australia; kangaroo i koala – Australia">
+      <rect x="6" y="8" width="190" height="90" rx="10" class="f1 s1"/>
+      <rect x="204" y="8" width="190" height="90" rx="10" class="f3 s3"/>
+      <rect x="6" y="104" width="190" height="90" rx="10" class="f4 s4"/>
+      <rect x="204" y="104" width="190" height="90" rx="10" class="f2 s2"/>
+      <text x="101" y="40" class="tx" style="font-size:26px" text-anchor="middle">🔔</text>
+      <text x="299" y="40" class="tx" style="font-size:26px" text-anchor="middle">🗽</text>
+      <text x="101" y="136" class="tx" style="font-size:26px" text-anchor="middle">🎶</text>
+      <text x="299" y="136" class="tx" style="font-size:26px" text-anchor="middle">🦘</text>
+      <text x="101" y="66" class="tx-b" text-anchor="middle">Big Ben</text>
+      <text x="299" y="66" class="tx" text-anchor="middle">Statue of Liberty</text>
+      <text x="101" y="162" class="tx" text-anchor="middle">Sydney Opera House</text>
+      <text x="299" y="162" class="tx-b" text-anchor="middle">kangaroo, koala</text>
+      <text x="101" y="86" class="tx-s" text-anchor="middle">dzwon – Londyn</text>
+      <text x="299" y="86" class="tx-s" text-anchor="middle">Nowy Jork, USA</text>
+      <text x="101" y="182" class="tx-s" text-anchor="middle">Sydney, Australia</text>
+      <text x="299" y="182" class="tx-s" text-anchor="middle">Australia</text>
+    </svg>`,
+    text: `<ul>
+        <li><b lang="en">Big Ben</b> to wielki <b>dzwon</b> w wieży zegarowej w Londynie (potocznie tak mówi się o całej wieży). Symbolem Londynu są też czerwone autobusy piętrowe.</li>
+        <li><b lang="en">Statue of Liberty</b> – Statua Wolności w Nowym Jorku, dar Francji.</li>
+        <li><b lang="en">Sydney Opera House</b> – opera z dachem jak białe żagle.</li>
+        <li>W Australii żyją kangury i koale. Koala to torbacz, nie miś!</li>
+      </ul>
+      <p>Na zakupach w Wielkiej Brytanii płacisz funtami (<b lang="en">pounds</b>, £), w USA – dolarami (<b lang="en">dollars</b>, $), a w Irlandii – <b lang="en">euro</b>. W Wielkiej Brytanii, Irlandii i Australii jeździ się <b>lewą</b> stroną drogi.</p>`,
+    remember: 'UK – funt (£), USA – dolar ($), Irlandia – euro (€). Ruch lewostronny: Wielka Brytania, Irlandia, Australia.',
+    hook: '„Big” znaczy „duży” – Big Ben to duży dzwon, który wybija godziny.',
+  },
+  {
+    title: 'Fakt czy stereotyp?',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Dwie ramki. Fakt – można go sprawdzić, np. w Wielkiej Brytanii jeździ się lewą stroną drogi. Stereotyp – uproszczona opinia o całej grupie, np. wszyscy Brytyjczycy piją herbatę o piątej; nie każdy taki jest">
+      <rect x="6" y="8" width="190" height="174" rx="12" class="f3 s3 sw"/>
+      <rect x="204" y="8" width="190" height="174" rx="12" class="f2 s2 sw"/>
+      <text x="101" y="38" class="tx-b t3" text-anchor="middle">FAKT ✔</text>
+      <text x="299" y="38" class="tx-b t2" text-anchor="middle">STEREOTYP ✘</text>
+      <text x="18" y="64" class="tx-s">można go sprawdzić</text>
+      <text x="18" y="96" class="tx-s">„W Wielkiej Brytanii</text>
+      <text x="18" y="114" class="tx-s">jeździ się lewą</text>
+      <text x="18" y="132" class="tx-s">stroną drogi.”</text>
+      <text x="216" y="64" class="tx-s">opinia o całej grupie</text>
+      <text x="216" y="96" class="tx-s">„Wszyscy Brytyjczycy</text>
+      <text x="216" y="114" class="tx-s">piją herbatę</text>
+      <text x="216" y="132" class="tx-s">o piątej.”</text>
+      <text x="216" y="166" class="tx-s t2">Nie każdy taki jest!</text>
+    </svg>`,
+    text: `<p><b>Fakt</b> to informacja, którą można sprawdzić. <b>Stereotyp</b> to uproszczona opinia o całej grupie ludzi – nie jest prawdziwa dla każdego. Słowo „wszyscy” często zdradza stereotyp.</p>
+      <p>W każdym kraju ludzie są różni, tak jak w Polsce. Zanim kogoś ocenisz – poznaj go!</p>`,
+    remember: 'Fakt – da się sprawdzić. Stereotyp – „wszyscy są tacy” (a nie są).',
+    hook: 'Czerwona lampka: gdy słyszysz „wszyscy Anglicy…”, „wszyscy Amerykanie…” – to pewnie stereotyp.',
+    check: { q: 'Które zdanie jest faktem?', options: ['W Irlandii płaci się w euro.', 'Wszyscy Amerykanie jedzą tylko hamburgery.', 'Wszyscy Brytyjczycy piją herbatę o piątej.'], answer: 0, explain: 'To, jakimi pieniędzmi się płaci, można sprawdzić. Pozostałe zdania to stereotypy – mówią „wszyscy”.' },
+  },
+];

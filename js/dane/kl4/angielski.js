@@ -915,5 +915,100 @@ window.SUBJECTS.push({
         { id: 'vtpegv', q: 'Prawda czy fałsz?\nZdanie „She is dance now” jest poprawne.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Brakuje końcówki -ing: She is dancing now (dance → dancing, nieme -e znika).' },
       ],
     },
+    {
+      id: 'kultura',
+      name: 'Kraje anglojęzyczne: święta, symbole, ciekawostki',
+      basis: 'Dz.U. 2026 poz. 378, język obcy nowożytny, poziom A1: wym. 10 – 10.1 (wiedza o krajach i kulturach społeczności posługujących się danym językiem), 10.2 (podobieństwa i różnice między kulturą własną a kulturą tych społeczności), 10.4 (odróżnia stereotypy od faktów), 10.5 (ciekawość i otwartość wobec innych kultur). Dobór krajów, świąt i symboli – decyzja redakcyjna. Fakty sprawdzone 2.11.2026 w kilku zgodnych źródłach (m.in. British Council LearnEnglish, CIA World Factbook, canada.ca, UNESCO, materiały Parlamentu Wielkiej Brytanii o Big Benie, Central Bank of Ireland). Pominięto szczegóły, które źródła podają różnie (np. obecna rezydencja króla – zmiany w 2026 r.).',
+      theory: `
+        <h3>Flagi</h3>
+        <table>
+          <tr><th>Kraj</th><th>Flaga</th></tr>
+          <tr><td><b>the UK</b> (Wielka Brytania)</td><td><b>Union Jack</b>: czerwień, biel i błękit. Łączy trzy krzyże: św. Jerzego (Anglia), św. Andrzeja (Szkocja) i św. Patryka (Irlandia).</td></tr>
+          <tr><td><b>the USA</b> (Stany Zjednoczone)</td><td><b>Stars and Stripes</b> („gwiazdy i pasy”): <b>50 gwiazd</b> – 50 stanów, <b>13 pasów</b> – 13 dawnych kolonii, które ogłosiły niepodległość.</td></tr>
+          <tr><td><b>Ireland</b> (Irlandia)</td><td>trzy pionowe pasy: zielony, biały, pomarańczowy</td></tr>
+          <tr><td><b>Canada</b> (Kanada)</td><td>czerwony <b>liść klonu</b> na białym polu, po bokach czerwone pasy</td></tr>
+        </table>
+        <h3>Święta w kalendarzu</h3>
+        <table>
+          <tr><th>Kiedy</th><th>Święto</th><th>Co się robi</th></tr>
+          <tr><td>31 października</td><td><b lang="en">Halloween</b></td><td>przebrane dzieci chodzą od domu do domu i wołają <i lang="en">Trick or treat!</i> (dostają słodycze); świecą <b lang="en">jack-o'-lanterns</b> – wydrążone dynie (<i lang="en">pumpkins</i>) ze świeczką w środku</td></tr>
+          <tr><td>5 listopada</td><td><b lang="en">Bonfire Night</b> (Wielka Brytania)</td><td>ogniska (<i lang="en">bonfires</i>) i fajerwerki (<i lang="en">fireworks</i>) – na pamiątkę udaremnionego w 1605 r. spisku, którego uczestnicy chcieli wysadzić w powietrze parlament i króla (jednym z nich był Guy Fawkes)</td></tr>
+          <tr><td>czwarty czwartek listopada</td><td><b lang="en">Thanksgiving</b> (USA) – Święto Dziękczynienia</td><td>rodzinny obiad, najczęściej pieczony <b lang="en">turkey</b> (indyk)</td></tr>
+          <tr><td>25 grudnia</td><td><b lang="en">Christmas Day</b></td><td>patrz niżej</td></tr>
+          <tr><td>17 marca</td><td><b lang="en">St Patrick's Day</b> (Irlandia) – dzień św. Patryka</td><td>ludzie ubierają się na zielono, symbolem jest <b lang="en">shamrock</b> – listek koniczyny</td></tr>
+          <tr><td>1 lipca</td><td><b lang="en">Canada Day</b></td><td>święto narodowe Kanady</td></tr>
+          <tr><td>4 lipca</td><td><b lang="en">Independence Day</b> (USA)</td><td>Dzień Niepodległości – pamiątka przyjęcia Deklaracji Niepodległości w 1776 r.; fajerwerki i parady</td></tr>
+        </table>
+        <h3>Boże Narodzenie: w Polsce i w Wielkiej Brytanii</h3>
+        <table>
+          <tr><th>W Polsce</th><th>W Wielkiej Brytanii</th></tr>
+          <tr><td>najważniejsza jest <b>Wigilia</b> (24 grudnia) – uroczysta kolacja, prezenty zwykle wieczorem</td><td>24 grudnia (<i lang="en">Christmas Eve</i>) dzieci wieszają <b lang="en">stockings</b> (skarpety) dla <b lang="en">Father Christmas</b>; najważniejszy jest <b lang="en">Christmas Day</b> (25 grudnia) – rano prezenty, potem świąteczny obiad: pieczony indyk, <i lang="en">Christmas pudding</i></td></tr>
+          <tr><td>26 grudnia – drugi dzień świąt</td><td>26 grudnia – <b lang="en">Boxing Day</b>, dzień wolny</td></tr>
+        </table>
+        <p>Przy brytyjskim świątecznym stole rozrywa się <b lang="en">Christmas crackers</b>: papierowe tuby, które dwie osoby ciągną za końce, aż pękną z trzaskiem. W środku są papierowa korona, żart na karteczce i mała zabawka.</p>
+        <h3>Znane miejsca i zwierzęta</h3>
+        <ul>
+          <li><b lang="en">Big Ben</b> (Londyn) – tak nazywa się <b>wielki dzwon</b> w wieży zegarowej przy parlamencie. Potocznie mówi się tak o całej wieży, która nazywa się <i lang="en">Elizabeth Tower</i>.</li>
+          <li>Czerwone autobusy piętrowe (<i lang="en">double-deckers</i>) – symbol Londynu.</li>
+          <li><b lang="en">Statue of Liberty</b> (Statua Wolności) – w Nowym Jorku; dar Francji dla USA (odsłonięta w 1886 r.).</li>
+          <li><b lang="en">Sydney Opera House</b> – opera w Sydney (Australia) z dachem przypominającym białe żagle.</li>
+          <li>W Australii żyją <b lang="en">kangaroos</b> (kangury) i <b lang="en">koalas</b> (koale). Koala to torbacz, a nie miś!</li>
+        </ul>
+        <h3>Życie codzienne</h3>
+        <table>
+          <tr><th>Kraj</th><th>Pieniądze</th><th>Ruch na drogach</th></tr>
+          <tr><td>Polska</td><td>złoty (zł)</td><td>prawostronny</td></tr>
+          <tr><td>Wielka Brytania</td><td><b lang="en">pound</b> – funt (£)</td><td><b>lewostronny</b></td></tr>
+          <tr><td>Irlandia</td><td><b lang="en">euro</b> (€) – od 2002 r.</td><td><b>lewostronny</b></td></tr>
+          <tr><td>USA</td><td><b lang="en">dollar</b> – dolar ($)</td><td>prawostronny</td></tr>
+          <tr><td>Australia</td><td>dolar australijski</td><td><b>lewostronny</b></td></tr>
+        </table>
+        <div class="tip">💡 W Irlandii Północnej (część Wielkiej Brytanii) płaci się funtami, a w Irlandii (osobne państwo) – euro.</div>
+        <h3>Fakt czy stereotyp?</h3>
+        <p><b>Stereotyp</b> to uproszczona opinia o całej grupie ludzi, np. „wszyscy Brytyjczycy codziennie o piątej piją herbatę”. Nie jest prawdziwa dla każdego. <b>Fakt</b> można sprawdzić: „W Wielkiej Brytanii jeździ się lewą stroną drogi”. Ludzie w każdym kraju są różni – warto ich poznać, zanim się ich oceni.</p>
+      `,
+      flashcards: [
+        ['Halloween', '31 października: „Trick or treat!”, dynie ze świeczką (jack-o\'-lanterns)'],
+        ['pumpkin', 'dynia'],
+        ['Bonfire Night', '5 listopada, Wielka Brytania: ogniska i fajerwerki (fireworks)'],
+        ['Thanksgiving', 'Święto Dziękczynienia w USA: czwarty czwartek listopada, indyk (turkey)'],
+        ['Christmas Day', '25 grudnia – najważniejszy dzień świąt w Wielkiej Brytanii'],
+        ['stocking', 'skarpeta na prezenty od Father Christmas'],
+        ['Boxing Day', '26 grudnia – dzień wolny w Wielkiej Brytanii'],
+        ['Christmas cracker', 'tuba, którą rozrywają dwie osoby; w środku korona, żart i zabawka'],
+        ['St Patrick\'s Day', '17 marca, Irlandia: zielone stroje, koniczyna (shamrock)'],
+        ['Independence Day', '4 lipca, USA: Dzień Niepodległości (1776)'],
+        ['Flaga USA', '50 gwiazd (stany) i 13 pasów (dawne kolonie)'],
+        ['Flaga Kanady', 'czerwony liść klonu na białym polu'],
+        ['Big Ben', 'wielki dzwon w wieży zegarowej w Londynie'],
+        ['Statue of Liberty', 'Statua Wolności, Nowy Jork – dar Francji'],
+        ['pound · dollar · euro', 'funt (UK) · dolar (USA) · euro (Irlandia)'],
+        ['Ruch lewostronny', 'Wielka Brytania, Irlandia, Australia'],
+      ],
+      questions: [
+        { id: '4byfck', q: 'Kiedy obchodzi się Halloween?', options: ['31 października', '1 listopada', '5 listopada', '25 grudnia'], answer: 0, explain: 'Halloween wypada 31 października, w przeddzień 1 listopada.' },
+        { id: 'u727z0', q: 'Co wołają dzieci, gdy w Halloween pukają do drzwi sąsiadów?', options: ['Trick or treat!', 'Happy birthday!', 'Merry Christmas!', 'Good night!'], answer: 0, explain: '„Trick or treat!” – w odpowiedzi zwykle dostają słodycze.' },
+        { id: '4cuq3p', q: 'Jack-o\'-lantern to…', options: ['wydrążona dynia ze świeczką w środku', 'kapelusz czarownicy', 'pudełko ze słodyczami', 'kartka z życzeniami'], answer: 0, explain: 'Na Halloween drąży się dynie (pumpkins), wycina w nich twarze i wkłada do środka świeczkę.' },
+        { id: '3wspj5', q: 'Uzupełnij: „On Halloween we make a lantern from a ___.”', options: ['pumpkin', 'turkey', 'stocking', 'cracker'], answer: 0, explain: 'Pumpkin to dynia. Turkey – indyk, stocking – skarpeta na prezenty, cracker – świąteczna tuba z niespodzianką.' },
+        { id: 'qtalyt', q: 'Bonfire Night (5 listopada) w Wielkiej Brytanii to wieczór…', options: ['ognisk i fajerwerków', 'malowania pisanek', 'ubierania choinki', 'przebierania się za duchy'], answer: 0, explain: 'Bonfire to ognisko, fireworks – fajerwerki. Przebieranie się za duchy to Halloween.' },
+        { id: 'phbyyx', q: 'W którym kraju obchodzi się Thanksgiving w czwarty czwartek listopada?', options: ['w USA', 'w Wielkiej Brytanii', 'w Irlandii', 'w Australii'], answer: 0, explain: 'Thanksgiving – Święto Dziękczynienia – obchodzi się w Stanach Zjednoczonych w czwarty czwartek listopada.' },
+        { id: 'ju6fl1', q: 'Co jest najczęściej głównym daniem w Thanksgiving?', options: ['pieczony indyk (turkey)', 'karp', 'pierogi', 'pizza'], answer: 0, explain: 'Turkey – indyk – to tradycyjne danie tego święta.' },
+        { id: 'fkrnox', q: 'Który dzień jest najważniejszym dniem Bożego Narodzenia w Wielkiej Brytanii?', options: ['25 grudnia – Christmas Day', '24 grudnia – Christmas Eve', '26 grudnia – Boxing Day', '6 grudnia'], answer: 0, explain: 'W Wielkiej Brytanii najważniejszy jest 25 grudnia: rano prezenty, potem świąteczny obiad. W Polsce najważniejsza jest Wigilia, 24 grudnia.' },
+        { id: 'sd85yt', q: 'Czym różnią się święta Bożego Narodzenia w Polsce i w Wielkiej Brytanii?', options: ['W Polsce najważniejsza jest Wigilia (24 grudnia), w Wielkiej Brytanii – 25 grudnia.', 'W Wielkiej Brytanii nie ma świąt Bożego Narodzenia.', 'W Polsce prezenty daje się dopiero 26 grudnia.', 'Niczym się nie różnią.'], answer: 0, explain: 'W Polsce prezenty są zwykle w Wigilię wieczorem, a brytyjskie dzieci znajdują je rano 25 grudnia.' },
+        { id: 'sbizgo', q: 'W co brytyjskie dzieci w Wigilię wieczorem wieszają, żeby Father Christmas zostawił w nich prezenty?', options: ['w skarpety (stockings)', 'w dynie (pumpkins)', 'w kapelusze (hats)', 'w plecaki (backpacks)'], answer: 0, explain: 'Stocking to długa skarpeta. Rano 25 grudnia dzieci znajdują w niej prezenty.' },
+        { id: 'c6fp7v', q: 'Christmas cracker to…', options: ['papierowa tuba, którą dwie osoby rozrywają z trzaskiem – w środku są korona, żart i mała zabawka', 'świąteczne ciasto', 'ozdoba na czubek choinki', 'świąteczna piosenka'], answer: 0, explain: 'Crackery są na brytyjskim świątecznym stole. Kto zostanie z większą częścią, zabiera zawartość.' },
+        { id: '79r5f9', q: 'Kiedy Irlandczycy świętują St Patrick\'s Day?', options: ['17 marca', '4 lipca', '1 lipca', '5 listopada'], answer: 0, explain: '17 marca – dzień św. Patryka. Ludzie ubierają się na zielono, a symbolem jest koniczyna (shamrock).' },
+        { id: 'gibbhc', q: 'Co świętują Amerykanie 4 lipca?', options: ['Dzień Niepodległości (Independence Day)', 'Święto Dziękczynienia (Thanksgiving)', 'Halloween', 'Nowy Rok'], answer: 0, explain: '4 lipca 1776 r. przyjęto Deklarację Niepodległości. Świętuje się m.in. fajerwerkami i paradami.' },
+        { id: '3y7cyf', q: 'Co oznacza 50 gwiazd na fladze USA?', options: ['50 stanów', '50 miast', '50 prezydentów', '50 lat niepodległości'], answer: 0, explain: 'Każda gwiazda to jeden stan. 13 pasów to 13 dawnych kolonii, które ogłosiły niepodległość.' },
+        { id: 'y21geo', q: 'Ile pasów ma flaga USA?', options: ['13', '50', '3', '7'], answer: 0, explain: '13 pasów – tyle było dawnych kolonii, które ogłosiły niepodległość. Gwiazd jest 50.' },
+        { id: 'gcmr29', q: 'Co widać na fladze Kanady?', options: ['czerwony liść klonu', 'zieloną koniczynę', 'gwiazdy i pasy', 'trzy krzyże'], answer: 0, explain: 'Flaga Kanady: czerwony liść klonu na białym polu, po bokach czerwone pasy. Trzy krzyże łączy flaga Wielkiej Brytanii.' },
+        { id: 't69tnm', q: 'Jakimi pieniędzmi zapłacisz w Dublinie, stolicy Irlandii?', options: ['euro', 'funtami', 'dolarami', 'złotymi'], answer: 0, explain: 'Irlandia używa euro od 2002 r. Funtami płaci się w Wielkiej Brytanii, także w Irlandii Północnej.' },
+        { id: 'x2nebc', q: 'Prawda czy fałsz?\nW Wielkiej Brytanii samochody jeżdżą lewą stroną drogi.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'W Wielkiej Brytanii, Irlandii i Australii ruch jest lewostronny, w Polsce i USA – prawostronny.' },
+        { id: 'kvlwc9', q: 'Big Ben to…', options: ['wielki dzwon w wieży zegarowej w Londynie', 'most na Tamizie', 'pałac królewski', 'park w Nowym Jorku'], answer: 0, explain: 'Big Ben to nazwa dzwonu. Potocznie mówi się tak o całej wieży, która nazywa się Elizabeth Tower.' },
+        { id: 'lxx16o', q: 'Gdzie stoi Statua Wolności (Statue of Liberty)?', options: ['w Nowym Jorku', 'w Londynie', 'w Sydney', 'w Dublinie'], answer: 0, explain: 'Statua Wolności stoi w Nowym Jorku. Była darem Francji dla USA.' },
+        { id: 'us9oj4', q: 'Które zwierzęta żyją na wolności w Australii?', options: ['kangury i koale', 'lwy i żyrafy', 'pandy i tygrysy', 'żubry i bociany'], answer: 0, explain: 'Kangaroos i koalas to torbacze. Koala nie jest misiem!' },
+        { id: 'ujvgnm', q: 'Które zdanie jest stereotypem, a nie faktem?', options: ['Wszyscy Brytyjczycy codziennie o piątej piją herbatę.', 'W Wielkiej Brytanii jeździ się lewą stroną drogi.', 'Stolicą Wielkiej Brytanii jest Londyn.', 'W Irlandii płaci się w euro.'], answer: 0, explain: 'Stereotyp to uproszczona opinia o całej grupie ludzi – nie każdy Brytyjczyk pije herbatę o piątej. Pozostałe zdania to fakty, które można sprawdzić.' },
+      ],
+    },
   ],
 });

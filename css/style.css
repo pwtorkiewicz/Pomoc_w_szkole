@@ -217,6 +217,9 @@ small.muted, .muted { color: var(--muted); font-size: .85rem; }
 .vis .sw { stroke-width: 3; }
 /* barwy flagi Polski – w obu motywach takie same (biel ma być biała także w trybie ciemnym) */
 .vis .pl-w { fill: #ffffff; } .vis .pl-r { fill: #dc143c; }
+/* barwy flag innych krajów (uproszczone rysunki) – też stałe w obu motywach; fl-*s – obrys (krzyże flagi brytyjskiej) */
+.vis .fl-w { fill: #ffffff; } .vis .fl-r { fill: #c8102e; } .vis .fl-b { fill: #012169; } .vis .fl-g { fill: #169b62; } .vis .fl-o { fill: #ff883e; }
+.vis .fl-ws { stroke: #ffffff; fill: none; } .vis .fl-rs { stroke: #c8102e; fill: none; }
 .widget .controls { display: flex; flex-wrap: wrap; gap: 10px 18px; justify-content: center; align-items: center; margin-top: 8px; font-size: .95rem; }
 .widget input[type=range] { width: 160px; accent-color: var(--primary); }
 .widget .readout { font-weight: 700; font-size: 1.1rem; margin-top: 6px; }
