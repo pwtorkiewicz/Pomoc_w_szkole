@@ -6,7 +6,7 @@ window.SUBJECTS.push({
   id: 'symetrie',
   name: 'Matematyka – symetrie',
   icon: '🦋',
-  color: '#6a5acd',
+  color: '#d08a1e',
   topics: [
     {
       id: 'symetralna',
