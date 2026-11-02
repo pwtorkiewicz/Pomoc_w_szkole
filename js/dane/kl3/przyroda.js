@@ -165,7 +165,7 @@
       {
         id: 'ochrona',
         name: 'Chronimy przyrodę',
-        basis: `${PP}, 1. Rozumienie środowiska przyrodniczego, pkt 1 (gatunki objęte ochroną), pkt 7 (chroni przyrodę, wskazuje miejsca ochrony przyrody, parki narodowe, pomniki przyrody), pkt 8 (segreguje odpady, zna przyczyny i skutki). Kolory pojemników i odpady niebezpieczne: rozporządzenie Ministra Klimatu i Środowiska z 10.05.2021, Dz.U. 2021 poz. 906, § 3, oraz serwis Edukacja Ekologiczna Ministerstwa Klimatu i Środowiska (gov.pl, „JSSO” i „Jak segregować”; sprawdzone 2.11.2026). Gatunki chronione: rozporządzenia w sprawie ochrony gatunkowej zwierząt (Dz.U. 2016 poz. 2183, tekst jednolity Dz.U. 2022 poz. 2380) i roślin (Dz.U. 2014 poz. 1409) – sprawdzone 2.11.2026.${KONIEC}`,
+        basis: `${PP}, 1. Rozumienie środowiska przyrodniczego, pkt 1 (gatunki objęte ochroną), pkt 7 (chroni przyrodę, wskazuje miejsca ochrony przyrody, parki narodowe, pomniki przyrody), pkt 8 (segreguje odpady, zna przyczyny i skutki). Kolory pojemników i odpady niebezpieczne: rozporządzenie Ministra Klimatu i Środowiska z 10.05.2021, Dz.U. 2021 poz. 906, § 3, oraz serwis Edukacja Ekologiczna Ministerstwa Klimatu i Środowiska (gov.pl, „JSSO” i „Jak segregować”; sprawdzone 2.11.2026). Park narodowy i pomnik przyrody: ustawa o ochronie przyrody, tekst jednolity Dz.U. 2026 poz. 1315, art. 6 ust. 1, art. 8 ust. 1, art. 40 ust. 1 i art. 115 ust. 1 (tablice z nazwą formy ochrony). Gatunki chronione: rozporządzenia w sprawie ochrony gatunkowej zwierząt (Dz.U. 2016 poz. 2183, tekst jednolity Dz.U. 2022 poz. 2380) i roślin (Dz.U. 2014 poz. 1409) – sprawdzone 2.11.2026.${KONIEC}`,
         theory: `
           <h3>Segregujemy odpady</h3>
           <table><tr><th>pojemnik</th><th>co wrzucamy</th></tr>
@@ -181,7 +181,7 @@
           <h3>Miejsca ochrony przyrody</h3>
           <ul>
             <li><b>Park narodowy</b> – duży obszar o wyjątkowej przyrodzie, chroniony prawem. Np. <b>Białowieski Park Narodowy</b> (żyją tam żubry) i <b>Tatrzański Park Narodowy</b> (w Tatrach).</li>
-            <li><b>Pomnik przyrody</b> – pojedynczy cenny twór przyrody, np. bardzo stare drzewo albo wielki głaz. Często stoi przy nim tabliczka „Pomnik przyrody”.</li>
+            <li><b>Pomnik przyrody</b> – pojedynczy cenny twór przyrody, np. stare drzewo okazałych rozmiarów albo wielki głaz. Często stoi przy nim tabliczka „Pomnik przyrody”.</li>
             <li>Sprawdź, czy w twojej okolicy jest park narodowy, rezerwat albo pomnik przyrody!</li>
           </ul>
           <h3>Jak chronić przyrodę na co dzień</h3>
@@ -196,7 +196,7 @@
           ['Gatunek chroniony', 'roślina lub zwierzę, których nie wolno zrywać, łapać ani niszczyć'],
           ['Przykłady zwierząt chronionych', 'żubr, ryś, niedźwiedź brunatny, bocian biały, jeż'],
           ['Park narodowy', 'duży obszar o wyjątkowej przyrodzie, chroniony prawem'],
-          ['Pomnik przyrody', 'np. bardzo stare drzewo albo wielki głaz pod ochroną'],
+          ['Pomnik przyrody', 'np. stare drzewo okazałych rozmiarów albo wielki głaz pod ochroną'],
           ['Gdzie żyją żubry?', 'np. w Białowieskim Parku Narodowym'],
         ],
         questions: [
@@ -210,7 +210,7 @@
           { id: 'dmkf7t', q: 'Które zwierzę jest w Polsce pod ochroną?', options: ['żubr', 'mucha', 'komar'], answer: 0, explain: 'Żubr jest gatunkiem chronionym. Żyje np. w Puszczy Białowieskiej.' },
           { id: 'ybeb13', q: 'Znalazłeś w ogrodzie jeża. Co robisz?', options: ['zostawiam go w spokoju', 'zabieram go do domu', 'wkładam go do pudełka'], answer: 0, explain: 'Jeż jest pod ochroną. Dzikie zwierzę zostawiamy w jego środowisku.' },
           { id: 'bij9ct', q: 'W lesie rośnie sasanka. Wolno ją zerwać?', options: ['nie, jest pod ochroną', 'tak, jeśli zerwę jedną', 'tak, na bukiet dla mamy'], answer: 0, explain: 'Sasanki są chronione. Można je oglądać i fotografować, ale nie zrywać.' },
-          { id: '1ajy6c', q: 'Bardzo stare, cenne drzewo objęte ochroną to…', options: ['pomnik przyrody', 'park narodowy', 'las gospodarczy'], answer: 0, explain: 'Pomnik przyrody to pojedynczy cenny twór przyrody, np. sędziwe drzewo albo głaz.' },
+          { id: '1ajy6c', q: 'Stare, okazałe drzewo objęte ochroną to…', options: ['pomnik przyrody', 'park narodowy', 'las gospodarczy'], answer: 0, explain: 'Pomnik przyrody to pojedynczy cenny twór przyrody, np. stare, okazałe drzewo albo głaz.' },
           { id: 's0vlja', q: 'Gdzie żyją na wolności żubry?', options: ['w Białowieskim Parku Narodowym', 'w Tatrzańskim Parku Narodowym na szczytach', 'w Morzu Bałtyckim'], answer: 0, explain: 'Białowieski Park Narodowy jest znany z żubrów.' },
           { id: 'lgfa0z', q: 'Park narodowy to…', options: ['duży obszar o wyjątkowej przyrodzie, chroniony prawem', 'park z placem zabaw w mieście', 'ogród przy szkole'], answer: 0, explain: 'W parku narodowym przyroda jest chroniona, a turyści chodzą tylko wyznaczonymi szlakami.' },
           { id: 'klrkpa', q: 'Co zrobisz ze śmieciami po pikniku w lesie?', options: ['zabiorę je i wyrzucę do kosza', 'zakopię je pod drzewem', 'zostawię na polanie'], answer: 0, explain: 'Śmieci zabieramy ze sobą. W lesie szkodzą zwierzętom.' },

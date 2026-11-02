@@ -249,7 +249,7 @@ window.LESSONS = window.LESSONS || {};
     },
     {
       title: 'Park narodowy i pomnik przyrody',
-      svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Po lewej park narodowy – duży obszar z lasem i żubrem. Po prawej pomnik przyrody – jedno bardzo stare drzewo z tabliczką">
+      svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Po lewej park narodowy – duży obszar z lasem i żubrem. Po prawej pomnik przyrody – jedno stare, okazałe drzewo z tabliczką">
         <rect x="8" y="8" width="230" height="174" rx="12" class="f3 s3 sw"/>
         <text x="123" y="36" class="tx-b" text-anchor="middle">park narodowy</text>
         <text x="123" y="96" class="tx" text-anchor="middle" style="font-size:30px">🌲🌲🌳🌲</text>
@@ -262,7 +262,7 @@ window.LESSONS = window.LESSONS || {};
         <text x="319" y="170" class="tx-s" text-anchor="middle">np. stare drzewo</text>
       </svg>`,
       text: `<p><b>Park narodowy</b> to duży obszar o wyjątkowej przyrodzie, chroniony prawem. W Białowieskim Parku Narodowym żyją żubry, a Tatrzański Park Narodowy leży w Tatrach.</p>
-        <p><b>Pomnik przyrody</b> to jeden cenny twór przyrody, np. bardzo stare drzewo albo wielki głaz.</p>`,
+        <p><b>Pomnik przyrody</b> to jeden cenny twór przyrody, np. stare drzewo okazałych rozmiarów albo wielki głaz.</p>`,
       hook: 'Park narodowy – cały las pod ochroną 🌲🌲🌲. Pomnik przyrody – jeden „zasłużony” staruszek 🌳.',
       check: { q: 'Gdzie żyją żubry?', options: ['w Białowieskim Parku Narodowym', 'w Morzu Bałtyckim', 'na pustyni'], answer: 0, explain: 'Białowieski Park Narodowy słynie z żubrów.' },
     },
