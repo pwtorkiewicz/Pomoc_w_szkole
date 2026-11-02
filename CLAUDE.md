@@ -62,7 +62,7 @@ Uruchomienie: otwórz `index.html` w przeglądarce (albo od razu stronę ścież
 ## Zasady techniczne
 
 - Każde pytanie ma **stałe pole `id`** (losowe, unikalne w całej aplikacji – we wszystkich ścieżkach). Postęp i „Powtórka błędów” zapamiętują pytania po `id`, więc pytania można przestawiać i usuwać, ale **nigdy nie zmieniaj `id` istniejącego pytania** i nie używaj go ponownie. Nowe pytanie = nowe id z `node tools/nowe-id.js`.
-- Format pytania: `{ id, q, options, answer, explain }`; dla prawda/fałsz: `options: ['Prawda', 'Fałsz'], noShuffle: true`.
+- Format pytania: `{ id, q, options, answer, explain }` – `explain` zawsze (po złej odpowiedzi uczeń ma wiedzieć, dlaczego). Błędne odpowiedzi podobnej długości i budowy co poprawna – uczeń nie może trafiać, wybierając najdłuższą; dla prawda/fałsz: `options: ['Prawda', 'Fałsz'], noShuffle: true`.
 - Pytanie z rysunkiem: pole `svg` (zasady jak w lekcjach; sprawdza `node tools/sprawdz-lekcje.js`).
 - Klasa 3 (`young: true`): pytania czyta przycisk 🔊 – gdy tekst ma symbole, obrazki albo słowa angielskie, dodaj `say` / `optLang` / `sayOptions` (dział: `cardLang`); format w README („Czytanie na głos”).
 - Zestaw ćwiczeń (`window.EXERCISES`, format w README): zadania zamknięte (opcje nie są tasowane – rozkładaj poprawne odpowiedzi na różne litery), `type: 'input'` z listą `accept` (wszystkie poprawne warianty), `type: 'open'` z przykładową odpowiedzią i `scoring`. Id zestawu i zadań z tej samej puli co pytania. Fragmenty lektur tylko z domeny publicznej i w sprawdzonym brzmieniu (np. z arkusza CKE – podaj źródło w `source`); teksty nieliterackie piszemy sami. Zadania piszemy sami, nie kopiujemy zadań CKE.
@@ -74,6 +74,7 @@ Uruchomienie: otwórz `index.html` w przeglądarce (albo od razu stronę ścież
 
 ```
 node tools/sprawdz-dane.js [ścieżka]                 # pytania we wszystkich ścieżkach: unikalne id, poprawne indeksy odpowiedzi
+node tools/jakosc-pytan.js [ścieżka[/przedmiot]] [-v] # podpowiedzi: poprawna odpowiedź wyraźnie najdłuższa (cel ≤ 15% w przedmiocie), pytania bez explain
 node tools/sprawdz-lekcje.js [ścieżka[/przedmiot] | przedmiot]   # lekcje: struktura, XML SVG, napisy poza kadrem/nachodzące, błędy JS
 node tools/zrzut.js <[ścieżka/]przedmiot/dział> <krok> <plik.png> [dark] [420]   # podgląd kroku lekcji (bez ścieżki – egzamin)
 node tools/przeglad.js [ścieżka]                     # ekran wyboru + wszystkie widoki i zestawy ścieżek (jasny/ciemny, 420 px): błędy JS, poziome przewijanie
