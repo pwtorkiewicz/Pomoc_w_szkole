@@ -700,7 +700,7 @@
       {
         id: 'trojkaty-czworokaty',
         name: 'Trójkąty i czworokąty',
-        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 7 (trójkąty ostrokątne, prostokątne, rozwartokątne; różnoboczne, równoramienne, równoboczne), 9 (tylko ramiona i podstawa trójkąta równoramiennego, równość ramion), 11 (kwadrat, prostokąt, romb, równoległobok, trapez, w tym równoramienny i prostokątny – rozpoznawanie i własności boków), 15 (obwód wielokąta). Suma kątów (wym. 8), konstrukcja trójkąta (wym. 10), wysokości i pola tych figur (wym. 13–14) – później.' + WYBOR,
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 7 (trójkąty ostrokątne, prostokątne, rozwartokątne; różnoboczne, równoramienne, równoboczne), 9 (tylko ramiona i podstawa trójkąta równoramiennego, równość ramion), 11 (kwadrat, prostokąt, romb, równoległobok, trapez, w tym równoramienny i prostokątny – rozpoznawanie i własności boków), 15 (obwód wielokąta). Suma kątów i konstrukcja trójkąta (wym. 8, 10) – dział „Kąty w trójkącie i czworokącie, budowanie trójkąta”; wysokości i pola (wym. 13–14) – dział „Wysokości i pola trójkątów i czworokątów”.' + WYBOR,
         theory: `
           <h3>Trójkąty – ze względu na kąty</h3>
           <table>
@@ -986,7 +986,7 @@
       {
         id: 'bryly',
         name: 'Prostopadłościan i sześcian',
-        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 18 (rozpoznawanie prostopadłościanu i sześcianu; walca, stożka i kuli), 19 (wierzchołki, krawędzie, ściany – tylko prostopadłościan i sześcian), 20 (tylko siatka prostopadłościanu i sześcianu, model z siatki); dz. 6 Myślenie matematyczne (suma długości krawędzi). Pole powierzchni i objętość (wym. 21–22), graniastosłupy i ostrosłupy – później.' + WYBOR,
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 18 (rozpoznawanie prostopadłościanu i sześcianu; walca, stożka i kuli), 19 (wierzchołki, krawędzie, ściany – tylko prostopadłościan i sześcian), 20 (tylko siatka prostopadłościanu i sześcianu, model z siatki); dz. 6 Myślenie matematyczne (suma długości krawędzi). Pole powierzchni i objętość (wym. 21–22) – dział „Pole powierzchni i objętość prostopadłościanu”; graniastosłupy i ostrosłupy – później.' + WYBOR,
         theory: `
           <h3>Bryły wokół nas</h3>
           <p><b>Bryła</b> to figura przestrzenna – można ją wziąć do ręki, ma długość, szerokość i wysokość.</p>
@@ -1772,6 +1772,221 @@
 
       // ------------------------------------------------------------------
       {
+        id: 'katy-trojkata',
+        name: 'Kąty w trójkącie i czworokącie, budowanie trójkąta',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 8 (suma miar kątów w trójkącie i w czworokącie), 9 (równość kątów przy podstawie trójkąta równoramiennego), 10 (konstrukcja trójkąta o podanych bokach, możliwość zbudowania trójkąta z odcinków o danych długościach), 11 (własności czworokątów – tu kąty prostokąta, równoległoboku i trapezu prostokątnego); dz. 2 Miary, wym. 3 (mierzenie kątów); dz. 6 Myślenie matematyczne (sprawdzanie wszystkich warunków, uzasadnianie). Ciąg dalszy działów „Proste, odcinki i kąty” oraz „Trójkąty i czworokąty”.' + WYBOR,
+        theory: `
+          <h3>Suma kątów w trójkącie</h3>
+          <p>W <b>każdym</b> trójkącie kąty mają razem <b>180°</b>. Sprawdź: wytnij trójkąt z papieru, oderwij jego trzy rogi i przyłóż je do siebie – złożą się w kąt półpełny (180°).</p>
+          <p><b>Brakujący kąt</b>: od 180° odejmij sumę dwóch znanych kątów.</p>
+          <ul>
+            <li>kąty 50° i 60° → trzeci: <span class="f">180° − (50° + 60°) = 180° − 110° = 70°</span></li>
+            <li>kąty 35° i 45° → trzeci: <span class="f">180° − 80° = 100°</span></li>
+          </ul>
+          <h3>Trójkąty szczególne</h3>
+          <table>
+            <tr><th>Trójkąt</th><th>Co wiemy o kątach?</th></tr>
+            <tr><td>prostokątny</td><td>jeden kąt ma 90°, więc dwa pozostałe mają razem <b>90°</b> (np. 30° i 60°)</td></tr>
+            <tr><td>równoboczny</td><td>wszystkie kąty równe: <b>60°</b> każdy (180° : 3)</td></tr>
+            <tr><td>równoramienny</td><td><b>kąty przy podstawie są równe</b></td></tr>
+          </table>
+          <p>Trójkąt równoramienny – przykłady:</p>
+          <ul>
+            <li>kąt między ramionami 40° → kąty przy podstawie: <span class="f">(180° − 40°) : 2 = 140° : 2 = 70°</span></li>
+            <li>kąt przy podstawie 50° → kąt między ramionami: <span class="f">180° − 50° − 50° = 80°</span></li>
+          </ul>
+          <div class="tip">💡 W trójkącie może być najwyżej <b>jeden</b> kąt prosty albo rozwarty. Dwa takie kąty miałyby już razem co najmniej 180° – na trzeci nic by nie zostało.</div>
+          <h3>Suma kątów w czworokącie</h3>
+          <p>Przekątna dzieli czworokąt na <b>dwa trójkąty</b>. Dlatego kąty czworokąta mają razem <span class="f">2 · 180° = 360°</span>.</p>
+          <ul>
+            <li>kąty 80°, 100° i 70° → czwarty: <span class="f">360° − 250° = 110°</span></li>
+            <li>prostokąt i kwadrat: 4 · 90° = 360°</li>
+            <li><b>równoległobok</b>: kąty naprzeciwko siebie są równe, a dwa kąty przy tym samym boku mają razem 180° (np. 70° i 110°)</li>
+            <li><b>trapez prostokątny</b>: dwa kąty proste; dwa pozostałe mają razem 180° (np. 60° i 120°)</li>
+          </ul>
+          <h3>Czy z tych odcinków zbudujesz trójkąt?</h3>
+          <p>Trójkąt da się zbudować tylko wtedy, gdy <b>najdłuższy odcinek jest krótszy od sumy dwóch pozostałych</b>.</p>
+          <ul>
+            <li>3 cm, 4 cm, 5 cm: 3 + 4 = 7 &gt; 5 → <b>tak</b></li>
+            <li>2 cm, 3 cm, 6 cm: 2 + 3 = 5 &lt; 6 → <b>nie</b> (krótkie boki się nie spotkają)</li>
+            <li>2 cm, 3 cm, 5 cm: 2 + 3 = 5 – tyle samo co najdłuższy → <b>nie</b> (boki położą się płasko na najdłuższym)</li>
+          </ul>
+          <h3>Konstrukcja trójkąta o danych bokach (cyrkiel i linijka)</h3>
+          <ol>
+            <li>Narysuj linijką odcinek AB – jeden z boków.</li>
+            <li>Rozstaw cyrkiel na długość drugiego boku, wbij nóżkę w A i narysuj łuk.</li>
+            <li>Rozstaw cyrkiel na długość trzeciego boku, wbij nóżkę w B i narysuj łuk.</li>
+            <li>Punkt przecięcia łuków to wierzchołek C. Połącz go z A i B.</li>
+          </ol>
+          <p>Jeśli łuki się nie przecinają – z tych odcinków nie da się zbudować trójkąta.</p>
+        `,
+        flashcards: [
+          ['Suma kątów w trójkącie', '180°'],
+          ['Suma kątów w czworokącie', '360° (dwa trójkąty)'],
+          ['Brakujący kąt trójkąta', '180° minus suma dwóch znanych kątów'],
+          ['Kąty 50° i 60° – trzeci kąt?', '70°'],
+          ['Kąty ostre w trójkącie prostokątnym', 'Mają razem 90°'],
+          ['Kąty trójkąta równobocznego', 'Każdy ma 60°'],
+          ['Trójkąt równoramienny – kąty', 'Kąty przy podstawie są równe'],
+          ['Ile kątów rozwartych może mieć trójkąt?', 'Najwyżej jeden'],
+          ['Równoległobok – kąty', 'Przeciwległe równe; dwa przy tym samym boku mają razem 180°'],
+          ['Kiedy z trzech odcinków zbudujesz trójkąt?', 'Gdy najdłuższy jest krótszy od sumy dwóch pozostałych'],
+          ['2 cm, 3 cm, 6 cm – trójkąt?', 'Nie, bo 2 + 3 = 5, a 5 < 6'],
+          ['Czym odkładasz długości boków w konstrukcji?', 'Cyrklem – łuki z obu końców odcinka przecinają się w trzecim wierzchołku'],
+        ],
+        questions: [
+          { id: 'p88ocq', q: 'Ile stopni mają razem wszystkie kąty dowolnego trójkąta?', options: ['180°', '360°', '90°', '270°'], answer: 0, explain: 'Suma kątów w każdym trójkącie to 180° – oderwane rogi trójkąta składają się w kąt półpełny.' },
+          { id: '8euvvm', q: 'Dwa kąty trójkąta mają 50° i 60°. Ile stopni ma trzeci kąt?', options: ['70°', '80°', '110°', '60°'], answer: 0, explain: '180° − (50° + 60°) = 180° − 110° = 70°. Sprawdzenie: 50° + 60° + 70° = 180°.' },
+          { id: 'a97mc6', q: 'Dwa kąty trójkąta mają 35° i 45°. Ile stopni ma trzeci kąt?', options: ['100°', '80°', '90°', '110°'], answer: 0, explain: '35° + 45° = 80°, a 180° − 80° = 100°. Ten trójkąt jest rozwartokątny.' },
+          { id: 'vnvwqs', q: 'W trójkącie prostokątnym jeden z kątów ostrych ma 30°. Ile ma drugi kąt ostry?', options: ['60°', '30°', '150°', '70°'], answer: 0, explain: 'Kąty ostre trójkąta prostokątnego mają razem 90°: 90° − 30° = 60°.' },
+          { id: '92cxow', q: 'Ile stopni ma każdy kąt trójkąta równobocznego?', options: ['60°', '90°', '45°', '180°'], answer: 0, explain: 'Wszystkie kąty są równe: 180° : 3 = 60°.' },
+          { id: 'yvhqvv', q: 'W trójkącie równoramiennym kąt między ramionami ma 40°. Ile stopni ma każdy kąt przy podstawie?', options: ['70°', '140°', '40°', '50°'], answer: 0, explain: 'Kąty przy podstawie są równe: (180° − 40°) : 2 = 140° : 2 = 70°. Sprawdzenie: 40° + 70° + 70° = 180°.' },
+          { id: '0cyfhq', q: 'W trójkącie równoramiennym kąt przy podstawie ma 50°. Ile stopni ma kąt między ramionami?', options: ['80°', '50°', '130°', '100°'], answer: 0, explain: 'Oba kąty przy podstawie mają po 50°: 180° − 50° − 50° = 80°.' },
+          { id: 'l6mkiy', q: 'Które trzy kąty mogą być kątami jednego trójkąta?', options: ['50°, 60°, 70°', '60°, 60°, 70°', '90°, 90°, 10°', '30°, 40°, 50°'], answer: 0, explain: 'Tylko 50° + 60° + 70° = 180°. Pozostałe sumy: 190°, 190° i 120°.' },
+          { id: '3kbngx', q: 'W trójkącie jeden kąt jest prosty. Ile stopni mają razem dwa pozostałe kąty?', options: ['90°', '180°', '45°', '270°'], answer: 0, explain: '180° − 90° = 90°.' },
+          {
+            id: 'l36emm',
+            q: 'Ile stopni ma kąt x w trójkącie z rysunku?',
+            svg: `<svg viewBox="0 0 320 200" role="img" aria-label="Trójkąt: kąt przy lewym dolnym wierzchołku 45 stopni, przy prawym dolnym 75 stopni, kąt przy górnym wierzchołku oznaczony literą x">
+      <path d="M60,175 L260,175 L218,17 Z" class="f1 s1 sw"/>
+      <path d="M95,175 A35,35 0 0 0 85,150" class="ln"/>
+      <path d="M232,175 A28,28 0 0 1 253,148" class="ln"/>
+      <text x="100" y="166" class="tx">45°</text>
+      <text x="226" y="166" class="tx" text-anchor="end">75°</text>
+      <text x="216" y="58" class="tx-b" text-anchor="middle">x</text>
+    </svg>`,
+            options: ['60°', '120°', '75°', '30°'],
+            answer: 0,
+            explain: '45° + 75° = 120°, więc x = 180° − 120° = 60°.',
+          },
+          { id: 'ojwe3a', q: 'Ile stopni mają razem wszystkie kąty czworokąta?', options: ['360°', '180°', '400°', '90°'], answer: 0, explain: 'Przekątna dzieli czworokąt na dwa trójkąty: 2 · 180° = 360°.' },
+          { id: 'k7p9e8', q: 'Trzy kąty czworokąta mają 80°, 100° i 70°. Ile stopni ma czwarty kąt?', options: ['110°', '100°', '70°', '290°'], answer: 0, explain: '80° + 100° + 70° = 250°, a 360° − 250° = 110°.' },
+          { id: 'qr69f7', q: 'Jeden kąt równoległoboku ma 70°. Ile stopni ma kąt leżący przy tym samym boku?', options: ['110°', '70°', '20°', '290°'], answer: 0, explain: 'Dwa kąty przy tym samym boku równoległoboku mają razem 180°: 180° − 70° = 110°.' },
+          {
+            id: 'vq8zyz',
+            q: 'Trapez prostokątny ma kąty jak na rysunku. Ile stopni ma kąt x?',
+            svg: `<svg viewBox="0 0 340 200" role="img" aria-label="Trapez prostokątny: dwa kąty proste po lewej stronie, kąt przy prawym górnym wierzchołku ma 120 stopni, kąt przy prawym dolnym wierzchołku oznaczony literą x">
+      <path d="M60,170 L300,170 L225,40 L60,40 Z" class="f3 s3 sw"/>
+      <path d="M60,154 L76,154 L76,170" class="ln"/>
+      <path d="M60,56 L76,56 L76,40" class="ln"/>
+      <path d="M205,40 A20,20 0 0 0 235,57" class="ln"/>
+      <path d="M270,170 A30,30 0 0 1 285,144" class="ln"/>
+      <text x="200" y="82" class="tx">120°</text>
+      <text x="262" y="160" class="tx-b" text-anchor="end">x</text>
+    </svg>`,
+            options: ['60°', '120°', '90°', '30°'],
+            answer: 0,
+            explain: 'Kąty czworokąta mają razem 360°: 360° − 90° − 90° − 120° = 60°.',
+          },
+          { id: 'lidy2i', q: 'Z których odcinków można zbudować trójkąt?', options: ['3 cm, 4 cm, 5 cm', '2 cm, 3 cm, 6 cm', '1 cm, 2 cm, 3 cm', '4 cm, 4 cm, 9 cm'], answer: 0, explain: '3 + 4 = 7, a 7 > 5. W pozostałych: 2 + 3 = 5 < 6; 1 + 2 = 3 (tyle samo co najdłuższy); 4 + 4 = 8 < 9.' },
+          { id: 'r7jcg6', q: 'Z których odcinków NIE da się zbudować trójkąta?', options: ['2 cm, 4 cm, 7 cm', '5 cm, 5 cm, 5 cm', '3 cm, 5 cm, 7 cm', '4 cm, 6 cm, 9 cm'], answer: 0, explain: '2 + 4 = 6, a najdłuższy odcinek ma 7 cm – krótsze boki się nie spotkają. W pozostałych suma krótszych jest większa od najdłuższego.' },
+          { id: 'znq6cc', q: 'Jak najszybciej sprawdzić, czy z trzech odcinków da się zbudować trójkąt?', options: ['najdłuższy odcinek musi być krótszy od sumy dwóch pozostałych', 'wszystkie odcinki muszą być równe', 'suma odcinków musi wynosić 180', 'najkrótszy odcinek musi być dłuższy od sumy dwóch pozostałych'], answer: 0, explain: 'Wystarczy porównać najdłuższy odcinek z sumą dwóch krótszych.' },
+          { id: 'j33lez', q: 'Konstruujesz trójkąt o danych bokach. Którym przyrządem odkładasz długości dwóch pozostałych boków od końców narysowanego odcinka?', options: ['cyrklem', 'kątomierzem', 'kalkulatorem', 'gumką'], answer: 0, explain: 'Cyrklem rysujesz łuki o promieniach równych długościom boków. Ich punkt przecięcia to trzeci wierzchołek.' },
+          { id: 'qovnx1', q: 'Prawda czy fałsz?\nTrójkąt może mieć dwa kąty rozwarte.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Dwa kąty rozwarte miałyby razem ponad 180° – a wszystkie trzy kąty trójkąta mają razem dokładnie 180°.' },
+          { id: 'ta7yrx', q: 'Prawda czy fałsz?\nW każdym trójkącie równoramiennym kąty przy podstawie są równe.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'To własność trójkąta równoramiennego: równe ramiona i równe kąty przy podstawie.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
+        id: 'objetosc',
+        name: 'Pole powierzchni i objętość prostopadłościanu',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 4 Figury, wym. 21 (pole powierzchni prostopadłościanu), 22 (objętość prostopadłościanu o podanych krawędziach i bryły zbudowanej z kilku prostopadłościanów); dz. 2 Miary, wym. 5 (jednostki objętości i pojemności: cm³, dm³, m³, mililitr, litr), 6 (przeliczanie jednostek objętości w kontekstach praktycznych). Ciąg dalszy działu „Prostopadłościan i sześcian”.' + WYBOR,
+        theory: `
+          <h3>Pole powierzchni</h3>
+          <p><b>Pole powierzchni</b> prostopadłościanu to suma pól jego <b>sześciu ścian</b> – tyle papieru potrzeba, żeby okleić pudełko. Ściany tworzą <b>trzy pary</b> jednakowych prostokątów.</p>
+          <p>Krawędzie: a, b, c. Pary ścian mają pola a · b, b · c i a · c, więc:</p>
+          <p><span class="f">P = 2 · a · b + 2 · b · c + 2 · a · c</span></p>
+          <p>Przykład: 5 cm × 3 cm × 2 cm → <span class="f">P = 2 · 15 + 2 · 6 + 2 · 10 = 30 + 12 + 20 = 62 cm²</span></p>
+          <p><b>Sześcian</b> ma 6 jednakowych kwadratów: <span class="f">P = 6 · a · a</span>. Krawędź 4 cm → P = 6 · 16 = 96 cm².</p>
+          <div class="tip">💡 Pudełko <b>bez wieka</b> ma tylko 5 ścian – jedną odejmij. Pudełko 10 cm × 10 cm × 5 cm bez wieka: 100 + 4 · 50 = 300 cm².</div>
+          <h3>Objętość</h3>
+          <p><b>Objętość</b> mówi, ile miejsca zajmuje bryła. Mierzymy ją w <b>sześcianach jednostkowych</b>: 1 cm³ to sześcian o krawędzi 1 cm.</p>
+          <p>Pudełko 4 cm × 3 cm × 2 cm: na dnie zmieści się 4 · 3 = 12 kostek, a takich warstw są 2 → 24 kostki, czyli 24 cm³.</p>
+          <p><span class="f">V = a · b · c</span> &nbsp;&nbsp; sześcian: <span class="f">V = a · a · a</span></p>
+          <ul>
+            <li>5 cm × 3 cm × 2 cm → V = 30 cm³</li>
+            <li>sześcian o krawędzi 4 cm → V = 4 · 4 · 4 = 64 cm³</li>
+          </ul>
+          <h3>Jednostki objętości i pojemności</h3>
+          <table>
+            <tr><th>Jednostka</th><th>Ile to?</th></tr>
+            <tr><td>1 cm³</td><td>= <b>1 ml</b> (mililitr)</td></tr>
+            <tr><td>1 dm³</td><td>= 10 · 10 · 10 cm³ = <b>1000 cm³</b> = <b>1 l</b> (litr)</td></tr>
+            <tr><td>1 m³</td><td>= 1000 dm³ = <b>1000 l</b></td></tr>
+          </table>
+          <p>Akwarium 50 cm × 30 cm × 40 cm: V = 60 000 cm³ = 60 dm³ = <b>60 l</b>.</p>
+          <h3>Bryła z kilku prostopadłościanów</h3>
+          <p>Podziel bryłę na prostopadłościany, oblicz objętość każdego i dodaj. Np. 4 cm × 3 cm × 2 cm i 2 cm × 3 cm × 2 cm: 24 + 12 = 36 cm³.</p>
+          <div class="tip">💡 Pole – w jednostkach „do kwadratu” (cm²), objętość – „do sześcianu” (cm³). Przed liczeniem zamień wszystkie krawędzie na te same jednostki.</div>
+        `,
+        flashcards: [
+          ['Pole powierzchni prostopadłościanu', 'Suma pól 6 ścian: P = 2·a·b + 2·b·c + 2·a·c'],
+          ['Pole powierzchni sześcianu', 'P = 6 · a · a'],
+          ['Objętość prostopadłościanu', 'V = a · b · c'],
+          ['Objętość sześcianu', 'V = a · a · a'],
+          ['1 cm³', 'Sześcian o krawędzi 1 cm; to 1 ml'],
+          ['1 dm³', '1000 cm³ = 1 litr'],
+          ['1 m³', '1000 dm³ = 1000 litrów'],
+          ['5 cm × 3 cm × 2 cm', 'P = 62 cm², V = 30 cm³'],
+          ['Sześcian o krawędzi 4 cm', 'P = 96 cm², V = 64 cm³'],
+          ['Pudełko bez wieka', 'Ma 5 ścian – licz pole bez jednej ściany'],
+          ['Objętość bryły złożonej', 'Suma objętości prostopadłościanów, z których się składa'],
+          ['cm² czy cm³?', 'Pole – cm², objętość – cm³'],
+        ],
+        questions: [
+          { id: 'uewmza', q: 'Czym jest pole powierzchni prostopadłościanu?', options: ['sumą pól wszystkich sześciu ścian', 'iloczynem długości trzech krawędzi', 'sumą długości wszystkich krawędzi', 'polem jednej podstawy'], answer: 0, explain: 'Pole powierzchni to tyle, ile papieru potrzeba na oklejenie wszystkich 6 ścian.' },
+          { id: 'o0xl9e', q: 'Prostopadłościan ma krawędzie 5 cm, 3 cm i 2 cm. Jakie ma pole powierzchni?', options: ['62 cm²', '30 cm²', '31 cm²', '40 cm²'], answer: 0, explain: 'P = 2 · 5 · 3 + 2 · 3 · 2 + 2 · 5 · 2 = 30 + 12 + 20 = 62 cm². 30 to objętość (w cm³), 31 – suma pól tylko trzech ścian.' },
+          { id: 'nv964t', q: 'Sześcian ma krawędź 3 cm. Jakie ma pole powierzchni?', options: ['54 cm²', '27 cm²', '9 cm²', '36 cm²'], answer: 0, explain: 'Jedna ściana: 3 · 3 = 9 cm². Ścian jest 6: 6 · 9 = 54 cm².' },
+          { id: 'guvcra', q: 'Prostopadłościan ma krawędzie 5 cm, 3 cm i 2 cm. Jaka jest jego objętość?', options: ['30 cm³', '62 cm³', '10 cm³', '60 cm³'], answer: 0, explain: 'V = 5 · 3 · 2 = 30 cm³.' },
+          { id: '3em0a0', q: 'Sześcian ma krawędź 4 cm. Jaka jest jego objętość?', options: ['64 cm³', '16 cm³', '48 cm³', '96 cm³'], answer: 0, explain: 'V = 4 · 4 · 4 = 64 cm³. 96 to pole powierzchni (w cm²), a 16 – pole jednej ściany.' },
+          { id: 'kqi5hk', q: 'Ile sześcianików o krawędzi 1 cm zmieści się w pudełku 4 cm × 3 cm × 2 cm?', options: ['24', '9', '26', '12'], answer: 0, explain: 'Na dnie: 4 · 3 = 12 sześcianików. Dwie warstwy: 12 · 2 = 24.' },
+          {
+            id: '31e4da',
+            q: 'Oblicz objętość prostopadłościanu z rysunku.',
+            svg: `<svg viewBox="0 0 320 200" role="img" aria-label="Prostopadłościan o krawędziach: długość 6 cm, szerokość 4 cm, wysokość 3 cm">
+      <path d="M40,80 L220,80 L220,170 L40,170 Z" class="f1 s1 sw"/>
+      <path d="M40,80 L100,30 L280,30 L220,80 Z" class="f4 s4 sw"/>
+      <path d="M220,80 L280,30 L280,120 L220,170 Z" class="f3 s3 sw"/>
+      <text x="130" y="192" class="tx" text-anchor="middle">6 cm</text>
+      <text x="254" y="160" class="tx">4 cm</text>
+      <text x="48" y="130" class="tx">3 cm</text>
+    </svg>`,
+            options: ['72 cm³', '13 cm³', '108 cm³', '36 cm³'],
+            answer: 0,
+            explain: 'V = 6 · 4 · 3 = 72 cm³. 108 to pole powierzchni tego prostopadłościanu (w cm²).',
+          },
+          {
+            id: 'm7tbt5',
+            q: 'Oblicz pole powierzchni prostopadłościanu z rysunku.',
+            svg: `<svg viewBox="0 0 320 200" role="img" aria-label="Prostopadłościan o krawędziach: długość 6 cm, szerokość 4 cm, wysokość 3 cm">
+      <path d="M40,80 L220,80 L220,170 L40,170 Z" class="f1 s1 sw"/>
+      <path d="M40,80 L100,30 L280,30 L220,80 Z" class="f4 s4 sw"/>
+      <path d="M220,80 L280,30 L280,120 L220,170 Z" class="f3 s3 sw"/>
+      <text x="130" y="192" class="tx" text-anchor="middle">6 cm</text>
+      <text x="254" y="160" class="tx">4 cm</text>
+      <text x="48" y="130" class="tx">3 cm</text>
+    </svg>`,
+            options: ['108 cm²', '72 cm²', '54 cm²', '52 cm²'],
+            answer: 0,
+            explain: 'P = 2 · 6 · 4 + 2 · 4 · 3 + 2 · 6 · 3 = 48 + 24 + 36 = 108 cm². 54 to tylko trzy ściany, a 52 cm – suma długości krawędzi.',
+          },
+          { id: 'eabmkb', q: 'Ile centymetrów sześciennych ma 1 dm³?', options: ['1000 cm³', '100 cm³', '10 cm³', '10 000 cm³'], answer: 0, explain: '1 dm = 10 cm, więc 1 dm³ = 10 · 10 · 10 = 1000 cm³.' },
+          { id: '7l9nom', q: 'Ile to jest 1 litr?', options: ['1 dm³', '1 cm³', '1 m³', '10 dm³'], answer: 0, explain: '1 l = 1 dm³ = 1000 cm³.' },
+          { id: 'bg74k7', q: 'Ile to jest 1 ml?', options: ['1 cm³', '1 dm³', '10 cm³', '100 cm³'], answer: 0, explain: '1 ml to tysięczna część litra: 1000 ml = 1 l = 1000 cm³, więc 1 ml = 1 cm³.' },
+          { id: '3fn5u3', q: 'Ile litrów to 1 m³?', options: ['1000 l', '100 l', '10 l', '1 000 000 l'], answer: 0, explain: '1 m = 10 dm, więc 1 m³ = 10 · 10 · 10 = 1000 dm³ = 1000 l.' },
+          { id: '27ent5', q: 'Akwarium ma wymiary 50 cm × 30 cm × 40 cm. Ile litrów wody się w nim zmieści?', options: ['60 l', '600 l', '6 l', '6000 l'], answer: 0, explain: 'V = 50 · 30 · 40 = 60 000 cm³. 1000 cm³ = 1 l, więc 60 000 cm³ = 60 l.' },
+          { id: 'c9ty9f', q: 'Karton o podstawie 10 cm × 5 cm mieści dokładnie 1 litr. Jaką ma wysokość?', options: ['20 cm', '10 cm', '15 cm', '50 cm'], answer: 0, explain: '1 l = 1000 cm³. Pole podstawy: 10 · 5 = 50 cm². Wysokość: 1000 : 50 = 20 cm. Sprawdzenie: 10 · 5 · 20 = 1000.' },
+          { id: 'x6wq5n', q: 'Ile kartonu potrzeba na pudełko bez wieka o wymiarach 10 cm × 10 cm × 5 cm?', options: ['300 cm²', '400 cm²', '500 cm²', '250 cm²'], answer: 0, explain: 'Dno: 10 · 10 = 100 cm². Cztery boki: 4 · (10 · 5) = 200 cm². Razem 300 cm². 400 cm² to pudełko z wiekiem.' },
+          { id: 'gyugfv', q: 'Bryła składa się z dwóch prostopadłościanów: 4 cm × 3 cm × 2 cm i 2 cm × 3 cm × 2 cm. Jaka jest jej objętość?', options: ['36 cm³', '24 cm³', '12 cm³', '288 cm³'], answer: 0, explain: '4 · 3 · 2 = 24 cm³ i 2 · 3 · 2 = 12 cm³. Razem 24 + 12 = 36 cm³.' },
+          { id: 'ydxmqd', q: 'Basen ma wymiary 10 m × 5 m × 2 m. Jaka jest jego objętość?', options: ['100 m³', '17 m³', '160 m³', '50 m³'], answer: 0, explain: 'V = 10 · 5 · 2 = 100 m³, czyli 100 000 litrów. 160 to pole powierzchni (w m²), 17 – suma trzech krawędzi.' },
+          { id: 'j04ce0', q: 'Jeden sześcian ma krawędź 1 cm, a drugi 2 cm. Ile razy większa jest objętość drugiego sześcianu?', options: ['8 razy', '2 razy', '4 razy', '6 razy'], answer: 0, explain: 'Objętości: 1 · 1 · 1 = 1 cm³ i 2 · 2 · 2 = 8 cm³. W drugim sześcianie zmieści się 8 małych.' },
+          { id: 'lm2zq9', q: 'Prawda czy fałsz?\nObjętość podajemy w cm², a pole powierzchni w cm³.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Odwrotnie: pole – w cm² (kwadraciki), objętość – w cm³ (sześcianiki).' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
         id: 'dane',
         name: 'Tabele i diagramy',
         basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 5 Dane, wym. 1 (odczytywanie danych z tekstu, tabel i diagramów; porównywanie cen, kosztów i wydatków na paragonach i w tabelach – moduł ekonomiczno-finansowy), wym. 2 (proste badanie: zbieranie danych, uporządkowany zapis, wnioski).' + WYBOR,
@@ -1844,6 +2059,93 @@
           { id: 's3icq8', q: 'W ankiecie w jednej klasie najwięcej osób wybrało piłkę nożną. Ktoś napisał: „Wszystkie dzieci w Polsce najbardziej lubią piłkę nożną”. Czy to dobry wniosek?', options: ['Nie – zapytano tylko jedną klasę', 'Tak – bo piłka wygrała', 'Tak – bo ankieta była w szkole'], answer: 0, explain: 'Wniosek może dotyczyć tylko tych, których zapytano – tu jednej klasy.' },
           { id: 'gqafns', q: 'Prawda czy fałsz?\nW piktogramie jeden obrazek zawsze oznacza jedną rzecz.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Ile oznacza obrazek, mówi legenda – np. 1 obrazek = 10 puszek.' },
           { id: 'm00cub', q: 'Prawda czy fałsz?\nNa osi diagramu kolejne kreski mogą oznaczać np. co 2 albo co 5.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Skala może być różna – dlatego zawsze najpierw ją sprawdzamy.' },
+        ],
+      },
+
+      // ------------------------------------------------------------------
+      {
+        id: 'srednia',
+        name: 'Średnia arytmetyczna',
+        basis: 'Dz.U. 2026 poz. 378, matematyka kl. IV–VI: dz. 5 Dane, wym. 3 (średnia arytmetyczna przy opisie zjawisk z życia codziennego), wym. 4 (dane o wydatkach, ich średnia wartość, wnioski o opłacalności różnych rozwiązań – moduł ekonomiczno-finansowy), wym. 1 (odczytywanie danych z diagramu); dz. 6 Myślenie matematyczne (ocena sensowności wyniku, krytyczna interpretacja danych). W obliczeniach tylko liczby naturalne i proste ułamki dziesiętne (dzielenie przez liczbę naturalną). Ciąg dalszy działu „Tabele i diagramy”.' + WYBOR,
+        theory: `
+          <h3>Co to jest średnia?</h3>
+          <p><b>Średnia arytmetyczna</b> mówi, ile wypadłoby „na każdego”, gdyby wszystko podzielić <b>po równo</b>.</p>
+          <p><span class="f">średnia = suma liczb : ile jest liczb</span></p>
+          <ul>
+            <li>oceny 4, 5, 3, 4: <span class="f">(4 + 5 + 3 + 4) : 4 = 16 : 4 = 4</span></li>
+            <li>liczby 2, 6, 7: <span class="f">15 : 3 = 5</span></li>
+          </ul>
+          <p>Wyobraź sobie słupki z klocków o wysokości 2, 6 i 7. Przekładasz klocki z wyższych na niższe, aż wszystkie będą równe – każdy będzie miał 5 klocków.</p>
+          <h3>Ważne własności</h3>
+          <ul>
+            <li>Średnia leży <b>między najmniejszą a największą</b> liczbą (gdy wszystkie liczby są równe – jest im równa).</li>
+            <li>Średnia <b>nie musi być jedną z liczb</b> – średnia z 10 i 15 to 12,5.</li>
+            <li>Gdy znasz średnią i to, ile jest liczb, znasz też ich <b>sumę</b>: <span class="f">suma = średnia · ile liczb</span>.</li>
+          </ul>
+          <h3>Brakująca liczba</h3>
+          <p>Średnia trzech liczb to 6, a dwie z nich to 5 i 8. Suma wszystkich: 6 · 3 = 18. Trzecia liczba: 18 − 5 − 8 = <b>5</b>.</p>
+          <h3>Średnia w życiu i w portfelu</h3>
+          <ul>
+            <li>Wydatki w tygodniu: 12 zł, 8 zł, 10 zł, 6 zł, 14 zł → <span class="f">50 zł : 5 = 10 zł</span> średnio dziennie.</li>
+            <li>Bilet miesięczny za 60 zł i 30 przejazdów → średnio <span class="f">60 zł : 30 = 2 zł</span> za przejazd.</li>
+            <li>Co się bardziej opłaca? Bilet jednorazowy kosztuje 4 zł, miesięczny 60 zł. Przy 20 przejazdach: 20 · 4 zł = 80 zł, a miesięczny – 60 zł. Miesięczny jest tańszy o 20 zł.</li>
+            <li>3 zeszyty po 4 zł i 1 zeszyt za 8 zł → średnia cena: <span class="f">(12 + 8) : 4 = 5 zł</span>.</li>
+          </ul>
+          <h3>Uwaga na wyjątki</h3>
+          <p>Kieszonkowe pięciorga dzieci: 10 zł, 10 zł, 10 zł, 10 zł i 60 zł. Średnia to 100 : 5 = <b>20 zł</b>, choć aż czworo dzieci dostaje 10 zł. Jedna bardzo duża (albo bardzo mała) liczba mocno zmienia średnią – patrz też na same dane.</p>
+          <div class="tip">💡 Sprawdzaj wynik: średnia mniejsza od najmniejszej liczby albo większa od największej to na pewno błąd.</div>
+        `,
+        flashcards: [
+          ['Średnia arytmetyczna', 'Suma liczb podzielona przez to, ile jest liczb'],
+          ['Średnia z 4, 5, 3, 4', '16 : 4 = 4'],
+          ['Średnia z 2, 6, 7', '15 : 3 = 5'],
+          ['Średnia z 10 i 15', '12,5 – nie musi być jedną z liczb'],
+          ['Gdzie leży średnia?', 'Między najmniejszą a największą liczbą'],
+          ['Suma, gdy znasz średnią', 'suma = średnia · ile liczb'],
+          ['Średnia 3 liczb to 6; dwie to 5 i 8. Trzecia?', '18 − 5 − 8 = 5'],
+          ['Bilet za 60 zł, 30 przejazdów', 'Średnio 2 zł za przejazd'],
+          ['Kieszonkowe 10, 10, 10, 10, 60 zł – średnia?', '20 zł – jedna duża liczba podnosi średnią'],
+          ['Średnia „po równo”', 'Tyle wypadłoby na każdego przy równym podziale'],
+          ['Jak sprawdzić średnią?', 'Musi być między najmniejszą a największą liczbą'],
+        ],
+        questions: [
+          { id: 'eiumvm', q: 'Jak obliczyć średnią arytmetyczną kilku liczb?', options: ['dodać wszystkie liczby i podzielić sumę przez to, ile ich jest', 'od największej liczby odjąć najmniejszą', 'wybrać liczbę, która powtarza się najczęściej', 'pomnożyć wszystkie liczby przez siebie'], answer: 0, explain: 'Średnia = suma liczb : liczba składników.' },
+          { id: 'w0a0mr', q: 'Zosia dostała oceny 4, 5, 3 i 4. Jaka jest średnia jej ocen?', options: ['4', '5', '16', '3,5'], answer: 0, explain: '(4 + 5 + 3 + 4) : 4 = 16 : 4 = 4.' },
+          { id: 'hn37y6', q: 'Jaka jest średnia arytmetyczna liczb 2, 6 i 7?', options: ['5', '15', '6', '7'], answer: 0, explain: '2 + 6 + 7 = 15, a 15 : 3 = 5. 15 to sama suma – trzeba ją jeszcze podzielić.' },
+          { id: 'mxoe5r', q: 'Jaka jest średnia arytmetyczna liczb 10 i 15?', options: ['12,5', '25', '12', '13'], answer: 0, explain: '(10 + 15) : 2 = 25 : 2 = 12,5. Średnia nie musi być liczbą naturalną ani jedną z danych liczb.' },
+          { id: 't0ry1o', q: 'Kuba wydawał w kolejne dni tygodnia: 12 zł, 8 zł, 10 zł, 6 zł i 14 zł. Ile wydawał średnio dziennie?', options: ['10 zł', '50 zł', '8 zł', '12 zł'], answer: 0, explain: 'Suma: 12 + 8 + 10 + 6 + 14 = 50 zł. Dni: 5. Średnia: 50 : 5 = 10 zł.' },
+          { id: 'a0ah5x', q: 'W poniedziałek było 12°C, we wtorek 15°C, a w środę 18°C. Jaka była średnia temperatura z tych dni?', options: ['15°C', '45°C', '18°C', '12°C'], answer: 0, explain: '(12 + 15 + 18) : 3 = 45 : 3 = 15°C.' },
+          { id: '7aeobj', q: 'Czworo dzieci ma 140 cm, 150 cm, 145 cm i 145 cm wzrostu. Jaki jest ich średni wzrost?', options: ['145 cm', '150 cm', '580 cm', '140 cm'], answer: 0, explain: 'Suma: 140 + 150 + 145 + 145 = 580 cm. Średnia: 580 : 4 = 145 cm.' },
+          { id: '1b1ruw', q: 'Bartek skoczył w dal 3,2 m, 3,5 m i 3,8 m. Jaka jest średnia długość jego skoku?', options: ['3,5 m', '10,5 m', '3,8 m', '3,2 m'], answer: 0, explain: '3,2 + 3,5 + 3,8 = 10,5 m, a 10,5 : 3 = 3,5 m.' },
+          { id: 'jnzm6h', q: 'Średnia trzech ocen Kasi to 4. Ile wynosi suma tych ocen?', options: ['12', '4', '7', '3'], answer: 0, explain: 'Suma = średnia · liczba ocen = 4 · 3 = 12.' },
+          { id: 'uhpohv', q: 'Średnia trzech liczb to 6. Dwie z nich to 5 i 8. Jaka jest trzecia liczba?', options: ['5', '6', '7', '13'], answer: 0, explain: 'Suma trzech liczb: 6 · 3 = 18. Trzecia: 18 − 5 − 8 = 5. Sprawdzenie: (5 + 8 + 5) : 3 = 6.' },
+          { id: 'jdw7pm', q: 'Średnia dwóch liczb to 7. Jedna z nich to 4. Jaka jest druga?', options: ['10', '3', '11', '7'], answer: 0, explain: 'Suma: 7 · 2 = 14. Druga liczba: 14 − 4 = 10. Sprawdzenie: (4 + 10) : 2 = 7.' },
+          { id: 'fu7s66', q: 'Ola ma oceny 5, 5 i 4. Jaką ocenę musi dostać, żeby średnia z czterech ocen wyniosła 4,5?', options: ['4', '5', '3', '2'], answer: 0, explain: 'Suma czterech ocen: 4,5 · 4 = 18. Ola ma już 5 + 5 + 4 = 14. Brakuje 18 − 14 = 4.' },
+          { id: 'rxtrmw', q: 'Co na pewno jest prawdą o średniej arytmetycznej kilku różnych liczb?', options: ['leży między najmniejszą a największą z nich', 'jest jedną z tych liczb', 'jest większa od największej z nich', 'zawsze jest liczbą naturalną'], answer: 0, explain: 'Średnia „wyrównuje” liczby, więc nie może być mniejsza od najmniejszej ani większa od największej. Nie musi być jedną z nich ani liczbą naturalną.' },
+          { id: 'jrnids', q: 'Bilet miesięczny kosztuje 60 zł. Kuba przejechał na nim 30 razy. Ile średnio zapłacił za jeden przejazd?', options: ['2 zł', '30 zł', '90 zł', '4 zł'], answer: 0, explain: '60 zł : 30 = 2 zł za przejazd.' },
+          { id: 'c2w0ge', q: 'Bilet jednorazowy kosztuje 4 zł, a miesięczny 60 zł. Jeździsz 20 razy w miesiącu. Co się bardziej opłaca?', options: ['miesięczny – oszczędzasz 20 zł', 'jednorazowe – oszczędzasz 20 zł', 'oba wychodzą tak samo', 'jednorazowe – oszczędzasz 60 zł'], answer: 0, explain: '20 biletów jednorazowych: 20 · 4 zł = 80 zł. Miesięczny: 60 zł. Różnica: 80 − 60 = 20 zł na korzyść miesięcznego.' },
+          { id: 'ci53r9', q: 'Kupiłeś 3 zeszyty po 4 zł i 1 zeszyt za 8 zł. Jaka była średnia cena zeszytu?', options: ['5 zł', '6 zł', '4 zł', '20 zł'], answer: 0, explain: 'Razem: 3 · 4 + 8 = 20 zł za 4 zeszyty. Średnio: 20 : 4 = 5 zł. 6 zł wyjdzie, gdy błędnie liczysz średnią z dwóch cen (4 i 8).' },
+          { id: 'zphxgx', q: 'Kieszonkowe pięciorga dzieci to: 10 zł, 10 zł, 10 zł, 10 zł i 60 zł. Jaka jest średnia?', options: ['20 zł', '10 zł', '60 zł', '100 zł'], answer: 0, explain: '(10 + 10 + 10 + 10 + 60) : 5 = 100 : 5 = 20 zł. Czworo dzieci dostaje 10 zł – jedna duża kwota mocno podniosła średnią.' },
+          {
+            id: '1quahv',
+            q: 'Diagram pokazuje, ile książek przeczytała Ania w kolejnych miesiącach. Ile książek czytała średnio w miesiącu?',
+            svg: `<svg viewBox="0 0 340 210" role="img" aria-label="Diagram słupkowy: wrzesień 2 książki, październik 4 książki, listopad 3 książki, grudzień 3 książki">
+      <g class="ln-thin"><line x1="50" y1="170" x2="320" y2="170"/><line x1="50" y1="135" x2="320" y2="135"/><line x1="50" y1="100" x2="320" y2="100"/><line x1="50" y1="65" x2="320" y2="65"/><line x1="50" y1="30" x2="320" y2="30"/></g>
+      <line x1="50" y1="20" x2="50" y2="170" class="ln"/>
+      <line x1="50" y1="170" x2="320" y2="170" class="ln"/>
+      <g class="tx-s" text-anchor="end"><text x="42" y="175">0</text><text x="42" y="140">1</text><text x="42" y="105">2</text><text x="42" y="70">3</text><text x="42" y="35">4</text></g>
+      <rect x="70" y="100" width="40" height="70" class="f1 s1"/>
+      <rect x="135" y="30" width="40" height="140" class="f1 s1"/>
+      <rect x="200" y="65" width="40" height="105" class="f1 s1"/>
+      <rect x="265" y="65" width="40" height="105" class="f1 s1"/>
+      <g class="tx-s" text-anchor="middle"><text x="90" y="192">wrz</text><text x="155" y="192">paź</text><text x="220" y="192">lis</text><text x="285" y="192">gru</text></g>
+    </svg>`,
+            options: ['3', '12', '4', '2'],
+            answer: 0,
+            explain: 'Z diagramu: 2, 4, 3, 3. Suma: 12 książek w 4 miesiące. Średnia: 12 : 4 = 3.',
+          },
+          { id: '7jciqq', q: 'Prawda czy fałsz?\nŚrednia arytmetyczna liczb 2, 4 i 9 jest równa 5.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: '2 + 4 + 9 = 15, a 15 : 3 = 5.' },
+          { id: '5e5qx9', q: 'Prawda czy fałsz?\nŚrednia arytmetyczna zawsze jest jedną z liczb, z których ją liczymy.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Nie musi: średnia z 10 i 15 to 12,5, a średnia z 2, 6 i 7 to 5.' },
         ],
       },
     ],

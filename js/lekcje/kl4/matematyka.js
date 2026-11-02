@@ -2026,3 +2026,338 @@ window.LESSONS['matematyka/pola-wielokatow'] = [
     check: { q: 'Równoległobok ma podstawę 6 cm, bok ukośny 5 cm i wysokość 4 cm. Jakie ma pole?', options: ['30 cm²', '24 cm²', '20 cm²'], answer: 1, explain: 'P = a · h = 6 · 4 = 24 cm². Bok ukośny (5 cm) nie jest potrzebny.' },
   },
 ];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['matematyka/katy-trojkata'] = [
+  {
+    title: 'Oderwij rogi trójkąta',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Trójkąt z trzema kolorowymi kątami. Po prawej te same trzy kąty przyłożone do siebie tworzą kąt półpełny – razem 180 stopni">
+      <defs><marker id="a-m10-kt-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <path d="M30,150 L190,150 L120,40 Z" class="bg ln sw"/>
+      <path d="M30,150 L52,150 A22,22 0 0 0 43.9,133 Z" class="f1 s1"/>
+      <path d="M190,150 L168,150 A22,22 0 0 1 178.2,131.4 Z" class="f2 s2"/>
+      <path d="M120,40 L106.1,57 A22,22 0 0 0 131.8,58.6 Z" class="f3 s3"/>
+      <path d="M205,110 L255,110" class="ln sw" marker-end="url(#a-m10-kt-1)"/>
+      <line x1="260" y1="150" x2="385" y2="150" class="ln sw"/>
+      <path d="M320,150 L370,150 A50,50 0 0 0 351.6,111.3 Z" class="f1 s1"/>
+      <path d="M320,150 L351.6,111.3 A50,50 0 0 0 293.1,107.8 Z" class="f3 s3"/>
+      <path d="M320,150 L293.1,107.8 A50,50 0 0 0 270,150 Z" class="f2 s2"/>
+      <text x="320" y="182" class="tx-b" text-anchor="middle">razem 180°</text>
+      <text x="110" y="182" class="tx-s" text-anchor="middle">trzy kąty trójkąta</text>
+    </svg>`,
+    text: `<p>Wytnij z papieru dowolny trójkąt, oderwij jego trzy rogi i przyłóż je do siebie wierzchołkami. Zawsze złożą się w <b>kąt półpełny</b>!</p>
+      <p>To znaczy, że w <b>każdym</b> trójkącie – dużym, małym, ostrokątnym czy rozwartokątnym – kąty mają razem <b>180°</b>.</p>`,
+    remember: 'Suma kątów w trójkącie = 180°.',
+    hook: 'Trzy kawałki pizzy z rogów trójkąta zawsze składają się w pół pizzy.',
+    check: { q: 'Ile stopni mają razem kąty trójkąta?', options: ['90°', '180°', '360°'], answer: 1, explain: 'W każdym trójkącie suma kątów to 180° – tyle co kąt półpełny.' },
+  },
+  {
+    title: 'Brakujący kąt',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Trójkąt z kątami 50 i 60 stopni przy podstawie i znakiem zapytania przy górnym wierzchołku. Obliczenie: 180 stopni minus 50 plus 60, czyli 180 minus 110, daje 70 stopni">
+      <path d="M40,170 L240,170 L158.5,28.8 Z" class="f1 s1 sw"/>
+      <path d="M72,170 A32,32 0 0 0 60.6,145.5" class="ln"/>
+      <path d="M212,170 A28,28 0 0 1 226,145.8" class="ln"/>
+      <text x="78" y="162" class="tx">50°</text>
+      <text x="206" y="162" class="tx" text-anchor="end">60°</text>
+      <text x="158" y="70" class="tx-b" text-anchor="middle">?</text>
+      <text x="262" y="70" class="tx">180° − (50° + 60°)</text>
+      <text x="262" y="102" class="tx">= 180° − 110°</text>
+      <text x="262" y="136" class="tx-b t3">= 70°</text>
+    </svg>`,
+    text: `<p>Znasz dwa kąty trójkąta? Trzeci łatwo obliczysz: <b>dodaj</b> znane kąty i <b>odejmij</b> wynik od 180°.</p>
+      <p>Kąty 50° i 60°: 50° + 60° = 110°, a 180° − 110° = <b>70°</b>. Sprawdzenie: 50° + 60° + 70° = 180°. ✔</p>`,
+    remember: 'Trzeci kąt = 180° − (suma dwóch znanych).',
+    hook: 'Masz 180 zł na trzy prezenty. Wydałeś 50 i 60 – na trzeci zostało 70.',
+    check: { q: 'Dwa kąty trójkąta mają 40° i 90°. Ile ma trzeci?', options: ['50°', '130°', '40°'], answer: 0, explain: '40° + 90° = 130°, a 180° − 130° = 50°.' },
+  },
+  {
+    title: 'Trójkąty szczególne',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Trzy trójkąty. Prostokątny: kąt prosty i dwa kąty ostre, które razem mają 90 stopni. Równoboczny: trzy kąty po 60 stopni. Równoramienny: dwa równe ramiona i równe kąty przy podstawie">
+      <path d="M15,150 L115,150 L15,55 Z" class="f3 s3 sw"/>
+      <path d="M15,136 L29,136 L29,150" class="ln"/>
+      <path d="M150,150 L250,150 L200,63.4 Z" class="f4 s4 sw"/>
+      <text x="168" y="144" class="tx-s">60°</text>
+      <text x="232" y="144" class="tx-s" text-anchor="end">60°</text>
+      <text x="200" y="100" class="tx-s" text-anchor="middle">60°</text>
+      <path d="M290,150 L400,150 L345,50 Z" class="f5 s5 sw"/>
+      <path d="M312,150 A22,22 0 0 0 300.6,130.7" class="ln s2 sw"/>
+      <path d="M378,150 A22,22 0 0 1 389.4,130.7" class="ln s2 sw"/>
+      <line x1="311" y1="102" x2="323" y2="96" class="ln"/>
+      <line x1="367" y1="96" x2="379" y2="102" class="ln"/>
+      <g class="tx-s" text-anchor="middle"><text x="65" y="174">prostokątny</text><text x="200" y="174">równoboczny</text><text x="345" y="174">równoramienny</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="65" y="194">ostre: razem 90°</text><text x="200" y="194">każdy 60°</text><text x="345" y="194">przy podstawie równe</text></g>
+    </svg>`,
+    text: `<p><b>Prostokątny</b>: jeden kąt ma 90°, więc dwa ostre mają razem 90° (np. 30° i 60°). <b>Równoboczny</b>: wszystkie kąty równe – 180° : 3 = <b>60°</b>.</p>
+      <p><b>Równoramienny</b>: kąty przy podstawie są <b>równe</b>. Kąt między ramionami 40°? Na dwa kąty przy podstawie zostaje 140°, czyli po <b>70°</b>.</p>
+      <p>Trójkąt ma najwyżej <b>jeden</b> kąt prosty albo rozwarty – dwa takie kąty to już co najmniej 180°.</p>`,
+    remember: 'Równoboczny: 60°, 60°, 60°. Równoramienny: równe kąty przy podstawie.',
+    hook: 'Równoramienny trójkąt jest jak domek z dachem – oba skosy dachu opadają pod tym samym kątem.',
+    check: { q: 'W trójkącie równoramiennym kąt przy podstawie ma 70°. Ile ma kąt między ramionami?', options: ['40°', '70°', '110°'], answer: 0, explain: 'Oba kąty przy podstawie mają po 70°: 180° − 70° − 70° = 40°.' },
+  },
+  {
+    title: 'Czworokąt = dwa trójkąty',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Czworokąt podzielony przekątną na dwa trójkąty. Każdy trójkąt ma 180 stopni, więc czworokąt ma 360 stopni. Przykład: kąty 80, 100 i 70 stopni, czwarty kąt 110 stopni">
+      <path d="M30,160 L190,150 L170,40 L60,30 Z" class="bg ln sw"/>
+      <path d="M30,160 L190,150 L60,30 Z" class="f1 s1"/>
+      <path d="M190,150 L170,40 L60,30 Z" class="f2 s2"/>
+      <line x1="190" y1="150" x2="60" y2="30" class="ln dash"/>
+      <text x="85" y="128" class="tx-b" text-anchor="middle">180°</text>
+      <text x="150" y="70" class="tx-b" text-anchor="middle">180°</text>
+      <text x="215" y="54" class="tx">180° + 180°</text>
+      <text x="215" y="82" class="tx-b t2">= 360°</text>
+      <text x="215" y="126" class="tx-s">80° + 100° + 70° = 250°</text>
+      <text x="215" y="150" class="tx-s">360° − 250° = 110°</text>
+    </svg>`,
+    text: `<p>Poprowadź w czworokącie <b>przekątną</b> – podzieli go na <b>dwa trójkąty</b>. Każdy ma 180°, więc kąty czworokąta mają razem <b>360°</b>.</p>
+      <p>Trzy kąty mają 80°, 100° i 70°? Razem 250°, więc czwarty: 360° − 250° = <b>110°</b>. W równoległoboku kąty naprzeciwko siebie są równe, a dwa kąty przy tym samym boku mają razem 180°.</p>`,
+    remember: 'Suma kątów w czworokącie = 360°.',
+    hook: 'Prostokąt to 4 kąty proste: 4 · 90° = 360° – pełny obrót.',
+    check: { q: 'Trzy kąty czworokąta mają 90°, 90° i 100°. Ile ma czwarty?', options: ['80°', '100°', '180°'], answer: 0, explain: '90° + 90° + 100° = 280°, a 360° − 280° = 80°.' },
+  },
+  {
+    title: 'Czy z tych odcinków zbudujesz trójkąt?',
+    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Po lewej dwa przykłady: odcinki 3 i 4 razem są dłuższe niż 5 – trójkąt się da zbudować; odcinki 2 i 3 razem są krótsze niż 6 – nie da się. Po prawej konstrukcja: odcinek AB 7 centymetrów, łuk cyrklem z A o promieniu 5 centymetrów i łuk z B o promieniu 6 centymetrów przecinają się w punkcie C">
+      <rect x="10" y="30" width="100" height="10" class="f2 s2"/>
+      <rect x="10" y="44" width="60" height="10" class="f1 s1"/>
+      <rect x="70" y="44" width="80" height="10" class="f3 s3"/>
+      <text x="10" y="20" class="tx-s">5 oraz 3 + 4</text>
+      <text x="10" y="76" class="tx-s t3">3 + 4 = 7 &gt; 5 ✔ tak</text>
+      <rect x="10" y="110" width="120" height="10" class="f2 s2"/>
+      <rect x="10" y="124" width="40" height="10" class="f1 s1"/>
+      <rect x="50" y="124" width="60" height="10" class="f3 s3"/>
+      <text x="10" y="100" class="tx-s">6 oraz 2 + 3</text>
+      <text x="10" y="156" class="tx-s t2">2 + 3 = 5 &lt; 6 ✘ nie</text>
+      <line x1="250" y1="160" x2="390" y2="160" class="ln sw"/>
+      <path d="M320.7,89.3 A100,100 0 0 0 275.9,63.4" class="ln dash"/>
+      <path d="M330,56.1 A120,120 0 0 0 286.1,100" class="ln dash"/>
+      <line x1="250" y1="160" x2="304.3" y2="76" class="ln s1 sw"/>
+      <line x1="390" y1="160" x2="304.3" y2="76" class="ln s1 sw"/>
+      <circle cx="304.3" cy="76" r="4" class="f2 s2"/>
+      <text x="244" y="176" class="tx-b" text-anchor="end">A</text>
+      <text x="396" y="176" class="tx-b">B</text>
+      <text x="304" y="48" class="tx-b" text-anchor="middle">C</text>
+      <text x="320" y="182" class="tx-s" text-anchor="middle">7 cm</text>
+      <text x="268" y="122" class="tx-s" text-anchor="end">5 cm</text>
+      <text x="360" y="112" class="tx-s">6 cm</text>
+    </svg>`,
+    text: `<p>Trójkąt zbudujesz tylko wtedy, gdy <b>najdłuższy odcinek jest krótszy od sumy dwóch pozostałych</b>. Z 2 cm, 3 cm i 6 cm się nie da – krótkie boki się nie spotkają.</p>
+      <p><b>Konstrukcja</b>: narysuj odcinek AB (7 cm). Cyrklem rozstawionym na 5 cm narysuj łuk z punktu A, a cyrklem na 6 cm – łuk z punktu B. Łuki przecinają się w punkcie <b>C</b>. Połącz C z A i z B.</p>`,
+    remember: 'Trójkąt istnieje, gdy najdłuższy bok jest krótszy od sumy dwóch pozostałych.',
+    hook: 'Dwa krótkie patyczki muszą „sięgnąć” nad długim – jeśli są za krótkie, nie podadzą sobie rąk.',
+    check: { q: 'Z których odcinków zbudujesz trójkąt?', options: ['2 cm, 2 cm, 5 cm', '4 cm, 5 cm, 6 cm', '1 cm, 3 cm, 4 cm'], answer: 1, explain: '4 + 5 = 9 > 6. W pozostałych: 2 + 2 = 4 < 5, a 1 + 3 = 4 – tyle samo co najdłuższy.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['matematyka/objetosc'] = [
+  {
+    title: 'Pole powierzchni – rozłóż pudełko',
+    svg: `<svg viewBox="0 0 420 190" role="img" aria-label="Siatka prostopadłościanu 5 na 3 na 2 centymetry. Dwie ściany po 15 centymetrów kwadratowych, dwie po 6 i dwie po 10. Pole powierzchni: 30 plus 12 plus 20 równa się 62 centymetry kwadratowe">
+      <rect x="64" y="10" width="90" height="54" class="f1 s1"/>
+      <rect x="10" y="64" width="54" height="36" class="f3 s3"/>
+      <rect x="64" y="64" width="90" height="36" class="f4 s4"/>
+      <rect x="154" y="64" width="54" height="36" class="f3 s3"/>
+      <rect x="208" y="64" width="90" height="36" class="f4 s4"/>
+      <rect x="64" y="100" width="90" height="54" class="f1 s1"/>
+      <g class="tx" text-anchor="middle"><text x="109" y="43">15</text><text x="37" y="88">6</text><text x="109" y="88">10</text><text x="181" y="88">6</text><text x="253" y="88">10</text><text x="109" y="133">15</text></g>
+      <text x="310" y="30" class="tx-s">2 · 15 = 30</text>
+      <text x="310" y="58" class="tx-s">2 · 6 = 12</text>
+      <text x="310" y="86" class="tx-s">2 · 10 = 20</text>
+      <text x="310" y="122" class="tx-b">P = 62 cm²</text>
+      <text x="150" y="180" class="tx-s" text-anchor="middle">prostopadłościan 5 cm × 3 cm × 2 cm</text>
+    </svg>`,
+    text: `<p><b>Pole powierzchni</b> to suma pól wszystkich <b>6 ścian</b> – tyle papieru trzeba, żeby okleić pudełko. Ściany tworzą 3 pary jednakowych prostokątów.</p>
+      <p>Pudełko 5 cm × 3 cm × 2 cm: dwie ściany 5 · 3 = 15 cm², dwie 3 · 2 = 6 cm², dwie 5 · 2 = 10 cm². Razem 30 + 12 + 20 = <b>62 cm²</b>.</p>`,
+    remember: 'P = 2·a·b + 2·b·c + 2·a·c (6 ścian, 3 pary).',
+    hook: 'Każda ściana ma „bliźniaka” po drugiej stronie pudełka – licz jedną i mnóż przez 2.',
+    check: { q: 'Ile ścian liczysz do pola powierzchni prostopadłościanu?', options: ['4', '6', '12'], answer: 1, explain: 'Prostopadłościan ma 6 ścian. 12 to liczba krawędzi.' },
+  },
+  {
+    title: 'Sześcian – 6 jednakowych kwadratów',
+    svg: `<svg viewBox="0 0 400 150" role="img" aria-label="Siatka sześcianu w kształcie krzyża z sześciu jednakowych kwadratów. Pole powierzchni: 6 razy a razy a. Dla krawędzi 4 centymetry: 6 razy 16 równa się 96 centymetrów kwadratowych">
+      <g class="f4 s4 sw"><rect x="10" y="55" width="40" height="40"/><rect x="50" y="55" width="40" height="40"/><rect x="90" y="55" width="40" height="40"/><rect x="130" y="55" width="40" height="40"/><rect x="50" y="15" width="40" height="40"/><rect x="50" y="95" width="40" height="40"/></g>
+      <text x="200" y="45" class="tx">6 jednakowych kwadratów</text>
+      <text x="200" y="78" class="tx-b">P = 6 · a · a</text>
+      <text x="200" y="112" class="tx-s">a = 4 cm → 6 · 16 = 96 cm²</text>
+    </svg>`,
+    text: `<p><b>Sześcian</b> ma 6 jednakowych ścian – każda to kwadrat o polu a · a. Dlatego jego pole powierzchni to <b>6 · a · a</b>.</p>
+      <p>Krawędź 4 cm: jedna ściana 4 · 4 = 16 cm², sześć ścian: 6 · 16 = <b>96 cm²</b>.</p>`,
+    remember: 'Sześcian: P = 6 · a · a.',
+    hook: 'Kostka do gry ma 6 ścianek z oczkami od 1 do 6 – i wszystkie są takie same.',
+  },
+  {
+    title: 'Objętość – ile kostek się zmieści?',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Prostopadłościan 4 na 3 na 2 centymetry zbudowany z sześcianików o krawędzi 1 centymetr. Jedna warstwa to 4 razy 3, czyli 12 kostek, dwie warstwy to 24 kostki. Objętość 24 centymetry sześcienne">
+      <path d="M40,100 L160,100 L202,70 L82,70 Z" class="f4 s4"/>
+      <path d="M160,100 L202,70 L202,130 L160,160 Z" class="f3 s3"/>
+      <rect x="40" y="100" width="120" height="60" class="f1 s1"/>
+      <g class="ln-thin">
+        <line x1="70" y1="100" x2="70" y2="160"/><line x1="100" y1="100" x2="100" y2="160"/><line x1="130" y1="100" x2="130" y2="160"/><line x1="40" y1="130" x2="160" y2="130"/>
+        <line x1="70" y1="100" x2="112" y2="70"/><line x1="100" y1="100" x2="142" y2="70"/><line x1="130" y1="100" x2="172" y2="70"/>
+        <line x1="54" y1="90" x2="174" y2="90"/><line x1="68" y1="80" x2="188" y2="80"/>
+        <line x1="174" y1="90" x2="174" y2="150"/><line x1="188" y1="80" x2="188" y2="140"/><line x1="160" y1="130" x2="202" y2="100"/>
+      </g>
+      <text x="100" y="180" class="tx-s" text-anchor="middle">4 cm</text>
+      <text x="32" y="135" class="tx-s" text-anchor="end">2 cm</text>
+      <text x="196" y="62" class="tx-s">3 cm</text>
+      <text x="236" y="80" class="tx-s">warstwa: 4 · 3 = 12</text>
+      <text x="236" y="108" class="tx-s">2 warstwy: 12 · 2 = 24</text>
+      <text x="236" y="144" class="tx-b">V = 24 cm³</text>
+    </svg>`,
+    text: `<p><b>Objętość</b> mówi, ile miejsca zajmuje bryła. Mierzymy ją w sześcianikach: <b>1 cm³</b> to sześcian o krawędzi 1 cm.</p>
+      <p>Pudełko 4 cm × 3 cm × 2 cm: na dnie zmieści się 4 · 3 = 12 sześcianików, a warstwy są 2 – razem <b>24 cm³</b>. Krócej: <b>V = a · b · c</b>. Sześcian: V = a · a · a.</p>`,
+    remember: 'V = a · b · c; sześcian: V = a · a · a.',
+    hook: 'Objętość to jak liczenie kostek cukru w pudełku: rząd × rzędy × warstwy.',
+    check: { q: 'Prostopadłościan ma krawędzie 5 cm, 2 cm i 3 cm. Jaka jest jego objętość?', options: ['10 cm³', '30 cm³', '62 cm³'], answer: 1, explain: 'V = 5 · 2 · 3 = 30 cm³.' },
+  },
+  {
+    title: 'Litr, mililitr i decymetr sześcienny',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Duży sześcian o krawędzi 1 decymetr, czyli 10 centymetrów: 10 razy 10 razy 10 to 1000 centymetrów sześciennych, czyli 1 litr. Mały sześcian o krawędzi 1 centymetr to 1 mililitr. Metr sześcienny to 1000 litrów">
+      <path d="M20,70 L120,70 L120,170 L20,170 Z" class="f1 s1 sw"/>
+      <path d="M20,70 L50,45 L150,45 L120,70 Z" class="f4 s4 sw"/>
+      <path d="M120,70 L150,45 L150,145 L120,170 Z" class="f3 s3 sw"/>
+      <text x="70" y="190" class="tx-s" text-anchor="middle">1 dm = 10 cm</text>
+      <rect x="175" y="150" width="10" height="10" class="f2 s2"/>
+      <text x="192" y="160" class="tx-s">1 cm³ = 1 ml</text>
+      <text x="175" y="50" class="tx">10 · 10 · 10 = 1000</text>
+      <text x="175" y="80" class="tx-b">1 dm³ = 1000 cm³</text>
+      <text x="175" y="110" class="tx-b t2">= 1 litr</text>
+      <text x="300" y="160" class="tx-s">1 m³ = 1000 l</text>
+    </svg>`,
+    text: `<p>Pojemność naczyń mierzymy w <b>litrach</b> i <b>mililitrach</b>. Sześcian o krawędzi 1 dm (10 cm) mieści 10 · 10 · 10 = <b>1000 cm³</b> – to dokładnie <b>1 litr</b>. Mały sześcian 1 cm³ to <b>1 ml</b>.</p>
+      <p>Akwarium 50 cm × 30 cm × 40 cm ma 60 000 cm³, czyli <b>60 litrów</b>. A 1 m³ to aż <b>1000 litrów</b>.</p>`,
+    remember: '1 l = 1 dm³ = 1000 cm³; 1 ml = 1 cm³; 1 m³ = 1000 l.',
+    hook: 'Karton mleka 1 l to „kostka” 1 dm³, tylko inaczej ułożona – 1000 maleńkich kosteczek.',
+    check: { q: 'Ile mililitrów to 1 litr?', options: ['100 ml', '1000 ml', '10 ml'], answer: 1, explain: '1 l = 1000 cm³, a 1 cm³ = 1 ml, więc 1 l = 1000 ml.' },
+  },
+  {
+    title: 'Bryła z klocków i pułapki',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Bryła z dwóch prostopadłościanów: na dole 4 na 3 na 2 centymetry, na górze z lewej 2 na 3 na 2 centymetry. Objętość 24 plus 12 równa się 36 centymetrów sześciennych. Pułapki: pole w centymetrach kwadratowych, objętość w centymetrach sześciennych, te same jednostki przed liczeniem">
+      <rect x="30" y="120" width="100" height="50" class="f1 s1 sw"/>
+      <path d="M80,120 L130,120 L166,93 L116,93 Z" class="f4 s4 sw"/>
+      <path d="M130,120 L166,93 L166,143 L130,170 Z" class="f3 s3 sw"/>
+      <rect x="30" y="70" width="50" height="50" class="f2 s2 sw"/>
+      <path d="M30,70 L80,70 L116,43 L66,43 Z" class="f4 s4 sw"/>
+      <path d="M80,70 L116,43 L116,93 L80,120 Z" class="f3 s3 sw"/>
+      <text x="80" y="160" class="tx-s" text-anchor="middle">24 cm³</text>
+      <text x="55" y="100" class="tx-s" text-anchor="middle">12</text>
+      <text x="200" y="50" class="tx">24 cm³ + 12 cm³</text>
+      <text x="200" y="78" class="tx-b">= 36 cm³</text>
+      <text x="200" y="120" class="tx-s">⚠️ pole → cm²</text>
+      <text x="200" y="142" class="tx-s">⚠️ objętość → cm³</text>
+      <text x="200" y="164" class="tx-s">⚠️ te same jednostki!</text>
+    </svg>`,
+    text: `<p>Bryłę złożoną z kilku prostopadłościanów podziel na części, oblicz objętość każdej i <b>dodaj</b>: 4 · 3 · 2 = 24 cm³ i 2 · 3 · 2 = 12 cm³ → razem <b>36 cm³</b>.</p>
+      <p>Pułapki: pole podajesz w <b>cm²</b>, objętość w <b>cm³</b>. Pudełko bez wieka ma tylko 5 ścian. Przed liczeniem zamień krawędzie na <b>te same jednostki</b>.</p>`,
+    remember: 'Objętość bryły złożonej = suma objętości jej części.',
+    hook: '„Do kwadratu” – płasko jak kartka (cm²), „do sześcianu” – jak kostka (cm³).',
+    check: { q: 'W jakich jednostkach podasz objętość pudełka?', options: ['cm', 'cm²', 'cm³'], answer: 2, explain: 'Objętość mierzymy w sześcianikach – cm³. W cm² podajemy pole, a w cm – długość.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['matematyka/srednia'] = [
+  {
+    title: 'Wyrównaj słupki',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Po lewej trzy słupki z klocków: 2, 6 i 7 klocków. Po przełożeniu klocków z wyższych słupków na niższe wszystkie mają po 5 klocków. Średnia: 15 podzielić przez 3 równa się 5">
+      <defs><marker id="a-m10-sr-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <g class="f1 s1"><rect x="20" y="152" width="30" height="18"/><rect x="20" y="134" width="30" height="18"/></g>
+      <g class="f2 s2"><rect x="60" y="152" width="30" height="18"/><rect x="60" y="134" width="30" height="18"/><rect x="60" y="116" width="30" height="18"/><rect x="60" y="98" width="30" height="18"/><rect x="60" y="80" width="30" height="18"/><rect x="60" y="62" width="30" height="18"/></g>
+      <g class="f3 s3"><rect x="100" y="152" width="30" height="18"/><rect x="100" y="134" width="30" height="18"/><rect x="100" y="116" width="30" height="18"/><rect x="100" y="98" width="30" height="18"/><rect x="100" y="80" width="30" height="18"/><rect x="100" y="62" width="30" height="18"/><rect x="100" y="44" width="30" height="18"/></g>
+      <line x1="12" y1="80" x2="138" y2="80" class="ln dash"/>
+      <g class="tx-s" text-anchor="middle"><text x="35" y="190">2</text><text x="75" y="190">6</text><text x="115" y="190">7</text></g>
+      <path d="M150,110 L200,110" class="ln sw" marker-end="url(#a-m10-sr-1)"/>
+      <g class="f4 s4">
+        <rect x="215" y="152" width="30" height="18"/><rect x="215" y="134" width="30" height="18"/><rect x="215" y="116" width="30" height="18"/><rect x="215" y="98" width="30" height="18"/><rect x="215" y="80" width="30" height="18"/>
+        <rect x="255" y="152" width="30" height="18"/><rect x="255" y="134" width="30" height="18"/><rect x="255" y="116" width="30" height="18"/><rect x="255" y="98" width="30" height="18"/><rect x="255" y="80" width="30" height="18"/>
+        <rect x="295" y="152" width="30" height="18"/><rect x="295" y="134" width="30" height="18"/><rect x="295" y="116" width="30" height="18"/><rect x="295" y="98" width="30" height="18"/><rect x="295" y="80" width="30" height="18"/>
+      </g>
+      <g class="tx-s" text-anchor="middle"><text x="230" y="190">5</text><text x="270" y="190">5</text><text x="310" y="190">5</text></g>
+      <text x="270" y="40" class="tx-b" text-anchor="middle">15 : 3 = 5</text>
+    </svg>`,
+    text: `<p>Masz trzy słupki z klocków: 2, 6 i 7. Przełóż klocki z wyższych słupków na niższe, aż wszystkie będą równe. Każdy będzie miał <b>5</b> klocków.</p>
+      <p>Ta wspólna wysokość to <b>średnia arytmetyczna</b>: tyle wypadłoby na każdego, gdyby wszystko podzielić <b>po równo</b>.</p>`,
+    remember: 'Średnia – tyle na każdego przy podziale po równo.',
+    hook: 'Średnia to sprawiedliwy podział cukierków: nikt nie ma więcej, nikt mniej.',
+    check: { q: 'Słupki mają 1, 3 i 5 klocków. Ile klocków będzie w każdym po wyrównaniu?', options: ['3', '5', '9'], answer: 0, explain: 'Razem 1 + 3 + 5 = 9 klocków, na 3 słupki: 9 : 3 = 3.' },
+  },
+  {
+    title: 'Przepis: dodaj i podziel',
+    svg: `<svg viewBox="0 0 400 180" role="img" aria-label="Przepis na średnią na przykładzie ocen 4, 5, 3 i 4. Krok 1: dodaj – suma 16. Krok 2: podziel przez liczbę ocen, czyli 4. Wynik: średnia 4">
+      <defs><marker id="a-m10-sr-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <g class="f5 s5"><rect x="20" y="20" width="40" height="40" rx="8"/><rect x="70" y="20" width="40" height="40" rx="8"/><rect x="120" y="20" width="40" height="40" rx="8"/><rect x="170" y="20" width="40" height="40" rx="8"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="40" y="47">4</text><text x="90" y="47">5</text><text x="140" y="47">3</text><text x="190" y="47">4</text></g>
+      <text x="230" y="47" class="tx-s">4 oceny</text>
+      <rect x="20" y="90" width="150" height="70" rx="12" class="f1 s1 sw"/>
+      <text x="95" y="116" class="tx-s" text-anchor="middle">1. dodaj</text>
+      <text x="95" y="144" class="tx-b" text-anchor="middle">suma = 16</text>
+      <path d="M175,125 L205,125" class="ln" marker-end="url(#a-m10-sr-2)"/>
+      <rect x="210" y="90" width="170" height="70" rx="12" class="f3 s3 sw"/>
+      <text x="295" y="116" class="tx-s" text-anchor="middle">2. podziel przez 4</text>
+      <text x="295" y="144" class="tx-b" text-anchor="middle">16 : 4 = 4</text>
+    </svg>`,
+    text: `<p>Przepis na średnią ma dwa kroki: <b>1)</b> dodaj wszystkie liczby, <b>2)</b> podziel sumę przez to, <b>ile jest liczb</b>.</p>
+      <p>Oceny 4, 5, 3, 4: suma 16, ocen jest 4, więc średnia = 16 : 4 = <b>4</b>.</p>`,
+    remember: 'Średnia = suma : ile liczb.',
+    hook: '„Dodaj i podziel” – jak w drużynie: zbieracie wszystkie punkty do worka i rozdajecie po równo.',
+    check: { q: 'Jaka jest średnia liczb 3, 5 i 7?', options: ['5', '15', '7'], answer: 0, explain: '3 + 5 + 7 = 15, a 15 : 3 = 5.' },
+  },
+  {
+    title: 'Średnia nie musi być jedną z liczb',
+    svg: `<svg viewBox="0 0 400 150" role="img" aria-label="Oś liczbowa od 9 do 16. Zaznaczone liczby 10 i 15 oraz ich średnia 12,5 dokładnie w połowie odległości między nimi">
+      <line x1="20" y1="80" x2="380" y2="80" class="ln sw"/>
+      <g class="ln"><line x1="40" y1="72" x2="40" y2="88"/><line x1="85" y1="72" x2="85" y2="88"/><line x1="130" y1="72" x2="130" y2="88"/><line x1="175" y1="72" x2="175" y2="88"/><line x1="220" y1="72" x2="220" y2="88"/><line x1="265" y1="72" x2="265" y2="88"/><line x1="310" y1="72" x2="310" y2="88"/><line x1="355" y1="72" x2="355" y2="88"/></g>
+      <g class="tx-s" text-anchor="middle"><text x="40" y="108">9</text><text x="85" y="108">10</text><text x="130" y="108">11</text><text x="175" y="108">12</text><text x="220" y="108">13</text><text x="265" y="108">14</text><text x="310" y="108">15</text><text x="355" y="108">16</text></g>
+      <circle cx="85" cy="80" r="7" class="f1 s1 sw"/>
+      <circle cx="310" cy="80" r="7" class="f1 s1 sw"/>
+      <circle cx="197.5" cy="80" r="7" class="f2 s2 sw"/>
+      <text x="197.5" y="52" class="tx-b" text-anchor="middle">12,5</text>
+      <text x="200" y="138" class="tx-s" text-anchor="middle">(10 + 15) : 2 = 12,5 – w połowie drogi</text>
+    </svg>`,
+    text: `<p>Średnia z 10 i 15 to (10 + 15) : 2 = <b>12,5</b> – takiej liczby nie było wśród danych. Średnia nie musi też być liczbą naturalną.</p>
+      <p>Ale średnia zawsze leży <b>między najmniejszą a największą</b> liczbą. Wyszła mniejsza od najmniejszej albo większa od największej? To na pewno błąd!</p>`,
+    remember: 'Średnia leży między najmniejszą a największą liczbą.',
+    hook: 'Średnia to „środek ciężkości” – jak punkt, w którym huśtawka się równoważy.',
+  },
+  {
+    title: 'Średnia w portfelu',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Porównanie biletów przy 20 przejazdach w miesiącu: bilety jednorazowe po 4 złote kosztują razem 80 złotych, bilet miesięczny 60 złotych. Miesięczny jest tańszy o 20 złotych, a średnio jeden przejazd kosztuje na nim 3 złote">
+      <rect x="10" y="10" width="185" height="110" rx="12" class="f2 s2"/>
+      <text x="102" y="36" class="tx-b" text-anchor="middle">jednorazowe</text>
+      <text x="102" y="64" class="tx-s" text-anchor="middle">20 przejazdów · 4 zł</text>
+      <text x="102" y="100" class="tx-b" text-anchor="middle">80 zł</text>
+      <rect x="205" y="10" width="185" height="110" rx="12" class="f3 s3 sw"/>
+      <text x="297" y="36" class="tx-b" text-anchor="middle">miesięczny</text>
+      <text x="297" y="64" class="tx-s" text-anchor="middle">jedna opłata</text>
+      <text x="297" y="100" class="tx-b" text-anchor="middle">60 zł ✔</text>
+      <text x="200" y="152" class="tx" text-anchor="middle">oszczędzasz 80 − 60 = 20 zł</text>
+      <text x="200" y="182" class="tx-s" text-anchor="middle">średnio: 60 zł : 20 = 3 zł za przejazd</text>
+    </svg>`,
+    text: `<p>Średnia pomaga liczyć pieniądze. Wydatki w tygodniu: 12, 8, 10, 6 i 14 zł – razem 50 zł, czyli średnio <b>10 zł</b> dziennie.</p>
+      <p>Bilet jednorazowy kosztuje 4 zł, miesięczny 60 zł. Przy 20 przejazdach jednorazowe kosztują 80 zł, więc <b>miesięczny jest tańszy</b> o 20 zł – jeden przejazd wychodzi średnio 60 : 20 = <b>3 zł</b>.</p>`,
+    remember: 'Średni koszt = cała kwota : liczba sztuk (przejazdów, dni).',
+    hook: 'Zanim kupisz – policz, ile wychodzi „za sztukę”.',
+    check: { q: 'Bilet miesięczny za 60 zł, a ty jeździsz 30 razy. Ile średnio kosztuje przejazd?', options: ['2 zł', '3 zł', '30 zł'], answer: 0, explain: '60 zł : 30 = 2 zł.' },
+  },
+  {
+    title: 'Wyjątki i brakująca liczba',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Diagram kieszonkowego pięciorga dzieci: cztery słupki po 10 złotych i jeden 60 złotych. Przerywana linia średniej na wysokości 20 złotych – wyżej niż kieszonkowe czworga dzieci. Obok: suma równa się średnia razy liczba liczb">
+      <line x1="30" y1="180" x2="230" y2="180" class="ln"/>
+      <g class="f1 s1"><rect x="40" y="160" width="28" height="20"/><rect x="76" y="160" width="28" height="20"/><rect x="112" y="160" width="28" height="20"/><rect x="148" y="160" width="28" height="20"/></g>
+      <rect x="184" y="60" width="28" height="120" class="f2 s2"/>
+      <line x1="30" y1="140" x2="230" y2="140" class="ln dash s3"/>
+      <text x="34" y="132" class="tx-s t3">średnia 20 zł</text>
+      <g class="tx-s" text-anchor="middle"><text x="54" y="198">10</text><text x="90" y="198">10</text><text x="126" y="198">10</text><text x="162" y="198">10</text><text x="198" y="198">60</text></g>
+      <text x="250" y="50" class="tx-s">jedna duża liczba</text>
+      <text x="250" y="70" class="tx-s">mocno podnosi średnią</text>
+      <rect x="245" y="100" width="148" height="70" rx="10" class="f5 s5"/>
+      <text x="319" y="126" class="tx-s" text-anchor="middle">suma =</text>
+      <text x="319" y="152" class="tx-s" text-anchor="middle">średnia · ile liczb</text>
+    </svg>`,
+    text: `<p>Kieszonkowe: 10, 10, 10, 10 i 60 zł. Średnia to 100 : 5 = <b>20 zł</b>, choć aż czworo dzieci dostaje 10 zł. Jedna bardzo duża liczba mocno zmienia średnią – zawsze patrz też na same dane.</p>
+      <p><b>Brakująca liczba</b>: średnia trzech liczb to 6, a dwie z nich to 5 i 8. Suma wszystkich: 6 · 3 = 18. Trzecia: 18 − 5 − 8 = <b>5</b>.</p>`,
+    remember: 'suma = średnia · ile liczb.',
+    hook: 'Jeden olbrzym w klasie krasnoludków bardzo podnosi „średni wzrost”.',
+    check: { q: 'Średnia dwóch liczb to 8. Jedna z nich to 6. Jaka jest druga?', options: ['10', '2', '14'], answer: 0, explain: 'Suma: 8 · 2 = 16. Druga liczba: 16 − 6 = 10. Sprawdzenie: (6 + 10) : 2 = 8.' },
+  },
+];
