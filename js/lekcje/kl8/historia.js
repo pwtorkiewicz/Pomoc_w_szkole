@@ -281,7 +281,7 @@ window.LESSONS['historia/panstwo-podziemne'] = [
       <text x="165" y="180" class="tx" text-anchor="middle">🕯️ ok. 180 tys. cywilów zginęło</text>
     </svg>`,
     text: `<p>Powstanie wybuchło <b>1 sierpnia 1944 r.</b> o godz. 17 („godzina W”). Dowódcy chcieli, by to Polacy wyzwolili stolicę przed wkroczeniem Sowietów i przyjęli ich jako gospodarze.</p>
-      <p>Brakowało broni. <b>Armia Czerwona</b> stała za Wisłą i <b>nie pomogła</b>. Po 63 dniach, <b>2 października</b>, powstańcy skapitulowali. Zginęło ponad 18 tys. powstańców i ok. 180 tys. cywilów; Niemcy zburzyli Warszawę.</p>`,
+      <p>Brakowało broni. <b>Armia Czerwona</b> stała za Wisłą i <b>nie pomogła</b>. Po 63 dniach, <b>2 października</b>, powstańcy skapitulowali. Zginęło ok. 18 tys. powstańców i ok. 180 tys. cywilów; Niemcy zburzyli Warszawę.</p>`,
     remember: 'Powstanie warszawskie: 1 VIII – 2 X 1944, 63 dni.',
     hook: '„W” jak Warszawa – i jak wolność, o którą walczono.',
     check: { q: 'Ile dni trwało powstanie warszawskie?', options: ['63', '7', '100'], answer: 0, explain: 'Od 1 sierpnia do 2 października 1944 r.' },

@@ -351,7 +351,7 @@ window.SUBJECTS.push({
           <li><b>Przyczyny</b>: chęć wyzwolenia stolicy przez Polaków przed wkroczeniem Armii Czerwonej i przyjęcia jej jako gospodarze; dowódcy liczyli na zaskoczenie Niemców i szybkie wejście Sowietów (którzy byli już blisko Pragi).</li>
           <li><b>Przebieg</b>: brakowało broni; walczono 63 dni. Armia Czerwona stała po drugiej stronie Wisły i <b>nie pomogła</b>. Zachodni alianci nie planowali pomocy dla powstania; zrzuty zaopatrzenia były niewielkie.</li>
           <li><b>Kapitulacja</b>: <b>2 października 1944 r.</b> – Niemcy uznali powstańców za żołnierzy (prawa kombatanckie).</li>
-          <li><b>Skutki</b>: śmierć ponad 18 tys. powstańców i ok. 180 tys. cywilów; mieszkańców wypędzono, a Niemcy <b>zburzyli Warszawę</b>; AK bardzo osłabła.</li>
+          <li><b>Skutki</b>: śmierć ok. 18 tys. powstańców i ok. 180 tys. cywilów; mieszkańców wypędzono, a Niemcy <b>zburzyli Warszawę</b>; AK bardzo osłabła.</li>
         </ul>
         <p>Ocena powstania do dziś jest przedmiotem dyskusji: bohaterski zryw o wolność czy decyzja, która przyniosła ogromne straty?</p>
         <div class="tip">💡 Powstanie: <b>1 VIII – 2 X 1944</b>, 63 dni. Na każdy dzień powstania przypadały tysiące ofiar wśród cywilów.</div>`,
