@@ -118,11 +118,11 @@ window.SUBJECTS.push({
         top: { icon: '🔋', title: 'Prąd elektryczny', text: 'uporządkowany ruch ładunków – płynie tylko w zamkniętym obwodzie ze źródłem napięcia', kolor: 5 },
         kolumny: [{ title: 'Natężenie I', kolor: 1 }, { title: 'Napięcie U', kolor: 2 }, { title: 'Opór R', kolor: 3 }],
         wiersze: [
-          { label: 'co mówi', cells: ['ładunek w ciągu 1 s', 'energia na ładunek 1 C', 'jak utrudnia przepływ prądu'] },
+          { label: 'co mówi', cells: ['ładunek w ciągu 1\u00a0s', 'energia na ładunek 1\u00a0C', 'jak utrudnia przepływ prądu'] },
           { label: 'jednostka', cells: ['amper (A)', 'wolt (V)', 'om (Ω)'], bold: true },
-          { label: 'pomiar', cells: ['amperomierz – szeregowo', 'woltomierz – równolegle', 'z pomiaru U i I'] },
+          { label: 'pomiar', cells: ['amperomierz – szeregowo', 'woltomierz – równolegle', 'z pomiaru U\u00a0i\u00a0I'] },
         ],
-        bottom: { title: '💡 Związek U, I i R', text: 'R = U / I, więc U = I · R oraz I = U / R\nnp. 12 V : 0,5 A = 24 Ω', kolor: 4 },
+        bottom: { title: '💡 Związek U, I i R', text: 'R = U / I, więc U = I · R oraz I = U / R\nnp. 12\u00a0V : 0,5\u00a0A = 24\u00a0Ω', kolor: 4 },
       },
       flashcards: [
         ['Prąd elektryczny', 'Uporządkowany ruch elektronów swobodnych (w metalach) albo jonów (w roztworach)'],
@@ -226,9 +226,9 @@ window.SUBJECTS.push({
         type: 'kroki',
         top: { icon: '🔋', title: 'Źródła energii elektrycznej', text: 'baterie, akumulatory, prądnice w elektrowniach, ogniwa słoneczne', kolor: 5 },
         items: [
-          { icon: '⚡', title: 'Moc: P = U · I', text: 'praca prądu w ciągu 1 s, wat (W)\nnp. 230 V · 10 A = 2300 W', kolor: 1 },
+          { icon: '⚡', title: 'Moc: P = U · I', text: 'praca prądu w ciągu 1\u00a0s, wat (W)\nnp. 230\u00a0V · 10\u00a0A = 2300\u00a0W', kolor: 1 },
           { icon: '⏱️', title: 'Praca: W = P · t', text: 'zużyta energia, dżul (J); W = U · I · t', kolor: 1 },
-          { icon: '🧾', title: '1 kWh = 3 600 000 J', text: 'moc w kW, czas w godzinach\nnp. 2 kW · 0,05 h = 0,1 kWh', kolor: 4 },
+          { icon: '🧾', title: '1\u00a0kWh = 3\u00a0600\u00a0000\u00a0J', text: 'moc w kW, czas w godzinach\nnp. 2\u00a0kW · 0,05\u00a0h = 0,1\u00a0kWh', kolor: 4 },
           { icon: '🔄', title: 'Energia zamienia się w…', items: ['ciepło – czajnik, żelazko, grzejnik', 'światło – żarówka, dioda (LED)', 'ruch – silnik elektryczny', 'dźwięk – głośnik, dzwonek'], kolor: 3 },
         ],
         bottom: { title: '⚠️ Bezpieczeństwo', items: ['bezpiecznik przerywa obwód przy zbyt dużym prądzie', 'izolacja chroni przed porażeniem', 'porażenie: najpierw odłącz prąd, potem 112'], kolor: 2 },
@@ -415,14 +415,14 @@ window.SUBJECTS.push({
       infographic: {
         type: 'kroki',
         items: [
-          { icon: '⏱️', title: 'Ruch drgający', items: ['amplituda A – największe wychylenie', 'okres T – czas jednego drgania (s)', 'częstotliwość f – drgania w 1 s (Hz)'], kolor: 1 },
-          { title: 'f = 1 / T', text: 'np. 20 drgań w 10 s → T = 0,5 s, f = 2 Hz', kolor: 4 },
+          { icon: '⏱️', title: 'Ruch drgający', items: ['amplituda A – największe wychylenie', 'okres T – czas jednego drgania (s)', 'częstotliwość f – drgania w 1\u00a0s (Hz)'], kolor: 1 },
+          { title: 'f = 1 / T', text: 'np. 20 drgań w 10\u00a0s → T = 0,5\u00a0s, f = 2\u00a0Hz', kolor: 4 },
           { icon: '🌊', title: 'Fala', text: 'drgania rozchodzą się w ośrodku – przenosi energię, nie materię', kolor: 1 },
-          { title: 'v = λ · f = λ / T', text: 'np. λ = 2 m, f = 5 Hz → v = 10 m/s', kolor: 4 },
-          { icon: '🔊', title: 'Dźwięk', text: 'źródło drga; w powietrzu ok. 340 m/s, w próżni się nie rozchodzi', kolor: 3 },
+          { title: 'v = λ · f = λ / T', text: 'np. λ = 2\u00a0m, f = 5\u00a0Hz → v = 10\u00a0m/s', kolor: 4 },
+          { icon: '🔊', title: 'Dźwięk', text: 'źródło drga; w powietrzu ok. 340\u00a0m/s, w próżni się nie rozchodzi', kolor: 3 },
           { title: 'Cechy dźwięku', text: 'wysokość – od częstotliwości:\nwiększa f → wyższy dźwięk\ngłośność – od amplitudy:\nwiększa amplituda → głośniejszy dźwięk', kolor: 3 },
         ],
-        bottom: { title: '👂 Słyszysz ok. 16 Hz – 20 000 Hz', text: 'poniżej – infradźwięki (np. trzęsienia ziemi), powyżej – ultradźwięki (np. USG)', kolor: 5 },
+        bottom: { title: '👂 Słyszysz ok. 16\u00a0Hz – 20\u00a0000\u00a0Hz', text: 'poniżej – infradźwięki (np. trzęsienia ziemi), powyżej – ultradźwięki (np. USG)', kolor: 5 },
       },
       flashcards: [
         ['Położenie równowagi', 'Położenie, wokół którego ciało drga (np. wahadło w spoczynku)'],

@@ -627,7 +627,7 @@ window.SUBJECTS.push({
         top: { title: 'Grupa karboksylowa –COOH', text: 'CₙH₂ₙ₊₁COOH\nHCOOH – mrówkowy, CH₃COOH – octowy', kolor: 5 },
         items: [
           { title: 'Etanol', text: 'fermentacja octowa (bakterie octowe)', kolor: 1 },
-          { title: 'Kwas octowy CH₃COOH', text: 'CH₃COOH ⇄ CH₃COO⁻ + H⁺ – odczyn kwasowy\nz NaOH → octan sodu + woda', kolor: 2 },
+          { title: 'Kwas octowy CH₃COOH', text: 'CH₃COOH ⇄ CH₃COO⁻ + H⁺\nodczyn kwasowy\nz NaOH → octan sodu + woda', kolor: 2 },
           { title: '+ alkohol (estryfikacja)', text: 'kwas + alkohol ⇄ ester + woda\nkatalizator – stężony H₂SO₄', kolor: 1 },
           { title: 'Ester', text: 'CH₃COOC₂H₅ – octan etylu\nowocowy zapach; aromaty, rozpuszczalniki', kolor: 3 },
         ],
@@ -731,7 +731,7 @@ window.SUBJECTS.push({
         type: 'drzewo', kolumny: 1,
         root: { title: 'Tłuszcze, białka i cukry', kolor: 5 },
         branches: [
-          { title: 'Tłuszcze', text: 'estry glicerolu i kwasów tłuszczowych', items: ['roślinne (oleje) i zwierzęce (masło, smalec)', 'nasycone i nienasycone (C=C)'], kolor: 4 },
+          { title: 'Tłuszcze', text: 'estry glicerolu i kwasów tłuszczowych', items: ['roślinne (oleje) i zwierzęce (masło)', 'nasycone i nienasycone (C=C)'], kolor: 4 },
           { title: 'Białka', text: 'łańcuchy aminokwasów, wiązanie peptydowe –CO–NH–', items: ['denaturacja – nieodwracalna (temperatura, etanol)', 'koagulacja – odwracalna (NaCl)'], kolor: 1 },
           { title: 'Cukry', text: 'zbudowane z C, H i O', items: ['proste: glukoza, fruktoza C₆H₁₂O₆', 'dwucukier: sacharoza C₁₂H₂₂O₁₁', 'wielocukry: skrobia, celuloza'], kolor: 3 },
         ],
