@@ -105,22 +105,33 @@ const dane = require('./dane');
           if (t.infographic == null) continue;
           const where = `${s.id}/${t.id} infografika`;
           infos.push(`${s.id}/${t.id}`);
-          if (typeof t.infographic !== 'string' || !t.infographic.trim().startsWith('<svg')) { problems.push(`${where}: pole infographic musi być tekstem z jednym <svg>`); continue; }
+          let svgText = t.infographic;
+          if (svgText && typeof svgText === 'object') {
+            // opis treści rysowany szablonem (js/infografiki.js)
+            if (!window.INFOGRAFIKA) { problems.push(`${where}: strona nie wczytuje js/infografiki.js`); continue; }
+            try { svgText = window.INFOGRAFIKA.render(t.infographic, `${s.id}-${t.id}`); } catch (e) { problems.push(`${where}: ${e.message}`); continue; }
+            const sp = t.infographic;
+            const n = (sp.items || sp.wiersze || sp.branches || []).length + (sp.top ? 1 : 0) + (sp.bottom ? 1 : 0) + (sp.root ? 1 : 0);
+            if (n < 3 || n > 12) problems.push(`${where}: ${n} elementów – infografika powinna mieć ok. 5–9 elementów`);
+            const empty = JSON.stringify(sp).match(/"(title|text|label)":""/);
+            if (empty) problems.push(`${where}: puste pole ${empty[1]}`);
+          }
+          if (typeof svgText !== 'string' || !svgText.trim().startsWith('<svg')) { problems.push(`${where}: pole infographic musi być tekstem z jednym <svg> albo opisem dla szablonu`); continue; }
           if (t.infographicNote != null && typeof t.infographicNote !== 'string') problems.push(`${where}: infographicNote musi być tekstem`);
-          const doc = new DOMParser().parseFromString(t.infographic, 'image/svg+xml');
+          const doc = new DOMParser().parseFromString(svgText, 'image/svg+xml');
           const svg = doc.documentElement;
           if (!doc.querySelector('parsererror')) {
             const w = +(svg.getAttribute('viewBox') || '').split(/[\s,]+/)[2];
             if (!(w >= 300 && w <= 440)) problems.push(`${where}: viewBox powinien mieć szerokość 300–440 (jest ${w})`);
             if (svg.getAttribute('role') !== 'img') problems.push(`${where}: brak role="img"`);
             if ((svg.getAttribute('aria-label') || '').length < 40) problems.push(`${where}: aria-label powinien opisywać całą treść`);
-            if (/(fill|stroke|style)="[^"]*(#|rgb|hsl)/.test(t.infographic)) problems.push(`${where}: kolor wpisany na sztywno – użyj klas CSS`);
+            if (/(fill|stroke|style)="[^"]*(#|rgb|hsl)/.test(svgText)) problems.push(`${where}: kolor wpisany na sztywno – użyj klas CSS`);
             svg.querySelectorAll('[id]').forEach((el) => {
               if (markerIds.has(el.id)) problems.push(`${where}: id „${el.id}” już użyte w ${markerIds.get(el.id)}`);
               else markerIds.set(el.id, where);
             });
           }
-          checkSvg(t.infographic, where);
+          checkSvg(svgText, where);
         }
       }
       for (const e of window.EXERCISES || []) {

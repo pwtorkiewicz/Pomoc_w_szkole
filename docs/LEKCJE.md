@@ -65,7 +65,7 @@ window.LESSONS['<przedmiot>/<id działu>'] = [
 
 ## Infografiki „🗺️ W pigułce”
 
-Infografika to **jeden pionowy obraz całego działu** – schemat, w który uczeń wkłada szczegóły z lekcji i fiszek. Pole działu `infographic` (string z jednym `<svg>`) i opcjonalnie `infographicNote` (jedno zdanie: jak czytać schemat). Gdy dział ma infografikę, pojawia się zakładka **„🗺️ W pigułce”** (`#/s/<przedmiot>/t/<dział>/pigulka`, między „Ściąga” a „Fiszki”), a na końcu lekcji – przycisk „🗺️ Zobacz dział w pigułce”. Infografikę można wydrukować (przycisk 🖨️ – druk zawsze na jasnym tle). Plan i decyzje: `docs/PLAN-infografiki.md`.
+Infografika to **jeden pionowy obraz całego działu** – schemat, w który uczeń wkłada szczegóły z lekcji i fiszek. Pole działu `infographic` (opis treści dla szablonu – niżej – albo string z jednym `<svg>`) i opcjonalnie `infographicNote` (jedno zdanie: jak czytać schemat). Gdy dział ma infografikę, pojawia się zakładka **„🗺️ W pigułce”** (`#/s/<przedmiot>/t/<dział>/pigulka`, między „Ściąga” a „Fiszki”), a na końcu lekcji – przycisk „🗺️ Zobacz dział w pigułce”. Infografikę można wydrukować (przycisk 🖨️ – druk zawsze na jasnym tle). Plan i decyzje: `docs/PLAN-infografiki.md`.
 
 **Zasady**
 - **Treść tylko ze ściągi i fiszek tego działu** – infografika streszcza, nie dodaje faktów. Daty, wzory, nazwy dokładnie jak w ściądze.
@@ -85,6 +85,38 @@ Infografika to **jeden pionowy obraz całego działu** – schemat, w który ucz
 | Drzewko podziału | klasyfikacje (rodzaje, gatunki) | – (jeszcze nie ma; korzeń u góry, gałęzie w dół, liście jako kafelki 2 w rzędzie) |
 | Mapa postaci | lektury | kl4 `polski/lektura-ronja`: dwie kolumny (dwa rody), relacje na „szwie” (⚔️, ❤️), pod spodem konflikt → przebieg → rozwiązanie |
 | Oś czasu (gramatyka) | czasy gramatyczne | egzamin `angielski/past`: karta na czas, w każdej mini-oś z „teraz” po prawej |
+
+### Szablony (zalecane)
+
+Zamiast rysować SVG ręcznie, w polu `infographic` podaj **opis treści** – `js/infografiki.js` narysuje z niego SVG (sam łamie tekst, liczy wysokości, rysuje strzałki; tryb ciemny i druk działają). Ręczny SVG zostaw na rysunki, których szablon nie odda (bryły, model drobin).
+
+Wspólne pola: `type`, opcjonalnie `top` i `bottom` (pudełko na pełną szerokość: przyczyna / „💡 Zapamiętaj” / skutki), opcjonalnie `label` (aria-label; domyślnie składany z całej treści). **Pudełko**: `{ title, text, kolor, icon, items }` – `title` 1–5 słów, `text` krótko (do ok. 12 słów), `kolor` 1–5 (1 niebieski, 2 pomarańczowy, 3 zielony, 4 żółty, 5 fioletowy), `icon` – jedno emoji, `items` – krótka lista punktów. Tekst łamie się sam; `\n` wymusza nową linię.
+
+| type | pola | do czego |
+|---|---|---|
+| `os` | `items: [{ label: '1410', title, text, kolor }]` (`label` – data/okres, do ok. 10 znaków) | oś czasu, kolejność wydarzeń |
+| `kroki` | `items: [pudełko]`, `cykl: true` (przerywana strzałka z ostatniego na pierwszy) | proces, procedura, algorytm, cykl |
+| `porownanie` | `kolumny: [{ title, kolor }]` (2–3), `wiersze: [{ label, cells: ['…', '…'], bold }]` (`bold` – wzory, krótkie hasła) | cechy/wzory kilku rzeczy obok siebie |
+| `drzewo` | `root: pudełko`, `branches: [pudełko z items]`, `kolumny: 1 \| 2` | podział, klasyfikacja, mapa postaci (root = bohater, gałęzie = postacie z relacją w `text`) |
+| `karty` | `items: [pudełko z icon]`, `kolumny: 1–3` | zestaw pojęć/słówek, klasa 3 (duże emoji, mało tekstu) |
+
+```js
+infographicNote: 'Czytaj od góry: od parowania do opadów – i od nowa.',
+infographic: {
+  type: 'kroki', cykl: true,
+  items: [
+    { icon: '☀️', title: 'Parowanie', text: 'Słońce ogrzewa wodę – woda paruje' },
+    { icon: '☁️', title: 'Skraplanie', text: 'para ochładza się – powstają chmury' },
+    { icon: '🌧️', title: 'Opady', text: 'deszcz, śnieg' },
+    { icon: '🏞️', title: 'Wsiąkanie i spływ', text: 'woda wsiąka w glebę albo spływa rzekami' },
+  ],
+  bottom: { title: '💡 Zapamiętaj', text: '…' },
+},
+```
+
+Wskazówki: 5–9 elementów (liczą się `items`/`wiersze`/`branches` oraz `top`, `bottom`, `root`); w `porownanie` komórki do ok. 6 słów (3 kolumny – do 3 słów); emoji tylko tam, gdzie coś mówią. Kolory nadawaj z sensem (np. „dobrze” – 3, „źle/uwaga” – 2) i konsekwentnie w obrębie infografiki.
+
+### Ręczny SVG
 
 Przykład – fragment osi czasu:
 

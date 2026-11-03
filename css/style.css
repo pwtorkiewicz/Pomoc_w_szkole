@@ -208,6 +208,7 @@ small.muted, .muted { color: var(--muted); font-size: .85rem; }
 .vis .tx { fill: var(--text); font: 16px system-ui, sans-serif; }
 .vis .tx-s { fill: var(--muted); font: 13px system-ui, sans-serif; }
 .vis .tx-b { fill: var(--text); font: bold 18px system-ui, sans-serif; }
+.vis .tx-xl { font: 30px system-ui, sans-serif; } /* emoji w kafelkach infografik */
 .vis .bg { fill: var(--surface); }
 .vis .f1 { fill: var(--c1); } .vis .s1 { stroke: var(--c1s); } .vis .t1 { fill: var(--c1s); }
 .vis .f2 { fill: var(--c2); } .vis .s2 { stroke: var(--c2s); } .vis .t2 { fill: var(--c2s); }

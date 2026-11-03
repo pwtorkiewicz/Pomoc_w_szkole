@@ -413,7 +413,7 @@
     const pane = document.getElementById('pane');
     if (tab === 'lekcja') return lessonView(pane, lesson, s, t, base);
     if (tab === 'fiszki') return flashcards(pane, t.flashcards, t.cardLang);
-    if (tab === 'pigulka') return infographicView(pane, t, base);
+    if (tab === 'pigulka') return infographicView(pane, s, t, base);
     if (tab === 'zadania') return openTasks(pane, tasks, { math: s.id === 'matematyka', backHref: `#/s/${s.id}`, backLabel: `Wróć do: ${s.name}` });
     if (tab === 'quiz') {
       // krótki quiz (tryb młodszego ucznia): za każdym razem inne losowe pytania z działu
@@ -435,11 +435,16 @@
   }
 
   // ---------- Infografika „🗺️ W pigułce” (cały dział na jednym obrazie) ----------
-  function infographicView(pane, t, base) {
+  // infografika: gotowy SVG (string) albo opis treści rysowany szablonem z js/infografiki.js
+  function infographicSvg(s, t) {
+    if (typeof t.infographic === 'string') return t.infographic;
+    try { return window.INFOGRAFIKA.render(t.infographic, `${s.id}-${t.id}`); } catch (e) { console.error(e); return '<p>Nie udało się narysować infografiki.</p>'; }
+  }
+  function infographicView(pane, s, t, base) {
     const hasCards = t.flashcards && t.flashcards.length;
     pane.innerHTML = `
       ${SPEAK ? `<p class="say-row">${sayButton('Posłuchaj opisu')} <span class="muted">Posłuchaj opisu</span></p>` : ''}
-      <figure class="vis info">${t.infographic}
+      <figure class="vis info">${infographicSvg(s, t)}
         ${t.infographicNote ? `<figcaption>${t.infographicNote}</figcaption>` : ''}</figure>
       <p class="muted no-print">🧠 Spróbuj potem narysować ten schemat z pamięci – i porównaj.</p>
       <div class="no-print">
