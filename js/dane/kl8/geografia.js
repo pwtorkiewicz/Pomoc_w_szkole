@@ -212,7 +212,7 @@ window.SUBJECTS.push({
         wiersze: [
           { label: 'ludność', cells: ['jedno z dwóch najludniejszych państw', 'najludniejsze państwo świata'] },
           { label: 'gdzie najgęściej', cells: ['wschód: ok. 95% ludności, Nizina Chińska', 'Nizina Gangesu i delta tej rzeki'] },
-          { label: 'start nowej gospodarki', cells: ['reformy, specjalne strefy ekonomiczne', 'od 1991 r. przemysł i usługi'] },
+          { label: 'start nowej gospodarki', cells: ['od końca lat 70. XX\u00a0w. reformy, specjalne strefy ekonomiczne', 'od 1991 r. przemysł i usługi'] },
           { label: 'atuty', cells: ['ulgi, tania ziemia, tania siła robocza', 'angielski, kwalifikacje, niskie koszty pracy'] },
           { label: 'efekt', cells: ['druga gospodarka świata, największy eksporter', 'Bengaluru (IT) obok dzielnic nędzy'] },
         ],

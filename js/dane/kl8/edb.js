@@ -216,7 +216,7 @@ window.SUBJECTS.push({
           { label: 'głos – trzy razy', cells: ['„Uwaga! … Ogłaszam alarm…”', '„Uwaga! … Odwołuję alarm…”'] },
           { label: 'znak', cells: ['żółty trójkąt podstawą w dół', 'usunięcie żółtego trójkąta'] },
         ],
-        bottom: { title: '🏃 Po ogłoszeniu alarmu', text: 'wyłącz prąd i gaz, zabierz dokumenty i leki, idź do schronu, słuchaj komunikatów (radio, RSO, ALERT RCB)', kolor: 1 },
+        bottom: { title: '🏃 Po ogłoszeniu alarmu', text: 'wyłącz prąd i gaz, zabierz dokumenty i leki, idź do schronu lub ukrycia, słuchaj komunikatów (radio, RSO, ALERT RCB)', kolor: 1 },
       },
       flashcards: [
         ['Ogłoszenie alarmu – syrena', 'Modulowany (falujący) dźwięk syreny przez 3 minuty'],
