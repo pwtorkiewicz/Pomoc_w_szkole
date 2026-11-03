@@ -230,7 +230,7 @@ window.SUBJECTS.push({
           { title: '-ought', text: 'II = III', kolor: 3, items: ['bring – brought', 'buy – bought', 'think – thought'] },
           { title: '-aught', text: 'II = III', kolor: 3, items: ['catch – caught', 'teach – taught'] },
           { title: 'Bez zmian', text: 'I = II = III', kolor: 5, items: ['cut, put, let, hit'] },
-          { title: 'Trzy różne', text: 'I ≠ II ≠ III', kolor: 2, items: ['go – went – gone', 'see – saw – seen', 'take – took – taken'] },
+          { title: 'Trzy różne formy', kolor: 2, items: ['go – went – gone', 'see – saw – seen', 'eat – ate – eaten'] },
         ],
       },
       flashcards: [
@@ -314,10 +314,10 @@ window.SUBJECTS.push({
           <li>It's <b>not as</b> cold <b>as</b> yesterday. (nie tak zimno jak)</li>
         </ul>
       `,
-      infographicNote: 'Nad każdym wierszem – rodzaj przymiotnika; w poziomie: stopień równy → wyższy → najwyższy.',
+      infographicNote: 'Nad każdym wierszem – rodzaj przymiotnika; w poziomie: przymiotnik → stopień wyższy → najwyższy.',
       infographic: {
         type: 'porownanie',
-        kolumny: [{ title: 'równy', kolor: 1 }, { title: 'wyższy', kolor: 2 }, { title: 'najwyższy', kolor: 3 }],
+        kolumny: [{ title: 'przymiotnik', kolor: 1 }, { title: 'wyższy', kolor: 2 }, { title: 'najwyższy', kolor: 3 }],
         wiersze: [
           { label: 'krótki', cells: ['tall', 'taller', 'the tallest'] },
           { label: 'zakończony na -y', cells: ['happy', 'happier', 'the happiest'] },
@@ -445,12 +445,12 @@ window.SUBJECTS.push({
       `,
       infographicNote: 'Czasowniki modalne podzielone według tego, co wyrażają; pomarańczowe – pułapka.',
       infographic: {
-        type: 'drzewo', kolumny: 2,
+        type: 'drzewo', kolumny: 1,
         root: { title: 'Co chcesz wyrazić?', kolor: 4 },
         branches: [
           { title: 'Obowiązek', kolor: 1, items: ['must – wewnętrzny', 'have to – zewnętrzny (przepisy, inni)'] },
           { title: '⚠️ Pułapka', kolor: 2, items: ["mustn't – nie wolno", "don't have to – nie musisz"] },
-          { title: 'Rada', kolor: 3, items: ["should / shouldn't", "You shouldn't do it."] },
+          { title: 'Rada', kolor: 3, items: ["should / shouldn't: You shouldn't do it."] },
           { title: 'Prośba', kolor: 5, items: ['Can you…?', 'Could you…? – uprzejmie', 'May I…? – pozwolenie'] },
           { title: 'Umiejętność', kolor: 1, items: ["can / can't", 'could – w przeszłości'] },
           { title: 'Pewność', kolor: 1, items: ['It must be Tom. – To na pewno Tom.'] },
