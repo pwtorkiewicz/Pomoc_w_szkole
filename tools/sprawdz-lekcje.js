@@ -2,8 +2,10 @@
  * Bez argumentu – wszystkie ścieżki z js/sciezki.js; sam przedmiot (np. matematyka) – w ścieżce egzaminacyjnej.
  * - każda lekcja odpowiada istniejącemu działowi,
  * - poprawna struktura kroków i pytań „Sprawdź się”,
- * - każdy SVG (w lekcjach, pytaniach, zadaniach i zestawach) jest poprawnym XML-em, ma viewBox i nie wychodzi poza kadr (tekst i kształty),
- * - brak błędów JavaScript podczas wyświetlania każdego kroku.
+ * - każdy SVG (w lekcjach, infografikach „W pigułce”, pytaniach, zadaniach i zestawach) jest poprawnym XML-em, ma viewBox
+ *   i nie wychodzi poza kadr (tekst i kształty); infografika: viewBox szerokości 300–440, role="img", aria-label,
+ *   unikalne id markerów,
+ * - brak błędów JavaScript podczas wyświetlania każdego kroku i każdej infografiki.
  * Wymaga Playwright (jest preinstalowany w środowisku).
  */
 const { chromium } = require('playwright');
@@ -30,6 +32,7 @@ const dane = require('./dane');
     const report = await page.evaluate((only) => {
       const problems = [];
       const stats = {};
+      const infos = [];
       const topics = {};
       function checkSvg(svgText, where) {
         const doc = new DOMParser().parseFromString(svgText, 'image/svg+xml');
@@ -94,11 +97,37 @@ const dane = require('./dane');
         if (only && s.id !== only) continue;
         for (const t of s.topics) for (const q of [...t.questions, ...(t.tasks || [])]) if (q.svg) checkSvg(q.svg, `${s.id}/${t.id} pytanie ${q.id}`);
       }
+      // infografiki „🗺️ W pigułce”
+      const markerIds = new Map();
+      for (const s of window.SUBJECTS) {
+        if (only && s.id !== only) continue;
+        for (const t of s.topics) {
+          if (t.infographic == null) continue;
+          const where = `${s.id}/${t.id} infografika`;
+          infos.push(`${s.id}/${t.id}`);
+          if (typeof t.infographic !== 'string' || !t.infographic.trim().startsWith('<svg')) { problems.push(`${where}: pole infographic musi być tekstem z jednym <svg>`); continue; }
+          if (t.infographicNote != null && typeof t.infographicNote !== 'string') problems.push(`${where}: infographicNote musi być tekstem`);
+          const doc = new DOMParser().parseFromString(t.infographic, 'image/svg+xml');
+          const svg = doc.documentElement;
+          if (!doc.querySelector('parsererror')) {
+            const w = +(svg.getAttribute('viewBox') || '').split(/[\s,]+/)[2];
+            if (!(w >= 300 && w <= 440)) problems.push(`${where}: viewBox powinien mieć szerokość 300–440 (jest ${w})`);
+            if (svg.getAttribute('role') !== 'img') problems.push(`${where}: brak role="img"`);
+            if ((svg.getAttribute('aria-label') || '').length < 40) problems.push(`${where}: aria-label powinien opisywać całą treść`);
+            if (/(fill|stroke|style)="[^"]*(#|rgb|hsl)/.test(t.infographic)) problems.push(`${where}: kolor wpisany na sztywno – użyj klas CSS`);
+            svg.querySelectorAll('[id]').forEach((el) => {
+              if (markerIds.has(el.id)) problems.push(`${where}: id „${el.id}” już użyte w ${markerIds.get(el.id)}`);
+              else markerIds.set(el.id, where);
+            });
+          }
+          checkSvg(t.infographic, where);
+        }
+      }
       for (const e of window.EXERCISES || []) {
         if (only && e.subject !== only) continue;
         for (const it of e.items) if (it.svg) checkSvg(it.svg, `zestaw ${e.id} zadanie ${it.id}`);
       }
-      return { problems, stats };
+      return { problems, stats, infos };
     }, only);
 
     // przejście przez każdy krok w interfejsie
@@ -111,9 +140,21 @@ const dane = require('./dane');
         await btn.click();
       }
   }
+    // każda infografika w interfejsie: zakładka „W pigułce” i link z końca lekcji
+    for (const key of report.infos) {
+      const [sid, tid] = key.split('/');
+      await page.goto(`${url}#/s/${sid}/t/${tid}/pigulka`);
+      if (!(await page.$('.vis.info svg'))) report.problems.push(`${key}: zakładka „W pigułce” nie pokazuje infografiki`);
+      if (report.stats[key]) {
+        await page.goto(`${url}#/s/${sid}/t/${tid}/lekcja`);
+        for (let i = 0; i < report.stats[key]; i++) await page.click('#nxt');
+        if (!(await page.$(`a[href$="/t/${tid}/pigulka"]`))) report.problems.push(`${key}: brak linku „W pigułce” na końcu lekcji`);
+      }
+    }
   for (const e of jsErrors) report.problems.push(`błąd JS: ${e}`);
 
   console.log(`[${track}] Lekcje:`, Object.entries(report.stats).map(([k, n]) => `${k} (${n})`).join(', ') || 'brak');
+  if (report.infos.length) console.log(`[${track}] Infografiki:`, report.infos.join(', '));
   if (report.problems.length) {
     console.log(`\n[${track}] PROBLEMY (${report.problems.length}):`);
     report.problems.forEach((p) => console.log(' - ' + p));

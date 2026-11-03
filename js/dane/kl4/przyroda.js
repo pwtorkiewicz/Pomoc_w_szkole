@@ -761,6 +761,75 @@ window.SUBJECTS.push({
         </ol>
         <div class="tip">💡 Człowiek też wpływa na obieg wody. Gdy dużo terenu przykryje się betonem i asfaltem, mniej wody wsiąka w ziemię, a więcej szybko spływa.</div>
       `,
+      infographicNote: 'Strzałki pokazują, w który stan zmienia się woda. Linia przerywana – przemiana z pominięciem cieczy.',
+      infographic: `
+        <svg viewBox="0 0 400 540" role="img" aria-label="Cykl przemian wody. Trzy stany skupienia: gazowy – para wodna (drobiny daleko od siebie), ciekły – woda (drobiny blisko, mogą się przesuwać), stały – lód i śnieg (drobiny ciasno ułożone). Ciekły w gazowy: parowanie (wrzenie około 100°C). Gazowy w ciekły: skraplanie. Stały w ciekły: topnienie. Ciekły w stały: krzepnięcie, czyli zamarzanie; topnienie i zamarzanie w 0°C. Stały w gazowy: sublimacja. Gazowy w stały: resublimacja. Przykłady: szron na szybie – resublimacja, lustro paruje po kąpieli – skraplanie.">
+        <defs><marker id="a-ig-woda" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,7 L0,14 z" class="t1"/></marker></defs>
+        <rect x="135" y="8" width="130" height="92" rx="12" class="f1 s1 sw"/>
+        <text x="200" y="32" text-anchor="middle" class="tx-b">gazowy</text>
+        <text x="200" y="54" text-anchor="middle" class="tx">para wodna</text>
+        <circle cx="157" cy="74" r="4" class="t1"/>
+        <circle cx="193" cy="88" r="4" class="t1"/>
+        <circle cx="225" cy="70" r="4" class="t1"/>
+        <circle cx="247" cy="90" r="4" class="t1"/>
+        <rect x="135" y="196" width="130" height="92" rx="12" class="f3 s3 sw"/>
+        <text x="200" y="220" text-anchor="middle" class="tx-b">ciekły</text>
+        <text x="200" y="242" text-anchor="middle" class="tx">woda</text>
+        <circle cx="170" cy="270" r="4" class="t1"/>
+        <circle cx="180" cy="260" r="4" class="t1"/>
+        <circle cx="190" cy="271" r="4" class="t1"/>
+        <circle cx="200" cy="261" r="4" class="t1"/>
+        <circle cx="211" cy="270" r="4" class="t1"/>
+        <circle cx="221" cy="260" r="4" class="t1"/>
+        <circle cx="231" cy="271" r="4" class="t1"/>
+        <circle cx="185" cy="278" r="4" class="t1"/>
+        <circle cx="206" cy="279" r="4" class="t1"/>
+        <circle cx="226" cy="279" r="4" class="t1"/>
+        <rect x="135" y="384" width="130" height="92" rx="12" class="f5 s5 sw"/>
+        <text x="200" y="408" text-anchor="middle" class="tx-b">stały</text>
+        <text x="200" y="430" text-anchor="middle" class="tx">lód, śnieg</text>
+        <circle cx="173" cy="450" r="4" class="t1"/>
+        <circle cx="173" cy="459" r="4" class="t1"/>
+        <circle cx="173" cy="468" r="4" class="t1"/>
+        <circle cx="182" cy="450" r="4" class="t1"/>
+        <circle cx="182" cy="459" r="4" class="t1"/>
+        <circle cx="182" cy="468" r="4" class="t1"/>
+        <circle cx="191" cy="450" r="4" class="t1"/>
+        <circle cx="191" cy="459" r="4" class="t1"/>
+        <circle cx="191" cy="468" r="4" class="t1"/>
+        <circle cx="200" cy="450" r="4" class="t1"/>
+        <circle cx="200" cy="459" r="4" class="t1"/>
+        <circle cx="200" cy="468" r="4" class="t1"/>
+        <circle cx="209" cy="450" r="4" class="t1"/>
+        <circle cx="209" cy="459" r="4" class="t1"/>
+        <circle cx="209" cy="468" r="4" class="t1"/>
+        <circle cx="218" cy="450" r="4" class="t1"/>
+        <circle cx="218" cy="459" r="4" class="t1"/>
+        <circle cx="218" cy="468" r="4" class="t1"/>
+        <circle cx="227" cy="450" r="4" class="t1"/>
+        <circle cx="227" cy="459" r="4" class="t1"/>
+        <circle cx="227" cy="468" r="4" class="t1"/>
+        <path d="M175,192 V108" class="ln sw" marker-end="url(#a-ig-woda)"/>
+        <path d="M225,104 V188" class="ln sw" marker-end="url(#a-ig-woda)"/>
+        <text x="165" y="150" text-anchor="end" class="tx-b t3">parowanie</text>
+        <text x="165" y="170" text-anchor="end" class="tx">wrzenie ~100°C</text>
+        <text x="235" y="150" class="tx-b t1">skraplanie</text>
+        <path d="M175,380 V296" class="ln sw" marker-end="url(#a-ig-woda)"/>
+        <path d="M225,292 V376" class="ln sw" marker-end="url(#a-ig-woda)"/>
+        <text x="165" y="338" text-anchor="end" class="tx-b t3">topnienie</text>
+        <text x="235" y="338" class="tx-b t1">krzepnięcie</text>
+        <text x="235" y="358" class="tx">(zamarzanie)</text>
+        <text x="200" y="342" text-anchor="middle" class="tx-b">0°C</text>
+        <path d="M131,430 H22 V54 H127" class="ln sw dash" marker-end="url(#a-ig-woda)"/>
+        <path d="M269,54 H378 V430 H273" class="ln sw dash" marker-end="url(#a-ig-woda)"/>
+        <text x="32" y="238" class="tx-b t3">subli-</text>
+        <text x="32" y="258" class="tx-b t3">macja</text>
+        <text x="368" y="238" text-anchor="end" class="tx-b t1">resubli-</text>
+        <text x="368" y="258" text-anchor="end" class="tx-b t1">macja</text>
+        <text x="200" y="506" text-anchor="middle" class="tx">np. szron na szybie – resublimacja,</text>
+        <text x="200" y="528" text-anchor="middle" class="tx">lustro paruje po kąpieli – skraplanie</text>
+        </svg>
+      `,
       flashcards: [
         ['Trzy stany skupienia wody', 'stały (lód), ciekły (woda), gazowy (para wodna)'],
         ['Topnienie', 'stały → ciekły (lód → woda)'],

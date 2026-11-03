@@ -63,6 +63,50 @@ window.LESSONS['<przedmiot>/<id działu>'] = [
 | `monety` | `cel` (gr, opcjonalnie), `max` (gr), `start` | klikane monety i banknoty, suma w zł i gr; z `cel` – „odlicz kwotę” (klasa 3) |
 | `kalendarz` | `rok`, `miesiac`, `dzien` | miesiąc z dniami tygodnia, zapis daty, miesiąc cyframi rzymskimi (klasa 3) |
 
+## Infografiki „🗺️ W pigułce”
+
+Infografika to **jeden pionowy obraz całego działu** – schemat, w który uczeń wkłada szczegóły z lekcji i fiszek. Pole działu `infographic` (string z jednym `<svg>`) i opcjonalnie `infographicNote` (jedno zdanie: jak czytać schemat). Gdy dział ma infografikę, pojawia się zakładka **„🗺️ W pigułce”** (`#/s/<przedmiot>/t/<dział>/pigulka`, między „Ściąga” a „Fiszki”), a na końcu lekcji – przycisk „🗺️ Zobacz dział w pigułce”. Infografikę można wydrukować (przycisk 🖨️ – druk zawsze na jasnym tle). Plan i decyzje: `docs/PLAN-infografiki.md`.
+
+**Zasady**
+- **Treść tylko ze ściągi i fiszek tego działu** – infografika streszcza, nie dodaje faktów. Daty, wzory, nazwy dokładnie jak w ściądze.
+- Ma pokazywać **zależności** (kolejność, przyczyna → skutek, cykl, porównanie, podział), a nie być ozdobą. **5–9 elementów**, krótkie hasła, wyraźne strzałki.
+- `viewBox` szerokości **400** (300–440), wysokość dowolna – format pionowy pod telefon. Tekst `tx` / `tx-b` (16/18 px); `tx-s` tylko na drobne dopiski. W polu szerokim na 388 px mieści się ok. 40 znaków `tx`.
+- Grafika jak w lekcjach (sekcja wyżej): tylko klasy CSS, `role="img"`, **`aria-label` z pełną treścią** (to, co jest na obrazie, zdaniami – czyta to czytnik ekranu i przycisk 🔊), id markerów unikalne w całej ścieżce: `a-ig-<dział>`.
+- Kolory mają znaczenie i są stałe w obrębie infografiki (np. przyczyna – `f2`, wydarzenia – `f1`, skutki – `f3`; daty – `f4`).
+- Ton jak w ścieżce: kl. 4 – proste słowa; egzamin/kl. 8 – krótko, rzeczowo; kl. 3 – prawie same obrazki.
+
+**Wzory** (pierwsze infografiki – obejrzyj je przed pisaniem nowej)
+
+| Wzór | Do czego | Przykład |
+|---|---|---|
+| Oś czasu | historia, kolejność wydarzeń | kl4 `historia/polska-litwa`: przyczyna (u góry) → pionowa oś z datami w „pigułkach” → skutki (u dołu) |
+| Cykl / proces | przemiany, obieg, droga czegoś | kl4 `przyroda/woda`: trzy stany jeden pod drugim, strzałki w górę po lewej, w dół po prawej, przemiany „z pominięciem” linią przerywaną po bokach |
+| Porównanie | wzory i cechy kilku rzeczy obok siebie | egzamin `matematyka/bryly`: dwie kolumny (rysunek u góry), wiersze z podpisem pośrodku – porównuje się w poziomie |
+| Drzewko podziału | klasyfikacje (rodzaje, gatunki) | – (jeszcze nie ma; korzeń u góry, gałęzie w dół, liście jako kafelki 2 w rzędzie) |
+| Mapa postaci | lektury | kl4 `polski/lektura-ronja`: dwie kolumny (dwa rody), relacje na „szwie” (⚔️, ❤️), pod spodem konflikt → przebieg → rozwiązanie |
+| Oś czasu (gramatyka) | czasy gramatyczne | egzamin `angielski/past`: karta na czas, w każdej mini-oś z „teraz” po prawej |
+
+Przykład – fragment osi czasu:
+
+```js
+infographicNote: 'Czytaj od góry: przyczyna → wydarzenia po kolei → skutki.',
+infographic: `
+  <svg viewBox="0 0 400 300" role="img" aria-label="Oś czasu: … (cała treść zdaniami)">
+    <defs><marker id="a-ig-moj-dzial" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,7 L0,14 z" class="t2"/></marker></defs>
+    <rect x="6" y="6" width="388" height="66" rx="12" class="f2 s2 sw"/>
+    <text x="200" y="32" text-anchor="middle" class="tx-b">⚔️ Przyczyna</text>
+    <path d="M38,72 V290" class="ln sw" marker-end="url(#a-ig-moj-dzial)"/>
+    <rect x="78" y="88" width="316" height="56" rx="10" class="f1 s1"/>
+    <text x="88" y="112" class="tx-b">Wydarzenie</text>
+    <text x="88" y="135" class="tx">krótki opis</text>
+    <rect x="7" y="100" width="62" height="32" rx="16" class="f4 s4 sw"/>
+    <text x="38" y="122" text-anchor="middle" class="tx-b">1385</text>
+  </svg>
+`,
+```
+
+Sprawdzanie: `node tools/sprawdz-lekcje.js [ścieżka[/przedmiot]]` sprawdza też infografiki (XML, szerokość viewBox, `role`, `aria-label`, kolory na sztywno, powtórzone id, napisy poza kadrem i nachodzące, zakładka i link z końca lekcji). Podgląd: `node tools/zrzut.js <[ścieżka/]przedmiot/dział> pigulka <plik.png> [dark] [420]`.
+
 ## Sprawdzanie
 
 ```

@@ -1585,6 +1585,73 @@ window.SUBJECTS.push({
           <li>uczciwość zamiast rozboju.</li>
         </ul>
       `,
+      infographicNote: 'U góry – kto do kogo należy; w środku – jak toczy się konflikt; na dole – stwory z lasu.',
+      infographic: `
+        <svg viewBox="0 0 400 858" role="img" aria-label="Mapa postaci lektury „Ronja, córka zbójnika”. Zamek rozłupany piorunem dzieli Diabelska Czeluść. Banda Mattisa: Mattis – herszt, tata Ronji; Lovis – mądra mama Ronji; Ronja – „dziewczyna lasu”; Łysy Per – najstarszy zbójca, zna tajemnicę srebrnej góry. Banda Borki: Borka – herszt, tata Birka; Undis – mama Birka; Birk – syn Borki, rówieśnik Ronji. Mattis i Borka są wrogami, Ronja i Birk – przyjaciółmi. Konflikt: ojcowie są wrogami, a dzieci są jak rodzeństwo i spotykają się w tajemnicy. Mattis chwyta Birka, a Ronja oddaje się w ręce Borki, by go uwolnić; Mattis mówi, że nie ma już córki; dzieci uciekają do Niedźwiedziej Groty. Rozwiązanie: Mattis przeprasza córkę, a Ronja i Birk postanawiają, że nie zostaną zbójnikami. Las jest piękny, ale groźny; stwory: Wietrzydła – drapieżne, latają; Szaruchy – boją się ognia; Pupiszonki – małe, niegroźne; Mgłowce – zwodzą we mgle.">
+        <defs><marker id="a-ig-lektura-ronja" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,7 L0,14 z" class="t5"/></marker></defs>
+        <text x="200" y="22" text-anchor="middle" class="tx-b">🏰 Zamek rozłupany piorunem</text>
+        <text x="90" y="52" text-anchor="middle" class="tx-b t1">banda Mattisa</text>
+        <text x="310" y="52" text-anchor="middle" class="tx-b t2">banda Borki</text>
+        <rect x="6" y="64" width="168" height="58" rx="10" class="f1 s1 sw"/>
+        <text x="90" y="87" text-anchor="middle" class="tx-b">Mattis</text>
+        <text x="90" y="109" text-anchor="middle" class="tx">herszt, tata Ronji</text>
+        <rect x="226" y="64" width="168" height="58" rx="10" class="f2 s2 sw"/>
+        <text x="310" y="87" text-anchor="middle" class="tx-b">Borka</text>
+        <text x="310" y="109" text-anchor="middle" class="tx">herszt, tata Birka</text>
+        <rect x="6" y="130" width="168" height="58" rx="10" class="f1 s1 sw"/>
+        <text x="90" y="153" text-anchor="middle" class="tx-b">Lovis</text>
+        <text x="90" y="175" text-anchor="middle" class="tx">mądra mama Ronji</text>
+        <rect x="226" y="130" width="168" height="58" rx="10" class="f2 s2 sw"/>
+        <text x="310" y="153" text-anchor="middle" class="tx-b">Undis</text>
+        <text x="310" y="175" text-anchor="middle" class="tx">mama Birka</text>
+        <rect x="6" y="196" width="168" height="58" rx="10" class="f1 s1 sw"/>
+        <text x="90" y="219" text-anchor="middle" class="tx-b">Ronja</text>
+        <text x="90" y="241" text-anchor="middle" class="tx">„dziewczyna lasu”</text>
+        <rect x="226" y="196" width="168" height="58" rx="10" class="f2 s2 sw"/>
+        <text x="310" y="219" text-anchor="middle" class="tx-b">Birk</text>
+        <text x="310" y="241" text-anchor="middle" class="tx">rówieśnik Ronji</text>
+        <rect x="6" y="262" width="168" height="78" rx="10" class="f1"/>
+        <text x="90" y="285" text-anchor="middle" class="tx-b">Łysy Per</text>
+        <text x="90" y="307" text-anchor="middle" class="tx">najstarszy zbójca,</text>
+        <text x="90" y="327" text-anchor="middle" class="tx">zna srebrną górę</text>
+        <path d="M200,60 L193,72 L200,84 L193,96 L200,108 L193,120 L200,132 L193,144 L200,156 L193,168 L200,180 L193,192 L200,204 L193,216 L200,228 L193,240 L200,252 L193,264 L200,276 L193,288 L200,300 L193,312 L200,324 L193,336" class="ln"/>
+        <text x="310" y="292" text-anchor="middle" class="tx-b t5">⟵ Diabelska</text>
+        <text x="310" y="314" text-anchor="middle" class="tx-b t5">Czeluść</text>
+        <text x="310" y="334" text-anchor="middle" class="tx">przepaść w zamku</text>
+        <circle cx="200" cy="93" r="19" class="bg ln"/>
+        <text x="200" y="100" text-anchor="middle" class="tx">⚔️</text>
+        <circle cx="200" cy="225" r="19" class="bg ln"/>
+        <text x="200" y="232" text-anchor="middle" class="tx">❤️</text>
+        <rect x="6" y="356" width="388" height="80" rx="12" class="f5 s5 sw"/>
+        <text x="18" y="381" class="tx-b">⚡ Konflikt</text>
+        <text x="18" y="404" class="tx">ojcowie są wrogami, a dzieci – jak</text>
+        <text x="18" y="425" class="tx">rodzeństwo; spotykają się w tajemnicy</text>
+        <path d="M200,438 V460" class="ln sw" marker-end="url(#a-ig-lektura-ronja)"/>
+        <rect x="6" y="466" width="388" height="100" rx="12" class="f5"/>
+        <text x="18" y="491" class="tx-b">🏃 Ucieczka do Niedźwiedziej Groty</text>
+        <text x="18" y="514" class="tx">Mattis chwyta Birka, a Ronja oddaje się</text>
+        <text x="18" y="535" class="tx">w ręce Borki, by go uwolnić. Mattis</text>
+        <text x="18" y="556" class="tx">mówi, że nie ma już córki.</text>
+        <path d="M200,568 V590" class="ln sw" marker-end="url(#a-ig-lektura-ronja)"/>
+        <rect x="6" y="596" width="388" height="80" rx="12" class="f3 s3 sw"/>
+        <text x="18" y="621" class="tx-b">✅ Rozwiązanie</text>
+        <text x="18" y="644" class="tx">Mattis przeprasza córkę; Ronja i Birk</text>
+        <text x="18" y="665" class="tx">postanawiają: nie zostaną zbójnikami</text>
+        <text x="200" y="714" text-anchor="middle" class="tx-b">🌲 Las – piękny, ale groźny</text>
+        <rect x="6" y="726" width="168" height="58" rx="10" class="f4"/>
+        <text x="90" y="749" text-anchor="middle" class="tx-b">Wietrzydła</text>
+        <text x="90" y="771" text-anchor="middle" class="tx">drapieżne, latają</text>
+        <rect x="226" y="726" width="168" height="58" rx="10" class="f4"/>
+        <text x="310" y="749" text-anchor="middle" class="tx-b">Szaruchy</text>
+        <text x="310" y="771" text-anchor="middle" class="tx">boją się ognia</text>
+        <rect x="6" y="792" width="168" height="58" rx="10" class="f4"/>
+        <text x="90" y="815" text-anchor="middle" class="tx-b">Pupiszonki</text>
+        <text x="90" y="837" text-anchor="middle" class="tx">małe, niegroźne</text>
+        <rect x="226" y="792" width="168" height="58" rx="10" class="f4"/>
+        <text x="310" y="815" text-anchor="middle" class="tx-b">Mgłowce</text>
+        <text x="310" y="837" text-anchor="middle" class="tx">zwodzą we mgle</text>
+        </svg>
+      `,
       flashcards: [
         ['„Ronja, córka zbójnika” – autorka', 'Astrid Lindgren, Szwecja (1981)'],
         ['Rodzice Ronji', 'Mattis (herszt zbójców) i Lovis'],

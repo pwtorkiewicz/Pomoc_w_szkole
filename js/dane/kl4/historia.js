@@ -1227,6 +1227,50 @@ window.SUBJECTS.push({
           <tr><td><b>1466</b></td><td><b>II pokój toruński</b></td></tr>
         </table>
       `,
+      infographicNote: 'Czytaj od góry: przyczyna → wydarzenia po kolei → skutki.',
+      infographic: `
+        <svg viewBox="0 0 400 652" role="img" aria-label="Oś czasu: Polska i Litwa przeciw Krzyżakom. Przyczyna: wspólny wróg – Krzyżacy najeżdżają Litwę, a Polska straciła ziemie. 1384 – Jadwiga koronowana na króla Polski. 1385 – umowa w Krewie: Jagiełło obiecuje chrzest i połączenie Litwy z Polską. 1386 – Jagiełło (po chrzcie Władysław) poślubia Jadwigę i zostaje królem Polski; unia personalna, czyli wspólny król; 1387 – chrzest Litwy. 15 lipca 1410 – bitwa pod Grunwaldem, klęska Krzyżaków; wodzowie Jagiełło i Witold. 1466 – II pokój toruński kończy wojnę trzynastoletnią. Skutki: Polska odzyskuje Pomorze Gdańskie i dostęp do morza (Prusy Królewskie), wielki mistrz składa hołd lenny.">
+        <defs><marker id="a-ig-polska-litwa" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,7 L0,14 z" class="t2"/></marker></defs>
+        <rect x="6" y="6" width="388" height="66" rx="12" class="f2 s2 sw"/>
+        <text x="200" y="32" text-anchor="middle" class="tx-b">⚔️ Wspólny wróg: Krzyżacy</text>
+        <text x="200" y="58" text-anchor="middle" class="tx">najeżdżają Litwę, Polska straciła ziemie</text>
+        <path d="M38,72 V525" class="ln sw" marker-end="url(#a-ig-polska-litwa)"/>
+        <rect x="78" y="88" width="316" height="56" rx="10" class="f1 s1"/>
+        <text x="88" y="112" class="tx-b">Jadwiga – król Polski</text>
+        <text x="88" y="135" class="tx">koronowana na króla, nie królową</text>
+        <rect x="7" y="100" width="62" height="32" rx="16" class="f4 s4 sw"/>
+        <text x="38" y="122" text-anchor="middle" class="tx-b">1384</text>
+        <rect x="78" y="156" width="316" height="78" rx="10" class="f1 s1"/>
+        <text x="88" y="180" class="tx-b">Umowa w Krewie</text>
+        <text x="88" y="203" class="tx">Jagiełło obiecuje chrzest</text>
+        <text x="88" y="225" class="tx">i połączenie Litwy z Polską</text>
+        <rect x="7" y="179" width="62" height="32" rx="16" class="f4 s4 sw"/>
+        <text x="38" y="201" text-anchor="middle" class="tx-b">1385</text>
+        <rect x="78" y="246" width="316" height="100" rx="10" class="f1 s1"/>
+        <text x="88" y="270" class="tx-b">Jagiełło królem Polski</text>
+        <text x="88" y="293" class="tx">ślub z Jadwigą, imię Władysław</text>
+        <text x="88" y="315" class="tx">unia personalna: wspólny król</text>
+        <text x="88" y="337" class="tx">1387 – chrzest Litwy</text>
+        <rect x="7" y="280" width="62" height="32" rx="16" class="f4 s4 sw"/>
+        <text x="38" y="302" text-anchor="middle" class="tx-b">1386</text>
+        <rect x="78" y="358" width="316" height="78" rx="10" class="f2 s2"/>
+        <text x="88" y="382" class="tx-b">Bitwa pod Grunwaldem</text>
+        <text x="88" y="405" class="tx">15 lipca – klęska Krzyżaków</text>
+        <text x="88" y="427" class="tx">wodzowie: Jagiełło i Witold</text>
+        <rect x="7" y="381" width="62" height="32" rx="16" class="f4 s4 sw"/>
+        <text x="38" y="403" text-anchor="middle" class="tx-b">1410</text>
+        <rect x="78" y="448" width="316" height="56" rx="10" class="f1 s1"/>
+        <text x="88" y="472" class="tx-b">II pokój toruński</text>
+        <text x="88" y="495" class="tx">koniec wojny trzynastoletniej</text>
+        <rect x="7" y="460" width="62" height="32" rx="16" class="f4 s4 sw"/>
+        <text x="38" y="482" text-anchor="middle" class="tx-b">1466</text>
+        <rect x="6" y="532" width="388" height="112" rx="12" class="f3 s3 sw"/>
+        <text x="18" y="558" class="tx-b">✅ Skutki pokoju z 1466 r.</text>
+        <text x="18" y="584" class="tx">Polska odzyskuje Pomorze Gdańskie</text>
+        <text x="18" y="606" class="tx">i dostęp do morza (Prusy Królewskie)</text>
+        <text x="18" y="628" class="tx">wielki mistrz składa hołd lenny</text>
+        </svg>
+      `,
       flashcards: [
         ['Jadwiga', 'Córka Ludwika Węgierskiego, koronowana na króla Polski w 1384 r.; żona Jagiełły'],
         ['Jagiełło', 'Wielki książę litewski; po chrzcie Władysław, król Polski od 1386 r.'],

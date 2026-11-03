@@ -395,6 +395,7 @@
     if (tab === 'lekcja' && !lesson) tab = 'teoria';
     const tasks = tasksOf(s, t);
     if (tab === 'zadania' && !tasks.length) tab = 'teoria';
+    if (tab === 'pigulka' && !t.infographic) tab = 'teoria';
     app.innerHTML = `
       ${crumbs([[s.name, `#/s/${s.id}`], [t.name]])}
       <h1>${esc(t.name)}</h1>
@@ -403,6 +404,7 @@
       <nav class="tabs">
         ${lesson ? `<a href="${base}/lekcja" class="${tab === 'lekcja' ? 'on' : ''}">🎓 Lekcja</a>` : ''}
         <a href="${base}/teoria" class="${tab === 'teoria' ? 'on' : ''}">📖 Ściąga</a>
+        ${t.infographic ? `<a href="${base}/pigulka" class="${tab === 'pigulka' ? 'on' : ''}">🗺️ W pigułce</a>` : ''}
         ${hasCards ? `<a href="${base}/fiszki" class="${tab === 'fiszki' ? 'on' : ''}">🃏 Fiszki (${t.flashcards.length})</a>` : ''}
         <a href="${base}/quiz" class="${tab === 'quiz' ? 'on' : ''}">✅ Quiz (${QUIZ_SIZE ? Math.min(QUIZ_SIZE, t.questions.length) : t.questions.length})</a>
         ${tasks.length ? `<a href="${base}/zadania" class="${tab === 'zadania' ? 'on' : ''}">✍️ Zadania otwarte (${tasks.length})</a>` : ''}
@@ -411,6 +413,7 @@
     const pane = document.getElementById('pane');
     if (tab === 'lekcja') return lessonView(pane, lesson, s, t, base);
     if (tab === 'fiszki') return flashcards(pane, t.flashcards, t.cardLang);
+    if (tab === 'pigulka') return infographicView(pane, t, base);
     if (tab === 'zadania') return openTasks(pane, tasks, { math: s.id === 'matematyka', backHref: `#/s/${s.id}`, backLabel: `Wróć do: ${s.name}` });
     if (tab === 'quiz') {
       // krótki quiz (tryb młodszego ucznia): za każdym razem inne losowe pytania z działu
@@ -429,6 +432,25 @@
       ${hasCards ? `<a class="btn" href="${base}/fiszki">Powtórz z fiszkami</a>` : ''}
       ${tasks.length ? `<a class="btn" href="${base}/zadania">✍️ Zadania otwarte</a>` : ''}`;
     bindSay(pane.querySelector('.say-row'), () => [t.name, t.theory]);
+  }
+
+  // ---------- Infografika „🗺️ W pigułce” (cały dział na jednym obrazie) ----------
+  function infographicView(pane, t, base) {
+    const hasCards = t.flashcards && t.flashcards.length;
+    pane.innerHTML = `
+      ${SPEAK ? `<p class="say-row">${sayButton('Posłuchaj opisu')} <span class="muted">Posłuchaj opisu</span></p>` : ''}
+      <figure class="vis info">${t.infographic}
+        ${t.infographicNote ? `<figcaption>${t.infographicNote}</figcaption>` : ''}</figure>
+      <p class="muted no-print">🧠 Spróbuj potem narysować ten schemat z pamięci – i porównaj.</p>
+      <div class="no-print">
+        <a class="btn primary" href="${base}/quiz">Sprawdź się w quizie →</a>
+        ${hasCards ? `<a class="btn" href="${base}/fiszki">🃏 Fiszki</a>` : ''}
+        <a class="btn" href="${base}/teoria">📖 Ściąga</a>
+        <button class="btn" id="print">🖨️ Drukuj</button>
+      </div>`;
+    pane.querySelector('#print').onclick = () => window.print();
+    const svg = pane.querySelector('.info svg');
+    bindSay(pane.querySelector('.say-row'), () => [t.name, (svg && svg.getAttribute('aria-label')) || '', t.infographicNote || '']);
   }
 
   // ---------- Zadania otwarte (rozwiązanie krok po kroku + samoocena) ----------
@@ -752,6 +774,7 @@
         <a class="btn primary" href="${base}/quiz">✅ Quiz</a>
         ${t.flashcards && t.flashcards.length ? `<a class="btn" href="${base}/fiszki">🃏 Fiszki</a>` : ''}
         <a class="btn" href="${base}/teoria">📖 Ściąga</a>
+        ${t.infographic ? `<a class="btn" href="${base}/pigulka">🗺️ Zobacz dział w pigułce</a>` : ''}
         <button class="btn" id="again">↺ Od początku</button></div>`;
       pane.querySelector('#again').onclick = () => { i = 0; bindKeys(); show(); };
     }

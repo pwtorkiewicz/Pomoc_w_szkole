@@ -67,6 +67,49 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Jeśli w zdaniu jest konkretny czas przeszły (<i>yesterday, last year, ago</i>) – zawsze Past Simple, nie Present Perfect!</div>
       `,
+      infographicNote: 'Na każdej osi „teraz” jest po prawej: Past Simple i Past Continuous kończą się w przeszłości, Present Perfect sięga do teraz.',
+      infographic: `
+        <svg viewBox="0 0 400 604" role="img" aria-label="Trzy czasy na osi czasu. Past Simple: czynność zakończona w określonym czasie w przeszłości, np. yesterday; I played, I went, Did you go?; słowa-klucze: yesterday, last week, ago, in 2019. Past Continuous: czynność trwająca w danym momencie przeszłości, często przerwana inną; was/were + -ing; I was watching TV when the phone rang. Present Perfect: doświadczenie, skutek widoczny teraz albo czynność trwająca do teraz; have/has + III forma; ever, never, already, yet, just; since + punkt w czasie (since 2020), for + okres (for 5 years). Uwaga: yesterday, last year, ago – zawsze Past Simple, nie Present Perfect.">
+        <defs><marker id="a-ig-past" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L13,7 L0,14 z" class="t3"/></marker></defs>
+        <rect x="6" y="6" width="388" height="160" rx="12" class="f1 s1"/>
+        <text x="18" y="32" class="tx-b t1">Past Simple</text>
+        <text x="18" y="54" class="tx">zakończone w określonym czasie</text>
+        <line x1="20" y1="100" x2="322" y2="100" class="ln-thin"/>
+        <line x1="322" y1="86" x2="322" y2="112" class="ln sw"/>
+        <text x="330" y="106" class="tx-b">teraz</text>
+        <path d="M162,92 L178,108 M178,92 L162,108" class="s1 sw"/>
+        <text x="170" y="86" text-anchor="middle" class="tx">yesterday</text>
+        <text x="18" y="134" class="tx-b">I played / I went · Did you go?</text>
+        <text x="18" y="158" class="tx">yesterday, last week, ago, in 2019</text>
+        <rect x="6" y="176" width="388" height="160" rx="12" class="f2 s2"/>
+        <text x="18" y="202" class="tx-b t2">Past Continuous</text>
+        <text x="18" y="224" class="tx">trwało w danym momencie przeszłości</text>
+        <line x1="20" y1="270" x2="322" y2="270" class="ln-thin"/>
+        <line x1="322" y1="256" x2="322" y2="282" class="ln sw"/>
+        <text x="330" y="276" class="tx-b">teraz</text>
+        <rect x="70" y="264" width="190" height="12" rx="6" class="f2 s2 sw"/>
+        <line x1="214" y1="254" x2="214" y2="286" class="s1 sw"/>
+        <text x="130" y="256" text-anchor="middle" class="tx">was watching</text>
+        <text x="222" y="256" class="tx">⚡ rang</text>
+        <text x="18" y="304" class="tx-b">was/were + -ing</text>
+        <text x="18" y="328" class="tx">I was watching TV when the phone rang.</text>
+        <rect x="6" y="346" width="388" height="184" rx="12" class="f3 s3"/>
+        <text x="18" y="372" class="tx-b t3">Present Perfect</text>
+        <text x="18" y="394" class="tx">doświadczenie, skutek teraz, trwa do teraz</text>
+        <line x1="20" y1="440" x2="322" y2="440" class="ln-thin"/>
+        <line x1="322" y1="426" x2="322" y2="452" class="ln sw"/>
+        <text x="330" y="446" class="tx-b">teraz</text>
+        <circle cx="104" cy="440" r="6" class="t3"/>
+        <path d="M104,440 H318" class="s3 sw" marker-end="url(#a-ig-past)"/>
+        <text x="210" y="426" text-anchor="middle" class="tx">since 2020 · for 5 years</text>
+        <text x="18" y="474" class="tx-b">have/has + III forma</text>
+        <text x="18" y="498" class="tx">ever, never, already, yet, just</text>
+        <text x="18" y="522" class="tx">since + punkt w czasie, for + okres</text>
+        <rect x="6" y="540" width="388" height="58" rx="12" class="f4 s4 sw"/>
+        <text x="18" y="564" class="tx-b">⚠️ yesterday, last year, ago</text>
+        <text x="18" y="587" class="tx">→ zawsze Past Simple, nie Present Perfect</text>
+        </svg>
+      `,
       flashcards: [
         ['yesterday, ago, last week', 'Past Simple'],
         ['ever, never, already, yet, just', 'Present Perfect'],

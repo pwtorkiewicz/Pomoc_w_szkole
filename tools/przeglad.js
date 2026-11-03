@@ -1,6 +1,6 @@
 /* Przegląd aplikacji w przeglądarce: node tools/przeglad.js [ścieżka]
  * Ekran wyboru ścieżki, a potem każda ścieżka z js/sciezki.js (albo tylko podana).
- * Przechodzi wszystkie widoki (start, przedmioty, działy z każdą zakładką, test próbny,
+ * Przechodzi wszystkie widoki (start, przedmioty, działy z każdą zakładką – także „W pigułce”, test próbny,
  * zadania otwarte, powtórka błędów, źródła) i wszystkie zestawy ćwiczeń (wypełnia je
  * i sprawdza), w jasnym i ciemnym motywie, na szerokości 420 i 1000 px.
  * Zgłasza błędy JavaScript i poziome przewijanie strony. Wymaga Playwright. */
@@ -43,7 +43,7 @@ const dane = require('./dane');
       page.on('dialog', (d) => d.accept());
       await page.goto(url);
       const data = await page.evaluate(() => ({
-        subjects: window.SUBJECTS.map((s) => ({ id: s.id, link: s.link, topics: s.topics.map((t) => t.id) })),
+        subjects: window.SUBJECTS.map((s) => ({ id: s.id, link: s.link, topics: s.topics.map((t) => t.id), infos: s.topics.filter((t) => t.infographic).map((t) => t.id) })),
         sets: (window.EXERCISES || []).map((e) => ({ subject: e.subject, mode: e.mode, id: e.id })),
       }));
       // przyciski 🔊 (ścieżki z czytaniem na głos): kliknij każdy widoczny – sprawdza, czy nie ma błędów JS
@@ -78,6 +78,7 @@ const dane = require('./dane');
         await visit(`#/s/${s.id}/zadania`, async () => { const b = await page.$('#all'); if (b) await b.click(); });
         for (const t of s.topics) {
           for (const tab of ['lekcja', 'teoria', 'fiszki', 'zadania']) await visit(`#/s/${s.id}/t/${t}/${tab}`, clickSay);
+          if (s.infos.includes(t)) await visit(`#/s/${s.id}/t/${t}/pigulka`, clickSay);
           await visit(`#/s/${s.id}/t/${t}/quiz`, async () => { await clickSay(); await page.click('.opt'); await clickSay(); });
         }
         const modes = [...new Set(data.sets.filter((e) => e.subject === s.id).map((e) => e.mode))];

@@ -2921,6 +2921,66 @@ window.SUBJECTS.push({
           <li>Pułapka: jeśli dwie ściany po złożeniu trafiają w to samo miejsce, figura nie jest siatką.</li>
         </ul>
       `,
+      infographicNote: 'Porównuj w poziomie: ostrosłup ma jedną podstawę, więc w objętości pojawia się ⅓, a w polu – tylko jedno Pp.',
+      infographic: `
+        <svg viewBox="0 0 400 692" role="img" aria-label="Porównanie graniastosłupa i ostrosłupa. Graniastosłup: dwie podstawy, ściany boczne to prostokąty; objętość V = Pp · H, pole powierzchni P = 2Pp + Pb; siatka: 2 podstawy i n prostokątów; wierzchołki 2n, krawędzie 3n, ściany n + 2. Ostrosłup: jedna podstawa, ściany boczne to trójkąty o wspólnym wierzchołku; objętość V = jedna trzecia · Pp · H, pole powierzchni P = Pp + Pb; siatka: 1 podstawa i n trójkątów; wierzchołki n + 1, krawędzie 2n, ściany n + 1 (podstawa to n-kąt). Szczególne graniastosłupy: prostopadłościan V = a · b · c, P = 2(ab + bc + ac); sześcian V = a do potęgi 3, P = 6a kwadrat. Pp – pole podstawy, Pb – pole powierzchni bocznej, H – wysokość bryły.">
+        <text x="101" y="24" text-anchor="middle" class="tx-b t1">graniastosłup</text>
+        <text x="299" y="24" text-anchor="middle" class="tx-b t2">ostrosłup</text>
+        <line x1="200" y1="8" x2="200" y2="176" class="ln-thin"/>
+        <polygon points="40,88 130,88 154,62 64,62" class="f4 s4"/>
+        <polygon points="40,168 130,168 130,88 40,88" class="f1"/>
+        <polygon points="130,168 154,142 154,62 130,88" class="f1"/>
+        <polygon points="40,168 130,168 154,142 64,142" class="f4" opacity="0.8"/>
+        <path d="M64,142 V62 M64,142 H154 M64,142 L40,168" class="ln-thin dash"/>
+        <path d="M40,168 H130 L154,142 V62 L130,88 H40 Z M130,168 V88 M40,88 L64,62 H154" class="ln"/>
+        <path d="M40,168 V88" class="s2 sw"/>
+        <text x="28" y="134" text-anchor="middle" class="tx-b t2">H</text>
+        <text x="100" y="161" text-anchor="middle" class="tx-b">Pp</text>
+        <text x="100" y="81" text-anchor="middle" class="tx-b">Pp</text>
+        <polygon points="301,48 244,168 334,168" class="f1"/>
+        <polygon points="301,48 334,168 358,142" class="f1"/>
+        <polygon points="244,168 334,168 358,142 268,142" class="f4" opacity="0.8"/>
+        <path d="M268,142 L301,48 M268,142 H358 M268,142 L244,168" class="ln-thin dash"/>
+        <path d="M244,168 H334 L358,142 L301,48 Z M301,48 L334,168" class="ln"/>
+        <path d="M301,48 V155" class="s2 sw dash"/>
+        <circle cx="301" cy="155" r="3" class="t2"/>
+        <text x="290" y="128" text-anchor="end" class="tx-b t2">H</text>
+        <text x="276" y="163" text-anchor="middle" class="tx-b">Pp</text>
+        <text x="200" y="201" text-anchor="middle" class="tx t5">objętość</text>
+        <rect x="6" y="210" width="188" height="36" rx="10" class="f1"/>
+        <rect x="206" y="210" width="188" height="36" rx="10" class="f2"/>
+        <text x="100" y="234" text-anchor="middle" class="tx-b">V = Pp · H</text>
+        <text x="300" y="234" text-anchor="middle" class="tx-b">V = ⅓ · Pp · H</text>
+        <text x="200" y="267" text-anchor="middle" class="tx t5">pole powierzchni</text>
+        <rect x="6" y="276" width="188" height="36" rx="10" class="f1"/>
+        <rect x="206" y="276" width="188" height="36" rx="10" class="f2"/>
+        <text x="100" y="300" text-anchor="middle" class="tx-b">P = 2Pp + Pb</text>
+        <text x="300" y="300" text-anchor="middle" class="tx-b">P = Pp + Pb</text>
+        <text x="200" y="333" text-anchor="middle" class="tx t5">siatka (podstawa to n-kąt)</text>
+        <rect x="6" y="342" width="188" height="58" rx="10" class="f1"/>
+        <rect x="206" y="342" width="188" height="58" rx="10" class="f2"/>
+        <text x="100" y="366" text-anchor="middle" class="tx">2 podstawy</text>
+        <text x="100" y="388" text-anchor="middle" class="tx">+ n prostokątów</text>
+        <text x="300" y="366" text-anchor="middle" class="tx">1 podstawa</text>
+        <text x="300" y="388" text-anchor="middle" class="tx">+ n trójkątów</text>
+        <text x="200" y="421" text-anchor="middle" class="tx t5">liczba elementów (podstawa to n-kąt)</text>
+        <rect x="6" y="430" width="188" height="80" rx="10" class="f1"/>
+        <rect x="206" y="430" width="188" height="80" rx="10" class="f2"/>
+        <text x="100" y="454" text-anchor="middle" class="tx">wierzchołki: 2n</text>
+        <text x="100" y="476" text-anchor="middle" class="tx">krawędzie: 3n</text>
+        <text x="100" y="498" text-anchor="middle" class="tx">ściany: n + 2</text>
+        <text x="300" y="454" text-anchor="middle" class="tx">wierzchołki: n + 1</text>
+        <text x="300" y="476" text-anchor="middle" class="tx">krawędzie: 2n</text>
+        <text x="300" y="498" text-anchor="middle" class="tx">ściany: n + 1</text>
+        <rect x="6" y="522" width="388" height="110" rx="12" class="f3 s3"/>
+        <text x="18" y="546" class="tx-b">Szczególne graniastosłupy</text>
+        <text x="18" y="570" class="tx">prostopadłościan: V = a · b · c</text>
+        <text x="18" y="592" class="tx">P = 2(ab + bc + ac)</text>
+        <text x="18" y="614" class="tx">sześcian: V = a³, P = 6a²</text>
+        <text x="200" y="658" text-anchor="middle" class="tx">Pp – pole podstawy, H – wysokość bryły</text>
+        <text x="200" y="680" text-anchor="middle" class="tx">Pb – pole powierzchni bocznej</text>
+        </svg>
+      `,
       flashcards: [
         ['Objętość graniastosłupa', 'Pp · H'],
         ['Objętość ostrosłupa', '⅓ · Pp · H'],

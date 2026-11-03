@@ -66,6 +66,9 @@ window.SUBJECTS.push({
       basis: 'Na jakim wymaganiu opiera się dział', // opcjonalne
       theory: `<h3>DNA</h3><p>…</p>`,          // HTML ściągi
       flashcards: [['Pytanie', 'Odpowiedź']],   // fiszki (opcjonalne)
+      infographicNote: 'Jak czytać schemat',   // podpis infografiki (opcjonalny)
+      infographic: `<svg viewBox="0 0 400 …" role="img" aria-label="…">…</svg>`, // „🗺️ W pigułce” (opcjonalna) –
+                                                // cały dział na jednym obrazie; zasady w docs/LEKCJE.md → „Infografiki”
       questions: [
         {
           id: 'k3x9qa',                         // stały, unikalny id (node tools/nowe-id.js)

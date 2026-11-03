@@ -320,3 +320,20 @@ body.young .hero .btn + small { display: block; }
 .widget .coins .btn.coin { border-radius: 99px; background: var(--c4); border-color: var(--c4s); }
 .widget .coins .btn.note { border-radius: 6px; background: var(--c3); border-color: var(--c3s); }
 .widget .controls b { min-width: 9em; text-align: center; }
+
+/* Infografika „🗺️ W pigułce” – pionowa, pod telefon; na komputerze nie rośnie ponad miarę */
+.vis.info { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 8px; }
+.vis.info svg { max-width: 460px; }
+.vis.info figcaption { color: var(--muted); font-size: .92rem; margin: 6px 10px 0; }
+
+/* Druk (np. infografika): zawsze jasne tło i ciemny tekst, bez nawigacji i przycisków */
+@media print {
+  :root {
+    --bg: #ffffff; --surface: #ffffff; --text: #1d2233; --muted: #5f667a; --border: #c9cedb;
+    --c1: #dbe4ff; --c1s: #4f5bd5; --c2: #ffe3d6; --c2s: #e0603a; --c3: #d9f5e5; --c3s: #1f9d55;
+    --c4: #fff1c2; --c4s: #b88400; --c5: #f3dcf7; --c5s: #9c3fb5;
+  }
+  .top, .foot, .tabs, .crumbs, .btn, .say, .say-row, .no-print { display: none !important; }
+  main { padding: 0; }
+  .vis.info { border: none; break-inside: avoid; }
+}

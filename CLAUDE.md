@@ -68,6 +68,7 @@ Uruchomienie: otwórz `index.html` w przeglądarce (albo od razu stronę ścież
 - Klasa 3 (`young: true`): pytania czyta przycisk 🔊 – gdy tekst ma symbole, obrazki albo słowa angielskie, dodaj `say` / `optLang` / `sayOptions` (dział: `cardLang`); format w README („Czytanie na głos”).
 - Zestaw ćwiczeń (`window.EXERCISES`, format w README): zadania zamknięte (opcje nie są tasowane – rozkładaj poprawne odpowiedzi na różne litery), `type: 'input'` z listą `accept` (wszystkie poprawne warianty), `type: 'open'` z przykładową odpowiedzią i `scoring`. Id zestawu i zadań z tej samej puli co pytania. Fragmenty lektur tylko z domeny publicznej i w sprawdzonym brzmieniu (np. z arkusza CKE – podaj źródło w `source`); teksty nieliterackie piszemy sami. Zadania piszemy sami, nie kopiujemy zadań CKE.
 - Zadanie otwarte (pole `tasks` działu): `{ id, points, q, svg?, steps, answer, scoring }` – id z tej samej puli co pytania, `scoring` ma tyle linii, ile punktów. Wynik zadania sprawdź podstawieniem, a punktację opisz jako orientacyjną (nie są to oficjalne zasady CKE).
+- Infografika działu „🗺️ W pigułce” (pole `infographic`, opcjonalnie `infographicNote`) – tylko treść ze ściągi i fiszek działu; zasady i wzory: `docs/LEKCJE.md` → „Infografiki”.
 - Lekcje pisz według `docs/LEKCJE.md`: 4–6 kroków, każdy z grafiką (SVG albo widżet), SVG tylko z klasami CSS (bez kolorów na sztywno – tryb ciemny), `viewBox` szerokości 300–440, `aria-label`, unikalne id markerów.
 - Bez zewnętrznych bibliotek i bez kroku budowania. Aplikacja ma działać po otwarciu pliku i na telefonie (szerokość ok. 400 px).
 
@@ -76,12 +77,12 @@ Uruchomienie: otwórz `index.html` w przeglądarce (albo od razu stronę ścież
 ```
 node tools/sprawdz-dane.js [ścieżka]                 # pytania we wszystkich ścieżkach: unikalne id, poprawne indeksy odpowiedzi
 node tools/jakosc-pytan.js [ścieżka[/przedmiot]] [-v] # podpowiedzi: poprawna odpowiedź wyraźnie najdłuższa (cel: wyraźnie najdłuższa ≤ 15%, zawsze najdłuższa ≤ 40%), pytania bez explain
-node tools/sprawdz-lekcje.js [ścieżka[/przedmiot] | przedmiot]   # lekcje: struktura, XML SVG, napisy poza kadrem/nachodzące, błędy JS
-node tools/zrzut.js <[ścieżka/]przedmiot/dział> <krok> <plik.png> [dark] [420]   # podgląd kroku lekcji (bez ścieżki – egzamin)
+node tools/sprawdz-lekcje.js [ścieżka[/przedmiot] | przedmiot]   # lekcje i infografiki: struktura, XML SVG, napisy poza kadrem/nachodzące, błędy JS
+node tools/zrzut.js <[ścieżka/]przedmiot/dział> <krok|pigulka> <plik.png> [dark] [420]   # podgląd kroku lekcji lub infografiki (bez ścieżki – egzamin)
 node tools/przeglad.js [ścieżka]                     # ekran wyboru + wszystkie widoki i zestawy ścieżek (jasny/ciemny, 420 px): błędy JS, poziome przewijanie
 ```
 
-Po zmianach w danych lub `app.js` przejdź aplikację w przeglądarce (Playwright jest zainstalowany): ekran wyboru, strona główna ścieżki, dział (lekcja, ściąga, fiszki, quiz), test próbny, powtórka błędów, strona `#/zrodla` – bez błędów w konsoli, także w trybie ciemnym i na szerokości 420 px.
+Po zmianach w danych lub `app.js` przejdź aplikację w przeglądarce (Playwright jest zainstalowany): ekran wyboru, strona główna ścieżki, dział (lekcja, ściąga, „W pigułce”, fiszki, quiz), test próbny, powtórka błędów, strona `#/zrodla` – bez błędów w konsoli, także w trybie ciemnym i na szerokości 420 px.
 
 ## Git
 
