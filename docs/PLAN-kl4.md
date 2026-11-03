@@ -52,8 +52,9 @@ Podręczniki, z których uczy się dziecko – według nich układamy kolejnoś�
 | Informatyka | *Informatyka w akcji 4* | Nowa Era | 1282/1/2026 |
 | Muzyka | *Wszystko gra 4* (program kl. 4–7) | Nowa Era | 1265/1/2026 |
 | Zajęcia praktyczno-techniczne | *Jak to zrobić? 4* | Nowa Era | 1258/1/2026 |
+| Plastyka | *Do dzieła! 4* | Nowa Era | 1256/1/2026 |
 
-Informatyka, muzyka i zajęcia praktyczno-techniczne – dane ze zdjęć stron redakcyjnych od rodzica (3.11.2026); spisów treści jeszcze nie mamy, więc działy tych przedmiotów nie są ułożone według podręczników. Plastyka – brak danych o podręczniku. Wydawcy zastrzegają zakaz eksploracji tekstu i danych (także przez AI) – z podręczników bierzemy tylko zakres i kolejność rozdziałów, treści piszemy sami.
+Informatyka, muzyka i zajęcia praktyczno-techniczne – dane ze zdjęć stron redakcyjnych od rodzica (3.11.2026); spisów treści jeszcze nie mamy, więc działy tych przedmiotów nie są ułożone według podręczników. Wydawcy zastrzegają zakaz eksploracji tekstu i danych (także przez AI) – z podręczników bierzemy tylko zakres i kolejność rozdziałów, treści piszemy sami.
 
 **Układ w aplikacji (2.11.2026):** działy ułożone w kolejności podręczników; przy każdym rozdział podręcznika (pole `chapter`, 📘). Działy spoza podręcznika klasy 4 są w sekcji „📦 Na zapas” (`extra: true`) – nie liczą się do postępu ani testu próbnego: matematyka – 10 działów, historia – 5 (od średniowiecza). Przyroda – 8 działów na zapas (powietrze, ochrona przyrody, mieszaniny, gęstość, Układ Słoneczny, metale, siły, krainy).
 

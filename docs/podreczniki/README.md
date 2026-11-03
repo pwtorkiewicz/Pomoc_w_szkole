@@ -4,7 +4,7 @@ Informacje o podręcznikach, z których uczą się dzieci: dane ze stron redakcy
 
 | Plik | Ścieżka | Stan |
 |---|---|---|
-| [kl4.md](kl4.md) | `kl4` – klasa 4 | 8 podręczników ze spisami treści; brak danych o plastyce |
+| [kl4.md](kl4.md) | `kl4` – klasa 4 | 9 podręczników ze spisami treści (WF bez podręcznika) |
 | [kl8.md](kl8.md) | `kl8` i `egzamin8` – klasa 8 | polski; matematyka i angielski do potwierdzenia |
 
 ## Zasady

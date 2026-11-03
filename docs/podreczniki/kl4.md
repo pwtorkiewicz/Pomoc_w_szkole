@@ -3,7 +3,7 @@
 Wszystkie podręczniki dopuszczono w 2026 r. – są pisane do **nowej podstawy programowej** (Dz.U. 2026 poz. 378, zm. poz. 958), tak jak ścieżka `kl4`.
 
 Źródła (sprawdzone 2–3.11.2026):
-- **strony redakcyjne** egzemplarzy dziecka – zdjęcia od rodzica (tytuł, numer w wykazie MEN, ISBN, program nauczania);
+- **strony redakcyjne** egzemplarzy dziecka – zdjęcia od rodzica (tytuł, numer w wykazie MEN, ISBN, program nauczania); plastyka – 3.11.2026;
 - **spisy treści** – podglądy podręczników Nowej Ery na flipbook.nowaera.pl (egzemplarze demonstracyjne / pilotażowe; ich ISBN różni się od egzemplarza dziecka, więc drobne różnice w tytułach lekcji są możliwe) oraz „Plan realizacji materiału nauczania matematyki w klasie IV” GWO na 2026/2027 (gwo.pl, plik DOCX, oparty na podręczniku 168/1/2026);
 - angielski – „Stay brainy! klasa 4 – rozkład materiału 2026” (macmillan.pl, DOCX); autorzy – wykazy podręczników szkół na 2026/2027.
 
@@ -19,10 +19,10 @@ Wszystkie podręczniki dopuszczono w 2026 r. – są pisane do **nowej podstawy 
 | Informatyka | *Informatyka w akcji 4* | Nowa Era | 1282/1/2026 | 978-83-267-5372-5 | ✅ |
 | Muzyka | *Wszystko gra 4* | Nowa Era | 1265/1/2026 | 978-83-267-5428-9 | ✅ |
 | Zajęcia praktyczno-techniczne | *Jak to zrobić? 4* | Nowa Era | 1258/1/2026 | 978-83-267-5476-0 | ✅ |
-| Plastyka | ? | ? | ? | ? | brak danych |
+| Plastyka | *Do dzieła! 4* | Nowa Era | 1256/1/2026 | 978-83-267-5429-6 | ✅ |
 | Wychowanie fizyczne | – (bez podręcznika) | | | | |
 
-Do zrobienia: dane podręcznika do plastyki; ułożenie działów informatyki, muzyki i zajęć praktyczno-technicznych według spisów treści (pola `book`/`chapter`).
+Do zrobienia: ułożenie działów informatyki, muzyki, plastyki i zajęć praktyczno-technicznych według spisów treści (pola `book`/`chapter`).
 
 ---
 
@@ -202,3 +202,18 @@ Nowa Era, nr 1258/1/2026, ISBN 978-83-267-5476-0. Autorzy: J. Pecyna, M. Sztuka 
 | ZPT w akcji | stojak na telefon; bezpieczeństwo w swoim otoczeniu; jak zadbać o rower | – |
 
 Na końcu: tablice znaków drogowych. W aplikacji brakuje tematów z rozdziału I (narzędzia, projektowanie, pierwsza pomoc w pracowni) – do rozważenia przy układaniu działów według podręcznika.
+
+## Plastyka – *Do dzieła! 4*
+
+Nowa Era, nr 1256/1/2026, ISBN 978-83-267-5429-6. Autorki: M. Ipczyńska, M. Rosenthal (także autorki programu „Do dzieła!”).
+
+Na początku: Co widzimy i jak to pokazać?
+
+| Rozdział | Lekcje (i zadania „Do dzieła!”, „Historia sztuki”) | Działy aplikacji |
+|---|---|---|
+| I. Język plastyki | 1. Linia (Linia, która ma charakter; Historia sztuki: Sztuka prehistoryczna) · 2. Plama (Historia sztuki: Starożytny Egipt) · 3. Barwy podstawowe i pochodne (Krajobraz w barwach ciepłych i zimnych) · 4. Barwy dopełniające i złamane | Barwy i środki wyrazu |
+| II. Techniki plastyczne | 1. Techniki rysunkowe (Morski świat) · 2. Pastele · 3. Techniki malarskie (Farby z natury) · 4. Techniki mieszane | Techniki plastyczne i dziedziny sztuki |
+| III. Sztuka wokół nas | 1. Grafika na co dzień (Projektowanie z użyciem stempla) · 2. Sztuka w naszym otoczeniu (Nasza droga do szkoły; Historia sztuki: Sztuka antyku) · 3. Zabytki regionów Polski | Techniki plastyczne i dziedziny sztuki; Dzieło sztuki: gatunki, oryginał i kopia, muzeum (częściowo) |
+
+Na końcu: Dzieło sztuki pod lupą, Słowniczek plastyczny. Według „Układu treści w klasach 5–7” oryginał, kopia, reprodukcja i falsyfikat oraz prawo autorskie są w podręczniku dopiero w kl. 7, a walor, kontrast, faktura i kompozycja – w kl. 5; w aplikacji są w działach klasy 4 (z podstawy kl. IV–VII). Brakuje natomiast historii sztuki z podręcznika (prehistoria, Egipt, antyk) i zabytków regionów Polski – do rozważenia przy układaniu działów.
+
