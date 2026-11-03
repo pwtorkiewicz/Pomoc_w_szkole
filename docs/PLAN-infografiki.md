@@ -52,4 +52,13 @@ Każdy wzór opisać w `docs/LEKCJE.md` (nowa sekcja „Infografiki”) z przyk�
 ## Po pilotażu
 
 - [x] Zrzuty ekranu każdej infografiki (jasny i ciemny tryb, 420 px) do obejrzenia przez rodzica.
-- [ ] Decyzja rodzica: rozszerzać? Jeśli tak – kolejność: ścieżka egzaminacyjna i główne przedmioty kl. 4, potem kl. 8, kl. 3, na końcu przedmioty dodatkowe.
+- [x] Decyzja rodzica (3.11.2026): **rozszerzamy na kolejne działy** – kolejność: ścieżka egzaminacyjna i główne przedmioty kl. 4, potem kl. 8, kl. 3, na końcu przedmioty dodatkowe.
+
+## Rozszerzanie
+
+Do rozszerzania służą **szablony** (`js/infografiki.js`, opis w `docs/LEKCJE.md` → „Infografiki” → „Szablony”): dział podaje opis treści (`os`, `kroki`, `porownanie`, `drzewo`, `karty`), silnik rysuje SVG. Ręczne SVG – tylko gdy szablon nie odda rysunku.
+
+- [ ] Etap 1: egzamin (polski, matematyka, angielski) i kl. 4 – polski, matematyka, angielski, przyroda, historia
+- [ ] Etap 2: kl. 8 – wszystkie przedmioty
+- [ ] Etap 3: kl. 3 – wszystkie przedmioty (karty z dużymi emoji, mało tekstu)
+- [ ] Etap 4: kl. 4 – informatyka, technika, muzyka, plastyka, WF
