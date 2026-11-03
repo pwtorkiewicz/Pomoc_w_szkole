@@ -71,6 +71,19 @@ window.SUBJECTS.push({
         <p><b>Krótka odpowiedź</b>: Yes, I am. / No, I'm not. · Yes, she is. / No, she isn't.</p>
         <div class="tip">💡 W krótkiej odpowiedzi „tak” <b>nie skracamy</b>: mówimy <i>Yes, I am</i>, a nie „Yes, I'm”.</div>
       `,
+      infographicNote: 'Czytaj od góry: tak wygląda rozmowa – od powitania do pożegnania.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '👋', kolor: 3, title: 'Przywitaj się', text: 'Hello! / Hi! · Good morning!' },
+          { icon: '🙂', kolor: 1, title: 'Jak się masz?', text: "How are you? → I'm fine, thanks." },
+          { icon: '📛', kolor: 1, title: 'Jak masz na imię?', text: "What's your name? → My name is Ola." },
+          { icon: '🎂', kolor: 1, title: 'Ile masz lat?', text: "How old are you? → I'm ten." },
+          { icon: '🌍', kolor: 1, title: 'Skąd jesteś?', text: "Where are you from? → I'm from Poland." },
+          { icon: '👋', kolor: 3, title: 'Pożegnaj się', text: 'Goodbye! / Bye! · See you!\nGood night! – tylko wieczorem' },
+        ],
+        bottom: { kolor: 4, title: '💡 Czasownik „to be” (być)', text: 'I am · you are · he / she / it is\nwe are · they are' },
+      },
       flashcards: [
         ['Hello! / Hi!', 'Cześć! / Dzień dobry!'],
         ['Good morning!', 'Dzień dobry! (rano)'],
@@ -158,6 +171,19 @@ window.SUBJECTS.push({
         <p>Zakaz: <b>Don't</b> + czasownik: <i><b>Don't</b> run!</i> (Nie biegaj!) <i><b>Don't</b> touch!</i> (Nie dotykaj!)</p>
         <p>Ostrzeżenie: <i><b>Be careful!</b></i> – Uważaj!</p>
       `,
+      infographicNote: 'Każdy kafelek to grupa słówek; ten sam kolor – ten sam temat.',
+      infographic: {
+        type: 'karty', kolumny: 2,
+        items: [
+          { icon: '🐄', kolor: 3, title: 'Zwierzęta', text: 'cow, pig, sheep, horse, hen, rabbit' },
+          { icon: '🌦️', kolor: 3, title: 'Pogoda', text: "It's sunny. It's rainy. It's windy." },
+          { icon: '⚽', kolor: 1, title: 'play +', text: 'gra z piłką lub rakietą: play football, play tennis' },
+          { icon: '🏊', kolor: 1, title: 'go +', text: 'sport z -ing: go swimming, go cycling' },
+          { icon: '🤒', kolor: 2, title: "What's the matter?", text: "I've got a headache. → Go to the doctor." },
+          { icon: '🚫', kolor: 5, title: 'Polecenia', text: "Sit down! Don't run! Be careful!" },
+        ],
+        bottom: { kolor: 4, title: '💡 Ból to często -ache', text: 'headache (głowa), toothache (ząb), stomachache (brzuch)' },
+      },
       flashcards: [
         ['cow / pig / sheep', 'krowa / świnia / owca'],
         ['horse / hen / rabbit', 'koń / kura / królik'],
@@ -265,6 +291,19 @@ window.SUBJECTS.push({
         </table>
         <div class="tip">💡 Przymiotnik opisuje osobę lub rzecz: <i>Tom is a <b>good</b> swimmer.</i> Przysłówek opisuje czynność: <i>Tom swims <b>well</b>.</i> Nie ma słowa „goodly” ani „fastly”!</div>
       `,
+      infographicNote: 'Porównuj w poziomie: po lewej I, you, we, they, po prawej he, she, it.',
+      infographic: {
+        type: 'porownanie',
+        top: { kolor: 5, title: '🧑 Opisujesz ludzi', items: ['wygląd: tall, short, curly hair', 'charakter: kind, funny, shy', 'uczucia: happy, sad, tired'] },
+        kolumny: [{ title: 'I, you, we, they', kolor: 1 }, { title: 'he, she, it', kolor: 2 }],
+        wiersze: [
+          { label: 'have got – mieć', cells: ["I've got a dog.", "She's got blue eyes."] },
+          { label: 'przeczenie', cells: ["haven't got", "hasn't got"], bold: true },
+          { label: 'pytanie i krótka odpowiedź', cells: ['Have you got…? – Yes, I have.', 'Has he got…? – Yes, he has.'] },
+          { label: 'can – umieć (zawsze bez -s!)', cells: ['I can swim.', 'She can ride a bike.'] },
+        ],
+        bottom: { kolor: 4, title: '💡 Jak? – przysłówki sposobu', text: 'slow → slowly · easy → easily\ngood → well · fast → fast' },
+      },
       flashcards: [
         ['tall / short', 'wysoki / niski (short to też „krótki”)'],
         ['curly / straight hair', 'kręcone / proste włosy'],
@@ -360,6 +399,20 @@ window.SUBJECTS.push({
         </table>
         <p><b>Szyk pytania</b>: słowo pytające → <b>is / are</b> → osoba: <i>Where <b>are you</b> from?</i> Z innymi czasownikami: słowo pytające → <b>do / does</b> → osoba → czasownik: <i>Where <b>do you live</b>?</i> (Gdzie mieszkasz?), <i>What <b>does she like</b>?</i></p>
       `,
+      infographicNote: 'Porównuj w poziomie: kraj po lewej, narodowość po prawej; na dole – jak zbudować pytanie.',
+      infographic: {
+        type: 'porownanie',
+        top: { kolor: 5, title: '🌍 Where are you from?', text: "I'm from Poland. I'm Polish.\nKraj i narodowość – wielką literą!" },
+        kolumny: [{ title: 'Kraj', kolor: 1 }, { title: 'Narodowość', kolor: 3 }],
+        wiersze: [
+          { cells: ['Poland', 'Polish'], bold: true },
+          { cells: ['the UK', 'British'], bold: true },
+          { cells: ['the USA', 'American'], bold: true },
+          { cells: ['Spain', 'Spanish'], bold: true },
+          { cells: ['Japan', 'Japanese'], bold: true },
+        ],
+        bottom: { kolor: 4, title: '❓ Pytania z wh-', text: 'What? Where? Who? When? Why? How?\nKolejność słów w pytaniu:', items: ['Where → are → you → from?', 'Where → do → you → live?'] },
+      },
       flashcards: [
         ['Where are you from?', 'Skąd jesteś? → I\'m from Poland. I\'m Polish.'],
         ['Poland – Polish', 'Polska – polski, Polak / Polka'],
@@ -451,6 +504,18 @@ window.SUBJECTS.push({
           <li><b>Do you like</b> bananas? – Yes, I do. / No, I don't.</li>
         </ul>
       `,
+      infographicNote: 'Czytaj od góry: tak wygląda rozmowa w sklepie. Niebieskie – mówi sprzedawca, zielone – mówisz ty.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '💁', kolor: 1, title: 'Can I help you?', text: 'W czym mogę pomóc?' },
+          { icon: '🙋', kolor: 3, title: "I'd like an apple, please.", text: 'Poproszę jabłko. – grzecznie\n„I want” może brzmieć niegrzecznie' },
+          { icon: '🙋', kolor: 3, title: 'How much is it?', text: 'Ile to kosztuje?' },
+          { icon: '💁', kolor: 1, title: 'Here you are.', text: 'Proszę. (gdy coś podajesz)' },
+          { icon: '🙋', kolor: 3, title: 'Thank you.', text: 'Dziękuję.' },
+        ],
+        bottom: { kolor: 4, title: '💡 a czy an? Jedna czy wiele?', items: ['an apple, an egg – a banana, a T-shirt', 'apple → apples, tomato → tomatoes', 'child → children, foot → feet'] },
+      },
       flashcards: [
         ['bread / butter / cheese', 'chleb / masło / ser'],
         ['juice / milk / water', 'sok / mleko / woda'],
@@ -534,6 +599,18 @@ window.SUBJECTS.push({
         <p>Pytania: <b>What's this?</b> – <i>It's a kite.</i> · <b>What are these?</b> – <i>They're headphones.</i></p>
         <div class="tip">💡 Z <b>this</b> i <b>that</b> łączymy <b>is</b>, z <b>these</b> i <b>those</b> – <b>are</b>.</div>
       `,
+      infographicNote: 'U góry – czyje coś jest; w tabelce porównuj: blisko czy daleko, jedna rzecz czy wiele.',
+      infographic: {
+        type: 'porownanie',
+        top: { kolor: 5, title: '👤 Czyje? Zależy od właściciela', text: 'I → my · you → your · he → his\nshe → her · it → its · we → our\nthey → their' },
+        kolumny: [{ title: 'jedna rzecz', kolor: 1 }, { title: 'wiele rzeczy', kolor: 3 }],
+        wiersze: [
+          { label: 'blisko (tu)', cells: ['this', 'these'], bold: true },
+          { label: 'daleko (tam)', cells: ['that', 'those'], bold: true },
+          { label: 'this, that + is · these, those + are', cells: ['This is my phone.', 'These are my keys.'] },
+        ],
+        bottom: { kolor: 4, title: '❓ Whose bag is this?', text: "→ It's Tom's.\nWłaściciel + 's stoi przed rzeczą:\nOla's cat – kot Oli" },
+      },
       flashcards: [
         ['keys / wallet / watch', 'klucze / portfel / zegarek'],
         ['headphones / camera / umbrella', 'słuchawki / aparat / parasol'],
@@ -619,6 +696,18 @@ window.SUBJECTS.push({
         <h3>Jak często?</h3>
         <p><b>always</b> (zawsze) → <b>usually</b> (zwykle) → <b>sometimes</b> (czasami) → <b>never</b> (nigdy). Te słowa stawiamy <b>przed czasownikiem</b>: <i>I always get up at seven.</i> Po „am / is / are” stawiamy je za nim: <i>I'm never late.</i></p>
       `,
+      infographicNote: 'U góry – godziny; w tabelce porównuj w poziomie: I, you, we, they i he, she, it.',
+      infographic: {
+        type: 'porownanie',
+        top: { kolor: 5, title: '🕖 What time is it?', items: ["7:00 – seven o'clock", '7:15 – quarter past seven', '7:30 – half past seven (wpół do ósmej!)', '7:45 – quarter to eight'] },
+        kolumny: [{ title: 'I, you, we, they', kolor: 1 }, { title: 'he, she, it', kolor: 2 }],
+        wiersze: [
+          { label: 'present simple – co robię zwykle', cells: ['I play', 'she plays, he watches'] },
+          { label: 'przeczenie', cells: ["I don't play", "she doesn't play"] },
+          { label: 'pytanie', cells: ['Do you play?', 'Does she play?'] },
+        ],
+        bottom: { kolor: 4, title: '📅 Kiedy i jak często?', items: ["at seven o'clock · on Monday · in May", 'always → usually → sometimes → never'] },
+      },
       flashcards: [
         ['grandma / grandpa', 'babcia / dziadek'],
         ['aunt / uncle', 'ciocia / wujek'],
@@ -707,6 +796,18 @@ window.SUBJECTS.push({
         </table>
         <p><i>The cat is <b>under</b> the table.</i> – Kot jest pod stołem. <i>My bag is <b>next to</b> the desk.</i> – Mój plecak jest obok biurka.</p>
       `,
+      infographicNote: 'Porównuj w poziomie: jedna rzecz – there is, wiele rzeczy – there are.',
+      infographic: {
+        type: 'porownanie',
+        top: { kolor: 5, title: '🏠 W domu i 🏫 w szkole', text: 'Mówisz, co gdzie jest: jedna rzecz („jest”) czy wiele („są”)?' },
+        kolumny: [{ title: 'jedna rzecz', kolor: 1 }, { title: 'wiele rzeczy', kolor: 3 }],
+        wiersze: [
+          { label: 'twierdzenie', cells: ['There is a bed.', 'There are two chairs.'] },
+          { label: 'przeczenie', cells: ["There isn't a sofa.", "There aren't any books."] },
+          { label: 'pytanie', cells: ['Is there a lamp?', 'Are there any pens?'] },
+        ],
+        bottom: { kolor: 4, title: '📍 Gdzie to jest?', text: 'in – w · on – na · under – pod\nnext to – obok · behind – za\nin front of – przed', items: ['The cat is under the table.'] },
+      },
       flashcards: [
         ['kitchen / bathroom', 'kuchnia / łazienka'],
         ['bedroom / living room', 'sypialnia / salon'],
@@ -800,6 +901,20 @@ window.SUBJECTS.push({
           <li>„How much is it?” znaczy też: ile to kosztuje?</li>
         </ul>
       `,
+      infographicNote: 'Porównuj w poziomie: po lewej rzeczy, które liczysz na sztuki, po prawej – te, których nie liczysz.',
+      infographic: {
+        type: 'porownanie',
+        kolumny: [{ title: '🍎 Policzalne', kolor: 1 }, { title: '🥛 Niepoliczalne', kolor: 3 }],
+        wiersze: [
+          { label: 'przykłady (niepoliczalne – bez a / an)', cells: ['an apple – two apples', 'milk, water, bread'] },
+          { label: 'twierdzenie – some', cells: ['There are some eggs.', 'There is some milk.'] },
+          { label: 'przeczenie – any', cells: ["There aren't any eggs.", "There isn't any milk."] },
+          { label: 'pytanie – any', cells: ['Are there any eggs?', 'Is there any milk?'] },
+          { label: 'dużo – a lot of', cells: ['a lot of apples', 'a lot of milk'] },
+          { label: 'Ile?', cells: ['How many eggs?', 'How much milk?'], bold: true },
+        ],
+        bottom: { kolor: 4, title: '🥤 Jak policzyć niepoliczalne?', text: 'a bottle of water · a glass of milk\na slice of bread · a piece of cheese' },
+      },
       flashcards: [
         ['Policzalne (countable)', 'da się policzyć na sztuki: an apple – two apples'],
         ['Niepoliczalne (uncountable)', 'bez a/an i bez liczby mnogiej: milk, water, bread, cheese, rice'],
@@ -883,6 +998,18 @@ window.SUBJECTS.push({
           <li>Present simple – to, co robisz <b>zwykle</b>: <i>I usually walk to school.</i> Present continuous – to, co robisz <b>teraz</b>: <i>Today I'm going by bus.</i></li>
         </ul>
       `,
+      infographicNote: 'Od góry: dział ma cztery części – miejsca, gdzie coś jest, jak dojść i co dzieje się teraz.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: '🏙️ W mieście' },
+        branches: [
+          { kolor: 3, title: '🏛️ Miejsca', items: ['library, post office, hospital', "chemist's, bus stop, train station"] },
+          { kolor: 1, title: '📍 Gdzie to jest?', items: ['next to – obok', 'opposite – naprzeciwko', 'between – między'] },
+          { kolor: 1, title: '🧭 Jak dojść?', items: ['Go straight on. – Idź prosto.', 'Turn left. / Turn right.', "It's on the left. / It's on the right."] },
+          { kolor: 2, title: '⏱️ Co dzieje się teraz?', text: 'am / is / are + czasownik z -ing', items: ["I'm reading. She's running.", 'What are you doing?', 'sygnały: now, at the moment, Look!'] },
+        ],
+        bottom: { kolor: 4, title: '✏️ Pisownia -ing', items: ['read → reading', 'write → writing (nieme -e znika)', 'swim → swimming (podwójna spółgłoska)'] },
+      },
       flashcards: [
         ['library / bookshop', 'biblioteka / księgarnia'],
         ['post office / police station', 'poczta / komisariat policji'],
@@ -967,6 +1094,19 @@ window.SUBJECTS.push({
         <h3>Fakt czy stereotyp?</h3>
         <p><b>Stereotyp</b> to uproszczona opinia o całej grupie ludzi, np. „wszyscy Brytyjczycy codziennie o piątej piją herbatę”. Nie jest prawdziwa dla każdego. <b>Fakt</b> można sprawdzić: „W Wielkiej Brytanii jeździ się lewą stroną drogi”. Ludzie w każdym kraju są różni – warto ich poznać, zanim się ich oceni.</p>
       `,
+      infographicNote: 'Czytaj od góry: święta po kolei w roku szkolnym. Ten sam kolor – ten sam kraj.',
+      infographic: {
+        type: 'os',
+        items: [
+          { label: '31.10', kolor: 4, title: 'Halloween', text: "„Trick or treat!”, dynie ze świeczką (jack-o'-lanterns)" },
+          { label: '5.11', kolor: 1, title: 'Bonfire Night', text: 'Wielka Brytania: ogniska i fajerwerki (fireworks)' },
+          { label: 'listopad', kolor: 2, title: 'Thanksgiving', text: 'USA, czwarty czwartek listopada: indyk (turkey)' },
+          { label: '25.12', kolor: 1, title: 'Christmas Day', text: 'Wielka Brytania: rano prezenty, potem indyk; 26.12 – Boxing Day' },
+          { label: '17.03', kolor: 3, title: "St Patrick's Day", text: 'Irlandia: zielone stroje, koniczyna (shamrock)' },
+          { label: '1.07', kolor: 5, title: 'Canada Day', text: 'Kanada: święto narodowe' },
+          { label: '4.07', kolor: 2, title: 'Independence Day', text: 'USA: Dzień Niepodległości (1776)' },
+        ],
+      },
       flashcards: [
         ['Halloween', '31 października: „Trick or treat!”, dynie ze świeczką (jack-o\'-lanterns)'],
         ['pumpkin', 'dynia'],
