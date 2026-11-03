@@ -509,18 +509,18 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Zawsze patrz na <b>legendę</b> – podaje, jaką wysokość oznacza każdy kolor.</div>
       `,
-      infographicNote: 'Porównuj w poziomie: kolory kolumn są takie jak na mapie wysokości.',
+      infographicNote: 'Porównuj w poziomie: każdy wiersz to jedna cecha nizin, wyżyn i gór.',
       infographic: {
         type: 'porownanie',
         top: { title: '📐 Dwie wysokości', text: 'bezwzględna – od poziomu morza (m n.p.m.)\nwzględna – od wybranego miejsca, liczysz odejmowaniem', kolor: 1 },
         kolumny: [{ title: 'Nizina', kolor: 3 }, { title: 'Wyżyna', kolor: 4 }, { title: 'Góry', kolor: 2 }],
         wiersze: [
-          { label: 'wysokość nad morzem', cells: ['0–300 m n.p.m.', 'powyżej 300 m n.p.m.', 'powyżej 300 m n.p.m.'] },
-          { label: 'różnice wysokości', cells: ['małe', 'do 300 m', 'ponad 300 m'] },
+          { label: 'wysokość bezwzględna', cells: ['0–300\u00a0m n.p.m.', 'powyżej 300\u00a0m n.p.m.', 'powyżej 300\u00a0m n.p.m.'] },
+          { label: 'różnice wysokości', cells: ['małe', 'do 300\u00a0m', 'ponad 300\u00a0m'] },
           { label: 'przykład', cells: ['Nizina Mazowiecka', 'Wyżyna Lubelska', 'Tatry'] },
           { label: 'kolor na mapie', cells: ['zielony', 'żółty, pomarańczowy', 'brązowy, czerwony'] },
         ],
-        bottom: { title: '💡 Zapamiętaj', text: 'Poziomice gęsto – stok stromy, rzadko – łagodny. Najwyższy szczyt Polski: Rysy (2499 m n.p.m.).', kolor: 5 },
+        bottom: { title: '💡 Zapamiętaj', text: 'Poziomice gęsto – stok stromy, rzadko – łagodny. Najwyższy szczyt Polski: Rysy (2499\u00a0m\u00a0n.p.m.).', kolor: 5 },
       },
       flashcards: [
         ['Ukształtowanie terenu', 'Kształt powierzchni Ziemi: wzniesienia, obniżenia i równiny (inaczej rzeźba terenu)'],
@@ -1265,12 +1265,11 @@ window.SUBJECTS.push({
       infographicNote: 'Czytaj od góry: czego roślina potrzebuje do fotosyntezy i co z niej powstaje.',
       infographic: {
         type: 'kroki',
+        top: { title: 'Roślina potrzebuje', items: ['💧 wody – pobiera ją korzeń', '💨 dwutlenku węgla – gazu z powietrza', '☀️ światła – bez niego nie wytworzy pokarmu'], kolor: 1 },
         items: [
-          { icon: '💧', title: 'Woda', text: 'pobiera ją korzeń', kolor: 1 },
-          { icon: '💨', title: 'Dwutlenek węgla', text: 'gaz z powietrza', kolor: 1 },
-          { icon: '☀️', title: 'Światło', text: 'bez światła roślina nie wytworzy pokarmu', kolor: 4 },
-          { icon: '🍃', title: 'Fotosynteza', text: 'w zielonych liściach powstaje pokarm (cukier)', kolor: 3 },
-          { icon: '🌬️', title: 'Tlen', text: 'roślina go wydziela – oddychamy nim', kolor: 3 },
+          { icon: '🍃', title: 'Fotosynteza', text: 'zachodzi w zielonych liściach', kolor: 3 },
+          { icon: '🌬️', title: 'Pokarm (cukier) i tlen', text: 'roślina wytwarza pokarm i wydziela tlen', kolor: 3 },
+          { icon: '🐾', title: 'Dla zwierząt i ludzi', text: 'dzięki fotosyntezie mają pokarm i tlen do oddychania', kolor: 4 },
         ],
         bottom: { title: 'Samożywne i cudzożywne', text: 'Rośliny same wytwarzają pokarm. Zwierzęta, grzyby i człowiek zjadają inne organizmy lub ich szczątki.', kolor: 5 },
       },
@@ -1615,10 +1614,10 @@ window.SUBJECTS.push({
           { title: 'Gardło → krtań', text: 'w krtani powstaje głos', kolor: 1 },
           { title: 'Tchawica → oskrzela', text: 'prowadzą powietrze do płuc', kolor: 1 },
           { title: 'Płuca', text: 'tlen przechodzi do krwi, dwutlenek węgla – do powietrza', kolor: 1 },
-          { icon: '❤️', title: 'Serce i krew', text: 'serce pompuje krew; krew rozwozi tlen po całym ciele', kolor: 2 },
+          { icon: '❤️', title: 'Serce i krew', text: 'serce pompuje krew; krew rozwozi tlen po całym ciele', kolor: 5 },
           { title: 'Komórki', text: 'z pomocą tlenu uwalniają energię z pokarmu; powstaje dwutlenek węgla', kolor: 3 },
         ],
-        bottom: { title: '🚭 Co szkodzi?', text: 'dym tytoniowy (tlenek węgla utrudnia krwi przenoszenie tlenu), alkohol, smog', kolor: 4 },
+        bottom: { title: '🚭 Co szkodzi?', text: 'dym tytoniowy (tlenek węgla utrudnia krwi przenoszenie tlenu), alkohol, smog', kolor: 2 },
       },
       flashcards: [
         ['Oddychanie komórkowe', 'Komórki z pomocą tlenu uwalniają energię z pokarmu; powstaje dwutlenek węgla'],
@@ -1913,7 +1912,7 @@ window.SUBJECTS.push({
           { label: 'ruch', cells: ['mały opór, nie podtrzymuje ciała', 'duży opór, ale podtrzymuje ciało'] },
           { label: 'temperatura', cells: ['duże zmiany', 'zmienia się wolniej i mniej'] },
           { label: 'światło', cells: ['dociera łatwo', 'im głębiej, tym ciemniej'] },
-          { label: 'czym oddychają?', cells: ['płuca', 'skrzela'], bold: true },
+          { label: 'narząd oddychania', cells: ['płuca', 'skrzela'], bold: true },
           { label: 'przystosowania', cells: ['łuski, pancerz – przed wysychaniem', 'opływowy kształt, płetwy, śluz'] },
         ],
         bottom: { title: '🐸 Płazy', text: 'Kijanki żyją w wodzie i oddychają skrzelami. Dorosłe oddychają płucami i skórą.', kolor: 3 },
@@ -2222,7 +2221,7 @@ window.SUBJECTS.push({
         <h3>Ochrona przyrody w twojej okolicy</h3>
         <p>Rozejrzyj się: w wielu miejscowościach są pomniki przyrody – stare drzewa albo duże głazy z tabliczką. W okolicy może być też rezerwat albo park krajobrazowy. Informacje znajdziesz na tablicach w terenie i na stronach gminy.</p>
       `,
-      infographicNote: 'Od góry: obszary chronione od największego, niżej pojedyncze twory i gatunki.',
+      infographicNote: 'Pod każdą formą – co chroni. Zielone – obszary, żółty – pojedyncze twory, niebieski – gatunki.',
       infographic: {
         type: 'drzewo', kolumny: 1,
         root: { title: 'Formy ochrony przyrody', text: 'w ustawie jest ich 10 – oto najważniejsze', kolor: 5 },
@@ -2495,7 +2494,7 @@ window.SUBJECTS.push({
         top: { title: '☀️ Słońce i 8 planet', text: 'skaliste: Merkury, Wenus, Ziemia, Mars\ngazowe olbrzymy: Jowisz, Saturn, Uran, Neptun', kolor: 4 },
         kolumny: [{ title: '🔄 Ruch obrotowy', kolor: 1 }, { title: '🔁 Ruch obiegowy', kolor: 3 }],
         wiersze: [
-          { label: 'Ziemia krąży…', cells: ['wokół własnej osi', 'wokół Słońca'] },
+          { label: 'ruch wokół…', cells: ['własnej osi', 'Słońca'] },
           { label: 'ile trwa?', cells: ['prawie 24 h – doba', 'ok. 365 dni i ćwierć doby – rok'] },
           { label: 'skutek', cells: ['dzień i noc', 'pory roku (z nachyleniem osi)'], bold: true },
         ],
@@ -2822,7 +2821,7 @@ window.SUBJECTS.push({
           { icon: '🏖️', title: 'Pobrzeża', text: 'nad Bałtykiem: plaże, wydmy, płaski teren', kolor: 3 },
           { title: 'Pojezierza', text: 'pofałdowany teren, liczne jeziora polodowcowe', kolor: 3 },
           { title: 'Niziny środkowopolskie', text: 'równiny, dużo pól i łąk', kolor: 3 },
-          { title: 'Wyżyny', text: 'skałki i jaskinie, np. Wyżyna Krakowsko-Częstochowska', kolor: 4 },
+          { title: 'Wyżyny', text: 'teren wyżej położony, np. Wyżyna Lubelska', kolor: 4 },
           { title: 'Kotliny podgórskie', text: 'płaskie obniżenia u podnóża Karpat', kolor: 3 },
           { icon: '⛰️', title: 'Góry', text: 'Sudety i Karpaty (np. Tatry)', kolor: 2 },
         ],

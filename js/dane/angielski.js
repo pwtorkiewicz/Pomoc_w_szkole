@@ -1408,7 +1408,7 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Wymaganie IX.2 to <b>porównywanie kultur</b>: Amerykanie mają <i>Independence Day</i> 4 lipca, a my – Narodowe Święto Niepodległości 11 listopada. Zauważ podobieństwa i różnice, a przy nazwach świąt i miast pisz wielką literą: <i>Christmas, Easter, Warsaw</i>.</div>
       `,
-      infographicNote: 'U góry – z czego składa się Zjednoczone Królestwo; na dole – inne kraje anglojęzyczne i ich stolice.',
+      infographicNote: 'Zielone – części UK na wyspie Great Britain, fioletowa – Irlandia Północna; na dole – inne kraje i stolice.',
       infographic: {
         type: 'drzewo', kolumny: 2,
         root: { title: 'the United Kingdom (the UK)', kolor: 1, text: 'Great Britain (wyspa)\n+ Northern Ireland\nwaluta: the pound (£)' },

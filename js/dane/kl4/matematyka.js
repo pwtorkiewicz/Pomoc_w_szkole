@@ -597,7 +597,7 @@
         infographic: {
           type: 'drzewo', kolumny: 1,
           top: { title: 'Najpierw oszacuj', text: '389 · 21 ≈ 400 · 20 = 8 000 – na końcu sprawdzisz, czy wynik ma sens', kolor: 2 },
-          root: { title: 'Działania pisemne', text: 'podpisz liczby rzędami – wyrównaj do prawej', kolor: 1 },
+          root: { title: 'Podpisz liczby rzędami', text: 'jedności pod jednościami – wyrównaj do prawej', kolor: 1 },
           branches: [
             { title: 'Dodawanie (od prawej)', items: ['wyszło 13? piszesz 3, a 1 przenosisz dalej'], kolor: 3 },
             { title: 'Odejmowanie (od prawej)', items: ['górna cyfra za mała? rozmień 1 z rzędu po lewej', 'sprawdź: różnica + odjemnik = odjemna'], kolor: 3 },
@@ -1062,8 +1062,8 @@
           wiersze: [
             { label: 'Pytanie', cells: ['Ile to naprawdę?', 'Ile na planie?'] },
             { label: 'Działanie', cells: ['· liczba ze skali', ': liczba ze skali'], bold: true },
-            { label: 'Jednostki', cells: ['potem zamień cm na m', 'najpierw zamień m na cm'] },
-            { label: 'Przykład (skala 1 : 1000)', cells: ['7 cm · 1000\n= 7000 cm = 70 m', '40 m = 4000 cm\n4000 cm : 1000 = 4 cm'] },
+            { label: 'Jednostki', cells: ['potem zamień\ncm na m', 'najpierw zamień\nm na cm'] },
+            { label: 'Przykład (skala 1 : 1000)', cells: ['7 cm · 1000\n= 7000 cm = 70 m', '40 m = 4000 cm\n4000 : 1000 = 4 cm'] },
           ],
           bottom: { title: '💡 Zapamiętaj', text: '1 m = 100 cm, 1 km = 100 000 cm. Skala 2 : 1 to powiększenie 2 razy.', kolor: 4 },
         },
@@ -1175,10 +1175,11 @@
             <li><span class="f">3/4 z 12</span>: najpierw 1/4 z 12 = 3, potem 3 · 3 = 9.</li>
           </ul>
         `,
-        infographicNote: 'Na górze – co znaczy ułamek; niżej – co z nim możesz zrobić.',
+        infographicNote: 'Na górze – co znaczy ułamek; w gałęziach – co możesz z nim zrobić.',
         infographic: {
           type: 'drzewo', kolumny: 1,
-          root: { title: '3/8 – trzy ósme', text: '8 (mianownik) – na ile równych części dzielisz całość; 3 (licznik) – ile części bierzesz', kolor: 1 },
+          top: { title: '3/8 – trzy ósme', text: 'mianownik 8 – na ile równych części\nlicznik 3 – ile części bierzesz', kolor: 2 },
+          root: { title: 'Co robisz z ułamkiem?', kolor: 1 },
           branches: [
             { title: 'Kreska to dzielenie', items: ['3/4 = 3 : 4', '8/4 = 8 : 4 = 2'], kolor: 5 },
             { title: 'Właściwy i niewłaściwy', items: ['właściwy: licznik mniejszy, np. 3/5', 'niewłaściwy: licznik równy lub większy, np. 7/4'], kolor: 3 },
@@ -1313,9 +1314,9 @@
             { title: '1. Te same mianowniki?', text: 'Jeśli nie – rozszerz ułamek o mniejszym mianowniku: 1/2 + 1/4 = 2/4 + 1/4' },
             { title: '2. Licz na licznikach', text: 'mianownik zostaje: 2/7 + 3/7 = 5/7' },
             { title: '3. Skróć wynik', text: '7/9 − 4/9 = 3/9 = 1/3' },
-            { title: '4. Zamień na mieszaną', text: 'gdy wyjdzie ułamek niewłaściwy: 3/5 + 4/5 = 7/5 = 1 2/5' },
+            { title: '4. Zamień na mieszaną', text: 'gdy wyjdzie ułamek niewłaściwy:\n3/5 + 4/5 = 7/5 = 1 2/5' },
           ],
-          bottom: { title: '⚠️ Częsty błąd', text: 'Mianowników nie dodajesz: 2/7 + 3/7 to NIE 5/14.', kolor: 2 },
+          bottom: { title: '⚠️ Częsty błąd', text: 'Mianowników nie dodajesz:\n2/7 + 3/7 to NIE 5/14.', kolor: 2 },
         },
         flashcards: [
           ['Ułamki równe', 'Różnie zapisane, ale oznaczają tę samą część, np. 1/2 = 2/4 = 4/8'],
@@ -1464,7 +1465,7 @@
             { label: 'tysięczne – 3 cyfry po przecinku', cells: ['125/1000', '0,125'], bold: true },
             { label: 'liczba mieszana', cells: ['3 7/10', '3,7'], bold: true },
           ],
-          bottom: { title: 'Porównywanie', text: 'Dopisz zera na końcu, żeby było tyle samo cyfr: 0,5 = 0,50, a 0,50 > 0,45.', kolor: 2 },
+          bottom: { title: 'Porównywanie', text: 'Dopisz zera na końcu, żeby było tyle samo cyfr po przecinku:\n0,5 = 0,50, a 0,50 > 0,45', kolor: 2 },
         },
         flashcards: [
           ['0,1', '1/10 – jedna dziesiąta'],
@@ -1607,7 +1608,7 @@
             { label: 'ha', title: '1 ha = 100 a', text: '= 10 000 m², kwadrat 100 m × 100 m' },
             { label: 'km²', title: '1 km² = 100 ha', text: '= 1 000 000 m²' },
           ],
-          bottom: { title: 'Figura w kształcie L', text: 'Podziel na prostokąty i dodaj pola albo od dużego prostokąta odejmij brakujący róg: 8 · 5 − 3 · 2 = 34 m²', kolor: 3 },
+          bottom: { title: 'Figura w kształcie L', text: 'Podziel na prostokąty i dodaj pola albo od dużego prostokąta odejmij brakujący róg:\n8 · 5 − 3 · 2 = 40 − 6 = 34 m²', kolor: 3 },
         },
         flashcards: [
           ['1 cm²', '100 mm² (kwadrat 1 cm × 1 cm to 10 · 10 kwadracików 1 mm²)'],
@@ -1749,12 +1750,12 @@
           kolumny: [{ title: 'Prostopadłościan', kolor: 1 }, { title: 'Sześcian', kolor: 5 }],
           wiersze: [
             { label: 'Ściany', cells: ['6 prostokątów, naprzeciw siebie takie same', '6 jednakowych kwadratów'] },
-            { label: 'Krawędzie', cells: ['12 – trzy grupy po 4 równe', '12 – wszystkie równe'] },
+            { label: 'Krawędzie', cells: ['12 – trzy grupy\npo 4 równe', '12 – wszystkie\nrówne'] },
             { label: 'Wierzchołki', cells: ['8', '8'], bold: true },
-            { label: 'Suma długości krawędzi', cells: ['5, 3, 2 cm:\n4 · 5 + 4 · 3 + 4 · 2 = 40 cm', 'krawędź 4 cm:\n12 · 4 = 48 cm'] },
-            { label: 'Siatka', cells: ['6 prostokątów, po dwa takie same', '6 kwadratów – aż 11 różnych siatek'] },
+            { label: 'Suma długości krawędzi', cells: ['5 cm, 3 cm, 2 cm:\n4 · 5 + 4 · 3 + 4 · 2\n= 40 cm', 'krawędź 4 cm:\n12 · 4 = 48 cm'] },
+            { label: 'Siatka', cells: ['6 prostokątów,\npo dwa takie same', '6 kwadratów –\naż 11 różnych siatek'] },
           ],
-          bottom: { title: 'Inne bryły', text: 'walec – puszka, stożek – wafel do lodów, kula – piłka', kolor: 3 },
+          bottom: { title: 'Inne bryły', text: 'walec – puszka\nstożek – wafel do lodów\nkula – piłka', kolor: 3 },
         },
         flashcards: [
           ['Prostopadłościan – ile ścian, krawędzi, wierzchołków?', '6 ścian, 12 krawędzi, 8 wierzchołków'],
@@ -1905,7 +1906,7 @@
           kolumny: [{ title: 'Pole powierzchni', kolor: 1 }, { title: 'Objętość', kolor: 3 }],
           wiersze: [
             { label: 'Co mówi?', cells: ['ile papieru, żeby okleić 6 ścian', 'ile miejsca zajmuje bryła'] },
-            { label: 'Prostopadłościan a × b × c', cells: ['P = 2 · a · b + 2 · b · c + 2 · a · c', 'V = a · b · c'], bold: true },
+            { label: 'Prostopadłościan a × b × c', cells: ['P = 2 · a · b\n+ 2 · b · c\n+ 2 · a · c', 'V = a · b · c'], bold: true },
             { label: 'Sześcian o krawędzi a', cells: ['P = 6 · a · a', 'V = a · a · a'], bold: true },
             { label: 'Przykład: 5 cm × 3 cm × 2 cm', cells: ['62 cm²', '30 cm³'], bold: true },
             { label: 'Jednostki', cells: ['„do kwadratu”: cm²', '„do sześcianu”: cm³'] },
@@ -2054,13 +2055,13 @@
         infographic: {
           type: 'drzewo', kolumny: 1,
           top: { title: 'Dzielnik i wielokrotność', text: '12 : 3 = 4 bez reszty, więc 3 jest dzielnikiem 12, a 12 – wielokrotnością 3', kolor: 2 },
-          root: { title: 'Dzieli się przez…', text: 'sprawdzasz bez dzielenia', kolor: 1 },
+          root: { title: 'Cechy podzielności', text: 'sprawdzasz bez dzielenia', kolor: 1 },
           branches: [
             { title: 'Ostatnia cyfra', items: ['przez 2: 0, 2, 4, 6 lub 8', 'przez 5: 0 lub 5', 'przez 10: 0'], kolor: 1 },
-            { title: 'Dwie ostatnie cyfry', items: ['przez 4: liczba z nich dzieli się przez 4 (1 316, bo 16 : 4 = 4)'], kolor: 5 },
+            { title: 'Dwie ostatnie cyfry', items: ['przez 4: liczba z nich dzieli się przez 4', '1 316 – tak, bo 16 : 4 = 4'], kolor: 5 },
             { title: 'Suma cyfr', items: ['przez 3: suma dzieli się przez 3', 'przez 9: suma dzieli się przez 9'], kolor: 3 },
           ],
-          bottom: { title: 'Pierwsze i złożone', items: ['pierwsza – dokładnie 2 dzielniki: 1 i ona sama', 'złożona – więcej niż 2 dzielniki', '0 i 1 – ani pierwsze, ani złożone'], kolor: 4 },
+          bottom: { title: 'Pierwsze i złożone', items: ['pierwsza – dokładnie 2 dzielniki:\n1 i ona sama', 'złożona – więcej niż 2 dzielniki', '0 i 1 – ani pierwsze, ani złożone'], kolor: 4 },
         },
         flashcards: [
           ['Dzielnik liczby', 'Liczba, przez którą dana liczba dzieli się bez reszty, np. 4 jest dzielnikiem 12'],
@@ -2157,7 +2158,7 @@
           wiersze: [
             { label: 'Przez 10, 100, 1000 – o tyle miejsc, ile zer', cells: ['przecinek w prawo', 'przecinek w lewo'], bold: true },
             { label: 'Przykład', cells: ['3,45 · 100 = 345', '45,6 : 100 = 0,456'], bold: true },
-            { label: 'Przez liczbę naturalną', cells: ['licz bez przecinka, oddziel tyle cyfr, ile było', 'przecinek tam, gdzie przekraczasz go w dzielnej'] },
+            { label: 'Przez liczbę naturalną', cells: ['licz bez przecinka,\npotem oddziel tyle cyfr, ile było', 'przecinek stawiasz tam, gdzie\nprzekraczasz go w dzielnej'] },
             { label: 'Przykład', cells: ['0,4 · 3 = 1,2', '4,8 : 2 = 2,4'], bold: true },
             { label: 'Zamiana jednostek', cells: ['2,5 m = 2,5 · 100 cm = 250 cm', '350 g = 350 : 1000 kg = 0,35 kg'] },
           ],
@@ -2380,9 +2381,9 @@
           wiersze: [
             { label: 'Suma kątów', cells: ['180°', '360°'], bold: true },
             { label: 'Dlaczego?', cells: ['3 rogi składają się w kąt półpełny', 'przekątna dzieli go na 2 trójkąty'] },
-            { label: 'Brakujący kąt', cells: ['180° − (50° + 60°) = 70°', '360° − (80° + 100° + 70°) = 110°'] },
-            { label: 'Szczególne figury', cells: ['równoboczny: każdy kąt 60°', 'prostokąt: 4 · 90°'] },
-            { label: 'Równe kąty', cells: ['równoramienny: kąty przy podstawie', 'równoległobok: kąty naprzeciwko siebie'] },
+            { label: 'Brakujący kąt', cells: ['180° − (50° + 60°)\n= 70°', '80°, 100°, 70°:\n360° − 250° = 110°'] },
+            { label: 'Szczególne figury', cells: ['równoboczny:\nkażdy kąt 60°', 'prostokąt:\n4 · 90° = 360°'] },
+            { label: 'Równe kąty', cells: ['równoramienny:\nkąty przy podstawie', 'równoległobok:\nkąty naprzeciwko siebie'] },
           ],
           bottom: { title: 'Czy zbudujesz trójkąt?', text: 'Tak, gdy najdłuższy odcinek jest krótszy od sumy dwóch pozostałych.\n3, 4, 5 cm – tak; 2, 3, 6 cm – nie', kolor: 3 },
         },
@@ -2501,13 +2502,13 @@
         infographic: {
           type: 'drzewo', kolumny: 1,
           top: { title: 'Wysokość h', text: 'z wierzchołka prostopadle do podstawy a. Bok ukośny to nie wysokość!', kolor: 2 },
-          root: { title: 'Równoległobok', items: ['P = a · h'], kolor: 1 },
+          root: { title: 'Równoległobok', text: 'P = a · h', kolor: 1 },
           branches: [
             { title: 'Trójkąt', items: ['P = a · h : 2', '2 takie trójkąty tworzą równoległobok'], kolor: 3 },
             { title: 'Trapez', items: ['P = (a + b) · h : 2', '2 takie trapezy tworzą równoległobok o podstawie a + b'], kolor: 3 },
             { title: 'Romb', items: ['P = a · h albo P = e · f : 2', 'e, f – przekątne'], kolor: 3 },
           ],
-          bottom: { title: '💡 Najpierw jednostki', text: 'a = 2 m, h = 50 cm → 200 cm i 50 cm, P = 10 000 cm²', kolor: 4 },
+          bottom: { title: '💡 Najpierw jednostki', text: 'a = 2 m, h = 50 cm → 200 cm i 50 cm\nP = 200 · 50 = 10 000 cm² = 1 m²', kolor: 4 },
         },
         flashcards: [
           ['Wysokość', 'Odcinek z wierzchołka prostopadły do przeciwległego boku (lub jego przedłużenia)'],
@@ -2842,8 +2843,8 @@
         infographic: {
           type: 'os',
           items: [
-            { label: '100%', title: 'cała całość', text: 'przeczytasz 30% – zostanie 100% − 30% = 70%' },
-            { label: '75%', title: '3/4 – trzy czwarte', text: '3 razy po 25%: 75% z 80 = 3 · 20 = 60' },
+            { label: '100%', title: 'cała całość', text: 'przeczytasz 30% – zostanie\n100% − 30% = 70%' },
+            { label: '75%', title: '3/4 – trzy czwarte', text: '3 razy po 25%:\n75% z 80 = 3 · 20 = 60' },
             { label: '50%', title: '1/2 – połowa', text: 'dziel przez 2: 50% z 30 zł = 15 zł' },
             { label: '25%', title: '1/4 – ćwierć', text: 'dziel przez 4: 25% z 40 = 10' },
             { label: '10%', title: '1/10 – jedna dziesiąta', text: 'dziel przez 10: 10% z 70 = 7' },
@@ -3031,12 +3032,12 @@
           type: 'kroki',
           top: { title: 'Średnia arytmetyczna', text: 'tyle wypadłoby na każdego przy podziale po równo', kolor: 2 },
           items: [
-            { title: '1. Dodaj wszystkie liczby', text: 'oceny 4, 5, 3, 4: 4 + 5 + 3 + 4 = 16' },
+            { title: '1. Dodaj wszystkie liczby', text: 'oceny 4, 5, 3, 4\n4 + 5 + 3 + 4 = 16' },
             { title: '2. Policz, ile jest liczb', text: '4 oceny' },
             { title: '3. Podziel sumę', text: '16 : 4 = 4' },
             { title: '4. Sprawdź', text: 'średnia musi być między najmniejszą a największą liczbą' },
           ],
-          bottom: { title: '💡 W drugą stronę', text: 'suma = średnia · ile liczb. Średnia 3 liczb to 6, więc suma to 18.', kolor: 4 },
+          bottom: { title: '💡 W drugą stronę', text: 'suma = średnia · ile liczb\nŚrednia 3 liczb to 6 → suma 6 · 3 = 18', kolor: 4 },
         },
         flashcards: [
           ['Średnia arytmetyczna', 'Suma liczb podzielona przez to, ile jest liczb'],
