@@ -4,115 +4,12 @@ window.SUBJECTS.push({
   name: 'Informatyka',
   icon: '💻',
   color: '#3b6fd8',
+  book: 'Informatyka w akcji 4 (Nowa Era)',
   topics: [
-    {
-      id: 'algorytmy',
-      name: 'Algorytmy i programowanie',
-      basis: 'Dz.U. 2026 poz. 378, informatyka kl. IV–VI: dz. 1 wym. 1–4 (porządkowanie obiektów, podejście komputacyjne, wyszukiwanie elementów o podanych własnościach, planowanie zachowania robota); dz. 2 wym. 1–4 (algorytmy z poleceniami sekwencyjnymi, warunkowymi i iteracyjnymi, testowanie i poprawianie programu, objaśnianie rozwiązania, sterowanie robotem). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści kl. IV–VI na klasy). Programowanie to praca przy komputerze, której aplikacja nie zastąpi – tu utrwalasz pojęcia.',
-      theory: `
-        <h3>Co to jest algorytm?</h3>
-        <p><b>Algorytm</b> to przepis, jak coś zrobić <b>krok po kroku</b>. Kroki muszą być jasne i ułożone w dobrej kolejności. Algorytmem jest np. przepis na kanapkę albo instrukcja, jak dojść do szkoły.</p>
-        <p><b>Program</b> to algorytm zapisany tak, żeby mógł go wykonać komputer albo robot. W szkole programujesz często w <b>środowisku blokowym</b> (np. Scratch) – układasz program z kolorowych klocków-poleceń.</p>
-        <h3>Trzy rodzaje poleceń</h3>
-        <table>
-          <tr><th>Rodzaj</th><th>Co robi</th><th>Przykład</th></tr>
-          <tr><td><b>sekwencja</b></td><td>polecenia wykonują się po kolei, jedno po drugim</td><td>idź 1 krok, idź 1 krok, skręć w lewo</td></tr>
-          <tr><td><b>warunek</b></td><td>polecenie wykona się tylko wtedy, gdy coś jest prawdą</td><td>jeżeli pada deszcz, to weź parasol</td></tr>
-          <tr><td><b>powtarzanie (pętla)</b></td><td>te same polecenia wykonują się kilka razy</td><td>powtórz 4 razy: idź 1 krok</td></tr>
-        </table>
-        <div class="tip">💡 Pętla skraca program. Zamiast pisać 10 razy „idź 1 krok”, piszesz: „powtórz 10 razy: idź 1 krok”.</div>
-        <h3>Robot na planszy</h3>
-        <p>Robot porusza się po polach planszy. Strzałka mówi, w którą stronę zrobić <b>jeden krok</b> (na jedno pole): → w prawo, ← w lewo, ↑ w górę, ↓ w dół. Zanim uruchomisz program, prześledź palcem drogę robota pole po polu.</p>
-        <h3>Porządkowanie i wyszukiwanie</h3>
-        <ul>
-          <li><b>Porządkowanie</b> (sortowanie) – układanie rzeczy według jakiejś cechy: liczby od najmniejszej do największej, słowa w kolejności alfabetycznej, uczniów według wzrostu.</li>
-          <li><b>Wyszukiwanie</b> – znajdowanie w zbiorze elementów o podanej cesze, np. wszystkich liczb parzystych albo wszystkich czerwonych klocków.</li>
-        </ul>
-        <p>Jak ułożyć słowa alfabetycznie? Patrzysz na <b>pierwszą literę</b>. Gdy jest taka sama – na drugą: <i>kot, koza</i> (t jest przed z).</p>
-        <h3>Błędy i testowanie</h3>
-        <p><b>Błąd</b> w programie sprawia, że program działa inaczej, niż chcesz. <b>Testowanie</b> to uruchamianie programu i sprawdzanie, czy robi to, co miał robić. Gdy znajdziesz błąd, <b>poprawiasz</b> program i testujesz jeszcze raz.</p>
-        <div class="tip">💡 Duży problem dziel na małe części. Każdą część rozwiąż osobno – tak myśli informatyk.</div>
-      `,
-      infographicNote: 'Czytaj od góry: od algorytmu do programu, który działa tak, jak chcesz.',
-      infographic: {
-        type: 'kroki',
-        top: { title: '🧩 Duży problem?', text: 'Podziel go na małe części – każdą rozwiąż osobno.', kolor: 5 },
-        items: [
-          { icon: '📝', title: 'Algorytm', text: 'przepis krok po kroku, w dobrej kolejności', kolor: 1 },
-          { icon: '🧱', title: 'Program', text: 'algorytm zapisany dla komputera albo robota, np. z klocków w Scratchu', kolor: 1 },
-          { icon: '▶️', title: 'Testowanie', text: 'uruchom program i sprawdź, czy robi to, co miał', kolor: 3 },
-          { icon: '🐞', title: 'Błąd? Popraw!', text: 'popraw program i testuj jeszcze raz', kolor: 2 },
-        ],
-        bottom: { title: '💡 Trzy rodzaje poleceń', items: ['sekwencja – po kolei, jedno po drugim', 'warunek – „jeżeli…, to…”', 'pętla – powtórz kilka razy'], kolor: 4 },
-      },
-      flashcards: [
-        ['Algorytm', 'Przepis, jak coś zrobić krok po kroku, w dobrej kolejności'],
-        ['Program', 'Algorytm zapisany tak, żeby mógł go wykonać komputer albo robot'],
-        ['Sekwencja', 'Polecenia wykonywane po kolei, jedno po drugim'],
-        ['Warunek', '„Jeżeli…, to…” – polecenie wykona się tylko wtedy, gdy coś jest prawdą'],
-        ['Pętla (powtarzanie)', 'Te same polecenia wykonywane kilka razy, np. „powtórz 4 razy”'],
-        ['Środowisko blokowe', 'Program do programowania, w którym układasz polecenia z klocków, np. Scratch'],
-        ['Porządkowanie (sortowanie)', 'Układanie rzeczy według cechy, np. liczb od najmniejszej do największej'],
-        ['Wyszukiwanie', 'Znajdowanie w zbiorze elementów o podanej cesze'],
-        ['Błąd w programie', 'Program działa inaczej, niż chcieliśmy'],
-        ['Testowanie', 'Uruchamianie programu i sprawdzanie, czy działa tak, jak miał'],
-      ],
-      questions: [
-        { id: '6vwp94', q: 'Co to jest algorytm?', options: ['przepis, jak coś zrobić krok po kroku', 'część komputera, np. monitor albo mysz', 'rodzaj gry komputerowej dla dzieci', 'nazwa strony z grami w internecie'], answer: 0, explain: 'Algorytm to uporządkowany opis kroków, które prowadzą do celu.' },
-        { id: 'r1jgul', q: 'Który przykład to polecenie z warunkiem?', options: ['jeżeli jest zimno, to załóż czapkę', 'powtórz 3 razy: klaśnij w dłonie', 'idź 2 kroki do przodu i usiądź', 'narysuj kwadrat, a potem koło'], answer: 0, explain: 'Warunek ma postać „jeżeli…, to…” – polecenie wykona się tylko wtedy, gdy warunek jest spełniony.' },
-        { id: '9n96pt', q: 'Który przykład to powtarzanie (pętla)?', options: ['powtórz 5 razy: podskocz', 'jeżeli pada, weź parasol', 'idź 1 krok, potem skręć', 'zatrzymaj się'], answer: 0, explain: 'Pętla to wykonanie tych samych poleceń wiele razy.' },
-        { id: '59bq6p', q: 'Program: „powtórz 4 razy: idź 2 kroki”. Ile kroków zrobi robot?', options: ['8', '6', '4', '2'], answer: 0, explain: '4 razy po 2 kroki: 4 · 2 = 8 kroków.' },
-        { id: 'wrenr0', q: 'Ułóż słowa alfabetycznie: kot, arbuz, mleko, banan. Które słowo będzie trzecie?', options: ['kot', 'mleko', 'banan', 'arbuz'], answer: 0, explain: 'Kolejność: arbuz, banan, kot, mleko. Trzecie jest „kot”.' },
-        { id: 'qst4dc', q: 'Które słowo jest pierwsze w kolejności alfabetycznej?', options: ['kasa', 'koza', 'kot', 'kura'], answer: 0, explain: 'Wszystkie zaczynają się na „k”, więc patrzymy na drugą literę: a, o, o, u. Najwcześniej w alfabecie jest „a” – kasa.' },
-        { id: 'pf6u4j', q: 'Uporządkuj od najmniejszej: 15, 8, 23, 4. Która liczba będzie druga?', options: ['8', '4', '15', '23'], answer: 0, explain: 'Kolejność: 4, 8, 15, 23. Druga jest 8.' },
-        { id: 'tq5sn4', q: 'Wyszukaj liczby parzyste w zbiorze: 3, 6, 9, 10, 15. Ile ich jest?', options: ['2', '1', '3', '5'], answer: 0, explain: 'Parzyste są 6 i 10 – to dwie liczby.' },
-        {
-          id: '3e4j91',
-          q: 'Robot 🤖 idzie o jedno pole w kierunku każdej strzałki. Który program doprowadzi go do gwiazdki ⭐?',
-          svg: `<svg viewBox="0 0 320 220" role="img" aria-label="Plansza 5 na 4 pola. Robot stoi w lewym dolnym rogu. Gwiazdka jest trzy pola w prawo i dwa pola w górę od robota.">
-      <g class="ln-thin">
-        <line x1="35" y1="10" x2="285" y2="10"/><line x1="35" y1="60" x2="285" y2="60"/><line x1="35" y1="110" x2="285" y2="110"/><line x1="35" y1="160" x2="285" y2="160"/><line x1="35" y1="210" x2="285" y2="210"/>
-        <line x1="35" y1="10" x2="35" y2="210"/><line x1="85" y1="10" x2="85" y2="210"/><line x1="135" y1="10" x2="135" y2="210"/><line x1="185" y1="10" x2="185" y2="210"/><line x1="235" y1="10" x2="235" y2="210"/><line x1="285" y1="10" x2="285" y2="210"/>
-      </g>
-      <rect x="36" y="161" width="48" height="48" class="f1"/>
-      <rect x="186" y="61" width="48" height="48" class="f4"/>
-      <text x="60" y="193" class="tx-b" text-anchor="middle">🤖</text>
-      <text x="210" y="93" class="tx-b" text-anchor="middle">⭐</text>
-    </svg>`,
-          options: ['→ → → ↑ ↑', '→ → ↑ ↑', '↑ ↑ ↑ → → →', '→ → → ↓ ↓'],
-          answer: 0,
-          explain: 'Gwiazdka jest 3 pola w prawo i 2 pola w górę od robota: → → → ↑ ↑. Program „→ → ↑ ↑” kończy o jedno pole za wcześnie, a „↓” prowadzi poza planszę.',
-        },
-        {
-          id: 'fb96u4',
-          q: 'Robot 🤖 wykonuje program: „powtórz 3 razy: → ↑”. Na którym polu się zatrzyma?',
-          svg: `<svg viewBox="0 0 320 220" role="img" aria-label="Plansza 5 na 4 pola. Robot stoi w lewym dolnym rogu. Litery: A – czwarta kolumna, górny rząd; B – czwarta kolumna, dolny rząd; C – pierwsza kolumna, górny rząd; D – trzecia kolumna, drugi rząd od góry.">
-      <g class="ln-thin">
-        <line x1="35" y1="10" x2="285" y2="10"/><line x1="35" y1="60" x2="285" y2="60"/><line x1="35" y1="110" x2="285" y2="110"/><line x1="35" y1="160" x2="285" y2="160"/><line x1="35" y1="210" x2="285" y2="210"/>
-        <line x1="35" y1="10" x2="35" y2="210"/><line x1="85" y1="10" x2="85" y2="210"/><line x1="135" y1="10" x2="135" y2="210"/><line x1="185" y1="10" x2="185" y2="210"/><line x1="235" y1="10" x2="235" y2="210"/><line x1="285" y1="10" x2="285" y2="210"/>
-      </g>
-      <rect x="36" y="161" width="48" height="48" class="f1"/>
-      <text x="60" y="193" class="tx-b" text-anchor="middle">🤖</text>
-      <text x="210" y="42" class="tx-b t2" text-anchor="middle">A</text>
-      <text x="210" y="192" class="tx-b t2" text-anchor="middle">B</text>
-      <text x="60" y="42" class="tx-b t2" text-anchor="middle">C</text>
-      <text x="160" y="92" class="tx-b t2" text-anchor="middle">D</text>
-    </svg>`,
-          options: ['A', 'B', 'C', 'D'],
-          answer: 0,
-          explain: 'Każde powtórzenie to 1 pole w prawo i 1 pole w górę. Po 3 powtórzeniach robot jest 3 pola w prawo i 3 pola w górę od startu – na polu A. Pole D to miejsce po 2 powtórzeniach.',
-        },
-        { id: 's43dju', q: 'Program miał narysować kwadrat, a narysował trójkąt. Co to znaczy?', options: ['w programie jest błąd i trzeba go poprawić', 'komputer jest zepsuty i trzeba kupić nowy', 'program działa dobrze i nic nie trzeba robić', 'trzeba wyłączyć komputer i iść na przerwę'], answer: 0, explain: 'Program działa inaczej, niż chcieliśmy – to błąd. Szukamy go, poprawiamy i testujemy jeszcze raz.' },
-        { id: '6ptxd2', q: 'Co to jest testowanie programu?', options: ['uruchamianie programu i sprawdzanie, czy działa tak, jak miał', 'pisanie całego programu od nowa, bez uruchamiania go', 'przepisywanie programu do zeszytu ładnymi literami', 'drukowanie programu na kartce, żeby powiesić go w klasie'], answer: 0, explain: 'Testując, porównujesz działanie programu z tym, co zaplanowałeś.' },
-        { id: '7f9u6w', q: 'Prawda czy fałsz?\nW algorytmie kolejność kroków nie ma znaczenia.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Kolejność jest ważna. Najpierw smarujesz chleb masłem, a dopiero potem kładziesz ser – odwrotnie się nie da.' },
-        { id: 'vhhjd1', q: 'Prawda czy fałsz?\nPętla pozwala skrócić program, w którym te same polecenia się powtarzają.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Zamiast pisać to samo wiele razy, używasz polecenia „powtórz”.' },
-        { id: 'zbe5hl', q: 'Jak informatyk radzi sobie z dużym, trudnym problemem?', options: ['dzieli go na mniejsze części i rozwiązuje je po kolei', 'od razu się poddaje i zostawia problem innym', 'zgaduje odpowiedź i nie sprawdza, czy jest dobra', 'czeka, aż problem sam zniknie'], answer: 0, explain: 'Podział na mniejsze części to ważna część myślenia komputacyjnego.' },
-        { id: 'ml3ndj', q: 'W jakim środowisku układasz program z kolorowych klocków-poleceń?', options: ['w środowisku blokowym, np. Scratch', 'w kalkulatorze w telefonie', 'w edytorze tekstu, np. do wypracowań', 'w przeglądarce zdjęć na komputerze'], answer: 0, explain: 'W środowisku blokowym polecenia mają postać klocków, które łączysz w program.' },
-      ],
-    },
     {
       id: 'komputer-i-siec',
       name: 'Komputer, sieć i pliki',
+      chapter: 'rozdział I „Komputer i Ty” i rozdział II (co warto wiedzieć o internecie)',
       basis: 'Dz.U. 2026 poz. 378, informatyka kl. IV–VI: dz. 4 wym. 1 (celowe i bezpieczne korzystanie z urządzeń cyfrowych, w tym z zestawu komputerowego), wym. 2 (funkcjonowanie sieci komputerowej), wym. 5 (wpływ technologii na środowisko, oszczędzanie energii); dz. 3 wym. 7 (zapisywanie pracy lokalnie i w chmurze). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści kl. IV–VI na klasy).',
       theory: `
         <h3>Zestaw komputerowy</h3>
@@ -186,8 +83,93 @@ window.SUBJECTS.push({
       ],
     },
     {
+      id: 'bezpiecznie-w-sieci',
+      name: 'Bezpiecznie i kulturalnie w sieci',
+      chapter: 'rozdział II „Jak korzystać z internetu?” (bezpieczni w cyfrowym świecie, komunikacja w internecie)',
+      basis: 'Dz.U. 2026 poz. 378, informatyka kl. IV–VI: dz. 4 wym. 3 (podejrzane treści on-line, podstawowe działania obronne); dz. 5 wym. 1–7 (współpraca w narzędziach cyfrowych, netykieta i regulaminy, bezpieczne i higieniczne korzystanie z technologii, zagrożenia cyfrowe i szukanie wsparcia, ochrona danych osobowych – hasła i ustawienia prywatności, prawa autorskie, licencje oprogramowania). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści kl. IV–VI na klasy).',
+      theory: `
+        <h3>Netykieta – dobre maniery w internecie</h3>
+        <ul>
+          <li>Pisz grzecznie, tak jak mówisz do kogoś twarzą w twarz.</li>
+          <li>Nie obrażaj, nie wyśmiewaj, nie rozsyłaj cudzych zdjęć bez zgody.</li>
+          <li>NIE PISZ SAMYMI WIELKIMI LITERAMI – to jak krzyk.</li>
+          <li>Przestrzegaj <b>regulaminu</b> strony czy gry – to zasady, które ustalił jej właściciel.</li>
+        </ul>
+        <h3>Silne hasło</h3>
+        <ul>
+          <li><b>Długie</b>, z małymi i wielkimi literami, cyframi i znakami.</li>
+          <li>Nie jest twoim imieniem, datą urodzenia ani „12345”.</li>
+          <li><b>Różne hasła</b> do różnych kont.</li>
+          <li><b>Nie podawaj hasła nikomu</b> poza rodzicem lub opiekunem – nawet przyjacielowi.</li>
+        </ul>
+        <h3>Dane osobowe</h3>
+        <p><b>Dane osobowe</b> to informacje o tobie: imię i nazwisko, adres, numer telefonu, szkoła, zdjęcia. Nie podawaj ich obcym w internecie. W <b>ustawieniach prywatności</b> wybierz, kto widzi twoje wpisy i zdjęcia.</p>
+        <h3>Podejrzane wiadomości</h3>
+        <p>Uważaj na wiadomości typu „Wygrałeś telefon! Kliknij link”, prośby o hasło albo dane, linki od nieznajomych. <b>Nie klikaj</b>, nie odpowiadaj, pokaż wiadomość dorosłemu.</p>
+        <h3>Cyberprzemoc – gdzie szukać pomocy</h3>
+        <p><b>Cyberprzemoc</b> to dokuczanie, obrażanie, straszenie lub ośmieszanie kogoś w internecie. Gdy cię to spotka albo to widzisz:</p>
+        <ul>
+          <li>nie odpowiadaj agresją, zrób zrzut ekranu (dowód),</li>
+          <li>powiedz rodzicowi, nauczycielowi lub pedagogowi szkolnemu,</li>
+          <li>możesz zadzwonić na <b>telefon zaufania dla dzieci i młodzieży: 116 111</b>.</li>
+        </ul>
+        <h3>Higiena cyfrowa</h3>
+        <p>Rób przerwy od ekranu, nie korzystaj z telefonu tuż przed snem, spędzaj czas także z ludźmi i na ruchu.</p>
+        <h3>Prawo autorskie i licencje</h3>
+        <ul>
+          <li>Autor ma prawa do swojego <b>utworu</b> (tekstu, zdjęcia, muzyki, rysunku). Nie podpisuj cudzej pracy swoim imieniem.</li>
+          <li>Gdy korzystasz z cudzego obrazka czy tekstu, <b>podaj źródło</b> (autora i skąd pochodzi).</li>
+          <li><b>Licencja</b> to zasady korzystania z programu ustalone przez jego twórcę. Niektóre programy są darmowe, za inne trzeba zapłacić. Instaluj programy tylko za zgodą dorosłego i z pewnych źródeł.</li>
+        </ul>
+      `,
+      infographicNote: 'Porównuj w poziomie: po lewej – co robisz, po prawej – czego nie robisz.',
+      infographic: {
+        type: 'porownanie',
+        kolumny: [{ title: '✅ Rób', kolor: 3 }, { title: '❌ Nie rób', kolor: 2 }],
+        wiersze: [
+          { label: 'pisanie w sieci (netykieta)', cells: ['pisz grzecznie', 'nie obrażaj, nie pisz WIELKIMI LITERAMI'] },
+          { label: 'hasło', cells: ['długie, różne do różnych kont', 'nie podawaj nikomu poza rodzicem lub opiekunem'] },
+          { label: 'dane osobowe', cells: ['ustaw, kto widzi twoje wpisy', 'nie podawaj ich obcym'] },
+          { label: '„Wygrałeś! Kliknij link”', cells: ['pokaż wiadomość dorosłemu', 'nie klikaj, nie odpowiadaj'] },
+          { label: 'cudzy obrazek lub tekst', cells: ['podaj źródło', 'nie podpisuj go swoim imieniem'] },
+        ],
+        bottom: { title: '🆘 Cyberprzemoc', text: 'Nie odpowiadaj agresją. Zrób zrzut ekranu, powiedz rodzicowi lub nauczycielowi.\nTelefon zaufania: 116 111', kolor: 5 },
+      },
+      flashcards: [
+        ['Netykieta', 'Zasady dobrego zachowania w internecie'],
+        ['Silne hasło', 'Długie, z literami małymi i wielkimi, cyframi i znakami; różne do różnych kont'],
+        ['Komu wolno podać hasło?', 'Nikomu poza rodzicem lub opiekunem'],
+        ['Dane osobowe', 'Informacje o tobie: imię i nazwisko, adres, telefon, szkoła, zdjęcia'],
+        ['Ustawienia prywatności', 'Wybierasz w nich, kto widzi twoje wpisy i zdjęcia'],
+        ['Cyberprzemoc', 'Dokuczanie, obrażanie, straszenie lub ośmieszanie kogoś w internecie'],
+        ['Telefon zaufania dla dzieci i młodzieży', '116 111'],
+        ['Prawo autorskie', 'Autor ma prawa do swojego utworu; korzystając z niego, podajesz źródło'],
+        ['Licencja programu', 'Zasady korzystania z programu ustalone przez twórcę'],
+        ['Podejrzana wiadomość', '„Wygrałeś! Kliknij link” – nie klikaj, pokaż dorosłemu'],
+      ],
+      questions: [
+        { id: 'orb67e', q: 'Co to jest netykieta?', options: ['zasady dobrego zachowania w internecie', 'rodzaj wirusa, który psuje komputer', 'nazwa przeglądarki internetowej', 'sklep internetowy z naklejkami'], answer: 0, explain: 'Netykieta to „savoir-vivre” sieci – grzeczność i szacunek w internecie.' },
+        { id: '0nn3ze', q: 'Które hasło jest najsilniejsze?', options: ['Zielony_Kot!Skacze7', '12345', 'ola2015', 'mojehaslo123456'], answer: 0, explain: 'Jest długie i ma małe i wielkie litery, znaki i cyfrę. Pozostałe łatwo zgadnąć.' },
+        { id: 's21x68', q: 'Kolega prosi o hasło do twojej gry, bo chce ci „pomóc wbić poziom”. Co robisz?', options: ['nie podaję hasła', 'podaję, bo to kolega', 'wysyłam hasło SMS-em', 'piszę hasło na tablicy w klasie'], answer: 0, explain: 'Hasła nie podajesz nikomu poza rodzicem lub opiekunem.' },
+        { id: 'cgl0w0', q: 'Prawda czy fałsz?\nNajlepiej mieć jedno hasło do wszystkich kont.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Gdy ktoś pozna jedno hasło, dostanie się do wszystkich kont. Do różnych kont używaj różnych haseł.' },
+        { id: 'dqzgy5', q: 'Które informacje to dane osobowe?', options: ['imię, nazwisko i adres', 'ulubiony kolor tęczy', 'nazwa gry, w którą gra cała klasa', 'tytuł bajki'], answer: 0, explain: 'Dane osobowe pozwalają ustalić, kim jesteś i gdzie mieszkasz.' },
+        { id: 'dtihgd', q: 'Nieznajomy w grze pyta, gdzie mieszkasz i do której szkoły chodzisz. Co robisz?', options: ['nie odpowiadam i mówię o tym rodzicowi', 'podaję adres, bo to miły gracz', 'wysyłam zdjęcie szkoły i mojej klasy', 'umawiam się na spotkanie po lekcjach'], answer: 0, explain: 'Danych osobowych nie podajesz obcym. O takiej rozmowie mówisz dorosłemu.' },
+        { id: 'muigl3', q: 'Dostajesz wiadomość: „Wygrałeś nowy telefon! Kliknij link i wpisz hasło”. Co robisz?', options: ['nie klikam i pokazuję wiadomość dorosłemu', 'klikam szybko, zanim ktoś mnie uprzedzi', 'wpisuję hasło', 'wysyłam link kolegom'], answer: 0, explain: 'To podejrzana wiadomość – może chodzić o wyłudzenie hasła lub danych.' },
+        { id: 'vg5jrv', q: 'Gdzie wybierzesz, kto widzi twoje zdjęcia na koncie?', options: ['w ustawieniach prywatności', 'w kalkulatorze w telefonie', 'w edytorze grafiki', 'w koszu na usunięte pliki'], answer: 0, explain: 'W ustawieniach prywatności decydujesz, kto ma dostęp do twoich wpisów i zdjęć.' },
+        { id: 'pe66ub', q: 'Co to jest cyberprzemoc?', options: ['dokuczanie lub obrażanie kogoś w internecie', 'szybkie pisanie wiadomości na klawiaturze', 'wspólna gra w zespole przez internet', 'naprawianie komputera kolegi'], answer: 0, explain: 'Cyberprzemoc to przemoc z użyciem internetu i telefonu.' },
+        { id: '4l7fkm', q: 'Ktoś obraża cię na czacie klasowym. Co warto zrobić?', options: ['zrobić zrzut ekranu i powiedzieć dorosłemu', 'odpisać jeszcze gorszymi słowami', 'nikomu nic nie mówić i czekać', 'udostępnić wiadomość całej klasie'], answer: 0, explain: 'Zrzut ekranu to dowód. Dorosły pomoże rozwiązać problem.' },
+        { id: 'txmg0e', q: 'Jaki jest numer telefonu zaufania dla dzieci i młodzieży?', options: ['116 111', '123 456', '100 200', '111 222'], answer: 0, explain: 'Pod numer 116 111 możesz zadzwonić, gdy potrzebujesz pomocy lub rozmowy.' },
+        { id: '1oboxv', q: 'Które zachowanie jest zgodne z netykietą?', options: ['piszę grzecznie i szanuję innych', 'piszę SAMYMI WIELKIMI LITERAMI', 'wrzucam cudze zdjęcia bez zgody', 'wyśmiewam błędy innych'], answer: 0, explain: 'W sieci obowiązuje taka sama grzeczność jak w rozmowie twarzą w twarz.' },
+        { id: 'dlw8hl', q: 'Do prezentacji użyłeś zdjęcia z internetu. Co musisz zrobić?', options: ['podać źródło zdjęcia', 'podpisać zdjęcie swoim imieniem', 'nic – zdjęcia z internetu są niczyje', 'zmienić kolory, żeby nikt nie poznał'], answer: 0, explain: 'Autor ma prawa do swojego zdjęcia. Podając źródło, szanujesz jego pracę.' },
+        { id: '39kv5x', q: 'Co to jest licencja programu?', options: ['zasady korzystania z programu ustalone przez jego twórcę', 'hasło do komputera, które ustala jego właściciel', 'rodzaj wirusa, który niszczy programy', 'instrukcja obsługi myszy i klawiatury'], answer: 0, explain: 'Licencja mówi, jak wolno korzystać z programu, np. czy jest darmowy.' },
+        { id: '5pkgwk', q: 'Prawda czy fałsz?\nTuż przed snem najlepiej długo grać na telefonie.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Ekran przed snem utrudnia zaśnięcie. Higiena cyfrowa to m.in. odłożenie telefonu przed snem.' },
+        { id: 'hsvhaz', q: 'Chcesz zainstalować nową grę. Co robisz?', options: ['pytam rodzica i instaluję tylko z pewnego źródła', 'pobieram ją z pierwszej lepszej strony w internecie', 'wyłączam program antywirusowy', 'proszę obcą osobę o plik'], answer: 0, explain: 'Programy z niepewnych źródeł mogą zawierać wirusy albo łamać licencję.' },
+      ],
+    },
+    {
       id: 'programy',
       name: 'Grafika, tekst, arkusz, prezentacja i AI',
+      chapter: 'rozdziały III „Grafika komputerowa” i IV „Edytor tekstu” (arkusz, prezentacja i AI – w podręczniku w kl. 5–6)',
       basis: 'Dz.U. 2026 poz. 378, informatyka kl. IV–VI: dz. 3 wym. 1 (edytor grafiki), wym. 2 (arkusz kalkulacyjny: proste obliczenia i wykresy), wym. 3 (dokumenty tekstowe: formatowanie, wyliczenia, tabele, ilustracje), wym. 4 (prezentacje), wym. 5 (materiały multimedialne), wym. 6 (proste narzędzia sztucznej inteligencji); dz. 4 wym. 4 (trenowanie prostego modelu AI, wpływ danych na wyniki). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści kl. IV–VI na klasy). Praca w programach wymaga ćwiczeń przy komputerze – aplikacja utrwala tylko pojęcia.',
       theory: `
         <h3>Edytor grafiki – rysujesz na komputerze</h3>
@@ -289,86 +271,109 @@ window.SUBJECTS.push({
       ],
     },
     {
-      id: 'bezpiecznie-w-sieci',
-      name: 'Bezpiecznie i kulturalnie w sieci',
-      basis: 'Dz.U. 2026 poz. 378, informatyka kl. IV–VI: dz. 4 wym. 3 (podejrzane treści on-line, podstawowe działania obronne); dz. 5 wym. 1–7 (współpraca w narzędziach cyfrowych, netykieta i regulaminy, bezpieczne i higieniczne korzystanie z technologii, zagrożenia cyfrowe i szukanie wsparcia, ochrona danych osobowych – hasła i ustawienia prywatności, prawa autorskie, licencje oprogramowania). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści kl. IV–VI na klasy).',
+      id: 'algorytmy',
+      name: 'Algorytmy i programowanie',
+      chapter: 'rozdział V „Programowanie w Scratchu”',
+      basis: 'Dz.U. 2026 poz. 378, informatyka kl. IV–VI: dz. 1 wym. 1–4 (porządkowanie obiektów, podejście komputacyjne, wyszukiwanie elementów o podanych własnościach, planowanie zachowania robota); dz. 2 wym. 1–4 (algorytmy z poleceniami sekwencyjnymi, warunkowymi i iteracyjnymi, testowanie i poprawianie programu, objaśnianie rozwiązania, sterowanie robotem). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli treści kl. IV–VI na klasy). Programowanie to praca przy komputerze, której aplikacja nie zastąpi – tu utrwalasz pojęcia.',
       theory: `
-        <h3>Netykieta – dobre maniery w internecie</h3>
+        <h3>Co to jest algorytm?</h3>
+        <p><b>Algorytm</b> to przepis, jak coś zrobić <b>krok po kroku</b>. Kroki muszą być jasne i ułożone w dobrej kolejności. Algorytmem jest np. przepis na kanapkę albo instrukcja, jak dojść do szkoły.</p>
+        <p><b>Program</b> to algorytm zapisany tak, żeby mógł go wykonać komputer albo robot. W szkole programujesz często w <b>środowisku blokowym</b> (np. Scratch) – układasz program z kolorowych klocków-poleceń.</p>
+        <h3>Trzy rodzaje poleceń</h3>
+        <table>
+          <tr><th>Rodzaj</th><th>Co robi</th><th>Przykład</th></tr>
+          <tr><td><b>sekwencja</b></td><td>polecenia wykonują się po kolei, jedno po drugim</td><td>idź 1 krok, idź 1 krok, skręć w lewo</td></tr>
+          <tr><td><b>warunek</b></td><td>polecenie wykona się tylko wtedy, gdy coś jest prawdą</td><td>jeżeli pada deszcz, to weź parasol</td></tr>
+          <tr><td><b>powtarzanie (pętla)</b></td><td>te same polecenia wykonują się kilka razy</td><td>powtórz 4 razy: idź 1 krok</td></tr>
+        </table>
+        <div class="tip">💡 Pętla skraca program. Zamiast pisać 10 razy „idź 1 krok”, piszesz: „powtórz 10 razy: idź 1 krok”.</div>
+        <h3>Robot na planszy</h3>
+        <p>Robot porusza się po polach planszy. Strzałka mówi, w którą stronę zrobić <b>jeden krok</b> (na jedno pole): → w prawo, ← w lewo, ↑ w górę, ↓ w dół. Zanim uruchomisz program, prześledź palcem drogę robota pole po polu.</p>
+        <h3>Porządkowanie i wyszukiwanie</h3>
         <ul>
-          <li>Pisz grzecznie, tak jak mówisz do kogoś twarzą w twarz.</li>
-          <li>Nie obrażaj, nie wyśmiewaj, nie rozsyłaj cudzych zdjęć bez zgody.</li>
-          <li>NIE PISZ SAMYMI WIELKIMI LITERAMI – to jak krzyk.</li>
-          <li>Przestrzegaj <b>regulaminu</b> strony czy gry – to zasady, które ustalił jej właściciel.</li>
+          <li><b>Porządkowanie</b> (sortowanie) – układanie rzeczy według jakiejś cechy: liczby od najmniejszej do największej, słowa w kolejności alfabetycznej, uczniów według wzrostu.</li>
+          <li><b>Wyszukiwanie</b> – znajdowanie w zbiorze elementów o podanej cesze, np. wszystkich liczb parzystych albo wszystkich czerwonych klocków.</li>
         </ul>
-        <h3>Silne hasło</h3>
-        <ul>
-          <li><b>Długie</b>, z małymi i wielkimi literami, cyframi i znakami.</li>
-          <li>Nie jest twoim imieniem, datą urodzenia ani „12345”.</li>
-          <li><b>Różne hasła</b> do różnych kont.</li>
-          <li><b>Nie podawaj hasła nikomu</b> poza rodzicem lub opiekunem – nawet przyjacielowi.</li>
-        </ul>
-        <h3>Dane osobowe</h3>
-        <p><b>Dane osobowe</b> to informacje o tobie: imię i nazwisko, adres, numer telefonu, szkoła, zdjęcia. Nie podawaj ich obcym w internecie. W <b>ustawieniach prywatności</b> wybierz, kto widzi twoje wpisy i zdjęcia.</p>
-        <h3>Podejrzane wiadomości</h3>
-        <p>Uważaj na wiadomości typu „Wygrałeś telefon! Kliknij link”, prośby o hasło albo dane, linki od nieznajomych. <b>Nie klikaj</b>, nie odpowiadaj, pokaż wiadomość dorosłemu.</p>
-        <h3>Cyberprzemoc – gdzie szukać pomocy</h3>
-        <p><b>Cyberprzemoc</b> to dokuczanie, obrażanie, straszenie lub ośmieszanie kogoś w internecie. Gdy cię to spotka albo to widzisz:</p>
-        <ul>
-          <li>nie odpowiadaj agresją, zrób zrzut ekranu (dowód),</li>
-          <li>powiedz rodzicowi, nauczycielowi lub pedagogowi szkolnemu,</li>
-          <li>możesz zadzwonić na <b>telefon zaufania dla dzieci i młodzieży: 116 111</b>.</li>
-        </ul>
-        <h3>Higiena cyfrowa</h3>
-        <p>Rób przerwy od ekranu, nie korzystaj z telefonu tuż przed snem, spędzaj czas także z ludźmi i na ruchu.</p>
-        <h3>Prawo autorskie i licencje</h3>
-        <ul>
-          <li>Autor ma prawa do swojego <b>utworu</b> (tekstu, zdjęcia, muzyki, rysunku). Nie podpisuj cudzej pracy swoim imieniem.</li>
-          <li>Gdy korzystasz z cudzego obrazka czy tekstu, <b>podaj źródło</b> (autora i skąd pochodzi).</li>
-          <li><b>Licencja</b> to zasady korzystania z programu ustalone przez jego twórcę. Niektóre programy są darmowe, za inne trzeba zapłacić. Instaluj programy tylko za zgodą dorosłego i z pewnych źródeł.</li>
-        </ul>
+        <p>Jak ułożyć słowa alfabetycznie? Patrzysz na <b>pierwszą literę</b>. Gdy jest taka sama – na drugą: <i>kot, koza</i> (t jest przed z).</p>
+        <h3>Błędy i testowanie</h3>
+        <p><b>Błąd</b> w programie sprawia, że program działa inaczej, niż chcesz. <b>Testowanie</b> to uruchamianie programu i sprawdzanie, czy robi to, co miał robić. Gdy znajdziesz błąd, <b>poprawiasz</b> program i testujesz jeszcze raz.</p>
+        <div class="tip">💡 Duży problem dziel na małe części. Każdą część rozwiąż osobno – tak myśli informatyk.</div>
       `,
-      infographicNote: 'Porównuj w poziomie: po lewej – co robisz, po prawej – czego nie robisz.',
+      infographicNote: 'Czytaj od góry: od algorytmu do programu, który działa tak, jak chcesz.',
       infographic: {
-        type: 'porownanie',
-        kolumny: [{ title: '✅ Rób', kolor: 3 }, { title: '❌ Nie rób', kolor: 2 }],
-        wiersze: [
-          { label: 'pisanie w sieci (netykieta)', cells: ['pisz grzecznie', 'nie obrażaj, nie pisz WIELKIMI LITERAMI'] },
-          { label: 'hasło', cells: ['długie, różne do różnych kont', 'nie podawaj nikomu poza rodzicem lub opiekunem'] },
-          { label: 'dane osobowe', cells: ['ustaw, kto widzi twoje wpisy', 'nie podawaj ich obcym'] },
-          { label: '„Wygrałeś! Kliknij link”', cells: ['pokaż wiadomość dorosłemu', 'nie klikaj, nie odpowiadaj'] },
-          { label: 'cudzy obrazek lub tekst', cells: ['podaj źródło', 'nie podpisuj go swoim imieniem'] },
+        type: 'kroki',
+        top: { title: '🧩 Duży problem?', text: 'Podziel go na małe części – każdą rozwiąż osobno.', kolor: 5 },
+        items: [
+          { icon: '📝', title: 'Algorytm', text: 'przepis krok po kroku, w dobrej kolejności', kolor: 1 },
+          { icon: '🧱', title: 'Program', text: 'algorytm zapisany dla komputera albo robota, np. z klocków w Scratchu', kolor: 1 },
+          { icon: '▶️', title: 'Testowanie', text: 'uruchom program i sprawdź, czy robi to, co miał', kolor: 3 },
+          { icon: '🐞', title: 'Błąd? Popraw!', text: 'popraw program i testuj jeszcze raz', kolor: 2 },
         ],
-        bottom: { title: '🆘 Cyberprzemoc', text: 'Nie odpowiadaj agresją. Zrób zrzut ekranu, powiedz rodzicowi lub nauczycielowi.\nTelefon zaufania: 116 111', kolor: 5 },
+        bottom: { title: '💡 Trzy rodzaje poleceń', items: ['sekwencja – po kolei, jedno po drugim', 'warunek – „jeżeli…, to…”', 'pętla – powtórz kilka razy'], kolor: 4 },
       },
       flashcards: [
-        ['Netykieta', 'Zasady dobrego zachowania w internecie'],
-        ['Silne hasło', 'Długie, z literami małymi i wielkimi, cyframi i znakami; różne do różnych kont'],
-        ['Komu wolno podać hasło?', 'Nikomu poza rodzicem lub opiekunem'],
-        ['Dane osobowe', 'Informacje o tobie: imię i nazwisko, adres, telefon, szkoła, zdjęcia'],
-        ['Ustawienia prywatności', 'Wybierasz w nich, kto widzi twoje wpisy i zdjęcia'],
-        ['Cyberprzemoc', 'Dokuczanie, obrażanie, straszenie lub ośmieszanie kogoś w internecie'],
-        ['Telefon zaufania dla dzieci i młodzieży', '116 111'],
-        ['Prawo autorskie', 'Autor ma prawa do swojego utworu; korzystając z niego, podajesz źródło'],
-        ['Licencja programu', 'Zasady korzystania z programu ustalone przez twórcę'],
-        ['Podejrzana wiadomość', '„Wygrałeś! Kliknij link” – nie klikaj, pokaż dorosłemu'],
+        ['Algorytm', 'Przepis, jak coś zrobić krok po kroku, w dobrej kolejności'],
+        ['Program', 'Algorytm zapisany tak, żeby mógł go wykonać komputer albo robot'],
+        ['Sekwencja', 'Polecenia wykonywane po kolei, jedno po drugim'],
+        ['Warunek', '„Jeżeli…, to…” – polecenie wykona się tylko wtedy, gdy coś jest prawdą'],
+        ['Pętla (powtarzanie)', 'Te same polecenia wykonywane kilka razy, np. „powtórz 4 razy”'],
+        ['Środowisko blokowe', 'Program do programowania, w którym układasz polecenia z klocków, np. Scratch'],
+        ['Porządkowanie (sortowanie)', 'Układanie rzeczy według cechy, np. liczb od najmniejszej do największej'],
+        ['Wyszukiwanie', 'Znajdowanie w zbiorze elementów o podanej cesze'],
+        ['Błąd w programie', 'Program działa inaczej, niż chcieliśmy'],
+        ['Testowanie', 'Uruchamianie programu i sprawdzanie, czy działa tak, jak miał'],
       ],
       questions: [
-        { id: 'orb67e', q: 'Co to jest netykieta?', options: ['zasady dobrego zachowania w internecie', 'rodzaj wirusa, który psuje komputer', 'nazwa przeglądarki internetowej', 'sklep internetowy z naklejkami'], answer: 0, explain: 'Netykieta to „savoir-vivre” sieci – grzeczność i szacunek w internecie.' },
-        { id: '0nn3ze', q: 'Które hasło jest najsilniejsze?', options: ['Zielony_Kot!Skacze7', '12345', 'ola2015', 'mojehaslo123456'], answer: 0, explain: 'Jest długie i ma małe i wielkie litery, znaki i cyfrę. Pozostałe łatwo zgadnąć.' },
-        { id: 's21x68', q: 'Kolega prosi o hasło do twojej gry, bo chce ci „pomóc wbić poziom”. Co robisz?', options: ['nie podaję hasła', 'podaję, bo to kolega', 'wysyłam hasło SMS-em', 'piszę hasło na tablicy w klasie'], answer: 0, explain: 'Hasła nie podajesz nikomu poza rodzicem lub opiekunem.' },
-        { id: 'cgl0w0', q: 'Prawda czy fałsz?\nNajlepiej mieć jedno hasło do wszystkich kont.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Gdy ktoś pozna jedno hasło, dostanie się do wszystkich kont. Do różnych kont używaj różnych haseł.' },
-        { id: 'dqzgy5', q: 'Które informacje to dane osobowe?', options: ['imię, nazwisko i adres', 'ulubiony kolor tęczy', 'nazwa gry, w którą gra cała klasa', 'tytuł bajki'], answer: 0, explain: 'Dane osobowe pozwalają ustalić, kim jesteś i gdzie mieszkasz.' },
-        { id: 'dtihgd', q: 'Nieznajomy w grze pyta, gdzie mieszkasz i do której szkoły chodzisz. Co robisz?', options: ['nie odpowiadam i mówię o tym rodzicowi', 'podaję adres, bo to miły gracz', 'wysyłam zdjęcie szkoły i mojej klasy', 'umawiam się na spotkanie po lekcjach'], answer: 0, explain: 'Danych osobowych nie podajesz obcym. O takiej rozmowie mówisz dorosłemu.' },
-        { id: 'muigl3', q: 'Dostajesz wiadomość: „Wygrałeś nowy telefon! Kliknij link i wpisz hasło”. Co robisz?', options: ['nie klikam i pokazuję wiadomość dorosłemu', 'klikam szybko, zanim ktoś mnie uprzedzi', 'wpisuję hasło', 'wysyłam link kolegom'], answer: 0, explain: 'To podejrzana wiadomość – może chodzić o wyłudzenie hasła lub danych.' },
-        { id: 'vg5jrv', q: 'Gdzie wybierzesz, kto widzi twoje zdjęcia na koncie?', options: ['w ustawieniach prywatności', 'w kalkulatorze w telefonie', 'w edytorze grafiki', 'w koszu na usunięte pliki'], answer: 0, explain: 'W ustawieniach prywatności decydujesz, kto ma dostęp do twoich wpisów i zdjęć.' },
-        { id: 'pe66ub', q: 'Co to jest cyberprzemoc?', options: ['dokuczanie lub obrażanie kogoś w internecie', 'szybkie pisanie wiadomości na klawiaturze', 'wspólna gra w zespole przez internet', 'naprawianie komputera kolegi'], answer: 0, explain: 'Cyberprzemoc to przemoc z użyciem internetu i telefonu.' },
-        { id: '4l7fkm', q: 'Ktoś obraża cię na czacie klasowym. Co warto zrobić?', options: ['zrobić zrzut ekranu i powiedzieć dorosłemu', 'odpisać jeszcze gorszymi słowami', 'nikomu nic nie mówić i czekać', 'udostępnić wiadomość całej klasie'], answer: 0, explain: 'Zrzut ekranu to dowód. Dorosły pomoże rozwiązać problem.' },
-        { id: 'txmg0e', q: 'Jaki jest numer telefonu zaufania dla dzieci i młodzieży?', options: ['116 111', '123 456', '100 200', '111 222'], answer: 0, explain: 'Pod numer 116 111 możesz zadzwonić, gdy potrzebujesz pomocy lub rozmowy.' },
-        { id: '1oboxv', q: 'Które zachowanie jest zgodne z netykietą?', options: ['piszę grzecznie i szanuję innych', 'piszę SAMYMI WIELKIMI LITERAMI', 'wrzucam cudze zdjęcia bez zgody', 'wyśmiewam błędy innych'], answer: 0, explain: 'W sieci obowiązuje taka sama grzeczność jak w rozmowie twarzą w twarz.' },
-        { id: 'dlw8hl', q: 'Do prezentacji użyłeś zdjęcia z internetu. Co musisz zrobić?', options: ['podać źródło zdjęcia', 'podpisać zdjęcie swoim imieniem', 'nic – zdjęcia z internetu są niczyje', 'zmienić kolory, żeby nikt nie poznał'], answer: 0, explain: 'Autor ma prawa do swojego zdjęcia. Podając źródło, szanujesz jego pracę.' },
-        { id: '39kv5x', q: 'Co to jest licencja programu?', options: ['zasady korzystania z programu ustalone przez jego twórcę', 'hasło do komputera, które ustala jego właściciel', 'rodzaj wirusa, który niszczy programy', 'instrukcja obsługi myszy i klawiatury'], answer: 0, explain: 'Licencja mówi, jak wolno korzystać z programu, np. czy jest darmowy.' },
-        { id: '5pkgwk', q: 'Prawda czy fałsz?\nTuż przed snem najlepiej długo grać na telefonie.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Ekran przed snem utrudnia zaśnięcie. Higiena cyfrowa to m.in. odłożenie telefonu przed snem.' },
-        { id: 'hsvhaz', q: 'Chcesz zainstalować nową grę. Co robisz?', options: ['pytam rodzica i instaluję tylko z pewnego źródła', 'pobieram ją z pierwszej lepszej strony w internecie', 'wyłączam program antywirusowy', 'proszę obcą osobę o plik'], answer: 0, explain: 'Programy z niepewnych źródeł mogą zawierać wirusy albo łamać licencję.' },
+        { id: '6vwp94', q: 'Co to jest algorytm?', options: ['przepis, jak coś zrobić krok po kroku', 'część komputera, np. monitor albo mysz', 'rodzaj gry komputerowej dla dzieci', 'nazwa strony z grami w internecie'], answer: 0, explain: 'Algorytm to uporządkowany opis kroków, które prowadzą do celu.' },
+        { id: 'r1jgul', q: 'Który przykład to polecenie z warunkiem?', options: ['jeżeli jest zimno, to załóż czapkę', 'powtórz 3 razy: klaśnij w dłonie', 'idź 2 kroki do przodu i usiądź', 'narysuj kwadrat, a potem koło'], answer: 0, explain: 'Warunek ma postać „jeżeli…, to…” – polecenie wykona się tylko wtedy, gdy warunek jest spełniony.' },
+        { id: '9n96pt', q: 'Który przykład to powtarzanie (pętla)?', options: ['powtórz 5 razy: podskocz', 'jeżeli pada, weź parasol', 'idź 1 krok, potem skręć', 'zatrzymaj się'], answer: 0, explain: 'Pętla to wykonanie tych samych poleceń wiele razy.' },
+        { id: '59bq6p', q: 'Program: „powtórz 4 razy: idź 2 kroki”. Ile kroków zrobi robot?', options: ['8', '6', '4', '2'], answer: 0, explain: '4 razy po 2 kroki: 4 · 2 = 8 kroków.' },
+        { id: 'wrenr0', q: 'Ułóż słowa alfabetycznie: kot, arbuz, mleko, banan. Które słowo będzie trzecie?', options: ['kot', 'mleko', 'banan', 'arbuz'], answer: 0, explain: 'Kolejność: arbuz, banan, kot, mleko. Trzecie jest „kot”.' },
+        { id: 'qst4dc', q: 'Które słowo jest pierwsze w kolejności alfabetycznej?', options: ['kasa', 'koza', 'kot', 'kura'], answer: 0, explain: 'Wszystkie zaczynają się na „k”, więc patrzymy na drugą literę: a, o, o, u. Najwcześniej w alfabecie jest „a” – kasa.' },
+        { id: 'pf6u4j', q: 'Uporządkuj od najmniejszej: 15, 8, 23, 4. Która liczba będzie druga?', options: ['8', '4', '15', '23'], answer: 0, explain: 'Kolejność: 4, 8, 15, 23. Druga jest 8.' },
+        { id: 'tq5sn4', q: 'Wyszukaj liczby parzyste w zbiorze: 3, 6, 9, 10, 15. Ile ich jest?', options: ['2', '1', '3', '5'], answer: 0, explain: 'Parzyste są 6 i 10 – to dwie liczby.' },
+        {
+          id: '3e4j91',
+          q: 'Robot 🤖 idzie o jedno pole w kierunku każdej strzałki. Który program doprowadzi go do gwiazdki ⭐?',
+          svg: `<svg viewBox="0 0 320 220" role="img" aria-label="Plansza 5 na 4 pola. Robot stoi w lewym dolnym rogu. Gwiazdka jest trzy pola w prawo i dwa pola w górę od robota.">
+      <g class="ln-thin">
+        <line x1="35" y1="10" x2="285" y2="10"/><line x1="35" y1="60" x2="285" y2="60"/><line x1="35" y1="110" x2="285" y2="110"/><line x1="35" y1="160" x2="285" y2="160"/><line x1="35" y1="210" x2="285" y2="210"/>
+        <line x1="35" y1="10" x2="35" y2="210"/><line x1="85" y1="10" x2="85" y2="210"/><line x1="135" y1="10" x2="135" y2="210"/><line x1="185" y1="10" x2="185" y2="210"/><line x1="235" y1="10" x2="235" y2="210"/><line x1="285" y1="10" x2="285" y2="210"/>
+      </g>
+      <rect x="36" y="161" width="48" height="48" class="f1"/>
+      <rect x="186" y="61" width="48" height="48" class="f4"/>
+      <text x="60" y="193" class="tx-b" text-anchor="middle">🤖</text>
+      <text x="210" y="93" class="tx-b" text-anchor="middle">⭐</text>
+    </svg>`,
+          options: ['→ → → ↑ ↑', '→ → ↑ ↑', '↑ ↑ ↑ → → →', '→ → → ↓ ↓'],
+          answer: 0,
+          explain: 'Gwiazdka jest 3 pola w prawo i 2 pola w górę od robota: → → → ↑ ↑. Program „→ → ↑ ↑” kończy o jedno pole za wcześnie, a „↓” prowadzi poza planszę.',
+        },
+        {
+          id: 'fb96u4',
+          q: 'Robot 🤖 wykonuje program: „powtórz 3 razy: → ↑”. Na którym polu się zatrzyma?',
+          svg: `<svg viewBox="0 0 320 220" role="img" aria-label="Plansza 5 na 4 pola. Robot stoi w lewym dolnym rogu. Litery: A – czwarta kolumna, górny rząd; B – czwarta kolumna, dolny rząd; C – pierwsza kolumna, górny rząd; D – trzecia kolumna, drugi rząd od góry.">
+      <g class="ln-thin">
+        <line x1="35" y1="10" x2="285" y2="10"/><line x1="35" y1="60" x2="285" y2="60"/><line x1="35" y1="110" x2="285" y2="110"/><line x1="35" y1="160" x2="285" y2="160"/><line x1="35" y1="210" x2="285" y2="210"/>
+        <line x1="35" y1="10" x2="35" y2="210"/><line x1="85" y1="10" x2="85" y2="210"/><line x1="135" y1="10" x2="135" y2="210"/><line x1="185" y1="10" x2="185" y2="210"/><line x1="235" y1="10" x2="235" y2="210"/><line x1="285" y1="10" x2="285" y2="210"/>
+      </g>
+      <rect x="36" y="161" width="48" height="48" class="f1"/>
+      <text x="60" y="193" class="tx-b" text-anchor="middle">🤖</text>
+      <text x="210" y="42" class="tx-b t2" text-anchor="middle">A</text>
+      <text x="210" y="192" class="tx-b t2" text-anchor="middle">B</text>
+      <text x="60" y="42" class="tx-b t2" text-anchor="middle">C</text>
+      <text x="160" y="92" class="tx-b t2" text-anchor="middle">D</text>
+    </svg>`,
+          options: ['A', 'B', 'C', 'D'],
+          answer: 0,
+          explain: 'Każde powtórzenie to 1 pole w prawo i 1 pole w górę. Po 3 powtórzeniach robot jest 3 pola w prawo i 3 pola w górę od startu – na polu A. Pole D to miejsce po 2 powtórzeniach.',
+        },
+        { id: 's43dju', q: 'Program miał narysować kwadrat, a narysował trójkąt. Co to znaczy?', options: ['w programie jest błąd i trzeba go poprawić', 'komputer jest zepsuty i trzeba kupić nowy', 'program działa dobrze i nic nie trzeba robić', 'trzeba wyłączyć komputer i iść na przerwę'], answer: 0, explain: 'Program działa inaczej, niż chcieliśmy – to błąd. Szukamy go, poprawiamy i testujemy jeszcze raz.' },
+        { id: '6ptxd2', q: 'Co to jest testowanie programu?', options: ['uruchamianie programu i sprawdzanie, czy działa tak, jak miał', 'pisanie całego programu od nowa, bez uruchamiania go', 'przepisywanie programu do zeszytu ładnymi literami', 'drukowanie programu na kartce, żeby powiesić go w klasie'], answer: 0, explain: 'Testując, porównujesz działanie programu z tym, co zaplanowałeś.' },
+        { id: '7f9u6w', q: 'Prawda czy fałsz?\nW algorytmie kolejność kroków nie ma znaczenia.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Kolejność jest ważna. Najpierw smarujesz chleb masłem, a dopiero potem kładziesz ser – odwrotnie się nie da.' },
+        { id: 'vhhjd1', q: 'Prawda czy fałsz?\nPętla pozwala skrócić program, w którym te same polecenia się powtarzają.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Zamiast pisać to samo wiele razy, używasz polecenia „powtórz”.' },
+        { id: 'zbe5hl', q: 'Jak informatyk radzi sobie z dużym, trudnym problemem?', options: ['dzieli go na mniejsze części i rozwiązuje je po kolei', 'od razu się poddaje i zostawia problem innym', 'zgaduje odpowiedź i nie sprawdza, czy jest dobra', 'czeka, aż problem sam zniknie'], answer: 0, explain: 'Podział na mniejsze części to ważna część myślenia komputacyjnego.' },
+        { id: 'ml3ndj', q: 'W jakim środowisku układasz program z kolorowych klocków-poleceń?', options: ['w środowisku blokowym, np. Scratch', 'w kalkulatorze w telefonie', 'w edytorze tekstu, np. do wypracowań', 'w przeglądarce zdjęć na komputerze'], answer: 0, explain: 'W środowisku blokowym polecenia mają postać klocków, które łączysz w program.' },
       ],
     },
   ],

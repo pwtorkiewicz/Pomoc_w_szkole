@@ -6,10 +6,12 @@ window.SUBJECTS.push({
   name: 'Plastyka',
   icon: '🎨',
   color: '#c2571a',
+  book: 'Do dzieła! 4 (Nowa Era)',
   topics: [
     {
       id: 'barwy-i-srodki',
       name: 'Barwy i środki wyrazu',
+      chapter: 'rozdział I „Język plastyki” (walor, faktura i kompozycja – w podręczniku w kolejnych klasach)',
       basis: 'Dz.U. 2026 poz. 378, plastyka (II etap, przedmiot w kl. IV–VII): dz. 1 „Własna aktywność twórcza”, wym. 2 (środki wyrazu: linia, plama, kolor, walor, faktura, kompozycja, kształt), wym. 3 (barwy podstawowe, pochodne, czyste, złamane, dopełniające, ciepłe, zimne); dz. 3 wym. 5 (pojęcia języka plastycznego: linia, barwa, gama barwna, plama, kształt, kontur, światłocień, kompozycja, perspektywa, walor, bryła, faktura). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli wymagań na klasy). Barwy podstawowe podano tak, jak w szkolnym malarstwie farbami (żółta, czerwona, niebieska). Eksperymenty z farbami to praca na lekcji – tu utrwalasz pojęcia.',
       theory: `
         <h3>Barwy podstawowe i pochodne</h3>
@@ -139,6 +141,7 @@ window.SUBJECTS.push({
     {
       id: 'techniki-i-dziedziny',
       name: 'Techniki plastyczne i dziedziny sztuki',
+      chapter: 'rozdziały II „Techniki plastyczne” i III (grafika na co dzień)',
       basis: 'Dz.U. 2026 poz. 378, plastyka (II etap, przedmiot w kl. IV–VII): dz. 2 „Techniki plastyczne”, wym. 1 (rozpoznaje podstawowe techniki plastyczne), wym. 2 (dobiera narzędzia i materiały do techniki), wym. 5 (techniki tradycyjne i cyfrowe); dz. 1 wym. 5 (maluje, rysuje, rzeźbi), wym. 7 (rodzaje sztuk performatywnych), wym. 8 (bryły i reliefy), wym. 13 (np. street art, land art); dz. 4 wym. 1 (grafika użytkowa: plakat, zaproszenie, logo), wym. 2 (dziedziny sztuki użytkowej), wym. 4 (architektura, mała architektura, architektura krajobrazu). Wybór na klasę 4 – decyzja redakcyjna (podstawa nie dzieli wymagań na klasy).',
       theory: `
         <h3>Dziedziny sztuki</h3>
@@ -244,6 +247,7 @@ window.SUBJECTS.push({
     {
       id: 'dzielo-sztuki',
       name: 'Dzieło sztuki: gatunki, oryginał i kopia, muzeum',
+      chapter: 'rozdział III „Sztuka wokół nas” i „Historia sztuki” (oryginał, kopia, reprodukcja – w podręczniku w kolejnych klasach)',
       basis: 'Dz.U. 2026 poz. 378, plastyka (II etap, przedmiot w kl. IV–VII): dz. 3 „Sztuka jako komunikat”, wym. 1 (dzieła z dziedzictwa kulturowego Polski, Europy i świata), wym. 2 (dzieła z różnych okresów: prehistoria, starożytność, średniowiecze, nowożytność, współczesność), wym. 5 (opis dzieła językiem plastycznym), wym. 7 (wrażenia estetyczne), wym. 10 (zasady prawa autorskiego), wym. 11 (inspiracja, oryginał, kopia, reprodukcja, falsyfikat); dz. 4 wym. 5 i 9 (wydarzenia kulturalne, sztuka w codziennym życiu). Gatunki malarskie (portret, pejzaż, martwa natura) – pojęcia pomocnicze do opisu dzieła (wym. 5). Dzieła: „Dama z gronostajem” (Muzeum Książąt Czartoryskich, oddział Muzeum Narodowego w Krakowie), „Bitwa pod Grunwaldem” (Muzeum Narodowe w Warszawie), „Mona Lisa” (Luwr). Wybór na klasę 4 – decyzja redakcyjna.',
       theory: `
         <h3>Gatunki malarskie – co przedstawia obraz?</h3>

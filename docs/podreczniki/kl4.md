@@ -22,7 +22,7 @@ Wszystkie podręczniki dopuszczono w 2026 r. – są pisane do **nowej podstawy 
 | Plastyka | *Do dzieła! 4* | Nowa Era | 1256/1/2026 | 978-83-267-5429-6 | ✅ |
 | Wychowanie fizyczne | – (bez podręcznika) | | | | |
 
-Do zrobienia: ułożenie działów informatyki, muzyki, plastyki i zajęć praktyczno-technicznych według spisów treści (pola `book`/`chapter`).
+Działy wszystkich przedmiotów z podręcznikiem są ułożone według spisów treści (pola `book`/`chapter`, 3.11.2026). Braki względem podręczników – plan w `docs/PLAN-kl4.md`, etap 14.
 
 ---
 
@@ -166,7 +166,7 @@ Na końcu: Słowniczek historyczny, Doświadczenia edukacyjne. Średniowiecze, n
 
 Nowa Era, nr 1282/1/2026, ISBN 978-83-267-5372-5. Autorzy: B. Chodacka, J. Mazur, T. Mikołajczyk, J. S. Wierzbicki (także autorzy programu).
 
-| Rozdział | Lekcje | Działy aplikacji (ułożone jeszcze według podstawy) |
+| Rozdział | Lekcje | Działy aplikacji |
 |---|---|---|
 | I. Komputer i Ty | 1. W świecie urządzeń cyfrowych · 2. Programy, pliki i foldery | Komputer, sieć i pliki |
 | II. Jak korzystać z internetu? | 1. Co warto wiedzieć o internecie? · 2. Bezpieczni w cyfrowym świecie · 3. Jak szukać informacji? · 4. Komunikacja w internecie | Komputer, sieć i pliki; Bezpiecznie i kulturalnie w sieci |
@@ -188,7 +188,7 @@ Nowa Era, nr 1265/1/2026, ISBN 978-83-267-5428-9. Autorzy: G. Kilbach, A. Daniel
 
 **IV. Zbliża się lato** – 1. Dla mamy i taty · 2. Święto wszystkich dzieci · 3. O czym może mówić muzyka? · 4. Z piosenką nad morze!
 
-Każdy rozdział kończy „Warsztat muzyczny – podsumowanie”; na końcu repertuar dodatkowy, słowniczek, tabela chwytów na flet prosty. Działy aplikacji (elementy muzyki i zapis nutowy; instrumenty, głosy i formy; hymn, pieśni i tańce narodowe, Chopin) obejmują wiedzę z rozdziałów I–III; „Cudowne dzieci muzyki” i Chopin – do sprawdzenia, czy pokrywają się z aplikacją.
+Każdy rozdział kończy „Warsztat muzyczny – podsumowanie”; na końcu repertuar dodatkowy, słowniczek, tabela chwytów na flet prosty. Działy aplikacji: Elementy muzyki i zapis nutowy (rozdział I); Instrumenty, głosy i formy muzyczne (rozdziały I–III); Hymn, pieśni i tańce narodowe, Chopin (rozdziały I i III). Brakuje: święta i tradycje w muzyce (Dzień Edukacji Narodowej, kolędy, Wielkanoc, święta majowe, Dzień Matki i Ojca, Dzień Dziecka), „Cudowne dzieci muzyki”, „O czym może mówić muzyka?” (muzyka ilustracyjna), gra na flecie prostym (część praktyczna – poza aplikacją).
 
 ## Zajęcia praktyczno-techniczne – *Jak to zrobić? 4*
 
@@ -201,7 +201,7 @@ Nowa Era, nr 1258/1/2026, ISBN 978-83-267-5476-0. Autorzy: J. Pecyna, M. Sztuka 
 | III. Jeżdżę rowerem i hulajnogą | 1. Wiem, jak działa rower (Ekologiczny rower) · 2. Jeżdżę bezpiecznie · 3. Wykonuję manewry na drodze (Wesołe odblaski) · 4. Poznaję zasady pierwszeństwa na skrzyżowaniu (Makieta skrzyżowania) · 5. Oceniam sytuacje na drodze | Rower i rowerzysta; Karta rowerowa i hulajnoga elektryczna |
 | ZPT w akcji | stojak na telefon; bezpieczeństwo w swoim otoczeniu; jak zadbać o rower | – |
 
-Na końcu: tablice znaków drogowych. W aplikacji brakuje tematów z rozdziału I (narzędzia, projektowanie, pierwsza pomoc w pracowni) – do rozważenia przy układaniu działów według podręcznika.
+Na końcu: tablice znaków drogowych. W aplikacji brakuje: z rozdziału I – po co umiejętności techniczne, narzędzia i ich bezpieczne użycie, projektowanie (myślę, projektuję, wykonuję), pierwsza pomoc przy skaleczeniu i oparzeniu; z rozdziału III – **manewry na drodze** (skręcanie, zmiana pasa, wymijanie, sygnalizowanie ręką) i **pierwszeństwo na skrzyżowaniu** (ważne do karty rowerowej); ocena sytuacji na drodze.
 
 ## Plastyka – *Do dzieła! 4*
 
@@ -215,5 +215,5 @@ Na początku: Co widzimy i jak to pokazać?
 | II. Techniki plastyczne | 1. Techniki rysunkowe (Morski świat) · 2. Pastele · 3. Techniki malarskie (Farby z natury) · 4. Techniki mieszane | Techniki plastyczne i dziedziny sztuki |
 | III. Sztuka wokół nas | 1. Grafika na co dzień (Projektowanie z użyciem stempla) · 2. Sztuka w naszym otoczeniu (Nasza droga do szkoły; Historia sztuki: Sztuka antyku) · 3. Zabytki regionów Polski | Techniki plastyczne i dziedziny sztuki; Dzieło sztuki: gatunki, oryginał i kopia, muzeum (częściowo) |
 
-Na końcu: Dzieło sztuki pod lupą, Słowniczek plastyczny. Według „Układu treści w klasach 5–7” oryginał, kopia, reprodukcja i falsyfikat oraz prawo autorskie są w podręczniku dopiero w kl. 7, a walor, kontrast, faktura i kompozycja – w kl. 5; w aplikacji są w działach klasy 4 (z podstawy kl. IV–VII). Brakuje natomiast historii sztuki z podręcznika (prehistoria, Egipt, antyk) i zabytków regionów Polski – do rozważenia przy układaniu działów.
+Na końcu: Dzieło sztuki pod lupą, Słowniczek plastyczny. Według zapowiedzi „Układ treści w klasach 5–7” walor, kontrast, faktura i kompozycja oraz oryginał, kopia, reprodukcja, falsyfikat i prawo autorskie są w podręczniku w kolejnych klasach (prawdopodobnie odpowiednio kl. 5 i kl. 7 – zapowiedź w podglądzie ma układ kolumn, który trudno jednoznacznie odczytać); w aplikacji są w działach klasy 4 (podstawa kl. IV–VII). Brakuje natomiast historii sztuki z podręcznika (prehistoria, Egipt, antyk) i zabytków regionów Polski – do rozważenia przy układaniu działów.
 

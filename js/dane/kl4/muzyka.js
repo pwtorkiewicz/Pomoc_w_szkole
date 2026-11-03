@@ -7,10 +7,12 @@ window.SUBJECTS.push({
   name: 'Muzyka',
   icon: '🎵',
   color: '#b0479a',
+  book: 'Wszystko gra 4 (Nowa Era)',
   topics: [
     {
       id: 'elementy-i-nuty',
       name: 'Elementy muzyki i zapis nutowy',
+      chapter: 'rozdział I „Barwy jesieni” (rytm, pięciolinia, tempo, dynamika)',
       basis: 'Dz.U. 2026 poz. 378, muzyka (II etap, przedmiot w kl. IV–VII): dz. 1 „Uczeń jako twórca i wykonawca”, wym. 9 (pojęcia związane z podstawowymi elementami muzyki: rytm, melodia, metrum, tempo, dynamika), wym. 10 (kodowanie i dekodowanie muzyki z użyciem notacji muzycznej). Wybór na klasę 4 i zakres zapisu nutowego (klucz wiolinowy, dźwięki od c¹ do c², wartości od całej nuty do ósemki) – decyzja redakcyjna (podstawa nie dzieli wymagań na klasy). Śpiew i gra to praca na lekcji – tu utrwalasz pojęcia.',
       theory: `
         <h3>Z czego zbudowana jest muzyka?</h3>
@@ -178,6 +180,7 @@ window.SUBJECTS.push({
     {
       id: 'instrumenty-i-formy',
       name: 'Instrumenty, głosy i formy muzyczne',
+      chapter: 'rozdziały I–III (gramy na instrumentach, rodzaje głosów, instrumenty perkusyjne; część form – w kolejnych klasach)',
       basis: 'Dz.U. 2026 poz. 378, muzyka (II etap, przedmiot w kl. IV–VII): dz. 2 „Uczeń jako słuchacz”, wym. 3 (rozpoznaje instrumenty muzyczne i grupuje je ze względu na sposób wydobycia dźwięku), wym. 4 (pojęcia: głosy ludzkie, formy – piosenka, pieśń, kanon, koncert, symfonia; gatunki – opera, balet, musical, muzyka filmowa; zespoły wykonawcze – solo, chór, orkiestra), wym. 5 (funkcje muzyki: rozrywkowa, religijna, obrzędowa, sygnalizacyjna), wym. 7 (muzyka w mediach, reklamie, filmie i grach); dz. 1 wym. 8 (role w zespole, np. dyrygent, chórzysta, solista); dz. 4 wym. 2–3 (higiena głosu i słuchu). Wybór na klasę 4 – decyzja redakcyjna. Rozpoznawanie brzmienia instrumentów wymaga słuchania – ćwicz je na lekcjach.',
       theory: `
         <h3>Grupy instrumentów – jak powstaje dźwięk?</h3>
@@ -290,6 +293,7 @@ window.SUBJECTS.push({
     {
       id: 'muzyka-polska',
       name: 'Hymn, pieśni i tańce narodowe, Chopin',
+      chapter: 'rozdziały I („Mazurek Dąbrowskiego”) i III (krakowiak); pozostałe tańce, „Rota” i twórczość Chopina – w podręczniku w kolejnych klasach',
       basis: 'Dz.U. 2026 poz. 378, muzyka (II etap, przedmiot w kl. IV–VII): dz. 3 „Uczeń jako uczestnik kultury”, wym. 2 (hymn państwowy – melodia, słowa, postawa, okoliczności powstania), wym. 3 (pieśni patriotyczne), wym. 5 (polskie tańce narodowe), wym. 6 (utwory Fryderyka Chopina), wym. 7 (Ignacy Jan Paderewski), wym. 8 (hymn Unii Europejskiej); dz. 1 wym. 6 (kroki krakowiaka, kujawiaka i poloneza); dz. 2 wym. 1 (zachowanie podczas wydarzeń muzycznych). Fakty sprawdzone 1.11.2026: hymn – Konstytucja RP art. 28 ust. 3, ustawa o godle, barwach i hymnie (Dz.U. 2025 poz. 299), dzieje.pl, zpe.gov.pl; hymn UE – european-union.europa.eu; Chopin – Narodowy Instytut Fryderyka Chopina (nifc.pl); Paderewski – dzieje.pl, PAP, IPN; tańce narodowe – zpe.gov.pl. Wybór na klasę 4 – decyzja redakcyjna.',
       theory: `
         <h3>„Mazurek Dąbrowskiego” – hymn Polski</h3>
