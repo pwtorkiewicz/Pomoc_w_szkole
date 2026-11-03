@@ -1570,19 +1570,19 @@ window.LESSONS['polski/lektura-kajko'] = [
   },
   {
     title: 'Kajko i Kokosz – zgrana drużyna',
-    svg: `<svg viewBox="0 0 400 218" role="img" aria-label="Porównanie przyjaciół. Kajko: niski, sprytny i odważny, miecz i łuk, wymyśla plany. Kokosz: wysoki, tęgi, łysy, bardzo silny, łakomczuch, Jaga to jego ciotka. Razem: spryt i siła – zgrana drużyna.">
+    svg: `<svg viewBox="0 0 400 218" role="img" aria-label="Porównanie przyjaciół. Kajko: niewielkiego wzrostu, sprytny i odważny, miecz i łuk, wymyśla plany. Kokosz: wysoki, tęgi, łysy, bardzo silny, łakomczuch, Jaga to jego ciotka. Razem: spryt i siła – zgrana drużyna.">
       <rect x="8" y="8" width="186" height="150" rx="12" class="f1 s1 sw"/>
       <rect x="206" y="8" width="186" height="150" rx="12" class="f2 s2 sw"/>
       <text x="101" y="40" class="tx-b" text-anchor="middle">🏹 Kajko</text>
       <text x="299" y="40" class="tx-b" text-anchor="middle">💪 Kokosz</text>
       <g class="tx" text-anchor="middle">
-        <text x="101" y="70">niski</text><text x="101" y="92">sprytny i odważny</text><text x="101" y="114">miecz i łuk</text><text x="101" y="136">wymyśla plany</text>
+        <text x="101" y="70">niewysoki</text><text x="101" y="92">sprytny i odważny</text><text x="101" y="114">miecz i łuk</text><text x="101" y="136">wymyśla plany</text>
         <text x="299" y="70">wysoki, tęgi, łysy</text><text x="299" y="92">bardzo silny</text><text x="299" y="114">łakomczuch 🍗</text><text x="299" y="136">Jaga to jego ciotka</text>
       </g>
       <rect x="40" y="170" width="320" height="40" rx="20" class="f3 s3"/>
       <text x="200" y="196" class="tx" text-anchor="middle">🤝 spryt + siła = drużyna</text>
     </svg>`,
-    text: `<p><b>Kajko</b> i <b>Kokosz</b> to woje (wojownicy) z grodu Mirmiłowo i najlepsi przyjaciele. Kajko jest niski, ale sprytny i odważny – świetnie walczy mieczem i strzela z łuku. Często wymyśla, jak wyjść z kłopotów.</p>
+    text: `<p><b>Kajko</b> i <b>Kokosz</b> to woje (wojownicy) z grodu Mirmiłowo i najlepsi przyjaciele. Kajko jest niewielkiego wzrostu, ale sprytny i odważny – świetnie walczy mieczem i strzela z łuku. Często wymyśla, jak wyjść z kłopotów.</p>
       <p>Kokosz jest wysoki, tęgi, łysy i bardzo silny. To wielki <b>łakomczuch</b> – jedzenie jest dla niego prawie święte. W niebezpieczeństwie bywa tchórzliwy. Jego ciotką jest czarownica <b>Jaga</b>.</p>`,
     remember: 'Kajko – mały i sprytny · Kokosz – duży, silny łakomczuch · razem się uzupełniają.',
     hook: 'Kajko ma głowę do planów, Kokosz – ręce do pracy i brzuch do jedzenia.',
@@ -1605,7 +1605,7 @@ window.LESSONS['polski/lektura-kajko'] = [
       <text x="200" y="198" class="tx-s" text-anchor="middle">Jaga – dobra czarownica, ciotka Kokosza</text>
       <text x="200" y="218" class="tx-s" text-anchor="middle">Łamignat – silny zbój, mąż Jagi</text>
     </svg>`,
-    text: `<p>Grodem <b>Mirmiłowo</b> rządzi <b>kasztelan Mirmił</b> – łysy, z rudymi, zakręconymi wąsami. Kasztelan to władca grodu. Jego żona to <b>Lubawa</b>. Mirmił marzy, żeby <b>nauczyć się latać</b>.</p>
+    text: `<p>Grodem <b>Mirmiłowo</b> rządzi <b>kasztelan Mirmił</b> – z rudymi włosami i długimi rudymi wąsami. Kasztelan to władca grodu. Jego żona to <b>Lubawa</b>. Mirmił marzy, żeby <b>nauczyć się latać</b>.</p>
       <p>Wrogami grodu są <b>Zbójcerze</b> z wodzem <b>Hegemonem</b> – sprytnym i bezwzględnym. Chcą zdobyć i złupić bogate Mirmiłowo. Po stronie grodu są dobra czarownica <b>Jaga</b> i jej mąż – silny zbój <b>Łamignat</b>.</p>`,
     remember: 'Mirmił – kasztelan Mirmiłowa · Hegemon – wódz Zbójcerzy · Jaga – ciotka Kokosza, żona Łamignata.',
     hook: 'Zbójcerz = zbój + rycerz: walczy jak rycerz, ale rabuje jak zbój.',
@@ -1613,18 +1613,18 @@ window.LESSONS['polski/lektura-kajko'] = [
   },
   {
     title: 'Jak Mirmił uczył się latać',
-    svg: `<svg viewBox="0 0 400 254" role="img" aria-label="Wydarzenia po kolei: brama zamknięta – noc w lesie; lekcje u Jagi – zniszczony dom; podstęp Hegemona – Łysa Góra; psikus Kokosza „szkoła łatania”; Mirmił dostaje dyplom.">
+    svg: `<svg viewBox="0 0 400 254" role="img" aria-label="Wydarzenia po kolei: brama zamknięta – noc w lesie; Hegemon przebrany za kupca kusi Mirmiła lataniem; lekcje u Jagi – zniszczony dom; Łysa Góra – psikus Kokosza „szkoła łatania”; Mirmił dostaje dyplom.">
       <defs><marker id="a-kl4-kajko-1" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
       <g class="f1 s1"><rect x="6" y="6" width="388" height="38" rx="9"/><rect x="6" y="56" width="388" height="38" rx="9"/><rect x="6" y="106" width="388" height="38" rx="9"/><rect x="6" y="156" width="388" height="38" rx="9"/><rect x="6" y="206" width="388" height="38" rx="9"/></g>
-      <g style="font-size:20px" text-anchor="middle"><text x="26" y="32">🚪</text><text x="26" y="82">🧹</text><text x="26" y="132">⛰️</text><text x="26" y="182">🔤</text><text x="26" y="232">📜</text></g>
-      <g class="tx"><text x="46" y="30">brama zamknięta – noc w lesie</text><text x="46" y="80">lekcje u Jagi – zniszczony dom</text><text x="46" y="130">podstęp Hegemona: Łysa Góra</text><text x="46" y="180">psikus: „szkoła łatania”</text><text x="46" y="230">Mirmił dostaje dyplom</text></g>
+      <g style="font-size:20px" text-anchor="middle"><text x="26" y="32">🚪</text><text x="26" y="82">🎭</text><text x="26" y="132">🧹</text><text x="26" y="182">⛰️</text><text x="26" y="232">📜</text></g>
+      <g class="tx"><text x="46" y="30">brama zamknięta – noc w lesie</text><text x="46" y="80">„kupiec” Hegemon kusi lataniem</text><text x="46" y="130">lekcje u Jagi – zniszczony dom</text><text x="46" y="180">Łysa Góra: „szkoła łatania”</text><text x="46" y="230">Mirmił dostaje dyplom</text></g>
       <g class="ln"><path d="M380,44 L380,55" marker-end="url(#a-kl4-kajko-1)"/><path d="M380,94 L380,105" marker-end="url(#a-kl4-kajko-1)"/><path d="M380,144 L380,155" marker-end="url(#a-kl4-kajko-1)"/><path d="M380,194 L380,205" marker-end="url(#a-kl4-kajko-1)"/></g>
     </svg>`,
     text: `<p>Mirmił, Kajko i Kokosz wracają z polowania po zmroku. <b>Brama jest zamknięta</b> – sam Mirmił zakazał ją otwierać po zmroku! Nocują w lesie, gdzie napada na nich Łamignat (nie poznaje ich), a potem Zbójcerze.</p>
-      <p>Hegemon wymyśla <b>podstęp</b>: chce wywabić Mirmiła z grodu, kusząc go nauką latania. Najpierw Mirmił uczy się u Jagi – lekcje kończą się zniszczeniem jej domu. Potem jedzie do <b>Wyższej Szkoły Latania na Łysej Górze</b>. Kajko i Kokosz psocą – Kokosz zmienia napis na <b>„szkoła łatania”</b> – i zostają wyrzuceni. Mirmił z uporem kończy kurs i dostaje <b>dyplom</b> oraz latający kufer.</p>`,
-    remember: 'Najpierw lekcje u Jagi, potem Wyższa Szkoła Latania na Łysej Górze – to podstęp Hegemona.',
+      <p>Hegemon wymyśla <b>podstęp</b>: przebrany za <b>wędrownego kupca</b> kusi Mirmiła lataniem i radzi mu <b>Wyższą Szkołę Latania na Łysej Górze</b> – chce wywabić go z grodu. Lubawa nie puszcza męża, Mirmił traci apetyt. Kajko i Kokosz prowadzą go więc do ciotki Kokosza, czarownicy <b>Jagi</b> – lekcje kończą się zniszczeniem jej domu. W końcu Mirmił jedzie na Łysą Górę. Kajko i Kokosz psocą – Kokosz zmienia napis na <b>„szkoła łatania”</b> – i zostają wyrzuceni. Mirmił z uporem kończy kurs i dostaje <b>dyplom</b> oraz latający kufer.</p>`,
+    remember: 'Hegemon (przebrany za kupca) kusi lataniem → lekcje u Jagi → Wyższa Szkoła Latania na Łysej Górze.',
     hook: 'Jedna kreska przez „l” i z latania robi się łatanie – tak żartuje Kokosz.',
-    check: { q: 'Gdzie była Wyższa Szkoła Latania?', options: ['na Łysej Górze', 'w chacie Jagi', 'w Mirmiłowie'], answer: 0, explain: 'Szkoła działała na Łysej Górze. U Jagi Mirmił miał pierwsze, nieudane lekcje.' },
+    check: { q: 'Za kogo przebrał się Hegemon, żeby skusić Mirmiła lataniem?', options: ['za wędrownego kupca', 'za czarownicę', 'za woja z grodu'], answer: 0, explain: 'Hegemon udawał wędrownego kupca – i doradził Mirmiłowi szkołę latania na Łysej Górze.' },
   },
   {
     title: 'Finał i ważne tematy',

@@ -1884,15 +1884,15 @@ window.SUBJECTS.push({
     {
       id: 'lektura-kajko',
       name: 'Lektura: „Kajko i Kokosz. Szkoła latania”',
-      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 7 „Praktyki lekturowe”, wym. 3 (dzieli się pierwszymi wrażeniami z przeczytanego tekstu), wym. 4 (czyta w każdym roku co najmniej 4 dłuższe teksty literackie, wybrane z listy przykładowych tekstów lub spoza niej, m.in. o przyjaźni), wym. 7 (zapoznaje się z tekstami kultury różnych sztuk, w tym komiksu); dz. 2 „Odbiór tekstów kultury”, wym. 1 (odczytanie tekstów różnych sztuk, w tym komiksu – moduł kultura), wym. 3 (zabiegi służące rozśmieszeniu odbiorcy), wym. 4 (świat przedstawiony, utwór fantastyczny), wym. 5 (ocena postępowania bohaterów). Komiksu nie ma na liście przykładowej ani w podręczniku „Słowa na start! 4” – dział dodany na prośbę rodzica (3.11.2026), co dopuszcza dz. 7 wym. 4. Fakty sprawdzone 3.11.2026 w kilku zgodnych opracowaniach (m.in. bryk.pl, poezja.org, Wikibooks, sprawdziany.pl, nacobezu.pl, eszkola.pl – oglądane tylko przez wyszukiwarkę; samego albumu nie sprawdzano); bez cytatów (utwór chroniony). Pominięto szczegóły, które źródła podają różnie lub tylko jedno z nich: dokładny rok i miejsce pierwszego wydania, scenę z wyrywaniem zęba, przebranie Zbójcerzy, to, czy fujarka Łamignata jest naprawdę zaczarowana, i los Hegemona.',
+      basis: 'Dz.U. 2026 poz. 378, język polski kl. IV–VI: dz. 7 „Praktyki lekturowe”, wym. 3 (dzieli się pierwszymi wrażeniami z przeczytanego tekstu), wym. 4 (czyta w każdym roku co najmniej 4 dłuższe teksty literackie, wybrane z listy przykładowych tekstów lub spoza niej, m.in. o przyjaźni), wym. 7 (zapoznaje się z tekstami kultury różnych sztuk, w tym komiksu); dz. 2 „Odbiór tekstów kultury”, wym. 1 (odczytanie tekstów różnych sztuk, w tym komiksu – moduł kultura), wym. 3 (zabiegi służące rozśmieszeniu odbiorcy), wym. 4 (świat przedstawiony, utwór fantastyczny), wym. 5 (ocena postępowania bohaterów). Komiksu nie ma na liście przykładowej ani w podręczniku „Słowa na start! 4” – dział dodany na prośbę rodzica (3.11.2026), co dopuszcza dz. 7 wym. 4. Fakty sprawdzone 3.11.2026 w ZPE (lekcje „Janusz Christa Kajko i Kokosz. Szkoła latania” i „Czy trudno znaleźć przyjaciela?” – opis kadrów albumu, wyd. 2003, s. 14–16; „Dziś pokażę wam komiks” – o autorze i wyglądzie postaci) oraz w kilku zgodnych opracowaniach (m.in. bryk.pl, poezja.org, Wikibooks, sprawdziany.pl, nacobezu.pl – oglądane tylko przez wyszukiwarkę; dalszych stron albumu nie sprawdzano); bez cytatów (utwór chroniony). Pominięto szczegóły, które źródła podają różnie lub tylko jedno z nich: rok pierwszego wydania samej „Szkoły latania”, scenę z wyrywaniem zęba, przebranie Zbójcerzy w ataku na gród, to, czy fujarka Łamignata jest naprawdę zaczarowana, i los Hegemona.',
       theory: `
         <h3>Metryczka</h3>
         <table>
-          <tr><td><b>autor</b></td><td><b>Janusz Christa</b> – polski twórca komiksów; napisał i narysował całą serię o Kajku i Kokoszu</td></tr>
-          <tr><td><b>powstanie</b></td><td>lata 70. XX wieku (ok. 1975)</td></tr>
+          <tr><td><b>autor</b></td><td><b>Janusz Christa</b> (1934–2008) – polski rysownik i scenarzysta komiksów, twórca serii o Kajku i Kokoszu</td></tr>
+          <tr><td><b>powstanie</b></td><td>seria od lat 70. XX wieku – od 1972 r. odcinki drukował gdański dziennik „Wieczór Wybrzeża”, później także „Świat Młodych” i „Relax”</td></tr>
           <tr><td><b>gatunek</b></td><td><b>komiks</b> – humorystyczna opowieść w obrazkach, z elementami fantastycznymi (czarownice, czary, latanie na miotle)</td></tr>
           <tr><td><b>miejsce</b></td><td>gród <b>Mirmiłowo</b>, las w okolicy, <b>Łysa Góra</b> (Wyższa Szkoła Latania)</td></tr>
-          <tr><td><b>czas</b></td><td>dawne czasy grodów i wojów; dokładnie nieokreślony</td></tr>
+          <tr><td><b>czas</b></td><td>czasy dawnych Słowian – grody, woje, stroje jak w średniowieczu; dokładnie nieokreślony</td></tr>
         </table>
         <h3>Jak czytać komiks?</h3>
         <ul>
@@ -1904,12 +1904,12 @@ window.SUBJECTS.push({
         </ul>
         <h3>Bohaterowie</h3>
         <ul>
-          <li><b>Kajko</b> – niski, sprytny i odważny wój. Świetnie walczy mieczem i strzela z łuku. Często wymyśla, jak rozwiązać kłopot.</li>
+          <li><b>Kajko</b> – niewielkiego wzrostu, sprytny i odważny wój. Świetnie walczy mieczem i strzela z łuku. Często wymyśla, jak rozwiązać kłopot.</li>
           <li><b>Kokosz</b> – przyjaciel Kajka: wysoki, tęgi, łysy i bardzo silny. Wielki <b>łakomczuch</b> – jedzenie jest dla niego prawie święte. W niebezpieczeństwie bywa tchórzliwy.</li>
-          <li><b>Mirmił</b> – <b>kasztelan</b>, czyli władca grodu Mirmiłowo. Łysy, z rudymi, zakręconymi wąsami. Marzy o tym, żeby <b>nauczyć się latać</b>. Jego żona to <b>Lubawa</b>.</li>
+          <li><b>Mirmił</b> – <b>kasztelan</b>, czyli władca grodu Mirmiłowo. Ma rude włosy i długie rude wąsy. Marzy o tym, żeby <b>nauczyć się latać</b>. Jego żona to <b>Lubawa</b>.</li>
           <li><b>Jaga</b> – dobra czarownica, <b>ciotka Kokosza</b> i żona Łamignata. Uczy Mirmiła latać na miotle.</li>
           <li><b>Łamignat</b> – zbój o wielkiej sile, <b>mąż Jagi</b>. Skarży się, że słabnie, więc Jaga daje mu fujarkę, która ma mu dodać siły.</li>
-          <li><b>Hegemon</b> (Krwawy Hegemon) – wódz <b>Zbójcerzy</b>, wrogów Mirmiłowa. Sprytny i bezwzględny – chce zdobyć i złupić bogaty gród.</li>
+          <li><b>Hegemon</b> – wódz <b>Zbójcerzy</b>, wrogów Mirmiłowa. Sprytny i bezwzględny – chce zdobyć i złupić bogaty gród.</li>
         </ul>
         <h3>Najważniejsze wydarzenia</h3>
         <ol>
@@ -1917,9 +1917,10 @@ window.SUBJECTS.push({
           <li>Mirmił, Kajko i Kokosz wracają z polowania po zmroku. <b>Brama grodu jest zamknięta</b> – sam Mirmił zakazał otwierać ją po zmroku. Muszą nocować w lesie.</li>
           <li>W lesie napada na nich Łamignat, który ich nie poznaje, a potem – Zbójcerze.</li>
           <li>Po powrocie Mirmił zakazuje zamykać bramę. Zbójcerze wkradają się nocą do grodu, ale Kajko i Kokosz z mieszkańcami <b>wypędzają ich</b>.</li>
-          <li>Hegemon wie, że siłą grodu nie zdobędzie, więc wymyśla <b>podstęp</b>: chce wywabić Mirmiła z grodu, kusząc go nauką latania.</li>
-          <li>Mirmił uczy się latać na miotle <b>u Jagi</b>. Nie ma do tego talentu – lekcje kończą się <b>zniszczeniem domu Jagi</b>.</li>
-          <li>Wysłannik Hegemona przekonuje Mirmiła, że na <b>Łysej Górze</b> działa <b>Wyższa Szkoła Latania</b>. Mirmił wyrusza tam z Kajkiem i Kokoszem.</li>
+          <li>Hegemon wymyśla <b>podstęp</b>: <b>przebrany za wędrownego kupca</b> przychodzi do Mirmiła. Opowiada o latającym dywanie (podobno zjadły go mole) i radzi mu <b>Wyższą Szkołę Latania</b> na miotłach, którą czarownice prowadzą na <b>Łysej Górze</b> w kraju Omsów. W myślach Hegemon planuje zdobyć gród.</li>
+          <li>Lubawa nie chce puścić męża. Mirmił smutnieje i traci apetyt. Kajko przypomina sobie, że ciotka Kokosza jest czarownicą – przyjaciele prowadzą Mirmiła do <b>Jagi</b>.</li>
+          <li>Mirmił uczy się latać na miotle u Jagi. Nie ma do tego talentu, ciągle spada – lekcje kończą się <b>zniszczeniem domu Jagi</b>.</li>
+          <li>Mirmił wyrusza z Kajkiem i Kokoszem na Łysą Górę.</li>
           <li>Kajko i Kokosz nudzą się w szkole i psocą. Kokosz zmienia napis „szkoła latania” na <b>„szkoła łatania”</b>. Za psoty obaj zostają wyrzuceni ze szkoły.</li>
           <li>Mirmił z uporem uczy się dalej, kończy kurs i dostaje <b>dyplom</b> oraz <b>latający kufer</b>.</li>
           <li>Pod nieobecność kasztelana Zbójcerze <b>atakują gród</b>. Bronią go Jaga, Łamignat i mieszkańcy.</li>
@@ -1930,7 +1931,8 @@ window.SUBJECTS.push({
         <ul>
           <li>przyjaźń i współpraca – Kajko i Kokosz są różni, ale razem tworzą zgraną drużynę (spryt + siła);</li>
           <li>marzenia i wytrwałość – Mirmił nie poddaje się mimo wielu porażek;</li>
-          <li>podstęp i czujność – Hegemon próbuje wywabić Mirmiła z grodu;</li>
+          <li>podstęp i czujność – Hegemon, przebrany za kupca, wywabia Mirmiła z grodu;</li>
+          <li>przyjaciele w potrzebie – Kajko i Kokosz pomagają smutnemu Mirmiłowi spełnić marzenie;</li>
           <li>humor – śmieszne sytuacje, miny postaci, gra słów (latania / łatania).</li>
         </ul>
         <div class="tip">💡 Inne albumy, filmy i seriale o Kajku i Kokoszu opowiadają inne przygody. Na lekcji i w quizie liczy się album „Szkoła latania”.</div>
@@ -1941,11 +1943,11 @@ window.SUBJECTS.push({
         top: { icon: '🏰', title: 'Gród Mirmiłowo', text: 'tu mieszkają Kajko i Kokosz – woje kasztelana Mirmiła', kolor: 4 },
         root: { icon: '🧹', title: 'Mirmił', text: 'kasztelan, władca grodu; marzy o lataniu' },
         branches: [
-          { title: 'Kajko', text: 'niski, sprytny i odważny; miecz i łuk', kolor: 3 },
+          { title: 'Kajko', text: 'niewielkiego wzrostu, sprytny i odważny; miecz i łuk', kolor: 3 },
           { title: 'Kokosz', text: 'wysoki, silny, łakomczuch; Jaga to jego ciotka', kolor: 3 },
           { title: 'Jaga', text: 'dobra czarownica; uczy Mirmiła latać', kolor: 5 },
           { title: 'Łamignat', text: 'silny zbój, mąż Jagi; dostaje od niej fujarkę', kolor: 5 },
-          { title: 'Hegemon i Zbójcerze', text: 'wrogowie; chcą podstępem zdobyć Mirmiłowo', kolor: 2 },
+          { title: 'Hegemon i Zbójcerze', text: 'wrogowie; Hegemon jako „kupiec” wywabia Mirmiła z grodu', kolor: 2 },
         ],
         bottom: { title: '🔚 Zakończenie', items: ['Mirmił kończy Wyższą Szkołę Latania na Łysej Górze', 'Zbójcerze atakują gród pod jego nieobecność', 'czary i latający pień – Zbójcerze rozgromieni', 'na uczcie: Mirmił Waleczny'], kolor: 3 },
       },
@@ -1954,12 +1956,13 @@ window.SUBJECTS.push({
         ['Gatunek', 'komiks – humorystyczna opowieść w obrazkach'],
         ['Kadr, dymek, onomatopeja', 'obrazek · chmurka z wypowiedzią · wyraz dźwiękonaśladowczy (BUM!)'],
         ['Mirmiłowo', 'gród, którym rządzi kasztelan Mirmił'],
-        ['Kajko', 'niski, sprytny i odważny wój; miecz i łuk'],
+        ['Kajko', 'niewielkiego wzrostu, sprytny i odważny wój; miecz i łuk'],
         ['Kokosz', 'wysoki, silny, łysy łakomczuch; Jaga to jego ciotka'],
-        ['Mirmił', 'kasztelan; marzy o lataniu; żona – Lubawa'],
+        ['Mirmił', 'kasztelan; rude włosy i wąsy; marzy o lataniu; żona – Lubawa'],
         ['Jaga i Łamignat', 'dobra czarownica i jej mąż – silny zbój'],
         ['Hegemon', 'wódz Zbójcerzy; chce podstępem zdobyć Mirmiłowo'],
-        ['Podstęp Hegemona', 'wywabić Mirmiła z grodu – do szkoły latania'],
+        ['Podstęp Hegemona', 'przebrany za wędrownego kupca kusi Mirmiła lataniem – chce wywabić go z grodu'],
+        ['Kto zaprowadził Mirmiła do Jagi?', 'Kajko i Kokosz – Jaga to ciotka Kokosza'],
         ['Wyższa Szkoła Latania', 'na Łysej Górze; Mirmił dostaje dyplom i latający kufer'],
         ['„Szkoła łatania”', 'psikus Kokosza – Kajko i Kokosz wyrzuceni ze szkoły'],
         ['Zakończenie', 'czary i latający pień – Zbójcerze rozgromieni; Mirmił Waleczny'],
@@ -1978,7 +1981,10 @@ window.SUBJECTS.push({
         { id: 'crkpny', q: 'Czego chce Hegemon, wódz Zbójcerzy?', options: ['zdobyć i złupić Mirmiłowo', 'nauczyć się latać na miotle', 'zostać przyjacielem Kajka', 'zbudować własny gród w lesie'], answer: 0, explain: 'Hegemon chce zdobyć bogaty gród Mirmiła. Siłą mu się nie udaje, więc wymyśla podstęp.' },
         { id: 'm553ql', q: 'Dlaczego po polowaniu Mirmił, Kajko i Kokosz musieli nocować w lesie?', options: ['brama była zamknięta na rozkaz Mirmiła', 'zgubili w ciemności drogę do grodu', 'Zbójcerze zajęli gród pod ich nieobecność', 'Jaga zaczarowała ich, by zasnęli w lesie'], answer: 0, explain: 'Mirmił sam zakazał otwierać bramę po zmroku – i nikt nie wpuścił go do własnego grodu.' },
         { id: 'shnomm', q: 'U kogo Mirmił najpierw uczył się latać na miotle?', options: ['u Jagi', 'u Hegemona', 'u Łamignata', 'u Kokosza'], answer: 0, explain: 'Najpierw uczyła go Jaga – lekcje skończyły się zniszczeniem jej domu. Potem Mirmił pojechał na Łysą Górę.' },
-        { id: '35iqn3', q: 'Gdzie była Wyższa Szkoła Latania?', options: ['na Łysej Górze', 'w Mirmiłowie', 'w chacie Jagi', 'w obozie Zbójcerzy'], answer: 0, explain: 'Szkoła działała na Łysej Górze. Namówił do niej Mirmiła wysłannik Hegemona.' },
+        { id: '35iqn3', q: 'Gdzie była Wyższa Szkoła Latania?', options: ['na Łysej Górze', 'w Mirmiłowie', 'w chacie Jagi', 'w obozie Zbójcerzy'], answer: 0, explain: 'Szkoła działała na Łysej Górze, w kraju Omsów – prowadziły ją czarownice. Poradził ją Mirmiłowi Hegemon przebrany za kupca.' },
+        { id: 'ucgtha', q: 'Za kogo podawał się Hegemon, gdy przyszedł do Mirmiła?', options: ['za wędrownego kupca', 'za wędrownego grajka', 'za posła od króla', 'za czarownika z lasu'], answer: 0, explain: 'Hegemon udawał wędrownego kupca. Opowiadał o latającym dywanie i doradził Mirmiłowi szkołę latania na Łysej Górze.' },
+        { id: 'oakbiq', q: 'Kto wpadł na pomysł, żeby Mirmił uczył się latać u ciotki Kokosza?', options: ['Kajko', 'Lubawa', 'Hegemon', 'Łamignat'], answer: 0, explain: 'Kajko przypomniał sobie, że ciotka Kokosza jest czarownicą. Lubawa nie chciała puścić męża na naukę latania.' },
+        { id: 'c48hq2', q: 'Jak zachował się Mirmił, gdy Lubawa nie pozwoliła mu jechać do szkoły latania?', options: ['posmutniał i stracił apetyt', 'uciekł w nocy z grodu', 'wyrzucił Hegemona z grodu', 'zamknął Lubawę w wieży'], answer: 0, explain: 'Mirmił ciągle myślał o lataniu, był smutny i stracił apetyt. Wtedy Kajko i Kokosz zaprowadzili go do Jagi.' },
         { id: 'rsalgk', q: 'Jaki psikus zrobił Kokosz w szkole latania?', options: ['zmienił napis na „szkoła łatania”', 'zmienił napis na „szkoła spania”', 'zmienił napis na „szkoła grania”', 'zmienił napis na „szkoła lania”'], answer: 0, explain: 'Kokosz zmienił „latania” na „łatania” – jedna kreska, a zupełnie inne słowo. Za psoty Kajko i Kokosz zostali wyrzuceni ze szkoły.' },
         { id: 'hw8h0x', q: 'Co dostał Mirmił po ukończeniu kursu latania?', options: ['dyplom i latający kufer', 'złotą koronę i miecz', 'nową miotłę i kapelusz', 'konia i lśniącą zbroję'], answer: 0, explain: 'Mirmił skończył kurs na Łysej Górze – dostał dyplom i latający kufer.' },
         { id: '4ywon8', q: 'Co pomogło bohaterom rozgromić Zbójcerzy na końcu?', options: ['czary i latający pień', 'armata i beczka prochu', 'smok z Łysej Góry', 'wojsko sąsiedniego grodu'], answer: 0, explain: 'Mirmił, Kajko i Kokosz wrócili do grodu i przy pomocy czarów i latającego pnia pokonali Zbójcerzy.' },
@@ -2008,12 +2014,12 @@ window.SUBJECTS.push({
           q: 'Wyjaśnij, na czym polegał podstęp Hegemona i czy mu się udał. Odwołaj się do wydarzeń z komiksu.',
           steps: [
             'Dlaczego Hegemon nie zdobył grodu siłą?',
-            'Do czego namówił Mirmiła jego wysłannik? Po co?',
+            'Za kogo przebrał się Hegemon i do czego namówił Mirmiła? Po co?',
             'Jak skończył się atak Zbójcerzy na gród?',
           ],
-          answer: 'Hegemon wiedział, że siłą nie zdobędzie Mirmiłowa. Jego wysłannik namówił Mirmiła, żeby pojechał do Wyższej Szkoły Latania na Łysej Górze – tak Hegemon chciał wywabić kasztelana z grodu. Pod nieobecność Mirmiła Zbójcerze zaatakowali gród, ale podstęp się nie udał: Jaga, Łamignat i mieszkańcy bronili grodu, a potem wrócili Mirmił, Kajko i Kokosz i przy pomocy czarów i latającego pnia rozgromili Zbójcerzy.',
+          answer: 'Hegemon wiedział, że siłą nie zdobędzie Mirmiłowa. Przebrał się za wędrownego kupca i namówił Mirmiła, żeby pojechał do Wyższej Szkoły Latania na Łysej Górze – tak chciał wywabić kasztelana z grodu. Pod nieobecność Mirmiła Zbójcerze zaatakowali gród, ale podstęp się nie udał: Jaga, Łamignat i mieszkańcy bronili grodu, a potem wrócili Mirmił, Kajko i Kokosz i przy pomocy czarów i latającego pnia rozgromili Zbójcerzy.',
           scoring: [
-            '1 pkt – na czym polegał podstęp: wywabić Mirmiła z grodu (do szkoły latania na Łysej Górze).',
+            '1 pkt – na czym polegał podstęp: Hegemon przebrany za kupca wywabia Mirmiła z grodu (do szkoły latania na Łysej Górze).',
             '1 pkt – wydarzenie: Zbójcerze atakują gród pod nieobecność Mirmiła.',
             '1 pkt – ocena: podstęp się nie udał – Zbójcerze zostali rozgromieni (czary, latający pień).',
           ],
