@@ -181,7 +181,7 @@
             { icon: '🎯', kolor: 3, title: '38 + 7', text: '38 + 2 = 40\n40 + 5 = 45' },
             { icon: '🎯', kolor: 2, title: '62 − 8', text: '62 − 2 = 60\n60 − 6 = 54' },
             { icon: '🔟', kolor: 3, title: '47 + 25', text: '47 + 20 = 67\n67 + 5 = 72' },
-            { icon: '🪟', kolor: 5, title: 'Okienko', text: '□ + 6 = 14\n14 − 6 = 8' },
+            { icon: '🪟', kolor: 5, title: 'Okienko', text: '□ + 6 = 14\n□ = 8, bo 14 − 6 = 8' },
           ],
           bottom: { kolor: 4, title: '✅ Sprawdź dodawaniem', text: '75 − 28 = 47, bo 47 + 28 = 75' },
         },
@@ -245,7 +245,7 @@
             { icon: '🔟', kolor: 4, title: 'Razy 10', text: 'dopisz zero\n14 × 10 = 140' },
             { icon: '✌️', kolor: 5, title: '36 × 2', text: '30 × 2 = 60\n6 × 2 = 12\n60 + 12 = 72' },
           ],
-          bottom: { kolor: 2, title: '🧠 Zapamiętaj', text: '6 × 7 = 42 · 7 × 8 = 56\n8 × 9 = 72 · 9 × 6 = 54' },
+          bottom: { kolor: 2, title: '🧠 Zapamiętaj', text: '6 × 7 = 42, 7 × 8 = 56\n8 × 9 = 72, 9 × 6 = 54' },
         },
         flashcards: [
           ['3 × 4', '4 + 4 + 4 = 12'],
@@ -358,7 +358,7 @@
           <p class="tip">Prostokąt 5 cm i 3 cm: 5 + 3 + 5 + 3 = 16 cm. Kwadrat o boku 4 cm: 4 + 4 + 4 + 4 = 16 cm.</p>
           <h3>Symetria</h3>
           <p>Figura jest symetryczna, gdy po złożeniu na pół obie części się pokrywają – jak skrzydła motyla.</p>`,
-        infographicNote: 'Policz boki, zmierz je – i dodaj.',
+        infographicNote: 'Figury, miary i obwód – w jednym miejscu.',
         infographic: {
           type: 'karty', kolumny: 2,
           top: { kolor: 4, title: '🚩 Pion, poziom, skos', text: 'maszt flagi, blat stołu, zjeżdżalnia' },
@@ -437,7 +437,7 @@
             { icon: '🕒', kolor: 2, title: '15:00', text: '15 − 12 = 3\ntrzecia po południu' },
             { icon: '🏛️', kolor: 5, title: 'Znaki rzymskie', text: 'IV = 4, VI = 6\nIX = 9, XII = 12' },
           ],
-          bottom: { kolor: 3, title: '📅 Kalendarz', text: 'Tydzień – 7 dni. Rok – 12 miesięcy.\n30 dni: kwiecień, czerwiec, wrzesień, listopad.' },
+          bottom: { kolor: 3, title: '📅 Kalendarz', text: 'Tydzień – 7 dni.\nRok – 12 miesięcy.\n30 dni: kwiecień, czerwiec, wrzesień, listopad.' },
         },
         flashcards: [
           ['1 doba', '24 godziny'],
@@ -491,7 +491,7 @@
           <p>Temperaturę mierzymy termometrem, w stopniach Celsjusza (°C).</p>
           <h3>Szacowanie</h3>
           <p>Zeszyt kosztuje 4 zł 90 gr – to prawie 5 zł. 3 zeszyty to około 3 × 5 zł = 15 zł.</p>`,
-        infographicNote: 'Złote, kilogramy i litry – wszystko można zamienić.',
+        infographicNote: 'Pieniądze, waga i płyny – w jednym miejscu.',
         infographic: {
           type: 'karty', kolumny: 2,
           top: { kolor: 4, title: '🪙 1 zł = 100 gr', text: '3 zł 50 gr = 350 gr' },
