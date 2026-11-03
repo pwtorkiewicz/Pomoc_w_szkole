@@ -666,7 +666,7 @@ window.SUBJECTS.push({
           { label: '30 VI 1946', title: 'Referendum', text: '„3 razy TAK” – sfałszowane', kolor: 2 },
           { label: '19 I 1947', title: 'Wybory do Sejmu', text: 'sfałszowane – komuniści przejmują pełnię władzy', kolor: 2 },
           { label: 'XII 1948', title: 'PZPR', text: 'partia komunistyczna – rządzi do 1989 r.', kolor: 2 },
-          { label: '1948–1956', title: 'Stalinizm', text: 'terror UB, Nowa Huta, kolektywizacja, socrealizm; 1952 – Konstytucja PRL', kolor: 5 },
+          { label: '1948–1956', title: 'Stalinizm (ok.\u00a01948–1956)', text: 'terror UB, Nowa Huta, kolektywizacja, socrealizm; 1952 – Konstytucja PRL', kolor: 5 },
           { label: 'VI 1956', title: 'Poznań', text: 'protest robotników krwawo stłumiony przez wojsko', kolor: 1 },
           { label: 'X 1956', title: 'Odwilż', text: 'Gomułka I sekretarzem PZPR, uwolniony prymas Wyszyński', kolor: 3 },
         ],
