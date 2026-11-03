@@ -60,6 +60,7 @@ Pojęcia z marginesu spisu treści: wers, strofa, nastrój utworu, podmiot mówi
 | Dialog, monolog, wywiad i nastrój | kilka rozdziałów |
 | Teatr | IV (teatr) |
 | Lektury (4 działy) | Spotkanie z lekturą |
+| Lektura „Kajko i Kokosz. Szkoła latania” | – (spoza podręcznika, prośba rodzica) |
 
 ## Matematyka – *Matematyka z plusem 4*
 

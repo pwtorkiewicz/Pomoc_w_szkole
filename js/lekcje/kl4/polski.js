@@ -1542,3 +1542,108 @@ window.LESSONS['polski/lektura-ronja'] = [
     check: { q: 'Co postanawiają Ronja i Birk na końcu książki?', options: ['że nie zostaną zbójnikami', 'że zostaną hersztami obu band', 'że opuszczą las na zawsze'], answer: 0, explain: 'Ronja i Birk nie chcą krzywdzić ludzi.' },
   },
 ];
+
+window.LESSONS['polski/lektura-kajko'] = [
+  {
+    title: 'Komiks – opowieść w obrazkach',
+    svg: `<svg viewBox="0 0 400 236" role="img" aria-label="Dwa kadry komiksu. W pierwszym: ramka narratora „Tymczasem…”, dymek z wypowiedzią „Lecę!” i miotła. W drugim: onomatopeja BUM! Podpisy: kadr – jeden obrazek, dymek – wypowiedź postaci, BUM! – onomatopeja, ramka – słowa narratora.">
+      <rect x="10" y="26" width="184" height="150" rx="6" class="bg ln sw"/>
+      <rect x="206" y="26" width="184" height="150" rx="6" class="bg ln sw"/>
+      <text x="102" y="18" class="tx-s" text-anchor="middle">kadr 1</text>
+      <text x="298" y="18" class="tx-s" text-anchor="middle">kadr 2</text>
+      <rect x="16" y="32" width="104" height="28" rx="3" class="f4 s4"/>
+      <text x="24" y="51" class="tx-s">Tymczasem…</text>
+      <ellipse cx="130" cy="92" rx="52" ry="22" class="bg ln"/>
+      <path d="M112,112 L96,132 L124,113" class="bg ln"/>
+      <text x="130" y="98" class="tx-b" text-anchor="middle">Lecę!</text>
+      <text x="66" y="160" style="font-size:38px" text-anchor="middle">🧹</text>
+      <text x="298" y="100" class="tx-b t2" style="font-size:34px" text-anchor="middle">BUM!</text>
+      <text x="298" y="156" style="font-size:38px" text-anchor="middle">💥</text>
+      <text x="200" y="204" class="tx-s" text-anchor="middle">dymek – wypowiedź postaci · BUM! – onomatopeja</text>
+      <text x="200" y="226" class="tx-s" text-anchor="middle">ramka – słowa narratora</text>
+    </svg>`,
+    text: `<p>„Kajko i Kokosz. Szkoła latania” to <b>komiks</b> Janusza Christy – opowieść w obrazkach. Każdy obrazek to <b>kadr</b>. Kadry czytasz po kolei: od lewej do prawej, od góry do dołu.</p>
+      <p>Słowa postaci są w <b>dymkach</b>. Dźwięki zapisuje się <b>onomatopejami</b> (BUM!, TRACH!), a w <b>ramce</b> narrator dopowiada, np. „Tymczasem w grodzie…”. Napisy na rysunku są wymyślonym przykładem.</p>`,
+    remember: 'Kadr – obrazek · dymek – słowa postaci · onomatopeja – dźwięk (BUM!) · ramka – narrator.',
+    hook: 'Dymek jest jak chmurka nad głową – wypływają z niej słowa postaci.',
+    check: { q: 'Jak nazywa się pojedynczy obrazek w komiksie?', options: ['kadr', 'dymek', 'onomatopeja'], answer: 0, explain: 'Kadr to jeden obrazek. W dymku są słowa postaci.' },
+  },
+  {
+    title: 'Kajko i Kokosz – zgrana drużyna',
+    svg: `<svg viewBox="0 0 400 218" role="img" aria-label="Porównanie przyjaciół. Kajko: niski, sprytny i odważny, miecz i łuk, wymyśla plany. Kokosz: wysoki, tęgi, łysy, bardzo silny, łakomczuch, Jaga to jego ciotka. Razem: spryt i siła – zgrana drużyna.">
+      <rect x="8" y="8" width="186" height="150" rx="12" class="f1 s1 sw"/>
+      <rect x="206" y="8" width="186" height="150" rx="12" class="f2 s2 sw"/>
+      <text x="101" y="40" class="tx-b" text-anchor="middle">🏹 Kajko</text>
+      <text x="299" y="40" class="tx-b" text-anchor="middle">💪 Kokosz</text>
+      <g class="tx" text-anchor="middle">
+        <text x="101" y="70">niski</text><text x="101" y="92">sprytny i odważny</text><text x="101" y="114">miecz i łuk</text><text x="101" y="136">wymyśla plany</text>
+        <text x="299" y="70">wysoki, tęgi, łysy</text><text x="299" y="92">bardzo silny</text><text x="299" y="114">łakomczuch 🍗</text><text x="299" y="136">Jaga to jego ciotka</text>
+      </g>
+      <rect x="40" y="170" width="320" height="40" rx="20" class="f3 s3"/>
+      <text x="200" y="196" class="tx" text-anchor="middle">🤝 spryt + siła = drużyna</text>
+    </svg>`,
+    text: `<p><b>Kajko</b> i <b>Kokosz</b> to woje (wojownicy) z grodu Mirmiłowo i najlepsi przyjaciele. Kajko jest niski, ale sprytny i odważny – świetnie walczy mieczem i strzela z łuku. Często wymyśla, jak wyjść z kłopotów.</p>
+      <p>Kokosz jest wysoki, tęgi, łysy i bardzo silny. To wielki <b>łakomczuch</b> – jedzenie jest dla niego prawie święte. W niebezpieczeństwie bywa tchórzliwy. Jego ciotką jest czarownica <b>Jaga</b>.</p>`,
+    remember: 'Kajko – mały i sprytny · Kokosz – duży, silny łakomczuch · razem się uzupełniają.',
+    hook: 'Kajko ma głowę do planów, Kokosz – ręce do pracy i brzuch do jedzenia.',
+    check: { q: 'Który z przyjaciół jest wielkim łakomczuchem?', options: ['Kokosz', 'Kajko', 'Mirmił'], answer: 0, explain: 'Kokosz uwielbia jeść. Kajko jest niski i sprytny, a Mirmił to kasztelan.' },
+  },
+  {
+    title: 'Gród Mirmiłowo i jego wrogowie',
+    svg: `<svg viewBox="0 0 400 236" role="img" aria-label="Gród Mirmiłowo: Mirmił – kasztelan, Lubawa – jego żona, Kajko i Kokosz – woje. Wrogowie: Hegemon – wódz, Zbójcerze – jego banda. Między nimi walka. Pod spodem przyjaciele z lasu: Jaga – dobra czarownica, ciotka Kokosza; Łamignat – silny zbój, mąż Jagi.">
+      <rect x="8" y="8" width="176" height="128" rx="12" class="f3 s3 sw"/>
+      <rect x="216" y="8" width="176" height="128" rx="12" class="f2 s2 sw"/>
+      <text x="96" y="36" class="tx-b" text-anchor="middle">🏰 Mirmiłowo</text>
+      <text x="304" y="36" class="tx-b" text-anchor="middle">wrogowie</text>
+      <g class="tx-s" text-anchor="middle">
+        <text x="96" y="66">Mirmił – kasztelan</text><text x="96" y="90">Lubawa – jego żona</text><text x="96" y="114">Kajko i Kokosz – woje</text>
+        <text x="304" y="66">Hegemon – wódz</text><text x="304" y="90">Zbójcerze –</text><text x="304" y="114">jego banda</text>
+      </g>
+      <text x="200" y="80" style="font-size:24px" text-anchor="middle">⚔️</text>
+      <rect x="8" y="148" width="384" height="80" rx="12" class="f5 s5 sw"/>
+      <text x="200" y="174" class="tx-b" text-anchor="middle">🌲 przyjaciele z lasu</text>
+      <text x="200" y="198" class="tx-s" text-anchor="middle">Jaga – dobra czarownica, ciotka Kokosza</text>
+      <text x="200" y="218" class="tx-s" text-anchor="middle">Łamignat – silny zbój, mąż Jagi</text>
+    </svg>`,
+    text: `<p>Grodem <b>Mirmiłowo</b> rządzi <b>kasztelan Mirmił</b> – łysy, z rudymi, zakręconymi wąsami. Kasztelan to władca grodu. Jego żona to <b>Lubawa</b>. Mirmił marzy, żeby <b>nauczyć się latać</b>.</p>
+      <p>Wrogami grodu są <b>Zbójcerze</b> z wodzem <b>Hegemonem</b> – sprytnym i bezwzględnym. Chcą zdobyć i złupić bogate Mirmiłowo. Po stronie grodu są dobra czarownica <b>Jaga</b> i jej mąż – silny zbój <b>Łamignat</b>.</p>`,
+    remember: 'Mirmił – kasztelan Mirmiłowa · Hegemon – wódz Zbójcerzy · Jaga – ciotka Kokosza, żona Łamignata.',
+    hook: 'Zbójcerz = zbój + rycerz: walczy jak rycerz, ale rabuje jak zbój.',
+    check: { q: 'Kto jest wodzem Zbójcerzy?', options: ['Hegemon', 'Łamignat', 'Mirmił'], answer: 0, explain: 'Hegemon dowodzi Zbójcerzami. Łamignat to mąż Jagi, a Mirmił – kasztelan.' },
+  },
+  {
+    title: 'Jak Mirmił uczył się latać',
+    svg: `<svg viewBox="0 0 400 254" role="img" aria-label="Wydarzenia po kolei: brama zamknięta – noc w lesie; lekcje u Jagi – zniszczony dom; podstęp Hegemona – Łysa Góra; psikus Kokosza „szkoła łatania”; Mirmił dostaje dyplom.">
+      <defs><marker id="a-kl4-kajko-1" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <g class="f1 s1"><rect x="6" y="6" width="388" height="38" rx="9"/><rect x="6" y="56" width="388" height="38" rx="9"/><rect x="6" y="106" width="388" height="38" rx="9"/><rect x="6" y="156" width="388" height="38" rx="9"/><rect x="6" y="206" width="388" height="38" rx="9"/></g>
+      <g style="font-size:20px" text-anchor="middle"><text x="26" y="32">🚪</text><text x="26" y="82">🧹</text><text x="26" y="132">⛰️</text><text x="26" y="182">🔤</text><text x="26" y="232">📜</text></g>
+      <g class="tx"><text x="46" y="30">brama zamknięta – noc w lesie</text><text x="46" y="80">lekcje u Jagi – zniszczony dom</text><text x="46" y="130">podstęp Hegemona: Łysa Góra</text><text x="46" y="180">psikus: „szkoła łatania”</text><text x="46" y="230">Mirmił dostaje dyplom</text></g>
+      <g class="ln"><path d="M380,44 L380,55" marker-end="url(#a-kl4-kajko-1)"/><path d="M380,94 L380,105" marker-end="url(#a-kl4-kajko-1)"/><path d="M380,144 L380,155" marker-end="url(#a-kl4-kajko-1)"/><path d="M380,194 L380,205" marker-end="url(#a-kl4-kajko-1)"/></g>
+    </svg>`,
+    text: `<p>Mirmił, Kajko i Kokosz wracają z polowania po zmroku. <b>Brama jest zamknięta</b> – sam Mirmił zakazał ją otwierać po zmroku! Nocują w lesie, gdzie napada na nich Łamignat (nie poznaje ich), a potem Zbójcerze.</p>
+      <p>Hegemon wymyśla <b>podstęp</b>: chce wywabić Mirmiła z grodu, kusząc go nauką latania. Najpierw Mirmił uczy się u Jagi – lekcje kończą się zniszczeniem jej domu. Potem jedzie do <b>Wyższej Szkoły Latania na Łysej Górze</b>. Kajko i Kokosz psocą – Kokosz zmienia napis na <b>„szkoła łatania”</b> – i zostają wyrzuceni. Mirmił z uporem kończy kurs i dostaje <b>dyplom</b> oraz latający kufer.</p>`,
+    remember: 'Najpierw lekcje u Jagi, potem Wyższa Szkoła Latania na Łysej Górze – to podstęp Hegemona.',
+    hook: 'Jedna kreska przez „l” i z latania robi się łatanie – tak żartuje Kokosz.',
+    check: { q: 'Gdzie była Wyższa Szkoła Latania?', options: ['na Łysej Górze', 'w chacie Jagi', 'w Mirmiłowie'], answer: 0, explain: 'Szkoła działała na Łysej Górze. U Jagi Mirmił miał pierwsze, nieudane lekcje.' },
+  },
+  {
+    title: 'Finał i ważne tematy',
+    svg: `<svg viewBox="0 0 400 248" role="img" aria-label="Finał: Zbójcerze atakują gród, bronią go Jaga, Łamignat i mieszkańcy; czary i latający pień dają zwycięstwo; Mirmił dostaje przydomek Waleczny. Tematy: przyjaźń i współpraca, marzenia i wytrwałość, humor i gra słów.">
+      <rect x="8" y="8" width="384" height="58" rx="12" class="f2 s2"/>
+      <text x="200" y="32" class="tx-b" text-anchor="middle">⚔️ Zbójcerze atakują gród</text>
+      <text x="200" y="54" class="tx-s" text-anchor="middle">bronią go Jaga, Łamignat i mieszkańcy</text>
+      <rect x="8" y="74" width="384" height="40" rx="10" class="f3 s3"/>
+      <text x="200" y="100" class="tx" text-anchor="middle">🪵 czary i latający pień – wygrana!</text>
+      <rect x="8" y="122" width="384" height="40" rx="10" class="f4 s4"/>
+      <text x="200" y="148" class="tx-b" text-anchor="middle">🏆 Mirmił Waleczny</text>
+      <g class="f1 s1"><rect x="8" y="172" width="122" height="68" rx="10"/><rect x="139" y="172" width="122" height="68" rx="10"/><rect x="270" y="172" width="122" height="68" rx="10"/></g>
+      <g style="font-size:18px" text-anchor="middle"><text x="69" y="194">🤝</text><text x="200" y="194">🌟</text><text x="331" y="194">😄</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="69" y="214">przyjaźń</text><text x="69" y="232">i współpraca</text><text x="200" y="214">marzenia</text><text x="200" y="232">i wytrwałość</text><text x="331" y="214">humor</text><text x="331" y="232">i gra słów</text></g>
+    </svg>`,
+    text: `<p>Pod nieobecność kasztelana Zbójcerze <b>atakują gród</b>. Bronią go Jaga, Łamignat i mieszkańcy. Wtedy wracają Mirmił, Kajko i Kokosz – przy pomocy czarów i <b>latającego pnia</b> rozgramiają Zbójcerzy. Podstęp Hegemona się nie udaje. Na uczcie Mirmił dostaje przydomek <b>„Waleczny”</b>.</p>
+      <p>Ważne tematy: przyjaźń i współpraca (spryt Kajka + siła Kokosza), marzenia i wytrwałość (Mirmił nie poddaje się mimo porażek), czujność wobec podstępu i humor – w rysunkach, minach postaci i grze słów.</p>`,
+    remember: 'Zakończenie: Zbójcerze rozgromieni (czary, latający pień) · Mirmił dostaje przydomek „Waleczny”.',
+    hook: 'Mirmił długo spadał z miotły – ale się nie poddał. Wytrwałość popłaca!',
+    check: { q: 'Jaki przydomek dostał Mirmił na końcu?', options: ['Waleczny', 'Skrzydlaty', 'Mądry'], answer: 0, explain: 'Po zwycięstwie nad Zbójcerzami Mirmił został Mirmiłem Walecznym.' },
+  },
+];
