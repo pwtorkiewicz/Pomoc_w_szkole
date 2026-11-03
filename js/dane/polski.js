@@ -277,7 +277,7 @@ window.SUBJECTS.push({
         wiersze: [
           { label: 'Akademia Pana Kleksa', cells: ['pan Kleks, Adaś Niezgódka (narrator)', 'golibroda Filip'] },
           { label: 'Kajko i Kokosz. Szkoła latania', cells: ['Kajko i Kokosz z Mirmiłowa', 'Zbójcerze z Hegemonem'] },
-          { label: 'Lew, czarownica i stara szafa', cells: ['rodzeństwo Pevensie, lew Aslan', 'Biała Czarownica – wieczna zima'] },
+          { label: 'Opowieści z Narnii', cells: ['rodzeństwo Pevensie, lew Aslan', 'Biała Czarownica – wieczna zima'] },
           { label: 'Chłopcy z Placu Broni', cells: ['Boka (wódz), Nemeczek', 'Czerwone Koszule, Feri Acz'] },
           { label: 'Hobbit, czyli tam i z powrotem', cells: ['Bilbo, Gandalf, Thorin i krasnoludy', 'smok Smaug'] },
         ],
@@ -345,7 +345,7 @@ window.SUBJECTS.push({
         <p>To część zdania z imiesłowem przysłówkowym: <i><b>Wróciwszy do domu,</b> zjadłem obiad.</i> Można go zamienić na zdanie złożone: <i>Kiedy wróciłem do domu, zjadłem obiad.</i></p>
         <div class="tip">⚠️ Warunek poprawności: <b>ta sama osoba</b> wykonuje obie czynności. Błędnie: <s>Jadąc tramwajem, padał deszcz.</s> (deszcz nie jechał tramwajem!). Poprawnie: <i>Jadąc tramwajem, patrzyłem na deszcz.</i> Imiesłowowy równoważnik oddzielamy przecinkiem.</div>
       `,
-      infographicNote: 'Lewa kolumna – imiesłowy przymiotnikowe, prawa – przysłówkowe; z przysłówkowego powstaje imiesłowowy równoważnik zdania.',
+      infographicNote: 'Lewa kolumna – imiesłowy przymiotnikowe, prawa – przysłówkowe; na dole równoważnik zdania z imiesłowem przysłówkowym.',
       infographic: {
         type: 'drzewo', kolumny: 2,
         root: { title: 'Imiesłowy' },
@@ -357,7 +357,7 @@ window.SUBJECTS.push({
           { title: '„nie” razem', text: 'niepalący', kolor: 1 },
           { title: '„nie” osobno', text: 'nie czytając', kolor: 5 },
         ],
-        bottom: { title: 'Imiesłowowy równoważnik zdania', text: 'Wróciwszy do domu, zjadłem obiad. Obie czynności wykonuje ta sama osoba; oddziel przecinkiem.' },
+        bottom: { title: 'Imiesłowowy równoważnik zdania', text: 'z imiesłowem przysłówkowym: Wróciwszy do domu, zjadłem obiad. Obie czynności wykonuje ta sama osoba; oddziel przecinkiem.' },
       },
       flashcards: [
         ['czytający', 'imiesłów przymiotnikowy czynny'],
@@ -697,7 +697,7 @@ window.SUBJECTS.push({
           <li><b>Zapożyczenia</b> – wyrazy przejęte z innych języków: <i>komputer, weekend</i>.</li>
         </ul>
       `,
-      infographicNote: 'Gałęzie pokazują, jak różnie może znaczyć wyraz; na dole – wskazówka na egzamin.',
+      infographicNote: 'Gałęzie to sposoby opisu znaczenia wyrazów i relacji między nimi; na dole – wskazówka na egzamin.',
       infographic: {
         type: 'drzewo', kolumny: 1,
         root: { title: 'Znaczenie wyrazów' },
@@ -820,7 +820,7 @@ window.SUBJECTS.push({
         root: { title: 'Akcent', text: 'na którą sylabę od końca?' },
         branches: [
           { title: 'Przedostatnia', text: 'zwykle: szko-ła, ksią-żka', kolor: 3 },
-          { title: 'Trzecia od końca', kolor: 2, items: ['wyrazy greckie i łacińskie: ma-te-MA-ty-ka', '1. i 2. os. lm czasu przeszłego: BY-li-śmy'] },
+          { title: 'Trzecia od końca', kolor: 2, items: ['wyrazy pochodzenia greckiego i łacińskiego: ma-te-MA-ty-ka', '1. i 2. os. lm czasu przeszłego: BY-li-śmy'] },
           { title: 'Czwarta od końca', kolor: 2, items: ['1. i 2. os. lm trybu przypuszczającego: zro-BI-li-by-śmy'] },
         ],
         bottom: { title: '„nie” – razem czy osobno?', kolor: 1, items: ['razem: nieprzyjaciel, niemiły, niepalący, niedobrze', 'osobno: nie wiem, nie wiedząc, nie lepszy, nie pięć', 'wyjątki – razem: nienawidzić, niepokoić'] },
@@ -1417,7 +1417,7 @@ window.SUBJECTS.push({
         wiersze: [
           { label: 'Cel', cells: ['zaprosić na wydarzenie i zachęcić', 'poinformować wielu odbiorców'] },
           { label: '5 elementów', cells: ['kto zaprasza? kogo? na co? kiedy? gdzie?', 'kto ogłasza? dla kogo? o czym? kiedy? gdzie?'] },
-          { label: 'Język', cells: ['zwroty grzecznościowe; Was, Wam', 'zwięźle i konkretnie'] },
+          { label: 'Język', cells: ['zwroty grzecznościowe; Was, Wam wielką literą', 'zwięźle i konkretnie'] },
           { label: 'Typowy błąd', cells: ['brak podpisu, daty albo miejsca', 'brak informacji, kto ogłasza'] },
         ],
         bottom: { title: '⚠️ Jak oceniano', kolor: 2, items: ['„zachęć” → podaj 2 argumenty', '5 elementów + 2 argumenty → 2 pkt', '4 elementy → 1 pkt; 3 elementy → 0 pkt', '5 elementów, ale 1 argument → 1 pkt', 'najwyżej 2 błędy → 1 pkt za poprawność'] },
@@ -1568,9 +1568,10 @@ window.SUBJECTS.push({
         <h3>Teksty nieliterackie</h3>
         <p>Gatunki dziennikarskie: <b>reportaż</b> (relacja z wydarzeń oparta na faktach, z elementami opisu), <b>wywiad</b> (rozmowa w formie pytań i odpowiedzi), <b>artykuł</b> (tekst prasowy na dany temat). Odróżniaj literaturę piękną od tekstów naukowych, popularnonaukowych i publicystycznych. Więcej – w dziale „Teksty nieliterackie i teksty kultury”.</p>
       `,
-      infographicNote: 'Trzy rodzaje literackie: w każdym cechy i gatunki z przykładami lektur; na dole ballada, która łączy wszystkie trzy.',
+      infographicNote: 'Trzy rodzaje literackie: w każdym cechy i gatunki z przykładami lektur; na dole ballada, która łączy wszystkie trzy, u góry – jak odróżnić baśń od legendy.',
       infographic: {
         type: 'drzewo', kolumny: 1,
+        top: { title: '💡 Baśń czy legenda?', text: 'zapytaj, gdzie to się dzieje: „za siedmioma górami” – baśń, w prawdziwym miejscu – legenda', kolor: 4 },
         root: { title: 'Rodzaje literackie' },
         branches: [
           { title: '📖 Epika', text: 'narrator, fabuła, zwykle proza', kolor: 1, items: ['nowela – „Latarnik”', 'epopeja – „Pan Tadeusz”', 'też: powieść, opowiadanie, baśń, legenda, mit'] },
@@ -1849,7 +1850,7 @@ window.SUBJECTS.push({
         <h3>Nawiązania w kulturze popularnej</h3>
         <p>Filmy, komiksy, piosenki i gry często korzystają z <b>tradycyjnych wątków</b>: mitów, Biblii, baśni, legend. Przykład: „Percy Jackson i bogowie olimpijscy” Ricka Riordana nawiązuje do mitologii greckiej; wiele filmów opowiada na nowo historię Kopciuszka. Szukając nawiązania, zapytaj: <i>jaką znaną historię, postać albo motyw (np. walka dobra ze złem, wędrówka, przemiana bohatera) to przypomina?</i></p>
       `,
-      infographicNote: 'U góry fakt i opinia; w środku cel każdego tekstu (niebieskie – przekazują, pomarańczowe – przekonują); na dole perswazja a manipulacja.',
+      infographicNote: 'U góry fakt i opinia; w środku cel każdego tekstu (niebieskie – przekazują wiadomość lub wiedzę, pomarańczowe – przekonują lub zachęcają); na dole perswazja a manipulacja.',
       infographic: {
         type: 'drzewo', kolumny: 1,
         top: { title: 'Fakt czy opinia?', text: 'fakt da się sprawdzić; opinia to ocena – „moim zdaniem”, słowa wartościujące', kolor: 4 },
@@ -1987,7 +1988,7 @@ window.SUBJECTS.push({
         type: 'kroki',
         top: { title: '💡 Liczy się metoda', text: 'zadania nie sprawdzają, czy znasz wiersz' },
         items: [
-          { title: '1. Kto mówi?', text: 'podmiot liryczny: „ja”, „my” czy się ukrywa' },
+          { title: '1. Kto mówi?', text: 'podmiot liryczny: „ja”, „my”, czy się ukrywa' },
           { title: '2. Do kogo?', text: 'adresat: ty, wy, apostrofa' },
           { title: '3. W jakiej sytuacji?', text: 'sytuacja liryczna: gdzie, kiedy, w jakich okolicznościach' },
           { title: '4. Co widzę?', text: 'obrazy poetyckie – pobudzają wyobraźnię' },
