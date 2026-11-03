@@ -144,17 +144,18 @@
             <li><b>Jezioro</b> – duży zbiornik wody, która stoi. <b>Staw</b> – mały i płytki, często wykopany przez ludzi.</li>
             <li><b>Morze</b> – ogromne, woda jest <b>słona</b>. Polska leży nad Morzem Bałtyckim.</li>
           </ul>`,
-        infographicNote: 'Czytaj od góry: od koron drzew aż do ziemi.',
+        infographicNote: 'U góry – warstwy lasu. Niżej – inne miejsca w przyrodzie.',
         infographic: {
-          type: 'kroki',
-          top: { kolor: 1, title: '🌲 Warstwy lasu – od góry' },
+          type: 'karty', kolumny: 2,
+          top: { kolor: 3, title: '🌲 Warstwy lasu – od góry', text: 'korony drzew → podszyt → runo → ściółka. Im niżej, tym ciemniej i wilgotniej.' },
           items: [
-            { kolor: 3, icon: '🌳', title: 'Korony drzew', text: 'najwyżej, najwięcej światła' },
-            { kolor: 3, icon: '🌿', title: 'Podszyt', text: 'krzewy i młode drzewa' },
-            { kolor: 3, icon: '🍄', title: 'Runo', text: 'mchy, paprocie, jagody, grzyby' },
-            { kolor: 2, icon: '🍂', title: 'Ściółka', text: 'opadłe liście, igły, gałązki' },
+            { kolor: 3, icon: '🌼', title: 'Łąka', text: 'trawy i dzikie kwiaty, rośnie sama' },
+            { kolor: 4, icon: '🌾', title: 'Pole', text: 'rolnik sieje i zbiera' },
+            { kolor: 1, icon: '🏞️', title: 'Rzeka', text: 'woda płynie' },
+            { kolor: 1, icon: '💧', title: 'Jezioro, staw', text: 'woda stoi' },
+            { kolor: 1, icon: '🌊', title: 'Morze', text: 'ogromne, słona woda' },
+            { kolor: 5, icon: '🪵', title: 'Martwe drzewo', text: 'dom i jedzenie dla owadów' },
           ],
-          bottom: { kolor: 5, title: '💡 Zapamiętaj', text: 'Im niżej, tym ciemniej i wilgotniej.' },
         },
         flashcards: [
           ['Warstwy lasu od góry', 'korony drzew, podszyt, runo, ściółka'],
