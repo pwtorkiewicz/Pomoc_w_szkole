@@ -20,6 +20,18 @@ window.SUBJECTS.push({
         <div class="tip">💡 W 3. osobie l. poj. (he/she/it) dodajemy <b>-s</b>: she work<b>s</b>, he watch<b>es</b>, it fl<b>ies</b>.</div>
         <div class="tip">💡 Czasowniki stanu (<i>like, love, hate, know, understand, want, need, believe</i>) zwykle <b>nie</b> występują w Continuous: <i>I understand</i>, nie <s>I am understanding</s>.</div>
       `,
+      infographicNote: 'Porównuj w poziomie: lewa kolumna – Present Simple, prawa – Present Continuous.',
+      infographic: {
+        type: 'porownanie',
+        kolumny: [{ title: 'Present Simple', kolor: 1 }, { title: 'Present Continuous', kolor: 2 }],
+        wiersze: [
+          { label: 'Kiedy?', cells: ['zwyczaje, fakty, rozkłady jazdy', 'trwa teraz, sytuacje tymczasowe, ustalone plany'] },
+          { label: 'Budowa', cells: ["I play · he plays\nhe doesn't play\nDoes he play?", 'I am playing\nhe is playing\nthey are playing'] },
+          { label: 'Słowa-klucze', cells: ['always, usually, often, never, every day', 'now, right now, at the moment, Look!, Listen!'] },
+          { label: 'Czasowniki stanu: like, know, want…', cells: ['I understand ✔', 'I am understanding ✘'] },
+        ],
+        bottom: { title: '💡 he / she / it → -s', text: 'she works, he watches, it flies' },
+      },
       flashcards: [
         ['always, usually, every day', 'Present Simple'],
         ['now, at the moment, Look!', 'Present Continuous'],
@@ -152,6 +164,18 @@ window.SUBJECTS.push({
         </table>
         <div class="tip">💡 Po <i>I think, probably, I'm sure</i> zwykle używamy <b>will</b>.</div>
       `,
+      infographicNote: 'Zacznij od góry i dopasuj sytuację do jednej z czterech form.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: 'Przyszłość – która forma?', kolor: 4 },
+        branches: [
+          { title: 'will', kolor: 3, text: 'decyzja w chwili mówienia, przewidywanie (opinia), obietnica', items: ["I'll get you some water.", 'I think she will win.'] },
+          { title: 'be going to', kolor: 5, text: 'plan, zamiar; przewidywanie na podstawie tego, co widać', items: ["I'm going to study medicine.", "Look at the clouds! It's going to rain."] },
+          { title: 'Present Continuous', kolor: 2, text: 'ustalone spotkania i plany (z datą, godziną)', items: ["We're meeting at 6 tomorrow."] },
+          { title: 'Present Simple', kolor: 1, text: 'rozkłady jazdy, plany lekcji', items: ['The film starts at 8.'] },
+        ],
+        bottom: { title: "💡 I think, probably, I'm sure", text: '→ zwykle will' },
+      },
       flashcards: [
         ['Decyzja w chwili mówienia', 'will'],
         ['Plan / zamiar', 'be going to'],
@@ -197,6 +221,18 @@ window.SUBJECTS.push({
         </table>
         <div class="tip">💡 Grupuj je: <b>bring–brought, buy–bought, think–thought</b> (-ought); <b>catch–caught, teach–taught</b> (-aught); <b>cut, put, let, hit</b> (wszystkie formy takie same).</div>
       `,
+      infographicNote: 'Na górze – do czego służą formy; niżej grupy, które łatwiej zapamiętać razem.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        top: { title: 'Trzy formy czasownika', text: 'II forma → Past Simple\nIII forma → Present Perfect', kolor: 1 },
+        root: { title: 'Ucz się grupami', kolor: 4 },
+        branches: [
+          { title: '-ought', text: 'II = III', kolor: 3, items: ['bring – brought', 'buy – bought', 'think – thought'] },
+          { title: '-aught', text: 'II = III', kolor: 3, items: ['catch – caught', 'teach – taught'] },
+          { title: 'Bez zmian', text: 'I = II = III', kolor: 5, items: ['cut, put, let, hit'] },
+          { title: 'Trzy różne', text: 'I ≠ II ≠ III', kolor: 2, items: ['go – went – gone', 'see – saw – seen', 'take – took – taken'] },
+        ],
+      },
       flashcards: [
         ['be', 'was/were – been (być)'],
         ['go', 'went – gone (iść)'],
@@ -278,6 +314,19 @@ window.SUBJECTS.push({
           <li>It's <b>not as</b> cold <b>as</b> yesterday. (nie tak zimno jak)</li>
         </ul>
       `,
+      infographicNote: 'Nad każdym wierszem – rodzaj przymiotnika; w poziomie: stopień równy → wyższy → najwyższy.',
+      infographic: {
+        type: 'porownanie',
+        kolumny: [{ title: 'równy', kolor: 1 }, { title: 'wyższy', kolor: 2 }, { title: 'najwyższy', kolor: 3 }],
+        wiersze: [
+          { label: 'krótki', cells: ['tall', 'taller', 'the tallest'] },
+          { label: 'zakończony na -y', cells: ['happy', 'happier', 'the happiest'] },
+          { label: 'samogłoska + spółgłoska', cells: ['big', 'bigger', 'the biggest'] },
+          { label: 'długi', cells: ['beautiful', 'more beautiful', 'the most beautiful'] },
+          { label: 'nieregularne', cells: ['good\nbad', 'better\nworse', 'the best\nthe worst'] },
+        ],
+        bottom: { title: 'Porównania', items: ['taller than – wyższy niż', 'as tall as – tak samo wysoki jak', 'not as cold as – nie tak zimno jak'] },
+      },
       flashcards: [
         ['good', 'better – the best'],
         ['bad', 'worse – the worst'],
@@ -327,6 +376,18 @@ window.SUBJECTS.push({
           <tr><td>przydawkowe (who, which, that)</td><td>The man <b>who</b> lives next door is a famous actor.</td></tr>
         </table>
       `,
+      infographicNote: 'Porównaj typ 0 i typ I w poziomie; na dole – inne spójniki z listy CKE.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '⚠️ Po if i when – bez will', text: 'If it rains ✔ · If it will rain ✘' },
+        kolumny: [{ title: 'Typ 0', kolor: 1 }, { title: 'Typ I', kolor: 5 }],
+        wiersze: [
+          { label: 'Budowa', cells: ['If/When + Present Simple, Present Simple', 'If + Present Simple, will + czasownik'] },
+          { label: 'Znaczenie', cells: ['prawdy ogólne, coś, co dzieje się zawsze', 'realna sytuacja w przyszłości'] },
+          { label: 'Przykład', cells: ['When it is hot, we drink more.', 'If we win the match, we will have a party.'] },
+        ],
+        bottom: { title: 'Inne spójniki', items: ['because – przyczyna · so – skutek', 'to + czasownik – cel: I came to help you.', 'when – czas', 'who – o ludziach · which – o rzeczach'] },
+      },
       flashcards: [
         ['Zero conditional', 'If/When + Present Simple, Present Simple'],
         ['First conditional', 'If + Present Simple, will + czasownik'],
@@ -382,6 +443,20 @@ window.SUBJECTS.push({
         <h3>Tryb rozkazujący</h3>
         <p><i>Come here! Don't touch that!</i></p>
       `,
+      infographicNote: 'Czasowniki modalne podzielone według tego, co wyrażają; pomarańczowe – pułapka.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { title: 'Co chcesz wyrazić?', kolor: 4 },
+        branches: [
+          { title: 'Obowiązek', kolor: 1, items: ['must – wewnętrzny', 'have to – zewnętrzny (przepisy, inni)'] },
+          { title: '⚠️ Pułapka', kolor: 2, items: ["mustn't – nie wolno", "don't have to – nie musisz"] },
+          { title: 'Rada', kolor: 3, items: ["should / shouldn't", "You shouldn't do it."] },
+          { title: 'Prośba', kolor: 5, items: ['Can you…?', 'Could you…? – uprzejmie', 'May I…? – pozwolenie'] },
+          { title: 'Umiejętność', kolor: 1, items: ["can / can't", 'could – w przeszłości'] },
+          { title: 'Pewność', kolor: 1, items: ['It must be Tom. – To na pewno Tom.'] },
+        ],
+        bottom: { title: '💡 Po modalnym – bez „to”', text: 'I can swim. Wyjątki: have to, would like to' },
+      },
       flashcards: [
         ['mustn\'t', 'nie wolno (zakaz)'],
         ['don\'t have to', 'nie musisz (brak konieczności)'],
@@ -440,6 +515,19 @@ window.SUBJECTS.push({
         <h3>There is / there are</h3>
         <p>There <b>is</b> a new restaurant. There <b>are</b> clouds. There <b>were</b> twenty people. There <b>will be</b> a party.</p>
       `,
+      infographicNote: 'Każda karta to jedna reguła; ten sam kolor – podobny rodzaj słówek.',
+      infographic: {
+        type: 'karty', kolumny: 1,
+        items: [
+          { title: 'Strona bierna: be + III forma', kolor: 1, items: ['is spoken · was stolen · will be announced'] },
+          { title: 'There is / there are', kolor: 1, items: ['There is a new restaurant.', 'There are clouds.'] },
+          { title: 'at / on / in (czas)', kolor: 4, items: ["at 7 o'clock, at night", 'on Monday, on 5th May', 'in July, in 2027, in the morning'] },
+          { title: 'many / much', kolor: 3, items: ['many, a few + policzalne: many books', 'much, a little + niepoliczalne: much money'] },
+          { title: 'some / any', kolor: 3, items: ['some – zdania twierdzące', 'any – pytania i przeczenia'] },
+          { title: 'too / enough', kolor: 5, items: ['too + przymiotnik: too big – za duży', 'przymiotnik + enough: big enough'] },
+          { title: 'so / such', kolor: 5, items: ['so + przymiotnik: She is so nice.', 'such a + przymiotnik + rzeczownik: such a nice girl'] },
+        ],
+      },
       flashcards: [
         ['Strona bierna – budowa', 'be + III forma (is made, was built, will be done)'],
         ['at / on / in (czas)', 'at 7 o\'clock · on Monday · in July'],
@@ -519,6 +607,18 @@ window.SUBJECTS.push({
           <li><i>one / ones</i> – zamiast powtarzania rzeczownika: <i>I'll take the green one. These shoes are small – have you got bigger ones?</i></li>
         </ul>
       `,
+      infographicNote: 'Od góry: jaki rzeczownik i czy jest znany – to decyduje o przedimku.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: 'Co przed rzeczownikiem?', kolor: 4 },
+        branches: [
+          { title: 'a / an', kolor: 1, text: 'jedna rzecz, pierwszy raz; zawód', items: ['a – przed spółgłoską w wymowie: a cup, a university', 'an – przed samogłoską w wymowie: an animal, an hour'] },
+          { title: 'the', kolor: 3, text: 'rzecz znana, wspomniana lub jedyna', items: ['the sun, the best, the first', 'the USA, the Vistula'] },
+          { title: '— bez przedimka', kolor: 5, text: 'posiłki, sporty, języki, większość krajów', items: ['have dinner, play football, speak English, Poland'] },
+          { title: 'Niepoliczalne', kolor: 2, text: 'bez a/an i bez liczby mnogiej', items: ['water, money, advice, homework', 'some information, a piece of advice'] },
+        ],
+        bottom: { title: 'Liczba mnoga', items: ['book – books, bus – buses', 'city – cities, knife – knives', 'child – children, foot – feet, mouse – mice'] },
+      },
       flashcards: [
         ['child', 'children (dzieci)'],
         ['man / woman', 'men / women'],
@@ -656,6 +756,19 @@ window.SUBJECTS.push({
         <div class="tip">💡 Po przyimku czasownik ma formę <b>-ing</b>: <i>good at swimming, interested in drawing, tired of waiting</i>.</div>
         <div class="tip">⚠️ Typowe błędy Polaków: <s>listen music</s> → listen <b>to</b> music · <s>wait the bus</s> → wait <b>for</b> the bus · <s>afraid from</s> → afraid <b>of</b> · <s>depend from</s> → depend <b>on</b>.</div>
       `,
+      infographicNote: 'Niebieskie – phrasal verbs, zielone – stałe przyimki; na dole błędy, których unikaj.',
+      infographic: {
+        type: 'karty', kolumny: 1,
+        items: [
+          { title: 'Phrasal verb = nowe znaczenie', kolor: 1, items: ['look – patrzeć', 'look for – szukać', 'look after – opiekować się'] },
+          { title: 'Jeden phrasal verb, kilka znaczeń', kolor: 1, items: ['take off your shoes – zdejmij', 'the plane took off – wystartował', 'pick me up at 5 – odbierz mnie'] },
+          { title: 'it / them – w środku', kolor: 2, items: ['Turn it off. Put it on. Pick them up.', 'ale: look for it, look after them'] },
+          { title: 'Czasownik + przyimek', kolor: 3, text: 'listen to, wait for, depend on, belong to, agree with' },
+          { title: 'Przymiotnik + przyimek', kolor: 3, text: 'good at, interested in, afraid of, proud of, famous for' },
+          { title: 'Po przyimku: -ing', kolor: 5, text: 'good at swimming, tired of waiting' },
+        ],
+        bottom: { title: '⚠️ Typowe błędy', kolor: 2, items: ['listen music ✘ → listen to music ✔', 'wait the bus ✘ → wait for the bus ✔', 'depend from ✘ → depend on ✔'] },
+      },
       flashcards: [
         ['get up / wake up', 'wstawać / budzić się'],
         ['put on', 'zakładać (ubranie)'],
@@ -757,6 +870,18 @@ window.SUBJECTS.push({
         <p><b>so / such … that</b> – tak…, że: <i>It was <b>so</b> cold <b>that</b> we stayed at home. It was <b>such</b> a good film <b>that</b> I watched it twice.</i></p>
         <div class="tip">💡 Sprawdź, czy po luce jest <b>rzeczownik</b>: jest → <b>such</b> / <b>What</b>; nie ma → <b>so</b> / <b>How</b>. Słówka <i>too</i> i <i>enough</i> znajdziesz w dziale „Strona bierna, przyimki, zaimki”.</div>
       `,
+      infographicNote: 'Na górze – czym przysłówek różni się od przymiotnika; niżej: jak go tworzyć, stopniować i gdzie postawić.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: 'Przymiotnik czy przysłówek?', kolor: 4, text: 'jaki? a careful driver\njak? He drives carefully.' },
+        branches: [
+          { title: 'Tworzenie', kolor: 1, items: ['quick → quickly, easy → easily', 'good → well', 'fast, hard, late, early – bez zmian'] },
+          { title: '⚠️ hard ≠ hardly', kolor: 2, text: 'hard – ciężko, hardly – prawie wcale' },
+          { title: 'Stopniowanie', kolor: 5, items: ['fast – faster – the fastest', 'carefully – more carefully – the most carefully', 'well – better – the best', 'badly – worse – the worst'] },
+          { title: 'Miejsce w zdaniu', kolor: 3, items: ['always, often – przed czasownikiem głównym: She often goes…', 'ale po be: They are always late.', 'sposób – na końcu: She speaks English well.'] },
+          { title: 'so, How! czy such, What!?', kolor: 1, items: ['bez rzeczownika: so nice, How nice!', 'z rzeczownikiem: such a nice girl, What a nice day!'] },
+        ],
+      },
       flashcards: [
         ['quick → przysłówek', 'quickly'],
         ['easy → przysłówek', 'easily (-y → -ily)'],
@@ -857,6 +982,19 @@ window.SUBJECTS.push({
         <p><b>to</b>: give, send, show, lend, bring, write · <b>for</b>: buy, make. Gdy rzecz to zaimek (it, them), wybierz drugą wersję: <i>Give <b>it to</b> me. I bought <b>it for</b> her.</i></p>
         <div class="tip">💡 W pierwszej wersji (osoba + rzecz) <b>nie ma przyimka</b>: <i>give me the salt</i>, nie <s>give to me the salt</s>.</div>
       `,
+      infographicNote: 'Niebieskie karty – zaimki, fioletowe – budowa zdania; pomarańczowa – częsty błąd.',
+      infographic: {
+        type: 'karty', kolumny: 1,
+        items: [
+          { title: 'some- / any- / no-', kolor: 1, items: ['some- – twierdzenia, prośby: something', 'any- – pytania, przeczenia: anything', 'no- – przeczenie bez not: I saw nobody.'] },
+          { title: '⚠️ Tylko jedno przeczenie', kolor: 2, items: ['Nobody knows anything. ✔', 'Nobody knows nothing. ✘'] },
+          { title: 'a few, a little ↔ few, little', kolor: 1, items: ['a few, a little – trochę, wystarczy 🙂', 'few, little – mało, za mało 🙁'] },
+          { title: 'another / other / the other', kolor: 1, items: ['another + l. poj.: another cake', 'other + l. mn.: other people', 'the other – ten drugi (z dwóch)'] },
+          { title: 'Podmiot it', kolor: 5, items: ["It's raining. It's 5 o'clock.", "It's difficult to…"] },
+          { title: 'Bezosobowe you = „się”', kolor: 5, items: ['How do you spell it?', "You can't park here."] },
+          { title: 'Dwa dopełnienia', kolor: 5, items: ['give somebody something = give something to somebody', 'buy somebody something = buy something for somebody'] },
+        ],
+      },
       flashcards: [
         ['somebody / someone', 'ktoś'],
         ['something / somewhere', 'coś / gdzieś'],
@@ -924,6 +1062,21 @@ window.SUBJECTS.push({
         </table>
         <div class="tip">💡 <b>What is she like?</b> – pytanie o charakter (She's friendly).<br><b>What does she look like?</b> – pytanie o wygląd (She's tall with dark hair).<br><b>What does she like?</b> – co lubi (She likes music).</div>
       `,
+      infographicNote: 'Lewa kolumna – sytuacja, prawa – co wtedy powiesz.',
+      infographic: {
+        type: 'porownanie',
+        kolumny: [{ title: 'Sytuacja', kolor: 1 }, { title: 'Co powiesz?', kolor: 3 }],
+        wiersze: [
+          { cells: ['Ktoś dziękuje: Thank you!', "You're welcome. Not at all."] },
+          { cells: ['Ktoś przeprasza', "That's OK. Never mind."] },
+          { cells: ['Proponujesz', "How about…? Why don't we…? Let's…"] },
+          { cells: ['Prosisz o pomoc', 'Could you help me, please?'] },
+          { cells: ['Pytasz o pozwolenie', 'Can I / May I open the window?'] },
+          { cells: ['Gratulujesz', 'Congratulations! Well done!'] },
+          { cells: ['Ktoś kicha', 'Bless you!'] },
+        ],
+        bottom: { title: '💡 Trzy podobne pytania', kolor: 4, items: ['What is she like? – charakter', 'What does she look like? – wygląd', 'What does she like? – co lubi'] },
+      },
       flashcards: [
         ['Thank you!', 'You\'re welcome.'],
         ['I\'m sorry I\'m late.', 'That\'s OK. / Never mind.'],
@@ -977,6 +1130,19 @@ window.SUBJECTS.push({
         <div class="tip">💡 Ucz się słów w grupach tematycznych i całych wyrażeń (np. <i>take a photo, do homework, make a mistake</i>).</div>
         <p>W fiszkach jest po ok. 10 słówek do każdego tematu – na odwrocie karty widać, z którego tematu pochodzi słówko. Wybrane słowa i zwroty są na poziomie A2, którego wymaga egzamin.</p>
       `,
+      infographicNote: '13 tematów z podstawy w pięciu grupach; przy każdym temacie – przykładowe słówka z fiszek i ściągi.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: '13 tematów z podstawy', kolor: 4 },
+        branches: [
+          { title: '👤 Ja i ludzie', kolor: 1, items: ['Człowiek: shy, curly hair', 'Życie prywatne: relatives, wedding', 'Miejsce zamieszkania: flat, neighbour'] },
+          { title: '🎒 Szkoła i praca', kolor: 5, items: ['Edukacja: timetable, revise', 'Praca: salary, colleague'] },
+          { title: '🛍️ Na co dzień', kolor: 2, items: ['Żywienie: fry, bill', 'Zakupy i usługi: receipt, refund', 'Zdrowie: sore throat, prescription'] },
+          { title: '✈️ Czas wolny', kolor: 3, items: ['Podróżowanie: luggage, delay', 'Kultura: exhibition, novel', 'Sport: referee, score a goal'] },
+          { title: '🌳 Świat wokół', kolor: 1, items: ['Nauka i technika: charger, password', 'Świat przyrody: pollution, recycle'] },
+        ],
+        bottom: { title: '💡 Ucz się całych wyrażeń', text: 'take a photo, do homework, make a mistake' },
+      },
       flashcards: [
         ['receipt', 'paragon'],
         ['refund', 'zwrot pieniędzy'],
@@ -1242,6 +1408,18 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Wymaganie IX.2 to <b>porównywanie kultur</b>: Amerykanie mają <i>Independence Day</i> 4 lipca, a my – Narodowe Święto Niepodległości 11 listopada. Zauważ podobieństwa i różnice, a przy nazwach świąt i miast pisz wielką literą: <i>Christmas, Easter, Warsaw</i>.</div>
       `,
+      infographicNote: 'U góry – z czego składa się Zjednoczone Królestwo; na dole – inne kraje anglojęzyczne i ich stolice.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { title: 'the United Kingdom (the UK)', kolor: 1, text: 'Great Britain (wyspa) + Northern Ireland\nwaluta: the pound (£)' },
+        branches: [
+          { title: 'England', text: 'Anglia', kolor: 3, items: ['London (też stolica UK)'] },
+          { title: 'Scotland', text: 'Szkocja', kolor: 3, items: ['Edinburgh'] },
+          { title: 'Wales', text: 'Walia', kolor: 3, items: ['Cardiff'] },
+          { title: 'Northern Ireland', text: 'Irlandia Północna', kolor: 5, items: ['Belfast'] },
+        ],
+        bottom: { title: 'Inne kraje', kolor: 4, items: ['Ireland – osobne państwo! Dublin, euro', 'the USA – Washington, D.C.', 'Canada – Ottawa', 'Australia – Canberra (nie Sydney!)', 'New Zealand – Wellington'] },
+      },
       flashcards: [
         ['Cztery części UK', 'England, Scotland, Wales, Northern Ireland'],
         ['Stolica Szkocji', 'Edinburgh'],
@@ -1326,6 +1504,20 @@ window.SUBJECTS.push({
         </table>
         <div class="tip">💡 Sprawdź na końcu: czy odniosłeś się do <b>każdego</b> punktu? Czy użyłeś poprawnych czasów?</div>
       `,
+      infographicNote: 'Czytaj od góry: kolejne części e-maila; na dole – co sprawdzić przed oddaniem.',
+      infographic: {
+        type: 'kroki',
+        top: { title: 'E-mail lub wpis na blogu', kolor: 1, items: ['50–120 wyrazów, 3 podpunkty', 'treść 4 + spójność 2 + zakres 2 + poprawność 2 = 10 pkt'] },
+        items: [
+          { title: '1. Polecenie', kolor: 4, text: 'podkreśl 3 podpunkty – każdy rozwiń (szczegół, powód, przykład)' },
+          { title: '2. Początek', kolor: 1, text: 'Hi Tom, / Hello Anna, / Dear Mark,' },
+          { title: '3. Wstęp', kolor: 1, text: "Thanks for your e-mail. / I'm writing to tell you about…" },
+          { title: '4. Treść', kolor: 5, text: 'po kolei wszystkie punkty polecenia' },
+          { title: '5. Zakończenie', kolor: 1, text: "Write back soon! / See you soon!" },
+          { title: '6. Podpis', kolor: 1, text: 'Love, / Best wishes, + imię z polecenia' },
+        ],
+        bottom: { title: '✅ Na koniec sprawdź', items: ['każdy podpunkt rozwinięty?', 'poprawne czasy?'] },
+      },
       flashcards: [
         ['Początek e-maila do kolegi', 'Hi Tom, / Hello Anna,'],
         ['Podziękowanie za list', 'Thanks for your e-mail.'],

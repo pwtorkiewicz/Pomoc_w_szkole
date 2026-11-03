@@ -38,6 +38,18 @@ window.SUBJECTS.push({
         <h3>Jak pisać o funkcji środka?</h3>
         <p>Na egzaminie nie wystarczy nazwać środka – trzeba napisać, <b>czemu służy</b>: np. „Porównanie podkreśla piękno oczu bohaterki”, „Pytanie retoryczne skłania czytelnika do refleksji”.</p>
       `,
+      infographicNote: 'Pary środków, które łatwo pomylić – a na dole: co napisać o środku na egzaminie.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: 'Łatwo pomylić', text: 'pary środków stylistycznych' },
+        branches: [
+          { title: 'Uosobienie ↔ ożywienie', kolor: 1, items: ['uosobienie – cechy człowieka: „wiatr śpiewa”', 'ożywienie – cechy istoty żywej: „chmury biegną”'] },
+          { title: 'Porównanie ↔ metafora', kolor: 5, items: ['porównanie – ze słowem jak, niby, niczym: „oczy jak gwiazdy”', 'metafora – słowa razem dają nowe znaczenie: „ocean traw”'] },
+          { title: 'Zdrobnienie ↔ zgrubienie', kolor: 3, items: ['zdrobnienie – zmniejsza i ociepla: „piesek”', 'zgrubienie – powiększa, często z niechęcią: „psisko”'] },
+          { title: 'Powtórzenie ↔ anafora', kolor: 4, items: ['powtórzenie – ten sam wyraz, żeby coś podkreślić', 'anafora – powtórzony wyraz na początku kolejnych wersów'] },
+        ],
+        bottom: { title: '💡 Na egzaminie', text: 'Nazwij środek i napisz, czemu służy: „Porównanie podkreśla piękno oczu bohaterki”.', kolor: 2 },
+      },
       flashcards: [
         ['Epitet', 'Określenie rzeczownika, np. „złote słońce”'],
         ['Porównanie', 'Zestawienie za pomocą „jak, niby, niczym”, np. „biały jak śnieg”'],
@@ -114,6 +126,20 @@ window.SUBJECTS.push({
         <div class="tip">⚠️ Jeśli w wypracowaniu w ogóle nie odwołasz się do lektury wskazanej w poleceniu, cała praca dostanie <b>0 punktów</b>. Samo podanie imienia bohatera to za mało – trzeba wykorzystać treść utworu.</div>
         <p>Lektury klas IV–VI są w osobnym dziale. Lista lektur obowiązkowych będzie wydrukowana na początku arkusza egzaminacyjnego.</p>
       `,
+      infographicNote: 'Lewa kolumna to epika (niebieska), prawa – dramat (fioletowy); na dole zasada, o której nie wolno zapomnieć.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { title: 'Lektury kl. VII–VIII', text: 'znaj cały utwór' },
+        branches: [
+          { title: 'Opowieść wigilijna', text: 'Dickens · opowiadanie', kolor: 1, items: ['skąpy Scrooge', 'duch Marleya i trzy duchy → przemiana'] },
+          { title: 'Zemsta', text: 'Fredro · komedia', kolor: 5, items: ['Cześnik i Rejent: spór o mur graniczny', 'miłość Wacława i Klary kończy spór'] },
+          { title: 'Mały Książę', text: 'Saint-Exupéry · baśń filozoficzna', kolor: 1, items: ['Róża, Lis i „oswajanie”', '„Dobrze widzi się tylko sercem”'] },
+          { title: 'Dziady cz. II', text: 'Mickiewicz · dramat romantyczny', kolor: 5, items: ['obrzęd prowadzi Guślarz', 'duchy: lekkie, ciężkie, pośrednie'] },
+          { title: 'Kamienie na szaniec', text: 'Kamiński · literatura faktu', kolor: 1, items: ['Rudy, Alek, Zośka – Szare Szeregi', 'akcja pod Arsenałem – odbicie Rudego'] },
+          { title: 'Balladyna', text: 'Słowacki · tragedia', kolor: 5, items: ['zabija, by zdobyć władzę', 'ginie od pioruna'] },
+        ],
+        bottom: { title: '⚠️ Wypracowanie', text: 'Bez odwołania do lektury wskazanej w poleceniu – 0 pkt za całą pracę.', kolor: 2 },
+      },
       flashcards: [
         ['„Zemsta” – przedmiot sporu', 'Mur graniczny w zamku'],
         ['„Niech się dzieje wola nieba” – kto tak mówi?', 'Rejent Milczek („Zemsta”)'],
@@ -176,6 +202,19 @@ window.SUBJECTS.push({
           <tr><td>Artysta</td><td>Sławomir Mrożek</td><td>Krótkie opowiadanie satyryczne.</td></tr>
         </table>
       `,
+      infographicNote: 'Utwory pogrupowane według autorów; na dole – gdzie bohaterowie innych utworów sięgają po Mickiewicza.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: 'Utwory krótsze i fragmenty' },
+        branches: [
+          { title: 'Adam Mickiewicz', kolor: 1, items: ['„Pan Tadeusz” – epopeja; w części I tylko księgi I, II, IV, X, XI, XII', '„Reduta Ordona” – obrona Warszawy, 1831', '„Świtezianka” – ballada; strzelec łamie przysięgę'] },
+          { title: 'Jan Kochanowski', kolor: 3, items: ['Treny VII i VIII – po śmierci córki Urszulki', 'fraszki – krótkie utwory z puentą'] },
+          { title: 'Henryk Sienkiewicz', kolor: 3, items: ['„Latarnik” – nowela; tułacz Skawiński', '„Quo vadis” – Rzym za Nerona'] },
+          { title: 'Stefan Żeromski', kolor: 3, items: ['„Syzyfowe prace” – rusyfikacja w gimnazjum w Klerykowie'] },
+          { title: 'Sławomir Mrożek', kolor: 3, items: ['„Artysta” – opowiadanie satyryczne'] },
+        ],
+        bottom: { title: '🔗 Mickiewicz w innych utworach', kolor: 1, items: ['Skawiński zaczytany w „Panu Tadeuszu” nie zapala latarni', 'Bernard Zygier recytuje „Redutę Ordona” – budzi patriotyzm uczniów'] },
+      },
       flashcards: [
         ['Pan Tadeusz – które księgi obowiązują?', 'I, II, IV, X, XI, XII'],
         ['Ksiądz Robak', 'Jacek Soplica („Pan Tadeusz”)'],
@@ -230,6 +269,19 @@ window.SUBJECTS.push({
         <p>Kl. IV–VI: <i>Mikołajek</i>, bajki Krasickiego, mity greckie (m.in. o Prometeuszu, Syzyfie, Dedalu i Ikarze), przypowieści biblijne, legendy i baśnie, <i>Rota</i>.<br>
         Wykreślone w 2024 r., ale wolno się do nich odwoływać w latach 2025–2028, m.in.: <i>W pustyni i w puszczy</i>, <i>Katarynka</i>, treny I i V, <i>Żona modna</i>, <i>Śmierć Pułkownika</i>, pozostałe księgi <i>Pana Tadeusza</i>.</p>
       `,
+      infographicNote: 'Każdy wiersz to jedna lektura: po lewej bohaterowie, po prawej ich przeciwnicy.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '⚠️ Egzamin w 2027 r.', text: 'Bezpieczniej znać treść całych lektur, nie tylko fragmenty.' },
+        kolumny: [{ title: 'Bohaterowie', kolor: 3 }, { title: 'Przeciwnicy', kolor: 2 }],
+        wiersze: [
+          { label: 'Akademia Pana Kleksa', cells: ['pan Kleks, Adaś Niezgódka (narrator)', 'golibroda Filip'] },
+          { label: 'Kajko i Kokosz. Szkoła latania', cells: ['Kajko i Kokosz z Mirmiłowa', 'Zbójcerze z Hegemonem'] },
+          { label: 'Lew, czarownica i stara szafa', cells: ['rodzeństwo Pevensie, lew Aslan', 'Biała Czarownica – wieczna zima'] },
+          { label: 'Chłopcy z Placu Broni', cells: ['Boka (wódz), Nemeczek', 'Czerwone Koszule, Feri Acz'] },
+          { label: 'Hobbit, czyli tam i z powrotem', cells: ['Bilbo, Gandalf, Thorin i krasnoludy', 'smok Smaug'] },
+        ],
+      },
       flashcards: [
         ['Adaś Niezgódka', 'Narrator „Akademii Pana Kleksa”'],
         ['Szpak Mateusz', 'Zaczarowany książę („Akademia Pana Kleksa”)'],
@@ -293,6 +345,20 @@ window.SUBJECTS.push({
         <p>To część zdania z imiesłowem przysłówkowym: <i><b>Wróciwszy do domu,</b> zjadłem obiad.</i> Można go zamienić na zdanie złożone: <i>Kiedy wróciłem do domu, zjadłem obiad.</i></p>
         <div class="tip">⚠️ Warunek poprawności: <b>ta sama osoba</b> wykonuje obie czynności. Błędnie: <s>Jadąc tramwajem, padał deszcz.</s> (deszcz nie jechał tramwajem!). Poprawnie: <i>Jadąc tramwajem, patrzyłem na deszcz.</i> Imiesłowowy równoważnik oddzielamy przecinkiem.</div>
       `,
+      infographicNote: 'Lewa kolumna – imiesłowy przymiotnikowe, prawa – przysłówkowe; z przysłówkowego powstaje imiesłowowy równoważnik zdania.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { title: 'Imiesłowy' },
+        branches: [
+          { title: 'Przymiotnikowy czynny', text: '-ący: czytający', kolor: 1 },
+          { title: 'Przysłówkowy współczesny', text: '-ąc: czytając', kolor: 5 },
+          { title: 'Przymiotnikowy bierny', text: '-ny, -ony, -ty: przeczytany', kolor: 1 },
+          { title: 'Przysłówkowy uprzedni', text: '-łszy, -wszy: przeczytawszy', kolor: 5 },
+          { title: '„nie” razem', text: 'niepalący', kolor: 1 },
+          { title: '„nie” osobno', text: 'nie czytając', kolor: 5 },
+        ],
+        bottom: { title: 'Imiesłowowy równoważnik zdania', text: 'Wróciwszy do domu, zjadłem obiad. Obie czynności wykonuje ta sama osoba; oddziel przecinkiem.' },
+      },
       flashcards: [
         ['czytający', 'imiesłów przymiotnikowy czynny'],
         ['przeczytany', 'imiesłów przymiotnikowy bierny'],
@@ -400,6 +466,18 @@ window.SUBJECTS.push({
         </ul>
         <p>Przy zamianie zmienia się osoba czasownika i zaimki, a cudzysłów zastępujemy spójnikiem (<i>że, czy, żeby</i>).</p>
       `,
+      infographicNote: 'Od góry: zdanie czy równoważnik, potem rodzaje zdań złożonych; na dole – przecinek.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        top: { title: 'Zdanie czy równoważnik?', text: 'zdanie ma osobową formę czasownika (Pada deszcz.), równoważnik – nie (Cisza w lesie.)', kolor: 4 },
+        root: { title: 'Zdanie złożone' },
+        branches: [
+          { title: 'Współrzędnie', kolor: 1, items: ['łączne: i, oraz, a, ani, ni', 'rozłączne: lub, albo, czy', 'przeciwstawne: ale, lecz, a, jednak, natomiast', 'wynikowe: więc, zatem, dlatego, toteż'] },
+          { title: 'Podrzędnie', kolor: 5, items: ['podmiotowe: kto? co?', 'orzecznikowe: kim jest? czym jest? jaki jest?', 'przydawkowe: jaki? który? czyj?', 'dopełnieniowe: kogo? czego? co? o czym?…', 'okolicznikowe: gdzie? kiedy? dlaczego? jak?…'] },
+          { title: 'Wielokrotnie złożone', text: 'co najmniej trzy zdania składowe', kolor: 3 },
+        ],
+        bottom: { title: '✏️ Przecinek', text: 'przed: że, który, ponieważ, ale, lecz, więc, dlatego; nie przed pojedynczym: i, oraz, lub, albo', kolor: 2 },
+      },
       flashcards: [
         ['Równoważnik zdania', 'Wypowiedzenie bez osobowej formy czasownika, np. „Cisza w lesie.”'],
         ['Spójniki zdań przeciwstawnych', 'ale, lecz, a, jednak, natomiast'],
@@ -508,6 +586,17 @@ window.SUBJECTS.push({
           <li><b>zestawienie</b> – kilka osobnych wyrazów o jednym znaczeniu: maszyna do szycia</li>
         </ul>
       `,
+      infographicNote: 'Czytaj od góry: do wyrazu podstawowego dodajemy formant i powstaje wyraz pochodny; wyrazy o wspólnym rdzeniu tworzą rodzinę.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { title: 'Wyraz podstawowy', text: 'od niego tworzymy nowy wyraz: dom', kolor: 1 },
+          { title: '+ formant', text: 'cząstka, która tworzy nowy wyraz:', kolor: 2, items: ['przedrostek: przepisać', 'przyrostek: domek', 'przedrostek + przyrostek: podokiennik'] },
+          { title: 'Wyraz pochodny', text: 'domek = podstawa słowotwórcza dom- + formant -ek', kolor: 3 },
+          { title: 'Rodzina wyrazów', text: 'wyrazy o wspólnym rdzeniu: las, lasek, leśnik, zalesić', kolor: 5 },
+        ],
+        bottom: { title: 'Wyrazy złożone', kolor: 4, items: ['złożenie – z wrostkiem -o-, -i-, -y-: długopis', 'zrost – zrośnięte bez zmian: Wielkanoc', 'zestawienie – kilka wyrazów, jedno znaczenie: maszyna do szycia'] },
+      },
       flashcards: [
         ['Formant', 'Cząstka tworząca nowy wyraz (przedrostek, przyrostek)'],
         ['Podstawa słowotwórcza', 'Część wyrazu pochodnego wspólna z wyrazem podstawowym'],
@@ -608,6 +697,20 @@ window.SUBJECTS.push({
           <li><b>Zapożyczenia</b> – wyrazy przejęte z innych języków: <i>komputer, weekend</i>.</li>
         </ul>
       `,
+      infographicNote: 'Gałęzie pokazują, jak różnie może znaczyć wyraz; na dole – wskazówka na egzamin.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: 'Znaczenie wyrazów' },
+        branches: [
+          { title: 'Dosłowne ↔ przenośne', kolor: 1, items: ['złoty pierścionek – ze złota', 'złote serce – dobroć'] },
+          { title: 'Wyraz wieloznaczny', text: 'znaczenie podpowiada kontekst: ostry nóż, ostry zakręt, ostry ból', kolor: 1 },
+          { title: 'Frazeologizm', text: 'utrwalone połączenie o znaczeniu przenośnym', kolor: 5, items: ['syzyfowa praca – daremny trud', 'pięta achillesowa – słaby punkt', 'wziąć nogi za pas – uciec'] },
+          { title: 'Relacje między wyrazami', kolor: 3, items: ['synonimy: mądry – inteligentny', 'antonimy: wesoły – smutny', 'homonimy: zamek (budowla, w drzwiach)'] },
+          { title: 'Treść ↔ zakres', text: 'bogatsza treść = węższy zakres: jamnik ma bogatszą treść, pies – szerszy zakres', kolor: 4 },
+          { title: 'Neutralne ↔ wartościujące', text: 'mieszkanie – mieszkanko (+) – nora (–)', kolor: 2 },
+        ],
+        bottom: { title: '💡 Na egzaminie', text: 'Co znaczy wyraz w tym tekście? Sprawdź kontekst: u Lema „fraszka” to drobiazg, coś łatwego.' },
+      },
       flashcards: [
         ['mieć muchy w nosie', 'być w złym humorze'],
         ['obiecywać gruszki na wierzbie', 'obiecywać coś niemożliwego'],
@@ -710,6 +813,18 @@ window.SUBJECTS.push({
         </table>
         <p>Wyjątki: czasowniki, które bez „nie” nie istnieją, piszemy razem: <i>nienawidzić, niepokoić, niedowidzieć</i>.</p>
       `,
+      infographicNote: 'U góry: głoska a litera; w środku – na którą sylabę od końca pada akcent; na dole – pisownia „nie”.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        top: { title: 'Głoska ≠ litera', text: 'chleb: 5 liter, 4 głoski [xlep] – „ch” to jedna głoska, „b” na końcu brzmi jak [p]', kolor: 4 },
+        root: { title: 'Akcent', text: 'na którą sylabę od końca?' },
+        branches: [
+          { title: 'Przedostatnia', text: 'zwykle: szko-ła, ksią-żka', kolor: 3 },
+          { title: 'Trzecia od końca', kolor: 2, items: ['wyrazy greckie i łacińskie: ma-te-MA-ty-ka', '1. i 2. os. lm czasu przeszłego: BY-li-śmy'] },
+          { title: 'Czwarta od końca', kolor: 2, items: ['1. i 2. os. lm trybu przypuszczającego: zro-BI-li-by-śmy'] },
+        ],
+        bottom: { title: '„nie” – razem czy osobno?', kolor: 1, items: ['razem: nieprzyjaciel, niemiły, niepalący, niedobrze', 'osobno: nie wiem, nie wiedząc, nie lepszy, nie pięć', 'wyjątki – razem: nienawidzić, niepokoić'] },
+      },
       flashcards: [
         ['Akcent w języku polskim', 'Zwykle na przedostatnią sylabę'],
         ['matematyka – akcent', 'ma-te-MA-ty-ka (3. sylaba od końca)'],
@@ -791,6 +906,20 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Na egzaminie za ortografię możesz dostać 2 pkt (najwyżej 1 błąd), a za interpunkcję 1 pkt (najwyżej 9 błędów). Zostaw sobie kilka minut na sprawdzenie wypracowania.</div>
       `,
+      infographicNote: 'Zielone – przecinek stawiamy, pomarańczowe – nie stawiamy; niebieskie – ortografia, fioletowe – wielka i mała litera.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { title: 'Poprawny zapis' },
+        branches: [
+          { title: 'Przecinek – tak', kolor: 3, items: ['przed: że, bo, który, ale, więc', 'z obu stron wtrącenia', 'przy wołaczu: Aniu, chodź tu!', 'i chleb, i mleko'] },
+          { title: 'Przecinek – nie', kolor: 2, items: ['przed pojedynczym: i, oraz, lub, albo, ani, czy', 'biały jak śnieg', 'między podmiotem a orzeczeniem'] },
+          { title: 'ó czy u?', kolor: 1, items: ['ó ↔ o, e, a: stół – stołu', '-ów, -ówka: Kraków', 'u: -uje, -unek, -usz'] },
+          { title: 'rz czy ż?', kolor: 1, items: ['rz ↔ r: morze – morski', 'ż ↔ g, dz, z, s, h: może – mogę'] },
+          { title: 'Wielką literą', kolor: 5, items: ['Polak, Ślązak', 'Morze Bałtyckie', 'Boże Narodzenie'] },
+          { title: 'Małą literą', kolor: 5, items: ['poniedziałek, maj', 'warszawianin', 'polski'] },
+        ],
+        bottom: { title: '💡 Na egzaminie', text: 'ortografia: 2 pkt (najwyżej 1 błąd), interpunkcja: 1 pkt (najwyżej 9 błędów)' },
+      },
       flashcards: [
         ['Przecinek stawiamy przed…', 'że, żeby, aby, bo, ponieważ, który, gdy, jeśli, ale, lecz, więc, dlatego'],
         ['Bez przecinka przed pojedynczym…', 'i, oraz, lub, albo, ani, czy'],
@@ -935,6 +1064,19 @@ window.SUBJECTS.push({
         <h3>Inne formy wypowiedzi z podstawy</h3>
         <p>recenzja, podanie, CV, list motywacyjny, przemówienie, wywiad, rozprawka; streszczenie i parafraza tekstu. Elementy każdej formy – zob. dział <a href="#/s/polski/t/formy-uzytkowe">„Formy wypowiedzi: od ogłoszenia do CV”</a>.</p>
       `,
+      infographicNote: 'U góry style; niżej porównuj w poziomie: ta sama cecha w języku mówionym i pisanym.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: 'Style – gdzie ich używamy?', kolor: 5, items: ['potoczny – rozmowy z bliskimi, SMS', 'urzędowy – podanie, wniosek, regulamin', 'naukowy – podręcznik, encyklopedia', 'publicystyczny – artykuły, felietony', 'artystyczny – literatura piękna'] },
+        kolumny: [{ title: 'Język mówiony', kolor: 2 }, { title: 'Język pisany', kolor: 1 }],
+        wiersze: [
+          { label: 'Jak powstaje?', cells: ['na bieżąco, spontanicznie', 'przemyślany, można go poprawić'] },
+          { label: 'Odbiorca', cells: ['zwykle obok, może dopytać', 'czyta później, nie może dopytać'] },
+          { label: 'Co pomaga?', cells: ['intonacja, gesty, mimika', 'interpunkcja, akapity, układ tekstu'] },
+          { label: 'Zdania i słowa', cells: ['krótkie, powtórzenia, wyrazy potoczne', 'pełne, poprawne zdania, staranne słownictwo'] },
+        ],
+        bottom: { title: '💡 Zapamiętaj', text: 'SMS-y i czaty są pisane, ale mają wiele cech języka mówionego.' },
+      },
       flashcards: [
         ['Styl urzędowy', 'Oficjalny, schematyczny – podanie, regulamin'],
         ['Styl naukowy', 'Precyzyjny, terminy – podręcznik'],
@@ -1115,6 +1257,19 @@ window.SUBJECTS.push({
         </table>
         <div class="tip">💡 Zamieniając zdanie złożone na pojedyncze, zastąp zdanie podrzędne <b>jedną częścią zdania</b> – często rzeczownikiem utworzonym od czasownika: <i>wrócić → po powrocie, przyjść → przyjście</i>. Sens musi zostać ten sam. Zamiana na imiesłowowy równoważnik zdania – zob. dział „Części mowy i imiesłowy”.</div>
       `,
+      infographicNote: 'U góry pułapka z przypadkami; w środku cztery związki wyrazów; na dole – cel i budowa wypowiedzenia to dwie różne sprawy.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        top: { title: '„Kogo?” – D. czy B.?', kolor: 4, items: ['nie ma kogo? – dopełniacz', 'widzę kogo? – biernik', 'po przeczeniu: mam czas → nie mam czasu'] },
+        root: { title: 'Związki wyrazów', text: 'nadrzędny → podrzędny: brat (jaki?) młodszy' },
+        branches: [
+          { title: 'Związek główny', text: 'podmiot + orzeczenie: brat czyta', kolor: 1 },
+          { title: 'Związek zgody', text: 'podrzędny odmienia się z nadrzędnym: młodszy brat – młodszego brata', kolor: 3 },
+          { title: 'Związek rządu', text: 'nadrzędny narzuca stały przypadek: szukam kluczy, pomagam mamie', kolor: 5 },
+          { title: 'Związek przynależności', text: 'wyraz nieodmienny przylega: czyta szybko, chcę czytać', kolor: 2 },
+        ],
+        bottom: { title: 'Cel ≠ budowa', text: '„Zamknij okno!” jest rozkazujące i jest zdaniem pojedynczym.' },
+      },
       flashcards: [
         ['Siedem przypadków', 'mianownik, dopełniacz, celownik, biernik, narzędnik, miejscownik, wołacz'],
         ['Celownik – pytania', 'komu? czemu?'],
@@ -1254,6 +1409,19 @@ window.SUBJECTS.push({
         </table>
         <div class="tip">⚠️ W przykładowym zadaniu informatora CKE na streszczenie trzeba było podać <b>temat</b> tekstu i <b>to, co na ten temat powiedziano</b>, zachowując <b>właściwy poziom uogólnienia</b> (bez drobnych szczegółów). Odpowiedź złożona w całości z fragmentów przepisanych z tekstu dostaje 0 pkt.</div>
       `,
+      infographicNote: 'Porównuj w poziomie zaproszenie i ogłoszenie; na dole – jak oceniano przykładowe zadania w informatorze CKE.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: 'Na egzaminie: 3 pkt', text: '2 pkt za treść i formę, 1 pkt za poprawność' },
+        kolumny: [{ title: 'Zaproszenie', kolor: 3 }, { title: 'Ogłoszenie', kolor: 1 }],
+        wiersze: [
+          { label: 'Cel', cells: ['zaprosić na wydarzenie i zachęcić', 'poinformować wielu odbiorców'] },
+          { label: '5 elementów', cells: ['kto zaprasza? kogo? na co? kiedy? gdzie?', 'kto ogłasza? dla kogo? o czym? kiedy? gdzie?'] },
+          { label: 'Język', cells: ['zwroty grzecznościowe; Was, Wam', 'zwięźle i konkretnie'] },
+          { label: 'Typowy błąd', cells: ['brak podpisu, daty albo miejsca', 'brak informacji, kto ogłasza'] },
+        ],
+        bottom: { title: '⚠️ Jak oceniano', kolor: 2, items: ['„zachęć” → podaj 2 argumenty', '5 elementów + 2 argumenty → 2 pkt', '4 elementy → 1 pkt; 3 elementy → 0 pkt', '5 elementów, ale 1 argument → 1 pkt', 'najwyżej 2 błędy → 1 pkt za poprawność'] },
+      },
       flashcards: [
         ['Zaproszenie – 5 elementów', 'kto zaprasza? kogo? na co? kiedy? gdzie?'],
         ['Ogłoszenie – 5 elementów', 'kto ogłasza? dla kogo? o czym? kiedy? gdzie?'],
@@ -1400,6 +1568,17 @@ window.SUBJECTS.push({
         <h3>Teksty nieliterackie</h3>
         <p>Gatunki dziennikarskie: <b>reportaż</b> (relacja z wydarzeń oparta na faktach, z elementami opisu), <b>wywiad</b> (rozmowa w formie pytań i odpowiedzi), <b>artykuł</b> (tekst prasowy na dany temat). Odróżniaj literaturę piękną od tekstów naukowych, popularnonaukowych i publicystycznych. Więcej – w dziale „Teksty nieliterackie i teksty kultury”.</p>
       `,
+      infographicNote: 'Trzy rodzaje literackie: w każdym cechy i gatunki z przykładami lektur; na dole ballada, która łączy wszystkie trzy.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: 'Rodzaje literackie' },
+        branches: [
+          { title: '📖 Epika', text: 'narrator, fabuła, zwykle proza', kolor: 1, items: ['nowela – „Latarnik”', 'epopeja – „Pan Tadeusz”', 'też: powieść, opowiadanie, baśń, legenda, mit'] },
+          { title: '💬 Liryka', text: 'podmiot liryczny, uczucia i przeżycia, zwykle wiersz', kolor: 4, items: ['fraszka, tren, hymn, pieśń, sonet'] },
+          { title: '🎭 Dramat', text: 'do wystawienia: dialogi, didaskalia, akty i sceny', kolor: 5, items: ['komedia – „Zemsta”', 'tragedia – „Balladyna”', 'dramat romantyczny'] },
+        ],
+        bottom: { title: 'Ballada = synkretyzm', text: 'łączy cechy liryki, epiki i dramatu, np. „Świtezianka”' },
+      },
       flashcards: [
         ['Didaskalia', 'Tekst poboczny w dramacie – wskazówki dla aktorów i reżysera'],
         ['Podmiot liryczny', '„Ja” mówiące w utworze lirycznym (to nie zawsze autor!)'],
@@ -1521,6 +1700,19 @@ window.SUBJECTS.push({
         </ul>
         <p>Przykład rymów parzystych – „Pan Tadeusz”, księga I (brzmienie za informatorem CKE): „Śród takich pól przed laty, nad brzegiem <b>ruczaju</b>, / Na pagórku niewielkim, we brzozowym <b>gaju</b>, / Stał dwór szlachecki, z drzewa, lecz <b>podmurowany</b>; / Świeciły się z daleka pobielane <b>ściany</b>”.</p>
       `,
+      infographicNote: 'Od świata przedstawionego do szczegółów: kto mówi, kto działa, jak biegnie akcja; na dole – o czym utwór i nad czym każe myśleć.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: 'Świat przedstawiony', text: 'bohaterowie, wydarzenia, czas i miejsce – fikcja literacka' },
+        branches: [
+          { title: 'Kto opowiada?', kolor: 1, items: ['narracja 1-os.: narrator-bohater mówi „ja” (Adaś Niezgódka)', 'narracja 3-os.: „on, ona, oni”', 'w wierszu: podmiot liryczny – nie zawsze autor'] },
+          { title: 'Bohaterowie', kolor: 3, items: ['główny – w centrum akcji: Bilbo', 'drugoplanowi – Gandalf, Thorin'] },
+          { title: 'Wątki', kolor: 5, items: ['główny: spór o mur („Zemsta”)', 'poboczny: miłość Wacława i Klary'] },
+          { title: 'Napięcie i zakończenie', kolor: 2, items: ['punkt kulminacyjny – największe napięcie', 'puenta – zaskakujące zakończenie'] },
+          { title: 'Wiersz', kolor: 4, items: ['wers – linijka; strofa – grupa wersów', 'rymy parzyste aabb, przeplatane abab'] },
+        ],
+        bottom: { title: 'Tematyka ≠ problematyka', text: 'o czym jest utwór – a nad czym każe się zastanowić' },
+      },
       flashcards: [
         ['Świat przedstawiony', 'Bohaterowie, wydarzenia, czas i miejsce akcji'],
         ['Fikcja literacka', 'Świat wymyślony przez autora, nawet jeśli przypomina prawdziwy'],
@@ -1657,6 +1849,20 @@ window.SUBJECTS.push({
         <h3>Nawiązania w kulturze popularnej</h3>
         <p>Filmy, komiksy, piosenki i gry często korzystają z <b>tradycyjnych wątków</b>: mitów, Biblii, baśni, legend. Przykład: „Percy Jackson i bogowie olimpijscy” Ricka Riordana nawiązuje do mitologii greckiej; wiele filmów opowiada na nowo historię Kopciuszka. Szukając nawiązania, zapytaj: <i>jaką znaną historię, postać albo motyw (np. walka dobra ze złem, wędrówka, przemiana bohatera) to przypomina?</i></p>
       `,
+      infographicNote: 'U góry fakt i opinia; w środku cel każdego tekstu (niebieskie – przekazują, pomarańczowe – przekonują); na dole perswazja a manipulacja.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        top: { title: 'Fakt czy opinia?', text: 'fakt da się sprawdzić; opinia to ocena – „moim zdaniem”, słowa wartościujące', kolor: 4 },
+        root: { title: 'Tekst nieliteracki', text: 'jaki ma cel?' },
+        branches: [
+          { title: 'Informacyjny', text: 'przekazać wiadomość: kto? co? gdzie? kiedy?', kolor: 1 },
+          { title: 'Popularnonaukowy', text: 'przystępnie wyjaśnić wiedzę', kolor: 1 },
+          { title: 'Naukowy', text: 'przedstawić wyniki badań – dla specjalistów', kolor: 1 },
+          { title: 'Publicystyczny', text: 'skomentować bieżące sprawy, przekonać', kolor: 2 },
+          { title: 'Reklamowy', text: 'zachęcić do kupna: slogan, obietnice', kolor: 2 },
+        ],
+        bottom: { title: 'Perswazja ≠ manipulacja', text: 'perswazja przekonuje jawnie, manipulacja – w ukryty, nieuczciwy sposób', kolor: 3 },
+      },
       flashcards: [
         ['Fakt', 'Informacja, którą da się sprawdzić'],
         ['Opinia', 'Czyjś sąd lub ocena; sygnały: „moim zdaniem”, słowa wartościujące'],
@@ -1776,6 +1982,21 @@ window.SUBJECTS.push({
         <h3>Aforyzm</h3>
         <p><b>Aforyzm</b> – krótka, zwięzła i błyskotliwa myśl (zwykle jedno zdanie) o życiu, ludziach, świecie. Często zaskakuje grą słów albo ironią i zmusza do zastanowienia. Ma <b>znanego autora</b> – tym różni się od ludowego, anonimowego przysłowia. Przykłady napisane do ćwiczenia: <i>„Najdłużej trwają chwile, na które czekamy.”</i>, <i>„Łatwo mieć zdanie, gdy nie ma się wątpliwości.”</i></p>
       `,
+      infographicNote: 'Czytaj od góry – siedem pytań po kolei to plan analizy każdego wiersza.',
+      infographic: {
+        type: 'kroki',
+        top: { title: '💡 Liczy się metoda', text: 'zadania nie sprawdzają, czy znasz wiersz' },
+        items: [
+          { title: '1. Kto mówi?', text: 'podmiot liryczny: „ja”, „my” czy się ukrywa' },
+          { title: '2. Do kogo?', text: 'adresat: ty, wy, apostrofa' },
+          { title: '3. W jakiej sytuacji?', text: 'sytuacja liryczna: gdzie, kiedy, w jakich okolicznościach' },
+          { title: '4. Co widzę?', text: 'obrazy poetyckie – pobudzają wyobraźnię' },
+          { title: '5. Jakimi środkami i po co?', text: 'środek stylistyczny + jego funkcja' },
+          { title: '6. Jak jest zbudowany?', text: 'wersy, strofy, rymy; wiersz wolny – bez stałej liczby sylab' },
+          { title: '7. O czym i po co?', text: 'temat, problematyka, nastrój, przesłanie' },
+        ],
+        bottom: { title: 'Konteksty', text: 'biograficzny, historyczny, kulturowy – wspierają czytanie, nie zastępują go' },
+      },
       flashcards: [
         ['Sytuacja liryczna', 'Gdzie, kiedy i w jakich okolicznościach mówi podmiot liryczny'],
         ['Adresat', 'Osoba lub rzecz, do której zwraca się podmiot liryczny'],
@@ -1884,6 +2105,19 @@ window.SUBJECTS.push({
         </ul>
         <p>Pamiętaj: <b>przykład to nie argument</b>. Argument uzasadnia tezę, a przykład (np. z lektury) go ilustruje.</p>
       `,
+      infographicNote: 'Wybierasz jedną z dwóch form – porównuj w poziomie; na dole błędy, za które cała praca dostaje 0 pkt.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: 'Wypracowanie: 20 pkt', text: 'jeden z dwóch tematów, co najmniej 200 wyrazów (część I – 25 pkt)', kolor: 1 },
+        kolumny: [{ title: 'Opowiadanie', kolor: 3 }, { title: 'Rozprawka / przemówienie', kolor: 5 }],
+        wiersze: [
+          { label: 'Temat', cells: ['twórczy', 'argumentacyjny'] },
+          { label: 'Na 5 pkt (kryterium 2)', cells: ['co najmniej 6 elementów twórczych', 'pogłębiona, uporządkowana argumentacja'] },
+          { label: 'Co wykorzystać?', cells: ['dialog, opis, zwrot akcji, puenta…', 'teza, argumenty z przykładami'] },
+          { label: 'Lektura', cells: ['treść wykorzystana twórczo', 'przykład ilustruje argument'] },
+        ],
+        bottom: { title: '⚠️ 0 pkt za całą pracę', kolor: 2, items: ['zła forma – 0 pkt w kryterium 1', 'brak odwołania do lektury wskazanej w poleceniu'] },
+      },
       flashcards: [
         ['Czas egzaminu z polskiego', '150 minut'],
         ['Punkty: część I / wypracowanie', '25 pkt / 20 pkt (razem 45)'],

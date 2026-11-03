@@ -67,6 +67,20 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Najlepszy sposób na ortografię: <b>odmień wyraz lub znajdź wyraz pokrewny</b>. Gdy to nie pomaga – sprawdź w słowniku ortograficznym.</div>
       `,
+      infographicNote: 'Nie wiesz, jak napisać wyraz? Odmień go albo znajdź wyraz pokrewny – gałęzie pokazują, co wtedy usłyszysz.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        top: { icon: '🔊', title: 'Głoska i litera', text: 'Głoskę słyszysz i wymawiasz, literę piszesz.', kolor: 4 },
+        root: { icon: '🔄', title: 'Odmień wyraz', text: 'albo znajdź wyraz pokrewny' },
+        branches: [
+          { title: 'Piszesz ó', text: 'gdy wymienia się na o, e, a: stół – stoły, pióro – pierze' },
+          { title: 'Piszesz rz', text: 'gdy wymienia się na r: morze – morski' },
+          { title: 'Piszesz ż', text: 'gdy wymienia się na g, h, z, s, dz: odważny – odwaga' },
+          { title: 'Piszesz ch', text: 'gdy wymienia się na sz: mucha – musze' },
+          { title: 'Głoska na końcu wyrazu', text: 'mówimy [chlep], a piszemy chleb, bo chleba' },
+        ],
+        bottom: { title: '💡 Nie pomaga?', text: 'Sprawdź w słowniku ortograficznym.', kolor: 5 },
+      },
       flashcards: [
         ['Głoska a litera', 'Głoskę słyszymy i wymawiamy, literę piszemy'],
         ['Samogłoski', 'a, ą, e, ę, i, o, ó, u, y'],
@@ -203,6 +217,20 @@ window.SUBJECTS.push({
         </table>
         <p>W wierszu linijka to <b>wers</b>, a kilka wersów razem to <b>zwrotka</b> (strofa).</p>
       `,
+      infographicNote: 'U góry – utwór; gałęzie – kto go pisze, kto w nim opowiada i z czego się składa.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { icon: '📚', title: 'Utwór', text: 'np. baśń, opowiadanie, powieść, wiersz' },
+        branches: [
+          { title: '✍️ Autor', text: 'prawdziwa osoba, która napisała utwór', kolor: 5 },
+          { title: '🗣️ Narrator', text: 'opowiada o wydarzeniach w opowiadaniu, baśni czy powieści', kolor: 5 },
+          { title: '🎤 Podmiot mówiący', text: '„ja”, które mówi w wierszu', kolor: 5 },
+          { title: '🌍 Świat przedstawiony', items: ['czas – kiedy?', 'miejsce – gdzie?', 'bohaterowie – kto?', 'wydarzenia – co się dzieje?'], kolor: 1 },
+          { title: '🔗 Fabuła', text: 'ciąg wydarzeń ułożonych po kolei', kolor: 1 },
+          { title: 'Realistyczny czy fantastyczny?', items: ['realistyczny – mogłoby się zdarzyć naprawdę', 'fantastyczny – czary, smoki, mówiące zwierzęta'], kolor: 3 },
+        ],
+        bottom: { title: '💡 Zapamiętaj', text: 'Narrator to nie autor! Autor wymyśla narratora tak samo jak bohaterów.', kolor: 4 },
+      },
       flashcards: [
         ['Świat przedstawiony', 'Czas, miejsce, bohaterowie i wydarzenia w utworze'],
         ['Fabuła', 'Ciąg wydarzeń w utworze, ułożonych po kolei'],
@@ -345,6 +373,19 @@ window.SUBJECTS.push({
         </table>
         <div class="tip">💡 Nie wiesz, jaka to część mowy? Zadaj pytanie! <i>Kto? co?</i> – rzeczownik, <i>co robi?</i> – czasownik, <i>jaki?</i> – przymiotnik, <i>ile?</i> – liczebnik, <i>jak?</i> – przysłówek.</div>
       `,
+      infographicNote: 'Niebieskie – części mowy odmienne i to, jak się odmieniają; żółte – nieodmienne.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { icon: '🔤', title: 'Części mowy' },
+        branches: [
+          { title: 'Odmienne', text: 'zmieniają końcówkę: kot – kota – kotem', items: ['rzeczownik – kto? co?', 'czasownik – co robi?', 'przymiotnik – jaki?', 'liczebnik – ile? który z kolei?', 'zaimek – zastępuje inne wyrazy'], kolor: 1 },
+          { title: 'Rzeczownik się odmienia', items: ['liczba: kot – koty', 'rodzaj: ten, ta, to', '7 przypadków: mama, mamy, mamie…'], kolor: 1 },
+          { title: 'Czasownik się odmienia', items: ['osoba: czytam, czytasz, czyta', 'czas: czytałem, czytam, przeczytam', 'tryb: czytam, czytaj!, czytałbym'], kolor: 1 },
+          { title: 'Przymiotnik się stopniuje', text: 'dobry – lepszy – najlepszy', kolor: 1 },
+          { title: 'Nieodmienne', text: 'zawsze ta sama forma', items: ['przysłówek – jak? kiedy? gdzie?', 'przyimek – przed rzeczownikiem: na, w, pod', 'spójnik – łączy: i, a, ale, bo'], kolor: 4 },
+        ],
+        bottom: { title: '💡 Nie wiesz, jaka to część mowy?', text: 'Zadaj pytanie: kto? co? co robi? jaki? ile? jak?' },
+      },
       flashcards: [
         ['Rzeczownik', 'Nazywa osoby, zwierzęta, rzeczy, miejsca; pytania: kto? co?'],
         ['Czasownik', 'Nazywa czynności i stany; pytania: co robi? co się z nim dzieje?'],
@@ -478,6 +519,21 @@ window.SUBJECTS.push({
         <p><b>Opinia</b> to twoje zdanie o czymś. Zawsze ją <b>uzasadnij</b>, czyli powiedz dlaczego.</p>
         <p><i>Moim zdaniem</i> / <i>Uważam, że</i> ta książka jest ciekawa, <i>ponieważ</i> / <i>bo</i> / <i>dlatego że</i> ma zaskakujące zakończenie.</p>
       `,
+      infographicNote: 'Każda gałąź to inna forma wypowiedzi; strzałki → pokazują, w jakiej kolejności piszesz.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { icon: '✍️', title: 'Co piszesz?' },
+        branches: [
+          { title: '🗒️ Notatka', text: 'punkty, tabela albo mapa myśli', kolor: 4 },
+          { title: '📋 Plan odtwórczy', text: 'wydarzenia w punktach, w kolejności z tekstu; same zdania albo same równoważniki zdań', kolor: 1 },
+          { title: '📖 Opowiadanie', text: 'wstęp (kto? gdzie? kiedy?) → rozwinięcie (wydarzenia po kolei) → zakończenie', kolor: 1 },
+          { title: '🔍 Opis przedmiotu', text: 'nazwa i ogólny wygląd → szczegóły → do czego służy → opinia', kolor: 3 },
+          { title: '✉️ List', text: 'miejscowość i data → zwrot do adresata → treść → pozdrowienia i podpis', kolor: 5 },
+          { title: '📧 E-mail', text: 'adres odbiorcy i temat → zwrot → krótka treść → pozdrowienia i podpis', kolor: 5 },
+          { title: '💬 Opinia', text: 'twoje zdanie + uzasadnienie: bo, ponieważ, dlatego że', kolor: 2 },
+        ],
+        bottom: { title: '💡 Akapit', text: 'Każdą nową część zaczynasz od nowej linii, z wcięciem.', kolor: 4 },
+      },
       flashcards: [
         ['Notatka', 'Krótki zapis najważniejszych informacji: punkty, tabela, mapa myśli'],
         ['Mapa myśli', 'Temat w środku, wokół gałęzie z najważniejszymi informacjami'],
@@ -626,6 +682,20 @@ window.SUBJECTS.push({
         </table>
         <p>Wyrazy w słowniku są ułożone <b>alfabetycznie</b>. Wiele słowników jest dostępnych także w internecie.</p>
       `,
+      infographicNote: 'Porównuj parami – w każdym rzędzie dwa pojęcia, które łatwo pomylić.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { icon: '🔤', title: 'Wyrazy i ich znaczenie' },
+        branches: [
+          { title: 'Synonimy', text: 'znaczą prawie to samo: duży – wielki', kolor: 3 },
+          { title: 'Antonimy', text: 'znaczą coś przeciwnego: wysoki – niski', kolor: 2 },
+          { title: 'Zdrobnienie', text: 'coś małego albo miłego: piesek', kolor: 3 },
+          { title: 'Zgrubienie', text: 'coś dużego albo niemiłego: psisko', kolor: 2 },
+          { title: 'Dosłownie', text: 'złoty pierścionek – zrobiony ze złota', kolor: 1 },
+          { title: 'W przenośni', text: 'złote serce – ktoś jest bardzo dobry', kolor: 5 },
+        ],
+        bottom: { title: '🧩 Związek frazeologiczny', text: 'utarte połączenie wyrazów o znaczeniu przenośnym: mieć muchy w nosie – być obrażonym', kolor: 5 },
+      },
       flashcards: [
         ['Synonim', 'Wyraz bliskoznaczny: duży – wielki'],
         ['Antonim', 'Wyraz przeciwstawny: wysoki – niski'],
@@ -751,6 +821,17 @@ window.SUBJECTS.push({
           <li>informacje z internetu sprawdzaj w kilku źródłach.</li>
         </ul>
       `,
+      infographicNote: 'Czytaj od góry: po co mówisz → kto mówi → co przekazuje → kto odbiera.',
+      infographic: {
+        type: 'kroki',
+        top: { icon: '🎯', title: 'Intencja', text: 'cel: po co mówisz – zapytać, poprosić, podziękować…', kolor: 5 },
+        items: [
+          { icon: '🗣️', title: 'Nadawca', text: 'przekazuje wiadomość – mówi lub pisze', kolor: 1 },
+          { icon: '✉️', title: 'Komunikat', text: 'słowny albo niewerbalny: mimika, gesty, postawa ciała', kolor: 4 },
+          { icon: '👂', title: 'Odbiorca', text: 'słucha lub czyta; uważnie: patrzy, nie przerywa, dopytuje', kolor: 1 },
+        ],
+        bottom: { title: '💡 Pamiętaj', items: ['słowa dobierz do odbiorcy: Cześć! albo Dzień dobry!', 'fakt da się sprawdzić, opinia to czyjeś zdanie'], kolor: 3 },
+      },
       flashcards: [
         ['Komunikacja', 'Przekazywanie informacji, myśli i uczuć innym ludziom'],
         ['Nadawca', 'Ten, kto przekazuje wiadomość (mówi lub pisze)'],
@@ -873,6 +954,18 @@ window.SUBJECTS.push({
           <tr><td><b>nawias</b></td><td>dodatkowe wyjaśnienie</td><td>Mój brat (ma 6 lat) chodzi do zerówki.</td></tr>
         </table>
       `,
+      infographicNote: 'Czytaj od góry – tak krok po kroku badasz wypowiedzenie.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '❓', title: 'Po co jest?', text: 'informuje (.), pyta (?), wyraża polecenie (. lub !) albo silne uczucia (!)', kolor: 4 },
+          { icon: '🔎', title: 'Szukaj orzeczenia', text: 'jest czasownik (co robi?) – zdanie; nie ma – równoważnik zdania', kolor: 1 },
+          { icon: '🔢', title: 'Ile orzeczeń?', text: 'jedno – zdanie pojedyncze; dwa lub więcej – złożone', kolor: 1 },
+          { icon: '👤', title: 'Kto to robi?', text: 'tak znajdziesz podmiot (kto? co?)', kolor: 5 },
+          { icon: '🎨', title: 'Określenia', text: 'jaki? jak? – dokładniej opisują podmiot i orzeczenie', kolor: 5 },
+        ],
+        bottom: { title: 'Przykład: Mały pies głośno szczeka.', text: 'orzeczenie: szczeka, podmiot: pies, określenia: mały, głośno', kolor: 3 },
+      },
       flashcards: [
         ['Wypowiedzenie oznajmujące', 'Informuje o czymś; kończy się kropką'],
         ['Wypowiedzenie pytające', 'Pyta o coś; kończy się znakiem zapytania'],
@@ -991,6 +1084,18 @@ window.SUBJECTS.push({
         <h3>Czytanie na głos</h3>
         <p>Czytając na głos, pokaż nastrój głosem: smutny tekst – wolniej i ciszej, wesoły – żywiej. Rób <b>pauzy</b> po kropkach, zmieniaj <b>ton</b> w pytaniach i wykrzyknieniach, a w dialogu – zmieniaj głos dla każdej postaci.</p>
       `,
+      infographicNote: 'Czytaj od góry: czym jest wywiad, jak go przygotować i zbudować; na dole – zapis dialogu.',
+      infographic: {
+        type: 'kroki',
+        top: { icon: '🎤', title: 'Wywiad', text: 'rozmowa dziennikarza z rozmówcą, zapisana lub nagrana dla innych', kolor: 5 },
+        items: [
+          { icon: '📝', title: 'Przygotowanie', text: 'temat, informacje o rozmówcy, lista pytań, zgoda na nagranie', kolor: 4 },
+          { icon: '🏷️', title: 'Tytuł i wstęp', text: 'krótko: kim jest rozmówca', kolor: 1 },
+          { icon: '❓', title: 'Pytania i odpowiedzi', text: 'każde od nowej linijki; pytania otwarte – nie na „tak” albo „nie”', kolor: 1 },
+          { icon: '🙏', title: 'Podziękowanie', text: 'na koniec dziękujesz rozmówcy', kolor: 1 },
+        ],
+        bottom: { title: '✏️ Zapis dialogu', text: 'Każda wypowiedź od nowej linijki i od myślnika:\n– Chodźmy do parku – zaproponował Kuba.', kolor: 3 },
+      },
       flashcards: [
         ['Dialog', 'rozmowa co najmniej dwóch osób'],
         ['Monolog', 'dłuższa wypowiedź jednej osoby (np. do siebie)'],
@@ -1119,6 +1224,20 @@ window.SUBJECTS.push({
           <li>Na zakończenie, gdy aktorzy się kłaniają, nagródź ich <b>brawami</b>.</li>
         </ul>
       `,
+      infographicNote: 'W środku – przedstawienie; niebieskie gałęzie – kto je tworzy, żółta – kto ogląda; na dole – tekst sztuki.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { icon: '🎭', title: 'Przedstawienie', text: 'aktorzy grają na żywo przed widzami' },
+        branches: [
+          { title: 'Reżyser', text: 'kieruje przedstawieniem, prowadzi próby', kolor: 1 },
+          { title: 'Aktorzy', text: 'grają role – postacie na scenie', kolor: 1 },
+          { title: 'Scenograf', text: 'projektuje wygląd sceny, dekoracje', kolor: 1 },
+          { title: 'Charakteryzator', text: 'makijaż, peruki, przyprawione brody', kolor: 1 },
+          { title: 'Sufler', text: 'podpowiada aktorom tekst', kolor: 1 },
+          { title: 'Widzowie', text: 'oglądają spektakl, na koniec – brawa', kolor: 4 },
+        ],
+        bottom: { title: '📜 Tekst sztuki', items: ['tekst główny – kwestie, które mówią aktorzy', 'tekst poboczny – wskazówki autora; aktorzy go nie wypowiadają'], kolor: 5 },
+      },
       flashcards: [
         ['Reżyser', 'kieruje przedstawieniem, prowadzi próby z aktorami'],
         ['Scenograf / scenografia', 'projektuje wygląd sceny / dekoracje'],
@@ -1236,6 +1355,20 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Filmy o panu Kleksie różnią się od książki (np. imiona postaci). Na lekcji i w quizie liczy się książka.</div>
       `,
+      infographicNote: 'W środku – pan Kleks, wokół – postacie i ich związek z nim (zielone – Adaś i jego przyjaciel Mateusz, fioletowe – dorośli, pomarańczowa – lalka, która niszczy); na dole – zakończenie.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        top: { icon: '🏫', title: 'Akademia pana Kleksa', text: 'przy ulicy Czekoladowej; tylko chłopcy o imionach na literę A', kolor: 4 },
+        root: { icon: '🧙', title: 'Ambroży Kleks', text: 'założyciel i nauczyciel Akademii' },
+        branches: [
+          { title: 'Adaś Niezgódka', text: 'uczeń Akademii, narrator – mówi „ja”', kolor: 3 },
+          { title: 'szpak Mateusz', text: 'mieszka u pana Kleksa; królewicz, który zgubił guzik od czapki', kolor: 3 },
+          { title: 'Filip', text: 'golibroda; dostarcza piegi, zrobił lalkę Alojzego', kolor: 5 },
+          { title: 'doktor Paj-Chi-Wo', text: 'chiński uczony; jego nauki to „sekrety” pana Kleksa', kolor: 5 },
+          { title: 'Alojzy Bąbel', text: 'mechaniczna lalka, która wszystko psuje i niszczy', kolor: 2 },
+        ],
+        bottom: { title: '🔚 Zakończenie', items: ['Alojzy niszczy tabliczki z sekretami – pan Kleks traci moc', 'pan Kleks zamienia się w guzik', 'dzięki niemu Mateusz odzyskuje ludzką postać', 'Akademia znika – bajka się kończy'], kolor: 3 },
+      },
       flashcards: [
         ['„Akademia pana Kleksa” – autor', 'Jan Brzechwa (1946)'],
         ['Gatunek', 'powieść fantastyczna dla dzieci, z elementami baśni'],
@@ -1355,6 +1488,21 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 „Mikołajek” to utwór <b>realistyczny</b> – nie ma w nim czarów, a wszystko mogłoby się zdarzyć naprawdę.</div>
       `,
+      infographicNote: 'W środku – Mikołajek, wokół – koledzy z klasy (zielony – najlepszy przyjaciel) i dorośli (fioletowe); na dole – skąd humor.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { icon: '👦', title: 'Mikołajek', text: 'narrator – mówi „ja” i „my”' },
+        branches: [
+          { title: 'Alcest', text: 'najlepszy przyjaciel, ciągle je', kolor: 3 },
+          { title: 'Ananiasz', text: 'prymus i pupilek pani, nosi okulary', kolor: 1 },
+          { title: 'Euzebiusz', text: 'najsilniejszy, daje kolegom „w nos”', kolor: 1 },
+          { title: 'Kleofas', text: 'najgorszy uczeń, często stoi w kącie', kolor: 1 },
+          { title: 'Rufus', text: 'syn policjanta, ma gwizdek', kolor: 1 },
+          { title: 'Gotfryd', text: 'ma bogatego tatę', kolor: 1 },
+          { title: 'Dorośli', items: ['rodzice – mama i tata', 'pani – nauczycielka', 'Rosół – szkolny opiekun'], kolor: 5 },
+        ],
+        bottom: { title: '😄 Skąd humor?', text: 'Opowiada dziecko i nie zawsze rozumie dorosłych – czytelnik widzi więcej.', kolor: 4 },
+      },
       flashcards: [
         ['„Mikołajek” – autorzy', 'René Goscinny (tekst) i Jean-Jacques Sempé (rysunki)'],
         ['Forma utworu', 'zbiór krótkich opowiadań z tymi samymi bohaterami'],
@@ -1470,6 +1618,20 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Film i serial „Magiczne drzewo” różnią się od książki. W quizie liczy się książka.</div>
       `,
+      infographicNote: 'U góry – magiczne krzesło; w środku – Kuki i ludzie wokół niego (zielone – rodzina, żółta – opiekunka, pomarańczowa – oszust); na dole – jak to się kończy.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        top: { icon: '🪑', title: 'Czerwone krzesło', text: 'z drewna Magicznego Drzewa; spełnia życzenia osoby, która na nim siedzi – dosłownie', kolor: 5 },
+        root: { icon: '👦', title: 'Kuki (10 lat)', text: 'wyłowił krzesło z rzeki' },
+        branches: [
+          { title: 'Tosia (11 lat)', text: 'siostra', kolor: 3 },
+          { title: 'Filip (12 lat)', text: 'najstarszy brat, świetnie pływa', kolor: 3 },
+          { title: 'Rodzice', text: 'muzycy; wyjeżdżają na rok do pracy na statku', kolor: 3 },
+          { title: 'Ciotka Maryla', text: 'bogata, skąpa opiekunka; zamieniona w małą Wiki', kolor: 4 },
+          { title: 'Max Rozmus', text: 'oszust, który chce zdobyć krzesło', kolor: 2 },
+        ],
+        bottom: { title: '🏠 Jak to się kończy?', items: ['dzieci jadą do Kopenhagi po rodziców', 'rodzina znów jest razem', 'dom odlatuje, krzesło wypada przez okno – otwarte zakończenie'], kolor: 3 },
+      },
       flashcards: [
         ['„Magiczne drzewo. Czerwone krzesło” – autor', 'Andrzej Maleszka (2009)'],
         ['Gatunek', 'powieść fantastyczna'],

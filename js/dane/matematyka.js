@@ -60,6 +60,19 @@ window.SUBJECTS.push({
         <h3>Ile jest takich liczb?</h3>
         <p>Gdy pytanie dotyczy niewielkiego zakresu, po prostu wypisz wszystkie liczby. Np. liczby dwucyfrowe, które są kwadratami: 16, 25, 36, 49, 64, 81 – jest ich 6.</p>
       `,
+      infographicNote: 'Najpierw rozłóż obie liczby na czynniki pierwsze, potem porównuj NWD i NWW w poziomie.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: 'Najpierw: rozkład na czynniki pierwsze', text: 'dziel przez 2, 3, 5, 7… aż zostanie 1\n84 = 2 · 2 · 3 · 7\n90 = 2 · 3 · 3 · 5', kolor: 4 },
+        kolumny: [{ title: 'NWD', kolor: 1 }, { title: 'NWW', kolor: 5 }],
+        wiersze: [
+          { label: 'co to jest?', cells: ['największy wspólny dzielnik', 'najmniejsza wspólna wielokrotność'] },
+          { label: 'jak z rozkładu?', cells: ['iloczyn czynników wspólnych', 'rozkład jednej liczby + brakujące czynniki drugiej'] },
+          { label: 'dla 84 i 90', cells: ['2 · 3 = 6', '2 · 2 · 3 · 7 · 3 · 5 = 1260'], bold: true },
+          { label: 'proste przykłady', cells: ['NWD(12, 18) = 6', 'NWW(4, 6) = 12'], bold: true },
+        ],
+        bottom: { title: '💡 Cechy podzielności przez…', items: ['2 – ostatnia cyfra parzysta', '3 – suma cyfr podzielna przez 3', '5 – ostatnia cyfra 0 lub 5', '9 – suma cyfr podzielna przez 9'], kolor: 3 },
+      },
       flashcards: [
         ['Cecha podzielności przez 3', 'Suma cyfr podzielna przez 3'],
         ['Cecha podzielności przez 4', 'Dwie ostatnie cyfry tworzą liczbę podzielną przez 4'],
@@ -464,6 +477,20 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 W wyrażeniach z ułamkami zwykłymi i dziesiętnymi zamień wszystko na jeden rodzaj ułamków (często łatwiej na zwykłe) i pilnuj kolejności działań. Uwaga na minus: −1/2 + 3/4 = −2/4 + 3/4 = 1/4.</div>
       `,
+      infographicNote: 'Każdy wiersz to jedno działanie: po lewej – jak je wykonać, po prawej – przykład.',
+      infographic: {
+        type: 'porownanie',
+        kolumny: [{ title: 'Jak?', kolor: 1 }, { title: 'Przykład', kolor: 4 }],
+        wiersze: [
+          { label: 'zwykłe: dodawanie i odejmowanie', cells: ['wspólny mianownik, potem dodaj/odejmij liczniki', '1/4 + 2/3 = 3/12 + 8/12 = 11/12'] },
+          { label: 'zwykłe: mnożenie', cells: ['licznik · licznik, mianownik · mianownik', '2/3 · 9/10 = 18/30 = 3/5'] },
+          { label: 'zwykłe: dzielenie', cells: ['pomnóż przez odwrotność dzielnika', '3/4 : 3/8 = 3/4 · 8/3 = 2'] },
+          { label: 'liczby mieszane', cells: ['zamień na ułamki niewłaściwe', '1 1/2 · 2 2/3 = 3/2 · 8/3 = 4'] },
+          { label: 'dziesiętne: mnożenie', cells: ['po przecinku tyle cyfr, ile razem w czynnikach', '0,3 · 0,04 = 0,012'] },
+          { label: 'dziesiętne: dzielenie', cells: ['przesuń przecinek w obu liczbach, aż dzielnik będzie naturalny', '2,4 : 0,06 = 240 : 6 = 40'] },
+        ],
+        bottom: { title: '💡 Ułamki zwykłe i dziesiętne razem', text: 'zamień wszystko na jeden rodzaj ułamków i pilnuj kolejności działań' },
+      },
       flashcards: [
         ['Skracanie ułamka', 'Dziel licznik i mianownik przez tę samą liczbę: 12/18 = 2/3'],
         ['Rozszerzanie ułamka', 'Mnóż licznik i mianownik przez tę samą liczbę: 3/5 = 9/15'],
@@ -653,6 +680,20 @@ window.SUBJECTS.push({
         <p>Gdy jedna wielkość rośnie tyle razy, ile druga (np. cena i liczba sztuk). <b>Podział proporcjonalny</b>: 60 zł w stosunku 1 : 2 → 3 części po 20 zł → 20 zł i 40 zł.</p>
         <div class="tip">💡 Podwyżka o 10% i potem obniżka o 10% <b>nie</b> daje ceny początkowej: 100 → 110 → 99.</div>
       `,
+      infographicNote: 'Każdy wiersz to jedno pytanie: po lewej wzór, po prawej przykład; na dole dwie częste pułapki.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '1% = 1/100 = 0,01', kolor: 4 },
+        kolumny: [{ title: 'Wzór', kolor: 1 }, { title: 'Przykład', kolor: 3 }],
+        wiersze: [
+          { label: 'p% liczby a', cells: ['p/100 · a', '20% z 150 = 0,2 · 150 = 30'], bold: true },
+          { label: 'podwyżka o p%', cells: ['a · (1 + p/100)', '80 zł + 25% = 80 · 1,25 = 100 zł'], bold: true },
+          { label: 'obniżka o p%', cells: ['a · (1 − p/100)', '80 zł − 25% = 80 · 0,75 = 60 zł'], bold: true },
+          { label: 'jakim procentem a jest b?', cells: ['b/a · 100%', '15 z 60 → 15/60 = 25%'], bold: true },
+          { label: 'liczba, której p% to b', cells: ['b : (p/100)', '20% liczby to 30 → 30 : 0,2 = 150'], bold: true },
+        ],
+        bottom: { title: '⚠️ Pułapki', items: ['4% → 5%: wzrost o 1 punkt procentowy, ale aż o 25%', 'podwyżka o 10%, potem obniżka o 10%: 100 → 110 → 99, nie 100'], kolor: 2 },
+      },
       flashcards: [
         ['p% liczby a', 'p/100 · a'],
         ['Podwyżka o p%', 'a · (1 + p/100)'],
@@ -861,6 +902,20 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Kwadraty do zapamiętania: 11² = 121, 12² = 144, 13² = 169, 14² = 196, 15² = 225.</div>
       `,
+      infographicNote: 'Po lewej reguła, po prawej przykład; na dole – co robimy z pierwiastkami.',
+      infographic: {
+        type: 'porownanie',
+        kolumny: [{ title: 'Reguła', kolor: 1 }, { title: 'Przykład', kolor: 3 }],
+        wiersze: [
+          { label: 'mnożenie potęg o tej samej podstawie', cells: ['aⁿ · aᵐ = aⁿ⁺ᵐ', '2³ · 2⁴ = 2⁷'], bold: true },
+          { label: 'dzielenie potęg o tej samej podstawie', cells: ['aⁿ : aᵐ = aⁿ⁻ᵐ', '2⁵ : 2³ = 2² = 4'], bold: true },
+          { label: 'potęga potęgi', cells: ['(aⁿ)ᵐ = aⁿ·ᵐ', '(3²)³ = 3⁶'], bold: true },
+          { label: 'potęga iloczynu', cells: ['(a · b)ⁿ = aⁿ · bⁿ', '(2 · 5)³ = 2³ · 5³'], bold: true },
+          { label: 'pierwiastek iloczynu', cells: ['√(a · b) = √a · √b', '√(16 · 9) = 4 · 3 = 12'], bold: true },
+          { label: 'notacja wykładnicza (1 ≤ a < 10)', cells: ['a · 10ⁿ', '3 400 000 = 3,4 · 10⁶'], bold: true },
+        ],
+        bottom: { title: '💡 Przekształcenia pierwiastków', items: ['wyłączanie czynnika: √50 = √(25 · 2) = 5√2', 'włączanie liczby: 3√2 = √(9 · 2) = √18', 'szacowanie: 11² = 121, 12² = 144, więc 11 < √137 < 12'], kolor: 4 },
+      },
       flashcards: [
         ['aⁿ · aᵐ', 'aⁿ⁺ᵐ'],
         ['aⁿ : aᵐ', 'aⁿ⁻ᵐ'],
@@ -1032,6 +1087,18 @@ window.SUBJECTS.push({
         <h3>Przekształcanie wzorów</h3>
         <p>Z <span class="f">P = a · h / 2</span> wyznaczamy h: mnożymy przez 2 → 2P = a · h → <span class="f">h = 2P / a</span></p>
       `,
+      infographicNote: 'Czytaj od góry: cztery kroki rozwiązywania na przykładzie jednego równania.',
+      infographic: {
+        type: 'kroki',
+        top: { title: 'Równanie: 2(x + 3) = x − 1', kolor: 4 },
+        items: [
+          { title: '1. Pozbądź się nawiasów i ułamków', text: '2x + 6 = x − 1', kolor: 1 },
+          { title: '2. Niewiadome na jedną stronę, liczby na drugą', text: 'przenosząc, zmieniasz znak: 2x − x = −1 − 6, czyli x = −7', kolor: 1 },
+          { title: '3. Podziel przez współczynnik przy x', text: 'gdy wyjdzie np. 3x = 18 → x = 6', kolor: 1 },
+          { title: '4. Sprawdź wynik', text: 'podstaw x = −7: 2 · (−7 + 3) = −8 i −7 − 1 = −8 ✓', kolor: 3 },
+        ],
+        bottom: { title: '⚠️ Uważaj w wyrażeniach', items: ['minus przed nawiasem zmienia znaki: −(x − 4) = −x + 4', 'mnożenie sum: (x + 2)(x + 3) = x² + 5x + 6'], kolor: 2 },
+      },
       flashcards: [
         ['3x − 7 = 11', 'x = 6'],
         ['(x + 2)(x + 3)', 'x² + 5x + 6'],
@@ -1195,6 +1262,17 @@ window.SUBJECTS.push({
         </table>
         <p>Kwadrat jest jednocześnie prostokątem i rombem.</p>
       `,
+      infographicNote: 'Ten sam trójkąt nazywasz na dwa sposoby: według kątów (lewa gałąź) i według boków (prawa).',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        top: { title: 'Kąty', items: ['ostry – mniej niż 90°', 'prosty – dokładnie 90°', 'rozwarty – więcej niż 90°, ale mniej niż 180°'], kolor: 4 },
+        root: { title: 'Trójkąt', text: 'suma kątów 180°, więc nie ma dwóch kątów prostych ani dwóch rozwartych', kolor: 3 },
+        branches: [
+          { title: 'według kątów', items: ['ostrokątny – wszystkie kąty ostre', 'prostokątny – jeden kąt prosty', 'rozwartokątny – jeden kąt rozwarty'], kolor: 1 },
+          { title: 'według boków', items: ['równoramienny – dwa boki równe', 'równoboczny – wszystkie boki równe, każdy kąt 60°'], kolor: 5 },
+        ],
+        bottom: { title: '💡 Trójkąt równoramienny', items: ['kąty przy podstawie są równe', 'kąt przy podstawie α → kąt między ramionami 180° − 2α', 'kąt między ramionami β → kąt przy podstawie (180° − β) : 2', 'kąt prosty lub rozwarty – tylko między ramionami'], kolor: 3 },
+      },
       flashcards: [
         ['Prosta / półprosta / odcinek', 'Prosta – bez końców, półprosta – jeden koniec, odcinek – dwa końce'],
         ['Proste prostopadłe (a ⊥ b)', 'Przecinają się pod kątem prostym'],
@@ -1496,6 +1574,21 @@ window.SUBJECTS.push({
         </table>
         <div class="tip">💡 Bok kwadratu rośnie 10 razy, a pole – 100 razy. Dlatego między sąsiednimi jednostkami pola mnożysz przez 100, a nie przez 10.</div>
       `,
+      infographicNote: 'Na górze twierdzenie Pitagorasa, niżej wzory na pola: trójkąty – pomarańczowe, czworokąty – niebieskie, koło – fioletowe.',
+      infographic: {
+        type: 'karty', kolumny: 2,
+        top: { title: 'Twierdzenie Pitagorasa: a² + b² = c²', text: 'c – przeciwprostokątna (naprzeciw kąta prostego)', items: ['trójki: 3, 4, 5 · 6, 8, 10 · 5, 12, 13'], kolor: 4 },
+        items: [
+          { title: 'trójkąt', text: 'P = a · h / 2', kolor: 2 },
+          { title: 'trójkąt równoboczny', text: 'P = a²√3 / 4\nh = a√3 / 2', kolor: 2 },
+          { title: 'prostokąt', text: 'P = a · b', kolor: 1 },
+          { title: 'kwadrat', text: 'P = a² (lub d²/2)\nd = a√2', kolor: 1 },
+          { title: 'równoległobok', text: 'P = a · h', kolor: 1 },
+          { title: 'romb', text: 'P = d₁ · d₂ / 2', kolor: 1 },
+          { title: 'trapez', text: 'P = (a + b) · h / 2', kolor: 1 },
+          { title: 'koło', text: 'P = πr²\nobwód 2πr', kolor: 5 },
+        ],
+      },
       flashcards: [
         ['Twierdzenie Pitagorasa', 'a² + b² = c²'],
         ['Przekątna kwadratu', 'a√2'],
@@ -1875,6 +1968,20 @@ window.SUBJECTS.push({
         <p>Przy jednym pełnym obrocie koło roweru przejeżdża drogę równą długości swojego okręgu. <span class="f">liczba obrotów = droga : długość okręgu</span> (w tych samych jednostkach!).</p>
         <div class="tip">💡 Pułapki: średnica zamiast promienia we wzorze na pole; πr² to nie (πr)² – do kwadratu podnosisz tylko r; długość w cm, pole w cm².</div>
       `,
+      infographicNote: 'Porównuj w poziomie: okrąg to sam brzeg (ma długość), koło – brzeg z wnętrzem (ma pole).',
+      infographic: {
+        type: 'porownanie',
+        top: { title: 'Promień, średnica, cięciwa', items: ['średnica d = 2r', 'średnica to najdłuższa cięciwa – przechodzi przez środek'], kolor: 4 },
+        kolumny: [{ title: 'okrąg', kolor: 1 }, { title: 'koło', kolor: 3 }],
+        wiersze: [
+          { label: 'co to jest?', cells: ['sam brzeg', 'brzeg z wnętrzem'] },
+          { label: 'co liczymy?', cells: ['długość', 'pole'] },
+          { label: 'wzór', cells: ['L = 2πr = πd', 'P = πr²'], bold: true },
+          { label: 'od wyniku do promienia', cells: ['L = 20π → 2r = 20 → r = 10', 'P = 49π → r² = 49 → r = 7'] },
+          { label: 'jednostka, np.', cells: ['cm', 'cm²'], bold: true },
+        ],
+        bottom: { title: '⚠️ Pułapki', items: ['πr² to nie (πr)² – do kwadratu podnosisz tylko r', 'do wzoru na pole wstaw promień, nie średnicę', 'wynik zostaw z π (np. 10π cm); gdy trzeba przybliżyć – π ≈ 3,14'], kolor: 2 },
+      },
       flashcards: [
         ['Okrąg a koło', 'Okrąg – sam brzeg (ma długość), koło – brzeg z wnętrzem (ma pole)'],
         ['Promień', 'Odcinek łączący środek z punktem okręgu'],
@@ -2114,6 +2221,18 @@ window.SUBJECTS.push({
         <p>Zapisz liczby literami: kolejne liczby naturalne to n, n + 1, n + 2; liczba dwucyfrowa o cyfrach a i b to 10a + b. Przykład: n + (n + 1) + (n + 2) = 3n + 3 = 3(n + 1) – to wielokrotność 3, więc suma trzech kolejnych liczb naturalnych zawsze dzieli się przez 3.</p>
         <div class="tip">💡 Sprawdzenie na kilku przykładach <b>nie jest</b> dowodem – pokazuje tylko, że teza działa w tych przypadkach. Dowód musi działać dla wszystkich.</div>
       `,
+      infographicNote: 'Zielone cechy wystarczą do przystawania, pomarańczowa (kkk) – nie; na dole kolejność zapisu dowodu.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { title: '△ABC ≡ △DEF', text: 'odpowiednio równe boki i kąty – jeden nałożysz na drugi', kolor: 1 },
+        branches: [
+          { title: 'bbb ✓', text: 'trzy boki', kolor: 3 },
+          { title: 'bkb ✓', text: 'dwa boki i kąt MIĘDZY nimi', kolor: 3 },
+          { title: 'kbk ✓', text: 'bok i dwa kąty PRZY tym boku', kolor: 3 },
+          { title: 'kkk ✗', text: 'nie wystarczy: ten sam kształt, różna wielkość', kolor: 2 },
+        ],
+        bottom: { title: '✍️ Jak zapisać dowód', items: ['rysunek z oznaczonymi danymi', 'co wiesz i co masz wykazać', 'każdy krok z uzasadnieniem: „bo…”, „z cechy bkb”', 'wniosek, który jest tezą zadania', 'przykład to nie dowód – dowód działa dla wszystkich przypadków'], kolor: 5 },
+      },
       flashcards: [
         ['Trójkąty przystające', 'Mają odpowiednio równe wszystkie boki i kąty – można je na siebie nałożyć'],
         ['Cecha bbb', 'Trzy boki jednego trójkąta równe trzem bokom drugiego'],
@@ -2355,6 +2474,19 @@ window.SUBJECTS.push({
         <h3>Punkty kratowe na prostej AB</h3>
         <p>Policz, o ile przesuwasz się z A do B (w prawo i w górę). Jeśli obie liczby mają wspólny dzielnik, podziel je przez niego – dostaniesz najkrótszy krok między punktami kratowymi prostej. Np. A = (0, 1), B = (6, 5): przesunięcie 6 w prawo i 4 w górę, krok 3 w prawo i 2 w górę → punkty (3, 3), (6, 5), (9, 7), a w drugą stronę (−3, −1).</p>
       `,
+      infographicNote: 'Od góry: jak czytać punkt, co liczysz dla odcinka AB, a na dole – zbiory na osi liczbowej.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        top: { title: 'Punkt (x, y)', text: 'najpierw x (oś pozioma), potem y (oś pionowa) – (2, 3) to inny punkt niż (3, 2)', kolor: 4 },
+        root: { title: 'Odcinek AB', text: 'A = (x₁, y₁)\nB = (x₂, y₂)', kolor: 1 },
+        branches: [
+          { title: 'Środek S – średnie współrzędnych', text: 'S = ((x₁ + x₂)/2, (y₁ + y₂)/2)', kolor: 1 },
+          { title: 'Drugi koniec B, gdy znasz A i S', text: 'od S idziesz tak samo jak od A do S: A = (−1, 4), S = (2, 1) → B = (5, −2)', kolor: 1 },
+          { title: 'Długość: odcinek poziomy lub pionowy', text: 'odejmij współrzędne: A = (−2, 3), B = (4, 3) → |AB| = 4 − (−2) = 6', kolor: 3 },
+          { title: 'Długość: odcinek ukośny (Pitagoras)', text: '|AB| = √((x₂ − x₁)² + (y₂ − y₁)²)\nA = (−3, −1), B = (5, 5) → √(64 + 36) = 10', kolor: 3 },
+        ],
+        bottom: { title: 'Oś liczbowa', items: ['x > a, x < a – kółko niezamalowane (a nie należy)', 'x ≥ a, x ≤ a – kółko zamalowane (a należy)', '> i ≥ – linia w prawo, < i ≤ – w lewo'], kolor: 5 },
+      },
       flashcards: [
         ['x ≥ a na osi liczbowej', 'Kółko zamalowane w a, linia w prawo'],
         ['x < a na osi liczbowej', 'Kółko niezamalowane w a, linia w lewo'],
@@ -3329,6 +3461,17 @@ window.SUBJECTS.push({
           <li>Kąty: 50% · 360° = 180°, 30% · 360° = 108°, 20% · 360° = 72° (razem 360°).</li>
         </ol>
       `,
+      infographicNote: 'Czytaj od góry: z danych liczysz procenty, z procentów – kąty wycinków diagramu kołowego.',
+      infographic: {
+        type: 'kroki',
+        top: { title: 'Diagram kołowy: całe koło = 100% = 360°', text: 'kąt wycinka = p% · 360° (1% to 3,6°)', kolor: 4 },
+        items: [
+          { title: '1. Dane', text: '30 uczniów: 15 gra w piłkę nożną, 9 w koszykówkę, 6 w siatkówkę', kolor: 1 },
+          { title: '2. Procenty', text: '15/30 = 50%, 9/30 = 30%, 6/30 = 20%', kolor: 1 },
+          { title: '3. Kąty wycinków', text: '50% · 360° = 180°, 30% · 360° = 108°, 20% · 360° = 72° – razem 360°', kolor: 3 },
+        ],
+        bottom: { title: '💡 Do zapamiętania', items: ['średnia arytmetyczna = suma liczb : ich ilość', 'prawdopodobieństwo = zdarzenia sprzyjające / wszystkie zdarzenia – zawsze od 0 do 1', 'zliczanie możliwości: wypisz wszystkie (lista, tabela)'], kolor: 5 },
+      },
       flashcards: [
         ['Średnia arytmetyczna', 'Suma liczb podzielona przez ich ilość'],
         ['Prawdopodobieństwo', 'zdarzenia sprzyjające / wszystkie zdarzenia'],
@@ -3868,6 +4011,21 @@ window.SUBJECTS.push({
         <h3>Jednostki masy</h3>
         <p><span class="f">1 kg = 100 dag = 1000 g</span>, <span class="f">1 dag = 10 g</span>, <span class="f">1 t = 1000 kg</span>.</p>
       `,
+      infographicNote: 'Niebieskie – ruch, żółte – zamiana jednostek, fioletowe – kalendarz i temperatura; na dole pułapki.',
+      infographic: {
+        type: 'karty', kolumny: 2,
+        items: [
+          { icon: '🚗', title: 'Droga, prędkość, czas', text: 'v = s / t\ns = v · t\nt = s / v', kolor: 1 },
+          { icon: '⚡', title: 'Jednostki prędkości', text: '1 m/s = 3,6 km/h\n72 km/h = 72 : 3,6 = 20 m/s', kolor: 1 },
+          { icon: '🗺️', title: 'Skala 1 : 50 000', text: '1 cm na mapie = 50 000 cm = 500 m w terenie', kolor: 4 },
+          { icon: '⏱️', title: 'Czas', text: '1 h = 60 min\n0,5 h = 30 min\n0,25 h = 15 min', kolor: 4 },
+          { icon: '📏', title: 'Pole i objętość', text: '1 ha = 10 000 m²\n1 km² = 100 ha\n1 dm³ = 1 l', kolor: 4 },
+          { icon: '⚖️', title: 'Masa', text: '1 kg = 100 dag = 1000 g\n1 t = 1000 kg', kolor: 4 },
+          { icon: '📅', title: 'Kalendarz', text: 'rok – 365 dni, przestępny – 366 (luty ma wtedy 29 dni)', kolor: 5 },
+          { icon: '🌡️', title: 'Różnica temperatur', text: 'wyższa − niższa: 3 − (−5) = 8°C', kolor: 5 },
+        ],
+        bottom: { title: '⚠️ Pułapki', items: ['prędkość w km/h → czas w godzinach: 45 min = 0,75 h', 'od 3 do 10 maja włącznie to 8 dni'], kolor: 2 },
+      },
       flashcards: [
         ['Wzór na prędkość', 'v = s / t'],
         ['1 m/s = ? km/h', '3,6 km/h'],

@@ -58,6 +58,20 @@ window.SUBJECTS.push({
           <tr><td><b>biblioteka</b></td><td>gromadzi książki, czasopisma, stare gazety</td></tr>
         </table>
       `,
+      infographicNote: 'Czytaj od góry: historyk zbiera źródła (niebieskie – pisane, zielone – niepisane) i sprawdza, czy można im wierzyć.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        top: { icon: '🕵️', title: 'Historyk – badacz przeszłości', text: 'działa jak detektyw: zbiera ślady przeszłości', kolor: 5 },
+        root: { title: 'Źródła historyczne', text: 'ślady przeszłości', kolor: 4 },
+        branches: [
+          { title: 'Pisane', text: 'mają tekst: kronika, list, dokument', kolor: 1 },
+          { title: 'Materialne', text: 'moneta, narzędzie, budowla, naczynie', kolor: 3 },
+          { title: 'Ikonograficzne', text: 'obraz, fotografia, plakat', kolor: 3 },
+          { title: 'Ustne', text: 'wspomnienia, opowieści z ust do ust', kolor: 3 },
+          { title: 'Audiowizualne', text: 'nagrania dźwięku, filmy', kolor: 3 },
+        ],
+        bottom: { title: '🔍 Czy źródłu można wierzyć?', items: ['Kto je stworzył i kiedy?', 'Czy inne źródła mówią to samo?'], kolor: 2 },
+      },
       flashcards: [
         ['Trzy znaczenia słowa „historia”', 'przeszłość · nauka o przeszłości · opowieść'],
         ['Historyk', 'Badacz przeszłości – opisuje ją na podstawie źródeł'],
@@ -136,6 +150,19 @@ window.SUBJECTS.push({
         </ul>
         <p>Przykład: w legendzie o smoku wawelskim prawdziwe są Kraków i wzgórze Wawel, a smok jest postacią wymyśloną.</p>
       `,
+      infographicNote: 'Czytaj od góry: od najstarszego pokolenia do najmłodszego – tak jak w drzewie genealogicznym.',
+      infographic: {
+        type: 'kroki',
+        top: { icon: '🌳', title: 'Drzewo genealogiczne', text: 'pokazuje rodzinę pokolenie po pokoleniu', kolor: 5 },
+        items: [
+          { title: 'Pradziadkowie', text: 'przodkowie: rodzice babci lub dziadka', kolor: 1 },
+          { title: 'Dziadkowie', text: 'przodkowie – trzecie pokolenie', kolor: 1 },
+          { title: 'Rodzice', text: 'przodkowie – drugie pokolenie', kolor: 1 },
+          { title: 'Ty i twoje rodzeństwo', text: 'jedno pokolenie', kolor: 4 },
+          { title: 'Potomkowie', text: 'dzieci, wnuki, prawnuki', kolor: 3 },
+        ],
+        bottom: { title: '💡 Skąd wiesz o przodkach?', text: 'z pamiątek rodzinnych i z rozmów z dziadkami (źródło ustne)', kolor: 2 },
+      },
       flashcards: [
         ['Przodkowie', 'Członkowie rodziny żyjący przed tobą: rodzice, dziadkowie, pradziadkowie'],
         ['Potomkowie', 'Dzieci, wnuki, prawnuki'],
@@ -216,6 +243,20 @@ window.SUBJECTS.push({
           <li><b>Legenda mapy</b> to objaśnienie znaków i kolorów użytych na mapie. Zawsze zaczynaj od niej!</li>
         </ul>
       `,
+      infographicNote: 'Czytaj od góry: od najdawniejszych lat do najnowszych – przy każdej dacie zobacz, jak liczymy wiek.',
+      infographic: {
+        type: 'os',
+        top: { title: '⏳ Oś czasu', text: 'wydarzenia od najdawniejszych do najnowszych', kolor: 4 },
+        items: [
+          { label: '500 p.n.e.', title: 'Przed naszą erą', text: 'im większa liczba p.n.e., tym dawniej', kolor: 2 },
+          { label: '250 p.n.e.', title: 'III wiek p.n.e.', text: '2 + 1 = 3', kolor: 2 },
+          { label: '1 n.e.', title: 'Początek naszej ery', text: 'po roku 1 p.n.e. od razu rok 1 n.e. – nie było roku zerowego', kolor: 5 },
+          { label: '966', title: 'X wiek', text: '9 + 1 = 10', kolor: 1 },
+          { label: '1410', title: 'XV wiek', text: '14 + 1 = 15', kolor: 1 },
+          { label: '1900', title: 'XIX wiek', text: 'rok kończy się na 00 → pierwsze cyfry', kolor: 1 },
+        ],
+        bottom: { title: '🧮 Ile lat minęło?', items: ['oba lata n.e. → odejmij', 'oba lata p.n.e. → odejmij mniejszą od większej', 'p.n.e. i n.e. → dodaj i odejmij 1'], kolor: 3 },
+      },
       flashcards: [
         ['Wiek (stulecie)', '100 lat'],
         ['Tysiąclecie', '1000 lat = 10 wieków'],
@@ -285,6 +326,18 @@ window.SUBJECTS.push({
         </table>
         <div class="tip">💡 Gwiazd jest zawsze 12 – ta liczba nie zależy od tego, ile państw należy do Unii.</div>
       `,
+      infographicNote: 'Porównuj w poziomie: symbole Polski obok symboli Unii Europejskiej.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: 'Symbole Polski: barwy, godło, hymn', text: 'Godło: biały orzeł w złotej koronie na czerwonym tle.', kolor: 2 },
+        kolumny: [{ title: 'Polska', kolor: 2 }, { title: 'Unia Europejska', kolor: 1 }],
+        wiersze: [
+          { label: 'Flaga', cells: ['biały pas na górze, czerwony na dole', '12 złotych gwiazd w kręgu na niebieskim tle'] },
+          { label: 'Hymn', cells: ['„Mazurek Dąbrowskiego”', '„Oda do radości”'], bold: true },
+          { label: 'Kto go stworzył?', cells: ['słowa: Józef Wybicki', 'muzyka: Ludwig van Beethoven'] },
+        ],
+        bottom: { title: '📅 Święta państwowe', items: ['2 maja – Dzień Flagi', '3 maja – rocznica Konstytucji 3 Maja (1791\u00a0r.)', '11 listopada – niepodległość (1918\u00a0r.)'], kolor: 4 },
+      },
       flashcards: [
         ['Symbole państwowe Polski', 'barwy (biało-czerwone) · godło (biały orzeł) · hymn („Mazurek Dąbrowskiego”)'],
         ['Barwy Polski', 'Biały pas na górze, czerwony na dole'],
@@ -364,6 +417,19 @@ window.SUBJECTS.push({
         <p><b>Wynalezienie pisma</b> historycy uważają za <b>koniec prehistorii</b> i początek historii – pierwszą epoką jest <b>starożytność</b>. Dzięki pismu ludzie mogli zapisywać plony, umowy, prawa, wiedzę i wydarzenia i przekazywać je innym – nawet daleko i po wielu latach. Dziś też pismo jest wszędzie: w zeszycie, książce, SMS-ie i w internecie.</p>
         <div class="tip">💡 Nasze litery to <b>alfabet łaciński</b>: alfabet wymyślili Fenicjanie, przejęli go Grecy, a od nich Rzymianie. Jedna litera = jedna głoska – dużo łatwiej niż 700 hieroglifów!</div>
       `,
+      infographicNote: 'Czytaj od góry: każda zmiana prowadzi do następnej – od koczowników do pisma.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '🏹', title: 'Koczownicy', text: 'wędrują, polują, zbierają dzikie rośliny', kolor: 2 },
+          { icon: '🌾', title: 'Rewolucja neolityczna', text: 'ponad 10 tys. lat temu: uprawa roślin i hodowla', kolor: 4 },
+          { icon: '🏞️', title: 'Osady nad rzekami', text: 'woda do nawadniania, muł użyźnia glebę', kolor: 1 },
+          { icon: '🏺', title: 'Więcej jedzenia', text: 'więcej ludzi; część zostaje rzemieślnikami', kolor: 1 },
+          { icon: '🏛️', title: 'Miasta i państwa', text: 'pierwsze cywilizacje: Mezopotamia i Egipt', kolor: 1 },
+          { icon: '✍️', title: 'Pismo', text: 'ponad 5000 lat temu – koniec prehistorii', kolor: 3 },
+        ],
+        bottom: { title: '💡 Egipt – dar Nilu', text: 'wylewy Nilu zostawiały na polach żyzny muł – były plony', kolor: 5 },
+      },
       flashcards: [
         ['Koczowniczy tryb życia', 'Wędrowanie z miejsca na miejsce; polowanie, łowienie ryb, zbieranie roślin'],
         ['Osiadły tryb życia', 'Mieszkanie na stałe w jednym miejscu; uprawa roli i hodowla zwierząt'],
@@ -456,6 +522,19 @@ window.SUBJECTS.push({
         <p><b>Filozofia</b> po grecku znaczy <b>„umiłowanie mądrości”</b>. Filozofowie zamiast tłumaczyć świat tylko mitami, szukali prawdy, zadając pytania i rozumując. Najsłynniejsi to <b>Sokrates</b> (mawiał: „Wiem, że nic nie wiem”), jego uczeń <b>Platon</b> i uczeń Platona – <b>Arystoteles</b>.</p>
         <div class="tip">💡 Grecy zostawili nam demokrację, igrzyska olimpijskie, teatr, filozofię i mity – i wiele słów: <i>demokracja</i>, <i>polityka</i>, <i>teatr</i>, <i>filozofia</i>. Nawet słowo <i>alfabet</i> pochodzi od dwóch pierwszych liter greckich: <b>alfa</b> i <b>beta</b>.</div>
       `,
+      infographicNote: 'Czytaj od góry: góry i morze ukształtowały Grecję, a poniżej – co zostawili nam Grecy.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        top: { title: '⛰️ Kraj gór i morza 🌊', text: 'góry → wiele miast-państw (polis)\nmorze → żeglarze, kupcy, kolonie', kolor: 2 },
+        root: { title: 'Grecy zostawili nam', kolor: 3 },
+        branches: [
+          { title: 'Demokracja', text: '„władza ludu” – w Atenach głosują obywatele', kolor: 1 },
+          { title: 'Igrzyska', text: 'w Olimpii, co 4 lata; pierwsze w 776\u00a0r.\u00a0p.n.e.', kolor: 1 },
+          { title: 'Teatr', text: 'pod gołym niebem, aktorzy w maskach', kolor: 1 },
+          { title: 'Filozofia', text: '„umiłowanie mądrości”: Sokrates, Platon, Arystoteles', kolor: 1 },
+          { title: 'Mitologia', text: 'mity o bogach z Olimpu i herosach', kolor: 1 },
+        ],
+      },
       flashcards: [
         ['Hellada, Hellenowie', 'Tak starożytni Grecy nazywali swój kraj i siebie'],
         ['Jak góry wpłynęły na Grecję?', 'Podzieliły kraj na małe krainy – powstało wiele miast-państw zamiast jednego państwa'],
@@ -535,6 +614,20 @@ window.SUBJECTS.push({
         </table>
         <div class="tip">💡 Rzymianie czcili wielu bogów podobnych do greckich, ale pod innymi imionami: Zeus = <b>Jowisz</b>, Posejdon = <b>Neptun</b>, Afrodyta = <b>Wenus</b>. Imiona rzymskich bogów noszą dziś niektóre planety: Jowisz, Neptun, Wenus.</div>
       `,
+      infographicNote: 'Czytaj od góry: od założenia miasta przez republikę i cesarstwo do upadku – na dole to, co zostało do dziś.',
+      infographic: {
+        type: 'os',
+        top: { title: '📍 Miasto nad Tybrem', text: 'na Półwyspie Apenińskim (Italia)', kolor: 4 },
+        items: [
+          { label: '753 p.n.e.', title: 'Założenie Rzymu', text: 'legenda: Romulus i Remus, wilczyca', kolor: 5 },
+          { label: '509 p.n.e.', title: 'Republika', text: 'urzędnicy wybierani na rok, na czele dwaj konsulowie', kolor: 1 },
+          { label: '44 p.n.e.', title: 'Zabójstwo Cezara', text: 'wódz, który podbił Galię i został dyktatorem', kolor: 2 },
+          { label: '27 p.n.e.', title: 'Cesarstwo', text: 'Oktawian August – pierwszy cesarz', kolor: 1 },
+          { label: 'II w. n.e.', title: 'Największe imperium', text: 'za cesarza Trajana, wokół Morza Śródziemnego', kolor: 1 },
+          { label: '476 n.e.', title: 'Upadek', text: 'zachodniej części cesarstwa', kolor: 2 },
+        ],
+        bottom: { title: '🎁 Co zostawili nam Rzymianie', text: 'akwedukty, amfiteatry, łuki triumfalne, beton, łacinę, prawo rzymskie', kolor: 3 },
+      },
       flashcards: [
         ['Położenie Rzymu', 'Półwysep Apeniński (Italia), nad rzeką Tyber'],
         ['Legenda o założeniu Rzymu', 'Romulus i Remus, wykarmieni przez wilczycę; tradycyjna data: 753 r. p.n.e.'],
@@ -639,6 +732,18 @@ window.SUBJECTS.push({
           <li>Zasady z dekalogu (np. „nie zabijaj”, „nie kradnij”) i pomoc potrzebującym są obecne w prawie i zwyczajach.</li>
         </ul>
       `,
+      infographicNote: 'Czytaj od góry: skąd wyrosło chrześcijaństwo → wydarzenia po kolei → znaczenie.',
+      infographic: {
+        type: 'os',
+        top: { title: '📜 Wyrosło z judaizmu', text: 'przejęło wiarę w jednego Boga (monoteizm) i dekalog', kolor: 5 },
+        items: [
+          { label: 'I w. n.e.', title: 'Powstanie', text: 'w Palestynie – prowincji imperium rzymskiego', kolor: 1 },
+          { label: '64 r.', title: 'Prześladowania', text: 'Neron obwinia chrześcijan o pożar Rzymu', kolor: 2 },
+          { label: '313 r.', title: 'Edykt mediolański', text: 'Konstantyn Wielki daje wolność wyznania', kolor: 1 },
+          { label: '380 r.', title: 'Religia panująca', text: 'ogłasza ją cesarz Teodozjusz Wielki', kolor: 1 },
+        ],
+        bottom: { title: '✅ Znaczenie', text: 'z małej, prześladowanej grupy – religia całego imperium, później większości Europy', kolor: 3 },
+      },
       flashcards: [
         ['Judaizm', 'Religia Żydów – wiara w jednego Boga; z judaizmu wyrosło chrześcijaństwo'],
         ['Monoteizm', 'Wiara w jednego Boga (przeciwieństwo: politeizm – wiara w wielu bogów)'],
@@ -771,6 +876,19 @@ window.SUBJECTS.push({
           <li><b>samorząd</b> – dziś też mieszkańcy wybierają radę miasta lub gminy.</li>
         </ul>
       `,
+      infographicNote: 'Czytaj od góry: kiedy było średniowiecze, jakie stany tworzyły społeczeństwo i jak senior dawał ziemię wasalom.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        top: { title: '📅 Średniowiecze: 476–1492', text: 'ok. 1000 lat po starożytności (daty umowne)', kolor: 5 },
+        root: { title: 'Stany', text: 'grupy o tych samych prawach i obowiązkach', kolor: 1 },
+        branches: [
+          { title: 'Duchowieństwo', text: 'modlitwa, opieka nad kościołami, nauka', kolor: 1 },
+          { title: 'Rycerstwo', text: 'walka konno i obrona kraju', kolor: 1 },
+          { title: 'Mieszczanie', text: 'rzemiosło i handel w miastach', kolor: 1 },
+          { title: 'Chłopi', text: 'uprawa ziemi – stan najliczniejszy', kolor: 4 },
+        ],
+        bottom: { title: '🪜 Drabina feudalna', text: 'król → możni → rycerze', items: ['senior daje ziemię (lenno)', 'wasal przysięga wierność i pomoc wojskową'], kolor: 2 },
+      },
       flashcards: [
         ['Średniowiecze', 'Epoka od 476 r. (upadek zachodniego cesarstwa rzymskiego) do 1492 r. (Kolumb dopływa do Ameryki) – daty umowne'],
         ['Plemię', 'Wspólnota ludzi z jednego terenu: ten sam język, zwyczaje i wierzenia; sprawy omawiano na wiecu'],
@@ -891,6 +1009,19 @@ window.SUBJECTS.push({
         </table>
         <div class="tip">💡 Pisanych źródeł z czasów Mieszka jest bardzo mało. Dlatego tak ważne są badania archeologów i innych naukowców – a każde źródło trzeba sprawdzać i porównywać z innymi.</div>
       `,
+      infographicNote: 'Czytaj od góry: od państwa Mieszka I do pierwszego króla; pomarańczowe – dwie najważniejsze daty.',
+      infographic: {
+        type: 'os',
+        top: { title: '🛡️ Państwo Piastów', text: 'grody w Wielkopolsce; książę Mieszko I i jego drużyna', kolor: 5 },
+        items: [
+          { label: '965', title: 'Ślub z Dobrawą', text: 'czeska księżniczka – sojusz z Czechami', kolor: 1 },
+          { label: '966', title: 'Chrzest Mieszka I', text: 'Polska wśród chrześcijańskich państw Europy', kolor: 2 },
+          { label: '968', title: 'Pierwsze biskupstwo', text: 'w Poznaniu', kolor: 1 },
+          { label: '1000', title: 'Zjazd gnieźnieński', text: 'Otton III u grobu św. Wojciecha; arcybiskupstwo w Gnieźnie', kolor: 1 },
+          { label: '1025', title: 'Koronacja Bolesława Chrobrego', text: 'pierwszy król – Polska królestwem', kolor: 2 },
+        ],
+        bottom: { title: '🔍 Skąd to wiemy?', text: 'źródeł pisanych jest mało – pomagają archeologia, dendrochronologia, monety, DNA', kolor: 3 },
+      },
       flashcards: [
         ['Gród', 'Osada obronna otoczona wałem z drewna i ziemi, w miejscu trudnym do zdobycia'],
         ['Książę', 'Władca państwa (niższy tytuł niż król); Mieszko I był księciem'],
@@ -1010,6 +1141,20 @@ window.SUBJECTS.push({
         </table>
         <p><b>Dlaczego chronimy zabytki?</b> Są świadkami przeszłości – uczą nas historii. Zniszczonego zabytku nie da się naprawdę odtworzyć. Są ważne dla mieszkańców regionu i przyciągają turystów. Dlatego nie wolno ich niszczyć, np. malować po murach.</p>
       `,
+      infographicNote: 'Czytaj od góry: plan Krzywoustego → co się wydarzyło po kolei → skutki rozbicia.',
+      infographic: {
+        type: 'os',
+        top: { title: '👑 Zasada senioratu', text: 'najstarszy Piast (senior) rządzi w Krakowie, młodsi bracia – w dzielnicach', kolor: 5 },
+        items: [
+          { label: '1138', title: 'Testament Krzywoustego', text: 'podział państwa między synów', kolor: 1 },
+          { label: '1146', title: 'Wygnanie seniora', text: 'Władysław chciał rządzić sam – bracia go wygnali', kolor: 1 },
+          { label: 'ok. 1226', title: 'Krzyżacy w Polsce', text: 'Konrad Mazowiecki sprowadza ich do obrony przed Prusami', kolor: 2 },
+          { label: '1241', title: 'Najazd Mongołów', text: 'pod Legnicą ginie Henryk Pobożny', kolor: 2 },
+          { label: '1308–1309', title: 'Krzyżacy zajmują Pomorze Gdańskie', text: 'od 1309 r. ich stolicą jest Malbork', kolor: 2 },
+          { label: '1320', title: 'Koniec rozbicia', text: 'okres rozbicia dzielnicowego: 1138–1320', kolor: 3 },
+        ],
+        bottom: { title: '⚠️ Skutki rozbicia', items: ['coraz mniejsze, słabe księstwa', 'trudniej obronić się przed sąsiadami i najazdami', 'ale przetrwało poczucie wspólnoty'], kolor: 2 },
+      },
       flashcards: [
         ['Testament Krzywoustego (1138 r.)', 'Podział państwa między synów Bolesława Krzywoustego – początek rozbicia dzielnicowego'],
         ['Rozbicie dzielnicowe', 'Okres 1138–1320, gdy Polska była podzielona na dzielnice i coraz mniejsze księstwa'],
@@ -1106,6 +1251,20 @@ window.SUBJECTS.push({
           <tr><td>Kujawy i ziemia dobrzyńska (1343), Ruś Halicka ze Lwowem, zwierzchnictwo nad Mazowszem</td><td>Pomorze Gdańskie (Krzyżacy), Śląsk (Czechy)</td></tr>
         </table>
       `,
+      infographicNote: 'Czytaj od góry: od zjednoczenia przez Łokietka do końca Piastów na tronie – na dole zmiany granic.',
+      infographic: {
+        type: 'os',
+        top: { title: '🧩 Polska podzielona', text: 'Łokietek, książę kujawski, walczy o zjednoczenie', kolor: 2 },
+        items: [
+          { label: '1320', title: 'Koronacja Łokietka', text: 'w Krakowie – koniec rozbicia dzielnicowego', kolor: 1 },
+          { label: '1331', title: 'Bitwa pod Płowcami', text: 'z Krzyżakami – nierozstrzygnięta', kolor: 2 },
+          { label: '1333', title: 'Kazimierz Wielki królem', text: 'syn Łokietka; woli dyplomację od wojen', kolor: 1 },
+          { label: '1343', title: 'Pokój w Kaliszu', text: 'wracają Kujawy i ziemia dobrzyńska', kolor: 1 },
+          { label: '1364', title: 'Akademia Krakowska', text: 'pierwszy uniwersytet w Polsce', kolor: 1 },
+          { label: '1370', title: 'Koniec Piastów na tronie', text: 'Kazimierz umiera bez syna; królem Ludwik Węgierski', kolor: 5 },
+        ],
+        bottom: { title: '🗺️ Granice: 1333 → 1370', items: ['zyskane: Kujawy, ziemia dobrzyńska, Ruś Halicka ze Lwowem', 'poza granicami: Pomorze Gdańskie, Śląsk'], kolor: 3 },
+      },
       flashcards: [
         ['Władysław Łokietek', 'Książę kujawski, zjednoczył ziemie polskie; koronowany na króla w 1320 r.'],
         ['1320 r.', 'Koronacja Władysława Łokietka w Krakowie – koniec rozbicia dzielnicowego'],

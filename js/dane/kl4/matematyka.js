@@ -131,6 +131,19 @@
           <h3>Szacowanie</h3>
           <p>Zaokrąglij liczby i policz w pamięci: 49 · 21 ≈ 50 · 20 = 1 000. Masz 60 zł i chcesz kupić 3 rzeczy po 19 zł? 19 to prawie 20, a 3 · 20 = 60 – wystarczy (dokładnie 57 zł).</p>
         `,
+        infographicNote: 'Porównuj w poziomie: po lewej dodawanie i odejmowanie, po prawej mnożenie i dzielenie.',
+        infographic: {
+          type: 'porownanie',
+          top: { title: 'Kolejność działań', text: 'nawiasy → potęgi → mnożenie i dzielenie → dodawanie i odejmowanie', kolor: 2 },
+          kolumny: [{ title: 'Dodawanie i odejmowanie', kolor: 1 }, { title: 'Mnożenie i dzielenie', kolor: 5 }],
+          wiersze: [
+            { label: 'Jak nazywa się wynik?', cells: ['suma i różnica', 'iloczyn i iloraz'], bold: true },
+            { label: 'Pytanie w zadaniu', cells: ['„O ile więcej?”\n→ odejmujesz', '„Ile razy więcej?”\n→ dzielisz'] },
+            { label: 'Czy wolno zamienić liczby miejscami?', cells: ['dodawanie – tak,\nodejmowanie – nie', 'mnożenie – tak,\ndzielenie – nie'] },
+            { label: 'Sprytny sposób', cells: ['198 + 57 =\n200 + 57 − 2 = 255', '7 · 13 =\n70 + 21 = 91'] },
+          ],
+          bottom: { title: 'Dzielenie z resztą', text: '17 : 5 = 3 reszty 2, bo 3 · 5 + 2 = 17. Reszta jest zawsze mniejsza od dzielnika.', kolor: 4 },
+        },
         flashcards: [
           ['Wynik dodawania i odejmowania', 'suma i różnica'],
           ['Wynik mnożenia i dzielenia', 'iloczyn i iloraz'],
@@ -258,6 +271,19 @@
           </ul>
           <p>Liczby rzymskie spotkasz na tarczach zegarów, w numerach rozdziałów i w nazwach wieków (XXI wiek).</p>
         `,
+        infographicNote: 'Porównuj w poziomie: po lewej zapis cyframi 0–9, po prawej znakami rzymskimi; na dole – zaokrąglanie.',
+        infographic: {
+          type: 'porownanie',
+          kolumny: [{ title: 'Zapis dziesiątkowy', kolor: 1 }, { title: 'Zapis rzymski', kolor: 5 }],
+          wiersze: [
+            { label: 'Czym piszemy?', cells: ['10 cyfr:\n0, 1, 2, …, 9', 'znaki:\nI V X L C D M'] },
+            { label: 'Od czego zależy wartość?', cells: ['od rzędu, w którym stoi cyfra', 'znaki dodajesz:\nXVI = 10 + 5 + 1'] },
+            { label: 'Ważna zasada', cells: ['10 jedności =\n1 dziesiątka', 'mniejszy przed większym odejmujesz: IV = 4'] },
+            { label: 'Przykład', cells: ['2026', 'MMXXVI'], bold: true },
+            { label: 'Uwaga', cells: ['zero w środku zapisz: 7 020, nie 720', 'ten sam znak najwyżej 3 razy z rzędu'] },
+          ],
+          bottom: { title: 'Zaokrąglanie (≈)', text: 'Patrz na cyfrę tuż za miejscem zaokrąglania: 0–4 w dół, 5–9 w górę.\n2 649 ≈ 2 600 (do setek)', kolor: 4 },
+        },
         flashcards: [
           ['Ile jest cyfr?', 'Dziesięć: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9'],
           ['10 dziesiątek to…', '1 setka (100)'],
@@ -401,6 +427,18 @@
             <li>Porównanie cen: 3 batony po 2 zł 20 gr kosztują 6 zł 60 gr, a paczka 3 takich batonów – 6 zł 30 gr. Paczka jest tańsza o 30 gr.</li>
           </ul>
         `,
+        infographicNote: 'Każdy kafelek to jedna miara: jak zamienić większą jednostkę na mniejszą.',
+        infographic: {
+          type: 'karty', kolumny: 1,
+          items: [
+            { icon: '📏', title: 'Długość', text: '1 cm = 10 mm\n1 dm = 10 cm\n1 m = 100 cm\n1 km = 1000 m', kolor: 1 },
+            { icon: '⚖️', title: 'Masa', text: '1 dag = 10 g\n1 kg = 100 dag = 1000 g\n1 t = 1000 kg', kolor: 3 },
+            { icon: '⏰', title: 'Zegar', text: '1 h = 60 min, 1 min = 60 s\nkwadrans = 15 min, doba = 24 h', kolor: 5 },
+            { icon: '📅', title: 'Kalendarz', text: 'tydzień – 7 dni\nrok – 365 dni, przestępny – 366', kolor: 5 },
+            { icon: '💰', title: 'Pieniądze', text: '1 zł = 100 gr\n100 gr zamieniasz na 1 zł', kolor: 2 },
+          ],
+          bottom: { title: '💡 Zapamiętaj', text: '„Kilo” znaczy tysiąc: 1 km = 1000 m, 1 kg = 1000 g. „Deka” znaczy dziesięć: 1 dag = 10 g.', kolor: 4 },
+        },
         flashcards: [
           ['1 cm = ? mm', '10 mm'],
           ['1 m = ? cm', '100 cm'],
@@ -555,6 +593,18 @@
           <h3>Zadania tekstowe</h3>
           <p>Zapisz działanie, oszacuj, policz pisemnie i sprawdź działaniem odwrotnym. Przykład: bilet kosztuje 28 zł, jedzie 24 uczniów. 28 · 24 = 672 zł (szacunek: 30 · 20 = 600 – wynik ma sens).</p>
         `,
+        infographicNote: 'Na górze – co robisz zawsze; niżej – najważniejsza zasada każdego działania i jak je sprawdzić.',
+        infographic: {
+          type: 'drzewo', kolumny: 1,
+          top: { title: 'Najpierw oszacuj', text: '389 · 21 ≈ 400 · 20 = 8 000 – na końcu sprawdzisz, czy wynik ma sens', kolor: 2 },
+          root: { title: 'Działania pisemne', text: 'podpisz liczby rzędami – wyrównaj do prawej', kolor: 1 },
+          branches: [
+            { title: 'Dodawanie (od prawej)', items: ['wyszło 13? piszesz 3, a 1 przenosisz dalej'], kolor: 3 },
+            { title: 'Odejmowanie (od prawej)', items: ['górna cyfra za mała? rozmień 1 z rzędu po lewej', 'sprawdź: różnica + odjemnik = odjemna'], kolor: 3 },
+            { title: 'Mnożenie (od prawej)', items: ['przeniesione dziesiątki dodaj do następnego iloczynu', 'przez liczbę dwucyfrową: drugi iloczyn o miejsce w lewo'], kolor: 3 },
+            { title: 'Dzielenie (od lewej)', items: ['wynik piszesz nad kreską', 'nie mieści się? w wyniku piszesz 0', 'sprawdź: wynik · dzielnik + reszta = dzielna'], kolor: 3 },
+          ],
+        },
         flashcards: [
           ['Pierwsza zasada działań pisemnych', 'Podpisz liczby rzędami: jedności pod jednościami (wyrównaj do prawej)'],
           ['Dodawanie: w rzędzie wyszło 13', 'Piszesz 3, a 1 przenosisz do następnego rzędu'],
@@ -701,6 +751,19 @@
           </ol>
           <div class="tip">💡 Kątomierz ma dwie skale. Zanim odczytasz wynik, oceń na oko: kąt ostry ma mniej niż 90°, więc 60°, a nie 120°.</div>
         `,
+        infographicNote: 'Czytaj od góry: kąty od najmniejszego do największego; w pigułkach – ich miary.',
+        infographic: {
+          type: 'os',
+          top: { title: 'Kąt', text: 'dwie półproste (ramiona) o wspólnym początku (wierzchołku)', kolor: 2 },
+          items: [
+            { label: '< 90°', title: 'ostry', text: 'mniej niż 90° – czubek kawałka pizzy' },
+            { label: '90°', title: 'prosty', text: 'dokładnie 90° – róg kartki' },
+            { label: '> 90°', title: 'rozwarty', text: 'więcej niż 90°, mniej niż 180°' },
+            { label: '180°', title: 'półpełny', text: 'ramiona tworzą jedną prostą' },
+            { label: '360°', title: 'pełny', text: 'pełny obrót' },
+          ],
+          bottom: { title: '💡 Kątomierz', text: 'Środek do wierzchołka, zero na ramieniu. Oceń na oko: kąt ostry ma mniej niż 90°, więc 60°, a nie 120°.', kolor: 4 },
+        },
         flashcards: [
           ['Prosta', 'Linia bez początku i bez końca'],
           ['Półprosta', 'Ma początek, ale nie ma końca'],
@@ -828,6 +891,19 @@
             <li><b>Cięciwa</b> – odcinek łączący dwa punkty okręgu. Najdłuższa cięciwa to średnica.</li>
           </ul>
         `,
+        infographicNote: 'Porównuj w poziomie: obwód po lewej, pole po prawej – liczy się je inaczej i w innych jednostkach.',
+        infographic: {
+          type: 'porownanie',
+          top: { title: 'Wielokąt', text: 'boków, wierzchołków i kątów jest tyle samo. Przekątna łączy dwa wierzchołki, ale nie jest bokiem.', kolor: 2 },
+          kolumny: [{ title: 'Obwód', kolor: 1 }, { title: 'Pole', kolor: 3 }],
+          wiersze: [
+            { label: 'Co to jest?', cells: ['suma długości wszystkich boków', 'ile miejsca zajmuje figura'] },
+            { label: 'Prostokąt 5 cm × 3 cm', cells: ['5 + 3 + 5 + 3\n= 16 cm', 'P = 5 · 3\n= 15 cm²'], bold: true },
+            { label: 'Kwadrat o boku 4 cm', cells: ['4 · 4 = 16 cm', 'P = 4 · 4\n= 16 cm²'], bold: true },
+            { label: 'Jednostki', cells: ['cm, m', 'cm², m²'], bold: true },
+          ],
+          bottom: { title: 'Koło i okrąg', text: 'Okrąg – sama linia, koło – linia z wnętrzem. Średnica to 2 promienie: d = 2 · r.', kolor: 5 },
+        },
         flashcards: [
           ['Przekątna wielokąta', 'Odcinek łączący dwa wierzchołki, który nie jest bokiem'],
           ['Ile przekątnych ma czworokąt?', '2'],
@@ -978,6 +1054,19 @@
           <p>Rysunek mrówki czy biedronki bywa <b>większy</b> niż ona sama. Skala <b>2 : 1</b> znaczy: 2 cm na rysunku to 1 cm naprawdę – rysunek powiększono 2 razy.</p>
           <div class="tip">💡 Przed liczeniem zamień wszystko na centymetry. Przyda się: 1 m = 100 cm, 1 km = 1000 m = 100 000 cm.</div>
         `,
+        infographicNote: 'Porównuj w poziomie: z planu do rzeczywistości mnożysz, z rzeczywistości na plan – dzielisz.',
+        infographic: {
+          type: 'porownanie',
+          top: { title: 'Skala 1 : 1000', text: 'wszystko zmniejszono 1000 razy: 1 cm na planie to 1000 cm = 10 m', kolor: 2 },
+          kolumny: [{ title: 'Plan → teren', kolor: 1 }, { title: 'Teren → plan', kolor: 3 }],
+          wiersze: [
+            { label: 'Pytanie', cells: ['Ile to naprawdę?', 'Ile na planie?'] },
+            { label: 'Działanie', cells: ['· liczba ze skali', ': liczba ze skali'], bold: true },
+            { label: 'Jednostki', cells: ['potem zamień cm na m', 'najpierw zamień m na cm'] },
+            { label: 'Przykład (skala 1 : 1000)', cells: ['7 cm · 1000\n= 7000 cm = 70 m', '40 m = 4000 cm\n4000 cm : 1000 = 4 cm'] },
+          ],
+          bottom: { title: '💡 Zapamiętaj', text: '1 m = 100 cm, 1 km = 100 000 cm. Skala 2 : 1 to powiększenie 2 razy.', kolor: 4 },
+        },
         flashcards: [
           ['Skala', 'Mówi, ile razy zmniejszono (albo powiększono) rzeczywistość na planie, mapie lub rysunku'],
           ['Skala 1 : 100', '1 cm na planie = 100 cm = 1 m w rzeczywistości'],
@@ -1086,6 +1175,18 @@
             <li><span class="f">3/4 z 12</span>: najpierw 1/4 z 12 = 3, potem 3 · 3 = 9.</li>
           </ul>
         `,
+        infographicNote: 'Na górze – co znaczy ułamek; niżej – co z nim możesz zrobić.',
+        infographic: {
+          type: 'drzewo', kolumny: 1,
+          root: { title: '3/8 – trzy ósme', text: '8 (mianownik) – na ile równych części dzielisz całość; 3 (licznik) – ile części bierzesz', kolor: 1 },
+          branches: [
+            { title: 'Kreska to dzielenie', items: ['3/4 = 3 : 4', '8/4 = 8 : 4 = 2'], kolor: 5 },
+            { title: 'Właściwy i niewłaściwy', items: ['właściwy: licznik mniejszy, np. 3/5', 'niewłaściwy: licznik równy lub większy, np. 7/4'], kolor: 3 },
+            { title: 'Liczba mieszana', items: ['7/4 = 1 3/4, bo 7 : 4 = 1 reszty 3', '2 1/3 = 7/3, bo 2 · 3 + 1 = 7'], kolor: 3 },
+            { title: 'Porównywanie', items: ['te same mianowniki: 5/8 > 3/8', 'te same liczniki: 1/3 > 1/5'], kolor: 2 },
+            { title: 'Ułamek liczby', items: ['1/4 z 20 = 20 : 4 = 5', '3/4 z 12: 12 : 4 = 3, 3 · 3 = 9'], kolor: 4 },
+          ],
+        },
         flashcards: [
           ['Mianownik', 'Liczba pod kreską: na ile równych części podzielono całość'],
           ['Licznik', 'Liczba nad kreską: ile części bierzemy'],
@@ -1204,6 +1305,18 @@
           <h3>Ułamki na osi liczbowej</h3>
           <p>Odcinek od 0 do 1 dzielisz na tyle równych części, ile wynosi mianownik. Ułamek 3/5 to trzecia kreska po zerze, gdy odcinek od 0 do 1 podzielono na 5 części.</p>
         `,
+        infographicNote: 'Czytaj od góry: tak dodajesz i odejmujesz ułamki – krok po kroku.',
+        infographic: {
+          type: 'kroki',
+          top: { title: 'Rozszerzanie i skracanie', text: 'mnożysz albo dzielisz licznik i mianownik przez tę samą liczbę – wartość się nie zmienia: 1/2 = 2/4', kolor: 5 },
+          items: [
+            { title: '1. Te same mianowniki?', text: 'Jeśli nie – rozszerz ułamek o mniejszym mianowniku: 1/2 + 1/4 = 2/4 + 1/4' },
+            { title: '2. Licz na licznikach', text: 'mianownik zostaje: 2/7 + 3/7 = 5/7' },
+            { title: '3. Skróć wynik', text: '7/9 − 4/9 = 3/9 = 1/3' },
+            { title: '4. Zamień na mieszaną', text: 'gdy wyjdzie ułamek niewłaściwy: 3/5 + 4/5 = 7/5 = 1 2/5' },
+          ],
+          bottom: { title: '⚠️ Częsty błąd', text: 'Mianowników nie dodajesz: 2/7 + 3/7 to NIE 5/14.', kolor: 2 },
+        },
         flashcards: [
           ['Ułamki równe', 'Różnie zapisane, ale oznaczają tę samą część, np. 1/2 = 2/4 = 4/8'],
           ['Rozszerzanie ułamka', 'Mnożenie licznika i mianownika przez tę samą liczbę: 2/3 = 8/12'],
@@ -1339,6 +1452,20 @@
             <li><span class="f">5 − 0,3 = 4,7</span> (5 = 4 całe i 10 dziesiątych)</li>
           </ul>
         `,
+        infographicNote: 'Porównuj w poziomie: ten sam ułamek zapisany zwykle (po lewej) i dziesiętnie (po prawej).',
+        infographic: {
+          type: 'porownanie',
+          top: { title: '💡 Zasada', text: 'Ile zer w mianowniku, tyle cyfr po przecinku.', kolor: 4 },
+          kolumny: [{ title: 'Ułamek zwykły', kolor: 1 }, { title: 'Ułamek dziesiętny', kolor: 3 }],
+          wiersze: [
+            { label: 'dziesiąte – 1 cyfra po przecinku', cells: ['7/10', '0,7'], bold: true },
+            { label: 'setne – 2 cyfry po przecinku', cells: ['23/100', '0,23'], bold: true },
+            { label: 'brakujące miejsce – wpisz zero', cells: ['3/100', '0,03'], bold: true },
+            { label: 'tysięczne – 3 cyfry po przecinku', cells: ['125/1000', '0,125'], bold: true },
+            { label: 'liczba mieszana', cells: ['3 7/10', '3,7'], bold: true },
+          ],
+          bottom: { title: 'Porównywanie', text: 'Dopisz zera na końcu, żeby było tyle samo cyfr: 0,5 = 0,50, a 0,50 > 0,45.', kolor: 2 },
+        },
         flashcards: [
           ['0,1', '1/10 – jedna dziesiąta'],
           ['0,01', '1/100 – jedna setna'],
@@ -1468,6 +1595,20 @@
           </ul>
           <div class="tip">⚠️ Figury o tym samym polu mogą mieć różne obwody. Prostokąt 1 cm × 16 cm i kwadrat 4 cm × 4 cm mają po 16 cm² pola, ale obwody 34 cm i 16 cm.</div>
         `,
+        infographicNote: 'Czytaj od góry: jednostki pola od najmniejszej do największej.',
+        infographic: {
+          type: 'os',
+          top: { title: 'Dlaczego 100, a nie 10?', text: '1 cm² to 10 rzędów po 10 kwadracików 1 mm²: 10 · 10 = 100', kolor: 2 },
+          items: [
+            { label: 'cm²', title: '1 cm² = 100 mm²', text: 'kwadrat o boku 1 cm' },
+            { label: 'dm²', title: '1 dm² = 100 cm²', text: 'kwadrat o boku 10 cm' },
+            { label: 'm²', title: '1 m² = 100 dm²', text: '= 10 000 cm²' },
+            { label: 'a', title: '1 a = 100 m²', text: 'kwadrat 10 m × 10 m' },
+            { label: 'ha', title: '1 ha = 100 a', text: '= 10 000 m², kwadrat 100 m × 100 m' },
+            { label: 'km²', title: '1 km² = 100 ha', text: '= 1 000 000 m²' },
+          ],
+          bottom: { title: 'Figura w kształcie L', text: 'Podziel na prostokąty i dodaj pola albo od dużego prostokąta odejmij brakujący róg: 8 · 5 − 3 · 2 = 34 m²', kolor: 3 },
+        },
         flashcards: [
           ['1 cm²', '100 mm² (kwadrat 1 cm × 1 cm to 10 · 10 kwadracików 1 mm²)'],
           ['1 dm²', '100 cm²'],
@@ -1601,6 +1742,20 @@
           </ul>
           <div class="tip">💡 6 kwadratów to nie zawsze siatka sześcianu. Jeśli w układzie są 4 kwadraty tworzące większy kwadrat 2 × 2, sześcianu nie złożysz.</div>
         `,
+        infographicNote: 'Porównuj w poziomie: sześcian to szczególny prostopadłościan.',
+        infographic: {
+          type: 'porownanie',
+          top: { title: 'Każdy sześcian jest prostopadłościanem', text: 'ale nie każdy prostopadłościan jest sześcianem', kolor: 2 },
+          kolumny: [{ title: 'Prostopadłościan', kolor: 1 }, { title: 'Sześcian', kolor: 5 }],
+          wiersze: [
+            { label: 'Ściany', cells: ['6 prostokątów, naprzeciw siebie takie same', '6 jednakowych kwadratów'] },
+            { label: 'Krawędzie', cells: ['12 – trzy grupy po 4 równe', '12 – wszystkie równe'] },
+            { label: 'Wierzchołki', cells: ['8', '8'], bold: true },
+            { label: 'Suma długości krawędzi', cells: ['5, 3, 2 cm:\n4 · 5 + 4 · 3 + 4 · 2 = 40 cm', 'krawędź 4 cm:\n12 · 4 = 48 cm'] },
+            { label: 'Siatka', cells: ['6 prostokątów, po dwa takie same', '6 kwadratów – aż 11 różnych siatek'] },
+          ],
+          bottom: { title: 'Inne bryły', text: 'walec – puszka, stożek – wafel do lodów, kula – piłka', kolor: 3 },
+        },
         flashcards: [
           ['Prostopadłościan – ile ścian, krawędzi, wierzchołków?', '6 ścian, 12 krawędzi, 8 wierzchołków'],
           ['Ściany prostopadłościanu', '6 prostokątów; ściany naprzeciw siebie są takie same'],
@@ -1744,6 +1899,19 @@
           <p>Podziel bryłę na prostopadłościany, oblicz objętość każdego i dodaj. Np. 4 cm × 3 cm × 2 cm i 2 cm × 3 cm × 2 cm: 24 + 12 = 36 cm³.</p>
           <div class="tip">💡 Pole – w jednostkach „do kwadratu” (cm²), objętość – „do sześcianu” (cm³). Przed liczeniem zamień wszystkie krawędzie na te same jednostki.</div>
         `,
+        infographicNote: 'Porównuj w poziomie: pole powierzchni (okładanie ścian) po lewej, objętość (wypełnianie kostkami) po prawej.',
+        infographic: {
+          type: 'porownanie',
+          kolumny: [{ title: 'Pole powierzchni', kolor: 1 }, { title: 'Objętość', kolor: 3 }],
+          wiersze: [
+            { label: 'Co mówi?', cells: ['ile papieru, żeby okleić 6 ścian', 'ile miejsca zajmuje bryła'] },
+            { label: 'Prostopadłościan a × b × c', cells: ['P = 2 · a · b + 2 · b · c + 2 · a · c', 'V = a · b · c'], bold: true },
+            { label: 'Sześcian o krawędzi a', cells: ['P = 6 · a · a', 'V = a · a · a'], bold: true },
+            { label: 'Przykład: 5 cm × 3 cm × 2 cm', cells: ['62 cm²', '30 cm³'], bold: true },
+            { label: 'Jednostki', cells: ['„do kwadratu”: cm²', '„do sześcianu”: cm³'] },
+          ],
+          bottom: { title: 'Pojemność', text: '1 cm³ = 1 ml\n1 dm³ = 1000 cm³ = 1 l\n1 m³ = 1000 dm³ = 1000 l', kolor: 4 },
+        },
         flashcards: [
           ['Pole powierzchni prostopadłościanu', 'Suma pól 6 ścian: P = 2·a·b + 2·b·c + 2·a·c'],
           ['Pole powierzchni sześcianu', 'P = 6 · a · a'],
@@ -1882,6 +2050,18 @@
           </ul>
           <p><b>Kiedy NWD?</b> Gdy coś dzielimy na jak najwięcej jednakowych paczek bez resztek. <b>Kiedy NWW?</b> Gdy szukamy, kiedy dwa powtarzające się zdarzenia znów wypadną razem (np. odjazdy dwóch autobusów).</p>
         `,
+        infographicNote: 'Gałęzie pokazują, na co patrzysz przy każdej cesze podzielności.',
+        infographic: {
+          type: 'drzewo', kolumny: 1,
+          top: { title: 'Dzielnik i wielokrotność', text: '12 : 3 = 4 bez reszty, więc 3 jest dzielnikiem 12, a 12 – wielokrotnością 3', kolor: 2 },
+          root: { title: 'Dzieli się przez…', text: 'sprawdzasz bez dzielenia', kolor: 1 },
+          branches: [
+            { title: 'Ostatnia cyfra', items: ['przez 2: 0, 2, 4, 6 lub 8', 'przez 5: 0 lub 5', 'przez 10: 0'], kolor: 1 },
+            { title: 'Dwie ostatnie cyfry', items: ['przez 4: liczba z nich dzieli się przez 4 (1 316, bo 16 : 4 = 4)'], kolor: 5 },
+            { title: 'Suma cyfr', items: ['przez 3: suma dzieli się przez 3', 'przez 9: suma dzieli się przez 9'], kolor: 3 },
+          ],
+          bottom: { title: 'Pierwsze i złożone', items: ['pierwsza – dokładnie 2 dzielniki: 1 i ona sama', 'złożona – więcej niż 2 dzielniki', '0 i 1 – ani pierwsze, ani złożone'], kolor: 4 },
+        },
         flashcards: [
           ['Dzielnik liczby', 'Liczba, przez którą dana liczba dzieli się bez reszty, np. 4 jest dzielnikiem 12'],
           ['Wielokrotność liczby 7', '7, 14, 21, 28, … – wyniki mnożenia 7 przez 1, 2, 3, 4, …'],
@@ -1970,6 +2150,19 @@
           <h3>Sprawdzaj szacowaniem</h3>
           <p>1,25 · 3 to trochę więcej niż 1 · 3 = 3 – wynik 3,75 pasuje, a 37,5 na pewno nie.</p>
         `,
+        infographicNote: 'Porównuj w poziomie: przy mnożeniu przecinek idzie w prawo, przy dzieleniu – w lewo.',
+        infographic: {
+          type: 'porownanie',
+          kolumny: [{ title: 'Mnożenie', kolor: 1 }, { title: 'Dzielenie', kolor: 3 }],
+          wiersze: [
+            { label: 'Przez 10, 100, 1000 – o tyle miejsc, ile zer', cells: ['przecinek w prawo', 'przecinek w lewo'], bold: true },
+            { label: 'Przykład', cells: ['3,45 · 100 = 345', '45,6 : 100 = 0,456'], bold: true },
+            { label: 'Przez liczbę naturalną', cells: ['licz bez przecinka, oddziel tyle cyfr, ile było', 'przecinek tam, gdzie przekraczasz go w dzielnej'] },
+            { label: 'Przykład', cells: ['0,4 · 3 = 1,2', '4,8 : 2 = 2,4'], bold: true },
+            { label: 'Zamiana jednostek', cells: ['2,5 m = 2,5 · 100 cm = 250 cm', '350 g = 350 : 1000 kg = 0,35 kg'] },
+          ],
+          bottom: { title: '💡 Sprawdź szacowaniem', text: '1,25 · 3 to trochę więcej niż 1 · 3 = 3 – wynik 3,75 pasuje, a 37,5 na pewno nie.', kolor: 4 },
+        },
         flashcards: [
           ['· 10, · 100, · 1000', 'Przecinek w prawo o 1, 2, 3 miejsca'],
           [': 10, : 100, : 1000', 'Przecinek w lewo o 1, 2, 3 miejsca'],
@@ -2052,6 +2245,18 @@
             <li>Równoległobok o bokach 8 cm i 5 cm: <span class="f">2 · 8 + 2 · 5 = 26 cm</span>.</li>
           </ul>
         `,
+        infographicNote: 'Trójkąty dzielimy na dwa sposoby: po lewej według kątów, po prawej według boków. Na dole – jak łączą się czworokąty.',
+        infographic: {
+          type: 'porownanie',
+          top: { title: '💡 Trójkąt', text: 'nie może mieć dwóch kątów prostych ani dwóch rozwartych', kolor: 4 },
+          kolumny: [{ title: 'Według kątów', kolor: 1 }, { title: 'Według boków', kolor: 5 }],
+          wiersze: [
+            { cells: ['ostrokątny:\n3 kąty ostre', 'różnoboczny:\nkażdy bok inny'] },
+            { cells: ['prostokątny:\n1 kąt prosty', 'równoramienny:\n2 równe boki (ramiona)'] },
+            { cells: ['rozwartokątny:\n1 kąt rozwarty', 'równoboczny:\n3 równe boki'] },
+          ],
+          bottom: { title: 'Czworokąty', items: ['kwadrat jest jednocześnie prostokątem i rombem', 'prostokąt i romb są równoległobokami', 'trapez – co najmniej jedna para boków równoległych'], kolor: 3 },
+        },
         flashcards: [
           ['Trójkąt ostrokątny', 'Wszystkie 3 kąty ostre'],
           ['Trójkąt prostokątny', 'Jeden kąt prosty'],
@@ -2168,6 +2373,19 @@
           </ol>
           <p>Jeśli łuki się nie przecinają – z tych odcinków nie da się zbudować trójkąta.</p>
         `,
+        infographicNote: 'Porównuj w poziomie: trójkąt po lewej, czworokąt po prawej; na dole – czy da się zbudować trójkąt.',
+        infographic: {
+          type: 'porownanie',
+          kolumny: [{ title: 'Trójkąt', kolor: 1 }, { title: 'Czworokąt', kolor: 5 }],
+          wiersze: [
+            { label: 'Suma kątów', cells: ['180°', '360°'], bold: true },
+            { label: 'Dlaczego?', cells: ['3 rogi składają się w kąt półpełny', 'przekątna dzieli go na 2 trójkąty'] },
+            { label: 'Brakujący kąt', cells: ['180° − (50° + 60°) = 70°', '360° − (80° + 100° + 70°) = 110°'] },
+            { label: 'Szczególne figury', cells: ['równoboczny: każdy kąt 60°', 'prostokąt: 4 · 90°'] },
+            { label: 'Równe kąty', cells: ['równoramienny: kąty przy podstawie', 'równoległobok: kąty naprzeciwko siebie'] },
+          ],
+          bottom: { title: 'Czy zbudujesz trójkąt?', text: 'Tak, gdy najdłuższy odcinek jest krótszy od sumy dwóch pozostałych.\n3, 4, 5 cm – tak; 2, 3, 6 cm – nie', kolor: 3 },
+        },
         flashcards: [
           ['Suma kątów w trójkącie', '180°'],
           ['Suma kątów w czworokącie', '360° (dwa trójkąty)'],
@@ -2279,6 +2497,18 @@
           <h3>Figury złożone</h3>
           <p>Figurę podziel na części, których pola umiesz policzyć, i dodaj te pola. „Domek” z kwadratu i trójkąta: pole kwadratu + pole trójkąta.</p>
         `,
+        infographicNote: 'Wszystkie wzory biorą się z równoległoboku: trójkąt to jego połowa, a dwa trapezy go tworzą.',
+        infographic: {
+          type: 'drzewo', kolumny: 1,
+          top: { title: 'Wysokość h', text: 'z wierzchołka prostopadle do podstawy a. Bok ukośny to nie wysokość!', kolor: 2 },
+          root: { title: 'Równoległobok', items: ['P = a · h'], kolor: 1 },
+          branches: [
+            { title: 'Trójkąt', items: ['P = a · h : 2', '2 takie trójkąty tworzą równoległobok'], kolor: 3 },
+            { title: 'Trapez', items: ['P = (a + b) · h : 2', '2 takie trapezy tworzą równoległobok o podstawie a + b'], kolor: 3 },
+            { title: 'Romb', items: ['P = a · h albo P = e · f : 2', 'e, f – przekątne'], kolor: 3 },
+          ],
+          bottom: { title: '💡 Najpierw jednostki', text: 'a = 2 m, h = 50 cm → 200 cm i 50 cm, P = 10 000 cm²', kolor: 4 },
+        },
         flashcards: [
           ['Wysokość', 'Odcinek z wierzchołka prostopadły do przeciwległego boku (lub jego przedłużenia)'],
           ['Ile wysokości ma trójkąt?', 'Trzy – po jednej na każdy bok'],
@@ -2387,6 +2617,19 @@
             <li>Punkt leżący na osi zostaje na miejscu.</li>
           </ul>
         `,
+        infographicNote: 'Czytaj od góry: w pigułce – ile osi symetrii ma figura, od zera do nieskończenie wielu.',
+        infographic: {
+          type: 'os',
+          top: { title: 'Oś symetrii', text: 'złóż figurę wzdłuż prostej – obie połowy dokładnie się pokryją', kolor: 2 },
+          items: [
+            { label: '0', title: 'trójkąt różnoboczny', text: 'także litery N, S, Z' },
+            { label: '1', title: 'trójkąt równoramienny', text: 'i trapez równoramienny' },
+            { label: '2', title: 'prostokąt i romb (nie kwadraty)', text: 'romb – wzdłuż przekątnych; przekątna prostokąta NIE jest osią' },
+            { label: '3', title: 'trójkąt równoboczny' },
+            { label: '4', title: 'kwadrat' },
+          ],
+          bottom: { title: 'Koło i okrąg', text: 'nieskończenie wiele osi – każda prosta przez środek', kolor: 3 },
+        },
         flashcards: [
           ['Oś symetrii', 'Prosta, wzdłuż której można złożyć figurę tak, że obie połowy się pokrywają'],
           ['Ile osi symetrii ma kwadrat?', '4'],
@@ -2485,6 +2728,19 @@
             <li>Sprawdź (3 · 4 = 12) i napisz odpowiedź: długopis kosztuje 4 zł.</li>
           </ol>
         `,
+        infographicNote: 'Czytaj wierszami: niewiadomą znajdziesz działaniem odwrotnym.',
+        infographic: {
+          type: 'porownanie',
+          top: { title: 'Równanie', text: 'równość z niewiadomą – jak waga w równowadze', kolor: 2 },
+          kolumny: [{ title: 'Równanie', kolor: 1 }, { title: 'Myślę', kolor: 5 }, { title: 'Rozwiązanie', kolor: 3 }],
+          wiersze: [
+            { cells: ['x + 7 = 15', '15 − 7', 'x = 8'], bold: true },
+            { cells: ['x − 6 = 9', '9 + 6', 'x = 15'], bold: true },
+            { cells: ['4 · x = 28', '28 : 4', 'x = 7'], bold: true },
+            { cells: ['x : 3 = 5', '5 · 3', 'x = 15'], bold: true },
+          ],
+          bottom: { title: '💡 Zawsze sprawdź', text: 'Wstaw wynik do równania: 4 · 7 = 28 – zgadza się!', kolor: 4 },
+        },
         flashcards: [
           ['Wyrażenie algebraiczne', 'Zapis z literami, liczbami i znakami działań, np. x + 5, 3 · n'],
           ['Liczba o 5 większa od x', 'x + 5'],
@@ -2582,6 +2838,19 @@
           </ul>
           <p>Porównując oferty, zawsze licz <b>cenę końcową</b> – wyższy rabat nie zawsze oznacza niższą cenę.</p>
         `,
+        infographicNote: 'Czytaj od góry: każdy procent to część całości i sposób, jak go policzyć.',
+        infographic: {
+          type: 'os',
+          items: [
+            { label: '100%', title: 'cała całość', text: 'przeczytasz 30% – zostanie 100% − 30% = 70%' },
+            { label: '75%', title: '3/4 – trzy czwarte', text: '3 razy po 25%: 75% z 80 = 3 · 20 = 60' },
+            { label: '50%', title: '1/2 – połowa', text: 'dziel przez 2: 50% z 30 zł = 15 zł' },
+            { label: '25%', title: '1/4 – ćwierć', text: 'dziel przez 4: 25% z 40 = 10' },
+            { label: '10%', title: '1/10 – jedna dziesiąta', text: 'dziel przez 10: 10% z 70 = 7' },
+            { label: '1%', title: '1/100 – jedna setna', text: 'dziel przez 100: 1% z 300 = 3' },
+          ],
+          bottom: { title: 'Rabat', text: 'Kurtka za 60 zł, rabat 10%: obniżka 6 zł, płacisz 60 − 6 = 54 zł.', kolor: 2 },
+        },
         flashcards: [
           ['1%', 'Jedna setna całości – 1/100'],
           ['100%', 'Cała całość'],
@@ -2665,6 +2934,18 @@
           </ol>
           <div class="tip">💡 Wniosek dotyczy tylko tych, których zapytałeś. Ankieta w twojej klasie nie mówi, co lubią wszystkie dzieci w Polsce.</div>
         `,
+        infographicNote: 'Czytaj od góry: tak przeprowadzasz proste badanie – od pytania do wniosku.',
+        infographic: {
+          type: 'kroki',
+          items: [
+            { icon: '❓', title: 'Pytanie', text: '„Jaki jest twój ulubiony owoc?”' },
+            { icon: '✏️', title: 'Zbieranie danych', text: 'zapisuj kreskami – piąta przekreśla cztery' },
+            { icon: '📋', title: 'Tabela', text: 'policz kreski i wpisz wyniki' },
+            { icon: '📊', title: 'Diagram słupkowy', text: 'wysokość słupka mówi, ile; najpierw sprawdź skalę' },
+            { icon: '💬', title: 'Wniosek', text: '„Najwięcej osób wybrało jabłko”' },
+          ],
+          bottom: { title: '💡 Uwaga', text: 'Wniosek dotyczy tylko tych, których zapytałeś.', kolor: 4 },
+        },
         flashcards: [
           ['Wiersz i kolumna tabeli', 'Wiersz – poziomo, kolumna – pionowo'],
           ['Co pokazuje wysokość słupka?', 'Ile jest danej rzeczy (wartość dla tej kategorii)'],
@@ -2745,6 +3026,18 @@
           <p>Kieszonkowe pięciorga dzieci: 10 zł, 10 zł, 10 zł, 10 zł i 60 zł. Średnia to 100 : 5 = <b>20 zł</b>, choć aż czworo dzieci dostaje 10 zł. Jedna bardzo duża (albo bardzo mała) liczba mocno zmienia średnią – patrz też na same dane.</p>
           <div class="tip">💡 Sprawdzaj wynik: średnia mniejsza od najmniejszej liczby albo większa od największej to na pewno błąd.</div>
         `,
+        infographicNote: 'Czytaj od góry: tak liczysz średnią i sprawdzasz wynik.',
+        infographic: {
+          type: 'kroki',
+          top: { title: 'Średnia arytmetyczna', text: 'tyle wypadłoby na każdego przy podziale po równo', kolor: 2 },
+          items: [
+            { title: '1. Dodaj wszystkie liczby', text: 'oceny 4, 5, 3, 4: 4 + 5 + 3 + 4 = 16' },
+            { title: '2. Policz, ile jest liczb', text: '4 oceny' },
+            { title: '3. Podziel sumę', text: '16 : 4 = 4' },
+            { title: '4. Sprawdź', text: 'średnia musi być między najmniejszą a największą liczbą' },
+          ],
+          bottom: { title: '💡 W drugą stronę', text: 'suma = średnia · ile liczb. Średnia 3 liczb to 6, więc suma to 18.', kolor: 4 },
+        },
         flashcards: [
           ['Średnia arytmetyczna', 'Suma liczb podzielona przez to, ile jest liczb'],
           ['Średnia z 4, 5, 3, 4', '16 : 4 = 4'],

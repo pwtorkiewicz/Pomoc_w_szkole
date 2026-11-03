@@ -74,6 +74,20 @@ window.SUBJECTS.push({
           <li><b>Wysypiaj się</b> – podczas snu mózg utrwala to, czego się nauczyłeś.</li>
         </ul>
       `,
+      infographicNote: 'Czytaj od góry: tak po kolei przebiega doświadczenie.',
+      infographic: {
+        type: 'kroki',
+        top: { title: 'Obserwacja czy doświadczenie?', text: 'Obserwacja – niczego nie zmieniasz.\nDoświadczenie – zmieniasz jeden warunek.', kolor: 5 },
+        items: [
+          { icon: '❓', title: 'Pytanie badawcze', text: 'Co chcesz sprawdzić?' },
+          { icon: '💭', title: 'Hipoteza', text: 'przypuszczenie, które sprawdzisz' },
+          { icon: '📝', title: 'Plan', text: 'czego potrzebujesz i co zrobisz' },
+          { icon: '🧪', title: 'Doświadczenie', kolor: 2, items: ['próba badawcza – zmieniasz warunek', 'próba kontrolna – bez zmiany, do porównania'] },
+          { icon: '📊', title: 'Wynik', text: 'zapisujesz, co zaobserwowałeś' },
+          { icon: '✅', title: 'Wniosek', text: 'odpowiedź na pytanie: czy hipoteza się potwierdziła?', kolor: 3 },
+        ],
+        bottom: { title: '💡 Zapamiętaj', text: 'Zmieniasz tylko jeden warunek – wtedy wiesz, co spowodowało wynik.', kolor: 4 },
+      },
       flashcards: [
         ['Pięć zmysłów człowieka', 'wzrok, słuch, węch, smak, dotyk'],
         ['Rola mózgu', 'Odbiera sygnały od zmysłów, rozpoznaje je, zapamiętuje i decyduje, co zrobić'],
@@ -140,6 +154,19 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Sprawdź przez tydzień, ile czasu spędzasz przed ekranem (wiele telefonów ma licznik czasu). Zapisz wyniki w tabeli i zastanów się, co możesz zmienić.</div>
       `,
+      infographicNote: 'U góry przyczyna, niżej – co przez nią cierpi, na dole – co możesz zrobić.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { icon: '📱', title: 'Za dużo ekranu', text: 'zabiera czas na sen, ruch, naukę i spotkania', kolor: 2 },
+        branches: [
+          { title: '😴 Sen', text: 'późne granie i jasne światło utrudniają zasypianie', kolor: 2 },
+          { title: '👀 Oczy', text: 'patrzenie z bliska męczy oczy', kolor: 2 },
+          { title: '🧍 Ciało', text: 'mniej ruchu, boli kark i plecy', kolor: 2 },
+          { title: '🎯 Koncentracja', text: 'powiadomienia i kilka rzeczy naraz rozpraszają', kolor: 2 },
+          { title: '👫 Relacje', text: 'mniej rozmów i zabaw z bliskimi', kolor: 2 },
+        ],
+        bottom: { title: '✅ Jak mądrze korzystać z ekranów?', items: ['plan ustalony z rodzicami', 'przerwy – wstań i popatrz w dal', 'ekran odłożony przed snem', 'przy nauce wyciszone powiadomienia', 'codziennie ruch na świeżym powietrzu'], kolor: 3 },
+      },
       flashcards: [
         ['Czas przed ekranem', 'Cały czas przy telefonie, tablecie, komputerze, telewizorze i konsoli – liczony razem'],
         ['Ekran a sen', 'Późne korzystanie z ekranu i jego jasne światło utrudniają zasypianie'],
@@ -225,6 +252,19 @@ window.SUBJECTS.push({
           <tr><td>organizm</td><td>cała istota żywa</td><td>człowiek</td></tr>
         </table>
       `,
+      infographicNote: 'Czytaj od góry: z komórek zbudowane są tkanki, z tkanek narządy – aż do całego organizmu.',
+      infographic: {
+        type: 'kroki',
+        top: { icon: '🔬', title: 'Pod mikroskopem widać komórki', text: 'powiększenie = okular · obiektyw\nnp. 10× · 40× = 400×', kolor: 5 },
+        items: [
+          { title: 'Komórka', text: 'najmniejsza żywa część organizmu', kolor: 1 },
+          { title: 'Tkanka', text: 'grupa podobnych komórek, np. tkanka mięśniowa', kolor: 1 },
+          { title: 'Narząd', text: 'tkanki pełnią jedno zadanie, np. serce', kolor: 1 },
+          { title: 'Układ narządów', text: 'narządy pracują razem, np. układ oddechowy', kolor: 1 },
+          { title: 'Organizm', text: 'cała istota żywa, np. człowiek', kolor: 3 },
+        ],
+        bottom: { title: '💡 Organizm jednokomórkowy', text: 'Całe ciało to jedna komórka, np. bakteria. Zobaczysz go tylko pod mikroskopem.', kolor: 4 },
+      },
       flashcards: [
         ['Lupa', 'Jedna soczewka; powiększa kilka–kilkadziesiąt razy, obraz prosty'],
         ['Mikroskop optyczny', 'Wiele soczewek; powiększa nawet około tysiąca razy, obraz odwrócony'],
@@ -342,6 +382,19 @@ window.SUBJECTS.push({
         <p>Przykład: plan w skali 1 : 100, ławka ma na nim 3 cm. W rzeczywistości: 3 · 100 cm = 300 cm = <b>3 m</b>.</p>
         <div class="tip">💡 Skalę można też zapisać słowami: „1 cm – 1 m” znaczy to samo co 1 : 100. Pamiętaj: 1 m = 100 cm, 1 km = 1000 m.</div>
       `,
+      infographicNote: 'Czytaj od góry: od magnesu do kompasu, od kierunków do planu i skali.',
+      infographic: {
+        type: 'kroki',
+        top: { icon: '🧲', title: 'Magnes', text: 'bieguny różne (N i S) się przyciągają, jednakowe – odpychają', kolor: 5 },
+        items: [
+          { icon: '🧭', title: 'Igła kompasu', text: 'mały magnes – ustawia się w kierunku północ – południe' },
+          { title: 'Ustaw kompas', text: 'obracaj, aż litera N będzie pod końcem igły wskazującym północ' },
+          { title: 'Odczytaj kierunki', text: 'główne: N, E, S, W\npośrednie: NE, SE, SW, NW' },
+          { icon: '🗺️', title: 'Plan i mapa', text: 'północ zwykle u góry; znaki objaśnia legenda', kolor: 3 },
+          { icon: '📏', title: 'Skala', text: '1 : 100 – 1 cm na planie to 1 m w terenie', kolor: 3 },
+        ],
+        bottom: { title: '☀️ Bez kompasu', text: 'W Polsce w południe cień jest najkrótszy i wskazuje północ.', kolor: 4 },
+      },
       flashcards: [
         ['Kierunki główne', 'północ (N), wschód (E), południe (S), zachód (W)'],
         ['Kierunki pośrednie', 'północny wschód (NE), południowy wschód (SE), południowy zachód (SW), północny zachód (NW)'],
@@ -456,6 +509,19 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Zawsze patrz na <b>legendę</b> – podaje, jaką wysokość oznacza każdy kolor.</div>
       `,
+      infographicNote: 'Porównuj w poziomie: kolory kolumn są takie jak na mapie wysokości.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '📐 Dwie wysokości', text: 'bezwzględna – od poziomu morza (m n.p.m.)\nwzględna – od wybranego miejsca, liczysz odejmowaniem', kolor: 1 },
+        kolumny: [{ title: 'Nizina', kolor: 3 }, { title: 'Wyżyna', kolor: 4 }, { title: 'Góry', kolor: 2 }],
+        wiersze: [
+          { label: 'wysokość nad morzem', cells: ['0–300 m n.p.m.', 'powyżej 300 m n.p.m.', 'powyżej 300 m n.p.m.'] },
+          { label: 'różnice wysokości', cells: ['małe', 'do 300 m', 'ponad 300 m'] },
+          { label: 'przykład', cells: ['Nizina Mazowiecka', 'Wyżyna Lubelska', 'Tatry'] },
+          { label: 'kolor na mapie', cells: ['zielony', 'żółty, pomarańczowy', 'brązowy, czerwony'] },
+        ],
+        bottom: { title: '💡 Zapamiętaj', text: 'Poziomice gęsto – stok stromy, rzadko – łagodny. Najwyższy szczyt Polski: Rysy (2499 m n.p.m.).', kolor: 5 },
+      },
       flashcards: [
         ['Ukształtowanie terenu', 'Kształt powierzchni Ziemi: wzniesienia, obniżenia i równiny (inaczej rzeźba terenu)'],
         ['Części wzniesienia', 'szczyt, stoki (zbocza), podnóże'],
@@ -575,6 +641,17 @@ window.SUBJECTS.push({
         <h3>Doświadczenie: gleba w słoiku</h3>
         <p>Wsyp trochę gleby do słoika z wodą, zamieszaj i odstaw. Po pewnym czasie zobaczysz <b>warstwy</b>: na dnie najcięższe ziarna (żwir, piasek), wyżej drobne cząstki (muł, glina), a na powierzchni pływają szczątki roślin. Pęcherzyki powietrza pokazują, że w glebie było powietrze.</p>
       `,
+      infographicNote: 'U góry podział skał według spójności, na dole – z czego jest gleba.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: '🪨 Skały', text: 'czy ziarna trzymają się razem?', kolor: 5 },
+        branches: [
+          { title: 'Skały lite', text: 'twarde, ziarna mocno połączone', items: ['granit, piaskowiec, wapień'], kolor: 1 },
+          { title: 'Skały zwięzłe', text: 'ziarna połączone słabiej; mokre dają się formować', items: ['glina'], kolor: 1 },
+          { title: 'Skały luźne', text: 'ziarna niepołączone, rozsypują się', items: ['piasek, żwir'], kolor: 1 },
+        ],
+        bottom: { title: '🌱 Gleba', text: 'okruchy skał + próchnica + woda + powietrze + organizmy.\nIm ciemniejsza gleba, tym zwykle więcej próchnicy.', kolor: 3 },
+      },
       flashcards: [
         ['Skały lite – przykłady', 'granit, piaskowiec, wapień'],
         ['Skała zwięzła – przykład', 'glina (mokra daje się formować)'],
@@ -644,6 +721,19 @@ window.SUBJECTS.push({
         <p>Wrzuć torebkę herbaty do gorącej wody – barwa sama rozchodzi się po całej szklance. Zapach perfum czuć po chwili w całym pokoju. Samorzutne mieszanie się substancji nazywamy <b>dyfuzją</b>. W cieple drobiny poruszają się szybciej, więc dyfuzja zachodzi szybciej.</p>
         <div class="tip">💡 Woda występuje w przyrodzie we wszystkich trzech stanach: lód (ciało stałe), woda (ciecz), para wodna (gaz).</div>
       `,
+      infographicNote: 'Porównuj w poziomie: każdy wiersz to jedna cecha w trzech stanach skupienia.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: 'Materia', text: 'wszystko, co ma masę i zajmuje miejsce. Ciało (łyżka) jest zrobione z substancji (stal).', kolor: 4 },
+        kolumny: [{ title: 'Ciało stałe', kolor: 5 }, { title: 'Ciecz', kolor: 3 }, { title: 'Gaz', kolor: 1 }],
+        wiersze: [
+          { label: 'przykład', cells: ['lód, kamień', 'woda, mleko', 'powietrze'] },
+          { label: 'kształt', cells: ['własny', 'kształt naczynia', 'całe naczynie'] },
+          { label: 'czy da się ścisnąć?', cells: ['prawie nie', 'prawie nie', 'łatwo'] },
+          { label: 'drobiny', cells: ['bardzo blisko, drgają', 'blisko, przesuwają się', 'daleko, szybki ruch'] },
+        ],
+        bottom: { title: '🍵 Dyfuzja', text: 'Drobiny stale się ruszają, więc substancje same się mieszają, np. herbata w wodzie.', kolor: 2 },
+      },
       flashcards: [
         ['Materia', 'Wszystko, co ma masę i zajmuje miejsce'],
         ['Ciało (fizyczne)', 'Konkretny przedmiot, np. łyżka, kamień, kropla'],
@@ -929,6 +1019,21 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Jeśli słyszysz grzmot, burza jest na tyle blisko, że piorun może uderzyć także w twojej okolicy. Nie czekaj – od razu szukaj schronienia.</div>
       `,
+      infographicNote: 'Każdy wiersz: składnik pogody – czym go mierzymy i w czym.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '🌦️ Pogoda', text: 'stan powietrza w danym miejscu i czasie', kolor: 1 },
+        kolumny: [{ title: 'Przyrząd', kolor: 1 }, { title: 'Jednostka', kolor: 4 }],
+        wiersze: [
+          { label: 'temperatura (mierzysz w cieniu)', cells: ['termometr', '°C'] },
+          { label: 'opady', cells: ['deszczomierz', 'mm'] },
+          { label: 'kierunek wiatru (skąd wieje)', cells: ['wiatrowskaz', 'nazwa kierunku'] },
+          { label: 'prędkość wiatru', cells: ['wiatromierz', 'm/s albo km/h'] },
+          { label: 'ciśnienie atmosferyczne', cells: ['barometr', 'hPa'] },
+          { label: 'zachmurzenie', cells: ['patrzymy na niebo', 'np. małe, duże'] },
+        ],
+        bottom: { title: '⛈️ Burza', text: 'Schowaj się w budynku. Nie stój pod samotnym drzewem, zejdź z otwartej przestrzeni, wyjdź z wody.', kolor: 2 },
+      },
       flashcards: [
         ['Składniki pogody', 'temperatura, opady, zachmurzenie, wiatr, ciśnienie atmosferyczne'],
         ['Termometr', 'Mierzy temperaturę – w °C'],
@@ -1051,6 +1156,18 @@ window.SUBJECTS.push({
           <li>Człowiek: ubiera się „na cebulkę” – kilka warstw zatrzymuje ciepło.</li>
         </ul>
       `,
+      infographicNote: 'U góry – jak powstaje chmura, niżej – co zapowiadają różne chmury.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        top: { title: '☁️ Jak powstaje chmura?', text: 'ciepłe, wilgotne powietrze unosi się i ochładza → para wodna się skrapla → kropelki wody lub kryształki lodu', kolor: 1 },
+        root: { title: 'Rodzaje chmur', kolor: 5 },
+        branches: [
+          { title: 'Kłębiaste', text: 'białe „bałwanki” – zwykle ładna pogoda; wysokie i ciemne – burza', kolor: 1 },
+          { title: 'Warstwowe', text: 'szara warstwa na całym niebie – długotrwałe opady, mżawka', kolor: 1 },
+          { title: 'Pierzaste', text: 'cienkie „piórka” wysoko, z kryształków lodu – zwykle bez opadów', kolor: 1 },
+        ],
+        bottom: { title: '💨 Wiatr', text: 'Powietrze płynie z miejsc, gdzie mocniej naciska, tam, gdzie słabiej. Nazwa – od strony, z której wieje.', kolor: 4 },
+      },
       flashcards: [
         ['Wiatr', 'Poziomy ruch powietrza – z miejsc, gdzie powietrze mocniej naciska, tam, gdzie słabiej'],
         ['Kierunek wiatru', 'Od strony, z której wieje; pokazuje go wiatrowskaz'],
@@ -1145,6 +1262,18 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Paproć ma zarodniki w brązowych kropkach na spodniej stronie liści.</div>
       `,
+      infographicNote: 'Czytaj od góry: czego roślina potrzebuje do fotosyntezy i co z niej powstaje.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '💧', title: 'Woda', text: 'pobiera ją korzeń', kolor: 1 },
+          { icon: '💨', title: 'Dwutlenek węgla', text: 'gaz z powietrza', kolor: 1 },
+          { icon: '☀️', title: 'Światło', text: 'bez światła roślina nie wytworzy pokarmu', kolor: 4 },
+          { icon: '🍃', title: 'Fotosynteza', text: 'w zielonych liściach powstaje pokarm (cukier)', kolor: 3 },
+          { icon: '🌬️', title: 'Tlen', text: 'roślina go wydziela – oddychamy nim', kolor: 3 },
+        ],
+        bottom: { title: 'Samożywne i cudzożywne', text: 'Rośliny same wytwarzają pokarm. Zwierzęta, grzyby i człowiek zjadają inne organizmy lub ich szczątki.', kolor: 5 },
+      },
       flashcards: [
         ['Składniki nieożywione przyrody', 'woda, powietrze, skały, gleba, światło słoneczne'],
         ['Element antropogeniczny', 'Stworzony przez człowieka, np. droga, most, dom'],
@@ -1260,6 +1389,17 @@ window.SUBJECTS.push({
           <li>Dbaj o czystość karmnika.</li>
         </ul>
       `,
+      infographicNote: 'U góry grzyby, pośrodku podział zwierząt, na dole – jak zwierzęta przetrwają zimę.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        top: { title: '🍄 Grzyby', text: 'Owocnik (kapelusz i trzon) wyrasta z grzybni. Zbieraj tylko grzyby, które na pewno znasz!', kolor: 4 },
+        root: { title: '🐾 Zwierzęta', kolor: 1 },
+        branches: [
+          { title: 'Kręgowce', text: 'mają kręgosłup', items: ['jeż', 'wróbel', 'żaba'], kolor: 1 },
+          { title: 'Bezkręgowce', text: 'nie mają kręgosłupa', items: ['biedronka', 'ślimak', 'dżdżownica'], kolor: 5 },
+        ],
+        bottom: { title: '❄️ Zwierzęta zimą', items: ['sen zimowy – jeż, nietoperze', 'odlot – bocian, jaskółka', 'zapasy – wiewiórka', 'zostają, np. wróbel i sikora'], kolor: 3 },
+      },
       flashcards: [
         ['Kręgowce', 'Mają kręgosłup, np. jeż, wróbel, żaba'],
         ['Bezkręgowce', 'Nie mają kręgosłupa, np. biedronka, ślimak, dżdżownica'],
@@ -1363,6 +1503,19 @@ window.SUBJECTS.push({
         </ul>
         <p>Porównuj produkty <b>w tej samej ilości</b> (np. w 100 g): jogurt z 5 g cukrów w 100 g ma ich mniej niż jogurt z 12 g cukrów w 100 g.</p>
       `,
+      infographicNote: 'U góry układ ruchu, niżej – do czego służą składniki pokarmowe i gdzie je znajdziesz.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        top: { title: '🦴 Układ ruchu', text: 'kości – część bierna, mięśnie – czynna (ciągną kości), stawy – ruchome połączenia kości', kolor: 4 },
+        root: { title: '🍽️ Składniki pokarmowe', kolor: 1 },
+        branches: [
+          { title: 'Budulcowe', text: 'białka – budują ciało', items: ['mięso, ryby, jaja, mleko, fasola'], kolor: 5 },
+          { title: 'Energetyczne', text: 'węglowodany i tłuszcze', items: ['pieczywo, kasze, ziemniaki', 'masło, olej, orzechy'], kolor: 2 },
+          { title: 'Regulujące', text: 'witaminy i sole mineralne (wapń – kości)', items: ['warzywa, owoce, mleko'], kolor: 3 },
+          { title: 'Woda i błonnik', text: 'bez wody organizm nie działa; błonnik pomaga jelitom', kolor: 1 },
+        ],
+        bottom: { title: '💡 Zapamiętaj', text: 'Żaden produkt nie ma wszystkiego – jedzenie powinno być urozmaicone.', kolor: 3 },
+      },
       flashcards: [
         ['Układ narządów', 'Narządy, które razem wykonują ważne zadanie, np. układ pokarmowy'],
         ['Szkielet', 'Bierna część układu ruchu; dorosły ma 206 kości'],
@@ -1454,6 +1607,19 @@ window.SUBJECTS.push({
           <li><b>Smog</b> i zanieczyszczone powietrze szkodzą płucom – w dni smogowe lepiej ograniczyć wysiłek na dworze.</li>
         </ul>
       `,
+      infographicNote: 'Czytaj od góry: droga tlenu z powietrza aż do komórek.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '👃', title: 'Nos', text: 'ogrzewa, nawilża i oczyszcza powietrze', kolor: 1 },
+          { title: 'Gardło → krtań', text: 'w krtani powstaje głos', kolor: 1 },
+          { title: 'Tchawica → oskrzela', text: 'prowadzą powietrze do płuc', kolor: 1 },
+          { title: 'Płuca', text: 'tlen przechodzi do krwi, dwutlenek węgla – do powietrza', kolor: 1 },
+          { icon: '❤️', title: 'Serce i krew', text: 'serce pompuje krew; krew rozwozi tlen po całym ciele', kolor: 2 },
+          { title: 'Komórki', text: 'z pomocą tlenu uwalniają energię z pokarmu; powstaje dwutlenek węgla', kolor: 3 },
+        ],
+        bottom: { title: '🚭 Co szkodzi?', text: 'dym tytoniowy (tlenek węgla utrudnia krwi przenoszenie tlenu), alkohol, smog', kolor: 4 },
+      },
       flashcards: [
         ['Oddychanie komórkowe', 'Komórki z pomocą tlenu uwalniają energię z pokarmu; powstaje dwutlenek węgla'],
         ['Droga powietrza', 'Nos → gardło → krtań → tchawica → oskrzela → płuca'],
@@ -1536,6 +1702,19 @@ window.SUBJECTS.push({
           <li><b>Antybiotyki</b> działają tylko na <b>bakterie</b> – nie leczą chorób wywołanych przez wirusy, np. grypy. Bierze się je tylko wtedy, gdy przepisze je lekarz.</li>
         </ul>
       `,
+      infographicNote: 'Porównuj w poziomie: każdej drodze zarażenia odpowiada sposób ochrony.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '🦠 Sprawcy chorób zakaźnych', text: 'bakterie, wirusy, niektóre grzyby, pasożyty', kolor: 5 },
+        kolumny: [{ title: 'Jak się zarażamy?', kolor: 2 }, { title: 'Jak się chronić?', kolor: 3 }],
+        wiersze: [
+          { label: 'droga kropelkowa', cells: ['kaszel, kichanie, mówienie', 'kichaj w chusteczkę lub łokieć'] },
+          { label: 'droga pokarmowa', cells: ['brudne ręce, niemyte owoce', 'myj ręce, owoce i warzywa'] },
+          { label: 'przez kontakt', cells: ['dotyk chorego lub jego rzeczy', 'własny kubek, ręcznik, szczoteczka'] },
+          { label: 'przez skórę', cells: ['rany, ukłucie kleszcza', 'po spacerze obejrzyj skórę'] },
+        ],
+        bottom: { title: '💉 Szczepionka i antybiotyk', text: 'Szczepionka uczy organizm rozpoznawać zarazek. Antybiotyk działa tylko na bakterie, nie na wirusy.', kolor: 1 },
+      },
       flashcards: [
         ['Drobnoustroje', 'Organizmy (i wirusy) widoczne dopiero pod mikroskopem'],
         ['Bakterie', 'Organizmy jednokomórkowe; większość nieszkodliwa lub pożyteczna, niektóre wywołują choroby (np. anginę)'],
@@ -1632,6 +1811,18 @@ window.SUBJECTS.push({
         </table>
         <p><b>Człowiek a las:</b> ludzie wycinają lasy i sadzą nowe. Często sadzono lasy z jednego gatunku drzew (np. samej sosny) – takie lasy łatwiej niszczą szkodniki, np. korniki. Lasowi szkodzą też śmieci, hałas i pożary. W lesie nie hałasuj, nie rozpalaj ogniska poza wyznaczonym miejscem i zabieraj śmieci ze sobą.</p>
       `,
+      infographicNote: 'Czytaj od góry: warstwy lasu od koron drzew aż do ściółki.',
+      infographic: {
+        type: 'kroki',
+        top: { title: '🌳 Warstwy lasu – od góry', kolor: 5 },
+        items: [
+          { icon: '🌲', title: 'Korony drzew', text: 'sosna, świerk, dąb, buk; wiewiórka, gniazda ptaków', kolor: 3 },
+          { icon: '🌿', title: 'Podszyt', text: 'młode drzewa i krzewy, np. leszczyna, jarzębina', kolor: 3 },
+          { icon: '🍄', title: 'Runo leśne', text: 'mchy, paprocie, borówka czarna, grzyby', kolor: 3 },
+          { icon: '🍂', title: 'Ściółka', text: 'opadłe liście i igły – rozkładane na próchnicę', kolor: 4 },
+        ],
+        bottom: { title: '💡 Im niższa warstwa…', text: 'tym mniej światła, większa wilgotność i słabszy wiatr.', kolor: 1 },
+      },
       flashcards: [
         ['Ekosystem', 'Miejsce w przyrodzie razem z organizmami, które w nim żyją, i warunkami, jakie tam panują'],
         ['Ekosystemy naturalne – przykłady', 'las naturalny (np. Puszcza Białowieska), jezioro, rzeka, torfowisko'],
@@ -1713,6 +1904,20 @@ window.SUBJECTS.push({
         </table>
         <p><b>Pszenżyto</b> to zboże powstałe ze skrzyżowania pszenicy z żytem. Rolnicy prowadzą też <b>chów zwierząt</b> (krowy, świnie, kury) – dla mleka, mięsa i jaj; część upraw to pasza dla tych zwierząt.</p>
       `,
+      infographicNote: 'Porównuj w poziomie: jakie są warunki na lądzie i w wodzie i jak organizmy się do nich przystosowały.',
+      infographic: {
+        type: 'porownanie',
+        kolumny: [{ title: '🌳 Na lądzie', kolor: 4 }, { title: '🌊 W wodzie', kolor: 1 }],
+        wiersze: [
+          { label: 'tlen', cells: ['dużo – w powietrzu', 'mniej – rozpuszczony w wodzie'] },
+          { label: 'ruch', cells: ['mały opór, nie podtrzymuje ciała', 'duży opór, ale podtrzymuje ciało'] },
+          { label: 'temperatura', cells: ['duże zmiany', 'zmienia się wolniej i mniej'] },
+          { label: 'światło', cells: ['dociera łatwo', 'im głębiej, tym ciemniej'] },
+          { label: 'czym oddychają?', cells: ['płuca', 'skrzela'], bold: true },
+          { label: 'przystosowania', cells: ['łuski, pancerz – przed wysychaniem', 'opływowy kształt, płetwy, śluz'] },
+        ],
+        bottom: { title: '🐸 Płazy', text: 'Kijanki żyją w wodzie i oddychają skrzelami. Dorosłe oddychają płucami i skórą.', kolor: 3 },
+      },
       flashcards: [
         ['Ląd a woda – tlen', 'Na lądzie więcej tlenu; w wodzie mniej – rozpuszczony w wodzie'],
         ['Ląd a woda – ruch', 'Powietrze – mały opór; woda – duży opór, ale podtrzymuje ciało'],
@@ -1811,6 +2016,18 @@ window.SUBJECTS.push({
         </ul>
         <p><b>Po co ludziom rzeki i jeziora?</b> Dają wodę (do picia, dla rolnictwa i fabryk), ryby, prąd z elektrowni wodnych, służą do transportu i wypoczynku.</p>
       `,
+      infographicNote: 'Czytaj od góry: droga rzeki od źródła do ujścia.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '⛰️', title: 'Źródło', text: 'tu rzeka bierze początek; Wisła – Barania Góra', kolor: 3 },
+          { title: 'Bieg górny', text: 'woda płynie szybko; wąska, stroma dolina, wodospady', kolor: 1 },
+          { title: 'Bieg środkowy', text: 'wolniej; rzeka poszerza dolinę, powstają zakola i starorzecza', kolor: 1 },
+          { title: 'Bieg dolny', text: 'najwolniej; rzeka osadza piasek i muł', kolor: 1 },
+          { icon: '🌊', title: 'Ujście', text: 'rzeka wpada do innej rzeki, jeziora lub morza; Wisła – do Zatoki Gdańskiej', kolor: 5 },
+        ],
+        bottom: { title: '🧍 Lewy czy prawy brzeg?', text: 'Stań twarzą do ujścia: po lewej ręce – lewy brzeg i lewe dopływy.', kolor: 4 },
+      },
       flashcards: [
         ['Wody płynące – przykłady', 'strumień, potok, rzeka, kanał'],
         ['Wody stojące – przykłady', 'jezioro, staw, zbiornik zaporowy'],
@@ -1914,6 +2131,19 @@ window.SUBJECTS.push({
           <li>sadzić drzewa i dbać o zieleń – rośliny zatrzymują pyły i pobierają dwutlenek węgla.</li>
         </ul>
       `,
+      infographicNote: 'U góry skład powietrza, niżej porównanie tlenu i dwutlenku węgla – czytaj w poziomie.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '🌬️ Powietrze – mieszanina gazów', text: 'na 100 części: azot – 78, tlen – 21, inne gazy – ok. 1', kolor: 5 },
+        kolumny: [{ title: 'Tlen', kolor: 1 }, { title: 'Dwutlenek węgla', kolor: 4 }],
+        wiersze: [
+          { label: 'stan, barwa, zapach', cells: ['gaz bez barwy i zapachu', 'gaz bez barwy i zapachu'] },
+          { label: 'palenie', cells: ['podtrzymuje – drzazga się zapala', 'nie podtrzymuje – płomień gaśnie'] },
+          { label: 'dla organizmów', cells: ['potrzebny do oddychania', 'wydychamy go; rośliny pobierają do fotosyntezy'] },
+          { label: 'w wodzie', cells: ['rozpuszcza się słabo', 'bąbelki w wodzie gazowanej'] },
+        ],
+        bottom: { title: '🏭 Smog', text: 'dużo dymu i spalin + brak wiatru, zwykle zimą. Nigdy nie pal śmieci!', kolor: 2 },
+      },
       flashcards: [
         ['Powietrze to…', 'mieszanina gazów (głównie azotu i tlenu)'],
         ['Najwięcej w powietrzu jest…', 'azotu – ok. 78 części na 100'],
@@ -1992,6 +2222,19 @@ window.SUBJECTS.push({
         <h3>Ochrona przyrody w twojej okolicy</h3>
         <p>Rozejrzyj się: w wielu miejscowościach są pomniki przyrody – stare drzewa albo duże głazy z tabliczką. W okolicy może być też rezerwat albo park krajobrazowy. Informacje znajdziesz na tablicach w terenie i na stronach gminy.</p>
       `,
+      infographicNote: 'Od góry: obszary chronione od największego, niżej pojedyncze twory i gatunki.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: 'Formy ochrony przyrody', text: 'w ustawie jest ich 10 – oto najważniejsze', kolor: 5 },
+        branches: [
+          { title: '🏞️ Park narodowy', text: 'duży obszar – chroniona cała przyroda i krajobraz, np. Białowieski', kolor: 3 },
+          { title: 'Rezerwat przyrody', text: 'mniejszy obszar w stanie naturalnym, np. fragment lasu, torfowisko', kolor: 3 },
+          { title: 'Park krajobrazowy', text: 'cenna przyroda, historia, kultura i krajobraz; mogą tam mieszkać ludzie', kolor: 3 },
+          { title: '🌳 Pomnik przyrody', text: 'np. stare drzewo, głaz narzutowy, wodospad, jaskinia', kolor: 4 },
+          { title: 'Ochrona gatunkowa', text: 'wybrane gatunki – chronione wszędzie, gdzie występują, np. żubr', kolor: 1 },
+        ],
+        bottom: { title: '🥾 Zasada turysty', text: 'Idź szlakiem, nie hałasuj, niczego nie zrywaj i zabierz śmieci ze sobą.', kolor: 2 },
+      },
       flashcards: [
         ['Ile jest form ochrony przyrody w ustawie?', '10'],
         ['Park narodowy', 'Duży obszar (min. 1000 ha), w którym chroni się całą przyrodę i krajobraz'],
@@ -2067,6 +2310,17 @@ window.SUBJECTS.push({
         <p>1) Wsyp mieszaninę do wody i zamieszaj – sól się rozpuści, piasek nie. 2) Przesącz – piasek zostanie na sączku. 3) Odparuj wodę z przesączu – zostanie sól.</p>
         <div class="tip">⚠️ Doświadczenia z ogrzewaniem rób tylko z dorosłym. W pracowni nie próbuj niczego na smak.</div>
       `,
+      infographicNote: 'Pośrodku podział mieszanin, a pod każdym rodzajem – jak go rozdzielić.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        top: { title: '🥄 Rozpuszczanie', text: 'cukier w wodzie → roztwór. Szybciej: mieszanie, rozdrobnienie, wyższa temperatura', kolor: 1 },
+        root: { title: 'Mieszanina', text: 'co najmniej dwie substancje; każda zachowuje swoje właściwości', kolor: 5 },
+        branches: [
+          { title: 'Jednorodna', text: 'składników nie widać, np. woda z solą', items: ['odparowanie – zostaje sól', 'krystalizacja – kryształki soli'], kolor: 1 },
+          { title: 'Niejednorodna', text: 'składniki widać, np. woda z piaskiem', items: ['sedymentacja', 'dekantacja', 'sączenie', 'sposoby mechaniczne: sito, magnes'], kolor: 4 },
+        ],
+        bottom: { title: '⚠️ Uwaga', text: 'Sączenie nie rozdzieli wody i soli – sól przecieka razem z wodą przez sączek.', kolor: 2 },
+      },
       flashcards: [
         ['Roztwór', 'Mieszanina jednorodna, która powstaje np. po rozpuszczeniu cukru lub soli w wodzie'],
         ['Substancje rozpuszczalne w wodzie – przykłady', 'cukier, sól kuchenna, kawa rozpuszczalna'],
@@ -2140,6 +2394,19 @@ window.SUBJECTS.push({
         <h3>Na co dzień</h3>
         <p>Kamizelka ratunkowa i koło ratunkowe są wypełnione lekkim materiałem albo powietrzem – zmniejszają gęstość „człowieka z kamizelką” i utrzymują go na wodzie.</p>
       `,
+      infographicNote: 'Porównuj w poziomie: co tonie, a co pływa – i dlaczego.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '⚖️ Gęstość', text: 'ile masy mieści się w określonej objętości substancji', kolor: 5 },
+        kolumny: [{ title: '⬇️ Tonie', kolor: 2 }, { title: '⬆️ Pływa', kolor: 1 }],
+        wiersze: [
+          { label: 'gęstość w porównaniu z wodą', cells: ['większa', 'mniejsza'], bold: true },
+          { label: 'przykłady', cells: ['kamień, gwóźdź, moneta', 'korek, styropian, lód'] },
+          { label: 'plastelina', cells: ['kulka', 'łódeczka – w środku powietrze'] },
+          { label: 'jajko', cells: ['w wodzie z kranu', 'w bardzo mocno osolonej wodzie'] },
+        ],
+        bottom: { title: '🧊 Woda jest wyjątkowa', text: 'Lód ma mniejszą gęstość niż woda, więc pływa. Jezioro nie zamarza do dna.', kolor: 3 },
+      },
       flashcards: [
         ['Gęstość', 'Ile masy mieści się w określonej objętości substancji'],
         ['Kiedy ciało tonie w wodzie?', 'Gdy ma większą gęstość niż woda'],
@@ -2222,6 +2489,18 @@ window.SUBJECTS.push({
         </table>
         <div class="tip">⚠️ Nigdy nie patrz na Słońce gołym okiem ani przez lornetkę – także podczas zaćmienia. Możesz trwale uszkodzić wzrok. Zaćmienie Słońca ogląda się tylko przez specjalne okulary do obserwacji Słońca.</div>
       `,
+      infographicNote: 'U góry planety, pośrodku porównanie dwóch ruchów Ziemi – czytaj w poziomie.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '☀️ Słońce i 8 planet', text: 'skaliste: Merkury, Wenus, Ziemia, Mars\ngazowe olbrzymy: Jowisz, Saturn, Uran, Neptun', kolor: 4 },
+        kolumny: [{ title: '🔄 Ruch obrotowy', kolor: 1 }, { title: '🔁 Ruch obiegowy', kolor: 3 }],
+        wiersze: [
+          { label: 'Ziemia krąży…', cells: ['wokół własnej osi', 'wokół Słońca'] },
+          { label: 'ile trwa?', cells: ['prawie 24 h – doba', 'ok. 365 dni i ćwierć doby – rok'] },
+          { label: 'skutek', cells: ['dzień i noc', 'pory roku (z nachyleniem osi)'], bold: true },
+        ],
+        bottom: { title: '🌙 Fazy Księżyca', text: 'nów → pierwsza kwadra → pełnia → ostatnia kwadra; cykl ok. 29,5 dnia', kolor: 5 },
+      },
       flashcards: [
         ['Słońce', 'Gwiazda w środku Układu Słonecznego; świeci własnym światłem'],
         ['Ile planet krąży wokół Słońca?', '8'],
@@ -2319,6 +2598,20 @@ window.SUBJECTS.push({
         <p><b>Izolacja cieplna</b> zatrzymuje ciepło. W przyrodzie chronią przed zimnem <b>futro</b> ssaków, <b>pióra i puch</b> ptaków, gruba warstwa <b>tłuszczu</b> (np. u fok) i <b>pokrywa śnieżna</b>, która chroni glebę i rośliny przed mrozem. Ludzie ocieplają domy styropianem albo wełną mineralną i noszą zimą kilka warstw ubrań – między nimi jest powietrze, które słabo przewodzi ciepło.</p>
         <div class="tip">⚠️ Metalowa łyżka w gorącej zupie szybko się nagrzewa – możesz się oparzyć. Drewniana zostaje chłodna.</div>
       `,
+      infographicNote: 'Porównuj w poziomie: metale i niemetale; u góry stopy, na dole korozja.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '🔥 Stopy metali', text: 'stal = żelazo + węgiel\nbrąz = miedź + cyna\nmosiądz = miedź + cynk', kolor: 5 },
+        kolumny: [{ title: 'Metale', kolor: 1 }, { title: 'Niemetale', kolor: 4 }],
+        wiersze: [
+          { label: 'przykłady', cells: ['żelazo, miedź, złoto', 'tlen, siarka, węgiel'] },
+          { label: 'stan skupienia', cells: ['prawie wszystkie stałe (rtęć – ciecz)', 'stałe, gazy (brom – ciecz)'] },
+          { label: 'połysk', cells: ['metaliczny połysk', 'zwykle bez połysku'] },
+          { label: 'prąd i ciepło', cells: ['dobrze przewodzą', 'zwykle nie przewodzą'] },
+          { label: 'kucie, wyginanie', cells: ['kowalne', 'stałe są kruche'] },
+        ],
+        bottom: { title: '🟤 Korozja (rdzewienie)', text: 'Żelazo rdzewieje, gdy ma wodę i tlen; sól to przyspiesza. Chroni farba, smar, cynkowanie.', kolor: 2 },
+      },
       flashcards: [
         ['Metale – przykłady', 'żelazo, miedź, glin (aluminium), cynk, cyna, srebro, złoto, rtęć'],
         ['Właściwości metali', 'metaliczny połysk, dobrze przewodzą prąd i ciepło, są kowalne; prawie wszystkie stałe'],
@@ -2434,6 +2727,17 @@ window.SUBJECTS.push({
           <li>Nasiona też „latają”: puch mniszka lekarskiego (dmuchawca) działa jak spadochron, a skrzydlaki klonu wirują jak śmigło – zwiększają opór, dzięki czemu wiatr niesie je daleko.</li>
         </ul>
       `,
+      infographicNote: 'Trzy siły z działu: co robi każda i od czego zależy.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: 'Siły wokół nas', kolor: 5 },
+        branches: [
+          { title: '🌍 Grawitacja', text: 'Ziemia przyciąga wszystkie ciała – spadają w dół', items: ['na Księżycu ok. 6 razy słabsza'], kolor: 1 },
+          { title: 'Tarcie', text: 'utrudnia przesuwanie; większe na szorstkiej powierzchni i przy większym nacisku', items: ['więcej: piasek na lodzie, bieżnik', 'mniej: smar, gładkie płozy łyżew'], kolor: 4 },
+          { title: '🪂 Opór powietrza', text: 'hamuje ruch; większy przy większej powierzchni i prędkości', items: ['mniejszy przy kształcie opływowym'], kolor: 3 },
+        ],
+        bottom: { title: '🐦 W przyrodzie', text: 'Lądując, ptak rozkłada skrzydła – zwiększa opór. Nurkując, składa je – zmniejsza opór.', kolor: 2 },
+      },
       flashcards: [
         ['Masa', 'Ile jest substancji w ciele; mierzymy ją wagą (g, dag, kg, t)'],
         ['Grawitacja', 'Przyciąganie ciał przez Ziemię – dlatego przedmioty spadają w dół'],
@@ -2511,6 +2815,19 @@ window.SUBJECTS.push({
         </ul>
         <p>Na <b>północy</b> (pojezierza) te ślady są „świeże”: wzgórza są wyraźne, a jezior jest bardzo dużo. Na <b>nizinach środkowopolskich</b> lądolód był dawno – wzgórza zostały wyrównane, a jeziora zarosły. Dlatego pojezierza są tylko na północy Polski.</p>
       `,
+      infographicNote: 'Czytaj od góry: pasy rzeźby Polski od morza (północ) do gór (południe).',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '🏖️', title: 'Pobrzeża', text: 'nad Bałtykiem: plaże, wydmy, płaski teren', kolor: 3 },
+          { title: 'Pojezierza', text: 'pofałdowany teren, liczne jeziora polodowcowe', kolor: 3 },
+          { title: 'Niziny środkowopolskie', text: 'równiny, dużo pól i łąk', kolor: 3 },
+          { title: 'Wyżyny', text: 'skałki i jaskinie, np. Wyżyna Krakowsko-Częstochowska', kolor: 4 },
+          { title: 'Kotliny podgórskie', text: 'płaskie obniżenia u podnóża Karpat', kolor: 3 },
+          { icon: '⛰️', title: 'Góry', text: 'Sudety i Karpaty (np. Tatry)', kolor: 2 },
+        ],
+        bottom: { title: '🧊 Lądolód skandynawski', text: 'Nasuwał się z północy. Zostawił wzgórza morenowe, głazy narzutowe i jeziora polodowcowe.', kolor: 1 },
+      },
       flashcards: [
         ['Pasy rzeźby Polski od północy', 'pobrzeża, pojezierza, niziny środkowopolskie, wyżyny, kotliny podgórskie, góry'],
         ['Pobrzeża', 'Wąski pas nad Bałtykiem: plaże, wydmy, płaski teren'],
