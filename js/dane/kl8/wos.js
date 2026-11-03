@@ -231,7 +231,7 @@ window.SUBJECTS.push({
       infographicNote: 'Czytaj od góry: gdy łamane są twoje prawa, idź krok po kroku – od rozmowy z nauczycielem do Rzecznika Praw Dziecka.',
       infographic: {
         type: 'kroki',
-        top: { icon: '📜', title: 'Statut szkoły', text: 'prawa i obowiązki uczniów oraz tryb składania skarg', kolor: 4 },
+        top: { title: '⚠️ Twoje prawa są łamane?', text: 'np. niejawna ocena bez uzasadnienia, upokarzanie przy klasie', kolor: 2 },
         items: [
           { title: 'Rozmowa z nauczycielem', kolor: 1 },
           { title: 'Wychowawca, pedagog', kolor: 1 },
@@ -240,6 +240,7 @@ window.SUBJECTS.push({
           { title: 'Kuratorium oświaty', text: 'nadzór pedagogiczny', kolor: 5 },
           { title: 'Rzecznik Praw Dziecka', kolor: 5 },
         ],
+        bottom: { title: '📜 Statut szkoły', text: 'zapisuje prawa i obowiązki uczniów oraz tryb składania skarg', kolor: 4 },
       },
       flashcards: [
         ['Funkcje szkoły', 'Kształcąca, wychowawcza, opiekuńcza, kulturalna'],
@@ -388,7 +389,7 @@ window.SUBJECTS.push({
           { label: 'Kogo chroni?', cells: ['dzieci (do 18 lat)', 'wszystkich'], bold: true },
           { label: 'Kto powołuje i na ile?', cells: ['Sejm za zgodą Senatu, 5 lat', 'Sejm za zgodą Senatu, 5 lat'] },
           { label: 'Co może?', cells: ['zbadać sprawę na miejscu, żądać wyjaśnień', 'wystąpić do urzędu, złożyć wniosek do TK'] },
-          { label: 'Jak się zwrócić?', cells: ['telefon 800 12 12 12 – bezpłatny, całodobowy', 'wniosek bezpłatny, bez specjalnej formy'] },
+          { label: 'Jak się zwrócić?', cells: ['telefon 800\u00a012\u00a012\u00a012 – bezpłatny, całodobowy', 'wniosek bezpłatny, bez specjalnej formy'] },
         ],
         bottom: { title: '🤝 Organizacje pozarządowe', text: 'Amnesty International, Helsińska Fundacja Praw Człowieka, Polska Akcja Humanitarna', kolor: 5 },
       },
@@ -453,7 +454,7 @@ window.SUBJECTS.push({
       infographicNote: 'Czytaj od góry: co robić, gdy spotyka cię przemoc, potem oś wieku – od ilu lat za co odpowiadasz – i twoje prawa przy zatrzymaniu.',
       infographic: {
         type: 'os',
-        top: { title: '🆘 Przemoc? Powiedz dorosłemu', text: 'policja 112 · Rzecznik Praw Dziecka 800 12 12 12 · telefon zaufania 116 111', kolor: 2 },
+        top: { title: '🆘 Przemoc? Powiedz dorosłemu', text: 'policja 112 · Rzecznik Praw Dziecka 800\u00a012\u00a012\u00a012 · telefon zaufania 116\u00a0111', kolor: 2 },
         items: [
           { label: '10 lat', title: 'Demoralizacja', text: 'postępowanie (do pełnoletności), np. za wagary', kolor: 1 },
           { label: '13 lat', title: 'Czyn karalny → sąd rodzinny', text: 'środki wychowawcze, leczniczy albo poprawczy', kolor: 1 },
@@ -696,9 +697,9 @@ window.SUBJECTS.push({
         <div class="tip">💡 Narodowość = <b>czujesz</b>, obywatelstwo = <b>masz w dokumentach</b>. Mniejszości: <b>9 narodowych + 4 etniczne + 1 język regionalny</b> (od 16.12.2026 – 10 narodowych).</div>`,
       infographicNote: 'Czytaj od góry: obywatelstwo to więź z państwem – a narodowość może być różna; mniejszości to też obywatele polscy.',
       infographic: {
-        type: 'drzewo', kolumny: 2,
+        type: 'drzewo', kolumny: 1,
         top: { title: 'Narodowość – czujesz\nObywatelstwo – masz w dokumentach', kolor: 4 },
-        root: { title: 'Obywatel RP', text: 'więź prawna z państwem: prawa i obowiązki', kolor: 1 },
+        root: { title: 'Obywatel RP', text: 'więź prawna z państwem', kolor: 1 },
         branches: [
           { title: 'Jak zostać obywatelem?', items: ['urodzenie: rodzic – obywatel polski', 'nadanie przez Prezydenta RP'], kolor: 1 },
           { title: 'Obowiązki', items: ['wierność RP i troska o dobro wspólne', 'przestrzeganie prawa', 'podatki', 'obrona Ojczyzny', 'dbałość o środowisko'], kolor: 2 },
@@ -945,7 +946,7 @@ window.SUBJECTS.push({
         kolumny: [{ title: 'Sejm', kolor: 1 }, { title: 'Senat', kolor: 5 }],
         wiersze: [
           { label: 'Skład', cells: ['460 posłów', '100 senatorów'], bold: true },
-          { label: 'Wybory', cells: ['proporcjonalne, 41 okręgów, próg 5%', 'większościowe, 100 okręgów jednomandatowych'] },
+          { label: 'Wybory', cells: ['proporcjonalne, 41\u00a0okręgów, próg\u00a05%', 'większościowe, 100\u00a0okręgów jednomandatowych'] },
           { label: 'Kandydat – od ilu lat?', cells: ['21 lat', '30 lat'], bold: true },
           { label: 'Kadencja', cells: ['4 lata', '4 lata'], bold: true },
           { label: 'Ustawy', cells: ['uchwala w trzech czytaniach', 'w 30 dni: przyjmuje, poprawia albo odrzuca'] },
@@ -1018,10 +1019,10 @@ window.SUBJECTS.push({
       infographicNote: 'Czytaj od góry: trzy władze (niebieska, pomarańczowa, fioletowa) równoważą się i kontrolują nawzajem.',
       infographic: {
         type: 'drzewo', kolumny: 1,
-        top: { title: '⚖️ Państwo prawa (art. 7)', text: 'organy władzy działają na podstawie i w granicach prawa', kolor: 4 },
+        top: { title: '⚖️ Państwo prawa (art. 7)', text: 'organy władzy działają na podstawie i w granicach prawa', kolor: 3 },
         root: { title: 'Trójpodział władzy (art. 10)', text: 'władze się równoważą i kontrolują', kolor: 4 },
         branches: [
-          { title: '🏛️ Ustawodawcza: Sejm i Senat', items: ['Sejm odrzuca weto prezydenta większością 3/5', 'rząd potrzebuje poparcia większości w Sejmie'], kolor: 1 },
+          { title: '🏛️ Ustawodawcza: Sejm i Senat', items: ['Sejm odrzuca weto prezydenta większością\u00a03/5', 'rząd potrzebuje poparcia większości w Sejmie'], kolor: 1 },
           { title: '👔 Wykonawcza: Prezydent i Rada Ministrów', items: ['Prezydent: 5 lat, ponownie tylko raz; podpisuje ustawy albo weto', 'Rada Ministrów: premier i ministrowie; wykonuje ustawy'], kolor: 2 },
           { title: '⚖️ Sądownicza: sądy i trybunały', items: ['sądy niezależne, sędziowie niezawiśli', 'co najmniej dwie instancje', 'TK: 15 sędziów na 9 lat; bada zgodność ustaw z Konstytucją'], kolor: 5 },
         ],
@@ -1090,17 +1091,17 @@ window.SUBJECTS.push({
         <h3>Problemy współczesnego świata</h3>
         <p>Wojny i uchodźstwo, głód i ubóstwo, zmiany klimatu, choroby, terroryzm. Pomóc możesz np. przez wolontariat, wsparcie organizacji humanitarnych (np. UNICEF, PAH), odpowiedzialne zakupy, oszczędzanie wody i energii.</p>
         <div class="tip">💡 Daty Polski: <b>NATO – 12 III 1999</b>, <b>UE – 1 V 2004</b>. ONZ – pokój na świecie, NATO – wspólna obrona (art. 5), UE – wspólny rynek i wartości.</div>`,
-      infographicNote: 'Porównuj w poziomie: każda organizacja ma inny główny cel; w wierszu „Polska od” – daty do zapamiętania.',
+      infographicNote: 'Porównuj w poziomie: każda organizacja ma inny główny cel; w wierszu „Polska należy” – daty do zapamiętania.',
       infographic: {
         type: 'porownanie',
         kolumny: [{ title: 'ONZ', kolor: 1 }, { title: 'NATO', kolor: 2 }, { title: 'UE', kolor: 5 }],
         wiersze: [
           { label: 'Główny cel', cells: ['pokój na świecie', 'wspólna obrona', 'wspólny rynek'], bold: true },
           { label: 'Ile państw?', cells: ['193', '32', '27'], bold: true },
-          { label: 'Polska od', cells: ['początku', '12.03.1999', '1.05.2004'], bold: true },
+          { label: 'Polska należy', cells: ['od początku', 'od 12.03.1999', 'od 1.05.2004'], bold: true },
           { label: 'Hasło do zapamiętania', cells: ['Rada Bezpieczeństwa', 'artykuł 5', 'strefa Schengen'] },
         ],
-        bottom: { title: '🇪🇺 Co daje ci UE?', items: ['praca, nauka i mieszkanie w innych krajach UE', 'podróże bez kontroli granicznej w strefie Schengen', 'fundusze unijne dla gmin i regionów'], kolor: 3 },
+        bottom: { title: '🇪🇺 Co daje ci UE?', items: ['praca, nauka i mieszkanie w innych krajach\u00a0UE', 'podróże bez kontroli granicznej w strefie Schengen', 'fundusze unijne dla gmin i regionów'], kolor: 3 },
       },
       flashcards: [
         ['Karta Narodów Zjednoczonych', 'Podpisana 26 czerwca 1945 r. w San Francisco; weszła w życie 24 października 1945 r.'],
