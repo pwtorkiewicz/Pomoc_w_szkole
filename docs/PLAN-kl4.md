@@ -26,7 +26,7 @@ Cel: pomoc w bieżącej nauce **wszystkich przedmiotów klasy 4**, zgodnie z pod
 | Plastyka | 1 | 4 działy (aktywność twórcza, techniki, sztuka jako komunikat, sztuka w życiu) | C – tylko wiedza (np. barwy, techniki) |
 | Wychowanie fizyczne | 4 | osobny blok „Klasa IV”, 8 działów | C – tylko zasady bezpieczeństwa, gier, fair play |
 
-Pomijamy (decyzja rodzica): edukację zdrowotną, także „edukację zdrowotną – zdrowie seksualne”. Pomijamy też etykę i religię.
+Pomijamy (decyzja rodzica): edukację zdrowotną, także „edukację zdrowotną – zdrowie seksualne”. Pomijamy też etykę i religię jako przedmioty; elementy związane z religią katolicką w innych przedmiotach (np. kolędy i tradycje świąteczne w muzyce) – tak (decyzja rodzica, 3.11.2026).
 
 A – pełny materiał (lekcje, ściąga, fiszki, quiz, zadania). B – ściąga, fiszki, quiz. C – krótka ściąga i quiz z wiedzy, bez części praktycznej.
 
@@ -125,7 +125,8 @@ Zakres podręczników a działy aplikacji (stan po etapie 10):
   - [ ] Informatyka: szukanie informacji w internecie – wyszukiwarka, słowa kluczowe, wiarygodność źródeł, fałszywe informacje i deepfejki (rozdział II.3; podstawa dz. 5 – krytyczna ocena informacji); komunikacja w internecie – e-mail, komunikatory, adres e-mail (rozdział II.4).
   - [ ] Informatyka: grafika komputerowa – kopiowanie i przekształcanie fragmentów, warstwy (rozdział III.2–3); Scratch – duszek, scena, bloki „powiedz” i „pomyśl”, sterowanie duszkiem klawiszami (rozdział V) – rozbudowa działu „Algorytmy i programowanie”.
   - [ ] Informatyka: wydzielić z działu „Grafika, tekst, arkusz, prezentacja i AI” arkusz, prezentację i AI do osobnego działu „na zapas” (w podręczniku kl. 5–6); pytania przenosimy razem z ich `id`.
-  - [ ] Muzyka: muzyka w kalendarzu szkolnym – Dzień Edukacji Narodowej, święta majowe, Dzień Matki i Ojca, Dzień Dziecka (rozdziały I, III, IV); **kolędy i tradycje wielkanocne (rozdział II.1–2, III.4) – do decyzji rodzica** (wiążą się z religią; w kl. 3 są w dziale „Święta i zwyczaje”).
+  - [x] Muzyka: dział „Kolędy i tradycje świąt: Boże Narodzenie i Wielkanoc” (rozdziały II.1–2 i III.4; decyzja rodzica 3.11.2026 – elementy religii katolickiej wolno dodawać; 19 fiszek, 22 pytania, infografika – porównanie świąt; bez lekcji): kolęda i pastorałka, okres kolędowania (24 XII – 2 II), „Bóg się rodzi” (F. Karpiński, polonez), „Lulajże, Jezuniu” (kołysanka, Scherzo h-moll Chopina), „Wśród nocnej ciszy” (pasterka), Adwent i ligawka, Wigilia, pasterka, kolędnicy (gwiazda, szopka, turoń, herody, jasełka), O. Kolberg; Wielkanoc (data), Niedziela Palmowa, święconka, rezurekcja, pisanki i kraszanki, śmigus-dyngus, średniowieczne pieśni wielkanocne; muzyka religijna i obrzędowa (dz. 1 wym. 2, dz. 2 wym. 5, dz. 3 wym. 4 i 6). Fakty: lekcje ZPE i Słownik języka polskiego PWN (szczegóły w `basis`); pominięte – rytm „Jezus malusieńki” (źródła różne). Strony ZPE o Wielkanocy („Wielkanocne tradycje”, „Lane święta”) były z sesji niedostępne (403) – potrawy w święconce za opisem ZPE w wynikach wyszukiwarki.
+  - [ ] Muzyka: muzyka w kalendarzu szkolnym – Dzień Edukacji Narodowej, święta majowe, Dzień Matki i Ojca, Dzień Dziecka (rozdziały I, III, IV).
   - [ ] Muzyka: „Cudowne dzieci muzyki” (rozdział II.6) i muzyka ilustracyjna – „O czym może mówić muzyka?” (rozdział IV.3); fakty o kompozytorach – tylko sprawdzone.
   - [ ] Muzyka: tańce narodowe poza krakowiakiem, „Rota” i twórczość Chopina – w podręczniku w kolejnych klasach; rozważyć wydzielenie do działu „na zapas”.
   - [ ] Plastyka: historia sztuki z podręcznika – sztuka prehistoryczna, starożytny Egipt, antyk (wstawki w rozdziałach I–III); sztuka w naszym otoczeniu i zabytki regionów Polski (rozdział III.2–3) – fakty o zabytkach sprawdzić (np. w rejestrze NID).

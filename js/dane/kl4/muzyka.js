@@ -381,5 +381,123 @@ window.SUBJECTS.push({
         { id: 'k3hle5', q: 'Kiedy klaszczesz na koncercie muzyki poważnej?', options: ['po zakończeniu całego utworu', 'w każdej przerwie między częściami', 'w trakcie gry, do rytmu', 'w ogóle nie klaszczę'], answer: 0, explain: 'Brawa są po całym utworze. Krótka cisza między częściami utworu to jeszcze nie koniec.' },
       ],
     },
+    {
+      id: 'swieta-w-muzyce',
+      name: 'Kolędy i tradycje świąt: Boże Narodzenie i Wielkanoc',
+      chapter: 'rozdziały II „Zimowy czas” (świąteczne tradycje, kolędujemy!) i III „Rytmy wiosny” (wielkanocne tradycje)',
+      basis: 'Dz.U. 2026 poz. 378, muzyka (II etap, przedmiot w kl. IV–VII): dz. 1 „Uczeń jako twórca i wykonawca”, wym. 2 (utwory z repertuaru tradycyjnego i ludowego – moduł kultura); dz. 2 „Uczeń jako słuchacz”, wym. 5 (funkcje muzyki: religijna, obrzędowa); dz. 3 „Uczeń jako uczestnik kultury”, wym. 4 (cechy polskiej muzyki tradycyjnej, pojęcia związane z folklorem), wym. 6 (utwory Fryderyka Chopina – Scherzo h-moll). Temat z podręcznika „Wszystko gra 4” (rozdziały II i III); elementy związane z religią katolicką – decyzja rodzica (3.11.2026). Fakty sprawdzone 3.11.2026: lekcje ZPE (zpe.gov.pl) „Polskie obyczaje bożonarodzeniowe: kolęda, pastorałka, kolędnicy i kolędowanie”, „Kolędujmy małemu – tradycje Bożego Narodzenia”, „Oj Maluśki – kolędy i pastorałki”, „Kolęda w muzyce artystycznej”, „Sztuka ludowa. Kalendarz świąt”, „Muzyka polskiego średniowiecza”; definicje – Słownik języka polskiego PWN (sjp.pwn.pl): kolęda, pastorałka, pasterka, adwent, turoń, jasełka, Wielkanoc, palma, święconka, rezurekcja, pisanka, kraszanka, śmigus-dyngus. Pominięte, bo źródła się różnią: rytm kolędy „Jezus malusieńki” (kujawiak albo chodzony).',
+      theory: `
+        <h3>Kolęda i pastorałka</h3>
+        <table>
+          <tr><th>Pieśń</th><th>Co to jest</th></tr>
+          <tr><td><b>kolęda</b></td><td>pieśń religijna o narodzeniu Jezusa Chrystusa</td></tr>
+          <tr><td><b>pastorałka</b></td><td>ludowa pieśń o Bożym Narodzeniu, wesoła i lekka; często opowiada o pasterzach i wiejskich zwyczajach – np. „Oj maluśki, maluśki” z Podhala</td></tr>
+        </table>
+        <ul>
+          <li>Kolędy i pastorałki śpiewa się <b>od 24 grudnia do 2 lutego</b>. 2 lutego to święto Ofiarowania Pańskiego, nazywane też świętem Matki Boskiej Gromnicznej.</li>
+          <li>Kolędy i pastorałki są najczęściej <b>anonimowe</b> – nie wiemy, kto je ułożył. Długo przekazywano je ustnie, z pokolenia na pokolenie, a zapisano dopiero po latach. Dlatego mają różne wersje.</li>
+          <li>W kolędach często słychać <b>rytmy polskich tańców</b>, np. poloneza.</li>
+        </ul>
+        <h3>Znane polskie kolędy</h3>
+        <table>
+          <tr><th>Kolęda</th><th>Co warto wiedzieć</th></tr>
+          <tr><td>„<b>Bóg się rodzi</b>”</td><td>słowa napisał poeta <b>Franciszek Karpiński</b>; melodia ma rytm <b>poloneza</b></td></tr>
+          <tr><td>„<b>Lulajże, Jezuniu</b>”</td><td>kolęda-<b>kołysanka</b>; <b>Fryderyk Chopin</b> wplótł jej melodię w środkową część utworu fortepianowego <b>Scherzo h-moll</b></td></tr>
+          <tr><td>„<b>Wśród nocnej ciszy</b>”</td><td>jedna z najczęściej śpiewanych kolęd; tradycyjnie rozpoczyna <b>pasterkę</b></td></tr>
+          <tr><td>„W żłobie leży”</td><td>też w rytmie poloneza</td></tr>
+          <tr><td>„Przybieżeli do Betlejem”, „Jezus malusieńki”</td><td>znane kolędy, których autorów nie znamy</td></tr>
+        </table>
+        <h3>Adwent, Wigilia i pasterka</h3>
+        <ul>
+          <li><b>Adwent</b> – cztery tygodnie przed Bożym Narodzeniem, czas oczekiwania. Dawniej w wielu regionach Polski grano wtedy na <b>ligawce</b> – długim, drewnianym instrumencie dętym.</li>
+          <li><b>Wigilia</b> – 24 grudnia, uroczysta kolacja. Według tradycji zaczyna się, gdy na niebie pojawi się <b>pierwsza gwiazda</b>. Pod obrusem kładzie się sianko, a rodzina dzieli się <b>opłatkiem</b> i śpiewa kolędy.</li>
+          <li><b>Boże Narodzenie</b> – 25 grudnia, święto na pamiątkę narodzin Jezusa.</li>
+          <li><b>Pasterka</b> – msza w noc Bożego Narodzenia, o północy. Przypomina przybycie pasterzy do Betlejem.</li>
+        </ul>
+        <h3>Kolędnicy</h3>
+        <p><b>Kolędnicy</b> chodzą od domu do domu: śpiewają kolędy, składają życzenia i odgrywają scenki. Gospodarze dają im smakołyki albo drobne datki. To <b>kolędowanie</b>.</p>
+        <ul>
+          <li>Kolędnicy chodzą z <b>gwiazdą</b> albo z <b>szopką</b> – w szopce kukiełki odgrywają przedstawienie. Bardzo znane są <b>szopki krakowskie</b>.</li>
+          <li><b>Turoń</b> – kolędnik przebrany za rogate zwierzę, podobne do wołu. Kolędnicy przebierają się też np. za kozę, niedźwiedzia czy bociana.</li>
+          <li><b>Herody</b> – grupy kolędników, które odgrywają opowieść o narodzeniu Jezusa, z zabawnymi, ludowymi scenkami.</li>
+          <li><b>Jasełka</b> – przedstawienie o narodzeniu Chrystusa (często przygotowują je szkoły).</li>
+        </ul>
+        <div class="tip">💡 Pieśni i zwyczaje ludowe zapisywał w XIX wieku <b>Oskar Kolberg</b> – etnograf i kompozytor. <b>Etnografia</b> to nauka o tradycyjnej kulturze ludów. Dzięki Kolbergowi wiele pieśni i zwyczajów nie zostało zapomnianych.</div>
+        <h3>Wielkanoc</h3>
+        <p><b>Wielkanoc</b> to święto chrześcijan na pamiątkę <b>zmartwychwstania Chrystusa</b>. Obchodzimy je w <b>niedzielę po pierwszej wiosennej pełni Księżyca</b> – dlatego co roku wypada w innym dniu.</p>
+        <table>
+          <tr><th>Dzień</th><th>Zwyczaj</th></tr>
+          <tr><td><b>Niedziela Palmowa</b> (ostatnia niedziela przed Wielkanocą)</td><td>w kościele święci się <b>palmy</b> – gałązki na pamiątkę wjazdu Jezusa do Jerozolimy</td></tr>
+          <tr><td><b>Wielka Sobota</b></td><td><b>święconka</b> – potrawy w koszyczku (np. jajka, chleb, sól) święcone w kościele</td></tr>
+          <tr><td><b>Niedziela Wielkanocna</b></td><td><b>rezurekcja</b> – uroczyste nabożeństwo z procesją</td></tr>
+          <tr><td><b>Poniedziałek Wielkanocny</b> (lany poniedziałek)</td><td><b>śmigus-dyngus</b> – polewanie się wodą; w niektórych wsiach chłopcy chodzą też z kogutkiem</td></tr>
+        </table>
+        <ul>
+          <li><b>Pisanka</b> – jajko barwione lub malowane na Wielkanoc. <b>Kraszanka</b> – pisanka pomalowana na jeden kolor, bez wzorów.</li>
+          <li><b>Pieśni wielkanocne</b> – np. „<b>Chrystus zmartwychwstał jest</b>” i „<b>Wesoły nam dzień dziś nastał</b>”. Powstały w średniowieczu (w XIV wieku), a w kościołach śpiewa się je do dziś.</li>
+        </ul>
+        <h3>Do czego służy ta muzyka?</h3>
+        <p>Kolędy i pieśni wielkanocne to <b>muzyka religijna</b> – śpiewa się je w kościele i w domu. Pieśni kolędników towarzyszą zwyczajom, czyli obrzędom – to <b>muzyka obrzędowa</b>.</p>
+      `,
+      infographicNote: 'Porównaj w poziomie: to samo pytanie dla Bożego Narodzenia i dla Wielkanocy.',
+      infographic: {
+        type: 'porownanie',
+        top: { kolor: 5, title: '🎶 Święta w muzyce', text: 'Pieśni religijne i ludowe – przekazywane z pokolenia na pokolenie' },
+        kolumny: [{ title: '🎄 Boże Narodzenie', kolor: 1 }, { title: '🐣 Wielkanoc', kolor: 3 }],
+        wiersze: [
+          { label: 'na pamiątkę', cells: ['narodzin Jezusa', 'zmartwychwstania Chrystusa'] },
+          { label: 'kiedy?', cells: ['25 grudnia (Wigilia – 24 grudnia)', 'niedziela po pierwszej wiosennej pełni'] },
+          { label: 'pieśni', cells: ['kolędy i pastorałki', '„Wesoły nam dzień dziś nastał”'], bold: true },
+          { label: 'w kościele', cells: ['pasterka – msza o północy', 'rezurekcja – nabożeństwo z procesją'] },
+          { label: 'zwyczaje', cells: ['opłatek, kolędnicy z gwiazdą i szopką', 'palmy, święconka, pisanki, śmigus-dyngus'] },
+        ],
+        bottom: { kolor: 4, title: '💡 Zapamiętaj', items: ['„Bóg się rodzi” – rytm poloneza, słowa F. Karpiński', '„Lulajże, Jezuniu” – w Scherzu h-moll Chopina', 'kolędy śpiewamy od 24 grudnia do 2 lutego'] },
+      },
+      flashcards: [
+        ['Kolęda', 'Pieśń religijna o narodzeniu Jezusa Chrystusa'],
+        ['Pastorałka', 'Wesoła, ludowa pieśń o Bożym Narodzeniu – często o pasterzach i wiejskich zwyczajach'],
+        ['Kiedy śpiewamy kolędy?', 'Od 24 grudnia do 2 lutego'],
+        ['„Bóg się rodzi”', 'Słowa: Franciszek Karpiński; melodia w rytmie poloneza'],
+        ['„Lulajże, Jezuniu”', 'Kolęda-kołysanka; Chopin wplótł jej melodię w Scherzo h-moll'],
+        ['„Wśród nocnej ciszy”', 'Kolęda, która tradycyjnie rozpoczyna pasterkę'],
+        ['Pasterka', 'Msza w noc Bożego Narodzenia (o północy) – na pamiątkę przybycia pasterzy do Betlejem'],
+        ['Adwent', 'Cztery tygodnie przed Bożym Narodzeniem; dawniej grano wtedy na ligawce (drewniany instrument dęty)'],
+        ['Wigilia', '24 grudnia: kolacja od pierwszej gwiazdy, opłatek, sianko pod obrusem, kolędy'],
+        ['Kolędnicy', 'Chodzą od domu do domu z gwiazdą lub szopką, śpiewają kolędy i składają życzenia'],
+        ['Turoń', 'Kolędnik przebrany za rogate zwierzę, podobne do wołu'],
+        ['Herody / jasełka', 'Przedstawienia o narodzeniu Jezusa (w herodach – z zabawnymi, ludowymi scenkami)'],
+        ['Oskar Kolberg', 'Etnograf i kompozytor z XIX wieku; zapisywał pieśni i zwyczaje ludowe'],
+        ['Wielkanoc', 'Święto na pamiątkę zmartwychwstania Chrystusa; niedziela po pierwszej wiosennej pełni Księżyca'],
+        ['Niedziela Palmowa', 'Ostatnia niedziela przed Wielkanocą – święci się palmy na pamiątkę wjazdu Jezusa do Jerozolimy'],
+        ['Święconka', 'Potrawy w koszyczku święcone w kościele w Wielką Sobotę'],
+        ['Pisanka / kraszanka', 'Jajko barwione lub malowane na Wielkanoc / pisanka w jednym kolorze, bez wzorów'],
+        ['Śmigus-dyngus', 'Polewanie się wodą w Poniedziałek Wielkanocny (lany poniedziałek)'],
+        ['Pieśni wielkanocne', '„Chrystus zmartwychwstał jest”, „Wesoły nam dzień dziś nastał” – ze średniowiecza'],
+      ],
+      questions: [
+        { id: '06lg0w', q: 'Co to jest kolęda?', options: ['pieśń religijna o narodzeniu Jezusa', 'pieśń ludowa o wiosennych pracach w polu', 'szybki taniec ludowy z okolic Krakowa', 'pieśń żołnierzy Legionów Polskich'], answer: 0, explain: 'Kolęda to pieśń religijna o narodzeniu Jezusa Chrystusa. Śpiewamy ją w okresie Bożego Narodzenia.' },
+        { id: '23efxs', q: 'Co to jest pastorałka?', options: ['wesoła, ludowa pieśń o Bożym Narodzeniu', 'uroczysta pieśń śpiewana w kościele na Wielkanoc', 'hymn śpiewany na początku koncertu', 'smutna pieśń o pożegnaniu z domem'], answer: 0, explain: 'Pastorałka to lekka, wesoła pieśń ludowa o Bożym Narodzeniu – często o pasterzach i wiejskich zwyczajach.' },
+        { id: 'pgcjjb', q: 'Kiedy tradycyjnie śpiewa się kolędy?', options: ['od 24 grudnia do 2 lutego', 'od 1 listopada do 24 grudnia', 'tylko w jeden dzień – w Wigilię', 'od Wielkanocy do początku wakacji'], answer: 0, explain: 'Kolędy i pastorałki śpiewa się od Wigilii, 24 grudnia, do 2 lutego – święta Ofiarowania Pańskiego.' },
+        { id: 'hmne08', q: 'Kto napisał słowa kolędy „Bóg się rodzi”?', options: ['Franciszek Karpiński', 'Józef Wybicki', 'Ignacy Jan Paderewski', 'Maria Konopnicka'], answer: 0, explain: 'Słowa kolędy „Bóg się rodzi” napisał poeta Franciszek Karpiński. Wybicki napisał słowa hymnu, a Konopnicka – „Roty”.' },
+        { id: '8webvl', q: 'W rytmie jakiego tańca jest kolęda „Bóg się rodzi”?', options: ['poloneza', 'krakowiaka', 'oberka', 'walca'], answer: 0, explain: 'Melodia „Bóg się rodzi” ma rytm poloneza – uroczystego polskiego tańca narodowego.' },
+        { id: '3kdzfb', q: 'Melodię której kolędy Fryderyk Chopin wplótł w Scherzo h-moll?', options: ['„Lulajże, Jezuniu”', '„Bóg się rodzi”', '„Przybieżeli do Betlejem”', '„W żłobie leży”'], answer: 0, explain: 'W środkowej, spokojnej części Scherza h-moll Chopin użył melodii kolędy-kołysanki „Lulajże, Jezuniu”.' },
+        { id: 'f1w3zw', q: 'Prawda czy fałsz?\n„Lulajże, Jezuniu” to kolęda-kołysanka.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'To prawda. „Lulajże, Jezuniu” to spokojna kołysanka dla małego Jezusa.' },
+        { id: 'm2dulc', q: 'Która kolęda tradycyjnie rozpoczyna pasterkę?', options: ['„Wśród nocnej ciszy”', '„Lulajże, Jezuniu”', '„Oj maluśki, maluśki”', '„W żłobie leży”'], answer: 0, explain: '„Wśród nocnej ciszy” to jedna z najczęściej śpiewanych kolęd – tradycyjnie zaczyna się nią pasterkę.' },
+        { id: 'w6y2p0', q: 'Co to jest pasterka?', options: ['msza w noc Bożego Narodzenia', 'kolacja wigilijna z opłatkiem', 'pieśń pasterzy z Podhala', 'kolędnik przebrany za zwierzę'], answer: 0, explain: 'Pasterka to msza o północy w noc Bożego Narodzenia. Przypomina przybycie pasterzy do Betlejem.' },
+        { id: '5owij4', q: 'Kiedy według tradycji zaczyna się kolacja wigilijna?', options: ['gdy na niebie pojawi się pierwsza gwiazda', 'gdy zegar na wieży kościoła wybije północ', 'zaraz po powrocie wszystkich z pasterki', 'w samo południe, gdy słońce jest najwyżej'], answer: 0, explain: 'Według tradycji do wigilijnego stołu siadamy, gdy na niebie pojawi się pierwsza gwiazda.' },
+        { id: 'tqthwg', q: 'Kim jest turoń?', options: ['kolędnikiem przebranym za rogate zwierzę', 'pasterzem, o którym śpiewa się w kolędach', 'długim, drewnianym instrumentem dętym', 'etnografem z XIX wieku, znawcą zwyczajów'], answer: 0, explain: 'Turoń to kolędnik przebrany za rogate zwierzę, podobne do wołu.' },
+        { id: 'opukm8', q: 'Co robią kolędnicy?', options: ['chodzą od domu do domu, śpiewają kolędy i składają życzenia', 'grają w orkiestrze podczas pasterki w kościele o północy', 'pieką pierniki i ubierają choinkę w dniu Wigilii przed kolacją', 'piszą słowa i melodie nowych kolęd na szkolny konkurs'], answer: 0, explain: 'Kolędnicy odwiedzają domy z gwiazdą albo szopką, śpiewają kolędy, składają życzenia i odgrywają scenki.' },
+        { id: '5dnf2i', q: 'Czym są herody?', options: ['przedstawieniem kolędników o narodzeniu Jezusa', 'kolędami śpiewanymi zawsze w rytmie poloneza', 'średniowiecznymi pieśniami na Wielkanoc w kościele', 'ozdobami z bibuły wieszanymi na choince'], answer: 0, explain: 'Herody to grupy kolędników, które odgrywają opowieść o narodzeniu Jezusa, z zabawnymi, ludowymi scenkami.' },
+        { id: 'sh0r7j', q: 'Na jakim instrumencie w Adwencie grano dawniej w wielu regionach Polski?', options: ['na ligawce', 'na gitarze', 'na kontrabasie', 'na tamburynie'], answer: 0, explain: 'Ligawka to długi, drewniany instrument dęty. W Adwencie grano na niej w wielu regionach Polski.' },
+        { id: '6lg5bm', q: 'Kim był Oskar Kolberg?', options: ['etnografem, który zapisywał pieśni i zwyczaje ludowe', 'poetą, który napisał słowa do kolędy „Bóg się rodzi”', 'kompozytorem, który ułożył melodię hymnu Unii Europejskiej', 'pianistą, który był premierem odrodzonej Polski'], answer: 0, explain: 'Oskar Kolberg żył w XIX wieku. Jeździł po wsiach i zapisywał pieśni, melodie i zwyczaje ludowe.' },
+        { id: 'd8zf9g', q: 'Kiedy obchodzimy Wielkanoc?', options: ['w niedzielę po pierwszej wiosennej pełni Księżyca', 'zawsze w pierwszą niedzielę kwietnia każdego roku', 'zawsze w ostatnią niedzielę marca, przed kwietniem', 'w pierwszy dzień kalendarzowej wiosny w marcu'], answer: 0, explain: 'Wielkanoc wypada w niedzielę po pierwszej wiosennej pełni Księżyca – dlatego co roku jest w innym dniu.' },
+        { id: 'gq3qlu', q: 'Co święci się w kościele w Niedzielę Palmową?', options: ['palmy z gałązek', 'potrawy w koszyczku', 'jajka na śmigus-dyngus', 'opłatek na Wigilię'], answer: 0, explain: 'W Niedzielę Palmową święci się palmy – na pamiątkę wjazdu Jezusa do Jerozolimy. Potrawy święci się w Wielką Sobotę.' },
+        { id: '0k3ee7', q: 'Co to jest święconka?', options: ['potrawy w koszyczku święcone w Wielką Sobotę', 'uroczysta msza o północy w noc Bożego Narodzenia', 'średniowieczna pieśń o zmartwychwstaniu', 'palma z gałązek na Niedzielę Palmową'], answer: 0, explain: 'Święconka to potrawy (np. jajka, chleb, sól) w koszyczku, święcone w kościele w Wielką Sobotę.' },
+        { id: 'shf3cf', q: 'Czym jest kraszanka?', options: ['pisanką w jednym kolorze, bez wzorów', 'pisanką z wieloma kolorowymi wzorami', 'koszyczkiem z potrawami na święconkę', 'kolędą śpiewaną w Wielkanoc'], answer: 0, explain: 'Kraszanka to pisanka pomalowana na jeden kolor, bez wzorów.' },
+        { id: '1td7kc', q: 'Na czym polega śmigus-dyngus?', options: ['na polewaniu się wodą w Poniedziałek Wielkanocny', 'na święceniu palm w kościele w Niedzielę Palmową', 'na chodzeniu z gwiazdą i szopką od domu do domu', 'na śpiewaniu kolęd przy wigilijnym stole z rodziną'], answer: 0, explain: 'Śmigus-dyngus to zwyczaj polewania się wodą w Poniedziałek Wielkanocny – stąd nazwa „lany poniedziałek”.' },
+        { id: 'l89x00', q: 'Która z tych pieśni jest pieśnią wielkanocną?', options: ['„Wesoły nam dzień dziś nastał”', '„Przybieżeli do Betlejem”', '„Anioł pasterzom mówił”', '„Gdy się Chrystus rodzi”'], answer: 0, explain: '„Wesoły nam dzień dziś nastał” to średniowieczna pieśń wielkanocna. Pozostałe to kolędy.' },
+        { id: '1vrqn9', q: 'Prawda czy fałsz?\nKolędy i pastorałki są najczęściej utworami anonimowymi – nie wiemy, kto je ułożył.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'To prawda. Długo przekazywano je ustnie, z pokolenia na pokolenie, dlatego autorzy zwykle są nieznani.' },
+      ],
+    },
   ],
 });

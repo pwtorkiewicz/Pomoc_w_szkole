@@ -188,7 +188,7 @@ Nowa Era, nr 1265/1/2026, ISBN 978-83-267-5428-9. Autorzy: G. Kilbach, A. Daniel
 
 **IV. Zbliża się lato** – 1. Dla mamy i taty · 2. Święto wszystkich dzieci · 3. O czym może mówić muzyka? · 4. Z piosenką nad morze!
 
-Każdy rozdział kończy „Warsztat muzyczny – podsumowanie”; na końcu repertuar dodatkowy, słowniczek, tabela chwytów na flet prosty. Działy aplikacji: Elementy muzyki i zapis nutowy (rozdział I); Instrumenty, głosy i formy muzyczne (rozdziały I–III); Hymn, pieśni i tańce narodowe, Chopin (rozdziały I i III). Brakuje: święta i tradycje w muzyce (Dzień Edukacji Narodowej, kolędy, Wielkanoc, święta majowe, Dzień Matki i Ojca, Dzień Dziecka), „Cudowne dzieci muzyki”, „O czym może mówić muzyka?” (muzyka ilustracyjna), gra na flecie prostym (część praktyczna – poza aplikacją).
+Każdy rozdział kończy „Warsztat muzyczny – podsumowanie”; na końcu repertuar dodatkowy, słowniczek, tabela chwytów na flet prosty. Działy aplikacji: Elementy muzyki i zapis nutowy (rozdział I); Instrumenty, głosy i formy muzyczne (rozdziały I–III); Hymn, pieśni i tańce narodowe, Chopin (rozdziały I i III). Kolędy i tradycje wielkanocne – dział „Kolędy i tradycje świąt: Boże Narodzenie i Wielkanoc” (rozdziały II i III). Brakuje: Dzień Edukacji Narodowej, święta majowe, Dzień Matki i Ojca, Dzień Dziecka, „Cudowne dzieci muzyki”, „O czym może mówić muzyka?” (muzyka ilustracyjna), gra na flecie prostym (część praktyczna – poza aplikacją).
 
 ## Zajęcia praktyczno-techniczne – *Jak to zrobić? 4*
 
