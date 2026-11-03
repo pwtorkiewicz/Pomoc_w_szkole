@@ -333,11 +333,11 @@ window.SUBJECTS.push({
       infographic: {
         type: 'os',
         items: [
-          { label: '1797', title: '🇵🇱 „Mazurek Dąbrowskiego”', text: 'Józef Wybicki napisał słowa dla Legionów Polskich we Włoszech', kolor: 2 },
+          { label: '1797', title: '🇵🇱 „Pieśń Legionów Polskich we Włoszech”', text: 'słowa napisał Józef Wybicki dla żołnierzy gen. Dąbrowskiego', kolor: 2 },
           { label: '1810', title: '🎹 Fryderyk Chopin', text: 'urodził się w Żelazowej Woli', kolor: 1 },
           { label: '1849', title: '🎹 Fryderyk Chopin', text: 'zmarł w Paryżu; serce spoczywa w Warszawie', kolor: 1 },
           { label: '1919', title: '🎹 Ignacy Jan Paderewski', text: 'słynny pianista – premier odrodzonej Polski', kolor: 5 },
-          { label: 'dziś', title: '🇵🇱 Hymn Polski', text: '„Mazurek Dąbrowskiego” – zapisany w Konstytucji', kolor: 2 },
+          { label: 'dziś', title: '🇵🇱 „Mazurek Dąbrowskiego”', text: 'hymn Polski – zapisany w Konstytucji', kolor: 2 },
         ],
         bottom: { title: '💃 Tańce narodowe', items: ['polonez, mazur, kujawiak, oberek – „na trzy”', 'krakowiak – jedyny w metrum 2/4', 'melodia hymnu to mazurek', 'Chopin: polskie tańce w mazurkach i polonezach'], kolor: 3 },
       },
