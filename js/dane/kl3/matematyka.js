@@ -107,6 +107,21 @@
           <p>Liczba <b>o 7 większa</b> od 45 to 45 + 7 = 52. Liczba <b>o 10 mniejsza</b> od 300 to 300 − 10 = 290.</p>
           <h3>Liczby porządkowe</h3>
           <p>Mówią, które coś jest w kolejce: pierwszy, drugi, trzeci, czwarty, piąty…</p>`,
+        infographicNote: '10 jedności to dziesiątka, 10 dziesiątek to setka.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          top: { kolor: 4, title: '🧱 345 = 300 + 40 + 5', text: '3 setki, 4 dziesiątki, 5 jedności' },
+          items: [
+            { icon: '🔢', kolor: 1, title: '10 cyfr', text: '0 1 2 3 4 5 6 7 8 9' },
+            { icon: '💯', kolor: 1, title: 'Setka', text: '10 dziesiątek = 100' },
+            { icon: '📦', kolor: 1, title: 'Tysiąc', text: '10 setek = 1 000' },
+            { icon: '🚀', kolor: 1, title: 'Milion', text: '1 000 000' },
+            { icon: '➕', kolor: 3, title: 'O 7 większa', text: '45 + 7 = 52' },
+            { icon: '➖', kolor: 2, title: 'O 10 mniejsza', text: '300 − 10 = 290' },
+          ],
+          bottom: { kolor: 5, title: '🐤 Dzióbek patrzy na mniejszą', text: '7 > 3\n356 < 365' },
+          label: '345 to 300 plus 40 plus 5: 3 setki, 4 dziesiątki, 5 jedności. 10 cyfr: od 0 do 9. Setka: 10 dziesiątek to 100. Tysiąc: 10 setek to 1 000. Milion: 1 000 000. Liczba o 7 większa od 45: 45 plus 7 równa się 52. Liczba o 10 mniejsza od 300: 300 minus 10 równa się 290. Dzióbek znaku patrzy na mniejszą liczbę: 7 większe niż 3, 356 mniejsze niż 365.',
+        },
         flashcards: [
           ['Ile cyfr mamy?', '10 cyfr: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9'],
           ['10 jedności to…', '1 dziesiątka'],
@@ -157,6 +172,19 @@
           <p>□ + 6 = 14. Jaka liczba pasuje? Odejmij: 14 − 6 = 8. Sprawdź: 8 + 6 = 14 ✔</p>
           <h3>Sprawdzanie</h3>
           <p>Odejmowanie sprawdzasz dodawaniem: 75 − 28 = 47, bo 47 + 28 = 75.</p>`,
+        infographicNote: 'Najpierw do pełnej dziesiątki – potem reszta.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '➕', kolor: 3, title: 'Dodawanie', text: 'przybywa\nwynik: suma' },
+            { icon: '➖', kolor: 2, title: 'Odejmowanie', text: 'ubywa\nwynik: różnica' },
+            { icon: '🎯', kolor: 3, title: '38 + 7', text: '38 + 2 = 40\n40 + 5 = 45' },
+            { icon: '🎯', kolor: 2, title: '62 − 8', text: '62 − 2 = 60\n60 − 6 = 54' },
+            { icon: '🔟', kolor: 3, title: '47 + 25', text: '47 + 20 = 67\n67 + 5 = 72' },
+            { icon: '🪟', kolor: 5, title: 'Okienko', text: '□ + 6 = 14\n14 − 6 = 8' },
+          ],
+          bottom: { kolor: 4, title: '✅ Sprawdź dodawaniem', text: '75 − 28 = 47, bo 47 + 28 = 75' },
+        },
         flashcards: [
           ['Wynik dodawania to…', 'suma'],
           ['Wynik odejmowania to…', 'różnica'],
@@ -206,6 +234,19 @@
           <p>36 × 2: 30 × 2 = 60, 6 × 2 = 12, razem 60 + 12 = 72.</p>
           <h3>Okienko</h3>
           <p>□ × 6 = 30 → □ = 5, bo 5 × 6 = 30.</p>`,
+        infographicNote: 'Mnożenie to szybkie dodawanie, a dzielenie – rozdawanie po równo.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '🍪', kolor: 1, title: 'Mnożenie', text: '3 razy po 4\n4 + 4 + 4 = 12' },
+            { icon: '🔄', kolor: 1, title: 'Kolejność', text: '3 × 4 = 4 × 3' },
+            { icon: '🍬', kolor: 3, title: 'Dzielenie', text: 'po równo\n12 : 3 = 4' },
+            { icon: '✅', kolor: 3, title: 'Sprawdź', text: '12 : 3 = 4,\nbo 3 × 4 = 12' },
+            { icon: '🔟', kolor: 4, title: 'Razy 10', text: 'dopisz zero\n14 × 10 = 140' },
+            { icon: '✌️', kolor: 5, title: '36 × 2', text: '30 × 2 = 60\n6 × 2 = 12\n60 + 12 = 72' },
+          ],
+          bottom: { kolor: 2, title: '🧠 Zapamiętaj', text: '6 × 7 = 42 · 7 × 8 = 56\n8 × 9 = 72 · 9 × 6 = 54' },
+        },
         flashcards: [
           ['3 × 4', '4 + 4 + 4 = 12'],
           ['6 × 7', '42'],
@@ -253,6 +294,18 @@
             <tr><td>„po równo”, „rozdzielił”</td><td>podziel :</td></tr>
           </table>
           <p class="tip">Przykład: W 4 pudełkach jest po 6 kredek. 4 × 6 = 24. Odpowiedź: Razem jest 24 kredki.</p>`,
+        infographicNote: 'Idź krok po kroku – od czytania do odpowiedzi.',
+        infographic: {
+          type: 'kroki',
+          items: [
+            { icon: '👀', kolor: 1, title: 'Przeczytaj', text: 'uważnie – nawet dwa razy' },
+            { icon: '🤔', kolor: 1, title: 'Co wiem? Czego szukam?' },
+            { icon: '✏️', kolor: 1, title: 'Narysuj albo zapisz działanie' },
+            { icon: '🧮', kolor: 1, title: 'Policz i sprawdź' },
+            { icon: '💬', kolor: 3, title: 'Napisz odpowiedź zdaniem' },
+          ],
+          bottom: { kolor: 4, title: '💡 Podpowiedzi', items: ['o 5 więcej – dodaj', 'o 5 mniej – odejmij', 'po 6 w każdym – pomnóż', 'po równo – podziel'] },
+        },
         flashcards: [
           ['Pierwszy krok w zadaniu', 'Przeczytaj uważnie: co wiem, czego szukam?'],
           ['„o 5 więcej”', 'dodaj 5'],
@@ -305,6 +358,20 @@
           <p class="tip">Prostokąt 5 cm i 3 cm: 5 + 3 + 5 + 3 = 16 cm. Kwadrat o boku 4 cm: 4 + 4 + 4 + 4 = 16 cm.</p>
           <h3>Symetria</h3>
           <p>Figura jest symetryczna, gdy po złożeniu na pół obie części się pokrywają – jak skrzydła motyla.</p>`,
+        infographicNote: 'Policz boki, zmierz je – i dodaj.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          top: { kolor: 4, title: '🚩 Pion, poziom, skos', text: 'maszt flagi, blat stołu, zjeżdżalnia' },
+          items: [
+            { icon: '🔺', kolor: 2, title: 'Trójkąt', text: '3 boki\n3 wierzchołki' },
+            { icon: '🟦', kolor: 1, title: 'Kwadrat', text: '4 równe boki' },
+            { icon: '🚪', kolor: 5, title: 'Prostokąt', text: '4 boki\n4 kąty proste' },
+            { icon: '🟢', kolor: 3, title: 'Koło', text: 'nie ma boków ani wierzchołków' },
+            { icon: '📏', kolor: 4, title: 'Długość', text: '1 cm = 10 mm\n1 m = 100 cm\n1 km = 1 000 m' },
+            { icon: '🦋', kolor: 4, title: 'Symetria', text: 'złóż na pół – obie części takie same' },
+          ],
+          bottom: { kolor: 5, title: '🧵 Obwód', text: 'Dodaj wszystkie boki:\n5 + 3 + 5 + 3 = 16 cm' },
+        },
         flashcards: [
           ['Ile boków ma trójkąt?', '3'],
           ['Prostokąt', '4 boki, 4 kąty proste, boki naprzeciwko są równe'],
@@ -359,6 +426,19 @@
           <h3>Znaki rzymskie</h3>
           <p>I – 1, II – 2, III – 3, IV – 4, V – 5, VI – 6, VII – 7, VIII – 8, IX – 9, X – 10, XI – 11, XII – 12</p>
           <p class="tip">Mały znak przed większym – odejmij: IV = 5 − 1. Mały znak za większym – dodaj: VI = 5 + 1.</p>`,
+        infographicNote: 'Czas: od sekundy do roku.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '🌓', kolor: 1, title: 'Doba', text: '24 godziny' },
+            { icon: '⌛', kolor: 1, title: 'Godzina', text: '60 minut' },
+            { icon: '⏱️', kolor: 1, title: 'Minuta', text: '60 sekund' },
+            { icon: '⏰', kolor: 2, title: 'Wskazówki', text: 'krótka – godziny\ndługa – minuty' },
+            { icon: '🕒', kolor: 2, title: '15:00', text: '15 − 12 = 3\ntrzecia po południu' },
+            { icon: '🏛️', kolor: 5, title: 'Znaki rzymskie', text: 'IV = 4, VI = 6\nIX = 9, XII = 12' },
+          ],
+          bottom: { kolor: 3, title: '📅 Kalendarz', text: 'Tydzień – 7 dni. Rok – 12 miesięcy.\n30 dni: kwiecień, czerwiec, wrzesień, listopad.' },
+        },
         flashcards: [
           ['1 doba', '24 godziny'],
           ['1 godzina', '60 minut'],
@@ -411,6 +491,20 @@
           <p>Temperaturę mierzymy termometrem, w stopniach Celsjusza (°C).</p>
           <h3>Szacowanie</h3>
           <p>Zeszyt kosztuje 4 zł 90 gr – to prawie 5 zł. 3 zeszyty to około 3 × 5 zł = 15 zł.</p>`,
+        infographicNote: 'Złote, kilogramy i litry – wszystko można zamienić.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          top: { kolor: 4, title: '🪙 1 zł = 100 gr', text: '3 zł 50 gr = 350 gr' },
+          items: [
+            { icon: '🪙', kolor: 4, title: 'Monety', text: '1, 2, 5, 10, 20, 50 gr\n1, 2, 5 zł' },
+            { icon: '💵', kolor: 4, title: 'Banknoty', text: '10, 20, 50, 100, 200, 500 zł' },
+            { icon: '⚖️', kolor: 1, title: 'Waga', text: '1 kg = 100 dag\n1 dag = 10 g\n1 kg = 1 000 g' },
+            { icon: '🚛', kolor: 1, title: 'Tona', text: '1 tona = 1 000 kg' },
+            { icon: '🥛', kolor: 3, title: '1 litr', text: '2 razy pół litra\n4 razy ćwierć litra' },
+            { icon: '🍕', kolor: 5, title: 'Połowa i ćwierć', text: 'połowa z 8 to 4\nćwierć z 8 to 2' },
+          ],
+          bottom: { kolor: 2, title: '🌡️ Temperatura', text: 'Mierzysz termometrem, w stopniach Celsjusza.' },
+        },
         flashcards: [
           ['1 zł = ? gr', '100 gr'],
           ['Monety', '1, 2, 5, 10, 20, 50 gr oraz 1, 2, 5 zł'],

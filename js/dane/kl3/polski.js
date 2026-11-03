@@ -39,7 +39,7 @@ window.SUBJECTS.push({
       infographicNote: 'Od zdania do głoski – i cały alfabet.',
       infographic: {
         type: 'karty', kolumny: 2,
-        top: { kolor: 1, title: '📝 Zdanie, wyraz, głoska', text: 'Ola ma psa.\nOla, ma, psa\nO, l, a' },
+        top: { kolor: 1, title: '📝 Zdanie, wyraz, głoska', text: 'zdanie: Ola ma psa.\nwyrazy: Ola, ma, psa\ngłoski: O, l, a' },
         items: [
           { icon: '👂', kolor: 3, title: 'Głoska', text: 'słyszysz' },
           { icon: '✏️', kolor: 3, title: 'Litera', text: 'widzisz i piszesz' },
@@ -220,7 +220,7 @@ window.SUBJECTS.push({
           { icon: '❓', kolor: 2, title: 'Pytające', text: 'znak zapytania\nCzy pada śnieg?' },
           { icon: '❗', kolor: 3, title: 'Rozkazujące', text: 'zwykle wykrzyknik\nZamknij drzwi!' },
           { icon: '🔄', kolor: 2, title: 'Zrób pytanie', text: 'Kot śpi.\nCzy kot śpi?' },
-          { icon: '🔗', kolor: 5, title: 'Złożone', text: 'Pada deszcz i wieje wiatr.' },
+          { icon: '🔗', kolor: 5, title: 'Złożone', text: 'Pada deszcz\ni wieje wiatr.' },
           { icon: '☂️', kolor: 5, title: 'Przecinek', text: 'przed ale i bo:\nBiorę parasol, bo pada.' },
         ],
         bottom: { kolor: 4, title: '🍎 Wyliczanie', text: 'Jabłka, gruszki i banany.\nPrzed „i” nie ma przecinka.' },
@@ -365,10 +365,9 @@ window.SUBJECTS.push({
       infographicNote: 'Zadaj pytanie – a dowiesz się, co to za wyraz.',
       infographic: {
         type: 'karty', kolumny: 2,
-        top: { kolor: 4, title: '❓ Zadaj pytanie!', text: 'kto? co? – co robi? – jaki?' },
         items: [
           { icon: '🐱', kolor: 1, title: 'Rzeczownik', text: 'kto? co?\nmama, kot, rower' },
-          { icon: '🏃', kolor: 2, title: 'Czasownik', text: 'co robi? co się dzieje?\nbiega, czyta, pada' },
+          { icon: '🏃', kolor: 2, title: 'Czasownik', text: 'co robi?\nco się dzieje?\nbiega, czyta, pada' },
           { icon: '🎨', kolor: 3, title: 'Przymiotnik', text: 'jaki? jaka? jakie?\nrudy, zielona' },
           { icon: '🐾', kolor: 5, title: 'Jeden czy wiele?', text: 'kot – koty\npiłka – piłki' },
         ],
@@ -432,7 +431,7 @@ window.SUBJECTS.push({
           { icon: '🚗', kolor: 3, title: 'Bliskoznaczne', text: 'prawie to samo\nauto – samochód' },
           { icon: '🌳', kolor: 1, title: 'Pokrewne', text: 'jedna rodzina\nlas, lasek, leśny' },
           { icon: '🐟', kolor: 1, title: 'Rodzina ryby', text: 'ryba, rybka, rybak, rybny' },
-          { icon: '🦊', kolor: 4, title: 'Pułapka!', text: 'lis i lista – to nie rodzina' },
+          { icon: '🦊', kolor: 4, title: 'Pułapka!', text: 'lis i lista\nto nie rodzina' },
           { icon: '✏️', kolor: 5, title: 'Pomaga w pisowni', text: 'stół – stolik\nmorze – morski' },
         ],
       },
@@ -513,12 +512,12 @@ window.SUBJECTS.push({
       infographic: {
         type: 'karty', kolumny: 2,
         items: [
-          { icon: '🎶', kolor: 5, title: 'Wiersz', text: 'wersy, zwrotki, rymy: kot – płot' },
+          { icon: '🎶', kolor: 5, title: 'Wiersz', text: 'wersy, zwrotki, rymy\nkot – płot' },
           { icon: '📖', kolor: 1, title: 'Proza', text: 'zwykłe zdania, np. opowiadanie' },
           { icon: '🧭', kolor: 2, title: 'Opowiadanie', text: 'początek, rozwinięcie, zakończenie' },
           { icon: '🎉', kolor: 4, title: 'Zaproszenie', text: 'kto? kogo? na co? gdzie? kiedy?' },
           { icon: '✉️', kolor: 3, title: 'List', text: 'data, Droga Babciu!, treść, pozdrowienia, podpis' },
-          { icon: '📮', kolor: 3, title: 'Koperta', text: 'adresat – na dole po prawej' },
+          { icon: '📮', kolor: 3, title: 'Koperta', text: 'adresat:\nna dole po prawej' },
         ],
         bottom: { kolor: 2, title: '💬 Dialog i opis', text: 'Dialog – rozmowa postaci.\nOpis – jak ktoś lub coś wygląda.' },
       },

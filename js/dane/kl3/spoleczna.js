@@ -132,7 +132,7 @@
             { icon: '🏫', title: 'Patron', text: 'jego imię nosi szkoła, ulica, plac', kolor: 3 },
             { icon: '🤝', title: 'Stowarzyszenia', text: 'ludzie razem pomagają', kolor: 4 },
             { icon: '🌍', title: 'Inne narodowości', text: 'Czesi, Niemcy, Litwini', kolor: 4 },
-            { icon: '🏛️', title: 'Polska', text: 'stolica: Warszawa\nprezydent:\nKarol Nawrocki', kolor: 2 },
+            { icon: '🏛️', title: 'Polska', text: 'stolica: Warszawa,\nprezydent:\nKarol Nawrocki', kolor: 2 },
             { icon: '⭐', title: 'Unia Europejska', text: 'Polska jest w niej od 2004 roku', kolor: 1 },
           ],
           bottom: { title: '⭐ Flaga i hymn Unii', text: '12 złotych gwiazd w kole na niebieskim tle; „Oda do radości”', kolor: 1 },

@@ -282,7 +282,7 @@
           <p>Sprawdź pogodę (prognoza w telewizji, radiu, internecie). Zimno – czapka, szalik, rękawiczki. Deszcz – kurtka z kapturem, kalosze, parasol. Upał – czapka z daszkiem, woda, krem z filtrem. Ubieraj się „na cebulkę” – kilka warstw, które łatwo zdjąć.</p>
           <h3>Ruch i odpoczynek</h3>
           <p>Codziennie ruszaj się na świeżym powietrzu i wysypiaj się. Zmęczone ciało gorzej się uczy.</p>`,
-        infographicNote: 'Niebieskie – higiena, zielone – zdrowe jedzenie, pomarańczowe – uwaga, żółte – ubranie.',
+        infographicNote: 'Niebieskie – higiena, zielone – zdrowe jedzenie, pomarańczowe – uwaga.',
         infographic: {
           type: 'karty', kolumny: 2,
           items: [
@@ -367,7 +367,7 @@
             { kolor: 4, icon: '🚒', title: '998', text: 'Straż Pożarna' },
             { kolor: 4, icon: '🚑', title: '999', text: 'Pogotowie Ratunkowe' },
             { kolor: 1, icon: '⛈️', title: 'Burza', text: 'schowaj się w budynku, nie pod drzewem' },
-            { kolor: 3, icon: '🏃', title: 'Zielony znak', text: 'droga ewakuacyjna' },
+            { kolor: 3, icon: '🏃', title: 'Zielony znak', text: 'z ludzikiem – droga ewakuacyjna' },
           ],
           bottom: { kolor: 2, title: '☎️ Dzwonisz? Powiedz:', text: '1. kim jesteś\n2. co się stało\n3. gdzie (adres)\nNie rozłączaj się pierwszy!' },
         },
@@ -434,7 +434,7 @@
             { kolor: 2, icon: '⭕', title: 'Zakazu', text: 'czego nie wolno' },
             { kolor: 1, icon: '🔵', title: 'Nakazu', text: 'co trzeba robić' },
             { kolor: 1, icon: '🟦', title: 'Informacyjny', text: 'informuje, np. o przejściu' },
-            { kolor: 3, icon: '👀', title: 'Przy jezdni', text: 'w lewo, w prawo, znów w lewo' },
+            { kolor: 3, icon: '👀', title: 'Przy jezdni', text: 'w lewo, w prawo i jeszcze raz w lewo' },
             { kolor: 3, icon: '✨', title: 'Odblaski', text: 'noś je po zmroku' },
           ],
           bottom: { kolor: 5, icon: '💻', title: 'W internecie', text: 'Nie podawaj adresu ani hasła. Coś cię przestraszy? Powiedz rodzicowi.' },
@@ -559,7 +559,7 @@
             <li>Ziemia okrąża Słońce w ciągu <b>roku</b>.</li>
             <li><b>Księżyc</b> krąży wokół Ziemi.</li>
           </ul>`,
-        infographicNote: 'Kolor kierunku jak na róży wiatrów; rano Słońce na wschodzie, wieczorem – na zachodzie.',
+        infographicNote: 'Zielone – wschód i ranek, pomarańczowe – zachód i wieczór.',
         infographic: {
           type: 'karty', kolumny: 2,
           items: [

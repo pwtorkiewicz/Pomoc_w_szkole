@@ -235,9 +235,9 @@ window.SUBJECTS.push({
         type: 'os',
         top: { title: '🪪 Karta rowerowa', text: 'pozwala osobie poniżej 18 lat jeździć po drodze rowerem i hulajnogą elektryczną', kolor: 1 },
         items: [
-          { label: '10 lat', title: 'Karta rowerowa', text: 'od 10 lat; wydaje dyrektor szkoły, za darmo, za pisemną zgodą rodzica', kolor: 3 },
-          { label: '13 lat', title: 'Hulajnoga elektryczna', text: 'od 13 lat – z kartą rowerową', items: ['młodsi – tylko w strefie zamieszkania, pod opieką dorosłego'], kolor: 3 },
-          { label: '16 lat', title: 'Kask', text: 'na hulajnodze elektrycznej do 16 lat – zawsze w kasku', kolor: 4 },
+          { label: 'od 10 lat', title: 'Karta rowerowa', text: 'wydaje ją dyrektor szkoły, za darmo, za pisemną zgodą rodzica', kolor: 3 },
+          { label: 'od 13 lat', title: 'Hulajnoga elektryczna', text: 'po drodze – z kartą rowerową', items: ['młodsi – tylko w strefie zamieszkania, pod opieką dorosłego'], kolor: 3 },
+          { label: 'do 16 lat', title: 'Kask', text: 'na hulajnodze elektrycznej – zawsze w kasku', kolor: 4 },
         ],
         bottom: { title: '⚠️ Co grozi wypadkiem?', items: ['za duża prędkość', 'nieuwaga i telefon', 'alkohol i środki odurzające', 'brak kasku i świateł, niesprawny pojazd'], kolor: 2 },
       },
@@ -322,15 +322,15 @@ window.SUBJECTS.push({
       `,
       infographicNote: 'U góry – co mówi kształt znaku, niżej – cztery grupy znaków z przykładami, na dole – co robisz po kolei przy wypadku.',
       infographic: {
-        type: 'drzewo', kolumny: 2,
+        type: 'drzewo', kolumny: 1,
         root: { icon: '🚦', title: 'Znaki drogowe', text: 'trójkąt – uwaga, koło – zakaz albo nakaz, kwadrat – informacja', kolor: 5 },
         branches: [
-          { title: '⚠️ Ostrzegawcze (A)', text: 'trójkąt wierzchołkiem do góry – ostrzegają', items: ['A-16 „przejście dla pieszych”', 'A-17 „dzieci”'], kolor: 4 },
+          { title: '⚠️ Ostrzegawcze (A)', text: 'trójkąt wierzchołkiem do góry – ostrzegają', items: ['A-16 „przejście dla pieszych”', 'A-17 „dzieci”', 'wyjątek: A-7 „ustąp pierwszeństwa” – wierzchołkiem w dół'], kolor: 4 },
           { title: '⛔ Zakazu (B)', text: 'zwykle koło z czerwoną obwódką – czego nie wolno', items: ['B-9 „zakaz wjazdu rowerów”', 'B-41 „zakaz ruchu pieszych”'], kolor: 2 },
           { title: '🔵 Nakazu (C)', text: 'koło, niebieskie – co trzeba robić', items: ['C-13 „droga dla rowerów”', 'C-16 „droga dla pieszych”'], kolor: 1 },
-          { title: 'ℹ️ Informacyjne (D)', text: 'kwadrat lub prostokąt – informują', items: ['D-6 „przejście dla pieszych”'], kolor: 3 },
+          { title: 'ℹ️ Informacyjne (D)', text: 'kwadrat lub prostokąt – informują', items: ['D-6 „przejście dla pieszych”'], kolor: 1 },
         ],
-        bottom: { title: '🚑 Widzisz wypadek?', text: '1. Zadbaj o swoje bezpieczeństwo.\n2. Zawołaj dorosłego i wezwij pomoc: 112.\n3. Powiedz: kto dzwoni, gdzie, co się stało, ilu jest poszkodowanych.\n4. Słuchaj pytań i poleceń dyspozytora.\n5. Zostań przy poszkodowanym, jeśli jest bezpiecznie.', kolor: 2 },
+        bottom: { title: '🚑 Widzisz wypadek?', text: '1. Zadbaj o swoje bezpieczeństwo.\n2. Zawołaj dorosłego i wezwij pomoc: 112.\n3. Powiedz spokojnie: kto dzwoni, gdzie, co się stało, ilu jest poszkodowanych.\n4. Słuchaj pytań i poleceń dyspozytora.\n5. Zostań przy poszkodowanym, jeśli jest bezpiecznie, i rozmawiaj z nim.', kolor: 2 },
       },
       flashcards: [
         ['Znaki ostrzegawcze', 'Trójkąt wierzchołkiem do góry – ostrzegają przed niebezpieczeństwem'],
