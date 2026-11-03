@@ -41,7 +41,7 @@ window.SUBJECTS.push({
         <h3>Dlaczego Polska przegrała</h3>
         <p>Ogromna przewaga Niemiec i ZSRS, atak z kilku stron naraz, słabsze uzbrojenie i <b>bierność sojuszników</b>. Mimo to Polska broniła się ponad miesiąc, a żołnierze i cywile (np. obrońcy Warszawy, pocztowcy, harcerze) wykazali się bohaterstwem.</p>
         <div class="tip">💡 Dwie daty, dwóch agresorów: <b>1 IX</b> – Niemcy, <b>17 IX</b> – ZSRS. Obie wynikały z paktu z <b>23 VIII</b>.</div>`,
-      infographicNote: 'Czytaj od góry: pakt (przyczyna) → wydarzenia z 1939 r. po kolei (pomarańczowe – agresja, niebieskie – polska obrona) → dlaczego Polska przegrała.',
+      infographicNote: 'Czytaj od góry: pakt → kampania 1939 po kolei (pomarańczowe – agresja, niebieskie – obrona) → przyczyny klęski.',
       infographic: {
         type: 'os',
         top: { title: '🤝 Pakt Ribbentrop–Mołotow', text: '23 VIII 1939: Niemcy i ZSRS w tajnym protokole dzielą strefy wpływów', kolor: 2 },
@@ -145,7 +145,7 @@ window.SUBJECTS.push({
           <li>podział Europy na wpływy ZSRS i Zachodu; powstanie ONZ.</li>
         </ul>
         <div class="tip">💡 Kolejność konferencji: <b>T-J-P</b> – Teheran, Jałta, Poczdam (1943 → luty 1945 → lato 1945). Granica wschodnia – Teheran i Jałta; zachodnia – Poczdam.</div>`,
-      infographicNote: 'Czytaj od góry: kto z kim walczył → przełomowe wydarzenia (pomarańczowe – ataki Osi, niebieskie – przełomy, zielone – kapitulacje) → co Wielka Trójka ustaliła o Polsce.',
+      infographicNote: 'Czytaj od góry: ataki Osi (pomarańczowe) → przełomy (niebieskie) → kapitulacje (zielone); na dole – decyzje Wielkiej Trójki o Polsce.',
       infographic: {
         type: 'os',
         top: { title: '⚔️ Oś kontra alianci', text: 'Niemcy, Włochy, Japonia przeciw m.in. Wielkiej Brytanii, ZSRS, USA i Polsce', kolor: 4 },
@@ -222,7 +222,7 @@ window.SUBJECTS.push({
           { title: '3. Obozy zagłady', text: 'założone przez Niemców na okupowanych ziemiach polskich: Chełmno, Treblinka, Auschwitz-Birkenau i inne', kolor: 2 },
           { title: 'Ok. 6 mln zamordowanych Żydów', text: 'z całej Europy; ofiarami ludobójstwa byli też Romowie', kolor: 4 },
         ],
-        bottom: { title: 'Opór i postawy', items: ['powstanie w getcie warszawskim (19 IV – 16 V 1943)', 'pomoc mimo kary śmierci: „Żegota”, Irena Sendlerowa, Ulmowie', 'obojętność – strach, brak reakcji', 'szmalcownictwo – wydawanie Żydów Niemcom'], kolor: 1 },
+        bottom: { title: 'Opór i postawy', items: ['powstanie w getcie warszawskim (19 IV – 16 V 1943)', 'pomoc mimo kary śmierci: „Żegota”, Irena Sendlerowa, Ulmowie', 'obojętność – strach, brak reakcji', 'szmalcownictwo – wydawanie Żydów Niemcom'], kolor: 1 },
       },
       flashcards: [
         ['Holokaust (Zagłada)', 'Wymordowanie przez Niemców ok. 6 mln Żydów w czasie II wojny światowej'],
@@ -281,7 +281,7 @@ window.SUBJECTS.push({
         <h3>Wołyń i Małopolska Wschodnia</h3>
         <p>W 1943 r. ukraińscy nacjonaliści (OUN-UPA) dokonali <b>ludobójstwa</b> ludności polskiej na <b>Wołyniu</b>, a potem w <b>Małopolsce Wschodniej</b> – zginęło kilkadziesiąt tysięcy Polaków. Najkrwawszy dzień to <b>11 lipca 1943 r.</b> (ataki na ok. 100 miejscowości). Celem było usunięcie Polaków z ziem, na których nacjonaliści chcieli utworzyć państwo ukraińskie. Polacy organizowali samoobronę; dochodziło też do polskich akcji odwetowych. Sejm uznał zbrodnię wołyńską za ludobójstwo, a 11 lipca jest Narodowym Dniem Pamięci jej ofiar.</p>
         <div class="tip">💡 Niemcy – Auschwitz, Palmiry, Lwów, Zamojszczyzna. Sowieci – Katyń, deportacje. Obaj okupanci niszczyli <b>elity</b>.</div>`,
-      infographicNote: 'Porównuj w poziomie: okupacja niemiecka (pomarańczowa) obok sowieckiej (fioletowej); u góry to, co je łączyło.',
+      infographicNote: 'Porównuj w poziomie: okupacja niemiecka obok sowieckiej; u góry – co je łączyło, na dole – zbrodnia wołyńska.',
       infographic: {
         type: 'porownanie',
         top: { title: '💡 Wspólny cel', text: 'zniszczyć polskie elity i podporządkować sobie społeczeństwo', kolor: 4 },
@@ -290,7 +290,7 @@ window.SUBJECTS.push({
           { label: 'Ziemie polskie', cells: ['wcielone do Rzeszy + Generalne Gubernatorstwo', 'wcielone do ZSRS'] },
           { label: 'Kogo prześladowali?', cells: ['kryterium narodowe (rasowe)', 'kryterium klasowe'], bold: true },
           { label: 'Jak?', cells: ['łapanki, egzekucje, roboty w Niemczech, obozy', 'aresztowania, deportacje w głąb ZSRS (1940–1941)'] },
-          { label: 'Zbrodnie', cells: ['Auschwitz-Birkenau, Palmiry, profesorowie lwowscy, Zamojszczyzna', 'zbrodnia katyńska (wiosna 1940), ok. 22 tys. ofiar'] },
+          { label: 'Zbrodnie', cells: ['Auschwitz-Birkenau, Palmiry, profesorowie lwowscy, Zamojszczyzna', 'zbrodnia katyńska (wiosna 1940), ok. 22 tys. ofiar'] },
         ],
         bottom: { title: 'Wołyń i Małopolska Wschodnia', text: '1943: ludobójstwo Polaków dokonane przez OUN-UPA; najkrwawszy dzień – 11 VII 1943', kolor: 1 },
       },
@@ -362,10 +362,10 @@ window.SUBJECTS.push({
         branches: [
           { title: 'Delegatura Rządu na Kraj', text: 'tajna administracja: urzędy, sądy, szkolnictwo', kolor: 1 },
           { title: 'Zalążek parlamentu', text: 'porozumienie najważniejszych partii', kolor: 1 },
-          { title: 'Armia Krajowa', text: 'od 14 II 1942 (z ZWZ); gen. Rowecki „Grot”, potem gen. Komorowski „Bór”', kolor: 3 },
+          { title: 'Armia Krajowa', text: 'od 14 II 1942; komendanci: gen. Rowecki „Grot”, potem gen. Komorowski „Bór”', kolor: 3 },
           { title: 'Formy oporu', items: ['tajne nauczanie', 'prasa podziemna', 'sabotaż i dywersja', 'wywiad', 'Szare Szeregi'], kolor: 3 },
         ],
-        bottom: { title: '🔥 Powstanie warszawskie', text: '1 VIII – 2 X 1944, 63 dni', items: ['Armia Czerwona stała za Wisłą i nie pomogła', 'zginęło ponad 18 tys. powstańców i ok. 180 tys. cywilów', 'Niemcy zburzyli Warszawę'], kolor: 2 },
+        bottom: { title: '🔥 Powstanie warszawskie', text: '1 VIII – 2 X 1944, 63 dni', items: ['Armia Czerwona stała za Wisłą i nie pomogła', 'zginęło ponad 18 tys. powstańców i ok. 180 tys. cywilów', 'Niemcy zburzyli Warszawę'], kolor: 2 },
       },
       flashcards: [
         ['Polskie Państwo Podziemne', 'Tajne struktury państwa polskiego w okupowanym kraju, podległe rządowi na uchodźstwie'],
@@ -421,7 +421,7 @@ window.SUBJECTS.push({
         <h3>Polityka mocarstw wobec Polski</h3>
         <p>Wielka Brytania i USA potrzebowały ZSRS do pokonania Niemiec, więc <b>ustępowały Stalinowi</b>: w Teheranie i Jałcie zgodziły się na granicę na linii Curzona i na Polskę w strefie wpływów ZSRS – bez zgody rządu polskiego. W 1945 r. wycofały uznanie dla rządu w Londynie i uznały Tymczasowy Rząd Jedności Narodowej, zdominowany przez komunistów.</p>
         <div class="tip">💡 Polacy walczyli na lądzie, morzu i w powietrzu od pierwszego do ostatniego dnia wojny – ale o losie Polski zdecydowały mocarstwa.</div>`,
-      infographicNote: 'Czytaj od góry: losy rządu na uchodźstwie (niebieskie – rząd, fioletowe – relacje z ZSRS, pomarańczowe – ciosy, zielone – front) → na dole wniosek.',
+      infographicNote: 'Czytaj od góry: losy rządu na uchodźstwie – fioletowe to relacje z ZSRS, pomarańczowe to ciosy, zielone to front.',
       infographic: {
         type: 'os',
         items: [
@@ -432,7 +432,7 @@ window.SUBJECTS.push({
           { label: '1943', title: 'ZSRS zrywa stosunki', text: 'gdy rząd żąda wyjaśnień w sprawie Katynia', kolor: 2 },
           { label: '4 VII 1943', title: 'Śmierć Sikorskiego', text: 'katastrofa lotnicza w Gibraltarze', kolor: 2 },
           { label: 'V 1944', title: 'Monte Cassino', text: '2 Korpus gen. Andersa zdobywa klasztor', kolor: 3 },
-          { label: '1945', title: 'Mocarstwa uznają TRJN', text: 'i wycofuje uznanie dla rządu w Londynie', kolor: 2 },
+          { label: '1945', title: 'Mocarstwa uznają TRJN', text: 'i wycofują uznanie dla rządu w Londynie', kolor: 2 },
         ],
         bottom: { title: '💡 Walczyli na wielu frontach', text: 'Narwik, bitwa o Anglię (Dywizjon 303), Tobruk, Falaise, Arnhem, Lenino – ale o losie Polski zdecydowały mocarstwa', kolor: 4 },
       },
@@ -657,7 +657,7 @@ window.SUBJECTS.push({
           <li><b>Październik 1956</b> – „<b>odwilż</b>”: I sekretarzem PZPR został <b>Władysław Gomułka</b>; uwolniono prymasa Wyszyńskiego, ograniczono terror, zaniechano przymusowej kolektywizacji. Komunizm jednak pozostał.</li>
         </ul>
         <div class="tip">💡 Droga do pełni władzy: <b>PKWN (1944) → referendum (1946) → wybory (1947) → PZPR (1948) → Konstytucja PRL (1952)</b>.</div>`,
-      infographicNote: 'Czytaj od góry: krok po kroku komuniści przejmują władzę (pomarańczowe), potem stalinizm (fioletowy) i przełom 1956 r.',
+      infographicNote: 'Czytaj od góry: komuniści krok po kroku przejmują władzę (pomarańczowe), potem stalinizm i przełom 1956 r.; na dole – postawy Polaków.',
       infographic: {
         type: 'os',
         items: [
@@ -836,9 +836,9 @@ window.SUBJECTS.push({
         type: 'os',
         top: { title: 'Przyczyny', text: 'władza boi się ogromnej „Solidarności”; ZSRS naciska na rozprawę ze związkiem', kolor: 4 },
         items: [
-          { label: '13 XII 1981', title: 'Stan wojenny', text: 'władzę przejmuje WRON, gen. Wojciech Jaruzelski; internowania', kolor: 2 },
+          { label: '13 XII 1981', title: 'Stan wojenny', text: 'władzę przejmuje WRON, gen. Wojciech Jaruzelski; internowania', kolor: 2 },
           { label: '16 XII 1981', title: 'Kopalnia „Wujek”', text: 'zginęło 9 strajkujących górników', kolor: 2 },
-          { label: '1983', title: 'Nobel dla Wałęsy', text: 'Lech Wałęsa – Pokojowa Nagroda Nobla', kolor: 1 },
+          { label: '1983', title: 'Lech Wałęsa', text: 'Pokojowa Nagroda Nobla', kolor: 1 },
           { label: '1984', title: 'Ks. Jerzy Popiełuszko', text: 'zamordowany przez funkcjonariuszy SB', kolor: 2 },
           { label: '1988', title: 'Strajki', text: 'kryzys gospodarczy; zmiany w ZSRS za Gorbaczowa', kolor: 1 },
           { label: '1989', title: 'Okrągły Stół', text: '6 II – 5 IV: władza i opozycja, Kościół pośredniczy', kolor: 3 },

@@ -50,13 +50,13 @@ window.SUBJECTS.push({
       infographicNote: 'Czytaj od góry: jak powstaje wodorotlenek, co robi w wodzie i kiedy daje zasadę; na dole – pułapki.',
       infographic: {
         type: 'kroki',
-        top: { title: 'Jak otrzymać wodorotlenek?', items: ['metal aktywny + woda: 2Na + 2H₂O → 2NaOH + H₂↑', 'tlenek metalu + woda: CaO + H₂O → Ca(OH)₂', 'strącanie: CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄'], kolor: 5 },
+        top: { title: 'Jak otrzymać wodorotlenek?', items: ['metal aktywny + woda:\n2Na + 2H₂O → 2NaOH + H₂↑', 'tlenek metalu + woda:\nCaO + H₂O → Ca(OH)₂', 'reakcja strąceniowa:\nCuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄'], kolor: 5 },
         items: [
-          { title: 'Wodorotlenek M(OH)ₙ', text: 'kation metalu + aniony OH⁻; n = wartościowość metalu', kolor: 1 },
+          { title: 'Wodorotlenek M(OH)ₙ', text: 'kation metalu + aniony OH⁻\nn\u00a0=\u00a0wartościowość metalu', kolor: 1 },
           { title: 'Dysocjacja w wodzie', text: 'NaOH → Na⁺ + OH⁻\nCa(OH)₂ → Ca²⁺ + 2OH⁻', kolor: 1 },
           { title: 'Zasada', text: 'w wodzie zwiększa stężenie jonów OH⁻, np. zasada sodowa', kolor: 3 },
         ],
-        bottom: { title: '⚠️ Uwaga', items: ['Cu(OH)₂ się nie rozpuszcza – nie dysocjuje, nie daje zasady', 'amoniak w wodzie to zasada, choć nie wodorotlenek', 'NaOH jest żrący – okulary i rękawice'], kolor: 2 },
+        bottom: { title: '⚠️ Uwaga', items: ['Cu(OH)₂ nie rozpuszcza się → nie daje zasady', 'amoniak w wodzie – zasada, choć to nie wodorotlenek', 'NaOH jest żrący – okulary i rękawice'], kolor: 2 },
       },
       flashcards: [
         ['Wzór ogólny wodorotlenku', 'M(OH)ₙ – metal i n grup OH (n = wartościowość metalu)'],
@@ -145,7 +145,7 @@ window.SUBJECTS.push({
       infographicNote: 'Czytaj od góry: jak powstaje kwas, co robi w wodzie i dlaczego jest kwasem; na dole – bezpieczeństwo.',
       infographic: {
         type: 'kroki',
-        top: { title: 'Jak otrzymać kwas?', items: ['beztlenowy: H₂ + Cl₂ → 2HCl, potem rozpuszczasz w wodzie', 'tlenowy: tlenek niemetalu + woda, np. SO₃ + H₂O → H₂SO₄'], kolor: 5 },
+        top: { title: 'Jak otrzymać kwas?', items: ['beztlenowy: wodorek + woda\nH₂ + Cl₂ → 2HCl, HCl w wodzie = kwas solny', 'tlenowy: tlenek niemetalu + woda\nSO₃ + H₂O → H₂SO₄'], kolor: 5 },
         items: [
           { title: 'Kwas HₙR', text: 'n atomów wodoru + reszta kwasowa; beztlenowe (HCl, H₂S) i tlenowe', kolor: 1 },
           { title: 'Dysocjacja w wodzie', text: 'H₂SO₄ → 2H⁺ + SO₄²⁻\nładunek anionu = liczba atomów H\nH₂S i H₂CO₃ – stopniowo', kolor: 1 },
@@ -242,6 +242,7 @@ window.SUBJECTS.push({
       infographicNote: 'Porównuj w poziomie: każdy wiersz to jedna cecha odczynu kwasowego, obojętnego i zasadowego.',
       infographic: {
         type: 'porownanie',
+        top: { title: 'Wskaźnik', text: 'zmienia barwę zależnie od odczynu; papierek uniwersalny – w całej skali pH 0–14', kolor: 4 },
         kolumny: [{ title: 'kwasowy', kolor: 2 }, { title: 'obojętny', kolor: 3 }, { title: 'zasadowy', kolor: 5 }],
         wiersze: [
           { label: 'jony', cells: ['więcej H⁺ niż OH⁻', 'tyle samo H⁺ i OH⁻', 'więcej OH⁻ niż H⁺'] },
@@ -328,13 +329,13 @@ window.SUBJECTS.push({
       infographicNote: 'U góry – budowa i nazwy soli, niżej – cztery sposoby otrzymywania, na dole – reakcja strąceniowa.',
       infographic: {
         type: 'drzewo', kolumny: 1,
-        top: { title: 'Sól = kation metalu + anion reszty kwasowej', text: 'kwas beztlenowy → sól na -ek (chlorek), tlenowy → na -an (siarczan(VI))', kolor: 5 },
+        top: { title: 'Budowa soli', text: 'kation metalu + anion reszty kwasowej\nsole kwasów beztlenowych: -ek (chlorek)\nsole kwasów tlenowych: -an (siarczan(VI))', kolor: 5 },
         root: { title: 'Jak otrzymać sól?', kolor: 1 },
         branches: [
-          { title: 'kwas + zasada → sól + woda', text: 'HCl + NaOH → NaCl + H₂O\nzobojętnianie: H⁺ + OH⁻ → H₂O', kolor: 3 },
-          { title: 'kwas + tlenek metalu → sól + woda', text: 'CuO + H₂SO₄ → CuSO₄ + H₂O', kolor: 3 },
-          { title: 'kwas + metal → sól + wodór', text: 'Mg + 2HCl → MgCl₂ + H₂↑', kolor: 3 },
-          { title: 'zasada + tlenek niemetalu → sól + woda', text: 'Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O', kolor: 3 },
+          { title: 'kwas + zasada', text: '→ sól + woda\nHCl + NaOH → NaCl + H₂O\nzobojętnianie: H⁺ + OH⁻ → H₂O', kolor: 3 },
+          { title: 'kwas + tlenek metalu', text: '→ sól + woda\nCuO + H₂SO₄ → CuSO₄ + H₂O', kolor: 3 },
+          { title: 'kwas + metal', text: '→ sól + wodór\nMg + 2HCl → MgCl₂ + H₂↑', kolor: 3 },
+          { title: 'zasada + tlenek niemetalu', text: '→ sól + woda\nCa(OH)₂ + CO₂ → CaCO₃↓ + H₂O', kolor: 3 },
         ],
         bottom: { title: '🧪 Reakcja strąceniowa', text: 'powstaje osad, np. Ag⁺ + Cl⁻ → AgCl↓ (biały); sprawdzasz w tablicy rozpuszczalności', kolor: 4 },
       },
@@ -539,7 +540,7 @@ window.SUBJECTS.push({
         <h3>Glicerol (propano-1,2,3-triol)</h3>
         <p>Wzór: C<sub>3</sub>H<sub>5</sub>(OH)<sub>3</sub>, półstrukturalny: CH<sub>2</sub>(OH)–CH(OH)–CH<sub>2</sub>(OH). To alkohol <b>polihydroksylowy</b> (trzy grupy –OH). Bezbarwna, gęsta, oleista ciecz o słodkim smaku, bez zapachu, dobrze rozpuszcza się w wodzie. Zatrzymuje wilgoć – dlatego jest składnikiem kosmetyków (np. kremów nawilżających).</p>
         <div class="tip">💡 „-ol” na końcu nazwy = grupa –OH = alkohol. Ale odczyn obojętny – fenoloftaleina się nie zabarwi.</div>`,
-      infographicNote: 'U góry – co robi z węglowodoru alkohol; niżej porównuj w poziomie trzy alkohole.',
+      infographicNote: 'U góry – czym jest alkohol; niżej porównuj w poziomie trzy alkohole.',
       infographic: {
         type: 'porownanie',
         top: { title: 'Grupa hydroksylowa –OH', text: 'zastępuje atom wodoru w węglowodorze; nazwa alkanu + końcówka -ol\nmonohydroksylowe: CₙH₂ₙ₊₁OH', kolor: 4 },
@@ -623,12 +624,12 @@ window.SUBJECTS.push({
       infographicNote: 'Czytaj od góry: z etanolu powstaje kwas octowy, a kwas z alkoholem daje ester.',
       infographic: {
         type: 'kroki',
-        top: { title: 'Grupa karboksylowa –COOH', text: 'CₙH₂ₙ₊₁COOH, np. HCOOH – mrówkowy, CH₃COOH – octowy', kolor: 5 },
+        top: { title: 'Grupa karboksylowa –COOH', text: 'CₙH₂ₙ₊₁COOH\nHCOOH – mrówkowy, CH₃COOH – octowy', kolor: 5 },
         items: [
           { title: 'Etanol', text: 'fermentacja octowa (bakterie octowe)', kolor: 1 },
-          { title: 'Kwas octowy CH₃COOH', text: 'CH₃COOH ⇄ CH₃COO⁻ + H⁺ – odczyn kwasowy; z NaOH → octan sodu + woda', kolor: 2 },
-          { title: '+ alkohol (estryfikacja)', text: 'kwas + alkohol ⇄ ester + woda; katalizator – stężony H₂SO₄', kolor: 1 },
-          { title: 'Ester', text: 'CH₃COOC₂H₅ – octan etylu; owocowy zapach, aromaty i rozpuszczalniki', kolor: 3 },
+          { title: 'Kwas octowy CH₃COOH', text: 'CH₃COOH ⇄ CH₃COO⁻ + H⁺\nodczyn kwasowy; reaguje jak kwasy nieorganiczne, np. z NaOH → octan sodu + woda', kolor: 2 },
+          { title: '+ alkohol (estryfikacja)', text: 'kwas + alkohol ⇄ ester + woda\nkatalizator – stężony H₂SO₄', kolor: 1 },
+          { title: 'Ester', text: 'CH₃COOC₂H₅ – octan etylu\nowocowy zapach; aromaty, rozpuszczalniki', kolor: 3 },
         ],
         bottom: { title: '💡 Nazwa estru', text: 'najpierw kwas, potem alkohol: octan etylu – z kwasu octowego i etanolu', kolor: 4 },
       },
@@ -734,7 +735,7 @@ window.SUBJECTS.push({
           { title: 'Białka', text: 'łańcuchy aminokwasów, wiązanie peptydowe –CO–NH–', items: ['denaturacja – nieodwracalna (temperatura, etanol)', 'koagulacja – odwracalna (NaCl)'], kolor: 1 },
           { title: 'Cukry', text: 'zbudowane z C, H i O', items: ['proste: glukoza, fruktoza C₆H₁₂O₆', 'dwucukier: sacharoza C₁₂H₂₂O₁₁', 'wielocukry: skrobia, celuloza'], kolor: 3 },
         ],
-        bottom: { title: '🔍 Jak wykryć?', items: ['białko + stężony HNO₃ → żółte', 'skrobia + jod → ciemnogranatowe', 'tłuszcz nienasycony odbarwia wodę bromową'], kolor: 2 },
+        bottom: { title: '🔍 Jak wykryć?', items: ['białko + stężony HNO₃ → żółte', 'skrobia + jod → ciemnogranatowe', 'tłuszcz nienasycony + woda bromowa → odbarwienie'], kolor: 2 },
       },
       flashcards: [
         ['Kwasy palmitynowy i stearynowy', 'nasycone kwasy tłuszczowe, stałe'],

@@ -382,7 +382,7 @@ window.SUBJECTS.push({
       infographic: {
         type: 'porownanie',
         top: { kolor: 5, title: '❤️ gern → lieber → am liebsten', items: ['Ich spiele gern Fußball.', 'Ich tanze lieber.', 'Am liebsten lese ich.'] },
-        kolumny: [{ title: 'können', kolor: 1 }, { title: 'wollen', kolor: 3 }, { title: 'möchten', kolor: 2 }],
+        kolumny: [{ title: 'können', kolor: 1 }, { title: 'wollen', kolor: 3 }, { title: 'möchten', kolor: 5 }],
         wiersze: [
           { cells: ['umieć, móc', 'chcieć', 'chciałbym'] },
           { label: 'ich', cells: ['kann', 'will', 'möchte'], bold: true },
@@ -585,14 +585,14 @@ window.SUBJECTS.push({
       infographicNote: 'Od góry: na pytanie Wo? po przyimku rodzajnik się zmienia – ten sam kolor, ten sam rodzaj.',
       infographic: {
         type: 'drzewo', kolumny: 1,
-        top: { kolor: 5, title: '📍 Wo? – przyimki', items: ['in (w), auf (na), unter (pod), über (nad)', 'neben (obok), vor (przed), hinter (za), zwischen (między)'] },
+        top: { kolor: 5, title: '📍 Wo? – przyimki', text: 'in (w) · auf (na) · unter (pod) · über (nad)\nneben (obok) · vor (przed)\nhinter (za) · zwischen (między)' },
         root: { kolor: 4, title: 'przyimek + celownik' },
         branches: [
           { kolor: 1, title: 'der Tisch → dem Tisch', text: 'Die Lampe steht auf dem Tisch.' },
           { kolor: 3, title: 'das Bett → dem Bett', text: 'Der Ball liegt unter dem Bett.' },
           { kolor: 2, title: 'die Lampe → der Lampe', text: 'Die Katze sitzt neben der Lampe.' },
         ],
-        bottom: { kolor: 4, title: '💡 Zapamiętaj', items: ['im = in dem (im Regal), am = an dem', 'die → der – nie pomyl z rodzajnikiem męskim!', 'es gibt + biernik: Es gibt einen Tisch.'] },
+        bottom: { kolor: 4, title: '💡 Zapamiętaj', items: ['im = in dem (im Regal), am = an dem', 'die → der – nie pomyl z męskim der!', 'es gibt + biernik: Es gibt einen Tisch.'] },
       },
       flashcards: [
         ['die Wohnung', 'mieszkanie'],
@@ -682,8 +682,8 @@ window.SUBJECTS.push({
         kolumny: [{ title: 'der / das', kolor: 1 }, { title: 'die', kolor: 2 }],
         wiersze: [
           { label: 'dokąd? – zu', cells: ['zum = zu dem', 'zur = zu der'], bold: true },
-          { cells: ['zum Bahnhof, zum Kino', 'zur Post, zur Schule'] },
-          { label: 'czym? – mit + celownik (ale pieszo: zu Fuß)', cells: ['mit dem Bus, mit dem Zug', 'mit der U-Bahn, mit der Straßenbahn'] },
+          { cells: ['zum Bahnhof\nzum Kino', 'zur Post\nzur Schule'] },
+          { label: 'czym? – mit + celownik (ale pieszo: zu Fuß)', cells: ['mit dem Bus\nmit dem Zug', 'mit der U-Bahn\nmit der Straßenbahn'] },
         ],
         bottom: { kolor: 4, title: '📣 Tryb rozkazujący', items: ['du: Geh! Komm! Nimm!', 'ihr: Geht! Kommt! Nehmt!', 'Sie: Gehen Sie! Kommen Sie!'] },
       },
@@ -822,12 +822,12 @@ window.SUBJECTS.push({
         items: [
           { icon: '☀️', kolor: 4, title: 'Es ist…', text: 'sonnig, warm, heiß, kalt, windig, wolkig, neblig' },
           { icon: '🌧️', kolor: 4, title: 'Es…', text: 'Es regnet.\nEs schneit.\nDie Sonne scheint.' },
+          { icon: '🍂', kolor: 5, title: 'Pory roku', text: 'der Frühling, der Sommer, der Herbst, der Winter' },
+          { icon: '🌲', kolor: 1, title: 'Krajobraz', text: 'der Berg, der Wald, der Fluss\n⚠️ der See – jezioro\ndas Meer – morze' },
           { icon: '🐕', kolor: 3, title: 'Zwierzęta domowe', text: 'der Hund, die Katze, das Pferd, die Kuh' },
           { icon: '🐻', kolor: 3, title: 'Zwierzęta dzikie', text: 'der Bär, der Wolf, der Fuchs' },
-          { icon: '🌲', kolor: 1, title: 'Krajobraz', text: 'der Berg, der Wald, der Fluss, der Baum, die Blume' },
-          { icon: '🌊', kolor: 1, title: 'Pułapka!', text: 'der See – jezioro\ndas Meer – morze' },
         ],
-        bottom: { kolor: 5, title: '📅 Kiedy? im – am – um', text: 'der Frühling, der Sommer, der Herbst, der Winter', items: ['im Sommer, im Mai – pora roku, miesiąc', 'am Montag – dzień', 'um acht Uhr – godzina'] },
+        bottom: { kolor: 5, title: '📅 Kiedy? im – am – um', items: ['im Sommer, im Mai – pora roku, miesiąc', 'am Montag – dzień', 'um acht Uhr – godzina'] },
       },
       flashcards: [
         ['Wie ist das Wetter?', 'Jaka jest pogoda?'],
@@ -1081,10 +1081,10 @@ window.SUBJECTS.push({
         top: { kolor: 4, title: '🗺️ D-A-CH', text: 'D – Deutschland · A – Österreich\nCH – die Schweiz' },
         kolumny: [{ title: 'Deutschland', kolor: 1 }, { title: 'Österreich', kolor: 3 }, { title: 'die Schweiz', kolor: 5 }],
         wiersze: [
-          { label: 'stolica (Szwajcaria – brak oficjalnej)', cells: ['Berlin', 'Wien', 'Bern – siedziba władz'] },
-          { label: 'podział', cells: ['16 Bundesländer', '9 Bundesländer', '26 Kantone'] },
+          { label: 'stolica (Szwajcaria – brak oficjalnej; Bern to siedziba władz)', cells: ['Berlin', 'Wien', 'Bern'], bold: true },
+          { label: 'podział', cells: ['16\nBundesländer', '9\nBundesländer', '26\nKantone'] },
           { label: 'język urzędowy', cells: ['niemiecki', 'niemiecki', '4 języki'] },
-          { label: 'sąsiedzi', cells: ['9 państw, w tym Polska', '8 państw', '5 państw'] },
+          { label: 'sąsiedzi', cells: ['9 państw\nw tym Polska', '8 państw', '5 państw'] },
           { label: 'mieszkaniec', cells: ['der Deutsche', 'der Österreicher', 'der Schweizer'] },
         ],
         bottom: { kolor: 4, title: '💡 Szwajcaria z rodzajnikiem', text: 'Ich komme aus Polen / aus Österreich.\nAle: Ich komme aus der Schweiz.' },

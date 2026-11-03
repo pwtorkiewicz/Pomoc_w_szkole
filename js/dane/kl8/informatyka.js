@@ -162,11 +162,11 @@
           kolumny: [{ title: 'Euklides z odejmowaniem', kolor: 1 }, { title: 'Euklides z resztą', kolor: 5 }],
           wiersze: [
             { label: 'dopóki…', cells: ['a ≠ b', 'b ≠ 0'], bold: true },
-            { label: 'krok', cells: ['od większej liczby odejmij mniejszą', 'r = a % b, a = b, b = r'] },
+            { label: 'krok', cells: ['od większej liczby odejmij mniejszą', 'r = a % b\na = b\nb = r'] },
             { label: 'wynik', cells: ['wspólna wartość', 'a'], bold: true },
-            { label: 'NWD(84, 36)', cells: ['(84, 36) → (48, 36) → (12, 36) → (12, 24) → (12, 12)', '(84, 36) → (36, 12) → (12, 0)\nNWD = 12'] },
+            { label: 'NWD(84, 36)', cells: ['(84, 36) → (48, 36)\n→ (12, 36) → (12, 24)\n→ (12, 12)\nNWD = 12', '(84, 36) → (36, 12)\n→ (12, 0)\nNWD = 12'] },
           ],
-          bottom: { title: '💡 Reszta w praktyce', items: ['a % d == 0 – a dzieli się przez d', 'n % 10 – ostatnia cyfra, n // 10 – liczba bez niej', 'czy n jest pierwsza? sprawdzaj d, dopóki d · d ≤ n'], kolor: 3 },
+          bottom: { title: '💡 Reszta w praktyce', items: ['a % d == 0 – a dzieli się przez d', 'n % 10 – ostatnia cyfra', 'n // 10 – liczba bez ostatniej cyfry', 'czy n jest pierwsza? sprawdzaj d, dopóki d\u00a0·\u00a0d\u00a0≤\u00a0n'], kolor: 3 },
         },
         flashcards: [
           ['17 // 5 w Pythonie', '3 – iloraz całkowity'],
@@ -273,7 +273,7 @@
         t[i], t[m] = t[m], t[i]</code></pre>
           <p><code>m</code> to indeks najmniejszego elementu w części od <code>i</code> do końca. Zapis <code>t[i], t[m] = t[m], t[i]</code> zamienia dwa elementy miejscami.</p>
           <div class="tip">💡 Po k przejściach sortowania przez wybieranie pierwsze k elementów stoi już na swoich ostatecznych miejscach.</div>`,
-        infographicNote: 'Czytaj od góry: sortowanie przez wybieranie przejście po przejściu; na dole – ile porównań i przejść.',
+        infographicNote: 'Czytaj od góry: sortowanie przez wybieranie przejście po przejściu; na dole – ile porównań i przejść potrzeba.',
         infographic: {
           type: 'kroki',
           top: { title: '🔁 Jedno przejście', text: 'w nieposortowanej części znajdź najmniejszy element i zamień go z jej pierwszym elementem', kolor: 4 },
@@ -282,9 +282,9 @@
             { title: 'Przejście 1.', text: '1, 2, 8, 5, 4\nnajmniejsze 1 zamienione z 5', kolor: 1 },
             { title: 'Przejście 2.', text: '1, 2, 8, 5, 4\n2 już stoi na miejscu', kolor: 1 },
             { title: 'Przejście 3.', text: '1, 2, 4, 5, 8\n4 zamienione z 8', kolor: 1 },
-            { title: 'Przejście 4. – gotowe', text: '1, 2, 4, 5, 8\nn − 1 = 4 przejścia dla 5 elementów', kolor: 3 },
+            { title: 'Przejście 4. – gotowe', text: '1, 2, 4, 5, 8\nn\u00a0−\u00a01 = 4 przejścia dla 5 elementów', kolor: 3 },
           ],
-          bottom: { title: '💡 Ile porównań dla n elementów?', items: ['szukanie w zbiorze nieuporządkowanym – w najgorszym razie n', 'największy element (metoda kandydata) – n − 1', 'po k przejściach sortowania pierwsze k elementów stoi na miejscach'], kolor: 5 },
+          bottom: { title: '💡 Dla n elementów', items: ['szukanie w zbiorze nieuporządkowanym – w najgorszym razie n porównań', 'największy element (metoda kandydata) – n\u00a0−\u00a01 porównań', 'po k przejściach sortowania pierwsze k elementów stoi na miejscach'], kolor: 5 },
         },
         flashcards: [
           ['Wyszukiwanie w zbiorze nieuporządkowanym', 'Przeglądasz elementy po kolei, aż znajdziesz szukany albo skończą się elementy'],
@@ -385,7 +385,7 @@
           wiersze: [
             { label: 'jak?', cells: ['dodaj wagi pozycji, na których stoi 1', 'dziel przez 2, zapisuj reszty, czytaj je od dołu'] },
             { label: 'przykład', cells: ['1011₂ = 11', '13 = 1101₂'], bold: true },
-            { label: 'rachunek', cells: ['8 + 2 + 1 = 11', 'reszty: 1, 0, 1, 1\nod dołu: 1101₂\nsprawdzenie: 8 + 4 + 1 = 13'] },
+            { label: 'rachunek', cells: ['8 + 2 + 1 = 11', 'reszty: 1, 0, 1, 1\nod dołu: 1101₂\n8 + 4 + 1 = 13'] },
           ],
           bottom: { title: '🔤 Znaki – kod ASCII', items: ['128 znaków (kody 0–127, 7 bitów)', 'A = 65, a = 97 (o 32 więcej)', 'bez polskich liter – dziś najczęściej Unicode'], kolor: 3 },
         },
@@ -524,7 +524,7 @@ else:
             { icon: '🖨️', title: 'Wyjście', text: 'print("Suma:", a + b) – wypisuje na ekran', kolor: 1 },
             { icon: '🧪', title: 'Testowanie', text: 'błąd składniowy – programu nie uruchomisz; błąd logiczny – zły wynik', kolor: 3 },
           ],
-          bottom: { title: '⚠️ Pułapki', items: ['= przypisuje, == porównuje', 'bez int „dodawanie” 4 i 4 daje 44', 'po if, elif, else – dwukropek i wcięcie (4 spacje)'], kolor: 2 },
+          bottom: { title: '⚠️ Pułapki', items: ['= przypisuje, == porównuje', 'bez int „dodawanie” 4 i 4 daje 44', 'po if, elif, else – dwukropek i wcięcie (4\u00a0spacje)'], kolor: 2 },
         },
         flashcards: [
           ['Zmienna', 'Nazwane miejsce w pamięci na wartość, np. wiek = 14'],
@@ -630,7 +630,9 @@ print(kw(3) + kw(4))   # 9 + 16 = 25</code></pre>
           kolumny: [{ title: 'for', kolor: 1 }, { title: 'while', kolor: 5 }],
           wiersze: [
             { label: 'powtarza blok…', cells: ['dla kolejnych wartości zmiennej sterującej', 'dopóki warunek jest prawdziwy'] },
-            { label: 'przykład', cells: ['s = 0\nfor i in range(1, 5):\ns = s + i', 'n = 1\nwhile n < 20:\nn = n * 2'] },
+            { label: 'start', cells: ['s = 0', 'n = 1'] },
+            { label: 'pętla', cells: ['for i in range(1, 5):', 'while n < 20:'] },
+            { label: 'w bloku (z wcięciem)', cells: ['s = s + i', 'n = n * 2'] },
             { label: 'wynik', cells: ['s = 10', 'n = 32'], bold: true },
             { label: 'pułapka', cells: ['range nie obejmuje górnej granicy', 'warunek nigdy nie staje się fałszywy – pętla nieskończona'] },
           ],
@@ -948,8 +950,8 @@ print(kw(3) + kw(4))   # 9 + 16 = 25</code></pre>
           root: { title: '🌐 Internet', text: 'ogólnoświatowy zbiór połączonych sieci', kolor: 4 },
           branches: [
             { title: 'Rodzaje sieci', items: ['LAN – lokalna', 'WLAN – Wi-Fi', 'MAN – miejska', 'WAN – rozległa'], kolor: 1 },
-            { title: 'Urządzenia', items: ['przełącznik – łączy urządzenia w LAN', 'ruter – między sieciami'], kolor: 5 },
-            { title: 'Adresy', items: ['IPv4: 4 liczby 0–255 (32 bity)', 'DNS: nazwa domeny → adres IP', 'https – połączenie szyfrowane'], kolor: 1 },
+            { title: 'Urządzenia', items: ['przełącznik – łączy urządzenia w sieci przewodowej', 'ruter – przekazuje dane między sieciami', 'punkt dostępowy – Wi-Fi'], kolor: 5 },
+            { title: 'Adresy', items: ['IPv4: 4 liczby od 0 do 255 (32 bity)', 'DNS: nazwa domeny → adres IP', 'https – połączenie szyfrowane'], kolor: 1 },
             { title: 'Klient i serwer', items: ['serwer udostępnia usługi', 'klient korzysta, np. przeglądarka'], kolor: 5 },
           ],
           bottom: { title: '🔎 Oceń informację', text: 'autor, data, źródła, porównanie z innymi źródłami, cel strony', kolor: 2 },
@@ -1043,7 +1045,7 @@ print(kw(3) + kw(4))   # 9 + 16 = 25</code></pre>
             { label: 'jak długo?', cells: ['bez ograniczenia w czasie', 'zasadniczo 70 lat po śmierci twórcy'], bold: true },
             { label: 'potem', cells: ['zostają, np. prawo do autorstwa', 'wygasają – utwór trafia do domeny publicznej'] },
           ],
-          bottom: { title: '📜 Licencja – warunki korzystania', items: ['freeware – bezpłatnie, bez zmian kodu', 'shareware – na próbę, potem płacisz', 'open source (GNU GPL) – wolno zmieniać kod', 'CC BY – podaj autora'], kolor: 3 },
+          bottom: { title: '📜 Licencja – warunki korzystania', items: ['freeware – bezpłatnie, bez zmian kodu', 'shareware – na próbę, potem płacisz albo przestajesz używać', 'open source (GNU GPL) – wolno zmieniać kod', 'CC BY – podaj autora'], kolor: 3 },
         },
         flashcards: [
           ['Utwór', 'Przejaw działalności twórczej o indywidualnym charakterze, ustalony w jakiejkolwiek postaci'],

@@ -42,8 +42,8 @@ window.SUBJECTS.push({
       infographicNote: 'Od góry: skąd bierze się ładunek, trzy sposoby elektryzowania, a na dole – jak ładunki na siebie działają.',
       infographic: {
         type: 'drzewo', kolumny: 1,
-        top: { icon: '⚛️', title: 'Skąd ładunek?', text: 'nadmiar elektronów → ładunek ujemny (−)\nniedobór elektronów → ładunek dodatni (+)', kolor: 5 },
-        root: { title: 'Elektryzowanie', text: 'to zawsze przenoszenie elektronów', kolor: 2 },
+        top: { icon: '⚛️', title: 'Skąd ładunek?', text: 'nadmiar elektronów → ujemny (−)\nniedobór elektronów → dodatni (+)', kolor: 5 },
+        root: { title: 'Elektryzowanie = przenoszenie elektronów', kolor: 2 },
         branches: [
           { title: 'Przez potarcie', text: 'elektrony przechodzą z ciała na ciało → oba mają ładunki przeciwnych znaków', kolor: 1 },
           { title: 'Przez dotyk', text: 'część ładunku przechodzi na drugie ciało → oba mają ładunek tego samego znaku', kolor: 1 },
@@ -122,7 +122,7 @@ window.SUBJECTS.push({
           { label: 'jednostka', cells: ['amper (A)', 'wolt (V)', 'om (Ω)'], bold: true },
           { label: 'pomiar', cells: ['amperomierz – szeregowo', 'woltomierz – równolegle', 'z pomiaru U i I'] },
         ],
-        bottom: { title: '💡 Związek U, I i R', text: 'R = U / I, więc U = I · R i I = U / R\nnp. 12 V : 0,5 A = 24 Ω', kolor: 4 },
+        bottom: { title: '💡 Związek U, I i R', text: 'R = U / I, więc U = I · R oraz I = U / R\nnp. 12 V : 0,5 A = 24 Ω', kolor: 4 },
       },
       flashcards: [
         ['Prąd elektryczny', 'Uporządkowany ruch elektronów swobodnych (w metalach) albo jonów (w roztworach)'],
@@ -328,7 +328,8 @@ window.SUBJECTS.push({
       infographicNote: 'U góry zasada biegunów, niżej – magnesy (niebieskie) i magnetyzm prądu (zielone).',
       infographic: {
         type: 'drzewo', kolumny: 1,
-        root: { icon: '🧲', title: 'Bieguny N i S', items: ['jednoimienne (N–N, S–S) – odpychają się', 'różnoimienne (N–S) – przyciągają się'], kolor: 5 },
+        top: { icon: '🧲', title: 'Bieguny N i S', items: ['jednoimienne (N–N, S–S) – odpychają się', 'różnoimienne (N–S) – przyciągają się'], kolor: 5 },
+        root: { title: 'Gdzie działa magnetyzm?', kolor: 2 },
         branches: [
           { title: '✂️ Przecięty magnes', text: 'dwa magnesy – każdy ma biegun N i S', kolor: 1 },
           { title: '🧭 Kompas', text: 'biegun N igły wskazuje północ – Ziemia jest jak wielki magnes', kolor: 1 },
@@ -419,7 +420,7 @@ window.SUBJECTS.push({
           { icon: '🌊', title: 'Fala', text: 'drgania rozchodzą się w ośrodku – przenosi energię, nie materię', kolor: 1 },
           { title: 'v = λ · f = λ / T', text: 'np. λ = 2 m, f = 5 Hz → v = 10 m/s', kolor: 4 },
           { icon: '🔊', title: 'Dźwięk', text: 'źródło drga; w powietrzu ok. 340 m/s, w próżni się nie rozchodzi', kolor: 3 },
-          { title: 'Cechy dźwięku', items: ['wysokość – od częstotliwości (większa f – wyższy)', 'głośność – od amplitudy (większa – głośniejszy)'], kolor: 3 },
+          { title: 'Cechy dźwięku', text: 'wysokość – od częstotliwości:\nwiększa f → wyższy dźwięk\ngłośność – od amplitudy:\nwiększa amplituda → głośniejszy dźwięk', kolor: 3 },
         ],
         bottom: { title: '👂 Słyszysz ok. 16 Hz – 20 000 Hz', text: 'poniżej – infradźwięki (np. trzęsienia ziemi), powyżej – ultradźwięki (np. USG)', kolor: 5 },
       },
@@ -526,7 +527,7 @@ window.SUBJECTS.push({
         branches: [
           { title: 'Powierzchnia chropowata', text: 'rozproszenie – promienie w różnych kierunkach', kolor: 1 },
           { title: 'Zwierciadło płaskie', text: 'obraz pozorny, prosty, tej samej wielkości, w tej samej odległości za lustrem', kolor: 1 },
-          { title: 'Zwierciadło wklęsłe', text: 'skupia promienie równoległe w ognisku F – reflektor, latarka', kolor: 3 },
+          { title: 'Zwierciadło wklęsłe', text: 'skupia promienie równoległe w ognisku F – reflektor, latarka', kolor: 1 },
           { title: 'Zwierciadło wypukłe', text: 'rozprasza promienie – szerokie pole widzenia, lustro na skrzyżowaniu', kolor: 1 },
         ],
         bottom: { title: '💡 Zapamiętaj', text: 'wklęsłe jak łyżka od środka – zbiera światło; wypukłe jak bombka – rozrzuca je', kolor: 4 },
@@ -609,7 +610,7 @@ window.SUBJECTS.push({
       infographicNote: 'U góry – dlaczego światło się załamuje; niżej porównuj w poziomie dwie soczewki; na dole – barwy.',
       infographic: {
         type: 'porownanie',
-        top: { title: 'Załamanie światła', items: ['powietrze → woda: światło zwalnia – do normalnej', 'woda → powietrze: przyspiesza – od normalnej'], kolor: 5 },
+        top: { title: 'Załamanie światła', text: 'powietrze → woda: zwalnia, do normalnej\nwoda → powietrze: przyspiesza, od normalnej', kolor: 5 },
         kolumny: [{ title: 'Soczewka skupiająca', kolor: 3 }, { title: 'Soczewka rozpraszająca', kolor: 1 }],
         wiersze: [
           { label: 'kształt (zwykle)', cells: ['grubsza w środku – wypukła', 'cieńsza w środku – wklęsła'] },
@@ -617,7 +618,7 @@ window.SUBJECTS.push({
           { label: 'ognisko', cells: ['rzeczywiste', 'pozorne – z przedłużeń promieni'] },
           { label: 'korekcja wady wzroku', cells: ['dalekowzroczność („plusy”)', 'krótkowzroczność („minusy”)'] },
         ],
-        bottom: { title: '🌈 Pryzmat', items: ['rozszczepia światło białe na barwy (widmo)', 'czerwone odchyla się najmniej, fioletowe najbardziej', 'światło lasera jest jednobarwne – się nie rozszczepia'], kolor: 4 },
+        bottom: { title: '🌈 Pryzmat', items: ['rozszczepia światło białe na barwy (widmo)', 'najmniej odchyla się czerwone,\nnajbardziej – fioletowe', 'laser (jednobarwny) się nie rozszczepia'], kolor: 4 },
       },
       flashcards: [
         ['Załamanie światła', 'Zmiana kierunku promienia na granicy ośrodków, w których światło ma różną prędkość'],

@@ -156,13 +156,13 @@ window.SUBJECTS.push({
       infographicNote: 'Na górze – co to jest dwusieczna; każdy wiersz: po lewej co wiesz, po prawej – co z tego wynika.',
       infographic: {
         type: 'porownanie',
-        top: { title: 'Dwusieczna kąta α', text: 'półprosta z wierzchołka; dzieli kąt na dwa kąty po α : 2; to oś symetrii kąta', kolor: 4 },
+        top: { title: 'Dwusieczna kąta α', text: 'półprosta z wierzchołka; dzieli kąt na dwa kąty po α\u00a0:\u00a02; to oś symetrii kąta', kolor: 4 },
         kolumny: [{ title: 'Wiesz, że…', kolor: 1 }, { title: 'Więc…', kolor: 3 }],
         wiersze: [
           { cells: ['punkt leży na dwusiecznej', 'jest jednakowo odległy od obu ramion kąta'] },
-          { cells: ['dwusieczne dwóch kątów przyległych', 'tworzą kąt prosty: (α + β) : 2 = 180° : 2 = 90°'] },
-          { cells: ['dwusieczne kątów A i B trójkąta przecinają się w S', 'kąt ASB = 180° − A : 2 − B : 2'] },
-          { cells: ['trójkąt równoramienny, AC = BC', 'dwusieczna kąta C leży na symetralnej podstawy AB'] },
+          { cells: ['dwusieczne dwóch kątów przyległych', 'tworzą kąt prosty:\n(α\u00a0+\u00a0β)\u00a0:\u00a02 =\n180°\u00a0:\u00a02 = 90°'] },
+          { cells: ['dwusieczne kątów A i B trójkąta przecinają się w S', 'kąt ASB =\n180°\u00a0−\u00a0A\u00a0:\u00a02\u00a0−\u00a0B\u00a0:\u00a02'] },
+          { cells: ['trójkąt równoramienny,\nAC\u00a0=\u00a0BC', 'dwusieczna kąta C leży na symetralnej podstawy AB'] },
         ],
         bottom: { title: '📏 Odległość od ramienia', text: 'mierzymy wzdłuż odcinka prostopadłego do ramienia', kolor: 5 },
       },
