@@ -52,6 +52,17 @@ window.SUBJECTS.push({
         <p>Przy rekrutacji do <b>służb mundurowych</b> sprawdza się sprawność fizyczną, np. biegami średnimi i długimi, pompkami (uginanie ramion w podporze przodem) i podciąganiem na drążku – w tej pracy trzeba być wytrzymałym i silnym. Wysokiej sprawności wymagają też np. zawód sportowca, ratownika GOPR, trenera personalnego czy górnika.</p>
         <div class="tip">💡 Tabata = <b>20 – 10 – 8</b>: 20 s pracy, 10 s przerwy, 8 rund (4 minuty).</div>
       `,
+      infographicNote: 'Czytaj od góry: od rozgrzewki przez trening do wyciszenia.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '🔥', title: 'Rozgrzewka', text: 'od lekkich ćwiczeń, stopniowo mocniej; dopasowana do aktywności', kolor: 2 },
+          { icon: '💪', title: 'Trening funkcjonalny', text: 'wiele mięśni naraz: przysiad, wykrok, podpór; wzmacnia gorset mięśniowy' },
+          { icon: '⏱️', title: 'Trening wzmacniający', items: ['HIIT – bardzo intensywnie na przemian z odpoczynkiem', 'tabata – 20 s pracy, 10 s przerwy', 'obwodowy – stacje po kolei'] },
+          { icon: '🧘', title: 'Relaksacja', text: 'spokojne rozciąganie i oddech – regeneracja, niższe tętno', kolor: 3 },
+        ],
+        bottom: { title: '💡 Tabata = 20 – 10 – 8', text: '20 s pracy, 10 s przerwy, 8 rund (4 minuty)', kolor: 4 },
+      },
       flashcards: [
         ['Po co rozgrzewka?', 'Przygotowuje mięśnie, stawy, serce i płuca do wysiłku; zmniejsza ryzyko urazu'],
         ['Jak prowadzić rozgrzewkę?', 'Od lekkich ćwiczeń, stopniowo coraz intensywniej; dopasowana do rodzaju aktywności'],
@@ -119,6 +130,18 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Tętno w minutę: <b>15 sekund × 4</b>. Np. 21 uderzeń w 15 s → 21 · 4 = 84 na minutę.</div>
       `,
+      infographicNote: 'U góry zasady testów, niżej – cztery próby i co mierzą, na dole – tętno i ruch.',
+      infographic: {
+        type: 'karty', kolumny: 1,
+        top: { title: '📋 Testy sprawności', text: 'co roku od lutego do kwietnia; wynik nie jest podstawą oceny', kolor: 5 },
+        items: [
+          { icon: '🔁', title: 'Bieg wahadłowy 10 × 5 m', text: 'zdolności szybkościowo-siłowo-koordynacyjne' },
+          { icon: '🏃', title: '20-metrowy bieg wahadłowy', text: 'wytrzymałość w biegu' },
+          { icon: '🧱', title: 'Deska', text: 'siła i wytrzymałość mięśni całego ciała' },
+          { icon: '🦘', title: 'Skok w dal z miejsca', text: 'skoczność i siła' },
+        ],
+        bottom: { title: '❤️ Tętno i ruch', kolor: 2, items: ['tętno na minutę = uderzenia w 15 s × 4', 'tętno maksymalne ≈ 220 − wiek', 'WHO: codziennie co najmniej 60 minut ruchu'] },
+      },
       flashcards: [
         ['Kiedy są szkolne testy sprawności?', 'Co roku, od lutego do kwietnia'],
         ['Bieg wahadłowy 10 × 5 m', 'Mierzy zdolności szybkościowo-siłowo-koordynacyjne'],
@@ -211,6 +234,18 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 „Każdy z każdym”: <b>n · (n − 1) : 2</b> meczów. Puchar: <b>n − 1</b> meczów.</div>
       `,
+      infographicNote: 'Porównuj w poziomie dwa systemy rozgrywek; u góry – ilu graczy jednej drużyny jest na boisku.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '👥 Graczy na boisku', text: 'siatkówka 6 · koszykówka 5\npiłka ręczna 7 · piłka nożna 11', kolor: 4 },
+        kolumny: [{ title: '🏆 Pucharowy', kolor: 1 }, { title: '🔄 Każdy z każdym', kolor: 5 }],
+        wiersze: [
+          { label: 'zasada', cells: ['przegrany odpada', 'każdy gra z każdym, decyduje tabela'] },
+          { label: 'liczba meczów dla n drużyn', cells: ['n − 1', 'n · (n − 1) : 2'], bold: true },
+          { label: 'przykład: 5 drużyn', cells: ['4 mecze', '10 meczów'], bold: true },
+          { label: 'plus i minus', cells: ['szybki, ale jedna porażka kończy grę', 'sprawiedliwszy, ale trwa dłużej'] },
+        ],
+      },
       flashcards: [
         ['Siatkówka – liczba zawodników', '6 w jednej drużynie na boisku'],
         ['Koszykówka – liczba zawodników', '5 w jednej drużynie na boisku'],
@@ -321,6 +356,19 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 <b>Sam</b>oasekuracja – chronisz <b>sam</b> siebie. Asekuracja – chronisz kogoś.</div>
       `,
+      infographicNote: 'U góry – co robisz przy urazie; gałęzie: jak chronić siebie i innych, nad wodą i w górach.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        top: { title: '🩹 Uraz na lekcji', text: 'przerwij ćwiczenie, zgłoś nauczycielowi; w nagłym wypadku – 112', kolor: 2 },
+        root: { title: 'Bezpiecznie na WF i w terenie' },
+        branches: [
+          { title: '🛡️ Samoasekuracja', text: 'chronisz sam siebie', kolor: 1, items: ['bezpieczny upadek: broda przy klatce, zaokrąglone plecy, przetoczenie'] },
+          { title: '🤝 Asekuracja', text: 'chronisz kogoś', kolor: 1, items: ['stoisz obok, gotów podtrzymać'] },
+          { title: '🌊 Nad wodą', kolor: 5, items: ['tylko kąpielisko strzeżone', 'flaga biała – kąpiel, czerwona – zakaz, brak flagi – brak ratownika', 'numer ratunkowy: 601 100 100'] },
+          { title: '⛰️ W górach', kolor: 5, items: ['sprawdź pogodę, idź szlakiem, powiedz, dokąd idziesz', 'przy burzy zawracasz', 'numer ratunkowy: 601 100 300, aplikacja Ratunek'] },
+        ],
+        bottom: { title: '🏅 Fair play', text: 'przepisy, szacunek dla rywala i sędziego, bez oszukiwania', kolor: 3 },
+      },
       flashcards: [
         ['Najczęstsze przyczyny urazów na WF (przykłady)', 'Brak rozgrzewki, niesprawdzony sprzęt, brak asekuracji, za mało miejsca, niesłuchanie poleceń'],
         ['Samoasekuracja', 'Ochrona samego siebie, np. bezpieczny upadek'],

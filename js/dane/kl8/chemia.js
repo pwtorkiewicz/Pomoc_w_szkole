@@ -47,6 +47,17 @@ window.SUBJECTS.push({
           <li><b>Ca(OH)<sub>2</sub></b> – wapno gaszone; z piaskiem i wodą tworzy zaprawę wapienną. Jego klarowny roztwór to <b>woda wapienna</b> – mętnieje pod wpływem CO<sub>2</sub>.</li>
         </ul>
         <div class="tip">💡 Wodorotlenki rozpuszczalne w wodzie są żrące: pracuj w okularach i rękawicach, a oparzoną skórę spłukuj dużą ilością wody.</div>`,
+      infographicNote: 'Czytaj od góry: jak powstaje wodorotlenek, co robi w wodzie i kiedy daje zasadę; na dole – pułapki.',
+      infographic: {
+        type: 'kroki',
+        top: { title: 'Jak otrzymać wodorotlenek?', items: ['metal aktywny + woda: 2Na + 2H₂O → 2NaOH + H₂↑', 'tlenek metalu + woda: CaO + H₂O → Ca(OH)₂', 'strącanie: CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄'], kolor: 5 },
+        items: [
+          { title: 'Wodorotlenek M(OH)ₙ', text: 'kation metalu + aniony OH⁻; n = wartościowość metalu', kolor: 1 },
+          { title: 'Dysocjacja w wodzie', text: 'NaOH → Na⁺ + OH⁻\nCa(OH)₂ → Ca²⁺ + 2OH⁻', kolor: 1 },
+          { title: 'Zasada', text: 'w wodzie zwiększa stężenie jonów OH⁻, np. zasada sodowa', kolor: 3 },
+        ],
+        bottom: { title: '⚠️ Uwaga', items: ['Cu(OH)₂ się nie rozpuszcza – nie dysocjuje, nie daje zasady', 'amoniak w wodzie to zasada, choć nie wodorotlenek', 'NaOH jest żrący – okulary i rękawice'], kolor: 2 },
+      },
       flashcards: [
         ['Wzór ogólny wodorotlenku', 'M(OH)ₙ – metal i n grup OH (n = wartościowość metalu)'],
         ['NaOH', 'wodorotlenek sodu'],
@@ -131,6 +142,17 @@ window.SUBJECTS.push({
           <li>Kwas solny trawi (oczyszcza) powierzchnię metali, np. z rdzy. Kwas fosforowy(V) bywa regulatorem kwasowości w napojach typu cola. Kwas węglowy jest w wodzie gazowanej.</li>
         </ul>
         <div class="tip">💡 Rozcieńczając kwas, <b>wlewaj kwas do wody</b>, powoli i mieszając – nigdy odwrotnie. „Pamiętaj, chemiku młody, wlewaj zawsze kwas do wody”.</div>`,
+      infographicNote: 'Czytaj od góry: jak powstaje kwas, co robi w wodzie i dlaczego jest kwasem; na dole – bezpieczeństwo.',
+      infographic: {
+        type: 'kroki',
+        top: { title: 'Jak otrzymać kwas?', items: ['beztlenowy: H₂ + Cl₂ → 2HCl, potem rozpuszczasz w wodzie', 'tlenowy: tlenek niemetalu + woda, np. SO₃ + H₂O → H₂SO₄'], kolor: 5 },
+        items: [
+          { title: 'Kwas HₙR', text: 'n atomów wodoru + reszta kwasowa; beztlenowe (HCl, H₂S) i tlenowe', kolor: 1 },
+          { title: 'Dysocjacja w wodzie', text: 'H₂SO₄ → 2H⁺ + SO₄²⁻\nładunek anionu = liczba atomów H\nH₂S i H₂CO₃ – stopniowo', kolor: 1 },
+          { title: 'Kwas', text: 'w wodzie zwiększa stężenie jonów H⁺', kolor: 3 },
+        ],
+        bottom: { title: '⚠️ Rozcieńczanie', text: 'wlewaj kwas do wody, powoli i mieszając – nigdy odwrotnie', kolor: 2 },
+      },
       flashcards: [
         ['Wzór ogólny kwasu', 'HₙR – n atomów wodoru i reszta kwasowa'],
         ['HCl', 'kwas chlorowodorowy (solny) – beztlenowy'],
@@ -217,6 +239,19 @@ window.SUBJECTS.push({
           <li>Jak ograniczać: odsiarczanie spalin w elektrowniach, oszczędzanie energii, odnawialne źródła energii, mniej spalin z samochodów.</li>
         </ul>
         <div class="tip">💡 Fenoloftaleina „zapala się” na malinowo tylko w zasadzie. Oranż metylowy włącza czerwony alarm przy kwasie.</div>`,
+      infographicNote: 'Porównuj w poziomie: każdy wiersz to jedna cecha odczynu kwasowego, obojętnego i zasadowego.',
+      infographic: {
+        type: 'porownanie',
+        kolumny: [{ title: 'kwasowy', kolor: 2 }, { title: 'obojętny', kolor: 3 }, { title: 'zasadowy', kolor: 5 }],
+        wiersze: [
+          { label: 'jony', cells: ['więcej H⁺ niż OH⁻', 'tyle samo H⁺ i OH⁻', 'więcej OH⁻ niż H⁺'] },
+          { label: 'skala pH (0–14)', cells: ['pH < 7', 'pH = 7', 'pH > 7'], bold: true },
+          { label: 'fenoloftaleina', cells: ['bezbarwna', 'bezbarwna', 'malinowa'] },
+          { label: 'oranż metylowy', cells: ['czerwony', 'pomarańczowy', 'żółty'] },
+          { label: 'przykład', cells: ['sok z cytryny, ocet', 'woda destylowana', 'roztwór mydła'] },
+        ],
+        bottom: { title: '🌧️ Kwaśne opady', text: 'pH < 5,6 – z tlenków siarki i azotu ze spalania paliw i przemysłu', kolor: 2 },
+      },
       flashcards: [
         ['pH < 7', 'odczyn kwasowy'],
         ['pH = 7', 'odczyn obojętny'],
@@ -290,6 +325,19 @@ window.SUBJECTS.push({
           <li><b>azotany(V) i fosforany(V)</b> – nawozy sztuczne (w nadmiarze trafiają do wód i powodują „zakwitanie” jezior).</li>
         </ul>
         <div class="tip">💡 Nazwę soli czytasz „od tyłu”: najpierw reszta (siarczan(VI)), potem metal (miedzi(II)).</div>`,
+      infographicNote: 'U góry – budowa i nazwy soli, niżej – cztery sposoby otrzymywania, na dole – reakcja strąceniowa.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        top: { title: 'Sól = kation metalu + anion reszty kwasowej', text: 'kwas beztlenowy → sól na -ek (chlorek), tlenowy → na -an (siarczan(VI))', kolor: 5 },
+        root: { title: 'Jak otrzymać sól?', kolor: 1 },
+        branches: [
+          { title: 'kwas + zasada → sól + woda', text: 'HCl + NaOH → NaCl + H₂O\nzobojętnianie: H⁺ + OH⁻ → H₂O', kolor: 3 },
+          { title: 'kwas + tlenek metalu → sól + woda', text: 'CuO + H₂SO₄ → CuSO₄ + H₂O', kolor: 3 },
+          { title: 'kwas + metal → sól + wodór', text: 'Mg + 2HCl → MgCl₂ + H₂↑', kolor: 3 },
+          { title: 'zasada + tlenek niemetalu → sól + woda', text: 'Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O', kolor: 3 },
+        ],
+        bottom: { title: '🧪 Reakcja strąceniowa', text: 'powstaje osad, np. Ag⁺ + Cl⁻ → AgCl↓ (biały); sprawdzasz w tablicy rozpuszczalności', kolor: 4 },
+      },
       flashcards: [
         ['Sól (budowa)', 'kation metalu + anion reszty kwasowej'],
         ['Kwas + zasada →', 'sól + woda (zobojętnianie)'],
@@ -398,6 +446,20 @@ window.SUBJECTS.push({
           <li>Spalanie paliw kopalnych zwiększa ilość CO<sub>2</sub> w atmosferze (efekt cieplarniany, zmiany klimatu), daje tlenki siarki i azotu (kwaśne opady), pyły i sadzę (smog), a przy złym spalaniu – czad.</li>
         </ul>
         <div class="tip">💡 Końcówki: -<b>an</b> – pojedyncze, -<b>en</b> – podwójne, -<b>yn</b> – potrójne. „A, E, Y – jeden, dwa, trzy”.</div>`,
+      infographicNote: 'Porównuj w poziomie: każdy wiersz to jedna cecha alkanów, alkenów i alkinów.',
+      infographic: {
+        type: 'porownanie',
+        kolumny: [{ title: 'alkany', kolor: 1 }, { title: 'alkeny', kolor: 3 }, { title: 'alkiny', kolor: 5 }],
+        wiersze: [
+          { label: 'wiązania C–C', cells: ['tylko pojedyncze', 'jedno podwójne', 'jedno potrójne'] },
+          { label: 'wzór ogólny', cells: ['CₙH₂ₙ₊₂', 'CₙH₂ₙ', 'CₙH₂ₙ₋₂'], bold: true },
+          { label: 'końcówka', cells: ['-an', '-en', '-yn'], bold: true },
+          { label: 'przykład', cells: ['etan C₂H₆', 'eten C₂H₄', 'etyn C₂H₂'] },
+          { label: 'rodzaj', cells: ['nasycone', 'nienasycone', 'nienasycone'] },
+          { label: 'woda bromowa', cells: ['nie odbarwia', 'odbarwia', 'odbarwia'] },
+        ],
+        bottom: { title: '🔥 Spalanie (np. metanu)', items: ['całkowite (dużo tlenu) → CO₂ + H₂O', 'niecałkowite (mało tlenu) → trujący czad CO', 'półspalanie (bardzo mało tlenu) → sadza C'], kolor: 2 },
+      },
       flashcards: [
         ['Węglowodory', 'związki tylko z węgla i wodoru'],
         ['Wzór ogólny alkanów', 'CₙH₂ₙ₊₂'],
@@ -477,6 +539,18 @@ window.SUBJECTS.push({
         <h3>Glicerol (propano-1,2,3-triol)</h3>
         <p>Wzór: C<sub>3</sub>H<sub>5</sub>(OH)<sub>3</sub>, półstrukturalny: CH<sub>2</sub>(OH)–CH(OH)–CH<sub>2</sub>(OH). To alkohol <b>polihydroksylowy</b> (trzy grupy –OH). Bezbarwna, gęsta, oleista ciecz o słodkim smaku, bez zapachu, dobrze rozpuszcza się w wodzie. Zatrzymuje wilgoć – dlatego jest składnikiem kosmetyków (np. kremów nawilżających).</p>
         <div class="tip">💡 „-ol” na końcu nazwy = grupa –OH = alkohol. Ale odczyn obojętny – fenoloftaleina się nie zabarwi.</div>`,
+      infographicNote: 'U góry – co robi z węglowodoru alkohol; niżej porównuj w poziomie trzy alkohole.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: 'Grupa hydroksylowa –OH', text: 'zastępuje atom wodoru w węglowodorze; nazwa alkanu + końcówka -ol\nmonohydroksylowe: CₙH₂ₙ₊₁OH', kolor: 4 },
+        kolumny: [{ title: 'metanol', kolor: 2 }, { title: 'etanol', kolor: 1 }, { title: 'glicerol', kolor: 3 }],
+        wiersze: [
+          { label: 'wzór', cells: ['CH₃OH', 'C₂H₅OH', 'C₃H₅(OH)₃'], bold: true },
+          { label: 'grupy –OH', cells: ['jedna (mono-)', 'jedna (mono-)', 'trzy (poli-)'] },
+          { label: 'cechy', cells: ['silnie trujący', 'rozpuszczalnik, dezynfekcja; uzależnia', 'gęsty, słodki; kosmetyki'] },
+        ],
+        bottom: { title: '💡 Odczyn obojętny', text: '–OH nie odłącza się jako jon OH⁻ – alkohol to nie wodorotlenek', kolor: 3 },
+      },
       flashcards: [
         ['Grupa funkcyjna alkoholi', 'grupa hydroksylowa –OH'],
         ['Wzór ogólny alkoholi monohydroksylowych', 'CₙH₂ₙ₊₁OH'],
@@ -546,6 +620,18 @@ window.SUBJECTS.push({
         </ul>
         <p>Nazwa estru: część od kwasu (<b>-an</b>: metanian, etanian; zwyczajowo mrówczan, octan) + część od alkoholu (<b>-ylu</b>: metylu, etylu). Estry mają zwykle przyjemny, owocowy zapach i słabo rozpuszczają się w wodzie – stosuje się je jako substancje zapachowe (aromaty, perfumy) i rozpuszczalniki.</p>
         <div class="tip">💡 Ester = „kwas + alkohol − woda”. Nazwa: najpierw kwas, potem alkohol – <i>octan etylu</i> z kwasu octowego i etanolu.</div>`,
+      infographicNote: 'Czytaj od góry: z etanolu powstaje kwas octowy, a kwas z alkoholem daje ester.',
+      infographic: {
+        type: 'kroki',
+        top: { title: 'Grupa karboksylowa –COOH', text: 'CₙH₂ₙ₊₁COOH, np. HCOOH – mrówkowy, CH₃COOH – octowy', kolor: 5 },
+        items: [
+          { title: 'Etanol', text: 'fermentacja octowa (bakterie octowe)', kolor: 1 },
+          { title: 'Kwas octowy CH₃COOH', text: 'CH₃COOH ⇄ CH₃COO⁻ + H⁺ – odczyn kwasowy; z NaOH → octan sodu + woda', kolor: 2 },
+          { title: '+ alkohol (estryfikacja)', text: 'kwas + alkohol ⇄ ester + woda; katalizator – stężony H₂SO₄', kolor: 1 },
+          { title: 'Ester', text: 'CH₃COOC₂H₅ – octan etylu; owocowy zapach, aromaty i rozpuszczalniki', kolor: 3 },
+        ],
+        bottom: { title: '💡 Nazwa estru', text: 'najpierw kwas, potem alkohol: octan etylu – z kwasu octowego i etanolu', kolor: 4 },
+      },
       flashcards: [
         ['Grupa karboksylowa', '–COOH'],
         ['Kwas metanowy', 'HCOOH – kwas mrówkowy'],
@@ -639,6 +725,17 @@ window.SUBJECTS.push({
         </table>
         <p><b>Wykrywanie skrobi</b>: roztwór jodu (np. jod w roztworze KI, jodyna) barwi skrobię na <b>ciemnogranatowo</b>.</p>
         <div class="tip">💡 Testy w kuchni: kwas azotowy(V) + białko = <b>żółte</b>; jod + skrobia = <b>granatowe</b>; woda bromowa + tłuszcz nienasycony = odbarwienie.</div>`,
+      infographicNote: 'Trzy grupy związków – z czego są zbudowane i jak się dzielą; na dole – jak je wykryć.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: 'Tłuszcze, białka i cukry', kolor: 5 },
+        branches: [
+          { title: 'Tłuszcze', text: 'estry glicerolu i kwasów tłuszczowych', items: ['roślinne (oleje) i zwierzęce (masło, smalec)', 'nasycone i nienasycone (C=C)'], kolor: 4 },
+          { title: 'Białka', text: 'łańcuchy aminokwasów, wiązanie peptydowe –CO–NH–', items: ['denaturacja – nieodwracalna (temperatura, etanol)', 'koagulacja – odwracalna (NaCl)'], kolor: 1 },
+          { title: 'Cukry', text: 'zbudowane z C, H i O', items: ['proste: glukoza, fruktoza C₆H₁₂O₆', 'dwucukier: sacharoza C₁₂H₂₂O₁₁', 'wielocukry: skrobia, celuloza'], kolor: 3 },
+        ],
+        bottom: { title: '🔍 Jak wykryć?', items: ['białko + stężony HNO₃ → żółte', 'skrobia + jod → ciemnogranatowe', 'tłuszcz nienasycony odbarwia wodę bromową'], kolor: 2 },
+      },
       flashcards: [
         ['Kwasy palmitynowy i stearynowy', 'nasycone kwasy tłuszczowe, stałe'],
         ['Kwas oleinowy', 'nienasycony kwas tłuszczowy (C=C), ciekły; odbarwia wodę bromową'],

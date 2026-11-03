@@ -52,6 +52,21 @@ window.SUBJECTS.push({
         <p>0 null, 1 eins, 2 zwei, 3 drei, 4 vier, 5 fünf, 6 sechs, 7 sieben, 8 acht, 9 neun, 10 zehn, 11 elf, 12 zwölf, 13 dreizehn, 16 <b>sech</b>zehn, 17 <b>sieb</b>zehn, 20 zwanzig, 30 drei<b>ß</b>ig, 40 vierzig, 70 siebzig, 100 hundert.</p>
         <div class="tip">💡 Od 21 czytamy „od tyłu”: najpierw jedności, potem dziesiątki – 21 = <i>ein<b>und</b>zwanzig</i> (jeden i dwadzieścia), 34 = <i>vierunddreißig</i>, 58 = <i>achtundfünfzig</i>.</div>`,
       cardLang: ['de', 'pl'],
+      infographicNote: 'U góry – pytania o ciebie; w tabelce porównuj w poziomie formy wohnen i sein dla każdej osoby.',
+      infographic: {
+        type: 'porownanie',
+        top: { kolor: 5, title: '❓ Pytania o ciebie', items: ['Wie heißt du? → Ich heiße Ola.', 'Wo wohnst du? – słówko + czasownik + osoba', 'Kommst du aus Polen? – czasownik na początku', 'do dorosłego – Sie: Wie heißen Sie?'] },
+        kolumny: [{ title: 'wohnen', kolor: 1 }, { title: 'sein (być)', kolor: 3 }],
+        wiersze: [
+          { label: 'ich', cells: ['wohne', 'bin'], bold: true },
+          { label: 'du', cells: ['wohnst', 'bist'], bold: true },
+          { label: 'er / sie / es', cells: ['wohnt', 'ist'], bold: true },
+          { label: 'wir', cells: ['wohnen', 'sind'], bold: true },
+          { label: 'ihr', cells: ['wohnt', 'seid'], bold: true },
+          { label: 'sie / Sie', cells: ['wohnen', 'sind'], bold: true },
+        ],
+        bottom: { kolor: 4, title: '💡 Liczby od 21 – od tyłu', text: 'najpierw jedności, potem dziesiątki:\n21 = einundzwanzig · 34 = vierunddreißig' },
+      },
       flashcards: [
         ['Wie heißt du?', 'Jak masz na imię?'],
         ['Wie alt bist du?', 'Ile masz lat?'],
@@ -139,6 +154,19 @@ window.SUBJECTS.push({
         <p><i>Was ist dein Vater von Beruf?</i> – <i>Er ist Arzt.</i> <i>Wo arbeitet er?</i> – <i>Im Krankenhaus.</i></p>
         <div class="tip">💡 Mówiąc o zawodzie, <b>nie</b> używamy rodzajnika: <i>Meine Mutter ist Lehrerin.</i> (nie „eine Lehrerin”).</div>`,
       cardLang: ['de', 'pl'],
+      infographicNote: 'U góry – rodzina; w tabelce porównuj w poziomie: mein, dein, sein, ihr przy der / das (niebieskie) i przy die (pomarańczowe).',
+      infographic: {
+        type: 'porownanie',
+        top: { kolor: 5, title: '👨‍👩‍👧 die Familie', items: ['der Vater – die Mutter', 'der Bruder – die Schwester', 'tylko l. mnoga: die Eltern, die Geschwister', 'haben: ich habe, du hast, er hat'] },
+        kolumny: [{ title: 'der / das', kolor: 1 }, { title: 'die / l. mnoga', kolor: 2 }],
+        wiersze: [
+          { label: 'mój', cells: ['mein Bruder', 'meine Mutter'], bold: true },
+          { label: 'twój', cells: ['dein Vater', 'deine Eltern'], bold: true },
+          { label: 'jego (Tom und sein Bruder)', cells: ['sein Opa', 'seine Schwester'], bold: true },
+          { label: 'jej (Lisa und ihr Bruder)', cells: ['ihr Onkel', 'ihre Tante'], bold: true },
+        ],
+        bottom: { kolor: 4, title: '💼 Zawody – forma żeńska -in', items: ['der Lehrer → die Lehrerin', 'der Arzt → die Ärztin', 'bez rodzajnika: Meine Mutter ist Lehrerin.'] },
+      },
       flashcards: [
         ['die Eltern', 'rodzice (tylko liczba mnoga)'],
         ['die Geschwister', 'rodzeństwo'],
@@ -197,6 +225,18 @@ window.SUBJECTS.push({
         <h3>Dni tygodnia</h3>
         <p>Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag. W poniedziałek – <b>am</b> Montag: <i>Am Montag habe ich Mathe.</i></p>`,
       cardLang: ['de', 'pl'],
+      infographicNote: 'Od góry: rodzajnik zależy od rodzaju rzeczownika – ten sam kolor, ten sam rodzaj.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { kolor: 4, title: 'Rodzajniki', text: 'ucz się słówka razem z rodzajnikiem' },
+        branches: [
+          { kolor: 1, title: 'der – męski', items: ['der Bleistift', 'ein Bleistift', 'kein Bleistift'] },
+          { kolor: 2, title: 'die – żeński', items: ['die Schere', 'eine Schere', 'keine Schere'] },
+          { kolor: 3, title: 'das – nijaki', items: ['das Heft', 'ein Heft', 'kein Heft'] },
+          { kolor: 5, title: 'die – l. mnoga', items: ['die Hefte', 'keine Hefte', 'Buch → Bücher'] },
+        ],
+        bottom: { kolor: 1, title: '🎒 Biernik – zmienia się tylko der', text: 'der → den · ein → einen · kein → keinen', items: ['Ich brauche einen Bleistift.', 'Ich habe keinen Kuli.'] },
+      },
       flashcards: [
         ['der, die, das', 'rodzajnik męski, żeński, nijaki'],
         ['ein – eine – ein', 'rodzajnik nieokreślony: męski – żeński – nijaki'],
@@ -258,6 +298,19 @@ window.SUBJECTS.push({
         <p>W zdaniu oznajmującym odmieniony czasownik stoi zawsze na <b>drugim miejscu</b>. Gdy zaczniesz od czasu, osoba przechodzi za czasownik:</p>
         <p><i>Ich frühstücke um sieben Uhr.</i> → <i>Um sieben Uhr <b>frühstücke</b> ich.</i></p>`,
       cardLang: ['de', 'pl'],
+      infographicNote: 'U góry – o której; w tabelce porównuj w poziomie godzinę oficjalnie i potocznie; na dole – szyk zdania.',
+      infographic: {
+        type: 'porownanie',
+        top: { kolor: 5, title: '🕖 Um wie viel Uhr?', text: '→ Um sieben Uhr.', items: ['am Morgen, am Nachmittag, am Abend', 'ale: in der Nacht'] },
+        kolumny: [{ title: 'oficjalnie', kolor: 1 }, { title: 'potocznie', kolor: 3 }],
+        wiersze: [
+          { label: '7:10', cells: ['sieben Uhr zehn', 'zehn nach sieben'] },
+          { label: '7:15', cells: ['sieben Uhr fünfzehn', 'Viertel nach sieben'] },
+          { label: '7:30 – halb + następna godzina', cells: ['sieben Uhr dreißig', 'halb acht'] },
+          { label: '7:45', cells: ['sieben Uhr fünfundvierzig', 'Viertel vor acht'] },
+        ],
+        bottom: { kolor: 4, title: '💡 Czasownik na 2. miejscu', items: ['Um sieben Uhr frühstücke ich.', 'aufstehen → Ich stehe um sechs Uhr auf. (przedrostek na koniec)'] },
+      },
       flashcards: [
         ['Wie spät ist es?', 'Która godzina?'],
         ['Um wie viel Uhr?', 'O której godzinie?'],
@@ -325,6 +378,22 @@ window.SUBJECTS.push({
         <h3>Propozycje</h3>
         <p><i>Hast du Lust, ins Kino zu gehen?</i> – Masz ochotę…? / <i>Gehen wir schwimmen?</i> → <i>Gute Idee! / Ja, gern!</i> albo <i>Leider kann ich nicht.</i> (Niestety nie mogę.)</p>`,
       cardLang: ['de', 'pl'],
+      infographicNote: 'U góry – co lubisz; w tabelce porównuj w poziomie formy können, wollen i möchten.',
+      infographic: {
+        type: 'porownanie',
+        top: { kolor: 5, title: '❤️ gern → lieber → am liebsten', items: ['Ich spiele gern Fußball.', 'Ich tanze lieber.', 'Am liebsten lese ich.'] },
+        kolumny: [{ title: 'können', kolor: 1 }, { title: 'wollen', kolor: 3 }, { title: 'möchten', kolor: 2 }],
+        wiersze: [
+          { cells: ['umieć, móc', 'chcieć', 'chciałbym'] },
+          { label: 'ich', cells: ['kann', 'will', 'möchte'], bold: true },
+          { label: 'du', cells: ['kannst', 'willst', 'möchtest'], bold: true },
+          { label: 'er / sie / es', cells: ['kann', 'will', 'möchte'], bold: true },
+          { label: 'wir', cells: ['können', 'wollen', 'möchten'], bold: true },
+          { label: 'ihr', cells: ['könnt', 'wollt', 'möchtet'], bold: true },
+          { label: 'sie / Sie', cells: ['können', 'wollen', 'möchten'], bold: true },
+        ],
+        bottom: { kolor: 4, title: '💡 Zapamiętaj', items: ['Ich kann gut schwimmen. – modalny na 2. miejscu, bezokolicznik na końcu', 'fahren → du fährst, er fährt', 'lesen → du liest, er liest'] },
+      },
       flashcards: [
         ['Ich spiele gern Fußball.', 'Lubię grać w piłkę nożną.'],
         ['lieber / am liebsten', 'chętniej (wolę) / najchętniej (najbardziej lubię)'],
@@ -377,6 +446,18 @@ window.SUBJECTS.push({
         <p><i>Das schmeckt lecker!</i> – To jest pyszne!</p>
         <div class="tip">💡 Zamawiasz – to biernik: <b>einen</b> Saft (der), <b>eine</b> Suppe (die), <b>ein</b> Eis (das). Czegoś nie jesz – <i>Ich esse <b>kein</b> Fleisch</i> (das), <i><b>keinen</b> Fisch</i> (der).</div>`,
       cardLang: ['de', 'pl'],
+      infographicNote: 'U góry – w restauracji; niżej porównuj: rodzaj rzeczownika decyduje, co mówisz, gdy zamawiasz (biernik).',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        top: { kolor: 5, title: '🍽️ W restauracji', items: ['Die Speisekarte, bitte.', 'Ich möchte eine Pizza.', 'Zahlen, bitte! / Die Rechnung, bitte!'] },
+        root: { kolor: 4, title: 'Zamawiasz → biernik' },
+        branches: [
+          { kolor: 1, title: 'der → einen / keinen', items: ['der Käse, der Saft, der Tee, der Fisch', 'einen Saft · keinen Fisch'] },
+          { kolor: 2, title: 'die → eine', items: ['die Milch, die Wurst, die Suppe', 'eine Suppe'] },
+          { kolor: 3, title: 'das → ein / kein', items: ['das Brot, das Wasser, das Ei, das Eis', 'ein Eis · kein Fleisch'] },
+        ],
+        bottom: { kolor: 4, title: '💡 Zapamiętaj', items: ['Ich habe Hunger. · Ich habe Durst.', 'essen: du isst, er isst'] },
+      },
       flashcards: [
         ['das Brot / das Brötchen', 'chleb / bułka'],
         ['die Wurst', 'wędlina, kiełbasa'],
@@ -436,6 +517,20 @@ window.SUBJECTS.push({
         <h3>Ceny</h3>
         <p>2,50 € – <i>zwei Euro fünfzig</i>; 3,99 € – <i>drei Euro neunundneunzig</i>. <i>Der Pullover kostet 30 Euro.</i> – drogo: <i>teuer</i>, tanio: <i>billig</i>.</p>`,
       cardLang: ['de', 'pl'],
+      infographicNote: 'Czytaj od góry: tak wygląda rozmowa w sklepie. Niebieskie – mówi sprzedawca, zielone – mówisz ty.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '🧑‍💼', kolor: 1, title: 'W czym mogę pomóc?', text: 'Kann ich Ihnen helfen?' },
+          { icon: '🙋', kolor: 3, title: 'Szukam kurtki.', text: 'Ich suche eine Jacke.' },
+          { icon: '📏', kolor: 1, title: 'Jaki rozmiar?', text: 'Welche Größe?' },
+          { icon: '👕', kolor: 3, title: 'Czy mogę przymierzyć?', text: 'Kann ich die Jacke anprobieren?' },
+          { icon: '👍', kolor: 3, title: 'Podoba mi się?', text: 'Der Rock gefällt mir. (jedna rzecz)\nDie Schuhe gefallen mir nicht. (wiele)' },
+          { icon: '💶', kolor: 3, title: 'Ile kosztuje?', text: 'Was kostet der Pullover?\n→ Das ist zu teuer.' },
+          { icon: '🛍️', kolor: 3, title: 'Wezmę go.', text: 'Ich nehme ihn.' },
+        ],
+        bottom: { kolor: 4, title: '💡 Wezmę go / ją / je', text: 'der Pullover → ihn · die Jacke → sie\ndas T-Shirt → es · die Schuhe → sie' },
+      },
       flashcards: [
         ['die Bäckerei', 'piekarnia'],
         ['die Apotheke', 'apteka'],
@@ -487,6 +582,18 @@ window.SUBJECTS.push({
         <h3>Prace domowe</h3>
         <p>aufräumen (sprzątać), staubsaugen (odkurzać), abwaschen (zmywać), kochen (gotować), das Bett machen (ścielić łóżko), den Müll rausbringen (wynosić śmieci). <i>Ich räume mein Zimmer auf.</i></p>`,
       cardLang: ['de', 'pl'],
+      infographicNote: 'Od góry: na pytanie Wo? po przyimku rodzajnik się zmienia – ten sam kolor, ten sam rodzaj.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        top: { kolor: 5, title: '📍 Wo? – przyimki', items: ['in (w), auf (na), unter (pod), über (nad)', 'neben (obok), vor (przed), hinter (za), zwischen (między)'] },
+        root: { kolor: 4, title: 'przyimek + celownik' },
+        branches: [
+          { kolor: 1, title: 'der Tisch → dem Tisch', text: 'Die Lampe steht auf dem Tisch.' },
+          { kolor: 3, title: 'das Bett → dem Bett', text: 'Der Ball liegt unter dem Bett.' },
+          { kolor: 2, title: 'die Lampe → der Lampe', text: 'Die Katze sitzt neben der Lampe.' },
+        ],
+        bottom: { kolor: 4, title: '💡 Zapamiętaj', items: ['im = in dem (im Regal), am = an dem', 'die → der – nie pomyl z rodzajnikiem męskim!', 'es gibt + biernik: Es gibt einen Tisch.'] },
+      },
       flashcards: [
         ['die Wohnung', 'mieszkanie'],
         ['das Wohnzimmer / das Schlafzimmer', 'salon / sypialnia'],
@@ -568,6 +675,18 @@ window.SUBJECTS.push({
           <li>W hotelu: <i>Ich möchte ein Einzelzimmer / Doppelzimmer für zwei Nächte.</i> – pokój jednoosobowy / dwuosobowy na dwie noce.</li>
         </ul>`,
       cardLang: ['de', 'pl'],
+      infographicNote: 'U góry – pytasz o drogę; w tabelce porównuj w poziomie: der / das (niebieskie) i die (pomarańczowe); na dole – polecenia.',
+      infographic: {
+        type: 'porownanie',
+        top: { kolor: 5, title: '🗺️ Wie komme ich zum Bahnhof?', items: ['Gehen Sie geradeaus, dann links / rechts.', 'Nehmen Sie die erste Straße rechts.'] },
+        kolumny: [{ title: 'der / das', kolor: 1 }, { title: 'die', kolor: 2 }],
+        wiersze: [
+          { label: 'dokąd? – zu', cells: ['zum = zu dem', 'zur = zu der'], bold: true },
+          { cells: ['zum Bahnhof, zum Kino', 'zur Post, zur Schule'] },
+          { label: 'czym? – mit + celownik (ale pieszo: zu Fuß)', cells: ['mit dem Bus, mit dem Zug', 'mit der U-Bahn, mit der Straßenbahn'] },
+        ],
+        bottom: { kolor: 4, title: '📣 Tryb rozkazujący', items: ['du: Geh! Komm! Nimm!', 'ihr: Geht! Kommt! Nehmt!', 'Sie: Gehen Sie! Kommen Sie!'] },
+      },
       flashcards: [
         ['der Bahnhof / die Haltestelle', 'dworzec / przystanek'],
         ['das Krankenhaus', 'szpital'],
@@ -632,6 +751,21 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 <i>nicht dürfen</i> = nie wolno (zakaz), a <i>nicht müssen</i> = nie trzeba.</div>`,
       cardLang: ['de', 'pl'],
+      infographicNote: 'U góry – co boli; w tabelce porównuj w poziomie: müssen (musieć) i dürfen (mieć pozwolenie).',
+      infographic: {
+        type: 'porownanie',
+        top: { kolor: 5, title: '🤒 Was tut dir weh?', items: ['Mir tut der Kopf weh. – jedna rzecz', 'Mir tun die Füße weh. – liczba mnoga', 'Ich habe Kopfschmerzen / Fieber / Husten.', 'Gute Besserung!'] },
+        kolumny: [{ title: 'müssen – musieć', kolor: 1 }, { title: 'dürfen – mieć pozwolenie', kolor: 3 }],
+        wiersze: [
+          { label: 'ich / er / sie / es', cells: ['muss', 'darf'], bold: true },
+          { label: 'du', cells: ['musst', 'darfst'], bold: true },
+          { label: 'wir / sie / Sie', cells: ['müssen', 'dürfen'], bold: true },
+          { label: 'ihr', cells: ['müsst', 'dürft'], bold: true },
+          { label: 'u lekarza', cells: ['Du musst im Bett bleiben.', 'Du darfst nicht in die Schule gehen.'] },
+          { label: 'z „nicht”', cells: ['nie trzeba', 'nie wolno (zakaz)'], bold: true },
+        ],
+        bottom: { kolor: 4, title: '🙋 Darf ich…?', text: 'Darf ich das Fenster öffnen?\n→ Ja, natürlich. / Nein, leider nicht.' },
+      },
       flashcards: [
         ['der Kopf / der Bauch / der Rücken', 'głowa / brzuch / plecy'],
         ['das Bein / der Fuß', 'noga / stopa'],
@@ -682,6 +816,19 @@ window.SUBJECTS.push({
         <p>der Berg (góra), der Wald (las), der Fluss (rzeka), das Meer (morze), der Strand (plaża), die Wiese (łąka), der Baum (drzewo), die Blume (kwiat).</p>
         <div class="tip">💡 Pułapka: <b>der See</b> = jezioro, a morze to <b>das Meer</b> (albo <i>die See</i>).</div>`,
       cardLang: ['de', 'pl'],
+      infographicNote: 'Każdy kafelek to grupa słówek; ten sam kolor – ten sam temat. Na dole – kiedy im, am, um.',
+      infographic: {
+        type: 'karty', kolumny: 2,
+        items: [
+          { icon: '☀️', kolor: 4, title: 'Es ist…', text: 'sonnig, warm, heiß, kalt, windig, wolkig, neblig' },
+          { icon: '🌧️', kolor: 4, title: 'Es…', text: 'Es regnet.\nEs schneit.\nDie Sonne scheint.' },
+          { icon: '🐕', kolor: 3, title: 'Zwierzęta domowe', text: 'der Hund, die Katze, das Pferd, die Kuh' },
+          { icon: '🐻', kolor: 3, title: 'Zwierzęta dzikie', text: 'der Bär, der Wolf, der Fuchs' },
+          { icon: '🌲', kolor: 1, title: 'Krajobraz', text: 'der Berg, der Wald, der Fluss, der Baum, die Blume' },
+          { icon: '🌊', kolor: 1, title: 'Pułapka!', text: 'der See – jezioro\ndas Meer – morze' },
+        ],
+        bottom: { kolor: 5, title: '📅 Kiedy? im – am – um', text: 'der Frühling, der Sommer, der Herbst, der Winter', items: ['im Sommer, im Mai – pora roku, miesiąc', 'am Montag – dzień', 'um acht Uhr – godzina'] },
+      },
       flashcards: [
         ['Wie ist das Wetter?', 'Jaka jest pogoda?'],
         ['Es regnet. / Es schneit.', 'Pada deszcz. / Pada śnieg.'],
@@ -740,6 +887,18 @@ window.SUBJECTS.push({
         <p><i>Gestern <b>war</b> ich im Kino. Ich <b>hatte</b> keine Zeit.</i></p>
         <p>Określenia czasu: gestern (wczoraj), letztes Wochenende (w zeszły weekend), letzte Woche (w zeszłym tygodniu), letztes Jahr (w zeszłym roku), in den Ferien (w wakacje).</p>`,
       cardLang: ['de', 'pl'],
+      infographicNote: 'Czytaj od góry: tak budujesz zdanie w czasie Perfekt – krok po kroku.',
+      infographic: {
+        type: 'kroki',
+        top: { kolor: 5, title: '🧱 haben / sein + Partizip II', text: 'Ich habe gestern Fußball gespielt.' },
+        items: [
+          { kolor: 1, title: '1. haben czy sein?', items: ['ruch z A do B albo bleiben → sein', 'większość czasowników → haben'] },
+          { kolor: 1, title: '2. Odmień je – 2. miejsce', text: 'Ich habe… · Wir sind…' },
+          { kolor: 3, title: '3. Zrób Partizip II', items: ['regularne ge…t: gespielt', 'nieregularne ge…en: gesehen', 'rozdzielne – ge w środku: eingekauft', '-ieren, be-, ver- bez ge-: telefoniert, besucht'] },
+          { kolor: 3, title: '4. Partizip II na koniec', text: 'Wir sind nach Berlin gefahren.' },
+        ],
+        bottom: { kolor: 4, title: '💡 sein i haben w przeszłości', text: 'ich war, du warst · ich hatte, du hattest\nGestern war ich im Kino.' },
+      },
       flashcards: [
         ['Perfekt', 'haben/sein na 2. miejscu + Partizip II na końcu'],
         ['spielen → gespielt', 'grać → (grał) – regularne ge…t'],
@@ -825,6 +984,18 @@ window.SUBJECTS.push({
           <li><b>der Osterhase</b> – zajączek wielkanocny: w Wielkanoc dzieci szukają ukrytych słodyczy, drobnych prezentów i kolorowych jajek (Ostereier) – wierzą, że ukrył je zajączek.</li>
         </ul>`,
       cardLang: ['de', 'pl'],
+      infographicNote: 'U góry – data; niżej: zielone – życzenia, fioletowe – zaproszenie, niebieskie – zwyczaje.',
+      infographic: {
+        type: 'karty', kolumny: 1,
+        top: { kolor: 4, title: '📅 Data – liczebniki porządkowe', items: ['do 19.: -te – der zweite, der zwölfte', 'od 20.: -ste – der zwanzigste', 'wyjątki: der erste, dritte, siebte, achte', 'kiedy? am + -en: Am zwölften Mai.'] },
+        items: [
+          { icon: '🎂', kolor: 3, title: 'Życzenia', items: ['Alles Gute zum Geburtstag!', 'Frohe Weihnachten! / Frohe Ostern!', 'Ein gutes neues Jahr!', 'odpowiedź: Danke, gleichfalls!'] },
+          { icon: '✉️', kolor: 5, title: 'Zaproszenie', items: ['Ich lade dich zu meiner Party ein.', 'Ja, gern! Danke für die Einladung!', 'Leider kann ich nicht.'] },
+          { icon: '🗓️', kolor: 1, title: 'der Adventskalender', text: 'w grudniu dzieci codziennie otwierają jedno okienko' },
+          { icon: '👢', kolor: 1, title: 'der Nikolaus (6 grudnia)', text: 'buty za drzwi – rano słodycze i drobne prezenty' },
+          { icon: '🐰', kolor: 1, title: 'der Osterhase', text: 'dzieci szukają ukrytych słodyczy i kolorowych jajek' },
+        ],
+      },
       flashcards: [
         ['Wann hast du Geburtstag?', 'Kiedy masz urodziny?'],
         ['am zwölften Mai', '12 maja'],
@@ -904,6 +1075,20 @@ window.SUBJECTS.push({
         <div class="tip">💡 Większość krajów jest bez rodzajnika: <i>Ich komme aus Polen / aus Österreich.</i> Ale Szwajcaria ma rodzajnik <b>die</b>: <i>Ich komme aus <b>der</b> Schweiz. Ich wohne in <b>der</b> Schweiz.</i></div>
         <div class="tip">💡 Wiele słów jest podobnych do polskich lub angielskich (internacjonalizmy): <i>das Hotel, die Musik, der Computer, das Taxi</i> – łatwo zgadnąć ich znaczenie z kontekstu.</div>`,
       cardLang: ['de', 'pl'],
+      infographicNote: 'U góry – co znaczy skrót; w tabelce porównuj trzy kraje w poziomie.',
+      infographic: {
+        type: 'porownanie',
+        top: { kolor: 4, title: '🗺️ D-A-CH', text: 'D – Deutschland · A – Österreich\nCH – die Schweiz' },
+        kolumny: [{ title: 'Deutschland', kolor: 1 }, { title: 'Österreich', kolor: 3 }, { title: 'die Schweiz', kolor: 5 }],
+        wiersze: [
+          { label: 'stolica (Szwajcaria – brak oficjalnej)', cells: ['Berlin', 'Wien', 'Bern – siedziba władz'] },
+          { label: 'podział', cells: ['16 Bundesländer', '9 Bundesländer', '26 Kantone'] },
+          { label: 'język urzędowy', cells: ['niemiecki', 'niemiecki', '4 języki'] },
+          { label: 'sąsiedzi', cells: ['9 państw, w tym Polska', '8 państw', '5 państw'] },
+          { label: 'mieszkaniec', cells: ['der Deutsche', 'der Österreicher', 'der Schweizer'] },
+        ],
+        bottom: { kolor: 4, title: '💡 Szwajcaria z rodzajnikiem', text: 'Ich komme aus Polen / aus Österreich.\nAle: Ich komme aus der Schweiz.' },
+      },
       flashcards: [
         ['D-A-CH', 'Deutschland, Österreich, die Schweiz'],
         ['Hauptstadt von Deutschland', 'Berlin'],

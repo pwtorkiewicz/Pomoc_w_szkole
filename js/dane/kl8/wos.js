@@ -56,6 +56,18 @@ window.SUBJECTS.push({
         </table>
         <p>Najtrwalsze jest rozwiązanie <b>„wygrany–wygrany”</b>: obie strony coś zyskują. Unikanie konfliktu albo siłowe „wygrany–przegrany” zwykle tylko odkłada problem.</p>
         <div class="tip">💡 Mediator <b>pomaga</b>, arbiter <b>rozstrzyga</b>. Asertywny = „ja jestem OK i ty jesteś OK”.</div>`,
+      infographicNote: 'Porównuj w poziomie: trzy sposoby rozwiązania konfliktu różnią się tym, kto decyduje.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '⚡ Skąd konflikt?', text: 'sprzeczne interesy, inne cele, różne wartości, nieporozumienia, brak informacji', kolor: 2 },
+        kolumny: [{ title: 'Negocjacje', kolor: 1 }, { title: 'Mediacja', kolor: 3 }, { title: 'Arbitraż', kolor: 5 }],
+        wiersze: [
+          { label: 'Kto bierze udział?', cells: ['same strony', 'strony i mediator', 'strony i arbiter'] },
+          { label: 'Kto decyduje?', cells: ['strony', 'strony', 'arbiter'], bold: true },
+          { label: 'Co robi osoba trzecia?', cells: ['nie ma jej', 'pomaga, nie narzuca', 'rozstrzyga spór'] },
+        ],
+        bottom: { title: '💡 Najlepiej: wygrany–wygrany', text: 'Obie strony coś zyskują – to najtrwalsze porozumienie.', kolor: 3 },
+      },
       flashcards: [
         ['Potrzeby społeczne człowieka (wg podstawy)', 'Kontaktu, przynależności, uznania'],
         ['Grupa społeczna', 'Co najmniej kilka osób połączonych więzią, wspólnym celem i normami, z podziałem ról'],
@@ -125,6 +137,18 @@ window.SUBJECTS.push({
           <li><b>deficyt</b>: wydatki &gt; dochody – trzeba ciąć wydatki albo pożyczać.</li>
         </ul>
         <div class="tip">💡 Saldo = dochody − wydatki. Najpierw zaplanuj wydatki stałe, potem odłóż oszczędności, a dopiero resztę wydawaj na zmienne.</div>`,
+      infographicNote: 'Czytaj od góry: planujesz budżet po kolei – od dochodów do wydatków zmiennych – a na dole sprawdzasz saldo.',
+      infographic: {
+        type: 'kroki',
+        top: { icon: '🏠', title: 'Budżet domowy', text: 'zestawienie dochodów i wydatków gospodarstwa domowego, zwykle na miesiąc', kolor: 5 },
+        items: [
+          { title: '1. Dochody', text: 'wynagrodzenie, własna firma, emerytury i renty, zasiłki', kolor: 3 },
+          { title: '2. Wydatki stałe', text: 'co miesiąc podobne: czynsz, prąd, internet, rata kredytu', kolor: 1 },
+          { title: '3. Oszczędności', text: 'odłóż je, zanim wydasz resztę', kolor: 3 },
+          { title: '4. Wydatki zmienne', text: 'zmieniają się: jedzenie, ubrania, kino, prezenty', kolor: 4 },
+        ],
+        bottom: { title: '⚖️ Saldo = dochody − wydatki', items: ['nadwyżka: dochody > wydatki – oszczędzasz', 'budżet zrównoważony: dochody = wydatki', 'deficyt: wydatki > dochody – tnij wydatki albo pożyczaj'], kolor: 2 },
+      },
       flashcards: [
         ['Rodzina jako grupa', 'Mała grupa pierwotna oparta na silnych więziach uczuciowych'],
         ['Funkcja socjalizacyjna (wychowawcza) rodziny', 'Przekazywanie wartości, norm, języka i tradycji'],
@@ -204,6 +228,19 @@ window.SUBJECTS.push({
         <p>Naruszenie praw ucznia to np. niejawna ocena bez uzasadnienia, upokarzanie przy klasie, czytanie czyjejś korespondencji. Naruszenie praw pracownika szkoły to np. obrażanie nauczyciela czy nagrywanie go i publikowanie nagrania. Nauczyciel w czasie pracy jest chroniony jak <b>funkcjonariusz publiczny</b> (Karta Nauczyciela, art. 63).</p>
         <p><b>Droga dochodzenia praw</b>: rozmowa z nauczycielem → wychowawca, pedagog → samorząd uczniowski → dyrektor (skarga według statutu) → <b>kuratorium oświaty</b> (nadzór pedagogiczny) → Rzecznik Praw Dziecka.</p>
         <div class="tip">💡 Samorząd uczniowski to <b>wszyscy uczniowie</b>, a nie tylko wybrany zarząd. Twoje prawa i obowiązki znajdziesz w <b>statucie</b> szkoły.</div>`,
+      infographicNote: 'Czytaj od góry: gdy łamane są twoje prawa, idź krok po kroku – od rozmowy z nauczycielem do Rzecznika Praw Dziecka.',
+      infographic: {
+        type: 'kroki',
+        top: { icon: '📜', title: 'Statut szkoły', text: 'prawa i obowiązki uczniów oraz tryb składania skarg', kolor: 4 },
+        items: [
+          { title: 'Rozmowa z nauczycielem', kolor: 1 },
+          { title: 'Wychowawca, pedagog', kolor: 1 },
+          { title: 'Samorząd uczniowski', text: 'to wszyscy uczniowie szkoły', kolor: 3 },
+          { title: 'Dyrektor', text: 'skarga według statutu', kolor: 1 },
+          { title: 'Kuratorium oświaty', text: 'nadzór pedagogiczny', kolor: 5 },
+          { title: 'Rzecznik Praw Dziecka', kolor: 5 },
+        ],
+      },
       flashcards: [
         ['Funkcje szkoły', 'Kształcąca, wychowawcza, opiekuńcza, kulturalna'],
         ['Obowiązek nauki (Konstytucja, art. 70)', 'Nauka jest obowiązkowa do 18. roku życia'],
@@ -264,6 +301,19 @@ window.SUBJECTS.push({
         </ul>
         <p>Dzięki nim możesz realnie wpływać na życie publiczne: głosować, protestować, zakładać stowarzyszenia, pytać władze, składać petycje.</p>
         <div class="tip">💡 <b>P-P-N-N</b>: przyrodzone, powszechne, niezbywalne, nienaruszalne. Wolność = „państwo, nie wtrącaj się”, prawo = „państwo, zadziałaj”.</div>`,
+      infographicNote: 'Czytaj od góry: z godności wynikają wolności (niebieskie – państwo nie przeszkadza) i prawa (zielone – możesz żądać od państwa).',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        top: { title: 'Cechy praw: P-P-N-N', text: 'przyrodzone, powszechne, niezbywalne, nienaruszalne', kolor: 4 },
+        root: { title: 'Godność człowieka', text: 'źródło wolności i praw (art. 30)', kolor: 5 },
+        branches: [
+          { title: 'Wolności', text: 'państwo ma nie przeszkadzać', items: ['sumienia i religii', 'wyrażania poglądów', 'poruszania się'], kolor: 1 },
+          { title: 'Prawa', text: 'możesz żądać działania lub ochrony', items: ['ochrona życia', 'prawo do sądu', 'ochrona prywatności'], kolor: 3 },
+          { title: 'Wolności polityczne', items: ['pokojowe zgromadzenia', 'zrzeszanie się'], kolor: 1 },
+          { title: 'Prawa polityczne', items: ['wybory i referendum od 18 lat', 'informacja o władzach', 'petycje, wnioski, skargi'], kolor: 3 },
+        ],
+        bottom: { title: '⚠️ Ograniczenie (art. 31)', text: 'tylko w ustawie, gdy to konieczne – nigdy w ich istocie', kolor: 2 },
+      },
       flashcards: [
         ['Art. 30 Konstytucji', 'Przyrodzona i niezbywalna godność człowieka jest źródłem wolności i praw; jest nienaruszalna'],
         ['Prawa przyrodzone', 'Człowiek ma je od urodzenia; państwo ich nie nadaje, tylko chroni'],
@@ -329,6 +379,19 @@ window.SUBJECTS.push({
         <h3>Tolerancja</h3>
         <p>Konstytucja, art. 32: wszyscy są wobec prawa równi, nikt nie może być dyskryminowany z jakiejkolwiek przyczyny. Brak tolerancji wobec mniejszości (narodowych, religijnych, osób z niepełnosprawnością i innych) to np. wyzwiska, wykluczanie z grupy, mowa nienawiści w sieci. Sprzeciw – choćby zgłoszenie dorosłemu lub moderatorowi – to obowiązek przyzwoitego człowieka.</p>
         <div class="tip">💡 Dwa rzeczniki, ta sama „formuła”: <b>Sejm + zgoda Senatu, 5 lat</b>. RPD – dzieci (do 18 lat), RPO – wszyscy.</div>`,
+      infographicNote: 'Porównuj w poziomie: dwaj rzecznicy mają tę samą „formułę” wyboru, ale chronią różne osoby.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '📘 Konwencja o prawach dziecka', text: 'ONZ, 20 listopada 1989 r., projekt Polski; najważniejsze jest dobro dziecka', kolor: 4 },
+        kolumny: [{ title: 'Rzecznik Praw Dziecka', kolor: 3 }, { title: 'Rzecznik Praw Obywatelskich', kolor: 1 }],
+        wiersze: [
+          { label: 'Kogo chroni?', cells: ['dzieci (do 18 lat)', 'wszystkich'], bold: true },
+          { label: 'Kto powołuje i na ile?', cells: ['Sejm za zgodą Senatu, 5 lat', 'Sejm za zgodą Senatu, 5 lat'] },
+          { label: 'Co może?', cells: ['zbadać sprawę na miejscu, żądać wyjaśnień', 'wystąpić do urzędu, złożyć wniosek do TK'] },
+          { label: 'Jak się zwrócić?', cells: ['telefon 800 12 12 12 – bezpłatny, całodobowy', 'wniosek bezpłatny, bez specjalnej formy'] },
+        ],
+        bottom: { title: '🤝 Organizacje pozarządowe', text: 'Amnesty International, Helsińska Fundacja Praw Człowieka, Polska Akcja Humanitarna', kolor: 5 },
+      },
       flashcards: [
         ['Konwencja o prawach dziecka', 'Przyjęta przez Zgromadzenie Ogólne ONZ 20 listopada 1989 r.; projekt zaproponowała Polska'],
         ['Kto jest dzieckiem według Konwencji?', 'Każdy człowiek poniżej 18 lat'],
@@ -387,6 +450,18 @@ window.SUBJECTS.push({
         <p>Policjant może m.in. <b>legitymować</b> (ustalić tożsamość), <b>zatrzymać</b>, przeszukać czy dokonać kontroli osobistej – w przypadkach określonych w ustawach. Legitymować może też np. <b>straż miejska (gminna)</b>. Policjanci muszą <b>szanować godność</b> i prawa człowieka (ustawa o Policji, art. 14).</p>
         <p><b>Twoje prawa jako zatrzymanego nieletniego</b> (art. 48 ustawy o nieletnich): natychmiastowa informacja o przyczynie zatrzymania, pouczenie o prawach, prawo do <b>obrońcy</b>, do <b>kontaktu z rodzicem</b> lub obrońcą, do odmowy wyjaśnień, do pomocy medycznej, kopia protokołu. Policja zawiadamia rodziców i sąd rodzinny.</p>
         <div class="tip">💡 <b>10 – 13 – 17</b>: od 10 lat demoralizacja, od 13 – sąd rodzinny za czyny karalne, od 17 – odpowiadasz jak dorosły.</div>`,
+      infographicNote: 'Czytaj od góry: co robić, gdy spotyka cię przemoc, potem oś wieku – od ilu lat za co odpowiadasz – i twoje prawa przy zatrzymaniu.',
+      infographic: {
+        type: 'os',
+        top: { title: '🆘 Przemoc? Powiedz dorosłemu', text: 'policja 112 · Rzecznik Praw Dziecka 800 12 12 12 · telefon zaufania 116 111', kolor: 2 },
+        items: [
+          { label: '10 lat', title: 'Demoralizacja', text: 'postępowanie (do pełnoletności), np. za wagary', kolor: 1 },
+          { label: '13 lat', title: 'Czyn karalny → sąd rodzinny', text: 'środki wychowawcze, leczniczy albo poprawczy', kolor: 1 },
+          { label: '15 lat', title: 'Wyjątek', text: 'za najcięższe zbrodnie sąd może orzec karę jak wobec dorosłego (zabójstwo – od 14 lat)', kolor: 5 },
+          { label: '17 lat', title: 'Jak dorosły', text: 'odpowiedzialność karna (Kodeks karny, art. 10)', kolor: 2 },
+        ],
+        bottom: { title: '🛡️ Zatrzymany nieletni ma prawo do', items: ['informacji o przyczynie zatrzymania', 'obrońcy i kontaktu z rodzicem', 'odmowy wyjaśnień'], kolor: 3 },
+      },
       flashcards: [
         ['Przemoc psychiczna – przykłady', 'Zastraszanie, szantaż, ośmieszanie, wykluczanie z grupy'],
         ['Cyberprzemoc', 'Przemoc w sieci: hejt, publikowanie zdjęć bez zgody, podszywanie się, nękanie'],
@@ -463,6 +538,20 @@ window.SUBJECTS.push({
         <h3>Gmina jest jawna</h3>
         <p>Możesz przyjść na <b>sesję rady</b> i posiedzenia komisji, czytać protokoły i sprawdzać, jak głosował radny (art. 11b, 14). Kto jest wójtem i przewodniczącym rady w twojej gminie, sprawdzisz w <b>Biuletynie Informacji Publicznej (BIP)</b> i na stronie gminy. Problemy lokalne (np. starzenie się mieszkańców, wyjazdy młodych, brak pracy, korki, brak kanalizacji) omawia się m.in. przy corocznym <b>raporcie o stanie gminy</b>.</p>
         <div class="tip">💡 Rada <b>uchwala</b>, wójt <b>wykonuje</b>. Obie kadencje – <b>5 lat</b>.</div>`,
+      infographicNote: 'Porównuj w poziomie: rada gminy uchwala, wójt wykonuje – obu wybierają mieszkańcy.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '🏘️ Mieszkańcy gminy', text: 'tworzą wspólnotę samorządową i wybierają władze gminy', kolor: 4 },
+        kolumny: [{ title: 'Rada gminy', kolor: 1 }, { title: 'Wójt / burmistrz / prezydent miasta', kolor: 2 }],
+        wiersze: [
+          { label: 'Rola', cells: ['uchwala i kontroluje', 'wykonuje'], bold: true },
+          { label: 'Co robi?', cells: ['uchwala budżet i statut, kontroluje wójta', 'wykonuje uchwały i budżet, kieruje urzędem gminy'] },
+          { label: 'Jak wybrany?', cells: ['wybory bezpośrednie', 'bezpośrednio: ponad połowa głosów, inaczej druga tura'] },
+          { label: 'Kadencja', cells: ['5 lat', '5 lat'], bold: true },
+          { label: 'Wiek kandydata', cells: ['18 lat', '25 lat'], bold: true },
+        ],
+        bottom: { title: '🗳️ Odwołanie', text: 'referendum lokalne na wniosek co najmniej 10% uprawnionych mieszkańców', kolor: 5 },
+      },
       flashcards: [
         ['Podstawowa jednostka samorządu terytorialnego', 'Gmina (Konstytucja, art. 164)'],
         ['Organ stanowiący i kontrolny gminy', 'Rada gminy (w mieście – rada miejska)'],
@@ -519,6 +608,20 @@ window.SUBJECTS.push({
         <h3>Twój region</h3>
         <p>Poznaj herb i historię województwa, jego ważne postacie, święta i zwyczaje, potrawy, stroje i gwarę. Informacje znajdziesz na stronach urzędu marszałkowskiego, w muzeach regionalnych i bibliotekach.</p>
         <div class="tip">💡 Pary „organ wykonawczy – szef”: gmina – <b>wójt</b>, powiat – zarząd ze <b>starostą</b>, województwo – zarząd z <b>marszałkiem</b>.</div>`,
+      infographicNote: 'Porównuj w poziomie: powiat i województwo mają taki sam układ – organ stanowiący wybiera szefa organu wykonawczego.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '🗺️ Trzy szczeble od 1.01.1999 r.', text: 'gminy, powiaty i województwa (jest ich 16)', kolor: 4 },
+        kolumny: [{ title: 'Powiat', kolor: 1 }, { title: 'Województwo', kolor: 3 }],
+        wiersze: [
+          { label: 'Organ stanowiący (5 lat)', cells: ['rada powiatu', 'sejmik województwa'], bold: true },
+          { label: 'Organ wykonawczy', cells: ['zarząd ze starostą', 'zarząd z marszałkiem'], bold: true },
+          { label: 'Kto wybiera szefa?', cells: ['rada powiatu wybiera starostę', 'sejmik wybiera marszałka'] },
+          { label: 'Urząd', cells: ['starostwo powiatowe', 'urząd marszałkowski'] },
+          { label: 'Zadania – przykłady', cells: ['szkoły ponadpodstawowe, szpital, urząd pracy', 'szkolnictwo wyższe, kultura, drogi wojewódzkie'] },
+        ],
+        bottom: { title: '⚠️ Wojewoda to nie samorząd', text: 'przedstawiciel Rady Ministrów; nadzoruje, czy samorządy działają zgodnie z prawem', kolor: 2 },
+      },
       flashcards: [
         ['Trójstopniowy podział terytorialny', 'Gminy, powiaty, województwa – od 1 stycznia 1999 r.'],
         ['Ile jest województw?', '16'],
@@ -591,6 +694,18 @@ window.SUBJECTS.push({
         <h3>Tożsamości i ksenofobia</h3>
         <p>Możesz być jednocześnie np. Ślązakiem lub Kaszubą (tożsamość regionalna), Polakiem (narodowa), obywatelem RP (państwowa) i Europejczykiem. <b>Ksenofobia</b> to niechęć do obcych; jej odmiany: <b>rasizm</b> (wobec innej rasy), <b>szowinizm</b> (przekonanie o wyższości własnego narodu), <b>antysemityzm</b> (wrogość wobec Żydów).</p>
         <div class="tip">💡 Narodowość = <b>czujesz</b>, obywatelstwo = <b>masz w dokumentach</b>. Mniejszości: <b>9 narodowych + 4 etniczne + 1 język regionalny</b> (od 16.12.2026 – 10 narodowych).</div>`,
+      infographicNote: 'Czytaj od góry: obywatelstwo to więź z państwem – a narodowość może być różna; mniejszości to też obywatele polscy.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        top: { title: 'Narodowość – czujesz\nObywatelstwo – masz w dokumentach', kolor: 4 },
+        root: { title: 'Obywatel RP', text: 'więź prawna z państwem: prawa i obowiązki', kolor: 1 },
+        branches: [
+          { title: 'Jak zostać obywatelem?', items: ['urodzenie: rodzic – obywatel polski', 'nadanie przez Prezydenta RP'], kolor: 1 },
+          { title: 'Obowiązki', items: ['wierność RP i troska o dobro wspólne', 'przestrzeganie prawa', 'podatki', 'obrona Ojczyzny', 'dbałość o środowisko'], kolor: 2 },
+          { title: 'Narodowość', text: 'może być inna niż polska, np. ukraińska lub niemiecka', kolor: 5 },
+          { title: 'Mniejszości', text: 'to obywatele polscy', items: ['9 narodowych (od 16.12.2026 r. – 10)', '4 etniczne', 'język regionalny: kaszubski'], kolor: 3 },
+        ],
+      },
       flashcards: [
         ['Narodowość', 'Poczucie przynależności do narodu – wspólnoty kultury, języka i historii'],
         ['Obywatelstwo', 'Więź prawna z państwem, która daje prawa i nakłada obowiązki'],
@@ -648,6 +763,18 @@ window.SUBJECTS.push({
         <h3>Etyka w życiu publicznym</h3>
         <p>Osoby publiczne powinny być uczciwe, bezstronne i jawnie działać. Łamanie zasad to np. <b>korupcja</b> (łapówki), <b>nepotyzm</b> (zatrudnianie krewnych), kłamstwo, wykorzystywanie stanowiska dla siebie. Skutki: utrata zaufania obywateli, marnowanie publicznych pieniędzy, odpowiedzialność karna.</p>
         <div class="tip">💡 Stowarzyszenie = <b>ludzie</b> (min. 7), fundacja = <b>majątek</b> na cel. Wolontariat = <b>dobrowolnie i za darmo</b>.</div>`,
+      infographicNote: 'Porównuj w poziomie: stowarzyszenie to ludzie, fundacja to majątek; na dole – jak wpływasz na gminę.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '🤝 Organizacje pozarządowe', text: 'poza administracją publiczną, nie działają dla zysku', kolor: 4 },
+        kolumny: [{ title: 'Stowarzyszenie', kolor: 1 }, { title: 'Fundacja', kolor: 5 }],
+        wiersze: [
+          { label: 'Podstawa', cells: ['ludzie', 'majątek'], bold: true },
+          { label: 'Kto zakłada?', cells: ['co najmniej 7 osób', 'fundator'] },
+          { label: 'Cel', cells: ['niezarobkowy', 'społecznie lub gospodarczo użyteczny'] },
+        ],
+        bottom: { title: '🏛️ Jak wpływasz na gminę?', items: ['wybory i referendum lokalne', 'konsultacje społeczne', 'budżet obywatelski', 'petycje, wnioski i skargi', 'młodzieżowa rada gminy'], kolor: 3 },
+      },
       flashcards: [
         ['Cnoty obywatelskie – przykłady', 'Odpowiedzialność, troska o dobro wspólne, solidarność, tolerancja, odwaga cywilna'],
         ['Odwaga cywilna', 'Gotowość do sprzeciwu wobec zła, nawet gdy grozi to nieprzyjemnościami'],
@@ -724,6 +851,18 @@ window.SUBJECTS.push({
         <h3>Opinia publiczna</h3>
         <p>To poglądy dużej części społeczeństwa na ważne sprawy. Politycy, firmy i organizacje biorą ją pod uwagę. Bada się ją w <b>sondażach</b> na <b>reprezentatywnej próbie</b> (np. CBOS – Centrum Badania Opinii Społecznej). Czytając wyniki, sprawdź: kto badał, kiedy, na ilu osobach, jak brzmiało pytanie; patrz na procenty i zmiany w czasie.</p>
         <div class="tip">💡 Fakt – <b>sprawdzisz</b>, opinia – <b>ocenisz</b>. Kampania społeczna zmienia zachowania, reklama – sprzedaje.</div>`,
+      infographicNote: 'Porównuj w poziomie: fakt sprawdzisz, opinię ocenisz – a rzetelny dziennikarz je oddziela.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '📰 Media – „czwarta władza”', text: 'patrzą władzy na ręce; wolność prasy, cenzura prewencyjna zakazana', kolor: 4 },
+        kolumny: [{ title: 'Fakt', kolor: 3 }, { title: 'Opinia', kolor: 2 }],
+        wiersze: [
+          { label: 'W skrócie', cells: ['sprawdzisz', 'ocenisz'], bold: true },
+          { label: 'Rozpoznasz po', cells: ['konkret: kto, co, kiedy, gdzie, ile', 'słowa wartościujące: „najlepszy”, „moim\u00a0zdaniem”'] },
+          { label: 'Przykład', cells: ['„Rada miasta przyjęła budżet 12 głosami”', '„Rada przyjęła fatalny budżet”'] },
+        ],
+        bottom: { title: '✍️ Rzetelny dziennikarz', items: ['sprawdza informację albo podaje źródło', 'oddziela informację od komentarza', 'wysłuchuje obu stron'], kolor: 1 },
+      },
       flashcards: [
         ['Środki masowego przekazu', 'Prasa, radio, telewizja, internet'],
         ['Funkcja kontrolna mediów', 'Patrzenie władzy na ręce, ujawnianie nadużyć'],
@@ -799,6 +938,20 @@ window.SUBJECTS.push({
         <h3>Pluralizm i partie</h3>
         <p><b>Pluralizm polityczny</b>: wolność tworzenia i działania partii (art. 11) – konkurują one w wyborach o głosy. <b>Partia</b> to dobrowolna organizacja, która chce metodami demokratycznymi wpływać na politykę państwa lub sprawować władzę; członkiem może być obywatel od <b>18 lat</b>; finansowanie partii jest <b>jawne</b>. Zakazane są partie odwołujące się do nazizmu, faszyzmu, komunizmu i nienawiści rasowej (art. 13). Partie, które razem rządzą, tworzą <b>koalicję</b>; pozostałe – <b>opozycję</b>. Aktualną listę klubów i kół poselskich znajdziesz na <b>sejm.gov.pl</b>, a działania partii – na ich stronach.</p>
         <div class="tip">💡 <b>460 / 100</b>, <b>21 / 30 lat</b>, kadencja <b>4 lata</b>. Sejm – proporcjonalnie, Senat – większościowo.</div>`,
+      infographicNote: 'Porównuj w poziomie: Sejm i Senat to dwie izby władzy ustawodawczej – wybierane inaczej, z tą samą kadencją.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '👥 Władza należy do Narodu (art. 4)', text: 'przez przedstawicieli (wybory) lub bezpośrednio (referendum)', kolor: 4 },
+        kolumny: [{ title: 'Sejm', kolor: 1 }, { title: 'Senat', kolor: 5 }],
+        wiersze: [
+          { label: 'Skład', cells: ['460 posłów', '100 senatorów'], bold: true },
+          { label: 'Wybory', cells: ['proporcjonalne, 41 okręgów, próg 5%', 'większościowe, 100 okręgów jednomandatowych'] },
+          { label: 'Kandydat – od ilu lat?', cells: ['21 lat', '30 lat'], bold: true },
+          { label: 'Kadencja', cells: ['4 lata', '4 lata'], bold: true },
+          { label: 'Ustawy', cells: ['uchwala w trzech czytaniach', 'w 30 dni: przyjmuje, poprawia albo odrzuca'] },
+        ],
+        bottom: { title: '🗳️ Referendum ogólnokrajowe', items: ['zarządza Sejm albo Prezydent za zgodą Senatu', 'wiążące, gdy głosowała ponad połowa uprawnionych'], kolor: 2 },
+      },
       flashcards: [
         ['Cechy państwa', 'Terytorium, ludność, suwerenna władza'],
         ['Art. 4 Konstytucji', 'Władza zwierzchnia należy do Narodu – sprawuje ją przez przedstawicieli lub bezpośrednio'],
@@ -862,6 +1015,18 @@ window.SUBJECTS.push({
         <p><b>Konstytucjonalizm</b>: konstytucja jest <b>najwyższym prawem</b> (art. 8) – inne akty muszą być z nią zgodne. Konstytucję RP uchwaliło Zgromadzenie Narodowe <b>2 kwietnia 1997 r.</b>, a Naród przyjął ją w referendum 25 maja 1997 r. Szczególne cechy: najwyższa moc prawna, szczególny <b>tryb zmiany</b> (Sejm – większość 2/3 głosów, Senat – bezwzględna większość), szczególna treść (zasady ustroju, prawa i obowiązki), uroczysta nazwa i preambuła. Ma 13 rozdziałów.</p>
         <p><b>Trybunał Konstytucyjny</b>: <b>15 sędziów</b> wybieranych przez Sejm na <b>9 lat</b> (bez ponownego wyboru). Orzeka m.in. o <b>zgodności ustaw i umów międzynarodowych z Konstytucją</b>, rozpatruje <b>skargi konstytucyjne</b>, ocenia zgodność celów partii z Konstytucją, rozstrzyga spory kompetencyjne. Jego orzeczenia są <b>ostateczne</b>.</p>
         <div class="tip">💡 Prezydent: <b>35 lat, 5 lat, raz ponownie</b>. Weto odrzucasz <b>3/5</b>. TK: <b>15 sędziów na 9 lat</b>.</div>`,
+      infographicNote: 'Czytaj od góry: trzy władze (niebieska, pomarańczowa, fioletowa) równoważą się i kontrolują nawzajem.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        top: { title: '⚖️ Państwo prawa (art. 7)', text: 'organy władzy działają na podstawie i w granicach prawa', kolor: 4 },
+        root: { title: 'Trójpodział władzy (art. 10)', text: 'władze się równoważą i kontrolują', kolor: 4 },
+        branches: [
+          { title: '🏛️ Ustawodawcza: Sejm i Senat', items: ['Sejm odrzuca weto prezydenta większością 3/5', 'rząd potrzebuje poparcia większości w Sejmie'], kolor: 1 },
+          { title: '👔 Wykonawcza: Prezydent i Rada Ministrów', items: ['Prezydent: 5 lat, ponownie tylko raz; podpisuje ustawy albo weto', 'Rada Ministrów: premier i ministrowie; wykonuje ustawy'], kolor: 2 },
+          { title: '⚖️ Sądownicza: sądy i trybunały', items: ['sądy niezależne, sędziowie niezawiśli', 'co najmniej dwie instancje', 'TK: 15 sędziów na 9 lat; bada zgodność ustaw z Konstytucją'], kolor: 5 },
+        ],
+        bottom: { title: '📜 Konstytucja – najwyższe prawo', text: 'uchwalona 2 kwietnia 1997 r.; inne akty muszą być z nią zgodne', kolor: 3 },
+      },
       flashcards: [
         ['Trójpodział władzy (art. 10)', 'Ustawodawcza – Sejm i Senat; wykonawcza – Prezydent i Rada Ministrów; sądownicza – sądy i trybunały'],
         ['Zasada republikańskiej formy rządu', 'Głowa państwa wybierana na kadencję, władza nie jest dziedziczna'],
@@ -925,6 +1090,18 @@ window.SUBJECTS.push({
         <h3>Problemy współczesnego świata</h3>
         <p>Wojny i uchodźstwo, głód i ubóstwo, zmiany klimatu, choroby, terroryzm. Pomóc możesz np. przez wolontariat, wsparcie organizacji humanitarnych (np. UNICEF, PAH), odpowiedzialne zakupy, oszczędzanie wody i energii.</p>
         <div class="tip">💡 Daty Polski: <b>NATO – 12 III 1999</b>, <b>UE – 1 V 2004</b>. ONZ – pokój na świecie, NATO – wspólna obrona (art. 5), UE – wspólny rynek i wartości.</div>`,
+      infographicNote: 'Porównuj w poziomie: każda organizacja ma inny główny cel; w wierszu „Polska od” – daty do zapamiętania.',
+      infographic: {
+        type: 'porownanie',
+        kolumny: [{ title: 'ONZ', kolor: 1 }, { title: 'NATO', kolor: 2 }, { title: 'UE', kolor: 5 }],
+        wiersze: [
+          { label: 'Główny cel', cells: ['pokój na świecie', 'wspólna obrona', 'wspólny rynek'], bold: true },
+          { label: 'Ile państw?', cells: ['193', '32', '27'], bold: true },
+          { label: 'Polska od', cells: ['początku', '12.03.1999', '1.05.2004'], bold: true },
+          { label: 'Hasło do zapamiętania', cells: ['Rada Bezpieczeństwa', 'artykuł 5', 'strefa Schengen'] },
+        ],
+        bottom: { title: '🇪🇺 Co daje ci UE?', items: ['praca, nauka i mieszkanie w innych krajach UE', 'podróże bez kontroli granicznej w strefie Schengen', 'fundusze unijne dla gmin i regionów'], kolor: 3 },
+      },
       flashcards: [
         ['Karta Narodów Zjednoczonych', 'Podpisana 26 czerwca 1945 r. w San Francisco; weszła w życie 24 października 1945 r.'],
         ['Siedziba główna ONZ', 'Nowy Jork'],

@@ -39,6 +39,18 @@ window.SUBJECTS.push({
         <p>Najmniejszy ładunek, jaki występuje swobodnie w przyrodzie, to <b>ładunek elementarny</b> – ma go elektron (ze znakiem −) i proton (ze znakiem +): <b>e ≈ 1,6 · 10<sup>−19</sup> C</b>. Ładunek każdego ciała jest <b>wielokrotnością</b> ładunku elementarnego.</p>
         <p>Jednostka ładunku to <b>kulomb (C)</b>. Ładunek oznaczamy literą <b>q</b>.</p>
         <div class="tip">💡 Elektryzowanie to zawsze <b>przenoszenie elektronów</b>. Ciało, które je „zabrało”, ma ładunek ujemny, a to, które je „oddało” – dodatni.</div>`,
+      infographicNote: 'Od góry: skąd bierze się ładunek, trzy sposoby elektryzowania, a na dole – jak ładunki na siebie działają.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        top: { icon: '⚛️', title: 'Skąd ładunek?', text: 'nadmiar elektronów → ładunek ujemny (−)\nniedobór elektronów → ładunek dodatni (+)', kolor: 5 },
+        root: { title: 'Elektryzowanie', text: 'to zawsze przenoszenie elektronów', kolor: 2 },
+        branches: [
+          { title: 'Przez potarcie', text: 'elektrony przechodzą z ciała na ciało → oba mają ładunki przeciwnych znaków', kolor: 1 },
+          { title: 'Przez dotyk', text: 'część ładunku przechodzi na drugie ciało → oba mają ładunek tego samego znaku', kolor: 1 },
+          { title: 'Przez indukcję', text: 'tylko zbliżasz ładunek → bliższa strona przewodnika ma ładunek przeciwny', kolor: 1 },
+        ],
+        bottom: { title: '💡 Oddziaływanie ładunków', items: ['jednoimienne (+ i +, − i −) – odpychają się', 'różnoimienne (+ i −) – przyciągają się', 'elektroskop: listki z ładunkiem tego samego znaku rozchylają się'], kolor: 4 },
+      },
       flashcards: [
         ['Ładunki jednoimienne', 'Odpychają się (+ i +, − i −)'],
         ['Ładunki różnoimienne', 'Przyciągają się (+ i −)'],
@@ -100,6 +112,18 @@ window.SUBJECTS.push({
           <li>przewody rysujemy jako proste linie pod kątem prostym.</li>
         </ul>
         <div class="tip">💡 Amperomierz – w <b>szereg</b> (cały prąd przez niego przepływa). Woltomierz – <b>równolegle</b>, „obok” odbiornika (porównuje dwa punkty obwodu).</div>`,
+      infographicNote: 'Porównuj w poziomie: każdy wiersz to jedna cecha natężenia, napięcia i oporu.',
+      infographic: {
+        type: 'porownanie',
+        top: { icon: '🔋', title: 'Prąd elektryczny', text: 'uporządkowany ruch ładunków – płynie tylko w zamkniętym obwodzie ze źródłem napięcia', kolor: 5 },
+        kolumny: [{ title: 'Natężenie I', kolor: 1 }, { title: 'Napięcie U', kolor: 2 }, { title: 'Opór R', kolor: 3 }],
+        wiersze: [
+          { label: 'co mówi', cells: ['ładunek w ciągu 1 s', 'energia na ładunek 1 C', 'jak utrudnia przepływ prądu'] },
+          { label: 'jednostka', cells: ['amper (A)', 'wolt (V)', 'om (Ω)'], bold: true },
+          { label: 'pomiar', cells: ['amperomierz – szeregowo', 'woltomierz – równolegle', 'z pomiaru U i I'] },
+        ],
+        bottom: { title: '💡 Związek U, I i R', text: 'R = U / I, więc U = I · R i I = U / R\nnp. 12 V : 0,5 A = 24 Ω', kolor: 4 },
+      },
       flashcards: [
         ['Prąd elektryczny', 'Uporządkowany ruch elektronów swobodnych (w metalach) albo jonów (w roztworach)'],
         ['Kierunek umowny prądu', 'Od + do − (elektrony płyną od − do +)'],
@@ -197,6 +221,18 @@ window.SUBJECTS.push({
           <li>Nie przeciążaj listew i przedłużaczy. Nie wkładaj niczego do gniazdka. Wtyczkę wyjmuj, trzymając za wtyczkę, nie za kabel.</li>
           <li>Gdy ktoś jest porażony – najpierw <b>odłącz prąd</b> (wyłącznik, bezpiecznik), dopiero potem pomagaj i wezwij pomoc (112).</li>
         </ul>`,
+      infographicNote: 'Czytaj od góry: ze źródła przez moc i pracę do tego, na co zamienia się energia; na dole – bezpieczeństwo.',
+      infographic: {
+        type: 'kroki',
+        top: { icon: '🔋', title: 'Źródła energii elektrycznej', text: 'baterie, akumulatory, prądnice w elektrowniach, ogniwa słoneczne', kolor: 5 },
+        items: [
+          { icon: '⚡', title: 'Moc: P = U · I', text: 'praca prądu w ciągu 1 s, wat (W)\nnp. 230 V · 10 A = 2300 W', kolor: 1 },
+          { icon: '⏱️', title: 'Praca: W = P · t', text: 'zużyta energia, dżul (J); W = U · I · t', kolor: 1 },
+          { icon: '🧾', title: '1 kWh = 3 600 000 J', text: 'moc w kW, czas w godzinach\nnp. 2 kW · 0,05 h = 0,1 kWh', kolor: 4 },
+          { icon: '🔄', title: 'Energia zamienia się w…', items: ['ciepło – czajnik, żelazko, grzejnik', 'światło – żarówka, dioda (LED)', 'ruch – silnik elektryczny', 'dźwięk – głośnik, dzwonek'], kolor: 3 },
+        ],
+        bottom: { title: '⚠️ Bezpieczeństwo', items: ['bezpiecznik przerywa obwód przy zbyt dużym prądzie', 'izolacja chroni przed porażeniem', 'porażenie: najpierw odłącz prąd, potem 112'], kolor: 2 },
+      },
       flashcards: [
         ['Moc prądu', 'P = U · I, jednostka: wat (W)'],
         ['Praca prądu', 'W = U · I · t = P · t, jednostka: dżul (J)'],
@@ -289,6 +325,20 @@ window.SUBJECTS.push({
           <li>Elektromagnes oddziałuje z magnesem tak jak zwykły magnes: bieguny jednoimienne się odpychają, różnoimienne przyciągają.</li>
           <li><b>Silnik elektryczny</b> działa dzięki oddziaływaniu magnetycznemu: zwojnica z prądem w polu magnesu obraca się.</li>
         </ul>`,
+      infographicNote: 'U góry zasada biegunów, niżej – magnesy (niebieskie) i magnetyzm prądu (zielone).',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { icon: '🧲', title: 'Bieguny N i S', items: ['jednoimienne (N–N, S–S) – odpychają się', 'różnoimienne (N–S) – przyciągają się'], kolor: 5 },
+        branches: [
+          { title: '✂️ Przecięty magnes', text: 'dwa magnesy – każdy ma biegun N i S', kolor: 1 },
+          { title: '🧭 Kompas', text: 'biegun N igły wskazuje północ – Ziemia jest jak wielki magnes', kolor: 1 },
+          { title: '📎 Magnes i żelazo', text: 'przyciąga żelazo (stal), nikiel, kobalt – nie miedź, aluminium, plastik', kolor: 1 },
+          { title: '⚡ Doświadczenie Oersteda', text: 'igła wychyla się przy przewodzie z prądem → prąd wytwarza pole magnetyczne', kolor: 3 },
+          { title: '🔩 Elektromagnes', text: 'zwojnica z rdzeniem z żelaza; działa, gdy płynie prąd', kolor: 3 },
+          { title: '⚙️ Silnik elektryczny', text: 'zwojnica z prądem w polu magnesu obraca się', kolor: 3 },
+        ],
+        bottom: { title: '💡 Silniejszy elektromagnes', text: 'zwiększ natężenie prądu albo liczbę zwojów', kolor: 4 },
+      },
       flashcards: [
         ['Bieguny magnesu', 'Północny N i południowy S'],
         ['Bieguny jednoimienne (N–N, S–S)', 'Odpychają się'],
@@ -360,6 +410,19 @@ window.SUBJECTS.push({
         </table>
         <p>Granice są przybliżone – niektóre źródła jako dolną granicę słyszalności podają 20 Hz.</p>
         <div class="tip">💡 Burza: policz sekundy od błysku do grzmotu i pomnóż przez 340 m/s. 3 s → ok. 1 km.</div>`,
+      infographicNote: 'Czytaj od góry: drgania rozchodzą się jako fala, a fala w powietrzu to dźwięk; żółte pola to wzory.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '⏱️', title: 'Ruch drgający', items: ['amplituda A – największe wychylenie', 'okres T – czas jednego drgania (s)', 'częstotliwość f – drgania w 1 s (Hz)'], kolor: 1 },
+          { title: 'f = 1 / T', text: 'np. 20 drgań w 10 s → T = 0,5 s, f = 2 Hz', kolor: 4 },
+          { icon: '🌊', title: 'Fala', text: 'drgania rozchodzą się w ośrodku – przenosi energię, nie materię', kolor: 1 },
+          { title: 'v = λ · f = λ / T', text: 'np. λ = 2 m, f = 5 Hz → v = 10 m/s', kolor: 4 },
+          { icon: '🔊', title: 'Dźwięk', text: 'źródło drga; w powietrzu ok. 340 m/s, w próżni się nie rozchodzi', kolor: 3 },
+          { title: 'Cechy dźwięku', items: ['wysokość – od częstotliwości (większa f – wyższy)', 'głośność – od amplitudy (większa – głośniejszy)'], kolor: 3 },
+        ],
+        bottom: { title: '👂 Słyszysz ok. 16 Hz – 20 000 Hz', text: 'poniżej – infradźwięki (np. trzęsienia ziemi), powyżej – ultradźwięki (np. USG)', kolor: 5 },
+      },
       flashcards: [
         ['Położenie równowagi', 'Położenie, wokół którego ciało drga (np. wahadło w spoczynku)'],
         ['Amplituda', 'Największe wychylenie z położenia równowagi'],
@@ -455,6 +518,19 @@ window.SUBJECTS.push({
         </table>
         <p><b>Ogniskowa</b> f to odległość ogniska od zwierciadła.</p>
         <div class="tip">💡 Wklęsłe jak <b>łyżka od środka</b> – zbiera światło. Wypukłe jak <b>bombka</b> – rozrzuca je na boki.</div>`,
+      infographicNote: 'Od góry: światło biegnie po prostej, odbija się według jednego prawa – a co dalej, zależy od powierzchni.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        top: { icon: '🔦', title: 'Światło biegnie po prostej', text: 'za przedmiotem – cień; przy dużym źródle lub dwóch – półcień', kolor: 5 },
+        root: { title: 'Kąt odbicia = kąt padania', text: 'kąty mierzysz od normalnej', kolor: 2 },
+        branches: [
+          { title: 'Powierzchnia chropowata', text: 'rozproszenie – promienie w różnych kierunkach', kolor: 1 },
+          { title: 'Zwierciadło płaskie', text: 'obraz pozorny, prosty, tej samej wielkości, w tej samej odległości za lustrem', kolor: 1 },
+          { title: 'Zwierciadło wklęsłe', text: 'skupia promienie równoległe w ognisku F – reflektor, latarka', kolor: 3 },
+          { title: 'Zwierciadło wypukłe', text: 'rozprasza promienie – szerokie pole widzenia, lustro na skrzyżowaniu', kolor: 1 },
+        ],
+        bottom: { title: '💡 Zapamiętaj', text: 'wklęsłe jak łyżka od środka – zbiera światło; wypukłe jak bombka – rozrzuca je', kolor: 4 },
+      },
       flashcards: [
         ['Prostoliniowe rozchodzenie się światła', 'W ośrodku jednorodnym światło biegnie po liniach prostych'],
         ['Cień', 'Obszar, do którego światło ze źródła nie dociera'],
@@ -530,6 +606,19 @@ window.SUBJECTS.push({
           <tr><td>promieniowanie gamma</td><td>leczenie nowotworów (radioterapia)</td></tr>
         </table>
         <div class="tip">💡 Kolejność barw w widmie: „<b>C</b>zy <b>P</b>an <b>Ż</b>ubr <b>Z</b>na <b>N</b>asze <b>F</b>iołki?” – czerwona, pomarańczowa, żółta, zielona, niebieska, fioletowa.</div>`,
+      infographicNote: 'U góry – dlaczego światło się załamuje; niżej porównuj w poziomie dwie soczewki; na dole – barwy.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: 'Załamanie światła', items: ['powietrze → woda: światło zwalnia – do normalnej', 'woda → powietrze: przyspiesza – od normalnej'], kolor: 5 },
+        kolumny: [{ title: 'Soczewka skupiająca', kolor: 3 }, { title: 'Soczewka rozpraszająca', kolor: 1 }],
+        wiersze: [
+          { label: 'kształt (zwykle)', cells: ['grubsza w środku – wypukła', 'cieńsza w środku – wklęsła'] },
+          { label: 'promienie równoległe do osi', cells: ['skupiają się w ognisku F', 'rozbiegają się'] },
+          { label: 'ognisko', cells: ['rzeczywiste', 'pozorne – z przedłużeń promieni'] },
+          { label: 'korekcja wady wzroku', cells: ['dalekowzroczność („plusy”)', 'krótkowzroczność („minusy”)'] },
+        ],
+        bottom: { title: '🌈 Pryzmat', items: ['rozszczepia światło białe na barwy (widmo)', 'czerwone odchyla się najmniej, fioletowe najbardziej', 'światło lasera jest jednobarwne – się nie rozszczepia'], kolor: 4 },
+      },
       flashcards: [
         ['Załamanie światła', 'Zmiana kierunku promienia na granicy ośrodków, w których światło ma różną prędkość'],
         ['Powietrze → woda', 'Światło zwalnia – promień załamuje się do normalnej'],

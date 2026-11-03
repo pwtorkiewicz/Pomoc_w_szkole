@@ -32,6 +32,17 @@ window.SUBJECTS.push({
         </table>
         <p><b>Przykład.</b> Wierzchołek A rombu ABCD leży na symetralnej boku BC. Wtedy AB = AC. W rombie AB = BC, więc AB = BC = AC – trójkąt ABC jest równoboczny. Kąt ABC ma 60°, a kąty rombu mają 60° i 120°.</p>
         <div class="tip">💡 Symetralna = <b>prostopadła + przez środek</b>. Widzisz punkt na symetralnej – szukaj trójkąta równoramiennego.</div>`,
+      infographicNote: 'Czytaj od góry: z tego, że punkt leży na symetralnej, wynikają kolejne fakty; na dole – to samo w drugą stronę.',
+      infographic: {
+        type: 'kroki',
+        top: { title: 'Symetralna odcinka AB', text: 'prostopadła do AB (90°) i przechodzi przez jego środek S: AS = SB = AB : 2', kolor: 4 },
+        items: [
+          { title: 'P leży na symetralnej AB', kolor: 1 },
+          { title: 'PA = PB', text: 'P jest jednakowo odległy od końców odcinka', kolor: 1 },
+          { title: 'Trójkąt ABP – równoramienny', text: 'kąty przy A i B są równe; PS to wysokość trójkąta ABP', kolor: 3 },
+        ],
+        bottom: { title: '↩️ Działa też w drugą stronę', items: ['QA = QB → Q leży na symetralnej AB', 'w trójkącie AC = BC → C leży na symetralnej podstawy AB'], kolor: 5 },
+      },
       flashcards: [
         ['Symetralna odcinka', 'Prosta prostopadła do odcinka, przechodząca przez jego środek'],
         ['Pod jakim kątem symetralna przecina odcinek?', 'Pod kątem prostym (90°)'],
@@ -142,6 +153,19 @@ window.SUBJECTS.push({
           <tr><td>trójkąt równoramienny, AC = BC</td><td>dwusieczna kąta C leży na symetralnej podstawy AB</td></tr>
         </table>
         <div class="tip">💡 Dwu-sieczna – „sieka” kąt na <b>dwie</b> równe części. Symetralna dotyczy <b>odcinka</b>, dwusieczna – <b>kąta</b>.</div>`,
+      infographicNote: 'Na górze – co to jest dwusieczna; każdy wiersz: po lewej co wiesz, po prawej – co z tego wynika.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: 'Dwusieczna kąta α', text: 'półprosta z wierzchołka; dzieli kąt na dwa kąty po α : 2; to oś symetrii kąta', kolor: 4 },
+        kolumny: [{ title: 'Wiesz, że…', kolor: 1 }, { title: 'Więc…', kolor: 3 }],
+        wiersze: [
+          { cells: ['punkt leży na dwusiecznej', 'jest jednakowo odległy od obu ramion kąta'] },
+          { cells: ['dwusieczne dwóch kątów przyległych', 'tworzą kąt prosty: (α + β) : 2 = 180° : 2 = 90°'] },
+          { cells: ['dwusieczne kątów A i B trójkąta przecinają się w S', 'kąt ASB = 180° − A : 2 − B : 2'] },
+          { cells: ['trójkąt równoramienny, AC = BC', 'dwusieczna kąta C leży na symetralnej podstawy AB'] },
+        ],
+        bottom: { title: '📏 Odległość od ramienia', text: 'mierzymy wzdłuż odcinka prostopadłego do ramienia', kolor: 5 },
+      },
       flashcards: [
         ['Dwusieczna kąta', 'Półprosta wychodząca z wierzchołka, dzieląca kąt na dwa równe kąty'],
         ['Własność punktów dwusiecznej', 'Każdy jej punkt jest jednakowo odległy od obu ramion kąta'],
@@ -252,6 +276,20 @@ window.SUBJECTS.push({
           <li>Połącz obrazy w tej samej kolejności co wierzchołki.</li>
         </ol>
         <div class="tip">💡 Uwaga na pułapkę: przekątne prostokąta <b>nie są</b> jego osiami symetrii (chyba że to kwadrat). Złóż kartkę po przekątnej – rogi się nie pokryją.</div>`,
+      infographicNote: 'Od góry: co to jest symetria osiowa, potem figury według liczby osi symetrii; na dole – jak uzupełnić figurę na kratce.',
+      infographic: {
+        type: 'drzewo',
+        kolumny: 2,
+        top: { title: 'A i A′ symetryczne względem k', text: 'k jest symetralną odcinka AA′; punkt na osi jest symetryczny sam do siebie', kolor: 4 },
+        root: { title: 'Ile osi symetrii?', kolor: 1 },
+        branches: [
+          { title: '0 osi', items: ['trójkąt różnoboczny', 'równoległobok (nie prostokąt i nie romb)'], kolor: 2 },
+          { title: '1 oś', items: ['kąt (dwusieczna)', 'trójkąt równoramienny (nie równoboczny)', 'trapez równoramienny'], kolor: 3 },
+          { title: '2 osie', items: ['odcinek', 'prostokąt (nie kwadrat) – przez środki boków', 'romb (nie kwadrat) – przekątne'], kolor: 3 },
+          { title: 'więcej osi', items: ['trójkąt równoboczny – 3', 'kwadrat – 4', 'sześciokąt foremny – 6', 'okrąg, koło – nieskończenie wiele'], kolor: 3 },
+        ],
+        bottom: { title: '✏️ Uzupełnianie na kratce', items: ['policz kratki od wierzchołka do osi (prostopadle)', 'odmierz tyle samo po drugiej stronie', 'połącz obrazy w tej samej kolejności'], kolor: 5 },
+      },
       flashcards: [
         ['Figura osiowosymetryczna', 'Figura, którą da się złożyć wzdłuż prostej (osi) tak, że obie części się pokrywają'],
         ['A i A′ symetryczne względem prostej k', 'k jest symetralną odcinka AA′ (AA′ ⊥ k, k przechodzi przez środek AA′)'],
@@ -348,6 +386,18 @@ window.SUBJECTS.push({
           <tr><td><b>nie ma osi symetrii</b></td><td>równoległobok, który nie jest prostokątem ani rombem</td><td>trójkąt różnoboczny</td></tr>
         </table>
         <div class="tip">💡 Środek symetrii = środek „obrotu do góry nogami”. Trójkąt odwrócony o 180° zawsze „patrzy” wierzchołkiem w drugą stronę – dlatego żaden trójkąt nie ma środka symetrii.</div>`,
+      infographicNote: 'Od góry: co to jest symetria środkowa, potem figury ze środkiem symetrii i bez niego; na dole – oś i środek razem.',
+      infographic: {
+        type: 'drzewo',
+        kolumny: 1,
+        top: { title: 'A i A′ symetryczne względem O', text: 'O jest środkiem odcinka AA′', kolor: 4 },
+        root: { title: '🔄 Obróć o 180° wokół O', text: 'pokrywa się sama ze sobą? – O to środek symetrii', kolor: 1 },
+        branches: [
+          { title: 'Ma środek symetrii', items: ['odcinek – środek odcinka', 'równoległobok (też prostokąt, romb, kwadrat) – punkt przecięcia przekątnych', 'okrąg, koło – środek okręgu (koła)', 'sześciokąt foremny – punkt przecięcia najdłuższych przekątnych'], kolor: 3 },
+          { title: 'Nie ma środka symetrii', items: ['każdy trójkąt', 'trapez, który nie jest równoległobokiem', 'pięciokąt foremny'], kolor: 2 },
+        ],
+        bottom: { title: '⚖️ Oś i środek', items: ['oś i środek: kwadrat, prostokąt, romb, koło, odcinek', 'tylko oś: trójkąt równoboczny, trójkąt równoramienny, trapez równoramienny', 'tylko środek: równoległobok, który nie jest prostokątem ani rombem', 'ani osi, ani środka: trójkąt różnoboczny'], kolor: 5 },
+      },
       flashcards: [
         ['A i A′ symetryczne względem punktu O', 'O jest środkiem odcinka AA′'],
         ['Figura środkowosymetryczna', 'Figura, która po obrocie o 180° wokół pewnego punktu (środka symetrii) pokrywa się sama ze sobą'],

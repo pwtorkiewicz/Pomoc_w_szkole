@@ -41,6 +41,20 @@ window.SUBJECTS.push({
         <h3>Dlaczego Polska przegrała</h3>
         <p>Ogromna przewaga Niemiec i ZSRS, atak z kilku stron naraz, słabsze uzbrojenie i <b>bierność sojuszników</b>. Mimo to Polska broniła się ponad miesiąc, a żołnierze i cywile (np. obrońcy Warszawy, pocztowcy, harcerze) wykazali się bohaterstwem.</p>
         <div class="tip">💡 Dwie daty, dwóch agresorów: <b>1 IX</b> – Niemcy, <b>17 IX</b> – ZSRS. Obie wynikały z paktu z <b>23 VIII</b>.</div>`,
+      infographicNote: 'Czytaj od góry: pakt (przyczyna) → wydarzenia z 1939 r. po kolei (pomarańczowe – agresja, niebieskie – polska obrona) → dlaczego Polska przegrała.',
+      infographic: {
+        type: 'os',
+        top: { title: '🤝 Pakt Ribbentrop–Mołotow', text: '23 VIII 1939: Niemcy i ZSRS w tajnym protokole dzielą strefy wpływów', kolor: 2 },
+        items: [
+          { label: '1 IX', title: 'Atak Niemiec', text: 'Westerplatte, Wieluń – początek II wojny światowej', kolor: 2 },
+          { label: '3 IX', title: '„Dziwna wojna”', text: 'Francja i Wielka Brytania wypowiadają wojnę Niemcom, ale nie walczą na serio', kolor: 5 },
+          { label: 'od 9 IX', title: 'Bitwa nad Bzurą', text: 'największa bitwa kampanii wrześniowej', kolor: 1 },
+          { label: '17 IX', title: 'Atak ZSRS', text: 'Armia Czerwona realizuje tajny protokół paktu', kolor: 2 },
+          { label: '28 IX', title: 'Obrona Warszawy', text: 'stolica kapituluje', kolor: 1 },
+          { label: 'pocz. X', title: 'Bitwa pod Kockiem', text: 'ostatnia bitwa kampanii (gen. Franciszek Kleeberg)', kolor: 1 },
+        ],
+        bottom: { title: '⚖️ Dlaczego Polska przegrała', text: 'przewaga Niemiec i ZSRS, atak z wielu stron, bierność sojuszników', kolor: 4 },
+      },
       flashcards: [
         ['Pakt Ribbentrop–Mołotow', '23 sierpnia 1939 r.; układ Niemiec i ZSRS z tajnym protokołem o podziale stref wpływów'],
         ['Atak Niemiec na Polskę', '1 września 1939 r. – początek II wojny światowej'],
@@ -131,6 +145,21 @@ window.SUBJECTS.push({
           <li>podział Europy na wpływy ZSRS i Zachodu; powstanie ONZ.</li>
         </ul>
         <div class="tip">💡 Kolejność konferencji: <b>T-J-P</b> – Teheran, Jałta, Poczdam (1943 → luty 1945 → lato 1945). Granica wschodnia – Teheran i Jałta; zachodnia – Poczdam.</div>`,
+      infographicNote: 'Czytaj od góry: kto z kim walczył → przełomowe wydarzenia (pomarańczowe – ataki Osi, niebieskie – przełomy, zielone – kapitulacje) → co Wielka Trójka ustaliła o Polsce.',
+      infographic: {
+        type: 'os',
+        top: { title: '⚔️ Oś kontra alianci', text: 'Niemcy, Włochy, Japonia przeciw m.in. Wielkiej Brytanii, ZSRS, USA i Polsce', kolor: 4 },
+        items: [
+          { label: '1939', title: 'Atak na Polskę', text: 'Niemcy (1 IX) i ZSRS (17 IX)', kolor: 2 },
+          { label: '22 VI 1941', title: 'Atak na ZSRS', text: 'Niemcy – „plan Barbarossa”', kolor: 2 },
+          { label: '7 XII 1941', title: 'Pearl Harbor', text: 'atak Japonii – USA przystępują do wojny', kolor: 2 },
+          { label: '31 I 1943', title: 'Stalingrad', text: 'kapitulacja Niemców – przełom na froncie wschodnim', kolor: 1 },
+          { label: '6 VI 1944', title: 'Normandia', text: 'lądowanie aliantów – drugi front w Europie', kolor: 1 },
+          { label: '8 V 1945', title: 'Kapitulacja Niemiec', text: 'koniec wojny w Europie', kolor: 3 },
+          { label: '2 IX 1945', title: 'Kapitulacja Japonii', text: 'koniec II wojny światowej', kolor: 3 },
+        ],
+        bottom: { title: '🤝 Wielka Trójka o Polsce', text: 'często bez udziału Polski:', items: ['Teheran (koniec 1943) – linia Curzona', 'Jałta (luty 1945) – strefa wpływów ZSRS', 'Poczdam (lato 1945) – Odra i Nysa Łużycka'], kolor: 5 },
+      },
       flashcards: [
         ['Atak Niemiec na ZSRS', '22 czerwca 1941 r.'],
         ['Pearl Harbor', '7 grudnia 1941 r. – atak Japonii, USA przystępują do wojny'],
@@ -183,6 +212,18 @@ window.SUBJECTS.push({
           <li><b>szmalcownictwo</b> – szantażowanie i wydawanie Żydów Niemcom; państwo podziemne karało szmalcowników śmiercią.</li>
         </ul>
         <div class="tip">💡 Getto → egzekucje → obozy zagłady: tak krok po kroku Niemcy realizowali „ostateczne rozwiązanie”. Obozy śmierci założyli <b>Niemcy</b> – na okupowanych ziemiach polskich.</div>`,
+      infographicNote: 'Czytaj od góry: ideologia → kolejne kroki Zagłady → jej skutek; na dole – opór Żydów i postawy Polaków.',
+      infographic: {
+        type: 'kroki',
+        top: { title: 'Ideologia rasistowska', text: 'naziści chcieli wymordować Żydów i Romów; Słowian uważali za „podludzi”', kolor: 5 },
+        items: [
+          { title: '1. Getta', text: 'zamknięte dzielnice dla Żydów – głód i choroby', kolor: 2 },
+          { title: '2. Masowe egzekucje', text: 'po ataku na ZSRS – na zajętych terenach', kolor: 2 },
+          { title: '3. Obozy zagłady', text: 'założone przez Niemców na okupowanych ziemiach polskich: Chełmno, Treblinka, Auschwitz-Birkenau i inne', kolor: 2 },
+          { title: 'Ok. 6 mln zamordowanych Żydów', text: 'z całej Europy; ofiarami ludobójstwa byli też Romowie', kolor: 4 },
+        ],
+        bottom: { title: 'Opór i postawy', items: ['powstanie w getcie warszawskim (19 IV – 16 V 1943)', 'pomoc mimo kary śmierci: „Żegota”, Irena Sendlerowa, Ulmowie', 'obojętność – strach, brak reakcji', 'szmalcownictwo – wydawanie Żydów Niemcom'], kolor: 1 },
+      },
       flashcards: [
         ['Holokaust (Zagłada)', 'Wymordowanie przez Niemców ok. 6 mln Żydów w czasie II wojny światowej'],
         ['Getto', 'Wydzielona, zamknięta dzielnica, do której Niemcy przesiedlali Żydów'],
@@ -240,6 +281,19 @@ window.SUBJECTS.push({
         <h3>Wołyń i Małopolska Wschodnia</h3>
         <p>W 1943 r. ukraińscy nacjonaliści (OUN-UPA) dokonali <b>ludobójstwa</b> ludności polskiej na <b>Wołyniu</b>, a potem w <b>Małopolsce Wschodniej</b> – zginęło kilkadziesiąt tysięcy Polaków. Najkrwawszy dzień to <b>11 lipca 1943 r.</b> (ataki na ok. 100 miejscowości). Celem było usunięcie Polaków z ziem, na których nacjonaliści chcieli utworzyć państwo ukraińskie. Polacy organizowali samoobronę; dochodziło też do polskich akcji odwetowych. Sejm uznał zbrodnię wołyńską za ludobójstwo, a 11 lipca jest Narodowym Dniem Pamięci jej ofiar.</p>
         <div class="tip">💡 Niemcy – Auschwitz, Palmiry, Lwów, Zamojszczyzna. Sowieci – Katyń, deportacje. Obaj okupanci niszczyli <b>elity</b>.</div>`,
+      infographicNote: 'Porównuj w poziomie: okupacja niemiecka (pomarańczowa) obok sowieckiej (fioletowej); u góry to, co je łączyło.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '💡 Wspólny cel', text: 'zniszczyć polskie elity i podporządkować sobie społeczeństwo', kolor: 4 },
+        kolumny: [{ title: 'Niemcy', kolor: 2 }, { title: 'ZSRS', kolor: 5 }],
+        wiersze: [
+          { label: 'Ziemie polskie', cells: ['wcielone do Rzeszy + Generalne Gubernatorstwo', 'wcielone do ZSRS'] },
+          { label: 'Kogo prześladowali?', cells: ['kryterium narodowe (rasowe)', 'kryterium klasowe'], bold: true },
+          { label: 'Jak?', cells: ['łapanki, egzekucje, roboty w Niemczech, obozy', 'aresztowania, deportacje w głąb ZSRS (1940–1941)'] },
+          { label: 'Zbrodnie', cells: ['Auschwitz-Birkenau, Palmiry, profesorowie lwowscy, Zamojszczyzna', 'zbrodnia katyńska (wiosna 1940), ok. 22 tys. ofiar'] },
+        ],
+        bottom: { title: 'Wołyń i Małopolska Wschodnia', text: '1943: ludobójstwo Polaków dokonane przez OUN-UPA; najkrwawszy dzień – 11 VII 1943', kolor: 1 },
+      },
       flashcards: [
         ['Generalne Gubernatorstwo', 'Część ziem polskich pod okupacją niemiecką, niewcielona do Rzeszy; rządził Hans Frank'],
         ['Kryterium prześladowań u Niemców', 'Narodowe (rasowe)'],
@@ -301,6 +355,18 @@ window.SUBJECTS.push({
         </ul>
         <p>Ocena powstania do dziś jest przedmiotem dyskusji: bohaterski zryw o wolność czy decyzja, która przyniosła ogromne straty?</p>
         <div class="tip">💡 Powstanie: <b>1 VIII – 2 X 1944</b>, 63 dni. Na każdy dzień powstania przypadały tysiące ofiar wśród cywilów.</div>`,
+      infographicNote: 'Czytaj od góry: z czego składało się państwo podziemne i jak walczyło, a na dole – jego największy zryw.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { title: 'Polskie Państwo Podziemne', text: 'podległe rządowi na uchodźstwie', kolor: 1 },
+        branches: [
+          { title: 'Delegatura Rządu na Kraj', text: 'tajna administracja: urzędy, sądy, szkolnictwo', kolor: 1 },
+          { title: 'Zalążek parlamentu', text: 'porozumienie najważniejszych partii', kolor: 1 },
+          { title: 'Armia Krajowa', text: 'od 14 II 1942 (z ZWZ); gen. Rowecki „Grot”, potem gen. Komorowski „Bór”', kolor: 3 },
+          { title: 'Formy oporu', items: ['tajne nauczanie', 'prasa podziemna', 'sabotaż i dywersja', 'wywiad', 'Szare Szeregi'], kolor: 3 },
+        ],
+        bottom: { title: '🔥 Powstanie warszawskie', text: '1 VIII – 2 X 1944, 63 dni', items: ['Armia Czerwona stała za Wisłą i nie pomogła', 'zginęło ponad 18 tys. powstańców i ok. 180 tys. cywilów', 'Niemcy zburzyli Warszawę'], kolor: 2 },
+      },
       flashcards: [
         ['Polskie Państwo Podziemne', 'Tajne struktury państwa polskiego w okupowanym kraju, podległe rządowi na uchodźstwie'],
         ['Delegatura Rządu na Kraj', 'Tajna administracja państwa podziemnego'],
@@ -355,6 +421,21 @@ window.SUBJECTS.push({
         <h3>Polityka mocarstw wobec Polski</h3>
         <p>Wielka Brytania i USA potrzebowały ZSRS do pokonania Niemiec, więc <b>ustępowały Stalinowi</b>: w Teheranie i Jałcie zgodziły się na granicę na linii Curzona i na Polskę w strefie wpływów ZSRS – bez zgody rządu polskiego. W 1945 r. wycofały uznanie dla rządu w Londynie i uznały Tymczasowy Rząd Jedności Narodowej, zdominowany przez komunistów.</p>
         <div class="tip">💡 Polacy walczyli na lądzie, morzu i w powietrzu od pierwszego do ostatniego dnia wojny – ale o losie Polski zdecydowały mocarstwa.</div>`,
+      infographicNote: 'Czytaj od góry: losy rządu na uchodźstwie (niebieskie – rząd, fioletowe – relacje z ZSRS, pomarańczowe – ciosy, zielone – front) → na dole wniosek.',
+      infographic: {
+        type: 'os',
+        items: [
+          { label: 'IX 1939', title: 'Rząd na uchodźstwie', text: 'prezydent Raczkiewicz, premier gen. Sikorski; najpierw we Francji', kolor: 1 },
+          { label: '1940', title: 'Rząd w Londynie', text: 'po klęsce Francji', kolor: 1 },
+          { label: '30 VII 1941', title: 'Układ Sikorski–Majski', text: 'zwolnienie Polaków z łagrów, armia Andersa w ZSRS', kolor: 5 },
+          { label: '1942', title: 'Armia Andersa', text: 'wychodzi z ZSRS na Bliski Wschód', kolor: 5 },
+          { label: '1943', title: 'ZSRS zrywa stosunki', text: 'gdy rząd żąda wyjaśnień w sprawie Katynia', kolor: 2 },
+          { label: '4 VII 1943', title: 'Śmierć Sikorskiego', text: 'katastrofa lotnicza w Gibraltarze', kolor: 2 },
+          { label: 'V 1944', title: 'Monte Cassino', text: '2 Korpus gen. Andersa zdobywa klasztor', kolor: 3 },
+          { label: '1945', title: 'Mocarstwa uznają TRJN', text: 'i wycofuje uznanie dla rządu w Londynie', kolor: 2 },
+        ],
+        bottom: { title: '💡 Walczyli na wielu frontach', text: 'Narwik, bitwa o Anglię (Dywizjon 303), Tobruk, Falaise, Arnhem, Lenino – ale o losie Polski zdecydowały mocarstwa', kolor: 4 },
+      },
       flashcards: [
         ['Premier i Naczelny Wódz na uchodźstwie (od 1939)', 'Gen. Władysław Sikorski'],
         ['Siedziba rządu na uchodźstwie', 'Najpierw Francja, od 1940 r. Londyn'],
@@ -422,6 +503,19 @@ window.SUBJECTS.push({
           <li>W <b>1949 r.</b> komuniści pod wodzą <b>Mao Zedonga</b> utworzyli <b>Chińską Republikę Ludową</b>. Rządy Mao (m.in. rewolucja kulturalna) kosztowały życie milionów ludzi. Po jego śmierci (1976) Deng Xiaoping wprowadził <b>reformy gospodarcze</b>, ale nie demokrację – protesty w Pekinie w 1989 r. krwawo stłumiono.</li>
         </ul>
         <div class="tip">💡 NATO – 19<b>49</b>, Układ Warszawski – 19<b>55</b>: najpierw Zachód, potem odpowiedź Wschodu.</div>`,
+      infographicNote: 'Porównuj w poziomie: Zachód (niebieski) i blok wschodni (pomarańczowy); na dole – gdzie rywalizacja zamieniała się w kryzys.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '❄️ Zimna wojna (1947–1991)', text: 'rywalizacja bez bezpośredniej wojny USA z ZSRS; Europę dzieli żelazna kurtyna', kolor: 4 },
+        kolumny: [{ title: 'Zachód', kolor: 1 }, { title: 'Blok wschodni', kolor: 2 }],
+        wiersze: [
+          { label: 'Ustrój', cells: ['demokracja, gospodarka rynkowa', 'komunizm'] },
+          { label: 'Sojusz', cells: ['NATO (1949)', 'Układ Warszawski (1955)'], bold: true },
+          { label: 'Kto należał?', cells: ['m.in. USA, Kanada, Wielka Brytania, Francja', 'państwa pod przewodnictwem ZSRS, w tym PRL'] },
+          { label: 'Plan Marshalla', cells: ['amerykańska pomoc w odbudowie', 'Stalin zmusił do odrzucenia'] },
+        ],
+        bottom: { title: '⚡ Kryzysy i konflikty', items: ['blokada Berlina Zachodniego (1948–1949), mur berliński (1961)', 'wojna koreańska (1950–1953)', 'kryzys kubański (1962) – groźba wojny atomowej', 'Węgry 1956 i Praska Wiosna 1968 – stłumione siłą'], kolor: 5 },
+      },
       flashcards: [
         ['ONZ', 'Organizacja Narodów Zjednoczonych (1945) – ma dbać o pokój na świecie'],
         ['Prawo weta w ONZ', 'Mają je stali członkowie Rady Bezpieczeństwa'],
@@ -484,6 +578,21 @@ window.SUBJECTS.push({
           <li>rozwój techniki: komputery, a potem internet.</li>
         </ul>
         <div class="tip">💡 Kolejność integracji: <b>węgiel i stal → gospodarka (EWG) → Unia</b>: 1951 → 1957 → 1992.</div>`,
+      infographicNote: 'Czytaj od góry: dwie drogi na jednej osi – zielone to integracja Europy, niebieskie to upadek komunizmu.',
+      infographic: {
+        type: 'os',
+        top: { title: '🎯 Cele integracji', text: 'pokój (nigdy więcej wojny Francji z Niemcami), wspólny rynek, współpraca demokracji', kolor: 3 },
+        items: [
+          { label: '1950–1951', title: 'Węgiel i stal', text: 'plan Schumana → EWWiS', kolor: 3 },
+          { label: '1957', title: 'Traktaty rzymskie', text: 'EWG – wspólny rynek, unia celna', kolor: 3 },
+          { label: '1985', title: 'Gorbaczow', text: 'reformy; ZSRS przestaje siłą pilnować „satelitów”', kolor: 1 },
+          { label: '1989', title: 'Jesień Ludów', text: 'komunizm upada – zaczyna Polska; 9 XI – upadek muru berlińskiego', kolor: 1 },
+          { label: '3 X 1990', title: 'Zjednoczenie Niemiec', kolor: 1 },
+          { label: 'XII 1991', title: 'Rozpad ZSRS', text: 'niepodległe m.in. Ukraina, Litwa, Białoruś; koniec zimnej wojny', kolor: 1 },
+          { label: '1992', title: 'Traktat z Maastricht', text: 'powstaje Unia Europejska', kolor: 3 },
+          { label: '2004', title: 'Wielkie rozszerzenie', text: 'do UE wstępuje m.in. Polska', kolor: 3 },
+        ],
+      },
       flashcards: [
         ['Jesień Ludów', '1989 – upadek komunizmu w krajach Europy Środkowo-Wschodniej'],
         ['Michaił Gorbaczow', 'Przywódca ZSRS od 1985 r., próbował reformować kraj'],
@@ -548,6 +657,21 @@ window.SUBJECTS.push({
           <li><b>Październik 1956</b> – „<b>odwilż</b>”: I sekretarzem PZPR został <b>Władysław Gomułka</b>; uwolniono prymasa Wyszyńskiego, ograniczono terror, zaniechano przymusowej kolektywizacji. Komunizm jednak pozostał.</li>
         </ul>
         <div class="tip">💡 Droga do pełni władzy: <b>PKWN (1944) → referendum (1946) → wybory (1947) → PZPR (1948) → Konstytucja PRL (1952)</b>.</div>`,
+      infographicNote: 'Czytaj od góry: krok po kroku komuniści przejmują władzę (pomarańczowe), potem stalinizm (fioletowy) i przełom 1956 r.',
+      infographic: {
+        type: 'os',
+        items: [
+          { label: '22 VII 1944', title: 'Manifest PKWN', text: 'komuniści pod opieką Stalina ogłaszają się władzą', kolor: 2 },
+          { label: 'VI 1945', title: 'TRJN', text: 'realizacja ustaleń z Jałty; przewaga komunistów', kolor: 2 },
+          { label: '30 VI 1946', title: 'Referendum', text: '„3 razy TAK” – sfałszowane', kolor: 2 },
+          { label: '19 I 1947', title: 'Wybory do Sejmu', text: 'sfałszowane – komuniści przejmują pełnię władzy', kolor: 2 },
+          { label: 'XII 1948', title: 'PZPR', text: 'partia komunistyczna – rządzi do 1989 r.', kolor: 2 },
+          { label: '1948–1956', title: 'Stalinizm', text: 'terror UB, Nowa Huta, kolektywizacja, socrealizm; 1952 – Konstytucja PRL', kolor: 5 },
+          { label: 'VI 1956', title: 'Poznań', text: 'protest robotników krwawo stłumiony przez wojsko', kolor: 1 },
+          { label: 'X 1956', title: 'Odwilż', text: 'Gomułka I sekretarzem PZPR, uwolniony prymas Wyszyński', kolor: 3 },
+        ],
+        bottom: { title: '🛡️ Postawy Polaków', items: ['opór zbrojny – żołnierze wyklęci', 'opór legalny – PSL Mikołajczyka', 'przystosowanie albo poparcie'], kolor: 4 },
+      },
       flashcards: [
         ['Manifest PKWN', '22 lipca 1944 r. – komuniści ogłaszają się władzą w Polsce'],
         ['TRJN', 'Tymczasowy Rząd Jedności Narodowej (1945) – realizacja ustaleń z Jałty'],
@@ -631,6 +755,21 @@ window.SUBJECTS.push({
           <li>Powstał <b>NSZZ „Solidarność”</b> – liczył blisko <b>10 milionów</b> członków. To był wielki ruch społeczny walczący o prawa pracowników, wolność i godność.</li>
         </ul>
         <div class="tip">💡 Kryzysy PRL co kilka lat: <b>56 – 68 – 70 – 76 – 80</b>. Zwykle iskrą były podwyżki cen albo ograniczenia wolności.</div>`,
+      infographicNote: 'Czytaj od góry: system PRL → kryzysy (pomarańczowe) → opozycja i Kościół → Sierpień 1980 i „Solidarność”.',
+      infographic: {
+        type: 'os',
+        top: { title: '🏛️ System PRL', text: 'rządzi PZPR (I sekretarz), wybory niewolne, cenzura, zależność od ZSRS', kolor: 4 },
+        items: [
+          { label: 'III 1968', title: 'Protest studentów', text: 'po zakazie „Dziadów”; represje i kampania antysemicka', kolor: 2 },
+          { label: 'XII 1970', title: 'Robotnicy Wybrzeża', text: 'podwyżki cen, masakra; Gierek zastępuje Gomułkę', kolor: 2 },
+          { label: 'VI 1976', title: 'Radom, Ursus, Płock', text: 'protesty po podwyżkach cen; represje', kolor: 2 },
+          { label: '1976', title: 'KOR', text: 'Komitet Obrony Robotników – w obronie represjonowanych', kolor: 1 },
+          { label: '16 X 1978', title: 'Jan Paweł II', text: 'kard. Wojtyła papieżem; 1979: „Niech zstąpi Duch Twój…”', kolor: 5 },
+          { label: '14 VIII 1980', title: 'Strajk w Stoczni Gdańskiej', text: 'Anna Walentynowicz, Lech Wałęsa; 21 postulatów', kolor: 1 },
+          { label: '31 VIII 1980', title: 'Porozumienia sierpniowe', text: 'zgoda na niezależne związki zawodowe', kolor: 1 },
+        ],
+        bottom: { title: '✊ NSZZ „Solidarność”', text: 'blisko 10 mln członków – walka o prawa pracowników, wolność i godność', kolor: 3 },
+      },
       flashcards: [
         ['„Mała stabilizacja”', 'Czasy Władysława Gomułki (1956–1970)'],
         ['Edward Gierek', 'I sekretarz PZPR 1970–1980; rozwój na kredyt z Zachodu'],
@@ -692,6 +831,20 @@ window.SUBJECTS.push({
           <li><b>Postanowienia</b>: <b>ponowna legalizacja „Solidarności”</b>; <b>częściowo wolne wybory</b> do Sejmu – 65% mandatów dla strony rządowej, 35% do wolnej walki; <b>w pełni wolne wybory do Senatu</b> (przywróconego); urząd <b>prezydenta</b>.</li>
         </ul>
         <div class="tip">💡 13 XII 1981 – stan wojenny. 6 II – 5 IV 1989 – Okrągły Stół. 4 VI 1989 – wybory. Od siły do rozmowy.</div>`,
+      infographicNote: 'Czytaj od góry: od siły do rozmowy – represje (pomarańczowe), opór (niebieski), porozumienie (zielone).',
+      infographic: {
+        type: 'os',
+        top: { title: 'Przyczyny', text: 'władza boi się ogromnej „Solidarności”; ZSRS naciska na rozprawę ze związkiem', kolor: 4 },
+        items: [
+          { label: '13 XII 1981', title: 'Stan wojenny', text: 'władzę przejmuje WRON, gen. Wojciech Jaruzelski; internowania', kolor: 2 },
+          { label: '16 XII 1981', title: 'Kopalnia „Wujek”', text: 'zginęło 9 strajkujących górników', kolor: 2 },
+          { label: '1983', title: 'Nobel dla Wałęsy', text: 'Lech Wałęsa – Pokojowa Nagroda Nobla', kolor: 1 },
+          { label: '1984', title: 'Ks. Jerzy Popiełuszko', text: 'zamordowany przez funkcjonariuszy SB', kolor: 2 },
+          { label: '1988', title: 'Strajki', text: 'kryzys gospodarczy; zmiany w ZSRS za Gorbaczowa', kolor: 1 },
+          { label: '1989', title: 'Okrągły Stół', text: '6 II – 5 IV: władza i opozycja, Kościół pośredniczy', kolor: 3 },
+        ],
+        bottom: { title: '✅ Postanowienia', items: ['ponowna legalizacja „Solidarności”', 'Sejm: 65% dla władzy, 35% do wolnej walki', 'w pełni wolne wybory do Senatu', 'urząd prezydenta'], kolor: 3 },
+      },
       flashcards: [
         ['Wprowadzenie stanu wojennego', '13 grudnia 1981 r.; gen. Wojciech Jaruzelski'],
         ['WRON', 'Wojskowa Rada Ocalenia Narodowego – przejęła władzę w stanie wojennym'],
@@ -751,6 +904,21 @@ window.SUBJECTS.push({
           <tr><td><b>bezpieczeństwo</b> – sojusznicy zobowiązani do wzajemnej obrony; trwałe związanie z Zachodem</td><td><b>rozwój</b> – wspólny rynek, fundusze unijne na drogi, szkoły, szpitale; swoboda podróżowania, pracy i nauki w innych krajach UE; wpływ na decyzje w Europie</td></tr>
         </table>
         <div class="tip">💡 Trzy daty III RP: <b>4 VI 1989</b> – wolność; <b>12 III 1999</b> – NATO (bezpieczeństwo); <b>1 V 2004</b> – UE (rozwój).</div>`,
+      infographicNote: 'Czytaj od góry: wolność (zielone) → budowa nowego państwa (niebieskie) → bezpieczeństwo i rozwój (fioletowe).',
+      infographic: {
+        type: 'os',
+        items: [
+          { label: '4 VI 1989', title: 'Wybory „kontraktowe”', text: 'zwycięstwo „Solidarności”; premierem Tadeusz Mazowiecki', kolor: 3 },
+          { label: '29 XII 1989', title: 'Rzeczpospolita Polska', text: 'powrót nazwy i orła w koronie', kolor: 3 },
+          { label: '1990', title: 'Plan Balcerowicza', text: 'gospodarka rynkowa – ale bezrobocie i rozwarstwienie', kolor: 1 },
+          { label: '1990', title: 'Prezydent Wałęsa', text: 'wybrany w wyborach powszechnych', kolor: 1 },
+          { label: '27 X 1991', title: 'Wolne wybory do Sejmu', text: 'pierwsze w pełni wolne', kolor: 1 },
+          { label: '1993', title: 'Wojska rosyjskie wychodzą', text: 'ostatni żołnierze opuszczają Polskę', kolor: 1 },
+          { label: '2 IV 1997', title: 'Konstytucja RP', text: 'zatwierdzona w referendum', kolor: 1 },
+          { label: '12 III 1999', title: 'NATO', text: 'bezpieczeństwo – sojusznicy zobowiązani do wzajemnej obrony', kolor: 5 },
+          { label: '1 V 2004', title: 'Unia Europejska', text: 'rozwój – wspólny rynek, fundusze, swoboda podróży i pracy', kolor: 5 },
+        ],
+      },
       flashcards: [
         ['Wybory „kontraktowe”', '4 czerwca 1989 r. – zwycięstwo „Solidarności”'],
         ['Pierwszy niekomunistyczny premier', 'Tadeusz Mazowiecki (1989)'],

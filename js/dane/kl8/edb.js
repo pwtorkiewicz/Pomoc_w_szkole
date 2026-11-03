@@ -46,6 +46,17 @@ window.SUBJECTS.push({
         </table>
         <p>Członkostwo w organizacjach zmniejsza negatywne skutki położenia i daje sojuszników, ale <b>nie usuwa wszystkich zagrożeń</b>.</p>
         <div class="tip">💡 Bezpieczeństwo Polski stoi na dwóch filarach: <b>własna siła</b> (wojsko, gospodarka, społeczeństwo) + <b>sojusze</b> (NATO, UE).</div>`,
+      infographicNote: 'Czytaj od góry: położenie daje szanse i zagrożenia – chronią nas dwa filary.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        top: { title: '🗺️ Położenie Polski', kolor: 2, items: ['wschodnia granica = zewnętrzna granica UE i NATO', 'tranzyt: szansa (handel, transport) i zagrożenie (rozległe niziny)'] },
+        root: { title: 'Dwa filary bezpieczeństwa' },
+        branches: [
+          { title: '💪 Własna siła', kolor: 1, items: ['wojsko', 'gospodarka (też dostawy energii)', 'społeczeństwo'] },
+          { title: '🤝 Sojusze', kolor: 3, items: ['NATO – od 1999', 'Unia Europejska – od 1 maja 2004'] },
+        ],
+        bottom: { title: '💡 Art. 5 NATO', text: 'napaść na jednego członka = napaść na wszystkich', kolor: 3 },
+      },
       flashcards: [
         ['Bezpieczeństwo państwa', 'Stan, w którym państwo może przetrwać, rozwijać się i chronić obywateli przed zagrożeniami'],
         ['Składniki bezpieczeństwa państwa', 'Militarne, polityczne, gospodarcze (energetyczne), społeczne, cyberbezpieczeństwo'],
@@ -113,6 +124,19 @@ window.SUBJECTS.push({
         </table>
         <p><b>Święto Wojska Polskiego</b> obchodzimy <b>15 sierpnia</b>.</p>
         <div class="tip">💡 Pięć rodzajów sił zbrojnych zapamiętasz jako „<b>ląd – powietrze – morze – specjalni – terytorialsi</b>”.</div>`,
+      infographicNote: 'Od góry: misja wojska, a pod nią – kto dowodzi, z czego się składa i kto służy.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        top: { title: '🎯 Misja', text: 'straż suwerenności i niepodległości państwa oraz jego bezpieczeństwa i pokoju', kolor: 1 },
+        root: { title: '🇵🇱 Siły Zbrojne RP' },
+        branches: [
+          { title: 'Kto dowodzi', kolor: 2, items: ['Prezydent – najwyższy zwierzchnik', 'w pokoju – przez Ministra Obrony Narodowej', 'na czas wojny – Naczelny Dowódca'] },
+          { title: 'Rodzaje', kolor: 5, items: ['Wojska Lądowe', 'Siły Powietrzne', 'Marynarka Wojenna', 'Wojska Specjalne', 'Wojska Obrony Terytorialnej'] },
+          { title: 'Służba wojskowa', kolor: 3, items: ['czynna albo w rezerwie', 'obowiązek od 18 lat'] },
+          { title: 'Pomoc w pokoju', kolor: 4, items: ['klęski żywiołowe', 'akcje ratownicze', 'usuwanie niewybuchów'] },
+        ],
+        bottom: { title: '📅 Święto Wojska Polskiego', text: '15 sierpnia', kolor: 1 },
+      },
       flashcards: [
         ['Misja Sił Zbrojnych RP', 'Stoją na straży suwerenności i niepodległości państwa oraz jego bezpieczeństwa i pokoju'],
         ['Najwyższy zwierzchnik Sił Zbrojnych', 'Prezydent RP'],
@@ -182,6 +206,18 @@ window.SUBJECTS.push({
         <h3>Służby – dlaczego trzeba ich słuchać</h3>
         <p>Straż pożarna, policja, zespoły ratownictwa medycznego, straż miejska, ratownicy górscy i wodni, wojsko (np. WOT przy powodzi), Rządowe Centrum Bezpieczeństwa. Służby mają informacje o zagrożeniu, sprzęt i przeszkolenie. Ustawa nakazuje osobom zaalarmowanym zachowywać się <b>zgodnie z komunikatem</b> władz lub kierującego akcją ratowniczą. Kto nie słucha – naraża siebie, innych i ratowników.</p>
         <div class="tip">💡 Syrena <b>faluje</b> – <b>uwaga, alarm</b>! Syrena <b>gra równo</b> – <b>już w porządku</b>.</div>`,
+      infographicNote: 'Porównuj w poziomie: lewa kolumna to ogłoszenie alarmu, prawa – jego odwołanie.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '🔔 Alarm ćwiczebny', text: 'ciągły dźwięk syreny przez 1 minutę', kolor: 4 },
+        kolumny: [{ title: '🚨 Ogłoszenie alarmu', kolor: 2 }, { title: '✅ Odwołanie alarmu', kolor: 3 }],
+        wiersze: [
+          { label: 'syrena', cells: ['dźwięk modulowany (falujący), 3 minuty', 'dźwięk ciągły, 3 minuty'] },
+          { label: 'głos – trzy razy', cells: ['„Uwaga! … Ogłaszam alarm…”', '„Uwaga! … Odwołuję alarm…”'] },
+          { label: 'znak', cells: ['żółty trójkąt podstawą w dół', 'usunięcie żółtego trójkąta'] },
+        ],
+        bottom: { title: '🏃 Po ogłoszeniu alarmu', text: 'wyłącz prąd i gaz, zabierz dokumenty i leki, idź do schronu, słuchaj komunikatów (radio, RSO, ALERT RCB)', kolor: 1 },
+      },
       flashcards: [
         ['Ogłoszenie alarmu – syrena', 'Modulowany (falujący) dźwięk syreny przez 3 minuty'],
         ['Odwołanie alarmu – syrena', 'Ciągły dźwięk syreny przez 3 minuty'],
@@ -264,6 +300,19 @@ window.SUBJECTS.push({
           <li>Podczas akcji antyterrorystycznej: <b>połóż się</b>, trzymaj <b>ręce na widoku</b> z otwartymi dłońmi, nie wykonuj gwałtownych ruchów, słuchaj poleceń.</li>
         </ul>
         <div class="tip">💡 We wszystkich zagrożeniach powtarza się ten sam schemat: <b>spokój → twoje bezpieczeństwo → alarm (112) → słuchaj służb</b>.</div>`,
+      infographicNote: 'U góry schemat wspólny dla wszystkich zagrożeń, niżej – najważniejsza zasada dla każdego z nich.',
+      infographic: {
+        type: 'karty', kolumny: 2,
+        top: { title: 'Zawsze ten sam schemat', text: 'spokój → twoje bezpieczeństwo → alarm (112) → słuchaj służb', kolor: 5 },
+        items: [
+          { icon: '🔥', title: 'Pożar', text: '112 lub 998; oleju nie gaś wodą', kolor: 2 },
+          { icon: '🌊', title: 'Powódź', text: 'wyższe piętro, słuchaj komunikatów', kolor: 1 },
+          { icon: '❄️', title: 'Śnieżyca', text: 'nie musisz – nie wychodź', kolor: 1 },
+          { icon: '☣️', title: 'Chemikalia', text: 'uciekaj prostopadle do kierunku wiatru', kolor: 4 },
+          { icon: '🚗', title: 'Wypadek', text: 'kamizelka odblaskowa, 112', kolor: 4 },
+          { icon: '🏃', title: 'Zamach', text: 'uciekaj, schowaj się, walcz (ostateczność)', kolor: 2 },
+        ],
+      },
       flashcards: [
         ['Trójkąt spalania', 'Materiał palny + powietrze (tlen) + źródło ciepła'],
         ['Numery do wezwania straży pożarnej', '112 lub 998'],
@@ -364,6 +413,18 @@ window.SUBJECTS.push({
           <li><b>Alarm112</b> (MSWiA) – zgłoszenie na numer alarmowy bez rozmowy: wybierasz piktogramy, potem piszesz SMS-y z operatorem. Przydaje się osobom głuchym i z zaburzeniami mowy (trzeba się wcześniej zarejestrować).</li>
           <li>Aplikacje z <b>mapą defibrylatorów AED</b>, np. <b>Staying Alive</b> – pokazują najbliższe AED.</li>
         </ul>`,
+      infographicNote: 'Czytaj od góry: najpierw bezpieczeństwo w tej kolejności, potem wezwanie pomocy.',
+      infographic: {
+        type: 'kroki',
+        top: { title: '⏱️ Liczą się minuty', text: 'mózg bez tlenu uszkadza się nieodwracalnie po 3–5 minutach', kolor: 2 },
+        items: [
+          { icon: '🦺', title: '1. Twoje bezpieczeństwo', text: 'ruch uliczny, ogień, dym, prąd, gaz, woda – nie narażaj się' },
+          { icon: '🚧', title: '2. Bezpieczeństwo otoczenia', text: 'ostrzeż innych, żeby nie przybyło ofiar' },
+          { icon: '🧑', title: '3. Bezpieczeństwo poszkodowanego' },
+          { icon: '📞', title: 'Wezwij pomoc', text: 'kim jesteś, co się stało, gdzie, ilu poszkodowanych; nie rozłączaj się', kolor: 3 },
+        ],
+        bottom: { title: '☎️ Numery', text: '112 – alarmowy · 999 – pogotowie\n998 – straż pożarna · 997 – policja', kolor: 1 },
+      },
       flashcards: [
         ['Kolejność bezpieczeństwa na miejscu zdarzenia', '1. ratownik (ty), 2. otoczenie, 3. poszkodowany'],
         ['Pierwsza pomoc (definicja z ustawy)', 'Czynności ratujące osobę w stanie nagłego zagrożenia zdrowotnego, wykonywane przez osobę na miejscu zdarzenia'],
@@ -432,6 +493,18 @@ window.SUBJECTS.push({
           <li>Nie zostawiaj poszkodowanego samego.</li>
         </ul>
         <div class="tip">💡 Schemat: <b>Bezpiecznie? → Reaguje? → 112 → Drogi oddechowe → Oddech 10 s</b>. Oddycha – na bok. Nie oddycha – uciskaj.</div>`,
+      infographicNote: 'Czytaj od góry: kolejne kroki oceny, a na dole – co robisz po ocenie oddechu.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '⚠️', title: 'Bezpiecznie?' },
+          { icon: '👋', title: 'Reaguje?', text: 'potrząśnij za ramiona, zapytaj głośno: „Czy mnie słyszysz?”' },
+          { icon: '📞', title: 'Nie reaguje → 112', text: 'zawołaj pomoc, włącz głośnik' },
+          { icon: '🙆', title: 'Drogi oddechowe', text: 'czoło–żuchwa: odegnij głowę do tyłu, unieś żuchwę' },
+          { icon: '👀', title: 'Oddech – do 10 s', text: 'widzę, słyszę, czuję' },
+        ],
+        bottom: { title: 'Wynik oceny oddechu', kolor: 4, items: ['oddycha prawidłowo → pozycja boczna bezpieczna, okrycie, kontrola oddechu', 'nie oddycha lub nieprawidłowo → RKO'] },
+      },
       flashcards: [
         ['Objawy utraty przytomności', 'Brak reakcji na głos i dotyk, oczy zamknięte, brak kontaktu, wiotkość'],
         ['Omdlenie', 'Krótkotrwała utrata przytomności (kilka–kilkadziesiąt sekund)'],
@@ -509,6 +582,19 @@ window.SUBJECTS.push({
           <li>AED znajdziesz m.in. na dworcach, lotniskach, w galeriach handlowych, urzędach i szkołach. Im szybciej użyty, tym większa szansa na przeżycie.</li>
         </ul>
         <div class="tip">💡 100–120 na minutę to prawie <b>2 uciśnięcia na sekundę</b> – licz na głos. <b>30 : 2, 5–6 cm, 100–120</b> – trzy liczby, które ratują życie.</div>`,
+      infographicNote: 'Czytaj od góry: uniwersalny algorytm u dorosłego, na dole – jak uciskać.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '⚠️', title: 'Bezpiecznie?' },
+          { icon: '👋', title: 'Reaguje?', text: 'nie reaguje → dzwoń 112 (głośnik!), poproś o przyniesienie AED' },
+          { icon: '👀', title: 'Drogi oddechowe i oddech', text: 'udrożnij, oceń oddech – do 10 s' },
+          { title: '30 uciśnięć', text: 'brak prawidłowego oddechu → uciskaj klatkę piersiową', kolor: 2 },
+          { title: '2 oddechy ratownicze', kolor: 2 },
+          { title: 'Kontynuuj 30 : 2', text: 'gdy przyniosą AED – włącz go i wykonuj polecenia', kolor: 3 },
+        ],
+        bottom: { title: '💡 Resuscytacja wysokiej jakości', kolor: 4, items: ['środek klatki piersiowej (dolna połowa mostka)', 'głębokość 5–6 cm', 'tempo 100–120 uciśnięć na minutę', 'po każdym uciśnięciu klatka w pełni wraca', 'bez oddechów? Same uciśnięcia, bez przerw'] },
+      },
       flashcards: [
         ['Nagłe zatrzymanie krążenia (NZK)', 'Serce przestaje skutecznie pompować krew – brak dopływu tlenu do mózgu'],
         ['Oznaki NZK', 'Nie reaguje i nie oddycha lub oddycha nieprawidłowo'],
@@ -592,6 +678,19 @@ window.SUBJECTS.push({
           <li>Dziecko je <b>na siedząco i pod opieką dorosłego</b> – nie w biegu, nie przy zabawie.</li>
         </ul>
         <div class="tip">💡 Kaszle – <b>nie przeszkadzaj</b>. Nie kaszle – <b>5 w plecy, 5 w brzuch</b>. Traci przytomność – <b>112 i RKO</b>.</div>`,
+      infographicNote: 'Czytaj od góry: najpierw oceń kaszel, potem kolejne rękoczyny przy ciężkiej niedrożności.',
+      infographic: {
+        type: 'kroki',
+        top: { title: '😮‍💨 Mówi i kaszle?', text: 'łagodna niedrożność: zachęcaj do kaszlu, obserwuj – nie uderzaj!', kolor: 3 },
+        items: [
+          { title: 'Nie mówi, nie oddycha', text: 'ciężka niedrożność – kaszel słaby lub żaden', kolor: 2 },
+          { title: '5 uderzeń w plecy', text: 'pochyl do przodu; nasadą dłoni między łopatki, do 5 razy' },
+          { title: '5 uciśnięć nadbrzusza', text: 'rękoczyn Heimlicha: pięść między pępkiem a mostkiem, do siebie i ku górze' },
+          { title: 'Na zmianę 5 + 5', text: 'uderzenia w plecy i uciśnięcia nadbrzusza' },
+          { title: 'Traci przytomność', text: 'połóż na ziemi, dzwoń 112, rozpocznij RKO', kolor: 2 },
+        ],
+        bottom: { title: '⚠️ Pamiętaj', kolor: 4, items: ['po uciśnięciach nadbrzusza – do lekarza', 'nie uciskaj nadbrzusza u kobiet w ciąży i niemowląt'] },
+      },
       flashcards: [
         ['Zadławienie', 'Zablokowanie dróg oddechowych przez ciało obce (np. kawałek jedzenia)'],
         ['Objawy łagodnej niedrożności', 'Poszkodowany mówi, skutecznie kaszle, oddycha'],
@@ -667,6 +766,19 @@ window.SUBJECTS.push({
         </table>
         <p><b>Nie</b> wkładamy do apteczki <b>waty ani ligniny</b> (zostawiają strzępki w ranie) ani ostrych przedmiotów, np. agrafek.</p>
         <div class="tip">💡 Krwotok: <b>ręka – gaza – wałek – bandaż</b>. Przesiąka? <b>Dokładaj, nie zdejmuj.</b></div>`,
+      infographicNote: 'Czytaj od góry: tak po kolei tamujesz krwotok.',
+      infographic: {
+        type: 'kroki',
+        top: { title: '🩸 Krwotok – działaj natychmiast', text: 'utrata ok. 1/3 krwi zagraża życiu', kolor: 2 },
+        items: [
+          { icon: '🧤', title: 'Rękawiczki', text: 'poszkodowany siada lub kładzie się' },
+          { icon: '✋', title: 'Uciśnij ranę dłonią', text: 'natychmiast, przez gazę; krwotoku nie przemywasz' },
+          { icon: '🩹', title: 'Opatrunek uciskowy', text: 'gaza, dokładnie nad raną wałek, mocno zabandażuj' },
+          { icon: '🔁', title: 'Przesiąka?', text: 'nie zdejmuj – dołóż warstwę, uciśnij mocniej' },
+          { icon: '📞', title: 'Dzwoń 112', text: 'okryj poszkodowanego, obserwuj go' },
+        ],
+        bottom: { title: '⚠️ Rana głowy', text: 'tylko opatrunek osłaniający, bez silnego ucisku', kolor: 4 },
+      },
       flashcards: [
         ['Rana', 'Przerwanie ciągłości skóry, czasem także głębszych tkanek'],
         ['Krwotok', 'Szybki, obfity wypływ krwi z uszkodzonej tętnicy lub dużej żyły'],
@@ -765,6 +877,17 @@ window.SUBJECTS.push({
           <li>Latem – krem z filtrem UV i nakrycie głowy.</li>
         </ul>
         <div class="tip">💡 Złamanie: „<b>nie ruszaj, unieruchom, wezwij</b>”. Oparzenie: „<b>woda – 20 minut</b>”, nigdy lód ani masło.</div>`,
+      infographicNote: 'Dwie gałęzie: urazy kości i stawów oraz oparzenie – w każdej czynności od góry po kolei.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        top: { title: 'Złamanie, zwichnięcie, skręcenie?', text: 'bez RTG nie odróżnisz – każdy uraz traktuj jak złamanie', kolor: 5 },
+        root: { title: 'Pierwsza pomoc przy urazach' },
+        branches: [
+          { title: '🦴 Kości i stawy', kolor: 1, items: ['nie prostuj, nie nastawiaj', 'unieruchom w zastanej pozycji', 'kość + 2 sąsiednie stawy', 'staw + 2 sąsiednie kości', 'złamanie otwarte: najpierw jałowy opatrunek', 'okryj, wezwij pomoc lub zawieź do lekarza'] },
+          { title: '🔥 Oparzenie termiczne', kolor: 2, items: ['przerwij działanie czynnika', 'chłodź bieżącą wodą ok. 20 minut', 'w trakcie chłodzenia zdejmij pierścionki, zegarek', 'przykryj luźno jałowym opatrunkiem', 'II i III stopień, chemiczne, elektryczne, rozległe – lekarz / 112'] },
+        ],
+        bottom: { title: '🚫 Przy oparzeniu nie wolno', text: 'lód, masło, olej, maści, spirytus, przekłuwanie pęcherzy', kolor: 2 },
+      },
       flashcards: [
         ['Złamanie', 'Przerwanie ciągłości kości; zamknięte lub otwarte'],
         ['Zwichnięcie', 'Przemieszczenie powierzchni stawowych kości z uszkodzeniem torebki i więzadeł'],
@@ -833,6 +956,17 @@ window.SUBJECTS.push({
         <p><b>Postawy strzeleckie</b>: <b>stojąca</b>, <b>klęcząca</b> (niska lub wysoka), <b>leżąca</b> (najbardziej obniża sylwetkę).</p>
         <p><b>Celny strzał</b>: zgraj przyrządy – <b>muszka pośrodku wycięcia szczerbinki</b>; uspokój oddech; ściągaj spust <b>płynnie</b>, jednym ruchem, środkiem opuszki palca – strzał nie powinien cię zaskoczyć.</p>
         <div class="tip">💡 Trzy żelazne zasady: <b>„zawsze załadowana – lufa w bezpieczną stronę – palec poza spustem”</b>.</div>`,
+      infographicNote: 'Trzy gałęzie to trzy części działu – w każdej najważniejsze zasady.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: 'Postawy obronne' },
+        branches: [
+          { title: '🧭 Orientacja w terenie', kolor: 1, items: ['azymut – kąt od północy do kierunku marszu, zgodnie z ruchem wskazówek zegara', 'orientowanie mapy: północ na mapie zgodna z igłą kompasu', 'do orientacji najlepsza mapa topograficzna'] },
+          { title: '💻 Cyberbezpieczeństwo', kolor: 5, items: ['odporność systemów informacyjnych na naruszenia danych i usług', 'w wojsku: Wojska Obrony Cyberprzestrzeni', 'ty: silne hasła, aktualizacje, bez podejrzanych linków'] },
+          { title: '🎯 Broń – trzy zasady', kolor: 2, items: ['traktuj każdą broń jak załadowaną', 'lufa zawsze w bezpieczną stronę', 'palec poza spustem'] },
+        ],
+        bottom: { title: '💡 Celny strzał', text: 'muszka pośrodku wycięcia szczerbinki; spust ściągaj płynnie', kolor: 3 },
+      },
       flashcards: [
         ['Kompas', 'Przyrząd z igłą magnetyczną wskazującą północ magnetyczną'],
         ['Busola', 'Kompas z podziałką kątową – służy m.in. do wyznaczania azymutu'],

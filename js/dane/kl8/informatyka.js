@@ -63,6 +63,18 @@
             <li><b>iteracja</b> (pętla) – powtarzanie kroków, dopóki spełniony jest warunek.</li>
           </ul>
           <div class="tip">💡 Testuj nie tylko „zwykłe” dane, ale też przypadki na granicy: równe liczby, zero, liczby ujemne. Tam najczęściej chowają się błędy.</div>`,
+        infographicNote: 'Czytaj od góry: tak problem zamienia się w sprawdzony program; na dole – bloki schematu blokowego.',
+        infographic: {
+          type: 'kroki',
+          items: [
+            { icon: '🧩', title: 'Problem', text: 'co trzeba rozwiązać', kolor: 2 },
+            { icon: '📋', title: 'Specyfikacja', text: 'dane (co wiemy na początku) i wynik (co ma powstać)', kolor: 4 },
+            { icon: '🪜', title: 'Algorytm', text: 'skończony ciąg jednoznacznych kroków od danych do wyniku', items: ['zapis: język naturalny, lista kroków, schemat blokowy'], kolor: 1 },
+            { icon: '💻', title: 'Program', text: 'algorytm zapisany w języku programowania, np. w Pythonie', kolor: 1 },
+            { icon: '🧪', title: 'Testowanie', text: 'różne dane, wynik porównany ze specyfikacją, poprawianie błędów', kolor: 3 },
+          ],
+          bottom: { title: '🔷 Bloki schematu blokowego', items: ['owal – start albo stop', 'równoległobok – wczytanie albo wypisanie', 'prostokąt – operacja, np. s = s + k', 'romb – warunek: TAK i NIE'], kolor: 5 },
+        },
         flashcards: [
           ['Specyfikacja problemu', 'Opis danych (co mamy) i wyniku (co ma powstać)'],
           ['Algorytm', 'Skończony ciąg jednoznacznych kroków prowadzący od danych do wyniku'],
@@ -143,6 +155,19 @@
         b = r
     return a</code></pre>
           <div class="tip">💡 Obie wersje algorytmu Euklidesa dają ten sam wynik. Wersja z resztą zastępuje wiele odejmowań jednym dzieleniem.</div>`,
+        infographicNote: 'Na górze – dwa działania, na których wszystko się opiera; potem porównaj dwie wersje algorytmu Euklidesa w poziomie.',
+        infographic: {
+          type: 'porownanie',
+          top: { title: 'Dzielenie z resztą: 17 = 5 · 3 + 2', items: ['17 // 5 → 3 – iloraz całkowity', '17 % 5 → 2 – reszta z dzielenia'], kolor: 4 },
+          kolumny: [{ title: 'Euklides z odejmowaniem', kolor: 1 }, { title: 'Euklides z resztą', kolor: 5 }],
+          wiersze: [
+            { label: 'dopóki…', cells: ['a ≠ b', 'b ≠ 0'], bold: true },
+            { label: 'krok', cells: ['od większej liczby odejmij mniejszą', 'r = a % b, a = b, b = r'] },
+            { label: 'wynik', cells: ['wspólna wartość', 'a'], bold: true },
+            { label: 'NWD(84, 36)', cells: ['(84, 36) → (48, 36) → (12, 36) → (12, 24) → (12, 12)', '(84, 36) → (36, 12) → (12, 0)\nNWD = 12'] },
+          ],
+          bottom: { title: '💡 Reszta w praktyce', items: ['a % d == 0 – a dzieli się przez d', 'n % 10 – ostatnia cyfra, n // 10 – liczba bez niej', 'czy n jest pierwsza? sprawdzaj d, dopóki d · d ≤ n'], kolor: 3 },
+        },
         flashcards: [
           ['17 // 5 w Pythonie', '3 – iloraz całkowity'],
           ['17 % 5 w Pythonie', '2 – reszta z dzielenia'],
@@ -248,6 +273,19 @@
         t[i], t[m] = t[m], t[i]</code></pre>
           <p><code>m</code> to indeks najmniejszego elementu w części od <code>i</code> do końca. Zapis <code>t[i], t[m] = t[m], t[i]</code> zamienia dwa elementy miejscami.</p>
           <div class="tip">💡 Po k przejściach sortowania przez wybieranie pierwsze k elementów stoi już na swoich ostatecznych miejscach.</div>`,
+        infographicNote: 'Czytaj od góry: sortowanie przez wybieranie przejście po przejściu; na dole – ile porównań i przejść.',
+        infographic: {
+          type: 'kroki',
+          top: { title: '🔁 Jedno przejście', text: 'w nieposortowanej części znajdź najmniejszy element i zamień go z jej pierwszym elementem', kolor: 4 },
+          items: [
+            { title: 'Start', text: '5, 2, 8, 1, 4', kolor: 1 },
+            { title: 'Przejście 1.', text: '1, 2, 8, 5, 4\nnajmniejsze 1 zamienione z 5', kolor: 1 },
+            { title: 'Przejście 2.', text: '1, 2, 8, 5, 4\n2 już stoi na miejscu', kolor: 1 },
+            { title: 'Przejście 3.', text: '1, 2, 4, 5, 8\n4 zamienione z 8', kolor: 1 },
+            { title: 'Przejście 4. – gotowe', text: '1, 2, 4, 5, 8\nn − 1 = 4 przejścia dla 5 elementów', kolor: 3 },
+          ],
+          bottom: { title: '💡 Ile porównań dla n elementów?', items: ['szukanie w zbiorze nieuporządkowanym – w najgorszym razie n', 'największy element (metoda kandydata) – n − 1', 'po k przejściach sortowania pierwsze k elementów stoi na miejscach'], kolor: 5 },
+        },
         flashcards: [
           ['Wyszukiwanie w zbiorze nieuporządkowanym', 'Przeglądasz elementy po kolei, aż znajdziesz szukany albo skończą się elementy'],
           ['Ile porównań w najgorszym razie przy szukaniu wśród n nieuporządkowanych elementów?', 'n'],
@@ -339,6 +377,18 @@
           <h3>Tekst</h3>
           <p>Tekst to ciąg kodów znaków: „Ala” → 65, 108, 97. W Pythonie <code>ord("A")</code> → 65, a <code>chr(66)</code> → "B".</p>
           <div class="tip">💡 Znak „7” w tekście to nie liczba 7 – ma kod 55 (48 + 7). Dlatego tekst wczytany z klawiatury trzeba zamienić na liczbę, zanim zaczniesz liczyć.</div>`,
+        infographicNote: 'Na górze – bit, bajt i wagi pozycji; porównaj w poziomie zamianę w obie strony, na dole – kody znaków.',
+        infographic: {
+          type: 'porownanie',
+          top: { title: 'Bit i bajt', text: 'bit: 0 albo 1, bajt = 8 bitów\nna 8 bitach: 256 wartości (od 0 do 255)\nwagi od prawej: 1, 2, 4, 8, 16, 32, 64, 128…', kolor: 4 },
+          kolumny: [{ title: 'Dwójkowy → dziesiętny', kolor: 1 }, { title: 'Dziesiętny → dwójkowy', kolor: 5 }],
+          wiersze: [
+            { label: 'jak?', cells: ['dodaj wagi pozycji, na których stoi 1', 'dziel przez 2, zapisuj reszty, czytaj je od dołu'] },
+            { label: 'przykład', cells: ['1011₂ = 11', '13 = 1101₂'], bold: true },
+            { label: 'rachunek', cells: ['8 + 2 + 1 = 11', 'reszty: 1, 0, 1, 1\nod dołu: 1101₂\nsprawdzenie: 8 + 4 + 1 = 13'] },
+          ],
+          bottom: { title: '🔤 Znaki – kod ASCII', items: ['128 znaków (kody 0–127, 7 bitów)', 'A = 65, a = 97 (o 32 więcej)', 'bez polskich liter – dziś najczęściej Unicode'], kolor: 3 },
+        },
         flashcards: [
           ['Bit', 'Najmniejsza porcja informacji: 0 albo 1'],
           ['Bajt', '8 bitów'],
@@ -464,6 +514,18 @@ else:
           <h3>Testowanie</h3>
           <p><b>Błąd składniowy</b> (np. brak dwukropka) – programu nie da się uruchomić. <b>Błąd logiczny</b> – program działa, ale daje zły wynik; wykryjesz go testami na różnych danych.</p>
           <div class="tip">💡 <code>=</code> nadaje wartość, <code>==</code> porównuje. <code>if x = 5:</code> to błąd – poprawnie <code>if x == 5:</code>.</div>`,
+        infographicNote: 'Czytaj od góry: z tych części składa się prosty program; na dole – najczęstsze pułapki.',
+        infographic: {
+          type: 'kroki',
+          items: [
+            { icon: '⌨️', title: 'Wejście', text: 'int(input()) – wczytuje liczbę całkowitą; samo input() daje tekst', kolor: 1 },
+            { icon: '🧮', title: 'Zmienne i działania', text: 'wiek = wiek + 1 – najpierw prawa strona', items: ['7 / 2 → 3.5, 7 // 2 → 3, 7 % 2 → 1'], kolor: 1 },
+            { icon: '🔀', title: 'Warunek', text: 'if … elif … else – wykonuje się blok pierwszego prawdziwego warunku', kolor: 5 },
+            { icon: '🖨️', title: 'Wyjście', text: 'print("Suma:", a + b) – wypisuje na ekran', kolor: 1 },
+            { icon: '🧪', title: 'Testowanie', text: 'błąd składniowy – programu nie uruchomisz; błąd logiczny – zły wynik', kolor: 3 },
+          ],
+          bottom: { title: '⚠️ Pułapki', items: ['= przypisuje, == porównuje', 'bez int „dodawanie” 4 i 4 daje 44', 'po if, elif, else – dwukropek i wcięcie (4 spacje)'], kolor: 2 },
+        },
         flashcards: [
           ['Zmienna', 'Nazwane miejsce w pamięci na wartość, np. wiek = 14'],
           ['x = x + 1', 'Zwiększ x o 1 (nowa wartość = stara + 1)'],
@@ -561,6 +623,19 @@ print(n)          # 32</code></pre>
 print(kw(3) + kw(4))   # 9 + 16 = 25</code></pre>
           <p>Funkcjami możesz zapisać algorytmy z działów o liczbach i o wyszukiwaniu: <code>nwd(a, b)</code>, <code>pierwsza(n)</code>, <code>szukaj(t, x)</code>.</p>
           <div class="tip">💡 Przewidując wynik programu, bądź „ludzkim komputerem”: tabelka zmiennych, wiersz po wierszu. Najczęstsze pułapki: <code>range</code> nie obejmuje górnej granicy, a indeksy zaczynają się od 0.</div>`,
+        infographicNote: 'Na górze – co daje range; porównaj pętle for i while w poziomie, na dole – tablice i funkcje.',
+        infographic: {
+          type: 'porownanie',
+          top: { title: 'range – wartości i', items: ['range(5) → 0, 1, 2, 3, 4', 'range(1, 6) → 1, 2, 3, 4, 5 (bez 6!)', 'range(0, 10, 2) → 0, 2, 4, 6, 8'], kolor: 4 },
+          kolumny: [{ title: 'for', kolor: 1 }, { title: 'while', kolor: 5 }],
+          wiersze: [
+            { label: 'powtarza blok…', cells: ['dla kolejnych wartości zmiennej sterującej', 'dopóki warunek jest prawdziwy'] },
+            { label: 'przykład', cells: ['s = 0\nfor i in range(1, 5):\ns = s + i', 'n = 1\nwhile n < 20:\nn = n * 2'] },
+            { label: 'wynik', cells: ['s = 10', 'n = 32'], bold: true },
+            { label: 'pułapka', cells: ['range nie obejmuje górnej granicy', 'warunek nigdy nie staje się fałszywy – pętla nieskończona'] },
+          ],
+          bottom: { title: '📦 Tablice i funkcje', items: ['t[0] – pierwszy element (indeksy od 0)', 'len(t) – liczba elementów', 'return kończy funkcję i oddaje wynik'], kolor: 3 },
+        },
         flashcards: [
           ['range(5)', '0, 1, 2, 3, 4'],
           ['range(1, 6)', '1, 2, 3, 4, 5 (bez 6)'],
@@ -650,6 +725,19 @@ print(kw(3) + kw(4))   # 9 + 16 = 25</code></pre>
             <li><b>Filtrowanie</b> – pokazuje tylko wiersze spełniające warunek. Pozostałe są <b>ukryte</b>, a nie usunięte – po wyłączeniu filtra wracają.</li>
           </ul>
           <div class="tip">💡 Znak $ to „kłódka”: stoi przed tym, czego nie wolno zmienić przy kopiowaniu – przed literą kolumny, przed numerem wiersza albo przed oboma.</div>`,
+        infographicNote: 'Każdy wiersz to jeden rodzaj adresu: po lewej zapis, po prawej – co się dzieje przy kopiowaniu formuły.',
+        infographic: {
+          type: 'porownanie',
+          top: { title: 'Formuła zaczyna się od =', text: 'np. =B2*C2, =SUMA(B2:B6) – po zmianie danych wynik przeliczy się sam', kolor: 4 },
+          kolumny: [{ title: 'Zapis', kolor: 1 }, { title: 'Przy kopiowaniu', kolor: 5 }],
+          wiersze: [
+            { label: 'względny', cells: ['A1', 'zmienia się kolumna i wiersz'] },
+            { label: 'bezwzględny', cells: ['$A$1', 'nic się nie zmienia'] },
+            { label: 'mieszany', cells: ['$A1', 'kolumna zablokowana, wiersz się zmienia'] },
+            { label: 'mieszany', cells: ['A$1', 'wiersz zablokowany, kolumna się zmienia'] },
+          ],
+          bottom: { title: '🔒 $ to „kłódka” – przykłady', items: ['D2: =B2*C2 → D3: =B3*C3', 'C2: =A2*$F$1 → C7: =A7*$F$1'], kolor: 3 },
+        },
         flashcards: [
           ['Adres komórki', 'Litera kolumny i numer wiersza, np. B3'],
           ['Zakres A1:A10', 'Komórki od A1 do A10'],
@@ -765,6 +853,19 @@ print(kw(3) + kw(4))   # 9 + 16 = 25</code></pre>
             <tr><td><code>&lt;a href="…"&gt;</code></td><td>odnośnik (link); <b>href</b> – adres</td></tr>
           </table>
           <div class="tip">💡 Opis <b>alt</b> czyta np. program dla osób niewidomych, a przeglądarka pokazuje go, gdy obrazek się nie wczyta. Pisz w nim, co jest na obrazku.</div>`,
+        infographicNote: 'Od góry: rodzaje plików i ich formaty; na dole – czym różnią się dwie kompresje.',
+        infographic: {
+          type: 'drzewo',
+          kolumny: 2,
+          root: { title: '📁 Formaty plików', kolor: 4 },
+          branches: [
+            { title: '📄 Dokumenty', items: ['TXT – sam tekst', 'DOCX, ODT – edytory tekstu', 'PDF – zachowuje wygląd'], kolor: 1 },
+            { title: '🖼️ Grafika', items: ['JPG – zdjęcia, stratna', 'PNG – bezstratna, przezroczyste tło', 'GIF – bezstratna, najwyżej 256 kolorów'], kolor: 5 },
+            { title: '🎵 Dźwięk i film', items: ['MP3 – dźwięk, stratna', 'MP4 – film'], kolor: 3 },
+            { title: '🌐 Strona WWW', items: ['HTML – język znaczników', '<p> – akapit', '<img src="…" alt="…"> – obrazek'], kolor: 3 },
+          ],
+          bottom: { title: '🗜️ Kompresja zmniejsza plik', items: ['bezstratna – dane odtworzysz bez żadnej zmiany', 'stratna – część informacji usunięta bezpowrotnie', 'tekstów i programów nie kompresuje się stratnie'], kolor: 2 },
+        },
         flashcards: [
           ['Formatowanie znaków', 'Krój i rozmiar czcionki, pogrubienie, kursywa, kolor'],
           ['Formatowanie akapitu', 'Wyrównanie, wcięcia, odstępy, interlinia'],
@@ -840,6 +941,19 @@ print(kw(3) + kw(4))   # 9 + 16 = 25</code></pre>
           </ul>
           <p><b>Otwarte zasoby edukacyjne</b> to materiały, które wolno legalnie wykorzystywać, zmieniać i udostępniać na warunkach ich licencji (np. podając autora).</p>
           <div class="tip">💡 DNS to „książka adresowa” internetu: znasz nazwę, a DNS podaje numer – adres IP.</div>`,
+        infographicNote: 'Od góry: internet łączy sieci; każda gałąź to jedna część działu, na dole – jak ocenić znalezioną informację.',
+        infographic: {
+          type: 'drzewo',
+          kolumny: 2,
+          root: { title: '🌐 Internet', text: 'ogólnoświatowy zbiór połączonych sieci', kolor: 4 },
+          branches: [
+            { title: 'Rodzaje sieci', items: ['LAN – lokalna', 'WLAN – Wi-Fi', 'MAN – miejska', 'WAN – rozległa'], kolor: 1 },
+            { title: 'Urządzenia', items: ['przełącznik – łączy urządzenia w LAN', 'ruter – między sieciami'], kolor: 5 },
+            { title: 'Adresy', items: ['IPv4: 4 liczby 0–255 (32 bity)', 'DNS: nazwa domeny → adres IP', 'https – połączenie szyfrowane'], kolor: 1 },
+            { title: 'Klient i serwer', items: ['serwer udostępnia usługi', 'klient korzysta, np. przeglądarka'], kolor: 5 },
+          ],
+          bottom: { title: '🔎 Oceń informację', text: 'autor, data, źródła, porównanie z innymi źródłami, cel strony', kolor: 2 },
+        },
         flashcards: [
           ['Sieć komputerowa', 'Połączone urządzenia, które wymieniają dane i współdzielą zasoby'],
           ['LAN', 'Sieć lokalna – dom, szkoła, biuro, budynek'],
@@ -919,6 +1033,18 @@ print(kw(3) + kw(4))   # 9 + 16 = 25</code></pre>
           </table>
           <p>Np. CC BY-SA: wolno kopiować i przerabiać, podając autora, a przeróbkę trzeba udostępnić na licencji CC BY-SA.</p>
           <div class="tip">💡 „Za darmo” nie znaczy „wolno wszystko”. Darmowy program (freeware) to nie to samo co program o otwartym kodzie. Zawsze sprawdź licencję.</div>`,
+        infographicNote: 'Na górze – kiedy powstaje ochrona; porównaj prawa osobiste i majątkowe w poziomie, na dole – licencje.',
+        infographic: {
+          type: 'porownanie',
+          top: { title: '© Utwór chroniony od chwili ustalenia', text: 'bez rejestracji i bez znaczka ©; chroniony sposób wyrażenia, nie pomysł', kolor: 4 },
+          kolumny: [{ title: 'Prawa osobiste', kolor: 1 }, { title: 'Prawa majątkowe', kolor: 5 }],
+          wiersze: [
+            { label: 'co dają?', cells: ['więź twórcy z utworem, np. prawo do autorstwa', 'korzystanie z utworu i wynagrodzenie'] },
+            { label: 'jak długo?', cells: ['bez ograniczenia w czasie', 'zasadniczo 70 lat po śmierci twórcy'], bold: true },
+            { label: 'potem', cells: ['zostają, np. prawo do autorstwa', 'wygasają – utwór trafia do domeny publicznej'] },
+          ],
+          bottom: { title: '📜 Licencja – warunki korzystania', items: ['freeware – bezpłatnie, bez zmian kodu', 'shareware – na próbę, potem płacisz', 'open source (GNU GPL) – wolno zmieniać kod', 'CC BY – podaj autora'], kolor: 3 },
+        },
         flashcards: [
           ['Utwór', 'Przejaw działalności twórczej o indywidualnym charakterze, ustalony w jakiejkolwiek postaci'],
           ['Od kiedy utwór jest chroniony?', 'Od chwili ustalenia – bez rejestracji i bez znaczka ©'],
@@ -982,6 +1108,19 @@ print(kw(3) + kw(4))   # 9 + 16 = 25</code></pre>
             <li>dziel się wiedzą legalnie – np. przez otwarte zasoby; pamiętaj, że nie każdy ma równy dostęp do sprzętu i internetu.</li>
           </ul>
           <div class="tip">💡 Zanim coś opublikujesz, zapytaj siebie: czy chcę, żeby zobaczył to każdy – także za kilka lat?</div>`,
+        infographicNote: 'Każdy wiersz to jedno zagrożenie: po lewej – na czym polega, po prawej – jak się chronić.',
+        infographic: {
+          type: 'porownanie',
+          top: { title: '🪪 Dane osobowe', text: 'pozwalają ustalić, kim jesteś: imię i nazwisko, adres, PESEL, telefon, e-mail, wizerunek', kolor: 4 },
+          kolumny: [{ title: 'Zagrożenie', kolor: 2 }, { title: 'Ochrona', kolor: 3 }],
+          wiersze: [
+            { label: 'phishing', cells: ['podszywanie się pod bank, kuriera, znajomego – by wyłudzić dane', 'nie klikaj linków z nieoczekiwanych wiadomości'] },
+            { label: 'ransomware', cells: ['szyfruje pliki i żąda okupu', 'aktualizacje (łatają luki), antywirus'] },
+            { label: 'hasło', cells: ['wyciek hasła z jednego serwisu', 'jedno hasło = jedna usługa; 2FA – samo hasło nie wystarczy'] },
+            { label: 'cyfrowy ślad', cells: ['usunięty post mógł zostać skopiowany', 'prywatność profilu; pomyśl, zanim opublikujesz'] },
+          ],
+          bottom: { title: '🔑 Silne hasło', text: 'co najmniej 12 znaków, np. zdanie z co najmniej pięciu wyrazów', kolor: 1 },
+        },
         flashcards: [
           ['Dane osobowe', 'Informacje, które pozwalają bezpośrednio lub pośrednio ustalić, kim jest dana osoba'],
           ['Przykłady danych osobowych', 'Imię i nazwisko, adres, PESEL, numer telefonu, e-mail, wizerunek'],

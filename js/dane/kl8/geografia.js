@@ -41,6 +41,18 @@ window.SUBJECTS.push({
           <li>falochrony i mury przeciw tsunami, niebudowanie domów tuż przy brzegu.</li>
         </ul>
         <div class="tip">💡 Pierścień Ognia = granica płyty pacyficznej. Gdzie płyty się zderzają – tam trzęsie się ziemia i wybuchają wulkany.</div>`,
+      infographicNote: 'Czytaj od góry: od ruchu płyt do tsunami i ochrony przed nim. Na dole – kontrasty Azji.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '🧩', title: 'Płyty litosfery', text: 'skorupa ziemska podzielona na płyty, które powoli się przesuwają', kolor: 1 },
+          { icon: '⤵️', title: 'Subdukcja', text: 'płyta pacyficzna wsuwa się pod sąsiednie płyty', kolor: 1 },
+          { icon: '🌋', title: 'Pacyficzny Pierścień Ognia', text: 'większość trzęsień ziemi i wulkanów na Ziemi, np. Japonia', kolor: 2 },
+          { icon: '🌊', title: 'Tsunami', text: 'ogromne fale po trzęsieniu ziemi lub wybuchu wulkanu pod dnem morza', kolor: 2 },
+          { icon: '🛡️', title: 'Jak ograniczać skutki', items: ['budynki odporne na wstrząsy', 'systemy ostrzegania', 'ćwiczenia ewakuacyjne', 'falochrony, domy z dala od brzegu'], kolor: 3 },
+        ],
+        bottom: { title: '🏔️ Azja – kontynent kontrastów', items: ['Mount Everest (ok. 8850 m n.p.m.) – brzeg Morza Martwego (ponad 400 m p.p.m.)', 'wszystkie strefy klimatyczne', 'gęsto: Azja Wschodnia i Południowa – prawie puste: Syberia, Tybet'], kolor: 5 },
+      },
       flashcards: [
         ['Największy kontynent', 'Azja'],
         ['Eurazja', 'Azja i Europa razem – jeden zwarty ląd'],
@@ -121,6 +133,18 @@ window.SUBJECTS.push({
         <p><b>Czynniki społeczno-kulturowe, które pomogły:</b> sumienność i dyscyplina, przywiązanie do firmy, wysokie kwalifikacje pracowników, szacunek dla wiedzy, duże nakłady na naukę i nowe technologie.</p>
         <p><b>Gospodarka:</b> Japonia sprowadza surowce i sprzedaje <b>wysoko przetworzone produkty</b> dobrej jakości: samochody, elektronikę, statki. Ma rozbudowaną flotę morską i porty, bo prawie cały handel idzie morzem. To jedna z największych gospodarek świata. Społeczeństwo Japonii się <b>starzeje</b>.</p>
         <div class="tip">💡 Monsun letni = z <b>morza</b> → <b>mokro</b>. Monsun zimowy = z lądu → sucho.</div>`,
+      infographicNote: 'Czytaj od góry i wróć po linii przerywanej – tak co roku zmienia się monsun. Na dole – Japonia.',
+      infographic: {
+        type: 'kroki', cykl: true, cyklLabel: 'i znowu monsun letni',
+        top: { title: '🌀 Monsun', text: 'wiatr, który dwa razy w roku zmienia kierunek – wyznacza rytm uprawy ryżu', kolor: 5 },
+        items: [
+          { icon: '🌊', title: 'Monsun letni', text: 'znad oceanu nad ląd; ciepłe, wilgotne powietrze – „tragarz deszczu”', kolor: 1 },
+          { icon: '🌧️', title: 'Pora deszczowa', text: 'obfite opady; sadzenie i wzrost ryżu na zalewanych polach', kolor: 1 },
+          { icon: '🌬️', title: 'Monsun zimowy', text: 'znad lądu nad ocean; suche, chłodniejsze powietrze – „wiatr głodowy”', kolor: 2 },
+          { icon: '☀️', title: 'Pora sucha', text: 'ryż tylko na polach sztucznie nawadnianych', kolor: 2 },
+        ],
+        bottom: { title: '🏭 Japonia – bogata mimo trudnych warunków', items: ['trudno: góry, mało nizin, trzęsienia ziemi, tajfuny, brak surowców', 'pomaga: sumienność, dyscyplina, kwalifikacje, nauka', 'efekt: import surowców → eksport samochodów, elektroniki, statków'], kolor: 3 },
+      },
       flashcards: [
         ['Monsun', 'Wiatr zmieniający kierunek dwa razy w roku'],
         ['Monsun letni', 'Wieje znad oceanu nad ląd – pora deszczowa („tragarz deszczu”)'],
@@ -181,6 +205,19 @@ window.SUBJECTS.push({
           <li><b>Kontrasty społeczne</b>: obok nowoczesnych dzielnic i bogatych firm – <b>dzielnice nędzy</b> (np. w Mumbaju), bieda i analfabetyzm na wsi.</li>
         </ul>
         <div class="tip">💡 Chiny: ludzie na <b>wschodzie</b>, bo tam niziny, woda i deszcz. Indie: nowoczesne IT obok biednych wiosek – stąd „kraj kontrastów”.</div>`,
+      infographicNote: 'Porównuj w poziomie: każdy wiersz to jedna cecha Chin i Indii.',
+      infographic: {
+        type: 'porownanie',
+        kolumny: [{ title: 'Chiny', kolor: 2 }, { title: 'Indie', kolor: 5 }],
+        wiersze: [
+          { label: 'ludność', cells: ['jedno z dwóch najludniejszych państw', 'najludniejsze państwo świata'] },
+          { label: 'gdzie najgęściej', cells: ['wschód: ok. 95% ludności, Nizina Chińska', 'Nizina Gangesu i delta tej rzeki'] },
+          { label: 'start nowej gospodarki', cells: ['reformy, specjalne strefy ekonomiczne', 'od 1991 r. przemysł i usługi'] },
+          { label: 'atuty', cells: ['ulgi, tania ziemia, tania siła robocza', 'angielski, kwalifikacje, niskie koszty pracy'] },
+          { label: 'efekt', cells: ['druga gospodarka świata, największy eksporter', 'Bengaluru (IT) obok dzielnic nędzy'] },
+        ],
+        bottom: { title: '💡 Zapamiętaj', text: 'Chiny: ludzie na wschodzie, bo tam niziny, woda i deszcz. Indie: nowoczesne IT obok biednych wiosek – kraj kontrastów.', kolor: 4 },
+      },
       flashcards: [
         ['Gdzie mieszka większość Chińczyków?', 'We wschodniej części kraju – ok. 95% ludności'],
         ['Dlaczego Chiny Zachodnie są słabo zaludnione?', 'Góry, wyżyny, pustynie, suchy lub surowy klimat'],
@@ -255,6 +292,17 @@ window.SUBJECTS.push({
           <tr><td>spory o terytorium i granice; różnice religijne i narodowe; walka o <b>ropę</b> i o <b>wodę</b>; walka o władzę</td><td>śmierć wielu ludzi, <b>uchodźcy</b>, zniszczone miasta, bieda; katastrofy ekologiczne (np. podpalone szyby naftowe w Kuwejcie)</td></tr>
         </table>
         <div class="tip">💡 Bliski Wschód w trzech słowach: <b>pustynia, ropa, religie</b> – i wszystkie trzy wiążą się z konfliktami.</div>`,
+      infographicNote: 'Trzy cechy regionu – przy każdej (⚔️) powód sporów. Na dole – konflikty i ich skutki.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { title: 'Bliski Wschód', text: 'pustynia, ropa, religie', kolor: 5 },
+        branches: [
+          { title: '🏜️ Pustynia', text: 'klimat zwrotnikowy suchy, wody jest mało', items: ['⚔️ walka o wodę'], kolor: 4 },
+          { title: '🛢️ Ropa', text: 'Zatoka Perska: ponad 1/3 światowej ropy naftowej', items: ['bogate państwa naftowe obok biednych', '⚔️ walka o ropę'], kolor: 4 },
+          { title: '📖 Religie', text: 'tu powstały judaizm, chrześcijaństwo i islam; dominuje islam', items: ['⚔️ różnice religijne i narodowe'], kolor: 4 },
+        ],
+        bottom: { title: '⚔️ Konflikty zbrojne', text: 'najdłuższy: arabsko-izraelski (od 1948 r.)', items: ['inne przyczyny: spory o terytorium, walka o władzę', 'skutki: ofiary, uchodźcy, zniszczenia, bieda, katastrofy ekologiczne'], kolor: 2 },
+      },
       flashcards: [
         ['Bliski Wschód', 'Region w Azji Południowo-Zachodniej: Półwysep Arabski, Azja Mniejsza, Iran, Irak i sąsiedzi'],
         ['Największy półwysep świata', 'Półwysep Arabski'],
@@ -318,6 +366,18 @@ window.SUBJECTS.push({
         </ul>
         <p>Bez roślin wiatr wywiewa glebę, a na dawne pastwiska wkracza pustynia. Ludzie tracą źródło utrzymania. Środowisko Sahelu trzeba użytkować ostrożnie – nie „rabować” go.</p>
         <div class="tip">💡 Równik: powietrze <b>w górę</b> → deszcz. Zwrotniki: powietrze <b>w dół</b> → susza i pustynia.</div>`,
+      infographicNote: 'U góry – skąd deszcz, a skąd susza. Niżej strefy od równika ku krańcom Afryki (tak samo na północ i na południe).',
+      infographic: {
+        type: 'kroki',
+        top: { title: '☀️ Cyrkulacja', items: ['równik: powietrze w górę → deszcze zenitalne', 'zwrotniki: powietrze w dół → susza', 'pasaty: przy ziemi od zwrotników ku równikowi'], kolor: 5 },
+        items: [
+          { title: 'Klimat równikowy wilgotny', text: 'deszcz przez cały rok → wilgotny las równikowy', kolor: 3 },
+          { title: 'Klimat podrównikowy', text: 'pora deszczowa i sucha → sawanna', kolor: 4 },
+          { title: 'Klimat zwrotnikowy suchy', text: 'prawie nie pada → półpustynie i pustynie, np. Sahara', kolor: 2 },
+          { title: 'Klimat podzwrotnikowy śródziemnomorski', text: 'na krańcach → makia: twardolistne, zimozielone zarośla', kolor: 1 },
+        ],
+        bottom: { title: '🐐 Sahel i pustynnienie', text: 'pas na południe od Sahary, ok. 200–500 mm opadów rocznie', items: ['przyczyny: susze, nadmierny wypas, wycinanie drzew na opał, przyrost ludności', 'skutek: wiatr wywiewa glebę, pustynia wkracza na pastwiska'], kolor: 2 },
+      },
       flashcards: [
         ['Położenie Afryki', 'Symetrycznie po obu stronach równika; ok. 4/5 między zwrotnikami'],
         ['Najwyższa góra Afryki', 'Kilimandżaro (prawie 5900 m n.p.m.)'],
@@ -376,6 +436,19 @@ window.SUBJECTS.push({
           <li>Nowoczesne usługi i turystyka szybko się rozwijają. Rozwój hamują <b>brak pieniędzy na inwestycje</b> i <b>konflikty zbrojne</b>.</li>
         </ul>
         <div class="tip">💡 Głód w Afryce to nie tylko susza – zawsze sprawdź też wojnę, biedę i szybki przyrost ludności.</div>`,
+      infographicNote: 'U góry Kenia, w środku głód w Etiopii (pomarańczowe – przyczyny i skutki, zielone – rozwiązania), na dole gospodarka Afryki.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        top: { title: '🦁 Kenia – turystyka', text: 'safari na sawannach, plaże, tradycje Masajów → praca, dochody, ochrona przyrody', kolor: 3 },
+        root: { title: '🍞 Głód w Etiopii', kolor: 2 },
+        branches: [
+          { title: 'Przyczyny naturalne', items: ['susze', 'plagi owadów', 'choroby roślin'], kolor: 2 },
+          { title: 'Przyczyny zależne od ludzi', items: ['wojny', 'duży przyrost naturalny', 'słabe rolnictwo, bieda'], kolor: 2 },
+          { title: 'Skutki', items: ['choroby', 'śmiertelność dzieci', 'migracje'], kolor: 2 },
+          { title: 'Rozwiązania', items: ['nowoczesne rolnictwo i nawadnianie', 'szkoły i służba zdrowia', 'koniec wojen'], kolor: 3 },
+        ],
+        bottom: { title: '🏭 Gospodarka Afryki', items: ['tradycyjnie: rolnictwo żarowo-odłogowe', 'plantacje i surowce – na eksport', 'hamulce: brak pieniędzy na inwestycje, konflikty zbrojne'], kolor: 1 },
+      },
       flashcards: [
         ['Położenie Kenii', 'Wschodnia Afryka, po obu stronach równika, nad Oceanem Indyjskim'],
         ['Walory przyrodnicze Kenii', 'Sawanny z dzikimi zwierzętami (safari), parki narodowe, wulkany, plaże'],
@@ -435,6 +508,19 @@ window.SUBJECTS.push({
         </table>
         <p>To <b>konflikt interesów</b>: gospodarka kontra przyroda. Rozwiązaniem jest zrównoważone korzystanie z lasu i jego ochrona.</p>
         <div class="tip">💡 Ameryka to „kanapka”: góry na zachodzie, niziny w środku, starsze góry i wyżyny na wschodzie.</div>`,
+      infographicNote: 'Porównuj w poziomie: obie Ameryki mają ten sam plan – od zachodu do wschodu.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '↕️ Góry biegną południkowo', text: 'więc zimne powietrze z północy zderza się z ciepłym znad Zatoki Meksykańskiej → tornada', kolor: 2 },
+        kolumny: [{ title: 'Ameryka Północna', kolor: 1 }, { title: 'Ameryka Południowa', kolor: 3 }],
+        wiersze: [
+          { label: 'zachód: młode góry', cells: ['Kordyliery (m.in. Góry Skaliste)', 'Andy, szczyt Aconcagua'] },
+          { label: 'środek: niziny', cells: ['Wielkie Równiny, Niziny Wewnętrzne', 'Nizina Amazonki, Nizina La Platy'] },
+          { label: 'wschód: stare góry i wyżyny', cells: ['Appalachy', 'Wyżyna Brazylijska, Wyżyna Gujańska'] },
+          { label: 'wielki problem', cells: ['tornada i huragany', 'wycinanie lasu w Amazonii'] },
+        ],
+        bottom: { title: '🌳 Amazonia – konflikt interesów', items: ['gospodarka: pastwiska, soja, drewno, kopalnie, drogi', 'przyroda: więcej CO₂, wymieranie gatunków, erozja, dom rdzennych mieszkańców'], kolor: 5 },
+      },
       flashcards: [
         ['Połączenie obu Ameryk', 'Przesmyk Panamski'],
         ['Cecha szczególna Ameryki', 'Największa rozciągłość południkowa – ponad 15 tys. km'],
@@ -503,6 +589,19 @@ window.SUBJECTS.push({
           <li>Przyczyny: duże terytorium z dostępem do dwóch oceanów, bogate surowce, dobre gleby, napływ przedsiębiorczych <b>imigrantów</b>, nauka i innowacje.</li>
         </ul>
         <div class="tip">💡 Bos-Wash = <b>Bos</b>ton + <b>Wash</b>ington. San-San = <b>San</b> Diego + <b>San</b> Francisco.</div>`,
+      infographicNote: 'Porównuj w poziomie: wielkie miasta Ameryki Północnej i dzielnice nędzy Ameryki Południowej.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '🪶 Rdzenni mieszkańcy: Indianie i Inuici', text: 'podbój i kolonizacja → wyniszczenie, rezerwaty, bieda, zanikanie kultur', kolor: 5 },
+        kolumny: [{ title: 'Megalopolis', kolor: 1 }, { title: 'Slumsy (fawele)', kolor: 2 }],
+        wiersze: [
+          { label: 'co to jest', cells: ['pas zrośniętych miast i aglomeracji', 'dzielnice nędzy na obrzeżach miast'] },
+          { label: 'przykład', cells: ['BosWash, SanSan (USA)', 'fawele w Brazylii'] },
+          { label: 'skąd się biorą', cells: ['miasta i aglomeracje się zrosły', 'napływ ze wsi, brak pracy, drogie mieszkania'] },
+          { label: 'wyposażenie', cells: ['autostrady, koleje, lotniska, firmy, uczelnie', 'bez wodociągów, kanalizacji, szkół i przychodni'] },
+        ],
+        bottom: { title: '💻 Dolina Krzemowa – technopolia', text: 'uczelnie (Stanford) + firmy high-tech + pieniądze na badania → gospodarka oparta na wiedzy', items: ['USA – największa gospodarka świata, przewaga usług'], kolor: 3 },
+      },
       flashcards: [
         ['Rdzenni mieszkańcy Ameryki', 'Indianie i Inuici'],
         ['Skąd przybyli przodkowie Indian?', 'Z Azji – przez dawny most lądowy w miejscu Cieśniny Beringa'],
@@ -568,6 +667,19 @@ window.SUBJECTS.push({
         <h3>Oceania</h3>
         <p>Oceania to tysiące wysp na Oceanie Spokojnym (m.in. Nowa Zelandia, Nowa Gwinea, Polinezja). Wyspy są <b>kontynentalne</b> (duże, np. Nowa Zelandia), <b>wulkaniczne</b> (na styku płyt) albo <b>koralowe</b> – atole zbudowane przez koralowce w ciepłej wodzie.</p>
         <div class="tip">💡 Australijczycy mieszkają „na brzegu talerza”: na wybrzeżach, bo środek to pustynia.</div>`,
+      infographicNote: 'W każdej karcie przyczyna → skutek. Niebieskie – przyroda, fioletowe – ludzie, zielone – gospodarka.',
+      infographic: {
+        type: 'karty', kolumny: 1,
+        top: { title: 'Australia – najmniejszy kontynent', text: 'w całości na półkuli południowej; przecina ją zwrotnik Koziorożca', kolor: 4 },
+        items: [
+          { icon: '🏜️', title: 'Bardzo sucho', text: 'klimat zwrotnikowy suchy → pustynie; ok. 60% lądu bez stałych rzek', kolor: 1 },
+          { icon: '🦘', title: 'Endemity', text: 'bardzo dawno oddzielona od innych lądów → kangury, koale, dziobak, eukaliptusy', kolor: 1 },
+          { icon: '🏙️', title: 'Ludzie na wybrzeżu', text: 'łagodny klimat i woda → najwięcej na południowo-wschodnim wybrzeżu; wnętrze prawie puste', kolor: 5 },
+          { icon: '💧', title: 'Baseny artezyjskie', text: 'wody podziemne → hodowla owiec i bydła na terenach półsuchych', kolor: 3 },
+          { icon: '⛏️', title: 'Górnictwo', text: 'węgiel kamienny, rudy żelaza i miedzi, złoto → eksport surowców', kolor: 3 },
+        ],
+        bottom: { title: '🏝️ Oceania – rodzaje wysp', text: 'kontynentalne (np. Nowa Zelandia), wulkaniczne, koralowe (atole)', kolor: 1 },
+      },
       flashcards: [
         ['Najmniejszy kontynent', 'Australia'],
         ['Półkula Australii', 'W całości półkula południowa; przecina ją zwrotnik Koziorożca'],
@@ -636,6 +748,19 @@ window.SUBJECTS.push({
           <li>Na Półwyspie Antarktycznym wyraźnie się ociepla – rozpadają się lodowce szelfowe.</li>
         </ul>
         <div class="tip">💡 Niedźwiedzie polarne i pingwiny nigdy się nie spotkają w naturze: misie – na <b>północy</b> (Arktyka), pingwiny – na <b>południu</b> (Antarktyka).</div>`,
+      infographicNote: 'Porównuj w poziomie: Arktyka na północy, Antarktyka na południu. Na dole – skutki ocieplenia.',
+      infographic: {
+        type: 'porownanie',
+        kolumny: [{ title: 'Arktyka (północ)', kolor: 1 }, { title: 'Antarktyka (południe)', kolor: 5 }],
+        wiersze: [
+          { label: 'co to jest', cells: ['Ocean Arktyczny, północne wybrzeża, Grenlandia', 'kontynent Antarktyda z wodami i wyspami'] },
+          { label: 'lód', cells: ['lód morski (pływa), lądolód Grenlandii', 'lądolód – ok. 96% Antarktydy'] },
+          { label: 'zwierzęta', cells: ['niedźwiedź polarny, wół piżmowy, renifer, foki', 'pingwiny, foki'] },
+          { label: 'ludzie', cells: ['rdzenni mieszkańcy, np. Inuici', 'tylko naukowcy w stacjach badawczych'] },
+          { label: 'sytuacja prawna', cells: ['nie w pełni uregulowana', 'Układ Antarktyczny (1959 r.): pokój i nauka'] },
+        ],
+        bottom: { title: '🌡️ Skutki ocieplenia', items: ['coraz mniej lodu morskiego – Arktyka ociepla się najszybciej', 'topnieje lądolód Grenlandii → wyższy poziom mórz', 'rozmarza zmarzlina → metan → jeszcze cieplej', 'niedźwiedź polarny i foki tracą miejsce do życia'], kolor: 2 },
+      },
       flashcards: [
         ['Arktyka', 'Obszar wokół bieguna północnego: Ocean Arktyczny, północne wybrzeża Eurazji i Ameryki, Grenlandia'],
         ['Antarktyka', 'Obszar wokół bieguna południowego: Antarktyda z otaczającymi wodami i wyspami'],
