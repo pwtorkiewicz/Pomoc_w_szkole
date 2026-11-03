@@ -242,7 +242,7 @@ window.SUBJECTS.push({
       infographicNote: 'Porównuj w poziomie: każdy wiersz to jedna cecha odczynu kwasowego, obojętnego i zasadowego.',
       infographic: {
         type: 'porownanie',
-        top: { title: 'Wskaźnik', text: 'zmienia barwę zależnie od odczynu; papierek uniwersalny – w całej skali pH 0–14', kolor: 4 },
+        top: { title: 'Wskaźnik', text: 'zmienia barwę zależnie od odczynu\npapierek uniwersalny – w całej skali pH\u00a00–14', kolor: 4 },
         kolumny: [{ title: 'kwasowy', kolor: 2 }, { title: 'obojętny', kolor: 3 }, { title: 'zasadowy', kolor: 5 }],
         wiersze: [
           { label: 'jony', cells: ['więcej H⁺ niż OH⁻', 'tyle samo H⁺ i OH⁻', 'więcej OH⁻ niż H⁺'] },
@@ -627,7 +627,7 @@ window.SUBJECTS.push({
         top: { title: 'Grupa karboksylowa –COOH', text: 'CₙH₂ₙ₊₁COOH\nHCOOH – mrówkowy, CH₃COOH – octowy', kolor: 5 },
         items: [
           { title: 'Etanol', text: 'fermentacja octowa (bakterie octowe)', kolor: 1 },
-          { title: 'Kwas octowy CH₃COOH', text: 'CH₃COOH ⇄ CH₃COO⁻ + H⁺\nodczyn kwasowy; reaguje jak kwasy nieorganiczne, np. z NaOH → octan sodu + woda', kolor: 2 },
+          { title: 'Kwas octowy CH₃COOH', text: 'CH₃COOH ⇄ CH₃COO⁻ + H⁺ – odczyn kwasowy\nz NaOH → octan sodu + woda', kolor: 2 },
           { title: '+ alkohol (estryfikacja)', text: 'kwas + alkohol ⇄ ester + woda\nkatalizator – stężony H₂SO₄', kolor: 1 },
           { title: 'Ester', text: 'CH₃COOC₂H₅ – octan etylu\nowocowy zapach; aromaty, rozpuszczalniki', kolor: 3 },
         ],

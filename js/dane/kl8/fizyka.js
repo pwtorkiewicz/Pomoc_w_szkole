@@ -328,7 +328,7 @@ window.SUBJECTS.push({
       infographicNote: 'U góry zasada biegunów, niżej – magnesy (niebieskie) i magnetyzm prądu (zielone).',
       infographic: {
         type: 'drzewo', kolumny: 1,
-        top: { icon: '🧲', title: 'Bieguny N i S', items: ['jednoimienne (N–N, S–S) – odpychają się', 'różnoimienne (N–S) – przyciągają się'], kolor: 5 },
+        top: { title: '🧲 Bieguny N i S', items: ['jednoimienne (N–N, S–S) – odpychają się', 'różnoimienne (N–S) – przyciągają się'], kolor: 5 },
         root: { title: 'Gdzie działa magnetyzm?', kolor: 2 },
         branches: [
           { title: '✂️ Przecięty magnes', text: 'dwa magnesy – każdy ma biegun N i S', kolor: 1 },
