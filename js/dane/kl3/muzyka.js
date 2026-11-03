@@ -40,6 +40,20 @@
           <p>Inne instrumenty: <b>flet</b> i <b>flażolet</b> (dmuchasz), <b>skrzypce</b> i <b>gitara</b> (mają struny), <b>pianino</b> (ma klawisze).</p>
           <h3>Jaki nastrój ma muzyka?</h3>
           <p>Muzyka może być <b>wesoła</b>, <b>smutna</b>, <b>skoczna</b> (do tańca) albo <b>marszowa</b> (do maszerowania). Kołysanka jest <b>cicha i spokojna</b>.</p>`,
+        infographicNote: 'Ten sam kolor – ta sama grupa.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '🐦', title: 'Wysoki dźwięk', text: 'jak ćwierkanie ptaka', kolor: 4 },
+            { icon: '🐻', title: 'Niski dźwięk', text: 'jak pomruk niedźwiedzia', kolor: 4 },
+            { icon: '👩', title: 'Sopran', text: 'wysoki głos kobiet i dzieci', kolor: 5 },
+            { icon: '👨', title: 'Bas', text: 'najniższy głos męski', kolor: 5 },
+            { icon: '🎤', title: 'Solista', text: 'śpiewa albo gra sam', kolor: 1 },
+            { icon: '👥', title: 'Chór', text: 'wiele osób śpiewa razem', kolor: 1 },
+            { icon: '🎻', title: 'Orkiestra', text: 'wielu muzyków gra razem', kolor: 1 },
+            { icon: '🥁', title: 'Perkusyjne', text: 'bęben, trójkąt, tamburyn, marakasy', kolor: 3 },
+          ],
+        },
         flashcards: [
           ['Dźwięk wysoki', 'np. ćwierkanie ptaka'],
           ['Dźwięk niski', 'np. pomruk niedźwiedzia'],
@@ -89,6 +103,19 @@
           <h3>Polskie tańce narodowe</h3>
           <p>Jest ich pięć: <b>polonez</b>, <b>mazur</b>, <b>oberek</b>, <b>kujawiak</b> i <b>krakowiak</b>. Krakowiak pochodzi z Małopolski – okolic Krakowa.</p>
           <p class="tip">Na zajęciach poznasz też <b>pląsy</b> – zabawy ruchowe przy piosence – i tańce z innych krajów.</p>`,
+        infographicNote: 'Jak zapisać muzykę, jak śpiewać i co tańczyć.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '📱', title: 'Nagranie', text: 'telefon, dyktafon, komputer', kolor: 1 },
+            { icon: '🎼', title: 'Nuty', text: 'pisze się je na pięciolinii', kolor: 1 },
+            { icon: '🔴🔵', title: 'Zapis obrazkowy', text: '🔴 – klaśnij,\n🔵 – tupnij', kolor: 1 },
+            { icon: '🧍', title: 'Śpiewaj', text: 'wyprostowany, spokojny oddech', kolor: 4 },
+            { icon: '🇵🇱', title: 'Hymn Polski', text: '„Mazurek Dąbrowskiego”', kolor: 2 },
+            { icon: '🤸', title: 'Pląsy', text: 'zabawy ruchowe przy piosence', kolor: 3 },
+          ],
+          bottom: { title: '💃 Polskie tańce narodowe', text: 'polonez, mazur, oberek, kujawiak, krakowiak.\nKrakowiak pochodzi z Małopolski.', kolor: 3 },
+        },
         flashcards: [
           ['Jak nagrać muzykę?', 'telefonem, dyktafonem albo komputerem'],
           ['Nuty', 'znaki, którymi zapisuje się muzykę'],

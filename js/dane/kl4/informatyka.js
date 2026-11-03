@@ -33,6 +33,18 @@ window.SUBJECTS.push({
         <p><b>Błąd</b> w programie sprawia, że program działa inaczej, niż chcesz. <b>Testowanie</b> to uruchamianie programu i sprawdzanie, czy robi to, co miał robić. Gdy znajdziesz błąd, <b>poprawiasz</b> program i testujesz jeszcze raz.</p>
         <div class="tip">💡 Duży problem dziel na małe części. Każdą część rozwiąż osobno – tak myśli informatyk.</div>
       `,
+      infographicNote: 'Czytaj od góry: od algorytmu do programu, który działa tak, jak chcesz.',
+      infographic: {
+        type: 'kroki',
+        top: { title: '🧩 Duży problem?', text: 'Podziel go na małe części – każdą rozwiąż osobno.', kolor: 5 },
+        items: [
+          { icon: '📝', title: 'Algorytm', text: 'przepis krok po kroku, w dobrej kolejności', kolor: 1 },
+          { icon: '🧱', title: 'Program', text: 'algorytm zapisany dla komputera albo robota, np. z klocków w Scratchu', kolor: 1 },
+          { icon: '▶️', title: 'Testowanie', text: 'uruchom program i sprawdź, czy robi to, co miał', kolor: 3 },
+          { icon: '🐞', title: 'Błąd? Popraw!', text: 'popraw program i testuj jeszcze raz', kolor: 2 },
+        ],
+        bottom: { title: '💡 Trzy rodzaje poleceń', items: ['sekwencja – po kolei, jedno po drugim', 'warunek – „jeżeli…, to…”', 'pętla – powtórz kilka razy'], kolor: 4 },
+      },
       flashcards: [
         ['Algorytm', 'Przepis, jak coś zrobić krok po kroku, w dobrej kolejności'],
         ['Program', 'Algorytm zapisany tak, żeby mógł go wykonać komputer albo robot'],
@@ -131,6 +143,18 @@ window.SUBJECTS.push({
         <h3>Oszczędzanie energii</h3>
         <p>Komputery i inne urządzenia zużywają prąd, a produkcja prądu wpływa na środowisko. Wyłączaj komputer i monitor, gdy z nich nie korzystasz. Nie zostawiaj ładowarki w gniazdku bez potrzeby. Zepsutego sprzętu nie wyrzucaj do zwykłego kosza – oddaj go do punktu zbiórki elektroodpadów.</p>
       `,
+      infographicNote: 'U góry zestaw komputerowy, niżej – co warto o nim wiedzieć; na dole – o czym pamiętać.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { icon: '💻', title: 'Zestaw komputerowy', text: 'jednostka centralna, monitor, klawiatura, mysz', kolor: 5 },
+        branches: [
+          { title: '⌨️ Wejście', text: 'informacje do komputera', items: ['klawiatura, mysz', 'mikrofon, skaner'], kolor: 1 },
+          { title: '🖨️ Wyjście', text: 'informacje z komputera', items: ['monitor, głośniki', 'słuchawki, drukarka'], kolor: 1 },
+          { title: '📁 Pliki', text: 'plik ma nazwę, folder to „teczka” na pliki', items: ['lokalnie – na dysku', 'w chmurze – w internecie'], kolor: 4 },
+          { title: '🌐 Sieć', text: 'połączone urządzenia wymieniają informacje', items: ['internet łączy sieci świata', 'router – kablem lub Wi‑Fi'], kolor: 2 },
+        ],
+        bottom: { title: '✅ Pamiętaj', items: ['siedź prosto, rób przerwy', 'zapisuj pracę często', 'wyłączaj komputer, gdy z niego nie korzystasz'], kolor: 3 },
+      },
       flashcards: [
         ['Jednostka centralna', 'Obudowa z najważniejszymi częściami komputera'],
         ['Urządzenie wejścia', 'Wprowadza informacje do komputera: klawiatura, mysz, mikrofon, skaner'],
@@ -200,6 +224,17 @@ window.SUBJECTS.push({
           <li>Model AI <b>uczy się na przykładach</b> (danych). Od danych zależy wynik: model uczony tylko na zdjęciach kotów nie rozpozna psa.</li>
         </ul>
       `,
+      infographicNote: 'Każdy kafelek to inny program i to, co w nim robisz; na dole – uwaga o AI.',
+      infographic: {
+        type: 'karty', kolumny: 2,
+        items: [
+          { icon: '🎨', title: 'Edytor grafiki', text: 'rysujesz: pędzel, wiaderko, gumka, zaznaczanie', kolor: 5 },
+          { icon: '📝', title: 'Edytor tekstu', text: 'piszesz i formatujesz: pogrubienie, kursywa, listy', kolor: 1 },
+          { icon: '📊', title: 'Arkusz kalkulacyjny', text: 'liczy za ciebie: formuła od =, np. =A1+A2', kolor: 3 },
+          { icon: '🖼️', title: 'Prezentacja', text: 'slajdy: tytuł, mało tekstu, duże litery, obrazek', kolor: 4 },
+        ],
+        bottom: { title: '🤖 Sztuczna inteligencja (AI)', text: 'Uczy się na przykładach i może się mylić – sprawdzaj jej wyniki w innych źródłach.', kolor: 2 },
+      },
       flashcards: [
         ['Wypełnienie (wiaderko)', 'Zamalowuje zamknięty obszar jednym kolorem'],
         ['Zaznaczanie', 'Wybranie fragmentu, żeby go przesunąć, skopiować albo usunąć'],
@@ -292,6 +327,19 @@ window.SUBJECTS.push({
           <li><b>Licencja</b> to zasady korzystania z programu ustalone przez jego twórcę. Niektóre programy są darmowe, za inne trzeba zapłacić. Instaluj programy tylko za zgodą dorosłego i z pewnych źródeł.</li>
         </ul>
       `,
+      infographicNote: 'Porównuj w poziomie: po lewej – co robisz, po prawej – czego nie robisz.',
+      infographic: {
+        type: 'porownanie',
+        kolumny: [{ title: '✅ Rób', kolor: 3 }, { title: '❌ Nie rób', kolor: 2 }],
+        wiersze: [
+          { label: 'pisanie w sieci (netykieta)', cells: ['pisz grzecznie', 'nie obrażaj, nie pisz WIELKIMI LITERAMI'] },
+          { label: 'hasło', cells: ['długie, różne do różnych kont', 'nie podawaj nikomu poza rodzicem lub opiekunem'] },
+          { label: 'dane osobowe', cells: ['ustaw, kto widzi twoje wpisy', 'nie podawaj ich obcym'] },
+          { label: '„Wygrałeś! Kliknij link”', cells: ['pokaż wiadomość dorosłemu', 'nie klikaj, nie odpowiadaj'] },
+          { label: 'cudzy obrazek lub tekst', cells: ['podaj źródło', 'nie podpisuj go swoim imieniem'] },
+        ],
+        bottom: { title: '🆘 Cyberprzemoc', text: 'Nie odpowiadaj agresją. Zrób zrzut ekranu, powiedz rodzicowi lub nauczycielowi.\nTelefon zaufania: 116 111', kolor: 5 },
+      },
       flashcards: [
         ['Netykieta', 'Zasady dobrego zachowania w internecie'],
         ['Silne hasło', 'Długie, z literami małymi i wielkimi, cyframi i znakami; różne do różnych kont'],

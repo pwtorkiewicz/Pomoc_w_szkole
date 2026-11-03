@@ -36,6 +36,20 @@ window.SUBJECTS.push({
         </ul>
         <p class="tip">💡 Litera z ogonkiem albo kreską stoi zaraz za swoją „siostrą”: a – ą, l – ł, z – ź – ż.</p>
       `,
+      infographicNote: 'Od zdania do głoski – i cały alfabet.',
+      infographic: {
+        type: 'karty', kolumny: 2,
+        top: { kolor: 1, title: '📝 Zdanie, wyraz, głoska', text: 'Ola ma psa.\nOla, ma, psa\nO, l, a' },
+        items: [
+          { icon: '👂', kolor: 3, title: 'Głoska', text: 'słyszysz' },
+          { icon: '✏️', kolor: 3, title: 'Litera', text: 'widzisz i piszesz' },
+          { icon: '🎤', kolor: 2, title: 'Samogłoski', text: 'a, ą, e, ę, i, o, ó, u, y' },
+          { icon: '🔡', kolor: 2, title: 'Spółgłoski', text: 'wszystkie inne: b, k, m, s, t' },
+          { icon: '👯', kolor: 5, title: 'Dwie litery', text: 'ch, cz, dz, rz, sz – jedna głoska' },
+          { icon: '🔤', kolor: 5, title: 'Alfabet', text: '32 litery' },
+        ],
+        bottom: { kolor: 4, title: '📚 Kolejność alfabetyczna', text: 'Patrz na pierwszą literę: ananas, dom, kot.\nTaka sama? Patrz na drugą: bajka, bocian.' },
+      },
       flashcards: [
         ['Zdanie', 'Składa się z wyrazów. Na końcu ma kropkę, znak zapytania albo wykrzyknik.'],
         ['Wyraz', 'Część zdania. W piśmie oddzielasz go odstępem.'],
@@ -124,6 +138,20 @@ window.SUBJECTS.push({
         <p>ó: góra, żółw, żółty, król · u: zupa, kura, chmura · rz: rzeka, burza · ż: żaba, jeż · h: herbata, hulajnoga, huśtawka · ch: chleb, chmura</p>
         <p class="tip">💡 Zostań detektywem: zmień wyraz (jeden – dwa, mały – duży) i posłuchaj, czy nie ukryło się o, r, g albo sz.</p>
       `,
+      infographicNote: 'Zmień wyraz i posłuchaj – to twoja podpowiedź.',
+      infographic: {
+        type: 'karty', kolumny: 2,
+        top: { kolor: 4, title: '🕵️ Zostań detektywem!', text: 'Zmień wyraz i posłuchaj.' },
+        items: [
+          { icon: '🪑', kolor: 1, title: 'Ó', text: 'stół – stoły\nmróz – mrozy' },
+          { icon: '🎨', kolor: 1, title: 'U', text: 'ulica, do domu, maluje' },
+          { icon: '🌊', kolor: 2, title: 'Rz', text: 'morze – morski\npo t: trzy' },
+          { icon: '📕', kolor: 2, title: 'Ż', text: 'książka – księga\ndróżka – droga' },
+          { icon: '🏠', kolor: 3, title: 'Ch', text: 'na końcu: dach\nmucha – muszka' },
+          { icon: '🐢', kolor: 5, title: 'Zapamiętaj', text: 'góra, żółw, herbata, chleb' },
+        ],
+        bottom: { kolor: 3, title: '📖 Nie wiesz?', text: 'Sprawdź w słowniku ortograficznym.' },
+      },
       flashcards: [
         ['ó wymienne na o', 'stół – stoły, mróz – mrozy, wóz – wozy, róg – rogi'],
         ['ó wymienne na e lub a', 'niósł – niesie, wrócić – wracać'],
@@ -183,6 +211,20 @@ window.SUBJECTS.push({
         <h3>Dobrze zapisane zdanie</h3>
         <p>Zaczyna się <b>wielką literą</b>, ma znak na końcu, a wyrazy stoją tak, żeby zdanie miało sens.</p>
       `,
+      infographicNote: 'Na początku wielka litera, na końcu znak.',
+      infographic: {
+        type: 'karty', kolumny: 2,
+        top: { kolor: 4, title: '🔠 Zdanie', text: 'Zaczynasz wielką literą. Na końcu stawiasz znak.' },
+        items: [
+          { icon: '📢', kolor: 1, title: 'Oznajmujące', text: 'kropka\nPada śnieg.' },
+          { icon: '❓', kolor: 2, title: 'Pytające', text: 'znak zapytania\nCzy pada śnieg?' },
+          { icon: '❗', kolor: 3, title: 'Rozkazujące', text: 'zwykle wykrzyknik\nZamknij drzwi!' },
+          { icon: '🔄', kolor: 2, title: 'Zrób pytanie', text: 'Kot śpi.\nCzy kot śpi?' },
+          { icon: '🔗', kolor: 5, title: 'Złożone', text: 'Pada deszcz i wieje wiatr.' },
+          { icon: '☂️', kolor: 5, title: 'Przecinek', text: 'przed ale i bo:\nBiorę parasol, bo pada.' },
+        ],
+        bottom: { kolor: 4, title: '🍎 Wyliczanie', text: 'Jabłka, gruszki i banany.\nPrzed „i” nie ma przecinka.' },
+      },
       flashcards: [
         ['Zdanie oznajmujące', 'Informuje. Na końcu kropka: Pada śnieg.'],
         ['Zdanie pytające', 'Pyta. Na końcu znak zapytania: Czy pada śnieg?'],
@@ -250,6 +292,20 @@ window.SUBJECTS.push({
         <p>Liczby słowami: 11 – jedenaście, 12 – dwanaście, 15 – piętnaście, 40 – czterdzieści.</p>
         <p class="tip">💡 Nazwa własna to „imię” osoby, zwierzęcia albo miejsca – dlatego dostaje wielką literę.</p>
       `,
+      infographicNote: 'Nazwa własna dostaje wielką literę.',
+      infographic: {
+        type: 'karty', kolumny: 2,
+        top: { kolor: 1, title: '🔠 Wielką literą piszesz', text: 'początek zdania i nazwy własne' },
+        items: [
+          { icon: '👧', kolor: 1, title: 'Imiona', text: 'Ania Nowak' },
+          { icon: '🐶', kolor: 1, title: 'Zwierzęta', text: 'Burek, Mruczek' },
+          { icon: '🏙️', kolor: 1, title: 'Miasta i państwa', text: 'Kraków, Polska' },
+          { icon: '🏞️', kolor: 1, title: 'Rzeki i góry', text: 'Wisła, Tatry' },
+          { icon: '📚', kolor: 1, title: 'Tytuł', text: '„Dzieci z Bullerbyn”' },
+          { icon: '📅', kolor: 2, title: 'Małą literą', text: 'wtorek, maj, wiosna' },
+        ],
+        bottom: { kolor: 4, title: '✂️ Skróty', text: 'z kropką: np., ul., godz.\nbez kropki: cm, kg, zł' },
+      },
       flashcards: [
         ['Początek zdania', 'Zawsze wielką literą: Dziś pada.'],
         ['Imiona i nazwiska', 'Wielką literą: Ania Kowalska, Tomek Nowak'],
@@ -306,6 +362,18 @@ window.SUBJECTS.push({
         </ul>
         <p class="tip">💡 Zadaj pytanie: kto? co? – rzeczownik, co robi? – czasownik, jaki? – przymiotnik.</p>
       `,
+      infographicNote: 'Zadaj pytanie – a dowiesz się, co to za wyraz.',
+      infographic: {
+        type: 'karty', kolumny: 2,
+        top: { kolor: 4, title: '❓ Zadaj pytanie!', text: 'kto? co? – co robi? – jaki?' },
+        items: [
+          { icon: '🐱', kolor: 1, title: 'Rzeczownik', text: 'kto? co?\nmama, kot, rower' },
+          { icon: '🏃', kolor: 2, title: 'Czasownik', text: 'co robi? co się dzieje?\nbiega, czyta, pada' },
+          { icon: '🎨', kolor: 3, title: 'Przymiotnik', text: 'jaki? jaka? jakie?\nrudy, zielona' },
+          { icon: '🐾', kolor: 5, title: 'Jeden czy wiele?', text: 'kot – koty\npiłka – piłki' },
+        ],
+        bottom: { kolor: 4, title: '🥛 Mały kot pije mleko.', items: ['mały – przymiotnik', 'kot – rzeczownik', 'pije – czasownik', 'mleko – rzeczownik'] },
+      },
       flashcards: [
         ['Rzeczownik', 'Odpowiada na pytanie kto? co?: mama, kot, rower, róża'],
         ['Czasownik', 'Odpowiada na pytanie co robi? co się z nim dzieje?: biega, czyta, pada, rośnie'],
@@ -356,6 +424,18 @@ window.SUBJECTS.push({
         <p>Uwaga: „lis” i „lista” brzmią podobnie, ale nie są rodziną – nie łączy ich znaczenie.</p>
         <p class="tip">💡 Rodzina wyrazów pomaga w pisowni: stół – stolik, morze – morski.</p>
       `,
+      infographicNote: 'Trzy rodzaje wyrazów – i jedna pułapka.',
+      infographic: {
+        type: 'karty', kolumny: 2,
+        items: [
+          { icon: '🌗', kolor: 2, title: 'Przeciwne', text: 'coś odwrotnego\ndzień – noc' },
+          { icon: '🚗', kolor: 3, title: 'Bliskoznaczne', text: 'prawie to samo\nauto – samochód' },
+          { icon: '🌳', kolor: 1, title: 'Pokrewne', text: 'jedna rodzina\nlas, lasek, leśny' },
+          { icon: '🐟', kolor: 1, title: 'Rodzina ryby', text: 'ryba, rybka, rybak, rybny' },
+          { icon: '🦊', kolor: 4, title: 'Pułapka!', text: 'lis i lista – to nie rodzina' },
+          { icon: '✏️', kolor: 5, title: 'Pomaga w pisowni', text: 'stół – stolik\nmorze – morski' },
+        ],
+      },
       flashcards: [
         ['Wyrazy przeciwne', 'Znaczą coś odwrotnego: duży – mały, dzień – noc'],
         ['Wyrazy bliskoznaczne', 'Znaczą prawie to samo: auto – samochód, wielki – ogromny'],
@@ -429,6 +509,19 @@ window.SUBJECTS.push({
         <p>Ola Nowak<br>ul. Lipowa 3<br>12-345 Słoneczkowo</p>
         <p class="tip">💡 Adres <b>adresata</b> (do kogo) piszesz na dole po prawej, adres <b>nadawcy</b> (od kogo) – u góry po lewej.</p>
       `,
+      infographicNote: 'Każdy tekst ma swoje stałe części.',
+      infographic: {
+        type: 'karty', kolumny: 2,
+        items: [
+          { icon: '🎶', kolor: 5, title: 'Wiersz', text: 'wersy, zwrotki, rymy: kot – płot' },
+          { icon: '📖', kolor: 1, title: 'Proza', text: 'zwykłe zdania, np. opowiadanie' },
+          { icon: '🧭', kolor: 2, title: 'Opowiadanie', text: 'początek, rozwinięcie, zakończenie' },
+          { icon: '🎉', kolor: 4, title: 'Zaproszenie', text: 'kto? kogo? na co? gdzie? kiedy?' },
+          { icon: '✉️', kolor: 3, title: 'List', text: 'data, Droga Babciu!, treść, pozdrowienia, podpis' },
+          { icon: '📮', kolor: 3, title: 'Koperta', text: 'adresat – na dole po prawej' },
+        ],
+        bottom: { kolor: 2, title: '💬 Dialog i opis', text: 'Dialog – rozmowa postaci.\nOpis – jak ktoś lub coś wygląda.' },
+      },
       flashcards: [
         ['Wiersz', 'Tekst w wersach, często ze zwrotkami i rymami'],
         ['Proza', 'Tekst pisany zwykłymi zdaniami, np. opowiadanie'],

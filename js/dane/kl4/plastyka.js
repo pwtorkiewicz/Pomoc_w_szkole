@@ -61,6 +61,18 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Kółko barw: naprzeciwko każdej barwy podstawowej leży jej barwa dopełniająca.</div>
       `,
+      infographicNote: 'Czytaj wierszami: barwa podstawowa, jej para dopełniająca i z czego tę parę zmieszasz.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '🎨 Barwy podstawowe', text: 'żółta, czerwona, niebieska – nie uzyskasz ich przez mieszanie innych farb', kolor: 4 },
+        kolumny: [{ title: 'Podstawowa', kolor: 4 }, { title: 'Dopełniająca (pochodna)', kolor: 5 }, { title: 'Z czego?', kolor: 1 }],
+        wiersze: [
+          { cells: ['czerwona', 'zielona', 'żółta + niebieska'] },
+          { cells: ['żółta', 'fioletowa', 'czerwona + niebieska'] },
+          { cells: ['niebieska', 'pomarańczowa', 'żółta + czerwona'] },
+        ],
+        bottom: { title: '🌡️ Barwy ciepłe i zimne', items: ['☀️ ciepłe: żółta, pomarańczowa, czerwona', '❄️ zimne: niebieska, błękitna, granatowa, niebieskozielona'], kolor: 2 },
+      },
       flashcards: [
         ['Barwy podstawowe', 'żółta, czerwona, niebieska'],
         ['Barwy pochodne', 'pomarańczowa (ż + cz), zielona (ż + n), fioletowa (cz + n)'],
@@ -179,6 +191,20 @@ window.SUBJECTS.push({
           <li><b>grafika użytkowa</b> – plakat, zaproszenie, kartka świąteczna, logo; ma szybko przekazać informację.</li>
         </ul>
       `,
+      infographicNote: 'Każda gałąź to dziedzina sztuki albo grupa technik – w środku przykłady.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { icon: '🖼️', title: 'Dziedziny i techniki', kolor: 5 },
+        branches: [
+          { title: '✏️ Rysunek', text: 'kreska: ołówek, węgiel, kredka, tusz', kolor: 1 },
+          { title: '🖌️ Malarstwo', text: 'obrazy malowane farbami', items: ['akwarela – przezroczysta, prześwituje papier', 'plakatówka – kryjąca', 'farby olejne i akrylowe – często na płótnie'], kolor: 2 },
+          { title: '🖨️ Grafika', text: 'matryca → farba wałkiem → odbitka', items: ['linoryt – matryca z linoleum', 'drzeworyt – matryca z drewna', 'monotypia – tylko jedna odbitka'], kolor: 3 },
+          { title: '🗿 Rzeźba', items: ['rzeźba pełna – obejdziesz ją dookoła', 'płaskorzeźba (relief) – wystaje z tła'], kolor: 4 },
+          { title: '✂️ Techniki łączone i nowe', items: ['kolaż, wydzieranka', 'grafika komputerowa, kolaż cyfrowy', 'mural, land art'], kolor: 1 },
+          { title: '🏛️ Sztuka wokół nas', items: ['architektura i mała architektura', 'architektura krajobrazu – parki, ogrody', 'grafika użytkowa – plakat, logo'], kolor: 5 },
+        ],
+        bottom: { title: '💡 Zapamiętaj', text: 'Na matrycy wszystko jest odwrócone jak w lustrze.', kolor: 3 },
+      },
       flashcards: [
         ['Malarstwo', 'Obrazy malowane farbami'],
         ['Grafika (warsztatowa)', 'Odbitki z matrycy, np. linoryt, drzeworyt'],
@@ -268,6 +294,19 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Opisując obraz, odpowiedz na pytania: Co przedstawia (gatunek)? Jakie są barwy (gama ciepła czy zimna)? Jaka jest kompozycja? Jaki nastrój? Co czujesz, patrząc na niego?</div>
       `,
+      infographicNote: 'U góry dzieło artysty, niżej – co może z niego powstać: zielone uczciwie, pomarańczowe nieuczciwie.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { icon: '🖼️', title: 'Oryginał', text: 'dzieło wykonane przez samego artystę', kolor: 5 },
+        branches: [
+          { title: '✅ Kopia', text: 'wierne powtórzenie przez kogoś innego – podpisane jako kopia', kolor: 3 },
+          { title: '✅ Reprodukcja', text: 'odbitka dzieła: zdjęcie w książce, plakat, pocztówka', kolor: 3 },
+          { title: '✅ Inspiracja', text: 'pomysł z czegoś – powstaje nowe, własne dzieło', kolor: 3 },
+          { title: '❌ Falsyfikat', text: 'podróbka udająca oryginał, żeby oszukać', kolor: 2 },
+          { title: '❌ Plagiat', text: 'cudza praca podpisana jako własna', kolor: 2 },
+        ],
+        bottom: { title: '📝 Prawo autorskie', text: 'Używasz cudzego zdjęcia lub obrazka? Podaj autora i źródło i sprawdź, czy wolno go użyć.', kolor: 4 },
+      },
       flashcards: [
         ['Portret / autoportret', 'Obraz konkretnej osoby / artysta przedstawia siebie'],
         ['Pejzaż', 'Obraz przedstawiający krajobraz'],

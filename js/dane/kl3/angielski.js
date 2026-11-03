@@ -65,6 +65,20 @@
             <tr><td>16 ${ei('sixteen')}</td><td>17 ${ei('seventeen')}</td><td>18 ${ei('eighteen')}</td><td>19 ${ei('nineteen')}</td><td>20 ${ei('twenty')}</td></tr>
           </table>
           <p class="tip">Od 13 do 19 liczby kończą się na <b lang="en">-teen</b>: ${ei('fourteen')} – 14.</p>`,
+        infographicNote: 'U góry witasz się i żegnasz, niżej – mówisz, jak się czujesz.',
+        infographic: {
+          type: 'karty', kolumny: 3,
+          label: 'Powitania: Hello – Cześć. Goodbye – Do widzenia. Good night – Dobranoc. Uczucia: happy – wesoły, sad – smutny, tired – zmęczony. Magiczne słowa: please – proszę, thank you – dziękuję, sorry – przepraszam.',
+          items: [
+            { kolor: 1, icon: '👋', title: 'Hello!', text: 'Cześć!' },
+            { kolor: 1, icon: '🚪', title: 'Goodbye!', text: 'Do widzenia!' },
+            { kolor: 1, icon: '🌙', title: 'Good night!', text: 'Dobranoc!' },
+            { kolor: 4, icon: '😀', title: 'happy', text: 'wesoły' },
+            { kolor: 4, icon: '😢', title: 'sad', text: 'smutny' },
+            { kolor: 4, icon: '😴', title: 'tired', text: 'zmęczony' },
+          ],
+          bottom: { kolor: 3, title: '✨ Magiczne słowa', text: 'please – proszę\nthank you – dziękuję\nsorry – przepraszam' },
+        },
         flashcards: [
           ['Hello!', 'Cześć! Dzień dobry!'],
           ['Good morning!', 'Dzień dobry! (rano)'],
@@ -122,6 +136,20 @@
           </ul>
           <h3>Polecenia pani</h3>
           <p>${en('Stand up!')} – Wstań! · ${en('Sit down!')} – Usiądź! · ${en('Open your book!')} – Otwórz książkę! · ${en('Close your book!')} – Zamknij książkę! · ${en('Listen!')} – Słuchaj! · ${en('Look!')} – Popatrz!</p>`,
+        infographicNote: 'U góry rzeczy z tornistra, niżej kolory, a na dole – polecenia pani.',
+        infographic: {
+          type: 'karty', kolumny: 3,
+          label: 'W tornistrze: a pencil – ołówek, a ruler – linijka, a schoolbag – tornister. Kolory: blue – niebieski, green – zielony, yellow – żółty. Polecenia: Stand up – Wstań. Sit down – Usiądź. Listen – Słuchaj.',
+          items: [
+            { kolor: 5, icon: '✏️', title: 'a pencil', text: 'ołówek' },
+            { kolor: 5, icon: '📏', title: 'a ruler', text: 'linijka' },
+            { kolor: 5, icon: '🎒', title: 'a schoolbag', text: 'tornister' },
+            { kolor: 1, icon: '🟦', title: 'blue', text: 'niebieski' },
+            { kolor: 3, icon: '🟩', title: 'green', text: 'zielony' },
+            { kolor: 4, icon: '🟨', title: 'yellow', text: 'żółty' },
+          ],
+          bottom: { kolor: 2, title: '🗣️ Polecenia pani', text: 'Stand up! – Wstań!\nSit down! – Usiądź!\nListen! – Słuchaj!' },
+        },
         flashcards: [
           ['a pencil', 'ołówek ✏️'],
           ['a pen', 'długopis'],
@@ -174,6 +202,20 @@
           ${table([['a house', 'dom'], ['a flat', 'mieszkanie'], ['a kitchen', 'kuchnia'], ['a bedroom', 'sypialnia'], ['a bathroom', 'łazienka'], ['a living room', 'pokój dzienny'], ['a garden', 'ogród']])}
           <p>${en('a door')} – drzwi 🚪 · ${en('a window')} – okno 🪟 · ${en('a bed')} – łóżko 🛏️ · ${en('a table')} – stół</p>
           <p>${ei('I live in a flat.')} – Mieszkam w mieszkaniu. · ${ei('I live in Gdańsk.')} – Mieszkam w Gdańsku.</p>`,
+        infographicNote: 'Na górze twoja rodzina, na dole – twój dom.',
+        infographic: {
+          type: 'karty', kolumny: 3,
+          label: 'Moja rodzina: mum – mama, dad – tata, sister – siostra, brother – brat, grandma – babcia, grandpa – dziadek. Mój dom: a house – dom, a kitchen – kuchnia, a bedroom – sypialnia, a bathroom – łazienka.',
+          items: [
+            { kolor: 2, icon: '👩', title: 'mum', text: 'mama' },
+            { kolor: 2, icon: '👨', title: 'dad', text: 'tata' },
+            { kolor: 2, icon: '👧', title: 'sister', text: 'siostra' },
+            { kolor: 2, icon: '👦', title: 'brother', text: 'brat' },
+            { kolor: 2, icon: '👵', title: 'grandma', text: 'babcia' },
+            { kolor: 2, icon: '👴', title: 'grandpa', text: 'dziadek' },
+          ],
+          bottom: { kolor: 3, icon: '🏠', title: 'a house – dom', text: 'a kitchen – kuchnia\na bedroom – sypialnia\na bathroom – łazienka' },
+        },
         flashcards: [
           ['mum', 'mama'],
           ['dad', 'tata'],
@@ -231,6 +273,20 @@
             <li>${en('Here you are.')} – Proszę bardzo. (gdy coś podajesz)</li>
             <li>${en('Thank you!')} – Dziękuję!</li>
           </ul>`,
+        infographicNote: 'Pomarańczowe – jedzenie, niebieskie – picie, na dole: lubię i nie lubię.',
+        infographic: {
+          type: 'karty', kolumny: 3,
+          label: 'Jedzenie: an apple – jabłko, a banana – banan, bread – chleb. Picie: milk – mleko, water – woda, juice – sok. I like apples – Lubię jabłka. I don’t like milk – Nie lubię mleka.',
+          items: [
+            { kolor: 2, icon: '🍎', title: 'an apple', text: 'jabłko' },
+            { kolor: 2, icon: '🍌', title: 'a banana', text: 'banan' },
+            { kolor: 2, icon: '🍞', title: 'bread', text: 'chleb' },
+            { kolor: 1, icon: '🥛', title: 'milk', text: 'mleko' },
+            { kolor: 1, icon: '💧', title: 'water', text: 'woda' },
+            { kolor: 1, icon: '🧃', title: 'juice', text: 'sok' },
+          ],
+          bottom: { kolor: 3, title: 'Lubię – nie lubię', text: '👍 I like apples. – Lubię jabłka.\n👎 I don’t like milk. – Nie lubię mleka.' },
+        },
         flashcards: [
           ['an apple', 'jabłko 🍎'],
           ['a banana', 'banan 🍌'],
@@ -285,6 +341,20 @@
           <h3>Pory roku</h3>
           <p>${en('spring')} 🌷 wiosna · ${en('summer')} 🏖️ lato · ${en('autumn')} 🍂 jesień · ${en('winter')} ⛄ zima</p>
           <p>W przyrodzie: ${en('a tree')} – drzewo 🌳 · ${en('a flower')} – kwiat 🌼 · ${en('the sun')} – słońce</p>`,
+        infographicNote: 'Każdy rząd to inne miejsce: dom, wieś, zoo. Na dole – pory roku.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          label: 'W domu: a cat – kot, a dog – pies. Na wsi: a cow – krowa, a horse – koń. W zoo: a lion – lew, an elephant – słoń. Pory roku: spring – wiosna, summer – lato, autumn – jesień, winter – zima.',
+          items: [
+            { kolor: 1, icon: '🐱', title: 'a cat', text: 'kot' },
+            { kolor: 1, icon: '🐶', title: 'a dog', text: 'pies' },
+            { kolor: 3, icon: '🐮', title: 'a cow', text: 'krowa' },
+            { kolor: 3, icon: '🐴', title: 'a horse', text: 'koń' },
+            { kolor: 4, icon: '🦁', title: 'a lion', text: 'lew' },
+            { kolor: 4, icon: '🐘', title: 'an elephant', text: 'słoń' },
+          ],
+          bottom: { kolor: 2, title: 'Pory roku', text: '🌷 spring – wiosna · 🏖️ summer – lato\n🍂 autumn – jesień · ⛄ winter – zima' },
+        },
         flashcards: [
           ['a cat', 'kot 🐱'],
           ['a dog', 'pies 🐶'],
@@ -343,6 +413,20 @@
             <li>${en('Can you ride a bike?')} – Czy umiesz jeździć na rowerze? → ${ei('Yes, I can.')} / ${ei('No, I can’t.')}</li>
           </ul>
           <p>${ei('I like football.')} – Lubię piłkę nożną. · ${ei('Let’s play!')} – Pobawmy się!</p>`,
+        infographicNote: 'Pomarańczowe – zabawki, niebieskie – co robisz, na dole: co umiesz.',
+        infographic: {
+          type: 'karty', kolumny: 3,
+          label: 'Zabawki: a ball – piłka, a teddy bear – miś, a kite – latawiec. Sport: swim – pływać, run – biegać, ride a bike – jeździć na rowerze. I can swim – Umiem pływać. I can’t dance – Nie umiem tańczyć.',
+          items: [
+            { kolor: 2, icon: '⚽', title: 'a ball', text: 'piłka' },
+            { kolor: 2, icon: '🧸', title: 'a teddy bear', text: 'miś' },
+            { kolor: 2, icon: '🪁', title: 'a kite', text: 'latawiec' },
+            { kolor: 1, icon: '🏊', title: 'swim', text: 'pływać' },
+            { kolor: 1, icon: '🏃', title: 'run', text: 'biegać' },
+            { kolor: 1, icon: '🚲', title: 'ride a bike', text: 'jeździć na rowerze' },
+          ],
+          bottom: { kolor: 3, title: '💪 Co potrafisz?', text: '✔ I can swim. – Umiem pływać.\n✘ I can’t dance. – Nie umiem tańczyć.' },
+        },
         flashcards: [
           ['Monday', 'poniedziałek'],
           ['Wednesday', 'środa'],
@@ -399,6 +483,20 @@
           <p>Między innymi w <b>Wielkiej Brytanii</b> (${ei('the UK')}, stolica: <b>Londyn</b> – ${ei('London')}), w <b>Irlandii</b>, w <b>Stanach Zjednoczonych</b> (${ei('the USA')}) i w <b>Australii</b>.</p>
           <h3>W baśniach – <span lang="en">fairy tales</span></h3>
           <p>${en('a king')} 👑 król · ${en('a queen')} królowa · ${en('a princess')} 👸 księżniczka · ${en('a dragon')} 🐉 smok · ${en('a castle')} 🏰 zamek</p>`,
+        infographicNote: 'Pomarańczowe – życzenia, fioletowe – baśnie, na dole – język angielski.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          label: 'Życzenia: Happy birthday – Wszystkiego najlepszego z okazji urodzin. Merry Christmas – Wesołych Świąt Bożego Narodzenia. Happy Easter – Wesołych Świąt Wielkanocnych. Happy New Year – Szczęśliwego Nowego Roku. W baśniach: a dragon – smok, a castle – zamek. English – angielski: mówi się nim na przykład w Wielkiej Brytanii, w Irlandii, w Stanach Zjednoczonych i w Australii.',
+          items: [
+            { kolor: 2, icon: '🎂', title: 'Happy birthday!', text: 'Wszystkiego najlepszego z okazji urodzin!' },
+            { kolor: 2, icon: '🎄', title: 'Merry Christmas!', text: 'Wesołych Świąt Bożego Narodzenia!' },
+            { kolor: 2, icon: '🐣', title: 'Happy Easter!', text: 'Wesołych Świąt Wielkanocnych!' },
+            { kolor: 2, icon: '🎆', title: 'Happy New Year!', text: 'Szczęśliwego Nowego Roku!' },
+            { kolor: 5, icon: '🐉', title: 'a dragon', text: 'smok' },
+            { kolor: 5, icon: '🏰', title: 'a castle', text: 'zamek' },
+          ],
+          bottom: { kolor: 1, icon: '🌍', title: 'English – angielski', text: 'Mówi się nim np. w Wielkiej Brytanii, Irlandii, USA i Australii.' },
+        },
         flashcards: [
           ['Happy birthday!', 'Wszystkiego najlepszego z okazji urodzin!'],
           ['Merry Christmas!', 'Wesołych Świąt Bożego Narodzenia!'],

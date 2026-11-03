@@ -51,6 +51,18 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Zapamiętaj: <b>biała</b> flaga – <b>b</b>ezpiecznie się kąpać, <b>czerwona</b> – <b>cz</b>ekaj na brzegu.</div>
       `,
+      infographicNote: 'Każda gałąź to inne miejsce i jego zasady; na dole – co robisz, gdy coś się stanie.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { icon: '🛡️', title: 'Bezpiecznie w ruchu', kolor: 5 },
+        branches: [
+          { title: '🏫 Na WF', items: ['strój i obuwie sportowe, bez biżuterii', 'przyrządy tylko za zgodą nauczyciela', 'upadek: broda do klatki, zaokrąglone plecy'], kolor: 4 },
+          { title: '🏊 Nad wodą', items: ['tylko kąpielisko strzeżone, z dorosłym', 'flaga biała – kąpiel dozwolona', 'flaga czerwona albo brak flagi – nie kąpiesz się', 'ratunek: 601 100 100'], kolor: 1 },
+          { title: '⛰️ W górach', items: ['sprawdź pogodę, powiedz, dokąd idziesz', 'idź tylko wyznaczonym szlakiem', 'burza albo mgła – zawracasz', 'ratunek: 601 100 300'], kolor: 5 },
+          { title: '🌲 W lesie i parku narodowym', items: ['chodzisz po ścieżkach, nie hałasujesz', 'w parku narodowym nie zrywasz roślin', 'zabierasz swoje śmieci'], kolor: 3 },
+        ],
+        bottom: { title: '🆘 Gdy coś się stanie', items: ['uraz na WF – od razu mówisz nauczycielowi', 'poza szkołą – wołasz dorosłego', 'nagły wypadek – dzwonisz pod 112'], kolor: 2 },
+      },
       flashcards: [
         ['Strój na WF', 'Strój i obuwie sportowe; bez zegarka, biżuterii i gumy do żucia'],
         ['Przyrządy na sali', 'Tylko za zgodą nauczyciela i zgodnie z przeznaczeniem'],
@@ -132,6 +144,19 @@ window.SUBJECTS.push({
         </ul>
         <div class="tip">💡 Przegrana też uczy. Złość po meczu jest naturalna – ważne, co z nią zrobisz: pogratuluj rywalom i zastanów się, co poprawić.</div>
       `,
+      infographicNote: 'U góry zdolności motoryczne, niżej każda z przykładem ćwiczenia; na dole – jak zmierzyć tętno.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { icon: '🏃', title: 'Zdolności motoryczne', text: 'co potrafi twoje ciało?', kolor: 5 },
+        branches: [
+          { title: '💪 Siła', text: 'pokonywanie oporu', items: ['pompki, przeciąganie liny'], kolor: 1 },
+          { title: '⚡ Szybkość', text: 'ruch w jak najkrótszym czasie', items: ['bieg na 60 m'], kolor: 1 },
+          { title: '🔋 Wytrzymałość', text: 'długi wysiłek bez dużego zmęczenia', items: ['marszobieg'], kolor: 1 },
+          { title: '🧘 Gibkość', text: 'duży zakres ruchu w stawach', items: ['skłon w przód, szpagat'], kolor: 1 },
+          { title: '🤹 Zdolności koordynacyjne', text: 'zręczność, równowaga, zgranie ruchów', items: ['chodzenie po ławeczce, żonglowanie, kozłowanie'], kolor: 1 },
+        ],
+        bottom: { title: '❤️ Tętno', items: ['licz uderzenia przez 15 s i pomnóż przez 4', 'podczas wysiłku rośnie – mięśnie potrzebują więcej tlenu'], kolor: 2 },
+      },
       flashcards: [
         ['Siła', 'Pokonywanie oporu – podnoszenie, pchanie, pompki'],
         ['Szybkość', 'Wykonanie ruchu w jak najkrótszym czasie'],

@@ -71,6 +71,19 @@
           <h3>Opieka nad zwierzęciem</h3>
           <p>Zwierzę domowe potrzebuje jedzenia, świeżej wody, czystego miejsca, ruchu i opieki weterynarza. Zwierzę to nie zabawka – czuje ból i strach.</p>
           <p class="tip">Obserwacja: patrzysz uważnie, zapisujesz albo rysujesz, co widzisz, i porównujesz.</p>`,
+        infographicNote: 'U góry dwa rodzaje drzew, niżej – co dają nam zwierzęta.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { kolor: 3, icon: '🌲', title: 'Iglaste', text: 'mają igły: sosna, świerk' },
+            { kolor: 3, icon: '🌳', title: 'Liściaste', text: 'mają liście: dąb, brzoza, klon' },
+            { kolor: 4, icon: '🐄', title: 'Krowa', text: 'daje mleko' },
+            { kolor: 4, icon: '🐔', title: 'Kura', text: 'daje jajka' },
+            { kolor: 4, icon: '🐑', title: 'Owca', text: 'daje wełnę' },
+            { kolor: 4, icon: '🐝', title: 'Pszczoła', text: 'daje miód' },
+          ],
+          bottom: { kolor: 1, icon: '🌱', title: 'Roślina potrzebuje', text: 'wody, światła, powietrza i ciepła' },
+        },
         flashcards: [
           ['Owoce dębu', 'żołędzie'],
           ['Drzewo z białą korą', 'brzoza'],
@@ -131,6 +144,18 @@
             <li><b>Jezioro</b> – duży zbiornik wody, która stoi. <b>Staw</b> – mały i płytki, często wykopany przez ludzi.</li>
             <li><b>Morze</b> – ogromne, woda jest <b>słona</b>. Polska leży nad Morzem Bałtyckim.</li>
           </ul>`,
+        infographicNote: 'Czytaj od góry: od koron drzew aż do ziemi.',
+        infographic: {
+          type: 'kroki',
+          top: { kolor: 1, title: '🌲 Warstwy lasu – od góry' },
+          items: [
+            { kolor: 3, icon: '🌳', title: 'Korony drzew', text: 'najwyżej, najwięcej światła' },
+            { kolor: 3, icon: '🌿', title: 'Podszyt', text: 'krzewy i młode drzewa' },
+            { kolor: 3, icon: '🍄', title: 'Runo', text: 'mchy, paprocie, jagody, grzyby' },
+            { kolor: 2, icon: '🍂', title: 'Ściółka', text: 'opadłe liście, igły, gałązki' },
+          ],
+          bottom: { kolor: 5, title: '💡 Zapamiętaj', text: 'Im niżej, tym ciemniej i wilgotniej.' },
+        },
         flashcards: [
           ['Warstwy lasu od góry', 'korony drzew, podszyt, runo, ściółka'],
           ['Podszyt', 'krzewy i młode drzewa'],
@@ -186,6 +211,18 @@
           </ul>
           <h3>Jak chronić przyrodę na co dzień</h3>
           <p>Nie śmieć, zabieraj odpady z wycieczki, nie hałasuj w lesie, nie zrywaj chronionych roślin, zakręcaj wodę, gaś niepotrzebne światło.</p>`,
+        infographicNote: 'Kwadracik pokazuje kolor pojemnika. Fioletowe – ważne zasady.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { kolor: 1, icon: '🟦', title: 'Papier', text: 'gazety, kartony, zeszyty' },
+            { kolor: 3, icon: '🟩', title: 'Szkło', text: 'szklane butelki i słoiki' },
+            { kolor: 4, icon: '🟨', title: 'Metale i tworzywa sztuczne', text: 'plastikowe butelki, puszki' },
+            { kolor: 2, icon: '🟫', title: 'Bio', text: 'obierki, liście' },
+            { kolor: 5, icon: '🔋', title: 'Baterie, stare leki', text: 'nie do kosza – do punktu zbiórki' },
+            { kolor: 5, icon: '🦬', title: 'Gatunki chronione', text: 'np. żubr, ryś, jeż – nie łap, nie zrywaj' },
+          ],
+        },
         flashcards: [
           ['Pojemnik niebieski', 'papier'],
           ['Pojemnik zielony', 'szkło'],
@@ -245,6 +282,19 @@
           <p>Sprawdź pogodę (prognoza w telewizji, radiu, internecie). Zimno – czapka, szalik, rękawiczki. Deszcz – kurtka z kapturem, kalosze, parasol. Upał – czapka z daszkiem, woda, krem z filtrem. Ubieraj się „na cebulkę” – kilka warstw, które łatwo zdjąć.</p>
           <h3>Ruch i odpoczynek</h3>
           <p>Codziennie ruszaj się na świeżym powietrzu i wysypiaj się. Zmęczone ciało gorzej się uczy.</p>`,
+        infographicNote: 'Niebieskie – higiena, zielone – zdrowe jedzenie, pomarańczowe – uwaga, żółte – ubranie.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { kolor: 1, icon: '🧼', title: 'Myj ręce', text: 'mydłem, np. przed jedzeniem' },
+            { kolor: 1, icon: '🪥', title: 'Myj zęby', text: 'rano i wieczorem' },
+            { kolor: 3, icon: '🥕', title: 'Warzywa i owoce', text: 'codziennie – mają witaminy' },
+            { kolor: 3, icon: '💧', title: 'Woda', text: 'najlepszy napój' },
+            { kolor: 2, icon: '🍬', title: 'Słodycze', text: 'rzadko i mało – psują zęby' },
+            { kolor: 4, icon: '🧅', title: 'Na cebulkę', text: 'kilka warstw, łatwo zdjąć' },
+          ],
+          bottom: { kolor: 3, icon: '🍽️', title: 'Na talerzu', text: 'połowa – warzywa i owoce\nćwierć – produkty zbożowe\nćwierć – białko' },
+        },
         flashcards: [
           ['Kiedy myjesz ręce?', 'przed jedzeniem, po toalecie, po powrocie do domu, po zabawie ze zwierzęciem'],
           ['Ile razy dziennie myjesz zęby?', 'rano i wieczorem'],
@@ -308,6 +358,19 @@
           </ul>
           <h3>W szkole</h3>
           <p><b>Zielony znak z biegnącym ludzikiem</b> pokazuje drogę ewakuacyjną – którędy wyjść, gdy jest pożar. Podczas alarmu słuchaj nauczyciela i wychodź spokojnie, bez biegania.</p>`,
+        infographicNote: 'Żółte – numery alarmowe, na dole – co mówisz, gdy dzwonisz.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { kolor: 4, icon: '📞', title: '112', text: 'numer alarmowy' },
+            { kolor: 4, icon: '🚓', title: '997', text: 'Policja' },
+            { kolor: 4, icon: '🚒', title: '998', text: 'Straż Pożarna' },
+            { kolor: 4, icon: '🚑', title: '999', text: 'Pogotowie Ratunkowe' },
+            { kolor: 1, icon: '⛈️', title: 'Burza', text: 'schowaj się w budynku, nie pod drzewem' },
+            { kolor: 3, icon: '🏃', title: 'Zielony znak', text: 'droga ewakuacyjna' },
+          ],
+          bottom: { kolor: 2, title: '☎️ Dzwonisz? Powiedz:', text: '1. kim jesteś\n2. co się stało\n3. gdzie (adres)\nNie rozłączaj się pierwszy!' },
+        },
         flashcards: [
           ['112', 'numer alarmowy w całej Unii Europejskiej'],
           ['997', 'Policja'],
@@ -363,6 +426,19 @@
             <li>Ustal z rodzicem, <b>ile czasu</b> spędzasz przed ekranem. Za długo – bolą oczy i plecy, gorzej się śpi.</li>
           </ul>
           <p class="tip">Technologia pomaga: rozmowa z babcią na wideo, mapa w telefonie, prognoza pogody, ciekawe filmy o przyrodzie.</p>`,
+        infographicNote: 'U góry znaki drogowe, niżej – na jezdni, na dole – w internecie.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { kolor: 4, icon: '🔺', title: 'Ostrzegawczy', text: 'trójkąt – ostrzega' },
+            { kolor: 2, icon: '⭕', title: 'Zakazu', text: 'czego nie wolno' },
+            { kolor: 1, icon: '🔵', title: 'Nakazu', text: 'co trzeba robić' },
+            { kolor: 1, icon: '🟦', title: 'Informacyjny', text: 'informuje, np. o przejściu' },
+            { kolor: 3, icon: '👀', title: 'Przy jezdni', text: 'w lewo, w prawo, znów w lewo' },
+            { kolor: 3, icon: '✨', title: 'Odblaski', text: 'noś je po zmroku' },
+          ],
+          bottom: { kolor: 5, icon: '💻', title: 'W internecie', text: 'Nie podawaj adresu ani hasła. Coś cię przestraszy? Powiedz rodzicowi.' },
+        },
         flashcards: [
           ['Znak ostrzegawczy', 'trójkąt, żółty z czerwoną obwódką'],
           ['Znak zakazu', 'koło z czerwoną obwódką – czego nie wolno'],
@@ -412,6 +488,19 @@
           <p>Kraków, Łódź, Wrocław, Poznań, Gdańsk, Szczecin, Lublin, Katowice, Białystok.</p>
           <h3>Z czego słynie Polska?</h3>
           <p>Np. z muzyki <b>Fryderyka Chopina</b> (kompozytor i pianista) i z odkryć <b>Marii Skłodowskiej-Curie</b> (uczona, dwukrotna laureatka Nagrody Nobla). Ty też poznaj, z czego słynie twój region: zabytki, pomniki, parki, zakłady pracy.</p>`,
+        infographicNote: 'Niebieskie – woda, brązowe – góry, na dole – kolory mapy.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { kolor: 5, icon: '🧜‍♀️', title: 'Warszawa', text: 'stolica Polski, nad Wisłą' },
+            { kolor: 1, icon: '🏞️', title: 'Wisła', text: 'najdłuższa rzeka Polski' },
+            { kolor: 1, icon: '🌊', title: 'Morze Bałtyckie', text: 'na północy' },
+            { kolor: 2, icon: '⛰️', title: 'Góry', text: 'na południu, np. Tatry' },
+            { kolor: 4, icon: '🤝', title: '7 sąsiadów', text: 'np. Niemcy, Czechy, Litwa' },
+            { kolor: 4, icon: '🎹', title: 'Fryderyk Chopin', text: 'kompozytor i pianista' },
+          ],
+          bottom: { kolor: 3, icon: '🗺️', title: 'Mapa: u góry północ', text: 'zielony – niziny\nbrązowy – góry\nniebieski – woda' },
+        },
         flashcards: [
           ['Stolica Polski', 'Warszawa – nad Wisłą'],
           ['Najdłuższa rzeka Polski', 'Wisła'],
@@ -470,6 +559,20 @@
             <li>Ziemia okrąża Słońce w ciągu <b>roku</b>.</li>
             <li><b>Księżyc</b> krąży wokół Ziemi.</li>
           </ul>`,
+        infographicNote: 'Kolor kierunku jak na róży wiatrów; rano Słońce na wschodzie, wieczorem – na zachodzie.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { kolor: 1, icon: '⬆️', title: 'N', text: 'północ' },
+            { kolor: 4, icon: '⬇️', title: 'S', text: 'południe' },
+            { kolor: 3, icon: '➡️', title: 'E', text: 'wschód' },
+            { kolor: 2, icon: '⬅️', title: 'W', text: 'zachód' },
+            { kolor: 3, icon: '🌅', title: 'Rano', text: 'Słońce na wschodzie' },
+            { kolor: 2, icon: '🌇', title: 'Wieczorem', text: 'Słońce na zachodzie' },
+            { kolor: 5, icon: '☀️', title: 'Słońce', text: 'gwiazda – światło i ciepło' },
+            { kolor: 5, icon: '🌍', title: 'Ziemia', text: 'trzecia planeta od Słońca' },
+          ],
+        },
         flashcards: [
           ['Cztery kierunki główne', 'północ, południe, wschód, zachód'],
           ['N, S, E, W', 'północ, południe, wschód, zachód'],

@@ -36,6 +36,20 @@
             <tr><td><b>bez kleju i taśmy</b></td><td><b>origami</b> – składanie figurek z papieru; modele z kartonu z nacięciami</td></tr></table>
           <h3>Czym mierzymy?</h3>
           <p><b>Linijka</b> – długość (cm). <b>Miarka krawiecka</b> – np. obwód głowy. <b>Waga</b> – masa (kg, g). <b>Termometr</b> – temperatura (°C).</p>`,
+        infographicNote: 'Tak pracujesz bezpiecznie i z porządkiem.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '✂️', title: 'Nożyczki', text: 'zamknięte, rączką do przodu', kolor: 2 },
+            { icon: '🧹', title: 'Sprzątasz', text: 'ścinki do kosza, narzędzia na miejsce', kolor: 2 },
+            { icon: '📋', title: 'Instrukcja', text: 'czytasz ją przed pracą', kolor: 1 },
+            { icon: '📄', title: 'Oszczędnie', text: 'wycinasz przy brzegu kartki', kolor: 3 },
+            { icon: '🧵', title: 'Nierozłączne', text: 'klej, zszywki, szycie', kolor: 5 },
+            { icon: '📎', title: 'Rozłączne', text: 'spinacz, sznurek, wstążka', kolor: 5 },
+            { icon: '🦢', title: 'Origami', text: 'figurki z papieru bez kleju', kolor: 5 },
+            { icon: '📏', title: 'Mierzysz', text: 'linijka – długość,\nwaga – masę,\ntermometr – temperaturę', kolor: 4 },
+          ],
+        },
         flashcards: [
           ['Jak podajesz nożyczki?', 'zamknięte, rączką do przodu'],
           ['Po co porządek przy pracy?', 'dla bezpieczeństwa i wygody'],
@@ -88,6 +102,20 @@
           <p class="tip">Nowe urządzenie? Najpierw dorosły czyta z tobą <b>instrukcję obsługi</b>.</p>
           <h3>Prąd w pracach technicznych</h3>
           <p>Na lekcji możesz zrobić <b>lampion</b> albo świąteczną dekorację ze światełkiem na <b>baterię</b>. Bateria daje słaby, bezpieczny prąd. Prąd z gniazdka jest silny i groźny.</p>`,
+        infographicNote: 'Urządzenia pomagają w domu – ale z prądem ostrożnie!',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '🧊', title: 'Lodówka', text: 'jedzenie w chłodzie', kolor: 1 },
+            { icon: '🫖', title: 'Czajnik', text: 'gotuje wodę', kolor: 1 },
+            { icon: '👕', title: 'Pralka', text: 'pierze ubrania', kolor: 1 },
+            { icon: '🧹', title: 'Odkurzacz', text: 'zbiera kurz i okruchy', kolor: 1 },
+            { icon: '💧', title: 'Mokre ręce', text: 'nie dotykaj – woda przewodzi prąd', kolor: 2 },
+            { icon: '🔌', title: 'Wtyczka', text: 'trzymasz wtyczkę, nie kabel', kolor: 2 },
+            { icon: '⚡', title: 'Gniazdko', text: 'silny prąd – nic do niego nie wkładasz', kolor: 2 },
+            { icon: '🔋', title: 'Bateria', text: 'słaby, bezpieczny prąd', kolor: 3 },
+          ],
+        },
         flashcards: [
           ['Lodówka', 'przechowuje jedzenie w chłodzie'],
           ['Pralka', 'pierze ubrania'],

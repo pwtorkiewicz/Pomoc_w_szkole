@@ -59,6 +59,19 @@
           <h3>Twoje dane</h3>
           <p>Imię, nazwisko, adres i numer telefonu to twoje <b>dane osobowe</b>. Podajesz je tylko zaufanym osobom i w bezpiecznej sytuacji, np. w szkole albo policjantowi. W internecie i nieznajomym – <b>nie</b>.</p>
           <p class="tip">Masz kłopot i nie wiesz, z kim pogadać? Zadzwoń pod <b>116 111</b> – Telefon Zaufania dla Dzieci i Młodzieży. Jest bezpłatny i czynny całą dobę.</p>`,
+        infographicNote: 'Każda grupa ma swoje zasady: prawa, obowiązki i umowy.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          top: { icon: '👨‍👩‍👧', title: 'Twoje grupy', text: 'rodzina, klasa, drużyna, miejscowość, naród', kolor: 5 },
+          items: [
+            { icon: '🎈', title: 'Prawa', text: 'nauka, zabawa, opieka', kolor: 3 },
+            { icon: '🎒', title: 'Obowiązki', text: 'szkoła, lekcje, pomoc w domu', kolor: 1 },
+            { icon: '🤝', title: 'Umowa', text: 'to, co razem ustalamy', kolor: 4 },
+            { icon: '💛', title: 'Wartości', text: 'mówisz prawdę, pomagasz, dziękujesz', kolor: 4 },
+            { icon: '🔒', title: 'Twoje dane', text: 'tylko dla zaufanych osób', kolor: 2 },
+            { icon: '📞', title: '116 111', text: 'Telefon Zaufania – całą dobę', kolor: 2 },
+          ],
+        },
         flashcards: [
           ['Grupy, do których należysz', 'rodzina, klasa, drużyna, mieszkańcy miejscowości, naród'],
           ['Prawo', 'to, co ci się należy, np. nauka, zabawa, opieka'],
@@ -111,6 +124,19 @@
             <li>Flaga UE: <b>12 złotych gwiazd</b> ułożonych w koło na <b>niebieskim</b> tle.</li>
             <li>Hymn UE: <b>„Oda do radości”</b> – muzyka Ludwiga van Beethovena.</li>
           </ul>`,
+        infographicNote: 'Od twojej miejscowości aż do Unii Europejskiej.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '🏡', title: 'Miejscowość', text: 'wieś albo miasto – znasz swój adres', kolor: 3 },
+            { icon: '🏫', title: 'Patron', text: 'jego imię nosi szkoła, ulica, plac', kolor: 3 },
+            { icon: '🤝', title: 'Stowarzyszenia', text: 'ludzie razem pomagają', kolor: 4 },
+            { icon: '🌍', title: 'Inne narodowości', text: 'Czesi, Niemcy, Litwini', kolor: 4 },
+            { icon: '🏛️', title: 'Polska', text: 'stolica: Warszawa\nprezydent:\nKarol Nawrocki', kolor: 2 },
+            { icon: '⭐', title: 'Unia Europejska', text: 'Polska jest w niej od 2004 roku', kolor: 1 },
+          ],
+          bottom: { title: '⭐ Flaga i hymn Unii', text: '12 złotych gwiazd w kole na niebieskim tle; „Oda do radości”', kolor: 1 },
+        },
         flashcards: [
           ['Patron', 'ważna osoba, której imię nosi szkoła, ulica albo plac'],
           ['Co znaczy „im.” w nazwie szkoły?', 'imienia, np. Szkoła Podstawowa im. patrona'],
@@ -162,6 +188,17 @@
             <tr><td>11 listopada</td><td><b>Narodowe Święto Niepodległości</b> – w 1918 roku Polska znów stała się wolna, po 123 latach niewoli (zaborów)</td></tr></table>
           <h3>Stroje ludowe</h3>
           <p>W różnych regionach Polski noszono różne stroje. Np. w stroju <b>krakowskim</b> mężczyźni mają czerwoną czapkę z pawim piórem, a kobiety – wianek z kwiatów i korale. Strój <b>łowicki</b> ma kolorowe spódnice i spodnie w paski. Są też stroje <b>kaszubskie</b>, <b>kurpiowskie</b> i wiele innych.</p>`,
+        infographicNote: 'Pomarańczowe – symbole Polski, żółte – święta.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '🦅', title: 'Godło', text: 'biały orzeł w złotej koronie na czerwonym tle', kolor: 2 },
+            { icon: '🤍❤️', title: 'Barwy', text: 'biel na górze, czerwień na dole', kolor: 2 },
+            { icon: '🎵', title: 'Hymn', text: '„Mazurek Dąbrowskiego”, słowa: Józef Wybicki', kolor: 2 },
+            { icon: '🧍', title: 'Gdy grają hymn', text: 'stoisz prosto, w ciszy; chłopcy zdejmują czapki', kolor: 3 },
+          ],
+          bottom: { title: '📅 Święta narodowe', items: ['2 maja – Dzień Flagi', '3 maja – Święto Konstytucji 3 Maja', '11 listopada – Narodowe Święto Niepodległości'], kolor: 4 },
+        },
         flashcards: [
           ['Godło Polski', 'biały orzeł w złotej koronie na czerwonym tle'],
           ['Barwy Polski', 'biała i czerwona – biel na górze, czerwień na dole'],
@@ -215,6 +252,20 @@
             <tr><td><b>Bolesław Chrobry</b></td><td>syn Mieszka; <b>pierwszy król Polski</b> – koronował się w <b>1025</b> roku</td></tr></table>
           <p><b>Gniezno</b> było <b>pierwszą stolicą</b> Polski.</p>
           <p class="tip">Lech, Krak i smok to postacie z legend (fikcyjne). Mieszko I i Bolesław Chrobry żyli naprawdę.</p>`,
+        infographicNote: 'Fioletowe – legendy, niebieskie – władcy, którzy żyli naprawdę.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          top: { icon: '📖', title: 'Legenda', text: 'bardzo stara opowieść: dużo fantazji, trochę prawdy', kolor: 5 },
+          items: [
+            { icon: '🦅', title: 'Lech', text: 'orzeł w gnieździe – gród Gniezno', kolor: 5 },
+            { icon: '🧭', title: 'Czech i Rus', text: 'Czech na południe, Rus na wschód', kolor: 5 },
+            { icon: '🐉', title: 'Smok wawelski', text: 'Kraków; smok zjadł skórę z siarką', kolor: 5 },
+            { icon: '🧜', title: 'Wars i Sawa', text: 'Warszawa; w herbie syrenka', kolor: 5 },
+            { icon: '👑', title: 'Mieszko I', text: 'pierwszy władca; chrzest w 966 roku', kolor: 1 },
+            { icon: '👑', title: 'Bolesław Chrobry', text: 'pierwszy król – koronował się w 1025 roku', kolor: 1 },
+          ],
+          bottom: { title: '🏰 Pierwsza stolica', text: 'Gniezno', kolor: 1 },
+        },
         flashcards: [
           ['Legenda', 'bardzo stara opowieść – dużo fantazji, trochę prawdy'],
           ['Lech, Czech i Rus', 'bracia z legendy o początkach Polski'],
@@ -264,6 +315,20 @@
           <p>Ludzie dawno temu wymyślili rzeczy, z których korzystasz codziennie: <b>cyfry arabskie</b> (1, 2, 3…) i <b>rzymskie</b> (I, II, III…), <b>papier</b>, <b>mydło</b>, <b>instrumenty muzyczne</b>.</p>
           <h3>Historia twojej rodziny</h3>
           <p>Zapytaj dziadków i rodziców, jak żyli, gdy byli mali. Obejrzyjcie stare zdjęcia. Możesz narysować <b>drzewo rodziny</b>: ty, rodzice, dziadkowie, pradziadkowie.</p>`,
+        infographicNote: 'Niebieskie – władcy, zielone – naukowcy, żółte – twoja rodzina.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '👑', title: 'Królowa Jadwiga', text: 'odnowiła Akademię Krakowską', kolor: 1 },
+            { icon: '⚔️', title: 'Stefan Batory', text: 'król; ulepszył polskie wojsko', kolor: 1 },
+            { icon: '🔭', title: 'Mikołaj Kopernik', text: 'Ziemia krąży wokół Słońca', kolor: 3 },
+            { icon: '🧪', title: 'Maria Skłodowska-Curie', text: 'dwa razy Nagroda Nobla', kolor: 3 },
+            { icon: '🏔️', title: 'Wanda Rutkiewicz', text: 'Mount Everest w 1978 roku', kolor: 5 },
+            { icon: '⛪', title: 'Jan Paweł II', text: 'pierwszy polski papież', kolor: 5 },
+            { icon: '🎖️', title: 'Elżbieta Zawacka „Zo”', text: 'jedyna kobieta wśród cichociemnych', kolor: 5 },
+            { icon: '🌳', title: 'Drzewo rodziny', text: 'ty, rodzice, dziadkowie, pradziadkowie', kolor: 4 },
+          ],
+        },
         flashcards: [
           ['Królowa Jadwiga', 'odnowiła Akademię Krakowską, wspierała kościoły i szpitale'],
           ['Stefan Batory', 'król Polski, Węgier z pochodzenia; ulepszył wojsko'],
@@ -316,6 +381,19 @@
             <tr><td>29/30 listopada</td><td><b>andrzejki</b> – wróżby, np. lanie wosku</td></tr></table>
           <h3>Inne kraje – inne zwyczaje</h3>
           <p>W różnych regionach Polski i w innych krajach ludzie świętują trochę inaczej. Szanujemy cudze zwyczaje i chętnie je poznajemy.</p>`,
+        infographicNote: 'Niebieskie – wielkie święta, zielone – zwyczaje przez cały rok.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '🎄', title: 'Boże Narodzenie', text: 'Wigilia: gwiazdka, opłatek, choinka', kolor: 1 },
+            { icon: '🥚', title: 'Wielkanoc', text: 'palmy, pisanki, śmigus-dyngus', kolor: 1 },
+            { icon: '🌷', title: 'Topienie Marzanny', text: 'żegnamy zimę, witamy wiosnę', kolor: 3 },
+            { icon: '🌾', title: 'Dożynki', text: 'koniec żniw, wieńce z kłosów', kolor: 3 },
+            { icon: '🕯️', title: 'Zaduszki', text: 'wspominamy zmarłych, znicze', kolor: 3 },
+            { icon: '🔮', title: 'Andrzejki', text: 'wróżby, lanie wosku', kolor: 3 },
+          ],
+          bottom: { title: '🌍 Inne kraje – inne zwyczaje', text: 'szanujemy cudze zwyczaje i chętnie je poznajemy', kolor: 4 },
+        },
         flashcards: [
           ['Na co czekamy w Wigilię?', 'na pierwszą gwiazdkę'],
           ['Czym dzielimy się w Wigilię?', 'opłatkiem – i składamy życzenia'],

@@ -34,6 +34,20 @@
           <p><b>Fair play</b> (czytaj: fer plej) to gra uczciwa: przestrzegasz zasad, szanujesz rywala, gratulujesz zwycięzcom i nie obrażasz się po przegranej. Każdy ma inne możliwości – nie wyśmiewamy słabszych.</p>
           <h3>Testy sprawności</h3>
           <p>Co roku od lutego do kwietnia nauczyciel sprawdza twoją sprawność: <b>bieg wahadłowy</b> (tam i z powrotem), <b>deska</b> (podpór na przedramionach), <b>skok w dal z miejsca</b>. Wyniki pokazują, co ćwiczyć – to nie są oceny.</p>`,
+        infographicNote: 'Ruszaj się codziennie – i graj uczciwie!',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '🚴', title: 'Ruch to zdrowie', text: 'wzmacnia mięśnie, serce i kości', kolor: 3 },
+            { icon: '🪢', title: 'Aktywna przerwa', text: 'skakanka, gra w klasy', kolor: 3 },
+            { icon: '👟', title: 'Strój sportowy', text: 'do miejsca i pogody', kolor: 1 },
+            { icon: '🏃', title: 'Rozgrzewka', text: 'chroni przed kontuzją', kolor: 1 },
+            { icon: '🧼', title: 'Po zajęciach', text: 'myjesz ręce i przebierasz się', kolor: 1 },
+            { icon: '🎒', title: 'Prosta postawa', text: 'plecak na obu ramionach', kolor: 4 },
+            { icon: '🤝', title: 'Fair play', text: 'zasady, szacunek, gratulacje', kolor: 5 },
+            { icon: '⏱️', title: 'Testy', text: 'bieg wahadłowy, deska, skok w dal – to nie są oceny', kolor: 2 },
+          ],
+        },
         flashcards: [
           ['Po co ruch?', 'wzmacnia mięśnie, serce i kości, poprawia humor i sen'],
           ['Aktywna przerwa', 'ruch na przerwie, np. skakanka, gra w klasy'],
@@ -87,6 +101,20 @@
             <li>Nie śmiecisz, nie hałasujesz, nie płoszysz zwierząt – szanujesz przyrodę.</li>
             <li>Numer ratunkowy w górach (GOPR, TOPR): <b>601 100 300</b> albo <b>985</b> (albo 112).</li>
           </ul>`,
+        infographicNote: 'Kolor mówi, gdzie jesteś: na kółkach, nad wodą, w górach.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '🚲', title: 'Kask', text: 'rower, hulajnoga, rolki', kolor: 4 },
+            { icon: '🛼', title: 'Ochraniacze', text: 'kolana, łokcie, nadgarstki', kolor: 4 },
+            { icon: '🏳️', title: 'Flaga biała', text: 'kąpiel dozwolona', kolor: 1 },
+            { icon: '🚩', title: 'Flaga czerwona', text: 'zakaz kąpieli', kolor: 1 },
+            { icon: '🏊', title: 'Kąpielisko', text: 'tylko strzeżone, z dorosłym', kolor: 1 },
+            { icon: '☎️', title: '601 100 100', text: 'nad wodą – albo 112', kolor: 1 },
+            { icon: '⛰️', title: 'Szlak', text: 'idziesz tylko wyznaczonym szlakiem', kolor: 3 },
+            { icon: '☎️', title: '601 100 300', text: 'w górach – albo 985, albo 112', kolor: 3 },
+          ],
+        },
         flashcards: [
           ['Kask', 'na rower, hulajnogę i rolki; na rowerze obowiązkowy do 16 lat'],
           ['Ochraniacze', 'na kolana, łokcie i nadgarstki – na rolkach'],

@@ -61,6 +61,19 @@
             <li><b>zamknięta</b> – wszystko mieści się w ramce, np. wzór na dywanie,</li>
             <li><b>otwarta</b> – wygląda, jakby ciągnęła się dalej poza brzeg, np. chmury na niebie, wzór na firance.</li>
           </ul>`,
+        infographicNote: 'Zobacz, co wyjdzie, gdy zmieszasz dwie farby.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          top: { title: '🎨 Barwy podstawowe', text: '🔴 czerwona, 🟡 żółta, 🔵 niebieska', kolor: 4 },
+          items: [
+            { icon: '🔴🟡', title: 'Pomarańczowa', text: 'czerwona + żółta', kolor: 2 },
+            { icon: '🟡🔵', title: 'Zielona', text: 'żółta + niebieska', kolor: 3 },
+            { icon: '🔴🔵', title: 'Fioletowa', text: 'czerwona + niebieska', kolor: 5 },
+            { icon: '⚪', title: 'Jaśniej', text: 'dodajesz białej farby', kolor: 4 },
+            { icon: '☀️', title: 'Ciepłe', text: 'żółta, pomarańczowa, czerwona', kolor: 2 },
+            { icon: '🧊', title: 'Zimne', text: 'niebieska, fioletowa', kolor: 1 },
+          ],
+        },
         flashcards: [
           ['Barwy podstawowe', 'czerwona, żółta, niebieska'],
           ['czerwona + żółta', 'pomarańczowa'],
@@ -120,6 +133,20 @@
             <li><b>miniatura</b> – bardzo mała wersja obrazu albo rzeźby.</li>
           </ul>
           <p class="tip">Dzieła sztuki oglądamy w <b>muzeum</b> i w <b>galerii</b>. Nie dotykamy ich!</p>`,
+        infographicNote: 'Ten sam kolor – ta sama grupa.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '✂️', title: 'Wydzieranka', text: 'wydzierasz papier i przyklejasz', kolor: 4 },
+            { icon: '🔁', title: 'Stempel', text: 'ten sam wzór wiele razy', kolor: 4 },
+            { icon: '🗿', title: 'Rzeźba', text: 'figura z kamienia, drewna, gliny', kolor: 1 },
+            { icon: '🏠', title: 'Architektura', text: 'budynki i mosty', kolor: 1 },
+            { icon: '🏞️', title: 'Pejzaż', text: 'krajobraz', kolor: 3 },
+            { icon: '🧑', title: 'Portret', text: 'konkretna osoba', kolor: 3 },
+            { icon: '🖼️', title: 'Oryginał', text: 'zrobił go sam artysta', kolor: 5 },
+            { icon: '📖', title: 'Reprodukcja', text: 'oryginał wydrukowany lub sfotografowany', kolor: 5 },
+          ],
+        },
         flashcards: [
           ['Wydzieranka', 'wydzierasz kształty z papieru i przyklejasz'],
           ['Stempel', 'odbijasz ten sam wzór wiele razy'],

@@ -43,6 +43,18 @@
           <p class="tip">Dobre polecenie jest <b>krótkie i dokładne</b>. „Zrób coś” – źle. „Zrób 2 kroki do przodu” – dobrze.</p>
           <h3>Łamigłówki</h3>
           <p>Labirynty, układanki i zagadki „co będzie dalej?” ćwiczą myślenie jak programista: szukasz <b>reguły</b> i planujesz kroki.</p>`,
+        infographicNote: 'Algorytm to kroki po kolei – jak przy myciu zębów.',
+        infographic: {
+          type: 'kroki',
+          top: { icon: '📜', title: 'Algorytm', text: 'kroki po kolei prowadzą do celu', kolor: 5 },
+          items: [
+            { icon: '🪥', title: 'Nałóż pastę', kolor: 1 },
+            { icon: '🦷', title: 'Myj zęby', kolor: 1 },
+            { icon: '💧', title: 'Wypłucz usta', kolor: 1 },
+            { icon: '🚰', title: 'Opłucz szczoteczkę', kolor: 1 },
+          ],
+          bottom: { title: '💡 Dobre polecenie', text: 'krótkie i dokładne, np. „Zrób 2 kroki do przodu”', kolor: 3 },
+        },
         flashcards: [
           ['Algorytm', 'dokładny przepis – kroki po kolei prowadzące do celu'],
           ['Polecenie', 'jeden krok, np. „idź prosto”'],
@@ -87,6 +99,20 @@
           <p>W wielu programach dla dzieci układasz polecenia z kolorowych <b>klocków</b>, jak puzzle. Klocki sterują postacią na ekranie: każą jej iść, skakać, mówić.</p>
           <h3>Błąd w programie</h3>
           <p>Robot nie doszedł do celu? W programie jest <b>błąd</b>. Sprawdź krok po kroku, gdzie robot skręcił źle, i popraw ten krok.</p>`,
+        infographicNote: 'Każda strzałka to jeden krok robota o 1 pole.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          label: 'Program to algorytm dla komputera albo robota. Strzałka w prawo – robot idzie o 1 pole w prawo. Strzałka w lewo – o 1 pole w lewo. Strzałka w górę – o 1 pole w górę. Strzałka w dół – o 1 pole w dół. Powtórz: powtórz 3 razy strzałkę w prawo – to tak samo jak trzy strzałki w prawo. Błąd: sprawdź program krok po kroku i popraw.',
+          top: { icon: '🤖', title: 'Program', text: 'algorytm dla komputera albo robota', kolor: 5 },
+          items: [
+            { icon: '➡️', title: 'W prawo', text: '1 pole', kolor: 1 },
+            { icon: '⬅️', title: 'W lewo', text: '1 pole', kolor: 1 },
+            { icon: '⬆️', title: 'W górę', text: '1 pole', kolor: 1 },
+            { icon: '⬇️', title: 'W dół', text: '1 pole', kolor: 1 },
+            { icon: '🔁', title: 'Powtórz', text: 'powtórz 3 razy ➡️\nto ➡️ ➡️ ➡️', kolor: 3 },
+            { icon: '🐞', title: 'Błąd', text: 'sprawdź krok po kroku i popraw', kolor: 2 },
+          ],
+        },
         flashcards: [
           ['Program', 'algorytm zapisany dla komputera albo robota'],
           ['Programista', 'osoba, która pisze programy'],
@@ -139,6 +165,19 @@
           <p>Twoja praca (rysunek, tekst) to <b>plik</b>. Pliki trzymamy w <b>folderach</b>, jak kartki w teczkach. Zapisz plik w miejscu, które wskaże nauczyciel, i nadaj mu nazwę, np. „Zaproszenie Ola”.</p>
           <h3>Internet</h3>
           <p>Strony internetowe oglądasz w <b>przeglądarce</b>. Korzystaj ze stron, które wskaże ci nauczyciel albo rodzic.</p>`,
+        infographicNote: 'Każde urządzenie do czegoś służy – a pracę zapisujesz w pliku.',
+        infographic: {
+          type: 'karty', kolumny: 3,
+          items: [
+            { icon: '⌨️', title: 'Klawiatura', text: 'piszesz litery', kolor: 1 },
+            { icon: '🖱️', title: 'Mysz', text: 'klikasz', kolor: 1 },
+            { icon: '🖥️', title: 'Monitor', text: 'widzisz obraz', kolor: 1 },
+            { icon: '🎤', title: 'Mikrofon', text: 'nagrywasz głos', kolor: 1 },
+            { icon: '🎧', title: 'Słuchawki', text: 'słyszysz dźwięk', kolor: 1 },
+            { icon: '🖨️', title: 'Drukarka', text: 'drukujesz na papierze', kolor: 1 },
+          ],
+          bottom: { icon: '📁', title: 'Zapisz pracę!', text: 'plik trzymasz w folderze – jak kartkę w teczce', kolor: 3 },
+        },
         flashcards: [
           ['Klawiatura', 'do pisania liter i cyfr'],
           ['Mysz', 'przesuwa wskaźnik, klikasz nią'],
@@ -189,6 +228,19 @@
           <p class="tip">Coś cię przestraszyło albo zrobiło ci przykrość w internecie? <b>Nie odpisuj</b>, <b>powiedz dorosłemu</b>. To nie twoja wina.</p>
           <h3>Cudza praca</h3>
           <p>Rysunek, zdjęcie, tekst i piosenka mają swojego <b>autora</b>. Nie podpisujesz cudzej pracy swoim imieniem. Gdy korzystasz z cudzego obrazka, podaj, skąd go wziąłeś.</p>`,
+        infographicNote: 'Po lewej – rób tak, po prawej – tak nie wolno.',
+        infographic: {
+          type: 'porownanie',
+          top: { icon: '⏰', title: 'Przy komputerze', text: 'tyle, ile ustalisz z rodzicami; rób przerwy', kolor: 1 },
+          kolumny: [{ title: '👍 Dobrze', kolor: 3 }, { title: '👎 Źle', kolor: 2 }],
+          wiersze: [
+            { label: '💬 Pisanie', cells: ['piszesz grzecznie', 'obrażasz, wyśmiewasz – to hejt'] },
+            { label: '🔑 Hasło', cells: ['znają je tylko rodzice', 'mówisz je kolegom'] },
+            { label: '📷 Nieznajomy prosi o zdjęcie', cells: ['mówisz rodzicom', 'wysyłasz zdjęcie'] },
+            { label: '🎨 Cudza praca', cells: ['podajesz, skąd ją masz', 'podpisujesz swoim imieniem'] },
+          ],
+          bottom: { title: '🙋 Coś cię przestraszyło?', text: 'Nie odpisuj, powiedz dorosłemu. To nie twoja wina.', kolor: 4 },
+        },
         flashcards: [
           ['Hasło', 'tajemnica – znają je tylko rodzice'],
           ['Hejt', 'obrażanie, wyśmiewanie, straszenie w internecie'],

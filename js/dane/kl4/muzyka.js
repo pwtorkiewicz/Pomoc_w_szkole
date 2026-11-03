@@ -70,6 +70,19 @@ window.SUBJECTS.push({
         </table>
         <div class="tip">💡 <b>F</b>orte – <b>f</b>ajerwerki, głośno. <b>P</b>iano – <b>p</b>szczółka, cichutko.</div>
       `,
+      infographicNote: 'U góry muzyka, niżej jej elementy – a w każdym, jak go zapisujemy albo nazywamy.',
+      infographic: {
+        type: 'drzewo', kolumny: 1,
+        root: { icon: '🎵', title: 'Z czego zbudowana jest muzyka?', kolor: 5 },
+        branches: [
+          { title: '🎶 Melodia', text: 'dźwięki wysokie i niskie', items: ['na pięciolinii: im wyżej nuta, tym wyższy dźwięk'], kolor: 1 },
+          { title: '👏 Rytm', text: 'dźwięki krótkie i długie', items: ['cała nuta – 4 ćwierćnuty', 'półnuta – 2 ćwierćnuty', 'ćwierćnuta – 1', 'ósemka – pół ćwierćnuty'], kolor: 3 },
+          { title: '📏 Metrum', text: 'regularne akcenty: RAZ-dwa, RAZ-dwa-trzy', items: ['2/4, 3/4, 4/4 – tyle ćwierćnut w takcie'], kolor: 3 },
+          { title: '🐢 Tempo', text: 'szybkość: od bardzo wolno do bardzo szybko', items: ['largo → andante → allegro → presto'], kolor: 4 },
+          { title: '🔊 Dynamika', text: 'głośność: od bardzo cicho do bardzo głośno', items: ['pp → p → mf → f → ff', 'crescendo < coraz głośniej', 'decrescendo > coraz ciszej'], kolor: 2 },
+          { title: '🎻 Barwa dźwięku', text: '„kolor” dźwięku – skrzypce czy trąbka?', kolor: 5 },
+        ],
+      },
       flashcards: [
         ['Melodia', 'Dźwięki wysokie i niskie ułożone jeden po drugim'],
         ['Rytm', 'Dźwięki krótkie i długie ułożone w czasie'],
@@ -221,6 +234,20 @@ window.SUBJECTS.push({
           <li>Nie stój tuż przy głośnikach na koncercie.</li>
         </ul>
       `,
+      infographicNote: 'Instrumenty dzielimy według tego, jak powstaje dźwięk; ten sam kolor – ta sama rodzina.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { icon: '🎼', title: 'Instrumenty', text: 'Jak powstaje dźwięk?', kolor: 5 },
+        branches: [
+          { title: '🎻 Strunowe smyczkowe', text: 'smyczek pociera struny', items: ['skrzypce, altówka, wiolonczela, kontrabas'], kolor: 1 },
+          { title: '🎸 Strunowe szarpane', text: 'szarpiesz struny palcami albo kostką', items: ['gitara, harfa'], kolor: 1 },
+          { title: '🌬️ Dęte drewniane', text: 'dmuchasz w instrument', items: ['flet, klarnet, obój, fagot'], kolor: 3 },
+          { title: '🎺 Dęte blaszane', text: 'dmuchasz w ustnik, drgają wargi', items: ['trąbka, puzon, róg, tuba'], kolor: 3 },
+          { title: '🥁 Perkusyjne', text: 'uderzasz albo potrząsasz', items: ['melodyczne: dzwonki, ksylofon', 'niemelodyczne: bęben, trójkąt'], kolor: 2 },
+          { title: '🎹 Klawiszowe', text: 'naciskasz klawisze', items: ['fortepian, pianino, organy'], kolor: 4 },
+        ],
+        bottom: { title: '💡 Zapamiętaj', text: 'Im większy instrument smyczkowy, tym niżej gra: skrzypce – najwyżej, kontrabas – najniżej.', kolor: 1 },
+      },
       flashcards: [
         ['Instrumenty strunowe smyczkowe', 'Smyczek pociera struny: skrzypce, altówka, wiolonczela, kontrabas'],
         ['Instrumenty strunowe szarpane', 'Struny się szarpie: gitara, harfa'],
@@ -302,6 +329,18 @@ window.SUBJECTS.push({
           <li>W muzyce poważnej klaszczesz <b>po zakończeniu całego utworu</b>, a nie w przerwach między jego częściami.</li>
         </ul>
       `,
+      infographicNote: 'Czytaj od góry: daty po kolei, a na dole – polskie tańce, które łączą hymn i Chopina.',
+      infographic: {
+        type: 'os',
+        items: [
+          { label: '1797', title: '🇵🇱 „Mazurek Dąbrowskiego”', text: 'Józef Wybicki napisał słowa dla Legionów Polskich we Włoszech', kolor: 2 },
+          { label: '1810', title: '🎹 Fryderyk Chopin', text: 'urodził się w Żelazowej Woli', kolor: 1 },
+          { label: '1849', title: '🎹 Fryderyk Chopin', text: 'zmarł w Paryżu; serce spoczywa w Warszawie', kolor: 1 },
+          { label: '1919', title: '🎹 Ignacy Jan Paderewski', text: 'słynny pianista – premier odrodzonej Polski', kolor: 5 },
+          { label: 'dziś', title: '🇵🇱 Hymn Polski', text: '„Mazurek Dąbrowskiego” – zapisany w Konstytucji', kolor: 2 },
+        ],
+        bottom: { title: '💃 Tańce narodowe', items: ['polonez, mazur, kujawiak, oberek – „na trzy”', 'krakowiak – jedyny w metrum 2/4', 'melodia hymnu to mazurek', 'Chopin: polskie tańce w mazurkach i polonezach'], kolor: 3 },
+      },
       flashcards: [
         ['Hymn Polski', '„Mazurek Dąbrowskiego” – słowa Józef Wybicki, 1797 r.'],
         ['Gdzie powstał „Mazurek Dąbrowskiego”?', 'We Włoszech (Reggio nell’Emilia), w Legionach Polskich gen. Jana Henryka Dąbrowskiego'],

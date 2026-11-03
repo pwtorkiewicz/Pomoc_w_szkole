@@ -52,6 +52,16 @@ window.SUBJECTS.push({
         <p>Dziecko w wieku <b>do 7 lat</b> może korzystać z drogi tylko pod opieką osoby, która ma <b>co najmniej 10 lat</b>. Ten przepis nie dotyczy chodnika i strefy zamieszkania.</p>
         <div class="tip">💡 Bądź uprzejmy: przepuszczaj starsze osoby, pomagaj młodszym, nie popychaj innych na przystanku. Bezpieczeństwo to także szacunek dla innych.</div>
       `,
+      infographicNote: 'Czytaj od góry: idziesz chodnikiem, a gdy go nie ma – schodzisz o krok niżej. Na dole – jak przejść przez jezdnię.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '🚶', title: '1. Chodnik', text: 'idziesz chodnikiem (drogą dla pieszych)', kolor: 3 },
+          { icon: '⬅️', title: '2. Pobocze', text: 'gdy nie ma chodnika – lewą stroną drogi', kolor: 4 },
+          { icon: '⚠️', title: '3. Jezdnia', text: 'gdy nie ma też pobocza – lewą stroną, przy krawędzi, jeden za drugim', kolor: 2 },
+        ],
+        bottom: { title: '🚸 Przez jezdnię', items: ['przejściem dla pieszych; kładką lub tunelem, jeśli są', 'zatrzymaj się, rozejrzyj, upewnij się, że pojazdy cię przepuszczą', 'nie przebiegaj, nie wchodź zza pojazdu', 'nie korzystaj z telefonu – patrz na drogę'], kolor: 1 },
+      },
       flashcards: [
         ['Uczestnik ruchu', 'Każdy, kto jest na drodze: pieszy, kierujący i pasażer'],
         ['Jezdnia', 'Część drogi dla pojazdów'],
@@ -136,6 +146,18 @@ window.SUBJECTS.push({
           <li>Czy <b>kierownica i siodełko</b> są dokręcone?</li>
         </ul>
       `,
+      infographicNote: 'U góry rower, niżej – co musi mieć; na dole – zasady jazdy.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { icon: '🚲', title: 'Obowiązkowe wyposażenie roweru', kolor: 5 },
+        branches: [
+          { title: '🔦 Z przodu', text: 'światło pozycyjne białe lub żółte selektywne', kolor: 4 },
+          { title: '🔴 Z tyłu', text: 'czerwony odblask (nie trójkąt) i czerwone światło pozycyjne', kolor: 2 },
+          { title: '🛑 Hamulec', text: 'co najmniej jeden sprawny', kolor: 1 },
+          { title: '🔔 Dzwonek', text: 'albo inny sygnał o nieprzeraźliwym dźwięku', kolor: 1 },
+        ],
+        bottom: { title: '✅ Na drodze', items: ['kask – każdy, kto nie ukończył 16 lat', 'światła włączone od zmierzchu do świtu i w tunelu', 'droga dla rowerów w twoim kierunku – musisz nią jechać', 'chodnikiem – tylko wyjątkowo, powoli, ustępując pieszym'], kolor: 3 },
+      },
       flashcards: [
         ['Łańcuch', 'Przenosi ruch z pedałów na tylne koło'],
         ['Rama', '„Szkielet” roweru, który łączy wszystkie części'],
@@ -208,6 +230,17 @@ window.SUBJECTS.push({
         <h3>Szacunek na drodze</h3>
         <p>Dobry uczestnik ruchu myśli o innych: przepuszcza pieszych, uważa na dzieci i osoby starsze, nie popisuje się i nie przeszkadza innym. Daje dobry przykład młodszym.</p>
       `,
+      infographicNote: 'U góry – co to jest karta rowerowa, niżej – co wolno w jakim wieku, na dole – co grozi wypadkiem.',
+      infographic: {
+        type: 'os',
+        top: { title: '🪪 Karta rowerowa', text: 'pozwala osobie poniżej 18 lat jeździć po drodze rowerem i hulajnogą elektryczną', kolor: 1 },
+        items: [
+          { label: '10 lat', title: 'Karta rowerowa', text: 'od 10 lat; wydaje dyrektor szkoły, za darmo, za pisemną zgodą rodzica', kolor: 3 },
+          { label: '13 lat', title: 'Hulajnoga elektryczna', text: 'od 13 lat – z kartą rowerową', items: ['młodsi – tylko w strefie zamieszkania, pod opieką dorosłego'], kolor: 3 },
+          { label: '16 lat', title: 'Kask', text: 'na hulajnodze elektrycznej do 16 lat – zawsze w kasku', kolor: 4 },
+        ],
+        bottom: { title: '⚠️ Co grozi wypadkiem?', items: ['za duża prędkość', 'nieuwaga i telefon', 'alkohol i środki odurzające', 'brak kasku i świateł, niesprawny pojazd'], kolor: 2 },
+      },
       flashcards: [
         ['Karta rowerowa', 'Dokument pozwalający osobie poniżej 18 lat jeździć rowerem (też hulajnogą elektryczną)'],
         ['Od ilu lat karta rowerowa?', 'Od 10 lat'],
@@ -287,6 +320,18 @@ window.SUBJECTS.push({
           <li>Zwracaj uwagę na znaki w szkole, np. wskazujące wyjście ewakuacyjne.</li>
         </ul>
       `,
+      infographicNote: 'U góry – co mówi kształt znaku, niżej – cztery grupy znaków z przykładami, na dole – co robisz po kolei przy wypadku.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { icon: '🚦', title: 'Znaki drogowe', text: 'trójkąt – uwaga, koło – zakaz albo nakaz, kwadrat – informacja', kolor: 5 },
+        branches: [
+          { title: '⚠️ Ostrzegawcze (A)', text: 'trójkąt wierzchołkiem do góry – ostrzegają', items: ['A-16 „przejście dla pieszych”', 'A-17 „dzieci”'], kolor: 4 },
+          { title: '⛔ Zakazu (B)', text: 'zwykle koło z czerwoną obwódką – czego nie wolno', items: ['B-9 „zakaz wjazdu rowerów”', 'B-41 „zakaz ruchu pieszych”'], kolor: 2 },
+          { title: '🔵 Nakazu (C)', text: 'koło, niebieskie – co trzeba robić', items: ['C-13 „droga dla rowerów”', 'C-16 „droga dla pieszych”'], kolor: 1 },
+          { title: 'ℹ️ Informacyjne (D)', text: 'kwadrat lub prostokąt – informują', items: ['D-6 „przejście dla pieszych”'], kolor: 3 },
+        ],
+        bottom: { title: '🚑 Widzisz wypadek?', text: '1. Zadbaj o swoje bezpieczeństwo.\n2. Zawołaj dorosłego i wezwij pomoc: 112.\n3. Powiedz: kto dzwoni, gdzie, co się stało, ilu jest poszkodowanych.\n4. Słuchaj pytań i poleceń dyspozytora.\n5. Zostań przy poszkodowanym, jeśli jest bezpiecznie.', kolor: 2 },
+      },
       flashcards: [
         ['Znaki ostrzegawcze', 'Trójkąt wierzchołkiem do góry – ostrzegają przed niebezpieczeństwem'],
         ['Znaki zakazu', 'Zwykle okrągłe z czerwoną obwódką – czego nie wolno'],
