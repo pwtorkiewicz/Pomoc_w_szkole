@@ -41,6 +41,19 @@ window.SUBJECTS.push({
         </ol>
         <p><b>Znaczenie replikacji:</b> każda komórka potomna dostaje <b>taki sam</b> komplet informacji genetycznej jak komórka macierzysta. Replikacja to podstawa przekazywania informacji genetycznej nowym komórkom i kolejnym pokoleniom.</p>
         <div class="tip">💡 Podwójna helisa to „zamek błyskawiczny”: rozpinasz go, a każda połówka jest wzorem do dobudowania brakującej części.</div>`,
+      infographicNote: 'Czytaj od góry: od nukleotydu do cechy organizmu; na dole – jak DNA się kopiuje.',
+      infographic: {
+        type: 'kroki',
+        top: { title: '🧬 DNA', text: 'nośnik informacji genetycznej; głównie w jądrze komórkowym', kolor: 5 },
+        items: [
+          { title: 'Nukleotyd', text: 'deoksyryboza + reszta kwasu fosforowego + zasada azotowa (A, T, G, C)', kolor: 1 },
+          { title: 'Nić DNA', text: 'łańcuch nukleotydów', kolor: 1 },
+          { title: 'Podwójna helisa', text: 'dwie nici połączone wiązaniami wodorowymi między zasadami: A–T, G–C', kolor: 1 },
+          { title: 'Gen', text: 'odcinek DNA z instrukcją wytworzenia białka', kolor: 3 },
+          { title: 'Białko → cecha', text: 'od białek zależą cechy organizmu, np. grupa krwi', kolor: 3 },
+        ],
+        bottom: { title: '🔁 Replikacja – przed podziałem', items: ['enzymy rozrywają wiązania wodorowe – nici się rozplatają', 'do każdej starej nici dobudowuje się nowa: A–T, G–C', 'wynik: 2 identyczne cząsteczki, każda – nić stara + nowa'], kolor: 4 },
+      },
       flashcards: [
         ['DNA', 'Kwas deoksyrybonukleinowy – nośnik informacji genetycznej'],
         ['Gdzie jest DNA w komórce jądrowej?', 'Głównie w jądrze komórkowym; trochę w mitochondriach i chloroplastach'],
@@ -113,6 +126,20 @@ window.SUBJECTS.push({
           <li>niektóre wirusy, np. <b>HPV</b> (wirus brodawczaka ludzkiego) – przed zakażeniem chroni szczepienie.</li>
         </ul>
         <div class="tip">💡 <b>Mi</b>toza – <b>mi</b>nimum zmian: 2 kopie jak oryginał. <b>Mej</b>oza – <b>mniej</b> chromosomów: 4 gamety z połową zestawu.</div>`,
+      infographicNote: 'U góry – czym jest chromosom; niżej porównuj w poziomie mitozę i mejozę.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: 'Chromosom', text: '2 chromatydy połączone centromerem\nczłowiek: 46 = 44 autosomy + XX lub XY\n2n = 46 (komórki ciała), 1n = 23 (gamety)', kolor: 4 },
+        kolumny: [{ title: 'Mitoza', kolor: 1 }, { title: 'Mejoza', kolor: 5 }],
+        wiersze: [
+          { label: 'ile komórek potomnych', cells: ['2', '4'], bold: true },
+          { label: 'liczba chromosomów', cells: ['taka sama', 'o połowę mniejsza (2n → 1n)'] },
+          { label: 'materiał genetyczny', cells: ['komórki identyczne', 'komórki różnią się'] },
+          { label: 'znaczenie', cells: ['wzrost, regeneracja, rozmnażanie bezpłciowe', 'gamety, różnorodność potomstwa'] },
+          { label: 'które komórki mogą się tak dzielić', cells: ['diploidalne i haploidalne', 'tylko diploidalne'] },
+        ],
+        bottom: { title: '⚠️ Nowotwór', text: 'niekontrolowane podziały komórek. Sprzyjają: dym tytoniowy, zła dieta, UV, promieniowanie X, zanieczyszczenia, wirus HPV', kolor: 2 },
+      },
       flashcards: [
         ['Chromosom', 'Skręcona nić DNA widoczna w czasie podziału; przed podziałem – dwie chromatydy połączone centromerem'],
         ['Chromatyda', 'Połówka chromosomu – jedna cząsteczka DNA'],
@@ -182,6 +209,19 @@ window.SUBJECTS.push({
         <p>Rodzice <b>Aa × aa</b>: połowa dzieci Aa, połowa aa – po <b>50%</b>.</p>
         <p>Rodzice <b>AA × aa</b>: wszystkie dzieci Aa – <b>100%</b> z cechą dominującą.</p>
         <div class="tip">💡 Wynik krzyżówki to <b>prawdopodobieństwo</b> dla każdego dziecka, a nie dokładny podział w rodzinie. Rodzice Aa × Aa mogą mieć dwoje dzieci aa.</div>`,
+      infographicNote: 'Porównuj w poziomie trzy genotypy; na dole – wyniki krzyżówek.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: 'Allele', text: 'każdy gen ma 2 allele – od matki i od ojca\nA – dominujący, a – recesywny\nfenotyp zależy od genotypu i środowiska', kolor: 4 },
+        kolumny: [{ title: 'AA', kolor: 1 }, { title: 'Aa', kolor: 5 }, { title: 'aa', kolor: 3 }],
+        wiersze: [
+          { label: 'nazwa', cells: ['homozygota dominująca', 'heterozygota', 'homozygota recesywna'] },
+          { label: 'allele', cells: ['jednakowe', 'różne', 'jednakowe'] },
+          { label: 'fenotyp', cells: ['cecha dominująca', 'cecha dominująca', 'cecha recesywna'] },
+          { label: 'gamety (1 allel)', cells: ['tylko A', 'A albo a', 'tylko a'] },
+        ],
+        bottom: { title: '🎲 Krzyżówki', items: ['Aa × Aa → 75% dominująca, 25% recesywna', 'Aa × aa → 50% dominująca, 50% recesywna', 'AA × aa → 100% Aa'], text: 'prawdopodobieństwo dla każdego dziecka:', kolor: 2 },
+      },
       flashcards: [
         ['Allel', 'Wersja genu; w komórce ciała są dwa allele każdego genu'],
         ['Allel dominujący', 'Ujawnia się, gdy jest choć jeden; wielka litera (A)'],
@@ -284,6 +324,20 @@ window.SUBJECTS.push({
         </ul>
         <p>Gdy matka ma Rh−, a dziecko odziedziczy po ojcu Rh+, może dojść do <b>konfliktu serologicznego</b>.</p>
         <div class="tip">💡 Dwoje rodziców z grupą A może mieć dziecko z grupą 0 – jeśli oboje mają genotyp I<sup>A</sup>i. Dwoje rodziców Rh+ może mieć dziecko Rh−, jeśli oboje są Dd.</div>`,
+      infographicNote: 'U góry płeć, pośrodku allele i cztery grupy krwi, na dole czynnik Rh.',
+      infographic: {
+        type: 'drzewo',
+        top: { title: 'Płeć dziecka – decyduje plemnik', text: 'komórka jajowa: zawsze X; plemnik: X albo Y\nX + X → dziewczynka, X + Y → chłopiec – po 50%', kolor: 4 },
+        root: { title: 'Grupy krwi AB0', text: 'allele Iᴬ, Iᴮ, i\nIᴬ i Iᴮ dominują nad i\nIᴬ + Iᴮ – kodominacja: ujawniają się oba', kolor: 1 },
+        kolumny: 2,
+        branches: [
+          { title: 'Grupa A', text: 'IᴬIᴬ albo Iᴬi\nantygen A', kolor: 1 },
+          { title: 'Grupa B', text: 'IᴮIᴮ albo Iᴮi\nantygen B', kolor: 1 },
+          { title: 'Grupa AB', text: 'IᴬIᴮ\nantygeny A i B', kolor: 5 },
+          { title: 'Grupa 0', text: 'ii\nżadnego antygenu', kolor: 3 },
+        ],
+        bottom: { title: 'Czynnik Rh', text: 'DD lub Dd → Rh+, dd → Rh−\nmatka Rh−, dziecko Rh+ → możliwy konflikt serologiczny', kolor: 2 },
+      },
       flashcards: [
         ['Chromosomy płci kobiety', 'XX'],
         ['Chromosomy płci mężczyzny', 'XY'],
@@ -367,6 +421,19 @@ window.SUBJECTS.push({
         </table>
         <p>Chorób genetycznych <b>nie można się zarazić</b>. Medycyna potrafi łagodzić ich objawy, ale zwykle ich nie wyleczy.</p>
         <div class="tip">💡 <b>M</b>ukowiscydoza – <b>m</b>ały błąd w jednym genie (mutacja genowa). <b>D</b>own – <b>d</b>odatkowy chromosom 21 (mutacja chromosomowa).</div>`,
+      infographicNote: 'U góry – skąd się biorą mutacje; niżej porównuj w poziomie dwa rodzaje mutacji.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: 'Mutacja', text: 'nagła, trwała zmiana informacji genetycznej', items: ['spontaniczna – błąd przy kopiowaniu DNA', 'wywołana – mutageny: fizyczne (UV, X), chemiczne (benzopiren, dioksyny), biologiczne (np. HPV)'], kolor: 2 },
+        kolumny: [{ title: 'Mutacja genowa', kolor: 1 }, { title: 'Mutacja chromosomowa', kolor: 5 }],
+        wiersze: [
+          { label: 'co się zmienia', cells: ['kolejność nukleotydów w genie', 'budowa albo liczba chromosomów'] },
+          { label: 'przykład choroby', cells: ['mukowiscydoza', 'zespół Downa (trisomia 21)'], bold: true },
+          { label: 'liczba chromosomów', cells: ['46', '47'] },
+          { label: 'dziedziczenie', cells: ['allel recesywny – chorują aa, nosiciele Aa', 'najczęściej błąd przy powstawaniu gamet'] },
+        ],
+        bottom: { title: '💡 Zapamiętaj', text: 'mutacja w komórkach ciała nie jest dziedziczona, w gametach – przechodzi na potomstwo. Chorób genetycznych nie można się zarazić.', kolor: 4 },
+      },
       flashcards: [
         ['Mutacja', 'Nagła, trwała zmiana informacji genetycznej'],
         ['Mutacja spontaniczna', 'Powstaje sama, np. przez błąd przy kopiowaniu DNA'],
@@ -443,6 +510,19 @@ window.SUBJECTS.push({
           <tr><td>owłosienie</td><td>całe ciało</td><td>zredukowane</td></tr>
         </table>
         <div class="tip">💡 Homologiczne – „<b>ho</b>mo” = ten sam <b>początek</b> (pochodzenie). Analogiczne – ta sama <b>praca</b> (funkcja), inne pochodzenie.</div>`,
+      infographicNote: 'Czytaj od góry: cztery założenia Darwina prowadzą do ewolucji; na dole – czym różni się dobór sztuczny.',
+      infographic: {
+        type: 'kroki',
+        top: { title: 'Teoria Karola Darwina', text: 'dobór naturalny krok po kroku', kolor: 5 },
+        items: [
+          { title: '1. Zmienność', text: 'osobniki jednego gatunku różnią się od siebie', kolor: 1 },
+          { title: '2. Dziedziczenie', text: 'rodzice przekazują cechy potomstwu', kolor: 1 },
+          { title: '3. Nie wszyscy przeżyją', text: 'rodzi się więcej potomstwa, niż może przeżyć', kolor: 1 },
+          { title: '4. Dobór naturalny', text: 'najlepiej przystosowani częściej przeżywają i mają więcej potomstwa', items: ['🦋 np. krępak brzozowy: na ciemnej korze ciemne ćmy mniej widoczne dla ptaków – ciemnych przybywało'], kolor: 4 },
+          { title: 'Ewolucja', text: 'stopniowe, nieodwracalne zmiany grup organizmów → nowe gatunki', kolor: 3 },
+        ],
+        bottom: { title: 'Dobór sztuczny', text: 'wybiera człowiek, nie środowisko → rasy zwierząt i odmiany roślin, np. rasy psów', kolor: 2 },
+      },
       flashcards: [
         ['Ewolucja', 'Stopniowe, nieodwracalne zmiany grup organizmów, prowadzące do powstania nowych gatunków'],
         ['Skamieniałość', 'Szczątki lub odciski dawnych organizmów zachowane w skałach'],
@@ -508,6 +588,19 @@ window.SUBJECTS.push({
         </ul>
         <p>Zakres tolerancji wyznacza się dla każdego czynnika osobno. Gatunki o <b>szerokim</b> zakresie żyją w wielu miejscach; o <b>wąskim</b> – tylko w nielicznych.</p>
         <div class="tip">💡 Zagęszczenie = liczebność : powierzchnia. 300 sosen na 2 ha → 150 sosen na 1 ha.</div>`,
+      infographicNote: 'Od góry: z czego składa się ekosystem, potem cechy populacji i zakres tolerancji.',
+      infographic: {
+        type: 'drzewo',
+        root: { title: 'Ekosystem = żywe + nieożywione', text: 'organizmy i środowisko, powiązane zależnościami', kolor: 5 },
+        kolumny: 2,
+        branches: [
+          { title: 'Elementy żywe', text: 'rośliny, zwierzęta, grzyby, bakterie, protisty', kolor: 3 },
+          { title: 'Elementy nieożywione', text: 'światło, temperatura, woda, gleba, powietrze, sole mineralne', kolor: 4 },
+          { title: 'Populacja', text: 'jeden gatunek, to samo miejsce i czas', items: ['zagęszczenie = liczebność : powierzchnia', 'rozrodczość > śmiertelność → liczebność rośnie'], kolor: 1 },
+          { title: 'Zakres tolerancji', text: 'np. temperatury, wilgotności', items: ['minimum i maksimum – granice przeżycia', 'optimum – rozwój najlepszy'], kolor: 2 },
+        ],
+        bottom: { title: '📊 Piramida wieku', text: 'szeroka podstawa (dużo młodych) – populacja rozwijająca się; wąska – wymierająca', kolor: 1 },
+      },
       flashcards: [
         ['Ekosystem', 'Organizmy danego terenu razem ze środowiskiem nieożywionym, powiązane zależnościami'],
         ['Elementy nieożywione ekosystemu', 'Światło, temperatura, woda, gleba, powietrze, sole mineralne'],
@@ -566,6 +659,21 @@ window.SUBJECTS.push({
         </table>
         <p>Przykłady mutualizmu: w <b>porostach</b> glon wytwarza pokarm w fotosyntezie, a grzyb dostarcza wody i soli mineralnych. W <b>mikoryzie</b> grzyb dostarcza drzewu wody i soli mineralnych, a dostaje od niego cukry. <b>Bakterie brodawkowe</b> wiążą azot z powietrza i udostępniają go roślinie.</p>
         <div class="tip">💡 Pasożyt to „sprytny gość” – nie zabija gospodarza, bo straciłby stołówkę. Drapieżnik zabija ofiarę od razu.</div>`,
+      infographicNote: 'Każda zależność ma znaki dla obu stron: ⚔️ – ktoś traci, 🤝 – nikt nie traci.',
+      infographic: {
+        type: 'drzewo',
+        top: { title: 'Dwa rodzaje zależności', text: 'zapis: + zysk, − strata, 0 bez zmian', items: ['⚔️ antagonistyczne – co najmniej jedna strona traci', '🤝 nieantagonistyczne – nikt nie traci'], kolor: 4 },
+        root: { title: 'Zależności między organizmami', kolor: 5 },
+        kolumny: 1,
+        branches: [
+          { icon: '⚔️', title: 'Drapieżnictwo  + / −', text: 'drapieżnik zabija i zjada ofiarę: lis i zając', kolor: 2 },
+          { icon: '⚔️', title: 'Roślinożerność  + / −', text: 'zwierzę zjada część rośliny: sarna i pędy drzew', kolor: 2 },
+          { icon: '⚔️', title: 'Pasożytnictwo  + / −', text: 'żyje kosztem żywiciela, zwykle go nie zabija: kleszcz', kolor: 2 },
+          { icon: '⚔️', title: 'Konkurencja  − / −', text: 'walka o te same zasoby – w gatunku lub między gatunkami', kolor: 2 },
+          { icon: '🤝', title: 'Mutualizm  + / +', text: 'obie strony zyskują: porost, mikoryza, bakterie brodawkowe', kolor: 3 },
+          { icon: '🤝', title: 'Komensalizm  + / 0', text: 'jeden zyskuje, drugi nic nie traci: sęp i resztki ofiary lwa', kolor: 3 },
+        ],
+      },
       flashcards: [
         ['Zależności antagonistyczne', 'Co najmniej jedna strona traci: drapieżnictwo, roślinożerność, pasożytnictwo, konkurencja'],
         ['Zależności nieantagonistyczne', 'Nikt nie traci: mutualizm, komensalizm'],
@@ -621,6 +729,19 @@ window.SUBJECTS.push({
           <li><b>Energia przepływa w jedną stronę</b>: pochodzi ze Słońca, a na każdym poziomie <b>większość się rozprasza</b> jako ciepło (oddychanie, ruch). Na kolejny poziom przechodzi tylko ok. <b>10%</b>. Dlatego łańcuchy są krótkie, a drapieżców jest mniej niż roślinożerców.</li>
         </ul>
         <div class="tip">💡 Strzałka w łańcuchu = „jest zjadany przez”. Trawa → zając czytasz: trawa jest zjadana przez zająca.</div>`,
+      infographicNote: 'Strzałka = „jest zjadany przez”; przerywana strzałka – materia wraca do producentów.',
+      infographic: {
+        type: 'kroki', cykl: true,
+        top: { title: '☀️ Energia Słońca', text: 'płynie w jedną stronę; na kolejny poziom przechodzi ok. 10%, reszta rozprasza się jako ciepło', kolor: 2 },
+        items: [
+          { title: 'Producenci', text: 'rośliny, glony – materia organiczna dzięki energii Słońca', kolor: 3 },
+          { title: 'Konsumenci I rzędu', text: 'roślinożercy, np. zając, gąsienica, mysz', kolor: 1 },
+          { title: 'Konsumenci II rzędu', text: 'drapieżcy jedzący roślinożerców, np. sikora, lis', kolor: 1 },
+          { title: 'Konsumenci wyższych rzędów', text: 'drapieżcy jedzący drapieżców, np. krogulec', kolor: 1 },
+          { title: 'Destruenci', text: 'bakterie, grzyby – rozkładają szczątki na związki nieorganiczne', kolor: 4 },
+        ],
+        bottom: { title: '🔗 Łańcuch i sieć', text: 'trawa → zając → lis\nłańcuchy łączą się w sieć pokarmową', kolor: 5 },
+      },
       flashcards: [
         ['Producenci', 'Wytwarzają materię organiczną dzięki energii Słońca – rośliny, glony'],
         ['Konsumenci I rzędu', 'Roślinożercy'],
@@ -707,6 +828,17 @@ window.SUBJECTS.push({
           <tr><td><b>pomnik przyrody</b></td><td>pojedynczy twór przyrody, np. stare drzewo okazałych rozmiarów, głaz narzutowy, jaskinia</td></tr>
         </table>
         <div class="tip">💡 Od największego do najmniejszego: park narodowy (cała przyroda dużego obszaru) → rezerwat (mniejszy obszar) → pomnik przyrody (jeden obiekt).</div>`,
+      infographicNote: 'Czytaj od góry: działania człowieka → skutki → co chronimy i jak.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { title: 'Człowiek', text: 'spala węgiel, ropę i gaz, wycina lasy, niszczy siedliska, zanieczyszcza, sprowadza gatunki obce', kolor: 2 },
+          { title: 'Skutki', items: ['więcej CO₂ → zmiana klimatu: cieplej, topnieją lodowce', 'smog, kwaśne opady, zanieczyszczone wody i gleby'], kolor: 2 },
+          { title: 'Maleje różnorodność biologiczna', text: 'na poziomie genetycznym, gatunkowym, ekosystemowym; w Polsce wyginęły m.in. tur i tarpan', kolor: 4 },
+          { title: 'Ochrona przyrody', items: ['park narodowy – cała przyroda, co najmniej 1000 ha', 'rezerwat przyrody – mniejszy obszar', 'pomnik przyrody – pojedynczy twór, np. głaz narzutowy', 'ochrona gatunkowa – rzadkie gatunki, np. żubr'], kolor: 3 },
+        ],
+        bottom: { title: '♻️ Zrównoważony rozwój', text: 'dzisiejsze potrzeby bez odbierania szans przyszłym pokoleniom; zasoby nieodnawialne (węgiel, ropa, gaz) się nie odtworzą', kolor: 3 },
+      },
       flashcards: [
         ['Zasoby odnawialne', 'Mogą się odnowić, np. lasy, gleba, ryby, energia Słońca i wiatru'],
         ['Zasoby nieodnawialne', 'Nie odtwarzają się, np. węgiel, ropa naftowa, gaz ziemny'],
