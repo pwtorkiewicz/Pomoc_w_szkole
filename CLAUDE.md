@@ -40,6 +40,7 @@ docs/LEKCJE.md          – format i zasady pisania lekcji (obowiązkowa lektura
 docs/SCIEZKI.md         – ścieżki: budowa, zapis postępu, jak dodać treści
 docs/PLAN.md            – plan ścieżki egzaminacyjnej; docs/PLAN-kl3|kl4|kl8.md – plany ścieżek z analizą podstaw; odhaczaj wykonane punkty
 docs/PLAN-infografiki.md – pilotaż infografik „🗺️ W pigułce” (zasady, wzory, działy pilotażowe)
+docs/podreczniki/       – podręczniki dzieci: dane ze stron redakcyjnych, spisy treści, przypisanie do działów (tylko tytuły – bez treści podręczników)
 tools/                  – sprawdzarka lekcji i zrzuty ekranu (Playwright)
 ```
 

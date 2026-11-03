@@ -38,6 +38,8 @@ A – pełny materiał (lekcje, ściąga, fiszki, quiz, zadania). B – ściąga
 
 ## Podręczniki (r. szk. 2026/2027)
 
+Pełne dane (strony redakcyjne, ISBN, spisy treści wszystkich podręczników i przypisanie do działów aplikacji): **`docs/podreczniki/kl4.md`**.
+
 Podręczniki, z których uczy się dziecko – według nich układamy kolejność działów i decydujemy, co jest materiałem klasy 4 (podstawa nie dzieli wymagań na klasy). Spisy treści sprawdzone 2.11.2026: rozkład materiału GWO (gwo.pl, „Matematyka z plusem – rozkład materiału dla klasy IV, 2026/2027”) i zestawienia rozdziałów w serwisie fiszki.odrabiamy.pl.
 
 | Przedmiot | Podręcznik | Wydawnictwo | Nr w wykazie MEN |

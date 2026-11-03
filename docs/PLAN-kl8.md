@@ -12,6 +12,8 @@ Cel: pomoc w **bieżącej nauce wszystkich przedmiotów klasy 8** (nie tylko egz
 
 ## Podręczniki dziecka (od rodzica, 3.11.2026)
 
+Szczegóły: **`docs/podreczniki/kl8.md`**.
+
 - Język polski: *Między nami 8*, GWO, nr 867/5/2018, wyd. 7 (2024) – podstawa z 2017 r. z oznaczeniem treści usuniętych w 2024 r., czyli ta sama podstawa co w ścieżce egzaminacyjnej (zdjęcie strony redakcyjnej).
 - Matematyka – GWO, angielski – „Link” (Oxford): według rodzica; tytuły i numery do potwierdzenia zdjęciem strony redakcyjnej.
 - Pozostałe przedmioty (fizyka, chemia, biologia, geografia, historia, WOS, EDB, informatyka, niemiecki) – brak danych; po otrzymaniu spisów treści dopasować kolejność działów.
