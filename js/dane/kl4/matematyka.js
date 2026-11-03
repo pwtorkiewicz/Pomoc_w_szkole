@@ -1058,14 +1058,14 @@
         infographic: {
           type: 'porownanie',
           top: { title: 'Skala 1 : 1000', text: 'wszystko zmniejszono 1000 razy: 1 cm na planie to 1000 cm = 10 m', kolor: 2 },
-          kolumny: [{ title: 'Plan → teren', kolor: 1 }, { title: 'Teren → plan', kolor: 3 }],
+          kolumny: [{ title: 'Z planu do rzeczywistości', kolor: 1 }, { title: 'Z rzeczywistości na plan', kolor: 3 }],
           wiersze: [
             { label: 'Pytanie', cells: ['Ile to naprawdę?', 'Ile na planie?'] },
             { label: 'Działanie', cells: ['· liczba ze skali', ': liczba ze skali'], bold: true },
             { label: 'Jednostki', cells: ['potem zamień\ncm na m', 'najpierw zamień\nm na cm'] },
             { label: 'Przykład (skala 1 : 1000)', cells: ['7 cm · 1000\n= 7000 cm = 70 m', '40 m = 4000 cm\n4000 : 1000 = 4 cm'] },
           ],
-          bottom: { title: '💡 Zapamiętaj', text: '1 m = 100 cm, 1 km = 100 000 cm. Skala 2 : 1 to powiększenie 2 razy.', kolor: 4 },
+          bottom: { title: '💡 Zapamiętaj', text: '1 m = 100 cm, 1 km = 100 000 cm\nSkala 2 : 1 to powiększenie 2 razy.', kolor: 4 },
         },
         flashcards: [
           ['Skala', 'Mówi, ile razy zmniejszono (albo powiększono) rzeczywistość na planie, mapie lub rysunku'],
