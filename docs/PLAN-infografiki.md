@@ -59,6 +59,8 @@ Każdy wzór opisać w `docs/LEKCJE.md` (nowa sekcja „Infografiki”) z przyk�
 Do rozszerzania służą **szablony** (`js/infografiki.js`, opis w `docs/LEKCJE.md` → „Infografiki” → „Szablony”): dział podaje opis treści (`os`, `kroki`, `porownanie`, `drzewo`, `karty`), silnik rysuje SVG. Ręczne SVG – tylko gdy szablon nie odda rysunku.
 
 - [x] Etap 1: egzamin (polski, matematyka, angielski) i kl. 4 – polski, matematyka, angielski, przyroda, historia (3.11.2026: 47 + 85 działów)
-- [x] Etap 2: kl. 8 – wszystkie przedmioty (3.11.2026: 120 działów)
-- [ ] Etap 3: kl. 3 – wszystkie przedmioty (karty z dużymi emoji, mało tekstu)
-- [ ] Etap 4: kl. 4 – informatyka, technika, muzyka, plastyka, WF
+- [x] Etap 2: kl. 8 – wszystkie przedmioty (3.11.2026: 105 działów)
+- [x] Etap 3: kl. 3 – wszystkie przedmioty (karty z dużymi emoji, mało tekstu) (3.11.2026: 47 działów)
+- [x] Etap 4: kl. 4 – informatyka, technika, muzyka, plastyka, WF (3.11.2026: 16 działów)
+
+Stan 3.11.2026: infografikę ma **każdy dział we wszystkich ścieżkach – 301/301** (egzamin 47, kl. 8 105, kl. 4 102, kl. 3 47). Nowe działy dostają infografikę od razu (zasady: `docs/LEKCJE.md` → „Infografiki”).
