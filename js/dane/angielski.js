@@ -612,7 +612,7 @@ window.SUBJECTS.push({
         type: 'drzewo', kolumny: 1,
         root: { title: 'Co przed rzeczownikiem?', kolor: 4 },
         branches: [
-          { title: 'a / an', kolor: 1, text: 'jedna rzecz, pierwszy raz; zawód', items: ['a – przed spółgłoską w wymowie: a cup, a university', 'an – przed samogłoską w wymowie: an animal, an hour'] },
+          { title: 'a / an', kolor: 1, text: 'jedna rzecz, pierwszy raz; zawód', items: ['a + spółgłoska w wymowie: a cup, a university', 'an + samogłoska w wymowie: an animal, an hour'] },
           { title: 'the', kolor: 3, text: 'rzecz znana, wspomniana lub jedyna', items: ['the sun, the best, the first', 'the USA, the Vistula'] },
           { title: '— bez przedimka', kolor: 5, text: 'posiłki, sporty, języki, większość krajów', items: ['have dinner, play football, speak English, Poland'] },
           { title: 'Niepoliczalne', kolor: 2, text: 'bez a/an i bez liczby mnogiej', items: ['water, money, advice, homework', 'some information, a piece of advice'] },
@@ -879,7 +879,7 @@ window.SUBJECTS.push({
           { title: '⚠️ hard ≠ hardly', kolor: 2, text: 'hard – ciężko, hardly – prawie wcale' },
           { title: 'Stopniowanie', kolor: 5, items: ['fast – faster – the fastest', 'carefully – more carefully – the most carefully', 'well – better – the best', 'badly – worse – the worst'] },
           { title: 'Miejsce w zdaniu', kolor: 3, items: ['always, often – przed czasownikiem głównym: She often goes…', 'ale po be: They are always late.', 'sposób – na końcu: She speaks English well.'] },
-          { title: 'so, How! czy such, What!?', kolor: 1, items: ['bez rzeczownika: so nice, How nice!', 'z rzeczownikiem: such a nice girl, What a nice day!'] },
+          { title: 'so / How! ↔ such / What!', kolor: 1, items: ['bez rzeczownika: so nice, How nice!', 'z rzeczownikiem: such a nice girl, What a nice day!'] },
         ],
       },
       flashcards: [
@@ -992,7 +992,7 @@ window.SUBJECTS.push({
           { title: 'another / other / the other', kolor: 1, items: ['another + l. poj.: another cake', 'other + l. mn.: other people', 'the other – ten drugi (z dwóch)'] },
           { title: 'Podmiot it', kolor: 5, items: ["It's raining. It's 5 o'clock.", "It's difficult to…"] },
           { title: 'Bezosobowe you = „się”', kolor: 5, items: ['How do you spell it?', "You can't park here."] },
-          { title: 'Dwa dopełnienia', kolor: 5, items: ['give somebody something = give something to somebody', 'buy somebody something = buy something for somebody'] },
+          { title: 'Dwa dopełnienia', kolor: 5, items: ['give somebody something\n= give something to somebody', 'buy somebody something\n= buy something for somebody'] },
         ],
       },
       flashcards: [
@@ -1067,12 +1067,12 @@ window.SUBJECTS.push({
         type: 'porownanie',
         kolumny: [{ title: 'Sytuacja', kolor: 1 }, { title: 'Co powiesz?', kolor: 3 }],
         wiersze: [
-          { cells: ['Ktoś dziękuje: Thank you!', "You're welcome. Not at all."] },
-          { cells: ['Ktoś przeprasza', "That's OK. Never mind."] },
-          { cells: ['Proponujesz', "How about…? Why don't we…? Let's…"] },
+          { cells: ['Ktoś dziękuje:\nThank you!', "You're welcome.\nNot at all."] },
+          { cells: ['Ktoś przeprasza', "That's OK.\nNever mind."] },
+          { cells: ['Proponujesz', "How about…?\nWhy don't we…?\nLet's…"] },
           { cells: ['Prosisz o pomoc', 'Could you help me, please?'] },
-          { cells: ['Pytasz o pozwolenie', 'Can I / May I open the window?'] },
-          { cells: ['Gratulujesz', 'Congratulations! Well done!'] },
+          { cells: ['Pytasz o pozwolenie', 'Can I / May I\nopen the window?'] },
+          { cells: ['Gratulujesz', 'Congratulations!\nWell done!'] },
           { cells: ['Ktoś kicha', 'Bless you!'] },
         ],
         bottom: { title: '💡 Trzy podobne pytania', kolor: 4, items: ['What is she like? – charakter', 'What does she look like? – wygląd', 'What does she like? – co lubi'] },
@@ -1411,7 +1411,7 @@ window.SUBJECTS.push({
       infographicNote: 'U góry – z czego składa się Zjednoczone Królestwo; na dole – inne kraje anglojęzyczne i ich stolice.',
       infographic: {
         type: 'drzewo', kolumny: 2,
-        root: { title: 'the United Kingdom (the UK)', kolor: 1, text: 'Great Britain (wyspa) + Northern Ireland\nwaluta: the pound (£)' },
+        root: { title: 'the United Kingdom (the UK)', kolor: 1, text: 'Great Britain (wyspa)\n+ Northern Ireland\nwaluta: the pound (£)' },
         branches: [
           { title: 'England', text: 'Anglia', kolor: 3, items: ['London (też stolica UK)'] },
           { title: 'Scotland', text: 'Szkocja', kolor: 3, items: ['Edinburgh'] },
