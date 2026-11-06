@@ -29,7 +29,9 @@ egzamin.html, klasa3.html, klasa4.html, klasa8.html – strony ścieżek; kolejn
                           (sciezki.js → dane → lekcje → app.js); narzędzia biorą listę plików danych stąd
 js/sciezki.js           – lista ścieżek; storeKey = klucz zapisu postępu (NIGDY nie zmieniaj istniejącego)
 css/style.css           – wygląd; tokeny kolorów, tryb ciemny przez prefers-color-scheme
-js/app.js               – wspólny silnik: router (#/…), quiz, fiszki, lekcje, zapis postępu w localStorage
+js/app.js               – wspólny silnik: router (#/…), quiz, fiszki, lekcje, zapis postępu w localStorage, statystyki (#/postepy), synchronizacja (#/chmura)
+js/postep.js            – dziennik nauki, łączenie zapisów z kilku urządzeń (mergeState), prognoza, synchronizacja z arkuszem Google rodzica
+apps-script/Kod.js      – skrypt Google Apps Script wklejany przez rodzica do arkusza: zapisy urządzeń, raport tygodniowy (docs/CHMURA.md)
 js/dane/kl3|kl4|kl8/    – treści pozostałych ścieżek (ten sam format); js/lekcje/kl3|kl4|kl8/ – ich lekcje
 js/dane/<przedmiot>.js  – (ścieżka egzaminacyjna) działy: theory (HTML ściągi), flashcards, questions, basis
 js/dane/cwiczenia-*.js  – zestawy „tekst/nagranie + zadania” (window.EXERCISES): czytanie (polski), reading, listening, środki (angielski)
@@ -38,6 +40,7 @@ js/lekcje/*.js          – lekcje „🎓 Lekcja” (window.LESSONS['<przedmiot
 js/lekcje/widgety.js    – interaktywne widżety: pitagoras, procent, kostka, kolo
 docs/LEKCJE.md          – format i zasady pisania lekcji (obowiązkowa lektura przed edycją lekcji)
 docs/SCIEZKI.md         – ścieżki: budowa, zapis postępu, jak dodać treści
+docs/CHMURA.md          – postęp, statystyki, synchronizacja urządzeń, raport tygodniowy: pola zapisu i reguły łączenia
 docs/PLAN.md            – plan ścieżki egzaminacyjnej; docs/PLAN-kl3|kl4|kl8.md – plany ścieżek z analizą podstaw; odhaczaj wykonane punkty
 docs/PLAN-infografiki.md – pilotaż infografik „🗺️ W pigułce” (zasady, wzory, działy pilotażowe)
 docs/podreczniki/       – podręczniki dzieci: dane ze stron redakcyjnych, spisy treści, przypisanie do działów (tylko tytuły – bez treści podręczników)
@@ -72,6 +75,7 @@ Uruchomienie: otwórz `index.html` w przeglądarce (albo od razu stronę ścież
 - Infografika działu „🗺️ W pigułce” (pole `infographic`, opcjonalnie `infographicNote`) – tylko treść ze ściągi i fiszek działu; zasady i wzory: `docs/LEKCJE.md` → „Infografiki”.
 - Lekcje pisz według `docs/LEKCJE.md`: 4–6 kroków, każdy z grafiką (SVG albo widżet), SVG tylko z klasami CSS (bez kolorów na sztywno – tryb ciemny), `viewBox` szerokości 300–440, `aria-label`, unikalne id markerów.
 - Bez zewnętrznych bibliotek i bez kroku budowania. Aplikacja ma działać po otwarciu pliku i na telefonie (szerokość ok. 400 px).
+- Zapis postępu: nowe pole stanu ścieżki = reguła łączenia w `mergeState` (`js/postep.js`) i opis w `docs/CHMURA.md`; zmiany postępu zapisuj przez `save()` w `app.js` (z czasem wpisu tam, gdzie łączenie go wymaga). Synchronizacja jest opcjonalna – bez połączenia aplikacja działa tylko lokalnie, jak dawniej. Po zmianach w `apps-script/Kod.js` rodzic musi wdrożyć nową wersję skryptu – powiedz mu o tym.
 
 ## Sprawdzanie przed commitem
 
@@ -81,6 +85,7 @@ node tools/jakosc-pytan.js [ścieżka[/przedmiot]] [-v] # podpowiedzi: poprawna 
 node tools/sprawdz-lekcje.js [ścieżka[/przedmiot] | przedmiot]   # lekcje i infografiki: struktura, XML SVG, napisy poza kadrem/nachodzące, błędy JS
 node tools/zrzut.js <[ścieżka/]przedmiot/dział> <krok|pigulka> <plik.png> [dark] [420]   # podgląd kroku lekcji lub infografiki (bez ścieżki – egzamin)
 node tools/przeglad.js [ścieżka]                     # ekran wyboru + wszystkie widoki i zestawy ścieżek (jasny/ciemny, 420 px): błędy JS, poziome przewijanie
+node tools/test-chmura.js                            # zapis postępu: łączenie zapisów, prognoza, skrypt arkusza (atrapa Google), synchronizacja dwóch urządzeń
 ```
 
 Po zmianach w danych lub `app.js` przejdź aplikację w przeglądarce (Playwright jest zainstalowany): ekran wyboru, strona główna ścieżki, dział (lekcja, ściąga, „W pigułce”, fiszki, quiz), test próbny, powtórka błędów, strona `#/zrodla` – bez błędów w konsoli, także w trybie ciemnym i na szerokości 420 px.

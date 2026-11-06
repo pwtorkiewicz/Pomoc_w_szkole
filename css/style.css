@@ -327,6 +327,40 @@ body.young .hero .btn + small { display: block; }
 .vis.info svg { max-width: 460px; }
 .vis.info figcaption { color: var(--muted); font-size: .92rem; margin: 6px 10px 0; }
 
+/* ---------- Postępy (#/postepy) i synchronizacja (#/chmura) ---------- */
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px; margin: 14px 0; }
+.tile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; display: flex; flex-direction: column; gap: 2px; }
+.tile b { font-size: 1.45rem; line-height: 1.2; }
+.chart { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 12px 10px; margin: 0 0 8px; }
+.chart .bars { display: grid; grid-template-columns: repeat(14, 1fr); gap: 4px; height: 130px; border-bottom: 1px solid var(--border); }
+.chart .col { display: flex; flex-direction: column; justify-content: flex-end; align-items: stretch; min-width: 0; }
+.chart .b { display: block; background: var(--primary); border-radius: 4px 4px 0 0; min-height: 0; }
+.chart .col.today .b { background: var(--ok); }
+.chart .v { font-size: .75rem; font-weight: 700; text-align: center; color: var(--text); line-height: 1.4; }
+.chart .days { display: grid; grid-template-columns: repeat(14, 1fr); gap: 4px; font-size: .72rem; color: var(--muted); text-align: center; margin-top: 3px; }
+.chart .days .today { color: var(--text); font-weight: 700; }
+.chart figcaption { margin-top: 6px; }
+.srows { display: grid; gap: 9px; }
+.srow { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; text-decoration: none; color: var(--text); }
+.srow:hover { border-color: var(--accent, var(--primary)); }
+.srow .shead { display: flex; justify-content: space-between; gap: 10px; font-weight: 600; margin-bottom: 6px; }
+.srow small { display: block; margin-top: 5px; }
+ul.plain { padding-left: 1.2em; }
+details.parent, details.report { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 16px; margin: 14px 0; }
+details.parent > summary, details.report > summary { cursor: pointer; font-weight: 600; }
+details.report pre { white-space: pre-wrap; word-break: break-word; font: inherit; font-size: .9rem; margin: 10px 0 4px; }
+.prof { display: flex; justify-content: space-between; align-items: center; gap: 10px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 10px 14px; margin-bottom: 9px; }
+.prof .btn { margin: 0; }
+.assign { display: grid; gap: 8px; margin: 8px 0 6px; }
+.assign label { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 8px 14px; }
+.assign select { font: inherit; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--text); max-width: 100%; }
+.row .gap { flex: 1 1 220px; width: auto; min-width: 0; }
+.toast {
+  position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 20;
+  width: max-content; max-width: calc(100% - 32px); background: var(--text); color: var(--bg);
+  padding: 11px 16px; border-radius: 12px; box-shadow: 0 4px 18px rgba(0, 0, 0, .25); font-size: .95rem;
+}
+
 /* Druk (np. infografika): zawsze jasne tło i ciemny tekst, bez nawigacji i przycisków */
 @media print {
   :root {

@@ -34,7 +34,9 @@ Do tego:
   - 📖 **Reading**, 🎧 **Listening** (nagrania czyta syntezator mowy przeglądarki – bez plików audio; transkrypcja po sprawdzeniu) i 🧩 **Środki językowe** (luki, dobieranie, przekład, parafraza) z angielskiego,
 - **pytania z rysunkiem** – w matematyce część pytań ma diagram, wykres, figurę, układ współrzędnych, termometr albo siatkę bryły,
 - **🔁 Powtórka błędów** – pytania, na które uczeń odpowiedział źle, aż do skutku,
-- **zapis postępu** – najlepszy wynik z każdego działu (zapisany w przeglądarce, bez kont i bez serwera).
+- **zapis postępu** – najlepszy wynik z każdego działu (zapisany w przeglądarce, bez kont i bez serwera),
+- **📊 Postępy i statystyki** – czas nauki (liczony tylko przy aktywnej nauce), dni z nauką, skuteczność odpowiedzi, przerobiony materiał każdego przedmiotu, prognoza ukończenia materiału, działy do odświeżenia, raport dla rodzica do wysłania i kopia zapasowa,
+- **☁️ synchronizacja urządzeń (opcjonalna)** – telefon i komputer dziecka łączą postęp przez arkusz Google rodzica (skrypt Apps Script), który co tydzień wysyła rodzicowi raport na maila. Instalacja i działanie: `docs/CHMURA.md`.
 
 Działa na telefonie i komputerze, ma tryb ciemny i obsługę z klawiatury (A–D / 1–4, Enter, strzałki).
 
@@ -151,12 +153,15 @@ klasa3.html, klasa4.html, klasa8.html – pozostałe ścieżki
 css/style.css       – wygląd
 js/sciezki.js       – lista ścieżek (nazwa, strona, klucz zapisu postępu)
 js/wybor.js         – ekran wyboru ścieżki
-js/app.js           – wspólny silnik (lekcje, quiz, fiszki, zadania otwarte, zestawy ćwiczeń, postęp)
+js/postep.js        – dziennik nauki, łączenie zapisów z kilku urządzeń, prognoza, synchronizacja z chmurą rodzica
+js/app.js           – wspólny silnik (lekcje, quiz, fiszki, zadania otwarte, zestawy ćwiczeń, postęp i statystyki)
+apps-script/Kod.js  – skrypt Google Apps Script do arkusza rodzica (synchronizacja + raport tygodniowy)
 js/dane/*.js        – treści ścieżki egzaminacyjnej (nowe ścieżki: js/dane/kl3/, kl4/, kl8/); cwiczenia-*.js – zestawy ćwiczeń jak na egzaminie
 js/dane/zrodla.js   – opis podstaw i źródeł
 js/lekcje/*.js      – lekcje (tryb nauki) i interaktywne widżety
 docs/LEKCJE.md      – jak pisać lekcje
 docs/SCIEZKI.md     – ścieżki: budowa, zasady, jak dodać treści
+docs/CHMURA.md      – postęp, statystyki, synchronizacja urządzeń i raport tygodniowy (instalacja u rodzica)
 docs/PLAN.md        – plan rozbudowy ścieżki egzaminacyjnej zgodnie z podstawą programową
 tools/              – sprawdzanie danych i lekcji, zrzuty ekranu, przegląd w przeglądarce (node tools/przeglad.js)
 ```

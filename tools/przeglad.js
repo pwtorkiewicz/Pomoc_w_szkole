@@ -1,7 +1,7 @@
 /* Przegląd aplikacji w przeglądarce: node tools/przeglad.js [ścieżka]
  * Ekran wyboru ścieżki, a potem każda ścieżka z js/sciezki.js (albo tylko podana).
  * Przechodzi wszystkie widoki (start, przedmioty, działy z każdą zakładką – także „W pigułce”, test próbny,
- * zadania otwarte, powtórka błędów, źródła) i wszystkie zestawy ćwiczeń (wypełnia je
+ * zadania otwarte, powtórka błędów, źródła, postępy, synchronizacja) i wszystkie zestawy ćwiczeń (wypełnia je
  * i sprawdza), w jasnym i ciemnym motywie, na szerokości 420 i 1000 px.
  * Zgłasza błędy JavaScript i poziome przewijanie strony. Wymaga Playwright. */
 const { chromium } = require('playwright');
@@ -59,6 +59,9 @@ const dane = require('./dane');
       };
       await visit('#/');
       await visit('#/zrodla');
+      // postępy i synchronizacja (w klasie 3 szczegóły dla rodzica są zwinięte – rozwijamy je)
+      await visit('#/postepy', async () => { const d = await page.$('details.parent > summary'); if (d) await d.click(); });
+      await visit('#/chmura', async () => { await page.click('details.parent > summary'); await page.fill('#link', 'zly link'); await page.click('#connect'); });
       for (const s of data.subjects) {
         if (s.link) {
           // przedmiot-odnośnik: kafelek i adres #/s/<id> prowadzą do przedmiotu w innej ścieżce
