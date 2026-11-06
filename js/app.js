@@ -1167,7 +1167,7 @@
       <details class="parent"><summary>👨‍👩‍👧 Dla rodzica: jak przygotować chmurę (raz, ok. 10 minut)</summary>
         <ol>
           <li>Na swoim koncie Google utwórz nowy, pusty arkusz (np. „Pomoc w szkole – postępy”).</li>
-          <li>W arkuszu wybierz <b>Rozszerzenia → Apps Script</b>. Usuń przykładowy kod i wklej cały kod z pliku <a href="apps-script/Kod.js" target="_blank" rel="noopener">apps-script/Kod.js</a>. Zapisz projekt.</li>
+          <li>W arkuszu wybierz <b>Rozszerzenia → Apps Script</b>. Usuń przykładowy kod i wklej cały kod z pliku <a href="apps-script/Kod.js" target="_blank" rel="noopener">apps-script/Kod.js</a>. Zapisz projekt. Jeśli zamiast edytora widzisz „Nie udało się otworzyć pliku”, w przeglądarce jest zalogowanych kilka kont Google – zrób całą instalację w oknie incognito, zalogowany tylko na jedno konto.</li>
           <li>Wróć do arkusza i odśwież stronę – pojawi się menu <b>🎒 Pomoc w szkole</b>. Wybierz <b>1. Przygotuj arkusz</b> i zezwól na dostęp. Google pokaże ostrzeżenie, że aplikacja nie jest zweryfikowana – przy własnym skrypcie to normalne: <i>Zaawansowane → Przejdź do projektu</i>.</li>
           <li>W edytorze Apps Script: <b>Wdróż → Nowe wdrożenie</b>, typ <b>Aplikacja internetowa</b>, „Wykonaj jako”: <b>Ja</b>, „Kto ma dostęp”: <b>Każdy</b>. Skopiuj adres aplikacji (kończy się na <code>/exec</code>).</li>
           <li>W arkuszu: menu <b>🎒 Pomoc w szkole → 2. Zapisz adres aplikacji internetowej</b> i wklej adres.</li>

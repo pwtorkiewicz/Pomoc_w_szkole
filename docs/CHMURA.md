@@ -14,6 +14,7 @@ Ta sama instrukcja jest w aplikacji: strona „☁️ Synchronizacja” → „D
 
 1. Na swoim koncie Google utwórz nowy, pusty arkusz, np. „Pomoc w szkole – postępy”.
 2. W arkuszu wybierz **Rozszerzenia → Apps Script**. Usuń przykładowy kod, wklej całą zawartość `apps-script/Kod.js` i zapisz projekt.
+   - Jeśli zamiast edytora pojawi się „Nie udało się otworzyć pliku. Sprawdź adres i spróbuj ponownie.”, w przeglądarce jest zalogowanych kilka kont Google (w adresie widać `authuser=1`, `authuser=2` itd.). Apps Script ma z tym znany kłopot. Zrób całą instalację w oknie incognito (albo w osobnym profilu przeglądarki), zalogowany tylko na konto, które ma być właścicielem arkusza. Dzieci i ich urządzenia nie muszą być zalogowane do Google.
 3. Odśwież arkusz. Pojawi się menu **🎒 Pomoc w szkole**. Wybierz **1. Przygotuj arkusz** i zezwól na dostęp.
    - Google ostrzeże, że aplikacja nie jest zweryfikowana. Przy własnym skrypcie to normalne: wybierz *Zaawansowane → Przejdź do projektu*.
    - Skrypt prosi o dostęp do arkuszy (zapis danych), do wysyłania poczty (raport) i do wyzwalaczy (raport co tydzień).
