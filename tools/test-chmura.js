@@ -94,7 +94,9 @@ async function e2e() {
   const B = await device('komputer', 1100);
   for (const p of [A, B]) {
     await p.goto(link);
-    await p.waitForSelector('.toast', { timeout: 5000 });
+    await p.click('.toast.ask [data-a="1"]', { timeout: 5000 });
+    await p.waitForSelector('.toast:not(.ask)', { timeout: 5000 });
+    check(/Połączono/.test(await p.textContent('.toast')), 'link połączenia: komunikat „Połączono”');
     check(!p.url().includes('polacz='), 'link połączenia usunięty z adresu');
   }
   await quiz(A, 'matematyka');

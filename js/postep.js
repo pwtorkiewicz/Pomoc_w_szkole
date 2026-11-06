@@ -349,7 +349,7 @@
     if (!SCRIPT_RE.test(script || '') || !CODE_RE.test(code || '')) throw new Error('link połączenia jest niepełny – skopiuj go jeszcze raz w całości');
     const res = await call(script, { a: 'hello', v: 1, k: code, d: DEV });
     const name = res.name || 'uczeń';
-    if (ask && !confirm(`Połączyć to urządzenie z profilem „${name}” w chmurze rodzica?\n\nPostęp nauki z tego urządzenia będzie się zapisywał w arkuszu Google rodzica i łączył z postępem z innych połączonych urządzeń.`)) return null;
+    if (ask && !(await askPanel(name))) return null;
     const assigned = [];
     updateCfg((c) => {
       if (c.script && c.script !== script) Object.assign(c, emptyCfg()); // inny arkusz rodzica – zaczynamy od nowa
@@ -415,8 +415,28 @@
   }
 
   // ---------- Na stronie: link połączenia, stopka, automatyczna synchronizacja ----------
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  // Pytanie o połączenie na stronie, nie przez confirm() – wbudowane przeglądarki komunikatorów
+  // (Messenger, Gmail itp.) potrafią po cichu blokować okna dialogowe.
+  function askPanel(name) {
+    return new Promise((resolve) => {
+      if (typeof document === 'undefined' || !document.body) { resolve(true); return; }
+      document.querySelectorAll('.toast').forEach((x) => x.remove());
+      const el = document.createElement('div');
+      el.className = 'toast ask';
+      el.setAttribute('role', 'dialog');
+      el.setAttribute('aria-label', 'Połączenie z chmurą rodzica');
+      el.innerHTML = `<p><b>☁️ Połączyć to urządzenie z profilem „${esc(name)}”?</b><br>
+        Postęp nauki z tego urządzenia będzie się zapisywał w arkuszu Google rodzica i łączył z postępem z innych połączonych urządzeń.</p>
+        <div class="row"><button class="btn primary" data-a="1">Połącz</button><button class="btn" data-a="0">Nie teraz</button></div>`;
+      el.querySelectorAll('button').forEach((b) => (b.onclick = () => { el.remove(); resolve(b.dataset.a === '1'); }));
+      document.body.appendChild(el);
+      el.querySelector('button').focus();
+    });
+  }
   function toast(text) {
     if (typeof document === 'undefined' || !document.body) return;
+    document.querySelectorAll('.toast:not(.ask)').forEach((x) => x.remove());
     const el = document.createElement('div');
     el.className = 'toast';
     el.setAttribute('role', 'status');
@@ -444,8 +464,10 @@
     q.delete('skrypt');
     const rest = q.toString();
     try { history.replaceState(null, '', location.pathname + (rest ? `?${rest}` : '') + location.hash); } catch (e) { /* file:// */ }
+    toast('☁️ Łączę z chmurą rodzica…');
     try {
       const r = await connect(script, code, true);
+      if (!r) toast('Nie połączono. Link możesz otworzyć jeszcze raz albo wkleić go na stronie „☁️ Synchronizacja”.');
       if (r) toast(r.assigned.length ? `☁️ Połączono z profilem „${r.name}”. Postęp będzie się łączył z innymi urządzeniami.` : `☁️ Połączono z profilem „${r.name}”. Wybierz jego ścieżki na stronie „Synchronizacja”.`);
     } catch (e) { toast(`Nie udało się połączyć: ${e.message}`); }
   }

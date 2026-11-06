@@ -355,6 +355,8 @@ details.report pre { white-space: pre-wrap; word-break: break-word; font: inheri
 .assign label { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 8px 14px; }
 .assign select { font: inherit; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--text); max-width: 100%; }
 .row .gap { flex: 1 1 220px; width: auto; min-width: 0; }
+.toast.ask { background: var(--surface); color: var(--text); border: 2px solid var(--primary); width: 460px; padding: 14px 16px 8px; }
+.toast.ask p { margin: 0 0 6px; }
 .toast {
   position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 20;
   width: max-content; max-width: calc(100% - 32px); background: var(--text); color: var(--bg);

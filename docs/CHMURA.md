@@ -63,7 +63,7 @@ Klucze `storeKey` ścieżek się nie zmieniły, a stare zapisy działają dalej.
 ### Synchronizacja
 
 - Urządzenie ma losowy identyfikator `pomoc_urzadzenie`. Konfiguracja chmury jest w `pomoc_chmura`: `script` (id wdrożenia), `profiles` (kod → imię i stan), `tracks` (ścieżka → kod; rodzeństwo na jednym urządzeniu), `since`, `sent`.
-- Link połączenia ma postać `…/Pomoc_w_szkole/?polacz=<kod>&skrypt=<id>`. Obsługuje go `js/postep.js` na każdej stronie (z pytaniem o zgodę), a potem usuwa parametry z adresu. Można go też wkleić na stronie `#/chmura`.
+- Link połączenia ma postać `…/Pomoc_w_szkole/?polacz=<kod>&skrypt=<id>`. Obsługuje go `js/postep.js` na każdej stronie: pyta o zgodę panelem na stronie (nie `confirm()`, bo wbudowane przeglądarki komunikatorów potrafią blokować okna dialogowe), a potem usuwa parametry z adresu. Można go też wkleić na stronie `#/chmura`.
 - Żądanie to `POST` z `Content-Type: text/plain`, czyli bez zapytania wstępnego CORS. Wygląda tak: `{ a: 'sync', k: kod, d: urządzenie, since: { urządzenie: czas }, tracks: { storeKey: stan } }`.
   - Wysyłamy tylko ścieżki zmienione od ostatniego wysłania (skrót w `sent`).
   - Skrypt zapisuje stan urządzenia i odsyła zapisy innych urządzeń zmienione od `since`.
