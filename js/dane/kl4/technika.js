@@ -308,6 +308,212 @@ window.SUBJECTS.push({
       ],
     },
     {
+      id: 'manewry-skrzyzowania',
+      name: 'Manewry i pierwszeństwo na skrzyżowaniu',
+      chapter: 'rozdział III „Jeżdżę rowerem i hulajnogą” (wykonuję manewry na drodze, poznaję zasady pierwszeństwa na skrzyżowaniu, oceniam sytuacje na drodze)',
+      basis: 'Dz.U. 2026 poz. 378, zajęcia praktyczno-techniczne kl. IV–VI: dz. 8, wym. 1 (zasady ruchu podczas jazdy rowerem, znaki i sygnały drogowe), wym. 4 (ocena sytuacji na drodze i decyzje według reguł ustępowania pierwszeństwa), wym. 11 (przygotowanie do karty rowerowej). Przepisy – ustawa Prawo o ruchu drogowym, tekst ujednolicony Kancelarii Sejmu na podstawie t.j. Dz.U. 2024 poz. 1251 ze zm. (do Dz.U. 2026 poz. 1073; eli.gov.pl, stan na 4.11.2026): art. 2 pkt 10, 23, 26–28 (skrzyżowanie, ustąpienie pierwszeństwa, wymijanie, omijanie, wyprzedzanie), art. 5 (kolejność: polecenia osoby kierującej ruchem → sygnały świetlne → znaki), art. 17 (włączanie się do ruchu), art. 22 ust. 1–2, 4–6 (skręcanie, zmiana pasa, sygnalizowanie ręką, zakaz zawracania), art. 23 ust. 1 (wymijanie, omijanie), art. 24 ust. 1–3, 5, 12 (wyprzedzanie; odstęp 1 m od roweru; rower wyprzedza powoli jadące pojazdy z prawej), art. 25 ust. 1–2, 4 (prawa ręka, skręt w lewo, tramwaj, brak miejsca za skrzyżowaniem), art. 26 ust. 2–3 i art. 27 ust. 1a, 4 (pierwszeństwo pieszych i rowerzystów przy skręcaniu, zakaz wyprzedzania na przejściach). Znaki i sygnały – rozporządzenie w sprawie znaków i sygnałów drogowych (Dz.U. 2019 poz. 2310; zmiany z lat 2021–2026 nie dotyczą tych przepisów): § 5 (A-5, A-6a–c, A-7), § 21 (B-20), § 36 (C-12), § 43 (D-1), § 95–96 (sygnały świetlne, zielona strzałka); kształt znaków D-1 i B-20 – Dz.U. 2019 poz. 2311 (sprawdzone 6.11.2026). Wybór na klasę 4 – podręcznik „Jak to zrobić? 4”, rozdział III.3–5.',
+      theory: `
+        <h3>Manewr krok po kroku</h3>
+        <p><b>Manewr</b> to np. ruszanie, skręcanie, zmiana pasa ruchu, wymijanie, omijanie, wyprzedzanie, zawracanie. Każdy wykonujesz z <b>zachowaniem szczególnej ostrożności</b>:</p>
+        <ol>
+          <li><b>Obejrzyj się</b> i sprawdź, czy możesz bezpiecznie wykonać manewr.</li>
+          <li><b>Zasygnalizuj</b> manewr <b>zawczasu i wyraźnie</b>. Rower zwykle nie ma kierunkowskazów – wtedy <b>wyciągasz rękę w stronę, w którą skręcasz</b>: w lewo – lewą rękę, w prawo – prawą.</li>
+          <li>Jeszcze raz się upewnij, chwyć kierownicę i <b>wykonaj manewr</b>.</li>
+        </ol>
+        <h3>Włączanie się do ruchu</h3>
+        <p>Włączasz się do ruchu, gdy <b>ruszasz</b> po postoju albo <b>wjeżdżasz na drogę</b>: z podwórka lub posesji, ze strefy zamieszkania, z drogi gruntowej na utwardzoną, z drogi dla rowerów na jezdnię. Wtedy <b>ustępujesz pierwszeństwa wszystkim</b> innym pojazdom i uczestnikom ruchu.</p>
+        <h3>Skręcanie i zmiana pasa</h3>
+        <table>
+          <tr><th>Manewr</th><th>Jak go wykonać</th></tr>
+          <tr><td><b>skręt w prawo</b></td><td>zbliż się do <b>prawej krawędzi</b> jezdni</td></tr>
+          <tr><td><b>skręt w lewo</b></td><td>zbliż się do <b>środka jezdni</b> (na drodze jednokierunkowej – do lewej krawędzi); przepuść jadących z przeciwka na wprost i w prawo</td></tr>
+          <tr><td><b>zmiana pasa</b></td><td>ustąp pierwszeństwa pojazdowi jadącemu pasem, na który chcesz wjechać</td></tr>
+        </table>
+        <p>Skręcając w drogę poprzeczną, <b>ustępujesz pierwszeństwa pieszym</b>, którzy przechodzą przez jezdnię, w którą wjeżdżasz, i <b>rowerzystom jadącym na wprost</b>.</p>
+        <p><b>Nie wolno zawracać</b> m.in. w tunelu, na moście, na wiadukcie i na drodze jednokierunkowej.</p>
+        <h3>Wymijanie, omijanie, wyprzedzanie</h3>
+        <table>
+          <tr><th>Manewr</th><th>Przejeżdżasz obok…</th><th>Zasada</th></tr>
+          <tr><td><b>wymijanie</b></td><td>kogoś, kto jedzie <b>z przeciwka</b></td><td>bezpieczny odstęp; w razie potrzeby zjedź w prawo i zwolnij</td></tr>
+          <tr><td><b>omijanie</b></td><td>czegoś, co <b>stoi</b> – pojazdu albo przeszkody</td><td>bezpieczny odstęp; w razie potrzeby zwolnij</td></tr>
+          <tr><td><b>wyprzedzanie</b></td><td>kogoś, kto jedzie <b>w tę samą stronę</b></td><td>z <b>lewej</b> strony</td></tr>
+        </table>
+        <p>Zanim zaczniesz wyprzedzać, upewnij się, że: <b>dobrze widzisz drogę i masz dość miejsca</b>, nikt za tobą nie zaczął cię wyprzedzać, a jadący przed tobą nie pokazuje, że skręca lub wyprzedza. Kogoś, kto pokazuje skręt w lewo, wyprzedzasz <b>z prawej</b>.</p>
+        <ul>
+          <li>Rowerzysta może wyprzedzać <b>z prawej strony powoli jadące pojazdy</b> – ale nie inny rower.</li>
+          <li>Nie wolno wyprzedzać <b>na przejściu dla pieszych i przejeździe dla rowerów ani tuż przed nimi</b> (chyba że ruch kieruje sygnalizacja albo np. policjant).</li>
+          <li>Kierowca wyprzedzający rower musi zachować odstęp <b>co najmniej 1 m</b>.</li>
+        </ul>
+        <h3>Kto ma pierwszeństwo na skrzyżowaniu?</h3>
+        <p>Sprawdzaj po kolei – pierwsze, co jest, wygrywa:</p>
+        <ol>
+          <li><b>Polecenia policjanta</b> (lub innej osoby kierującej ruchem) – ważniejsze niż światła i znaki.</li>
+          <li><b>Sygnalizacja świetlna</b> – ważniejsza niż znaki pierwszeństwa.</li>
+          <li><b>Znaki</b> pierwszeństwa.</li>
+          <li><b>Zasada prawej ręki</b> – gdy nie ma ani świateł, ani znaków (skrzyżowanie <b>równorzędne</b>).</li>
+        </ol>
+        <h3>Skrzyżowanie równorzędne – zasada prawej ręki</h3>
+        <ul>
+          <li><b>Ustąp pierwszeństwa pojazdowi z prawej strony.</b></li>
+          <li>Gdy <b>skręcasz w lewo</b> – przepuść też jadących <b>z przeciwka</b> na wprost i w prawo.</li>
+          <li><b>Tramwaj</b> ma pierwszeństwo przed innymi pojazdami, z której strony by nie jechał.</li>
+          <li>Znak <b>A-5 „skrzyżowanie dróg”</b> ostrzega o skrzyżowaniu, na którym pierwszeństwa nie określają znaki.</li>
+        </ul>
+        <h3>Znaki pierwszeństwa</h3>
+        <table>
+          <tr><th>Znak</th><th>Co oznacza</th></tr>
+          <tr><td><b>D-1</b> „droga z pierwszeństwem” – kwadrat ustawiony na rogu</td><td>jedziesz drogą z pierwszeństwem</td></tr>
+          <tr><td><b>A-6a, A-6b, A-6c</b></td><td>skrzyżowanie z drogą podporządkowaną – ty masz pierwszeństwo</td></tr>
+          <tr><td><b>A-7</b> „ustąp pierwszeństwa” – trójkąt wierzchołkiem w dół</td><td>dojeżdżasz do drogi z pierwszeństwem – ustąp jadącym po niej</td></tr>
+          <tr><td><b>B-20</b> „stop” – ośmiokąt</td><td><b>zatrzymaj się</b> przed drogą z pierwszeństwem i ustąp jadącym po niej</td></tr>
+          <tr><td><b>C-12</b> „ruch okrężny” razem z <b>A-7</b></td><td>rondo: pierwszeństwo ma ten, kto <b>już jest na rondzie</b></td></tr>
+        </table>
+        <h3>Sygnalizacja świetlna</h3>
+        <table>
+          <tr><th>Światło</th><th>Co robisz</th></tr>
+          <tr><td>🟢 <b>zielone</b></td><td>możesz jechać – ale nie wjeżdżaj, jeśli utrudnisz pieszym lub rowerzystom zejście z jezdni albo nie zdążysz opuścić skrzyżowania</td></tr>
+          <tr><td>🟡 <b>żółte</b></td><td>zatrzymaj się; jedziesz dalej tylko wtedy, gdy jesteś tak blisko, że musiałbyś gwałtownie hamować; zaraz zapali się czerwone</td></tr>
+          <tr><td>🔴 <b>czerwone</b></td><td>stój</td></tr>
+          <tr><td>🔴🟡 <b>czerwone i żółte</b> razem</td><td>nadal stój – zaraz zapali się zielone</td></tr>
+          <tr><td>🔴 + zielona <b>strzałka</b></td><td>możesz skręcić w stronę strzałki, ale najpierw <b>zatrzymaj się</b> i nie utrudniaj ruchu innym</td></tr>
+        </table>
+        <div class="tip">💡 Nigdy nie wjeżdżaj na skrzyżowanie, jeśli za nim nie ma miejsca, żeby jechać dalej – nawet przy zielonym świetle.</div>
+      `,
+      infographicNote: 'Na skrzyżowaniu sprawdzaj od góry: pierwsze, co jest – rozstrzyga. Na dole – jak wykonać każdy manewr.',
+      infographic: {
+        type: 'kroki',
+        top: { icon: '🚦', title: 'Kto ma pierwszeństwo?', text: 'sprawdzaj po kolei – od góry', kolor: 5 },
+        items: [
+          { icon: '👮', title: '1. Policjant', text: 'jego polecenia są ważniejsze niż światła i znaki', kolor: 1 },
+          { icon: '🚥', title: '2. Sygnalizacja świetlna', text: 'ważniejsza niż znaki; zielona strzałka – najpierw stań', kolor: 1 },
+          { icon: '🔻', title: '3. Znaki', text: 'D-1 – masz pierwszeństwo; A-7 – ustąp; B-20 – stań i ustąp', kolor: 4 },
+          { icon: '👉', title: '4. Zasada prawej ręki', text: 'ustąp temu z prawej; skręcasz w lewo – przepuść też jadących z przeciwka', kolor: 3 },
+        ],
+        bottom: { title: '🚲 Każdy manewr', items: ['obejrzyj się', 'pokaż ręką zawczasu: w lewo – lewa, w prawo – prawa', 'w prawo – przy prawej krawędzi, w lewo – od środka jezdni', 'wyprzedzasz z lewej'], kolor: 2 },
+      },
+      flashcards: [
+        ['Jak rowerzysta sygnalizuje skręt?', 'Wyciąga rękę w stronę skrętu – zawczasu i wyraźnie'],
+        ['Włączanie się do ruchu', 'Ruszanie albo wjazd na drogę (np. z podwórka) – ustępujesz pierwszeństwa wszystkim'],
+        ['Skręt w prawo', 'Zbliż się do prawej krawędzi jezdni'],
+        ['Skręt w lewo', 'Zbliż się do środka jezdni; przepuść jadących z przeciwka na wprost i w prawo'],
+        ['Zmiana pasa ruchu', 'Ustąp pojazdowi jadącemu pasem, na który wjeżdżasz'],
+        ['Wymijanie', 'Przejeżdżanie obok kogoś, kto jedzie z przeciwka'],
+        ['Omijanie', 'Przejeżdżanie obok pojazdu, który stoi, albo przeszkody'],
+        ['Wyprzedzanie', 'Przejeżdżanie obok kogoś, kto jedzie w tę samą stronę – z lewej'],
+        ['Rower wyprzedza z prawej?', 'Tak – powoli jadące pojazdy, ale nie inny rower'],
+        ['Kolejność na skrzyżowaniu', 'Policjant → światła → znaki → zasada prawej ręki'],
+        ['Zasada prawej ręki', 'Na skrzyżowaniu równorzędnym ustępujesz pojazdowi z prawej strony'],
+        ['D-1 / A-7', '„Droga z pierwszeństwem” / „ustąp pierwszeństwa”'],
+        ['B-20 „stop”', 'Zatrzymaj się przed drogą z pierwszeństwem i ustąp jadącym po niej'],
+        ['Rondo (C-12 i A-7)', 'Pierwszeństwo ma ten, kto już jest na rondzie'],
+        ['Czerwone i zielona strzałka', 'Zatrzymaj się, potem możesz skręcić w stronę strzałki, nie utrudniając ruchu'],
+      ],
+      questions: [
+        { id: 'of904d', q: 'Chcesz skręcić rowerem w lewo. Rower nie ma kierunkowskazów. Jak to pokazujesz?', options: ['wyciągam w bok lewą rękę', 'wyciągam w bok prawą rękę', 'unoszę rękę nad głowę', 'dzwonię dzwonkiem dwa razy'], answer: 0, explain: 'Zamiar skrętu sygnalizujesz zawczasu i wyraźnie, wyciągając rękę w stronę skrętu – w lewo lewą, w prawo prawą.' },
+        { id: 'kjmh9w', q: 'Kiedy sygnalizujesz ręką zamiar skrętu?', options: ['zawczasu, zanim zaczniesz skręcać', 'dopiero po skręceniu', 'w połowie skrętu', 'tylko gdy ktoś jedzie za tobą'], answer: 0, explain: 'Przepis mówi: zawczasu i wyraźnie. Inni muszą wiedzieć wcześniej, co zrobisz.' },
+        { id: '2wpfro', q: 'Wyjeżdżasz rowerem z podwórka na ulicę. Kto ma pierwszeństwo?', options: ['wszyscy jadący i idący po drodze', 'ty, bo jesteś po prawej stronie', 'ten, kto jedzie szybciej', 'ty, jeśli zadzwonisz dzwonkiem'], answer: 0, explain: 'Wyjazd z posesji to włączanie się do ruchu – ustępujesz pierwszeństwa wszystkim pojazdom i innym uczestnikom ruchu.' },
+        { id: '8q1ow5', q: 'Zjeżdżasz z drogi dla rowerów na jezdnię. Jak nazywa się ten manewr?', options: ['włączanie się do ruchu', 'wymijanie innego pojazdu', 'omijanie przeszkody', 'wyprzedzanie z prawej'], answer: 0, explain: 'Wjazd z drogi dla rowerów na jezdnię to włączanie się do ruchu – trzeba ustąpić pierwszeństwa innym.' },
+        { id: 'qunzey', q: 'Chcesz skręcić w prawo. Gdzie powinien być wtedy twój rower?', options: ['przy prawej krawędzi jezdni', 'na środku jezdni', 'przy lewej krawędzi jezdni', 'na chodniku obok jezdni'], answer: 0, explain: 'Przed skrętem w prawo zbliżasz się do prawej krawędzi jezdni.' },
+        { id: 'zc1lbn', q: 'Chcesz skręcić w lewo na zwykłej, dwukierunkowej ulicy. Do czego się zbliżasz?', options: ['do środka jezdni', 'do prawej krawędzi jezdni', 'do lewej krawędzi jezdni', 'do najbliższego chodnika'], answer: 0, explain: 'Przed skrętem w lewo zbliżasz się do środka jezdni. Tylko na jezdni jednokierunkowej – do jej lewej krawędzi.' },
+        { id: 'nf9zxe', q: 'Skręcasz w prawo w boczną ulicę. Po jej jezdni przechodzi pieszy. Co robisz?', options: ['przepuszczam pieszego', 'jadę, bo mam zielone światło', 'dzwonię, żeby się pospieszył', 'objeżdżam go z tyłu'], answer: 0, explain: 'Skręcając w drogę poprzeczną, ustępujesz pierwszeństwa pieszym przechodzącym przez jezdnię, w którą wjeżdżasz.' },
+        { id: 'icivxf', q: 'Chcesz zmienić pas ruchu na sąsiedni. Kto ma pierwszeństwo?', options: ['pojazd jadący pasem, na który chcesz wjechać', 'ty, bo pokazałeś to wcześniej ręką', 'ten, kto jest bliżej prawego krawężnika', 'zawsze większy i cięższy pojazd'], answer: 0, explain: 'Zmieniając pas, ustępujesz pierwszeństwa pojazdowi jadącemu po pasie, na który zamierzasz wjechać.' },
+        {
+          id: '3f039r', q: 'Jak nazywa się taki manewr rowerzysty?',
+          svg: `<svg viewBox="0 0 300 140" role="img" aria-label="Jezdnia. Przy prawej krawędzi stoi samochód. Rowerzysta przejeżdża obok niego łukiem, z lewej strony.">
+            <defs><marker id="a-k4te-q-om" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+            <line x1="0" y1="30" x2="300" y2="30" class="ln"/>
+            <line x1="0" y1="110" x2="300" y2="110" class="ln"/>
+            <line x1="0" y1="70" x2="300" y2="70" class="ln-thin dash"/>
+            <rect x="150" y="80" width="56" height="26" rx="5" class="f2 s2 sw"/>
+            <text x="178" y="98" class="tx-s" text-anchor="middle">stoi</text>
+            <rect x="52" y="82" width="30" height="22" rx="5" class="f1 s1 sw"/>
+            <text x="67" y="99" class="tx" text-anchor="middle">🚲</text>
+            <path d="M86,93 C116,93 126,55 178,55 C226,55 236,93 270,93" class="ln s1" marker-end="url(#a-k4te-q-om)"/>
+          </svg>`,
+          options: ['omijanie', 'wymijanie', 'wyprzedzanie', 'włączanie się do ruchu'], answer: 0, explain: 'Przejeżdżanie obok pojazdu, który stoi (albo przeszkody), to omijanie. Wyprzedzasz kogoś, kto jedzie w tę samą stronę.',
+        },
+        { id: 'xe6hob', q: 'Jak nazywa się przejeżdżanie obok rowerzysty, który jedzie z przeciwka?', options: ['wymijanie', 'omijanie', 'wyprzedzanie', 'zawracanie'], answer: 0, explain: 'Wymijanie – obok kogoś, kto jedzie z przeciwka. Omijanie – obok czegoś, co stoi. Wyprzedzanie – obok kogoś, kto jedzie w tę samą stronę.' },
+        { id: 'afdo7e', q: 'Jak nazywa się przejeżdżanie obok rowerzysty, który jedzie przed tobą w tę samą stronę?', options: ['wyprzedzanie', 'wymijanie', 'omijanie', 'zawracanie'], answer: 0, explain: 'Wyprzedzanie to przejeżdżanie obok pojazdu lub uczestnika ruchu jadącego w tym samym kierunku.' },
+        { id: 'by7p4c', q: 'Z której strony zwykle wyprzedzasz innego rowerzystę?', options: ['z lewej', 'z prawej', 'z dowolnej', 'chodnikiem'], answer: 0, explain: 'Wyprzedza się z lewej strony. Z prawej – tylko kogoś, kto pokazuje skręt w lewo.' },
+        { id: 'maouvu', q: 'Rowerzysta przed tobą wyciągnął lewą rękę – skręca w lewo. Chcesz go wyprzedzić. Z której strony?', options: ['z prawej', 'z lewej', 'z obu stron naraz', 'wcale nie można'], answer: 0, explain: 'Pojazd lub uczestnika ruchu, który sygnalizuje skręt w lewo, wyprzedza się tylko z prawej strony.' },
+        { id: '4x013c', q: 'Prawda czy fałsz?\nRowerzysta może wyprzedzić z prawej strony powoli jadący samochód.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Kierujący rowerem może wyprzedzać z prawej strony powoli jadące pojazdy – ale nie inny rower.' },
+        { id: 'n8sech', q: 'Gdzie nie wolno wyprzedzać?', options: ['na przejściu dla pieszych i tuż przed nim', 'na prostej drodze z dobrą widocznością', 'na drodze dla rowerów, gdy jest dużo miejsca', 'poza miastem, gdy nikt nie jedzie z przeciwka'], answer: 0, explain: 'Wyprzedzanie na przejściu dla pieszych i bezpośrednio przed nim jest zabronione (chyba że ruch jest kierowany). Tak samo na przejeździe dla rowerów.' },
+        { id: 'osr5nq', q: 'Co musisz sprawdzić, zanim zaczniesz wyprzedzać?', options: ['czy dobrze widzisz drogę i masz dość miejsca', 'czy masz nowy, szybki rower', 'czy wyprzedzany rowerzysta cię zna', 'czy na niebie świeci słońce'], answer: 0, explain: 'Przed wyprzedzaniem upewniasz się m.in., że masz dobrą widoczność i dość miejsca, a nikt za tobą nie zaczął wyprzedzać.' },
+        { id: 'yts6xi', q: 'Jaki odstęp musi zachować kierowca samochodu, który wyprzedza rowerzystę?', options: ['co najmniej 1 m', 'co najmniej 10 cm', 'co najmniej 30 cm', 'dowolny'], answer: 0, explain: 'Przy wyprzedzaniu roweru odstęp nie może być mniejszy niż 1 m.' },
+        { id: 'ffn69i', q: 'Gdzie nie wolno zawracać?', options: ['na moście', 'na szerokiej ulicy w mieście', 'na pustym skrzyżowaniu', 'na drodze osiedlowej'], answer: 0, explain: 'Zabrania się zawracania m.in. w tunelu, na moście, wiadukcie i na drodze jednokierunkowej.' },
+        {
+          id: 'gfmqbc', q: 'Skrzyżowanie bez znaków i bez świateł. Pojazd A jedzie prosto, pojazd B też. Kto przejedzie pierwszy?',
+          svg: `<svg viewBox="0 0 300 230" role="img" aria-label="Skrzyżowanie dwóch dróg bez znaków i świateł. Pojazd A nadjeżdża z dołu i jedzie prosto do góry. Pojazd B nadjeżdża z prawej strony rysunku i jedzie prosto w lewo – jest po prawej stronie pojazdu A.">
+            <defs><marker id="a-k4te-q-pr" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+            <path d="M0,85 H120 V0 M180,0 V85 H300 M0,145 H120 V230 M180,230 V145 H300" class="ln"/>
+            <path d="M0,115 H120 M180,115 H300 M150,0 V85 M150,145 V230" class="ln-thin dash"/>
+            <rect x="154" y="160" width="22" height="34" rx="4" class="f1 s1 sw"/>
+            <text x="165" y="183" class="tx-b" text-anchor="middle">A</text>
+            <path d="M165,156 V22" class="ln s1" marker-end="url(#a-k4te-q-pr)"/>
+            <rect x="200" y="89" width="34" height="22" rx="4" class="f2 s2 sw"/>
+            <text x="217" y="106" class="tx-b" text-anchor="middle">B</text>
+            <path d="M196,100 H22" class="ln s2" marker-end="url(#a-k4te-q-pr)"/>
+          </svg>`,
+          options: ['pojazd B', 'pojazd A', 'oba jednocześnie'], answer: 0, explain: 'To skrzyżowanie równorzędne – działa zasada prawej ręki. B nadjeżdża z prawej strony A, więc A ustępuje pierwszeństwa.',
+        },
+        {
+          id: 'awd0y2', q: 'Skrzyżowanie bez znaków i bez świateł. Pojazd A skręca w lewo, pojazd B jedzie z przeciwka prosto. Kto przejedzie pierwszy?',
+          svg: `<svg viewBox="0 0 300 230" role="img" aria-label="Skrzyżowanie bez znaków i świateł. Pojazd A nadjeżdża z dołu i skręca w lewo. Pojazd B nadjeżdża z góry, z przeciwka, i jedzie prosto w dół.">
+            <defs><marker id="a-k4te-q-lw" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+            <path d="M0,85 H120 V0 M180,0 V85 H300 M0,145 H120 V230 M180,230 V145 H300" class="ln"/>
+            <path d="M0,115 H120 M180,115 H300 M150,0 V85 M150,145 V230" class="ln-thin dash"/>
+            <rect x="154" y="160" width="22" height="34" rx="4" class="f1 s1 sw"/>
+            <text x="165" y="183" class="tx-b" text-anchor="middle">A</text>
+            <path d="M165,156 C165,112 150,100 22,100" class="ln s1" marker-end="url(#a-k4te-q-lw)"/>
+            <rect x="124" y="36" width="22" height="34" rx="4" class="f2 s2 sw"/>
+            <text x="135" y="59" class="tx-b" text-anchor="middle">B</text>
+            <path d="M135,74 V212" class="ln s2" marker-end="url(#a-k4te-q-lw)"/>
+          </svg>`,
+          options: ['pojazd B', 'pojazd A', 'oba jednocześnie'], answer: 0, explain: 'Kto skręca w lewo, ustępuje pierwszeństwa jadącym z przeciwka na wprost i w prawo. A czeka, aż przejedzie B.',
+        },
+        {
+          id: 'y9d2hj', q: 'Jedziesz rowerem A. Przed skrzyżowaniem stoi znak A-7, a pojazd B jedzie drogą ze znakiem D-1. Kto przejedzie pierwszy?',
+          svg: `<svg viewBox="0 0 300 230" role="img" aria-label="Skrzyżowanie. Rower A nadjeżdża z lewej strony i jedzie prosto w prawo; przy jego drodze stoi znak A-7 ustąp pierwszeństwa – trójkąt wierzchołkiem w dół. Pojazd B nadjeżdża z góry i jedzie prosto w dół; przy jego drodze stoi znak D-1 droga z pierwszeństwem – kwadrat ustawiony na rogu. B jest po lewej stronie roweru A.">
+            <defs><marker id="a-k4te-q-zn" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+            <path d="M0,85 H120 V0 M180,0 V85 H300 M0,145 H120 V230 M180,230 V145 H300" class="ln"/>
+            <path d="M0,115 H120 M180,115 H300 M150,0 V85 M150,145 V230" class="ln-thin dash"/>
+            <rect x="66" y="119" width="34" height="22" rx="4" class="f1 s1 sw"/>
+            <text x="83" y="136" class="tx-b" text-anchor="middle">A</text>
+            <path d="M104,130 H280" class="ln s1" marker-end="url(#a-k4te-q-zn)"/>
+            <path d="M88,156 L112,156 L100,177 Z" class="f4 s2 sw"/>
+            <text x="100" y="196" class="tx-s" text-anchor="middle">A-7</text>
+            <rect x="124" y="36" width="22" height="34" rx="4" class="f2 s2 sw"/>
+            <text x="135" y="59" class="tx-b" text-anchor="middle">B</text>
+            <path d="M135,74 V212" class="ln s2" marker-end="url(#a-k4te-q-zn)"/>
+            <path d="M100,36 L113,49 L100,62 L87,49 Z" class="f4 s4 sw"/>
+            <text x="100" y="80" class="tx-s" text-anchor="middle">D-1</text>
+          </svg>`,
+          options: ['pojazd B', 'rower A', 'oba jednocześnie'], answer: 0, explain: 'Znaki są ważniejsze niż zasada prawej ręki. A-7 każe ustąpić pierwszeństwa jadącym drogą z pierwszeństwem (D-1), więc rower A czeka – choć B nadjeżdża z jego lewej strony.',
+        },
+        { id: 'lj4ko8', q: 'Przed skrzyżowaniem stoi znak B-20 „stop”. Co robisz?', options: ['zatrzymuję się i ustępuję jadącym drogą z pierwszeństwem', 'zwalniam i przejeżdżam, jeśli nikogo nie widać z daleka', 'jadę dalej, bo to tylko ostrzeżenie przed skrzyżowaniem', 'zatrzymuję się tylko wtedy, gdy coś jedzie z prawej'], answer: 0, explain: 'B-20 to zakaz wjazdu bez zatrzymania się przed drogą z pierwszeństwem i obowiązek ustąpienia pierwszeństwa jadącym tą drogą.' },
+        { id: 'z825kv', q: 'Co jest najważniejsze na skrzyżowaniu?', options: ['polecenia policjanta', 'sygnalizacja świetlna', 'znaki drogowe', 'zasada prawej ręki'], answer: 0, explain: 'Polecenia osoby kierującej ruchem (np. policjanta) są ważniejsze niż światła i znaki. Światła są ważniejsze niż znaki pierwszeństwa.' },
+        { id: 'vrec5b', q: 'Na skrzyżowaniu działa sygnalizacja świetlna, a pod nią wisi znak A-7. Czego słuchasz?', options: ['sygnalizacji świetlnej', 'znaku A-7', 'zasady prawej ręki', 'tego, kto jedzie szybciej'], answer: 0, explain: 'Sygnały świetlne mają pierwszeństwo przed znakami, które regulują pierwszeństwo przejazdu.' },
+        { id: 'sbtjm9', q: 'Na sygnalizatorze zapaliło się światło żółte, a ty jesteś jeszcze daleko od skrzyżowania. Co robisz?', options: ['zatrzymuję się przed sygnalizatorem', 'przyspieszam, żeby zdążyć przed czerwonym', 'jadę dalej tak samo jak przy zielonym', 'zawracam od razu na skrzyżowaniu'], answer: 0, explain: 'Żółte światło to zakaz wjazdu – chyba że jesteś tak blisko, że musiałbyś gwałtownie hamować. Zaraz zapali się czerwone.' },
+        { id: 'z8yqz7', q: 'Świecą się jednocześnie światła czerwone i żółte. Co to znaczy?', options: ['nadal stój – zaraz zapali się zielone', 'możesz już jechać, ale ostrożnie', 'zaraz zapali się samo czerwone', 'sygnalizacja jest zepsuta'], answer: 0, explain: 'Czerwone i żółte razem to nadal zakaz wjazdu. Oznaczają, że za chwilę zapali się światło zielone.' },
+        {
+          id: 'b4nlv3', q: 'Świeci się czerwone światło, a obok – zielona strzałka w prawo. Chcesz skręcić w prawo. Co musisz zrobić najpierw?',
+          svg: `<svg viewBox="0 0 300 150" role="img" aria-label="Sygnalizator: świeci się górne, czerwone światło. Obok, na dole, dodatkowe okienko z zieloną strzałką skierowaną w prawo.">
+            <rect x="118" y="6" width="48" height="138" rx="10" class="bg ln"/>
+            <circle cx="142" cy="32" r="15" class="fl-r"/>
+            <circle cx="142" cy="75" r="15" class="ln-thin"/>
+            <circle cx="142" cy="118" r="15" class="ln-thin"/>
+            <rect x="172" y="99" width="38" height="38" rx="6" class="bg ln"/>
+            <path d="M178,112 L192,112 L192,104 L204,118 L192,132 L192,124 L178,124 Z" class="fl-g"/>
+          </svg>`,
+          options: ['zatrzymać się przed sygnalizatorem', 'szybko skręcić, zanim strzałka zgaśnie', 'zadzwonić dzwonkiem i jechać', 'zjechać na chodnik i go objechać'], answer: 0, explain: 'Zielona strzałka przy czerwonym świetle pozwala skręcić w jej kierunku, ale dopiero po zatrzymaniu się przed sygnalizatorem i tylko wtedy, gdy nie utrudnisz ruchu innym.',
+        },
+        { id: 'tc6ys9', q: 'Dojeżdżasz do ronda. Stoją znaki C-12 „ruch okrężny” i A-7 „ustąp pierwszeństwa”. Kto ma pierwszeństwo?', options: ['ten, kto już jest na rondzie', 'ty, bo wjeżdżasz na rondo', 'ten, kto jest z twojej prawej', 'ten, kto jedzie najszybciej'], answer: 0, explain: 'Znak C-12 razem ze znakiem A-7 oznacza pierwszeństwo kierującego znajdującego się na skrzyżowaniu przed wjeżdżającym na nie.' },
+        { id: 'gnpue6', q: 'Na skrzyżowaniu równorzędnym z twojej lewej strony nadjeżdża tramwaj. Kto ma pierwszeństwo?', options: ['tramwaj', 'ty, bo tramwaj jest z lewej', 'ten, kto pierwszy dojechał', 'ten, kto zadzwoni'], answer: 0, explain: 'Tramwaj (pojazd szynowy) ma pierwszeństwo przed innymi pojazdami bez względu na to, z której strony nadjeżdża.' },
+        { id: 'kgwied', q: 'Masz zielone światło, ale za skrzyżowaniem stoi korek i nie ma miejsca. Co robisz?', options: ['czekam przed skrzyżowaniem', 'wjeżdżam, bo mam zielone', 'wjeżdżam i czekam na środku', 'objeżdżam korek chodnikiem'], answer: 0, explain: 'Nie wolno wjeżdżać na skrzyżowanie, jeśli za nim nie ma miejsca do dalszej jazdy – zielone światło też wtedy nie pozwala na wjazd.' },
+        { id: '9pegr4', q: 'Co oznacza znak D-1?', options: ['drogę z pierwszeństwem', 'nakaz ustąpienia pierwszeństwa', 'skrzyżowanie bez znaków', 'koniec drogi dla rowerów'], answer: 0, explain: 'D-1 „droga z pierwszeństwem” to kwadrat ustawiony na rogu. Na skrzyżowaniach jedziesz przed pojazdami z dróg podporządkowanych.' },
+      ],
+    },
+    {
       id: 'karta-hulajnoga',
       name: 'Karta rowerowa i hulajnoga elektryczna',
       chapter: 'rozdział III „Jeżdżę rowerem i hulajnogą”',

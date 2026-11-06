@@ -199,10 +199,10 @@ Nowa Era, nr 1258/1/2026, ISBN 978-83-267-5476-0. Autorzy: J. Pecyna, M. Sztuka 
 |---|---|---|
 | I. Zaczynam przygodę z techniką | 1. Dlaczego warto zdobywać umiejętności techniczne? · 2. Poznaję ważne zasady · 3. Posługuję się narzędziami · 4. Myślę, projektuję, wykonuję (Album ze zdjęciami) · 5. Bezpiecznie pracuję na lekcjach (Kokarda narodowa) · 6. Udzielam pierwszej pomocy | Znaki drogowe, wypadek i bezpieczna praca (częściowo) |
 | II. Znam zasady bezpieczeństwa na drodze | 1. Poznaję znaki i sygnały drogowe · 2. Poznaję części i rodzaje dróg · 3. Przestrzegam zasad na drodze · 4. Bezpiecznie poruszam się pieszo (gra „Bezpieczna droga do szkoły”) | Bezpieczny pieszy; Znaki drogowe, wypadek i bezpieczna praca |
-| III. Jeżdżę rowerem i hulajnogą | 1. Wiem, jak działa rower (Ekologiczny rower) · 2. Jeżdżę bezpiecznie · 3. Wykonuję manewry na drodze (Wesołe odblaski) · 4. Poznaję zasady pierwszeństwa na skrzyżowaniu (Makieta skrzyżowania) · 5. Oceniam sytuacje na drodze | Rower i rowerzysta; Karta rowerowa i hulajnoga elektryczna |
+| III. Jeżdżę rowerem i hulajnogą | 1. Wiem, jak działa rower (Ekologiczny rower) · 2. Jeżdżę bezpiecznie · 3. Wykonuję manewry na drodze (Wesołe odblaski) · 4. Poznaję zasady pierwszeństwa na skrzyżowaniu (Makieta skrzyżowania) · 5. Oceniam sytuacje na drodze | Rower i rowerzysta; Manewry i pierwszeństwo na skrzyżowaniu; Karta rowerowa i hulajnoga elektryczna |
 | ZPT w akcji | stojak na telefon; bezpieczeństwo w swoim otoczeniu; jak zadbać o rower | – |
 
-Na końcu: tablice znaków drogowych. W aplikacji brakuje: z rozdziału I – po co umiejętności techniczne, narzędzia i ich bezpieczne użycie, projektowanie (myślę, projektuję, wykonuję), pierwsza pomoc przy skaleczeniu i oparzeniu; z rozdziału III – **manewry na drodze** (skręcanie, zmiana pasa, wymijanie, sygnalizowanie ręką) i **pierwszeństwo na skrzyżowaniu** (ważne do karty rowerowej); ocena sytuacji na drodze.
+Na końcu: tablice znaków drogowych. W aplikacji brakuje: z rozdziału I – po co umiejętności techniczne, narzędzia i ich bezpieczne użycie, projektowanie (myślę, projektuję, wykonuję), pierwsza pomoc przy skaleczeniu i oparzeniu; z rozdziału III – nic (manewry i pierwszeństwo na skrzyżowaniu: dział „Manewry i pierwszeństwo na skrzyżowaniu”, 6.11.2026).
 
 ## Plastyka – *Do dzieła! 4*
 
