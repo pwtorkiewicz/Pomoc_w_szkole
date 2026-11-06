@@ -3,6 +3,99 @@
 window.LESSONS = window.LESSONS || {};
 
 // ---------------------------------------------------------------------------
+window.LESSONS['matematyka/polozenie'] = [
+  {
+    title: 'Gdzie to jest?',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Półka. Na półce stoi książka, nad półką wisi lampa, pod półką leży piłka. Obok półki stoi krzesło">
+        <text x="150" y="36" class="tx" text-anchor="middle" style="font-size:30px">💡</text>
+        <text x="236" y="36" class="tx-s">nad</text>
+        <rect x="70" y="92" width="160" height="12" rx="3" class="f2 s2 sw"/>
+        <text x="150" y="86" class="tx" text-anchor="middle" style="font-size:30px">📕</text>
+        <text x="236" y="86" class="tx-s">na</text>
+        <text x="150" y="160" class="tx" text-anchor="middle" style="font-size:30px">⚽</text>
+        <text x="236" y="156" class="tx-s">pod</text>
+        <text x="330" y="140" class="tx" text-anchor="middle" style="font-size:40px">🪑</text>
+        <text x="330" y="176" class="tx-s" text-anchor="middle">obok</text>
+      </svg>`,
+    text: `<p>Mówimy, gdzie coś jest: <b>na</b> półce, <b>pod</b> półką, <b>nad</b> półką, <b>obok</b> półki, <b>w</b> pudełku, <b>między</b> dwoma pudełkami, <b>przed</b> domem, <b>za</b> domem.</p>`,
+    remember: 'na, pod, nad, w, obok, między, przed, za',
+    hook: 'Nad – wysoko jak ptak 🐦, pod – nisko jak kret.',
+    check: { q: 'Co jest pod półką?', options: ['piłka', 'lampa', 'książka'], answer: 0, explain: 'Pod półką leży piłka. Lampa wisi nad półką, a książka stoi na półce.' },
+  },
+  {
+    title: 'Prawo i lewo – także u kolegi',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Kolega stoi twarzą do ciebie i podnosi prawą rękę. Ty widzisz ją po swojej lewej stronie">
+        <circle cx="200" cy="50" r="26" class="f4 s4 sw"/>
+        <rect x="170" y="80" width="60" height="70" rx="10" class="f1 s1 sw"/>
+        <line x1="170" y1="90" x2="120" y2="40" class="ln sw"/>
+        <line x1="230" y1="90" x2="262" y2="140" class="ln sw"/>
+        <text x="96" y="34" class="tx-b t2" text-anchor="middle">✋</text>
+        <text x="80" y="120" class="tx-s" text-anchor="middle">jego prawa ręka</text>
+        <text x="80" y="140" class="tx-s" text-anchor="middle">= po mojej lewej</text>
+        <text x="200" y="180" class="tx-s" text-anchor="middle">stoi twarzą do mnie – strony się zamieniają</text>
+      </svg>`,
+    text: `<p>Gdy ktoś stoi <b>twarzą do ciebie</b>, jego <b>prawa</b> ręka jest po <b>twojej lewej</b> stronie. Tak samo na zdjęciu i na obrazku – osoba patrzy na ciebie.</p>
+      <p>Sprawdź: stańcie z kolegą obok siebie i podnieście prawe ręce. Potem kolega obraca się twarzą do ciebie – jego prawa ręka jest teraz po twojej lewej stronie!</p>`,
+    remember: 'Twarzą do mnie: jego prawa = moja lewa.',
+    hook: 'Chcesz sprawdzić, która to ręka? W myślach obróć się tak, żeby patrzeć tam, gdzie patrzy kolega. 🔄',
+    check: { q: 'Ola stoi twarzą do ciebie i macha lewą ręką. Po której stronie ją widzisz?', options: ['po mojej prawej', 'po mojej lewej', 'nad głową'], answer: 0, explain: 'Strony się zamieniają: jej lewa ręka jest po twojej prawej stronie.' },
+  },
+  {
+    title: 'Dokąd jedzie?',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Cztery strzałki z jednego punktu: w górę, w dół, w lewo i w prawo">
+        <defs><marker id="a-k3m-pol-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+        <circle cx="200" cy="100" r="8" class="f2 s2 sw"/>
+        <path d="M200,90 L200,30" class="ln sw" marker-end="url(#a-k3m-pol-1)"/>
+        <path d="M200,110 L200,170" class="ln sw" marker-end="url(#a-k3m-pol-1)"/>
+        <path d="M190,100 L100,100" class="ln sw" marker-end="url(#a-k3m-pol-1)"/>
+        <path d="M210,100 L300,100" class="ln sw" marker-end="url(#a-k3m-pol-1)"/>
+        <text x="200" y="20" class="tx-b" text-anchor="middle">w górę</text>
+        <text x="200" y="194" class="tx-b" text-anchor="middle">w dół</text>
+        <text x="50" y="106" class="tx-b" text-anchor="middle">w lewo</text>
+        <text x="350" y="106" class="tx-b" text-anchor="middle">w prawo</text>
+      </svg>`,
+    text: `<p>Ruch ma <b>kierunek</b>: <b>w prawo</b>, <b>w lewo</b>, <b>w górę</b>, <b>w dół</b>, <b>do przodu</b>, <b>do tyłu</b>. Strzałka na rysunku pokazuje, dokąd coś się porusza.</p>`,
+    hook: 'Winda jeździ w górę i w dół ⬆️⬇️, a samochód – w prawo albo w lewo.',
+  },
+  {
+    title: 'Porównujemy',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Dwa ołówki: górny dłuższy, dolny krótszy. Waga szalkowa: szalka z cięższym klockiem opadła w dół, lżejszy klocek jest w górze">
+        <rect x="10" y="20" width="170" height="18" rx="4" class="f3 s3 sw"/>
+        <rect x="10" y="56" width="90" height="18" rx="4" class="f4 s4 sw"/>
+        <text x="190" y="35" class="tx-s">dłuższy</text>
+        <text x="110" y="71" class="tx-s">krótszy</text>
+        <line x1="300" y1="95" x2="300" y2="180" class="ln sw"/>
+        <rect x="270" y="176" width="60" height="8" class="f2 s2"/>
+        <line x1="236" y1="110" x2="364" y2="80" class="ln sw"/>
+        <rect x="220" y="114" width="32" height="30" rx="3" class="f2 s2 sw"/>
+        <rect x="352" y="60" width="22" height="20" rx="3" class="f1 s1 sw"/>
+        <text x="236" y="166" class="tx-s" text-anchor="middle">cięższy</text>
+        <text x="364" y="50" class="tx-s" text-anchor="middle">lżejszy</text>
+      </svg>`,
+    text: `<p>Porównujemy przedmioty: <b>dłuższy – krótszy</b>, <b>wyższy – niższy</b>, <b>szerszy – węższy</b>, <b>cięższy – lżejszy</b>.</p>
+      <p>Na <b>wadze szalkowej</b> cięższa rzecz opada w dół, a lżejsza idzie w górę. Rzeczy możesz też <b>ułożyć po kolei</b>, np. od najkrótszej do najdłuższej.</p>`,
+    remember: 'Waga szalkowa: cięższe – w dół, lżejsze – w górę.',
+    check: { q: 'Na wadze szalkowej lewa szalka opadła w dół. Co to znaczy?', options: ['na lewej leży coś cięższego', 'na lewej leży coś lżejszego', 'obie rzeczy są tak samo ciężkie'], answer: 0, explain: 'Cięższa rzecz ciągnie szalkę w dół.' },
+  },
+  {
+    title: 'Grupujemy',
+    svg: `<svg viewBox="0 0 400 180" role="img" aria-label="Owoce i warzywa podzielone na dwie grupy. Owoce: jabłko, gruszka, śliwka. Warzywa: marchewka, ogórek, ziemniak">
+        <rect x="6" y="10" width="190" height="160" rx="12" class="f3 s3 sw"/>
+        <rect x="204" y="10" width="190" height="160" rx="12" class="f2 s2 sw"/>
+        <text x="101" y="40" class="tx-b" text-anchor="middle">owoce</text>
+        <text x="299" y="40" class="tx-b" text-anchor="middle">warzywa</text>
+        <text x="101" y="110" class="tx" text-anchor="middle" style="font-size:34px">🍎🍐</text>
+        <text x="299" y="110" class="tx" text-anchor="middle" style="font-size:34px">🥕🥒🥔</text>
+      </svg>`,
+    text: `<p><b>Grupowanie</b> (klasyfikacja) to dzielenie rzeczy na grupy według <b>jednej cechy</b>: koloru, kształtu, wielkości albo tego, czym są – np. owoce i warzywa.</p>
+      <p>W zagadce „co nie pasuje?” szukasz rzeczy, która nie ma tej samej cechy co reszta.</p>`,
+    remember: 'Grupujemy według jednej cechy: kolor, kształt, wielkość, rodzaj.',
+    hook: 'Sprzątanie pokoju to też grupowanie: klocki do pudełka, książki na półkę, ubrania do szafy! 🧸📚👕',
+    check: { q: 'Co nie pasuje: czerwona piłka, czerwone jabłko, zielony liść?', options: ['zielony liść', 'czerwona piłka', 'czerwone jabłko'], answer: 0, explain: 'Grupujemy według koloru: piłka i jabłko są czerwone, liść jest zielony.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
 window.LESSONS['matematyka/liczby'] = [
   {
     title: 'Setki, dziesiątki, jedności',

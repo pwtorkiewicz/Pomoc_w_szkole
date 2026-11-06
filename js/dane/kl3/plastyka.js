@@ -177,6 +177,57 @@
           { id: '4x7vxu', q: 'Prawda czy fałsz?\nW muzeum można dotykać obrazów.', options: TF, ...PF, answer: 1, explain: 'Dzieł sztuki nie dotykamy – łatwo je zniszczyć.' },
         ],
       },
+      // ------------------------------------------------------------------
+      {
+        id: 'dziela',
+        name: 'Znani artyści i ich dzieła',
+        basis: `${PP}, 3. Recepcja sztuk plastycznych, pkt 2 (nazywa wybrane przykłady dzieł znanych artystów: malarzy, rzeźbiarzy, architektów z regionu swego pochodzenia lub innych), pkt 3 (miejsca prezentacji sztuk plastycznych). Dzieła wybrano redakcyjnie (podręcznika klasy 3 nie znamy). Fakty sprawdzone 6.11.2026: „Bociany” J. Chełmońskiego (1900, olej na płótnie, Muzeum Narodowe w Warszawie; oracz z synkiem odpoczywają i patrzą na bociany) – lekcje ${ZPE} (m.in. „Codzienność w dziełach sztuki”, „Opis obrazu”); „Bitwa pod Grunwaldem” J. Matejki – Muzeum Narodowe w Warszawie; „Dama z gronostajem” Leonarda da Vinci – Muzeum Książąt Czartoryskich w Krakowie (jak w ścieżce klasy 4, źródła tam); ołtarz Wita Stwosza w kościele Mariackim w Krakowie – z drewna lipowego, rzeźbiony w latach 1477–1489, jeden z największych gotyckich ołtarzy w Europie – lekcje ${ZPE} („Sztuka gotycka w Polsce, cz. II – rzeźba” i in.); Stanisław Witkiewicz i styl zakopiański (willa „Koliba” w Zakopanem) – zgodne źródła przez wyszukiwarkę (m.in. dzieje.pl). Pominięte: daty i wymiary obrazów, szczegóły życia artystów.${KONIEC}`,
+        theory: `
+          <h3>Malarze i ich obrazy</h3>
+          <table><tr><th>artysta</th><th>dzieło</th><th>gdzie je zobaczysz?</th></tr>
+            <tr><td>🖌️ <b>Józef Chełmoński</b></td><td>„<b>Bociany</b>” – chłop z synkiem odpoczywają w polu i patrzą na lecące bociany</td><td>Muzeum Narodowe w Warszawie</td></tr>
+            <tr><td>🖌️ <b>Jan Matejko</b></td><td>„<b>Bitwa pod Grunwaldem</b>” – ogromny obraz o bitwie z Krzyżakami</td><td>Muzeum Narodowe w Warszawie</td></tr>
+            <tr><td>🖌️ <b>Leonardo da Vinci</b> (Włoch)</td><td>„<b>Dama z gronostajem</b>” – portret pani z małym białym zwierzątkiem na rękach</td><td>Muzeum Książąt Czartoryskich w Krakowie</td></tr></table>
+          <h3>Rzeźbiarz</h3>
+          <p><b>Wit Stwosz</b> wyrzeźbił wielki <b>ołtarz</b> w <b>kościele Mariackim w Krakowie</b>. Ołtarz jest z <b>drewna lipowego</b>. Artysta pracował nad nim aż 12 lat. To jeden z największych takich ołtarzy w Europie.</p>
+          <h3>Architekt</h3>
+          <p><b>Stanisław Witkiewicz</b> wymyślił <b>styl zakopiański</b>. Projektował drewniane domy podobne do domów górali. Pierwszy taki dom to willa „<b>Koliba</b>” w <b>Zakopanem</b>.</p>
+          <p class="tip">Poznaj też artystów ze swojego regionu – zapytaj w szkole albo w muzeum!</p>`,
+        infographicNote: 'Niebieskie – malarze, zielone – rzeźbiarz, fioletowe – architekt.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '🐦', title: 'Józef Chełmoński', text: '„Bociany”', kolor: 1 },
+            { icon: '⚔️', title: 'Jan Matejko', text: '„Bitwa pod Grunwaldem”', kolor: 1 },
+            { icon: '👩', title: 'Leonardo da Vinci', text: '„Dama z gronostajem” – w Krakowie', kolor: 1 },
+            { icon: '⛪', title: 'Wit Stwosz', text: 'ołtarz w kościele Mariackim', kolor: 3 },
+            { icon: '🏡', title: 'Stanisław Witkiewicz', text: 'styl zakopiański', kolor: 5 },
+          ],
+          bottom: { icon: '🏛️', title: 'Gdzie oglądamy dzieła?', text: 'w muzeum, w kościele, w mieście', kolor: 4 },
+        },
+        flashcards: [
+          ['„Bociany”', 'obraz Józefa Chełmońskiego'],
+          ['„Bitwa pod Grunwaldem”', 'obraz Jana Matejki'],
+          ['„Dama z gronostajem”', 'portret namalowany przez Leonarda da Vinci; jest w Krakowie'],
+          ['Wit Stwosz', 'rzeźbiarz; ołtarz w kościele Mariackim w Krakowie'],
+          ['Z czego jest ołtarz Wita Stwosza?', 'z drewna lipowego'],
+          ['Stanisław Witkiewicz', 'architekt; styl zakopiański'],
+          ['Willa „Koliba”', 'pierwszy dom w stylu zakopiańskim, w Zakopanem'],
+        ],
+        questions: [
+          { id: 'mg1rtb', q: 'Kto namalował obraz „Bociany”?', options: ['Józef Chełmoński', 'Leonardo da Vinci', 'Wit Stwosz'], answer: 0, explain: '„Bociany” namalował Józef Chełmoński. Obraz jest w Muzeum Narodowym w Warszawie.' },
+          { id: 'f32dou', q: 'Co widać na obrazie „Bociany” Chełmońskiego?', options: ['chłopa z synkiem i lecące bociany', 'rycerzy walczących w bitwie', 'panią z gronostajem'], answer: 0, explain: 'Chłop z synkiem odpoczywają w polu i patrzą na lecące bociany.' },
+          { id: 'fa5qyj', q: 'Kto namalował „Bitwę pod Grunwaldem”?', options: ['Jan Matejko', 'Józef Chełmoński', 'Stanisław Witkiewicz'], answer: 0, explain: '„Bitwę pod Grunwaldem” namalował Jan Matejko.' },
+          { id: 'uvwe3h', q: 'Kto namalował „Damę z gronostajem”?', options: ['Leonardo da Vinci', 'Jan Matejko', 'Wit Stwosz'], answer: 0, explain: '„Damę z gronostajem” namalował włoski malarz Leonardo da Vinci.' },
+          { id: 'kx2086', q: 'W jakim mieście można zobaczyć „Damę z gronostajem”?', options: ['w Krakowie', 'w Gdańsku', 'w Zakopanem'], answer: 0, explain: 'Obraz jest w Muzeum Książąt Czartoryskich w Krakowie.' },
+          { id: 'eh22ve', q: 'Jak nazywamy obraz „Dama z gronostajem”, który przedstawia konkretną osobę?', options: ['portret', 'pejzaż', 'rzeźba'], answer: 0, explain: 'Obraz konkretnej osoby to portret.' },
+          { id: 'uyhs8g', q: 'Kto wyrzeźbił ołtarz w kościele Mariackim w Krakowie?', options: ['Wit Stwosz', 'Jan Matejko', 'Leonardo da Vinci'], answer: 0, explain: 'Ołtarz wyrzeźbił Wit Stwosz – z drewna lipowego.' },
+          { id: 'fxnql4', q: 'Z czego jest ołtarz Wita Stwosza?', options: ['z drewna', 'z kamienia', 'ze szkła'], answer: 0, explain: 'Ołtarz jest wyrzeźbiony z drewna lipowego.' },
+          { id: 'oz3xau', q: 'Kim był Stanisław Witkiewicz?', options: ['architektem, twórcą stylu zakopiańskiego', 'rzeźbiarzem, twórcą ołtarza Mariackiego', 'malarzem, twórcą obrazu „Bociany”'], answer: 0, explain: 'Witkiewicz projektował drewniane domy podobne do domów górali – w stylu zakopiańskim.' },
+          { id: 'y8sady', q: 'W jakim mieście stoi willa „Koliba” w stylu zakopiańskim?', options: ['w Zakopanem', 'w Gdańsku', 'w Warszawie'], answer: 0, explain: 'Willa „Koliba” stoi w Zakopanem.' },
+          { id: '7pjr3n', q: 'Prawda czy fałsz?\nObrazy „Bociany” i „Bitwa pod Grunwaldem” są w Muzeum Narodowym w Warszawie.', options: TF, ...PF, answer: 0, explain: 'Oba obrazy są w Muzeum Narodowym w Warszawie.' },
+        ],
+      },
     ],
   });
 })();

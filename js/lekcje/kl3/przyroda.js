@@ -581,6 +581,66 @@ window.LESSONS = window.LESSONS || {};
   ];
 
   // ------------------------------------------------------------------
+  L['przyroda/krainy'] = [
+    {
+      title: 'Krainy idą pasami',
+      svg: `<svg viewBox="0 0 400 270" role="img" aria-label="Pasy krain Polski od północy do południa: morze, pobrzeża, pojezierza, niziny, wyżyny, kotliny, góry">
+        <rect x="6" y="6" width="388" height="30" rx="6" class="f1 s1"/>
+        <text x="200" y="27" class="tx-s" text-anchor="middle">🌊 Morze Bałtyckie</text>
+        <rect x="6" y="40" width="388" height="34" rx="6" class="f4 s4 sw"/>
+        <text x="200" y="63" class="tx" text-anchor="middle">🏖️ pobrzeża</text>
+        <rect x="6" y="78" width="388" height="34" rx="6" class="f1 s1 sw"/>
+        <text x="200" y="101" class="tx" text-anchor="middle">🛶 pojezierza</text>
+        <rect x="6" y="116" width="388" height="34" rx="6" class="f3 s3 sw"/>
+        <text x="200" y="139" class="tx" text-anchor="middle">🌾 niziny</text>
+        <rect x="6" y="154" width="388" height="34" rx="6" class="f4 s4 sw"/>
+        <text x="200" y="177" class="tx" text-anchor="middle">⛰️ wyżyny</text>
+        <rect x="6" y="192" width="388" height="34" rx="6" class="f3 s3 sw"/>
+        <text x="200" y="215" class="tx" text-anchor="middle">🏞️ kotliny</text>
+        <rect x="6" y="230" width="388" height="34" rx="6" class="f2 s2 sw"/>
+        <text x="200" y="253" class="tx" text-anchor="middle">🏔️ góry</text>
+      </svg>`,
+      text: `<p><b>Kraina geograficzna</b> to duży obszar o podobnym krajobrazie. W Polsce krainy układają się <b>pasami</b> – od morza na północy do gór na południu.</p>`,
+      remember: 'Od morza: pobrzeża, pojezierza, niziny, wyżyny, kotliny, góry.',
+      hook: 'Idziesz z plaży w góry: piasek 🏖️ → jeziora 🛶 → pola 🌾 → wzgórza ⛰️ → szczyty 🏔️.',
+      check: { q: 'Który pas krain jest nad samym morzem?', options: ['pobrzeża', 'wyżyny', 'góry'], answer: 0, explain: 'Pobrzeża leżą nad Morzem Bałtyckim.' },
+    },
+    {
+      title: 'Nad morzem i nad jeziorami',
+      svg: cards('Pobrzeże Gdańskie – nad morzem, plaże i wydmy. Pojezierze Mazurskie – największe jeziora. Pojezierze Pomorskie – najwięcej jezior', [['🏖️', 'Pobrzeże', 'plaże i wydmy'], ['🛶', 'Pojezierze Mazurskie', 'największe jeziora'], ['💧', 'Pojezierze Pomorskie', 'najwięcej jezior']], 1),
+      text: `<p>Nad Morzem Bałtyckim są <b>pobrzeża</b>, np. <b>Pobrzeże Gdańskie</b>: płasko, plaże i wydmy.</p>
+        <p>Dalej są <b>pojezierza</b> – dużo jezior, wzgórza i lasy. Na <b>Pojezierzu Pomorskim</b> jezior jest najwięcej, a na <b>Pojezierzu Mazurskim</b> są największe.</p>`,
+      hook: 'Po-jezierze – po jeziorach pływasz kajakiem! 🛶',
+    },
+    {
+      title: 'Niziny i wyżyny',
+      svg: cards('Niziny, np. Nizina Mazowiecka – płasko, pola i łąki, na mapie zielone. Wyżyny, np. Wyżyna Lubelska – wyżej, na mapie żółte. Wyżyna Krakowsko-Częstochowska – skałki i jaskinie', [['🌾', 'Niziny', 'płasko, zielone na mapie'], ['⛰️', 'Wyżyny', 'wyżej, żółte na mapie'], ['🦇', 'Wyżyna Krak.-Częst.', 'skałki i jaskinie']], 1),
+      text: `<p>Na środku Polski są <b>niziny</b>, np. <b>Nizina Mazowiecka</b>. Jest tam płasko, dużo pól i łąk. Na mapie niziny są <b>zielone</b>.</p>
+        <p>Dalej na południe są <b>wyżyny</b> – teren jest wyżej. Na mapie są <b>żółte</b>. Na <b>Wyżynie Krakowsko-Częstochowskiej</b> są skałki i jaskinie.</p>`,
+      remember: 'Niziny – zielone, wyżyny – żółte, góry – brązowe.',
+      check: { q: 'Jaki kolor mają niziny na mapie?', options: ['zielony', 'brązowy', 'niebieski'], answer: 0, explain: 'Niziny – zielone, wyżyny – żółte, góry – brązowe.' },
+    },
+    {
+      title: 'Góry na południu',
+      svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Na południu Polski są Sudety i Karpaty. W Karpatach są Tatry – najwyższe góry Polski. Najwyższy szczyt to Rysy">
+        <polygon points="10,190 70,90 130,190" class="f2 s2 sw"/>
+        <polygon points="90,190 150,110 210,190" class="f2 s2 sw"/>
+        <polygon points="200,190 290,30 380,190" class="f5 s5 sw"/>
+        <polygon points="268,70 290,30 312,70 300,62 290,72 280,62" class="bg ln"/>
+        <text x="110" y="70" class="tx-b" text-anchor="middle">Sudety</text>
+        <text x="290" y="130" class="tx-b" text-anchor="middle">Tatry</text>
+        <text x="290" y="152" class="tx-s" text-anchor="middle">(w Karpatach)</text>
+        <text x="290" y="20" class="tx-s" text-anchor="middle">⛰️ Rysy</text>
+      </svg>`,
+      text: `<p>Na południu Polski są dwa łańcuchy gór: <b>Sudety</b> i <b>Karpaty</b>. W Karpatach są <b>Tatry</b> – najwyższe góry Polski.</p>
+        <p>Najwyższy szczyt Polski to <b>Rysy</b> w Tatrach.</p>`,
+      remember: 'Tatry – najwyższe góry Polski. Rysy – najwyższy szczyt.',
+      hook: '<b>R</b>ysy – <b>R</b>ekord Polski! 🏆',
+      check: { q: 'Jak nazywa się najwyższy szczyt Polski?', options: ['Rysy', 'Giewont', 'Śnieżka'], answer: 0, explain: 'Rysy w Tatrach to najwyższy szczyt Polski.' },
+    },
+  ];
+
+  // ------------------------------------------------------------------
   L['przyroda/kierunki'] = [
     {
       title: 'Cztery kierunki',

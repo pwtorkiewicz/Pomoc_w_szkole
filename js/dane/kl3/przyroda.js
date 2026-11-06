@@ -535,6 +535,73 @@
       },
       // ------------------------------------------------------------------
       {
+        id: 'krainy',
+        name: 'Krainy geograficzne Polski',
+        basis: `${PP}, 3. Rozumienie przestrzeni geograficznej, pkt 2 (wskazuje na mapie fizycznej Polski nazwy krain geograficznych), pkt 1 (położenie i warunki naturalne swojej miejscowości). Pasy krain i przykłady krain według lekcji ZPE „Planujemy wakacje – krajobrazy Polski” (zpe.gov.pl/a/DIlK4PLj6: kolejność pasów od północy, pobrzeża, pojezierza – Pomorskie najwięcej jezior, Mazurskie największe jeziora, niziny – równinne, rolnicze, wyżyny – Lubelska rolnicza, Krakowsko-Częstochowska ze skałkami i jaskiniami, kotliny podgórskie, Sudety i Karpaty, Tatry – góry wysokie); kolory mapy – ZPE „Mapa interaktywna” (D8krdr44M); Rysy (2499 m) – najwyższy szczyt Polski – lekcje ZPE o Tatrach (np. DBKYa8Tmg), sprawdzone 6.11.2026. Wybór krain dla klasy 3 – decyzja redakcyjna (podręcznika klasy 3 nie znamy); bez nazw wszystkich krain i wysokości.${KONIEC}`,
+        theory: `
+          <h3>Co to jest kraina geograficzna?</h3>
+          <p>To duży obszar o podobnym krajobrazie: wszędzie płasko albo wszędzie dużo jezior, albo wszędzie góry. Na mapie nazwę krainy pisze się <b>dużymi literami</b>.</p>
+          <h3>Krainy idą pasami</h3>
+          <p>Od morza na północy do gór na południu:</p>
+          <table><tr><th>pas</th><th>jak tam jest?</th><th>przykład</th></tr>
+            <tr><td>🏖️ <b>pobrzeża</b></td><td>nad morzem; płasko, plaże i wydmy</td><td>Pobrzeże Gdańskie</td></tr>
+            <tr><td>🛶 <b>pojezierza</b></td><td>dużo jezior, wzgórza i lasy</td><td>Pojezierze Mazurskie</td></tr>
+            <tr><td>🌾 <b>niziny</b></td><td>równo i płasko, dużo pól i łąk</td><td>Nizina Mazowiecka</td></tr>
+            <tr><td>⛰️ <b>wyżyny</b></td><td>wyżej, teren pofalowany</td><td>Wyżyna Lubelska</td></tr>
+            <tr><td>🏞️ <b>kotliny</b></td><td>płaskie obniżenia przy górach</td><td>Kotlina Sandomierska</td></tr>
+            <tr><td>🏔️ <b>góry</b></td><td>wysokie szczyty, strome zbocza</td><td>Tatry, Sudety</td></tr></table>
+          <h3>Ciekawostki</h3>
+          <ul>
+            <li>Na <b>Pojezierzu Pomorskim</b> jest najwięcej jezior, a na <b>Pojezierzu Mazurskim</b> – największe jeziora.</li>
+            <li>Na <b>Wyżynie Krakowsko-Częstochowskiej</b> są skałki i jaskinie.</li>
+            <li>Na południu są dwa łańcuchy gór: <b>Sudety</b> i <b>Karpaty</b>. W Karpatach są <b>Tatry</b> – najwyższe góry Polski.</li>
+            <li>Najwyższy szczyt Polski to <b>Rysy</b> w Tatrach.</li>
+          </ul>
+          <h3>Kolory mapy</h3>
+          <p><b>Zielony</b> – niziny, <b>żółty</b> – wyżyny, <b>brązowy</b> – góry.</p>
+          <p class="tip">Sprawdź na mapie, w jakiej krainie leży twoja miejscowość!</p>`,
+        infographicNote: 'Czytaj od góry: od morza na północy do gór na południu.',
+        infographic: {
+          type: 'kroki',
+          items: [
+            { icon: '🏖️', title: 'Pobrzeża', text: 'nad morzem: plaże, wydmy', kolor: 1 },
+            { icon: '🛶', title: 'Pojezierza', text: 'dużo jezior, np. Pojezierze Mazurskie', kolor: 1 },
+            { icon: '🌾', title: 'Niziny', text: 'płasko, pola i łąki', kolor: 3 },
+            { icon: '⛰️', title: 'Wyżyny', text: 'wyżej, np. Wyżyna Lubelska', kolor: 4 },
+            { icon: '🏞️', title: 'Kotliny', text: 'płaskie obniżenia przy górach', kolor: 3 },
+            { icon: '🏔️', title: 'Góry', text: 'Sudety i Karpaty z Tatrami', kolor: 2 },
+          ],
+          bottom: { icon: '⛰️', title: 'Rysy', text: 'najwyższy szczyt Polski – w Tatrach', kolor: 5 },
+        },
+        flashcards: [
+          ['Kraina geograficzna', 'duży obszar o podobnym krajobrazie'],
+          ['Pobrzeża', 'krainy nad morzem: plaże i wydmy'],
+          ['Pojezierza', 'krainy z dużą liczbą jezior'],
+          ['Niziny', 'płaskie krainy z polami i łąkami'],
+          ['Wyżyny', 'krainy położone wyżej niż niziny'],
+          ['Najwyższe góry Polski', 'Tatry'],
+          ['Najwyższy szczyt Polski', 'Rysy w Tatrach'],
+          ['Dwa łańcuchy gór na południu', 'Sudety i Karpaty'],
+          ['Gdzie są skałki i jaskinie?', 'na Wyżynie Krakowsko-Częstochowskiej'],
+          ['Kolory mapy', 'zielony – niziny, żółty – wyżyny, brązowy – góry'],
+        ],
+        questions: [
+          { id: '56ks1z', q: 'Która kraina leży nad morzem?', options: ['Pobrzeże Gdańskie', 'Wyżyna Lubelska', 'Tatry'], answer: 0, explain: 'Pobrzeża leżą nad Morzem Bałtyckim – są tam plaże i wydmy.' },
+          { id: 'orfeh4', q: 'W której krainie jest bardzo dużo jezior?', options: ['na Pojezierzu Mazurskim', 'na Nizinie Mazowieckiej', 'w Sudetach'], answer: 0, explain: 'Nazwa podpowiada: pojezierze – dużo jezior.' },
+          { id: 'iu8yxg', q: 'Jak wygląda krajobraz na nizinie?', options: ['jest płasko, dużo pól i łąk', 'są wysokie, strome góry', 'są tylko piaszczyste plaże'], answer: 0, explain: 'Niziny są równe i płaskie. Jest tam dużo pól i łąk.' },
+          { id: 'txf290', q: 'Jak nazywają się najwyższe góry Polski?', options: ['Tatry', 'Sudety', 'Góry Świętokrzyskie'], answer: 0, explain: 'Tatry to najwyższe góry Polski. Leżą w Karpatach, na południu kraju.' },
+          { id: 'h6iuwl', q: 'Jak nazywa się najwyższy szczyt Polski?', options: ['Rysy', 'Śnieżka', 'Giewont'], answer: 0, explain: 'Rysy to najwyższy szczyt Polski. Są w Tatrach.' },
+          { id: 'bflzqo', q: 'Jakie dwa łańcuchy gór są na południu Polski?', options: ['Sudety i Karpaty', 'Alpy i Pireneje', 'Tatry i Mazury'], answer: 0, explain: 'Na południu Polski są Sudety i Karpaty. Tatry to część Karpat.' },
+          { id: 'ifynm6', q: 'Jaki pas krain jest najbliżej morza?', options: ['pobrzeża', 'wyżyny', 'góry'], answer: 0, explain: 'Od morza: pobrzeża, pojezierza, niziny, wyżyny, kotliny i góry.' },
+          { id: 'i2iv9h', q: 'Jaki pas krain jest najdalej na południu?', options: ['góry', 'pojezierza', 'pobrzeża'], answer: 0, explain: 'Góry są na południu Polski. Na północy jest morze i pobrzeża.' },
+          { id: '9y7k3x', q: 'Gdzie są skałki i jaskinie?', options: ['na Wyżynie Krakowsko-Częstochowskiej', 'na Pobrzeżu Gdańskim nad morzem', 'na płaskiej Nizinie Mazowieckiej'], answer: 0, explain: 'Wyżyna Krakowsko-Częstochowska słynie ze skałek i jaskiń.' },
+          { id: 'e2130i', q: 'Jakim kolorem zaznacza się na mapie wyżyny?', options: ['żółtym', 'niebieskim', 'zielonym'], answer: 0, explain: 'Zielony – niziny, żółty – wyżyny, brązowy – góry, niebieski – woda.' },
+          { id: 'q6slol', q: 'Co to jest Wyżyna Lubelska?', options: ['kraina geograficzna', 'długa rzeka w Polsce', 'morze na północy'], answer: 0, explain: 'Wyżyna Lubelska to kraina – leży w pasie wyżyn.' },
+          { id: '6b1c72', q: 'Prawda czy fałsz?\nNazwę krainy pisze się na mapie dużymi literami.', options: TF, ...PF, answer: 0, explain: 'Nazwy krain na mapie są pisane dużymi literami w poprzek krainy.' },
+        ],
+      },
+      // ------------------------------------------------------------------
+      {
         id: 'kierunki',
         name: 'Kierunki, pogoda i Ziemia',
         basis: `${PP}, 3. Rozumienie przestrzeni geograficznej, pkt 3 (kierunki główne na mapie), pkt 6 (kierunki główne w terenie na podstawie cienia, z którego kierunku wieje wiatr, rodzaje opadów), pkt 7 (położenie Ziemi w Układzie Słonecznym); 2. pkt 9 (informacje o pogodzie).${KONIEC}`,

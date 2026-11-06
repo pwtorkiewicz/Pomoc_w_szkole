@@ -81,12 +81,126 @@
       <text x="70" y="100" class="tx-b" text-anchor="middle">°C</text>
     </svg>`;
 
+  // Rysunki do działu „Położenie, porównywanie i grupowanie”
+  const SVG_KOT = `<svg viewBox="0 0 300 170" role="img" aria-label="Stół. Na stole stoi kubek, a pod stołem siedzi kot">
+      <rect x="60" y="70" width="180" height="14" rx="3" class="f2 s2 sw"/>
+      <rect x="72" y="84" width="10" height="76" class="f2 s2"/>
+      <rect x="218" y="84" width="10" height="76" class="f2 s2"/>
+      <text x="150" y="62" class="tx" text-anchor="middle" style="font-size:30px">☕</text>
+      <text x="150" y="150" class="tx" text-anchor="middle" style="font-size:40px">🐈</text>
+    </svg>`;
+  const SVG_PILKA = `<svg viewBox="0 0 300 140" role="img" aria-label="Dwa pudełka, a między nimi piłka">
+      <rect x="20" y="40" width="80" height="80" rx="6" class="f4 s4 sw"/>
+      <rect x="200" y="40" width="80" height="80" rx="6" class="f4 s4 sw"/>
+      <text x="150" y="104" class="tx" text-anchor="middle" style="font-size:44px">⚽</text>
+    </svg>`;
+  const SVG_OWOCE = `<svg viewBox="0 0 300 120" role="img" aria-label="Rząd owoców od lewej: jabłko, gruszka, banan">
+      <text x="60" y="76" class="tx" text-anchor="middle" style="font-size:48px">🍎</text>
+      <text x="150" y="76" class="tx" text-anchor="middle" style="font-size:48px">🍐</text>
+      <text x="240" y="76" class="tx" text-anchor="middle" style="font-size:48px">🍌</text>
+      <text x="60" y="108" class="tx-s" text-anchor="middle">jabłko</text>
+      <text x="150" y="108" class="tx-s" text-anchor="middle">gruszka</text>
+      <text x="240" y="108" class="tx-s" text-anchor="middle">banan</text>
+    </svg>`;
+  const SVG_WOZEK = `<svg viewBox="0 0 300 130" role="img" aria-label="Wózek, a obok strzałka pokazująca ruch w prawo">
+      <defs><marker id="a-k3mat-wozek" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="30" y="40" width="100" height="50" rx="6" class="f1 s1 sw"/>
+      <circle cx="55" cy="100" r="12" class="bg ln sw"/>
+      <circle cx="105" cy="100" r="12" class="bg ln sw"/>
+      <path d="M150,65 L270,65" class="ln s2 sw" marker-end="url(#a-k3mat-wozek)"/>
+    </svg>`;
+  const SVG_OLOWKI = `<svg viewBox="0 0 320 150" role="img" aria-label="Trzy ołówki: a średni, b najdłuższy, c najkrótszy">
+      <rect x="40" y="20" width="160" height="20" rx="4" class="f4 s4 sw"/>
+      <rect x="40" y="62" width="240" height="20" rx="4" class="f3 s3 sw"/>
+      <rect x="40" y="104" width="90" height="20" rx="4" class="f1 s1 sw"/>
+      <text x="20" y="36" class="tx-b" text-anchor="middle">a</text>
+      <text x="20" y="78" class="tx-b" text-anchor="middle">b</text>
+      <text x="20" y="120" class="tx-b" text-anchor="middle">c</text>
+    </svg>`;
+  const SVG_WAGA = `<svg viewBox="0 0 300 170" role="img" aria-label="Waga szalkowa: lewa szalka z klockiem A opadła w dół, prawa szalka z klockiem B jest w górze">
+      <line x1="150" y1="50" x2="150" y2="160" class="ln sw"/>
+      <rect x="110" y="156" width="80" height="8" class="f2 s2"/>
+      <line x1="60" y1="70" x2="240" y2="30" class="ln sw"/>
+      <path d="M30,110 L90,110 L80,124 L40,124 Z" class="f4 s4 sw"/>
+      <line x1="60" y1="70" x2="40" y2="110" class="ln-thin"/>
+      <line x1="60" y1="70" x2="80" y2="110" class="ln-thin"/>
+      <path d="M210,70 L270,70 L260,84 L220,84 Z" class="f4 s4 sw"/>
+      <line x1="240" y1="30" x2="220" y2="70" class="ln-thin"/>
+      <line x1="240" y1="30" x2="260" y2="70" class="ln-thin"/>
+      <rect x="44" y="80" width="32" height="30" rx="3" class="f2 s2 sw"/>
+      <text x="60" y="101" class="tx-b" text-anchor="middle">A</text>
+      <rect x="228" y="46" width="24" height="24" rx="3" class="f1 s1 sw"/>
+      <text x="240" y="64" class="tx-b" text-anchor="middle">B</text>
+    </svg>`;
+
   window.SUBJECTS.push({
     id: 'matematyka',
     name: 'Edukacja matematyczna',
     icon: '🔢',
     color: '#e0803a',
     topics: [
+      // ------------------------------------------------------------------
+      {
+        id: 'polozenie',
+        name: 'Położenie, porównywanie i grupowanie',
+        basis: `${PP}, 1. Rozumienie stosunków przestrzennych i cech wielkościowych, pkt 1 (wzajemne położenie przedmiotów na płaszczyźnie i w przestrzeni, kierunek ruchu, położenie na prawo / na lewo od osoby widzianej z przodu, także na obrazku), pkt 2 (porównywanie przedmiotów pod względem cechy wielkościowej, np. długości czy masy; klasyfikacja przedmiotów). Pkt 3 (pion, poziom, skos) – w dziale „Figury i mierzenie”. Materiał matematyczny – bez faktów wymagających źródeł; przykłady napisane do aplikacji.${KONIEC}`,
+        theory: `
+          <h3>Gdzie to jest?</h3>
+          <p><b>na</b> stole · <b>pod</b> stołem · <b>nad</b> stołem · <b>w</b> pudełku · <b>obok</b> krzesła · <b>między</b> dwoma pudełkami · <b>przed</b> domem · <b>za</b> domem</p>
+          <h3>Na lewo czy na prawo?</h3>
+          <p>Patrz na rząd rzeczy: to, co bliżej twojej lewej ręki, jest <b>na lewo</b>, a to, co bliżej prawej – <b>na prawo</b>.</p>
+          <p class="tip">Kolega stoi <b>twarzą do ciebie</b>? Jego <b>prawa</b> ręka jest po <b>twojej lewej</b> stronie, bo patrzycie w przeciwne strony.</p>
+          <h3>Dokąd się porusza?</h3>
+          <p><b>w prawo</b> · <b>w lewo</b> · <b>w górę</b> · <b>w dół</b> · <b>do przodu</b> · <b>do tyłu</b></p>
+          <h3>Porównujemy</h3>
+          <table><tr><th>cecha</th><th>porównanie</th></tr>
+            <tr><td>📏 długość</td><td>dłuższy – krótszy</td></tr>
+            <tr><td>🧍 wzrost</td><td>wyższy – niższy</td></tr>
+            <tr><td>⚖️ masa</td><td>cięższy – lżejszy</td></tr>
+            <tr><td>📐 szerokość</td><td>szerszy – węższy</td></tr></table>
+          <p>Na <b>wadze szalkowej</b> cięższa rzecz opada w dół, a lżejsza idzie w górę.</p>
+          <h3>Grupujemy (klasyfikujemy)</h3>
+          <p>Rzeczy dzielimy na grupy według jednej cechy, np. <b>koloru</b>, <b>kształtu</b>, <b>wielkości</b> albo tego, <b>czym są</b> (owoce i warzywa).</p>`,
+        infographicNote: 'Niebieskie – gdzie coś jest, zielone – porównywanie, żółte – grupowanie.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          items: [
+            { icon: '📦', title: 'Gdzie?', text: 'na, pod, nad, w, obok, między', kolor: 1 },
+            { icon: '🧍', title: 'Twarzą do mnie', text: 'jego prawa ręka – po mojej lewej', kolor: 1 },
+            { icon: '➡️', title: 'Kierunek', text: 'w prawo, w lewo, w górę, w dół', kolor: 1 },
+            { icon: '📏', title: 'Porównuję', text: 'dłuższy – krótszy, wyższy – niższy', kolor: 3 },
+            { icon: '⚖️', title: 'Waga', text: 'cięższe opada w dół', kolor: 3 },
+            { icon: '🧺', title: 'Grupuję', text: 'według koloru, kształtu, wielkości', kolor: 4 },
+          ],
+        },
+        flashcards: [
+          ['pod / nad', 'pod stołem – niżej niż stół; nad stołem – wyżej niż stół'],
+          ['między', 'w środku, pomiędzy dwiema rzeczami'],
+          ['Kolega stoi twarzą do mnie i podnosi prawą rękę', 'widzę ją po mojej lewej stronie'],
+          ['Kierunki ruchu', 'w prawo, w lewo, w górę, w dół, do przodu, do tyłu'],
+          ['Przeciwieństwo: dłuższy', 'krótszy'],
+          ['Przeciwieństwo: cięższy', 'lżejszy'],
+          ['Waga szalkowa', 'cięższa rzecz opada w dół'],
+          ['Klasyfikacja', 'dzielenie rzeczy na grupy według jednej cechy'],
+        ],
+        questions: [
+          { id: 'kvpm9m', q: 'Gdzie jest kot?', svg: SVG_KOT, say: 'Gdzie jest kot na obrazku?', options: ['pod stołem', 'na stole', 'nad stołem'], answer: 0, explain: 'Na stole stoi kubek, a kot siedzi pod stołem.' },
+          { id: '2aovz6', q: 'Gdzie jest piłka?', svg: SVG_PILKA, say: 'Gdzie jest piłka na obrazku?', options: ['między pudełkami', 'w pudełku', 'pod pudełkami'], answer: 0, explain: 'Piłka leży pośrodku – między dwoma pudełkami.' },
+          { id: 'xj188z', q: 'Co leży na prawo od gruszki?', svg: SVG_OWOCE, say: 'Na obrazku jest rząd owoców. Co leży na prawo od gruszki?', options: ['banan', 'jabłko', 'śliwka'], answer: 0, explain: 'Po prawej stronie gruszki jest banan, a po lewej – jabłko.' },
+          { id: 'eftd06', q: 'Co leży na lewo od gruszki?', svg: SVG_OWOCE, say: 'Na obrazku jest rząd owoców. Co leży na lewo od gruszki?', options: ['jabłko', 'banan', 'śliwka'], answer: 0, explain: 'Po lewej stronie gruszki jest jabłko.' },
+          { id: 'yet0dc', q: 'Tomek stoi twarzą do ciebie i podnosi prawą rękę. Po której stronie ją widzisz?', options: ['po mojej lewej stronie', 'po mojej prawej stronie', 'nad moją głową'], answer: 0, explain: 'Gdy ktoś stoi twarzą do ciebie, patrzycie w przeciwne strony. Dlatego jego prawa ręka jest po twojej lewej stronie.' },
+          { id: '2442rb', q: 'W którą stronę jedzie wózek?', svg: SVG_WOZEK, say: 'Strzałka pokazuje, dokąd jedzie wózek. W którą stronę jedzie?', options: ['w prawo', 'w lewo', 'w dół'], answer: 0, explain: 'Strzałka pokazuje w prawo.' },
+          { id: 'alh043', q: 'Który ołówek jest najdłuższy?', svg: SVG_OLOWKI, say: 'Na rysunku są trzy ołówki: a, b i c. Który jest najdłuższy?', options: ['a', 'b', 'c'], answer: 1, noShuffle: true, explain: 'Ołówek b jest najdłuższy, a c – najkrótszy.' },
+          { id: 'ykio2h', q: 'Który klocek jest cięższy?', svg: SVG_WAGA, say: 'Na wadze szalkowej leżą dwa klocki: A i B. Szalka z klockiem A opadła w dół. Który klocek jest cięższy?', options: ['A', 'B', 'są tak samo ciężkie'], answer: 0, noShuffle: true, explain: 'Cięższa rzecz opada w dół. Szalka z klockiem A jest niżej, więc A jest cięższy.' },
+          { id: 'mbqusk', q: 'Kasia jest wyższa od Oli, a Ola jest wyższa od Zosi. Kto jest najniższy?', options: ['Zosia', 'Kasia', 'Ola'], answer: 0, explain: 'Od najwyższej: Kasia, Ola, Zosia. Najniższa jest Zosia.' },
+          { id: 'cnofl1', q: 'Ułóż od najniższego: Ola 130 cm, Ala 125 cm, Ela 140 cm.', options: ['Ala, Ola, Ela', 'Ela, Ola, Ala', 'Ola, Ala, Ela'], answer: 0, explain: '125 cm < 130 cm < 140 cm, więc: Ala, Ola, Ela.' },
+          { id: '4u6b1l', q: 'Który wyraz jest przeciwieństwem słowa „cięższy”?', options: ['lżejszy', 'krótszy', 'niższy'], answer: 0, explain: 'Cięższy – lżejszy to porównanie masy.' },
+          { id: 'vx2e7b', q: 'Co nie pasuje do grupy: jabłko, gruszka, marchewka, śliwka?', options: ['marchewka', 'jabłko', 'gruszka', 'śliwka'], answer: 0, explain: 'Jabłko, gruszka i śliwka to owoce. Marchewka to warzywo.' },
+          { id: 'il5d8p', q: 'Masz klocki: czerwone koło, czerwony kwadrat, niebieskie koło i niebieski kwadrat. Na ile grup podzielisz je według koloru?', options: ['na 2', 'na 4', 'na 3'], answer: 0, explain: 'Są dwa kolory: czerwony i niebieski – czyli 2 grupy, po 2 klocki.' },
+          { id: 'hhicsm', q: 'W koszyku są: piłka, kostka do gry i pomarańcza. Która rzecz nie jest okrągła?', options: ['kostka do gry', 'piłka', 'pomarańcza'], answer: 0, explain: 'Piłka i pomarańcza są okrągłe. Kostka do gry ma płaskie ściany i rogi.' },
+          { id: 'p6q7kg', q: 'Prawda czy fałsz?\nGdy kolega stoi twarzą do ciebie, jego prawa ręka jest po twojej prawej stronie.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Odwrotnie: jego prawa ręka jest po twojej lewej stronie, bo patrzycie w przeciwne strony.' },
+        ],
+      },
       // ------------------------------------------------------------------
       {
         id: 'liczby',
