@@ -171,11 +171,11 @@ Nowa Era, nr 1282/1/2026, ISBN 978-83-267-5372-5. Autorzy: B. Chodacka, J. Mazur
 |---|---|---|
 | I. Komputer i Ty | 1. W świecie urządzeń cyfrowych · 2. Programy, pliki i foldery | Komputer, sieć i pliki |
 | II. Jak korzystać z internetu? | 1. Co warto wiedzieć o internecie? · 2. Bezpieczni w cyfrowym świecie · 3. Jak szukać informacji? · 4. Komunikacja w internecie | Komputer, sieć i pliki (1); Bezpiecznie i kulturalnie w sieci (2); Szukanie informacji i komunikacja w sieci (3–4) |
-| III. Grafika komputerowa | 1. Wstęp do grafiki komputerowej · 2. Jak sprytnie tworzyć rysunki? · 3. Obrazy z warstw | Grafika, tekst, arkusz, prezentacja i AI |
-| IV. Edytor tekstu | 1. Poznajemy edytor tekstu · 2. Formatowanie dokumentu · 3. Dokument z ilustracjami | Grafika, tekst, arkusz, prezentacja i AI |
-| V. Programowanie w Scratchu | 1. Wprowadzenie do programu Scratch · 2. Kiedy postać mówi i myśli · 3. Sterowanie duszkiem | Algorytmy i programowanie |
+| III. Grafika komputerowa | 1. Wstęp do grafiki komputerowej · 2. Jak sprytnie tworzyć rysunki? · 3. Obrazy z warstw | Grafika komputerowa i edytor tekstu |
+| IV. Edytor tekstu | 1. Poznajemy edytor tekstu · 2. Formatowanie dokumentu · 3. Dokument z ilustracjami | Grafika komputerowa i edytor tekstu |
+| V. Programowanie w Scratchu | 1. Wprowadzenie do programu Scratch · 2. Kiedy postać mówi i myśli · 3. Sterowanie duszkiem | Algorytmy i programowanie; Scratch: duszek, scena i sterowanie |
 
-Na końcu: Doświadczenie edukacyjne, Słowniczek, Wybrane opcje programów. Arkusz kalkulacyjny i prezentacje są w podręczniku w kl. 5–6 (wg „Układu treści w klasach 5–8”), a w aplikacji – w dziale z grafiką i tekstem.
+Na końcu: Doświadczenie edukacyjne, Słowniczek, Wybrane opcje programów. Arkusz kalkulacyjny i prezentacje są w podręczniku w kl. 5–6 (wg „Układu treści w klasach 5–8”), a w aplikacji – razem z AI w dziale „na zapas” „Arkusz, prezentacja i AI” (6.11.2026).
 
 ## Muzyka – *Wszystko gra 4*
 
