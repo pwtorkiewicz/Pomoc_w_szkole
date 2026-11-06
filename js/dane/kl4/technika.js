@@ -8,10 +8,146 @@ window.SUBJECTS.push({
   book: 'Jak to zrobić? 4 (Nowa Era)',
   topics: [
     {
+      id: 'narzedzia-projekt',
+      name: 'Narzędzia, projekt i bezpieczna praca',
+      chapter: 'rozdział I „Zaczynam przygodę z techniką” (po co umiejętności techniczne, ważne zasady, narzędzia, myślę – projektuję – wykonuję, bezpieczna praca, pierwsza pomoc)',
+      basis: 'Dz.U. 2026 poz. 378, zajęcia praktyczno-techniczne kl. IV–VI: dz. 1 „Środowisko techniczne”, wym. 1 (zasady bezpieczeństwa pracy z regulaminu pracowni i znaki informacji), wym. 2 (urządzenia w domu i szkole oraz problemy, które rozwiązują), wym. 3 (własne zainteresowania i umiejętności techniczne); dz. 2 wym. 1–4 (problem, wymagania: funkcjonalność, wygoda, bezpieczeństwo, wpływ na środowisko, koszty; szkic; wybór koncepcji); dz. 4 wym. 2–3 (plan pracy, zasady współpracy w grupie); dz. 5 wym. 1–7 (dobór narzędzi i materiałów, stanowisko pracy i porządek, przenoszenie wymiarów na materiał, BHP, współpraca, porównanie z założeniami, prezentacja); dz. 6 wym. 1, 3, 4 (bezpieczne korzystanie z narzędzi, konserwacja, niesprawne narzędzia); dz. 7 wym. 1 (ponowne użycie materiałów); wyposażenie pracowni według „Warunków i sposobu realizacji” (narzędzia ze skrzynki narzędziowej, imadła, okulary, rękawice, fartuchy, urządzenia „używane pod nadzorem nauczyciela”, apteczka, gaśnica) – sprawdzone 6.11.2026 w tekście rozporządzenia. Znaki bezpieczeństwa: znaki ewakuacyjne – zielone, znaki ochrony przeciwpożarowej – czerwone kwadraty (PN-EN ISO 7010, za lekcją ZPE „Zasady i sposoby bezpiecznej ewakuacji z obiektów”, zpe.gov.pl/a/D1FZVpzvU); znak nakazu – niebieskie koło z białym symbolem (materiały BHP, przez wyszukiwarkę). Pierwsza pomoc: lekcja ZPE „Pierwsza pomoc” (zpe.gov.pl/a/DRZmbp4Bc – mała rana: przemyć wodą, zdezynfekować, plaster; większe rany – chirurg; oparzenie – zimna, ale nie lodowata woda, opatrunek z gazy), pacjent.gov.pl (oparzenie – chłodna, nie zimna woda przez co najmniej 15 minut, nie odrywać przyklejonej odzieży) i zgodne materiały o pierwszej pomocy (ucisk jałowym gazikiem przy krwawieniu, nie przekłuwać pęcherzy, nie smarować tłuszczem) – sprawdzone 6.11.2026; praktykę prowadzi szkoła. Wybór na klasę 4 – podręcznik „Jak to zrobić? 4”, rozdział I.',
+      theory: `
+        <h3>Po co nam technika?</h3>
+        <p><b>Technika</b> to wszystko, co ludzie wymyślili i zbudowali, żeby łatwiej radzić sobie z codziennymi problemami: narzędzia, urządzenia, maszyny, pojazdy. Każdy przedmiot zrobiony przez człowieka to <b>wytwór techniczny</b>.</p>
+        <table>
+          <tr><th>Problem</th><th>Urządzenie, które go rozwiązuje</th></tr>
+          <tr><td>trzeba zagotować wodę</td><td>czajnik</td></tr>
+          <tr><td>ubrania są brudne</td><td>pralka</td></tr>
+          <tr><td>jedzenie szybko się psuje</td><td>lodówka</td></tr>
+          <tr><td>w pokoju jest ciemno</td><td>lampa</td></tr>
+        </table>
+        <p>Na zajęciach sprawdzisz, co lubisz i umiesz robić rękami: mierzyć, ciąć, kleić, składać, naprawiać. To przydaje się w domu i w wielu zawodach – np. stolarza, krawca, elektryka, mechanika czy inżyniera.</p>
+        <h3>Narzędzia – co do czego?</h3>
+        <table>
+          <tr><th>Co robisz</th><th>Narzędzia</th></tr>
+          <tr><td><b>mierzysz i zaznaczasz</b></td><td>linijka, ołówek; <b>kątownik</b> – do rysowania i sprawdzania kątów prostych</td></tr>
+          <tr><td><b>tniesz</b></td><td>nożyczki (papier, tkanina), nożyk (tektura – zawsze na podkładce), piła (drewno)</td></tr>
+          <tr><td><b>robisz otwory</b></td><td><b>szydło</b> – przekłuwa małe otwory, np. w tekturze; wiertarka</td></tr>
+          <tr><td><b>wygładzasz</b></td><td>pilnik, papier ścierny</td></tr>
+          <tr><td><b>łączysz</b></td><td>klej, młotek i gwoździe, <b>wkrętak</b> (śrubokręt) i wkręty</td></tr>
+          <tr><td><b>trzymasz i zginasz</b></td><td>szczypce (np. drut); <b>imadło</b> – mocno unieruchamia materiał na stole</td></tr>
+        </table>
+        <p><b>Środki ochrony</b>: okulary ochronne (chronią oczy), rękawice, fartuch.</p>
+        <h3>Bezpieczna praca w pracowni</h3>
+        <ul>
+          <li>Przestrzegaj <b>regulaminu pracowni</b> i poleceń nauczyciela.</li>
+          <li>Używaj narzędzi <b>zgodnie z przeznaczeniem</b> i instrukcją.</li>
+          <li><b>Wiertarka</b> i <b>pistolet do kleju na gorąco</b> – tylko <b>pod nadzorem nauczyciela</b>.</li>
+          <li>Przed pracą przygotuj stanowisko, w czasie pracy utrzymuj <b>porządek</b>, po pracy posprzątaj, oczyść narzędzia i odłóż je na miejsce.</li>
+          <li>Ostre narzędzia (np. nożyczki) podawaj <b>rękojeścią</b> do drugiej osoby. Nożykiem tnij na podkładce, <b>od siebie</b>, palce trzymaj z dala od ostrza.</li>
+          <li>Narzędzie <b>uszkodzone</b> (np. młotek z luźnym trzonkiem) – nie używaj go, powiedz nauczycielowi.</li>
+          <li><b>Każde skaleczenie</b> lub wypadek od razu zgłoś nauczycielowi.</li>
+        </ul>
+        <p><b>Znaki bezpieczeństwa</b> w szkole:</p>
+        <table>
+          <tr><th>Znak</th><th>Co mówi</th></tr>
+          <tr><td>zielony, z sylwetką wychodzącego człowieka</td><td><b>wyjście ewakuacyjne</b> – tędy uciekasz, np. w czasie pożaru</td></tr>
+          <tr><td>czerwony kwadrat, np. z gaśnicą</td><td><b>sprzęt przeciwpożarowy</b> – tu jest np. gaśnica</td></tr>
+          <tr><td>niebieskie koło, np. z okularami</td><td><b>nakaz</b> – np. załóż okulary ochronne</td></tr>
+        </table>
+        <h3>Myślę, projektuję, wykonuję</h3>
+        <ol>
+          <li><b>Pomysł</b> – jaki problem rozwiązuję? Czego potrzebuję (np. pojemnika na kredki)?</li>
+          <li><b>Wymagania</b> – przedmiot ma być <b>funkcjonalny</b> (dobrze spełnia swoje zadanie), wygodny, bezpieczny, niedrogi i przyjazny środowisku.</li>
+          <li><b>Szkic</b> – prosty rysunek odręczny z wymiarami. Narysuj kilka pomysłów, wybierz najlepszy i powiedz dlaczego.</li>
+          <li><b>Plan</b> – lista materiałów i narzędzi, kolejność czynności; w grupie – kto co robi.</li>
+          <li><b>Wykonanie</b> – przygotuj stanowisko, przenieś wymiary na materiał (zmierz linijką, zaznacz ołówkiem), tnij, łącz, wykończ, posprzątaj.</li>
+          <li><b>Ocena i prezentacja</b> – porównaj przedmiot z założeniami: co się udało, co poprawić? Pokaż pracę innym.</li>
+        </ol>
+        <div class="tip">💡 Zamiast kupować nowe materiały, <b>użyj ponownie</b> tego, co masz – np. pudełka po butach albo rolki po ręcznikach papierowych. Będzie mniej odpadów.</div>
+        <h3>Pierwsza pomoc w pracowni</h3>
+        <p>Zawsze najpierw <b>powiedz nauczycielowi</b>. W pracowni jest <b>apteczka</b> z opatrunkami.</p>
+        <table>
+          <tr><th>Uraz</th><th>Co robimy</th></tr>
+          <tr><td><b>małe skaleczenie</b></td><td>przemyć ranę czystą wodą, zdezynfekować, nakleić plaster</td></tr>
+          <tr><td><b>rana krwawi</b></td><td>przyłożyć <b>jałowy gazik</b> (czysty opatrunek z apteczki) i uciskać; duża lub głęboka rana – lekarz</td></tr>
+          <tr><td><b>oparzenie</b> (np. gorącym klejem)</td><td>chłodzić <b>chłodną, nie lodowatą wodą co najmniej 15 minut</b>; potem przykryć jałowym opatrunkiem</td></tr>
+        </table>
+        <p>Przy oparzeniu <b>nie</b> przykładaj lodu, <b>nie</b> przekłuwaj pęcherzy i <b>nie</b> smaruj skóry tłuszczem (np. masłem).</p>
+      `,
+      infographicNote: 'Czytaj od góry: sześć kroków od pomysłu do gotowej pracy, a na dole – zasady bezpieczeństwa, które obowiązują przez cały czas.',
+      infographic: {
+        type: 'kroki',
+        items: [
+          { icon: '💡', title: '1. Pomysł', text: 'jaki problem rozwiązuję? czego potrzebuję?', kolor: 4 },
+          { icon: '✅', title: '2. Wymagania', text: 'funkcjonalny, wygodny, bezpieczny, niedrogi, przyjazny środowisku', kolor: 4 },
+          { icon: '✏️', title: '3. Szkic', text: 'prosty rysunek z wymiarami; wybieram najlepszy pomysł', kolor: 1 },
+          { icon: '📋', title: '4. Plan', text: 'materiały, narzędzia, kolejność czynności', kolor: 1 },
+          { icon: '🔨', title: '5. Wykonanie', text: 'mierzę, zaznaczam, tnę, łączę, sprzątam', kolor: 3 },
+          { icon: '⭐', title: '6. Ocena', text: 'co się udało, co poprawić? pokazuję pracę innym', kolor: 3 },
+        ],
+        bottom: { title: '⚠️ Zawsze bezpiecznie', items: ['regulamin i polecenia nauczyciela', 'narzędzia zgodnie z przeznaczeniem', 'wiertarka, pistolet do kleju – pod nadzorem', 'skaleczenie, oparzenie – powiedz nauczycielowi', 'oparzenie – chłodna woda co najmniej 15 minut'], kolor: 2 },
+      },
+      flashcards: [
+        ['Wytwór techniczny', 'Przedmiot zrobiony przez człowieka, np. krzesło, rower, czajnik'],
+        ['Po co jest technika?', 'Pomaga rozwiązywać codzienne problemy, np. pralka pierze ubrania'],
+        ['Kątownik', 'Do rysowania i sprawdzania kątów prostych'],
+        ['Szydło', 'Przekłuwa małe otwory, np. w tekturze'],
+        ['Pilnik, papier ścierny', 'Wygładzają krawędzie'],
+        ['Wkrętak (śrubokręt)', 'Wkręca i wykręca wkręty'],
+        ['Imadło', 'Mocno unieruchamia materiał na stole'],
+        ['Nożyczki i nożyk', 'Podawaj rękojeścią; nożykiem tnij na podkładce, od siebie'],
+        ['Wiertarka, pistolet do kleju na gorąco', 'Tylko pod nadzorem nauczyciela'],
+        ['Środki ochrony', 'Okulary ochronne, rękawice, fartuch'],
+        ['Zielony znak z sylwetką człowieka', 'Wyjście ewakuacyjne'],
+        ['Czerwony kwadratowy znak z gaśnicą', 'Sprzęt przeciwpożarowy – tu jest gaśnica'],
+        ['Etapy projektu', 'Pomysł → wymagania → szkic → plan → wykonanie → ocena'],
+        ['Szkic', 'Prosty rysunek odręczny pomysłu, z wymiarami'],
+        ['Funkcjonalny przedmiot', 'Dobrze spełnia swoje zadanie'],
+        ['Małe skaleczenie', 'Przemyj wodą, zdezynfekuj, naklej plaster'],
+        ['Rana krwawi', 'Przyłóż jałowy gazik i uciskaj'],
+        ['Oparzenie', 'Chłodź chłodną (nie lodowatą) wodą co najmniej 15 minut'],
+        ['Pęcherz po oparzeniu', 'Nie przekłuwaj; przykryj jałowym opatrunkiem'],
+        ['Skaleczenie w pracowni', 'Od razu zgłoś nauczycielowi'],
+      ],
+      questions: [
+        { id: 'jauznn', q: 'Co to jest wytwór techniczny?', options: ['przedmiot zrobiony przez człowieka', 'roślina wyhodowana w ogrodzie', 'kamień znaleziony na plaży', 'zwierzę żyjące w lesie'], answer: 0, explain: 'Wytwór techniczny to każdy przedmiot zrobiony przez człowieka, np. krzesło, rower albo czajnik.' },
+        { id: 'dw506o', q: 'Jaki problem rozwiązuje pralka?', options: ['pranie brudnych ubrań', 'gotowanie wody na herbatę', 'oświetlanie ciemnego pokoju', 'chłodzenie jedzenia'], answer: 0, explain: 'Pralka pierze ubrania. Wodę gotuje czajnik, pokój oświetla lampa, a jedzenie chłodzi lodówka.' },
+        { id: 'd1t952', q: 'Które urządzenie sprawia, że jedzenie wolniej się psuje?', options: ['lodówka', 'czajnik', 'lampa', 'pralka'], answer: 0, explain: 'Lodówka przechowuje jedzenie w chłodzie, więc wolniej się psuje.' },
+        { id: '9lqhp5', q: 'Czym zmierzysz długość deseczki?', options: ['linijką', 'pilnikiem', 'szczypcami', 'szydłem'], answer: 0, explain: 'Do mierzenia służy linijka. Pilnik wygładza, szczypce chwytają, a szydło przekłuwa otwory.' },
+        { id: '9rg7bk', q: 'Do czego służy kątownik?', options: ['do rysowania i sprawdzania kątów prostych', 'do wbijania gwoździ w deskę', 'do wygładzania krawędzi drewna', 'do przekłuwania otworów w tekturze'], answer: 0, explain: 'Kątownikiem rysujesz i sprawdzasz kąty proste, np. czy róg pudełka jest prosty.' },
+        { id: 'ur535l', q: 'Którym narzędziem wbijesz gwóźdź?', options: ['młotkiem', 'wkrętakiem', 'pilnikiem', 'kątownikiem'], answer: 0, explain: 'Gwoździe wbija się młotkiem. Wkrętakiem wkręca się wkręty.' },
+        { id: '5vnb4g', q: 'Do czego służy wkrętak (śrubokręt)?', options: ['do wkręcania i wykręcania wkrętów', 'do cięcia papieru i tkaniny', 'do mierzenia długości i szerokości', 'do mocowania materiału do stołu'], answer: 0, explain: 'Wkrętak (śrubokręt) służy do wkręcania i wykręcania wkrętów.' },
+        { id: 'ecu2sc', q: 'Czym wygładzisz szorstką krawędź deseczki?', options: ['papierem ściernym lub pilnikiem', 'nożyczkami lub ostrym nożykiem', 'młotkiem lub dużym wkrętakiem', 'linijką lub metalowym kątownikiem'], answer: 0, explain: 'Krawędzie wygładza się pilnikiem albo papierem ściernym.' },
+        { id: 'gk0nte', q: 'Do czego służy imadło?', options: ['do mocnego unieruchomienia materiału', 'do wiercenia otworów w drewnie', 'do mierzenia kątów prostych', 'do klejenia elementów na gorąco'], answer: 0, explain: 'Imadło mocno trzyma materiał na stole, więc możesz go bezpiecznie piłować albo wygładzać.' },
+        { id: '5nq3wv', q: 'Czym zrobisz mały otwór w tekturze?', options: ['szydłem', 'młotkiem', 'pilnikiem', 'kątownikiem'], answer: 0, explain: 'Szydło przekłuwa małe otwory, np. w tekturze.' },
+        { id: '52m5jt', q: 'Jak bezpiecznie tniesz tekturę nożykiem?', options: ['na podkładce, od siebie, palce z dala od ostrza', 'na kolanach, do siebie, szybko i bardzo mocno', 'na stole bez podkładki, palce tuż przy ostrzu', 'w powietrzu, trzymając tekturę drugą ręką'], answer: 0, explain: 'Nożykiem tniesz na podkładce, ruchem od siebie, a palce trzymasz z dala od ostrza.' },
+        { id: 'heeupg', q: 'Jak podajesz koledze nożyczki?', options: ['rękojeścią w jego stronę', 'ostrzem w jego stronę', 'rzucam mu je przez stół', 'otwarte, czubkiem do przodu'], answer: 0, explain: 'Ostre narzędzia podajesz rękojeścią do drugiej osoby – wtedy nikt się nie skaleczy.' },
+        { id: 'gsow1q', q: 'Młotek ma luźny, chwiejący się trzonek. Co robisz?', options: ['nie używam go i mówię nauczycielowi', 'pracuję nim dalej, tylko mocniej', 'oddaję go koledze bez słowa', 'chowam go do swojej szuflady'], answer: 0, explain: 'Uszkodzone narzędzie jest niebezpieczne – nie używasz go i mówisz o nim nauczycielowi.' },
+        { id: '4rp40o', q: 'Kiedy w pracowni używasz wiertarki lub pistoletu do kleju na gorąco?', options: ['tylko pod nadzorem nauczyciela', 'zawsze, gdy mam na to ochotę', 'na przerwie, gdy nikt nie widzi', 'gdy kolega mi na to pozwoli'], answer: 0, explain: 'Wiertarki i pistoletu do kleju na gorąco używa się tylko pod nadzorem nauczyciela.' },
+        { id: 'x01p7h', q: 'Co robisz po skończonej pracy w pracowni?', options: ['sprzątam i odkładam narzędzia na miejsce', 'zostawiam wszystko i szybko wychodzę', 'chowam narzędzia do swojego plecaka', 'zrzucam ścinki na podłogę pod ławkę'], answer: 0, explain: 'Po pracy sprzątasz stanowisko, czyścisz narzędzia i odkładasz je na miejsce.' },
+        { id: 'e79hhs', q: 'Co chroni oczy, gdy podczas pracy lecą drobne odpryski?', options: ['okulary ochronne', 'fartuch roboczy', 'rękawice ochronne', 'czapka z daszkiem'], answer: 0, explain: 'Oczy chronią okulary ochronne. Fartuch chroni ubranie, a rękawice – dłonie.' },
+        { id: '2bt1tr', q: 'Jaki kolor ma znak wyjścia ewakuacyjnego?', options: ['zielony', 'czerwony', 'niebieski', 'żółty'], answer: 0, explain: 'Znaki ewakuacyjne są zielone – pokazują drogę do wyjścia, np. w czasie pożaru.' },
+        { id: 'oyoqw4', q: 'Na czerwonym kwadratowym znaku jest gaśnica. Co oznacza ten znak?', options: ['tu jest sprzęt do gaszenia pożaru', 'w budynku nie wolno używać ognia', 'tędy prowadzi droga do wyjścia', 'trzeba tu założyć okulary'], answer: 0, explain: 'Czerwone kwadratowe znaki to znaki ochrony przeciwpożarowej – pokazują, gdzie jest np. gaśnica.' },
+        { id: 'pnmw6g', q: 'Co oznacza niebieski okrągły znak z okularami?', options: ['nakaz: załóż okulary ochronne', 'zakaz noszenia okularów', 'tu jest sklep z okularami', 'tędy prowadzi wyjście ewakuacyjne'], answer: 0, explain: 'Niebieskie koło to znak nakazu – mówi, co trzeba zrobić, np. założyć okulary ochronne.' },
+        { id: 'r1fifc', q: 'Od czego zaczynasz pracę nad projektem?', options: ['od pomysłu – czego potrzebuję', 'od cięcia materiału na kawałki', 'od pomalowania gotowej pracy', 'od oceny gotowego przedmiotu'], answer: 0, explain: 'Najpierw zastanawiasz się, jaki problem rozwiązujesz i czego potrzebujesz. Potem są wymagania, szkic, plan, wykonanie i ocena.' },
+        { id: '7r2ms1', q: 'Co to jest szkic?', options: ['prosty rysunek odręczny pomysłu', 'gotowy przedmiot z drewna', 'lista narzędzi w pracowni', 'instrukcja obsługi urządzenia'], answer: 0, explain: 'Szkic to prosty rysunek odręczny pomysłu, najlepiej z wymiarami.' },
+        { id: 'o9lh61', q: 'Przedmiot jest funkcjonalny, gdy…', options: ['dobrze spełnia swoje zadanie', 'jest bardzo drogi w sklepie', 'ma dużo kolorowych ozdób', 'jest najcięższy w całej klasie'], answer: 0, explain: 'Funkcjonalny znaczy: dobrze spełnia swoje zadanie, np. pojemnik mieści wszystkie kredki i się nie przewraca.' },
+        { id: '2iy04c', q: 'Która kolejność pracy nad projektem jest właściwa?', options: ['pomysł → szkic → plan → wykonanie → ocena', 'wykonanie → pomysł → ocena → szkic → plan', 'ocena → plan → wykonanie → szkic → pomysł', 'szkic → ocena → pomysł → plan → wykonanie'], answer: 0, explain: 'Najpierw pomysł (i wymagania), potem szkic, plan, wykonanie, a na końcu ocena.' },
+        { id: 'yn5p6e', q: 'Co zapisujesz w planie pracy?', options: ['materiały, narzędzia i kolejność czynności', 'tylko imiona kolegów z ławki', 'ocenę od nauczyciela za pracę', 'nazwy ulubionych zespołów muzycznych'], answer: 0, explain: 'W planie są materiały, narzędzia i kolejność czynności, a w grupie – także to, kto co robi.' },
+        { id: '74b1dy', q: 'Jak przenosisz wymiary ze szkicu na materiał?', options: ['mierzę linijką i zaznaczam ołówkiem', 'tnę na oko, bez mierzenia', 'zgaduję i od razu kleję', 'rysuję flamastrem bez linijki'], answer: 0, explain: 'Wymiary mierzysz linijką i zaznaczasz ołówkiem na materiale – dopiero potem tniesz.' },
+        { id: 'ah3vmt', q: 'Po co oceniasz wykonany przedmiot?', options: ['by sprawdzić, co się udało, a co poprawić', 'by od razu wyrzucić go do kosza', 'by udowodnić, że jest najlepszy w klasie', 'by nie musieć już nic więcej robić'], answer: 0, explain: 'Porównujesz pracę z założeniami: co się udało, a co można poprawić następnym razem.' },
+        { id: '4h9qbi', q: 'Robisz pojemnik na kredki. Co jest najbardziej przyjazne środowisku?', options: ['użycie pudełka, które już masz', 'kupienie nowej plastikowej skrzynki', 'kupienie kilku nowych folii', 'zużycie całej nowej paczki kartonu'], answer: 0, explain: 'Gdy używasz ponownie tego, co już masz (np. pudełka po butach), powstaje mniej odpadów.' },
+        { id: '59ozkz', q: 'Jak opatrzyć małe skaleczenie?', options: ['przemyć wodą, zdezynfekować, nakleić plaster', 'posmarować masłem i zostawić bez opatrunku', 'zakleić zwykłą taśmą klejącą z pracowni', 'posypać piaskiem, żeby przestało krwawić'], answer: 0, explain: 'Małą ranę przemywasz czystą wodą, dezynfekujesz i naklejasz plaster. Najpierw powiedz nauczycielowi.' },
+        { id: '91nktu', q: 'Rana krwawi. Co przykładasz i uciskasz?', options: ['jałowy gazik z apteczki', 'chusteczkę podniesioną z podłogi', 'kawałek tektury z ławki', 'kostkę lodu z zamrażarki'], answer: 0, explain: 'Na krwawiącą ranę przykłada się jałowy (czysty) gazik z apteczki i uciska.' },
+        { id: 'afb74k', q: 'Oparzyłeś palec gorącym klejem. Jak go chłodzisz?', options: ['chłodną, nie lodowatą wodą co najmniej 15 minut', 'lodem przyłożonym prosto do skóry przez godzinę', 'gorącą wodą, żeby rozpuścić klej na skórze', 'nie chłodzę – od razu smaruję skórę masłem'], answer: 0, explain: 'Oparzenie chłodzi się chłodną (nie lodowatą) wodą co najmniej 15 minut. Bez lodu i bez tłuszczu.' },
+        { id: 'd4nd9a', q: 'Na oparzonej skórze pojawił się pęcherz. Co robisz?', options: ['nie przekłuwam go, przykrywam jałowym opatrunkiem', 'przekłuwam go igłą, żeby szybciej się zagoił', 'zrywam skórę z pęcherza i smaruję ją kremem', 'przyklejam na niego mocną taśmę klejącą'], answer: 0, explain: 'Pęcherza nie przekłuwasz – chroni skórę. Przykrywasz go jałowym opatrunkiem i mówisz dorosłemu.' },
+        { id: '2mldm8', q: 'Gdzie w pracowni szukasz opatrunków?', options: ['w apteczce', 'w skrzynce na narzędzia', 'w szafce z farbami', 'w koszu na ścinki'], answer: 0, explain: 'Opatrunki (plastry, jałowe gaziki, bandaże) są w apteczce.' },
+        { id: 'i4pb2m', q: 'W pracowni skaleczyłeś się nożyczkami. Co robisz?', options: ['od razu mówię nauczycielowi', 'ukrywam to do końca lekcji', 'pracuję dalej, żeby skończyć', 'idę sam do domu'], answer: 0, explain: 'Każde skaleczenie lub wypadek w pracowni trzeba od razu zgłosić nauczycielowi.' },
+        { id: 'igkbts', q: 'Jak używasz narzędzi w pracowni technicznej?', options: ['zgodnie z przeznaczeniem i instrukcją', 'jak chcę, byle szybko skończyć pracę', 'nożyczkami odkręcam śrubki', 'bawię się nimi w przerwie z kolegami'], answer: 0, explain: 'Narzędzia używamy zgodnie z przeznaczeniem i regulaminem pracowni – wtedy praca jest bezpieczna.' },
+      ],
+    },
+    {
       id: 'znaki-wypadek',
-      name: 'Znaki drogowe, wypadek i bezpieczna praca',
-      chapter: 'rozdziały I (bezpiecznie pracuję, udzielam pierwszej pomocy) i II (znaki i sygnały drogowe)',
-      basis: 'Dz.U. 2026 poz. 378, zajęcia praktyczno-techniczne kl. IV–VI: dz. 8, wym. 1 (znaki i sygnały drogowe), wym. 5 (zachowanie w miejscu wypadku, przekazanie informacji służbom); dz. 1 „Środowisko techniczne”, wym. 1 (zasady bezpieczeństwa pracy w pracowni technicznej). Znaki: rozporządzenie w sprawie znaków i sygnałów drogowych, Dz.U. 2019 poz. 2310 (nazwy znaków); szczegółowe warunki techniczne dla znaków, Dz.U. 2019 poz. 2311 (kształty znaków) (sprawdzone 1.11.2026). Pierwsza pomoc – tylko ogólne zasady (bezpieczeństwo, wezwanie pomocy); praktykę prowadzi szkoła. Wybór na klasę 4 – decyzja redakcyjna.',
+      name: 'Znaki drogowe i wypadek',
+      chapter: 'rozdziały II (znaki i sygnały drogowe) i I.6 (udzielam pierwszej pomocy – wypadek)',
+      basis: 'Dz.U. 2026 poz. 378, zajęcia praktyczno-techniczne kl. IV–VI: dz. 8, wym. 1 (znaki i sygnały drogowe), wym. 5 (zachowanie w miejscu wypadku, przekazanie informacji służbom). Znaki: rozporządzenie w sprawie znaków i sygnałów drogowych, Dz.U. 2019 poz. 2310 (nazwy znaków); szczegółowe warunki techniczne dla znaków, Dz.U. 2019 poz. 2311 (kształty znaków) (sprawdzone 1.11.2026). Pierwsza pomoc – tylko ogólne zasady (bezpieczeństwo, wezwanie pomocy); praktykę prowadzi szkoła. Wybór na klasę 4 – decyzja redakcyjna.',
       theory: `
         <h3>Grupy znaków drogowych</h3>
         <table>
@@ -46,15 +182,6 @@ window.SUBJECTS.push({
           <li>Zostań przy poszkodowanym, jeśli jest bezpiecznie, i rozmawiaj z nim do przyjazdu pomocy.</li>
         </ol>
         <p>Pierwszą pomoc ćwiczy się na zajęciach w szkole. Najważniejsze: bezpieczeństwo i szybkie wezwanie pomocy.</p>
-        <h3>Bezpieczna praca w pracowni</h3>
-        <ul>
-          <li>Przestrzegaj <b>regulaminu pracowni</b> i poleceń nauczyciela.</li>
-          <li>Używaj narzędzi <b>zgodnie z przeznaczeniem</b> i instrukcją.</li>
-          <li>Utrzymuj <b>porządek</b> na stanowisku pracy.</li>
-          <li>Ostre narzędzia (np. nożyczki) podawaj rękojeścią do drugiej osoby.</li>
-          <li><b>Każde skaleczenie</b> lub wypadek od razu zgłoś nauczycielowi.</li>
-          <li>Zwracaj uwagę na znaki w szkole, np. wskazujące wyjście ewakuacyjne.</li>
-        </ul>
       `,
       infographicNote: 'U góry – co mówi kształt znaku, niżej – cztery grupy znaków z przykładami, na dole – co robisz po kolei przy wypadku.',
       infographic: {
@@ -79,7 +206,6 @@ window.SUBJECTS.push({
         ['A-17', '„dzieci” – ostrzega o miejscu, gdzie często są dzieci'],
         ['Numer alarmowy', '112'],
         ['Co powiesz dyspozytorowi?', 'Kto dzwoni, gdzie, co się stało, ilu jest poszkodowanych'],
-        ['Skaleczenie w pracowni', 'Od razu zgłoś nauczycielowi'],
       ],
       questions: [
         { id: 'ylda27', q: 'Jaki kształt mają znaki ostrzegawcze?', options: ['trójkąta', 'koła', 'kwadratu', 'ośmiokąta'], answer: 0, explain: 'Znaki ostrzegawcze mają kształt trójkąta równobocznego, zwykle wierzchołkiem do góry.' },
@@ -116,8 +242,6 @@ window.SUBJECTS.push({
         { id: 'pn8yfi', q: 'Pod jaki numer zadzwonisz, gdy zobaczysz wypadek?', options: ['112', '100', '123', '911'], answer: 0, explain: '112 to numer alarmowy, pod który dzwonisz, by wezwać pomoc.' },
         { id: 'xi3ooh', q: 'Dzwonisz pod 112. Co powiesz?', options: ['kto dzwoni, gdzie i co się stało oraz ilu jest poszkodowanych', 'tylko swoje imię', 'tylko „szybko, pomocy!” i od razu się rozłączasz', 'nic – czekasz, aż ktoś odgadnie'], answer: 0, explain: 'Najważniejsze informacje: kto dzwoni, gdzie, co się stało i ilu jest poszkodowanych. Potem słuchaj pytań dyspozytora.' },
         { id: 'jzj5n2', q: 'Widzisz wypadek na ulicy. Co robisz najpierw?', options: ['dbam o swoje bezpieczeństwo i wzywam pomoc', 'wbiegam na jezdnię, nie rozglądając się', 'uciekam i nikomu nic nie mówię', 'nagrywam film telefonem dla kolegów'], answer: 0, explain: 'Najpierw twoje bezpieczeństwo, potem szybkie wezwanie pomocy.' },
-        { id: 'i4pb2m', q: 'W pracowni skaleczyłeś się nożyczkami. Co robisz?', options: ['od razu mówię nauczycielowi', 'ukrywam to do końca lekcji', 'pracuję dalej, żeby skończyć', 'idę sam do domu'], answer: 0, explain: 'Każde skaleczenie lub wypadek w pracowni trzeba od razu zgłosić nauczycielowi.' },
-        { id: 'igkbts', q: 'Jak używasz narzędzi w pracowni technicznej?', options: ['zgodnie z przeznaczeniem i instrukcją', 'jak chcę, byle szybko skończyć pracę', 'nożyczkami odkręcam śrubki', 'bawię się nimi w przerwie z kolegami'], answer: 0, explain: 'Narzędzia używamy zgodnie z przeznaczeniem i regulaminem pracowni – wtedy praca jest bezpieczna.' },
       ],
     },
     {
