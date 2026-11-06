@@ -139,6 +139,15 @@ async function e2e() {
   const a4 = await st(A);
   check(!Object.keys(a4.best).length && !Object.keys(a4.wrong).length, 'zerowanie na komputerze zeruje telefon');
   check(G.f.wyslijRaporty() === 1 && G.mails.length === 1 && /Ola/.test(G.mails[0].subject), 'raport tygodniowy wysłany');
+  check(/Plan na najbliższy tydzień/.test(G.mails[0].htmlBody) && /Mocne strony/.test(G.mails[0].body), 'raport: sekcje z rekomendacją');
+  // klasa przestawiona na „tylko to urządzenie” znika z arkusza (i z raportu)
+  await A.goto(ROOT + 'klasa4.html#/chmura');
+  await A.selectOption('select[data-track="kl4"]', '');
+  await A.waitForTimeout(1500);
+  await B.goto(ROOT + 'klasa4.html#/chmura');
+  await B.selectOption('select[data-track="kl4"]', '');
+  await B.waitForTimeout(1500);
+  check(G.f.wyslijRaporty() === 0, 'klasa odłączona na obu urządzeniach – brak danych do raportu');
   check(G.ss.getSheetByName('Raporty').getLastRow() === 2, 'raport zapisany w karcie „Raporty”');
   await browser.close();
 }

@@ -950,6 +950,85 @@
     }
     return out.sort((a, b) => a.rank - b.rank);
   }
+  // ---------- Podsumowanie z rekomendacją (panel postępów i raport dla rodzica) ----------
+  // Same reguły na wynikach – bez zgadywania: mocne strony, słabe strony (z przykładowym pytaniem z błędem)
+  // i plan na najbliższy tydzień. Każdy punkt: { text, href? }.
+  // treść pytania do cytatu „…”: cudzysłów w środku zamieniamy na «…»
+  const shortQ = (q) => {
+    const t = String(q).replace(/\s+/g, ' ').replace(/„([^”]*)”/g, '«$1»').trim();
+    return t.length > 90 ? `${t.slice(0, 87).trim()}…` : t;
+  };
+  function insights() {
+    const days = P.dailyTotals(state);
+    const w = weekStats(days, P.dayKey());
+    const now = Date.now();
+    // błędy do poprawy według działów
+    const wrongBy = {};
+    for (const key of Object.keys(state.wrong)) {
+      const q = resolveKey(key);
+      if (!q) continue;
+      const tk = key.split('/').slice(0, 2).join('/');
+      (wrongBy[tk] || (wrongBy[tk] = [])).push(q);
+    }
+    const strong = [];
+    const weak = [];
+    const fresh = [];
+    const stale = [];
+    for (const s of studySubjects()) {
+      let firstNew = null;
+      for (const t of coreTopics(s)) {
+        const k = topicKey(s, t);
+        const b = state.best[k];
+        const errs = wrongBy[k] || [];
+        const href = `#/s/${s.id}/t/${t.id}`;
+        if (b != null && b >= 90 && errs.length < 2) strong.push({ s, t, b, text: `${s.name} · ${t.name} – quiz ${b}%`, href });
+        if ((b != null && b < DONE_PCT) || errs.length >= 3) {
+          const ex = errs[0] ? ` Przykład pytania z błędem: „${shortQ(errs[0].q)}”` : '';
+          const what = b != null ? `quiz ${b}%` : 'jeszcze bez quizu';
+          weak.push({ s, t, b, n: errs.length, score: (b == null ? 60 : b) - errs.length * 3, href,
+            text: `${s.name} · ${t.name} – ${what}${errs.length ? `, ${errs.length} ${P.plural(errs.length, ['pytanie', 'pytania', 'pytań'])} do poprawy` : ''}.${ex}` });
+        }
+        if (!firstNew && b == null && !state.lessons[k]) firstNew = { s, t, href }; // dział jeszcze nieruszany
+        if (b != null && b >= DONE_PCT && state.at[k] && now - state.at[k] > 30 * 864e5) stale.push({ s, t, ago: Math.floor((now - state.at[k]) / 864e5), href });
+      }
+      if (firstNew) fresh.push({ ...firstNew, cov: coverage(s) / coreTopics(s).length, t7: (w.per[s.id] || {}).t || 0 });
+    }
+    // przedmioty w tym tygodniu (co najmniej 10 odpowiedzi)
+    const subjWeek = studySubjects().map((s) => ({ s, o: w.per[s.id] || { ok: 0, bad: 0 } })).filter((x) => x.o.ok + x.o.bad >= 10);
+    for (const x of subjWeek) {
+      const a = accuracy(x.o);
+      if (a >= 85) strong.unshift({ text: `${x.s.name} – ${a}% dobrych odpowiedzi w ostatnich 7 dniach (${x.o.ok} z ${x.o.ok + x.o.bad})`, href: `#/s/${x.s.id}` });
+      if (a < 60) weak.unshift({ score: -100, text: `${x.s.name} – tylko ${a}% dobrych odpowiedzi w ostatnich 7 dniach (${x.o.ok} z ${x.o.ok + x.o.bad}).`, href: `#/s/${x.s.id}` });
+    }
+    strong.sort((a, b) => (b.b || 101) - (a.b || 101));
+    weak.sort((a, b) => a.score - b.score);
+    // plan na tydzień: 3–5 kroków
+    const plan = [];
+    for (const x of weak.filter((y) => y.t).slice(0, 2)) {
+      const how = lessonOf(x.s, x.t) && !state.lessons[topicKey(x.s, x.t)] ? 'zrób lekcję' : 'przejrzyj ściągę i fiszki';
+      plan.push({ text: `Popraw „${x.t.name}” (${x.s.name}): ${how}, potem quiz – cel ${DONE_PCT}%.`, href: x.href });
+    }
+    const wrongAll = Object.keys(state.wrong).filter(resolveKey).length;
+    if (wrongAll >= 5) plan.push({ text: `Przejdź „Powtórkę błędów” – ${wrongAll} ${P.plural(wrongAll, ['pytanie czeka', 'pytania czekają', 'pytań czeka'])} na poprawę.`, href: '#/powtorka' });
+    // nowy dział: najpierw przedmiot, w którym najmniej przerobione (i dawno nieruszany)
+    fresh.sort((a, b) => a.cov - b.cov || a.t7 - b.t7);
+    for (const x of fresh.slice(0, plan.length >= 3 ? 1 : 2)) plan.push({ text: `Nowy dział: „${x.t.name}” (${x.s.name}) – lekcja i quiz.`, href: x.href });
+    stale.sort((a, b) => b.ago - a.ago);
+    if (stale[0] && plan.length < 5) plan.push({ text: `Odśwież „${stale[0].t.name}” (${stale[0].s.name}) – ostatnio ${stale[0].ago} dni temu. Wystarczy quiz.`, href: stale[0].href });
+    const goal = YOUNG ? 10 : 20;
+    if (w.tot.t < goal * 60 * 4) plan.push({ text: `Cel czasu: ok. ${goal} minut nauki dziennie przez 5 dni (w ostatnich 7 dniach: ${P.minutes(w.tot.t)}).` });
+    else if (w.tot.days < 4) plan.push({ text: `Lepiej krócej, a częściej: rozłóż naukę na 4–5 dni w tygodniu (teraz: ${w.tot.days} ${P.plural(w.tot.days, ['dzień', 'dni', 'dni'])}).` });
+    return { strong: strong.slice(0, 5), weak: weak.slice(0, 5), plan: plan.slice(0, 5) };
+  }
+  // sekcje raportu: tytuł + punkty (tekst) – arkusz rodzica wyświetla je bez zmian
+  function insightSections() {
+    const x = insights();
+    return [
+      { title: '💪 Mocne strony', items: x.strong.map((i) => i.text), empty: 'Jeszcze za mało wyników – mocne strony pojawią się po pierwszych quizach.' },
+      { title: '🧩 Nad czym popracować', items: x.weak.map((i) => i.text), empty: 'Brak słabych działów – świetnie!' },
+      { title: '🎯 Plan na najbliższy tydzień', items: x.plan.map((i) => i.text), empty: 'Kontynuuj naukę w obecnym tempie.' },
+    ];
+  }
   function trackForecast() {
     const subs = studySubjects();
     const total = subs.reduce((n, s) => n + coreTopics(s).length, 0);
@@ -977,6 +1056,7 @@
       total: all.total, done: all.done, pct: all.total ? Math.round((all.cov / all.total) * 100) : 0, fc: P.forecastText(all.f),
       days: recent,
       weak: weakTopics().slice(0, 6).map((x) => `${x.s.name} · ${x.t.name} – ${x.why}`),
+      sections: insightSections(),
       wrong: Object.keys(state.wrong).filter(resolveKey).length,
     };
   }
@@ -1026,8 +1106,7 @@
       `Cały materiał: ${all.total ? Math.round((all.cov / all.total) * 100) : 0}% (${all.done} z ${all.total} działów przerobionych)`,
       `Prognoza: ${P.forecastText(all.f)}`,
     ];
-    const weak = weakTopics().slice(0, 5);
-    if (weak.length) lines.push('', 'Do powtórki:', ...weak.map((x) => `• ${x.s.name} · ${x.t.name} – ${x.why}`));
+    for (const sec of insightSections()) lines.push('', `${sec.title}:`, ...(sec.items.length ? sec.items.map((i) => `• ${i}`) : [sec.empty]));
     const wrong = Object.keys(state.wrong).filter(resolveKey).length;
     if (wrong) lines.push('', `Pytania w powtórce błędów: ${wrong}`);
     return lines.join('\n');
@@ -1048,7 +1127,7 @@
     const starsAll = subs.reduce((n, s) => n + stars(s), 0);
     const starsMax = subs.reduce((n, s) => n + coreTopics(s).length * 3, 0);
     const ser = streak(days);
-    const weak = weakTopics().slice(0, 6);
+    const ins = insights();
     const code = P.cloud.codeOf(TRACK.id);
     const cfg = P.cloud.cfg();
     const prof = code ? cfg.profiles[code] : null;
@@ -1065,8 +1144,8 @@
       <p>Cały materiał ścieżki: <b>${pctAll}%</b> (${all.done} z ${all.total} działów przerobionych).<br>${fcAll}</p>
       ${YOUNG ? `<ul class="plain">${subs.map((s) => `<li>${s.icon} ${esc(s.name)}: ${Math.round((coverage(s) / coreTopics(s).length) * 100)}%${fcRow(s) ? ` · ${esc(fcRow(s))}` : ''}</li>`).join('')}</ul>` : ''}
       <p class="muted">Dział jest <b>przerobiony</b>, gdy jest lekcja i quiz na co najmniej ${DONE_PCT}% (dział bez lekcji: sam quiz). Za samą lekcję liczy się 40%, za quiz do 60%. Prognoza porównuje tempo z ostatnich 7 i 28 dni, dlatego podaje przedział; pojawia się po 2 tygodniach nauki. Tempo zwykle się zmienia (sprawdziany, ferie), więc to tylko szacunek. Działy „na zapas” się nie liczą.</p>
-      ${weak.length ? `<h2 class="sec">🔁 Do odświeżenia</h2>
-      <ul class="topics">${weak.map((x) => `<li><a href="#/s/${x.s.id}/t/${x.t.id}"><span>${esc(x.t.name)}<br><small class="muted">${x.s.icon} ${esc(x.s.name)} · ${esc(x.why)}</small></span><span aria-hidden="true">→</span></a></li>`).join('')}</ul>` : ''}
+      ${[['🎯 Plan na najbliższy tydzień', ins.plan, 'Kontynuuj naukę w obecnym tempie.'], ['🧩 Nad czym popracować', ins.weak, 'Brak słabych działów – świetnie!'], ['💪 Mocne strony', ins.strong, 'Mocne strony pojawią się po pierwszych quizach.']]
+        .map(([title, items, empty]) => `<h2 class="sec">${title}</h2>${items.length ? `<ul class="topics insight">${items.map((i) => `<li>${i.href ? `<a href="${i.href}"><span>${esc(i.text)}</span><span aria-hidden="true">→</span></a>` : `<div class="note">${esc(i.text)}</div>`}</li>`).join('')}</ul>` : `<p class="muted">${empty}</p>`}`).join('')}
       <h2 class="sec">📤 Raport dla rodzica</h2>
       <p class="muted">Podsumowanie ostatnich 7 dni – wyślij je mailem albo komunikatorem.</p>
       <div class="row">

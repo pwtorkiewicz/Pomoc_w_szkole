@@ -60,6 +60,16 @@ Klucze `storeKey` ścieżek się nie zmieniły, a stare zapisy działają dalej.
 
 **Prognoza.** Liczy tempo przybywania przerobionego materiału z ostatnich 7 i 28 dni i podaje przedział: „około 3–5 tygodni (między … a …)”. Pojawia się po 14 dniach historii. Historia zaczyna się od pierwszego postępu, więc wcześniejsze wyniki nie zawyżają tempa.
 
+**Podsumowanie z rekomendacją** (`insights` w `app.js`). Są to reguły na wynikach, bez zgadywania. Pokazuje je panel postępów, a raport mailowy dostaje je w `sum.sections` (tytuł i punkty jako tekst). Arkusz wyświetla te sekcje bez zmian, więc ulepszanie treści raportu nie wymaga ponownego wdrażania skryptu. Sekcje:
+- **mocne strony**: działy z quizem ≥ 90% (najwyżej 1 błąd do poprawy) i przedmioty z ≥ 85% dobrych odpowiedzi w 7 dni (przy co najmniej 10 odpowiedziach);
+- **nad czym popracować**: działy z quizem poniżej 80% albo z 3 i więcej błędami w powtórce, z przykładowym pytaniem z błędem; także przedmioty z < 60% dobrych odpowiedzi w 7 dni;
+- **plan na tydzień** (3–5 kroków):
+  - poprawa dwóch najsłabszych działów (lekcja albo ściąga i fiszki, potem quiz),
+  - powtórka błędów (przy 5 i więcej pytaniach),
+  - nowy, nieruszany dział w przedmiocie z najmniejszym postępem,
+  - odświeżenie działu nieruszanego od ponad 30 dni,
+  - cel czasu: 10 min dziennie w klasie 3, 20 min w pozostałych; albo, gdy czas jest, ale w mniej niż 4 dni, rada, żeby rozłożyć naukę na 4–5 dni.
+
 ### Synchronizacja
 
 - Urządzenie ma losowy identyfikator `pomoc_urzadzenie`. Konfiguracja chmury jest w `pomoc_chmura`: `script` (id wdrożenia), `profiles` (kod → imię i stan), `tracks` (ścieżka → kod; rodzeństwo na jednym urządzeniu), `since`, `sent`.
@@ -75,6 +85,8 @@ Klucze `storeKey` ścieżek się nie zmieniły, a stare zapisy działają dalej.
   - przy schowaniu karty,
   - po powrocie internetu,
   - przyciskiem „Synchronizuj teraz”.
+- Żądanie zawiera też `keys`: listę klas przypisanych dziecku na urządzeniu. Skrypt usuwa z zapisu tego urządzenia klasy spoza listy, czyli przestawione na „tylko to urządzenie”, więc znikają one też z raportu.
+- „Wyślij raport teraz” wymienia dzieci, dla których nie było danych.
 - W arkuszu jeden wiersz karty `_dane` to jedno urządzenie jednego dziecka. Dane są w kawałkach po 30 000 znaków z przedrostkiem `x`, żeby arkusz nie zamieniał ich na liczby ani formuły.
 
 ### Czego nie dało się sprawdzić

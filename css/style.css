@@ -346,6 +346,8 @@ body.young .hero .btn + small { display: block; }
 .srow .shead { display: flex; justify-content: space-between; gap: 10px; font-weight: 600; margin-bottom: 6px; }
 .srow small { display: block; margin-top: 5px; }
 ul.plain { padding-left: 1.2em; }
+.topics.insight li a, .topics.insight .note { font-size: .95rem; }
+.topics.insight .note { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; margin-bottom: 9px; }
 details.parent, details.report { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 16px; margin: 14px 0; }
 details.parent > summary, details.report > summary { cursor: pointer; font-weight: 600; }
 details.report pre { white-space: pre-wrap; word-break: break-word; font: inherit; font-size: .9rem; margin: 10px 0 4px; }

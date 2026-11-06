@@ -283,7 +283,8 @@
       if (sent[t.storeKey] !== h) { upload[t.storeKey] = st; hashes[t.storeKey] = h; }
     }
     const since = (c.since || {})[code] || {};
-    const res = await call(script, { a: 'sync', v: 1, k: code, d: DEV, since, tracks: upload }, leaving);
+    const keys = tracks.map((t) => t.storeKey); // skrypt usuwa u siebie klasy przestawione na „tylko to urządzenie”
+    const res = await call(script, { a: 'sync', v: 1, k: code, d: DEV, since, tracks: upload, keys }, leaving);
     const merged = {};
     const seen = {};
     for (const dev in res.devices || {}) {

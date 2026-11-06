@@ -101,8 +101,9 @@ function pokazLinki() {
 }
 
 function wyslijRaportTeraz() {
-  const n = wyslijRaporty();
-  SpreadsheetApp.getUi().alert(n ? `Wysłano raporty: ${n}. Sprawdź skrzynkę.` : 'Nie wysłano żadnego raportu – nie ma jeszcze danych z urządzeń (otwórz aplikację na połączonym urządzeniu i chwilę się pouczaj) albo brakuje adresu e-mail w arkuszu „Dzieci”.');
+  const r = wyslij_();
+  const bez = r.bez.length ? `\n\nBez raportu: ${r.bez.join(', ')} – brak danych z urządzeń (otwórz aplikację na połączonym urządzeniu, pouczaj się chwilę i na stronie „☁️ Synchronizacja” kliknij „Synchronizuj teraz”) albo brak adresu w kolumnie „E-mail do raportów”.` : '';
+  SpreadsheetApp.getUi().alert(`Wysłano raporty: ${r.n}.${r.n ? ' Sprawdź skrzynkę.' : ''}${bez}`);
 }
 
 // ---------- Aplikacja internetowa ----------
@@ -137,12 +138,14 @@ function obsluz_(req) {
     const sh = arkusz_().getSheetByName(ARK.dane);
     const zapisy = czytajZapisy_(sh, dziecko.kod);
     const teraz = Date.now();
-    if (Object.keys(tracks).length) {
-      const moj = zapisy.find((z) => z.dev === dev);
-      const dane = moj ? parsuj_(moj) : { tracks: {} };
-      Object.assign(dane.tracks, tracks);
-      zapiszZapis_(sh, moj ? moj.wiersz : 0, dziecko.kod, dev, teraz, JSON.stringify(dane), moj ? moj.szer : 0);
-    }
+    // keys: klasy przypisane temu dziecku na urządzeniu – klasę przestawioną na „tylko to urządzenie” usuwamy
+    const klucze = Array.isArray(req.keys) ? req.keys.map(String) : null;
+    const moj = zapisy.find((z) => z.dev === dev);
+    const dane = moj ? parsuj_(moj) : { tracks: {} };
+    let zmiana = Object.keys(tracks).length > 0;
+    Object.assign(dane.tracks, tracks);
+    if (klucze) for (const k of Object.keys(dane.tracks)) if (!klucze.includes(k)) { delete dane.tracks[k]; zmiana = true; }
+    if (zmiana) zapiszZapis_(sh, moj ? moj.wiersz : 0, dziecko.kod, dev, teraz, JSON.stringify(dane), moj ? moj.szer : 0);
     const devices = {};
     for (const z of zapisy) {
       if (z.dev === dev || z.ts <= (+since[z.dev] || 0)) continue;
@@ -157,17 +160,20 @@ function obsluz_(req) {
 // ---------- Raport tygodniowy ----------
 // Wywołuje go wyzwalacz (niedziela) albo menu. Zwraca liczbę wysłanych maili.
 function wyslijRaporty() {
+  return wyslij_().n;
+}
+function wyslij_() {
   let n = 0;
+  const bez = [];
   for (const d of listaDzieci_()) {
-    if (!d.mail) continue;
-    const r = raport_(d);
-    if (!r) continue;
+    const r = d.mail ? raport_(d) : null;
+    if (!r) { bez.push(d.imie); continue; }
     MailApp.sendEmail({ to: d.mail, subject: r.temat, body: r.tekst, htmlBody: r.html, name: 'Pomoc w szkole' });
     const sh = arkusz_().getSheetByName(ARK.raporty);
     for (const w of r.wiersze) sh.appendRow(w);
     n++;
   }
-  return n;
+  return { n, bez };
 }
 
 // Najnowsze podsumowanie każdej ścieżki dziecka (liczy je aplikacja przy synchronizacji: state.sum).
@@ -251,7 +257,14 @@ function raport_(d) {
           return `<tr><td ${td}>${x.icon || ''} ${esc_(x.name)}</td><td ${td}>${min(v[0])}</td><td ${td}>${v[1] + v[2] ? `${v[1]} / ${v[1] + v[2]} (${proc(v[1], v[2])})` : '–'}</td><td ${td}>${x.pct}%</td><td ${td}>${esc_(x.fc)}</td></tr>`;
         }).join('')}
       </table>`;
-    if ((s.weak || []).length) {
+    // sekcje (mocne strony, nad czym popracować, plan na tydzień) – treść liczy aplikacja
+    if (Array.isArray(s.sections)) {
+      for (const sec of s.sections) {
+        const items = (sec.items || []).map(String);
+        tekst.push('', `${sec.title}:`, ...(items.length ? items.map((x) => `• ${x}`) : [String(sec.empty || '–')]));
+        html += `<p style="margin:16px 0 4px"><b>${esc_(sec.title)}</b></p>${items.length ? `<ul style="margin:0;padding-left:20px">${items.map((x) => `<li style="margin-bottom:4px">${esc_(x)}</li>`).join('')}</ul>` : `<p style="margin:0;color:#5f667a">${esc_(sec.empty || '–')}</p>`}`;
+      }
+    } else if ((s.weak || []).length) {
       tekst.push('', 'Do powtórki:', ...s.weak.map((x) => `• ${x}`));
       html += `<p style="margin:12px 0 4px"><b>🔁 Do powtórki</b></p><ul style="margin:0;padding-left:20px">${s.weak.map((x) => `<li>${esc_(x)}</li>`).join('')}</ul>`;
     }
