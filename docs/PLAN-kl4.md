@@ -22,7 +22,7 @@ Cel: pomoc w bieżącej nauce **wszystkich przedmiotów klasy 4**, zgodnie z pod
 | Informatyka | 1 | 5 działów (myślenie komputacyjne, programowanie, narzędzia cyfrowe w tym AI, bezpieczeństwo, krytyczna ocena informacji) | B |
 | Zajęcia praktyczno-techniczne (zamiast „techniki”) | 2 | 8 działów, m.in. **8. Bezpieczne i odpowiedzialne uczestnictwo w ruchu drogowym** | B (głównie dz. 8 i wiedza z dz. 1–7) |
 | Edukacja zdrowotna | 1 | 9 działów: wartości, zdrowie fizyczne, aktywność, odżywianie, zdrowie psychiczne i społeczne, dojrzewanie, środowisko, internet i uzależnienia | **pomijamy** (decyzja rodzica, 1.11.2026) |
-| Muzyka | 1 | 4 działy (twórca i wykonawca, słuchacz, uczestnik kultury, relacje) | C – tylko wiedza (np. zapis nutowy, instrumenty) |
+| Muzyka | 1 | 4 działy (twórca i wykonawca, słuchacz, uczestnik kultury, relacje) | C – tylko wiedza (np. zapis nutowy, instrumenty); od 6.11.2026 także lekcje (prośba rodzica) |
 | Plastyka | 1 | 4 działy (aktywność twórcza, techniki, sztuka jako komunikat, sztuka w życiu) | C – tylko wiedza (np. barwy, techniki) |
 | Wychowanie fizyczne | 4 | osobny blok „Klasa IV”, 8 działów | C – tylko zasady bezpieczeństwa, gier, fair play |
 
@@ -133,4 +133,5 @@ Zakres podręczników a działy aplikacji (stan po etapie 10):
   - [ ] Plastyka: historia sztuki z podręcznika – sztuka prehistoryczna, starożytny Egipt, antyk (wstawki w rozdziałach I–III); sztuka w naszym otoczeniu i zabytki regionów Polski (rozdział III.2–3) – fakty o zabytkach sprawdzić (np. w rejestrze NID).
   - [ ] Plastyka: linia i plama jako środki wyrazu, wycinanka ludowa (rozdział I.1–2), pastele i techniki mieszane (rozdział II.2, II.4), stempel (rozdział III.1) – sprawdzić, co już jest w działach, i uzupełnić.
   - [ ] Plastyka: walor, faktura, kompozycja oraz oryginał, kopia, reprodukcja, falsyfikat – w podręczniku w kolejnych klasach; rozważyć wydzielenie do działu „na zapas”.
+  - [x] Muzyka – lekcje do wszystkich 4 działów (prośba rodzica 6.11.2026; 22 kroki, wszystkie z rysunkami SVG): elementy muzyki i zapis nutowy (6 kroków: elementy, pięciolinia i klucz wiolinowy z nutami c¹–c², wartości rytmiczne, takt i metrum 3/4, tempo i dynamika, pułapki); instrumenty, głosy i formy (6: grupy instrumentów, rodzina smyczkowa i perkusyjne melodyczne, głosy, zespoły, formy i gatunki, funkcje muzyki i higiena głosu i słuchu); hymn, tańce, Chopin (5); kolędy i Wielkanoc (5). Treść tylko ze ściągi i fiszek działów – bez nowych faktów. Plik `js/lekcje/kl4/muzyka.js`.
   - Bez lekcji (priorytet B i C, jak w etapach 3–4), chyba że rodzic zdecyduje inaczej – wyjątek: manewry i skrzyżowania w technice warto pokazać na lekcji z rysunkami.
