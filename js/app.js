@@ -190,6 +190,7 @@
   const IDLE = 120000;
   let lastAct = Date.now();
   let unsaved = 0;
+  let lastTouch = 0;
   ['pointerdown', 'keydown', 'scroll', 'touchstart', 'wheel', 'mousemove'].forEach((ev) =>
     window.addEventListener(ev, () => { lastAct = Date.now(); }, { passive: true, capture: true }));
   if (P) {
@@ -199,6 +200,9 @@
       if (!reading && (Date.now() - lastAct > IDLE || !document.hasFocus())) return;
       log(currentSid(), 't', TICK);
       if (++unsaved >= 6) { unsaved = 0; saveQuiet(); }
+      // sam czas nauki (lekcja, ściąga, fiszki – bez odpowiedzi) też trafia do chmury:
+      // pierwszy raz ok. minutę po rozpoczęciu, potem najwyżej co 3 minuty
+      if (Date.now() - lastTouch > 180000) { lastTouch = Date.now(); saveQuiet(); P.cloud.touch(); }
     }, TICK * 1000);
     document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') saveQuiet(); });
     window.addEventListener('pagehide', saveQuiet);
