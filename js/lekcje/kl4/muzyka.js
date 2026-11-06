@@ -496,97 +496,38 @@ window.LESSONS['muzyka/muzyka-polska'] = [
     check: { q: 'Kim był Jan Henryk Dąbrowski?', options: ['generałem, który dowodził Legionami', 'autorem słów hymnu', 'kompozytorem melodii hymnu'], answer: 0, explain: 'Dąbrowski dowodził Legionami Polskimi. Słowa napisał Józef Wybicki, a autor melodii (ludowego mazurka) jest nieznany.' },
   },
   {
-    title: 'Hymn Unii Europejskiej i „Rota”',
-    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Dwie pieśni. Hymn Unii Europejskiej: „Oda do radości” z IX Symfonii Ludwiga van Beethovena, wykonywana bez słów. „Rota”: pieśń patriotyczna, słowa Maria Konopnicka, muzyka Feliks Nowowiejski.">
-      <rect x="4" y="6" width="192" height="188" rx="12" class="f1 s1"/>
-      <rect x="204" y="6" width="192" height="188" rx="12" class="f2 s2"/>
-      <text x="100" y="36" class="tx-b" text-anchor="middle">🎼 hymn UE</text>
-      <text x="100" y="70" class="tx" text-anchor="middle">„Oda do radości”</text>
-      <text x="100" y="98" class="tx-s" text-anchor="middle">z IX Symfonii</text>
-      <text x="100" y="118" class="tx-s" text-anchor="middle">Ludwiga van Beethovena</text>
-      <text x="100" y="160" class="tx-b t1" text-anchor="middle">bez słów</text>
-      <text x="100" y="180" class="tx-s" text-anchor="middle">sama melodia</text>
-      <text x="300" y="36" class="tx-b" text-anchor="middle">🇵🇱 „Rota”</text>
-      <text x="300" y="70" class="tx" text-anchor="middle">pieśń patriotyczna</text>
-      <text x="300" y="98" class="tx-s" text-anchor="middle">słowa:</text>
-      <text x="300" y="118" class="tx-b" text-anchor="middle">Maria Konopnicka</text>
-      <text x="300" y="150" class="tx-s" text-anchor="middle">muzyka:</text>
-      <text x="300" y="170" class="tx-b" text-anchor="middle">F. Nowowiejski</text>
+    title: 'Hymn Unii Europejskiej – bez słów',
+    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Hymn Unii Europejskiej to „Oda do radości” z IX Symfonii Ludwiga van Beethovena. Beethoven napisał muzykę do wiersza Friedricha Schillera. Hymn UE wykonuje się bez słów – samą melodią, bo muzyka jest wspólnym językiem krajów Unii.">
+      <rect x="6" y="6" width="388" height="178" rx="12" class="f1 s1"/>
+      <text x="200" y="40" class="tx-b" text-anchor="middle">🇪🇺 hymn Unii Europejskiej</text>
+      <text x="200" y="76" class="tx" text-anchor="middle">„Oda do radości”</text>
+      <text x="200" y="104" class="tx-s" text-anchor="middle">z IX Symfonii Ludwiga van Beethovena</text>
+      <text x="200" y="124" class="tx-s" text-anchor="middle">(muzyka do wiersza Friedricha Schillera)</text>
+      <rect x="120" y="140" width="160" height="32" rx="16" class="bg ln"/>
+      <text x="200" y="162" class="tx-b t1" text-anchor="middle">🎵 bez słów</text>
     </svg>`,
-    text: `<p>Hymnem <b>Unii Europejskiej</b> jest melodia „<b>Ody do radości</b>” z <b>IX Symfonii</b> Ludwiga van <b>Beethovena</b>. Beethoven napisał muzykę do wiersza Friedricha Schillera, ale hymn UE wykonuje się <b>bez słów</b> – muzyka jest wspólnym językiem wszystkich krajów Unii.</p>
-      <p>„<b>Rota</b>” to <b>pieśń patriotyczna</b>: słowa napisała <b>Maria Konopnicka</b>, muzykę skomponował <b>Feliks Nowowiejski</b>. Pieśni patriotyczne opowiadają o miłości do ojczyzny i walce o wolność – śpiewamy je w święta państwowe.</p>`,
-    remember: 'Hymn UE – „Oda do radości” Beethovena, bez słów. „Rota” – Konopnicka (słowa), Nowowiejski (muzyka).',
+    text: `<p>Hymnem <b>Unii Europejskiej</b> jest melodia „<b>Ody do radości</b>” z <b>IX Symfonii</b> Ludwiga van <b>Beethovena</b>. Beethoven napisał muzykę do wiersza Friedricha Schillera.</p>
+      <p>Hymn UE wykonuje się <b>bez słów</b> – muzyka jest wspólnym językiem wszystkich krajów Unii.</p>`,
+    remember: 'Hymn UE – „Oda do radości” z IX Symfonii Beethovena, bez słów.',
     hook: 'Hymn UE nie ma słów, bo w Unii mówi się wieloma językami – a melodię rozumie każdy.',
     check: { q: 'Jak wykonuje się hymn Unii Europejskiej?', options: ['bez słów – samą melodię', 'zawsze po niemiecku', 'w języku każdego kraju po kolei'], answer: 0, explain: 'Hymn UE to sama melodia „Ody do radości” – bez słów.' },
   },
   {
-    title: 'Pięć tańców narodowych',
-    svg: `<svg viewBox="0 0 400 214" role="img" aria-label="Pięć polskich tańców narodowych: polonez – metrum 3/4, uroczysty, chodzony; krakowiak – metrum 2/4, żywy i skoczny, z okolic Krakowa; mazur – 3/4, szybki, z podskokami, z Mazowsza; kujawiak – 3/4, wolny i kołyszący, z Kujaw; oberek – metrum trójdzielne, bardzo szybki, z wirowaniem. Tylko krakowiak liczymy na dwa.">
-      <rect x="6" y="6" width="388" height="36" rx="8" class="f1 s1"/>
-      <rect x="6" y="48" width="388" height="36" rx="8" class="f2 s2 sw"/>
-      <rect x="6" y="90" width="388" height="36" rx="8" class="f1 s1"/>
-      <rect x="6" y="132" width="388" height="36" rx="8" class="f1 s1"/>
-      <rect x="6" y="174" width="388" height="36" rx="8" class="f1 s1"/>
-      <text x="16" y="30" class="tx-b">polonez</text>
-      <text x="16" y="72" class="tx-b">krakowiak</text>
-      <text x="16" y="114" class="tx-b">mazur</text>
-      <text x="16" y="156" class="tx-b">kujawiak</text>
-      <text x="16" y="198" class="tx-b">oberek</text>
-      <rect x="118" y="12" width="48" height="24" rx="12" class="bg ln"/>
-      <rect x="118" y="54" width="48" height="24" rx="12" class="bg ln"/>
-      <rect x="118" y="96" width="48" height="24" rx="12" class="bg ln"/>
-      <rect x="118" y="138" width="48" height="24" rx="12" class="bg ln"/>
-      <rect x="118" y="180" width="48" height="24" rx="12" class="bg ln"/>
-      <text x="142" y="29" class="tx" text-anchor="middle">3/4</text>
-      <text x="142" y="71" class="tx-b t2" text-anchor="middle">2/4</text>
-      <text x="142" y="113" class="tx" text-anchor="middle">3/4</text>
-      <text x="142" y="155" class="tx" text-anchor="middle">3/4</text>
-      <text x="142" y="197" class="tx" text-anchor="middle">na 3</text>
-      <text x="178" y="29" class="tx-s">uroczysty, „chodzony”</text>
-      <text x="178" y="71" class="tx-s">żywy, skoczny – Kraków</text>
-      <text x="178" y="113" class="tx-s">szybki, podskoki – Mazowsze</text>
-      <text x="178" y="155" class="tx-s">wolny, kołyszący – Kujawy</text>
-      <text x="178" y="197" class="tx-s">bardzo szybki, wirowanie</text>
+    title: 'Krakowiak – liczymy „raz, dwa”',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Krakowiak: jeden z pięciu polskich tańców narodowych, z okolic Krakowa, żywy i skoczny. Ma metrum 2/4 – w takcie liczymy raz, dwa. Pozostałe tańce narodowe – polonez, mazur, kujawiak i oberek – liczymy na trzy.">
+      <rect x="6" y="6" width="388" height="96" rx="12" class="f3 s3 sw"/>
+      <text x="200" y="36" class="tx-b" text-anchor="middle">💃 krakowiak – z okolic Krakowa</text>
+      <text x="200" y="62" class="tx" text-anchor="middle">żywy, skoczny</text>
+      <text x="200" y="88" class="tx-b t3" text-anchor="middle">metrum 2/4: raz, dwa | raz, dwa</text>
+      <rect x="6" y="114" width="388" height="80" rx="12" class="f1 s1"/>
+      <text x="200" y="142" class="tx" text-anchor="middle">polonez, mazur, kujawiak, oberek</text>
+      <text x="200" y="170" class="tx-s" text-anchor="middle">pozostałe tańce narodowe – liczymy „na trzy”</text>
     </svg>`,
-    text: `<p>Polska ma <b>pięć tańców narodowych</b>:</p>
-      <ul>
-        <li><b>polonez</b> – uroczysty, dostojny; pary idą w korowodzie – to taniec „chodzony”,</li>
-        <li><b>krakowiak</b> – żywy, skoczny, z okolic Krakowa,</li>
-        <li><b>mazur</b> – szybki, z podskokami, z Mazowsza,</li>
-        <li><b>kujawiak</b> – wolny, śpiewny, kołyszący, z Kujaw,</li>
-        <li><b>oberek</b> – bardzo szybki, z wirowaniem.</li>
-      </ul>
-      <p>Tylko <b>krakowiak</b> ma metrum dwudzielne – <b>2/4</b>. Pozostałe tańce liczymy „na trzy”.</p>`,
-    remember: 'Polonez, krakowiak, mazur, kujawiak, oberek. Krakowiak – 2/4, reszta – na trzy.',
-    hook: 'Nazwy trzech tańców mówią, skąd pochodzą: <b>krakow</b>iak – Kraków, <b>mazur</b> – Mazowsze, <b>kujaw</b>iak – Kujawy.',
-    check: { q: 'Który taniec jest wolny, śpiewny i kołyszący?', options: ['kujawiak', 'oberek', 'krakowiak'], answer: 0, explain: 'Kujawiak jest wolny i kołyszący. Oberek jest bardzo szybki, a krakowiak – żywy i skoczny.' },
-  },
-  {
-    title: 'Fryderyk Chopin i jego fortepian',
-    svg: `<svg viewBox="0 0 400 236" role="img" aria-label="Fryderyk Chopin: urodził się w 1810 roku w Żelazowej Woli, zmarł w 1849 roku w Paryżu. Był pianistą i komponował na fortepian: mazurki, polonezy, walce, nokturny, etiudy. Jego serce spoczywa w kościele Świętego Krzyża w Warszawie. Co pięć lat w Warszawie odbywa się Międzynarodowy Konkurs Pianistyczny jego imienia.">
-      <line x1="60" y1="46" x2="340" y2="46" class="ln sw"/>
-      <circle cx="60" cy="46" r="8" class="f4 s4 sw"/>
-      <circle cx="340" cy="46" r="8" class="f4 s4 sw"/>
-      <text x="60" y="26" class="tx-b" text-anchor="middle">1810</text>
-      <text x="340" y="26" class="tx-b" text-anchor="middle">1849</text>
-      <text x="200" y="38" class="tx" text-anchor="middle">🎹</text>
-      <text x="75" y="76" class="tx-s" text-anchor="middle">ur. w Żelazowej Woli</text>
-      <text x="340" y="76" class="tx-s" text-anchor="middle">zm. w Paryżu</text>
-      <rect x="6" y="94" width="184" height="96" rx="12" class="f2 s2"/>
-      <rect x="198" y="94" width="196" height="96" rx="12" class="f1 s1"/>
-      <text x="98" y="122" class="tx-b" text-anchor="middle">❤️ serce</text>
-      <text x="98" y="148" class="tx-s" text-anchor="middle">kościół Świętego Krzyża</text>
-      <text x="98" y="168" class="tx-s" text-anchor="middle">w Warszawie</text>
-      <text x="296" y="122" class="tx-b" text-anchor="middle">🎼 na fortepian</text>
-      <text x="296" y="148" class="tx-s" text-anchor="middle">mazurki, polonezy,</text>
-      <text x="296" y="168" class="tx-s" text-anchor="middle">walce, nokturny, etiudy</text>
-      <text x="200" y="220" class="tx-s" text-anchor="middle">🏆 co 5 lat w Warszawie – Konkurs Chopinowski</text>
-    </svg>`,
-    text: `<p><b>Fryderyk Chopin</b> urodził się w <b>1810 r.</b> w <b>Żelazowej Woli</b> na Mazowszu, a zmarł w <b>1849 r.</b> w <b>Paryżu</b>. Był genialnym <b>pianistą</b> i kompozytorem. Pisał przede wszystkim <b>na fortepian</b>: mazurki, polonezy, walce, nokturny i etiudy. W mazurkach i polonezach wykorzystywał polskie tańce i melodie ludowe.</p>
-      <p>Na jego prośbę serce przewieziono do Warszawy – spoczywa w filarze <b>kościoła Świętego Krzyża</b>. Co pięć lat w Warszawie odbywa się <b>Międzynarodowy Konkurs Pianistyczny im. Fryderyka Chopina</b>.</p>`,
-    remember: 'Chopin: 1810 Żelazowa Wola – 1849 Paryż; muzyka na fortepian; serce w kościele Św. Krzyża.',
-    hook: 'Chopin to „polskie tańce na fortepianie”: <b>mazurki i polonezy</b> mają nazwy jak tańce narodowe.',
-    check: { q: 'Gdzie zmarł Fryderyk Chopin?', options: ['w Paryżu', 'w Żelazowej Woli', 'w Warszawie'], answer: 0, explain: 'Chopin zmarł w 1849 r. w Paryżu. Urodził się w Żelazowej Woli, a jego serce spoczywa w Warszawie.' },
+    text: `<p>Polska ma <b>pięć tańców narodowych</b>. W klasie 4 poznajesz <b>krakowiaka</b> – taniec z <b>okolic Krakowa</b>, <b>żywy i skoczny</b>.</p>
+      <p>Krakowiak ma metrum <b>2/4</b>: w każdym takcie liczysz „raz, dwa”. To wyjątek – pozostałe tańce narodowe liczymy „na trzy”.</p>`,
+    remember: 'Krakowiak: okolice Krakowa, żywy i skoczny, metrum 2/4 – jedyny taniec narodowy „na dwa”.',
+    hook: '<b>Krak</b>owiak – <b>Krak</b>ów. Krakowiak skacze „na dwa”: hop – hop, raz – dwa!',
+    check: { q: 'Jakie metrum ma krakowiak?', options: ['2/4', '3/4', '4/4'], answer: 0, explain: 'Krakowiak ma metrum 2/4 – liczymy „raz, dwa”. Pozostałe tańce narodowe liczymy „na trzy”.' },
   },
   {
     title: 'Paderewski i zasady na koncercie',
@@ -612,6 +553,7 @@ window.LESSONS['muzyka/muzyka-polska'] = [
     check: { q: 'Orkiestra skończyła pierwszą część symfonii i na chwilę ucichła. Co robisz?', options: ['czekam w ciszy do końca całego utworu', 'od razu głośno klaszczę', 'wstaję i wychodzę z sali'], answer: 0, explain: 'Brawa są po całym utworze. Cisza między częściami to jeszcze nie koniec.' },
   },
 ];
+
 
 // ---------------------------------------------------------------------------
 window.LESSONS['muzyka/swieta-w-muzyce'] = [
@@ -766,6 +708,143 @@ window.LESSONS['muzyka/swieta-w-muzyce'] = [
   },
 ];
 
+window.LESSONS['muzyka/cudowne-dzieci'] = [
+  {
+    title: 'Cudowne dziecko – Mozart',
+    svg: `<svg viewBox="0 0 400 224" role="img" aria-label="Oś czasu Mozarta: 1756 – urodził się w Salzburgu; w wieku 5 lat skomponował pierwszy utwór; od 1762 roku podróżował po Europie z ojcem Leopoldem i starszą siostrą Nannerl i grał na dworach; 1791 – opera „Czarodziejski flet”, w tym samym roku zmarł w Wiedniu.">
+      <line x1="40" y1="20" x2="40" y2="210" class="ln sw"/>
+      <circle cx="40" cy="34" r="8" class="f4 s4 sw"/>
+      <circle cx="40" cy="84" r="8" class="f4 s4 sw"/>
+      <circle cx="40" cy="134" r="8" class="f4 s4 sw"/>
+      <circle cx="40" cy="190" r="8" class="f4 s4 sw"/>
+      <text x="60" y="30" class="tx-b">1756 – Salzburg</text>
+      <text x="60" y="50" class="tx-s">tu urodził się Wolfgang</text>
+      <text x="60" y="80" class="tx-b">5 lat – pierwszy utwór</text>
+      <text x="60" y="100" class="tx-s">lekcje u ojca, Leopolda</text>
+      <text x="60" y="130" class="tx-b">od 1762 – koncerty po Europie</text>
+      <text x="60" y="150" class="tx-s">z ojcem i siostrą Nannerl</text>
+      <text x="60" y="186" class="tx-b">1791 – „Czarodziejski flet”</text>
+      <text x="60" y="206" class="tx-s">w tym roku zmarł w Wiedniu</text>
+    </svg>`,
+    text: `<p><b>Cudowne dziecko</b> to dziecko o wybitnych zdolnościach. Najsłynniejsze cudowne dziecko muzyki to <b>Wolfgang Amadeusz Mozart</b>.</p>
+      <p>Urodził się w <b>1756 r.</b> w <b>Salzburgu</b>. Uczył go ojciec, <b>Leopold</b> – skrzypek i kompozytor. Pierwszy utwór Wolfgang skomponował, gdy miał <b>5 lat</b>. Od 1762 r. podróżował z ojcem i starszą siostrą <b>Nannerl</b> po Europie i grał na dworach królów. Zmarł w <b>1791 r.</b> w <b>Wiedniu</b> – w tym samym roku powstała jego opera „<b>Czarodziejski flet</b>”.</p>`,
+    remember: 'Mozart: 1756 Salzburg – 1791 Wiedeń; pierwszy utwór w wieku 5 lat.',
+    hook: 'Mozart skomponował pierwszy utwór, gdy był młodszy niż ty teraz – miał tyle lat, ile palców jednej ręki: <b>5</b>.',
+    check: { q: 'Kto uczył małego Mozarta muzyki?', options: ['ojciec, Leopold', 'Fryderyk Chopin', 'Józef Elsner'], answer: 0, explain: 'Pierwszych lekcji udzielał mu ojciec, Leopold Mozart – skrzypek i kompozytor.' },
+  },
+  {
+    title: 'Mały Fryderyk Chopin',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Dzieciństwo Chopina: 1810 – urodził się w Żelazowej Woli; w wieku 6 lat zaczął lekcje fortepianu u Wojciecha Żywnego; 1817 – w wieku 7 lat wydano jego Polonez g-moll; 1818 – w wieku 8 lat pierwszy publiczny koncert w Warszawie. Później kompozycji uczył go Józef Elsner.">
+      <rect x="6" y="6" width="90" height="140" rx="10" class="f1 s1"/>
+      <rect x="104" y="6" width="90" height="140" rx="10" class="f1 s1"/>
+      <rect x="202" y="6" width="90" height="140" rx="10" class="f2 s2 sw"/>
+      <rect x="300" y="6" width="94" height="140" rx="10" class="f1 s1"/>
+      <text x="51" y="34" class="tx-b" text-anchor="middle">1810</text>
+      <text x="51" y="64" class="tx" text-anchor="middle">👶</text>
+      <text x="51" y="96" class="tx-s" text-anchor="middle">Żelazowa</text>
+      <text x="51" y="114" class="tx-s" text-anchor="middle">Wola</text>
+      <text x="149" y="34" class="tx-b" text-anchor="middle">6 lat</text>
+      <text x="149" y="64" class="tx" text-anchor="middle">🎹</text>
+      <text x="149" y="96" class="tx-s" text-anchor="middle">lekcje u</text>
+      <text x="149" y="114" class="tx-s" text-anchor="middle">Żywnego</text>
+      <text x="247" y="34" class="tx-b" text-anchor="middle">7 lat</text>
+      <text x="247" y="64" class="tx" text-anchor="middle">📜</text>
+      <text x="247" y="96" class="tx-s" text-anchor="middle">Polonez</text>
+      <text x="247" y="114" class="tx-s" text-anchor="middle">g-moll</text>
+      <text x="347" y="34" class="tx-b" text-anchor="middle">8 lat</text>
+      <text x="347" y="64" class="tx" text-anchor="middle">👏</text>
+      <text x="347" y="96" class="tx-s" text-anchor="middle">pierwszy</text>
+      <text x="347" y="114" class="tx-s" text-anchor="middle">koncert</text>
+      <text x="200" y="178" class="tx-s" text-anchor="middle">później kompozycja u Józefa Elsnera:</text>
+      <text x="200" y="198" class="tx-b" text-anchor="middle">„geniusz muzyczny”</text>
+    </svg>`,
+    text: `<p><b>Fryderyk Chopin</b> urodził się w <b>1810 r.</b> w <b>Żelazowej Woli</b>. Gdy miał 6 lat, zaczął naukę gry na fortepianie u <b>Wojciecha Żywnego</b>.</p>
+      <p>W <b>1817 r.</b>, w wieku <b>7 lat</b>, wydano jego pierwszy utwór – <b>Polonez g-moll</b>. Rok później, mając <b>8 lat</b>, zagrał pierwszy raz publicznie na koncercie w Warszawie. Później kompozycji uczył go <b>Józef Elsner</b>, który napisał o nim: „geniusz muzyczny”.</p>`,
+    remember: 'Chopin: 7 lat – Polonez g-moll (1817), 8 lat – pierwszy koncert (1818).',
+    hook: 'Liczby idą po kolei: <b>6</b> – lekcje, <b>7</b> – polonez, <b>8</b> – koncert.',
+    check: { q: 'Jaki był pierwszy wydany utwór Chopina?', options: ['Polonez g-moll', 'Mazurek Dąbrowskiego', '„Czarodziejski flet”'], answer: 0, explain: 'W 1817 r. wydano Polonez g-moll siedmioletniego Chopina. „Czarodziejski flet” to opera Mozarta.' },
+  },
+  {
+    title: 'O czym może mówić muzyka?',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Trzy rodzaje muzyki. Ilustracyjna – dźwiękami naśladuje zjawiska, na przykład ptaki, burzę, szum wody; jest też w filmie i teatrze. Programowa – ma treść podaną w tytule lub opisie, na przykład opowieść albo obraz. Absolutna – nie opowiada historii; tytuł to forma, na przykład sonata, koncert, etiuda.">
+      <rect x="6" y="6" width="388" height="64" rx="10" class="f3 s3"/>
+      <rect x="6" y="78" width="388" height="64" rx="10" class="f4 s4"/>
+      <rect x="6" y="150" width="388" height="64" rx="10" class="f1 s1"/>
+      <text x="16" y="32" class="tx-b">🐦 ilustracyjna – naśladuje</text>
+      <text x="16" y="56" class="tx-s">ptaki, burzę, szum wody; muzyka w filmie i teatrze</text>
+      <text x="16" y="104" class="tx-b">📖 programowa – opowiada</text>
+      <text x="16" y="128" class="tx-s">treść w tytule lub opisie: opowieść, obraz, wiersz</text>
+      <text x="16" y="176" class="tx-b">🎼 absolutna – sama muzyka</text>
+      <text x="16" y="200" class="tx-s">tytuł to forma: sonata, koncert, etiuda</text>
+    </svg>`,
+    text: `<p>Muzyka może <b>naśladować</b> świat: śpiew ptaków, burzę, szum wody. To <b>muzyka ilustracyjna</b> – słyszysz ją też w filmach i w teatrze.</p>
+      <p><b>Muzyka programowa</b> jest związana z jakąś treścią – opowieścią, obrazem, wierszem – którą kompozytor podaje w <b>tytule</b> albo w opisie. A <b>muzyka absolutna</b> nie opowiada żadnej historii: tytuł mówi tylko, jaka to forma, np. sonata albo etiuda.</p>`,
+    remember: 'Ilustracyjna – naśladuje, programowa – opowiada (treść w tytule), absolutna – sama muzyka.',
+    hook: 'Program w telewizji mówi, co zobaczysz. <b>Program</b> utworu mówi, co usłyszysz – dlatego to muzyka programowa.',
+    check: { q: 'Utwór ma tytuł „Etiuda” i nie opowiada żadnej historii. To muzyka…', options: ['absolutna', 'programowa', 'ilustracyjna'], answer: 0, explain: 'Tytuł mówi tylko o formie (etiuda), bez treści pozamuzycznej – to muzyka absolutna.' },
+  },
+  {
+    title: 'Jak muzyka maluje obrazy?',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Przykłady: Vivaldi, „Cztery pory roku” – koncerty na skrzypce, w „Wiośnie” ptaki, strumień i burza. Saint-Saëns, „Karnawał zwierząt” – Łabędź: wiolonczela i fortepian, Słoń: kontrabasy. Grieg, „W grocie Króla Gór” – coraz szybciej i głośniej. Musorgski, „Obrazki z wystawy” – utwory o obrazach przyjaciela malarza.">
+      <rect x="6" y="6" width="190" height="104" rx="10" class="f3 s3"/>
+      <rect x="204" y="6" width="190" height="104" rx="10" class="f2 s2"/>
+      <rect x="6" y="118" width="190" height="104" rx="10" class="f1 s1"/>
+      <rect x="204" y="118" width="190" height="104" rx="10" class="f5 s5"/>
+      <text x="101" y="32" class="tx-b" text-anchor="middle">🎻 Vivaldi</text>
+      <text x="101" y="56" class="tx-s" text-anchor="middle">„Cztery pory roku”</text>
+      <text x="101" y="78" class="tx-s" text-anchor="middle">skrzypce; w „Wiośnie”:</text>
+      <text x="101" y="98" class="tx-s" text-anchor="middle">ptaki, strumień, burza</text>
+      <text x="299" y="32" class="tx-b" text-anchor="middle">🐘 Saint-Saëns</text>
+      <text x="299" y="56" class="tx-s" text-anchor="middle">„Karnawał zwierząt”</text>
+      <text x="299" y="78" class="tx-s" text-anchor="middle">Łabędź – wiolonczela</text>
+      <text x="299" y="98" class="tx-s" text-anchor="middle">Słoń – kontrabasy</text>
+      <text x="101" y="144" class="tx-b" text-anchor="middle">⛰️ Grieg</text>
+      <text x="101" y="168" class="tx-s" text-anchor="middle">„W grocie Króla Gór”</text>
+      <text x="101" y="190" class="tx-s" text-anchor="middle">coraz szybciej</text>
+      <text x="101" y="210" class="tx-s" text-anchor="middle">i coraz głośniej</text>
+      <text x="299" y="144" class="tx-b" text-anchor="middle">🖼️ Musorgski</text>
+      <text x="299" y="168" class="tx-s" text-anchor="middle">„Obrazki z wystawy”</text>
+      <text x="299" y="190" class="tx-s" text-anchor="middle">fortepian – obrazy</text>
+      <text x="299" y="210" class="tx-s" text-anchor="middle">przyjaciela malarza</text>
+    </svg>`,
+    text: `<p>Kompozytor „maluje” dźwiękami: dobiera <b>instrumenty</b>, <b>tempo</b>, <b>dynamikę</b> i wysokość dźwięków. W „<b>Czterech porach roku</b>” <b>Vivaldiego</b> (koncerty na skrzypce) słychać ptaki, strumień i burzę. W „<b>Karnawale zwierząt</b>” <b>Saint-Saënsa</b> łabędzia gra wiolonczela, a ciężkiego słonia – niskie kontrabasy.</p>
+      <p>W utworze „<b>W grocie Króla Gór</b>” <b>Griega</b> ta sama melodia brzmi coraz szybciej i głośniej. „<b>Obrazki z wystawy</b>” <b>Musorgskiego</b> to utwory na fortepian o obrazach przyjaciela, malarza Wiktora Hartmanna. A „<b>Lot trzmiela</b>” Rimskiego-Korsakowa szybkimi dźwiękami naśladuje brzęczenie.</p>`,
+    remember: 'Vivaldi – „Cztery pory roku”, Saint-Saëns – „Karnawał zwierząt”, Grieg – „W grocie Króla Gór”.',
+    hook: 'Wielkie zwierzę – niski, ciężki dźwięk (kontrabas). Małe i zwinne – wysoki i szybki (flet, skrzypce).',
+    check: { q: 'Które instrumenty grają „Słonia” w „Karnawale zwierząt”?', options: ['kontrabasy', 'flety', 'skrzypce'], answer: 0, explain: 'Ciężkiego słonia grają kontrabasy – mają bardzo niskie brzmienie.' },
+  },
+  {
+    title: '„Piotruś i wilk” – kto gra kogo?',
+    svg: `<svg viewBox="0 0 400 226" role="img" aria-label="„Piotruś i wilk” Siergieja Prokofiewa – bajka symfoniczna dla narratora i orkiestry. Ptaszek – flet, kaczka – obój, kot – klarnet, dziadek – fagot, wilk – rogi, czyli waltornie, Piotruś – instrumenty smyczkowe.">
+      <text x="200" y="24" class="tx-b" text-anchor="middle">Prokofiew: narrator + orkiestra</text>
+      <rect x="6" y="38" width="190" height="56" rx="10" class="f1 s1"/>
+      <rect x="204" y="38" width="190" height="56" rx="10" class="f1 s1"/>
+      <rect x="6" y="102" width="190" height="56" rx="10" class="f1 s1"/>
+      <rect x="204" y="102" width="190" height="56" rx="10" class="f1 s1"/>
+      <rect x="6" y="166" width="190" height="56" rx="10" class="f2 s2"/>
+      <rect x="204" y="166" width="190" height="56" rx="10" class="f3 s3"/>
+      <text x="101" y="62" class="tx-b" text-anchor="middle">🐦 ptaszek</text>
+      <text x="101" y="84" class="tx" text-anchor="middle">flet</text>
+      <text x="299" y="62" class="tx-b" text-anchor="middle">🦆 kaczka</text>
+      <text x="299" y="84" class="tx" text-anchor="middle">obój</text>
+      <text x="101" y="126" class="tx-b" text-anchor="middle">🐈 kot</text>
+      <text x="101" y="148" class="tx" text-anchor="middle">klarnet</text>
+      <text x="299" y="126" class="tx-b" text-anchor="middle">👴 dziadek</text>
+      <text x="299" y="148" class="tx" text-anchor="middle">fagot</text>
+      <text x="101" y="190" class="tx-b" text-anchor="middle">🐺 wilk</text>
+      <text x="101" y="212" class="tx" text-anchor="middle">rogi (waltornie)</text>
+      <text x="299" y="190" class="tx-b" text-anchor="middle">👦 Piotruś</text>
+      <text x="299" y="212" class="tx" text-anchor="middle">smyczki</text>
+    </svg>`,
+    text: `<p><b>Siergiej Prokofiew</b> napisał „<b>Piotrusia i wilka</b>” – bajkę symfoniczną dla narratora i orkiestry. Chciał przy okazji pokazać dzieciom instrumenty orkiestry.</p>
+      <p>Każda postać ma swój instrument: ptaszek – <b>flet</b>, kaczka – <b>obój</b>, kot – <b>klarnet</b>, dziadek – <b>fagot</b>, wilk – <b>rogi</b> (waltornie), Piotruś – <b>instrumenty smyczkowe</b>. Historię opowiada narrator, a orkiestra ją „pokazuje”.</p>`,
+    remember: 'Ptaszek – flet, kaczka – obój, kot – klarnet, dziadek – fagot, wilk – rogi, Piotruś – smyczki.',
+    hook: 'Najwyższy, najlżejszy instrument – flet – to najmniejsze zwierzątko: ptaszek. Niski, burczący fagot to zrzędliwy dziadek.',
+    check: { q: 'Który instrument gra kota?', options: ['klarnet', 'obój', 'fagot'], answer: 0, explain: 'Kot – klarnet. Obój to kaczka, a fagot – dziadek.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
 window.LESSONS['muzyka/kalendarz-muzyczny'] = [
   {
     title: 'Muzyka przez cały rok',
@@ -939,5 +1018,117 @@ window.LESSONS['muzyka/kalendarz-muzyczny'] = [
       </ul>`,
     remember: 'Dwa mazurki: „Mazurek Dąbrowskiego” to hymn, „Mazurek 3 Maja” to „Witaj, majowa jutrzenko”.',
     check: { q: 'Które zdanie jest prawdziwe?', options: ['Konstytucję 3 maja uchwalono w 1791 r.', 'Polska odzyskała niepodległość w 1791 r.', 'Marsz liczymy „na trzy”.'], answer: 0, explain: 'Konstytucja 3 maja – 1791 r. Niepodległość – 1918 r. Marsz liczymy „na dwa”.' },
+  },
+];
+
+// ---------------------------------------------------------------------------
+window.LESSONS['muzyka/tance-chopin'] = [
+  {
+    title: '„Rota” – pieśń patriotyczna',
+    svg: `<svg viewBox="0 0 400 180" role="img" aria-label="„Rota” to pieśń patriotyczna. Słowa napisała Maria Konopnicka, muzykę skomponował Feliks Nowowiejski. Pieśni patriotyczne opowiadają o miłości do ojczyzny i walce o wolność; śpiewamy je w święta państwowe.">
+      <rect x="6" y="6" width="388" height="168" rx="12" class="f2 s2"/>
+      <text x="200" y="38" class="tx-b" text-anchor="middle">🇵🇱 „Rota” – pieśń patriotyczna</text>
+      <text x="110" y="78" class="tx-s" text-anchor="middle">słowa:</text>
+      <text x="110" y="102" class="tx-b" text-anchor="middle">Maria Konopnicka</text>
+      <text x="295" y="78" class="tx-s" text-anchor="middle">muzyka:</text>
+      <text x="295" y="102" class="tx-b" text-anchor="middle">F. Nowowiejski</text>
+      <text x="200" y="142" class="tx-s" text-anchor="middle">o miłości do ojczyzny i walce o wolność</text>
+      <text x="200" y="162" class="tx-s" text-anchor="middle">śpiewamy ją w święta państwowe</text>
+    </svg>`,
+    text: `<p>„<b>Rota</b>” to <b>pieśń patriotyczna</b>: słowa napisała <b>Maria Konopnicka</b>, muzykę skomponował <b>Feliks Nowowiejski</b>.</p>
+      <p>Pieśni patriotyczne opowiadają o miłości do ojczyzny i walce o wolność – śpiewamy je w święta państwowe.</p>`,
+    remember: '„Rota” – słowa Maria Konopnicka, muzyka Feliks Nowowiejski.',
+    hook: 'Pani od słów, pan od muzyki: <b>K</b>onopnicka pisze, <b>N</b>owowiejski gra – jak <b>K</b> i <b>N</b> w alfabecie, po kolei.',
+  },
+  {
+    title: 'Pięć tańców narodowych',
+    svg: `<svg viewBox="0 0 400 214" role="img" aria-label="Pięć polskich tańców narodowych: polonez – metrum 3/4, uroczysty, chodzony; krakowiak – metrum 2/4, żywy i skoczny, z okolic Krakowa; mazur – 3/4, szybki, z podskokami, z Mazowsza; kujawiak – 3/4, wolny i kołyszący, z Kujaw; oberek – metrum trójdzielne, bardzo szybki, z wirowaniem. Tylko krakowiak liczymy na dwa.">
+      <rect x="6" y="6" width="388" height="36" rx="8" class="f1 s1"/>
+      <rect x="6" y="48" width="388" height="36" rx="8" class="f2 s2 sw"/>
+      <rect x="6" y="90" width="388" height="36" rx="8" class="f1 s1"/>
+      <rect x="6" y="132" width="388" height="36" rx="8" class="f1 s1"/>
+      <rect x="6" y="174" width="388" height="36" rx="8" class="f1 s1"/>
+      <text x="16" y="30" class="tx-b">polonez</text>
+      <text x="16" y="72" class="tx-b">krakowiak</text>
+      <text x="16" y="114" class="tx-b">mazur</text>
+      <text x="16" y="156" class="tx-b">kujawiak</text>
+      <text x="16" y="198" class="tx-b">oberek</text>
+      <rect x="118" y="12" width="48" height="24" rx="12" class="bg ln"/>
+      <rect x="118" y="54" width="48" height="24" rx="12" class="bg ln"/>
+      <rect x="118" y="96" width="48" height="24" rx="12" class="bg ln"/>
+      <rect x="118" y="138" width="48" height="24" rx="12" class="bg ln"/>
+      <rect x="118" y="180" width="48" height="24" rx="12" class="bg ln"/>
+      <text x="142" y="29" class="tx" text-anchor="middle">3/4</text>
+      <text x="142" y="71" class="tx-b t2" text-anchor="middle">2/4</text>
+      <text x="142" y="113" class="tx" text-anchor="middle">3/4</text>
+      <text x="142" y="155" class="tx" text-anchor="middle">3/4</text>
+      <text x="142" y="197" class="tx" text-anchor="middle">na 3</text>
+      <text x="178" y="29" class="tx-s">uroczysty, „chodzony”</text>
+      <text x="178" y="71" class="tx-s">żywy, skoczny – Kraków</text>
+      <text x="178" y="113" class="tx-s">szybki, podskoki – Mazowsze</text>
+      <text x="178" y="155" class="tx-s">wolny, kołyszący – Kujawy</text>
+      <text x="178" y="197" class="tx-s">bardzo szybki, wirowanie</text>
+    </svg>`,
+    text: `<p>Polska ma <b>pięć tańców narodowych</b>:</p>
+      <ul>
+        <li><b>polonez</b> – uroczysty, dostojny; pary idą w korowodzie – to taniec „chodzony”,</li>
+        <li><b>krakowiak</b> – żywy, skoczny, z okolic Krakowa,</li>
+        <li><b>mazur</b> – szybki, z podskokami, z Mazowsza,</li>
+        <li><b>kujawiak</b> – wolny, śpiewny, kołyszący, z Kujaw,</li>
+        <li><b>oberek</b> – bardzo szybki, z wirowaniem.</li>
+      </ul>
+      <p>Tylko <b>krakowiak</b> ma metrum dwudzielne – <b>2/4</b>. Pozostałe tańce liczymy „na trzy”.</p>`,
+    remember: 'Polonez, krakowiak, mazur, kujawiak, oberek. Krakowiak – 2/4, reszta – na trzy.',
+    hook: 'Nazwy trzech tańców mówią, skąd pochodzą: <b>krakow</b>iak – Kraków, <b>mazur</b> – Mazowsze, <b>kujaw</b>iak – Kujawy.',
+    check: { q: 'Który taniec jest wolny, śpiewny i kołyszący?', options: ['kujawiak', 'oberek', 'krakowiak'], answer: 0, explain: 'Kujawiak jest wolny i kołyszący. Oberek jest bardzo szybki, a krakowiak – żywy i skoczny.' },
+  },
+  {
+    title: 'Fryderyk Chopin i jego fortepian',
+    svg: `<svg viewBox="0 0 400 236" role="img" aria-label="Fryderyk Chopin: urodził się w 1810 roku w Żelazowej Woli, zmarł w 1849 roku w Paryżu. Był pianistą i komponował na fortepian: mazurki, polonezy, walce, nokturny, etiudy. Jego serce spoczywa w kościele Świętego Krzyża w Warszawie. Co pięć lat w Warszawie odbywa się Międzynarodowy Konkurs Pianistyczny jego imienia.">
+      <line x1="60" y1="46" x2="340" y2="46" class="ln sw"/>
+      <circle cx="60" cy="46" r="8" class="f4 s4 sw"/>
+      <circle cx="340" cy="46" r="8" class="f4 s4 sw"/>
+      <text x="60" y="26" class="tx-b" text-anchor="middle">1810</text>
+      <text x="340" y="26" class="tx-b" text-anchor="middle">1849</text>
+      <text x="200" y="38" class="tx" text-anchor="middle">🎹</text>
+      <text x="75" y="76" class="tx-s" text-anchor="middle">ur. w Żelazowej Woli</text>
+      <text x="340" y="76" class="tx-s" text-anchor="middle">zm. w Paryżu</text>
+      <rect x="6" y="94" width="184" height="96" rx="12" class="f2 s2"/>
+      <rect x="198" y="94" width="196" height="96" rx="12" class="f1 s1"/>
+      <text x="98" y="122" class="tx-b" text-anchor="middle">❤️ serce</text>
+      <text x="98" y="148" class="tx-s" text-anchor="middle">kościół Świętego Krzyża</text>
+      <text x="98" y="168" class="tx-s" text-anchor="middle">w Warszawie</text>
+      <text x="296" y="122" class="tx-b" text-anchor="middle">🎼 na fortepian</text>
+      <text x="296" y="148" class="tx-s" text-anchor="middle">mazurki, polonezy,</text>
+      <text x="296" y="168" class="tx-s" text-anchor="middle">walce, nokturny, etiudy</text>
+      <text x="200" y="220" class="tx-s" text-anchor="middle">🏆 co 5 lat w Warszawie – Konkurs Chopinowski</text>
+    </svg>`,
+    text: `<p><b>Fryderyk Chopin</b> urodził się w <b>1810 r.</b> w <b>Żelazowej Woli</b> na Mazowszu, a zmarł w <b>1849 r.</b> w <b>Paryżu</b>. Był genialnym <b>pianistą</b> i kompozytorem. Pisał przede wszystkim <b>na fortepian</b>: mazurki, polonezy, walce, nokturny i etiudy. W mazurkach i polonezach wykorzystywał polskie tańce i melodie ludowe.</p>
+      <p>Na jego prośbę serce przewieziono do Warszawy – spoczywa w filarze <b>kościoła Świętego Krzyża</b>. Co pięć lat w Warszawie odbywa się <b>Międzynarodowy Konkurs Pianistyczny im. Fryderyka Chopina</b>.</p>`,
+    remember: 'Chopin: 1810 Żelazowa Wola – 1849 Paryż; muzyka na fortepian; serce w kościele Św. Krzyża.',
+    hook: 'Chopin to „polskie tańce na fortepianie”: <b>mazurki i polonezy</b> mają nazwy jak tańce narodowe.',
+    check: { q: 'Gdzie zmarł Fryderyk Chopin?', options: ['w Paryżu', 'w Żelazowej Woli', 'w Warszawie'], answer: 0, explain: 'Chopin zmarł w 1849 r. w Paryżu. Urodził się w Żelazowej Woli, a jego serce spoczywa w Warszawie.' },
+  },
+  {
+    title: 'Nie pomyl!',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Pułapki. Tańce: tylko krakowiak ma metrum 2/4, polonez, mazur i kujawiak 3/4, oberek też liczymy na trzy. Chopin urodził się w Żelazowej Woli, zmarł w Paryżu, a jego serce jest w kościele Świętego Krzyża w Warszawie. Słowa „Roty” napisała Maria Konopnicka, a muzykę skomponował Feliks Nowowiejski.">
+      <rect x="6" y="6" width="388" height="58" rx="10" class="f1 s1"/>
+      <text x="16" y="30" class="tx-b">💃 na dwa: tylko krakowiak</text>
+      <text x="16" y="52" class="tx-s">polonez, mazur, kujawiak, oberek – na trzy</text>
+      <rect x="6" y="72" width="388" height="58" rx="10" class="f3 s3"/>
+      <text x="16" y="96" class="tx-b">🎹 Chopin: trzy miejsca</text>
+      <text x="16" y="118" class="tx-s">ur. Żelazowa Wola · zm. Paryż · serce: Warszawa</text>
+      <rect x="6" y="138" width="388" height="58" rx="10" class="f2 s2"/>
+      <text x="16" y="162" class="tx-b">✍️ „Rota”: kto co napisał?</text>
+      <text x="16" y="184" class="tx-s">słowa – Konopnicka · muzyka – Nowowiejski</text>
+    </svg>`,
+    text: `<p>Trzy rzeczy, które łatwo pomylić:</p>
+      <ul>
+        <li>„na dwa” liczymy tylko <b>krakowiaka</b> (2/4) – polonez, mazur, kujawiak i oberek są „na trzy”,</li>
+        <li>Chopin urodził się w <b>Żelazowej Woli</b>, zmarł w <b>Paryżu</b>, a jego serce jest w <b>Warszawie</b>,</li>
+        <li>w „Rocie” słowa są <b>Marii Konopnickiej</b>, a muzyka – <b>Feliksa Nowowiejskiego</b>.</li>
+      </ul>`,
+    remember: 'Krakowiak – jedyny „na dwa”. Chopin: Żelazowa Wola – Paryż – serce w Warszawie.',
+    check: { q: 'Który taniec liczymy „na dwa”?', options: ['krakowiaka', 'poloneza', 'kujawiaka'], answer: 0, explain: 'Tylko krakowiak ma metrum 2/4. Polonez i kujawiak mają 3/4.' },
   },
 ];

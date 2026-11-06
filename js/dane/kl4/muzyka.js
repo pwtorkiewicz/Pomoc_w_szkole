@@ -292,9 +292,9 @@ window.SUBJECTS.push({
     },
     {
       id: 'muzyka-polska',
-      name: 'Hymn, pieśni i tańce narodowe, Chopin',
-      chapter: 'rozdziały I („Mazurek Dąbrowskiego”) i III (krakowiak); pozostałe tańce, „Rota” i twórczość Chopina – w podręczniku w kolejnych klasach',
-      basis: 'Dz.U. 2026 poz. 378, muzyka (II etap, przedmiot w kl. IV–VII): dz. 3 „Uczeń jako uczestnik kultury”, wym. 2 (hymn państwowy – melodia, słowa, postawa, okoliczności powstania), wym. 3 (pieśni patriotyczne), wym. 5 (polskie tańce narodowe), wym. 6 (utwory Fryderyka Chopina), wym. 7 (Ignacy Jan Paderewski), wym. 8 (hymn Unii Europejskiej); dz. 1 wym. 6 (kroki krakowiaka, kujawiaka i poloneza); dz. 2 wym. 1 (zachowanie podczas wydarzeń muzycznych). Fakty sprawdzone 1.11.2026: hymn – Konstytucja RP art. 28 ust. 3, ustawa o godle, barwach i hymnie (Dz.U. 2025 poz. 299), dzieje.pl, zpe.gov.pl; hymn UE – european-union.europa.eu; Chopin – Narodowy Instytut Fryderyka Chopina (nifc.pl); Paderewski – dzieje.pl, PAP, IPN; tańce narodowe – zpe.gov.pl. Wybór na klasę 4 – decyzja redakcyjna.',
+      name: 'Hymn Polski, hymn UE, krakowiak i Paderewski',
+      chapter: 'rozdziały I.10 („Mazurek Dąbrowskiego”) i III.5 („Krakowiak – taniec narodowy”); pozostałe tańce, „Rota” i twórczość Chopina – w dziale „na zapas”',
+      basis: 'Dz.U. 2026 poz. 378, muzyka (II etap, przedmiot w kl. IV–VII): dz. 3 „Uczeń jako uczestnik kultury”, wym. 2 (hymn państwowy – melodia, słowa, postawa, okoliczności powstania), wym. 5 (polskie tańce narodowe – tu krakowiak), wym. 7 (Ignacy Jan Paderewski), wym. 8 (hymn Unii Europejskiej); dz. 1 wym. 6 (kroki krakowiaka); dz. 2 wym. 1 (zachowanie podczas wydarzeń muzycznych). Fakty sprawdzone 1.11.2026: hymn – Konstytucja RP art. 28 ust. 3, ustawa o godle, barwach i hymnie (Dz.U. 2025 poz. 299), dzieje.pl, zpe.gov.pl; hymn UE – european-union.europa.eu; Paderewski – dzieje.pl, PAP, IPN; tańce narodowe – zpe.gov.pl. Wybór na klasę 4 według podręcznika „Wszystko gra 4” (6.11.2026: polonez, mazur, kujawiak, oberek, „Rota” i Chopin przeniesione do działu „na zapas”).',
       theory: `
         <h3>„Mazurek Dąbrowskiego” – hymn Polski</h3>
         <ul>
@@ -305,26 +305,13 @@ window.SUBJECTS.push({
         </ul>
         <h3>Hymn Unii Europejskiej</h3>
         <p>To melodia „<b>Ody do radości</b>” z <b>IX Symfonii</b> Ludwiga van <b>Beethovena</b>. Beethoven napisał muzykę do wiersza Friedricha Schillera. Hymn UE wykonuje się <b>bez słów</b> – samą melodią, bo muzyka jest wspólnym językiem wszystkich krajów Unii.</p>
-        <h3>„Rota” i inne pieśni patriotyczne</h3>
-        <p>„<b>Rota</b>” – słowa napisała <b>Maria Konopnicka</b>, muzykę skomponował <b>Feliks Nowowiejski</b>. Pieśni patriotyczne opowiadają o miłości do ojczyzny i walce o wolność. Śpiewamy je podczas świąt państwowych.</p>
-        <h3>Polskie tańce narodowe</h3>
-        <table>
-          <tr><th>Taniec</th><th>Metrum</th><th>Charakter</th></tr>
-          <tr><td><b>polonez</b></td><td>3/4</td><td>uroczysty, dostojny, w umiarkowanym tempie; pary idą w korowodzie – to taniec „chodzony”</td></tr>
-          <tr><td><b>krakowiak</b></td><td><b>2/4</b></td><td>żywy, skoczny; pochodzi z okolic Krakowa</td></tr>
-          <tr><td><b>mazur</b></td><td>3/4</td><td>szybki, z podskokami; pochodzi z Mazowsza</td></tr>
-          <tr><td><b>kujawiak</b></td><td>3/4</td><td>wolny, śpiewny, kołyszący; pochodzi z Kujaw</td></tr>
-          <tr><td><b>oberek</b></td><td>trójdzielne</td><td>bardzo szybki, z wirowaniem</td></tr>
-        </table>
-        <div class="tip">💡 Tylko <b>krakowiak</b> ma metrum dwudzielne (2/4). Pozostałe tańce narodowe liczymy „na trzy”.</div>
-        <h3>Fryderyk Chopin</h3>
+        <h3>Krakowiak – taniec narodowy</h3>
         <ul>
-          <li>Urodził się w <b>1810 r.</b> w <b>Żelazowej Woli</b> na Mazowszu. Zmarł w <b>1849 r.</b> w <b>Paryżu</b>.</li>
-          <li>Był genialnym <b>pianistą</b> i kompozytorem. Komponował przede wszystkim <b>na fortepian</b>: mazurki, polonezy, walce, nokturny, etiudy.</li>
-          <li>W mazurkach i polonezach wykorzystywał polskie tańce i melodie ludowe.</li>
-          <li>Na jego prośbę serce kompozytora przewieziono do Warszawy. Spoczywa w filarze <b>kościoła Świętego Krzyża</b>.</li>
-          <li>Co pięć lat w Warszawie odbywa się <b>Międzynarodowy Konkurs Pianistyczny im. Fryderyka Chopina</b>.</li>
+          <li>Polska ma <b>pięć tańców narodowych</b>: polonez, krakowiak, mazur, kujawiak i oberek (o czterech pozostałych – w dziale „na zapas”).</li>
+          <li><b>Krakowiak</b> pochodzi z <b>okolic Krakowa</b>. Jest <b>żywy i skoczny</b>.</li>
+          <li>Ma metrum <b>2/4</b> – liczymy „raz, dwa”.</li>
         </ul>
+        <div class="tip">💡 Tylko <b>krakowiak</b> ma metrum dwudzielne (2/4). Pozostałe tańce narodowe liczymy „na trzy”.</div>
         <h3>Ignacy Jan Paderewski</h3>
         <p>Słynny na cały świat <b>pianista</b> i kompozytor. Podczas koncertów i spotkań przekonywał ludzi na świecie, że Polska powinna odzyskać niepodległość. Pieniądze z koncertów przeznaczał też na pomoc dla Polaków. W <b>1919 r.</b> był <b>premierem</b> odrodzonej Polski.</p>
         <h3>Jak zachować się na koncercie?</h3>
@@ -333,32 +320,27 @@ window.SUBJECTS.push({
           <li>W muzyce poważnej klaszczesz <b>po zakończeniu całego utworu</b>, a nie w przerwach między jego częściami.</li>
         </ul>
       `,
-      infographicNote: 'Czytaj od góry: daty po kolei, a na dole – polskie tańce, które łączą hymn i Chopina.',
+      infographicNote: 'Cztery gałęzie: dwa hymny, taniec narodowy z podręcznika i słynny pianista.',
       infographic: {
-        type: 'os',
-        items: [
-          { label: '1797', title: '🇵🇱 „Pieśń Legionów Polskich we Włoszech”', text: 'słowa napisał Józef Wybicki dla żołnierzy gen. Dąbrowskiego', kolor: 2 },
-          { label: '1810', title: '🎹 Fryderyk Chopin', text: 'urodził się w Żelazowej Woli', kolor: 1 },
-          { label: '1849', title: '🎹 Fryderyk Chopin', text: 'zmarł w Paryżu; serce spoczywa w Warszawie', kolor: 1 },
-          { label: '1919', title: '🎹 Ignacy Jan Paderewski', text: 'słynny pianista – premier odrodzonej Polski', kolor: 5 },
-          { label: 'dziś', title: '🇵🇱 „Mazurek Dąbrowskiego”', text: 'hymn Polski – zapisany w Konstytucji', kolor: 2 },
+        type: 'drzewo', kolumny: 2,
+        root: { icon: '🇵🇱', title: 'Muzyka polska i europejska', kolor: 5 },
+        branches: [
+          { title: '🎵 Hymn Polski', items: ['„Mazurek Dąbrowskiego”', 'Józef Wybicki, 1797, Włochy', 'postawa zasadnicza'], kolor: 2 },
+          { title: '🇪🇺 Hymn UE', items: ['„Oda do radości”', 'IX Symfonia Beethovena', 'bez słów'], kolor: 1 },
+          { title: '💃 Krakowiak', items: ['z okolic Krakowa', 'żywy, skoczny', 'metrum 2/4'], kolor: 3 },
+          { title: '🎹 Paderewski', items: ['słynny pianista', 'walczył o niepodległość', 'premier w 1919 r.'], kolor: 4 },
         ],
-        bottom: { title: '💃 Tańce narodowe', items: ['polonez, mazur, kujawiak, oberek – „na trzy”', 'krakowiak – jedyny w metrum 2/4', 'melodia hymnu to mazurek', 'Chopin: polskie tańce w mazurkach i polonezach'], kolor: 3 },
+        bottom: { title: '👏 Na koncercie', text: 'Brawa po zakończeniu całego utworu.', kolor: 5 },
       },
       flashcards: [
         ['Hymn Polski', '„Mazurek Dąbrowskiego” – słowa Józef Wybicki, 1797 r.'],
         ['Gdzie powstał „Mazurek Dąbrowskiego”?', 'We Włoszech (Reggio nell’Emilia), w Legionach Polskich gen. Jana Henryka Dąbrowskiego'],
         ['Postawa podczas hymnu', 'Postawa zasadnicza: stoimy prosto i w ciszy, mężczyźni zdejmują czapki'],
         ['Hymn Unii Europejskiej', '„Oda do radości” z IX Symfonii Ludwiga van Beethovena, wykonywana bez słów'],
-        ['„Rota”', 'Słowa: Maria Konopnicka, muzyka: Feliks Nowowiejski'],
         ['Pięć polskich tańców narodowych', 'polonez, krakowiak, mazur, kujawiak, oberek'],
-        ['Polonez', 'Uroczysty taniec „chodzony” w metrum 3/4'],
         ['Krakowiak', 'Żywy, skoczny taniec w metrum 2/4'],
-        ['Kujawiak', 'Wolny, śpiewny, kołyszący taniec w metrum 3/4'],
-        ['Mazur / oberek', 'Szybki z podskokami / bardzo szybki z wirowaniem'],
-        ['Fryderyk Chopin', 'Pianista i kompozytor; ur. 1810 w Żelazowej Woli, zm. 1849 w Paryżu; muzyka fortepianowa'],
-        ['Serce Chopina', 'W filarze kościoła Świętego Krzyża w Warszawie'],
         ['Ignacy Jan Paderewski', 'Słynny pianista i kompozytor; walczył o niepodległość Polski; premier w 1919 r.'],
+        ['Brawa na koncercie', 'Po zakończeniu całego utworu, nie między jego częściami'],
       ],
       questions: [
         { id: 'ow19rn', q: 'Kto napisał słowa „Mazurka Dąbrowskiego”?', options: ['Józef Wybicki', 'Fryderyk Chopin', 'Jan Henryk Dąbrowski', 'Maria Konopnicka'], answer: 0, explain: 'Słowa napisał Józef Wybicki. Generał Dąbrowski dowodził legionami, dla których powstała pieśń.' },
@@ -367,16 +349,10 @@ window.SUBJECTS.push({
         { id: 'nuv5kf', q: 'Jak zachowujesz się, gdy grają hymn Polski?', options: ['stoję w postawie zasadniczej, w ciszy', 'siedzę i klaszczę do rytmu', 'rozmawiam po cichu', 'tańczę mazurka'], answer: 0, explain: 'Podczas hymnu stoimy prosto i w ciszy – to wyraz szacunku.' },
         { id: 'e848n6', q: 'Z jakiego utworu pochodzi melodia hymnu Unii Europejskiej?', options: ['z IX Symfonii Beethovena', 'z polonezu Chopina', 'z „Roty”', 'z „Mazurka Dąbrowskiego”'], answer: 0, explain: 'Hymn UE to „Oda do radości” z IX Symfonii Ludwiga van Beethovena.' },
         { id: 'muvtzn', q: 'Prawda czy fałsz?\nHymn Unii Europejskiej wykonuje się bez słów.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'Hymn UE to sama melodia „Ody do radości”. Muzyka ma być wspólnym językiem krajów Unii.' },
-        { id: 'k6frgd', q: 'Kto napisał słowa „Roty”?', options: ['Maria Konopnicka', 'Józef Wybicki', 'Fryderyk Chopin', 'Ignacy Jan Paderewski'], answer: 0, explain: 'Słowa „Roty” napisała Maria Konopnicka, a muzykę skomponował Feliks Nowowiejski.' },
         { id: 'me2gfg', q: 'Który polski taniec narodowy ma metrum 2/4?', options: ['krakowiak', 'polonez', 'kujawiak', 'mazur'], answer: 0, explain: 'Krakowiak jest jedynym polskim tańcem narodowym w metrum dwudzielnym. Pozostałe liczymy „na trzy”.' },
-        { id: 't51xl9', q: 'Który taniec jest uroczysty i „chodzony” – pary idą w korowodzie?', options: ['polonez', 'oberek', 'krakowiak', 'mazur'], answer: 0, explain: 'Polonez to dostojny taniec w umiarkowanym tempie. Często rozpoczyna bale, np. studniówki.' },
-        { id: 'ar1615', q: 'Który taniec narodowy jest wolny, śpiewny i kołyszący?', options: ['kujawiak', 'oberek', 'krakowiak', 'mazur'], answer: 0, explain: 'Kujawiak ma wolne tempo i spokojny, kołyszący charakter.' },
-        { id: 'gfae1t', q: 'Który taniec narodowy jest bardzo szybki i ma dużo wirowania?', options: ['oberek', 'polonez', 'kujawiak', 'żaden z nich'], answer: 0, explain: 'Oberek to bardzo szybki taniec, w którym pary wirują.' },
         { id: '4jpvtx', q: 'Ile jest polskich tańców narodowych?', options: ['5', '3', '7', '10'], answer: 0, explain: 'Polonez, krakowiak, mazur, kujawiak i oberek – razem pięć.' },
-        { id: '0w2uzs', q: 'Gdzie urodził się Fryderyk Chopin?', options: ['w Żelazowej Woli', 'w Paryżu', 'w Krakowie', 'w Wiedniu'], answer: 0, explain: 'Chopin urodził się w 1810 r. w Żelazowej Woli na Mazowszu. Zmarł w Paryżu.' },
-        { id: '835d1f', q: 'Na jaki instrument Chopin komponował przede wszystkim?', options: ['na fortepian', 'na skrzypce', 'na trąbkę', 'na organy'], answer: 0, explain: 'Chopin był pianistą i prawie wszystkie jego utwory są na fortepian.' },
-        { id: 'nokvqg', q: 'Które utwory Chopina nawiązują do polskich tańców?', options: ['mazurki i polonezy', 'opery i balety', 'symfonie', 'kanony'], answer: 0, explain: 'Chopin skomponował wiele mazurków i polonezów – to tańce polskie.' },
-        { id: '2q1l6v', q: 'Gdzie spoczywa serce Fryderyka Chopina?', options: ['w kościele Świętego Krzyża w Warszawie', 'w Żelazowej Woli', 'na Wawelu w Krakowie', 'w Paryżu'], answer: 0, explain: 'Na prośbę Chopina jego serce przewieziono do Warszawy. Spoczywa w filarze kościoła Świętego Krzyża.' },
+        { id: 'qy3jii', q: 'Z jakiego regionu pochodzi krakowiak?', options: ['z okolic Krakowa', 'z regionu Kujaw', 'z Mazowsza', 'z regionu Kaszub'], answer: 0, explain: 'Nazwa podpowiada: krakowiak – Kraków. Kujawiak pochodzi z Kujaw, a mazur – z Mazowsza.' },
+        { id: 'm5ud28', q: 'Jaki charakter ma krakowiak?', options: ['żywy i skoczny', 'wolny i kołyszący', 'uroczysty i „chodzony”', 'smutny i bardzo wolny'], answer: 0, explain: 'Krakowiak jest żywy i skoczny, w metrum 2/4.' },
         { id: 'afiumn', q: 'Kim był Ignacy Jan Paderewski?', options: ['słynnym pianistą, który walczył o niepodległość Polski', 'autorem słów hymnu Polski', 'generałem Legionów Polskich', 'twórcą „Ody do radości”'], answer: 0, explain: 'Paderewski był pianistą i kompozytorem. Działał na rzecz niepodległości, a w 1919 r. był premierem Polski.' },
         { id: 'k3hle5', q: 'Kiedy klaszczesz na koncercie muzyki poważnej?', options: ['po zakończeniu całego utworu', 'w każdej przerwie między częściami', 'w trakcie gry, do rytmu', 'w ogóle nie klaszczę'], answer: 0, explain: 'Brawa są po całym utworze. Krótka cisza między częściami utworu to jeszcze nie koniec.' },
       ],
@@ -500,6 +476,110 @@ window.SUBJECTS.push({
       ],
     },
     {
+      id: 'cudowne-dzieci',
+      name: 'Cudowne dzieci muzyki i muzyka ilustracyjna',
+      chapter: 'rozdziały II.6 „Cudowne dzieci muzyki” i IV.3 „O czym może mówić muzyka?” (muzyka ilustracyjna i programowa; „Zima” Vivaldiego pasuje też do lekcji II.4 „Zima malowana dźwiękami”)',
+      basis: 'Dz.U. 2026 poz. 378, muzyka (II etap, przedmiot w kl. IV–VII): dz. 3 wym. 6 (utwory Fryderyka Chopina), dz. 2 wym. 2 (słucha utworów i rozpoznaje ich charakter), dz. 1 wym. 9–10 (elementy muzyki: tempo, dynamika, barwa) – przykłady muzyki ilustracyjnej i znani kompozytorzy. Wybór na klasę 4 według podręcznika „Wszystko gra 4”; które utwory omawia podręcznik, nie wiadomo – przykłady wybrano redakcyjnie. Fakty sprawdzone 6.11.2026: definicje – Słownik języka polskiego PWN (muzyka programowa, muzyka ilustracyjna, wunderkind – „cudowne dziecko”) i lekcja ZPE „Muzyka ilustracyjna i programowa” (zpe.gov.pl/a/DIjC0yUDV; także muzyka absolutna, Musorgski); Mozart – lekcja ZPE „Wybrane opery Mozarta” (DcPew4xdW; daty, lekcje u ojca, podróże z siostrą od 1762 r., pierwszy utwór w wieku 5 lat – też Larousse przez wyszukiwarkę, „Czarodziejski flet” 1791), „Eine kleine Nachtmusik” na smyczki – katalog Mozarteum przez wyszukiwarkę; Chopin – lekcje ZPE „Wybrani kompozytorzy XIX wieku – Fryderyk Chopin” (DeoY4I6LS: Żywny, Elsner, Polonez g-moll z 1817 r.), „Rodem Warszawianin…” (D9YLc12XQ, DrekPiXYV: pierwszy publiczny występ 24.02.1818 w Pałacu Radziwiłłowskim) i NIFC przez wyszukiwarkę; Vivaldi – ZPE „Cztery pory roku Antonia Vivaldiego” (PWl3eZZK0) i „Pory roku w muzyce” (DlchV2yam); Saint-Saëns, Grieg, Musorgski – ZPE „Jak muzyka opowiada” (DbqQmZX0k); Prokofiew – ZPE „Między awangardą a tradycją” (DcNaLirph) i zgodne opracowania; „Lot trzmiela” – zgodne źródła przez wyszukiwarkę. Pominięte, bo źródła się różnią: dzień urodzin Chopina, wiek Mozarta, gdy zaczął grać, rok wydania „Czterech pór roku”, autor sonetów, instrumenty myśliwych w „Piotrusiu i wilku”, liczba części „Obrazków z wystawy”.',
+      theory: `
+        <h3>Cudowne dzieci</h3>
+        <p><b>Cudowne dziecko</b> to dziecko o wybitnych zdolnościach – np. takie, które już jako małe dziecko świetnie gra i komponuje.</p>
+        <h3>Wolfgang Amadeusz Mozart</h3>
+        <ul>
+          <li>Urodził się w <b>1756 r.</b> w <b>Salzburgu</b>, zmarł w <b>1791 r.</b> w <b>Wiedniu</b> – żył niecałe 36 lat.</li>
+          <li>Pierwszych lekcji gry udzielał mu <b>ojciec, Leopold</b> – skrzypek i kompozytor.</li>
+          <li>Pierwszy utwór skomponował, gdy miał <b>5 lat</b>.</li>
+          <li>Od <b>1762 r.</b> (miał wtedy 6 lat) podróżował z ojcem i starszą siostrą <b>Marią Anną (Nannerl)</b> po Europie i grał na dworach królów i książąt jako cudowne dziecko.</li>
+          <li>Znane utwory: opera „<b>Czarodziejski flet</b>” (1791) i serenada „<b>Eine kleine Nachtmusik</b>” na instrumenty smyczkowe.</li>
+        </ul>
+        <h3>Mały Fryderyk Chopin</h3>
+        <ul>
+          <li>Urodził się w <b>1810 r.</b> w <b>Żelazowej Woli</b>.</li>
+          <li>Gdy miał 6 lat, zaczął naukę gry na fortepianie u <b>Wojciecha Żywnego</b>.</li>
+          <li>W <b>1817 r.</b>, gdy miał <b>7 lat</b>, wydano jego pierwszy utwór – <b>Polonez g-moll</b>.</li>
+          <li>W <b>1818 r.</b>, w wieku <b>8 lat</b>, po raz pierwszy zagrał publicznie – na koncercie w Warszawie.</li>
+          <li>Później kompozycji uczył go <b>Józef Elsner</b>. O swoim uczniu napisał: „szczególna zdatność, geniusz muzyczny”.</li>
+        </ul>
+        <h3>O czym może mówić muzyka?</h3>
+        <table>
+          <tr><th>Rodzaj</th><th>Co to jest</th></tr>
+          <tr><td><b>muzyka ilustracyjna</b></td><td>dźwiękami <b>ilustruje</b> (naśladuje) zjawiska: śpiew ptaków, burzę, szum wody, kroki; używa się jej też w filmie i w teatrze</td></tr>
+          <tr><td><b>muzyka programowa</b></td><td>jest związana z jakąś <b>treścią</b> – opowieścią, obrazem, wierszem; kompozytor podaje ją w <b>tytule</b> albo w opisie utworu</td></tr>
+          <tr><td><b>muzyka absolutna</b></td><td>nie opowiada żadnej historii; tytuł mówi tylko, jaka to forma, np. sonata, koncert, etiuda</td></tr>
+        </table>
+        <p>Jak muzyka „maluje”? Kompozytor dobiera <b>instrumenty</b> (barwę), <b>tempo</b>, <b>dynamikę</b> i wysokość dźwięków. Niski, ciężki kontrabas pasuje do słonia, a wysoki, zwinny flet – do ptaszka.</p>
+        <h3>Słynne przykłady</h3>
+        <ul>
+          <li><b>Antonio Vivaldi</b>, „<b>Cztery pory roku</b>” – cztery koncerty na <b>skrzypce</b> z orkiestrą: „Wiosna”, „Lato”, „Jesień”, „Zima”. Do każdego dołączono wiersz (sonet). W „Wiośnie” słychać śpiew ptaków, szum strumienia i burzę.</li>
+          <li><b>Camille Saint-Saëns</b>, „<b>Karnawał zwierząt</b>” – „Łabędzia” grają wiolonczela i fortepian, a „Słonia” – kontrabasy.</li>
+          <li><b>Edvard Grieg</b>, „<b>W grocie Króla Gór</b>” – ta sama melodia powtarza się <b>coraz szybciej i coraz głośniej</b>.</li>
+          <li><b>Modest Musorgski</b>, „<b>Obrazki z wystawy</b>” – utwory na fortepian o obrazach przyjaciela, malarza Wiktora Hartmanna, np. „Taniec kurcząt w skorupkach”, „Baba Jaga”.</li>
+          <li><b>Nikołaj Rimski-Korsakow</b>, „<b>Lot trzmiela</b>” – fragment opery „Bajka o carze Sałtanie”; szybkie dźwięki naśladują brzęczenie trzmiela.</li>
+        </ul>
+        <h3>„Piotruś i wilk” – bajka z instrumentami</h3>
+        <p><b>Siergiej Prokofiew</b> napisał bajkę symfoniczną dla <b>narratora i orkiestry</b>. Chciał przy okazji pokazać dzieciom instrumenty orkiestry. Każda postać ma swój instrument i swoją melodię:</p>
+        <table>
+          <tr><th>Postać</th><th>Instrument</th></tr>
+          <tr><td>🐦 ptaszek</td><td><b>flet</b></td></tr>
+          <tr><td>🦆 kaczka</td><td><b>obój</b></td></tr>
+          <tr><td>🐈 kot</td><td><b>klarnet</b></td></tr>
+          <tr><td>👴 dziadek</td><td><b>fagot</b></td></tr>
+          <tr><td>🐺 wilk</td><td><b>rogi</b> (waltornie)</td></tr>
+          <tr><td>👦 Piotruś</td><td><b>instrumenty smyczkowe</b></td></tr>
+        </table>
+        <div class="tip">💡 Tytuł mówi, o czym jest utwór? To muzyka programowa. Dźwięki naśladują ptaki, burzę czy brzęczenie? To muzyka ilustracyjna.</div>
+      `,
+      infographicNote: 'U góry cudowne dzieci, niżej – trzy rodzaje muzyki, a na dole postacie z „Piotrusia i wilka”.',
+      infographic: {
+        type: 'drzewo', kolumny: 2,
+        root: { icon: '🎼', title: 'Cudowne dzieci i muzyka, która opowiada', kolor: 5 },
+        branches: [
+          { title: '👦 Mozart', items: ['1756 Salzburg – 1791 Wiedeń', 'komponował od 5 lat', 'koncerty z ojcem i siostrą'], kolor: 1 },
+          { title: '👦 Chopin', items: ['1810 Żelazowa Wola', '7 lat – Polonez g-moll', '8 lat – pierwszy koncert'], kolor: 2 },
+          { title: '🐦 Muzyka ilustracyjna', items: ['naśladuje zjawiska', 'ptaki, burza, szum wody'], kolor: 3 },
+          { title: '📖 Muzyka programowa', items: ['treść w tytule lub opisie', '„Cztery pory roku”, „Obrazki z wystawy”'], kolor: 4 },
+        ],
+        bottom: { title: '🐺 „Piotruś i wilk” (Prokofiew)', items: ['ptaszek – flet, kaczka – obój, kot – klarnet', 'dziadek – fagot, wilk – rogi, Piotruś – smyczki'], kolor: 5 },
+      },
+      flashcards: [
+        ['Cudowne dziecko', 'Dziecko o wybitnych zdolnościach'],
+        ['Wolfgang Amadeusz Mozart', 'Ur. 1756 w Salzburgu, zm. 1791 w Wiedniu; komponował od 5 lat'],
+        ['Kto uczył małego Mozarta?', 'Ojciec, Leopold Mozart – skrzypek i kompozytor'],
+        ['Nannerl', 'Maria Anna – starsza siostra Mozarta; razem koncertowali po Europie'],
+        ['Pierwszy wydany utwór Chopina', 'Polonez g-moll, 1817 r. – Chopin miał 7 lat'],
+        ['Nauczyciele Chopina', 'Wojciech Żywny (fortepian), Józef Elsner (kompozycja)'],
+        ['Muzyka ilustracyjna', 'Dźwiękami ilustruje zjawiska: ptaki, burzę, szum wody'],
+        ['Muzyka programowa', 'Związana z treścią podaną w tytule lub opisie utworu'],
+        ['Muzyka absolutna', 'Bez treści pozamuzycznej; tytuł to forma: sonata, koncert, etiuda'],
+        ['„Cztery pory roku”', 'Antonio Vivaldi – cztery koncerty skrzypcowe z sonetami'],
+        ['„Karnawał zwierząt”', 'Camille Saint-Saëns – np. „Łabędź” (wiolonczela), „Słoń” (kontrabasy)'],
+        ['„Piotruś i wilk”', 'Siergiej Prokofiew – bajka symfoniczna; każda postać ma swój instrument'],
+        ['„W grocie Króla Gór”', 'Edvard Grieg – melodia coraz szybsza i głośniejsza'],
+      ],
+      questions: [
+        { id: 'mpgsp6', q: 'Kogo nazywamy „cudownym dzieckiem”?', options: ['dziecko o wybitnych zdolnościach', 'dziecko, które gra na kilku instrumentach naraz', 'każde dziecko, które chodzi do szkoły muzycznej', 'dziecko, które śpiewa w chórze kościelnym'], answer: 0, explain: 'Cudowne dziecko to dziecko o wybitnych zdolnościach – jak Mozart czy Chopin.' },
+        { id: '9wv53w', q: 'Gdzie urodził się Wolfgang Amadeusz Mozart?', options: ['w Salzburgu', 'w Warszawie', 'w Paryżu', 'w Wenecji'], answer: 0, explain: 'Mozart urodził się w 1756 r. w Salzburgu, a zmarł w 1791 r. w Wiedniu.' },
+        { id: '87v56p', q: 'Kto dawał małemu Mozartowi pierwsze lekcje muzyki?', options: ['jego ojciec Leopold', 'Fryderyk Chopin', 'Józef Elsner', 'Antonio Vivaldi'], answer: 0, explain: 'Pierwszych lekcji udzielał mu ojciec, Leopold Mozart – skrzypek i kompozytor.' },
+        { id: 'l7le7s', q: 'Ile lat miał Mozart, gdy skomponował swój pierwszy utwór?', options: ['5', '15', '25', '10'], answer: 0, explain: 'Pierwszy utwór Mozart skomponował w wieku 5 lat – dlatego nazywano go cudownym dzieckiem.' },
+        { id: 'lcrvql', q: 'Z kim mały Mozart podróżował po Europie i dawał koncerty?', options: ['z ojcem i starszą siostrą', 'z dziadkiem i młodszym bratem', 'sam, bez rodziny', 'z orkiestrą szkolną'], answer: 0, explain: 'Od 1762 r. Wolfgang podróżował z ojcem i starszą siostrą Marią Anną (Nannerl) i grał na dworach.' },
+        { id: 'q69xcp', q: 'Który utwór skomponował Mozart?', options: ['operę „Czarodziejski flet”', 'koncerty „Cztery pory roku”', 'bajkę „Piotruś i wilk”', 'cykl „Karnawał zwierząt”'], answer: 0, explain: '„Czarodziejski flet” to opera Mozarta z 1791 r. „Cztery pory roku” napisał Vivaldi, „Piotrusia i wilka” – Prokofiew, „Karnawał zwierząt” – Saint-Saëns.' },
+        { id: '0w2uzs', q: 'Gdzie urodził się Fryderyk Chopin?', options: ['w Żelazowej Woli', 'w Paryżu', 'w Krakowie', 'w Wiedniu'], answer: 0, explain: 'Chopin urodził się w 1810 r. w Żelazowej Woli na Mazowszu. Zmarł w Paryżu.' },
+        { id: 'ev2tie', q: 'Jaki był pierwszy wydany utwór siedmioletniego Fryderyka Chopina?', options: ['Polonez g-moll', 'Mazurek Dąbrowskiego', 'Oda do radości', 'Lot trzmiela'], answer: 0, explain: 'W 1817 r. wydano Polonez g-moll – Chopin miał wtedy 7 lat.' },
+        { id: 'rz3omv', q: 'Ile lat miał Chopin, gdy po raz pierwszy zagrał publicznie na koncercie?', options: ['8', '18', '3', '28'], answer: 0, explain: 'W 1818 r., w wieku 8 lat, Chopin zagrał na koncercie w Warszawie.' },
+        { id: '1tvaov', q: 'Kto był pierwszym nauczycielem gry na fortepianie Fryderyka Chopina?', options: ['Wojciech Żywny', 'Leopold Mozart', 'Józef Wybicki', 'Ignacy Jan Paderewski'], answer: 0, explain: 'Grę na fortepianie zaczął u Wojciecha Żywnego. Kompozycji uczył go później Józef Elsner.' },
+        { id: 'n1kc5q', q: 'Muzyka naśladuje śpiew ptaków, burzę i szum strumienia. Jak nazywamy taką muzykę?', options: ['ilustracyjną', 'absolutną', 'ludową', 'religijną'], answer: 0, explain: 'Muzyka ilustracyjna dźwiękami ilustruje zjawiska – ptaki, burzę, szum wody.' },
+        { id: '7xp9g6', q: 'Utwór opowiada historię, którą kompozytor podał w tytule i opisie. To muzyka…', options: ['programowa', 'absolutna', 'taneczna', 'wojskowa'], answer: 0, explain: 'Muzyka programowa jest związana z treścią – opowieścią, obrazem, wierszem – podaną w tytule albo opisie.' },
+        { id: 'f57710', q: 'Utwór ma tytuł „Sonata”. Nie opowiada żadnej historii. To muzyka…', options: ['absolutna', 'programowa', 'ilustracyjna', 'filmowa'], answer: 0, explain: 'Muzyka absolutna nie ma treści pozamuzycznej – tytuł mówi tylko o formie: sonata, koncert, etiuda.' },
+        { id: '1kmoa9', q: 'Kto skomponował „Cztery pory roku”?', options: ['Antonio Vivaldi', 'Wolfgang Amadeusz Mozart', 'Fryderyk Chopin', 'Edvard Grieg'], answer: 0, explain: '„Cztery pory roku” to cztery koncerty skrzypcowe Antonia Vivaldiego: „Wiosna”, „Lato”, „Jesień” i „Zima”.' },
+        { id: 'i24fqt', q: 'Który instrument gra główną rolę w „Czterech porach roku” Vivaldiego?', options: ['skrzypce', 'fortepian', 'trąbka', 'kontrabas'], answer: 0, explain: 'To koncerty na skrzypce z orkiestrą.' },
+        { id: 'r7n5lt', q: 'Jakie instrumenty grają „Słonia” w „Karnawale zwierząt” Saint-Saënsa?', options: ['kontrabasy', 'flety', 'skrzypce', 'trójkąty'], answer: 0, explain: 'Ciężkiego słonia grają kontrabasy – instrumenty o bardzo niskim brzmieniu.' },
+        { id: 'dkxw4h', q: 'Który instrument przedstawia ptaszka w „Piotrusiu i wilku”?', options: ['flet', 'fagot', 'rogi', 'kontrabas'], answer: 0, explain: 'Ptaszka gra wysoki, zwinny flet. Fagot to dziadek, a rogi – wilk.' },
+        { id: 'alouku', q: 'Który instrument przedstawia kaczkę w „Piotrusiu i wilku”?', options: ['obój', 'flet', 'klarnet', 'trąbka'], answer: 0, explain: 'Kaczka – obój, ptaszek – flet, kot – klarnet.' },
+        { id: 'eotmwb', q: 'Kogo w „Piotrusiu i wilku” grają rogi (waltornie)?', options: ['wilka', 'dziadka', 'kota', 'Piotrusia'], answer: 0, explain: 'Wilka grają rogi. Dziadek – fagot, kot – klarnet, Piotruś – instrumenty smyczkowe.' },
+        { id: 'kpvspq', q: 'Jak zmienia się muzyka w utworze „W grocie Króla Gór” Griega?', options: ['jest coraz szybsza i głośniejsza', 'jest coraz wolniejsza i cichsza', 'cały czas jest tak samo cicha', 'nagle milknie na samym początku'], answer: 0, explain: 'Ta sama melodia powtarza się coraz szybciej i coraz głośniej – rośnie napięcie.' },
+        { id: 'rd4lot', q: 'Co zainspirowało Musorgskiego do napisania „Obrazków z wystawy”?', options: ['obrazy jego przyjaciela, malarza', 'śpiew ptaków w lesie', 'wiersz o czterech porach roku', 'bajka o Piotrusiu i wilku'], answer: 0, explain: '„Obrazki z wystawy” powstały pod wpływem wystawy prac przyjaciela Musorgskiego, malarza Wiktora Hartmanna.' },
+      ],
+    },
+    {
       id: 'kalendarz-muzyczny',
       name: 'Muzyka w kalendarzu: święta szkolne, państwowe i rodzinne',
       chapter: 'rozdziały I.6 (Dzień Edukacji Narodowej), I.9 „Gdy piosenka z wojskiem szła”, II.5 (muzyczny prezent dla babci i dziadka), III.6 „Nasze majowe święta”, IV.1–2 (dla mamy i taty, święto wszystkich dzieci)',
@@ -611,6 +691,66 @@ window.SUBJECTS.push({
         { id: 'glehnd', q: 'Dzień Babci obchodzimy 21 stycznia. Kiedy jest Dzień Dziadka?', options: ['22 stycznia', '20 stycznia', '21 lutego', '23 czerwca'], answer: 0, explain: 'Dzień Dziadka jest dzień po Dniu Babci – 22 stycznia.' },
         { id: '4x91yu', q: 'Co to jest kołysanka?', options: ['piosenka śpiewana przy usypianiu dziecka', 'pieśń żołnierska w rytmie marsza', 'uroczysta pieśń na szkolną akademię', 'szybki taniec ludowy w metrum 2/4'], answer: 0, explain: 'Kołysanka to piosenka śpiewana przy usypianiu dziecka – spokojna i kołysząca.' },
         { id: 'ffnjby', q: 'Które z tych świąt obchodzimy najwcześniej w roku szkolnym (licząc od września)?', options: ['Dzień Edukacji Narodowej', 'Narodowe Święto Niepodległości', 'Dzień Babci', 'Święto Narodowe Trzeciego Maja'], answer: 0, explain: 'Kolejno: Dzień Edukacji Narodowej (14 października), Święto Niepodległości (11 listopada), Dzień Babci (21 stycznia), 3 Maja.' },
+      ],
+    },
+    {
+      id: 'tance-chopin',
+      name: 'Tańce narodowe, „Rota” i Fryderyk Chopin',
+      extra: true,
+      chapter: 'w podręczniku „Wszystko gra” – w kolejnych klasach (polonez, mazur, kujawiak, oberek, „Rota” i twórczość Chopina)',
+      basis: 'Dz.U. 2026 poz. 378, muzyka (II etap, przedmiot w kl. IV–VII): dz. 3 wym. 3 (pieśni patriotyczne), wym. 5 (polskie tańce narodowe), wym. 6 (utwory Fryderyka Chopina); dz. 1 wym. 6 (kroki kujawiaka i poloneza). Fakty sprawdzone 1.11.2026: Chopin – Narodowy Instytut Fryderyka Chopina (nifc.pl); tańce narodowe – zpe.gov.pl. Dział „na zapas” – tych tematów nie ma w podręczniku „Wszystko gra 4”; treści i pytania przeniesione 6.11.2026 z działu o hymnie (pytania z tymi samymi id). Dzieciństwo Chopina – w dziale „Cudowne dzieci muzyki i muzyka ilustracyjna”.',
+      theory: `
+        <h3>„Rota” i inne pieśni patriotyczne</h3>
+        <p>„<b>Rota</b>” – słowa napisała <b>Maria Konopnicka</b>, muzykę skomponował <b>Feliks Nowowiejski</b>. Pieśni patriotyczne opowiadają o miłości do ojczyzny i walce o wolność. Śpiewamy je podczas świąt państwowych.</p>
+        <h3>Polskie tańce narodowe</h3>
+        <table>
+          <tr><th>Taniec</th><th>Metrum</th><th>Charakter</th></tr>
+          <tr><td><b>polonez</b></td><td>3/4</td><td>uroczysty, dostojny, w umiarkowanym tempie; pary idą w korowodzie – to taniec „chodzony”</td></tr>
+          <tr><td><b>krakowiak</b></td><td><b>2/4</b></td><td>żywy, skoczny; pochodzi z okolic Krakowa</td></tr>
+          <tr><td><b>mazur</b></td><td>3/4</td><td>szybki, z podskokami; pochodzi z Mazowsza</td></tr>
+          <tr><td><b>kujawiak</b></td><td>3/4</td><td>wolny, śpiewny, kołyszący; pochodzi z Kujaw</td></tr>
+          <tr><td><b>oberek</b></td><td>trójdzielne</td><td>bardzo szybki, z wirowaniem</td></tr>
+        </table>
+        <div class="tip">💡 Tylko <b>krakowiak</b> ma metrum dwudzielne (2/4). Pozostałe tańce narodowe liczymy „na trzy”.</div>
+        <h3>Fryderyk Chopin</h3>
+        <ul>
+          <li>Urodził się w <b>1810 r.</b> w <b>Żelazowej Woli</b> na Mazowszu. Zmarł w <b>1849 r.</b> w <b>Paryżu</b>.</li>
+          <li>Był genialnym <b>pianistą</b> i kompozytorem. Komponował przede wszystkim <b>na fortepian</b>: mazurki, polonezy, walce, nokturny, etiudy.</li>
+          <li>W mazurkach i polonezach wykorzystywał polskie tańce i melodie ludowe.</li>
+          <li>Na jego prośbę serce kompozytora przewieziono do Warszawy. Spoczywa w filarze <b>kościoła Świętego Krzyża</b>.</li>
+          <li>Co pięć lat w Warszawie odbywa się <b>Międzynarodowy Konkurs Pianistyczny im. Fryderyka Chopina</b>.</li>
+        </ul>
+      `,
+      infographicNote: 'Czytaj wierszami: taniec, jego metrum i charakter; u góry „Rota”, na dole Chopin.',
+      infographic: {
+        type: 'porownanie',
+        top: { title: '🇵🇱 „Rota”', text: 'słowa Maria Konopnicka, muzyka Feliks Nowowiejski', kolor: 2 },
+        kolumny: [{ title: 'Metrum', kolor: 4 }, { title: 'Charakter', kolor: 1 }],
+        wiersze: [
+          { label: 'polonez', cells: ['3/4', 'uroczysty, „chodzony”'] },
+          { label: 'mazur', cells: ['3/4', 'szybki, z podskokami'] },
+          { label: 'kujawiak', cells: ['3/4', 'wolny, kołyszący'] },
+          { label: 'oberek', cells: ['na trzy', 'bardzo szybki, wirowanie'] },
+          { label: 'krakowiak', cells: ['2/4', 'żywy, skoczny'], bold: true },
+        ],
+        bottom: { title: '🎹 Fryderyk Chopin', items: ['1810 Żelazowa Wola – 1849 Paryż', 'muzyka na fortepian: mazurki, polonezy', 'serce – kościół Świętego Krzyża'], kolor: 3 },
+      },
+      flashcards: [
+        ['„Rota”', 'Słowa: Maria Konopnicka, muzyka: Feliks Nowowiejski'],
+        ['Polonez', 'Uroczysty taniec „chodzony” w metrum 3/4'],
+        ['Kujawiak', 'Wolny, śpiewny, kołyszący taniec w metrum 3/4'],
+        ['Mazur / oberek', 'Szybki z podskokami / bardzo szybki z wirowaniem'],
+        ['Fryderyk Chopin', 'Pianista i kompozytor; ur. 1810 w Żelazowej Woli, zm. 1849 w Paryżu; muzyka fortepianowa'],
+        ['Serce Chopina', 'W filarze kościoła Świętego Krzyża w Warszawie'],
+      ],
+      questions: [
+        { id: 'k6frgd', q: 'Kto napisał słowa „Roty”?', options: ['Maria Konopnicka', 'Józef Wybicki', 'Fryderyk Chopin', 'Ignacy Jan Paderewski'], answer: 0, explain: 'Słowa „Roty” napisała Maria Konopnicka, a muzykę skomponował Feliks Nowowiejski.' },
+        { id: 't51xl9', q: 'Który taniec jest uroczysty i „chodzony” – pary idą w korowodzie?', options: ['polonez', 'oberek', 'krakowiak', 'mazur'], answer: 0, explain: 'Polonez to dostojny taniec w umiarkowanym tempie. Często rozpoczyna bale, np. studniówki.' },
+        { id: 'ar1615', q: 'Który taniec narodowy jest wolny, śpiewny i kołyszący?', options: ['kujawiak', 'oberek', 'krakowiak', 'mazur'], answer: 0, explain: 'Kujawiak ma wolne tempo i spokojny, kołyszący charakter.' },
+        { id: 'gfae1t', q: 'Który taniec narodowy jest bardzo szybki i ma dużo wirowania?', options: ['oberek', 'polonez', 'kujawiak', 'żaden z nich'], answer: 0, explain: 'Oberek to bardzo szybki taniec, w którym pary wirują.' },
+        { id: '835d1f', q: 'Na jaki instrument Chopin komponował przede wszystkim?', options: ['na fortepian', 'na skrzypce', 'na trąbkę', 'na organy'], answer: 0, explain: 'Chopin był pianistą i prawie wszystkie jego utwory są na fortepian.' },
+        { id: 'nokvqg', q: 'Które utwory Chopina nawiązują do polskich tańców?', options: ['mazurki i polonezy', 'opery i balety', 'symfonie', 'kanony'], answer: 0, explain: 'Chopin skomponował wiele mazurków i polonezów – to tańce polskie.' },
+        { id: '2q1l6v', q: 'Gdzie spoczywa serce Fryderyka Chopina?', options: ['w kościele Świętego Krzyża w Warszawie', 'w Żelazowej Woli', 'na Wawelu w Krakowie', 'w Paryżu'], answer: 0, explain: 'Na prośbę Chopina jego serce przewieziono do Warszawy. Spoczywa w filarze kościoła Świętego Krzyża.' },
       ],
     },
   ],
