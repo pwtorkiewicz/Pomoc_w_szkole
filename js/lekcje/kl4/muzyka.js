@@ -765,3 +765,179 @@ window.LESSONS['muzyka/swieta-w-muzyce'] = [
     check: { q: 'Kiedy święci się potrawy w koszyczku (święconkę)?', options: ['w Wielką Sobotę', 'w Niedzielę Palmową', 'w Poniedziałek Wielkanocny'], answer: 0, explain: 'Święconkę niesie się do kościoła w Wielką Sobotę. W Niedzielę Palmową święci się palmy.' },
   },
 ];
+
+window.LESSONS['muzyka/kalendarz-muzyczny'] = [
+  {
+    title: 'Muzyka przez cały rok',
+    svg: `<svg viewBox="0 0 400 246" role="img" aria-label="Trzy rodzaje świąt. Święto szkolne: 14 października – Dzień Edukacji Narodowej. Święta państwowe: 11 listopada – Święto Niepodległości; 1–3 maja – majowe święta. Święta rodzinne: 21 stycznia babcia, 22 stycznia dziadek; 26 maja mama, 1 czerwca dziecko, 23 czerwca tata.">
+      <rect x="6" y="6" width="388" height="58" rx="12" class="f1 s1"/>
+      <text x="18" y="30" class="tx-b">🏫 Święto szkolne</text>
+      <text x="18" y="54" class="tx">14 X – Dzień Edukacji Narodowej</text>
+      <rect x="6" y="72" width="388" height="80" rx="12" class="f2 s2"/>
+      <text x="18" y="96" class="tx-b">🇵🇱 Święta państwowe</text>
+      <text x="18" y="118" class="tx">11 XI – Święto Niepodległości</text>
+      <text x="18" y="140" class="tx">1–3 V – majowe święta</text>
+      <rect x="6" y="160" width="388" height="80" rx="12" class="f3 s3"/>
+      <text x="18" y="184" class="tx-b">👪 Święta rodzinne</text>
+      <text x="18" y="206" class="tx">21 I babcia · 22 I dziadek</text>
+      <text x="18" y="228" class="tx">26 V mama · 1 VI dziecko · 23 VI tata</text>
+    </svg>`,
+    text: `<p>Przez cały rok szkolny muzyka towarzyszy świętom. W szkole świętujemy razem na <b>akademii</b> – to uroczystość z okazji święta: śpiewamy pieśni, recytujemy wiersze, gramy na instrumentach.</p>
+      <p>Na <b>święta państwowe</b> wybieramy <b>pieśni patriotyczne</b>. Na <b>święta rodzinne</b> – <b>piosenki z życzeniami</b> dla bliskich.</p>`,
+    remember: 'Każde święto ma swoją muzykę: państwowe – pieśni patriotyczne, rodzinne – piosenki z życzeniami.',
+    hook: 'Rok szkolny to jak koncert w kilku częściach: jesień – nauczyciele i niepodległość, zima – dziadkowie, wiosna – maj i rodzice.',
+    check: { q: 'Co to jest akademia w szkole?', options: ['uroczystość z okazji święta', 'lekcja gry na flecie', 'wycieczka do filharmonii'], answer: 0, explain: 'Akademia to szkolna uroczystość z okazji święta – z pieśniami, wierszami i grą na instrumentach.' },
+  },
+  {
+    title: 'Dzień Edukacji Narodowej',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="W 1773 roku powstała Komisja Edukacji Narodowej – urząd, który zajmował się szkołami. Co roku 14 października obchodzimy Dzień Edukacji Narodowej – święto szkoły. Tego dnia: piosenka, laurka, nie ma lekcji.">
+      <defs><marker id="a-k4mu-kal-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="6" y="6" width="388" height="60" rx="12" class="f5 s5"/>
+      <text x="200" y="32" class="tx-b" text-anchor="middle">1773 · Komisja Edukacji Narodowej</text>
+      <text x="200" y="54" class="tx-s" text-anchor="middle">urząd, który zajmował się szkołami</text>
+      <line x1="200" y1="68" x2="200" y2="92" class="ln sw" marker-end="url(#a-k4mu-kal-1)"/>
+      <rect x="6" y="96" width="388" height="60" rx="12" class="f1 s1"/>
+      <text x="200" y="122" class="tx-b" text-anchor="middle">14 października – co roku</text>
+      <text x="200" y="144" class="tx-s" text-anchor="middle">Dzień Edukacji Narodowej · święto szkoły</text>
+      <rect x="6" y="166" width="124" height="58" rx="10" class="f4 s4"/>
+      <rect x="138" y="166" width="124" height="58" rx="10" class="f4 s4"/>
+      <rect x="270" y="166" width="124" height="58" rx="10" class="f4 s4"/>
+      <text x="68" y="200" class="tx" text-anchor="middle">🎵 piosenka</text>
+      <text x="200" y="200" class="tx" text-anchor="middle">🖍️ laurka</text>
+      <text x="332" y="200" class="tx" text-anchor="middle">📚 bez lekcji</text>
+    </svg>`,
+    text: `<p>14 października <b>1773 r.</b> powstała <b>Komisja Edukacji Narodowej</b> – urząd, który zajmował się szkołami w całym państwie. Uważa się ją za pierwsze w Europie ministerstwo oświaty.</p>
+      <p>W rocznicę jej utworzenia obchodzimy <b>Dzień Edukacji Narodowej</b>. To święto nauczycieli i wszystkich pracowników szkoły. Tego dnia <b>nie ma lekcji</b>. Uczniowie dziękują nauczycielom piosenką albo <b>laurką</b> – kartką ozdobioną rysunkiem, z życzeniami.</p>`,
+    remember: '14 października – Dzień Edukacji Narodowej, rocznica Komisji Edukacji Narodowej (1773).',
+    hook: '„Edukacja Narodowa” jest i w nazwie urzędu z 1773 r., i w nazwie święta – święto to jego urodziny.',
+    check: { q: 'Rocznicę czego obchodzimy 14 października?', options: ['utworzenia Komisji Edukacji Narodowej', 'odzyskania niepodległości', 'uchwalenia Konstytucji 3 maja'], answer: 0, explain: 'Dzień Edukacji Narodowej to rocznica utworzenia Komisji Edukacji Narodowej w 1773 r.' },
+  },
+  {
+    title: 'Gdy piosenka z wojskiem szła',
+    svg: `<svg viewBox="0 0 400 214" role="img" aria-label="11 listopada 1918 roku Polska odzyskała niepodległość; o wolność walczyły m.in. Legiony Polskie. Ich pieśń „My, Pierwsza Brygada” jest dziś pieśnią Wojska Polskiego. Marsz w metrum 2/4: RAZ, dwa, RAZ, dwa – lewa, prawa, lewa, prawa.">
+      <rect x="6" y="6" width="388" height="56" rx="12" class="f2 s2"/>
+      <text x="200" y="30" class="tx-b" text-anchor="middle">11 XI 1918 – Polska wolna</text>
+      <text x="200" y="52" class="tx-s" text-anchor="middle">o wolność walczyły m.in. Legiony Polskie</text>
+      <rect x="6" y="70" width="388" height="56" rx="12" class="f4 s4"/>
+      <text x="200" y="94" class="tx-b" text-anchor="middle">„My, Pierwsza Brygada”</text>
+      <text x="200" y="116" class="tx-s" text-anchor="middle">pieśń Legionów · dziś pieśń Wojska Polskiego</text>
+      <text x="14" y="166" class="tx-b">marsz</text>
+      <text x="14" y="186" class="tx-s">2/4</text>
+      <rect x="96" y="140" width="68" height="40" rx="8" class="f3 s3 sw"/>
+      <rect x="172" y="140" width="68" height="40" rx="8" class="f3 s3"/>
+      <rect x="248" y="140" width="68" height="40" rx="8" class="f3 s3 sw"/>
+      <rect x="324" y="140" width="68" height="40" rx="8" class="f3 s3"/>
+      <text x="130" y="166" class="tx-b" text-anchor="middle">RAZ</text>
+      <text x="206" y="166" class="tx" text-anchor="middle">dwa</text>
+      <text x="282" y="166" class="tx-b" text-anchor="middle">RAZ</text>
+      <text x="358" y="166" class="tx" text-anchor="middle">dwa</text>
+      <text x="130" y="204" class="tx-s" text-anchor="middle">lewa</text>
+      <text x="206" y="204" class="tx-s" text-anchor="middle">prawa</text>
+      <text x="282" y="204" class="tx-s" text-anchor="middle">lewa</text>
+      <text x="358" y="204" class="tx-s" text-anchor="middle">prawa</text>
+    </svg>`,
+    text: `<p><b>11 listopada 1918 r.</b> Polska odzyskała niepodległość – to <b>Narodowe Święto Niepodległości</b>. O wolność walczyły m.in. <b>Legiony Polskie</b>, które w czasie I wojny światowej działały u boku <b>Józefa Piłsudskiego</b>.</p>
+      <ul>
+        <li>„<b>My, Pierwsza Brygada</b>” – pieśń Legionów, ulubiona pieśń Piłsudskiego. Od 2007 r. to <b>Pieśń Reprezentacyjna Wojska Polskiego</b>.</li>
+        <li>„<b>Piechota</b>” – jedna z najpopularniejszych polskich pieśni żołnierskich.</li>
+        <li><b>Marsz</b> – bardzo rytmiczny utwór w <b>metrum parzystym</b>, np. 2/4. W jego rytm idzie się równym krokiem.</li>
+      </ul>`,
+    remember: '11 listopada 1918 – niepodległość. Marsz – metrum parzyste (2/4): RAZ-dwa, lewa-prawa.',
+    hook: 'Masz dwie nogi – więc marsz liczysz „na dwa”: lewa, prawa, lewa, prawa.',
+    check: { q: 'Jakie metrum ma marsz?', options: ['parzyste, np. 2/4', 'trójdzielne, np. 3/4', 'inne w każdym takcie'], answer: 0, explain: 'Marsz ma metrum parzyste, np. 2/4 – RAZ-dwa, jak kroki: lewa, prawa.' },
+  },
+  {
+    title: 'Majowe święta i Mazurek 3 Maja',
+    svg: `<svg viewBox="0 0 400 216" role="img" aria-label="Kartki z kalendarza: 1 maja – Święto Pracy, 2 maja – Dzień Flagi, 3 maja – Konstytucja. Pieśń „Witaj, majowa jutrzenko”, czyli Mazurek 3 Maja, słowa Rajnold Suchodolski; liczymy RAZ, dwa, trzy – metrum 3/4, rytm mazura.">
+      <rect x="6" y="6" width="124" height="100" rx="10" class="f4 s4"/>
+      <rect x="138" y="6" width="124" height="100" rx="10" class="f4 s4"/>
+      <rect x="270" y="6" width="124" height="100" rx="10" class="f4 s4"/>
+      <rect x="6" y="6" width="124" height="26" rx="10" class="f2 s2"/>
+      <rect x="138" y="6" width="124" height="26" rx="10" class="f2 s2"/>
+      <rect x="270" y="6" width="124" height="26" rx="10" class="f2 s2"/>
+      <text x="68" y="25" class="tx-s" text-anchor="middle">MAJ</text>
+      <text x="200" y="25" class="tx-s" text-anchor="middle">MAJ</text>
+      <text x="332" y="25" class="tx-s" text-anchor="middle">MAJ</text>
+      <text x="68" y="66" class="tx-b" text-anchor="middle">1</text>
+      <text x="200" y="66" class="tx-b" text-anchor="middle">2</text>
+      <text x="332" y="66" class="tx-b" text-anchor="middle">3</text>
+      <text x="68" y="94" class="tx-s" text-anchor="middle">Święto Pracy</text>
+      <text x="200" y="94" class="tx-s" text-anchor="middle">Dzień Flagi</text>
+      <text x="332" y="94" class="tx-s" text-anchor="middle">Konstytucja</text>
+      <rect x="6" y="118" width="388" height="92" rx="12" class="f5 s5"/>
+      <text x="200" y="142" class="tx-b" text-anchor="middle">„Witaj, majowa jutrzenko”</text>
+      <text x="200" y="164" class="tx-s" text-anchor="middle">Mazurek 3 Maja · słowa: R. Suchodolski</text>
+      <text x="200" y="194" class="tx" text-anchor="middle">RAZ – dwa – trzy · 3/4 · rytm mazura</text>
+    </svg>`,
+    text: `<ul>
+        <li><b>1 maja</b> – Święto Państwowe, zwane Świętem Pracy.</li>
+        <li><b>2 maja</b> – <b>Dzień Flagi Rzeczypospolitej Polskiej</b>.</li>
+        <li><b>3 maja</b> – rocznica uchwalenia <b>Konstytucji 3 maja</b> w <b>1791 r.</b> Konstytucja to zbiór najważniejszych praw w państwie. Ta była <b>pierwsza w Europie</b> i druga na świecie.</li>
+      </ul>
+      <p>Na 3 Maja śpiewamy „<b>Witaj, majowa jutrzenko</b>”, czyli <b>Mazurek 3 Maja</b> (słowa: Rajnold Suchodolski). Pieśń jest radosna, ma metrum <b>3/4</b> i rytm <b>mazura</b>. <b>Jutrzenka</b> to w poezji jasność przed wschodem słońca.</p>`,
+    remember: 'Konstytucja 3 maja – 1791 r., pierwsza w Europie. „Witaj, majowa jutrzenko” – Mazurek 3 Maja, 3/4.',
+    hook: 'W maju liczysz 1, 2, 3: praca, flaga, Konstytucja. A Mazurek 3 Maja też liczysz „na trzy”.',
+    check: { q: 'Jak liczymy rytm pieśni „Witaj, majowa jutrzenko”?', options: ['na trzy: RAZ-dwa-trzy', 'na dwa: RAZ-dwa', 'na cztery: RAZ-dwa-trzy-cztery'], answer: 0, explain: 'Mazurek 3 Maja ma metrum 3/4 i rytm mazura – liczymy „na trzy”.' },
+  },
+  {
+    title: 'Święta rodzinne – muzyczny prezent',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Styczeń: 21 – Dzień Babci, 22 – Dzień Dziadka. Maj i czerwiec: 26 maja – Dzień Matki, potem 1 czerwca – Dzień Dziecka, potem 23 czerwca – Dzień Ojca. Muzyczny prezent: piosenka z życzeniami albo utwór na flecie lub dzwonkach.">
+      <defs><marker id="a-k4mu-kal-2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="6" y="6" width="388" height="62" rx="12" class="f3 s3"/>
+      <text x="18" y="30" class="tx-b">Styczeń</text>
+      <text x="18" y="56" class="tx">21 – 👵 babcia · 22 – 👴 dziadek</text>
+      <rect x="6" y="76" width="388" height="82" rx="12" class="f3 s3"/>
+      <text x="18" y="98" class="tx-b">Maj i czerwiec</text>
+      <text x="70" y="126" class="tx-b" text-anchor="middle">26 V</text>
+      <text x="200" y="126" class="tx-b" text-anchor="middle">1 VI</text>
+      <text x="330" y="126" class="tx-b" text-anchor="middle">23 VI</text>
+      <text x="70" y="148" class="tx-s" text-anchor="middle">💐 mama</text>
+      <text x="200" y="148" class="tx-s" text-anchor="middle">🎈 dzieci</text>
+      <text x="330" y="148" class="tx-s" text-anchor="middle">👔 tata</text>
+      <line x1="106" y1="121" x2="160" y2="121" class="ln" marker-end="url(#a-k4mu-kal-2)"/>
+      <line x1="238" y1="121" x2="290" y2="121" class="ln" marker-end="url(#a-k4mu-kal-2)"/>
+      <rect x="6" y="166" width="388" height="58" rx="12" class="f4 s4"/>
+      <text x="200" y="190" class="tx-b" text-anchor="middle">🎁 Muzyczny prezent</text>
+      <text x="200" y="212" class="tx-s" text-anchor="middle">piosenka z życzeniami, utwór na flecie lub dzwonkach</text>
+    </svg>`,
+    text: `<ul>
+        <li><b>Dzień Babci</b> – 21 stycznia, <b>Dzień Dziadka</b> – 22 stycznia.</li>
+        <li><b>Dzień Matki</b> – 26 maja, <b>Dzień Dziecka</b> – 1 czerwca, <b>Dzień Ojca</b> – 23 czerwca.</li>
+      </ul>
+      <p>Najlepszy prezent? Taki, który przygotujesz sam: piosenka z życzeniami, wspólne śpiewanie albo krótki utwór zagrany na flecie lub dzwonkach. Zapytaj też bliskich, jakie piosenki śpiewano w waszej rodzinie – np. jakie <b>kołysanki</b> (piosenki śpiewane przy usypianiu dziecka).</p>`,
+    remember: 'Babcia 21 I, dziadek 22 I. Mama 26 V, dzieci 1 VI, tata 23 VI.',
+    hook: 'Mama w maju, tata w czerwcu – a dzieci pośrodku, 1 czerwca, jak w rodzinnym uścisku.',
+    check: { q: 'Które święto wypada między Dniem Matki a Dniem Ojca?', options: ['Dzień Dziecka', 'Dzień Babci', 'Dzień Flagi'], answer: 0, explain: 'Dzień Matki – 26 maja, Dzień Dziecka – 1 czerwca, Dzień Ojca – 23 czerwca.' },
+  },
+  {
+    title: 'Nie pomyl!',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Nie pomyl. 3 maja 1791 – Konstytucja, a 11 listopada 1918 – niepodległość. Marsz liczymy na dwa: RAZ-dwa, a Mazurek 3 Maja na trzy: RAZ-dwa-trzy. „Pierwsza Brygada” to pieśń Wojska Polskiego, a hymn Polski to „Mazurek Dąbrowskiego”.">
+      <rect x="6" y="6" width="190" height="58" rx="10" class="f2 s2"/>
+      <rect x="204" y="6" width="190" height="58" rx="10" class="f2 s2"/>
+      <rect x="6" y="72" width="190" height="58" rx="10" class="f3 s3"/>
+      <rect x="204" y="72" width="190" height="58" rx="10" class="f5 s5"/>
+      <rect x="6" y="138" width="190" height="58" rx="10" class="f4 s4"/>
+      <rect x="204" y="138" width="190" height="58" rx="10" class="f1 s1"/>
+      <text x="101" y="30" class="tx-b" text-anchor="middle">3 V 1791</text>
+      <text x="101" y="52" class="tx-s" text-anchor="middle">Konstytucja</text>
+      <text x="299" y="30" class="tx-b" text-anchor="middle">11 XI 1918</text>
+      <text x="299" y="52" class="tx-s" text-anchor="middle">niepodległość</text>
+      <text x="101" y="96" class="tx-b" text-anchor="middle">marsz</text>
+      <text x="101" y="118" class="tx-s" text-anchor="middle">na dwa: RAZ-dwa</text>
+      <text x="299" y="96" class="tx-b" text-anchor="middle">Mazurek 3 Maja</text>
+      <text x="299" y="118" class="tx-s" text-anchor="middle">na trzy: RAZ-dwa-trzy</text>
+      <text x="101" y="162" class="tx-b" text-anchor="middle">Pierwsza Brygada</text>
+      <text x="101" y="184" class="tx-s" text-anchor="middle">pieśń Wojska Polskiego</text>
+      <text x="299" y="162" class="tx-b" text-anchor="middle">hymn Polski</text>
+      <text x="299" y="184" class="tx-s" text-anchor="middle">„Mazurek Dąbrowskiego”</text>
+    </svg>`,
+    text: `<ul>
+        <li><b>3 maja</b> świętujemy Konstytucję z <b>1791 r.</b>, a <b>11 listopada</b> – odzyskanie niepodległości w <b>1918 r.</b></li>
+        <li><b>Marsz</b> liczymy „na dwa”, a <b>Mazurek 3 Maja</b> – „na trzy”, jak każdy mazur.</li>
+        <li>„<b>My, Pierwsza Brygada</b>” to Pieśń Reprezentacyjna Wojska Polskiego, ale <b>hymnem Polski</b> jest „Mazurek Dąbrowskiego”.</li>
+        <li><b>2 maja</b> to Dzień Flagi, a <b>14 października</b> – Dzień Edukacji Narodowej.</li>
+      </ul>`,
+    remember: 'Dwa mazurki: „Mazurek Dąbrowskiego” to hymn, „Mazurek 3 Maja” to „Witaj, majowa jutrzenko”.',
+    check: { q: 'Które zdanie jest prawdziwe?', options: ['Konstytucję 3 maja uchwalono w 1791 r.', 'Polska odzyskała niepodległość w 1791 r.', 'Marsz liczymy „na trzy”.'], answer: 0, explain: 'Konstytucja 3 maja – 1791 r. Niepodległość – 1918 r. Marsz liczymy „na dwa”.' },
+  },
+];

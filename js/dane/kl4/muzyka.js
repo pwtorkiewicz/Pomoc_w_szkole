@@ -499,5 +499,119 @@ window.SUBJECTS.push({
         { id: '1vrqn9', q: 'Prawda czy fałsz?\nKolędy i pastorałki są najczęściej utworami anonimowymi – nie wiemy, kto je ułożył.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'To prawda. Długo przekazywano je ustnie, z pokolenia na pokolenie, dlatego autorzy zwykle są nieznani.' },
       ],
     },
+    {
+      id: 'kalendarz-muzyczny',
+      name: 'Muzyka w kalendarzu: święta szkolne, państwowe i rodzinne',
+      chapter: 'rozdziały I.6 (Dzień Edukacji Narodowej), I.9 „Gdy piosenka z wojskiem szła”, II.5 (muzyczny prezent dla babci i dziadka), III.6 „Nasze majowe święta”, IV.1–2 (dla mamy i taty, święto wszystkich dzieci)',
+      basis: 'Dz.U. 2026 poz. 378, muzyka (II etap, przedmiot w kl. IV–VII): dz. 1 „Uczeń jako twórca i wykonawca”, wym. 2 (utwory z repertuaru tradycyjnego i patriotycznego – moduł kultura), wym. 9 (metrum); dz. 2 „Uczeń jako słuchacz”, wym. 6 (charakter i przebieg utworów); dz. 3 „Uczeń jako uczestnik kultury”, wym. 3 (pieśni patriotyczne – kontekst historyczny, rola dawniej i dziś), wym. 5 (tańce narodowe – rytm mazura w pieśni), wymaganie do wyboru 1 (dziedzictwo muzyczne rodziny i szkoły); doświadczenie edukacyjne 2 (współtworzenie występu dla społeczności szkolnej). Temat z podręcznika „Wszystko gra 4” (rozdziały I.6, I.9, II.5, III.6, IV.1–2). Fakty sprawdzone 6.11.2026: Karta Nauczyciela, art. 74 (tekst jednolity Dz.U. 2026 poz. 515); ustawa o dniach wolnych od pracy, art. 1 (Dz.U. 2020 poz. 1920 – 1 maja „Święto Państwowe”, 3 maja, 11 listopada); ustawa o godle, barwach i hymnie, art. 6a (Dz.U. 2025 poz. 299 – Dzień Flagi); lekcje ZPE (zpe.gov.pl) „Majowe śpiewanie” (Konstytucja 3 maja – pierwsza w Europie, druga na świecie; „Witaj, majowa jutrzenko” – Mazurek 3 Maja, metrum 3/4, rytm mazura) i „Pieśni legionów” („My, Pierwsza Brygada” – pieśń Legionów z I wojny światowej, ulubiona pieśń J. Piłsudskiego, od 2007 r. Pieśń Reprezentacyjna Wojska Polskiego; „Piechota”); definicje – Słownik języka polskiego PWN: marsz, akademia, laurka, jutrzenka, kołysanka. Słowa „Witaj, majowa jutrzenko” – R. Suchodolski (zgodne śpiewniki, m.in. Śpiewnik Niepodległości); Komisja Edukacji Narodowej jako pierwsze ministerstwo oświaty w Europie – zgodne źródła przez wyszukiwarkę (dzieje.pl, Radio Kraków). Dzień Babci, Dziadka, Matki, Dziecka i Ojca – daty zwyczajowe (bez aktu prawnego; zgodne źródła prasowe). Pominięte, bo źródła się różnią: autorzy słów i melodii „My, Pierwszej Brygady” i „Piechoty”, autor melodii „Witaj, majowa jutrzenko”, początki świąt rodzinnych.',
+      theory: `
+        <h3>Muzyka przez cały rok szkolny</h3>
+        <p>Każde święto ma swoją muzykę. W szkole świętujemy razem na <b>akademii</b> – to uroczystość z okazji święta: śpiewamy pieśni, recytujemy wiersze, gramy na instrumentach. Na święta państwowe wybieramy <b>pieśni patriotyczne</b>, a na święta rodzinne – <b>piosenki z życzeniami</b>.</p>
+        <table>
+          <tr><th>Data</th><th>Święto</th></tr>
+          <tr><td><b>14 października</b></td><td>🏫 Dzień Edukacji Narodowej</td></tr>
+          <tr><td><b>11 listopada</b></td><td>🇵🇱 Narodowe Święto Niepodległości</td></tr>
+          <tr><td><b>21 i 22 stycznia</b></td><td>👵 Dzień Babci i 👴 Dzień Dziadka</td></tr>
+          <tr><td><b>1 maja</b></td><td>🇵🇱 Święto Państwowe, zwane Świętem Pracy</td></tr>
+          <tr><td><b>2 maja</b></td><td>🇵🇱 Dzień Flagi Rzeczypospolitej Polskiej</td></tr>
+          <tr><td><b>3 maja</b></td><td>🇵🇱 Święto Narodowe Trzeciego Maja</td></tr>
+          <tr><td><b>26 maja</b></td><td>💐 Dzień Matki</td></tr>
+          <tr><td><b>1 czerwca</b></td><td>🎈 Dzień Dziecka</td></tr>
+          <tr><td><b>23 czerwca</b></td><td>👔 Dzień Ojca</td></tr>
+        </table>
+        <h3>Dzień Edukacji Narodowej – 14 października</h3>
+        <ul>
+          <li>14 października <b>1773 r.</b> powstała <b>Komisja Edukacji Narodowej</b> – urząd, który zajmował się szkołami w całym państwie. Uważa się ją za pierwsze w Europie ministerstwo oświaty.</li>
+          <li>W rocznicę jej utworzenia obchodzimy <b>Dzień Edukacji Narodowej</b> (tak mówi ustawa „Karta Nauczyciela”). To święto nauczycieli i wszystkich pracowników szkoły. Tego dnia <b>nie ma lekcji</b>.</li>
+          <li>Uczniowie dziękują nauczycielom, np. piosenką albo <b>laurką</b> – kartką ozdobioną rysunkiem, z życzeniami.</li>
+        </ul>
+        <h3>11 listopada i pieśni żołnierskie</h3>
+        <p><b>11 listopada 1918 r.</b> Polska odzyskała niepodległość. O wolność walczyli m.in. <b>Legiony Polskie</b> – oddziały wojskowe, które w czasie I wojny światowej działały u boku <b>Józefa Piłsudskiego</b>. Żołnierze mieli swoje pieśni – to <b>pieśni żołnierskie</b>.</p>
+        <ul>
+          <li>„<b>My, Pierwsza Brygada</b>” – pieśń Legionów Polskich z czasów I wojny światowej, ulubiona pieśń Józefa Piłsudskiego. Od <b>2007 r.</b> jest <b>Pieśnią Reprezentacyjną Wojska Polskiego</b> – wykonuje się ją na uroczystościach wojskowych.</li>
+          <li>„<b>Piechota</b>” („Nie noszą lampasów…”) – jedna z najpopularniejszych polskich pieśni żołnierskich, też z czasów I wojny światowej.</li>
+          <li><b>Marsz</b> – bardzo rytmiczny utwór w <b>metrum parzystym</b> (np. 2/4: RAZ-dwa, RAZ-dwa). W jego rytm łatwo iść równym krokiem: lewa, prawa, lewa, prawa.</li>
+        </ul>
+        <h3>Majowe święta</h3>
+        <ul>
+          <li><b>1 maja</b> – Święto Państwowe, zwane Świętem Pracy.</li>
+          <li><b>2 maja</b> – <b>Dzień Flagi Rzeczypospolitej Polskiej</b>: święto biało-czerwonej flagi.</li>
+          <li><b>3 maja</b> – <b>Święto Narodowe Trzeciego Maja</b>, rocznica uchwalenia <b>Konstytucji 3 maja</b> w <b>1791 r.</b> Konstytucja to zbiór najważniejszych praw w państwie. Konstytucja 3 maja była <b>pierwszą konstytucją w Europie</b> i drugą na świecie.</li>
+        </ul>
+        <p>Z Konstytucją 3 maja wiąże się pieśń „<b>Witaj, majowa jutrzenko</b>”, nazywana też <b>Mazurkiem 3 Maja</b>. Słowa napisał <b>Rajnold Suchodolski</b>. Pieśń jest radosna, ma metrum <b>3/4</b> i rytm <b>mazura</b> – polskiego tańca narodowego. <b>Jutrzenka</b> to w języku poezji jasność przed wschodem słońca.</p>
+        <div class="tip">💡 Porównaj: marsz liczymy „na dwa” (RAZ-dwa), a Mazurek 3 Maja – „na trzy” (RAZ-dwa-trzy), jak każdy mazur.</div>
+        <h3>Święta rodzinne – muzyczny prezent</h3>
+        <ul>
+          <li><b>Dzień Babci</b> – 21 stycznia, <b>Dzień Dziadka</b> – 22 stycznia.</li>
+          <li><b>Dzień Matki</b> – 26 maja, <b>Dzień Dziecka</b> – 1 czerwca, <b>Dzień Ojca</b> – 23 czerwca.</li>
+          <li>Muzyczny prezent to np. piosenka z życzeniami, wspólne śpiewanie albo krótki utwór zagrany na flecie lub dzwonkach. Możesz też przypomnieć piosenki, które śpiewano w twojej rodzinie – np. <b>kołysanki</b>, czyli piosenki śpiewane przy usypianiu dziecka.</li>
+        </ul>
+      `,
+      infographicNote: 'Czytaj od góry – od września do czerwca. Kolory: niebieski – święto szkolne, pomarańczowy – państwowe, zielony – rodzinne.',
+      infographic: {
+        type: 'os',
+        items: [
+          { label: '14 X', title: '🏫 Dzień Edukacji Narodowej', text: 'rocznica Komisji Edukacji Narodowej (1773); bez lekcji', kolor: 1 },
+          { label: '11 XI', title: '🇵🇱 Święto Niepodległości', text: '1918 r.; pieśni żołnierskie, np. „My, Pierwsza Brygada”', kolor: 2 },
+          { label: '21–22 I', title: '👵👴 Dzień Babci i Dziadka', text: 'muzyczny prezent: piosenka z życzeniami', kolor: 3 },
+          { label: '1–3 V', title: '🇵🇱 Majowe święta', text: 'Święto Pracy, Dzień Flagi, Konstytucja 3 maja (1791)', kolor: 2 },
+          { label: '26 V', title: '💐 Dzień Matki', kolor: 3 },
+          { label: '1 VI', title: '🎈 Dzień Dziecka', kolor: 3 },
+          { label: '23 VI', title: '👔 Dzień Ojca', kolor: 3 },
+        ],
+        bottom: { title: '💡 Zapamiętaj', items: ['marsz – metrum parzyste: RAZ-dwa, równy krok', '„Witaj, majowa jutrzenko” – Mazurek 3 Maja, rytm mazura (3/4)', 'akademia – szkolna uroczystość z okazji święta'], kolor: 4 },
+      },
+      flashcards: [
+        ['Dzień Edukacji Narodowej', '14 października – rocznica utworzenia Komisji Edukacji Narodowej (1773); święto nauczycieli i pracowników szkoły, bez lekcji'],
+        ['Komisja Edukacji Narodowej', 'Urząd z 1773 r., który zajmował się szkołami w całym państwie; uważana za pierwsze w Europie ministerstwo oświaty'],
+        ['Akademia (w szkole)', 'Uroczystość z okazji święta: pieśni, wiersze, gra na instrumentach'],
+        ['Laurka', 'Kartka ozdobiona rysunkiem, z życzeniami – prezent od dziecka'],
+        ['Narodowe Święto Niepodległości', '11 listopada – w 1918 r. Polska odzyskała niepodległość'],
+        ['„My, Pierwsza Brygada”', 'Pieśń Legionów Polskich z I wojny światowej; ulubiona pieśń Józefa Piłsudskiego; od 2007 r. Pieśń Reprezentacyjna Wojska Polskiego'],
+        ['„Piechota”', 'Jedna z najpopularniejszych polskich pieśni żołnierskich, z czasów I wojny światowej'],
+        ['Marsz', 'Bardzo rytmiczny utwór w metrum parzystym (np. 2/4) – w jego rytm idzie się równym krokiem'],
+        ['Majowe święta', '1 maja – Święto Pracy, 2 maja – Dzień Flagi RP, 3 maja – Święto Narodowe Trzeciego Maja'],
+        ['Konstytucja 3 maja', 'Uchwalona w 1791 r.; pierwsza konstytucja w Europie, druga na świecie'],
+        ['Konstytucja', 'Zbiór najważniejszych praw w państwie'],
+        ['„Witaj, majowa jutrzenko”', 'Mazurek 3 Maja; słowa: Rajnold Suchodolski; radosna, metrum 3/4, rytm mazura'],
+        ['Jutrzenka', 'W języku poezji: jasność przed wschodem słońca'],
+        ['Dzień Babci / Dzień Dziadka', '21 stycznia / 22 stycznia'],
+        ['Dzień Matki / Dzień Ojca', '26 maja / 23 czerwca'],
+        ['Dzień Dziecka', '1 czerwca'],
+        ['Kołysanka', 'Piosenka śpiewana przy usypianiu dziecka'],
+      ],
+      questions: [
+        { id: 'fl36ep', q: 'Kiedy obchodzimy Dzień Edukacji Narodowej?', options: ['14 października', '11 listopada', '1 czerwca', '3 maja'], answer: 0, explain: 'Dzień Edukacji Narodowej przypada 14 października – w rocznicę utworzenia Komisji Edukacji Narodowej.' },
+        { id: 'l9j3bo', q: 'Rocznicę jakiego wydarzenia upamiętnia Dzień Edukacji Narodowej?', options: ['utworzenia Komisji Edukacji Narodowej (1773)', 'uchwalenia Konstytucji 3 maja (1791)', 'odzyskania niepodległości przez Polskę (1918)', 'napisania słów hymnu Polski przez Wybickiego (1797)'], answer: 0, explain: '14 października 1773 r. powstała Komisja Edukacji Narodowej – urząd, który zajmował się szkołami w całym państwie.' },
+        { id: '47x6bb', q: 'Prawda czy fałsz?\nDzień Edukacji Narodowej jest wolny od zajęć lekcyjnych.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'To prawda. Tak mówi ustawa „Karta Nauczyciela”: to święto pracowników oświaty, wolne od lekcji.' },
+        { id: 'pl4ewy', q: 'Czym była Komisja Edukacji Narodowej?', options: ['urzędem, który zajmował się szkołami w państwie', 'oddziałem wojska walczącym w czasie I wojny światowej', 'zespołem muzyków grających na szkolnych akademiach', 'zbiorem najważniejszych praw w państwie z 1791 r.'], answer: 0, explain: 'Komisja Edukacji Narodowej (1773) zajmowała się szkołami w całym państwie. Uważa się ją za pierwsze w Europie ministerstwo oświaty.' },
+        { id: 'hd7hm9', q: 'Co to jest akademia szkolna?', options: ['uroczystość z okazji święta', 'lekcja gry na flecie prostym', 'konkurs na najładniejszą laurkę', 'wycieczka klasowa do filharmonii'], answer: 0, explain: 'Akademia to uroczystość z okazji święta – uczniowie śpiewają pieśni, recytują wiersze, grają na instrumentach.' },
+        { id: 'd9yhqs', q: 'Co to jest laurka?', options: ['kartka ozdobiona rysunkiem, z życzeniami', 'piosenka śpiewana przy usypianiu dziecka', 'pieśń żołnierzy śpiewana w czasie marszu', 'uroczystość w szkole z okazji ważnego święta'], answer: 0, explain: 'Laurka to kartka ozdobiona rysunkiem, z tekstem życzeń – np. dla nauczyciela albo dla mamy.' },
+        { id: 'oymt18', q: 'Jakie święto obchodzimy 11 listopada?', options: ['Narodowe Święto Niepodległości', 'Święto Narodowe Trzeciego Maja', 'Dzień Edukacji Narodowej', 'Dzień Flagi Rzeczypospolitej Polskiej'], answer: 0, explain: '11 listopada to Narodowe Święto Niepodległości – w 1918 r. Polska odzyskała niepodległość.' },
+        { id: '7baj41', q: 'W którym roku Polska odzyskała niepodległość?', options: ['1918', '1791', '1773', '1797'], answer: 0, explain: 'Polska odzyskała niepodległość 11 listopada 1918 r. 1791 to Konstytucja 3 maja, 1773 – Komisja Edukacji Narodowej, 1797 – „Mazurek Dąbrowskiego”.' },
+        { id: 'mqiokg', q: '„My, Pierwsza Brygada” to pieśń…', options: ['Legionów Polskich z czasów I wojny światowej', 'kolędników chodzących z gwiazdą i szopką', 'o Konstytucji 3 maja, w rytmie mazura', 'na Dzień Matki, śpiewana z życzeniami'], answer: 0, explain: '„My, Pierwsza Brygada” to pieśń żołnierska Legionów Polskich z czasów I wojny światowej.' },
+        { id: 'mcyo4b', q: 'Czyją ulubioną pieśnią była „My, Pierwsza Brygada”?', options: ['Józefa Piłsudskiego', 'Fryderyka Chopina', 'Józefa Wybickiego', 'Rajnolda Suchodolskiego'], answer: 0, explain: 'To była ulubiona pieśń Józefa Piłsudskiego – Legiony Polskie działały u jego boku.' },
+        { id: '150kx7', q: 'Czym jest dziś pieśń „My, Pierwsza Brygada”?', options: ['Pieśnią Reprezentacyjną Wojska Polskiego', 'hymnem państwowym Rzeczypospolitej Polskiej', 'hymnem Unii Europejskiej, wykonywanym bez słów', 'pieśnią na Dzień Edukacji Narodowej'], answer: 0, explain: 'Od 2007 r. „My, Pierwsza Brygada” jest Pieśnią Reprezentacyjną Wojska Polskiego. Hymnem Polski jest „Mazurek Dąbrowskiego”.' },
+        { id: 'vcyi6b', q: 'Co to jest marsz?', options: ['bardzo rytmiczny utwór w metrum parzystym', 'spokojna piosenka do usypiania dziecka', 'szybki taniec w metrum trzy czwarte', 'pieśń religijna o narodzeniu Jezusa'], answer: 0, explain: 'Marsz to bardzo rytmiczny utwór w metrum parzystym, np. 2/4 – w jego rytm idzie się równym krokiem.' },
+        { id: 'gddpdf', q: 'Prawda czy fałsz?\nMarsz ma metrum trójdzielne, np. 3/4.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 1, explain: 'Fałsz. Marsz ma metrum parzyste, np. 2/4: RAZ-dwa, RAZ-dwa – jak kroki: lewa, prawa.' },
+        { id: 'e4v3j4', q: 'W rytm którego utworu najłatwiej iść równym krokiem?', options: ['marsza', 'kołysanki', 'kujawiaka', 'nokturnu'], answer: 0, explain: 'Marsz ma wyraźny rytm w metrum parzystym – raz lewa, raz prawa noga. Kołysanka i kujawiak są spokojne i kołyszące.' },
+        { id: '4jgv67', q: 'Jaka muzyka najbardziej pasuje na akademię z okazji 11 listopada?', options: ['pieśni patriotyczne i żołnierskie', 'kolędy i pastorałki', 'kołysanki dla małych dzieci', 'piosenki o wakacjach nad morzem'], answer: 0, explain: '11 listopada to Narodowe Święto Niepodległości – śpiewamy wtedy pieśni patriotyczne, np. pieśni żołnierskie Legionów.' },
+        { id: 'hgslgv', q: 'Co obchodzimy 2 maja?', options: ['Dzień Flagi Rzeczypospolitej Polskiej', 'Narodowe Święto Niepodległości', 'Dzień Edukacji Narodowej', 'Święto Narodowe Trzeciego Maja'], answer: 0, explain: '2 maja to Dzień Flagi Rzeczypospolitej Polskiej. Dzień wcześniej jest Święto Pracy, dzień później – Święto Narodowe Trzeciego Maja.' },
+        { id: 'hl6owf', q: 'Rocznicę czego świętujemy 3 maja?', options: ['uchwalenia Konstytucji w 1791 r.', 'odzyskania niepodległości w 1918 r.', 'utworzenia Komisji Edukacji Narodowej', 'powstania Legionów Polskich we Włoszech'], answer: 0, explain: '3 maja to rocznica uchwalenia Konstytucji 3 maja w 1791 r.' },
+        { id: 'lc0tho', q: 'Co to jest konstytucja?', options: ['zbiór najważniejszych praw w państwie', 'uroczysta pieśń śpiewana na akademii', 'urząd, który zajmuje się szkołami', 'oddział wojska walczący o wolność'], answer: 0, explain: 'Konstytucja to zbiór najważniejszych praw w państwie.' },
+        { id: 'npuwam', q: 'Prawda czy fałsz?\nKonstytucja 3 maja była pierwszą konstytucją w Europie.', options: ['Prawda', 'Fałsz'], noShuffle: true, answer: 0, explain: 'To prawda. Konstytucja 3 maja (1791) była pierwszą konstytucją w Europie i drugą na świecie.' },
+        { id: 'ssu82f', q: 'Jak inaczej nazywa się pieśń „Witaj, majowa jutrzenko”?', options: ['Mazurek 3 Maja', 'Pieśń Legionów Polskich', 'Oda do radości', 'Pierwsza Brygada'], answer: 0, explain: '„Witaj, majowa jutrzenko” to pieśń o Konstytucji 3 maja, nazywana też Mazurkiem 3 Maja.' },
+        { id: 'qw4q3u', q: 'Rytm jakiego tańca słychać w pieśni „Witaj, majowa jutrzenko”?', options: ['mazura', 'krakowiaka', 'poloneza', 'walca'], answer: 0, explain: 'Pieśń ma rytm mazura – stąd druga nazwa: Mazurek 3 Maja.' },
+        { id: 'gpkgh5', q: 'Jakie metrum ma pieśń „Witaj, majowa jutrzenko”?', options: ['3/4', '2/4', '4/4', '2/2'], answer: 0, explain: 'Pieśń ma metrum 3/4 – liczymy „na trzy”, jak w mazurze.' },
+        { id: '7g910d', q: 'Kto napisał słowa pieśni „Witaj, majowa jutrzenko”?', options: ['Rajnold Suchodolski', 'Józef Wybicki', 'Maria Konopnicka', 'Franciszek Karpiński'], answer: 0, explain: 'Słowa napisał Rajnold Suchodolski. Wybicki napisał słowa hymnu, Konopnicka – „Roty”, a Karpiński – kolędy „Bóg się rodzi”.' },
+        { id: 'yvn3ca', q: 'Co znaczy słowo „jutrzenka” w tytule pieśni „Witaj, majowa jutrzenko”?', options: ['jasność przed wschodem słońca', 'wiosenna burza z piorunami', 'pierwszy dzień szkolnych wakacji', 'wieczorna mgła nad łąką'], answer: 0, explain: 'Jutrzenka to w języku poezji jasność przed wschodem słońca – początek nowego dnia.' },
+        { id: 'nahguq', q: 'Kiedy obchodzimy Dzień Matki?', options: ['26 maja', '1 czerwca', '23 czerwca', '21 stycznia'], answer: 0, explain: 'Dzień Matki jest 26 maja. 1 czerwca to Dzień Dziecka, 23 czerwca – Dzień Ojca, a 21 stycznia – Dzień Babci.' },
+        { id: 'nzbey0', q: 'Które święto obchodzimy 23 czerwca?', options: ['Dzień Ojca', 'Dzień Matki', 'Dzień Dziecka', 'Dzień Dziadka'], answer: 0, explain: '23 czerwca to Dzień Ojca.' },
+        { id: 'efpzmn', q: 'Kiedy jest Dzień Dziecka?', options: ['1 czerwca', '26 maja', '14 października', '22 stycznia'], answer: 0, explain: 'Dzień Dziecka obchodzimy 1 czerwca – między Dniem Matki (26 maja) a Dniem Ojca (23 czerwca).' },
+        { id: 'glehnd', q: 'Dzień Babci obchodzimy 21 stycznia. Kiedy jest Dzień Dziadka?', options: ['22 stycznia', '20 stycznia', '21 lutego', '23 czerwca'], answer: 0, explain: 'Dzień Dziadka jest dzień po Dniu Babci – 22 stycznia.' },
+        { id: '4x91yu', q: 'Co to jest kołysanka?', options: ['piosenka śpiewana przy usypianiu dziecka', 'pieśń żołnierska w rytmie marsza', 'uroczysta pieśń na szkolną akademię', 'szybki taniec ludowy w metrum 2/4'], answer: 0, explain: 'Kołysanka to piosenka śpiewana przy usypianiu dziecka – spokojna i kołysząca.' },
+        { id: 'ffnjby', q: 'Które z tych świąt obchodzimy najwcześniej w roku szkolnym (licząc od września)?', options: ['Dzień Edukacji Narodowej', 'Narodowe Święto Niepodległości', 'Dzień Babci', 'Święto Narodowe Trzeciego Maja'], answer: 0, explain: 'Kolejno: Dzień Edukacji Narodowej (14 października), Święto Niepodległości (11 listopada), Dzień Babci (21 stycznia), 3 Maja.' },
+      ],
+    },
   ],
 });

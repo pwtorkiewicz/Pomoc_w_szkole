@@ -189,7 +189,7 @@ Nowa Era, nr 1265/1/2026, ISBN 978-83-267-5428-9. Autorzy: G. Kilbach, A. Daniel
 
 **IV. Zbliża się lato** – 1. Dla mamy i taty · 2. Święto wszystkich dzieci · 3. O czym może mówić muzyka? · 4. Z piosenką nad morze!
 
-Każdy rozdział kończy „Warsztat muzyczny – podsumowanie”; na końcu repertuar dodatkowy, słowniczek, tabela chwytów na flet prosty. Działy aplikacji: Elementy muzyki i zapis nutowy (rozdział I); Instrumenty, głosy i formy muzyczne (rozdziały I–III); Hymn, pieśni i tańce narodowe, Chopin (rozdziały I i III). Kolędy i tradycje wielkanocne – dział „Kolędy i tradycje świąt: Boże Narodzenie i Wielkanoc” (rozdziały II i III). Brakuje: Dzień Edukacji Narodowej, święta majowe, Dzień Matki i Ojca, Dzień Dziecka, „Cudowne dzieci muzyki”, „O czym może mówić muzyka?” (muzyka ilustracyjna), gra na flecie prostym (część praktyczna – poza aplikacją).
+Każdy rozdział kończy „Warsztat muzyczny – podsumowanie”; na końcu repertuar dodatkowy, słowniczek, tabela chwytów na flet prosty. Działy aplikacji: Elementy muzyki i zapis nutowy (rozdział I); Instrumenty, głosy i formy muzyczne (rozdziały I–III); Hymn, pieśni i tańce narodowe, Chopin (rozdziały I i III). Kolędy i tradycje wielkanocne – dział „Kolędy i tradycje świąt: Boże Narodzenie i Wielkanoc” (rozdziały II i III). Święta w kalendarzu (Dzień Edukacji Narodowej, pieśni żołnierskie i 11 listopada, prezent dla babci i dziadka, święta majowe, Dzień Matki i Ojca, Dzień Dziecka) – dział „Muzyka w kalendarzu: święta szkolne, państwowe i rodzinne” (rozdziały I.6, I.9, II.5, III.6, IV.1–2; 6.11.2026). Brakuje: „Cudowne dzieci muzyki”, „O czym może mówić muzyka?” (muzyka ilustracyjna), gra na flecie prostym (część praktyczna – poza aplikacją).
 
 ## Zajęcia praktyczno-techniczne – *Jak to zrobić? 4*
 
