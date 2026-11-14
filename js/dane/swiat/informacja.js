@@ -1,25 +1,27 @@
-/* 🌍 Świat – jak uczą się w innych krajach – klasa 8.
- * Moduł POZA polską podstawą programową (decyzja rodzica, 14.11.2026; plan: docs/PLAN-swiat.md).
- * Każdy dział: temat z oficjalnego programu nauczania innego kraju, opisany po polsku, na poziomie ucznia kl. 8.
- * Fakty o szkołach za granicą – tylko z dokumentów ministerstw (adresy w polu basis i w js/dane/kl8/zrodla.js). */
+/* 🌍 Świat – nauka z innych krajów: informacja i algorytmy.
+ * Ścieżka POZA polską podstawą programową (decyzja rodzica, 14.11.2026; plan: docs/PLAN-swiat.md).
+ * Działy ułożone według tematów, nie klas: level (1–3), requires ('przedmiot/dział'), where – gdzie się tego uczą.
+ * Fakty o szkołach za granicą – tylko z dokumentów ministerstw (adresy w polu basis i w js/dane/swiat/zrodla.js). */
 (function () {
   const NC = 'National curriculum in England: computing programmes of study, key stages 3 and 4 (Department for Education, wrzesień 2013, dokument DFE-00191-2013, gov.uk – obowiązujący, sprawdzone 14.11.2026)';
   const TF = ['Prawda', 'Fałsz'];
 
   window.SUBJECTS.push({
-    id: 'swiat',
-    name: 'Świat – jak uczą się inni',
-    icon: '🌍',
-    color: '#1f8fb3',
+    id: 'informacja',
+    name: 'Informacja i algorytmy',
+    icon: '💻',
+    color: '#6c4fc2',
     topics: [
       // ------------------------------------------------------------------
       {
-        id: 'anglia-logika',
-        name: 'Anglia: logika i bramki logiczne',
-        basis: `Poza polską podstawą programową – moduł „Świat” (decyzja rodzica). Źródło: ${NC}, key stage 3: „understand simple Boolean logic [for example, AND, OR and NOT] and some of its uses in circuits and programming”. Wiek uczniów w key stage 3 (11–14 lat, Year 7–9) i informatyka (computing) jako przedmiot obowiązkowy w key stages 1–4 – strony gov.uk „The national curriculum” (overview, key stage 1 and 2, key stage 3 and 4), sprawdzone 14.11.2026. Połączenie szeregowe i równoległe – fizyka kl. 8 (dział „Prąd, napięcie i opór”). Działanie and, or, not i kolejność działań w Pythonie sprawdzone przez uruchomienie kodu. Kształty symboli bramek w lekcji (AND – półkole, OR – „tarcza”, NOT – trójkąt z kółkiem) nie zostały sprawdzone w osobnym źródle – dlatego w każdym symbolu jest też nazwa bramki. W polskiej podstawie dla kl. VII–VIII są wartości logiczne, ale nie ma bramek logicznych.`,
+        id: 'bramki-logiczne',
+        name: 'Logika i bramki logiczne',
+        level: 3,
+        where: 'Anglia – computing, key stage 3 (uczniowie 11–14 lat): logika AND, OR, NOT w obwodach i w programowaniu',
+        basis: `Poza polską podstawą programową – ścieżka „Świat” (decyzja rodzica). Źródło: ${NC}, key stage 3: „understand simple Boolean logic [for example, AND, OR and NOT] and some of its uses in circuits and programming”. Wiek uczniów w key stage 3 (11–14 lat, Year 7–9) i informatyka (computing) jako przedmiot obowiązkowy w key stages 1–4 – strony gov.uk „The national curriculum” (overview, key stage 1 and 2, key stage 3 and 4), sprawdzone 14.11.2026. Połączenie szeregowe i równoległe – fizyka kl. 8 (dział „Prąd, napięcie i opór”). Działanie and, or, not i kolejność działań w Pythonie sprawdzone przez uruchomienie kodu. Kształty symboli bramek w lekcji (AND – półkole, OR – „tarcza”, NOT – trójkąt z kółkiem) nie zostały sprawdzone w osobnym źródle – dlatego w każdym symbolu jest też nazwa bramki. W polskiej podstawie dla kl. VII–VIII są wartości logiczne, ale nie ma bramek logicznych.`,
         theory: `
           <h3>Jak to jest w Anglii?</h3>
-          <p>W szkołach w Anglii, które realizują krajowy program nauczania (<i>national curriculum</i>), informatyka (<i>computing</i>) jest przedmiotem obowiązkowym od pierwszej klasy (5–6 lat) aż do 16. roku życia. Etap <b>key stage 3</b> to uczniowie w wieku 11–14 lat (Year 7–9) – czyli mniej więcej ty. Program nauczania mówi, że na tym etapie uczeń ma rozumieć <b>prostą logikę Boole’a (AND, OR, NOT)</b> i jej zastosowania w <b>obwodach</b> i w <b>programowaniu</b>.</p>
+          <p>W szkołach w Anglii, które realizują krajowy program nauczania (<i>national curriculum</i>), informatyka (<i>computing</i>) jest przedmiotem obowiązkowym od pierwszej klasy (5–6 lat) aż do 16. roku życia. Etap <b>key stage 3</b> to uczniowie w wieku 11–14 lat (Year 7–9). Program nauczania mówi, że na tym etapie uczeń ma rozumieć <b>prostą logikę Boole’a (AND, OR, NOT)</b> i jej zastosowania w <b>obwodach</b> i w <b>programowaniu</b>.</p>
           <h3>Prawda = 1, fałsz = 0</h3>
           <p>Każde zdanie logiczne jest albo prawdziwe, albo fałszywe. Komputer zapisuje to jako <b>1</b> (prawda) i <b>0</b> (fałsz). Np. „5 &gt; 3” → 1, „2 &gt; 4” → 0.</p>
           <h3>Trzy podstawowe działania</h3>

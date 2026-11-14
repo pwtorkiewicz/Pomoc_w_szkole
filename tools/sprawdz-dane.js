@@ -1,7 +1,7 @@
 /* Sprawdzanie pytań we wszystkich ścieżkach (js/sciezki.js): node tools/sprawdz-dane.js [ścieżka]
  * - każde pytanie ma stałe, unikalne (w całej aplikacji, we wszystkich ścieżkach) pole id,
  * - poprawny indeks odpowiedzi, brak powtórzonych odpowiedzi,
- * - unikalne id działów w przedmiocie,
+ * - unikalne id działów w przedmiocie; pola level (1–3) i requires (istniejące działy) w ścieżce „Świat”,
  * - zadania otwarte (pole tasks): id, punkty, kroki rozwiązania, odpowiedź, zasady punktacji,
  * - zestawy ćwiczeń (window.EXERCISES): tryb, tekst/nagrania, zadania zamknięte, wpisywane i otwarte. */
 const wczytaj = require('./dane');
@@ -53,6 +53,14 @@ for (const track of wczytaj.sciezki()) {
     for (const t of s.topics) {
       if (topicIds.has(t.id)) problems.push(`${s.id}: powtórzone id działu ${t.id}`);
       topicIds.add(t.id);
+      // ścieżka „Świat”: poziom 1–3, „Najpierw zrób” – istniejące działy tej ścieżki ('przedmiot/dział'), bez odwołania do siebie
+      if (t.level != null && ![1, 2, 3].includes(t.level)) problems.push(`${track.id}/${s.id}/${t.id}: level musi być 1, 2 albo 3`);
+      for (const r of t.requires || []) {
+        const [rs, rt] = String(r).split('/');
+        const rsub = window.SUBJECTS.find((x) => x.id === rs);
+        if (!rsub || !rsub.topics.some((x) => x.id === rt)) problems.push(`${track.id}/${s.id}/${t.id}: requires – nie ma działu ${r}`);
+        else if (rs === s.id && rt === t.id) problems.push(`${track.id}/${s.id}/${t.id}: requires wskazuje na ten sam dział`);
+      }
       t.questions.forEach((q, i) => {
         n++;
         const where = `${track.id}/${s.id}/${t.id} pytanie ${i + 1} („${String(q.q).slice(0, 40)}”)`;

@@ -1,8 +1,8 @@
-/* Lekcje – 🌍 Świat, klasa 3. Klucz: 'swiat/<id działu>'. Format: docs/LEKCJE.md
- * Treści oparte na działach z js/dane/kl3/swiat.js (moduł poza podstawą, źródła w polu basis). Id markerów: a-k3sw-. */
+/* Lekcje – 🌍 Świat, liczenie po świecie. Klucz: 'liczenie/tabliczka-12'. Format: docs/LEKCJE.md
+ * Treści oparte na dziale z js/dane/swiat/liczenie.js (ścieżka poza podstawą, źródła w polu basis). */
 window.LESSONS = window.LESSONS || {};
 
-window.LESSONS['swiat/anglia-tabliczka'] = [
+window.LESSONS['liczenie/tabliczka-12'] = [
   {
     title: 'Dzieci w Anglii liczą do 12 × 12',
     svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Flaga Anglii. Dzieci w wieku 8–9 lat uczą się tabliczki mnożenia do 12 razy 12. Sprawdzian: 25 pytań, po 6 sekund na pytanie">
@@ -19,9 +19,9 @@ window.LESSONS['swiat/anglia-tabliczka'] = [
       <text x="295" y="136" class="tx-b" text-anchor="middle">⏱️ 25 pytań</text>
       <text x="295" y="166" class="tx-b" text-anchor="middle">po 6 sekund</text>
     </svg>`,
-    text: `<p>W Anglii dzieci w twoim wieku uczą się tabliczki mnożenia <b>aż do 12 × 12</b>.</p>
+    text: `<p>W Anglii dzieci w wieku 8–9 lat uczą się tabliczki mnożenia <b>aż do 12 × 12</b>.</p>
       <p>W czerwcu mają sprawdzian na komputerze: <b>25 pytań</b>, po <b>6 sekund</b> na każde.</p>
-      <p>Ty znasz już tabliczkę do 10 × 10. Nauczysz się sztuczek na <b>razy 11</b> i <b>razy 12</b>!</p>`,
+      <p>Znasz tabliczkę do 10 × 10? Nauczysz się sztuczek na <b>razy 11</b> i <b>razy 12</b>!</p>`,
     remember: 'Tabliczka w Anglii: aż do 12 × 12.',
     hook: '6 sekund to tyle, co powiedzieć: „raz, dwa, trzy, cztery, pięć, sześć”. ⏱️',
   },

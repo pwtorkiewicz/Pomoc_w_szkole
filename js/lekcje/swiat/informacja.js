@@ -1,12 +1,12 @@
-/* Lekcje – 🌍 Świat, klasa 8. Klucz: 'swiat/<id działu>'. Format: docs/LEKCJE.md
- * Treści oparte na działach z js/dane/kl8/swiat.js (moduł poza podstawą, źródła w polu basis). */
+/* Lekcje – 🌍 Świat, informacja i algorytmy. Klucz: 'informacja/bramki-logiczne'. Format: docs/LEKCJE.md
+ * Treści oparte na dziale z js/dane/swiat/informacja.js (ścieżka poza podstawą, źródła w polu basis). */
 window.LESSONS = window.LESSONS || {};
 
-window.LESSONS['swiat/anglia-logika'] = [
+window.LESSONS['informacja/bramki-logiczne'] = [
   {
     title: 'Prawda i fałsz, czyli 1 i 0',
     svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Flaga Anglii i napis: key stage 3, uczniowie w wieku 11–14 lat. Zdania i ich wartości: 5 większe od 3 – 1, prawda. 2 większe od 4 – 0, fałsz. 10 jest liczbą parzystą – 1, prawda">
-      <defs><marker id="a-k8sw-lg-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <defs><marker id="a-swi-1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
       <rect x="10" y="10" width="60" height="40" class="fl-w ln"/>
       <rect x="36" y="10" width="8" height="40" class="fl-r"/>
       <rect x="10" y="26" width="60" height="8" class="fl-r"/>
@@ -17,13 +17,13 @@ window.LESSONS['swiat/anglia-logika'] = [
       <rect x="10" y="112" width="270" height="34" rx="8" class="f1 s1"/>
       <rect x="10" y="156" width="270" height="34" rx="8" class="f1 s1"/>
       <g class="tx"><text x="24" y="91">5 &gt; 3</text><text x="24" y="135">2 &gt; 4</text><text x="24" y="179">10 jest liczbą parzystą</text></g>
-      <g class="ln"><path d="M284,85 L318,85" marker-end="url(#a-k8sw-lg-1)"/><path d="M284,129 L318,129" marker-end="url(#a-k8sw-lg-1)"/><path d="M284,173 L318,173" marker-end="url(#a-k8sw-lg-1)"/></g>
+      <g class="ln"><path d="M284,85 L318,85" marker-end="url(#a-swi-1)"/><path d="M284,129 L318,129" marker-end="url(#a-swi-1)"/><path d="M284,173 L318,173" marker-end="url(#a-swi-1)"/></g>
       <rect x="324" y="68" width="66" height="34" rx="8" class="f3 s3 sw"/>
       <rect x="324" y="112" width="66" height="34" rx="8" class="f2 s2 sw"/>
       <rect x="324" y="156" width="66" height="34" rx="8" class="f3 s3 sw"/>
       <g class="tx-b" text-anchor="middle"><text x="357" y="92">1</text><text x="357" y="136">0</text><text x="357" y="180">1</text></g>
     </svg>`,
-    text: `<p>W Anglii uczniowie w twoim wieku (key stage 3, 11–14 lat) uczą się na informatyce <b>logiki Boole’a</b> – działań na dwóch wartościach: <b>prawda</b> i <b>fałsz</b>.</p>
+    text: `<p>W Anglii uczniowie w wieku 11–14 lat (key stage 3) uczą się na informatyce <b>logiki Boole’a</b> – działań na dwóch wartościach: <b>prawda</b> i <b>fałsz</b>.</p>
       <p>Komputer zapisuje prawdę jako <b>1</b>, a fałsz jako <b>0</b>. Każde zdanie logiczne – np. „5 &gt; 3” – ma jedną z tych wartości.</p>`,
     remember: 'Prawda = 1, fałsz = 0. Logika Boole’a to działania na tych dwóch wartościach.',
     hook: 'Jak włącznik światła: włączone (1) albo wyłączone (0) – nic pomiędzy.',

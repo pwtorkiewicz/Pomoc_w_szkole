@@ -10,10 +10,11 @@ Aplikacja ma **ścieżki** (opis: `docs/SCIEZKI.md`), wybierane na ekranie start
 | `kl8` | `klasa8.html` | uczeń klasy 8 – wszystkie przedmioty | Dz.U. 2024 poz. 996 (stara) | `docs/PLAN-kl8.md` |
 | `kl4` | `klasa4.html` | uczeń klasy 4 – wszystkie przedmioty | **nowa: Dz.U. 2026 poz. 378** (zm. 2026 poz. 958) | `docs/PLAN-kl4.md` |
 | `kl3` | `klasa3.html` | uczeń klasy 3 – edukacja wczesnoszkolna | Dz.U. 2024 poz. 996 (stara, I etap) | `docs/PLAN-kl3.md` |
+| `swiat` | `swiat.html` | dzieci w każdym wieku – **nauka uzupełniająca** z programów innych krajów (przełącznik 🌍 Świat na ekranie wyboru) | **poza polską podstawą** – oficjalne programy innych krajów | `docs/PLAN-swiat.md` |
 
 **Edukacji zdrowotnej (także „zdrowie seksualne”), etyki i religii nie dodajemy w żadnej ścieżce** – decyzja rodzica (chodzi o te przedmioty). **Elementy związane z religią katolicką w innych przedmiotach wolno dodawać** (decyzja rodzica, 3.11.2026) – np. kolędy, pieśni i zwyczaje świąteczne w muzyce; fakty jak zawsze tylko ze sprawdzonych źródeł. Wyjątek (decyzja rodzica, 2.11.2026): w przyrodzie kl. 4 dodajemy tematy z podręcznika – czas przed ekranem, ochrona przed chorobami, szkodliwość dymu tytoniowego i alkoholu – ale **bez dojrzewania** (lekcji „Jak zmieniamy się w ciągu życia?” nie dodajemy).
 
-**Moduł „🌍 Świat – jak uczą się inni”** (decyzja rodzica, 14.11.2026; plan `docs/PLAN-swiat.md`): przedmiot `swiat` w ścieżkach `kl3`, `kl4`, `kl8` (nie w egzaminie) – tematy z oficjalnych programów nauczania innych krajów, głównie nauki ścisłe, technika, informatyka. To **jedyny wyjątek** od zasady „tylko podstawa obowiązująca klasę”: `basis` zaczyna się od „Poza polską podstawą programową – moduł „Świat” (decyzja rodzica)” i podaje zagraniczny dokument. Fakty o szkołach za granicą – tylko z dokumentów ministerstw; zadań nie kopiujemy.
+**Ścieżka „🌍 Świat – nauka z innych krajów”** (`swiat`; decyzja rodzica, 14.11.2026; plan `docs/PLAN-swiat.md`): tematy z oficjalnych programów nauczania innych krajów, głównie nauki ścisłe, technika, informatyka, sposób nauki. Działy **według tematów, nie klas**: `level` (1–3), `requires` („Najpierw zrób”), `where` („Gdzie się tego uczą”); kraj nie jest w nazwie działu. To **jedyna ścieżka poza polską podstawą**: `basis` zaczyna się od „Poza polską podstawą programową – ścieżka „Świat” (decyzja rodzica)” i podaje zagraniczny dokument. Fakty o szkołach za granicą – tylko z dokumentów ministerstw; zadań nie kopiujemy. Do ścieżek klas nie dodajemy materiału z innych krajów.
 
 Ścieżka egzaminacyjna jest dopracowana – utrzymuj ją i rozwijaj; zmiany w silniku nie mogą jej zepsuć (zawsze `node tools/przeglad.js egzamin8`).
 
@@ -26,15 +27,15 @@ Aplikacja ma **ścieżki** (opis: `docs/SCIEZKI.md`), wybierane na ekranie start
 ## Struktura
 
 ```
-index.html              – ekran wyboru ścieżki (js/wybor.js); dawne adresy #/s/… przekierowuje do egzamin.html
-egzamin.html, klasa3.html, klasa4.html, klasa8.html – strony ścieżek; kolejność <script> ma znaczenie
+index.html              – ekran wyboru ścieżki z przełącznikiem 🇵🇱 Polska szkoła / 🌍 Świat (js/wybor.js); dawne adresy #/s/… przekierowuje do egzamin.html
+egzamin.html, klasa3.html, klasa4.html, klasa8.html, swiat.html – strony ścieżek; kolejność <script> ma znaczenie
                           (sciezki.js → dane → lekcje → app.js); narzędzia biorą listę plików danych stąd
 js/sciezki.js           – lista ścieżek; storeKey = klucz zapisu postępu (NIGDY nie zmieniaj istniejącego)
 css/style.css           – wygląd; tokeny kolorów, tryb ciemny przez prefers-color-scheme
 js/app.js               – wspólny silnik: router (#/…), quiz, fiszki, lekcje, zapis postępu w localStorage, statystyki (#/postepy), synchronizacja (#/chmura)
 js/postep.js            – dziennik nauki, łączenie zapisów z kilku urządzeń (mergeState), prognoza, synchronizacja z arkuszem Google rodzica
 apps-script/Kod.js      – skrypt Google Apps Script wklejany przez rodzica do arkusza: zapisy urządzeń, raport tygodniowy (docs/CHMURA.md)
-js/dane/kl3|kl4|kl8/    – treści pozostałych ścieżek (ten sam format); js/lekcje/kl3|kl4|kl8/ – ich lekcje
+js/dane/kl3|kl4|kl8|swiat/ – treści pozostałych ścieżek (ten sam format); js/lekcje/kl3|kl4|kl8|swiat/ – ich lekcje
 js/dane/<przedmiot>.js  – (ścieżka egzaminacyjna) działy: theory (HTML ściągi), flashcards, questions, basis
 js/dane/cwiczenia-*.js  – zestawy „tekst/nagranie + zadania” (window.EXERCISES): czytanie (polski), reading, listening, środki (angielski)
 js/dane/zrodla.js       – strona „Źródła”: podstawy prawne, dokumenty, ograniczenia
@@ -44,7 +45,8 @@ docs/LEKCJE.md          – format i zasady pisania lekcji (obowiązkowa lektura
 docs/SCIEZKI.md         – ścieżki: budowa, zapis postępu, jak dodać treści
 docs/CHMURA.md          – postęp, statystyki, synchronizacja urządzeń, raport tygodniowy: pola zapisu i reguły łączenia
 docs/PLAN.md            – plan ścieżki egzaminacyjnej; docs/PLAN-kl3|kl4|kl8.md – plany ścieżek z analizą podstaw; odhaczaj wykonane punkty
-docs/PLAN-swiat.md     – moduł „Świat” (programy innych krajów): zasady, zrobione działy, pomysły
+docs/PLAN-swiat.md     – ścieżka „Świat” (programy innych krajów): zasady, wątki tematyczne, zrobione działy
+docs/research/          – research do ścieżki „Świat”: mapa tematów 11 krajów (reports/) i notatki źródłowe (research_notes/)
 docs/PLAN-infografiki.md – pilotaż infografik „🗺️ W pigułce” (zasady, wzory, działy pilotażowe)
 docs/podreczniki/       – podręczniki dzieci: dane ze stron redakcyjnych, spisy treści, przypisanie do działów (tylko tytuły – bez treści podręczników)
 tools/                  – sprawdzarka lekcji i zrzuty ekranu (Playwright)

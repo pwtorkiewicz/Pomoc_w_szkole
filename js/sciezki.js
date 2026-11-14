@@ -6,6 +6,8 @@
  * young: true – tryb dla młodszego ucznia (większe litery, przycisk 🔊 „Posłuchaj” przy pytaniach i lekcjach,
  *   quiz z 8 losowych pytań działu, gwiazdki zamiast procentów, bez sprawdzianu z całego przedmiotu).
  * speak: true – same przyciski 🔊 (bez reszty trybu young).
+ * deviceYoung: true – tryb young włącza się przełącznikiem na danym urządzeniu (ścieżka „Świat” dla dzieci w różnym wieku).
+ * group – grupa na ekranie wyboru (window.TRACK_GROUPS; domyślnie pierwsza: polska szkoła).
  * UWAGA: nie zmieniaj storeKey istniejącej ścieżki – uczeń straciłby zapisany postęp. */
 window.TRACKS = [
   {
@@ -13,7 +15,7 @@ window.TRACKS = [
     page: 'klasa3.html',
     icon: '🧸',
     name: 'Klasa 3',
-    about: 'Edukacja wczesnoszkolna: polski, matematyka, angielski, przyroda, edukacja społeczna i informatyczna, a do tego plastyka, muzyka, technika i WF – lekcje z obrazkami, quizy z gwiazdkami, dyktanda (także słówek po angielsku), czytanie i słuchanie po angielsku, zegar, monety i kalendarz. Pytania można odsłuchać. Do tego 🌍 Świat – czego uczą się dzieci w innych krajach.',
+    about: 'Edukacja wczesnoszkolna: polski, matematyka, angielski, przyroda, edukacja społeczna i informatyczna, a do tego plastyka, muzyka, technika i WF – lekcje z obrazkami, quizy z gwiazdkami, dyktanda (także słówek po angielsku), czytanie i słuchanie po angielsku, zegar, monety i kalendarz. Pytania można odsłuchać.',
     storeKey: 'pomoc_kl3_v1',
     color: '#e0803a',
     young: true,
@@ -24,7 +26,7 @@ window.TRACKS = [
     page: 'klasa4.html',
     icon: '🎨',
     name: 'Klasa 4',
-    about: 'Wszystkie przedmioty według nowej podstawy programowej – lekcje, ściągi, fiszki i quizy (w matematyce i polskim także zadania otwarte, w polskim i angielskim – ćwiczenia z czytania i słuchania): polski, matematyka, angielski, przyroda, historia, informatyka, technika, muzyka, plastyka i WF. Do tego 🌍 Świat – czego uczą się dzieci w innych krajach.',
+    about: 'Wszystkie przedmioty według nowej podstawy programowej – lekcje, ściągi, fiszki i quizy (w matematyce i polskim także zadania otwarte, w polskim i angielskim – ćwiczenia z czytania i słuchania): polski, matematyka, angielski, przyroda, historia, informatyka, technika, muzyka, plastyka i WF.',
     storeKey: 'pomoc_kl4_v1',
     color: '#2e9e6b',
   },
@@ -33,7 +35,7 @@ window.TRACKS = [
     page: 'klasa8.html',
     icon: '🔬',
     name: 'Klasa 8',
-    about: 'Bieżąca nauka w klasie 8: fizyka, chemia, biologia, geografia, historia, WOS, EDB, informatyka, niemiecki (drugi język) i symetrie z matematyki – lekcje, ściągi, fiszki, quizy i zadania otwarte. Polski, matematyka i angielski prowadzą do ścieżki egzaminacyjnej. Do tego 🌍 Świat – czego uczą się rówieśnicy w innych krajach.',
+    about: 'Bieżąca nauka w klasie 8: fizyka, chemia, biologia, geografia, historia, WOS, EDB, informatyka, niemiecki (drugi język) i symetrie z matematyki – lekcje, ściągi, fiszki, quizy i zadania otwarte. Polski, matematyka i angielski prowadzą do ścieżki egzaminacyjnej.',
     storeKey: 'pomoc_kl8_v1',
     color: '#8e5bd0',
     intro: 'Wybierz przedmiot. W każdym dziale masz <b>lekcję</b>, <b>ściągę</b>, <b>fiszki</b> i <b>quiz</b>, a w części działów – <b>zadania otwarte</b> z obliczeniami. Błędne odpowiedzi trafią do powtórki. Polski, matematyka i angielski otwierają się w ścieżce egzaminacyjnej (ta sama podstawa programowa).',
@@ -49,6 +51,23 @@ window.TRACKS = [
     exam: true,
     intro: 'Wybierz przedmiot. W każdym dziale znajdziesz <b>ściągę</b>, <b>fiszki</b> i <b>quiz</b>. Pytania, na które odpowiesz źle, trafią do powtórki. Są też ćwiczenia jak na egzaminie: <b>zadania otwarte</b>, <b>czytanie ze zrozumieniem</b>, a w angielskim <b>reading</b>, <b>listening</b> i <b>środki językowe</b>.',
   },
+  {
+    id: 'swiat',
+    page: 'swiat.html',
+    icon: '🌍',
+    name: 'Świat – nauka z innych krajów',
+    about: 'Nauka uzupełniająca dla dzieci w każdym wieku: czego uczą się rówieśnicy w innych krajach z nauk ścisłych, techniki i informatyki, a czego nie ma w polskiej szkole. Działy są ułożone według tematów, od podstaw do trudniejszych.',
+    storeKey: 'pomoc_swiat_v1',
+    color: '#1f8fb3',
+    group: 'swiat',
+    deviceYoung: true,
+    intro: 'Wybierz temat. Działy idą od najłatwiejszych (🌱) do trudniejszych (🌳). W każdym zobaczysz, <b>gdzie na świecie się tego uczą</b> i co warto zrobić <b>wcześniej</b> (📌).',
+  },
+];
+// Grupy ścieżek – przełącznik na ekranie wyboru (js/wybor.js).
+window.TRACK_GROUPS = [
+  { id: 'pl', name: '🇵🇱 Polska szkoła', about: 'Nauka według polskiej podstawy programowej: klasy i egzamin ósmoklasisty.' },
+  { id: 'swiat', name: '🌍 Świat', about: 'Nauka uzupełniająca: tematy z programów nauczania innych krajów, których nie ma w polskiej szkole – ułożone według tematów, nie klas.' },
 ];
 // Klucz w localStorage z ostatnio wybraną ścieżką (podświetlana na ekranie wyboru).
 window.TRACK_LAST_KEY = 'pomoc_sciezka';

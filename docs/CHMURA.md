@@ -87,6 +87,7 @@ Klucze `storeKey` ścieżek się nie zmieniły, a stare zapisy działają dalej.
   - przyciskiem „Synchronizuj teraz”.
 - Żądanie zawiera też `keys`: listę klas przypisanych dziecku na urządzeniu. Skrypt usuwa z zapisu tego urządzenia klasy spoza listy, czyli przestawione na „tylko to urządzenie”, więc znikają one też z raportu.
 - „Wyślij raport teraz” wymienia dzieci, dla których nie było danych.
+- **Nowa ścieżka** (np. „🌍 Świat”) na urządzeniu połączonym wcześniej jest „tylko na tym urządzeniu”, dopóki rodzic nie wybierze dziecka przy tej ścieżce na stronie `#/chmura`. Przełącznik „Tryb dla młodszego ucznia” ścieżki „Świat” (`pomoc_mlodszy_swiat`) jest ustawieniem urządzenia – nie trafia do zapisu postępu ani do chmury.
 - W arkuszu jeden wiersz karty `_dane` to jedno urządzenie jednego dziecka. Dane są w kawałkach po 30 000 znaków z przedrostkiem `x`, żeby arkusz nie zamieniał ich na liczby ani formuły.
 
 ### Czego nie dało się sprawdzić

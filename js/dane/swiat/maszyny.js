@@ -1,23 +1,24 @@
-/* 🌍 Świat – jak uczą się w innych krajach – klasa 4.
- * Moduł POZA polską podstawą programową (decyzja rodzica, 14.11.2026; plan: docs/PLAN-swiat.md).
- * Każdy dział: temat z oficjalnego programu nauczania innego kraju, opisany po polsku, na poziomie ucznia kl. 4.
- * Fakty o szkołach za granicą – tylko z dokumentów ministerstw; fakty z fizyki i techniki – z e-materiałów zpe.gov.pl
- * (adresy w polu basis i w js/dane/kl4/zrodla.js). */
+/* 🌍 Świat – nauka z innych krajów: maszyny i konstrukcje.
+ * Ścieżka POZA polską podstawą programową (decyzja rodzica, 14.11.2026; plan: docs/PLAN-swiat.md).
+ * Działy ułożone według tematów, nie klas: level (1–3), requires ('przedmiot/dział'), where – gdzie się tego uczą.
+ * Fakty o szkołach za granicą – tylko z dokumentów ministerstw (adresy w polu basis i w js/dane/swiat/zrodla.js). */
 (function () {
   const DT = 'National curriculum in England: design and technology programmes of study, key stages 1 and 2 (Department for Education, wrzesień 2013, gov.uk – obowiązujący, sprawdzone 14.11.2026)';
   const TF = ['Prawda', 'Fałsz'];
 
   window.SUBJECTS.push({
-    id: 'swiat',
-    name: 'Świat – jak uczą się inni',
-    icon: '🌍',
-    color: '#1f8fb3',
+    id: 'maszyny',
+    name: 'Maszyny i konstrukcje',
+    icon: '⚙️',
+    color: '#2e9e6b',
     topics: [
       // ------------------------------------------------------------------
       {
-        id: 'anglia-mechanizmy',
-        name: 'Anglia: mechanizmy – dźwignia, krążek, koła zębate, krzywka',
-        basis: `Poza polską podstawą programową – moduł „Świat” (decyzja rodzica). Źródło: ${DT}, key stage 2, „Technical knowledge”: „understand and use mechanical systems in their products [for example, gears, pulleys, cams, levers and linkages]”. Key stage 2 = uczniowie w wieku 7–11 lat (Year 3–6), design and technology – przedmiot obowiązkowy w szkole podstawowej: strony gov.uk „The national curriculum” (overview, key stage 1 and 2), sprawdzone 14.11.2026. Fakty o mechanizmach sprawdzone 14.11.2026 w e-materiałach zpe.gov.pl: „Maszyny proste. Wyznaczanie masy ciała przy użyciu dźwigni dwustronnej” (dźwignia jednostronna i dwustronna, punkt podparcia, ramię siły, „mała siła może zrównoważyć dużą siłę, jeśli ma odpowiednio duże ramię”, mniejsza siła – dłuższa droga, taczki jako dźwignia jednostronna, blok nieruchomy: nie zmienia wartości siły, zmienia jej kierunek) oraz „Podstawy budowy maszyn i urządzeń do obróbki metali i tworzyw sztucznych” (przekładnia zębata: stosunek prędkości obrotowych równy ilorazowi liczby zębów, zmniejszenie prędkości – wzrost momentu; mechanizm krzywkowy: krzywka na wałku popycha popychacz, ruch powtarza się co obrót) i „Słownik pojęć” do e-materiału o montażu (koła zębate zmieniają prędkość i kierunek obrotu). Przeciwny kierunek obrotu dwóch zazębionych kół – wynika z zazębienia (rysunek w lekcji). Linkages (połączenia dźwigni) pominięto.`,
+        id: 'mechanizmy',
+        name: 'Mechanizmy: dźwignia, krążek, koła zębate, krzywka',
+        level: 2,
+        where: 'Anglia – design and technology, key stage 2 (dzieci 7–11 lat): mechanizmy w projektowanych zabawkach i urządzeniach',
+        basis: `Poza polską podstawą programową – ścieżka „Świat” (decyzja rodzica). Źródło: ${DT}, key stage 2, „Technical knowledge”: „understand and use mechanical systems in their products [for example, gears, pulleys, cams, levers and linkages]”. Key stage 2 = uczniowie w wieku 7–11 lat (Year 3–6), design and technology – przedmiot obowiązkowy w szkole podstawowej: strony gov.uk „The national curriculum” (overview, key stage 1 and 2), sprawdzone 14.11.2026. Fakty o mechanizmach sprawdzone 14.11.2026 w e-materiałach zpe.gov.pl: „Maszyny proste. Wyznaczanie masy ciała przy użyciu dźwigni dwustronnej” (dźwignia jednostronna i dwustronna, punkt podparcia, ramię siły, „mała siła może zrównoważyć dużą siłę, jeśli ma odpowiednio duże ramię”, mniejsza siła – dłuższa droga, taczki jako dźwignia jednostronna, blok nieruchomy: nie zmienia wartości siły, zmienia jej kierunek) oraz „Podstawy budowy maszyn i urządzeń do obróbki metali i tworzyw sztucznych” (przekładnia zębata: stosunek prędkości obrotowych równy ilorazowi liczby zębów, zmniejszenie prędkości – wzrost momentu; mechanizm krzywkowy: krzywka na wałku popycha popychacz, ruch powtarza się co obrót) i „Słownik pojęć” do e-materiału o montażu (koła zębate zmieniają prędkość i kierunek obrotu). Przeciwny kierunek obrotu dwóch zazębionych kół – wynika z zazębienia (rysunek w lekcji). Linkages (połączenia dźwigni) pominięto.`,
         theory: `
           <h3>Jak to jest w Anglii?</h3>
           <p>W angielskiej szkole podstawowej jest przedmiot <b>design and technology</b> („projektowanie i technika”). Dzieci w wieku 7–11 lat projektują i budują różne rzeczy, np. zabawki. Program mówi, że mają poznać i używać w nich <b>mechanizmów</b>: kół zębatych, krążków, krzywek i dźwigni.</p>
@@ -78,7 +79,7 @@
           { id: 'eo9aj9', q: 'Co robi krzywka na obracającym się wałku?', options: ['zamienia obrót w ruch w górę i w dół', 'zmienia kierunek siły, z jaką ciągniesz linę', 'zmniejsza potrzebną siłę, tak jak dźwignia', 'zatrzymuje wałek po jednym pełnym obrocie'], answer: 0, explain: 'Krzywka ma nieokrągły kształt. Gdy się obraca, popycha popychacz w górę i w dół.' },
           { id: 'qv2ps5', q: 'Ile razy popychacz podniesie się i opadnie, gdy krzywka w kształcie jajka zrobi 3 pełne obroty?', options: ['3 razy', '1 raz', '6 razy', 'ani razu'], answer: 0, explain: 'Ruch popychacza powtarza się przy każdym pełnym obrocie krzywki-jajka: 3 obroty – 3 razy w górę i w dół.' },
           { id: 'nx8ln9', q: 'Co to jest mechanizm?', options: ['część maszyny, która zmienia ruch albo siłę', 'każdy przedmiot zrobiony z metalu lub drewna', 'rysunek maszyny narysowany na kartce papieru', 'silnik elektryczny, który napędza zabawkę'], answer: 0, explain: 'Mechanizm zmienia ruch albo siłę, np. obrót w ruch w górę i w dół (krzywka) albo dużą siłę w małą (dźwignia).' },
-          { id: 'bn40f0', q: 'W wieku ilu lat dzieci w Anglii są na etapie key stage 2 – tym, na którym poznają mechanizmy na lekcjach techniki?', options: ['7–11 lat', '3–5 lat', '11–14 lat', '14–16 lat'], answer: 0, explain: 'Key stage 2 to Year 3–6, czyli dzieci w wieku 7–11 lat – mniej więcej tyle, ile ty.' },
+          { id: 'bn40f0', q: 'W wieku ilu lat dzieci w Anglii są na etapie key stage 2 – tym, na którym poznają mechanizmy na lekcjach techniki?', options: ['7–11 lat', '3–5 lat', '11–14 lat', '14–16 lat'], answer: 0, explain: 'Key stage 2 to Year 3–6, czyli dzieci w wieku 7–11 lat.' },
         ],
       },
     ],

@@ -8,10 +8,11 @@ Aplikacja ma kilka **ścieżek** – każda dla innej klasy albo celu. Uczeń wy
 | `kl4` | `klasa4.html` | uczeń klasy 4 (9–10 lat) | `js/dane/kl4/`, `js/lekcje/kl4/` |
 | `kl8` | `klasa8.html` | uczeń klasy 8 – bieżąca nauka wszystkich przedmiotów | `js/dane/kl8/`, `js/lekcje/kl8/` |
 | `egzamin8` | `egzamin.html` | ósmoklasista przed egzaminem (polski, matematyka, angielski) | `js/dane/*.js`, `js/lekcje/*.js` (bez podkatalogów) |
+| `swiat` | `swiat.html` | dzieci w każdym wieku – nauka uzupełniająca z programów innych krajów (grupa 🌍 Świat) | `js/dane/swiat/`, `js/lekcje/swiat/` |
 
 ## Jak to działa
 
-- `js/sciezki.js` – lista ścieżek: `id`, `page`, `name`, `icon`, `about`, `color`, `storeKey`, opcjonalnie `exam` (nazewnictwo egzaminacyjne: „Test próbny”, „Ćwiczenia jak na egzaminie”), `intro` (tekst na stronie głównej ścieżki), `soon` (znaczek „w przygotowaniu” na ekranie wyboru), `young` (tryb dla młodszego ucznia – niżej), `speak` (same przyciski 🔊 bez reszty trybu `young`).
+- `js/sciezki.js` – lista ścieżek: `id`, `page`, `name`, `icon`, `about`, `color`, `storeKey`, opcjonalnie `exam` (nazewnictwo egzaminacyjne: „Test próbny”, „Ćwiczenia jak na egzaminie”), `intro` (tekst na stronie głównej ścieżki), `soon` (znaczek „w przygotowaniu” na ekranie wyboru), `young` (tryb dla młodszego ucznia – niżej), `speak` (same przyciski 🔊 bez reszty trybu `young`), `deviceYoung` (tryb `young` włączany przyciskiem na danym urządzeniu – ścieżka „Świat”), `group` (grupa na ekranie wyboru: `window.TRACK_GROUPS`, przełącznik 🇵🇱 Polska szkoła / 🌍 Świat; bez pola – pierwsza grupa).
 - **Tryb dla młodszego ucznia** (`young: true`, klasa 3): większe litery i przyciski; przycisk 🔊 „Posłuchaj” (synteza mowy przeglądarki) przy pytaniach, wyjaśnieniach, krokach lekcji, ściądze i fiszkach oraz przełącznik „Czytanie na głos” na stronie głównej ścieżki (wszystko czyta się samo); quiz w dziale to 8 losowych pytań; zamiast procentów – gwiazdki ★★★ (liczone z zapisanego wyniku w %); bez sprawdzianu z całego przedmiotu. Pola treści do czytania na głos – README („Czytanie na głos”).
 - Strona ścieżki ma `<body data-track="id">` i wczytuje **tylko swoje** pliki: najpierw `js/sciezki.js`, potem dane (`js/dane/…`), źródła, lekcje, na końcu `js/postep.js` i `js/app.js`. Kolejność `<script>` ma znaczenie.
 - **Zapis postępu**: `localStorage[storeKey]`. Ścieżka egzaminacyjna zachowuje dawny klucz `pomoc8_v2`. **Nie zmieniaj `storeKey` istniejącej ścieżki** – uczeń straciłby wyniki. Dziennik nauki, statystyki (`#/postepy`) i synchronizacja urządzeń przez arkusz Google rodzica (`#/chmura`) – `docs/CHMURA.md`; nowe pola stanu łączą się według reguł z `js/postep.js` (`mergeState`). Ostatnio wybrana ścieżka (`pomoc_sciezka`) jest tylko podświetlana na ekranie wyboru – bez automatycznego przekierowania, bo z jednego urządzenia mogą korzystać dzieci z różnych klas.
@@ -39,9 +40,9 @@ Ton i forma:
 - **Klasa 4** – proste wyjaśnienia, przykłady z życia, każdy nowy termin wyjaśniony.
 - **Klasa 8** i **egzamin** – „na ty”, krótko, przyjaźnie i nowocześnie, bez infantylizmu.
 
-## Moduł „🌍 Świat” (poza podstawą)
+## Ścieżka „🌍 Świat” (poza podstawą)
 
-Ścieżki `kl3`, `kl4` i `kl8` mają przedmiot `swiat` (pliki `js/dane/<ścieżka>/swiat.js` i `js/lekcje/<ścieżka>/swiat.js`): tematy z oficjalnych programów nauczania innych krajów, opisane po polsku na poziomie klasy. To wyjątek od zasady „tylko podstawa obowiązująca klasę” – decyzja rodzica (14.11.2026). Zasady i lista działów: `docs/PLAN-swiat.md`; źródła – w sekcji „🌍 Świat” na stronie `#/zrodla` każdej z tych ścieżek.
+Osobna ścieżka `swiat` (grupa 🌍 Świat na ekranie wyboru): tematy z oficjalnych programów nauczania innych krajów, **według tematów, nie klas** – przedmioty to wątki (np. „Maszyny i konstrukcje”), działy idą od podstaw do trudniejszych. Dodatkowe pola działu: `level` (1–3: 🌱 🌿 🌳), `requires` (lista `'przedmiot/dział'` – „📌 Najpierw zrób”, nic nie blokuje) i `where` („🌍 Gdzie się tego uczą”). Tryb dla młodszego ucznia włącza się na urządzeniu (`deviceYoung`). To wyjątek od zasady „tylko podstawa obowiązująca klasę” – decyzja rodzica (14.11.2026). Zasady i plan: `docs/PLAN-swiat.md`; research: `docs/research/reports/Mapa tematów z programów świata.md`.
 
 ## Kolejność działów a podręczniki
 

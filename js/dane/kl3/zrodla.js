@@ -41,11 +41,5 @@ window.SOURCES = {
       <li>Dyktanda czyta syntezator mowy. W przeglądarce bez syntezatora rodzic może przeczytać tekst z listy „Dla rodzica”. W dyktandach z pojedynczymi wyrazami liczy się pisownia ó/u, rz/ż, ch/h (wielkość pierwszej litery nie ma znaczenia), w dyktandzie zdań – także wielkie litery.</li>
       <li><b>Angielski – czytanie, słuchanie i dyktando słówek:</b> teksty, nagrania i zdania napisano do aplikacji, tylko ze słów z działów angielskiego tej ścieżki; czyta je angielski głos syntezatora, wolniej niż w starszych klasach (podstawa: „wypowiedzi artykułowane wyraźnie i powoli”, X.2). Tekst do czytania też można odsłuchać przyciskiem 🔊 – podstawa mówi o tekście „wspieranym obrazem lub dźwiękiem” (X.3.1); najlepiej najpierw spróbować przeczytać samemu. W dyktandzie słówek liczy się każda litera; rzeczowniki można wpisać z <i>a</i> / <i>an</i> lub bez, pierwsza litera może być mała albo wielka. W dyktandzie zdań zdanie trzeba zacząć wielką literą, a <i>I</i> (ja) pisać zawsze wielką literą.</li>
     </ul>
-    <p>Treści warto skonsultować z nauczycielem – zwłaszcza kolejność działów i zakres materiału w danym momencie roku.</p>
-
-    <h3>🌍 Świat – jak uczą się inni (poza podstawą)</h3>
-    <p>Przedmiot „Świat” <b>nie należy do polskiej podstawy programowej</b>. Dodano go z decyzji rodzica (14 listopada 2026 r.), żeby dzieci poznały, czego uczą się ich rówieśnicy w innych krajach – przede wszystkim z nauk ścisłych, techniki i informatyki. Każdy dział opisuje temat z <b>oficjalnego programu nauczania innego kraju</b>, po polsku i na poziomie tej klasy. Fakty o szkołach za granicą pochodzą tylko z dokumentów ministerstw; zadania i przykłady napisano do aplikacji. Plan modułu: docs/PLAN-swiat.md w repozytorium.</p>
-    <ul>
-      <li><b>Anglia: tabliczka mnożenia do 12 × 12</b> – National curriculum in England: mathematics programmes of study, key stages 1 and 2 (Department for Education, 2013), Year 4: assets.publishing.service.gov.uk (PRIMARY_national_curriculum_-_Mathematics.pdf); ulotka „Multiplication tables check: information for parents” (Standards and Testing Agency, 2025): gov.uk/government/publications/multiplication-tables-check-information-for-parents; wiek dzieci w poszczególnych latach nauki: gov.uk/national-curriculum. Sprawdzone 14.11.2026. Tuzin – Słownik języka polskiego PWN (sjp.pwn.pl).</li>
-    </ul>`,
+    <p>Treści warto skonsultować z nauczycielem – zwłaszcza kolejność działów i zakres materiału w danym momencie roku.</p>`,
 };

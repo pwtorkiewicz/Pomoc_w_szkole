@@ -22,7 +22,12 @@
   const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
   // Tryb dla młodszego ucznia (ścieżka z young: true – klasa 3): większa czcionka, krótkie quizy
   // (losowe pytania z działu), gwiazdki zamiast procentów, bez sprawdzianu z całego przedmiotu.
-  const YOUNG = !!TRACK.young;
+  // deviceYoung: true – tryb młodszego ucznia włącza się na danym urządzeniu (ścieżka „Świat”: tablet trzecioklasisty
+  // z lektorem i gwiazdkami, telefon ósmoklasisty bez). Ustawienie jest tylko w tej przeglądarce, nie w zapisie postępu.
+  const YOUNG_KEY = 'pomoc_mlodszy_' + TRACK.id;
+  let deviceYoung = false;
+  if (TRACK.deviceYoung) { try { deviceYoung = localStorage.getItem(YOUNG_KEY) === '1'; } catch (e) { /* brak dostępu */ } }
+  const YOUNG = !!TRACK.young || deviceYoung;
   if (YOUNG) document.body.classList.add('young');
   const QUIZ_SIZE = YOUNG ? 8 : 0; // 0 – wszystkie pytania działu
   const synth = window.speechSynthesis || null;
@@ -126,6 +131,15 @@
   // Działy „na zapas” (extra: true) – spoza podręcznika klasy; nie liczą się do postępu przedmiotu ani testu próbnego.
   const coreTopics = (s) => s.topics.filter((t) => !t.extra);
   const EXTRA_NOTE = 'Tych działów nie ma w podręczniku tej klasy – to materiał z dalszych klas, na zapas. Nie liczą się do postępu ani do testu próbnego.';
+  // Ścieżka „Świat” (działy według tematów, nie klas): level – poziom trudności, requires – działy, które warto zrobić
+  // wcześniej ('przedmiot/dział' w tej samej ścieżce), where – gdzie na świecie uczą się tego tematu.
+  const LEVELS = { 1: '🌱 Poziom 1 – na start', 2: '🌿 Poziom 2 – średni', 3: '🌳 Poziom 3 – trudniejszy' };
+  const findTopic = (key) => {
+    const [sid, tid] = String(key).split('/');
+    const s = findSubject(sid);
+    const t = s && s.topics.find((x) => x.id === tid);
+    return t ? { s, t } : null;
+  };
   const badgeClass = (p) => (p == null ? '' : p >= 80 ? 'good' : p >= 50 ? 'mid' : 'low');
   const bar = (p, label = true) =>
     `<div class="bar"><span style="width:${p}%"></span></div>${label ? `<small class="muted">${p}% opanowane</small>` : ''}`;
@@ -386,6 +400,8 @@
         <p>${TRACK.intro || 'Wybierz przedmiot. W każdym dziale znajdziesz <b>ściągę</b>, <b>fiszki</b> i <b>quiz</b>. Pytania, na które odpowiesz źle, trafią do powtórki.'}</p>
         ${SPEAK ? `<button class="btn" id="auto" aria-pressed="${state.autoSpeak ? 'true' : 'false'}">🔊 Czytanie na głos: <b>${state.autoSpeak ? 'włączone' : 'wyłączone'}</b></button>
           <small class="muted">${state.autoSpeak ? 'Pytania i lekcje czytają się same.' : 'Włącz, a pytania i lekcje będą się czytać same. Przycisk 🔊 przy pytaniu działa zawsze.'}</small>` : ''}
+        ${TRACK.deviceYoung ? `<p><button class="btn" id="young" aria-pressed="${YOUNG ? 'true' : 'false'}">🧸 Tryb dla młodszego ucznia: <b>${YOUNG ? 'włączony' : 'wyłączony'}</b></button>
+          <small class="muted">${YOUNG ? 'Większe litery, lektor 🔊, krótkie quizy i gwiazdki.' : 'Dla dzieci z klas 1–3: większe litery, lektor 🔊, krótkie quizy i gwiazdki.'} Ustawienie dotyczy tylko tego urządzenia.</small></p>` : ''}
       </section>
       <div class="grid">
         ${SUBJECTS.map((s) => s.link ? `
@@ -398,7 +414,7 @@
           <a class="card" href="#/s/${s.id}" style="--accent:${s.color}">
             <span class="icon">${s.icon}</span>
             <h2>${esc(s.name)}</h2>
-            <p>${s.topics.length} działów${YOUNG ? '' : ` · ${s.topics.reduce((n, t) => n + t.questions.length, 0)} pytań`}</p>
+            <p>${s.topics.length} ${plural(s.topics.length, ['dział', 'działy', 'działów'])}${YOUNG ? '' : ` · ${s.topics.reduce((n, t) => n + t.questions.length, 0)} pytań`}</p>
             ${progress(s)}
           </a>`).join('')}
       </div>
@@ -410,10 +426,15 @@
       </a>` : ''}
       <p class="muted" style="margin-top:22px">
         <a href="#/zrodla">📋 Na jakiej podstawie przygotowano materiał</a> ·
-        <a href="index.html">🔀 Zmień klasę</a> ·
+        <a href="index.html">🔀 ${TRACK.group ? 'Zmień ścieżkę' : 'Zmień klasę'}</a> ·
         ${P ? `<a href="#/chmura">☁️ Synchronizacja${P.cloud.codeOf(TRACK.id) ? ' ✓' : ''}</a> ·` : ''}
         <a href="#/" id="reset">Wyzeruj postęp</a>
       </p>`;
+    const yBtn = document.getElementById('young');
+    if (yBtn) yBtn.onclick = () => {
+      try { if (YOUNG) localStorage.removeItem(YOUNG_KEY); else localStorage.setItem(YOUNG_KEY, '1'); } catch (e) { /* brak dostępu */ }
+      location.reload();
+    };
     const auto = document.getElementById('auto');
     if (auto) auto.onclick = () => {
       state.autoSpeak = !state.autoSpeak;
@@ -469,11 +490,19 @@
         ${list.map((t) => {
           const b = state.best[topicKey(s, t)];
           return `<li><a href="#/s/${s.id}/t/${t.id}">
-            <span>${state.lessons[topicKey(s, t)] ? '🎓 ' : ''}${esc(t.name)}${t.chapter ? `<br><small class="muted">📘 ${esc(t.chapter)}</small>` : ''}</span>
+            <span>${state.lessons[topicKey(s, t)] ? '🎓 ' : ''}${esc(t.name)}${t.chapter ? `<br><small class="muted">📘 ${esc(t.chapter)}</small>` : ''}${t.level ? `<br><small class="muted">${LEVELS[t.level]}</small>` : ''}</span>
             <span class="badge ${badgeClass(b)}">${scoreBadge(b)}</span>
           </a></li>`;
         }).join('')}
       </ul>`;
+  }
+
+  // „Najpierw zrób”: działy, które warto przerobić wcześniej (✅ – już przerobiony)
+  function requiresHtml(t) {
+    const list = (t.requires || []).map(findTopic).filter(Boolean);
+    if (!list.length) return '';
+    return `<p class="basis">📌 <b>Najpierw zrób:</b> ${list.map(({ s, t: r }) =>
+      `<a href="#/s/${s.id}/t/${r.id}">${esc(r.name)}</a>${topicValue(s, r) >= 0.999 ? ' ✅' : ''}`).join(', ')}</p>`;
   }
 
   function topic(s, t, tab) {
@@ -491,6 +520,9 @@
       <h1>${esc(t.name)}</h1>
       ${t.chapter ? `<p class="muted">📘 ${s.book ? `${esc(s.book)}: ` : ''}${esc(t.chapter)}</p>` : ''}
       ${t.extra ? `<p class="muted">📦 Na zapas – tego działu nie ma w podręczniku tej klasy.</p>` : ''}
+      ${t.level ? `<p class="muted">${LEVELS[t.level]}</p>` : ''}
+      ${requiresHtml(t)}
+      ${t.where ? `<p class="basis">🌍 <b>Gdzie się tego uczą:</b> ${esc(t.where)}</p>` : ''}
       <nav class="tabs">
         ${lesson ? `<a href="${base}/lekcja" class="${tab === 'lekcja' ? 'on' : ''}">🎓 Lekcja</a>` : ''}
         <a href="${base}/teoria" class="${tab === 'teoria' ? 'on' : ''}">📖 Ściąga</a>

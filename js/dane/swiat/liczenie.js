@@ -1,24 +1,26 @@
-/* 🌍 Świat – jak uczą się w innych krajach – klasa 3.
- * Moduł POZA polską podstawą programową (decyzja rodzica, 14.11.2026; plan: docs/PLAN-swiat.md).
- * Każdy dział: temat z oficjalnego programu nauczania innego kraju, opisany po polsku, na poziomie ucznia kl. 3.
- * Fakty o szkołach za granicą – tylko z dokumentów ministerstw (adresy w polu basis i w js/dane/kl3/zrodla.js). */
+/* 🌍 Świat – nauka z innych krajów: liczenie po świecie.
+ * Ścieżka POZA polską podstawą programową (decyzja rodzica, 14.11.2026; plan: docs/PLAN-swiat.md).
+ * Działy ułożone według tematów, nie klas: level (1–3), requires ('przedmiot/dział'), where – gdzie się tego uczą.
+ * Fakty o szkołach za granicą – tylko z dokumentów ministerstw (adresy w polu basis i w js/dane/swiat/zrodla.js). */
 (function () {
   const TF = ['Prawda', 'Fałsz'];
 
   window.SUBJECTS.push({
-    id: 'swiat',
-    name: 'Świat – jak uczą się inni',
-    icon: '🌍',
-    color: '#1f8fb3',
+    id: 'liczenie',
+    name: 'Liczenie po świecie',
+    icon: '🔢',
+    color: '#d0662f',
     topics: [
       // ------------------------------------------------------------------
       {
-        id: 'anglia-tabliczka',
-        name: 'Anglia: tabliczka mnożenia do 12 × 12',
-        basis: 'Poza polską podstawą programową – moduł „Świat” (decyzja rodzica). Źródła (gov.uk, sprawdzone 14.11.2026): National curriculum in England: mathematics programmes of study, key stages 1 and 2 (Department for Education, 2013) – Year 4: „recall multiplication and division facts for multiplication tables up to 12 × 12”, „By the end of year 4, pupils should have memorised their multiplication tables up to and including the 12 multiplication table”, przykład rozdzielności „39 × 7 = 30 × 7 + 9 × 7”; ulotka „Multiplication tables check: information for parents” (Standards and Testing Agency, 2025) – sprawdzian w Year 4 w czerwcu, na ekranie, 25 pytań, 6 sekund na pytanie, 3 pytania na próbę, nie ma progu zaliczenia; Year 4 = dzieci w wieku 8–9 lat (strona „The national curriculum”). W polskiej podstawie klasy 1–3 (Dz.U. 2024 poz. 996): tabliczka mnożenia w zakresie 100 i mnożenie przez 10 liczb mniejszych od 20 – dział rozszerza to o mnożenie przez 11 i 12. Tuzin – „dwanaście sztuk czegoś” (Słownik języka polskiego PWN, sjp.pwn.pl). Wszystkie wyniki policzone dwukrotnie.',
+        id: 'tabliczka-12',
+        name: 'Tabliczka mnożenia do 12 × 12',
+        level: 1,
+        where: 'Anglia – Year 4 (dzieci 8–9 lat): tabliczka do 12 × 12 na pamięć i sprawdzian na komputerze',
+        basis: 'Poza polską podstawą programową – ścieżka „Świat” (decyzja rodzica). Źródła (gov.uk, sprawdzone 14.11.2026): National curriculum in England: mathematics programmes of study, key stages 1 and 2 (Department for Education, 2013) – Year 4: „recall multiplication and division facts for multiplication tables up to 12 × 12”, „By the end of year 4, pupils should have memorised their multiplication tables up to and including the 12 multiplication table”, przykład rozdzielności „39 × 7 = 30 × 7 + 9 × 7”; ulotka „Multiplication tables check: information for parents” (Standards and Testing Agency, 2025) – sprawdzian w Year 4 w czerwcu, na ekranie, 25 pytań, 6 sekund na pytanie, 3 pytania na próbę, nie ma progu zaliczenia; Year 4 = dzieci w wieku 8–9 lat (strona „The national curriculum”). W polskiej podstawie klasy 1–3 (Dz.U. 2024 poz. 996): tabliczka mnożenia w zakresie 100 i mnożenie przez 10 liczb mniejszych od 20 – dział rozszerza to o mnożenie przez 11 i 12. Tuzin – „dwanaście sztuk czegoś” (Słownik języka polskiego PWN, sjp.pwn.pl). Wszystkie wyniki policzone dwukrotnie.',
         theory: `
           <h3>Jak to jest w Anglii?</h3>
-          <p>W Anglii dzieci w wieku 8–9 lat – tak jak ty – uczą się tabliczki mnożenia <b>aż do 12 × 12</b>.</p>
+          <p>W Anglii dzieci w wieku 8–9 lat uczą się tabliczki mnożenia <b>aż do 12 × 12</b>.</p>
           <p>W czerwcu piszą sprawdzian na komputerze: <b>25 pytań</b>, na każde mają <b>6 sekund</b>.</p>
           <h3>Razy 11</h3>
           <p>11 × 2 = 22, 11 × 3 = 33, 11 × 4 = 44, …, 11 × 9 = 99</p>
