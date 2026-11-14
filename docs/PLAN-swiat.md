@@ -10,7 +10,7 @@ Cel (decyzja rodzica, 14.11.2026): dzieci poznają, czego uczą się ich rówie�
 - **Źródła:** fakty o szkołach i programach za granicą – **tylko z oficjalnych dokumentów ministerstw** (programy nauczania, strony rządowe). Wiedza przedmiotowa (np. jak działa dźwignia) – z e-materiałów zpe.gov.pl albo innych pewnych źródeł; obliczenia i kod – sprawdzone. Zadania i przykłady piszemy sami, **nie kopiujemy zadań ani podręczników** innych krajów.
 - **Działy nazywamy „Kraj: temat”** (np. „Anglia: logika i bramki logiczne”). Ściąga zaczyna się od krótkiej części „Jak to jest w …?” (kto, w jakim wieku, co mówi program), potem właściwy temat.
 - **Bez polityki i ideologii.** Nie dodajemy przedmiotów wykluczonych w całej aplikacji (edukacja zdrowotna, etyka, religia jako przedmiot) ani wychowania obywatelsko-politycznego innych państw. Historii innych krajów na razie nie dodajemy (inna perspektywa – wymagałaby osobnej decyzji).
-- **Kolejność krajów zależy od dostępu do źródeł.** Programy Anglii są dostępne na gov.uk (licencja Open Government Licence) – od nich zaczęliśmy. Strony ministerstw Japonii (mext.go.jp) i Singapuru (moe.gov.sg) zostały dodane do sieci środowiska 14.11.2026, ale narzędzia nie mogły ich jeszcze odczytać – treści z tych krajów dopiero po przeczytaniu oryginalnych dokumentów.
+- **Źródła zagraniczne – stan dostępu (14.11.2026):** w sieci środowiska są strony ministerstw i programów Anglii (gov.uk), Japonii (mext.go.jp), Singapuru (moe.gov.sg), Korei (moe.go.kr, ncic.re.kr), Australii, USA (NGSS), Finlandii (ePerusteet), Estonii, Bawarii (LehrplanPLUS), Szwajcarii (Lehrplan 21) i KMK. **Chiny – dokumentów nie udało się pobrać** (moe.gov.cn przekierowuje na HTTP): chińskich tematów nie dodajemy, dopóki nie przeczytamy oryginału.
 
 ## Zrobione (pilotaż, 14.11.2026)
 
@@ -20,28 +20,26 @@ Cel (decyzja rodzica, 14.11.2026): dzieci poznają, czego uczą się ich rówie�
 
 Każdy dział: lekcja (4–5 kroków z rysunkami), ściąga, „W pigułce”, fiszki, quiz.
 
-## Pomysły na kolejne działy (do sprawdzenia w źródłach)
+## Kolejne działy – według mapy ustaleń
 
-### Klasa 3
-- [ ] Anglia (computing KS1): algorytm jako dokładne instrukcje, szukanie i poprawianie błędów („create and debug simple programs”) – np. instrukcje dla robota na planszy.
-- [ ] Japonia: soroban (liczydło) – w programie matematyki szkoły podstawowej (学習指導要領 2017) – **czeka na dostęp do mext.go.jp**.
-- [ ] Anglia (D&T KS1): mechanizmy w zabawkach – dźwignie i suwaki, koła i osie („wheels and axles”).
+Pełny research (11 krajów, cytaty, kody wymagań, porównanie z polską podstawą dla każdego rocznika): **`docs/research/reports/Mapa tematów z programów świata.md`**, notatki źródłowe: `docs/research/research_notes/Mapa tematów z programów świata/`. Rekomendowana kolejność (sekcja 8 mapy; kraj wiodący w nazwie działu):
 
-### Klasa 4
-- [ ] Singapur: model paskowy w zadaniach tekstowych (*bar model*) – **czeka na dostęp do moe.gov.sg** (sylabus matematyki 2021).
-- [ ] Anglia (D&T KS2): obwody elektryczne w projektach – wyłączniki, żarówki, brzęczyki, silniki („series circuits”).
-- [ ] Anglia (computing KS2): sekwencja, wybór i powtarzanie w programach, zmienne; dzielenie problemu na części (*decomposition*).
-- [ ] Japonia: soroban w klasie 4 (większe liczby, ułamki dziesiętne) – czeka na mext.go.jp.
+| Tura | Klasa 3 | Klasa 4 | Klasa 8 |
+|---|---|---|---|
+| 1 | [ ] Japonia: magnesy | [ ] Bawaria: mosty i trójkąty | [ ] Japonia: czujniki i sterowanie |
+| 2 | [ ] Japonia: soroban | [ ] Japonia: obwody szeregowe i równoległe, elektromagnes | [ ] Bawaria: półsumator i dodawanie dwójkowe |
+| 3 | [ ] Japonia: czy żarówka się zaświeci? | [ ] USA: obrazek z zer i jedynek / Szwajcaria: kody wykrywające błędy | [ ] Korea: jak uczy się sztuczna inteligencja |
+| 4 | [ ] Bawaria: huśtawka i równowaga | [ ] Estonia: z czego jest robot | [ ] Szwajcaria: wyszukiwanie binarne |
+| 5 | [ ] Estonia: algorytm z warunkiem | [ ] Korea: pojazd – napęd, kierownica, hamulec | [ ] Szwajcaria: maszyny proste i złota reguła mechaniki |
 
-### Klasa 8
-- [ ] Anglia (computing KS3): dodawanie liczb dwójkowych (*binary addition*) – rozwinięcie działu z polskiej informatyki.
-- [ ] Anglia (computing KS3): algorytmy sortowania i wyszukiwania, porównanie ich szybkości.
-- [ ] Anglia (computing KS3): jak komputer przechowuje i wykonuje instrukcje; dźwięk i obraz jako bity.
-- [ ] Anglia (D&T KS3): materiały i konstrukcje, mechanizmy i przekładnie z obliczeniami.
-- [ ] Niemcy: kształcenie dualne (szkoła + zakład pracy) – orientacja zawodowa po 8. klasie – źródła: KMK / ministerstwo (do sprawdzenia dostępu).
+- [ ] Rozszerzenie pilotażu kl. 4 „mechanizmy” o równię pochyłą, klin i regułę równowagi dźwigni (krok lekcji, nie nowy dział).
+- [ ] Rozszerzenie pilotażu kl. 8 „bramki” o XOR (Bawaria, Realschule IT: „Antivalenz”).
 
-### Kultura (krótkie wstawki w działach, tylko ze sprawdzonych źródeł)
-- system szkolny danego kraju (wiek, etapy, sprawdziany), pismo i liczebniki (Japonia, Chiny), święta – tylko gdy źródło jest oficjalne lub encyklopedyczne i pewne.
+Ustalenia, które zmieniają wcześniejsze pomysły:
+- **Singapurskiego modelu paskowego nie ma** w sylabusie matematyki MOE 2021 – skreślony; ewentualnie zamiennik „Singapur: 4 kroki Pólyi” (jest w sylabusie).
+- **Soroban** ma oficjalne oparcie (MEXT, matematyka kl. 3); budowę liczydła trzeba wziąć ze źródła encyklopedycznego.
+- Nie robimy działów z tematów, które polska podstawa danego rocznika już ma (np. obwód i proces projektowy są w kl. 4 – PP2026, zajęcia praktyczno-techniczne).
+- Decyzje czekające na rodzica (mediana, twierdzenie odwrotne do Pitagorasa, nazwy działów z kilku krajów, „Bawaria” zamiast „Niemcy”) – sekcja 9 mapy.
 
 ## Osobny temat: ścieżka niemiecka dla siostrzenicy
 
