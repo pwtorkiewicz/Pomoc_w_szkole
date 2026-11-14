@@ -43,11 +43,30 @@ Ustalenia z researchu:
 - **Soroban** ma oficjalne oparcie (MEXT, matematyka kl. 3); budowę liczydła trzeba wziąć ze źródła encyklopedycznego.
 - Decyzje czekające na rodzica: mediana i wykres pudełkowy, twierdzenie odwrotne do Pitagorasa (kolidują z wyłączeniami egzaminu – nie przed majem 2027), „Bawaria” zamiast „Niemcy” w opisach – sekcja 9 mapy.
 
+## Stan na koniec sesji 14.11.2026 – od czego zacząć w nowej sesji
+
+**Gotowe i wysłane na gałąź:** ścieżka `swiat.html` z przełącznikiem 🇵🇱 Polska szkoła / 🌍 Świat; trzy działy (tabliczka 12 × 12, mechanizmy, bramki logiczne) z poziomem, sugerowanym wiekiem, „Gdzie się tego uczą”; tryb dla młodszego ucznia na urządzeniu; pola `level`, `age`, `requires`, `where` w silniku i w sprawdzarce danych; mapa researchu 11 krajów. Wszystkie sprawdzarki i przegląd wszystkich ścieżek (z egzaminacyjną) – bez błędów.
+
+**Następny krok (uzgodniony kierunek, czeka na „start” rodzica):** tura 1 nowych działów – ⚡ Magnesy (🌱, nowy przedmiot `elektrycznosc`), ⚙️ Mosty i trójkąty (🌿), ⚡ Czujniki i sterowanie (🌳). Przed pisaniem: cytaty i kody z notatek w `docs/research/research_notes/…`, wiedza przedmiotowa z zpe.gov.pl, sprawdzenie w tekście polskiej podstawy, zanim napiszemy „w Polsce tego nie ma”.
+
+**Otwarte pytania do rodzica:**
+- Ścieżka niemiecka dla siostrzenicy: kraj związkowy, klasa i typ szkoły, czy dziecko czyta po polsku (osobna ścieżka w grupie 🇩🇪 Niemcy – nie część „Świata”).
+- Decyzje z sekcji 9 mapy: mediana / wykres pudełkowy i twierdzenie odwrotne do Pitagorasa (propozycja: nie przed egzaminem w maju 2027), pisanie „Bawaria” zamiast „Niemcy”.
+- Czy przedziały wieku obecnych działów (8–10, 9–12, 12–15 lat) są dobre.
+
+**Do zrobienia przez rodzica (raz):** na każdym urządzeniu połączonym z arkuszem wejść w Świat → ☁️ Synchronizacja i wybrać dziecko przy ścieżce „Świat” (inaczej wyniki zostaną tylko na urządzeniu). Na tablecie klasy 3 włączyć „🧸 Tryb dla młodszego ucznia”.
+
+**Uwagi techniczne dla sesji:**
+- Sieć środowiska „Default” ma dodane strony ministerstw i programów (mext.go.jp, moe.gov.sg, moe.go.kr, ncic.re.kr, australiancurriculum, nextgenscience.org, ePerusteet/oph.fi, harno.ee/hm.ee/riigiteataja.ee, kmk.org, lehrplanplus.bayern.de, lehrplan21.ch/zh.lehrplan.ch, moe.gov.cn). Pobieramy przez `curl` w Bash (`pdftotext` jest zainstalowany); narzędzie WebFetch w agentach pomocniczych nie widzi tych adresów (błąd DNS).
+- Chiny: moe.gov.cn przekierowuje na HTTP i nie działa przez proxy – chińskich tematów nie dodajemy bez oryginalnego dokumentu.
+- Lekcje: `docs/LEKCJE.md`; id markerów w ścieżce „Świat” z przedrostkiem `a-sw…`; nowe id pytań: `node tools/nowe-id.js`.
+
 ## Historia
 
 - 14.11.2026 – pilotaż jako przedmiot `swiat` w ścieżkach kl3, kl4, kl8 (trzy działy z programów Anglii).
 - 14.11.2026 – research 11 krajów (mapa ustaleń).
 - 14.11.2026 – przebudowa na osobną ścieżkę `swiat` według tematów (decyzja rodzica); trzy działy pilotażu przeniesione (id pytań bez zmian, postęp z pilotażu nie przechodzi – inny klucz zapisu).
+- 14.11.2026 – sugerowany wiek przy każdym dziale (pole `age`, decyzja rodzica).
 
 ## Osobny temat: ścieżka niemiecka dla siostrzenicy
 
