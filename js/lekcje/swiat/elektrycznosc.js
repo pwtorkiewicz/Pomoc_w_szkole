@@ -4,6 +4,29 @@ window.LESSONS = window.LESSONS || {};
 
 window.LESSONS['elektrycznosc/magnesy'] = [
   {
+    title: '🇵🇱 Przypomnienie: to poznasz też w polskiej szkole',
+    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Przypomnienie. Magnes przyciąga żelazo i stal, na przykład gwóźdź i spinacz. Nie przyciąga aluminium i miedzi. Różne bieguny N i S się przyciągają, takie same S i S odpychają się">
+      <defs><marker id="a-swe-m0" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="10" width="185" height="95" rx="12" class="f3 s3"/>
+      <rect x="205" y="10" width="185" height="95" rx="12" class="f2 s2"/>
+      <g class="tx-b"><text x="22" y="38">✅ Przyciąga</text><text x="217" y="38">❌ Nie przyciąga</text></g>
+      <g class="tx"><text x="22" y="66">żelazo, stal</text><text x="22" y="92">🔩 📎</text><text x="217" y="66">aluminium</text><text x="217" y="92">miedź</text></g>
+      <rect x="20" y="125" width="40" height="30" class="f2 s2"/><rect x="60" y="125" width="40" height="30" class="f1 s1"/>
+      <rect x="130" y="125" width="40" height="30" class="f2 s2"/><rect x="170" y="125" width="40" height="30" class="f1 s1"/>
+      <rect x="230" y="125" width="40" height="30" class="f2 s2"/><rect x="270" y="125" width="40" height="30" class="f1 s1"/>
+      <rect x="330" y="125" width="40" height="30" class="f1 s1"/><rect x="370" y="125" width="25" height="30" class="f2 s2"/>
+      <g class="tx-b" text-anchor="middle"><text x="40" y="146">N</text><text x="80" y="146">S</text><text x="150" y="146">N</text><text x="190" y="146">S</text>
+        <text x="250" y="146">N</text><text x="290" y="146">S</text><text x="350" y="146">S</text><text x="382" y="146">N</text></g>
+      <g class="ln sw"><path d="M103,170 H122" marker-end="url(#a-swe-m0)"/><path d="M127,170 H108" marker-end="url(#a-swe-m0)"/>
+        <path d="M318,170 H302" marker-end="url(#a-swe-m0)"/><path d="M322,170 H338" marker-end="url(#a-swe-m0)"/></g>
+      <g class="tx-s" text-anchor="middle"><text x="115" y="198">różne – przyciągają</text><text x="312" y="198">takie same – odpychają</text></g>
+    </svg>`,
+    text: `<p>Te rzeczy poznasz też na przyrodzie w <b>klasach 4–6</b>: magnes przyciąga <b>żelazo i stal</b> (ale nie aluminium i miedź), ma <b>dwa bieguny</b> N i S, a magnes, który może się swobodnie obracać, staje <b>północ–południe</b>.</p>
+      <p>Dalej – to, czego uczą dzieci w innych krajach, a w polskiej szkole tego nie ma.</p>`,
+    remember: 'Żelazo i stal – tak. Różne bieguny się przyciągają, takie same odpychają.',
+    check: { q: 'Folia aluminiowa to metal. Czy magnes ją przyciągnie?', options: ['nie', 'tak'], answer: 0, explain: 'Nie. Magnes przyciąga żelazo i stal, a aluminium – nie.' },
+  },
+  {
     title: 'Badaj magnesy jak japoński uczeń',
     svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Magnesy badają dzieci w Anglii (7–8 lat), Japonii (8–9 lat) i Singapurze (8–9 lat). Japoński badacz: zauważ, zapytaj, przewiduj, sprawdź, zapisz, wniosek">
       <defs><marker id="a-swe-m1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
@@ -24,79 +47,53 @@ window.LESSONS['elektrycznosc/magnesy'] = [
     hook: 'Badacz najpierw zgaduje, a potem sprawdza – i nie wstydzi się pomyłki.',
   },
   {
-    title: '🔬 Tabela badacza: co przyciąga magnes?',
-    svg: `<svg viewBox="0 0 400 250" role="img" aria-label="Tabela: rzecz, przewiduję, wynik. Spinacz – przewiduję tak, wynik tak. Gumka – nie, nie. Gwóźdź – tak, tak. Folia aluminiowa – przewiduję tak, wynik nie. Niespodzianka: nie każdy metal">
-      <rect x="10" y="10" width="380" height="36" rx="6" class="f4 s4"/>
-      <g class="tx-b"><text x="20" y="34">Rzecz</text><text x="240" y="34" text-anchor="middle">Przewiduję</text><text x="340" y="34" text-anchor="middle">Wynik</text></g>
-      <rect x="10" y="50" width="380" height="40" rx="6" class="f3 s3"/><rect x="10" y="94" width="380" height="40" rx="6" class="f3 s3"/>
-      <rect x="10" y="138" width="380" height="40" rx="6" class="f3 s3"/><rect x="10" y="182" width="380" height="40" rx="6" class="f2 s2 sw"/>
-      <g class="tx"><text x="20" y="76">📎 spinacz</text><text x="20" y="120">gumka</text><text x="20" y="164">🔩 gwóźdź</text><text x="20" y="208">folia aluminiowa</text></g>
-      <g class="tx" text-anchor="middle"><text x="240" y="76">✅</text><text x="340" y="76">✅</text><text x="240" y="120">❌</text><text x="340" y="120">❌</text>
-        <text x="240" y="164">✅</text><text x="340" y="164">✅</text><text x="240" y="208">✅</text><text x="340" y="208">❌</text></g>
-      <text x="200" y="244" text-anchor="middle" class="tx-b">Niespodzianka: nie każdy metal!</text>
-    </svg>`,
-    text: `<p>Zrób tabelę jak japońscy uczniowie. Najpierw wpisz, co <b>przewidujesz</b>. Potem <b>sprawdź</b> magnesem i zapisz wynik.</p>
-      <p>Magnes przyciąga <b>żelazo</b> i <b>stal</b>. Drewna, papieru i gumki – nie. Niespodzianka: <b>nie każdy metal</b>! Folii aluminiowej, miedzi i złota też nie przyciąga.</p>`,
-    remember: 'Magnes przyciąga żelazo i stal – ale nie każdy metal.',
-    hook: 'Pomyłka w przewidywaniu to nie porażka – to odkrycie!',
-    check: { q: 'Folia aluminiowa to metal. Czy magnes ją przyciągnie?', options: ['nie', 'tak'], answer: 0, explain: 'Nie. Magnes przyciąga żelazo i stal, a aluminium – nie.' },
+    title: '🌍 Laboratorium: odległość i ułożenie',
+    widget: { type: 'magnesy', d: 2, zasieg: 3 },
+    text: `<p>Ustaw magnes B, <b>najpierw przewidź</b>, a potem sprawdź. Zmieniaj odległość i obracaj magnes B.</p>
+      <p>Japonia: siła magnesu zależy od <b>odległości</b> – im dalej, tym słabiej. USA: to, czy magnesy się przyciągną, czy odepchną, zależy od ich <b>ułożenia</b>.</p>`,
+    remember: 'Im dalej, tym słabiej. Obrócisz magnes – przyciąganie zmienia się w odpychanie.',
+    hook: 'Jak zapach ciasta: im bliżej kuchni, tym mocniej czujesz.',
+    check: { q: 'Dwa magnesy się przyciągały. Obracasz jeden z nich. Co teraz?', options: ['odepchną się', 'dalej się przyciągną'], answer: 0, explain: 'Po obróceniu naprzeciw siebie są takie same bieguny – odpychają się.' },
   },
   {
-    title: 'Dwa bieguny: N i S',
-    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="U góry dwa magnesy zwrócone do siebie biegunami S i N – strzałki do siebie, przyciągają się. Na dole dwa magnesy zwrócone do siebie biegunami S i S – strzałki od siebie, odpychają się">
-      <defs><marker id="a-swe-m3" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
-      <rect x="20" y="20" width="65" height="40" class="f2 s2 sw"/><rect x="85" y="20" width="65" height="40" class="f1 s1 sw"/>
-      <rect x="230" y="20" width="65" height="40" class="f2 s2 sw"/><rect x="295" y="20" width="65" height="40" class="f1 s1 sw"/>
-      <rect x="20" y="110" width="65" height="40" class="f2 s2 sw"/><rect x="85" y="110" width="65" height="40" class="f1 s1 sw"/>
-      <rect x="230" y="110" width="65" height="40" class="f1 s1 sw"/><rect x="295" y="110" width="65" height="40" class="f2 s2 sw"/>
-      <g class="tx-b" text-anchor="middle"><text x="52" y="47">N</text><text x="117" y="47">S</text><text x="262" y="47">N</text><text x="327" y="47">S</text>
-        <text x="52" y="137">N</text><text x="117" y="137">S</text><text x="262" y="137">S</text><text x="327" y="137">N</text></g>
-      <g class="ln sw"><path d="M156,40 H184" marker-end="url(#a-swe-m3)"/><path d="M224,40 H196" marker-end="url(#a-swe-m3)"/>
-        <path d="M184,130 H156" marker-end="url(#a-swe-m3)"/><path d="M196,130 H224" marker-end="url(#a-swe-m3)"/></g>
-      <g class="tx" text-anchor="middle"><text x="190" y="88">S i N – przyciągają się</text><text x="190" y="178">S i S – odpychają się</text></g>
+    title: '🌍 Większy nie znaczy silniejszy',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="W tym przykładzie duży magnes przyciąga spinacz z 2 kratek, a mały z 4 kratek – po wielkości nie poznasz siły, trzeba sprawdzić. Pod spodem: spinacz na tekturze jedzie za magnesem schowanym pod spodem">
+      <defs><marker id="a-swe-m4b" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="14" width="60" height="44" class="f2 s2 sw"/><rect x="70" y="14" width="60" height="44" class="f1 s1 sw"/>
+      <rect x="10" y="78" width="30" height="24" class="f2 s2 sw"/><rect x="40" y="78" width="30" height="24" class="f1 s1 sw"/>
+      <rect x="132" y="30" width="56" height="12" rx="6" class="f3 s3"/><rect x="72" y="84" width="112" height="12" rx="6" class="f3 s3"/>
+      <g class="tx"><text x="200" y="41">duży: 2 kratki</text><text x="200" y="95">mały: 4 kratki</text></g>
+      <text x="200" y="126" text-anchor="middle" class="tx-s">w tym przykładzie – twoje magnesy sprawdź sam</text>
+      <rect x="40" y="168" width="320" height="10" class="f4 s4"/>
+      <rect x="230" y="184" width="40" height="22" class="f2 s2"/><rect x="270" y="184" width="40" height="22" class="f1 s1"/>
+      <g class="ln" fill="none"><rect x="248" y="152" width="26" height="12" rx="6"/></g>
+      <path d="M200,196 H224" class="ln sw" marker-end="url(#a-swe-m4b)"/>
+      <g class="tx-s"><text x="40" y="160">tektura</text><text x="40" y="224">magnes pod spodem</text></g>
     </svg>`,
-    text: `<p>Każdy magnes ma <b>dwa bieguny</b>: północny <b>N</b> i południowy <b>S</b>.</p>
-      <p><b>Różne</b> bieguny się <b>przyciągają</b>. <b>Takie same</b> się <b>odpychają</b>.</p>`,
-    remember: 'Różne się przyciągają, takie same się odpychają.',
-    hook: 'N i S to para przyjaciół – trzymają się razem. N i N to dwa uparte koziołki.',
-    check: { q: 'Zbliżasz biegun N do bieguna N. Co się stanie?', say: 'Zbliżasz biegun północny do bieguna północnego. Co się stanie?', options: ['odepchną się', 'przyciągną się'], answer: 0, explain: 'Takie same bieguny się odpychają.' },
+    text: `<p>Anglia: po <b>wielkości</b> ani kształcie nie poznasz, który magnes jest silniejszy. Sprawdź <b>uczciwie</b>: zmieniasz tylko magnes, a spinacz, linijka i sposób pomiaru zostają te same.</p>
+      <p>Magnes działa też <b>przez papier, cienką tekturę, plastik i szkło</b>. Możesz prowadzić spinacz po tekturze magnesem schowanym pod spodem.</p>`,
+    remember: 'Siłę magnesu sprawdzasz, a nie zgadujesz po wielkości.',
+    hook: 'Uczciwy test jak wyścig: wszyscy biegną tę samą trasę – zmienia się tylko biegacz.',
+    check: { q: 'Duży magnes i mały magnes. Który jest silniejszy?', options: ['trzeba sprawdzić', 'zawsze duży'], answer: 0, explain: 'Po wielkości nie poznasz siły magnesu – sprawdź, z jak daleka przyciąga spinacz.' },
   },
   {
-    title: 'Siła na odległość',
-    svg: `<svg viewBox="0 0 400 170" role="img" aria-label="Magnes sztabkowy. Spinacze przyczepione na obu końcach magnesu. Spinacz blisko magnesu jest przyciągany – strzałka do magnesu. Spinacz daleko – magnes przyciąga go słabo. Najmocniej przy biegunach">
-      <defs><marker id="a-swe-m4" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
-      <rect x="20" y="60" width="90" height="40" class="f2 s2 sw"/><rect x="110" y="60" width="90" height="40" class="f1 s1 sw"/>
-      <g class="tx-b" text-anchor="middle"><text x="65" y="87">N</text><text x="155" y="87">S</text></g>
-      <g class="ln" fill="none"><rect x="24" y="44" width="26" height="12" rx="6"/><rect x="24" y="104" width="26" height="12" rx="6"/><rect x="170" y="44" width="26" height="12" rx="6"/><rect x="170" y="104" width="26" height="12" rx="6"/>
-        <rect x="236" y="74" width="26" height="12" rx="6"/><rect x="346" y="74" width="26" height="12" rx="6"/></g>
-      <path d="M232,80 H208" class="ln sw" marker-end="url(#a-swe-m4)"/>
-      <g class="tx" text-anchor="middle"><text x="249" y="60">blisko</text><text x="359" y="60">daleko</text><text x="359" y="110">słabo</text>
-        <text x="200" y="150">Najmocniej przy biegunach – na końcach.</text></g>
+    title: '🌍 Magnesy mają różne kształty',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Cztery magnesy: sztabkowy z biegunami N i S na końcach, podkowa z biegunami na końcach ramion, pierścieniowy i guzikowy ze znakiem zapytania – ich bieguny znajdziesz drugim magnesem">
+      <rect x="12" y="40" width="40" height="30" class="f2 s2 sw"/><rect x="52" y="40" width="40" height="30" class="f1 s1 sw"/>
+      <g class="tx-b" text-anchor="middle"><text x="32" y="61">N</text><text x="72" y="61">S</text></g>
+      <path d="M120,30 V70 A30,30 0 0 0 180,70 V30 H162 V70 A12,12 0 0 1 138,70 V30 Z" class="f5 s5 sw"/>
+      <rect x="120" y="30" width="18" height="16" class="f2 s2"/><rect x="162" y="30" width="18" height="16" class="f1 s1"/>
+      <g class="tx-s" text-anchor="middle"><text x="129" y="24">N</text><text x="171" y="24">S</text></g>
+      <circle cx="250" cy="62" r="30" class="f4 s4 sw"/><circle cx="250" cy="62" r="13" class="bg ln"/>
+      <circle cx="345" cy="62" r="20" class="f4 s4 sw"/>
+      <g class="tx-b" text-anchor="middle"><text x="250" y="114">?</text><text x="345" y="114">?</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="52" y="140">sztabkowy</text><text x="150" y="140">podkowa</text><text x="250" y="140">pierścieniowy</text><text x="345" y="140">guzikowy</text></g>
+      <text x="200" y="180" text-anchor="middle" class="tx">Gdzie bieguny? Sprawdź drugim magnesem!</text>
     </svg>`,
-    text: `<p>Magnes przyciąga spinacz, nawet gdy go <b>nie dotyka</b>.</p>
-      <p>Im <b>bliżej</b>, tym <b>mocniej</b>. Najmocniej przyciąga na końcach – przy biegunach. Japońskie dzieci czują ręką, jak magnes ciągnie, i zbliżają go do igły kompasu – igła się rusza, choć magnes jej nie dotyka.</p>`,
-    remember: 'Magnes działa na odległość. Im bliżej, tym mocniej.',
-    hook: 'Jak zapach ciasta: im bliżej kuchni, tym mocniej go czujesz.',
-  },
-  {
-    title: 'Magnes na nitce pokazuje północ',
-    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Magnes sztabkowy wisi na nitce. Biegun N wskazuje północ, biegun S – południe. Pod spodem kompas z igłą">
-      <defs><marker id="a-swe-m5" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
-      <rect x="100" y="10" width="200" height="8" class="f4 s4"/>
-      <path d="M200,18 V60" class="ln"/>
-      <rect x="110" y="60" width="90" height="30" class="f2 s2 sw"/><rect x="200" y="60" width="90" height="30" class="f1 s1 sw"/>
-      <g class="tx-b" text-anchor="middle"><text x="155" y="81">N</text><text x="245" y="81">S</text></g>
-      <g class="ln sw"><path d="M104,75 H32" marker-end="url(#a-swe-m5)"/><path d="M296,75 H368" marker-end="url(#a-swe-m5)"/></g>
-      <g class="tx-b"><text x="10" y="112">północ</text><text x="390" y="112" text-anchor="end">południe</text></g>
-      <circle cx="200" cy="140" r="26" class="bg ln"/>
-      <path d="M176,140 L200,134 L200,146 z" class="f2 s2"/><path d="M224,140 L200,134 L200,146 z" class="f1 s1"/>
-      <text x="200" y="184" text-anchor="middle" class="tx">kompas</text>
-    </svg>`,
-    text: `<p>Zawieś magnes na nitce. Sam obróci się w kierunku <b>północ–południe</b>.</p>
-      <p>Duży czy mały, sztabka czy podkowa – <b>zawsze</b> tak samo. Koniec, który pokazuje <b>północ</b>, nazwano <b>N</b> – biegun północny. Tak działa igła kompasu.</p>`,
-    remember: 'Koniec magnesu, który pokazuje północ, to biegun N.',
-    hook: 'N jak „North” – po angielsku północ.',
-    check: { q: 'Magnes wisi na nitce. Co pokazuje biegun N?', say: 'Magnes wisi na nitce. Co pokazuje biegun północny?', options: ['północ', 'południe'], answer: 0, explain: 'Biegun północny N pokazuje północ.', sayExplain: 'Biegun północny pokazuje północ.' },
+    text: `<p>Anglia: dzieci poznają magnesy <b>sztabkowe, pierścieniowe, guzikowe i podkowy</b>. Każdy ma dwa bieguny, ale <b>nie każdy ma je na końcach</b>.</p>
+      <p>Gdzie są? Zbliżaj drugi magnes: tam, gdzie się przyciągają albo odpychają, jest biegun.</p>`,
+    remember: 'Każdy magnes ma N i S – ale nie zawsze na końcach.',
+    hook: 'Biegun to jak drzwi do domu: każdy dom ma drzwi, ale nie zawsze z przodu.',
   },
   {
     title: '🔬 Zrób w domu: kompas z igły',
@@ -116,7 +113,8 @@ window.LESSONS['elektrycznosc/magnesy'] = [
       <text x="200" y="212" text-anchor="middle" class="tx-b">Igła pokaże północ–południe!</text>
     </svg>`,
     text: `<p>Żelazo i stal przy magnesie <b>same stają się magnesem</b> – jak gwóźdź, który przyciąga spinacze.</p>
-      <p>Zrób kompas (z dorosłym – igła jest ostra!): <b>potrzyj</b> igłę do szycia magnesem, wbij ją w <b>korek</b> i połóż na <b>wodzie</b> w misce. W Singapurze dzieci też robią magnes, pocierając. Odsuń inne magnesy i rzeczy z żelaza – psują wynik.</p>`,
+      <p>Zrób kompas z dorosłym (igła jest ostra!) – instrukcja w zakładce <b>🛠️ Zrób</b>. W Singapurze dzieci też robią magnes, pocierając.</p>
+      <p>Zapowiedź: <b>elektromagnes</b> działa tylko, gdy płynie prąd – w Japonii budują go w 5. klasie. Tylko oglądamy – nie buduj go sam.</p>`,
     remember: 'Żelazo przy magnesie samo staje się magnesem.',
     hook: 'Magnes „pożycza” igle swoją moc – a igła na wodzie szuka północy.',
     check: { q: 'Czego potrzebujesz do kompasu z igły?', options: ['igły, magnesu, korka i miski z wodą', 'igły, kleju, farby i kartki'], answer: 0, explain: 'Igłę pocierasz magnesem, wbijasz w korek i kładziesz na wodzie – może się wtedy swobodnie obracać.' },

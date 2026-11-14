@@ -167,6 +167,23 @@ small.muted, .muted { color: var(--muted); font-size: .85rem; }
 }
 
 .basis { background: var(--surface); border: 1px dashed var(--border); border-radius: 12px; padding: 10px 14px; font-size: .9rem; color: var(--muted); margin: 0 0 12px; }
+.parent-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 8px 14px; margin: 0 0 14px; }
+.parent-box > summary { cursor: pointer; font-weight: 600; }
+.parent-box h4 { margin: 12px 0 4px; }
+.parent-box ul { margin: 4px 0; padding-left: 1.2em; }
+.cards { list-style: none; padding: 0; margin: 0 0 16px; }
+.cards li { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; margin: 0 0 10px; }
+.activity h2 { margin: 4px 0 10px; }
+.activity h3 { margin: 18px 0 6px; font-size: 1.05rem; }
+.activity .safety { background: var(--c2); border: 1px solid var(--c2s); border-radius: 12px; padding: 8px 14px; margin: 12px 0; }
+.activity .safety ul { margin: 4px 0; padding-left: 1.2em; }
+.activity .table-wrap { overflow-x: auto; }
+.worksheet { border-collapse: collapse; width: 100%; }
+.worksheet th, .worksheet td { border: 1px solid var(--border); padding: 8px; text-align: left; min-width: 64px; height: 2.2em; }
+.worksheet th { background: var(--c4); }
+.activity .crit { display: block; margin: 6px 0; }
+.activity .self { margin: 16px 0; }
+.why { margin-top: 14px; }
 .materials { list-style: none; padding: 0; margin: 0 0 16px; }
 .materials li { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 10px 14px; margin: 0 0 10px; overflow-wrap: anywhere; }
 
@@ -377,4 +394,8 @@ details.report pre { white-space: pre-wrap; word-break: break-word; font: inheri
   .top, .foot, .tabs, .crumbs, .btn, .say, .say-row, .no-print { display: none !important; }
   main { padding: 0; }
   .vis.info { border: none; break-inside: avoid; }
+  .activity .safety { background: #fff; }
+  .worksheet th { background: #f2f2f2; }
 }
+.widget .mlog { margin-top: 10px; overflow-x: auto; }
+.widget .mlog .worksheet { font-size: .9rem; } .widget .mlog .worksheet th, .widget .mlog .worksheet td { min-width: 0; padding: 6px; }

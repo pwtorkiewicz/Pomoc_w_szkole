@@ -139,6 +139,44 @@ infographic: `
 
 Sprawdzanie: `node tools/sprawdz-lekcje.js [ścieżka[/przedmiot]]` sprawdza też infografiki (XML, szerokość viewBox, `role`, `aria-label`, kolory na sztywno, powtórzone id, napisy poza kadrem i nachodzące, zakładka i link z końca lekcji). Podgląd: `node tools/zrzut.js <[ścieżka/]przedmiot/dział> pigulka <plik.png> [dark] [420]`.
 
+## „🛠️ Zrób”: karty doświadczeń i projektów
+
+Pole działu `activities` (decyzja rodzica 14.11.2026, raport: `docs/research/reports/Zakładki działu – burza mózgów.md`). Gdy dział je ma, zakładka „✍️ Zadania otwarte” zmienia się w **„🛠️ Zrób”** (`#/s/<przedmiot>/t/<dział>/zrob`): karty doświadczeń i projektów + zadania otwarte (`…/zrob/zadania`). Karta (`…/zrob/<id>`) ma przycisk 🖨️ – drukuje się z pustą tabelą do wypełnienia. Wynik zapisuje się jak zadanie otwarte (`state.tasks`; doświadczenie: 1 = zrobione, projekt: liczba spełnionych kryteriów) – bez nowego pola w synchronizacji. Ścieżka egzaminacyjna bez zmian (brak `activities`).
+
+```js
+activities: [{
+  id: 'zt9qv0',                        // z node tools/nowe-id.js (wspólna pula z pytaniami)
+  kind: 'doswiadczenie',               // albo 'projekt'
+  title: 'Jak daleko sięga magnes?', time: '20 minut', adult: true,   // adult – 🧑‍👧 z dorosłym
+  intro: '…', safety: ['…'],           // safety obowiązkowe, zawsze widoczne
+  needs: ['…'], steps: ['…', '…'],
+  table: { cols: ['Odległość', 'Przewiduję', 'Wynik'], rows: ['6 cm', '5 cm'] },   // karta pracy do druku
+  criteria: ['…'], constraints: ['…'], // projekt: 2–6 kryteriów (samoocena), ograniczenia
+  conclusion: 'Im dalej, tym …', expected: 'Co powinno wyjść (zwinięte)',
+  source: 'skąd pomysł – kraj, dokument, lekcja',
+}],
+```
+
+Zasady: każde doświadczenie i projekt bezpieczne w domu (bez ognia, gniazdka 230 V, małych kulek magnetycznych i baterii guzikowych; ostre narzędzia – dorosły), materiały o pewnym zachowaniu; najlepiej wcześniej wykonane naprawdę. W karcie pracy dla młodszych – całe liczby, najwyżej 6 wierszy.
+
+## „🔮 Przewiduj i wyjaśnij” – pytanie dwuetapowe
+
+Zwykłe pytanie quizu z polem `why` – drugi etap „Dlaczego?” (pokazywany po dobrym przewidywaniu; w trybie młodszego ucznia tylko pierwszy etap). Wynik liczy się pod tym samym `id` (dobrze = oba etapy dobrze). Opcje drugiego etapu są tasowane.
+
+```js
+{ id, q: 'Spinacz leży na cienkiej tekturze, a magnes pod spodem. Co zrobi spinacz?', options: ['pojedzie za magnesem', 'zostanie w miejscu'], answer: 0, explain: '…',
+  optionExplain: ['', 'dlaczego ta odpowiedź jest zła'],           // opcjonalnie – po jednym tekście na odpowiedź
+  why: { options: ['siła magnesu przechodzi przez tekturę', 'tektura zatrzymuje siłę magnesu', '…'], answer: 0,
+         myth: 1,                                                    // indeks (lub lista) błędnego przekonania – „🧠 To częsty mit!”
+         explain: '…', optionExplain: ['', '…', '…'] } }
+```
+
+Każdy mit musi mieć źródło (np. „common misconception” w lekcjach Oak); dokładnie jedna poprawna odpowiedź w obu etapach – sprawdza `tools/sprawdz-dane.js`, długości opcji – `tools/jakosc-pytan.js`.
+
+## „👪 Dla rodzica” (ścieżki z `parentBox: true` – „Świat”)
+
+Zwinięta ramka nad ściągą: pole działu `parent: { goal, time, mistakes: [], avoid: [], prepare: [], talk: [] }` + automatycznie „Skąd to wiemy?” (pole `basis`) i dokumenty źródłowe z `materials` (`forParent: true`) – w zakładce „Materiały” zostają wtedy tylko linki dla dziecka. Typowe pomyłki (`mistakes`) – tylko udokumentowane w źródłach.
+
 ## Materiały „🔗 Materiały”
 
 Opcjonalne pole działu `materials` – lista linków do filmów, animacji, zdjęć, lekcji online i dokumentów. Gdy dział je ma, pojawia się zakładka **„🔗 Materiały”** (`#/s/<przedmiot>/t/<dział>/materialy`) i przycisk na końcu lekcji. Linki otwierają się w nowej karcie.
@@ -151,7 +189,7 @@ materials: [
 ],
 ```
 
-- `type`: `film`, `animacja`, `zdjecia`, `prezentacja`, `doswiadczenie`, `lekcja`, `dokument`, `strona`; `lang`: `pl` (domyślnie), `en`, `ja`, `de`; `forParent: true` – w części „Dla rodzica” (dokumenty źródłowe, często w obcym języku); `expect` – tekst, który musi być na stronie (sprawdza `tools/sprawdz-linki.js`).
+- `type`: `film`, `animacja`, `zdjecia`, `prezentacja`, `doswiadczenie`, `lekcja`, `dokument`, `strona`; `lang`: `pl` (domyślnie), `en`, `ja`, `de`; `forParent: true` – w części „Dla rodzica” (w ścieżkach z `parentBox` – w ramce „👪 Dla rodzica”) (dokumenty źródłowe, często w obcym języku); `expect` – tekst, który musi być na stronie (sprawdza `tools/sprawdz-linki.js`).
 - **Tylko oficjalne lub publiczne serwisy edukacyjne** – lista `MATERIAL_HOSTS` w `tools/sprawdz-dane.js` (ZPE, gov.pl, gov.uk, MEXT, MOE Singapur, LehrplanPLUS, Oak National Academy, BBC, NHK – edu.web.nhk). Bez YouTube i serwisów z reklamami.
 - **Każdy link otwórz i przeczytaj przed dodaniem**; `note` opisuje to, co naprawdę jest na stronie. Materiał ZPE z komunikatem „Nie masz dostępu do tej treści” nie nadaje się (jest usunięty albo tylko po zalogowaniu).
 - Po dodaniu: `node tools/sprawdz-linki.js <ścieżka>`.

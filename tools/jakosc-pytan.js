@@ -31,7 +31,8 @@ for (const t of tracks) {
   console.log(`\n=== ${t.id}`);
   for (const s of SUBJECTS) {
     if (subjArg && s.id !== subjArg) continue;
-    const qs = (s.topics || []).flatMap((d) => (d.questions || []).map((q) => ({ ...q, dzial: d.id })));
+    // drugi etap pytań „Przewiduj i wyjaśnij” (pole why) sprawdzany jak osobne pytanie
+    const qs = (s.topics || []).flatMap((d) => (d.questions || []).flatMap((q) => [{ ...q, dzial: d.id }, ...(q.why ? [{ ...q.why, id: `${q.id}·why`, q: `${q.q} → dlaczego?`, dzial: d.id }] : [])]));
     if (!qs.length) continue;
     const dl = qs.map((q) => [q, najdluzsza(q)]).filter(([, r]) => r);
     const bez = qs.filter((q) => !q.explain);

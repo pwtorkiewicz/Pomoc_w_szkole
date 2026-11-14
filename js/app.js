@@ -29,6 +29,8 @@
   if (TRACK.deviceYoung) { try { deviceYoung = localStorage.getItem(YOUNG_KEY) === '1'; } catch (e) { /* brak dostępu */ } }
   const YOUNG = !!TRACK.young || deviceYoung;
   if (YOUNG) document.body.classList.add('young');
+  // parentBox: true (ścieżka „Świat”) – podstawa, źródła i wskazówki dla rodzica w zwiniętej ramce „👪 Dla rodzica”
+  const PARENT_BOX = !!TRACK.parentBox;
   const QUIZ_SIZE = YOUNG ? 8 : 0; // 0 – wszystkie pytania działu
   const synth = window.speechSynthesis || null;
   // Przyciski 🔊 „Posłuchaj” (synteza mowy przeglądarki) – w trybie młodszego ucznia albo gdy ścieżka ma speak: true.
@@ -127,6 +129,7 @@
   // Każde pytanie ma stałe pole id – klucz nie zależy od kolejności pytań w pliku.
   const questionsOf = (s, t) => t.questions.map((q) => ({ ...q, key: `${s.id}/${t.id}/${q.id}`, topicName: t.name }));
   const tasksOf = (s, t) => (t.tasks || []).map((x) => ({ ...x, key: `${s.id}/${t.id}/${x.id}`, topicName: t.name }));
+  const activitiesOf = (s, t) => (t.activities || []).map((x) => ({ ...x, key: `${s.id}/${t.id}/${x.id}` }));
   const tasksOfSubject = (s) => s.topics.flatMap((t) => tasksOf(s, t));
   // Działy „na zapas” (extra: true) – spoza podręcznika klasy; nie liczą się do postępu przedmiotu ani testu próbnego.
   const coreTopics = (s) => s.topics.filter((t) => !t.extra);
@@ -365,7 +368,7 @@
         }
         if (p[2] === 't') {
           const t = s.topics.find((x) => x.id === p[3]);
-          if (t) return topic(s, t, p[4] || (lessonOf(s, t) ? 'lekcja' : 'teoria'));
+          if (t) return topic(s, t, p[4] || (lessonOf(s, t) ? 'lekcja' : 'teoria'), p[5]);
           return subject(s);
         }
       }
@@ -507,7 +510,7 @@
       `<a href="#/s/${s.id}/t/${r.id}">${esc(r.name)}</a>${topicValue(s, r) >= 0.999 ? ' ✅' : ''}`).join(', ')}</p>`;
   }
 
-  function topic(s, t, tab) {
+  function topic(s, t, tab, item) {
     setTitle(t.name);
     const base = `#/s/${s.id}/t/${t.id}`;
     const hasCards = t.flashcards && t.flashcards.length;
@@ -515,9 +518,15 @@
     if (tab === 'fiszki' && !hasCards) tab = 'teoria';
     if (tab === 'lekcja' && !lesson) tab = 'teoria';
     const tasks = tasksOf(s, t);
+    // „🛠️ Zrób”: karty doświadczeń i projektów (pole activities) razem z zadaniami otwartymi; bez kart – dawne „Zadania otwarte”
+    const acts = activitiesOf(s, t);
+    const doTab = acts.length > 0;
+    if (tab === 'zadania' && doTab) { tab = 'zrob'; item = item || 'zadania'; }
+    if (tab === 'zrob' && !doTab) tab = 'zadania';
     if (tab === 'zadania' && !tasks.length) tab = 'teoria';
     if (tab === 'pigulka' && !t.infographic) tab = 'teoria';
-    const mats = t.materials || [];
+    // ścieżka z ramką „👪 Dla rodzica”: dokumenty źródłowe (forParent) trafiają do ramki, w Materiałach – tylko linki dla dziecka
+    const mats = (t.materials || []).filter((m) => !(PARENT_BOX && m.forParent));
     if (tab === 'materialy' && !mats.length) tab = 'teoria';
     app.innerHTML = `
       ${crumbs([[s.name, `#/s/${s.id}`], [t.name]])}
@@ -533,7 +542,8 @@
         ${t.infographic ? `<a href="${base}/pigulka" class="${tab === 'pigulka' ? 'on' : ''}">🗺️ W pigułce</a>` : ''}
         ${hasCards ? `<a href="${base}/fiszki" class="${tab === 'fiszki' ? 'on' : ''}">🃏 Fiszki (${t.flashcards.length})</a>` : ''}
         <a href="${base}/quiz" class="${tab === 'quiz' ? 'on' : ''}">✅ Quiz (${QUIZ_SIZE ? Math.min(QUIZ_SIZE, t.questions.length) : t.questions.length})</a>
-        ${tasks.length ? `<a href="${base}/zadania" class="${tab === 'zadania' ? 'on' : ''}">✍️ Zadania otwarte (${tasks.length})</a>` : ''}
+        ${doTab ? `<a href="${base}/zrob" class="${tab === 'zrob' ? 'on' : ''}">🛠️ Zrób (${acts.length + tasks.length})</a>`
+    : tasks.length ? `<a href="${base}/zadania" class="${tab === 'zadania' ? 'on' : ''}">✍️ Zadania otwarte (${tasks.length})</a>` : ''}
         ${mats.length ? `<a href="${base}/materialy" class="${tab === 'materialy' ? 'on' : ''}">🔗 Materiały (${mats.length})</a>` : ''}
       </nav>
       <div id="pane"></div>`;
@@ -542,6 +552,7 @@
     if (tab === 'fiszki') return flashcards(pane, t.flashcards, t.cardLang);
     if (tab === 'pigulka') return infographicView(pane, s, t, base);
     if (tab === 'materialy') return materialsView(pane, mats);
+    if (tab === 'zrob') return doView(pane, s, t, base, acts, tasks, item);
     if (tab === 'zadania') return openTasks(pane, tasks, { math: s.id === 'matematyka', backHref: `#/s/${s.id}`, backLabel: `Wróć do: ${s.name}` });
     if (tab === 'quiz') {
       // krótki quiz (tryb młodszego ucznia): za każdym razem inne losowe pytania z działu
@@ -553,12 +564,12 @@
         backLabel: `Wróć do: ${s.name}`,
       });
     }
-    pane.innerHTML = `${t.basis ? `<p class="basis">📋 <b>Na jakiej podstawie:</b> ${esc(t.basis)} <a href="#/zrodla">Źródła</a></p>` : ''}
+    pane.innerHTML = `${PARENT_BOX ? parentBoxHtml(t) : t.basis ? `<p class="basis">📋 <b>Na jakiej podstawie:</b> ${esc(t.basis)} <a href="#/zrodla">Źródła</a></p>` : ''}
       ${SPEAK ? `<p class="say-row">${sayButton('Posłuchaj ściągi')} <span class="muted">Posłuchaj ściągi</span></p>` : ''}
       <article class="theory">${t.theory}</article>
       <a class="btn primary" href="${base}/quiz">Sprawdź się w quizie →</a>
       ${hasCards ? `<a class="btn" href="${base}/fiszki">Powtórz z fiszkami</a>` : ''}
-      ${tasks.length ? `<a class="btn" href="${base}/zadania">✍️ Zadania otwarte</a>` : ''}`;
+      ${doTab ? `<a class="btn" href="${base}/zrob">🛠️ Zrób: doświadczenia i projekty</a>` : tasks.length ? `<a class="btn" href="${base}/zadania">✍️ Zadania otwarte</a>` : ''}`;
     bindSay(pane.querySelector('.say-row'), () => [t.name, t.theory]);
   }
 
@@ -566,11 +577,87 @@
   // { type, title, url, source, lang?, note?, license?, forParent? } – forParent: dokument dla rodzica (np. program w oryginale)
   const MAT_TYPES = { film: '🎬 Film', animacja: '🎞️ Animacja', zdjecia: '🖼️ Zdjęcia', prezentacja: '📊 Prezentacja', doswiadczenie: '🔬 Doświadczenie', lekcja: '📗 Lekcja online', dokument: '📄 Dokument' };
   const MAT_LANGS = { pl: '', en: 'po angielsku', ja: 'po japońsku', de: 'po niemiecku' };
-  function materialsView(pane, mats) {
-    const item = (m) => `<li><a href="${esc(m.url)}" target="_blank" rel="noopener noreferrer"><b>${esc(m.title)}</b></a>
+  const materialItem = (m) => `<li><a href="${esc(m.url)}" target="_blank" rel="noopener noreferrer"><b>${esc(m.title)}</b></a>
         <span class="muted"> · ${MAT_TYPES[m.type] || '🔗 Strona'}${m.lang && MAT_LANGS[m.lang] ? ` · ${MAT_LANGS[m.lang]}` : ''}</span>
         ${m.note ? `<br>${esc(m.note)}` : ''}
         <br><small class="muted">Źródło: ${esc(m.source)}${m.license ? ` · licencja: ${esc(m.license)}` : ''}</small></li>`;
+
+  // ---------- „👪 Dla rodzica” (ścieżki z parentBox): zwinięta ramka nad ściągą ----------
+  // pole działu parent: { goal, time, mistakes: [], avoid: [], prepare: [], talk: [] } + podstawa (basis) i dokumenty forParent
+  function parentBoxHtml(t) {
+    const p = t.parent || {};
+    const docs = (t.materials || []).filter((m) => m.forParent);
+    const list = (title, arr) => (arr && arr.length ? `<h4>${title}</h4><ul>${arr.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : '');
+    if (!t.basis && !docs.length && !t.parent) return '';
+    return `<details class="parent-box no-print"><summary>👪 Dla rodzica${YOUNG ? ' – dla dorosłego' : ''}</summary>
+      ${p.goal ? `<p><b>🎯 Cel:</b> ${esc(p.goal)}</p>` : ''}${p.time ? `<p><b>⏱️ Czas:</b> ${esc(p.time)}</p>` : ''}
+      ${list('🤔 Typowe pomyłki dzieci', p.mistakes)}${list('🙊 Czego lepiej nie mówić', p.avoid)}${list('🧺 Co przygotować', p.prepare)}${list('💬 Porozmawiajmy', p.talk)}
+      ${t.basis ? `<h4>✔️ Skąd to wiemy?</h4><p class="basis">${esc(t.basis)} <a href="#/zrodla">Źródła</a></p>` : ''}
+      ${docs.length ? `<h4>📄 Źródła w oryginale</h4><ul class="materials">${docs.map(materialItem).join('')}</ul>` : ''}
+    </details>`;
+  }
+
+  // ---------- „🛠️ Zrób”: karty doświadczeń i projektów + zadania otwarte (docs/LEKCJE.md → „Zrób”) ----------
+  // activity: { id, kind: 'doswiadczenie' | 'projekt', title, time, adult, intro, safety: [], needs: [], steps: [],
+  //             table: { cols: [], rows: [] }, criteria: [] (projekt), constraints: [], conclusion, expected, source }
+  // Wynik zapisuje się jak zadanie otwarte: state.tasks[klucz] = liczba punktów (doświadczenie: 1 – zrobione; projekt: spełnione kryteria).
+  const ACT_KINDS = { doswiadczenie: '🔬 Doświadczenie', projekt: '📐 Projekt' };
+  const actPoints = (a) => (a.kind === 'projekt' ? a.criteria.length : 1);
+  function doView(pane, s, t, base, acts, tasks, item) {
+    const back = `<a class="btn" href="${base}/zrob">← Wszystkie karty</a>`;
+    if (item === 'zadania' && tasks.length) {
+      pane.innerHTML = '<div id="tasks"></div>';
+      return openTasks(pane.querySelector('#tasks'), tasks, { math: s.id === 'matematyka', backHref: `${base}/zrob`, backLabel: 'Wróć do kart' });
+    }
+    const a = item && acts.find((x) => x.id === item);
+    if (a) return activityView(pane, a, back);
+    const status = (key, pts) => (state.tasks[key] == null ? '' : pts === 1 ? ' · ✅ zrobione' : ` · ostatnio ${state.tasks[key]}/${pts}`);
+    pane.innerHTML = `<p class="muted">Zrób coś naprawdę – w domu, z prostych rzeczy. ${YOUNG ? 'Poproś o pomoc dorosłego.' : 'Kartę możesz wydrukować.'}</p>
+      <ul class="cards">
+        ${acts.map((x) => `<li><a href="${base}/zrob/${x.id}"><b>${ACT_KINDS[x.kind]}: ${esc(x.title)}</b></a>
+          <br><span class="muted">${x.time ? `⏱️ ${esc(x.time)}` : ''}${x.adult ? ' · 🧑‍👧 z dorosłym' : ''}${status(x.key, actPoints(x))}</span></li>`).join('')}
+        ${tasks.length ? `<li><a href="${base}/zrob/zadania"><b>✍️ Zadania otwarte (${tasks.length})</b></a><br><span class="muted">${taskScore(tasks)}</span></li>` : ''}
+      </ul>`;
+  }
+  function activityView(pane, a, back) {
+    const list = (title, arr, tag = 'ul') => (arr && arr.length ? `<h3>${title}</h3><${tag}>${arr.map((x) => `<li>${esc(x)}</li>`).join('')}</${tag}>` : '');
+    const tb = a.table;
+    const pts = actPoints(a);
+    const prev = state.tasks[a.key];
+    pane.innerHTML = `<article class="activity">
+      <p class="muted">${ACT_KINDS[a.kind]}${a.time ? ` · ⏱️ ${esc(a.time)}` : ''}${a.adult ? ' · 🧑‍👧 z dorosłym' : ''}</p>
+      <h2>${esc(a.title)}</h2>
+      ${a.intro ? `<p>${esc(a.intro)}</p>` : ''}
+      <div class="safety"><b>⚠️ Bezpiecznie</b><ul>${a.safety.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>
+      ${list('🧺 Potrzebujesz', a.needs)}
+      ${list(a.kind === 'projekt' ? '🎯 Kryteria – po czym poznasz, że się udało' : '', a.kind === 'projekt' ? a.criteria : [])}
+      ${list('🚧 Ograniczenia', a.constraints)}
+      ${list('👣 Krok po kroku', a.steps, 'ol')}
+      ${tb ? `<h3>📝 Karta pracy</h3><div class="table-wrap"><table class="worksheet"><tr>${tb.cols.map((c) => `<th>${esc(c)}</th>`).join('')}</tr>
+        ${tb.rows.map((r) => `<tr><td>${esc(r)}</td>${tb.cols.slice(1).map(() => '<td></td>').join('')}</tr>`).join('')}</table></div>` : ''}
+      ${a.conclusion ? `<h3>💡 Wniosek</h3><p>${esc(a.conclusion)}</p>` : ''}
+      ${a.expected ? `<details class="no-print"><summary>Zobacz, co powinno wyjść</summary><p>${esc(a.expected)}</p></details>` : ''}
+      <div class="self no-print">${a.kind === 'projekt'
+        ? `<h3>✔️ Samoocena – zaznacz spełnione kryteria</h3>${a.criteria.map((c, n) => `<label class="crit"><input type="checkbox" data-n="${n}"> ${esc(c)}</label>`).join('')}
+           <button class="btn primary" id="save">Zapisz ocenę</button>`
+        : '<button class="btn primary" id="save">✅ Zrobione!</button>'}
+        ${prev != null ? `<p class="muted">Ostatnio: ${pts === 1 ? 'zrobione' : `${prev}/${pts}`}.</p>` : ''}</div>
+      ${a.source ? `<p class="muted small">Skąd ten pomysł: ${esc(a.source)}</p>` : ''}
+      <div class="row no-print"><button class="btn" id="print">🖨️ Drukuj kartę</button>${back}</div>
+    </article>`;
+    pane.querySelector('#print').onclick = () => window.print();
+    pane.querySelector('#save').onclick = () => {
+      const n = a.kind === 'projekt' ? pane.querySelectorAll('.crit input:checked').length : 1;
+      state.tasks[a.key] = n;
+      state.tasksAt[a.key] = Date.now();
+      log(a.key.split('/')[0], 'l');
+      save();
+      pane.querySelector('#save').outerHTML = `<p class="feedback ok">${n === pts ? praise() : 'Zapisane! Popraw projekt i sprawdź jeszcze raz.'}</p>`;
+    };
+  }
+
+  function materialsView(pane, mats) {
+    const item = materialItem;
     const kid = mats.filter((m) => !m.forParent);
     const parent = mats.filter((m) => m.forParent);
     pane.innerHTML = `<p class="basis">🔗 Linki otwierają się w nowej karcie, na innych stronach. ${YOUNG ? 'Oglądaj razem z rodzicem.' : 'Wybraliśmy tylko sprawdzone, oficjalne źródła.'}</p>
@@ -933,7 +1020,8 @@
         ${t.flashcards && t.flashcards.length ? `<a class="btn" href="${base}/fiszki">🃏 Fiszki</a>` : ''}
         <a class="btn" href="${base}/teoria">📖 Ściąga</a>
         ${t.infographic ? `<a class="btn" href="${base}/pigulka">🗺️ Zobacz dział w pigułce</a>` : ''}
-        ${t.materials && t.materials.length ? `<a class="btn" href="${base}/materialy">🔗 Materiały do obejrzenia</a>` : ''}
+        ${t.activities && t.activities.length ? `<a class="btn" href="${base}/zrob">🛠️ Zrób doświadczenie</a>` : ''}
+        ${t.materials && t.materials.some((m) => !(PARENT_BOX && m.forParent)) ? `<a class="btn" href="${base}/materialy">🔗 Materiały do obejrzenia</a>` : ''}
         <button class="btn" id="again">↺ Od początku</button></div>`;
       pane.querySelector('#again').onclick = () => { i = 0; bindKeys(); show(); };
     }
@@ -1403,9 +1491,10 @@
           <div class="qhead"><span>Pytanie ${i + 1} z ${qs.length}</span><span>Punkty: ${score}</span></div>
           ${bar(Math.round((i / qs.length) * 100), false)}
           ${opts.showTopic ? `<div class="qtopic">${esc(q.topicName)}</div>` : ''}
+          ${q.why && !YOUNG ? '<div class="qtopic">🔮 Przewiduj i wyjaśnij – najpierw co się stanie, potem dlaczego</div>' : ''}
           <div class="qline"><h2 class="question">${esc(q.q)}</h2>${sayButton('Posłuchaj pytania')}</div>
           ${q.svg ? `<figure class="vis">${q.svg}</figure>` : ''}
-          <div class="options">
+          <div class="options" id="q1">
             ${order.map((k, n) => `<button class="opt" data-k="${k}"><span class="k">${LETTERS[n]}</span><span>${esc(q.options[k])}</span></button>`).join('')}
           </div>
           <div id="fb"></div>
@@ -1421,15 +1510,53 @@
       };
     }
 
+    // zaznacz poprawną i wybraną odpowiedź w grupie przycisków
+    function mark(buttons, right, k) {
+      buttons.forEach((b) => {
+        b.disabled = true;
+        const kk = +b.dataset.k;
+        if (kk === right) b.classList.add('correct');
+        else if (kk === k) b.classList.add('wrong');
+      });
+    }
+
     function answer(k) {
       const q = qs[i];
       const ok = k === q.answer;
-      pane.querySelectorAll('.opt').forEach((b) => {
-        b.disabled = true;
-        const kk = +b.dataset.k;
-        if (kk === q.answer) b.classList.add('correct');
-        else if (kk === k) b.classList.add('wrong');
-      });
+      mark([...pane.querySelectorAll('#q1 .opt')], q.answer, k);
+      // „🔮 Przewiduj i wyjaśnij”: po dobrym przewidywaniu – drugi etap „Dlaczego?” (w trybie młodszego ucznia tylko pierwszy)
+      if (ok && q.why && !YOUNG) return askWhy(q);
+      finalize(q, ok, ok ? null : (q.optionExplain && q.optionExplain[k]) || null, '#fb');
+    }
+
+    function askWhy(q) {
+      const w = q.why;
+      const order = shuffle(w.options.map((_, k) => k));
+      pane.querySelector('#fb').innerHTML = `
+        <div class="why">
+          <div class="qline"><strong>🔮 Dobrze przewidziane! A dlaczego tak jest?</strong>${sayButton('Posłuchaj pytania')}</div>
+          <div class="options">${order.map((k, n) => `<button class="opt" data-k="${k}"><span class="k">${LETTERS[n]}</span><span>${esc(w.options[k])}</span></button>`).join('')}</div>
+        </div>
+        <div id="fb2"></div>`;
+      const buttons = [...pane.querySelectorAll('.why .opt')];
+      buttons.forEach((b) => (b.onclick = () => {
+        const k = +b.dataset.k;
+        mark(buttons, w.answer, k);
+        const myths = [].concat(w.myth == null ? [] : w.myth);
+        const note = k === w.answer ? null : `${myths.includes(k) ? '🧠 To częsty mit! ' : ''}${(w.optionExplain && w.optionExplain[k]) || ''}`.trim() || null;
+        finalize(q, k === w.answer, note, '#fb2', true);
+      }));
+      bindSay(pane.querySelector('.why .qline'), () => ['Dobrze przewidziane! A dlaczego tak jest?', ...order.map((k, n) => `${LETTERS[n]}: ${w.options[k]}`)], true);
+      keyHandler = (e) => {
+        const n = LETTERS.indexOf(e.key.toUpperCase());
+        const d = parseInt(e.key, 10) - 1;
+        const idx = n >= 0 ? n : d;
+        if (idx >= 0 && idx < buttons.length) buttons[idx].click();
+      };
+    }
+
+    // note – wyjaśnienie wybranej złej odpowiedzi (optionExplain / mit); stage2 – wynik drugiego etapu „Dlaczego?”
+    function finalize(q, ok, note, target, stage2) {
       if (ok) {
         score++;
         // czas poprawienia – na innym urządzeniu to pytanie też zniknie z powtórki
@@ -1441,15 +1568,18 @@
       log(q.key.split('/')[0], ok ? 'ok' : 'bad');
       save();
       const last = i + 1 >= qs.length;
-      const wrongText = YOUNG ? 'Jeszcze nie. Dobra odpowiedź to:' : 'Niestety nie. Poprawna odpowiedź:';
-      pane.querySelector('#fb').innerHTML = `
+      const wrongText = stage2 ? 'Przewidywanie dobre, ale powód inny. Poprawny powód:' : YOUNG ? 'Jeszcze nie. Dobra odpowiedź to:' : 'Niestety nie. Poprawna odpowiedź:';
+      const rightText = stage2 ? q.why.options[q.why.answer] : q.options[q.answer];
+      const explain = stage2 ? q.why.explain || q.explain : q.explain;
+      pane.querySelector(target).innerHTML = `
         <div class="feedback ${ok ? 'ok' : 'bad'}">
-          <div class="qline"><strong>${ok ? praise() : `${wrongText} ${esc(q.options[q.answer])}`}</strong>${sayButton('Posłuchaj wyjaśnienia')}</div>
-          ${q.explain ? `<p>${esc(q.explain)}</p>` : ''}
+          <div class="qline"><strong>${ok ? praise() : `${wrongText} ${esc(rightText)}`}</strong>${sayButton('Posłuchaj wyjaśnienia')}</div>
+          ${note ? `<p>${esc(note)}</p>` : ''}
+          ${explain ? `<p>${esc(explain)}</p>` : ''}
         </div>
         <button class="btn primary" id="next">${last ? 'Zobacz wynik' : 'Dalej →'}</button>`;
-      const right = q.sayOptions ? q.sayOptions[q.answer] : q.options[q.answer];
-      bindSay(pane.querySelector('#fb .feedback'), () => [ok ? 'Dobrze!' : wrongText, ...(ok ? [] : [q.optLang ? [right, q.optLang] : right]), ...[].concat(q.sayExplain != null ? q.sayExplain : q.explain || '')], true);
+      const right = !stage2 && q.sayOptions ? q.sayOptions[q.answer] : rightText;
+      bindSay(pane.querySelector(`${target} .feedback`), () => [ok ? 'Dobrze!' : wrongText, ...(ok ? [] : [!stage2 && q.optLang ? [right, q.optLang] : right]), ...(note ? [note] : []), ...[].concat(!stage2 && q.sayExplain != null ? q.sayExplain : explain || '')], true);
       const next = pane.querySelector('#next');
       next.onclick = () => { i++; last ? finish() : show(); };
       next.focus();
@@ -1479,7 +1609,7 @@
           <a class="btn" href="${opts.backHref}">${esc(opts.backLabel)}</a>
         </div>
         ${mistakes.length ? `<div class="mistakes"><h2>Do zapamiętania</h2><ol>
-          ${mistakes.map((q) => `<li><b>${esc(q.q)}</b>${q.svg ? `<figure class="vis small">${q.svg}</figure>` : '<br>'}✔ ${esc(q.options[q.answer])}${q.explain ? `<br><span class="muted">${esc(q.explain)}</span>` : ''}</li>`).join('')}
+          ${mistakes.map((q) => `<li><b>${esc(q.q)}</b>${q.svg ? `<figure class="vis small">${q.svg}</figure>` : '<br>'}✔ ${esc(q.options[q.answer])}${q.why && !YOUNG ? ` – bo ${esc(q.why.options[q.why.answer])}` : ''}${q.explain ? `<br><span class="muted">${esc(q.explain)}</span>` : ''}</li>`).join('')}
         </ol></div>` : ''}`;
       const fix = pane.querySelector('#fix');
       if (fix) fix.onclick = () => quiz(pane, shuffle(mistakes), { ...opts, saveKey: null, onFinish: null, draw: null });

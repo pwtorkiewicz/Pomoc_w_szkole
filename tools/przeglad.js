@@ -51,7 +51,7 @@ const dane = require('./dane');
       page.on('dialog', (d) => d.accept());
       await page.goto(url);
       const data = await page.evaluate(() => ({
-        subjects: window.SUBJECTS.map((s) => ({ id: s.id, link: s.link, topics: s.topics.map((t) => t.id), infos: s.topics.filter((t) => t.infographic).map((t) => t.id), mats: s.topics.filter((t) => t.materials && t.materials.length).map((t) => t.id) })),
+        subjects: window.SUBJECTS.map((s) => ({ id: s.id, link: s.link, topics: s.topics.map((t) => t.id), infos: s.topics.filter((t) => t.infographic).map((t) => t.id), mats: s.topics.filter((t) => t.materials && t.materials.length).map((t) => t.id), acts: Object.fromEntries(s.topics.filter((t) => t.activities && t.activities.length).map((t) => [t.id, t.activities.map((x) => x.id)])) })),
         sets: (window.EXERCISES || []).map((e) => ({ subject: e.subject, mode: e.mode, id: e.id })),
       }));
       // przyciski 🔊 (ścieżki z czytaniem na głos): kliknij każdy widoczny – sprawdza, czy nie ma błędów JS
@@ -91,6 +91,12 @@ const dane = require('./dane');
           for (const tab of ['lekcja', 'teoria', 'fiszki', 'zadania']) await visit(`#/s/${s.id}/t/${t}/${tab}`, clickSay);
           if (s.infos.includes(t)) await visit(`#/s/${s.id}/t/${t}/pigulka`, clickSay);
           if (s.mats.includes(t)) await visit(`#/s/${s.id}/t/${t}/materialy`);
+          if (s.acts[t]) {
+            await visit(`#/s/${s.id}/t/${t}/zrob`);
+            for (const a of s.acts[t]) await visit(`#/s/${s.id}/t/${t}/zrob/${a}`, async () => { const c = await page.$('.crit input'); if (c) await c.click(); await page.click('#save'); });
+          }
+          // ramka „👪 Dla rodzica” (ścieżki z parentBox) – rozwiń, żeby sprawdzić szerokość
+          await visit(`#/s/${s.id}/t/${t}/teoria`, async () => { const d = await page.$('.parent-box > summary'); if (d) await d.click(); });
           await visit(`#/s/${s.id}/t/${t}/quiz`, async () => { await clickSay(); await page.click('.opt'); await clickSay(); });
         }
         const modes = [...new Set(data.sets.filter((e) => e.subject === s.id).map((e) => e.mode))];

@@ -22,107 +22,217 @@
         name: 'Magnesy',
         level: 1,
         age: [7, 9],
-        where: 'Anglia – science, Year 3 (dzieci 7–8 lat); Japonia – przyroda w 3. klasie szkoły podstawowej (8–9 lat); Singapur – science, Primary 3 (8–9 lat)',
-        basis: `Poza polską podstawą programową – ścieżka „Świat” (decyzja rodzica). Źródła (sprawdzone 14.11.2026): (1) ${SCI}, Year 3 „Forces and magnets” (wymagania obowiązkowe): „notice that some forces need contact between two objects, but magnetic forces can act at a distance”, „observe how magnets attract or repel each other and attract some materials and not others”, „compare and group together a variety of everyday materials on the basis of whether they are attracted to a magnet, and identify some magnetic materials”, „describe magnets as having two poles”, „predict whether two magnets will attract or repel each other, depending on which poles are facing”; Year 3 = dzieci 7–8 lat (gov.uk/national-curriculum). (2) ${JP_SHO}, 理科 (przyroda) 第3学年 A⑷ „磁石の性質”, s. 96: są przedmioty przyciągane i nieprzyciągane przez magnes, niektóre przedmioty zbliżone do magnesu same stają się magnesem, bieguny różnoimienne się przyciągają, jednoimienne odpychają; uwaga do realizacji: siła przyciągania zależy od odległości magnesu od przedmiotu; ${JP_WIEK}. (3) Singapur: Science Teaching and Learning Syllabus, Primary Three to Six (MOE, od rocznika P3 2023, aktualizacja styczeń 2026), P3 „Interaction of Forces (Magnets)”: „Magnets have two poles. A freely suspended bar magnet comes to rest pointing in a North-South direction. Unlike poles attract and like poles repel. Magnets attract magnetic materials.”, „Make a magnet by the stroke method and the electrical method”, „Recognise uses of magnets in everyday objects”; wiek: do Primary 1 w 2027 r. zapisuje się dzieci urodzone 2.01.2020–1.01.2021 (moe.gov.sg, P1 Registration), więc w Primary 3 dzieci mają 8–9 lat. Wiedza o magnesach – e-materiały zpe.gov.pl: „Co to jest magnes?” (dwa bieguny, jednakowe się odpychają, różne przyciągają; przedmioty zawierające żelazo są bardzo silnie przyciągane; magnesy w zatrzaskach szafek, silnikach, dynamach; po podzieleniu magnesu powstają dwa magnesy, bieguny zawsze występują parami), „Oddziaływania magnetyczne” (oddziaływanie na odległość; magnes przyciąga przedmioty ze stali i żelaza, a przedmioty z miedzi, złota, srebra i aluminium się nie poruszyły; drewniana linijka, kartka, gumka – w ćwiczeniu; najsilniej przy biegunach; magnes zawieszony na sznurku ustawia się wzdłuż linii północ–południe, biegun północny wskazuje północ; żelazo blisko magnesu uzyskuje własności magnetyczne), „Cechy linii pola magnetycznego” (pole maleje wraz z odległością od magnesu). Polska (tekst podstaw, 14.11.2026): w edukacji wczesnoszkolnej (Dz.U. 2024 poz. 996, I etap) magnesów nie ma; są w przyrodzie kl. IV–VI nowej podstawy (Dz.U. 2026 poz. 378, dz. 5 wym. 4) i w fizyce kl. VII–VIII (Dz.U. 2024 poz. 996, dz. VII). Metody elektrycznej z programu Singapuru nie opisujemy (to temat działu o obwodach). Sposób uczenia (pilotaż rozszerzonych źródeł, decyzja rodzica 14.11.2026): (4) Japonia – 小学校学習指導要領（平成29年告示）解説 理科編 (oficjalny komentarz MEXT do podstawy przyrody, mext.go.jp, plik 20211020-mxt_kyoiku02-100002607_05.pdf): s. 10 – tok lekcji przyrody „問題解決の過程”: zauważenie zjawiska, postawienie problemu, przewidywanie (hipoteza), plan sprawdzenia, obserwacja/doświadczenie, opracowanie wyników, wnioskowanie, wniosek; s. 13 i „第３学年” – w kl. 3 nacisk na porównywanie (różnice i podobieństwa) i stawianie pytań; s. 35–36 (magnesy): przykładanie magnesu do rzeczy z otoczenia i porównywanie, wyniki zapisywane w tabeli, wyczuwanie siły ręką, zbliżanie magnesu do igły kompasu (siła działa także przez odstęp), siła zależy od odległości, magnes swobodnie poruszający się – niezależnie od kształtu i wielkości – zatrzymuje się w kierunku północ–południe, koniec wskazujący północ nazwano N, południe – S; magnesy sztabkowe i podkowiaste; nie zbliżać do kart magnetycznych i rzeczy wrażliwych na magnes; magnesy w życiu codziennym; tłumaczenia – nasze. (5) Anglia – „Notes and guidance (non-statutory)” do Year 3 (${SCI}): różne magnesy („bar, ring, button and horseshoe”), porównanie siły magnesów w uczciwy sposób („finding a fair way to compare them”), sortowanie materiałów. Kompas z igły – e-materiał zpe.gov.pl „Jak działa kompas?” (igła do szycia, silny magnes, korek lub styropian, naczynie z wodą; kompas nie działa dobrze przy przedmiotach z żelaza i przy magnesach). Ostrzeżenie o połykaniu małych magnesów – komunikaty UOKiK o kulkach magnetycznych (treść znana tylko z wyników wyszukiwarki – strona archiwum.uokik.gov.pl niedostępna z sesji). Sposób liczenia spinaczy przy porównywaniu magnesów – nasz przykład.`,
+        where: 'Anglia – science, Year 3 (dzieci 7–8 lat); Japonia – przyroda w 3. klasie (8–9 lat); Singapur – science, Primary 3 (8–9 lat); Korea – przyroda w kl. 3–4 (projekt urządzenia z magnesem); USA – standardy NGSS dla grade 3',
+        basis: `Poza polską podstawą programową – ścieżka „Świat” (decyzja rodzica). Dział według standardu „różnicy” (decyzja rodzica 14.11.2026): wspólne z polską szkołą tylko jako przypomnienie, rdzeń – to, czego polska podstawa nie ma. POLSKA (tekst podstaw, eli.gov.pl, sprawdzone 14.11.2026): w edukacji wczesnoszkolnej – starej (Dz.U. 2024 poz. 996) i nowej (Dz.U. 2026 poz. 378: „bada działanie różnych sił, w tym grawitacji, tarcia, sprężystości i nacisku”; kompas tylko jako narzędzie) – magnesów nie ma; nowa przyroda kl. IV–VI, dz. 5 wym. 4: „bada i rozróżnia materiały magnetyczne, demonstruje oddziaływania magnetyczne, omawia zasadę działania kompasu i zjawisko ziemskiego magnetyzmu”; stara fizyka (dz. VII) – bieguny, kompas, elektromagnes fakultatywnie; nowa fizyka – tylko nazwanie sił magnetycznych. W żadnym z tekstów nie ma: zależności siły od odległości, działania przez materiały, namagnesowania przedmiotu, uczciwego porównania magnesów, projektu urządzenia z magnesem; elektromagnesu nie ma w nowej podstawie. Dzieci 7–9 lat (kl. I–III w 2026/2027) obejmie w kl. IV nowa podstawa (§ 4 rozporządzenia 2026 poz. 378). INNE KRAJE: (1) ${SCI}, Year 3 „Forces and magnets” (s. 19): wymagania obowiązkowe – „notice that some forces need contact between two objects, but magnetic forces can act at a distance”, „describe magnets as having two poles”, „predict whether two magnets will attract or repel each other, depending on which poles are facing”; wskazówki (non-statutory) – różne magnesy („bar, ring, button and horseshoe”), „exploring the strengths of different magnets and finding a fair way to compare them”; Year 3 = 7–8 lat (gov.uk/national-curriculum). (2) ${JP_SHO}, 理科 kl. 3 A⑷ (s. 96) i komentarz 小学校学習指導要領解説 理科編 (MEXT, s. 10, 35–37; s. 66–67 – elektromagnes w kl. 5): przyciągane i nieprzyciągane, przedmiot przy magnesie staje się magnesem, bieguny, siła zależy od odległości i działa przez odstęp, swobodny magnes każdego kształtu i wielkości staje północ–południe (stąd nazwy N i S), wyniki w tabeli, tok badacza, magnes z dala od kart magnetycznych; ${JP_WIEK}. (3) Singapur: Science Syllabus Primary Three to Six (MOE, aktualizacja 2026), P3 „Magnets”: „Make a magnet by the stroke method and the electrical method”; wiek – zapisy do Primary 1 (moe.gov.sg). (4) Korea: podstawa przyrody 2022 (moe.go.kr), kl. 3–4, [4과09-03] „자석을 이용하여 일상생활을 편리하게 하는 장치를 설계할 수 있다” (projektuje urządzenie z magnesem ułatwiające życie; projekt nie musi być zbudowany); w kl. 3–4 nie wprowadza się pojęcia pola magnetycznego; elektromagnes – kl. 5–6 [6과15-03]. (5) Standardy NGSS (przyjmowane przez część stanów USA; nextgenscience.org): 3-PS2-3 (siła zależy od odległości i ułożenia magnesów), 3-PS2-4 (problem projektowy, np. zatrzask drzwi), 3-5-ETS1 (kryteria, ograniczenia, porównanie rozwiązań, uczciwe testy). Sposób uczenia i typowe błędne przekonania dzieci – lekcje Oak National Academy, Year 3 „Simple forces including magnets” (thenational.academy; OGL v3.0, linkujemy, nie kopiujemy): „Magnetic force is a contact force.”, „Larger magnets are always stronger than smaller magnets.”, „All metals and silver coloured objects are magnetic…”, „Magnets can exert a force through paper, but not wood, a table, or other thick materials.”, „Magnetic poles may exist singly, not just in pairs.”, „The poles of all magnets are the ends.”; pomiar zasięgu linijką; rada: wynik inny niż przewidywany to nie „zepsute” badanie. Działanie przez karton i szkło – BBC Bitesize (Classroom Ideas). Wiedza o magnesach – ZPE („Co to jest magnes?”, „Oddziaływania magnetyczne”, „Jak działa kompas?”, „Cechy linii pola magnetycznego”). Bezpieczeństwo – UOKiK, komunikaty o kulkach magnetycznych z 26.03.2021 i 17.12.2021 (archiwum.uokik.gov.pl). Research 14.11.2026: 111 ustaleń sprawdzonych przez drugiego, niezależnego weryfikatora. Tłumaczenia – nasze. Liczby w widżecie i karcie pracy (kratki, centymetry) to przykład, nie reguła.`,
         theory: `
-          <h3>Jak to jest na świecie?</h3>
-          <p>W <b>Anglii</b>, <b>Japonii</b> i <b>Singapurze</b> dzieci w wieku 7–9 lat badają <b>magnesy</b> na lekcjach przyrody.</p>
-          <h3>Jak uczą tego w Japonii?</h3>
-          <p>Japońska lekcja przyrody to praca <b>badacza</b>:</p>
-          <p><b>👀 zauważ → ❓ zapytaj → 🤔 przewiduj → 🔬 sprawdź → 📝 zapisz → 💡 wniosek</b></p>
-          <p>W 3. klasie najważniejsze jest <b>porównywanie</b>: czym rzeczy się różnią, a co mają wspólnego. Dzieci przykładają magnes do rzeczy z klasy i zapisują wyniki w <b>tabeli</b>. Czują ręką, jak magnes ciągnie. Zbliżają magnes do igły kompasu.</p>
-          <h3>Jak uczą tego w Anglii?</h3>
-          <p>Dzieci poznają różne magnesy: <b>sztabkowy</b>, <b>pierścieniowy</b>, <b>guzikowy</b> i <b>podkowę</b>. Szukają <b>uczciwego sposobu</b>, żeby porównać, który jest najsilniejszy – np. każdy magnes podnosi <b>te same</b> spinacze.</p>
-          <h3>Co przyciąga magnes?</h3>
-          <p>✅ Rzeczy z <b>żelaza</b> i ze <b>stali</b>: gwóźdź, spinacz, szpilkę.</p>
-          <p>❌ Drewna, papieru, gumki do ścierania.</p>
-          <p class="tip">Niespodzianka! Nie każdy metal. Miedzi, złota, srebra i aluminium (np. folii aluminiowej) magnes nie przyciąga.</p>
-          <h3>Dwa bieguny</h3>
-          <p>Każdy magnes ma <b>dwa bieguny</b>: północny <b>N</b> i południowy <b>S</b>. Przy biegunach przyciąga najmocniej.</p>
+          <p class="tip">🇵🇱 <b>W polskiej szkole</b> o magnesach uczysz się na przyrodzie w klasach 4–6. Tu najpierw krótkie przypomnienie, a potem to, czego uczą dzieci w innych krajach – a w polskiej szkole tego nie ma.</p>
+          <h3>Przypomnienie</h3>
           <ul>
-            <li><b>Różne</b> bieguny (N i S) – <b>przyciągają się</b>.</li>
-            <li><b>Takie same</b> (N i N, S i S) – <b>odpychają się</b>.</li>
+            <li>Magnes przyciąga <b>żelazo</b> i <b>stal</b>. Nie każdy metal – aluminium i miedzi nie.</li>
+            <li>Każdy magnes ma <b>dwa bieguny</b>: N i S. Różne się przyciągają, takie same odpychają.</li>
+            <li>Magnes, który może się swobodnie obracać – duży czy mały, sztabka czy podkowa – staje <b>północ–południe</b>. Koniec, który pokazuje północ, nazwano <b>N</b>.</li>
           </ul>
-          <p>Przetniesz magnes na pół? Dostaniesz <b>dwa magnesy</b> – każdy ma N i S.</p>
-          <h3>Siła na odległość</h3>
-          <p>Magnes przyciąga spinacz, nawet gdy go <b>nie dotyka</b>. Im <b>bliżej</b>, tym mocniej.</p>
-          <h3>Magnes na nitce</h3>
-          <p>Zawieś magnes na nitce. Sam ustawi się w kierunku <b>północ–południe</b>. Duży czy mały, sztabka czy podkowa – <b>zawsze</b> tak samo. Koniec, który pokazuje <b>północ</b>, nazwano <b>N</b> (biegun północny), a ten od południa – <b>S</b>. Tak działa igła kompasu.</p>
-          <h3>Gwóźdź jak magnes</h3>
-          <p>Żelazny gwóźdź przy magnesie <b>sam staje się magnesem</b> i przyciąga spinacze. W Singapurze dzieci robią magnes z gwoździa – <b>pocierają go magnesem</b>.</p>
-          <h3>🔬 Zrób w domu: kompas z igły</h3>
-          <p>Z pomocą dorosłego – igła jest ostra! Potrzyj igłę do szycia silnym magnesem. Wbij ją w korek (albo połóż na kawałku styropianu) i połóż na wodzie w misce. Igła obróci się i pokaże <b>północ–południe</b>. Trzymaj z daleka inne magnesy i rzeczy z żelaza – psują wynik.</p>
-          <h3>Gdzie są magnesy?</h3>
-          <p>W zatrzaskach drzwiczek szafek, w silnikach, w dynamie rowerowym, na drzwiach lodówki.</p>
+          <h3>🌍 1. Im dalej, tym słabiej – zmierz to!</h3>
+          <p>Japonia: siła magnesu zależy od <b>odległości</b>. Anglia: dzieci mierzą linijką, z jak daleka magnes przyciągnie spinacz. Magnes działa też <b>bez dotykania</b> – przez szczelinę.</p>
+          <h3>🌍 2. Obróć magnes – zmienia się kierunek siły</h3>
+          <p>USA: to, czy magnesy się przyciągną, czy odepchną, zależy od tego, jak je <b>ułożysz</b>. Obrócisz jeden – przyciąganie zmieni się w odpychanie.</p>
+          <h3>🌍 3. Większy nie znaczy silniejszy</h3>
+          <p>Anglia: po wielkości ani kształcie <b>nie poznasz</b>, który magnes jest silniejszy. Trzeba sprawdzić – <b>uczciwie</b>: zmieniasz tylko magnes, a spinacz, linijka i sposób pomiaru zostają te same.</p>
+          <h3>🌍 4. Przez co działa magnes?</h3>
+          <p>Siła magnesu przechodzi przez <b>papier</b>, <b>cienką tekturę</b>, <b>plastik</b> i <b>szkło</b>. Przez grubą deskę może już nie przyciągnąć – bo to duża odległość.</p>
+          <h3>🌍 5. Żelazo przy magnesie samo staje się magnesem</h3>
+          <p>Japonia: gwóźdź przyczepiony do magnesu sam przyciąga spinacze. Singapur: dzieci robią magnes, <b>pocierając</b> gwóźdź magnesem.</p>
+          <h3>🌍 6. Magnesy mają różne kształty</h3>
+          <p>Anglia: sztabkowy, pierścieniowy, guzikowy, podkowa. <b>Nie każdy magnes ma bieguny na końcach</b> – znajdziesz je drugim magnesem: sprawdź, gdzie przyciąga, a gdzie odpycha.</p>
+          <h3>🌍 7. Zapowiedź: magnes na prąd</h3>
+          <p>Japonia (5. klasa), Korea (5.–6. klasa), Singapur: <b>elektromagnes</b> działa tylko wtedy, gdy płynie prąd – można go włączać i wyłączać. Tylko oglądamy – nie buduj go sam w domu. Więcej w dziale o obwodach.</p>
+          <h3>Jak uczą tego w Japonii?</h3>
+          <p><b>👀 zauważ → ❓ zapytaj → 🤔 przewiduj → 🔬 sprawdź → 📝 zapisz → 💡 wniosek.</b> Wyniki trafiają do tabeli. Wynik inny, niż przewidziałeś, to nie błąd – to odkrycie.</p>
           <h3>Uważaj!</h3>
           <ul>
-            <li>Nie zbliżaj magnesu do <b>kart z paskiem magnetycznym</b> – mogą się zepsuć.</li>
-            <li>Małych magnesów (np. kulek magnetycznych) <b>nigdy nie bierz do ust</b>. Połknięte magnesy mogą się przyciągnąć w brzuchu i bardzo zaszkodzić – wtedy od razu do lekarza.</li>
+            <li>Używaj zwykłych magnesów (sztabkowych, z lodówki) – <b>nie małych kulek magnetycznych</b>.</li>
+            <li>Magnesów <b>nigdy nie bierz do ust</b>. Połknięte magnesy mogą się przyciągnąć w brzuchu i bardzo zaszkodzić – od razu do lekarza.</li>
+            <li>Nie zbliżaj magnesu do <b>kart z paskiem magnetycznym</b>.</li>
           </ul>`,
-        infographicNote: 'Na górze – kto uczy się o magnesach. Niżej – co magnes potrafi.',
+        infographicNote: 'Na górze – przypomnienie. Niżej – czego uczą dzieci w innych krajach, a w polskiej szkole tego nie ma.',
         infographic: {
           type: 'karty', kolumny: 2,
-          top: { kolor: 4, title: '🌍 Anglia, Japonia, Singapur', text: 'dzieci 7–9 lat badają magnesy' },
+          top: { kolor: 4, title: '🇵🇱 Przypomnienie (przyroda kl. 4–6)', text: 'żelazo i stal tak, aluminium nie; N i S; magnes staje północ–południe' },
           items: [
-            { icon: '📎', kolor: 3, title: 'Przyciąga', text: 'żelazo i stal' },
-            { icon: '🪵', kolor: 2, title: 'Nie przyciąga', text: 'drewna, papieru, miedzi' },
-            { icon: '🧲', kolor: 1, title: 'Dwa bieguny', text: 'N i S' },
-            { icon: '🤝', kolor: 3, title: 'N i S', text: 'przyciągają się' },
-            { icon: '↔️', kolor: 2, title: 'N i N, S i S', text: 'odpychają się' },
-            { icon: '🧭', kolor: 5, title: 'Na nitce', text: 'N pokazuje północ' },
+            { icon: '📏', kolor: 1, title: 'Im dalej', text: 'tym słabiej – zmierz linijką' },
+            { icon: '🔄', kolor: 1, title: 'Obróć magnes', text: 'przyciąganie zmienia się w odpychanie' },
+            { icon: '⚖️', kolor: 3, title: 'Większy?', text: 'nie zawsze silniejszy – sprawdź uczciwie' },
+            { icon: '📄', kolor: 3, title: 'Przez papier', text: 'i cienką tekturę magnes działa' },
+            { icon: '🔩', kolor: 5, title: 'Gwóźdź', text: 'przy magnesie sam staje się magnesem' },
+            { icon: '⚡', kolor: 5, title: 'Elektromagnes', text: 'działa, gdy płynie prąd' },
           ],
-          bottom: { kolor: 4, title: '💡 Gwóźdź przy magnesie', text: 'sam staje się magnesem' },
+          bottom: { kolor: 2, title: '👀 → ❓ → 🤔 → 🔬 → 📝 → 💡', text: 'badaj jak japoński uczeń' },
         },
+        parent: {
+          goal: 'Dziecko bada magnesy jak badacz: najpierw przewiduje, potem sprawdza i zapisuje. Nowe względem polskiej podstawy: siła maleje z odległością, działa przez papier i tekturę, po wielkości nie poznasz siły magnesu, ułożenie zmienia kierunek siły, żelazo przy magnesie samo staje się magnesem, projekt urządzenia z magnesem.',
+          time: 'lekcja ok. 15 minut; doświadczenie ok. 20 minut; projekt ok. 30 minut',
+          mistakes: [
+            '„Magnes przyciąga każdy metal i wszystko, co srebrne” – nie: aluminium (np. folia) i miedź nie.',
+            '„Magnes działa tylko wtedy, gdy dotyka.”',
+            '„Większy magnes jest zawsze silniejszy.”',
+            '„Magnes działa przez papier, ale przez nic grubszego” – przez cienką tekturę i szkło też; gruba deska to po prostu duża odległość.',
+            '„Biegun może być sam, bez pary.”',
+            '„Bieguny każdego magnesu są na końcach.”',
+          ],
+          avoid: [
+            'Zamiast „magnes przyciąga metal” mów: „przyciąga żelazo i stal”.',
+            'Wynik inny niż przewidywany to nie błąd – chwal za uczciwy zapis.',
+            'Linii pola magnetycznego nie wprowadzaj – w Korei w tym wieku też ich nie ma.',
+          ],
+          prepare: [
+            '1–2 zwykłe magnesy (sztabkowy albo z lodówki) – nie kulki magnetyczne',
+            'stalowe spinacze, linijka, kartka papieru, kawałek tektury, folia aluminiowa',
+            'wydrukowana karta z zakładki 🛠️ Zrób',
+          ],
+          talk: [
+            'Dlaczego magnes trzyma się drzwi lodówki, a nie drewnianych drzwi?',
+            'Jak uczciwie sprawdzić, który z dwóch magnesów jest silniejszy?',
+            'Gdzie w domu magnes coś trzyma zamknięte?',
+            'Co byłoby inaczej, gdyby magnes działał tylko przy dotyku?',
+          ],
+        },
+        activities: [
+          {
+            id: 'zt9qv0', kind: 'doswiadczenie', title: 'Jak daleko sięga magnes?', time: '20 minut', adult: true,
+            intro: 'Badaj jak japoński uczeń: zapytaj, przewiduj, sprawdź, zapisz i wyciągnij wniosek.',
+            safety: ['Używaj zwykłego magnesu (sztabkowego albo z lodówki) – nie małych kulek magnetycznych.', 'Magnesów nigdy nie bierz do ust – nawet na chwilę.', 'Trzymaj magnes z dala od kart z paskiem magnetycznym.', 'Policz magnesy przed doświadczeniem i po nim – żaden nie może się zgubić.'],
+            needs: ['1–2 magnesy', 'stalowy spinacz', 'linijka', 'kartka papieru i kawałek cienkiej tektury', 'wydrukowana karta'],
+            steps: [
+              '❓ Zapytaj: z jakiej odległości mój magnes przyciągnie spinacz?',
+              '🤔 Przewiduj: wpisz w tabeli przy każdej odległości „tak” albo „nie”.',
+              '🔬 Połóż magnes przy początku linijki, a spinacz na 6 cm. Sprawdź, czy przyskoczy. Potem połóż go na 5 cm, 4 cm… aż do 1 cm.',
+              '📝 Zapisz wynik przy każdej odległości.',
+              '⚖️ Uczciwie: zawsze ten sam spinacz, ta sama linijka i ten sam koniec magnesu.',
+              '🔁 Powtórz z drugim magnesem. Który przyciąga z dalszej odległości? Czy to ten większy?',
+              '📄 Dla chętnych: połóż spinacz na kartce, a magnes pod spodem. Potem spróbuj z tekturą. Czy magnes dalej ciągnie spinacz?',
+            ],
+            table: { cols: ['Odległość', 'Przewiduję: przyciągnie?', 'Wynik'], rows: ['6 cm', '5 cm', '4 cm', '3 cm', '2 cm', '1 cm'] },
+            conclusion: 'Im dalej spinacz, tym … Mój magnes przyciąga z … cm. Większy magnes był / nie był silniejszy.',
+            expected: 'Blisko magnes przyciąga, a od pewnej odległości już nie – im dalej, tym słabiej. Ta odległość jest różna dla różnych magnesów i nie zależy tylko od ich wielkości. Przez kartkę i cienką tekturę magnes zwykle dalej działa. Wynik inny niż przewidywanie to nie błąd – to odkrycie.',
+            source: 'Japonia – komentarz MEXT do przyrody kl. 3 (siła zależy od odległości, wyniki w tabeli); Anglia – lekcja Oak National Academy „Magnetic force at a distance” (pomiar linijką; OGL v3.0) i wskazówki do programu Year 3 (uczciwe porównanie magnesów)',
+          },
+          {
+            id: 'hzqwr6', kind: 'projekt', title: 'Magnetyczny zatrzask do pudełka', time: '30 minut', adult: true,
+            intro: 'Drzwiczki pudełka same się otwierają. Zaprojektuj zatrzask z magnesem – w Korei dzieci projektują urządzenia z magnesem, które ułatwiają życie, a w USA na przykład zatrzask do drzwi.',
+            safety: ['Tnij tylko nożyczkami dla dzieci – grubą tekturę tnie dorosły.', 'Używaj zwykłych magnesów, nie małych kulek magnetycznych. Magnesów nie bierz do ust.', 'Policz magnesy przed pracą i po niej.'],
+            needs: ['pudełko z kartonu (np. po butach)', '2 magnesy albo magnes i stalowy spinacz', 'taśma klejąca', 'nożyczki dla dzieci'],
+            constraints: ['najwyżej 2 magnesy', 'najwyżej 20 minut budowania', 'możesz też tylko narysować projekt – w Korei to też się liczy'],
+            steps: [
+              'Narysuj dwa pomysły, np. magnes + magnes albo magnes + spinacz.',
+              'Przewiduj: który będzie trzymał mocniej?',
+              'Zbuduj pierwszy pomysł i przetestuj: potrząśnij lekko pudełkiem, a potem otwórz je jedną ręką.',
+              'Zbuduj drugi pomysł i przetestuj go tak samo.',
+              'Zapisz, co się nie udało, i popraw lepszy pomysł.',
+            ],
+            criteria: [
+              'Pudełko nie otwiera się samo, gdy lekko nim potrząśniesz.',
+              'Da się je otworzyć jedną ręką.',
+              'Porównałeś dwa pomysły tym samym testem.',
+              'Umiesz powiedzieć, co z magnesami wykorzystałeś, np. bieguny albo odległość.',
+            ],
+            table: { cols: ['Pomysł', 'Trzyma przy potrząsaniu?', 'Otwiera się jedną ręką?'], rows: ['Pomysł 1', 'Pomysł 2'] },
+            conclusion: 'Lepszy był pomysł …, bo …',
+            source: 'Korea – podstawa przyrody 2022, kl. 3–4, wymaganie [4과09-03]; standardy NGSS 3-PS2-4 (zatrzask drzwi) i 3-5-ETS1 (kryteria, ograniczenia, porównanie rozwiązań, testy)',
+          },
+          {
+            id: '058jla', kind: 'doswiadczenie', title: 'Kompas z igły', time: '15 minut', adult: true,
+            intro: 'Żelazo przy magnesie samo staje się magnesem. Sprawdź to – i zrób własny kompas.',
+            safety: ['Igła jest ostra – pociera ją i wbija w korek dorosły.', 'Miska z wodą z dala od telefonu i komputera.', 'Magnesów nie bierz do ust.'],
+            needs: ['igła do szycia', 'magnes', 'korek albo kawałek styropianu', 'miska z wodą'],
+            steps: [
+              'Dorosły pociera igłę jednym końcem magnesu – około 25 razy, zawsze w tę samą stronę.',
+              'Dorosły wbija igłę w korek (albo kładzie ją na styropianie).',
+              'Połóż korek na wodzie w misce i poczekaj, aż się zatrzyma.',
+              'Obróć miskę delikatnie. Co robi igła?',
+              'Odsuń inne magnesy i rzeczy z żelaza – psują wynik.',
+            ],
+            table: { cols: ['Próba', 'W którą stronę pokazuje igła?'], rows: ['1', '2', '3'] },
+            conclusion: 'Igła potarta magnesem stała się … i zawsze pokazuje …',
+            expected: 'Igła stała się magnesem, więc na wodzie obraca się i zatrzymuje w kierunku północ–południe – za każdym razem tak samo.',
+            source: 'ZPE – „Jak działa kompas?” (kompas z igły, korka i miski z wodą); Singapur – sylabus P3 (magnes metodą pocierania); Japonia – komentarz MEXT kl. 3 (przedmiot przy magnesie staje się magnesem)',
+          },
+        ],
         materials: [
           { type: 'film', title: 'Co to jest magnes? – film o biegunach', url: 'https://zpe.gov.pl/a/co-to-jest-magnes/D7sD8pXPF', source: 'ZPE (zpe.gov.pl) – przyroda, „Świat pod lupą”', license: 'filmy CC BY 3.0', note: 'Film: dwa magnesy zbliżane tymi samymi i różnymi biegunami. Niżej film z opiłkami żelaza wokół magnesu i zdjęcie magnetytu – kamienia, który przyciąga żelazo.', expect: 'Co to jest magnes?' },
           { type: 'film', title: 'Jak działa kompas? – i jak zrobić własny', url: 'https://zpe.gov.pl/a/jak-dziala-kompas/DiTVdtwnf', source: 'ZPE (zpe.gov.pl) – przyroda, „Świat pod lupą”', license: 'filmy CC BY 3.0', note: 'Dwa filmy: igła kompasu ucieka za magnesem; kompas z igły, korka i miski z wodą – krok po kroku.', expect: 'Jak działa kompas?' },
-          { type: 'lekcja', title: 'What is a magnet? – ta sama lekcja po angielsku', url: 'https://zpe.gov.pl/a/what-is-a-magnet/D11clcRTO', lang: 'en', source: 'ZPE (zpe.gov.pl) – fizyka, wersja angielska', note: 'Dla chętnych: tekst i nagranie po angielsku – słowa poles, north, south, attract.', expect: 'What is a magnet?' },
-          { type: 'dokument', forParent: true, title: 'Komentarz do podstawy przyrody (Japonia, MEXT) – magnesy: s. 35–36, tok lekcji: s. 10', url: 'https://www.mext.go.jp/content/20211020-mxt_kyoiku02-100002607_05.pdf', lang: 'ja', source: 'Ministerstwo edukacji Japonii (MEXT), 小学校学習指導要領解説 理科編' },
+          { type: 'lekcja', title: 'Magnetic force at a distance – siła na odległość', url: 'https://www.thenational.academy/pupils/programmes/science-primary-year-3/units/simple-forces-including-magnets/lessons/magnetic-force-at-a-distance/overview', lang: 'en', source: 'Oak National Academy (Anglia, publiczna platforma lekcji) – Year 3', license: 'OGL v3.0', note: 'Lekcja z filmem dla 7–8-latków: spinacz „wisi w powietrzu” na nitce, pomiar zasięgu linijką. Po angielsku – oglądaj z dorosłym.', expect: 'Magnetic force at a distance' },
+          { type: 'lekcja', title: 'Putting magnets together – przyciągną się czy odepchną?', url: 'https://www.thenational.academy/pupils/programmes/science-primary-year-3/units/simple-forces-including-magnets/lessons/putting-magnets-together-attract-or-repel/overview', lang: 'en', source: 'Oak National Academy (Anglia) – Year 3', license: 'OGL v3.0', note: 'Lekcja z filmem: najpierw przewidujesz, potem sprawdzasz, które bieguny się przyciągają. Po angielsku – z dorosłym.', expect: 'attract or repel' },
+          { type: 'lekcja', title: 'Blocking magnetic force – czy siłę magnesu da się zatrzymać?', url: 'https://www.thenational.academy/pupils/programmes/science-primary-year-3/units/simple-forces-including-magnets/lessons/blocking-magnetic-force/overview', lang: 'en', source: 'Oak National Academy (Anglia) – Year 3', license: 'OGL v3.0', note: 'Lekcja z filmem: labirynt z magnesem pod spodem i próby z różnymi materiałami. Po angielsku – z dorosłym.', expect: 'Blocking magnetic force' },
+          { type: 'lekcja', title: 'Which is the strongest magnet? – który magnes jest najsilniejszy?', url: 'https://www.thenational.academy/pupils/programmes/science-primary-year-3/units/simple-forces-including-magnets/lessons/strongest-magnet-non-statutory/overview', lang: 'en', source: 'Oak National Academy (Anglia) – Year 3', license: 'OGL v3.0', note: 'Lekcja z filmem o uczciwym porównaniu magnesów. Po angielsku – z dorosłym.', expect: 'strongest' },
+          { type: 'lekcja', title: 'What is a magnet? – lekcja ZPE po angielsku', url: 'https://zpe.gov.pl/a/what-is-a-magnet/D11clcRTO', lang: 'en', source: 'ZPE (zpe.gov.pl) – fizyka, wersja angielska', note: 'Dla chętnych: tekst i nagranie po angielsku – słowa poles, north, south, attract.', expect: 'What is a magnet?' },
+          { type: 'dokument', forParent: true, title: 'Komentarz do podstawy przyrody (Japonia, MEXT) – magnesy: s. 35–37, tok lekcji: s. 10, elektromagnes: s. 66–67', url: 'https://www.mext.go.jp/content/20211020-mxt_kyoiku02-100002607_05.pdf', lang: 'ja', source: 'Ministerstwo edukacji Japonii (MEXT), 小学校学習指導要領解説 理科編' },
           { type: 'dokument', forParent: true, title: 'Program przyrody Anglii, key stages 1–2 – Year 3 „Forces and magnets” (s. 19)', url: 'https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study', lang: 'en', source: 'Department for Education (gov.uk)' },
+          { type: 'dokument', forParent: true, title: 'Jednostka Oak „Simple forces including magnets” – 12 lekcji, cele i typowe błędne przekonania', url: 'https://www.thenational.academy/teachers/programmes/science-primary-ks2/units/simple-forces-including-magnets/lessons', lang: 'en', source: 'Oak National Academy (strona dla nauczyciela)', license: 'OGL v3.0' },
+          { type: 'dokument', forParent: true, title: 'Standardy NGSS 3-PS2-3 i 3-PS2-4 (siła magnesu, problem projektowy)', url: 'https://www.nextgenscience.org/pe/3-ps2-4-motion-and-stability-forces-and-interactions', lang: 'en', source: 'Next Generation Science Standards (nextgenscience.org)' },
           { type: 'dokument', forParent: true, title: 'Sylabus przyrody Singapuru, Primary 3–6 – „Magnets”', url: 'https://www.moe.gov.sg/media/files/primary/syllabus/ba3562d3-5b31-4459-8693-45cde7b97273.pdf', lang: 'en', source: 'Ministry of Education Singapore (moe.gov.sg)' },
+          { type: 'strona', forParent: true, title: 'UOKiK: Niebezpieczne zabawki – kulki magnetyczne', url: 'https://archiwum.uokik.gov.pl/aktualnosci.php?news_id=17329', source: 'Urząd Ochrony Konkurencji i Konsumentów (26.03.2021)', expect: 'magnetyczne' },
         ],
         flashcards: [
-          ['Magnes przyciąga…', '…żelazo i stal: gwóźdź, spinacz, szpilkę'],
-          ['Magnes nie przyciąga…', '…drewna, papieru, gumki – ani miedzi, złota i srebra'],
-          ['Ile biegunów ma magnes?', 'dwa: północny N i południowy S'],
-          ['N i S', 'przyciągają się'],
-          ['N i N albo S i S', 'odpychają się'],
-          ['Gdzie magnes przyciąga najmocniej?', 'przy biegunach – na końcach'],
-          ['Bliżej czy dalej?', 'im bliżej magnesu, tym mocniej przyciąga'],
-          ['Magnes na nitce', 'ustawia się północ–południe; N pokazuje północ'],
-          ['Przecięty magnes', 'dwa magnesy – każdy ma N i S'],
+          ['Magnes przyciąga…', '…żelazo i stal – ale nie każdy metal: aluminium i miedzi nie'],
+          ['Bieguny magnesu', 'dwa: N i S – różne się przyciągają, takie same odpychają'],
+          ['Skąd nazwa N?', 'N to koniec magnesu, który pokazuje północ'],
+          ['Im dalej od magnesu…', '…tym słabiej przyciąga'],
+          ['Czy magnes musi dotykać?', 'nie – działa też na odległość'],
+          ['Obrócisz jeden magnes…', '…przyciąganie zmienia się w odpychanie'],
+          ['Większy magnes', 'nie zawsze jest silniejszy – trzeba sprawdzić'],
+          ['Uczciwe porównanie magnesów', 'zmieniasz tylko magnes; spinacz, linijka i sposób pomiaru – te same'],
+          ['Przez co działa magnes?', 'przez papier, cienką tekturę, plastik, szkło'],
           ['Gwóźdź przy magnesie', 'sam staje się magnesem'],
           ['Magnes z gwoździa (Singapur)', 'gwóźdź pocierany magnesem staje się magnesem'],
-          ['Badacz po japońsku', 'zauważ → zapytaj → przewiduj → sprawdź → zapisz → wniosek'],
-          ['Skąd nazwa N?', 'N to koniec magnesu, który pokazuje północ'],
           ['Kompas z igły', 'igła potarta magnesem, na korku na wodzie – pokazuje północ–południe'],
-          ['Uczciwe porównanie magnesów', 'każdy magnes sprawdzasz tak samo – np. tymi samymi spinaczami'],
-          ['Uważaj!', 'magnes z dala od kart z paskiem; małych magnesów nie bierz do ust'],
+          ['Rodzaje magnesów', 'sztabkowy, pierścieniowy, guzikowy, podkowa – nie każdy ma bieguny na końcach'],
+          ['Elektromagnes', 'magnes, który działa tylko wtedy, gdy płynie prąd'],
+          ['Badacz po japońsku', 'zauważ → zapytaj → przewiduj → sprawdź → zapisz → wniosek'],
+          ['Uważaj!', 'magnesów nie bierz do ust; z dala od kart z paskiem'],
         ],
         questions: [
+          // przypomnienie (polska przyroda kl. 4–6)
           { id: 'a4w5cu', q: 'Który przedmiot przyciągnie magnes?', options: ['żelazny gwóźdź', 'drewniana linijka', 'kartka papieru'], answer: 0, explain: 'Magnes przyciąga rzeczy z żelaza i ze stali. Drewna i papieru nie przyciąga.' },
-          { id: 'hp7wuw', q: 'Którego przedmiotu magnes NIE przyciągnie?', options: ['gumki do ścierania', 'stalowego spinacza', 'stalowej szpilki'], answer: 0, explain: 'Spinacz i szpilka są ze stali – magnes je przyciąga. Gumki nie przyciąga.' },
-          { id: '4hnpxw', q: 'Czy magnes przyciąga każdy metal?', options: ['nie – np. miedzi nie przyciąga', 'tak – przyciąga każdy metal', 'tylko metale srebrnego koloru'], answer: 0, explain: 'Magnes przyciąga żelazo i stal. Miedzi, złota, srebra i aluminium nie przyciąga.' },
+          { id: 'mqhpve', q: 'Folia aluminiowa jest srebrna i błyszczy. Czy magnes ją przyciągnie?', options: ['nie', 'tak'], answer: 0, explain: 'Nie. Magnes przyciąga żelazo i stal, a aluminium – nie. Nie każdy metal jest przyciągany.',
+            why: { options: ['magnes przyciąga żelazo i stal, a nie aluminium', 'folia jest za cienka, żeby magnes ją uniósł', 'magnes przyciąga tylko to, co już dotyka'], answer: 0, myth: 2, explain: 'Liczy się, z czego coś jest zrobione: żelazo i stal tak, aluminium nie. Kolor i połysk nic nie mówią.', optionExplain: ['', 'Nawet gruba aluminiowa puszka nie zostanie przyciągnięta – to nie kwestia grubości.', 'Magnes działa też na odległość – przyciąga spinacz, zanim go dotknie.'] } },
           { id: 't2ebns', q: 'Ile biegunów ma każdy magnes?', options: ['2', '1', '4'], answer: 0, explain: 'Każdy magnes ma dwa bieguny: północny N i południowy S.', sayExplain: 'Każdy magnes ma dwa bieguny: północny i południowy.' },
           { id: '9gbx8l', q: 'Zbliżasz dwa magnesy: biegun N do bieguna S. Co się stanie?', say: 'Zbliżasz dwa magnesy: biegun północny do bieguna południowego. Co się stanie?', options: ['przyciągną się', 'odepchną się', 'nic się nie stanie'], answer: 0, explain: 'Różne bieguny się przyciągają.' },
           { id: '4svvxe', q: 'Zbliżasz dwa magnesy: biegun S do bieguna S. Co się stanie?', say: 'Zbliżasz dwa magnesy: biegun południowy do bieguna południowego. Co się stanie?', options: ['odepchną się', 'przyciągną się', 'nic się nie stanie'], answer: 0, explain: 'Takie same bieguny się odpychają.' },
-          { id: 'ukmkol', q: 'Prawda czy fałsz?\nMagnes może przyciągnąć spinacz, nawet gdy go nie dotyka.', options: TF, noShuffle: true, answer: 0, explain: 'Prawda. Siła magnesu działa na odległość – spinacz sam podskoczy do magnesu.' },
-          { id: 'bxvz7v', q: 'Gdzie magnes przyciąga najmocniej?', options: ['na końcach – przy biegunach', 'w samym środku magnesu', 'wszędzie tak samo mocno'], answer: 0, explain: 'Najwięcej spinaczy zbiera się na końcach magnesu, przy biegunach. Tam siła jest największa.' },
-          { id: 'ympxs7', q: 'Magnes nie może podnieść spinacza z daleka. Co zrobić?', options: ['przybliżyć magnes', 'odsunąć magnes dalej', 'odwrócić spinacz'], answer: 0, explain: 'Im bliżej magnesu, tym mocniej przyciąga.' },
           { id: 'cob8ap', q: 'Magnes wisi na nitce i może się swobodnie kręcić. Jak się ustawi?', options: ['północ–południe', 'wschód–zachód', 'zawsze w stronę okna'], answer: 0, explain: 'Swobodnie zawieszony magnes ustawia się w kierunku północ–południe. Tak działa kompas.' },
-          { id: 'gk7bjn', q: 'Magnes wisi na nitce. W którą stronę świata pokazuje jego biegun N?', say: 'Magnes wisi na nitce. W którą stronę świata pokazuje jego biegun północny?', options: ['na północ', 'na południe', 'na wschód'], answer: 0, explain: 'Biegun północny magnesu pokazuje północ.' },
-          { id: '902bvu', q: 'Przecinasz magnes na pół. Co dostajesz?', options: ['dwa magnesy, każdy z N i S', 'osobno N i osobno S', 'dwa kawałki bez magnesu'], sayOptions: ['dwa magnesy, każdy z biegunem północnym i południowym', 'osobno biegun północny i osobno południowy', 'dwa kawałki bez magnesu'], answer: 0, explain: 'Z jednego magnesu powstają dwa. Każdy ma oba bieguny – bieguny zawsze są parami.' },
+          { id: 'etxtzv', q: 'Dlaczego jeden koniec magnesu nazywa się N, czyli biegun północny?', say: 'Dlaczego jeden koniec magnesu nazywa się biegunem północnym?', options: ['bo pokazuje północ', 'bo jest cięższy', 'bo jest zawsze czerwony'], answer: 0, explain: 'Swobodnie zawieszony magnes pokazuje jednym końcem północ – ten koniec nazwano N, biegun północny.', sayExplain: 'Swobodnie zawieszony magnes pokazuje jednym końcem północ – ten koniec nazwano biegunem północnym.' },
+          { id: 'xubvl9', q: 'Mały magnes i duży magnes-podkowa wiszą swobodnie. Jak się ustawią?', options: ['oba północ–południe', 'tylko duży północ–południe', 'każdy w inną stronę'], answer: 0, explain: 'Każdy magnes – duży czy mały, sztabka czy podkowa – ustawia się w kierunku północ–południe.' },
+          // 1. odległość
+          { id: 'ukmkol', q: 'Prawda czy fałsz?\nMagnes może przyciągnąć spinacz, nawet gdy go nie dotyka.', options: TF, noShuffle: true, answer: 0, explain: 'Prawda. Siła magnesu działa na odległość – spinacz sam podskoczy do magnesu.' },
+          { id: '2eymme', q: 'Spinacz leży tuż obok silnego magnesu, ale go nie dotyka. Co się stanie?', options: ['spinacz przyskoczy do magnesu', 'spinacz zostanie w miejscu'], answer: 0, explain: 'Siła magnesu działa też na odległość. Z bliska przyciąga mocno.',
+            why: { options: ['siła magnesu działa też na odległość', 'magnes przyciąga tylko wtedy, gdy dotyka', 'spinacz zawsze toczy się w stronę metalu'], answer: 0, myth: 1, explain: 'Magnes nie musi dotykać. Im bliżej, tym mocniej przyciąga.', optionExplain: ['', 'Gdyby tak było, spinacz nie podskoczyłby do magnesu – a podskakuje.', 'Spinacz nie rusza się sam w stronę metalu – ciągnie go magnes.'] } },
+          { id: 'ympxs7', q: 'Magnes nie może podnieść spinacza z daleka. Co zrobić?', options: ['przybliżyć magnes', 'odsunąć magnes dalej', 'odwrócić spinacz'], answer: 0, explain: 'Im bliżej magnesu, tym mocniej przyciąga.' },
+          { id: '6wg3w1', q: 'Tabela Kuby: 1 cm – przyciąga, 2 cm – przyciąga, 3 cm – przyciąga, 4 cm – nie, 5 cm – nie. Z jakiej odległości magnes Kuby przyciąga spinacz?', say: 'Tabela Kuby: z jednego, dwóch i trzech centymetrów magnes przyciąga, z czterech i pięciu centymetrów – nie. Z jakiej odległości magnes Kuby przyciąga spinacz?', options: ['z 3 cm i bliżej', 'z 4 cm i bliżej', 'z każdej odległości'], sayOptions: ['z trzech centymetrów i bliżej', 'z czterech centymetrów i bliżej', 'z każdej odległości'], answer: 0, explain: 'Do 3 cm magnes przyciągał, od 4 cm już nie. Jego zasięg to 3 cm – im dalej, tym słabiej.' },
+          { id: 'b4i6jy', q: 'Zbliżasz magnes do igły kompasu, ale jej nie dotykasz. Co zrobi igła?', options: ['poruszy się', 'będzie stała bez ruchu'], answer: 0, explain: 'Igła kompasu to mały magnes. Twój magnes działa na nią przez szczelinę.',
+            why: { options: ['siła magnesu działa przez szczelinę', 'igłę poruszył podmuch z ręki', 'igła rusza się tylko przy dotyku'], answer: 0, myth: 2, explain: 'Japońskie dzieci sprawdzają to właśnie kompasem: magnes działa, choć nie dotyka.', optionExplain: ['', 'Igła rusza się także wtedy, gdy trzymasz rękę nieruchomo – działa magnes, nie wiatr.', 'Magnes nie musi dotykać – działa na odległość.'] } },
+          // 2. ułożenie
+          { id: 'zsub6c', q: 'Dwa magnesy się przyciągały. Obracasz jeden z nich na drugą stronę. Co się stanie?', options: ['odepchną się', 'dalej się przyciągną', 'oba przestaną działać'], answer: 0, explain: 'Po obróceniu naprzeciw siebie są takie same bieguny – odpychają się.',
+            why: { options: ['zmieniło się ułożenie biegunów', 'obrócony magnes zawsze słabnie', 'obracanie wyłącza magnes'], answer: 0, explain: 'Przyciągają się różne bieguny, odpychają takie same. Obracając magnes, zmieniasz, który biegun jest naprzeciw.', optionExplain: ['', 'Magnes po obróceniu jest tak samo silny – zmienia się tylko kierunek siły.', 'Magnes działa dalej – teraz odpycha, zamiast przyciągać.'] } },
+          { id: 'x1taom', q: 'Magnes A wisi na nitce. Biegun N magnesu B odpycha jeden koniec magnesu A. Zbliżasz ten sam biegun N do drugiego końca magnesu A. Co się stanie?', say: 'Magnes A wisi na nitce. Biegun północny magnesu B odpycha jeden koniec magnesu A. Zbliżasz ten sam biegun do drugiego końca magnesu A. Co się stanie?', options: ['przyciągną się', 'też się odepchną', 'nic się nie stanie'], answer: 0, explain: 'Na drugim końcu magnesu A jest drugi biegun – S. A N i S się przyciągają.',
+            why: { options: ['na drugim końcu jest drugi biegun', 'cały magnes A jest biegunem N', 'drugi koniec nie ma żadnej siły'], answer: 0, myth: 1, explain: 'Bieguny zawsze są parami: jeden koniec N, drugi S.', optionExplain: ['', 'Biegun nigdy nie jest sam – każdy magnes ma i N, i S.', 'Drugi koniec to też biegun – i przyciąga albo odpycha tak samo mocno.'] } },
+          { id: '80j4m8', q: 'Magnes ma kształt pierścienia. Jak znajdziesz jego bieguny?', options: ['sprawdzę drugim magnesem', 'są na pewno na końcach', 'pierścień nie ma biegunów'], answer: 0, explain: 'Każdy magnes ma dwa bieguny, ale nie każdy ma je na końcach. Drugi magnes pokaże, gdzie przyciąga, a gdzie odpycha.' },
+          // 3. większy ≠ silniejszy, uczciwe porównanie
+          { id: '8r8l95', q: 'Ola ma duży magnes i mały magnes. Który jest silniejszy?', options: ['trzeba to sprawdzić', 'na pewno ten duży', 'na pewno ten mały'], answer: 0, explain: 'Po wielkości ani kształcie nie poznasz siły magnesu. Sprawdź: z jak daleka przyciąga albo ile spinaczy utrzyma.' },
+          { id: 'tvd2s8', q: 'Chcesz uczciwie sprawdzić, który z dwóch magnesów jest silniejszy. Jak?', options: ['oba sprawdzam tymi samymi spinaczami', 'każdy sprawdzam innymi rzeczami', 'wybieram ten, który jest ładniejszy'], answer: 0, explain: 'Uczciwe porównanie: wszystko tak samo, zmienia się tylko magnes. Np. liczysz, ile tych samych spinaczy utrzyma każdy z nich.' },
+          { id: 'r4ht9b', q: 'Porównujesz zasięg dwóch magnesów. Co musi zostać takie samo w obu próbach?', options: ['spinacz i linijka', 'ten sam magnes', 'nic – wszystko może się zmieniać'], answer: 0, explain: 'Zmieniasz tylko to, co porównujesz – magnes. Spinacz, linijka i sposób pomiaru zostają te same. Tak wygląda uczciwy test.' },
+          // 4. przez co działa
+          { id: '2zg2q9', q: 'Spinacz leży na cienkiej tekturze, a magnes jest pod spodem. Przesuwasz magnes. Co zrobi spinacz?', options: ['pojedzie za magnesem', 'zostanie w miejscu'], answer: 0, explain: 'Siła magnesu przechodzi przez cienką tekturę – możesz prowadzić spinacz jak po labiryncie.',
+            why: { options: ['siła magnesu przechodzi przez tekturę', 'tektura zatrzymuje siłę magnesu', 'spinacz zsuwa się, bo tektura jest śliska'], answer: 0, myth: 1, explain: 'Magnes działa przez papier, cienką tekturę, plastik i szkło. Przez grubą deskę może nie przyciągnąć – bo to duża odległość.', optionExplain: ['', 'Cienka tektura nie zatrzymuje siły magnesu – spinacz jedzie za magnesem.', 'Spinacz porusza się tam, gdzie magnes – a nie w dół, jak przy zsuwaniu.'] } },
+          // 5. namagnesowanie
           { id: 'iwun7k', q: 'Do magnesu przyczepił się żelazny gwóźdź. Co teraz potrafi gwóźdź?', options: ['sam przyciąga spinacze', 'przyciąga drewniane klocki', 'nic – to zwykły gwóźdź'], answer: 0, explain: 'Żelazo przy magnesie samo staje się magnesem. Gwóźdź przyciąga spinacze.' },
           { id: 'z0r2mi', q: 'Jak dzieci w Singapurze robią magnes z żelaznego gwoździa?', options: ['pocierają go magnesem', 'malują go na czerwono', 'moczą go w wodzie'], answer: 0, explain: 'Program Singapuru mówi: zrób magnes metodą pocierania – gwóźdź pociera się magnesem.' },
-          { id: 'd2heuc', q: 'Gdzie w domu jest magnes?', options: ['w zatrzasku drzwiczek szafki', 'w drewnianej łyżce do zupy', 'w szklance do picia wody'], answer: 0, explain: 'Magnes w zatrzasku trzyma drzwiczki szafki zamknięte.' },
-          { id: 'mqhpve', q: 'Folia aluminiowa to metal. Czy magnes ją przyciągnie?', options: ['nie', 'tak'], answer: 0, explain: 'Nie! Magnes przyciąga żelazo i stal, a aluminium – nie. Nie każdy metal jest przyciągany.' },
-          { id: 'xubvl9', q: 'Mały magnes i duży magnes-podkowa wiszą swobodnie. Jak się ustawią?', options: ['oba północ–południe', 'tylko duży północ–południe', 'każdy w inną stronę'], answer: 0, explain: 'Każdy magnes – duży czy mały, sztabka czy podkowa – ustawia się w kierunku północ–południe.' },
-          { id: 'etxtzv', q: 'Dlaczego jeden koniec magnesu nazywa się N, czyli biegun północny?', say: 'Dlaczego jeden koniec magnesu nazywa się biegunem północnym?', options: ['bo pokazuje północ', 'bo jest cięższy', 'bo jest zawsze czerwony'], answer: 0, explain: 'Swobodnie zawieszony magnes pokazuje jednym końcem północ – ten koniec nazwano N, biegun północny.', sayExplain: 'Swobodnie zawieszony magnes pokazuje jednym końcem północ – ten koniec nazwano biegunem północnym.' },
-          { id: 'iidode', q: 'Japońscy uczniowie badają magnesy jak badacze. Co robią zaraz przed doświadczeniem?', options: ['przewidują, co się stanie', 'piszą wniosek', 'uczą się wyniku na pamięć'], answer: 0, explain: 'Najpierw przewiduję, potem sprawdzam doświadczeniem, zapisuję wynik i dopiero wtedy piszę wniosek.' },
-          { id: 'tvd2s8', q: 'Chcesz uczciwie sprawdzić, który z dwóch magnesów jest silniejszy. Jak?', options: ['oba sprawdzam tymi samymi spinaczami', 'każdy sprawdzam innymi rzeczami', 'wybieram ten, który jest ładniejszy'], answer: 0, explain: 'Uczciwe porównanie: wszystko tak samo, zmienia się tylko magnes. Np. liczysz, ile tych samych spinaczy utrzyma każdy z nich.' },
           { id: 'gxzt6r', q: 'Jak zrobić kompas z igły do szycia?', options: ['potrzeć igłę magnesem i położyć na korku na wodzie', 'pomalować igłę farbą i położyć ją na stole', 'włożyć igłę na całą noc do zamrażarki'], answer: 0, explain: 'Igła potarta magnesem sama staje się magnesem. Na korku na wodzie może się swobodnie obracać – pokaże północ–południe.' },
+          { id: '902bvu', q: 'Przecinasz magnes na pół. Co dostajesz?', options: ['dwa magnesy, każdy z N i S', 'osobno N i osobno S', 'dwa kawałki bez magnesu'], sayOptions: ['dwa magnesy, każdy z biegunem północnym i południowym', 'osobno biegun północny i osobno południowy', 'dwa kawałki bez magnesu'], answer: 0, explain: 'Z jednego magnesu powstają dwa. Każdy ma oba bieguny – bieguny zawsze są parami.' },
+          // magnes w pracy, zapowiedź elektromagnesu
+          { id: '0dgx3v', q: 'W sortowni na taśmie jadą puszki stalowe i aluminiowe. Co wyciągnie magnes zawieszony nad taśmą?', options: ['tylko puszki stalowe', 'wszystkie puszki', 'żadnej puszki'], answer: 0, explain: 'Magnes przyciąga stal, a aluminium – nie. Tak w sortowniach oddziela się stal od innych odpadów.' },
+          { id: 'vis1nn', q: 'Czym elektromagnes różni się od zwykłego magnesu?', options: ['działa tylko wtedy, gdy płynie prąd', 'przyciąga też aluminium i miedź', 'działa tylko wtedy, gdy jest pod wodą'], answer: 0, explain: 'Elektromagnes można włączać i wyłączać prądem. Japońskie dzieci budują go w 5. klasie – ty na razie tylko oglądasz, nie buduj go sam.' },
+          // metoda badacza, bezpieczeństwo
+          { id: 'iidode', q: 'Japońscy uczniowie badają magnesy jak badacze. Co robią zaraz przed doświadczeniem?', options: ['przewidują, co się stanie', 'piszą wniosek', 'uczą się wyniku na pamięć'], answer: 0, explain: 'Najpierw przewiduję, potem sprawdzam doświadczeniem, zapisuję wynik i dopiero wtedy piszę wniosek.' },
           { id: 'wg9rlw', q: 'Czego NIE zbliżać do magnesu?', options: ['karty z paskiem magnetycznym', 'drewnianego klocka z zabawek', 'kartki papieru z zeszytu'], answer: 0, explain: 'Magnes może zepsuć kartę z paskiem magnetycznym. Drewnu i papierowi nic nie zrobi.' },
-          { id: 'j3vhck', q: 'Ile lat mają dzieci w Anglii, gdy w Year 3 badają magnesy?', say: ['Ile lat mają dzieci w Anglii, gdy w', ['Year 3', 'en'], 'badają magnesy?'], options: ['7–8 lat', '3–4 lata', '14–15 lat'], sayOptions: ['7 do 8 lat', '3 do 4 lat', '14 do 15 lat'], answer: 0, explain: 'Year 3 to dzieci w wieku 7–8 lat.' },
         ],
       },
       // ------------------------------------------------------------------

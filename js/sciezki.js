@@ -61,6 +61,7 @@ window.TRACKS = [
     color: '#1f8fb3',
     group: 'swiat',
     deviceYoung: true,
+    parentBox: true, // ramka „👪 Dla rodzica” w dziale: podstawa, źródła, wskazówki (js/app.js)
     intro: 'Wybierz temat. Działy idą od najłatwiejszych (🌱) do trudniejszych (🌳). W każdym zobaczysz, <b>gdzie na świecie się tego uczą</b> i co warto zrobić <b>wcześniej</b> (📌).',
   },
 ];

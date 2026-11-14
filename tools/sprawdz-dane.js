@@ -2,6 +2,8 @@
  * - każde pytanie ma stałe, unikalne (w całej aplikacji, we wszystkich ścieżkach) pole id,
  * - poprawny indeks odpowiedzi, brak powtórzonych odpowiedzi,
  * - unikalne id działów w przedmiocie; pola level (1–3), age ([od, do]) i requires (istniejące działy) w ścieżce „Świat”,
+ * - pytania „Przewiduj i wyjaśnij” (pole why: drugi etap „Dlaczego?”, myth, optionExplain),
+ * - karty „🛠️ Zrób” (pole activities: doświadczenie/projekt, obowiązkowe safety i source), ramka „👪 Dla rodzica” (pole parent),
  * - materiały działu (pole materials): typ, tytuł, źródło, adres https z listy zaufanych serwisów (MATERIAL_HOSTS),
  * - zadania otwarte (pole tasks): id, punkty, kroki rozwiązania, odpowiedź, zasady punktacji,
  * - zestawy ćwiczeń (window.EXERCISES): tryb, tekst/nagrania, zadania zamknięte, wpisywane i otwarte. */
@@ -22,7 +24,8 @@ const LANGS = ['pl', 'en', 'de']; // jak LANGS w js/app.js
 // Zakładka „🔗 Materiały” (docs/LEKCJE.md → „Materiały”): tylko oficjalne lub publiczne serwisy edukacyjne.
 // Nowy serwis dopisuj świadomie – po sprawdzeniu, że jest oficjalny/publiczny i bezpieczny dla dzieci.
 const MATERIAL_HOSTS = ['zpe.gov.pl', 'gov.pl', 'www.gov.pl', 'eli.gov.pl', 'cke.gov.pl', 'www.gov.uk', 'assets.publishing.service.gov.uk',
-  'www.mext.go.jp', 'www.moe.gov.sg', 'www.lehrplanplus.bayern.de', 'www.thenational.academy', 'www.bbc.co.uk', 'www.nhk.or.jp', 'www2.nhk.or.jp', 'edu.web.nhk'];
+  'www.mext.go.jp', 'www.moe.gov.sg', 'www.lehrplanplus.bayern.de', 'www.thenational.academy', 'www.bbc.co.uk', 'www.nhk.or.jp', 'www2.nhk.or.jp', 'edu.web.nhk',
+  'www.nextgenscience.org', 'archiwum.uokik.gov.pl'];
 const MATERIAL_TYPES = ['film', 'animacja', 'zdjecia', 'prezentacja', 'doswiadczenie', 'lekcja', 'dokument', 'strona']; // jak MAT_TYPES w js/app.js
 const MATERIAL_LANGS = ['pl', 'en', 'ja', 'de']; // jak MAT_LANGS w js/app.js
 const checkSpeech = (q, where) => {
@@ -90,8 +93,38 @@ for (const track of wczytaj.sciezki()) {
           if (!(Number.isInteger(q.answer) && q.answer >= 0 && q.answer < q.options.length)) problems.push(`${where}: zły indeks odpowiedzi`);
           if (new Set(q.options).size !== q.options.length) problems.push(`${where}: powtórzone odpowiedzi`);
           checkSpeech(q, where);
+          if (q.optionExplain != null && !(Array.isArray(q.optionExplain) && q.optionExplain.length === q.options.length)) problems.push(`${where}: optionExplain – po jednym tekście (albo '') na każdą odpowiedź`);
+          // „🔮 Przewiduj i wyjaśnij”: drugi etap „Dlaczego?” – dokładnie jedna poprawna odpowiedź, mit ≠ poprawna
+          if (q.why != null) {
+            const w = q.why;
+            if (!w || !Array.isArray(w.options) || w.options.length < 2) problems.push(`${where}: why – za mało odpowiedzi`);
+            else {
+              if (!(Number.isInteger(w.answer) && w.answer >= 0 && w.answer < w.options.length)) problems.push(`${where}: why – zły indeks odpowiedzi`);
+              if (new Set(w.options).size !== w.options.length) problems.push(`${where}: why – powtórzone odpowiedzi`);
+              if (!w.explain) problems.push(`${where}: why – brak explain`);
+              const myths = [].concat(w.myth == null ? [] : w.myth);
+              if (myths.some((m) => !Number.isInteger(m) || m < 0 || m >= w.options.length || m === w.answer)) problems.push(`${where}: why.myth – indeks błędnej odpowiedzi (nie poprawnej)`);
+              if (w.optionExplain != null && !(Array.isArray(w.optionExplain) && w.optionExplain.length === w.options.length)) problems.push(`${where}: why.optionExplain – po jednym tekście na każdą odpowiedź`);
+            }
+          }
         }
       });
+      // karty „🛠️ Zrób”: doświadczenie albo projekt – bezpieczeństwo i źródło pomysłu obowiązkowe
+      (t.activities || []).forEach((a, i) => {
+        const where = `${track.id}/${s.id}/${t.id} karta ${i + 1} („${String(a.title).slice(0, 40)}”)`;
+        useId(a.id, where);
+        if (!['doswiadczenie', 'projekt'].includes(a.kind)) problems.push(`${where}: kind musi być 'doswiadczenie' albo 'projekt'`);
+        if (!a.title || !a.source) problems.push(`${where}: brak tytułu albo źródła pomysłu (source)`);
+        if (!Array.isArray(a.safety) || !a.safety.length) problems.push(`${where}: brak listy safety (bezpieczeństwo)`);
+        if (!Array.isArray(a.steps) || a.steps.length < 2) problems.push(`${where}: co najmniej 2 kroki`);
+        if (a.needs != null && !Array.isArray(a.needs)) problems.push(`${where}: needs musi być listą`);
+        if (a.table != null && !(a.table && Array.isArray(a.table.cols) && a.table.cols.length >= 2 && Array.isArray(a.table.rows) && a.table.rows.length >= 1)) problems.push(`${where}: table – cols (min. 2) i rows (min. 1)`);
+        if (a.kind === 'projekt' && !(Array.isArray(a.criteria) && a.criteria.length >= 2 && a.criteria.length <= 6)) problems.push(`${where}: projekt – 2–6 kryteriów (criteria)`);
+      });
+      if (t.parent != null) {
+        const p = t.parent;
+        for (const f of ['mistakes', 'avoid', 'prepare', 'talk']) if (p[f] != null && !(Array.isArray(p[f]) && p[f].every((x) => typeof x === 'string' && x))) problems.push(`${track.id}/${s.id}/${t.id}: parent.${f} musi być listą tekstów`);
+      }
       if (t.cardLang != null && !(Array.isArray(t.cardLang) && t.cardLang.length === 2 && t.cardLang.every((l) => LANGS.includes(l)))) problems.push(`${track.id}/${s.id}/${t.id}: cardLang musi być parą języków, np. ['en', 'pl']`);
       (t.tasks || []).forEach((x, i) => {
         nt++;

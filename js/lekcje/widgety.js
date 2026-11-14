@@ -296,5 +296,69 @@ window.WIDGETS = (() => {
     draw();
   }
 
-  return { pitagoras, procent, kostka, kolo, zegar, tabliczka, monety, kalendarz };
+
+  // --- Laboratorium magnesów (ścieżka „Świat”, dział Magnesy): odległość i ułożenie magnesu B; najpierw przewidywanie, potem wynik ---
+  // p.d – odległość startowa (kratki 1–6), p.zasieg – do ilu kratek magnesy „działają” w tym przykładzie (domyślnie 3)
+  function magnesy(el, p) {
+    const zasieg = p.zasieg || 3;
+    let flip = false;
+    let guess = null;
+    const trials = [];
+    const NAMES = { p: 'przyciągną się', o: 'odepchną się', n: 'nic – za daleko' };
+    el.innerHTML = `<div class="svgbox"></div>
+      <div class="controls">${slider('md', 'odległość (kratki):', 1, 6, p.d || 2)}<button class="btn" id="mflip">🔄 Obróć magnes B</button></div>
+      <div class="controls" id="mguess"><span>Co się stanie?</span><button class="btn" data-g="p">🤝 przyciągną się</button><button class="btn" data-g="o">↔️ odepchną się</button><button class="btn" data-g="n">😴 nic – za daleko</button></div>
+      <div class="readout"></div><div class="mlog"></div>`;
+    const box = el.querySelector('.svgbox');
+    const out = el.querySelector('.readout');
+    const dist = () => +el.querySelector('#md').value;
+    const result = (d) => (d > zasieg ? 'n' : flip ? 'o' : 'p');
+    function draw() {
+      const d = dist();
+      el.querySelector('#md-v').textContent = d;
+      const bx = 110 + d * 28;
+      const right = result(d);
+      const left = flip ? ['S', 'N'] : ['N', 'S'];
+      const len = 12 + (zasieg + 1 - d) * 6;
+      let arrows = '';
+      if (guess && right === 'p') arrows = `<path d="M60,30 H${60 + len}" class="ln sw" marker-end="url(#a-wd-mag)"/><path d="M${bx + 45},30 H${bx + 45 - len}" class="ln sw" marker-end="url(#a-wd-mag)"/>`;
+      if (guess && right === 'o') arrows = `<path d="M60,30 H${60 - len}" class="ln sw" marker-end="url(#a-wd-mag)"/><path d="M${bx + 45},30 H${bx + 45 + len}" class="ln sw" marker-end="url(#a-wd-mag)"/>`;
+      let ticks = '';
+      for (let k = 0; k <= 6; k++) ticks += `<line x1="${110 + k * 28}" y1="102" x2="${110 + k * 28}" y2="110" class="ln-thin"/>${k ? `<text x="${110 + k * 28}" y="128" class="tx-s" text-anchor="middle">${k}</text>` : ''}`;
+      box.innerHTML = `<svg viewBox="0 0 400 140" role="img" aria-label="Magnes A: biegun N po lewej, S po prawej. Magnes B w odległości ${d} kratek, zwrócony do magnesu A biegunem ${left[0]}.${guess ? ` Wynik: ${NAMES[right]}.` : ''}">
+        <defs><marker id="a-wd-mag" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+        <rect x="20" y="50" width="45" height="40" class="f2 s2 sw"/><rect x="65" y="50" width="45" height="40" class="f1 s1 sw"/>
+        <rect x="${bx}" y="50" width="45" height="40" class="${left[0] === 'N' ? 'f2 s2' : 'f1 s1'} sw"/><rect x="${bx + 45}" y="50" width="45" height="40" class="${left[1] === 'N' ? 'f2 s2' : 'f1 s1'} sw"/>
+        <g class="tx-b" text-anchor="middle"><text x="42" y="77">N</text><text x="87" y="77">S</text><text x="${bx + 22}" y="77">${left[0]}</text><text x="${bx + 67}" y="77">${left[1]}</text></g>
+        <g class="tx-s" text-anchor="middle"><text x="65" y="44">A</text><text x="${bx + 45}" y="44">B</text></g>
+        <line x1="110" y1="106" x2="278" y2="106" class="ln-thin"/>${ticks}${arrows}
+      </svg>`;
+    }
+    function reset() {
+      guess = null;
+      out.innerHTML = 'Ustaw magnes B, a potem przewidź: co się stanie?';
+      draw();
+    }
+    function renderLog() {
+      const ICON = { p: '🤝', o: '↔️', n: '😴' };
+      el.querySelector('.mlog').innerHTML = trials.length ? `<table class="worksheet"><tr><th>Biegun B</th><th>Kratki</th><th>Przewidziałem</th><th>Wynik</th></tr>
+        ${trials.slice(-6).map((t) => `<tr><td>${t.pole}</td><td>${t.d}</td><td>${ICON[t.g]}</td><td>${ICON[t.r]}${t.g === t.r ? ' ✅' : ''}</td></tr>`).join('')}</table>
+        <p class="muted">🤝 przyciągną się · ↔️ odepchną się · 😴 nic</p>` : '';
+    }
+    el.querySelector('#md').oninput = reset;
+    el.querySelector('#mflip').onclick = () => { flip = !flip; reset(); };
+    el.querySelectorAll('#mguess .btn').forEach((b) => (b.onclick = () => {
+      guess = b.dataset.g;
+      const d = dist();
+      const r = result(d);
+      trials.push({ pole: flip ? 'S' : 'N', d, g: guess, r });
+      const why = { p: 'Biegun S magnesu A i biegun N magnesu B to różne bieguny – przyciągają się.', o: 'Dwa bieguny S naprzeciw siebie – takie same bieguny się odpychają.', n: `Za daleko – w tym przykładzie magnesy działają tylko do ${zasieg} kratek. Im dalej, tym słabiej.` }[r];
+      out.innerHTML = `${guess === r ? '✅ Dobrze przewidziane!' : '🤔 Wyszło inaczej – to też odkrycie!'} ${why}`;
+      draw();
+      renderLog();
+    }));
+    reset();
+  }
+
+  return { pitagoras, procent, kostka, kolo, zegar, tabliczka, monety, kalendarz, magnesy };
 })();
