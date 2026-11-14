@@ -1,6 +1,6 @@
 /* 🌍 Świat – nauka z innych krajów: maszyny i konstrukcje.
  * Ścieżka POZA polską podstawą programową (decyzja rodzica, 14.11.2026; plan: docs/PLAN-swiat.md).
- * Działy ułożone według tematów, nie klas: level (1–3), requires ('przedmiot/dział'), where – gdzie się tego uczą.
+ * Działy ułożone według tematów, nie klas: level (1–3), age ([od, do] – sugerowany wiek), requires ('przedmiot/dział'), where – gdzie się tego uczą.
  * Fakty o szkołach za granicą – tylko z dokumentów ministerstw (adresy w polu basis i w js/dane/swiat/zrodla.js). */
 (function () {
   const DT = 'National curriculum in England: design and technology programmes of study, key stages 1 and 2 (Department for Education, wrzesień 2013, gov.uk – obowiązujący, sprawdzone 14.11.2026)';
@@ -17,6 +17,7 @@
         id: 'mechanizmy',
         name: 'Mechanizmy: dźwignia, krążek, koła zębate, krzywka',
         level: 2,
+        age: [9, 12],
         where: 'Anglia – design and technology, key stage 2 (dzieci 7–11 lat): mechanizmy w projektowanych zabawkach i urządzeniach',
         basis: `Poza polską podstawą programową – ścieżka „Świat” (decyzja rodzica). Źródło: ${DT}, key stage 2, „Technical knowledge”: „understand and use mechanical systems in their products [for example, gears, pulleys, cams, levers and linkages]”. Key stage 2 = uczniowie w wieku 7–11 lat (Year 3–6), design and technology – przedmiot obowiązkowy w szkole podstawowej: strony gov.uk „The national curriculum” (overview, key stage 1 and 2), sprawdzone 14.11.2026. Fakty o mechanizmach sprawdzone 14.11.2026 w e-materiałach zpe.gov.pl: „Maszyny proste. Wyznaczanie masy ciała przy użyciu dźwigni dwustronnej” (dźwignia jednostronna i dwustronna, punkt podparcia, ramię siły, „mała siła może zrównoważyć dużą siłę, jeśli ma odpowiednio duże ramię”, mniejsza siła – dłuższa droga, taczki jako dźwignia jednostronna, blok nieruchomy: nie zmienia wartości siły, zmienia jej kierunek) oraz „Podstawy budowy maszyn i urządzeń do obróbki metali i tworzyw sztucznych” (przekładnia zębata: stosunek prędkości obrotowych równy ilorazowi liczby zębów, zmniejszenie prędkości – wzrost momentu; mechanizm krzywkowy: krzywka na wałku popycha popychacz, ruch powtarza się co obrót) i „Słownik pojęć” do e-materiału o montażu (koła zębate zmieniają prędkość i kierunek obrotu). Przeciwny kierunek obrotu dwóch zazębionych kół – wynika z zazębienia (rysunek w lekcji). Linkages (połączenia dźwigni) pominięto.`,
         theory: `

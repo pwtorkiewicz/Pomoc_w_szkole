@@ -7,6 +7,7 @@ Cel (decyzja rodzica, 14.11.2026): dzieci poznają to, czego uczą się ich rów
 - **Osobna ścieżka, nie przedmiot w klasach** (decyzja rodzica, 14.11.2026 – zmiana względem pilotażu). Na ekranie wyboru jest przełącznik **🇵🇱 Polska szkoła / 🌍 Świat** (`group` w `js/sciezki.js`, `window.TRACK_GROUPS`). Ścieżki klas zostają czysto według polskiej podstawy. Powód: programy różnych krajów różnie rozkładają materiał na lata, więc dopasowanie „polska klasa = klasa za granicą” było sztywne – dział mógł wymagać wiedzy, której polskie dziecko jeszcze nie miało.
 - **Działy według tematów, nie klas.** Przedmioty ścieżki to wątki tematyczne (niżej). W każdym działy idą od podstaw do trudniejszych. Pola działu:
   - `level` – 1 🌱 na start, 2 🌿 średni, 3 🌳 trudniejszy;
+  - `age: [od, do]` – **sugerowany wiek dziecka** (decyzja rodzica, 14.11.2026), pokazywany dyskretnie obok poziomu: „🌱 Poziom 1 – na start · 8–10 lat”. Ustalamy go redakcyjnie: wiek uczniów, którzy uczą się tematu za granicą, i to, jak trudny jest nasz dział (ton, obliczenia). Obowiązkowy w każdym dziale z poziomem;
   - `requires: ['przedmiot/dział', …]` – „📌 Najpierw zrób” (link, ✅ gdy przerobiony; nic nie jest blokowane);
   - `where` – „🌍 Gdzie się tego uczą”: kraj(e) i wiek uczniów, np. „Japonia – kl. 3 (8–9 lat); Anglia – Year 4 (8–9 lat)”.
   Kraj **nie jest w nazwie działu** – nazwa mówi o temacie, kraje są w `where` i w ściądze („Jak to jest w …?”). Dzięki temu dział może łączyć kilka krajów.
@@ -24,10 +25,10 @@ Cel (decyzja rodzica, 14.11.2026): dzieci poznają to, czego uczą się ich rów
 
 | Wątek (id przedmiotu) | Działy – od najłatwiejszego (✅ zrobione) |
 |---|---|
-| 🔢 Liczenie po świecie (`liczenie`) | ✅ Tabliczka mnożenia do 12 × 12 (🌱, Anglia) · [ ] Soroban – japońskie liczydło (🌱, Japonia) · [ ] 4 kroki rozwiązywania zadań – Pólya (🌿, Singapur) |
-| ⚙️ Maszyny i konstrukcje (`maszyny`) | [ ] Huśtawka i równowaga (🌱, Bawaria, Korea) · ✅ Mechanizmy: dźwignia, krążek, koła zębate, krzywka (🌿, Anglia) · [ ] Mosty i trójkąty (🌿, Bawaria, Szwajcaria, Anglia) · [ ] Pojazd: napęd, kierownica, hamulec (🌿, Korea) · [ ] Maszyny proste i złota reguła mechaniki (🌳, Szwajcaria, Anglia) |
+| 🔢 Liczenie po świecie (`liczenie`) | ✅ Tabliczka mnożenia do 12 × 12 (🌱 8–10 lat, Anglia) · [ ] Soroban – japońskie liczydło (🌱, Japonia) · [ ] 4 kroki rozwiązywania zadań – Pólya (🌿, Singapur) |
+| ⚙️ Maszyny i konstrukcje (`maszyny`) | [ ] Huśtawka i równowaga (🌱, Bawaria, Korea) · ✅ Mechanizmy: dźwignia, krążek, koła zębate, krzywka (🌿 9–12 lat, Anglia) · [ ] Mosty i trójkąty (🌿, Bawaria, Szwajcaria, Anglia) · [ ] Pojazd: napęd, kierownica, hamulec (🌿, Korea) · [ ] Maszyny proste i złota reguła mechaniki (🌳, Szwajcaria, Anglia) |
 | ⚡ Elektryczność i sterowanie (`elektrycznosc`) | [ ] Magnesy (🌱, Japonia, Singapur, Anglia) · [ ] Czy żarówka się zaświeci? Obwód (🌱, Japonia, Anglia) · [ ] Obwody szeregowe i równoległe, elektromagnes (🌿, Japonia, Szwajcaria) · [ ] Z czego jest robot (🌿, Estonia, Korea, Finlandia) · [ ] Czujniki i sterowanie (🌳, Japonia, Korea, Szwajcaria, Anglia) |
-| 💻 Informacja i algorytmy (`informacja`) | [ ] Algorytm z warunkiem (🌱, Estonia, Australia) · [ ] Obrazek z zer i jedynek (🌿, USA) · [ ] Kody wykrywające błędy (🌿, Szwajcaria) · ✅ Logika i bramki logiczne (🌳, Anglia) · [ ] Półsumator i dodawanie dwójkowe (🌳, Bawaria, Anglia; wymaga: bramki) · [ ] Wyszukiwanie binarne (🌳, Szwajcaria, Anglia) · [ ] Jak uczy się sztuczna inteligencja (🌳, Korea, Singapur) |
+| 💻 Informacja i algorytmy (`informacja`) | [ ] Algorytm z warunkiem (🌱, Estonia, Australia) · [ ] Obrazek z zer i jedynek (🌿, USA) · [ ] Kody wykrywające błędy (🌿, Szwajcaria) · ✅ Logika i bramki logiczne (🌳 12–15 lat, Anglia) · [ ] Półsumator i dodawanie dwójkowe (🌳, Bawaria, Anglia; wymaga: bramki) · [ ] Wyszukiwanie binarne (🌳, Szwajcaria, Anglia) · [ ] Jak uczy się sztuczna inteligencja (🌳, Korea, Singapur) |
 | 🧪 Jak pracuje inżynier (`inzynier`) | [ ] Uczciwy test (🌱, Anglia, USA) · [ ] Proces projektowania: problem, kryteria, prototyp, test (🌿, USA NGSS, Australia) |
 | 🌏 Szkoły świata (`szkoly`) | [ ] krótkie, sprawdzone ciekawostki o szkołach (np. key stages w Anglii, skala ocen w Niemczech) – tylko z oficjalnych źródeł |
 

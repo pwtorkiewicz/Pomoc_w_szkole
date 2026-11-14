@@ -42,7 +42,7 @@ Ton i forma:
 
 ## Ścieżka „🌍 Świat” (poza podstawą)
 
-Osobna ścieżka `swiat` (grupa 🌍 Świat na ekranie wyboru): tematy z oficjalnych programów nauczania innych krajów, **według tematów, nie klas** – przedmioty to wątki (np. „Maszyny i konstrukcje”), działy idą od podstaw do trudniejszych. Dodatkowe pola działu: `level` (1–3: 🌱 🌿 🌳), `requires` (lista `'przedmiot/dział'` – „📌 Najpierw zrób”, nic nie blokuje) i `where` („🌍 Gdzie się tego uczą”). Tryb dla młodszego ucznia włącza się na urządzeniu (`deviceYoung`). To wyjątek od zasady „tylko podstawa obowiązująca klasę” – decyzja rodzica (14.11.2026). Zasady i plan: `docs/PLAN-swiat.md`; research: `docs/research/reports/Mapa tematów z programów świata.md`.
+Osobna ścieżka `swiat` (grupa 🌍 Świat na ekranie wyboru): tematy z oficjalnych programów nauczania innych krajów, **według tematów, nie klas** – przedmioty to wątki (np. „Maszyny i konstrukcje”), działy idą od podstaw do trudniejszych. Dodatkowe pola działu: `level` (1–3: 🌱 🌿 🌳), `age` (`[od, do]` – sugerowany wiek, obowiązkowy przy `level`), `requires` (lista `'przedmiot/dział'` – „📌 Najpierw zrób”, nic nie blokuje) i `where` („🌍 Gdzie się tego uczą”). Tryb dla młodszego ucznia włącza się na urządzeniu (`deviceYoung`). To wyjątek od zasady „tylko podstawa obowiązująca klasę” – decyzja rodzica (14.11.2026). Zasady i plan: `docs/PLAN-swiat.md`; research: `docs/research/reports/Mapa tematów z programów świata.md`.
 
 ## Kolejność działów a podręczniki
 

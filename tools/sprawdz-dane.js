@@ -1,7 +1,7 @@
 /* Sprawdzanie pytań we wszystkich ścieżkach (js/sciezki.js): node tools/sprawdz-dane.js [ścieżka]
  * - każde pytanie ma stałe, unikalne (w całej aplikacji, we wszystkich ścieżkach) pole id,
  * - poprawny indeks odpowiedzi, brak powtórzonych odpowiedzi,
- * - unikalne id działów w przedmiocie; pola level (1–3) i requires (istniejące działy) w ścieżce „Świat”,
+ * - unikalne id działów w przedmiocie; pola level (1–3), age ([od, do]) i requires (istniejące działy) w ścieżce „Świat”,
  * - zadania otwarte (pole tasks): id, punkty, kroki rozwiązania, odpowiedź, zasady punktacji,
  * - zestawy ćwiczeń (window.EXERCISES): tryb, tekst/nagrania, zadania zamknięte, wpisywane i otwarte. */
 const wczytaj = require('./dane');
@@ -55,6 +55,9 @@ for (const track of wczytaj.sciezki()) {
       topicIds.add(t.id);
       // ścieżka „Świat”: poziom 1–3, „Najpierw zrób” – istniejące działy tej ścieżki ('przedmiot/dział'), bez odwołania do siebie
       if (t.level != null && ![1, 2, 3].includes(t.level)) problems.push(`${track.id}/${s.id}/${t.id}: level musi być 1, 2 albo 3`);
+      // sugerowany wiek: [od, do], 5–18 lat; w działach z poziomem (ścieżka „Świat”) obowiązkowy
+      if (t.age != null && !(Array.isArray(t.age) && t.age.length === 2 && t.age.every((x) => Number.isInteger(x) && x >= 5 && x <= 18) && t.age[0] <= t.age[1])) problems.push(`${track.id}/${s.id}/${t.id}: age musi mieć postać [od, do], np. [8, 10]`);
+      if (t.level != null && t.age == null) problems.push(`${track.id}/${s.id}/${t.id}: brak pola age (sugerowany wiek)`);
       for (const r of t.requires || []) {
         const [rs, rt] = String(r).split('/');
         const rsub = window.SUBJECTS.find((x) => x.id === rs);

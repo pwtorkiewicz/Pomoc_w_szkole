@@ -134,6 +134,8 @@
   // Ścieżka „Świat” (działy według tematów, nie klas): level – poziom trudności, requires – działy, które warto zrobić
   // wcześniej ('przedmiot/dział' w tej samej ścieżce), where – gdzie na świecie uczą się tego tematu.
   const LEVELS = { 1: '🌱 Poziom 1 – na start', 2: '🌿 Poziom 2 – średni', 3: '🌳 Poziom 3 – trudniejszy' };
+  // age: [od, do] – sugerowany wiek dziecka (dyskretnie, obok poziomu)
+  const levelLine = (t) => [t.level ? LEVELS[t.level] : '', t.age ? `${t.age[0]}–${t.age[1]} lat` : ''].filter(Boolean).join(' · ');
   const findTopic = (key) => {
     const [sid, tid] = String(key).split('/');
     const s = findSubject(sid);
@@ -490,7 +492,7 @@
         ${list.map((t) => {
           const b = state.best[topicKey(s, t)];
           return `<li><a href="#/s/${s.id}/t/${t.id}">
-            <span>${state.lessons[topicKey(s, t)] ? '🎓 ' : ''}${esc(t.name)}${t.chapter ? `<br><small class="muted">📘 ${esc(t.chapter)}</small>` : ''}${t.level ? `<br><small class="muted">${LEVELS[t.level]}</small>` : ''}</span>
+            <span>${state.lessons[topicKey(s, t)] ? '🎓 ' : ''}${esc(t.name)}${t.chapter ? `<br><small class="muted">📘 ${esc(t.chapter)}</small>` : ''}${levelLine(t) ? `<br><small class="muted">${levelLine(t)}</small>` : ''}</span>
             <span class="badge ${badgeClass(b)}">${scoreBadge(b)}</span>
           </a></li>`;
         }).join('')}
@@ -520,7 +522,7 @@
       <h1>${esc(t.name)}</h1>
       ${t.chapter ? `<p class="muted">📘 ${s.book ? `${esc(s.book)}: ` : ''}${esc(t.chapter)}</p>` : ''}
       ${t.extra ? `<p class="muted">📦 Na zapas – tego działu nie ma w podręczniku tej klasy.</p>` : ''}
-      ${t.level ? `<p class="muted">${LEVELS[t.level]}</p>` : ''}
+      ${levelLine(t) ? `<p class="muted" title="Poziom i sugerowany wiek">${levelLine(t)}</p>` : ''}
       ${requiresHtml(t)}
       ${t.where ? `<p class="basis">🌍 <b>Gdzie się tego uczą:</b> ${esc(t.where)}</p>` : ''}
       <nav class="tabs">

@@ -1,6 +1,6 @@
 /* 🌍 Świat – nauka z innych krajów: liczenie po świecie.
  * Ścieżka POZA polską podstawą programową (decyzja rodzica, 14.11.2026; plan: docs/PLAN-swiat.md).
- * Działy ułożone według tematów, nie klas: level (1–3), requires ('przedmiot/dział'), where – gdzie się tego uczą.
+ * Działy ułożone według tematów, nie klas: level (1–3), age ([od, do] – sugerowany wiek), requires ('przedmiot/dział'), where – gdzie się tego uczą.
  * Fakty o szkołach za granicą – tylko z dokumentów ministerstw (adresy w polu basis i w js/dane/swiat/zrodla.js). */
 (function () {
   const TF = ['Prawda', 'Fałsz'];
@@ -16,6 +16,7 @@
         id: 'tabliczka-12',
         name: 'Tabliczka mnożenia do 12 × 12',
         level: 1,
+        age: [8, 10],
         where: 'Anglia – Year 4 (dzieci 8–9 lat): tabliczka do 12 × 12 na pamięć i sprawdzian na komputerze',
         basis: 'Poza polską podstawą programową – ścieżka „Świat” (decyzja rodzica). Źródła (gov.uk, sprawdzone 14.11.2026): National curriculum in England: mathematics programmes of study, key stages 1 and 2 (Department for Education, 2013) – Year 4: „recall multiplication and division facts for multiplication tables up to 12 × 12”, „By the end of year 4, pupils should have memorised their multiplication tables up to and including the 12 multiplication table”, przykład rozdzielności „39 × 7 = 30 × 7 + 9 × 7”; ulotka „Multiplication tables check: information for parents” (Standards and Testing Agency, 2025) – sprawdzian w Year 4 w czerwcu, na ekranie, 25 pytań, 6 sekund na pytanie, 3 pytania na próbę, nie ma progu zaliczenia; Year 4 = dzieci w wieku 8–9 lat (strona „The national curriculum”). W polskiej podstawie klasy 1–3 (Dz.U. 2024 poz. 996): tabliczka mnożenia w zakresie 100 i mnożenie przez 10 liczb mniejszych od 20 – dział rozszerza to o mnożenie przez 11 i 12. Tuzin – „dwanaście sztuk czegoś” (Słownik języka polskiego PWN, sjp.pwn.pl). Wszystkie wyniki policzone dwukrotnie.',
         theory: `
