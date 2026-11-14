@@ -21,7 +21,15 @@ const dane = require('./dane');
       page.on('pageerror', (e) => problems.push(`${width}px ${scheme} wybór ścieżki: błąd JS: ${e.message}`));
       const start = 'file://' + path.resolve(__dirname, '..', 'index.html');
       await page.goto(start);
-      const n = await page.$$eval('.track', (a) => a.length);
+      // przełącznik grup (🇵🇱 Polska szkoła / 🌍 Świat): kafelki wszystkich grup razem = wszystkie ścieżki
+      const groups = await page.$$eval('#groups a', (a) => a.map((x) => x.dataset.group));
+      let n = 0;
+      if (groups.length) {
+        for (const g of groups) {
+          await page.click(`#groups a[data-group="${g}"]`);
+          n += await page.$$eval('.track', (a) => a.length);
+        }
+      } else n = await page.$$eval('.track', (a) => a.length);
       if (n !== dane.sciezki().length) problems.push(`${width}px ${scheme} wybór ścieżki: ${n} kafelków zamiast ${dane.sciezki().length}`);
       const over = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
       if (over > 1) problems.push(`${width}px ${scheme} wybór ścieżki: strona przewija się w poziomie (${over}px)`);
