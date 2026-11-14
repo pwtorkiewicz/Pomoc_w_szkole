@@ -152,7 +152,7 @@ materials: [
 ```
 
 - `type`: `film`, `animacja`, `zdjecia`, `prezentacja`, `doswiadczenie`, `lekcja`, `dokument`, `strona`; `lang`: `pl` (domyślnie), `en`, `ja`, `de`; `forParent: true` – w części „Dla rodzica” (dokumenty źródłowe, często w obcym języku); `expect` – tekst, który musi być na stronie (sprawdza `tools/sprawdz-linki.js`).
-- **Tylko oficjalne lub publiczne serwisy edukacyjne** – lista `MATERIAL_HOSTS` w `tools/sprawdz-dane.js` (ZPE, gov.pl, gov.uk, MEXT, MOE Singapur, LehrplanPLUS, Oak National Academy, BBC, NHK). Bez YouTube i serwisów z reklamami.
+- **Tylko oficjalne lub publiczne serwisy edukacyjne** – lista `MATERIAL_HOSTS` w `tools/sprawdz-dane.js` (ZPE, gov.pl, gov.uk, MEXT, MOE Singapur, LehrplanPLUS, Oak National Academy, BBC, NHK – edu.web.nhk). Bez YouTube i serwisów z reklamami.
 - **Każdy link otwórz i przeczytaj przed dodaniem**; `note` opisuje to, co naprawdę jest na stronie. Materiał ZPE z komunikatem „Nie masz dostępu do tej treści” nie nadaje się (jest usunięty albo tylko po zalogowaniu).
 - Po dodaniu: `node tools/sprawdz-linki.js <ścieżka>`.
 

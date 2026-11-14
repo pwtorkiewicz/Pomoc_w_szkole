@@ -22,7 +22,7 @@ const LANGS = ['pl', 'en', 'de']; // jak LANGS w js/app.js
 // Zakładka „🔗 Materiały” (docs/LEKCJE.md → „Materiały”): tylko oficjalne lub publiczne serwisy edukacyjne.
 // Nowy serwis dopisuj świadomie – po sprawdzeniu, że jest oficjalny/publiczny i bezpieczny dla dzieci.
 const MATERIAL_HOSTS = ['zpe.gov.pl', 'gov.pl', 'www.gov.pl', 'eli.gov.pl', 'cke.gov.pl', 'www.gov.uk', 'assets.publishing.service.gov.uk',
-  'www.mext.go.jp', 'www.moe.gov.sg', 'www.lehrplanplus.bayern.de', 'www.thenational.academy', 'www.bbc.co.uk', 'www.nhk.or.jp', 'www2.nhk.or.jp'];
+  'www.mext.go.jp', 'www.moe.gov.sg', 'www.lehrplanplus.bayern.de', 'www.thenational.academy', 'www.bbc.co.uk', 'www.nhk.or.jp', 'www2.nhk.or.jp', 'edu.web.nhk'];
 const MATERIAL_TYPES = ['film', 'animacja', 'zdjecia', 'prezentacja', 'doswiadczenie', 'lekcja', 'dokument', 'strona']; // jak MAT_TYPES w js/app.js
 const MATERIAL_LANGS = ['pl', 'en', 'ja', 'de']; // jak MAT_LANGS w js/app.js
 const checkSpeech = (q, where) => {
