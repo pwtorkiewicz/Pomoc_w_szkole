@@ -83,6 +83,92 @@
           { id: 'bn40f0', q: 'W wieku ilu lat dzieci w Anglii są na etapie key stage 2 – tym, na którym poznają mechanizmy na lekcjach techniki?', options: ['7–11 lat', '3–5 lat', '11–14 lat', '14–16 lat'], answer: 0, explain: 'Key stage 2 to Year 3–6, czyli dzieci w wieku 7–11 lat.' },
         ],
       },
+      // ------------------------------------------------------------------
+      {
+        id: 'mosty',
+        name: 'Mosty i trójkąty',
+        level: 2,
+        age: [9, 11],
+        where: 'Niemcy, Bawaria – szkoła podstawowa (Grundschule), klasy 3–4: modele mostów; Anglia – design and technology, key stage 2 (dzieci 7–11 lat): wzmacnianie i usztywnianie konstrukcji',
+        basis: `Poza polską podstawą programową – ścieżka „Świat” (decyzja rodzica). Źródła (sprawdzone 14.11.2026): (1) Bawaria, LehrplanPLUS Grundschule, Heimat- und Sachunterricht (HSU), Jahrgangsstufe 3/4, Lernbereich 6.2 „Bauen und Konstruieren” (lehrplanplus.bayern.de, Grundschule, HSU 3/4): „überprüfen und begründen die Stabilität selbst gebauter Brückenmodelle und beschreiben die Merkmale stabiler sowie instabiler Bauweisen”; treści: „Konstruktionsprinzipien bei Brückenmodellen (z. B. Balken-, Bogen-, Fachwerk- und Hängebrücken)”, „Mittel zur Erhöhung der Stabilität: Umformungen aus Papier, Pappe (z. B. Winkel-, Zickzack-, U- und Rundprofile), Aussteifungen (z. B. Dreiecksverbindungen)” – „z. B.” to przykłady. Wieku dzieci w Bawarii nie podajemy (nie sprawdzono go w dokumencie ministerstwa – strona km.bayern.de niedostępna z sesji). (2) ${DT}, key stage 2, „Technical knowledge”: „apply their understanding of how to strengthen, stiffen and reinforce more complex structures”; key stage 2 = dzieci 7–11 lat (gov.uk/national-curriculum). Wiedza – e-materiały zpe.gov.pl: „Połączenia nitowane elementów stalowych blachownic i kratownicy” (kratownice – konstrukcje z elementów tworzących siatkę lub układ trójkątów; wytrzymałość i sztywność; kratownice w mostach; węzeł, pas górny i dolny, krzyżulec, słupek), „Słownik pojęć” do e-materiału „Diagnostyka budowli” (most belkowy – belki ułożone poziomo na podporach/przyczółkach, jedna z najprostszych konstrukcji, np. nad małymi rzekami; most łukowy – obciążenia przejmuje łuk ściskany i przenosi na podpory na brzegach), „Podział i budowa obiektów inżynierskich wykorzystywanych na kolei” (przęsło – element między podporami; przyczółki – podpory skrajne), „Zmiany kulturowe i społeczne po II wojnie światowej” (most wiszący: na pylonach zawieszone są liny, które dźwigają pomost), „Konstrukcja trójkąta o danych bokach” i „Cechy przystawania trójkątów” (trójkąt o danych trzech bokach jest wyznaczony jednoznacznie – stąd sztywność trójkąta z listewek; kwadrat i romb o tych samych bokach mają różne kąty). Polska (tekst podstaw, 14.11.2026): w Dz.U. 2026 poz. 378 (ZPT, przyroda) i w edukacji wczesnoszkolnej Dz.U. 2024 poz. 996 są proste konstrukcje i modele, ale nie znaleziono usztywniania trójkątami ani rodzajów mostów.`,
+        theory: `
+          <h3>Jak to jest w Bawarii?</h3>
+          <p>Bawaria to jeden z krajów związkowych Niemiec. W klasach 3–4 tamtejszej szkoły podstawowej jest przedmiot <b>Heimat- und Sachunterricht</b> (w skrócie HSU) – po polsku mniej więcej „wiedza o najbliższym otoczeniu i świecie”.</p>
+          <p>Dzieci <b>budują modele mostów</b>, sprawdzają, czy są stabilne, i wyjaśniają dlaczego. Program podaje przykłady: mosty <b>belkowe, łukowe, kratownicowe i wiszące</b>, kartkę wzmacnia się, <b>zaginając ją</b>, a konstrukcję usztywnia się <b>trójkątami</b>.</p>
+          <p>W <b>Anglii</b> dzieci w wieku 7–11 lat na <i>design and technology</i> uczą się, jak konstrukcje <b>wzmacniać i usztywniać</b>.</p>
+          <h3>Trójkąt jest sztywny</h3>
+          <p>Zbuduj kwadrat z czterech listewek połączonych na zawiasach. Naciśnij go z boku – <b>przekrzywi się w romb</b>. Boki są te same, zmieniły się tylko kąty.</p>
+          <p>Trójkąt z trzech listewek <b>się nie przekrzywi</b>. Z trzech boków o danych długościach da się złożyć <b>tylko jeden</b> trójkąt – jego kąty nie mogą się zmienić.</p>
+          <p class="tip">Dodaj do kwadratu listewkę <b>po przekątnej</b>: powstaną dwa trójkąty i ramka stanie się sztywna.</p>
+          <h3>Kratownica</h3>
+          <p><b>Kratownica</b> to konstrukcja z prętów, które tworzą <b>układ trójkątów</b>. Miejsca, gdzie łączą się pręty, to <b>węzły</b>. Kratownica jest wytrzymała i sztywna, dlatego buduje się z niej mosty.</p>
+          <h3>Mocna kartka</h3>
+          <p>Płaska kartka łatwo się ugina. Zagięta jest dużo sztywniejsza. Program bawarski podaje kształty (profile): <b>kątownik</b> (zgięcie pod kątem), <b>harmonijka</b> (zygzak), <b>ceownik</b> (kształt litery U) i <b>rurka</b>.</p>
+          <h3>Cztery rodzaje mostów</h3>
+          <ul>
+            <li><b>belkowy</b> – belki leżą poziomo na podporach; jeden z najprostszych, np. nad małą rzeką,</li>
+            <li><b>łukowy</b> – ciężar przejmuje <b>łuk</b>, który jest <b>ściskany</b>, i przenosi go na podpory na brzegach,</li>
+            <li><b>kratownicowy</b> – ciężar niesie kratownica z trójkątów,</li>
+            <li><b>wiszący</b> – <b>pomost wisi na linach</b> zawieszonych na wysokich wieżach – <b>pylonach</b>.</li>
+          </ul>
+          <h3>Części mostu</h3>
+          <p><b>Przęsło</b> – część mostu między podporami. <b>Przyczółki</b> – skrajne podpory, na brzegach.</p>`,
+        infographicNote: 'Na górze – sztuczki inżynierów. Niżej – cztery rodzaje mostów.',
+        infographic: {
+          type: 'karty', kolumny: 2,
+          top: { kolor: 4, title: 'Bawaria i Anglia', text: 'dzieci budują mosty i sprawdzają, czy są stabilne' },
+          items: [
+            { icon: '🔺', kolor: 3, title: 'Trójkąt', text: 'sztywny – nie da się go przekrzywić' },
+            { icon: '🔲', kolor: 2, title: 'Kwadrat', text: 'przekrzywia się w romb – dodaj przekątną' },
+            { icon: '➖', kolor: 1, title: 'Most belkowy', text: 'belki leżą na podporach' },
+            { icon: '🌈', kolor: 1, title: 'Most łukowy', text: 'ściskany łuk niesie ciężar' },
+            { icon: '📐', kolor: 1, title: 'Most kratownicowy', text: 'pręty ułożone w trójkąty' },
+            { icon: '🌉', kolor: 1, title: 'Most wiszący', text: 'pomost wisi na linach z pylonów' },
+          ],
+          bottom: { kolor: 4, title: '💡 Mocna kartka', text: 'zagięta (harmonijka, U, rurka) jest sztywniejsza' },
+        },
+        flashcards: [
+          ['Heimat- und Sachunterricht (HSU)', 'przedmiot w bawarskiej szkole podstawowej; w klasach 3–4 dzieci budują modele mostów'],
+          ['Dlaczego trójkąt jest sztywny?', 'z trzech boków o danych długościach da się złożyć tylko jeden trójkąt'],
+          ['Kwadrat z listewek na zawiasach', 'przekrzywia się w romb'],
+          ['Jak usztywnić kwadratową ramkę?', 'dodać listewkę po przekątnej – powstaną dwa trójkąty'],
+          ['Kratownica', 'konstrukcja z prętów tworzących układ trójkątów'],
+          ['Węzeł', 'miejsce, w którym łączą się pręty kratownicy'],
+          ['Profil z kartki', 'zagięta kartka (kątownik, harmonijka, U, rurka) – sztywniejsza niż płaska'],
+          ['Most belkowy', 'belki leżą poziomo na podporach'],
+          ['Most łukowy', 'ściskany łuk przenosi ciężar na podpory na brzegach'],
+          ['Most wiszący', 'pomost wisi na linach zawieszonych na pylonach'],
+          ['Przęsło', 'część mostu między podporami'],
+          ['Przyczółki', 'skrajne podpory mostu, na brzegach'],
+        ],
+        questions: [
+          { id: 'lltla3', q: 'Kwadrat z czterech listewek połączonych na zawiasach naciskasz z boku. Co się stanie?', options: ['przekrzywi się w romb', 'zostanie kwadratem', 'zamieni się w trójkąt'], answer: 0, explain: 'Zawiasy pozwalają zmieniać kąty. Boki zostają te same, a kwadrat przekrzywia się w romb.' },
+          { id: 'b5063p', q: 'Dlaczego trójkąt z listewek na zawiasach jest sztywny?', options: ['z trzech boków da się złożyć tylko jeden trójkąt', 'trójkąt zawsze robi się z grubszych listewek', 'w trójkącie wszystkie kąty są zawsze proste', 'trójkąt jest cięższy niż kwadrat z listewek'], answer: 0, explain: 'Gdy długości trzech boków są ustalone, trójkąt może mieć tylko jeden kształt – jego kąty nie mogą się zmienić.' },
+          { id: '79u1jx', q: 'Jak usztywnić kwadratową ramkę z listewek?', options: ['dodać listewkę po przekątnej', 'pomalować ramkę grubą farbą', 'wyjąć jedną z listewek'], answer: 0, explain: 'Przekątna dzieli kwadrat na dwa trójkąty, a trójkąty są sztywne.' },
+          { id: '7pyd4u', q: 'Na ile trójkątów przekątna dzieli kwadrat?', options: ['2', '3', '4'], answer: 0, explain: 'Jedna przekątna dzieli kwadrat na 2 trójkąty.' },
+          {
+            id: 'dzk2jj', q: 'Ramki są z listewek połączonych na zawiasach. Którą ramkę da się przekrzywić?', noShuffle: true,
+            svg: `<svg viewBox="0 0 360 140" role="img" aria-label="Trzy ramki z listewek z zawiasami w rogach. A: kwadrat. B: kwadrat z listewką po przekątnej. C: trójkąt">
+              <g class="f4 s4 sw"><path d="M30,20 H110 V100 H30 Z" fill="none"/><path d="M150,20 H230 V100 H150 Z M150,100 L230,20" fill="none"/><path d="M270,100 H350 L310,25 Z" fill="none"/></g>
+              <g class="ln"><circle cx="30" cy="20" r="5" class="bg"/><circle cx="110" cy="20" r="5" class="bg"/><circle cx="110" cy="100" r="5" class="bg"/><circle cx="30" cy="100" r="5" class="bg"/>
+                <circle cx="150" cy="20" r="5" class="bg"/><circle cx="230" cy="20" r="5" class="bg"/><circle cx="230" cy="100" r="5" class="bg"/><circle cx="150" cy="100" r="5" class="bg"/>
+                <circle cx="270" cy="100" r="5" class="bg"/><circle cx="350" cy="100" r="5" class="bg"/><circle cx="310" cy="25" r="5" class="bg"/></g>
+              <g class="tx-b" text-anchor="middle"><text x="70" y="128">A</text><text x="190" y="128">B</text><text x="310" y="128">C</text></g>
+            </svg>`,
+            options: ['A', 'B', 'C'], answer: 0, explain: 'A to sam kwadrat – przekrzywi się w romb. B ma przekątną, czyli dwa trójkąty, a C jest trójkątem – obie są sztywne.',
+          },
+          { id: 'o6ms5v', q: 'Co to jest kratownica?', options: ['konstrukcja z prętów tworzących trójkąty', 'most zbudowany z jednej grubej belki', 'lina rozpięta między dwiema wieżami'], answer: 0, explain: 'Kratownica to układ prętów połączonych w trójkąty. Dzięki trójkątom jest sztywna.' },
+          { id: '19qejw', q: 'Jak nazywa się miejsce, w którym łączą się pręty kratownicy?', options: ['węzeł', 'przęsło', 'pylon'], answer: 0, explain: 'Pręty kratownicy łączą się w węzłach.' },
+          { id: 'tgn29e', q: 'W którym moście belki leżą poziomo na podporach?', options: ['w belkowym', 'w łukowym', 'w wiszącym'], answer: 0, explain: 'Most belkowy to jedna z najprostszych konstrukcji: belki ułożone na podporach.' },
+          { id: 'so2n7f', q: 'W którym moście pomost wisi na linach zawieszonych na wysokich pylonach?', options: ['w wiszącym', 'w belkowym', 'w łukowym'], answer: 0, explain: 'W moście wiszącym liny zawieszone na pylonach dźwigają pomost.' },
+          { id: 'zfd569', q: 'Jak pracuje łuk w moście łukowym?', options: ['jest ściskany i przenosi ciężar na podpory', 'jest rozciągany jak lina, na której wisi pomost', 'nic nie dźwiga – jest tylko ozdobą mostu'], answer: 0, explain: 'Ciężar przejmuje łuk, który jest ściskany, i przenosi go na podpory na brzegach.' },
+          { id: '4ohf2q', q: 'Jak nazywa się część mostu między dwiema podporami?', options: ['przęsło', 'przyczółek', 'węzeł'], answer: 0, explain: 'Przęsło to część mostu rozpięta między podporami.' },
+          { id: 'f82w3z', q: 'Co to są przyczółki?', options: ['skrajne podpory mostu', 'pręty ułożone w trójkąty', 'liny, na których wisi pomost'], answer: 0, explain: 'Przyczółki to podpory skrajne – na brzegach. Opiera się na nich przęsło.' },
+          { id: 'hpul3x', q: 'Jak według programu z Bawarii wzmocnić kartkę papieru w modelu mostu?', options: ['zagiąć ją, np. w harmonijkę', 'zmoczyć ją dokładnie wodą', 'pociąć ją na cienkie paski'], answer: 0, explain: 'Zagięta kartka (kątownik, harmonijka, kształt U, rurka) jest dużo sztywniejsza niż płaska.' },
+          { id: '5vg6kr', q: 'Na jakim przedmiocie dzieci w Bawarii budują modele mostów?', options: ['wiedza o otoczeniu i świecie (HSU)', 'plastyka i rysunek techniczny', 'wychowanie fizyczne na boisku'], answer: 0, explain: 'Na Heimat- und Sachunterricht (HSU) – to przedmiot o najbliższym otoczeniu i świecie. W klasach 3–4 jest w nim dział „Bauen und Konstruieren” (budowanie i konstruowanie).' },
+          { id: 'bp8gyc', q: 'Prawda czy fałsz?\nTrójkąt z listewek na zawiasach da się przekrzywić tak samo jak kwadrat.', options: TF, noShuffle: true, answer: 1, explain: 'Fałsz. Trójkąt o danych bokach ma tylko jeden kształt – jest sztywny. Przekrzywia się kwadrat.' },
+        ],
+      },
     ],
   });
 })();

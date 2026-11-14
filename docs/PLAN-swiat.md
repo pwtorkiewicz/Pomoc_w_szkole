@@ -26,8 +26,8 @@ Cel (decyzja rodzica, 14.11.2026): dzieci poznają to, czego uczą się ich rów
 | Wątek (id przedmiotu) | Działy – od najłatwiejszego (✅ zrobione) |
 |---|---|
 | 🔢 Liczenie po świecie (`liczenie`) | ✅ Tabliczka mnożenia do 12 × 12 (🌱 8–10 lat, Anglia) · [ ] Soroban – japońskie liczydło (🌱, Japonia) · [ ] 4 kroki rozwiązywania zadań – Pólya (🌿, Singapur) |
-| ⚙️ Maszyny i konstrukcje (`maszyny`) | [ ] Huśtawka i równowaga (🌱, Bawaria, Korea) · ✅ Mechanizmy: dźwignia, krążek, koła zębate, krzywka (🌿 9–12 lat, Anglia) · [ ] Mosty i trójkąty (🌿, Bawaria, Szwajcaria, Anglia) · [ ] Pojazd: napęd, kierownica, hamulec (🌿, Korea) · [ ] Maszyny proste i złota reguła mechaniki (🌳, Szwajcaria, Anglia) |
-| ⚡ Elektryczność i sterowanie (`elektrycznosc`) | [ ] Magnesy (🌱, Japonia, Singapur, Anglia) · [ ] Czy żarówka się zaświeci? Obwód (🌱, Japonia, Anglia) · [ ] Obwody szeregowe i równoległe, elektromagnes (🌿, Japonia, Szwajcaria) · [ ] Z czego jest robot (🌿, Estonia, Korea, Finlandia) · [ ] Czujniki i sterowanie (🌳, Japonia, Korea, Szwajcaria, Anglia) |
+| ⚙️ Maszyny i konstrukcje (`maszyny`) | [ ] Huśtawka i równowaga (🌱, Bawaria, Korea) · ✅ Mechanizmy: dźwignia, krążek, koła zębate, krzywka (🌿 9–12 lat, Anglia) · ✅ Mosty i trójkąty (🌿 9–11 lat, Bawaria, Anglia) · [ ] Pojazd: napęd, kierownica, hamulec (🌿, Korea) · [ ] Maszyny proste i złota reguła mechaniki (🌳, Szwajcaria, Anglia) |
+| ⚡ Elektryczność i sterowanie (`elektrycznosc`) | ✅ Magnesy (🌱 7–9 lat, Anglia, Japonia, Singapur) · [ ] Czy żarówka się zaświeci? Obwód (🌱, Japonia, Anglia) · [ ] Obwody szeregowe i równoległe, elektromagnes (🌿, Japonia, Szwajcaria) · [ ] Z czego jest robot (🌿, Estonia, Korea, Finlandia) · ✅ Czujniki i sterowanie (🌳 12–15 lat, Anglia, Japonia; wymaga: bramki) |
 | 💻 Informacja i algorytmy (`informacja`) | [ ] Algorytm z warunkiem (🌱, Estonia, Australia) · [ ] Obrazek z zer i jedynek (🌿, USA) · [ ] Kody wykrywające błędy (🌿, Szwajcaria) · ✅ Logika i bramki logiczne (🌳 12–15 lat, Anglia) · [ ] Półsumator i dodawanie dwójkowe (🌳, Bawaria, Anglia; wymaga: bramki) · [ ] Wyszukiwanie binarne (🌳, Szwajcaria, Anglia) · [ ] Jak uczy się sztuczna inteligencja (🌳, Korea, Singapur) |
 | 🧪 Jak pracuje inżynier (`inzynier`) | [ ] Uczciwy test (🌱, Anglia, USA) · [ ] Proces projektowania: problem, kryteria, prototyp, test (🌿, USA NGSS, Australia) |
 | 🌏 Szkoły świata (`szkoly`) | [ ] krótkie, sprawdzone ciekawostki o szkołach (np. key stages w Anglii, skala ocen w Niemczech) – tylko z oficjalnych źródeł |
@@ -45,14 +45,19 @@ Ustalenia z researchu:
 
 ## Stan na koniec sesji 14.11.2026 – od czego zacząć w nowej sesji
 
-**Gotowe i wysłane na gałąź:** ścieżka `swiat.html` z przełącznikiem 🇵🇱 Polska szkoła / 🌍 Świat; trzy działy (tabliczka 12 × 12, mechanizmy, bramki logiczne) z poziomem, sugerowanym wiekiem, „Gdzie się tego uczą”; tryb dla młodszego ucznia na urządzeniu; pola `level`, `age`, `requires`, `where` w silniku i w sprawdzarce danych; mapa researchu 11 krajów. Wszystkie sprawdzarki i przegląd wszystkich ścieżek (z egzaminacyjną) – bez błędów.
+**Gotowe i wysłane na gałąź:** ścieżka `swiat.html` z przełącznikiem 🇵🇱 Polska szkoła / 🌍 Świat; sześć działów: tabliczka 12 × 12, mechanizmy, mosty i trójkąty, magnesy, czujniki i sterowanie, bramki logiczne – każdy z poziomem, sugerowanym wiekiem, „Gdzie się tego uczą”, ściągą, infografiką, fiszkami, quizem i lekcją; nowy przedmiot ⚡ Elektryczność i sterowanie (`elektrycznosc`); tryb dla młodszego ucznia na urządzeniu; mapa researchu 11 krajów.
 
-**Następny krok (uzgodniony kierunek, czeka na „start” rodzica):** tura 1 nowych działów – ⚡ Magnesy (🌱, nowy przedmiot `elektrycznosc`), ⚙️ Mosty i trójkąty (🌿), ⚡ Czujniki i sterowanie (🌳). Przed pisaniem: cytaty i kody z notatek w `docs/research/research_notes/…`, wiedza przedmiotowa z zpe.gov.pl, sprawdzenie w tekście polskiej podstawy, zanim napiszemy „w Polsce tego nie ma”.
+**Tura 1 (zrobiona 14.11.2026):**
+- ⚡ Magnesy (🌱 7–9 lat; 11 fiszek, 16 pytań, 6 kroków lekcji): Anglia science Year 3 „Forces and magnets”, Japonia 理科 kl. 3 A⑷ (MEXT, s. 96), Singapur P3 „Magnets” (MOE 2023/2026). Wiek Japonii – strona MEXT o obowiązku szkolnym; wiek Singapuru – zasady zapisów do Primary 1 (moe.gov.sg). Wiedza – ZPE („Co to jest magnes?”, „Oddziaływania magnetyczne”, „Cechy linii pola magnetycznego”). W pytaniach tylko przedmioty o pewnym zachowaniu (żelazo, stal, drewno, papier, gumka, miedź, złoto) – bez monet, aluminium i stali nierdzewnej. Polska: magnesów nie ma w edukacji wczesnoszkolnej, są w przyrodzie IV–VI (PP2026 dz. 5 wym. 4) i fizyce VII (PP2024 dz. VII).
+- ⚙️ Mosty i trójkąty (🌿 9–11 lat; 12 fiszek, 15 pytań, w tym 1 z rysunkiem, 6 kroków): Bawaria HSU 3/4, Lernbereich 6.2 (cytaty z LehrplanPLUS), Anglia D&T KS2 („strengthen, stiffen and reinforce”). Wiedza – ZPE (kratownica, most belkowy i łukowy, most wiszący, przęsło, przyczółki, trójkąt o danych bokach). **Wieku dzieci w Bawarii nie podajemy** – km.bayern.de i gesetze-bayern.de są niedostępne z sesji. Szwajcarii (NMG.5.1) nie cytujemy – nie pobrano dokumentu.
+- ⚡ Czujniki i sterowanie (🌳 12–15 lat, „Najpierw zrób”: bramki; 11 fiszek, 16 pytań, 6 kroków): Anglia D&T KS3 (inputs/sensors, outputs/actuators, microcontrollers), Japonia 技術・家庭 D⑶ „計測・制御のプログラミング” (MEXT, gimnazjum, s. 134). Wiedza – ZPE (automatyka przemysłowa: sterownik PLC, wejścia/wyjścia, czujniki optyczny i ultradźwiękowy, serwo w pętli zamkniętej). Programy – pseudokod w stylu Pythona; przykłady urządzeń wymyślone.
+
+**Następny krok (propozycja):** tura 2 – 🔢 Soroban (🌱; potrzebne źródło encyklopedyczne o budowie liczydła), ⚡ Obwody szeregowe i równoległe, elektromagnes (🌿, Japonia kl. 4–5, Szwajcaria – trzeba pobrać Lehrplan 21), 💻 Półsumator i dodawanie dwójkowe (🌳, Bawaria, Anglia). Przed pisaniem: cytaty z oryginałów (pobierać `curl`, pliki do katalogu tymczasowego, nie do repozytorium), wiedza z ZPE, sprawdzenie w tekście polskiej podstawy.
 
 **Otwarte pytania do rodzica:**
 - Ścieżka niemiecka dla siostrzenicy: kraj związkowy, klasa i typ szkoły, czy dziecko czyta po polsku (osobna ścieżka w grupie 🇩🇪 Niemcy – nie część „Świata”).
 - Decyzje z sekcji 9 mapy: mediana / wykres pudełkowy i twierdzenie odwrotne do Pitagorasa (propozycja: nie przed egzaminem w maju 2027), pisanie „Bawaria” zamiast „Niemcy”.
-- Czy przedziały wieku obecnych działów (8–10, 9–12, 12–15 lat) są dobre.
+- Czy przedziały wieku działów (tabliczka 8–10, magnesy 7–9, mechanizmy 9–12, mosty 9–11, czujniki i bramki 12–15 lat) są dobre.
 
 **Do zrobienia przez rodzica (raz):** na każdym urządzeniu połączonym z arkuszem wejść w Świat → ☁️ Synchronizacja i wybrać dziecko przy ścieżce „Świat” (inaczej wyniki zostaną tylko na urządzeniu). Na tablecie klasy 3 włączyć „🧸 Tryb dla młodszego ucznia”.
 
@@ -67,6 +72,7 @@ Ustalenia z researchu:
 - 14.11.2026 – research 11 krajów (mapa ustaleń).
 - 14.11.2026 – przebudowa na osobną ścieżkę `swiat` według tematów (decyzja rodzica); trzy działy pilotażu przeniesione (id pytań bez zmian, postęp z pilotażu nie przechodzi – inny klucz zapisu).
 - 14.11.2026 – sugerowany wiek przy każdym dziale (pole `age`, decyzja rodzica).
+- 14.11.2026 – tura 1: magnesy, mosty i trójkąty, czujniki i sterowanie; nowy przedmiot `elektrycznosc`.
 
 ## Osobny temat: ścieżka niemiecka dla siostrzenicy
 
