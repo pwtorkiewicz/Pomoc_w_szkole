@@ -50,5 +50,11 @@ window.SOURCES = {
       <li>Krainy geograficzne Polski i lądolód skandynawski – materiały ZPE: zpe.gov.pl (lekcja o pasach rzeźby Polski: zpe.gov.pl/a/DIlK4PLj6; „Młodoglacjalny czy staroglacjalny?”: zpe.gov.pl/a/przeczytaj/DV0xUhxT2)</li>
       <li>Historia starożytna (Egipt, pismo, Grecja, Rzym) – materiały Zintegrowanej Platformy Edukacyjnej: zpe.gov.pl (m.in. „Egipt – państwo nad Nilem”, „Pismo – wielki wynalazek człowieka”, „Demokratyczne Ateny”, „Rzym – od osady do imperium”, „Osiągnięcia starożytnych Rzymian”)</li>
       <li>Chrześcijaństwo, średniowiecze i początki Polski – materiały ZPE: zpe.gov.pl (m.in. „Narodziny i rozwój chrześcijaństwa”, „Społeczeństwo stanowe w średniowieczu”, „Architektura i plastyka romańska w Polsce”, „Panowanie Mieszka I”, „Koronacja Bolesława Chrobrego – 1025 rok”, „Kronika polska Galla tzw. Anonima”); dzieje.pl; historia Uniwersytetu Jagiellońskiego (uj.edu.pl)</li>
+    </ul>
+
+    <h3>🌍 Świat – jak uczą się inni (poza podstawą)</h3>
+    <p>Przedmiot „Świat” <b>nie należy do polskiej podstawy programowej</b>. Dodano go z decyzji rodzica (14 listopada 2026 r.), żeby dzieci poznały, czego uczą się ich rówieśnicy w innych krajach – przede wszystkim z nauk ścisłych, techniki i informatyki. Każdy dział opisuje temat z <b>oficjalnego programu nauczania innego kraju</b>, po polsku i na poziomie tej klasy. Fakty o szkołach za granicą pochodzą tylko z dokumentów ministerstw; zadania i przykłady napisano do aplikacji. Plan modułu: docs/PLAN-swiat.md w repozytorium.</p>
+    <ul>
+      <li><b>Anglia: mechanizmy</b> – National curriculum in England: design and technology programmes of study, key stages 1 and 2 (Department for Education, 2013): gov.uk/government/publications/national-curriculum-in-england-design-and-technology-programmes-of-study; wiek dzieci i przedmioty obowiązkowe: gov.uk/national-curriculum. Sprawdzone 14.11.2026. Dźwignia, blok nieruchomy, przekładnia zębata i krzywka – e-materiały zpe.gov.pl: „Maszyny proste. Wyznaczanie masy ciała przy użyciu dźwigni dwustronnej” (zpe.gov.pl/a/Dux6K87nb), „Podstawy budowy maszyn i urządzeń do obróbki metali i tworzyw sztucznych” (zpe.gov.pl/a/DHrROEsna), „Słownik pojęć dla e-materiału” (zpe.gov.pl/a/DQlZG5DhJ).</li>
     </ul>`,
 };

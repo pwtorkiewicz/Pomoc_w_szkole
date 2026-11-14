@@ -39,6 +39,10 @@ Ton i forma:
 - **Klasa 4** – proste wyjaśnienia, przykłady z życia, każdy nowy termin wyjaśniony.
 - **Klasa 8** i **egzamin** – „na ty”, krótko, przyjaźnie i nowocześnie, bez infantylizmu.
 
+## Moduł „🌍 Świat” (poza podstawą)
+
+Ścieżki `kl3`, `kl4` i `kl8` mają przedmiot `swiat` (pliki `js/dane/<ścieżka>/swiat.js` i `js/lekcje/<ścieżka>/swiat.js`): tematy z oficjalnych programów nauczania innych krajów, opisane po polsku na poziomie klasy. To wyjątek od zasady „tylko podstawa obowiązująca klasę” – decyzja rodzica (14.11.2026). Zasady i lista działów: `docs/PLAN-swiat.md`; źródła – w sekcji „🌍 Świat” na stronie `#/zrodla` każdej z tych ścieżek.
+
 ## Kolejność działów a podręczniki
 
 Działy wyświetlają się w kolejności z pliku danych. W ścieżce `kl4` kolejność odpowiada podręcznikom dziecka (lista w `docs/PLAN-kl4.md`): przedmiot ma pole `book`, a dział – `chapter` (rozdział podręcznika). Działy z podstawy, których nie ma w podręczniku tej klasy, mają `extra: true` – pokazują się w sekcji „📦 Na zapas” i nie liczą się do postępu ani testu próbnego. Przestawianie działów i zmiana tych pól nie wpływa na zapisany postęp (klucze to id przedmiotu, działu i pytania).

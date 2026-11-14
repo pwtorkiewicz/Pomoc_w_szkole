@@ -46,5 +46,11 @@ window.SOURCES = {
       <li>Zintegrowana Platforma Edukacyjna – język niemiecki: „Deutschland, Österreich und die Schweiz auf einen Blick”, „Frohe Ostern”, „Was bringt der Nikolaus?”, „Mach die Türchen im Adventskalender auf!”: zpe.gov.pl</li>
       <li>Instytut Pamięci Narodowej – materiały o kaźni profesorów lwowskich: ipn.gov.pl</li>
       <li>Ustawa o ochronie przyrody – tekst jednolity Dz.U. 2026 poz. 1315: eli.gov.pl</li>
+    </ul>
+
+    <h3>🌍 Świat – jak uczą się inni (poza podstawą)</h3>
+    <p>Przedmiot „Świat” <b>nie należy do polskiej podstawy programowej</b>. Dodano go z decyzji rodzica (14 listopada 2026 r.), żeby dzieci poznały, czego uczą się ich rówieśnicy w innych krajach – przede wszystkim z nauk ścisłych, techniki i informatyki. Każdy dział opisuje temat z <b>oficjalnego programu nauczania innego kraju</b>, po polsku i na poziomie tej klasy. Fakty o szkołach za granicą pochodzą tylko z dokumentów ministerstw; zadania i przykłady napisano do aplikacji. Plan modułu: docs/PLAN-swiat.md w repozytorium.</p>
+    <ul>
+      <li><b>Anglia: logika i bramki logiczne</b> – National curriculum in England: computing programmes of study, key stages 3 and 4 (Department for Education, 2013, DFE-00191-2013): gov.uk/government/publications/national-curriculum-in-england-computing-programmes-of-study; wiek uczniów i przedmioty obowiązkowe: gov.uk/national-curriculum. Sprawdzone 14.11.2026. Działanie and, or, not w Pythonie sprawdzone przez uruchomienie kodu.</li>
     </ul>`,
 };

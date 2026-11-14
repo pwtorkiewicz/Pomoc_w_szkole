@@ -13,6 +13,8 @@ Aplikacja ma **ścieżki** (opis: `docs/SCIEZKI.md`), wybierane na ekranie start
 
 **Edukacji zdrowotnej (także „zdrowie seksualne”), etyki i religii nie dodajemy w żadnej ścieżce** – decyzja rodzica (chodzi o te przedmioty). **Elementy związane z religią katolicką w innych przedmiotach wolno dodawać** (decyzja rodzica, 3.11.2026) – np. kolędy, pieśni i zwyczaje świąteczne w muzyce; fakty jak zawsze tylko ze sprawdzonych źródeł. Wyjątek (decyzja rodzica, 2.11.2026): w przyrodzie kl. 4 dodajemy tematy z podręcznika – czas przed ekranem, ochrona przed chorobami, szkodliwość dymu tytoniowego i alkoholu – ale **bez dojrzewania** (lekcji „Jak zmieniamy się w ciągu życia?” nie dodajemy).
 
+**Moduł „🌍 Świat – jak uczą się inni”** (decyzja rodzica, 14.11.2026; plan `docs/PLAN-swiat.md`): przedmiot `swiat` w ścieżkach `kl3`, `kl4`, `kl8` (nie w egzaminie) – tematy z oficjalnych programów nauczania innych krajów, głównie nauki ścisłe, technika, informatyka. To **jedyny wyjątek** od zasady „tylko podstawa obowiązująca klasę”: `basis` zaczyna się od „Poza polską podstawą programową – moduł „Świat” (decyzja rodzica)” i podaje zagraniczny dokument. Fakty o szkołach za granicą – tylko z dokumentów ministerstw; zadań nie kopiujemy.
+
 Ścieżka egzaminacyjna jest dopracowana – utrzymuj ją i rozwijaj; zmiany w silniku nie mogą jej zepsuć (zawsze `node tools/przeglad.js egzamin8`).
 
 ## Komunikacja
@@ -42,6 +44,7 @@ docs/LEKCJE.md          – format i zasady pisania lekcji (obowiązkowa lektura
 docs/SCIEZKI.md         – ścieżki: budowa, zapis postępu, jak dodać treści
 docs/CHMURA.md          – postęp, statystyki, synchronizacja urządzeń, raport tygodniowy: pola zapisu i reguły łączenia
 docs/PLAN.md            – plan ścieżki egzaminacyjnej; docs/PLAN-kl3|kl4|kl8.md – plany ścieżek z analizą podstaw; odhaczaj wykonane punkty
+docs/PLAN-swiat.md     – moduł „Świat” (programy innych krajów): zasady, zrobione działy, pomysły
 docs/PLAN-infografiki.md – pilotaż infografik „🗺️ W pigułce” (zasady, wzory, działy pilotażowe)
 docs/podreczniki/       – podręczniki dzieci: dane ze stron redakcyjnych, spisy treści, przypisanie do działów (tylko tytuły – bez treści podręczników)
 tools/                  – sprawdzarka lekcji i zrzuty ekranu (Playwright)
