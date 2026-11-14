@@ -517,6 +517,8 @@
     const tasks = tasksOf(s, t);
     if (tab === 'zadania' && !tasks.length) tab = 'teoria';
     if (tab === 'pigulka' && !t.infographic) tab = 'teoria';
+    const mats = t.materials || [];
+    if (tab === 'materialy' && !mats.length) tab = 'teoria';
     app.innerHTML = `
       ${crumbs([[s.name, `#/s/${s.id}`], [t.name]])}
       <h1>${esc(t.name)}</h1>
@@ -532,12 +534,14 @@
         ${hasCards ? `<a href="${base}/fiszki" class="${tab === 'fiszki' ? 'on' : ''}">🃏 Fiszki (${t.flashcards.length})</a>` : ''}
         <a href="${base}/quiz" class="${tab === 'quiz' ? 'on' : ''}">✅ Quiz (${QUIZ_SIZE ? Math.min(QUIZ_SIZE, t.questions.length) : t.questions.length})</a>
         ${tasks.length ? `<a href="${base}/zadania" class="${tab === 'zadania' ? 'on' : ''}">✍️ Zadania otwarte (${tasks.length})</a>` : ''}
+        ${mats.length ? `<a href="${base}/materialy" class="${tab === 'materialy' ? 'on' : ''}">🔗 Materiały (${mats.length})</a>` : ''}
       </nav>
       <div id="pane"></div>`;
     const pane = document.getElementById('pane');
     if (tab === 'lekcja') return lessonView(pane, lesson, s, t, base);
     if (tab === 'fiszki') return flashcards(pane, t.flashcards, t.cardLang);
     if (tab === 'pigulka') return infographicView(pane, s, t, base);
+    if (tab === 'materialy') return materialsView(pane, mats);
     if (tab === 'zadania') return openTasks(pane, tasks, { math: s.id === 'matematyka', backHref: `#/s/${s.id}`, backLabel: `Wróć do: ${s.name}` });
     if (tab === 'quiz') {
       // krótki quiz (tryb młodszego ucznia): za każdym razem inne losowe pytania z działu
@@ -556,6 +560,22 @@
       ${hasCards ? `<a class="btn" href="${base}/fiszki">Powtórz z fiszkami</a>` : ''}
       ${tasks.length ? `<a class="btn" href="${base}/zadania">✍️ Zadania otwarte</a>` : ''}`;
     bindSay(pane.querySelector('.say-row'), () => [t.name, t.theory]);
+  }
+
+  // ---------- „🔗 Materiały”: linki do filmów, animacji, zdjęć i źródeł (docs/LEKCJE.md → „Materiały”) ----------
+  // { type, title, url, source, lang?, note?, license?, forParent? } – forParent: dokument dla rodzica (np. program w oryginale)
+  const MAT_TYPES = { film: '🎬 Film', animacja: '🎞️ Animacja', zdjecia: '🖼️ Zdjęcia', prezentacja: '📊 Prezentacja', doswiadczenie: '🔬 Doświadczenie', lekcja: '📗 Lekcja online', dokument: '📄 Dokument' };
+  const MAT_LANGS = { pl: '', en: 'po angielsku', ja: 'po japońsku', de: 'po niemiecku' };
+  function materialsView(pane, mats) {
+    const item = (m) => `<li><a href="${esc(m.url)}" target="_blank" rel="noopener noreferrer"><b>${esc(m.title)}</b></a>
+        <span class="muted"> · ${MAT_TYPES[m.type] || '🔗 Strona'}${m.lang && MAT_LANGS[m.lang] ? ` · ${MAT_LANGS[m.lang]}` : ''}</span>
+        ${m.note ? `<br>${esc(m.note)}` : ''}
+        <br><small class="muted">Źródło: ${esc(m.source)}${m.license ? ` · licencja: ${esc(m.license)}` : ''}</small></li>`;
+    const kid = mats.filter((m) => !m.forParent);
+    const parent = mats.filter((m) => m.forParent);
+    pane.innerHTML = `<p class="basis">🔗 Linki otwierają się w nowej karcie, na innych stronach. ${YOUNG ? 'Oglądaj razem z rodzicem.' : 'Wybraliśmy tylko sprawdzone, oficjalne źródła.'}</p>
+      ${kid.length ? `<ul class="materials">${kid.map(item).join('')}</ul>` : ''}
+      ${parent.length ? `<h3>📄 Dla rodzica – źródła w oryginale</h3><ul class="materials">${parent.map(item).join('')}</ul>` : ''}`;
   }
 
   // ---------- Infografika „🗺️ W pigułce” (cały dział na jednym obrazie) ----------
@@ -913,6 +933,7 @@
         ${t.flashcards && t.flashcards.length ? `<a class="btn" href="${base}/fiszki">🃏 Fiszki</a>` : ''}
         <a class="btn" href="${base}/teoria">📖 Ściąga</a>
         ${t.infographic ? `<a class="btn" href="${base}/pigulka">🗺️ Zobacz dział w pigułce</a>` : ''}
+        ${t.materials && t.materials.length ? `<a class="btn" href="${base}/materialy">🔗 Materiały do obejrzenia</a>` : ''}
         <button class="btn" id="again">↺ Od początku</button></div>`;
       pane.querySelector('#again').onclick = () => { i = 0; bindKeys(); show(); };
     }

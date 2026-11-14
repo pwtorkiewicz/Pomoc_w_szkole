@@ -2,6 +2,7 @@
  * - każde pytanie ma stałe, unikalne (w całej aplikacji, we wszystkich ścieżkach) pole id,
  * - poprawny indeks odpowiedzi, brak powtórzonych odpowiedzi,
  * - unikalne id działów w przedmiocie; pola level (1–3), age ([od, do]) i requires (istniejące działy) w ścieżce „Świat”,
+ * - materiały działu (pole materials): typ, tytuł, źródło, adres https z listy zaufanych serwisów (MATERIAL_HOSTS),
  * - zadania otwarte (pole tasks): id, punkty, kroki rozwiązania, odpowiedź, zasady punktacji,
  * - zestawy ćwiczeń (window.EXERCISES): tryb, tekst/nagrania, zadania zamknięte, wpisywane i otwarte. */
 const wczytaj = require('./dane');
@@ -18,6 +19,12 @@ const MODES = ['czytanie', 'reading', 'listening', 'srodki', 'dyktando'];
 // optLang – język odpowiedzi, sayOptions – teksty czytane zamiast odpowiedzi (tyle, ile odpowiedzi),
 // sayExplain – czytane zamiast explain (jak say).
 const LANGS = ['pl', 'en', 'de']; // jak LANGS w js/app.js
+// Zakładka „🔗 Materiały” (docs/LEKCJE.md → „Materiały”): tylko oficjalne lub publiczne serwisy edukacyjne.
+// Nowy serwis dopisuj świadomie – po sprawdzeniu, że jest oficjalny/publiczny i bezpieczny dla dzieci.
+const MATERIAL_HOSTS = ['zpe.gov.pl', 'gov.pl', 'www.gov.pl', 'eli.gov.pl', 'cke.gov.pl', 'www.gov.uk', 'assets.publishing.service.gov.uk',
+  'www.mext.go.jp', 'www.moe.gov.sg', 'www.lehrplanplus.bayern.de', 'www.thenational.academy', 'www.bbc.co.uk', 'www.nhk.or.jp', 'www2.nhk.or.jp'];
+const MATERIAL_TYPES = ['film', 'animacja', 'zdjecia', 'prezentacja', 'doswiadczenie', 'lekcja', 'dokument', 'strona']; // jak MAT_TYPES w js/app.js
+const MATERIAL_LANGS = ['pl', 'en', 'ja', 'de']; // jak MAT_LANGS w js/app.js
 const checkSpeech = (q, where) => {
   for (const f of ['say', 'sayExplain']) {
     if (q[f] == null) continue;
@@ -64,6 +71,16 @@ for (const track of wczytaj.sciezki()) {
         if (!rsub || !rsub.topics.some((x) => x.id === rt)) problems.push(`${track.id}/${s.id}/${t.id}: requires – nie ma działu ${r}`);
         else if (rs === s.id && rt === t.id) problems.push(`${track.id}/${s.id}/${t.id}: requires wskazuje na ten sam dział`);
       }
+      (t.materials || []).forEach((m, i) => {
+        const where = `${track.id}/${s.id}/${t.id} materiał ${i + 1}`;
+        if (!m || !m.title || !m.source) problems.push(`${where}: brak tytułu albo źródła`);
+        if (!MATERIAL_TYPES.includes(m.type)) problems.push(`${where}: typ musi być jednym z: ${MATERIAL_TYPES.join(', ')}`);
+        if (m.lang != null && !MATERIAL_LANGS.includes(m.lang)) problems.push(`${where}: lang musi być jednym z: ${MATERIAL_LANGS.join(', ')}`);
+        let u = null;
+        try { u = new URL(m.url); } catch (e) { /* zły adres */ }
+        if (!u || u.protocol !== 'https:') problems.push(`${where}: adres musi zaczynać się od https://`);
+        else if (!MATERIAL_HOSTS.includes(u.hostname)) problems.push(`${where}: serwis ${u.hostname} spoza listy zaufanych (MATERIAL_HOSTS w tools/sprawdz-dane.js)`);
+      });
       t.questions.forEach((q, i) => {
         n++;
         const where = `${track.id}/${s.id}/${t.id} pytanie ${i + 1} („${String(q.q).slice(0, 40)}”)`;

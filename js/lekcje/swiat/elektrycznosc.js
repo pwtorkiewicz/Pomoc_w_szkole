@@ -4,37 +4,42 @@ window.LESSONS = window.LESSONS || {};
 
 window.LESSONS['elektrycznosc/magnesy'] = [
   {
-    title: 'Magnesy w trzech krajach',
-    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Magnes sztabkowy z biegunami N i S, przy jego końcach przyczepione spinacze. Pod spodem trzy kraje: Anglia – dzieci 7–8 lat, Japonia – 8–9 lat, Singapur – 8–9 lat">
-      <rect x="110" y="20" width="90" height="44" class="f2 s2 sw"/>
-      <rect x="200" y="20" width="90" height="44" class="f1 s1 sw"/>
-      <g class="tx-b" text-anchor="middle"><text x="155" y="49">N</text><text x="245" y="49">S</text></g>
-      <g class="ln" fill="none"><rect x="78" y="36" width="26" height="12" rx="6"/><rect x="296" y="36" width="26" height="12" rx="6"/><rect x="60" y="54" width="26" height="12" rx="6"/></g>
-      <rect x="10" y="100" width="120" height="80" rx="12" class="f3 s3"/>
-      <rect x="140" y="100" width="120" height="80" rx="12" class="f4 s4"/>
-      <rect x="270" y="100" width="120" height="80" rx="12" class="f5 s5"/>
-      <g class="tx-b" text-anchor="middle"><text x="70" y="134">Anglia</text><text x="200" y="134">Japonia</text><text x="330" y="134">Singapur</text></g>
-      <g class="tx" text-anchor="middle"><text x="70" y="162">7–8 lat</text><text x="200" y="162">8–9 lat</text><text x="330" y="162">8–9 lat</text></g>
+    title: 'Badaj magnesy jak japoński uczeń',
+    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Magnesy badają dzieci w Anglii (7–8 lat), Japonii (8–9 lat) i Singapurze (8–9 lat). Japoński badacz: zauważ, zapytaj, przewiduj, sprawdź, zapisz, wniosek">
+      <defs><marker id="a-swe-m1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="8" width="120" height="50" rx="10" class="f3 s3"/><rect x="140" y="8" width="120" height="50" rx="10" class="f4 s4"/><rect x="270" y="8" width="120" height="50" rx="10" class="f5 s5"/>
+      <g class="tx-b" text-anchor="middle"><text x="70" y="30">Anglia</text><text x="200" y="30">Japonia</text><text x="330" y="30">Singapur</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="70" y="49">7–8 lat</text><text x="200" y="49">8–9 lat</text><text x="330" y="49">8–9 lat</text></g>
+      <text x="10" y="84" class="tx-b">Japoński badacz:</text>
+      <g class="f1 s1"><rect x="10" y="95" width="110" height="50" rx="10"/><rect x="145" y="95" width="110" height="50" rx="10"/><rect x="280" y="95" width="110" height="50" rx="10"/>
+        <rect x="10" y="167" width="110" height="50" rx="10"/><rect x="145" y="167" width="110" height="50" rx="10"/><rect x="280" y="167" width="110" height="50" rx="10"/></g>
+      <g class="tx-b" text-anchor="middle"><text x="65" y="116">👀</text><text x="200" y="116">❓</text><text x="335" y="116">🤔</text><text x="65" y="188">🔬</text><text x="200" y="188">📝</text><text x="335" y="188">💡</text></g>
+      <g class="tx" text-anchor="middle"><text x="65" y="138">zauważ</text><text x="200" y="138">zapytaj</text><text x="335" y="138">przewiduj</text><text x="65" y="210">sprawdź</text><text x="200" y="210">zapisz</text><text x="335" y="210">wniosek</text></g>
+      <g class="ln" fill="none"><path d="M121,120 H141" marker-end="url(#a-swe-m1)"/><path d="M256,120 H276" marker-end="url(#a-swe-m1)"/><path d="M335,146 V156 H65 V163" marker-end="url(#a-swe-m1)"/>
+        <path d="M121,192 H141" marker-end="url(#a-swe-m1)"/><path d="M256,192 H276" marker-end="url(#a-swe-m1)"/></g>
     </svg>`,
     text: `<p>W Anglii, Japonii i Singapurze dzieci w wieku 7–9 lat badają <b>magnesy</b>.</p>
-      <p>Magnes przyciąga niektóre rzeczy. Działa też na inne magnesy. Sprawdźmy jak!</p>`,
-    remember: 'Magnes przyciąga niektóre rzeczy i działa na inne magnesy.',
-    hook: 'Magnes to „siłacz bez rąk” – ciągnie, choć nie dotyka.',
+      <p>W Japonii lekcja przyrody to praca <b>badacza</b>: zauważ, zapytaj, przewiduj, sprawdź, zapisz i wyciągnij wniosek. Spróbuj tak samo!</p>`,
+    remember: 'Badacz: zauważ → zapytaj → przewiduj → sprawdź → zapisz → wniosek.',
+    hook: 'Badacz najpierw zgaduje, a potem sprawdza – i nie wstydzi się pomyłki.',
   },
   {
-    title: 'Co przyciąga magnes?',
-    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Dwie kolumny. Magnes przyciąga: gwóźdź, spinacz, stalową pinezkę. Magnes nie przyciąga: drewna, papieru, gumki do ścierania, miedzi i złota">
-      <rect x="10" y="10" width="185" height="200" rx="12" class="f3 s3"/>
-      <rect x="205" y="10" width="185" height="200" rx="12" class="f2 s2"/>
-      <g class="tx-b"><text x="24" y="40">✅ Przyciąga</text><text x="219" y="40">❌ Nie przyciąga</text></g>
-      <g class="tx"><text x="24" y="82">🔩 gwóźdź</text><text x="24" y="117">📎 spinacz</text><text x="24" y="152">📌 stalowa pinezka</text>
-        <text x="219" y="82">🪵 drewno</text><text x="219" y="117">📄 papier</text><text x="219" y="152">gumka do ścierania</text><text x="219" y="187">miedź, złoto</text></g>
+    title: '🔬 Tabela badacza: co przyciąga magnes?',
+    svg: `<svg viewBox="0 0 400 250" role="img" aria-label="Tabela: rzecz, przewiduję, wynik. Spinacz – przewiduję tak, wynik tak. Gumka – nie, nie. Gwóźdź – tak, tak. Folia aluminiowa – przewiduję tak, wynik nie. Niespodzianka: nie każdy metal">
+      <rect x="10" y="10" width="380" height="36" rx="6" class="f4 s4"/>
+      <g class="tx-b"><text x="20" y="34">Rzecz</text><text x="240" y="34" text-anchor="middle">Przewiduję</text><text x="340" y="34" text-anchor="middle">Wynik</text></g>
+      <rect x="10" y="50" width="380" height="40" rx="6" class="f3 s3"/><rect x="10" y="94" width="380" height="40" rx="6" class="f3 s3"/>
+      <rect x="10" y="138" width="380" height="40" rx="6" class="f3 s3"/><rect x="10" y="182" width="380" height="40" rx="6" class="f2 s2 sw"/>
+      <g class="tx"><text x="20" y="76">📎 spinacz</text><text x="20" y="120">gumka</text><text x="20" y="164">🔩 gwóźdź</text><text x="20" y="208">folia aluminiowa</text></g>
+      <g class="tx" text-anchor="middle"><text x="240" y="76">✅</text><text x="340" y="76">✅</text><text x="240" y="120">❌</text><text x="340" y="120">❌</text>
+        <text x="240" y="164">✅</text><text x="340" y="164">✅</text><text x="240" y="208">✅</text><text x="340" y="208">❌</text></g>
+      <text x="200" y="244" text-anchor="middle" class="tx-b">Niespodzianka: nie każdy metal!</text>
     </svg>`,
-    text: `<p>Magnes przyciąga rzeczy z <b>żelaza</b> i ze <b>stali</b>.</p>
-      <p>Drewna, papieru i gumki nie przyciąga. Uwaga: <b>nie każdy metal</b>! Miedzi i złota też nie.</p>`,
-    remember: 'Magnes przyciąga żelazo i stal.',
-    hook: 'Żelazo to najlepszy przyjaciel magnesu.',
-    check: { q: 'Co przyciągnie magnes?', options: ['stalowy spinacz', 'drewniany klocek'], answer: 0, explain: 'Spinacz jest ze stali. Drewna magnes nie przyciąga.' },
+    text: `<p>Zrób tabelę jak japońscy uczniowie. Najpierw wpisz, co <b>przewidujesz</b>. Potem <b>sprawdź</b> magnesem i zapisz wynik.</p>
+      <p>Magnes przyciąga <b>żelazo</b> i <b>stal</b>. Drewna, papieru i gumki – nie. Niespodzianka: <b>nie każdy metal</b>! Folii aluminiowej, miedzi i złota też nie przyciąga.</p>`,
+    remember: 'Magnes przyciąga żelazo i stal – ale nie każdy metal.',
+    hook: 'Pomyłka w przewidywaniu to nie porażka – to odkrycie!',
+    check: { q: 'Folia aluminiowa to metal. Czy magnes ją przyciągnie?', options: ['nie', 'tak'], answer: 0, explain: 'Nie. Magnes przyciąga żelazo i stal, a aluminium – nie.' },
   },
   {
     title: 'Dwa bieguny: N i S',
@@ -69,7 +74,7 @@ window.LESSONS['elektrycznosc/magnesy'] = [
         <text x="200" y="150">Najmocniej przy biegunach – na końcach.</text></g>
     </svg>`,
     text: `<p>Magnes przyciąga spinacz, nawet gdy go <b>nie dotyka</b>.</p>
-      <p>Im <b>bliżej</b>, tym <b>mocniej</b>. Najmocniej przyciąga na końcach – przy biegunach.</p>`,
+      <p>Im <b>bliżej</b>, tym <b>mocniej</b>. Najmocniej przyciąga na końcach – przy biegunach. Japońskie dzieci czują ręką, jak magnes ciągnie, i zbliżają go do igły kompasu – igła się rusza, choć magnes jej nie dotyka.</p>`,
     remember: 'Magnes działa na odległość. Im bliżej, tym mocniej.',
     hook: 'Jak zapach ciasta: im bliżej kuchni, tym mocniej go czujesz.',
   },
@@ -88,35 +93,33 @@ window.LESSONS['elektrycznosc/magnesy'] = [
       <text x="200" y="184" text-anchor="middle" class="tx">kompas</text>
     </svg>`,
     text: `<p>Zawieś magnes na nitce. Sam obróci się w kierunku <b>północ–południe</b>.</p>
-      <p>Biegun <b>N</b> pokaże <b>północ</b>. Tak działa igła kompasu.</p>`,
-    remember: 'Biegun N pokazuje północ.',
+      <p>Duży czy mały, sztabka czy podkowa – <b>zawsze</b> tak samo. Koniec, który pokazuje <b>północ</b>, nazwano <b>N</b> – biegun północny. Tak działa igła kompasu.</p>`,
+    remember: 'Koniec magnesu, który pokazuje północ, to biegun N.',
     hook: 'N jak „North” – po angielsku północ.',
     check: { q: 'Magnes wisi na nitce. Co pokazuje biegun N?', say: 'Magnes wisi na nitce. Co pokazuje biegun północny?', options: ['północ', 'południe'], answer: 0, explain: 'Biegun północny N pokazuje północ.', sayExplain: 'Biegun północny pokazuje północ.' },
   },
   {
-    title: 'Gwóźdź też może być magnesem',
-    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Po lewej: z magnesu zwisa żelazny gwóźdź, a z gwoździa spinacz – gwóźdź stał się magnesem. Po prawej: w Singapurze pociera się gwóźdź magnesem">
+    title: '🔬 Zrób w domu: kompas z igły',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Po lewej: igłę do szycia pocieramy magnesem. Po prawej: igła wbita w korek pływa w misce z wodą i pokazuje północ–południe">
       <defs><marker id="a-swe-m6" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
-      <rect x="20" y="20" width="90" height="40" class="f2 s2 sw"/><rect x="110" y="20" width="90" height="40" class="f1 s1 sw"/>
-      <g class="tx-b" text-anchor="middle"><text x="65" y="47">N</text><text x="155" y="47">S</text></g>
-      <rect x="42" y="60" width="26" height="6" class="f4 s4"/>
-      <rect x="51" y="66" width="8" height="74" class="f4 s4"/>
-      <path d="M51,140 L55,150 L59,140" class="f4 s4"/>
-      <g class="ln" fill="none"><rect x="45" y="154" width="20" height="30" rx="8"/><path d="M55,160 V176"/></g>
-      <text x="80" y="110" class="tx">gwóźdź</text>
-      <text x="80" y="176" class="tx">spinacz</text>
-      <g class="tx-b"><text x="236" y="40">Singapur:</text></g>
-      <g class="tx"><text x="236" y="64">pocieraj gwóźdź</text><text x="236" y="86">magnesem</text></g>
-      <rect x="264" y="116" width="30" height="22" class="f2 s2"/><rect x="294" y="116" width="30" height="22" class="f1 s1"/>
-      <path d="M262,106 H372" class="ln sw" marker-end="url(#a-swe-m6)"/>
-      <rect x="236" y="144" width="6" height="20" class="f4 s4"/>
-      <rect x="242" y="150" width="130" height="8" class="f4 s4"/>
-      <path d="M372,150 L384,154 L372,158" class="f4 s4"/>
+      <g class="tx-b"><text x="14" y="30">1</text><text x="214" y="30">2</text></g>
+      <g class="tx"><text x="34" y="30">potrzyj igłę</text><text x="34" y="52">magnesem</text><text x="234" y="30">na korku,</text><text x="234" y="52">na wodzie</text></g>
+      <rect x="60" y="80" width="25" height="22" class="f2 s2"/><rect x="85" y="80" width="25" height="22" class="f1 s1"/>
+      <path d="M50,72 H160" class="ln sw" marker-end="url(#a-swe-m6)"/>
+      <rect x="30" y="110" width="140" height="4" class="f4 s4"/><path d="M170,108 L182,112 L170,116 Z" class="f4 s4"/>
+      <path d="M186,120 H208" class="ln sw" marker-end="url(#a-swe-m6)"/>
+      <path d="M215,140 Q300,215 385,140" class="ln sw" fill="none"/>
+      <ellipse cx="300" cy="140" rx="85" ry="14" class="f1 s1"/>
+      <rect x="285" y="124" width="30" height="14" rx="3" class="f2 s2"/>
+      <rect x="250" y="122" width="100" height="4" class="f4 s4"/>
+      <g class="tx-b" text-anchor="middle"><text x="238" y="116">N</text><text x="362" y="116">S</text></g>
+      <text x="200" y="212" text-anchor="middle" class="tx-b">Igła pokaże północ–południe!</text>
     </svg>`,
-    text: `<p>Żelazny gwóźdź przy magnesie <b>sam staje się magnesem</b>. Teraz on przyciąga spinacz!</p>
-      <p>W Singapurze dzieci robią magnes z gwoździa: <b>pocierają go magnesem</b>.</p>`,
+    text: `<p>Żelazo i stal przy magnesie <b>same stają się magnesem</b> – jak gwóźdź, który przyciąga spinacze.</p>
+      <p>Zrób kompas (z dorosłym – igła jest ostra!): <b>potrzyj</b> igłę do szycia magnesem, wbij ją w <b>korek</b> i połóż na <b>wodzie</b> w misce. W Singapurze dzieci też robią magnes, pocierając. Odsuń inne magnesy i rzeczy z żelaza – psują wynik.</p>`,
     remember: 'Żelazo przy magnesie samo staje się magnesem.',
-    hook: 'Magnes „pożycza” gwoździowi swoją moc.',
+    hook: 'Magnes „pożycza” igle swoją moc – a igła na wodzie szuka północy.',
+    check: { q: 'Czego potrzebujesz do kompasu z igły?', options: ['igły, magnesu, korka i miski z wodą', 'igły, kleju, farby i kartki'], answer: 0, explain: 'Igłę pocierasz magnesem, wbijasz w korek i kładziesz na wodzie – może się wtedy swobodnie obracać.' },
   },
 ];
 

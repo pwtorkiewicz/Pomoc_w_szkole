@@ -51,7 +51,7 @@ const dane = require('./dane');
       page.on('dialog', (d) => d.accept());
       await page.goto(url);
       const data = await page.evaluate(() => ({
-        subjects: window.SUBJECTS.map((s) => ({ id: s.id, link: s.link, topics: s.topics.map((t) => t.id), infos: s.topics.filter((t) => t.infographic).map((t) => t.id) })),
+        subjects: window.SUBJECTS.map((s) => ({ id: s.id, link: s.link, topics: s.topics.map((t) => t.id), infos: s.topics.filter((t) => t.infographic).map((t) => t.id), mats: s.topics.filter((t) => t.materials && t.materials.length).map((t) => t.id) })),
         sets: (window.EXERCISES || []).map((e) => ({ subject: e.subject, mode: e.mode, id: e.id })),
       }));
       // przyciski 🔊 (ścieżki z czytaniem na głos): kliknij każdy widoczny – sprawdza, czy nie ma błędów JS
@@ -90,6 +90,7 @@ const dane = require('./dane');
         for (const t of s.topics) {
           for (const tab of ['lekcja', 'teoria', 'fiszki', 'zadania']) await visit(`#/s/${s.id}/t/${t}/${tab}`, clickSay);
           if (s.infos.includes(t)) await visit(`#/s/${s.id}/t/${t}/pigulka`, clickSay);
+          if (s.mats.includes(t)) await visit(`#/s/${s.id}/t/${t}/materialy`);
           await visit(`#/s/${s.id}/t/${t}/quiz`, async () => { await clickSay(); await page.click('.opt'); await clickSay(); });
         }
         const modes = [...new Set(data.sets.filter((e) => e.subject === s.id).map((e) => e.mode))];

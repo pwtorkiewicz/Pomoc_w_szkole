@@ -14,7 +14,7 @@ Aplikacja ma **ścieżki** (opis: `docs/SCIEZKI.md`), wybierane na ekranie start
 
 **Edukacji zdrowotnej (także „zdrowie seksualne”), etyki i religii nie dodajemy w żadnej ścieżce** – decyzja rodzica (chodzi o te przedmioty). **Elementy związane z religią katolicką w innych przedmiotach wolno dodawać** (decyzja rodzica, 3.11.2026) – np. kolędy, pieśni i zwyczaje świąteczne w muzyce; fakty jak zawsze tylko ze sprawdzonych źródeł. Wyjątek (decyzja rodzica, 2.11.2026): w przyrodzie kl. 4 dodajemy tematy z podręcznika – czas przed ekranem, ochrona przed chorobami, szkodliwość dymu tytoniowego i alkoholu – ale **bez dojrzewania** (lekcji „Jak zmieniamy się w ciągu życia?” nie dodajemy).
 
-**Ścieżka „🌍 Świat – nauka z innych krajów”** (`swiat`; decyzja rodzica, 14.11.2026; plan `docs/PLAN-swiat.md`): tematy z oficjalnych programów nauczania innych krajów, głównie nauki ścisłe, technika, informatyka, sposób nauki. Działy **według tematów, nie klas**: `level` (1–3), `age` (`[od, do]` – sugerowany wiek, pokazywany dyskretnie), `requires` („Najpierw zrób”), `where` („Gdzie się tego uczą”); kraj nie jest w nazwie działu. To **jedyna ścieżka poza polską podstawą**: `basis` zaczyna się od „Poza polską podstawą programową – ścieżka „Świat” (decyzja rodzica)” i podaje zagraniczny dokument. Fakty o szkołach za granicą – tylko z dokumentów ministerstw; zadań nie kopiujemy. Do ścieżek klas nie dodajemy materiału z innych krajów.
+**Ścieżka „🌍 Świat – nauka z innych krajów”** (`swiat`; decyzja rodzica, 14.11.2026; plan `docs/PLAN-swiat.md`): tematy z oficjalnych programów nauczania innych krajów, głównie nauki ścisłe, technika, informatyka, sposób nauki. Działy **według tematów, nie klas**: `level` (1–3), `age` (`[od, do]` – sugerowany wiek, pokazywany dyskretnie), `requires` („Najpierw zrób”), `where` („Gdzie się tego uczą”); kraj nie jest w nazwie działu. To **jedyna ścieżka poza polską podstawą**: `basis` zaczyna się od „Poza polską podstawą programową – ścieżka „Świat” (decyzja rodzica)” i podaje zagraniczny dokument. Fakty o szkołach za granicą – tylko z dokumentów ministerstw; zadań nie kopiujemy. Do ścieżek klas nie dodajemy materiału z innych krajów. **Rozszerzone źródła** (decyzja rodzica, 14.11.2026): wiedzę i **sposób uczenia** (tok lekcji, doświadczenia, typowe błędy dzieci) wolno brać także z oficjalnych przewodników i komentarzy ministerstw (np. japońskie 解説 MEXT, angielskie „notes and guidance”) oraz z otwartych materiałów finansowanych przez państwa (np. Oak National Academy – przy każdym sprawdzić licencję); tekst piszemy własnymi słowami, tłumaczenia oznaczamy jako nasze, komercyjnych podręczników nie używamy. Zasady i pilotaż: `docs/PLAN-swiat.md`.
 
 Ścieżka egzaminacyjna jest dopracowana – utrzymuj ją i rozwijaj; zmiany w silniku nie mogą jej zepsuć (zawsze `node tools/przeglad.js egzamin8`).
 
@@ -49,7 +49,7 @@ docs/PLAN-swiat.md     – ścieżka „Świat” (programy innych krajów): zas
 docs/research/          – research do ścieżki „Świat”: mapa tematów 11 krajów (reports/) i notatki źródłowe (research_notes/)
 docs/PLAN-infografiki.md – pilotaż infografik „🗺️ W pigułce” (zasady, wzory, działy pilotażowe)
 docs/podreczniki/       – podręczniki dzieci: dane ze stron redakcyjnych, spisy treści, przypisanie do działów (tylko tytuły – bez treści podręczników)
-tools/                  – sprawdzarka lekcji i zrzuty ekranu (Playwright)
+tools/                  – sprawdzarki (dane, lekcje, linki) i zrzuty ekranu (Playwright)
 ```
 
 Uruchomienie: otwórz `index.html` w przeglądarce (albo od razu stronę ścieżki). Publikacja: GitHub Pages z tej gałęzi (`https://pwtorkiewicz.github.io/Pomoc_w_szkole/`).
@@ -77,6 +77,7 @@ Uruchomienie: otwórz `index.html` w przeglądarce (albo od razu stronę ścież
 - Klasa 3 (`young: true`): pytania czyta przycisk 🔊 – gdy tekst ma symbole, obrazki albo słowa angielskie, dodaj `say` / `optLang` / `sayOptions` (dział: `cardLang`); format w README („Czytanie na głos”).
 - Zestaw ćwiczeń (`window.EXERCISES`, format w README): zadania zamknięte (opcje nie są tasowane – rozkładaj poprawne odpowiedzi na różne litery), `type: 'input'` z listą `accept` (wszystkie poprawne warianty), `type: 'open'` z przykładową odpowiedzią i `scoring`. Id zestawu i zadań z tej samej puli co pytania. Fragmenty lektur tylko z domeny publicznej i w sprawdzonym brzmieniu (np. z arkusza CKE – podaj źródło w `source`); teksty nieliterackie piszemy sami. Zadania piszemy sami, nie kopiujemy zadań CKE.
 - Zadanie otwarte (pole `tasks` działu): `{ id, points, q, svg?, steps, answer, scoring }` – id z tej samej puli co pytania, `scoring` ma tyle linii, ile punktów. Wynik zadania sprawdź podstawieniem, a punktację opisz jako orientacyjną (nie są to oficjalne zasady CKE).
+- Zakładka działu „🔗 Materiały” (pole `materials`): linki do filmów, animacji, zdjęć i lekcji online **tylko z oficjalnych lub publicznych serwisów edukacyjnych** (lista `MATERIAL_HOSTS` w `tools/sprawdz-dane.js` – nowy serwis dopisuj świadomie), każdy link otwarty i obejrzany przed dodaniem (opis zgodny z treścią strony); dokumenty źródłowe w oryginale z `forParent: true`. Format: `docs/LEKCJE.md` → „Materiały”.
 - Infografika działu „🗺️ W pigułce” (pole `infographic`, opcjonalnie `infographicNote`) – tylko treść ze ściągi i fiszek działu; zasady i wzory: `docs/LEKCJE.md` → „Infografiki”.
 - Lekcje pisz według `docs/LEKCJE.md`: 4–6 kroków, każdy z grafiką (SVG albo widżet), SVG tylko z klasami CSS (bez kolorów na sztywno – tryb ciemny), `viewBox` szerokości 300–440, `aria-label`, unikalne id markerów.
 - Bez zewnętrznych bibliotek i bez kroku budowania. Aplikacja ma działać po otwarciu pliku i na telefonie (szerokość ok. 400 px).
@@ -90,6 +91,7 @@ node tools/jakosc-pytan.js [ścieżka[/przedmiot]] [-v] # podpowiedzi: poprawna 
 node tools/sprawdz-lekcje.js [ścieżka[/przedmiot] | przedmiot]   # lekcje i infografiki: struktura, XML SVG, napisy poza kadrem/nachodzące, błędy JS
 node tools/zrzut.js <[ścieżka/]przedmiot/dział> <krok|pigulka> <plik.png> [dark] [420]   # podgląd kroku lekcji lub infografiki (bez ścieżki – egzamin)
 node tools/przeglad.js [ścieżka]                     # ekran wyboru + wszystkie widoki i zestawy ścieżek (jasny/ciemny, 420 px): błędy JS, poziome przewijanie
+node tools/sprawdz-linki.js [ścieżka]               # zakładki „🔗 Materiały”: czy linki działają (sieć; po dodaniu lub zmianie materiałów)
 node tools/test-chmura.js                            # zapis postępu: łączenie zapisów, prognoza, skrypt arkusza (atrapa Google), synchronizacja dwóch urządzeń
 ```
 

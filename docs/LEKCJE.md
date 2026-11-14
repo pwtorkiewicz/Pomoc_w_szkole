@@ -139,6 +139,23 @@ infographic: `
 
 Sprawdzanie: `node tools/sprawdz-lekcje.js [ścieżka[/przedmiot]]` sprawdza też infografiki (XML, szerokość viewBox, `role`, `aria-label`, kolory na sztywno, powtórzone id, napisy poza kadrem i nachodzące, zakładka i link z końca lekcji). Podgląd: `node tools/zrzut.js <[ścieżka/]przedmiot/dział> pigulka <plik.png> [dark] [420]`.
 
+## Materiały „🔗 Materiały”
+
+Opcjonalne pole działu `materials` – lista linków do filmów, animacji, zdjęć, lekcji online i dokumentów. Gdy dział je ma, pojawia się zakładka **„🔗 Materiały”** (`#/s/<przedmiot>/t/<dział>/materialy`) i przycisk na końcu lekcji. Linki otwierają się w nowej karcie.
+
+```js
+materials: [
+  { type: 'film', title: 'Jak działa kompas? – i jak zrobić własny', url: 'https://zpe.gov.pl/a/jak-dziala-kompas/DiTVdtwnf',
+    source: 'ZPE (zpe.gov.pl) – przyroda', license: 'filmy CC BY 3.0', note: 'Co dokładnie jest na stronie (1–2 zdania).', expect: 'Jak działa kompas?' },
+  { type: 'dokument', forParent: true, title: 'Komentarz do podstawy (Japonia, MEXT) – s. 35–36', url: 'https://www.mext.go.jp/…pdf', lang: 'ja', source: 'MEXT' },
+],
+```
+
+- `type`: `film`, `animacja`, `zdjecia`, `prezentacja`, `doswiadczenie`, `lekcja`, `dokument`, `strona`; `lang`: `pl` (domyślnie), `en`, `ja`, `de`; `forParent: true` – w części „Dla rodzica” (dokumenty źródłowe, często w obcym języku); `expect` – tekst, który musi być na stronie (sprawdza `tools/sprawdz-linki.js`).
+- **Tylko oficjalne lub publiczne serwisy edukacyjne** – lista `MATERIAL_HOSTS` w `tools/sprawdz-dane.js` (ZPE, gov.pl, gov.uk, MEXT, MOE Singapur, LehrplanPLUS, Oak National Academy, BBC, NHK). Bez YouTube i serwisów z reklamami.
+- **Każdy link otwórz i przeczytaj przed dodaniem**; `note` opisuje to, co naprawdę jest na stronie. Materiał ZPE z komunikatem „Nie masz dostępu do tej treści” nie nadaje się (jest usunięty albo tylko po zalogowaniu).
+- Po dodaniu: `node tools/sprawdz-linki.js <ścieżka>`.
+
 ## Sprawdzanie
 
 ```
