@@ -399,3 +399,14 @@ details.report pre { white-space: pre-wrap; word-break: break-word; font: inheri
 }
 .widget .mlog { margin-top: 10px; overflow-x: auto; }
 .widget .mlog .worksheet { font-size: .9rem; } .widget .mlog .worksheet th, .widget .mlog .worksheet td { min-width: 0; padding: 6px; }
+
+/* widżet „rama” (Świat, Mosty i trójkąty): wybrana ramka, klikane pręty kratownicy */
+.widget .rama .btn.on { background: var(--c1); border-color: var(--c1s); }
+.vis .rama-hit { stroke: transparent; stroke-width: 18; cursor: pointer; pointer-events: stroke; }
+.vis .rama-hit:focus { outline: none; stroke: var(--c4s); stroke-opacity: .4; }
+
+/* widżet „czujniki” (Świat, Czujniki i sterowanie): plansza z linią ma stałe barwy w obu trybach (białe podłoże, czarna linia), więc robot i trasa też */
+.vis .cz-biale { fill: #ffffff; } .vis .cz-czarne { fill: #111111; }
+.vis .cz-robot { fill: #ffb547; stroke: #5a3a00; }
+.vis .cz-trasa { stroke: #1f9d55; } .vis .cz-blad { stroke: #e0603a; }
+.widget .czset .controls span, .widget .czguess span { font-weight: 600; }

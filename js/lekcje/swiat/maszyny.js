@@ -113,118 +113,106 @@ window.LESSONS['maszyny/mechanizmy'] = [
 
 window.LESSONS['maszyny/mosty'] = [
   {
-    title: 'Mosty w bawarskiej szkole',
-    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Bawaria w Niemczech: klasy 3–4, przedmiot HSU. Anglia: dzieci 7–11 lat. Pod spodem model mostu z kartki złożonej w harmonijkę, położonej na dwóch książkach, z monetami na środku i pytaniem: czy wytrzyma?">
-      <rect x="10" y="10" width="185" height="70" rx="12" class="f4 s4"/>
-      <text x="22" y="40" class="tx-b">Bawaria (Niemcy)</text>
-      <text x="22" y="64" class="tx">klasy 3–4 · HSU</text>
-      <rect x="205" y="10" width="185" height="70" rx="12" class="f1 s1"/>
-      <rect x="215" y="24" width="36" height="24" class="fl-w"/>
-      <rect x="230" y="24" width="6" height="24" class="fl-r"/>
-      <rect x="215" y="33" width="36" height="6" class="fl-r"/>
-      <rect x="215" y="24" width="36" height="24" class="ln" fill="none"/>
-      <text x="262" y="42" class="tx-b">Anglia</text>
-      <text x="262" y="66" class="tx">7–11 lat</text>
-      <text x="200" y="104" text-anchor="middle" class="tx-b">Czy wytrzyma?</text>
-      <g class="f4 s4"><rect x="184" y="112" width="32" height="6" rx="3"/><rect x="184" y="118" width="32" height="6" rx="3"/><rect x="184" y="124" width="32" height="6" rx="3"/></g>
-      <path d="M90,140 L100,130 L110,140 L120,130 L130,140 L140,130 L150,140 L160,130 L170,140 L180,130 L190,140 L200,130 L210,140 L220,130 L230,140 L240,130 L250,140 L260,130 L270,140 L280,130 L290,140 L300,130 L310,140" class="ln sw" fill="none"/>
-      <rect x="40" y="140" width="50" height="40" class="f2 s2"/><rect x="310" y="140" width="50" height="40" class="f2 s2"/>
-      <path d="M10,180 H390" class="ln-thin"/>
+    title: '🇵🇱 Przypomnienie: trójkąt z trzech odcinków',
+    svg: `<svg viewBox="0 0 400 205" role="img" aria-label="Przypomnienie z matematyki: warunek trójkąta. Z odcinków 6, 4 i 3 cm powstaje trójkąt, bo 3 + 4 = 7, a 7 jest więcej niż 6. Z odcinków 7, 2 i 3 cm trójkąta nie ma – końce się nie spotykają, bo 2 + 3 = 5, a to mniej niż 7">
+      <text x="200" y="24" text-anchor="middle" class="tx">Dwa krótsze razem dłuższe od trzeciego?</text>
+      <path d="M25,150 L175,150 L114.6,105.6 Z" class="f3 s3 sw"/>
+      <g class="s2 sw" fill="none"><path d="M215,150 H390"/><path d="M215,150 L240,106.7"/><path d="M390,150 L352.5,85"/></g>
+      <g class="tx-s"><text x="100" y="170" text-anchor="middle">6 cm</text><text x="58" y="117" text-anchor="end">4 cm</text><text x="150" y="117">3 cm</text>
+        <text x="302" y="170" text-anchor="middle">7 cm</text><text x="236" y="138">2 cm</text><text x="363" y="125" text-anchor="end">3 cm</text></g>
+      <g class="tx" text-anchor="middle"><text x="100" y="196">3 + 4 = 7 &gt; 6 ✅</text><text x="302" y="196">2 + 3 = 5 &lt; 7 ❌</text></g>
     </svg>`,
-    text: `<p>W Bawarii (to jeden z krajów związkowych Niemiec) dzieci w klasach 3–4 mają przedmiot <b>HSU</b> – „wiedza o najbliższym otoczeniu i świecie”. <b>Budują modele mostów</b>, sprawdzają, czy są stabilne, i wyjaśniają dlaczego.</p>
-      <p>W Anglii dzieci w wieku 7–11 lat uczą się, jak konstrukcje <b>wzmacniać i usztywniać</b>. Poznasz sztuczki inżynierów!</p>`,
-    remember: 'Inżynier sprawdza, czy konstrukcja jest stabilna – i wyjaśnia dlaczego.',
+    text: `<p>To znasz z <b>matematyki w klasach 4–6</b>: z trzech odcinków zbudujesz trójkąt tylko wtedy, gdy <b>dwa krótsze razem są dłuższe od trzeciego</b> – to warunek trójkąta.</p>
+      <p>W Bawarii dzieci w klasach 3–4 budują modele <b>mostów</b> i sprawdzają, czy są stabilne. Program Anglii każe robić konstrukcje <b>sztywniejsze</b> i stabilniejsze, a trójkąty i mosty pokazują w tym lekcje Oak i BBC. Polska podstawa programowa tego nie wymaga – poznasz to tutaj.</p>`,
+    remember: 'Warunek trójkąta: dwa krótsze odcinki razem dłuższe od trzeciego.',
+    check: { q: 'Czy z odcinków 2 cm, 3 cm i 4 cm zbudujesz trójkąt?', options: ['tak', 'nie'], answer: 0, explain: '2 + 3 = 5, a 5 > 4 – końce odcinków się spotkają.', sayExplain: '2 dodać 3 to 5, a 5 jest większe od 4 – końce odcinków się spotkają.' },
   },
   {
-    title: 'Kwadrat się przekrzywia, trójkąt – nie',
-    svg: `<svg viewBox="0 0 400 190" role="img" aria-label="Kwadrat z listewek na zawiasach po naciśnięciu przekrzywia się w romb – te same boki, inne kąty. Trójkąt z trzech listewek nie zmienia kształtu">
-      <defs><marker id="a-swm-mo2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
-      <g class="f4 s4 sw" fill="none"><path d="M20,40 H100 V120 H20 Z" fill="none"/><path d="M150,120 H230 L270,51 H190 Z" fill="none"/><path d="M300,120 H380 L340,51 Z" fill="none"/></g>
-      <path d="M108,80 H140" class="ln sw" marker-end="url(#a-swm-mo2)"/>
-      <g class="ln"><circle cx="20" cy="40" r="5" class="bg"/><circle cx="100" cy="40" r="5" class="bg"/><circle cx="100" cy="120" r="5" class="bg"/><circle cx="20" cy="120" r="5" class="bg"/>
-        <circle cx="150" cy="120" r="5" class="bg"/><circle cx="230" cy="120" r="5" class="bg"/><circle cx="270" cy="51" r="5" class="bg"/><circle cx="190" cy="51" r="5" class="bg"/>
-        <circle cx="300" cy="120" r="5" class="bg"/><circle cx="380" cy="120" r="5" class="bg"/><circle cx="340" cy="51" r="5" class="bg"/></g>
-      <g class="tx" text-anchor="middle"><text x="145" y="152">kwadrat → romb</text><text x="145" y="176">te same boki</text><text x="340" y="152">trójkąt</text><text x="340" y="176">nie drgnie</text></g>
-    </svg>`,
-    text: `<p>Kwadrat z listewek połączonych na zawiasach łatwo <b>przekrzywić w romb</b>: boki są te same, zmieniają się kąty.</p>
-      <p>Trójkąt z trzech listewek <b>się nie przekrzywi</b>. Z trzech boków o danych długościach da się złożyć <b>tylko jeden</b> trójkąt.</p>`,
-    remember: 'Trójkąt jest sztywny – przy danych bokach ma tylko jeden kształt.',
+    title: '🌍 Pchnij ramkę: trójkąt kontra kwadrat',
+    widget: { type: 'rama', tryb: 'ramka' },
+    text: `<p>Wybierz ramkę, <b>najpierw przewidź</b>, a potem pchnij róg. W rogach są zawiasy – listewki mogą się obracać.</p>
+      <p>Kwadrat przekrzywia się w romb: boki te same, kąty inne. Trójkąt nie drgnie – <b>trzy boki wyznaczają jego kształt</b>. Bawarski program podaje jako przykład usztywnienia <b>połączenia trójkątne</b>, a program Anglii każe od pierwszych klas sprawdzać, jak zrobić konstrukcję sztywniejszą.</p>`,
+    remember: 'Trójkąt trzyma kształt. Kwadrat usztywnisz przekątną – powstaną dwa trójkąty.',
     hook: 'Trzy patyki – jeden trójkąt. Cztery patyki – kwadrat, romb, jeszcze bardziej krzywy romb…',
-    check: { q: 'Którą ramkę z listewek na zawiasach da się przekrzywić?', options: ['kwadrat', 'trójkąt'], answer: 0, explain: 'Kwadrat przekrzywia się w romb. Trójkąt jest sztywny.' },
+    check: { q: 'Którą ramkę z listewek na zawiasach da się przekrzywić?', options: ['kwadrat', 'trójkąt'], answer: 0, explain: 'Kwadrat przekrzywia się w romb. Trzy boki wyznaczają kształt trójkąta – trójkąt jest sztywny.' },
   },
   {
-    title: 'Przekątna i kratownica',
-    svg: `<svg viewBox="0 0 400 210" role="img" aria-label="Kwadrat z przekątną to dwa trójkąty. Pod spodem most kratownicowy: pręty ułożone w trójkąty, połączone w węzłach">
-      <path d="M30,20 H90 V80 H30 Z M30,80 L90,20" class="f4 s4 sw" fill="none"/>
-      <g class="tx"><text x="110" y="45">kwadrat + przekątna</text><text x="110" y="70">= 2 trójkąty</text></g>
-      <g class="s1 sw" fill="none"><path d="M30,170 H350 M70,120 H310"/>
-        <path d="M30,170 L70,120 L110,170 L150,120 L190,170 L230,120 L270,170 L310,120 L350,170"/></g>
-      <g class="ln"><circle cx="30" cy="170" r="5" class="bg"/><circle cx="110" cy="170" r="5" class="bg"/><circle cx="190" cy="170" r="5" class="bg"/><circle cx="270" cy="170" r="5" class="bg"/><circle cx="350" cy="170" r="5" class="bg"/>
-        <circle cx="70" cy="120" r="5" class="bg"/><circle cx="150" cy="120" r="5" class="bg"/><circle cx="230" cy="120" r="5" class="bg"/><circle cx="310" cy="120" r="5" class="bg"/></g>
-      <path d="M22,190 L30,175 L38,190 Z M342,190 L350,175 L358,190 Z" class="f2 s2"/>
-      <text x="150" y="106" text-anchor="middle" class="tx">węzeł</text>
-      <text x="200" y="204" text-anchor="middle" class="tx-s">most kratownicowy</text>
-    </svg>`,
-    text: `<p>Listewka <b>po przekątnej</b> dzieli kwadrat na dwa trójkąty – ramka robi się sztywna.</p>
-      <p><b>Kratownica</b> to konstrukcja z prętów ułożonych w <b>trójkąty</b>. Pręty łączą się w <b>węzłach</b>. Kratownica jest wytrzymała i sztywna – dlatego buduje się z niej mosty.</p>`,
-    remember: 'Kratownica = pręty ułożone w trójkąty.',
+    title: '🌍 Zbuduj kratownicę',
+    widget: { type: 'rama', tryb: 'kratownica' },
+    text: `<p><b>Kratownica</b> to konstrukcja z prętów, które tworzą <b>układ trójkątów</b>; pręty łączą się w <b>węzłach</b>. Kratownice stosuje się m.in. w mostach.</p>
+      <p>Klikaj pręty, żeby je dodać albo zabrać. Przewidź, czy most trzyma kształt – i sprawdź. Ile <b>najmniej</b> prętów wystarczy? W Bawarii przy ocenie modelu liczy się też <b>oszczędność materiału</b>.</p>
+      <p>Ukośny pręt, który z ramą tworzy trójkąt, to <b>zastrzał</b>. W niemieckojęzycznej części Szwajcarii dzieci w klasach 3–6 poznają elementy stabilizujące, np. podporę, odciąg, zastrzał i profil.</p>`,
+    remember: 'Pole z czterech prętów potrzebuje przekątnej – czyli trójkątów.',
     hook: 'Widzisz w moście same trójkąty? To kratownica – „szkielet z trójkątów”.',
+    check: { q: 'Mostek z trzech kwadratowych pól się przekrzywia. Co dodać?', options: ['po przekątnej w każdym polu', 'jeszcze jeden pręt na dole'], answer: 0, explain: 'Przekątna dzieli każde pole na dwa trójkąty – most trzyma kształt. 10 prętów + 3 przekątne = 13.' },
   },
   {
-    title: 'Mocna kartka',
-    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Płaska kartka położona na dwóch książkach ugina się. Kartka złożona w harmonijkę trzyma się prosto. Pod spodem cztery profile z kartki: kątownik, harmonijka, kształt litery U, rurka">
-      <rect x="10" y="62" width="30" height="40" class="f2 s2"/><rect x="160" y="62" width="30" height="40" class="f2 s2"/>
-      <path d="M40,62 Q100,100 160,62" class="ln sw" fill="none"/>
-      <rect x="210" y="62" width="30" height="40" class="f2 s2"/><rect x="360" y="62" width="30" height="40" class="f2 s2"/>
-      <path d="M240,62 L250,52 L260,62 L270,52 L280,62 L290,52 L300,62 L310,52 L320,62 L330,52 L340,62 L350,52 L360,62" class="ln sw" fill="none"/>
-      <g class="tx" text-anchor="middle"><text x="100" y="126">płaska – ugina się</text><text x="300" y="126">harmonijka – trzyma</text></g>
-      <g class="s3 sw" fill="none"><path d="M30,150 V190 H70"/><path d="M120,190 L130,155 L140,190 L150,155 L160,190 L170,155 L180,190"/><path d="M230,150 V190 H270 V150"/><circle cx="350" cy="170" r="20"/></g>
-      <g class="tx-s" text-anchor="middle"><text x="50" y="218">kątownik</text><text x="150" y="218">harmonijka</text><text x="250" y="218">litera U</text><text x="350" y="218">rurka</text></g>
+    title: '🌍 Mocna kartka',
+    svg: `<svg viewBox="0 0 400 272" role="img" aria-label="Z boku: płaska kartka na dwóch stosach książek ugina się, kartka złożona w harmonijkę trzyma się prosto. Widok z góry: zagięcia harmonijki biegną od jednej podpory do drugiej. Na dole cztery przekroje profili z kartki: kątownik, harmonijka, litera U, rurka">
+      <rect x="10" y="60" width="30" height="40" class="f2 s2"/><rect x="160" y="60" width="30" height="40" class="f2 s2"/>
+      <path d="M40,60 Q100,100 160,60" class="ln sw" fill="none"/>
+      <rect x="210" y="60" width="30" height="40" class="f2 s2"/><rect x="360" y="60" width="30" height="40" class="f2 s2"/>
+      <rect x="240" y="52" width="120" height="8" class="f3 s3"/>
+      <g class="tx" text-anchor="middle"><text x="100" y="30">płaska – ugina się</text><text x="300" y="30">harmonijka – trzyma</text></g>
+      <rect x="60" y="122" width="280" height="36" class="f3 s3"/>
+      <g class="ln-thin"><path d="M60,131 H340 M60,140 H340 M60,149 H340"/></g>
+      <rect x="40" y="118" width="20" height="44" class="f2 s2"/><rect x="340" y="118" width="20" height="44" class="f2 s2"/>
+      <text x="200" y="180" text-anchor="middle" class="tx-s">widok z góry: zagięcia od podpory do podpory</text>
+      <g class="s3 sw" fill="none"><path d="M30,200 V235 H65"/><path d="M120,235 L130,203 L140,235 L150,203 L160,235 L170,203 L180,235"/><path d="M230,200 V235 H270 V200"/><circle cx="350" cy="218" r="17"/></g>
+      <g class="tx-s" text-anchor="middle"><text x="50" y="262">kątownik</text><text x="150" y="262">harmonijka</text><text x="250" y="262">litera U</text><text x="350" y="262">rurka</text></g>
     </svg>`,
-    text: `<p>Płaska kartka łatwo się ugina. <b>Zagięta</b> jest dużo sztywniejsza!</p>
-      <p>Program z Bawarii podaje kształty (<b>profile</b>): kątownik, harmonijkę, kształt litery U i rurkę.</p>`,
-    remember: 'Zagięta kartka jest sztywniejsza niż płaska.',
-    hook: 'Sprawdź w domu: płaska kartka między dwiema książkami opada, a złożona w harmonijkę – trzyma się prosto.',
-    check: { q: 'Jak wzmocnić kartkę w modelu mostu?', options: ['zagiąć ją w harmonijkę', 'rozłożyć ją płasko'], answer: 0, explain: 'Zagięta kartka (profil) jest sztywniejsza niż płaska.' },
+    text: `<p>Płaska kartka łatwo się ugina, a <b>zagięta</b> jest dużo sztywniejsza – papieru jest tyle samo, zmienia się <b>kształt</b>. Bawaria podaje <b>profile</b>: kątownik, harmonijkę, literę U i rurkę.</p>
+      <p>Zaginaj przy linijce, a zagięcia prowadź <b>wzdłuż mostu</b> – od podpory do podpory. Most z prętów to <b>szkielet</b> – części połączone ze sobą. Pudełko to <b>skorupa</b> – cienka, pusta w środku powłoka; wzmocnisz je od środka albo od zewnątrz (lekcje Oak).</p>`,
+    remember: 'Zagięta kartka jest sztywniejsza niż płaska – liczy się kształt.',
+    hook: 'Tektura falista to kanapka: w środku ma wiele małych łuków.',
+    check: { q: 'Dwie takie same kartki: płaska i złożona w harmonijkę. Która utrzyma więcej?', options: ['harmonijka', 'płaska'], answer: 0, explain: 'Papieru jest tyle samo, ale zagięcia usztywniają kartkę – harmonijka utrzyma więcej.' },
   },
   {
-    title: 'Cztery rodzaje mostów',
-    svg: `<svg viewBox="0 0 400 260" role="img" aria-label="Cztery mosty. Belkowy: belka leży na dwóch podporach. Łukowy: pomost nad łukiem. Kratownicowy: pręty w trójkąty. Wiszący: pomost wisi na linach zawieszonych na dwóch pylonach">
-      <rect x="10" y="10" width="185" height="115" rx="12" class="f1 s1"/>
-      <rect x="205" y="10" width="185" height="115" rx="12" class="f1 s1"/>
-      <rect x="10" y="135" width="185" height="115" rx="12" class="f1 s1"/>
-      <rect x="205" y="135" width="185" height="115" rx="12" class="f1 s1"/>
-      <g class="tx-b"><text x="22" y="36">belkowy</text><text x="217" y="36">łukowy</text><text x="22" y="161">kratownicowy</text><text x="217" y="161">wiszący</text></g>
+    title: '🌍 Cztery mosty – i most Leonarda',
+    svg: `<svg viewBox="0 0 400 390" role="img" aria-label="Cztery mosty. Belkowy: belka leży na dwóch podporach. Łukowy: pomost nad ściskanym łukiem. Kratownicowy: pręty w trójkątach. Wiszący: pomost wisi na linach zawieszonych na dwóch wieżach. Na dole uproszczony rysunek mostu Leonarda: listewki przełożone jedna przez drugą tworzą łuk nad rzeką, bez kleju i gwoździ. Rysunek pokazuje kształt łuku, nie jest instrukcją budowy">
+      <g class="f1 s1"><rect x="10" y="10" width="185" height="110" rx="12"/><rect x="205" y="10" width="185" height="110" rx="12"/><rect x="10" y="130" width="185" height="110" rx="12"/><rect x="205" y="130" width="185" height="110" rx="12"/></g>
+      <g class="tx-b"><text x="22" y="36">belkowy</text><text x="217" y="36">łukowy</text><text x="22" y="156">kratownicowy</text><text x="217" y="156">wiszący</text></g>
       <rect x="25" y="62" width="155" height="10" class="f2 s2"/>
-      <rect x="45" y="72" width="12" height="40" class="f4 s4"/><rect x="148" y="72" width="12" height="40" class="f4 s4"/>
+      <rect x="45" y="72" width="12" height="36" class="f4 s4"/><rect x="148" y="72" width="12" height="36" class="f4 s4"/>
       <rect x="220" y="55" width="155" height="9" class="f2 s2"/>
       <path d="M222,112 Q297,20 373,112" class="ln sw" fill="none"/>
       <g class="ln" fill="none"><path d="M30,230 H180 M55,190 H155 M30,230 L55,190 L80,230 L105,190 L130,230 L155,190 L180,230"/></g>
-      <rect x="240" y="168" width="8" height="72" class="f4 s4"/><rect x="352" y="168" width="8" height="72" class="f4 s4"/>
-      <rect x="215" y="215" width="170" height="8" class="f2 s2"/>
-      <g class="ln" fill="none"><path d="M215,200 L244,168 Q300,216 356,168 L385,200"/><path d="M270,185 V215 M300,192 V215 M330,185 V215"/></g>
+      <rect x="240" y="165" width="8" height="70" class="f4 s4"/><rect x="352" y="165" width="8" height="70" class="f4 s4"/>
+      <rect x="215" y="212" width="170" height="8" class="f2 s2"/>
+      <g class="ln" fill="none"><path d="M215,197 L244,165 Q300,213 356,165 L385,197"/><path d="M270,182 V212 M300,189 V212 M330,182 V212"/></g>
+      <rect x="10" y="250" width="380" height="130" rx="12" class="f5 s5"/>
+      <text x="22" y="276" class="tx-b">most Leonarda</text><text x="378" y="276" text-anchor="end" class="tx-s">kształt łuku – nie instrukcja</text>
+      <rect x="95" y="364" width="210" height="10" class="f1 s1"/>
+      <path d="M22,366 H95 M305,366 H378" class="ln-thin"/>
+      <g class="f4 s4 sw"><path d="M50,366 L145,318"/><path d="M115,330 L235,304"/><path d="M165,304 L285,330"/><path d="M255,318 L350,366"/></g>
+      <text x="200" y="356" text-anchor="middle" class="tx-s">rzeka</text>
     </svg>`,
-    text: `<ul><li><b>belkowy</b> – belki leżą poziomo na podporach (jeden z najprostszych),</li>
+    text: `<ul><li><b>belkowy</b> – belki leżą poziomo na podporach,</li>
       <li><b>łukowy</b> – ciężar przejmuje <b>ściskany łuk</b> i przenosi go na podpory na brzegach,</li>
       <li><b>kratownicowy</b> – ciężar niesie kratownica z trójkątów,</li>
-      <li><b>wiszący</b> – pomost <b>wisi na linach</b> zawieszonych na wysokich pylonach.</li></ul>`,
+      <li><b>wiszący</b> – pomost wisi na <b>rozciąganych linach</b> zawieszonych na wysokich wieżach.</li></ul>
+      <p><b>Most Leonarda</b> (od szkicu Leonarda da Vinci) to odmiana mostu łukowego: listewki są tak przełożone, że <b>same się podtrzymują</b> – bez kleju i gwoździ. Jak to zrobiły dzieci w Bawarii, pokażą ci zdjęcia w zadaniu ISB (🔗 Materiały – razem z dorosłym). Mosty bywają też nad drogami i torami (<b>wiadukt</b>), a <b>akwedukt</b> przenosi łodzie!</p>`,
     remember: 'Belka, łuk, kratownica, liny – cztery sposoby na most.',
     hook: 'Most wiszący jest jak hamak: wisi na linach.',
-    check: { q: 'W którym moście pomost wisi na linach?', options: ['w wiszącym', 'w belkowym', 'w łukowym'], answer: 0, explain: 'W moście wiszącym liny zawieszone na pylonach dźwigają pomost.' },
+    check: { q: 'W którym moście pomost wisi na linach?', options: ['w wiszącym', 'w belkowym', 'w łukowym'], answer: 0, explain: 'W moście wiszącym pomost wisi na mocnych linach zawieszonych na wysokich wieżach.' },
   },
   {
-    title: 'Części mostu',
-    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Most z boku: na brzegach dwa przyczółki, pośrodku podpora. Między podporami dwa przęsła. Pod mostem rzeka">
-      <rect x="60" y="150" width="280" height="24" rx="8" class="f1 s1"/>
-      <rect x="10" y="90" width="40" height="70" class="f4 s4"/><rect x="350" y="90" width="40" height="70" class="f4 s4"/>
-      <rect x="190" y="92" width="20" height="70" class="f4 s4"/>
-      <rect x="10" y="80" width="380" height="12" class="f2 s2 sw"/>
-      <g class="ln"><path d="M52,66 H188 M52,60 V72 M188,60 V72"/><path d="M212,66 H348 M212,60 V72 M348,60 V72"/></g>
-      <g class="tx-b" text-anchor="middle"><text x="120" y="50">przęsło</text><text x="280" y="50">przęsło</text></g>
-      <g class="tx" text-anchor="middle"><text x="55" y="194">przyczółek</text><text x="200" y="194">podpora</text><text x="345" y="194">przyczółek</text></g>
+    title: '🔬 Pracuj jak inżynier z Bawarii',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Po lewej: most z kartki na dwóch stosach książek, na środku stos jednakowych klocków – testuj w trakcie: 1, potem 3, potem 5 klocków. Po prawej trzy bawarskie kryteria oceny: cel, oszczędność materiału, oryginalność. Na dole: opisz mosty w swojej okolicy">
+      <text x="20" y="30" class="tx-b">🔁 testuj w trakcie</text>
+      <rect x="20" y="110" width="40" height="40" class="f2 s2"/><rect x="150" y="110" width="40" height="40" class="f2 s2"/>
+      <rect x="40" y="102" width="130" height="8" class="f3 s3"/>
+      <g class="f4 s4"><rect x="95" y="84" width="20" height="18"/><rect x="95" y="66" width="20" height="18"/><rect x="95" y="48" width="20" height="18"/></g>
+      <path d="M10,150 H200" class="ln-thin"/>
+      <text x="105" y="172" text-anchor="middle" class="tx-s">jednakowe klocki: 1 → 3 → 5</text>
+      <rect x="215" y="12" width="175" height="50" rx="10" class="f4 s4"/><rect x="215" y="72" width="175" height="50" rx="10" class="f3 s3"/><rect x="215" y="132" width="175" height="50" rx="10" class="f5 s5"/>
+      <g class="tx"><text x="227" y="43">🎯 cel</text><text x="227" y="103">🪵 mniej materiału</text><text x="227" y="163">💡 oryginalność</text></g>
+      <text x="20" y="208" class="tx">📍 opisz mosty w swojej okolicy</text>
     </svg>`,
-    text: `<p><b>Przęsło</b> to część mostu między podporami. <b>Przyczółki</b> to skrajne podpory – na brzegach. Na nich opiera się przęsło.</p>`,
-    remember: 'Przęsło – między podporami. Przyczółki – na brzegach.',
-    check: { q: 'Jak nazywa się część mostu między podporami?', options: ['przęsło', 'przyczółek', 'węzeł'], answer: 0, explain: 'Przęsło jest rozpięte między podporami.' },
+    text: `<p>W przykładowym zadaniu bawarskiego instytutu ISB dzieci sprawdzają, ile utrzyma model, kładąc <b>coraz więcej klocków</b>. Próby i poprawki znasz z zajęć technicznych. Lekcje z Anglii (Oak) radzą: testuj <b>w trakcie budowy</b>, nie tylko na końcu, i używaj <b>jednakowych klocków</b> – wtedy test jest uczciwy.</p>
+      <p>Bawarskie dzieci rysują swój model, piszą instrukcję i oceniają go według trzech kryteriów: <b>cel, oszczędność materiału, oryginalność</b>. Opisują też <b>mosty w swojej okolicy</b>. Spróbuj – projekt „Most przez rzekę” czeka w zakładce <b>🛠️ Zrób</b>!</p>`,
+    remember: 'Testuj w trakcie, jednakowymi klockami. Oceń: cel, oszczędność materiału, oryginalność.',
+    hook: 'Zawalił się? To nie porażka, tylko dane do poprawki – cofnij się o krok.',
+    check: { q: 'Jak uczciwie porównać, ile klocków utrzymają dwa mosty?', options: ['te same klocki, po jednym na środek', 'na jeden most duże, na drugi małe'], answer: 0, explain: 'Zmieniasz tylko most – klocki i sposób kładzenia zostają te same.' },
   },
 ];

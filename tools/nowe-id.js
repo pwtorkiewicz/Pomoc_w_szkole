@@ -3,7 +3,7 @@
 const wczytaj = require('./dane');
 const all = wczytaj.sciezki().map((t) => wczytaj(t.id));
 // usunięte pytania (Świat: Magnesy – 14.11.2026; Mosty i Czujniki – 16.11.2026)
-const RETIRED = ['j3vhck', 'd2heuc', 'hp7wuw', '4hnpxw', 'gk7bjn', 'bxvz7v', '7pyd4u', '5vg6kr', 'jgg9or', '722s7x'];
+const RETIRED = ['j3vhck', 'd2heuc', 'hp7wuw', '4hnpxw', 'gk7bjn', 'bxvz7v', '7pyd4u', '5vg6kr', 'jgg9or', '722s7x', 'a1k103', 'nyiy77'];
 const used = new Set([
   ...RETIRED,
   ...all.flatMap((w) => w.SUBJECTS).flatMap((s) => s.topics.flatMap((t) => [...t.questions, ...(t.tasks || []), ...(t.activities || [])].map((q) => q.id))),

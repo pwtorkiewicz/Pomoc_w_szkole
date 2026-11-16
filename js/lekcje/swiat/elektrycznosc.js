@@ -123,125 +123,110 @@ window.LESSONS['elektrycznosc/magnesy'] = [
 
 window.LESSONS['elektrycznosc/czujniki'] = [
   {
-    title: 'Urządzenia, które same reagują',
-    svg: `<svg viewBox="0 0 400 160" role="img" aria-label="Flaga Anglii: key stage 3, uczniowie 11–14 lat – czujniki i mikrokontrolery. Flaga Japonii: gimnazjum, 12–15 lat – programują pomiar i sterowanie">
-      <rect x="10" y="15" width="60" height="40" class="fl-w"/>
-      <rect x="36" y="15" width="8" height="40" class="fl-r"/>
-      <rect x="10" y="31" width="60" height="8" class="fl-r"/>
-      <rect x="10" y="15" width="60" height="40" class="ln" fill="none"/>
-      <text x="84" y="35" class="tx-b">Anglia · key stage 3</text>
-      <text x="84" y="53" class="tx-s">11–14 lat: czujniki, mikrokontrolery</text>
-      <rect x="10" y="95" width="60" height="40" class="fl-w"/>
-      <circle cx="40" cy="115" r="12" class="fl-r"/>
-      <rect x="10" y="95" width="60" height="40" class="ln" fill="none"/>
-      <text x="84" y="115" class="tx-b">Japonia · gimnazjum</text>
-      <text x="84" y="133" class="tx-s">12–15 lat: pomiar i sterowanie</text>
+    title: 'Co jest nowe? Urządzenie samo mierzy i reaguje',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Po lewej: w polskiej szkole program steruje robotem albo postacią na ekranie. Po prawej, nowe: czujnik mierzy świat, program decyduje, silnik albo lampa działa. Na dole: mierz, porównaj, steruj i mierz znowu">
+      <defs><marker id="a-swe-cz1" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="10" width="170" height="120" rx="12" class="f4 s4"/>
+      <rect x="220" y="10" width="170" height="120" rx="12" class="f3 s3 sw"/>
+      <g class="tx-b"><text x="22" y="38">🇵🇱 Polska</text><text x="232" y="38">🌍 Nowe</text></g>
+      <g class="tx"><text x="22" y="66">program steruje</text><text x="22" y="90">robotem albo</text><text x="22" y="114">postacią na ekranie</text>
+        <text x="232" y="66">czujnik mierzy</text><text x="232" y="90">program decyduje</text><text x="232" y="114">silnik działa</text></g>
+      <path d="M182,70 H214" class="ln sw" marker-end="url(#a-swe-cz1)"/>
+      <rect x="10" y="148" width="380" height="40" rx="10" class="f1 s1"/>
+      <text x="200" y="174" text-anchor="middle" class="tx">🔁 mierz → porównaj → steruj → mierz znowu</text>
     </svg>`,
-    text: `<p>W Anglii uczniowie w wieku 11–14 lat budują produkty, które <b>reagują na czujniki</b> i sterują np. silnikami – za pomocą <b>mikrokontrolerów</b>.</p>
-      <p>W Japonii w gimnazjum (12–15 lat) uczniowie na technice <b>programują pomiar i sterowanie</b>: piszą program, sprawdzają go i poprawiają błędy.</p>`,
-    remember: 'Pomiar i sterowanie: urządzenie samo mierzy i samo reaguje.',
+    text: `<p>🇵🇱 <b>Przypomnienie:</b> w polskiej szkole na informatyce (kl. IV–VIII) piszesz program z warunkami i pętlami i sterujesz robotem albo postacią na ekranie – znasz to albo poznasz. <b>Czujników, elementów wykonawczych i sprzężenia zwrotnego polska podstawa szkoły podstawowej nie wymaga.</b></p>
+      <p>Tu urządzenie <b>samo mierzy świat i samo reaguje</b>. Tego uczą się rówieśnicy w Anglii (11–14 lat) i w Japonii (gimnazjum). Jest to też w programach Korei i szwajcarskiego Lehrplan 21, a w Estonii i Bawarii – w przedmiocie lub module do wyboru.</p>`,
+    remember: 'Urządzenie samo mierzy (czujnik), decyduje (program) i działa (element wykonawczy).',
+    check: { q: '🇵🇱 Przypomnienie (informatyka, kl. VII–VIII): lampa świeci, gdy ciemno and ktos_blisko. Jest ciemno, nikogo nie ma. Czy lampa świeci?', options: ['nie', 'tak'], answer: 0, explain: 'AND wymaga, żeby oba warunki były prawdziwe. Nikogo nie ma, więc lampa nie świeci.' },
   },
   {
-    title: 'Wejście → sterownik → wyjście',
-    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Schemat: czujnik (wejście) – strzałka – sterownik (program) – strzałka – element wykonawczy (wyjście). Przykład pod spodem: czujnik światła, warunek czy jest ciemno, lampa">
-      <defs><marker id="a-swe-c2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
-      <rect x="10" y="16" width="110" height="84" rx="10" class="f1 s1 sw"/>
-      <rect x="145" y="16" width="110" height="84" rx="10" class="f5 s5 sw"/>
-      <rect x="280" y="16" width="110" height="84" rx="10" class="f3 s3 sw"/>
-      <g class="tx-b" text-anchor="middle"><text x="65" y="50">Czujnik</text><text x="200" y="50">Sterownik</text><text x="335" y="44">Element</text></g>
-      <text x="335" y="66" text-anchor="middle" class="tx">wykonawczy</text>
-      <g class="tx-s" text-anchor="middle"><text x="65" y="76">wejście</text><text x="200" y="76">program</text><text x="335" y="88">wyjście</text></g>
-      <g class="ln sw"><path d="M122,58 H141" marker-end="url(#a-swe-c2)"/><path d="M257,58 H276" marker-end="url(#a-swe-c2)"/>
-        <path d="M122,155 H141" marker-end="url(#a-swe-c2)"/><path d="M257,155 H276" marker-end="url(#a-swe-c2)"/></g>
-      <rect x="10" y="130" width="110" height="50" rx="10" class="f1 s1"/>
-      <rect x="145" y="130" width="110" height="50" rx="10" class="f5 s5"/>
-      <rect x="280" y="130" width="110" height="50" rx="10" class="f3 s3"/>
-      <g class="tx" text-anchor="middle"><text x="65" y="161">☀️ światło</text><text x="200" y="161">ciemno?</text><text x="335" y="161">💡 lampa</text></g>
+    title: 'Czujnik → program → element wykonawczy',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Schemat: czujnik (wejście), strzałka z podpisem A/C, komputer z programem, strzałka, element wykonawczy (wyjście). Przykład pod spodem: światło od 0 do 255, warunek czy odczyt jest mniejszy od progu, lampa">
+      <defs><marker id="a-swe-cz2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="16" width="104" height="84" rx="10" class="f1 s1 sw"/>
+      <rect x="148" y="16" width="104" height="84" rx="10" class="f5 s5 sw"/>
+      <rect x="286" y="16" width="104" height="84" rx="10" class="f3 s3 sw"/>
+      <g class="tx-b" text-anchor="middle"><text x="62" y="50">Czujnik</text><text x="200" y="50">Program</text><text x="338" y="44">Element</text></g>
+      <text x="338" y="66" text-anchor="middle" class="tx">wykonawczy</text>
+      <g class="tx-s" text-anchor="middle"><text x="62" y="76">wejście</text><text x="200" y="76">komputer</text><text x="338" y="88">wyjście</text>
+        <text x="131" y="52">A/C</text></g>
+      <g class="ln sw"><path d="M116,60 H145" marker-end="url(#a-swe-cz2)"/><path d="M254,60 H283" marker-end="url(#a-swe-cz2)"/>
+        <path d="M116,155 H145" marker-end="url(#a-swe-cz2)"/><path d="M254,155 H283" marker-end="url(#a-swe-cz2)"/></g>
+      <rect x="10" y="130" width="104" height="50" rx="10" class="f1 s1"/>
+      <rect x="148" y="130" width="104" height="50" rx="10" class="f5 s5"/>
+      <rect x="286" y="130" width="104" height="50" rx="10" class="f3 s3"/>
+      <g class="tx" text-anchor="middle"><text x="62" y="161">☀️ 0–255</text><text x="200" y="161">&lt; próg?</text><text x="338" y="161">💡 lampa</text></g>
     </svg>`,
-    text: `<p><b>Czujnik</b> mierzy coś w otoczeniu i zamienia to na sygnał elektryczny. <b>Sterownik</b> – np. mikrokontroler – wykonuje <b>program</b> i decyduje.</p>
-      <p><b>Element wykonawczy</b> coś robi: silnik się kręci, lampa świeci, brzęczyk piszczy, pompa pompuje.</p>`,
-    remember: 'Wejście (czujnik) → sterownik (program) → wyjście (element wykonawczy).',
-    hook: 'Jak ty: oczy to czujnik, mózg to sterownik, a ręce – element wykonawczy.',
+    text: `<p><b>Czujnik</b> mierzy coś w otoczeniu i zamienia to na sygnał elektryczny. <b>Interfejs</b> zamienia sygnał analogowy na cyfrowy (A/C) – i program dostaje liczbę, np. jasność od 0 do 255. <b>Program</b> w komputerze (np. w mikrokontrolerze) porównuje ją z progiem i decyduje.</p>
+      <p><b>Element wykonawczy</b> zamienia sygnał sterujący w ruch albo działanie: silnik się kręci, lampa świeci, brzęczyk piszczy, pompa pompuje. Tak opisuje system japoński komentarz do techniki w gimnazjum.</p>`,
+    remember: 'Wejście (czujnik) → program → wyjście (element wykonawczy).',
+    hook: 'Czujnik to „zmysł” maszyny: oko – czujnik światła, ucho – czujnik dźwięku, skóra – czujnik nacisku. Tak tłumaczą to na japońskim szkoleniu dla nauczycieli, a szwajcarski Lehrplan 21 (kantony niemieckojęzyczne) porównuje te części z organizmami żywymi.',
     check: { q: 'Który z tych elementów jest wyjściem (elementem wykonawczym)?', options: ['silnik', 'czujnik światła'], answer: 0, explain: 'Silnik robi coś w świecie – daje ruch. Czujnik światła to wejście.' },
   },
   {
-    title: 'Jakie bywają czujniki?',
-    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Czujnik ultradźwiękowy wysyła ultradźwięki do ściany i odbiera echo. Pod spodem cztery rodzaje czujników: światło, temperatura, ciśnienie, poziom cieczy">
-      <defs><marker id="a-swe-c3" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
-      <rect x="10" y="20" width="44" height="70" rx="6" class="f1 s1 sw"/>
-      <circle cx="32" cy="40" r="9" class="bg ln"/><circle cx="32" cy="70" r="9" class="bg ln"/>
-      <rect x="350" y="10" width="20" height="90" class="f4 s4"/>
-      <g class="ln sw"><path d="M60,40 H342" marker-end="url(#a-swe-c3)"/><path d="M342,70 H60" marker-end="url(#a-swe-c3)"/></g>
-      <g class="tx" text-anchor="middle"><text x="200" y="32">ultradźwięki</text><text x="200" y="92">echo</text></g>
-      <rect x="10" y="130" width="88" height="86" rx="10" class="f2 s2"/>
-      <rect x="107" y="130" width="88" height="86" rx="10" class="f2 s2"/>
-      <rect x="205" y="130" width="88" height="86" rx="10" class="f2 s2"/>
-      <rect x="302" y="130" width="88" height="86" rx="10" class="f2 s2"/>
-      <g class="tx-b" text-anchor="middle"><text x="54" y="166">☀️</text><text x="151" y="166">🌡️</text><text x="249" y="166">⏲️</text><text x="346" y="166">💧</text></g>
-      <g class="tx-s" text-anchor="middle"><text x="54" y="196">światło</text><text x="151" y="196">temperatura</text><text x="249" y="196">ciśnienie</text><text x="346" y="190">poziom</text><text x="346" y="207">cieczy</text></g>
+    title: 'Jak czujnik zamienia świat na sygnał?',
+    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Po lewej fotorezystor: mniej światła, większy opór, inne napięcie, sygnał dla programu. Po prawej czujnik ultradźwiękowy: wysyła dźwięk do ściany i odbiera echo, działa też po ciemku. Niżej czujnik linii: białe podłoże odbija dużo światła, czarne mało, o skręcie decyduje program">
+      <defs><marker id="a-swe-cz3" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <text x="95" y="24" text-anchor="middle" class="tx-b">Fotorezystor</text>
+      <rect x="15" y="36" width="160" height="30" rx="8" class="f4 s4"/><rect x="15" y="82" width="160" height="30" rx="8" class="f2 s2"/>
+      <rect x="15" y="128" width="160" height="30" rx="8" class="f2 s2"/><rect x="15" y="174" width="160" height="30" rx="8" class="f5 s5"/>
+      <g class="tx" text-anchor="middle"><text x="95" y="57">🌙 mniej światła</text><text x="95" y="103">większy opór</text><text x="95" y="149">inne napięcie</text><text x="95" y="195">sygnał</text></g>
+      <g class="ln"><path d="M95,67 V78" marker-end="url(#a-swe-cz3)"/><path d="M95,113 V124" marker-end="url(#a-swe-cz3)"/><path d="M95,159 V170" marker-end="url(#a-swe-cz3)"/></g>
+      <text x="290" y="24" text-anchor="middle" class="tx-b">Ultradźwięki</text>
+      <rect x="205" y="38" width="22" height="50" rx="4" class="f1 s1 sw"/><rect x="372" y="34" width="14" height="58" class="f4 s4"/>
+      <g class="ln"><path d="M232,52 H366" marker-end="url(#a-swe-cz3)"/><path d="M366,76 H232" marker-end="url(#a-swe-cz3)"/></g>
+      <g class="tx-s" text-anchor="middle"><text x="299" y="46">dźwięk</text><text x="299" y="70">echo</text><text x="296" y="108">działa też po ciemku</text></g>
+      <text x="290" y="140" text-anchor="middle" class="tx-b">Czujnik linii</text>
+      <rect x="205" y="152" width="182" height="58" rx="8" class="f1 s1"/>
+      <g class="tx-s"><text x="214" y="172">⚪ białe: dużo wraca</text><text x="214" y="188">⚫ czarne: mało wraca</text><text x="214" y="204">decyduje program</text></g>
     </svg>`,
-    text: `<p>Czujnik <b>ultradźwiękowy</b> wysyła ultradźwięki i mierzy, po jakim czasie wróci <b>echo</b>. Im dłużej, tym przeszkoda dalej. Czujnik <b>optyczny</b> reaguje na światło. Są też czujniki temperatury, ciśnienia i poziomu cieczy.</p>
-      <p>Przycisk to czujnik <b>dwustanowy</b>: daje tylko 1 albo 0 – włączony albo wyłączony.</p>`,
-    remember: 'Czujnik zamienia światło, odległość czy temperaturę na sygnał elektryczny.',
-    hook: 'Ultradźwiękowy działa jak echo w górach: krzyczysz i czekasz, kiedy wróci.',
+    text: `<p><b>Fotorezystor</b> (LDR): im mniej światła, tym większy opór. Zmiana oporu daje zmianę napięcia – i to jest sygnał dla programu. Nie „czuje” światła sam z siebie.</p>
+      <p><b>Czujnik ultradźwiękowy</b> wysyła dźwięk i mierzy czas powrotu echa – więc działa też w ciemnym pokoju. <b>Czujnik linii</b> świeci podczerwienią i mierzy, ile światła wraca. Przekazuje tylko dane – o skręcie decyduje program. Te pomyłki („LDR tylko czuje”, „czujnik widzi jak kamera”) lekcje Oak opisują jako częste.</p>`,
+    remember: 'Czujnik daje dane. Decyduje program.',
+    hook: 'Ultradźwiękowy działa jak nietoperz – tak tłumaczy to bawarski materiał dla szkół: krzyczy i słucha, kiedy wróci echo.',
+    check: { q: 'Robi się ciemniej. Co dzieje się z oporem fotorezystora?', options: ['rośnie', 'maleje'], answer: 0, explain: 'Mniej światła – większy opór. Zmiana oporu zmienia napięcie, a to jest sygnał.' },
   },
   {
-    title: 'Program w pętli: mierz → porównaj → steruj',
-    svg: `<svg viewBox="0 0 420 200" role="img" aria-label="Program: while True, jasnosc równa się czujnik, jeśli jasnosc mniejsza od 30 – lampa włącz, w przeciwnym razie – lampa wyłącz. Tabela: jasność 20 – włącz, 30 – wyłącz, 50 – wyłącz. 30 mniejsze od 30 to fałsz">
-      <rect x="10" y="10" width="255" height="182" rx="10" class="f1 s1"/>
-      <g class="tx"><text x="22" y="40">while True:</text><text x="42" y="68">jasnosc = czujnik()</text><text x="42" y="96">if jasnosc &lt; 30:</text>
-        <text x="62" y="124">lampa_wlacz()</text><text x="42" y="152">else:</text><text x="62" y="180">lampa_wylacz()</text></g>
-      <rect x="280" y="10" width="130" height="34" rx="6" class="f4 s4"/>
-      <g class="tx-s"><text x="288" y="32">jasnosc</text><text x="350" y="32">lampa</text></g>
-      <rect x="280" y="52" width="130" height="32" rx="6" class="f3 s3"/>
-      <rect x="280" y="92" width="130" height="32" rx="6" class="f2 s2 sw"/>
-      <rect x="280" y="132" width="130" height="32" rx="6" class="f2 s2"/>
-      <g class="tx"><text x="300" y="74">20</text><text x="350" y="74">włącz</text><text x="300" y="114">30</text><text x="350" y="114">wyłącz</text><text x="300" y="154">50</text><text x="350" y="154">wyłącz</text></g>
-      <text x="345" y="186" text-anchor="middle" class="tx-s">30 &lt; 30 → fałsz</text>
-    </svg>`,
-    text: `<p>Sterownik w kółko powtarza: <b>zmierz → porównaj → steruj</b>. Pętla <code>while True</code> działa bez końca, bo świat ciągle się zmienia.</p>
-      <p>Uważaj na granicę: dla 30 warunek <code>30 &lt; 30</code> jest fałszywy – wykona się <code>else</code>.</p>`,
-    remember: 'Mierz → porównaj → steruj – i od nowa.',
-    hook: 'Sprawdzaj granicę jak bramkarz linię bramki: „równo” to jeszcze nie „mniej”.',
-    check: { q: 'Czujnik zmierzył jasnosc = 30. Co zrobi program z rysunku?', options: ['wyłączy lampę', 'włączy lampę'], answer: 0, explain: '30 < 30 to fałsz, więc wykona się else: lampa_wylacz().' },
+    title: '🌍 Próg – dobierz go z pomiarów',
+    widget: { type: 'czujniki', tryb: 'prog', prog: 100 },
+    text: `<p><b>Próg</b> to wartość graniczna: po jednej stronie jedno działanie, po drugiej drugie. W bawarskim materiale dla szkół (ISB) robot mierzy czujnikiem raz nad białym, raz nad czarnym podłożem – a próg to <b>średnia</b> tych odczytów.</p>
+      <p>W japońskiej lekcji MEXT z czujnikiem wilgotności gleby najlepszy próg wybiera się z danych zebranych rejestratorem. Sprawdź też wartość <b>równą</b> progowi – ma być <code>&lt;</code> czy <code>&lt;=</code>?</p>
+      <p>W symulatorze zmierz oba podłoża, ustaw próg i przewidź, co zrobi robot. Potem spróbuj progu poza odczytami.</p>`,
+    remember: 'Próg wybierasz z pomiarów – musi leżeć między odczytami.',
+    hook: 'Próg jak linia na boisku: po jednej stronie aut, po drugiej gra. A piłka na samej linii? Musisz ustalić regułę.',
+    check: { q: 'Czujnik pokazuje 20 nad czarną linią i 80 nad białym podłożem. Jaki próg daje średnia?', options: ['50', '100'], answer: 0, explain: '(20 + 80) : 2 = 50. Próg 100 byłby większy od każdego odczytu – robot zawsze wybierałby tę samą reakcję.' },
   },
   {
-    title: 'Kilka czujników – logika AND i OR',
-    svg: `<svg viewBox="0 0 400 230" role="img" aria-label="Dwa czujniki: ciemno i ktoś blisko prowadzą do bramki AND, a ona do lampy. Drugi przykład: drzwi otwarte i okno otwarte prowadzą do bramki OR, a ona do alarmu">
-      <defs><marker id="a-swe-c5" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
-      <rect x="10" y="15" width="140" height="36" rx="8" class="f1 s1"/><rect x="10" y="65" width="140" height="36" rx="8" class="f1 s1"/>
-      <rect x="10" y="125" width="140" height="36" rx="8" class="f1 s1"/><rect x="10" y="175" width="140" height="36" rx="8" class="f1 s1"/>
-      <g class="tx"><text x="22" y="39">ciemno</text><text x="22" y="89">ktoś blisko</text><text x="22" y="149">drzwi otwarte</text><text x="22" y="199">okno otwarte</text></g>
-      <rect x="190" y="30" width="70" height="56" rx="8" class="f5 s5 sw"/><rect x="190" y="140" width="70" height="56" rx="8" class="f5 s5 sw"/>
-      <g class="tx-b" text-anchor="middle"><text x="225" y="64">AND</text><text x="225" y="174">OR</text></g>
-      <g class="ln" fill="none"><path d="M150,33 H172 V48 H186" marker-end="url(#a-swe-c5)"/><path d="M150,83 H172 V68 H186" marker-end="url(#a-swe-c5)"/>
-        <path d="M150,143 H172 V158 H186" marker-end="url(#a-swe-c5)"/><path d="M150,193 H172 V178 H186" marker-end="url(#a-swe-c5)"/>
-        <path d="M260,58 H300" marker-end="url(#a-swe-c5)"/><path d="M260,168 H300" marker-end="url(#a-swe-c5)"/></g>
-      <rect x="305" y="40" width="85" height="36" rx="8" class="f3 s3"/><rect x="305" y="150" width="85" height="36" rx="8" class="f3 s3"/>
-      <g class="tx"><text x="312" y="64">💡 lampa</text><text x="312" y="174">🔔 alarm</text></g>
-    </svg>`,
-    text: `<p>Gdy czujników jest kilka, program łączy warunki jak <b>bramki logiczne</b>.</p>
-      <p>Lampa przy drzwiach świeci, gdy jest ciemno <b>AND</b> ktoś jest blisko – muszą być spełnione oba warunki. Alarm piszczy, gdy otwarte są drzwi <b>OR</b> okno – wystarczy jeden.</p>`,
-    remember: 'AND – muszą być oba. OR – wystarczy jeden.',
-    hook: 'Znasz to z działu o bramkach: AND to „i”, OR to „lub”.',
-    check: { q: 'Jest ciemno, ale nikogo nie ma. Czy lampa (ciemno AND ktoś blisko) świeci?', options: ['nie', 'tak'], answer: 0, explain: 'AND wymaga, żeby oba warunki były prawdziwe. Nikogo nie ma, więc lampa nie świeci.' },
-  },
-  {
-    title: 'Sprzężenie zwrotne – pętla zamknięta',
-    svg: `<svg viewBox="0 0 400 220" role="img" aria-label="Pętla: sterownik włącza grzałkę, grzałka ogrzewa wodę, czujnik mierzy temperaturę wody, sterownik porównuje i znów steruje grzałką">
-      <defs><marker id="a-swe-c6" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
-      <rect x="20" y="20" width="160" height="50" rx="10" class="f5 s5 sw"/>
-      <rect x="220" y="20" width="160" height="50" rx="10" class="f3 s3 sw"/>
-      <rect x="220" y="150" width="160" height="50" rx="10" class="f2 s2 sw"/>
-      <rect x="20" y="150" width="160" height="50" rx="10" class="f1 s1 sw"/>
-      <g class="tx" text-anchor="middle"><text x="100" y="51">🧠 sterownik</text><text x="300" y="51">🔥 grzałka</text><text x="300" y="181">💧 woda cieplejsza</text><text x="100" y="181">🌡️ czujnik</text></g>
-      <g class="ln sw"><path d="M182,45 H216" marker-end="url(#a-swe-c6)"/><path d="M300,72 V146" marker-end="url(#a-swe-c6)"/>
-        <path d="M218,175 H184" marker-end="url(#a-swe-c6)"/><path d="M100,148 V74" marker-end="url(#a-swe-c6)"/></g>
-      <text x="200" y="115" text-anchor="middle" class="tx-s">pętla zamknięta</text>
-    </svg>`,
-    text: `<p>Czujnik mierzy <b>skutek</b> tego, co zrobił element wykonawczy. Sterownik porównuje to z celem i <b>poprawia</b> działanie. To <b>sprzężenie zwrotne</b> – pętla zamknięta.</p>
-      <p>Woda za zimna? Grzałka grzeje. Dość ciepła? Sterownik wyłącza grzałkę.</p>`,
-    remember: 'Sprzężenie zwrotne: czujnik sprawdza skutek, sterownik poprawia.',
+    title: '🌍 Na czas czy na pomiar? Sprzężenie zwrotne',
+    widget: { type: 'czujniki', tryb: 'czas' },
+    text: `<p>Japońskie szkolenie MEXT porównuje dwa programy: <b>„jedź 3 s”</b> – na czas – i <b>„jedź, aż czujnik pokaże ≤ 10 cm”</b> – na pomiar (liczby są nasze). Pierwszy nie wie, gdzie jest ściana. Drugi mierzy <b>skutek</b> ruchu i reaguje – to <b>sprzężenie zwrotne</b>, pętla zamknięta.</p>
+      <p>Lekcje Oak: zwykły silnik prądu stałego działa w pętli otwartej, a <b>serwo</b> – w zamkniętej, dlatego pilnuje położenia, np. w ramieniu robota. Szklarnia: powyżej 30 °C okno się otwiera, a czujnik dalej mierzy.</p>
+      <p>Dla chętnych: termostat ma <b>histerezę</b> – różnicę temperatur włączenia i wyłączenia. Mniejsza daje mniejsze wahania, ale częstsze przełączanie.</p>`,
+    remember: 'Sprzężenie zwrotne: czujnik mierzy skutek, program poprawia działanie.',
     hook: 'Jak jazda na rowerze: widzisz, że zjeżdżasz w bok – i od razu poprawiasz kierownicą.',
+    check: { q: 'Ramię robota ma stanąć dokładnie pod kątem 90°. Który silnik z tych dwóch?', options: ['serwo', 'zwykły silnik prądu stałego'], answer: 0, explain: 'Serwo działa w pętli zamkniętej – samo sprawdza położenie. Zwykły silnik prądu stałego go nie sprawdza.' },
+  },
+  {
+    title: 'Projektuj jak japoński uczeń – i omiń pułapki',
+    svg: `<svg viewBox="0 0 400 250" role="img" aria-label="Kolejne kroki projektu: problem, schemat wejść i wyjść, algorytm na diagramie, program, test z danymi granicznymi i awarią czujnika, poprawki. Na dole: mikrokontroler wysyła sygnał do sterownika silnika, a sterownik zasila silnik – mikrokontroler daje sygnał, nie moc">
+      <defs><marker id="a-swe-cz6" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="10" width="112" height="56" rx="10" class="f4 s4"/><rect x="144" y="10" width="112" height="56" rx="10" class="f4 s4"/><rect x="278" y="10" width="112" height="56" rx="10" class="f4 s4"/>
+      <rect x="278" y="90" width="112" height="56" rx="10" class="f1 s1"/><rect x="144" y="90" width="112" height="56" rx="10" class="f2 s2 sw"/><rect x="10" y="90" width="112" height="56" rx="10" class="f3 s3"/>
+      <g class="tx" text-anchor="middle"><text x="66" y="44">❓ problem</text><text x="200" y="44">🗺️ schemat</text><text x="334" y="44">📈 diagram</text>
+        <text x="334" y="124">💻 program</text><text x="200" y="116">🧪 test</text><text x="66" y="124">🔁 poprawki</text></g>
+      <text x="200" y="137" text-anchor="middle" class="tx-s">próg, awaria</text>
+      <g class="ln"><path d="M123,38 H140" marker-end="url(#a-swe-cz6)"/><path d="M257,38 H274" marker-end="url(#a-swe-cz6)"/><path d="M334,67 V86" marker-end="url(#a-swe-cz6)"/>
+        <path d="M277,118 H260" marker-end="url(#a-swe-cz6)"/><path d="M143,118 H126" marker-end="url(#a-swe-cz6)"/></g>
+      <rect x="10" y="176" width="120" height="56" rx="10" class="f5 s5"/><rect x="160" y="176" width="120" height="56" rx="10" class="f2 s2"/><rect x="310" y="176" width="80" height="56" rx="10" class="f3 s3"/>
+      <g class="tx" text-anchor="middle"><text x="70" y="200">mikro-</text><text x="70" y="222">kontroler</text><text x="220" y="200">sterownik</text><text x="220" y="222">silnika</text><text x="350" y="211">⚙️ silnik</text></g>
+      <g class="ln sw"><path d="M131,204 H156" marker-end="url(#a-swe-cz6)"/><path d="M281,204 H306" marker-end="url(#a-swe-cz6)"/></g>
+      <text x="200" y="248" text-anchor="middle" class="tx-s">mikrokontroler daje sygnał, nie moc</text>
+    </svg>`,
+    text: `<p>W Japonii uczeń sam <b>projektuje</b> system do problemu z życia: najpierw problem i schemat wejść i wyjść, potem algorytm na diagramie, dopiero potem program. Test: zwykłe dane, wartość równa progowi i <b>awaria czujnika</b> – system ma ją zauważyć, np. gdy odczyt długo się nie zmienia.</p>
+      <p>Pułapka z lekcji Oak: silnika nie podłączasz wprost do mikrokontrolera – tylko przez <b>sterownik silnika</b> z osobnym zasilaniem. I zawsze tylko niskie napięcie: baterie albo USB.</p>`,
+    remember: 'Najpierw problem i algorytm, potem kod. Testuj granicę i awarię.',
+    hook: 'Mikrokontroler to dyrygent: daje znak, ale sam nie gra na każdym instrumencie – grają muzycy (sterownik silnika i silnik).',
+    check: { q: 'Mikrokontroler ma kręcić silnikiem. Jak je połączyć?', options: ['przez sterownik silnika', 'wprost do pinu mikrokontrolera'], answer: 0, explain: 'Mikrokontroler daje sygnał, nie moc. Silnik zasila sterownik silnika z osobnego źródła.' },
   },
 ];
