@@ -44,6 +44,12 @@ function unit() {
   check(JSON.stringify(P.mergeState(m, b)) === JSON.stringify(m), 'łączenie: ponowne łączenie niczego nie zmienia');
   check(!Object.keys(P.mergeState({ best: {}, resetAt: now }, a).best).length, 'łączenie: zapis sprzed zerowania odrzucony');
   check(!P.mergeState({ wrong: { q: 1 } }, { fixed: { q: now } }).wrong.q, 'łączenie: dawny wpis błędu (1)');
+  // „Powtórka na dziś”: dla każdego działu wygrywa wpis z późniejszym at
+  const ra = { review: { 'm/a': { box: 2, due: '2026-11-20', at: now - 50 }, 'm/b': { box: 0, due: '2026-11-07', at: now - 10 } } };
+  const rb = { review: { 'm/a': { box: 0, due: '2026-11-07', at: now - 5 }, 'm/b': { box: 3, due: '2026-11-30', at: now - 900 }, 'm/c': { box: 1, due: '2026-11-09', at: now } } };
+  const rm = P.mergeState(ra, rb).review;
+  check(rm['m/a'].box === 0 && rm['m/b'].box === 0 && rm['m/c'].box === 1, 'łączenie: powtórka na dziś – późniejszy wpis działu wygrywa');
+  check(JSON.stringify(P.mergeState(rb, ra).review) === JSON.stringify(Object.fromEntries(Object.keys(rb.review).map((k) => [k, rm[k]]))), 'łączenie: powtórka na dziś – wynik nie zależy od kolejności');
 }
 
 async function e2e() {
@@ -129,6 +135,60 @@ async function e2e() {
   check(Object.keys(a3.wrong).every((k) => k.startsWith('przyroda/')), 'telefon: błędy poprawione na komputerze zniknęły');
   await sync(B);
   check(Object.keys((await st(B)).best).some((k) => k.startsWith('przyroda/')), 'komputer: widzi naukę z telefonu zrobioną bez internetu');
+  // „🔁 Powtórka na dziś” (ścieżka „Świat”): quiz działu na telefonie → dział w powtórkach (termin jutro);
+  // po upływie terminu kafelek „Na dziś”, 3 dobre odpowiedzi → pudełko 1, termin za 3 dni; komputer widzi to po synchronizacji
+  const sw = (p) => p.evaluate(() => JSON.parse(localStorage.getItem('pomoc_swiat_v1') || '{}'));
+  const rightOf = (p, stage) => p.evaluate((st) => {
+    const t = document.querySelector('.question').textContent;
+    for (const s of window.SUBJECTS) for (const tp of s.topics) for (const q of tp.questions) if (q.q === t) return st ? q.why.answer : q.answer;
+    return -1;
+  }, stage);
+  const answerRight = async (p) => {
+    for (let i = 0; i < 80 && !(await p.$('.result')); i++) {
+      await p.click(`#q1 .opt[data-k="${await rightOf(p, 0)}"]`);
+      if (await p.$('.why')) await p.click(`.why .opt[data-k="${await rightOf(p, 1)}"]`);
+      await p.click('#next');
+    }
+  };
+  for (const p of [A, B]) {
+    await p.goto(ROOT + 'swiat.html#/chmura');
+    await p.selectOption('select[data-track="swiat"]', kid.kod);
+    await p.waitForTimeout(300);
+  }
+  await A.goto(ROOT + 'swiat.html');
+  const [swS, swT] = await A.evaluate(() => [window.SUBJECTS[0].id, window.SUBJECTS[0].topics[0].id]);
+  const swKey = `${swS}/${swT}`;
+  await A.goto(ROOT + `swiat.html#/s/${swS}/t/${swT}/quiz`);
+  await answerRight(A);
+  const today = await A.evaluate(() => window.POSTEP.dayKey());
+  const inDays = (n) => A.evaluate((k) => window.POSTEP.addDays(window.POSTEP.dayKey(), k), n);
+  let rev = (await sw(A)).review || {};
+  check(rev[swKey] && rev[swKey].box === 0 && rev[swKey].due === (await inDays(1)), 'powtórka na dziś: po quizie działu – pudełko 0, termin jutro');
+  await A.goto(ROOT + 'swiat.html');
+  check(!(await A.$('.today')), 'powtórka na dziś: dziś jeszcze bez kafelka');
+  // upływ czasu: termin przesunięty na wczoraj
+  const yesterday = await inDays(-1);
+  await A.evaluate(([k, d]) => {
+    const st = JSON.parse(localStorage.getItem('pomoc_swiat_v1'));
+    st.review[k].due = d;
+    st.review[k].at = Date.now(); // późniejszy wpis – nie przegra z zapisem z pamięci strony
+    localStorage.setItem('pomoc_swiat_v1', JSON.stringify(st));
+  }, [swKey, yesterday]);
+  await A.reload();
+  check(!!(await A.$(`.today a[href="#/s/${swS}/t/${swT}/powtorz"]`)), 'powtórka na dziś: kafelek „Na dziś” z działem po terminie');
+  const bestBefore = (await sw(A)).best[swKey];
+  await A.click('.today a');
+  check(/z 3/.test(await A.textContent('.qhead')), 'powtórka na dziś: 3 pytania');
+  await answerRight(A);
+  rev = (await sw(A)).review;
+  check(rev[swKey].box === 1 && rev[swKey].due === (await inDays(3)), 'powtórka na dziś: 3 z 3 → pudełko 1, termin za 3 dni');
+  check((await sw(A)).best[swKey] === bestBefore, 'powtórka na dziś: wynik quizu działu bez zmian');
+  check(!(await A.$('#again')), 'powtórka na dziś: bez „Jeszcze raz”');
+  await sync(A);
+  await B.goto(ROOT + 'swiat.html');
+  await sync(B);
+  const revB = ((await sw(B)).review || {})[swKey];
+  check(revB && revB.box === 1 && revB.due > today, 'powtórka na dziś: komputer widzi powtórkę z telefonu');
   await B.goto(ROOT + 'klasa4.html#/postepy');
   check((await B.$$('.srow')).length > 0, 'komputer: panel postępów');
   await B.goto(ROOT + 'klasa4.html');
@@ -147,8 +207,13 @@ async function e2e() {
   await B.goto(ROOT + 'klasa4.html#/chmura');
   await B.selectOption('select[data-track="kl4"]', '');
   await B.waitForTimeout(1500);
+  for (const p of [A, B]) { // ścieżka „Świat” (test powtórki) – też odłączona
+    await p.goto(ROOT + 'swiat.html#/chmura');
+    await p.selectOption('select[data-track="swiat"]', '');
+    await p.waitForTimeout(1500);
+  }
   check(G.f.wyslijRaporty() === 0, 'klasa odłączona na obu urządzeniach – brak danych do raportu');
-  check(G.ss.getSheetByName('Raporty').getLastRow() === 2, 'raport zapisany w karcie „Raporty”');
+  check(G.ss.getSheetByName('Raporty').getLastRow() === 3, 'raport zapisany w karcie „Raporty” (nagłówek + klasa 4 + Świat)');
   await browser.close();
 }
 

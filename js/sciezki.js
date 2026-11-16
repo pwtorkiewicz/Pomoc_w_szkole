@@ -62,6 +62,7 @@ window.TRACKS = [
     group: 'swiat',
     deviceYoung: true,
     parentBox: true, // ramka „👪 Dla rodzica” w dziale: podstawa, źródła, wskazówki (js/app.js)
+    review: true, // „🔁 Powtórka na dziś”: krótkie powtórki działów w rosnących odstępach (pilotaż, js/app.js)
     intro: 'Wybierz temat. Działy idą od najłatwiejszych (🌱) do trudniejszych (🌳). W każdym zobaczysz, <b>gdzie na świecie się tego uczą</b> i co warto zrobić <b>wcześniej</b> (📌).',
   },
 ];

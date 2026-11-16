@@ -10,6 +10,8 @@
  *   wrong / fixed   – wygrywa późniejsza odpowiedź (czas w ms); exams, tasks – wygrywa późniejszy wpis (examsAt, tasksAt);
  *   at              – ostatnia nauka działu;   log – dziennik: każde urządzenie liczy osobno (log[urządzenie][dzień][przedmiot]),
  *   hist            – materiał przerobiony w danym dniu (max); sum – podsumowanie dla raportu (nowsze);
+ *   review          – „🔁 Powtórka na dziś” ({ 'przedmiot/dział': { box, due, at } }): dla każdego działu wygrywa wpis
+ *                     z późniejszym czasem at (ostatnia powtórka albo dopisanie działu do powtórek);
  *   resetAt         – „Wyzeruj postęp”: zapis sprzed późniejszego zerowania jest odrzucany.
  *   autoSpeak       – ustawienie tego urządzenia (nie przechodzi między urządzeniami). */
 (() => {
@@ -81,6 +83,15 @@
     }
     return [v, t];
   }
+  // wpisy z czasem w polu at (np. review): dla każdego klucza wygrywa późniejszy wpis
+  function latestEntries(a, b) {
+    const o = clone(a || {});
+    for (const k in b || {}) {
+      if (!isObj(b[k])) continue;
+      if (!isObj(o[k]) || (+b[k].at || 0) > (+o[k].at || 0)) o[k] = clone(b[k]);
+    }
+    return o;
+  }
   // liczniki (zagnieżdżone): dla każdego klucza większa wartość
   function deepMax(a, b) {
     if (!isObj(a)) return isObj(b) ? clone(b) : Math.max(+a || 0, +b || 0);
@@ -117,6 +128,7 @@
     o.fixed = fixed;
     o.log = deepMax(a.log || {}, b.log || {});
     o.hist = deepMax(a.hist || {}, b.hist || {});
+    o.review = latestEntries(a.review, b.review);
     const sum = b.sum && (!a.sum || (b.sum.ts || 0) > (a.sum.ts || 0)) ? b.sum : a.sum;
     if (sum) o.sum = clone(sum); else delete o.sum;
     if (a.idKeys || b.idKeys) o.idKeys = 1;

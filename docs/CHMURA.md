@@ -50,9 +50,12 @@ Klucze `storeKey` ścieżek się nie zmieniły, a stare zapisy działają dalej.
 | `log` | dziennik `log[urządzenie][dzień][przedmiot] = { t, ok, bad, l, q }`: sekundy nauki, odpowiedzi dobre i złe, lekcje, quizy i zestawy; pamiętany 2 lata | każde urządzenie liczy osobno (max w obrębie urządzenia), statystyki sumują urządzenia, więc nic nie liczy się dwa razy |
 | `hist` | dzień → przedmiot → przerobione działy (ułamek) na koniec dnia; do prognozy | max |
 | `sum` | podsumowanie ścieżki dla raportu (liczy je urządzenie, bo arkusz nie zna listy działów) | nowsze |
+| `review` | „🔁 Powtórka na dziś” (ścieżki z `review: true`, pilotaż w „Świecie”): dział → `{ box, due, at }` – pudełko 0–4, termin „RRRR-MM-DD”, czas wpisu (ms) | dla każdego działu wygrywa wpis z późniejszym `at` |
 | `resetAt` | czas „Wyzeruj postęp” | zapis sprzed późniejszego zerowania jest odrzucany |
 
 `best`, `sets` łączą się przez max, a `lessons` przez sumę zbiorów. `autoSpeak` to ustawienie urządzenia i nie przechodzi między urządzeniami. Reguły są w `mergeState` w `js/postep.js`. Tej samej funkcji używa import kopii zapasowej i zapis przy zmianie w innej karcie przeglądarki.
+
+**Powtórka na dziś** (`review`). Dział trafia do powtórek po pierwszym quizie działu albo ukończonej lekcji: pudełko 0, termin – jutro. Na stronie głównej ścieżki kafelek „🔁 Na dziś” pokazuje najwyżej 2 działy z terminem do dziś (najstarsze najpierw); powtórka (`#/s/<przedmiot>/t/<dział>/powtorz`) to 3 losowe pytania działu. Co najmniej 2 z 3 dobrze → następne pudełko (najwyżej 4), termin za 1, 3, 7, 14 albo 30 dni (pudełko 0–4); inaczej pudełko 0 i termin jutro. Powtórka nie zmienia wyniku quizu działu (`best`), a błędy trafiają do „Powtórki błędów” jak zwykle. Bez serii dni i liczników zaległości. Raport tygodniowy tego pola nie używa – skryptu arkusza nie trzeba wdrażać ponownie.
 
 **Czas nauki.** Tik co 5 s liczy się, gdy karta jest widoczna i aktywna, a w ciągu ostatnich 2 minut był ruch (klik, klawisz, przewijanie, mysz) albo czyta lektor. Czas trafia do przedmiotu z adresu `#/s/<przedmiot>/…`, a reszta (start, powtórka, statystyki) do `_`.
 

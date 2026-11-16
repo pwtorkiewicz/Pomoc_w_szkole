@@ -150,6 +150,40 @@ const dane = require('./dane');
       });
     }
     await visit('#/powtorka');
+    // „🔁 Powtórka na dziś” (ścieżki z review: true): wszystkie działy po terminie → kafelek „Na dziś” i powtórka każdego działu
+    if (track.review) {
+      const keys = data.subjects.filter((x) => !x.link).flatMap((x) => x.topics.map((t) => `${x.id}/${t}`));
+      await page.evaluate(([k, ks]) => {
+        const st = JSON.parse(localStorage.getItem(k) || '{}');
+        st.review = st.review || {};
+        const d = window.POSTEP.addDays(window.POSTEP.dayKey(), -2);
+        for (const key of ks) st.review[key] = { box: 1, due: d, at: Date.now() };
+        localStorage.setItem(k, JSON.stringify(st));
+      }, [track.storeKey, keys]);
+      await page.goto(url + '#/');
+      await page.reload(); // stan strony wczytany od nowa z localStorage
+      await visit('#/', async () => {
+        const n = await page.$$eval('.today li', (l) => l.length);
+        if (n !== Math.min(2, keys.length)) problems.push(`${width}px ${scheme} ${track.id}: kafelek „Na dziś” pokazuje ${n} działy zamiast ${Math.min(2, keys.length)}`);
+      });
+      for (const key of keys) {
+        const [sid, tid] = key.split('/');
+        await visit(`#/s/${sid}/t/${tid}/powtorz`, async () => {
+          for (let k = 0; k < 10 && !(await page.$('.result')); k++) {
+            await page.click('#q1 .opt');
+            const w = await page.$('.why .opt');
+            if (w) await w.click();
+            await page.click('#next');
+          }
+          if (!(await page.$('.result'))) problems.push(`${width}px ${scheme} ${track.id} ${key}: powtórka na dziś nie doszła do wyniku`);
+        });
+        // ten sam dział zaraz po powtórce – już nie czeka (komunikat z terminem i odnośnik do quizu)
+        await page.goto(url + '#/');
+        await visit(`#/s/${sid}/t/${tid}/powtorz`, async () => {
+          if (!(await page.$('.result a[href$="/quiz"]'))) problems.push(`${width}px ${scheme} ${track.id} ${key}: brak komunikatu o następnej powtórce`);
+        });
+      }
+    }
     await page.close();
     // ścieżki z trybem młodszego ucznia włączanym na urządzeniu (deviceYoung): krótki przebieg z włączonym trybem
     if (track.deviceYoung) {

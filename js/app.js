@@ -62,7 +62,8 @@
     if (P) P.cloud.touch();
   }
   // Pola zapisu – opis w js/postep.js (wrong/fixed/examsAt/tasksAt: czasy w ms, log: dziennik nauki, hist: materiał w dniu).
-  const EMPTY = () => ({ best: {}, wrong: {}, fixed: {}, exams: {}, examsAt: {}, lessons: {}, tasks: {}, tasksAt: {}, sets: {}, at: {}, log: {}, hist: {} });
+  // review – „🔁 Powtórka na dziś” (ścieżki z review: true): { 'przedmiot/dział': { box, due, at } }.
+  const EMPTY = () => ({ best: {}, wrong: {}, fixed: {}, exams: {}, examsAt: {}, lessons: {}, tasks: {}, tasksAt: {}, sets: {}, at: {}, log: {}, hist: {}, review: {} });
   const state = Object.assign(EMPTY(), load());
 
   // Jednorazowa migracja: dawniej błędy zapisywano jako „przedmiot/dział/numer pytania”.
@@ -145,6 +146,36 @@
     const t = s && s.topics.find((x) => x.id === tid);
     return t ? { s, t } : null;
   };
+  // ---------- „🔁 Powtórka na dziś” (ścieżki z review: true; pilotaż w „Świecie”) ----------
+  // Dział trafia do powtórek po pierwszym quizie działu albo ukończonej lekcji (box 0, termin – jutro).
+  // Powtórka = 3 losowe pytania działu: ≥ 2 z 3 dobrze → następne pudełko (odstępy REVIEW_GAPS dni),
+  // inaczej od nowa (jutro). Na stronie głównej najwyżej REVIEW_MAX działów z terminem do dziś, najstarsze najpierw.
+  const REVIEW = !!(TRACK.review && P);
+  const REVIEW_GAPS = [1, 3, 7, 14, 30]; // pudełko 0–4 → za ile dni następna powtórka
+  const REVIEW_SIZE = 3;
+  const REVIEW_MAX = 2;
+  function reviewEnroll(key) {
+    if (!REVIEW || state.review[key]) return;
+    state.review[key] = { box: 0, due: P.addDays(P.dayKey(), REVIEW_GAPS[0]), at: Date.now() };
+  }
+  function reviewDue() {
+    if (!REVIEW) return [];
+    const today = P.dayKey();
+    return Object.keys(state.review)
+      .map((key) => ({ key, r: state.review[key], f: findTopic(key) }))
+      .filter((x) => x.f && x.f.t.questions.length && x.r && typeof x.r.due === 'string' && x.r.due <= today)
+      .sort((a, b) => (a.r.due < b.r.due ? -1 : a.r.due > b.r.due ? 1 : (a.r.at || 0) - (b.r.at || 0)))
+      .slice(0, REVIEW_MAX);
+  }
+  function reviewResult(key, score, n) {
+    const r = state.review[key];
+    if (!r || !(r.due <= P.dayKey())) return null;
+    const passed = score * 3 >= n * 2; // 2 z 3
+    const box = passed ? Math.min((+r.box || 0) + 1, REVIEW_GAPS.length - 1) : 0;
+    state.review[key] = { box, due: P.addDays(P.dayKey(), REVIEW_GAPS[box]), at: Date.now() };
+    save();
+    return { passed, gap: REVIEW_GAPS[box] };
+  }
   const badgeClass = (p) => (p == null ? '' : p >= 80 ? 'good' : p >= 50 ? 'mid' : 'low');
   const bar = (p, label = true) =>
     `<div class="bar"><span style="width:${p}%"></span></div>${label ? `<small class="muted">${p}% opanowane</small>` : ''}`;
@@ -368,6 +399,7 @@
         }
         if (p[2] === 't') {
           const t = s.topics.find((x) => x.id === p[3]);
+          if (t && p[4] === 'powtorz' && REVIEW) return dueReview(s, t);
           if (t) return topic(s, t, p[4] || (lessonOf(s, t) ? 'lekcja' : 'teoria'), p[5]);
           return subject(s);
         }
@@ -399,6 +431,7 @@
           <a class="btn primary" href="index.html">Wybierz inną ścieżkę</a></div>`;
       return;
     }
+    const due = reviewDue();
     app.innerHTML = `
       <section class="hero">
         <h1>Cześć! 👋</h1>
@@ -408,6 +441,12 @@
         ${TRACK.deviceYoung ? `<p><button class="btn" id="young" aria-pressed="${YOUNG ? 'true' : 'false'}">🧸 Tryb dla młodszego ucznia: <b>${YOUNG ? 'włączony' : 'wyłączony'}</b></button>
           <small class="muted">${YOUNG ? 'Większe litery, lektor 🔊, krótkie quizy i gwiazdki.' : 'Dla dzieci z klas 1–3: większe litery, lektor 🔊, krótkie quizy i gwiazdki.'} Ustawienie dotyczy tylko tego urządzenia.</small></p>` : ''}
       </section>
+      ${due.length ? `<section class="today">
+        <h2 class="sec">🔁 Na dziś</h2>
+        <p class="muted">${YOUNG ? 'Przypomnij sobie to, co już znasz. Tylko 3 pytania!' : 'Krótkie powtórki działów, które już znasz – żeby wiedza została na dłużej.'}</p>
+        <ul class="topics">${due.map(({ f }) => `<li><a href="#/s/${f.s.id}/t/${f.t.id}/powtorz">
+          <span>${f.s.icon} ${esc(f.t.name)}</span><span class="badge">${((n) => `${n} ${plural(n, ['pytanie', 'pytania', 'pytań'])}`)(Math.min(REVIEW_SIZE, f.t.questions.length))}</span></a></li>`).join('')}</ul>
+      </section>` : ''}
       <div class="grid">
         ${SUBJECTS.map((s) => s.link ? `
           <a class="card" href="${linkHref(s)}" style="--accent:${s.color}">
@@ -1015,6 +1054,7 @@
       keyHandler = null;
       state.lessons[topicKey(s, t)] = 1;
       state.at[topicKey(s, t)] = Date.now();
+      reviewEnroll(topicKey(s, t));
       log(s.id, 'l');
       save();
       pane.innerHTML = `<div class="result"><p class="big">🎓</p><h2>Lekcja ukończona!</h2>
@@ -1480,6 +1520,37 @@
     quiz(pane, QUIZ_SIZE ? shuffle(qs).slice(0, QUIZ_SIZE) : shuffle(qs), { showTopic: true, backHref: '#/', backLabel: 'Wróć na start', againHref: '#/powtorka' });
   }
 
+  // „🔁 Na dziś”: krótka powtórka działu (#/s/<p>/t/<d>/powtorz) – nie zmienia wyniku quizu działu (best);
+  // błędy trafiają do „Powtórki błędów” jak zwykle.
+  function dueReview(s, t) {
+    setTitle(`Powtórka: ${t.name}`);
+    const key = topicKey(s, t);
+    const base = `#/s/${s.id}/t/${t.id}`;
+    app.innerHTML = `${crumbs([[s.name, `#/s/${s.id}`], [t.name, base], ['Powtórka na dziś']])}
+      <h1>🔁 ${esc(t.name)}</h1><div id="pane"></div>`;
+    const pane = document.getElementById('pane');
+    const r = state.review[key];
+    if (!r || !(r.due <= P.dayKey())) {
+      pane.innerHTML = `<div class="result"><p class="big">🗓️</p>
+        <p>${r ? `Następna powtórka tego działu: ${P.dateLong(r.due)}.` : 'Ten dział trafi do powtórek po quizie albo lekcji.'} Teraz możesz zrobić zwykły quiz.</p>
+        <a class="btn primary" href="${base}/quiz">✅ Quiz działu</a> <a class="btn" href="#/">Wróć na start</a></div>`;
+      return;
+    }
+    const n = Math.min(REVIEW_SIZE, t.questions.length);
+    pane.insertAdjacentHTML('beforebegin', `<p class="muted">${n} ${plural(n, ['losowe pytanie', 'losowe pytania', 'losowych pytań'])} z działu. ${n >= 3 ? 'Dwie dobre odpowiedzi wystarczą' : 'Dobre odpowiedzi wystarczą'}, żeby dział wrócił dopiero za kilka dni.</p>`);
+    quiz(pane, shuffle(questionsOf(s, t)).slice(0, n), {
+      backHref: '#/',
+      backLabel: 'Wróć na start',
+      noAgain: true,
+      onFinish: (pct, score) => {
+        const res = reviewResult(key, score, n);
+        if (!res) return '';
+        const when = res.gap === 1 ? 'jutro' : `za ${res.gap} dni`;
+        return `<p>${res.passed ? `👍 Pamiętasz! Ten dział wróci ${when}.` : `Ten dział wróci jutro. Zajrzyj do <a href="${base}/teoria">ściągi</a>${t.flashcards && t.flashcards.length ? ` albo <a href="${base}/fiszki">fiszek</a>` : ''}.`}</p>`;
+      },
+    });
+  }
+
   // ---------- Quiz ----------
   function quiz(pane, qs, opts) {
     let i = 0;
@@ -1599,10 +1670,11 @@
       if (opts.saveKey) {
         state.best[opts.saveKey] = Math.max(state.best[opts.saveKey] || 0, pct);
         state.at[opts.saveKey] = Date.now();
+        reviewEnroll(opts.saveKey);
         log(opts.saveKey.split('/')[0], 'q');
         save();
       }
-      if (opts.onFinish) opts.onFinish(pct);
+      const extra = opts.onFinish ? opts.onFinish(pct, score) : '';
       const stars = starCount(pct);
       const msg = YOUNG
         ? ['Zajrzyj do lekcji i spróbuj jeszcze raz. Dasz radę! 📖', 'Pierwsza gwiazdka! Spróbuj jeszcze raz po więcej. 💪', 'Bardzo dobrze! 🎉', 'Brawo! Wszystkie gwiazdki! 🏆'][stars]
@@ -1611,8 +1683,9 @@
         <div class="result">
           <p class="big">${YOUNG ? starsHtml(stars) : `${pct}%`}</p>
           <p>${score} z ${qs.length} ${YOUNG ? 'dobrze' : 'poprawnych'} · ${msg}</p>
+          ${typeof extra === 'string' ? extra : ''}
           ${mistakes.length ? '<button class="btn primary" id="fix">Popraw błędy</button>' : ''}
-          <button class="btn" id="again">Jeszcze raz</button>
+          ${opts.noAgain ? '' : '<button class="btn" id="again">Jeszcze raz</button>'}
           <a class="btn" href="${opts.backHref}">${esc(opts.backLabel)}</a>
         </div>
         ${mistakes.length ? `<div class="mistakes"><h2>Do zapamiętania</h2><ol>
@@ -1620,7 +1693,8 @@
         </ol></div>` : ''}`;
       const fix = pane.querySelector('#fix');
       if (fix) fix.onclick = () => quiz(pane, shuffle(mistakes), { ...opts, saveKey: null, onFinish: null, draw: null });
-      pane.querySelector('#again').onclick = () => {
+      const again = pane.querySelector('#again');
+      if (again) again.onclick = () => {
         if (opts.againHref && location.hash !== opts.againHref) location.hash = opts.againHref;
         else if (opts.againHref) route();
         else quiz(pane, opts.draw ? opts.draw() : shuffle(qs), opts);
