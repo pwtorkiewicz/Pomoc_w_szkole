@@ -49,6 +49,10 @@ function unit() {
   const rb = { review: { 'm/a': { box: 0, due: '2026-11-07', at: now - 5 }, 'm/b': { box: 3, due: '2026-11-30', at: now - 900 }, 'm/c': { box: 1, due: '2026-11-09', at: now } } };
   const rm = P.mergeState(ra, rb).review;
   check(rm['m/a'].box === 0 && rm['m/b'].box === 0 && rm['m/c'].box === 1, 'łączenie: powtórka na dziś – późniejszy wpis działu wygrywa');
+  // samo dopisanie działu (at: 0) na innym urządzeniu nie zatrze wyniku powtórki
+  const enr = P.mergeState({ review: { 'm/a': { box: 3, due: '2026-11-30', at: now - 99999 } } }, { review: { 'm/a': { box: 0, due: '2026-11-17', at: 0 } } }).review;
+  const enr2 = P.mergeState({ review: { 'm/a': { box: 0, due: '2026-11-17', at: 0 } } }, { review: { 'm/a': { box: 3, due: '2026-11-30', at: now - 99999 } } }).review;
+  check(enr['m/a'].box === 3 && enr2['m/a'].box === 3, 'łączenie: dopisanie działu nie zeruje powtórek z innego urządzenia');
   check(JSON.stringify(P.mergeState(rb, ra).review) === JSON.stringify(Object.fromEntries(Object.keys(rb.review).map((k) => [k, rm[k]]))), 'łączenie: powtórka na dziś – wynik nie zależy od kolejności');
 }
 

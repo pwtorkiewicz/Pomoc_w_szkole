@@ -11,7 +11,7 @@
  *   at              – ostatnia nauka działu;   log – dziennik: każde urządzenie liczy osobno (log[urządzenie][dzień][przedmiot]),
  *   hist            – materiał przerobiony w danym dniu (max); sum – podsumowanie dla raportu (nowsze);
  *   review          – „🔁 Powtórka na dziś” ({ 'przedmiot/dział': { box, due, at } }): dla każdego działu wygrywa wpis
- *                     z późniejszym czasem at (ostatnia powtórka albo dopisanie działu do powtórek);
+ *                     z późniejszym czasem at (ostatnia powtórka); samo dopisanie działu ma at: 0, więc nie wygrywa z wynikiem;
  *   resetAt         – „Wyzeruj postęp”: zapis sprzed późniejszego zerowania jest odrzucany.
  *   autoSpeak       – ustawienie tego urządzenia (nie przechodzi między urządzeniami). */
 (() => {

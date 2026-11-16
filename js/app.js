@@ -154,10 +154,13 @@
   const REVIEW_GAPS = [1, 3, 7, 14, 30]; // pudełko 0–4 → za ile dni następna powtórka
   const REVIEW_SIZE = 3;
   const REVIEW_MAX = 2;
-  function reviewEnroll(key) {
+  // Samo dopisanie ma at: 0 – przy łączeniu z innym urządzeniem nie wygra z prawdziwym wynikiem powtórki.
+  function reviewEnroll(key, due = P.addDays(P.dayKey(), REVIEW_GAPS[0])) {
     if (!REVIEW || state.review[key]) return;
-    state.review[key] = { box: 0, due: P.addDays(P.dayKey(), REVIEW_GAPS[0]), at: Date.now() };
+    state.review[key] = { box: 0, due, at: 0 };
   }
+  // działy przerobione przed wprowadzeniem powtórek (wynik quizu albo lekcja) – do powtórek od dziś
+  if (REVIEW) for (const key of new Set([...Object.keys(state.best), ...Object.keys(state.lessons)])) if (findTopic(key)) reviewEnroll(key, P.dayKey());
   function reviewDue() {
     if (!REVIEW) return [];
     const today = P.dayKey();
@@ -1542,6 +1545,7 @@
       backHref: '#/',
       backLabel: 'Wróć na start',
       noAgain: true,
+      noMsg: true,
       onFinish: (pct, score) => {
         const res = reviewResult(key, score, n);
         if (!res) return '';
@@ -1676,13 +1680,13 @@
       }
       const extra = opts.onFinish ? opts.onFinish(pct, score) : '';
       const stars = starCount(pct);
-      const msg = YOUNG
+      const msg = opts.noMsg ? '' : YOUNG
         ? ['Zajrzyj do lekcji i spróbuj jeszcze raz. Dasz radę! 📖', 'Pierwsza gwiazdka! Spróbuj jeszcze raz po więcej. 💪', 'Bardzo dobrze! 🎉', 'Brawo! Wszystkie gwiazdki! 🏆'][stars]
         : pct === 100 ? 'Perfekcyjnie! 🏆' : pct >= 80 ? 'Bardzo dobrze! 🎉' : pct >= 50 ? 'Nieźle, ale warto powtórzyć. 💪' : 'Przeczytaj ściągę i spróbuj jeszcze raz. 📖';
       pane.innerHTML = `
         <div class="result">
           <p class="big">${YOUNG ? starsHtml(stars) : `${pct}%`}</p>
-          <p>${score} z ${qs.length} ${YOUNG ? 'dobrze' : 'poprawnych'} · ${msg}</p>
+          <p>${score} z ${qs.length} ${YOUNG ? 'dobrze' : 'poprawnych'}${msg ? ` · ${msg}` : ''}</p>
           ${typeof extra === 'string' ? extra : ''}
           ${mistakes.length ? '<button class="btn primary" id="fix">Popraw błędy</button>' : ''}
           ${opts.noAgain ? '' : '<button class="btn" id="again">Jeszcze raz</button>'}
