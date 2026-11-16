@@ -336,6 +336,7 @@ window.WIDGETS = (() => {
     }
     function reset() {
       guess = null;
+      el.querySelectorAll('#mguess .btn').forEach((x) => (x.disabled = false));
       out.innerHTML = 'Ustaw magnes B, a potem przewidź: co się stanie?';
       draw();
     }
@@ -348,12 +349,14 @@ window.WIDGETS = (() => {
     el.querySelector('#md').oninput = reset;
     el.querySelector('#mflip').onclick = () => { flip = !flip; reset(); };
     el.querySelectorAll('#mguess .btn').forEach((b) => (b.onclick = () => {
+      if (guess) return; // najpierw przewidywanie, potem wynik – zmień ustawienie, żeby przewidzieć jeszcze raz
       guess = b.dataset.g;
       const d = dist();
       const r = result(d);
       trials.push({ pole: flip ? 'S' : 'N', d, g: guess, r });
-      const why = { p: 'Biegun S magnesu A i biegun N magnesu B to różne bieguny – przyciągają się.', o: 'Dwa bieguny S naprzeciw siebie – takie same bieguny się odpychają.', n: `Za daleko – w tym przykładzie magnesy działają tylko do ${zasieg} kratek. Im dalej, tym słabiej.` }[r];
-      out.innerHTML = `${guess === r ? '✅ Dobrze przewidziane!' : '🤔 Wyszło inaczej – to też odkrycie!'} ${why}`;
+      const why = { p: 'Biegun S magnesu A i biegun N magnesu B to różne bieguny – przyciągają się.', o: 'Dwa bieguny S naprzeciw siebie – takie same bieguny się odpychają.', n: 'Za daleko – z tej odległości siła jest już za słaba, żeby magnes B się ruszył. Im dalej, tym słabiej.' }[r];
+      out.innerHTML = `${guess === r ? '✅ Dobrze przewidziane!' : '🤔 Wyszło inaczej – to też odkrycie!'} ${why} <span class="muted">Zmień odległość albo obróć magnes B i przewidź jeszcze raz.</span>`;
+      el.querySelectorAll('#mguess .btn').forEach((x) => (x.disabled = true));
       draw();
       renderLog();
     }));

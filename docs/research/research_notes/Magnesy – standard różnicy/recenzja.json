@@ -1,0 +1,660 @@
+[
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "magnesy: theory <p class=\"tip\"> (l. 28), infographicNote (l. 57); js/lekcje/swiat/elektrycznosc.js krok 1, text (l. 25)",
+  "problem": "Dziecko czyta, że wszystko po przypomnieniu to „to, czego uczą dzieci w innych krajach, a w polskiej szkole tego nie ma”. Research potwierdza tylko, że tych treści nie ma w TEKŚCIE podstawy (ustalenie [0.14]). Działanie bez dotyku, obracanie magnesu i kompas z igły są w polskich e-materiałach ZPE do przyrody, a dział sam je linkuje. Krytyka kazała osłabić etykietę „nowe”. Do tego synteza ocenia działanie bez dotyku jako „wcześniej”, a nie „nowe”.",
+  "evidence": "Theory: „a potem to, czego uczą dzieci w innych krajach – a w polskiej szkole tego nie ma”. Krytyka (2): „Kompas z igły pochodzi z polskiego ZPE … Etykieta »nowe« jest za mocna. Lepiej: »w podstawie brak, ZPE pokazuje jako doświadczenie«”. Synteza, tabela: „Siła działa bez dotyku | … | **wcześniej**”. Ustalenie (ZPE) l. 1140: „Jak działa kompas?” ma „film-instrukcję budowy kompasu z igły do szycia, silnego magnesu, korka”. Materiał działu l. 162 linkuje ten sam film ZPE.",
+  "severity": "ważny",
+  "fix": "Zamień na „…a polska podstawa programowa tego nie wymaga” albo „w polskiej szkole poznasz to później albo wcale”. Przy kompasie z igły napisz: „w podstawie go nie ma, ZPE pokazuje go jako doświadczenie”.",
+  "dim": "merytoryka",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "parent.goal (l. 72); theory 🌍 2 (l. 37–38); infographic „Obróć magnes” (l. 63)",
+  "problem": "Według parent.goal „ułożenie zmienia kierunek siły” jest „nowe względem polskiej podstawy”. Ten sam dział podaje w 🇵🇱 przypomnieniu regułę „różne się przyciągają, takie same odpychają”, a to dokładnie ta zależność. Stara fizyka wymaga opisu oddziaływania między biegunami. Synteza ocenia ten punkt jako „wcześniej / głębiej”, a nie „nowe”. Dział jest więc wewnętrznie sprzeczny i mylnie opisuje polską podstawę.",
+  "evidence": "parent.goal: „Nowe względem polskiej podstawy: … ułożenie zmienia kierunek siły…”. Theory, Przypomnienie (l. 32): „Różne się przyciągają, takie same odpychają.” Synteza l. 26: „Ułożenie magnesów a kierunek siły | Brak wprost. | … | **wcześniej / głębiej**”. Ustalenie [0.10]: stara fizyka wym. 1 „nazywa bieguny magnesów stałych i opisuje oddziaływanie między nimi”.",
+  "severity": "ważny",
+  "fix": "Usuń „ułożenie zmienia kierunek siły” z listy „nowe” w parent.goal. Sekcję 🌍 2 przedstaw jako pogłębienie: przewidywanie przed sprawdzeniem (NC Y3 „predict whether two magnets will attract or repel”) i to, że w polskiej podstawie tego „wcześniej” nie ma.",
+  "dim": "merytoryka",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "theory „Przypomnienie” (l. 30–34); infographic.top (l. 60); js/lekcje/swiat/elektrycznosc.js krok 1 – text (l. 24) i tytuł",
+  "problem": "Przypomnienie przypisuje polskiej przyrodzie kl. 4–6 więcej, niż mówi tekst podstawy. Nowa podstawa (2026 poz. 378) nie używa słów „biegun”, „przyciąga” ani „odpycha” – mówi tylko o „oddziaływaniach magnetycznych”. Zdanie „duży czy mały, sztabka czy podkowa – staje północ–południe” to według krytyki właśnie różnica japońska, a nie treść polska. Lekcja mimo to obiecuje: „Te rzeczy poznasz też na przyrodzie w klasach 4–6: … ma dwa bieguny N i S”.",
+  "evidence": "Ustalenie [0.6]: „wymaganie nie używa słów »biegun«, »przyciąga«, »odpycha« ani »magnesowanie«”; weryfikacja: „w całym akcie nie ma ani jednego trafienia »przyciąg«, »odpych«”. Krytyka (2): „Różnicą jest tylko »każdy kształt i wielkość ustawia się N–S« oraz rodzaje magnesów”. MEXT (ustalenie l. 847): „形や大きさが違っていてもいつも南北の向きに止まる”. Theory l. 33: „Magnes, który może się swobodnie obracać – duży czy mały, sztabka czy podkowa – staje północ–południe” – pod nagłówkiem polskiego przypomnienia.",
+  "severity": "ważny",
+  "fix": "Przypomnienie ogranicz do tego, co jest w tekście: materiały magnetyczne (żelazo, stal), oddziaływania magnetyczne, kompas i magnetyzm Ziemi. „Każdy kształt i wielkość ustawia się N–S” przenieś do części 🌍 jako Japonię (kl. 3). Bieguny i przyciąganie/odpychanie podaj jako NC Y3 i Japonię albo napisz, że polska podstawa mówi o tym ogólnie („oddziaływania magnetyczne”).",
+  "dim": "merytoryka",
+  "votes": [
+   false,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "theory 🌍 7 „Zapowiedź: magnes na prąd” (l. 48)",
+  "problem": "Singapur stoi obok Japonii i Korei jako kraj, w którym uczy się, że „elektromagnes działa tylko wtedy, gdy płynie prąd – można go włączać i wyłączać”. Jedyne źródło o Singapurze mówi tylko o robieniu magnesu „metodą elektryczną”. Nie pisze o elektromagnesie ani o włączaniu i wyłączaniu. Do tego synteza zaznacza, że faktów z Singapuru ten research nie sprawdzał. W tym samym zdaniu jest też odesłanie „Więcej w dziale o obwodach”, a takiego działu w ścieżce nie ma (elektrycznosc.js ma tylko 'magnesy' i 'czujniki').",
+  "evidence": "basis: Singapur P3 „Make a magnet by the stroke method and the electrical method”. Synteza l. 57: „Treści z Singapuru (metoda pocierania) … nie były objęte tym researchem … ja ich nie potwierdzam”. Grep id działów w js/dane/swiat: mechanizmy, mosty, bramki-logiczne, tabliczka-12, magnesy, czujniki – nie ma działu o obwodach.",
+  "severity": "ważny",
+  "fix": "Usuń Singapur z tego zdania albo napisz zgodnie ze źródłem: „Singapur (P3): magnes robi się też metodą elektryczną”. Usuń „Więcej w dziale o obwodach” albo zastąp je odesłaniem do istniejącego działu (np. czujniki).",
+  "dim": "merytoryka",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "pytanie iidode (l. 234); theory „Jak uczą tego w Japonii?” (l. 50); fiszka „Badacz po japońsku” (l. 190); infographic.bottom (l. 69); activities zt9qv0.intro (l. 102); lekcja krok 2 (js/lekcje/swiat/elektrycznosc.js l. 30–46)",
+  "problem": "Łańcuch 6 kroków („zauważ → zapytaj → przewiduj → sprawdź → zapisz → wniosek”) jest podany jako japoński tok lekcji, a pytanie iidode twierdzi, że japońscy uczniowie przewidują „zaraz przed doświadczeniem”. Komentarz MEXT (s. 10) ma 8 etapów. Między przewidywaniem a doświadczeniem jest planowanie sprawdzenia (検証計画の立案), a przed wnioskiem – omówienie wyników (考察). Zdanie „Wynik inny, niż przewidziałeś, to nie błąd” stoi pod nagłówkiem o Japonii, choć pochodzi z Oak (Teacher tip), a nie z MEXT.",
+  "evidence": "MEXT 理科編 s. 10 (cytat w recenzji częściowej): „自然の事物・現象に対する気付き，問題の設定，予想や仮説の設定，検証計画の立案，観察・実験の実施，結果の処理，考察，結論の導出”. Ustalenie Oak (l. 1256): „Remind them that results may not always show what they expect but that does not mean the investigation went “wrong”.” iidode: „Co robią zaraz przed doświadczeniem? → przewidują”.",
+  "severity": "ważny",
+  "fix": "Oznacz łańcuch jako uproszczony („w skrócie”) albo dodaj krok „🗺️ zaplanuj”. W iidode zapytaj „Co robią, zanim zaczną doświadczenie?”. Zdanie o wyniku innym niż przewidywany przypisz lekcjom Oak (Anglia).",
+  "dim": "merytoryka",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "pytanie x1taom – why.explain i why.optionExplain[2] (l. 215–216)",
+  "problem": "Wyjaśnienie etapu „Dlaczego?” uczy ogólnie: „Bieguny zawsze są parami: jeden koniec N, drugi S”. To utrwala błędne przekonanie z Oak („The poles of all magnets are the ends”), które dział obala w 80j4m8, w teorii 🌍 6 i w kroku lekcji o kształtach. Pytanie nie mówi przy tym, że magnes A jest sztabkowy. Zdanie „przyciąga albo odpycha tak samo mocno” nie ma żadnego źródła w researchu.",
+  "evidence": "why.explain: „Bieguny zawsze są parami: jeden koniec N, drugi S.” optionExplain[2]: „Drugi koniec to też biegun – i przyciąga albo odpycha tak samo mocno.” Theory l. 46: „Nie każdy magnes ma bieguny na końcach”. Ustalenie [1.9] (Oak): misconception „All magnets look the same. The poles of all magnets are the ends.”",
+  "severity": "ważny",
+  "fix": "W q dopisz „sztabkowy”. why.explain: „Każdy magnes ma i N, i S – w magnesie sztabkowym są na dwóch końcach.” Usuń „tak samo mocno”.",
+  "dim": "merytoryka",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "pytanie zsub6c (l. 213–214); fiszka „Obrócisz jeden magnes…” (l. 181); theory 🌍 2 (l. 38); infographic „Obróć magnes” (l. 63); lekcja krok 3 – check (js/lekcje/swiat/elektrycznosc.js l. 56)",
+  "problem": "„Obracasz jeden z nich na drugą stronę” / „Obrócisz jeden – przyciąganie zmieni się w odpychanie” to przesadne uogólnienie i daje dwie poprawne odpowiedzi. Weźmy dwa sztabkowe magnesy koniec do końca. Jeśli jeden przewrócisz na drugi bok (obrót wokół długiej osi), naprzeciw zostaje ten sam biegun i magnesy dalej się przyciągają, a obrót o 90° też nie daje odpychania. Odpychanie pojawia się tylko po zamianie końców (obrót o 180° tak, żeby naprzeciw był drugi biegun).",
+  "evidence": "zsub6c: options ['odepchną się', 'dalej się przyciągną', …], answer 0. Check w lekcji: „Obracasz jeden z nich. Co teraz?”, bez kąta i osi. Źródło NGSS PS2.B (synteza l. 79) mówi o „orientation relative to each other”, a nie o każdym obrocie.",
+  "severity": "ważny",
+  "fix": "Napisz precyzyjnie: „Odwracasz jeden magnes tak, że do drugiego zwrócony jest teraz jego drugi koniec (biegun)”. Tak samo w fiszce, w teorii i w infografice („zamień końce magnesu”).",
+  "dim": "merytoryka",
+  "votes": [
+   false,
+   true
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "pytanie t2ebns (l. 198); theory „Każdy magnes ma dwa bieguny” (l. 32); parent.prepare (l. 88), activities zt9qv0.safety/needs (l. 103) i steps[4] „ten sam koniec magnesu” (l. 110)",
+  "problem": "Pytanie uogólnia: „Ile biegunów ma KAŻDY magnes? → 2”, a „4” jest dystraktorem. Jednocześnie do pomiarów dział poleca „magnes z lodówki”. Elastyczne płaskie magnesy na lodówkę są namagnesowane pasami o wielu naprzemiennych biegunach, więc „4” bywa prawdą, a polecenie „ten sam koniec magnesu” traci sens. Komentarz MEXT zaleca do tego tematu magnesy sztabkowe i podkowiaste. NC mówi „describe magnets as having two poles”, a nie, że każdy ma dokładnie dwa.",
+  "evidence": "MEXT (ustalenie l. 857): „児童が扱いやすい棒磁石やＵ字型磁石などが考えられる” (zaleca sztabkowe i U). parent.prepare: „1–2 zwykłe magnesy (sztabkowy albo z lodówki)”. Synteza l. 120: „1–2 magnesy sztabkowe (nie kulki magnetyczne)” – bez magnesu z lodówki. Synteza l. 385: „Czy magnesy ferrytowe i gumowe … – brak źródła”.",
+  "severity": "ważny",
+  "fix": "t2ebns: „Ile biegunów ma magnes sztabkowy?” albo zamień dystraktor „4” na jednoznacznie błędny. W prepare, needs i safety zalecaj magnes sztabkowy albo podkowę (jak MEXT), a nie magnes z lodówki.",
+  "dim": "merytoryka",
+  "votes": [
+   true,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "pytanie b4i6jy, etap 1 (l. 210)",
+  "problem": "Odpowiedź „poruszy się” nie jest jedyną poprawną. Zbliż biegun S magnesu do końca N igły od strony, w którą igła już wskazuje – igła jest wtedy w położeniu równowagi i się nie obróci. Słaby magnes z daleka też jej nie poruszy. Dystraktor „będzie stała bez ruchu” bywa więc prawdą. To łamie zasadę „dokładnie jedna poprawna odpowiedź”. MEXT opisuje tylko, że się bada, jak igła się porusza („その動き方を調べ”), a nie, że zawsze się porusza.",
+  "evidence": "b4i6jy: q „Zbliżasz magnes do igły kompasu, ale jej nie dotykasz. Co zrobi igła?”, options ['poruszy się', 'będzie stała bez ruchu']. MEXT (ustalenie l. 837): „磁石を方位磁針に近付けて，その動き方を調べたりして”.",
+  "severity": "ważny",
+  "fix": "Podaj warunki, np. „Zbliżasz magnes z boku do igły kompasu…”, albo zmień pytanie na etap „dlaczego”: „Igła kompasu poruszyła się, choć magnes jej nie dotknął. Dlaczego?”.",
+  "dim": "merytoryka",
+  "votes": [
+   false,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "pytanie z0r2mi (l. 227); fiszka „Magnes z gwoździa (Singapur)” (l. 186); theory 🌍 5 (l. 44)",
+  "problem": "Gwóźdź jest przypisany programowi Singapuru („Program Singapuru mówi: … gwóźdź pociera się magnesem”). Sylabus mówi tylko o „stroke method” (i „electrical method”), bez przedmiotu. Gwóźdź to nasz przykład. Tak samo zdanie „Japonia: gwóźdź przyczepiony do magnesu sam przyciąga spinacze” – MEXT mówi tylko, że „niektóre przedmioty zbliżone do magnesu stają się magnesami”.",
+  "evidence": "Cytat w basis: „Make a magnet by the stroke method and the electrical method” – bez „nail”. MEXT (ustalenie l. 817): „磁石に近付けると磁石になる物があること”. z0r2mi.explain: „Program Singapuru mówi: zrób magnes metodą pocierania – gwóźdź pociera się magnesem.” Synteza l. 57: Singapur nieobjęty researchem.",
+  "severity": "drobny",
+  "fix": "z0r2mi: „Jak w Singapurze robi się magnes metodą pocierania?” (bez gwoździa jako cytatu z programu). W explain, we fiszce i w teorii zaznacz: „np. gwóźdź – nasz przykład”.",
+  "dim": "merytoryka",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "theory 🌍 1 (l. 36) i 🌍 3 (l. 40); lekcja krok 4 text (js/lekcje/swiat/elektrycznosc.js l. 73)",
+  "problem": "Treść lekcji Oak jest podana jako fakt o szkołach w Anglii: „Anglia: dzieci mierzą linijką…”, „Anglia: po wielkości ani kształcie nie poznasz…”. Program DfE ma tylko nieobowiązkową wskazówkę „finding a fair way to compare them”. Pomiar linijką i zdanie o wielkości pochodzą z lekcji Oak. CLAUDE.md: fakty o szkołach za granicą – tylko z dokumentów ministerstw. Krytyka (1) też tego wymagała.",
+  "evidence": "Basis (NC Y3, non-statutory): „exploring the strengths of different magnets and finding a fair way to compare them”. Ustalenie Oak (l. 201): pomiar linijką co 0,5 cm – „przykładowe wyniki fikcyjnych uczniów”. Ustalenie Oak (l. 211): większy magnes zawsze silniejszy – błędne przekonanie z lekcji „strongest magnet”.",
+  "severity": "drobny",
+  "fix": "Napisz np.: „W Anglii (lekcje Oak National Academy dla Year 3) dzieci mierzą zasięg linijką” i „Program Anglii każe uczciwie porównać siłę magnesów; lekcje Oak pokazują, że po wielkości tego nie poznasz”.",
+  "dim": "merytoryka",
+  "votes": [
+   true,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "theory 🌍 2 (l. 38); activities hzqwr6.intro (l. 121); lekcja krok 3 text (js/lekcje/swiat/elektrycznosc.js l. 53)",
+  "problem": "W tekstach dla dziecka zostało „USA:” i „w USA na przykład zatrzask do drzwi”. Krytyka kazała pisać „standardy NGSS (przyjęte przez część stanów USA)”, bo NGSS to nie program całych USA. Zatrzask to w NGSS tylko jeden z przykładów („could include”). Pole where, basis i zrodla.js zostały poprawione, treść widoczna dla dziecka – nie.",
+  "evidence": "Krytyka (1): „NGSS to nie program federalny … Zamiast »USA, grade 3« trzeba pisać »standardy NGSS (przyjęte przez część stanów USA)«”. Ustalenie l. 446: „Przykłady problemów: zatrzask, który trzyma drzwi zamknięte, oraz urządzenie…”. zrodla.js: „(nextgenscience.org; przyjmowane przez część stanów USA)”.",
+  "severity": "drobny",
+  "fix": "Zamień na „W części stanów USA (standardy NGSS)…”. W intro projektu napisz: „…a standardy NGSS podają jako przykład zatrzask do drzwi”.",
+  "dim": "merytoryka",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "theory 🌍 4 (l. 42); parent.mistakes[3] (l. 78); pytanie 2zg2q9 why.explain (l. 224)",
+  "problem": "Wyjaśnienie „przez grubą deskę może nie przyciągnąć – bo to duża odległość” / „gruba deska to po prostu duża odległość” nie ma źródła w researchu. Oak bada tylko papier, karton, folię i plastik, a jako BŁĘDNE przekonanie podaje „not wood, a table”. Weryfikator zastrzegł, żeby nie uogólniać wyników poza testowane materiały. Zdanie „siła przechodzi przez papier, cienką tekturę, plastik i szkło” jest też bezwarunkowe, a BBC pisze tylko „can pull through”.",
+  "evidence": "Ustalenie [1.7]: misconception „Magnets can exert a force through paper, but not wood, a table, or other thick materials”; testowano „papier, karton, folię aluminiową i kawałek butelki po mleku”. Weryfikacja (l. 1261): „To uogólnienie odnosi się tylko do testowanych materiałów … nie przenosimy go jako ogólnej reguły.” Synteza l. 89: BBC „can pull through non-magnetic materials such as cardboard, glass or plastic”.",
+  "severity": "drobny",
+  "fix": "Usuń przyczynę („bo to duża odległość”) albo podaj dla niej źródło. Np.: „Silny magnes działa nawet przez cienką deskę czy blat; słaby może nie przyciągnąć – sprawdź sam.” W 🌍 4 dopisz „zwykle” / „może przechodzić”.",
+  "dim": "merytoryka",
+  "votes": [
+   false,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/lekcje/widgety.js",
+  "where": "magnesy(): komunikat why.n (l. 355) i opcja „😴 nic – za daleko” (l. 307, 310); js/dane/swiat/elektrycznosc.js pytanie 6wg3w1 explain (l. 209)",
+  "problem": "Widżet uczy, że magnes ma twardą granicę działania: „w tym przykładzie magnesy działają tylko do 3 kratek”. Źródła (MEXT, NGSS) mówią, że siła zależy od odległości i słabnie z nią, a nie znika. Za granicą siła jest tylko za słaba, żeby poruszyć magnes. W 6wg3w1 explain wyciąga z danych więcej, niż one pokazują. Przy pomiarach co 1 cm „przyciąga/nie” zasięg leży gdzieś między 3 a 4 cm, a nie wynosi „3 cm”. Zdanie „im dalej, tym słabiej” też nie wynika z wyników tak/nie.",
+  "evidence": "widgety.js l. 355: „Za daleko – w tym przykładzie magnesy działają tylko do ${zasieg} kratek. Im dalej, tym słabiej.” MEXT (ustalenie l. 827): „磁石が物を引き付ける力は，磁石と物の距離によって変わる”. 6wg3w1.explain: „Do 3 cm magnes przyciągał, od 4 cm już nie. Jego zasięg to 3 cm – im dalej, tym słabiej.”",
+  "severity": "drobny",
+  "fix": "Widżet: „Za daleko – z tej odległości siła jest już za słaba, żeby magnes B się ruszył. Im dalej, tym słabiej.” 6wg3w1: „Z 3 cm jeszcze przyciągał, z 4 cm już nie – przyciąga z 3 cm i bliżej.”",
+  "dim": "merytoryka",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "materials „Blocking magnetic force” – note (l. 165); activities 058jla.source (l. 157) i zt9qv0.source (l. 117)",
+  "problem": "Trzy opisy źródeł nie zgadzają się z researchem. (1) Opis lekcji Oak mówi o „labiryncie z magnesem pod spodem”. W lekcji labirynt jest narysowany na plastikowej butelce, magnes prowadzi spinacz od zewnątrz, a spinacz jest w środku. (2) Karta „Kompas z igły” każe pocierać „około 25 razy, zawsze w tę samą stronę”, a to instrukcja z lekcji Oak – tymczasem source wymienia tylko ZPE, Singapur i Japonię. (3) zt9qv0.source przypisuje MEXT „wyniki w tabeli” przy pomiarze odległości. W MEXT tabela służy do sortowania rzeczy przyciąganych i nieprzyciąganych.",
+  "evidence": "Ustalenie [1.7]: „»labirynt na butelce«, czyli ścieżka narysowana na plastikowej butelce, po której magnes z zewnątrz prowadzi spinacz wewnątrz”. Weryfikacja [1.9] (l. 1271): „stroke one end of a bar magnet down the entire length of the pin around 25 times… same direction”. MEXT (ustalenie l. 867): „磁石に引き付けられる物，引き付けられない物を調べる際に，実験の結果を表などに分類，整理する”.",
+  "severity": "drobny",
+  "fix": "Note: „labirynt na plastikowej butelce – magnes z zewnątrz prowadzi spinacz w środku; próby z różnymi materiałami”. W 058jla.source dopisz „Oak National Academy, Year 3 „Different magnets and their parts” (pocieranie ok. 25 razy; OGL v3.0)”. W zt9qv0.source napisz „MEXT kl. 3 – siła zależy od odległości”, a tabelę wyników przypisz Oak (pomiar linijką).",
+  "dim": "merytoryka",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/app.js",
+  "where": "activityView → handler przycisku #save: log(a.key.split('/')[0], 'l')",
+  "problem": "Zapisanie karty „🛠️ Zrób” trafia do dziennika jako ukończona LEKCJA (pole l). Każde kliknięcie „✅ Zrobione!” albo „Zapisz ocenę” (także przy ponownym wejściu na kartę i przy projekcie z 0 zaznaczonych kryteriów) dolicza jedną lekcję. Zawyża to „Lekcje” w #/postepy, w raporcie tekstowym i w raporcie tygodniowym arkusza (Kod.js: kolumna „Lekcje”, wiersz „🎓 Lekcje / quizy” = w.tot[3]). Oznacza też dzień jako „dzień z nauką” (activeDay sprawdza x.l), chociaż state.lessons się nie zmienia. W docs/CHMURA.md pole l to „lekcje”. Zadania otwarte (openTasks) nic do dziennika nie zapisują, więc zachowanie jest niespójne.",
+  "evidence": "Playwright (swiat.html): #/s/elektrycznosc/t/magnesy/zrob/zt9qv0 → klik #save; #/…/zrob/hzqwr6 → klik #save bez zaznaczonych kryteriów. Wynik w localStorage pomoc_swiat_v1: tasks {zt9qv0:1, hzqwr6:0}, lessons {}, log {…:{\"2026-11-16\":{\"elektrycznosc\":{\"l\":2}}}}. Strona #/postepy: „Lekcje: 2 · quizy i zestawy: 0”. Kod: app.js:653 log(…,'l'); app.js:1054 FIELDS=['t','ok','bad','l','q']; app.js:1240 `Lekcje: ${w.tot.l}`; apps-script/Kod.js:240, 248.",
+  "severity": "ważny",
+  "fix": "Usunąć log(…, 'l') z activityView (tak jak w openTasks). Jeśli karty mają się liczyć do statystyk, dodać osobne pole dziennika (np. 'a') z regułą w addLog/mergeState, opisem w docs/CHMURA.md i kolumną w Kod.js (wymaga ponownego wdrożenia skryptu przez rodzica). Logować tylko pierwsze zapisanie albo zmianę wyniku.",
+  "dim": "silnik",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/lekcje/widgety.js",
+  "where": "magnesy() → handler przycisków #mguess .btn (l. 350–359)",
+  "problem": "Po pokazaniu wyniku przyciski przewidywania dalej działają, a guess nie jest blokowany do zmiany ustawienia. Uczeń widzi wynik i strzałki, a potem może kliknąć poprawną odpowiedź przy TYM SAMYM ustawieniu. Dostaje wtedy „✅ Dobrze przewidziane!”, a tabela prób dostaje dodatkowy wiersz z ✅. To psuje zasadę widżetu: najpierw przewidywanie, potem wynik.",
+  "evidence": "Playwright (lekcja elektrycznosc/magnesy, krok z widżetem, d=2, bez obrotu): klik [data-g=o] → „🤔 Wyszło inaczej – to też odkrycie! …”, potem klik [data-g=p] → „✅ Dobrze przewidziane! …”. .mlog: „N 2 ↔️ 🤝” i „N 2 🤝 🤝 ✅”. Stan przycisków po wyniku: disabled = [false, false, false].",
+  "severity": "ważny",
+  "fix": "W handlerze dodać `if (guess) return;` albo po pierwszym kliknięciu ustawić disabled na przyciskach #mguess. W reset() (zmiana odległości, obrót magnesu B) włączać je z powrotem.",
+  "dim": "silnik",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/app.js",
+  "where": "activityView i doView (brak sayButton/bindSay); widżet magnesy – div .readout",
+  "problem": "W trybie młodszego ucznia (deviceYoung w ścieżce „Świat”, dział dla 7–9 lat) karty „🛠️ Zrób” nie mają przycisku 🔊. A to w nich są zasady bezpieczeństwa („Magnesów nigdy nie bierz do ust”), lista rzeczy i kroki. Komunikat widżetu po próbie (.readout) też nie jest czytany. Ściąga, infografika, quiz i lekcja mają lektora, więc dziecko, które słabo czyta, nie usłyszy akurat ostrzeżeń.",
+  "evidence": "Playwright, localStorage pomoc_mlodszy_swiat=1 (body.young = true): #/…/magnesy/teoria – 1 przycisk .say; #/…/zrob/zt9qv0, /hzqwr6, /058jla – 0 przycisków .say; lista #/…/zrob – 0; w widżecie po kliknięciu przewidywania .widget .say = 0. activityView nie wywołuje sayButton ani bindSay.",
+  "severity": "ważny",
+  "fix": "W activityView, gdy SPEAK: `<p class=\"say-row\">${sayButton('Posłuchaj karty')}</p>` i bindSay(…, () => [a.title, a.intro, 'Bezpiecznie:', ...a.safety, 'Potrzebujesz:', ...a.needs, ...a.steps]), z ostrzeżeniami na początku. W widżecie czytać tekst .readout (np. przez przekazaną funkcję speak albo przycisk 🔊 obok readout).",
+  "dim": "silnik",
+  "votes": [
+   true,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/app.js",
+  "where": "quiz() → askWhy(): keyHandler (l. 1550–1555); też keyHandler w show() (l. 1505)",
+  "problem": "Klawisz, który odpowiedział na etap 1, od razu odpowiada też na etap 2 „Dlaczego?”: wystarczy auto-powtórzenie przy przytrzymaniu albo szybkie podwójne naciśnięcie. Uczeń nie widzi pytania „Dlaczego?”, a losowa odpowiedź trafia do state.wrong i do powtórki błędów. W zwykłym pytaniu powtórzony klawisz jest nieszkodliwy, bo po odpowiedzi działa tylko Enter/spacja. Tu etap 2 od razu przejmuje litery i cyfry.",
+  "evidence": "Playwright, swiat.html#/s/elektrycznosc/t/magnesy/quiz, pytanie 2zg2q9: keyboard.down(litera poprawnej odpowiedzi) dwa razy (drugie = repeat), potem up → #fb od razu zawiera „Przewidywanie dobre, ale powód inny.” Etap 2 rozstrzygnął się bez udziału ucznia.",
+  "severity": "drobny",
+  "fix": "W obu keyHandlerach quizu dodać `if (e.repeat) return;`. W askWhy włączać obsługę klawiszy dopiero po keyup klawisza z etapu 1 (albo po ok. 300 ms).",
+  "dim": "silnik",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/app.js",
+  "where": "quiz() → finish(): lista „Do zapamiętania” (mistakes)",
+  "problem": "Gdy błąd był w etapie 2 („Dlaczego?”), podsumowanie pokazuje wyjaśnienie etapu 1 (q.explain), a nie q.why.explain. Nie zaznacza też, że przewidywanie było dobre, a błąd był w powodzie. Uczeń dostaje w podsumowaniu inne wyjaśnienie niż to, które dotyczyło jego błędu.",
+  "evidence": "Playwright: b4i6jy – etap 1 dobrze, etap 2 źle. W #fb2: „…Poprawny powód: siła magnesu działa przez szczelinę / Igła rusza się także wtedy, gdy trzymasz rękę nieruchomo…” (why.explain). W .mistakes: „✔ poruszy się – bo siła magnesu działa przez szczelinę / Igła kompasu to mały magnes. Twój magnes działa na nią przez szczelinę.” (q.explain). Kod: `${q.explain ? … esc(q.explain) …}` bez rozróżnienia etapu.",
+  "severity": "drobny",
+  "fix": "W mistakes zapisywać etap błędu (np. mistakes.push({ q, stage2 })) i dla stage2 pokazywać „Przewidywanie dobre, powód: …” oraz q.why.explain.",
+  "dim": "silnik",
+  "votes": [
+   false,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "tools/nowe-id.js",
+  "where": "zbiór used (l. 5–8)",
+  "problem": "Id kart „Zrób” (activities) są z tej samej puli co pytania (sprawdz-dane.js wywołuje useId(a.id)), ale generator nowych id ich nie zbiera. Może więc wydać id zajęte przez kartę (np. zt9qv0, hzqwr6, 058jla). Błąd wyjdzie dopiero w sprawdz-dane.js, już po wpisaniu id do danych.",
+  "evidence": "tools/nowe-id.js: `s.topics.flatMap((t) => [...t.questions, ...(t.tasks || [])].map((q) => q.id))` – bez t.activities. tools/sprawdz-dane.js:115 `useId(a.id, where)` dla kart.",
+  "severity": "drobny",
+  "fix": "Dodać `...(t.activities || [])` do listy w nowe-id.js.",
+  "dim": "silnik",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "tools/przeglad.js",
+  "where": "wizyta `#/s/${s.id}/t/${t}/quiz` (`await page.click('.opt')`); brak przebiegu w trybie deviceYoung",
+  "problem": "Przegląd prawie nie sprawdza nowych ścieżek kodu. (1) Klika pierwszy przycisk, a odpowiedzi są tasowane, więc etap „Dlaczego?” (askWhy, finalize ze stage2, notatka o micie, „– bo …” w podsumowaniu) uruchamia się tylko przypadkiem. (2) Ścieżka „Świat” nie jest przechodzona z włączonym trybem młodszego ucznia (pomoc_mlodszy_swiat=1). Dlatego braki lektora w kartach i błędy etapu 2 przechodzą przez narzędzie z wynikiem „OK”.",
+  "evidence": "node tools/przeglad.js swiat → „Odwiedzone widoki: 132 / OK”, choć karty w trybie young nie mają 🔊 (zgłoszenie wyżej). grep 'mlodszy|deviceYoung' w tools/przeglad.js – brak. Wizyta quizu: `async () => { await clickSay(); await page.click('.opt'); await clickSay(); }`.",
+  "severity": "drobny",
+  "fix": "Dla działów z pytaniami why przejść quiz deterministycznie: z window.SUBJECTS wziąć q.answer, kliknąć `#q1 .opt[data-k=answer]`, potem złą odpowiedź w `.why .opt`, dojść do podsumowania i sprawdzić `.mistakes`. Dla ścieżek z deviceYoung zrobić drugi przebieg z localStorage `pomoc_mlodszy_<id>`='1' (addInitScript).",
+  "dim": "silnik",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "pytanie iidode (l. 234): „Co robią zaraz przed doświadczeniem?”",
+  "problem": "Poprawna odpowiedź („przewidują, co się stanie”) nie zgadza się ze źródłem, na które powołuje się pytanie. Według komentarza MEXT między przewidywaniem a doświadczeniem jest jeszcze planowanie sprawdzenia (検証計画の立案). „Zaraz przed doświadczeniem” Japończycy więc planują, a nie przewidują. Pytanie podaje jako fakt o japońskiej szkole coś, czego dokument nie mówi.",
+  "evidence": "MEXT 小学校学習指導要領解説 理科編, l. 508 pliku scratchpad/src/azja/mext_rika.txt: „…予想や仮説の設定，検証計画の立案，観察・実験の実施，結果の処理，考察，結論の導出”. Pytanie: q: 'Japońscy uczniowie badają magnesy jak badacze. Co robią zaraz przed doświadczeniem?', answer: 'przewidują, co się stanie'. Ten sam skrócony łańcuch jest w lekcji (krok 2, remember) i we fiszce „Badacz po japońsku”.",
+  "severity": "ważny",
+  "fix": "Zmienić pytanie na „Co robią, zanim zaczną doświadczenie?” i zostawić odpowiedź „przewidują, co się stanie”. Albo zostawić „zaraz przed” i dać poprawną odpowiedź „planują, jak to sprawdzić” (z dystraktorami w tej samej formie). W explain dopisać krok „zaplanuj” albo oznaczyć łańcuch jako „w skrócie”.",
+  "dim": "pytania",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "pytanie x1taom – why.explain i why.optionExplain[2] (l. 215–216)",
+  "problem": "Wyjaśnienie drugiego etapu mówi ogólnie „jeden koniec N, drugi S”. Utrwala tym samym udokumentowane błędne przekonanie Oak („bieguny są zawsze na końcach”), które ten sam quiz obala w pytaniu 80j4m8 (magnes pierścieniowy). Dopisek „przyciąga albo odpycha tak samo mocno” nie ma źródła w researchu.",
+  "evidence": "why.explain: 'Bieguny zawsze są parami: jeden koniec N, drugi S.'; optionExplain[2]: 'Drugi koniec to też biegun – i przyciąga albo odpycha tak samo mocno.' Pytanie 80j4m8, explain: 'Każdy magnes ma dwa bieguny, ale nie każdy ma je na końcach.' Oak, different-magnets-and-their-parts, Common misconception: „The poles of all magnets are the ends.”",
+  "severity": "ważny",
+  "fix": "why.explain: „Każdy magnes ma i N, i S – bieguny zawsze są parami. W magnesie sztabkowym są na dwóch końcach.” optionExplain[2]: „Drugi koniec to też biegun – S. Przyciąga biegun N magnesu B.” (bez „tak samo mocno”).",
+  "dim": "pytania",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "pytanie zsub6c (l. 213) i check w kroku 3 lekcji js/lekcje/swiat/elektrycznosc.js (l. 56)",
+  "problem": "Odpowiedź zależy od tego, jak dokładnie obrócono magnes, a pytanie tego nie określa. „Obracasz jeden z nich na drugą stronę” można zrozumieć jako przewrócenie magnesu. Magnes sztabkowy przewrócony wokół długiej osi ma naprzeciw drugiego magnesu ten sam biegun co wcześniej, więc dalej się przyciąga. W lekcji „Obracasz jeden z nich” obejmuje też obrót np. o ćwierć obrotu. Uczeń, który rozumie zjawisko, może więc wybrać „dalej się przyciągną”.",
+  "evidence": "zsub6c: q: 'Dwa magnesy się przyciągały. Obracasz jeden z nich na drugą stronę. Co się stanie?', answer: 'odepchną się'. Lekcja: check q: 'Dwa magnesy się przyciągały. Obracasz jeden z nich. Co teraz?'. Widżet (widgety.js l. 309) ma przycisk „🔄 Obróć magnes B”, który zamienia miejscami N i S – tylko w lekcji kontekst to podpowiada.",
+  "severity": "ważny",
+  "fix": "Określić ruch: „Odwracasz jeden magnes tak, że jego końce zamieniają się miejscami (N jest teraz tam, gdzie było S)” albo „Obracasz jeden magnes o pół obrotu, końcem do końca”. Tak samo w check lekcji.",
+  "dim": "pytania",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "pytanie b4i6jy (l. 210) – etap 1 i why.options[0]",
+  "problem": "Pytanie ma dwie odpowiedzi, a wynik zależy od nieokreślonych warunków. Gdy zbliżysz biegun S magnesu od północy, wzdłuż igły, igła już stoi w położeniu równowagi i się nie obróci. Wtedy „będzie stała bez ruchu” jest prawdą. Poprawna odpowiedź drugiego etapu „działa przez szczelinę” jest niejasna: igła jest pod szybką, a źródło mówi o odstępie (間を開けても).",
+  "evidence": "q: 'Zbliżasz magnes do igły kompasu, ale jej nie dotykasz. Co zrobi igła?', options: ['poruszy się', 'będzie stała bez ruchu']. why.options[0]: 'siła magnesu działa przez szczelinę'. MEXT s. 36: „磁石を方位磁針に近付けて，その動き方を調べたりして，磁石と物との間を開けても引き付ける力が働いている…”.",
+  "severity": "drobny",
+  "fix": "q: „Przesuwasz magnes dookoła kompasu, z boku, nie dotykając go. Co zrobi igła?” why.options[0]: „siła magnesu działa przez odstęp i szybkę” (dystraktory podobnej długości).",
+  "dim": "pytania",
+  "votes": [
+   false,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "etap why w pytaniach mqhpve, 2eymme, b4i6jy, zsub6c, x1taom, 2zg2q9",
+  "problem": "W drugim etapie poprawną odpowiedź zdradza budowa. (1) Poprawna jest wyraźnie najdłuższa w 3 z 6 pytań (50%), a cel w CLAUDE.md to „zawsze najdłuższa ≤ 40%”. Narzędzie liczy to łącznie dla całego przedmiotu (30%), więc problem działu jest niewidoczny. (2) We wszystkich 3 pytaniach, w których któraś odpowiedź zaczyna się od „siła magnesu…”, jest to właśnie odpowiedź poprawna, a żaden dystraktor tak się nie zaczyna. Uczeń, który to zauważy, trafia bez rozumienia.",
+  "evidence": "Pomiar długości (scratchpad/len.js): mqhpve why [47,43,40], b4i6jy why [35,28,32], x1taom why [33,29,31] – poprawna (indeks 0) najdłuższa. Poprawne: 2eymme 'siła magnesu działa też na odległość', b4i6jy 'siła magnesu działa przez szczelinę', 2zg2q9 'siła magnesu przechodzi przez tekturę'. node tools/jakosc-pytan.js swiat -v: „elektrycznosc pytań 50 · najdłuższa: 0 (0%) · zawsze najdłuższa: 30%”; node tools/sprawdz-dane.js swiat: OK.",
+  "severity": "drobny",
+  "fix": "Skrócić poprawne odpowiedzi why albo wydłużyć dystraktory. Zacząć któryś dystraktor od „siła magnesu…”, np. w 2zg2q9: 'siła magnesu zatrzymuje się na tekturze' (to wtedy mit). Rozważyć w jakosc-pytan.js liczenie etapu why osobno albo dla każdego działu.",
+  "dim": "pytania",
+  "votes": [
+   false,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "pytania 8r8l95 (l. 219), 80j4m8 (l. 217); check w kroku 4 lekcji (l. 77)",
+  "problem": "Poprawna odpowiedź jako jedyna „sprawdza”, a oba dystraktory mają tę samą kategoryczną formę „na pewno…”. Inna budowa wskazuje poprawną odpowiedź. Ten sam wzór („trzeba sprawdzić” = dobrze) powtarza się w quizie i w lekcji, więc uczeń może trafiać, nie znając treści.",
+  "evidence": "8r8l95: ['trzeba to sprawdzić', 'na pewno ten duży', 'na pewno ten mały']; 80j4m8: ['sprawdzę drugim magnesem', 'są na pewno na końcach', 'pierścień nie ma biegunów']; check w lekcji: ['trzeba sprawdzić', 'zawsze duży'].",
+  "severity": "drobny",
+  "fix": "Dodać dystraktor w formie „sprawdzę…”, który jest zły, np. w 8r8l95: „ten, który jest cięższy – zważę oba”, w 80j4m8: „sprawdzę, który kawałek jest cięższy”. Przynajmniej jeden dystraktor bez „na pewno”.",
+  "dim": "pytania",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "pytanie z0r2mi (l. 227)",
+  "problem": "Pytanie i explain przypisują programowi Singapuru gwóźdź („Program Singapuru mówi: … gwóźdź pociera się magnesem”). Jedyny cytat z sylabusa mówi tylko o metodzie pocierania i metodzie elektrycznej, bez przedmiotu. Gwóźdź to nasz przykład, a pytanie podaje go jako fakt o szkołach w Singapurze. Sylabus podaje też drugą metodę (elektryczną), więc „jak dzieci w Singapurze robią magnes” ma w rzeczywistości dwie odpowiedzi. Tu dystraktory są absurdalne, więc w quizie poprawna jest jedna.",
+  "evidence": "q: 'Jak dzieci w Singapurze robią magnes z żelaznego gwoździa?'; explain: 'Program Singapuru mówi: zrób magnes metodą pocierania – gwóźdź pociera się magnesem.' basis i docs/research/reports/Mapa tematów…md l. 47: „Make a magnet by the stroke method and the electrical method” – bez „nail”.",
+  "severity": "drobny",
+  "fix": "q: „Program Singapuru każe zrobić magnes metodą pocierania. Co trzeba zrobić np. z żelaznym gwoździem?”; explain: „…pocierasz go magnesem, zawsze w tę samą stronę (gwóźdź to nasz przykład).”",
+  "dim": "pytania",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "pytanie t2ebns (l. 198) wobec magnesów „z lodówki” w kartach Zrób (l. 53, 88, 103)",
+  "problem": "„Ile biegunów ma KAŻDY magnes?” z odpowiedzią „2” nie jest ścisłe. Dział sam poleca magnesy z lodówki, a giętkie magnesy na lodówkę mają zwykle wiele pasków na przemian N i S. Odpowiedź „4” nie jest więc całkiem fałszywa dla magnesu, który dziecko ma w ręku. Program Anglii mówi tylko „describe magnets as having two poles”.",
+  "evidence": "t2ebns: q: 'Ile biegunów ma każdy magnes?', options: ['2', '1', '4']. Karty Zrób: '1–2 zwykłe magnesy (sztabkowy albo z lodówki)'; theory: 'Używaj zwykłych magnesów (sztabkowych, z lodówki)'.",
+  "severity": "drobny",
+  "fix": "q: „Ile biegunów ma magnes sztabkowy?” albo „Najmniej ile biegunów ma każdy magnes?”, a jako dystraktor zamiast '4' dać np. '0'. Do kart dopisać, że do badania biegunów lepszy jest magnes sztabkowy.",
+  "dim": "pytania",
+  "votes": [
+   false,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "explain pytań x1taom (l. 215) i 6wg3w1 (l. 209) – czytanie 🔊 (tryb young w Świecie, deviceYoung)",
+  "problem": "Autor konsekwentnie zamienia w say/sayOptions „N”, „S” i „cm” na słowa, a w sayExplain robi to w t2ebns i etxtzv. W x1taom i 6wg3w1 explain z tymi symbolami jest czytany na głos bez sayExplain, więc głos przeczyta litery „en”, „es” i skrót „cm”. Niespójne z q/say tego samego pytania.",
+  "evidence": "app.js l. 1582: czytane jest `q.sayExplain ?? explain`. x1taom explain: 'Na drugim końcu magnesu A jest drugi biegun – S. A N i S się przyciągają.' (say pytania mówi „biegun północny”). 6wg3w1 explain: 'Do 3 cm magnes przyciągał, od 4 cm już nie. Jego zasięg to 3 cm…' (say i sayOptions mówią „centymetrów”).",
+  "severity": "drobny",
+  "fix": "Dodać sayExplain: x1taom – „Na drugim końcu magnesu A jest drugi biegun – południowy. A biegun północny i południowy się przyciągają.”; 6wg3w1 – „Do trzech centymetrów magnes przyciągał, od czterech już nie…”.",
+  "dim": "pytania",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "pytanie mqhpve (l. 196) – why.myth: 2",
+  "problem": "Jako „🧠 To częsty mit!” oznaczono przekonanie o sile kontaktowej („przyciąga tylko to, co już dotyka”). To mit udokumentowany, ale nie wyjaśnia, czy folia zostanie przyciągnięta: pytanie nie mówi, czy magnes jej dotyka. Mit, którego dotyczy pytanie (Oak: „All metals and silver coloured objects are magnetic”), wywołuje odpowiedź „tak” w etapie 1, a ta nie ma ani optionExplain, ani oznaczenia mitu.",
+  "evidence": "why.options[2]: 'magnes przyciąga tylko to, co już dotyka', myth: 2. Etap 1: options ['nie','tak'], bez optionExplain. Ustalenia (Oak, magnetic-and-non-magnetic-materials): „All metals and silver coloured objects are magnetic and are attracted to a magnet.”",
+  "severity": "drobny",
+  "fix": "Dodać w etapie 1 optionExplain: ['', 'To częsty mit: nie każdy srebrny metal przyciąga magnes – aluminium nie.']. W why zamiast dystraktora o dotyku dać „każdy srebrny metal przyciąga magnes, ale folia jest za lekka” albo usunąć myth: 2.",
+  "dim": "pytania",
+  "votes": [
+   false,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/lekcje/swiat/elektrycznosc.js",
+  "where": "lekcja 'elektrycznosc/magnesy', krok 6 „🔬 Zrób w domu: kompas z igły” (SVG l. 103, check.explain l. 120); także js/dane/swiat/elektrycznosc.js: pytanie gxzt6r (l. 228) i fiszka „Kompas z igły” (l. 187)",
+  "problem": "Lekcja i quiz każą dziecku samemu pocierać ostrą igłę i wbijać ją w korek. Dorosły nie pojawia się w tych miejscach, a wszystkie polecenia są w 2. osobie. Karta „Zrób” 058jla mówi odwrotnie (robi to dorosły), tak samo zasada z docs/LEKCJE.md. Dziecko 7–9 lat zobaczy w lekcji rysunek „1 potrzyj igłę magnesem” i zrobi to samo, bez otwierania karty.",
+  "evidence": "SVG kroku: `<text x=\"34\" y=\"30\">potrzyj igłę</text><text x=\"34\" y=\"52\">magnesem</text>`; check.explain: 'Igłę pocierasz magnesem, wbijasz w korek i kładziesz na wodzie'; gxzt6r: 'potrzeć igłę magnesem i położyć na korku na wodzie'; fiszka: 'igła potarta magnesem, na korku na wodzie'. Karta 058jla, safety: 'Igła jest ostra – pociera ją i wbija w korek dorosły.' docs/LEKCJE.md l. 160: 'ostre narzędzia – dorosły'.",
+  "severity": "ważny",
+  "fix": "SVG: „1 dorosły pociera igłę magnesem”. check.explain: „Dorosły pociera igłę magnesem i wbija ją w korek, a ty kładziesz korek na wodzie…”. W gxzt6r (explain) i fiszce dopisać: „igłę pociera i wbija w korek dorosły”.",
+  "dim": "bezpieczenstwo",
+  "votes": [
+   false,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/app.js",
+  "where": "activityView() (karty „🛠️ Zrób”) – brak sayButton/bindSay",
+  "problem": "W trybie młodszego ucznia karty doświadczeń i projektów nie mają przycisku 🔊. Zasady bezpieczeństwa („Magnesów nigdy nie bierz do ust”, „Igła jest ostra – … dorosły”), lista rzeczy i kroki są tylko do przeczytania. Dziecko 7-letnie, które słabo czyta, nie usłyszy ostrzeżeń. Ściąga, lekcja, quiz i fiszki mają lektora, karty – nie.",
+  "evidence": "Playwright (swiat.html, localStorage pomoc_mlodszy_swiat=1, body.young = true, 420 px): #/s/elektrycznosc/t/magnesy/zrob/zt9qv0, /hzqwr6, /058jla → liczba `#pane .say` = 0 na każdej karcie. activityView nie wywołuje sayButton ani bindSay. docs/PLAN-swiat.md: działy poziomu 1 – „pola say do lektora”.",
+  "severity": "ważny",
+  "fix": "W activityView, gdy SPEAK: `<p class=\"say-row\">${sayButton('Posłuchaj karty')}…</p>` i bindSay(…, () => [a.title, 'Bezpiecznie.', ...a.safety, a.intro, 'Potrzebujesz.', ...a.needs, 'Krok po kroku.', ...a.steps]). Ostrzeżenia czytać zaraz po tytule.",
+  "dim": "bezpieczenstwo",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "magnesy: theory „Uważaj!” (l. 53), parent.prepare (l. 88), activities 058jla.needs (l. 146) i hzqwr6.needs (l. 123); materials – Oak „Which is the strongest magnet?” (l. 166)",
+  "problem": "Dział zakazuje tylko „małych kulek magnetycznych”. Nie wyklucza małych, silnych magnesów neodymowych (krążki, kostki), a karty pozwalają na każdy „magnes” („2 magnesy”, „magnes”). Do zatrzasku w pudełku rodzic najpewniej sięgnie właśnie po małe krążki. Linkowana dziecku lekcja Oak dopuszcza magnesy neodymowe i wymaga oceny ryzyka. Opis w aplikacji mówi tylko „z dorosłym”. ZPE (film o kompasie) poleca „silny magnes”. Nigdzie nie ma też zasady, żeby trzymać magnesy z dala od młodszego rodzeństwa – a według UOKiK poszkodowane były dzieci w wieku 2–5 lat.",
+  "evidence": "curl strony Oak strongest-magnet (200), metadane lekcji: \"contentguidanceLabel\":\"Risk assessment required - equipment\", \"details\":\"Some magnetic materials chosen for task B may have pointed parts. If using neodymium magnets, follow strict guidance in the additional materials.\" ZPE jak-dziala-kompas: „Potrzebna nam będzie tylko igła do szycia, silny magnes…”. UOKiK aktualnosci.php?news_id=17329: „poszkodowane zostały dzieci w wieku od 2 do 5 lat”. needs: 058jla ['igła do szycia', 'magnes', …], hzqwr6 ['…', '2 magnesy albo magnes i stalowy spinacz', …].",
+  "severity": "ważny",
+  "fix": "W „Uważaj!”, prepare i safety każdej karty dodać: „Duży magnes sztabkowy, podkowa albo magnes z lodówki. Małych mocnych magnesów (neodymowych krążków, kulek) nie używamy. Magnesy chowamy przed młodszym rodzeństwem.” W note lekcji Oak „strongest magnet” napisać, że w lekcji mogą być magnesy neodymowe – do oglądania, nie do powtarzania w domu.",
+  "dim": "bezpieczenstwo",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "theory „Uważaj!” (l. 54); safety kart zt9qv0 (l. 103), hzqwr6 (l. 122), 058jla (l. 145); fiszka „Uważaj!” (l. 191)",
+  "problem": "Ostrzeżenie o połknięciu jest niepełne. (1) Mówi tylko o kilku magnesach („Połknięte magnesy mogą się przyciągnąć”), a każde doświadczenie łączy magnes z małym przedmiotem z żelaza (spinacz, igła). Wzór ostrzeżenia z dokumentu UOKiK wymienia też magnes przywierający do metalowego przedmiotu. (2) Mówi tylko o ustach, choć UOKiK opisuje wkładanie magnesów do ucha i nosa. (3) Karty, które dziecko drukuje i ma w ręku, w ogóle nie mówią, co zrobić po połknięciu („od razu do lekarza” jest tylko w ściądze).",
+  "evidence": "Theory: 'Połknięte magnesy mogą się przyciągnąć w brzuchu i bardzo zaszkodzić – od razu do lekarza.' Raport UOKiK (archiwum.uokik.gov.pl/download.php?plik=26056, przypis 3): „Magnesy przyciągnięte do siebie lub przywierające do przedmiotu metalowego w organizmie człowieka mogą być przyczyną poważnych, a nawet śmiertelnych obrażeń – w przypadku wprowadzenia magnesów do przewodu pokarmowego lub dróg oddechowych należy natychmiast zwrócić się o pomoc lekarską.” UOKiK news_id=17329: „sprawdzają ich działanie np. w uchu czy nosie, a co gorsza – w ustach”. Safety kart: tylko 'Magnesów nie bierz do ust'.",
+  "severity": "ważny",
+  "fix": "Theory i każda karta: „Magnesów, spinaczy ani igły nie wkładaj do ust, nosa ani ucha. Gdy ktoś połknie magnes (też razem z czymś metalowym) – natychmiast do lekarza.”",
+  "dim": "bezpieczenstwo",
+  "votes": [
+   true,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "activities hzqwr6 „Magnetyczny zatrzask do pudełka” – safety (l. 122), needs (l. 123)",
+  "problem": "W projekcie magnesy zostają na stałe w pudełku: są przyklejone taśmą klejącą do kartonu. Zasada „Policz magnesy przed pracą i po niej” tu nie pasuje, bo po pracy magnesy siedzą w zatrzasku. Karta nie mówi, co zrobić z gotowym pudełkiem. Pudełko z magnesem na taśmie łatwo staje się zabawką młodszego rodzeństwa, a magnes może się odkleić.",
+  "evidence": "needs: ['pudełko z kartonu (np. po butach)', '2 magnesy albo magnes i stalowy spinacz', 'taśma klejąca', …]; safety: '…Policz magnesy przed pracą i po niej.' UOKiK (news_id=17329): „poszkodowane zostały dzieci w wieku od 2 do 5 lat”.",
+  "severity": "ważny",
+  "fix": "Dodać do safety: „Magnes przyklej mocno, taśmą dookoła. Pudełko z magnesem trzymaj z dala od małych dzieci, a po zabawie dorosły odkleja magnesy i je chowa.” Rozważyć wersję z magnesem i stalowym spinaczem: jeden magnes zamiast dwóch.",
+  "dim": "bezpieczenstwo",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "magnesy: theory „Przypomnienie” (l. 28–34), infographic.top (l. 60), lekcja krok 1 (js/lekcje/swiat/elektrycznosc.js l. 7–26); pytania r4ht9b, 6wg3w1, 0dgx3v, b4i6jy, zsub6c",
+  "problem": "Dział jest dla 7–9 lat, a podstawę, która mówi o czymś innym, opisuje pole basis: w kl. I–III magnesów nie ma. Dla tych dzieci „Przypomnienie” to nowa wiedza, a podano ją najkrócej, bez objaśnień. Słowo „biegun” nie jest nigdzie objaśnione (pada w 15+ miejscach). Do tego w pytaniach są słowa, których 7–8-latek nie zna, a ściąga ani lekcja ich nie objaśniają: „zasięg”, „szczelina”, „sortownia”, „kierunek siły”. docs/PLAN-swiat.md każe pisać działy poziomu 1 jak dla klas 1–3.",
+  "evidence": "basis: „w edukacji wczesnoszkolnej – starej … i nowej … – magnesów nie ma”. Theory: '<h3>Przypomnienie</h3> … Każdy magnes ma <b>dwa bieguny</b>: N i S.'; grep: brak definicji („biegun to”, „Biegun –”). r4ht9b: 'Porównujesz zasięg dwóch magnesów'; 6wg3w1.explain: 'Jego zasięg to 3 cm'; 0dgx3v: 'W sortowni na taśmie jadą puszki'; b4i6jy.why: 'siła magnesu działa przez szczelinę'; zsub6c.optionExplain: 'zmienia się tylko kierunek siły'.",
+  "severity": "ważny",
+  "fix": "Zamienić „Przypomnienie” na „🇵🇱 To poznasz też w polskiej szkole (kl. 4–6)”. Dodać jedno zdanie: „Biegun to miejsce magnesu, które przyciąga najmocniej (w sztabce – końce).” Słowa zamienić na proste: „z jak daleka przyciąga”, „przez wolne miejsce / przez powietrze”, „miejsce, gdzie sortuje się śmieci”, „zamiast przyciągać – odpycha”.",
+  "dim": "bezpieczenstwo",
+  "votes": [
+   true,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/app.js",
+  "where": "subject() → „📝 Sprawdzian z przedmiotu” (#/s/elektrycznosc/egzamin) w ścieżce swiat",
+  "problem": "Sprawdzian przedmiotu „Elektryczność i sterowanie” losuje pytania naraz z działu Magnesy (poziom 1, 7–9 lat) i Czujniki (poziom 3, 12–15 lat, kod w Pythonie). Dziecko 7-letnie, które przerobiło Magnesy i kliknie sprawdzian na stronie przedmiotu, dostanie głównie pytania o sterowniki, `if temp < 24:` i wiek japońskich gimnazjalistów. Przy rozdziale działów według poziomów i wieku sprawdzian przedmiotu nie ma sensu.",
+  "evidence": "Playwright, swiat.html#/s/elektrycznosc/egzamin, 15 pytań: 10 × „Czujniki i sterowanie” (np. 'Grzałka w akwarium: if temp < 24: grzałka_wlacz()', 'W jakim wieku są japońscy uczniowie gimnazjum…'), 5 × „Magnesy”. Strona przedmiotu: 'Magnesy 🌱 Poziom 1 – na start · 7–9 lat … Czujniki i sterowanie 🌳 Poziom 3 – trudniejszy · 12–15 lat'.",
+  "severity": "ważny",
+  "fix": "W ścieżce swiat (działy z level) ukryć sprawdzian przedmiotu albo losować pytania tylko z działów jednego poziomu (np. sprawdzian per poziom: 🌱 / 🌿 / 🌳). Najprościej: flaga ścieżki `noSubjectTest` dla swiat.",
+  "dim": "bezpieczenstwo",
+  "votes": [
+   false,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/sciezki.js",
+  "where": "ścieżka swiat: deviceYoung: true, brak speak; js/app.js SPEAK (l. 37) i answer(): `if (ok && q.why && !YOUNG) return askWhy(q)`",
+  "problem": "Dział Magnesy jest oznaczony 7–9 lat, ale domyślnie (tryb młodszego ucznia wyłączony) nie ma w nim lektora. Pokazuje się wtedy też drugi etap „Dlaczego?” z abstrakcyjnymi odpowiedziami („zmieniło się ułożenie biegunów”). Rodzic musi sam znaleźć przełącznik 🧸 na stronie głównej ścieżki. Dział nie podpowiada, że warto go włączyć. Lista kart „Zrób” bez tego trybu nie mówi „Poproś o pomoc dorosłego”.",
+  "evidence": "Playwright bez localStorage: #/s/elektrycznosc/t/magnesy/teoria – liczba .say = 0; #/…/zrob: 'Zrób coś naprawdę – w domu, z prostych rzeczy. Kartę możesz wydrukować.' (w trybie młodszego: 'Poproś o pomoc dorosłego.'). Strona główna: '🧸 Tryb dla młodszego ucznia: wyłączony'. Dział: level: 1, age: [7, 9].",
+  "severity": "ważny",
+  "fix": "Dla działów level 1 (albo age[0] ≤ 8) pokazywać 🔊 niezależnie od trybu (np. SPEAK || t.level === 1) albo nad działem dać podpowiedź „Dla dzieci 7–9 lat włącz 🧸 tryb młodszego ucznia (lektor)”. Tekst „Poproś o pomoc dorosłego” na liście kart pokazywać zawsze, gdy któraś karta ma adult: true.",
+  "dim": "bezpieczenstwo",
+  "votes": [
+   false,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "materials[0] „Co to jest magnes? – film o biegunach” (zpe.gov.pl/a/co-to-jest-magnes/D7sD8pXPF, l. 161)",
+  "problem": "Strona dla dziecka nie zawiera samego filmu, tylko całą lekcję ZPE dla klas IV–VIII z instrukcjami doświadczeń bez ostrzeżeń. W „Doświadczeniu 2” jest nóż („nóż ze stali nierdzewnej”), w „Doświadczeniu 3” sypanie opiłków żelaza na szybkę, jest też rozdział „Pole magnetyczne”, którego ramka dla rodzica każe nie wprowadzać. Opis w aplikacji („Niżej film z opiłkami żelaza”) tego nie mówi i nie ostrzega przed powtarzaniem doświadczeń.",
+  "evidence": "curl (200), tekst strony: 'Szkoła podstawowa IV-VIII', 'Doświadczenie 2 … magnes na lodówkę, kawałek ceraty, łyżka aluminiowa, nóż ze stali nierdzewnej, gwóźdź', 'Doświadczenie 3 … Nasyp opiłki żelaza na szybkę', '4. Pole magnetyczne', 'Końce magnesów nazywamy biegunami.' Ramka parent.avoid: 'Linii pola magnetycznego nie wprowadzaj'.",
+  "severity": "drobny",
+  "fix": "W note: „Obejrzyj tylko pierwszy film (część 2 – bieguny). Doświadczeń z tej strony (nóż, opiłki) nie rób sam – to materiał dla starszych klas.” Ewentualnie przenieść link do forParent.",
+  "dim": "bezpieczenstwo",
+  "votes": [
+   false,
+   true
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "materials „What is a magnet? – lekcja ZPE po angielsku” (zpe.gov.pl/a/what-is-a-magnet/D11clcRTO, l. 167)",
+  "problem": "To lekcja fizyki dla starszych klas, w całości po angielsku. Ma pojęcia „magnetic field” i „hypothesis”, a w ćwiczeniu jest przepiłowywanie magnesu. Dla 7–9-latka jest za trudna i łamie radę z ramki („Linii pola nie wprowadzaj”). W aplikacji opisano ją tylko jako „słowa poles, north, south, attract” – bez dopisku „z dorosłym”, który mają pozostałe linki po angielsku.",
+  "evidence": "curl (200): 'Szkoła podstawowa IV-VIII', 'Fizyka'; 'write down the research question and the hypothesis'; 'Magnetic field' (wielokrotnie); 'After sawing the magnet in half…'; 'The ends of magnets are called poles'. note: 'Dla chętnych: tekst i nagranie po angielsku – słowa poles, north, south, attract.'",
+  "severity": "drobny",
+  "fix": "Usunąć z materiałów dla dziecka albo przenieść do forParent z opisem „fizyka, starsze klasy – zawiera pole magnetyczne”.",
+  "dim": "bezpieczenstwo",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "materials „Jak działa kompas? – i jak zrobić własny” (zpe.gov.pl/a/jak-dziala-kompas/DiTVdtwnf, l. 162)",
+  "problem": "Film instruktażowy pokazuje, jak jedna osoba sama trzyma ostrą igłę i przebija nią korek. Opis w aplikacji zachęca: „krok po kroku” i nie mówi, że w domu robi to dorosły, tak jak w karcie 058jla. Strona poleca też „silny magnes”.",
+  "evidence": "curl (200): 'Aktor bierze do ręki igłę i magnes, opiera ostry koniec igły o magnes. Aktor przebija korek lub kostkę styropianu.'; 'Potrzebna nam będzie tylko igła do szycia, silny magnes, korek lub styropian i naczynie z wodą.' note: 'kompas z igły, korka i miski z wodą – krok po kroku.'",
+  "severity": "drobny",
+  "fix": "Dopisać do note: „W domu igłę pociera i wbija w korek dorosły – zobacz kartę 🛠️ Zrób. Wystarczy zwykły magnes sztabkowy.”",
+  "dim": "bezpieczenstwo",
+  "votes": [
+   true,
+   true
+  ],
+  "conf": true
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "theory 🌍 7 (l. 48); lekcja krok 6 (js/lekcje/swiat/elektrycznosc.js l. 117); pytanie vis1nn (l. 232)",
+  "problem": "Ostrzeżenie o elektromagnesie jest dwuznaczne: „nie buduj go sam” brzmi tak, jakby z dorosłym było można. Nie podaje powodu (drut podłączony do baterii się grzeje). „Tylko oglądamy” nie wskazuje żadnego materiału do obejrzenia, a „Więcej w dziale o obwodach” odsyła do działu, którego nie ma.",
+  "evidence": "Theory: 'Tylko oglądamy – nie buduj go sam w domu. Więcej w dziale o obwodach.'; vis1nn.explain: 'ty na razie tylko oglądasz, nie buduj go sam.' W materials brak linku o elektromagnesie; docs/PLAN-swiat.md: '[ ] Obwody szeregowe i równoległe, elektromagnes' (niezrobiony).",
+  "severity": "drobny",
+  "fix": "„Elektromagnesu nie budujemy w domu – drut podłączony do baterii mocno się grzeje. Poznasz go w dziale o obwodach (wkrótce).” Usunąć „Tylko oglądamy”, dopóki nie ma materiału do obejrzenia.",
+  "dim": "bezpieczenstwo",
+  "votes": [
+   false,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "pytanie 902bvu (l. 229)",
+  "problem": "Pytanie zaczyna się od polecenia „Przecinasz magnes na pół”, jakby dziecko miało to zrobić samo. Magnes z lodówki (polecany w dziale) da się przeciąć nożyczkami, a powstają wtedy małe kawałki magnesu, łatwe do połknięcia. ZPE przy tym samym pomyśle mówi o przepiłowaniu, czyli o czynności dla dorosłego.",
+  "evidence": "q: 'Przecinasz magnes na pół. Co dostajesz?'; theory: 'Używaj zwykłych magnesów (sztabkowych, z lodówki)'; ZPE D7sD8pXPF, ćwiczenie 2: 'Magnes może posiadać jeden biegun, gdy przepiłujemy go na pół.'",
+  "severity": "drobny",
+  "fix": "„Wyobraź sobie, że magnes przecięto na pół (tego nie robimy w domu). Co powstanie?” – tak samo w say.",
+  "dim": "bezpieczenstwo",
+  "votes": [
+   false,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/dane/swiat/elektrycznosc.js",
+  "where": "activities zt9qv0, krok 3 (l. 108)",
+  "problem": "Dla 7-latka polecenie jest dwuznaczne. W „Potem połóż go na 5 cm” zaimek „go” może oznaczać magnes albo spinacz (oba rodzaju męskiego). Jeśli dziecko przesunie magnes zamiast spinacza, pomiar się zepsuje.",
+  "evidence": "'🔬 Połóż magnes przy początku linijki, a spinacz na 6 cm. Sprawdź, czy przyskoczy. Potem połóż go na 5 cm, 4 cm… aż do 1 cm.'",
+  "severity": "drobny",
+  "fix": "„…Potem połóż spinacz na 5 cm, 4 cm… aż do 1 cm. Magnes cały czas leży w tym samym miejscu.”",
+  "dim": "bezpieczenstwo",
+  "votes": [
+   false,
+   false
+  ],
+  "conf": false
+ },
+ {
+  "file": "js/lekcje/widgety.js",
+  "where": "magnesy() – div .readout; także js/dane/swiat/elektrycznosc.js pytanie x1taom (explain, l. 215) i lekcja krok 1/5 (tekst „N i S”)",
+  "problem": "Lektor nie pomaga tam, gdzie są symbole biegunów. (1) Wynik widżetu („Biegun S magnesu A i biegun N magnesu B…”) nie ma przycisku 🔊 i nie jest czytany, więc dziecko, które słabo czyta, nie dowie się, dlaczego wyszło inaczej. (2) x1taom nie ma sayExplain, choć t2ebns i etxtzv go mają: lektor przeczyta „…drugi biegun – es. A en i es się przyciągają”. (3) Kroki lekcji 1 i 5 czytają „dwa bieguny N i S”, „Każdy magnes ma N i S” jako litery.",
+  "evidence": "Playwright (tryb młodszego, krok 3 lekcji): `#widget .say` = 0; readout po kliknięciu: '🤔 Wyszło inaczej – to też odkrycie! Biegun S magnesu A i biegun N magnesu B to różne bieguny – przyciągają się.' x1taom.explain: 'Na drugim końcu magnesu A jest drugi biegun – S. A N i S się przyciągają.' (brak sayExplain). Krok 5 remember: 'Każdy magnes ma N i S – ale nie zawsze na końcach.'",
+  "severity": "drobny",
+  "fix": "W widżecie: po wyniku dodać przycisk 🔊 (albo eksportować tekst do bindSay kroku) i czytać „biegun południowy… północny”. W x1taom dodać sayExplain: „Na drugim końcu magnesu A jest drugi biegun – południowy. A północny i południowy się przyciągają.” W tekstach lekcji pisać „N (północny) i S (południowy)”.",
+  "dim": "bezpieczenstwo",
+  "votes": [
+   false,
+   false
+  ],
+  "conf": false
+ }
+]

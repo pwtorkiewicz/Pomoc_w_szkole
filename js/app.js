@@ -627,6 +627,7 @@
     pane.innerHTML = `<article class="activity">
       <p class="muted">${ACT_KINDS[a.kind]}${a.time ? ` · ⏱️ ${esc(a.time)}` : ''}${a.adult ? ' · 🧑‍👧 z dorosłym' : ''}</p>
       <h2>${esc(a.title)}</h2>
+      ${SPEAK ? `<p class="say-row no-print">${sayButton('Posłuchaj karty')} <span class="muted">Posłuchaj karty</span></p>` : ''}
       ${a.intro ? `<p>${esc(a.intro)}</p>` : ''}
       <div class="safety"><b>⚠️ Bezpiecznie</b><ul>${a.safety.map((x) => `<li>${esc(x)}</li>`).join('')}</ul></div>
       ${list('🧺 Potrzebujesz', a.needs)}
@@ -646,11 +647,13 @@
       <div class="row no-print"><button class="btn" id="print">🖨️ Drukuj kartę</button>${back}</div>
     </article>`;
     pane.querySelector('#print').onclick = () => window.print();
+    // lektor (tryb młodszego ucznia): ostrzeżenia czytane zaraz po tytule
+    bindSay(pane.querySelector('.say-row'), () => [a.title, 'Bezpiecznie.', ...a.safety, a.intro || '', ...(a.needs && a.needs.length ? ['Potrzebujesz.', ...a.needs] : []), 'Krok po kroku.', ...a.steps]);
     pane.querySelector('#save').onclick = () => {
       const n = a.kind === 'projekt' ? pane.querySelectorAll('.crit input:checked').length : 1;
+      // jak zadanie otwarte: tylko tasks/tasksAt – karta nie jest lekcją (nie dopisujemy 'l' do dziennika)
       state.tasks[a.key] = n;
       state.tasksAt[a.key] = Date.now();
-      log(a.key.split('/')[0], 'l');
       save();
       pane.querySelector('#save').outerHTML = `<p class="feedback ok">${n === pts ? praise() : 'Zapisane! Popraw projekt i sprawdź jeszcze raz.'}</p>`;
     };
@@ -1503,6 +1506,7 @@
       buttons.forEach((b) => (b.onclick = () => answer(+b.dataset.k)));
       bindSay(pane.querySelector('.qline'), () => questionSpeech(q, order), true);
       keyHandler = (e) => {
+        if (e.repeat) return;
         const n = LETTERS.indexOf(e.key.toUpperCase());
         const d = parseInt(e.key, 10) - 1;
         const idx = n >= 0 ? n : d;
@@ -1547,7 +1551,10 @@
         finalize(q, k === w.answer, note, '#fb2', true);
       }));
       bindSay(pane.querySelector('.why .qline'), () => ['Dobrze przewidziane! A dlaczego tak jest?', ...order.map((k, n) => `${LETTERS[n]}: ${w.options[k]}`)], true);
+      // klawisz z etapu 1 nie może od razu odpowiedzieć na etap 2 (przytrzymanie, podwójne naciśnięcie)
+      const shownAt = Date.now();
       keyHandler = (e) => {
+        if (e.repeat || Date.now() - shownAt < 400) return;
         const n = LETTERS.indexOf(e.key.toUpperCase());
         const d = parseInt(e.key, 10) - 1;
         const idx = n >= 0 ? n : d;

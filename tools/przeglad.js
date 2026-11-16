@@ -51,7 +51,7 @@ const dane = require('./dane');
       page.on('dialog', (d) => d.accept());
       await page.goto(url);
       const data = await page.evaluate(() => ({
-        subjects: window.SUBJECTS.map((s) => ({ id: s.id, link: s.link, topics: s.topics.map((t) => t.id), infos: s.topics.filter((t) => t.infographic).map((t) => t.id), mats: s.topics.filter((t) => t.materials && t.materials.length).map((t) => t.id), acts: Object.fromEntries(s.topics.filter((t) => t.activities && t.activities.length).map((t) => [t.id, t.activities.map((x) => x.id)])) })),
+        subjects: window.SUBJECTS.map((s) => ({ id: s.id, link: s.link, topics: s.topics.map((t) => t.id), infos: s.topics.filter((t) => t.infographic).map((t) => t.id), mats: s.topics.filter((t) => t.materials && t.materials.length).map((t) => t.id), acts: Object.fromEntries(s.topics.filter((t) => t.activities && t.activities.length).map((t) => [t.id, t.activities.map((x) => x.id)])), whys: s.topics.filter((t) => t.questions.some((q) => q.why)).map((t) => t.id) })),
         sets: (window.EXERCISES || []).map((e) => ({ subject: e.subject, mode: e.mode, id: e.id })),
       }));
       // przyciski 🔊 (ścieżki z czytaniem na głos): kliknij każdy widoczny – sprawdza, czy nie ma błędów JS
@@ -64,6 +64,35 @@ const dane = require('./dane');
         views++;
         const over = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
         if (over > 1) problems.push(`${width}px ${scheme} ${track.id} ${hash}: strona przewija się w poziomie (${over}px)`);
+      };
+      // przejście quizu z pytaniami dwuetapowymi (young – tryb młodszego ucznia: etap 2 nie może się pokazać)
+      const whyRun = async (pg, sid, tid, young) => {
+        const label = `${width}px ${scheme} ${track.id} #/s/${sid}/t/${tid}/quiz${young ? ' (tryb młodszego ucznia)' : ''}`;
+        let sawWhy = false;
+        // świeży quiz (ten sam adres nie przeładowuje widoku)
+        await pg.goto(url + '#/');
+        await pg.goto(url + `#/s/${sid}/t/${tid}/quiz`);
+        await pg.waitForTimeout(30);
+        for (let k = 0; k < 80; k++) {
+          if (await pg.$('.result')) break;
+          const qtext = await pg.$eval('h2.question', (h) => h.textContent);
+          const ans = await pg.evaluate(([a, b, q]) => {
+            const qq = window.SUBJECTS.find((x) => x.id === a).topics.find((x) => x.id === b).questions.find((x) => x.q === q);
+            return qq ? { answer: qq.answer, why: qq.why ? qq.why.answer : null } : null;
+          }, [sid, tid, qtext]);
+          if (!ans) { problems.push(`${label}: nie znaleziono pytania „${qtext.slice(0, 40)}”`); break; }
+          await pg.click(`#q1 .opt[data-k="${ans.answer}"]`);
+          const whyBtns = await pg.$$('.why .opt');
+          if (ans.why != null && !young) {
+            if (!whyBtns.length) { problems.push(`${label}: brak etapu „Dlaczego?” po dobrej odpowiedzi`); break; }
+            sawWhy = true;
+            await (await pg.$(`.why .opt:not([data-k="${ans.why}"])`)).click();
+            if (!(await pg.$('#fb2 .feedback.bad'))) problems.push(`${label}: zła odpowiedź w etapie 2 nie dała informacji zwrotnej`);
+          } else if (whyBtns.length) problems.push(`${label}: etap „Dlaczego?” w trybie młodszego ucznia`);
+          await pg.click('#next');
+        }
+        if (!(await pg.$('.result'))) problems.push(`${label}: quiz nie doszedł do podsumowania`);
+        else if (sawWhy && !(await pg.$('.mistakes'))) problems.push(`${label}: brak listy „Do zapamiętania” po błędzie w etapie 2`);
       };
       await visit('#/');
       await visit('#/zrodla');
@@ -98,6 +127,8 @@ const dane = require('./dane');
           // ramka „👪 Dla rodzica” (ścieżki z parentBox) – rozwiń, żeby sprawdzić szerokość
           await visit(`#/s/${s.id}/t/${t}/teoria`, async () => { const d = await page.$('.parent-box > summary'); if (d) await d.click(); });
           await visit(`#/s/${s.id}/t/${t}/quiz`, async () => { await clickSay(); await page.click('.opt'); await clickSay(); });
+          // pytania „Przewiduj i wyjaśnij”: cały quiz – dobra odpowiedź w etapie 1, zła w etapie 2 „Dlaczego?”, potem podsumowanie
+          if (s.whys.includes(t)) await visit(`#/s/${s.id}/t/${t}/quiz`, () => whyRun(page, s.id, t, false));
         }
         const modes = [...new Set(data.sets.filter((e) => e.subject === s.id).map((e) => e.mode))];
         for (const m of modes) await visit(`#/s/${s.id}/cw/${m}`);
@@ -120,6 +151,33 @@ const dane = require('./dane');
     }
     await visit('#/powtorka');
     await page.close();
+    // ścieżki z trybem młodszego ucznia włączanym na urządzeniu (deviceYoung): krótki przebieg z włączonym trybem
+    if (track.deviceYoung) {
+      const yp = await browser.newPage({ viewport: { width, height: 900 }, colorScheme: scheme });
+      yp.on('pageerror', (e) => problems.push(`${width}px ${scheme} ${track.id} (tryb młodszego ucznia) ${where.v}: błąd JS: ${e.message}`));
+      await yp.addInitScript((k) => { try { localStorage.setItem(k, '1'); } catch (e) { /* brak dostępu */ } }, `pomoc_mlodszy_${track.id}`);
+      const yvisit = async (hash, act) => {
+        where.v = hash;
+        await yp.goto(url + hash);
+        await yp.waitForTimeout(30);
+        if (act) await act();
+        for (const b of await yp.$$('.say')) if (await b.isVisible()) await b.click();
+        views++;
+        const over = await yp.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+        if (over > 1) problems.push(`${width}px ${scheme} ${track.id} (tryb młodszego ucznia) ${hash}: strona przewija się w poziomie (${over}px)`);
+      };
+      await yvisit('#/');
+      for (const s of data.subjects.filter((x) => !x.link)) {
+        for (const t of s.topics) {
+          await yvisit(`#/s/${s.id}/t/${t}/lekcja`);
+          await yvisit(`#/s/${s.id}/t/${t}/teoria`, async () => { const d = await yp.$('.parent-box > summary'); if (d) await d.click(); });
+          for (const a of s.acts[t] || []) await yvisit(`#/s/${s.id}/t/${t}/zrob/${a}`);
+          if (s.whys.includes(t)) await yvisit(`#/s/${s.id}/t/${t}/quiz`, () => whyRun(yp, s.id, t, true));
+          else await yvisit(`#/s/${s.id}/t/${t}/quiz`, async () => { await yp.click('.opt'); });
+        }
+      }
+      await yp.close();
+    }
     }
   }
   await browser.close();

@@ -22,7 +22,7 @@ window.LESSONS['elektrycznosc/magnesy'] = [
       <g class="tx-s" text-anchor="middle"><text x="115" y="198">różne – przyciągają</text><text x="312" y="198">takie same – odpychają</text></g>
     </svg>`,
     text: `<p>Te rzeczy poznasz też na przyrodzie w <b>klasach 4–6</b>: magnes przyciąga <b>żelazo i stal</b> (ale nie aluminium i miedź), ma <b>dwa bieguny</b> N i S, a magnes, który może się swobodnie obracać, staje <b>północ–południe</b>.</p>
-      <p>Dalej – to, czego uczą dzieci w innych krajach, a w polskiej szkole tego nie ma.</p>`,
+      <p>Dalej – to, czego uczą dzieci w innych krajach, a polska podstawa programowa tego nie wymaga.</p>`,
     remember: 'Żelazo i stal – tak. Różne bieguny się przyciągają, takie same odpychają.',
     check: { q: 'Folia aluminiowa to metal. Czy magnes ją przyciągnie?', options: ['nie', 'tak'], answer: 0, explain: 'Nie. Magnes przyciąga żelazo i stal, a aluminium – nie.' },
   },
@@ -42,7 +42,7 @@ window.LESSONS['elektrycznosc/magnesy'] = [
         <path d="M121,192 H141" marker-end="url(#a-swe-m1)"/><path d="M256,192 H276" marker-end="url(#a-swe-m1)"/></g>
     </svg>`,
     text: `<p>W Anglii, Japonii i Singapurze dzieci w wieku 7–9 lat badają <b>magnesy</b>.</p>
-      <p>W Japonii lekcja przyrody to praca <b>badacza</b>: zauważ, zapytaj, przewiduj, sprawdź, zapisz i wyciągnij wniosek. Spróbuj tak samo!</p>`,
+      <p>W Japonii lekcja przyrody to praca <b>badacza</b> – w skrócie: zauważ, zapytaj, przewiduj, sprawdź, zapisz i wyciągnij wniosek. (Japończycy przed sprawdzaniem jeszcze planują, jak to zrobić.) Spróbuj tak samo!</p>`,
     remember: 'Badacz: zauważ → zapytaj → przewiduj → sprawdź → zapisz → wniosek.',
     hook: 'Badacz najpierw zgaduje, a potem sprawdza – i nie wstydzi się pomyłki.',
   },
@@ -50,10 +50,10 @@ window.LESSONS['elektrycznosc/magnesy'] = [
     title: '🌍 Laboratorium: odległość i ułożenie',
     widget: { type: 'magnesy', d: 2, zasieg: 3 },
     text: `<p>Ustaw magnes B, <b>najpierw przewidź</b>, a potem sprawdź. Zmieniaj odległość i obracaj magnes B.</p>
-      <p>Japonia: siła magnesu zależy od <b>odległości</b> – im dalej, tym słabiej. USA: to, czy magnesy się przyciągną, czy odepchną, zależy od ich <b>ułożenia</b>.</p>`,
+      <p>Japonia: siła magnesu zależy od <b>odległości</b> – im dalej, tym słabiej. W części stanów USA (standardy NGSS): to, czy magnesy się przyciągną, czy odepchną, zależy od ich <b>ułożenia</b>.</p>`,
     remember: 'Im dalej, tym słabiej. Obrócisz magnes – przyciąganie zmienia się w odpychanie.',
     hook: 'Jak zapach ciasta: im bliżej kuchni, tym mocniej czujesz.',
-    check: { q: 'Dwa magnesy się przyciągały. Obracasz jeden z nich. Co teraz?', options: ['odepchną się', 'dalej się przyciągną'], answer: 0, explain: 'Po obróceniu naprzeciw siebie są takie same bieguny – odpychają się.' },
+    check: { q: 'Dwa magnesy się przyciągały. Odwracasz magnes B tak, że jego końce zamieniają się miejscami. Co teraz?', options: ['odepchną się', 'dalej się przyciągną'], answer: 0, explain: 'Po odwróceniu naprzeciw siebie są takie same bieguny – odpychają się.' },
   },
   {
     title: '🌍 Większy nie znaczy silniejszy',
@@ -70,11 +70,11 @@ window.LESSONS['elektrycznosc/magnesy'] = [
       <path d="M200,196 H224" class="ln sw" marker-end="url(#a-swe-m4b)"/>
       <g class="tx-s"><text x="40" y="160">tektura</text><text x="40" y="224">magnes pod spodem</text></g>
     </svg>`,
-    text: `<p>Anglia: po <b>wielkości</b> ani kształcie nie poznasz, który magnes jest silniejszy. Sprawdź <b>uczciwie</b>: zmieniasz tylko magnes, a spinacz, linijka i sposób pomiaru zostają te same.</p>
+    text: `<p>Lekcje z Anglii (Oak): po <b>wielkości</b> ani kształcie nie poznasz, który magnes jest silniejszy. Sprawdź <b>uczciwie</b>: zmieniasz tylko magnes, a spinacz, linijka i sposób pomiaru zostają te same.</p>
       <p>Magnes działa też <b>przez papier, cienką tekturę, plastik i szkło</b>. Możesz prowadzić spinacz po tekturze magnesem schowanym pod spodem.</p>`,
     remember: 'Siłę magnesu sprawdzasz, a nie zgadujesz po wielkości.',
     hook: 'Uczciwy test jak wyścig: wszyscy biegną tę samą trasę – zmienia się tylko biegacz.',
-    check: { q: 'Duży magnes i mały magnes. Który jest silniejszy?', options: ['trzeba sprawdzić', 'zawsze duży'], answer: 0, explain: 'Po wielkości nie poznasz siły magnesu – sprawdź, z jak daleka przyciąga spinacz.' },
+    check: { q: 'Jak poznać, który z dwóch magnesów jest silniejszy?', options: ['sprawdzić, z jak daleka przyciąga spinacz', 'wybrać ten, który jest większy'], answer: 0, explain: 'Po wielkości nie poznasz siły magnesu – sprawdź, z jak daleka przyciąga spinacz.' },
   },
   {
     title: '🌍 Magnesy mają różne kształty',
@@ -90,7 +90,7 @@ window.LESSONS['elektrycznosc/magnesy'] = [
       <g class="tx-s" text-anchor="middle"><text x="52" y="140">sztabkowy</text><text x="150" y="140">podkowa</text><text x="250" y="140">pierścieniowy</text><text x="345" y="140">guzikowy</text></g>
       <text x="200" y="180" text-anchor="middle" class="tx">Gdzie bieguny? Sprawdź drugim magnesem!</text>
     </svg>`,
-    text: `<p>Anglia: dzieci poznają magnesy <b>sztabkowe, pierścieniowe, guzikowe i podkowy</b>. Każdy ma dwa bieguny, ale <b>nie każdy ma je na końcach</b>.</p>
+    text: `<p>Anglia (program Year 3): dzieci poznają magnesy <b>sztabkowe, pierścieniowe, guzikowe i podkowy</b>. Każdy ma dwa bieguny, ale <b>nie każdy ma je na końcach</b>.</p>
       <p>Gdzie są? Zbliżaj drugi magnes: tam, gdzie się przyciągają albo odpychają, jest biegun.</p>`,
     remember: 'Każdy magnes ma N i S – ale nie zawsze na końcach.',
     hook: 'Biegun to jak drzwi do domu: każdy dom ma drzwi, ale nie zawsze z przodu.',
