@@ -282,6 +282,8 @@
     decoder.innerHTML = String(html)
       .replace(/<svg[\s\S]*?<\/svg>/gi, ' ')
       .replace(/<\/(p|li|h[1-6]|div|tr|td|th|dt|dd)>|<br\s*\/?>/gi, '. ')
+      // zamykający znacznik wierszowy bez spacji: „<b>2</b>: 4” to nie „2 : 4” (dzielenie)
+      .replace(/<\/[^>]+>/g, '')
       .replace(/<[^>]+>/g, ' ');
     return decoder.value
       .replace(EMOJI, ' ')
