@@ -410,3 +410,27 @@ details.report pre { white-space: pre-wrap; word-break: break-word; font: inheri
 .vis .cz-robot { fill: #ffb547; stroke: #5a3a00; }
 .vis .cz-trasa { stroke: #1f9d55; } .vis .cz-blad { stroke: #e0603a; }
 .widget .czset .controls span, .widget .czguess span { font-weight: 600; }
+
+/* widżet „polsumator” (Świat, Dodawanie dwójkowe i półsumator): przewód z sygnałem 1, bity jako przyciski, bieżący wiersz tabeli */
+.vis .ps-on { stroke: var(--c2s); }
+.widget .psbits { gap: 6px 8px; }
+.widget .psbits .btn { margin: 0; min-width: 2.6em; padding: 9px 12px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.widget .psbits .btn[aria-pressed="true"] { background: var(--c4); border-color: var(--c4s); }
+.widget .psset .controls span, .widget .psguess span { font-weight: 600; }
+.widget .mlog .worksheet tr.on td { background: var(--c4); }
+
+/* widżet soroban (Świat, Soroban – japońskie liczydło): klikane koraliki, pręt z fokusem klawiatury */
+.vis .sb-kor { cursor: pointer; }
+.vis .sb-fokus { fill: none; stroke: transparent; stroke-width: 3; }
+.vis .sb-pret { outline: none; }
+.vis .sb-pret:focus .sb-fokus { stroke: var(--c4s); }
+.widget .sb-zad { margin: 0 0 6px; }
+.widget .sb-out .muted { font-weight: 400; font-size: .95rem; }
+
+/* widżet „obwody” (Świat, Obwody szeregowe i równoległe, elektromagnes): przewody z prądem, świecąca żarówka, węzły; gruba kreska ogniwa (minus) w symbolach – także w lekcji i pytaniach */
+.vis .ob-on { stroke: var(--c3s); }
+.vis .ob-jasna { fill: var(--c4s); }
+.vis .ob-slaba { fill: var(--c4s); fill-opacity: .4; }
+.vis .ob-wezel { fill: var(--text); }
+.vis .ob-gruba { stroke-width: 6; }
+.widget .obset .controls span, .widget .obguess span { font-weight: 600; }

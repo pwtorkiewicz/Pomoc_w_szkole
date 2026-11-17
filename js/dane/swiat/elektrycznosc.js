@@ -237,6 +237,305 @@
       },
       // ------------------------------------------------------------------
       {
+        id: 'obwody',
+        name: 'Obwody szeregowe i równoległe, elektromagnes',
+        level: 2,
+        age: [9, 12],
+        requires: ['elektrycznosc/magnesy'],
+        where: 'Japonia – przyroda w 4. klasie (9–10 lat: baterie szeregowo i równolegle) i w 5. klasie (10–11 lat: elektromagnes); Singapur – science, Primary 5 (10–11 lat: żarówki szeregowo i równolegle, schematy); Anglia – science, Year 4 (8–9 lat) i Year 6 (10–11 lat) – tylko obwody szeregowe; Korea – przyroda w kl. 5–6 (baterie szeregowo, elektromagnes); Szwajcaria – Lehrplan 21 (wspólny program kantonów niemiecko- i wielojęzycznych; sprawdzona wersja Zurychu), 2. cykl (kl. 3–6)',
+        basis: `Poza polską podstawą programową – ścieżka „Świat” (decyzja rodzica). Dział według standardu „różnicy” (decyzja rodzica 14.11.2026): wspólne z polską szkołą tylko jako przypomnienie z etykietą klasy, rdzeń – to, czego polska podstawa nie wymaga. Research 16.11.2026 (cytaty, strony i tłumaczenia: docs/research/research_notes/Obwody i elektromagnes – standard różnicy/zrodla.md); tłumaczenia – nasze. POLSKA (tekst podstaw, eli.gov.pl, przeszukany pełnotekstowo): Dz.U. 2024 poz. 996 (w 2026/2027 kl. II, III i V–VIII) – edukacja wczesnoszkolna: przedmiot „z wykorzystaniem prądu elektrycznego: lampion, dekoracja świąteczna” (s. 42); technika kl. IV–VI, III.1b – rozpoznaje elementy elektrotechniczne (źródła prądu, żarówki, wyłączniki…; s. 207); fizyka kl. VII–VIII – przewodniki i izolatory (VI.3), „rysuje schematy obwodów elektrycznych składających się z jednego źródła energii, jednego odbiornika, mierników i wyłączników; posługuje się symbolami graficznymi tych elementów” (VI.13, s. 178), obwód według schematu (VI.15d), elektromagnes (VII.5) – wymaganie fakultatywne, o realizacji decyduje nauczyciel (przypis 8, s. 174). Dz.U. 2026 poz. 378 (w 2026/2027 kl. I i IV): wychowanie przedszkolne – „buduje obwody elektryczne z użyciem żarówki, brzęczyka i silnika” (s. 13); przyroda kl. IV–VI – przewodnictwo elektryczne metali i niemetali (dz. 3 wym. 7, s. 184); zajęcia praktyczno-techniczne kl. IV–VI – „przedmiot wyposażony w proste obwody elektryczne (np. lampkę, sygnalizator, latarkę, model robota sprzątającego)” (s. 267); fizyka kl. VII–VIII, dz. 4 – buduje obwody, rysuje schematy z miernikami (s. 232). W tekstach dla szkoły podstawowej nie ma łączenia szeregowego ani równoległego (baterii i odbiorników) – „ogniwa połączone szeregowo” są tylko w podstawie branżowej szkoły I stopnia (ten sam akt 2024); elektromagnesu nowa podstawa nie ma. INNE KRAJE: (1) ${JP_SHO}, przyroda (理科): kl. 3 A⑸ (s. 96) – połączenia, przy których prąd płynie albo nie, przewodniki; kl. 4 A⑶ (s. 99) – „乾電池の数やつなぎ方を変えると，電流の大きさや向きが変わり，豆電球の明るさやモーターの回り方が変わること” (gdy zmienia się liczbę baterii albo ich połączenie, zmienia się natężenie i kierunek prądu, a więc jasność żaróweczki i obroty silnika) i 内容の取扱い ⑴ (s. 101) – „直列つなぎと並列つなぎを扱う” (połączenie szeregowe i równoległe – chodzi o baterie); kl. 5 A⑶ (s. 103) – cewka z prądem magnesuje żelazny rdzeń, zmiana kierunku prądu zmienia bieguny, siła zależy od natężenia prądu i liczby zwojów, badanie z kontrolą warunków. Komentarz 小学校学習指導要領解説 理科編 (MEXT, mext.go.jp, plik 20211020-mxt_kyoiku02-100002607_05.pdf): s. 38 – nie łączyć biegunów baterii samym przewodem (bezpieczeństwo); s. 51 – z 1 do 2 baterii, np. prosty miernik prądu (簡易検流計), dioda LED świeci albo nie zależnie od kierunku prądu, symbole obwodu „można” omawiać, w jednym obwodzie nie mieszać różnych rodzajów baterii; s. 66–67 – kontrola warunków (natężenie prądu, długość przewodu, liczba zwojów), kompas przy cewce, przykład budowy: dźwig, który przyciąga i puszcza żelazo; ${JP_WIEK}. (2) Korea: podstawa przyrody 2022 (교육부 고시 제2022-33호 [별책 9], moe.go.kr), kl. 5–6: [6과15-02] porównanie obwodu z jedną baterią i z dwiema bateriami szeregowo (komentarz: żarówek szeregowo i równolegle się nie omawia, baterie – tylko szeregowo; żarówkę dobiera się do połączenia baterii); [6과15-03] elektromagnes z baterii – siła a liczba baterii, bieguny a kierunek podłączenia, porównanie z magnesem trwałym, bez pojęcia pola magnetycznego. (3) Singapur: Science Syllabus Primary Three to Six (MOE, aktualizacja 2026), P5 Standard „Electrical System” (s. 59): „Construct simple circuits from circuit diagrams”, „Number of batteries (arranged in series)”, „Number of bulbs (arranged in series and parallel)”; P5 Foundation – żarówki tylko szeregowo. (4) ${SCI}: Year 4 „Electricity” (s. 23) – obwód szeregowy, zamknięta pętla z baterią, wyłącznik, przewodniki; obwód rysuje się jeszcze bez symboli; Year 6 (s. 34) – jasność żarówki a liczba i napięcie ogniw, symbole, zmiana jednego elementu naraz; „Note: Pupils are expected to learn only about series circuits, not parallel circuits.”; obwody równoległe i elektromagnes – dopiero key stage 3 (11–14 lat; program KS3, s. 12). (5) Szwajcaria: Lehrplan 21 – wspólny program 21 kantonów niemiecko- i wielojęzycznych (nie całej Szwajcarii); cytujemy wersję Zurychu (zh.lehrplan.ch, NMG, 13.03.2017, s. 42 druku), 2. cykl = kl. 3–6: NMG.5.2.1c (prąd jak płynąca woda), 1d „können verzweigte Stromkreise als Serie- oder Parallelschaltung aufbauen” (treść obowiązkowa), 1e schematy, 1f np. „zwei statt ein Lämpchen, in Serie statt parallel”, 2d elektromagnes „unter Anleitung”, np. śruba owinięta drutem. SPOSÓB UCZENIA I BŁĘDNE PRZEKONANIA – lekcje Oak National Academy (thenational.academy; publiczna platforma lekcji, nie program; OGL v3.0 – parafrazujemy i linkujemy): Year 4 „Building simple circuits” i „Troubleshooting problems with circuits” (niepełny obwód: jeden przewód do baterii, oba do jednego bieguna, krokodylek nie na metalu; brzęczyk działa tylko w jednym kierunku); Year 6 „Components and simple circuits” („Electricity is stored within a cell or battery”), „Investigating voltage” („The voltage of a cell is proportional to the size of the cell”; za wysokie napięcie przepala żarówkę), „Variables in electric circuits” (więcej żarówek – słabiej; żarówka świeci tak samo w każdym miejscu pętli), „Circuit symbols and diagrams” (schemat rysowany jak mapa albo w 3D). WIEDZA (zpe.gov.pl): „Połączenie szeregowe odbiorników” i „Połączenie równoległe odbiorników” (fizyka SP: wykręcona żarówka, równolegle jaśniej niż szeregowo przy tym samym napięciu, w szeregu napięcie się dzieli, a natężenie w pętli jest wszędzie takie samo, oświetlenie w domu – równolegle), „Pole magnetyczne wokół przewodnika z prądem. Elektromagnesy i ich zastosowanie” (zwojnica, rdzeń i źródło prądu; gwóźdź, drut, igła magnetyczna; dźwig na złomowisku, zamek elektryczny), „Urządzenia elektryczne” (bateria ok. 1,5 V, zwykłych baterii nie ładować, symbole), „Równoległe łączenie ogniw” i „Szeregowe łączenie ogniw” (liceum: napięcie ogniw równoległych jak jednego, prąd można czerpać dłużej; ogniwo odwrócone obniża napięcie szeregu), film samouczek „Charakterystyka napięciowo-prądowa źródła napięcia” (liceum: prąd zwarcia może rozgrzać, a nawet stopić baterię alkaliczną). BEZPIECZEŃSTWO: MEXT (bez zwarcia, bez mieszania baterii), ZPE (zwarcie; „Ostrożnie z prądem!”), Oak (nadzór dorosłego); zasada „elektromagnes z gwoździa podłączasz tylko na kilka sekund” – nasza, z wiedzy o zwarciu (ZPE). Model w widżecie (idealne baterie, jednakowe żarówki, siła elektromagnesu rosnąca z liczbą zwojów i baterii, liczby spinaczy) i liczby w kartach „Zrób” – nasze; jasność „tak jak jedna żarówka” przy połączeniu równoległym dotyczy idealnej baterii.`,
+        theory: `
+          <p class="tip">🇵🇱 <b>W polskiej szkole</b> prosty obwód z baterią i żarówką budujesz na zajęciach technicznych, a schematy rysujesz na fizyce w kl. 7–8. <b>Łączenia szeregowego i równoległego polska podstawa programowa szkoły podstawowej nie wymaga</b> – ani stara, ani nowa. Elektromagnes jest tylko w starej fizyce kl. 7–8 i to do wyboru nauczyciela, a w nowej podstawie go nie ma. Tu najpierw krótkie przypomnienie, a potem to, czego uczą się rówieśnicy w innych krajach.</p>
+          <h3>🇵🇱 Przypomnienie – znasz albo poznasz w polskiej szkole</h3>
+          <ul>
+            <li><b>Obwód zamknięty</b> (zajęcia praktyczno-techniczne kl. 4–6 – przedmiot z prostym obwodem, np. lampka): prąd płynie tylko wtedy, gdy bateria, przewody i żarówka tworzą <b>zamkniętą pętlę</b> – od jednego bieguna baterii do drugiego. <b>Wyłącznik</b> otwiera i zamyka tę pętlę.</li>
+            <li><b>Przewodniki i izolatory</b> (nowa przyroda kl. 4–6, stara fizyka kl. 7): metale przewodzą prąd, a drewno i plastik – nie.</li>
+            <li><b>Schemat z symbolami</b> – poznasz na fizyce w kl. 7–8.</li>
+          </ul>
+          <h3>🌍 1. Bateria „pcha” prąd</h3>
+          <p>Bateria nie jest pudełkiem z zapasem prądu. Daje <b>„pchnięcie”</b> – <b>napięcie</b>, mierzone w <b>woltach (V)</b>. Zwykły paluszek AA ma ok. <b>1,5 V</b>. Szwajcarski Lehrplan 21 (kl. 3–6) porównuje prąd do <b>wody płynącej w rurach</b> – bateria jest wtedy jak pompa (pompa to nasze porównanie). Napięcie odczytasz z napisu na baterii, a nie z jej wielkości (lekcje Oak).</p>
+          <h3>🌍 2. Dwie baterie: szeregowo czy równolegle?</h3>
+          <p>Japonia, 4. klasa: dzieci zmieniają <b>liczbę baterii</b> i <b>sposób ich połączenia</b> i patrzą, jak świeci żaróweczka i jak kręci się silnik.</p>
+          <ul>
+            <li><b>Szeregowo</b> – jedna za drugą, plus jednej baterii do minusa drugiej. Napięcia się dodają: 1,5 V + 1,5 V = <b>3 V</b>. Żarówka świeci <b>jaśniej</b>, silnik kręci się <b>szybciej</b>. Bada to też Korea (kl. 5–6), Singapur (Primary 5) i Anglia (Year 6).</li>
+            <li><b>Równolegle</b> – obok siebie, plus do plusa, minus do minusa. Napięcie jest <b>takie jak jednej baterii</b>, więc żarówka świeci mniej więcej tak jak z jedną – ale baterie starczą na <b>dłużej</b>.</li>
+          </ul>
+          <p>Żarówkę dobiera się do baterii (Korea) – za wysokie napięcie może ją przepalić (lekcje Oak).</p>
+          <h3>🌍 3. W którą stronę płynie prąd?</h3>
+          <p>Japonia, 4. klasa: odwrócisz baterię – prąd popłynie <b>w drugą stronę</b>. Silnik zakręci się <b>w drugą stronę</b>, a <b>dioda LED</b> zgaśnie, bo świeci tylko przy jednym kierunku prądu. Wyniki dzieci opisują słowami „prąd”, „połączenie szeregowe” i „połączenie równoległe”; komentarz do podstawy podaje jako przykład pomiar prostym miernikiem prądu.</p>
+          <h3>🌍 4. Dwie żarówki: szeregowo czy równolegle?</h3>
+          <p>Singapur (Primary 5) i Szwajcaria (Lehrplan 21, kl. 3–6) uczą łączyć dwie żarówki na dwa sposoby. Anglia w szkole podstawowej – <b>tylko szeregowo</b>, a równolegle – dopiero w wieku 11–14 lat.</p>
+          <ul>
+            <li><b>Szeregowo</b> – jedna droga dla prądu, żarówki jedna za drugą. Wykręcisz jedną – <b>gasną wszystkie</b>. Dwie żarówki świecą <b>słabiej</b> niż jedna, bo napięcie baterii dzieli się między nie. Tak działały starsze lampki choinkowe.</li>
+            <li><b>Równolegle</b> – każda żarówka ma <b>swoją drogę</b> do baterii. Wykręcisz jedną – <b>druga świeci dalej</b>. Każda dostaje pełne napięcie baterii, więc świecą <b>jaśniej niż w szeregu</b>. Tak połączone są lampy w domu.</li>
+          </ul>
+          <p>W szeregu żarówka świeci tak samo jasno, gdziekolwiek ją wstawisz – bliżej plusa czy bliżej minusa. W jednej pętli prąd jest wszędzie taki sam (ZPE, lekcje Oak).</p>
+          <h3>🌍 5. Schemat z symbolami</h3>
+          <p>Anglia (Year 6), Singapur (Primary 5) i Szwajcaria uczą rysować i czytać <b>schematy</b>, a w Japonii w 4. klasie symbole „można” wprowadzić. Schemat to nie mapa ani zdjęcie: <b>symbole i proste linie</b>, rysowane linijką – dzięki temu zrozumie go każdy na świecie (lekcje Oak).</p>
+          <ul>
+            <li><b>Ogniwo</b> (bateria): dwie równoległe kreski – dłuższa i cieńsza to plus, krótsza i grubsza to minus.</li>
+            <li><b>Żarówka</b>: kółko z krzyżykiem.</li>
+            <li><b>Wyłącznik</b>: linia z uniesioną „klapką” – otwarty robi przerwę w pętli.</li>
+          </ul>
+          <h3>🌍 6. Elektromagnes – magnes na prąd</h3>
+          <p>Japonia (5. klasa), Korea (kl. 5–6) i Szwajcaria (kl. 3–6, „pod kierunkiem nauczyciela”, np. śruba owinięta drutem) uczą budować <b>elektromagnes</b>: drut nawinięty wiele razy na żelazny rdzeń – to <b>zwojnica</b> – i bateria. Elektromagnes działa <b>tylko wtedy, gdy płynie prąd</b>.</p>
+          <ul>
+            <li><b>Więcej zwojów</b> albo <b>większy prąd</b> (np. dwie baterie szeregowo) – elektromagnes jest <b>silniejszy</b> (Japonia, Korea).</li>
+            <li>Odwrócisz baterię – bieguny <b>N i S zamieniają się</b> miejscami. Sprawdzisz to kompasem.</li>
+            <li><b>Uczciwy test</b> (Japonia): zmieniasz jedną rzecz, np. liczbę zwojów, a resztę zostawiasz – tę samą baterię, te same spinacze i <b>drut tej samej długości</b> (niepotrzebny kawałek drutu zostaje obok, nienawinięty).</li>
+          </ul>
+          <p>Gdzie? Dźwig na złomowisku podnosi i puszcza złom, zamek elektryczny otwiera drzwi (ZPE). W Korei elektromagnes porównuje się z magnesem trwałym, ale <b>pola magnetycznego</b> jeszcze się nie wprowadza – tu też nie.</p>
+          <h3>Jak uczą tego w Japonii?</h3>
+          <p>Najpierw <b>przewidywanie z uzasadnieniem</b>: „dwie baterie – będzie jaśniej, bo…”. Potem doświadczenie i rysunek obwodu. W 5. klasie dzieci same <b>planują</b>, jak sprawdzić, od czego zależy siła elektromagnesu, i pilnują, co zmieniają, a co zostawiają bez zmian. Na koniec coś budują – w komentarzu MEXT są przykłady: pojazd na baterie albo dźwig z elektromagnesem, który przyciąga i puszcza żelazo.</p>
+          <h3>Jak uczą tego w Anglii?</h3>
+          <p>Year 4 (8–9 lat): zbuduj obwód szeregowy, nazwij części i sprawdź, czy żarówka jest w zamkniętej pętli z baterią; obwód rysuje się jeszcze jak obrazek. Year 6 (10–11 lat): symbole, jasność żarówki a liczba i napięcie ogniw, <b>zmieniaj jedną rzecz naraz</b>; przykładowy projekt – sygnalizacja świetlna albo alarm. Lekcje Oak: gdy obwód nie działa, szukaj błędu po kolei.</p>
+          <h3>Uważaj!</h3>
+          <ul>
+            <li>Tylko <b>baterie 1,5 V</b> (paluszki AA), najwyżej dwie naraz. Nigdy gniazdko 230 V.</li>
+            <li><b>Nie łącz biegunów baterii samym drutem</b> – to <b>zwarcie</b> (Japonia). Płynie wtedy bardzo duży prąd: bateria i drut się grzeją, a bateria może się nawet stopić (ZPE).</li>
+            <li>Elektromagnes z gwoździa ma mały opór – działa prawie jak zwarcie. Podłączaj go tylko na <b>kilka sekund</b>, na czas próby. Grzeje się? Od razu odłącz i powiedz dorosłemu.</li>
+            <li>W jednym obwodzie <b>nie mieszaj różnych baterii</b> (Japonia). Zwykłych baterii nie ładuj (ZPE). Bez baterii guzikowych.</li>
+            <li>Żarówkę albo diodę dobierz do napięcia baterii. Doświadczenia rób z dorosłym.</li>
+          </ul>`,
+        infographicNote: 'Na górze – przypomnienie. Porównuj w poziomie: szeregowo czy równolegle. Na dole – elektromagnes.',
+        infographic: {
+          type: 'porownanie',
+          top: { kolor: 4, title: '🇵🇱 Przypomnienie (ZPT kl. 4–6)', text: 'prąd płynie tylko w zamkniętej pętli; wyłącznik ją otwiera i zamyka' },
+          kolumny: [{ title: '🔗 Szeregowo', kolor: 2 }, { title: '🔀 Równolegle', kolor: 1 }],
+          wiersze: [
+            { label: 'Droga prądu', cells: ['jedna pętla', 'każda żarówka swoja'] },
+            { label: 'Wykręcisz jedną żarówkę', cells: ['gasną wszystkie', 'reszta świeci'] },
+            { label: 'Dwie żarówki, ta sama bateria', cells: ['świecą słabiej niż jedna', 'jaśniej niż w szeregu'] },
+            { label: 'Dwie baterie', cells: ['1,5 V + 1,5 V = 3 V', 'napięcie jak jednej, starczy dłużej'] },
+            { label: 'Przykład', cells: ['starsze lampki choinkowe', 'lampy w domu'] },
+          ],
+          bottom: { kolor: 5, title: '🧲 Elektromagnes', text: 'zwoje + żelazny rdzeń + prąd; więcej zwojów lub prądu – silniej; odwrócisz baterię – N i S się zamieniają' },
+        },
+        parent: {
+          goal: 'Dziecko przewiduje i sprawdza, co się dzieje, gdy łączy dwie baterie albo dwie żarówki szeregowo i równolegle, czyta prosty schemat i uczciwie bada, od czego zależy siła elektromagnesu. Łączenia szeregowego i równoległego polska podstawa szkoły podstawowej nie wymaga; schematy są na fizyce w kl. 7–8, a elektromagnes – tylko w starej fizyce i do wyboru nauczyciela.',
+          time: 'lekcja ok. 20 minut; doświadczenie z żarówkami ok. 30 minut; elektromagnes ok. 30 minut; projekt ok. 45 minut',
+          mistakes: [
+            '„Bateria przechowuje prąd” – bateria daje „pchnięcie” (napięcie), a prąd płynie w całej pętli (Oak, Year 6).',
+            '„Większa bateria ma większe napięcie” – napięcie odczytuje się z napisu w woltach, nie z wielkości (Oak, Year 6).',
+            'Obwód nie działa, bo do baterii idzie jeden przewód, oba przewody są przy tym samym biegunie albo krokodylek trzyma izolację, a nie metal (Oak, Year 4; Japonia – komentarz MEXT do kl. 3).',
+            '„Schemat to mapa albo rysunek 3D” – schemat ma symbole i proste linie (Oak, Year 6).',
+          ],
+          avoid: [
+            'Mów „bateria pcha prąd”, a nie „bateria ma w sobie prąd”.',
+            'Brzęczyk albo dioda działa tylko przy jednym kierunku podłączenia – to nie usterka (Oak, Year 4; MEXT, kl. 4).',
+            'Nie wprowadzaj pola magnetycznego ani wzorów (prawo Ohma, opór zastępczy) – w Korei w tym wieku pola się nie wprowadza, a wzory to fizyka starszych klas.',
+            'Elektromagnesu nie zostawiaj podłączonego – kilka sekund na próbę i odłączyć.',
+          ],
+          prepare: [
+            '2–4 zwykłe baterie AA 1,5 V tego samego rodzaju i koszyczek na 2 baterie z przewodami',
+            '2 jednakowe żaróweczki w oprawkach dobrane do napięcia koszyczka (napis na żarówce albo opakowaniu), 5–6 przewodów z krokodylkami',
+            'do elektromagnesu: duży stalowy gwóźdź albo śruba, ok. 1 m cienkiego drutu miedzianego w izolacji (końce bez izolacji – przygotowuje dorosły), jednakowe stalowe spinacze, kompas',
+            'wydrukowane karty z zakładki 🛠️ Zrób',
+          ],
+          talk: [
+            'Dlaczego, gdy przepali się żarówka w kuchni, w pokoju światło dalej świeci?',
+            'Latarka ma dwie baterie – jak są połączone? Zajrzyjcie razem do środka.',
+            'Gdzie może być elektromagnes? (ZPE: zamek w drzwiach, dzwonek do drzwi, dźwig na złomowisku)',
+            'Jak uczciwie sprawdzić, czy więcej zwojów daje silniejszy elektromagnes?',
+          ],
+        },
+        activities: [
+          {
+            id: 'yl0z2c', kind: 'doswiadczenie', title: 'Szeregowo czy równolegle? Dwie żaróweczki', time: '30 minut', adult: true,
+            intro: 'Przewiduj, sprawdź i zapisz – jak dzieci w Singapurze i Szwajcarii. Zmieniaj zawsze jedną rzecz naraz, jak w Anglii.',
+            safety: [
+              'Tylko baterie 1,5 V w koszyczku – nigdy gniazdko 230 V.',
+              'Nie łącz biegunów baterii samym przewodem – zwarcie grzeje baterię i przewód.',
+              'Żaróweczki dobrane do napięcia koszyczka (napis na żarówce albo opakowaniu). Świecąca żaróweczka bywa ciepła.',
+              'Zmieniasz połączenia? Najpierw odepnij jeden przewód od koszyczka. Każde nowe połączenie pokaż dorosłemu.',
+            ],
+            needs: ['koszyczek na 2 baterie AA i 2 baterie 1,5 V tego samego rodzaju', '2 jednakowe żaróweczki w oprawkach', '5–6 przewodów z krokodylkami', 'wydrukowana karta'],
+            steps: [
+              '🔦 Punkt odniesienia: jedna żaróweczka z koszyczkiem. Zapamiętaj, jak jasno świeci.',
+              '🤔 Przewiduj: jak będą świecić dwie żaróweczki szeregowo (jedna za drugą), a jak równolegle (każda swoją drogą)? Wpisz w tabelę.',
+              '🔗 Połącz szeregowo: koszyczek → żaróweczka A → żaróweczka B → koszyczek. Zapisz jasność.',
+              '🪛 Wykręć żaróweczkę A z oprawki. Co z B? Zapisz i wkręć A z powrotem.',
+              '🔀 Połącz równolegle: każda żaróweczka swoimi dwoma przewodami do obu końców koszyczka. Zapisz jasność.',
+              '🪛 Znów wykręć A. Co z B? Zapisz.',
+              '✏️ Narysuj oba obwody symbolami: ogniwo – dwie kreski, żarówka – kółko z krzyżykiem.',
+            ],
+            table: { cols: ['Obwód', 'Przewiduję', 'Jak świecą?', 'Wykręcam A – B świeci?'], rows: ['1 żaróweczka', '2 szeregowo', '2 równolegle'] },
+            conclusion: 'Szeregowo żaróweczki świecą … niż jedna, a po wykręceniu jednej druga … . Równolegle świecą … , a po wykręceniu jednej druga … .',
+            expected: 'Szeregowo obie świecą słabiej niż jedna, a gdy wykręcisz jedną – gaśnie też druga (jedna droga prądu). Równolegle świecą wyraźnie jaśniej niż w szeregu – mniej więcej jak jedna, z prawdziwą baterią czasem odrobinę słabiej – a po wykręceniu jednej druga świeci dalej. Wynik inny niż przewidywanie to też odkrycie.',
+            source: 'Singapur – sylabus science P5 (liczba żarówek szeregowo i równolegle, obwód ze schematu); Szwajcaria – Lehrplan 21, wersja Zurychu NMG.5.2 (połączenie szeregowe i równoległe, „zwei statt ein Lämpchen”); Anglia – program Year 6 (zmieniaj jedną rzecz naraz, symbole); wiedza – ZPE „Połączenie szeregowe odbiorników” i „Połączenie równoległe odbiorników”',
+          },
+          {
+            id: '6fjf5k', kind: 'doswiadczenie', title: 'Elektromagnes z gwoździa: zwoje czy baterie?', time: '30 minut', adult: true,
+            intro: 'Zbuduj elektromagnes jak japoński piątoklasista i sprawdź uczciwie, co go wzmacnia.',
+            safety: [
+              'Tylko baterie 1,5 V, najwyżej dwie szeregowo. Nigdy gniazdko 230 V.',
+              'Zwojnica z drutu ma mały opór – działa prawie jak zwarcie, więc drut i bateria się grzeją. Podłączaj tylko na kilka sekund, na czas próby, i od razu odłączaj.',
+              'Drut albo bateria są ciepłe? Odłącz i odczekaj. Gorące – powiedz dorosłemu.',
+              'Nawijanie, cięcie drutu i zdejmowanie izolacji z końców – dorosły. Gwóźdź może być ostry.',
+              'Spinacze i gwóźdź chowaj przed młodszym rodzeństwem.',
+            ],
+            needs: ['duży stalowy gwóźdź albo śruba', 'ok. 1 m cienkiego drutu miedzianego w izolacji (końce bez izolacji)', 'koszyczek na baterie AA i 2 baterie 1,5 V tego samego rodzaju', 'jednakowe stalowe spinacze', 'kompas', 'wydrukowana karta'],
+            steps: [
+              '🤔 Przewiduj: co da więcej spinaczy – więcej zwojów czy druga bateria? Wpisz w tabelę.',
+              '🧵 Dorosły nawija 20 zwojów drutu na gwóźdź. Reszta drutu zostaje obok, nienawinięta – w każdej próbie ten sam drut tej samej długości (tak pilnują tego w Japonii).',
+              '🔋 Podłącz 1 baterię na kilka sekund, zbliż główkę gwoździa do spinaczy i podnieś. Policz spinacze. Odłącz.',
+              '🔋🔋 20 zwojów i 2 baterie szeregowo – tak samo. Policz.',
+              '🧵 Dorosły dowija ten sam drut do 40 zwojów. Próba z 1 baterią, potem z 2. Policz.',
+              '🧭 Przy włączonym prądzie zbliż kompas do główki gwoździa. Odwróć baterię – co robi igła?',
+              '⚖️ Uczciwie: te same spinacze, ten sam gwóźdź i drut, zawsze tak samo zbliżasz i podnosisz.',
+            ],
+            table: { cols: ['Próba', 'Przewiduję', 'Spinacze', 'Ciepło?'], rows: ['20 zwojów, 1 bateria', '20 zwojów, 2 baterie', '40 zwojów, 1 bateria', '40 zwojów, 2 baterie'] },
+            conclusion: 'Więcej zwojów – spinaczy … . Druga bateria – spinaczy … . Po odwróceniu baterii igła kompasu … , bo bieguny elektromagnesu … .',
+            expected: 'Więcej zwojów i dwie baterie szeregowo zwykle dają więcej spinaczy – elektromagnes jest silniejszy. Po odwróceniu baterii igła kompasu obraca się w drugą stronę: bieguny N i S zamieniły się miejscami. Po odłączeniu baterii większość spinaczy odpada (stalowy gwóźdź może zostać trochę namagnesowany, jak po pocieraniu magnesem). Dokładne liczby zależą od gwoździa, drutu i baterii.',
+            source: 'Japonia – podstawa MEXT, przyroda kl. 5 A(3), i komentarz s. 66–67 (natężenie prądu, liczba zwojów, kontrola warunków – także długości drutu, kompas przy cewce); Korea – [6과15-03] (siła a liczba baterii, bieguny a kierunek podłączenia); Szwajcaria – Lehrplan 21, wersja Zurychu NMG.5.2.2d (śruba owinięta drutem, pod kierunkiem); ZPE – „Elektromagnesy i ich zastosowanie” (gwóźdź, drut, igła magnetyczna) i film samouczek o charakterystyce źródła napięcia (prąd zwarcia rozgrzewa baterię); baterie 1,5 V, 20 i 40 zwojów – nasza adaptacja',
+          },
+          {
+            id: 'w963zt', kind: 'projekt', title: 'Dźwig z elektromagnesem', time: '45 minut', adult: true,
+            intro: 'W japońskim komentarzu do podstawy jest przykład: dźwig, który przyciąga żelazo i je puszcza. Zaprojektuj swój i przenieś spinacze z pudełka A do pudełka B.',
+            safety: [
+              'Tylko baterie 1,5 V, najwyżej dwie. Nigdy gniazdko 230 V.',
+              'Prąd włączaj tylko na czas podnoszenia. Drut się grzeje? Przerwa.',
+              'Nie łącz biegunów baterii samym drutem.',
+              'Nawijanie, cięcie drutu i ostre końce – dorosły.',
+            ],
+            needs: ['elektromagnes z poprzedniej karty', 'koszyczek na baterie i przewody z krokodylkami', 'wyłącznik z zestawu albo z dwóch pinezek i spinacza na tekturce', 'karton, patyczki, taśma, sznurek', '10 stalowych spinaczy, 2 pudełka'],
+            constraints: ['najwyżej 2 baterie AA 1,5 V', 'prąd tylko na czas podnoszenia', 'możesz też tylko narysować projekt ze schematem'],
+            steps: [
+              'Narysuj dwa pomysły: jak opuścisz elektromagnes nad spinacze i jak go przeniesiesz?',
+              'Narysuj schemat obwodu symbolami: ogniwo, wyłącznik i elektromagnes.',
+              'Zbuduj pierwszy pomysł i przetestuj: ile spinaczy przeniesiesz w jednym kursie?',
+              'Zmień jedną rzecz (np. liczbę zwojów albo sposób trzymania) i przetestuj tak samo.',
+              'Zapisz, co pomogło, a co nie.',
+            ],
+            criteria: [
+              'Dźwig przenosi spinacze z pudełka A do B i puszcza je po wyłączeniu prądu.',
+              'Prąd płynie tylko na czas podnoszenia – jest wyłącznik albo przerwa w obwodzie.',
+              'Schemat obwodu narysowałeś symbolami.',
+              'Po teście zmieniłeś jedną rzecz i porównałeś wyniki tym samym testem.',
+            ],
+            table: { cols: ['Wersja', 'Co zmieniłem?', 'Spinacze w jednym kursie'], rows: ['1', '2'] },
+            conclusion: 'Najlepiej działała wersja …, bo …',
+            source: 'Japonia – komentarz MEXT do przyrody kl. 5, s. 67 (budowa: dźwig, który przyciąga i puszcza żelazo – przykład) i kl. 3, s. 39 (przełącznik); Anglia – program Year 6, notes and guidance (projekt użytecznego obwodu – przykład); ZPE – „Elektromagnesy i ich zastosowanie” (dźwig na złomowisku)',
+          },
+        ],
+        materials: [
+          { type: 'lekcja', title: 'Połączenie szeregowe odbiorników – lampki choinkowe i dwie żarówki', url: 'https://zpe.gov.pl/a/polaczenie-szeregowe-odbiornikow/DS4gxUH8v', source: 'ZPE (zpe.gov.pl) – fizyka, szkoła podstawowa', license: 'CC BY 3.0', note: 'Na początku dla każdego: dlaczego starsze lampki choinkowe gasły wszystkie naraz i ćwiczenie „prawda czy fałsz” o żarówkach szeregowo i równolegle. Dalej obliczenia z prawem Ohma – to fizyka kl. 7–8, dla chętnych.', expect: 'Połączenie szeregowe odbiorników' },
+          { type: 'lekcja', title: 'Elektromagnesy i ich zastosowanie – film i doświadczenie z gwoździem', url: 'https://zpe.gov.pl/a/pole-magnetyczne-wokol-przewodnika-z-pradem-elektromagnesy-i-ich-zastosowanie/DNta9n6eH', source: 'ZPE (zpe.gov.pl) – fizyka, szkoła podstawowa', license: 'CC BY 3.0', note: 'Film: igła kompasu wychyla się przy przewodzie z prądem. Doświadczenie: gwóźdź owinięty drutem i bateria, bieguny sprawdzane igłą magnetyczną; zastosowania – dźwig na złomowisku, zamek w drzwiach. To lekcja dla kl. 7–8 (jest w niej pole magnetyczne). W ZPE użyto baterii 4,5 V – w domu wystarczą paluszki 1,5 V i krótkie podłączenie.', expect: 'Elektromagnesy' },
+          { type: 'strona', title: 'Urządzenia elektryczne – baterie, akumulatory i prosty obwód', url: 'https://zpe.gov.pl/a/urzadzenia-elektryczne/DGX9xI9Tl', source: 'ZPE (zpe.gov.pl) – fizyka, szkoła podstawowa', note: 'Bateria ok. 1,5 V, akumulatory i dlaczego zwykłych baterii się nie ładuje, schemat obwodu z symbolami i obwód z żarówką krok po kroku.', expect: 'Urządzenia elektryczne' },
+          { type: 'film', title: 'Ostrożnie z prądem! – zasady bezpieczeństwa', url: 'https://zpe.gov.pl/a/ostroznie-z-pradem/D19l5PaP4', source: 'ZPE (zpe.gov.pl) – przyroda, szkoła podstawowa', license: 'film CC BY-SA 3.0', note: 'Dlaczego gniazdko (230 V) jest groźne, jak bezpiecznie korzystać z urządzeń elektrycznych i jak pomóc osobie porażonej prądem.', expect: '230 woltów' },
+          { type: 'lekcja', title: 'Variables in electric circuits – więcej żarówek, słabsze światło?', url: 'https://www.thenational.academy/pupils/programmes/science-primary-year-6/units/changing-circuits/lessons/variables-in-electric-circuits-do-and-review/overview', lang: 'en', source: 'Oak National Academy (Anglia, publiczna platforma lekcji) – Year 6', license: 'OGL v3.0', note: 'Lekcja z filmem dla 10–11-latków: jak liczba żarówek i ich miejsce w obwodzie szeregowym zmienia jasność; pomiar czujnikiem światła. Po angielsku – z dorosłym.', expect: 'Variables in electric circuits' },
+          { type: 'lekcja', title: 'Circuit symbols and diagrams – symbole i schematy', url: 'https://www.thenational.academy/pupils/programmes/science-primary-year-6/units/changing-circuits/lessons/circuit-symbols-and-diagrams/overview', lang: 'en', source: 'Oak National Academy (Anglia) – Year 6', license: 'OGL v3.0', note: 'Lekcja z filmem: symbole części obwodu i rysowanie schematu. Po angielsku – z dorosłym.', expect: 'Circuit symbols and diagrams' },
+          { type: 'lekcja', title: 'Troubleshooting problems with circuits – dlaczego obwód nie działa?', url: 'https://www.thenational.academy/pupils/programmes/science-primary-year-4/units/simple-electrical-circuits/lessons/troubleshooting-problems-with-circuits/overview', lang: 'en', source: 'Oak National Academy (Anglia) – Year 4', license: 'OGL v3.0', note: 'Lekcja z filmem dla 8–9-latków: szukanie błędów w obwodzie krok po kroku. Po angielsku – z dorosłym.', expect: 'Troubleshooting problems with circuits' },
+          { type: 'dokument', forParent: true, title: 'Podstawa przyrody (Japonia, MEXT) – obwód kl. 3: s. 96, baterie kl. 4: s. 99 i 101, elektromagnes kl. 5: s. 103', url: 'https://www.mext.go.jp/content/20230120-mxt_kyoiku02-100002604_01.pdf', lang: 'ja', source: 'Ministerstwo edukacji Japonii (MEXT), 小学校学習指導要領' },
+          { type: 'dokument', forParent: true, title: 'Komentarz do podstawy przyrody (Japonia, MEXT) – obwód kl. 3: s. 37–39, baterie kl. 4: s. 50–52, elektromagnes kl. 5: s. 66–67', url: 'https://www.mext.go.jp/content/20211020-mxt_kyoiku02-100002607_05.pdf', lang: 'ja', source: 'Ministerstwo edukacji Japonii (MEXT), 小学校学習指導要領解説 理科編' },
+          { type: 'dokument', forParent: true, title: 'Program przyrody Anglii, key stages 1–2 – Year 4 „Electricity” (s. 23), Year 6 (s. 34: „only about series circuits, not parallel circuits”)', url: 'https://assets.publishing.service.gov.uk/media/5a806ebd40f0b62305b8b1fa/PRIMARY_national_curriculum_-_Science.pdf', lang: 'en', source: 'Department for Education (gov.uk)' },
+          { type: 'dokument', forParent: true, title: 'Sylabus przyrody Singapuru, Primary 3–6 – „Electrical System” (Primary 5, s. 59)', url: 'https://www.moe.gov.sg/media/files/primary/syllabus/ba3562d3-5b31-4459-8693-45cde7b97273.pdf', lang: 'en', source: 'Ministry of Education Singapore (moe.gov.sg)' },
+          { type: 'dokument', forParent: true, title: 'Jednostka Oak „Changing circuits” (Year 6) – cele i typowe błędne przekonania', url: 'https://www.thenational.academy/teachers/programmes/science-primary-ks2/units/changing-circuits/lessons', lang: 'en', source: 'Oak National Academy (strona dla nauczyciela)', license: 'OGL v3.0' },
+          { type: 'dokument', forParent: true, title: 'Jednostka Oak „Simple electrical circuits” (Year 4) – cele i typowe błędne przekonania', url: 'https://www.thenational.academy/teachers/programmes/science-primary-ks2/units/simple-electrical-circuits/lessons', lang: 'en', source: 'Oak National Academy (strona dla nauczyciela)', license: 'OGL v3.0' },
+          { type: 'strona', forParent: true, title: 'Połączenie równoległe odbiorników (ZPE, fizyka) – lampy w domu i rozgałęzienie prądu', url: 'https://zpe.gov.pl/a/polaczenie-rownolegle-odbiornikow/DoNPlanrY', source: 'ZPE (zpe.gov.pl) – fizyka, szkoła podstawowa', license: 'CC BY 3.0', note: 'Dla starszych i dla rodzica: dlaczego oświetlenie łączy się równolegle; dalej prawo Kirchhoffa i wzory na opór zastępczy.', expect: 'Połączenie równoległe odbiorników' },
+          { type: 'strona', forParent: true, title: 'Prąd zwarcia baterii – film samouczek (ZPE, fizyka w liceum)', url: 'https://zpe.gov.pl/a/film-samouczek/D1FwTRvrM', source: 'ZPE (zpe.gov.pl) – liceum, fizyka', note: 'W poleceniu 2: prąd zwarcia może rozgrzać, a nawet stopić baterię alkaliczną, a akumulatorek niklowo-kadmowy może wybuchnąć – dlatego zwarć unikamy.', expect: 'zwarcia' },
+        ],
+        flashcards: [
+          ['Obwód zamknięty', 'prąd płynie tylko w zamkniętej pętli: bateria → przewód → żarówka → przewód → bateria'],
+          ['Bateria', 'daje „pchnięcie” – napięcie w woltach (V); prądu nie ma w niej w zapasie'],
+          ['Paluszek AA', 'ok. 1,5 V – małe napięcie, bezpieczne dla człowieka'],
+          ['Baterie szeregowo', 'plus jednej do minusa drugiej; napięcia się dodają: 1,5 V + 1,5 V = 3 V – żarówka świeci jaśniej'],
+          ['Baterie równolegle', 'plus do plusa, minus do minusa; napięcie jak jednej baterii, ale starczą na dłużej'],
+          ['Odwrócona bateria', 'prąd płynie w drugą stronę – silnik kręci się w drugą stronę (Japonia, kl. 4)'],
+          ['Dioda LED', 'świeci tylko przy jednym kierunku prądu'],
+          ['Żarówki szeregowo', 'jedna droga dla prądu: wykręcisz jedną – gasną wszystkie'],
+          ['Żarówki równolegle', 'każda ma swoją drogę: wykręcisz jedną – reszta świeci'],
+          ['Dwie żarówki szeregowo', 'świecą słabiej niż jedna, bo napięcie baterii dzieli się między nie'],
+          ['Ta sama bateria, dwie żarówki', 'równolegle świecą jaśniej niż szeregowo'],
+          ['Gdzie równolegle?', 'lampy w domu; starsze lampki choinkowe łączono szeregowo'],
+          ['Schemat obwodu', 'symbole i proste linie – nie mapa ani rysunek 3D'],
+          ['Symbol ogniwa', 'dwie kreski: dłuższa i cieńsza to plus, krótsza i grubsza to minus'],
+          ['Symbol żarówki', 'kółko z krzyżykiem'],
+          ['Elektromagnes', 'zwojnica (drut nawinięty na żelazny rdzeń) i źródło prądu; działa tylko, gdy płynie prąd'],
+          ['Siła elektromagnesu', 'rośnie, gdy jest więcej zwojów albo większy prąd (np. 2 baterie szeregowo)'],
+          ['Odwrócisz baterię w elektromagnesie…', '…bieguny N i S zamieniają się miejscami'],
+          ['Uczciwy test elektromagnesu (Japonia)', 'zmieniasz jedno, np. liczbę zwojów; bateria, spinacze i drut tej samej długości – bez zmian'],
+          ['Gdzie elektromagnes?', 'dźwig na złomowisku, zamek elektryczny w drzwiach'],
+          ['Zwarcie', 'plus i minus połączone samym drutem: ogromny prąd, bateria i drut się grzeją – nigdy tak nie rób'],
+          ['Uważaj!', 'tylko baterie 1,5 V, nigdy gniazdko; nie mieszaj różnych baterii; elektromagnes podłączasz na kilka sekund'],
+        ],
+        questions: [
+          // przypomnienie (ZPT kl. 4–6, przyroda kl. 4–6)
+          { id: '0jf1qv', q: 'Ola podłączyła oba przewody od żarówki do plusa baterii. Czy żarówka zaświeci?', options: ['nie', 'tak'], answer: 0, explain: 'Nie. Prąd płynie tylko w zamkniętej pętli: od jednego bieguna baterii przez żarówkę do drugiego. Oba przewody przy plusie – pętli nie ma.',
+            why: { options: ['nie ma pętli przez oba bieguny baterii', 'wystarczy, że przewody dotykają baterii', 'żarówka świeci tylko przy dwóch bateriach'], answer: 0, myth: 1, explain: 'Jeden przewód idzie do plusa, drugi do minusa – dopiero wtedy obwód jest zamknięty. Lekcje Oak opisują ten błąd jako częsty.', optionExplain: ['', 'Samo dotykanie baterii nie wystarczy – oba przewody przy tym samym biegunie nie zamykają pętli.', 'Jedna bateria wystarczy, jeśli pętla jest zamknięta.'] } },
+          { id: 'o9msfl', q: 'Wstawiasz przedmiot w przerwę w obwodzie. Przy którym żarówka zaświeci?', options: ['metalowa łyżeczka', 'drewniany patyczek', 'plastikowa linijka'], answer: 0, explain: 'Metale przewodzą prąd – to przewodniki. Drewno i plastik to izolatory: pętla zostaje przerwana.' },
+          { id: 'oglg40', q: 'Do czego służy wyłącznik w obwodzie?', options: ['otwiera i zamyka obwód', 'dodaje baterii napięcia', 'zmienia kolor światła'], answer: 0, explain: 'Wyłącznik robi przerwę w pętli (obwód otwarty – nie świeci) albo ją zamyka (świeci).' },
+          // 1. bateria „pcha”
+          { id: '9ik0jp', q: 'Duża bateria i mała bateria mają ten sam napis: 1,5 V. Która mocniej „pcha” prąd?', options: ['obie tak samo', 'ta większa', 'ta mniejsza'], answer: 0, explain: 'O „pchnięciu”, czyli napięciu, mówi napis w woltach, a nie wielkość baterii. Obie mają 1,5 V.',
+            why: { options: ['napięcie mówi liczba woltów na baterii', 'większa bateria ma zawsze większe napięcie', 'mniejsza bateria jest nowsza, więc mocniejsza'], answer: 0, myth: 1, explain: 'Napięcie odczytujesz z napisu V. Wielkość baterii go nie mówi.', optionExplain: ['', 'To częsty błąd opisany w lekcjach Oak: wielkość baterii nie mówi, jakie ma napięcie.', 'Ani wielkość, ani wiek baterii nie mówią o napięciu – patrz na napis V.'] } },
+          // 2. dwie baterie (Japonia kl. 4)
+          { id: 'd5nw35', q: 'Łączysz szeregowo dwie baterie po 1,5 V: plus jednej do minusa drugiej. Jakie napięcie dają razem?', options: ['3 V', '1,5 V', '0,75 V'], answer: 0, explain: 'W połączeniu szeregowym napięcia się dodają: 1,5 V + 1,5 V = 3 V.' },
+          { id: 'xrygd6', q: 'Do jednej baterii dokładasz drugą – szeregowo. Żarówka pasuje do takiego napięcia. Jak teraz świeci?', options: ['jaśniej', 'tak samo', 'słabiej'], answer: 0, explain: 'Dwie baterie szeregowo dają większe napięcie, więc płynie większy prąd i żarówka świeci jaśniej. Badają to dzieci w Japonii (kl. 4) i w Korei.',
+            why: { options: ['dwie baterie mocniej „pchają” prąd', 'druga bateria ma w sobie zapas prądu', 'żarówka po chwili sama się rozgrzewa'], answer: 0, myth: 1, explain: 'Bateria nie przechowuje prądu – daje „pchnięcie” (napięcie). Dwie szeregowo pchają mocniej: 1,5 V + 1,5 V = 3 V.', optionExplain: ['', 'To częsty błąd z lekcji Oak: bateria nie jest pudełkiem z prądem, tylko go pcha.', 'Żarówka grzeje się zawsze, gdy świeci – to nie wyjaśnia, dlaczego teraz świeci jaśniej.'] } },
+          { id: 'x6h2n2', q: 'Dwie takie same baterie łączysz równolegle: plus do plusa, minus do minusa. Jakie dają napięcie?', options: ['takie jak jedna bateria', 'dwa razy większe niż jedna', 'dwa razy mniejsze niż jedna'], answer: 0, explain: 'Równolegle napięcie jest takie jak jednej baterii. Zysk: baterie starczą na dłużej.' },
+          { id: '44127g', q: 'Silnik zasilany baterią kręci się w prawo. Odwracasz baterię. Co zrobi silnik?', options: ['zakręci się w lewo', 'dalej kręci się w prawo', 'zatrzyma się na stałe'], answer: 0, explain: 'Odwrócona bateria – prąd płynie w drugą stronę, więc silnik kręci się w drugą stronę. Tego uczą się japońskie dzieci w 4. klasie.' },
+          { id: 'atv5ca', q: 'Dioda LED świeci. Odwracasz baterię. Co się stanie?', options: ['dioda zgaśnie', 'dioda świeci jaśniej', 'dioda zmieni kolor'], answer: 0, explain: 'Dioda LED świeci tylko przy jednym kierunku prądu. Po odwróceniu baterii gaśnie – nie jest zepsuta.' },
+          { id: 'm9btdk', q: 'Japonia, 4. klasa: co dzieci łączą szeregowo i równolegle?', options: ['baterie', 'żarówki', 'magnesy'], answer: 0, explain: 'Japońska podstawa każe omówić szeregowe i równoległe łączenie baterii – i patrzeć, jak świeci żaróweczka i kręci się silnik. Dwie żarówki szeregowo i równolegle łączą np. dzieci w Singapurze.' },
+          // 4. dwie żarówki (Singapur P5, Lehrplan 21)
+          { id: 'ftn3cq', q: 'Na schemacie żarówki A i B są w jednej pętli. Żarówka A się przepala. Co z żarówką B?', options: ['zgaśnie', 'świeci dalej', 'zaświeci jaśniej'], answer: 0, explain: 'To połączenie szeregowe – jedna droga dla prądu. Przepalona żarówka przerywa pętlę i prąd przestaje płynąć.',
+            svg: `<svg viewBox="0 0 320 150" role="img" aria-label="Schemat: ogniwo oraz żarówki A i B połączone jedna za drugą w jednej pętli">
+              <path d="M40,40 H96 M124,40 H196 M224,40 H280 V120 H165 M155,120 H40 V40" class="ln sw"/>
+              <path d="M155,102 V138" class="ln"/><path d="M165,110 V130" class="ln ob-gruba"/>
+              <circle cx="110" cy="40" r="14" class="bg ln sw"/><path d="M100,30 L120,50 M120,30 L100,50" class="ln"/>
+              <circle cx="210" cy="40" r="14" class="bg ln sw"/><path d="M200,30 L220,50 M220,30 L200,50" class="ln"/>
+              <g class="tx-b" text-anchor="middle"><text x="110" y="80">A</text><text x="210" y="80">B</text></g>
+            </svg>`,
+            why: { options: ['przerwała się jedyna droga prądu', 'żarówka B stoi za daleko od baterii', 'żarówka B zawsze gaśnie po chwili'], answer: 0, explain: 'W szeregu prąd ma jedną drogę przez obie żarówki. Przerwa w jednym miejscu zatrzymuje prąd w całej pętli.', optionExplain: ['', 'Odległość od baterii nie ma znaczenia – liczy się, czy pętla jest zamknięta.', 'Gdyby pętla była cała, B świeciłaby dalej.'] } },
+          { id: 'c2uh2h', q: 'Na schemacie żarówki A i B są w dwóch osobnych gałęziach. Żarówka A się przepala. Co z żarówką B?', options: ['świeci dalej', 'zgaśnie', 'zaświeci słabiej'], answer: 0, explain: 'To połączenie równoległe – każda żarówka ma swoją drogę do baterii. Przepalona A nie przerywa drogi przez B.',
+            svg: `<svg viewBox="0 0 320 170" role="img" aria-label="Schemat: ogniwo i dwie gałęzie obok siebie – w górnej żarówka A, w dolnej żarówka B, obie połączone z tymi samymi przewodami po lewej i po prawej">
+              <path d="M40,35 H146 M174,35 H280 M40,92 H146 M174,92 H280 M40,35 V145 H155 M165,145 H280 V35" class="ln sw"/>
+              <path d="M155,127 V163" class="ln"/><path d="M165,135 V155" class="ln ob-gruba"/>
+              <circle cx="160" cy="35" r="14" class="bg ln sw"/><path d="M150,25 L170,45 M170,25 L150,45" class="ln"/>
+              <circle cx="160" cy="92" r="14" class="bg ln sw"/><path d="M150,82 L170,102 M170,82 L150,102" class="ln"/>
+              <circle cx="40" cy="92" r="4" class="ob-wezel"/><circle cx="280" cy="92" r="4" class="ob-wezel"/>
+              <g class="tx-b" text-anchor="middle"><text x="200" y="42">A</text><text x="200" y="99">B</text></g>
+            </svg>` },
+          { id: 'tkpa5x', q: 'W domu przepaliła się żarówka w kuchni, a w pokoju światło dalej świeci. Jak połączone są lampy?', options: ['równolegle', 'szeregowo'], answer: 0, explain: 'Lampy w domu łączy się równolegle: awaria jednej nie przerywa obwodu pozostałych (ZPE).' },
+          { id: '2esykd', q: 'Ta sama bateria, dwie takie same żarówki. W którym połączeniu świecą jaśniej?', options: ['równolegle', 'szeregowo', 'w obu tak samo'], answer: 0, explain: 'Równolegle każda żarówka dostaje pełne napięcie baterii. Szeregowo napięcie dzieli się na dwie – świecą słabiej.' },
+          { id: 'tj2i44', q: 'Z jedną żarówką bateria daje jasne światło. Dokładasz szeregowo drugą taką samą żarówkę. Jak świecą teraz?', options: ['słabiej', 'jaśniej', 'tak samo'], answer: 0, explain: 'W szeregu napięcie baterii dzieli się na dwie żarówki, więc obie świecą słabiej niż jedna.',
+            why: { options: ['napięcie dzieli się na dwie żarówki', 'w baterii ubyło zapasu prądu', 'druga żarówka zasłania pierwszą'], answer: 0, myth: 1, explain: 'Bateria daje to samo napięcie, ale w szeregu każda żarówka dostaje tylko jego część.', optionExplain: ['', 'Bateria nie przechowuje prądu (częsty błąd z lekcji Oak) – zmienia się podział napięcia.', 'Żarówki się nie zasłaniają – każda świeci słabiej, bo dostaje mniejsze napięcie.'] } },
+          { id: 'qzmjlt', q: 'W obwodzie szeregowym przestawiasz żarówkę bliżej baterii. Jak świeci?', options: ['tak samo jak przedtem', 'jaśniej niż przedtem', 'słabiej niż przedtem'], answer: 0, explain: 'W jednej pętli prąd jest wszędzie taki sam (ZPE), więc żarówka świeci tak samo, gdziekolwiek ją wstawisz. Tak wyszło też w lekcji Oak dla Year 6.' },
+          { id: 'vfcu3p', q: 'Anglia, szkoła podstawowa (do 11 lat): jakie obwody budują dzieci według programu?', options: ['tylko szeregowe', 'tylko równoległe', 'szeregowe i równoległe'], answer: 0, explain: 'Program Anglii mówi wprost: w Year 6 tylko obwody szeregowe, nie równoległe. Równoległe – dopiero w wieku 11–14 lat.' },
+          // 5. schemat
+          { id: 'c1bwvq', q: 'Co oznacza ten symbol na schemacie?', options: ['ogniwo', 'żarówkę', 'wyłącznik'], answer: 0, explain: 'Dwie równoległe kreski to ogniwo, czyli bateria: dłuższa i cieńsza to plus, krótsza i grubsza to minus.',
+            svg: `<svg viewBox="0 0 320 100" role="img" aria-label="Symbol na schemacie: przewód, potem dwie równoległe pionowe kreski – dłuższa cienka i krótsza gruba – i znów przewód">
+              <path d="M40,50 H150 M170,50 H280" class="ln sw"/><path d="M150,22 V78" class="ln"/><path d="M170,34 V66" class="ln ob-gruba"/>
+            </svg>` },
+          { id: 'v372vh', q: 'Jaki element obwodu oznacza ten symbol?', options: ['żarówkę', 'ogniwo', 'wyłącznik'], answer: 0, explain: 'Kółko z krzyżykiem to żarówka.',
+            svg: `<svg viewBox="0 0 320 100" role="img" aria-label="Symbol na schemacie: przewód, kółko z krzyżykiem w środku i znów przewód">
+              <path d="M40,50 H138 M182,50 H280" class="ln sw"/><circle cx="160" cy="50" r="22" class="bg ln sw"/><path d="M144,34 L176,66 M176,34 L144,66" class="ln"/>
+            </svg>` },
+          { id: '1hos40', q: 'Na schemacie wyłącznik jest otwarty. Czy żarówka świeci?', options: ['nie', 'tak'], answer: 0, explain: 'Otwarty wyłącznik robi przerwę w pętli – prąd nie płynie, żarówka nie świeci.',
+            svg: `<svg viewBox="0 0 320 150" role="img" aria-label="Schemat: ogniwo, żarówka i wyłącznik w jednej pętli; dźwignia wyłącznika jest uniesiona i w pętli jest przerwa">
+              <path d="M40,40 H96 M124,40 H190 M240,40 H280 V120 H165 M155,120 H40 V40" class="ln sw"/>
+              <path d="M190,40 L232,18" class="ln sw"/><circle cx="190" cy="40" r="4" class="ob-wezel"/><circle cx="240" cy="40" r="4" class="ob-wezel"/>
+              <path d="M155,102 V138" class="ln"/><path d="M165,110 V130" class="ln ob-gruba"/>
+              <circle cx="110" cy="40" r="14" class="bg ln sw"/><path d="M100,30 L120,50 M120,30 L100,50" class="ln"/>
+            </svg>` },
+          { id: '4hlfvp', q: 'Jak rysuje się schemat obwodu?', options: ['symbolami i prostymi liniami', 'jak mapę, z prawdziwymi odległościami', 'jak zdjęcie, w trzech wymiarach'], answer: 0, explain: 'Schemat ma symbole i proste linie, rysowane linijką – pokazuje, co z czym jest połączone, a nie jak daleko.', optionExplain: ['', 'Schemat to nie mapa – odległości nie mają znaczenia. To częsty błąd opisany w lekcjach Oak.', 'Schemat rysuje się płasko, symbolami – tak, żeby każdy na świecie go zrozumiał.'] },
+          // 6. elektromagnes (Japonia kl. 5, Korea kl. 5–6)
+          { id: 'f1uohm', q: 'Z czego składa się elektromagnes?', options: ['zwojnica, żelazny rdzeń i źródło prądu', 'magnes sztabkowy owinięty taśmą klejącą', 'drewniany patyk i sama bateria'], answer: 0, explain: 'Elektromagnes to zwojnica (drut nawinięty wiele razy) na żelaznym rdzeniu, np. gwoździu, i źródło prądu (ZPE).' },
+          { id: 'iz49qa', q: 'Kiedy elektromagnes z gwoździa mocno przyciąga spinacze?', options: ['gdy płynie prąd', 'zawsze, także bez prądu', 'tylko gdy jest gorący'], answer: 0, explain: 'Elektromagnes działa wtedy, gdy przez zwojnicę płynie prąd. Można go włączać i wyłączać – tym różni się od zwykłego magnesu.',
+            why: { options: ['prąd w zwojach magnesuje żelazny rdzeń', 'gwóźdź był silnym magnesem już wcześniej', 'bateria sama przyciąga spinacze'], answer: 0, explain: 'Japonia, kl. 5: cewka, przez którą płynie prąd, magnesuje żelazny rdzeń. Bez prądu rdzeń prawie przestaje przyciągać.', optionExplain: ['', 'Zwykły gwóźdź nie podnosi spinaczy – robi to dopiero z prądem w zwojach.', 'Sama bateria nie przyciąga spinaczy – potrzebna jest zwojnica z prądem.'] } },
+          { id: '5ug0r3', q: 'Chcesz, żeby elektromagnes podniósł więcej spinaczy. Co pomoże?', options: ['więcej zwojów drutu', 'patyk zamiast gwoździa', 'gwóźdź pomalowany farbą'], answer: 0, explain: 'Siła elektromagnesu rośnie z liczbą zwojów i z natężeniem prądu (Japonia, kl. 5). Drewniany patyk to nie żelazo – rdzeń z niego nic nie da.' },
+          { id: 'khaqgr', q: 'Odwracasz baterię w elektromagnesie. Co się zmieni?', options: ['bieguny N i S się zamienią', 'elektromagnes przestanie działać', 'zacznie przyciągać aluminium'], answer: 0, explain: 'Prąd płynie w drugą stronę, więc bieguny elektromagnesu się zamieniają. Pokaże to igła kompasu (Japonia, Korea).' },
+          { id: 'hc7mgd', q: 'Sprawdzasz, czy liczba zwojów zmienia siłę elektromagnesu. Co musi zostać takie samo?', options: ['bateria, drut i spinacze', 'liczba zwojów drutu', 'nic – wszystko można zmienić'], answer: 0, explain: 'Uczciwy test: zmieniasz tylko liczbę zwojów. Japońskie dzieci pilnują nawet tej samej długości drutu – niepotrzebny kawałek zostaje obok.',
+            why: { options: ['wtedy wiem, że różnicę dały zwoje', 'wtedy doświadczenie trwa krócej', 'inaczej elektromagnes nie zadziała'], answer: 0, explain: 'Gdy zmieniasz kilka rzeczy naraz, nie wiesz, która dała różnicę.', optionExplain: ['', 'Chodzi o pewny wynik, a nie o czas.', 'Elektromagnes zadziała, ale wynik nie powie, co go wzmocniło.'] } },
+          { id: 'thjh1n', q: 'Na złomowisku dźwig podnosi stare auto, przenosi je i puszcza. Jaki magnes ma dźwig?', options: ['elektromagnes', 'magnes sztabkowy', 'magnes z lodówki'], answer: 0, explain: 'Elektromagnes można wyłączyć – wtedy puszcza ładunek. Dźwigi elektromagnetyczne przenoszą wraki samochodów (ZPE).' },
+          // bezpieczeństwo
+          { id: '87g1eb', q: 'Co jest bezpiecznym źródłem prądu do doświadczeń z obwodami w domu?', options: ['bateria 1,5 V (paluszek)', 'gniazdko w ścianie (230 V)', 'przedłużacz z gniazdka'], answer: 0, explain: 'Bateria 1,5 V daje małe napięcie, bezpieczne dla człowieka (ZPE). Gniazdko 230 V może porazić – nigdy do doświadczeń.' },
+          { id: 'vx0dxn', q: 'Ktoś łączy plus i minus baterii samym drutem, bez żarówki. Co się stanie?', options: ['bateria i drut się nagrzeją', 'nic się wtedy nie stanie', 'bateria się naładuje'], answer: 0, explain: 'To zwarcie: płynie bardzo duży prąd, bateria i drut się grzeją, a bateria może się nawet stopić (ZPE). Japońskie dzieci uczą się, żeby tak nie robić.' },
+          { id: 'xm4hbk', q: 'Elektromagnes z gwoździa i drutu. Jak długo trzymasz go podłączonego do baterii?', options: ['kilka sekund, na czas próby', 'godzinę, żeby był silniejszy', 'całą noc, żeby był gotowy'], answer: 0, explain: 'Zwojnica z drutu ma mały opór – działa prawie jak zwarcie, więc drut i bateria się grzeją. Podłączasz tylko na czas próby.' },
+          { id: 'hu7u5s', q: 'Jakie baterie łączysz w jednym obwodzie?', options: ['tego samego rodzaju', 'różnych rodzajów naraz', 'zwykłe razem z akumulatorkami'], answer: 0, explain: 'Japoński komentarz do podstawy: w jednym obwodzie nie mieszaj różnych rodzajów baterii – dla bezpieczeństwa.' },
+        ],
+      },
+      // ------------------------------------------------------------------
+      {
         id: 'czujniki',
         name: 'Czujniki i sterowanie',
         level: 3,

@@ -763,5 +763,635 @@ window.WIDGETS = (() => {
     setTryb(tryb);
   }
 
-  return { pitagoras, procent, kostka, kolo, zegar, tabliczka, monety, kalendarz, magnesy, rama, czujniki };
+  // --- Półsumator (ścieżka „Świat”, dział Dodawanie dwójkowe i półsumator) ---
+  // p.tryb: 'bramki' (domyślnie) – przełączniki A, B → XOR daje cyfrę sumy S, AND – przeniesienie C; wyjścia widać po przewidywaniu;
+  //         'schody' – światło na klatce schodowej: dwa przełączniki schodowe (trzy zaciski) i dwa przewody (nasz model połączeń:
+  //                    A=0 – przewód 1, A=1 – przewód 2; B=0 – przewód 2, B=1 – przewód 1), lampa = A XOR B; porównanie z OR;
+  //         'dodawanie' – dwie liczby 4-bitowe (p.a, p.b; domyślnie 6 i 7) dodawane kolumna po kolumnie z przeniesieniem,
+  //                    przed każdą kolumną przewidujesz cyfrę wyniku; kolumna wag 1 – półsumator, dalsze – sumator pełny.
+  // Wszystkie wyniki liczone tu wprost (XOR = ^, AND = &) – zgodne z tabelami prawdy z działu.
+  function polsumator(el, p) {
+    let tryb = ['bramki', 'schody', 'dodawanie'].includes(p.tryb) ? p.tryb : 'bramki';
+    const W = [1, 2, 4, 8, 16];
+    const s = {
+      a: 0, b: 0, guess: null, seen: {},              // bramki
+      sa: 0, sb: 0, g2: null, visited: {},            // schody
+      x: p.a != null ? p.a & 15 : 6, y: p.b != null ? p.b & 15 : 7, col: 0, carry: [0], res: [], g3: null, // dodawanie
+    };
+    const bin = (v, n = 4) => v.toString(2).padStart(n, '0');
+    el.innerHTML = `<div class="controls" role="group" aria-label="Wybierz tryb"><button class="btn" data-t="bramki">🧮 Półsumator</button><button class="btn" data-t="schody">💡 Światło na schodach</button><button class="btn" data-t="dodawanie">➕ Dodawanie w słupku</button></div>
+      <div class="svgbox"></div><div class="psset"></div>
+      <div class="controls psguess"></div>
+      <div class="readout" aria-live="polite"></div><div class="mlog"></div>`;
+    const box = el.querySelector('.svgbox');
+    const set = el.querySelector('.psset');
+    const gbox = el.querySelector('.psguess');
+    const out = el.querySelector('.readout');
+    const mlog = el.querySelector('.mlog');
+    const wire = (on) => `ln sw${on ? ' ps-on' : ''}`;
+    const lamp = (cx, cy, v, label) => `<circle cx="${cx}" cy="${cy}" r="16" class="${v === 1 ? 'f4 s4' : 'bg ln'} sw"/><text x="${cx}" y="${cy + 6}" class="tx-b" text-anchor="middle">${v == null ? '?' : v}</text><text x="${cx + 24}" y="${cy + 6}" class="tx-b">${label}</text>`;
+
+    // ---------- tryb „bramki”: półsumator ----------
+    function drawBramki() {
+      const { a, b } = s;
+      const shown = s.guess != null;
+      const S = a ^ b, C = a & b;
+      box.innerHTML = `<svg viewBox="0 0 400 190" role="img" aria-label="Półsumator: wejście A równe ${a} i wejście B równe ${b} prowadzą do bramki XOR i do bramki AND. ${shown ? `Wyjście XOR, czyli cyfra sumy S, równa się ${S}. Wyjście AND, czyli przeniesienie C, równa się ${C}.` : 'Wyjścia S i C są jeszcze ukryte – najpierw przewidź.'}">
+        <g fill="none">
+          <path d="M60,45 H170" class="${wire(a)}"/><path d="M110,45 V130 H170" class="${wire(a)}"/>
+          <path d="M60,150 H170" class="${wire(b)}"/><path d="M80,150 V65 H104 A6,6 0 0 1 116,65 H170" class="${wire(b)}"/>
+          <path d="M235,55 H300" class="${wire(shown && S)}"/><path d="M210,140 H300" class="${wire(shown && C)}"/>
+          <path d="M152,30 Q167,55 152,80" class="ln sw"/>
+        </g>
+        <g class="ln"><circle cx="110" cy="45" r="4"/><circle cx="80" cy="150" r="4"/></g>
+        <path d="M160,30 Q175,55 160,80 Q210,80 235,55 Q210,30 160,30 z" class="f5 s5 sw"/>
+        <path d="M170,120 H190 A20,20 0 0 1 190,160 H170 z" class="f1 s1 sw"/>
+        <g class="tx-s" text-anchor="middle"><text x="198" y="60">XOR</text><text x="188" y="145">AND</text></g>
+        <g class="tx-b"><text x="6" y="51">A = ${a}</text><text x="6" y="156">B = ${b}</text></g>
+        ${lamp(318, 55, shown ? S : null, 'S')}${lamp(318, 140, shown ? C : null, 'C')}
+        <text x="200" y="186" class="tx-s" text-anchor="middle">S – cyfra sumy · C – przeniesienie</text>
+      </svg>`;
+    }
+    function logBramki() {
+      const rows = [[0, 0], [0, 1], [1, 0], [1, 1]].map(([a, b]) => {
+        const k = `${a}${b}`;
+        const t = s.seen[k];
+        const on = a === s.a && b === s.b ? ' class="on"' : '';
+        return `<tr${on}><td>${a}</td><td>${b}</td><td>${t ? a ^ b : ''}</td><td>${t ? a & b : ''}</td><td>${t ? `${a & b}${a ^ b}₂ = ${a + b}` : ''}</td><td>${t ? (t.ok ? '✅' : '🤔') : ''}</td></tr>`;
+      }).join('');
+      mlog.innerHTML = `<table class="worksheet"><tr><th>A</th><th>B</th><th>S (XOR)</th><th>C (AND)</th><th>C S</th><th>Trafione?</th></tr>${rows}</table>
+        <p class="muted">Tabela uzupełnia się po każdym sprawdzeniu. Sprawdź wszystkie 4 wiersze.</p>`;
+    }
+    function setBramki() {
+      set.innerHTML = `<div class="controls" role="group" aria-label="Wejścia półsumatora"><span>Wejścia:</span><button class="btn" data-in="a" aria-pressed="${s.a === 1}">A = ${s.a}</button><button class="btn" data-in="b" aria-pressed="${s.b === 1}">B = ${s.b}</button></div>`;
+      set.querySelectorAll('[data-in]').forEach((btn) => (btn.onclick = () => {
+        s[btn.dataset.in] ^= 1;
+        s.guess = null;
+        setBramki();
+        guessBramki();
+        drawBramki();
+        logBramki();
+        set.querySelector(`[data-in="${btn.dataset.in}"]`).focus();
+      }));
+    }
+    function guessBramki() {
+      const OPTS = [[0, 0], [1, 0], [0, 1], [1, 1]];
+      gbox.innerHTML = `<span>Przewiduję:</span>${OPTS.map(([S, C]) => `<button class="btn" data-s="${S}" data-c="${C}">S = ${S}, C = ${C}</button>`).join('')}`;
+      out.innerHTML = `A = ${s.a}, B = ${s.b}. Co pokażą S i C? Wybierz, a potem sprawdź.`;
+      gbox.querySelectorAll('.btn').forEach((btn) => (btn.onclick = () => {
+        if (s.guess != null) return;
+        const S = s.a ^ s.b, C = s.a & s.b;
+        const ok = +btn.dataset.s === S && +btn.dataset.c === C;
+        s.guess = btn.dataset;
+        s.seen[`${s.a}${s.b}`] = { ok };
+        gbox.querySelectorAll('.btn').forEach((x) => { x.disabled = true; x.setAttribute('aria-pressed', String(x === btn)); });
+        btn.classList.add('primary');
+        const why = s.a + s.b === 2
+          ? '1 + 1 = 10₂: piszesz 0 (S = 1 XOR 1 = 0) i przenosisz 1 (C = 1 AND 1 = 1).'
+          : s.a + s.b === 1
+          ? `${s.a} + ${s.b} = 1: wejścia są różne, więc XOR daje S = 1, a AND daje C = 0 – bez przeniesienia.`
+          : '0 + 0 = 0: XOR i AND dają 0.';
+        out.innerHTML = `${ok ? '✅ Dobrze przewidziane!' : '🤔 Wyszło inaczej – to też odkrycie!'} ${why} <span class="muted">Zmień A albo B i przewidź jeszcze raz.</span>`;
+        drawBramki();
+        logBramki();
+      }));
+    }
+
+    // ---------- tryb „schody”: światło na klatce schodowej ----------
+    function drawSchody() {
+      const { sa, sb } = s;
+      const L = sa ^ sb;
+      const wA = sa === 0 ? 1 : 2, wB = sb === 0 ? 2 : 1; // przewód, z którym łączy się przełącznik
+      const Y = { 1: 85, 2: 135 };
+      const rays = L ? '<g class="ln s4"><path d="M361,78 L355,70"/><path d="M385,78 L391,70"/><path d="M373,74 V64"/></g>' : '';
+      box.innerHTML = `<svg viewBox="0 0 400 225" role="img" aria-label="Model światła na schodach na baterię 4,5 V: przełącznik A na dole stoi w pozycji ${sa} i łączy się z przewodem ${wA}, przełącznik B na górze stoi w pozycji ${sb} i łączy się z przewodem ${wB}. ${L ? 'Oba łączą się z tym samym przewodem – obwód jest zamknięty, lampa świeci.' : 'Łączą się z różnymi przewodami – obwód jest przerwany, lampa nie świeci.'}">
+        <g fill="none">
+          <path d="M90,110 H40 V190 H198" class="${wire(L)}"/><path d="M212,190 H395 V110 H389" class="${wire(L)}"/>
+          <path d="M310,110 H357" class="${wire(L)}"/>
+          <path d="M136,85 H264" class="${wire(L && wA === 1)}"/><path d="M136,135 H264" class="${wire(L && wA === 2)}"/>
+          <path d="M90,110 L130,${Y[wA]}" class="${wire(L)}"/><path d="M310,110 L270,${Y[wB]}" class="${wire(L)}"/>
+        </g>
+        <path d="M198,178 V202 M212,184 V196" class="ln sw"/>
+        <g class="bg ln"><circle cx="90" cy="110" r="5"/><circle cx="310" cy="110" r="5"/><circle cx="132" cy="85" r="4"/><circle cx="132" cy="135" r="4"/><circle cx="268" cy="85" r="4"/><circle cx="268" cy="135" r="4"/></g>
+        <circle cx="373" cy="110" r="16" class="${L ? 'f4 s4' : 'bg ln'} sw"/><path d="M362,99 L384,121 M384,99 L362,121" class="ln"/>${rays}
+        <g class="tx-s" text-anchor="middle"><text x="200" y="78">przewód 1</text><text x="200" y="154">przewód 2</text><text x="205" y="218">bateria 4,5 V</text></g>
+        <g class="tx-s"><text x="140" y="72">0</text><text x="140" y="158">1</text><text x="254" y="72">1</text><text x="254" y="158">0</text></g>
+        <g class="tx-b" text-anchor="middle"><text x="90" y="40">⬇️ A = ${sa}</text><text x="310" y="40">⬆️ B = ${sb}</text></g>
+        <g class="tx-s" text-anchor="middle"><text x="90" y="58">na dole</text><text x="310" y="58">na górze</text></g>
+      </svg>`;
+    }
+    function logSchody() {
+      const rows = [[0, 0], [0, 1], [1, 0], [1, 1]].map(([a, b]) => {
+        const t = s.visited[`${a}${b}`];
+        const on = a === s.sa && b === s.sb ? ' class="on"' : '';
+        return `<tr${on}><td>${a}</td><td>${b}</td><td>${t ? (a ^ b ? '💡 świeci' : '🌑 ciemno') : ''}</td><td>${t ? a ^ b : ''}</td><td>${t ? a | b : ''}</td></tr>`;
+      }).join('');
+      mlog.innerHTML = `<table class="worksheet"><tr><th>A</th><th>B</th><th>Lampa</th><th>A XOR B</th><th>A OR B</th></tr>${rows}</table>
+        <p class="muted">Odwiedź wszystkie 4 ustawienia. Gdzie XOR i OR się różnią?</p>`;
+    }
+    function setSchody() {
+      set.innerHTML = `<div class="controls" role="group" aria-label="Przełączniki światła na schodach"><button class="btn" data-sw="sa" aria-pressed="${s.sa === 1}">⬇️ Przełącz na dole (A = ${s.sa})</button><button class="btn" data-sw="sb" aria-pressed="${s.sb === 1}">⬆️ Przełącz na górze (B = ${s.sb})</button></div>`;
+      set.querySelectorAll('[data-sw]').forEach((btn) => (btn.onclick = () => {
+        const before = s.sa ^ s.sb;
+        s[btn.dataset.sw] ^= 1;
+        const L = s.sa ^ s.sb;
+        s.visited[`${s.sa}${s.sb}`] = true;
+        const changed = L !== before;
+        const ocena = s.g2 == null ? '' : (s.g2 === 'zmiana') === changed ? '✅ Dobrze przewidziane! ' : '🤔 Wyszło inaczej – to też odkrycie! ';
+        const orTxt = (s.sa | s.sb) ? 'świeciłaby' : 'nie świeciłaby';
+        out.innerHTML = `${ocena}Lampa ${L ? 'świeci 💡' : 'nie świeci 🌑'} (${s.sa} XOR ${s.sb} = ${L}). Jeden przełącznik zmienił stan lampy. <span class="muted">Gdyby to był OR, lampa ${orTxt} (${s.sa} OR ${s.sb} = ${s.sa | s.sb}).</span>`;
+        s.g2 = null;
+        setSchody();
+        guessSchody(false);
+        drawSchody();
+        logSchody();
+        set.querySelector(`[data-sw="${btn.dataset.sw}"]`).focus();
+      }));
+    }
+    function guessSchody(msg = true) {
+      gbox.innerHTML = '<span>Zanim przełączysz – przewiduję:</span><button class="btn" data-g="zmiana">🔁 lampa zmieni stan</button><button class="btn" data-g="bez">⏸️ nic się nie zmieni</button>';
+      if (msg) out.innerHTML = 'Lampa nie świeci. Przewidź, co się stanie, a potem przełącz jeden z przełączników.';
+      gbox.querySelectorAll('.btn').forEach((btn) => (btn.onclick = () => {
+        s.g2 = btn.dataset.g;
+        gbox.querySelectorAll('.btn').forEach((x) => { x.setAttribute('aria-pressed', String(x === btn)); x.classList.toggle('primary', x === btn); });
+        out.innerHTML = 'Zapisane. Teraz przełącz przełącznik na dole albo na górze.';
+      }));
+    }
+
+    // ---------- tryb „dodawanie”: dodawanie w słupku kolumna po kolumnie ----------
+    function resetDod() {
+      s.col = 0; s.carry = [0]; s.res = []; s.g3 = null;
+    }
+    function drawDod() {
+      const X = (i) => 350 - i * 50; // i = 0 – kolumna wag 1
+      const done = s.col >= 4;
+      const cur = done ? -1 : s.col;
+      let cells = '';
+      for (let i = 0; i < 5; i++) {
+        cells += `<text x="${X(i)}" y="28" class="tx-s" text-anchor="middle">${W[i]}</text>`;
+        if (i < 4) cells += `<text x="${X(i)}" y="95" class="tx-b" text-anchor="middle">${(s.x >> i) & 1}</text><text x="${X(i)}" y="130" class="tx-b" text-anchor="middle">${(s.y >> i) & 1}</text>`;
+        if (i > 0 && i <= s.col && s.carry[i]) cells += `<text x="${X(i)}" y="60" class="tx-b t2" text-anchor="middle">1</text>`;
+        if (i < s.res.length) cells += `<text x="${X(i)}" y="178" class="tx-b" text-anchor="middle">${s.res[i]}</text>`;
+      }
+      const wynik = s.res.slice().reverse().join('');
+      const hl = cur >= 0 ? `<rect x="${X(cur) - 22}" y="40" width="44" height="150" rx="8" class="f4 s4"/>` : '';
+      box.innerHTML = `<svg viewBox="0 0 400 210" role="img" aria-label="Dodawanie w słupku: A = ${bin(s.x)} (dziesiętnie ${s.x}), B = ${bin(s.y)} (dziesiętnie ${s.y}). ${s.res.length ? `Wynik do tej pory: ${wynik}.` : 'Wyniku jeszcze nie ma.'}${done ? ` Wynik ${wynik} to dziesiętnie ${s.x + s.y}.` : ` Teraz kolumna wag ${W[cur]}.`}">
+        ${hl}
+        <g class="tx-s"><text x="6" y="28">wagi</text><text x="6" y="60">przeniesienia</text><text x="6" y="178">wynik</text></g>
+        <g class="tx-b"><text x="6" y="95">A (${s.x})</text><text x="6" y="130">B (${s.y})</text><text x="110" y="130">+</text>${done ? `<text x="6" y="198" class="tx-s">= ${s.x + s.y} dziesiętnie</text>` : ''}</g>
+        <line x1="104" y1="145" x2="378" y2="145" class="ln sw"/>
+        ${cells}
+      </svg>`;
+    }
+    function setDod() {
+      const row = (k, label) => `<div class="controls psbits" role="group" aria-label="Liczba ${label}"><span>${label} =</span>${[3, 2, 1, 0].map((i) => {
+        const v = (s[k] >> i) & 1;
+        return `<button class="btn" data-k="${k}" data-i="${i}" aria-pressed="${v === 1}" aria-label="Liczba ${label}, cyfra o wadze ${W[i]}: ${v}">${v}</button>`;
+      }).join('')}<span>= ${s[k]}</span></div>`;
+      set.innerHTML = `${row('x', 'A')}${row('y', 'B')}<div class="controls"><button class="btn" data-reset>↺ Od nowa</button></div>`;
+      set.querySelectorAll('[data-k]').forEach((btn) => (btn.onclick = () => {
+        s[btn.dataset.k] ^= 1 << +btn.dataset.i;
+        resetDod();
+        setDod();
+        guessDod();
+        drawDod();
+        set.querySelector(`[data-k="${btn.dataset.k}"][data-i="${btn.dataset.i}"]`).focus();
+      }));
+      set.querySelector('[data-reset]').onclick = () => { resetDod(); guessDod(); drawDod(); };
+    }
+    function guessDod() {
+      mlog.innerHTML = '';
+      if (s.col >= 4) {
+        const wynik = s.res.slice().reverse().join('');
+        gbox.innerHTML = '';
+        const last = s.res.length === 5 ? ' Ostatnie przeniesienie stało się piątą cyfrą wyniku.' : '';
+        out.innerHTML = `Gotowe: ${bin(s.x)} + ${bin(s.y)} = ${wynik}₂.${last} Sprawdzenie dziesiętnie: ${s.x} + ${s.y} = ${s.x + s.y}, a ${wynik}₂ = ${parseInt(wynik, 2)} ${parseInt(wynik, 2) === s.x + s.y ? '✅' : '❌'}. <span class="muted">Zmień cyfry A albo B i dodaj jeszcze raz.</span>`;
+        return;
+      }
+      const i = s.col;
+      gbox.innerHTML = `<span>Kolumna wag ${W[i]} – piszę:</span><button class="btn" data-g="0">0</button><button class="btn" data-g="1">1</button>`;
+      if (i === 0) out.innerHTML = 'Zaczynasz od prawej kolumny (wagi 1). Jaką cyfrę napiszesz pod kreską?';
+      gbox.querySelectorAll('.btn').forEach((btn) => (btn.onclick = () => {
+        const a = (s.x >> i) & 1, b = (s.y >> i) & 1, c = s.carry[i] || 0;
+        const sum = a + b + c;
+        const S = sum & 1, C = sum >> 1;
+        const ok = +btn.dataset.g === S;
+        s.res[i] = S;
+        s.carry[i + 1] = C;
+        s.col = i + 1;
+        if (s.col === 4 && C) s.res[4] = 1;
+        const dzial = i === 0 ? `${a} + ${b}` : `${a} + ${b} + przeniesienie ${c}`;
+        const kto = i === 0 ? 'Tu wystarczy półsumator – dwa bity.' : 'Trzy bity (z przeniesieniem) – to robota sumatora pełnego.';
+        const msg = `${ok ? '✅' : '🤔'} Kolumna wag ${W[i]}: ${dzial} = ${sum.toString(2)}₂ → piszesz ${S}${C ? ', przenosisz 1' : ', nic nie przenosisz'}. ${kto}`;
+        drawDod();
+        guessDod();
+        if (s.col < 4) out.innerHTML = `${msg} <span class="muted">Teraz kolumna wag ${W[s.col]}.</span>`;
+        else out.innerHTML = `${msg}<br>${out.innerHTML}`;
+      }));
+    }
+
+    function setTryb(t) {
+      tryb = t;
+      el.querySelectorAll('[data-t]').forEach((b) => { b.classList.toggle('primary', b.dataset.t === t); b.setAttribute('aria-pressed', String(b.dataset.t === t)); });
+      if (t === 'bramki') { s.guess = null; setBramki(); guessBramki(); drawBramki(); logBramki(); }
+      else if (t === 'schody') { s.g2 = null; s.visited[`${s.sa}${s.sb}`] = true; setSchody(); guessSchody(); drawSchody(); logSchody(); if (s.sa ^ s.sb) out.innerHTML = 'Lampa świeci. Przewidź, co się stanie, a potem przełącz jeden z przełączników.'; }
+      else { resetDod(); setDod(); guessDod(); drawDod(); }
+    }
+    el.querySelectorAll('[data-t]').forEach((b) => (b.onclick = () => setTryb(b.dataset.t)));
+    setTryb(tryb);
+  }
+
+  // --- Soroban – japońskie liczydło (ścieżka „Świat”, dział Soroban) ---
+  // Na pręcie: 1 koralik nad belką (wart 5) i 4 pod belką (po 1); liczy się koralik przysunięty do belki.
+  // p.prety – liczba prętów (3 albo 4, domyślnie 3); p.tryb: 'wolny' (domyślnie; p.start – liczba na start),
+  // 'ustaw' (p.cel – liczba do ustawienia, bez p.cel – losowa; „Nowa liczba” losuje następną),
+  // 'dodaj' (p.a – liczba na start, p.b – co dodać; podpowiedź: piątka albo dziesiątka).
+  // Klik w koralik przesuwa go razem z koralikami między nim a belką. Klawiatura: Tab – pręt, ↑/↓ – cyfra ±1, ←/→ – sąsiedni pręt, 0–9 – cyfra.
+  function soroban(el, p) {
+    const n = Math.min(4, Math.max(3, p.prety || 3));
+    const MIEJSCA = [['tysiące', ['tysiąc', 'tysiące', 'tysięcy']], ['setki', ['setka', 'setki', 'setek']],
+      ['dziesiątki', ['dziesiątka', 'dziesiątki', 'dziesiątek']], ['jedności', ['jedność', 'jedności', 'jedności']]].slice(4 - n);
+    const max = 10 ** n - 1;
+    const tryb = p.tryb || 'wolny';
+    const odm = (k, f) => (k === 1 ? f[0] : k >= 2 && k <= 4 ? f[1] : f[2]);
+    const jedynki = (k) => `${k} ${k === 1 ? 'jedynkę' : 'jedynki'}`;
+    let d = [];
+    let cel = tryb === 'ustaw' ? p.cel : null;
+    let ukryj = false;
+    let fokus = -1;
+    const ustaw = (v) => { d = String(Math.max(0, Math.min(max, v))).padStart(n, '0').split('').map(Number); };
+    const wartosc = () => +d.join('');
+    const los = () => { let v; do v = 1 + Math.floor(Math.random() * max); while (v === cel || v === wartosc()); return v; };
+    const PRZYCISKI = {
+      wolny: '<button class="btn" data-a="zero">0️⃣ Wyzeruj</button><button class="btn" data-a="ukryj" aria-pressed="false">🙈 Zakryj liczbę</button>',
+      ustaw: '<button class="btn" data-a="nowa">🎲 Nowa liczba</button><button class="btn" data-a="zero">0️⃣ Wyzeruj</button>',
+      dodaj: '<button class="btn" data-a="pomoc">💡 Podpowiedź</button><button class="btn" data-a="znowu">↺ Od nowa</button>',
+    };
+    el.innerHTML = `<p class="readout sb-zad"></p><div class="svgbox"></div>
+      <div class="controls">${PRZYCISKI[tryb] || PRZYCISKI.wolny}</div>
+      <div class="readout sb-out" aria-live="polite"></div><p class="muted sb-pom" aria-live="polite"></p>
+      <p class="muted">Klikaj koraliki. Klawiatura: Tab – pręt, ↑ ↓ – cyfra, ← → – sąsiedni pręt.</p>`;
+    const box = el.querySelector('.svgbox');
+    const zad = el.querySelector('.sb-zad');
+    const out = el.querySelector('.sb-out');
+    const pom = el.querySelector('.sb-pom');
+    const kor = (cx, y, on, i, k) => `<rect x="${cx - 29}" y="${y}" width="58" height="22" rx="11" class="sb-kor ${on ? 'f2 s2' : 'f1 s1'} sw" data-r="${i}" data-k="${k}"/>`;
+    function draw() {
+      const W = 30 + n * 90;
+      let s = '';
+      d.forEach((c, i) => {
+        const cx = 60 + i * 90;
+        const gora = c >= 5;
+        const dol = c % 5;
+        let g = `<rect x="${cx - 42}" y="10" width="84" height="232" rx="8" class="sb-fokus"/><line x1="${cx}" y1="10" x2="${cx}" y2="214" class="ln"/>`;
+        g += kor(cx, gora ? 57 : 12, gora, i, 'g');
+        for (let k = 0; k < 4; k++) g += kor(cx, k < dol ? 92 + k * 23 : 118 + k * 23, k < dol, i, k);
+        g += `<text x="${cx}" y="236" text-anchor="middle" class="tx-s">${MIEJSCA[i][0]}</text>`;
+        s += `<g class="sb-pret" data-r="${i}" tabindex="0" role="spinbutton" aria-valuemin="0" aria-valuemax="9" aria-valuenow="${c}" aria-label="${MIEJSCA[i][0]}">${g}</g>`;
+      });
+      box.innerHTML = `<svg viewBox="0 0 ${W} 246" role="group" aria-label="Soroban: ${n} pręty. Koralik nad belką jest wart 5, każdy pod belką – 1. Liczy się koralik przy belce.">
+        <rect x="8" y="8" width="${W - 16}" height="208" rx="6" class="ln sw"/>${s}
+        <rect x="8" y="80" width="${W - 16}" height="10" class="f4 s4 sw" pointer-events="none"/>
+      </svg>`;
+      if (fokus >= 0) box.querySelector(`[data-r="${fokus}"]`).focus();
+    }
+    function podpowiedz() {
+      const a = p.a || 0;
+      const b = p.b || 0;
+      if (b >= 10) return 'Dodawaj po kolei: najpierw dziesiątki, potem jedności.';
+      const u = a % 10;
+      if (u + b >= 10) return `Na pręcie jedności zabraknie miejsca. Dołóż 1 koralik na pręcie dziesiątek (to 10) i zabierz ${10 - b} z pręta jedności: ${a} + 10 − ${10 - b} = ${a + b}.`;
+      if (b < 5 && (u % 5) + b > 4) return `Brakuje dolnych koralików. Dołóż piątkę i zabierz ${5 - b}: ${a} + 5 − ${5 - b} = ${a + b}.`;
+      if (b >= 5) return `Wystarczy dołożyć na pręcie jedności piątkę${b > 5 ? ` i ${jedynki(b - 5)}` : ''}.`;
+      return `Wystarczy dołożyć na pręcie jedności ${jedynki(b)}.`;
+    }
+    function after() {
+      draw();
+      const v = wartosc();
+      const sklad = d.map((c, i) => `${c} ${odm(c, MIEJSCA[i][1])}`).join(', ');
+      out.innerHTML = ukryj ? 'Liczba: <b>?</b> – odczytaj ją z koralików, potem odkryj.' : `Liczba: <b>${v}</b> <span class="muted">= ${sklad}</span>`;
+      if (tryb === 'ustaw') {
+        zad.innerHTML = `Ustaw na sorobanie liczbę <b>${cel}</b>.`;
+        if (v === cel) out.innerHTML += '<br>🎉 Brawo! Kliknij „Nowa liczba”.';
+      } else if (tryb === 'dodaj') {
+        zad.innerHTML = `Na sorobanie jest <b>${p.a || 0}</b>. Dodaj <b>${p.b || 0}</b> – przesuwaj koraliki.`;
+        if (v === (p.a || 0) + (p.b || 0)) out.innerHTML += `<br>🎉 Brawo! ${p.a || 0} + ${p.b || 0} = ${v}.`;
+      } else zad.innerHTML = 'Ustaw dowolną liczbę i odczytaj ją.';
+    }
+    function przesun(i, k) {
+      let gora = d[i] >= 5;
+      let dol = d[i] % 5;
+      if (k === 'g') gora = !gora;
+      else dol = dol > +k ? +k : +k + 1;
+      d[i] = (gora ? 5 : 0) + dol;
+    }
+    box.addEventListener('click', (e) => {
+      const b = e.target.closest('[data-k]');
+      if (!b) return;
+      fokus = -1;
+      przesun(+b.dataset.r, b.dataset.k);
+      after();
+    });
+    box.addEventListener('keydown', (e) => {
+      const g = e.target.closest('[data-r]');
+      if (!g) return;
+      const i = +g.dataset.r;
+      let c = d[i];
+      if (e.key === 'ArrowUp') c = Math.min(9, c + 1);
+      else if (e.key === 'ArrowDown') c = Math.max(0, c - 1);
+      else if (/^[0-9]$/.test(e.key)) c = +e.key;
+      else if (e.key === 'Home') c = 0;
+      else if (e.key === 'End') c = 9;
+      else if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+        e.preventDefault();
+        e.stopPropagation(); // strzałki w lekcji zmieniają krok – tu przenoszą między prętami
+        const j = i + (e.key === 'ArrowLeft' ? -1 : 1);
+        if (j >= 0 && j < n) box.querySelector(`[data-r="${j}"]`).focus();
+        return;
+      } else return;
+      e.preventDefault();
+      e.stopPropagation();
+      fokus = i;
+      d[i] = c;
+      after();
+    });
+    el.querySelectorAll('[data-a]').forEach((b) => (b.onclick = () => {
+      const a = b.dataset.a;
+      fokus = -1;
+      pom.textContent = '';
+      if (a === 'zero') ustaw(0);
+      if (a === 'nowa') { cel = los(); ustaw(0); }
+      if (a === 'znowu') ustaw(p.a || 0);
+      if (a === 'pomoc') pom.textContent = podpowiedz();
+      if (a === 'ukryj') { ukryj = !ukryj; b.textContent = ukryj ? '👀 Odkryj liczbę' : '🙈 Zakryj liczbę'; b.setAttribute('aria-pressed', String(ukryj)); }
+      after();
+    }));
+    ustaw(tryb === 'dodaj' ? p.a || 0 : p.start || 0);
+    if (tryb === 'ustaw' && cel == null) cel = los();
+    after();
+  }
+
+  // --- Obwody (ścieżka „Świat”, dział Obwody szeregowe i równoległe, elektromagnes): najpierw przewidywanie, potem wynik ---
+  // p.tryb: 'baterie' – 1 bateria, 2 szeregowo albo 2 równolegle; żarówka albo silnik; odwrócone baterie (Japonia, kl. 4);
+  //         'zarowki' (domyślnie) – dwie jednakowe żarówki szeregowo albo równolegle, 1 albo 2 baterie szeregowo, wykręcanie żarówek (Singapur P5, Lehrplan 21);
+  //         'elektromagnes' – 20 albo 40 zwojów (drut tej samej długości), 1 albo 2 baterie szeregowo, odwrócona bateria, wyłącznik (Japonia kl. 5, Korea).
+  // Model uproszczony: idealne baterie po 1,5 V i jednakowe żarówki – napięcie na żarówce porównujemy z „1 żarówka + 1 bateria”;
+  // siła elektromagnesu rośnie razem z liczbą zwojów i liczbą baterii (zwoje × baterie) – liczby spinaczy to przykład, nie pomiar.
+  function obwody(el, p) {
+    const TRYBY = { baterie: '🔋 Dwie baterie', zarowki: '💡 Dwie żarówki', elektromagnes: '🧲 Elektromagnes' };
+    let tryb = TRYBY[p.tryb] ? p.tryb : 'zarowki';
+    const s = { zrodlo: 's1', odb: 'z', rev: '0', uklad: 'szereg', bat: '1', outA: '0', outB: '0', zwoje: '20', bat2: '1', rev2: '0', on: '1' };
+    let guess = null;
+    const logs = { baterie: [], zarowki: [], elektromagnes: [] };
+    const SET = {
+      baterie: [
+        ['Baterie', 'zrodlo', [['s1', '1 bateria'], ['szereg', '2 szeregowo'], ['rown', '2 równolegle']]],
+        ['Odbiornik', 'odb', [['z', '💡 żarówka'], ['m', '⚙️ silnik']]],
+        ['Kierunek', 'rev', [['0', '➡️ zwykły'], ['1', '🔄 odwrócone']]],
+      ],
+      zarowki: [
+        ['Połączenie', 'uklad', [['szereg', '🔗 szeregowo'], ['rown', '🔀 równolegle']]],
+        ['Baterie', 'bat', [['1', '1 bateria'], ['2', '2 szeregowo']]],
+        ['Żarówka A', 'outA', [['0', 'wkręcona'], ['1', '🪛 wykręcona']]],
+        ['Żarówka B', 'outB', [['0', 'wkręcona'], ['1', '🪛 wykręcona']]],
+      ],
+      elektromagnes: [
+        ['Zwoje', 'zwoje', [['20', '20'], ['40', '40']]],
+        ['Baterie', 'bat2', [['1', '1 bateria'], ['2', '2 szeregowo']]],
+        ['Kierunek', 'rev2', [['0', '➡️ zwykły'], ['1', '🔄 odwrócona']]],
+        ['Wyłącznik', 'on', [['1', '🔌 włączony'], ['0', '⭕ wyłączony']]],
+      ],
+    };
+    const NAZWA = { s1: '1 bateria', szereg: '2 szeregowo', rown: '2 równolegle' };
+    el.innerHTML = `<div class="controls" role="group" aria-label="Wybierz doświadczenie">${Object.entries(TRYBY).map(([k, t]) => `<button class="btn" data-t="${k}">${t}</button>`).join('')}</div>
+      <div class="svgbox"></div><div class="obset"></div>
+      <div class="controls obguess" role="group" aria-label="Przewidywanie"></div>
+      <div class="readout" aria-live="polite"></div><div class="mlog"></div>`;
+    const box = el.querySelector('.svgbox');
+    const setBox = el.querySelector('.obset');
+    const gbox = el.querySelector('.obguess');
+    const out = el.querySelector('.readout');
+
+    // --- model ---
+    const cel = () => (s.outB === '0' ? 'B' : s.outA === '0' ? 'A' : null); // o którą żarówkę pytamy
+    const napZr = () => (s.zrodlo === 'szereg' ? 2 : 1); // napięcie źródła (1 = jedna bateria 1,5 V); równolegle – jak jedna
+    function napZar() { // napięcie na żarówkach A i B (1 = jedna bateria)
+      const V = +s.bat, a = s.outA === '0', b = s.outB === '0';
+      if (s.uklad === 'szereg') return a && b ? { A: V / 2, B: V / 2 } : { A: 0, B: 0 };
+      return { A: a ? V : 0, B: b ? V : 0 };
+    }
+    const poziom = (v) => (v === 0 ? 0 : v < 1 ? 1 : v === 1 ? 2 : 3); // 0 – nie świeci, 1 – słabiej, 2 – jak sama, 3 – jaśniej
+    const sila = () => (s.on === '1' ? (+s.zwoje / 20) * +s.bat2 : 0);
+    function wynik() {
+      if (tryb === 'baterie') { const m = napZr() > 1 ? 'j' : 't'; return s.odb === 'z' ? m : m + (s.rev === '1' ? 'd' : 't'); }
+      if (tryb === 'zarowki') { const c = cel(); return c ? String(poziom(napZar()[c])) : null; }
+      const F = sila();
+      return F === 0 ? '0' : F === 1 ? 't' : F > 1 ? 'w' : 'm';
+    }
+    function opcje() {
+      if (tryb === 'baterie') return s.odb === 'z'
+        ? [['j', '🔆 jaśniej'], ['t', '💡 tak samo'], ['s', '🔅 słabiej']]
+        : [['jt', '⏩ szybciej, w tę samą stronę'], ['jd', '⏩ szybciej, w drugą stronę'], ['tt', '▶️ tak samo, w tę samą stronę'], ['td', '◀️ tak samo, w drugą stronę']];
+      if (tryb === 'zarowki') return [['0', '⚫ nie świeci'], ['1', '🔅 słabiej'], ['2', '💡 tak jak sama'], ['3', '🔆 jaśniej']];
+      return [['0', '0️⃣ nic'], ['m', '➖ mniej'], ['t', '🟰 tyle samo'], ['w', '➕ więcej']];
+    }
+    function pytanie() {
+      if (tryb === 'baterie') return s.odb === 'z' ? 'Jak świeci żarówka – w porównaniu z 1 baterią?' : 'Jak kręci się silnik – w porównaniu z 1 baterią podłączoną zwykle?';
+      if (tryb === 'zarowki') { const c = cel(); return c ? `Jak świeci żarówka ${c} – w porównaniu z jedną żarówką i 1 baterią?` : ''; }
+      return 'Ile spinaczy podniesie – w porównaniu z 20 zwojami i 1 baterią?';
+    }
+    const duza = (t) => t.charAt(0).toUpperCase() + t.slice(1);
+    function dlaczego() {
+      if (tryb === 'baterie') {
+        const z = s.odb === 'z';
+        const t = {
+          s1: 'Jedna bateria 1,5 V – to punkt odniesienia.',
+          szereg: `Dwie baterie szeregowo: plus jednej do minusa drugiej, 1,5 V + 1,5 V = 3 V. Mocniejsze „pchnięcie” – większy prąd, więc ${z ? 'żarówka świeci jaśniej (musi pasować do 3 V – za wysokie napięcie może ją przepalić).' : 'silnik kręci się szybciej.'}`,
+          rown: `Dwie baterie równolegle: plus do plusa, minus do minusa. Napięcie jak jednej baterii (1,5 V), więc ${z ? 'żarówka świeci' : 'silnik kręci się'} mniej więcej tak samo – ale baterie starczą na dłużej.`,
+        }[s.zrodlo];
+        if (s.rev !== '1') return t;
+        return `${t} ${z ? 'Baterie odwrócone – prąd płynie w drugą stronę, ale żarówce kierunek nie przeszkadza. Dioda LED by zgasła: świeci tylko przy jednym kierunku prądu.' : 'Baterie odwrócone – prąd płynie w drugą stronę, więc silnik kręci się w drugą stronę.'}`;
+      }
+      if (tryb === 'zarowki') {
+        const c = cel(), V = +s.bat, obie = s.outA === '0' && s.outB === '0';
+        if (s.uklad === 'szereg') {
+          if (!obie) return 'Szeregowo prąd ma jedną drogę. Wykręcona żarówka robi przerwę w pętli – prąd nie płynie i gasną wszystkie.';
+          return V === 1 ? 'Szeregowo napięcie baterii dzieli się na dwie żarówki – każda dostaje połowę, więc obie świecą słabiej niż jedna.'
+            : 'Dwie baterie szeregowo (3 V) dzielą się na dwie żarówki – każda dostaje 1,5 V, czyli tyle, co sama z jedną baterią.';
+        }
+        const inna = c === 'B' ? 'A' : 'B';
+        return `${obie ? 'Równolegle każda żarówka ma swoją drogę i dostaje pełne napięcie baterii.' : `Równolegle każda żarówka ma swoją drogę – wykręcona żarówka ${inna} nie przerywa drogi przez ${c}.`} ${V === 1
+          ? 'Świeci tak jak sama – w modelu z idealną baterią. Prawdziwa bateria daje przy dwóch żarówkach odrobinę mniej, ale i tak jest jaśniej niż w szeregu.'
+          : 'Dwie baterie szeregowo dają 3 V – świeci jaśniej niż sama z 1 baterią. Uwaga: za wysokie napięcie może przepalić żarówkę.'}`;
+      }
+      if (s.on === '0') return 'Wyłącznik otwarty – prąd nie płynie, elektromagnes nie działa i spinacze odpadają (stalowy gwóźdź może zostać trochę namagnesowany).';
+      const zw = s.zwoje === '40', b2 = s.bat2 === '2';
+      const t = zw || b2 ? `${duza([zw ? 'więcej zwojów' : '', b2 ? 'większy prąd (2 baterie szeregowo)' : ''].filter(Boolean).join(' i '))} – elektromagnes jest silniejszy (Japonia, Korea).` : '20 zwojów i 1 bateria – to punkt odniesienia.';
+      return `${t}${s.rev2 === '1' ? ' Bateria odwrócona – prąd płynie w drugą stronę, więc bieguny N i S zamieniły się miejscami (zobacz igłę kompasu). Siła się nie zmieniła.' : ''} Prawdziwy drut się grzeje – podłączaj go tylko na kilka sekund.`;
+    }
+
+    // --- rysunki ---
+    const pr = (on) => `ln sw${on ? ' ob-on' : ''}`; // przewód – zielony, gdy po przewidywaniu widać, że płynie prąd
+    const konce = (x, plusLewo) => [plusLewo ? x - 6 : x, plusLewo ? x + 70 : x + 76]; // lewy i prawy koniec baterii (z biegunem +)
+    function bateria(x, y, plusLewo) { // bateria 70 × 26, wypustka i „+” po stronie bieguna dodatniego
+      return `<rect x="${x}" y="${y}" width="70" height="26" rx="4" class="f2 s2 sw"/><rect x="${plusLewo ? x - 6 : x + 70}" y="${y + 8}" width="6" height="10" class="f2 s2"/>
+        <text x="${x + 35}" y="${y + 18}" class="tx-s" text-anchor="middle">1,5 V</text><text x="${plusLewo ? x + 8 : x + 62}" y="${y + 18}" class="tx-s" text-anchor="middle">+</text>`;
+    }
+    function zarowka(x, y, lvl, label) { // lvl: null – jeszcze nie wiadomo, -1 – wykręcona, 0–3 – jasność
+      if (lvl === -1) return `<circle cx="${x}" cy="${y}" r="15" class="ln dash"/><text x="${x}" y="${y + 34}" class="tx-s" text-anchor="middle">${label} – wykręcona</text>`;
+      const fill = lvl === null || lvl === 0 ? 'bg' : lvl === 1 ? 'ob-slaba' : 'ob-jasna';
+      const n = lvl === 3 ? 8 : lvl === 2 ? 4 : 0;
+      let rays = '';
+      for (let k = 0; k < n; k++) {
+        const a = (k * 2 * Math.PI) / n + Math.PI / 4;
+        rays += `<path d="M${(x + 20 * Math.cos(a)).toFixed(1)},${(y + 20 * Math.sin(a)).toFixed(1)} L${(x + 28 * Math.cos(a)).toFixed(1)},${(y + 28 * Math.sin(a)).toFixed(1)}" class="ln s4 sw"/>`;
+      }
+      return `${rays}<circle cx="${x}" cy="${y}" r="15" class="${fill} ln sw"/><path d="M${x - 10},${y - 10} L${x + 10},${y + 10} M${x + 10},${y - 10} L${x - 10},${y + 10}" class="ln"/>
+        <text x="${x}" y="${y + 34}" class="tx-s" text-anchor="middle">${label}${lvl === null ? ' – ?' : ''}</text>`;
+    }
+    const kropka = (x, y) => `<circle cx="${x}" cy="${y}" r="4" class="ob-wezel"/>`;
+    const OPIS_POZ = ['nie świeci', 'świeci słabiej niż sama', 'świeci tak jak sama', 'świeci jaśniej niż sama'];
+
+    function drawBaterie() {
+      const r = guess ? wynik() : null;
+      const lewo = s.rev !== '1'; // „+” po lewej – prąd w górnym przewodzie płynie w prawo
+      const plyn = !!r;
+      let pack = '', dol = '';
+      if (s.zrodlo === 's1') {
+        const [l, p2] = konce(165, lewo);
+        pack = bateria(165, 137, lewo);
+        dol = `<path d="M40,150 H${l} M${p2},150 H360" class="${pr(plyn)}"/>`;
+      } else if (s.zrodlo === 'szereg') {
+        const [l1, p1] = konce(120, lewo), [l2, p2] = konce(210, lewo);
+        pack = bateria(120, 137, lewo) + bateria(210, 137, lewo);
+        dol = `<path d="M40,150 H${l1} M${p1},150 H${l2} M${p2},150 H360" class="${pr(plyn)}"/>`;
+      } else {
+        const [l, p2] = konce(165, lewo);
+        pack = bateria(165, 118, lewo) + bateria(165, 158, lewo);
+        dol = `<path d="M40,150 H150 M250,150 H360 M150,131 V171 M250,131 V171 M150,131 H${l} M${p2},131 H250 M150,171 H${l} M${p2},171 H250" class="${pr(plyn)}"/>${kropka(150, 150)}${kropka(250, 150)}`;
+      }
+      const silnik = s.odb === 'm';
+      const odb = silnik
+        ? `<circle cx="200" cy="45" r="18" class="bg ln sw"/><text x="200" y="51" class="tx-b" text-anchor="middle">M</text>`
+        : zarowka(200, 45, r ? (napZr() > 1 ? 3 : 2) : null, 'żarówka');
+      const gora = `<path d="M40,45 H${silnik ? 182 : 185} M${silnik ? 218 : 215},45 H360 M40,45 V150 M360,45 V150" class="${pr(plyn)}"/>`;
+      const strz = r ? `<path d="${lewo ? 'M95,45 H130' : 'M130,45 H95'}" class="ln sw ob-on" marker-end="url(#a-wd-ob)"/>` : '';
+      const ruch = r && silnik ? `<text x="200" y="20" class="tx-b" text-anchor="middle">${s.rev === '1' ? '↺' : '↻'}</text><text x="226" y="20" class="tx-s">${napZr() > 1 ? 'szybciej' : 'jak z 1 baterią'}</text>` : '';
+      const opis = `${NAZWA[s.zrodlo]}${s.rev === '1' ? ', odwrócone' : ''}; odbiornik: ${silnik ? 'silnik' : 'żarówka'}.${r ? ` Wynik: ${silnik ? `silnik kręci się ${napZr() > 1 ? 'szybciej' : 'tak samo'}, ${s.rev === '1' ? 'w drugą stronę' : 'w tę samą stronę'}` : `żarówka świeci ${napZr() > 1 ? 'jaśniej' : 'tak samo'}`}.` : ''}`;
+      box.innerHTML = `<svg viewBox="0 0 400 190" role="img" aria-label="Obwód: ${opis}">
+        <defs><marker id="a-wd-ob" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t3"/></marker></defs>
+        ${gora}${dol}${pack}${odb}${strz}${ruch}
+      </svg>`;
+    }
+    function drawZarowki() {
+      const r = guess ? wynik() : null;
+      const v = napZar();
+      const lvl = (k) => (s['out' + k] === '1' ? -1 : r === null ? null : poziom(v[k]));
+      const plyn = !!r && (v.A > 0 || v.B > 0);
+      const pack = s.bat === '1' ? bateria(165, 157, true) : bateria(120, 157, true) + bateria(210, 157, true);
+      const dol = s.bat === '1' ? 'M40,170 H159 M235,170 H360' : 'M40,170 H114 M190,170 H204 M280,170 H360';
+      let rys;
+      if (s.uklad === 'szereg') {
+        rys = `<path d="M40,50 H135 M165,50 H235 M265,50 H360 M40,50 V170 M360,50 V170 ${dol}" class="${pr(plyn)}"/>${zarowka(150, 50, lvl('A'), 'A')}${zarowka(250, 50, lvl('B'), 'B')}`;
+      } else {
+        rys = `<path d="M40,45 H185 M215,45 H360" class="${pr(!!r && v.A > 0)}"/><path d="M40,105 H185 M215,105 H360" class="${pr(!!r && v.B > 0)}"/>
+          <path d="M40,45 V170 M360,45 V170 ${dol}" class="${pr(plyn)}"/>${kropka(40, 105)}${kropka(360, 105)}${zarowka(200, 45, lvl('A'), 'A')}${zarowka(200, 105, lvl('B'), 'B')}`;
+      }
+      const stan = (k) => (s['out' + k] === '1' ? 'wykręcona' : r === null ? 'wkręcona' : OPIS_POZ[poziom(v[k])]);
+      box.innerHTML = `<svg viewBox="0 0 400 200" role="img" aria-label="Dwie żarówki połączone ${s.uklad === 'szereg' ? 'szeregowo' : 'równolegle'}, ${s.bat === '1' ? 'jedna bateria' : 'dwie baterie szeregowo'}. Żarówka A: ${stan('A')}. Żarówka B: ${stan('B')}.">
+        ${rys}${pack}
+      </svg>`;
+    }
+    function drawElektromagnes() {
+      const r = guess ? wynik() : null;
+      const dziala = !!r && s.on === '1';
+      const lewo = s.rev2 !== '1';
+      const n = s.zwoje === '40' ? 20 : 10;
+      let zwoje = '';
+      for (let k = 0; k < n; k++) { const x = 140 + (k * 120) / (n - 1); zwoje += `<path d="M${x.toFixed(1)},58 L${(x + 6).toFixed(1)},82" class="ln s2 sw"/>`; }
+      let pack, l, p2;
+      if (s.bat2 === '1') { [l, p2] = konce(175, lewo); pack = bateria(175, 167, lewo); }
+      else { const [l1, p1] = konce(160, lewo), [l2, pp] = konce(240, lewo); l = l1; p2 = pp; pack = bateria(160, 167, lewo) + bateria(240, 167, lewo) + `<path d="M${p1},180 H${l2}" class="${pr(dziala)}"/>`; }
+      const wl = s.on === '1' ? '<path d="M330,180 H356" class="ln sw"/>' : '<path d="M330,180 L352,162" class="ln sw"/>';
+      // igła kompasu: bez prądu – na północ (w górę); główka gwoździa (po prawej od kompasu) N → igła N od niej, S → do niej
+      const glowaN = lewo; // przy zwykłym podłączeniu główka gwoździa jest biegunem N (umownie)
+      const kat = !dziala ? 0 : glowaN ? -90 : 90; // stopnie od północy, zgodnie z ruchem wskazówek zegara
+      const rad = (kat * Math.PI) / 180, cx = 55, cy = 70;
+      const pt = (d, dk) => [(cx + d * Math.sin(rad + dk)).toFixed(1), (cy - d * Math.cos(rad + dk)).toFixed(1)];
+      const [nx, ny] = pt(20, 0), [sx, sy] = pt(20, Math.PI), [ax, ay] = pt(5, Math.PI / 2), [bx, by] = pt(5, -Math.PI / 2);
+      const igla = `<path d="M${nx},${ny} L${ax},${ay} L${bx},${by} z" class="t2"/><path d="M${sx},${sy} L${ax},${ay} L${bx},${by} z" class="bg ln"/>`;
+      const F = sila(), ile = dziala ? 3 * F : 0;
+      let spinacze = '';
+      for (let k = 0; k < ile; k++) spinacze += `<rect x="${96 + Math.floor(k / 6) * 20}" y="${96 + (k % 6) * 10}" width="14" height="6" rx="3" class="ln s1"/>`;
+      const bieguny = dziala ? `<g class="tx-b" text-anchor="middle"><text x="114" y="44">${glowaN ? 'N' : 'S'}</text><text x="302" y="54">${glowaN ? 'S' : 'N'}</text></g>` : '';
+      const podpis = r ? `<text x="20" y="218" class="tx-s">${dziala ? `podniósł ${ile} spinaczy – przykład z modelu` : 'prąd nie płynie – spinacze odpadają'}</text>` : '';
+      box.innerHTML = `<svg viewBox="0 0 400 225" role="img" aria-label="Elektromagnes: gwóźdź, ${s.zwoje} zwojów drutu, ${s.bat2 === '1' ? 'jedna bateria' : 'dwie baterie szeregowo'}${s.rev2 === '1' ? ' odwrócone' : ''}, wyłącznik ${s.on === '1' ? 'włączony' : 'wyłączony'}.${r ? (dziala ? ` Wynik: podniósł ${ile} spinaczy (przykład z modelu); główka gwoździa to biegun ${glowaN ? 'N' : 'S'}, igła kompasu ${glowaN ? 'odwraca się od niej' : 'zwraca się do niej'}.` : ' Wynik: prąd nie płynie, elektromagnes nie przyciąga.') : ''}">
+        <circle cx="${cx}" cy="${cy}" r="26" class="bg ln sw"/><text x="${cx}" y="${cy - 30}" class="tx-s" text-anchor="middle">kompas</text>${igla}
+        <rect x="118" y="62" width="170" height="16" class="bg ln"/><path d="M288,62 L310,70 L288,78 z" class="bg ln"/><rect x="110" y="52" width="8" height="36" class="bg ln sw"/>
+        ${zwoje}
+        <path d="M140,82 V180 H${l} M${p2},180 H330 M356,180 H380 V100 H266 V82" class="${pr(dziala)}"/>${wl}${kropka(330, 180)}${kropka(356, 180)}
+        ${pack}${spinacze}${bieguny}${podpis}
+      </svg>`;
+    }
+    const draw = () => (tryb === 'baterie' ? drawBaterie() : tryb === 'zarowki' ? drawZarowki() : drawElektromagnes());
+
+    // --- sterowanie ---
+    function renderLog() {
+      const L = logs[tryb];
+      const head = { baterie: '<th>Baterie</th><th>Odbiornik</th>', zarowki: '<th>Połączenie</th><th>Ustawienie</th>', elektromagnes: '<th>Zwoje</th><th>Baterie</th>' }[tryb];
+      el.querySelector('.mlog').innerHTML = L.length ? `<table class="worksheet"><tr>${head}<th>Przewidziałem</th><th>Wynik</th></tr>
+        ${L.slice(-6).map((t) => `<tr><td>${t.a}</td><td>${t.b}</td><td>${t.g}</td><td>${t.r}${t.ok ? ' ✅' : ''}</td></tr>`).join('')}</table>` : '';
+    }
+    function renderGuess() {
+      const q = pytanie();
+      if (!q) {
+        gbox.innerHTML = '<span>Obie żarówki wykręcone – wkręć choć jedną.</span>';
+        return;
+      }
+      gbox.innerHTML = `<span>${q}</span>${opcje().map(([k, t]) => `<button class="btn" data-g="${k}" aria-pressed="false">${t}</button>`).join('')}`;
+      gbox.querySelectorAll('[data-g]').forEach((b) => (b.onclick = () => {
+        if (guess) return; // najpierw przewidywanie, potem wynik – zmień ustawienie, żeby przewidzieć jeszcze raz
+        guess = b.dataset.g;
+        const r = wynik();
+        const etyk = Object.fromEntries(opcje());
+        const ok = guess === r;
+        const a = { baterie: `${NAZWA[s.zrodlo]}${s.rev === '1' ? ' 🔄' : ''}`, zarowki: s.uklad === 'szereg' ? 'szeregowo' : 'równolegle', elektromagnes: s.zwoje }[tryb];
+        const bb = { baterie: s.odb === 'z' ? '💡' : '⚙️', zarowki: `${s.bat === '1' ? '1 bat.' : '2 bat.'}${s.outA === '1' ? ', bez A' : ''}${s.outB === '1' ? ', bez B' : ''}`, elektromagnes: `${s.bat2}${s.rev2 === '1' ? ' 🔄' : ''}${s.on === '0' ? ' ⭕' : ''}` }[tryb];
+        const pref = tryb === 'zarowki' ? `${cel()}: ` : '';
+        logs[tryb].push({ a, b: bb, g: pref + etyk[guess], r: pref + etyk[r], ok });
+        out.innerHTML = `${ok ? '✅ Dobrze przewidziane!' : '🤔 Wyszło inaczej – to też odkrycie!'} ${dlaczego()} <span class="muted">Zmień ustawienie i przewidź jeszcze raz. ${tryb === 'elektromagnes' ? 'Model uproszczony – liczby spinaczy to przykład.' : 'Model uproszczony: idealne baterie i jednakowe żarówki.'}</span>`;
+        gbox.querySelectorAll('[data-g]').forEach((x) => { x.disabled = true; x.setAttribute('aria-pressed', String(x === b)); });
+        b.classList.add('primary');
+        draw();
+        renderLog();
+      }));
+    }
+    function reset() {
+      guess = null;
+      out.innerHTML = pytanie() ? 'Ustaw obwód, a potem przewidź wynik.' : '';
+      renderGuess();
+      draw();
+    }
+    function renderSet() {
+      setBox.innerHTML = SET[tryb].map(([label, key, opts]) => `<div class="controls" role="group" aria-label="${label}"><span>${label}:</span>${opts.map(([v, t]) => `<button class="btn${s[key] === v ? ' primary' : ''}" data-k="${key}" data-v="${v}" aria-pressed="${s[key] === v}">${t}</button>`).join('')}</div>`).join('');
+      setBox.querySelectorAll('[data-k]').forEach((b) => (b.onclick = () => {
+        s[b.dataset.k] = b.dataset.v;
+        renderSet();
+        reset();
+        const nb = setBox.querySelector(`[data-k="${b.dataset.k}"][data-v="${b.dataset.v}"]`);
+        if (nb) nb.focus(); // po przerysowaniu fokus zostaje na tym samym przycisku (klawiatura)
+      }));
+    }
+    function setTryb(t) {
+      tryb = t;
+      el.querySelectorAll('[data-t]').forEach((b) => { b.classList.toggle('primary', b.dataset.t === t); b.setAttribute('aria-pressed', String(b.dataset.t === t)); });
+      renderSet();
+      renderLog();
+      reset();
+    }
+    el.querySelectorAll('[data-t]').forEach((b) => (b.onclick = () => setTryb(b.dataset.t)));
+    setTryb(tryb);
+  }
+
+  return { pitagoras, procent, kostka, kolo, zegar, tabliczka, monety, kalendarz, magnesy, rama, czujniki, polsumator, soroban, obwody };
 })();

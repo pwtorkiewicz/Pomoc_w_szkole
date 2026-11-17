@@ -1,4 +1,4 @@
-/* Lekcje – 🌍 Świat, informacja i algorytmy. Klucz: 'informacja/bramki-logiczne'. Format: docs/LEKCJE.md
+/* Lekcje – 🌍 Świat, informacja i algorytmy. Klucze: 'informacja/bramki-logiczne', 'informacja/polsumator'. Format: docs/LEKCJE.md
  * Treści oparte na dziale z js/dane/swiat/informacja.js (ścieżka poza podstawą, źródła w polu basis). */
 window.LESSONS = window.LESSONS || {};
 
@@ -122,5 +122,95 @@ window.LESSONS['informacja/bramki-logiczne'] = [
     remember: 'Kolejność: nawiasy → NOT → AND → OR. W Pythonie: not, and, or.',
     hook: 'AND działa jak mnożenie zer i jedynek (1 · 0 = 0) – i tak jak mnożenie liczysz go przed OR.',
     check: { q: 'A = 0, B = 1, C = 0. Ile wynosi (A OR B) AND C?', options: ['0', '1'], answer: 0, explain: 'Najpierw nawias: 0 OR 1 = 1. Potem 1 AND 0 = 0.' },
+  },
+];
+
+// Klucz: 'informacja/polsumator' – dodawanie dwójkowe, XOR, światło na schodach, półsumator (Bawaria, Anglia; widżet „polsumator”).
+window.LESSONS['informacja/polsumator'] = [
+  {
+    title: '🇵🇱 Przypomnienie: liczba z zer i jedynek',
+    svg: `<svg viewBox="0 0 400 185" role="img" aria-label="Przypomnienie z informatyki w klasach 7–8: liczba 1101 w systemie dwójkowym. Cztery pola z wagami 8, 4, 2 i 1. W polach cyfry 1, 1, 0, 1. Razem 8 plus 4 plus 0 plus 1 równa się 13">
+      <text x="200" y="20" class="tx-s" text-anchor="middle">🇵🇱 informatyka, kl. VII–VIII</text>
+      <rect x="40" y="34" width="70" height="90" rx="10" class="f4 s4 sw"/>
+      <rect x="125" y="34" width="70" height="90" rx="10" class="f4 s4 sw"/>
+      <rect x="210" y="34" width="70" height="90" rx="10" class="bg ln"/>
+      <rect x="295" y="34" width="70" height="90" rx="10" class="f4 s4 sw"/>
+      <g class="tx-s" text-anchor="middle"><text x="75" y="56">waga 8</text><text x="160" y="56">waga 4</text><text x="245" y="56">waga 2</text><text x="330" y="56">waga 1</text></g>
+      <g class="tx-b" text-anchor="middle"><text x="75" y="100">1</text><text x="160" y="100">1</text><text x="245" y="100">0</text><text x="330" y="100">1</text></g>
+      <text x="200" y="160" class="tx-b" text-anchor="middle">1101₂ = 8 + 4 + 0 + 1 = 13</text>
+    </svg>`,
+    text: `<p>Z informatyki w kl. VII–VIII znasz system dwójkowy: tylko cyfry <b>0</b> i <b>1</b>, a wagi pozycji od prawej to <b>1, 2, 4, 8…</b> – każda dwa razy większa.</p>
+      <p>W Bawarii i w Anglii idą dalej: uczniowie <b>dodają</b> liczby dwójkowe, a w Bawarii budują z bramek układ, który robi to sam – <b>półsumator</b>. Polska podstawa tego nie wymaga – poznasz to tutaj.</p>`,
+    remember: 'Wagi pozycji od prawej: 1, 2, 4, 8, 16. Dodajesz wagi tam, gdzie stoi 1.',
+    hook: 'Jak monety 1, 2, 4 i 8 zł – każdą bierzesz raz albo wcale. 1101 to 8 + 4 + 1 = 13 zł.',
+    check: { q: 'Ile to jest 101₂ w systemie dziesiętnym?', options: ['5', '3'], answer: 0, explain: 'Jedynki stoją na wagach 4 i 1: 4 + 1 = 5.' },
+  },
+  {
+    title: '🌍 Dodawanie w słupku: 1 + 1 = 10',
+    svg: `<svg viewBox="0 0 400 215" role="img" aria-label="Po lewej zasady dodawania bitów: 0 plus 0 równa się 0, 0 plus 1 równa się 1, 1 plus 1 równa się 10, 1 plus 1 plus 1 równa się 11; piszesz ostatnią cyfrę, a 1 przenosisz. Po prawej dodawanie w słupku: 0110 plus 0111 równa się 1101, czyli 6 plus 7 równa się 13. Przeniesienia nad kolumnami wag 4 i 8">
+      <rect x="8" y="10" width="172" height="195" rx="10" class="f1 s1"/>
+      <g class="tx"><text x="20" y="40">0 + 0 = 0</text><text x="20" y="70">0 + 1 = 1</text><text x="20" y="100">1 + 1 = 10</text><text x="20" y="130">1 + 1 + 1 = 11</text></g>
+      <g class="tx-s"><text x="20" y="162">piszesz ostatnią cyfrę,</text><text x="20" y="182">a 1 przenosisz</text></g>
+      <g class="tx-b t2" text-anchor="middle"><text x="232" y="45">1</text><text x="264" y="45">1</text></g>
+      <text x="284" y="45" class="tx-s">← przeniesienia</text>
+      <g class="tx-b" text-anchor="middle">
+        <text x="232" y="85">0</text><text x="264" y="85">1</text><text x="296" y="85">1</text><text x="328" y="85">0</text>
+        <text x="200" y="120">+</text>
+        <text x="232" y="120">0</text><text x="264" y="120">1</text><text x="296" y="120">1</text><text x="328" y="120">1</text>
+        <text x="232" y="165">1</text><text x="264" y="165">1</text><text x="296" y="165">0</text><text x="328" y="165">1</text>
+      </g>
+      <line x1="192" y1="134" x2="346" y2="134" class="ln sw"/>
+      <g class="tx"><text x="356" y="85">(6)</text><text x="356" y="120">(7)</text><text x="352" y="165">(13)</text></g>
+      <text x="280" y="200" class="tx-s" text-anchor="middle">sprawdzenie: 6 + 7 = 13 ✅</text>
+    </svg>`,
+    text: `<p>Dodajesz jak w słupku na matematyce: <b>od prawej</b>, z przeniesieniem. Różnica: cyfry kończą się już na 1, więc „dwa” to <b>10</b>. Piszesz 0, a 1 <b>przenosisz</b> do następnej kolumny. Gdy z przeniesieniem wyjdzie 1 + 1 + 1, to <b>11</b>: piszesz 1 i znów przenosisz 1.</p>
+      <p>Najczęstszy błąd według lekcji Oak (Anglia): zapisywanie wyniku „po dziesiętnemu”, czyli 1 + 1 = 2. Wynik to rzeczywiście dwa – ale dwójkowo zapisujesz go jako 10. Na koniec <b>sprawdź wynik dziesiętnie</b>.</p>`,
+    remember: '1 + 1 = 10 (piszesz 0, przenosisz 1). 1 + 1 + 1 = 11 (piszesz 1, przenosisz 1).',
+    hook: 'Jak 9 + 1 w dziesiętnym: cyfry się skończyły, więc 1 wskakuje do następnej kolumny. Dwójkowo cyfry kończą się już na jedynce.',
+    check: { q: 'Dodaj dwójkowo: 0101 + 0011', options: ['1000', '0111'], answer: 0, explain: '5 + 3 = 8 = 1000₂. Przeniesienie wędruje przez trzy kolumny: 1 + 1 = 10, potem 0 + 1 + 1 = 10, potem 1 + 0 + 1 = 10, a na końcu 0 + 0 + 1 = 1.' },
+  },
+  {
+    title: '🌍 XOR i światło na schodach',
+    widget: { type: 'polsumator', tryb: 'schody' },
+    text: `<p><b>XOR</b> („albo”) daje 1, gdy wejścia są <b>różne</b>, a 0, gdy takie same. Od OR różni się tylko przy dwóch jedynkach: 1 XOR 1 = 0.</p>
+      <p>Bawarski program informatyki podaje przykład: <b>światło na klatce schodowej to układ XOR</b> (<i>Antivalenz</i>). W modelu dwa przełączniki łączą się dwoma przewodami. Lampa świeci, gdy oba wskazują ten sam przewód. Pozycje opisaliśmy tak, żeby przy 0 i 0 było ciemno. Przewidź, przełączaj i porównaj z OR. Prawdziwa instalacja ma 230 V – nie rozkręcaj jej.</p>`,
+    remember: 'XOR daje 1, gdy wejścia są różne. Zmiana jednego wejścia zawsze zmienia wynik.',
+    hook: 'XOR to „albo – albo”: herbata albo kakao – ale nie oba naraz.',
+    check: { q: 'Ile wynosi 1 XOR 1?', options: ['0', '1'], answer: 0, explain: 'Wejścia są takie same, więc XOR daje 0. (OR dałby 1.)' },
+  },
+  {
+    title: '🌍 Półsumator = XOR + AND',
+    widget: { type: 'polsumator', tryb: 'bramki' },
+    text: `<p>Dodaj dwa bity A i B. Wynik ma dwie cyfry: <b>C</b> – przeniesienie i <b>S</b> – cyfrę, którą piszesz pod kreską. Wypisz wszystkie wejścia po kolei, jak liczenie dwójkowe: 00, 01, 10, 11 (tak radzą lekcje Oak).</p>
+      <p>Kolumna S wychodzi jak w tabeli <b>XOR</b>, a kolumna C – jak w tabeli <b>AND</b>. To jest <b>półsumator</b>. Zauważ: A (i B też) idzie naraz do <b>dwóch</b> bramek. Lekcje Oak ostrzegają przed błędnym przekonaniem, że jedno wejście może prowadzić tylko do jednej bramki.</p>`,
+    remember: 'Półsumator: S = A XOR B (suma), C = A AND B (przeniesienie).',
+    hook: 'XOR pisze, AND przenosi.',
+    check: { q: 'A = 1, B = 1. Co pokaże półsumator?', options: ['S = 0, C = 1', 'S = 1, C = 0'], answer: 0, explain: '1 + 1 = 10₂: S = 1 XOR 1 = 0, C = 1 AND 1 = 1.' },
+  },
+  {
+    title: '🌍 Łańcuch sumatorów – dodawanie z bramek',
+    widget: { type: 'polsumator', tryb: 'dodawanie', a: 6, b: 7 },
+    text: `<p>Półsumator ma tylko dwa wejścia – <b>nie doda przeniesienia</b> z poprzedniej kolumny. Dlatego „pół”. <b>Sumator pełny</b> dodaje trzy bity: A, B i przeniesienie (np. 1 + 1 + 1 = 11). W prawej kolumnie wystarczy półsumator, w każdej następnej pracuje sumator pełny, a przeniesienie wędruje w lewo – jak w słupku.</p>
+      <p>Bawarski program wymienia półsumator i sumator pełny jako przykładowe układy <b>jednostki arytmetycznej procesora</b> – na tej zasadzie można zbudować dodawanie w procesorze. Dla chętnych: sumator pełny da się złożyć z dwóch półsumatorów i bramki OR – sprawdziliśmy wszystkie 8 przypadków.</p>`,
+    remember: 'Sumator pełny dodaje A, B i przeniesienie. Łańcuch sumatorów to dodawanie w słupku.',
+    hook: 'Jak sztafeta: każda kolumna podaje przeniesienie następnej.',
+  },
+  {
+    title: 'Jak uczą tego w Bawarii i w Anglii – i pułapki',
+    svg: `<svg viewBox="0 0 400 268" role="img" aria-label="U góry: Bawaria – układ opisujesz schematem, tabelą wartości i wzorem, potem budujesz model z zestawu technicznego albo w symulatorze. Cztery pułapki: wynik 1 plus 1 zapisujesz dwójkowo jako 10 – to dwa, zapisane bez cyfry 2. XOR to nie OR – przy 1 i 1 XOR daje 0, a OR daje 1. Jedno wejście może iść do dwóch bramek – A idzie do XOR i do AND. NAND to AND i NOT, NOR to OR i NOT">
+      <rect x="8" y="8" width="384" height="62" rx="10" class="f1 s1"/>
+      <text x="20" y="32" class="tx-b">Bawaria: schemat, tabela, wzór</text>
+      <text x="20" y="56" class="tx-s">potem model: zestaw techniczny albo symulator</text>
+      <rect x="8" y="80" width="188" height="86" rx="10" class="f2 s2 sw"/>
+      <rect x="204" y="80" width="188" height="86" rx="10" class="f5 s5 sw"/>
+      <rect x="8" y="174" width="188" height="86" rx="10" class="f3 s3 sw"/>
+      <rect x="204" y="174" width="188" height="86" rx="10" class="f4 s4 sw"/>
+      <g class="tx-b"><text x="20" y="112">1 + 1 = 10₂</text><text x="216" y="112">XOR ≠ OR</text><text x="20" y="206">Jedno wejście</text><text x="216" y="206">NAND, NOR</text></g>
+      <g class="tx"><text x="20" y="142">dwa – bez cyfry 2</text><text x="216" y="142">1 i 1: XOR 0, OR 1</text><text x="20" y="236">A do XOR i AND</text><text x="216" y="236">AND/OR + NOT</text></g>
+    </svg>`,
+    text: `<p><b>Bawaria</b> (Realschule, moduł do wyboru „Układy logiczne”, ok. 14 godzin): uczeń opisuje układ <b>schematem</b>, <b>tabelą wartości</b> i <b>wzorem</b> (np. S = A XOR B), a potem buduje model z zestawu technicznego albo w symulatorze, testuje i poprawia. Ten sam moduł ma <b>NAND</b> (AND, a potem NOT) i <b>NOR</b> (OR, a potem NOT).</p>
+      <p><b>Anglia</b> (key stage 3, 11–14 lat): program wymaga prostych działań na liczbach dwójkowych – dodawanie jest tam przykładem. Lekcje Oak pokazują je tak samo jak dodawanie pisemne z matematyki.</p>`,
+    remember: 'Zawsze sprawdzaj wynik dziesiętnie. XOR ≠ OR. Jedno wejście może zasilać kilka bramek.',
+    check: { q: 'NOR to OR, a potem NOT. Ile daje NOR dla A = 0, B = 0?', options: ['1', '0'], answer: 0, explain: '0 OR 0 = 0, a NOT 0 = 1. NOR daje 1 tylko przy dwóch zerach.' },
   },
 ];

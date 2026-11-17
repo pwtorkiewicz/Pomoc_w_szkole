@@ -1,4 +1,4 @@
-/* Lekcje – 🌍 Świat, elektryczność i sterowanie. Klucze: 'elektrycznosc/magnesy', 'elektrycznosc/czujniki'. Format: docs/LEKCJE.md
+/* Lekcje – 🌍 Świat, elektryczność i sterowanie. Klucze: 'elektrycznosc/magnesy', 'elektrycznosc/obwody', 'elektrycznosc/czujniki'. Format: docs/LEKCJE.md
  * Treści oparte na działach z js/dane/swiat/elektrycznosc.js (ścieżka poza podstawą, źródła w polu basis). */
 window.LESSONS = window.LESSONS || {};
 
@@ -228,5 +228,105 @@ window.LESSONS['elektrycznosc/czujniki'] = [
     remember: 'Najpierw problem i algorytm, potem kod. Testuj granicę i awarię.',
     hook: 'Mikrokontroler to dyrygent: daje znak, ale sam nie gra na każdym instrumencie – grają muzycy (sterownik silnika i silnik).',
     check: { q: 'Mikrokontroler ma kręcić silnikiem. Jak je połączyć?', options: ['przez sterownik silnika', 'wprost do pinu mikrokontrolera'], answer: 0, explain: 'Mikrokontroler daje sygnał, nie moc. Silnik zasila sterownik silnika z osobnego źródła.' },
+  },
+];
+
+window.LESSONS['elektrycznosc/obwody'] = [
+  {
+    title: '🇵🇱 Przypomnienie: obwód zamknięty',
+    svg: `<svg viewBox="0 0 400 200" role="img" aria-label="Po lewej obwód zamknięty: bateria, przewody i żarówka tworzą pętlę – żarówka świeci. Po prawej w przewodzie jest przerwa – żarówka nie świeci. Na dole: prąd płynie tylko w zamkniętej pętli">
+      <rect x="10" y="10" width="185" height="145" rx="12" class="f3 s3"/>
+      <rect x="205" y="10" width="185" height="145" rx="12" class="f2 s2"/>
+      <g class="tx-b"><text x="22" y="36">✅ świeci</text><text x="217" y="36">❌ nie świeci</text></g>
+      <path d="M40,75 H89 M119,75 H165 V135 H107 M93,135 H40 V75" class="ln sw"/>
+      <path d="M93,121 V149" class="ln"/><path d="M107,127 V143" class="ln ob-gruba"/>
+      <path d="M104,54 V47 M89,60 L84,55 M119,60 L124,55" class="ln s4 sw"/>
+      <circle cx="104" cy="75" r="15" class="ob-jasna ln sw"/><path d="M94,65 L114,85 M114,65 L94,85" class="ln"/>
+      <path d="M235,75 H284 M314,75 H320 M340,75 H360 V135 H302 M288,135 H235 V75" class="ln sw"/>
+      <path d="M288,121 V149" class="ln"/><path d="M302,127 V143" class="ln ob-gruba"/>
+      <circle cx="299" cy="75" r="15" class="bg ln sw"/><path d="M289,65 L309,85 M309,65 L289,85" class="ln"/>
+      <text x="330" y="100" text-anchor="middle" class="tx-s">przerwa</text>
+      <text x="200" y="184" text-anchor="middle" class="tx">Prąd płynie tylko w zamkniętej pętli.</text>
+    </svg>`,
+    text: `<p>To znasz albo poznasz w polskiej szkole: na <b>zajęciach praktyczno-technicznych</b> w kl. 4–6 budujesz przedmiot z prostym obwodem, np. lampkę. Prąd płynie tylko wtedy, gdy bateria, przewody i żarówka tworzą <b>zamkniętą pętlę</b> – od jednego bieguna baterii do drugiego. <b>Wyłącznik</b> tę pętlę otwiera i zamyka.</p>
+      <p>Dalej to, czego uczą się rówieśnicy w innych krajach, a polska podstawa programowa szkoły podstawowej nie wymaga: <b>łączenie szeregowe i równoległe</b> oraz <b>elektromagnes</b>.</p>`,
+    remember: 'Prąd płynie tylko w zamkniętej pętli: od plusa baterii, przez żarówkę, do minusa.',
+    check: { q: 'Oba przewody od żarówki są przy plusie baterii. Czy żarówka świeci?', options: ['nie', 'tak'], answer: 0, explain: 'Nie ma pętli przez oba bieguny – jeden przewód musi iść do plusa, drugi do minusa.' },
+  },
+  {
+    title: 'Gdzie się tego uczą? Bateria „pcha” prąd',
+    svg: `<svg viewBox="0 0 400 255" role="img" aria-label="Gdzie uczą łączenia szeregowego i równoległego: Japonia – 9–11 lat, Singapur – 10–11 lat, Korea – klasy 5–6, Anglia – 8–11 lat, tylko szeregowo, Szwajcaria – klasy 3–6, Lehrplan 21. Na dole porównanie: bateria jak pompa, przewód jak rura, żarówka jak koło wodne – woda, czyli prąd, krąży w kółko">
+      <defs><marker id="a-sw-ob2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
+      <rect x="10" y="10" width="120" height="54" rx="10" class="f4 s4"/><rect x="140" y="10" width="120" height="54" rx="10" class="f3 s3"/><rect x="270" y="10" width="120" height="54" rx="10" class="f5 s5"/>
+      <rect x="10" y="72" width="185" height="54" rx="10" class="f1 s1"/><rect x="205" y="72" width="185" height="54" rx="10" class="f2 s2"/>
+      <g class="tx-b" text-anchor="middle"><text x="70" y="33">Japonia</text><text x="200" y="33">Singapur</text><text x="330" y="33">Korea</text><text x="102" y="95">Anglia</text><text x="297" y="95">Szwajcaria</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="70" y="54">9–11 lat</text><text x="200" y="54">10–11 lat</text><text x="330" y="54">kl. 5–6</text><text x="102" y="116">8–11 lat, tylko szeregowo</text><text x="297" y="116">kl. 3–6 (Lehrplan 21)</text></g>
+      <rect x="10" y="150" width="110" height="50" rx="10" class="f1 s1"/><rect x="145" y="150" width="110" height="50" rx="10" class="f1 s1"/><rect x="280" y="150" width="110" height="50" rx="10" class="f1 s1"/>
+      <g class="tx" text-anchor="middle"><text x="65" y="172">🔋 bateria</text><text x="200" y="172">〰️ przewód</text><text x="335" y="172">💡 żarówka</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="65" y="192">= pompa</text><text x="200" y="192">= rura</text><text x="335" y="192">= koło wodne</text></g>
+      <g class="ln"><path d="M121,175 H141" marker-end="url(#a-sw-ob2)"/><path d="M256,175 H276" marker-end="url(#a-sw-ob2)"/><path d="M335,201 V222 H65 V205" class="dash" marker-end="url(#a-sw-ob2)"/></g>
+      <text x="200" y="246" text-anchor="middle" class="tx-s">woda (prąd) krąży w kółko – to nasze porównanie</text>
+    </svg>`,
+    text: `<p>Łączenia szeregowego i równoległego uczą się dzieci w <b>Japonii</b> (4. klasa – baterie), <b>Singapurze</b> (Primary 5 – żarówki), <b>Korei</b> (kl. 5–6 – baterie szeregowo) i <b>Szwajcarii</b> (Lehrplan 21, kl. 3–6). W <b>Anglii</b> w szkole podstawowej – tylko szeregowo.</p>
+      <p>Bateria nie ma w sobie zapasu prądu. Daje <b>„pchnięcie”</b> – <b>napięcie</b> w woltach (V); paluszek AA ma ok. 1,5 V. Szwajcarski program porównuje prąd do wody płynącej w rurach.</p>`,
+    remember: 'Bateria pcha prąd – napięcie w woltach (V). Odczytujesz je z napisu, nie z wielkości baterii.',
+    hook: 'Bateria jak pompa w akwarium: woda krąży w kółko, a pompa tylko ją pcha. Przerwiesz rurę – nic nie płynie.',
+    check: { q: 'Duża i mała bateria mają ten sam napis: 1,5 V. Która mocniej „pcha” prąd?', options: ['obie tak samo', 'ta większa'], answer: 0, explain: 'O napięciu mówi napis V, nie wielkość. Lekcje Oak opisują „większa bateria – większe napięcie” jako częsty błąd.' },
+  },
+  {
+    title: '🌍 Japonia, 4. klasa: dwie baterie',
+    widget: { type: 'obwody', tryb: 'baterie' },
+    text: `<p>Japońskie dzieci w 4. klasie zmieniają <b>liczbę baterii</b> i <b>sposób ich połączenia</b> – i patrzą na żaróweczkę i silnik.</p>
+      <ul><li><b>Szeregowo</b> – plus jednej do minusa drugiej: 1,5 V + 1,5 V = 3 V. Jaśniej, szybciej.</li>
+        <li><b>Równolegle</b> – plus do plusa, minus do minusa: napięcie jak jednej baterii, ale starczą na dłużej.</li>
+        <li><b>Odwrócone</b> – prąd płynie w drugą stronę: silnik kręci się w drugą stronę.</li></ul>
+      <p>Ustaw obwód, <b>najpierw przewidź</b>, potem sprawdź.</p>`,
+    remember: 'Szeregowo: napięcia się dodają. Równolegle: napięcie jak jednej baterii, ale dłużej. Odwrócona bateria – prąd w drugą stronę.',
+    hook: 'Szeregowo jak schody: druga bateria podnosi wyżej. Równolegle jak dwa zbiorniki na tej samej wysokości – wyżej nie jest, ale wody starczy na dłużej.',
+    check: { q: 'Silnik kręci się w prawo. Odwracasz baterię. Co zrobi silnik?', options: ['zakręci się w lewo', 'dalej w prawo'], answer: 0, explain: 'Prąd płynie w drugą stronę, więc silnik kręci się w drugą stronę.' },
+  },
+  {
+    title: '🌍 Dwie żarówki: szeregowo czy równolegle?',
+    widget: { type: 'obwody', tryb: 'zarowki' },
+    text: `<p>Singapur (Primary 5) i Szwajcaria (kl. 3–6) uczą łączyć dwie żarówki na dwa sposoby. Anglia w szkole podstawowej – tylko szeregowo.</p>
+      <ul><li><b>Szeregowo</b> – jedna droga: wykręcisz jedną, gasną obie. Świecą słabiej niż jedna.</li>
+        <li><b>Równolegle</b> – każda ma swoją drogę: wykręcisz jedną, druga świeci. Świecą jaśniej niż w szeregu. Tak połączone są lampy w domu.</li></ul>
+      <p>Wykręcaj żarówki i zmieniaj połączenie. Zawsze najpierw przewidź.</p>`,
+    remember: 'Szeregowo – jedna droga, wszystko albo nic. Równolegle – każda żarówka swoją drogą.',
+    hook: 'Szeregowo jak jedna ścieżka przez jeden most – zamkniesz most i nikt nie przejdzie. Równolegle jak dwa mosty – jeden zamknięty, drugim dalej się chodzi.',
+    check: { q: 'W domu przepaliła się żarówka w kuchni, a w pokoju światło dalej świeci. Jak połączone są lampy?', options: ['równolegle', 'szeregowo'], answer: 0, explain: 'Lampy w domu łączy się równolegle – awaria jednej nie gasi pozostałych.' },
+  },
+  {
+    title: '🌍 Elektromagnes: magnes na prąd',
+    widget: { type: 'obwody', tryb: 'elektromagnes' },
+    text: `<p>W <b>Japonii</b> (5. klasa) i <b>Korei</b> (kl. 5–6) dzieci budują elektromagnes: drut nawinięty na żelazny gwóźdź – <b>zwojnica</b> – i bateria. Działa <b>tylko wtedy, gdy płynie prąd</b>. Więcej zwojów albo większy prąd – silniej. Odwrócisz baterię – <b>N i S się zamieniają</b>.</p>
+      <p><b>Uczciwy test</b> (Japonia): zmieniaj jedną rzecz naraz, a drut zawsze tej samej długości. W prawdziwym doświadczeniu drut się grzeje – podłączaj go tylko na kilka sekund.</p>`,
+    remember: 'Elektromagnes = zwoje + żelazny rdzeń + prąd. Więcej zwojów albo prądu – silniej. Bez prądu – nie działa.',
+    hook: 'Elektromagnes jak lampa z wyłącznikiem: włączasz – działa, wyłączasz – gaśnie.',
+    check: { q: 'Sprawdzasz, czy liczba zwojów zmienia siłę elektromagnesu. Co zostawiasz bez zmian?', options: ['baterię i długość drutu', 'liczbę zwojów'], answer: 0, explain: 'Zmieniasz tylko to, co badasz – zwoje. Bateria, drut i spinacze zostają takie same.' },
+  },
+  {
+    title: 'Schemat i pułapki – podsumowanie',
+    svg: `<svg viewBox="0 0 400 272" role="img" aria-label="Symbole na schemacie: ogniwo – dwie kreski, dłuższa to plus; żarówka – kółko z krzyżykiem; wyłącznik – linia z uniesioną klapką, tu otwarty. Niżej schemat: ogniwo i dwie żarówki szeregowo, narysowane symbolami. Na dole ostrzeżenie: zwarcie – plus i minus połączone samym drutem, bateria i drut się grzeją, nigdy tak nie rób">
+      <rect x="8" y="8" width="124" height="86" rx="10" class="f4 s4"/><rect x="138" y="8" width="124" height="86" rx="10" class="f4 s4"/><rect x="268" y="8" width="124" height="86" rx="10" class="f4 s4"/>
+      <path d="M22,34 H64 M76,34 H118" class="ln sw"/><path d="M64,18 V50" class="ln"/><path d="M76,25 V43" class="ln ob-gruba"/>
+      <path d="M152,34 H186 M214,34 H248" class="ln sw"/><circle cx="200" cy="34" r="14" class="bg ln sw"/><path d="M190,24 L210,44 M210,24 L190,44" class="ln"/>
+      <path d="M282,34 H310 M350,34 H378" class="ln sw"/><path d="M310,34 L344,16" class="ln sw"/><circle cx="310" cy="34" r="4" class="ob-wezel"/><circle cx="350" cy="34" r="4" class="ob-wezel"/>
+      <g class="tx" text-anchor="middle"><text x="70" y="70">ogniwo</text><text x="200" y="70">żarówka</text><text x="330" y="70">wyłącznik</text></g>
+      <g class="tx-s" text-anchor="middle"><text x="70" y="87">długa kreska: +</text><text x="200" y="87">kółko i krzyżyk</text><text x="330" y="87">otwarty</text></g>
+      <path d="M60,124 H136 M164,124 H236 M264,124 H340 V176 H205 M195,176 H60 V124" class="ln sw"/>
+      <path d="M195,162 V190" class="ln"/><path d="M205,168 V184" class="ln ob-gruba"/>
+      <circle cx="150" cy="124" r="14" class="bg ln sw"/><path d="M140,114 L160,134 M160,114 L140,134" class="ln"/>
+      <circle cx="250" cy="124" r="14" class="bg ln sw"/><path d="M240,114 L260,134 M260,114 L240,134" class="ln"/>
+      <text x="200" y="208" text-anchor="middle" class="tx-s">dwie żarówki szeregowo – symbolami, linijką</text>
+      <rect x="8" y="218" width="384" height="48" rx="10" class="f2 s2 sw"/>
+      <text x="20" y="238" class="tx-b">⚠️ Zwarcie: + i − samym drutem</text>
+      <text x="20" y="258" class="tx">bateria i drut się grzeją – nigdy tak!</text>
+    </svg>`,
+    text: `<p>Anglia (Year 6), Singapur i Szwajcaria uczą czytać <b>schematy</b>; w Polsce poznasz je na fizyce w kl. 7–8. Schemat to nie mapa ani zdjęcie: <b>symbole i proste linie</b>, rysowane linijką (lekcje Oak).</p>
+      <p><b>Pułapki:</b> oba przewody przy jednym biegunie – obwód nie działa; dioda i brzęczyk działają tylko w jedną stronę. <b>Bezpieczeństwo:</b> tylko baterie 1,5 V, nigdy gniazdko; nie łącz plusa z minusem samym drutem; nie mieszaj różnych baterii; elektromagnes podłączasz tylko na chwilę.</p>`,
+    remember: 'Ogniwo – dwie kreski (dłuższa to plus), żarówka – kółko z krzyżykiem. Zwarcie grzeje – nigdy!',
+    hook: 'Schemat jest jak plan metra: nie pokazuje prawdziwych odległości, tylko co z czym jest połączone.',
+    check: { q: 'Na schemacie widzisz kółko z krzyżykiem. Co to jest?', options: ['żarówka', 'ogniwo'], answer: 0, explain: 'Kółko z krzyżykiem to żarówka. Ogniwo to dwie równoległe kreski.' },
   },
 ];
