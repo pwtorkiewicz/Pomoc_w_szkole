@@ -27,10 +27,10 @@ Cel (decyzja rodzica, 14.11.2026): dzieci poznają to, czego uczą się ich rów
 
 | Wątek (id przedmiotu) | Działy – od najłatwiejszego (✅ zrobione) |
 |---|---|
-| 🔢 Liczenie po świecie (`liczenie`) | ✅ Tabliczka mnożenia do 12 × 12 (🌱 8–10 lat, Anglia) · [ ] Soroban – japońskie liczydło (🌱, Japonia) · [ ] 4 kroki rozwiązywania zadań – Pólya (🌿, Singapur) |
+| 🔢 Liczenie po świecie (`liczenie`) | ✅ Tabliczka mnożenia do 12 × 12 (🌱 8–10 lat, Anglia) · ✅ Soroban – japońskie liczydło (🌱 8–10 lat, Japonia kl. 3–4; standard różnicy 17.11) · [ ] 4 kroki rozwiązywania zadań – Pólya (🌿, Singapur) |
 | ⚙️ Maszyny i konstrukcje (`maszyny`) | [ ] Huśtawka i równowaga (🌱, Bawaria, Korea) · ✅ Mechanizmy: dźwignia, krążek, koła zębate, krzywka (🌿 9–12 lat, Anglia) · ✅ Mosty i trójkąty (🌿 9–11 lat, Bawaria, Anglia, Szwajcaria – Lehrplan 21; standard różnicy 16.11) · [ ] Pojazd: napęd, kierownica, hamulec (🌿, Korea) · [ ] Maszyny proste i złota reguła mechaniki (🌳, Szwajcaria, Anglia) |
-| ⚡ Elektryczność i sterowanie (`elektrycznosc`) | ✅ Magnesy (🌱 7–9 lat, Anglia, Japonia, Singapur; standard różnicy) · [ ] Czy żarówka się zaświeci? Obwód (🌱, Japonia, Anglia) · [ ] Obwody szeregowe i równoległe, elektromagnes (🌿, Japonia, Szwajcaria) · [ ] Z czego jest robot (🌿, Estonia, Korea, Finlandia) · ✅ Czujniki i sterowanie (🌳 12–15 lat, Anglia, Japonia, Korea, Szwajcaria – Lehrplan 21, Estonia, Bawaria; wymaga: bramki; standard różnicy 16.11) |
-| 💻 Informacja i algorytmy (`informacja`) | [ ] Algorytm z warunkiem (🌱, Estonia, Australia) · [ ] Obrazek z zer i jedynek (🌿, USA) · [ ] Kody wykrywające błędy (🌿, Szwajcaria) · ✅ Logika i bramki logiczne (🌳 12–15 lat, Anglia) · [ ] Półsumator i dodawanie dwójkowe (🌳, Bawaria, Anglia; wymaga: bramki) · [ ] Wyszukiwanie binarne (🌳, Szwajcaria, Anglia) · [ ] Jak uczy się sztuczna inteligencja (🌳, Korea, Singapur) |
+| ⚡ Elektryczność i sterowanie (`elektrycznosc`) | ✅ Magnesy (🌱 7–9 lat, Anglia, Japonia, Singapur; standard różnicy) · [ ] Czy żarówka się zaświeci? Obwód (🌱, Japonia, Anglia) · ✅ Obwody szeregowe i równoległe, elektromagnes (🌿 9–12 lat, Japonia, Singapur, Korea, Anglia, Szwajcaria – Lehrplan 21; wymaga: magnesy; standard różnicy 17.11) · [ ] Z czego jest robot (🌿, Estonia, Korea, Finlandia) · ✅ Czujniki i sterowanie (🌳 12–15 lat, Anglia, Japonia, Korea, Szwajcaria – Lehrplan 21, Estonia, Bawaria; wymaga: bramki; standard różnicy 16.11) |
+| 💻 Informacja i algorytmy (`informacja`) | [ ] Algorytm z warunkiem (🌱, Estonia, Australia) · [ ] Obrazek z zer i jedynek (🌿, USA) · [ ] Kody wykrywające błędy (🌿, Szwajcaria) · ✅ Logika i bramki logiczne (🌳 12–15 lat, Anglia) · ✅ Dodawanie dwójkowe i półsumator (🌳 12–15 lat, Bawaria – Realschule IT 2.7.1 i gimnazjum NT 7, Anglia KS3; wymaga: bramki; standard różnicy 17.11) · [ ] Wyszukiwanie binarne (🌳, Szwajcaria, Anglia) · [ ] Jak uczy się sztuczna inteligencja (🌳, Korea, Singapur) |
 | 🧪 Jak pracuje inżynier (`inzynier`) | [ ] Uczciwy test (🌱, Anglia, USA) · [ ] Proces projektowania: problem, kryteria, prototyp, test (🌿, USA NGSS, Australia) |
 | 🌏 Szkoły świata (`szkoly`) | [ ] krótkie, sprawdzone ciekawostki o szkołach (np. key stages w Anglii, skala ocen w Niemczech) – tylko z oficjalnych źródeł |
 
@@ -38,11 +38,12 @@ Przedmiot pojawia się w aplikacji dopiero z pierwszym działem (silnik nie poka
 
 Rozszerzenia istniejących działów:
 - [ ] Mechanizmy: równia pochyła, klin, reguła równowagi dźwigni (krok lekcji).
-- [ ] Bramki: XOR (Bawaria, Realschule IT: „Antivalenz”), światło schodowe z dwoma włącznikami.
+- [x] Bramki: XOR (Bawaria, Realschule IT: „Antivalenz”), światło schodowe z dwoma włącznikami – zrobione w dziale „Dodawanie dwójkowe i półsumator” (17.11.2026).
 
 Ustalenia z researchu:
 - **Singapurskiego modelu paskowego nie ma** w sylabusie matematyki MOE 2021 – skreślony; zamiennik: „4 kroki Pólyi” (jest w sylabusie).
-- **Soroban** ma oficjalne oparcie (MEXT, matematyka kl. 3); budowę liczydła trzeba wziąć ze źródła encyklopedycznego.
+- **Soroban** ma oficjalne oparcie (MEXT, matematyka kl. 3–4; komentarz: dopełnienia do 5 i 10 są w kl. 3). **Budowy liczydła (1 koralik = 5 nad belką, 4 po 1 pod belką) nadal nie potwierdzono w encyklopedii** – komentarz MEXT jej nie opisuje; hosty kotobank.jp i encyklopedia.pwn.pl dodano do sieci środowiska 17.11.2026, ale pobranie z sesji zablokowała kontrola uprawnień. Oznaczone w `basis` i na stronie Źródła – do sprawdzenia.
+- **Korekta mapy (obwody):** Japonia w kl. 4 łączy szeregowo i równolegle **baterie**, nie żarówki; żarówki szeregowo i równolegle – Singapur P5 i Zurych (Lehrplan 21, NMG.5.2); Korea wyklucza żarówki; Anglia w KS2 tylko obwody szeregowe.
 - Decyzje czekające na rodzica: mediana i wykres pudełkowy, twierdzenie odwrotne do Pitagorasa (kolidują z wyłączeniami egzaminu – nie przed majem 2027), „Bawaria” zamiast „Niemcy” w opisach – sekcja 9 mapy.
 
 ## Stan na koniec sesji 14.11.2026 – od czego zacząć w nowej sesji
@@ -84,7 +85,13 @@ Ustalenia z researchu:
 **Historia przebudowy Magnesów:**
 - **Recenzja po pauzie (16.11.2026):** adwersaryjna recenzja silnika i Magnesów (4 wymiary, 2 sceptyków na znalezisko; wyniki: `docs/research/research_notes/Magnesy – standard różnicy/recenzja.json`) – 47 znalezisk, 25 potwierdzonych, wszystkie naprawione, oraz trafne sporne: „polska podstawa tego nie wymaga” zamiast „w polskiej szkole tego nie ma”; Singapur bez elektromagnesu; łańcuch badacza oznaczony jako uproszczony (w MEXT jest też „zaplanuj”); gwóźdź jako nasz przykład; NGSS zamiast „USA”; lekcje Oak odróżnione od programu Anglii; widżet: twarda granica zasięgu zamieniona na „za słaba siła”, blokada zmiany przewidywania po wyniku; pytania: x1taom (sztabkowy, bez „bieguny na końcach”), zsub6c i check (odwrócenie końcami), 8r8l95, 80j4m8, z0r2mi, iidode, sayExplain; bezpieczeństwo: bez małych mocnych magnesów neodymowych, połknięty magnes + metal, zatrzask z magnesem na stałe, lektor 🔊 na kartach „Zrób”, lekcja ZPE po angielsku przeniesiona do części dla rodzica; silnik: karta „Zrób” nie liczy się już jako lekcja w dzienniku, klawiatura nie odpowiada od razu na etap „Dlaczego?”, nowe-id.js zna id kart i usuniętych pytań, przegląd przechodzi pytania dwuetapowe i tryb młodszego ucznia.
 
-**Następny krok (propozycja):** zostały rozszerzenia istniejących działów (lista wyżej) i tura 2 – 🔢 Soroban (🌱; potrzebne źródło encyklopedyczne o budowie liczydła), ⚡ Obwody szeregowe i równoległe, elektromagnes (🌿, Japonia kl. 4–5, Szwajcaria – trzeba pobrać Lehrplan 21), 💻 Półsumator i dodawanie dwójkowe (🌳, Bawaria, Anglia). Przed pisaniem: cytaty z oryginałów (pobierać `curl`, pliki do katalogu tymczasowego, nie do repozytorium), wiedza z ZPE, sprawdzenie w tekście polskiej podstawy.
+**Tura 2 (16–17.11.2026) – zrobione:**
+- 🔢 **Soroban** (🌱 8–10 lat): przypomnienie z polskich kl. 1–3 (system dziesiątkowy, liczmany) i rozszerzenia z MEXT (piątka, dziesiątka, pręt = miejsce, duże liczby); widżet `soroban` (klik i klawiatura, tryby: swobodny, „ustaw liczbę”, „dodaj”); 14 fiszek, 25 pytań (6 z rysunkiem), 2 karty „Zrób” (`yzfowd`, `dje35f`), 7 materiałów.
+- ⚡ **Obwody szeregowe i równoległe, elektromagnes** (🌿 9–12 lat, wymaga: magnesy): widżet `obwody` (baterie / żarówki / elektromagnes – model uproszczony, najpierw przewidywanie); 22 fiszki, 31 pytań (7 dwuetapowych, 4 mity z Oak, 5 ze schematem), 3 karty „Zrób” (`yl0z2c`, `6fjf5k`, projekt `w963zt`), 15 materiałów.
+- 💻 **Dodawanie dwójkowe i półsumator** (🌳 12–15 lat, wymaga: bramki): XOR i światło schodowe (przełączniki przełączne z trzema zaciskami), półsumator, sumator pełny; widżet `polsumator` (bramki / schody / dodawanie 4-bitowe); 22 fiszki, 31 pytań (5 dwuetapowych, 3 mity z Oak), 2 karty „Zrób” (`7s1mpj`, `l37qad`), 13 materiałów; niezależna recenzja – 10 uwag poprawionych (m.in. „1 + 1 = 10₂ to dwa”, pytania o zapis zamiast wartości, przełączniki schodowe).
+- Do sprawdzenia w praktyce: karty „Zrób” wszystkich trzech działów (soroban z pudełka, żaróweczki i elektromagnes z gwoździa – czy 1 m drutu i 2 baterie AA dają wyraźny wynik; światło schodowe), budowa sorobanu w encyklopedii.
+
+**Następny krok (propozycja):** rozszerzenia istniejących działów (mechanizmy: równia pochyła, klin, reguła równowagi dźwigni) i kolejne działy z tabeli – np. 🌱 „Czy żarówka się zaświeci? Obwód” (pomost do „Obwodów”), 🌿 „Obrazek z zer i jedynek”, 🧪 „Uczciwy test”. Przed pisaniem: cytaty z oryginałów (`curl`, pliki do katalogu tymczasowego), wiedza z ZPE, sprawdzenie w tekście polskiej podstawy, potem niezależna recenzja.
 
 **Otwarte pytania do rodzica:**
 - Ścieżka niemiecka dla siostrzenicy: kraj związkowy, klasa i typ szkoły, czy dziecko czyta po polsku (osobna ścieżka w grupie 🇩🇪 Niemcy – nie część „Świata”).
@@ -108,6 +115,7 @@ Ustalenia z researchu:
 - 14.11.2026 – rozszerzone źródła (przewodniki ministerstw, otwarte materiały państwowe; decyzja rodzica), zakładka „🔗 Materiały” w silniku, pilotaż na „Magnesach”.
 - 14–16.11.2026 – standard różnicy, zakładki „🛠️ Zrób”, „🔮 Przewiduj i wyjaśnij”, „👪 Dla rodzica”; Magnesy przebudowane i zrecenzowane.
 - 16.11.2026 – „🔁 Powtórka na dziś” (pilotaż); Mosty i trójkąty oraz Czujniki i sterowanie według standardu różnicy, po recenzji.
+- 16–17.11.2026 – tura 2: Soroban, Obwody szeregowe i równoległe z elektromagnesem, Dodawanie dwójkowe i półsumator.
 
 ## Osobny temat: ścieżka niemiecka dla siostrzenicy
 
