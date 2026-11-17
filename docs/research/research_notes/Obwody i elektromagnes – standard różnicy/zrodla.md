@@ -12,6 +12,7 @@ Szukane słowa: szeregow, równoleg, elektromagnes, obwód/obwod, prąd elektr, 
 |---|---|---|
 | ed. wczesnoszkolna, technika, s. 42 | „d) z wykorzystaniem prądu elektrycznego: lampion, dekoracja świąteczna” | kl. I–III: tylko wykonanie przedmiotu, bez wiedzy o obwodzie |
 | technika kl. IV–VI, III.1b, s. 207 | „elementów elektrotechnicznych i elektronicznych (np. źródła prądu elektrycznego, żarówki, wyłączniki, przełączniki, bezpieczniki, rezystory, diody, tranzystory, kondensatory, cewki indukcyjne)” | rozpoznaje elementy; o łączeniu nic |
+| technika kl. IV–VI, V.3, s. 208 | „projektuje i konstruuje, m.in. z gotowych elementów, proste urządzenia i mechanizmy, zabawki, roboty, modele mechaniczno-elektroniczne, w tym programowalne” | przypomnienie: technika kl. 4–6 (dotychczasowa; w 2026/2027 kl. V–VI) |
 | fizyka kl. VII–VIII, VI.3, s. 177 | „rozróżnia przewodniki od izolatorów oraz wskazuje ich przykłady” | przypomnienie: fizyka kl. VII–VIII |
 | fizyka, VI.13, s. 178 | „rysuje schematy obwodów elektrycznych składających się z jednego źródła energii, jednego odbiornika, mierników i wyłączników; posługuje się symbolami graficznymi tych elementów” | schematy i symbole – fizyka kl. VII–VIII; **jeden** odbiornik |
 | fizyka, VI.15d, s. 178 | „łączy według podanego schematu obwód elektryczny składający się ze źródła (akumulatora, zasilacza), odbiornika (żarówki, brzęczyka, silnika, diody, grzejnika, opornika), wyłączników, woltomierzy, amperomierzy” | |
@@ -134,3 +135,14 @@ NMG (Natur, Mensch, Gesellschaft): https://zh.lehrplan.ch/lehrplan_printout.php?
 - Konkretne napięcia żarówek z zestawów (np. 2,5 V, 3,5 V) – nie podajemy liczb; piszemy „dobrana do baterii” (Korea).
 - NHK for School, BBC – nie linkujemy (jak w poprzednich działach); zh.lehrplan.ch i moe.go.kr – poza `MATERIAL_HOSTS`.
 - Karty „Zrób” nie były wykonane naprawdę.
+
+## 10. Poprawki po niezależnej recenzji (17.11.2026)
+
+- Etykiety klas: zajęcia praktyczno-techniczne (Dz.U. 2026 poz. 378) obejmują w 2026/2027 tylko kl. 4; kl. 5–6 mają technikę z Dz.U. 2024 poz. 996 (III.1b, V.3 s. 208) – piszemy „ZPT kl. 4 / technika kl. 4–6”. Przewodniki i izolatory w dotychczasowej podstawie – fizyka kl. 7–8 (VI.3 należy do bloku VII–VIII), nie „kl. 7”.
+- Korea ([6과15-03], komentarz) wiąże siłę elektromagnesu tylko z **liczbą baterii**; liczba zwojów – Japonia. Poprawione w ściądze, lekcji i widżecie.
+- Lehrplan NMG.5.2.1c: „Analogie zu strömendem Wasser” – rury i pompa to nasze porównanie (oznaczone).
+- Singapur P5: „Construct simple circuits from circuit diagrams” – budowa według schematu, nie rysowanie; rysowanie i czytanie – Anglia (Year 6), Zurych (1e).
+- Anglia: „only about series circuits, not parallel circuits” stoi w uwagach do programu (notes and guidance, non-statutory) – tak opisane.
+- Długość drutu (nasze przeliczenie): obwód zwoju ≈ π·(d gwoździa + ok. 0,6 mm izolowanego drutu); gwóźdź 5 mm – 40 zwojów ≈ 0,70 m, gwóźdź 6 mm – ≈ 0,83 m; z przewodami do koszyczka 1 m to za mało → „ok. 1,5 m”.
+- Bezpieczeństwo (nasze zasady, oparte na ZPE – film samouczek, polecenie 2: prąd zwarcia zależy od rodzaju baterii): tylko zwykłe baterie alkaliczne albo cynkowo-węglowe, nowe, z jednego opakowania – nie akumulatorki i nie litowe; łącząc równolegle zawsze plus do plusa (odwrócona bateria w połączeniu równoległym zwiera obie baterie). Do próby z 1 baterią potrzebny koszyczek na 1 baterię.
+- Żaróweczki w szeregu przy 2 bateriach mogą się tylko lekko żarzyć – w karcie „zaciemnij pokój i patrz z bliska”.

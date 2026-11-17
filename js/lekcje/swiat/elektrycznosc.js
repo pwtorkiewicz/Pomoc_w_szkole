@@ -248,14 +248,14 @@ window.LESSONS['elektrycznosc/obwody'] = [
       <text x="330" y="100" text-anchor="middle" class="tx-s">przerwa</text>
       <text x="200" y="184" text-anchor="middle" class="tx">Prąd płynie tylko w zamkniętej pętli.</text>
     </svg>`,
-    text: `<p>To znasz albo poznasz w polskiej szkole: na <b>zajęciach praktyczno-technicznych</b> w kl. 4–6 budujesz przedmiot z prostym obwodem, np. lampkę. Prąd płynie tylko wtedy, gdy bateria, przewody i żarówka tworzą <b>zamkniętą pętlę</b> – od jednego bieguna baterii do drugiego. <b>Wyłącznik</b> tę pętlę otwiera i zamyka.</p>
+    text: `<p>To znasz albo poznasz w polskiej szkole: na <b>zajęciach praktyczno-technicznych</b> (kl. 4, nowa podstawa) budujesz przedmiot z prostym obwodem, np. lampkę, a na technice (kl. 4–6, dotychczasowa podstawa) poznajesz elementy elektryczne. Prąd płynie tylko wtedy, gdy bateria, przewody i żarówka tworzą <b>zamkniętą pętlę</b> – od jednego bieguna baterii do drugiego. <b>Wyłącznik</b> tę pętlę otwiera i zamyka.</p>
       <p>Dalej to, czego uczą się rówieśnicy w innych krajach, a polska podstawa programowa szkoły podstawowej nie wymaga: <b>łączenie szeregowe i równoległe</b> oraz <b>elektromagnes</b>.</p>`,
     remember: 'Prąd płynie tylko w zamkniętej pętli: od plusa baterii, przez żarówkę, do minusa.',
     check: { q: 'Oba przewody od żarówki są przy plusie baterii. Czy żarówka świeci?', options: ['nie', 'tak'], answer: 0, explain: 'Nie ma pętli przez oba bieguny – jeden przewód musi iść do plusa, drugi do minusa.' },
   },
   {
     title: 'Gdzie się tego uczą? Bateria „pcha” prąd',
-    svg: `<svg viewBox="0 0 400 255" role="img" aria-label="Gdzie uczą łączenia szeregowego i równoległego: Japonia – 9–11 lat, Singapur – 10–11 lat, Korea – klasy 5–6, Anglia – 8–11 lat, tylko szeregowo, Szwajcaria – klasy 3–6, Lehrplan 21. Na dole porównanie: bateria jak pompa, przewód jak rura, żarówka jak koło wodne – woda, czyli prąd, krąży w kółko">
+    svg: `<svg viewBox="0 0 400 255" role="img" aria-label="Gdzie uczą obwodów i elektromagnesu: Japonia – 9–11 lat (kl. 4 – baterie, kl. 5 – elektromagnes), Singapur – 10–11 lat, Korea – klasy 5–6, Anglia – 8–11 lat, według uwag do programu tylko szeregowo, Szwajcaria – klasy 3–6, Lehrplan 21. Na dole nasze porównanie: bateria jak pompa, przewód jak rura, żarówka jak koło wodne – woda, czyli prąd, krąży w kółko">
       <defs><marker id="a-sw-ob2" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>
       <rect x="10" y="10" width="120" height="54" rx="10" class="f4 s4"/><rect x="140" y="10" width="120" height="54" rx="10" class="f3 s3"/><rect x="270" y="10" width="120" height="54" rx="10" class="f5 s5"/>
       <rect x="10" y="72" width="185" height="54" rx="10" class="f1 s1"/><rect x="205" y="72" width="185" height="54" rx="10" class="f2 s2"/>
@@ -267,8 +267,8 @@ window.LESSONS['elektrycznosc/obwody'] = [
       <g class="ln"><path d="M121,175 H141" marker-end="url(#a-sw-ob2)"/><path d="M256,175 H276" marker-end="url(#a-sw-ob2)"/><path d="M335,201 V222 H65 V205" class="dash" marker-end="url(#a-sw-ob2)"/></g>
       <text x="200" y="246" text-anchor="middle" class="tx-s">woda (prąd) krąży w kółko – to nasze porównanie</text>
     </svg>`,
-    text: `<p>Łączenia szeregowego i równoległego uczą się dzieci w <b>Japonii</b> (4. klasa – baterie), <b>Singapurze</b> (Primary 5 – żarówki), <b>Korei</b> (kl. 5–6 – baterie szeregowo) i <b>Szwajcarii</b> (Lehrplan 21, kl. 3–6). W <b>Anglii</b> w szkole podstawowej – tylko szeregowo.</p>
-      <p>Bateria nie ma w sobie zapasu prądu. Daje <b>„pchnięcie”</b> – <b>napięcie</b> w woltach (V); paluszek AA ma ok. 1,5 V. Szwajcarski program porównuje prąd do wody płynącej w rurach.</p>`,
+    text: `<p>Obwodów i elektromagnesu uczą się dzieci w <b>Japonii</b> (4. klasa – baterie szeregowo i równolegle, 5. klasa – elektromagnes), <b>Singapurze</b> (Primary 5 – żarówki szeregowo i równolegle), <b>Korei</b> (kl. 5–6 – baterie tylko szeregowo, elektromagnes) i <b>Szwajcarii</b> (Lehrplan 21, kl. 3–6). W <b>Anglii</b> w szkole podstawowej – według uwag do programu tylko szeregowo.</p>
+      <p>Bateria nie ma w sobie zapasu prądu. Daje <b>„pchnięcie”</b> – <b>napięcie</b> w woltach (V); paluszek AA ma ok. 1,5 V. Szwajcarski program porównuje prąd do płynącej wody; rury i pompa na rysunku to nasze porównanie.</p>`,
     remember: 'Bateria pcha prąd – napięcie w woltach (V). Odczytujesz je z napisu, nie z wielkości baterii.',
     hook: 'Bateria jak pompa w akwarium: woda krąży w kółko, a pompa tylko ją pcha. Przerwiesz rurę – nic nie płynie.',
     check: { q: 'Duża i mała bateria mają ten sam napis: 1,5 V. Która mocniej „pcha” prąd?', options: ['obie tak samo', 'ta większa'], answer: 0, explain: 'O napięciu mówi napis V, nie wielkość. Lekcje Oak opisują „większa bateria – większe napięcie” jako częsty błąd.' },
@@ -278,7 +278,7 @@ window.LESSONS['elektrycznosc/obwody'] = [
     widget: { type: 'obwody', tryb: 'baterie' },
     text: `<p>Japońskie dzieci w 4. klasie zmieniają <b>liczbę baterii</b> i <b>sposób ich połączenia</b> – i patrzą na żaróweczkę i silnik.</p>
       <ul><li><b>Szeregowo</b> – plus jednej do minusa drugiej: 1,5 V + 1,5 V = 3 V. Jaśniej, szybciej.</li>
-        <li><b>Równolegle</b> – plus do plusa, minus do minusa: napięcie jak jednej baterii, ale starczą na dłużej.</li>
+        <li><b>Równolegle</b> – plus do plusa, minus do minusa: napięcie jak jednej baterii, ale starczą na dłużej. Zawsze plus do plusa – odwrócona bateria to zwarcie!</li>
         <li><b>Odwrócone</b> – prąd płynie w drugą stronę: silnik kręci się w drugą stronę.</li></ul>
       <p>Ustaw obwód, <b>najpierw przewidź</b>, potem sprawdź.</p>`,
     remember: 'Szeregowo: napięcia się dodają. Równolegle: napięcie jak jednej baterii, ale dłużej. Odwrócona bateria – prąd w drugą stronę.',
@@ -288,7 +288,7 @@ window.LESSONS['elektrycznosc/obwody'] = [
   {
     title: '🌍 Dwie żarówki: szeregowo czy równolegle?',
     widget: { type: 'obwody', tryb: 'zarowki' },
-    text: `<p>Singapur (Primary 5) i Szwajcaria (kl. 3–6) uczą łączyć dwie żarówki na dwa sposoby. Anglia w szkole podstawowej – tylko szeregowo.</p>
+    text: `<p>Singapur (Primary 5) i Szwajcaria (kl. 3–6) uczą łączyć dwie żarówki na dwa sposoby. Anglia w szkole podstawowej – według uwag do programu tylko szeregowo.</p>
       <ul><li><b>Szeregowo</b> – jedna droga: wykręcisz jedną, gasną obie. Świecą słabiej niż jedna.</li>
         <li><b>Równolegle</b> – każda ma swoją drogę: wykręcisz jedną, druga świeci. Świecą jaśniej niż w szeregu. Tak połączone są lampy w domu.</li></ul>
       <p>Wykręcaj żarówki i zmieniaj połączenie. Zawsze najpierw przewidź.</p>`,
@@ -299,9 +299,9 @@ window.LESSONS['elektrycznosc/obwody'] = [
   {
     title: '🌍 Elektromagnes: magnes na prąd',
     widget: { type: 'obwody', tryb: 'elektromagnes' },
-    text: `<p>W <b>Japonii</b> (5. klasa) i <b>Korei</b> (kl. 5–6) dzieci budują elektromagnes: drut nawinięty na żelazny gwóźdź – <b>zwojnica</b> – i bateria. Działa <b>tylko wtedy, gdy płynie prąd</b>. Więcej zwojów albo większy prąd – silniej. Odwrócisz baterię – <b>N i S się zamieniają</b>.</p>
+    text: `<p>W <b>Japonii</b> (5. klasa) i <b>Korei</b> (kl. 5–6) dzieci budują elektromagnes: drut nawinięty wiele razy – <b>zwojnica</b> – na żelaznym gwoździu i bateria. Działa <b>tylko wtedy, gdy płynie prąd</b>. Więcej zwojów (Japonia) albo większy prąd – więcej baterii szeregowo (Japonia, Korea) – silniej. Odwrócisz baterię – <b>N i S się zamieniają</b>.</p>
       <p><b>Uczciwy test</b> (Japonia): zmieniaj jedną rzecz naraz, a drut zawsze tej samej długości. W prawdziwym doświadczeniu drut się grzeje – podłączaj go tylko na kilka sekund.</p>`,
-    remember: 'Elektromagnes = zwoje + żelazny rdzeń + prąd. Więcej zwojów albo prądu – silniej. Bez prądu – nie działa.',
+    remember: 'Elektromagnes = zwojnica + żelazny rdzeń + prąd. Więcej zwojów albo prądu – silniej. Bez prądu – nie działa.',
     hook: 'Elektromagnes jak lampa z wyłącznikiem: włączasz – działa, wyłączasz – gaśnie.',
     check: { q: 'Sprawdzasz, czy liczba zwojów zmienia siłę elektromagnesu. Co zostawiasz bez zmian?', options: ['baterię i długość drutu', 'liczbę zwojów'], answer: 0, explain: 'Zmieniasz tylko to, co badasz – zwoje. Bateria, drut i spinacze zostają takie same.' },
   },
@@ -323,8 +323,8 @@ window.LESSONS['elektrycznosc/obwody'] = [
       <text x="20" y="238" class="tx-b">⚠️ Zwarcie: + i − samym drutem</text>
       <text x="20" y="258" class="tx">bateria i drut się grzeją – nigdy tak!</text>
     </svg>`,
-    text: `<p>Anglia (Year 6), Singapur i Szwajcaria uczą czytać <b>schematy</b>; w Polsce poznasz je na fizyce w kl. 7–8. Schemat to nie mapa ani zdjęcie: <b>symbole i proste linie</b>, rysowane linijką (lekcje Oak).</p>
-      <p><b>Pułapki:</b> oba przewody przy jednym biegunie – obwód nie działa; dioda i brzęczyk działają tylko w jedną stronę. <b>Bezpieczeństwo:</b> tylko baterie 1,5 V, nigdy gniazdko; nie łącz plusa z minusem samym drutem; nie mieszaj różnych baterii; elektromagnes podłączasz tylko na chwilę.</p>`,
+    text: `<p>Anglia (Year 6) i Szwajcaria uczą rysować i czytać <b>schematy</b>, a Singapur – budować obwód według schematu; w Polsce poznasz je na fizyce w kl. 7–8. Schemat to nie mapa ani zdjęcie: <b>symbole i proste linie</b>, rysowane linijką (lekcje Oak).</p>
+      <p><b>Pułapki:</b> oba przewody przy jednym biegunie – obwód nie działa; dioda i brzęczyk działają tylko w jedną stronę. <b>Bezpieczeństwo:</b> tylko zwykłe, nowe baterie 1,5 V (nie akumulatorki, nie litowe), nigdy gniazdko; równolegle zawsze plus do plusa; nie łącz plusa z minusem samym drutem; nie mieszaj różnych baterii; elektromagnes podłączasz tylko na chwilę.</p>`,
     remember: 'Ogniwo – dwie kreski (dłuższa to plus), żarówka – kółko z krzyżykiem. Zwarcie grzeje – nigdy!',
     hook: 'Schemat jest jak plan metra: nie pokazuje prawdziwych odległości, tylko co z czym jest połączone.',
     check: { q: 'Na schemacie widzisz kółko z krzyżykiem. Co to jest?', options: ['żarówka', 'ogniwo'], answer: 0, explain: 'Kółko z krzyżykiem to żarówka. Ogniwo to dwie równoległe kreski.' },

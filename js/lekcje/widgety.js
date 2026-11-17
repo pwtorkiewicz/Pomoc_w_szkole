@@ -1166,7 +1166,7 @@ window.WIDGETS = (() => {
     el.innerHTML = `<div class="controls" role="group" aria-label="Wybierz doświadczenie">${Object.entries(TRYBY).map(([k, t]) => `<button class="btn" data-t="${k}">${t}</button>`).join('')}</div>
       <div class="svgbox"></div><div class="obset"></div>
       <div class="controls obguess" role="group" aria-label="Przewidywanie"></div>
-      <div class="readout" aria-live="polite"></div><div class="mlog"></div>`;
+      <div class="readout" aria-live="polite" tabindex="-1"></div><div class="mlog"></div>`;
     const box = el.querySelector('.svgbox');
     const setBox = el.querySelector('.obset');
     const gbox = el.querySelector('.obguess');
@@ -1207,7 +1207,7 @@ window.WIDGETS = (() => {
         const t = {
           s1: 'Jedna bateria 1,5 V – to punkt odniesienia.',
           szereg: `Dwie baterie szeregowo: plus jednej do minusa drugiej, 1,5 V + 1,5 V = 3 V. Mocniejsze „pchnięcie” – większy prąd, więc ${z ? 'żarówka świeci jaśniej (musi pasować do 3 V – za wysokie napięcie może ją przepalić).' : 'silnik kręci się szybciej.'}`,
-          rown: `Dwie baterie równolegle: plus do plusa, minus do minusa. Napięcie jak jednej baterii (1,5 V), więc ${z ? 'żarówka świeci' : 'silnik kręci się'} mniej więcej tak samo – ale baterie starczą na dłużej.`,
+          rown: `Dwie baterie równolegle: plus do plusa, minus do minusa. Napięcie jak jednej baterii (1,5 V), więc ${z ? 'żarówka świeci' : 'silnik kręci się'} mniej więcej tak samo – ale baterie starczą na dłużej. Pamiętaj: równolegle zawsze plus do plusa – odwrócona jedna bateria to zwarcie.`,
         }[s.zrodlo];
         if (s.rev !== '1') return t;
         return `${t} ${z ? 'Baterie odwrócone – prąd płynie w drugą stronę, ale żarówce kierunek nie przeszkadza. Dioda LED by zgasła: świeci tylko przy jednym kierunku prądu.' : 'Baterie odwrócone – prąd płynie w drugą stronę, więc silnik kręci się w drugą stronę.'}`;
@@ -1226,7 +1226,7 @@ window.WIDGETS = (() => {
       }
       if (s.on === '0') return 'Wyłącznik otwarty – prąd nie płynie, elektromagnes nie działa i spinacze odpadają (stalowy gwóźdź może zostać trochę namagnesowany).';
       const zw = s.zwoje === '40', b2 = s.bat2 === '2';
-      const t = zw || b2 ? `${duza([zw ? 'więcej zwojów' : '', b2 ? 'większy prąd (2 baterie szeregowo)' : ''].filter(Boolean).join(' i '))} – elektromagnes jest silniejszy (Japonia, Korea).` : '20 zwojów i 1 bateria – to punkt odniesienia.';
+      const t = zw || b2 ? `${duza([zw ? 'więcej zwojów (Japonia)' : '', b2 ? 'większy prąd – 2 baterie szeregowo (Japonia, Korea)' : ''].filter(Boolean).join(' i '))} – elektromagnes jest silniejszy.` : '20 zwojów i 1 bateria – to punkt odniesienia.';
       return `${t}${s.rev2 === '1' ? ' Bateria odwrócona – prąd płynie w drugą stronę, więc bieguny N i S zamieniły się miejscami (zobacz igłę kompasu). Siła się nie zmieniła.' : ''} Prawdziwy drut się grzeje – podłączaj go tylko na kilka sekund.`;
     }
 
@@ -1249,6 +1249,7 @@ window.WIDGETS = (() => {
       return `${rays}<circle cx="${x}" cy="${y}" r="15" class="${fill} ln sw"/><path d="M${x - 10},${y - 10} L${x + 10},${y + 10} M${x + 10},${y - 10} L${x - 10},${y + 10}" class="ln"/>
         <text x="${x}" y="${y + 34}" class="tx-s" text-anchor="middle">${label}${lvl === null ? ' – ?' : ''}</text>`;
     }
+    const spinacze = (k) => `${k} ${k === 1 ? 'spinacz' : k % 10 >= 2 && k % 10 <= 4 && (k % 100 < 12 || k % 100 > 14) ? 'spinacze' : 'spinaczy'}`;
     const kropka = (x, y) => `<circle cx="${x}" cy="${y}" r="4" class="ob-wezel"/>`;
     const OPIS_POZ = ['nie świeci', 'świeci słabiej niż sama', 'świeci tak jak sama', 'świeci jaśniej niż sama'];
 
@@ -1321,16 +1322,16 @@ window.WIDGETS = (() => {
       const [nx, ny] = pt(20, 0), [sx, sy] = pt(20, Math.PI), [ax, ay] = pt(5, Math.PI / 2), [bx, by] = pt(5, -Math.PI / 2);
       const igla = `<path d="M${nx},${ny} L${ax},${ay} L${bx},${by} z" class="t2"/><path d="M${sx},${sy} L${ax},${ay} L${bx},${by} z" class="bg ln"/>`;
       const F = sila(), ile = dziala ? 3 * F : 0;
-      let spinacze = '';
-      for (let k = 0; k < ile; k++) spinacze += `<rect x="${96 + Math.floor(k / 6) * 20}" y="${96 + (k % 6) * 10}" width="14" height="6" rx="3" class="ln s1"/>`;
+      let klips = '';
+      for (let k = 0; k < ile; k++) klips += `<rect x="${96 + Math.floor(k / 6) * 20}" y="${96 + (k % 6) * 10}" width="14" height="6" rx="3" class="ln s1"/>`;
       const bieguny = dziala ? `<g class="tx-b" text-anchor="middle"><text x="114" y="44">${glowaN ? 'N' : 'S'}</text><text x="302" y="54">${glowaN ? 'S' : 'N'}</text></g>` : '';
-      const podpis = r ? `<text x="20" y="218" class="tx-s">${dziala ? `podniósł ${ile} spinaczy – przykład z modelu` : 'prąd nie płynie – spinacze odpadają'}</text>` : '';
-      box.innerHTML = `<svg viewBox="0 0 400 225" role="img" aria-label="Elektromagnes: gwóźdź, ${s.zwoje} zwojów drutu, ${s.bat2 === '1' ? 'jedna bateria' : 'dwie baterie szeregowo'}${s.rev2 === '1' ? ' odwrócone' : ''}, wyłącznik ${s.on === '1' ? 'włączony' : 'wyłączony'}.${r ? (dziala ? ` Wynik: podniósł ${ile} spinaczy (przykład z modelu); główka gwoździa to biegun ${glowaN ? 'N' : 'S'}, igła kompasu ${glowaN ? 'odwraca się od niej' : 'zwraca się do niej'}.` : ' Wynik: prąd nie płynie, elektromagnes nie przyciąga.') : ''}">
+      const podpis = r ? `<text x="20" y="218" class="tx-s">${dziala ? `podniósł ${spinacze(ile)} – przykład z modelu` : 'prąd nie płynie – spinacze odpadają'}</text>` : '';
+      box.innerHTML = `<svg viewBox="0 0 400 225" role="img" aria-label="Elektromagnes: gwóźdź, ${s.zwoje} zwojów drutu, ${s.bat2 === '1' ? 'jedna bateria' : 'dwie baterie szeregowo'}${s.rev2 === '1' ? ' odwrócone' : ''}, wyłącznik ${s.on === '1' ? 'włączony' : 'wyłączony'}.${r ? (dziala ? ` Wynik: podniósł ${spinacze(ile)} (przykład z modelu); główka gwoździa to biegun ${glowaN ? 'N' : 'S'}, igła kompasu ${glowaN ? 'odwraca się od niej' : 'zwraca się do niej'}.` : ' Wynik: prąd nie płynie, elektromagnes nie przyciąga.') : ''}">
         <circle cx="${cx}" cy="${cy}" r="26" class="bg ln sw"/><text x="${cx}" y="${cy - 30}" class="tx-s" text-anchor="middle">kompas</text>${igla}
         <rect x="118" y="62" width="170" height="16" class="bg ln"/><path d="M288,62 L310,70 L288,78 z" class="bg ln"/><rect x="110" y="52" width="8" height="36" class="bg ln sw"/>
         ${zwoje}
         <path d="M140,82 V180 H${l} M${p2},180 H330 M356,180 H380 V100 H266 V82" class="${pr(dziala)}"/>${wl}${kropka(330, 180)}${kropka(356, 180)}
-        ${pack}${spinacze}${bieguny}${podpis}
+        ${pack}${klips}${bieguny}${podpis}
       </svg>`;
     }
     const draw = () => (tryb === 'baterie' ? drawBaterie() : tryb === 'zarowki' ? drawZarowki() : drawElektromagnes());
@@ -1364,6 +1365,7 @@ window.WIDGETS = (() => {
         b.classList.add('primary');
         draw();
         renderLog();
+        out.focus(); // przyciski przewidywania są już nieaktywne – fokus na wynik, żeby nie spadł na stronę
       }));
     }
     function reset() {
