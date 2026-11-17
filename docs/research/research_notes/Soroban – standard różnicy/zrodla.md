@@ -82,3 +82,11 @@ Szukane: „liczyd”, „abak”, „soroban”, „pozycyjn”, „dziesiątko
 - Typowe błędy dzieci przy sorobanie – w MEXT brak; pytań z polem `myth` nie ma.
 - UNESCO zhusuan – nie otwarto, pominięte.
 - Karty „Zrób” (soroban z fasoli na kartce, soroban z pudełka i makaronu) – pomysł nasz, nie wykonany naprawdę.
+
+## 9. Poprawki po niezależnej recenzji (17.11.2026)
+
+- **Zakres kl. 3 (poprawione):** „万の単位の数まで” (komentarz s. 157) to nie „do dziesiątek tysięcy”. Komentarz do A⑴ kl. 3 (s. 137, PDF s. 143): „１万より大きい数について，万を単位として，十万，百万，千万のように…表せるようにする” – liczby od dziesięciu tysięcy do dziesiątek milionów; „１億についても取り扱う” (uwaga do A⑴, podstawa s. 75, PDF s. 77). W ściądze: „bardzo duże liczby – nawet miliony”.
+- **Palce, klocki, patyczki (poprawione):** to tylko warunki realizacji nowej podstawy (Dz.U. 2026 poz. 378, s. 76 – w 2026/27 obejmuje kl. 1). W Dz.U. 2024 poz. 996 liczmany są tylko przy edukacji informatycznej – zdanie usunięte ze ściągi.
+- **Lektor:** speechText w app.js zamienia znaczniki na spację, a „cyfra : cyfra” czyta jako „podzielić przez” – przeredagowane wszystkie miejsca (np. „Liczba 352 to…”, „…zabierz 2 jedynki. Liczysz tak: 4 + 5 − 2 = 7.”); „30 000” w ściądze zapisane słownie („30 tysięcy”).
+- **Znak „=” między działaniem a instrukcją** – usunięty („Dodać 3 to dodać 5 i zabrać 2.”).
+- **Karta dje35f:** kolejność (patyczek przez 1. ściankę → makaron → belka z plasteliny ok. 1/3 od ścianki → 4 makarony → 2. ścianka); prosty makaron (ditalini) zamiast kolanek, test przed budową; chowanie makaronu i plasteliny przed młodszym rodzeństwem. Obie karty „Zrób” – niewypróbowane (zapisane w `source`).

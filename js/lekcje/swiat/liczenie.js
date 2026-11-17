@@ -134,10 +134,10 @@ window.LESSONS['liczenie/soroban'] = [
   {
     title: 'Każdy pręt to jedno miejsce',
     widget: { type: 'soroban', tryb: 'ustaw', cel: 305 },
-    text: `<p>Najpierw wybierasz pręt <b>jedności</b>. Na lewo są <b>dziesiątki</b>, potem <b>setki</b> – jak cyfry w liczbie.</p>
-      <p>Koraliki są wszędzie takie same. Ale na pręcie setek dolny koralik jest wart <b>100</b>! Pusty pręt to <b>0</b>.</p>
+    text: `<p>Soroban ma dużo prętów. Dlatego najpierw umawiasz się, który pręt to <b>jedności</b>. Na lewo są <b>dziesiątki</b>, potem <b>setki</b> – jak cyfry w liczbie.</p>
+      <p>Koraliki są wszędzie takie same. Ale na pręcie setek każdy dolny koralik jest wart <b>100</b>! Pusty pręt to <b>0</b>.</p>
       <p>Ustaw <b>305</b>. Potem kliknij „Nowa liczba”.</p>`,
-    remember: 'Pręt = miejsce: setki, dziesiątki, jedności. Pusty pręt = 0.',
+    remember: 'Każdy pręt to jedno miejsce: setki, dziesiątki, jedności. Pusty pręt to 0.',
     hook: 'Tak samo jak w zeszycie: 3 setki, 0 dziesiątek, 5 jedności. ✏️',
   },
   {
@@ -149,24 +149,25 @@ window.LESSONS['liczenie/soroban'] = [
       '<g class="tx-b t2" text-anchor="middle"><text x="129" y="96">+ 5</text><text x="267" y="96">− 2</text></g>' +
       '</svg>',
     text: `<p><b>4 + 3</b>: przy belce są już wszystkie 4 jedynki. Trzech nie dołożysz!</p>
-      <p>Dołóż <b>piątkę</b> i zabierz <b>2</b>: 4 + 5 − 2 = <b>7</b>. W Japonii tak liczą w 3. klasie.</p>
-      <p>Odejmowanie odwrotnie: <b>6 − 4</b> = zabierz piątkę, dołóż 1 = <b>2</b>.</p>`,
-    remember: '+3 = +5 −2.',
+      <p>Dołóż <b>piątkę</b> i zabierz <b>2 jedynki</b>. Liczysz tak: 4 + 5 − 2 = 7. W Japonii tak liczą w 3. klasie.</p>
+      <p>Odejmowanie odwrotnie. <b>6 − 4</b>: zabierz piątkę i dołóż 1 jedynkę. Wynik to 2.</p>`,
+    remember: 'Dodać 3 to dodać 5 i zabrać 2.',
     hook: '3 i 2 to razem 5 – „przyjaciele piątki”. 🤝',
     check: { q: 'Na pręcie jest 3. Jak dodać 4?', options: ['dołóż 5, zabierz 1', 'dołóż 4 jedynki', 'dołóż 5, zabierz 4'], answer: 0, explain: '3 + 5 − 1 = 7. Czterech jedynek nie dołożysz – wolna jest tylko 1.' },
   },
   {
     title: 'Brakuje miejsca? Weź dziesiątkę!',
-    svg: '<svg viewBox="0 0 400 170" role="img" aria-label="Działanie 8 dodać 9 na dwóch prętach: dziesiątki i jedności. Najpierw 8. Dokładamy 10: jeden koralik na pręcie dziesiątek – jest 18. Zabieramy 1 jedynkę – zostaje 17.">' +
-      sorobanRys(4, 6, 0.5, [0, 8], ['D', 'J'], '8') +
-      sorobanRys(147, 6, 0.5, [1, 8], ['D', 'J'], '18') +
-      sorobanRys(290, 6, 0.5, [1, 7], ['D', 'J'], '17') +
-      '<g class="tx-b t2" text-anchor="middle"><text x="128" y="66">+ 10</text><text x="271" y="66">− 1</text></g>' +
+    svg: '<svg viewBox="0 0 400 232" role="img" aria-label="Działanie 8 dodać 9 na dwóch prętach: dziesiątki i jedności. Po lewej 8: na pręcie jedności piątka i 3 jedynki przy belce. Strzałka: dołóż 10, czyli jeden koralik na pręcie dziesiątek, i zabierz 1 jedynkę. Po prawej 17: na pręcie dziesiątek 1 koralik, na pręcie jedności piątka i 2 jedynki.">' +
+      '<defs><marker id="a-sw-sb-5" viewBox="0 0 8 8" refX="7" refY="4" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="t2"/></marker></defs>' +
+      sorobanRys(4, 6, 0.8, [0, 8], ['dziesiątki', 'jedności'], '8') +
+      sorobanRys(228, 6, 0.8, [1, 7], ['dziesiątki', 'jedności'], '17') +
+      '<path d="M178,100 H222" class="ln sw" marker-end="url(#a-sw-sb-5)"/>' +
+      '<g class="tx-b t2" text-anchor="middle"><text x="200" y="86">+ 10</text><text x="200" y="130">− 1</text></g>' +
       '</svg>',
     text: `<p><b>8 + 9</b>: na pręcie jedności nie ma miejsca na 9.</p>
-      <p>Dołóż <b>1 koralik na pręcie dziesiątek</b> – to 10. Potem zabierz <b>1</b> jedynkę: 8 + 10 − 1 = <b>17</b>.</p>
-      <p>I odwrotnie: <b>15 − 7</b> = zabierz 10, dołóż 3 = <b>8</b>. (D – dziesiątki, J – jedności.)</p>`,
-    remember: '+9 = +10 −1.',
+      <p>Dołóż <b>1 koralik na pręcie dziesiątek</b> – to 10. Potem zabierz <b>1 jedynkę</b>. Liczysz tak: 8 + 10 − 1 = 17.</p>
+      <p>I odwrotnie. <b>15 − 7</b>: zabierz 10 i dołóż 3 jedynki. Wynik to 8.</p>`,
+    remember: 'Dodać 9 to dodać 10 i zabrać 1.',
     hook: '9 i 1 to razem 10 – „przyjaciele dziesiątki”. 🔟',
     check: { q: 'Jak policzyć 15 − 7 na sorobanie?', options: ['zabierz 10, dołóż 3', 'zabierz 7 jedynek', 'zabierz 10, dołóż 7'], answer: 0, explain: '15 − 10 + 3 = 8. Siedmiu jedynek nie zabierzesz – na pręcie jedności jest tylko piątka.' },
   },

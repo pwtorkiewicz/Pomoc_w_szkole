@@ -115,13 +115,13 @@
         level: 1,
         age: [8, 10],
         where: 'Japonia – matematyka w 3. klasie (dzieci 8–9 lat) i w 4. klasie (9–10 lat): soroban jest w programie obu klas',
-        basis: `Poza polską podstawą programową – ścieżka „Świat” (decyzja rodzica). Dział według standardu „różnicy”: wspólne z polską szkołą tylko jako przypomnienie, rdzeń – to, czego polska podstawa nie wymaga. POLSKA (tekst podstaw, eli.gov.pl, sprawdzone 16.11.2026): Dz.U. 2024 poz. 996, edukacja wczesnoszkolna (s. 34): II.2.3 „wyjaśnia znaczenie cyfr w zapisie liczby; wskazuje jedności, dziesiątki, setki itd.”, II.3.2 – dodawanie i odejmowanie w pamięci, II.3.3 „stosuje własne strategie, wykonując obliczenia”; matematyka kl. IV–VI (s. 183): „Liczby naturalne w dziesiątkowym układzie pozycyjnym”, dodawanie i odejmowanie w pamięci. Dz.U. 2026 poz. 378, edukacja wczesnoszkolna (s. 57): 5.1.b „rozumie, że wartość liczby zależy od liczby cyfr oraz ich położenia w jej zapisie”, 5.1.f – dodawanie w pamięci, 5.1.j „tworzy i stosuje własne strategie obliczeń”; warunki realizacji (s. 76): liczmany, klocki, patyczki, palce; matematyka kl. IV–VI (s. 237–238): dziesiątkowy system zapisu, dodawanie i odejmowanie w pamięci. W żadnej z podstaw nie ma liczydła ani sorobanu (0 trafień „liczyd”, „abak”, „soroban”) ani wymaganej strategii „dołóż piątkę/dziesiątkę i zabierz resztę”. JAPONIA: (1) ${JP_SHO}, 算数 kl. 3 A⑻ (s. 73–74): „そろばんによる数の表し方について知ること” (znać sposób przedstawiania liczb na sorobanie), „簡単な加法及び減法の計算の仕方について知り，計算すること” (znać sposób prostego dodawania i odejmowania i liczyć), „そろばんの仕組みに着目し，大きな数や小数の計算の仕方を考えること” (patrząc na budowę sorobanu, obmyślać sposób liczenia dużych liczb i ułamków dziesiętnych); kl. 4 A⑻ (s. 78–79): dodawanie i odejmowanie na sorobanie; 第3 2⑹ (s. 93): w kl. 1–2 soroban i konkretne przedmioty – pomoc „w razie potrzeby”. (2) ${JP_KOM}, s. 157–158 (kl. 3): soroban – narzędzie używane w Japonii od dawna; uczy się go w kl. 3 i 4; najpierw ustala się miejsce (rząd), potem przesuwa koraliki; kl. 3 – liczby do dziesiątek tysięcy i ułamki do części dziesiątych; działania od „2 + 1”, „3 − 1”, przez składanie i rozkładanie piątki („4 + 3”, „6 − 4”), do przeniesienia i pożyczania („8 + 9”, „15 − 7”), także „3万 + 5万” i „2,6 + 0,3”; „どの桁の珠も同じ大きさの形” – koraliki każdego rzędu są jednakowe, jak cyfry w systemie pozycyjnym, więc lekcja porównuje budowę sorobanu z budową liczby; s. 200–201 (kl. 4): liczby do 億 i 兆, części setne. (3) ${JP_WIEK}. BUDOWA SOROBANU (1 koralik nad belką = 5, 4 pod belką = po 1, liczy się koralik przy belce) – wiedza powszechna; w tej sesji NIE potwierdzona w źródle encyklopedycznym (encyklopedia PWN, kotobank, Wikipedia – niedostępne), zgodna z MEXT pośrednio (jednakowe koraliki, piątka w 4 + 3 i 6 − 4, najwyżej 9 na pręcie). Kropek na belce ani historii sorobanu nie podajemy – brak źródła. Wiedza o systemie pozycyjnym – ZPE („Jedności, dziesiątki, setki”, „Dziesiątkowy system pozycyjny”). Tłumaczenia – nasze. Zadania i rysunki – nasze; wszystkie wyniki policzone dwukrotnie. Notatki: docs/research/research_notes/Soroban – standard różnicy/zrodla.md.`,
+        basis: `Poza polską podstawą programową – ścieżka „Świat” (decyzja rodzica). Dział według standardu „różnicy”: wspólne z polską szkołą tylko jako przypomnienie, rdzeń – to, czego polska podstawa nie wymaga. POLSKA (tekst podstaw, eli.gov.pl, sprawdzone 16.11.2026): Dz.U. 2024 poz. 996, edukacja wczesnoszkolna (s. 34): II.2.3 „wyjaśnia znaczenie cyfr w zapisie liczby; wskazuje jedności, dziesiątki, setki itd.”, II.3.2 – dodawanie i odejmowanie w pamięci, II.3.3 „stosuje własne strategie, wykonując obliczenia”; matematyka kl. IV–VI (s. 183): „Liczby naturalne w dziesiątkowym układzie pozycyjnym”, dodawanie i odejmowanie w pamięci. Dz.U. 2026 poz. 378, edukacja wczesnoszkolna (s. 57): 5.1.b „rozumie, że wartość liczby zależy od liczby cyfr oraz ich położenia w jej zapisie”, 5.1.f – dodawanie w pamięci, 5.1.j „tworzy i stosuje własne strategie obliczeń”; warunki realizacji (s. 76): liczmany, klocki, patyczki, palce; matematyka kl. IV–VI (s. 237–238): dziesiątkowy system zapisu, dodawanie i odejmowanie w pamięci. W żadnej z podstaw nie ma liczydła ani sorobanu (0 trafień „liczyd”, „abak”, „soroban”) ani wymaganej strategii „dołóż piątkę/dziesiątkę i zabierz resztę”. JAPONIA: (1) ${JP_SHO}, 算数 kl. 3 A⑻ (s. 73–74): „そろばんによる数の表し方について知ること” (znać sposób przedstawiania liczb na sorobanie), „簡単な加法及び減法の計算の仕方について知り，計算すること” (znać sposób prostego dodawania i odejmowania i liczyć), „そろばんの仕組みに着目し，大きな数や小数の計算の仕方を考えること” (patrząc na budowę sorobanu, obmyślać sposób liczenia dużych liczb i ułamków dziesiętnych); kl. 4 A⑻ (s. 78–79): dodawanie i odejmowanie na sorobanie; 第3 2⑹ (s. 93): w kl. 1–2 soroban i konkretne przedmioty – pomoc „w razie potrzeby”. (2) ${JP_KOM}, s. 157–158 (kl. 3): soroban – narzędzie używane w Japonii od dawna; uczy się go w kl. 3 i 4; najpierw ustala się miejsce (rząd), potem przesuwa koraliki; kl. 3 – liczby całkowite „do jednostki 万” (万の単位の数まで; według komentarza s. 137 to 万, 十万, 百万, 千万 – od dziesięciu tysięcy do dziesiątek milionów) i ułamki do części dziesiątych; działania od „2 + 1”, „3 − 1”, przez składanie i rozkładanie piątki („4 + 3”, „6 − 4”), do przeniesienia i pożyczania („8 + 9”, „15 − 7”), także „3万 + 5万” i „2,6 + 0,3”; „どの桁の珠も同じ大きさの形” – koraliki każdego rzędu są jednakowe, jak cyfry w systemie pozycyjnym, więc lekcja porównuje budowę sorobanu z budową liczby; s. 200–201 (kl. 4): liczby do 億 i 兆, części setne. (3) ${JP_WIEK}. BUDOWA SOROBANU: budowy liczydła (1 koralik nad belką = 5, 4 pod belką = po 1, liczy się koralik przy belce) nie znaleźliśmy w dokumentach MEXT; w encyklopedii jej nie sprawdziliśmy – to wiedza powszechna, do sprawdzenia. Z MEXT wynika tylko pośrednio: koraliki są jednakowe na każdym pręcie, 4 + 3 i 6 − 4 wymagają piątki, na pręcie mieści się najwyżej 9. Kropek na belce ani historii sorobanu nie podajemy – brak źródła. Wiedza o systemie pozycyjnym – ZPE („Jedności, dziesiątki, setki”, „Dziesiątkowy system pozycyjny”). Tłumaczenia – nasze. Zadania i rysunki – nasze; wszystkie wyniki policzone dwukrotnie. Notatki: docs/research/research_notes/Soroban – standard różnicy/zrodla.md.`,
         theory: `
-          <p class="tip">🇵🇱 <b>W polskiej szkole</b> w klasach 1–3 poznajesz jedności, dziesiątki i setki. Liczysz w pamięci, na palcach, klockach i patyczkach. <b>Liczydła ani sorobanu polska podstawa programowa nie wymaga.</b> Najpierw krótkie przypomnienie, a potem to, czego uczą się dzieci w Japonii.</p>
+          <p class="tip">🇵🇱 <b>W polskiej szkole</b> w klasach 1–3 poznajesz jedności, dziesiątki i setki i liczysz w pamięci. <b>Liczydła ani sorobanu polska podstawa programowa nie wymaga.</b> Najpierw krótkie przypomnienie, a potem to, czego uczą się dzieci w Japonii.</p>
           <h3>🇵🇱 Przypomnienie (klasy 1–3)</h3>
           <ul>
-            <li>Ta sama cyfra znaczy co innego w innym miejscu. W liczbie <b>352</b>: 3 setki, 5 dziesiątek, 2 jedności.</li>
-            <li>Gdy czegoś nie ma, piszesz <b>0</b>. Liczba <b>207</b>: 2 setki, 0 dziesiątek, 7 jedności.</li>
+            <li>Ta sama cyfra znaczy co innego w innym miejscu. Liczba <b>352</b> to 3 setki, 5 dziesiątek i 2 jedności.</li>
+            <li>Gdy czegoś nie ma, piszesz <b>0</b>. Liczba <b>207</b> to 2 setki, 0 dziesiątek i 7 jedności.</li>
           </ul>
           <h3>🌍 1. Co to jest soroban?</h3>
           <p>Soroban to <b>japońskie liczydło</b>. W Japonii używa się go od dawna. Ma ramkę, pręty i <b>belkę</b> w poprzek. Na prętach są koraliki.</p>
@@ -131,20 +131,20 @@
             <li>Koralik <b>pod belką</b> jest wart <b>1</b>. Pod belką są <b>4</b> koraliki.</li>
             <li>Koralik się liczy, gdy <b>dotyka belki</b>.</li>
           </ul>
-          <p><b>7</b> = piątka i 2 jedynki. Na jednym pręcie zmieścisz od 0 do <b>9</b>, bo 5 + 4 = 9.</p>
+          <p><b>7</b> to piątka i 2 jedynki. Na jednym pręcie zmieścisz od 0 do <b>9</b>, bo 5 + 4 = 9.</p>
           <h3>🌍 3. Każdy pręt to jedno miejsce</h3>
-          <p>Najpierw wybierasz pręt <b>jedności</b>. Na lewo od niego są <b>dziesiątki</b>, potem <b>setki</b>. Koraliki na każdym pręcie są takie same. Ale na pręcie dziesiątek dolny koralik jest wart <b>10</b>, a na pręcie setek – <b>100</b>. Pusty pręt to <b>0</b>.</p>
+          <p>Soroban ma dużo prętów. Dlatego najpierw umawiasz się, który pręt to <b>jedności</b>. Na lewo od niego są <b>dziesiątki</b>, potem <b>setki</b>. Koraliki na każdym pręcie są takie same. Ale na pręcie dziesiątek każdy dolny koralik jest wart <b>10</b>, a na pręcie setek – <b>100</b>. Pusty pręt to <b>0</b>.</p>
           <h3>🌍 4. Brakuje jedynek? Weź piątkę!</h3>
-          <p><b>4 + 3</b>: przy belce są już 4 jedynki, więcej nie ma. Dołóż piątkę i zabierz 2: 4 + 5 − 2 = <b>7</b>.</p>
-          <p><b>6 − 4</b>: przy belce jest tylko 1 jedynka. Zabierz piątkę i dołóż 1: 6 − 5 + 1 = <b>2</b>.</p>
+          <p><b>4 + 3</b>: przy belce są już 4 jedynki, więcej nie ma. Dołóż piątkę i zabierz 2 jedynki. Liczysz tak: 4 + 5 − 2 = 7.</p>
+          <p><b>6 − 4</b>: przy belce jest tylko 1 jedynka. Zabierz piątkę i dołóż 1 jedynkę. Liczysz tak: 6 − 5 + 1 = 2.</p>
           <h3>🌍 5. Brakuje miejsca? Weź dziesiątkę!</h3>
-          <p><b>8 + 9</b>: dołóż 1 koralik na pręcie dziesiątek (to 10) i zabierz 1 jedynkę: 8 + 10 − 1 = <b>17</b>.</p>
-          <p><b>15 − 7</b>: zabierz 1 dziesiątkę i dołóż 3 jedynki: 15 − 10 + 3 = <b>8</b>.</p>
+          <p><b>8 + 9</b>: dołóż 1 koralik na pręcie dziesiątek (to 10) i zabierz 1 jedynkę. Liczysz tak: 8 + 10 − 1 = 17.</p>
+          <p><b>15 − 7</b>: zabierz 1 dziesiątkę i dołóż 3 jedynki. Liczysz tak: 15 − 10 + 3 = 8.</p>
           <h3>🌍 6. Duże liczby – tak samo</h3>
-          <p>30 000 + 50 000 liczysz na sorobanie jak 3 + 5 – tylko na pręcie dziesiątek tysięcy. Wynik: <b>80 000</b>.</p>
+          <p>30 tysięcy dodać 50 tysięcy liczysz na sorobanie jak 3 + 5 – tylko na pręcie dziesiątek tysięcy. Wynik to <b>80 tysięcy</b>.</p>
           <h3>Jak uczą tego w Japonii?</h3>
-          <p>Soroban jest w programie matematyki w <b>3. i 4. klasie</b>. W 3. klasie dzieci ustawiają liczby – aż do dziesiątek tysięcy i liczby z przecinkiem, np. 2,6. Liczą po kolei: najpierw łatwe działania, np. 2 + 1 i 3 − 1. Potem z piątką: 4 + 3 i 6 − 4. Potem z dziesiątką: 8 + 9 i 15 − 7. W 4. klasie liczby są jeszcze większe.</p>
-          <p>Nauczyciel porównuje soroban z zapisem liczby: ten sam koralik znaczy co innego na innym pręcie – tak jak cyfra w liczbie.</p>
+          <p>Soroban jest w programie matematyki w <b>3. i 4. klasie</b>. W 3. klasie dzieci ustawiają na nim bardzo duże liczby – nawet miliony – a także liczby z przecinkiem. Liczą po kolei. Najpierw łatwe działania, np. 2 + 1 i 3 − 1. Potem z piątką, np. 4 + 3 i 6 − 4. Potem z dziesiątką, np. 8 + 9 i 15 − 7. W 4. klasie liczby są jeszcze większe.</p>
+          <p>Japoński poradnik dla nauczycieli radzi porównywać soroban z zapisem liczby. Ten sam koralik znaczy co innego na innym pręcie – tak jak cyfra w liczbie.</p>
           <h3>Uważaj!</h3>
           <ul>
             <li>Czytaj od lewej: setki, dziesiątki, jedności.</li>
@@ -174,7 +174,7 @@
           ],
           prepare: [
             'kartka, ołówek, linijka i 15 ziaren fasoli albo guzików (soroban na kartce)',
-            'do sorobanu z pudełka: wieczko pudełka po butach, 3 patyczki do szaszłyków albo słomki, 15 kawałków krótkiego makaronu rurki, plastelina',
+            'do sorobanu z pudełka: wieczko pudełka po butach, 3 patyczki do szaszłyków albo słomki, 15 kawałków krótkiego, prostego makaronu rurki (np. ditalini), plastelina',
             'wydrukowana karta z zakładki 🛠️ Zrób',
           ],
           talk: [
@@ -196,26 +196,27 @@
               'Na każdym pręcie połóż 1 fasolkę nad belką i 4 pod belką – daleko od belki. To jest 0.',
               'Pokaż 7: przesuń do belki górną fasolkę (5) i 2 dolne (1 + 1).',
               'Pokaż liczby z tabeli. Poproś kogoś, żeby je odczytał.',
-              'Dla chętnych: ustaw 4 i dodaj 3 jak w Japonii – dołóż piątkę i zabierz 2.',
+              'Dla chętnych: ustaw 4 i dodaj 3 jak w Japonii. Dołóż piątkę i zabierz 2 jedynki.',
             ],
             table: { cols: ['Liczba', 'Ustawiłem', 'Ktoś odczytał'], rows: ['7', '25', '108', '360', '999'] },
             conclusion: 'Fasolka nad belką jest warta …, pod belką – … . Na pręcie setek dolna fasolka jest warta … .',
-            expected: 'Nad belką – 5, pod belką – 1. Na pręcie setek dolna fasolka jest warta 100. 999 to na każdym pręcie piątka i 4 jedynki przy belce. 4 + 3: przy belce piątka i 2 jedynki, czyli 7.',
-            source: 'Japonia – podstawa MEXT, matematyka kl. 3 A⑻ (ustawianie liczb na sorobanie) i komentarz MEXT s. 157–158 (4 + 3 ze składaniem piątki); soroban z kartki i fasoli – nasz pomysł',
+            expected: 'Nad belką – 5, pod belką – 1. Na pręcie setek dolna fasolka jest warta 100. 999 to na każdym pręcie piątka i 4 jedynki przy belce. 4 + 3 to przy belce piątka i 2 jedynki, czyli 7.',
+            source: 'Japonia – podstawa MEXT, matematyka kl. 3 A⑻ (ustawianie liczb na sorobanie) i komentarz MEXT s. 157–158 (4 + 3 ze składaniem piątki); budowa 1 + 4 (koralik nad belką i 4 pod belką) – wiedza powszechna; soroban z kartki i fasoli – nasz pomysł, jeszcze niewypróbowany',
           },
           {
             id: 'dje35f', kind: 'projekt', title: 'Soroban z pudełka i makaronu', time: '40 minut', adult: true,
             intro: 'Zbuduj prawdziwy soroban z trzema prętami: setki, dziesiątki, jedności.',
-            safety: ['Patyczki do szaszłyków są ostre – końce odcina dorosły. Możesz też użyć słomek.', 'Dziurki w pudełku robi dorosły.', 'Nie jedz surowego makaronu i nie bierz go do ust.'],
-            needs: ['wieczko pudełka po butach', '3 patyczki do szaszłyków albo słomki – dłuższe niż krótszy bok wieczka', '15 kawałków krótkiego makaronu rurki (np. kolanka), który łatwo przesuwa się po patyczku', 'plastelina', 'flamaster'],
+            safety: ['Patyczki do szaszłyków są ostre – końce odcina dorosły. Możesz też użyć słomek.', 'Dziurki w pudełku robi dorosły.', 'Nie jedz surowego makaronu i nie bierz go do ust.', 'Po zabawie schowaj makaron i kulki plasteliny przed młodszym rodzeństwem.'],
+            needs: ['wieczko pudełka po butach', '3 patyczki do szaszłyków albo słomki – dłuższe niż krótszy bok wieczka', '15 kawałków krótkiego, prostego makaronu rurki (np. ditalini) – kolanka nie przejdą przez prosty patyczek', 'plastelina', 'flamaster'],
             constraints: ['3 pręty', '15 koralików z makaronu', 'najwyżej 30 minut budowania'],
             steps: [
-              'Na każdy patyczek nawlecz 1 makaron. Obok niego przyklej kulkę plasteliny – to belka. Potem nawlecz 4 makarony.',
-              'Dorosły robi dziurki w dwóch dłuższych ściankach wieczka i przekłada przez nie patyczki – w równych odstępach.',
-              'Plastelinowe kulki ustaw w jednej linii. Narysuj flamastrem belkę na dnie wieczka.',
-              'Podpisz pręty: setki, dziesiątki, jedności.',
-              'Wyzeruj: makaron nad belką do góry, pod belką – w dół.',
-              'Ustaw liczby z tabeli i poproś kogoś, żeby je odczytał.',
+              'Zanim zaczniesz: sprawdź, czy makaron łatwo wchodzi na patyczek (albo słomkę) i po nim jeździ.',
+              'Dorosły robi po 3 dziurki w dwóch dłuższych ściankach wieczka – naprzeciw siebie, w równych odstępach.',
+              'Przełóż patyczek przez dziurkę w pierwszej ściance. Teraz nawlecz na niego 1 makaron.',
+              'Przyklej na patyczku kulkę plasteliny – to belka. Daj ją mniej więcej w 1/3 drogi od tej ścianki, tak żeby górny makaron miał miejsce na ruch.',
+              'Nawlecz 4 makarony i przełóż patyczek przez dziurkę w drugiej ściance. Tak samo zrób dwa pozostałe pręty.',
+              'Kulki plasteliny ustaw w jednej linii i narysuj flamastrem belkę na dnie wieczka. Podpisz pręty: setki, dziesiątki, jedności.',
+              'Wyzeruj: górny makaron do ścianki, dolne – do drugiej ścianki. Ustaw liczby z tabeli i poproś kogoś, żeby je odczytał.',
             ],
             criteria: [
               'Każdy pręt ma 1 koralik nad belką i 4 pod belką.',
@@ -225,7 +226,7 @@
             ],
             table: { cols: ['Liczba', 'Ustawiona?', 'Odczytana?'], rows: ['8', '46', '205', '999'] },
             conclusion: 'Najtrudniej było …, a poprawiłem to tak: …',
-            source: 'Japonia – podstawa MEXT, matematyka kl. 3–4 A⑻ (soroban); model z pudełka, patyczków i makaronu – nasz pomysł',
+            source: 'Japonia – podstawa MEXT, matematyka kl. 3–4 A⑻ (soroban); budowa 1 + 4 – wiedza powszechna; model z pudełka, patyczków i makaronu – nasz pomysł, jeszcze niewypróbowany',
           },
         ],
         materials: [
@@ -271,22 +272,22 @@
           { id: 'jaxvu1', q: 'Jaką liczbę pokazuje soroban?', svg: SB([1, 6, 0]), options: ['160', '16', '106'], answer: 0, explain: 'Setki: 1. Dziesiątki: piątka i 1 jedynka – 6. Jedności: pusto – 0. Razem 160.' },
           { id: 'xvfssf', q: 'Jaką liczbę pokazuje soroban?', svg: SB([0, 9, 5]), options: ['95', '59', '45'], answer: 0, explain: 'Dziesiątki: piątka i 4 jedynki – 9. Jedności: sama piątka – 5. Razem 95.' },
           // piątka
-          { id: 'g2qs8r', q: 'Na pręcie jest 4. Jak dodać 3 na sorobanie?', options: ['dołóż 5 i zabierz 2', 'dołóż 3 dolne koraliki', 'dołóż 5 i dołóż 3'], answer: 0, explain: 'Przy belce są już wszystkie 4 jedynki. Dołóż piątkę i zabierz 2: 4 + 5 − 2 = 7.' },
+          { id: 'g2qs8r', q: 'Na pręcie jest 4. Jak dodać 3 na sorobanie?', options: ['dołóż 5 i zabierz 2', 'dołóż 3 dolne koraliki', 'dołóż 5 i dołóż 3'], answer: 0, explain: 'Przy belce są już wszystkie 4 jedynki. Dołóż piątkę i zabierz 2 jedynki. Liczysz tak: 4 + 5 − 2 = 7.' },
           { id: '8o3ep9', q: 'Na pręcie jest 4. Czy dodasz 3, przesuwając same dolne koraliki?', options: ['nie', 'tak'], answer: 0, explain: 'Nie. Wszystkie 4 dolne koraliki są już przy belce – trzeba wziąć piątkę.',
             why: { options: ['wszystkie 4 dolne są już przy belce', 'dolne koraliki są warte po 5', 'na sorobanie nie da się dodawać'], answer: 0, explain: 'Pod belką są tylko 4 koraliki. Gdy wszystkie są przy belce, pomaga piątka: dołóż 5 i zabierz 2.', optionExplain: ['', 'Dolne koraliki są warte po 1, a górny – 5.', 'Da się – japońskie dzieci dodają i odejmują na sorobanie w 3. klasie.'] } },
-          { id: 'f51800', q: 'Na pręcie jest 6. Jak odjąć 4 na sorobanie?', options: ['zabierz 5 i dołóż 1', 'zabierz 4 dolne koraliki', 'zabierz 5 i zabierz 1'], answer: 0, explain: '6 to piątka i 1 jedynka – 4 jedynek do zabrania nie ma. Zabierz piątkę i dołóż 1: 6 − 5 + 1 = 2.' },
+          { id: 'f51800', q: 'Na pręcie jest 6. Jak odjąć 4 na sorobanie?', options: ['zabierz 5 i dołóż 1', 'zabierz 4 dolne koraliki', 'zabierz 5 i zabierz 1'], answer: 0, explain: '6 to piątka i 1 jedynka – 4 jedynek do zabrania nie ma. Zabierz piątkę i dołóż 1 jedynkę. Liczysz tak: 6 − 5 + 1 = 2.' },
           { id: 'iwi8oi', q: 'Prawda czy fałsz?\n4 + 3 = 4 + 5 − 2', options: TF, noShuffle: true, answer: 0, explain: 'Prawda. 4 + 5 = 9, a 9 − 2 = 7. Tak samo 4 + 3 = 7.' },
           // dziesiątka
           { id: '5l8vl9', q: 'Na sorobanie 8 + 9 liczysz tak: dołóż 10, zabierz 1. Ile wyjdzie?', options: ['17', '18', '19'], answer: 0, explain: '8 + 10 = 18, a 18 − 1 = 17. Sprawdź: 8 + 9 = 17.' },
           { id: '65bios', q: 'Na sorobanie 15 − 7 liczysz tak: zabierz 10, dołóż 3. Ile wyjdzie?', options: ['8', '9', '7'], answer: 0, explain: '15 − 10 = 5, a 5 + 3 = 8. Sprawdź: 15 − 7 = 8.' },
-          { id: 'iegtfd', q: 'Na pręcie jedności jest 7. Jak dodać 8 na sorobanie?', options: ['dołóż 10, zabierz 2', 'dołóż 10, zabierz 8', 'dołóż 5, dołóż 2'], answer: 0, explain: 'Na pręcie jedności nie ma miejsca na 8. Dołóż 10 (1 koralik na pręcie dziesiątek) i zabierz 2: 7 + 10 − 2 = 15.' },
+          { id: 'iegtfd', q: 'Na pręcie jedności jest 7. Jak dodać 8 na sorobanie?', options: ['dołóż 10, zabierz 2', 'dołóż 10, zabierz 8', 'dołóż 5, dołóż 2'], answer: 0, explain: 'Na pręcie jedności nie ma miejsca na 8. Dołóż 10 (1 koralik na pręcie dziesiątek) i zabierz 2 jedynki. Liczysz tak: 7 + 10 − 2 = 15.' },
           // pręty i miejsca
-          { id: '8suddh', q: 'Ile jest wart dolny koralik na pręcie setek?', options: ['100', '10', '500'], answer: 0, explain: 'Koraliki są takie same na każdym pręcie. Ale na pręcie setek dolny koralik jest wart 100. 500 to górny koralik na pręcie setek.' },
+          { id: '8suddh', q: 'Ile jest wart jeden dolny koralik na pręcie setek?', options: ['100', '10', '500'], answer: 0, explain: 'Koraliki są takie same na każdym pręcie. Ale na pręcie setek każdy dolny koralik jest wart 100. 500 to górny koralik na pręcie setek.' },
           { id: '02xi98', q: 'Na pręcie dziesiątek przy belce są 3 dolne koraliki. Inne pręty są puste. Jaka to liczba?', options: ['30', '3', '300'], answer: 0, explain: '3 dziesiątki i 0 jedności to 30.',
             why: { options: ['na pręcie dziesiątek dolny koralik jest wart 10', 'koraliki na pręcie dziesiątek są większe od innych', 'na każdym pręcie dolny koralik jest wart 3'], answer: 0, explain: 'Wartość koralika zależy od pręta – tak jak wartość cyfry od miejsca w liczbie.', optionExplain: ['', 'Koraliki na wszystkich prętach są takie same – liczy się pręt.', 'Dolny koralik jest wart 1, 10 albo 100 – zależnie od pręta.'] } },
           { id: 'agyrhl', q: 'Na pręcie żaden koralik nie dotyka belki. Jaka to cyfra?', options: ['0', '5', '9'], answer: 0, explain: 'Liczą się tylko koraliki przy belce. Gdy żaden jej nie dotyka – to 0.' },
           // Japonia
-          { id: 'gfau39', q: 'W których klasach soroban jest w japońskim programie matematyki?', options: ['w 3. i 4. klasie', 'w 1. i 2. klasie', 'w 5. i 6. klasie'], answer: 0, explain: 'Według japońskiej podstawy programowej soroban jest na matematyce w 3. i 4. klasie. Młodsze dzieci mogą go używać tylko jako pomocy.' },
+          { id: 'gfau39', q: 'W których klasach soroban jest w japońskim programie matematyki?', options: ['w 3. i 4. klasie', 'w 5. i 6. klasie', 'w 7. i 8. klasie'], answer: 0, explain: 'Według japońskiej podstawy programowej soroban jest na matematyce w 3. i 4. klasie. W 1. i 2. klasie nauczyciel może go użyć jako pomocy.' },
           { id: 'fbxeld', q: '30 000 + 50 000 = ?', say: 'Ile to jest trzydzieści tysięcy dodać pięćdziesiąt tysięcy?', options: ['80 000', '8 000', '800 000'], sayOptions: ['osiemdziesiąt tysięcy', 'osiem tysięcy', 'osiemset tysięcy'], answer: 0, explain: 'Liczysz jak 3 + 5 = 8, tylko na dziesiątkach tysięcy: 80 000. Takie działanie jest w japońskim programie 3. klasy.', sayExplain: 'Liczysz jak trzy dodać pięć, tylko na dziesiątkach tysięcy: osiemdziesiąt tysięcy. Takie działanie jest w japońskim programie trzeciej klasy.' },
         ],
       },
